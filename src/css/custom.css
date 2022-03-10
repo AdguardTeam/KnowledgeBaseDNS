@@ -1,0 +1,37 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #66b574;
+  --ifm-color-primary-dark: #53ac63;
+  --ifm-color-primary-darker: #4ea25d;
+  --ifm-color-primary-darkest: #41864d;
+  --ifm-color-primary-light: #79be85;
+  --ifm-color-primary-lighter: #83c38e;
+  --ifm-color-primary-lightest: #9fd1a8;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+  border: 1px solid #efefef;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  display: block;
+}
