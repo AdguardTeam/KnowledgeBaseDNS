@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            AdGuard Knowledgebase - 🔰
+            AdGuard DNS Knowledgebase - 🔰
           </Link>
         </div>
       </div>
