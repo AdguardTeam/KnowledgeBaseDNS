@@ -15,7 +15,7 @@ First of all, you need to install the following:
 
 Second, clone this repo to your local computer:
 
-- `git clone git@github.com:AdguardTeam/KnowledgeBase.git`
+- `git clone git@github.com:AdguardTeam/KnowledgeBaseDNS.git`
 
 Alternatively, you can use the [Github app](https://desktop.github.com/) to do that.
 
