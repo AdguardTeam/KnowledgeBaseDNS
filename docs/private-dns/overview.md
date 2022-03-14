@@ -45,7 +45,7 @@ Here is a simple sum up of differences in available features between Public AdGu
 >- Gaming consoles
 
 
-### Private DNS features
+### Private AdGuard DNS features
 
 **Blocklists management**
 
