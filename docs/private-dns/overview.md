@@ -32,14 +32,14 @@ Here is a simple sum up of differences in available features between Public AdGu
 
 ### How to set up Private AdGuard DNS
 
-1. [Easy way] Use [AdGuard app](https://adguard.com/welcome.html) for your OS.
-2. [Manual way] Check out setup instructions [here](https://adguard-dns.com/public-dns.html), depending on your OS.
+1. [Log in to your AdGuard DNS dashboard](https://adguard-dns.com/dashboard/) using your AdGuard account
+2. Click “Connect device” and follow on-screen instructions
 
 > Supported platforms: 
 >- Android
 >- iOS
 >- Windows
->- MacOS
+>- Mac
 >- Linux
 >- Routers
 >- Gaming consoles
@@ -59,7 +59,7 @@ For those who aren't satisfied with dozens of pre-installed *Blocklists* with th
 
 **Advanced statistics**
 
-There are a lot of things in life we can't control, but fortunately, this doesn't apply to DNS queries made by devices connected to private AdGuard  DNS. You can see the total number and geography of requests, the number of blocked requests and a list of companies the requests were addressed to both in the summary table and in separate tabs with detailed statistical information. 
+There are a lot of things in life we can't control, but fortunately, this doesn't apply to DNS queries made by devices connected to Private AdGuard  DNS. You can see the total number and geography of requests, the number of blocked requests and a list of companies the requests were addressed to both in the summary table and in separate tabs with detailed statistical information. 
 <p><img src="https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/statistics.png" style="max-height: 600px; padding: 2px;">
 
 **Parental control**
