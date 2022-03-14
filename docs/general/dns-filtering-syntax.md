@@ -6,23 +6,6 @@ taxonomy:
 visible: true
 ---
 
-*  [Introduction](#introduction)
- *  [Basic Examples](#basic-examples)
- *  [Adblock-Style Syntax](#adblock-style-syntax)
-     *  [Special Characters](#special-characters)
-     *  [Regular Expressions](#regular-expressions)
-     *  [Rule Modifiers](#rule-modifiers)
-         *  [`client`](#client)
-         *  [`denyallow`](#denyallow)
-         *  [`dnstype`](#dnstype)
-         *  [`dnsrewrite`](#dnsrewrite)
-         *  [`important`](#important)
-         *  [`badfilter`](#badfilter)
-         *  [`ctag`](#ctag)
- *  [`/etc/hosts`-Style Syntax](#`/etc/hosts`-style-syntax)
- *  [Domains-Only Syntax](#domains-only-syntax)
- *  [Hostlists Compiler](#hostlists-compiler)
-
 ##  Introduction
 There are three different approaches to writing hosts blocklists:
 
@@ -30,7 +13,7 @@ There are three different approaches to writing hosts blocklists:
     filtering rules based on using a subset of the Adblock-style rule syntax.
     This way blocklists are compatible with browser ad blockers.
 
- *  [`/etc/hosts` syntax](#`/etc/hosts`-style-syntax): the old, tried-and-true approach that
+ *  [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that
     uses the same syntax that operating systems do for their hosts files.
 
  *  [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
@@ -595,8 +578,7 @@ The list of allowed tags:
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 
 
-
-##  `/etc/hosts`-Style Syntax
+##  `/etc/hosts`-Style Syntax {#etc-hosts-syntax}
 
 For each host a single line should be present with the following information:
 
