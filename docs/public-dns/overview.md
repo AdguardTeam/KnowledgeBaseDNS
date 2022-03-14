@@ -3,10 +3,26 @@ title: Overview
 sidebar_position: 1
 ---
 
-TODO: 
+## What is AdGuard DNS?
 
-1. Explain what AdGuard DNS is
-2. List all public AdGuard servers and it's configurations
-3. Explain what are the differences between these configurations
+AdGuard DNS is a free, privacy-oriented DNS resolution system that blocks tracking, ads and phishing. AdGuard DNS does not require installing any applications. It is easy to use, can be effortlessly [set up on any device](https://adguard-dns.com/en/public-dns.html), and provides you with minimal necessary functions to block ads, trackers, malicious websites, and adult content (optionally).
 
-223468766987098-
+
+## Public AdGuard DNS servers
+AdGuard DNS has three different public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything.
+Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+
+
+## AdGuard DNS protocols
+AdGuard DNS supports various protocols, so you can choose the one that suits you best.
+
+### DNSCrypt protocol
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT) protocols
+DoH) and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
+
+### DNS-over-QUIC (DoQ) protocol
+DNS-over-QUIC is a new DNS encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+
+
