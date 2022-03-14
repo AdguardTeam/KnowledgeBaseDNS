@@ -32,7 +32,7 @@ Here is a simple sum up of differences in available features between Public AdGu
 
 ### How to set up Private AdGuard DNS
 
-1. [Log in to your AdGuard DNS dashboard](https://adguard-dns.com/dashboard/) using your AdGuard account
+1. Go to your [AdGuard DNS dashboard](https://adguard-dns.com/dashboard/) (if not logged in, log in using your AdGuard account)
 2. Click “Connect device” and follow on-screen instructions
 
 > Supported platforms: 
