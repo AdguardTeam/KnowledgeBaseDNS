@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## What is DNS
 
-As you know, DNS stands for "Domain name system", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server (which is usually provided by your ISP) to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS stands for "Domain name system", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server (which is usually provided by your ISP) to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
 
 There are also DNS servers that can provide a DNS-level blocking. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
 
@@ -35,13 +35,25 @@ To better understand what public AdGuard DNS is, how does it work and what do yo
 
 Many users are completely satisfied with public AdGuard DNS, but for some of them there exists one unavoidable drawback: it is impossible to configure it according to personal preferences. [Private AdGuard DNS](https://adguard-dns.com/en/welcome.html) allows you to set which domains you want to block and which you don't. There are way more benefits of the service:
 
-* **Advanced statistics**. Private AdGuard DNS will provide you with a complete picture of requests send by apps and browser extensions: the total number and geography of requests, the number of blocked requests and a list of companies the requests were addressed to both in the summary table and in separate tabs with detailed statistical information.
+* **Advanced statistics**. Private AdGuard DNS will provide you with a complete picture of requests sent by apps and browser extensions: the total number and geography of requests, the number of blocked requests and a list of companies the requests were addressed to both in the summary table and in separate tabs with detailed statistical information.
 
 * **Import/export custom rules**. There are dozens of pre-installed Blocklists with thousands of rules, but you can also add your custom rules, manually or using an import feature.
 
 * **Parental control**. In addition to options such as adult content blocking and safe search, there is an ability to manually specify domains for blocking and set a schedule for the Parental control to work accordingly.
 
-Private AdGuard DNS is a useful tool with many settings. To get a full understanding of the product, check out this article. 
+Private AdGuard DNS is a useful tool with many settings. To get a full understanding of the product, check out [this article](link). 
+
+## DNS-filtering module in AdGuard products
+
+All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server from a provider you trust. Of course, AdGuard DNS, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.com/en/public-dns.html) — public or private. 
+
+
+
+
+
+
+
+
 
 
 
