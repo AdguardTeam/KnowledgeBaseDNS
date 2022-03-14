@@ -7,11 +7,11 @@ visible: true
 ---
 
 *  [Introduction](#introduction)
- *  [Basic Examples](#Basic-Examples)
- *  [Adblock-Style Syntax](#Adblock-Style)
+ *  [Basic Examples](#basic-examples)
+ *  [Adblock-Style Syntax](#adblock-style-syntax)
      *  [Special Characters](#special-characters)
      *  [Regular Expressions](#regular-expressions)
-     *  [Rule Modifiers](#Rule-Modifiers)
+     *  [Rule Modifiers](#rule-modifiers)
          *  [`client`](#client)
          *  [`denyallow`](#denyallow)
          *  [`dnstype`](#dnstype)
@@ -19,24 +19,24 @@ visible: true
          *  [`important`](#important)
          *  [`badfilter`](#badfilter)
          *  [`ctag`](#ctag)
- *  [`/etc/hosts`-Style Syntax](#`/etc/hosts`-Style-Syntax)
- *  [Domains-Only Syntax](#domains-only-Syntax)
+ *  [`/etc/hosts`-Style Syntax](#`/etc/hosts`-style-syntax)
+ *  [Domains-Only Syntax](#domains-only-syntax)
  *  [Hostlists Compiler](#hostlists-compiler)
 
 ##  Introduction
 There are three different approaches to writing hosts blocklists:
 
- *  [Adblock-style syntax](#Adblock-Style-Syntax): the modern approach to writing
+ *  [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing
     filtering rules based on using a subset of the Adblock-style rule syntax.
     This way blocklists are compatible with browser ad blockers.
 
- *  [`/etc/hosts` syntax](#`/etc/hosts`-Style-Syntax): the old, tried-and-true approach that
+ *  [`/etc/hosts` syntax](#`/etc/hosts`-style-syntax): the old, tried-and-true approach that
     uses the same syntax that operating systems do for their hosts files.
 
- *  [Domains-only syntax](#domains-only-Syntax): a simple list of domain names.
+ *  [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
 
 If you are creating a blocklist for AdGuard Home, we recommend using the
-[Adblock-style syntax](#Adblock-Style-Syntax).  It has a couple of important advantages
+[Adblock-style syntax](#adblock-style-syntax).  It has a couple of important advantages
 over the old-style syntax:
 
  *  **Blocklists size.**  Using pattern matching allows you to have a single
