@@ -1,12 +1,13 @@
 ---
 title: How to Write Hosts Blocklists
-taxonomy:
-    category:
-        - docs
-visible: true
+sidebar_position: 2
 ---
 
 ##  Introduction
+
+You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences.
+AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
+
 There are three different approaches to writing hosts blocklists:
 
  *  [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing
