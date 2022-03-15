@@ -891,7 +891,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `5.2.75.75` | <a href="sdns://AAcAAAAAAAAACTUuMi43NS43NQ">Add to AdGuard</a> |
+| DNS, IPv4      | `5.2.75.75` | [Add to AdGuard](sdns://AAcAAAAAAAAACTUuMi43NS43NQ) |
 | DNS, IPv6      | `2a04:52c0:101:75::75` | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyYTA0OjUyYzA6MTAxOjc1Ojo3NV0) |
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLm5sLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS | `tls://dot.nl.ahadns.net` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lm5sLmFoYWRucy5uZXQ) |
