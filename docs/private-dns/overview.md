@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Private AdGuard DNS
 
-![](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/main.png)
+![Private AdGuard DNS dashboard main](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## What is Private AdGuard DNS
 
@@ -19,7 +19,7 @@ We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Hom
 
 ## The difference between Private and Public AdGuard DNS
 
-Here is a simple sum up of differences in available features between Public AdGuard DNS and Private AdGuard DNS servers.
+Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
 
 | Public AdGuard DNS  | Private AdGuard DNS |
 | ----------- | ----------- |
@@ -50,21 +50,21 @@ Here is a simple sum up of differences in available features between Public AdGu
 **Blocklists management**
 
 With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
-![](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
 **User rules**
 
 For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists. 
-    ![](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/import.png)
+    ![Private AdGuard DNS dashboard user rules](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/import.png)
 
 **Statistics**
 
 In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains. 
-![](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
 **Traffic destination**
 
-This feature shows you where do DNS requests from your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
 **Companies**
 
@@ -77,7 +77,7 @@ This is a detailed log where you can check out the information on every single r
 **Parental control**
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
-    ![](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+    ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
         
 <center><b><a href="https://adguard-dns.com/">Get Private AdGuard DNS</a></b></center>
 </br> 
