@@ -7,9 +7,9 @@ sidebar_position: 1
 
 ## What is DNS cache?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of having to reroute to DNS servers, the system answers queries from the cache.
+DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
-The DNS cache contains so-called resource records (RRs), which are:
+The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
 * **Resource data (or rdata)**;
 * **Record type**;
@@ -22,13 +22,11 @@ The DNS cache contains so-called resource records (RRs), which are:
 
 **You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
-**You want to quickly access the correct web pages.**
-
-**You want to improve your privacy by deleting your browsing history.**
+**You want to improve your privacy.**
 
 **You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
 
-## How to flush DNS cache on different OS
+## How to flush DNS cache on different OSs
 
 ### macOS
 
@@ -40,7 +38,7 @@ On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password and the process is done.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
@@ -92,13 +90,13 @@ You will get the message that the server has been successfully reloaded.
 
 ### Android
 
-On Android, you can use the Chrome browser to clear the DNS cache. Open Chrome and type the following in the URL bar:
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
 
-`chrome://net-internals/#dns`
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Select *DNS* in the left pane and tap *Clear host cache* in the right pane.
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
 
-Or you can flush the DNS cache through the browser you are using. Go to Settings->Apps->*Your browser*, then choose *Storage* and tap on *Clear cache*.
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
 
 ### iOS
 
