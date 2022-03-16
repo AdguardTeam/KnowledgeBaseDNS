@@ -79,6 +79,5 @@ This is a detailed log where you can check out the information on every single r
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
     ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
         
-<center><b><a href="https://adguard-dns.com/">Get Private AdGuard DNS</a></b></center>
-</br> 
+[Get Private AdGuard DNS](https://adguard-dns.com/)
 
