@@ -58,7 +58,7 @@ First of all, we have to mention that with AdGuard you don't have to choose. You
 1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS level (or rather, they can, but only by blocking the entire domains which are being used for other purposes). 
 
 ![Example of difference](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg)
-*An example of difference between DNS and network filtering*
+*An example of difference between DNS filtering and network filtering*
 
 2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS level. This harms the statistics and makes it impossible to create app-specific filtering rules.
 
