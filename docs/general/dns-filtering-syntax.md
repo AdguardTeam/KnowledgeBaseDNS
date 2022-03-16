@@ -1,5 +1,5 @@
 ---
-title: How to Write Hosts Blocklists
+title: DNS filtering rules syntax
 sidebar_position: 2
 ---
 
