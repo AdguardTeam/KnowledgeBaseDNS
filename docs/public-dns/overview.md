@@ -9,12 +9,12 @@ AdGuard DNS is a free, privacy-oriented DNS resolver that provides secure connec
 
 
 ## Public AdGuard DNS servers
-AdGuard DNS has three different public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything.
-Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ). You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.com/en/public-dns.html).
+AdGuard DNS has three different public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.com/en/public-dns.html).
+Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ). 
 
 
 ## AdGuard DNS protocols
-AdGuard DNS supports various protocols, so you can choose the one that suits you best.
+Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
 
 ### DNSCrypt
 AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration. But compared to the DoH, DoT and DoQ protocols, DNSCrypt is considered obsolete and if possible we recommend using these protocols.
