@@ -3,7 +3,10 @@ name: Build and deploy
 on:
   push:
     branches:
-      - main
+      - "*"
+    tags:
+      - v*
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -23,6 +26,7 @@ jobs:
         run: yarn build
 
       - name: deploy
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           branch: gh-pages
