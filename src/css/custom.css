@@ -35,11 +35,14 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .container img {
-  border: 1px solid #efefef;
   max-width: 100%;
   margin: 0 auto;
-  padding: 2px;
   display: block;
+}
+
+.markdown img {
+  border: 1px solid #efefef;
+  padding: 2px;
 }
 
 .navbar {
