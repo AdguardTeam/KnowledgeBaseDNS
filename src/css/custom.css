@@ -103,42 +103,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 /* Sidebar */
-button[class*='collapseSidebarButton'] {
-  margin: 0 2px;
-  background-color: transparent;
-  border-color: var(--ifm-color-primary);
-}
-
-[class*='collapseSidebarButtonIcon'] g,
-[class*='collapsedDocSidebar'] g {
-  fill: #4D4D4D;
-  transition: fill ease 0.2s;
-}
-
-html[data-theme='dark'] [class*='collapseSidebarButtonIcon'] g,
-html[data-theme='dark'] [class*='collapsedDocSidebar'] g {
-  fill: var(--ifm-color-primary);
-}
-
-html[data-theme='dark'] button[class*='collapseSidebarButton'] {
-  background-color: transparent;
-}
-
-[class*='collapseSidebarButton']:hover,
-[class*='collapseSidebarButton']:focus,
-[class*='collapsedDocSidebar']:hover,
-[class*='collapsedDocSidebar']:focus {
-  background-color: #D8D8D8!important;
-  border-color: #D8D8D8!important;
-}
-
-button[class*='collapseSidebarButton']:hover g,
-button[class*='collapseSidebarButton']:focus g,
-div[class*='collapsedDocSidebar']:hover g,
-div[class*='collapsedDocSidebar']:focus g {
-  fill: var(--ifm-color-primary);
-}
-
 .table-of-contents__link {
   font-size: 13px;
   font-weight: 300;
