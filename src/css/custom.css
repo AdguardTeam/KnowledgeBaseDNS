@@ -6,81 +6,6 @@
  */
 
 /* You can override the default Infima variables here. */
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/light.woff2") format("woff2"), url("/fonts/roboto/light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/light-cyr.woff2") format("woff2"), url("/fonts/roboto/light-cyr.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  unicode-range: U+0400-04FF;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/regular.woff2") format("woff2"), url("/fonts/roboto/regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/regular-cyr.woff2") format("woff2"), url("/fonts/roboto/regular-cyr.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  unicode-range: U+0400-04FF;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/medium.woff2") format("woff2"), url("/fonts/roboto/medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/medium-cyr.woff2") format("woff2"), url("/fonts/roboto/medium-cyr.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  unicode-range: U+0400-04FF;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/bold.woff2") format("woff2"), url("/fonts/roboto/bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/bold-cyr.woff2") format("woff2"), url("/fonts/roboto/bold-cyr.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  unicode-range: U+0400-04FF;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/black.woff2") format("woff2"), url("/fonts/roboto/black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto/black-cyr.woff2") format("woff2"), url("/fonts/roboto/black-cyr.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  unicode-range: U+0400-04FF;
-}
-
 :root {
   --ifm-color-primary: #2F6EDE;
   --ifm-color-primary-dark: #2160d1;
@@ -90,9 +15,6 @@
   --ifm-color-primary-lighter: #5286e4;
   --ifm-color-primary-lightest: #759fe9;
   --ifm-code-font-size: 95%;
-
-  --ifm-toc-border-color: #000000;
-  --ifm-font-family-base: Roboto, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 [data-theme="dark"]:root {
@@ -173,7 +95,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* Sidebar */
 [class*='collapseSidebarButton'] {
-  margin: 0 2px;
   background-color: transparent;
 }
 
