@@ -6,15 +6,97 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/light.woff2") format("woff2"), url("/fonts/roboto/light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/light-cyr.woff2") format("woff2"), url("/fonts/roboto/light-cyr.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/regular.woff2") format("woff2"), url("/fonts/roboto/regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/regular-cyr.woff2") format("woff2"), url("/fonts/roboto/regular-cyr.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/medium.woff2") format("woff2"), url("/fonts/roboto/medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/medium-cyr.woff2") format("woff2"), url("/fonts/roboto/medium-cyr.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/bold.woff2") format("woff2"), url("/fonts/roboto/bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/bold-cyr.woff2") format("woff2"), url("/fonts/roboto/bold-cyr.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/black.woff2") format("woff2"), url("/fonts/roboto/black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto/black-cyr.woff2") format("woff2"), url("/fonts/roboto/black-cyr.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  unicode-range: U+0400-04FF;
+}
+
 :root {
-  --ifm-color-primary: #66b574;
-  --ifm-color-primary-dark: #53ac63;
-  --ifm-color-primary-darker: #4ea25d;
-  --ifm-color-primary-darkest: #41864d;
-  --ifm-color-primary-light: #79be85;
-  --ifm-color-primary-lighter: #83c38e;
-  --ifm-color-primary-lightest: #9fd1a8;
+  --ifm-color-primary: #2F6EDE;
+  --ifm-color-primary-dark: #2160d1;
+  --ifm-color-primary-darker: #1f5bc5;
+  --ifm-color-primary-darkest: #1a4ba3;
+  --ifm-color-primary-light: #467ee2;
+  --ifm-color-primary-lighter: #5286e4;
+  --ifm-color-primary-lightest: #759fe9;
   --ifm-code-font-size: 95%;
+
+  --ifm-toc-border-color: #000000;
+  --ifm-font-family-base: Roboto, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+[data-theme="dark"]:root {
+  --ifm-toc-border-color: #D93C8A;
 }
 
 .docusaurus-highlight-code-line {
@@ -29,9 +111,119 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .container img {
-  border: 1px solid #efefef;
   max-width: 100%;
   margin: 0 auto;
-  padding: 2px;
   display: block;
+}
+
+.markdown img {
+  border-top: 1px solid #D93C8A;
+  border-bottom: 1px solid #D93C8A;
+  padding: 5px 0;
+}
+
+.footer {
+  --ifm-footer-background-color: #000;
+  --ifm-footer-color: #F3F3F3;
+  --ifm-footer-link-color: #F3F3F3;
+  --ifm-footer-title-color: #F3F3F3;
+}
+
+[data-theme="dark"] .footer {
+  --ifm-footer-background-color: #353A3F;
+}
+
+.footer__links {
+  margin-bottom: 64px;
+}
+
+.footer__item {
+  max-width: 165px;
+  font-size: 13px;
+}
+
+.footer__link-item {
+  font-size: 13px;
+  line-height: 2.4;
+}
+
+.footer__link-item svg {
+  display: none;
+}
+
+.footer__copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Navbar */
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar__link {
+  font-size: 14px;
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.navbar__brand {
+  height: 26px;
+}
+
+/* Sidebar */
+[class*='collapseSidebarButton'] {
+  margin: 0 2px;
+  background-color: transparent;
+}
+
+[class*='collapseSidebarButtonIcon'] g,
+[class*='collapsedDocSidebar'] g {
+  fill: #000;
+  transition: fill ease 0.2s;
+}
+
+html[data-theme='dark'] [class*='collapseSidebarButtonIcon'] g,
+html[data-theme='dark'] [class*='collapsedDocSidebar'] g {
+  fill: #D93C8A;
+}
+
+html[data-theme='dark'] button[class*='collapseSidebarButton'] {
+  background-color: transparent;
+}
+
+[class*='collapseSidebarButton']:hover,
+[class*='collapseSidebarButton']:focus,
+[class*='collapsedDocSidebar']:hover,
+[class*='collapsedDocSidebar']:focus {
+  background-color: #E55E63!important;
+  border-color: #E55E63!important;
+}
+
+button[class*='collapseSidebarButton']:hover g,
+button[class*='collapseSidebarButton']:focus g,
+div[class*='collapsedDocSidebar']:hover g,
+div[class*='collapsedDocSidebar']:focus g {
+  fill: #fff;
+}
+
+.table-of-contents__link {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border-color: #000;
+}
+
+html[data-theme='dark'] .pagination-nav__link {
+  border-color: #fff;
+}
+
+.pagination-nav__link:hover,
+.pagination-nav__link:focus,
+html[data-theme='dark'] .pagination-nav__link:hover,
+html[data-theme='dark'] .pagination-nav__link:focus {
+  border-color: #E55E63;
 }
