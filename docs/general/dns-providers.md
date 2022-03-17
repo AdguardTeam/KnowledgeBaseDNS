@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.com/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
 #### Default
 

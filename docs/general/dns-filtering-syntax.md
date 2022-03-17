@@ -20,7 +20,7 @@ There are three different approaches to writing hosts blocklists:
  *  [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
 
 If you are creating a blocklist for AdGuard Home, we recommend using the
-[Adblock-style syntax](#adblock-style-syntax).  It has a couple of important advantages
+[Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages
 over the old-style syntax:
 
  *  **Blocklists size.**  Using pattern matching allows you to have a single
@@ -622,9 +622,7 @@ example.net # this is also a comment
 ```
 
 If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will
-consider it to be an [Adblock-style](#adblock-style) rule.
-
-
+consider it to be an [Adblock-style](#adblock-style-syntax) rule.
 
 ##  Hostlists Compiler
 
