@@ -24,6 +24,7 @@ module.exports = {
   themeConfig: {
     hideableSidebar: true,
     navbar: {
+      hideOnScroll: true,
       title: '',
       logo: {
         alt: 'AdGuard DNS',
