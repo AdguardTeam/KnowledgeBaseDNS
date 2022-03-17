@@ -2,7 +2,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
-const ADBLOCK_WEBSITE_URL = 'https://adguard-dns.com';
+const ADBLOCK_WEBSITE_URL = 'https://adguard.com';
 const VPN_WEBSITE_URL = 'https://adguard-dns.com';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
