@@ -32,7 +32,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 
 ## How to set up Private AdGuard DNS
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.com/dashboard/) (if not logged in, log in using your AdGuard account)
+1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
 2. Click “Connect device” and follow on-screen instructions
 
 > Supported platforms: 
@@ -83,4 +83,4 @@ To protect your child from online content you deem inappropriate, set up and act
 
     ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
         
->In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.com/).
+>In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
