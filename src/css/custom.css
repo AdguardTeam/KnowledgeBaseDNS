@@ -40,11 +40,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   display: block;
 }
 
-.markdown img {
-  border: 1px solid #efefef;
-  padding: 2px;
-}
-
 .navbar {
   box-shadow: none;
 }
