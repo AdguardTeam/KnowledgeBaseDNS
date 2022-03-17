@@ -26,7 +26,7 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'dns',
+        alt: 'AdGuard DNS',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
       },
@@ -61,7 +61,7 @@ module.exports = {
     footer: {
       style: 'light',
       logo: {
-        alt: 'dns',
+        alt: 'AdGuard DNS',
         src: 'img/logo_dark.svg',
         srcDark: 'img/logo_dark.svg',
       },
