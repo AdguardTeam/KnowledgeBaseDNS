@@ -10,7 +10,7 @@ module.exports = {
   title: 'AdGuard Knowledge Base',
   tagline: 'Knowledge base for AdGuard products',
   url: 'https://adguardteam.github.io/',
-  baseUrl: '/',
+  baseUrl: '/KnowledgeBaseDNS/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
