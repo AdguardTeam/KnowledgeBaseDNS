@@ -2,7 +2,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
-const ADBLOCK_WEBSITE_URL = 'https://adguard.com';
+const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -39,7 +39,7 @@ module.exports = {
           label: 'docs',
         },
         {
-          to: ADBLOCK_WEBSITE_URL + '/blog/tag/adguard-dns.html',
+          to: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
           position: 'left',
           label: 'blog',
         },
@@ -97,15 +97,15 @@ module.exports = {
           items: [
             {
               label: 'blog',
-              href: ADBLOCK_WEBSITE_URL + '/blog/tag/adguard-dns.html',
+              href: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
             },
             {
               label: 'privacy_policy',
-              href: ADBLOCK_WEBSITE_URL + '/privacy/dns.html',
+              href: ADGUARD_WEBSITE_URL + '/privacy/dns.html',
             },
             {
               label: 'terms',
-              href: ADBLOCK_WEBSITE_URL + '/eula.html',
+              href: ADGUARD_WEBSITE_URL + '/eula.html',
             },
             {
               label: 'status',
@@ -118,7 +118,7 @@ module.exports = {
           items: [
             {
               label: 'ad_blocker',
-              href: ADBLOCK_WEBSITE_URL,
+              href: ADGUARD_WEBSITE_URL,
             },
             {
               label: 'vpn',
