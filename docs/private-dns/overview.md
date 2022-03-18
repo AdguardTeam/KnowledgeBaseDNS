@@ -69,18 +69,24 @@ In "Statistics" tab you can see all the summarized statistics on DNS queries mad
 
 This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
+![Private AdGuard DNS dashboard traffic](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+
 **Companies**
 
 This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests. 
+
+![Private AdGuard DNS dashboard companies](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/companies.png)
 
 **Query log**
 
 This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
+![Private AdGuard DNS dashboard query log](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/query_log.png)
+
 **Parental control**
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-    ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
         
 >In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
