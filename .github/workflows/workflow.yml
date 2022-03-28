@@ -22,6 +22,10 @@ jobs:
       - name: yarn install
         run: yarn install
 
+      - name: sync translations
+        if: github.ref == 'refs/heads/main'
+        run: yarn run crowdin:sync
+
       - name: yarn build
         run: yarn build
 

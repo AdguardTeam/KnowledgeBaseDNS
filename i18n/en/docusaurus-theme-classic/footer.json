@@ -25,15 +25,15 @@
   },
   "link.item.label.blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=blog linking to https://adguard-dns.com/blog/tag/adguard-dns.html"
+    "description": "The label of footer link with label=blog linking to https://adguard.com/blog/tag/adguard-dns.html"
   },
   "link.item.label.privacy_policy": {
     "message": "Privacy Policy",
-    "description": "The label of footer link with label=privacy_policy linking to https://adguard-dns.com/privacy/dns.html"
+    "description": "The label of footer link with label=privacy_policy linking to https://adguard.com/privacy/dns.html"
   },
   "link.item.label.terms": {
     "message": "Terms of Service",
-    "description": "The label of footer link with label=terms linking to https://adguard-dns.com/eula.html"
+    "description": "The label of footer link with label=terms linking to https://adguard.com/eula.html"
   },
   "link.item.label.status": {
     "message": "AdGuard Status",
@@ -41,11 +41,11 @@
   },
   "link.item.label.ad_blocker": {
     "message": "AdGuard Ad Blocker",
-    "description": "The label of footer link with label=ad_blocker linking to https://adguard-dns.com"
+    "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {
     "message": "AdGuard VPN",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.com"
+    "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
   "copyright": {
     "message": "© AdGuard DNS, 2022",

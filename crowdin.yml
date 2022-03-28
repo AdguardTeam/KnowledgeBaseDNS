@@ -1,32 +1,24 @@
-project_id: '471118'
-api_token_env: 'CROWDIN_PERSONAL_TOKEN'
+project_id: "506972"
+api_token_env: "CROWDIN_PERSONAL_TOKEN"
 preserve_hierarchy: true
-files: [
-    # JSON translation files
-    {
-      source: '/i18n/en/**/*',
-      translation: '/i18n/%two_letters_code%/**/%original_file_name%',
-    },
-    # Docs Markdown files
-    {
-      source: '/docs/**/*',
-      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%',
-      ignore: [
-        "/**/assets"
-      ]
-    },
-    {
-      source: '/vpn/**/*',
-      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-vpn/current/**/%original_file_name%',
-      ignore: [
-        "/**/assets"
-      ]
-    },
-    {
-      source: '/miscellaneous/**/*',
-      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-miscellaneous/current/**/%original_file_name%',
-      ignore: [
-        "/**/assets"
-      ]
-    }
-  ]
+
+# We generally want to use the "two-letters-code" of a locale (ie the language)
+# But not for all locales!
+# "pt-BR" may be better to remain as "pt-BR" instead of being transformed to "pt"
+# Note: &/* is Yaml anchor syntax: https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/
+languages_mapping: &languages_mapping
+  two_letters_code:
+    zh-CN: zh-CN
+    zh-TW: zh-TW
+
+files:
+  - source: /i18n/en/**/*
+    translation: /i18n/%two_letters_code%/**/%original_file_name%
+    dest: /kb.adguard-dns.io/%original_path%/%original_file_name%
+    languages_mapping: *languages_mapping
+  - source: /docs/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+    dest: /kb.adguard-dns.io/%original_path%/%original_file_name%
+    languages_mapping: *languages_mapping
+    ignore:
+      - "/**/_category_.json"
