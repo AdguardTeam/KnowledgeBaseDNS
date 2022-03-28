@@ -24,6 +24,8 @@ jobs:
 
       - name: sync translations
         if: github.ref == 'refs/heads/main'
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: yarn run crowdin:sync
 
       - name: yarn build
