@@ -28,6 +28,14 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
         run: yarn run crowdin:sync
 
+      - name: commit translations
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'devteam@adguard.com'
+          git commit -am "[skip ci] update translations"
+          git push
+
       - name: yarn build
         run: yarn build
 
