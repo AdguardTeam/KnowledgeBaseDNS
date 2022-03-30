@@ -7,8 +7,8 @@ const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'AdGuard Knowledge Base',
-  tagline: 'Knowledge base for AdGuard products',
+  title: 'AdGuard DNS Knowledge Base',
+  tagline: 'Knowledge base for AdGuard DNS',
   url: 'https://adguardteam.github.io/',
   baseUrl: '/KnowledgeBaseDNS/',
   onBrokenLinks: 'throw',
@@ -16,7 +16,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   trailingSlash: false,
   organizationName: 'AdGuard',
-  projectName: 'AdGuardKB',
+  projectName: 'AdGuardDNSKB',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
