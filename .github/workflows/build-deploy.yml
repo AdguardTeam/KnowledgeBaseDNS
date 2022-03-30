@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
@@ -21,21 +21,6 @@ jobs:
 
       - name: yarn install
         run: yarn install
-
-      - name: sync translations
-        if: github.ref == 'refs/heads/main'
-        env:
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-        run: yarn run crowdin:sync
-
-      - name: commit translations
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config --global user.name 'Github Actions'
-          git config --global user.email 'devteam@adguard.com'
-          git add i18n/
-          git commit -m "[skip ci] update translations"
-          git push
 
       - name: yarn build
         run: yarn build

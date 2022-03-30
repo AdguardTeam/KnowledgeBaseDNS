@@ -1,0 +1,34 @@
+name: Sync with Crowdin
+
+on:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: yarn install
+        run: yarn install
+
+      - name: sync translations
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+        run: yarn run crowdin:sync
+
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: automatically update translations
+          title: Update translations
+          body: Transactions are synced from Crowdin
+          branch: update-translations
+          base: main
