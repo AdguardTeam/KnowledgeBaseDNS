@@ -1,6 +1,6 @@
 {
   "theme.NotFound.title": {
-    "message": "Page Not Found Test",
+    "message": "Page Not Found",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
