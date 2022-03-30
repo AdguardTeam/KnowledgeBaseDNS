@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sidebar.category.General": {
+    "message": "General",
+    "description": "The label for category General in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Public DNS": {
+    "message": "Public DNS",
+    "description": "The label for category Public DNS in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Solving problems": {
+    "message": "Solving problems",
+    "description": "The label for category Solving problems in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Private DNS": {
+    "message": "Private DNS",
+    "description": "The label for category Private DNS in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Miscellaneous": {
+    "message": "Miscellaneous",
+    "description": "The label for category Miscellaneous in sidebar sidebar"
+  }
+}
