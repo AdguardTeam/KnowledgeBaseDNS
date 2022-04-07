@@ -3,4 +3,4 @@ title: Credits and Acknowledgements
 sidebar_position: 5
 ---
 
-TODO: write a stub here, we'll need to fill out special thanks and acknowledge open source software here later.
+Our dev team would like to thank the developers of the third-party software we use in AdGuard DNS, our great beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard DNS and moderating our communities is priceless.
