@@ -3,7 +3,7 @@ title: 'Private AdGuard DNS beta test'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of AdGuard Home. With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
 
 ## How to become a beta tester
 
@@ -23,6 +23,3 @@ The above methods are the most preferred, but you can use others if necessary:
 
 * Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
 
-## What else?
-
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard DNS as usual. And in case you encounter a problem, be sure to let us know about it! 
