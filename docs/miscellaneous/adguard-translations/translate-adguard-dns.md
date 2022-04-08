@@ -18,44 +18,44 @@ If you want to be among the volunteers who help us translate AdGuard VPN, please
 If you want to join AdGuard translators, first of all, go to [Crowdin](https://crowdin.com/) and sign up/sign in there.
 
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/main-screen.png) 
+![Crowdin main screen](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/main-screen.png) 
 
 
 Once you log in, go to [our page](https://crowdin.com/profile/adguard/). You will see a few AdGuard projects, each with folders for different product strings.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/projects.png) 
+![AdGuard projects in Crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/projects.png) 
 
 
 Choose a project, and then you will see the list of available languages. 
 
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/languages.png) 
+![List of available languages](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/languages.png) 
 
 
-You can start translating literally any product you like by choosing the respective folder. We would be especially grateful if you could participate in translating the [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases/en#/kb.adguard-dns.io) and the [AdGuard DNS strings](https://crowdin.com/translate/adguard-websites/18279/en-en?filter=basic&value=0) for different platforms (don't forget to select the right translation language first).
+You can start translating literally any product you like by choosing the respective folder. We would be especially grateful if you could participate in translating the [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases/en#/kb.adguard-dns.io) and the [AdGuard DNS strings](https://crowdin.com/translate/adguard-websites/18279/en-en?filter=basic&value=0) for different platforms (don't forget to select the appropriate translation language first).
 
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders_vpn.png) 
+![List of product folders](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders_vpn.png) 
 
 
 Filter phrases that are not yet translated and start your translation history!
 
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter_vpn.png) 
+![Filter out untranslated strings](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter_vpn.png) 
 
 
 Suggest your version in the text box and save it.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box.png) 
+![Don't forget to save your translation](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box.png) 
 
 
 If you don't agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/vote.png) 
+![Upvote or downvote for other volunteers suggestions](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/vote.png) 
 
 Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
+![Crowdin Voting mode](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
 
 
 You can find some helpful tips by reading the following information. Please have a look at it.
@@ -67,13 +67,13 @@ There are several things we'd like you to know before you start translating. It 
 
 1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms_vpn.png) 
+![Glossary terms](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms_vpn.png) 
 
 You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
 2. In Crowdin, strings can have notes to make them easier to understand and translate. Look for them in the "Context" field of the source string.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note_vpn.png) 
+![The Context field](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note_vpn.png) 
 
 
 These are always worth paying attention to. So keep an eye on them.
@@ -81,38 +81,38 @@ These are always worth paying attention to. So keep an eye on them.
 
 3. Keep notice of screenshots that often go alongside source phrases in the "context" field as well. They will help to understand the context and convey the exact meaning.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot.png) 
+![Ыcreenshots will help you  better understand the context](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot.png) 
 
 
 Please note that you can request context by clicking the "REQUEST" button.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
+![The Request button](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
 
 
 4. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png) 
+![Comments on strings](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png) 
 
 
 There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/discussions.png) 
+![The Discussions tab](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/discussions.png) 
 
 
 5. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
+![Translation Memory](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png) 
 
 
 6. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. _Please pay attention to them: they usually have a higher priority._
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png) 
+![The Tasks tab](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png) 
 
 
 7. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](plural-forms.md).
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/plurals.png) 
+![Phrases with plural forms](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/plurals.png) 
 
 
 Using proper plural forms is extremely important: please ask us in the comments if anything is unclear.
