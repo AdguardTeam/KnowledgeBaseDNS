@@ -7,7 +7,7 @@ The goal of this Knowledge Base is to provide everyone with the most up-to-date 
 
 This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones. 
 
-## How to suggest a change or write a new article 
+## How to suggest a change or write a new article {#suggest-change}
  
 You can suggest changes to current articles and add new ones to the Knowledge Base DNS using the functionality of the GitHub mentioned above.
 If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
@@ -24,5 +24,5 @@ Translation of the existing articles of the Knowledge Base DNS is carried out on
 
 ## Working on open issues
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#how-to-suggest-a-change-or-write-a-new-article) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
   
