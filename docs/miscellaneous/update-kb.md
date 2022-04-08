@@ -5,7 +5,7 @@ sidebar_position: 3
 
 The goal of this Knowledgebase is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released. 
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS/tree/main/docs), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones. 
+This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones. 
 
 ## How to suggest a change or write a new article
  
