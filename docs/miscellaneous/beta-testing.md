@@ -13,7 +13,7 @@ To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](h
 
 Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
 
-* Go to [forum.adguard.com](forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
 
 * Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
 
