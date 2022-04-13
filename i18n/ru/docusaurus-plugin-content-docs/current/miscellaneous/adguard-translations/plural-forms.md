@@ -19,7 +19,7 @@ In contrast to English, the Polish language has three plural forms of nouns. One
 
 Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
 
-![Polish plural forms](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Polish.png)
+![Формы множественного числа в польском языке](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Polish.png)
 > Find other examples [here](https://developer.mozilla.org.cach3.com/en/Localization_and_Plurals). Let’s draw a small parallel between English and Polish for better understanding: The English version:                                                 The Polish equivalents:
 
       1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
@@ -50,7 +50,7 @@ Let's take a closer look at them.
 
 #### 1. **Phrases with string keys ending in `.singular`, `.dual`, `.plural`**
 
-![An example of a phrase with a specific string key ending](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
+![Пример фразы с определённым окончанием строкового ключа](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
 
 Most of them consist of only one or two words:
 
@@ -64,7 +64,7 @@ Please pay attention to the string keys when you meet such phrases on Crowdin an
 
 Please look at the example:
 
-![Strings with singular and plural nouns separated by commas](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
+![Строки с существительными в единственном и множественном числе, разделённые запятыми](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
 
 If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
 
@@ -72,83 +72,83 @@ If there are 3 plural forms of nouns in your language (like in Polish), please w
 
 In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
 
-#### 3. **Strings that use the Crowdin-developed pattern**
+#### 3. **Строки, в которых используется паттерн, разработанный Crowdin**
 
-This is the most user-friendly scheme of translating strings with plurals.
+Это наиболее удобная схема перевода строк с множественным числом.
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+Crowdin предлагает пользователям перевести определенное количество фраз с различными формами множественного числа.
 
-If your language provides only one plural form, then you will see only one phrase to translate. If you have three forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+Если в вашем языке существует только одна форма множественного числа, то вы увидите только одну фразу для перевода. Если существуют три плюральные формы, Crowdin предоставит вам строку, разделённую на две или три строки для перевода.
 
-For example:
+Например:
 
-![Strings that use the Crowdin-developed pattern](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
+![Строки, в которых используется паттерн, разработанный Crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The "Many" and "Other" fields' contents can be the same.
+Пожалуйста, будьте внимательны при переводе этих строк и их утверждении. Если вы не понимаете, что означает поле Other, то просто вставьте ту же форму, что и в поле Many. Содержание полей Many и Other может быть одинаковым.
 
-#### 4. **Strings with templates separated by the vertical bar sign**
+#### 4. **Строки с шаблонами, разделенными вертикальной чертой**
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project (namely in `"adguard-dns.io"` folder).
+Это самый сложный тип строк AdGuard, который в основном используется в проекте `AdGuard Websites` (а именно `в папке adguard-dns.io`).
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Обратите внимание на знак вертикальной черты между предложениями и плейсхолдер **%count%** в оригинальных фразах – это поможет вам определить фразы, в которых перевод требует использования форм множественного числа.
 
-![Strings with templates separated by the vertical bar sign](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
+![Строки с шаблонами, разделенные вертикальной чертой](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such phrase: *"Standard license for %count% computer|Standard license for %count% computers"*.
+Теперь представим, что вы столкнулись с такой фразой: *"Standard license for %count% computer|Standard license for %count% computers"*.
 
-What should you know to translate it correctly?
+Что нужно знать, чтобы перевести её правильно?
 
-Let's call the sentences which are divided by a vertical bar sign ***"templates"***, because actually they serve as templates for phrases with different numbers.
+Назовем предложения, разделённые вертикальной чертой,***«шаблонами»***, поскольку фактически они служат шаблонами для фраз с разными числами.
 
-Coming back to the example, as the English language includes only two plural forms, there should be two templates respectively:
+Возвращаясь к примеру, поскольку в английском языке есть только две плюральные формы, то и шаблонов должно быть соответственно два:
 
 `**Standard license for *%count%* computer|Standard license for *%count%* computers**`
 
-where **template 1** – Standard license for *%count%* computer,
+где **шаблон 1** – Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+и **шаблон 2** – Standard license for *%count%* computers.
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+Ещё одна важная вещь, на которую вам следует обратить внимание, это плейсхолдерыв **%count%**, которые обычно располагаются перед словами, которые они определяют. Вместо **%count%** в итоге будут отображаться разные числа в зависимости от того, какие шаблоны выбираются.
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+В ситуации с другим языком, в котором есть, скажем, три формы множественного числа, должно быть три шаблона с двумя вертикальными линиями между ними.
 
-For example, we would like to translate the above mentioned phrase into Slovak, that according to the rule of [Localizations and Plurals](https://developer.mozilla.org.cach3.com/en/Localization_and_Plurals) article has three plural forms of words to use with following numbers:
+Например, мы хотим перевести приведённую выше фразу на словацкий язык. Согласно правилу статьи [Localizations and Plurals](https://developer.mozilla.org.cach3.com/en/Localization_and_Plurals) он имеет три формы множественного числа, которые можно использовать со следующими цифрами:
 
-![Slovak plural forms](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Slovak.png)
+![Формы множественного числа словацкого языка](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Slovak.png)
 
-Then the translation from English into Slovak should be:
+Тогда перевод с английского на словацкий должен быть таким:
 
 `**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**`
 
-In this case, we see three templates which contain three plural forms of the word *"počítač"* (computer) in Slovak.
+В данном случае мы видим три шаблона, которые содержат три формы множественного числа слова *"počítač"* (компьютер) на словацком языке.
 
-**If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers** and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
+**Если мы проигнорируем одну из форм и будем использовать только два шаблона для словацкого языка вместо трёх, система не сможет взять соответствующий шаблон для определённых чисел**, и в результате появятся грамматические ошибки такого рода: *Standard license for 5 computer*.
 
-But in some languages there can be words (let’s call them exclusions) that have fewer plural forms than the language itself. And that can cause some confusion.
+Но в некоторых языках могут быть слова (назовём их исключениями), которые имеют меньшее количество форм множественного числа, чем установлено в языке. И это может привести к некоторой путанице.
 
-The Serbian word *'računar'* (computer), for example, has only two forms: *'računar'* - for 1, 21, 31 (and other numbers ending in 1, excluding 11) computers and *'računara'* - for other numbers of computers. But in spite of this fact, there should be three templates in AdGuard DNS translations according to the general rule (which states that there are three plural forms of words in Serbian):
+У сербского слова *'računar'* (компьютер), например, есть только две плюральные формы: *'računar'* – для 1, 21, 31 (и других цифр, заканчивающихся на 1, включая 11) и *'računara'* – для остальных чисел. Но, несмотря на это, в переводах AdGuard DNS должно быть три шаблона в соответствии с общим правилом (которое гласит, что в сербском языке существует три формы множественного числа слов):
 
-![Serbian plural forms](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Serbian.png)
+![Формы множественного числа в сербском языке](https://cdn.adguard.com/public/Adguard/kb/en/plurals/Serbian.png)
 
-Thus, the translation from English into Serbian should be:
+Таким образом, перевод с английского на сербский должен быть таким:
 
 `**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: ***The number of templates should reflect the number of plural forms of the respective language!*** (typically for this type of strings with plurals).
+Хотя очевидно, что последние два шаблона абсолютно одинаковые, очень важно соблюдать правило: ***количество шаблонов должно отражать количество форм множественного числа соответствующего языка!*** (обычного для этого типа строк с множественным числом).
 
-## Short summary
+## В заключение
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+При переводе проектов AdGuard обращайте особое внимание на фразы, требующие использования форм множественного числа.
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+Если первые три типа таких строк более или менее просты в исполнении, то четвертый тип требует большей аккуратности.
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+И ещё раз: если вы встретите оригинальную фразу с двумя важными элементами: **вертикальной чертой** и плейсхолдером **%count%**, пожалуйста, сделайте следующее:
 
-+ Refer to the plural rule of a language you translate into;
++ Обратитесь к правилам употребления множественного числа в языке, на который вы переводите;
 
-+ Keep the exact number of templates;
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
-+ Do not forget to use a vertical bar sign between templates without any space before and after it (exceptions: strings with spaces in original phrases);
-+ Do not translate, fill in or delete **%count%** placeholders.
++ Укажите необходимое количество шаблонов;
+> Количество шаблонов должно соответствовать количеству форм множественного числа в вашем языке, даже в тех случаях, когда некоторые слова имеют меньшее количество форм. Две формы множественного числа – два шаблона в переводе; пять форм множественного числа – пять шаблонов и т. д.
++ Не забывайте использовать между шаблонами знак вертикальной черты без пробела до и после него (исключения: строки с пробелами в исходных фразах);
++ Не переводите, не заполняйте и не удаляйте такие плейсхолдеры **%count%**.
 
-By following these simple rules you will help AdGuard DNS developers avoid a lot of unnecessary complications during the localization process. Thank you!
+Следуя этим простым правилам, вы поможете разработчикам AdGuard DNS избежать множества ненужных осложнений в процессе локализации. Спасибо!

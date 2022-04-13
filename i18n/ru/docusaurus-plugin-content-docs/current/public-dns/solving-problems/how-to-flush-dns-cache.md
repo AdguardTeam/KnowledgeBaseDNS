@@ -1,109 +1,109 @@
 ---
-title: How to flush DNS cache
+title: Как сбросить DNS-кеш
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+# Как сбросить DNS-кеш
 
-## What is DNS cache?
+## Что такое DNS-кеш?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS-кеш хранит IP-адреса посещённых сайтов на локальном компьютере, чтобы в следующий раз они загружались быстрее. Вместо того, чтобы выполнять длительный DNS-поиск, система отвечает на запросы с помощью записей DNS из временного DNS-кеша.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS-кеш содержит так называемые [записи о ресурсах](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), которые включают:
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
-* **Class**;
-* **Resource data length**.
+* **Данные ресурса (или rdata)**;
+* **Тип записи**;
+* **Имя записи**;
+* **TTL (время жизни информации)**;
+* **Класс**;
+* **Длину данных ресурса**.
 
-## When you might need to clear the cache
+## Когда нужно сбросить кеш
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Вы регулярно получаете ошибку 404.** Например, сайт перенесли на другой сервер, и его IP-адрес изменился. Чтобы браузер открывал сайт с нового IP-адреса, необходимо удалить закешированный IP из DNS-кеша.
 
-**You want to improve your privacy.**
+**Вы хотите улучшить конфиденциальность.**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
+**Вы хотите защищить себя от хакерских атак и вирусов.** Когда DNS-кеш повреждён, ваш браузер может перенаправить вас на IP-адрес вредоносного сайта, который злоумышленник вставил в DNS-записи вашего компьютера.
 
-## How to flush DNS cache on different OSs
+## Как сбросить DNS-кеш на разных ОС
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+Чтобы очистить DNS-кеш на macOS, откройте Терминал (его можно найти, используя поиск Spotlight — чтобы сделать это, нажмите Command и пробел и наберите *Терминал*) и введите следующую команду:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+На macOS Big Sur 11.2.0 и macOS Monterey 12.0.0 также можно использовать эту команду:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+После введите пароль администратора, чтобы завершить процесс.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Чтобы сбросить DNS-кеш на устройстве Windows, сделайте следующее:
 
-Load the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Запустите командную строку от имени администратора. Её можно найти в меню «Пуск», введя *командная строка* или *cmd*. Затем введите `ipconfig/flushdns` и нажмите Enter.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+Вы увидите строку *Кеш DNS-резолвера успешно сброшен*. Готово!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+В Linux нет DNS-кеширования на уровне ОС, если только не установлена и не запущена служба кеширования, такая как Systemd Resolved, DNSMasq, BIND или Nscd. Сброс DNS-кеша зависит от дистрибутива Linux и используемой службы кеша.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Для каждого дистрибутива нужно запустить окно терминала. Нажмите Ctrl+Alt+T и используйте соответствующую команду, чтобы очистить DNS-кеш для сервиса, с которым работает ваша система Linux.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Чтобы узнать, какой DNS-резолвер вы используете, введите `sudo lsof -i :53 -S`.
 
 #### Systemd Resolved
 
-To clear the **Systemd Resolved** DNS cache, type:
+Чтобы очистить DNS-кеш **Systemd Resolved**, введите:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+В случае успеха команда не возвращает никакого сообщения.
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+Чтобы очистить кеш **DNSMasq**, вам нужно перезапустить его:
 
 `sudo service dnsmasq restart`
 
 #### Nscd
 
-To clear the **Nscd** cache, you also need to restart the service:
+Чтобы очистить кеш **Nscd**, вам также нужно перезапустить сервис:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+Чтобы сбросить DNS-кеш **BIND**, выполните команду:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Затем вам нужно перезагрузить BIND:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+Вы получите сообщение, что сервер успешно перезагружен.
 
 ### Android
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+Самый простой способ очистить DNS-кеш на устройстве Android — это включить/отключить режим полёта. Это можно сделать в панели «Быстрые настройки».
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+Жёсткая перезагрузка также может помочь очистить DNS-кеш вашего устройства. Чтобы это сделать, нажмите и удерживайте кнопку включения питания не менее 20 секунд. Как правило, это заставит устройство перезагрузиться вручную, и DNS-кеш будет очищен.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Откройте *Настройки > Системные > Расширенные > Сброс > Сброс параметров сети* и нажмите *Сбросить настройки*.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> Обратите внимание: делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+Есть разные способы очистить DNS-кеш на iPhone и iPad.
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+Самый простой — включить/отключить Авиарежим в Настройках. DNS-кеш будет сброшен.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap on *Reset Network Settings*.
+Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Откройте *Основные*, пролистайте вниз, найдите *Сброс* и нажмите *Сбросить настройки сети*.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> Обратите внимание: делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.

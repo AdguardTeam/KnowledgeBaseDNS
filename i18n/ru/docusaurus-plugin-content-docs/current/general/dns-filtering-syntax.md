@@ -9,19 +9,19 @@ sidebar_position: 2
 
 Есть три подхода к написанию списков правил фильтрации:
 
- *  [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. This way blocklists are compatible with browser ad blockers.
+ *  [Синтаксис в стиле Adblock](#adblock-style-syntax): современный подход к написанию правил фильтрации, базирующийся на использовании подгруппы синтаксиса правил типа Adblock. Таким образом черные списки становятся совместимы с браузерными блокировщиками.
 
- *  [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that uses the same syntax that operating systems do for their hosts files.
+ *  [`/etc/hosts` синтаксис](#etc-hosts-syntax): это старый и проверенный подход, при котором используется тот же синтаксис, что и в операционных системах для узловых файлов.
 
- *  [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
+ *  [Синтаксис Domains-only](#domains-only-syntax): простое перечисление имен доменов.
 
-If you are creating a blocklist for AdGuard Home, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
+Если вы создаете черный список для AdGuard Home, мы рекомендуем использовать [синтаксис Adblock](#adblock-style-syntax). У него есть несколько важных преимуществ перед старым синтаксисом:
 
- *  **Blocklists size.**  Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
+ *  **Размер черных списков.**  Использование сопоставления шаблонов позволяет вам иметь одно правило вместо сотен записей `/etc/hosts`.
 
- *  **Compatibility.**  Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
+ *  **Совместимость.**  Ваш черный список будет совместим с блокировщиками для браузеров, в итоге станет проще обмениваться правилами со списком фильтров браузера.
 
- *  **Extensibility.**  For the last decade the Adblock-style syntax has greatly evolved, and we don't see why we can't extend it even more and provide additional features for network-wide blockers.
+ *  **Расширяемость.**  За последнее десятилетие синтаксис Adblock значительно развился, и мы не видим причин, почему мы не можем расширить его еще больше и дать дополнительные возможности сетевым блокировщикам.
 
 If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists for AdGuard Home.  We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
