@@ -1,5 +1,5 @@
 ---
-title: DNS filtering rules syntax
+title: DNS 过滤规则语法
 sidebar_position: 2
 ---
 

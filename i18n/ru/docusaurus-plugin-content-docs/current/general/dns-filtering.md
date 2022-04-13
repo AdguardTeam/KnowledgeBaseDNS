@@ -1,62 +1,62 @@
 ---
-title: DNS filtering
+title: DNS-фильтрация
 sidebar_position: 1
 ---
 
-To better understand DNS filtering, first, we should answer the question "What is DNS"?
+Чтобы лучше понять DNS-фильтрацию, надо сначала ответить на вопрос «‎Что такое DNS?»
 
-## What is DNS?
+## Что такое DNS?
 
-DNS stands for "Domain name system", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Thus, each time you go to a website, your browser sends a request to a special server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
+DNS расшифровывается как «‎Domain name system» или «‎Система доменных имён». Её цель — переводить имена доменов, понятные человеку, в нечто понятное браузерам, т.е. в IP-адреса. Таким образом, каждый раз, когда вы переходите на сайт, ваш браузер посылает запрос на специальный сервер (DNS-сервер). Этот сервер смотрит на имя запрашиваемого домена и отвечает соответствующим IP-адресом. Очень схематично это выглядит так:
 
-![How DNS works](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
+![Как работает DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_ru.png)
 
-The same applies, of course, to all apps and programs that send any web requests, not just browsers.
+Разумеется, всё то же самое применимо не только к браузерами к приложениям, но и к программам, которые посылают какие-либо веб-запросы.
 
-## How does DNS filtering work?
+## Как работает DNS-фильтрация?
 
-When you use one of the AdGuard apps that supports DNS filtering, it acts as a buffer between your device and the DNS server. All DNS requests that your browsers or apps are about to send first get processed by AdGuard. If you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. AdGuard will encrypt all your DNS requests before they leave your device, so that no malefactor could get access to their contents. On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a "blackhole" instead of forwarding them to the DNS server. More on that [later](#local-dns-blocklists).
+Когда вы используете одно из приложений AdGuard, поддерживающее DNS-фильтрацию, оно работает как буфер между вашим устройством и DNS-сервером. Все DNS-запросы, которые ваши браузеры или приложения собираются отправить, сначала обрабатываются AdGuard. Если вы используете DNS-сервер, предоставленный по умолчанию вашим интернет-провайдером, ваш DNS-трафик, скорее всего, не зашифрован и уязвим для отслеживания и перехвата. AdGuard зашифрует все ваши DNS-запросы до того, как они будут отправлены, так что никакие злоумышленники не смогут получить доступ к их содержимому. Кроме того, AdGuard может определить запросы к рекламным, трекинговым и «взрослым» сайтам и перенаправить их «‎в никуда» вместо того, чтобы переслать на DNS-сервер. Подробнее об этом мы расскажем [чуть позже](#local-dns-blocklists).
 
-![How DNS filtering works](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![Как работает DNS-фильтрация](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ru.png)
 
-DNS filtering is a powerful tool and it's supported by all major AdGuard apps: [AdGuard for Windows](https://adguard.com/en/adguard-windows/overview.html), [AdGuard for Mac](https://adguard.com/en/adguard-mac/overview.html), [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html) and [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html).
+DNS-фильтрация — это мощный инструмент, который поддерживается всеми основными приложениями AdGuard: [AdGuard для Windows](https://adguard.com/ru/adguard-windows/overview.html), [AdGuard для Mac](https://adguard.com/ru/adguard-mac/overview.html), [AdGuard для Android](https://adguard.com/ru/adguard-android/overview.html) и [AdGuard для iOS](https://adguard.com/ru/adguard-ios/overview.html).
 
-DNS filtering can be broken down into two separate functions: to encrypt and reroute DNS traffic to DNS servers, and to block some domains locally by applying DNS blocklists.
+DNS-фильтрация может быть условно разделена на две основные функции: шифрование DNS-трафика и его перенаправление на DNS-сервер, а также блокировка определённых доменов с помощью локальных DNS-фильтров.
 
-### DNS servers
+### DNS-серверы
 
-There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most simply return the IP address of the requested domain, but some have additional functions: they block ad, tracking, adult domains and so on. Nowadays all major DNS servers employ one or more reliable encryption protocols: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard-dns.io/en/welcome.html), and it was the world's first to offer the very new and promising [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard blocking servers work:
+В мире существуют тысячи DNS-серверов, и все они уникальны по своим свойствам и целям. Большинство просто возвращает IP-адрес запрошенного домена, но некоторые выполняют дополнительные функции: они блокируют рекламные, трекинговые, «взрослые» домены и т.д. Сегодня все крупные DNS-серверы используют один или несколько надёжных протоколов шифрования DNS-трафика: DNS-over-HTTPS, DNS-over-TLS. AdGuard также предоставляет свой [DNS-сервис](https://adguard-dns.io/ru/welcome.html), и он стал самым первым DNS-провайдером в мире, который добавил поддержку нового и многообещающего протокола шифрования [DNS-over-QUIC](https://adguard.com/ru/blog/dns-over-quic.html). AdGuard располагает несколькими разными серверами для разных целей. Эта диаграмма иллюстрирует работу блокирующих серверов AdGuard:
 
-![AdGuard DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
+![AdGuard DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_ru.jpg)
 
-Other DNS providers may work differently, so learn more about them before committing to this or that DNS server. You can find the list of some of the most popular DNS providers in [this article](dns-providers.md). All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you'd like.
+Другие DNS-провайдеры могут работать иначе, так что узнайте все подробности перед тем, как делать выбор в пользу того или иного DNS-сервера. Вы можете найти список некоторых популярных DNS-провайдеров в [этой статье](dns-providers.md). Все приложения AdGuard, которые поддерживают DNS-функционал, также предоставляют на выбор список проверенных DNS-серверов и даже дают возможность вручную указать любой предпочитаемый вами DNS-сервер.
 
-### Local DNS blocklists
+### Локальные DNS-фильтры
 
-But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](dns-filtering-syntax.md). They work similarly to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
-> In AdGuard for iOS, first you have to enable "Advanced mode" in settings in order to get access to DNS blocking.
+Но если полагаться только на DNS-серверы в вопросе фильтрации DNS-трафика, то неизбежны потери в гибкости. Если выбранный сервер блокирует какой-либо домен, вы не сможете на него перейти, пока не переключитесь на другой сервер. С AdGuard же вам даже не обязательно настраивать какой-то конкретный DNS-сервер, чтобы фильтровать DNS-трафик. Все продукты AdGuard позволяют добавлять локальные DNS-фильтры, будь то простые файлы hosts или фильтры, использующие [более сложный DNS-синтаксис](dns-filtering-syntax.md). Они работают сходным образом с обычными рекламными фильтрами: когда DNS-запрос подходит под одно из правил в активном фильтре, он блокируется. А точнее, перенаправляется «в никуда».
+> Чтобы получить доступ к DNS-фильтрации в AdGuard для iOS, вам сначала потребуется включить «Расширенный режим» в настройках.
 
-You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
-> There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
+Вы можете добавлять столько собственных DNS-фильтров, сколько захотите. Например, вы можете задействовать [DNS-фильтр AdGuard](https://github.com/AdguardTeam/AdGuardSDNSFilter). Он буквально блокирует всё то же самое, что и сервер AdGuard DNS, но в данном случае вы вольны использовать любой другой DNS-сервер. Плюс, при использовании данного метода вы можете добавить больше фильтров или же создать собственные правила-исключения. Всё это было бы невозможно в случае с использованием только DNS-сервера.
+> Существуют сотни различных DNS-фильтров, вы можете выбрать нужные вам [здесь](https://filterlists.com/).
 
-## Comparing DNS filtering to network filtering
+## Сравнение DNS-фильтрации с сетевой фильтрацией
 
-Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://kb.adguard.com/en/general/how-ad-blocking-works).
+Мы называем сетевой фильтрацией «обычный» способ, которым самостоятельные приложения AdGuard (кроме браузерных расширений) фильтруют весь сетевой трафик, отсюда и название. Освежить знания о сетевой фильтрации можно, прочитав [эту статью](https://kb.adguard.com/ru/general/how-ad-blocking-works).
 
-First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
+Во-первых, мы сразу хотим оговориться, что с AdGuard вам не нужно выбирать между ними. Вы всегда можете использовать обычную сетевую фильтрацию и DNS-фильтрацию одновременно. Однако важно понимать разницу между этими двумя подходами. DNS-фильтрация обладает как своими уникальными преимуществами, так и недостатками.
 
-**Pros of DNS filtering:**
+**Плюсы DNS-фильтрации:**
 
-1. On some platforms this is the only way to achieve system-wide filtering. For example, on iOS only the Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
-2. Some forms of tracking (like [CNAME-cloaked tracking](https://adguard.com/en/blog/cname-tracking.html)) can only be dealt with by DNS filtering.
-3. The stage of processing a DNS request is the earliest you could possibly deal with an ad or a tracker, this helps save a little bit of battery life and traffic.
+1. На некоторых платформах это единственный способ фильтровать весь системный трафик. Например, на iOS только Safari поддерживает блокировку контента в привычном смысле. Фильтровать трафик всех остальных браузеров и приложений поможет только DNS-фильтрация.
+2. С некоторыми формами слежки (такими как [CNAME-трекинг](https://adguard.com/ru/blog/cname-tracking.html)) может справиться только DNS-фильтрация.
+3. Этап обработки DNS-запроса — самое раннее, когда можно заблокировать рекламу или трекер. Это помогает немного сэкономить время жизни батареи и трафик.
 
-**Cons of DNS filtering:**
+**Недостатки DNS-фильтрации:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNS-фильтрация — «грубый» метод. Это означает, что с её помощью не получится убрать, например, белые пустые блоки, остающиеся после заблокированной рекламы. Также не получится применить никакие косметические правила. Многие виды более сложной рекламы не могут быть заблокированы на уровне DNS (точнее, могут, но только ценой полной блокировки домена, который также используется для других, полезных целей).
 
-![Example of difference](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of difference between DNS filtering and network filtering*
+![Example of difference](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Пример разницы между DNS-фильтрацией и сетевой фильтрацией*
 
-2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS level. This harms the statistics and makes it impossible to create app-specific filtering rules.
+2. Невозможно определить источник DNS-запроса, то есть вы не сможете различать трафик разных приложений на DNS-уровне. Это помешает ведению подробной статистики и сделает невозможным создание правил, работающих только для конкретных приложений.
 
-We recommend to use DNS filtering in addition to network filtering, not instead of it, whenever possible.
+Мы рекомендуем использовать DNS-фильтрацию вместе с сетевой фильтрацией, а не вместо неё, если это возможно.

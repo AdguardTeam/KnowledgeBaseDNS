@@ -40,7 +40,7 @@
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "Блокировщик рекламы AdGuard",
+    "message": "Блокировщик AdGuard",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {

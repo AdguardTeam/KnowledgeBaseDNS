@@ -1,20 +1,20 @@
 ---
-title: Overview
+title: Обзор
 sidebar_position: 1
 slug: /
 ---
 
-## What is DNS
+## Что такое DNS
 
-DNS stands for "Domain name system", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS расшифровывается как «‎Domain name system» или «‎Система доменных имён». Её цель — переводить имена доменов, понятные человеку, в нечто понятное браузерам, т.е. в IP-адреса. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
 
 > The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
 
 ![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
+There are also DNS servers that can block certain websites at DNS level. Как они работают? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
 
-## Why use DNS for content blocking
+## Зачем использовать DNS для блокировки контента
 
 Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker seems to be not enough. To get a better protection, use DNS in combination with VPN and ad blocker.
 

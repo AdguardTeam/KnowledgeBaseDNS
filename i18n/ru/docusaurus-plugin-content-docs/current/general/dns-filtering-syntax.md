@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Введение
 
-You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. Синтаксис правил фильтрации AdGuard DNS можно использовать в разных продуктах AdGuard, таких как AdGuard Home, AdGuard DNS, AdGuard для Windows/Mac/Android.
+Синтаксис правил фильтрации AdGuard DNS можно использовать, чтобы сделать правила более гибкими и блокировать контент в соответствии с вашими предпочтениями. Синтаксис правил фильтрации AdGuard DNS можно использовать в разных продуктах AdGuard, таких как AdGuard Home, AdGuard DNS, AdGuard для Windows/Mac/Android.
 
 Есть три подхода к написанию списков правил фильтрации:
 
