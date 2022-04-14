@@ -6,35 +6,35 @@ slug: /
 
 ## Что такое DNS
 
-DNS расшифровывается как «‎Domain name system» или «‎Система доменных имён». Её цель — переводить имена доменов, понятные человеку, в нечто понятное браузерам, т.е. в IP-адреса. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS расшифровывается как «‎Domain name system» или «‎Система доменных имён». Её цель — переводить имена доменов в IP-адреса. Каждый раз, когда вы заходите на сайт, ваш браузер отправляет запрос на DNS-сервер, чтобы определить IP-адрес сайта. В ответ обычный DNS-резолвер просто возвращает IP-адрес запрошенного домена.
 
-> The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+> DNS-сервер по умолчанию обычно предоставляется вашим интернет-провайдером. Это означает, что ваш интернет-провайдер может отслеживать ваши действия в сети и продавать логи третьим лицам.
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
+![Ваше устройство всегда использует DNS-сервер, чтобы получить IP-адрес доменного имени, к которому обращается приложение](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS level. Как они работают? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
+Есть и DNS-серверы, которые блокируют сайты на уровне DNS. Как они работают? Когда ваше устройство отправляет «плохой» запрос, будь то реклама или трекер, DNS-сервер предотвращает соединение, отвечая немаршрутизируемым IP-адресом заблокированного домена.
 
 ## Зачем использовать DNS для блокировки контента
 
-Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker seems to be not enough. To get a better protection, use DNS in combination with VPN and ad blocker.
+Сегодня к интернету подключено абсолютно всё — от телевизора до умных лампочек, от мобильных устройств до умных автомобилей. А где есть интернет, есть реклама и трекеры. Одного только браузерного блокировщика недостаточно. Чтобы усилить защиту, используйте DNS в сочетании с VPN и блокировщиком рекламы.
 
-Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
+DNS-блокировка контента имеет как преимущества, так и очевидные недостатки. С одной стороны, у DNS нет слепых зон, поскольку он наблюдает за всеми устройствами, а не только за браузерами. Но, с другой стороны, в DNS-блокировке нет косметической фильтрации.
 
 ## Что такое AdGuard DNS
 
-AdGuard DNS is one of the most privacy-friendly DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
+AdGuard DNS — это DNS-сервис, который заботится о вашей конфиденциальности и безопасности в интернете. Он поддерживает такие надёжные протоколы шифрования, как DNS-over-HTTPS, DNS-over-TLS и DNS-over-QUIC. Он может работать как обычный DNS-резолвер в Нефильтрующем режиме, но может и блокировать контент на уровне DNS: определять запросы к рекламным, отслеживающим доменам и/или доменам со «взрослым» контентом (опционально) и возвращать им пустой ответ. У AdGuard есть собственная база доменных имён, обслуживающих рекламу, трекеры и мошеннические активности, и она регулярно обновляется.
 
-![An approximate scheme of how AdGuard DNS works](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
+![Примерная схема того, как работает AdGuard DNS](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 
-> About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
+> Около 75% трафика AdGuard DNS шифруется. Именно это отличает DNS-серверы, блокирующие контент, от других. Если вы посмотрите на статистику CloudFlare или Quad9, то увидите, что зашифрованный DNS-трафик составляет лишь небольшую долю всех запросов.
 
-AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
+AdGuard DNS существует в двух основных формах: [публичный AdGuard DNS](public-dns/overview.md) и [приватный AdGuard DNS](private-dns/overview.md). Оба сервиса не требуют установки приложений. Их легко настроить и использовать, и они обеспечивают пользователей минимумом функций, необходимых для блкоировки рекламы, трекеров, вредоносных сайтов и контента для взрослых (если потребуется). Нет никаких ограничений на то, с какими устройствами их можно использовать.
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
+Несмотря на множество совпадений, приватный AdGuard DNS и публичный AdGuard DNS — это два разных сервиса. Главное отличие в том, что приватный AdGuard DNS можно настроить, а публичный — нет.
 
-## DNS filtering module in AdGuard products
+## Модуль DNS-фильтрации в продуктах AdGuard
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — public or private.
+Во всех крупных продуктах AdGuard, включая AdGuard VPN, есть **модуль DNS-фильтрации**, где можно выбрать DNS-сервер от провайдера, которому вы доверяете. Конечно, в списке есть серверы AdGuard DNS — По умолчанию, Нефильтрующий и Семейная защита. Приложения AdGuard позволяют пользователям [легко настраивать и пользоваться AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — публичным и приватным.
 
 
 

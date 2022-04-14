@@ -1,6 +1,6 @@
 ---
-title: Credits and Acknowledgements
+title: Благодарности
 sidebar_position: 5
 ---
 
-Our dev team would like to thank the developers of the third-party software we use in AdGuard DNS, our great beta testers and other engaged users, whose help in finding and eliminating all the bugs, translating AdGuard DNS, and moderating our communities is priceless.
+Наша команда выражает благодарность разработчикам стороннего программного обеспечения, которое мы используем в AdGuard DNS, нашим замечательным бета-тестерам и другим вовлечённым пользователям, чья помощь в поиске и устранении всевозможных ошибок, переводе AdGuard DNS и модерации наших сообществ бесценна.

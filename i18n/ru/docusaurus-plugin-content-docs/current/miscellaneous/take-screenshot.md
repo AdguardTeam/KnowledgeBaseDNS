@@ -1,99 +1,99 @@
 ---
-title: 'How to take a screenshot'
+title: 'Как сделать скриншот'
 sidebar_position: 4
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Скриншот — это снимок экрана вашего компьютера или мобильного устройства, который можно сделать с помощью стандартных инструментов или специальной программы/приложения.
 
-Sometimes a screenshot (or screenshots) is required by support team to better understand the problem, and not everyone knows how to take screenshots, especially of a separate window or a specific screen area on their devices. If you recognize yourself as one of these users, don’t worry. This article will help you as it describes a range of ways to take screenshots on different platforms.
+Иногда служба поддержки может попросить сделать скриншот, чтобы лучше понять проблему. Некоторые пользователи испытывают с этим трудности, особенно если речь идёт о снимках отдельного окна или определённой области экрана. Если вы узнали себя в этом описании, не переживайте. Данная статья подробно расскажет о различных способах создания скриншотов на популярных платформах.
 
-## How to take a screenshot
+## Как делать скриншоты на различных платформах
 
-Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+В этом разделе приведены все необходимые комбинации для создания скриншотов на компьютерах и мобильных устройствах на различных платформах.
 
 ### Android
 
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
+Сделать скриншот на устройствах Android можно несколькими способами, в зависимости от модели устройства и его производителя.
 
-Generally, you should use the following button combination for Android:
+На большинстве устройств Android используется следующая комбинация для снятия снимков экрана:
 
-+ **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
++ **Удерживайте одновременно кнопки *Уменьшение громкости* и *Питание* в течение 1-2 секунд;**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a Screenshots folder in your Gallery.
+Ваше Android-устройство захватит весь экран и сохранит его в виде фотографии, которую вы сможете найти в папке *Скриншот* в *Галерее*.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+Как уже было сказано, комбинации кнопок, позволяющие сделать снимок экрана, могут отличаться в зависимости от конкретного устройства. Ниже приведены другие возможные комбинации:
 
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**
-+ **Hold down at once the *Back* and the *Home* buttons**
++ **Одновременное нажатие и удержание кнопок *Домой* и *Питание*;**
++ **Одновременное нажатие и удержание кнопок *Назад* и *Домой*.**
 
-On Android 8 and later there is also a possibility to take a screenshot by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen.
+Некоторые устройства на платформе Android версии 8 и выше позволяют сделать скриншот с помощью прикосновения и проведения ребром ладони по экрану устройства (слева направо или справа налево).
 
-If this method doesn’t work, check *Settings* > *Advanced* features to enable *Palm swipe to capture*.
+Если этот метод не работает, зайдите в *Настройки* > *Дополнительные функции* > *Движения и жесты* и проверьте, активирован ли переключатель функции *Снимок экрана ладонью*.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* etc.
+Кроме того, вы можете использовать специальные приложения для создания скриншотов на вашем устройстве, такие как *Screenshot Easy*, *Screenshot Snap*, *Screenshot Ultimate*, *Monosnap* и другие.
 
 ### iOS
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
+Все устройства на базе iOS (за исключением совсем древних) позволяют создавать скриншоты, используя стандартные средства.
 
-To take a screenshot on an iOS device, use the following combination:
+Для того, чтобы сделать скриншот на iOS-устройстве, воспользуйтесь следующей комбинацией:
 
-+ **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
++ **Одновременно нажмите кнопки *Sleep/Wake* и *Домой*, а затем сразу отпустите их;**
 
-and this one for iPhone X or later:
+Для iPhone X и более поздних версий:
 
-+ **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
++ **Одновременно нажмите кнопки *Sleep/Wake* и *Увеличение громкости*, а затем сразу отпустите их.**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+Ваше устройство зафиксирует изображение всего экрана и сохранит его как фото. Вы сможете найти его в стандартном приложении  *Фото*.
 
 ### Windows
 
-+ **To take a screenshot on Windows, press the *PrtScn* button**
++ **Для того, чтобы сделать скриншот экрана вашего компьютера, нажмите клавишу *PrtScn*;**
 
-On some notebooks you have to hold *Fn* and then press *PrtScn* instead.
+На некоторых ноутбуках необходимо удерживать клавишу *Fn*, а затем нажимать *PrtScn*;
 
-*Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
+*Обратите внимание: клавиша PrtScn (Print Screen) может быть по-разному обозначена на различных клавиатурах — PrntScrn, PrtScn, PrtScr или PrtSc.*
 
-Windows captures the entire screen and copies it to the (invisible) clipboard.
+Windows зафиксирует изображение всего экрана и скопирует его в буфер обмена.
 
-To take a screenshot of an active window, use the following combination:
+Чтобы сделать скриншот активного окна, воспользуйтесь следующей комбинацией:
 
-+ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
++ **Нажмите и удерживайте клавишу *Alt* и нажмите *PrtScn* (или *Fn + Alt + PrtScn * на некоторых ноутбуках);**
 
-To take a screenshot of a specific area, you should use the following combination:
+Для того, чтобы сделать скриншот определенной области экрана, воспользуйтесь следующей комбинацией:
 
-+ ***Hold down *Win* (the Windows button) and *Shift* and press ***S******
++ ***Одновременно нажмите и удерживайте клавиши *Win* (кнопка Windows) и *Shift*, а затем нажмите клавишу *S*.***
 
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+После того, как вы сделаете скриншот, он сохранится в буфере обмена. Вы сможете вставить его в документ, с которым работаете, используя комбинацию *Ctrl + V*. Или, если вам нужно сохранить скриншот как файл, откройте стандартную программу **Paint** (или любую другую, работающую с изображениями). Вставьте скриншот, используя ту же комбинацию кнопок или кликнув кнопку *Вставить* в левом верхнем углу страницы, а затем сохраните его.
 
-Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures -> Screenshots Folder.
+Операционные системы Windows 8 и 10 позволяют быстро создавать скриншоты с помощью комбинации *Win + PrtScn*. Как только вы нажмёте эти клавиши, скриншот будет автоматически сохранен в *Изображения* > папка *Снимки экрана*.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Существует также специальная программа *Ножницы* для создания скриншотов, которая запускается из меню *Пуск > Все программы > Стандартные*. Ножницы позволяют сделать скриншот любой области экрана или всего экрана целиком. После создания скриншота с помощью данной программы вы сможете редактировать изображение и сохранить его в любой папке вашего компьютера.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** etc.
+Кроме того, вы всегда можете пользоваться различными приложениями для создания скриншотов, например: **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** и др. Для этого вам необходимо скачать приложение и установить его на ваш компьютер.
 
 ### MacOS
 
-To take a screenshot on Mac, use the following button combination:
+Чтобы сделать скриншот на Mac, используйте следующую комбинацию:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 3******
++ ***Одновременно нажмите сочетание клавиш ***⌘ Cmd + Shift + 3***;***
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Ваш компьютер зафиксирует изображение всего экрана и сохранит его на рабочем столе.
 
-To take a screenshot of an active window, use the following combination:
+Чтобы сделать снимок активного окна, используйте следующую комбинацию:
 
-+ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
++ **Одновременно нажмите сочетание клавиш *⌘ Cmd + Shift + 4 + Пробел*.  Указатель мыши изменится на значок камеры. Щёлкните по окну, чтобы захватить его. Чтобы отменить создание скриншота, нажмите на кнопку *Esc*;**
 
-To take a screenshot of a specific area, you should use the following combination:
+Для того, чтобы сделать скриншот определенной области экрана, воспользуйтесь следующей комбинацией:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 4******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
++ ***Одновременно нажмите сочетание клавиш ***⌘ Cmd + Shift + 4******. Перетащите перекрестие, чтобы выделить нужную область. Отпустите кнопку миши или трекпада, чтобы сделать снимок экрана, для отмены нажмите кнопку *Esc*;
 
-To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
+Чтобы сделать скриншот *Touch Bar* (на MacBook Pro), используйте следующую комбинацию:
 
-+ ***Hold down ***⌘ Cmd + Shift + 6******
++ ***Одновременно нажмите сочетание клавиш ***⌘ Cmd + Shift + 6***.***
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Ваш компьютер зафиксирует изображение всего *Touch Bar* и сохранит его как файл на вашем рабочем столе.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
+Для того чтобы скопировать скриншот в буфер обмена вместо сохранения, нажмите и удерживайте клавишу *Ctrl * вместе с любой из вышеперечисленных комбинаций. Затем вставьте скриншот (из буфера обмена) в документ или изображение, которое вы редактируете, используя комбинацию *Cmd + V*.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Вы также можете сделать скриншот, используя **Preview** и выбрав **Сделать скриншот** (выбранной зоны, окна или всего экрана). Пользуясь **Preview** вы можете сохранять файлы в форматах JPG, TIFF, PDF и др.

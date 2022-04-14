@@ -9,19 +9,19 @@ AdGuard DNS — это бесплатный, защищающий конфиде
 
 
 ## Публичные серверы AdGuard DNS
-У AdGuard DNS три публичных сервера. Сервер по умолчанию для блокировки рекламы, трекеров, вредоносного ПО и фишинговых сайтов. Семейная защита делает то же самое, но ещё блокирует сайты с контентом для взрослых и включает опцию «Безопасный поиск» в браузерах, где она доступна. Нефильтрующий обеспечивает безопасное и надёжное соединение, но ничего не блокирует. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/en/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+У AdGuard DNS три публичных сервера. Сервер «По умолчанию» — для блокировки рекламы, трекеров, вредоносного ПО и фишинговых сайтов. Сервер «Семейная защита» делает то же самое, но ещё блокирует сайты с контентом для взрослых и включает опцию «Безопасный поиск» в браузерах, где она доступна. «Нефильтрующий» сервер обеспечивает безопасное и надёжное соединение, но ничего не блокирует. Инструкцию по установке AdGuard DNS на любом устройстве можно найти [на нашем сайте](https://adguard-dns.io/en/public-dns.html). Каждый сервер поддерживает разные протоколы безопасности: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) и DNS-over-QUIC (DoQ).
 
 
-## AdGuard DNS protocols
-Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
+## Протоколы AdGuard DNS
+Помимо обычного DNS (IPv4 и IPv6), AdGuard DNS поддерживает различные протоколы шифрования, так что вы можете выбрать тот, который подходит вам больше всего.
 
 ### DNSCrypt
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration. But compared to the DoH, DoT and DoQ protocols, DNSCrypt is considered obsolete and if possible we recommend using these protocols.
+С AdGuard DNS можно использовать специальный протокол шифрования — DNSCrypt. Благодаря ему, все DNS-запросы зашифровываются, что защищает вас от их возможного перехвата и последующего чтения и/или подмены. По сравнению с протоколами DoH, DoT и DoQ, DNSCrypt считается устаревшим, и по возможности мы рекомендуем использовать эти протоколы.
 
-### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
-DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
+### DNS-over-HTTPS (DoH) и DNS-over-TLS (DoT)
+DoH и DoT — современные безопасные DNS-протоколы, которые набирают популярность и станут стандартами индустрии в обозримом будущем. Оба протокола более надёжны по сравнению с DNSCrypt, и оба поддерживаются AdGuard DNS.
 
 ### DNS-over-QUIC (DoQ)
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+[DNS-over-QUIC — это новый протокол шифрования DNS](https://adguard.com/en/blog/dns-over-quic.html), а AdGuard DNS — первый публичный резолвер, который его поддерживает. В отличие от DoH и DoT, он использует QUIC в качестве транспортного протокола и возвращает DNS к истокам — работе через UDP. Он привносит всё хорошее, что QUIC может предложить — готовое шифрование, ускоренное время соединения, лучшую производительность при потере пакетов трафика. К тому же, QUIC создавался как транспортный протокол, и с ним нет риска утечки метаданных, в отличие от DoH.
 
 

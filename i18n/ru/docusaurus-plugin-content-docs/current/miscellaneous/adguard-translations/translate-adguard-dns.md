@@ -3,7 +3,7 @@ title: Translate AdGuard DNS
 sidebar_position: 1
 ---
 
-> **Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+> **Примечание:**вы можете задать нам любые вопросы о переводе текстов AdGuard, отправив письмо по адресу [translate@adguard.com](mailto:translate@adguard.com) или присоединившись к нашему [чату в Telegram](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
 ## About AdGuard translation program
 

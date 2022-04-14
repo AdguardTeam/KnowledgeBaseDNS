@@ -1,25 +1,25 @@
 ---
-title: 'Private AdGuard DNS beta test'
+title: 'Бета-тест частного AdGuard DNS'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Private AdGuard DNS — самый молодой продукт AdGuard, хотя в некотором смысле он является логическим продолжением идеи [AdGuard Home](https://kb.adguard.com/en/home/overview). С каждой версией мы стараемся сделать частный AdGuard DNS ещё лучше. И на пути к совершенству нам очень нужна помощь бета-тестировщиков. Присоединяйтесь к нашей команде!
 
-## How to become a beta tester
+## Как стать бета-тестировщиком
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Pivate AdGuard DNS, use the service and send us reports on how it works.
+Чтобы стать бета-тестировщиком частного AdGuard DNS [зайдите на сайт AdGuard DNS](https://adguard-dns.io/en/welcome.html), нажмите кнопку 'Участвовать в бета-тесте' в правом верхнем углу, войдите через социальные сети или существующий аккаунт AdGuard. Вот и всё: теперь вы можете настроить частный AdGuard DNS, пользоваться сервисом и присылать нам отчёты о возникающих проблемах.
 
-## How to report a bug
+## Как сообщить об ошибке
 
-Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
+Представим, что это произошло — вы заметили ошибку. Или, например, захотели поделиться своими соображениями с разработчиками. В любом случае, есть несколько способов связаться с нами:
 
-* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* Зайдите на [forum.adguard.com](https://forum.adguard.com) и опубликуйте там новую тему (или найдите уже существующую) в [категории «Бета-тестирование» форума](https://forum.adguard.com/index.php?categories/48/). Обязательно сначала прочтите [правила форума](https://forum.adguard.com/index.php?threads/14859/);
 
-* Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
+* Перейдите в [репозиторий AdGuard DNS](https://github.com/AdguardTeam/AdGuardDNS), создайте там новую задачу и подробно опишите ошибку/запрос на улучшение.
 
-The above methods are the most preferred, but you can use others if necessary:
+Вышеперечисленные методы являются наиболее предпочтительными, но при необходимости вы можете использовать и другие:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most efficient way to discuss technical matters.
+* Найдите наш аккаунт в любой из удобных для вас социальных сетей, таких как [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) и др., и напишите нам. Однако это не самый эффективный способ обсуждения технических вопросов.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Напишите в нашу службу поддержки из вкладки «Поддержка» на сайте или напрямую по адресу [support@adguard.com](mailto:support@adguard.com).
 

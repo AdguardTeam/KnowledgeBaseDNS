@@ -1,27 +1,27 @@
 ---
-title: 'Updating the Knowledge Base'
+title: 'Обновление Базы знаний'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Цель данной Базы знаний заключается в том, чтобы предоставить пользователям актуальную информацию на любую тему, имеющую непосредственное отношение к AdGuard DNS. Как известно, всё в мире постоянно меняется, и наш продукт не является исключением, поэтому время от времени статьи Базы знаний перестают отражать реальное положение вещей. Наконец, нас просто не так много, чтобы всегда вовремя вносить любые вновь появившиеся данные и обновлять статьи в соответствии с выходом последних версий продукта.
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+Именно по этой причине мы переместили все содержание нашей Базы знаний на [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), и теперь буквально каждый человек может принять участие в ее обновлении, а именно в редактировании и переводе существующих статей или создании абсолютно новых.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Как предложить изменения в существующую статью или написать новую {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+Вы можете предлагать изменения в текущие статьи и добавлять новые в Базу знаний, используя функциональность упомянутого выше GitHub. Если вы не знакомы с принципами работы платформы, начните с прочтения [этой документации](https://docs.github.com/en).
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Как только вы будете готовы, начните работу в [репозитории KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Все тексты в нашей Базе знаний написаны на языке разметки `Markdown`. Помните об этом при редактировании или написании статей. Перейдите по [этой ссылке](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), чтобы узнать больше о синтаксисе Markdown.
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них в [руководстве, доступном по этой ссылке](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) on this Knowledge Base's GitHub page.
+Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробную инструкцию о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) на странице этой Базы знаний на GitHub.
 
-## Translating an article
+## Перевод статьи
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in this article](/miscellaneous/adguard-translations/translate-adguard-dns.md).
+Перевод существующих статей Базы знаний осуществляется на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Все подробности о переводах и работе с Crowdin можно найти [в этой статье](/miscellaneous/adguard-translations/translate-adguard-dns.md).
 
-## Working on open issues
+## Работа над существующими задачами
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Иногда появляются [открытые задачи](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/), связанные с обновлением Базы знаний. Вы можете помочь нам завершить их [так же](#suggest-change), как вы предлагаете любые другие изменения в этоу Базу знаний. Выберите любую задачу, которая кажется вам привлекательной, и начните работать над ней. Все возникающие вопросы вы можете задавать прямо в комментариях к задаче.
   
