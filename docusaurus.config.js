@@ -5,12 +5,16 @@ const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
 
+// Allow to parameterise the website URL and the base path during the build.
+const url = process.env.URL || 'https://adguardteam.github.io/';
+const baseUrl = process.env.BASE_URL || '/KnowledgeBaseDNS/';
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'AdGuard DNS Knowledge Base',
   tagline: 'Knowledge base for AdGuard DNS',
-  url: 'https://adguardteam.github.io/',
-  baseUrl: '/KnowledgeBaseDNS/',
+  url: url,
+  baseUrl: baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
