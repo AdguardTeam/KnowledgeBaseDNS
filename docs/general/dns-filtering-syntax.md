@@ -16,25 +16,22 @@ There are three different approaches to writing hosts blocklists:
 
 * [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
 
-If you are creating a blocklist, we recommend using the
-[Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
 
 * **Blocklists size.** Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
 
-* **Compatibility.** Your blocklist will be compatible with browser ad
-blockers, and it will be easier to share rules with a browser filter list.
+* **Compatibility.** Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
 
 * **Extensibility.** For the last decade the Adblock-style syntax has greatly evolved, and we don't see why we can't extend it even more and provide additional features for network-wide blockers.
 
-If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc]and we use it ourselves to create [AdGuard DNS filter][sdn].
+If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
 ## Basic Examples
 
-* `||example.org^`: block access to the `example.org` domain and all its
-subdomains, like `www.example.org`.
+* `||example.org^`: block access to the `example.org` domain and all its subdomains, like `www.example.org`.
 
 * `@@||example.org^`: unblock access to the `example.org` domain and all its subdomains.
 
@@ -78,15 +75,11 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * `^`: the separator character. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
-* `|`: a pointer to the beginning or the end of the hostname. The value
-depends on the character placement in the mask. For example, the rule
-`ample.org|` corresponds to `example.org` but not to `example.org.com`.
-`|example` corresponds to `example.org` but not to `test.example`.
+* `|`: a pointer to the beginning or the end of the hostname. The value depends on the character placement in the mask. For example, the rule `ample.org|` corresponds to `example.org` but not to `example.org.com`. `|example` corresponds to `example.org` but not to `test.example`.
 
 ### Regular Expressions
 
-If you want even more flexibility in making rules, you can use [regular
-expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
+If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
 
 ```none
 pattern = "/" regexp "/"
@@ -96,8 +89,7 @@ pattern = "/" regexp "/"
 
 * `/example.*/` will block hosts matching the `example.*` regexp.
 
-* `@@/example.*/$important` will unblock hosts matching the `example.*`
-regexp. Note that this rule also implies the `important` modifier.
+* `@@/example.*/$important` will unblock hosts matching the `example.*` regexp. Note that this rule also implies the `important` modifier.
 
 ### Comments
 
@@ -120,27 +112,23 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
    ||example.org^$important
     ```
 
-`||example.org^` is the matching pattern. `$` is the delimiter, which
-signals that the rest of the rule are modifiers. `important` is the
-modifier.
+`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
 
-*  You may want to use multiple modifiers in a rule.  Separate them by commas in this case:
+*  You may want to use multiple modifiers in a rule. Separate them by commas in this case:
 
    ```none
    ||example.org^$client=127.0.0.1,dnstype=A
    ```
 
-`||example.org^` is the matching pattern. `$` is the delimiter, which
-signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`](#dnstype) modifier with its value, `A`.
+`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`](#dnstype) modifier with its value, `A`.
 
-**NOTE:**  If a rule contains a modifier not listed in this document, the whole rule **must be ignored**.  This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
+**NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
 
 #### `client`
 
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
-*  By their IP address or CIDR prefix. This way works for all kinds of
-clients.
+*  By their IP address or CIDR prefix. This way works for all kinds of clients.
 
 *  By their name. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added. 
 
@@ -166,8 +154,7 @@ Client names usually contain spaces or other special characters, which is why yo
 
 * `@@||*^$client=127.0.0.1`: unblock everything for localhost.
 
-* `||example.org^$client='Frank\'s laptop'`: block `example.org` for the
-client named `Frank's laptop` only.  Note that quote (`'`) in the name must be escaped.
+* `||example.org^$client='Frank\'s laptop'`: block `example.org` for the client named `Frank's laptop` only.  Note that quote (`'`) in the name must be escaped.
 
 * `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`.  Note that comma (`,`) must be escaped as well.
 
@@ -275,9 +262,7 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take
-precedence over the other and will result in an empty response with an
-appropriate response code.
+The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
 
 The full syntax is of the form `RCODE;RRTYPE;VALUE`:
 
@@ -377,8 +362,7 @@ The `important` modifier applied to a rule increases its priority over any other
 @@||example.org^
 ```
 
-`||example.org^$important` will block all requests to `*.example.org`.
-despite the exception rule.
+`||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
 
 *  In this example:
 
@@ -391,8 +375,7 @@ the exception rule also has the `important` modifier, so it will work.
 
 #### `badfilter`
 
-The rules with the `badfilter` modifier disable other basic rules to which they
-refer.  It means that the text of the disabled rule should match the text of the
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the
 `badfilter` rule (without the `badfilter` modifier).
 
 **Examples:**
@@ -401,9 +384,7 @@ refer.  It means that the text of the disabled rule should match the text of the
 
 *  `@@||example.org^$badfilter` disables `@@||example.org^`.
 
-**NOTE:**  The `badfilter` modifier currently doesn't work with
-`/etc/hosts`-style rules.  `127.0.0.1 example.org$badfilter` will **not**
-disable the original `127.0.0.1 example.org` rule.
+**NOTE:**  The `badfilter` modifier currently doesn't work with `/etc/hosts`-style rules.  `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
 
 #### `ctag`
 
@@ -415,15 +396,13 @@ The syntax is:
 $ctag=value1|value2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the
-client.  The syntax for exclusion is:
+If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't
-apply to the client.
+If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
 **Examples:**
 
