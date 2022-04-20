@@ -21,5 +21,5 @@ Private AdGuard DNS — самый молодой продукт AdGuard, хот
 
 * Найдите наш аккаунт в любой из удобных для вас социальных сетей, таких как [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) и др., и напишите нам. Однако это не самый эффективный способ обсуждения технических вопросов.
 
-* Напишите в нашу службу поддержки из вкладки «Поддержка» на сайте или напрямую по адресу [support@adguard.com](mailto:support@adguard.com).
+* Напишите в нашу службу поддержки из вкладки «Поддержка» в приложении или напрямую по адресу [support@adguard.com](mailto:support@adguard.com).
 

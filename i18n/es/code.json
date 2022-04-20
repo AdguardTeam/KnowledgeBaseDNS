@@ -52,7 +52,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "Recent blog posts navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
