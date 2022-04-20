@@ -258,7 +258,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Standard
 
-Regular DNS servers which provide protection from phishing and spyware. It include blocklist, DNSSEC validation, and other security features.
+Regular DNS servers which provide protection from phishing and spyware. They include blocklists, DNSSEC validation, and other security features.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -460,7 +460,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block websites which are considered as adult related. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
+[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
 | Protocol       | Address                                            |                |
@@ -485,7 +485,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It include AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -515,7 +515,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSCEPAT
 
-[DNSCEPAT](https://dnscepat.id/) DNS is built for Security, Privacy and Fast Connectivity for you.
+[DNSCEPAT](https://dnscepat.id/) DNS is built for you with Security, Privacy and Fast Connectivity in mind.
 
 #### Asia DNS Server
 
@@ -538,7 +538,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### 360 Secure DNS
 
-**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threats protection.
+**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -549,7 +549,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by internet initiative japan. It also block child abuse contents.
+[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -558,7 +558,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service. 
+[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service. 
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -581,7 +581,7 @@ Block ads and annoying websites
 
 #### Safe
 
-Block phishing, malcious and other unsafe websites
+Blocks phishing, malicious and other unsafe websites
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -625,7 +625,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No Logging, No ECS, DNSSEC Validation, Free!
+[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -637,7 +637,7 @@ These servers block adult websites and inappropriate contents.
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]`| [Add to AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
 | DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party) | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ) |
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk) |
-| DNS-over-Quic | `quic://doh.tiar.app` | [Add to AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw) |
+| DNS-over-QUIC | `quic://doh.tiar.app` | [Add to AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw) |
 | DNS-over-TLS | `tls://dot.tiar.app` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw) |
 
 
@@ -655,7 +655,7 @@ These servers block adult websites and inappropriate contents.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, No logging.
+[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -676,7 +676,7 @@ These servers block adult websites and inappropriate contents.
 
 #### OSZX server
 
-These servers provide blocking ads, keeps no logs and DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -689,7 +689,7 @@ These servers provide blocking ads, keeps no logs and DNSSEC enabled
 
 #### PumpleX server
 
-These servers provide no blocking ads, keeps no logs and DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -702,7 +702,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### Applied Privacy DNS
 
-[Applied Privacy DNS](https://applied-privacy.net/) operate DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
+[Applied Privacy DNS](https://applied-privacy.net/) operates DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -730,7 +730,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open source DNS resolver with no logs, malware protection, ad blocking. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -758,7 +758,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no Logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
 
 
 | Protocol       | Address                                            |                |
@@ -770,7 +770,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad-blocker and no logging provided by [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -829,7 +829,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, No Filter, No Logging
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -875,7 +875,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
 #### Blitz
 
@@ -991,7 +991,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### DNSlify DNS
 
-[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service provide by [Peerix](https://www.peerix.net/)
+[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
 
 #### Default
 
@@ -1015,7 +1015,7 @@ Safe mode guard against infected, fraudulent or bot sites.
 
 #### Family
 
-Family mode provide family oriented filtering offering the protection of "Safe" resolvers + blocking adult sites.
+Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -1024,7 +1024,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### NextDNS
 
-[NextDNS](https://nextdns.io/) provides publicly accessible unfiltered resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
+[NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
 
 #### Unfiltered
 
@@ -1093,7 +1093,7 @@ In this section we list small, mostly personal DNS resolvers. They often have on
 
 [Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
+Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
@@ -1105,7 +1105,7 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. For additional important info, see the link above.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. 
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
