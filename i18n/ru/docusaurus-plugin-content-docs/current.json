@@ -24,7 +24,7 @@
     "description": "The label for category Miscellaneous in sidebar sidebar"
   },
   "sidebar.sidebar.category.Translating AdGuard DNS": {
-    "message": "Translating AdGuard DNS",
+    "message": "Перевод AdGuard DNS",
     "description": "The label for category Translating AdGuard DNS in sidebar sidebar"
   }
 }
