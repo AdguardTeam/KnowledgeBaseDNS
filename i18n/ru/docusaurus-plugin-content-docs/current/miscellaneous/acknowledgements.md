@@ -11,8 +11,8 @@ sidebar_position: 5
 * GCache-модуль от Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
 * Go-Cache-модуль от Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
 * Программа Gofumpt от Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
-* QUIC-Go module by Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
-* Staticcheck program by Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
+* QUIC-Go-модуль от Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
+* Программа Staticcheck от Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
 
 ## AdGuard Websites
 
