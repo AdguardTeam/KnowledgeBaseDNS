@@ -538,7 +538,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### 360 Secure DNS
 
-**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
+**360 Secure DNS** — это ведущий рекурсивный DNS-сервис с расширенной защитой данных в сети.
 
 | Протокол       | Адрес                            |                                                                           |
 | -------------- | -------------------------------- | ------------------------------------------------------------------------- |
@@ -549,7 +549,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
+[IIJ.JP](https://public.dns.iij.jp/) — это публичный DNS-сервис, управляемый компанией Internet Initiative Japan. Также он блокирует контент с жестоким обращением с детьми.
 
 | Протокол       | Адрес                                 |                                                                                     |
 | -------------- | ------------------------------------- | ----------------------------------------------------------------------------------- |

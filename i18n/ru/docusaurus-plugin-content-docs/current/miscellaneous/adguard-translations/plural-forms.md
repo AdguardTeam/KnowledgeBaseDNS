@@ -1,5 +1,5 @@
 ---
-title: 'Plural forms'
+title: 'Плюральные формы'
 sidebar_position: 2
 ---
 

@@ -17,11 +17,13 @@ sidebar_position: 3
 
 Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробную инструкцию о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) на странице этой Базы знаний на GitHub.
 
-## Перевод статьи
+## Translating articles {#translate-adguard}
 
-Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Все подробности о переводах и работе с Crowdin можно найти [в этой статье](/miscellaneous/adguard-translations/translate-adguard-dns.md).
+Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+
+When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
 
 ## Работа над существующими задачами
 
-Иногда появляются [открытые задачи](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/), связанные с обновлением Базы знаний. Вы можете помочь нам завершить их [так же](#suggest-change), как вы предлагаете любые другие изменения в эту Базу знаний. Выберите любую задачу, которая кажется вам привлекательной, и начните работать над ней. Все возникающие вопросы вы можете задавать прямо в комментариях к задаче.
+Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
   
