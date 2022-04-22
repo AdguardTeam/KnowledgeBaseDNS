@@ -249,7 +249,7 @@ ANSWERS:
 
 #### `dnsrewrite`
 
-The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS - only in custom ones.
+The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home.**
 
@@ -299,7 +299,7 @@ Name:	example.net
 Address: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite.  After that, all other records's values are summed as one response, so this:
+Next, the `CNAME` rewrite.  After that, all other records' values are summed as one response, so this:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
@@ -320,7 +320,7 @@ Currently supported RR types with examples:
 
 *  `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adds a `CNAME` record. See explanation above.
 
- *  `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adds an `HTTPS` record. Only a subset of parameter values is supported: values must be `contiguous` and, where a `value-list` is expected`, only one value is currently supported:
+ *  `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adds an `HTTPS` record. Only a subset of parameter values is supported: values must be `contiguous` and, where a `value-list` is `expected`, only one value is currently supported:
 
     ```none
     ipv4hint=127.0.0.1             // Supported.
@@ -468,7 +468,7 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # this is also a comment
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private DNS, these addresses are simply blocked. 
+In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked. 
 
 
 ## Domains-Only Syntax
