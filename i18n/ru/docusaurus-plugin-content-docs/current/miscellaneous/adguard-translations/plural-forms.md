@@ -86,29 +86,29 @@ For example:
 
 Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The "Many" and "Other" fields' contents can be the same.
 
-#### 4. **Strings with templates separated by the vertical bar sign**
+#### 4. **Строки с шаблонами, разделёнными вертикальной чертой**
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project (namely in `"adguard-dns.io"` folder).
+Это самый сложный тип строк AdGuard, который в основном используется в проекте `AdGuard Websites` (а именно `в папке adguard-dns.io`).
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Обратите внимание на знак вертикальной черты между предложениями и плейсхолдер **%count%** в оригинальных фразах — это поможет вам определить фразы, в которых перевод требует использования форм множественного числа.
 
-![Strings with templates separated by the vertical bar sign](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
+![Строки с шаблонами, разделённые вертикальной чертой](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such phrase: *"Standard license for %count% computer|Standard license for %count% computers"*.
+Теперь представим, что вы столкнулись с такой фразой: *"Standard license for %count% computer|Standard license for %count% computers"*.
 
-What should you know to translate it correctly?
+Что нужно знать, чтобы перевести её правильно?
 
-Let's call the sentences which are divided by a vertical bar sign ***"templates"***, because actually they serve as templates for phrases with different numbers.
+Назовём предложения, разделённые вертикальной чертой,***«шаблонами»***, поскольку фактически они служат шаблонами для фраз с разными числами.
 
-Coming back to the example, as the English language includes only two plural forms, there should be two templates respectively:
+Возвращаясь к примеру, поскольку в английском языке есть только две плюральные формы, то и шаблонов должно быть соответственно два:
 
 `**Standard license for *%count%* computer|Standard license for *%count%* computers**`
 
-where **template 1** – Standard license for *%count%* computer,
+где **шаблон 1** – Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+и **шаблон 2** – Standard license for *%count%* computers.
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+Ещё одна важная вещь, на которую следует обратить внимание, это плейсхолдеры **%count%**, которые обычно располагаются перед словами, которые они определяют. Вместо **%count%** в итоге будут отображаться разные числа в зависимости от того, какие шаблоны выбираются.
 
 In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
 
