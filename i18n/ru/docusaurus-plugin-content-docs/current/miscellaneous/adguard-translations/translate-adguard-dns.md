@@ -1,5 +1,5 @@
 ---
-title: Translate AdGuard DNS
+title: Перевод AdGuard DNS
 sidebar_position: 1
 ---
 
