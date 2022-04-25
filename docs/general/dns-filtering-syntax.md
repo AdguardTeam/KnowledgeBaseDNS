@@ -35,16 +35,16 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
 
 * `@@||example.org^`: unblock access to the `example.org` domain and all its subdomains.
 
-* `1.2.3.4 example.org`: (attention, old `/etc/hosts`-style syntax) respond with `1.2.3.4` to queries for the `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
+* `1.2.3.4 example.org`: (attention, old `/etc/hosts`-style syntax) in AdGuard Home, respond with `1.2.3.4` to queries for the `example.org` domain but **not** its subdomains. In Private AdGuard DNS, block access to `example.org`. `www.example.org` remains allowed.
 
-Using the unspecified IP address (`0.0.0.0`) or a local address (`127.0.0.1` and alike) for a host is basically the same as blocking that host.
+  In AdGuard Home, using the unspecified IP address (`0.0.0.0`) or a local address (`127.0.0.1` and alike) for a host is basically the same as blocking that host.
 
-```none
-# Returns the IP address 1.2.3.4 for example.org.
-1.2.3.4 example.org
-# Blocks example.com by responding with 0.0.0.0.
-0.0.0.0 example.com
-```
+  ```none
+  # Returns the IP address 1.2.3.4 for example.org.
+  1.2.3.4 example.org
+  # Blocks example.com by responding with 0.0.0.0.
+  0.0.0.0 example.com
+  ```
 
 * `example.org`: a simple domain rule. Blocks `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
 
@@ -71,7 +71,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * `*`: the wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
 
-* `||`: matches the beginning of a hostname, including any subdomain.  For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
+* `||`: matches the beginning of a hostname, including any subdomain. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
 * `^`: the separator character. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
@@ -108,19 +108,19 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
 **Examples:**
 
-*  ```none
-   ||example.org^$important
-    ```
-
-`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
-
-*  You may want to use multiple modifiers in a rule. Separate them by commas in this case:
-
-   ```none
-   ||example.org^$client=127.0.0.1,dnstype=A
+* ```none
+  ||example.org^$important
    ```
 
-`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`](#dnstype) modifier with its value, `A`.
+  `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
+
+* You may want to use multiple modifiers in a rule. Separate them by commas in this case:
+
+  ```none
+  ||example.org^$client=127.0.0.1,dnstype=A
+  ```
+
+  `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`](#dnstype) modifier with its value, `A`.
 
 **NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
 
@@ -128,11 +128,11 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
-*  By their IP address or CIDR prefix. This way works for all kinds of clients.
+* By their IP address or CIDR prefix. This way works for all kinds of clients.
 
-*  By their name. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added. 
+* By their name. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added.
 
-**NOTE:** In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  **NOTE:** In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
 
 The syntax is:
 
@@ -146,7 +146,7 @@ You can also exclude clients by adding a `~` character before the value. In this
 $client=~value1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported.  Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
 **NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
 
@@ -154,9 +154,9 @@ Client names usually contain spaces or other special characters, which is why yo
 
 * `@@||*^$client=127.0.0.1`: unblock everything for localhost.
 
-* `||example.org^$client='Frank\'s laptop'`: block `example.org` for the client named `Frank's laptop` only.  Note that quote (`'`) in the name must be escaped.
+* `||example.org^$client='Frank\'s laptop'`: block `example.org` for the client named `Frank's laptop` only. Note that quote (`'`) in the name must be escaped.
 
-* `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`.  Note that comma (`,`) must be escaped as well.
+* `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`. Note that comma (`,`) must be escaped as well.
 
 * `||example.org^$client=~Mom|~Dad|Kids`: block `example.org` for `Kids`, but not for `Mom` and `Dad`. This example demonstrates how to specify multiple clients in one rule.
 
@@ -191,12 +191,11 @@ The problem with this approach is that this way you will also unblock tracking d
 
 **Examples:**
 
-*  `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
+* `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
 
-*  `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
 
-*  `||example.org^$denyallow=sub.example.org`. block `example.org` and
-`*.example.org` but don't block `sub.example.org`.
+* `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 
 #### `dnstype`
 
@@ -225,9 +224,9 @@ $dnstype=value2
 
 **Examples:**
 
-*  `||example.org^$dnstype=AAAA`: block DNS queries for the IPv6 addresses of `example.org`.
+* `||example.org^$dnstype=AAAA`: block DNS queries for the IPv6 addresses of `example.org`.
 
-*  `||example.org^$dnstype=~A|~CNAME`: only allow `A` and `CNAME` DNS queries for `example.org`, block out the rest.
+* `||example.org^$dnstype=~A|~CNAME`: only allow `A` and `CNAME` DNS queries for `example.org`, block out the rest.
 
 **NOTE:** Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
 
@@ -299,7 +298,7 @@ Name:	example.net
 Address: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite.  After that, all other records' values are summed as one response, so this:
+Next, the `CNAME` rewrite. After that, all other records' values are summed as one response, so this:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
@@ -310,44 +309,44 @@ will result in a response with two `A` records.
 
 Currently supported RR types with examples:
 
-*  `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR`record for reverse DNS. Reverse DNS requests for `1.2.3.4` to the DNS server will result in `example.net`.
+* `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR`record for reverse DNS. Reverse DNS requests for `1.2.3.4` to the DNS server will result in `example.net`.
 
-**NOTE:** the IP MUST be in reverse order. See [RFC 1035][rfc1035].
+  **NOTE:** the IP MUST be in reverse order. See [RFC 1035][rfc1035].
 
-*  `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` adds an `A` record with the value `1.2.3.4`.
+* `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` adds an `A` record with the value `1.2.3.4`.
 
-*  `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` adds an `AAAA` record with the value `abcd::1234`.
+* `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` adds an `AAAA` record with the value `abcd::1234`.
 
-*  `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adds a `CNAME` record. See explanation above.
+* `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adds a `CNAME` record. See explanation above.
 
- *  `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adds an `HTTPS` record. Only a subset of parameter values is supported: values must be `contiguous` and, where a `value-list` is `expected`, only one value is currently supported:
+* `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adds an `HTTPS` record. Only a subset of parameter values is supported: values must be `contiguous` and, where a `value-list` is `expected`, only one value is currently supported:
 
-    ```none
-    ipv4hint=127.0.0.1             // Supported.
-    ipv4hint="127.0.0.1"           // Unsupported.
-    ipv4hint=127.0.0.1,127.0.0.2   // Unsupported.
-    ipv4hint="127.0.0.1,127.0.0.2" // Unsupported.
-    ```
+   ```none
+   ipv4hint=127.0.0.1             // Supported.
+   ipv4hint="127.0.0.1"           // Unsupported.
+   ipv4hint=127.0.0.1,127.0.0.2   // Unsupported.
+   ipv4hint="127.0.0.1,127.0.0.2" // Unsupported.
+   ```
 
-This will be changed in the future.
+  This will be changed in the future.
 
-*  `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` adds an `MX` record with precedence value `32` and exchange value `example.mail`.
+* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` adds an `MX` record with precedence value `32` and exchange value `example.mail`.
 
-*  `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` adds a `SVCB` value.  See the `HTTPS` example above.
+* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` adds a `SVCB` value. See the `HTTPS` example above.
 
-*  `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` adds a `TXT` record with the value `hello_world`.
+* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` adds a `TXT` record with the value `hello_world`.
 
-*  `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` adds an `SRV` record with priority value `10`, weight value `60`, port`8080`, and target value `example.com`.
+* `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` adds an `SRV` record with priority value `10`, weight value `60`, port`8080`, and target value `example.com`.
 
-*  `||example.com^$dnsrewrite=NXDOMAIN;;` responds with an `NXDOMAIN` code.
+* `||example.com^$dnsrewrite=NXDOMAIN;;` responds with an `NXDOMAIN` code.
 
-*  `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
+* `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
 Exception rules remove one or all rules:
 
-*  `@@||example.com^$dnsrewrite` removes all DNS rewrite rules.
+* `@@||example.com^$dnsrewrite` removes all DNS rewrite rules.
 
-*  `@@||example.com^$dnsrewrite=1.2.3.4` removes the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+* `@@||example.com^$dnsrewrite=1.2.3.4` removes the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important`
 
@@ -355,23 +354,23 @@ The `important` modifier applied to a rule increases its priority over any other
 
 **Examples:**
 
-*  In this example:
+* In this example:
 
-```none
-||example.org^$important
-@@||example.org^
-```
+  ```none
+  ||example.org^$important
+  @@||example.org^
+  ```
 
-`||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
+  `||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
 
-*  In this example:
+* In this example:
 
-```none
-||example.org^$important
-@@||example.org^$important
-```
+  ```none
+  ||example.org^$important
+  @@||example.org^$important
+  ```
 
-the exception rule also has the `important` modifier, so it will work.
+  the exception rule also has the `important` modifier, so it will work.
 
 #### `badfilter`
 
@@ -380,15 +379,17 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 **Examples:**
 
-*  `||example.com$badfilter` disables `||example.com`.
+* `||example.com$badfilter` disables `||example.com`.
 
-*  `@@||example.org^$badfilter` disables `@@||example.org^`.
+* `@@||example.org^$badfilter` disables `@@||example.org^`.
 
-**NOTE:**  The `badfilter` modifier currently doesn't work with `/etc/hosts`-style rules.  `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+  **NOTE:** The `badfilter` modifier currently doesn't work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
 
 #### `ctag`
 
-**The `ctag` modifier can only be used in AdGuard Home.** It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+**The `ctag` modifier can only be used in AdGuard Home.**
+
+It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
 The syntax is:
 
@@ -412,35 +413,35 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 The list of allowed tags:
 
- *  By device type:
+* By device type:
 
-     *  `device_audio`: audio devices.
-     *  `device_camera`: cameras.
-     *  `device_gameconsole`: game consoles.
-     *  `device_laptop`: laptops,
-     *  `device_nas`: NAS (Network-attached Storages).
-     *  `device_pc`: PCs.
-     *  `device_phone`: phones.
-     *  `device_printer`: printers.
-     *  `device_securityalarm`: security alarms.
-     *  `device_tablet`: tablets.
-     *  `device_tv`: TVs.
-     *  `device_other`: other devices.
+  * `device_audio`: audio devices.
+  * `device_camera`: cameras.
+  * `device_gameconsole`: game consoles.
+  * `device_laptop`: laptops,
+  * `device_nas`: NAS (Network-attached Storages).
+  * `device_pc`: PCs.
+  * `device_phone`: phones.
+  * `device_printer`: printers.
+  * `device_securityalarm`: security alarms.
+  * `device_tablet`: tablets.
+  * `device_tv`: TVs.
+  * `device_other`: other devices.
 
- *  By operating system:
+* By operating system:
 
-     *  `os_android`: Android.
-     *  `os_ios`: iOS.
-     *  `os_linux`: Linux.
-     *  `os_macos`: macOS.
-     *  `os_windows`: Windows.
-     *  `os_other`: other OSes.
+  * `os_android`: Android.
+  * `os_ios`: iOS.
+  * `os_linux`: Linux.
+  * `os_macos`: macOS.
+  * `os_windows`: Windows.
+  * `os_other`: other OSes.
 
- *  By user group:
+* By user group:
 
-     *  `user_admin`: administrators.
-     *  `user_regular`: regular users.
-     *  `user_child`: children.
+  * `user_admin`: administrators.
+  * `user_regular`: regular users.
+  * `user_child`: children.
 
 [adb]:     https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
 [regexp]:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
@@ -475,7 +476,7 @@ In AdGuard Home, the IP addresses are used to respond to DNS queries for these d
 
 A simple list of domain names, one name per line.
 
-Example:
+**Example:**
 
 ```none
 # This is a comment
@@ -493,9 +494,8 @@ If you are maintaining a blocklist and use different sources in it, [Hostlists c
 
 What it's capable of:
 
-1.  Compile a single blocklist from multiple sources.
+1. Compile a single blocklist from multiple sources.
 
-2.  Exclude the rules you don't need.
+2. Exclude the rules you don't need.
 
-3.  Cleanup the resulting list: deduplicate, remove invalid rules, and compress the list.
-
+3. Cleanup the resulting list: deduplicate, remove invalid rules, and compress the list.
