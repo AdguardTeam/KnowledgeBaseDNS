@@ -17,13 +17,13 @@ sidebar_position: 3
 
 Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробную инструкцию о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) на странице этой Базы знаний на GitHub.
 
-## Translating articles {#translate-adguard}
+## Переводы статей {#translate-adguard}
 
-Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Все подробности о переводах статей и работе с Crowdin можно найти [в соответствующей статье](https://kb.adguard.com/en/general/adguard-translations) Базы знаний блокировщика рекламы AdGuard.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
+Работая над статьями Базы знаний AdGuard DNS, вы наверняка встретите строки, содержащие формы множественного числа, которые следует переводить с особой аккуратностью. [В отдельной статье](https://kb.adguard.com/en/miscellaneous/plurals) мы подробно описали трудности, которые могут возникнуть при переводе таких строк, и дали исчерпывающие инструкции по работе с ними на платформе Crowdin (на английском языке).
 
 ## Работа над существующими задачами
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Иногда появляются [открытые задачи](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/), связанные с обновлением Базы знаний. Вы можете помочь нам завершить их [так же](#suggest-change), как вы предлагаете любые другие изменения в эту Базу знаний. Выберите любую задачу, которая кажется вам привлекательной, и начните работать над ней. Все возникающие вопросы вы можете задавать прямо в комментариях к задаче.
   
