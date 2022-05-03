@@ -14,11 +14,9 @@ languages_mapping: &languages_mapping
 files:
   - source: /i18n/en/**/*
     translation: /i18n/%two_letters_code%/**/%original_file_name%
-    dest: /kb.adguard-dns.io/%original_path%/%original_file_name%
     languages_mapping: *languages_mapping
   - source: /docs/**/*
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
-    dest: /kb.adguard-dns.io/%original_path%/%original_file_name%
     languages_mapping: *languages_mapping
     ignore:
       - "/**/_category_.json"
