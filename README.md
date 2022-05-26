@@ -6,8 +6,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## How to contribute
 
-TODO: We should explain how to contribute to this knowledge base.
-Translations: https://crowdin.com/project/adguard-knowledge-bases
+You can help by contributing to the Knowledge Base, all details are in [this article](https://adguard-dns.io/kb/miscellaneous/update-kb/).
 
 ## How to develop
 
