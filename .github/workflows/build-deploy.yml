@@ -26,7 +26,7 @@ jobs:
         run: yarn build
 
       - name: deploy
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           branch: gh-pages
