@@ -26,7 +26,6 @@ module.exports = {
     locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
   },
   themeConfig: {
-    hideableSidebar: true,
     navbar: {
       hideOnScroll: true,
       title: '',
@@ -62,6 +61,11 @@ module.exports = {
           position: 'right',
         },
       ],
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
+      },
     },
     footer: {
       style: 'light',
