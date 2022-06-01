@@ -4,43 +4,43 @@
     "description": "The title of the footer links column with title=dns in the footer"
   },
   "link.title.engage": {
-    "message": "参与讨论",
+    "message": "Comprometer-se",
     "description": "The title of the footer links column with title=engage in the footer"
   },
   "link.title.other_products": {
-    "message": "其它产品",
+    "message": "Outros produtos",
     "description": "The title of the footer links column with title=other_products in the footer"
   },
   "link.item.label.connect_dns": {
-    "message": "连接至 DNS",
+    "message": "Conecte-se ao DNS",
     "description": "The label of footer link with label=connect_dns linking to https://adguard-dns.io/public-dns.html"
   },
   "link.item.label.support_center": {
-    "message": "支持中心",
+    "message": "Central de suporte",
     "description": "The label of footer link with label=support_center linking to https://adguard-dns.io/support.html"
   },
   "link.item.label.faq": {
-    "message": "常见问题",
+    "message": "FAQ",
     "description": "The label of footer link with label=faq linking to https://adguard-dns.io/support/faq.html"
   },
   "link.item.label.blog": {
-    "message": "博客",
+    "message": "Blog",
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/tag/adguard-dns.html"
   },
   "link.item.label.privacy_policy": {
-    "message": "隐私政策",
+    "message": "Política de privacidade",
     "description": "The label of footer link with label=privacy_policy linking to https://adguard.com/privacy/dns.html"
   },
   "link.item.label.terms": {
-    "message": "服务条款",
+    "message": "Termos de serviço",
     "description": "The label of footer link with label=terms linking to https://adguard.com/eula.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard 状态",
+    "message": "Status do AdGuard",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "AdGuard 广告拦截器",
+    "message": "Bloqueador de anúncio do AdGuard",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {
@@ -48,7 +48,7 @@
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
   "copyright": {
-    "message": "© AdGuard DNS，2022",
+    "message": "© AdGuard DNS, 2022",
     "description": "The footer copyright"
   }
 }

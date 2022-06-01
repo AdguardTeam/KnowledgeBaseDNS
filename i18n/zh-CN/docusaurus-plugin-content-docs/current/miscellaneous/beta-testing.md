@@ -1,25 +1,25 @@
 ---
-title: 'Private AdGuard DNS beta test'
+title: 'Private AdGuard DNS beta测试版'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Private AdGuard DNS最年轻的 AdGuard 产品，尽管它在某些方面是对 [AdGuard Home](https://kb.adguard.com/en/home/overview) 理念之合乎逻辑的延续。 对于每个新版本，我们都会尝试使 Private AdGuard DNS 变得更好。 在我们走向完美的道路上，我们真的需要 Beta 测试人员的帮助。 加入我们的团队！
 
-## How to become a beta tester
+## 如何成为 beta 测试者的一员
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Pivate AdGuard DNS, use the service and send us reports on how it works.
+要成为 Private AdGuard DNS 的 beta 测试者[访问 AdGuard DNS 网站](https://adguard-dns.io/en/welcome.html)，请点击右上角的“加入 beta测试计划”按钮，然后通过社交媒体或现有 AdGuard账户登录。 一切搞定：现在您可以设置您的私人 AdGuard DNS、使用该服务并向我们发送有关其工作原理的报告。
 
-## How to report a bug
+## 如何报告bug
 
-Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
+假如你发现了一个bug 或者您只是想与开发人员分享您的建议？ 无论如何，有几种方法可以让我们了解情况：
 
-* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* 转到 [forum.adguard.com](https://forum.adguard.com) 并在 [论坛的“Beta 测试”类别](https:// 中发布一个新主题（或查找现有主题） forum.adguard.com/index.php?categories/48/) 请务必先阅读[论坛规则](https://forum.adguard.com/index.php?threads/14859/)；
 
-* Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
+* 转到 [AdGuard DNS 存储库](https://github.com/AdguardTeam/AdGuardDNS)，在那里创建一个新问题并详细描述bug/功能请求。
 
-The above methods are the most preferred, but you can use others if necessary:
+上述方法是最优选的，但如果需要，您可以使用其他方法：
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most efficient way to discuss technical matters.
+* 在各种社交媒体平台上找到我们，例如 [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r /Adguard/) 等 然而，这并不是讨论技术问题的最有效方式。
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* 从应用程序中的“支持”选项以向我们的支持团队发送电子邮件，或直接写信至 [support@adguard.com](mailto:support@adguard.com)。
 

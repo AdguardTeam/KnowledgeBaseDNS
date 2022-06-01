@@ -5,30 +5,30 @@ sidebar_position: 2
 
 # AdGuard DNS API
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程序中。
 
-## Authentication
+## 验证
 
-### Generate Access token
+### 生成访问令牌
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+使用给定的参数对以下 URL 发出 POST 请求以生成 `access_token`：
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|              |                                                                  |
-| ------------ | ---------------------------------------------------------------- |
-| Parameter    | Description                                                      |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+|           |                        |
+| --------- | ---------------------- |
+| 范围        | 描述                     |
+| **用户名**   | 账号邮箱                   |
+| **密码**    | 账号密码                   |
+| mfa_token | 双重身份验证令牌（需要提前在账户设置中启用） |
 
-In the response, you will get both `access_token` and `refresh_token`.
+在响应中，您将同时获得 `access_token` 和 `refresh_token`。
 
-- The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- `access_token` 将在指定的几秒后过期（由响应中的 `expires_in` 参数决定） 您可以重新生成一个新的 `access_token` 使用 `refresh_token`（参考：`Generate Access Token from Refresh Token`）。
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token` 是永久性的。 要撤销 `refresh_token`，请参阅：`Revoking a Refresh Token`。
 
-#### Example request
+#### 示例请求
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -38,7 +38,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### 示例响应
 
 ```json
 {
@@ -49,20 +49,20 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### 刷新以生成访问令牌
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+访问令牌有有效期限 过期后，您的应用将不得不使用 `refresh token` 以请求新的 `access token`。
 
-Make the following POST request with the given params to get a new access token:
+使用给定的参数发出以下 POST 请求以获取新的访问令牌：
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|                   |                                                                     |
-| ----------------- | ------------------------------------------------------------------- |
-| Parameter         | Description                                                         |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+|                   |                                |
+| ----------------- | ------------------------------ |
+| 范围                | 描述                             |
+| **refresh_token** | 必须使用`REFRESH TOKEN` 来生成新的访问令牌。 |
 
-#### Example request
+#### 示例请求
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -70,7 +70,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+#### 示例响应
 
 ```json
 {
@@ -81,42 +81,42 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+### 取消刷新该令牌
 
-To revoke a refresh token, make the following POST request with the given params:
+要取消刷新该令牌，请使用给定参数发出以下 POST 请求：
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+#### 请求示例
 
 ```bash
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-|                   |                                        |
-| ----------------- | -------------------------------------- |
-| Parameter         | Description                            |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+|                   |                      |
+| ----------------- | -------------------- |
+| 范围                | 描述                   |
+| **refresh_token** | 等待撤销的`REFRESH TOKEN` |
 
-### Accessing API
+### 访问API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+生成访问和刷新令牌后，可以通过在标头中传递访问令牌来进行 API 调用。
 
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
+- 标头名称应为 `Authorization`
+- 标头值应为 `Bearer {access_token}`
 
 ## API
 
-### OpenAPI spec
+### 开源API 规范
 
-OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI 规范可在 [https： //api.adguard-dns.io/static/swagger/openapi.json][openapi]。
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以在 [https://editor.swagger.io/][swagger]。
 
-## Feedback
+## 反馈
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您想添加什么。
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

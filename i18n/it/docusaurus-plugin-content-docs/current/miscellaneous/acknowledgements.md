@@ -14,13 +14,12 @@ Our dev team would like to thank the developers of the third-party software we u
 * QUIC-Go module by Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Staticcheck program by Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
 
-## AdGuard Websites
+## AdGuard API and Websites
 
 * Symfony: [http://symfony.com/](http://symfony.com/)
 * React: [https://reactjs.org/](https://reactjs.org/)
 * Vue: [https://vuejs.org/](https://vuejs.org/)
 * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
 * Spring [https://spring.io/](https://spring.io/)
-
-
-
+* ClickHouse: [https://clickhouse.com/](https://clickhouse.com/)
+* Logstash: [https://github.com/elastic/logstash](https://github.com/elastic/logstash)
