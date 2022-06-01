@@ -115,5 +115,11 @@ module.exports = {
   ],
   plugins: [
     '@docusaurus/plugin-ideal-image',
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+      }
+    ],
   ],
 };
