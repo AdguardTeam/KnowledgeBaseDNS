@@ -1,0 +1,18 @@
+{
+  "item.label.docs": {
+    "message": "文档",
+    "description": "Navbar item with label docs"
+  },
+  "item.label.blog": {
+    "message": "博客",
+    "description": "Navbar item with label blog"
+  },
+  "item.label.official_website": {
+    "message": "官方网站",
+    "description": "Navbar item with label official_website"
+  },
+  "item.label.github": {
+    "message": "GitHub",
+    "description": "Navbar item with label github"
+  }
+}

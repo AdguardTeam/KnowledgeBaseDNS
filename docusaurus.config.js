@@ -1,25 +1,35 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const DNS_WEBSITE_URL = 'https://adguard-dns.io';
+const ADGUARD_WEBSITE_URL = 'https://adguard.com';
+const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
+
+// Allow to parameterise the website URL and the base path during the build.
+const url = process.env.URL || 'https://adguardteam.github.io';
+const baseUrl = process.env.BASE_URL || '/KnowledgeBaseDNS/';
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'AdGuard Knowledge Base',
-  tagline: 'Knowledge base for AdGuard products',
-  url: 'https://adguardteam.github.io/',
-  baseUrl: '/KnowledgeBaseDNS/',
+  title: 'AdGuard DNS Knowledge Base',
+  tagline: 'Knowledge base for AdGuard DNS',
+  url: url,
+  baseUrl: baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  trailingSlash: false,
+  trailingSlash: true,
   organizationName: 'AdGuard',
-  projectName: 'AdGuardKB',
+  projectName: 'AdGuardDNSKB',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru'],
+    locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
   },
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
-      title: 'AdGuard DNS',
+      hideOnScroll: true,
+      title: '',
       logo: {
         alt: 'AdGuard DNS',
         src: 'img/logo.svg',
@@ -30,7 +40,17 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Docs',
+          label: 'docs',
+        },
+        {
+          to: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
+          position: 'left',
+          label: 'blog',
+        },
+        {
+          to: DNS_WEBSITE_URL,
+          position: 'left',
+          label: 'official_website',
         },
         {
           type: 'localeDropdown',
@@ -38,59 +58,80 @@ module.exports = {
         },
         {
           href: 'https://github.com/AdguardTeam/KnowledgeBaseDNS',
-          label: 'GitHub',
+          label: 'github',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
+      logo: {
+        alt: 'AdGuard DNS',
+        src: 'img/logo_dark.svg',
+        srcDark: 'img/logo_dark.svg',
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'dns',
           items: [
             {
-              label: 'Knowledgebase',
-              to: '/docs/intro',
+              html: `Cloud-based DNS service that will help you protect privacy and block ads.`
+            },
+          ]
+        },
+        {
+          title: 'dns',
+          items: [
+            {
+              label: 'connect_dns',
+              href: DNS_WEBSITE_URL + '/public-dns.html',
+            },
+            {
+              label: 'support_center',
+              href: DNS_WEBSITE_URL + '/support.html',
+            },
+            {
+              label: 'faq',
+              href: DNS_WEBSITE_URL + '/support/faq.html',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'engage',
           items: [
             {
-              label: 'AdGuard Forum',
-              href: 'https://forum.adguard.com',
+              label: 'blog',
+              href: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
             },
             {
-              label: 'AdGuard Reddit',
-              href: 'https://www.reddit.com/r/Adguard/',
+              label: 'privacy_policy',
+              href: ADGUARD_WEBSITE_URL + '/privacy/dns.html',
+            },
+            {
+              label: 'terms',
+              href: ADGUARD_WEBSITE_URL + '/eula.html',
+            },
+            {
+              label: 'status',
+              href: 'https://status.adguard.com/',
             }
           ],
         },
         {
-          title: 'More',
+          title: 'other_products',
           items: [
             {
-              label: 'Blog',
-              href: 'https://adguard.com/blog/',
+              label: 'ad_blocker',
+              href: ADGUARD_WEBSITE_URL,
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/AdguardTeam/KnowledgeBaseDNS',
-            },
-            {
-              label: 'EULA',
-              href: 'https://adguard-dns.com/eula.html',
-            },
-            {
-              label: 'Privacy Policy',
-              href: 'https://adguard-dns.com/privacy.html',
+              label: 'vpn',
+              href: VPN_WEBSITE_URL,
             },
           ],
         },
       ],
-      copyright: `Copyright © 2009-${new Date().getFullYear()} AdGuard. Built with Docusaurus.`,
+      copyright: `© AdGuard DNS, ${new Date().getFullYear()}`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -103,7 +144,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          routeBasePath: '/',
           editUrl:
             'https://github.com/AdguardTeam/KnowledgeBaseDNS/edit/master/',
         },

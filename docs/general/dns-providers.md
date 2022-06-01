@@ -15,10 +15,11 @@ These servers provide blocking ads, tracking and phishing
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `94.140.14.14` and `94.140.15.15`             | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNA) |
 | DNS, IPv6      | `2a10:50c0::ad1:ff` and `2a10:50c0::ad2:ff`            | [Add to AdGuard](sdns://AAcAAAAAAAAAE1syYTEwOjUwYzA6OmFkMTpmZl0) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `176.103.130.130:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20) |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::ad2:0ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAGVsyYTAwOjVhNjA6OmFkMjowZmZdOjU0NDMggdAC02pMpQxHO3R5ZQ_hLgKzIcthOFYqII5APf3FXpQiMi5kbnNjcnlwdC5kZWZhdWx0Lm5zMi5hZGd1YXJkLmNvbQ) |
 | DNS-over-HTTPS | `https://dns.adguard.com/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS | `tls://dns.adguard.com` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29t) |
+| DNS-over-QUIC | `quic://dns.adguard.com` | [Add to AdGuard](sdns://BAMAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29t) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20) |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
 
 #### Family Protection 
@@ -29,10 +30,11 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `94.140.14.15` and `94.140.15.16`            | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNQ) |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`              | [Add to AdGuard](sdns://AAcAAAAAAAAAFFsyYTEwOjUwYzA6OmJhZDE6ZmZd) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `176.103.130.132:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMjo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ) |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt.family.ns2.adguard.com` IP: `[2a00:5a60::bad2:0ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAGlsyYTAwOjVhNjA6OmJhZDI6MGZmXTo1NDQzIIwhF6nrwVfW-2QFbwrbwRxdg2c0c8RuJY2bL1fU7jUfITIuZG5zY3J5cHQuZmFtaWx5Lm5zMi5hZGd1YXJkLmNvbQ) |
 | DNS-over-HTTPS | `https://dns-family.adguard.com/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQovZG5zLXF1ZXJ5) 
-| DNS-over-TLS | `tls://dns-family.adguard.com` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ) ||
+| DNS-over-TLS | `tls://dns-family.adguard.com` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ) |
+| DNS-over-QUIC | `quic://dns-family.adguard.com` | [Add to AdGuard](sdns://BAMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `94.140.14.15:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ) |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `[2a10:50c0::bad1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAGVsyYTEwOjUwYzA6OmJhZDE6ZmZdOjU0NDMguDFd17FLbuMgpHDcLtaxqjmMyeWG-F1FRda4ybUAWrohMi5kbnNjcnlwdC5mYW1pbHkubnMxLmFkZ3VhcmQuY29t) |
 
 #### Non-filtering
 
@@ -42,10 +44,11 @@ These servers provide a secure and reliable connection, but they don't filter an
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `94.140.14.140` and `94.140.14.141`             | [Add to AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA) |
 | DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`            | [Add to AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`| [Add to AdGuard](sdns://AQMAAAAAAAAAEjk0LjE0MC4xNC4xNDA6NTQ0MyC16ETWuDo-PhJo62gfvqcN48X6aNvWiBQdvy7AZrLa-iUyLmRuc2NyeXB0LnVuZmlsdGVyZWQubnMxLmFkZ3VhcmQuY29t) |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::01:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
 | DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ) |
 | DNS-over-TLS | `tls://dns-unfiltered.adguard.com` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20) |
+| DNS-over-QUIC | `quic://dns-unfiltered.adguard.com` | [Add to AdGuard](sdns://BAAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
 
 
 ### Yandex DNS
@@ -258,7 +261,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Standard
 
-Regular DNS servers which provide protection from phishing and spyware. It include blocklist, DNSSEC validation, and other security features.
+Regular DNS servers which provide protection from phishing and spyware. They include blocklists, DNSSEC validation, and other security features.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -460,7 +463,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block websites which are considered as adult related. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
+[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
 | Protocol       | Address                                            |                |
@@ -485,7 +488,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It include AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -515,7 +518,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSCEPAT
 
-[DNSCEPAT](https://dnscepat.id/) DNS is built for Security, Privacy and Fast Connectivity for you.
+[DNSCEPAT](https://dnscepat.id/) DNS is built for you with Security, Privacy and Fast Connectivity in mind.
 
 #### Asia DNS Server
 
@@ -538,7 +541,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### 360 Secure DNS
 
-**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threats protection.
+**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -549,7 +552,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by internet initiative japan. It also block child abuse contents.
+[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -558,7 +561,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service. 
+[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service. 
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -581,7 +584,7 @@ Block ads and annoying websites
 
 #### Safe
 
-Block phishing, malcious and other unsafe websites
+Blocks phishing, malicious and other unsafe websites
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -625,7 +628,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No Logging, No ECS, DNSSEC Validation, Free!
+[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -637,7 +640,7 @@ These servers block adult websites and inappropriate contents.
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]`| [Add to AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
 | DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party) | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ) |
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk) |
-| DNS-over-Quic | `quic://doh.tiar.app` | [Add to AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw) |
+| DNS-over-QUIC | `quic://doh.tiar.app` | [Add to AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw) |
 | DNS-over-TLS | `tls://dot.tiar.app` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw) |
 
 
@@ -655,7 +658,7 @@ These servers block adult websites and inappropriate contents.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, No logging.
+[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -676,7 +679,7 @@ These servers block adult websites and inappropriate contents.
 
 #### OSZX server
 
-These servers provide blocking ads, keeps no logs and DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -689,7 +692,7 @@ These servers provide blocking ads, keeps no logs and DNSSEC enabled
 
 #### PumpleX server
 
-These servers provide no blocking ads, keeps no logs and DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -702,7 +705,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### Applied Privacy DNS
 
-[Applied Privacy DNS](https://applied-privacy.net/) operate DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
+[Applied Privacy DNS](https://applied-privacy.net/) operates DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -730,12 +733,12 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open source DNS resolver with no logs, malware protection, ad blocking. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `176.9.199.158:8443`| [Add to AdGuard](sdns://AQMAAAAAAAAAEjE3Ni45LjE5OS4xNTg6ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q) |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:151:11b0::3]:8443`| [Add to AdGuard](sdns://AQMAAAAAAAAAG1syYTAxOjRmODoxNTE6MTFiMDo6M106ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`| [Add to AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q) |
+| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443`| [Add to AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0) |
 | DNS-over-HTTPS | `https://dns.decloudus.com/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20KL2Rucy1xdWVyeQ) |
 | DNS-over-TLS | `tls://dns.decloudus.com` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20) |
 
@@ -758,7 +761,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no Logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
 
 
 | Protocol       | Address                                            |                |
@@ -770,7 +773,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad-blocker and no logging provided by [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -829,7 +832,7 @@ These servers provide no blocking ads, keeps no logs and DNSSEC enabled
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, No Filter, No Logging
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -875,7 +878,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) A zero logging and ad blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
 #### Blitz
 
@@ -991,7 +994,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### DNSlify DNS
 
-[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service provide by [Peerix](https://www.peerix.net/)
+[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
 
 #### Default
 
@@ -1015,7 +1018,7 @@ Safe mode guard against infected, fraudulent or bot sites.
 
 #### Family
 
-Family mode provide family oriented filtering offering the protection of "Safe" resolvers + blocking adult sites.
+Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -1024,7 +1027,7 @@ Family mode provide family oriented filtering offering the protection of "Safe" 
 
 ### NextDNS
 
-[NextDNS](https://nextdns.io/) provides publicly accessible unfiltered resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
+[NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
 
 #### Unfiltered
 
@@ -1093,7 +1096,7 @@ In this section we list small, mostly personal DNS resolvers. They often have on
 
 [Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
+Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
@@ -1105,7 +1108,7 @@ Non-logging | Filters ads,trackers,phishing,etc | DNSSEC | QNAME Minimization | 
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntaxes, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. For additional important info, see the link above.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. 
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|

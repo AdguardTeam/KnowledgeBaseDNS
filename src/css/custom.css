@@ -7,14 +7,20 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #66b574;
-  --ifm-color-primary-dark: #53ac63;
-  --ifm-color-primary-darker: #4ea25d;
-  --ifm-color-primary-darkest: #41864d;
-  --ifm-color-primary-light: #79be85;
-  --ifm-color-primary-lighter: #83c38e;
-  --ifm-color-primary-lightest: #9fd1a8;
+  --ifm-color-primary: #2F6EDE;
+  --ifm-color-primary-dark: #2160d1;
+  --ifm-color-primary-darker: #1f5bc5;
+  --ifm-color-primary-darkest: #1a4ba3;
+  --ifm-color-primary-light: #467ee2;
+  --ifm-color-primary-lighter: #5286e4;
+  --ifm-color-primary-lightest: #759fe9;
   --ifm-code-font-size: 95%;
+
+  --ifm-toc-border-color: #D8D8D8;
+}
+
+[data-theme="dark"]:root {
+  --ifm-toc-border-color: #D93C8A;
 }
 
 .docusaurus-highlight-code-line {
@@ -29,9 +35,82 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .container img {
-  border: 1px solid #efefef;
   max-width: 100%;
   margin: 0 auto;
-  padding: 2px;
   display: block;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.navbar__logo {
+  margin-right: 0;
+}
+
+.footer {
+  --ifm-footer-background-color: #000;
+  --ifm-footer-color: #F3F3F3;
+  --ifm-footer-link-color: #F3F3F3;
+  --ifm-footer-title-color: #F3F3F3;
+}
+
+[data-theme="dark"] .footer {
+  --ifm-footer-background-color: #353A3F;
+}
+
+.footer__links {
+  margin-bottom: 64px;
+}
+
+.footer__item {
+  max-width: 165px;
+  font-size: 13px;
+}
+
+.footer__link-item {
+  font-size: 13px;
+  line-height: 2.4;
+}
+
+.footer__link-item svg {
+  display: none;
+}
+
+.footer__copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Navbar */
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar__link {
+  font-size: 14px;
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.navbar__brand {
+  height: 26px;
+}
+
+/* Sidebar */
+.table-of-contents__link {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Pagination */
+html[data-theme='dark'] .pagination-nav__link {
+  border-color: #F3F3F3;
+}
+
+.pagination-nav__link:hover,
+.pagination-nav__link:focus,
+html[data-theme='dark'] .pagination-nav__link:hover,
+html[data-theme='dark'] .pagination-nav__link:focus {
+  border-color: var(--ifm-color-primary);
 }

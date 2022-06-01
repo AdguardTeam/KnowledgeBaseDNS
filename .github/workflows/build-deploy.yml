@@ -1,0 +1,33 @@
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - "*"
+    tags:
+      - v*
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: yarn install
+        run: yarn install
+
+      - name: yarn build
+        run: yarn build
+
+      - name: deploy
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.8
+        with:
+          branch: gh-pages
+          folder: build

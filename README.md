@@ -4,6 +4,10 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 `main` branch is published automatically to https://adguardteam.github.io/KnowledgeBaseDNS/.
 
+## How to contribute
+
+You can help by contributing to the Knowledge Base, all details are in [this article](https://adguard-dns.io/kb/miscellaneous/update-kb/).
+
 ## How to develop
 
 ### Prepare
@@ -34,3 +38,12 @@ This command starts a local development server and opens up a browser window. Mo
 - `yarn build`
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Localization
+
+Translations are not pushed to the repo and prepared on-the-fly (`i18n` folder is added to `.gitignore`).
+
+Here's how you can debug translations locally.
+
+1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
+2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
