@@ -3,7 +3,7 @@ name: Sync with Crowdin
 on:
   push:
     branches:
-      - "main"
+      - "master"
   workflow_dispatch:
 
 jobs:
@@ -31,5 +31,5 @@ jobs:
           title: Update translations
           body: Transactions are synced from Crowdin
           branch: update-translations
-          base: main
+          base: master
           delete-branch: true
