@@ -11,41 +11,44 @@ sidebar_position: 3
 
 These servers provide blocking ads, tracking and phishing
 
-| Protocol       | Address                                                                        |                                                                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.14` and `94.140.15.15`                                              | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNA)                                                                                                             |
-| DNS, IPv6      | `2a10:50c0::ad1:ff` and `2a10:50c0::ad2:ff`                                    | [Add to AdGuard](sdns://AAcAAAAAAAAAE1syYTEwOjUwYzA6OmFkMTpmZl0)                                                                                                    |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `176.103.130.130:5443`      | [Add to AdGuard](sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)        |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::ad2:0ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAGVsyYTAwOjVhNjA6OmFkMjowZmZdOjU0NDMggdAC02pMpQxHO3R5ZQ_hLgKzIcthOFYqII5APf3FXpQiMi5kbnNjcnlwdC5kZWZhdWx0Lm5zMi5hZGd1YXJkLmNvbQ) |
-| DNS-over-HTTPS | `https://dns.adguard.com/dns-query`                                            | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk)                                                                                        |
-| DNS-over-TLS   | `tls://dns.adguard.com`                                                        | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29t)                                                                                                       |
+| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `94.140.14.14` and `94.140.15.15`                                             | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNA)                                                                                                           |
+| DNS, IPv6      | `2a10:50c0::ad1:ff` and `2a10:50c0::ad2:ff`                                   | [Add to AdGuard](sdns://AAcAAAAAAAAAE1syYTEwOjUwYzA6OmFkMTpmZl0)                                                                                                  |
+| DNS-over-HTTPS | `https://dns.adguard.com/dns-query`                                           | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29tCi9kbnMtcXVlcnk)                                                                                      |
+| DNS-over-TLS   | `tls://dns.adguard.com`                                                       | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29t)                                                                                                     |
+| DNS-over-QUIC  | `quic://dns.adguard.com`                                                      | [Add to AdGuard](sdns://BAMAAAAAAAAAAAAPZG5zLmFkZ3VhcmQuY29t)                                                                                                     |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`        | [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
 
 #### Family Protection
 
 These servers provide the Default features + Blocking adult websites + Safe search
 
-| Protocol       | Address                                                                        |                                                                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.15` and `94.140.15.16`                                              | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNQ)                                                                                                             |
-| DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`                                  | [Add to AdGuard](sdns://AAcAAAAAAAAAFFsyYTEwOjUwYzA6OmJhZDE6ZmZd)                                                                                                   |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `176.103.130.132:5443`       | [Add to AdGuard](sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMjo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ)         |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt.family.ns2.adguard.com` IP: `[2a00:5a60::bad2:0ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAGlsyYTAwOjVhNjA6OmJhZDI6MGZmXTo1NDQzIIwhF6nrwVfW-2QFbwrbwRxdg2c0c8RuJY2bL1fU7jUfITIuZG5zY3J5cHQuZmFtaWx5Lm5zMi5hZGd1YXJkLmNvbQ) |
-| DNS-over-HTTPS | `https://dns-family.adguard.com/dns-query`                                     | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQovZG5zLXF1ZXJ5)                                                                               |
-| DNS-over-TLS   | `tls://dns-family.adguard.com`                                                 | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ) |                                                                                           |
+| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `94.140.14.15` and `94.140.15.16`                                             | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNQ)                                                                                                           |
+| DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`                                 | [Add to AdGuard](sdns://AAcAAAAAAAAAFFsyYTEwOjUwYzA6OmJhZDE6ZmZd)                                                                                                 |
+| DNS-over-HTTPS | `https://dns-family.adguard.com/dns-query`                                    | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQovZG5zLXF1ZXJ5)                                                                             |
+| DNS-over-TLS   | `tls://dns-family.adguard.com`                                                | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ)                                                                                           |
+| DNS-over-QUIC  | `quic://dns-family.adguard.com`                                               | [Add to AdGuard](sdns://BAMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ)                                                                                           |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `94.140.14.15:5443`         | [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ)           |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `[2a10:50c0::bad1:ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAGVsyYTEwOjUwYzA6OmJhZDE6ZmZdOjU0NDMguDFd17FLbuMgpHDcLtaxqjmMyeWG-F1FRda4ybUAWrohMi5kbnNjcnlwdC5mYW1pbHkubnMxLmFkZ3VhcmQuY29t) |
 
 #### Non-filtering
 
 These servers provide a secure and reliable connection, but they don't filter anything like the "Default" and "Family protection" servers.
 
-| Protocol       | Address                                                                      |                                                                                                                                                                  |
-| -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.140` and `94.140.14.141`                                          | [Add to AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA)                                                                                                         |
-| DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`                                      | [Add to AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd)                                                                                                    |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`   | [Add to AdGuard](sdns://AQMAAAAAAAAAEjk0LjE0MC4xNC4xNDA6NTQ0MyC16ETWuDo-PhJo62gfvqcN48X6aNvWiBQdvy7AZrLa-iUyLmRuc2NyeXB0LnVuZmlsdGVyZWQubnMxLmFkZ3VhcmQuY29t)    |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt.default.ns2.adguard.com` IP: `[2a00:5a60::01:ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
-| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query`                               | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ)                                                                      |
-| DNS-over-TLS   | `tls://dns-unfiltered.adguard.com`                                           | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                     |
+| Protocol       | Address                                                                        |                                                                                                                                                                     |
+| -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `94.140.14.140` and `94.140.14.141`                                            | [Add to AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA)                                                                                                            |
+| DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`                                        | [Add to AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd)                                                                                                       |
+| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query`                                 | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ)                                                                         |
+| DNS-over-TLS   | `tls://dns-unfiltered.adguard.com`                                             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
+| DNS-over-QUIC  | `quic://dns-unfiltered.adguard.com`                                            | [Add to AdGuard](sdns://BAAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [Add to AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
 
 ### Yandex DNS
@@ -732,12 +735,12 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
 
-| Protocol       | Address                                                                      |                                                                                                                                                                  |
-| -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `176.9.199.158:8443`          | [Add to AdGuard](sdns://AQMAAAAAAAAAEjE3Ni45LjE5OS4xNTg6ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)             |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:151:11b0::3]:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAG1syYTAxOjRmODoxNTE6MTFiMDo6M106ODQ0MyD73Ye9XeCsS7TdFu9fRP7s5k-0aL91yygulGVmeOAKLh4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q) |
-| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                        | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20KL2Rucy1xdWVyeQ)                                                                                  |
-| DNS-over-TLS   | `tls://dns.decloudus.com`                                                    | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20)                                                                                                 |
+| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Add to AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)              |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Add to AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0) |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                         | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20KL2Rucy1xdWVyeQ)                                                                                   |
+| DNS-over-TLS   | `tls://dns.decloudus.com`                                                     | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20)                                                                                                  |
 
 ### Lelux DNS
 

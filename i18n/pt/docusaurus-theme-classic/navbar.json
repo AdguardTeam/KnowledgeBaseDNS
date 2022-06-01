@@ -1,14 +1,14 @@
 {
   "item.label.docs": {
-    "message": "文档",
+    "message": "Documentos",
     "description": "Navbar item with label docs"
   },
   "item.label.blog": {
-    "message": "博客",
+    "message": "Blog",
     "description": "Navbar item with label blog"
   },
   "item.label.official_website": {
-    "message": "官方网站",
+    "message": "Site oficial",
     "description": "Navbar item with label official_website"
   },
   "item.label.github": {
