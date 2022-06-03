@@ -114,3 +114,8 @@ html[data-theme='dark'] .pagination-nav__link:hover,
 html[data-theme='dark'] .pagination-nav__link:focus {
   border-color: var(--ifm-color-primary);
 }
+
+/* Search */
+html[lang='ko'] .navbar__search {
+  display: none;
+}
