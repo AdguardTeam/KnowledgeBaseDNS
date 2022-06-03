@@ -164,7 +164,7 @@
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "Tente novamente",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
@@ -188,15 +188,15 @@
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "modo escuro",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "modo claro",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Página inicial",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -216,10 +216,10 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "Versão: {versionLabel}"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Versões",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.CodeBlock.wordWrapToggle": {
@@ -231,11 +231,11 @@
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Idiomas",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.IdealImageMessage.loading": {
-    "message": "Loading...",
+    "message": "Carregando...",
     "description": "When the full-scale image is loading"
   },
   "theme.IdealImageMessage.load": {
@@ -261,7 +261,7 @@
     "message": "See all results"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "Procurar",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
