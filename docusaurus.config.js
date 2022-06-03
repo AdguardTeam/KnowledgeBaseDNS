@@ -161,9 +161,9 @@ module.exports = {
   plugins: [
     '@docusaurus/plugin-ideal-image',
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
+      require.resolve('docusaurus-lunr-search'),
       {
-        hashed: true,
+        languages: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'zh'],
       }
     ],
   ],
