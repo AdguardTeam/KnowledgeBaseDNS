@@ -1029,12 +1029,20 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 [NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
 
-#### Unfiltered
+#### Ultra-low latency
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`dns.nextdns.io`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8A)|
+|DNS-over-HTTPS|`https://dns.nextdns.io`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8KL2Rucy1xdWVyeQ)|
 |DNS-over-TLS|`tls://dns.nextdns.io`|[Add to AdGuard](sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8)|
+
+#### Anycast
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://anycast.dns.nextdns.io`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5)|
+|DNS-over-TLS|`tls://anycast.dns.nextdns.io`|[Add to AdGuard](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)|
+
 
 ### RethinkDNS
 
@@ -1047,6 +1055,11 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 |DNS-over-HTTPS|`https://basic.rethinkdns.com/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw)|
 |DNS-over-TLS|`tls://max.rethinkdns.com`|[Add to AdGuard](sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t)|
 
+
+### ControlD
+
+[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware,and social media blocking
+
 #### Block malware
 
 | Protocol       | Address                                            |                |
@@ -1054,6 +1067,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS, IPv4      | `76.76.2.1`             | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ) |
 | DNS-over-HTTPS | `https://freedns.controld.com/p1`          | [Add to AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
 | DNS-over-TLS   | `tls://p1.freedns.controld.com`           | [Add to AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA) |
+
 ##### Block malware + ads
 
 | Protocol       | Address                                            |                |
