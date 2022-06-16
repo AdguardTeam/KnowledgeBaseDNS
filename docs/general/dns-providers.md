@@ -1058,7 +1058,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware,and social media blocking
+[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware, and social media blocking.
 
 #### Block malware
 
