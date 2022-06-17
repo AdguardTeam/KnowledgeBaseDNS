@@ -1047,6 +1047,18 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 |DNS-over-HTTPS|`https://basic.rethinkdns.com/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw)|
 |DNS-over-TLS|`tls://max.rethinkdns.com`|[Add to AdGuard](sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t)|
 
+### ControlD DNS
+
+[ControlD](https://controld.com/) is a customizable DNS service that blocks unwanted categories of sites (like ads or porn), popular online services like Facebook or TikTok, or any domain of your choice.
+
+#### Unfiltered
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.0`             | <a href="sdns://AAcAAAAAAAAACTc2Ljc2LjIuMA">Add to AdGuard</a> |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0`          | <a href="sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDAAAAA">Add to AdGuard</a> |
+| DNS-over-TLS   | `tls://p0.freedns.controld.com`           | <a href="sdns://AwcAAAAAAAAAF3AwLmZyZWVkbnMuY29udHJvbGQuY29tAAA">Add to AdGuard</a> |
+
 #### Block malware
 
 | Protocol       | Address                                            |                |
@@ -1087,6 +1099,15 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://adblock.doh.mullvad.net`           | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ) |
+
+### PureDNS
+
+[PureDNS](https://puredns.org/) is built to advocate for secure DNS implementation in Indonesia, currently hosted in AWS, GCP and DO servers in Indonesia and Singapore.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://puredns.org/dns-query`          | <a href="sdns://AgcAAAAAAAAAAAALcHVyZWRucy5vcmcKL2Rucy1xdWVyeQ">Add to AdGuard</a> |
+| DNS-over-TLS   | `tls://puredns.org`           | <a href="sdns://AwcAAAAAAAAAAAALcHVyZWRucy5vcmc">Add to AdGuard</a> |
 
 ### Small personal resolvers
 
