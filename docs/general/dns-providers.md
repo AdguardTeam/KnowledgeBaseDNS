@@ -516,29 +516,6 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS, IPv4      | `180.131.144.144` and `180.131.145.145`             | [Add to AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144`  | [Add to AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
 
-### DNSCEPAT
-
-[DNSCEPAT](https://dnscepat.id/) DNS is built for you with Security, Privacy and Fast Connectivity in mind.
-
-#### Asia DNS Server
-
-| Protocol       | Address                             |                |
-|----------------|-------------------------------------|----------------|
-| DNS-over-TLS | Hostname: `tls://asia.dnscepat.id` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZA) |
-| DNS IPv4 | IP: `172.105.216.54` | [Add to AdGuard](sdns://AAcAAAAAAAAADjE3Mi4xMDUuMjE2LjU0) |
-| DNS IPv6 | IP: `2400:8902::f03c:92ff:fe09:48cc` | [Add to AdGuard](sdns://AAcAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTA5OjQ4Y2Nd) |
-| DNS-over-HTTPS | Hostname: `https://asia.dnscepat.id/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQYXNpYS5kbnNjZXBhdC5pZAovZG5zLXF1ZXJ5) |
-
-#### Eropa DNS Server
-
-| Protocol       | Address                             |                |
-|----------------|-------------------------------------|----------------|
-| DNS-over-TLS | Hostname: `tls://eropa.dnscepat.id` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQ) |
-| DNS IPv4 | IP: `5.2.75.231` | [Add to AdGuard](sdns://AAcAAAAAAAAACjUuMi43NS4yMzE) |
-| DNS IPv6 | IP: `2a04:52c0:101:98d::` | [Add to AdGuard](sdns://AAcAAAAAAAAAFVsyYTA0OjUyYzA6MTAxOjk4ZDo6XQ) |
-| DNS-over-HTTPS | Hostname: `https://eropa.dnscepat.id/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAARZXJvcGEuZG5zY2VwYXQuaWQKL2Rucy1xdWVyeQ) |
-
-
 ### 360 Secure DNS
 
 **360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
