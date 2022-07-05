@@ -333,6 +333,8 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4      | `84.200.69.80` and `84.200.70.40`                  | [Add to AdGuard](sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA) |
 | DNS, IPv6      | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b`            | [Add to AdGuard](sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0) |
 
+### FutureDNS
+
 [FutureDNS](https://futuredns.me/) is a privacy friendly DNS service that blocks ads, trackers, malware and that does not log any data.
 
 |Anycast Network | Address                    |                                                        |
