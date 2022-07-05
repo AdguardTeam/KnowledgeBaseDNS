@@ -337,7 +337,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 |Anycast Network | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
-| DNS-over-HTTPS | `https://dns.futuredns.me` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQA)
+| DNS-over-HTTPS | `https://dns.futuredns.me/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQovZG5zLXF1ZXJ5)
 | DNS-over-TLS   | `tls://dns.futuredns.me` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)
 | DNS-over-QUIC  | `quic://dns.futuredns.me` | [Add to AdGuard](sdns://BAcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)
 
