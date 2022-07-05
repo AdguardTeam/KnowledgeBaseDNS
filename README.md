@@ -27,19 +27,19 @@ Then you should open Terminal on your computer and navigate to the directory whe
 
 - `yarn install`
 
-### How to run it locally
+### Run it locally
 
 - `yarn start`
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## How to build it
+## How to build
 
 - `yarn build`
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Localization
+## How to translate
 
 Translations are not pushed to the repo and prepared on-the-fly (`i18n` folder is added to `.gitignore`).
 
@@ -47,3 +47,40 @@ Here's how you can debug translations locally.
 
 1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
 2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
+
+## How to generate DNS stamps
+
+### For DNS-over-HTTPS
+
+1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
+2. Choose DNS-over-HTTPS from the drop-down menu
+3. Fill out the Host name and Path fields of the form
+4. Copy the ready DNS stamp from the Stamp field
+
+### For DNS-over-TLS
+
+1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
+2. Choose DNS-over-TLS from the drop-down menu
+3. Fill out the Host name field 
+4. Copy the ready DNS stamp from the Stamp field
+
+### For DNS-over-QUIC
+
+1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
+2. Choose DNS-over-QUIC from the drop-down menu
+3. Fill out the Host name field
+4. Copy the ready DNS stamp from the Stamp field
+
+### For Plain DNS
+
+1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
+2. Choose Plain DNS from the drop-down menu
+3. Fill out the IP address field
+4. Copy the ready DNS stamp from the Stamp field
+
+If you'd like to update the list of [known DNS Providers](https://adguard-dns.io/kb/general/dns-providers/), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
+
+## How to check DNS stamps
+
+1. Install dnslookup using [Homebrew](https://brew.sh/) or [from source](https://github.com/ameshkov/dnslookup)
+2. Run a command. Examples of commands for different protocols are given [on this page](https://github.com/ameshkov/dnslookup)
