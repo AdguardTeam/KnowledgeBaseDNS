@@ -33,7 +33,7 @@ Then you should open Terminal on your computer and navigate to the directory whe
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## How to build it
+## How to build
 
 - `yarn build`
 
@@ -54,7 +54,7 @@ Here's how you can debug translations locally.
 
 1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
 2. Choose DNS-over-HTTPS from the drop-down menu
-3. Fill out the following fields of the form: Host name and Path
+3. Fill out the Host name and Path fields of the form
 4. Copy the ready DNS stamp from the Stamp field
 
 ### For DNS-over-TLS
@@ -77,6 +77,8 @@ Here's how you can debug translations locally.
 2. Choose Plain DNS from the drop-down menu
 3. Fill out the IP address field
 4. Copy the ready DNS stamp from the Stamp field
+
+If you'd like to update the list of [known DNS Providers](https://adguard-dns.io/kb/general/dns-providers/), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
 
 ### How to check DNS stamps
 
