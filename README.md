@@ -50,7 +50,7 @@ Here's how you can debug translations locally.
 
 ## How to generate DNS stamps
 
-If you'd like to update the list of [known DNS Providers](https://adguard-dns.io/kb/general/dns-providers/), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
+If you'd like to update the list of [known DNS Providers](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/docs/general/dns-providers.md), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
 
 ### For DNS-over-HTTPS
 
