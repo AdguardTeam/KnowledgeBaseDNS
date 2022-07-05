@@ -48,9 +48,9 @@ Here's how you can debug translations locally.
 1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
 2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
 
-If you'd like to update the list of [known DNS Providers](https://adguard-dns.io/kb/general/dns-providers/), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
-
 ## How to generate DNS stamps
+
+If you'd like to update the list of [known DNS Providers](https://adguard-dns.io/kb/general/dns-providers/), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
 
 ### For DNS-over-HTTPS
 
