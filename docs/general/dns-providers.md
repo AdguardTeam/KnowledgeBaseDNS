@@ -333,6 +333,29 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4      | `84.200.69.80` and `84.200.70.40`                  | [Add to AdGuard](sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA) |
 | DNS, IPv6      | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b`            | [Add to AdGuard](sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.me/) is a privacy friendly DNS service that blocks ads, trackers, malware and that does not log any data.
+
+|Anycast Network | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS-over-HTTPS | `https://dns.futuredns.me/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQovZG5zLXF1ZXJ5)
+| DNS-over-TLS   | `tls://dns.futuredns.me` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)
+| DNS-over-QUIC  | `quic://dns.futuredns.me` | [Add to AdGuard](sdns://BAcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)
+
+| Location       | Address - IPv4                                                      |
+|----------------|----------------------------------------------------|----------------|
+| London, UK     | `52.56.224.201`| [Add to AdGuard](sdns://AAcAAAAAAAAADTUyLjU2LjIyNC4yMDE)|
+| Milan, Italy   | `15.161.11.3`| [Add to AdGuard](sdns://AAcAAAAAAAAACzE1LjE2MS4xMS4z)|
+| Stockholm, Sweden| `13.49.168.178`| [Add to AdGuard](sdns://AAcAAAAAAAAADTEzLjQ5LjE2OC4xNzg)|
+| Ashburn, USA   | `52.0.69.145`| [Add to AdGuard](sdns://AAcAAAAAAAAACzUyLjAuNjkuMTQ1)|
+| San Francisco, USA| `13.56.204.161`| [Add to AdGuard](sdns://AAcAAAAAAAAADTEzLjU2LjIwNC4xNjE)|
+| Montreal, Canada| `3.97.137.100`| [Add to AdGuard](sdns://AAcAAAAAAAAADDMuOTcuMTM3LjEwMA)|
+| Singapore      | `54.254.82.60`| [Add to AdGuard](sdns://AAcAAAAAAAAADDU0LjI1NC44Mi42MA)|
+| Tokyo, Japan   | `54.199.94.55`| [Add to AdGuard](sdns://AAcAAAAAAAAADDU0LjE5OS45NC41NQ)|
+| Mumbai, India  | `3.7.162.217`| [Add to AdGuard](sdns://AAcAAAAAAAAACzMuNy4xNjIuMjE3)|
+| São Paulo, Brazil| `177.71.191.153`| [Add to AdGuard](sdns://AAcAAAAAAAAADjE3Ny43MS4xOTEuMTUz)|
+
 ### SkyDNS RU
 
 [SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.
