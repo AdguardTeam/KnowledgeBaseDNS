@@ -5,56 +5,56 @@ sidebar_position: 1
 
 # How to flush DNS cache
 
-## What is DNS cache?
+## DNS 캐시란 무엇입니까?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS 캐시는 방문 사이트의 IP 주소를 로컬 컴퓨터에 저장하여 다음에 접속할 때, 더 빨리 로드할 수 있도록 합니다. 긴 DNS 조회를 수행하는 대신 시스템은 임시 DNS 캐시의 DNS 레코드를 사용하여 쿼리에 응답합니다.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS 캐시에는 다음과 같은 이른바 [리소스 레코드(RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records)가 포함되어 있습니다.
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
+* **리소스 데이터(또는 rdata)**;
+* **레코드 유형**;
+* **레코드 이름**;
+* **TTL(수명)**;
 * **Class**;
-* **Resource data length**.
+* **리소스 데이터 길이**
 
-## When you might need to clear the cache
+## 캐시를 지워야 하는 경우
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**정기적으로 404 오류가 발생될 때.** 예를 들어, 웹사이트가 다른 서버로 이전되고 해당 IP 주소가 변경되었을 때. 브라우저가 새 IP 주소에서 웹 사이트를 열도록 하려면 DNS 캐시에서 캐시된 IP를 제거해야 합니다.
 
-**You want to improve your privacy.**
+**개인 정보를 안전하게 개선하고 싶을 때**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
+**당신은 해커의 공격과 바이러스로부터 안전하기를 원할 것입니다.** DNS 캐시가 손상되면 브라우저가 공격자가 컴퓨터의 DNS 레코드에 삽입한 악성 웹사이트의 IP 주소로 리디렉션 할 수 있습니다.
 
-## How to flush DNS cache on different OSs
+## 다른 OS에서 DNS 캐시를 삭제하는 방법
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+macOS에서 DNS 캐시를 지우려면 *터미널을 * 열고 (스포트라이트 검색을 사용하여 찾을 수 있습니다. 명령 + 스페이스 바를 누르고 터미널 입력하십시오) 다음 명령을 입력하십시오.
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+macOS Big Sur 11.2.0 및 macOS Monterey 12.0.0에서는 다음 명령을 사용할 수도 있습니다.
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+그런 다음 관리자 암호를 입력하여 프로세스를 완료하십시오.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Windows 장치에서 DNS 캐시를 삭제하려면 다음을 수행하십시오.
 
-Load the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+명령 프롬프트를 관리자 권한으로 실행합니다. 시작 메뉴에서 *명령 프롬프트* 또는 *cmd*를 입력하여 찾을 수 있습니다. 그런 다음 `ipconfig/flushdns` 를 입력하고 Enter 키를 누릅니다.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+*DNS 클라이언트 캐시가 성공적으로 삭제되었습니다.* 라는 줄이 표시됩니다. 끝!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux에는 OS에서 Systemd Resolved, DNSMasq, BIND 또는 Nscd와 같은 캐싱 서비스가 설치되어 실행되지 않는 한 DNS 캐싱이 없습니다. DNS 캐시를 지우는 프로세스는 Linux 배포와 사용된 cache 서비스에 따라 다릅니다.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+각 배포판에서 터미널 창을 실행해야 합니다. 키보드에서 Ctrl+Alt+T를 누르고 해당 명령을 사용하여 Linux 시스템이 실행 중인 서비스의 DNS 캐시를 삭제합니다.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+사용 중인 DNS 클라이언트를 찾으려면 `sudo lsof -i :53 -S`명령을 실행합니다.
 
 #### Systemd Resolved
 

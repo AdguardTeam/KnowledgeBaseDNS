@@ -1,29 +1,29 @@
 ---
-title: 'Updating the Knowledge Base'
+title: '更新知识库'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+本知识库的目标是为每个人提供有关各种AdGuard DNS相关主题的最新信息。 但是事情在不断变化，有时一篇文章不再反映事物的当前状态——我们中没有那么多人关注每一个信息并在新版本发布时相应地更新它。
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+这就是为什么我们将所有 知识库 内容放在 [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS)上，现在任何人都可以通过建议对现有文章以及全新文章进行编辑和翻译来为它做出贡献。
 
-## How to suggest a change or write a new article {#suggest-change}
+## 如何提出更改建议或撰写新文章 {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+您可以使用上述 GitHub 的功能建议对当前文章进行更改并将新文章添加到知识库。 如果您不熟悉使用该平台的使用方法，请先阅读本节中的 [文档](https://docs.github.com/en)。
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+准备就绪后，在[DNS存储库](https://github.com/AdguardTeam/KnowledgeBaseDNS)处理。 我们知识库中的所有文本都是用 `Markdown` 标记语言编写的。 在编辑或撰写文章时，请牢记这一点。 按照 [这个链接](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 了解更多关于Markdown 语法的信息。
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+知识库网站是用 Docusaurus 2 建立的，这是一个现代静态网站生成器。 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 你可以在 [此链接获得指南](https://docusaurus.io/docs/category/guides)了解它们。
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) on this Knowledge Base's GitHub page.
+你可以把这个知识库部署在你的电脑上，以概述你建议的变化。 有关执行此操作的详细说明，可以在此知识库的 GitHub 页面上的 [ README.md 文件 ](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md)中找到。
 
-## Translating articles {#translate-adguard}
+## 翻译文章 {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+知识库现有文章的翻译是在 [Crowdin平台](https://crowdin.com/project/adguard-knowledge-bases)上进行的。 有关翻译和使用 Crowdin 的所有详细信息，都可以在 [AdGuard 广告拦截器知识库的专用文章](https://kb.adguard.com/en/general/adguard-translations) 中找到。
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
+在撰写AdGuard DNS知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 [在另一篇文章中](https://kb.adguard.com/en/miscellaneous/plurals)，我们详细描述了翻译具有复数形式的字符串时可能出现的困难，并就如何在Crowdin平台上处理这些问题给出了大量说明。
 
-## Working on open issues
+## 致力于解决开放性问题
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+有时存在与更新知识库相关的 [未完成任务](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/)。 你可以帮助我们以加速完成 [就像](#suggest-change) 你对这个知识库提出任何其他修改建议一样。 选择您认为有吸引力的任何问题并开始处理它。 如果您有任何问题 - 您可以在对该问题的评论中直接提问。
   

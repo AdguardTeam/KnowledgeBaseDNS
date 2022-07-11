@@ -1,109 +1,109 @@
 ---
-title: How to flush DNS cache
+title: 如何刷新DNS缓存
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+# 如何刷新DNS缓存
 
-## What is DNS cache?
+## DNS缓存是什么？
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。 系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS 缓存包含所谓的[资源记录](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records)，他们是：
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
-* **Class**;
-* **Resource data length**.
+* **资源数据(或 rdata)**
+* **记录类型**
+* **记录名字**
+* **TTL**
+* **Class**
+* **资源数据长度**
 
-## When you might need to clear the cache
+## 当您可能需要清除缓存时
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**你经常会得到一个404的错误。**例如，该网站被转移到另一台服务器，其 IP 地址发生了变化。 要使浏览器从新的 IP 地址打开网站，您需要从 DNS 缓存中删除已经缓存的 IP。
 
-**You want to improve your privacy.**
+**你想改善你的隐私。**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
+**你想保护自己免受黑客攻击和电脑病毒的影响。**当 DNS 缓存损坏时，浏览器可能会将您重定向到攻击者插入您计算机的 DNS 记录中的恶意网站的 IP 地址。
 
-## How to flush DNS cache on different OSs
+## 如何在不同的操作系统上刷新 DNS 缓存
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+要清除 macOS 上的 DNS 缓存，请打开终端（您可以使用 Spotlight 搜索找到它 - 然后，请按 Command+Space 并输入 *Terminal*）并输入以下命令：
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+在 macOS Big Sur 11.2.0 和 macOS Monterey 12.0.0 上，您还可以使用以下命令：
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+之后，输入您的管理员密码以完成该过程。
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+要刷新 Windows 设备上的 DNS 缓存，请执行以下操作：
 
-Load the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+以管理员身份加载命令提示符。 你可以通过输入 *command prompt* 或 *cmd*在开始菜单中找到它。 然后输入 `ipconfig/flushdns` 并按回车键。
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+你会看到这样一行： *成功刷新了DNS解析器缓存*。 完成!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux 没有操作系统级别的 DNS 缓存，除非安装并运行了 Systemd Resolved、DNSMasq、BIND 或 Nscd 等缓存服务。 清除 DNS 缓存的过程取决于 Linux 发行版和使用的缓存服务。
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+对于每个发行版，您需要启动一个终端窗口。 按键盘上的 Ctrl+Alt+T 并使用相应的命令清除 Linux 系统正在运行的服务的 DNS 缓存。
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+要找出您正在使用的 DNS 解析器，请使用命令 `sudo lsof -i :53 -S`。
 
 #### Systemd Resolved
 
-To clear the **Systemd Resolved** DNS cache, type:
+要清除 **Systemd Resolved** DNS缓存，请输入：
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+成功后，该命令不会返回任何消息。
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+要清除 **DNSMasq** 缓存，您需要重新启动它：
 
 `sudo service dnsmasq restart`
 
 #### Nscd
 
-To clear the **Nscd** cache, you also need to restart the service:
+要清除 **Nscd** 缓存，您还需要重新启动服务：
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+要刷新 **BIND** DNS 缓存，请运行以下命令：
 
 `rndc flush`
 
-Then you will need to reload BIND:
+然后你需要重新加载 BIND：
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+您将收到服务器已成功重新加载的消息。
 
-### Android
+### Android（安卓）
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+清除 Android 设备上的 DNS 缓存的最简单方法是打开和关闭飞行模式。 您可以在“快速设置”窗格中 启用/禁用 飞行模式。
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+硬重启还可以帮助刷新设备的 DNS 缓存。 为了做到这一点，按住电源按钮至少20秒。 它（通常）会强制您的设备手动重启，并且 DNS 缓存将被清除。
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+另一种选择是在“设置”应用中重置设备的网络设置。 打开 *设置 > 系统 > 高级 > 重置选项 > 重置网络设置* 并点击 *重置设置* 进行确认。
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+有多种方法可以清除 iPad 或 iPhone 上的 DNS 缓存。
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+最简单的方法是激活飞行模式（例如，在控制中心或设置应用程序中）并再次将其停用。 DNS 缓存将被刷新。
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap on *Reset Network Settings*.
+另一种选择是在“设置”应用中重置设备的网络设置。 打开 *常规*，向下滚动，找到 *重置* 然后点击 *重置网络设置*。
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
