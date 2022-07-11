@@ -962,13 +962,6 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 | DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAASZG9oLmNoaS5haGFkbnMubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS | `tls://dot.chi.ahadns.net` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASZG90LmNoaS5haGFkbnMubmV0) |
 
-#### Australia
-
-| Protocol       | Address                             |                |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.au.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLmF1LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS | `tls://dot.au.ahadns.net` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90LmF1LmFoYWRucy5uZXQ) |
-
 ### Seby DNS
 
 [Seby DNS](https://dns.seby.io/) is a privacy focused DNS service provided by Sebastian Schmidt. No Logging, DNSSEC validation.
