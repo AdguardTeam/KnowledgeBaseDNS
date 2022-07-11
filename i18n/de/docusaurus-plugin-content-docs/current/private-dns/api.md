@@ -15,9 +15,8 @@ Make a POST request for the following URL with the given params to generate the 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|              |                                                                  |
-| ------------ | ---------------------------------------------------------------- |
 | Parameter    | Description                                                      |
+|:------------ |:---------------------------------------------------------------- |
 | **username** | Account email                                                    |
 | **password** | Account password                                                 |
 | mfa_token    | Two-Factor authentication token (if enabled in account settings) |
@@ -57,9 +56,8 @@ Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|                   |                                                                     |
-| ----------------- | ------------------------------------------------------------------- |
 | Parameter         | Description                                                         |
+|:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
 #### Example request
@@ -93,10 +91,8 @@ To revoke a refresh token, make the following POST request with the given params
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-
-|                   |                                        |
-| ----------------- | -------------------------------------- |
 | Parameter         | Description                            |
+|:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
 ### Accessing API

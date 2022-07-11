@@ -14,7 +14,7 @@ sidebar_position: 5
 * QUIC-Go-модуль от Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Программа Staticcheck от Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
 
-## AdGuard API and Websites
+## AdGuard API и веб-сайты
 
 * Symfony: [http://symfony.com/](http://symfony.com/)
 * React: [https://reactjs.org/](https://reactjs.org/)

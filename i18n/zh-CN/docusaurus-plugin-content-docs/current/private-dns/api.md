@@ -15,12 +15,11 @@ AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|           |                        |
-| --------- | ---------------------- |
-| 范围        | 描述                     |
-| **用户名**   | 账号邮箱                   |
-| **密码**    | 账号密码                   |
-| mfa_token | 双重身份验证令牌（需要提前在账户设置中启用） |
+| Parameter    | Description                                                      |
+|:------------ |:---------------------------------------------------------------- |
+| **username** | Account email                                                    |
+| **password** | Account password                                                 |
+| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
 
 在响应中，您将同时获得 `access_token` 和 `refresh_token`。
 
@@ -57,10 +56,9 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-|                   |                                |
-| ----------------- | ------------------------------ |
-| 范围                | 描述                             |
-| **refresh_token** | 必须使用`REFRESH TOKEN` 来生成新的访问令牌。 |
+| Parameter         | Description                                                         |
+|:----------------- |:------------------------------------------------------------------- |
+| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
 #### 示例请求
 
@@ -93,11 +91,9 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-
-|                   |                      |
-| ----------------- | -------------------- |
-| 范围                | 描述                   |
-| **refresh_token** | 等待撤销的`REFRESH TOKEN` |
+| Parameter         | Description                            |
+|:----------------- |:-------------------------------------- |
+| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
 ### 访问API
 

@@ -14,7 +14,7 @@ Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores do sof
 * Módulo QUIC-Go por Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Programa Staticcheck por Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
 
-## AdGuard API and Websites
+## API e sites do AdGuard
 
 * Symfony: [http://symfony.com/](http://symfony.com/)
 * React: [https://reactjs.org/](https://reactjs.org/)

@@ -1,20 +1,20 @@
 ---
-title: Credits and Acknowledgements
+title: 크레딧 및 감사
 sidebar_position: 5
 ---
 
-Our dev team would like to thank the developers of the third-party software we use in AdGuard DNS, our great beta testers and other engaged users, whose help in finding and eliminating all the bugs, translating AdGuard DNS, and moderating our communities is priceless.
+우리 개발팀은 AdGuard DNS에서 사용하는 타사 소프트웨어 개발자, 훌륭한 베타 테스터 및 기타 참여 사용자에게 감사의 말을 전합니다. 모든 버그를 찾아 제거하고 AdGuard DNS를 번역하고 커뮤니티를 조정하는데 도움을 준 귀중한 도움을 주신 분들께 감사드립니다.
 
 ## AdGuard DNS
 
-* DNS module by Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
-* GCache module by Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Go-Cache module by  Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
-* Gofumpt program by Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
-* QUIC-Go module by Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
-* Staticcheck program by Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
+* Miek Gieben의 DNS 모듈: [https://github.com/miekg/dns](https://github.com/miekg/dns)
+* Jun Kimura의 GCache 모듈: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
+* Patrick Mylund Nielsen의 Go-Cache 모듈: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Daniel Martí의 Gofumpt 프로그램: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
+* Lucas Clemente의 QUIC-Go 모듈: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
+* Dominik Honnef의 Staticcheck 프로그램: [https://staticcheck.io](https://staticcheck.io/)
 
-## AdGuard API and Websites
+## AdGuard API 및 웹사이트
 
 * Symfony: [http://symfony.com/](http://symfony.com/)
 * React: [https://reactjs.org/](https://reactjs.org/)

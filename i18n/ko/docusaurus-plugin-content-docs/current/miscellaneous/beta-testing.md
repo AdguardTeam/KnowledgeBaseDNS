@@ -1,25 +1,26 @@
 ---
-title: 'Private AdGuard DNS beta test'
+title: '비공개 AdGuard DNS 베타 테스트'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Private AdGuard DNS는 최신 AdGuard 제품이지만 어떤 면에서는 [AdGuard Home](https://kb.adguard.com/en/home/overview)연장선 입니다. 새 버전이 나올 때마다 저희는 Private AdGuard DNS를 개선하기 위해 노력하고 있습니다. 그리고 완벽하게 해내기 위해서는 베타 테스터의 도움이 절실하게 필요합니다. 우리 팀에 합류하세요!
 
-## How to become a beta tester
+## 베타 테스터가 되는 방법
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Pivate AdGuard DNS, use the service and send us reports on how it works.
+Private AdGuard DNS [의 베타 테스터가 되려면 AdGuard DNS 웹사이트](https://adguard-dns.io/en/welcome.html)로 이동하여 오른쪽 상단의 '베타 참여' 버튼을 클릭하고 소셜 미디어 또는 기존 AdGuard 계정을 통해 로그인합니다. 이제 Pivate AdGuard DNS를 설정하고 서비스를 사용하며 작동 방식에 대한 보고서를 보낼 수 있습니다.
 
-## How to report a bug
+## 버그를 신고하는 방법
 
-Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
+당신이 버그를 발견했다고 생각해 봅니다. 혹시 개발자와 제안을 공유하고 싶으신가요? 어쨌든, 우리에게 제보할 수 있는 몇 가지 방법이 있습니다:
 
-* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* [forum.adguard.com](https://forum.adguard.com) 으로 이동하여 포럼</a>의 '베타 테스트' 카테고리
+에 새 스레드를 게시하거나 기존 스레드를 찾습니다. 먼저 [포럼 규칙](https://forum.adguard.com/index.php?threads/14859/) 을 읽으십시오.</p></li> 
+  
+  * [AdGuard DNS 저장소로](https://github.com/AdguardTeam/AdGuardDNS) 이동하여 새 문제를 등록하고 버그/기능 요청을 자세히 설명합니다.</ul> 
 
-* Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
+위의 방법이 가장 선호되지만 필요한 경우 다른 방법을 사용할 수 있습니다.
 
-The above methods are the most preferred, but you can use others if necessary:
+* [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/)등과 같은 다양한 소셜 미디어 플랫폼에서 저희를 찾아주세요. 그러나 이것은 기술적인 문제를 논의하기 위해서 가장 효과적인 방법은 아닙니다.
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most efficient way to discuss technical matters.
-
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* 앱의 지원 탭에서 지원팀에 이메일을 보내거나 [support@adguard.com](mailto:support@adguard.com)로 직접 이메일을 보내주세요.
 

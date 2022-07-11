@@ -16,7 +16,7 @@ DNS代表“域名系统”，它的作用是将网站的名称转换为IP 地�
 
 ## 为什么要使用DNS进行内容拦截
 
-如今的一切都连接到互联网，从电视到智能电灯，从移动设备到智能汽车。 然而哪里有互联网，哪里就有广告和跟踪器。 在这种情况下，一个基于浏览器的广告拦截器看起来不够。 为了获得更好的保护，同时使用DNS，VPN和广告拦截器。
+如今的一切都连接到互联网，从电视到智能电灯，从移动设备到智能汽车。 然而哪里有互联网，哪里就有广告和跟踪器。 在这种情况下，一个基于浏览器的广告拦截器看起来不够。 为了获得更好地保护，同时使用DNS，VPN和广告拦截器。
 
 使用DNS进行内容拦截既有优点，也有明显的不足。 一方面，DNS没有盲点，因为它监视所有的设备，而不只是浏览器。 但是，在另一方面，单独的DNS拦截不能提供外观过滤。
 
@@ -34,7 +34,7 @@ AdGuard DNS主要有两种形式：[公共AdGuard DNS](public-dns/overview.md)�
 
 ## AdGuard产品中的DNS过滤模块
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — public or private.
+所有主要的AdGuard产品，包括AdGuard VPN，都有一个DNS过滤模块，您可以通过信任的提供商选择DNS服务器。 当然，AdGuard DNS Default、AdGuard DNS Non filtering和AdGuard DNS Family Protection都在列表中。 另外，AdGuard应用程序允许用户[轻松配置和使用Adguard DNS](https://adguard-dns.io/en/public-dns.html)–公共或私人。
 
 
 

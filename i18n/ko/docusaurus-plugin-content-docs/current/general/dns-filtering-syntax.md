@@ -1,21 +1,21 @@
 ---
-title: DNS filtering rules syntax
+title: DNS 필터링 규칙 구문
 sidebar_position: 2
 ---
 
-## Introduction
+## 소개
 
-You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
+여러분은 AdGuard DNS 필터링 구문을 이용해 필터를 보다 유연하게 적용하여 여러분이 원하는 컨텐츠를 막도록 설정할 수 있습니다. AdGuard DNS 필터링 규칙 구문은 AdGuard Home, AdGuard DNS, Windows/Mac/Android용 AdGuard와 같은 다양한 AdGuard 제품에서 사용할 수 있습니다.
 
-There are three different approaches to writing hosts blocklists:
+호스트 차단 목록을 작성하는 방법은 다음의 세가지가 있습니다.
 
-* [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. This way blocklists are compatible with browser ad blockers.
+* [Adblock-스타일 구문](#adblock-style-syntax): 보편적인 Adblock 스타일 필터링 규칙의 문법을 사용하여 작성하는 현대적인 접근법. 이 방식으로 작성된 규칙들은 브라우저 광고 차단 확장 프로그램들과 호환이 가능합니다.
 
-* [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that uses the same syntax that operating systems do for their hosts files.
+* [`/etc/hosts` 구문](#etc-hosts-syntax): 운영체제가 호스트 파일에 사용하는 것과 동일한 문법을 사용하는 검증된 작성법입니다.
 
-* [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
+* [도메인 전용 구문](#domains-only-syntax): 도메인 이름만을 이용하는 간단한 목록입니다.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
+차단 목록을 만드는 경우 [Adblock 스타일 구문](#adblock-style-syntax)을 사용하는 것이 좋습니다. 이전 스타일의 구문에 비해 몇 가지 중요한 이점이 있습니다.
 
 * **Blocklists size.** Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
 
@@ -25,7 +25,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax](#
 
 If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
-## Basic Examples
+## 기본 예제
 
 * `||example.org^`: block access to the `example.org` domain and all its subdomains, like `www.example.org`.
 
@@ -48,7 +48,7 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
 
 * `/REGEX/`: block access to the domains matching the specified regular expression.
 
-## Adblock-Style Syntax
+## Adblock 스타일 구문
 
 This is a subset of the [traditional Adblock-style][adb] syntax which is used by browser ad blockers.
 
@@ -63,7 +63,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * `modifiers`: parameters that clarify the rule. They may limit the scope of the rule or even completely change the way it works.
 
-### Special Characters
+### 특수 문자
 
 * `*`: the wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
 

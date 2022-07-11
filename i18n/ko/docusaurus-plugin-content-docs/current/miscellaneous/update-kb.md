@@ -1,29 +1,29 @@
 ---
-title: 'Updating the Knowledge Base'
+title: '기술 자료 업데이트'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+이 기술 자료의 목표는 모든 종류의 AdGuard DNS 관련 주제에 대한 최신 정보를 모든 사용자에게 제공하는 것입니다. 그러나 상황은 끊임없이 변하고 때로는 기사가 현재 상태를 반영하지 않을 수도 있습니다. - 새로운 버전이 출시 될 때 모든 정보를 주시하고 그에 따라 업데이트 할 수 있는 사람은 많지 않습니다.
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+이것이 우리가 모든 KB 콘텐츠를 GitHub [](https://github.com/AdguardTeam/KnowledgeBaseDNS)배치한 이유이며,  말 그대로 누구나 기존 번역과 완전히 새로운 번역에 대한 편집을 제안함으로써 기여할 수 있습니다.
 
-## How to suggest a change or write a new article {#suggest-change}
+## 변경 사항을 제안하거나 새 문서를 작성하는 방법 {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+위에서 언급한 GitHub의 기능을 사용하여 현재 문서에 대한 변경 내용을 제안하고 기술 자료에 새 문서를 추가할 수 있습니다. 플랫폼 작업 원칙에 익숙하지 않은 경우 이 섹션의 [설명서를 읽는 것으로 시작하십시오.](https://docs.github.com/en).
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+시작할 준비가 되면 [KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS)에서 작업하십시오. 기술 자료의 모든 텍스트는 `Markdown` 마크업 언어로 작성되었습니다. 문서를 편집하거나 작성할 때 이것을 명심하십시오. [이 링크](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 따라 Markdown 구문에 대해 자세히 알아보세요.
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+기술 자료 웹 사이트는 최신 웹 사이트 생성기인 Docusaurus 2를 사용하여 제작되었습니다. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. [이 링크를 통해 사용할 수 있는 가이드](https://docusaurus.io/docs/category/guides)에서 이에 대해 읽을 수 있습니다.
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) on this Knowledge Base's GitHub page.
+이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 지침은 [파일 README.md 이 기술 자료의 GitHub 페이지에](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) 있습니다.
 
-## Translating articles {#translate-adguard}
+## 기사 번역 {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+기술 자료의 기존 기사 번역은 [Crowdin 플랫폼](https://crowdin.com/project/adguard-knowledge-bases)에서 수행됩니다. 번역 및 Crowdin 작업에 대한 자세한 내용은 AdGuard Ad 차단 기술 자료의 [전용 문서에서](https://kb.adguard.com/en/general/adguard-translations) 찾을 수 있습니다.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
+AdGuard DNS 기술 자료 문서에서 작업할 때 추가로 주의를 기울여 번역해야 하는 복수 양식이 포함된 문자열을 만날 수 있습니다. [별도의 기사](https://kb.adguard.com/en/miscellaneous/plurals)에서 문자열을 복수형으로 번역할 때 발생할 수 있는 어려움에 대해 자세히 설명하고 Crowdin 플랫폼에서 문자열을 사용하는 방법에 대한 광범위한 지침을 제공했습니다.
 
-## Working on open issues
+## 미해결 문제에 대한 작업
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+기술 자료 업데이트와 관련된 [열린 작업이](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) 있는 경우가 있습니다. 이 기술 자료에 대한 다른 [ 변경 사항을 제안하는 방식으로](#suggest-change) 완료 속도를 높일 수 있습니다. 매력적이라고 생각되는 문제를 선택하고 작업을 시작하세요. 질문이 있는 경우 해당 문제에 대한 의견에서 바로 질문할 수 있습니다.
   
