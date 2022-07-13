@@ -335,7 +335,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.me/) is a privacy friendly DNS service that blocks ads, trackers, malware and that does not log any data.
+[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
 
 | Anycast Network | Адрес                                |                                                                                   |
 | --------------- | ------------------------------------ | --------------------------------------------------------------------------------- |
