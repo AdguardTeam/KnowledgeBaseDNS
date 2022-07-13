@@ -335,7 +335,7 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.me/) is a privacy friendly DNS service that blocks ads, trackers, malware and that does not log any data.
+[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
 
 | Anycast Network | 地址                                   |                                                                           |
 | --------------- | ------------------------------------ | ------------------------------------------------------------------------- |
