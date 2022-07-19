@@ -119,3 +119,17 @@ html[data-theme='dark'] .pagination-nav__link:focus {
 html[lang='ko'] .navbar__search {
   display: none;
 }
+
+@media (max-width: 996px) {
+  .navbar__items [class*='searchBox'] {
+    top: 6px;
+    right: 7px;
+  }
+}
+
+@media (min-width: 997px) {
+  .navbar__items [class*='searchBox'] {
+    margin-left: 6px;
+    padding: 0;
+  }
+}
