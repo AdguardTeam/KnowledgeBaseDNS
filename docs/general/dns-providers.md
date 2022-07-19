@@ -632,8 +632,8 @@ These servers block adult websites and inappropriate contents.
 
 #### Singapore DNS Server
 
-| Protocol       | Address                             | Location      |                |
-|----------------|-------------------------------------|---------------|----------------|
+| Protocol       | Address                             | Location      |
+|----------------|-------------------------------------|---------------|
 | DNS, IPv4      | `174.138.21.128` | [Add to AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4) |       
 | DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`   | [Add to AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`| [Add to AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA) |
