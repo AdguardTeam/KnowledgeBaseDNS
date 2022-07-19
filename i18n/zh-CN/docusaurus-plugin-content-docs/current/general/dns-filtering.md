@@ -25,7 +25,7 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 ### DNS 服务器
 
-一共有数千个 DNS 服务器可选。它们的属性与用途都是独一无二的。 大部分 DNS 服务器只能返回被请求网域的 IP 地址，但也有些 DNS 服务器具有一些额外功能。比如，它们能屏蔽广告、跟踪器、带有成人内容的网站等等。 当今大部分主流 DNS 服务器都应用一个或更多可靠的加密协议，比如：DNS-over-HTTPS、DNS-over-TLS。 AdGuard 还提供[DNS 服务](https://adguard-dns.io/en/welcome.html)，它是世界上第一个提供非常新的和有前途的[DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) 安全协议的公司。 AdGuard 为不同目的提供不同的服务器。 下面的图标展示 AdGuard 拦截服务器的工作原理：
+一共有数千个 DNS 服务器可选。它们的属性与用途都是独一无二的。 大部分 DNS 服务器只能返回被请求网域的 IP 地址，但也有些 DNS 服务器具有一些额外功能。比如，它们能屏蔽广告、跟踪器、带有成人内容的网站等等。 当今大部分主流 DNS 服务器都应用一个或更多可靠的加密协议，比如：DNS-over-HTTPS、DNS-over-TLS。 AdGuard 还提供 [DNS 服务](https://adguard-dns.io/en/welcome.html)，它是世界上第一个提供非常新的和有前途的 [DNS-over-QUIC](https://adguard.com/en/blog/dns-over-quic.html) 安全协议的公司。 AdGuard 为不同目的提供不同的服务器。 下面的图标展示 AdGuard 拦截服务器的工作原理：
 
 ![AdGuard DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 

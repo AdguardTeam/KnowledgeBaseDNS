@@ -34,7 +34,7 @@ Apesar de tantas semelhanças, o AdGuard DNS privado e o AdGuard DNS público s�
 
 ## Módulo de filtragem de DNS em produtos AdGuard
 
-Todos os principais produtos AdGuard, incluindo AdGuard VPN, têm um módulo de filtragem de DNS **** onde você pode selecionar um servidor DNS de um provedor de sua confiança. Obviamente, AdGuard DNS Default, AdGuard DNS Non-filtering e AdGuard DNS Family Protection estão na lista. Além disso, os aplicativos AdGuard permitem que os usuários [configurem e usem facilmente o AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — público ou privado.
+Todos os principais produtos AdGuard, incluindo AdGuard VPN, têm um **módulo de filtragem de DNS** onde você pode selecionar um servidor DNS de um provedor de sua confiança. Obviamente, AdGuard DNS Default, AdGuard DNS Non-filtering e AdGuard DNS Family Protection estão na lista. Além disso, os aplicativos AdGuard permitem que os usuários [configurem e usem facilmente o AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — público ou privado.
 
 
 

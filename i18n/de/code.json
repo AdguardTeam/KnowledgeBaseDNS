@@ -4,7 +4,7 @@
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "Wir konnten nichts finden was mit deiner Suche übereinstimmt.",
+    "message": "Wir konnten nicht finden, wonach Sie gesucht haben.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
@@ -28,7 +28,7 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} Minuten zum Lesen des Beitrages",
+    "message": "Eine Minute lesen|{readingTime} Minuten lesen",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
@@ -52,7 +52,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Aktuelle Blog Post Navigation",
+    "message": "Navigation zu den letzten Blog-Beiträgen",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
@@ -60,15 +60,15 @@
     "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} Beiträge",
+    "message": "Ein Beitrag|{count} Beiträge",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} markiert mit \"{tagName}\"",
+    "message": "{nPosts} markiert mit „{tagName}”",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Zeige alle Tags an",
+    "message": "Alle Tags anzeigen",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
@@ -92,7 +92,7 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs Seitennavigation",
+    "message": "Navigation der Dokumentseiten",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -100,7 +100,7 @@
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Nächste",
+    "message": "Weiter",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -112,11 +112,11 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Dies ist eine unveröffentlichte Dokumentation für {siteTitle} in der Version {versionLabel}.",
+    "message": "Dies ist eine unveröffentlichte Dokumentation für die Version {versionLabel} von  {siteTitle}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Dies ist die Dokumentation für {siteTitle} mit der Version {versionLabel}, die nicht mehr aktiv unterstützt wird.",
+    "message": "Dies ist die Dokumentation für {siteTitle} {versionLabel}, die nicht mehr aktiv unterstützt wird.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -128,7 +128,7 @@
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Bearbeite diese Seite",
+    "message": "Diese Seite bearbeiten",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
@@ -140,7 +140,7 @@
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " durch {user}",
+    "message": " von {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
@@ -160,7 +160,7 @@
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Diese Seite reagiert nicht mehr.",
+    "message": "Diese Seite ist abgestürzt.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
@@ -180,7 +180,7 @@
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Erfahre mehr über {title}",
+    "message": "Lesen Sie mehr über {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.colorToggle.ariaLabel": {
@@ -188,11 +188,11 @@
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "Dark Mode",
+    "message": "Dunkelmodus",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "Light Mode",
+    "message": "Lichtmodus",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.home": {
@@ -200,19 +200,19 @@
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Brodkrümel",
+    "message": "Brotkrümelnavigation",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} Items",
+    "message": "{count} Artikel",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} getaggte Dokumente",
+    "message": "Ein Dokument markiert|{count} Dokumente markiert",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} mit \"{tagName}\"",
+    "message": "{nDocsTagged} mit „{tagName}“",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
@@ -235,7 +235,7 @@
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.IdealImageMessage.loading": {
-    "message": "Lade...",
+    "message": "Wird geladen...",
     "description": "When the full-scale image is loading"
   },
   "theme.IdealImageMessage.load": {
@@ -251,33 +251,49 @@
     "description": "When the image is not found"
   },
   "theme.IdealImageMessage.error": {
-    "message": "Error. Klicke zum erneuten Laden",
+    "message": "Fehler. Zum Neuladen anklicken",
     "description": "When the image fails to load for unknown error"
   },
   "theme.SearchBar.noResultsText": {
     "message": "Keine Ergebnisse"
   },
   "theme.SearchBar.seeAll": {
-    "message": "Zeige aller Ergebnisse an"
+    "message": "Alle Ergebnisse anzeigen"
   },
   "theme.SearchBar.label": {
     "message": "Suchen",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Suchergebnisse für \"{query}\"",
+    "message": "Suchergebnisse für „{query}“",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Durchsuche die Dokumentation",
+    "message": "Dokumentation durchsuchen",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "1 document found|{count} Dokumentationen gefunden",
+    "message": "1 Dokument gefunden|{count} Dokumente gefunden",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "Keine Dokumentationen gefunden",
+    "message": "Keine Dokumente gefunden",
     "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Type your search here",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Suchen",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Typesense",
+    "description": "The ARIA label for Typesense mention"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new results...",
+    "description": "The paragraph for fetching new search results"
   }
 }

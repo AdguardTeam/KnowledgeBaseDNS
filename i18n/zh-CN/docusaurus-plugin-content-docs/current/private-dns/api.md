@@ -106,9 +106,9 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### 开源API 规范
 
-OpenAPI 规范可在 [https： //api.adguard-dns.io/static/swagger/openapi.json][openapi]。
+OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]。
 
-您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以在 [https://editor.swagger.io/][swagger]。
+您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以在 [https://editor.swagger.io/][swagger] 打开本文件。
 
 ## 反馈
 

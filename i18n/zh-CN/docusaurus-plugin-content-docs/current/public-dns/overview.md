@@ -9,7 +9,7 @@ AdGuard DNS 是款个免费的、注重隐私的DNS解析器，他可以提供�
 
 
 ## 免费的AdGuard DNS服务器
-AdGuard DNS有三个免费服务器。 ”默认“服务器是用于拦截广告、追踪器、恶意软件和钓鱼网站的。 ”家庭保护“也有同样的功能。他会屏蔽儿童不适合儿童的网站，并在提供”安全搜索“选项的浏览器中强制执行。 ”不过滤“提供了一个安全可靠的链接，但是不会过滤任何东西。 您可以在[我们的网站](https://adguard-dns.io/en/public-dns.html)上找到关于如何在您的所有设备上设置AdGuard DNS的详细说明。 每个服务器都支持不同的安全协议： DNSCrypt、DNS-over-HTTPS (DoH)、DNS-over-TLS (DoT)、和 DNS-over-QUIC (DoQ)。
+AdGuard DNS有三个免费服务器。 ”默认“服务器是用于拦截广告、追踪器、恶意软件和钓鱼网站的。 ”家庭保护“也有同样的功能。他会屏蔽儿童不适合儿童的网站，并在提供”安全搜索“选项的浏览器中强制执行。 ”不过滤“提供了一个安全可靠的链接，但是不会过滤任何东西。 您可以在[我们的网站](https://adguard-dns.io/en/public-dns.html)上找到关于如何在您的所有设备上设置 AdGuard DNS 的详细说明。 每个服务器都支持不同的安全协议： DNSCrypt、DNS-over-HTTPS (DoH)、DNS-over-TLS (DoT)、和 DNS-over-QUIC (DoQ)。
 
 
 ## AdGuard DNS协议

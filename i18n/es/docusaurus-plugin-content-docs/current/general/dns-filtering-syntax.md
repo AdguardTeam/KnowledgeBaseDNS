@@ -11,7 +11,7 @@ Hay tres enfoques diferentes para escribir listas de bloqueo de hosts:
 
 * [Sintaxis estilo Adblock](#adblock-style-syntax): el enfoque más moderno para escribir reglas de filtrado, basado en el uso de un subconjunto de reglas al estilo de las usadas por AdBlock. De esta manera, las listas de bloqueo creadas son compatibles con las de los bloqueadores de anuncios para navegador.
 
-* [Sintaxis `/etc/hosts` ](#etc-hosts-syntax): el enfoque antiguo y probado, que usa la misma sintaxis que los sistemas operativos usan para sus archivos de hosts.
+* [`/etc/hosts` Sintaxis](#etc-hosts-syntax): el enfoque antiguo y probado, que usa la misma sintaxis que los sistemas operativos usan para sus archivos de hosts.
 
 * [Sintaxis de dominios](#domains-only-syntax): una simple lista de nombres de dominio.
 
@@ -27,11 +27,11 @@ Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias lis
 
 ## Ejemplos básicos
 
-* `||ejemplo.org^`: bloquea el acceso al dominio `example.org` y todos sus subdominios, como `www.ejemplo.org`.
+* `||example.org^`: bloquea el acceso al dominio `example.org` y todos sus subdominios, como `www.example.org`.
 
-* `@@||ejemplo.org^`: desbloquea el acceso al dominio `ejemplo.org` y todos sus subdominios.
+* `@@||example.org^`: desbloquea el acceso al dominio `example.org` y todos sus subdominios.
 
-* `1.2.3.4 ejemplo.org`: (atención, sintaxis estilo `/etc/hosts` antiguo) en AdGuard Home, el programa responde con `1.2.3.4` a las consultas para el dominio `example.org`, pero **no** a sus subdominios. En el DNS privado de AdGuard, bloquea el acceso a `ejemplo.org`. `www.ejemplo.org` sigue estando permitido.
+* `1.2.3.4 example.org`: (atención, sintaxis estilo `/etc/hosts` antiguo) en AdGuard Home, el programa responde con `1.2.3.4` a las consultas para el dominio `example.org`, pero **no** a sus subdominios. En el DNS privado de AdGuard, bloquea el acceso a `example.org`. `www.example.org` sigue estando permitido.
 
   En AdGuard Home, usar la dirección IP no especificada (`0.0.0.0`) o una dirección local (`127.0.0.1` y similares) para un host es básicamente lo mismo que bloquear ese host.
 
@@ -42,7 +42,7 @@ Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias lis
   0.0.0.0 ejemplo.com
   ```
 
-* `ejemplo.org`: una regla de dominio simple. Bloquea el dominio `ejemplo.org` pero **no** sus subdominios. `www.ejemplo.org` sigue estando permitido.
+* `example.org`: una regla de dominio simple. Bloquea el dominio `example.org` pero **no** sus subdominios. `www.example.org` sigue estando permitido.
 
 * `! Es un comentario ` y `# También un comentario`: comentarios.
 
@@ -65,13 +65,13 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Carácteres especiales
 
-* `*`: el asterisco. Se utiliza para representar cualquier conjunto de caracteres. Esto también puede ser una cadena de texto vacía o una cadena de texto de cualquier longitud.
+* `*`: el carácter comodín. Se utiliza para representar cualquier conjunto de caracteres. Esto también puede ser una cadena de texto vacía o una cadena de texto de cualquier longitud.
 
-* `||`: coincide con el comienzo de un nombre de host, incluido cualquier subdominio. Por ejemplo, `||ejemplo.org` coincide con `example.org` y `test.ejemplo.org` pero no con `testejemplo.org`.
+* `||`: coincide con el comienzo de un nombre de host, incluido cualquier subdominio. Por ejemplo, `||example.org` coincide con `example.org` y `test.example.org` pero no con `testexample.org`.
 
 * `^`: el carácter de separador. A diferencia del bloqueo de anuncios para navegador, no hay nada que separar en un nombre de host, por lo que el único propósito de este carácter es marcar el final del nombre de host.
 
-* `|`: un puntero al principio o al final del nombre de host. El valor depende de la ubicación del carácter. Por ejemplo, la regla `emplo.org|` corresponde a `ejemplo.org` pero no a `ejemplo.org.com`. `|ejemplo` corresponde a `ejemplo.org` pero no a `prueba.ejemplo`.
+* `|`: un puntero al principio o al final del nombre de host. El valor depende de la ubicación del carácter. Por ejemplo, la regla `ample.org|` corresponde a `ample.org` pero no a `example.org.com`. `|example` corresponde a `example.org` pero no a `test.example`.
 
 ### Expresiones regulares
 
@@ -83,9 +83,9 @@ pattern = "/" regexp "/"
 
 **Ejemplos:**
 
-* `/ejemplo.*/` bloqueará los hosts que coincidan con la regexp `ejemplo.*`.
+* `/example.*/` bloqueará los hosts que coincidan con la regexp `example.*`.
 
-* `@@/ejemplo.*/$important` desbloqueará los hosts que coincidan con la regexp `ejemplo.*`. Tenga en cuenta que esta regla también implica el modificador `important` (importante).
+* `@@/example.*/$important` desbloqueará los hosts que coincidan con la regexp `example.*`. Tenga en cuenta que esta regla también implica el modificador `important` (importante).
 
 ### Comentarios
 
@@ -104,18 +104,18 @@ Puedes cambiar el comportamiento de una regla añadiendo modificadores. Los modi
 
 **Ejemplos:**
 
-* ```none ||ejemplo.org^$important
+* ```none ||example.org^$important
    ```
 
-  `||ejemplo.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. El modificador es "importante".
+  `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. El modificador es "importante".
 
 * Es posible que desee utilizar varios modificadores en una regla. En tal caso, sepárelos con comas:
 
   ```none
-  ||ejemplo.org^$client=127.0.0.1,dnstype=A
+  ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||ejemplo.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. `client=127.0.0.1` es el modificador [`client`](#client) con su valor, `127.0.0.1`, es el delimitador. Y por último, `dnstype=A` es el modificador [`dnstype`](#dnstype) con su valor, `A`.
+  `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. `client=127.0.0.1` es el modificador [`client`](#client) con su valor, `127.0.0.1`, es el delimitador. Y por último, `dnstype=A` es el modificador [`dnstype`](#dnstype) con su valor, `A`.
 
 **NOTA:** Si una regla contiene un modificador que no aparece en este documento, toda la regla **debe ser ignorada**. De este modo, evitamos los falsos positivos cuando alguien intenta utilizar listas de filtros para bloqueadores de anuncios sin modificarlas, como EasyList o EasyPrivacy.
 
