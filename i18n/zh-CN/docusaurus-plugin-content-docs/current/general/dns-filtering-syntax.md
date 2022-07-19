@@ -11,7 +11,7 @@ sidebar_position: 2
 
 * [Adblock 风格的语法](#adblock-style-syntax)： 基于使用 Adblock 风格的规则语法子集编写过滤规则的现代方法。 这样阻止拦截列表与浏览器广告拦截器兼容。
 
-* [/etc/hosts</code>语法](#etc-hosts-syntax)： 使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
+* [`/etc/hosts`语法](#etc-hosts-syntax)： 使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
 
 * [只适用于域的语法](#domains-only-syntax)：一个简单的域名列表。
 
