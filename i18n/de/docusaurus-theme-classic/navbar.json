@@ -1,6 +1,6 @@
 {
   "item.label.docs": {
-    "message": "Dokumentationen",
+    "message": "Dokumente",
     "description": "Navbar item with label docs"
   },
   "item.label.blog": {
@@ -8,7 +8,7 @@
     "description": "Navbar item with label blog"
   },
   "item.label.official_website": {
-    "message": "Offizielle Webseite",
+    "message": "Offizielle Website",
     "description": "Navbar item with label official_website"
   },
   "item.label.github": {

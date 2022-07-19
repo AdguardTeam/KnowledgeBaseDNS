@@ -212,7 +212,7 @@
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} с \"{tagName}\"",
+    "message": "{nDocsTagged} с тегом «{tagName}»",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
@@ -223,7 +223,7 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Переключить перенос слов",
+    "message": "Включить перенос слов",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
@@ -255,7 +255,7 @@
     "description": "When the image fails to load for unknown error"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "Нет результатов"
+    "message": "Ничего не найдено"
   },
   "theme.SearchBar.seeAll": {
     "message": "Посмотреть все результаты"
@@ -265,7 +265,7 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Результаты поиска по запросу \"{query}\"",
+    "message": "Результаты поиска по запросу «{query}»",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
@@ -279,5 +279,21 @@
   "theme.SearchPage.noResultsText": {
     "message": "Ничего не найдено",
     "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Type your search here",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Поиск",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Typesense",
+    "description": "The ARIA label for Typesense mention"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new results...",
+    "description": "The paragraph for fetching new search results"
   }
 }

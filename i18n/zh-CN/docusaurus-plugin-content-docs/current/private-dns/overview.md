@@ -32,7 +32,7 @@ sidebar_position: 1
 
 ## 如何配置私人 AdGuard DNS
 
-1. 进入你的 [AdGuard DNS仪表盘](https://adguard-dns.io/dashboard/) （如果没有登录，请使用你的AdGuard账户登录）。
+1. 前往 [AdGuard DNS 仪表盘](https://adguard-dns.io/dashboard/)（如果没有登录，请使用您的 AdGuard 账号登录）
 2. 单击“连接设备”并按照屏幕上的说明进行操作。
 
 > 支持的平台： - Android - iOS - Windows - Mac - Linux - 路由器 - 游戏机
@@ -48,7 +48,7 @@ sidebar_position: 1
 
 ### 用户规则
 
-当预装的有数千条规则的*拦截列表* 还不够时，我们有一个方便的功能，称为“用户规则”。 在这里，您可以手动添加自定义规则以 拦截/放行 某个域名或导入自定义规则列表（查看 [DNS 过滤规则语法](../general/dns-filtering-syntax.md)）。 您可以导出列表。
+当预装的有数千条规则的*拦截列表*还不够时，我们有一个方便的功能，称为“用户规则”。 在这里，您可以手动添加自定义规则以 拦截/放行 某个域名或导入自定义规则列表（查看 [DNS 过滤规则语法](../general/dns-filtering-syntax.md)）。 您可以导出列表。
 
 ![私人 AdGuard DNS 仪表盘 自定义规则](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/import.png)
 
@@ -78,7 +78,7 @@ sidebar_position: 1
 
 ### 家长控制
 
-为了保护您的孩子免受您认为不合适的在线内容的影响，请设置并激活 *家长控制* 选项。 除了 "成人内容 "拦截和安全搜索等选项外，我们还增加了手动指定拦截域名的功能，并为 *家长控制* 设置了相应的工作时间表
+为了保护您的孩子免受您认为不合适的在线内容的影响，请设置并激活 *家长控制*选项。 除了 "成人内容 "拦截和安全搜索等选项外，我们还增加了手动指定拦截域名的功能，并为 *家长控制* 设置了相应的工作时间表
 
 ![私人 AdGuard DNS 仪表盘 家长控制](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
-> 如果您还没有私人 AdGuard DNS，您可以在 [官网](https://adguard-dns.io/)上获得它。
+> 如果您还没有私人 AdGuard DNS，您可以在[官网](https://adguard-dns.io/)上获得它。

@@ -28,7 +28,7 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} 分钟阅读",
+    "message": "一分钟阅读|{readingTime} 分钟阅读",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
@@ -60,11 +60,11 @@
     "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} 篇博文",
+    "message": "一篇文章|{count} 篇文章",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "标记为 \"{tagName}\" 的{nPosts}",
+    "message": "标记为 \"{tagName}\" 的 {nPosts}",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
@@ -120,7 +120,7 @@
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "要查看最新版本，请参阅{latestVersionLink}（{versionLabel}）。",
+    "message": "要查看最新版本，请参阅 {latestVersionLink}（{versionLabel}）。",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
@@ -144,7 +144,7 @@
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "上次更新{atDate}{byUser}",
+    "message": "上次更新 {atDate} {byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -184,7 +184,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "在深色模式和浅色模式之间切换 (当前为{mode})",
+    "message": "在深色模式和浅色模式之间切换（当前为 {mode}）",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
@@ -212,11 +212,11 @@
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "标记为 \"{tagName}\" 的{nDocsTagged}",
+    "message": "标记为 \"{tagName}\" 的 {nDocsTagged}",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "版本 {versionLabel}"
+    "message": "版本：{versionLabel}"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "版本",
@@ -265,7 +265,7 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "“{query}”的搜索结果",
+    "message": "“{query}” 的搜索结果",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
@@ -273,11 +273,27 @@
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "找到了1个文档|找到了{count} 个文档",
+    "message": "找到了1个文档|找到了 {count} 个文档",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
     "message": "没有找到文档",
     "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Type your search here",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "搜索",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Search by Typesense",
+    "description": "The ARIA label for Typesense mention"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Fetching new results...",
+    "description": "The paragraph for fetching new search results"
   }
 }

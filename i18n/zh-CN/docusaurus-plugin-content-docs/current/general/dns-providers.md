@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html)是广告拦截、隐私保护和家长控制的替代解决方案。 无论您使用何种平台和设备，它都提供了许多必要地保护功能，以防在线广告、跟踪器和网络钓鱼。
+[AdGuard DNS](https://adguard-dns.io/welcome.html) 是广告拦截、隐私保护和家长控制的替代解决方案。 无论您使用何种平台和设备，它都提供了许多必要地保护功能，以防在线广告、跟踪器和网络钓鱼。
 
 #### 默认
 
@@ -33,87 +33,87 @@ sidebar_position: 3
 | DNS-over-HTTPS | `https://dns-family.adguard.com/dns-query`                               | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQovZG5zLXF1ZXJ5)                                                                             |
 | DNS-over-TLS   | `tls://dns-family.adguard.com`                                           | [添加到AdGuard](sdns://AwMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ)                                                                                           |
 | DNS-over-QUIC  | `quic://dns-family.adguard.com`                                          | [添加到AdGuard](sdns://BAMAAAAAAAAAAAAWZG5zLWZhbWlseS5hZGd1YXJkLmNvbQ)                                                                                           |
-| DNSCrypt, IPv4 | 提供者: `2.dnscrypt.family.ns1.adguard.com` IP: `94.140.14.15:5443`         | [添加到AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ)           |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt.family.ns1.adguard.com` IP：`94.140.14.15:5443`           | [添加到AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ)           |
 | DNSCrypt, IPv6 | 提供者: `2.dnscrypt.family.ns1.adguard.com` IP: `[2a10:50c0::bad1:ff]:5443` | [添加到AdGuard](sdns://AQIAAAAAAAAAGVsyYTEwOjUwYzA6OmJhZDE6ZmZdOjU0NDMguDFd17FLbuMgpHDcLtaxqjmMyeWG-F1FRda4ybUAWrohMi5kbnNjcnlwdC5mYW1pbHkubnMxLmFkZ3VhcmQuY29t) |
 
 #### 无过滤
 
 这些服务器提供了安全和可靠的连接，但它们不会像“默认”和“家庭保护”服务器一样过滤任何请求。
 
-| 协议             | 地址                                                                        |                                                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.140` 和 `94.140.14.141`                                         | [添加到AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA)                                                                                                            |
-| DNS, IPv6      | `2a10:50c0::bad1:ff` 和 `2a10:50c0::bad2:ff`                               | [添加到AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd)                                                                                                       |
-| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query`                            | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ)                                                                         |
-| DNS-over-TLS   | `tls://dns-unfiltered.adguard.com`                                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
-| DNS-over-QUIC  | `quic://dns-unfiltered.adguard.com`                                       | [添加到AdGuard](sdns://BAAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
-| DNSCrypt, IPv4 | 提供者: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [添加到AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
-| DNSCrypt, IPv6 | 提供者: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [添加到AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
+| 协议             | 地址                                                                      |                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `94.140.14.140` 和 `94.140.14.141`                                       | [添加到AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA)                                                                                                            |
+| DNS, IPv6      | `2a10:50c0::bad1:ff` 和 `2a10:50c0::bad2:ff`                             | [添加到AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd)                                                                                                       |
+| DNS-over-HTTPS | `https://dns-unfiltered.adguard.com/dns-query`                          | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20KL2Rucy1xdWVyeQ)                                                                         |
+| DNS-over-TLS   | `tls://dns-unfiltered.adguard.com`                                      | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
+| DNS-over-QUIC  | `quic://dns-unfiltered.adguard.com`                                     | [添加到AdGuard](sdns://BAAAAAAAAAAAAAAaZG5zLXVuZmlsdGVyZWQuYWRndWFyZC5jb20)                                                                                        |
+| DNSCrypt, IPv4 | 提供者: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`   | [添加到AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
+| DNSCrypt, IPv6 | 提供者：`2.dnscrypt.unfiltered.ns1.adguard.com` IP：`[2a10:50c0::1:ff]:5443` | [添加到AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) 是一个免费的递归DNS服务。 Yandex.DNS'服务器位于俄罗斯、独联体国家和西欧。 用户的请求由最近的数据中心处理，该中心提供高连接速度。
+[Yandex.DNS](https://dns.yandex.com/) 是一个免费的递归 DNS 服务。 Yandex.DNS'服务器位于俄罗斯、独联体国家和西欧。 用户的请求由最近的数据中心处理，该中心提供高连接速度。
 
 #### 基础
 
 在“基础”模式中，没有流量过滤
 
-| 协议             | 地址                                                               |                                                                                                                                                     |
-| -------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `77.88.8.8` 和 `77.88.8.1`                                        | [添加到AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguOA)                                                                                                     |
-| DNS, IPv6      | `2a02:6b8::feed:0ff` 和 `2a02:6b8:0:1::feed:0ff`                  | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
-| DNSCrypt, IPv4 | 提供者: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [添加到AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
+| 协议             | 地址                                                             |                                                                                                                                                     |
+| -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.8` 和 `77.88.8.1`                                      | [添加到AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguOA)                                                                                                     |
+| DNS, IPv6      | `2a02:6b8::feed:0ff` 和 `2a02:6b8:0:1::feed:0ff`                | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.browser.yandex.net` IP：`77.88.8.78:15353` | [添加到AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
 
 #### 安全
 
 在“安全”模式中，提供了对于被感染的网站和欺骗性网站的防护。
 
-| 协议        | 地址                                            |                                                               |
-| --------- | --------------------------------------------- | ------------------------------------------------------------- |
-| DNS, IPv4 | `77.88.8.88`和`77.88.8.2`                      | [添加到AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
-| DNS, IPv6 | `2a02:6b8::feed:bad`和`2a02:6b8:0:1::feed:bad` | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
+| 协议        | 地址                                              |                                                               |
+| --------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| DNS, IPv4 | `77.88.8.88` 和 `77.88.8.2`                      | [添加到AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
+| DNS, IPv6 | `2a02:6b8::feed:bad` 和 `2a02:6b8:0:1::feed:bad` | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
 
 #### 家庭模式
 
 在“家庭”模式下，可防止感染、欺诈和成人网站
 
-| 协议        | 地址                                            |                                                               |
-| --------- | --------------------------------------------- | ------------------------------------------------------------- |
-| DNS, IPv4 | `77.88.8.3`和`77.88.8.7`                       | [添加到AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguMw)               |
-| DNS, IPv6 | `2a02:6b8::feed:a11`和`2a02:6b8:0:1::feed:a11` | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDphMTFd) |
+| 协议        | 地址                                              |                                                               |
+| --------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| DNS, IPv4 | `77.88.8.3` 和 `77.88.8.7`                       | [添加到AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguMw)               |
+| DNS, IPv6 | `2a02:6b8::feed:a11` 和 `2a02:6b8:0:1::feed:a11` | [添加到AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDphMTFd) |
 
 ### 清理浏览记录
 
-[清理浏览记录](https://cleanbrowsing.org/)是一种DNS服务，提供可定制的过滤。 这项服务提供了一种安全的方式来浏览web，而不包含不适当的内容。
+[清理浏览记录](https://cleanbrowsing.org/)是一种 DNS 服务，提供可定制的过滤。 这项服务提供了一种安全的方式来浏览web，而不包含不适当的内容。
 
 #### 家庭版过滤器
 
-阻止访问所有成人、色情和露骨网站，包括代理和&amp；VPN域和混合内容站点
+阻止访问所有成人、色情和露骨网站，包括代理和 & VPN 域和混合内容站点
 
-| 协议             | 地址                                                  |                                                                                                                                   |
-| -------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.228.168.168`和`185.228.169.168`                 | [添加到AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjguMTY4LjE2OA)                                                                           |
-| DNS, IPv6      | `2a0d:2a00:1::`和`2a0d:2a00:2::`                     | [添加到AdGuard](sdns://AAAAAAAAAAAAD1syYTBkOjJhMDA6MTo6XQ)                                                                           |
-| DNSCrypt, IPv4 | 提供者：`cleanbrowsing.org`IP地址:`185.228.168.168:8443`  | [添加到AdGuard](sdns://AQMAAAAAAAAAFDE4NS4yMjguMTY4LjE2ODo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn) |
-| DNSCrypt, IPv6 | 提供者: `cleanbrowsing.org` IP: `[2a0d:2a00:1::]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFFsyYTBkOjJhMDA6MTo6XTo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn) |
-| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/family-filter/`  | [添加到AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEy9kb2gvZmFtaWx5LWZpbHRlci8)                                      |
-| DNS-over-TLS   | `tls://family-filter-dns.cleanbrowsing.org`         | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAjZmFtaWx5LWZpbHRlci1kbnMuY2xlYW5icm93c2luZy5vcmc)                                              |
+| 协议             | 地址                                                   |                                                                                                                                   |
+| -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `185.228.168.168` 和 `185.228.169.168`                | [添加到AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjguMTY4LjE2OA)                                                                           |
+| DNS, IPv6      | `2a0d:2a00:1::` 和 `2a0d:2a00:2::`                    | [添加到AdGuard](sdns://AAAAAAAAAAAAD1syYTBkOjJhMDA6MTo6XQ)                                                                           |
+| DNSCrypt, IPv4 | 提供者：`cleanbrowsing.org` IP 地址：`185.228.168.168:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFDE4NS4yMjguMTY4LjE2ODo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn) |
+| DNSCrypt, IPv6 | 提供者：`cleanbrowsing.org` IP：`[2a0d:2a00:1::]:8443`    | [添加到AdGuard](sdns://AQMAAAAAAAAAFFsyYTBkOjJhMDA6MTo6XTo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn) |
+| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/family-filter/`   | [添加到AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEy9kb2gvZmFtaWx5LWZpbHRlci8)                                      |
+| DNS-over-TLS   | `tls://family-filter-dns.cleanbrowsing.org`          | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAjZmFtaWx5LWZpbHRlci1kbnMuY2xlYW5icm93c2luZy5vcmc)                                              |
 
 #### 成人过滤器
 
 比家庭过滤器限制更小，它仅拦截成人内容，恶意和钓鱼域名。
 
-| 协议             | 地址                                                   |                                                                                                                                     |
-| -------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.228.168.10` 和 `185.228.169.11`                  | [添加到AdGuard](sdns://AAAAAAAAAAAADjE4NS4yMjguMTY4LjEw)                                                                               |
-| DNS, IPv6      | `2a0d:2a00:1::1` 和 `2a0d:2a00:2::1`                  | [添加到AdGuard](sdns://AAAAAAAAAAAAEFsyYTBkOjJhMDA6MTo6MV0)                                                                            |
-| DNSCrypt, IPv4 | 提供者: `cleanbrowsing.org` IP: `185.228.168.10:8443`   | [添加到AdGuard](sdns://AQMAAAAAAAAAEzE4NS4yMjguMTY4LjEwOjg0NDMgvKwy-tVDaRcfCDLWB1AnwyCM7vDo6Z-UGNx3YGXUjykRY2xlYW5icm93c2luZy5vcmc)    |
-| DNSCrypt, IPv6 | 提供者: `cleanbrowsing.org` IP: `[2a0d:2a00:1::1]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFVsyYTBkOjJhMDA6MTo6MV06ODQ0MyC8rDL61UNpFx8IMtYHUCfDIIzu8Ojpn5QY3HdgZdSPKRFjbGVhbmJyb3dzaW5nLm9yZw) |
-| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`    | [添加到AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
-| DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`           | [添加到AdGuard](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
+| 协议             | 地址                                                 |                                                                                                                                     |
+| -------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `185.228.168.10` 和 `185.228.169.11`                | [添加到AdGuard](sdns://AAAAAAAAAAAADjE4NS4yMjguMTY4LjEw)                                                                               |
+| DNS, IPv6      | `2a0d:2a00:1::1` 和 `2a0d:2a00:2::1`                | [添加到AdGuard](sdns://AAAAAAAAAAAAEFsyYTBkOjJhMDA6MTo6MV0)                                                                            |
+| DNSCrypt, IPv4 | 提供者：`cleanbrowsing.org` IP：`185.228.168.10:8443`   | [添加到AdGuard](sdns://AQMAAAAAAAAAEzE4NS4yMjguMTY4LjEwOjg0NDMgvKwy-tVDaRcfCDLWB1AnwyCM7vDo6Z-UGNx3YGXUjykRY2xlYW5icm93c2luZy5vcmc)    |
+| DNSCrypt, IPv6 | 提供者：`cleanbrowsing.org` IP：`[2a0d:2a00:1::1]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFVsyYTBkOjJhMDA6MTo6MV06ODQ0MyC8rDL61UNpFx8IMtYHUCfDIIzu8Ojpn5QY3HdgZdSPKRFjbGVhbmJyb3dzaW5nLm9yZw) |
+| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`  | [添加到AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
+| DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`         | [添加到AdGuard](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
 
 #### 安全过滤器
@@ -129,64 +129,64 @@ sidebar_position: 3
 
 ### 舒适安全的DNS
 
-[舒适安全的DNS](https://comodo.com/secure-dns/)是一种域名解析服务，通过全球DNS服务器网络解析您的DNS请求。 删除过多的广告并防止钓鱼和间谍软件。
+[舒适安全的 DNS](https://comodo.com/secure-dns/) 是一种域名解析服务，通过全球 DNS 服务器网络解析您的 DNS 请求。 删除过多的广告并防止钓鱼和间谍软件。
 
-| 协议             | 地址                                                               |                                                                                                                                                     |
-| -------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `8.26.56.26`和`8.20.247.20`                                       | [添加到AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
-| DNSCrypt, IPv4 | 提供程序：`2.dnscrypt-cert.shield-2.dnsbycomodo.com`IP地址:`8.20.247.2` | [添加到AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+| 协议             | 地址                                                                |                                                                                                                                                     |
+| -------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `8.26.56.26` 和 `8.20.247.20`                                      | [添加到AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP 地址：`8.20.247.2` | [添加到AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
 ### Neustar递归DNS
 
-[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns)是一项免费的基于云的递归DNS服务，通过内置的安全和威胁情报，快速可靠地访问网站和在线应用程序。
+[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) 是一项免费的基于云的递归 DNS 服务，通过内置的安全和威胁情报，快速可靠地访问网站和在线应用程序。
 
-#### 可靠性和与amp性能1
+#### 可靠性 & 性能 1
 
 这些服务器提供可靠、快速的DNS查找，无需阻止任何特定类别
 
-| 协议        | 地址                                  |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.1`和`156.154.71.1`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMQ)       |
-| DNS, IPv6 | `2610:a1:1018::1`和`2610:a1:1019::1` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjFd) |
+| 协议        | 地址                                    |                                                           |
+| --------- | ------------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.1` 和 `156.154.71.1`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMQ)       |
+| DNS, IPv6 | `2610:a1:1018::1` 和 `2610:a1:1019::1` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjFd) |
 
-#### 可靠性& 性能2*
+#### 可靠性 & 性能 2*
 
 这些服务器提供可靠、快速的DNS查找，无需阻止任何特定类别，还可以防止将NXDomain（不存在的域）响应重定向到登录页
 
-| 协议        | 地址                                  |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.5`和`156.154.71.5`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNQ)       |
-| DNS, IPv6 | `2610:a1:1018::5`和`2610:a1:1019::5` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjVd) |
+| 协议        | 地址                                    |                                                           |
+| --------- | ------------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.5` 和 `156.154.71.5`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNQ)       |
+| DNS, IPv6 | `2610:a1:1018::5` 和 `2610:a1:1019::5` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjVd) |
 
 #### 威胁防护
 
-这些服务器提供针对恶意域的保护，还包括“可靠性和& 性能”功能
+这些服务器提供针对恶意域的保护，还包括“可靠性 & 性能”功能
 
-| 协议        | 地址                                  |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.2`和`156.154.71.2`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMg)       |
-| DNS, IPv6 | `2610:a1:1018::2`和`2610:a1:1019::2` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjJd) |
+| 协议        | 地址                                    |                                                           |
+| --------- | ------------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.2` 和 `156.154.71.2`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMg)       |
+| DNS, IPv6 | `2610:a1:1018::2` 和 `2610:a1:1019::2` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjJd) |
 
 #### 家庭版保护
 
-这些服务器提供对成熟内容的阻止访问，还包括“可靠性& 性能”+“威胁保护”功能
+这些服务器提供对成熟内容的阻止访问，还包括“可靠性 & 性能” + “威胁保护”功能
 
-| 协议        | 地址                                  |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.3`和`156.154.71.3`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMw)       |
-| DNS, IPv6 | `2610:a1:1018::3`和`2610:a1:1019::3` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjNd) |
+| 协议        | 地址                                    |                                                           |
+| --------- | ------------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.3` 和 `156.154.71.3`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMw)       |
+| DNS, IPv6 | `2610:a1:1018::3` 和 `2610:a1:1019::3` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjNd) |
 
 #### 业务安全
 
-这些服务器提供阻止不需要的和浪费时间的内容，还包括“可靠性& 性能”+“威胁保护”+“家庭安全”功能
+这些服务器提供阻止不需要的和浪费时间的内容，还包括“可靠性 & 性能” + “威胁保护”+“家庭安全”功能
 
-| 协议        | 地址                                  |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.4`和`156.154.71.4`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNA)       |
-| DNS, IPv6 | `2610:a1:1018::4`和`2610:a1:1019::4` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjRd) |
+| 协议        | 地址                                    |                                                           |
+| --------- | ------------------------------------- | --------------------------------------------------------- |
+| DNS、IPv4  | `156.154.70.4` 和 `156.154.71.4`       | [添加到AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNA)       |
+| DNS, IPv6 | `2610:a1:1018::4` 和 `2610:a1:1019::4` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjRd) |
 
 ### Cisco OpenDNS
 
-[Cisco OpenDNS](https://www.opendns.com/)是一项通过整合内容过滤和网络钓鱼保护等功能扩展DNS的服务，无需停机时间。
+[Cisco OpenDNS](https://www.opendns.com/) 是一项通过整合内容过滤和网络钓鱼保护等功能扩展 DNS 的服务，无需停机时间。
 
 #### 标准
 
@@ -194,83 +194,83 @@ sidebar_position: 3
 
 | 协议             | 地址                                                        |                                                                                                                                          |
 | -------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.222`和`208.67.220.220`                         | [添加到AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMjIy)                                                                                    |
-| DNS, IPv6      | `2620:119:35::35`和`2620:119:53::53`                       | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVd)                                                                                |
-| DNSCrypt, IPv4 | 提供程序：`2.dnscrypt-cert.opendns.com`IP地址:`208.67.220.220`   | [添加到AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)  |
-| DNSCrypt, IPv6 | 提供程序：`2.dnscrypt-cert.opendns.com` IP地址：`[2620:0:ccc::2]` | [添加到AdGuard](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20) |
+| DNS, IPv4      | `208.67.222.222` 和 `208.67.220.220`                       | [添加到AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMjIy)                                                                                    |
+| DNS, IPv6      | `2620:119:35::35` 和 `2620:119:53::53`                     | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVd)                                                                                |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.opendns.com` IP 地址：`208.67.220.220`  | [添加到AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)  |
+| DNSCrypt, IPv6 | 提供者：`2.dnscrypt-cert.opendns.com` IP 地址：`[2620:0:ccc::2]` | [添加到AdGuard](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20) |
 | DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                       | [添加到AdGuard](sdns://AgUAAAAAAAAAAAAPZG9oLm9wZW5kbnMuY29tCi9kbnMtcXVlcnk)                                                                 |
 
 #### 家庭防护罩
 
 提供成人内容阻止的OpenDNS服务器
 
-| 协议             | 地址                                                      |                                                                                                                                         |
-| -------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.123`和`208.67.220.123`                       | [添加到AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMTIz)                                                                                   |
-| DNSCrypt, IPv4 | 提供程序：`2.dnscrypt-cert.opendns.com`IP地址:`208.67.220.123` | [添加到AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
-| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`        | [添加到AdGuard](sdns://AgUAAAAAAAAAAAAcZG9oLmZhbWlseXNoaWVsZC5vcGVuZG5zLmNvbQovZG5zLXF1ZXJ5)                                               |
+| 协议             | 地址                                                       |                                                                                                                                         |
+| -------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `208.67.222.123` 和 `208.67.220.123`                      | [添加到AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMTIz)                                                                                   |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.opendns.com` IP 地址：`208.67.220.123` | [添加到AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
+| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`         | [添加到AdGuard](sdns://AgUAAAAAAAAAAAAcZG9oLmZhbWlseXNoaWVsZC5vcGVuZG5zLmNvbQovZG5zLXF1ZXJ5)                                               |
 
 ### 谷歌DNS
 
-[谷歌DNS](https://developers.google.com/speed/public-dns/)是一项免费的全球DNS解析服务，您可以将其作为当前DNS提供商的替代服务。
+[谷歌 DNS](https://developers.google.com/speed/public-dns/) 是一项免费的全球 DNS 解析服务，您可以将其作为当前 DNS 提供商的替代服务。
 
-| 协议             | 地址                                            |                                                                                                              |
-| -------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `8.8.8.8`和`8.8.4.4`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzguOC44Ljg)                                                                 |
-| DNS, IPv6      | `2001:4860:4860::8888`和`2001:4860:4860::8844` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0)                                             |
-| DNS-over-HTTPS | `https://dns.google/dns-query`                | [添加到AdGuard](sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQpkbnMuZ29vZ2xlCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.google`                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAKZG5zLmdvb2dsZQ)                                                          |
+| 协议             | 地址                                              |                                                                                                              |
+| -------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `8.8.8.8` 和 `8.8.4.4`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzguOC44Ljg)                                                                 |
+| DNS, IPv6      | `2001:4860:4860::8888` 和 `2001:4860:4860::8844` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0)                                             |
+| DNS-over-HTTPS | `https://dns.google/dns-query`                  | [添加到AdGuard](sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQpkbnMuZ29vZ2xlCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.google`                              | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAKZG5zLmdvb2dsZQ)                                                          |
 
 ### Cloudflare DNS
 
-[Cloudflare DNS](https://1.1.1.1/)是一种免费、快速的DNS服务，它作为递归名称服务器，为Internet上的任何主机提供域名解析。
+[Cloudflare DNS](https://1.1.1.1/) 是一种免费、快速的DNS服务，它作为递归名称服务器，为 Internet 上的任何主机提供域名解析。
 
 #### 标准
 
-| 协议                   | 地址                                            |                                                                                                                                                                                                      |
-| -------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `1.1.1.1`和`1.0.0.1`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjE)                                                                                                                                                         |
-| DNS, IPv6            | `2606:4700:4700::1111`和`2606:4700:4700::1001` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMV0)                                                                                                                                     |
-| DNS-over-HTTPS IPv4  | `https://dns.cloudflare.com/dns-query`        | [添加到AdGuard](sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk)                         |
-| DNS-over-HTTPS， IPv6 | `https://dns.cloudflare.com/dns-query`        | [添加到AdGuard](sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk) |
-| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`      | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAgMWRvdDFkb3QxZG90MS5jbG91ZGZsYXJlLWRucy5jb20)                                                                                                                     |
+| 协议                   | 地址                                              |                                                                                                                                                                                                      |
+| -------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `1.1.1.1` 和 `1.0.0.1`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjE)                                                                                                                                                         |
+| DNS, IPv6            | `2606:4700:4700::1111` 和 `2606:4700:4700::1001` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMV0)                                                                                                                                     |
+| DNS-over-HTTPS IPv4  | `https://dns.cloudflare.com/dns-query`          | [添加到AdGuard](sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk)                         |
+| DNS-over-HTTPS， IPv6 | `https://dns.cloudflare.com/dns-query`          | [添加到AdGuard](sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk) |
+| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`        | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAgMWRvdDFkb3QxZG90MS5jbG91ZGZsYXJlLWRucy5jb20)                                                                                                                     |
 
 #### 仅阻止恶意软件
 
 | 协议             | 地址                                              |                                                                                          |
 | -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `1.1.1.2`和`1.0.0.2`                             | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjI)                                             |
-| DNS, IPv6      | `2606:4700:4700::1112`和`2606:4700:4700::1002`   | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0)                         |
+| DNS, IPv4      | `1.1.1.2` 和 `1.0.0.2`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjI)                                             |
+| DNS, IPv6      | `2606:4700:4700::1112` 和 `2606:4700:4700::1002` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0)                         |
 | DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query` | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://security.cloudflare-dns.com`             | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
 
 #### 恶意软件和成人内容阻止
 
-| 协议                  | 地址                                            |                                                                                       |
-| ------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------- |
-| DNS, IPv4           | `1.1.1.3`和`1.0.0.3`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjM)                                          |
-| DNS, IPv6           | `2606:4700:4700::1113`和`2606:4700:4700::1003` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
-| DNS-over-HTTPS IPv4 | `https://family.cloudflare-dns.com/dns-query` | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
-| DNS-over-TLS        | `tls://family.cloudflare-dns.com`             | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
+| 协议                  | 地址                                              |                                                                                       |
+| ------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| DNS, IPv4           | `1.1.1.3` 和 `1.0.0.3`                           | [添加到AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjM)                                          |
+| DNS, IPv6           | `2606:4700:4700::1113` 和 `2606:4700:4700::1003` | [添加到AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
+| DNS-over-HTTPS IPv4 | `https://family.cloudflare-dns.com/dns-query`   | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS        | `tls://family.cloudflare-dns.com`               | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
 
 
 ### Quad9 DNS
 
-[Quad9 DNS](https://quad9.net/)是一个免费、递归、任意播放的DNS平台，提供高性能、隐私和安全保护，免受钓鱼和间谍软件的攻击。 Quad9服务器不提供审查组件。
+[Quad9 DNS](https://quad9.net/) 是一个免费、递归、任意播放的 DNS 平台，提供高性能、隐私和安全保护，免受钓鱼和间谍软件的攻击。 Quad9服务器不提供审查组件。
 
 #### 标准
 
 提供网络钓鱼和间谍软件保护的常规DNS服务器 它们包括阻止列表、DNSSEC验证和其他安全功能。
 
-| 协议             | 地址                                                           |                                                                                                                                           |
-| -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.9`和`149.112.112.112`                                  | [添加到AdGuard](sdns://AAAAAAAAAAAABzkuOS45Ljk)                                                                                              |
-| DNS, IPv6      | `2620:fe::fe`IP地址: `2620:fe::fe:9`                           | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjpmZV0)                                                                                      |
-| DNSCrypt, IPv4 | 提供代码：`2.dnscrypt-cert.quad9.net` IP地址：`9.9.9.9:8443`         | [添加到AdGuard](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)         |
-| DNSCrypt, IPv6 | 提供代码 `2.dnscrypt-cert.quad9.net` IP地址: `[2620:fe::fe]: 8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
-| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                            | [添加到AdGuard](sdns://AgEAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldAovZG5zLXF1ZXJ5)                                                                     |
-| DNS-over-TLS   | `tls://dns.quad9.net`                                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldA)                                                                                   |
+| 协议             | 地址                                                          |                                                                                                                                           |
+| -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.9`和`149.112.112.112`                                 | [添加到AdGuard](sdns://AAAAAAAAAAAABzkuOS45Ljk)                                                                                              |
+| DNS, IPv6      | `2620:fe::fe` IP地址：`2620:fe::fe:9`                          | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjpmZV0)                                                                                      |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.quad9.net` IP 地址：`9.9.9.9:8443`        | [添加到AdGuard](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)         |
+| DNSCrypt, IPv6 | 提供者：`2.dnscrypt-cert.quad9.net` IP 地址：`[2620:fe::fe]: 8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
+| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                           | [添加到AdGuard](sdns://AgEAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldAovZG5zLXF1ZXJ5)                                                                     |
+| DNS-over-TLS   | `tls://dns.quad9.net`                                       | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldA)                                                                                   |
 
 #### Unsecured
 
@@ -279,9 +279,9 @@ Unsecured DNS 服务器不提供安全阻止列表、不提供 DNSSEC、不提�
 | 协议             | 地址                                                             |                                                                                                                                               |
 | -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.10` 和 `149.112.112.10`                                  | [添加到AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEw)                                                                                                 |
-| DNS, IPv6      | `2620:fe::10` IP地址: `2620:fe::fe:10`                           | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMF0)                                                                                          |
-| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.quad9.net` IP地址：`9.9.9.10:8443`           | [添加到AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)           |
-| DNSCrypt, IPv6 | 提供者： `2.dnscrypt-cert.quad9.net` IP地址： `[2620:fe::fe:10]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
+| DNS, IPv6      | `2620:fe::10` IP 地址：`2620:fe::fe:10`                           | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMF0)                                                                                          |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.quad9.net` IP 地址：`9.9.9.10:8443`          | [添加到AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)           |
+| DNSCrypt, IPv6 | 提供者： `2.dnscrypt-cert.quad9.net` IP 地址：`[2620:fe::fe:10]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                            | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                      |
 | DNS-over-TLS   | `tls://dns10.quad9.net`                                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0)                                                                                     |
 
@@ -292,14 +292,14 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 | 协议             | 地址                                                             |                                                                                                                                           |
 | -------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.11` 和 `149.112.112.11`                                  | [添加到AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEx)                                                                                             |
-| DNS, IPv6      | `2620:fe::11` IP地址: `2620:fe::fe:11`                           | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMV0)                                                                                      |
-| DNSCrypt, IPv4 | 提供者： `2.dnscrypt-cert.quad9.net` IP地址： `9.9.9.11:8443`         | [添加到AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)       |
+| DNS, IPv6      | `2620:fe::11` IP 地址：`2620:fe::fe:11`                           | [添加到AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMV0)                                                                                      |
+| DNSCrypt, IPv4 | 提供者：`2.dnscrypt-cert.quad9.net` IP 地址：`9.9.9.11:8443`          | [添加到AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)       |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [添加到AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
 ### 威瑞信公共DNS
 
-[威瑞信公共DNS](https://www.verisign.com/security-services/public-dns/) 是一项免费的DNS服务，与其他替代方案相比，提供了更好的DNS稳定性和安全性。 威瑞信尊重用户的隐私：它不会向第三方出售公共 DNS 数据，也不会重定向用户的查询以向他们提供任何广告。
+[威瑞信公共 DNS](https://www.verisign.com/security-services/public-dns/) 是一项免费的 DNS 服务，与其他替代方案相比，提供了更好的 DNS 稳定性和安全性。 威瑞信尊重用户的隐私：它不会向第三方出售公共 DNS 数据，也不会重定向用户的查询以向他们提供任何广告。
 
 | 协议        | 地址                                    |                                                           |
 | --------- | ------------------------------------- | --------------------------------------------------------- |
@@ -307,7 +307,7 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 | DNS, IPv6 | `2620:74:1b::1:1` 或 `2620:74:1c::2:2` | [添加到AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) 是由 [switch.ch](https://www.switch.ch/)提供的瑞士公共DNS服务。
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) 是由 [switch.ch](https://www.switch.ch/) 提供的瑞士公共 DNS 服务。
 
 | 协议             | 地址                                                                                |                                                                       |
 | -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -632,16 +632,16 @@ These servers block adult websites and inappropriate contents.
 
 #### Singapore DNS Server
 
-| 协议             | 地址                                                                         | Location                                                                                                                                                  |  |
-| -------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
-| DNS, IPv4      | `174.138.21.128`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4)                                                                                                     |  |
-| DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                                | [添加到AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ)                                                                                   |  |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`              | [添加到AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA)                  |  |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]` | [添加到AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |  |
-| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party)                | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ)                                                                                   |  |
-| DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                           | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |  |
-| DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [添加到AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |  |
-| DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [添加到AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |  |
+| 协议             | 地址                                                                         | Location                                                                                                                                                  |
+| -------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `174.138.21.128`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4)                                                                                                     |
+| DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                                | [添加到AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ)                                                                                   |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`              | [添加到AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA)                  |
+| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]` | [添加到AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
+| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party)                | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ)                                                                                   |
+| DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                           | [添加到AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
+| DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [添加到AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
+| DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [添加到AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
 
 
 #### Japan DNS Server

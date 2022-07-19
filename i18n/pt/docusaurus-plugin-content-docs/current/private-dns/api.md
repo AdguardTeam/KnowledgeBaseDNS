@@ -104,7 +104,7 @@ Uma vez que os tokens de acesso e atualização são gerados, as chamadas de API
 
 ## API
 
-### Especificação da OpenAPI
+### OpenAPI spec
 
 A especificação OpenAPI está disponível em [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
