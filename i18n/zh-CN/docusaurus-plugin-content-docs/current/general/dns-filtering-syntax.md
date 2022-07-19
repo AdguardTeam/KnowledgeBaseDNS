@@ -10,9 +10,7 @@ sidebar_position: 2
 有三种不同的方法来编写主机拦截列表：
 
 * [Adblock 风格的语法](#adblock-style-syntax)： 基于使用 Adblock 风格的规则语法子集编写过滤规则的现代方法。 这样阻止拦截列表与浏览器广告拦截器兼容。
-
-* [/etc/hosts 语法](#etc-hosts-syntax)： 使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
-
+* [`/etc/hosts`语法](#etc-hosts-syntax)： 使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
 * [只适用于域的语法](#domains-only-syntax)：一个简单的域名列表。
 
 如果您要创建阻止列表，我们建议使用 [Adblock 样式语法](#adblock-style-syntax)。 与旧式语法相比，它有几个重要的优点：
