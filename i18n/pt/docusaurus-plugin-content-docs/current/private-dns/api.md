@@ -15,11 +15,11 @@ Faça uma solicitação POST para a seguinte URL com os parâmetros fornecidos p
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Parâmetro    | Descrição                                                                     |
+|:------------ |:----------------------------------------------------------------------------- |
+| **username** | Conta de e-mail                                                               |
+| **password** | Senha da conta                                                                |
+| mfa_token    | Token de autenticação de dois fatores (se ativado nas configurações da conta) |
 
 Na resposta, você obterá `access_token` e `refresh_token`.
 
@@ -56,9 +56,9 @@ Faça a seguinte solicitação POST com os parâmetros fornecidos para obter um 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Parâmetro         | Descrição                                                                  |
+|:----------------- |:-------------------------------------------------------------------------- |
+| **refresh_token** | `TOKEN DE ATUALIZAÇÃO` com o qual um novo token de acesso deve ser gerado. |
 
 #### Exemplo de solicitação
 
@@ -91,9 +91,9 @@ Para revogar um token de atualização, faça a seguinte solicitação POST com 
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| Parâmetro         | Descrição                                    |
+|:----------------- |:-------------------------------------------- |
+| **refresh_token** | `TOKEN DE ATUALIZAÇÃO` que deve ser revogado |
 
 ### Acessando a API
 
