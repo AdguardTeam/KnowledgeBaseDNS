@@ -10,7 +10,7 @@ DNS代表“域名系统”，它的作用是将网站的名称转换为IP 地�
 
 > 默认DNS 服务器通常由你的ISP提供。 这意味着你的ISP可以跟踪你的在线活动，并将日志出售给第三方。
 
-![你的设备总是使用一些DNS 服务器来取得应用程序想要访问的域名的IP 地址。](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
+![你的设备总是使用一些DNS 服务器来取得应用程序想要访问的域名的IP 地址。](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
 也有一些DNS 服务器可以在DNS层面拦截特定的网站。 它们如何工作？ 当你的设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过为已拦截的域名回复一个不可路由的IP 地址来阻止连接。
 

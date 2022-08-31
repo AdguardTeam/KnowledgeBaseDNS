@@ -19,11 +19,11 @@ Você pode implantar esta Base de Conhecimento localmente em seu computador para
 
 ## Traduzindo artigos {#translate-adguard}
 
-A tradução dos artigos existentes da Base de Conhecimento é realizada [na plataforma Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Todos os detalhes sobre traduções e como trabalhar com o Crowdin podem ser encontrados [no artigo dedicado](https://kb.adguard.com/en/general/adguard-translations) da Base de conhecimento do AdGuard Ad Blocker.
+A tradução dos artigos existentes da Base de Conhecimento é realizada [na plataforma Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Todos os detalhes sobre traduções e como trabalhar com o Crowdin podem ser encontrados [no artigo dedicado](https://kb.adguard.com/en/general/adguard-translations) da Base de conhecimento do bloqueador de anúncios do AdGuard.
 
 Ao trabalhar em artigos da Base de Conhecimento de AdGuard DNS, você pode encontrar strings contendo formas plurais que devem ser traduzidas com atenção extra. [Em um artigo separado](https://kb.adguard.com/en/miscellaneous/plurals), descrevemos em detalhes as dificuldades que podem surgir ao traduzir strings com formas plurais e fornecemos instruções extensas sobre como trabalhar com elas na plataforma Crowdin.
 
-## Trabalhando em questões abertas
+## Trabalhando em problemas abertos
 
 Às vezes, existem [tarefas abertas](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) relacionadas à atualização da Base de Conhecimento. Você pode nos ajudar a acelerar sua conclusão [da mesma forma](#suggest-change) que você sugeriria quaisquer outras alterações nesta Base de Conhecimento. Escolha qualquer problema que você achar atraente e comece a trabalhar nele. Se você tiver alguma dúvida - você pode perguntar diretamente nos comentários dessa edição.
   

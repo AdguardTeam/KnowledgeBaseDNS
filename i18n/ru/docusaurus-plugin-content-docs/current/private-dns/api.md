@@ -15,11 +15,11 @@ AdGuard DNS предоставляет REST API, который вы может�
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Параметр             | Описание                                                                 |
+|:-------------------- |:------------------------------------------------------------------------ |
+| **имя пользователя** | Email                                                                    |
+| **пароль**           | Пароль                                                                   |
+| mfa_token            | Токен двухфакторной аутентификации (если включена в настройках аккаунта) |
 
 В ответ вы получите `access_token` и `refresh_token`.
 
@@ -56,9 +56,9 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Параметр          | Описание                                                                         |
+|:----------------- |:-------------------------------------------------------------------------------- |
+| **refresh_token** | `REFRESH-токен`, с помощью которого должен быть сгенерирован новый токен доступа |
 
 #### Пример запроса
 
@@ -91,9 +91,9 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| Параметр          | Описание                                     |
+|:----------------- |:-------------------------------------------- |
+| **refresh_token** | `REFRESH-токен`, который должен быть сброшен |
 
 ### Получение доступа к API
 

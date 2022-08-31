@@ -10,7 +10,7 @@ DNS significa "Sistema de nomes de domínio" e seu objetivo é converter os nome
 
 > O servidor DNS padrão geralmente é fornecido pelo seu ISP. Isso significa que seu ISP pode rastrear sua atividade online e vender logs para terceiros.
 
-![Seu dispositivo sempre usa algum servidor DNS para obter endereços IP dos aplicativos de nome de domínio para os quais deseja navegar](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
+![Seu dispositivo sempre usa algum servidor DNS para obter endereços IP dos aplicativos de nome de domínio para os quais deseja navegar](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
 Existem também servidores DNS que podem bloquear determinados sites no nível DNS. Como eles funcionam? Quando seu dispositivo envia uma solicitação "ruim", seja um anúncio ou um rastreador, um servidor DNS impede a conexão respondendo com um endereço IP não roteável para um domínio bloqueado.
 

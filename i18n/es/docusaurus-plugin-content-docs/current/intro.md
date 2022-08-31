@@ -10,7 +10,7 @@ DNS stands for "Domain name system", and its purpose is to convert websites' nam
 
 > The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
+![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
 There are also DNS servers that can block certain websites at DNS level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
 
