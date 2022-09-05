@@ -1,5 +1,5 @@
 ---
-title: 已知的DNS 提供商
+title: 已知的 DNS 提供商
 sidebar_position: 3
 ---
 

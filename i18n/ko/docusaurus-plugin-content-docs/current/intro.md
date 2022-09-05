@@ -10,7 +10,7 @@ DNS는 "Domain name system"의 약자이며 그 목적은 웹 사이트의 이�
 
 > 기본 DNS 서버는 일반적으로 ISP에서 제공합니다. 이는 ISP가 당신의 온라인 활동을 추적하고 제3자에게 로그를 판매할 수 있음을 의미합니다.
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/public/Adguard/Blog/scr1.png)
+![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
 DNS 수준에서 특정 웹 사이트를 차단할 수 있는 DNS 서버도 있습니다. 그것은 어떻게 작동합니까? 당신의 기기가 광고 또는 추적기에 "잘못된" 요청을 보내면, DNS 서버는 차단된 도메인에 대해 라우팅할 수 없는 IP 주소로 응답하여 연결을 방지합니다.
 
