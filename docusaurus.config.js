@@ -1,5 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
+const fs = require('fs');
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
@@ -12,6 +14,9 @@ const baseUrl = process.env.BASE_URL || '/KnowledgeBaseDNS/';
 const typesenseCollectionName = process.env.SEARCH_COLLECTION || 'docusaurus-2';
 const typesenseHost = process.env.SEARCH_HOST || 'xxx-1.a1.typesense.net';
 const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
+
+const currentImageDomain = process.env.CURRENT_IMAGES_DOMAIN || 'https://cdn.adguard.com';
+const newImageDomain = process.env.NEW_IMAGES_DOMAIN || 'https://cdn.adtidy.org';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -179,5 +184,42 @@ module.exports = {
   ],
   plugins: [
     '@docusaurus/plugin-ideal-image',
+    async function changeImageDomain() {
+      return {
+        name: 'change-image-domain',
+        async postBuild({ outDir }) {
+          let files  = [];
+
+          const getAllHtmlFiles = (dir) => {
+            fs.readdirSync(dir).forEach((file) => {
+                const absoluteFileUrl = path.join(dir, file);
+
+                if (fs.statSync(absoluteFileUrl).isDirectory()) {
+                  return getAllHtmlFiles(absoluteFileUrl);
+                } else if (absoluteFileUrl.match(/[^\/]+\.html$/g)) {
+                  return files.push(absoluteFileUrl)
+                };
+            });
+          }
+
+          getAllHtmlFiles(outDir);
+
+          if (files.length > 0) {
+            const currentDomainRegExp = new RegExp(currentImageDomain, 'g');
+
+            files.forEach((file) => {
+              try {
+                let content = fs.readFileSync(file, { encoding: 'utf8' })
+                content = content.replace(currentDomainRegExp, newImageDomain);
+                fs.writeFileSync(file, content, { encoding: 'utf-8', flag: 'w' })
+              } catch (error) {
+                  console.log(err);
+                  process.exit(255);
+              }
+            });
+          }
+        },
+      };
+    },
   ],
 };
