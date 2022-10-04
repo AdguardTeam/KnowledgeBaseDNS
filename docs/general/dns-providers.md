@@ -1125,3 +1125,19 @@ Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but
 | DNS, IPv4      | Varies; see link above. |
 | DNS, IPv6      | Varies; see link above. |
 | DNSCrypt, IPv4 | Varies; see link above. |
+
+#### dnslow.me
+
+[dnslow.me](https://dnslow.me/) is an advertisement and threat blocking, privacy-first, encrypted DNS, also a free and open source project on GitHub.
+
+Only encrypted DNS protocols are provided, plain-text DNS is not supported here.
+
+All DNS requests will be protected with threat-intelligence feeds and randomly distributed to some other DNS resolvers for enhanced privacy.
+
+Privacy policy: Logging is only enabled to debug, and improve the service itself, minimize the false-positive blocking. All logs will only be existing for a very short time. No logs will be shared, sold, or exchanged with any 3rd-party.
+
+| Protocol       | Address                        |                                                                       |
+|----------------|--------------------------------|-----------------------------------------------------------------------|
+| DNS-over-HTTPS | `https://dnslow.me/dns-query`  | [Add to AdGuard](sdns://AgEAAAAAAAAAAAAJZG5zbG93Lm1lCi9kbnMtcXVlcnk)  |
+| DNS-over-TLS   | `tls://dnslow.me`              | [Add to AdGuard](sdns://AwEAAAAAAAAAAAAJZG5zbG93Lm1l)                 |
+| DNS-over-QUIC  | `quic://dnslow.me`             | [Add to AdGuard](sdns://BAEAAAAAAAAAAAAJZG5zbG93Lm1l)                 |
