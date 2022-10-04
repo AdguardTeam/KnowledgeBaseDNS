@@ -1,27 +1,27 @@
 ---
-title: Overview
+title: Přehled
 sidebar_position: 1
 ---
 
-## What is AdGuard DNS?
+## Co je AdGuard DNS?
 
-AdGuard DNS is a free, privacy-oriented DNS resolver that provides secure connection and also can block tracking, ads, phishing and adult content (optionally). AdGuard DNS does not require installing any applications. It is easy to use and can be effortlessly set up on any device (smartphones, desktops, routers, game consoles, etc.).
-
-
-## Public AdGuard DNS servers
-AdGuard DNS has three different public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/en/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+AdGuard DNS je bezplatný DNS řešitel zaměřený na ochranu soukromí, který poskytuje bezpečné připojení a také dokáže blokovat slídiče, reklamy, krádež identity a obsah pro dospělé (volitelně). AdGuard DNS nevyžaduje instalaci žádné aplikace. Snadno se používá a lze jej snadno nastavit na jakémkoli zařízení (chytré telefony, stolní počítače, routery, herní konzole atd.).
 
 
-## AdGuard DNS protocols
-Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
+## Veřejné servery DNS AdGuard
+AdGuard DNS má tři různé veřejné servery. "Výchozí" server slouží k blokování reklam, slídičů, malwaru a krádeže identity. "Ochrana rodiny" dělá totéž, ale také blokuje weby s obsahem pro dospělé a vynucuje možnost "Bezpečné vyhledávání" v prohlížečích, které ji poskytují. "Bez filtrování" poskytuje bezpečné a spolehlivé připojení, ale nic neblokuje. Podrobné pokyny k nastavení AdGuard DNS na libovolném zařízení najdete na [našich stránkách](https://adguard-dns.io/en/public-dns.html). Každý server podporuje jiné zabezpečené protokoly: DNSCrypt, DNS skrze HTTPS (DoH), DNS skrze TLS (DoT) a DNS skrze QUIC (DoQ).
+
+
+## Protokoly AdGuard DNS
+Kromě běžného DNS (IPv4 i IPv6) podporuje AdGuard DNS různé šifrované protokoly, takže si můžete vybrat ten, který vám nejlépe vyhovuje.
 
 ### DNSCrypt
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration. But compared to the DoH, DoT and DoQ protocols, DNSCrypt is considered obsolete and if possible we recommend using these protocols.
+AdGuard DNS umožňuje používat specifický šifrovaný protokol — DNSCrypt. Díky tomu jsou všechny DNS požadavky šifrovány, což vás chrání před možným zachycením požadavků a následným odposlechem a/nebo změnou. Ve srovnání s protokoly DoH, DoT a DoQ je však DNSCrypt považován za zastaralý a pokud je to možné, doporučujeme používat tyto protokoly.
 
-### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
-DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
+### DNS skrze HTTPS (DoH) a DNS skrze TLS (DoT)
+DoH a DoT jsou moderní bezpečné protokoly DNS, které získávají stále větší popularitu a v dohledné budoucnosti se stanou průmyslovými standardy. Oba jsou spolehlivější než DNSCrypt a oba jsou podporovány AdGuard DNS.
 
-### DNS-over-QUIC (DoQ)
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+### DNS skrze QUIC (DoQ)
+[DNS skrze QUIC je nový šifrovací protokol DNS](https://adguard.com/en/blog/dns-over-quic.html) a AdGuard DNS je první veřejný řešitel, který jej podporuje. Na rozdíl od DoH a DoT používá jako transportní protokol QUIC a konečně vrací DNS k jeho kořenům — pracuje přes UDP. Přináší všechny dobré vlastnosti, které nabízí QUIC — výchozí šifrování, zkrácení doby připojení, lepší výkon při ztrátě datových paketů. Kromě toho má být QUIC protokolem na transportní úrovni a nehrozí zde žádné riziko úniku metadat, k němuž by mohlo dojít v případě DoH.
 
 

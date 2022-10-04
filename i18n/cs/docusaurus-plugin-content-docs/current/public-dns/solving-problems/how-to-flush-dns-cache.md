@@ -1,109 +1,109 @@
 ---
-title: How to flush DNS cache
+title: Jak vyprázdnit mezipaměť DNS
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+# Jak vyprázdnit mezipaměť DNS
 
-## What is DNS cache?
+## Co je mezipaměť DNS?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+Do mezipaměti DNS se ukládají IP adresy navštívených webů v lokálním počítači, aby se příště načítaly rychleji. Místo dlouhého vyhledávání DNS systém odpovídá na dotazy pomocí záznamů DNS z dočasné mezipaměti DNS.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+Mezipaměť DNS obsahuje tzv. [zdrojová data (RR)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), které jsou:
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
-* **Class**;
-* **Resource data length**.
+* **Zdrojová data (nebo rdata)**;
+* **Typ záznamu**;
+* **Název záznamu**;
+* **TTL (životnost)**;
+* **Třída**;
+* **Délka zdrojových dat**.
 
-## When you might need to clear the cache
+## Kdy může být nutné vyprázdnit mezipaměť
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Pravidelně se vám zobrazuje chyba 404.** Webové stránky byly např. přeneseny na jiný server a změnila se jejich IP adresa. Aby prohlížeč otevřel webovou stránku z nové IP adresy, je třeba odstranit IP adresu z mezipaměti DNS.
 
-**You want to improve your privacy.**
+**Chcete vylepšit své soukromí.**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
+**Chcete se chránit před útoky hackerů a viry.** Při poškození mezipaměti DNS vás prohlížeč může přesměrovat na IP adresu škodlivé webové stránky, kterou útočník vložil do DNS záznamů vašeho počítače.
 
-## How to flush DNS cache on different OSs
+## Jak vyprázdnit mezipaměť DNS v různých OS
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+Chcete-li v systému macOS vyprázdnit mezipaměť DNS, otevřete Terminál (najdete ho pomocí vyhledávání Spotlight — stiskněte klávesy Command+Mezerník a napište *Terminal*) a zadejte následující příkaz:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+V systémech macOS Big Sur 11.2.0 a macOS Monterey 12.0.0 můžete použít také tento příkaz:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+Poté zadejte heslo správce a dokončete proces.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Chcete-li vyprázdnit mezipaměť DNS v zařízení se systémem Windows, postupujte takto:
 
-Load the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Načtěte příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například Systemd Resolved, DNSMasq, BIND nebo Nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Pro každou distribuci je třeba spustit okno terminálu. Stiskněte Ctrl+Alt+T na klávesnici a pomocí odpovídajícího příkazu vymažte mezipaměť DNS pro službu, na které váš Linux běží.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Chcete-li zjistit, který řešitel DNS používáte, zadejte příkaz `sudo lsof -i :53 -S`.
 
 #### Systemd Resolved
 
-To clear the **Systemd Resolved** DNS cache, type:
+Chcete-li vyprázdnit mezipaměť DNS **Systemd Resolved**, zadejte příkaz:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+V případě úspěchu příkaz nevrátí žádnou odpověď.
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+Chcete-li vyprázdnit mezipaměť **DNSMasq**, musíte ji restartovat:
 
 `sudo service dnsmasq restart`
 
 #### Nscd
 
-To clear the **Nscd** cache, you also need to restart the service:
+Chcete-li vyprázdnit mezipaměť **Nscd**, musíteslužbu také restartovat:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+Chcete-li vyprázdnit mezipaměť DNS **BIND**, spusťte příkaz:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Pak je třeba znovu načíst BIND:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+Zobrazí se zpráva, že server byl znovu úspěšně načten.
 
 ### Android
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení > Systém > Pokročilé > Možnosti resetování > Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+Vyprázdnění mezipaměti DNS v iPadu nebo iPhonu lze provést různými způsoby.
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+Nejjednodušší je aktivovat režim Letadlo (například v Ovládacím centru nebo v aplikaci Nastavení) a opět jej deaktivovat. Mezipaměť DNS bude vyprázdněna.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap on *Reset Network Settings*.
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Obecné*, sjeďte dolů, vyhledejte *Resetovat* a klepněte na *Resetovat nastavení sítě*.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.

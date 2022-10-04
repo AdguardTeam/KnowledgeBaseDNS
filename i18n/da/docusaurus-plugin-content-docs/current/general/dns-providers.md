@@ -1,17 +1,17 @@
 ---
-title: Known DNS Providers
+title: Kendte DNS-udbydere
 sidebar_position: 3
 ---
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) er en alternativ løsning til adblocking, fortrolighedsbeskyttelse og forældrekontrol. Den tilbyder det nødvendige antal beskyttelsesfunktioner mod onlineannoncer, trackere og phishing, uanset hvilken platform og enhed, der bruges.
 
-#### Default
+#### Standard
 
-These servers provide blocking ads, tracking and phishing
+Disse servere tilbyder blokering af annoncer, sporing og phishing
 
-| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| Protokol       | Address                                                                       |                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `94.140.14.14` and `94.140.15.15`                                             | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNA)                                                                                                           |
 | DNS, IPv6      | `2a10:50c0::ad1:ff` and `2a10:50c0::ad2:ff`                                   | [Add to AdGuard](sdns://AAcAAAAAAAAAE1syYTEwOjUwYzA6OmFkMTpmZl0)                                                                                                  |
@@ -26,7 +26,7 @@ These servers provide blocking ads, tracking and phishing
 
 These servers provide the Default features + Blocking adult websites + Safe search
 
-| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| Protokol       | Address                                                                       |                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `94.140.14.15` and `94.140.15.16`                                             | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNQ)                                                                                                           |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`                                 | [Add to AdGuard](sdns://AAcAAAAAAAAAFFsyYTEwOjUwYzA6OmJhZDE6ZmZd)                                                                                                 |
@@ -40,7 +40,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 These servers provide a secure and reliable connection, but they don't filter anything like the "Default" and "Family protection" servers.
 
-| Protocol       | Address                                                                        |                                                                                                                                                                     |
+| Protokol       | Address                                                                        |                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `94.140.14.140` and `94.140.14.141`                                            | [Add to AdGuard](sdns://AAcAAAAAAAAADTk0LjE0MC4xNC4xNDA)                                                                                                            |
 | DNS, IPv6      | `2a10:50c0::1:ff` and `2a10:50c0::2:ff`                                        | [Add to AdGuard](sdns://AAcAAAAAAAAAEVsyYTEwOjUwYzA6OjE6ZmZd)                                                                                                       |
@@ -59,7 +59,7 @@ These servers provide a secure and reliable connection, but they don't filter an
 
 In "Basic" mode, there is no traffic filtering
 
-| Protocol       | Address                                                               |                                                                                                                                                         |
+| Protokol       | Address                                                               |                                                                                                                                                         |
 | -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `77.88.8.8` and `77.88.8.1`                                           | [Add to AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguOA)                                                                                                     |
 | DNS, IPv6      | `2a02:6b8::feed:0ff` and `2a02:6b8:0:1::feed:0ff`                     | [Add to AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
@@ -70,7 +70,7 @@ In "Basic" mode, there is no traffic filtering
 
 In "Safe" mode, protection from infected and fraudulent sites is provided
 
-| Protocol  | Address                                           |                                                                   |
+| Protokol  | Address                                           |                                                                   |
 | --------- | ------------------------------------------------- | ----------------------------------------------------------------- |
 | DNS, IPv4 | `77.88.8.88` and `77.88.8.2`                      | [Add to AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` and `2a02:6b8:0:1::feed:bad` | [Add to AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
@@ -80,7 +80,7 @@ In "Safe" mode, protection from infected and fraudulent sites is provided
 
 In "Family" mode, protection from infected, fraudulent and adult sites is provided
 
-| Protocol  | Address                                           |                                                                   |
+| Protokol  | Address                                           |                                                                   |
 | --------- | ------------------------------------------------- | ----------------------------------------------------------------- |
 | DNS, IPv4 | `77.88.8.3` and `77.88.8.7`                       | [Add to AdGuard](sdns://AAAAAAAAAAAACTc3Ljg4LjguMw)               |
 | DNS, IPv6 | `2a02:6b8::feed:a11` and `2a02:6b8:0:1::feed:a11` | [Add to AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDphMTFd) |
@@ -93,7 +93,7 @@ In "Family" mode, protection from infected, fraudulent and adult sites is provid
 
 Blocks access to all adult, pornographic and explicit sites, including proxy & VPN domains and mixed content sites
 
-| Protocol       | Address                                                  |                                                                                                                                       |
+| Protokol       | Address                                                  |                                                                                                                                       |
 | -------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `185.228.168.168` and `185.228.169.168`                  | [Add to AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjguMTY4LjE2OA)                                                                           |
 | DNS, IPv6      | `2a0d:2a00:1::` and `2a0d:2a00:2::`                      | [Add to AdGuard](sdns://AAAAAAAAAAAAD1syYTBkOjJhMDA6MTo6XQ)                                                                           |
@@ -106,7 +106,7 @@ Blocks access to all adult, pornographic and explicit sites, including proxy & V
 
 Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains
 
-| Protocol       | Address                                                   |                                                                                                                                         |
+| Protokol       | Address                                                   |                                                                                                                                         |
 | -------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `185.228.168.10` and `185.228.169.11`                     | [Add to AdGuard](sdns://AAAAAAAAAAAADjE4NS4yMjguMTY4LjEw)                                                                               |
 | DNS, IPv6      | `2a0d:2a00:1::1` and `2a0d:2a00:2::1`                     | [Add to AdGuard](sdns://AAAAAAAAAAAAEFsyYTBkOjJhMDA6MTo6MV0)                                                                            |
@@ -120,7 +120,7 @@ Less restrictive than the Family filter, it only blocks access to adult content 
 
 Blocks phishing, spam and malicious domains
 
-| Protocol       | Address                                              |                                                                                                     |
+| Protokol       | Address                                              |                                                                                                     |
 | -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `185.228.168.9` and `185.228.169.9`                  | [Add to AdGuard](sdns://AAAAAAAAAAAADTE4NS4yMjguMTY4Ljk)                                            |
 | DNS, IPv6      | `2a0d:2a00:1::2` and `2a0d:2a00:2::2`                | [Add to AdGuard](sdns://AAAAAAAAAAAAEFsyYTBkOjJhMDA6MTo6Ml0)                                        |
@@ -131,7 +131,7 @@ Blocks phishing, spam and malicious domains
 
 [Comodo Secure DNS](https://comodo.com/secure-dns/) is a domain name resolution service that resolves your DNS requests through worldwide network of DNS servers. Removes excessive ads and protects from phishing and spyware.
 
-| Protocol       | Address                                                               |                                                                                                                                                         |
+| Protokol       | Address                                                               |                                                                                                                                                         |
 | -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` and `8.20.247.20`                                        | [Add to AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Add to AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
@@ -143,7 +143,7 @@ Blocks phishing, spam and malicious domains
 
 These servers provide reliable and fast DNS lookups without blocking any specific categories
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `156.154.70.1` and `156.154.71.1`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMQ)       |
 | DNS, IPv6 | `2610:a1:1018::1` and `2610:a1:1019::1` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjFd) |
@@ -152,7 +152,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (Non-existent Domain) responses to a landing page
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `156.154.70.5` and `156.154.71.5`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNQ)       |
 | DNS, IPv6 | `2610:a1:1018::5` and `2610:a1:1019::5` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjVd) |
@@ -161,7 +161,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 These servers provide protection against malicious domains and also include "Reliability & Performance" features
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `156.154.70.2` and `156.154.71.2`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMg)       |
 | DNS, IPv6 | `2610:a1:1018::2` and `2610:a1:1019::2` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjJd) |
@@ -170,7 +170,7 @@ These servers provide protection against malicious domains and also include "Rel
 
 These servers provide blocking access to mature content and also include "Reliability & Performance" + "Threat Protection" features
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `156.154.70.3` and `156.154.71.3`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMw)       |
 | DNS, IPv6 | `2610:a1:1018::3` and `2610:a1:1019::3` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjNd) |
@@ -179,7 +179,7 @@ These servers provide blocking access to mature content and also include "Reliab
 
 These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `156.154.70.4` and `156.154.71.4`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNA)       |
 | DNS, IPv6 | `2610:a1:1018::4` and `2610:a1:1019::4` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjRd) |
@@ -192,7 +192,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 DNS servers with custom filtering that protects your device from malware
 
-| Protocol       | Address                                                       |                                                                                                                                              |
+| Protokol       | Address                                                       |                                                                                                                                              |
 | -------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `208.67.222.222` and `208.67.220.220`                         | [Add to AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMjIy)                                                                                    |
 | DNS, IPv6      | `2620:119:35::35` and `2620:119:53::53`                       | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVd)                                                                                |
@@ -204,7 +204,7 @@ DNS servers with custom filtering that protects your device from malware
 
 OpenDNS servers that provide adult content blocking
 
-| Protocol       | Address                                                      |                                                                                                                                             |
+| Protokol       | Address                                                      |                                                                                                                                             |
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `208.67.222.123` and `208.67.220.123`                        | [Add to AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMTIz)                                                                                   |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [Add to AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
@@ -214,7 +214,7 @@ OpenDNS servers that provide adult content blocking
 
 [Google DNS](https://developers.google.com/speed/public-dns/) is a free, global DNS resolution service that you can use as an alternative to your current DNS provider.
 
-| Protocol       | Address                                           |                                                                                                                  |
+| Protokol       | Address                                           |                                                                                                                  |
 | -------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.8.8.8` and `8.8.4.4`                           | [Add to AdGuard](sdns://AAAAAAAAAAAABzguOC44Ljg)                                                                 |
 | DNS, IPv6      | `2001:4860:4860::8888` and `2001:4860:4860::8844` | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0)                                             |
@@ -227,7 +227,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Standard
 
-| Protocol             | Address                                           |                                                                                                                                                                                                          |
+| Protokol             | Address                                           |                                                                                                                                                                                                          |
 | -------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4            | `1.1.1.1` and `1.0.0.1`                           | [Add to AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjE)                                                                                                                                                         |
 | DNS, IPv6            | `2606:4700:4700::1111` and `2606:4700:4700::1001` | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMV0)                                                                                                                                     |
@@ -237,7 +237,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Malware blocking only
 
-| Protocol       | Address                                           |                                                                                              |
+| Protokol       | Address                                           |                                                                                              |
 | -------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `1.1.1.2` and `1.0.0.2`                           | [Add to AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjI)                                             |
 | DNS, IPv6      | `2606:4700:4700::1112` and `2606:4700:4700::1002` | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0)                         |
@@ -247,7 +247,7 @@ OpenDNS servers that provide adult content blocking
 
 #### Malware and adult content blocking
 
-| Protocol             | Address                                           |                                                                                           |
+| Protokol             | Address                                           |                                                                                           |
 | -------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | DNS, IPv4            | `1.1.1.3` and `1.0.0.3`                           | [Add to AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjM)                                          |
 | DNS, IPv6            | `2606:4700:4700::1113` and `2606:4700:4700::1003` | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
@@ -263,7 +263,7 @@ OpenDNS servers that provide adult content blocking
 
 Regular DNS servers which provide protection from phishing and spyware. They include blocklists, DNSSEC validation, and other security features.
 
-| Protocol       | Address                                                        |                                                                                                                                               |
+| Protokol       | Address                                                        |                                                                                                                                               |
 | -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.9` and `149.112.112.112`                                | [Add to AdGuard](sdns://AAAAAAAAAAAABzkuOS45Ljk)                                                                                              |
 | DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                              | [Add to AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjpmZV0)                                                                                      |
@@ -276,7 +276,7 @@ Regular DNS servers which provide protection from phishing and spyware. They inc
 
 Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-Subnet
 
-| Protocol       | Address                                                           |                                                                                                                                                   |
+| Protokol       | Address                                                           |                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.10` and `149.112.112.10`                                   | [Add to AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEw)                                                                                                 |
 | DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                                | [Add to AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMF0)                                                                                          |
@@ -289,7 +289,7 @@ Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-S
 
 EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client-Subnet.
 
-| Protocol       | Address                                                        |                                                                                                                                               |
+| Protokol       | Address                                                        |                                                                                                                                               |
 | -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.11` and `149.112.112.11`                                | [Add to AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEx)                                                                                             |
 | DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                             | [Add to AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMV0)                                                                                      |
@@ -301,7 +301,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: it doesn't sell public DNS data to third parties and redirect users' queries to serve them any ads.
 
-| Protocol  | Address                                |                                                               |
+| Protokol  | Address                                |                                                               |
 | --------- | -------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` or `64.6.65.6`             | [Add to AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` or `2620:74:1c::2:2` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
@@ -309,7 +309,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a swiss public DNS service provided by [switch.ch](https://www.switch.ch/)
 
-| Protocol       | Address                                                                           |                                                                           |
+| Protokol       | Address                                                                           |                                                                           |
 | -------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                     | [Add to AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
 | DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [Add to AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
@@ -320,7 +320,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn
 
-| Protocol  | Address                             |                                                          |
+| Protokol  | Address                             |                                                          |
 | --------- | ----------------------------------- | -------------------------------------------------------- |
 | DNS, IPv4 | `216.146.35.35` and `216.146.36.36` | [Add to AdGuard](sdns://AAAAAAAAAAAADTIxNi4xNDYuMzUuMzU) |
 
@@ -328,7 +328,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [DNS.WATCH](https://dns.watch/) is a fast and free server without logging with a privacy protection feature.
 
-| Protocol  | Address                                                       |                                                                              |
+| Protokol  | Address                                                       |                                                                              |
 | --------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | DNS, IPv4 | `84.200.69.80` and `84.200.70.40`                             | [Add to AdGuard](sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA)                      |
 | DNS, IPv6 | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b` | [Add to AdGuard](sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0) |
@@ -360,7 +360,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.
 
-| Protocol  | Address          |                                                           |
+| Protokol  | Address          |                                                           |
 | --------- | ---------------- | --------------------------------------------------------- |
 | DNS, IPv4 | `193.58.251.251` | [Add to AdGuard](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
@@ -370,7 +370,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 #### West DNS Server (Main)
 
-| Protocol       | Address                                                                      |                                                                                                                                                                  |
+| Protokol       | Address                                                                      |                                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `92.38.152.163` and `93.115.24.204`                                          | [Add to AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
 | DNS, IPv6      | `2a03:90c0:56::1a5` and `2a02:7b40:5eb0:e95d::1`                             | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
@@ -381,7 +381,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 #### East DNS Server (Siberia and Far East)
 
-| Protocol       | Address                                   |                                                                                  |
+| Protokol       | Address                                   |                                                                                  |
 | -------------- | ----------------------------------------- | -------------------------------------------------------------------------------- |
 | DNS, IPv4      | `92.223.109.31` and `91.230.211.67`       | [Add to AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
 | DNS, IPv6      | `2a03:90c0:b5::1a` and `2a04:2fc0:39::47` | [Add to AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
@@ -392,7 +392,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 [Safe DNS](https://www.safedns.com/) is a global anycast network which consists of servers located throughout the world — both Americas, Europe, Africa, Australia, and the Far East to ensure a fast and reliable DNS resolving from any point worldwide.
 
-| Protocol  | Address                           |                                                         |
+| Protokol  | Address                           |                                                         |
 | --------- | --------------------------------- | ------------------------------------------------------- |
 | DNS, IPv4 | `195.46.39.39` and `195.46.39.40` | [Add to AdGuard](sdns://AAAAAAAAAAAADDE5NS40Ni4zOS4zOQ) |
 
@@ -405,7 +405,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 In "Private" mode, DNS resolution only
 
-| Protocol               | Address                                                                                              |                                                                                                  |
+| Protokol               | Address                                                                                              |                                                                                                  |
 | ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                                | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
 | DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                          | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
@@ -416,7 +416,7 @@ In "Private" mode, DNS resolution only
 
 In "Protected" mode, malware and phishing protection
 
-| Protocol                 | Address                                                                                                |                                                                                                     |
+| Protokol                 | Address                                                                                                |                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                  | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
 | DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                            | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
@@ -428,7 +428,7 @@ In "Protected" mode, malware and phishing protection
 
 In "Family" mode, Protected + blocking adult content
 
-| Protocol              | Address                                                                                                |                                                                                                 |
+| Protokol              | Address                                                                                                |                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
 | DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                  | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
 | DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                            | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
@@ -439,7 +439,7 @@ In "Family" mode, Protected + blocking adult content
 
 [OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project
 
-| Protocol  | Address                                    |                                                               |
+| Protokol  | Address                                    |                                                               |
 | --------- | ------------------------------------------ | ------------------------------------------------------------- |
 | DNS, IPv4 | `185.121.177.177` and `169.239.202.202`    | [Add to AdGuard](sdns://AAAAAAAAAAAADzE4NS4xMjEuMTc3LjE3Nw)   |
 | DNS, IPv6 | `2a05:dfc7:5::53` and `2a05:dfc7:5353::53` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyYTA1OmRmYzc6NTo6NTNd) |
@@ -450,7 +450,7 @@ In "Family" mode, Protected + blocking adult content
 
 #### Finland DNS Server
 
-| Protocol             | Address                                                                  |                                                                                                                                                               |
+| Protokol             | Address                                                                  |                                                                                                                                                               |
 | -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-TLS, IPv4   | Hostname: `tls://dot-fi.blahdns.com`  IP: `95.216.212.177`               | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWZpLmJsYWhkbnMuY29t)                                                                                     |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-fi.blahdns.com/dns-query` IP: `95.216.212.177`    | [Add to AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWZpLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                              |
@@ -459,7 +459,7 @@ In "Family" mode, Protected + blocking adult content
 
 #### Japan DNS Server
 
-| Protocol             | Address                                                                             |                                                                                                                                                                           |
+| Protokol             | Address                                                                             |                                                                                                                                                                           |
 | -------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-TLS, IPv4   | Hostname: `tls://dot-jp.blahdns.com`  IP: `139.162.112.47`                          | [Add to AdGuard](sdns://AwMAAAAAAAAAAAASZG90LWpwLmJsYWhkbnMuY29t)                                                                                                         |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-jp.blahdns.com/dns-query`                                    | [Add to AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWpwLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                                          |
@@ -468,7 +468,7 @@ In "Family" mode, Protected + blocking adult content
 
 #### Germany DNS Server
 
-| Protocol             | Address                                                                  |                                                                                                                                                               |
+| Protokol             | Address                                                                  |                                                                                                                                                               |
 | -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-TLS, IPv4   | Hostname: `tls://dot-de.blahdns.com`  IP: `159.69.198.101`               | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASZG90LWRlLmJsYWhkbnMuY29t)                                                                                             |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`    | [Add to AdGuard](sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ)                                                           |
@@ -479,7 +479,7 @@ In "Family" mode, Protected + blocking adult content
 
 [Snopyta DNS](https://snopyta.org/) is a privacy friendly DNS service run by Noah Seefried.
 
-| Protocol       | Address                                                                                           |                                                                                       |
+| Protokol       | Address                                                                                           |                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://fi.doh.dns.snopyta.org/dns-query` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZmkuZG9oLmRucy5zbm9weXRhLm9yZwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301`             | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZmkuZG90LmRucy5zbm9weXRhLm9yZw)               |
@@ -489,7 +489,7 @@ In "Family" mode, Protected + blocking adult content
 [DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
-| Protocol       | Address                                                    |                                                                                                                                          |
+| Protokol       | Address                                                    |                                                                                                                                          |
 | -------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns-doh.dnsforfamily.com/dns-query`               | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAgaHR0cHM6Ly9kbnMtZG9oLmRuc2ZvcmZhbWlseS5jb20KL2Rucy1xdWVyeQ)                                      |
 | DNS-over-TLS   | `tls://dns-dot.dnsforfamily.com`                           | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAYZG5zLWRvdC5kbnNmb3JmYW1pbHkuY29t)                                                                |
@@ -502,7 +502,7 @@ In "Family" mode, Protected + blocking adult content
 
 [CZ.NIC ODVR](https://www.nic.cz/odvr/) CZ.NIC ODVR are Open DNSSEC Validating Resolvers. CZ.NIC neither collect any personal data nor gather information on pages where devices sends personal data.
 
-| Protocol       | Address                                     |                                                                  |
+| Protokol       | Address                                     |                                                                  |
 | -------------- | ------------------------------------------- | ---------------------------------------------------------------- |
 | DNS, IPv4      | `193.17.47.1` and `185.43.135.1`            | [Add to AdGuard](sdns://AAAAAAAAAAAACzE5My4xNy40Ny4x)            |
 | DNS, IPv6      | `2001:148f:ffff::1` and `2001:148f:fffe::1` | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syMDAxOjE0OGY6ZmZmZjo6MV0) |
@@ -513,7 +513,7 @@ In "Family" mode, Protected + blocking adult content
 
 [Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
 
-| Protocol       | Address                                |                                                                             |
+| Protokol       | Address                                |                                                                             |
 | -------------- | -------------------------------------- | --------------------------------------------------------------------------- |
 | DNS, IPv4      | `223.5.5.5` and `223.6.6.6`            | [Add to AdGuard](sdns://AAAAAAAAAAAACTIyMy41LjUuNQ)                         |
 | DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1` | [Add to AdGuard](sdns://AAAAAAAAAAAADlsyNDAwOjMyMDA6OjFd)                   |
@@ -524,7 +524,7 @@ In "Family" mode, Protected + blocking adult content
 
 IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It support DNS64 to provide domain name resolution only for IPv6 users.
 
-| Protocol       | Address                           |                                                                           |
+| Protokol       | Address                           |                                                                           |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------- |
 | DNS, IPv6      | `240C::6666` and `240C::6644`     | [Add to AdGuard](sdns://AAAAAAAAAAAADFsyNDBDOjo2NjY2XQ)                   |
 | DNS-over-HTTPS | `https://dns.cfiec.net/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLmNmaWVjLm5ldAovZG5zLXF1ZXJ5) |
@@ -534,7 +534,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 [Nawala Childprotection DNS](http://nawala.id/) is an anycast Internet filtering system that protects children from inappropriate websites and abusive contents.
 
-| Protocol       | Address                                                     |                                                                                                                                           |
+| Protokol       | Address                                                     |                                                                                                                                           |
 | -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `180.131.144.144` and `180.131.145.145`                     | [Add to AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA)                                                                               |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144` | [Add to AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
@@ -543,7 +543,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 **360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
 
-| Protocol       | Address                            |                                                                       |
+| Protokol       | Address                            |                                                                       |
 | -------------- | ---------------------------------- | --------------------------------------------------------------------- |
 | DNS, IPv4      | `101.226.4.6` and `218.30.118.6`   | [Add to AdGuard](sdns://AAAAAAAAAAAACzEwMS4yMjYuNC42)                 |
 | DNS, IPv4      | `123.125.81.6` and `140.207.198.6` | [Add to AdGuard](sdns://AAAAAAAAAAAADDEyMy4xMjUuODEuNg)               |
@@ -554,7 +554,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 [IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://public.dns.iij.jp/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAARcHVibGljLmRucy5paWouanAKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://public.dns.iij.jp`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARcHVibGljLmRucy5paWouanA)                |
@@ -563,7 +563,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 [DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
 
-| Protocol       | Address                           |                                                                   |
+| Protokol       | Address                           |                                                                   |
 | -------------- | --------------------------------- | ----------------------------------------------------------------- |
 | DNS, IPv4      | `119.29.29.29` and `119.28.28.28` | [Add to AdGuard](sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ)           |
 | DNS-over-HTTPS | `https://doh.pub/dns-query`       | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5) |
@@ -578,7 +578,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 Block ads and annoying websites
 
-| Protocol  | Address                                 |                                                             |
+| Protokol  | Address                                 |                                                             |
 | --------- | --------------------------------------- | ----------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.114` and `114.114.115.115` | [Add to AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExNA) |
 
@@ -586,7 +586,7 @@ Block ads and annoying websites
 
 Blocks phishing, malicious and other unsafe websites
 
-| Protocol  | Address                                 |                                                             |
+| Protokol  | Address                                 |                                                             |
 | --------- | --------------------------------------- | ----------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.119` and `114.114.115.119` | [Add to AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExOQ) |
 
@@ -594,7 +594,7 @@ Blocks phishing, malicious and other unsafe websites
 
 These servers block adult websites and inappropriate contents.
 
-| Protocol  | Address                                 |                                                             |
+| Protokol  | Address                                 |                                                             |
 | --------- | --------------------------------------- | ----------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.110` and `114.114.115.110` | [Add to AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExMA) |
 
@@ -602,7 +602,7 @@ These servers block adult websites and inappropriate contents.
 
 [Quad101](https://101.101.101.101) is a free alternative DNS service without logging by TWNIC (Taiwan Network Information Center)
 
-| Protocol       | Address                                 |                                                                          |
+| Protokol       | Address                                 |                                                                          |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------ |
 | DNS, IPv4      | `101.101.101.101` and `101.102.103.104` | [Add to AdGuard](sdns://AAAAAAAAAAAADzEwMS4xMDEuMTAxLjEwMQ)              |
 | DNS, IPv6      | `2001:de4::101` and `2001:de4::102`     | [Add to AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
@@ -616,13 +616,13 @@ These servers block adult websites and inappropriate contents.
 
 #### Pure Edition
 
-| Protocol  | Address                          |                                                         |
+| Protokol  | Address                          |                                                         |
 | --------- | -------------------------------- | ------------------------------------------------------- |
 | DNS, IPv4 | `117.50.10.10` and `52.80.52.52` | [Add to AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMC4xMA) |
 
 #### Block Edition
 
-| Protocol  | Address                          |                                                         |
+| Protokol  | Address                          |                                                         |
 | --------- | -------------------------------- | ------------------------------------------------------- |
 | DNS, IPv4 | `117.50.11.11` and `52.80.66.66` | [Add to AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMS4xMQ) |
 
@@ -632,7 +632,7 @@ These servers block adult websites and inappropriate contents.
 
 #### Singapore DNS Server
 
-| Protocol       | Address                                                                    | Location                                                                                                                                                      |
+| Protokol       | Address                                                                    | Location                                                                                                                                                      |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `174.138.21.128`                                                           | [Add to AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4)                                                                                                     |
 | DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                                | [Add to AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ)                                                                                   |
@@ -646,7 +646,7 @@ These servers block adult websites and inappropriate contents.
 
 #### Japan DNS Server
 
-| Protocol       | Address                                                                        |                                                                                                                                                                           |
+| Protokol       | Address                                                                        |                                                                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `172.104.93.80`                                                                | [Add to AdGuard](sdns://AAAAAAAAAAAADTE3Mi4xMDQuOTMuODA)                                                                                                                  |
 | DNS, IPv6      | `2400:8902::f03c:91ff:feda:c514`                                               | [Add to AdGuard](sdns://AAAAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRd)                                                                                         |
@@ -660,7 +660,7 @@ These servers block adult websites and inappropriate contents.
 
 [FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
 
-| Protocol  | Address                               |                                                           |
+| Protokol  | Address                               |                                                           |
 | --------- | ------------------------------------- | --------------------------------------------------------- |
 | DNS, IPv4 | `172.104.237.57` and `172.104.49.100` | [Add to AdGuard](sdns://AAAAAAAAAAAADjE3Mi4xMDQuMjM3LjU3) |
 | DNS, IPv4 | `37.235.1.174` and `37.235.1.177`     | [Add to AdGuard](sdns://AAAAAAAAAAAADDM3LjIzNS4xLjE3NA)   |
@@ -669,7 +669,7 @@ These servers block adult websites and inappropriate contents.
 
 [Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World
 
-| Protocol  | Address                         |                                                       |
+| Protokol  | Address                         |                                                       |
 | --------- | ------------------------------- | ----------------------------------------------------- |
 | DNS, IPv4 | `80.80.80.80` and `80.80.81.81` | [Add to AdGuard](sdns://AAAAAAAAAAAACzgwLjgwLjgwLjgw) |
 
@@ -681,7 +681,7 @@ These servers block adult websites and inappropriate contents.
 
 These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
-| Protocol       | Address                                                                  |                                                                                                                                                          |
+| Protokol       | Address                                                                  |                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `51.38.83.141`                                                           | [Add to AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgzLjE0MQ)                                                                                                  |
 | DNS, IPv6      | `2001:41d0:801:2000::d64`                                                | [Add to AdGuard](sdns://AAAAAAAAAAAAGVsyMDAxOjQxZDA6ODAxOjIwMDA6OmQ2NF0)                                                                                 |
@@ -694,7 +694,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
-| Protocol       | Address                                                                       |                                                                                                                                                                 |
+| Protokol       | Address                                                                       |                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `51.38.82.198`                                                                | [Add to AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgyLjE5OA)                                                                                                         |
 | DNS, IPv6      | `2001:41d0:801:2000::1b28`                                                    | [Add to AdGuard](sdns://AAAAAAAAAAAAGlsyMDAxOjQxZDA6ODAxOjIwMDA6OjFiMjhd)                                                                                       |
@@ -707,7 +707,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Applied Privacy DNS](https://applied-privacy.net/) operates DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
 
-| Protocol       | Address                                 |                                                                                   |
+| Protokol       | Address                                 |                                                                                   |
 | -------------- | --------------------------------------- | --------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.applied-privacy.net/query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAAXZG9oLmFwcGxpZWQtcHJpdmFjeS5uZXQGL3F1ZXJ5) |
 | DNS-over-TLS   | `tls://dot1.applied-privacy.net`        | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAYZG90MS5hcHBsaWVkLXByaXZhY3kubmV0)         |
@@ -717,7 +717,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content
 
-| Protocol  | Address                            |                                                          |
+| Protokol  | Address                            |                                                          |
 | --------- | ---------------------------------- | -------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` and `52.3.100.184` | [Add to AdGuard](sdns://AAAAAAAAAAAADTU0LjE3NC40MC4yMTM) |
 
@@ -725,7 +725,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [SafeSurfer DNS](https://www.safesurfer.co.nz/) is a DNS service by SafeSurfer that protects your device from harmful and adult contents.
 
-| Protocol       | Address                                                           |                                                                                                                                                   |
+| Protokol       | Address                                                           |                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `104.155.237.225` and `104.197.28.121`                            | [Add to AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Add to AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
@@ -735,7 +735,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
 
-| Protocol       | Address                                                                       |                                                                                                                                                                   |
+| Protokol       | Address                                                                       |                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Add to AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)              |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Add to AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0) |
@@ -746,7 +746,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala. Finland.
 
-| Protocol       | Address                                  |                                                                                     |
+| Protokol       | Address                                  |                                                                                     |
 | -------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://resolver-eu.lelux.fi/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAUcmVzb2x2ZXItZXUubGVsdXguZmkKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://resolver-eu.lelux.fi`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAUcmVzb2x2ZXItZXUubGVsdXguZmk)                |
@@ -755,7 +755,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running out of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
-| Protocol       | Address                                                          |                                                                                                                                                  |
+| Protokol       | Address                                                          |                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Add to AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
@@ -764,7 +764,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 [DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
 
 
-| Protocol       | Address                             |                                                                       |
+| Protokol       | Address                             |                                                                       |
 | -------------- | ----------------------------------- | --------------------------------------------------------------------- |
 | DNS, IPv4      | `185.222.222.222` and `45.11.45.11` | [Add to AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg)           |
 | DNS, IPv6      | `2a09::` and `2a11::`               | [Add to AdGuard](sdns://AAAAAAAAAAAACFsyYTA5Ojpd)                     |
@@ -775,7 +775,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
-| Protocol       | Address                                               |                                                                         |
+| Protokol       | Address                                               |                                                                         |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------- |
 | DNS, IPv4      | `176.9.93.198` and `176.9.1.117`                      | [Add to AdGuard](sdns://AAAAAAAAAAAADDE3Ni45LjkzLjE5OA)                 |
 | DNS, IPv6      | `2a01:4f8:151:34aa::198` and `2a01:4f8:141:316d::117` | [Add to AdGuard](sdns://AAAAAAAAAAAAGFsyYTAxOjRmODoxNTE6MzRhYTo6MTk4XQ) |
@@ -786,7 +786,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/)
 
-| Protocol       | Address                                                                             |                                                                                  |
+| Protokol       | Address                                                                             |                                                                                  |
 | -------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP: `158.64.1.29` and IPv6: `2001:a18:1::29` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` and IPv6: `2001:a18:1::29`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1)                |
@@ -795,7 +795,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver
 
-| Protocol       | Address                                                              |                                                                                                                                                       |
+| Protokol       | Address                                                              |                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `185.121.177.177:5353` | [Add to AdGuard](sdns://AQYAAAAAAAAAFDE4NS4xMjEuMTc3LjE3Nzo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `169.239.202.202:5353` | [Add to AdGuard](sdns://AQYAAAAAAAAAFDE2OS4yMzkuMjAyLjIwMjo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
@@ -804,7 +804,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München
 
-| Protocol             | Address                                                                |                                                                                                                                                          |
+| Protokol             | Address                                                                |                                                                                                                                                          |
 | -------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-TLS, IPv4   | Hostname: `tls://dot.ffmuc.net`                                        | [Add to AdGuard](sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA)                                                                                              |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query`                            | [Add to AdGuard](sdns://AgcAAAAAAAAAAAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5)                                                                                |
@@ -815,7 +815,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Hosted in Zurich, Switzerland
 
-| Protocol       | Address                                                                                        |                                                                                               |
+| Protokol       | Address                                                                                        |                                                                                               |
 | -------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.digitale-gesellschaft.ch/dns-query` IP: `185.95.218.42` and IPv6: `2a05:fc84::42` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaAovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://dns.digitale-gesellschaft.ch` IP: `185.95.218.43` and IPv6: `2a05:fc84::43`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaA)               |
@@ -823,7 +823,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [LibreDNS](https://libredns.gr/) is a public encrypted DNS service run by [LibreOps](https://libreops.cc/).
 
-| Protocol       | Address                                      |                                                                              |
+| Protokol       | Address                                      |                                                                              |
 | -------------- | -------------------------------------------- | ---------------------------------------------------------------------------- |
 | DNS, IPv4      | `88.198.92.222`                              | [Add to AdGuard](sdns://AAAAAAAAAAAADTg4LjE5OC45Mi4yMjI)                     |
 | DNS-over-HTTPS | `https://doh.libredns.gr/dns-query`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAPZG9oLmxpYnJlZG5zLmdyCi9kbnMtcXVlcnk) |
@@ -834,7 +834,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 [ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging
 
-| Protocol             | Address                                                                                   |                                                                                                                                                                                   |
+| Protokol             | Address                                                                                   |                                                                                                                                                                                   |
 | -------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-TLS, IPv4   | Hostname: `tls://ibksturm.synology.me` IP: `83.77.85.7`                                   | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAUaWJrc3R1cm0uc3lub2xvZ3kubWU)                                                                                                              |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `178.82.102.190`                   | [Add to AdGuard](sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5)                                                     |
@@ -847,7 +847,7 @@ A collaborative open project to promote, implement and deploy [DNS Privacy](http
 
 DNS servers run by the [Stubby developers](https://getdnsapi.net/)
 
-| Protocol     | Address                                                                                                                      |                                                                          |
+| Protokol     | Address                                                                                                                      |                                                                          |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                          | [Add to AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
 | DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
@@ -855,7 +855,7 @@ DNS servers run by the [Stubby developers](https://getdnsapi.net/)
 
 Other DNS servers with 'no logging' policy
 
-| Protocol           | Address                                                                                                             |                                                                           |
+| Protokol           | Address                                                                                                             |                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
 | DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
@@ -871,7 +871,7 @@ Other DNS servers with 'no logging' policy
 
 DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
 
-| Protocol     | Address                                                                                                          |                                                                               |
+| Protokol     | Address                                                                                                          |                                                                               |
 | ------------ | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
 | DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
@@ -884,7 +884,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 [Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
 
-| Protocol                                     | Address                           |                                                                           |
+| Protokol                                     | Address                           |                                                                           |
 | -------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------- |
 | DNS-over-HTTPS, uncensored                   | `https://blitz.ahadns.com`        | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQA)          |
 | DNS-over-HTTPS, OISD filter                  | `https://blitz.ahadns.com/1:1`    | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQQvMTox)     |
@@ -892,7 +892,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Netherlands
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS, IPv4      | `5.2.75.75`                           | [Add to AdGuard](sdns://AAcAAAAAAAAACTUuMi43NS43NQ)                             |
 | DNS, IPv6      | `2a04:52c0:101:75::75`                | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyYTA0OjUyYzA6MTAxOjc1Ojo3NV0)            |
@@ -901,7 +901,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### India
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS, IPv4      | `45.79.120.233`                       | [Add to AdGuard](sdns://AAAAAAAAAAAADTQ1Ljc5LjEyMC4yMzM)                        |
 | DNS, IPv6      | `2400:8904:e001:43::43`               | [Add to AdGuard](sdns://AAAAAAAAAAAAF1syNDAwOjg5MDQ6ZTAwMTo0Mzo6NDNd)           |
@@ -910,7 +910,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Los Angeles
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS, IPv4      | `45.67.219.208`                       | [Add to AdGuard](sdns://AAAAAAAAAAAADTQ1LjY3LjIxOS4yMDg)                        |
 | DNS, IPv6      | `2a04:bdc7:100:70::70`                | [Add to AdGuard](sdns://AAAAAAAAAAAAFlsyYTA0OmJkYzc6MTAwOjcwOjo3MF0)            |
@@ -919,7 +919,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### New York
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS, IPv4      | `185.213.26.187`                      | [Add to AdGuard](sdns://AAAAAAAAAAAADjE4NS4yMTMuMjYuMTg3)                       |
 | DNS, IPv6      | `2a0d:5600:33:3::3`                   | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syYTBkOjU2MDA6MzM6Mzo6M10)                |
@@ -928,14 +928,14 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Poland
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLnBsLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.pl.ahadns.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90LnBsLmFoYWRucy5uZXQ)                |
 
 #### Italy
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
@@ -943,21 +943,21 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Spain
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLmVzLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.es.ahadns.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90LmVzLmFoYWRucy5uZXQ)                |
 
 #### Norway
 
-| Protocol       | Address                               |                                                                                 |
+| Protokol       | Address                               |                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.no.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLm5vLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.no.ahadns.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lm5vLmFoYWRucy5uZXQ)                |
 
 #### Chicago
 
-| Protocol       | Address                                |                                                                                  |
+| Protokol       | Address                                |                                                                                  |
 | -------------- | -------------------------------------- | -------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAASZG9oLmNoaS5haGFkbnMubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://dot.chi.ahadns.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASZG90LmNoaS5haGFkbnMubmV0)                |
@@ -968,7 +968,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### DNS Server 1
 
-| Protocol       | Address                                                    |                                                                                                                                          |
+| Protokol       | Address                                                    |                                                                                                                                          |
 | -------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `45.76.113.31`                                             | [Add to AdGuard](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [Add to AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
@@ -979,7 +979,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 [puntCAT](http://www.servidordenoms.cat/) is physically located near Barcelona, Spain. puntCAT offers a public DNS service, free, secure, close and that respects your privacy.
 
-| Protocol  | Address            |                                                                 |
+| Protokol  | Address            |                                                                 |
 | --------- | ------------------ | --------------------------------------------------------------- |
 | DNS, IPv4 | `109.69.8.51`      | [Add to AdGuard](sdns://AAAAAAAAAAAACzEwOS42OS44LjUx)           |
 | DNS, IPv6 | `2a00:1508:0:4::9` | [Add to AdGuard](sdns://AAAAAAAAAAAAElsyYTAwOjE1MDg6MDo0Ojo5XQ) |
@@ -989,11 +989,11 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 [DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
 
-#### Default
+#### Standard
 
 These servers provide DNS resolution without traffic filtering.
 
-| Protocol       | Address                                 |                                                                              |
+| Protokol       | Address                                 |                                                                              |
 | -------------- | --------------------------------------- | ---------------------------------------------------------------------------- |
 | DNS, IPv4      | `185.235.81.1` and `185.235.81.2`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE4NS4yMzUuODEuMQ)                      |
 | DNS, IPv6      | `2a0d:4d00:81::1` and `2a0d:4d00:81::2` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyYTBkOjRkMDA6ODE6OjFd)                |
@@ -1004,7 +1004,7 @@ These servers provide DNS resolution without traffic filtering.
 
 Safe mode guard against infected, fraudulent or bot sites.
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `185.235.81.3` and `185.235.81.4`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE4NS4yMzUuODEuMw)       |
 | DNS, IPv6 | `2a0d:4d00:81::3` and `2a0d:4d00:81::4` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyYTBkOjRkMDA6ODE6OjNd) |
@@ -1013,7 +1013,7 @@ Safe mode guard against infected, fraudulent or bot sites.
 
 Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
-| Protocol  | Address                                 |                                                               |
+| Protokol  | Address                                 |                                                               |
 | --------- | --------------------------------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `185.235.81.5` and `185.235.81.6`       | [Add to AdGuard](sdns://AAAAAAAAAAAADDE4NS4yMzUuODEuNQ)       |
 | DNS, IPv6 | `2a0d:4d00:81::5` and `2a0d:4d00:81::6` | [Add to AdGuard](sdns://AAAAAAAAAAAAEVsyYTBkOjRkMDA6ODE6OjVd) |
@@ -1024,14 +1024,14 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 #### Ultra-low latency
 
-| Protocol       | Address                  |                                                                             |
+| Protokol       | Address                  |                                                                             |
 | -------------- | ------------------------ | --------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.nextdns.io` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8KL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dns.nextdns.io`   | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8)                |
 
 #### Anycast
 
-| Protocol       | Address                          |                                                                                       |
+| Protokol       | Address                          |                                                                                       |
 | -------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://anycast.dns.nextdns.io` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://anycast.dns.nextdns.io`   | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
@@ -1043,7 +1043,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 #### Unfiltered
 
-| Protocol       | Address                         |                                                                         |
+| Protokol       | Address                         |                                                                         |
 | -------------- | ------------------------------- | ----------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://basic.rethinkdns.com/` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAUYmFzaWMucmV0aGlua2Rucy5jb20BLw) |
 | DNS-over-TLS   | `tls://max.rethinkdns.com`      | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASbWF4LnJldGhpbmtkbnMuY29t)       |
@@ -1055,7 +1055,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 #### Block malware
 
-| Protocol       | Address                           |                                                                                      |
+| Protokol       | Address                           |                                                                                      |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------ |
 | DNS, IPv4      | `76.76.2.1`                       | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
 | DNS-over-HTTPS | `https://freedns.controld.com/p1` | [Add to AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
@@ -1063,7 +1063,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ##### Block malware + ads
 
-| Protocol       | Address                           |                                                                                      |
+| Protokol       | Address                           |                                                                                      |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------ |
 | DNS, IPv4      | `76.76.2.2`                       | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMg)                                  |
 | DNS-over-HTTPS | `https://freedns.controld.com/p2` | [Add to AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA) |
@@ -1071,7 +1071,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ##### Block malware + ads + social
 
-| Protocol       | Address                           |                                                                                      |
+| Protokol       | Address                           |                                                                                      |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------ |
 | DNS, IPv4      | `76.76.2.3`                       | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMw)                                  |
 | DNS-over-HTTPS | `https://freedns.controld.com/p3` | [Add to AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDMAAAA) |
@@ -1083,14 +1083,14 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 #### Non-filtering
 
-| Protocol       | Address                             |                                                                              |
+| Protokol       | Address                             |                                                                              |
 | -------------- | ----------------------------------- | ---------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.mullvad.net/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://doh.mullvad.net`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0)                |
 
 #### Ad blocking
 
-| Protocol       | Address                                     |                                                                                         |
+| Protokol       | Address                                     |                                                                                         |
 | -------------- | ------------------------------------------- | --------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://adblock.doh.mullvad.net`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ)                |
@@ -1105,7 +1105,7 @@ In this section we list small, mostly personal DNS resolvers. They often have on
 
 Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
 
-| Protocol       | Address                                                      |                                                                                                                                                         |
+| Protokol       | Address                                                      |                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Add to AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
 | DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Add to AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
@@ -1117,7 +1117,7 @@ Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization 
 
 Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
-| Protocol       | Address                                               |                                                                                                      |
+| Protokol       | Address                                               |                                                                                                      |
 | -------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Add to AdGuard](sdns://AgEAAAAAAAAAAAAhZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbToyNTAxCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Add to AdGuard](sdns://AwEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM)                 |

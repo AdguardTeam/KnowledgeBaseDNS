@@ -1,25 +1,25 @@
 ---
-title: 'Private AdGuard DNS beta test'
+title: 'Beta test soukromého AdGuard DNS'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Soukromý AdGuard DNS je nejmladším produktem AdGuardu, i když je v jistém smyslu logickým pokračováním myšlenky [AdGuard Home](https://kb.adguard.com/en/home/overview). S každou novou verzí se snažíme soukromý AdGuard DNS vylepšovat. A na cestě k dokonalosti opravdu potřebujeme pomoc beta testerů. Přidejte se k našemu týmu!
 
-## How to become a beta tester
+## Jak se stát beta testerem
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Pivate AdGuard DNS, use the service and send us reports on how it works.
+Chcete-li se stát beta testerem soukromého AdGuard DNS [, přejděte na web AdGuard DNS](https://adguard-dns.io/en/welcome.html), klikněte na tlačítko 'Připojit se k beta verzi' v pravém horním rohu, přihlaste se prostřednictvím sociálních médií nebo existujícího AdGuard účtu. To je vše: nyní si můžete nastavit soukromý AdGuard DNS, používat jej a posílat nám zprávy o tom, jak funguje.
 
-## How to report a bug
+## Jak nahlásit chybu
 
-Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
+Představme si, že se to stalo — objevili jste chybu. Nebo se jen chcete podělit o svůj nápad s vývojáři? Každopádně existuje několik způsobů, jak nám dát vědět:
 
-* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* Přejděte na [forum.adguard.com](https://forum.adguard.com) a založte tam nové vlákno (nebo najděte stávající) v [kategorii 'Beta testování'](https://forum.adguard.com/index.php?categories/48/). Nejprve si přečtěte [pravidla fóra](https://forum.adguard.com/index.php?threads/14859/).
 
-* Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
+* Přejděte na [repozitář AdGuard DNS](https://github.com/AdguardTeam/AdGuardDNS), vytvořte tam nový problém a podrobně popište požadavek na chybu/funkci.
 
-The above methods are the most preferred, but you can use others if necessary:
+Výše uvedené metody jsou nejvhodnější, ale v případě potřeby můžete použít i jiné:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most efficient way to discuss technical matters.
+* Najdete nás na různých platformách sociálních médií, např. [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) atd. To však není nejefektivnější způsob, jak diskutovat o technických záležitostech.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Pošlete e-mail našemu týmu podpory z karty Podpora v aplikaci nebo napište přímo na adresu [support@adguard.com](mailto:support@adguard.com).
 

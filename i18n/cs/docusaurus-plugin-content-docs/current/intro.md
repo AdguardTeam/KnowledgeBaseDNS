@@ -1,40 +1,40 @@
 ---
-title: Overview
+title: Přehled
 sidebar_position: 1
 slug: /
 ---
 
-## What is DNS
+## Co je DNS
 
-DNS stands for "Domain name system", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS je zkratka pro "Domain name system" a jeho účelem je převádět názvy webových stránek na IP adresy. Pokaždé, když přejdete na webovou stránku, odešle prohlížeč DNS dotaz na server DNS, aby zjistil IP adresu webové stránky. A běžný DNS řešitel jednoduše vrátí IP adresu požadované domény.
 
-> The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+> Výchozí DNS server obvykle poskytuje váš ISP. To znamená, že poskytovatel internetu může sledovat vaši online aktivitu a prodávat záznamy třetím stranám.
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
+![Vaše zařízení vždy používá nějaký DNS server k získání IP adres názvů domén, na které chcete přejít](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
+Existují také DNS servery, které mohou blokovat určité webové stránky na úrovni DNS. Jak fungují? Když vaše zařízení odešle "špatný" požadavek, ať už se jedná o reklamu nebo slídič, server DNS zabrání připojení tím, že odpoví nesměrovatelnou IP adresou blokované domény.
 
-## Why use DNS for content blocking
+## Proč používat DNS pro blokování obsahu
 
-Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker seems to be not enough. To get a better protection, use DNS in combination with VPN and ad blocker.
+K internetu je dnes připojeno úplně všechno, od televize po chytré žárovky, od mobilních zařízení po chytrá auta. A kde je internet, tam jsou i reklamy a slídiče. V tomto případě se zdá, že blokování reklam v prohlížeči nestačí. Chcete-li získat lepší ochranu, použijte DNS v kombinaci s VPN a blokátorem reklam.
 
-Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
+Použití DNS pro blokování obsahu má některé výhody i zjevné nedostatky. Na jedné straně nemá DNS žádná slepá místa, protože sleduje všechna zařízení, nejen prohlížeče. Na druhou stranu však samotné DNS blokování nemůže zajistit kosmetické filtrování.
 
-## What is AdGuard DNS
+## Co je AdGuard DNS
 
-AdGuard DNS is one of the most privacy-friendly DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
+AdGuard DNS je jednou z nejpřívětivějších služeb DNS na trhu. Podporuje spolehlivé šifrovací protokoly jako DNS skze HTTPS, DNS skze TLS a DNS skze QUIC. Může pracovat jako obvyklý DNS řešitel v režimu bez filtrování, ale také může zajistit blokování obsahu na úrovni DNS: identifikovat požadavky na reklamní, sledovací a/nebo domény pro dospělé (volitelně) a odpovědět prázdnou odpovědí. AdGuard má vlastní databázi názvů domén, které zobrazují reklamy, slídiče a podvody, a pravidelně ji aktualizuje.
 
-![An approximate scheme of how AdGuard DNS works](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
+![Přibližné schéma fungování AdGuard DNS](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 
-> About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
+> Přibližně 75 % datového provozu AdGuard DNS je šifrováno. Tím se vlastně DNS servery blokující obsah liší od ostatních. Pokud se podíváte na statistiky CloudFlare nebo Quad9, zjistíte, že šifrované DNS tvoří jen malý podíl všech dotazů.
 
-AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
+AdGuard DNS existuje ve dvou hlavních formách: [veřejný AdGuard DNS](public-dns/overview.md) a [soukromý AdGuard DNS](private-dns/overview.md). Obě tyto služby nevyžadují instalaci žádné aplikace. Snadno se nastavují a používají a poskytují uživatelům minimum funkcí potřebných k blokování reklam, slídičů, škodlivých webových stránek a obsahu pro dospělé (pokud je vyžadováno). Neexistují žádná omezení, s jakými zařízeními je lze používat.
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
+Navzdory mnoha podobnostem jsou soukromý AdGuard DNS a veřejný AdGuard DNS dvě různé služby. Hlavní rozdíl spočívá v tom, že soukromý AdGuard DNS si můžete přizpůsobit, zatímco veřejný AdGuard DNS nikoli.
 
-## DNS filtering module in AdGuard products
+## Modul filtrování DNS v produktech AdGuardu
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — public or private.
+Všechny hlavní produkty AdGuardu, včetně AdGuard VPN, mají **modul filtrování DNS**, kde můžete vybrat DNS server poskytovatele, kterému důvěřujete. Na seznamu jsou samozřejmě "Výchozí" AdGuard DNS, AdGuard DNS "Bez filtrování" a AdGuard DNS "Ochrana rodiny". Aplikace AdGuardu také umožňují uživatelům [snadno konfigurovat a používat AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — veřejný nebo soukromý.
 
 
 
