@@ -5,29 +5,29 @@ sidebar_position: 2
 
 # AdGuard DNS API
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNS poskytuje rozhraní REST API, které můžete použít k integraci svých aplikací.
 
-## Authentication
+## Ověřování
 
-### Generate Access token
+### Generování přístupového tokenu
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+Proveďte požadavek POST na následující URL s danými parametry a vygenerujte `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Parametr        | Popis                                                             |
+|:--------------- |:----------------------------------------------------------------- |
+| **uživ. jméno** | E-mail účtu                                                       |
+| **heslo**       | Heslo účtu                                                        |
+| mfa_token       | Dvoufaktorový ověřovací token (pokud je povolen v nastavení účtu) |
 
-In the response, you will get both `access_token` and `refresh_token`.
+V odpovědi obdržíte jak `access_token`, tak i `refresh_token`.
 
-- The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- Platnost `code_token` vyprší po několika zadaných sekundách (reprezentovaných hodnotou parametrem `expires_in` v odpovědi). Můžete znovu vygenerovat nový `code_token` pomocí `refresh_token` (viz: `Generate Access Token from Refresh Token`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token` je trvalý. Odvolání `refresh_token`, viz: `Revoking a Refresh Token`.
 
-#### Example request
+#### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -37,7 +37,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### Příklad odpovědi
 
 ```json
 {
@@ -48,19 +48,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### Generování přístupového tokenu z obnovovacího tokenu
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Přístupové tokeny mají omezenou platnost. Po vypršení jeho platnosti bude muset vaše aplikace použít `refresh_token` a požádat o nový `access_token`.
 
-Make the following POST request with the given params to get a new access token:
+Pro získání nového přístupového tokenu proveďte následující požadavek POST se zadanými parametry:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Parametr          | Popis                                                                     |
+|:----------------- |:------------------------------------------------------------------------- |
+| **refresh_token** | `REFRESH TOKEN`, pomocí kterého je třeba vygenerovat nový `access_token`. |
 
-#### Example request
+#### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -68,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+#### Příklad odpovědi
 
 ```json
 {
@@ -79,40 +79,40 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+### Odvolání obnovovacího tokenu
 
-To revoke a refresh token, make the following POST request with the given params:
+Chcete-li odvolat obnovovací token, proveďte následující požadavek POST s danými parametry:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+#### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| Parametr          | Popis                                 |
+|:----------------- |:------------------------------------- |
+| **refresh_token** | `REFRESH TOKEN`, který má být odvolán |
 
-### Accessing API
+### Přístup k rozhraní API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+Po vygenerování přístupových a obnovovacích tokenů lze volání API provádět pomocí předání přístupového tokenu v záhlaví.
 
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
+- Název záhlaví by měl být `Autorization`
+- Hodnota záhlaví by měla být `Bearer {access_token}`
 
 ## API
 
-### OpenAPI spec
+### Specifikace OpenAPI
 
-OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+Specifikace OpenAPI je k dispozici na [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+K zobrazení seznamu dostupných metod API můžete použít různé nástroje. Tento soubor můžete otevřít například v [https://editor.swagger.io/][swagger].
 
-## Feedback
+## Zpětná vazba
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Pokud si přejete, aby bylo toto rozhraní API rozšířeno o nové metody, napište nám prosím na adresu. `devteam@adguard.com` a sdělte nám, co byste chtěli přidat.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

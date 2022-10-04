@@ -1,99 +1,99 @@
 ---
-title: 'How to take a screenshot'
+title: 'Jak pořídit snímek obrazovky'
 sidebar_position: 4
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Snímek obrazovky je zachycení obrazovky počítače nebo mobilního zařízení, které lze získat pomocí standardních nástrojů nebo speciálního programu/aplikace.
 
-Sometimes a screenshot (or screenshots) is required by support team to better understand the problem, and not everyone knows how to take screenshots, especially of a separate window or a specific screen area on their devices. If you recognize yourself as one of these users, don’t worry. This article will help you as it describes a range of ways to take screenshots on different platforms.
+Někdy tým podpory vyžaduje snímek obrazovky (nebo snímky obrazovky), aby lépe porozuměl problému, a ne každý ví, jak pořizovat snímky obrazovky, zejména samostatného okna nebo konkrétní oblasti obrazovky na svém zařízení. Pokud se mezi těmito uživateli poznáváte, nezoufejte. Tento článek vám pomůže, protože popisuje řadu způsobů pořizování snímků obrazovky na různých platformách.
 
-## How to take a screenshot
+## Jak pořídit snímek obrazovky
 
-Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+Zde najdete všechny potřebné klávesové zkratky, které byste měli znát, abyste mohli pořizovat snímky obrazovky na počítači nebo mobilním zařízení.
 
 ### Android
 
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
+Pořízení snímku obrazovky na zařízení se systémem Android lze provést různými způsoby — v závislosti na modelu zařízení a jeho výrobci.
 
-Generally, you should use the following button combination for Android:
+Obecně byste pro systém Android měli používat následující kombinaci tlačítek:
 
-+ **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
++ **Podržte současně tlačítka *Hlasitost dolů* a *Napájení* po dobu 1–2 sekund**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a Screenshots folder in your Gallery.
+Zařízení se systémem Android zachytí celou obrazovku a uloží ji jako fotografii. Snímek obrazovky tak najdete ve složce Snímky obrazovky v Galerii.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+Ale jak již bylo řečeno, mohou existovat rozdíly v závislosti na konkrétním zařízení. Podívejme se na další možné kombinace:
 
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**
-+ **Hold down at once the *Back* and the *Home* buttons**
++ **Podržte současně tlačítka *Domů* a *Napájení* po dobu 1–2 sekund**
++ **Podržte současně tlačítka *Zpět* a *Domů***
 
-On Android 8 and later there is also a possibility to take a screenshot by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen.
+V systému Android 8 a novějších verzích je také možné pořídit snímek obrazovky tak, že položíte ruku svisle podél levého nebo pravého okraje telefonu a přejedete od tohoto okraje dovnitř rukou, která se dotýká obrazovky.
 
-If this method doesn’t work, check *Settings* > *Advanced* features to enable *Palm swipe to capture*.
+Pokud tato metoda nefunguje, zkontrolujte *Nastavení* > *Pokročilé funkce* a povolte *Přejetí dlaní k zachycení snímku obrazovky*.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* etc.
+Kromě toho můžete vždy použít některou ze speciálních aplikací pro pořizování snímků obrazovky na svých zařízeních, např. — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* atd.
 
 ### iOS
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
+Každé zařízení se systémem iOS (s výjimkou starých zařízení) umožňuje pořídit snímek obrazovky pomocí standardních nástrojů.
 
-To take a screenshot on an iOS device, use the following combination:
+Chcete-li pořídit snímek obrazovky v zařízení se systémem iOS, použijte následující kombinaci:
 
-+ **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
++ **Stiskněte současně tlačítko *Uspat/Probudit* (boční) a tlačítko *Domů* a poté je rychle uvolněte**
 
-and this one for iPhone X or later:
+a tento postup je pro iPhone X nebo novější:
 
-+ **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
++ **Stiskněte současně tlačítko *Uspat/Probudit* a tlačítko *Hlasitost nahoru* a poté je rychle uvolněte**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+Zařízení se systémem iOS zachytí celou obrazovku a uloží ji jako fotografii. Najdete ji ve standardní aplikaci Fotky.
 
 ### Windows
 
-+ **To take a screenshot on Windows, press the *PrtScn* button**
++ **Chcete-li pořídit snímek obrazovky ve Windows, stiskněte tlačítko *PrtScn***
 
-On some notebooks you have to hold *Fn* and then press *PrtScn* instead.
+Na některých noteboocích musíte podržet *Fn* a pak místo toho stisknout *PrtScn*.
 
-*Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
+*Poznámka: Tlačítko PrtScn (Print Screen) může být na různých klávesnicích označováno různými zkratkami — PrntScrn, PrtScn, PrtScr nebo PrtSc.*
 
-Windows captures the entire screen and copies it to the (invisible) clipboard.
+Windows zachytí celou obrazovku a zkopíruje ji do (neviditelné) schránky.
 
-To take a screenshot of an active window, use the following combination:
+Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující kombinaci:
 
-+ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
++ **Podržte stisknutý *Alt* a stiskněte *PrtScn* (nebo na některých noteboocích *Fn + Alt + PrtScn*)**
 
-To take a screenshot of a specific area, you should use the following combination:
+Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující kombinaci:
 
-+ ***Hold down *Win* (the Windows button) and *Shift* and press ***S******
++ ***Podržte stisknuté *Win* (tlačítko Windows) + *Shift* a stiskněte ***S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí kombinace tlačítek *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Vložte tam snímek obrazovky pomocí stejné kombinace tlačítek nebo kliknutím na tlačítko Vložit (obvykle v levém horním rohu obrazovky) a poté jej uložte.
 
-Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures -> Screenshots Folder.
+Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí kombinace *Win + PrtScn*. Jakmile stisknete tato tlačítka, snímek obrazovky se automaticky uloží jako soubor do složky Obrázky -> Snímky obrazovky.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+K pořizování snímků obrazovky existuje také specializovaný program *Výstřižky*, který najdete v nabídce Start mezi standardními programy počítače. Výstřižky vám umožní zachytit jakoukoli oblast vaší pracovní plochy nebo celou obrazovku. Po pořízení snímku obrazovky pomocí tohoto programu můžete obrázek upravit a uložit do libovolné složky v počítači.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** etc.
+Kromě toho můžete zkusit používat různé aplikace pro pořizování snímků obrazovky v počítači, například **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** atd.
 
 ### MacOS
 
-To take a screenshot on Mac, use the following button combination:
+Chcete-li pořídit snímek obrazovky v zařízení se systémem macOS, použijte následující kombinaci tlačítek:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 3******
++ ***Stiskněte a podržte současně tlačítka ***⌘ Cmd + Shift + 3******
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Váš Mac zachytí celou obrazovku a uloží ji jako soubor na plochu.
 
-To take a screenshot of an active window, use the following combination:
+Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující kombinaci:
 
-+ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
++ **Stiskněte a podržte současně tlačítka *⌘ Cmd + Shift + 4 + mezerník*.  Ukazatel se změní na ikonu fotoaparátu. Klikněte na okno a zachyťte snímek. Stisknutím tlačítka Esc zrušíte pořizování snímku obrazovky**
 
-To take a screenshot of a specific area, you should use the following combination:
+Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující kombinaci:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 4******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
++ ***Stiskněte a podržte současně tlačítka ***⌘ Cmd + Shift + 4******. Přetažením křížku vyberte potřebnou oblast. Pro pořízení snímku obrazovky, uvolněte myš nebo trackpad, pro zrušení stiskněte tlačítko Esc.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
+Chcete-li pořídit snímek obrazovky pomocí *Touch Bar* (MacBook Pro), použijte následující kombinaci:
 
-+ ***Hold down ***⌘ Cmd + Shift + 6******
++ ***Podržte stisknuté tlačítka ***⌘ Cmd + Shift + 6******
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Mac zachytí celý *Touch Bar* a uloží jej jako soubor na plochu.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
+Chcete-li snímek obrazovky zkopírovat do schránky namísto uložení, podržte *Ctrl* spolu s některou z výše uvedených kombinací. Poté můžete snímek obrazovky (ze schránky) vložit do dokumentu nebo obrázku, který právě upravujete pomocí kombinace *Cmd + V*.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Snímky obrazovky můžete pořizovat také pomocí **Náhled** a výběrem **Pořídit snímek obrazovky** (vybrané oblasti, okna nebo celé obrazovky). Pomocí **Náhledu** můžete ukládat snímky obrazovky ve formátech JPG, TIFF, PDF a dalších.

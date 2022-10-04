@@ -4,19 +4,19 @@
     "description": "The title of the footer links column with title=dns in the footer"
   },
   "link.title.engage": {
-    "message": "Engage",
+    "message": "Zapojit",
     "description": "The title of the footer links column with title=engage in the footer"
   },
   "link.title.other_products": {
-    "message": "Other Products",
+    "message": "Další produkty",
     "description": "The title of the footer links column with title=other_products in the footer"
   },
   "link.item.label.connect_dns": {
-    "message": "Connect to DNS",
+    "message": "Připojit k DNS",
     "description": "The label of footer link with label=connect_dns linking to https://adguard-dns.io/public-dns.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "Centrum podpory",
     "description": "The label of footer link with label=support_center linking to https://adguard-dns.io/support.html"
   },
   "link.item.label.faq": {
@@ -28,19 +28,19 @@
     "description": "The label of footer link with label=blog linking to https://adguard.com/blog/tag/adguard-dns.html"
   },
   "link.item.label.privacy_policy": {
-    "message": "Privacy Policy",
+    "message": "Zásady ochrany osobních údajů",
     "description": "The label of footer link with label=privacy_policy linking to https://adguard.com/privacy/dns.html"
   },
   "link.item.label.terms": {
-    "message": "Terms of Service",
+    "message": "Podmínky služby",
     "description": "The label of footer link with label=terms linking to https://adguard.com/eula.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard Status",
+    "message": "Status AdGuardu",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "AdGuard Ad Blocker",
+    "message": "Blokátor reklam AdGuard",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {

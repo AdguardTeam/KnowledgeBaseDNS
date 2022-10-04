@@ -1,35 +1,35 @@
 ---
-title: DNS filtering rules syntax
+title: Sintaksa pravila DNS filtriranja
 sidebar_position: 2
 ---
 
-## Introduction
+## Uvod
 
-You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
+Možete da koristite sintaksu pravila AdGuard DNS filtriranja da biste pravila učinili fleksibilnijim, tako da mogu da blokiraju sadržaj u skladu sa vašim potrebama. Sintaksa pravila AdGuard DNS filtriranja može se koristiti u različitim AdGuard proizvodima kao što su AdGuard Home, AdGuard DNS, AdGuard za Windows/Mac/Android.
 
-There are three different approaches to writing hosts blocklists:
+Postoje tri različita pristupa pisanju blok lista:
 
-* [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. This way blocklists are compatible with browser ad blockers.
+* [sintaksa u stilu](#adblock-style-syntax)Adblock: moderan pristup pisanju pravila filtriranja zasnovan na korišćenju podskupa sintakse pravila u stilu blokatora oglasa. Na ovaj način blok liste su kompatibilne sa blokatorima reklama preglednika.
 
-* [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that uses the same syntax that operating systems do for their hosts files.
+* [`/etc/hosts` syntax](#etc-hosts-syntax): stari, isprobani i postojan pristup koji koristi istu sintaksu koju operativni sistemi rade za svoje host datoteke.
 
-* [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
+* [sintaksa samo za](#domains-only-syntax)domene: jednostavna lista imena domena.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
+Ako kreirate blok listu, preporučujemo da koristite sintaksu [u stilu blokatora reklama](#adblock-style-syntax). Ima nekoliko važnih prednosti u odnosu na sintaksu starog stila:
 
-* **Blocklists size.** Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
+* **blok liste.** korišćenje podudaranja šablona vam omogućava da imate jedno pravilo umesto stotina `/etc/hosts` stavki.
 
-* **Compatibility.** Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
+* **kompatibilnost.** vaša blok lista će biti kompatibilna sa blokatorima oglasa pregledača i biće vam lakše da delite pravila sa listom filtera pregledača.
 
-* **Extensibility.** For the last decade the Adblock-style syntax has greatly evolved, and we don't see why we can't extend it even more and provide additional features for network-wide blockers.
+* **proširenje.** U poslednjoj deceniji sintaksa u stilu blokatora reklama je u velikoj meri evoluirala, a ne vidimo zašto ne možemo još više da je proširimo i obezbedimo dodatne funkcije za blokatore širom mreže.
 
-If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+Ako održavate blok listu `/etc/hosts`stila ili ako održavate više lista filtera bez obzira na njihov tip, obezbeđujemo alatku koja se može koristiti za sastavljanje blok lista. Nazvali smo ga [Hostlist kompajler][hlc] i sami ga koristimo za kreiranje [AdGuard DNS][sdn].
 
-## Basic Examples
+## Osnovni primeri
 
-* `||example.org^`: block access to the `example.org` domain and all its subdomains, like `www.example.org`.
+* `||primer.org^`: blokira pristup ka domenu `primer.org` i svim njegovim poddomenima, kao što je `www.primer.org`.
 
-* `@@||example.org^`: unblock access to the `example.org` domain and all its subdomains.
+* `@@||primer.org^`: deblokira pristup ka domenu `primer.org` i svim njegovim poddomenima.
 
 * `1.2.3.4 example.org`: (attention, old `/etc/hosts`-style syntax) in AdGuard Home, respond with `1.2.3.4` to queries for the `example.org` domain but **not** its subdomains. In Private AdGuard DNS, block access to `example.org`. `www.example.org` remains allowed.
 

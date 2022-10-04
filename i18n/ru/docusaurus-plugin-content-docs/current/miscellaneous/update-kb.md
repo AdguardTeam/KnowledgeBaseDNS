@@ -15,7 +15,7 @@ sidebar_position: 3
 
 Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них [в этом руководстве](https://docusaurus.io/docs/category/guides).
 
-Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробную инструкцию о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) на странице этой Базы знаний на GitHub.
+Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 
 ## Переводы статей {#translate-adguard}
 

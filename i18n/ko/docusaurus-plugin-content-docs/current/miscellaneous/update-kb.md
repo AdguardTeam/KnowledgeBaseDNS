@@ -15,7 +15,7 @@ sidebar_position: 3
 
 기술 자료 웹 사이트는 최신 웹 사이트 생성기인 Docusaurus 2를 사용하여 제작되었습니다. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. [이 링크를 통해 사용할 수 있는 가이드](https://docusaurus.io/docs/category/guides)에서 이에 대해 읽을 수 있습니다.
 
-이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 지침은 [파일 README.md 이 기술 자료의 GitHub 페이지에](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) 있습니다.
+이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 
 ## 기사 번역 {#translate-adguard}
 

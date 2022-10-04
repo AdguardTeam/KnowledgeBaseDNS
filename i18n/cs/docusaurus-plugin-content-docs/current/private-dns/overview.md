@@ -1,84 +1,84 @@
 ---
-title: Overview
+title: Přehled
 sidebar_position: 1
 ---
 
-# Private AdGuard DNS
+# Soukromý DNS AdGuard
 
 ![Private AdGuard DNS dashboard main](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## What is Private AdGuard DNS
+## Co je soukromý AdGuard DNS
 
-Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
+Soukromý AdGuard DNS je DNS server, který kromě výhod veřejného DNS serveru (jako je šifrování provozu a seznamy zakázaných domén) poskytuje funkce, jako je flexibilní přizpůsobení, statistiky DNS a rodičovská kontrola a lze jej snadno spravovat pomocí praktického ovládacího panelu.
 
-## Why Private AdGuard DNS is needed
+## Proč je potřeba soukromý AdGuard DNS
 
-Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+Dnes můžete k internetu připojit cokoli: televizory, ledničky, chytré žárovky nebo reproduktory. Spolu s nepopiratelnými vymoženostmi však získáte i slídiče zařízení a reklamy. Jednoduchý blokátor reklam v prohlížeči vás v tomto případě neochrání, ale AdGuard DNS, který můžete nastavit tak, aby filtroval datový provoz, blokoval obsah a slídiče, má účinek na celý systém.
 
-We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
+Již máme [veřejný AdGuard DNS](../public-dns/overview.md) a [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Některým uživatelům tato řešení vyhovují, ale pro jiné je veřejný AdGuard DNS málo flexibilní v konfiguraci a AdGuard Home postrádá jednoduchost. Zde přichází ke slovu soukromý AdGuard DNS. Má to nejlepší z obou světů: nabízí možnost přizpůsobení, ovládání a informace - to vše prostřednictvím jednoduchého a snadno použitelného ovládacího panelu.
 
-## The difference between Private and Public AdGuard DNS
+## Rozdíl mezi soukromým a veřejným AdGuard DNS
 
-Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
+Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGuard DNS a soukromých serverech AdGuard DNS.
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                           |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
-| DNS traffic encryption           | DNS traffic encryption                                                                        |
-| Pre-determined domain blocklists | Customizable domain blocklists                                                                |
-| -                                | Custom DNS filtering rules with import/export feature                                         |
-| -                                | Request statistics (see where do your DNS requests go: which countries, which companies etc.) |
-| -                                | Detailed query log                                                                            |
-| -                                | Parental control                                                                              |
+| Veřejný AdGuard DNS                    | Soukromý DNS AdGuard                                                                                          |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Šifrování provozu DNS                  | Šifrování provozu DNS                                                                                         |
+| Předem určené seznamy zakázaných domén | Přizpůsobitelné seznamy zakázaných domén                                                                      |
+| -                                      | Vlastní pravidla DNS filtrování s funkcí importu/exportu                                                      |
+| -                                      | Statistiky požadavků (zjistěte, kam směřují vaše DNS požadavky: do kterých zemí, ke kterým společnostem atd.) |
+| -                                      | Podrobný záznam dotazů                                                                                        |
+| -                                      | Rodičovská ochrana                                                                                            |
 
-## How to set up Private AdGuard DNS
+## Jak nastavit soukromý AdGuard DNS
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
-2. Click “Connect device” and follow on-screen instructions
+1. Přejděte na svůj [ovládací panel AdGuard DNS](https://adguard-dns.io/dashboard/) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
+2. Klikněte na “Připojit zařízení“ a postupujte podle pokynů na obrazovce
 
-> Supported platforms: - Android - iOS - Windows - Mac - Linux - Routers - Gaming consoles
+> Podporované platformy: - Android - iOS - Windows - Mac - Linux - Routery - Herní konzole
 
 
-## Private AdGuard DNS features
+## Funkce soukromého AdGuard DNS
 
-### Blocklists management
+### Správa seznamů zakázaných
 
-With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
+Pomocí funkce "Seznamy zakázaných" můžete nastavit, které domény chcete blokovat a které ne. Vyberte si z široké škály seznamů zakázaných pro různé účely.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### User rules
+### Uživatelská pravidla
 
-For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
+Pro chvíle, kdy předinstalované *seznamy zakázaných* s tisíci pravidly nestačí, máme šikovnou funkci nazvanou "Uživatelská pravidla". Zde můžete ručně přidat vlastní pravidla pro blokování/odblokování určité domény nebo importovat seznamy vlastních pravidel. (zkontrolujte [syntaxi pravidel DNS filtrování](../general/dns-filtering-syntax.md)). Seznamy můžete vyexportovat.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### Statistics
+### Statistiky
 
-In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+Na kartě "Statistiky" můžete zobrazit všechny souhrnné statistiky DNS dotazů provedených zařízeními připojenými k vašemu soukromému AdGuard DNS. Zobrazuje celkový počet a zeměpisnou polohu požadavků, počet zablokovaných požadavků, seznam společností, kterým byly požadavky adresovány, typy požadavků a nejžádanější domény.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Traffic destination
+### Cíl datového provozu
 
-This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
+Tato funkce vám ukáže, kam směřují DNS požadavky odeslané vašimi zařízeními. Kromě zobrazení mapy cílů požadavků můžete informace filtrovat podle data, zařízení a země.
 
 ![Private AdGuard DNS dashboard traffic](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Companies
+### Společnosti
 
-This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
+Na této kartě můžete rychle zjistit, které společnosti odesílají nejvíce požadavků a které společnosti jich mají nejvíce zablokovaných.
 
 ![Private AdGuard DNS dashboard companies](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### Query log
+### Protokol dotazů
 
-This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
+Jedná se o podrobný protokol, kde můžete zkontrolovat informace o každém jednotlivém požadavku a také třídit požadavky podle stavu, typu, společnosti, zařízení, času a země.
 
 ![Private AdGuard DNS dashboard query log](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-### Parental control
+### Rodičovská ochrana
 
-To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+Chcete-li své dítě chránit před online obsahem, který považujete za nevhodný, nastavte a aktivujte možnost *Rodičovská ochrana*. Kromě možností, jako je blokování obsahu pro dospělé a bezpečné vyhledávání, jsme přidali možnost ručně zadat domény pro blokování a nastavit plán, podle kterého bude *Rodičovská ochrana* fungovat.
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
-> In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+> V případě, že ještě nemáte soukromý AdGuard DNS, můžete jej získat na [oficiálních stránkách](https://adguard-dns.io/).
