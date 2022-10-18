@@ -15,7 +15,7 @@ Quando estiver pronto para começar, trabalhe com o [repositório KnowledgeBaseD
 
 O site da Base de Conhecimento é construído usando o Docusaurus 2 — um moderno gerador de sites estáticos. Ao sugerir alterações ou acréscimos, leve em consideração que todos os documentos devem obedecer aos princípios da plataforma. Você pode ler sobre eles no [guia disponível através deste link](https://docusaurus.io/docs/category/guides).
 
-Você pode implantar esta Base de Conhecimento localmente em seu computador para visualizar as alterações sugeridas. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+Você pode implantar esta Base de Conhecimento localmente em seu computador para visualizar as alterações sugeridas. Instruções detalhadas sobre como fazer isso podem ser encontradas [no arquivo README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na página GitHub desta Base de Conhecimento.
 
 ## Traduzindo artigos {#translate-adguard}
 
