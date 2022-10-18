@@ -27,6 +27,7 @@ jobs:
       - name: create pull request
         uses: peter-evans/create-pull-request@v4
         with:
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
           commit-message: automatically update translations
           title: Update translations
           body: Transactions are synced from Crowdin
