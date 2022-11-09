@@ -6,6 +6,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import '../theme/vars';
+
 :root {
   --ifm-color-primary: #2F6EDE;
   --ifm-color-primary-dark: #2160d1;
@@ -15,6 +17,14 @@
   --ifm-color-primary-lighter: #5286e4;
   --ifm-color-primary-lightest: #759fe9;
   --ifm-code-font-size: 95%;
+  --dns-white-color: #ffffff;
+  --dns-main-blue: #3c81f6;
+  --dns-main-blue-hover: #3677e9;
+  --dns-middle-gray: #9ca4ac;
+  --dns-box-shadow-color-1: rgba(24, 39, 75, 0.12);
+  --dns-box-shadow-color-2: rgba(24, 39, 75, 0.12);
+  --dns-small-border-radius: 8px;
+  --dns-transition-300ms: 0.3s ease;
 
   --ifm-toc-border-color: #D8D8D8;
 }
@@ -32,6 +42,10 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container-outer {
+  width: 100%;
 }
 
 .container img {
@@ -53,6 +67,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   --ifm-footer-color: #F3F3F3;
   --ifm-footer-link-color: #F3F3F3;
   --ifm-footer-title-color: #F3F3F3;
+  z-index: 1;
 }
 
 [data-theme="dark"] .footer {
@@ -103,6 +118,21 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-weight: 300;
 }
 
+.clean-btn.theme-back-to-top-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 16px;
+  bottom: 1rem;
+}
+
+@include min-tablet {
+  .clean-btn.theme-back-to-top-button {
+    width: 3rem;
+    height: 3rem;
+    right: 1.3rem;
+  }
+}
+
 /* Pagination */
 html[data-theme='dark'] .pagination-nav__link {
   border-color: #F3F3F3;
@@ -120,14 +150,14 @@ html[lang='ko'] .navbar__search {
   display: none;
 }
 
-@media (max-width: 996px) {
+@include docsaurus-tablet-max {
   .navbar__items [class*='searchBox'] {
     top: 6px;
     right: 7px;
   }
 }
 
-@media (min-width: 997px) {
+@include docsaurus-desktop-min {
   .navbar__items [class*='searchBox'] {
     margin-left: 6px;
     padding: 0;

@@ -295,5 +295,13 @@
   "theme.SearchPage.fetchingNewResults": {
     "message": "Fetching new results...",
     "description": "The paragraph for fetching new search results"
+  },
+  "sticky_bar.promo.dns": {
+    "message": "Make the Internet safe for everyone at home or at work",
+    "description": "String used for DNS promo in sticky bar"
+  },
+  "sticky_bar.btn.text": {
+    "message": "Try AdGuard DNS",
+    "description": "Sticky bar btn text with label Download"
   }
 }

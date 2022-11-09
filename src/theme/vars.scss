@@ -1,0 +1,28 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$docsaurus-tablet-max-width: 996px;
+$docsaurus-desktop-min-width: 997px;
+
+@mixin docsaurus-tablet-max {
+  @media (max-width: #{$docsaurus-tablet-max-width}) {
+    @content;
+  }
+}
+
+@mixin docsaurus-desktop-min {
+  @media (min-width: #{$docsaurus-desktop-min-width}) {
+    @content;
+  }
+}
+
+@mixin min-tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin min-desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

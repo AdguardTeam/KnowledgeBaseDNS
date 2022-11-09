@@ -1,0 +1,131 @@
+@import '../vars';
+
+.stickyBar {
+    position: sticky;
+    bottom: 0;
+    font-weight: 400;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: var(--dns-transition-300ms) transform;
+}
+
+.stickyBarOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.stickyBarClosed {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+}
+
+.stickyBarIn {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 8px 18px -6px var(--dns-box-shadow-color-1), 0 12px 42px -4px var(--dns-box-shadow-color-2);
+    background-color: var(--dns-white-color);
+}
+
+@include min-tablet {
+    .stickyBarIn {
+        padding: 16px 88px 16px 32px;
+    }
+}
+
+.stickyBarContent {
+    width: 100%;
+    max-width: 272px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+@include min-tablet {
+    .stickyBarContent {
+        max-width: initial;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
+.stickyBarIntro {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@include min-tablet {
+    .stickyBarIntro {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+}
+
+.stickyBarBtn {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    border: none;
+    border-radius: var(--dns-small-border-radius);
+    padding: 14px 32px;
+    font-size: 16px;
+    line-height: 1.125;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--dns-main-blue);
+    color: var(--dns-white-color);
+    transition: var(--dns-transition-300ms) background-color;
+    font-weight: 500;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+}
+
+.stickyBarBtn:hover {
+    text-decoration: none;
+    background-color: var(--dns-main-blue-hover);
+    color: var(--dns-white-color);
+}
+
+.stickyBarBtn:active {
+    transform: translateY(2px);
+}
+
+.stickyBarBtn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.stickyBarBtn:disabled:hover {
+    background-color: var(--dns-main-blue);
+}
+
+.stickyBarCloseBtn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin: 0 0 auto auto;
+    padding: 0;
+    mask-image: url("/img/icons/cross.svg");
+    mask-size: 14px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: var(--dns-middle-gray);
+    cursor: pointer;
+    outline: none;
+}
+
+@include min-tablet {
+    .stickyBarCloseBtn {
+        margin: 0 0 0 40px;
+        mask-size: 16px;
+    }
+}
