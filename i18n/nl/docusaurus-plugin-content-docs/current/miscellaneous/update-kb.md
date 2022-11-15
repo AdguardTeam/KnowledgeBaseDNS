@@ -13,7 +13,7 @@ You can suggest changes to current articles and add new ones to the Knowledge Ba
 
 Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
 
 You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Gedetailleerde instructies over hoe dit te doen zijn te vinden [in het README.md bestand](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) op de GitHub-pagina van deze Kennisbank.
 

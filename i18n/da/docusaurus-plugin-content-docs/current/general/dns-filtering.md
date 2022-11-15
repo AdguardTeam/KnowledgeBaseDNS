@@ -7,7 +7,7 @@ For bedre at forstå DNS-filtrering bør vi først besvare spørgsmålet "Hvad e
 
 ## Hvad er DNS?
 
-DNS står for "Domain Name System", og dets formål er at oversætte websteders navne til noget, som browsere kan forstå, dvs. IP-adresser. Hver gang man går til et websted, sender browseren således en forespørgsel til en særlig servertype (DNS-server). Denne server ser på det anmodede domænenavn og svarer med en dertilhørende IP-adresse. Meget skematisk kan det repræsenteres således:
+DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Hver gang man går til et websted, sender browseren således en forespørgsel til en særlig servertype (DNS-server). Denne server ser på det anmodede domænenavn og svarer med en dertilhørende IP-adresse. Meget skematisk kan det repræsenteres således:
 
 ![Sådan fungerer DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -47,16 +47,16 @@ Først og fremmest skal vi nævne, at man med AdGuard ikke behøver at vælge. M
 
 **Fordele ved DNS-filtrering:**
 
-1. På nogle platforme er dette den eneste måde at opnå systemniveaufiltrering på. iOS understøtter f.eks. kun indholdsblokering i vanlig forstand i Safari-browseren, for alt andet findes kun DNS-filtrering.
+1. On some platforms, this is the only way to achieve system-wide filtering. iOS understøtter f.eks. kun indholdsblokering i vanlig forstand i Safari-browseren, for alt andet findes kun DNS-filtrering.
 2. Visse former for sporing (såsom [CNAME-tilsløret sporing](https://adguard.com/en/blog/cname-tracking.html)) kan kun imødegås vha. DNS-filtrering.
 3. Stadiet, hvor en DNS-forespørgsel behandles, er det tidligste, man overhovedet kan imødegå en annonce eller tracker, hvilket medvirker til at spare en lille smule batteristrøm og trafik.
 
 **Fordele ved DNS-filtrering:**
 
-1. DNS-filtrering er "grov", dvs., at den hverken fjerner tomme felter efterladt fra en blokeret annonce eller anvender nogen form for kosmetisk filtrering. Mange af de mere komplicerede annoncer kan ikke blokeres på DNS-niveau (eller rettere sagt, det kan de, men kun ved at blokere selve domænerne, selvom disse muligvis også bruges til andre formål).
+1. DNS-filtrering er "grov", dvs., at den hverken fjerner tomme felter efterladt fra en blokeret annonce eller anvender nogen form for kosmetisk filtrering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
 ![Eksempel på forskel](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Et eksempel på forskellen mellem DNS-filtrering og netværksfiltrering*
 
-2. Det er umuligt at kende oprindelsen af en DNS-forespørgsel, hvilket betyder, at der på DNS-niveau ikke kan skelnes mellem forskellige apps. Dette belaster statistikken negative og umuliggør at oprette app-specifikke filtreringsregler.
+2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. Dette belaster statistikken negative og umuliggør at oprette app-specifikke filtreringsregler.
 
 Vi anbefaler brug af DNS-filtrering i tillæg til netværksfiltrering, ikke i stedet for, når det er muligt.

@@ -9,7 +9,7 @@ Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores do sof
 
 * Módulo DNS por Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
 * Módulo GCache por Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Módulo Go-Cache por Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
 * Programa Gofumpt por Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
 * Módulo QUIC-Go por Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Programa Staticcheck por Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
@@ -20,6 +20,6 @@ Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores do sof
 * React: [https://reactjs.org/](https://reactjs.org/)
 * Vue: [https://vuejs.org/](https://vuejs.org/)
 * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
-* Spring [https://spring.io/](https://spring.io/)
+* Spring: [https://spring.io/](https://spring.io/)
 * ClickHouse: [https://clickhouse.com/](https://clickhouse.com/)
 * Logstash: [https://github.com/elastic/logstash](https://github.com/elastic/logstash)

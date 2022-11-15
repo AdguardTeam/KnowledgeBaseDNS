@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # 如何刷新DNS缓存
 
-## DNS缓存是什么？
+## What is DNS cache
 
 DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。 系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
 

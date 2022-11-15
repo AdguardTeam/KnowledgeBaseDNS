@@ -21,14 +21,14 @@ We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Hom
 
 Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                           |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
-| DNS traffic encryption           | DNS traffic encryption                                                                        |
-| Pre-determined domain blocklists | Customizable domain blocklists                                                                |
-| -                                | Custom DNS filtering rules with import/export feature                                         |
-| -                                | Request statistics (see where do your DNS requests go: which countries, which companies etc.) |
-| -                                | Detailed query log                                                                            |
-| -                                | Parental control                                                                              |
+| Public AdGuard DNS               | Private AdGuard DNS                                                                            |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| DNS traffic encryption           | DNS traffic encryption                                                                         |
+| Pre-determined domain blocklists | Customizable domain blocklists                                                                 |
+| -                                | Custom DNS filtering rules with import/export feature                                          |
+| -                                | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
+| -                                | Detailed query log                                                                             |
+| -                                | Parental control                                                                               |
 
 ## How to set up Private AdGuard DNS
 

@@ -6,13 +6,13 @@ slug: /
 
 ## DNS는 무엇인가요?
 
-DNS는 "Domain name system"의 약자이며 그 목적은 웹 사이트의 이름을 IP 주소로 변환하는 것 입니다. 웹 사이트로 이동할 때마다, 브라우저는 웹 사이트의 IP 주소를 파악하기 위해 DNS 서버에 DNS 쿼리를 전송합니다.  그리고 일반 DNS 클라이언트는 단순히 요청된 도메인의 IP 주소를 반환합니다.
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. 웹 사이트로 이동할 때마다, 브라우저는 웹 사이트의 IP 주소를 파악하기 위해 DNS 서버에 DNS 쿼리를 전송합니다.  그리고 일반 DNS 클라이언트는 단순히 요청된 도메인의 IP 주소를 반환합니다.
 
 > 기본 DNS 서버는 일반적으로 ISP에서 제공합니다. 이는 ISP가 당신의 온라인 활동을 추적하고 제3자에게 로그를 판매할 수 있음을 의미합니다.
 
 ![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-DNS 수준에서 특정 웹 사이트를 차단할 수 있는 DNS 서버도 있습니다. 그것은 어떻게 작동합니까? 당신의 기기가 광고 또는 추적기에 "잘못된" 요청을 보내면, DNS 서버는 차단된 도메인에 대해 라우팅할 수 없는 IP 주소로 응답하여 연결을 방지합니다.
+There are also DNS servers that can block certain websites at DNS-level. 그것은 어떻게 작동합니까? 당신의 기기가 광고 또는 추적기에 "잘못된" 요청을 보내면, DNS 서버는 차단된 도메인에 대해 라우팅할 수 없는 IP 주소로 응답하여 연결을 방지합니다.
 
 ## 콘텐츠 차단에 DNS를 사용하는 이유
 
@@ -22,7 +22,7 @@ DNS 수준에서 특정 웹 사이트를 차단할 수 있는 DNS 서버도 있�
 
 ## AdGuard DNS란 무엇일까요?
 
-AdGuard DNS는 개인정보를 보호하는데 친화적인 DNS 서비스 중 하나입니다. DNS-over-HTTPS, DNS-over-TLS 및 DNS-over-QUIC와 같은 신뢰할 수 있는 암호화 프로토콜을 지원합니다. 비필터링 모드에서 일반 DNS 클라이언트로 작동할 수 있지만, DNS 수준 콘텐츠 차단(광고, 추적 및/또는 성인 도메인(선택 사항)) 에 대한 요청을 식별하고 가짜로 응답하는 DNS 수준 콘텐츠 차단을 제공할 수 있습니다. AdGuard는 광고, 추적기 및 사기를 제공하는 자체 도메인 이름 기반을 보유하고 있으며 정기적으로 업데이트됩니다.
+AdGuard DNS는 개인정보를 보호하는데 친화적인 DNS 서비스 중 하나입니다. DNS-over-HTTPS, DNS-over-TLS 및 DNS-over-QUIC와 같은 신뢰할 수 있는 암호화 프로토콜을 지원합니다. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard는 광고, 추적기 및 사기를 제공하는 자체 도메인 이름 기반을 보유하고 있으며 정기적으로 업데이트됩니다.
 
 ![An approximate scheme of how AdGuard DNS works](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

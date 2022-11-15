@@ -6,13 +6,13 @@ slug: /
 
 ## Co je DNS
 
-DNS je zkratka pro "Domain name system" a jeho účelem je převádět názvy webových stránek na IP adresy. Pokaždé, když přejdete na webovou stránku, odešle prohlížeč DNS dotaz na server DNS, aby zjistil IP adresu webové stránky. A běžný DNS řešitel jednoduše vrátí IP adresu požadované domény.
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Pokaždé, když přejdete na webovou stránku, odešle prohlížeč DNS dotaz na server DNS, aby zjistil IP adresu webové stránky. A běžný DNS řešitel jednoduše vrátí IP adresu požadované domény.
 
 > Výchozí DNS server obvykle poskytuje váš ISP. To znamená, že poskytovatel internetu může sledovat vaši online aktivitu a prodávat záznamy třetím stranám.
 
 ![Vaše zařízení vždy používá nějaký DNS server k získání IP adres názvů domén, na které chcete přejít](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-Existují také DNS servery, které mohou blokovat určité webové stránky na úrovni DNS. Jak fungují? Když vaše zařízení odešle "špatný" požadavek, ať už se jedná o reklamu nebo slídič, server DNS zabrání připojení tím, že odpoví nesměrovatelnou IP adresou blokované domény.
+There are also DNS servers that can block certain websites at DNS-level. Jak fungují? Když vaše zařízení odešle "špatný" požadavek, ať už se jedná o reklamu nebo slídič, server DNS zabrání připojení tím, že odpoví nesměrovatelnou IP adresou blokované domény.
 
 ## Proč používat DNS pro blokování obsahu
 
@@ -22,7 +22,7 @@ Použití DNS pro blokování obsahu má některé výhody i zjevné nedostatky.
 
 ## Co je AdGuard DNS
 
-AdGuard DNS je jednou z nejpřívětivějších služeb DNS na trhu. Podporuje spolehlivé šifrovací protokoly jako DNS skze HTTPS, DNS skze TLS a DNS skze QUIC. Může pracovat jako obvyklý DNS řešitel v režimu bez filtrování, ale také může zajistit blokování obsahu na úrovni DNS: identifikovat požadavky na reklamní, sledovací a/nebo domény pro dospělé (volitelně) a odpovědět prázdnou odpovědí. AdGuard má vlastní databázi názvů domén, které zobrazují reklamy, slídiče a podvody, a pravidelně ji aktualizuje.
+AdGuard DNS je jednou z nejpřívětivějších služeb DNS na trhu. Podporuje spolehlivé šifrovací protokoly jako DNS skze HTTPS, DNS skze TLS a DNS skze QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard má vlastní databázi názvů domén, které zobrazují reklamy, slídiče a podvody, a pravidelně ji aktualizuje.
 
 ![Přibližné schéma fungování AdGuard DNS](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

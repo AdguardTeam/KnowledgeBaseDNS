@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### Standard
 
-Disse servere tilbyder blokering af annoncer, sporing og phishing
+These servers block ads, tracking, and phishing
 
 | Protokol       | Adresse                                                                      |                                                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -87,7 +87,7 @@ I tilstanden "Familie" ydes beskyttelse mod inficerede, svigagtige og voksenwebs
 
 ### CleanBrowsing
 
-[Cleanbrowsing](https://cleanbrowsing.org/) er en DNS-tjeneste, der leverer tilpasset filtrering. Tjenesten tilbyder en sikker måde at surfe på nettet uden upassende indhold.
+[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Tjenesten tilbyder en sikker måde at surfe på nettet uden upassende indhold.
 
 #### Familiefilter
 
@@ -137,205 +137,205 @@ Blokerer phishing, spam og ondsindede domæner
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Føj til AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
 ### Neustar Recursive DNS
 
-[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
+[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) er en gratis cloud-baseret rekursiv DNS-tjeneste, der giver hurtig og pålidelig adgang til websteder og online-applikationer med indbygget sikkerhed og trusselsintelligens.
 
-#### Reliability & Performance 1
+#### Pålidelighed og Ydeevne 1
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories
+Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier
 
-| Protokol  | Adresse                                 |                                                                |
-| --------- | --------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.1` and `156.154.71.1`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMQ)       |
-| DNS, IPv6 | `2610:a1:1018::1` and `2610:a1:1019::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjFd) |
+| Protokol  | Adresse                                |                                                                |
+| --------- | -------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.1` og `156.154.71.1`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMQ)       |
+| DNS, IPv6 | `2610:a1:1018::1` og `2610:a1:1019::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjFd) |
 
-#### Reliability & Performance 2*
+#### Pålidelighed og Ydeevne 2*
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (Non-existent Domain) responses to a landing page
+Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier og forhindrer også omdirigering af NXDomain-svar (ikke-eksisterende domæne) til en landingsside
 
-| Protokol  | Adresse                                 |                                                                |
-| --------- | --------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.5` and `156.154.71.5`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNQ)       |
-| DNS, IPv6 | `2610:a1:1018::5` and `2610:a1:1019::5` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjVd) |
+| Protokol  | Adresse                                |                                                                |
+| --------- | -------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.5` og `156.154.71.5`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNQ)       |
+| DNS, IPv6 | `2610:a1:1018::5` og `2610:a1:1019::5` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjVd) |
 
-#### Threat Protection
+#### Trusselsbeskyttelse
 
-These servers provide protection against malicious domains and also include "Reliability & Performance" features
+Disse servere yder beskyttelse mod ondsindede domæner og inkluderer også "Pålidelighed og Ydelse" funktioner
 
-| Protokol  | Adresse                                 |                                                                |
-| --------- | --------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.2` and `156.154.71.2`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMg)       |
-| DNS, IPv6 | `2610:a1:1018::2` and `2610:a1:1019::2` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjJd) |
+| Protokol  | Adresse                                |                                                                |
+| --------- | -------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.2` og `156.154.71.2`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMg)       |
+| DNS, IPv6 | `2610:a1:1018::2` og `2610:a1:1019::2` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjJd) |
 
-#### Family Secure
+#### Familiesikker
 
-These servers provide blocking access to mature content and also include "Reliability & Performance" + "Threat Protection" features
+Disse servere leverer adgangsblokering af voksenindhold og inkluderer også funktionerne "Plidelighed og Ydeevne" + "Trusselsbeskyttelse"
 
-| Protokol  | Adresse                                 |                                                                |
-| --------- | --------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.3` and `156.154.71.3`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMw)       |
-| DNS, IPv6 | `2610:a1:1018::3` and `2610:a1:1019::3` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjNd) |
+| Protokol  | Adresse                                |                                                                |
+| --------- | -------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.3` og `156.154.71.3`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuMw)       |
+| DNS, IPv6 | `2610:a1:1018::3` og `2610:a1:1019::3` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjNd) |
 
-#### Business Secure
+#### Forretningssikker
 
-These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features
+Disse servere tilbyder blokering af uønsket og irrelevant indhold og inkluderer også funktionerne "Plidelighed og Ydeevne" + "Trusselsbeskyttelse" + "Familiesikker"
 
-| Protokol  | Adresse                                 |                                                                |
-| --------- | --------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.4` and `156.154.71.4`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNA)       |
-| DNS, IPv6 | `2610:a1:1018::4` and `2610:a1:1019::4` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjRd) |
+| Protokol  | Adresse                                |                                                                |
+| --------- | -------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.4` og `156.154.71.4`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE1Ni4xNTQuNzAuNA)       |
+| DNS, IPv6 | `2610:a1:1018::4` og `2610:a1:1019::4` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjEwOmExOjEwMTg6OjRd) |
 
 ### Cisco OpenDNS
 
-[Cisco OpenDNS](https://www.opendns.com/) is a service which extends the DNS by incorporating features such as content filtering and phishing protection with a zero downtime.
+[Cisco OpenDNS](https://www.opendns.com/) er en tjeneste, der udvider DNS ved at inkorporere funktioner såsom indholdsfiltrering og phishing-beskyttelse med nul nedetid.
 
 #### Standard
 
-DNS servers with custom filtering that protects your device from malware
+DNS-servere med tilpasset filtrering, der beskytter enheden mod malware
 
-| Protokol       | Adresse                                                       |                                                                                                                                               |
-| -------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.222` and `208.67.220.220`                         | [Føj til AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMjIy)                                                                                    |
-| DNS, IPv6      | `2620:119:35::35` and `2620:119:53::53`                       | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVd)                                                                                |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.220`  | [Føj til AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)  |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]` | [Føj til AdGuard](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20) |
-| DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                           | [Føj til AdGuard](sdns://AgUAAAAAAAAAAAAPZG9oLm9wZW5kbnMuY29tCi9kbnMtcXVlcnk)                                                                 |
+| Protokol       | Adresse                                                      |                                                                                                                                               |
+| -------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `208.67.222.222` og `208.67.220.220`                         | [Føj til AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMjIy)                                                                                    |
+| DNS, IPv6      | `2620:119:35::35` og `2620:119:53::53`                       | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjExOTozNTo6MzVd)                                                                                |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.220`  | [Føj til AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)  |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]` | [Føj til AdGuard](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20) |
+| DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                          | [Føj til AdGuard](sdns://AgUAAAAAAAAAAAAPZG9oLm9wZW5kbnMuY29tCi9kbnMtcXVlcnk)                                                                 |
 
 #### FamilyShield
 
-OpenDNS servers that provide adult content blocking
+OpenDNS-server med blokering af voksenindhold
 
-| Protokol       | Adresse                                                      |                                                                                                                                              |
-| -------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.123` and `208.67.220.123`                        | [Føj til AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMTIz)                                                                                   |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [Føj til AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
-| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`             | [Føj til AdGuard](sdns://AgUAAAAAAAAAAAAcZG9oLmZhbWlseXNoaWVsZC5vcGVuZG5zLmNvbQovZG5zLXF1ZXJ5)                                               |
+| Protokol       | Adresse                                                     |                                                                                                                                              |
+| -------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `208.67.222.123` og `208.67.220.123`                        | [Føj til AdGuard](sdns://AAAAAAAAAAAADjIwOC42Ny4yMjIuMTIz)                                                                                   |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [Føj til AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
+| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`            | [Føj til AdGuard](sdns://AgUAAAAAAAAAAAAcZG9oLmZhbWlseXNoaWVsZC5vcGVuZG5zLmNvbQovZG5zLXF1ZXJ5)                                               |
 
 ### Google DNS
 
-[Google DNS](https://developers.google.com/speed/public-dns/) is a free, global DNS resolution service that you can use as an alternative to your current DNS provider.
+[Google DNS](https://developers.google.com/speed/public-dns/) er en gratis, global DNS-opløsningstjeneste, man kan anvende som et alternativ til sin aktuelle DNS-udbyder.
 
-| Protokol       | Adresse                                           |                                                                                                                   |
-| -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `8.8.8.8` and `8.8.4.4`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzguOC44Ljg)                                                                 |
-| DNS, IPv6      | `2001:4860:4860::8888` and `2001:4860:4860::8844` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0)                                             |
-| DNS-over-HTTPS | `https://dns.google/dns-query`                    | [Føj til AdGuard](sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQpkbnMuZ29vZ2xlCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.google`                                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAKZG5zLmdvb2dsZQ)                                                          |
+| Protokol       | Adresse                                          |                                                                                                                   |
+| -------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `8.8.8.8` og `8.8.4.4`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzguOC44Ljg)                                                                 |
+| DNS, IPv6      | `2001:4860:4860::8888` og `2001:4860:4860::8844` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyMDAxOjQ4NjA6NDg2MDo6ODg4OF0)                                             |
+| DNS-over-HTTPS | `https://dns.google/dns-query`                   | [Føj til AdGuard](sdns://AgUAAAAAAAAAACAe9iTP_15r07rd8_3b_epWVGfjdymdx-5mdRZvMAzBuQpkbnMuZ29vZ2xlCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.google`                               | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAKZG5zLmdvb2dsZQ)                                                          |
 
 ### Cloudflare DNS
 
-[Cloudflare DNS](https://1.1.1.1/) is a free and fast DNS service which functions as a recursive name server providing domain name resolution for any host on the Internet.
+[Cloudflare DNS](https://1.1.1.1/) er en gratis og hurtig DNS-tjeneste, der fungerer som en rekursiv navneserver med domænenavnsopløsning til enhver vært på internet.
 
 #### Standard
 
-| Protokol             | Adresse                                           |                                                                                                                                                                                                           |
-| -------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `1.1.1.1` and `1.0.0.1`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjE)                                                                                                                                                         |
-| DNS, IPv6            | `2606:4700:4700::1111` and `2606:4700:4700::1001` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMV0)                                                                                                                                     |
-| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`            | [Føj til AdGuard](sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk)                         |
-| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`            | [Føj til AdGuard](sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk) |
-| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`          | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAgMWRvdDFkb3QxZG90MS5jbG91ZGZsYXJlLWRucy5jb20)                                                                                                                     |
+| Protokol             | Adresse                                          |                                                                                                                                                                                                           |
+| -------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `1.1.1.1` og `1.0.0.1`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjE)                                                                                                                                                         |
+| DNS, IPv6            | `2606:4700:4700::1111` og `2606:4700:4700::1001` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMV0)                                                                                                                                     |
+| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk)                         |
+| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk) |
+| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`         | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAgMWRvdDFkb3QxZG90MS5jbG91ZGZsYXJlLWRucy5jb20)                                                                                                                     |
 
-#### Malware blocking only
+#### Kun malwareblokering
 
-| Protokol       | Adresse                                           |                                                                                               |
-| -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `1.1.1.2` and `1.0.0.2`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjI)                                             |
-| DNS, IPv6      | `2606:4700:4700::1112` and `2606:4700:4700::1002` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0)                         |
-| DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`   | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://security.cloudflare-dns.com`               | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
+| Protokol       | Adresse                                          |                                                                                               |
+| -------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `1.1.1.2` and `1.0.0.2`                          | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjI)                                             |
+| DNS, IPv6      | `2606:4700:4700::1112` og `2606:4700:4700::1002` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExMl0)                         |
+| DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`  | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://security.cloudflare-dns.com`              | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
 
 #### Malware and adult content blocking
 
-| Protokol             | Adresse                                           |                                                                                            |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| DNS, IPv4            | `1.1.1.3` and `1.0.0.3`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjM)                                          |
-| DNS, IPv6            | `2606:4700:4700::1113` and `2606:4700:4700::1003` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
-| DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`     | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
-| DNS-over-TLS         | `tls://family.cloudflare-dns.com`                 | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
+| Protokol             | Adresse                                          |                                                                                            |
+| -------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| DNS, IPv4            | `1.1.1.3` og `1.0.0.3`                           | [Føj til AdGuard](sdns://AAAAAAAAAAAABzEuMS4xLjM)                                          |
+| DNS, IPv6            | `2606:4700:4700::1113` og `2606:4700:4700::1003` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
+| DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS         | `tls://family.cloudflare-dns.com`                | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
 
 
 ### Quad9 DNS
 
-[Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don't provide a censoring component.
+[Quad9 DNS](https://quad9.net/) er en gratis, rekursiv, anycast DNS-platform med højtydende, fortroligheds- og sikkerhedsbeskyttelse mod phishing og spyware. Quad9-servere har ingen censureringskomponent.
 
 #### Standard
 
-Regular DNS servers which provide protection from phishing and spyware. They include blocklists, DNSSEC validation, and other security features.
+Almindelige DNS-servere med beskyttelse mod phishing og spyware. De omfatter blokeringslister, DNSSEC-validering og andre sikkerhedsfunktioner.
 
-| Protokol       | Adresse                                                        |                                                                                                                                                |
-| -------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.9` and `149.112.112.112`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAABzkuOS45Ljk)                                                                                              |
-| DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                              | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjpmZV0)                                                                                      |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.9:8443`       | [Føj til AdGuard](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)         |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
-| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                              | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldAovZG5zLXF1ZXJ5)                                                                     |
-| DNS-over-TLS   | `tls://dns.quad9.net`                                          | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldA)                                                                                   |
+| Protokol       | Adresse                                                       |                                                                                                                                                |
+| -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.9` og `149.112.112.112`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAABzkuOS45Ljk)                                                                                              |
+| DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjpmZV0)                                                                                      |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.9:8443`       | [Føj til AdGuard](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)         |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
+| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                             | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldAovZG5zLXF1ZXJ5)                                                                     |
+| DNS-over-TLS   | `tls://dns.quad9.net`                                         | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnF1YWQ5Lm5ldA)                                                                                   |
 
-#### Unsecured
+#### Ikke-sikret
 
-Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-Subnet
+Ikke-sikrede DNS-servere har ingen sikkerhedsblokeringsliste, ingen DNSSEC, ingen EDNS-klientundernet
 
-| Protokol       | Adresse                                                           |                                                                                                                                                    |
-| -------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.10` and `149.112.112.10`                                   | [Føj til AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEw)                                                                                                 |
-| DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMF0)                                                                                          |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.10:8443`         | [Føj til AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)           |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe:10]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
-| DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                               | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                      |
-| DNS-over-TLS   | `tls://dns10.quad9.net`                                           | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0)                                                                                     |
+| Protokol       | Adresse                                                          |                                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.10` og `149.112.112.10`                                   | [Føj til AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEw)                                                                                                 |
+| DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                               | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMF0)                                                                                          |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.10:8443`         | [Føj til AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)           |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe:10]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
+| DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                              | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                      |
+| DNS-over-TLS   | `tls://dns10.quad9.net`                                          | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTAucXVhZDkubmV0)                                                                                     |
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client-Subnet.
+EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-adressedata i forespørgsler sendt til autoritative DNS-servere. Den har sikkerhedsblokeringsliste, DNSSEC, EDNS Client-Subnet.
 
-| Protokol       | Adresse                                                        |                                                                                                                                                |
-| -------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.11` and `149.112.112.11`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEx)                                                                                             |
-| DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMV0)                                                                                      |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.11:8443`      | [Føj til AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)       |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
-| DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
-| DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
-### Verisign Public DNS
+| Protokol       | Adresse                                                       |                                                                                                                                                |
+| -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.11` og `149.112.112.11`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAACDkuOS45LjEx)                                                                                             |
+| DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                            | [Føj til AdGuard](sdns://AAAAAAAAAAAADVsyNjIwOmZlOjoxMV0)                                                                                      |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.11:8443`      | [Føj til AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)       |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
+| DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                           | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
+| DNS-over-TLS   | `tls://dns11.quad9.net`                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+### Verisign offentlig DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: it doesn't sell public DNS data to third parties and redirect users' queries to serve them any ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) er en gratis DNS-tjeneste med forbedret DNS-stabilitet og sikkerhed ift. andre alternativer. Verisign respekterer brugernes fortrolighed: De sælger ikke offentlige DNS-data til tredjeparter eller omdirigerer brugernes forespørgsler for at vise dem annoncer.
 
-| Protokol  | Adresse                                |                                                                |
-| --------- | -------------------------------------- | -------------------------------------------------------------- |
-| DNS, IPv4 | `64.6.64.6` or `64.6.65.6`             | [Føj til AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
-| DNS, IPv6 | `2620:74:1b::1:1` or `2620:74:1c::2:2` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+| Protokol  | Adresse                                   |                                                                |
+| --------- | ----------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `64.6.64.6` eller `64.6.65.6`             | [Føj til AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
+| DNS, IPv6 | `2620:74:1b::1:1` eller `2620:74:1c::2:2` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a swiss public DNS service provided by [switch.ch](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) er en schweizisk offentlig DNS-tjeneste leveret af [switch.ch](https://www.switch.ch/)
 
-| Protokol       | Adresse                                                                           |                                                                            |
-| -------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                     | [Føj til AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                 | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| Protokol       | Adresse                                                                          |                                                                            |
+| -------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| DNS, IPv4      | Udbyder: `dns.switch.ch` IP: `130.59.31.248`                                     | [Føj til AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Udbyder: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [Føj til AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) er en gratis alternativ DNS-tjeneste fra Dyn
 
-| Protokol  | Adresse                             |                                                           |
-| --------- | ----------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `216.146.35.35` and `216.146.36.36` | [Føj til AdGuard](sdns://AAAAAAAAAAAADTIxNi4xNDYuMzUuMzU) |
+| Protokol  | Adresse                            |                                                           |
+| --------- | ---------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `216.146.35.35` og `216.146.36.36` | [Føj til AdGuard](sdns://AAAAAAAAAAAADTIxNi4xNDYuMzUuMzU) |
 
 ### DNS.WATCH
 
-[DNS.WATCH](https://dns.watch/) is a fast and free server without logging with a privacy protection feature.
+[DNS.WATCH](https://dns.watch/) er en hurtig og gratis server uden logning med fortrolighedsbeskyttelsesfunktion.
 
-| Protokol  | Adresse                                                       |                                                                               |
-| --------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS, IPv4 | `84.200.69.80` and `84.200.70.40`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA)                      |
-| DNS, IPv6 | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b` | [Føj til AdGuard](sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0) |
+| Protokol  | Adresse                                                      |                                                                               |
+| --------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| DNS, IPv4 | `84.200.69.80` og `84.200.70.40`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAADDg0LjIwMC42OS44MA)                      |
+| DNS, IPv6 | `2001:1608:10:25::1c04:b12f` og `2001:1608:10:25::9249:d69b` | [Føj til AdGuard](sdns://AAAAAAAAAAAAHFsyMDAxOjE2MDg6MTA6MjU6OjFjMDQ6YjEyZl0) |
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
+[FutureDNS](https://futuredns.me/) er en fortrolighedsvenlig DNS-tjeneste med OpenNIC-understøttelse, der blokerer annoncer, trackere og malware, og den logger ingen data.
 
 | Anycast Network | Adresse                              |                                                                                |
 | --------------- | ------------------------------------ | ------------------------------------------------------------------------------ |
@@ -343,22 +343,22 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | DNS-over-TLS    | `tls://dns.futuredns.me`             | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)               |
 | DNS-over-QUIC   | `quic://dns.futuredns.me`            | [Føj til AdGuard](sdns://BAcAAAAAAAAAAAAQZG5zLmZ1dHVyZWRucy5tZQ)               |
 
-| Location           | Address - IPv4                                                              |
-| ------------------ | --------------------------------------------------------------------------- |
-| London, UK         | `52.56.224.201`| [Add to AdGuard](sdns://AAcAAAAAAAAADTUyLjU2LjIyNC4yMDE)   |
-| Milan, Italy       | `15.161.11.3`| [Add to AdGuard](sdns://AAcAAAAAAAAACzE1LjE2MS4xMS4z)        |
-| Stockholm, Sweden  | `13.49.168.178`| [Add to AdGuard](sdns://AAcAAAAAAAAADTEzLjQ5LjE2OC4xNzg)   |
-| Ashburn, USA       | `52.0.69.145`| [Add to AdGuard](sdns://AAcAAAAAAAAACzUyLjAuNjkuMTQ1)        |
-| San Francisco, USA | `13.56.204.161`| [Add to AdGuard](sdns://AAcAAAAAAAAADTEzLjU2LjIwNC4xNjE)   |
-| Montreal, Canada   | `3.97.137.100`| [Add to AdGuard](sdns://AAcAAAAAAAAADDMuOTcuMTM3LjEwMA)     |
-| Singapore          | `54.254.82.60`| [Add to AdGuard](sdns://AAcAAAAAAAAADDU0LjI1NC44Mi42MA)     |
-| Tokyo, Japan       | `54.199.94.55`| [Add to AdGuard](sdns://AAcAAAAAAAAADDU0LjE5OS45NC41NQ)     |
-| Mumbai, India      | `3.7.162.217`| [Add to AdGuard](sdns://AAcAAAAAAAAACzMuNy4xNjIuMjE3)        |
-| São Paulo, Brazil  | `177.71.191.153`| [Add to AdGuard](sdns://AAcAAAAAAAAADjE3Ny43MS4xOTEuMTUz) |
+| Placering              | Adresse - IPv4                                                               |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| London, Storbritannien | `52.56.224.201`| [Føj til AdGuard](sdns://AAcAAAAAAAAADTUyLjU2LjIyNC4yMDE)   |
+| Milano, Italien        | `15.161.11.3`| [Føj til AdGuard](sdns://AAcAAAAAAAAACzE1LjE2MS4xMS4z)        |
+| Stockholm, Sverige     | `13.49.168.178`| [Føj til AdGuard](sdns://AAcAAAAAAAAADTEzLjQ5LjE2OC4xNzg)   |
+| Ashburn, USA           | `52.0.69.145`| [Føj til AdGuard](sdns://AAcAAAAAAAAACzUyLjAuNjkuMTQ1)        |
+| San Francisco, USA     | `13.56.204.161`| [Føj til AdGuard](sdns://AAcAAAAAAAAADTEzLjU2LjIwNC4xNjE)   |
+| Montreal, Canada       | `3.97.137.100`| [Føj til AdGuard](sdns://AAcAAAAAAAAADDMuOTcuMTM3LjEwMA)     |
+| Singapore              | `54.254.82.60`| [Føj til AdGuard](sdns://AAcAAAAAAAAADDU0LjI1NC44Mi42MA)     |
+| Tokyo, Japan           | `54.199.94.55`| [Føj til AdGuard](sdns://AAcAAAAAAAAADDU0LjE5OS45NC41NQ)     |
+| Mumbai, Indien         | `3.7.162.217`| [Føj til AdGuard](sdns://AAcAAAAAAAAACzMuNy4xNjIuMjE3)        |
+| São Paulo, Brasilien   | `177.71.191.153`| [Føj til AdGuard](sdns://AAcAAAAAAAAADjE3Ny43MS4xOTEuMTUz) |
 
 ### SkyDNS RU
 
-[SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.
+[SkyDNS](https://www.skydns.ru/en/)-løsning til indholdsfiltrering og internetsikkerhed.
 
 | Protokol  | Adresse          |                                                            |
 | --------- | ---------------- | ---------------------------------------------------------- |
@@ -366,193 +366,193 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### Comss.ru DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS servers with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
 
-#### West DNS Server (Main)
+#### West DNS Server (primær)
 
-| Protokol       | Adresse                                                                      |                                                                                                                                                                   |
-| -------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.38.152.163` and `93.115.24.204`                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6      | `2a03:90c0:56::1a5` and `2a02:7b40:5eb0:e95d::1`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [Føj til AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                            | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS-over-TLS   | `tls://dns.comss.one`                                                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| Protokol       | Adresse                                                                     |                                                                                                                                                                   |
+| -------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `92.38.152.163` og `93.115.24.204`                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
+| DNS, IPv6      | `2a03:90c0:56::1a5` og `2a02:7b40:5eb0:e95d::1`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [Føj til AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                           | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
+| DNS-over-TLS   | `tls://dns.comss.one`                                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
 
-#### East DNS Server (Siberia and Far East)
+#### East DNS Server (Sibirien og Fjernøsten)
 
-| Protokol       | Adresse                                   |                                                                                   |
-| -------------- | ----------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.223.109.31` and `91.230.211.67`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6      | `2a03:90c0:b5::1a` and `2a04:2fc0:39::47` | [Føj til AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`    | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| Protokol       | Adresse                                  |                                                                                   |
+| -------------- | ---------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS, IPv4      | `92.223.109.31` og `91.230.211.67`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
+| DNS, IPv6      | `2a03:90c0:b5::1a` og `2a04:2fc0:39::47` | [Føj til AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
+| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`   | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.east.comss.one`               | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
 
 ### Safe DNS
 
-[Safe DNS](https://www.safedns.com/) is a global anycast network which consists of servers located throughout the world — both Americas, Europe, Africa, Australia, and the Far East to ensure a fast and reliable DNS resolving from any point worldwide.
+[Safe DNS](https://www.safedns.com/) er et globalt anycast-netværk bestående af servere placeret verden over — både Amerika, Europa, Afrika, Australien og Fjernøsten for at sikre hurtig og pålidelig DNS-opløsning fra ethvert punkt i hele verden.
 
-| Protokol  | Adresse                           |                                                          |
-| --------- | --------------------------------- | -------------------------------------------------------- |
-| DNS, IPv4 | `195.46.39.39` and `195.46.39.40` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE5NS40Ni4zOS4zOQ) |
+| Protokol  | Adresse                          |                                                          |
+| --------- | -------------------------------- | -------------------------------------------------------- |
+| DNS, IPv4 | `195.46.39.39` og `195.46.39.40` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE5NS40Ni4zOS4zOQ) |
 
 
 ### CIRA Canadian Shield DNS
 
-[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
+[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) beskytter imod tyveri af personlige og økonomiske data. Hold vira, ransomware og anden malware ude af hjemmet.
 
-#### Private
+#### Privat
 
-In "Private" mode, DNS resolution only
+I tilstanden "Privat" leveres kun DNS-opløsning
 
-| Protokol               | Adresse                                                                                              |                                                                                                   |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                   | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Protokol               | Adresse                                                                                             |                                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` og `149.112.122.10`                                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` og `2620:10A:80BC::10`                                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
-#### Protected
+#### Beskyttet
 
-In "Protected" mode, malware and phishing protection
+I tilstanden "Beskyttet" beskyttes imod malware og phishing
 
-| Protokol                 | Adresse                                                                                                |                                                                                                      |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                  | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                            | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                   | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol                 | Adresse                                                                                               |                                                                                                      |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` og `149.112.122.20`                                                                  | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` og `2620:10A:80BC::20`                                                            | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Familie
 
-In "Family" mode, Protected + blocking adult content
+I tilstanden "Familie" beskyttet + blokering af voksenindhold
 
-| Protokol              | Adresse                                                                                                |                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                  | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                            | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                      | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol              | Adresse                                                                                               |                                                                                                  |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| DNS, IPv4             | `149.112.121.30` og `149.112.122.30`                                                                  | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` og `2620:10A:80BC::30`                                                            | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/) er en gratis alternativ DNS-tjeneste fra OpenNIC Project
 
-| Protokol  | Adresse                                    |                                                                |
-| --------- | ------------------------------------------ | -------------------------------------------------------------- |
-| DNS, IPv4 | `185.121.177.177` and `169.239.202.202`    | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4NS4xMjEuMTc3LjE3Nw)   |
-| DNS, IPv6 | `2a05:dfc7:5::53` and `2a05:dfc7:5353::53` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyYTA1OmRmYzc6NTo6NTNd) |
+| Protokol  | Adresse                                   |                                                                |
+| --------- | ----------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `185.121.177.177` og `169.239.202.202`    | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4NS4xMjEuMTc3LjE3Nw)   |
+| DNS, IPv6 | `2a05:dfc7:5::53` og `2a05:dfc7:5353::53` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyYTA1OmRmYzc6NTo6NTNd) |
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) A small hobby DNS project. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares
+[BlahDNS](https://blahdns.com/) Et lille hobby DNS-projekt. Ingen logger, Ethereum Name Service, DNSSEC-klar og Filtrerede annoncer, trackere, malwares
 
 #### Finland DNS Server
 
-| Protokol             | Adresse                                                                  |                                                                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-fi.blahdns.com`  IP: `95.216.212.177`               | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWZpLmJsYWhkbnMuY29t)                                                                                     |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-fi.blahdns.com/dns-query` IP: `95.216.212.177`    | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWZpLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                              |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `95.216.212.177:8443`        | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f9:c010:43ce::1:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresse                                                                 |                                                                                                                                                                |
+| -------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Værtsnavn: `tls://dot-fi.blahdns.com`  IP: `95.216.212.177`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWZpLmJsYWhkbnMuY29t)                                                                                     |
+| DNS-over-HTTPS, IPv4 | Værtsnavn: `https://doh-fi.blahdns.com/dns-query` IP: `95.216.212.177`  | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWZpLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                              |
+| DNSCrypt, IPv4       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `95.216.212.177:8443`        | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
+| DNSCrypt, IPv6       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f9:c010:43ce::1:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
 #### Japan DNS Server
 
-| Protokol             | Adresse                                                                             |                                                                                                                                                                            |
-| -------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-jp.blahdns.com`  IP: `139.162.112.47`                          | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAASZG90LWpwLmJsYWhkbnMuY29t)                                                                                                         |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-jp.blahdns.com/dns-query`                                    | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWpwLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                                          |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `139.162.112.47:8443`                   | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzEzOS4xNjIuMTEyLjQ3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                         |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `[2400:8902::f03c:92ff:fe27:344b]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTI3OjM0NGJdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresse                                                                            |                                                                                                                                                                            |
+| -------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Værtsnavn: `tls://dot-jp.blahdns.com`  IP: `139.162.112.47`                        | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAASZG90LWpwLmJsYWhkbnMuY29t)                                                                                                         |
+| DNS-over-HTTPS, IPv4 | Værtsnavn: `https://doh-jp.blahdns.com/dns-query`                                  | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWpwLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                                          |
+| DNSCrypt, IPv4       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `139.162.112.47:8443`                   | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzEzOS4xNjIuMTEyLjQ3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                         |
+| DNSCrypt, IPv6       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `[2400:8902::f03c:92ff:fe27:344b]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTI3OjM0NGJdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
 #### Germany DNS Server
 
-| Protokol             | Adresse                                                                  |                                                                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-de.blahdns.com`  IP: `159.69.198.101`               | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG90LWRlLmJsYWhkbnMuY29t)                                                                                             |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`    | [Føj til AdGuard](sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ)                                                           |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443`        | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f8:1c1c:6b4b::1:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresse                                                                 |                                                                                                                                                                |
+| -------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Værtsnavn: `tls://dot-de.blahdns.com`  IP: `159.69.198.101`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG90LWRlLmJsYWhkbnMuY29t)                                                                                             |
+| DNS-over-HTTPS, IPv4 | Værtsnavn: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`  | [Føj til AdGuard](sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ)                                                           |
+| DNSCrypt, IPv4       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443`        | [Føj til AdGuard](sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
+| DNSCrypt, IPv6       | Udbyder: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f8:1c1c:6b4b::1:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
 ### Snopyta DNS
 
-[Snopyta DNS](https://snopyta.org/) is a privacy friendly DNS service run by Noah Seefried.
+[Snopyta DNS](https://snopyta.org/) er en fortrolighedsvenlig DNS-tjeneste drevet af Noah Seefried.
 
-| Protokol       | Adresse                                                                                           |                                                                                        |
-| -------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://fi.doh.dns.snopyta.org/dns-query` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAWZmkuZG9oLmRucy5zbm9weXRhLm9yZwovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301`             | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAWZmkuZG90LmRucy5zbm9weXRhLm9yZw)               |
+| Protokol       | Adresse                                                                                          |                                                                                        |
+| -------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://fi.doh.dns.snopyta.org/dns-query` IP: `95.216.24.230` og IPv6: `2a01:4f9:2a:1919::9301` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAWZmkuZG9oLmRucy5zbm9weXRhLm9yZwovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` og IPv6: `2a01:4f9:2a:1919::9301`             | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAWZmkuZG90LmRucy5zbm9weXRhLm9yZw)               |
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
+[DNS for Family](https://dnsforfamily.com/) har til formål at blokere voksne websteder. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
-| Protokol       | Adresse                                                    |                                                                                                                                           |
-| -------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns-doh.dnsforfamily.com/dns-query`               | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAgaHR0cHM6Ly9kbnMtZG9oLmRuc2ZvcmZhbWlseS5jb20KL2Rucy1xdWVyeQ)                                      |
-| DNS-over-TLS   | `tls://dns-dot.dnsforfamily.com`                           | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAYZG5zLWRvdC5kbnNmb3JmYW1pbHkuY29t)                                                                |
-| DNS, IPv4      | `94.130.180.225` and `78.47.64.161`                        | [Føj til AdGuard](sdns://AAAAAAAAAAAADjk0LjEzMC4xODAuMjI1)                                                                                |
-| DNS, IPv6      | `2a01:4f8:1c0c:40db::1` and `2a01:4f8:1c17:4df8::1`        | [Føj til AdGuard](sdns://AAAAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFd)                                                                    |
-| DNSCrypt, IPv4 | Provider: `dnsforfamily.com` IP: `94.130.180.225`          | [Føj til AdGuard](sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20)             |
-| DNSCrypt, IPv6 | Provider: `dnsforfamily.com` IP: `[2a01:4f8:1c0c:40db::1]` | [Føj til AdGuard](sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFdIKeNqJacdMufL_kvUDGFm5-J2r4yS94vn4S5ie-o8MCMEGRuc2ZvcmZhbWlseS5jb20) |
+| Protokol       | Adresse                                                   |                                                                                                                                           |
+| -------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns-doh.dnsforfamily.com/dns-query`              | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAgaHR0cHM6Ly9kbnMtZG9oLmRuc2ZvcmZhbWlseS5jb20KL2Rucy1xdWVyeQ)                                      |
+| DNS-over-TLS   | `tls://dns-dot.dnsforfamily.com`                          | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAYZG5zLWRvdC5kbnNmb3JmYW1pbHkuY29t)                                                                |
+| DNS, IPv4      | `94.130.180.225` and `78.47.64.161`                       | [Føj til AdGuard](sdns://AAAAAAAAAAAADjk0LjEzMC4xODAuMjI1)                                                                                |
+| DNS, IPv6      | `2a01:4f8:1c0c:40db::1` og `2a01:4f8:1c17:4df8::1`        | [Føj til AdGuard](sdns://AAAAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFd)                                                                    |
+| DNSCrypt, IPv4 | Udbyder: `dnsforfamily.com` IP: `94.130.180.225`          | [Føj til AdGuard](sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20)             |
+| DNSCrypt, IPv6 | Udbyder: `dnsforfamily.com` IP: `[2a01:4f8:1c0c:40db::1]` | [Føj til AdGuard](sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFdIKeNqJacdMufL_kvUDGFm5-J2r4yS94vn4S5ie-o8MCMEGRuc2ZvcmZhbWlseS5jb20) |
 
 ### CZ.NIC ODVR
 
-[CZ.NIC ODVR](https://www.nic.cz/odvr/) CZ.NIC ODVR are Open DNSSEC Validating Resolvers. CZ.NIC neither collect any personal data nor gather information on pages where devices sends personal data.
+[CZ.NIC ODVR](https://www.nic.cz/odvr/) CZ.NIC ODVR er Open DNSSEC Validating Resolvers. CZ.NIC hverken indsamler personlige data eller oplysninger på sider, hvortil enheder sender personlige data.
 
-| Protokol       | Adresse                                     |                                                                   |
-| -------------- | ------------------------------------------- | ----------------------------------------------------------------- |
-| DNS, IPv4      | `193.17.47.1` and `185.43.135.1`            | [Føj til AdGuard](sdns://AAAAAAAAAAAACzE5My4xNy40Ny4x)            |
-| DNS, IPv6      | `2001:148f:ffff::1` and `2001:148f:fffe::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syMDAxOjE0OGY6ZmZmZjo6MV0) |
-| DNS-over-HTTPS | `https://odvr.nic.cz/doh`                   | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALb2R2ci5uaWMuY3oEL2RvaA)  |
-| DNS-over-TLS   | `tls://odvr.nic.cz`                         | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALb2R2ci5uaWMuY3o)         |
+| Protokol       | Adresse                                    |                                                                   |
+| -------------- | ------------------------------------------ | ----------------------------------------------------------------- |
+| DNS, IPv4      | `193.17.47.1` og `185.43.135.1`            | [Føj til AdGuard](sdns://AAAAAAAAAAAACzE5My4xNy40Ny4x)            |
+| DNS, IPv6      | `2001:148f:ffff::1` og `2001:148f:fffe::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syMDAxOjE0OGY6ZmZmZjo6MV0) |
+| DNS-over-HTTPS | `https://odvr.nic.cz/doh`                  | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALb2R2ci5uaWMuY3oEL2RvaA)  |
+| DNS-over-TLS   | `tls://odvr.nic.cz`                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALb2R2ci5uaWMuY3o)         |
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) er en gratis rekursiv DNS-tjeneste, dedikeret til at levere hurtig, stabil og sikker DNS-opløsning til hovedparten af internetbrugere. Den inkluderer AliGuard-funktion for brugerbeskyttelse mod forskellige angreb og trusler.
 
-| Protokol       | Adresse                                |                                                                              |
-| -------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
-| DNS, IPv4      | `223.5.5.5` and `223.6.6.6`            | [Føj til AdGuard](sdns://AAAAAAAAAAAACTIyMy41LjUuNQ)                         |
-| DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAADlsyNDAwOjMyMDA6OjFd)                   |
-| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`     | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAOZG5zLmFsaWRucy5jb20KL2Rucy1xdWVyeQ) |
-| DNS-over-TLS   | `tls://dns.alidns.com`                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmFsaWRucy5jb20)                |
+| Protokol       | Adresse                               |                                                                              |
+| -------------- | ------------------------------------- | ---------------------------------------------------------------------------- |
+| DNS, IPv4      | `223.5.5.5` og `223.6.6.6`            | [Føj til AdGuard](sdns://AAAAAAAAAAAACTIyMy41LjUuNQ)                         |
+| DNS, IPv6      | `2400:3200::1` og `2400:3200:baba::1` | [Føj til AdGuard](sdns://AAAAAAAAAAAADlsyNDAwOjMyMDA6OjFd)                   |
+| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAOZG5zLmFsaWRucy5jb20KL2Rucy1xdWVyeQ) |
+| DNS-over-TLS   | `tls://dns.alidns.com`                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmFsaWRucy5jb20)                |
 
 ### CFIEC Public DNS
 
-IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It support DNS64 to provide domain name resolution only for IPv6 users.
+IPv6-baseret anycast DNS-tjeneste med stærke sikkerhedskapaciteter og beskyttelse imod spyware, ondsindede websteder. It supports DNS64 to provide domain name resolution only for IPv6 users.
 
 | Protokol       | Adresse                           |                                                                            |
 | -------------- | --------------------------------- | -------------------------------------------------------------------------- |
-| DNS, IPv6      | `240C::6666` and `240C::6644`     | [Føj til AdGuard](sdns://AAAAAAAAAAAADFsyNDBDOjo2NjY2XQ)                   |
+| DNS, IPv6      | `240C::6666` og `240C::6644`      | [Føj til AdGuard](sdns://AAAAAAAAAAAADFsyNDBDOjo2NjY2XQ)                   |
 | DNS-over-HTTPS | `https://dns.cfiec.net/dns-query` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLmNmaWVjLm5ldAovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://dns.cfiec.net`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAATdGxzOi8vZG5zLmNmaWVjLm5ldA)       |
 
 ### Nawala Childprotection DNS
 
-[Nawala Childprotection DNS](http://nawala.id/) is an anycast Internet filtering system that protects children from inappropriate websites and abusive contents.
+[Nawala Childprotection DNS](http://nawala.id/) er et anycast-internetfiltreringssystem, der beskytter børn mod upassende websteder og stødende indhold.
 
-| Protokol       | Adresse                                                     |                                                                                                                                            |
-| -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `180.131.144.144` and `180.131.145.145`                     | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA)                                                                               |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144` | [Føj til AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
+| Protokol       | Adresse                                                    |                                                                                                                                            |
+| -------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `180.131.144.144` og `180.131.145.145`                     | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA)                                                                               |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144` | [Føj til AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
 
 ### 360 Secure DNS
 
-**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
+**360 Secure DNS** er en brancheførende rekursiv DNS-tjeneste med avanceret beskyttelse mod netværkssikkerhedstrusler.
 
-| Protokol       | Adresse                            |                                                                        |
-| -------------- | ---------------------------------- | ---------------------------------------------------------------------- |
-| DNS, IPv4      | `101.226.4.6` and `218.30.118.6`   | [Føj til AdGuard](sdns://AAAAAAAAAAAACzEwMS4yMjYuNC42)                 |
-| DNS, IPv4      | `123.125.81.6` and `140.207.198.6` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDEyMy4xMjUuODEuNg)               |
-| DNS-over-HTTPS | `https://doh.360.cn/dns-query`     | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLjM2MC5jbgovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://dot.360.cn`                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAKZG90LjM2MC5jbg)               |
+| Protokol       | Adresse                           |                                                                        |
+| -------------- | --------------------------------- | ---------------------------------------------------------------------- |
+| DNS, IPv4      | `101.226.4.6` og `218.30.118.6`   | [Føj til AdGuard](sdns://AAAAAAAAAAAACzEwMS4yMjYuNC42)                 |
+| DNS, IPv4      | `123.125.81.6` og `140.207.198.6` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDEyMy4xMjUuODEuNg)               |
+| DNS-over-HTTPS | `https://doh.360.cn/dns-query`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLjM2MC5jbgovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dot.360.cn`                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAKZG90LjM2MC5jbg)               |
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
+[IIJ.JP](https://public.dns.iij.jp/) er en offentlig DNS-tjeneste drevet af Internet Initiative Japan. Den blokerer også børnemisbrugsindhold.
 
 | Protokol       | Adresse                               |                                                                                  |
 | -------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
@@ -561,151 +561,151 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
+[DNSPod Public DNS+](https://www.dnspod.com/) er en fortrolighedsvenlig DNS-udbyder med mange års erfaring inden for udvikling af domænenavnsopløsningstjenester. Den har til formål at give brugerne en hurtigere, mere præcis samt stabil rekursiv opløsningstjeneste.
 
-| Protokol       | Adresse                           |                                                                    |
-| -------------- | --------------------------------- | ------------------------------------------------------------------ |
-| DNS, IPv4      | `119.29.29.29` and `119.28.28.28` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ)           |
-| DNS-over-HTTPS | `https://doh.pub/dns-query`       | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5) |
-| DNS-over-HTTPS | `https://dns.pub/dns-query`       | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAHZG5zLnB1YgovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://dot.pub`                   | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAHZG90LnB1Yg)               |
+| Protokol       | Adresse                          |                                                                    |
+| -------------- | -------------------------------- | ------------------------------------------------------------------ |
+| DNS, IPv4      | `119.29.29.29` og `119.28.28.28` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ)           |
+| DNS-over-HTTPS | `https://doh.pub/dns-query`      | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5) |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`      | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAHZG5zLnB1YgovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dot.pub`                  | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAHZG90LnB1Yg)               |
 
 ### 114DNS
 
-**114DNS** is a professional and high-reliability DNS service.
+**114DNS** er en professionel DNS-tjeneste med høj pålidelighed.
 
 #### Normal
 
-Block ads and annoying websites
+Blokér annoncer og irriterende websteder
 
-| Protokol  | Adresse                                 |                                                              |
-| --------- | --------------------------------------- | ------------------------------------------------------------ |
-| DNS, IPv4 | `114.114.114.114` and `114.114.115.115` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExNA) |
+| Protokol  | Adresse                                |                                                              |
+| --------- | -------------------------------------- | ------------------------------------------------------------ |
+| DNS, IPv4 | `114.114.114.114` og `114.114.115.115` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExNA) |
 
 #### Sikker
 
-Blocks phishing, malicious and other unsafe websites
+Blokerer phishing, ondsindede og andre ikke-sikre websteder
 
-| Protokol  | Adresse                                 |                                                              |
-| --------- | --------------------------------------- | ------------------------------------------------------------ |
-| DNS, IPv4 | `114.114.114.119` and `114.114.115.119` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExOQ) |
+| Protokol  | Adresse                                |                                                              |
+| --------- | -------------------------------------- | ------------------------------------------------------------ |
+| DNS, IPv4 | `114.114.114.119` og `114.114.115.119` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExOQ) |
 
 #### Familie
 
-These servers block adult websites and inappropriate contents.
+Disse servere blokerer voksenwebsteder og upassende indhold.
 
-| Protokol  | Adresse                                 |                                                              |
-| --------- | --------------------------------------- | ------------------------------------------------------------ |
-| DNS, IPv4 | `114.114.114.110` and `114.114.115.110` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExMA) |
+| Protokol  | Adresse                                |                                                              |
+| --------- | -------------------------------------- | ------------------------------------------------------------ |
+| DNS, IPv4 | `114.114.114.110` og `114.114.115.110` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzExNC4xMTQuMTE0LjExMA) |
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) is a free alternative DNS service without logging by TWNIC (Taiwan Network Information Center)
+[Quad101](https://101.101.101.101) er en gratis alternativ DNS-tjeneste uden loging fra TWNIC (Taiwan Network Information Center)
 
-| Protokol       | Adresse                                 |                                                                           |
-| -------------- | --------------------------------------- | ------------------------------------------------------------------------- |
-| DNS, IPv4      | `101.101.101.101` and `101.102.103.104` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzEwMS4xMDEuMTAxLjEwMQ)              |
-| DNS, IPv6      | `2001:de4::101` and `2001:de4::102`     | [Føj til AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
-| DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`        | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://101.101.101.101`                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
+| Protokol       | Adresse                                |                                                                           |
+| -------------- | -------------------------------------- | ------------------------------------------------------------------------- |
+| DNS, IPv4      | `101.101.101.101` og `101.102.103.104` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzEwMS4xMDEuMTAxLjEwMQ)              |
+| DNS, IPv6      | `2001:de4::101` og `2001:de4::102`     | [Føj til AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
+| DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`       | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://101.101.101.101`                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
 
 
 ### OneDNS
 
-**OneDNS** is a secure, fast, free niche DNS service with malicious domains blocking facility.
+**OneDNS** er en sikker, hurtig og gratis niche-DNS-tjeneste med blokeringsfacilitet for ondsindede domæner.
 
 #### Pure Edition
 
-| Protokol  | Adresse                          |                                                          |
-| --------- | -------------------------------- | -------------------------------------------------------- |
-| DNS, IPv4 | `117.50.10.10` and `52.80.52.52` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMC4xMA) |
+| Protokol  | Adresse                         |                                                          |
+| --------- | ------------------------------- | -------------------------------------------------------- |
+| DNS, IPv4 | `117.50.10.10` og `52.80.52.52` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMC4xMA) |
 
 #### Block Edition
 
-| Protokol  | Adresse                          |                                                          |
-| --------- | -------------------------------- | -------------------------------------------------------- |
-| DNS, IPv4 | `117.50.11.11` and `52.80.66.66` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMS4xMQ) |
+| Protokol  | Adresse                         |                                                          |
+| --------- | ------------------------------- | -------------------------------------------------------- |
+| DNS, IPv4 | `117.50.11.11` og `52.80.66.66` | [Føj til AdGuard](sdns://AAAAAAAAAAAADDExNy41MC4xMS4xMQ) |
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains!. Ingen logning, ingen ECS, DNSSEC-validering, gratis!
 
 #### Singapore DNS Server
 
-| Protokol       | Adresse                                                                    | Location                                                                                                                                                       |
-| -------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `174.138.21.128`                                                           | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4)                                                                                                     |
-| DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ)                                                                                   |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`              | [Føj til AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA)                  |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]` | [Føj til AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
-| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party)                | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ)                                                                                   |
-| DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                           | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
-| DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [Føj til AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
-| DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
+| Protokol       | Adresse                                                                   | Placering                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `174.138.21.128`                                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4)                                                                                                     |
+| DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                               | [Føj til AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ)                                                                                   |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`              | [Føj til AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA)                  |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]` | [Føj til AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
+| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party)               | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAOZG9oLnRpYXJhcC5vcmcKL2Rucy1xdWVyeQ)                                                                                   |
+| DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                          | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
+| DNS-over-QUIC  | `quic://doh.tiar.app`                                                     | [Føj til AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
+| DNS-over-TLS   | `tls://dot.tiar.app`                                                      | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
 
 
 #### Japan DNS Server
 
-| Protokol       | Adresse                                                                        |                                                                                                                                                                            |
-| -------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `172.104.93.80`                                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAADTE3Mi4xMDQuOTMuODA)                                                                                                                  |
-| DNS, IPv6      | `2400:8902::f03c:91ff:feda:c514`                                               | [Føj til AdGuard](sdns://AAAAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRd)                                                                                         |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.jp.tiar.app` IP: `172.104.93.80`                    | [Føj til AdGuard](sdns://AQcAAAAAAAAAEjE3Mi4xMDQuOTMuODA6MTQ0MyAyuHY-8b9lNqHeahPAzW9IoXnjiLaZpTeNbVs8TN9UUxsyLmRuc2NyeXB0LWNlcnQuanAudGlhci5hcHA)                          |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.jp.tiar.app` IP: `[2400:8902::f03c:91ff:feda:c514]` | [Føj til AdGuard](sdns://AQcAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRdOjE0NDMgMrh2PvG_ZTah3moTwM1vSKF544i2maU3jW1bPEzfVFMbMi5kbnNjcnlwdC1jZXJ0LmpwLnRpYXIuYXBw) |
-| DNS-over-HTTPS | `https://jp.tiarap.org/dns-query`                                              | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANanAudGlhcmFwLm9yZwovZG5zLXF1ZXJ5)                                                                                                 |
-| DNS-over-HTTPS | `https://jp.tiar.app/dns-query`                                                | [Føj til AdGuard](sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODAgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgLanAudGlhci5hcHAKL2Rucy1xdWVyeQ)                                       |
-| DNS-over-TLS   | `tls://jp.tiar.app`                                                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALanAudGlhci5hcHA)                                                                                                                  |
+| Protokol       | Adresse                                                                       |                                                                                                                                                                            |
+| -------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `172.104.93.80`                                                               | [Føj til AdGuard](sdns://AAAAAAAAAAAADTE3Mi4xMDQuOTMuODA)                                                                                                                  |
+| DNS, IPv6      | `2400:8902::f03c:91ff:feda:c514`                                              | [Føj til AdGuard](sdns://AAAAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRd)                                                                                         |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.jp.tiar.app` IP: `172.104.93.80`                    | [Føj til AdGuard](sdns://AQcAAAAAAAAAEjE3Mi4xMDQuOTMuODA6MTQ0MyAyuHY-8b9lNqHeahPAzW9IoXnjiLaZpTeNbVs8TN9UUxsyLmRuc2NyeXB0LWNlcnQuanAudGlhci5hcHA)                          |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.jp.tiar.app` IP: `[2400:8902::f03c:91ff:feda:c514]` | [Føj til AdGuard](sdns://AQcAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRdOjE0NDMgMrh2PvG_ZTah3moTwM1vSKF544i2maU3jW1bPEzfVFMbMi5kbnNjcnlwdC1jZXJ0LmpwLnRpYXIuYXBw) |
+| DNS-over-HTTPS | `https://jp.tiarap.org/dns-query`                                             | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANanAudGlhcmFwLm9yZwovZG5zLXF1ZXJ5)                                                                                                 |
+| DNS-over-HTTPS | `https://jp.tiar.app/dns-query`                                               | [Føj til AdGuard](sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODAgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDgLanAudGlhci5hcHAKL2Rucy1xdWVyeQ)                                       |
+| DNS-over-TLS   | `tls://jp.tiar.app`                                                           | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALanAudGlhci5hcHA)                                                                                                                  |
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
+[FreeDNS](https://freedns.zone/) er en åben, gratis og offentlig DNS-tjeneste leveret af [Virtexxa-skytjenester](https://virtexxa.com/). Ingen DNS-omdirigeringer, nul logning.
 
-| Protokol  | Adresse                               |                                                            |
-| --------- | ------------------------------------- | ---------------------------------------------------------- |
-| DNS, IPv4 | `172.104.237.57` and `172.104.49.100` | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE3Mi4xMDQuMjM3LjU3) |
-| DNS, IPv4 | `37.235.1.174` and `37.235.1.177`     | [Føj til AdGuard](sdns://AAAAAAAAAAAADDM3LjIzNS4xLjE3NA)   |
+| Protokol  | Adresse                              |                                                            |
+| --------- | ------------------------------------ | ---------------------------------------------------------- |
+| DNS, IPv4 | `172.104.237.57` og `172.104.49.100` | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE3Mi4xMDQuMjM3LjU3) |
+| DNS, IPv4 | `37.235.1.174` og `37.235.1.177`     | [Føj til AdGuard](sdns://AAAAAAAAAAAADDM3LjIzNS4xLjE3NA)   |
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World
+[Freenom World](https://freenom.world/en/index.html) er en gratis anonym DNS-opløser fra Freenom World
 
-| Protokol  | Adresse                         |                                                        |
-| --------- | ------------------------------- | ------------------------------------------------------ |
-| DNS, IPv4 | `80.80.80.80` and `80.80.81.81` | [Føj til AdGuard](sdns://AAAAAAAAAAAACzgwLjgwLjgwLjgw) |
+| Protokol  | Adresse                        |                                                        |
+| --------- | ------------------------------ | ------------------------------------------------------ |
+| DNS, IPv4 | `80.80.80.80` og `80.80.81.81` | [Føj til AdGuard](sdns://AAAAAAAAAAAACzgwLjgwLjgwLjgw) |
 
 ### OSZX DNS
 
-[OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
+[OSZX DNS](https://dns.oszx.co/) er et lille Adblocking DNS-hobbyprojekt.
 
 #### OSZX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
+Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har DNSSEC aktiveret
 
-| Protokol       | Adresse                                                                  |                                                                                                                                                           |
-| -------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `51.38.83.141`                                                           | [Føj til AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgzLjE0MQ)                                                                                                  |
-| DNS, IPv6      | `2001:41d0:801:2000::d64`                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAAGVsyMDAxOjQxZDA6ODAxOjIwMDA6OmQ2NF0)                                                                                 |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.oszx.co` IP: `51.38.83.141:5353`              | [Føj til AdGuard](sdns://AQIAAAAAAAAAETUxLjM4LjgzLjE0MTo1MzUzIMwm9_oYw26P4JIVoDhJ_5kFDdNxX1ke4fEzL1V5bwEjFzIuZG5zY3J5cHQtY2VydC5vc3p4LmNv)                |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.oszx.co` IP: `[2001:41d0:801:2000::d64]:5353` | [Føj til AdGuard](sdns://AQIAAAAAAAAAHDIwMDE6NDFkMDo4MDE6MjAwMDo6ZDY0OjUzNTMgzCb3-hjDbo_gkhWgOEn_mQUN03FfWR7h8TMvVXlvASMXMi5kbnNjcnlwdC1jZXJ0Lm9zenguY28) |
-| DNS-over-HTTPS | `https://dns.oszx.co/dns-query`                                          | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALZG5zLm9zenguY28KL2Rucy1xdWVyeQ)                                                                                  |
-| DNS-over-TLS   | `tls://dns.oszx.co`                                                      | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALZG5zLm9zenguY28)                                                                                                 |
+| Protokol       | Adresse                                                                 |                                                                                                                                                           |
+| -------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `51.38.83.141`                                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgzLjE0MQ)                                                                                                  |
+| DNS, IPv6      | `2001:41d0:801:2000::d64`                                               | [Føj til AdGuard](sdns://AAAAAAAAAAAAGVsyMDAxOjQxZDA6ODAxOjIwMDA6OmQ2NF0)                                                                                 |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.oszx.co` IP: `51.38.83.141:5353`              | [Føj til AdGuard](sdns://AQIAAAAAAAAAETUxLjM4LjgzLjE0MTo1MzUzIMwm9_oYw26P4JIVoDhJ_5kFDdNxX1ke4fEzL1V5bwEjFzIuZG5zY3J5cHQtY2VydC5vc3p4LmNv)                |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.oszx.co` IP: `[2001:41d0:801:2000::d64]:5353` | [Føj til AdGuard](sdns://AQIAAAAAAAAAHDIwMDE6NDFkMDo4MDE6MjAwMDo6ZDY0OjUzNTMgzCb3-hjDbo_gkhWgOEn_mQUN03FfWR7h8TMvVXlvASMXMi5kbnNjcnlwdC1jZXJ0Lm9zenguY28) |
+| DNS-over-HTTPS | `https://dns.oszx.co/dns-query`                                         | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALZG5zLm9zenguY28KL2Rucy1xdWVyeQ)                                                                                  |
+| DNS-over-TLS   | `tls://dns.oszx.co`                                                     | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALZG5zLm9zenguY28)                                                                                                 |
 
 #### PumpleX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
+Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har DNSSEC aktiveret
 
-| Protokol       | Adresse                                                                       |                                                                                                                                                                  |
-| -------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `51.38.82.198`                                                                | [Føj til AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgyLjE5OA)                                                                                                         |
-| DNS, IPv6      | `2001:41d0:801:2000::1b28`                                                    | [Føj til AdGuard](sdns://AAAAAAAAAAAAGlsyMDAxOjQxZDA6ODAxOjIwMDA6OjFiMjhd)                                                                                       |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.pumplex.com` IP: `51.38.82.198:5353`               | [Føj til AdGuard](sdns://AQcAAAAAAAAAETUxLjM4LjgyLjE5ODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ)                 |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.pumplex.com` IP: `[2001:41d0:801:2000::1b28]:5353` | [Føj til AdGuard](sdns://AQcAAAAAAAAAHTIwMDE6NDFkMDo4MDE6MjAwMDo6MWIyODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ) |
-| DNS-over-HTTPS | `https://dns.pumplex.com/dns-query`                                           | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAPZG5zLnB1bXBsZXguY29tCi9kbnMtcXVlcnk)                                                                                    |
-| DNS-over-TLS   | `tls://dns.pumplex.com`                                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zLnB1bXBsZXguY29t)                                                                                                   |
+| Protokol       | Adresse                                                                      |                                                                                                                                                                  |
+| -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `51.38.82.198`                                                               | [Føj til AdGuard](sdns://AAAAAAAAAAAADDUxLjM4LjgyLjE5OA)                                                                                                         |
+| DNS, IPv6      | `2001:41d0:801:2000::1b28`                                                   | [Føj til AdGuard](sdns://AAAAAAAAAAAAGlsyMDAxOjQxZDA6ODAxOjIwMDA6OjFiMjhd)                                                                                       |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.pumplex.com` IP: `51.38.82.198:5353`               | [Føj til AdGuard](sdns://AQcAAAAAAAAAETUxLjM4LjgyLjE5ODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ)                 |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.pumplex.com` IP: `[2001:41d0:801:2000::1b28]:5353` | [Føj til AdGuard](sdns://AQcAAAAAAAAAHTIwMDE6NDFkMDo4MDE6MjAwMDo6MWIyODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ) |
+| DNS-over-HTTPS | `https://dns.pumplex.com/dns-query`                                          | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAPZG5zLnB1bXBsZXguY29tCi9kbnMtcXVlcnk)                                                                                    |
+| DNS-over-TLS   | `tls://dns.pumplex.com`                                                      | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zLnB1bXBsZXguY29t)                                                                                                   |
 
 ### Applied Privacy DNS
 
-[Applied Privacy DNS](https://applied-privacy.net/) operates DNS privacy services to help protect DNS traffic and to help diversify the DNS resolver landscape offering modern protocols.
+[Applied Privacy DNS](https://applied-privacy.net/) driver DNS-fortrolighedstjenester for, vha. moderne protokoller, at hjælpe med at beskytte DNS-trafik og hjælpe med at diversificere DNS-opløser landskabet.
 
 | Protokol       | Adresse                                 |                                                                                    |
 | -------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -715,32 +715,32 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content
+[Strongarm DNS](https://strongarm.io) er en DNS-tjeneste fra Strongarm, der forhindrer folk i at interagere med ondsindet indhold
 
-| Protokol  | Adresse                            |                                                           |
-| --------- | ---------------------------------- | --------------------------------------------------------- |
-| DNS, IPv4 | `54.174.40.213` and `52.3.100.184` | [Føj til AdGuard](sdns://AAAAAAAAAAAADTU0LjE3NC40MC4yMTM) |
+| Protokol  | Adresse                           |                                                           |
+| --------- | --------------------------------- | --------------------------------------------------------- |
+| DNS, IPv4 | `54.174.40.213` og `52.3.100.184` | [Føj til AdGuard](sdns://AAAAAAAAAAAADTU0LjE3NC40MC4yMTM) |
 
 ### SafeSurfer DNS
 
-[SafeSurfer DNS](https://www.safesurfer.co.nz/) is a DNS service by SafeSurfer that protects your device from harmful and adult contents.
+[SafeSurfer DNS](https://www.safesurfer.co.nz/) er en DNS-tjeneste fra SafeSurfer, der beskytter enheden mod skadeligt og voksent indhold.
 
-| Protokol       | Adresse                                                           |                                                                                                                                                    |
-| -------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `104.155.237.225` and `104.197.28.121`                            | [Føj til AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Føj til AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
+| Protokol       | Adresse                                                          |                                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `104.155.237.225` og `104.197.28.121`                            | [Føj til AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Føj til AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) En sikker, privat, open-source DNS-opløser med malwarebeskyttelse, adblocking og uden logfiler. Degoogle og Ungoogle mobilen, tabletten og computeren.
 
-| Protokol       | Adresse                                                                       |                                                                                                                                                                    |
-| -------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Føj til AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)              |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0) |
-| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                         | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20KL2Rucy1xdWVyeQ)                                                                                   |
-| DNS-over-TLS   | `tls://dns.decloudus.com`                                                     | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20)                                                                                                  |
+| Protokol       | Adresse                                                                      |                                                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Føj til AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)              |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0) |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                        | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20KL2Rucy1xdWVyeQ)                                                                                   |
+| DNS-over-TLS   | `tls://dns.decloudus.com`                                                    | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARZG5zLmRlY2xvdWR1cy5jb20)                                                                                                  |
 
 ### Lelux DNS
 
@@ -753,75 +753,75 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running out of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) er en server, der kører fra en Digital Ocean-dråbe i BLR1-regionen. Vedligeholdes af Abhay Rana aka Nemo.
 
-| Protokol       | Adresse                                                          |                                                                                                                                                   |
-| -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Føj til AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
+| Protokol       | Adresse                                                         |                                                                                                                                                   |
+| -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Føj til AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) leverer gratis DNS-tjeneste uden logning, DNSSEC aktiveret.
 
 
-| Protokol       | Adresse                             |                                                                        |
-| -------------- | ----------------------------------- | ---------------------------------------------------------------------- |
-| DNS, IPv4      | `185.222.222.222` and `45.11.45.11` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg)           |
-| DNS, IPv6      | `2a09::` and `2a11::`               | [Føj til AdGuard](sdns://AAAAAAAAAAAACFsyYTA5Ojpd)                     |
-| DNS-over-HTTPS | `https://doh.dns.sb/dns-query`      | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLmRucy5zYgovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://185.222.222.222`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPMTg1LjIyMi4yMjIuMjIy)         |
+| Protokol       | Adresse                            |                                                                        |
+| -------------- | ---------------------------------- | ---------------------------------------------------------------------- |
+| DNS, IPv4      | `185.222.222.222` og `45.11.45.11` | [Føj til AdGuard](sdns://AAAAAAAAAAAADzE4NS4yMjIuMjIyLjIyMg)           |
+| DNS, IPv6      | `2a09::` og `2a11::`               | [Føj til AdGuard](sdns://AAAAAAAAAAAACFsyYTA5Ojpd)                     |
+| DNS-over-HTTPS | `https://doh.dns.sb/dns-query`     | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLmRucy5zYgovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://185.222.222.222`            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPMTg1LjIyMi4yMjIuMjIy)         |
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) er en redundant DNS-opløser med en adblocking og ingen logning leveret af [adminforge](https://adminforge.de/).
 
-| Protokol       | Adresse                                               |                                                                          |
-| -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------ |
-| DNS, IPv4      | `176.9.93.198` and `176.9.1.117`                      | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE3Ni45LjkzLjE5OA)                 |
-| DNS, IPv6      | `2a01:4f8:151:34aa::198` and `2a01:4f8:141:316d::117` | [Føj til AdGuard](sdns://AAAAAAAAAAAAGFsyYTAxOjRmODoxNTE6MzRhYTo6MTk4XQ) |
-| DNS-over-HTTPS | `https://dnsforge.de/dns-query`                       | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALZG5zZm9yZ2UuZGUKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS   | `tls://dnsforge.de`                                   | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALZG5zZm9yZ2UuZGU)                |
+| Protokol       | Adresse                                              |                                                                          |
+| -------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| DNS, IPv4      | `176.9.93.198` og `176.9.1.117`                      | [Føj til AdGuard](sdns://AAAAAAAAAAAADDE3Ni45LjkzLjE5OA)                 |
+| DNS, IPv6      | `2a01:4f8:151:34aa::198` og `2a01:4f8:141:316d::117` | [Føj til AdGuard](sdns://AAAAAAAAAAAAGFsyYTAxOjRmODoxNTE6MzRhYTo6MTk4XQ) |
+| DNS-over-HTTPS | `https://dnsforge.de/dns-query`                      | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAALZG5zZm9yZ2UuZGUKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS   | `tls://dnsforge.de`                                  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAALZG5zZm9yZ2UuZGU)                |
 
 ### Fondation Restena DNS
 
-[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/)
+[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver)-servere leveres af [Restena Foundation](https://www.restena.lu/)
 
-| Protokol       | Adresse                                                                             |                                                                                   |
-| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP: `158.64.1.29` and IPv6: `2001:a18:1::29` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1Ci9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` and IPv6: `2001:a18:1::29`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1)                |
+| Protokol       | Adresse                                                                            |                                                                                   |
+| -------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP: `158.64.1.29` og IPv6: `2001:a18:1::29` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1Ci9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` og IPv6: `2001:a18:1::29`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASa2FpdGFpbi5yZXN0ZW5hLmx1)                |
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver
+[fvz DNS](http://meo.ws/) er en Fusl's offentlige primær OpenNIC Tier2 Anycast DNS-opløser
 
-| Protokol       | Adresse                                                              |                                                                                                                                                        |
-| -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `185.121.177.177:5353` | [Føj til AdGuard](sdns://AQYAAAAAAAAAFDE4NS4xMjEuMTc3LjE3Nzo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `169.239.202.202:5353` | [Føj til AdGuard](sdns://AQYAAAAAAAAAFDE2OS4yMzkuMjAyLjIwMjo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
+| Protokol       | Adresse                                                             |                                                                                                                                                        |
+| -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `185.121.177.177:5353` | [Føj til AdGuard](sdns://AQYAAAAAAAAAFDE4NS4xMjEuMTc3LjE3Nzo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `169.239.202.202:5353` | [Føj til AdGuard](sdns://AQYAAAAAAAAAFDE2OS4yMzkuMjAyLjIwMjo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München
+[FFMUC](https://ffmuc.net/) gratis DNS-servere tilbudt af Freifunk München
 
-| Protokol             | Adresse                                                                |                                                                                                                                                           |
-| -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot.ffmuc.net`                                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA)                                                                                              |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query`                            | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5)                                                                                |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443`            | [Føj til AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0)                |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ) |
+| Protokol             | Adresse                                                               |                                                                                                                                                           |
+| -------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Værtsnavn: `tls://dot.ffmuc.net`                                      | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG90LmZmbXVjLm5ldA)                                                                                              |
+| DNS-over-HTTPS, IPv4 | Værtsnavn: `https://doh.ffmuc.net/dns-query`                          | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAANZG9oLmZmbXVjLm5ldAovZG5zLXF1ZXJ5)                                                                                |
+| DNSCrypt, IPv4       | Udbyder: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443`            | [Føj til AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0)                |
+| DNSCrypt, IPv6       | Udbyder: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ) |
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Hosted in Zurich, Switzerland
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) er en offentlig opløser drevet af Digital Society. Hostes i Zürich, Schweiz
 
-| Protokol       | Adresse                                                                                        |                                                                                                |
-| -------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.digitale-gesellschaft.ch/dns-query` IP: `185.95.218.42` and IPv6: `2a05:fc84::42` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://dns.digitale-gesellschaft.ch` IP: `185.95.218.43` and IPv6: `2a05:fc84::43`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaA)               |
+| Protokol       | Adresse                                                                                       |                                                                                                |
+| -------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.digitale-gesellschaft.ch/dns-query` IP: `185.95.218.42` og IPv6: `2a05:fc84::42` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dns.digitale-gesellschaft.ch` IP: `185.95.218.43` og IPv6: `2a05:fc84::43`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAcZG5zLmRpZ2l0YWxlLWdlc2VsbHNjaGFmdC5jaA)               |
 ### LibreDNS
 
-[LibreDNS](https://libredns.gr/) is a public encrypted DNS service run by [LibreOps](https://libreops.cc/).
+[LibreDNS](https://libredns.gr/) er en offentlig, krypteret DNS-tjeneste drevet af [LibreOps](https://libreops.cc/).
 
 | Protokol       | Adresse                                      |                                                                               |
 | -------------- | -------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -832,65 +832,65 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging
+[ibksturm DNS](https://ibksturm.synology.me/) testservere leveret af ibksturm. OPENNIC, DNSSEC, ingen filtrering, nul logning
 
-| Protokol             | Adresse                                                                                   |                                                                                                                                                                                    |
-| -------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://ibksturm.synology.me` IP: `83.77.85.7`                                   | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAUaWJrc3R1cm0uc3lub2xvZ3kubWU)                                                                                                              |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `178.82.102.190`                   | [Føj til AdGuard](sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5)                                                     |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.ibksturm` IP: `83.77.85.7:8443`                                | [Føj til AdGuard](sdns://AQcAAAAAAAAADzgzLjc3Ljg1Ljc6ODQ0MyDBz1dQALBbwmxiH17PmqJWCs6_AH6-yzp_9LIN4LQ57hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0)                                          |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.ibksturm` IP: `[2a02:1205:5055:de60:b26e:bfff:fe1d:e19b]:8443` | [Føj til AdGuard](sdns://AQcAAAAAAAAALlsyYTAyOjEyMDU6NTA1NTpkZTYwOmIyNmU6YmZmZjpmZTFkOmUxOWJdOjg0NDMgwc9XUACwW8JsYh9ez5qiVgrOvwB-vss6f_SyDeC0Oe4YMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
+| Protokol             | Adresse                                                                                  |                                                                                                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Værtsnavn: `tls://ibksturm.synology.me` IP: `83.77.85.7`                                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAUaWJrc3R1cm0uc3lub2xvZ3kubWU)                                                                                                              |
+| DNS-over-HTTPS, IPv4 | Værtsnavn: `https://ibksturm.synology.me/dns-query` IP: `178.82.102.190`                 | [Føj til AdGuard](sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5)                                                     |
+| DNSCrypt, IPv4       | Udbyder: `2.dnscrypt-cert.ibksturm` IP: `83.77.85.7:8443`                                | [Føj til AdGuard](sdns://AQcAAAAAAAAADzgzLjc3Ljg1Ljc6ODQ0MyDBz1dQALBbwmxiH17PmqJWCs6_AH6-yzp_9LIN4LQ57hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0)                                          |
+| DNSCrypt, IPv6       | Udbyder: `2.dnscrypt-cert.ibksturm` IP: `[2a02:1205:5055:de60:b26e:bfff:fe1d:e19b]:8443` | [Føj til AdGuard](sdns://AQcAAAAAAAAALlsyYTAyOjEyMDU6NTA1NTpkZTYwOmIyNmU6YmZmZjpmZTFkOmUxOWJdOjg0NDMgwc9XUACwW8JsYh9ez5qiVgrOvwB-vss6f_SyDeC0Oe4YMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
 
 ### DNS Privacy
 
-A collaborative open project to promote, implement and deploy [DNS Privacy](https://dnsprivacy.org/).
+Et åbent samarbejdsprojekt til promovering, implementering og udrulning af [DNS Privacy](https://dnsprivacy.org/).
 
-DNS servers run by the [Stubby developers](https://getdnsapi.net/)
+DNS-servere drives af [Stubby-udviklerne](https://getdnsapi.net/)
 
-| Protokol     | Adresse                                                                                                                      |                                                                           |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                          | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| Protokol     | Adresse                                                                                                                       |                                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| DNS-over-TLS | Værtsnavn: `tls://getdnsapi.net` IP: `185.49.141.37` og IPv6: `2a04:b900:0:100::37`                                           | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Other DNS servers with 'no logging' policy
+Andre DNS-servere med 'nul logning'-politik
 
-| Protokol           | Adresse                                                                                                             |                                                                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `dkg` Hostname `tls://dns.cmrg.net` IP: `199.58.81.218`and IPv6: `2001:470:1c:76d::53`                    | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Hostname `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Hostname `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Hostname `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Hostname `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Provider: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                      | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| Protokol           | Adresse                                                                                                              |                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Værtsnavn: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Værtsnavn: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                 | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Værtsnavn: `tls://dot.securedns.eu` IP: `146.185.167.43` og IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
-DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
+DNS-servere med minimal logning/restriktioner. Disse servere anvender noget logning, selvsignerede certifikater eller ingen understøttelse af streng tilstand.
 
-| Protokol     | Adresse                                                                                                          |                                                                                |
-| ------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| Protokol     | Adresse                                                                                                           |                                                                                |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/) En nul-logning og adblocking DNS-tjeneste leveret af Fredrik Pettersson.
 
 #### Blitz
 
-[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
+[Konfigurerbar filtrering](https://blitz-setup.ahadns.com/) verdensomspændende DoH-only variant
 
-| Protokol                                     | Adresse                           |                                                                            |
-| -------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------- |
-| DNS-over-HTTPS, uncensored                   | `https://blitz.ahadns.com`        | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQA)          |
-| DNS-over-HTTPS, OISD filter                  | `https://blitz.ahadns.com/1:1`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQQvMTox)     |
-| DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQcvMToxLjEy) |
+| Protokol                                      | Adresse                           |                                                                            |
+| --------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-HTTPS, ucensureret                   | `https://blitz.ahadns.com`        | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQA)          |
+| DNS-over-HTTPS, OISD-filter                   | `https://blitz.ahadns.com/1:1`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQQvMTox)     |
+| DNS-over-HTTPS, OISD og Energized-pornofilter | `https://blitz.ahadns.com/1:1.12` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAQYmxpdHouYWhhZG5zLmNvbQcvMToxLjEy) |
 
-#### Netherlands
+#### Holland
 
 | Protokol       | Adresse                               |                                                                                  |
 | -------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
@@ -899,7 +899,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLm5sLmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lm5sLmFoYWRucy5uZXQ)                |
 
-#### India
+#### Indien
 
 | Protokol       | Adresse                               |                                                                                  |
 | -------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
@@ -1041,7 +1041,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 [RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
 
-#### Unfiltered
+#### Ikke-filtrerende
 
 | Protokol       | Adresse                         |                                                                          |
 | -------------- | ------------------------------- | ------------------------------------------------------------------------ |
@@ -1051,7 +1051,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware, and social media blocking.
+[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
 
 #### Block malware
 

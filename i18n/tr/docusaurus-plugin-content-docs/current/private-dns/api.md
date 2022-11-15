@@ -7,7 +7,7 @@ sidebar_position: 2
 
 AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
-## Authentication
+## Kimlik Doğrulama
 
 ### Generate Access token
 
@@ -15,11 +15,11 @@ Make a POST request for the following URL with the given params to generate the 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Parametre         | Açıklama                                                         |
+|:----------------- |:---------------------------------------------------------------- |
+| **kullanıcı adı** | Account email                                                    |
+| **parola**        | Account password                                                 |
+| mfa_token         | Two-Factor authentication token (if enabled in account settings) |
 
 In the response, you will get both `access_token` and `refresh_token`.
 
@@ -27,7 +27,7 @@ In the response, you will get both `access_token` and `refresh_token`.
 
 - The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
 
-#### Example request
+#### Örnek istek
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -37,7 +37,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### Örnek yanıt
 
 ```json
 {
@@ -56,11 +56,11 @@ Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
+| Parametre         | Açıklama                                                            |
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
-#### Example request
+#### Örnek istek
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -68,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+#### Örnek yanıt
 
 ```json
 {
@@ -85,17 +85,17 @@ To revoke a refresh token, make the following POST request with the given params
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+#### İstek Örneği
 
 ```bash
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
+| Parametre         | Açıklama                               |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
-### Accessing API
+### API'ye erişim
 
 Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
@@ -110,9 +110,9 @@ OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger
 
 You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
-## Feedback
+## Geri bildirim
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

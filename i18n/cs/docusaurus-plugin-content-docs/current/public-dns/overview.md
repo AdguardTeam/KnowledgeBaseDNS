@@ -3,7 +3,7 @@ title: Přehled
 sidebar_position: 1
 ---
 
-## Co je AdGuard DNS?
+## Co je AdGuard DNS
 
 AdGuard DNS je bezplatný DNS řešitel zaměřený na ochranu soukromí, který poskytuje bezpečné připojení a také dokáže blokovat slídiče, reklamy, krádež identity a obsah pro dospělé (volitelně). AdGuard DNS nevyžaduje instalaci žádné aplikace. Snadno se používá a lze jej snadno nastavit na jakémkoli zařízení (chytré telefony, stolní počítače, routery, herní konzole atd.).
 

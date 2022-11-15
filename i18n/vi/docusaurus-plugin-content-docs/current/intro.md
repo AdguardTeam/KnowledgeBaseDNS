@@ -6,13 +6,13 @@ slug: /
 
 ## DNS là gì
 
-DNS là viết tắt của "Hệ thống tên miền", và mục đích của nó là chuyển đổi tên của các trang web thành địa chỉ IP. Mỗi lần bạn truy cập một trang web, trình duyệt của bạn sẽ gửi một truy vấn DNS đến máy chủ DNS để tìm ra địa chỉ IP của trang web. Và một trình phân giải DNS thông thường chỉ cần trả lại địa chỉ IP của miền được yêu cầu.
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Mỗi lần bạn truy cập một trang web, trình duyệt của bạn sẽ gửi một truy vấn DNS đến máy chủ DNS để tìm ra địa chỉ IP của trang web. Và một trình phân giải DNS thông thường chỉ cần trả lại địa chỉ IP của miền được yêu cầu.
 
 > Máy chủ DNS mặc định thường do ISP của bạn cung cấp. Điều này có nghĩa là ISP của bạn có thể theo dõi hoạt động trực tuyến của bạn và bán nhật ký cho các bên thứ ba.
 
 ![Thiết bị của bạn luôn sử dụng một số máy chủ DNS để lấy địa chỉ IP của các ứng dụng tên miền muốn điều hướng đến](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-Ngoài ra còn có các máy chủ DNS có thể chặn các trang web nhất định ở cấp DNS. Họ làm việc như thế nào? Khi thiết bị của bạn gửi yêu cầu "xấu", có thể là quảng cáo hoặc trình theo dõi, máy chủ DNS sẽ ngăn kết nối bằng cách phản hồi bằng địa chỉ IP không thể định tuyến cho miền bị chặn.
+There are also DNS servers that can block certain websites at DNS-level. Họ làm việc như thế nào? Khi thiết bị của bạn gửi yêu cầu "xấu", có thể là quảng cáo hoặc trình theo dõi, máy chủ DNS sẽ ngăn kết nối bằng cách phản hồi bằng địa chỉ IP không thể định tuyến cho miền bị chặn.
 
 ## Tại sao sử dụng DNS để chặn nội dung
 
@@ -22,7 +22,7 @@ Sử dụng DNS để chặn nội dung có một số ưu điểm cũng như nh
 
 ## AdGuard DNS là gì
 
-AdGuard DNS là một trong những dịch vụ DNS thân thiện với quyền riêng tư nhất trên thị trường. Nó hỗ trợ các giao thức mã hóa đáng tin cậy như DNS-over-HTTPS, DNS-over-TLS và DNS-over-QUIC. Nó có thể hoạt động như một trình phân giải DNS thông thường ở chế độ Không lọc, nhưng nó cũng có thể cung cấp tính năng chặn nội dung cấp DNS: xác định các yêu cầu đối với tên miền quảng cáo, theo dõi và / hoặc người lớn (tùy chọn) và trả lời bằng một phản hồi trống. AdGuard có cơ sở tên miền riêng phục vụ quảng cáo, trình theo dõi và gian lận và nó được cập nhật thường xuyên.
+AdGuard DNS là một trong những dịch vụ DNS thân thiện với quyền riêng tư nhất trên thị trường. Nó hỗ trợ các giao thức mã hóa đáng tin cậy như DNS-over-HTTPS, DNS-over-TLS và DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard có cơ sở tên miền riêng phục vụ quảng cáo, trình theo dõi và gian lận và nó được cập nhật thường xuyên.
 
 ![Lược đồ gần đúng về cách AdGuard DNS hoạt động](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

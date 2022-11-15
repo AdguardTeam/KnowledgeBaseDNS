@@ -9,7 +9,7 @@ Náš vývojový tým by rád poděkoval vývojářům softwaru třetích stran,
 
 * Modul DNS od Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
 * Modul GCache od Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Modul Go-Cache od Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
 * Program Gofumpt od Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
 * Modul QUIC-Go od Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Program Staticcheck od Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)

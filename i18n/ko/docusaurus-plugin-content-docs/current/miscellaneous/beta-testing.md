@@ -7,7 +7,7 @@ Private AdGuard DNS는 최신 AdGuard 제품이지만 어떤 면에서는 [AdGua
 
 ## 베타 테스터가 되는 방법
 
-Private AdGuard DNS [의 베타 테스터가 되려면 AdGuard DNS 웹사이트](https://adguard-dns.io/en/welcome.html)로 이동하여 오른쪽 상단의 '베타 참여' 버튼을 클릭하고 소셜 미디어 또는 기존 AdGuard 계정을 통해 로그인합니다. 이제 Pivate AdGuard DNS를 설정하고 서비스를 사용하며 작동 방식에 대한 보고서를 보낼 수 있습니다.
+Private AdGuard DNS [의 베타 테스터가 되려면 AdGuard DNS 웹사이트](https://adguard-dns.io/en/welcome.html)로 이동하여 오른쪽 상단의 '베타 참여' 버튼을 클릭하고 소셜 미디어 또는 기존 AdGuard 계정을 통해 로그인합니다. That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
 
 ## 버그를 신고하는 방법
 

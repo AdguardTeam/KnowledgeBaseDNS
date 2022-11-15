@@ -37,12 +37,12 @@ Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias lis
 
   ```none
   # Devuelve la dirección IP 1.2.3.4 para ejemplo.org.
-  1.2.3.4 ejemplo.org
-  # Bloquea ejemplo.com respondiendo con 0.0.0.0.
-  0.0.0.0 ejemplo.com
+  1.2.3.4 example.org
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `example.org`: una regla de dominio simple. Bloquea el dominio `example.org` pero **no** sus subdominios. `www.example.org` sigue estando permitido.
+* `example.org`: una regla de dominio simple. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` sigue estando permitido.
 
 * `! Es un comentario ` y `# También un comentario`: comentarios.
 
@@ -412,7 +412,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.

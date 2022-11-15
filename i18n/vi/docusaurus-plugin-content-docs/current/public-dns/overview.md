@@ -3,7 +3,7 @@ title: Tổng quan
 sidebar_position: 1
 ---
 
-## What is AdGuard DNS?
+## AdGuard DNS là gì
 
 AdGuard DNS is a free, privacy-oriented DNS resolver that provides secure connection and also can block tracking, ads, phishing and adult content (optionally). AdGuard DNS does not require installing any applications. It is easy to use and can be effortlessly set up on any device (smartphones, desktops, routers, game consoles, etc.).
 

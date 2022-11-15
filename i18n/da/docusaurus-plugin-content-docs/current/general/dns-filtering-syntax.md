@@ -38,11 +38,11 @@ Vedligeholder man enten en `/etc/hosts`-blokeringslistetype, eller flere filtrer
   ```none
   # Returnerer IP-adressen 1.2.3.4 for eksempel.org.
   1.2.3.4 example.org
-  # Blocks example.com by responding with 0.0.0.0.
-  0.0.0.0 example.com
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `eksempel.org`: En simpel domæneregel. Blokerer `eksempel.org`-domænet, men **ikke** dets underdomæner. `www.eksempel.org` forbliver tilladt.
+* `eksempel.org`: En simpel domæneregel. Blocks the `example.org` domain but **not** its subdomains. `www.eksempel.org` forbliver tilladt.
 
 * `! Her angives en kommentar` og `# Også en kommentar`: Kommentarer.
 
@@ -412,7 +412,7 @@ Listen over tilladte tags:
   * `device_audio`: Lydenheder.
   * `device_camera`: Kameraer.
   * `device_gameconsole`: Spillekonsoller.
-  * `device_laptop`: Bærbare computere.
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (netværkstilsluttede lagerenheder).
   * `device_pc`: PC'er.
   * `device_phone`: Mobiler.

@@ -1,40 +1,40 @@
 ---
-title: Overview
+title: Genel Bakış
 sidebar_position: 1
 slug: /
 ---
 
-## What is DNS
+## DNS nedir
 
-DNS stands for "Domain name system", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Bir siteye her gittiğinizde, tarayıcınız sitenin IP adresini bulmak için bir DNS sunucusuna bir DNS sorgusu gönderir. Ve normal bir DNS çözümleyici, istenen alan adının IP adresini döndürür.
 
-> The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+> Varsayılan DNS sunucusu genellikle İSS'niz tarafından sağlanır. Bu, İSS'nizin çevrimiçi etkinliğinizi izleyebileceği ve günlükleri üçüncü taraflara satabileceği anlamına gelir.
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
+![Cihazınız, uygulamaların gitmek istediği alan adının IP adreslerini almak için her zaman bir DNS sunucusu kullanır](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
+There are also DNS servers that can block certain websites at DNS-level. Nasıl çalışırlar? Cihazınız, ister reklam ister izleyici olsun, "kötü" bir istek gönderdiğinde, bir DNS sunucusu engellenen bir alan adı için yönlendirilemez bir IP adresiyle yanıt vererek bağlantıyı engeller.
 
-## Why use DNS for content blocking
+## İçerik engelleme için neden DNS kullanmalısınız
 
-Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker seems to be not enough. To get a better protection, use DNS in combination with VPN and ad blocker.
+Bugünlerde TV'den akıllı ampullere, mobil cihazlardan akıllı otomobile kadar her şey kesinlikle internete bağlı. İnternetin olduğu her yerde reklamlar ve izleyiciler de vardır. Bu durumda tarayıcı tabanlı bir reklam engelleyici yeterli değil gibi görünüyor. Daha iyi bir koruma elde etmek için DNS'i VPN ve reklam engelleyici ile birlikte kullanın.
 
-Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
+İçerik engelleme için DNS kullanmanın bazı avantajları olduğu kadar bariz kusurları da vardır. Bir yandan, DNS sadece tarayıcıları değil tüm cihazları gözlemlediği için kör noktalara sahip değildir. Ancak öte yandan, DNS engelleme tek başına kozmetik filtreleme sağlayamaz.
 
-## What is AdGuard DNS
+## AdGuard DNS nedir
 
-AdGuard DNS is one of the most privacy-friendly DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
+AdGuard DNS, piyasadaki en gizlilik dostu DNS hizmetlerinden biridir. DNS-over-HTTPS, DNS-over-TLS ve DNS-over-QUIC gibi güvenilir şifreleme protokollerini destekler. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard'ın reklamlar, izleyiciler ve dolandırıcılık sunan kendi alan adları tabanı vardır ve düzenli olarak güncellenir.
 
-![An approximate scheme of how AdGuard DNS works](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
+![AdGuard DNS'in nasıl çalıştığına dair yaklaşık bir şema](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 
-> About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
+> AdGuard DNS trafiğinin yaklaşık %75'i şifrelenmiştir. DNS sunucularını engelleyen içeriği diğerlerinden ayıran aslında budur. CloudFlare veya Quad9 istatistiklerine bakarsanız, şifrelenmiş DNS'nin tüm sorguların sadece küçük bir kısmı olduğunu görürsünüz.
 
-AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
+AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Bu hizmetlerin her ikisi de herhangi bir uygulama yüklemeyi gerektirmez. Kurulumu ve kullanımı kolaydır ve kullanıcılara reklamları, izleyicileri, kötü amaçlı siteleri ve (gerekirse) yetişkinlere yönelik içeriği engellemek için gereken minimum özellikleri sağlar. Hangi cihazlarla kullanılabileceği konusunda herhangi bir kısıtlama yoktur.
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
+Pek çok benzerliğe rağmen, özel AdGuard DNS ve genel AdGuard DNS iki farklı hizmettir. Temel farkları, özel AdGuard DNS'i özelleştirebilmeniz, ancak genel AdGuard DNS'nin yapamamasıdır.
 
-## DNS filtering module in AdGuard products
+## AdGuard ürünlerinde DNS filtreleme modülü
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — public or private.
+All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Tabii ki AdGuard DNS Default, AdGuard DNS Non-filtering ve AdGuard DNS Family Protection listede yer alıyor. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/en/public-dns.html) — public or private.
 
 
 

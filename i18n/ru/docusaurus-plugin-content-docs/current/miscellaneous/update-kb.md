@@ -13,7 +13,7 @@ sidebar_position: 3
 
 Как только вы будете готовы, начните работу в [репозитории KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Все тексты в нашей Базе знаний написаны на языке разметки `Markdown`. Помните об этом при редактировании или написании статей. Перейдите по [этой ссылке](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), чтобы узнать больше о синтаксисе Markdown.
 
-Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них [в этом руководстве](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них [в этом руководстве](https://docusaurus.io/docs/category/guides).
 
 Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 

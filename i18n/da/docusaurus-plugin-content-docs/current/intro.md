@@ -6,13 +6,13 @@ slug: /
 
 ## Hvad er DNS?
 
-DNS står for "Domain Name System", hvis formål er at konvertere websteders navne til IP-adresser. Hver gang man går til et websted, sender browseren en DNS-forespørgsel til en DNS-server for at få oplyst webstedets IP-adresse. En alm. DNS-opløser returnerer blot IP-adressen på det anmodede domæne.
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Hver gang man går til et websted, sender browseren en DNS-forespørgsel til en DNS-server for at få oplyst webstedets IP-adresse. En alm. DNS-opløser returnerer blot IP-adressen på det anmodede domæne.
 
 > Standard DNS-serveren leveres normalt af internetudbyderen. Det betyder, at internetudbyderen kan spore brugeres onlineaktivitet og sælge logfiler til tredjeparter.
 
 ![Enheden bruger altid en eller anden DNS-server til at få IP-adresserne på de domænenavne, apps ønsker at navigere til](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-Der er også DNS-servere, som kan blokere visse websteder på DNS-niveau. Hvordan fungerer de? Når enheden sender en "dårlig" forespørgsel, hvad enten det er en annonce eller tracker, obstruerer en DNS-server forbindelsen ved at svare med en ikke-rutbar IP-adresse for et blokeret domæne.
+There are also DNS servers that can block certain websites at DNS-level. Hvordan fungerer de? Når enheden sender en "dårlig" forespørgsel, hvad enten det er en annonce eller tracker, obstruerer en DNS-server forbindelsen ved at svare med en ikke-rutbar IP-adresse for et blokeret domæne.
 
 ## Hvorfor bruge DNS til indholdsblokering?
 
@@ -22,7 +22,7 @@ Brug af DNS til indholdsblokering har nogle fordele såvel som åbenlyse mangler
 
 ## Hvad er AdGuard DNS?
 
-AdGuard DNS er en af de mest fortrolighedsorienterede DNS-tjenester på markedet. Den understøtter så pålidelige krypteringsprotokoller som DNS-over-HTTPS, DNS-over-TLS og DNS-over-QUIC. Den kan fungere som en alm. DNS-opløser i tilstanden Ikke-filtrering, men den kan også levere indholdsblokering på DNS-niveau: Identificere forespørgsler til annonce-, sporings- og/eller voksendomæner (valgfrit) og reagere med et tomt svar. AdGuard har sin egen hyppigt opdateret base over domænenavne, som leverer annoncer, trackere og svindel.
+AdGuard DNS er en af de mest fortrolighedsorienterede DNS-tjenester på markedet. Den understøtter så pålidelige krypteringsprotokoller som DNS-over-HTTPS, DNS-over-TLS og DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard har sin egen hyppigt opdateret base over domænenavne, som leverer annoncer, trackere og svindel.
 
 ![Omtrentligt skema over, hvordan AdGuard DNS fungerer](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

@@ -38,11 +38,11 @@ sidebar_position: 2
   ```none
   # Возвращает IP-адрес 1.2.3.4. для example.org.
   1.2.3.4 example.org
-  # Блокирует example.com ответом 0.0.0.0.
-  0.0.0.0 example.com
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `example.org`: простое доменное правило. Блокирует домен `example.org`, но **не** его поддомены. `www.example.org` остаётся доступным.
+* `example.org`: простое доменное правило. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` остаётся доступным.
 
 * `! Это комментарий ` и ` # Это тоже комментарий`: комментарии.
 
@@ -412,7 +412,7 @@ $ctag=~value1|~value2|...
   * `device_audio`: аудио устройства.
   * `device_camera`: фотоаппараты.
   * `device_gameconsole`: игровые консоли.
-  * `device_laptop`: ноутбуки,
+  * `device_laptop`: laptops.
   * `device_nas`: системы NAS (сетевые хранилища).
   * `device_pc`: ПК.
   * `device_phone`: телефоны.

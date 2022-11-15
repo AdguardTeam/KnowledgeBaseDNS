@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## 如何成为 beta 测试者的一员
 
-要成为私人 AdGuard DNS 的 beta 测试者[访问 AdGuard DNS 网站](https://adguard-dns.io/en/welcome.html)，请点击右上角的“加入 beta 测试计划”按钮，然后通过社交媒体或现有 AdGuard 账号登录。 一切搞定：现在您可以设置您的私人 AdGuard DNS、使用该服务并向我们发送有关其工作原理的报告。
+要成为私人 AdGuard DNS 的 beta 测试者[访问 AdGuard DNS 网站](https://adguard-dns.io/en/welcome.html)，请点击右上角的“加入 beta 测试计划”按钮，然后通过社交媒体或现有 AdGuard 账号登录。 That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
 
 ## 如何报告bug
 

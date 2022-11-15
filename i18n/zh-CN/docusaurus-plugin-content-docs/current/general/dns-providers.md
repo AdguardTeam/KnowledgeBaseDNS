@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### 默认
 
-这些服务器提供拦截广告、跟踪和钓鱼
+These servers block ads, tracking, and phishing
 
 | 协议             | 地址                                                                       |                                                                                                                                                               |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ sidebar_position: 3
 
 ### 清理浏览记录
 
-[清理浏览记录](https://cleanbrowsing.org/)是一种 DNS 服务，提供可定制的过滤。 这项服务提供了一种安全的方式来浏览web，而不包含不适当的内容。
+[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. 这项服务提供了一种安全的方式来浏览web，而不包含不适当的内容。
 
 #### 家庭版过滤器
 
@@ -309,12 +309,12 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 
 [SWITCH DNS](https://www.switch.ch/security/info/public-dns/) 是由 [switch.ch](https://www.switch.ch/) 提供的瑞士公共 DNS 服务。
 
-| 协议             | 地址                                                                                |                                                                       |
-| -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                     | [添加到AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [添加到AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                 | [添加到AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| 协议             | 地址                                                                               |                                                                       |
+| -------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                    | [添加到AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                               | [添加到AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [添加到AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
@@ -366,7 +366,7 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 
 ### Comss.ru DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS servers with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
 
 #### 西部 DNS 服务器(主服务器)
 
@@ -405,35 +405,35 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 
 In "Private" mode, DNS resolution only
 
-| 协议                     | 地址                                                                                                   |                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                                | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                          | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                   | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| 协议                     | 地址                                                                                                  |                                                                                              |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                               | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                         | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### 受保护
 
 In "Protected" mode, malware and phishing protection
 
-| 协议                       | 地址                                                                                                     |                                                                                                 |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                  | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                            | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                   | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| 协议                       | 地址                                                                                                    |                                                                                                 |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                 | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### 家庭模式
 
 In "Family" mode, Protected + blocking adult content
 
-| 协议                    | 地址                                                                                                     |                                                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                  | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                            | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                      | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| 协议                    | 地址                                                                                                    |                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                 | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
@@ -522,7 +522,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### CFIEC Public DNS
 
-IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It support DNS64 to provide domain name resolution only for IPv6 users.
+IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It supports DNS64 to provide domain name resolution only for IPv6 users.
 
 | 协议             | 地址                                |                                                                       |
 | -------------- | --------------------------------- | --------------------------------------------------------------------- |
@@ -628,7 +628,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -847,34 +847,34 @@ A collaborative open project to promote, implement and deploy [DNS Privacy](http
 
 DNS servers run by the [Stubby developers](https://getdnsapi.net/)
 
-| 协议           | 地址                                                                                                                           |                                                                      |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                          | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| 协议           | 地址                                                                                                                            |                                                                      |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                           | [添加到AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
 Other DNS servers with 'no logging' policy
 
-| 协议                 | 地址                                                                                                                  |                                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `dkg` Hostname `tls://dns.cmrg.net` IP: `199.58.81.218`and IPv6: `2001:470:1c:76d::53`                    | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Hostname `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Hostname `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Hostname `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                 | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Hostname `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Provider: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                      | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| 协议                 | 地址                                                                                                                   |                                                                       |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                             | [添加到AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [添加到AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                  | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
 DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
 
-| 协议           | 地址                                                                                                               |                                                                           |
-| ------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [添加到AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| 协议           | 地址                                                                                                                |                                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [添加到AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [添加到AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -1041,7 +1041,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 [RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
 
-#### Unfiltered
+#### 无过滤
 
 | 协议             | 地址                              |                                                                     |
 | -------------- | ------------------------------- | ------------------------------------------------------------------- |
@@ -1051,7 +1051,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware, and social media blocking.
+[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
 
 #### Block malware
 
