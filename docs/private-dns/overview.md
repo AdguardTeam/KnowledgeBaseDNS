@@ -26,7 +26,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 | DNS traffic encryption      | DNS traffic encryption       |
 | Pre-determined domain blocklists      | Customizable domain blocklists      |
 | -   | Custom DNS filtering rules with import/export feature
-| -   | Request statistics (see where do your DNS requests go: which countries, which companies etc.)        |
+| -   | Request statistics (see where do your DNS requests go: which countries, which companies, etc.)        |
 | -   | Detailed query log |
 | -   | Parental control       |
 

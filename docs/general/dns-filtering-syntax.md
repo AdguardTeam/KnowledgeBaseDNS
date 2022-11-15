@@ -42,11 +42,11 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
   ```none
   # Returns the IP address 1.2.3.4 for example.org.
   1.2.3.4 example.org
-  # Blocks example.com by responding with 0.0.0.0.
-  0.0.0.0 example.com
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `example.org`: a simple domain rule. Blocks `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
+* `example.org`: a simple domain rule. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
 
 * `! Here goes a comment` and `# Also a comment`: comments.
 
@@ -418,7 +418,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.
