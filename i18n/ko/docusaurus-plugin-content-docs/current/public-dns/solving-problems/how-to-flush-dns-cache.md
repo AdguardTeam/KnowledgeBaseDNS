@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # How to flush DNS cache
 
-## DNS 캐시란 무엇입니까?
+## What is DNS cache
 
 DNS 캐시는 방문 사이트의 IP 주소를 로컬 컴퓨터에 저장하여 다음에 접속할 때, 더 빨리 로드할 수 있도록 합니다. 긴 DNS 조회를 수행하는 대신 시스템은 임시 DNS 캐시의 DNS 레코드를 사용하여 쿼리에 응답합니다.
 

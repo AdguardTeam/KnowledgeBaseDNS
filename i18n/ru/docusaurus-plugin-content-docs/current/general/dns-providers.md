@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### По умолчанию
 
-Эти серверы блокируют рекламу, трекеры и фишинг
+These servers block ads, tracking, and phishing
 
 | Протокол       | Адрес                                                                                |                                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ sidebar_position: 3
 
 ### CleanBrowsing
 
-[Cleanbrowsing](https://cleanbrowsing.org/) — это DNS-сервис с настраиваемой фильтрацией. Этот сервис позволяет пользоваться интернетом безопасно и без нежелательного контента.
+[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Этот сервис позволяет пользоваться интернетом безопасно и без нежелательного контента.
 
 #### Семейный фильтр
 
@@ -309,12 +309,12 @@ EDNS Client Subnet — это метод, который включает ком
 
 [SWITCH DNS](https://www.switch.ch/security/info/public-dns/) — это швейцарский публичный DNS-сервис провайдера [SWITCH DNS](https://www.switch.ch/)
 
-| Протокол       | Адрес                                                                                 |                                                                               |
-| -------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS, IPv4      | Провайдер: `dns.switch.ch` IP-адрес: `130.59.31.248:`                                 | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Провайдер: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                     | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Имя хоста: `tls://dns.switch.ch` IP-адрес: `130.59.31.248` и IPv6: `2001:620:0:ff::2` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| Протокол       | Адрес                                                                            |                                                                               |
+| -------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS, IPv4      | Провайдер: `dns.switch.ch` IP-адрес: `130.59.31.248:`                            | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Провайдер: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                              | [Добавить в AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
@@ -366,7 +366,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Comss.ru DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) — это быстрые и безопасные DNS-серверы с защитой от рекламы, трекинга и фишинга.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
 
 #### West DNS Server (основной)
 
@@ -405,35 +405,35 @@ EDNS Client Subnet — это метод, который включает ком
 
 В Приватном режиме — только обработка DNS
 
-| Протокол               | Адрес                                                                                                    |                                                                                                      |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` и `149.112.122.10`                                                                      | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` и `2620:10A:80BC::10`                                                                | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS — Private | Имя хоста: `tls://private.canadianshield.cira.ca` IP-адрес: `149.112.121.10` и IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Протокол               | Адрес                                                                                               |                                                                                                      |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` и `149.112.122.10`                                                                 | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` и `2620:10A:80BC::10`                                                           | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS — Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Защищённый
 
 В Защищённом режиме — защита от вредоносного ПО и фишинга
 
-| Протокол                 | Адрес                                                                                                      |                                                                                                         |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` и `149.112.122.20`                                                                        | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` и `2620:10A:80BC::20`                                                                  | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS — Protected | Имя хоста: `tls://protected.canadianshield.cira.ca` IP-адрес: `149.112.121.20` и IPv6: `2620:10A:80BB::20` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Протокол                 | Адрес                                                                                                 |                                                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` и `149.112.122.20`                                                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` и `2620:10A:80BC::20`                                                             | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS — Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Семейный
 
 В Семейном режиме — то же, что в Защищённом режиме + блокировка контента для взрослых
 
-| Протокол              | Адрес                                                                                                      |                                                                                                     |
-| --------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| DNS, IPv4             | `149.112.121.30` и `149.112.122.30`                                                                        | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` и `2620:10A:80BC::30`                                                                  | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                          | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS — Family | Имя хоста: `tls://protected.canadianshield.cira.ca` IP-адрес: `149.112.121.30` и IPv6: `2620:10A:80BB::30` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Протокол              | Адрес                                                                                                 |                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| DNS, IPv4             | `149.112.121.30` и `149.112.122.30`                                                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` и `2620:10A:80BC::30`                                                             | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS — Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
@@ -522,7 +522,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### CFIEC Public DNS
 
-Основанный на IPv6 DNS-сервис с мощным потенциалом в области безопасности, защитой от шпионских программ и вредоносных сайтов. Поддерживает DNS64, чтобы обеспечить разрешение доменных имён только для пользователей IPv6.
+Основанный на IPv6 DNS-сервис с мощным потенциалом в области безопасности, защитой от шпионских программ и вредоносных сайтов. It supports DNS64 to provide domain name resolution only for IPv6 users.
 
 | Протокол       | Адрес                             |                                                                               |
 | -------------- | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -628,7 +628,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains!. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
 
 #### Сингапурский DNS-сервер
 
@@ -847,34 +847,34 @@ EDNS Client Subnet — это метод, который включает ком
 
 DNS-серверы, оперируемые [Stubby developers](https://getdnsapi.net/)
 
-| Протокол     | Адрес                                                                                                                              |                                                                              |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| DNS-over-TLS | Имя хоста: `tls://getdnsapi.net` IP-адрес: `185.49.141.37` и IPv6: `2a04:b900:0:100::37`                                           | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Провайдер: `Surfnet` Имя хоста `tls://dnsovertls.sinodun.com` IP-адрес: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Провайдер: `Surfnet` Имя хоста `tls://dnsovertls1.sinodun.com` IP-адрес: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| Протокол     | Адрес                                                                                                                         |                                                                              |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| DNS-over-TLS | Имя хоста: `tls://getdnsapi.net` IP-адрес: `185.49.141.37` и IPv6: `2a04:b900:0:100::37`                                      | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
 Другие DNS-серверы с политикой «без логирования»
 
-| Протокол           | Адрес                                                                                                                     |                                                                               |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS-over-TLS       | Провайдер: `UncensoredDNS` Имя хоста `tls://unicast.censurfridns.dk` IP-адрес: `89.233.43.71` и IPv6: `2a01:3a0:53:53::0` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Провайдер: `UncensoredDNS` Имя хоста `tls://anycast.censurfridns.dk` IP-адрес: `91.239.100.100` и IPv6: `2001:67c:28a4::` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Провайдер: `dkg` Имя хоста `tls://dns.cmrg.net` IP-адрес: `199.58.81.218`и IPv6: `2001:470:1c:76d::53`                    | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.larsdebruin.net` IP-адрес: `51.15.70.167`                                                           | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Имя хоста `tls://dns-tls.bitwiseshift.net` IP-адрес: `81.187.221.24` и IPv6: `2001:8b0:24:24::24`                         | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Имя хоста `tls://ns1.dnsprivacy.at` IP-адрес: `94.130.110.185` и IPv6: `2a01:4f8:c0c:3c03::2`                             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Имя хоста `tls://ns2.dnsprivacy.at` IP-адрес: `94.130.110.178` и IPv6: `2a01:4f8:c0c:3bfc::2`                             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.bitgeek.in` IP-адрес: `139.59.51.46`                                                                | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Имя хоста `tls://dns.neutopia.org` IP-адрес: `89.234.186.112` и IPv6: `2a00:5884:8209::2`                                 | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Провайдер: `Go6Lab` Имя хоста `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                      | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Имя хоста: `tls://dot.securedns.eu` IP-адрес: `146.185.167.43` и IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| Протокол           | Адрес                                                                                                                |                                                                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.larsdebruin.net` IP-адрес: `51.15.70.167`                                                      | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.bitgeek.in` IP-адрес: `139.59.51.46`                                                           | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Имя хоста: `tls://dot.securedns.eu` IP-адрес: `146.185.167.43` и IPv6: `2a03:b0c0:0:1010::e9a:3001`                  | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
 DNS-серверы с минимальным логированием/ограничениями. Эти серверы используют логирование, самоподписанные сертификаты или не поддерживают строгий режим.
 
-| Протокол     | Адрес                                                                                                                  |                                                                                   |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS-over-TLS | Провайдер: `NIC Chile` Имя хоста `dnsotls.lab.nic.cl` IP-адрес: `200.1.123.46` и IPv6: `2001:1398:1:0:200:1:123:46`    | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Провайдер: `OARC` Имя хоста `tls-dns-u.odvr.dns-oarc.net` IP-адрес: `184.105.193.78` и IPv6: `2620:ff:c000:0:1::64:25` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| Протокол     | Адрес                                                                                                             |                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -1041,7 +1041,7 @@ Cерверы с функцией разрешения имён DNS без фи�
 
 [RethinkDNS](https://www.rethinkdns.com/configure) предоставляет сервис DNS-over-HTTPS, работающий как Cloudflare Worker, и сервис DNS-over-TLS, работающий как Fly.io Worker с настраиваемыми списками блокировки.
 
-#### Unfiltered
+#### Нефильтрующий
 
 | Протокол       | Адрес                           |                                                                             |
 | -------------- | ------------------------------- | --------------------------------------------------------------------------- |
@@ -1051,7 +1051,7 @@ Cерверы с функцией разрешения имён DNS без фи�
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) — это публичный DNS-сервис, который блокирует рекламу, вредоносные программы и кнопки социальных сетей.
+[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
 
 #### Блокировка вредоносных доменов
 

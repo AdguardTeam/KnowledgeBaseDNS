@@ -38,11 +38,11 @@ Ako održavate blok listu `/etc/hosts`stila ili ako održavate više lista filte
   ```none
   # Returns the IP address 1.2.3.4 for example.org.
   1.2.3.4 example.org
-  # Blocks example.com by responding with 0.0.0.0.
-  0.0.0.0 primer.com
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `primer.org`: jednostavno pravilo domena. Blokira `primer.org` domen ali **ne** njegove poddomene. `www.primer.org` ostaje dozvoljen.
+* `primer.org`: jednostavno pravilo domena. Blocks the `example.org` domain but **not** its subdomains. `www.primer.org` ostaje dozvoljen.
 
 * `! Ovde ide komentar` i `# Takođe komentar`: komentari.
 
@@ -412,7 +412,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.

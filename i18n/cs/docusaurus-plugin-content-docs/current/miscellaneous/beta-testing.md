@@ -7,7 +7,7 @@ Soukromý AdGuard DNS je nejmladším produktem AdGuardu, i když je v jistém s
 
 ## Jak se stát beta testerem
 
-Chcete-li se stát beta testerem soukromého AdGuard DNS [, přejděte na web AdGuard DNS](https://adguard-dns.io/en/welcome.html), klikněte na tlačítko 'Připojit se k beta verzi' v pravém horním rohu, přihlaste se prostřednictvím sociálních médií nebo existujícího AdGuard účtu. To je vše: nyní si můžete nastavit soukromý AdGuard DNS, používat jej a posílat nám zprávy o tom, jak funguje.
+Chcete-li se stát beta testerem soukromého AdGuard DNS [, přejděte na web AdGuard DNS](https://adguard-dns.io/en/welcome.html), klikněte na tlačítko 'Připojit se k beta verzi' v pravém horním rohu, přihlaste se prostřednictvím sociálních médií nebo existujícího AdGuard účtu. That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
 
 ## Jak nahlásit chybu
 

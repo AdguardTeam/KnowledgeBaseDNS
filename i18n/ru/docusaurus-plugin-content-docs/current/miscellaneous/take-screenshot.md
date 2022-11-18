@@ -30,7 +30,7 @@ sidebar_position: 4
 
 Если этот метод не работает, зайдите в *Настройки* > *Дополнительные функции* > *Движения и жесты* и проверьте, активирован ли переключатель функции *Снимок экрана ладонью*.
 
-Кроме того, вы можете использовать специальные приложения для создания скриншотов на вашем устройстве, такие как *Screenshot Easy*, *Screenshot Snap*, *Screenshot Ultimate*, *Monosnap* и другие.
+Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows зафиксирует изображение всего экрана и
 
 Существует также специальная программа *Ножницы* для создания скриншотов, которая запускается из меню *Пуск > Все программы > Стандартные*. Ножницы позволяют сделать скриншот любой области экрана или всего экрана целиком. После создания скриншота с помощью данной программы вы сможете редактировать изображение и сохранить его в любой папке вашего компьютера.
 
-Кроме того, вы всегда можете пользоваться различными приложениями для создания скриншотов, например: **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** и др. Для этого вам необходимо скачать приложение и установить его на ваш компьютер.
+Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### MacOS
 

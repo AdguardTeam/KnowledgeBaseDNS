@@ -13,7 +13,7 @@ sidebar_position: 3
 
 准备就绪后，在 [DNS 存储库](https://github.com/AdguardTeam/KnowledgeBaseDNS)处理。 我们知识库中的所有文本都是用 `Markdown` 标记语言编写的。 在编辑或撰写文章时，请牢记这一点。 按照 [这个链接](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)了解更多关于 Markdown 语法的信息。
 
-知识库网站是用 Docusaurus 2 建立的，这是一个现代静态网站生成器。 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 你可以在 [此链接获得指南](https://docusaurus.io/docs/category/guides)了解它们。
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 你可以在 [此链接获得指南](https://docusaurus.io/docs/category/guides)了解它们。
 
 你可以把这个知识库部署在你的电脑上，以概述你建议的变化。 Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 

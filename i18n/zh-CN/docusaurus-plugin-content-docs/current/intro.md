@@ -6,13 +6,13 @@ slug: /
 
 ## DNS 是什么
 
-DNS代表“域名系统”，它的作用是将网站的名称转换为IP 地址。 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
+DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
 
 > 默认DNS 服务器通常由你的ISP提供。 这意味着你的ISP可以跟踪你的在线活动，并将日志出售给第三方。
 
 ![你的设备总是使用一些DNS 服务器来取得应用程序想要访问的域名的IP 地址。](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-也有一些DNS 服务器可以在DNS层面拦截特定的网站。 它们如何工作？ 当你的设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过为已拦截的域名回复一个不可路由的IP 地址来阻止连接。
+There are also DNS servers that can block certain websites at DNS-level. 它们如何工作？ 当你的设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过为已拦截的域名回复一个不可路由的IP 地址来阻止连接。
 
 ## 为什么要使用DNS进行内容拦截
 
@@ -22,7 +22,7 @@ DNS代表“域名系统”，它的作用是将网站的名称转换为IP 地�
 
 ## AdGuard DNS 是什么
 
-AdGuard DNS是市场上最注重隐私的DNS服务之一。 它支持如此可靠的加密协议，例如 DNS-over-HTTPS，DNS-over-TLS和DNS-over-Quic。 它可以在无过滤模式下作为常规DNS 解析器工作，也可以提供DNS级别的内容过滤：识别指向广告，跟踪器和/或成人内容的域名(可选)，并以空响应回复。 AdGuard有自己的广告，跟踪器和诈骗域名数据库，并且经常更新。
+AdGuard DNS是市场上最注重隐私的DNS服务之一。 它支持如此可靠的加密协议，例如 DNS-over-HTTPS，DNS-over-TLS和DNS-over-Quic。 It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard有自己的广告，跟踪器和诈骗域名数据库，并且经常更新。
 
 ![AdGuard DNS 工作的大致流程](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

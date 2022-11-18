@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## DNS 是什么？
 
-DNS 是指“域名系统”。它的目标是将网站名称转换成浏览器能识别的 IP 地址。 因此，每次您访问网站，您的浏览器都能给特定服务器（DNS 服务器）发送请求。 该服务器会查看被请求的域名，并且用对应的 IP 地址响应。 它的示意图可以这样表示：
+DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. 因此，每次您访问网站，您的浏览器都能给特定服务器（DNS 服务器）发送请求。 该服务器会查看被请求的域名，并且用对应的 IP 地址响应。 它的示意图可以这样表示：
 
 ![DNS 如何工作](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -47,16 +47,16 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 **DNS 过滤的优点：**
 
-1. 在某些平台上，这是实现全系统过滤的唯一方法。 比方说，在 iOS 上只有 Safari 浏览器支持内容拦截。为了拦截其它内容，用户只可以用 DNS 过滤。
+1. On some platforms, this is the only way to achieve system-wide filtering. 比方说，在 iOS 上只有 Safari 浏览器支持内容拦截。为了拦截其它内容，用户只可以用 DNS 过滤。
 2. 有些跟踪方式，比如 [CNAME 跟踪](https://adguard.com/en/blog/cname-tracking.html)，只可以通过 DNS 过滤被拦截。
 3. 处理 DNS 请求是您可以拦截广告或跟踪器的最早阶段。这样您可以节省点电池寿命及流量。
 
 **DNS 过滤的缺点：**
 
-1. DNS 过滤是一种“暴力过滤法”。意思是 DNS 过滤不会移除拦截广告后留下的白空，或让您使用自定义过滤方式。 通过 DNS 过滤无法拦截很多更复杂的广告（或者说，可以拦截，但只能通过阻止被用于其他目的的整个域名来实现）。
+1. DNS 过滤是一种“暴力过滤法”。意思是 DNS 过滤不会移除拦截广告后留下的白空，或让您使用自定义过滤方式。 Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
 ![差异的例子](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNS 与网络层面过滤的区别*
 
-2. 我们无法知道 DNS 请求的来源。这意味着，在 DNS 层面过滤，您无法区分不同应用程序。 这个会损害统计数据，并且不允许我们创建针对特定的应用程序过滤规则。
+2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. 这个会损害统计数据，并且不允许我们创建针对特定的应用程序过滤规则。
 
 我们推荐在网络过滤的基础上再使用 DNS 过滤，而不是完全代替它。

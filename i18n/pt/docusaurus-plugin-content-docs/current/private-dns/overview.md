@@ -21,14 +21,14 @@ Já temos o [AdGuard DNS público](../public-dns/overview.md) e [AdGuard Home](h
 
 Aqui está uma comparação simples dos recursos disponíveis nos servidores AdGuard DNS Público e AdGuard DNS Privado.
 
-| AdGuard DNS Público                            | AdGuard DNS Privado                                                                                           |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Criptografia de tráfego DNS                    | Criptografia de tráfego DNS                                                                                   |
-| Listas de bloqueio de domínio pré-determinadas | Listas de bloqueio de domínio personalizáveis                                                                 |
-| -                                              | Regras de filtragem de DNS personalizadas com recurso de importação/exportação                                |
-| -                                              | Estatísticas de solicitações (veja para onde vão suas solicitações de DNS: quais países, quais empresas etc.) |
-| -                                              | Registro de consulta detalhado                                                                                |
-| -                                              | Controle parental                                                                                             |
+| AdGuard DNS Público                            | AdGuard DNS Privado                                                                            |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Criptografia de tráfego DNS                    | Criptografia de tráfego DNS                                                                    |
+| Listas de bloqueio de domínio pré-determinadas | Listas de bloqueio de domínio personalizáveis                                                  |
+| -                                              | Regras de filtragem de DNS personalizadas com recurso de importação/exportação                 |
+| -                                              | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
+| -                                              | Registro de consulta detalhado                                                                 |
+| -                                              | Controle parental                                                                              |
 
 ## Como configurar o AdGuard DNS Privado
 

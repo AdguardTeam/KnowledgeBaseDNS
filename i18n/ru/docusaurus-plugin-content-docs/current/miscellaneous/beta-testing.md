@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Как стать бета-тестировщиком
 
-Чтобы стать бета-тестировщиком приватного AdGuard DNS [зайдите на сайт AdGuard DNS](https://adguard-dns.io/en/welcome.html), нажмите кнопку 'Участвовать в бета-тесте' в правом верхнем углу, войдите через социальные сети или существующий аккаунт AdGuard. Вот и всё: теперь вы можете настроить приватный AdGuard DNS, пользоваться сервисом и присылать нам отчёты о возникающих проблемах.
+Чтобы стать бета-тестировщиком приватного AdGuard DNS [зайдите на сайт AdGuard DNS](https://adguard-dns.io/en/welcome.html), нажмите кнопку 'Участвовать в бета-тесте' в правом верхнем углу, войдите через социальные сети или существующий аккаунт AdGuard. That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
 
 ## Как сообщить об ошибке
 

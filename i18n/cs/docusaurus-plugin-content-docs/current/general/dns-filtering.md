@@ -7,7 +7,7 @@ Abychom lépe porozuměli filtrování DNS, měli bychom si nejprve odpovědět 
 
 ## Co je DNS?
 
-DNS je zkratka pro "Domain name system" (decentralizovaný systém doménových názvů) a jeho účelem je překládat názvy webových stránek do podoby srozumitelné prohlížečům, tj. IP adres. Pokaždé, když přejdete na webovou stránku, prohlížeč odešle požadavek na speciální server (server DNS). Tento server se podívá na požadovaný název domény a odpoví odpovídající IP adresou. Velmi schematicky to lze znázornit takto:
+DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Pokaždé, když přejdete na webovou stránku, prohlížeč odešle požadavek na speciální server (server DNS). Tento server se podívá na požadovaný název domény a odpoví odpovídající IP adresou. Velmi schematicky to lze znázornit takto:
 
 ![Jak funguje DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -47,16 +47,16 @@ Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můž
 
 **Výhody DNS filtrování:**
 
-1. Na některých platformách je to jediný způsob, jak dosáhnout filtrování v celém systému. Například v systému iOS podporuje blokování obsahu ve známém smyslu pouze prohlížeč Safari, u všech ostatních je k dispozici pouze DNS filtrování.
+1. On some platforms, this is the only way to achieve system-wide filtering. Například v systému iOS podporuje blokování obsahu ve známém smyslu pouze prohlížeč Safari, u všech ostatních je k dispozici pouze DNS filtrování.
 2. Některé formy sledování (jako je [sledování se skrytým jménem CNAME](https://adguard.com/en/blog/cname-tracking.html)) lze řešit pouze pomocí DNS filtrování.
 3. Fáze zpracování DNS požadavku je první, kterou byste mohli řešit s reklamou nebo slídičem, což pomáhá ušetřit trochu výdrže baterie a datového provozu.
 
 **Nevýhody DNS filtrování:**
 
-1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstávají za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
+1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstávají za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
 ![Příklad rozdílů](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Příklad rozdílu mezi filtrováním DNS a filtrováním sítě*
 
-2. Není možné zjistit původ DNS požadavku, což znamená, že nelze rozlišovat mezi různými aplikacemi na úrovni DNS. To poškozuje statistiky a znemožňuje vytvářet pravidla filtrování pro konkrétní aplikace.
+2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. To poškozuje statistiky a znemožňuje vytvářet pravidla filtrování pro konkrétní aplikace.
 
 Doporučujeme používat DNS filtrování jako doplněk k filtrování sítě, nikoli místo něj.

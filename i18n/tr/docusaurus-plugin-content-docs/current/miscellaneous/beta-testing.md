@@ -1,25 +1,25 @@
 ---
-title: 'Private AdGuard DNS beta test'
+title: 'Özel AdGuard DNS beta testi'
 sidebar_position: 2
 ---
 
-Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). With every new version we try to make Private AdGuard DNS better. And on our way to perfection we really need the help of beta testers. Join our team!
+Private AdGuard DNS is the youngest AdGuard product, even though it is in some ways a logical continuation of the idea of [AdGuard Home](https://kb.adguard.com/en/home/overview). Her yeni sürümde Özel AdGuard DNS'i daha iyi hâle getirmeye çalışıyoruz. Mükemmelliğe giden yolda beta test kullanıcılarının yardımına gerçekten ihtiyacımız var. Ekibimize katılın!
 
-## How to become a beta tester
+## Beta test kullanıcısı nasıl olunur
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Pivate AdGuard DNS, use the service and send us reports on how it works.
+To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
 
-## How to report a bug
+## Hata nasıl bildirilir
 
-Let’s imagine it happened — you spotted a bug. Or maybe you just want to share your suggestion with developers? Anyway, there are several ways to let us know:
+Bunun olduğunu düşünelim — bir hata tespit ettiniz. Ya da sadece önerinizi geliştiricilerle paylaşmak mı istiyorsunuz? Neyse ki, bize bildirmenin birkaç yolu var:
 
-* Go to [forum.adguard.com](https://forum.adguard.com) and post there a new thread (or find an existing one) in [the 'Beta Testing' category of the forum](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* [forum.adguard.com](https://forum.adguard.com) adresine gidin ve orada [forumun 'Beta Testing' kategorisinde](https://forum.adguard.com/index.php?categories/48/) yeni bir konu açın (veya mevcut bir tane bulun). Önce [forum kurallarını](https://forum.adguard.com/index.php?threads/14859/) okuduğunuzdan emin olun;
 
 * Go to [the AdGuard DNS repository](https://github.com/AdguardTeam/AdGuardDNS), create a new issue there and describe the bug/feature request in detail.
 
-The above methods are the most preferred, but you can use others if necessary:
+Yukarıdaki yöntemler en çok tercih edilenlerdir, ancak gerekirse başkalarını da kullanabilirsiniz:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most efficient way to discuss technical matters.
+* [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), vb. gibi çeşitli sosyal medya platformlarında bizi bulun. Ancak, bu teknik konuları tartışmanın en etkili yolu değildir.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Uygulamadaki Destek sekmesinden destek ekibimize e-posta gönderin veya doğrudan [support@adguard.com](mailto:support@adguard.com) adresine yazın.
 

@@ -21,14 +21,14 @@ sidebar_position: 1
 
 以下是公共 AdGuard DNS 和私人 AdGuard DNS 可用功能的简单比较。
 
-| 公共 AdGuard DNS | 私人 AdGuard DNS                   |
-| -------------- | -------------------------------- |
-| DNS流量加密        | DNS流量加密                          |
-| 自带的域名封锁清单      | 可自定义的域名封锁清单                      |
-| -              | 可以 导入/导出 自定义 DNS 过滤规则            |
-| -              | 请求统计（看看你的DNS请求到哪里去了：哪些国家，哪些公司等。） |
-| -              | 详细的查询日志                          |
-| -              | 家长控制                             |
+| 公共 AdGuard DNS | 私人 AdGuard DNS                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| DNS流量加密        | DNS流量加密                                                                                        |
+| 自带的域名封锁清单      | 可自定义的域名封锁清单                                                                                    |
+| -              | 可以 导入/导出 自定义 DNS 过滤规则                                                                          |
+| -              | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
+| -              | 详细的查询日志                                                                                        |
+| -              | 家长控制                                                                                           |
 
 ## 如何配置私人 AdGuard DNS
 

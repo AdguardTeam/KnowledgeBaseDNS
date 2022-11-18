@@ -13,7 +13,7 @@ sidebar_position: 3
 
 시작할 준비가 되면 [KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS)에서 작업하십시오. 기술 자료의 모든 텍스트는 `Markdown` 마크업 언어로 작성되었습니다. 문서를 편집하거나 작성할 때 이것을 명심하십시오. [이 링크](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 따라 Markdown 구문에 대해 자세히 알아보세요.
 
-기술 자료 웹 사이트는 최신 웹 사이트 생성기인 Docusaurus 2를 사용하여 제작되었습니다. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. [이 링크를 통해 사용할 수 있는 가이드](https://docusaurus.io/docs/category/guides)에서 이에 대해 읽을 수 있습니다.
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. [이 링크를 통해 사용할 수 있는 가이드](https://docusaurus.io/docs/category/guides)에서 이에 대해 읽을 수 있습니다.
 
 이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 

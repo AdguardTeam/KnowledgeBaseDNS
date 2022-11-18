@@ -30,7 +30,7 @@ Android 8 이상에서는 휴대전화의 왼쪽 또는 오른쪽 가장자리�
 
 이 방법이 작동하지 않으면 *설정* > *고급* 기능을 확인하여 *손바닥으로 스와이프하여 캡처*을 활성화합니다.
 
-게다가, 예를 들어 *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* 등과 같이 장치에서 스크린샷을 찍기 위해 항상 특별한 응용 프로그램을 사용할 수 있습니다.
+Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8 및 10 에서는 *Win + PrtScn* 조합으로 매우 빠르게 스크�
 
 컴퓨터의 표준 프로그램 중 시작 메뉴를 통해 찾을 수 있는 *Snipping Tool* 이라는 스크린샷 전용 프로그램도 있습니다. 캡처 도구를 사용하면 바탕화면의 모든 영역이나 전체화면을 캡처할 수 있습니다. 이 프로그램을 사용하여 스크린샷을 찍은 후 사진을 편집하고 컴퓨터의 모든 폴더에 저장할 수 있습니다.
 
-게다가 **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** 등과 같이 컴퓨터에서 스크린샷을 찍기 위해 다른 앱을 사용할 수 있습니다.
+Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### MacOS
 

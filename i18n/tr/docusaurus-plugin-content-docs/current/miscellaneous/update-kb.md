@@ -1,29 +1,29 @@
 ---
-title: 'Updating the Knowledge Base'
+title: 'Bilgi Tabanını güncelleme'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Bu Bilgi Tabanının amacı, herkese AdGuard DNS ile ilgili her türlü konuda en güncel bilgileri sağlamaktır. Ancak işler sürekli değişiyor ve bazen bir makale artık mevcut durumu yansıtmıyor - her bir bilgiyi takip edecek ve yeni sürümler yayınlandığında buna göre güncelleyecek çok fazla kişi yok.
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+Bu nedenle, tüm BT içeriğimizi [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS)'a yerleştirdik ve şimdi kelimenin tam anlamıyla herkes, mevcut makalelere ve tamamen yeni makalelere düzenlemeler ve çeviriler önererek katkıda bulunabilir.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Bir değişiklik önerme veya yeni bir makale yazma {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+Yukarıda bahsedilen GitHub'ın işlevselliğini kullanarak mevcut makalelerde değişiklik önerebilir ve Bilgi Tabanına yenilerini ekleyebilirsiniz. Platformla çalışma ilkelerine aşina değilseniz, [bu bölümdeki belgeleri](https://docs.github.com/en) okuyarak başlayın.
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Başlamaya hazır olduğunuzda, [KnowledgeBaseDNS deposunda](https://github.com/AdguardTeam/KnowledgeBaseDNS) çalışın. Bilgi Tabanımızdaki tüm metinler `Markdown` işaretleme dilinde yazılmıştır. Makaleleri düzenlerken veya yazarken bunu aklınızda bulundurun. Markdown söz dizimi hakkında daha fazla bilgi edinmek için [bu bağlantıyı](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) takip edin.
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Değişiklikler veya eklemeler önerirken, tüm belgelerin platformun ilkelerine uygun olması gerektiğini göz önünde bulundurun. Onlar hakkında [bu bağlantı aracılığıyla mevcut olan rehberde](https://docusaurus.io/docs/category/guides) okuyabilirsiniz.
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+Önerdiğiniz değişiklikleri önizlemek için bu Bilgi Tabanını bilgisayarınıza yerel olarak konuşlandırabilirsiniz. Bunun nasıl yapılacağına ilişkin ayrıntılı talimatlar, bu Bilgi Tabanının GitHub sayfasındaki [README.md dosyasında](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) bulunabilir.
 
-## Translating articles {#translate-adguard}
+## Makaleleri çevirme {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+Bilgi Tabanının mevcut makalelerinin çevirisi [Crowdin platformunda](https://crowdin.com/project/adguard-knowledge-bases) gerçekleştirilir. Çeviriler ve Crowdin ile çalışma ile ilgili tüm ayrıntılar AdGuard Reklam Engelleyici Bilgi Tabanının [ilgili makalesinde](https://kb.adguard.com/en/general/adguard-translations) bulunabilir.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
+AdGuard DNS Bilgi Tabanı makaleleri üzerinde çalışırken, daha fazla dikkatle çevirmeniz gereken çoğul biçimler içeren dizelerle karşılaşabilirsiniz. [Ayrı bir makalede](https://kb.adguard.com/en/miscellaneous/plurals), çoğul biçimli dizeleri çevirirken ortaya çıkabilecek zorlukları ayrıntılı olarak açıkladık ve Crowdin platformunda bunlarla nasıl çalışılacağına dair kapsamlı talimatlar verdik.
 
-## Working on open issues
+## Açık sorunlar üzerinde çalışma
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Bazen Bilgi Tabanının güncellenmesiyle ilgili [açık görevler](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) vardır. Bu Bilgi Tabanında başka herhangi bir değişiklik önerdiğiniz gibi, [aynı şekilde](#suggest-change) onların tamamlanmasını hızlandırmamıza da yardımcı olabilirsiniz. İlgi çekici bulduğunuz herhangi bir konuyu seçin ve üzerinde çalışmaya başlayın. Herhangi bir sorunuz varsa — onlara doğrudan bu konudaki yorumlarda sorabilirsiniz.
   

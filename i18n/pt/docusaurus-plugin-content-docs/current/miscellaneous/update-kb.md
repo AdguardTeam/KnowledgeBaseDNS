@@ -13,7 +13,7 @@ Você pode sugerir alterações nos artigos atuais e adicionar novos à Base de 
 
 Quando estiver pronto para começar, trabalhe com o [repositório KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Todos os textos em nossa Base de Conhecimento são escritos em linguagem de marcação `Markdown`. Tenha isso em mente ao editar ou escrever artigos. Siga [este link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para saber mais sobre a sintaxe do Markdown.
 
-O site da Base de Conhecimento é construído usando o Docusaurus 2 — um moderno gerador de sites estáticos. Ao sugerir alterações ou acréscimos, leve em consideração que todos os documentos devem obedecer aos princípios da plataforma. Você pode ler sobre eles no [guia disponível através deste link](https://docusaurus.io/docs/category/guides).
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Ao sugerir alterações ou acréscimos, leve em consideração que todos os documentos devem obedecer aos princípios da plataforma. Você pode ler sobre eles no [guia disponível através deste link](https://docusaurus.io/docs/category/guides).
 
 Você pode implantar esta Base de Conhecimento localmente em seu computador para visualizar as alterações sugeridas. Instruções detalhadas sobre como fazer isso podem ser encontradas [no arquivo README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na página GitHub desta Base de Conhecimento.
 

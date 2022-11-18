@@ -30,7 +30,7 @@ sidebar_position: 4
 
 如果此方法不起作用，请检查*设置* > *高级* 功能，以启用 *轻扫以捕获*。
 
-此外，您始终可以使用任何特殊应用程序在您的设备上截取屏幕截图，例如，*Screenshot Easy*、*Screenshot Ultimate*、*Screenshot Snap* 等。
+Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8和10 允许您使用 *Win + PrtScn* 组合非常快速地截取屏幕�
 
 还有一个用于截屏的专用程序，称为 *Snipping Tool* ，您可以通过“开始”菜单在计算机的标准程序中找到该程序。 截图工具可让您捕获桌面的任何区域或整个屏幕。 使用此程序截取屏幕截图后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
-此外，你也可以尝试使用不同的应用程序在电脑上进行截图，如 **PicPick**、**Nimbus Screenshot**、**Screenshot Captor**、**Snipaste**、**Monosnap** 等等。
+Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### MacOS
 

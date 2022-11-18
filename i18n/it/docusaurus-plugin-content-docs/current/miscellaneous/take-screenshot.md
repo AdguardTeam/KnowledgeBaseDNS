@@ -30,7 +30,7 @@ On Android 8 and later there is also a possibility to take a screenshot by placi
 
 If this method doesn’t work, check *Settings* > *Advanced* features to enable *Palm swipe to capture*.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* etc.
+Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* co
 
 There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** etc.
+Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### MacOS
 

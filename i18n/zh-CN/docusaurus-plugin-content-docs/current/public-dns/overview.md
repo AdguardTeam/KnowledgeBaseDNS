@@ -3,7 +3,7 @@ title: 概览
 sidebar_position: 1
 ---
 
-## 什么是 AdGuard DNS？
+## AdGuard DNS 是什么
 
 AdGuard DNS 是款个免费的、注重隐私的DNS解析器，他可以提供安全的连接，还可以拦截追踪器、广告和网络钓鱼(可选)。 AdGuard DNS不需要安装任何应用程序。 他可以轻松地安装在所有设备（智能手机、台式电脑、路由器、游戏机等）上。
 

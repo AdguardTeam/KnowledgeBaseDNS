@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Jak vyprázdnit mezipaměť DNS
 
-## Co je mezipaměť DNS?
+## What is DNS cache
 
 Do mezipaměti DNS se ukládají IP adresy navštívených webů v lokálním počítači, aby se příště načítaly rychleji. Místo dlouhého vyhledávání DNS systém odpovídá na dotazy pomocí záznamů DNS z dočasné mezipaměti DNS.
 
