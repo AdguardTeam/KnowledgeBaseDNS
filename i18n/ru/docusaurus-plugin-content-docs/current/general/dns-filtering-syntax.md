@@ -167,7 +167,7 @@ $client=~value1
 $denyallow=domain1|domain2|...
 ```
 
-Этот модификатор позволяет избежать создания ненужных правил исключения, когда блокирующее правило охватывает слишком много доменов. Возможно, вы захотите заблокировать всё, за исключением нескольких доменов верхнего уровня. Вы можете использовать стандартный подход, т.е. такие правила, как эти:
+Этот модификатор позволяет избежать создания ненужных правил исключения, когда блокирующее правило охватывает слишком много доменов. You may want to block everything except for a couple of TLD domains. Вы можете использовать стандартный подход, т.е. такие правила, как эти:
 
 ```none
 ! Заблокировать всё.
@@ -186,9 +186,9 @@ $denyallow=domain1|domain2|...
 
 **Примеры:**
 
-* `*$denyallow=com|net`: блокирует все домены `*.com` и `*.net`.
+* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
-* `@@*$denyallow=com|net`: разблокирует все домены `*.com` и `*.net`.
+* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. блокирует `example.org` и `*.example.org`, но не блокирует `sub.example.org`.
 

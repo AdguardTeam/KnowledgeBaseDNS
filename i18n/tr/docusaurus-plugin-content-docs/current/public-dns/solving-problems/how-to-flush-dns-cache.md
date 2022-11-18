@@ -104,6 +104,6 @@ iPad veya iPhone'unuzdaki DNS önbelleğini temizlemenin farklı yolları vardı
 
 En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya Ayarlar uygulamasında) ve tekrar devre dışı bırakmaktır. DNS önbelleği temizlenecektir.
 
-Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *General*, scroll down, find *Reset* and tap on *Reset Network Settings*.
+Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
 
 > Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.

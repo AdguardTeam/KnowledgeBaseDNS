@@ -12,7 +12,7 @@ DNS stands for "Domain Name System", and its purpose is to convert websites' nam
 
 ![你的设备总是使用一些DNS 服务器来取得应用程序想要访问的域名的IP 地址。](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. 它们如何工作？ 当你的设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过为已拦截的域名回复一个不可路由的IP 地址来阻止连接。
+There are also DNS servers that can block certain websites at DNS-level. 它们如何工作？ When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## 为什么要使用DNS进行内容拦截
 
