@@ -21,14 +21,14 @@ Již máme [veřejný AdGuard DNS](../public-dns/overview.md) a [AdGuard Home](h
 
 Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGuard DNS a soukromých serverech AdGuard DNS.
 
-| Veřejný AdGuard DNS                    | Soukromý DNS AdGuard                                                                           |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Šifrování provozu DNS                  | Šifrování provozu DNS                                                                          |
-| Předem určené seznamy zakázaných domén | Přizpůsobitelné seznamy zakázaných domén                                                       |
-| -                                      | Vlastní pravidla DNS filtrování s funkcí importu/exportu                                       |
-| -                                      | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
-| -                                      | Podrobný záznam dotazů                                                                         |
-| -                                      | Rodičovská ochrana                                                                             |
+| Veřejný AdGuard DNS                    | Soukromý DNS AdGuard                                                                                          |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Šifrování provozu DNS                  | Šifrování provozu DNS                                                                                         |
+| Předem určené seznamy zakázaných domén | Přizpůsobitelné seznamy zakázaných domén                                                                      |
+| -                                      | Vlastní pravidla DNS filtrování s funkcí importu/exportu                                                      |
+| -                                      | Statistiky požadavků (zjistěte, kam směřují vaše DNS požadavky: do kterých zemí, ke kterým společnostem atd.) |
+| -                                      | Podrobný záznam dotazů                                                                                        |
+| -                                      | Rodičovská ochrana                                                                                            |
 
 ## Jak nastavit soukromý AdGuard DNS
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # DNS önbelleği nasıl temizlenir
 
-## What is DNS cache
+## DNS önbelleği nedir
 
 DNS önbelleği, ziyaret edilen sitelerin IP adreslerini yerel bilgisayarda depolar, böylece bir dahaki sefere daha hızlı yüklenirler. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 

@@ -21,14 +21,14 @@ Halihazırda [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home'a](
 
 Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basit bir karşılaştırmasını burada bulabilirsiniz.
 
-| Genel AdGuard DNS                            | Özel AdGuard DNS                                                                               |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| DNS trafik şifreleme                         | DNS trafik şifreleme                                                                           |
-| Önceden belirlenmiş alan adı engel listeleri | Özelleştirilebilir alan adı engel listeleri                                                    |
-| -                                            | İçe ve dışa aktarma özelliğine sahip özel DNS filtreleme kuralları                             |
-| -                                            | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
-| -                                            | Ayrıntılı sorgu günlüğü                                                                        |
-| -                                            | Ebeveyn denetimi                                                                               |
+| Genel AdGuard DNS                            | Özel AdGuard DNS                                                                                      |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| DNS trafik şifreleme                         | DNS trafik şifreleme                                                                                  |
+| Önceden belirlenmiş alan adı engel listeleri | Özelleştirilebilir alan adı engel listeleri                                                           |
+| -                                            | İçe ve dışa aktarma özelliğine sahip özel DNS filtreleme kuralları                                    |
+| -                                            | İstek istatistikleri (DNS isteklerinizin nereye gittiğini görün: hangi ülkeler, hangi şirketler, vb.) |
+| -                                            | Ayrıntılı sorgu günlüğü                                                                               |
+| -                                            | Ebeveyn denetimi                                                                                      |
 
 ## Özel AdGuard DNS nasıl kurulur
 

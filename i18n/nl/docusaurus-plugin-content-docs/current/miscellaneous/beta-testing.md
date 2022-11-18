@@ -7,7 +7,7 @@ Private AdGuard DNS is the youngest AdGuard product, even though it is in some w
 
 ## How to become a beta tester
 
-To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. That's it: now you can set up your Private AdGuard DNS, use the service and send us reports on how it works.
+To become a beta tester of Private AdGuard DNS [go to the AdGuard DNS website](https://adguard-dns.io/en/welcome.html), click the 'Join beta' button in the upper right corner, sign in through social media or an existing AdGuard account. Dat is alles: nu kun je jouw Private AdGuard DNS instellen, de service gebruiken en ons rapporten sturen over hoe het werkt.
 
 ## How to report a bug
 

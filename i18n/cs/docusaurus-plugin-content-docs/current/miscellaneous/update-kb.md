@@ -13,7 +13,7 @@ Pomocí výše uvedených funkcí GitHubu můžete navrhovat změny stávající
 
 Jakmile budete připraveni začít, zapracujte [na repozitáři KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Všechny texty v naší znalostní databázi jsou napsány ve značkovacím jazyce `Markdown`. Mějte to na paměti při úpravách nebo psaní článků. Chcete-li se dozvědět více o syntaxi Markdown, následujte [tento odkaz](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Při navrhování změn nebo doplňků berte v úvahu, že všechny dokumenty musí být v souladu se zásadami platformy. Můžete si o nich přečíst v [průvodci dostupném na tomto odkazu](https://docusaurus.io/docs/category/guides).
+Webová stránka databáze znalostí je vytvořena pomocí moderního generátoru statických webových stránek Docusaurus 2. Při navrhování změn nebo doplňků berte v úvahu, že všechny dokumenty musí být v souladu se zásadami platformy. Můžete si o nich přečíst v [průvodci dostupném na tomto odkazu](https://docusaurus.io/docs/category/guides).
 
 Tuto databázi znalostí můžete lokálně uložit do svého počítače a zobrazit náhled navrhovaných změn. Podrobný návod, jak to provést, najdete na adrese [v souboru README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na stránce GitHub této databáze znalostí.
 

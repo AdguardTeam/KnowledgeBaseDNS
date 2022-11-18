@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### Výchozí
 
-These servers block ads, tracking, and phishing
+Tyto servery blokují reklamy, slídiče a krádež identity
 
 | Protokol        | Adresa                                                                            |                                                                                                                                                                       |
 | --------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými st
 
 ### CleanBrowsing
 
-[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Tato služba nabízí bezpečný způsob prohlížení webu bez nevhodného obsahu.
+[CleanBrowsing](https://cleanbrowsing.org/) je služba DNS, která poskytuje přizpůsobitelné filtrování. Tato služba nabízí bezpečný způsob prohlížení webu bez nevhodného obsahu.
 
 #### Rodinný filtr
 
@@ -309,12 +309,12 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 [SWITCH DNS](https://www.switch.ch/security/info/public-dns/) je švýcarská veřejná služba DNS, kterou poskytuje [switch.ch](https://www.switch.ch/)
 
-| Protokol        | Adresa                                                                           |                                                                               |
-| --------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS, IPv4       | Poskytovatel: `dns.switch.ch` IP: `130.59.31.248`                                | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6       | Poskytovatel: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                           | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS skrze HTTPS | `https://dns.switch.ch/dns-query`                                                | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS skrze TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| Protokol        | Adresa                                                                                |                                                                               |
+| --------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS, IPv4       | Poskytovatel: `dns.switch.ch` IP: `130.59.31.248`                                     | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6       | Poskytovatel: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS skrze HTTPS | `https://dns.switch.ch/dns-query`                                                     | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS skrze TLS   | Název hostitele: `tls://dns.switch.ch` IP: `130.59.31.248` a IPv6: `2001:620:0:ff::2` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
@@ -366,7 +366,7 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 ### Comss.ru DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná služba DNS s ochranou proti reklamám, sledování a krádeži identity.
 
 #### West DNS Server (hlavní)
 
@@ -405,35 +405,35 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 V "Soukromém" režimu pouze překlad DNS
 
-| Protokol                 | Adresa                                                                                              |                                                                                                      |
-| ------------------------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.10` a `149.112.122.10`                                                                 | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6                | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                           | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS skrze HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS skrze TLS – soukromý | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Protokol                 | Adresa                                                                                                   |                                                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.10` a `149.112.122.10`                                                                      | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6                | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                                | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS skrze HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS skrze TLS – soukromý | Název hostitele: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` a IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Chráněný
 
 V "Chráněném" režimu ochrana proti malwaru a krádeži identity
 
-| Protokol                 | Adresa                                                                                                |                                                                                                         |
-| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` a `149.112.122.20`                                                                   | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` a `2620:10A:80BC::20`                                                             | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS skrze HTTPS          | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS skrze TLS – chráněný | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol                 | Adresa                                                                                                     |                                                                                                         |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` a `149.112.122.20`                                                                        | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` a `2620:10A:80BC::20`                                                                  | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS skrze HTTPS          | `https://protected.canadianshield.cira.ca/dns-query`                                                       | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS skrze TLS – chráněný | Název hostitele: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` a IPv6: `2620:10A:80BB::20` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Rodinný
 
 V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
 
-| Protokol                | Adresa                                                                                                |                                                                                                     |
-| ----------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| DNS, IPv4               | `149.112.121.30` a `149.112.122.30`                                                                   | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6               | `2620:10A:80BB::30` a `2620:10A:80BC::30`                                                             | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS skrze HTTPS         | `https://family.canadianshield.cira.ca/dns-query`                                                     | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS skrze TLS - rodinný | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol                | Adresa                                                                                                     |                                                                                                     |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| DNS, IPv4               | `149.112.121.30` a `149.112.122.30`                                                                        | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6               | `2620:10A:80BB::30` a `2620:10A:80BC::30`                                                                  | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS skrze HTTPS         | `https://family.canadianshield.cira.ca/dns-query`                                                          | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS skrze TLS - rodinný | Název hostitele: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` a IPv6: `2620:10A:80BB::30` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
@@ -522,7 +522,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
 
 ### CFIEC Public DNS
 
-Služba DNS anycast založená na protokolu IPv6 se silnými bezpečnostními funkcemi a ochranou před spywarem a škodlivými webovými stránkami. It supports DNS64 to provide domain name resolution only for IPv6 users.
+Služba DNS anycast založená na protokolu IPv6 se silnými bezpečnostními funkcemi a ochranou před spywarem a škodlivými webovými stránkami. Podporuje DNS64 a poskytuje překlad názvů domén pouze pro uživatele IPv6.
 
 | Protokol        | Adresa                            |                                                                               |
 | --------------- | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -628,7 +628,7 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains!. Žádné záznamy, ECS, ověření DNSSEC, je zdarma!
+[Privacy-First DNS](https://tiarap.org/) blokuje více než 140 tisíc reklam, slídičů, malwaru a domén zaměřených na krádež identity. Žádné záznamy, ECS, ověření DNSSEC, je zdarma!
 
 #### Singapurský DNS server
 
@@ -847,34 +847,34 @@ Společný otevřený projekt na podporu, implementaci a nasazení [DNS Privacy]
 
 DNS servery, které provozují vývojáři [Stubby](https://getdnsapi.net/)
 
-| Protokol      | Adresa                                                                                                                        |                                                                              |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| DNS skrze TLS | Název hostitele: `tls://getdnsapi.net` IP: `185.49.141.37` a IPv6: `2a04:b900:0:100::37`                                      | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS skrze TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS skrze TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| Protokol      | Adresa                                                                                                                                  |                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| DNS skrze TLS | Název hostitele: `tls://getdnsapi.net` IP: `185.49.141.37` a IPv6: `2a04:b900:0:100::37`                                                | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS skrze TLS | Poskytovatel: `Surfnet`, Název hostitele: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` a IPv6: `2001:610:1:40ba:145:100:185:15`  | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS skrze TLS | Poskytovatel: `Surfnet`, Název hostitele: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` a IPv6: `2001:610:1:40ba:145:100:185:16` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
 Ostatní servery DNS se zásadou 'bez záznamů'
 
-| Protokol            | Adresa                                                                                                               |                                                                               |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS skrze TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS skrze TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS skrze TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS skrze TLS, IPv4 | Název hostitele: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                      | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS skrze TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS skrze TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS skrze TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS skrze TLS, IPv4 | Název hostitele: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                           | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS skrze TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS skrze TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS skrze TLS       | Název hostitele: `tls://dot.securedns.eu` IP: `146.185.167.43` a IPv6: `2a03:b0c0:0:1010::e9a:3001`                  | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| Protokol            | Adresa                                                                                                                         |                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| DNS skrze TLS       | Poskytovatel: `UncensoredDNS`, Název hostitele: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` a IPv6: `2a01:3a0:53:53::0` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS skrze TLS       | Poskytovatel: `UncensoredDNS`, Název hostitele: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` a IPv6: `2001:67c:28a4::` | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS skrze TLS       | Poskytovatel: `dkg`, Název hostitele: `tls://dns.cmrg.net` IP: `199.58.81.218`a IPv6: `2001:470:1c:76d::53`                    | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS skrze TLS, IPv4 | Název hostitele: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                                | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS skrze TLS       | Název hostitele: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` a IPv6: `2001:8b0:24:24::24`                             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS skrze TLS       | Název hostitele: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` a IPv6: `2a01:4f8:c0c:3c03::2`                                 | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS skrze TLS       | Název hostitele: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` a IPv6: `2a01:4f8:c0c:3bfc::2`                                 | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS skrze TLS, IPv4 | Název hostitele: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                     | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS skrze TLS       | Název hostitele: `tls://dns.neutopia.org` IP: `89.234.186.112` a IPv6: `2a00:5884:8209::2`                                     | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS skrze TLS       | Poskytovatel: `Go6Lab` Název hostitele: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                 | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS skrze TLS       | Název hostitele: `tls://dot.securedns.eu` IP: `146.185.167.43` a IPv6: `2a03:b0c0:0:1010::e9a:3001`                            | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
 DNS servery s minimálními záznamy/omezeními. Tyto servery používají některé záznamy, samopodepsané certifikáty nebo nepodporují striktní režim.
 
-| Protokol      | Adresa                                                                                                            |                                                                                   |
-| ------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS skrze TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS skrze TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| Protokol      | Adresa                                                                                                                      |                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS skrze TLS | Poskytovatel: `NIC Chile`, Název hostitele: `dnsotls.lab.nic.cl` IP: `200.1.123.46` a IPv6: `2001:1398:1:0:200:1:123:46`    | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS skrze TLS | Poskytovatel: `OARC`, Název hostitele: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` a IPv6: `2620:ff:c000:0:1::64:25` | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -1051,7 +1051,7 @@ Rodinný režim nabízí ochranu pomocí "bezpečných" řešitelů a blokuje st
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
+[ControlD](https://controld.com/free-dns) je veřejná služba DNS, která poskytuje blokování reklam, malwaru a sociálních médií.
 
 #### Blokování malwaru
 

@@ -30,7 +30,7 @@ V systému Android 8 a novějších verzích je také možné pořídit snímek 
 
 Pokud tato metoda nefunguje, zkontrolujte *Nastavení* > *Pokročilé funkce* a povolte *Přejetí dlaní k zachycení snímku obrazovky*.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+Kromě toho můžete vždy použít některou ze speciálních aplikací pro pořizování snímků obrazovky na svých zařízeních, např. — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* atd.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí komb
 
 K pořizování snímků obrazovky existuje také specializovaný program *Výstřižky*, který najdete v nabídce Start mezi standardními programy počítače. Výstřižky vám umožní zachytit jakoukoli oblast vaší pracovní plochy nebo celou obrazovku. Po pořízení snímku obrazovky pomocí tohoto programu můžete obrázek upravit a uložit do libovolné složky v počítači.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+Kromě toho můžete zkusit používat různé aplikace pro pořizování snímků obrazovky v počítači, například **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** atd.
 
 ### MacOS
 

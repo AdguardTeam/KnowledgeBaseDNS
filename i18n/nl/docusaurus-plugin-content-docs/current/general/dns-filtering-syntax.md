@@ -38,11 +38,11 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
   ```none
   # Returns the IP address 1.2.3.4 for example.org.
   1.2.3.4 example.org
-  # Blocks example.org by responding with 0.0.0.0.
+  # Blokkeert example.org door te reageren met 0.0.0.0.
   0.0.0.0 example.org
   ```
 
-* `example.org`: a simple domain rule. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
+* `example.org`: a simple domain rule. Blokkeert het domein `example.org` maar **niet** diens subdomeinen. `www.example.org` remains allowed.
 
 * `! Here goes a comment` and `# Also a comment`: comments.
 

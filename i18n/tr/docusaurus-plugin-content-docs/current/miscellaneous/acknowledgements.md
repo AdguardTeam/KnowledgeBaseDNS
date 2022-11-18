@@ -9,7 +9,7 @@ Geliştirme ekibimiz, AdGuard DNSde kullandığımız üçüncü taraf yazılım
 
 * Miek Gieben tarafından DNS modülü: [https://github.com/miekg/dns](https://github.com/miekg/dns)
 * Jun Kimura tarafından GCache modülü: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Patrick Mylund Nielsen tarafından Go-Cache modülü: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
 * Daniel Martí tarafından Gofumpt programı: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
 * Lucas Clemente tarafından QUIC-Go modülü: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Dominik Honnef tarafından Staticcheck programı: [https://staticcheck.io](https://staticcheck.io/)

@@ -38,11 +38,11 @@ Pokud udržujete seznam zakázaných ve stylu `/etc/hosts` nebo pokud udržujete
   ```none
   # Vrátí IP adresu 1.2.3.4 pro example.org.
   1.2.3.4 example.org
-  # Blocks example.org by responding with 0.0.0.0.
+  # Blokuje doménu example.org odpovědí 0.0.0.0.
   0.0.0.0 example.org
   ```
 
-* `example.org`: jednoduché pravidlo domény. Blocks the `example.org` domain but **not** its subdomains. Doména `www.example.org` zůstává povolena.
+* `example.org`: jednoduché pravidlo domény. Blokuje doménu `example.org`, ale **ne** její subdomény. Doména `www.example.org` zůstává povolena.
 
 * `! Zde je komentář` a `# Také komentář`: komentáře.
 
@@ -412,7 +412,7 @@ Seznam povolených značek:
   * `device_audio`: audio zařízení.
   * `device_camera`: fotoaparáty.
   * `device_gameconsole`: herní konzole.
-  * `device_laptop`: laptops.
+  * `device_laptop`: notebooky.
   * `device_nas`: NAS servery (Síťová úložiště).
   * `device_pc`: stolní počítače.
   * `device_phone`: telefony.

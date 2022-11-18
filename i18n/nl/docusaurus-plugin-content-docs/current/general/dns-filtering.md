@@ -7,7 +7,7 @@ To better understand DNS filtering, first, we should answer the question "What i
 
 ## What is DNS?
 
-DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Thus, each time you go to a website, your browser sends a request to a special server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
+DNS staat voor "Domain Name System" en heeft tot doel de namen van websites te vertalen in iets wat browsers kunnen begrijpen, namelijk IP-adressen. Thus, each time you go to a website, your browser sends a request to a special server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
 
 ![How DNS works](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -47,16 +47,16 @@ First of all, we have to mention that with AdGuard you don't have to choose. You
 
 **Pros of DNS filtering:**
 
-1. On some platforms, this is the only way to achieve system-wide filtering. For example, on iOS only the Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
+1. Op sommige platforms is dit de enige manier om systeembrede filtering te bereiken. For example, on iOS only the Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
 2. Some forms of tracking (like [CNAME-cloaked tracking](https://adguard.com/en/blog/cname-tracking.html)) can only be dealt with by DNS filtering.
 3. The stage of processing a DNS request is the earliest you could possibly deal with an ad or a tracker, this helps save a little bit of battery life and traffic.
 
 **Cons of DNS filtering:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Veel van de meer gecompliceerde advertenties kunnen niet op DNS-niveau worden geblokkeerd (of beter gezegd, ze kunnen dat wel, maar alleen door de volledige domeinen te blokkeren die voor andere doeleinden worden gebruikt).
 
 ![Example of difference](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of difference between DNS filtering and network filtering*
 
-2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This harms the statistics and makes it impossible to create app-specific filtering rules.
+2. Het is niet mogelijk om de oorsprong van een DNS-verzoek te kennen, wat betekent dat je geen onderscheid kunt maken tussen verschillende apps op DNS-niveau. This harms the statistics and makes it impossible to create app-specific filtering rules.
 
 We recommend to use DNS filtering in addition to network filtering, not instead of it, whenever possible.
