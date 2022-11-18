@@ -6,13 +6,13 @@ slug: /
 
 ## What is DNS
 
-DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+DNS staat voor "Domain Name System", en heeft tot doel de namen van websites om te zetten in IP-adressen. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
 
 > The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
 
 ![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
+Er zijn ook DNS-servers die bepaalde websites op DNS-niveau kunnen blokkeren. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 
@@ -22,7 +22,7 @@ Using DNS for content blocking has some advantages as well as obvious flaws. On 
 
 ## What is AdGuard DNS
 
-AdGuard DNS is one of the most privacy-friendly DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
+AdGuard DNS is one of the most privacy-friendly DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. Het kan werken als een gewone DNS-resolver in de modus Niet-filteren, maar het kan ook inhoudsblokkering op DNS-niveau bieden: verzoeken aan advertentie-, tracking- en/of volwassen-domeinen (optioneel) identificeren en antwoorden met een leeg antwoord. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
 
 ![An approximate scheme of how AdGuard DNS works](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

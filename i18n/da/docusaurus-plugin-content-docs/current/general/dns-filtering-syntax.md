@@ -186,7 +186,7 @@ Problemet med denne tilgang er, at man på denne måde også afblokerer sporings
 
 **Eksempler:**
 
-* `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
+* `*$denyallow=com|net`: Blokér alt, bortset fra `*.com` og `*.net`.
 
 * `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
 

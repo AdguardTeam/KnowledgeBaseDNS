@@ -7,7 +7,7 @@ DNS filtrelemeyi daha iyi anlamak için öncelikle "DNS nedir?" sorusuna cevap v
 
 ## DNS nedir?
 
-DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Böylece bir siteye her gittiğinizde, tarayıcınız özel bir sunucuya (DNS sunucusu) bir istek gönderir. Bu sunucu, istenen alan adına bakar ve karşılık gelen bir IP adresiyle yanıt verir. Çok şematik olarak şu şekilde temsil edilebilir:
+DNS, "Alan Adı Sistemi" anlamına gelir ve amacı, sitelerin adlarını tarayıcıların anlayabileceği bir şeye, yani IP adreslerine çevirmektir. Böylece bir siteye her gittiğinizde, tarayıcınız özel bir sunucuya (DNS sunucusu) bir istek gönderir. Bu sunucu, istenen alan adına bakar ve karşılık gelen bir IP adresiyle yanıt verir. Çok şematik olarak şu şekilde temsil edilebilir:
 
 ![DNS nasıl çalışır](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -47,7 +47,7 @@ Ağ filtreleme, AdGuard bağımsız uygulamalarının ağ trafiğini işlemesini
 
 **DNS filtrelemenin artıları:**
 
-1. On some platforms, this is the only way to achieve system-wide filtering. Örneğin, iOS'ta yalnızca Safari tarayıcısı bilinen anlamda içerik engellemeyi destekler, diğer her şey için yalnızca DNS filtreleme vardır.
+1. Bazı platformlarda, sistem genelinde filtreleme yapmanın tek yolu budur. Örneğin, iOS'ta yalnızca Safari tarayıcısı bilinen anlamda içerik engellemeyi destekler, diğer her şey için yalnızca DNS filtreleme vardır.
 2. Some forms of tracking (like [CNAME-cloaked tracking](https://adguard.com/en/blog/cname-tracking.html)) can only be dealt with by DNS filtering.
 3. The stage of processing a DNS request is the earliest you could possibly deal with an ad or a tracker, this helps save a little bit of battery life and traffic.
 
@@ -57,6 +57,6 @@ Ağ filtreleme, AdGuard bağımsız uygulamalarının ağ trafiğini işlemesini
 
 ![Example of difference](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNS filtreleme ve ağ filtreleme arasındaki farka bir örnek*
 
-2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. Bu, istatistiklere zarar verir ve uygulamaya özel filtreleme kuralları oluşturmayı imkansız hâle getirir.
+2. Bir DNS isteğinin kaynağını bilmek mümkün değildir; bu, DNS düzeyinde farklı uygulamalar arasında ayrım yapamayacağınız anlamına gelir. Bu, istatistiklere zarar verir ve uygulamaya özel filtreleme kuralları oluşturmayı imkansız hâle getirir.
 
 Mümkün olduğunda bunun yerine ağ filtrelemeye ek olarak DNS filtrelemeyi kullanmanızı tavsiye ederiz.

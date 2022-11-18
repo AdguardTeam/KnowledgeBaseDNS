@@ -38,11 +38,11 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
   ```none
   # Returns the IP address 1.2.3.4 for example.org.
   1.2.3.4 example.org
-  # Blocks example.org by responding with 0.0.0.0.
+  # example.org alan adını 0.0.0.0 ile yanıtlayarak engeller.
   0.0.0.0 example.org
   ```
 
-* `example.org`: basit bir alan adı kuralı. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
+* `example.org`: basit bir alan adı kuralı. `example.org` alan adını engeller ancak alt alanlarını **engellemez**. `www.example.org` remains allowed.
 
 * `! Here goes a comment` and `# Also a comment`: comments.
 
@@ -412,7 +412,7 @@ $ctag=~value1|~value2|...
   * `device_audio`: ses cihazları.
   * `device_camera`: kameralar.
   * `device_gameconsole`: oyun konsolları.
-  * `device_laptop`: laptops.
+  * `device_laptop`: dizüstü bilgisayarlar.
   * `device_nas`: NAS (Ağa Bağlı Depolar).
   * `device_pc`: bilgisayarlar.
   * `device_phone`: telefonlar.
