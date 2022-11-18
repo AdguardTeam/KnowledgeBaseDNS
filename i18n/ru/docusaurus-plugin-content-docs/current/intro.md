@@ -12,7 +12,7 @@ DNS stands for "Domain Name System", and its purpose is to convert websites' nam
 
 ![Ваше устройство всегда использует DNS-сервер, чтобы получить IP-адрес доменного имени, к которому обращается приложение](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. Как они работают? Когда ваше устройство отправляет «плохой» запрос, будь то реклама или трекер, DNS-сервер предотвращает соединение, отвечая немаршрутизируемым IP-адресом заблокированного домена.
+There are also DNS servers that can block certain websites at DNS-level. Как они работают? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Зачем использовать DNS для блокировки контента
 

@@ -12,7 +12,7 @@ DNS je zkratka pro "Domain name system" a jeho účelem je převádět názvy we
 
 ![Vaše zařízení vždy používá nějaký DNS server k získání IP adres názvů domén, na které chcete přejít](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-Existují také DNS servery, které mohou blokovat určité webové stránky na úrovni DNS. Jak fungují? Když vaše zařízení odešle "špatný" požadavek, ať už se jedná o reklamu nebo slídič, server DNS zabrání připojení tím, že odpoví nesměrovatelnou IP adresou blokované domény.
+Existují také DNS servery, které mohou blokovat určité webové stránky na úrovni DNS. Jak fungují? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Proč používat DNS pro blokování obsahu
 

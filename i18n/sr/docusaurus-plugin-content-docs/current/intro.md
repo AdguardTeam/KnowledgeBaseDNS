@@ -12,7 +12,7 @@ DNS stands for "Domain Name System", and its purpose is to convert websites' nam
 
 ![Uređaj uvek koristi neki DNS server da bi dobio IP adrese aplikacija za ime domena do kojih želite da se krećete](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. Kako funkcionišu? Kada uređaj pošalje "loš" zahtev, bilo da se radi o oglasu ili tragaču, DNS server sprečava povezivanje tako što se odaziva sa IP adresom koja nije usmeravana za blokirani domen.
+There are also DNS servers that can block certain websites at DNS-level. Kako funkcionišu? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Zašto koristiti DNS za blokiranje sadržaja
 

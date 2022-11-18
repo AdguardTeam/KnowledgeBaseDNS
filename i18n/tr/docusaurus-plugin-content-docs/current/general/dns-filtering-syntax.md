@@ -167,7 +167,7 @@ Söz dizimi şöyledir:
 $denyallow=domain1|domain2|...
 ```
 
-Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında gereksiz istisna kuralları oluşturmaktan kaçınmaya olanak tanır. You may want to block everything save for a couple of TLD domains. Standart yaklaşımı, yani aşağıdaki gibi kuralları kullanabilirsiniz:
+Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında gereksiz istisna kuralları oluşturmaktan kaçınmaya olanak tanır. You may want to block everything except for a couple of TLD domains. Standart yaklaşımı, yani aşağıdaki gibi kuralları kullanabilirsiniz:
 
 ```none
 ! Her şeyi engelleyin.
@@ -186,9 +186,9 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 **Örnekler:**
 
-* `*$denyallow=com|net`: `*.com` ve `*.net` dışında her şeyi engelleyin.
+* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
-* `@@*$denyallow=com|net`: `*.com` ve `*.net` dışında her şeyin engelini kaldırın.
+* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 

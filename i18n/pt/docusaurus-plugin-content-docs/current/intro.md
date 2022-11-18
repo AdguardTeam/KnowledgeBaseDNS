@@ -12,7 +12,7 @@ DNS stands for "Domain Name System", and its purpose is to convert websites' nam
 
 ![Seu dispositivo sempre usa algum servidor DNS para obter endereços IP dos aplicativos de nome de domínio para os quais deseja navegar](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. Como eles funcionam? Quando seu dispositivo envia uma solicitação "ruim", seja um anúncio ou um rastreador, um servidor DNS impede a conexão respondendo com um endereço IP não roteável para um domínio bloqueado.
+There are also DNS servers that can block certain websites at DNS-level. Como eles funcionam? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Por que usar DNS para bloqueio de conteúdo
 
