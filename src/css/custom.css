@@ -53,7 +53,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   border: 1px solid var(--img-border-color);
 }
 
-.container img[alt$="*mobile"] {
+.container img[alt$="*mobile"],
+.container img[alt$="*mobile_border"] {
   max-width: 360px;
 }
 
