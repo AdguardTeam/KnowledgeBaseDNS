@@ -64,6 +64,12 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right',
+          dropdownItemsAfter: [
+            {
+              to: 'https://adguard-dns.io/kb/miscellaneous/update-kb/',
+              label: 'Help Us Translate',
+            },
+          ],
         },
         {
           href: 'https://github.com/AdguardTeam/KnowledgeBaseDNS',
