@@ -66,7 +66,7 @@ module.exports = {
           position: 'right',
           dropdownItemsAfter: [
             {
-              to: 'https://adguard-dns.io/kb/miscellaneous/update-kb/',
+              to: '/miscellaneous/update-kb/',
               label: 'Help Us Translate',
             },
           ],
