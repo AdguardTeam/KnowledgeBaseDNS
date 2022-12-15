@@ -17,6 +17,7 @@
   --ifm-code-font-size: 95%;
 
   --ifm-toc-border-color: #D8D8D8;
+  --img-border-color: #a4a4a4;
 }
 
 [data-theme="dark"]:root {
@@ -35,9 +36,34 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .container img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   display: block;
+}
+
+.container img + em {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.container img[alt$="*border"],
+.container img[alt$="*mobile_border"] {
+  border: 1px solid var(--img-border-color);
+}
+
+.container img[alt$="*mobile"],
+.container img[alt$="*mobile_border"] {
+  max-width: 360px;
+}
+
+.container em:lang(ja),
+.container em:lang(ko),
+.container em:lang(zh-CN),
+.container em:lang(zh-TW) {
+  font-style: normal;
+  font-weight: 700;
 }
 
 .navbar {
