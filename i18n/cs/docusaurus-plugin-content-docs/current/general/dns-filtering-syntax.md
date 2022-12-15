@@ -167,7 +167,7 @@ Syntaxe je:
 $denyallow=domain1|domain2|...
 ```
 
-Tento modifikátor umožňuje vyhnout se vytváření zbytečných pravidel výjimek, pokud naše blokovací pravidlo pokrývá příliš mnoho domén. You may want to block everything except for a couple of TLD domains. Můžete použít standardní přístup, tj. tato pravidla:
+Tento modifikátor umožňuje vyhnout se vytváření zbytečných pravidel výjimek, pokud naše blokovací pravidlo pokrývá příliš mnoho domén. Možná budete chtít zablokovat vše kromě několika domén TLD. Můžete použít standardní přístup, tj. tato pravidla:
 
 ```none
 ! Block everything.
@@ -186,9 +186,9 @@ Problém tohoto přístupu spočívá v tom, že tímto způsobem odblokujete ta
 
 **Příklady:**
 
-* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
+* `*$denyallow=com|net`: zablokovat vše kromě `*.com` a `*.net`.
 
-* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: odblokovat vše kromě `*.com` a `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. zablokuje `example.org` a `*.example.org`, ale nezablokuje `sub.example.org`.
 

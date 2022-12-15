@@ -5,11 +5,11 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html), reklam engelleme, gizlilik koruması ve ebeveyn denetimi için alternatif bir çözümdür. It provides the number of necessary protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
 #### Default
 
-These servers block ads, tracking, and phishing
+Bu sunucular reklamları, izlemeyi ve kimlik avını engeller
 
 | Protokol       | Adres                                                                          |                                                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ These servers provide a secure and reliable connection, but they don't filter an
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
+[Yandex.DNS](https://dns.yandex.com/), ücretsiz bir özyinelemeli DNS hizmetidir. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
@@ -87,7 +87,7 @@ In "Family" mode, protection from infected, fraudulent and adult sites is provid
 
 ### CleanBrowsing
 
-[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. This service offers a safe way to browse the web without inappropriate content.
+[CleanBrowsing](https://cleanbrowsing.org/), özelleştirilebilir filtreleme sağlayan bir DNS hizmetidir. This service offers a safe way to browse the web without inappropriate content.
 
 #### Family Filter
 
@@ -186,7 +186,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 ### Cisco OpenDNS
 
-[Cisco OpenDNS](https://www.opendns.com/) is a service which extends the DNS by incorporating features such as content filtering and phishing protection with a zero downtime.
+[Cisco OpenDNS](https://www.opendns.com/), içerik filtreleme ve kimlik avı koruması gibi özellikleri sıfır kesinti süresiyle birleştirerek DNS'i genişleten bir hizmettir.
 
 #### Standard
 
@@ -212,7 +212,7 @@ OpenDNS servers that provide adult content blocking
 
 ### Google DNS
 
-[Google DNS](https://developers.google.com/speed/public-dns/) is a free, global DNS resolution service that you can use as an alternative to your current DNS provider.
+[Google DNS](https://developers.google.com/speed/public-dns/), mevcut DNS sağlayıcınıza alternatif olarak kullanabileceğiniz ücretsiz, küresel bir DNS sağlayıcı hizmetidir.
 
 | Protokol       | Adres                                            |                                                                                                                  |
 | -------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
@@ -223,7 +223,7 @@ OpenDNS servers that provide adult content blocking
 
 ### Cloudflare DNS
 
-[Cloudflare DNS](https://1.1.1.1/) is a free and fast DNS service which functions as a recursive name server providing domain name resolution for any host on the Internet.
+[Cloudflare DNS](https://1.1.1.1/), internetteki herhangi bir ana makine için alan adı çözümlemesi sağlayan özyinelemeli bir ad sunucusu olarak işlev gören ücretsiz ve hızlı bir DNS hizmetidir.
 
 #### Standard
 
@@ -299,7 +299,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                         | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: it doesn't sell public DNS data to third parties and redirect users' queries to serve them any ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/), diğer alternatiflere kıyasla gelişmiş DNS kararlılığı ve güvenliği sunan ücretsiz bir DNS hizmetidir. Verisign respects users' privacy: it doesn't sell public DNS data to third parties and redirect users' queries to serve them any ads.
 
 | Protokol  | Adres                                    |                                                               |
 | --------- | ---------------------------------------- | ------------------------------------------------------------- |
@@ -318,7 +318,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/), Dyn tarafından sunulan ücretsiz bir alternatif DNS hizmetidir
 
 | Protokol  | Adres                              |                                                          |
 | --------- | ---------------------------------- | -------------------------------------------------------- |
@@ -326,7 +326,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### DNS.WATCH
 
-[DNS.WATCH](https://dns.watch/) is a fast and free server without logging with a privacy protection feature.
+[DNS.WATCH](https://dns.watch/), gizlilik koruma özelliği ile günlük kaydı tutmayan hızlı ve ücretsiz bir sunucudur.
 
 | Protokol  | Adres                                                        |                                                                              |
 | --------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
@@ -335,7 +335,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
+[FutureDNS](https://futuredns.me/), reklamları, izleyicileri, kötü amaçlı yazılımları engelleyen ve herhangi bir veriyi günlüğe kaydetmeyen OpenNIC desteğine sahip gizlilik dostu bir DNS hizmetidir.
 
 | Anycast Network | Adres                                |                                                                               |
 | --------------- | ------------------------------------ | ----------------------------------------------------------------------------- |
@@ -358,7 +358,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### SkyDNS RU
 
-[SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.
+[SkyDNS](https://www.skydns.ru/en/), içerik filtreleme ve internet güvenliği çözümleri sağlar.
 
 | Protokol  | Adres            |                                                           |
 | --------- | ---------------- | --------------------------------------------------------- |
@@ -366,7 +366,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### Comss.ru DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315), reklamlara, izlemeye ve kimlik avına karşı korumalı, hızlı ve güvenli bir DNS hizmetidir.
 
 #### West DNS Server (Main)
 
@@ -399,7 +399,7 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 ### CIRA Canadian Shield DNS
 
-[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
+[CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works), kişisel ve finansal verilerin çalınmasına karşı koruma sağlar. Keep viruses, ransomware, and other malware out of your home.
 
 #### Private
 
@@ -437,7 +437,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/), OpenNIC Project tarafından sunulan ücretsiz bir alternatif DNS hizmetidir
 
 | Protokol  | Adres                                     |                                                               |
 | --------- | ----------------------------------------- | ------------------------------------------------------------- |
@@ -486,7 +486,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
+[DNS for Family](https://dnsforfamily.com/), yetişkinlere yönelik siteleri engellemeyi amaçlar. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
 
 
 | Protokol       | Adres                                                       |                                                                                                                                          |
@@ -667,7 +667,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World
+[Freenom World](https://freenom.world/en/index.html), Freenom World tarafından sunulan ücretsiz bir anonim DNS çözümleyicisidir
 
 | Protokol  | Adres                          |                                                       |
 | --------- | ------------------------------ | ----------------------------------------------------- |
@@ -675,7 +675,7 @@ These servers block adult websites and inappropriate contents.
 
 ### OSZX DNS
 
-[OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
+[OSZX DNS](https://dns.oszx.co/), küçük bir Reklam Engelleme DNS hobi projesidir.
 
 #### OSZX server
 
@@ -744,7 +744,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala. Finland.
+[Lelux.fi](https://lelux.fi/resolver/), Elias Ojala tarafından yönetilmektedir. Finlandiya.
 
 | Protokol       | Adres                                    |                                                                                     |
 | -------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -753,7 +753,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running out of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running out of a Digital Ocean droplet in BLR1 region. Abhay Rana aka Nemo tarafından sürdürülmektedir.
 
 | Protokol       | Adres                                                             |                                                                                                                                                  |
 | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -860,16 +860,16 @@ Other DNS servers with 'no logging' policy
 | DNS-over-TLS       | Sağlayıcı: `UncensoredDNS` Ana makine adı: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` ve IPv6: `2a01:3a0:53:53::0` | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
 | DNS-over-TLS       | Sağlayıcı: `UncensoredDNS` Ana makine adı: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` ve IPv6: `2001:67c:28a4::` | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
 | DNS-over-TLS       | Sağlayıcı: `dkg` Ana makine adı: `tls://dns.cmrg.net` IP: `199.58.81.218` ve IPv6: `2001:470:1c:76d::53`                   | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                                   | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS, IPv4 | Ana makine adı: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                             | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
 | DNS-over-TLS       | Ana makine adı: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` ve IPv6: `2001:8b0:24:24::24`                         | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
 | DNS-over-TLS       | Ana makine adı: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` ve IPv6: `2a01:4f8:c0c:3c03::2`                             | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
 | DNS-over-TLS       | Ana makine adı: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` ve IPv6: `2a01:4f8:c0c:3bfc::2`                             | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
 | DNS-over-TLS, IPv4 | Ana makine adı: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                  | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
 | DNS-over-TLS       | Ana makine adı: `tls://dns.neutopia.org` IP: `89.234.186.112` ve IPv6: `2a00:5884:8209::2`                                 | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                        | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                             | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| DNS-over-TLS       | Sağlayıcı: `Go6Lab` Ana makine adı: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                 | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Ana makine adı: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
-DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
+Minimum günlük tutma/sınırlamaları olan DNS sunucuları. These servers use some logging, self-signed certs or no support for strict mode.
 
 | Protokol     | Adres                                                                                                                   |                                                                               |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -878,7 +878,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/), Fredrik Pettersson tarafından sağlanan sıfır günlük tutma ve reklam engelleme DNS hizmetidir.
 
 #### Blitz
 
@@ -964,7 +964,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) is a privacy focused DNS service provided by Sebastian Schmidt. No Logging, DNSSEC validation.
+[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük Tutmama, DNSSEC doğrulaması.
 
 #### DNS Server 1
 
@@ -987,11 +987,11 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 ### DNSlify DNS
 
-[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
+[DNSlify DNS](https://www.dnslify.com/services/), istekleri hızlandırmak, fazlalığı artırmak için genel DNS çözümleyicileri çalıştırır. The service is provided by [Peerix](https://www.peerix.net/)
 
 #### Default
 
-These servers provide DNS resolution without traffic filtering.
+Bu sunucular trafik filtrelemesi olmadan DNS çözümlemesi sağlar.
 
 | Protokol       | Adres                                  |                                                                              |
 | -------------- | -------------------------------------- | ---------------------------------------------------------------------------- |
@@ -1051,7 +1051,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
+[ControlD](https://controld.com/free-dns), reklamlar, kötü amaçlı yazılımlar ve sosyal medya engelleme sağlayan genel DNS hizmetidir.
 
 #### Block malware
 
@@ -1105,10 +1105,10 @@ In this section we list small, mostly personal DNS resolvers. They often have on
 
 Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
 
-| Protokol       | Adres                                                        |                                                                                                                                                         |
-| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [AdGuard'a ekle](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
-| DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [AdGuard'a ekle](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
+| Protokol       | Adres                                                              |                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNSCrypt, IPv4 | Ana makine: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [AdGuard'a ekle](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
+| DNS-over-HTTPS | Ana makine: `https://dns.arapurayil.com/dns-query`                 | [AdGuard'a ekle](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
 
 
 #### Dandelion Sprout's Official DNS Server

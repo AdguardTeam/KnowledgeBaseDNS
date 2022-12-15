@@ -9,7 +9,7 @@ Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores do sof
 
 * Módulo DNS por Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
 * Módulo GCache por Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Módulo Go-Cache por Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
 * Programa Gofumpt por Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
 * Módulo QUIC-Go por Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
 * Programa Staticcheck por Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)

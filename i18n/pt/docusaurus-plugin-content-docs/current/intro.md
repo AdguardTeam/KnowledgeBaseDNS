@@ -6,13 +6,13 @@ slug: /
 
 ## O que é DNS
 
-DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Cada vez que você acessa um site, seu navegador envia uma consulta DNS a um servidor DNS para descobrir o endereço IP do site. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
+DNS significa "Sistema de nomes de domínio" e seu objetivo é converter os nomes dos sites em endereços IP. Cada vez que você acessa um site, seu navegador envia uma consulta DNS a um servidor DNS para descobrir o endereço IP do site. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
 
 > O servidor DNS padrão geralmente é fornecido pelo seu ISP. Isso significa que seu ISP pode rastrear sua atividade online e vender logs para terceiros.
 
 ![Seu dispositivo sempre usa algum servidor DNS para obter endereços IP dos aplicativos de nome de domínio para os quais deseja navegar](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. Como eles funcionam? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+Existem também servidores DNS que podem bloquear determinados sites no nível DNS. Como eles funcionam? Quando seu dispositivo envia uma solicitação "ruim", seja um anúncio ou um rastreador, um servidor DNS impede a conexão respondendo com um endereço IP não roteável para um domínio bloqueado.
 
 ## Por que usar DNS para bloqueio de conteúdo
 
@@ -22,7 +22,7 @@ O uso de DNS para bloqueio de conteúdo tem algumas vantagens, além de falhas �
 
 ## O que é AdGuard DNS
 
-O AdGuard DNS é um dos serviços de DNS mais amigáveis à privacidade do mercado. Ele suporta protocolos de criptografia confiáveis como DNS-over-HTTPS, DNS-over-TLS e DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. O AdGuard tem sua própria base de nomes de domínio que veiculam anúncios, rastreadores e fraudes, e é atualizado regularmente.
+O AdGuard DNS é um dos serviços de DNS mais amigáveis à privacidade do mercado. Ele suporta protocolos de criptografia confiáveis como DNS-over-HTTPS, DNS-over-TLS e DNS-over-QUIC. Ele pode funcionar como um resolvedor de DNS regular no modo sem filtragem, mas também pode fornecer bloqueio de conteúdo no nível de DNS: identifique solicitações para domínios de anúncio, rastreamento e/ou adulto (opcionalmente) e responda com uma resposta vazia. O AdGuard tem sua própria base de nomes de domínio que veiculam anúncios, rastreadores e fraudes, e é atualizado regularmente.
 
 ![Um esquema aproximado de como funciona o AdGuard DNS](https://cdn.adguard.com/public/Adguard/Blog/scr2.png)
 

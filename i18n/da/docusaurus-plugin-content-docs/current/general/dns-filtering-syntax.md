@@ -167,7 +167,7 @@ Syntaksen er:
 $denyallow=domæne1|domæne2|...
 ```
 
-Denne modifikator muliggør at undgå at oprette unødvendige undtagelsesregler, når vores blokeringsregel dækker for mange domæner. You may want to block everything except for a couple of TLD domains. Man kan bruge standardmetoden, dvs. regler som denne:
+Denne modifikator muliggør at undgå at oprette unødvendige undtagelsesregler, når vores blokeringsregel dækker for mange domæner. Man ønsker måske at blokere alt undtagen nogle få TLD-domæner. Man kan bruge standardmetoden, dvs. regler som denne:
 
 ```none
 ! Blokér alt.
@@ -186,9 +186,9 @@ Problemet med denne tilgang er, at man på denne måde også afblokerer sporings
 
 **Eksempler:**
 
-* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
+* `*$denyallow=com|net`: Blokér alt, undtagen `*.com` og `*.net`.
 
-* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: Afblokér alt, undtagen `*.com` og `*.net`.
 
 * `||eksempel.org^$denyallow=under.eksempel.org`. blokér `eksempel.org` og `*.eksempel.org`, men blokér ikke `under.eksempel.org`.
 

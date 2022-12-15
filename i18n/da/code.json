@@ -36,7 +36,7 @@
     "description": "The label alongside a tag list"
   },
   "theme.blog.post.readMore": {
-    "message": "Læs mere",
+    "message": "Læs flere",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
@@ -223,7 +223,7 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Ordombrydning Til/Fra",
+    "message": "Ordombrydning til/fra",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {

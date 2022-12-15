@@ -12,7 +12,7 @@ DNS staat voor "Domain Name System", en heeft tot doel de namen van websites om 
 
 ![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adguard.com/content/blog/articles/dns-cbs/scr1.png)
 
-Er zijn ook DNS-servers die bepaalde websites op DNS-niveau kunnen blokkeren. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+Er zijn ook DNS-servers die bepaalde websites op DNS-niveau kunnen blokkeren. How do they work? Wanneer jouw apparaat een "slecht" verzoek verzendt, of het nu een advertentie of een tracker is, verhindert een DNS-server de verbinding door te reageren met een niet-routeerbaar IP-adres voor een geblokkeerd domein.
 
 ## Why use DNS for content blocking
 

@@ -46,7 +46,7 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
 
 * `! Here goes a comment` and `# Also a comment`: comments.
 
-* `/REGEX/`: block access to the domains matching the specified regular expression.
+* `/REGEX/`: belirtilen normal ifadeyle eşleşen alan adlarına erişimi engelleyin.
 
 ## Adblock-Style Syntax
 
@@ -67,7 +67,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * `*`: the wildcard character. It is used to represent any set of characters. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
 
-* `||`: matches the beginning of a hostname, including any subdomain. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
+* `||`: herhangi bir alt alan dahil olmak üzere bir ana makine adının başlangıcıyla eşleşir. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
 * `^`: the separator character. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
@@ -121,7 +121,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
 #### `i̇stemci`
 
-The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
+The `client` modifier allows specifying clients this rule is applied to. Bir istemciyi tanımlamanın iki ana yolu vardır:
 
 * By their IP address or CIDR prefix. This way works for all kinds of clients.
 
@@ -149,11 +149,11 @@ Client names usually contain spaces or other special characters, which is why yo
 
 * `@@||*^$client=127.0.0.1`: unblock everything for localhost.
 
-* `||example.org^$client='Frank\'s laptop'`: block `example.org` for the client named `Frank's laptop` only. Note that quote (`'`) in the name must be escaped.
+* `||example.org^$client='Frank\'s laptop'`: `example.org` alan adını yalnızca `Frank'in dizüstü bilgisayarı` adlı istemci için engelleyin. Note that quote (`'`) in the name must be escaped.
 
 * `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`. Note that comma (`,`) must be escaped as well.
 
-* `||example.org^$client=~Mom|~Dad|Kids`: block `example.org` for `Kids`, but not for `Mom` and `Dad`. This example demonstrates how to specify multiple clients in one rule.
+* `||example.org^$client=~Mom|~Dad|Kids`: block `example.org` for `Kids`, but not for `Mom` and `Dad`. Bu örnek, bir kuralda birden çok istemcinin nasıl belirtileceğini gösterir.
 
 * `||example.org^$client=192.168.0.0/24`: block `example.org` for all clients with IP addresses in the range from `192.168.0.0` to `192.168.0.255`.
 
@@ -186,9 +186,9 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 **Örnekler:**
 
-* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
+* `*$denyallow=com|net`: `*.com` ve `*.net` dışındaki her şeyi engelleyin.
 
-* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: `*.com` ve `*.net` dışındaki her şeyin engelini kaldırın.
 
 * `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 
