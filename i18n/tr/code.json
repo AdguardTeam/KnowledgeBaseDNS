@@ -112,11 +112,11 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "Bu, {siteTitle} {versionLabel} sürümü için yayınlanmamış dokümanlardır.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "Bu, artık aktif olarak sürdürülmeyen {siteTitle} {versionLabel} için dokümanlardır.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
@@ -136,11 +136,11 @@
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " {date} tarihinde",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " {user} tarafından",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
@@ -269,7 +269,7 @@
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
+    "message": "Dokümanları arayın",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.documentsFound.plurals": {
@@ -281,7 +281,7 @@
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
+    "message": "Aramanızı buraya yazın",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {

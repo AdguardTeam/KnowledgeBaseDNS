@@ -104,6 +104,6 @@ There are different ways to clear the DNS cache on your iPad or iPhone.
 
 The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+Another option is to reset the network settings of your device in the Settings app. Open *Algemeen*, scrol omlaag, zoek *Herstellen* en tik op *Netwerkinstellingen herstellen*.
 
 > Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.

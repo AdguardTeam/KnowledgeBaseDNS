@@ -17,8 +17,8 @@ Make a POST request for the following URL with the given params to generate the 
 
 | Parametre         | Açıklama                                                         |
 |:----------------- |:---------------------------------------------------------------- |
-| **kullanıcı adı** | Account email                                                    |
-| **parola**        | Account password                                                 |
+| **kullanıcı adı** | Hesap e-postası                                                  |
+| **parola**        | Hesap parolası                                                   |
 | mfa_token         | Two-Factor authentication token (if enabled in account settings) |
 
 In the response, you will get both `access_token` and `refresh_token`.

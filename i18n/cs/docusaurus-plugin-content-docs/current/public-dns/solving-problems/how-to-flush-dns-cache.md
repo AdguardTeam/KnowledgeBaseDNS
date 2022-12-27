@@ -104,6 +104,6 @@ Vyprázdnění mezipaměti DNS v iPadu nebo iPhonu lze provést různými způso
 
 Nejjednodušší je aktivovat režim Letadlo (například v Ovládacím centru nebo v aplikaci Nastavení) a opět jej deaktivovat. Mezipaměť DNS bude vyprázdněna.
 
-Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Obecné*, sjeďte dolů, vyhledejte *Resetovat* a klepněte na *Resetovat nastavení sítě*.
 
 > Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
