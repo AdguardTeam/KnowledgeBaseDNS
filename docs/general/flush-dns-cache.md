@@ -13,25 +13,25 @@ To avoid the above problems, you need to clear the DNS cache: to delete all save
 
 To flush the DNS cache on your Mac, run the **terminal.app** and enter a specific command depending on the macOS version installed on your device: 
 
-* **sudo killall -HUP mDNSResponder** on macOS v10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra), 10.08 (Mountain Lion), 10.07 (Lion)
+* `sudo killall -HUP mDNSResponder` on macOS v10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra), 10.08 (Mountain Lion), 10.07 (Lion)
 
-* **sudo dscacheutil -flushcache   sudo killall -HUP mDNSResponder** on macOS v10.11 (El Capitan), 10.9 (Mavericks)
+* `sudo dscacheutil -flushcache` and `sudo killall -HUP mDNSResponder` on macOS v10.11 (El Capitan), 10.9 (Mavericks)
 
-* **sudo discoveryutil mdnsflushcache   sudo discoveryutil udnsflushcaches** on macOS v10.10
+* `sudo discoveryutil mdnsflushcache` and `sudo discoveryutil udnsflushcaches` on macOS v10.10
 
-* **sudo dscacheutil -flushcache** on macOS v10.6 (Snow Leopard), 10.5 (Leopard)
+* `sudo dscacheutil -flushcache` on macOS v10.6 (Snow Leopard), 10.5 (Leopard)
 
-* **lookupd -flushcache** on macOS v10.4 (Tiger)
+* `lookupd -flushcache` on macOS v10.4 (Tiger)
 
 Then hit *Return* on your keyboard, enter the administrator password for the account and press Return. There is no notification once the process is finished. However, you can add another command, for example, to hear an audible notification when the DNS cache flush is complete:
 
-```sudo killall -HUP mDNSResponder; say dns cleared successfully```
+`sudo killall -HUP mDNSResponder; say dns cleared successfully`
 
 ## How to flush DNS cache on Windows
 
 Clearing the DNS cache on Windows is a simple thing to do. The procedure is the same for almost all Windows versions. 
 
-Load the Command Prompt as an administrator. Then, enter the following command: ```ipconfig /flushdns```. If the command succeeds, you'll receive the message "Successfully flushed the DNS Resolver Cache".
+Load the Command Prompt as an administrator. Then, enter the following command: `ipconfig /flushdns`. If the command succeeds, you'll receive the message *Successfully flushed the DNS Resolver Cache*.
 
 ## How to flush DNS cache on Linux
 
@@ -43,7 +43,7 @@ Before you flush the DNS cache, find out which service your distribution has and
 
 Use this command on your Linux machine:
 
-```sudo /etc/init.d/nscd restart```
+`sudo /etc/init.d/nscd restart`
 
 Enter your password if required. 
 
@@ -51,7 +51,7 @@ Enter your password if required.
 
 Use this command on your Linux machine:
 
-```sudo /etc/init.d/dnsmasq restart```
+`sudo /etc/init.d/dnsmasq restart`
 
 Then enter your password if necessary. You will see the response when the service stops and starts again.
 
@@ -59,11 +59,11 @@ Then enter your password if necessary. You will see the response when the servic
 
 If you use BIND for the DNS service, there are several commands you can run to clear the DNS cache. You may need to enter a password to complete the process.
 
-```sudo /etc/init.d/named restart```
+`sudo /etc/init.d/named restart`
 
-```sudo rndc restart```
+`sudo rndc restart`
 
-```sudo rndc exec```
+`sudo rndc exec`
 
 ## How to flush DNS cache Chrome browsers
 
