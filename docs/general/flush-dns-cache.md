@@ -3,7 +3,7 @@ title: How to flush DNS cache
 sidebar_position: 4
 ---
 
-Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system answers queries from the cache. 
+Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system fetches responses to queries from the cache. 
 
 However, outdated DNS cache data stored on your computer or browser can cause problems displaying or loading websites. Even worse, the DNS cache may be corrupted by network attacks or viruses. In this case, unauthorized domain names or IP addresses will be inserted into it. And, for example, instead of going to google.com, your browser may redirect you to a malicious IP address or ad page. 
 
@@ -11,7 +11,9 @@ To avoid the above problems, you need to clear the DNS cache: to delete all save
 
 ## How to flush DNS cache on Mac
 
-To flush the DNS cache on your Mac, run the **terminal.app** and enter a specific command depending on the macOS version installed on your device: 
+To flush the DNS cache on your Mac, run the **Terminal** app and enter a specific command depending on the macOS version installed on your device: 
+
+* `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` on macOS v13 (Ventura), 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)  
 
 * `sudo killall -HUP mDNSResponder` on macOS v10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra), 10.08 (Mountain Lion), 10.07 (Lion)
 
@@ -23,7 +25,7 @@ To flush the DNS cache on your Mac, run the **terminal.app** and enter a specifi
 
 * `lookupd -flushcache` on macOS v10.4 (Tiger)
 
-Then hit *Return* on your keyboard, enter the administrator password for the account and press Return. There is no notification once the process is finished. However, you can add another command, for example, to hear an audible notification when the DNS cache flush is complete:
+Then hit *Return* on your keyboard, enter the administrator password for the account and press *Return*. There is no notification once the process is finished. However, you can add another command, for example, to hear a notification when the DNS cache flush is complete:
 
 `sudo killall -HUP mDNSResponder; say dns cleared successfully`
 
@@ -37,7 +39,7 @@ Load the Command Prompt as an administrator. Then, enter the following command: 
 
 Different Linux distributions may use their own DNS service. Some distributions, such as Ubuntu, have no DNS service by default at all.
 
-Before you flush the DNS cache, find out which service your distribution has and if it is enabled by default. Some of them are **NCSD** (Name Service Caching Daemon), **dnsmasq** and **BIND** (Berkely Internet Name Domain).
+Before you flush the DNS cache, find out which service your distribution has and if it is enabled by default. Some of them are **NCSD** (Name Service Caching Daemon), **dnsmasq** and **BIND** (Berkeley Internet Name Domain).
 
 ### How to flush local NCSD DNS cache
 
@@ -65,6 +67,6 @@ If you use BIND for the DNS service, there are several commands you can run to c
 
 `sudo rndc exec`
 
-## How to flush DNS cache Chrome browsers
+## How to flush DNS cache in Chrome-based browsers
 
 In the browser address bar, enter the link **chrome://net-internals/#dns** and click the *Clear Host Cache* button. 
