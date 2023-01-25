@@ -33,7 +33,7 @@ Then hit *Return* on your keyboard, enter the administrator password for the acc
 
 Clearing the DNS cache on Windows is a simple thing to do. The procedure is the same for almost all Windows versions. 
 
-Load the Command Prompt as an administrator. Then, enter the following command: `ipconfig /flushdns`. If the command succeeds, you'll receive the message *Successfully flushed the DNS Resolver Cache*.
+Open the Command Prompt as an administrator and enter the following command: `ipconfig /flushdns`. If the command succeeds, you'll receive the message *Successfully flushed the DNS Resolver Cache*.
 
 ## How to flush DNS cache on Linux
 
@@ -69,4 +69,4 @@ If you use BIND for the DNS service, there are several commands you can run to c
 
 ## How to flush DNS cache in Chrome-based browsers
 
-In the browser address bar, enter the link **chrome://net-internals/#dns** and click the *Clear Host Cache* button. 
+In the browser address bar, enter the link **chrome://net-internals/#dns** and click the *Clear host cache* button. 

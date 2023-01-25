@@ -7,11 +7,11 @@ sidebar_position: 1
 
 ![Private AdGuard DNS dashboard main](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## What is Private AdGuard DNS
+## What is Private AdGuard DNS?
 
 Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
 
-## Why Private AdGuard DNS is needed
+## Why is Private AdGuard DNS needed?
 
 Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
@@ -43,7 +43,6 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 >- Linux
 >- Routers
 >- Gaming consoles
-
 
 ## Private AdGuard DNS features
 
@@ -89,4 +88,4 @@ To protect your child from online content you deem inappropriate, set up and act
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adguard.com/public/Adguard/Blog/private_adguard_dns/parental_control.png)
         
->In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+> In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
