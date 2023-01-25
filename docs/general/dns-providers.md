@@ -146,7 +146,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 #### Reliability & Performance 2*
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (Non-existing Domain) responses to landing pages.
+These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

@@ -24,7 +24,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax](#
 
 * **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-If you're maintaining either a `/etc/hosts`-style block list, or multiple filtering lists (regardless of type), we provide a tool for block list compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
