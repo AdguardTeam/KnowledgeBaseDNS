@@ -1041,6 +1041,15 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 [ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
 
+#### Non-filtering
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `76.76.2.0` and `76.76.10.0`            | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ) |
+| IPv6      | `2606:1a40::` and `2606:1a40:1::`            | [Add to AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ) |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0`          | [Add to AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS-over-TLS   | `p0.freedns.controld.com`           | [Add to AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA) |
+
 #### Block malware
 
 | Protocol       | Address                                            |                |
