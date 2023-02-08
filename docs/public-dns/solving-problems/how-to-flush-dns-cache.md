@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # How to flush DNS cache
 
-## What is DNS cache
+## What is DNS cache?
 
 DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 

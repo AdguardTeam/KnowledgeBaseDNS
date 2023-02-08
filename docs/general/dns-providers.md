@@ -482,7 +482,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps kids and adults surf the internet safely without worrying about being followed by harmful websites.
+[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps kids and adults surf the internet safely without worrying about being tracked by harmful websites.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -651,7 +651,7 @@ These servers block adult websites and inappropriate contents.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) is an open, free and public DNS service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
+[FreeDNS](https://freedns.zone/) is an open, free and public DNS service. No DNS redirects, no logging.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
