@@ -22,7 +22,7 @@ You can deploy this Knowledge Base locally to your computer to preview the chang
 
 Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) of the AdGuard Ad Blocker Knowledge Base.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
+When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
 
 ## Working on open issues
 
