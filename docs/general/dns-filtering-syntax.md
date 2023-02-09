@@ -443,7 +443,7 @@ The list of allowed tags:
   * `user_regular`: regular users.
   * `user_child`: children.
 
-[adb]:     https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]:     https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 
@@ -469,7 +469,7 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # this is also a comment
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked. 
+In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
 
 
 ## Domains-Only Syntax
