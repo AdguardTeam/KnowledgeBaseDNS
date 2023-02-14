@@ -41,7 +41,7 @@ You can add as many custom blocklists as you wish. For instance, you can use [Ad
 
 >There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
-## Comparing DNS filtering to network filtering
+## DNS filtering vs. network filtering
 
 Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 

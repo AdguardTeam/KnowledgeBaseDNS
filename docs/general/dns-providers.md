@@ -21,7 +21,7 @@ These servers block ads, tracking, and phishing.
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-#### Family Protection 
+#### Family Protection
 
 These servers provide the Default features + Blocking adult websites + Safe search.
 
@@ -29,7 +29,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `94.140.14.15` and `94.140.15.16`            | [Add to AdGuard](sdns://AAcAAAAAAAAADDk0LjE0MC4xNC4xNQ) |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`              | [Add to AdGuard](sdns://AAcAAAAAAAAAFFsyYTEwOjUwYzA6OmJhZDE6ZmZd) |
-| DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZmFtaWx5LmFkZ3VhcmQtZG5zLmNvbQovZG5zLXF1ZXJ5) 
+| DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query` | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAWZmFtaWx5LmFkZ3VhcmQtZG5zLmNvbQovZG5zLXF1ZXJ5)
 | DNS-over-TLS | `tls://family.adguard-dns.com` | [Add to AdGuard](sdns://AwMAAAAAAAAAAAAWZmFtaWx5LmFkZ3VhcmQtZG5zLmNvbQ) |
 | DNS-over-QUIC | `quic://family.adguard-dns.com` | [Add to AdGuard](sdns://BAMAAAAAAAAAAAAWZmFtaWx5LmFkZ3VhcmQtZG5zLmNvbQ) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt.family.ns1.adguard.com` IP: `94.140.14.15:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNTo1NDQzILgxXdexS27jIKRw3C7Wsao5jMnlhvhdRUXWuMm1AFq6ITIuZG5zY3J5cHQuZmFtaWx5Lm5zMS5hZGd1YXJkLmNvbQ) |
@@ -482,7 +482,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps kids and adults surf the internet safely without worrying about being tracked by harmful websites.
+[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It enables children and adults to surf the Internet safely without worrying about being tracked by malicious websites.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -556,7 +556,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service. 
+[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -628,7 +628,7 @@ These servers block adult websites and inappropriate contents.
 
 | Protocol       | Address                             | Location      |
 |----------------|-------------------------------------|---------------|
-| DNS, IPv4      | `174.138.21.128` | [Add to AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4) |       
+| DNS, IPv4      | `174.138.21.128` | [Add to AdGuard](sdns://AAAAAAAAAAAADjE3NC4xMzguMjEuMTI4) |
 | DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`   | [Add to AdGuard](sdns://AAAAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXQ) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`| [Add to AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]`| [Add to AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw) |
@@ -641,7 +641,7 @@ These servers block adult websites and inappropriate contents.
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4      | `172.104.93.80` | [Add to AdGuard](sdns://AAAAAAAAAAAADTE3Mi4xMDQuOTMuODA) |       
+| DNS, IPv4      | `172.104.93.80` | [Add to AdGuard](sdns://AAAAAAAAAAAADTE3Mi4xMDQuOTMuODA) |
 | DNS, IPv6      | `2400:8902::f03c:91ff:feda:c514`   | [Add to AdGuard](sdns://AAAAAAAAAAAAIFsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRd) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.jp.tiar.app` IP: `172.104.93.80`| [Add to AdGuard](sdns://AQcAAAAAAAAAEjE3Mi4xMDQuOTMuODA6MTQ0MyAyuHY-8b9lNqHeahPAzW9IoXnjiLaZpTeNbVs8TN9UUxsyLmRuc2NyeXB0LWNlcnQuanAudGlhci5hcHA) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.jp.tiar.app` IP: `[2400:8902::f03c:91ff:feda:c514]`| [Add to AdGuard](sdns://AQcAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTFmZjpmZWRhOmM1MTRdOjE0NDMgMrh2PvG_ZTah3moTwM1vSKF544i2maU3jW1bPEzfVFMbMi5kbnNjcnlwdC1jZXJ0LmpwLnRpYXIuYXBw) |
@@ -745,7 +745,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo. 
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -1096,13 +1096,13 @@ Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Add to AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
-| DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Add to AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)  |   
+| DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Add to AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)  |
 
 #### Dandelion Sprout's Official DNS Server
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates. 
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
