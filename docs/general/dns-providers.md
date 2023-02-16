@@ -377,6 +377,8 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS | `tls://dns.east.comss.one` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l) |
+| DNS-over-QUIC | `quic://dns.east.comss.one` | [Add to AdGuard](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA) |
 
 ### Safe DNS
 
