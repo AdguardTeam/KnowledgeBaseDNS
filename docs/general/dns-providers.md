@@ -360,29 +360,25 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `193.58.251.251`                  | [Add to AdGuard](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
 
 #### West DNS Server (Main)
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4 | `92.38.152.163` and `93.115.24.204` | [Add to AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM) |
-| DNS, IPv6 | `2a03:90c0:56::1a5` and `2a02:7b40:5eb0:e95d::1` | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`  | [Add to AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l) |
-| DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Add to AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
 | DNS-over-TLS | `tls://dns.comss.one` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ) |
+| DNS-over-QUIC | `quic://dns.comss.one:784` | [Add to AdGuard](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ) |
 
 #### East DNS Server (Siberia and Far East)
 
 | Protocol       | Address                             |                |
 |----------------|-------------------------------------|----------------|
-| DNS, IPv4 | `92.223.109.31` and `91.230.211.67` | [Add to AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE) |
-| DNS, IPv6 | `2a03:90c0:b5::1a` and `2a04:2fc0:39::47` | [Add to AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ) |
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
 | DNS-over-TLS | `tls://dns.east.comss.one` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l) |
+| DNS-over-QUIC | `quic://dns.east.comss.one` | [Add to AdGuard](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA) |
 
 ### Safe DNS
 
