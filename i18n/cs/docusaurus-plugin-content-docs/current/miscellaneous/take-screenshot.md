@@ -15,18 +15,18 @@ Zde najdete všechny potřebné klávesové zkratky, které byste měli znát, a
 
 Pořízení snímku obrazovky na zařízení se systémem Android lze provést různými způsoby — v závislosti na modelu zařízení a jeho výrobci.
 
-Obecně byste pro systém Android měli používat následující kombinaci tlačítek:
+Obecně lze pro Android použít následující kombinaci tlačítek:
 
-+ **Podržte současně tlačítka *Hlasitost dolů* a *Napájení* po dobu 1–2 sekund**
++ **Stiskněte a podržte tlačítka *Hlasitost dolů* a *Napájení* současně po dobu 1–2 sekund**
 
 Zařízení se systémem Android zachytí celou obrazovku a uloží ji jako fotografii. Snímek obrazovky tak najdete ve složce Snímky obrazovky v Galerii.
 
-Ale jak již bylo řečeno, mohou existovat rozdíly v závislosti na konkrétním zařízení. Podívejme se na další možné kombinace:
+Jak již bylo uvedeno, postup se může lišit v závislosti na konkrétním zařízení. Podívejme se na další možné kombinace:
 
-+ **Podržte současně tlačítka *Domů* a *Napájení* po dobu 1–2 sekund**
-+ **Podržte současně tlačítka *Zpět* a *Domů***
++ **Stiskněte a podržte tlačítka *Domů* a *Napájení* současně po dobu 1–2 sekund;**
++ **Stiskněte a podržte tlačítka *Zpět* a *Domů* současně**
 
-V systému Android 8 a novějších verzích je také možné pořídit snímek obrazovky tak, že položíte ruku svisle podél levého nebo pravého okraje telefonu a přejedete od tohoto okraje dovnitř rukou, která se dotýká obrazovky.
+V systému Android 8 a novějším lze snímek obrazovky pořídit také tak, že položíte okraj otevřené ruky svisle podél levého/pravého okraje obrazovky a přejedete rukou k druhému okraji obrazovky, přičemž se dotknete obrazovky okrajem ruky.
 
 Pokud tato metoda nefunguje, zkontrolujte *Nastavení* > *Pokročilé funkce* a povolte *Přejetí dlaní k zachycení snímku obrazovky*.
 

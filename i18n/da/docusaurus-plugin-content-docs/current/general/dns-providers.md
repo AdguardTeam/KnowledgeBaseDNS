@@ -5,11 +5,11 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) er en alternativ løsning til adblocking, fortrolighedsbeskyttelse og forældrekontrol. Den tilbyder det nødvendige antal beskyttelsesfunktioner mod onlineannoncer, trackere og phishing, uanset hvilken platform og enhed, der bruges.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) er en alternativ løsning til adblocking, fortrolighedsbeskyttelse og forældrekontrol. Den tilbyder det nødvendige antal beskyttelsesfunktioner mod onlinereklamer, trackere og phishing, uanset hvilken platform og enhed, der benyttes.
 
 #### Standard
 
-Disse servere blokerer annoncer, sporing og phishing
+Disse servere blokerer reklamer, sporing og phishing.
 
 | Protokol       | Adresse                                                                      |                                                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -21,10 +21,9 @@ Disse servere blokerer annoncer, sporing og phishing
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`        | [Føj til AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
 | DNSCrypt, IPv6 | Udbyder: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443` | [Føj til AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-
 #### Familiebeskyttelse
 
-Disse servere leverer Standardfunktionerne + Blokering af voksne websteder + Sikker søgning
+Disse servere leverer Standardfunktionerne + Blokering af voksne websteder + Sikker søgning.
 
 | Protokol       | Adresse                                                                      |                                                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -38,7 +37,7 @@ Disse servere leverer Standardfunktionerne + Blokering af voksne websteder + Sik
 
 #### Ikke-filtrerende
 
-Disse servere leverer en sikker og pålidelig forbindelse, men de filtrerer, i modsætning til serverne "Standard" og "Familiebeskyttelse", intet.
+Hver af disse servere leverer en sikker og pålidelig forbindelse, men i modsætning til "Standard"- og "Familiebeskyttelse"-serverne filtrerer de intet.
 
 | Protokol       | Adresse                                                                       |                                                                                                                                                                      |
 | -------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,14 +49,13 @@ Disse servere leverer en sikker og pålidelig forbindelse, men de filtrerer, i m
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [Føj til AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 | Udbyder: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [Føj til AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
-
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) er en gratis rekursiv DNS-tjeneste. Yandex.DNS-servere er placeret i Rusland, SNG-lande og Vesteuropa. Brugerforespørgsler behandles af det nærmeste datacenter, hvilket giver høje forbindelseshastigheder.
 
 #### Basis
 
-I tilstanden "Basis" er der ingen trafikfiltrering
+I tilstanden "Basis" sker ingen trafikfiltrering.
 
 | Protokol       | Adresse                                                              |                                                                                                                                                          |
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,20 +63,18 @@ I tilstanden "Basis" er der ingen trafikfiltrering
 | DNS, IPv6      | `2a02:6b8::feed:0ff` og `2a02:6b8:0:1::feed:0ff`                     | [Føj til AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [Føj til AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
-
 #### Sikker
 
-I tilstanden "Sikker" ydes beskyttelse mod inficerede og svigagtige websteder
+I tilstanden "Sikker" ydes beskyttelse mod inficerede og svigagtige websteder.
 
 | Protokol  | Adresse                                          |                                                                    |
 | --------- | ------------------------------------------------ | ------------------------------------------------------------------ |
 | DNS, IPv4 | `77.88.8.88` og `77.88.8.2`                      | [Føj til AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` og `2a02:6b8:0:1::feed:bad` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
-
 #### Familie
 
-I tilstanden "Familie" ydes beskyttelse mod inficerede, svigagtige og voksenwebsteder
+I tilstanden "Familie" ydes beskyttelse mod inficerede, svigagtige og voksenwebsteder.
 
 | Protokol  | Adresse                                          |                                                                    |
 | --------- | ------------------------------------------------ | ------------------------------------------------------------------ |
@@ -87,11 +83,11 @@ I tilstanden "Familie" ydes beskyttelse mod inficerede, svigagtige og voksenwebs
 
 ### CleanBrowsing
 
-[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Tjenesten tilbyder en sikker måde at surfe på nettet uden upassende indhold.
+[CleanBrowsing](https://cleanbrowsing.org/) er en DNS-tjeneste, der leverer tilpasset filtrering. Tjenesten tilbyder en sikker måde at surfe på nettet uden upassende indhold.
 
 #### Familiefilter
 
-Blokerer adgang til alle voksne- og pornowebsteder med eksplicit indhold, inkl. proxy og VPN-domæner samt websteder med blandet indhold
+Blokerer adgang til alle eksplicitte voksne- og pornowebsteder, inkl. proxy og VPN-domæner samt websteder med blandet indhold.
 
 | Protokol       | Adresse                                                 |                                                                                                                                        |
 | -------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +100,7 @@ Blokerer adgang til alle voksne- og pornowebsteder med eksplicit indhold, inkl. 
 
 #### Voksenfilter
 
-Mindre restriktivt end Familiefilter og blokerer kun adgang til voksenindhold samt phishing- og ondsindede domæner
+Mindre restriktivt end Familiefilter og blokerer kun adgang til voksenindhold samt phishing- og ondsindede domæner.
 
 | Protokol       | Adresse                                                  |                                                                                                                                          |
 | -------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,10 +111,9 @@ Mindre restriktivt end Familiefilter og blokerer kun adgang til voksenindhold sa
 | DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`        | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
 | DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`               | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
-
 #### Sikkerhedsfilter
 
-Blokerer phishing, spam og ondsindede domæner
+Blokerer phishing, spam og ondsindede domæner.
 
 | Protokol       | Adresse                                              |                                                                                                      |
 | -------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -135,13 +130,14 @@ Blokerer phishing, spam og ondsindede domæner
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` og `8.20.247.20`                                        | [Føj til AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Føj til AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+
 ### Neustar Recursive DNS
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) er en gratis cloud-baseret rekursiv DNS-tjeneste, der giver hurtig og pålidelig adgang til websteder og online-applikationer med indbygget sikkerhed og trusselsintelligens.
 
 #### Pålidelighed og Ydeevne 1
 
-Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier
+Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier.
 
 | Protokol  | Adresse                                |                                                                |
 | --------- | -------------------------------------- | -------------------------------------------------------------- |
@@ -150,7 +146,7 @@ Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen sp
 
 #### Pålidelighed og Ydeevne 2*
 
-Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier og forhindrer også omdirigering af NXDomain-svar (ikke-eksisterende domæne) til en landingsside
+Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen specifikke kategorier og forhindrer også omdirigering af NXDomain-svar (ikke-eksisterende domæne) til en landingssider.
 
 | Protokol  | Adresse                                |                                                                |
 | --------- | -------------------------------------- | -------------------------------------------------------------- |
@@ -159,7 +155,7 @@ Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere nogen sp
 
 #### Trusselsbeskyttelse
 
-Disse servere yder beskyttelse mod ondsindede domæner og inkluderer også "Pålidelighed og Ydelse" funktioner
+Disse servere yder beskyttelse mod ondsindede domæner samt inkluderer funktionerne "Pålidelighed og Ydelse".
 
 | Protokol  | Adresse                                |                                                                |
 | --------- | -------------------------------------- | -------------------------------------------------------------- |
@@ -168,7 +164,7 @@ Disse servere yder beskyttelse mod ondsindede domæner og inkluderer også "Pål
 
 #### Familiesikker
 
-Disse servere leverer adgangsblokering af voksenindhold og inkluderer også funktionerne "Plidelighed og Ydeevne" + "Trusselsbeskyttelse"
+Disse servere leverer adgangsblokering af voksenindhold samt inkluderer funktionerne "Plidelighed og Ydeevne" + "Trusselsbeskyttelse".
 
 | Protokol  | Adresse                                |                                                                |
 | --------- | -------------------------------------- | -------------------------------------------------------------- |
@@ -177,7 +173,7 @@ Disse servere leverer adgangsblokering af voksenindhold og inkluderer også funk
 
 #### Forretningssikker
 
-Disse servere tilbyder blokering af uønsket og irrelevant indhold og inkluderer også funktionerne "Plidelighed og Ydeevne" + "Trusselsbeskyttelse" + "Familiesikker"
+Disse servere leverer blokering af uønsket og irrelevant indhold samt inkluderer funktionerne "Pålidelighed og Ydeevne" + "Trusselsbeskyttelse" + "Familiesikker".
 
 | Protokol  | Adresse                                |                                                                |
 | --------- | -------------------------------------- | -------------------------------------------------------------- |
@@ -190,7 +186,7 @@ Disse servere tilbyder blokering af uønsket og irrelevant indhold og inkluderer
 
 #### Standard
 
-DNS-servere med tilpasset filtrering, der beskytter enheden mod malware
+DNS-servere med tilpasset filtrering, der beskytter enheden mod malware.
 
 | Protokol       | Adresse                                                      |                                                                                                                                               |
 | -------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -202,7 +198,7 @@ DNS-servere med tilpasset filtrering, der beskytter enheden mod malware
 
 #### FamilyShield
 
-OpenDNS-server med blokering af voksenindhold
+OpenDNS-servere med blokering af voksenindhold.
 
 | Protokol       | Adresse                                                     |                                                                                                                                              |
 | -------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -244,8 +240,7 @@ OpenDNS-server med blokering af voksenindhold
 | DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`  | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://security.cloudflare-dns.com`              | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
-
-#### Malware and adult content blocking
+#### Blokering af malware og voksenindhold
 
 | Protokol             | Adresse                                          |                                                                                            |
 | -------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
@@ -253,7 +248,6 @@ OpenDNS-server med blokering af voksenindhold
 | DNS, IPv6            | `2606:4700:4700::1113` og `2606:4700:4700::1003` | [Føj til AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`    | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
 | DNS-over-TLS         | `tls://family.cloudflare-dns.com`                | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
-
 
 ### Quad9 DNS
 
@@ -274,7 +268,7 @@ Almindelige DNS-servere med beskyttelse mod phishing og spyware. De omfatter blo
 
 #### Ikke-sikret
 
-Ikke-sikrede DNS-servere har ingen sikkerhedsblokeringsliste, ingen DNSSEC, ingen EDNS-klientundernet
+Ikke-sikrede DNS-servere har ingen sikkerhedsblokeringsliste, DNSSEC eller EDNS Client Subnet.
 
 | Protokol       | Adresse                                                          |                                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -287,7 +281,7 @@ Ikke-sikrede DNS-servere har ingen sikkerhedsblokeringsliste, ingen DNSSEC, inge
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-adressedata i forespørgsler sendt til autoritative DNS-servere. Den har sikkerhedsblokeringsliste, DNSSEC, EDNS Client-Subnet.
+EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-adressedata i forespørgsler sendt til autoritative DNS-servere. Den har sikkerhedsblokeringsliste, DNSSEC og EDNS Client-Subnet.
 
 | Protokol       | Adresse                                                       |                                                                                                                                                |
 | -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -297,17 +291,19 @@ EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 | DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                           | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+
 ### Verisign offentlig DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) er en gratis DNS-tjeneste med forbedret DNS-stabilitet og sikkerhed ift. andre alternativer. Verisign respekterer brugernes fortrolighed: De sælger ikke offentlige DNS-data til tredjeparter eller omdirigerer brugernes forespørgsler for at vise dem annoncer.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) er en gratis DNS-tjeneste med forbedret DNS-stabilitet og sikkerhed ift. andre alternativer. Verisign respekterer brugernes fortrolighed: De sælger ikke offentlige DNS-data til tredjeparter eller omdirigerer brugernes forespørgsler mhp. reklamevisning.
 
 | Protokol  | Adresse                                   |                                                                |
 | --------- | ----------------------------------------- | -------------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` eller `64.6.65.6`             | [Føj til AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` eller `2620:74:1c::2:2` | [Føj til AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) er en schweizisk offentlig DNS-tjeneste leveret af [switch.ch](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) er en schweizisk offentlig DNS-tjeneste leveret af [switch.ch](https://www.switch.ch/).
 
 | Protokol       | Adresse                                                                          |                                                                            |
 | -------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -318,7 +314,7 @@ EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) er en gratis alternativ DNS-tjeneste fra Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) er en gratis, alternativ DNS-tjeneste fra Dyn.
 
 | Protokol  | Adresse                            |                                                           |
 | --------- | ---------------------------------- | --------------------------------------------------------- |
@@ -364,29 +360,25 @@ EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 | --------- | ---------------- | ---------------------------------------------------------- |
 | DNS, IPv4 | `193.58.251.251` | [Føj til AdGuard](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) er en hurtig og sikker DNS-tjeneste med beskyttelse imod annoncer, sporing og phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) er en hurtig og sikker DNS-tjeneste med annonce-, sporings- og phishing-beskyttelse.
 
 #### West DNS Server (primær)
 
-| Protokol       | Adresse                                                                     |                                                                                                                                                                   |
-| -------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.38.152.163` og `93.115.24.204`                                          | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6      | `2a03:90c0:56::1a5` og `2a02:7b40:5eb0:e95d::1`                             | [Føj til AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [Føj til AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                           | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS-over-TLS   | `tls://dns.comss.one`                                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| Protokol       | Adresse                           |                                                                            |
+| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dns.comss.one`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)               |
+| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [Føj til AdGuard](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ)          |
 
 #### East DNS Server (Sibirien og Fjernøsten)
 
-| Protokol       | Adresse                                  |                                                                                   |
-| -------------- | ---------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.223.109.31` og `91.230.211.67`       | [Føj til AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6      | `2a03:90c0:b5::1a` og `2a04:2fc0:39::47` | [Føj til AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`   | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`               | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| Protokol       | Adresse                                |                                                                                   |
+| -------------- | -------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Føj til AdGuard](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA)          |
 
 ### Safe DNS
 
@@ -403,7 +395,7 @@ EDNS Client-Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 
 #### Privat
 
-I tilstanden "Privat" leveres kun DNS-opløsning
+I tilstanden "Privat", kun DNS-opløsning.
 
 | Protokol               | Adresse                                                                                             |                                                                                                   |
 | ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -414,7 +406,7 @@ I tilstanden "Privat" leveres kun DNS-opløsning
 
 #### Beskyttet
 
-I tilstanden "Beskyttet" beskyttes imod malware og phishing
+I tilstanden "Beskyttet", beskyttelse mod malware og phishing.
 
 | Protokol                 | Adresse                                                                                               |                                                                                                      |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -426,7 +418,7 @@ I tilstanden "Beskyttet" beskyttes imod malware og phishing
 
 #### Familie
 
-I tilstanden "Familie" beskyttet + blokering af voksenindhold
+I tilstanden "Familie", beskyttelse + blokering af voksenindhold.
 
 | Protokol              | Adresse                                                                                               |                                                                                                  |
 | --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -437,7 +429,7 @@ I tilstanden "Familie" beskyttet + blokering af voksenindhold
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) er en gratis alternativ DNS-tjeneste fra OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/) er en gratis, alternativ DNS-tjeneste fra OpenNIC Project.
 
 | Protokol  | Adresse                                   |                                                                |
 | --------- | ----------------------------------------- | -------------------------------------------------------------- |
@@ -446,7 +438,7 @@ I tilstanden "Familie" beskyttet + blokering af voksenindhold
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) Et lille hobby DNS-projekt. Ingen logger, Ethereum Name Service, DNSSEC-klar og Filtrerede annoncer, trackere, malwares
+[BlahDNS](https://blahdns.com/) Et lille hobby DNS-projekt. Ingen logger, Ethereum Name Service, DNSSEC-klar og Filtrerede reklamer, trackere, malware.
 
 #### Finland DNS Server
 
@@ -486,8 +478,7 @@ I tilstanden "Familie" beskyttet + blokering af voksenindhold
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) har til formål at blokere voksne websteder. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
-
+[DNS for Family](https://dnsforfamily.com/) har til formål at blokere voksne websteder. Den muliggør, at børn og voksne kan surfe sikkert på internet uden at bekymre sig om at blive sporet af ondsindede websteder.
 
 | Protokol       | Adresse                                                   |                                                                                                                                           |
 | -------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -576,7 +567,7 @@ IPv6-baseret anycast DNS-tjeneste med stærke sikkerhedskapaciteter og beskyttel
 
 #### Normal
 
-Blokér annoncer og irriterende websteder
+Blokér annoncer og irriterende websteder.
 
 | Protokol  | Adresse                                |                                                              |
 | --------- | -------------------------------------- | ------------------------------------------------------------ |
@@ -584,7 +575,7 @@ Blokér annoncer og irriterende websteder
 
 #### Sikker
 
-Blokerer phishing, ondsindede og andre ikke-sikre websteder
+Blokerer phishing, ondsindede og andre ikke-sikre websteder.
 
 | Protokol  | Adresse                                |                                                              |
 | --------- | -------------------------------------- | ------------------------------------------------------------ |
@@ -600,7 +591,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) er en gratis alternativ DNS-tjeneste uden logning fra TWNIC (Taiwan Network Information Center)
+[Quad101](https://101.101.101.101) er en gratis alternativ DNS-tjeneste uden logning fra TWNIC (Taiwan Network Information Center).
 
 | Protokol       | Adresse                                |                                                                           |
 | -------------- | -------------------------------------- | ------------------------------------------------------------------------- |
@@ -608,7 +599,6 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 | DNS, IPv6      | `2001:de4::101` og `2001:de4::102`     | [Føj til AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
 | DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`       | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://101.101.101.101`                | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
-
 
 ### OneDNS
 
@@ -628,7 +618,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blokerer flere end 140K annonce-, annoncesporings-, malware- og phishing-domæner! Ingen logning, ingen ECS, DNSSEC-validering, gratis!
+[Privacy-First DNS](https://tiarap.org/) blokerer flere end 140K reklame-, reklamesporings-, malware- og phishing-domæner. Ingen logning, ingen ECS, DNSSEC-validering, gratis!
 
 #### Singapore DNS Server
 
@@ -642,7 +632,6 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                          | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                     | [Føj til AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                      | [Føj til AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
-
 
 #### Japan DNS Server
 
@@ -658,7 +647,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) er en åben, gratis og offentlig DNS-tjeneste leveret af [Virtexxa-skytjenester](https://virtexxa.com/). Ingen DNS-omdirigeringer, nul logning.
+[FreeDNS](https://freedns.zone/) er en åben, gratis og offentlig DNS-tjeneste. Ingen DNS-omdirigeringer, nul logning.
 
 | Protokol  | Adresse                              |                                                            |
 | --------- | ------------------------------------ | ---------------------------------------------------------- |
@@ -667,7 +656,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) er en gratis anonym DNS-opløser fra Freenom World
+[Freenom World](https://freenom.world/en/index.html) er en gratis, anonym DNS-opløser fra Freenom World.
 
 | Protokol  | Adresse                        |                                                        |
 | --------- | ------------------------------ | ------------------------------------------------------ |
@@ -679,7 +668,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 #### OSZX server
 
-Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har DNSSEC aktiveret
+Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har DNSSEC aktiveret.
 
 | Protokol       | Adresse                                                                 |                                                                                                                                                           |
 | -------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -692,7 +681,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 #### PumpleX server
 
-Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har DNSSEC aktiveret
+Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har DNSSEC aktiveret.
 
 | Protokol       | Adresse                                                                      |                                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -715,7 +704,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) er en DNS-tjeneste fra Strongarm, der forhindrer folk i at interagere med ondsindet indhold
+[Strongarm DNS](https://strongarm.io) er en DNS-tjeneste fra Strongarm, der forhindrer folk i at interagere med ondsindet indhold.
 
 | Protokol  | Adresse                           |                                                           |
 | --------- | --------------------------------- | --------------------------------------------------------- |
@@ -730,7 +719,6 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 | DNS, IPv4      | `104.155.237.225` og `104.197.28.121`                            | [Føj til AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Føj til AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
-
 ### DeCloudUs DNS
 
 [DeCloudUs DNS](https://decloudus.com/) En sikker, privat, open-source DNS-opløser med malwarebeskyttelse, adblocking og uden logfiler. Degoogle og Ungoogle mobilen, tabletten og computeren.
@@ -744,7 +732,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala. Finland.
+[Lelux.fi](https://lelux.fi/resolver/) drives af Elias Ojala.
 
 | Protokol       | Adresse                                  |                                                                                      |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -753,7 +741,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) er en server, der kører fra en Digital Ocean-dråbe i BLR1-regionen. Vedligeholdes af Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) er en server, der kører fra en Digital Ocean-droplet i BLR1-regionen. Vedligeholdes af Abhay Rana aka Nemo.
 
 | Protokol       | Adresse                                                         |                                                                                                                                                   |
 | -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -762,7 +750,6 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 ### DNS.SB
 
 [DNS.SB](https://dns.sb/) leverer gratis DNS-tjeneste uden logning, DNSSEC aktiveret.
-
 
 | Protokol       | Adresse                            |                                                                        |
 | -------------- | ---------------------------------- | ---------------------------------------------------------------------- |
@@ -784,7 +771,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### Fondation Restena DNS
 
-[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver)-servere leveres af [Restena Foundation](https://www.restena.lu/)
+[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver)-servere leveres af [Restena Foundation](https://www.restena.lu/).
 
 | Protokol       | Adresse                                                                            |                                                                                   |
 | -------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -793,7 +780,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) er en Fusl's offentlige primær OpenNIC Tier2 Anycast DNS-opløser
+[fvz DNS](http://meo.ws/) er en Fusls offentlige primær OpenNIC Tier2 Anycast DNS-opløser.
 
 | Protokol       | Adresse                                                             |                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -802,7 +789,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) gratis DNS-servere tilbudt af Freifunk München
+[FFMUC](https://ffmuc.net/) gratis DNS-servere leveret af Freifunk München.
 
 | Protokol             | Adresse                                                               |                                                                                                                                                           |
 | -------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -813,7 +800,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) er en offentlig opløser drevet af Digital Society. Hostes i Zürich, Schweiz
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) er en offentlig opløser drevet af Digital Society. Hostes i Zürich, Schweiz.
 
 | Protokol       | Adresse                                                                                       |                                                                                                |
 | -------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -832,7 +819,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testservere leveret af ibksturm. OPENNIC, DNSSEC, ingen filtrering, nul logning
+[ibksturm DNS](https://ibksturm.synology.me/) testservere leveret af ibksturm. OPENNIC, DNSSEC, ingen filtrering, nul logning.
 
 | Protokol             | Adresse                                                                                  |                                                                                                                                                                                    |
 | -------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -845,7 +832,7 @@ Disse servere tilbyder ingen annonceblokering, opbevarer ingen logfiler og har D
 
 Et åbent samarbejdsprojekt til promovering, implementering og udrulning af [DNS Privacy](https://dnsprivacy.org/).
 
-DNS-servere drives af [Stubby-udviklerne](https://getdnsapi.net/)
+DNS-servere drives af [Stubby-udviklerne](https://getdnsapi.net/).
 
 | Protokol     | Adresse                                                                                                                      |                                                                           |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -853,7 +840,7 @@ DNS-servere drives af [Stubby-udviklerne](https://getdnsapi.net/)
 | DNS-over-TLS | Udbyder: `Surfnet` Værtsnavn: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` og IPv6: `2001:610:1:40ba:145:100:185:15`  | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
 | DNS-over-TLS | Udbyder: `Surfnet` Værtsnavn: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` og IPv6: `2001:610:1:40ba:145:100:185:16` | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Andre DNS-servere med 'nul logning'-politik
+Andre DNS-servere med 'nul logning'-politik.
 
 | Protokol           | Adresse                                                                                                             |                                                                            |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -882,7 +869,7 @@ DNS-servere med minimal logning/restriktioner. Disse servere anvender noget logn
 
 #### Blitz
 
-[Konfigurerbar filtrering](https://blitz-setup.ahadns.com/) verdensomspændende DoH-only variant
+[Konfigurerbar filtrering](https://blitz-setup.ahadns.com/) verdensomspændende, kun DoH-variant.
 
 | Protokol                                      | Adresse                           |                                                                            |
 | --------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------- |
@@ -940,7 +927,6 @@ DNS-servere med minimal logning/restriktioner. Disse servere anvender noget logn
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
 
-
 #### Spanien
 
 | Protokol       | Adresse                               |                                                                                  |
@@ -973,7 +959,6 @@ DNS-servere med minimal logning/restriktioner. Disse servere anvender noget logn
 | DNS, IPv4      | `45.76.113.31`                                            | [Føj til AdGuard](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [Føj til AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS-over-TLS   | `tls://dot.seby.io`                                       | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8)                                                                         |
-
 
 ### puntCAT DNS
 
@@ -1036,10 +1021,9 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 | DNS-over-HTTPS | `https://anycast.dns.nextdns.io` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://anycast.dns.nextdns.io`   | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
 
-
 ### RethinkDNS
 
-[RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
+[RethinkDNS](https://www.rethinkdns.com/configure) leverer en DNS-over-HTTPS tjeneste, der kører som Cloudflare Worker, og en DNS-over-TLS tjeneste, der kører som Fly.io Worker med tilpasselige blokeringslister.
 
 #### Ikke-filtrerende
 
@@ -1051,9 +1035,18 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
+[ControlD](https://controld.com/free-dns) er en tilpasselig DNS-tjeneste med proxy-funktioner. Dette betyder, at den ikke kun blokerer ting (annoncer, porno mv.), men også kan afblokere websteder og tjenester.
 
-#### Block malware
+#### Ikke-filtrerende
+
+| Protokol       | Adresse                           |                                                                                       |
+| -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `76.76.2.0` og `76.76.10.0`       | [Føj til AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| IPv6           | `2606:1a40::` og `2606:1a40:1::`  | [Føj til AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0` | [Føj til AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS-over-TLS   | `p0.freedns.controld.com`         | [Føj til AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
+
+#### Malware-blokering
 
 | Protokol       | Adresse                           |                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
@@ -1061,7 +1054,7 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 | DNS-over-HTTPS | `https://freedns.controld.com/p1` | [Føj til AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
 | DNS-over-TLS   | `tls://p1.freedns.controld.com`   | [Føj til AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
 
-##### Block malware + ads
+##### Blokér malware + annoncer
 
 | Protokol       | Adresse                           |                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
@@ -1069,7 +1062,7 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 | DNS-over-HTTPS | `https://freedns.controld.com/p2` | [Føj til AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDIAAAA) |
 | DNS-over-TLS   | `tls://p2.freedns.controld.com`   | [Føj til AdGuard](sdns://AwcAAAAAAAAAF3AyLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
 
-##### Block malware + ads + social
+##### Blokér malware + annoncer + social
 
 | Protokol       | Adresse                           |                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
@@ -1079,7 +1072,7 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 
 ### Mullvad
 
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles).
+[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) leverer offentligt tilgængeligt DNS med QNAME-minimering, endepunkter placeret i Australien, Tyskland, Singapore, Sverige, Storbritannien og USA (New York og Los Angeles).
 
 #### Ikke-filtrerende
 
@@ -1088,40 +1081,39 @@ Familietilstand tilbyder beskyttelse fra "Sikre" opløsere og blokerer voksenweb
 | DNS-over-HTTPS | `https://doh.mullvad.net/dns-query` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://doh.mullvad.net`             | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAPZG9oLm11bGx2YWQubmV0)                |
 
-#### Ad blocking
+#### Adblocking
 
 | Protokol       | Adresse                                     |                                                                                          |
 | -------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query` | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://adblock.doh.mullvad.net`             | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ)                |
 
-### Small personal resolvers
+### Små personlige opløsere
 
-In this section we list small, mostly personal DNS resolvers. De har ofte kun én eller meget få servere og dårligere oppetid end 'store' udbydere. We won't be able to proper monitor their availability. **Use them at your own risk!**
+Dette afsnit oplister små og fortrinsvis personlige DNS-opløsere. De har ofte kun én eller meget få servere og dårligere oppetid end 'store' udbydere. Vi vil ikke kunne overvåge deres tilgængelighed ordentligt. **Anvendelse sker på eget ansvar!**
 
 #### Arapurayil
 
-[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
+[Arapurayil](https://dns.arapurayil.com) er en personlig DNS-tjeneste, der hostes i Mumbai, India.
 
-Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
+Ikke-logning | Filtrerer reklamer, trackere, phishing mv. | DNSSEC | QNAME-minimering | Intet EDNS Client-Subnet.
 
 | Protokol       | Adresse                                                      |                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Føj til AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
-| DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
-
+| DNSCrypt, IPv4 | Vært: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Føj til AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
+| DNS-over-HTTPS | Vært: `https://dns.arapurayil.com/dns-query`                 | [Føj til AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
 
 #### Dandelion Sprout's Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) er en personlig DNS-tjeneste, der hostes i Trondheim, Norge, vha. en AdGuard Home-infrastruktur.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
+Blokerer flere annoncer og malware end AdGuard DNS takket være en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logning bruges til at forbedre dens anvendte filterlister (f.eks. ved afblokering af websteder, som ikke burde være blevet blokeret), samt til at bestemme de mindst forstyrrende tidspunkter for serversystemopdateringer.
 
 | Protokol       | Adresse                                               |                                                                                                       |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Føj til AdGuard](sdns://AgEAAAAAAAAAAAAhZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbToyNTAxCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Føj til AdGuard](sdns://AwEAAAAAAAAAAAAgZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo4NTM)                 |
 | DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [Føj til AdGuard](sdns://BAEAAAAAAAAAAAAiZGFuZGVsaW9uc3Byb3V0LmFzdXNjb21tLmNvbTo0ODU4Mg)              |
-| DNS, IPv4      | Varies; see link above.                               |                                                                                                       |
-| DNS, IPv6      | Varies; see link above.                               |                                                                                                       |
-| DNSCrypt, IPv4 | Varies; see link above.                               |                                                                                                       |
+| DNS, IPv4      | Varierer; se link ovenfor.                            |                                                                                                       |
+| DNS, IPv6      | Varierer; se link ovenfor.                            |                                                                                                       |
+| DNSCrypt, IPv4 | Varierer; se link ovenfor.                            |                                                                                                       |

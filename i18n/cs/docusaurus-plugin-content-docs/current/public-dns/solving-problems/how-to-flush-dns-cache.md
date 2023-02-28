@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Jak vyprázdnit mezipaměť DNS
 
-## Co je mezipaměť DNS
+## Co je mezipaměť DNS?
 
 Do mezipaměti DNS se ukládají IP adresy navštívených webů v lokálním počítači, aby se příště načítaly rychleji. Místo dlouhého vyhledávání DNS systém odpovídá na dotazy pomocí záznamů DNS z dočasné mezipaměti DNS.
 
@@ -44,21 +44,21 @@ Poté zadejte heslo správce a dokončete proces.
 
 Chcete-li vyprázdnit mezipaměť DNS v zařízení se systémem Windows, postupujte takto:
 
-Načtěte příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
+Otevřete příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
 
 Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
 
 ### Linux
 
-Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například Systemd Resolved, DNSMasq, BIND nebo Nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
+Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například systemd-resolved, DNSMasq, BIND nebo Nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
 
 Pro každou distribuci je třeba spustit okno terminálu. Stiskněte Ctrl+Alt+T na klávesnici a pomocí odpovídajícího příkazu vymažte mezipaměť DNS pro službu, na které váš Linux běží.
 
 Chcete-li zjistit, který řešitel DNS používáte, zadejte příkaz `sudo lsof -i :53 -S`.
 
-#### Systemd Resolved
+#### systemd-resolved
 
-Chcete-li vyprázdnit mezipaměť DNS **Systemd Resolved**, zadejte příkaz:
+Chcete-li vyprázdnit mezipaměť DNS **systemd-resolved**, zadejte příkaz:
 
 `sudo systemd-resolve --flush-caches`
 

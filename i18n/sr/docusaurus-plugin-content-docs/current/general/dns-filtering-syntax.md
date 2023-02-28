@@ -21,9 +21,9 @@ Ako kreirate blok listu, preporučujemo da koristite sintaksu [u stilu blokatora
 
 * **kompatibilnost.** vaša blok lista će biti kompatibilna sa blokatorima oglasa pregledača i biće vam lakše da delite pravila sa listom filtera pregledača.
 
-* **proširenje.** U poslednjoj deceniji sintaksa u stilu blokatora reklama je u velikoj meri evoluirala, a ne vidimo zašto ne možemo još više da je proširimo i obezbedimo dodatne funkcije za blokatore širom mreže.
+* **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-Ako održavate blok listu `/etc/hosts`stila ili ako održavate više lista filtera bez obzira na njihov tip, obezbeđujemo alatku koja se može koristiti za sastavljanje blok lista. Nazvali smo ga [Hostlist kompajler][hlc] i sami ga koristimo za kreiranje [AdGuard DNS][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 ## Osnovni primeri
 
@@ -109,7 +109,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
 
-* You may want to use multiple modifiers in a rule. Separate them by commas in this case:
+* You may want to use multiple modifiers in a rule. In that case, separate them by commas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -143,7 +143,7 @@ $client=~value1
 
 Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Examples:**
 
@@ -494,6 +494,6 @@ What it's capable of:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

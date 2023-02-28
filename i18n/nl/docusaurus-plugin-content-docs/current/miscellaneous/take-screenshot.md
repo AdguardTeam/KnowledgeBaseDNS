@@ -15,18 +15,18 @@ Here you will find all the necessary hotkeys you should know in order to take sc
 
 Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
 
-Generally, you should use the following button combination for Android:
+Over het algemeen kan de volgende knoppencombinatie voor Android worden gebruikt:
 
-+ **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
++ **Houd de knoppen *Volume omlaag* en *Aan/uit* tegelijkertijd 1-2 seconden ingedrukt**
 
 Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a Screenshots folder in your Gallery.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+Zoals eerder vermeld, kan de procedure echter variëren afhankelijk van het specifieke apparaat. Let’s look at other possible combinations:
 
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**
-+ **Hold down at once the *Back* and the *Home* buttons**
++ **Houd de knoppen *Startscherm* en *Aan/uit* tegelijkertijd 1-2 seconden ingedrukt;**
++ **Houd de knoppen *Terug* en *Startscherm* tegelijk ingedrukt**
 
-On Android 8 and later there is also a possibility to take a screenshot by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen.
+Op Android 8 en hoger kan ook een schermafbeelding worden gemaakt door de rand van een open hand verticaal langs de linker-/rechterschermrand te plaatsen en de hand naar de andere schermrand te vegen terwijl je het scherm met de handrand aanraakt.
 
 If this method doesn’t work, check *Settings* > *Advanced* features to enable *Palm swipe to capture*.
 

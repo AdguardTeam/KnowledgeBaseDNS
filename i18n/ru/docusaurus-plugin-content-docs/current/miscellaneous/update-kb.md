@@ -13,17 +13,16 @@ sidebar_position: 3
 
 Как только вы будете готовы, начните работу в [репозитории KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Все тексты в нашей Базе знаний написаны на языке разметки `Markdown`. Помните об этом при редактировании или написании статей. Перейдите по [этой ссылке](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), чтобы узнать больше о синтаксисе Markdown.
 
-The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них [в этом руководстве](https://docusaurus.io/docs/category/guides).
+Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них в [этом гиде](https://docusaurus.io/docs/category/guides).
 
-Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробные инструкции о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) на странице GitHub этой Базы знаний.
 
 ## Переводы статей {#translate-adguard}
 
-Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Все подробности о переводах статей и работе с Crowdin можно найти [в соответствующей статье](https://kb.adguard.com/en/general/adguard-translations) Базы знаний блокировщика рекламы AdGuard.
+Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Все подробности о переводах статей и работе с Crowdin можно найти [в соответствующей статье](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) Базы знаний блокировщика рекламы AdGuard.
 
-Работая над статьями Базы знаний AdGuard DNS, вы наверняка встретите строки, содержащие формы множественного числа, которые следует переводить с особой аккуратностью. [В отдельной статье](https://kb.adguard.com/en/miscellaneous/plurals) мы подробно описали трудности, которые могут возникнуть при переводе таких строк, и дали исчерпывающие инструкции по работе с ними на платформе Crowdin (на английском языке).
+Работая над статьями Базы знаний AdGuard DNS, вы наверняка встретите строки, содержащие формы множественного числа, которые следует переводить с особой аккуратностью. [В отдельной статье](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) мы подробно описали трудности, которые могут возникнуть при переводе таких строк, и дали исчерпывающие инструкции по работе с ними на платформе Crowdin (на английском языке).
 
 ## Работа над существующими задачами
 
 Иногда появляются [открытые задачи](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/), связанные с обновлением Базы знаний. Вы можете помочь нам завершить их [так же](#suggest-change), как вы предлагаете любые другие изменения в эту Базу знаний. Выберите любую задачу, которая кажется вам привлекательной, и начните работать над ней. Все возникающие вопросы вы можете задавать прямо в комментариях к задаче.
-  
