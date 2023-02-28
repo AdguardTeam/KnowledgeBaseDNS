@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### Výchozí
 
-Tyto servery blokují reklamy, slídiče a krádež identity
+Tyto servery blokují reklamy, slídiče a krádež identity.
 
 | Protokol        | Adresa                                                                            |                                                                                                                                                                       |
 | --------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,10 +21,9 @@ Tyto servery blokují reklamy, slídiče a krádež identity
 | DNSCrypt, IPv4  | Poskytovatel: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`        | [Přidat do AdGuardu](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
 | DNSCrypt, IPv6  | Poskytovatel: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443` | [Přidat do AdGuardu](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-
 #### Ochrana rodiny
 
-Tyto servery poskytují výchozí funkce + blokování webových stránek pro dospělé + bezpečné vyhledávání
+Tyto servery poskytují výchozí funkce + blokování webových stránek pro dospělé + bezpečné vyhledávání.
 
 | Protokol        | Adresa                                                                            |                                                                                                                                                                       |
 | --------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +37,7 @@ Tyto servery poskytují výchozí funkce + blokování webových stránek pro do
 
 #### Bez filtrování
 
-Tyto servery poskytují bezpečné a spolehlivé připojení, ale nefiltrují nic jako servery "Výchozí" a "Ochrana rodiny".
+Každý z těchto serverů poskytuje bezpečné a spolehlivé připojení, ale na rozdíl od serverů "Standardní" a "Ochrana rodiny" nic nefiltruje.
 
 | Protokol        | Adresa                                                                             |                                                                                                                                                                         |
 | --------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,14 +49,13 @@ Tyto servery poskytují bezpečné a spolehlivé připojení, ale nefiltrují ni
 | DNSCrypt, IPv4  | Poskytovatel: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [Přidat do AdGuardu](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6  | Poskytovatel: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [Přidat do AdGuardu](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
-
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) je bezplatná rekurzivní služba DNS. Servery Yandex.DNS se nacházejí v Rusku, zemích SNS a západní Evropě. Požadavky uživatelů zpracovává nejbližší datové centrum, které poskytuje vysoké rychlosti připojení.
 
 #### Základní
 
-V "Základním" režimu není filtrování datového provozu prováděno
+V "Základním" režimu není filtrování datového provozu prováděno.
 
 | Protokol       | Adresa                                                                    |                                                                                                                                                             |
 | -------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,20 +63,18 @@ V "Základním" režimu není filtrování datového provozu prováděno
 | DNS, IPv6      | `2a02:6b8::feed:0ff` a `2a02:6b8:0:1::feed:0ff`                           | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [Přidat do AdGuardu](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
-
 #### Bezpečný
 
-V "Bezpečném" režimu je poskytována ochrana před infikovanými a podvodnými stránkami
+V "Bezpečném" režimu je poskytována ochrana před infikovanými a podvodnými stránkami.
 
 | Protokol  | Adresa                                          |                                                                       |
 | --------- | ----------------------------------------------- | --------------------------------------------------------------------- |
 | DNS, IPv4 | `77.88.8.88` a `77.88.8.2`                      | [Přidat do AdGuardu](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` a `2a02:6b8:0:1::feed:bad` | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
-
 #### Rodinný
 
-V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými stránkami a stránkami pro dospělé
+V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými stránkami a stránkami pro dospělé.
 
 | Protokol  | Adresa                                          |                                                                       |
 | --------- | ----------------------------------------------- | --------------------------------------------------------------------- |
@@ -91,7 +87,7 @@ V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými st
 
 #### Rodinný filtr
 
-Blokuje přístup ke všem webům pro dospělé, pornografickým a explicitním webům, včetně proxy serverů a domén VPN a webů se smíšeným obsahem
+Blokuje přístup ke všem webům pro dospělé, pornografickým a explicitním webům, včetně proxy serverů a domén VPN a webů se smíšeným obsahem.
 
 | Protokol        | Adresa                                                       |                                                                                                                                           |
 | --------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +100,7 @@ Blokuje přístup ke všem webům pro dospělé, pornografickým a explicitním 
 
 #### Filtr pro dospělé
 
-Je méně omezující než Rodinný filtr, blokuje pouze přístup k obsahu pro dospělé, škodlivým doménám a zamezuje krádeži identity
+Je méně omezující než Rodinný filtr, blokuje pouze přístup k obsahu pro dospělé, škodlivým doménám a zamezuje krádeži identity.
 
 | Protokol        | Adresa                                                        |                                                                                                                                             |
 | --------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,10 +111,9 @@ Je méně omezující než Rodinný filtr, blokuje pouze přístup k obsahu pro 
 | DNS skrze HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`             | [Přidat do AdGuardu](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
 | DNS skrze TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                    | [Přidat do AdGuardu](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
-
 #### Bezpečnostní filtr
 
-Blokuje krádež identity, spam a škodlivé domény
+Blokuje krádež identity, spam a škodlivé domény.
 
 | Protokol        | Adresa                                               |                                                                                                         |
 | --------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -135,13 +130,14 @@ Blokuje krádež identity, spam a škodlivé domény
 | -------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` a `8.20.247.20`                                              | [Přidat do AdGuardu](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Přidat do AdGuardu](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+
 ### Neustar Recursive DNS
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) je bezplatná cloudová rekurzivní služba DNS, která poskytuje rychlý a spolehlivý přístup k webům a online aplikacím s integrovaným zabezpečením a informacemi o hrozbách.
 
 #### Spolehlivost a výkonnost 1
 
-Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování určitých kategorií
+Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování určitých kategorií.
 
 | Protokol  | Adresa                                |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -150,7 +146,7 @@ Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování
 
 #### Spolehlivost a výkonnost 2*
 
-Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování konkrétních kategorií a také zabraňují přesměrování odpovědí na neexistující doménu (NXDomain) na cílovou stránku
+Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování konkrétních kategorií a také zabraňují přesměrování odpovědí na neexistující doménu (NXDomain) na cílovou stránku.
 
 | Protokol  | Adresa                                |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -159,7 +155,7 @@ Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování
 
 #### Ochrana před hrozbami
 
-Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také funkce "Spolehlivost a výkonnost"
+Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také funkce "Spolehlivost a výkonnost".
 
 | Protokol  | Adresa                                |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -168,7 +164,7 @@ Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také fu
 
 #### Zabezpečení rodiny
 
-Tyto servery poskytují blokování přístupu ke obsahu pro dospělé a zahrnují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami"
+Tyto servery poskytují blokování obsahu pro dospělé a zahrnují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami".
 
 | Protokol  | Adresa                                |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -177,7 +173,7 @@ Tyto servery poskytují blokování přístupu ke obsahu pro dospělé a zahrnuj
 
 #### Zabezpečení podnikání
 
-Tyto servery zajišťují blokování nežádoucího a časově náročného obsahu a obsahují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami" + "Zabezpečení rodiny"
+Tyto servery zajišťují blokování nežádoucího a časově náročného obsahu a obsahují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami" + "Zabezpečení rodiny".
 
 | Protokol  | Adresa                                |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -190,7 +186,7 @@ Tyto servery zajišťují blokování nežádoucího a časově náročného obs
 
 #### Standardní
 
-DNS servery s vlastním filtrováním, které chrání zařízení před malwarem
+DNS servery s vlastním filtrováním, které chrání zařízení před malwarem.
 
 | Protokol        | Adresa                                                            |                                                                                                                                                  |
 | --------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -202,7 +198,7 @@ DNS servery s vlastním filtrováním, které chrání zařízení před malware
 
 #### FamilyShield
 
-Servery OpenDNS, které zajišťují blokování obsahu pro dospělé
+Servery OpenDNS, které zajišťují blokování obsahu pro dospělé.
 
 | Protokol        | Adresa                                                           |                                                                                                                                                 |
 | --------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -244,7 +240,6 @@ Servery OpenDNS, které zajišťují blokování obsahu pro dospělé
 | DNS skrze HTTPS | `https://security.cloudflare-dns.com/dns-query` | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS skrze TLS   | `tls://security.cloudflare-dns.com`             | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
-
 #### Blokování škodlivého softwaru a obsahu pro dospělé
 
 | Protokol              | Adresa                                          |                                                                                               |
@@ -253,7 +248,6 @@ Servery OpenDNS, které zajišťují blokování obsahu pro dospělé
 | DNS, IPv6             | `2606:4700:4700::1113` a `2606:4700:4700::1003` | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
 | DNS skrze HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`   | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
 | DNS skrze TLS         | `tls://family.cloudflare-dns.com`               | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
-
 
 ### Quad9 DNS
 
@@ -274,7 +268,7 @@ Obvyklé servery DNS, které poskytují ochranu před krádeží identity a spyw
 
 #### Nezabezpečený
 
-Nezabezpečené servery DNS neposkytují žádný zabezpečený seznam zakázaných, žádný DNSSEC, žádný EDNS klient-podsíť
+Nezabezpečené servery DNS neposkytují žádné zabezpečené seznamy zakázaných, DNSSEC, nebo EDNS Client-Subnet.
 
 | Protokol        | Adresa                                                                |                                                                                                                                                       |
 | --------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -297,6 +291,7 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | DNSCrypt, IPv6  | Poskytovatel: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS skrze HTTPS | `https://dns11.quad9.net/dns-query`                                | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS skrze TLS   | `tls://dns11.quad9.net`                                            | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+
 ### Verisign Public DNS
 
 [Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) je bezplatná služba DNS, která oproti jiným alternativám nabízí lepší stabilitu a zabezpečení DNS. Verisign respektuje soukromí uživatelů: neprodává veřejná data DNS třetím stranám a nepřesměrovává dotazy uživatelů pro zobrazování reklam.
@@ -305,9 +300,10 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | --------- | ---------------------------------------- | ----------------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` nebo `64.6.65.6`             | [Přidat do AdGuardu](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` nebo `2620:74:1c::2:2` | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) je švýcarská veřejná služba DNS, kterou poskytuje [switch.ch](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) je švýcarská veřejná služba DNS, kterou poskytuje [switch.ch](https://www.switch.ch/).
 
 | Protokol        | Adresa                                                                                |                                                                               |
 | --------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -318,7 +314,7 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) je bezplatná alternativní služba DNS společnosti Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) je bezplatná alternativní služba DNS společnosti Dyn.
 
 | Protokol  | Adresa                            |                                                              |
 | --------- | --------------------------------- | ------------------------------------------------------------ |
@@ -364,29 +360,25 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | --------- | ---------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `193.58.251.251` | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná služba DNS s ochranou proti reklamám, sledování a krádeži identity.
 
 #### West DNS Server (hlavní)
 
-| Protokol        | Adresa                                                                           |                                                                                                                                                                      |
-| --------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4       | `92.38.152.163` a `93.115.24.204`                                                | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6       | `2a03:90c0:56::1a5` a `2a02:7b40:5eb0:e95d::1`                                   | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4  | Poskytovatel: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6  | Poskytovatel: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS skrze HTTPS | `https://dns.comss.one/dns-query`                                                | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS skrze TLS   | `tls://dns.comss.one`                                                            | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| Protokol        | Adresa                            |                                                                               |
+| --------------- | --------------------------------- | ----------------------------------------------------------------------------- |
+| DNS skrze HTTPS | `https://dns.comss.one/dns-query` | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
+| DNS skrze TLS   | `tls://dns.comss.one`             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)               |
+| DNS skrze QUIC  | `quic://dns.comss.one:784`        | [Přidat do AdGuardu](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ)          |
 
 #### East DNS Server (Sibiř a Dálný východ)
 
-| Protokol        | Adresa                                  |                                                                                      |
-| --------------- | --------------------------------------- | ------------------------------------------------------------------------------------ |
-| DNS, IPv4       | `92.223.109.31` a `91.230.211.67`       | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6       | `2a03:90c0:b5::1a` a `2a04:2fc0:39::47` | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS skrze HTTPS | `https://dns.east.comss.one/dns-query`  | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS skrze TLS   | `tls://dns.east.comss.one`              | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| Protokol        | Adresa                                 |                                                                                      |
+| --------------- | -------------------------------------- | ------------------------------------------------------------------------------------ |
+| DNS skrze HTTPS | `https://dns.east.comss.one/dns-query` | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS skrze TLS   | `tls://dns.east.comss.one`             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| DNS skrze QUIC  | `quic://dns.east.comss.one`            | [Přidat do AdGuardu](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA)          |
 
 ### Safe DNS
 
@@ -403,7 +395,7 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 #### Soukromý
 
-V "Soukromém" režimu pouze překlad DNS
+V "Soukromém" režimu — pouze překlad DNS.
 
 | Protokol                 | Adresa                                                                                                   |                                                                                                      |
 | ------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -414,7 +406,7 @@ V "Soukromém" režimu pouze překlad DNS
 
 #### Chráněný
 
-V "Chráněném" režimu ochrana proti malwaru a krádeži identity
+V "Chráněném" režimu — ochrana proti malwaru a krádeži identity.
 
 | Protokol                 | Adresa                                                                                                     |                                                                                                         |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -426,7 +418,7 @@ V "Chráněném" režimu ochrana proti malwaru a krádeži identity
 
 #### Rodinný
 
-V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
+V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 
 | Protokol                | Adresa                                                                                                     |                                                                                                     |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -437,7 +429,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) je bezplatná alternativní služba DNS projektu OpenNIC
+[OpenNIC DNS](https://www.opennic.org/) je bezplatná alternativní služba DNS projektu OpenNIC.
 
 | Protokol  | Adresa                                   |                                                                   |
 | --------- | ---------------------------------------- | ----------------------------------------------------------------- |
@@ -446,7 +438,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) — malý zájmový projekt DNS. Žádné záznamy, Ethereum Name Service, DNSSEC ready, filtrování reklam, slídičů a malware
+[BlahDNS](https://blahdns.com/) — malý zájmový projekt DNS. Žádné záznamy, Ethereum Name Service, DNSSEC ready, filtrování reklam, slídičů a malware.
 
 #### Finský DNS server
 
@@ -486,8 +478,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé
 
 ### DNS pro rodinu
 
-[DNS pro rodinu](https://dnsforfamily.com/) se zaměřuje na blokování webových stránek pro dospělé. Pomáhá dětem a všem, kteří chtějí bezpečně surfovat po internetu, aniž by se museli obávat, že se dostanou na škodlivé webové stránky.
-
+[DNS pro rodinu](https://dnsforfamily.com/) se zaměřuje na blokování webových stránek pro dospělé. Umožňuje dětem i dospělým bezpečně surfovat po internetu bez obav, že je budou sledovat škodlivé webové stránky.
 
 | Protokol        | Adresa                                                         |                                                                                                                                              |
 | --------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -576,7 +567,7 @@ Služba DNS anycast založená na protokolu IPv6 se silnými bezpečnostními fu
 
 #### Normální
 
-Blokuje reklamy a obtěžující weby
+Blokuje reklamy a obtěžující weby.
 
 | Protokol  | Adresa                                |                                                                 |
 | --------- | ------------------------------------- | --------------------------------------------------------------- |
@@ -584,7 +575,7 @@ Blokuje reklamy a obtěžující weby
 
 #### Bezpečný
 
-Blokuje krádež identity, škodlivé a další nebezpečné weby
+Blokuje krádež identity, škodlivé a další nebezpečné weby.
 
 | Protokol  | Adresa                                |                                                                 |
 | --------- | ------------------------------------- | --------------------------------------------------------------- |
@@ -600,7 +591,7 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) je bezplatná alternativní služba DNS bez přihlašování od TWNIC (Taiwan Network Information Center)
+[Quad101](https://101.101.101.101) je bezplatná alternativní služba DNS bez přihlašování od TWNIC (Taiwan Network Information Center).
 
 | Protokol        | Adresa                                |                                                                              |
 | --------------- | ------------------------------------- | ---------------------------------------------------------------------------- |
@@ -608,7 +599,6 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 | DNS, IPv6       | `2001:de4::101` a `2001:de4::102`     | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
 | DNS skrze HTTPS | `https://dns.twnic.tw/dns-query`      | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
 | DNS skrze TLS   | `tls://101.101.101.101`               | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
-
 
 ### OneDNS
 
@@ -643,7 +633,6 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 | DNS skrze QUIC  | `quic://doh.tiar.app`                                                          | [Přidat do AdGuardu](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
 | DNS skrze TLS   | `tls://dot.tiar.app`                                                           | [Přidat do AdGuardu](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
 
-
 #### Japonský DNS server
 
 | Protokol        | Adresa                                                                             |                                                                                                                                                                               |
@@ -658,7 +647,7 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) je otevřená, bezplatná a veřejná služba DNS poskytovaná [cloudovými službami společnosti Virtexxa](https://virtexxa.com/). Bez přesměrování DNS a záznamů.
+[FreeDNS](https://freedns.zone/) je otevřená, bezplatná a veřejná služba DNS. Bez přesměrování DNS a záznamů.
 
 | Protokol  | Adresa                              |                                                               |
 | --------- | ----------------------------------- | ------------------------------------------------------------- |
@@ -667,7 +656,7 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) je bezplatný anonymní DNS řešitel od Freenom World
+[Freenom World](https://freenom.world/en/index.html) je bezplatný anonymní DNS řešitel od Freenom World.
 
 | Protokol  | Adresa                        |                                                           |
 | --------- | ----------------------------- | --------------------------------------------------------- |
@@ -679,7 +668,7 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 #### Server OSZX
 
-Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné záznamy a mají povolený DNSSEC
+Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné záznamy a mají povolený DNSSEC.
 
 | Protokol        | Adresa                                                                       |                                                                                                                                                              |
 | --------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -692,7 +681,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 #### Server PumpleX
 
-Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné záznamy a mají povolený DNSSEC
+Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné záznamy a mají povolený DNSSEC.
 
 | Protokol        | Adresa                                                                            |                                                                                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -715,7 +704,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) je služba DNS od společnosti Strongarm, která zabraňuje interakci se škodlivým obsahem
+[Strongarm DNS](https://strongarm.io) je služba DNS od společnosti Strongarm, která zabraňuje interakci se škodlivým obsahem.
 
 | Protokol  | Adresa                           |                                                              |
 | --------- | -------------------------------- | ------------------------------------------------------------ |
@@ -730,7 +719,6 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 | DNS, IPv4      | `104.155.237.225` a `104.197.28.121`                                  | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
-
 ### DeCloudUs DNS
 
 [DeCloudUs DNS](https://decloudus.com/) je bezpečný, soukromý, open-source DNS řešitel s ochranou proti malwaru, blokováním reklam a bez záznamů. Blokuje všechny požadavky na služby Google v telefonu, tabletu nebo počítači.
@@ -744,7 +732,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) provozuje Elias Ojala. Finsko.
+[Lelux.fi](https://lelux.fi/resolver/) provozuje Elias Ojala, Finsko.
 
 | Protokol        | Adresa                                   |                                                                                         |
 | --------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -762,7 +750,6 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 ### DNS.SB
 
 [DNS.SB](https://dns.sb/) poskytuje bezplatnou službu DNS bez záznamů, DNSSEC povolen.
-
 
 | Protokol        | Adresa                            |                                                                           |
 | --------------- | --------------------------------- | ------------------------------------------------------------------------- |
@@ -784,7 +771,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 ### Fondation Restena DNS
 
-Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) poskytované společností [Restena Foundation](https://www.restena.lu/)
+Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) poskytované společností [Restena Foundation](https://www.restena.lu/).
 
 | Protokol        | Adresa                                                                            |                                                                                      |
 | --------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -793,7 +780,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) je veřejný primární OpenNIC Tier2 Anycast DNS řešitel společnosti Fusl
+[fvz DNS](http://meo.ws/) je veřejný primární OpenNIC Tier2 Anycast DNS řešitel společnosti Fusl.
 
 | Protokol       | Adresa                                                                   |                                                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -802,7 +789,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) bezplatné DNS servery poskytované společností Freifunk München
+[FFMUC](https://ffmuc.net/) bezplatné DNS servery poskytované společností Freifunk München.
 
 | Protokol              | Adresa                                                                     |                                                                                                                                                              |
 | --------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -813,7 +800,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) je veřejný řešitel provozovaný společností Digital Society. Hostováno v Curychu ve Švýcarsku
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) je veřejný řešitel provozovaný společností Digital Society. Hostováno v Curychu ve Švýcarsku.
 
 | Protokol        | Adresa                                                                                       |                                                                                                   |
 | --------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -832,7 +819,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) jsou testovací servery poskytované společností ibksturm. OPENNIC, DNSSEC, bez filtrování, bez záznamů
+[ibksturm DNS](https://ibksturm.synology.me/) jsou testovací servery poskytované společností ibksturm. OPENNIC, DNSSEC, bez filtrování, bez záznamů.
 
 | Protokol              | Adresa                                                                                        |                                                                                                                                                                                       |
 | --------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -845,7 +832,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 Společný otevřený projekt na podporu, implementaci a nasazení [DNS Privacy](https://dnsprivacy.org/).
 
-DNS servery, které provozují vývojáři [Stubby](https://getdnsapi.net/)
+DNS servery, které provozují vývojáři [Stubby](https://getdnsapi.net/).
 
 | Protokol      | Adresa                                                                                                                                  |                                                                              |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -853,7 +840,7 @@ DNS servery, které provozují vývojáři [Stubby](https://getdnsapi.net/)
 | DNS skrze TLS | Poskytovatel: `Surfnet`, Název hostitele: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` a IPv6: `2001:610:1:40ba:145:100:185:15`  | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
 | DNS skrze TLS | Poskytovatel: `Surfnet`, Název hostitele: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` a IPv6: `2001:610:1:40ba:145:100:185:16` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Ostatní servery DNS se zásadou 'bez záznamů'
+Ostatní servery DNS se zásadou 'bez záznamů'.
 
 | Protokol            | Adresa                                                                                                                         |                                                                               |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
@@ -882,7 +869,7 @@ DNS servery s minimálními záznamy/omezeními. Tyto servery používají někt
 
 #### Blitz
 
-[Konfigurovatelné filtrování](https://blitz-setup.ahadns.com/) – celosvětová varianta pouze pro DoH
+[Konfigurovatelné filtrování](https://blitz-setup.ahadns.com/) – celosvětová varianta pouze pro DoH.
 
 | Protokol                                      | Adresa                            |                                                                               |
 | --------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -940,7 +927,6 @@ DNS servery s minimálními záznamy/omezeními. Tyto servery používají někt
 | DNS skrze HTTPS | `https://doh.it.ahadns.net/dns-query` | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS skrze TLS   | `tls://dot.it.ahadns.net`             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
 
-
 #### Španělsko
 
 | Protokol        | Adresa                                |                                                                                     |
@@ -973,7 +959,6 @@ DNS servery s minimálními záznamy/omezeními. Tyto servery používají někt
 | DNS, IPv4      | `45.76.113.31`                                                 | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [Přidat do AdGuardu](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS skrze TLS  | `tls://dot.seby.io`                                            | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8)                                                                         |
-
 
 ### puntCAT DNS
 
@@ -1036,7 +1021,6 @@ Rodinný režim nabízí ochranu pomocí "bezpečných" řešitelů a blokuje st
 | DNS skrze HTTPS | `https://anycast.dns.nextdns.io` | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS skrze TLS   | `tls://anycast.dns.nextdns.io`   | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
 
-
 ### RethinkDNS
 
 [RethinkDNS](https://www.rethinkdns.com/configure) poskytuje službu DNS skrze HTTPS běžící jako Cloudflare Worker a službu DNS skrze TLS běžící jako Fly.io Worker s konfigurovatelnými seznamy zakázaných.
@@ -1051,7 +1035,16 @@ Rodinný režim nabízí ochranu pomocí "bezpečných" řešitelů a blokuje st
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) je veřejná služba DNS, která poskytuje blokování reklam, malwaru a sociálních médií.
+[ControlD](https://controld.com/free-dns) je přizpůsobitelná DNS služba s funkcí proxy serveru. To znamená, že dokáže nejen blokovat (reklamy, porno atd.), ale také odblokovat webové stránky a služby.
+
+#### Bez filtrování
+
+| Protokol        | Adresa                            |                                                                                          |
+| --------------- | --------------------------------- | ---------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `76.76.2.0` a `76.76.10.0`        | [Přidat do AdGuardu](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| IPv6            | `2606:1a40::` a `2606:1a40:1::`   | [Přidat do AdGuardu](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| DNS skrze HTTPS | `https://freedns.controld.com/p0` | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS skrze TLS   | `p0.freedns.controld.com`         | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
 
 #### Blokování malwaru
 
@@ -1103,13 +1096,12 @@ V této části uvádíme malé, většinou osobní DNS řešitele. Často mají
 
 [Arapurayil](https://dns.arapurayil.com) je osobní služba DNS hostovaná v Bombaji v Indii.
 
-Bez záznamů | Filtruje reklamy, slídiče, blokuje krádež identity atd. | DNSSEC | Minimalizace QNAME | Bez podsítě klienta EDNS.
+Bez záznamů | Filtruje reklamy, slídiče, blokuje krádež identity atd. | DNSSEC | Minimalizace QNAME | Bez EDNS Client-Subnet.
 
 | Protokol        | Adresa                                                       |                                                                                                                                                             |
 | --------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4  | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
 | DNS skrze HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Přidat do AdGuardu](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
-
 
 #### Oficiální DNS server Dandelion Sprout's
 

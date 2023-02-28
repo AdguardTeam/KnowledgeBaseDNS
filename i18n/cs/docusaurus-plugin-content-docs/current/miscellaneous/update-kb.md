@@ -13,17 +13,16 @@ Pomocí výše uvedených funkcí GitHubu můžete navrhovat změny stávající
 
 Jakmile budete připraveni začít, zapracujte [na repozitáři KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Všechny texty v naší znalostní databázi jsou napsány ve značkovacím jazyce `Markdown`. Mějte to na paměti při úpravách nebo psaní článků. Chcete-li se dozvědět více o syntaxi Markdown, následujte [tento odkaz](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-Webová stránka databáze znalostí je vytvořena pomocí moderního generátoru statických webových stránek Docusaurus 2. Při navrhování změn nebo doplňků berte v úvahu, že všechny dokumenty musí být v souladu se zásadami platformy. Můžete si o nich přečíst v [průvodci dostupném na tomto odkazu](https://docusaurus.io/docs/category/guides).
+Webová stránka databáze znalostí je vytvořena pomocí moderního generátoru statických webových stránek Docusaurus 2. Při navrhování změn nebo doplňků berte v úvahu, že všechny dokumenty musí být v souladu se zásadami platformy. Můžete si o nich přečíst v [tomto průvodci](https://docusaurus.io/docs/category/guides).
 
 Tuto databázi znalostí můžete lokálně uložit do svého počítače a zobrazit náhled navrhovaných změn. Podrobný návod, jak to provést, najdete na adrese [v souboru README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na stránce GitHub této databáze znalostí.
 
 ## Překládání článků {#translate-adguard}
 
-Překlad stávajících článků databáze znalostí se provádí na [platformě Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Všechny podrobnosti o překladech a práci s platformou Crowdin najdete [ve speciálním článku](https://kb.adguard.com/en/general/adguard-translations) databáze znalostí blokátoru reklam AdGuard.
+Překlad stávajících článků databáze znalostí se provádí na [platformě Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Všechny podrobnosti o překladech a práci s platformou Crowdin najdete [ve speciálním článku](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) databáze znalostí blokátoru reklam AdGuard.
 
-Při práci na článcích databáze znalostí AdGuard DNS se můžete setkat s řetězci obsahujícími množné číslo, které byste měli překládat se zvýšenou pozorností. [V samostatném článku](https://kb.adguard.com/en/miscellaneous/plurals)jsme podrobně popsali potíže, které mohou nastat při překladu řetězců s množným číslem a poskytli jsme rozsáhlý návod, jak s nimi na platformě Crowdin pracovat.
+Při práci na článcích databáze znalostí AdGuard DNS se můžete setkat s řetězci obsahujícími množné číslo, které byste měli překládat se zvýšenou pozorností. [V samostatném článku](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) jsme podrobně popsali potíže, které mohou nastat při překladu řetězců s množným číslem a poskytli jsme rozsáhlý návod, jak s nimi na platformě Crowdin pracovat.
 
 ## Práce na otevřených problémech
 
 Někdy existují [otevřené úlohy](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) související s aktualizací databáze znalostí. Můžete nám pomoci urychlit jejich dokončení [stejným způsobem](#suggest-change), jakým byste navrhli jakékoli jiné změny v této databázi znalostí. Vyberte si téma, které vás zaujme, a začněte na něm pracovat. Pokud máte nějaké dotazy — můžete je položit přímo v komentářích k tomuto vydání.
-  

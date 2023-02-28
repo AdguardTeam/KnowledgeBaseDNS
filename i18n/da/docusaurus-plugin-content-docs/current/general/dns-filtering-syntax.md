@@ -21,9 +21,9 @@ Opretter man en blokeringsliste, anbefales brug af [Adblock-syntakstypen](#adblo
 
 * **Kompatibilitet.** Blokeringslisten vil være kompatibel med browser-adblockere, og regler kan nemmere deles med en browser-filtreringsliste.
 
-* **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den endnu mere og tilbyde yderligere funktioner til netværksniveau-blockere.
+* **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den yderligere og tilbyde flere funktioner til netværksniveau-blockere.
 
-Vedligeholder man enten en `/etc/hosts`-blokeringslistetype, eller flere filtreringslister (uanset type), tilbyder vi et værktøj til brug for kompilering af blokeringslister. Vi har kaldt det [Hostlist compiler][hlc], og vi bruger det selv til oprettelse af [AdGuard DNS-filtre][sdn].
+Vedligeholder man enten en blokeringsliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af blokeringslister. Vi har kaldt det [Hostlist compiler][hlc], og vi bruger det selv til oprettelse af [AdGuard DNS-filtre][sdn].
 
 ## Basiseksempler
 
@@ -31,18 +31,18 @@ Vedligeholder man enten en `/etc/hosts`-blokeringslistetype, eller flere filtrer
 
 * `||eksempel.org^`: Afblokér domæneadgang til `eksempel.org` og alle dets underdomæner.
 
-* `1.2.3.4 eksempel.org`: (Bemærk, gammel `/etc/hosts`-syntakstype) i AdGuard Home, svar med `1.2.3.4` på forespørgsler for `eksempel.org`-domænet, men **ikke** dets underdomæner. Blokér i Privat AdGuard DNS adgangen til `eksempel.org`. `www.eksempel.org` forbliver tilladt.
+* `1.2.3.4 eksempel.org`: (Bemærk, gammel `/etc/hosts`-syntakstype) i AdGuard Home, svar med `1.2.3.4` på forespørgsler for `eksempel.org`-domænet, men **ikke** dets underdomæner. Blokér i Private AdGuard DNS adgangen til `eksempel.org`. `www.eksempel.org` forbliver tilladt.
 
   I AdGuard Home er brug af den uspecificerede IP-adresse (`0.0.0.0`) eller en lokal adresse (`127.0.0.1` o.lign.) for en vært essentielt det samme som at blokere denne vært.
 
   ```none
   # Returnerer IP-adressen 1.2.3.4 for eksempel.org.
-  1.2.3.4 example.org
-  # Blocks example.org by responding with 0.0.0.0.
-  0.0.0.0 example.org
+  1.2.3.4 eksempel.org
+  # Blokerer eksempel.org ved at svare med 0.0.0.0.
+  0.0.0.0 eksempel.org
   ```
 
-* `eksempel.org`: En simpel domæneregel. Blocks the `example.org` domain but **not** its subdomains. `www.eksempel.org` forbliver tilladt.
+* `eksempel.org`: En simpel domæneregel. Blokerer `eksempel.org`-domænet, men **ikke** dets underdomæner. `www.eksempel.org` forbliver tilladt.
 
 * `! Her angives en kommentar` og `# Også en kommentar`: Kommentarer.
 
@@ -65,7 +65,7 @@ modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 
 ### Specialtegn
 
-* `*`: jokertegnet. It is used to represent any set of characters. Dette kan også være en tom streng eller en streng af enhver længde.
+* `*`: jokertegnet. Det bruges til at repræsentere et hvilket som helst tegn. Dette kan også være en tom streng eller en streng af enhver længde.
 
 * `||`: Matcher begyndelsen af et værtsnavn, inkl. ethvert underdomæne. F.eks. så matcher `||eksempel.org` `eksempel.org` og `test.eksempel.org`, men ikke `testeksempel.org`.
 
@@ -111,7 +111,7 @@ Man kan ændre adfærden for en regel ved at tilføje modifikatorer. Modifikator
 
 * Man ønsker måske at bruge flere modifikatorer i en regel. Adskil dem i så fald med kommaer:
 
-  ```ingen
+  ```none
   ||eksempel.org^$client=127.0.0.1,dnstype=A
   ```
 
@@ -143,7 +143,7 @@ $client=~værdi1
 
 Klientnavne indeholder normalt mellemrum eller andre specialtegn, hvorfor man bør sætte navnet i anførselstegn. Både enkelte og dobbelte ASCII-anførselstegn understøttes. Brug omvendt skråstreg (`\`) til at escape anførselstegnene (`"` og `'`), kommaer (`,`) og pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**BEMÆRK:** Når en klient udelukkes, **skal** man placere `~` udenfor anførselstegnene.
 
 **Eksempler:**
 
@@ -243,7 +243,7 @@ SVAR:
 
 #### `dnsrewrite`
 
-`dnsrewrite`-svarmodifikatoren muliggør at erstatte indholdet af svaret på DNS-forespørgslen for de matchende værter. Bemærk, at denne modifikator i AdGuard Home fungerer i alle regler, men kun i tilpassede regler i Privat AdGuard DNS.
+`dnsrewrite`-svarmodifikatoren muliggør at erstatte indholdet af svaret på DNS-forespørgslen for de matchende værter. Bemærk, at denne modifikator i AdGuard Home fungerer i alle regler, men kun i tilpassede regler i Private AdGuard DNS.
 
 **Regler med `dnsrewrite`-svarmodifikatoren har højere prioritet end andre regler i AdGuard Home.**
 
@@ -412,7 +412,7 @@ Listen over tilladte tags:
   * `device_audio`: Lydenheder.
   * `device_camera`: Kameraer.
   * `device_gameconsole`: Spillekonsoller.
-  * `device_laptop`: laptops.
+  * `device_laptop`: Bærbare.
   * `device_nas`: NAS (netværkstilsluttede lagerenheder).
   * `device_pc`: PC'er.
   * `device_phone`: Mobiler.
@@ -494,6 +494,6 @@ Hvad den er i stand til:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

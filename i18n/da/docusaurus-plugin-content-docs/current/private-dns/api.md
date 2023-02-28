@@ -5,29 +5,29 @@ sidebar_position: 2
 
 # AdGuard DNS API
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
-## Authentication
+## Godkendelse
 
-### Generate Access token
+### Generér adgangstoken
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+Foretag en POST-anmodning for flg. URL med de givne parametre for at generere `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Parameter       | Beskrivelse                                                     |
+|:--------------- |:--------------------------------------------------------------- |
+| **brugernavn**  | Kontoe-mail                                                     |
+| **adgangskode** | Kontoadgangskode                                                |
+| mfa_token       | Tofaktorgodkendelsestoken (hvis aktiveret i kontoindstillinger) |
 
-In the response, you will get both `access_token` and `refresh_token`.
+I svaret vil både `access_token` og `refresh_token` fremgå.
 
-- The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- `access_token` udløber efter et antal angivne sekunder (jf. svarets `expires_in`-parameter). Et nyt `access_token` kan genereres vha. `refresh_token` (se: `Generere adgangstoken fra Refresh-token`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token` er permanent. For at ophæve et `refresh_token`, se: `Ophævelse af et Refresh-token`.
 
-#### Example request
+#### Eksempelanmodning
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -37,7 +37,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### Eksempelsvar
 
 ```json
 {
@@ -48,19 +48,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### Generere adgangstoken fra Refresh-token
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Et adgangstoken har en begrænset gyldighedsperiode. Når det udløber, vil appen skulle bruge `refresh-tokenet` ifm. anmodning om et nyt `adgangstoken`.
 
-Make the following POST request with the given params to get a new access token:
+Foretag flg. POST-anmodning med de givne parametre for at få et nyt adgangstoken:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Parameter         | Beskrivelse                                                  |
+|:----------------- |:------------------------------------------------------------ |
+| **refresh_token** | `REFRESH TOKEN`, hvormed et nyt adgangstoken skal genereres. |
 
-#### Example request
+#### Eksempelanmodning
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -68,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+#### Eksempelsvar
 
 ```json
 {
@@ -79,40 +79,40 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+### Ophævelse af et Refresh-token
 
-To revoke a refresh token, make the following POST request with the given params:
+For at ophæve et opdateringstoken skal flg. POST-anmodning foretages med de givne parametre:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+#### Anmodningseksempel
 
 ```bash
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| Parameter         | Beskrivelse                       |
+|:----------------- |:--------------------------------- |
+| **refresh_token** | `REFRESH TOKEN`, der skal ophæves |
 
-### Accessing API
+### Adgang til API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+Når først adgangs- og refresh-tokenerne er genereret, kan API-kald foretages ved at videregive adgangstokenet i headeren.
 
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
+- Header-navnet skal være `Authorization`
+- Header-værdien skal være `Bearer {access_token}`
 
 ## API
 
-### OpenAPI spec
+### OpenAPI-specifikation
 
-OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI-specifikationen er tilgængelig via [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metoder. F.eks. kan filen åbnes i [https://editor.swagger.io/][swagger].
 
 ## Feedback
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Ønskes denne API udvidet med nye metoder, så send venligst en e-mail til `devteam@adguard.com` og fortæl os,, hvad der ønskes tilføjet.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

@@ -23,7 +23,7 @@ Pokud vytváříte seznam zakázaných, doporučujeme použít [syntaxi ve stylu
 
 * **Rozšiřitelnost.** Za posledních deset let se syntaxe ve stylu Adblock značně vyvinula a nevidíme důvod, proč bychom ji nemohli ještě více rozšířit a poskytnout další funkce pro blokátory napříč celou sítí.
 
-Pokud udržujete seznam zakázaných ve stylu `/etc/hosts` nebo pokud udržujete více seznamů filtrů bez ohledu na jejich typ, poskytujeme nástroj, který lze použít k sestavení seznamů zakázaných. Nazýváme jej [Překladač seznamu hostitelů][hlc] a sami jej použijeme k vytvoření [filtru AdGuard DNS][sdn].
+Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. Nazýváme jej [Překladač seznamu hostitelů][hlc] a sami jej použijeme k vytvoření [filtru AdGuard DNS][sdn].
 
 ## Základní příklady
 
@@ -109,7 +109,7 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
 
   `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `important` je modifikátor.
 
-* V pravidle můžete použít více modifikátorů. V tomto případě je oddělujte čárkami:
+* V pravidle můžete použít více modifikátorů. V takovém případě je oddělte čárkami:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -143,7 +143,7 @@ $client=~value1
 
 Názvy klientů obvykle obsahují mezery nebo jiné speciální znaky, proto byste měli název uzavřít do uvozovek. Podporovány jsou jednoduché i dvojité uvozovky ASCII. Zpětné lomítko (`\`) použijte k vynechání uvozovek (`"` a `'`), čárek (`,`) a svislých čar (`|`).
 
-**POZNÁMKA:** když vyloučíte klienta, **musíte** zachovat znak `~` mimo uvozovky.
+**POZNÁMKA:** když vyloučíte klienta, **musíte** umístit znak `~` mimo uvozovky.
 
 **Příklady:**
 
@@ -494,6 +494,6 @@ Co dokáže:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

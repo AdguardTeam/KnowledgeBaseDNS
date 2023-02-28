@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # DNS önbelleği nasıl temizlenir
 
-## DNS önbelleği nedir
+## DNS önbelleği nedir?
 
 DNS önbelleği, ziyaret edilen sitelerin IP adreslerini yerel bilgisayarda depolar, böylece bir dahaki sefere daha hızlı yüklenirler. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
@@ -44,21 +44,21 @@ Bundan sonra, işlemi tamamlamak için yönetici parolanızı girin.
 
 Windows cihazınızda DNS önbelleğini temizlemek için aşağıdakileri yapın:
 
-Load the Command Prompt as an administrator. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig/flushdns` yazın ve Enter'a basın.
+Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig/flushdns` yazın ve Enter'a basın.
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Tamamlandı!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
 For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
 To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
-#### Systemd Resolved
+#### systemd-resolved
 
-To clear the **Systemd Resolved** DNS cache, type:
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 

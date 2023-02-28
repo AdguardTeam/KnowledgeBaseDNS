@@ -1,20 +1,20 @@
 ---
-title: Credits and Acknowledgements
+title: Tilskrivninger og Anerkendelser
 sidebar_position: 5
 ---
 
-Our dev team would like to thank the developers of the third-party software we use in AdGuard DNS, our great beta testers and other engaged users, whose help in finding and eliminating all the bugs, translating AdGuard DNS, and moderating our communities is priceless.
+Vores udviklerteam vil gerne takke udviklerne af den tredjepartssoftware, vi anvender i AdGuard DNS, vores fantastiske betatestere og andre engagerede brugere, hvis hjælp til at finde og eliminere alle fejlene, oversætte AdGuard DNS og moderere vores fællesskaber er uvurderlig.
 
 ## AdGuard DNS
 
-* DNS module by Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
-* GCache module by Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
-* Gofumpt program by Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
-* QUIC-Go module by Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
-* Staticcheck program by Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
+* DNS-modul fra Miek Gieben: [https://github.com/miekg/dns](https://github.com/miekg/dns)
+* GCache-modul fra Jun Kimura: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
+* Go-Cache modul fra Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+* Gofumpt-program fra Daniel Martí: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
+* QUIC-Go modul fra Lucas Clemente: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
+* Staticcheck-program fra Dominik Honnef: [https://staticcheck.io](https://staticcheck.io/)
 
-## AdGuard API and Websites
+## AdGuard API og websteder
 
 * Symfony: [http://symfony.com/](http://symfony.com/)
 * React: [https://reactjs.org/](https://reactjs.org/)

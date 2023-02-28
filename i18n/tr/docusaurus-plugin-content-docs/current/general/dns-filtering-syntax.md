@@ -21,9 +21,9 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax](#
 
 * **Compatibility.** Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
 
-* **Extensibility.** For the last decade the Adblock-style syntax has greatly evolved, and we don't see why we can't extend it even more and provide additional features for network-wide blockers.
+* **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 ## Temel Örnekler
 
@@ -36,7 +36,7 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
   In AdGuard Home, using the unspecified IP address (`0.0.0.0`) or a local address (`127.0.0.1` and alike) for a host is basically the same as blocking that host.
 
   ```none
-  # Returns the IP address 1.2.3.4 for example.org.
+  # example.org için 1.2.3.4 IP adresini döndürür.
   1.2.3.4 example.org
   # example.org alan adını 0.0.0.0 ile yanıtlayarak engeller.
   0.0.0.0 example.org
@@ -57,7 +57,7 @@ This is a subset of the [traditional Adblock-style][adb] syntax which is used by
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* `pattern`: the hostname mask. Every hostname is matched against this mask. The pattern can also contain special characters, which are described below.
+* `pattern`: the hostname mask. Her ana makine adı bu maskeyle eşleştirilir. The pattern can also contain special characters, which are described below.
 
 * `@@`: the marker that is used in the exception rules. Eşleşen ana makine adları için filtrelemeyi kapatmak istiyorsanız kuralınıza bu işaretçiyle başlayın.
 
@@ -100,7 +100,7 @@ Any line that starts with an exclamation mark or a hash sign is a comment and it
 
 ### Kural Değiştiriciler
 
-You can change the behavior of a rule by adding modifiers. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
+Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
 
 **Örnekler:**
 
@@ -109,7 +109,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
 
-* You may want to use multiple modifiers in a rule. Separate them by commas in this case:
+* You may want to use multiple modifiers in a rule. In that case, separate them by commas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -123,9 +123,9 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
 The `client` modifier allows specifying clients this rule is applied to. Bir istemciyi tanımlamanın iki ana yolu vardır:
 
-* By their IP address or CIDR prefix. This way works for all kinds of clients.
+* IP adreslerine veya CIDR öneklerine göre. Bu yol her türlü istemciler için çalışır.
 
-* By their name. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added.
+* Adlarına göre. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added.
 
   **NOTE:** In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
 
@@ -135,19 +135,19 @@ Söz dizimi şöyledir:
 $client=value1|value2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client's DNS requests.
+Değerden önce bir `~` karakteri ekleyerek de istemcileri hariç tutabilirsiniz. In this case, the rule is not be applied to this client's DNS requests.
 
 ```none
 $client=~value1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Örnekler:**
 
-* `@@||*^$client=127.0.0.1`: unblock everything for localhost.
+* `@@||*^$client=127.0.0.1`: localhost için her şeyin engelini kaldırın.
 
 * `||example.org^$client='Frank\'s laptop'`: `example.org` alan adını yalnızca `Frank'in dizüstü bilgisayarı` adlı istemci için engelleyin. Note that quote (`'`) in the name must be escaped.
 
@@ -190,7 +190,7 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 * `@@*$denyallow=com|net`: `*.com` ve `*.net` dışındaki her şeyin engelini kaldırın.
 
-* `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
+* `||example.org^$denyallow=sub.example.org`. `example.org` ve `*.example.org` alan adlarını engelleyin ancak `sub.example.org` alan adını engellemeyin.
 
 #### `dnstype`
 
@@ -219,7 +219,7 @@ $dnstype=value2
 
 **Örnekler:**
 
-* `||example.org^$dnstype=AAAA`: block DNS queries for the IPv6 addresses of `example.org`.
+* `||example.org^$dnstype=AAAA`: `example.org` alan adının IPv6 adresleri için DNS sorgularını engeller.
 
 * `||example.org^$dnstype=~A|~CNAME`: only allow `A` and `CNAME` DNS queries for `example.org`, block out the rest.
 
@@ -229,7 +229,7 @@ $dnstype=value2
 ||canon.example.com^$dnstype=~CNAME
 ```
 
-allows you to avoid filtering of the following response:
+aşağıdaki yanıtın filtrelenmesini önlemenizi sağlar:
 
 ```none
 ANSWERS:
@@ -308,9 +308,9 @@ Currently supported RR types with examples:
 
   **NOTE:** the IP MUST be in reverse order. See [RFC 1035][rfc1035].
 
-* `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` adds an `A` record with the value `1.2.3.4`.
+* `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekler.
 
-* `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` adds an `AAAA` record with the value `abcd::1234`.
+* `||example.com^$dnsrewrite=NOERROR;AAAA;.`, `abcd::1234` değerine sahip bir `AAAA` kaydı ekler.
 
 * `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adds a `CNAME` record. Yukarıdaki açıklamaya bakın.
 
@@ -325,15 +325,15 @@ Currently supported RR types with examples:
 
   Bu gelecekte değiştirilecektir.
 
-* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` adds an `MX` record with precedence value `32` and exchange value `example.mail`.
+* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail`, öncelik değeri `32` ve değişim değeri `example.mail` olan bir `MX `kaydı ekler.
 
-* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` adds a `SVCB` value. Yukarıdaki `HTTPS` örneğine bakın.
+* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3`, bir `SVCB` değeri ekler. Yukarıdaki `HTTPS` örneğine bakın.
 
-* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` adds a `TXT` record with the value `hello_world`.
+* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world`, `hello_world` değerine sahip bir `TXT` kaydı ekler.
 
 * `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` adds an `SRV` record with priority value `10`, weight value `60`, port`8080`, and target value `example.com`.
 
-* `||example.com^$dnsrewrite=NXDOMAIN;;` responds with an `NXDOMAIN` code.
+* `||example.com^$dnsrewrite=NXDOMAIN;;`, bir `NXDOMAIN` kodu ile yanıt verir.
 
 * `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
@@ -341,11 +341,11 @@ Currently supported RR types with examples:
 
 * `@@||example.com^$dnsrewrite`, tüm DNS yeniden yazma kurallarını kaldırır.
 
-* `@@||example.com^$dnsrewrite=1.2.3.4` removes the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+* `@@||example.com^$dnsrewrite=1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekleyen DNS yeniden yazma kuralını kaldırır.
 
 #### `önemli`
 
-Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Even over basic exception rules.
+Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Hatta temel istisna kuralları üzerinden bile.
 
 **Örnekler:**
 
@@ -356,7 +356,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
   @@||example.org^
   ```
 
-  `||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
+  `||example.org^$important` istisna kuralına rağmen `*.example.org` alan adına gelen tüm istekleri engeller.
 
 * Bu örnekte:
 
@@ -365,7 +365,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
   @@||example.org^$important
   ```
 
-  istisna kuralı da `önemli` değiştiricisine sahiptir, bu yüzden işe çalışacaktır.
+  istisna kuralı da `önemli` değiştiricisine sahiptir, bu nedenle çalışır.
 
 #### `badfilter`
 
@@ -401,7 +401,7 @@ $ctag=~value1|~value2|...
 
 **Örnekler:**
 
-* `||example.org^$ctag=device_pc|device_phone`: block `example.org` for clients tagged as `device_pc` or `device_phone`.
+* `||example.org^$ctag=device_pc|device_phone`: `device_pc` veya `device_phone` olarak etiketlenmiş istemciler için `example.org` alan adını engelleyin.
 
 * `||example.org^$ctag=~device_phone`: block `example.org` for all clients except those tagged as `device_phone`.
 
@@ -481,7 +481,7 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 If you are maintaining a blocklist and use different sources in it, [Hostlists compiler][hlc] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-What it's capable of:
+Neler yapabiliyor:
 
 1. Compile a single blocklist from multiple sources.
 
@@ -494,6 +494,6 @@ What it's capable of:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

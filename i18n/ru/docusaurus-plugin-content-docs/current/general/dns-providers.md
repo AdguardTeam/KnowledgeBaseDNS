@@ -9,7 +9,7 @@ sidebar_position: 3
 
 #### По умолчанию
 
-These servers block ads, tracking, and phishing
+Эти серверы блокируют рекламу, трекеры и фишинг.
 
 | Протокол       | Адрес                                                                                |                                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,10 +21,9 @@ These servers block ads, tracking, and phishing
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt.default.ns1.adguard.com` IP-адрес: `94.140.14.14:5443`        | [Добавить в AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt.default.ns1.adguard.com` IP-адрес: `[2a10:50c0::ad1:ff]:5443` | [Добавить в AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-
 #### Семейная защита
 
-У этих серверов есть те же функции, что и у серверов «По умолчанию» + блокировка сайтов для взрослых + Безопасный поиск
+У этих серверов есть те же функции, что и у серверов «По умолчанию» + блокировка сайтов для взрослых + Безопасный поиск.
 
 | Протокол       | Адрес                                                                               |                                                                                                                                                                       |
 | -------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +37,7 @@ These servers block ads, tracking, and phishing
 
 #### Нефильтрующий
 
-Эти серверы обеспечивают безопасное и надёжное соединение, но ничего не фильтруют, в отличие от серверов «По умолчанию» и «Семейная защита».
+Каждый из этих серверов обеспечивает безопасное и надёжное соединение, но, в отличие от серверов «Стандартный» и «Семейная защита», они ничего не фильтруют.
 
 | Протокол       | Адрес                                                                                 |                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,14 +49,13 @@ These servers block ads, tracking, and phishing
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt.unfiltered.ns1.adguard.com` IP-адрес: `94.140.14.140:5443`     | [Добавить в AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt.unfiltered.ns1.adguard.com` IP-адрес: `[2a10:50c0::1:ff]:5443` | [Добавить в AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
-
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) — это бесплатный рекурсивный DNS-сервис. Серверы Yandex.DNS расположены в России, странах СНГ и Западной Европы. Пользовательские запросы обрабатываются ближайшим дата-центром, что обеспечивает высокую скорость соединения.
 
 #### Базовый
 
-В Базовом режиме трафик не фильтруется
+В Базовом режиме трафик не фильтруется.
 
 | Протокол       | Адрес                                                                        |                                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,20 +63,18 @@ These servers block ads, tracking, and phishing
 | DNS, IPv6      | `2a02:6b8::feed:0ff` и `2a02:6b8:0:1::feed:0ff`                              | [Добавить в AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.browser.yandex.net` IP-адрес: `77.88.8.78:15353` | [Добавить в AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
-
 #### Безопасный
 
-В Безопасном режиме AdGuard DNS защищает от заражённых и мошеннических сайтов
+В Безопасном режиме AdGuard DNS защищает от заражённых и мошеннических сайтов.
 
 | Протокол  | Адрес                                           |                                                                       |
 | --------- | ----------------------------------------------- | --------------------------------------------------------------------- |
 | DNS, IPv4 | `77.88.8.88` и `77.88.8.2`                      | [Добавить в AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` и `2a02:6b8:0:1::feed:bad` | [Добавить в AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
-
 #### Семейный
 
-В Семейном режиме AdGuard DNS защищает от заражённых, мошеннических сайтов и сайтов для взрослых
+В Семейном режиме AdGuard DNS защищает от заражённых, мошеннических сайтов и сайтов для взрослых.
 
 | Протокол  | Адрес                                           |                                                                       |
 | --------- | ----------------------------------------------- | --------------------------------------------------------------------- |
@@ -87,11 +83,11 @@ These servers block ads, tracking, and phishing
 
 ### CleanBrowsing
 
-[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Этот сервис позволяет пользоваться интернетом безопасно и без нежелательного контента.
+[CleanBrowsing](https://cleanbrowsing.org/) — это DNS-сервис с настраиваемой фильтрацией. Этот сервис позволяет пользоваться интернетом безопасно и без нежелательного контента.
 
 #### Семейный фильтр
 
-Блокирует доступ к контенту для взрослых, прокси & VPN-доменам и сайтам со смешанным содержимым
+Блокирует доступ к контенту для взрослых, прокси и VPN-доменам, а также к сайтам со смешанным содержимым.
 
 | Протокол       | Адрес                                                           |                                                                                                                                           |
 | -------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +100,7 @@ These servers block ads, tracking, and phishing
 
 #### Фильтр контента для взрослых
 
-Менее ограничивающий, чем Семейный фильтр: блокирует доступ только к контенту для взрослых, вредоносным и фишинговым доменам
+Менее ограничивающий, чем Семейный фильтр: блокирует доступ только к контенту для взрослых, вредоносным и фишинговым доменам.
 
 | Протокол       | Адрес                                                            |                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,10 +111,9 @@ These servers block ads, tracking, and phishing
 | DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`                | [Добавить в AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
 | DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                       | [Добавить в AdGuard](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
-
 #### Фильтр безопасности
 
-Блокирует фишинговые, вредоносные и спам-сайты
+Блокирует фишинговые, вредоносные и спам-сайты.
 
 | Протокол       | Адрес                                                |                                                                                                         |
 | -------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -135,13 +130,14 @@ These servers block ads, tracking, and phishing
 | -------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` и `8.20.247.20`                                                 | [Добавить в AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP-адрес: `8.20.247.2` | [Добавить в AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+
 ### Neustar Recursive DNS
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) — это бесплатный облачный рекурсивный DNS-сервис, который обеспечивает быстрый и надёжный доступ к сайтам и онлайн-приложениям со встроенной системой безопасности и анализа угроз.
 
 #### Надёжность & Производительность 1
 
-Эти серверы предоставляют надёжный и быстрый DNS-поиск без блокировки каких-либо категорий
+Эти серверы предоставляют надёжный и быстрый DNS-поиск без блокировки каких-либо категорий.
 
 | Протокол  | Адрес                                 |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -150,7 +146,7 @@ These servers block ads, tracking, and phishing
 
 #### Надёжность & Производительность 2*
 
-Эти серверы предоставляют надёжный и быстрый DNS-поиск без блокировки каких-либо категорий, а также предотвращают перенаправление ответов NXDomain (несуществующий домен) на лендинговые страницы
+Эти серверы предоставляют надёжный и быстрый DNS-поиск без блокировки каких-либо категорий, а также предотвращают перенаправление ответов NXDomain (несуществующий домен) на лендинговые страницы.
 
 | Протокол  | Адрес                                 |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -159,7 +155,7 @@ These servers block ads, tracking, and phishing
 
 #### Защита от угроз
 
-Эти серверы защищают от вредоносных доменов и включают функции режима «Надёжность & Производительность»
+Эти серверы защищают от вредоносных доменов и включают функции режима «Надёжность и производительность».
 
 | Протокол  | Адрес                                 |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -168,7 +164,7 @@ These servers block ads, tracking, and phishing
 
 #### Семейный DNS
 
-Эти серверы блокируют доступ к контенту для взрослых и включают функции режимов «Надёжность & Производительность» + «Защита от угроз»
+Эти серверы блокируют доступ к контенту для взрослых и включают функции режимов «Надёжность и производительность» + «Защита от угроз».
 
 | Протокол  | Адрес                                 |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -177,7 +173,7 @@ These servers block ads, tracking, and phishing
 
 #### DNS для бизнеса
 
-Эти серверы блокируют нежелательный и отвлекающий контент, а также включают в себя функции режимов «Надёжность & Производительность», «Защита от угроз» и «Семейный DNS»
+Эти серверы блокируют нежелательный и отвлекающий контент, а также включают в себя функции режимов «Надёжность и производительность», «Защита от угроз» и «Семейный DNS».
 
 | Протокол  | Адрес                                 |                                                                   |
 | --------- | ------------------------------------- | ----------------------------------------------------------------- |
@@ -190,7 +186,7 @@ These servers block ads, tracking, and phishing
 
 #### Стандартный
 
-DNS-серверы с фильтрацией, защищающей ваше устройство от вредоносного ПО
+DNS-серверы с фильтрацией, защищающей ваше устройство от вредоносного ПО.
 
 | Протокол       | Адрес                                                                |                                                                                                                                                  |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -202,7 +198,7 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 
 #### FamilyShield
 
-Серверы OpenDNS с блокировкой контента для взрослых
+Серверы OpenDNS с блокировкой контента для взрослых.
 
 | Протокол       | Адрес                                                               |                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -244,7 +240,6 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 | DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query` | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://security.cloudflare-dns.com`             | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
-
 #### Блокировка вредоносных и «взрослых» сайтов
 
 | Протокол             | Адрес                                           |                                                                                               |
@@ -253,7 +248,6 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 | DNS, IPv6            | `2606:4700:4700::1113` и `2606:4700:4700::1003` | [Добавить в AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`   | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
 | DNS-over-TLS         | `tls://family.cloudflare-dns.com`               | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
-
 
 ### Quad9 DNS
 
@@ -274,7 +268,7 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 
 #### Незащищённый
 
-У незащищённых DNS-серверов нет списка блокировки, DNSSEC или опции EDNS Сlient Subnet
+У незащищённых DNS-серверов нет списка блокировки, DNSSEC или опции EDNS Сlient Subnet.
 
 | Протокол       | Адрес                                                                    |                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -297,6 +291,7 @@ EDNS Client Subnet — это метод, который включает ком
 | DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.quad9.net` IP-адрес: `[2620:fe::11]:8443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                                   | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                               | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+
 ### Verisign Public DNS
 
 [Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) — это бесплатный DNS-сервис, который предлагает большую стабильность и безопасность по сравнению с другими сервисами. Verisign заботится о конфиденциальности пользователей — он не продаёт публичные данные DNS третьим лицам и не перенаправляет запросы пользователей для показа им рекламы.
@@ -305,20 +300,21 @@ EDNS Client Subnet — это метод, который включает ком
 | --------- | --------------------------------------- | ----------------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` или `64.6.65.6`             | [Добавить в AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` или `2620:74:1c::2:2` | [Добавить в AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) — это швейцарский публичный DNS-сервис провайдера [SWITCH DNS](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) — это швейцарский публичный DNS-сервис провайдера [SWITCH DNS](https://www.switch.ch/).
 
-| Протокол       | Адрес                                                                            |                                                                               |
-| -------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS, IPv4      | Провайдер: `dns.switch.ch` IP-адрес: `130.59.31.248:`                            | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Провайдер: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                              | [Добавить в AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| Протокол       | Адрес                                                                                 |                                                                               |
+| -------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS, IPv4      | Провайдер: `dns.switch.ch` IP-адрес: `130.59.31.248:`                                 | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Провайдер: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                     | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Имя хоста: `tls://dns.switch.ch` IP-адрес: `130.59.31.248` и IPv6: `2001:620:0:ff::2` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) — это бесплатный альтернативный DNS-сервис компании Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) — это бесплатный альтернативный DNS-сервис компании Dyn.
 
 | Протокол  | Адрес                             |                                                              |
 | --------- | --------------------------------- | ------------------------------------------------------------ |
@@ -364,29 +360,25 @@ EDNS Client Subnet — это метод, который включает ком
 | --------- | ---------------- | ------------------------------------------------------------- |
 | DNS, IPv4 | `193.58.251.251` | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) — это быстрый и безопасный DNS сервис с защитой от рекламы, трекинга и фишинга.
 
 #### West DNS Server (основной)
 
-| Протокол       | Адрес                                                                               |                                                                                                                                                                      |
-| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.38.152.163` и `93.115.24.204`                                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6      | `2a03:90c0:56::1a5` и `2a02:7b40:5eb0:e95d::1`                                      | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.dns.comss.one` IP-адрес: `94.176.233.93:443`            | [Добавить в AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6 | Провайдер: `2.dnscrypt-cert.dns.comss.one` IP-адрес: `[2a02:7b40:5eb0:e95d::1]:443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                                   | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS-over-TLS   | `tls://dns.comss.one`                                                               | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| Протокол       | Адрес                             |                                                                               |
+| -------------- | --------------------------------- | ----------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dns.comss.one`             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)               |
+| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [Добавить в AdGuard](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ)          |
 
 #### East DNS Server (Сибирь и Дальний Восток)
 
-| Протокол       | Адрес                                   |                                                                                      |
-| -------------- | --------------------------------------- | ------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `92.223.109.31` и `91.230.211.67`       | [Добавить в AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6      | `2a03:90c0:b5::1a` и `2a04:2fc0:39::47` | [Добавить в AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`  | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`              | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| Протокол       | Адрес                                  |                                                                                      |
+| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Добавить в AdGuard](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA)          |
 
 ### Safe DNS
 
@@ -403,41 +395,41 @@ EDNS Client Subnet — это метод, который включает ком
 
 #### Приватный
 
-В Приватном режиме — только обработка DNS
+В Приватном режиме — только разрешение DNS.
 
-| Протокол               | Адрес                                                                                               |                                                                                                      |
-| ---------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` и `149.112.122.10`                                                                 | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` и `2620:10A:80BC::10`                                                           | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS — Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Протокол               | Адрес                                                                                                    |                                                                                                      |
+| ---------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` и `149.112.122.10`                                                                      | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` и `2620:10A:80BC::10`                                                                | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS — Private | Имя хоста: `tls://private.canadianshield.cira.ca` IP-адрес: `149.112.121.10` и IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Защищённый
 
-В Защищённом режиме — защита от вредоносного ПО и фишинга
+В Защищённом режиме — защита от вредоносного ПО и фишинга.
 
-| Протокол                 | Адрес                                                                                                 |                                                                                                         |
-| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` и `149.112.122.20`                                                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` и `2620:10A:80BC::20`                                                             | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS — Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Протокол                 | Адрес                                                                                                      |                                                                                                         |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` и `149.112.122.20`                                                                        | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` и `2620:10A:80BC::20`                                                                  | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS — Protected | Имя хоста: `tls://protected.canadianshield.cira.ca` IP-адрес: `149.112.121.20` и IPv6: `2620:10A:80BB::20` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Семейный
 
-В Семейном режиме — то же, что в Защищённом режиме + блокировка контента для взрослых
+В Семейном режиме — то же, что в Защищённом режиме + блокировка контента для взрослых.
 
-| Протокол              | Адрес                                                                                                 |                                                                                                     |
-| --------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| DNS, IPv4             | `149.112.121.30` и `149.112.122.30`                                                                   | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` и `2620:10A:80BC::30`                                                             | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS — Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Протокол              | Адрес                                                                                                      |                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| DNS, IPv4             | `149.112.121.30` и `149.112.122.30`                                                                        | [Добавить в AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` и `2620:10A:80BC::30`                                                                  | [Добавить в AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                          | [Добавить в AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS — Family | Имя хоста: `tls://protected.canadianshield.cira.ca` IP-адрес: `149.112.121.30` и IPv6: `2620:10A:80BB::30` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) — это бесплатный альтернативный DNS-сервис OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/) — это бесплатный альтернативный DNS-сервис OpenNIC Project.
 
 | Протокол  | Адрес                                    |                                                                   |
 | --------- | ---------------------------------------- | ----------------------------------------------------------------- |
@@ -446,7 +438,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) Небольшой любительский DNS-проект. Без логирования, Ethereum Name Service, DNSSEC & Фильтрует рекламу, трекеры, вредоносное ПО
+[BlahDNS](https://blahdns.com/) Небольшой любительский DNS-проект. Без логирования, Ethereum Name Service, DNSSEC & Фильтрует рекламу, трекеры, вредоносное ПО.
 
 #### Финский DNS-сервер
 
@@ -486,8 +478,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) блокирует сайты с контентом для взрослых. Помогает пользоваться интернетом безопасно, не беспокоясь о том, что можно попасть на вредоносный сайт.
-
+[DNS for Family](https://dnsforfamily.com/) блокирует сайты с контентом для взрослых. Он позволяет детям и взрослым безопасно пользоваться интернетом, не беспокоясь о том, что вредоносные сайты отследят их действия.
 
 | Протокол       | Адрес                                                             |                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -522,7 +513,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### CFIEC Public DNS
 
-Основанный на IPv6 DNS-сервис с мощным потенциалом в области безопасности, защитой от шпионских программ и вредоносных сайтов. It supports DNS64 to provide domain name resolution only for IPv6 users.
+Основанный на IPv6 DNS-сервис с мощным потенциалом в области безопасности, защитой от шпионских программ и вредоносных сайтов. Поддерживает DNS64, чтобы обеспечить разрешение доменных имён только для пользователей IPv6.
 
 | Протокол       | Адрес                             |                                                                               |
 | -------------- | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -574,9 +565,9 @@ EDNS Client Subnet — это метод, который включает ком
 
 **114DNS** — это профессиональный и надёжный DNS-сервис.
 
-#### Normal
+#### Нормальный
 
-Блокирует рекламу и раздражающие сайты
+Блокирует рекламу и раздражающие сайты.
 
 | Протокол  | Адрес                                 |                                                                 |
 | --------- | ------------------------------------- | --------------------------------------------------------------- |
@@ -584,7 +575,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 #### Безопасный
 
-Блокирует фишинговые, вредоносные и другие небезопасные сайты
+Блокирует фишинговые, вредоносные и другие небезопасные сайты.
 
 | Протокол  | Адрес                                 |                                                                 |
 | --------- | ------------------------------------- | --------------------------------------------------------------- |
@@ -600,7 +591,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) — это бесплатный альтернативный DNS-сервис без логирования TWNIC (Taiwan Network Information Center)
+[Quad101](https://101.101.101.101) — это бесплатный альтернативный DNS-сервис без логирования TWNIC (Taiwan Network Information Center).
 
 | Протокол       | Адрес                                 |                                                                              |
 | -------------- | ------------------------------------- | ---------------------------------------------------------------------------- |
@@ -608,7 +599,6 @@ EDNS Client Subnet — это метод, который включает ком
 | DNS, IPv6      | `2001:de4::101` и `2001:de4::102`     | [Добавить в AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
 | DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`      | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://101.101.101.101`               | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
-
 
 ### OneDNS
 
@@ -628,7 +618,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains!. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
+[Privacy-First DNS](https://tiarap.org/) блокирует больше 140 тысяч рекламных, трекинговых, вредоносных и фишинговых доменов. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
 
 #### Сингапурский DNS-сервер
 
@@ -642,7 +632,6 @@ EDNS Client Subnet — это метод, который включает ком
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                                  | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                             | [Добавить в AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                              | [Добавить в AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
-
 
 #### Японский DNS-сервер
 
@@ -658,7 +647,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) — это открытый, бесплатный и публичный DNS-сервис провайдера [Virtexxa cloud services](https://virtexxa.com/). Без перенаправления DNS-запросов, без логирования.
+[FreeDNS](https://freedns.zone/) является открытым, бесплатным и публичным DNS-сервисом. Без перенаправления DNS-запросов, без логирования.
 
 | Протокол  | Адрес                               |                                                               |
 | --------- | ----------------------------------- | ------------------------------------------------------------- |
@@ -667,7 +656,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) — это бесплатный анонимный DNS-резолвер Freenom World
+[Freenom World](https://freenom.world/en/index.html) — это бесплатный анонимный DNS-резолвер Freenom World.
 
 | Протокол  | Адрес                         |                                                           |
 | --------- | ----------------------------- | --------------------------------------------------------- |
@@ -679,7 +668,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 #### Сервер OSZX
 
-Эти серверы с DNSSEC не блокируют рекламу и не сохраняют логи
+Эти серверы с DNSSEC не блокируют рекламу и не сохраняют логи.
 
 | Протокол       | Адрес                                                                           |                                                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -692,7 +681,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 #### Сервер PumpleX
 
-Эти серверы с DNSSEC не блокируют рекламу и не сохраняют логи
+Эти серверы с DNSSEC не блокируют рекламу и не сохраняют логи.
 
 | Протокол       | Адрес                                                                                |                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -715,7 +704,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) — это DNS-сервис Strongarm, который предотвращает взаимодействие с вредоносным контентом
+[Strongarm DNS](https://strongarm.io) — это DNS-сервис Strongarm, который предотвращает взаимодействие с вредоносным контентом.
 
 | Протокол  | Адрес                            |                                                              |
 | --------- | -------------------------------- | ------------------------------------------------------------ |
@@ -730,7 +719,6 @@ EDNS Client Subnet — это метод, который включает ком
 | DNS, IPv4      | `104.155.237.225` и `104.197.28.121`                                     | [Добавить в AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.safesurfer.co.nz` IP-адрес: `104.197.28.121` | [Добавить в AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
-
 ### DeCloudUs DNS
 
 [DeCloudUs DNS](https://decloudus.com/) Безопасный, конфиденциальный DNS-резолвер с открытым исходным кодом, защитой от вредоносного ПО, блокировкой рекламы и без логирования. Блокирует все запросы к сервисам Google с вашего телефона, планшета или компьютера.
@@ -744,7 +732,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) управляется Elias Ojala. Finland.
+[Lelux.fi](https://lelux.fi/resolver/) управляется Elias Ojala, Финляндия.
 
 | Протокол       | Адрес                                    |                                                                                         |
 | -------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -762,7 +750,6 @@ EDNS Client Subnet — это метод, который включает ком
 ### DNS.SB
 
 [DNS.SB](https://dns.sb/) — это бесплатный DNS-сервис без логирования и с DNSSEC.
-
 
 | Протокол       | Адрес                             |                                                                           |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------- |
@@ -784,7 +771,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Fondation Restena DNS
 
-Серверы [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) от провайдера [Restena Foundation](https://www.restena.lu/)
+Серверы [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) от провайдера [Restena Foundation](https://www.restena.lu/).
 
 | Протокол       | Адрес                                                                                   |                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -793,7 +780,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) — это публичный базовый OpenNIC Tier2 Anycast DNS-резолвер разработчика Fusl
+[fvz DNS](http://meo.ws/) — это публичный базовый OpenNIC Tier2 Anycast DNS-резолвер разработчика Fusl.
 
 | Протокол       | Адрес                                                                       |                                                                                                                                                           |
 | -------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -802,7 +789,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### FFMUC DNS
 
-Бесплатные DNS-серверы [FFMUC](https://ffmuc.net/) от провайдера Freifunk München
+Бесплатные DNS-серверы [FFMUC](https://ffmuc.net/) от провайдера Freifunk München.
 
 | Протокол             | Адрес                                                                         |                                                                                                                                                              |
 | -------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -813,7 +800,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) — это публичный резолвер Digital Society. Расположен в Цюрихе, Швейцария
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) — это публичный резолвер Digital Society. Расположен в Цюрихе, Швейцария.
 
 | Протокол       | Адрес                                                                                              |                                                                                                   |
 | -------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -832,7 +819,7 @@ EDNS Client Subnet — это метод, который включает ком
 
 ### ibksturm DNS
 
-Тестовые серверы [ibksturm DNS](https://ibksturm.synology.me/) от провайдера ibksturm. OPENNIC, DNSSEC, без фильтрации и логирования
+Тестовые серверы [ibksturm DNS](https://ibksturm.synology.me/) от провайдера ibksturm. OPENNIC, DNSSEC, без фильтрации и логирования.
 
 | Протокол             | Адрес                                                                                            |                                                                                                                                                                                       |
 | -------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -845,36 +832,36 @@ EDNS Client Subnet — это метод, который включает ком
 
 Открытый проект-коллаборация для продвижения, реализации и внедрения [DNS Privacy](https://dnsprivacy.org/).
 
-DNS-серверы, оперируемые [Stubby developers](https://getdnsapi.net/)
+DNS-серверы, оперируемые [Stubby developers](https://getdnsapi.net/).
 
-| Протокол     | Адрес                                                                                                                         |                                                                              |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| DNS-over-TLS | Имя хоста: `tls://getdnsapi.net` IP-адрес: `185.49.141.37` и IPv6: `2a04:b900:0:100::37`                                      | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| Протокол     | Адрес                                                                                                                               |                                                                              |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| DNS-over-TLS | Имя хоста: `tls://getdnsapi.net` IP-адрес: `185.49.141.37` и IPv6: `2a04:b900:0:100::37`                                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls.sinodun.com` IP-адрес: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls1.sinodun.com` IP-адрес: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Другие DNS-серверы с политикой «без логирования»
+Другие DNS-серверы с политикой «без логирования».
 
-| Протокол           | Адрес                                                                                                                |                                                                               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.larsdebruin.net` IP-адрес: `51.15.70.167`                                                      | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.bitgeek.in` IP-адрес: `139.59.51.46`                                                           | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Имя хоста: `tls://dot.securedns.eu` IP-адрес: `146.185.167.43` и IPv6: `2a03:b0c0:0:1010::e9a:3001`                  | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| Протокол           | Адрес                                                                                                                      |                                                                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS-over-TLS       | Провайдер: `UncensoredDNS` Имя хоста: `tls://unicast.censurfridns.dk` IP-адрес: `89.233.43.71` и IPv6: `2a01:3a0:53:53::0` | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Провайдер: `UncensoredDNS` Имя хоста: `tls://anycast.censurfridns.dk` IP-адрес: `91.239.100.100` и IPv6: `2001:67c:28a4::` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Провайдер: `dkg` Имя хоста: `tls://dns.cmrg.net` IP-адрес: `199.58.81.218`и IPv6: `2001:470:1c:76d::53`                    | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.larsdebruin.net` IP-адрес: `51.15.70.167`                                                            | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Имя хоста: `tls://dns-tls.bitwiseshift.net` IP-адрес: `81.187.221.24` и IPv6: `2001:8b0:24:24::24`                         | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Имя хоста: `tls://ns1.dnsprivacy.at` IP-адрес: `94.130.110.185` и IPv6: `2a01:4f8:c0c:3c03::2`                             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Имя хоста: `tls://ns2.dnsprivacy.at` IP-адрес: `94.130.110.178` и IPv6: `2a01:4f8:c0c:3bfc::2`                             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Имя хоста: `tls://dns.bitgeek.in` IP-адрес: `139.59.51.46`                                                                 | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Имя хоста: `tls://dns.neutopia.org` IP-адрес: `89.234.186.112` и IPv6: `2a00:5884:8209::2`                                 | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Провайдер: `Go6Lab` Имя хоста `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                       | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Имя хоста: `tls://dot.securedns.eu` IP-адрес: `146.185.167.43` и IPv6: `2a03:b0c0:0:1010::e9a:3001`                        | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
 DNS-серверы с минимальным логированием/ограничениями. Эти серверы используют логирование, самоподписанные сертификаты или не поддерживают строгий режим.
 
-| Протокол     | Адрес                                                                                                             |                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| Протокол     | Адрес                                                                                                                   |                                                                                   |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS-over-TLS | Провайдер: `NIC Chile` Имя хоста: `dnsotls.lab.nic.cl` IP-адрес: `200.1.123.46` и IPv6: `2001:1398:1:0:200:1:123:46`    | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Провайдер: `OARC` Имя хоста: `tls-dns-u.odvr.dns-oarc.net` IP-адрес: `184.105.193.78` и IPv6: `2620:ff:c000:0:1::64:25` | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -882,7 +869,7 @@ DNS-серверы с минимальным логированием/огран
 
 #### Blitz
 
-[Настраиваемая фильтрация](https://blitz-setup.ahadns.com/) только для DoH
+[Настраиваемая фильтрация](https://blitz-setup.ahadns.com/) только для DoH.
 
 | Протокол                                      | Адрес                             |                                                                               |
 | --------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -940,7 +927,6 @@ DNS-серверы с минимальным логированием/огран
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
 
-
 #### Испания
 
 | Протокол       | Адрес                                 |                                                                                     |
@@ -973,7 +959,6 @@ DNS-серверы с минимальным логированием/огран
 | DNS, IPv4      | `45.76.113.31`                                                    | [Добавить в AdGuard](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.dns.seby.io` IP-адрес: `45.76.113.31` | [Добавить в AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS-over-TLS   | `tls://dot.seby.io`                                               | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8)                                                                         |
-
 
 ### puntCAT DNS
 
@@ -1036,7 +1021,6 @@ Cерверы с функцией разрешения имён DNS без фи�
 | DNS-over-HTTPS | `https://anycast.dns.nextdns.io` | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://anycast.dns.nextdns.io`   | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
 
-
 ### RethinkDNS
 
 [RethinkDNS](https://www.rethinkdns.com/configure) предоставляет сервис DNS-over-HTTPS, работающий как Cloudflare Worker, и сервис DNS-over-TLS, работающий как Fly.io Worker с настраиваемыми списками блокировки.
@@ -1051,9 +1035,18 @@ Cерверы с функцией разрешения имён DNS без фи�
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads, malware, and social media blocking.
+[УправлениеD](https://controld.com/free-dns) — настраиваемый DNS-сервис с возможностями прокси-сервера. Это означает, что она не только блокирует рекламу, порно и прочее, но может и разблокировать веб-сайты и сервисы.
 
-#### Блокировка вредоносных доменов
+#### Нефильтрующий
+
+| Протокол       | Адрес                             |                                                                                          |
+| -------------- | --------------------------------- | ---------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `76.76.2.0` и `76.76.10.0`        | [Добавить в AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| IPv6           | `2606:1a40::` и `2606:1a40:1::`   | [Добавить в AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0` | [Добавить в AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS-over-TLS   | `p0.freedns.controld.com`         | [Добавить в AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
+
+#### Блокировка вредоносного ПО
 
 | Протокол       | Адрес                             |                                                                                          |
 | -------------- | --------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -1079,7 +1072,7 @@ Cерверы с функцией разрешения имён DNS без фи�
 
 ### Mullvad
 
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles).
+[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) предоставляет общедоступный DNS-сервис с минимизацией QNAME, конечными точками в Австралии, Германии, Сингапуре, Швеции, Великобритании и США (Нью-Йорк и Лос-Анджелес).
 
 #### Нефильтрующий
 
@@ -1103,15 +1096,14 @@ Cерверы с функцией разрешения имён DNS без фи�
 
 [Arapurayil](https://dns.arapurayil.com) — это персональный DNS-сервис, расположенный в Мумбаи, Индия.
 
-Без логирования | Фильтрует рекламу, трекеры, фишинг и т.д. | DNSSEC | Минимизация QNAME | Нет EDNS Client Subnet.
+Без логирования | Фильтрует рекламу, трекеры, фишинг и т. д. | DNSSEC | Минимизация QNAME | Нет EDNS Client Subnet.
 
 | Протокол       | Адрес                                                              |                                                                                                                                                             |
 | -------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Хост: `2.dnscrypt-cert.dns.arapurayil.com` IP-адрес: `3.7.156.128` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
 | DNS-over-HTTPS | Хост: `https://dns.arapurayil.com/dns-query`                       | [Добавить в AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
 
-
-#### Dandelion Sprout's Official DNS Server
+#### Официальный DNS-сервер от Dandelion Sprout's
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) — это персональный DNS-сервис, расположенный в Тронхейме, Норвегия, и использующий инфраструктуру AdGuard Home.
 
