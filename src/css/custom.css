@@ -175,3 +175,11 @@ html[lang='ko'] .navbar__search {
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTcgMTYiIHdpZHRoPSIxNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiMzYzgxZjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIwLjUiPjxwYXRoIGQ9Im0xMi41IDcuODg4Njd2LTMuODg4ODloLTMuODA5NTIiLz48cGF0aCBkPSJtMTIuNDQ3MyA0LjAyNjE3LTQuNTI2MDUgNC42MjAzMSIvPjxwYXRoIGQ9Im02LjM0NDQ4IDQuNjY2OTljLTEuMDE4NjggMC0xLjg0NDQ4LjgyNTgtMS44NDQ0OCAxLjg0NDQ4djMuNDg4ODNjMCAxLjEwNDYuODk1NDMgMiAyIDJoMy41MzA4Yy45OTU1IDAgMS44MDI1LS44MDcgMS44MDI1LTEuODAyNSIvPjwvZz48L3N2Zz4=");
 }
+
+@media (prefers-color-scheme: light) {
+  /* ... */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* ... */
+}
