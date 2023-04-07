@@ -1,30 +1,30 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Volgende",
     "description": "The label for version current"
   },
   "sidebar.sidebar.category.General": {
-    "message": "General",
+    "message": "Algemeen",
     "description": "The label for category General in sidebar sidebar"
   },
   "sidebar.sidebar.category.Public DNS": {
-    "message": "Public DNS",
+    "message": "Openbare DNS",
     "description": "The label for category Public DNS in sidebar sidebar"
   },
   "sidebar.sidebar.category.Solving problems": {
-    "message": "Solving problems",
+    "message": "Problemen oplossen",
     "description": "The label for category Solving problems in sidebar sidebar"
   },
   "sidebar.sidebar.category.Private DNS": {
-    "message": "Private DNS",
+    "message": "Privé-DNS",
     "description": "The label for category Private DNS in sidebar sidebar"
   },
   "sidebar.sidebar.category.Miscellaneous": {
-    "message": "Miscellaneous",
+    "message": "Diversen",
     "description": "The label for category Miscellaneous in sidebar sidebar"
   },
   "sidebar.sidebar.category.Translating AdGuard DNS": {
-    "message": "Translating AdGuard DNS",
+    "message": "AdGuard DNS vertalen",
     "description": "The label for category Translating AdGuard DNS in sidebar sidebar"
   }
 }

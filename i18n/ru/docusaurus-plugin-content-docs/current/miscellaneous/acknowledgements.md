@@ -20,6 +20,6 @@ sidebar_position: 5
 * React: [https://reactjs.org/](https://reactjs.org/)
 * Vue: [https://vuejs.org/](https://vuejs.org/)
 * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
-* Spring [https://spring.io/](https://spring.io/)
+* Spring: [https://spring.io/](https://spring.io/)
 * ClickHouse: [https://clickhouse.com/](https://clickhouse.com/)
 * Logstash: [https://github.com/elastic/logstash](https://github.com/elastic/logstash)

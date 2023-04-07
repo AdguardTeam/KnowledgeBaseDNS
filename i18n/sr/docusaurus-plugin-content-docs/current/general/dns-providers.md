@@ -5,11 +5,11 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) je alternativno rešenje za blokiranje reklama, zaštitu privatnosti i roditeljsku kontrolu. On obezbeđuje brojne neophodnne funkcije zaštite od reklama na mreži, praćenja i phishinga, bez obzira koju platformu i uređaj koristite.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) je alternativno rešenje za blokiranje reklama, zaštitu privatnosti i roditeljsku kontrolu. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
 #### Podrazumevano
 
-Ovi serveri obezbeđuju blokiranje reklama, praćenje i phishing
+These servers block ads, tracking, and phishing.
 
 | Protokol       | Adresa                                                                         |                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -21,10 +21,9 @@ Ovi serveri obezbeđuju blokiranje reklama, praćenje i phishing
 | DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`        | [Dodaj u AdGuard](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
 | DNSCrypt, IPv6 | Dobavljač: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443` | [Dodaj u AdGuard](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-
 #### Porodična zaštita
 
-Ovi serveri obezbeđuju podrazumevane funkcije + Blokiranje Veb lokacija za odrasle + Bezbedna pretraga
+These servers provide the Default features + Blocking adult websites + Safe search.
 
 | Protokol       | Adresa                                                                         |                                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -38,7 +37,7 @@ Ovi serveri obezbeđuju podrazumevane funkcije + Blokiranje Veb lokacija za odra
 
 #### Bez filtriranja
 
-Ovi serveri obezbeđuju bezbednu i pouzdanu vezu, ali ne filtriraju ništa poput servera "Podrazumevano" i "Zaštita porodice".
+Each of these servers provides a secure and reliable connection, but unlike the "Standard" and "Family Protection" servers, they don't filter anything.
 
 | Protokol       | Adresa                                                                          |                                                                                                                                                                      |
 | -------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,14 +49,13 @@ Ovi serveri obezbeđuju bezbednu i pouzdanu vezu, ali ne filtriraju ništa poput
 | DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [Dodaj u AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 | Dobavljač: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [Dodaj u AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
-
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) je besplatna rekurzivna DNS usluga. Yandex.DNS serveri se nalaze u Rusiji, zemljama CIS-a i zapadnoj Evropi. Zahteve korisnika obrađuje najbliži data centar koji obezbeđuje velike brzine povezivanja.
 
 #### Osnovno
 
-U "Osnovnom" režimu nema filtriranja saobraćaja
+In "Basic" mode, there is no traffic filtering.
 
 | Protokol       | Adresa                                                                 |                                                                                                                                                          |
 | -------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,20 +63,18 @@ U "Osnovnom" režimu nema filtriranja saobraćaja
 | DNS, IPv6      | `2a02:6b8::feed:0ff` i `2a02:6b8:0:1::feed:0ff`                        | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
 | DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [Dodaj u AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
-
 #### Sigurno
 
-U "Bezbednom" režimu obezbeđena zaštita od zaraženih i lažnih lokacija
+In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 | Protokol  | Adresa                                          |                                                                    |
 | --------- | ----------------------------------------------- | ------------------------------------------------------------------ |
 | DNS, IPv4 | `77.88.8.88` i `77.88.8.2`                      | [Dodaj u AdGuard](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` i `2a02:6b8:0:1::feed:bad` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
-
 #### Porodica
 
-U "Porodičnom" režimu, obezbeđena zaštita od zaraženih, prevarantskih i sajtova za odrasle
+In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
 | Protokol  | Adresa                                          |                                                                    |
 | --------- | ----------------------------------------------- | ------------------------------------------------------------------ |
@@ -87,11 +83,11 @@ U "Porodičnom" režimu, obezbeđena zaštita od zaraženih, prevarantskih i saj
 
 ### CleanBrowsing
 
-[Cleanbrowsing](https://cleanbrowsing.org/) je DNS usluga koja obezbeđuje prilagodljivo filtriranje. Ova usluga nudi bezbedan način pregledanja Veba bez neprikladnog sadržaja.
+[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. Ova usluga nudi bezbedan način pregledanja Veba bez neprikladnog sadržaja.
 
 #### Porodični filter
 
-Blokira pristup svim sajtovima za odrasle, pornografiji i eksplicitnim lokacijama, uključujući proxy & VPN domene i sajtove mešovitog sadržaja
+Blocks access to all adult, pornographic and explicit sites, including proxy & VPN domains and mixed content sites.
 
 | Protokol       | Adresa                                                    |                                                                                                                                        |
 | -------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +100,7 @@ Blokira pristup svim sajtovima za odrasle, pornografiji i eksplicitnim lokacijam
 
 #### Filter za odrasle
 
-Manje restriktivan od filtera "Porodica", on samo blokira pristup sadržaju za odrasle i zlonamernim i phishing domenima
+Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains.
 
 | Protokol       | Adresa                                                     |                                                                                                                                          |
 | -------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,10 +111,9 @@ Manje restriktivan od filtera "Porodica", on samo blokira pristup sadržaju za o
 | DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`          | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
 | DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                 | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
-
 #### Bezbedni filter
 
-Blokira phishing, bezvrednu poštu i zlonamerne domene
+Blocks phishing, spam and malicious domains.
 
 | Protokol       | Adresa                                               |                                                                                                      |
 | -------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -135,13 +130,14 @@ Blokira phishing, bezvrednu poštu i zlonamerne domene
 | -------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` i `8.20.247.20`                                           | [Dodaj u AdGuard](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Dodaj u AdGuard](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+
 ### Neustar Recursive DNS
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) je besplatan servis DNS zasnovan na oblaku koji isporučuje brz i pouzdan pristup lokacijama i onlajn aplikacijama sa ugrađenim bezbednosnim i obaveštajnim podacima o pretnjama.
 
 #### Performanse i pouzdanost 1
 
-Ovi serveri obezbeđuju pouzdane i brze DNS preglede bez blokiranja određenih kategorija
+These servers provide reliable and fast DNS lookups without blocking any specific categories.
 
 | Protokol  | Adresa                                |                                                                |
 | --------- | ------------------------------------- | -------------------------------------------------------------- |
@@ -150,7 +146,7 @@ Ovi serveri obezbeđuju pouzdane i brze DNS preglede bez blokiranja određenih k
 
 #### Pouzdanost i performanse 2*
 
-Ovi serveri obezbeđuju pouzdane i brze DNS preglede bez blokiranja određenih kategorija i takođe sprečavaju preusmeravanje NXDomain (nepostojeći domen) odgovora na landing page
+These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
 
 | Protokol  | Adresa                                |                                                                |
 | --------- | ------------------------------------- | -------------------------------------------------------------- |
@@ -159,7 +155,7 @@ Ovi serveri obezbeđuju pouzdane i brze DNS preglede bez blokiranja određenih k
 
 #### Zaštita od pretnji
 
-Ovi serveri obezbeđuju zaštitu od zlonamernih domena i uključuju funkcije "pouzdanost i performanse"
+These servers provide protection against malicious domains and also include "Reliability & Performance" features.
 
 | Protokol  | Adresa                                |                                                                |
 | --------- | ------------------------------------- | -------------------------------------------------------------- |
@@ -168,7 +164,7 @@ Ovi serveri obezbeđuju zaštitu od zlonamernih domena i uključuju funkcije "po
 
 #### Porodična bezbednost
 
-Ovi serveri obezbeđuju blokiranje pristupa sadržaju za odrasle i takođe uključuju "Reliability & Performance" + "Threat Protection" funkcije
+These servers provide adult content blocking and also include "Reliability & Performance" + "Threat Protection" features.
 
 | Protokol  | Adresa                                |                                                                |
 | --------- | ------------------------------------- | -------------------------------------------------------------- |
@@ -177,7 +173,7 @@ Ovi serveri obezbeđuju blokiranje pristupa sadržaju za odrasle i takođe uklju
 
 #### Poslovna zaštita
 
-Ovi serveri obezbeđuju blokiranje neželjenog i sadržaja koji troši vreme, a uključuju i "Performanse pouzdanosti & " + "Zaštita od pretnji" + "Porodična bezbednost"
+These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features.
 
 | Protokol  | Adresa                                |                                                                |
 | --------- | ------------------------------------- | -------------------------------------------------------------- |
@@ -190,7 +186,7 @@ Ovi serveri obezbeđuju blokiranje neželjenog i sadržaja koji troši vreme, a 
 
 #### Standard
 
-DNS serveri sa prilagođenim filtriranjem koji štite uređaj od zlonamernog softvera
+DNS servers with custom filtering that protects your device from malware.
 
 | Protokol       | Adresa                                                         |                                                                                                                                               |
 | -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -202,7 +198,7 @@ DNS serveri sa prilagođenim filtriranjem koji štite uređaj od zlonamernog sof
 
 #### Porodična zaštita
 
-OpenDNS serveri koji obezbeđuju blokiranje sadržaja za odrasle
+OpenDNS servers that provide adult content blocking.
 
 | Protokol       | Adresa                                                        |                                                                                                                                              |
 | -------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -244,7 +240,6 @@ OpenDNS serveri koji obezbeđuju blokiranje sadržaja za odrasle
 | DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query` | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://security.cloudflare-dns.com`             | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
-
 #### Blokiranje zlonamernog softvera i sadržaja za odrasle
 
 | Protokol             | Adresa                                          |                                                                                            |
@@ -253,7 +248,6 @@ OpenDNS serveri koji obezbeđuju blokiranje sadržaja za odrasle
 | DNS, IPv6            | `2606:4700:4700::1113` i `2606:4700:4700::1003` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`   | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
 | DNS-over-TLS         | `tls://family.cloudflare-dns.com`               | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
-
 
 ### Quad9 DNS
 
@@ -274,7 +268,7 @@ Obični DNS serveri koji obezbeđuju zaštitu od phishinga i špijunskog softver
 
 #### Nebezbedno
 
-Neobezbeđeni DNS serveri ne obezbeđuju bezbednosnu blok listu, DNSSEC, nema EDNS klijent-podmreže
+Unsecured DNS servers don't provide security blocklists, DNSSEC, or EDNS Client Subnet.
 
 | Protokol       | Adresa                                                             |                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -287,7 +281,7 @@ Neobezbeđeni DNS serveri ne obezbeđuju bezbednosnu blok listu, DNSSEC, nema ED
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet je metod koji uključuje komponente podataka IP adrese krajnjeg korisnika u zahtevima koji se šalju autoritativnim DNS serverima. On obezbeđuje bezbednosnu blok listu, DNSSEC, EDNS klijent-podmrežnu mrežu.
+EDNS Client Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client Subnet.
 
 | Protokol       | Adresa                                                          |                                                                                                                                                |
 | -------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -297,28 +291,30 @@ EDNS Client-Subnet je metod koji uključuje komponente podataka IP adrese krajnj
 | DNSCrypt, IPv6 | Dobavljač: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                             | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                         | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+
 ### Verisign javni DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) je besplatna DNS usluga koja nudi poboljšanu stabilnost i bezbednost DNS-a u odnosu na druge alternative. Verisign poštuje privatnost korisnika: ne prodaje javne DNS podatke trećim licima i preusmerava upite korisnika kako im ne bi servirao bilo kakve reklame.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) je besplatna DNS usluga koja nudi poboljšanu stabilnost i bezbednost DNS-a u odnosu na druge alternative. Verisign respects users' privacy: they neither sell public DNS data to third parties nor redirect users' queries to serve them ads.
 
 | Protokol  | Adresa                                  |                                                                |
 | --------- | --------------------------------------- | -------------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` ili `64.6.65.6`             | [Dodaj u AdGuard](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` ili `2620:74:1c::2:2` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) je švajcarski javni DNS servis koji pruža [switch.ch](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a Swiss public DNS service provided by [switch.ch](https://www.switch.ch/).
 
-| Protokol       | Adresa                                                                            |                                                                            |
-| -------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| DNS, IPv4      | Dobavljač: `dns.switch.ch` IP: `130.59.31.248`                                    | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Dobavljač: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                               | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                 | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| Protokol       | Adresa                                                                           |                                                                            |
+| -------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| DNS, IPv4      | Dobavljač: `dns.switch.ch` IP: `130.59.31.248`                                   | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Dobavljač: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                              | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) je besplatna alternativna DNS usluga od strane Dyn-a
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn.
 
 | Protokol  | Adresa                            |                                                           |
 | --------- | --------------------------------- | --------------------------------------------------------- |
@@ -364,29 +360,25 @@ EDNS Client-Subnet je metod koji uključuje komponente podataka IP adrese krajnj
 | --------- | ---------------- | ---------------------------------------------------------- |
 | DNS, IPv4 | `193.58.251.251` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) je brz i bezbedan DNS server sa zaštitom od reklama, praćenja i phishinga.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
 
 #### West DNS Server (Glavni)
 
-| Protokol       | Adresa                                                                        |                                                                                                                                                                   |
-| -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.38.152.163` i `93.115.24.204`                                             | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6      | `2a03:90c0:56::1a5` i `2a02:7b40:5eb0:e95d::1`                                | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6 | Dobavljač: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                             | [Dodaj u AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS-over-TLS   | `tls://dns.comss.one`                                                         | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| Protokol       | Adresa                            |                                                                            |
+| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Dodaj u AdGuard](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dns.comss.one`             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)               |
+| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [Dodaj u AdGuard](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ)          |
 
 #### East DNS Server (Sibir i Daleki istok)
 
-| Protokol       | Adresa                                  |                                                                                   |
-| -------------- | --------------------------------------- | --------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.223.109.31` i `91.230.211.67`       | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6      | `2a03:90c0:b5::1a` i `2a04:2fc0:39::47` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`  | [Dodaj u AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`              | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| Protokol       | Adresa                                 |                                                                                   |
+| -------------- | -------------------------------------- | --------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Dodaj u AdGuard](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Dodaj u AdGuard](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA)          |
 
 ### Safe DNS
 
@@ -403,91 +395,90 @@ EDNS Client-Subnet je metod koji uključuje komponente podataka IP adrese krajnj
 
 #### Privatni
 
-Samo u "Privatnom" režimu, samo DNS rezolucija
+In "Private" mode, DNS resolution only.
 
-| Protokol               | Adresa                                                                                               |                                                                                                   |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` i `149.112.122.10`                                                                  | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` i `2620:10A:80BC::10`                                                            | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                   | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Protokol               | Adresa                                                                                              |                                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` i `149.112.122.10`                                                                 | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` i `2620:10A:80BC::10`                                                           | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Zaštićeno
 
-U "Zaštićenom" režimu, malver i zaštita od phishinga
+In "Protected" mode, malware and phishing protection.
 
-| Protokol                 | Adresa                                                                                                 |                                                                                                      |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.20` i `149.112.122.20`                                                                    | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` i `2620:10A:80BC::20`                                                              | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                   | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - zaštićeno | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol                 | Adresa                                                                                                |                                                                                                      |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.20` i `149.112.122.20`                                                                   | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` i `2620:10A:80BC::20`                                                             | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - zaštićeno | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Porodica
 
-U režimu "Porodica", Zaštićeno + blokiranje sadržaja za odrasle
+In "Family" mode, Protected + blocking adult content.
 
-| Protokol              | Adresa                                                                                                 |                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| DNS, IPv4             | `149.112.121.30` i `149.112.122.30`                                                                    | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` i `2620:10A:80BC::30`                                                              | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                      | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| Protokol              | Adresa                                                                                                |                                                                                                  |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| DNS, IPv4             | `149.112.121.30` i `149.112.122.30`                                                                   | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` i `2620:10A:80BC::30`                                                             | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [Dodaj u AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project.
 
-| Protokol  | Adresa                                     |                                                                |
-| --------- | ------------------------------------------ | -------------------------------------------------------------- |
-| DNS, IPv4 | `185.121.177.177` and `169.239.202.202`    | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADzE4NS4xMjEuMTc3LjE3Nw)   |
-| DNS, IPv6 | `2a05:dfc7:5::53` and `2a05:dfc7:5353::53` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAEVsyYTA1OmRmYzc6NTo6NTNd) |
+| Protokol  | Adresa                                   |                                                                |
+| --------- | ---------------------------------------- | -------------------------------------------------------------- |
+| DNS, IPv4 | `185.121.177.177` i `169.239.202.202`    | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADzE4NS4xMjEuMTc3LjE3Nw)   |
+| DNS, IPv6 | `2a05:dfc7:5::53` i `2a05:dfc7:5353::53` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAEVsyYTA1OmRmYzc6NTo6NTNd) |
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) A small hobby DNS project. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares
+[BlahDNS](https://blahdns.com/) Mali hobi DNS projekat. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares.
 
-#### Finland DNS Server
+#### Finski DNS server
 
-| Protokol             | Adresa                                                                   |                                                                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-fi.blahdns.com`  IP: `95.216.212.177`               | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWZpLmJsYWhkbnMuY29t)                                                                                     |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-fi.blahdns.com/dns-query` IP: `95.216.212.177`    | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWZpLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                              |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `95.216.212.177:8443`        | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f9:c010:43ce::1:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresa                                                                    |                                                                                                                                                                |
+| -------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Hostname: `tls://dot-fi.blahdns.com`  IP: `95.216.212.177`                | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAYdGxzOi8vZG90LWZpLmJsYWhkbnMuY29t)                                                                                     |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-fi.blahdns.com/dns-query` IP: `95.216.212.177`     | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWZpLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                              |
+| DNSCrypt, IPv4       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `95.216.212.177:8443`        | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
+| DNSCrypt, IPv6       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f9:c010:43ce::1:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
-#### Japan DNS Server
+#### Japanski DNS server
 
-| Protokol             | Adresa                                                                              |                                                                                                                                                                            |
-| -------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-jp.blahdns.com`  IP: `139.162.112.47`                          | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAASZG90LWpwLmJsYWhkbnMuY29t)                                                                                                         |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-jp.blahdns.com/dns-query`                                    | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWpwLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                                          |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `139.162.112.47:8443`                   | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzEzOS4xNjIuMTEyLjQ3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                         |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `[2400:8902::f03c:92ff:fe27:344b]:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTI3OjM0NGJdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresa                                                                               |                                                                                                                                                                            |
+| -------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Hostname: `tls://dot-jp.blahdns.com`  IP: `139.162.112.47`                           | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAASZG90LWpwLmJsYWhkbnMuY29t)                                                                                                         |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-jp.blahdns.com/dns-query`                                     | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAASZG9oLWpwLmJsYWhkbnMuY29tCi9kbnMtcXVlcnk)                                                                                          |
+| DNSCrypt, IPv4       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `139.162.112.47:8443`                   | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzEzOS4xNjIuMTEyLjQ3Ojg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                         |
+| DNSCrypt, IPv6       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `[2400:8902::f03c:92ff:fe27:344b]:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAJVsyNDAwOjg5MDI6OmYwM2M6OTJmZjpmZTI3OjM0NGJdOjg0NDMgbC1IEdPcd6w0tIkpG7PJPgsGG0O9BZX-gf0hJ0E_SLUbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
-#### Germany DNS Server
+#### Nemački DNS server
 
-| Protokol             | Adresa                                                                   |                                                                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot-de.blahdns.com`  IP: `159.69.198.101`               | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAASZG90LWRlLmJsYWhkbnMuY29t)                                                                                             |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`    | [Dodaj u AdGuard](sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ)                                                           |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443`        | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f8:1c1c:6b4b::1:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
+| Protokol             | Adresa                                                                    |                                                                                                                                                                |
+| -------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS, IPv4   | Hostname: `tls://dot-de.blahdns.com`  IP: `159.69.198.101`                | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAASZG90LWRlLmJsYWhkbnMuY29t)                                                                                             |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`     | [Dodaj u AdGuard](sdns://AgMAAAAAAAAADjE1OS42OS4xOTguMTAxABJkb2gtZGUuYmxhaGRucy5jb20KL2Rucy1xdWVyeQ)                                                           |
+| DNSCrypt, IPv4       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443`        | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)             |
+| DNSCrypt, IPv6       | Dobavljač: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f8:1c1c:6b4b::1:8443` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t) |
 
 ### Snopyta DNS
 
-[Snopyta DNS](https://snopyta.org/) is a privacy friendly DNS service run by Noah Seefried.
+[Snopyta DNS](https://snopyta.org/) je DNS usluga pogodna za privatnost koju vodi Noah Seefried.
 
 | Protokol       | Adresa                                                                                            |                                                                                        |
 | -------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://fi.doh.dns.snopyta.org/dns-query` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301` | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAWZmkuZG9oLmRucy5zbm9weXRhLm9yZwovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301`             | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAAWZmkuZG90LmRucy5zbm9weXRhLm9yZw)               |
+| DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` i IPv6: `2a01:4f9:2a:1919::9301`               | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAAWZmkuZG90LmRucy5zbm9weXRhLm9yZw)               |
 
 ### DNS za porodicu
 
-[DNS za porodične](https://dnsforfamily.com/) da blokira veb lokacije za odrasle. Pomaže deci i svima za bezbedno surfovanje internetom bez brige da će ih pratiti štetni sajtovi.
-
+[DNS za porodične](https://dnsforfamily.com/) da blokira veb lokacije za odrasle. It enables children and adults to surf the Internet safely without worrying about being tracked by malicious websites.
 
 | Protokol       | Adresa                                                      |                                                                                                                                           |
 | -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -522,7 +513,7 @@ U režimu "Porodica", Zaštićeno + blokiranje sadržaja za odrasle
 
 ### CFIEC javni DNS
 
-DNS usluga zasnovana na IPv6 sa jakim bezbednosnim mogućnostima i zaštitom od špijunskog softvera, zlonamernih Veb lokacija. Podržava DNS64 da obezbedi rezoluciju imena domena samo za IPv6 korisnike.
+DNS usluga zasnovana na IPv6 sa jakim bezbednosnim mogućnostima i zaštitom od špijunskog softvera, zlonamernih Veb lokacija. It supports DNS64 to provide domain name resolution only for IPv6 users.
 
 | Protokol       | Adresa                            |                                                                            |
 | -------------- | --------------------------------- | -------------------------------------------------------------------------- |
@@ -532,27 +523,27 @@ DNS usluga zasnovana na IPv6 sa jakim bezbednosnim mogućnostima i zaštitom od 
 
 ### Nawala Childprotection DNS
 
-[Nawala Childprotection DNS](http://nawala.id/) is an anycast Internet filtering system that protects children from inappropriate websites and abusive contents.
+[Nawala Childprotection DNS](http://nawala.id/) je anycast sistem filtriranja interneta koji štiti decu od neprikladnih veb lokacija i uvredljivih sadržaja.
 
-| Protokol       | Adresa                                                      |                                                                                                                                            |
-| -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `180.131.144.144` and `180.131.145.145`                     | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA)                                                                               |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144` | [Dodaj u AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
+| Protokol       | Adresa                                                       |                                                                                                                                            |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `180.131.144.144` i `180.131.145.145`                        | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NA)                                                                               |
+| DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt-cert.nawala.id` IP: `180.131.144.144` | [Dodaj u AdGuard](sdns://AQAAAAAAAAAADzE4MC4xMzEuMTQ0LjE0NCDGC-b_38Dj4-ikI477AO1GXcLPfETOFpE36KZIHdOzLhkyLmRuc2NyeXB0LWNlcnQubmF3YWxhLmlk) |
 
 ### 360 Secure DNS
 
-**360 Secure DNS** is a industry-leading recursive DNS service with advanced network security threat protection.
+**360 Secure DNS** je vodeća industrijska rekursivna DNS usluga sa naprednom zaštitom bezbednosti mreže.
 
-| Protokol       | Adresa                             |                                                                        |
-| -------------- | ---------------------------------- | ---------------------------------------------------------------------- |
-| DNS, IPv4      | `101.226.4.6` and `218.30.118.6`   | [Dodaj u AdGuard](sdns://AAAAAAAAAAAACzEwMS4yMjYuNC42)                 |
-| DNS, IPv4      | `123.125.81.6` and `140.207.198.6` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADDEyMy4xMjUuODEuNg)               |
-| DNS-over-HTTPS | `https://doh.360.cn/dns-query`     | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLjM2MC5jbgovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://dot.360.cn`                 | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAKZG90LjM2MC5jbg)               |
+| Protokol       | Adresa                           |                                                                        |
+| -------------- | -------------------------------- | ---------------------------------------------------------------------- |
+| DNS, IPv4      | `101.226.4.6` i `218.30.118.6`   | [Dodaj u AdGuard](sdns://AAAAAAAAAAAACzEwMS4yMjYuNC42)                 |
+| DNS, IPv4      | `123.125.81.6` i `140.207.198.6` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADDEyMy4xMjUuODEuNg)               |
+| DNS-over-HTTPS | `https://doh.360.cn/dns-query`   | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAKZG9oLjM2MC5jbgovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dot.360.cn`               | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAKZG90LjM2MC5jbg)               |
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
+[IIJ. JP](https://public.dns.iij.jp/) je javni DNS servis kojim upravlja Internet inicijativa Japan. Takođe blokira sadržaj zlostavljanja dece.
 
 | Protokol       | Adresa                                |                                                                                  |
 | -------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
@@ -561,14 +552,14 @@ DNS usluga zasnovana na IPv6 sa jakim bezbednosnim mogućnostima i zaštitom od 
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.com/) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
+[DNSPod Public DNS+](https://www.dnspod.com/) je DNS dobavljač usluga pogodnih za privatnost sa višegodišnjim iskustvom u razvoju usluga rešavanja imena domena, ima za cilj da korisnicima pruži brziju, tačniju i stabilniju uslugu rekursivne rezolucije.
 
-| Protokol       | Adresa                            |                                                                    |
-| -------------- | --------------------------------- | ------------------------------------------------------------------ |
-| DNS, IPv4      | `119.29.29.29` and `119.28.28.28` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ)           |
-| DNS-over-HTTPS | `https://doh.pub/dns-query`       | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5) |
-| DNS-over-HTTPS | `https://dns.pub/dns-query`       | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAHZG5zLnB1YgovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | `tls://dot.pub`                   | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAHZG90LnB1Yg)               |
+| Protokol       | Adresa                          |                                                                    |
+| -------------- | ------------------------------- | ------------------------------------------------------------------ |
+| DNS, IPv4      | `119.29.29.29` i `119.28.28.28` | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADDExOS4yOS4yOS4yOQ)           |
+| DNS-over-HTTPS | `https://doh.pub/dns-query`     | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAHZG9oLnB1YgovZG5zLXF1ZXJ5) |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAHZG5zLnB1YgovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAHZG90LnB1Yg)               |
 
 ### 114DNS
 
@@ -576,7 +567,7 @@ DNS usluga zasnovana na IPv6 sa jakim bezbednosnim mogućnostima i zaštitom od 
 
 #### Normal
 
-Blokiranje reklama i dosadnih Veb lokacija
+Block ads and annoying websites.
 
 | Protokol  | Adresa                                |                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------ |
@@ -584,7 +575,7 @@ Blokiranje reklama i dosadnih Veb lokacija
 
 #### Sigurno
 
-Blokira phishing, zlonamerne i druge nebezbedne Web lokacije
+Blocks phishing, malicious and other unsafe websites.
 
 | Protokol  | Adresa                                |                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------ |
@@ -600,7 +591,7 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) je besplatna alternativna DNS usluga bez evidentiranja od strane TWNIC-a (Tajvanski mrežni informativni centar)
+[Quad101](https://101.101.101.101) is a free alternative DNS service without logging by TWNIC (Taiwan Network Information Center).
 
 | Protokol       | Adresa                                |                                                                           |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------- |
@@ -608,7 +599,6 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 | DNS, IPv6      | `2001:de4::101` i `2001:de4::102`     | [Dodaj u AdGuard](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
 | DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`      | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://101.101.101.101`               | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
-
 
 ### OneDNS
 
@@ -628,7 +618,7 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blokira preko 140 hiljada reklama, praćenja, malvera i phishing domena!. Nema evidentiranja, nema ECS-a, DNSSEC validacija, besplatno!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains. Nema evidentiranja, nema ECS-a, DNSSEC validacija, besplatno!
 
 #### Singapur DNS server
 
@@ -642,7 +632,6 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                            | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                       | [Dodaj u AdGuard](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                        | [Dodaj u AdGuard](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
-
 
 #### Japan DNS Server
 
@@ -658,7 +647,7 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) je otvoren, besplatan i javni DNS servis koji pruža [Virtexxa cloud usluga](https://virtexxa.com/). Nema DNS preusmeravanja, nema evidentiranja.
+[FreeDNS](https://freedns.zone/) is an open, free and public DNS service. Nema DNS preusmeravanja, nema evidentiranja.
 
 | Protokol  | Adresa                              |                                                            |
 | --------- | ----------------------------------- | ---------------------------------------------------------- |
@@ -667,7 +656,7 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) je besplatan anonimni DNS razrešivač od strane Freenom World-a
+[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World.
 
 | Protokol  | Adresa                        |                                                        |
 | --------- | ----------------------------- | ------------------------------------------------------ |
@@ -679,7 +668,7 @@ Ovi serveri blokiraju Veb lokacije za odrasle i neprikladne sadržaje.
 
 #### OSZX server
 
-Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen je DNSSEC
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protokol       | Adresa                                                                    |                                                                                                                                                           |
 | -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -692,7 +681,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 #### PumpleX server
 
-Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen je DNSSEC
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protokol       | Adresa                                                                         |                                                                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -715,7 +704,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) je DNS servis od strane Strongarma koji sprečava ljude da komuniciraju sa zlonamernim sadržajem
+[Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content.
 
 | Protokol  | Adresa                           |                                                           |
 | --------- | -------------------------------- | --------------------------------------------------------- |
@@ -730,7 +719,6 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 | DNS, IPv4      | `104.155.237.225` i `104.197.28.121`                               | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Dobavljač: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
-
 ### DeCloudUs DNS
 
 [DeCloudUs DNS](https://decloudus.com/) A bezbedan, privatni, DNS otvorenog koda, razrešivač sa zaštitom od malvera, blokiranjem reklama i bez evidencija. Odguglajte vaš telefon, tablet i računar.
@@ -744,7 +732,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) vodi Elijas Ojala. Finska.
+[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
 
 | Protokol       | Adresa                                   |                                                                                      |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -753,7 +741,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) je server koji ostaje bez kapljice Digitalnog okeana u regionu BLR1. Održava ga Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Održava ga Abhay Rana aka Nemo.
 
 | Protokol       | Adresa                                                            |                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -762,7 +750,6 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 ### DNS.SB
 
 [DNS. SB](https://dns.sb/) besplatnu DNS uslugu bez evidentiranja, omogućen je DNSSEC.
-
 
 | Protokol       | Adresa                            |                                                                        |
 | -------------- | --------------------------------- | ---------------------------------------------------------------------- |
@@ -784,7 +771,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### Fondation Restena DNS
 
-[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) serveri koje je obezbedila [Restena Fondacija](https://www.restena.lu/)
+[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/).
 
 | Protokol       | Adresa                                                                            |                                                                                   |
 | -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -793,7 +780,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) je Fusl-ovaj javni primarni OpenNIC Tier2 Anycast DNS razrešivač
+[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | Protokol       | Adresa                                                                |                                                                                                                                                        |
 | -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -802,7 +789,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) besplatne DNS servere koje obezbeđuje Freifunk München
+[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
 | Protokol             | Adresa                                                                  |                                                                                                                                                           |
 | -------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -813,7 +800,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) je javni razrešivač kojim upravlja Digitalno društvo. Domaćin u Cirihu, Švajcarska
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) je javni razrešivač kojim upravlja Digitalno društvo. Hosted in Zurich, Switzerland.
 
 | Protokol       | Adresa                                                                                       |                                                                                                |
 | -------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -832,7 +819,7 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) za testiranje servera koje obezbeđuje ibksturm. OPENNIC, DNSSEC, bez filtriranja, bez evidentiranja
+[ibksturm DNS](https://ibksturm.synology.me/) za testiranje servera koje obezbeđuje ibksturm. OPENNIC, DNSSEC, no filtering, no logging.
 
 | Protokol             | Adresa                                                                                     |                                                                                                                                                                                    |
 | -------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -845,36 +832,36 @@ Ovi serveri ne obezbeđuju blokiranje reklama, ne drže evidencije i omogućen j
 
 Saradnički otvoreni projekat za promovisanje, implementaciju i [DNS Privacy](https://dnsprivacy.org/).
 
-DNS serveri koje vodi [Stubby programeri](https://getdnsapi.net/)
+DNS servers run by the [Stubby developers](https://getdnsapi.net/).
 
 | Protokol     | Adresa                                                                                                                        |                                                                           |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                           | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Dobavljač: `Surfnet` Hostname `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Dobavljač: `Surfnet` Hostname `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Ostali DNS serveri sa smernicama "bez evidentiranja"
+Other DNS servers with 'no logging' policy.
 
-| Protokol           | Adresa                                                                                                             |                                                                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| DNS-over-TLS       | Dobavljač: `UncensoredDNS` Hostname `tls://unicast.censurfridns.dk` IP: `89.233.43.71` i IPv6: `2a01:3a0:53:53::0` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Dobavljač: `UncensoredDNS` Hostname `tls://anycast.censurfridns.dk` IP: `91.239.100.100` i IPv6: `2001:67c:28a4::` | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Dobavljač: `dkg` Hostname `tls://dns.cmrg.net` IP: `199.58.81.218`i IPv6: `2001:470:1c:76d::53`                    | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                           | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Hostname `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` i IPv6: `2001:8b0:24:24::24`                         | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Hostname `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` i IPv6: `2a01:4f8:c0c:3c03::2`                             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Hostname `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` i IPv6: `2a01:4f8:c0c:3bfc::2`                             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Hostname `tls://dns.neutopia.org` IP: `89.234.186.112` i IPv6: `2a00:5884:8209::2`                                 | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Dobavljač: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` i IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| Protokol           | Adresa                                                                                                               |                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                  | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` i IPv6: `2a03:b0c0:0:1010::e9a:3001`                         | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
-DNS serveri sa minimalnim evidentiranjem. Ovi serveri koriste neke certifikate za evidentiranje, samopotpisane certifikate ili nemaju podršku za strogi režim.
+DNS servers with minimal logging/restrictions. Ovi serveri koriste neke certifikate za evidentiranje, samopotpisane certifikate ili nemaju podršku za strogi režim.
 
-| Protokol     | Adresa                                                                                                          |                                                                                |
-| ------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| DNS-over-TLS | Dobavljač: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` i IPv6: `2001:1398:1:0:200:1:123:46`    | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Dobavljač: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` i IPv6: `2620:ff:c000:0:1::64:25` | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| Protokol     | Adresa                                                                                                            |                                                                                |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -882,7 +869,7 @@ DNS serveri sa minimalnim evidentiranjem. Ovi serveri koriste neke certifikate z
 
 #### Blitz
 
-[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
+[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant.
 
 | Protokol                                     | Adresa                            |                                                                            |
 | -------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------- |
@@ -940,7 +927,6 @@ DNS serveri sa minimalnim evidentiranjem. Ovi serveri koriste neke certifikate z
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Dodaj u AdGuard](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
 
-
 #### Spain
 
 | Protokol       | Adresa                                |                                                                                  |
@@ -973,7 +959,6 @@ DNS serveri sa minimalnim evidentiranjem. Ovi serveri koriste neke certifikate z
 | DNS, IPv4      | `45.76.113.31`                                             | [Dodaj u AdGuard](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [Dodaj u AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS-over-TLS   | `tls://dot.seby.io`                                        | [Dodaj u AdGuard](sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8)                                                                         |
-
 
 ### puntCAT DNS
 
@@ -1036,12 +1021,11 @@ Porodični režim nudi zaštitu "Bezbednih" razrešivača i blokira lokacije za 
 | DNS-over-HTTPS | `https://anycast.dns.nextdns.io` | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://anycast.dns.nextdns.io`   | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
 
-
 ### RethinkDNS
 
 [RethinkDNS](https://www.rethinkdns.com/configure) pruža DNS-over-HTTPS uslugu koja radi kao Cloudflare Worker i DNS-over-TLS servis koji radi kao Fly.io radnik sa konfiguracionim blok listama.
 
-#### Nefiltrirano
+#### Bez filtriranja
 
 | Protokol       | Adresa                          |                                                                          |
 | -------------- | ------------------------------- | ------------------------------------------------------------------------ |
@@ -1051,9 +1035,18 @@ Porodični režim nudi zaštitu "Bezbednih" razrešivača i blokira lokacije za 
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) javni DNS servis koji štiti od reklama, malver i blokiranje društvenih medija.
+[ControlD](https://controld.com/free-dns) is a customizable DNS service with proxy capabilities. This means it not only blocks things (ads, porn, etc.), but can also unblock websites and services.
 
-#### Blokiranje zlonamernog softvera
+#### Bez filtriranja
+
+| Protokol       | Adresa                            |                                                                                       |
+| -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `76.76.2.0` and `76.76.10.0`      | [Dodaj u AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| IPv6           | `2606:1a40::` and `2606:1a40:1::` | [Dodaj u AdGuard](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0` | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS-over-TLS   | `p0.freedns.controld.com`         | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
+
+#### Block malware
 
 | Protokol       | Adresa                            |                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
@@ -1095,27 +1088,26 @@ Porodični režim nudi zaštitu "Bezbednih" razrešivača i blokira lokacije za 
 | DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query` | [Dodaj u AdGuard](sdns://AgcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://adblock.doh.mullvad.net`             | [Dodaj u AdGuard](sdns://AwcAAAAAAAAAAAAXYWRibG9jay5kb2gubXVsbHZhZC5uZXQ)                |
 
-### Small personal resolvers
+### Mali lični razrešivač
 
-In this section we list small, mostly personal DNS resolvers. They often have only one or very few servers and worse uptime than 'big' providers. We won't be able to proper monitor their availability. **Use them at your own risk!**
+U ovom odeljku nabrajamo male, uglavnom lične DNS razrešivače. Oni često imaju samo jedan ili vrlo mali broj servera i lošije vreme od 'velikih' provajdera. Nećemo moći pravilno da pratimo njihovu dostupnost. **Koristite ih na sopstveni rizik!**
 
 #### Arapurayil
 
-[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
+[Arapurayil](https://dns.arapurayil.com) je lični DNS servis koji se nalazi u Mumbaju, u Indiji.
 
-Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
+Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | Protokol       | Adresa                                                       |                                                                                                                                                          |
 | -------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [Dodaj u AdGuard](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
 | DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [Dodaj u AdGuard](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
 
-
 #### Dandelion Sprout's Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) je lična DNS usluga koja se nalazi u Trondhajmu, u Norveškoj, koristeći AdGuard Home infrastrukturu.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
+Blokira više oglasa i malvera od AdGuard DNS zahvaljujući naprednijoj sintaksi, ali ide lakše na tragačima, i blokira desničarske tabloide i većinu imageboard-ova. Vođenje evidencije se koristi za poboljšanje korišćenih filterlista (npr. deblokiranjem lokacija koje nije trebalo blokirati), kao i za određivanje najmanje loših vremena za ažuriranje serverskog sistema.
 
 | Protokol       | Adresa                                                |                                                                                                       |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |

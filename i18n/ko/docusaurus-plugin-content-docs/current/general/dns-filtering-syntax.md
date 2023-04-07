@@ -21,9 +21,9 @@ sidebar_position: 2
 
 * **Compatibility.** Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
 
-* **Extensibility.** For the last decade the Adblock-style syntax has greatly evolved, and we don't see why we can't extend it even more and provide additional features for network-wide blockers.
+* **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multiple filter lists regardless of their type, we provide a tool that can be used to compile blocklists. We called it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 ## 기본 예제
 
@@ -38,11 +38,11 @@ If you're maintaining an `/etc/hosts`-style blocklist or if you maintain multipl
   ```none
   # Returns the IP address 1.2.3.4 for example.org.
   1.2.3.4 example.org
-  # Blocks example.com by responding with 0.0.0.0.
-  0.0.0.0 example.com
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `example.org`: a simple domain rule. Blocks `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
+* `example.org`: a simple domain rule. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` remains allowed.
 
 * `! Here goes a comment` and `# Also a comment`: comments.
 
@@ -109,7 +109,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
 
-* You may want to use multiple modifiers in a rule. Separate them by commas in this case:
+* You may want to use multiple modifiers in a rule. In that case, separate them by commas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -143,7 +143,7 @@ $client=~value1
 
 Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Examples:**
 
@@ -167,7 +167,7 @@ The syntax is:
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything save for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Block everything.
@@ -186,9 +186,9 @@ The problem with this approach is that this way you will also unblock tracking d
 
 **Examples:**
 
-* `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
+* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
-* `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 
@@ -412,7 +412,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.
@@ -494,6 +494,6 @@ What it's capable of:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

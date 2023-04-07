@@ -21,9 +21,9 @@ sidebar_position: 2
 
 * **兼容性。**您的屏蔽列表将与浏览器广告拦截器兼容，并且与浏览器过滤器列表共享规则会更容易。
 
-* **可扩展性。**在过去的十年中，Adblock 风格的语法有了很大的发展，我们不明白为什么我们不能进一步扩展它并为网络范围的拦截器提供额外的功能。
+* **可扩展性。**在过去的十年中，Adblock 风格的语法有了很大的发展，我们认为我们能进一步扩展它并为网络范围的拦截器提供额外的功能。
 
-如果您正在使用一个 `/etc/hosts` 风格的拦截列表，或者您使用多个过滤列表，无论其类型如何，我们提供一个工具，可以用来编译拦截列表。 我们称它为 [Hostlist compiler][hlc] ，我们自己用它来创建 [AdGuard DNS 过滤器][sdn]。
+如果有用户在建立一个 `/etc/hosts` 式的拦截列表或者多个过滤列表（无论类型如何），我们提供一个编译拦截列表的工具。 我们称它为 [Hostlist compiler][hlc] ，我们自己用它来创建 [AdGuard DNS 过滤器][sdn]。
 
 ## 基本示例
 
@@ -33,20 +33,20 @@ sidebar_position: 2
 
 * `1.2.3.4 example.org`：（注意，旧的 `/etc/hosts` 语法）在 AdGuard Home 里用 `1.2.3.4` 对 `example.org` 域名的查询，但 **没有** 其子网域的查询。 在私人 AdGuard DNS 中，阻止对 `example.org` 的访问。 `www.example.org` 仍然允许。
 
-  In AdGuard Home, using the unspecified IP address (`0.0.0.0`) or a local address (`127.0.0.1` and alike) for a host is basically the same as blocking that host.
+  在 AdGuard Home 中，对主机使用未指定的 IP 地址（`0.0.0.0`）或本地地址（`127.0.0.1` 等）基本上等同于拦截该主机。
 
   ```none
-  # Returns the IP address 1.2.3.4 for example.org.
+  # 返回 example.org 的 IP 地址 1.2.3.4。
   1.2.3.4 example.org
-  # Blocks example.com by responding with 0.0.0.0.
-  0.0.0.0 example.com
+# 通过响应 0.0.0.0 来阻止 example.org。
+  0.0.0.0 example.org
   ```
 
-* `example.org`: a simple domain rule. Blocks `example.org` domain but **not** its subdomains. `www.example.org` 仍然允许。
+* `example.org`：一个简单的域规则。 阻止 `example.org` 域，而**不是**其子域。 `www.example.org` 仍然允许。
 
-* `! Here goes a comment` and `# Also a comment`: comments.
+* `！ 这是一行注释`和`# 这也是一行注释`：注释。
 
-* `/REGEX/`: block access to the domains matching the specified regular expression.
+* `/REGEX/`：拦截访问与特定的正则表达式匹配的域名。
 
 ## Adblock 语法样式
 
@@ -109,7 +109,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
 
-* You may want to use multiple modifiers in a rule. Separate them by commas in this case:
+* You may want to use multiple modifiers in a rule. In that case, separate them by commas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -143,7 +143,7 @@ $client=~value1
 
 Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Examples:**
 
@@ -167,7 +167,7 @@ The syntax is:
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything save for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Block everything.
@@ -186,9 +186,9 @@ The problem with this approach is that this way you will also unblock tracking d
 
 **Examples:**
 
-* `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
+* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
-* `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 
@@ -412,7 +412,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.
@@ -494,6 +494,6 @@ What it's capable of:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

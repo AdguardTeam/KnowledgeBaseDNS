@@ -79,7 +79,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### 取消刷新该令牌
+### 移除刷新令牌
 
 要取消刷新该令牌，请使用给定参数发出以下 POST 请求：
 

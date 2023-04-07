@@ -15,22 +15,22 @@ sidebar_position: 4
 
 可以通过多种方式在 Android 设备上截屏，具体取决于设备型号及其制造商。
 
-一般来说，你应该在安卓系统中使用以下按钮组合。
+Generally, the following button combination can be used for Android:
 
-+ **同时按住*降低音量*和*电源*按钮 1-2 秒**
++ **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
 
 您的 Android 设备将捕获整个屏幕并将其保存为照片。 您的 Android 设备将捕获整个屏幕并将其保存为照片。
 
-但是，正如已经说过的那样，可能会因特定设备而有所不同。 让我们看看其他可能的操作：
+However, as already mentioned, the procedure may vary depending on the particular device. 让我们看看其他可能的操作：
 
-+ **同时按住 *Home* 和*电源按钮*1-2 秒；**
-+ **同时按住*后退*和*首页*按钮**
++ **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
++ **Press and hold the *Back* and *Home* buttons simultaneously**
 
-在 Android 8 及更高版本上，您还可以通过将手垂直放置在手机的左边缘或右边缘并用手触摸屏幕从该边缘向内滑动来截取屏幕截图。
+On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
 
 如果此方法不起作用，请检查*设置* > *高级* 功能，以启用 *轻扫以捕获*。
 
-此外，您始终可以使用任何特殊应用程序在您的设备上截取屏幕截图，例如，*Screenshot Easy*、*Screenshot Ultimate*、*Screenshot Snap* 等。
+此外，您可以使用任何特殊的应用程序在设备上拍摄屏幕截图，例如，*轻松截屏*、*终极截图*、*Screenshot Snap* 等。
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8和10 允许您使用 *Win + PrtScn* 组合非常快速地截取屏幕�
 
 还有一个用于截屏的专用程序，称为 *Snipping Tool* ，您可以通过“开始”菜单在计算机的标准程序中找到该程序。 截图工具可让您捕获桌面的任何区域或整个屏幕。 使用此程序截取屏幕截图后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
-此外，你也可以尝试使用不同的应用程序在电脑上进行截图，如 **PicPick**、**Nimbus Screenshot**、**Screenshot Captor**、**Snipaste**、**Monosnap** 等等。
+此外，您还可以尝试使用其他应用在计算机上截图，例如 **PicPick**、**Nimbus Screenshot**、**Screenshot Captor**、**Snipaste**、**Monosnap** 等。
 
 ### MacOS
 

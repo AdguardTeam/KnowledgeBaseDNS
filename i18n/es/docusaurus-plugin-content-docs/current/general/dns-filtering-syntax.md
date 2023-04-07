@@ -15,15 +15,15 @@ Hay tres enfoques diferentes para escribir listas de bloqueo de hosts:
 
 * [Sintaxis de dominios](#domains-only-syntax): una simple lista de nombres de dominio.
 
-Si está creando una lista de bloqueo, le recomendamos que utilice la sintaxis estilo [Adblock](#adblock-style-syntax). Tiene algunas ventajas importantes sobre la sintaxis antigua:
+Si estás creando una lista de bloqueo, te recomendamos que utilices la sintaxis estilo [sintaxis-al-estilo-Adblock](#adblock-style-syntax). Tiene algunas ventajas importantes sobre la sintaxis antigua:
 
 * **Tamaño de las listas de bloqueo.** El uso de comparación de patrones le permite tener una sola regla en lugar de cientos de entradas `/etc/hosts`.
 
 * **Compatibilidad.** Su lista de bloqueo será compatible con los bloqueadores de anuncios para navegador, y será más fácil compartir reglas con una lista de filtros de navegador.
 
-* **Extensibilidad.** Durante la última década, la sintaxis de estilo Adblock ha evolucionado enormemente, y no vemos por qué no extenderla aún más y proporcionar funciones adicionales para los bloqueadores de toda la red.
+* **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias listas de filtros independientemente de su tipo, proporcionamos una herramienta que se puede utilizar para compilar listas de bloqueo. Lo llamamos [compilador Hostlist][hlc] y lo utilizamos nosotros mismos para crear [el filtro DNS de AdGuard][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
 
 ## Ejemplos básicos
 
@@ -37,12 +37,12 @@ Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias lis
 
   ```none
   # Devuelve la dirección IP 1.2.3.4 para ejemplo.org.
-  1.2.3.4 ejemplo.org
-  # Bloquea ejemplo.com respondiendo con 0.0.0.0.
-  0.0.0.0 ejemplo.com
+  1.2.3.4 example.org
+  # Blocks example.org by responding with 0.0.0.0.
+  0.0.0.0 example.org
   ```
 
-* `example.org`: una regla de dominio simple. Bloquea el dominio `example.org` pero **no** sus subdominios. `www.example.org` sigue estando permitido.
+* `example.org`: una regla de dominio simple. Blocks the `example.org` domain but **not** its subdomains. `www.example.org` sigue estando permitido.
 
 * `! Es un comentario ` y `# También un comentario`: comentarios.
 
@@ -50,7 +50,7 @@ Si mantiene una lista de bloqueo de estilo `/etc/hosts` o si mantiene varias lis
 
 ## Sintaxis de estilo Adblock
 
-Este es un subconjunto de la [sintaxis tradicional de estilo Adblock][adb] que utilizan los bloqueadores de anuncios para navegador.
+This is a subset of the [traditional Adblock-style][adb] syntax which is used by browser ad blockers.
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -109,7 +109,7 @@ Puedes cambiar el comportamiento de una regla añadiendo modificadores. Los modi
 
   `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. El modificador es "importante".
 
-* Es posible que desee utilizar varios modificadores en una regla. En tal caso, sepárelos con comas:
+* Es posible que desee utilizar varios modificadores en una regla. In that case, separate them by commas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -143,7 +143,7 @@ $client=~valor1
 
 Los nombres de los clientes suelen contener espacios u otros caracteres especiales, por lo que debe colocar el nombre entre comillas. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** keep `~` out of the quotes.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Ejemplos:**
 
@@ -167,7 +167,7 @@ La sintaxis es:
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything save for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Block everything.
@@ -186,9 +186,9 @@ The problem with this approach is that this way you will also unblock tracking d
 
 **Ejemplos:**
 
-* `*$denyallow=com|net`: block everything save for `*.com` and `*.net`.
+* `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
-* `@@*$denyallow=com|net`: unblock everything save for `*.com` and `*.net`.
+* `@@*$denyallow=com|net`: unblock everything except for `*.com` and `*.net`.
 
 * `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
 
@@ -412,7 +412,7 @@ The list of allowed tags:
   * `device_audio`: audio devices.
   * `device_camera`: cameras.
   * `device_gameconsole`: game consoles.
-  * `device_laptop`: laptops,
+  * `device_laptop`: laptops.
   * `device_nas`: NAS (Network-attached Storages).
   * `device_pc`: PCs.
   * `device_phone`: phones.
@@ -494,6 +494,6 @@ What it's capable of:
 [hlc]: https://github.com/AdguardTeam/HostlistCompiler
 [sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
+[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

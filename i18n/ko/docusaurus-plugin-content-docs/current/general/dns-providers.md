@@ -5,11 +5,11 @@ sidebar_position: 3
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) 은 광고 차단, 개인 정보 보호 및 자녀 보호를 위한 대체 솔루션입니다. 사용하는 플랫폼과 장치에 관계없이 온라인 광고, 추적기 및 피싱에 대해 필요한 수 많은 보호 기능을 제공합니다.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) 은 광고 차단, 개인 정보 보호 및 자녀 보호를 위한 대체 솔루션입니다. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
 #### 기본 모드
 
-이러한 서버들은 광고, 추적 및 피싱을 차단합니다.
+These servers block ads, tracking, and phishing.
 
 | 프로토콜           | 주소                                                                       |                                                                                                                                                                |
 | -------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,10 +21,9 @@ sidebar_position: 3
 | DNSCrypt, IPv4 | 공급자: `2.dnscrypt.default.ns1.adguard.com` IP: `94.140.14.14:5443`        | [AdGuard에 추가](sdns://AQIAAAAAAAAAETk0LjE0MC4xNC4xNDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20)          |
 | DNSCrypt, IPv6 | 공급자: `2.dnscrypt.default.ns1.adguard.com` IP: `[2a10:50c0::ad1:ff]:5443` | [AdGuard에 추가](sdns://AQIAAAAAAAAAGFsyYTEwOjUwYzA6OmFkMTpmZl06NTQ0MyDRK0fyUtzywrv4mRCG6vec5EldixbIoMQyLlLKPzkIcyIyLmRuc2NyeXB0LmRlZmF1bHQubnMxLmFkZ3VhcmQuY29t) |
 
-
 #### 자녀 보호
 
-이 서버는 기본 기능 + 성인 웹사이트 차단 + 안전한 검색을 제공합니다.
+These servers provide the Default features + Blocking adult websites + Safe search.
 
 | 프로토콜           | 주소                                                                       |                                                                                                                                                                |
 | -------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +37,7 @@ sidebar_position: 3
 
 #### 필터링 하지 않음
 
-이 서버는 안전하고 안정적인 연결을 제공하지만 "광고 차단" 및 "가족 보호" 같은 것은 필터링하지 않습니다.
+Each of these servers provides a secure and reliable connection, but unlike the "Standard" and "Family Protection" servers, they don't filter anything.
 
 | 프로토콜           | 주소                                                                        |                                                                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,14 +49,13 @@ sidebar_position: 3
 | DNSCrypt, IPv4 | 공급자: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`     | [AdGuard에 추가](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 | 공급자: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443` | [AdGuard에 추가](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20)    |
 
-
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
-In "Basic" mode, there is no traffic filtering
+In "Basic" mode, there is no traffic filtering.
 
 | 프로토콜           | 주소                                                                    |                                                                                                                                                      |
 | -------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,20 +63,18 @@ In "Basic" mode, there is no traffic filtering
 | DNS, IPv6      | `2a02:6b8::feed:0ff` and `2a02:6b8:0:1::feed:0ff`                     | [AdGuard에 추가](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDowZmZd)                                                                                       |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [AdGuard에 추가](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
 
-
 #### Safe
 
-In "Safe" mode, protection from infected and fraudulent sites is provided
+In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 | 프로토콜      | 주소                                                |                                                                |
 | --------- | ------------------------------------------------- | -------------------------------------------------------------- |
 | DNS, IPv4 | `77.88.8.88` and `77.88.8.2`                      | [AdGuard에 추가](sdns://AAAAAAAAAAAACjc3Ljg4LjguODg)              |
 | DNS, IPv6 | `2a02:6b8::feed:bad` and `2a02:6b8:0:1::feed:bad` | [AdGuard에 추가](sdns://AAAAAAAAAAAAFFsyYTAyOjZiODo6ZmVlZDpiYWRd) |
 
-
 #### Family
 
-In "Family" mode, protection from infected, fraudulent and adult sites is provided
+In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
 | 프로토콜      | 주소                                                |                                                                |
 | --------- | ------------------------------------------------- | -------------------------------------------------------------- |
@@ -87,11 +83,11 @@ In "Family" mode, protection from infected, fraudulent and adult sites is provid
 
 ### CleanBrowsing
 
-[Cleanbrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. This service offers a safe way to browse the web without inappropriate content.
+[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. This service offers a safe way to browse the web without inappropriate content.
 
 #### Family Filter
 
-Blocks access to all adult, pornographic and explicit sites, including proxy & VPN domains and mixed content sites
+Blocks access to all adult, pornographic and explicit sites, including proxy & VPN domains and mixed content sites.
 
 | 프로토콜           | 주소                                                       |                                                                                                                                    |
 | -------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +100,7 @@ Blocks access to all adult, pornographic and explicit sites, including proxy & V
 
 #### Adult Filter
 
-Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains
+Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains.
 
 | 프로토콜           | 주소                                                        |                                                                                                                                      |
 | -------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -115,10 +111,9 @@ Less restrictive than the Family filter, it only blocks access to adult content 
 | DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`         | [AdGuard에 추가](sdns://AgMAAAAAAAAAAAAVZG9oLmNsZWFuYnJvd3Npbmcub3JnEi9kb2gvYWR1bHQtZmlsdGVyLw)                                         |
 | DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                | [AdGuard에 추가](sdns://AwMAAAAAAAAAAAAiYWR1bHQtZmlsdGVyLWRucy5jbGVhbmJyb3dzaW5nLm9yZw)                                                 |
 
-
 #### Security Filter
 
-Blocks phishing, spam and malicious domains
+Blocks phishing, spam and malicious domains.
 
 | 프로토콜           | 주소                                                   |                                                                                                  |
 | -------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -135,13 +130,14 @@ Blocks phishing, spam and malicious domains
 | -------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `8.26.56.26` and `8.20.247.20`                                        | [AdGuard에 추가](sdns://AAAAAAAAAAAACjguMjYuNTYuMjY)                                                                                                    |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [AdGuard에 추가](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+
 ### Neustar Recursive DNS
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
 
 #### Reliability & Performance 1
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories
+These servers provide reliable and fast DNS lookups without blocking any specific categories.
 
 | 프로토콜      | 주소                                      |                                                            |
 | --------- | --------------------------------------- | ---------------------------------------------------------- |
@@ -150,7 +146,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 #### Reliability & Performance 2*
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (Non-existent Domain) responses to a landing page
+These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
 
 | 프로토콜      | 주소                                      |                                                            |
 | --------- | --------------------------------------- | ---------------------------------------------------------- |
@@ -159,7 +155,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 #### Threat Protection
 
-These servers provide protection against malicious domains and also include "Reliability & Performance" features
+These servers provide protection against malicious domains and also include "Reliability & Performance" features.
 
 | 프로토콜      | 주소                                      |                                                            |
 | --------- | --------------------------------------- | ---------------------------------------------------------- |
@@ -168,7 +164,7 @@ These servers provide protection against malicious domains and also include "Rel
 
 #### Family Secure
 
-These servers provide blocking access to mature content and also include "Reliability & Performance" + "Threat Protection" features
+These servers provide adult content blocking and also include "Reliability & Performance" + "Threat Protection" features.
 
 | 프로토콜      | 주소                                      |                                                            |
 | --------- | --------------------------------------- | ---------------------------------------------------------- |
@@ -177,7 +173,7 @@ These servers provide blocking access to mature content and also include "Reliab
 
 #### Business Secure
 
-These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features
+These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features.
 
 | 프로토콜      | 주소                                      |                                                            |
 | --------- | --------------------------------------- | ---------------------------------------------------------- |
@@ -190,7 +186,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 #### Standard
 
-DNS servers with custom filtering that protects your device from malware
+DNS servers with custom filtering that protects your device from malware.
 
 | 프로토콜           | 주소                                                            |                                                                                                                                           |
 | -------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -202,7 +198,7 @@ DNS servers with custom filtering that protects your device from malware
 
 #### FamilyShield
 
-OpenDNS servers that provide adult content blocking
+OpenDNS servers that provide adult content blocking.
 
 | 프로토콜           | 주소                                                           |                                                                                                                                          |
 | -------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -244,7 +240,6 @@ OpenDNS servers that provide adult content blocking
 | DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`   | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://security.cloudflare-dns.com`               | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAbc2VjdXJpdHkuY2xvdWRmbGFyZS1kbnMuY29t)                |
 
-
 #### Malware and adult content blocking
 
 | 프로토콜                 | 주소                                                |                                                                                        |
@@ -253,7 +248,6 @@ OpenDNS servers that provide adult content blocking
 | DNS, IPv6            | `2606:4700:4700::1113` and `2606:4700:4700::1003` | [AdGuard에 추가](sdns://AAAAAAAAAAAAFlsyNjA2OjQ3MDA6NDcwMDo6MTExM10)                      |
 | DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`     | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQovZG5zLXF1ZXJ5) |
 | DNS-over-TLS         | `tls://family.cloudflare-dns.com`                 | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAZZmFtaWx5LmNsb3VkZmxhcmUtZG5zLmNvbQ)               |
-
 
 ### Quad9 DNS
 
@@ -274,7 +268,7 @@ Regular DNS servers which provide protection from phishing and spyware. They inc
 
 #### Unsecured
 
-Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-Subnet
+Unsecured DNS servers don't provide security blocklists, DNSSEC, or EDNS Client Subnet.
 
 | 프로토콜           | 주소                                                                |                                                                                                                                                |
 | -------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -287,7 +281,7 @@ Unsecured DNS servers provide no security blocklist, no DNSSEC, No EDNS client-S
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
-EDNS Client-Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client-Subnet.
+EDNS Client Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client Subnet.
 
 | 프로토콜           | 주소                                                             |                                                                                                                                            |
 | -------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -297,28 +291,30 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [AdGuard에 추가](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0Ci9kbnMtcXVlcnk)                                                                  |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAPZG5zMTEucXVhZDkubmV0)                                                                                 |
+
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: it doesn't sell public DNS data to third parties and redirect users' queries to serve them any ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: they neither sell public DNS data to third parties nor redirect users' queries to serve them ads.
 
 | 프로토콜      | 주소                                     |                                                            |
 | --------- | -------------------------------------- | ---------------------------------------------------------- |
 | DNS, IPv4 | `64.6.64.6` or `64.6.65.6`             | [AdGuard에 추가](sdns://AAAAAAAAAAAACTY0LjYuNjQuNg)           |
 | DNS, IPv6 | `2620:74:1b::1:1` or `2620:74:1c::2:2` | [AdGuard에 추가](sdns://AAAAAAAAAAAAEVsyNjIwOjc0OjFiOjoxOjFd) |
+
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a swiss public DNS service provided by [switch.ch](https://www.switch.ch/)
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a Swiss public DNS service provided by [switch.ch](https://www.switch.ch/).
 
-| 프로토콜           | 주소                                                                                |                                                                        |
-| -------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                     | [AdGuard에 추가](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
-| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                                | [AdGuard에 추가](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                 | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248`  and IPv6: `2001:620:0:ff::2` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
+| 프로토콜           | 주소                                                                               |                                                                        |
+| -------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                    | [AdGuard에 추가](sdns://AAAAAAAAAAAADTEzMC41OS4zMS4yNDg)                  |
+| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                               | [AdGuard에 추가](sdns://AAAAAAAAAAAAElsyMDAxOjYyMDowOmZmOjoyXQ)           |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAANZG5zLnN3aXRjaC5jaAovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZG5zLnN3aXRjaC5jaA)               |
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn.
 
 | 프로토콜      | 주소                                  |                                                       |
 | --------- | ----------------------------------- | ----------------------------------------------------- |
@@ -364,29 +360,25 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 | --------- | ---------------- | ------------------------------------------------------ |
 | DNS, IPv4 | `193.58.251.251` | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE5My41OC4yNTEuMjUx) |
 
-### Comss.ru DNS
+### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS servers with protection against ads, tracking and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
 
 #### West DNS Server (Main)
 
-| 프로토콜           | 주소                                                                           |                                                                                                                                                               |
-| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.38.152.163` and `93.115.24.204`                                          | [AdGuard에 추가](sdns://AAAAAAAAAAAADTkyLjM4LjE1Mi4xNjM)                                                                                                         |
-| DNS, IPv6      | `2a03:90c0:56::1a5` and `2a02:7b40:5eb0:e95d::1`                             | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syYTAzOjkwYzA6NTY6OjFhNV0)                                                                                                 |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `94.176.233.93:443`            | [AdGuard에 추가](sdns://AQMAAAAAAAAAETk0LjE3Ni4yMzMuOTM6NDQzIBVpyAOGbSSr5yLPYOsmU-FiMj2_q0BAdu6WiMTPzpMTHTIuZG5zY3J5cHQtY2VydC5kbnMuY29tc3Mub25l)                |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.dns.comss.one` IP: `[2a02:7b40:5eb0:e95d::1]:443` | [AdGuard에 추가](sdns://AQMAAAAAAAAAHFsyYTAyOjdiNDA6NWViMDplOTVkOjoxXTo0NDMgFWnIA4ZtJKvnIs9g6yZT4WIyPb-rQEB27paIxM_OkxMdMi5kbnNjcnlwdC1jZXJ0LmRucy5jb21zcy5vbmU) |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query`                                            | [AdGuard에 추가](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5)                                                                                        |
-| DNS-over-TLS   | `tls://dns.comss.one`                                                        | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)                                                                                                      |
+| 프로토콜           | 주소                                |                                                                        |
+| -------------- | --------------------------------- | ---------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [AdGuard에 추가](sdns://AgAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQovZG5zLXF1ZXJ5) |
+| DNS-over-TLS   | `tls://dns.comss.one`             | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZG5zLmNvbXNzLm9uZQ)               |
+| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [AdGuard에 추가](sdns://BAAAAAAAAAAAAAARZG5zLmNvbXNzLm9uZTo3ODQ)          |
 
 #### East DNS Server (Siberia and Far East)
 
-| 프로토콜           | 주소                                        |                                                                               |
-| -------------- | ----------------------------------------- | ----------------------------------------------------------------------------- |
-| DNS, IPv4      | `92.223.109.31` and `91.230.211.67`       | [AdGuard에 추가](sdns://AAAAAAAAAAAADTkyLjIyMy4xMDkuMzE)                         |
-| DNS, IPv6      | `2a03:90c0:b5::1a` and `2a04:2fc0:39::47` | [AdGuard에 추가](sdns://AAAAAAAAAAAAElsyYTAzOjkwYzA6YjU6OjFhXQ)                  |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query`    | [AdGuard에 추가](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`                | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| 프로토콜           | 주소                                     |                                                                               |
+| -------------- | -------------------------------------- | ----------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [AdGuard에 추가](sdns://AgAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25lCi9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://dns.east.comss.one`             | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAASZG5zLmVhc3QuY29tc3Mub25l)                |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [AdGuard에 추가](sdns://BAAAAAAAAAAAAAAWZG5zLmVhc3QuY29tc3Mub25lOjc4NA)          |
 
 ### Safe DNS
 
@@ -403,41 +395,41 @@ EDNS Client-Subnet is a method that includes components of end-user IP address d
 
 #### Private
 
-In "Private" mode, DNS resolution only
+In "Private" mode, DNS resolution only.
 
-| 프로토콜                   | 주소                                                                                                   |                                                                                               |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                                | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                          | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                   | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10`  and IPv6: `2620:10A:80BB::10` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| 프로토콜                   | 주소                                                                                                  |                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` and `149.112.122.10`                                                               | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` and `2620:10A:80BC::10`                                                         | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Protected
 
-In "Protected" mode, malware and phishing protection
+In "Protected" mode, malware and phishing protection.
 
-| 프로토콜                     | 주소                                                                                                     |                                                                                                  |
-| ------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                  | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
-| DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                            | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
-| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                   | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20`  and IPv6: `2620:10A:80BB::20` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| 프로토콜                     | 주소                                                                                                    |                                                                                                  |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| DNS, IPv4                | `149.112.121.20` and `149.112.122.20`                                                                 | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjIw)                                           |
+| DNS, IPv6                | `2620:10A:80BB::20` and `2620:10A:80BC::20`                                                           | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoyMF0)                                    |
+| DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAgcHJvdGVjdGVkLmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 
 #### Family
 
-In "Family" mode, Protected + blocking adult content
+In "Family" mode, Protected + blocking adult content.
 
-| 프로토콜                  | 주소                                                                                                     |                                                                                              |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                  | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
-| DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                            | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
-| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                      | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30`  and IPv6: `2620:10A:80BB::30` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
+| 프로토콜                  | 주소                                                                                                    |                                                                                              |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| DNS, IPv4             | `149.112.121.30` and `149.112.122.30`                                                                 | [AdGuard에 추가](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)                                       |
+| DNS, IPv6             | `2620:10A:80BB::30` and `2620:10A:80BC::30`                                                           | [AdGuard에 추가](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)                                |
+| DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                     | [AdGuard에 추가](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
+| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)                |
 
 ### OpenNIC DNS
 
-[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project
+[OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project.
 
 | 프로토콜      | 주소                                         |                                                            |
 | --------- | ------------------------------------------ | ---------------------------------------------------------- |
@@ -446,7 +438,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### BlahDNS
 
-[BlahDNS](https://blahdns.com/) A small hobby DNS project. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares
+[BlahDNS](https://blahdns.com/) A small hobby DNS project. No logs, Ethereum Name Service, DNSSEC ready & Filtered ads, trackers, malwares.
 
 #### Finland DNS Server
 
@@ -486,8 +478,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It helps to children and everyone for safely surf internet without worrying about get followed to harmful websites.
-
+[DNS for Family](https://dnsforfamily.com/) aims to block adult websites. It enables children and adults to surf the Internet safely without worrying about being tracked by malicious websites.
 
 | 프로토콜           | 주소                                                         |                                                                                                                                       |
 | -------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -522,7 +513,7 @@ In "Family" mode, Protected + blocking adult content
 
 ### CFIEC Public DNS
 
-IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It support DNS64 to provide domain name resolution only for IPv6 users.
+IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It supports DNS64 to provide domain name resolution only for IPv6 users.
 
 | 프로토콜           | 주소                                |                                                                        |
 | -------------- | --------------------------------- | ---------------------------------------------------------------------- |
@@ -576,7 +567,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 #### Normal
 
-Block ads and annoying websites
+Block ads and annoying websites.
 
 | 프로토콜      | 주소                                      |                                                          |
 | --------- | --------------------------------------- | -------------------------------------------------------- |
@@ -584,7 +575,7 @@ Block ads and annoying websites
 
 #### Safe
 
-Blocks phishing, malicious and other unsafe websites
+Blocks phishing, malicious and other unsafe websites.
 
 | 프로토콜      | 주소                                      |                                                          |
 | --------- | --------------------------------------- | -------------------------------------------------------- |
@@ -600,7 +591,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Quad101
 
-[Quad101](https://101.101.101.101) is a free alternative DNS service without logging by TWNIC (Taiwan Network Information Center)
+[Quad101](https://101.101.101.101) is a free alternative DNS service without logging by TWNIC (Taiwan Network Information Center).
 
 | 프로토콜           | 주소                                      |                                                                       |
 | -------------- | --------------------------------------- | --------------------------------------------------------------------- |
@@ -608,7 +599,6 @@ These servers block adult websites and inappropriate contents.
 | DNS, IPv6      | `2001:de4::101` and `2001:de4::102`     | [AdGuard에 추가](sdns://AAAAAAAAAAAAD1syMDAxOmRlNDo6MTAxXQ)              |
 | DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`        | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAAMZG5zLnR3bmljLnR3Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://101.101.101.101`                 | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAPMTAxLjEwMS4xMDEuMTAx)            |
-
 
 ### OneDNS
 
@@ -628,7 +618,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) block over 140K ads, ad-tracking, malware and phishing domains!. No logging, no ECS, DNSSEC validation, free!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -642,7 +632,6 @@ These servers block adult websites and inappropriate contents.
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                           | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAAMZG9oLnRpYXIuYXBwCi9kbnMtcXVlcnk)                                                                                      |
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [AdGuard에 추가](sdns://BAMAAAAAAAAAEjE3NC4xMzguMjkuMTc1Ojc4NAAMZG9oLnRpYXIuYXBw)                                                                             |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [AdGuard에 추가](sdns://AwMAAAAAAAAAAAAMZG90LnRpYXIuYXBw)                                                                                                     |
-
 
 #### Japan DNS Server
 
@@ -658,7 +647,7 @@ These servers block adult websites and inappropriate contents.
 
 ### FreeDNS
 
-[FreeDNS](https://freedns.zone/) is an open, free and public DNS Service provided by [Virtexxa cloud services](https://virtexxa.com/). No DNS redirects, no logging.
+[FreeDNS](https://freedns.zone/) is an open, free and public DNS service. No DNS redirects, no logging.
 
 | 프로토콜      | 주소                                    |                                                        |
 | --------- | ------------------------------------- | ------------------------------------------------------ |
@@ -667,7 +656,7 @@ These servers block adult websites and inappropriate contents.
 
 ### Freenom World
 
-[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World
+[Freenom World](https://freenom.world/en/index.html) is a free anonymous DNS resolver by Freenom World.
 
 | 프로토콜      | 주소                              |                                                    |
 | --------- | ------------------------------- | -------------------------------------------------- |
@@ -679,7 +668,7 @@ These servers block adult websites and inappropriate contents.
 
 #### OSZX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | 프로토콜           | 주소                                                                       |                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -692,7 +681,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 #### PumpleX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | 프로토콜           | 주소                                                                            |                                                                                                                                                              |
 | -------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -715,7 +704,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content
+[Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content.
 
 | 프로토콜      | 주소                                 |                                                       |
 | --------- | ---------------------------------- | ----------------------------------------------------- |
@@ -730,7 +719,6 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 | DNS, IPv4      | `104.155.237.225` and `104.197.28.121`                            | [AdGuard에 추가](sdns://AAAAAAAAAAAADzEwNC4xNTUuMjM3LjIyNQ)                                                                                       |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.safesurfer.co.nz` IP: `104.197.28.121` | [AdGuard에 추가](sdns://AQMAAAAAAAAADjEwNC4xOTcuMjguMTIxICcgf9USBOg2e0g0AF35_9HTC74qnDNjnm7b-K7ZHUDYIDIuZG5zY3J5cHQtY2VydC5zYWZlc3VyZmVyLmNvLm56) |
 
-
 ### DeCloudUs DNS
 
 [DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
@@ -744,7 +732,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala. Finland.
+[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
 
 | 프로토콜           | 주소                                       |                                                                                  |
 | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------- |
@@ -753,7 +741,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running out of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
 | 프로토콜           | 주소                                                               |                                                                                                                                               |
 | -------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -762,7 +750,6 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 ### DNS.SB
 
 [DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
-
 
 | 프로토콜           | 주소                                  |                                                                    |
 | -------------- | ----------------------------------- | ------------------------------------------------------------------ |
@@ -784,7 +771,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Fondation Restena DNS
 
-[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/)
+[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/).
 
 | 프로토콜           | 주소                                                                                  |                                                                               |
 | -------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -793,7 +780,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver
+[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | 프로토콜           | 주소                                                                   |                                                                                                                                                    |
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -802,7 +789,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München
+[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
 | 프로토콜                 | 주소                                                                     |                                                                                                                                                       |
 | -------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -813,7 +800,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Hosted in Zurich, Switzerland
+[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Hosted in Zurich, Switzerland.
 
 | 프로토콜           | 주소                                                                                             |                                                                                            |
 | -------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -832,7 +819,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging.
 
 | 프로토콜                 | 주소                                                                                        |                                                                                                                                                                                |
 | -------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -845,36 +832,36 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled
 
 A collaborative open project to promote, implement and deploy [DNS Privacy](https://dnsprivacy.org/).
 
-DNS servers run by the [Stubby developers](https://getdnsapi.net/)
+DNS servers run by the [Stubby developers](https://getdnsapi.net/).
 
-| 프로토콜         | 주소                                                                                                                           |                                                                       |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                          | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
-| DNS-over-TLS | Provider: `Surfnet` Hostname `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
+| 프로토콜         | 주소                                                                                                                            |                                                                       |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| DNS-over-TLS | Hostname: `tls://getdnsapi.net` IP: `185.49.141.37` and IPv6: `2a04:b900:0:100::37`                                           | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAANZ2V0ZG5zYXBpLm5ldA)              |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAWZG5zb3ZlcnRscy5zaW5vZHVuLmNvbQ)  |
+| DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAXZG5zb3ZlcnRsczEuc2lub2R1bi5jb20) |
 
-Other DNS servers with 'no logging' policy
+Other DNS servers with 'no logging' policy.
 
-| 프로토콜               | 주소                                                                                                                  |                                                                        |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
-| DNS-over-TLS       | Provider: `dkg` Hostname `tls://dns.cmrg.net` IP: `199.58.81.218`and IPv6: `2001:470:1c:76d::53`                    | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                            | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
-| DNS-over-TLS       | Hostname `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
-| DNS-over-TLS       | Hostname `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS       | Hostname `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
-| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                 | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
-| DNS-over-TLS       | Hostname `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
-| DNS-over-TLS       | Provider: `Go6Lab` Hostname `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
-| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                      | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
+| 프로토콜               | 주소                                                                                                                   |                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://unicast.censurfridns.dk` IP: `89.233.43.71` and IPv6: `2a01:3a0:53:53::0` | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAXdW5pY2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `UncensoredDNS` Hostname: `tls://anycast.censurfridns.dk` IP: `91.239.100.100` and IPv6: `2001:67c:28a4::` | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAXYW55Y2FzdC5jZW5zdXJmcmlkbnMuZGs)  |
+| DNS-over-TLS       | Provider: `dkg` Hostname: `tls://dns.cmrg.net` IP: `199.58.81.218` and IPv6: `2001:470:1c:76d::53`                   | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAMZG5zLmNtcmcubmV0)                 |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.larsdebruin.net` IP: `51.15.70.167`                                                             | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAATZG5zLmxhcnNkZWJydWluLm5ldA)       |
+| DNS-over-TLS       | Hostname: `tls://dns-tls.bitwiseshift.net` IP: `81.187.221.24` and IPv6: `2001:8b0:24:24::24`                        | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAYZG5zLXRscy5iaXR3aXNlc2hpZnQubmV0) |
+| DNS-over-TLS       | Hostname: `tls://ns1.dnsprivacy.at` IP: `94.130.110.185` and IPv6: `2a01:4f8:c0c:3c03::2`                            | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARbnMxLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS       | Hostname: `tls://ns2.dnsprivacy.at` IP: `94.130.110.178` and IPv6: `2a01:4f8:c0c:3bfc::2`                            | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARbnMyLmRuc3ByaXZhY3kuYXQ)          |
+| DNS-over-TLS, IPv4 | Hostname: `tls://dns.bitgeek.in` IP: `139.59.51.46`                                                                  | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAOZG5zLmJpdGdlZWsuaW4)              |
+| DNS-over-TLS       | Hostname: `tls://dns.neutopia.org` IP: `89.234.186.112` and IPv6: `2a00:5884:8209::2`                                | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAQZG5zLm5ldXRvcGlhLm9yZw)           |
+| DNS-over-TLS       | Provider: `Go6Lab` Hostname: `tls://privacydns.go6lab.si` IPv6: `2001:67c:27e4::35`                                  | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAAUcHJpdmFjeWRucy5nbzZsYWIuc2k)      |
+| DNS-over-TLS       | Hostname: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAQZG90LnNlY3VyZWRucy5ldQ)           |
 
-DNS servers with minimal logging/limitations. These servers use some logging, self-signed certs or no support for strict mode.
+DNS servers with minimal logging/restrictions. These servers use some logging, self-signed certs or no support for strict mode.
 
-| 프로토콜         | 주소                                                                                                               |                                                                            |
-| ------------ | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| DNS-over-TLS | Provider: `NIC Chile` Hostname `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
-| DNS-over-TLS | Provider: `OARC` Hostname `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
+| 프로토콜         | 주소                                                                                                                |                                                                            |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| DNS-over-TLS | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46`    | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAASZG5zb3Rscy5sYWIubmljLmNs)             |
+| DNS-over-TLS | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25` | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAbdGxzLWRucy11Lm9kdnIuZG5zLW9hcmMubmV0) |
 
 ### AhaDNS
 
@@ -882,7 +869,7 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 
 #### Blitz
 
-[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant
+[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant.
 
 | 프로토콜                                         | 주소                                |                                                                        |
 | -------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------- |
@@ -940,7 +927,6 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [AdGuard에 추가](sdns://AgAAAAAAAAAAAAARZG9oLml0LmFoYWRucy5uZXQKL2Rucy1xdWVyeQ) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARZG90Lml0LmFoYWRucy5uZXQ)                |
 
-
 #### Spain
 
 | 프로토콜           | 주소                                    |                                                                              |
@@ -973,7 +959,6 @@ DNS servers with minimal logging/limitations. These servers use some logging, se
 | DNS, IPv4      | `45.76.113.31`                                             | [AdGuard에 추가](sdns://AAAAAAAAAAAADDQ1Ljc2LjExMy4zMQ)                                                                                  |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [AdGuard에 추가](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS-over-TLS   | `tls://dot.seby.io`                                        | [AdGuard에 추가](sdns://AwAAAAAAAAAAAAARdGxzOi8vZG90LnNlYnkuaW8)                                                                         |
-
 
 ### puntCAT DNS
 
@@ -1036,12 +1021,11 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS-over-HTTPS | `https://anycast.dns.nextdns.io` | [AdGuard에 추가](sdns://AgcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbwovZG5zLXF1ZXJ5) |
 | DNS-over-TLS   | `tls://anycast.dns.nextdns.io`   | [AdGuard에 추가](sdns://AwcAAAAAAAAAAAAWYW55Y2FzdC5kbnMubmV4dGRucy5pbw)               |
 
-
 ### RethinkDNS
 
 [RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
 
-#### Unfiltered
+#### 필터링 하지 않음
 
 | 프로토콜           | 주소                              |                                                                      |
 | -------------- | ------------------------------- | -------------------------------------------------------------------- |
@@ -1051,7 +1035,16 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 ### ControlD
 
-[ControlD](https://controld.com/free-dns) is public DNS service which provides ads,malware, and social media blocking.
+[ControlD](https://controld.com/free-dns) is a customizable DNS service with proxy capabilities. This means it not only blocks things (ads, porn, etc.), but can also unblock websites and services.
+
+#### 필터링 하지 않음
+
+| 프로토콜           | 주소                                |                                                                                   |
+| -------------- | --------------------------------- | --------------------------------------------------------------------------------- |
+| DNS, IPv4      | `76.76.2.0` and `76.76.10.0`      | [AdGuard에 추가](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| IPv6           | `2606:1a40::` and `2606:1a40:1::` | [AdGuard에 추가](sdns://AAcAAAAAAAAACTc2Ljc2LjIuMQ)                                  |
+| DNS-over-HTTPS | `https://freedns.controld.com/p0` | [AdGuard에 추가](sdns://AgcAAAAAAAAAH2h0dHBzOi8vZnJlZWRucy5jb250cm9sZC5jb20vcDEAAAA) |
+| DNS-over-TLS   | `p0.freedns.controld.com`         | [AdGuard에 추가](sdns://AwcAAAAAAAAAF3AxLmZyZWVkbnMuY29udHJvbGQuY29tAAA)             |
 
 #### Block malware
 
@@ -1103,13 +1096,12 @@ In this section we list small, mostly personal DNS resolvers. They often have on
 
 [Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client-Subnet.
+Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | 프로토콜           | 주소                                                           |                                                                                                                                                      |
 | -------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Host: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [AdGuard에 추가](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ) |
 | DNS-over-HTTPS | Host: `https://dns.arapurayil.com/dns-query`                 | [AdGuard에 추가](sdns://AgMAAAAAAAAAAAASZG5zLmFyYXB1cmF5aWwuY29tCi9kbnMtcXVlcnk)                                                                        |
-
 
 #### Dandelion Sprout's Official DNS Server
 

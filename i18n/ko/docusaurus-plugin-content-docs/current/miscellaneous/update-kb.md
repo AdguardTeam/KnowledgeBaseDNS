@@ -13,17 +13,16 @@ sidebar_position: 3
 
 시작할 준비가 되면 [KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS)에서 작업하십시오. 기술 자료의 모든 텍스트는 `Markdown` 마크업 언어로 작성되었습니다. 문서를 편집하거나 작성할 때 이것을 명심하십시오. [이 링크](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 따라 Markdown 구문에 대해 자세히 알아보세요.
 
-기술 자료 웹 사이트는 최신 웹 사이트 생성기인 Docusaurus 2를 사용하여 제작되었습니다. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. [이 링크를 통해 사용할 수 있는 가이드](https://docusaurus.io/docs/category/guides)에서 이에 대해 읽을 수 있습니다.
+The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
 
-이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. 이 작업을 수행하는 방법에 대한 자세한 지침은 [파일 README.md 이 기술 자료의 GitHub 페이지에](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) 있습니다.
+이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 
 ## 기사 번역 {#translate-adguard}
 
-기술 자료의 기존 기사 번역은 [Crowdin 플랫폼](https://crowdin.com/project/adguard-knowledge-bases)에서 수행됩니다. 번역 및 Crowdin 작업에 대한 자세한 내용은 AdGuard Ad 차단 기술 자료의 [전용 문서에서](https://kb.adguard.com/en/general/adguard-translations) 찾을 수 있습니다.
+기술 자료의 기존 기사 번역은 [Crowdin 플랫폼](https://crowdin.com/project/adguard-knowledge-bases)에서 수행됩니다. All the details about translations and working with Crowdin can be found [in the dedicated article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) of the AdGuard Ad Blocker Knowledge Base.
 
-AdGuard DNS 기술 자료 문서에서 작업할 때 추가로 주의를 기울여 번역해야 하는 복수 양식이 포함된 문자열을 만날 수 있습니다. [별도의 기사](https://kb.adguard.com/en/miscellaneous/plurals)에서 문자열을 복수형으로 번역할 때 발생할 수 있는 어려움에 대해 자세히 설명하고 Crowdin 플랫폼에서 문자열을 사용하는 방법에 대한 광범위한 지침을 제공했습니다.
+AdGuard DNS 기술 자료 문서에서 작업할 때 추가로 주의를 기울여 번역해야 하는 복수 양식이 포함된 문자열을 만날 수 있습니다. [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
 
 ## 미해결 문제에 대한 작업
 
 기술 자료 업데이트와 관련된 [열린 작업이](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) 있는 경우가 있습니다. 이 기술 자료에 대한 다른 [변경 사항을 제안하는 방식으로](#suggest-change) 완료 속도를 높일 수 있습니다. 매력적이라고 생각되는 문제를 선택하고 작업을 시작하세요. 질문이 있는 경우 해당 문제에 대한 의견에서 바로 질문할 수 있습니다.
-  

@@ -1,30 +1,30 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Sonraki",
     "description": "The label for version current"
   },
   "sidebar.sidebar.category.General": {
-    "message": "General",
+    "message": "Genel",
     "description": "The label for category General in sidebar sidebar"
   },
   "sidebar.sidebar.category.Public DNS": {
-    "message": "Public DNS",
+    "message": "Genel DNS",
     "description": "The label for category Public DNS in sidebar sidebar"
   },
   "sidebar.sidebar.category.Solving problems": {
-    "message": "Solving problems",
+    "message": "Sorunları çözme",
     "description": "The label for category Solving problems in sidebar sidebar"
   },
   "sidebar.sidebar.category.Private DNS": {
-    "message": "Private DNS",
+    "message": "Özel DNS",
     "description": "The label for category Private DNS in sidebar sidebar"
   },
   "sidebar.sidebar.category.Miscellaneous": {
-    "message": "Miscellaneous",
+    "message": "Diğer",
     "description": "The label for category Miscellaneous in sidebar sidebar"
   },
   "sidebar.sidebar.category.Translating AdGuard DNS": {
-    "message": "Translating AdGuard DNS",
+    "message": "AdGuard DNS'i çevirme",
     "description": "The label for category Translating AdGuard DNS in sidebar sidebar"
   }
 }

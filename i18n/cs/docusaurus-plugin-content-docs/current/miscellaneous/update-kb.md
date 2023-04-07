@@ -1,29 +1,28 @@
 ---
-title: 'Updating the Knowledge Base'
+title: 'Aktualizace databáze znalostí'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Cílem této databáze znalostí je poskytnout všem nejaktuálnější informace o všech druzích témat souvisejících s AdGuardDNS. Věci se však neustále mění a někdy už článek neodráží aktuální stav věcí — není nás tolik, abychom mohli sledovat každou informaci a aktualizovat ji podle toho, když jsou vydány nové verze.
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+Proto jsme veškerý obsah KB (databáze znalostí) umístili na [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), kam nyní může přispívat doslova každý, a to jak navrhováním úprav a překladů stávajících, tak i zcela nových článků.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Jak navrhnout změnu nebo napsat nový článek {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+Pomocí výše uvedených funkcí GitHubu můžete navrhovat změny stávajících článků a přidávat nové články do databáze znalostí. Pokud neznáte principy práce s platformou, začněte přečtením [dokumentace v této sekci](https://docs.github.com/en).
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Jakmile budete připraveni začít, zapracujte [na repozitáři KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS). Všechny texty v naší znalostní databázi jsou napsány ve značkovacím jazyce `Markdown`. Mějte to na paměti při úpravách nebo psaní článků. Chcete-li se dozvědět více o syntaxi Markdown, následujte [tento odkaz](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-The Knowledge Base website is buit using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [the guide available via this link](https://docusaurus.io/docs/category/guides).
+Webová stránka databáze znalostí je vytvořena pomocí moderního generátoru statických webových stránek Docusaurus 2. Při navrhování změn nebo doplňků berte v úvahu, že všechny dokumenty musí být v souladu se zásadami platformy. Můžete si o nich přečíst v [tomto průvodci](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) on this Knowledge Base's GitHub page.
+Tuto databázi znalostí můžete lokálně uložit do svého počítače a zobrazit náhled navrhovaných změn. Podrobný návod, jak to provést, najdete na adrese [v souboru README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na stránce GitHub této databáze znalostí.
 
-## Translating articles {#translate-adguard}
+## Překládání článků {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://kb.adguard.com/en/general/adguard-translations) of the AdGuard Ad Blocker Knowledge Base.
+Překlad stávajících článků databáze znalostí se provádí na [platformě Crowdin](https://crowdin.com/project/adguard-knowledge-bases). Všechny podrobnosti o překladech a práci s platformou Crowdin najdete [ve speciálním článku](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) databáze znalostí blokátoru reklam AdGuard.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://kb.adguard.com/en/miscellaneous/plurals), we described in detail the difficulties that can arise when translating strings with plural forms, and gave extensive instructions on how to work with them on the Crowdin platform.
+Při práci na článcích databáze znalostí AdGuard DNS se můžete setkat s řetězci obsahujícími množné číslo, které byste měli překládat se zvýšenou pozorností. [V samostatném článku](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) jsme podrobně popsali potíže, které mohou nastat při překladu řetězců s množným číslem a poskytli jsme rozsáhlý návod, jak s nimi na platformě Crowdin pracovat.
 
-## Working on open issues
+## Práce na otevřených problémech
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
-  
+Někdy existují [otevřené úlohy](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) související s aktualizací databáze znalostí. Můžete nám pomoci urychlit jejich dokončení [stejným způsobem](#suggest-change), jakým byste navrhli jakékoli jiné změny v této databázi znalostí. Vyberte si téma, které vás zaujme, a začněte na něm pracovat. Pokud máte nějaké dotazy — můžete je položit přímo v komentářích k tomuto vydání.

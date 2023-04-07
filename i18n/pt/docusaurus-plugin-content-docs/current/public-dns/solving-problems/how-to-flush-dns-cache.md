@@ -1,68 +1,68 @@
 ---
-title: How to flush DNS cache
+title: Como limpar o cache DNS
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+# Como limpar o cache DNS
 
 ## What is DNS cache?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+O cache DNS armazena os endereços IP dos sites visitados no computador local para que eles carreguem mais rápido na próxima vez. Em vez de fazer uma longa pesquisa de DNS, o sistema responde às consultas com registros DNS do cache DNS temporário.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+O cache DNS contém os chamados [registros de recursos (RRs)](https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio#Registros_de_recurso), que são:
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
-* **Class**;
-* **Resource data length**.
+* **Dados do recurso (ou rdata)**;
+* **Tipo de registro**;
+* **Nome do registro**;
+* **TTL (tempo de vida)**;
+* **Classe**;
+* **Comprimento dos dados do recurso**.
 
-## When you might need to clear the cache
+## Quando você pode precisar limpar o cache
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Você recebe regularmente um erro 404.** Por exemplo, o site foi transferido para outro servidor e seu endereço IP foi alterado. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
 **You want to improve your privacy.**
 
 **You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
 
-## How to flush DNS cache on different OSs
+## Como liberar o cache DNS em diferentes sistemas operacionais
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+Para limpar o cache DNS no macOS, abra o Terminal (você pode encontrá-lo usando a pesquisa do Spotlight — para fazer isso, pressione Command+Space e digite *Terminal*) e digite o seguinte comando:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+No macOS Big Sur 11.2.0 e macOS Monterey 12.0.0, você também pode usar este comando:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+Depois disso, digite sua senha de administrador para concluir o processo.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Para liberar o cache DNS em seu dispositivo Windows, faça o seguinte:
 
-Load the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Open the Command Prompt as an administrator. Você pode encontrá-lo no Menu Iniciar digitando *prompt de comando* ou *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as Systemd Resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. O processo de limpeza do cache DNS depende da distribuição Linux e do serviço de cache usado.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Para cada distribuição, você precisa iniciar uma janela de terminal. Pressione Ctrl+Alt+T no teclado e use o comando correspondente para limpar o cache DNS do serviço que seu sistema Linux está executando.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Para descobrir qual resolvedor de DNS você está usando, comando `sudo lsof -i :53 -S`.
 
-#### Systemd Resolved
+#### systemd-resolved
 
-To clear the **Systemd Resolved** DNS cache, type:
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+Em caso de sucesso, o comando não retorna nenhuma mensagem.
 
 #### DNSMasq
 
@@ -104,6 +104,6 @@ There are different ways to clear the DNS cache on your iPad or iPhone.
 
 The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap on *Reset Network Settings*.
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
 
 > Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.

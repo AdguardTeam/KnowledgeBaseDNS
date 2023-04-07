@@ -15,22 +15,22 @@ sidebar_position: 4
 
 Android 기기에서 스크린샷을 찍는 것은 기기 모델 및 제조업체에 따라 다양한 방법으로 수행할 수 있습니다.
 
-일반적으로 Android의 경우 다음 버튼 조합을 사용해야 합니다.
+Generally, the following button combination can be used for Android:
 
-+ ***볼륨 작게* 및 *전원* 버튼을 동시에 1-2초 동안 누르십시오.**
++ **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
 
 Android 기기는 전체 화면을 캡처하여 사진으로 저장합니다. 따라서 갤러리의 스크린샷 폴더에서 스크린샷을 찾을 수 있습니다.
 
-단, 이미 말씀드린 것처럼 특정 기기에 따라 차이가 있을 수 있습니다. 다른 방법을 살펴보겠습니다.
+However, as already mentioned, the procedure may vary depending on the particular device. 다른 방법을 살펴보겠습니다.
 
-+ ***볼륨 작게* 및 *전원* 버튼을 동시에 1-2초 동안 누르십시오.**
-+ ***뒤로가기* 및 *홈* 버튼을 동시에 누르십시오.**
++ **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
++ **Press and hold the *Back* and *Home* buttons simultaneously**
 
-Android 8 이상에서는 휴대전화의 왼쪽 또는 오른쪽 가장자리를 따라 수직으로 손을 놓고 화면을 터치한 손으로 해당 가장자리에서 안쪽으로 스와이프하여 스크린샷을 찍을 수도 있습니다.
+On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
 
 이 방법이 작동하지 않으면 *설정* > *고급* 기능을 확인하여 *손바닥으로 스와이프하여 캡처*을 활성화합니다.
 
-게다가, 예를 들어 *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* 등과 같이 장치에서 스크린샷을 찍기 위해 항상 특별한 응용 프로그램을 사용할 수 있습니다.
+Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS
 
@@ -70,7 +70,7 @@ Windows 8 및 10 에서는 *Win + PrtScn* 조합으로 매우 빠르게 스크�
 
 컴퓨터의 표준 프로그램 중 시작 메뉴를 통해 찾을 수 있는 *Snipping Tool* 이라는 스크린샷 전용 프로그램도 있습니다. 캡처 도구를 사용하면 바탕화면의 모든 영역이나 전체화면을 캡처할 수 있습니다. 이 프로그램을 사용하여 스크린샷을 찍은 후 사진을 편집하고 컴퓨터의 모든 폴더에 저장할 수 있습니다.
 
-게다가 **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap** 등과 같이 컴퓨터에서 스크린샷을 찍기 위해 다른 앱을 사용할 수 있습니다.
+Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### MacOS
 

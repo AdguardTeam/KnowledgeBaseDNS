@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # 如何刷新DNS缓存
 
-## DNS缓存是什么？
+## What is DNS cache?
 
 DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。 系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
 
@@ -44,21 +44,21 @@ DNS 缓存包含所谓的[资源记录（RRs）](https://en.wikipedia.org/wiki/D
 
 要刷新 Windows 设备上的 DNS 缓存，请执行以下操作：
 
-以管理员身份加载命令提示符。 你可以通过输入 *command prompt* 或 *cmd* 在开始菜单中找到它。 然后输入 `ipconfig/flushdns` 并按回车键。
+以管理员身份打开命令提示符。 你可以通过输入 *command prompt* 或 *cmd* 在开始菜单中找到它。 然后输入 `ipconfig/flushdns` 并按回车键。
 
 您会看到这样一行：*成功刷新了 DNS 解析器缓存*。 完成!
 
 ### Linux
 
-Linux 没有操作系统级别的 DNS 缓存，除非安装并运行了 Systemd Resolved、DNSMasq、BIND 或 Nscd 等缓存服务。 清除 DNS 缓存的过程取决于 Linux 发行版和使用的缓存服务。
+Linux 没有操作系统级别的 DNS 缓存，除非安装并运行了 systemd-resolved、DNSMasq、BIND 或 Nscd 等缓存服务。 清除 DNS 缓存的过程取决于 Linux 发行版和使用的缓存服务。
 
 对于每个发行版，您需要启动一个终端窗口。 按键盘上的 Ctrl+Alt+T 并使用相应的命令清除 Linux 系统正在运行的服务的 DNS 缓存。
 
 要找出您正在使用的 DNS 解析器，请使用命令 `sudo lsof -i :53 -S`。
 
-#### Systemd Resolved
+#### systemd-resolved
 
-要清除 **Systemd Resolved** DNS 缓存，请输入：
+要清除 **systemd-resolved** DNS 缓存，请输入：
 
 `sudo systemd-resolve --flush-caches`
 
@@ -104,6 +104,6 @@ Linux 没有操作系统级别的 DNS 缓存，除非安装并运行了 Systemd 
 
 最简单的方法是激活飞行模式（例如，在控制中心或设置应用程序中）并再次将其停用。 DNS 缓存将被刷新。
 
-另一种选择是在“设置”应用中重置设备的网络设置。 打开*常规*，向下滚动，找到*重置*然后点击*重置网络设置*。
+另一种选择是在“设置”应用中重置设备的网络设置。 打开「*常规*」，向下滚动，找到「*重置*」然后点击「*重置网络设置*」。
 
 > 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
