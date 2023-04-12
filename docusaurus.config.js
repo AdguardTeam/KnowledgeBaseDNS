@@ -56,7 +56,7 @@ module.exports = {
           label: 'docs',
         },
         {
-          to: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
+          to: DNS_WEBSITE_URL + '/blog/index.html',
           position: 'left',
           label: 'blog',
         },
@@ -120,7 +120,7 @@ module.exports = {
           items: [
             {
               label: 'blog',
-              href: ADGUARD_WEBSITE_URL + '/blog/tag/adguard-dns.html',
+              href: DNS_WEBSITE_URL + '/blog/index.html',
             },
             {
               label: 'privacy_policy',
