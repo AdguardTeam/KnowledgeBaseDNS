@@ -397,12 +397,12 @@ EDNS 客户端子网是一种在发送到权威 DNS 服务器的请求中包含�
 
 在「私人」模式下，仅进行 DNS 解析。
 
-| 协议                     | 地址                                                                                            |                                                                                              |
-| ---------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| DNS, IPv4              | `149.112.121.10` 和 `149.112.122.10`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620：10A：80BB：：10` 和 `2620：10A：80BC：10`                                                      | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                            | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | 主机名：`tls://private.canadianshield.cira.ca` IP 地址：`149.112.121.10` IPv6 地址：`2620:10A:80BB::10` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| 协议                     | 地址                                                                                                 |                                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| DNS, IPv4              | `149.112.121.10` 和 `149.112.122.10`                                                                | [添加到AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620：10A：80BB：：10` 和 `2620：10A：80BC：10`                                                           | [添加到AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                 | [添加到AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://family.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [添加到AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### 受保护
 
