@@ -167,7 +167,7 @@ Söz dizimi şöyledir:
 $denyallow=domain1|domain2|...
 ```
 
-Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında gereksiz istisna kuralları oluşturmaktan kaçınmaya olanak tanır. You may want to block everything except for a couple of TLD domains. Standart yaklaşımı, yani aşağıdaki gibi kuralları kullanabilirsiniz:
+Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında gereksiz istisna kuralları oluşturmaktan kaçınmaya olanak tanır. Birkaç üst seviye alan adları dışında her şeyi engellemek isteyebilirsiniz. Standart yaklaşımı, yani aşağıdaki gibi kuralları kullanabilirsiniz:
 
 ```none
 ! Her şeyi engelleyin.
@@ -258,7 +258,7 @@ $dnsrewrite=REFUSED
 
 The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
 
-The full syntax is of the form `RCODE;RRTYPE;VALUE`:
+Tam söz dizimi `RCODE;RRTYPE;VALUE` şeklindedir:
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4

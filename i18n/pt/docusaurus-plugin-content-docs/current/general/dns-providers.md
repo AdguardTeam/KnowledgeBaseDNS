@@ -397,12 +397,12 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 
 In "Private" mode, DNS resolution only.
 
-| Protocolo              | Endereço                                                                                            |                                                                                                        |
-| ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4              | `149.112.121.10` e `149.112.122.10`                                                                 | [Adicionar ao AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6              | `2620:10A:80BB::10` e `2620:10A:80BC::10`                                                           | [Adicionar ao AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS sobre HTTPS        | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Adicionar ao AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Adicionar ao AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Protocolo              | Endereço                                                                                           |                                                                                                        |
+| ---------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4              | `149.112.121.10` e `149.112.122.10`                                                                | [Adicionar ao AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6              | `2620:10A:80BB::10` e `2620:10A:80BC::10`                                                          | [Adicionar ao AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS sobre HTTPS        | `https://private.canadianshield.cira.ca/dns-query`                                                 | [Adicionar ao AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS-over-TLS - Private | Hostname: `tls://family.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Adicionar ao AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Protegido
 
