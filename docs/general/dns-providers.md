@@ -402,7 +402,7 @@ In "Private" mode, DNS resolution only.
 | DNS, IPv4      | `149.112.121.10` and `149.112.122.10`                | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)  |
 | DNS, IPv6      | `2620:10A:80BB::10` and `2620:10A:80BC::10` | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0) |
 | DNS-over-HTTPS | `https://private.canadianshield.cira.ca/dns-query` | [Add to AdGuard](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS-over-TLS - Private | Hostname: `tls://family.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)  |
+| DNS-over-TLS - Private | Hostname: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` and IPv6: `2620:10A:80BB::10` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)  |
 
 #### Protected
 
@@ -425,7 +425,7 @@ In "Family" mode, Protected + blocking adult content.
 | DNS, IPv4      | `149.112.121.30` and `149.112.122.30`                | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)|
 | DNS, IPv6      | `2620:10A:80BB::30` and `2620:10A:80BC::30`                 | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)|
 | DNS-over-HTTPS | `https://family.canadianshield.cira.ca/dns-query` | [Add to AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)  |
+| DNS-over-TLS - Family | Hostname: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)  |
 
 ### OpenNIC DNS
 
