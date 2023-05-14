@@ -1,6 +1,6 @@
 ---
-title: API Reference
-sidebar_position: 3
+title: Reference
+sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
@@ -16,7 +16,7 @@ toc_max_heading_level: 4
 # AdGuard DNS API
 DNS API documentation
 
-## Version: 1.3
+## Version: 1.4
 
 ### /oapi/v1/account/limits
 
