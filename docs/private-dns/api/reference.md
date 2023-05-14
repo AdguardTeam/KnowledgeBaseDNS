@@ -23,7 +23,7 @@ DNS API documentation
 #### GET
 ##### Summary:
 
-Get account limits
+Gets account limits
 
 ##### Responses
 
@@ -119,21 +119,21 @@ Updates an existing device
 #### GET
 ##### Summary:
 
-Get DNS over HTTPS .mobileconfig.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parameters
 
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
 | device_id | path |  | Yes | string |
-| exclude_wifi_networks | query | List Wi-Fi networks by their SSID, in which you want AdGuard DNS to be disabled | No | [ string ] |
-| exclude_domain | query | List domains that will use the default DNS servers instead of AdGuard DNS | No | [ string ] |
+| exclude_wifi_networks | query | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No | [ string ] |
+| exclude_domain | query | List domains that will use default DNS servers instead of AdGuard DNS | No | [ string ] |
 
 ##### Responses
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | DNS over HTTPS plist file |
+| 200 | DNS-over-HTTPS .plist file |
 | 404 | Device not found |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
@@ -141,21 +141,21 @@ Get DNS over HTTPS .mobileconfig.
 #### GET
 ##### Summary:
 
-Get DNS over TLS .mobileconfig.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parameters
 
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
 | device_id | path |  | Yes | string |
-| exclude_wifi_networks | query | List Wi-Fi networks by their SSID, in which you want AdGuard DNS to be disabled | No | [ string ] |
-| exclude_domain | query | List domains that will use the default DNS servers instead of AdGuard DNS | No | [ string ] |
+| exclude_wifi_networks | query | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No | [ string ] |
+| exclude_domain | query | List domains that will use default DNS servers instead of AdGuard DNS | No | [ string ] |
 
 ##### Responses
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | DNS over HTTPS plist file |
+| 200 | DNS-over-HTTPS .plist file |
 | 404 | Device not found |
 
 ### /oapi/v1/devices/{device_id}/settings
@@ -184,11 +184,12 @@ Updates device settings
 #### GET
 ##### Summary:
 
-Lists DNS servers
+Lists DNS servers that belong to the user.
 
 ##### Description:
 
-Lists DNS servers for user. By default exists default DNS server
+Lists DNS servers that belong to the user. By default there is at least one
+default server.
 
 ##### Responses
 
@@ -222,7 +223,7 @@ Removes a DNS server
 
 ##### Description:
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deletion of default DNS server is forbidden.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting of default DNS server is forbidden.
 
 ##### Parameters
 
@@ -300,7 +301,7 @@ Updates DNS server settings
 #### GET
 ##### Summary:
 
-Get filter lists
+Gets filter lists
 
 ##### Responses
 
@@ -313,7 +314,7 @@ Get filter lists
 #### POST
 ##### Summary:
 
-Generate Access and Refresh token
+Generates Access and Refresh token
 
 ##### Responses
 
@@ -330,7 +331,7 @@ null
 #### DELETE
 ##### Summary:
 
-Clear query log
+Clears query log
 
 ##### Responses
 
@@ -341,7 +342,7 @@ Clear query log
 #### GET
 ##### Summary:
 
-Get query log
+Gets query log
 
 ##### Parameters
 
@@ -390,7 +391,7 @@ null
 #### GET
 ##### Summary:
 
-Get categories statistics
+Gets categories statistics
 
 ##### Parameters
 
@@ -413,7 +414,7 @@ Get categories statistics
 #### GET
 ##### Summary:
 
-Get companies statistics
+Gets companies statistics
 
 ##### Parameters
 
@@ -436,7 +437,7 @@ Get companies statistics
 #### GET
 ##### Summary:
 
-Get detailed companies statistics
+Gets detailed companies statistics
 
 ##### Parameters
 
@@ -460,7 +461,7 @@ Get detailed companies statistics
 #### GET
 ##### Summary:
 
-Get countries statistics
+Gets countries statistics
 
 ##### Parameters
 
@@ -483,7 +484,7 @@ Get countries statistics
 #### GET
 ##### Summary:
 
-Get devices statistics
+Gets devices statistics
 
 ##### Parameters
 
@@ -506,7 +507,7 @@ Get devices statistics
 #### GET
 ##### Summary:
 
-Get domains statistics
+Gets domains statistics
 
 ##### Parameters
 
@@ -529,7 +530,7 @@ Get domains statistics
 #### GET
 ##### Summary:
 
-Get time statistics
+Gets time statistics
 
 ##### Parameters
 
