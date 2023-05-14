@@ -25,7 +25,7 @@
   },
   "link.item.label.blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=blog linking to https://adguard.com/blog/tag/adguard-dns.html"
+    "description": "The label of footer link with label=blog linking to https://adguard-dns.io/blog/index.html"
   },
   "link.item.label.privacy_policy": {
     "message": "Gizlilik Politikası",

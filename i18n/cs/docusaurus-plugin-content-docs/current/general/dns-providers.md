@@ -397,12 +397,12 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 
 V "Soukromém" režimu — pouze překlad DNS.
 
-| Protokol                 | Adresa                                                                                                   |                                                                                                      |
-| ------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| DNS, IPv4                | `149.112.121.10` a `149.112.122.10`                                                                      | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
-| DNS, IPv6                | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                                | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
-| DNS skrze HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
-| DNS skrze TLS – soukromý | Název hostitele: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` a IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
+| Protokol                 | Adresa                                                                                                  |                                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| DNS, IPv4                | `149.112.121.10` a `149.112.122.10`                                                                     | [Přidat do AdGuardu](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjEw)                                        |
+| DNS, IPv6                | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                               | [Přidat do AdGuardu](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjoxMF0)                                 |
+| DNS skrze HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                      | [Přidat do AdGuardu](sdns://AgEAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNhCi9kbnMtcXVlcnk) |
+| DNS skrze TLS – soukromý | Název hostitele: `tls://family.canadianshield.cira.ca` IP: `149.112.121.10` a IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAecHJpdmF0ZS5jYW5hZGlhbnNoaWVsZC5jaXJhLmNh)                |
 
 #### Chráněný
 

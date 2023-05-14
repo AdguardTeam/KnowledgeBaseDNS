@@ -425,7 +425,7 @@ In "Family" mode, Protected + blocking adult content.
 | DNS, IPv4      | `149.112.121.30` and `149.112.122.30`                | [Add to AdGuard](sdns://AAAAAAAAAAAADjE0OS4xMTIuMTIxLjMw)|
 | DNS, IPv6      | `2620:10A:80BB::30` and `2620:10A:80BC::30`                 | [Add to AdGuard](sdns://AAAAAAAAAAAAE1syNjIwOjEwQTo4MEJCOjozMF0)|
 | DNS-over-HTTPS | `https://family.canadianshield.cira.ca/dns-query` | [Add to AdGuard](sdns://AgEAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2EKL2Rucy1xdWVyeQ) |
-| DNS-over-TLS - Family | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)  |
+| DNS-over-TLS - Family | Hostname: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` and IPv6: `2620:10A:80BB::30` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAdZmFtaWx5LmNhbmFkaWFuc2hpZWxkLmNpcmEuY2E)  |
 
 ### OpenNIC DNS
 
@@ -823,10 +823,10 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Hostname: `tls://ibksturm.synology.me` IP: `83.77.85.7` | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAUaWJrc3R1cm0uc3lub2xvZ3kubWU) |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `178.82.102.190` | [Add to AdGuard](sdns://AgcAAAAAAAAAACA-GhoPbFPz6XpJLVcIS1uYBwWe4FerFQWHb9g_2j24OBRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `83.77.85.7:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAADzgzLjc3Ljg1Ljc6ODQ0MyDBz1dQALBbwmxiH17PmqJWCs6_AH6-yzp_9LIN4LQ57hgyLmRuc2NyeXB0LWNlcnQuaWJrc3R1cm0) |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ibksturm` IP: `[2a02:1205:5055:de60:b26e:bfff:fe1d:e19b]:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAALlsyYTAyOjEyMDU6NTA1NTpkZTYwOmIyNmU6YmZmZjpmZTFkOmUxOWJdOjg0NDMgwc9XUACwW8JsYh9ez5qiVgrOvwB-vss6f_SyDeC0Oe4YMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
+| DNS-over-TLS, IPv4 | Hostname: `tls://ibksturm.synology.me` IP: `213.196.191.96` | [Add to AdGuard](sdns://AwcAAAAAAAAADjIxMy4xOTYuMTkxLjk2ABRpYmtzdHVybS5zeW5vbG9neS5tZQ) |
+| DNS-over-QUIC, IPv4 | Hostname: `quic://ibksturm.synology.me` IP: `213.196.191.96` | [Add to AdGuard](sdns://BAcAAAAAAAAADjIxMy4xOTYuMTkxLjk2ABRpYmtzdHVybS5zeW5vbG9neS5tZQ) |
+| DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `213.196.191.96` | [Add to AdGuard](sdns://AgcAAAAAAAAADjIxMy4xOTYuMTkxLjk2ABRpYmtzdHVybS5zeW5vbG9neS5tZQovZG5zLXF1ZXJ5) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgKmPSv6jOgF7lERDduUMH7a4Z5ShV7PrD-IcS23XUsPkYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
 
 ### DNS Privacy
 
