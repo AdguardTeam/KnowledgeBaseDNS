@@ -1,6 +1,6 @@
 ---
-title: API
-sidebar_position: 2
+title: Overview
+sidebar_position: 1
 ---
 
 # AdGuard DNS API
@@ -108,6 +108,10 @@ passing the access token in the header.
 - Header value should be `Bearer {access_token}`
 
 ## API
+
+### Reference
+
+Please see the methods reference [here](private-dns/api/reference.md).
 
 ### OpenAPI spec
 
