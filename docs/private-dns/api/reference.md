@@ -223,7 +223,7 @@ Removes a DNS server
 
 ##### Description:
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting of default DNS server is forbidden.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting a default DNS server is forbidden.
 
 ##### Parameters
 
