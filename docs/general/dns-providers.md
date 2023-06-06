@@ -3,6 +3,18 @@ title: Known DNS Providers
 sidebar_position: 3
 ---
 
+:::info
+
+Here we suggest a list of trusted DNS providers. To use them, first install AdGuard Ad Blocker or AdGuard VPN on your device. Then, on the same device, click the link to a provider in this article
+
+Quick links:
+
+[Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true)
+
+[Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true)
+
+:::
+
 ### AdGuard DNS
 
 [AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.

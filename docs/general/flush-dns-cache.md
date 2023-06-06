@@ -3,17 +3,27 @@ title: How to flush DNS cache
 sidebar_position: 4
 ---
 
-Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system fetches responses to queries from the cache. 
+:::info
 
-However, outdated DNS cache data stored on your computer or browser can cause problems displaying or loading websites. Even worse, the DNS cache may be corrupted by network attacks or viruses. In this case, unauthorized domain names or IP addresses will be inserted into it. And, for example, instead of going to google.com, your browser may redirect you to a malicious IP address or ad page. 
+Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
 
-To avoid the above problems, you need to clear the DNS cache: to delete all saved DNS lookup information so that the next time you send a lookup request, your computer receives updated data from DNS servers. 
+Quick link:
+
+[Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true)
+
+:::
+
+Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system fetches responses to queries from the cache.
+
+However, outdated DNS cache data stored on your computer or browser can cause problems displaying or loading websites. Even worse, the DNS cache may be corrupted by network attacks or viruses. In this case, unauthorized domain names or IP addresses will be inserted into it. And, for example, instead of going to google.com, your browser may redirect you to a malicious IP address or ad page.
+
+To avoid the above problems, you need to clear the DNS cache: to delete all saved DNS lookup information so that the next time you send a lookup request, your computer receives updated data from DNS servers.
 
 ## How to flush DNS cache on Mac
 
-To flush the DNS cache on your Mac, run the **Terminal** app and enter a specific command depending on the macOS version installed on your device: 
+To flush the DNS cache on your Mac, run the **Terminal** app and enter a specific command depending on the macOS version installed on your device:
 
-* `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` on macOS v13 (Ventura), 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)  
+* `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` on macOS v13 (Ventura), 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
 
 * `sudo killall -HUP mDNSResponder` on macOS v10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra), 10.08 (Mountain Lion), 10.07 (Lion)
 
@@ -31,7 +41,7 @@ Then hit *Return* on your keyboard, enter the administrator password for the acc
 
 ## How to flush DNS cache on Windows
 
-Clearing the DNS cache on Windows is a simple thing to do. The procedure is the same for almost all Windows versions. 
+Clearing the DNS cache on Windows is a simple thing to do. The procedure is the same for almost all Windows versions.
 
 Open the Command Prompt as an administrator and enter the following command: `ipconfig /flushdns`. If the command succeeds, you'll receive the message *Successfully flushed the DNS Resolver Cache*.
 
@@ -47,7 +57,7 @@ Use this command on your Linux machine:
 
 `sudo /etc/init.d/nscd restart`
 
-Enter your password if required. 
+Enter your password if required.
 
 ### How to flush local dnsmasq DNS сache
 
@@ -69,4 +79,4 @@ If you use BIND for the DNS service, there are several commands you can run to c
 
 ## How to flush DNS cache in Chrome-based browsers
 
-In the browser address bar, enter the link **chrome://net-internals/#dns** and click the *Clear host cache* button. 
+In the browser address bar, enter the link **chrome://net-internals/#dns** and click the *Clear host cache* button.
