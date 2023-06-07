@@ -3,7 +3,19 @@ title: How to flush DNS cache
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+:::info
+
+Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+
+Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true)
+
+:::
+
+Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system fetches responses to queries from the cache.
+
+However, outdated DNS cache data stored on your computer or browser can cause problems displaying or loading websites. Even worse, the DNS cache may be corrupted by network attacks or viruses. In this case, unauthorized domain names or IP addresses will be inserted into it. And, for example, instead of going to google.com, your browser may redirect you to a malicious IP address or ad page.
+
+To avoid the above problems, you need to clear the DNS cache: to delete all saved DNS lookup information so that the next time you send a lookup request, your computer receives updated data from DNS servers.
 
 ## What is DNS cache?
 
@@ -28,6 +40,26 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 ## How to flush DNS cache on different OSs
 
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*. 
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+### Android
+
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
 ### macOS
 
 To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
@@ -47,6 +79,30 @@ To flush DNS cache on your Windows device, do the following:
 Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter. 
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+
+### Chrome
+
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
+
+1. Disable **secure DNS** in Chrome settings
+
+```bash
+chrome://settings/security
+```
+
+2. Disable **Async DNS resolver**
+
+```bash
+chrome://flags/#enable-async-dns
+```
+
+3. Press both buttons here
+
+```bash
+chrome://net-internals/#sockets
+```
+
+4. Press **Clear host cache**
 
 ### Linux
 
@@ -70,9 +126,9 @@ To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-To clear the **Nscd** cache, you also need to restart the service:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
@@ -87,23 +143,3 @@ Then you will need to reload BIND:
 `rndc reload`
 
 You will get the message that the server has been successfully reloaded.
-
-### Android
-
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
-
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
-
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
-
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
-
-### iOS
-
-There are different ways to clear the DNS cache on your iPad or iPhone.
-
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
-
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*. 
-
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
