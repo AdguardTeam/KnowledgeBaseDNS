@@ -104,6 +104,10 @@ chrome://net-internals/#sockets
 
 4. Press **Clear host cache**
 
+```bash
+chrome://net-internals/#dns
+```
+
 ### Linux
 
 Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
