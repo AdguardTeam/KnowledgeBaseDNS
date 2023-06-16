@@ -11,12 +11,6 @@ Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto
 
 :::
 
-Machine operating systems and internet browsers save and store DNS cache – information about previous DNS lookups. This speeds up website loading since the cache contains IP addresses of the requested domains: instead of referring to DNS servers, the system fetches responses to queries from the cache.
-
-However, outdated DNS cache data stored on your computer or browser can cause problems displaying or loading websites. Even worse, the DNS cache may be corrupted by network attacks or viruses. In this case, unauthorized domain names or IP addresses will be inserted into it. And, for example, instead of going to google.com, your browser may redirect you to a malicious IP address or ad page.
-
-To avoid the above problems, you need to clear the DNS cache: to delete all saved DNS lookup information so that the next time you send a lookup request, your computer receives updated data from DNS servers.
-
 ## What is DNS cache?
 
 DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
@@ -46,7 +40,7 @@ There are different ways to clear the DNS cache on your iPad or iPhone.
 
 The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*. 
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
 
 > Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
 
@@ -76,7 +70,7 @@ After that, enter your administrator password to complete the process.
 
 To flush DNS cache on your Windows device, do the following:
 
-Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter. 
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
