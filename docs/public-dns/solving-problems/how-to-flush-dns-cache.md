@@ -26,13 +26,11 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 ## When you might need to clear the cache
 
-**You've changed your DNS provider to AdGuard DNS. If the user has changed their DNS, it may take some time to see the result because of the cache.
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
 **You want to improve your privacy.**
-
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
 
 ## How to flush DNS cache on different OSs
 
