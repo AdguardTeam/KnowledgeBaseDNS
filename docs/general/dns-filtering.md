@@ -7,7 +7,7 @@ sidebar_position: 1
 
 The easiest way to explore the benefits of DNS filtering is to install AdGuard Ad Blocker or try AdGuard DNS. If you want to filter DNS at the network level, AdGuard Home is your tool
 
-Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard‒dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard‒dns.io/dashboard/)
 
 :::
 
