@@ -3,23 +3,31 @@ title: Обзор
 sidebar_position: 1
 ---
 
+:::info
+
+С помощью AdGuard DNS вы можете настроить свои DNS-серверы для разрешения DNS-запросов и блокировки рекламы, трекеров и вредоносных доменов до того, как они попадут на ваше устройство
+
+Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Приватный AdGuard DNS
 
-![Панель управления приватного AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## Что такое приватный AdGuard DNS?
 
-Приватный AdGuard DNS — это DNS-сервер, который, помимо преимуществ публичного DNS-сервера (таких как шифрование трафика и возможность добавлять домены в списки блокировки), предоставляет такие возможности, как гибкая настройка, статистика DNS-запросов и родительский контроль, и легко управляется с помощью удобной приборной панели.
+Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
 
 ## Почему вам нужен приватный ADGuard DNS
 
-Сегодня к интернету можно подключить всё, что угодно: телевизоры, холодильники, умные лампочки и колонки. Но вместе с неоспоримыми удобствами в вашу жизнь, а точнее в ваши устройства, приходят трекеры и реклама. Простой браузерный блокировщик в этом случае вас не защитит, зато AdGuard DNS, который может опционально обеспечивать фильтрацию трафика и блокировку контента, поможет.
+Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
-Изначально мы могли предложить либо [публичный AdGuard DNS](../public-dns/overview.md), либо [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Кому-то эти решения подошли, но для многих в публичном AdGuard DNS не хватило гибкости настроек, а в AdGuard Home — простоты. Можно сказать, что на стыке этих двух продуктов и появился приватный AdGuard DNS. Он предлагает обширные параметры настройки, контроль и информацию — и все это с помощью простой и удобной приборной панели.
+We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
 
 ## Разница между приватным и публичным AdGuard DNS
 
-Вот простое сравнение функций, доступных в публичном AdGuard DNS и частном AdGuard DNS серверах.
+Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
 
 | Публичный AdGuard DNS                            | Приватный AdGuard DNS                                                                                        |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
@@ -41,44 +49,44 @@ sidebar_position: 1
 
 ### Управление списками блокировки
 
-Благодаря Спискам блокировки вы можете устанавливать, какие домены блокировать, а какие нет. На ваш выбор большое количество блоклистов для различных целей.
+With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
-![Списки блокировки приватного AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
 ### Пользовательские правила
 
-Для тех случаев, когда предустановленных *Списков блокировки* с тысячами правил недостаточно, у нас есть удобная функция *Пользовательские правила*. Здесь вы можете вручную добавить пользовательские правила для блокировки/разблокировки определённого домена или импортировать списки пользовательских правил (см. [Синтаксис правил фильтрации DNS](../general/dns-filtering-syntax.md)). Вы также можете экспортировать списки.
+For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
-![Пользовательские правила AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
 ### Статистика
 
-Во вкладке *Статистика* вы можете увидеть всю обобщенную статистику по DNS-запросам, сделанным устройствами, подключенными к вашему приватному AdGuard DNS. В ней показано общее количество и география запросов, количество заблокированных запросов, список компаний, которым были адресованы запросы, типы запросов и наиболее часто запрашиваемые домены.
+In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
-![Статистика приватного AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
 ### Назначение трафика
 
-Эта функция показывает, куда направляются DNS-запросы, отправленные вашими устройствами. Помимо просмотра карты направлений запросов, вы можете фильтровать информацию по дате, устройству и стране.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
-![Трафик приватного AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
 ### Компании
 
-Эта вкладка позволяет быстро проверить, какие компании отправляют больше всего запросов, и какие компании имеют больше всего заблокированных запросов.
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
-![Компании в приватном AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
 ### Журнал запросов
 
-Это подробный журнал, в котором можно проверить информацию по каждому запросу, а также отсортировать запросы по статусу, типу, компании, устройству, времени и стране.
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
-![Журнал запросов в приватном AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### Родительский контроль
 
-Чтобы оградить ребёнка от онлайн-контента, который вы считаете неприемлемым, настройте и активируйте опцию *Родительский контроль*. Помимо таких функций, как блокировка «взрослого контента» и безопасный поиск, мы добавили возможность вручную указывать домены для блокировки, а также устанавливать расписание, согласно которому будет работать *Родительский контроль*.
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Родительский контроль в приватном AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 > Если у вас ещё нет приватного AdGuard DNS, вы можете [настроить его на официальном сайте](https://adguard-dns.io/).

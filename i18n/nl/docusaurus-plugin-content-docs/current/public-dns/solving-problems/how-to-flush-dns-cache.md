@@ -3,7 +3,13 @@ title: How to flush DNS cache
 sidebar_position: 1
 ---
 
-# How to flush DNS cache
+:::info
+
+Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+
+Snelle link: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## Wat is DNS-cache?
 
@@ -20,13 +26,33 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 ## When you might need to clear the cache
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
 **You want to improve your privacy.**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
-
 ## How to flush DNS cache on different OSs
+
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+### Android
+
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
 
 ### macOS
 
@@ -70,9 +96,9 @@ To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-To clear the **Nscd** cache, you also need to restart the service:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
@@ -88,22 +114,30 @@ Then you will need to reload BIND:
 
 You will get the message that the server has been successfully reloaded.
 
-### Android
+## How to flush DNS cache in Chrome
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+1. Disable **secure DNS** in Chrome settings
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+```bash
+chrome://settings/security
+```
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+2. Disable **Async DNS resolver**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+3. Press both buttons here
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+```bash
+chrome://net-internals/#sockets
+```
 
-Another option is to reset the network settings of your device in the Settings app. Open *Algemeen*, scrol omlaag, zoek *Herstellen* en tik op *Netwerkinstellingen herstellen*.
+4. Press **Clear host cache**
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+```bash
+chrome://net-internals/#dns
+```

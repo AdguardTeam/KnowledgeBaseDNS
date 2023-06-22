@@ -3,6 +3,14 @@ title: Přehled
 sidebar_position: 1
 ---
 
+:::info
+
+Pomocí AdGuard DNS můžete nastavit své soukromé DNS servery, které budou řešit požadavky DNS a blokovat reklamy, slídiče a škodlivé domény dříve, než se dostanou do vašeho zařízení
+
+Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Soukromý DNS AdGuard
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)

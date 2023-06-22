@@ -1,7 +1,15 @@
 ---
-title: Overview
+title: Überblick
 sidebar_position: 1
 ---
+
+:::info
+
+Mit AdGuard DNS können Sie Ihre privaten DNS-Server einrichten, um DNS-Anfragen aufzulösen und Werbung, Tracker und bösartige Domains zu sperren, bevor diese Ihr Gerät erreichen
+
+Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
 
 # Private AdGuard DNS
 

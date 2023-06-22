@@ -3,13 +3,19 @@ title: Sådan tømmes DNS-cache
 sidebar_position: 1
 ---
 
-# Sådan tømmes DNS-cache
+:::info
+
+Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+
+Hurtig-link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## Hvad er DNS-cache?
 
-DNS-cache gemmer IP-adresserne på besøgte websteder på den lokale enhed, så de indlæses hurtigere næste gang. I stedet for at udføre et langt DNS-opslag, besvarer systemet forespørgslerne med DNS-poster fra den midlertidige DNS-cache.
+DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
-DNS-cachen indeholder såkaldte [-ressourceposter (RR'er)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), som er:
+The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
 * **Ressourcedata (eller rdata)**;
 * **Posttype**;
@@ -20,90 +26,118 @@ DNS-cachen indeholder såkaldte [-ressourceposter (RR'er)](https://en.wikipedia.
 
 ## Hvornår man muligvis skal rydde cachen
 
-**Ved jævnlige 404-fejl.** F.eks. hvis webstedet er overført til en anden server, og dets IP-adresse er ændret. For at få browseren til at åbne webstedet fra den nye IP-adresse, skal den cachelagrede IP fra DNS-cachen fjernes.
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
-**Fortrolighed ønsker forbedret.**
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
-**Der ønskes beskyttelse mod hackerangreb og vira.** Når DNS-cachen er beskadiget, kan browseren omdirigere dig til en IP-adresse på et ondsindet websted, som en angriber har indsat i enhedens DNS-poster.
+**You want to improve your privacy.**
 
 ## Sådan renses DNS-cache på forskellige OS'er
 
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+
+> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+
+### Android
+
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+
+> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+
 ### macOS
 
-For at rydde DNS-cachen på macOS, så åbn Terminal (den findes ved at bruge Spotlight-søgningen — for at gøre dette, tryk på Kommando+Mellemrum og skriv *Terminal*) og angiv dernæst flg. kommando:
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-På macOS Big Sur 11.2.0/Monterey 12.0.0 kan denne kommando også bruges:
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-Angiv herefter administratoradgangskoden for at fuldføre processen.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-Gør flg. for at rense DNS-cache på en Windows-enhed:
+To flush DNS cache on your Windows device, do the following:
 
-Start en kommandoprompt som administrator. Den findes via Startmenu ved at skrive *kommandoprompt* eller *cmd*. Angiv derefter `ipconfig/flushdns` og tryk på Enter.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
-Derefter ses linjen *DNS-opløser cachen er tømt*. Færdig!
+You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux har ikke DNS-caching på OS-niveau, medmindre en cachingtjeneste såsom systemd-resolved, DNSMasq, BIND eller Nscd er installeret og kører. Processen med at rense DNS-cachen afhænger af Linux-distributionen og den anvendte cachetjeneste.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-For hver distribution skal et terminalvindue startes. Tryk på Ctrl+Alt+T på tastaturet, og brug den relevante kommando til at rense DNS-cachen for den tjeneste, Linux-systemet kører.
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-Brug flg. kommando til at fastslå den anvendte DNS-opløser: `sudo lsof -i :53 -S`.
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-For at rydde **systemd-resolved** DNS-cache, så skriv:
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-Ved vellykket udførsel returneres ingen besked fra kommandoen.
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
-For at rense **DNSMasq**-cachen, skal den genstartes:
+To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-For at rense **Nscd**-cachen, skal tjenesten også genstartes:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
 #### BIND
 
-For at rense **BIND** DNS-cachen, kør kommandoen:
+To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-Genindlæs dernæst BIND:
+Then you will need to reload BIND:
 
 `rndc reload`
 
-En besked om, at serveren er blevet genindlæst, vises efter gennemførsel.
+You will get the message that the server has been successfully reloaded.
 
-### Android
+## How to flush DNS cache in Chrome
 
-Den nemmeste måde at rydde DNS-cachen på en Android-enhed er at slå flytilstand til og fra. Flytilstand kan aktiveres/deaktiveres i ruden Hurtige indstillinger.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-En "hård genstart" kan også hjælpe med at rense enhedens DNS-cachen. For at gøre dette, tryk på tænd-/sluk-knappen og holde den nede i mindst 20 sekunder. Det vil (normalt) tvinge enheden til at genstarte manuelt, og hvilket bl.a. også renser DNS-cachen.
+1. Disable **secure DNS** in Chrome settings
 
-En anden mulighed er at nulstille enhedens netværksindstillingerne i appen Indstillinger. Åbn *Indstillinger > System > Avanceret > Nulstil indstillinger > Nulstil netværksindstillinger* og tryk på *Nulstil indstillinger* for at bekræfte.
+```bash
+chrome://settings/security
+```
 
-> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+2. Disable **Async DNS resolver**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-Der er forskellige måder at rydde DNS-cachen på iPad eller iPhone.
+3. Press both buttons here
 
-Den enkleste måde er at aktivere Flytilstand (f.eks. via Kontrolcenter eller i appen Indstillinger) og deaktivere den igen. DNS-cachen vil blive renset.
+```bash
+chrome://net-internals/#sockets
+```
 
-En anden mulighed er at nulstille enhedens netværksindstillingerne i Indstillinger-appen. Åbn *Generelt*, rul ned til *Nulstil* og tryk på *Nulstil netværksindstillinger*.
+4. Press **Clear host cache**
 
-> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+```bash
+chrome://net-internals/#dns
+```

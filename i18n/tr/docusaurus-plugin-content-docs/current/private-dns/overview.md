@@ -3,6 +3,14 @@ title: Genel Bakış
 sidebar_position: 1
 ---
 
+:::info
+
+AdGuard DNS ile, DNS isteklerini çözümlemek ve reklamları, izleyicileri ve kötü amaçlı alan adlarını cihazınıza ulaşmadan önce engellemek için özel DNS sunucularınızı ayarlayabilirsiniz
+
+Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Özel AdGuard DNS
 
 ![Özel AdGuard DNS ana sayfa esas](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)

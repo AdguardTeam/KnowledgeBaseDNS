@@ -3,23 +3,31 @@ title: Visão Geral
 sidebar_position: 1
 ---
 
+:::info
+
+Com o AdGuard DNS, você pode configurar seus servidores DNS privados para resolver solicitações de DNS e bloquear anúncios, rastreadores e domínios maliciosos antes que cheguem ao seu dispositivo
+
+Link rápido: [Experimente o AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # AdGuard DNS Privado
 
-![Painel do AdGuard DNS Privado principal](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## What is Private AdGuard DNS?
 
-O AdGuard DNS Privado é um servidor DNS que, além dos benefícios de um servidor DNS público (como criptografia de tráfego e listas de bloqueio de domínio), oferece recursos como personalização flexível, estatísticas de DNS e controle dos pais e é facilmente gerenciado por meio de um painel prático.
+Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
 
 ## Why you need Private AdGuard DNS
 
-Hoje, você pode conectar qualquer coisa à Internet: TVs, geladeiras, lâmpadas inteligentes ou alto-falantes. Mas junto com as conveniências inegáveis, você obtém rastreadores e anúncios. Um bloqueador de anúncios simples baseado em navegador não o protegerá neste caso, mas o AdGuard DNS, que você pode configurar para filtrar tráfego, bloquear conteúdo e rastreadores, tem um efeito em todo o sistema.
+Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
-Já temos o [AdGuard DNS público](../public-dns/overview.md) e [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Essas soluções funcionam bem para alguns usuários, mas para outros, o AdGuard DNS público não tem flexibilidade de configuração, enquanto o AdGuard Home não tem simplicidade. É aí que entra o AdGuard DNS privado. Ele tem o melhor dos dois mundos: oferece personalização, controle e informações - tudo através de um painel simples e fácil de usar.
+We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
 
 ## A diferença entre AdGuard DNS Privado e Público
 
-Aqui está uma comparação simples dos recursos disponíveis nos servidores AdGuard DNS Público e AdGuard DNS Privado.
+Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
 
 | AdGuard DNS Público                            | AdGuard DNS Privado                                                                                           |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -41,44 +49,44 @@ Aqui está uma comparação simples dos recursos disponíveis nos servidores AdG
 
 ### Gerenciamento de listas de bloqueio
 
-Com o recurso "Listas de bloqueio", você pode definir quais domínios deseja bloquear e quais não. Escolha entre uma grande variedade de listas de bloqueio para diferentes propósitos.
+With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
-![Painel de listas de bloqueio do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
 ### Regras de usuário
 
-Para momentos em que *Listas de bloqueio* pré-instalados com milhares de regras não são suficientes, temos uma função útil chamada "Regras do usuário". Aqui você pode adicionar regras personalizadas manualmente para bloquear/desbloquear um determinado domínio ou importar listas de regras personalizadas (confira [sintaxe de regras de filtragem de DNS](../general/dns-filtering-syntax.md)). Você pode exportar as listas.
+For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
-![Painel de regras de usuário do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
 ### Estatísticas
 
-Na guia "Estatísticas" você pode ver todas as estatísticas resumidas sobre consultas DNS feitas por dispositivos conectados ao seu AdGuard DNS Privado. Mostra o número total e a geografia das solicitações, o número de solicitações bloqueadas, a lista de empresas para as quais as solicitações foram endereçadas, os tipos de solicitações e os principais domínios solicitados.
+In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
-![Painel de estatísticas do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
 ### Destino do tráfego
 
-Esse recurso mostra para onde vão as solicitações de DNS enviadas por seus dispositivos. Além de ver o mapa dos destinos das solicitações, você pode filtrar as informações por data, dispositivo e país.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
-![Painel de tráfego do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
 ### Empresas
 
-Essa guia permite verificar rapidamente quais empresas enviam mais solicitações e quais empresas têm mais solicitações bloqueadas.
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
-![Painel de empresas do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
 ### Registro de consultas
 
-Este é um registro detalhado onde você pode verificar as informações sobre cada solicitação e também classificar as solicitações por status, tipo, empresa, dispositivo, horário, país.
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
-![Painel de registro de consultas do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### Controle parental
 
-Para proteger seu filho de conteúdo online que você considera inapropriado, configure e ative a opção *Controle parental*. Além de opções como bloqueio de "conteúdo adulto" e pesquisa segura, adicionamos a capacidade de especificar manualmente os domínios para bloqueio e definir uma programação para que o *Controle parental* funcione adequadamente.
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Painel do Controle Parental do AdGuard DNS Privado](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 > Caso você ainda não tenha o AdGuard DNS Privado, você pode [obtê-lo no site oficial](https://adguard-dns.io/).

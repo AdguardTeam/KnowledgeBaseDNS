@@ -12,7 +12,7 @@ DNS stands for "Domain Name System", and its purpose is to convert websites' nam
 
 ![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. 그것은 어떻게 작동합니까? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+특정 웹사이트를 DNS 수준에서 차단할 수 있는 DNS 서버도 있습니다. 그것은 어떻게 작동합니까? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 

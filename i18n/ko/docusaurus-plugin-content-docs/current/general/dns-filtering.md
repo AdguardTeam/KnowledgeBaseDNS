@@ -1,7 +1,15 @@
 ---
-title: DNS filtering
+title: DNS 필터링
 sidebar_position: 1
 ---
+
+:::info
+
+DNS 필터링의 이점을 살펴보는 가장 쉬운 방법은 AdGuard 광고 차단기를 설치하거나 AdGuard DNS를 사용해 보는 것입니다. 네트워크 수준에서 DNS를 필터링하려면 AdGuard Home을 사용해 보세요.
+
+빠른 링크: [AdGuard 광고 차단기 다운로드](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home 다운로드](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS 사용해보기](https://adguard-dns.io/dashboard/)
+
+:::
 
 To better understand DNS filtering, first, we should answer the question "What is DNS?".
 

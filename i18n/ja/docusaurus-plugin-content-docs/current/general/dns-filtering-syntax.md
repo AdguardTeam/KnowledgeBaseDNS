@@ -1,7 +1,17 @@
 ---
 title: DNS filtering rules syntax
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+このページでは、AdGuard製品で使用できるカスタムDNSフィルタリングルールの作成方法を紹介しています。
+
+クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home を入手する](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS を試してみる](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Introduction
 
