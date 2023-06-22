@@ -3,6 +3,14 @@ title: Overview
 sidebar_position: 1
 ---
 
+:::info
+
+AdGuard DNS を使用すると、プライベートDNSサーバーを設定してDNSリクエストを解決し、広告、トラッカー、悪意のあるドメインがデバイスに到達する前にブロックすることができます。
+
+クイックリンク: [AdGuard DNS を試してみる](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Private AdGuard DNS
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)

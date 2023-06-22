@@ -3,6 +3,14 @@ title: DNS filtering
 sidebar_position: 1
 ---
 
+:::info
+
+DNSフィルタリングのメリットを実感するための一番簡単な方法は、AdGuard 広告ブロッカーをインストールするか、AdGuard DNS を試してみることです。 そして、ネットワークレベルでDNSフィルタリングしたい場合は、AdGuard Home が最適です。
+
+クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home を入手する](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS を試してみる](https://adguard-dns.io/dashboard/)
+
+:::
+
 To better understand DNS filtering, first, we should answer the question "What is DNS?".
 
 ## What is DNS?

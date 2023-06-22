@@ -3,7 +3,13 @@ title: Jak vyprázdnit mezipaměť DNS
 sidebar_position: 1
 ---
 
-# Jak vyprázdnit mezipaměť DNS
+:::info
+
+Zde vysvětlíme, jak můžete vyprázdnit mezipaměť DNS a vyřešit tak problémy se službami veřejného DNS. Pomocí Blokátoru reklam AdGuard můžete nastavit DNS servery, včetně šifrovaných
+
+Rychlý odkaz: [Stáhnout Blokátor reklam AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## Co je mezipaměť DNS?
 
@@ -20,13 +26,33 @@ Mezipaměť DNS obsahuje tzv. [zdrojová data (RR)](https://en.wikipedia.org/wik
 
 ## Kdy může být nutné vyprázdnit mezipaměť
 
+**Změnili jste poskytovatele DNS na AdGuard DNS.** Pokud uživatel změnil svůj DNS, může kvůli mezipaměti chvíli trvat, než se výsledek zobrazí.
+
 **Pravidelně se vám zobrazuje chyba 404.** Webové stránky byly např. přeneseny na jiný server a změnila se jejich IP adresa. Aby prohlížeč otevřel webovou stránku z nové IP adresy, je třeba odstranit IP adresu z mezipaměti DNS.
 
 **Chcete vylepšit své soukromí.**
 
-**Chcete se chránit před útoky hackerů a viry.** Při poškození mezipaměti DNS vás prohlížeč může přesměrovat na IP adresu škodlivé webové stránky, kterou útočník vložil do DNS záznamů vašeho počítače.
-
 ## Jak vyprázdnit mezipaměť DNS v různých OS
+
+### iOS
+
+Vyprázdnění mezipaměti DNS v iPadu nebo iPhonu lze provést různými způsoby.
+
+Nejjednodušší je aktivovat režim Letadlo (například v Ovládacím centru nebo v aplikaci Nastavení) a opět jej deaktivovat. Mezipaměť DNS bude vyprázdněna.
+
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Obecné*, sjeďte dolů, vyhledejte *Resetovat* a klepněte na *Resetovat nastavení sítě*.
+
+> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
+
+### Android
+
+Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
+
+Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
+
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení > Systém > Pokročilé > Možnosti resetování > Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
+
+> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
 
 ### macOS
 
@@ -70,9 +96,9 @@ Chcete-li vyprázdnit mezipaměť **DNSMasq**, musíte ji restartovat:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-Chcete-li vyprázdnit mezipaměť **Nscd**, musíteslužbu také restartovat:
+Chcete-li vyprázdnit mezipaměť **NSCD**, musíte službu také restartovat:
 
 `sudo service nscd restart`
 
@@ -88,22 +114,30 @@ Pak je třeba znovu načíst BIND:
 
 Zobrazí se zpráva, že server byl znovu úspěšně načten.
 
-### Android
+## Jak vyprázdnit mezipaměť DNS v Chrome
 
-Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
+To může být užitečné, pokud nechcete restartovat prohlížeč pokaždé, když pracujete se soukromým AdGuard DNS nebo AdGuard Home. Nastavení 1-2 stačí změnit pouze jednou.
 
-Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
+1. Deaktivujte **zabezpečený DNS** v nastavení Chrome
 
-Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení > Systém > Pokročilé > Možnosti resetování > Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
+```bash
+chrome://settings/security
+```
 
-> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
+2. Deaktivujte **DNS řešitel Async**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-Vyprázdnění mezipaměti DNS v iPadu nebo iPhonu lze provést různými způsoby.
+3. Zde stiskněte obě tlačítka
 
-Nejjednodušší je aktivovat režim Letadlo (například v Ovládacím centru nebo v aplikaci Nastavení) a opět jej deaktivovat. Mezipaměť DNS bude vyprázdněna.
+```bash
+chrome://net-internals/#sockets
+```
 
-Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Obecné*, sjeďte dolů, vyhledejte *Resetovat* a klepněte na *Resetovat nastavení sítě*.
+4. Stiskněte **Vymazat mezipaměť hostitele**
 
-> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
+```bash
+chrome://net-internals/#dns
+```

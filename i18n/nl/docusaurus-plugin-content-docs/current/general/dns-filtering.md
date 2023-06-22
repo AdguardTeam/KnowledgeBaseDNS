@@ -3,11 +3,19 @@ title: DNS filtering
 sidebar_position: 1
 ---
 
+:::info
+
+The easiest way to explore the benefits of DNS filtering is to install AdGuard Ad Blocker or try AdGuard DNS. If you want to filter DNS at the network level, AdGuard Home is your tool
+
+Snelle links: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home downloaden](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS proberen](https://adguard-dns.io/dashboard/)
+
+:::
+
 To better understand DNS filtering, first, we should answer the question "What is DNS?".
 
 ## What is DNS?
 
-DNS staat voor "Domain Name System" en heeft tot doel de namen van websites te vertalen in iets wat browsers kunnen begrijpen, namelijk IP-adressen. Thus, each time you go to a website, your browser sends a request to a special type of server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
+DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Thus, each time you go to a website, your browser sends a request to a special type of server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
 
 ![How DNS works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 

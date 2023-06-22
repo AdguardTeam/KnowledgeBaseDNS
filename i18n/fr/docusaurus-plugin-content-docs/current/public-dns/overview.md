@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Vue d'ensemble
 sidebar_position: 1
 ---
 

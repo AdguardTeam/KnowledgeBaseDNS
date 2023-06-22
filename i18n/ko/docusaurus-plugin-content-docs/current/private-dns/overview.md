@@ -3,6 +3,14 @@ title: 개요
 sidebar_position: 1
 ---
 
+:::info
+
+AdGuard DNS를 사용하면 개인 DNS 서버를 설정하여 DNS 요청을 해결하고 광고, 트래커 및 악성 도메인이 기기에 도달하기 전에 차단할 수 있습니다.
+
+빠른 링크: [AdGuard DNS 사용해보기](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Private AdGuard DNS
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)

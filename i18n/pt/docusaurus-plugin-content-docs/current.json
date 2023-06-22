@@ -26,5 +26,9 @@
   "sidebar.sidebar.category.Translating AdGuard DNS": {
     "message": "Traduzindo o AdGuard DNS",
     "description": "The label for category Translating AdGuard DNS in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.API": {
+    "message": "API",
+    "description": "The label for category API in sidebar sidebar"
   }
 }

@@ -1,13 +1,23 @@
 ---
 title: Sintaksa pravila DNS filtriranja
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+Here we show you how to write custom DNS filtering rules for use in AdGuard products
+
+Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Uvod
 
-Možete da koristite sintaksu pravila AdGuard DNS filtriranja da biste pravila učinili fleksibilnijim, tako da mogu da blokiraju sadržaj u skladu sa vašim potrebama. Sintaksa pravila AdGuard DNS filtriranja može se koristiti u različitim AdGuard proizvodima kao što su AdGuard Home, AdGuard DNS, AdGuard za Windows/Mac/Android.
+You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
 
-Postoje tri različita pristupa pisanju blok lista:
+There are three different approaches to writing hosts blocklists:
 
 * [sintaksa u stilu](#adblock-style-syntax)Adblock: moderan pristup pisanju pravila filtriranja zasnovan na korišćenju podskupa sintakse pravila u stilu blokatora oglasa. Na ovaj način blok liste su kompatibilne sa blokatorima reklama preglednika.
 
@@ -15,7 +25,7 @@ Postoje tri različita pristupa pisanju blok lista:
 
 * [sintaksa samo za](#domains-only-syntax)domene: jednostavna lista imena domena.
 
-Ako kreirate blok listu, preporučujemo da koristite sintaksu [u stilu blokatora reklama](#adblock-style-syntax). Ima nekoliko važnih prednosti u odnosu na sintaksu starog stila:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
 
 * **blok liste.** korišćenje podudaranja šablona vam omogućava da imate jedno pravilo umesto stotina `/etc/hosts` stavki.
 

@@ -3,13 +3,19 @@ title: DNS önbelleği nasıl temizlenir
 sidebar_position: 1
 ---
 
-# DNS önbelleği nasıl temizlenir
+:::info
+
+Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+
+Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## DNS önbelleği nedir?
 
-DNS önbelleği, ziyaret edilen sitelerin IP adreslerini yerel bilgisayarda depolar, böylece bir dahaki sefere daha hızlı yüklenirler. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
-DNS önbelleği, aşağıdakileri içeren [kaynak kayıtları (RR'ler)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records) içerir:
+The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
 * **Kaynak verileri (veya rdata)**;
 * **Kayıt türü**;
@@ -20,17 +26,37 @@ DNS önbelleği, aşağıdakileri içeren [kaynak kayıtları (RR'ler)](https://
 
 ## Önbelleği temizlemeniz gerektiğinde
 
-**You regularly get a 404 error.** For example, the website was transferred to another server, and its IP address has changed. Tarayıcının siteyi yeni IP adresinden açmasını sağlamak için önbelleğe alınan IP'yi DNS önbelleğinden kaldırmanız gerekir.
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
-**Gizliliğinizi geliştirmek istiyorsunuz.**
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
+**You want to improve your privacy.**
 
 ## Farklı işletim sistemlerinde DNS önbelleği nasıl temizlenir
 
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya Ayarlar uygulamasında) ve tekrar devre dışı bırakmaktır. DNS önbelleği temizlenecektir.
+
+Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Genel* öğesini açın, aşağı kaydırın, *Sıfırla* öğesini bulun ve *Ağ Ayarlarını Sıfırla* öğesine dokunun.
+
+> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+
+### Android
+
+Android cihazınızda DNS önbelleğinizi temizlemenin en kolay yolu Uçak modunu açıp kapatmaktır. Uçak Modunu Hızlı Ayarlar bölmesinde etkinleştirebilir veya devre dışı bırakabilirsiniz.
+
+Zorla yeniden başlatmak da, cihazınız için DNS önbelleğini temizlemeye de yardımcı olabilir. Bunu yapmak için güç düğmesini en az 20 saniye basılı tutun. (Genellikle) cihazınızı elle yeniden başlatmaya zorlar ve DNS önbelleği temizlenir.
+
+Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Ayarlar > Sistem > Gelişmiş > Seçenekleri sıfırla > Ağ ayarlarını sıfırla* öğesini açın ve onaylamak için *Ayarları Sıfırla* öğesine dokunun.
+
+> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+MacOS'ta DNS önbelleğini temizlemek için Terminal'i açın (Spotlight aramasını kullanarak bulabilirsiniz - bunu yapmak için Komut+Boşluk tuşlarına basın ve *Terminal*yazın) ve aşağıdaki komutu girin:
 
 `sudo killall -HUP mDNSResponder`
 
@@ -46,19 +72,19 @@ Windows cihazınızda DNS önbelleğini temizlemek için aşağıdakileri yapın
 
 Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig/flushdns` yazın ve Enter'a basın.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Tamamlandı!
+*DNS Çözümleyici Önbelleği başarıyla temizlendi* satırını göreceksiniz. Tamamlandı!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux, systemd-resolved, DNSMasq, BIND veya Nscd gibi bir önbellekleme hizmeti kurulu ve çalışıyor olmadığı sürece işletim sistemi düzeyinde DNS önbelleğine sahip değildir. DNS önbelleğini temizleme işlemi Linux dağıtımına ve kullanılan önbellekleme hizmetine bağlıdır.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Her dağıtım için bir terminal penceresi başlatmanız gerekir. Klavyenizde Ctrl+Alt+T tuşlarına basın ve Linux sisteminizin çalıştırdığı hizmetin DNS önbelleğini temizlemek için ilgili komutu kullanın.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Hangi DNS çözümleyicisini kullandığınızı öğrenmek için `sudo lsof -i :53 -S` komutunu yazın.
 
 #### systemd-resolved
 
-To clear the **systemd-resolved** DNS cache, type:
+**systemd-resolved** DNS önbelleğini temizlemek için şunu yazın:
 
 `sudo systemd-resolve --flush-caches`
 
@@ -70,9 +96,9 @@ Başarılı olduğunda, komut herhangi bir mesaj döndürmez.
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-**Nscd** önbelleğini temizlemek için hizmeti yeniden başlatmanız da gerekir:
+**NSCD** önbelleğini temizlemek için hizmeti yeniden başlatmanız da gerekir:
 
 `sudo service nscd restart`
 
@@ -82,28 +108,36 @@ Başarılı olduğunda, komut herhangi bir mesaj döndürmez.
 
 `rndc flush`
 
-Ardından BIND'i yeniden yüklemeniz gerekecek:
+Ardından BIND'i yeniden yüklemeniz gerekir:
 
 `rndc reload`
 
 Sunucunun başarıyla yeniden yüklendiği mesajını alırsınız.
 
-### Android
+## Chrome'da DNS önbelleği nasıl temizlenir
 
-Android cihazınızda DNS önbelleğinizi temizlemenin en kolay yolu Uçak modunu açıp kapatmaktır. Uçak Modunu Hızlı Ayarlar bölmesinde etkinleştirebilir veya devre dışı bırakabilirsiniz.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-Zorla yeniden başlatmak da, cihazınız için DNS önbelleğini temizlemeye de yardımcı olabilir. Bunu yapmak için güç düğmesini en az 20 saniye basılı tutun. (Genellikle) cihazınızı elle yeniden başlatmaya zorlar ve DNS önbelleği temizlenir.
+1. Chrome ayarlarında **güvenli DNS** devre dışı bırakın
 
-Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+```bash
+chrome://settings/security
+```
 
-> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+2. Disable **Async DNS resolver**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-iPad veya iPhone'unuzdaki DNS önbelleğini temizlemenin farklı yolları vardır.
+3. Buradaki iki düğmeye de basın
 
-En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya Ayarlar uygulamasında) ve tekrar devre dışı bırakmaktır. DNS önbelleği temizlenecektir.
+```bash
+chrome://net-internals/#sockets
+```
 
-Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+4. Press **Clear host cache**
 
-> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+```bash
+chrome://net-internals/#dns
+```

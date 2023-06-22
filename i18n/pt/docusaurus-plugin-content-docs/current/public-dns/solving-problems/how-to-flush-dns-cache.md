@@ -3,13 +3,19 @@ title: Como limpar o cache DNS
 sidebar_position: 1
 ---
 
-# Como limpar o cache DNS
+:::info
+
+Aqui nós explicamos como descartar o cache DNS para resolver problemas com um DNS público. Você pode usar o bloqueador de anúncios AdGuard para configurar servidores DNS, incluindo os criptografados
+
+Link rápido: [Baixar o bloqueador de anúncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## What is DNS cache?
 
-O cache DNS armazena os endereços IP dos sites visitados no computador local para que eles carreguem mais rápido na próxima vez. Em vez de fazer uma longa pesquisa de DNS, o sistema responde às consultas com registros DNS do cache DNS temporário.
+DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
-O cache DNS contém os chamados [registros de recursos (RRs)](https://pt.wikipedia.org/wiki/Sistema_de_Nomes_de_Dom%C3%ADnio#Registros_de_recurso), que são:
+The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
 * **Dados do recurso (ou rdata)**;
 * **Tipo de registro**;
@@ -20,41 +26,61 @@ O cache DNS contém os chamados [registros de recursos (RRs)](https://pt.wikiped
 
 ## Quando você pode precisar limpar o cache
 
-**Você recebe regularmente um erro 404.** Por exemplo, o site foi transferido para outro servidor e seu endereço IP foi alterado. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
 **You want to improve your privacy.**
 
-**You want to protect yourself from hacker attacks and viruses.** When the DNS cache is corrupted, your browser may redirect you to an IP address of a malicious website that an attacker inserted in your computer’s DNS records.
-
 ## Como liberar o cache DNS em diferentes sistemas operacionais
+
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+### Android
+
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+
+> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
 
 ### macOS
 
-Para limpar o cache DNS no macOS, abra o Terminal (você pode encontrá-lo usando a pesquisa do Spotlight — para fazer isso, pressione Command+Space e digite *Terminal*) e digite o seguinte comando:
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-No macOS Big Sur 11.2.0 e macOS Monterey 12.0.0, você também pode usar este comando:
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-Depois disso, digite sua senha de administrador para concluir o processo.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-Para liberar o cache DNS em seu dispositivo Windows, faça o seguinte:
+To flush DNS cache on your Windows device, do the following:
 
-Open the Command Prompt as an administrator. Você pode encontrá-lo no Menu Iniciar digitando *prompt de comando* ou *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. O processo de limpeza do cache DNS depende da distribuição Linux e do serviço de cache usado.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-Para cada distribuição, você precisa iniciar uma janela de terminal. Pressione Ctrl+Alt+T no teclado e use o comando correspondente para limpar o cache DNS do serviço que seu sistema Linux está executando.
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-Para descobrir qual resolvedor de DNS você está usando, comando `sudo lsof -i :53 -S`.
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
@@ -62,7 +88,7 @@ To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-Em caso de sucesso, o comando não retorna nenhuma mensagem.
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
@@ -70,9 +96,9 @@ To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-To clear the **Nscd** cache, you also need to restart the service:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
@@ -88,22 +114,30 @@ Then you will need to reload BIND:
 
 You will get the message that the server has been successfully reloaded.
 
-### Android
+## How to flush DNS cache in Chrome
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+1. Disable **secure DNS** in Chrome settings
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+```bash
+chrome://settings/security
+```
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+2. Disable **Async DNS resolver**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+3. Press both buttons here
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+```bash
+chrome://net-internals/#sockets
+```
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+4. Press **Clear host cache**
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+```bash
+chrome://net-internals/#dns
+```

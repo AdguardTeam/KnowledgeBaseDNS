@@ -3,13 +3,19 @@ title: 如何刷新DNS缓存
 sidebar_position: 1
 ---
 
-# 如何刷新DNS缓存
+:::info
+
+在这篇文章中，我们解释刷新 DNS 缓存以解决公共 DNS 问题的方式。 You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+
+快捷链接：[下载 AdGuard 广告拦截程序](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+
+:::
 
 ## What is DNS cache?
 
-DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。 系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
+DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
 
-DNS 缓存包含所谓的[资源记录（RRs）](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records)，它们是：
+The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
 * **资源数据（或 rdata）**；
 * **记录类型**；
@@ -20,90 +26,118 @@ DNS 缓存包含所谓的[资源记录（RRs）](https://en.wikipedia.org/wiki/D
 
 ## 当您可能需要清除缓存时
 
-**您经常会得到一个 404 错误。**>例如，该网站被转移到另一台服务器，其 IP 地址发生了变化。 要使浏览器从新的 IP 地址打开网站，您需要从 DNS 缓存中删除已经缓存的 IP。
+**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
-**你想改善你的隐私。**
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
-**您想保护自己免受黑客攻击和电脑病毒的影响。**当 DNS 缓存损坏时，浏览器可能会将您重定向到攻击者插入您计算机的 DNS 记录中的恶意网站的 IP 地址。
+**You want to improve your privacy.**
 
 ## 如何在不同的操作系统上刷新 DNS 缓存
 
+### iOS
+
+There are different ways to clear the DNS cache on your iPad or iPhone.
+
+The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+
+Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+
+> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+
+### Android
+
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+
+Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+
+> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+
 ### macOS
 
-要清除 macOS 上的 DNS 缓存，请打开终端（您可以使用 Spotlight 搜索找到它 - 然后，请按 Command+Space 输入 *Terminal*）并输入以下命令：
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-在 macOS Big Sur 11.2.0 和 macOS Monterey 12.0.0 上，您还可以使用以下命令：
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-之后，输入您的管理员密码以完成该过程。
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-要刷新 Windows 设备上的 DNS 缓存，请执行以下操作：
+To flush DNS cache on your Windows device, do the following:
 
-以管理员身份打开命令提示符。 你可以通过输入 *command prompt* 或 *cmd* 在开始菜单中找到它。 然后输入 `ipconfig/flushdns` 并按回车键。
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
-您会看到这样一行：*成功刷新了 DNS 解析器缓存*。 完成!
+You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux 没有操作系统级别的 DNS 缓存，除非安装并运行了 systemd-resolved、DNSMasq、BIND 或 Nscd 等缓存服务。 清除 DNS 缓存的过程取决于 Linux 发行版和使用的缓存服务。
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-对于每个发行版，您需要启动一个终端窗口。 按键盘上的 Ctrl+Alt+T 并使用相应的命令清除 Linux 系统正在运行的服务的 DNS 缓存。
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-要找出您正在使用的 DNS 解析器，请使用命令 `sudo lsof -i :53 -S`。
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-要清除 **systemd-resolved** DNS 缓存，请输入：
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-成功后，该命令不会返回任何消息。
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
-要清除 **DNSMasq** 缓存，您需要重新启动它：
+To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
-#### Nscd
+#### NSCD
 
-要清除 **Nscd** 缓存，您还需要重新启动服务：
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
 #### BIND
 
-要刷新 **BIND** DNS 缓存，请运行以下命令：
+To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-然后你需要重新加载 BIND：
+Then you will need to reload BIND:
 
 `rndc reload`
 
-您将收到服务器已成功重新加载的消息。
+You will get the message that the server has been successfully reloaded.
 
-### Android（安卓）
+## How to flush DNS cache in Chrome
 
-清除 Android 设备上的 DNS 缓存的最简单方法是打开和关闭飞行模式。 您可以在“快速设置”窗格中 启用/禁用 飞行模式。
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-硬重启还可以帮助刷新设备的 DNS 缓存。 为了做到这一点，按住电源按钮至少20秒。 它（通常）会强制您的设备手动重启，并且 DNS 缓存将被清除。
+1. Disable **secure DNS** in Chrome settings
 
-另一种选择是在“设置”应用中重置设备的网络设置。 打开*设置 >系统 > 高级 > 重置选项 > 重置网络设置* 并点击 *重置设置* 进行确认。
+```bash
+chrome://settings/security
+```
 
-> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+2. Disable **Async DNS resolver**
 
-### iOS
+```bash
+chrome://flags/#enable-async-dns
+```
 
-有多种方法可以清除 iPad 或 iPhone 上的 DNS 缓存。
+3. Press both buttons here
 
-最简单的方法是激活飞行模式（例如，在控制中心或设置应用程序中）并再次将其停用。 DNS 缓存将被刷新。
+```bash
+chrome://net-internals/#sockets
+```
 
-另一种选择是在“设置”应用中重置设备的网络设置。 打开「*常规*」，向下滚动，找到「*重置*」然后点击「*重置网络设置*」。
+4. Press **Clear host cache**
 
-> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+```bash
+chrome://net-internals/#dns
+```

@@ -1,7 +1,17 @@
 ---
 title: DNS filtreleme kuralları söz dizimi
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+Here we show you how to write custom DNS filtering rules for use in AdGuard products
+
+Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Giriş
 
@@ -15,7 +25,7 @@ Ana makine engel listeleri yazmak için üç farklı yaklaşım vardır:
 
 * [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
+Engellenenler listesi oluşturuyorsanız, [Adblock tarzı sözdizimini](#adblock-style-syntax) kullanmanızı öneririz. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
 
 * **Blocklists size.** Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
 
@@ -23,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax](#
 
 * **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+`/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. Buna [Hostlist compiler][hlc] adını verdik ve [AdGuard DNS filtresi][sdn] oluşturmak için kendimiz kullanıyoruz.
 
 ## Temel Örnekler
 
@@ -50,7 +60,7 @@ If you're maintaining either a `/etc/hosts`-style blocklist or multiple filterin
 
 ## Adblock-Style Syntax
 
-This is a subset of the [traditional Adblock-style][adb] syntax which is used by browser ad blockers.
+Bu, tarayıcı reklam engelleyicileri tarafından kullanılan [geleneksel Adblock tarzı][adb] sözdiziminin bir alt kümesidir.
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -65,7 +75,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Özel Karakterler
 
-* `*`: the wildcard character. It is used to represent any set of characters. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
+* `*`: joker karakter. It is used to represent any set of characters. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
 
 * `||`: herhangi bir alt alan dahil olmak üzere bir ana makine adının başlangıcıyla eşleşir. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
@@ -75,7 +85,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Regular Expressions
 
-If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
+Kural oluşturmada daha fazla esneklik istiyorsanız, varsayılan basitleştirilmiş eşleme sözdizimi yerine [normal ifade][regexp] kullanabilirsiniz. If you want to use a regular expression, the pattern has to look like this:
 
 ```none
 pattern = "/" regexp "/"
@@ -89,7 +99,7 @@ pattern = "/" regexp "/"
 
 ### Yorumlar
 
-Any line that starts with an exclamation mark or a hash sign is a comment and it will be ignored by the filtering engine. Yorumlar genellikle kuralların üzerine yerleştirilir ve bir kuralın ne yaptığını açıklamak için kullanılır.
+Ünlem işareti veya hash işareti ile başlayan her satır bir yorumdur ve filtreleme motoru tarafından göz ardı edilir. Yorumlar genellikle kuralların üzerine yerleştirilir ve bir kuralın ne yaptığını açıklamak için kullanılır.
 
 **Örnek:**
 
@@ -100,7 +110,7 @@ Any line that starts with an exclamation mark or a hash sign is a comment and it
 
 ### Kural Değiştiriciler
 
-Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
+Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. Değiştiriciler, kuralın sonunda `$` karakterinden sonra yerleştirilmeli ve virgülle ayrılmalıdır.
 
 **Örnekler:**
 
@@ -117,11 +127,11 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. M
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`](#dnstype) modifier with its value, `A`.
 
-**NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
+**NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 
 #### `i̇stemci`
 
-The `client` modifier allows specifying clients this rule is applied to. Bir istemciyi tanımlamanın iki ana yolu vardır:
+`client` değiştiricisi, bu kuralın uygulanacağı istemcilerin belirtilmesine izin verir. Bir istemciyi tanımlamanın iki ana yolu vardır:
 
 * IP adreslerine veya CIDR öneklerine göre. Bu yol her türlü istemciler için çalışır.
 
@@ -135,13 +145,13 @@ Söz dizimi şöyledir:
 $client=value1|value2|...
 ```
 
-Değerden önce bir `~` karakteri ekleyerek de istemcileri hariç tutabilirsiniz. In this case, the rule is not be applied to this client's DNS requests.
+Değerden önce bir `~` karakteri ekleyerek de istemcileri hariç tutabilirsiniz. Bu durumda kural, bu istemcinin DNS isteklerine uygulanmaz.
 
 ```none
 $client=~value1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+İstemci adları genellikle boşluklar veya diğer özel karakterler içerir, bu nedenle adı tırnak içine almalısınız. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
 **NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
@@ -194,7 +204,7 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 #### `dnstype`
 
-The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
+`dnstype` değiştiricisi, bu kuralın tetikleneceği DNS isteğinin veya yanıt türünün belirtilmesine izin verir.
 
 Söz dizimi şöyledir:
 
@@ -223,7 +233,7 @@ $dnstype=value2
 
 * `||example.org^$dnstype=~A|~CNAME`: only allow `A` and `CNAME` DNS queries for `example.org`, block out the rest.
 
-**NOTE:** Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+**NOT:** **v0.108.0 sürümünden önce,** AdGuard Home yanıt kayıtlarını filtrelemek için yanıt kaydının türünün aksine istek türünü kullanırdı.  Bu, `A` ve `AAAA` isteğindeki yanıtlarda belirli `CNAME` kaydına izin verecek kurallar yazamayacağınız anlamına geldiğinden sorunlara neden oldu. Bu özellik **v0.108.0** sürümünde değiştirildi, yani şimdi:
 
 ```none
 ||canon.example.com^$dnstype=~CNAME
@@ -243,9 +253,9 @@ ANSWERS:
 
 #### `dnsrewrite`
 
-The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
+`dnsrewrite` yanıt değiştiricisi, eşleşen ana bilgisayarlar için DNS isteğine verilen yanıtın içeriğinin değiştirilmesine olanak tanır. AdGuard Home'daki bu değiştiricinin tüm kurallarda çalıştığını, ancak Özel AdGuard DNS'de ise yalnızca özel kurallarda çalıştığını unutmayın.
 
-**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home.**
+**`dnsrewrite` yanıt değiştiricisine sahip kurallar, AdGuard Home'daki diğer kurallardan daha yüksek önceliğe sahiptir.**
 
 Kısa yol söz dizimi şöyledir:
 
@@ -256,7 +266,7 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
+Anahtar kelimelerin TÜMÜ büyük harfle yazılmalıdır (örn. `NOERROR`). Anahtar kelime yeniden yazımları diğerine göre önceliklidir ve uygun bir yanıt kodu ile boş bir yanıtla sonuçlanacaktır.
 
 Tam söz dizimi `RCODE;RRTYPE;VALUE` şeklindedir:
 
@@ -267,7 +277,7 @@ $dnsrewrite=NOERROR;CNAME;example.net
 $dnsrewrite=REFUSED;;
 ```
 
-The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
+`NOERROR` yanıt koduna sahip `$dnsrewrite` değiştiricisi ayrıca boş `RRTYPE` ve `VALUE` alanlarına sahip olabilir.
 
 `CNAME` özeldir çünkü AdGuard Home ana makineyi çözer ve bilgisini yanıta ekler. Yani, `example.net` alan adının IP'si `1.2.3.4` ise ve kullanıcının filtre kurallarında bu varsa:
 
@@ -300,9 +310,9 @@ Ardından, `CNAME` yeniden yazılır. Bundan sonra, diğer tüm kayıtların de�
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-will result in a response with two `A` records.
+iki `A` kaydıyla bir yanıtla sonuçlanır.
 
-Currently supported RR types with examples:
+Örneklerle birlikte şu anda desteklenen RR türleri:
 
 * `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR`record for reverse DNS. Reverse DNS requests for `1.2.3.4` to the DNS server will result in `example.net`.
 
@@ -369,7 +379,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
 
 #### `badfilter`
 
-`badfilter` değiştiricisine sahip kurallar, atıfta bulundukları diğer temel kuralları devre dışı bırakır. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+`badfilter` değiştiricisine sahip kurallar, atıfta bulundukları diğer temel kuralları devre dışı bırakır. Bu, devre dışı bırakılan kuralın metninin `badfilter` kuralının metniyle eşleşmesi gerektiği anlamına gelir ( `badfilter` değiştiricisi olmadan).
 
 **Örnekler:**
 
@@ -403,7 +413,7 @@ $ctag=~value1|~value2|...
 
 * `||example.org^$ctag=device_pc|device_phone`: `device_pc` veya `device_phone` olarak etiketlenmiş istemciler için `example.org` alan adını engelleyin.
 
-* `||example.org^$ctag=~device_phone`: block `example.org` for all clients except those tagged as `device_phone`.
+* `||example.org^$ctag=~device_phone`: `example.org` alan adını `device_phone` olarak etiketlenenler hariç tüm istemciler için engelleyin.
 
 İzin verilen etiketlerin listesi:
 
@@ -446,9 +456,9 @@ Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdı
 IP_address canonical_hostname [aliases...]
 ```
 
-Girişlerin alanları herhangi bir sayıda boşluk veya sekme karakteri ile ayrılır. Text from the `#` character until the end of the line is a comment and is ignored.
+Fields of the entries are separated by any number of space or tab characters. `#` karakterinden satır sonuna kadar olan metin bir yorumdur ve yok sayılır.
 
-Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). Alfabetik bir karakterle başlamalı ve alfasayısal bir karakterle bitmelidirler. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
+Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
 **Örnek:**
 

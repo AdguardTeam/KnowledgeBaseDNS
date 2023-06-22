@@ -1,13 +1,23 @@
 ---
 title: Sintaxis de las reglas de filtrado DNS
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+Aquí te mostramos cómo escribir reglas de filtrado DNS personalizadas para uso en productos AdGuard
+
+Enlaces rápidos: [Descargar el Bloqueador de Anuncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Obtener AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Probar AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Introducción
 
-Puede usar la sintaxis para reglas de filtrado DNS de AdGuard para hacer las reglas más flexibles, de modo que el bloqueo de contenido se haga conforme a sus preferencias. La sintaxis para reglas de filtrado DNS de AdGuard puede usarse en diferentes productos de AdGuard como AdGuard Home, AdGuard DNS o AdGuard para Windows/Mac/Android.
+You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
 
-Hay tres enfoques diferentes para escribir listas de bloqueo de hosts:
+There are three different approaches to writing hosts blocklists:
 
 * [Sintaxis estilo Adblock](#adblock-style-syntax): el enfoque más moderno para escribir reglas de filtrado, basado en el uso de un subconjunto de reglas al estilo de las usadas por AdBlock. De esta manera, las listas de bloqueo creadas son compatibles con las de los bloqueadores de anuncios para navegador.
 
@@ -15,7 +25,7 @@ Hay tres enfoques diferentes para escribir listas de bloqueo de hosts:
 
 * [Sintaxis de dominios](#domains-only-syntax): una simple lista de nombres de dominio.
 
-Si estás creando una lista de bloqueo, te recomendamos que utilices la sintaxis estilo [sintaxis-al-estilo-Adblock](#adblock-style-syntax). Tiene algunas ventajas importantes sobre la sintaxis antigua:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
 
 * **Tamaño de las listas de bloqueo.** El uso de comparación de patrones le permite tener una sola regla en lugar de cientos de entradas `/etc/hosts`.
 
@@ -75,13 +85,13 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Expresiones regulares
 
-Si desea aún más flexibilidad en la creación de reglas, puede usar [expresiones regulares][regexp] en lugar de la sintaxis simplificada predeterminada. Si desea utilizar una expresión regular, el patrón debe verse así:
+If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
 
 ```none
 pattern = "/" regexp "/"
 ```
 
-**Ejemplos:**
+**Examples:**
 
 * `/example.*/` bloqueará los hosts que coincidan con la regexp `example.*`.
 
@@ -89,9 +99,9 @@ pattern = "/" regexp "/"
 
 ### Comentarios
 
-Cualquier línea que comience con un signo de exclamación o de almohadilla es un comentario y será ignorado por el motor de filtrado. Los comentarios suelen colocarse encima de las reglas y se utilizan para describir lo que hace una regla.
+Any line that starts with an exclamation mark or a hash sign is a comment and it will be ignored by the filtering engine. Comments are usually placed above rules and used to describe what a rule does.
 
-**Ejemplos:**
+**Example:**
 
 ```none
 ! Esto es un comentario.
@@ -100,9 +110,9 @@ Cualquier línea que comience con un signo de exclamación o de almohadilla es u
 
 ### Modificadores de reglas
 
-Puedes cambiar el comportamiento de una regla añadiendo modificadores. Los modificadores deben situarse al final de la regla después del carácter `$` y estar separados por comas.
+You can change the behavior of a rule by adding modifiers. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
 
-**Ejemplos:**
+**Examples:**
 
 * ```none ||example.org^$important
    ```
@@ -117,11 +127,11 @@ Puedes cambiar el comportamiento de una regla añadiendo modificadores. Los modi
 
   `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. `client=127.0.0.1` es el modificador [`client`](#client) con su valor, `127.0.0.1`, es el delimitador. Y por último, `dnstype=A` es el modificador [`dnstype`](#dnstype) con su valor, `A`.
 
-**NOTA:** Si una regla contiene un modificador que no aparece en este documento, toda la regla **debe ser ignorada**. De este modo, evitamos los falsos positivos cuando alguien intenta utilizar listas de filtros para bloqueadores de anuncios sin modificarlas, como EasyList o EasyPrivacy.
+**NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
 
 #### `cliente`
 
-El modificador `client` (cliente) permite especificar los clientes a los que se aplica esta regla. Hay dos formas principales de identificar a un cliente:
+The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
 * Por su dirección IP o prefijo CIDR. Esta forma funciona para todo tipo de clientes.
 
@@ -129,23 +139,23 @@ El modificador `client` (cliente) permite especificar los clientes a los que se 
 
   **NOTA:** En AdGuard Home, actualmente no se admiten ClientIDs, sólo nombres. Si ha añadido un cliente con el nombre "Mi Cliente" y ClientID `mi-cliente` escriba su modificador como `$client='Mi Cliente'` en lugar de `$client=mi-cliente`.
 
-La sintaxis es:
+The syntax is:
 
 ```none
 $client=valor1|valor2|...
 ```
 
-También puede excluir clientes añadiendo un carácter `~` antes del valor. En este caso, la regla no se aplica a las peticiones DNS de este cliente.
+You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client's DNS requests.
 
 ```none
 $client=~valor1
 ```
 
-Los nombres de los clientes suelen contener espacios u otros caracteres especiales, por lo que debe colocar el nombre entre comillas. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
 **NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
-**Ejemplos:**
+**Examples:**
 
 * `@@||*^$client=127.0.0.1`: unblock everything for localhost.
 
@@ -161,7 +171,7 @@ Los nombres de los clientes suelen contener espacios u otros caracteres especial
 
 You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
 
-La sintaxis es:
+The syntax is:
 
 ```none
 $denyallow=domain1|domain2|...
@@ -184,7 +194,7 @@ The problem with this approach is that this way you will also unblock tracking d
 *$denyallow=com|net
 ```
 
-**Ejemplos:**
+**Examples:**
 
 * `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
@@ -196,7 +206,7 @@ The problem with this approach is that this way you will also unblock tracking d
 
 The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
 
-La sintaxis es:
+The syntax is:
 
 ```none
 $dnstype=value1|value2|...
@@ -217,7 +227,7 @@ is equivalent to this:
 $dnstype=value2
 ```
 
-**Ejemplos:**
+**Examples:**
 
 * `||example.org^$dnstype=AAAA`: block DNS queries for the IPv6 addresses of `example.org`.
 
@@ -347,7 +357,7 @@ Exception rules remove one or all rules:
 
 The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
-**Ejemplos:**
+**Examples:**
 
 * In this example:
 
@@ -371,7 +381,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
-**Ejemplos:**
+**Examples:**
 
 * `||example.com$badfilter` disables `||example.com`.
 
@@ -385,7 +395,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
-La sintaxis es:
+The syntax is:
 
 ```none
 $ctag=value1|value2|...
@@ -399,7 +409,7 @@ $ctag=~value1|~value2|...
 
 If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
-**Ejemplos:**
+**Examples:**
 
 * `||example.org^$ctag=device_pc|device_phone`: block `example.org` for clients tagged as `device_pc` or `device_phone`.
 
@@ -450,7 +460,7 @@ Fields of the entries are separated by any number of space or tab characters. Te
 
 Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
-**Ejemplos:**
+**Example:**
 
 ```none
 # This is a comment
@@ -466,7 +476,7 @@ In AdGuard Home, the IP addresses are used to respond to DNS queries for these d
 
 A simple list of domain names, one name per line.
 
-**Ejemplos:**
+**Example:**
 
 ```none
 # This is a comment

@@ -1,7 +1,17 @@
 ---
 title: DNS filtering rules syntax
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+Here we show you how to write custom DNS filtering rules for use in AdGuard products
+
+Snelle links: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home downloaden](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS proberen](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Introduction
 
@@ -143,7 +153,7 @@ $client=~value1
 
 Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**OPMERKING:** Als je een cliënt uitsluit, **moet** je `~` buiten de aanhalingstekens plaatsen.
+**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
 
 **Examples:**
 
@@ -167,7 +177,7 @@ The syntax is:
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. Misschien wil je alles blokkeren, behalve een paar TLD-domeinen. You could use the standard approach, i.e. rules like this:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Block everything.
