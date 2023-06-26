@@ -28,7 +28,7 @@ module.exports = {
   themes: ['docusaurus-theme-search-typesense'],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
+    locales: ['en', 'ru', 'cs', 'da', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'tr', 'zh-CN', 'zh-TW'],
   },
   themeConfig: {
     colorMode: {
