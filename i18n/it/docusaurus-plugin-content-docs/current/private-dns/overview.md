@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-With AdGuard DNS, you can set up your private DNS servers to resolve DNS requests and block ads, trackers, and malicious domains before they reach your device
+Con AdGuard DNS, puoi configurare i tuoi server DNS privati per risolvere le richieste DNS e bloccare pubblicità, tracker e domini dannosi prima che raggiungano il tuo dispositivo
 
 Link rapido: [Prova AdGuard DNS](https://adguard-dns.io/dashboard/)
 

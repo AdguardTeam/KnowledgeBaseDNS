@@ -711,7 +711,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### Strongarm DNS
 
-[Strongarm DNS](https://strongarm.io) is a DNS service by Strongarm that prevents people from interacting with malicious content.
+[Strongarm DNS](https://strongarm.io) er en DNS-tjeneste fra Strongarm, der forhindrer folk i at interagere med ondsindet indhold.
 
 | Protokol  | Adresse                           |                                                                                                                                                   |
 | --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -719,7 +719,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### SafeSurfer DNS
 
-[SafeSurfer DNS](https://www.safesurfer.co.nz/) is a DNS service by SafeSurfer that protects your device from harmful and adult contents.
+[SafeSurfer DNS](https://www.safesurfer.co.nz/) er en DNS-tjeneste fra SafeSurfer, der beskytter enheden mod skadeligt og voksen indhold.
 
 | Protokol       | Adresse                                                          |                                                                                                                                                       |
 | -------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -728,7 +728,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) En sikker, privat, open-source DNS-opløser med malwarebeskyttelse, adblocking og uden logning. Degoogle og Ungoogle mobilen, tabletten og computeren.
 
 | Protokol       | Adresse                                                                      |                                                                                                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -739,7 +739,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
+[Lelux.fi](https://lelux.fi/resolver/) drives af Elias Ojala, Finland.
 
 | Protokol       | Adresse                                  |                                                                                                                                                                                                                                              |
 | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -748,7 +748,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) er en server, der kører fra en Digital Ocean-droplet i BLR1-regionen. Vedligeholdes af Abhay Rana, også kendt som Nemo.
 
 | Protokol       | Adresse                                                         |                                                                                                                                                   |
 | -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -756,7 +756,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) leverer gratis DNS-tjeneste uden logning, DNSSEC aktiveret.
 
 | Protokol       | Adresse                            |                                                                                                                                                                                                     |
 | -------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -767,7 +767,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) er en redundant DNS-opløser med en adblocking og ingen logning leveret af [adminforge](https://adminforge.de/).
 
 | Protokol       | Adresse                                              |                                                                                                                                                                                                         |
 | -------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -778,7 +778,7 @@ Disse servere tilbyder ingen reklameblokering, opbevarer ingen logfiler og har D
 
 ### Fondation Restena DNS
 
-[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/).
+[Restena DNS](https://www.restena.lu/en/service/public-dns-resolver)-servere leveres af [Restena Foundation](https://www.restena.lu/).
 
 | Protokol       | Adresse                                                                            |                                                                                                                                                                                                                                     |
 | -------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -60,7 +60,7 @@ Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtrerin
 
 ## Adblock-syntakstype
 
-This is a subset of the [traditional Adblock-style][adb] syntax which is used by browser ad blockers.
+Dette er et undersæt af den [traditionelle Adblock-syntakstype][adb] brugt af browser-adblockere.
 
 ```none
      regel = ["@@"] mønster [ "$" modifikatorer ]
@@ -85,13 +85,13 @@ modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 
 ### Regulære udtryk
 
-If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
+Ønskes endnu mere fleksibilitet ved regeludarbejdelse, kan [regulære udtryk][regexp] bruges i stedet for standarden, den forenklede matchende syntaks. Ønskes et regulært udtryk anvendt, skal mønsteret se således ud:
 
 ```none
 mønster = "/" regexp "/"
 ```
 
-**Examples:**
+**Eksempler:**
 
 * `/eksempel.*/` blokerer værter matchende `eksempel.*`-regexp'et.
 
@@ -99,9 +99,9 @@ mønster = "/" regexp "/"
 
 ### Kommentarer
 
-Any line that starts with an exclamation mark or a hash sign is a comment and it will be ignored by the filtering engine. Comments are usually placed above rules and used to describe what a rule does.
+Enhver linje startende med et udråbs- eller et hash-tegn udgør en kommentar og ignoreres derfor af filtreringsmotoren. En kommentarer beskriver, hvad en regel gør, og den placeres normalt over reglen.
 
-**Example:**
+**Eksempel:**
 
 ```none
 ! Dette er en kommentar.
@@ -110,9 +110,9 @@ Any line that starts with an exclamation mark or a hash sign is a comment and it
 
 ### Regelmodifikatorer
 
-You can change the behavior of a rule by adding modifiers. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
+Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer skal placeres i slutningen af reglen efter `$`-tegnet og adskilles med kommaer.
 
-**Examples:**
+**Eksempler:**
 
 * ``` ingen ||eksempel.org^$important
    ```
@@ -127,11 +127,11 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. Og endelig er `dnstype=A` [`dnstype`](#dnstype)-modifikatoren med sin værdi `A`.
 
-**NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
+**BEMÆRK:** Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal hele regel **ignoreres**. På denne måde undgås falske positiver, når folk forsøger at bruge umodificerede browser-adblockingfilterlister, såsom EasyList eller EasyPrivacy.
 
 #### `client`
 
-The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
+Modifikatoren `client` muliggør at angive de klienter, for hvilke reglen anvendes. Der er to hovedmåder, en klient kan identificere på:
 
 * Via deres IP-adresse eller CIDR-præfiks. Denne måde fungerer for alle slags klienter.
 
@@ -139,23 +139,23 @@ The `client` modifier allows specifying clients this rule is applied to. There a
 
   **BEMÆRK:** I AdGuard Home understøttes ClientID'er ikke pt., kun navne. Har man tilføjet en klient med navnet "Min Klient" og klient-id `min-klient`, så bogstavér modifikatoren `$client='Min Klient'` i modsætning til `$client=min-klient`.
 
-The syntax is:
+Syntaksen er:
 
 ```none
 $client=værdi1|værdi2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client's DNS requests.
+Klienter kan også undtages ved at tilføje et `~`-tegn før værdien. Reglen anvendes så ikke på DNS-forespørgsler fra denne klient.
 
 ```none
 $client=~værdi1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+Klientnavne indeholder normalt mellemrum eller andre specialtegn, hvorfor navnet bør sætte i anførselstegn. Både enkelte og dobbelte ASCII-anførselstegn understøttes. Brug omvendt skråstreg (`\`) til at escape anførselstegnene (`"` og `'`), kommaer (`,`) samt pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
+**BEMÆRK:** Når en klient undtages, **skal** man placere `~` udenfor anførselstegnene.
 
-**Examples:**
+**Eksempler:**
 
 * `@@||*^$client=127.0.0.1`: Afblokér alt for localhost.
 
@@ -169,15 +169,15 @@ Client names usually contain spaces or other special characters, which is why yo
 
 #### `denyallow`
 
-You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
+Modifikatoren `denyallow` kan bruges til at undtage domæner fra blokeringsreglen. Benyt `|`-tegnet som separator, når flere domæner føjes til én regel.
 
-The syntax is:
+Syntaksen er:
 
 ```none
 $denyallow=domæne1|domæne2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+Denne modifikator muliggør at undgå at oprette unødvendige undtagelsesregler, når vores blokeringsregel dækker for mange domæner. Man ønsker måske at blokere alt undtagen nogle få TLD-domæner. Man kan bruge standardmetoden, dvs. regler såsom denne:
 
 ```none
 ! Blokér alt.
@@ -188,13 +188,13 @@ This modifier allows avoiding creating unnecessary exception rules when our bloc
 @@||net^
 ```
 
-The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here's how to solve this with `denyallow`:
+Problemet med denne tilgang er, at man på denne måde også afblokerer sporingsdomæner, som findes på disse TLD'er (f.eks. `google-analytics.com`). Sådan løses dette med `denyallow`:
 
 ```none
 *$denyallow=com|net
 ```
 
-**Examples:**
+**Eksempler:**
 
 * `*$denyallow=com|net`: Blokér alt, undtagen `*.com` og `*.net`.
 
@@ -204,42 +204,42 @@ The problem with this approach is that this way you will also unblock tracking d
 
 #### `dnstype`
 
-The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
+Modifikatoren `dnstype` muliggør angivelse af DNS-forespørgsel eller svartype, for hvilken reglen udløses.
 
-The syntax is:
+Syntaksen er:
 
 ```none
 $dnstype=værdi1|værdi2|...
 $dnstype=~værdi1|~værdi2|~...
 ```
 
-The names of the types are case-insensitive, but are validated against a set of actual DNS resource record (RR) types.
+Typenavnene er minuskel/majuskel ufølsomme, men valideres mod et sæt reelle DNS-ressourceposttyper (RR).
 
-Do not combine exclusion rules with inclusion ones. This:
+Kombinér ikke undtagelsesregler med inklusionsregler. Dette:
 
 ```none
 $dnstype=~værdi1|~værdi2
 ```
 
-is equivalent to this:
+svarer til dette:
 
 ```none
 $dnstype=værdi2
 ```
 
-**Examples:**
+**Eksempler:**
 
 * `||eksemple.org^$dnstype=AAAA`: Blokér DNS-forespørgsler for IPv6-adresserne på `eksemple.org`.
 
 * `||eksemple.org^$dnstype=~A|~CNAME`: Tillad kun `A` og `CNAME` DNS-forespørgsler for `eksemple.org`, blokér resten.
 
-**NOTE:** Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+**BEMÆRK:** Før version **v0.108.0,** brugte AdGuard Home forespørgselstypen til at filtrere svarposterne, i modsætning til selve svarposttypen.  Det gav problemer, da det betød, at der ikke kunne skrives regler, som ville tillade visse `CNAME`-poster i svar i `A`- og `AAAA`-forespørgsler. I **v0.108.0** blev denne adfærd ændret, så den nu er:
 
 ```none
 ||canon.eksempel.com^$dnstype=~CNAME
 ```
 
-allows you to avoid filtering of the following response:
+giver mulighed for at undgå filtrering af det flg. svar:
 
 ```none
 SVAR:
@@ -253,11 +253,11 @@ SVAR:
 
 #### `dnsrewrite`
 
-The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
+Svarmodifikatoren `dnsrewrite` muliggør at erstatte indholdet af svaret på DNS-forespørgslen for de matchende værter. Bemærk, at denne modifikator i AdGuard Home fungerer i alle regler, men kun i tilpassede regler i Private AdGuard DNS.
 
-**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home.**
+**Regler med svarmodifikatoren `dnsrewrite` har højere prioritet end øvrige regler i AdGuard Home.**
 
-The shorthand syntax is:
+Stenografisyntaksen er:
 
 ```none
 $dnsrewrite=1.2.3.4
@@ -266,9 +266,9 @@ $dnsrewrite=eksempel.net
 $dnsrewrite=REFUSED
 ```
 
-The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
+Nøgleordene SKAL være majuskler (f.eks. `NOERROR`). Nøgleordsomskrivninger har forrang over de øvrige og vil resultere i et tomt svar med en passende svarkode.
 
-The full syntax is of the form `RCODE;RRTYPE;VALUE`:
+Den fulde syntaksform er `RCODE;RRTYPE;VALUE`:
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4
@@ -277,9 +277,9 @@ $dnsrewrite=NOERROR;CNAME;eksempel.net
 $dnsrewrite=REFUSED;;
 ```
 
-The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
+Modifikatoren `$dnsrewrite` med `NOERROR`-svarkoden kan også have tomme `RRTYPE`- og `VALUE`-felter.
 
-The `CNAME` one is special because AdGuard Home will resolve the host and add its info to the response. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
+`CNAME` er speciel, idet AdGuard Home vil opløse værten og føje dens oplysninger til svaret. Dvs., hvis `eksempel.net` har IP `1.2.3.4`, og brugeren har dette i sine filterregler:
 
 ```none
 ||eksempel.com^$dnsrewrite=eksempel.net
@@ -287,7 +287,7 @@ The `CNAME` one is special because AdGuard Home will resolve the host and add it
 ||eksempel.com^$dnsrewrite=FEJL;CNAME;eksempel.net
 ```
 
-then the response will be something like:
+så vil svaret være noget i retning af:
 
 ```sh
 $ nslookup eksempel.com my.adguard.local
@@ -303,16 +303,16 @@ Name:   eksempel.net
 Address: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite. After that, all other records' values are summed as one response, so this:
+Dernæst `CNAME`-omskrivningen. Derefter opsummeres alle andre posters værdier til ét svar, så dette:
 
 ```none
 ||eksempel.com^$dnsrewrite=NOERROR;A;1.2.3.4
 ||eksempel.dk^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-will result in a response with two `A` records.
+vil resultere i et svar med to `A`-poster.
 
-Currently supported RR types with examples:
+Aktuelt understøttede RR-typer med eksempler:
 
 * `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;eksempel.net.` tilføjer en `PTR`-post for reverse DNS. Reverse DNS-forespørgsler for `1.2.3.4` til DNS-serveren vil resultere i `eksempel.net`.
 
@@ -347,7 +347,7 @@ Currently supported RR types with examples:
 
 * `$dnstype=AAAA,denyallow=eksempel.org,dnsrewrite=NOERROR;;` besvares med tomme `NOERROR`-svar for alle `AAAA`-forespørgsler, undtagen for dem indeholdende `eksempel.org`.
 
-Exception rules remove one or all rules:
+Undtagelsesregler fjerner én eller alle regler:
 
 * `@@||eksempel.com^$dnsrewrite` fjerner alle DNS rewrite-regler.
 
@@ -355,9 +355,9 @@ Exception rules remove one or all rules:
 
 #### `important`
 
-The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
+Modifikatoren `important` anvendt på en regel, øger dens prioritet over alle øvrige regler uden modifikatoren. Selv over basisundtagelsesregler.
 
-**Examples:**
+**Eksempler:**
 
 * I dette eksempel:
 
@@ -379,9 +379,9 @@ The `important` modifier applied to a rule increases its priority over any other
 
 #### `badfilter`
 
-The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke de henviser. Det betyder, at teksten i den deaktiverede regel bør matche teksten i reglen `badfilter` (uden modifikatoren `badfilter`).
 
-**Examples:**
+**Eksempler:**
 
 * `||eksempel.com$badfilter` dealtiverer `||eksempel.com`.
 
@@ -391,11 +391,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 #### `ctag`
 
-**The `ctag` modifier can only be used in AdGuard Home.**
+**Modifikatoren `ctag` kan kun bruges i AdGuard Home.**
 
-It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+Det muliggør blokering af domæner for bestemte typer af DNS-klienttags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
-The syntax is:
+Syntaksen er:
 
 ```none
 $ctag=værdi1|værdi2|...
@@ -409,7 +409,7 @@ $ctag=~value1|~value2|...
 
 If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
-**Examples:**
+**Eksempler:**
 
 * `||eksempel.org^$ctag=device_pc|device_phone`: Blokerer `eksempel.org` for klienter tagget som `device_pc` eller `device_phone`.
 
@@ -460,7 +460,7 @@ Fields of the entries are separated by any number of space or tab characters. Te
 
 Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
-**Example:**
+**Eksempel:**
 
 ```none
 # Dette er en kommentar
@@ -476,7 +476,7 @@ In AdGuard Home, the IP addresses are used to respond to DNS queries for these d
 
 A simple list of domain names, one name per line.
 
-**Example:**
+**Eksempel:**
 
 ```none
 # Dette er en kommentar

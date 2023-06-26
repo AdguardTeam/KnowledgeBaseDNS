@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Qui spieghiamo come svuotare la cache DNS per risolvere i problemi del DNS pubblico. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+Qui spieghiamo come svuotare la cache DNS per risolvere i problemi del DNS pubblico. Puoi utilizzare il Blocco AdGuard per configurare i server DNS, inclusi quelli crittografati
 
 Link rapido: [Scarica il Blocco AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
 
