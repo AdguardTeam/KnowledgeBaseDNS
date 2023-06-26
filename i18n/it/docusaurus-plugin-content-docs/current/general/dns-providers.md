@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Qui suggeriamo un elenco di provider DNS affidabili. To use them, first install AdGuard Ad Blocker or AdGuard VPN on your device. Then, on the same device, click the link to a provider in this article
+Qui suggeriamo un elenco di provider DNS affidabili. Per utilizzarli, installa prima il Blocco AdGuard o AdGuard VPN sul tuo dispositivo. Quindi, sullo stesso dispositivo, fai clic sul collegamento a un provider in questo articolo
 
 Link rapidi: [Scarica il Blocco AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Scarica AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 

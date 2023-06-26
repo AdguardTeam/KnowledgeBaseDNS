@@ -16,7 +16,7 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
   "dependencies": {
-    "@crowdin/cli": "3",
+    "@crowdin/cli": "3.13.0",
     "@docusaurus/core": "2.0.0-beta.21",
     "@docusaurus/plugin-ideal-image": "^2.0.0-beta.21",
     "@docusaurus/preset-classic": "2.0.0-beta.21",
