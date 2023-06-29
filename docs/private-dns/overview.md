@@ -97,3 +97,39 @@ To protect your child from online content you deem inappropriate, set up and act
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 > In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+
+### Linked IP
+
+"Linked IP" refers to the connection between a domain name and its corresponding IP address through DNS records, allowing the resolution of domain names to the correct IP addresses for communication on the Internet.
+
+To use your IP address as a linked IP, the following requirements must be met:
+
+1. An IPv4 address must not be `0.0.0.0`. It must not be one of the [following values](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml) as well:
+
+```
+0.0.0.0/8,
+10.0.0.0/8,
+100.64.0.0/10,
+169.254.0.0/16,
+172.16.0.0/12,
+192.0.0.0/24,
+192.0.2.0/24,
+192.31.196.0/24,
+192.52.193.0/24,
+192.88.99.0/24,
+192.168.0.0/16,
+192.175.48.0/24,
+198.18.0.0/15,
+198.51.100.0/24,
+203.0.113.0/24,
+240.0.0.0/4,
+255.255.255.255/32,
+127.0.0.0/8, // loop-back
+224.0.0.0/4
+```
+
+An IPv6 address must not be `2000::/3`.
+
+2. The address must be some kind of residential proxy. These services provide users with proxy connections through residential ISP with or without the consent of peers to share their idle resources.
+
+3. The address must not be assigned to another user (it must be a valid IP address, globally routable, from a local ISP).
