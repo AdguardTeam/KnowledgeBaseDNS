@@ -43,14 +43,28 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
 2. Click “Connect device” and follow on-screen instructions
 
-> Supported platforms:
->- Android
->- iOS
->- Windows
->- Mac
->- Linux
->- Routers
->- Gaming consoles
+**Supported platforms:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routers
+* Gaming consoles
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**. 
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ## Private AdGuard DNS features
 
@@ -96,40 +110,8 @@ To protect your child from online content you deem inappropriate, set up and act
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+:::note
 
-### Linked IP
+In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
 
-"Linked IP" refers to the connection between a domain name and its corresponding IP address through DNS records, allowing the resolution of domain names to the correct IP addresses for communication on the Internet.
-
-To use your IP address as a linked IP, the following requirements must be met:
-
-1. An IPv4 address must not be `0.0.0.0`. It must not be one of the [following values](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml) as well:
-
-```
-0.0.0.0/8,
-10.0.0.0/8,
-100.64.0.0/10,
-169.254.0.0/16,
-172.16.0.0/12,
-192.0.0.0/24,
-192.0.2.0/24,
-192.31.196.0/24,
-192.52.193.0/24,
-192.88.99.0/24,
-192.168.0.0/16,
-192.175.48.0/24,
-198.18.0.0/15,
-198.51.100.0/24,
-203.0.113.0/24,
-240.0.0.0/4,
-255.255.255.255/32,
-127.0.0.0/8, // loop-back
-224.0.0.0/4
-```
-
-An IPv6 address must not be `2000::/3`.
-
-2. The address must be some kind of residential proxy. These services provide users with proxy connections through residential ISP with or without the consent of peers to share their idle resources.
-
-3. The address must not be assigned to another user (it must be a valid IP address, globally routable, from a local ISP).
+:::
