@@ -54,6 +54,8 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 
 Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
 
+### Linked IP
+
 If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
 
 The only requirement for linking IP is that **it must be a residential IP address**. 
