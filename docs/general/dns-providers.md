@@ -1103,3 +1103,25 @@ Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but
 | DNS, IPv4      | Varies; see link above. |
 | DNS, IPv6      | Varies; see link above. |
 | DNSCrypt, IPv4 | Varies; see link above. |
+
+### OpenBLD.net DNS
+
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resovers with blocking: adverticing, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
+
+#### Adaptive Filtering (ADA)
+
+Recommended for most users, very flexible filtering with blocking most ads networks, ad-tracking, malware and phishing domains.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://ada.openbld.net/dns-query`|[Add to AdGuard](sdns://AgAAAAAAAAAAAAAPYWRhLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk)|
+|DNS-over-TLS|`tls://ada.openbld.net`|[Add to AdGuard](sdns://AwAAAAAAAAAAAAAPYWRhLm9wZW5ibGQubmV0)|
+
+#### Strict Filtering (RIC)
+
+More strictly filtering policies with blocking - ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://ric.openbld.net/dns-query`|[Add to AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk)|
+|DNS-over-TLS|`tls://ric.openbld.net`|[Add to AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)|
