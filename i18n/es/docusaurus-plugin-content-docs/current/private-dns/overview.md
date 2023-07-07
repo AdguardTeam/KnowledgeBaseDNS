@@ -43,17 +43,40 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 1. Vaya a su [ Panel de control DNS de AdGuard](https://adguard-dns.io/dashboard/) (si no ha iniciado sesión, inicie sesión con su cuenta de AdGuard)
 2. Haga clic en "Conectar dispositivo" y siga las instrucciones en pantalla
 
-> Supported platforms: - Android - iOS - Windows - Mac - Linux - Routers - Gaming consoles
+**Supported platforms:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routers
+* Gaming consoles
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ## Funciones de DNS de AdGuard privado
 
-### Gestión de listas de bloqueo
+### Blocklists management
 
 With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Reglas de usuario
+### User rules
 
 For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
@@ -89,4 +112,8 @@ To protect your child from online content you deem inappropriate, set up and act
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+:::note
+
+In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+
+:::

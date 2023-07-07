@@ -43,50 +43,77 @@ Voici une simple comparaison des fonctionnalités disponibles dans les serveurs 
 1. Accédez à votre [tableau de bord AdGuard DNS](https://adguard-dns.io/dashboard/) (si vous n'êtes pas connecté, connectez-vous à l'aide de votre compte AdGuard)
 2. Cliquez sur "Connecter l'appareil" et suivez les instructions sur l'écran
 
-> Plateformes prises en charge : - Android - iOS - Windows - Mac - Linux - Routeurs - Consoles de jeu
+**Supported platforms:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routers
+* Gaming consoles
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ## Fonctionnalités de AdGuard DNS privé
 
-### Gestion des listes de blocage
+### Blocklists management
 
-Avec la fonctionnalité "Listes de blocage", vous pouvez définir les domaines que vous souhaitez bloquer et ceux que vous ne souhaitez pas. Choisissez parmi une grande variété de listes de blocage à des fins différentes.
+With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
-![Listes de blocage du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Règles d'utilisateur
+### User rules
 
-Pour les cas où les *listes de blocage* préinstallées avec des milliers de règles ne suffisent pas, nous disposons d'une fonction pratique appelée "Règles d'utilisateur". Ici, vous pouvez ajouter des règles personnalisées manuellement pour bloquer/débloquer un certain domaine ou importer des listes de règles personnalisées (voir [Syntaxe des règles de filtrage DNS](../general/dns-filtering-syntax.md)). Vous pouvez exporter les listes.
+For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
-![Règles d'utilisateur du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### Statistiques
+### Statistics
 
-Dans l'onglet "Statistiques", vous pouvez voir toutes les statistiques résumées sur les requêtes DNS effectuées par les appareils connectés à votre DNS privé AdGuard. Il indique le nombre total et la géographie des requêtes, le nombre de requêtes bloquées, la liste des entreprises auxquelles les requêtes ont été adressées, les types de requêtes et les domaines les plus demandés.
+In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
-![Statistiques du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Destination du trafic
+### Traffic destination
 
-Cette fonctionnalité vous montre où vont les requêtes DNS envoyées par vos appareils. En plus de voir la carte des destinations de demande, vous pouvez filtrer les informations par date, appareil et pays.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
-![Trafic du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Sociétés
+### Companies
 
-Cet onglet vous permet de vérifier rapidement quelles sociétés envoient le plus de demandes et quelles entreprises ont le plus de demandes bloquées.
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
-![Sociétés du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### Journal des requêtes
+### Query log
 
-Il s'agit d'un journal détaillé où vous pouvez consulter les informations sur chaque requête et également trier les requêtes par statut, type, société, appareil, heure, pays.
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
-![Journal des requêtes du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### Contrôle Parental
 
-Pour protéger votre enfant des contenus en ligne que vous jugez inappropriés, configurez et activez l'option *Contrôle parental*. En plus des options telles que le blocage du "contenu pour adultes" et la recherche sécurisée, nous avons ajouté la possibilité de spécifier manuellement les domaines à bloquer et de définir un calendrier pour que le *Contrôle parental* fonctionne en conséquence.
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Contrôle parental du tableau de bord AdGuard DNS privé](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> Si vous n'avez pas encore de DNS privé AdGuard, vous pouvez [l'obtenir sur le site officiel](https://adguard-dns.io/).
+:::note
+
+In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+
+:::

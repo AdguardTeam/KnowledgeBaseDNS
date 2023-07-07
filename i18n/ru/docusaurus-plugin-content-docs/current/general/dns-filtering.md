@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Самый простой способ изучить преимущества DNS-фильтрации — установить блокировщик рекламы AdGuard или попробовать AdGuard DNS. Если вы хотите фильтровать DNS на сетевом уровне, AdGuard Home — подходящий инструмент
 
-Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+Быстрые ссылки: [Скачать Блокировщик AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Установить AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Попробовать AdGuard DNS](https://adguard-dns.io/dashboard/)
 
 :::
 

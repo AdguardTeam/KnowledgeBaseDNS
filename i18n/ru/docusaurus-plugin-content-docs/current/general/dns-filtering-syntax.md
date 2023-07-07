@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Рассказываем, как писать пользовательские правила DNS-фильтрации для использования в продуктах AdGuard
 
-Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+Быстрые ссылки: [Скачать Блокировщик AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Установить AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Попробовать AdGuard DNS](https://adguard-dns.io/dashboard/)
 
 :::
 

@@ -360,9 +360,9 @@ Gets query log
 
 ##### Responses
 
-| Code | Описание        |
-| ---- | --------------- |
-| 200  | Журнал запросов |
+| Code | Описание  |
+| ---- | --------- |
+| 200  | Query log |
 
 ### /oapi/v1/revoke_token
 

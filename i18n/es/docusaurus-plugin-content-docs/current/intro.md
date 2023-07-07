@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 ---
 
-## What is DNS?
+## ¿Qué es un DNS?
 
 DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
 

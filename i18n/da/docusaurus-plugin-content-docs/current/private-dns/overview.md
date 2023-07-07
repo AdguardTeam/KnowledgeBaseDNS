@@ -43,50 +43,77 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 1. Gå til [AdGuard DNS-kontrolpanelet](https://adguard-dns.io/dashboard/) (log ind på din AdGuard-konto, hvis det ikke allerede er sket)
 2. Klik på "Tilslut enhed", og følg skærmvejledningen
 
-> Understøttede platforme: - Android - iOS - Windows - Mac - Linux - Routere - Spillekonsoller
+**Understøttede platforme:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routere
+* Spillekonsoller
+
+Hver enhed, der tilføjes i AdGuard DNS-panelet, har sin egen unikke adresse, som kan bruges, hvis enheden understøtter moderne, krypterede DNS-protokoller (DoH, DoT og DoQ).
+
+### Linket IP
+
+Understøtter enheden ikke krypteret DNS, og man skal bruge alm. DNS, er der en anden måde, der lader AdGuard DNS genkende enheden — link dens IP-adresse. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+Det eneste krav for at linke en IP, er, at **det skal være en privat/hjemme IP-adresse**.
+
+:::bemærk
+
+En hjemme IP-adresse er en IP-adresse tildelt en enhed, der er tilsluttet en privat internetudbyder. Den er typisk knyttet til en fysisk placering og tildeles enkelte boliger/lejligheder. Hjemme IP-adresser bruges af alm. internetbrugere til deres daglige onlineaktiviteter, såsom at surfe på nettet, få adgang til sociale medieplatforme, sende e-mails eller streame indhold.
+
+:::
+
+Forsøges en hjemme IP-adresse linket uden at AdGuard DNS vil tillader dette, bedes vores supportteam på support@adguard.com kontaktet.
 
 ## Private AdGuard DNS-funktioner
 
-### Håndtering af sortlister
+### Sortlistehåndtering
 
-With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
+Der kan med funktionen "Sortlister" opsættes domæner, som skal blokeres, og domæner, som ikke skal. Vælg mellem et bredt udvalg af sortlister til forskellige formål.
 
-![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS-kontrolpanel, sortlister](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
 ### Brugerregler
 
-For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
+Til situationer, hvor præinstallerede *Sortlister* med tusindvis af regler ikke er nok, findes en funktion kaldet "Brugerregler". Her kan der manuelt tilføjes tilpassede regler for at blokere/afblokere et bestemt domæne eller importere tilpassede regellister (tjek [syntaks for DNS-filtreringsregler](../general/dns-filtering-syntax.md)). Listerne kan eksporteres.
 
-![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS-kontrolpanel, brugerregler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### Statistikker
+### Statistik
 
-In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+På fanen "Statistik" fremgår alle de opsummerede statistikker om DNS-forespørgsler foretaget af enheder tilsluttet Private AdGuard DNS. Den viser det samlede antal samt geografi for forespørgsler, antallet af blokerede forespørgsler, en liste over virksomhederne, som var målene for forespørgslerne, forespørgselstyper og hyppigst forespurgte domæner.
 
-![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS-kontrolpanel, statistikker](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
 ### Trafikdestination
 
-This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
+Denne funktion viser målene for enhedernes DNS-forespørgsler. Ud over at se et kort over forespørgselsmål/-destinationer, kan oplysningerne filtreres efter dato, enhed og land.
 
-![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS-kontrolpanel, trafik](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
 ### Virksomheder
 
-This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
+Denne fane muliggør hurtigt at tjekke, hvilke virksomheder, som sender flest forespørgsler, og hvilke, som har flest blokerede forespørgsler.
 
-![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS-kontrolpanel, virksomheder](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
 ### Forespørgselslog
 
-This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
+Dette er en detaljeret log, hvori man kan tjekke oplysningerne om hver enkelt forespørgsel samt sortere forespørgsler efter status, type, virksomhed, enhed, tid, land.
 
-![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS-kontrolpanel, forespørgselslog](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### Forældrekontrol
 
-To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+For at beskytte sit barn mod onlineindhold, man finder upassende, så opsæt og aktivér funktionen *Forældrekontrol*. Ud over muligheder såsom blokering af "voksenindhold" og sikker søgning, har vi tilføjet muligheden for manuelt at angive domæner til blokering samt opsætte en tidsplan for, hvornår *Forældrekontrol* skal være aktiv.
 
-![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS-kontrolpanel, Forælderkontrol](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> Har du endnu ikke Private AdGuard DNS endnu, kan den fås via det officielle websted [](https://adguard-dns.io/).
+:::bemærk
+
+Har man endnu ikke Private AdGuard DNS, kan den fås via det officielle websted [](https://adguard-dns.io/).
+
+:::

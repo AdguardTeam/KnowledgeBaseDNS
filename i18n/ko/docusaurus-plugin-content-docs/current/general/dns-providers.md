@@ -337,29 +337,6 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4 | `84.200.69.80` and `84.200.70.40`                             | [Add to AdGuard](adguard:add_dns_server?address=84.200.69.80&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=84.200.69.80&name=)                             |
 | DNS, IPv6 | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b` | [Add to AdGuard](adguard:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=) |
 
-### FutureDNS
-
-[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
-
-| Anycast Network | 주소                                   |                                                                                                                                                                                                                             |
-| --------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS  | `https://dns.futuredns.me/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.futuredns.me/dns-query&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.futuredns.me/dns-query&name=dns.futuredns.me) |
-| DNS-over-TLS    | `tls://dns.futuredns.me`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.futuredns.me&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.futuredns.me&name=dns.futuredns.me)                         |
-| DNS-over-QUIC   | `quic://dns.futuredns.me`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.futuredns.me&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.futuredns.me&name=dns.futuredns.me)                       |
-
-| Location           | Address - IPv4                                                                                                                                                        |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| London, UK         | `52.56.224.201`| [Add to AdGuard](adguard:add_dns_server?address=52.56.224.201&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.56.224.201&name=)    |
-| Milan, Italy       | `15.161.11.3`| [Add to AdGuard](adguard:add_dns_server?address=15.161.11.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=15.161.11.3&name=)          |
-| Stockholm, Sweden  | `13.49.168.178`| [Add to AdGuard](adguard:add_dns_server?address=13.49.168.178&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=13.49.168.178&name=)    |
-| Ashburn, USA       | `52.0.69.145`| [Add to AdGuard](adguard:add_dns_server?address=52.0.69.145&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.0.69.145&name=)          |
-| San Francisco, USA | `13.56.204.161`| [Add to AdGuard](adguard:add_dns_server?address=13.56.204.161&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=13.56.204.161&name=)    |
-| Montreal, Canada   | `3.97.137.100`| [Add to AdGuard](adguard:add_dns_server?address=3.97.137.100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=3.97.137.100&name=)       |
-| Singapore          | `54.254.82.60`| [Add to AdGuard](adguard:add_dns_server?address=54.254.82.60&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.254.82.60&name=)       |
-| Tokyo, Japan       | `54.199.94.55`| [Add to AdGuard](adguard:add_dns_server?address=54.199.94.55&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.199.94.55&name=)       |
-| Mumbai, India      | `3.7.162.217`| [Add to AdGuard](adguard:add_dns_server?address=3.7.162.217&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=3.7.162.217&name=)          |
-| São Paulo, Brazil  | `177.71.191.153`| [Add to AdGuard](adguard:add_dns_server?address=177.71.191.153&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=177.71.191.153&name=) |
-
 ### SkyDNS RU
 
 [SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.

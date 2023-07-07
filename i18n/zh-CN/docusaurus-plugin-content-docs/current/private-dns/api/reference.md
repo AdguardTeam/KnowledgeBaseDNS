@@ -362,7 +362,7 @@ Gets query log
 
 | Code | Description |
 | ---- | ----------- |
-| 200  | 查询日志        |
+| 200  | Query log   |
 
 ### /oapi/v1/revoke_token
 

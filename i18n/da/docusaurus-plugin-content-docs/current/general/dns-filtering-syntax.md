@@ -393,7 +393,7 @@ Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke
 
 **Modifikatoren `ctag` kan kun bruges i AdGuard Home.**
 
-Det muliggør blokering af domæner for bestemte typer af DNS-klienttags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+Det muliggør blokering af domæner for bestemte typer af DNS-klienttags. Tags kan tildeles klienter i AdGuard Home-UI'en. Fremadrettet er det planen at tildele tags automatisk ved at analysere hver klients adfærd.
 
 Syntaksen er:
 
@@ -401,13 +401,13 @@ Syntaksen er:
 $ctag=værdi1|værdi2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+Matcher en af klienternes tags `ctag`-værdierne, gælder denne regel for klienten. Syntaksen for undtagelse er:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
+Matcher en af klienternes tags undtagelses `ctag`-værdierne, gælder denne regel ikke for klienten.
 
 **Eksempler:**
 
@@ -415,7 +415,7 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 * `||eksempel.org^$ctag=~device_phone`: Blokerer `eksempel.org` for alle klienter, undtagen for den tagget som `device_phone`.
 
-The list of allowed tags:
+Oversigt over gyldige tags:
 
 * Efter enhedstype:
 
@@ -450,15 +450,15 @@ The list of allowed tags:
 
 ## `/etc/hosts`Syntakstype {#etc-hosts-syntax}
 
-For each host a single line should be present with the following information:
+For hver vært skal én enkelt linje fremgå med flg. oplysninger:
 
 ```none
 IP_adresse kanonisk_værtsnavn [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
+Indtastningsfelter adskilles med et vilkårligt antal mellemrum eller tabulatortegn. Tekst efter `#`-tegnet og indtil slutningen af linjen udgør en kommentar og ignoreres.
 
-Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
+Værtsnavne må kun indeholde alfanumeriske tegn, bindestreg-/minustegn (`-`) samt punktummer (`.`). De skal både starte og slutte med et alfanumerisk tegn. Valgfrie aliaser muliggør navneændringer, alternative stavemåder og kortere/generiske værtsnavne (f.eks. `localhost`).
 
 **Eksempel:**
 
@@ -469,12 +469,12 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 eksempel.net # dette er også en kommentar
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+I AdGuard Home bruges IP-adresserne til at besvare DNS-forespørgsler for disse domæner. I Private AdGuard DNS blokeres disse adresser simpelthen.
 
 
 ## Domæne-specifik syntaks
 
-A simple list of domain names, one name per line.
+En simpel liste over domænenavne, ét navn pr. linje.
 
 **Eksempel:**
 
@@ -485,13 +485,13 @@ eksempel.org
 eksempel.net # dette er også en kommentar
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style](#adblock-style-syntax) rule.
+Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-lignende](#adblock-style-syntax) regel.
 
 ## Hostlists Compiler
 
-If you are maintaining a blocklist and use different sources in it, [Hostlists compiler][hlc] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+Vedligeholder man en sortliste og bruger forskellige kilder heri, kan [Hostlists compiler][hlc] være et nyttigt værktøj. Det er et simpelt værktøj, der gør det nemmere at kompilere en værtsblokeringsliste, der er kompatibel med AdGuard Home, Private AdGuard DNS eller ethvert andet AdGuard-produkt med DNS-filtrering.
 
-What it's capable of:
+Hvad den er i stand til:
 
 1. Kompiler én enkelt blokeringsliste fra flere kilder.
 

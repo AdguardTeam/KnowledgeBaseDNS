@@ -1,5 +1,5 @@
 ---
-title: DNS filtering
+title: DNSフィルタリング
 sidebar_position: 1
 ---
 
@@ -11,60 +11,60 @@ DNSフィルタリングのメリットを実感するための一番簡単な�
 
 :::
 
-To better understand DNS filtering, first, we should answer the question "What is DNS?".
+DNSフィルタリングをよりよくご理解いただけるよう、まず「DNSとは何か」ということを説明したいと思います。
 
-## What is DNS?
+## 「DNS」とは？
 
-DNS stands for "Domain Name System", and its purpose is to translate websites' names into something browsers can understand, i.e. IP addresses. Thus, each time you go to a website, your browser sends a request to a special type of server (DNS server). That server looks at the requested domain name and replies with a corresponding IP address. Very schematically it can be represented like this:
+DNSは「Domain Name System」（ドメイン・ネーム・システム）の略であり、その目的は、Webサイトの名前をブラウザが理解できるもの（IPアドレス）に変換することです。 つまり、各ウェブサイトにアクセスするたびに、ブラウザは特種のサーバー（DNSサーバー）にリクエストを送信します。 そのサーバーはリクエストされたドメイン名を調べ、対応するIPアドレスを返信します。 このプロセスを簡単な図に表すとこうなります：
 
-![How DNS works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
+![DNS の仕組み](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
-The same applies, of course, to all apps and programs that send any web requests, not just browsers.
+もちろん、ブラウザだけでなく、ウェブリクエストを送信するアプリやプログラムのすべてが同じようなプロセスになります。
 
-## How does DNS filtering work?
+## DNSフィルタリングの仕組み
 
-When you use one of the AdGuard apps that supports DNS filtering, it acts as a buffer between your device and the DNS server. All DNS requests that your browsers or apps are about to send first get processed by AdGuard. If you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. AdGuard will encrypt all your DNS requests before they leave your device, so that no malefactor could get access to their contents. On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a "blackhole" instead of forwarding them to the DNS server. More on that [later](#local-dns-blocklists).
+DNSフィルタリングをサポートする AdGuard アプリを使用すると、AdGuard アプリはデバイスとDNSサーバーの間のバッファ（仲介）として機能します。 デバイス上のブラウザやアプリが送信しようとするすべてのDNSリクエストは、まずAdGuardによって処理されます。 ISP（インターネットプロバイダ）が提供するデフォルトDNSサーバーを使用している場合、DNSトラフィックは暗号化されていない可能性が高く、スヌーピングやハイジャック（傍受）に対して脆弱になります。 AdGuard は、DNSリクエストがデバイスから送信される前にすべて暗号化し、悪意のある第三者がその内容にアクセスできないようにします。 その上、AdGuardは、広告、トラッキング（追跡）、またはアダルトドメインへのリクエストを識別し、DNSサーバーに転送する代わりに「ブラックホール」にリダイレクトすることができます。 （これについては[以下で](#ローカルDNSブロックリスト)説明しております。）
 
-![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![DNSフィルタリングの仕組み](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
 
-DNS filtering is a powerful tool and it's supported by all major AdGuard apps: [AdGuard for Windows](https://adguard.com/adguard-windows/overview.html), [AdGuard for Mac](https://adguard.com/adguard-mac/overview.html), [AdGuard for Android](https://adguard.com/adguard-android/overview.html) and [AdGuard for iOS](https://adguard.com/adguard-ios/overview.html).
+DNSフィルタリングはパワフルなツールであり、AdGuardの全アプリ（[AdGuard for Windows](https://adguard.com/adguard-windows/overview.html), [AdGuard for Mac](https://adguard.com/adguard-mac/overview.html), [AdGuard for Android](https://adguard.com/adguard-android/overview.html), [AdGuard for iOS](https://adguard.com/adguard-ios/overview.html)）で、「DNS通信を保護」機能という形で利用可能です。
 
-DNS filtering can be broken down into two separate functions: to encrypt and reroute DNS traffic to DNS servers, and to block some domains locally by applying DNS blocklists.
+DNSフィルタリングは、2つの機能に分けることができます。DNSトラフィックを暗号化してDNSサーバーにリルーティングする機能と、DNSブロックリストを適用して一部のドメインをローカルでブロックする機能です。
 
-### DNS servers
+### DNSサーバー
 
-There are thousands of DNS servers to choose from, and they are all unique in their properties and purposes. Most simply return the IP address of the requested domain, but some have additional functions: they block ad, tracking, adult domains and so on. Nowadays all major DNS servers employ one or more reliable encryption protocols: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the very new and promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard has different servers for different goals. This diagram illustrates how AdGuard blocking servers work:
+DNSサーバーは何千もあって、それぞれ特性と目的においてユニークであります。 多くは単にリクエストされたドメインのIPアドレスを返すだけですが、広告、トラッキング、アダルトドメインなどをブロックする追加機能を持つものもあります。 現在、一般的なDNSサーバーのすべては、信頼できる暗号化プロトコル（DNS-over-HTTPS、DNS-over-TLS）を1つ以上採用しています。 AdGuard も[DNSサービス](https://adguard-dns.io/)を提供しており、非常に新しく有望な [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) 暗号化プロトコルを世界で初めて採用したDNSとなりました。 AdGuard は目的別に複数のDNSサーバーを用意しています。 以下の図は、AdGuardのブロッキングサーバーの仕組みを示しています:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
-Other DNS providers may work differently, so learn more about them before committing to this or that DNS server. You can find the list of some of the most popular DNS providers in [this article](dns-providers.md). All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you'd like.
+他のDNSプロバイダーの仕組みは違ったりするので、それらのDNSサーバーを使う前に、プロバイダーや仕組みについての情報を確認しておいてください。 [こちらの記事](dns-providers.md)で、最も人気のあるDNSプロバイダーの一覧を確認することができます。 DNS機能のあるAdGuardアプリはすべて、人気DNSサーバーのリストを備えており、さらにニーズに応じてカスタムDNSサーバーをご自身で追加することもできます。
 
-### Local DNS blocklists
+### ローカルDNSブロックリスト
 
-But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](dns-filtering-syntax.md). They work similarly to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
-> In AdGuard for iOS, first you have to enable "Advanced mode" in settings in order to get access to DNS blocking.
+しかし、DNSトラフィックをフィルタリングするためにDNSサーバーだけに頼ることは、柔軟性を失うことになります。 使っているサーバーがドメインをブロックしている場合、そのドメインにアクセスできません。 AdGuard ですと、DNSトラフィックをフィルタリングするために特定のDNSサーバーを設定する必要もありません。 AdGuard 製品のすべてで、DNS ブロックリスト（シンプルな hosts ファイルや[より高度な構文](dns-filtering-syntax.md)を使用するリストなど）を使用できます。 DNSブロックリストは、通常のブロックリストと同じように機能します。つまり、DNSリクエストがアクティブフィルタリストのルールの1つにマッチすると、そのリクエストはブロックされます。 より正確に言いますと、そのリクエストは"ブラックホール"に迂回されます。
+> ※iOS版AdGuardでは、DNSブロックリストにアクセスするためには、まず⚙設定→「高度な設定モード」を有効にする必要があります。
 
-You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
-> There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
+カスタムブロックリストはいくつでも追加できます。 おすすめとして、[AdGuard DNS フィルター](https://github.com/AdguardTeam/AdGuardSDNSFilter)を追加できます。 このフィルタは、AdGuard DNS サーバーと同じものブロックしますが、フィルタの場合、同時に他のDNSサーバーを自由に使用することができるのです。 さらに、この方法では、フィルターを追加したり、カスタムの例外ルールを作成したりすることができます。これらはすべて、単にブロック系DNSサーバーを使用する場合では不可能なことです。
+> DNSブロックリストには何百種類もあります。 [ここであらゆるものを探すことができます](https://filterlists.com/)。
 
-## DNS filtering vs. network filtering
+## DNSフィルタリングとネットワークフィルタリングの比較
 
-Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+ネットワーク・フィルタリングは、AdGuard のスタンドアロン・アプリがネットワークトラフィックを処理する"基本の"方法であり、これが名前の由来です。 詳しくは[こちらの記事](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/)で確認できます。
 
-First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
+AdGuard を使えば、この二つのうち選ぶ必要はないということをお伝えしたいと思います。 AdGuard なら通常のネットワークフィルタリングとDNSフィルタリングを同時に使用できます。 しかし、両者の主な違いを理解しておくことが重要です。 DNSフィルタリングにはそれなりの利点と欠点があります:
 
-**Pros of DNS filtering:**
+**DNSフィルタリングのメリット:**
 
-1. On some platforms, this is the only way to achieve system-wide filtering. For example, on iOS only the Safari browser supports content blocking in the familiar sense, for everything else there's only DNS filtering.
-2. Some forms of tracking (like [CNAME-cloaked tracking](https://adguard.com/blog/cname-tracking.html)) can only be dealt with by DNS filtering.
-3. The stage of processing a DNS request is the earliest you could possibly deal with an ad or a tracker, this helps save a little bit of battery life and traffic.
+1. プラットフォームによっては、これがシステム全体フィルタリングを実現する唯一の方法です。 例えば、iOSではSafariブラウザだけが、コンテンツ・ブロッキングをサポートしています。Safari以外にはDNSフィルタリングしか使えません。
+2. トラッキング（追跡）の一部（ [CNAMEトラッキング](https://adguard.com/blog/cname-tracking.html)など）は、DNSフィルタリングによってのみ防止できます。
+3. DNSリクエストを処理する段階は、広告やトラッカーに対処する場合の最も早い段階であるため、バッテリー寿命とトラフィックを少し節約するのに役立ちます。
 
-**Cons of DNS filtering:**
+**DNSフィルタリングのデメリット:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNSフィルタリングは"雑"なもので、ブロックされた広告の後に残る空白を削除したり、いわゆる「整形フィルタリング」を適用したりはできません。 また、より複雑な広告の多くは、DNSレベルではブロックできません（というか、ブロックはできますが、広告以外も配信するドメインをまるごとブロックすることになってしまいます）。
 
-![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
+![違いの例](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNSフィルタリング（左）とネットワークフィルタリング（右）の違いの例*
 
-2. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
+2. DNSリクエストの発信元を知ることはできないので、DNSレベルでアプリを区別することはできません。 これは統計に悪影響を及ぼし、特定のアプリ専用フィルタリングルールを作成することも不可能です。
 
-We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.
+DNSフィルタリングは、可能な限り、ネットワーク・フィルタリングの代わりにではなく、ネットワーク・フィルタリングに加えて使用することをお勧めします。

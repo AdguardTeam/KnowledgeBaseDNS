@@ -91,274 +91,251 @@ Im Modus „Familie” wird ein Schutz vor infizierten, betrügerischen und nich
 
 ### CleanBrowsing
 
-[CleanBrowsing](https://cleanbrowsing.org/) is a DNS service which provides customizable filtering. This service offers a safe way to browse the web without inappropriate content.
+[CleanBrowsing](https://cleanbrowsing.org/) ist ein DNS-Dienst, der anpassbare Filterung bietet. Dieser Dienst bietet eine sichere Möglichkeit zum Surfen im Internet ohne ungeeignete Inhalte.
 
-#### Family Filter
+#### Familienfilter
 
-Blocks access to all adult, pornographic and explicit sites, including proxy & VPN domains and mixed content sites.
+Sperrt den Zugang zu allen nicht jugendfreien, pornografischen und expliziten Websites, einschließlich Proxy- und VPN-Domains und Websites mit gemischten Inhalten.
 
-| Protokoll      | Adresse                                                  |                                                                                                                                                                                                                                                                                 |
-| -------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.228.168.168` and `185.228.169.168`                  | [Add to AdGuard](adguard:add_dns_server?address=185.228.168.168&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.228.168.168&name=)                                                                                                                           |
-| DNS, IPv6      | `2a0d:2a00:1::` and `2a0d:2a00:2::`                      | [Add to AdGuard](adguard:add_dns_server?address=2a0d:2a00:1::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:2a00:1::&name=)                                                                                                                               |
-| DNSCrypt, IPv4 | Provider: `cleanbrowsing.org` IP: `185.228.168.168:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFDE4NS4yMjguMTY4LjE2ODo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn)                                                                                                                                    |
-| DNSCrypt, IPv6 | Provider: `cleanbrowsing.org` IP: `[2a0d:2a00:1::]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFFsyYTBkOjJhMDA6MTo6XTo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn)                                                                                                                                    |
-| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/family-filter/`       | [Add to AdGuard](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/family-filter/&name=doh.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/family-filter/&name=doh.cleanbrowsing.org)               |
-| DNS-over-TLS   | `tls://family-filter-dns.cleanbrowsing.org`              | [Add to AdGuard](adguard:add_dns_server?address=tls://family-filter-dns.cleanbrowsing.org&name=family-filter-dns.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family-filter-dns.cleanbrowsing.org&name=family-filter-dns.cleanbrowsing.org) |
+| Protokoll      | Adresse                                                  |                                                                                                                                                                                                                                                                                               |
+| -------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `185.228.168.168` und `185.228.169.168`                  | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=185.228.168.168&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=185.228.168.168&name=)                                                                                                                           |
+| DNS, IPv6      | `2a0d:2a00:1::` und `2a0d:2a00:2::`                      | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2a0d:2a00:1::&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2a0d:2a00:1::&name=)                                                                                                                               |
+| DNSCrypt, IPv4 | Anbieter: `cleanbrowsing.org` IP: `185.228.168.168:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFDE4NS4yMjguMTY4LjE2ODo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn)                                                                                                                                                  |
+| DNSCrypt, IPv6 | Anbieter: `cleanbrowsing.org` IP: `[2a0d:2a00:1::]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFFsyYTBkOjJhMDA6MTo6XTo4NDQzILysMvrVQ2kXHwgy1gdQJ8MgjO7w6OmflBjcd2Bl1I8pEWNsZWFuYnJvd3Npbmcub3Jn)                                                                                                                                                  |
+| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/family-filter/`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/family-filter/&name=doh.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/family-filter/&name=doh.cleanbrowsing.org)               |
+| DNS-over-TLS   | `tls://family-filter-dns.cleanbrowsing.org`              | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://family-filter-dns.cleanbrowsing.org&name=family-filter-dns.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://family-filter-dns.cleanbrowsing.org&name=family-filter-dns.cleanbrowsing.org) |
 
-#### Adult Filter
+#### Filter für Erwachseneninhalte
 
-Less restrictive than the Family filter, it only blocks access to adult content and malicious and phishing domains.
+Er ist weniger restriktiv als der Familienfilter und sperrt nur den Zugang zu Inhalten für Erwachsene sowie zu bösartigen und Phishing-Domains.
 
-| Protokoll      | Adresse                                                   |                                                                                                                                                                                                                                                                             |
-| -------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.228.168.10` and `185.228.169.11`                     | [Add to AdGuard](adguard:add_dns_server?address=185.228.168.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.228.168.10&name=)                                                                                                                         |
-| DNS, IPv6      | `2a0d:2a00:1::1` and `2a0d:2a00:2::1`                     | [Add to AdGuard](adguard:add_dns_server?address=2a0d:2a00:1::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:2a00:1::1&name=)                                                                                                                         |
-| DNSCrypt, IPv4 | Provider: `cleanbrowsing.org` IP: `185.228.168.10:8443`   | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAEzE4NS4yMjguMTY4LjEwOjg0NDMgvKwy-tVDaRcfCDLWB1AnwyCM7vDo6Z-UGNx3YGXUjykRY2xlYW5icm93c2luZy5vcmc)                                                                                                                                 |
-| DNSCrypt, IPv6 | Provider: `cleanbrowsing.org` IP: `[2a0d:2a00:1::1]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFVsyYTBkOjJhMDA6MTo6MV06ODQ0MyC8rDL61UNpFx8IMtYHUCfDIIzu8Ojpn5QY3HdgZdSPKRFjbGVhbmJyb3dzaW5nLm9yZw)                                                                                                                              |
-| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`         | [Add to AdGuard](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/adult-filter/&name=doh.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/adult-filter/&name=doh.cleanbrowsing.org)             |
-| DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                | [Add to AdGuard](adguard:add_dns_server?address=tls://adult-filter-dns.cleanbrowsing.org&name=adult-filter-dns.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://adult-filter-dns.cleanbrowsing.org&name=adult-filter-dns.cleanbrowsing.org) |
+| Protokoll      | Adresse                                                   |                                                                                                                                                                                                                                                                                           |
+| -------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `185.228.168.10` und `185.228.169.11`                     | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=185.228.168.10&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=185.228.168.10&name=)                                                                                                                         |
+| DNS, IPv6      | `2a0d:2a00:1::1` und `2a0d:2a00:2::1`                     | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2a0d:2a00:1::1&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2a0d:2a00:1::1&name=)                                                                                                                         |
+| DNSCrypt, IPv4 | Anbieter: `cleanbrowsing.org` IP: `185.228.168.10:8443`   | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAEzE4NS4yMjguMTY4LjEwOjg0NDMgvKwy-tVDaRcfCDLWB1AnwyCM7vDo6Z-UGNx3YGXUjykRY2xlYW5icm93c2luZy5vcmc)                                                                                                                                               |
+| DNSCrypt, IPv6 | Anbieter: `cleanbrowsing.org` IP: `[2a0d:2a00:1::1]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFVsyYTBkOjJhMDA6MTo6MV06ODQ0MyC8rDL61UNpFx8IMtYHUCfDIIzu8Ojpn5QY3HdgZdSPKRFjbGVhbmJyb3dzaW5nLm9yZw)                                                                                                                                            |
+| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/adult-filter/`         | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/adult-filter/&name=doh.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/adult-filter/&name=doh.cleanbrowsing.org)             |
+| DNS-over-TLS   | `tls://adult-filter-dns.cleanbrowsing.org`                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://adult-filter-dns.cleanbrowsing.org&name=adult-filter-dns.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://adult-filter-dns.cleanbrowsing.org&name=adult-filter-dns.cleanbrowsing.org) |
 
-#### Security Filter
+#### Sicherheitsfilter
 
-Blocks phishing, spam and malicious domains.
+Sperrt Phishing, Spam und bösartige Domains.
 
-| Protokoll      | Adresse                                              |                                                                                                                                                                                                                                                                                         |
-| -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.228.168.9` and `185.228.169.9`                  | [Add to AdGuard](adguard:add_dns_server?address=185.228.168.9&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.228.168.9&name=)                                                                                                                                       |
-| DNS, IPv6      | `2a0d:2a00:1::2` and `2a0d:2a00:2::2`                | [Add to AdGuard](adguard:add_dns_server?address=2a0d:2a00:1::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:2a00:1::2&name=)                                                                                                                                     |
-| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/security-filter/` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/security-filter/&name=doh.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/security-filter/&name=doh.cleanbrowsing.org)                   |
-| DNS-over-TLS   | `tls://security-filter-dns.cleanbrowsing.org`        | [Add to AdGuard](adguard:add_dns_server?address=tls://security-filter-dns.cleanbrowsing.org&name=security-filter-dns.cleanbrowsing.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://security-filter-dns.cleanbrowsing.org&name=security-filter-dns.cleanbrowsing.org) |
+| Protokoll      | Adresse                                              |                                                                                                                                                                                                                                                                                                       |
+| -------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `185.228.168.9` und `185.228.169.9`                  | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=185.228.168.9&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=185.228.168.9&name=)                                                                                                                                       |
+| DNS, IPv6      | `2a0d:2a00:1::2` und `2a0d:2a00:2::2`                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2a0d:2a00:1::2&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2a0d:2a00:1::2&name=)                                                                                                                                     |
+| DNS-over-HTTPS | `https://doh.cleanbrowsing.org/doh/security-filter/` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://doh.cleanbrowsing.org/doh/security-filter/&name=doh.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://doh.cleanbrowsing.org/doh/security-filter/&name=doh.cleanbrowsing.org)                   |
+| DNS-over-TLS   | `tls://security-filter-dns.cleanbrowsing.org`        | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://security-filter-dns.cleanbrowsing.org&name=security-filter-dns.cleanbrowsing.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://security-filter-dns.cleanbrowsing.org&name=security-filter-dns.cleanbrowsing.org) |
 
 ### Comodo Secure DNS
 
-[Comodo Secure DNS](https://comodo.com/secure-dns/) is a domain name resolution service that resolves your DNS requests through worldwide network of DNS servers. Removes excessive ads and protects from phishing and spyware.
+[Comodo Secure DNS](https://comodo.com/secure-dns/) ist ein Dienst zur Auflösung von Domainnamen, der Ihre DNS-Anfragen über ein weltweites Netz von DNS-Servern auflöst. Entfernt übermäßige Werbung und schützt vor Phishing und Spyware.
 
 | Protokoll      | Adresse                                                               |                                                                                                                                                                |
 | -------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `8.26.56.26` and `8.20.247.20`                                        | [Add to AdGuard](adguard:add_dns_server?address=8.26.56.26&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=8.26.56.26&name=)                    |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
+| DNS, IPv4      | `8.26.56.26` und `8.20.247.20`                                        | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=8.26.56.26&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=8.26.56.26&name=)      |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.shield-2.dnsbycomodo.com` IP: `8.20.247.2` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAACjguMjAuMjQ3LjIg0sJUqpYcHsoXmZb1X7yAHwg2xyN5q1J-zaiGG-Dgs7AoMi5kbnNjcnlwdC1jZXJ0LnNoaWVsZC0yLmRuc2J5Y29tb2RvLmNvbQ) |
 
 ### Neustar Recursive DNS
 
-[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) is a free cloud-based recursive DNS service that delivers fast and reliable access to sites and online applications with built-in security and threat intelligence.
+[Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns) ist ein kostenloser Cloud-basierter rekursiver DNS-Dienst, der einen schnellen und zuverlässigen Zugang zu Websites und Online-Anwendungen mit integrierter Sicherheit und Bedrohungsanalyse bietet.
 
-#### Reliability & Performance 1
+#### Zuverlässigkeit und Leistung 1
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories.
+Diese Server bieten zuverlässige und schnelle DNS-Abfragen, ohne bestimmte Kategorien zu sperren.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.1` and `156.154.71.1`       | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
-| DNS, IPv6 | `2610:a1:1018::1` and `2610:a1:1019::1` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.1` und `156.154.71.1`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=156.154.70.1&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
+| DNS, IPv6 | `2610:a1:1018::1` und `2610:a1:1019::1` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2610:a1:1018::1&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Reliability & Performance 2*
+#### Zuverlässigkeit und Leistung 2*
 
-These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
+Diese Server bieten zuverlässige und schnelle DNS-Abfragen, ohne bestimmte Kategorien zu blockieren, und verhindern auch die Umleitung von NXDomain-Antworten (nicht existierende Domains) auf Zielseiten.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.5` and `156.154.71.5`       | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.5&name=)       |
-| DNS, IPv6 | `2610:a1:1018::5` and `2610:a1:1019::5` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::5&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.5` und `156.154.71.5`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=156.154.70.5&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=156.154.70.5&name=)       |
+| DNS, IPv6 | `2610:a1:1018::5` und `2610:a1:1019::5` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2610:a1:1018::5&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2610:a1:1018::5&name=) |
 
-#### Threat Protection
+#### Schutz vor Bedrohungen
 
-These servers provide protection against malicious domains and also include "Reliability & Performance" features.
+Diese Server bieten Schutz vor bösartigen Domains und verfügen außerdem über „Zuverlässigkeits- und Leistungsmerkmale”.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.2` and `156.154.71.2`       | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.2&name=)       |
-| DNS, IPv6 | `2610:a1:1018::2` and `2610:a1:1019::2` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::2&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.2` und `156.154.71.2`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=156.154.70.2&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=156.154.70.2&name=)       |
+| DNS, IPv6 | `2610:a1:1018::2` und `2610:a1:1019::2` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2610:a1:1018::2&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2610:a1:1018::2&name=) |
 
-#### Family Secure
+#### Familiensicherheit
 
-These servers provide adult content blocking and also include "Reliability & Performance" + "Threat Protection" features.
+Diese Server sperren nicht jugendfreie Inhalte und bieten außerdem die Funktionen „Zuverlässigkeit und Leistung” und „Schutz vor Bedrohungen”.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.3` and `156.154.71.3`       | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.3&name=)       |
-| DNS, IPv6 | `2610:a1:1018::3` and `2610:a1:1019::3` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::3&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.3` und `156.154.71.3`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=156.154.70.3&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=156.154.70.3&name=)       |
+| DNS, IPv6 | `2610:a1:1018::3` und `2610:a1:1019::3` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2610:a1:1018::3&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2610:a1:1018::3&name=) |
 
-#### Business Secure
+#### Sicheres Business
 
-These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features.
+Diese Server sperren unerwünschte und zeitraubende Inhalte und bieten außerdem die Funktionen „Zuverlässigkeit und Leistung”, „Schutz vor Bedrohungen” und „Familiensicherheit”.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.4` and  `156.154.71.4`      | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.4&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
-| DNS, IPv6 | `2610:a1:1018::4` and `2610:a1:1019::4` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::4&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::4&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `156.154.70.4` und `156.154.71.4`       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=156.154.70.4&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
+| DNS, IPv6 | `2610:a1:1018::4` und `2610:a1:1019::4` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2610:a1:1018::4&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2610:a1:1018::4&name=) |
 
 ### Cisco OpenDNS
 
-[Cisco OpenDNS](https://www.opendns.com/) is a service which extends the DNS by incorporating features such as content filtering and phishing protection with a zero downtime.
+[Cisco OpenDNS](https://www.opendns.com/) ist ein Dienst, der das DNS um Funktionen wie Inhaltsfilterung und Phishing-Schutz erweitert, ohne dass es zu Ausfallzeiten kommt.
 
 #### Standard
 
-DNS servers with custom filtering that protects your device from malware.
+DNS-Server mit benutzerdefinierter Filterung, die Ihr Gerät vor Malware schützt.
 
-| Protokoll      | Adresse                                                       |                                                                                                                                                                                                                         |
-| -------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.222` and `208.67.220.220`                         | [Add to AdGuard](adguard:add_dns_server?address=208.67.222.222&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=208.67.222.222&name=)                                                                     |
-| DNS, IPv6      | `2620:119:35::35` and `2620:119:53::53`                       | [Add to AdGuard](adguard:add_dns_server?address=2620:119:35::35&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:119:35::35&name=)                                                                   |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.220`  | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                      |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20)                                                                     |
-| DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                           | [Add to AdGuard](adguard:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com) |
+| Protokoll      | Adresse                                                       |                                                                                                                                                                                                                                       |
+| -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `208.67.222.222` und `208.67.220.220`                         | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=208.67.222.222&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=208.67.222.222&name=)                                                                     |
+| DNS, IPv6      | `2620:119:35::35` und `2620:119:53::53`                       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2620:119:35::35&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2620:119:35::35&name=)                                                                   |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.220`  | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                                    |
+| DNSCrypt, IPv6 | Anbieter: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20)                                                                                   |
+| DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com) |
 
 #### FamilyShield
 
-OpenDNS servers that provide adult content blocking.
+OpenDNS-Server, die das Sperren von Inhalten für Erwachsene ermöglichen.
 
-| Protokoll      | Adresse                                                      |                                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.123` and `208.67.220.123`                        | [Add to AdGuard](adguard:add_dns_server?address=208.67.222.123&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=208.67.222.123&name=)                                                                                                                         |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                                                                          |
-| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`             | [Add to AdGuard](adguard:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com) |
+| Protokoll      | Adresse                                                      |                                                                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `208.67.222.123` und `208.67.220.123`                        | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=208.67.222.123&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=208.67.222.123&name=)                                                                                                                         |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [Zu AdGuard hinzufügen](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                                                                                        |
+| DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com) |
 
 ### Google DNS
 
-[Google DNS](https://developers.google.com/speed/public-dns/) is a free, global DNS resolution service that you can use as an alternative to your current DNS provider.
+[Google DNS](https://developers.google.com/speed/public-dns/) ist ein kostenloser, globaler DNS-Auflösungsdienst, den Sie als Alternative zu Ihrem derzeitigen DNS-Anbieter nutzen können.
 
-| Protokoll      | Adresse                                           |                                                                                                                                                                                                     |
-| -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `8.8.8.8` and `8.8.4.4`                           | [Add to AdGuard](adguard:add_dns_server?address=8.8.8.8&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=8.8.8.8&name=)                                                               |
-| DNS, IPv6      | `2001:4860:4860::8888` and `2001:4860:4860::8844` | [Add to AdGuard](adguard:add_dns_server?address=2001:4860:4860::8888&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:4860:4860::8888&name=)                                     |
-| DNS-over-HTTPS | `https://dns.google/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
-| DNS-over-TLS   | `tls://dns.google`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
+| Protokoll      | Adresse                                           |                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `8.8.8.8` und `8.8.4.4`                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=8.8.8.8&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=8.8.8.8&name=)                                                               |
+| DNS, IPv6      | `2001:4860:4860::8888` und `2001:4860:4860::8844` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2001:4860:4860::8888&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2001:4860:4860::8888&name=)                                     |
+| DNS-over-HTTPS | `https://dns.google/dns-query`                    | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
+| DNS-over-TLS   | `tls://dns.google`                                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
 
 ### Cloudflare DNS
 
-[Cloudflare DNS](https://1.1.1.1/) is a free and fast DNS service which functions as a recursive name server providing domain name resolution for any host on the Internet.
+[Cloudflare DNS](https://1.1.1.1/) ist ein kostenloser und schneller DNS-Dienst, der als rekursiver Namensserver fungiert und die Auflösung von Domainnamen für jeden Host im Internet ermöglicht.
 
 #### Standard
 
-| Protokoll            | Adresse                                           |                                                                                                                                                                                                                                                                     |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `1.1.1.1` and `1.0.0.1`                           | [Add to AdGuard](adguard:add_dns_server?address=1.1.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.1&name=)                                                                                                                               |
-| DNS, IPv6            | `2606:4700:4700::1111` and `2606:4700:4700::1001` | [Add to AdGuard](adguard:add_dns_server?address=2606:4700:4700::1111&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1111&name=)                                                                                                     |
-| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`            | [Add to AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com)                                 |
-| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`            | [Add to AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com)                           |
-| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`          | [Add to AdGuard](adguard:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com) |
+| Protokoll            | Adresse                                           |                                                                                                                                                                                                                                                                                   |
+| -------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `1.1.1.1` und `1.0.0.1`                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=1.1.1.1&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=1.1.1.1&name=)                                                                                                                               |
+| DNS, IPv6            | `2606:4700:4700::1111` und `2606:4700:4700::1001` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2606:4700:4700::1111&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2606:4700:4700::1111&name=)                                                                                                     |
+| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com)                                 |
+| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com)                           |
+| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`          | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com) |
 
 #### Malware blocking only
 
-| Protokoll      | Adresse                                           |                                                                                                                                                                                                                                                                         |
-| -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `1.1.1.2` and `1.0.0.2`                           | [Add to AdGuard](adguard:add_dns_server?address=1.1.1.2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.2&name=)                                                                                                                                   |
-| DNS, IPv6      | `2606:4700:4700::1112` and `2606:4700:4700::1002` | [Add to AdGuard](adguard:add_dns_server?address=2606:4700:4700::1112&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1112&name=)                                                                                                         |
-| DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`   | [Add to AdGuard](adguard:add_dns_server?address=https://security.cloudflare-dns.com/dns-query&name=security.cloudflare-dns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://security.cloudflare-dns.com/dns-query&name=security.cloudflare-dns.com) |
-| DNS-over-TLS   | `tls://security.cloudflare-dns.com`               | [Add to AdGuard](adguard:add_dns_server?address=tls://security.cloudflare-dns.com&name=security.cloudflare-dns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://security.cloudflare-dns.com&name=security.cloudflare-dns.com)                         |
+| Protokoll      | Adresse                                           |                                                                                                                                                                                                                                                                                       |
+| -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `1.1.1.2` und `1.0.0.2`                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=1.1.1.2&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=1.1.1.2&name=)                                                                                                                                   |
+| DNS, IPv6      | `2606:4700:4700::1112` und `2606:4700:4700::1002` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2606:4700:4700::1112&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2606:4700:4700::1112&name=)                                                                                                         |
+| DNS-over-HTTPS | `https://security.cloudflare-dns.com/dns-query`   | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://security.cloudflare-dns.com/dns-query&name=security.cloudflare-dns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://security.cloudflare-dns.com/dns-query&name=security.cloudflare-dns.com) |
+| DNS-over-TLS   | `tls://security.cloudflare-dns.com`               | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://security.cloudflare-dns.com&name=security.cloudflare-dns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://security.cloudflare-dns.com&name=security.cloudflare-dns.com)                         |
 
-#### Malware and adult content blocking
+#### Sperren von Malware und jugendgefährdenten Inhalten
 
-| Protokoll            | Adresse                                           |                                                                                                                                                                                                                                                                 |
-| -------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `1.1.1.3` and `1.0.0.3`                           | [Add to AdGuard](adguard:add_dns_server?address=1.1.1.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.3&name=)                                                                                                                           |
-| DNS, IPv6            | `2606:4700:4700::1113` and `2606:4700:4700::1003` | [Add to AdGuard](adguard:add_dns_server?address=2606:4700:4700::1113&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1113&name=)                                                                                                 |
-| DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://family.cloudflare-dns.com/dns-query&name=family.cloudflare-dns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.cloudflare-dns.com/dns-query&name=family.cloudflare-dns.com) |
-| DNS-over-TLS         | `tls://family.cloudflare-dns.com`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://family.cloudflare-dns.com&name=family.cloudflare-dns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.cloudflare-dns.com&name=family.cloudflare-dns.com)                         |
+| Protokoll            | Adresse                                           |                                                                                                                                                                                                                                                                               |
+| -------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `1.1.1.3` und `1.0.0.3`                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=1.1.1.3&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=1.1.1.3&name=)                                                                                                                           |
+| DNS, IPv6            | `2606:4700:4700::1113` und `2606:4700:4700::1003` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2606:4700:4700::1113&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2606:4700:4700::1113&name=)                                                                                                 |
+| DNS-over-HTTPS, IPv4 | `https://family.cloudflare-dns.com/dns-query`     | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://family.cloudflare-dns.com/dns-query&name=family.cloudflare-dns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://family.cloudflare-dns.com/dns-query&name=family.cloudflare-dns.com) |
+| DNS-over-TLS         | `tls://family.cloudflare-dns.com`                 | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://family.cloudflare-dns.com&name=family.cloudflare-dns.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://family.cloudflare-dns.com&name=family.cloudflare-dns.com)                         |
 
 ### Quad9 DNS
 
-[Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don't provide a censoring component.
+[Quad9 DNS](https://quad9.net/) ist eine kostenlose, rekursive Anycast-DNS-Plattform, die hohe Leistung, Datenschutz und Sicherheit vor Phishing und Spyware bietet. Quad9-Server enthalten keine Zensurkomponente.
 
 #### Standard
 
-Regular DNS servers which provide protection from phishing and spyware. They include blocklists, DNSSEC validation, and other security features.
+Reguläre DNS-Server, die Schutz vor Phishing und Spyware bieten. Dazu gehören Blocklisten, DNSSEC-Validierung und andere Sicherheitsfunktionen.
 
-| Protokoll      | Adresse                                                        |                                                                                                                                                                                                                 |
-| -------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.9` and `149.112.112.112`                                | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.9&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.9&name=)                                                                           |
-| DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                              | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::fe&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::fe&name=)                                                                   |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.9:8443`       | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                    |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                            |
-| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                              | [Add to AdGuard](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
-| DNS-over-TLS   | `tls://dns.quad9.net`                                          | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net)                         |
+| Protokoll      | Adresse                                                        |                                                                                                                                                                                                                               |
+| -------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.9` und `149.112.112.112`                                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=9.9.9.9&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=9.9.9.9&name=)                                                                           |
+| DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                              | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2620:fe::fe&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2620:fe::fe&name=)                                                                   |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.9:8443`       | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                                  |
+| DNSCrypt, IPv6 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                          |
+| DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                              | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
+| DNS-over-TLS   | `tls://dns.quad9.net`                                          | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net)                         |
 
-#### Unsecured
+#### Ungesichert
 
-Unsecured DNS servers don't provide security blocklists, DNSSEC, or EDNS Client Subnet.
+Ungesicherte DNS-Server bieten keine Sicherheits-Blocklisten, DNSSEC oder EDNS Client Subnet.
 
-| Protokoll      | Adresse                                                           |                                                                                                                                                                                                                         |
-| -------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.10` and `149.112.112.10`                                   | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.100&name=)                                                                                |
-| DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                                | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::10&name=)                                                                           |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.10:8443`         | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)                                                                          |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe:10]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                |
-| DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                               | [Add to AdGuard](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
-| DNS-over-TLS   | `tls://dns10.quad9.net`                                           | [Add to AdGuard](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
+| Protokoll      | Adresse                                                           |                                                                                                                                                                                                                                       |
+| -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.10` und `149.112.112.10`                                   | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=9.9.9.10&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=9.9.9.100&name=)                                                                                |
+| DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2620:fe::10&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2620:fe::10&name=)                                                                           |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.10:8443`         | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)                                                                                        |
+| DNSCrypt, IPv6 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe:10]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                              |
+| DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                               | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
+| DNS-over-TLS   | `tls://dns10.quad9.net`                                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
 
-#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
+#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet)-Unterstützung
 
-EDNS Client Subnet is a method that includes components of end-user IP address data in requests that are sent to authoritative DNS servers. It provides security blocklist, DNSSEC, EDNS Client Subnet.
+EDNS Client Subnet ist eine Methode, die Komponenten von Endbenutzer-IP-Adressdaten in Anfragen einschließt, die an autoritative DNS-Server gesendet werden. Es bietet eine Sicherheits-Blockliste, DNSSEC, EDNS Client Subnet.
 
-| Protokoll      | Adresse                                                        |                                                                                                                                                                                                                         |
-| -------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `9.9.9.11` and `149.112.112.11`                                | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.11&name=)                                                                                 |
-| DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                             | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::11&name=)                                                                           |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.11:8443`      | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)                                                                          |
-| DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                    |
-| DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [Add to AdGuard](adguard:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net) |
-| DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [Add to AdGuard](adguard:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net)                         |
+| Protokoll      | Adresse                                                        |                                                                                                                                                                                                                                       |
+| -------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `9.9.9.11` und `149.112.112.11`                                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=9.9.9.11&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=9.9.9.11&name=)                                                                                 |
+| DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2620:fe::11&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2620:fe::11&name=)                                                                           |
+| DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.11:8443`      | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA)                                                                                        |
+| DNSCrypt, IPv6 | Anbieter: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                                  |
+| DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net) |
+| DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net)                         |
 
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: they neither sell public DNS data to third parties nor redirect users' queries to serve them ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) ist ein kostenloser DNS-Dienst, der im Vergleich zu anderen Alternativen eine verbesserte DNS-Stabilität und Sicherheit bietet. Verisign respektiert die Privatsphäre der Nutzer: Das Unternehmen verkauft weder öffentliche DNS-Daten an Dritte noch leitet es die Anfragen der Nutzer um, um ihnen Werbung anzuzeigen.
 
-| Protokoll | Adresse                                 |                                                                                                                                                       |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `64.6.64.6` and `64.6.65.6`             | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
-| DNS, IPv6 | `2620:74:1b::1:1` and `2620:74:1c::2:2` | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
+| Protokoll | Adresse                                 |                                                                                                                                                                     |
+| --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `64.6.64.6` und `64.6.65.6`             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=64.6.64.6&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
+| DNS, IPv6 | `2620:74:1b::1:1` und `2620:74:1c::2:2` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
 ### SWITCH DNS
 
-[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) is a Swiss public DNS service provided by [switch.ch](https://www.switch.ch/).
+[SWITCH DNS](https://www.switch.ch/security/info/public-dns/) ist ein öffentlicher Schweizer DNS-Dienst, der von [switch.ch](https://www.switch.ch/) bereitgestellt wird.
 
-| Protokoll      | Adresse                                                                          |                                                                                                                                                                                                                 |
-| -------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | Provider: `dns.switch.ch` IP: `130.59.31.248`                                    | [Add to AdGuard](adguard:add_dns_server?address=130.59.31.248&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=130.59.31.248&name=)                                                               |
-| DNS, IPv6      | Provider: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                               | [Add to AdGuard](adguard:add_dns_server?address=2001:620:0:ff::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:620:0:ff::2&name=)                                                         |
-| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Add to AdGuard](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
-| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
+| Protokoll      | Adresse                                                                          |                                                                                                                                                                                                                               |
+| -------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | Anbieter: `dns.switch.ch` IP: `130.59.31.248`                                    | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=130.59.31.248&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=130.59.31.248&name=)                                                               |
+| DNS, IPv6      | Anbieter: `dns.switch.ch` IPv6: `2001:620:0:ff::2`                               | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2001:620:0:ff::2&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2001:620:0:ff::2&name=)                                                         |
+| DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
+| DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` und IPv6: `2001:620:0:ff::2` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
 
 ### Dyn DNS
 
-[Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn.
+[Dyn DNS](https://help.dyn.com/internet-guide-setup/) ist ein kostenloser alternativer DNS-Dienst von Dyn.
 
-| Protokoll | Adresse                             |                                                                                                                                                   |
-| --------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `216.146.35.35` and `216.146.36.36` | [Add to AdGuard](adguard:add_dns_server?address=216.146.35.35&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=216.146.35.35&name=) |
+| Protokoll | Adresse                             |                                                                                                                                                                 |
+| --------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `216.146.35.35` und `216.146.36.36` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=216.146.35.35&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=216.146.35.35&name=) |
 
 ### DNS.WATCH
 
-[DNS.WATCH](https://dns.watch/) is a fast and free server without logging with a privacy protection feature.
+[DNS.WATCH](https://dns.watch/) ist ein schneller und kostenloser Server ohne Protokollierung mit einer Funktion zum Schutz der Privatsphäre.
 
-| Protokoll | Adresse                                                       |                                                                                                                                                                             |
-| --------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `84.200.69.80` and `84.200.70.40`                             | [Add to AdGuard](adguard:add_dns_server?address=84.200.69.80&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=84.200.69.80&name=)                             |
-| DNS, IPv6 | `2001:1608:10:25::1c04:b12f` and `2001:1608:10:25::9249:d69b` | [Add to AdGuard](adguard:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=) |
-
-### FutureDNS
-
-[FutureDNS](https://futuredns.me/) is a privacy-friendly DNS service with OpenNIC support that blocks ads, trackers, malware and does not log any data.
-
-| Anycast Network | Adresse                              |                                                                                                                                                                                                                             |
-| --------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS  | `https://dns.futuredns.me/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.futuredns.me/dns-query&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.futuredns.me/dns-query&name=dns.futuredns.me) |
-| DNS-over-TLS    | `tls://dns.futuredns.me`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.futuredns.me&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.futuredns.me&name=dns.futuredns.me)                         |
-| DNS-over-QUIC   | `quic://dns.futuredns.me`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.futuredns.me&name=dns.futuredns.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.futuredns.me&name=dns.futuredns.me)                       |
-
-| Location           | Address - IPv4                                                                                                                                                        |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| London, UK         | `52.56.224.201`| [Add to AdGuard](adguard:add_dns_server?address=52.56.224.201&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.56.224.201&name=)    |
-| Milan, Italy       | `15.161.11.3`| [Add to AdGuard](adguard:add_dns_server?address=15.161.11.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=15.161.11.3&name=)          |
-| Stockholm, Sweden  | `13.49.168.178`| [Add to AdGuard](adguard:add_dns_server?address=13.49.168.178&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=13.49.168.178&name=)    |
-| Ashburn, USA       | `52.0.69.145`| [Add to AdGuard](adguard:add_dns_server?address=52.0.69.145&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.0.69.145&name=)          |
-| San Francisco, USA | `13.56.204.161`| [Add to AdGuard](adguard:add_dns_server?address=13.56.204.161&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=13.56.204.161&name=)    |
-| Montreal, Canada   | `3.97.137.100`| [Add to AdGuard](adguard:add_dns_server?address=3.97.137.100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=3.97.137.100&name=)       |
-| Singapore          | `54.254.82.60`| [Add to AdGuard](adguard:add_dns_server?address=54.254.82.60&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.254.82.60&name=)       |
-| Tokyo, Japan       | `54.199.94.55`| [Add to AdGuard](adguard:add_dns_server?address=54.199.94.55&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.199.94.55&name=)       |
-| Mumbai, India      | `3.7.162.217`| [Add to AdGuard](adguard:add_dns_server?address=3.7.162.217&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=3.7.162.217&name=)          |
-| São Paulo, Brazil  | `177.71.191.153`| [Add to AdGuard](adguard:add_dns_server?address=177.71.191.153&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=177.71.191.153&name=) |
+| Protokoll | Adresse                                                       |                                                                                                                                                                                           |
+| --------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `84.200.69.80` und `84.200.70.40`                             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=84.200.69.80&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=84.200.69.80&name=)                             |
+| DNS, IPv6 | `2001:1608:10:25::1c04:b12f` und `2001:1608:10:25::9249:d69b` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2001:1608:10:25::1c04:b12f&name=) |
 
 ### SkyDNS RU
 
@@ -423,7 +400,7 @@ In "Protected" mode, malware and phishing protection.
 | DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Add to AdGuard](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
 
 
-#### Familie
+#### Family
 
 In "Family" mode, Protected + blocking adult content.
 
@@ -675,7 +652,7 @@ These servers block adult websites and inappropriate contents.
 
 #### OSZX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
+Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist aktiviert.
 
 | Protokoll      | Adresse                                                                  |                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -688,7 +665,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 #### PumpleX server
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
+Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist aktiviert.
 
 | Protokoll      | Adresse                                                                       |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -886,7 +863,7 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 | DNS-over-HTTPS, OISD filter                  | `https://blitz.ahadns.com/1:1`    | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com)       |
 | DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com) |
 
-#### Netherlands
+#### Niederlande
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -895,7 +872,7 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
 
-#### India
+#### Indien
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -922,28 +899,28 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 | DNS-over-HTTPS | `https://doh.ny.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.ny.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net)                         |
 
-#### Poland
+#### Polen
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.pl.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net)                         |
 
-#### Italy
+#### Italien
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net)                         |
 
-#### Spain
+#### Spanien
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.es.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net)                         |
 
-#### Norway
+#### Norwegen
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1016,7 +993,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 
 [NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
 
-#### Ultra-low latency
+#### Ultra-niedrige Latenzzeit
 
 | Protokoll      | Adresse                  |                                                                                                                                                                                                                     |
 | -------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1055,7 +1032,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS-over-HTTPS | `https://freedns.controld.com/p0` | [Add to AdGuard](adguard:add_dns_server?address=https://freedns.controld.com/p0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://freedns.controld.com/p0&name=) |
 | DNS-over-TLS   | `p0.freedns.controld.com`         | [Add to AdGuard](adguard:add_dns_server?address=p0.freedns.controld.com&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=p0.freedns.controld.com&name=)                 |
 
-#### Block malware
+#### Malware blockieren
 
 | Protokoll      | Adresse                           |                                                                                                                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1063,7 +1040,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS-over-HTTPS | `https://freedns.controld.com/p1` | [Add to AdGuard](adguard:add_dns_server?address=https://freedns.controld.com/p1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://freedns.controld.com/p1&name=) |
 | DNS-over-TLS   | `tls://p1.freedns.controld.com`   | [Add to AdGuard](adguard:add_dns_server?address=tls://p1.freedns.controld.com&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://p1.freedns.controld.com&name=)     |
 
-##### Block malware + ads
+##### Malware und Werbung blockieren
 
 | Protokoll      | Adresse                           |                                                                                                                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1071,7 +1048,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS-over-HTTPS | `https://freedns.controld.com/p2` | [Add to AdGuard](adguard:add_dns_server?address=https://freedns.controld.com/p2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://freedns.controld.com/p2&name=) |
 | DNS-over-TLS   | `tls://p2.freedns.controld.com`   | [Add to AdGuard](adguard:add_dns_server?address=tls://p2.freedns.controld.com&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://p2.freedns.controld.com&name=)     |
 
-##### Block malware + ads + social
+##### Malware, Werbung und soziale Netzwerke blockieren
 
 | Protokoll      | Adresse                           |                                                                                                                                                                                       |
 | -------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1090,7 +1067,7 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | DNS-over-HTTPS | `https://doh.mullvad.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net) |
 | DNS-over-TLS   | `tls://doh.mullvad.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net)                         |
 
-#### Ad blocking
+#### Werbeblockierung
 
 | Protokoll      | Adresse                                     |                                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
