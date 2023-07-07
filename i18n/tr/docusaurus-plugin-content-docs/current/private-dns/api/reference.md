@@ -92,7 +92,7 @@ Gets an existing device by ID
 
 | Kod | Açıklama         |
 | --- | ---------------- |
-| 200 | Device info      |
+| 200 | Cihaz bilgisi    |
 | 404 | Cihaz bulunamadı |
 
 #### PUT

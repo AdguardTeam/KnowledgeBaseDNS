@@ -15,9 +15,9 @@ toc_max_heading_level: 4
 
 ## 前言
 
-You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
+用户可以使用 AdGuard DNS 过滤规则语法使规则更加灵活，以便它们能够根据您的偏好屏蔽内容。 AdGuard DNS 过滤规则语法可用于不同的 AdGuard 产品，如 AdGuard Home、 AdGuard DNS、 Windows/Mac/Android 的 AdGuard。
 
-There are three different approaches to writing hosts blocklists:
+这是三种不同的编写主机拦截列表方法：
 
 * [Adblock 风格的语法](#adblock-style-syntax)是基于使用 Adblock 风格的规则语法子集编写过滤规则的现代方法。 这样阻止拦截列表与浏览器广告拦截器兼容。
 
@@ -25,7 +25,7 @@ There are three different approaches to writing hosts blocklists:
 
 * [Domains-only 语法](#domains-only-syntax)是一个简单的域名列表。
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax](#adblock-style-syntax). It has a couple of important advantages over the old-style syntax:
+如果用户要创建阻止列表，我们建议使用 [Adblock 样式的语法](#adblock-style-syntax)。 与旧式语法相比，它有几个重要的优点：
 
 * **拦截列表大小。**使用模式匹配允许您拥有单个规则，而不是数百个 `/etc/hosts` 条目。
 
@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax](#
 
 * **可扩展性。**在过去的十年中，Adblock 风格的语法有了很大的发展，我们认为我们能进一步扩展它并为网络范围的拦截器提供额外的功能。
 
-If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][hlc] and we use it ourselves to create [AdGuard DNS filter][sdn].
+If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. 我们称它为 [Hostlist compiler][hlc] ，我们用它来创建 [AdGuard DNS 过滤器][sdn]。
 
 ## 基本示例
 

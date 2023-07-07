@@ -360,9 +360,9 @@ Gets query log
 
 ##### Responses
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | Journal des requêtes |
+| Code | Description |
+| ---- | ----------- |
+| 200  | Query log   |
 
 ### /oapi/v1/revoke_token
 
