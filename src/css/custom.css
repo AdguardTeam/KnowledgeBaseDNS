@@ -66,6 +66,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-weight: 700;
 }
 
+.container img.footer__logo {
+    max-width: 160px;
+}
+
 .navbar {
   box-shadow: none;
 }
