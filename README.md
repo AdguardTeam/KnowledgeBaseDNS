@@ -63,7 +63,7 @@ If you'd like to update the list of [known DNS Providers](https://github.com/Adg
 
 1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
 2. Choose DNS-over-TLS from the drop-down menu
-3. Fill out the Host name field 
+3. Fill out the Host name field
 4. Copy the ready DNS stamp from the Stamp field
 
 ### For DNS-over-QUIC
