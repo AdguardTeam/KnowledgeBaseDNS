@@ -53,7 +53,6 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 - Routers
 - Gaming consoles
 
-
 :::
 
 Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
