@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-`main` branch is published automatically to https://adguardteam.github.io/KnowledgeBaseDNS/.
+`main` branch is published automatically to [https://adguardteam.github.io/KnowledgeBaseDNS/](https://adguardteam.github.io/KnowledgeBaseDNS/).
 
 ## How to contribute
 
@@ -63,7 +63,7 @@ If you'd like to update the list of [known DNS Providers](https://github.com/Adg
 
 1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
 2. Choose DNS-over-TLS from the drop-down menu
-3. Fill out the Host name field 
+3. Fill out the Host name field
 4. Copy the ready DNS stamp from the Stamp field
 
 ### For DNS-over-QUIC

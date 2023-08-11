@@ -299,12 +299,12 @@ $ nslookup example.com my.adguard.local
 ```
 
 ```none
-Server:		my.adguard.local
-Address:	127.0.0.1#53
+Server: my.adguard.local
+Address: 127.0.0.1#53
 
 Non-authoritative answer:
-example.com	canonical name = example.net.
-Name:	example.net
+example.com canonical name = example.net.
+Name: example.net
 Address: 1.2.3.4
 ```
 
@@ -457,7 +457,6 @@ The list of allowed tags:
 [regexp]:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 
-
 ## `/etc/hosts`-Style Syntax {#etc-hosts-syntax}
 
 For each host a single line should be present with the following information:
@@ -480,7 +479,6 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 ```
 
 In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
-
 
 ## Domains-Only Syntax
 

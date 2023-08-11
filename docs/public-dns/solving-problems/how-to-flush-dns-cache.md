@@ -42,7 +42,11 @@ The simplest way is to activate the Airplane mode (for example, in the Control C
 
 Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
@@ -50,9 +54,13 @@ The easiest way to clear your DNS cache on your Android device is to turn the Ai
 
 A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+Another option is to reset the network settings of your device in the Settings app. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Note: by doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
@@ -124,19 +132,19 @@ This may be useful if you do not want restart a browser every time during work w
 chrome://settings/security
 ```
 
-2. Disable **Async DNS resolver**
+1. Disable **Async DNS resolver**
 
 ```bash
 chrome://flags/#enable-async-dns
 ```
 
-3. Press both buttons here
+1. Press both buttons here
 
 ```bash
 chrome://net-internals/#sockets
 ```
 
-4. Press **Clear host cache**
+1. Press **Clear host cache**
 
 ```bash
 chrome://net-internals/#dns
