@@ -3,23 +3,31 @@ title: 概览
 sidebar_position: 1
 ---
 
+:::info
+
+With AdGuard DNS, you can set up your private DNS servers to resolve DNS requests and block ads, trackers, and malicious domains before they reach your device
+
+快捷链接： [试用 AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # 私人 AdGuard DNS
 
-![私人AdGuard DNS仪表盘主](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## 什么是私人 AdGuard DNS?
 
-私人 AdGuard DNS是一种DNS服务器，除了有公共DNS服务器的好处（如流量加密和域名阻止列表）外，还提供灵活的定制、DNS统计和家长控制等功能，并通过一个方便的仪表板轻松管理。
+Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
 
 ## Why you need Private AdGuard DNS
 
-今天，您可以将任何东西连接到互联网：电视、冰箱、智能电灯或扬声器。 但伴随着不可否认的便利，您会被追踪和被迫看到广告。 在这种情况下，一个简单的基于浏览器的广告拦截器不会保护您，但您可以设置AdGuard DNS来过滤流量、阻止广告和跟踪器， AdGuard DNS 具有系统范围的效果。
+Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
-我们已经有 [公共 AdGuard DNS](../public-dns/overview.md) 和 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)。 这些解决方案对一些用户来说效果不错，但对其他用户来说，公共的AdGuard DNS缺乏配置的灵活性，而AdGuard Home则缺乏简单性。 这就是私人AdGuard DNS发挥作用的地方。 它具有两方面的优点：它提供可定制、可控制和信息统计--所有这些都通过一个简单易用的仪表盘实现。
+We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
 
 ## 私人和公共 AdGuard DNS的区别
 
-以下是公共 AdGuard DNS 和私人 AdGuard DNS 可用功能的简单比较。
+Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
 
 | 公共 AdGuard DNS | 私人 AdGuard DNS                    |
 | -------------- | --------------------------------- |
@@ -35,50 +43,77 @@ sidebar_position: 1
 1. 前往 [AdGuard DNS 仪表盘](https://adguard-dns.io/dashboard/)（如果没有登录，请使用您的 AdGuard 账号登录）
 2. 单击“连接设备”并按照屏幕上的说明进行操作。
 
-> Supported platforms: - Android - iOS - Windows - Mac - Linux - Routers - Gaming consoles
+**Supported platforms:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routers
+* Gaming consoles
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ## 私人 AdGuard DNS的特点
 
-### 封锁清单管理
+### Blocklists management
 
-通过 "拦截列表"功能，你可以设置你想拦截的域名和放行的域名。 从各种各样的阻止列表中进行选择以用于不同的目的。
+With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
-![私人AdGuard DNS仪表盘 拦截列表](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### 用户规则
+### User rules
 
-当预装的有数千条规则的*拦截列表*还不够时，我们有一个方便的功能，称为“用户规则”。 在这里，您可以手动添加自定义规则以 拦截/放行 某个域名或导入自定义规则列表（查看 [DNS 过滤规则语法](../general/dns-filtering-syntax.md)）。 您可以导出列表。
+For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
-![私人 AdGuard DNS 仪表盘 自定义规则](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### 统计
+### Statistics
 
-在 "统计 "选项中，您可以查看到连接私人AdGuard DNS的设备所做的DNS查询的所有汇总统计信息。 它显示了请求的总数和地理位置、被阻止的请求数、请求被发送到的公司列表、请求类型和请求最多的域名。
+In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
-![私人 AdGuard DNS 仪表盘 统计信息](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### 流量终点
+### Traffic destination
 
-该功能显示你的设备发送的DNS请求的去向。 除了查看请求目的地地图之外，您还可以按日期、设备和国家/地区过滤信息。
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
-![私人AdGuard DNS仪表盘 流量](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### 公司
+### Companies
 
-此选项允许您快速检查哪些公司发送的请求最多，以及哪些公司的请求被阻止最多。
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
-![私人AdGuard DNS仪表盘 公司](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### 查询日志
+### Query log
 
-这是一个详细的日志，您可以在其中查看每一个请求的信息，还可以按状态、类型、公司、设备、时间、国家/地区对请求进行排序。
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
-![私人AdGuard DNS仪表盘 查询日志](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### 家长控制
 
-为了保护您的孩子免受您认为不合适的在线内容的影响，请设置并激活 *家长控制*选项。 除了 "成人内容 "拦截和安全搜索等选项外，我们还增加了手动指定拦截域名的功能，并为 *家长控制* 设置了相应的工作时间表
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![私人 AdGuard DNS 仪表盘 家长控制](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> 如果您还没有私人 AdGuard DNS，您可以在[官网](https://adguard-dns.io/)上获得它。
+:::note
+
+In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+
+:::

@@ -1,7 +1,17 @@
 ---
 title: DNS filtering rules syntax
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
+
+:::info
+
+Here we show you how to write custom DNS filtering rules for use in AdGuard products
+
+Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
 
 ## Introduction
 

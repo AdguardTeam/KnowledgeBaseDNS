@@ -1,0 +1,9 @@
+{
+    "ul-indent": { "indent": 4 },
+    "ul-style": { "style": "dash" },
+    "emphasis-style": { "style": "asterisk" },
+    "no-duplicate-header": { "siblings_only": true },
+    "line-length": false,
+    "no-bare-urls": false,
+    "link-fragments": false
+}

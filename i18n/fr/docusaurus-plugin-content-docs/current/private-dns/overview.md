@@ -1,43 +1,74 @@
 ---
-title: Overview
+title: Vue d'ensemble
 sidebar_position: 1
 ---
 
-# Private AdGuard DNS
+:::info
 
-![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+Avec AdGuard DNS, vous pouvez configurer vos serveurs DNS privés pour résoudre les requêtes DNS et bloquer les publicités, les trackers et les domaines malveillants avant qu'ils n'atteignent votre appareil
 
-## What is Private AdGuard DNS?
+Lien rapide : [Essayer AdGuard DNS](https://adguard-dns.io/dashboard/)
 
-Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
+:::
 
-## Why you need Private AdGuard DNS
+# AdGuard DNS privé
 
-Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+![Tableau de bord AdGuard DNS privé principal](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-We already have [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
+## Qu'est-ce que AdGuard DNS privé ?
 
-## The difference between Private and Public AdGuard DNS
+AdGuard DNS privé est un serveur DNS qui, en plus des avantages d'un serveur DNS public (tels que le cryptage du trafic et les listes de blocage de domaine), fournit des fonctionnalités comme la personnalisation flexible, les statistiques DNS et le contrôle parental, plus il est facilement géré via un tableau de bord pratique.
 
-Here is a simple comparison of features available in Public AdGuard DNS and Private AdGuard DNS servers.
+## Pourquoi avez-vous besoin de AdGuard DNS privé
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                            |
-| -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| DNS traffic encryption           | DNS traffic encryption                                                                         |
-| Pre-determined domain blocklists | Customizable domain blocklists                                                                 |
-| -                                | Custom DNS filtering rules with import/export feature                                          |
-| -                                | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
-| -                                | Detailed query log                                                                             |
-| -                                | Parental control                                                                               |
+Aujourd'hui, vous pouvez connecter n'importe quoi à Internet : téléviseurs, réfrigérateurs, ampoules intelligentes ou haut-parleurs. Mais ces avantages indéniables s'accompagnent de traqueurs et de publicités. Un simple bloqueur de publicité basé sur un navigateur ne vous protégera pas dans ce cas, mais AdGuard DNS, que vous pouvez configurer pour filtrer le trafic, bloquer le contenu et les traqueurs, a un effet sur l'ensemble du système.
 
-## How to set up Private AdGuard DNS
+Nous avons déjà [AdGuard DNS public](../public-dns/overview.md) et [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Ces solutions conviennent à certains utilisateurs, mais pour d'autres, AdGuard DNS public manque de souplesse de configuration, tandis qu'AdGuard Home manque de simplicité. C'est là que AdGuard DNS privé entre en jeu. Il offre le meilleur des deux mondes : personnalisation, contrôle et information, le tout au moyen d'un tableau de bord simple et facile à utiliser.
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
-2. Click “Connect device” and follow on-screen instructions
+## La différence entre AdGuard DNS privé et public
 
-> Supported platforms: - Android - iOS - Windows - Mac - Linux - Routers - Gaming consoles
+Voici une simple comparaison des fonctionnalités disponibles dans les serveurs AdGuard DNS Public et Privé.
 
-## Private AdGuard DNS features
+| AdGuard DNS public                           | AdGuard DNS privé                                                                                 |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Cryptage du trafic DNS                       | Cryptage du trafic DNS                                                                            |
+| Listes de blocage de domaines prédéterminées | Listes de blocage de domaines personnalisables                                                    |
+| -                                            | Règles de filtrage DNS personnalisées avec fonction d'importation/exportation                     |
+| -                                            | Statistiques des requêtes (voir où vont vos requêtes DNS : quels pays, quelles entreprises, etc.) |
+| -                                            | Journal de requêtes détaillé                                                                      |
+| -                                            | Contrôle Parental                                                                                 |
+
+## Comment configurer AdGuard DNS Privé
+
+1. Accédez à votre [tableau de bord AdGuard DNS](https://adguard-dns.io/dashboard/) (si vous n'êtes pas connecté, connectez-vous à l'aide de votre compte AdGuard)
+2. Cliquez sur "Connecter l'appareil" et suivez les instructions sur l'écran
+
+**Supported platforms:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routers
+* Gaming consoles
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
+
+## Fonctionnalités de AdGuard DNS privé
 
 ### Blocklists management
 
@@ -75,10 +106,14 @@ This is a detailed log where you can check out the information on every single r
 
 ![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-### Parental control
+### Contrôle Parental
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+:::note
+
+In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
+
+:::

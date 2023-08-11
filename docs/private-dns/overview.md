@@ -41,7 +41,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 ### How to set up Private AdGuard DNS
 
 1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
-2. Click “Connect device” and follow on-screen instructions
+1. Click "Connect device" and follow on-screen instructions
 
 :::note Supported platforms:
 
@@ -53,7 +53,24 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 - Routers
 - Gaming consoles
 
+
 :::
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ### Private AdGuard DNS features
 

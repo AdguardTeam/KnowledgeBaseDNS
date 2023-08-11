@@ -3,6 +3,14 @@ title: Genel Bakış
 sidebar_position: 1
 ---
 
+:::info
+
+AdGuard DNS ile, DNS isteklerini çözümlemek ve reklamları, izleyicileri ve kötü amaçlı alan adlarını cihazınıza ulaşmadan önce engellemek için özel DNS sunucularınızı ayarlayabilirsiniz
+
+Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Özel AdGuard DNS
 
 ![Özel AdGuard DNS ana sayfa esas](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
@@ -35,7 +43,30 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
 2. "Cihazı bağla" öğesine tıklayın ve ekrandaki talimatları takip edin
 
-> Desteklenen platformlar: - Android - iOS - Windows - Mac - Linux - Yönlendiriciler - Oyun konsolları
+**Desteklenen platformlar:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Yönlendiriciler
+* Oyun konsolları
+
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+
+### Linked IP
+
+If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+
+The only requirement for linking IP is that **it must be a residential IP address**.
+
+:::note
+
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+
+:::
+
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
 
 ## Özel AdGuard DNS özellikleri
 
@@ -47,7 +78,7 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 
 ### Kullanıcı kuralları
 
-Binlerce kurala sahip önceden yüklenmiş *Engel listelerinin* yeterli olmadığı zamanlar için, "Kullanıcı kuralları" adlı kullanışlı bir fonksiyonumuz var. Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). Listeleri dışa aktarabilirsiniz.
+Binlerce kurala sahip önceden yüklenmiş *Engel listelerinin* yeterli olmadığı zamanlar için, "Kullanıcı kuralları" adlı kullanışlı bir fonksiyonumuz var. Burada, belirli bir etki alanını engellemek/engelini kaldırmak için manuel olarak özel kurallar ekleyebilir veya özel kural listelerini içe aktarabilirsiniz ([DNS filtreleme kuralları söz dizimine](../general/dns-filtering-syntax.md) bakın). Listeleri dışa aktarabilirsiniz.
 
 ![Özel AdGuard DNS ana sayfa kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
@@ -77,8 +108,12 @@ Bu, her bir istekle ilgili bilgileri kontrol edebileceğiniz ve ayrıca istekler
 
 ### Ebeveyn denetimi
 
-Çocuğunuzu uygunsuz bulduğunuz çevrimiçi içerikten korumak için *Ebeveyn denetimi* seçeneğini ayarlayın ve etkinleştirin. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+Çocuğunuzu uygunsuz bulduğunuz çevrimiçi içerikten korumak için *Ebeveyn denetimi* seçeneğini ayarlayın ve etkinleştirin. "Yetişkinlere yönelik içerik" engelleme ve güvenli arama gibi seçeneklere ek olarak, engelleme için etki alanlarını manuel olarak belirleme ve *Ebeveyn kontrolü*'nün buna göre çalışması için bir zamanlama ayarlama olanağı ekledik.
 
 ![Özel AdGuard DNS ana sayfa Ebeveyn Denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> Henüz Özel AdGuard DNS'iniz yoksa [resmi siteden edinebilirsiniz](https://adguard-dns.io/).
+:::note
+
+Henüz Özel AdGuard DNS'iniz yoksa [resmi siteden edinebilirsiniz](https://adguard-dns.io/).
+
+:::

@@ -3,6 +3,14 @@ title: Přehled
 sidebar_position: 1
 ---
 
+:::info
+
+Pomocí AdGuard DNS můžete nastavit své soukromé DNS servery, které budou řešit požadavky DNS a blokovat reklamy, slídiče a škodlivé domény dříve, než se dostanou do vašeho zařízení
+
+Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
+
+:::
+
 # Soukromý DNS AdGuard
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
@@ -35,7 +43,30 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 1. Přejděte na svůj [ovládací panel AdGuard DNS](https://adguard-dns.io/dashboard/) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
 2. Klikněte na “Připojit zařízení“ a postupujte podle pokynů na obrazovce
 
-> Podporované platformy: - Android - iOS - Windows - Mac - Linux - Routery - Herní konzole
+**Podporované platformy:**
+* Android
+* iOS
+* Windows
+* Mac
+* Linux
+* Routery
+* Herní konzole
+
+Každé zařízení, které přidáte do panelu AdGuard DNS, má svou vlastní jedinečnou adresu, kterou lze použít, pokud zařízení podporuje moderní šifrované protokoly DNS (DoH, DoT a DoQ).
+
+### Připojená IP
+
+Pokud zařízení nepodporuje šifrovanou službu DNS a musíte použít běžnou službu DNS, existuje další způsob, jak umožnit službě AdGuard DNS rozpoznat zařízení — připojit jeho IP adresu. V tomto případě AdGuard DNS započítává všechny běžné DNS požadavky, které přicházejí z dané IP adresy do tohoto "zařízení".
+
+Jediným požadavkem pro připojení IP je, že **musí být rezidentní IP adresa**.
+
+:::note
+
+Rezidenční IP adresa je IP adresa přiřazená zařízení připojenému k rezidentnímu ISP. Obvykle je spojena s fyzickou lokalitou a je přidělena jednotlivým domům nebo bytům. Rezidenční IP adresy používají běžní uživatelé internetu pro své každodenní online aktivity, jako je procházení webu, přístup k platformám sociálních médií, odesílání e-mailů nebo streamování obsahu.
+
+:::
+
+Pokud se snažíte připojit rezidenční IP adresu a AdGuard DNS vám to neumožňuje, kontaktujte náš tým podpory na adrese support@adguard.com.
 
 ## Funkce soukromého AdGuard DNS
 
@@ -81,4 +112,8 @@ Chcete-li své dítě chránit před online obsahem, který považujete za nevho
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-> V případě, že ještě nemáte soukromý AdGuard DNS, můžete jej získat na [oficiálních stránkách](https://adguard-dns.io/).
+:::note
+
+V případě, že ještě nemáte soukromý AdGuard DNS, můžete jej získat na [oficiálních stránkách](https://adguard-dns.io/).
+
+:::

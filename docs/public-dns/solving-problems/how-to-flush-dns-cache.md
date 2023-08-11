@@ -17,12 +17,12 @@ DNS cache stores the IP addresses of visited sites on the local computer so that
 
 The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
-* **Resource data (or rdata)**;
-* **Record type**;
-* **Record name**;
-* **TTL (time to live)**;
-* **Class**;
-* **Resource data length**.
+- **Resource data (or rdata)**;
+- **Record type**;
+- **Record name**;
+- **TTL (time to live)**;
+- **Class**;
+- **Resource data length**.
 
 ## When you might need to clear the cache
 
@@ -128,24 +128,24 @@ This may be useful if you do not want restart a browser every time during work w
 
 1. Disable **secure DNS** in Chrome settings
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
 1. Disable **Async DNS resolver**
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
 1. Press both buttons here
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
 1. Press **Clear host cache**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```
