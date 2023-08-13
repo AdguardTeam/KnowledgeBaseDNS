@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-`main` branch is published automatically to https://adguardteam.github.io/KnowledgeBaseDNS/.
+`main` branch is published automatically to [https://adguardteam.github.io/KnowledgeBaseDNS/](https://adguardteam.github.io/KnowledgeBaseDNS/).
 
 ## How to contribute
 

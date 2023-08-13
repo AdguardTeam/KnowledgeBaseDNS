@@ -11,8 +11,6 @@ Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
 
 :::
 
-## Private AdGuard DNS
-
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## What is Private AdGuard DNS?
@@ -43,7 +41,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
 1. Click "Connect device" and follow on-screen instructions
 
-**Supported platforms:**
+:::note Supported platforms:
 
 - Android
 - iOS
@@ -53,9 +51,11 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 - Routers
 - Gaming consoles
 
+:::
+
 Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
 
-### Linked IP
+## Linked IP
 
 If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
 
@@ -113,8 +113,4 @@ To protect your child from online content you deem inappropriate, set up and act
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-:::note
-
 In case you don't have Private AdGuard DNS yet, you can [get it on the official website](https://adguard-dns.io/).
-
-:::

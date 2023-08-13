@@ -299,7 +299,7 @@ nslookup example.com my.adguard.local
 ```
 
 ```none
-Server:  my.adguard.local
+Server: my.adguard.local
 Address: 127.0.0.1#53
 
 Non-authoritative answer:
