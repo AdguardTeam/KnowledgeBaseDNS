@@ -11,21 +11,19 @@ Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
 
 :::
 
-# Özel AdGuard DNS
-
 ![Özel AdGuard DNS ana sayfa esas](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## Özel AdGuard DNS nedir?
+## What is Private AdGuard DNS?
 
 Private AdGuard DNS is a DNS server that, in addition to benefits of a public DNS server (such as traffic encryption and domain blocklists), provides features like flexible customization, DNS statistics and parental control and is easily managed through a handy dashboard.
 
-## Özel AdGuard DNS'e neden ihtiyacınız var
+## Why you need Private AdGuard DNS
 
 Bugün internete her şeyi bağlayabilirsiniz: TV'ler, buzdolapları, akıllı ampuller veya hoparlörler. Ancak inkar edilemez kolaylıkların yanı sıra izleyiciler ve reklamlar elde edersiniz. Basit bir tarayıcı tabanlı reklam engelleyici bu durumda sizi korumayacaktır, ancak trafiği filtrelemek, içeriği ve izleyicileri engellemek için ayarlayabileceğiniz AdGuard DNS, sistem genelinde bir etkiye sahiptir.
 
 Halihazırda [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home'a](https://github.com/AdguardTeam/AdGuardHome) sahibiz. Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar - tümü basit, kullanımı kolay bir ana sayfa aracılığıyla.
 
-## Özel ve Genel AdGuard DNS arasındaki fark
+## The difference between Private and Public AdGuard DNS
 
 Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basit bir karşılaştırmasını burada bulabilirsiniz.
 
@@ -38,23 +36,26 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 | -                                            | Ayrıntılı sorgu günlüğü                                                                               |
 | -                                            | Ebeveyn denetimi                                                                                      |
 
-## Özel AdGuard DNS nasıl kurulur
+## How to set up Private AdGuard DNS
 
 1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
-2. "Cihazı bağla" öğesine tıklayın ve ekrandaki talimatları takip edin
+1. "Cihazı bağla" öğesine tıklayın ve ekrandaki talimatları takip edin
 
-**Desteklenen platformlar:**
-* Android
-* iOS
-* Windows
-* Mac
-* Linux
-* Yönlendiriciler
-* Oyun konsolları
+:::note Supported platforms:
+
+- Android
+- iOS
+- Windows
+- Mac
+- Linux
+- Yönlendiriciler
+- Oyun konsolları
+
+:::
 
 Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
 
-### Linked IP
+## Linked IP
 
 If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
 
@@ -70,50 +71,46 @@ If you're trying to link a residential IP address and AdGuard DNS does not allow
 
 ## Özel AdGuard DNS özellikleri
 
-### Engel listeleri yönetimi
+### Blocklists management
 
-"Engel listeleri" özelliği ile hangi alan adlarını engellemek istediğinizi ve hangilerini istemediğinizi belirleyebilirsiniz. Farklı amaçlar için çok çeşitli engel listeleri arasından seçim yapın.
+With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
 
-![Özel AdGuard DNS ana sayfa engel listeleri](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Kullanıcı kuralları
+### User rules
 
-Binlerce kurala sahip önceden yüklenmiş *Engel listelerinin* yeterli olmadığı zamanlar için, "Kullanıcı kuralları" adlı kullanışlı bir fonksiyonumuz var. Burada, belirli bir etki alanını engellemek/engelini kaldırmak için manuel olarak özel kurallar ekleyebilir veya özel kural listelerini içe aktarabilirsiniz ([DNS filtreleme kuralları söz dizimine](../general/dns-filtering-syntax.md) bakın). Listeleri dışa aktarabilirsiniz.
+For times when pre-installed *Blocklists* with thousands of rules are not enough, we have a handy function called "User rules". Here you can add custom rules manually to block/unblock a certain domain or import custom rules lists (check out [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
-![Özel AdGuard DNS ana sayfa kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### İstatistikler
+### Statistics
 
-"İstatistikler" sekmesinde, Özel AdGuard DNS'inize bağlı cihazlar tarafından yapılan DNS sorgularıyla ilgili tüm özet istatistikleri görebilirsiniz. İsteklerin toplam sayısını ve coğrafyasını, engellenen isteklerin sayısını, isteklerin yönlendirildiği şirketlerin listesini, istek türlerini ve başlıca istenen alan adlarını gösterir.
+In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
-![Özel AdGuard DNS ana sayfa istatistikler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Trafik istikameti
+### Traffic destination
 
-Bu özellik, cihazlarınız tarafından gönderilen DNS isteklerinin nereye gittiğini gösterir. İstek istikametlerinin haritasını görmenin yanı sıra bilgileri tarihe, cihaza ve ülkeye göre filtreleyebilirsiniz.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
-![Özel AdGuard DNS ana sayfa trafik](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Şirketler
+### Companies
 
-Bu sekme, hangi şirketlerin en çok istek gönderdiğini ve hangi şirketlerin en çok engellenen istekleri olduğunu hızlı bir şekilde kontrol etmenizi sağlar.
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
-![Özel AdGuard DNS ana sayfa şirketler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### Sorgu günlüğü
+### Query log
 
-Bu, her bir istekle ilgili bilgileri kontrol edebileceğiniz ve ayrıca istekleri duruma, türe, şirkete, cihaza, zamana, ülkeye göre sıralayabileceğiniz ayrıntılı bir günlüktür.
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
-![Özel AdGuard DNS ana sayfa sorgu günlüğü](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
 ### Ebeveyn denetimi
 
-Çocuğunuzu uygunsuz bulduğunuz çevrimiçi içerikten korumak için *Ebeveyn denetimi* seçeneğini ayarlayın ve etkinleştirin. "Yetişkinlere yönelik içerik" engelleme ve güvenli arama gibi seçeneklere ek olarak, engelleme için etki alanlarını manuel olarak belirleme ve *Ebeveyn kontrolü*'nün buna göre çalışması için bir zamanlama ayarlama olanağı ekledik.
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Özel AdGuard DNS ana sayfa Ebeveyn Denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
-
-:::note
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 Henüz Özel AdGuard DNS'iniz yoksa [resmi siteden edinebilirsiniz](https://adguard-dns.io/).
-
-:::

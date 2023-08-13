@@ -1,11 +1,11 @@
 ---
-title: Reference
+title: Руководство по API
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!-- 
+<!--
     The content below is simply an automatic conversion from the OpenAPI spec
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
@@ -13,549 +13,578 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-# AdGuard DNS API
-DNS API documentation
+## AdGuard DNS API
+
+Документация по DNS API
 
 ## Version: 1.4
 
 ### /oapi/v1/account/limits
 
 #### GET
-##### Summary:
 
-Gets account limits
+##### Summary
 
-##### Responses
+Получает лимиты аккаунта
 
-| Code | Описание            |
-| ---- | ------------------- |
-| 200  | Account limits info |
+##### Ответы
+
+| Код | Описание                      |
+| --- | ----------------------------- |
+| 200 | Информация о лимитах аккаунта |
 
 ### /oapi/v1/devices
 
 #### GET
-##### Summary:
 
-Lists devices
+##### Summary
 
-##### Responses
+Перечисляет устройства
 
-| Code | Описание        |
-| ---- | --------------- |
-| 200  | List of devices |
+##### Ответы
+
+| Код | Описание         |
+| --- | ---------------- |
+| 200 | Список устройств |
 
 #### POST
-##### Summary:
 
-Creates a new device
+##### Summary
 
-##### Responses
+Создаёт новое устройство
 
-| Code | Описание                        |
-| ---- | ------------------------------- |
-| 200  | Device created                  |
-| 400  | Validation failed               |
-| 429  | Devices count reached the limit |
+##### Ответы
+
+| Код | Описание                              |
+| --- | ------------------------------------- |
+| 200 | Устройство создано                    |
+| 400 | Ошибка проверки                       |
+| 429 | Количество устройств достигло предела |
 
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
-##### Summary:
 
-Removes a device
+##### Summary
 
-##### Parameters
+Удаляет устройство
 
-| Name      | Located in | Описание | Required | Schema |
-| --------- | ---------- | -------- | -------- | ------ |
-| device_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя       | Расположен в | Описание | Обязательно | Схема  |
+| --------- | ------------ | -------- | ----------- | ------ |
+| device_id | path         |          | Да          | string |
 
-| Code | Описание         |
-| ---- | ---------------- |
-| 200  | Device deleted   |
-| 404  | Device not found |
+##### Ответы
+
+| Код | Описание              |
+| --- | --------------------- |
+| 200 | Устройство удалено    |
+| 404 | Устройство не найдено |
 
 #### GET
-##### Summary:
 
-Gets an existing device by ID
+##### Summary
 
-##### Parameters
+Получает существующее устройство по ID
 
-| Name      | Located in | Описание | Required | Schema |
-| --------- | ---------- | -------- | -------- | ------ |
-| device_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя       | Расположен в | Описание | Обязательно | Схема  |
+| --------- | ------------ | -------- | ----------- | ------ |
+| device_id | path         |          | Да          | string |
 
-| Code | Описание         |
-| ---- | ---------------- |
-| 200  | Device info      |
-| 404  | Device not found |
+##### Ответы
+
+| Код | Описание                 |
+| --- | ------------------------ |
+| 200 | Информация об устройстве |
+| 404 | Устройство не найдено    |
 
 #### PUT
-##### Summary:
 
-Updates an existing device
+##### Summary
 
-##### Parameters
+Обновляет существующее устройство
 
-| Name      | Located in | Описание | Required | Schema |
-| --------- | ---------- | -------- | -------- | ------ |
-| device_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя       | Расположен в | Описание | Обязательно | Схема  |
+| --------- | ------------ | -------- | ----------- | ------ |
+| device_id | path         |          | Да          | string |
 
-| Code | Описание          |
-| ---- | ----------------- |
-| 200  | Device updated    |
-| 400  | Validation failed |
-| 404  | Device not found  |
+##### Ответы
+
+| Код | Описание              |
+| --- | --------------------- |
+| 200 | Устройство обновлено  |
+| 400 | Ошибка проверки       |
+| 404 | Устройство не найдено |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
-##### Summary:
 
-Gets DNS-over-HTTPS .mobileconfig file.
+##### Summary
 
-##### Parameters
+Получает файл DNS-over-HTTPS .mobileconfig.
 
-| Name                    | Located in | Описание                                                                       | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                     | Расположен в | Описание                                                                                   | Обязательно | Схема      |
+| ----------------------- | ------------ | ------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| device_id               | path         |                                                                                            | Да          | string     |
+| exclude_wifi_networks | query        | Перечислите сети Wi-Fi по их SSID, для которых вы хотите отключить AdGuard DNS             | Нет         | [ string ] |
+| exclude_domain          | query        | Перечислите домены, которые будут использовать DNS-серверы по умолчанию вместо AdGuard DNS | Нет         | [ string ] |
 
-| Code | Описание                   |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+##### Ответы
+
+| Код | Описание                   |
+| --- | -------------------------- |
+| 200 | Файл DNS-over-HTTPS .plist |
+| 404 | Устройство не найдено      |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
-##### Summary:
 
-Gets DNS-over-TLS .mobileconfig file.
+##### Summary
 
-##### Parameters
+Получает файл DNS-over-TLS .mobileconfig.
 
-| Name                    | Located in | Описание                                                                       | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                     | Расположен в | Описание                                                                                   | Обязательно | Схема      |
+| ----------------------- | ------------ | ------------------------------------------------------------------------------------------ | ----------- | ---------- |
+| device_id               | path         |                                                                                            | Да          | string     |
+| exclude_wifi_networks | query        | Перечислите сети Wi-Fi по их SSID, для которых вы хотите отключить AdGuard DNS             | Нет         | [ string ] |
+| exclude_domain          | query        | Перечислите домены, которые будут использовать DNS-серверы по умолчанию вместо AdGuard DNS | Нет         | [ string ] |
 
-| Code | Описание                   |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+##### Ответы
+
+| Код | Описание                   |
+| --- | -------------------------- |
+| 200 | Файл DNS-over-HTTPS .plist |
+| 404 | Устройство не найдено      |
 
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Summary:
 
-Updates device settings
+##### Summary
 
-##### Parameters
+Обновляет настройки устройства
 
-| Name      | Located in | Описание | Required | Schema |
-| --------- | ---------- | -------- | -------- | ------ |
-| device_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя       | Расположен в | Описание | Обязательно | Схема  |
+| --------- | ------------ | -------- | ----------- | ------ |
+| device_id | path         |          | Да          | string |
 
-| Code | Описание                |
-| ---- | ----------------------- |
-| 200  | Device settings updated |
-| 400  | Validation failed       |
-| 404  | Device not found        |
+##### Ответы
+
+| Код | Описание                       |
+| --- | ------------------------------ |
+| 200 | Настройки устройства обновлены |
+| 400 | Ошибка проверки                |
+| 404 | Устройство не найдено          |
 
 ### /oapi/v1/dns_servers
 
 #### GET
-##### Summary:
 
-Lists DNS servers that belong to the user.
+##### Summary
 
-##### Description:
+Перечисляет DNS-серверы, принадлежащие пользователю.
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+##### Описание
 
-##### Responses
+Перечисляет DNS-серверы, принадлежащие пользователю. По умолчанию есть как минимум один сервер.
 
-| Code | Описание            |
-| ---- | ------------------- |
-| 200  | List of DNS servers |
+##### Ответы
+
+| Код | Описание            |
+| --- | ------------------- |
+| 200 | Список DNS-серверов |
 
 #### POST
-##### Summary:
 
-Creates a new DNS server
+##### Summary
 
-##### Description:
+Создаёт новый DNS-сервер
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+##### Описание
 
-##### Responses
+Создаёт новый DNS-сервер. Вы можете установить собственные настройки, в противном случае DNS-сервер будет создан с настройками по умолчанию.
 
-| Code | Описание                            |
-| ---- | ----------------------------------- |
-| 200  | DNS server created                  |
-| 400  | Validation failed                   |
-| 429  | DNS servers count reached the limit |
+##### Ответы
+
+| Код | Описание                                 |
+| --- | ---------------------------------------- |
+| 200 | DNS-сервер создан                        |
+| 400 | Ошибка проверки                          |
+| 429 | Количество DNS-серверов достигло предела |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
-##### Summary:
 
-Removes a DNS server
+##### Summary
 
-##### Description:
+Удаляет DNS-сервер
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting a default DNS server is forbidden.
+##### Описание
 
-##### Parameters
+Удаляет DNS-сервер. Все устройства, подключённые к этому DNS-серверу, будут перемещены на DNS-сервер по умолчанию. Удалять DNS-сервер по умолчанию запрещено.
 
-| Name            | Located in | Описание | Required | Schema |
-| --------------- | ---------- | -------- | -------- | ------ |
-| dns_server_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя             | Расположен в | Описание | Обязательно | Схема  |
+| --------------- | ------------ | -------- | ----------- | ------ |
+| dns_server_id | path         |          | Да          | string |
 
-| Code | Описание             |
-| ---- | -------------------- |
-| 200  | DNS server deleted   |
-| 404  | DNS server not found |
+##### Ответы
+
+| Код | Описание             |
+| --- | -------------------- |
+| 200 | DNS-сервер удалён    |
+| 404 | DNS-сервер не найден |
 
 #### GET
-##### Summary:
 
-Gets an existing DNS server by ID
+##### Summary
 
-##### Parameters
+Получает существующий DNS-сервер по ID
 
-| Name            | Located in | Описание | Required | Schema |
-| --------------- | ---------- | -------- | -------- | ------ |
-| dns_server_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя             | Расположен в | Описание | Обязательно | Схема  |
+| --------------- | ------------ | -------- | ----------- | ------ |
+| dns_server_id | path         |          | Да          | string |
 
-| Code | Описание             |
-| ---- | -------------------- |
-| 200  | DNS server info      |
-| 404  | DNS server not found |
+##### Ответы
+
+| Код | Описание                 |
+| --- | ------------------------ |
+| 200 | Информация о DNS-сервере |
+| 404 | DNS-сервер не найден     |
 
 #### PUT
-##### Summary:
 
-Updates an existing DNS server
+##### Summary
 
-##### Parameters
+Обновляет существующий DNS-сервер
 
-| Name            | Located in | Описание | Required | Schema |
-| --------------- | ---------- | -------- | -------- | ------ |
-| dns_server_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя             | Расположен в | Описание | Обязательно | Схема  |
+| --------------- | ------------ | -------- | ----------- | ------ |
+| dns_server_id | path         |          | Да          | string |
 
-| Code | Описание             |
-| ---- | -------------------- |
-| 200  | DNS server updated   |
-| 400  | Validation failed    |
-| 404  | DNS server not found |
+##### Ответы
+
+| Код | Описание             |
+| --- | -------------------- |
+| 200 | DNS-сервер обновлён  |
+| 400 | Ошибка проверки      |
+| 404 | DNS-сервер не найден |
 
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Summary:
 
-Updates DNS server settings
+##### Summary
 
-##### Parameters
+Обновляет настройки DNS-сервера
 
-| Name            | Located in | Описание | Required | Schema |
-| --------------- | ---------- | -------- | -------- | ------ |
-| dns_server_id | path       |          | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя             | Расположен в | Описание | Обязательно | Схема  |
+| --------------- | ------------ | -------- | ----------- | ------ |
+| dns_server_id | path         |          | Да          | string |
 
-| Code | Описание                    |
-| ---- | --------------------------- |
-| 200  | DNS server settings updated |
-| 400  | Validation failed           |
-| 404  | DNS server not found        |
+##### Ответы
+
+| Код | Описание                        |
+| --- | ------------------------------- |
+| 200 | Настройки DNS-сервера обновлены |
+| 400 | Ошибка проверки                 |
+| 404 | DNS-сервер не найден            |
 
 ### /oapi/v1/filter_lists
 
 #### GET
-##### Summary:
 
-Gets filter lists
+##### Summary
 
-##### Responses
+Получает списки фильтров
 
-| Code | Описание        |
-| ---- | --------------- |
-| 200  | List of filters |
+##### Ответы
+
+| Код | Описание        |
+| --- | --------------- |
+| 200 | Список фильтров |
 
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Summary:
 
-Generates Access and Refresh token
+##### Summary
 
-##### Responses
+Генерирует токен доступа и продлеваемый токен
 
-| Code | Описание                                                 |
-| ---- | -------------------------------------------------------- |
-| 200  | Access token issued                                      |
-| 400  | Missing required parameters                              |
-| 401  | Invalid credentials, MFA token or refresh token provided |
+##### Ответы
+
+| Код | Описание                                                                        |
+| --- | ------------------------------------------------------------------------------- |
+| 200 | Выдан токен доступа                                                             |
+| 400 | Отсутствуют обязательные параметры                                              |
+| 401 | Предоставлены недействительные учётные данные, токен MFA или продлеваемый токен |
 
 null
 
 ### /oapi/v1/query_log
 
 #### DELETE
-##### Summary:
 
-Clears query log
+##### Summary
 
-##### Responses
+Очищает журнал запросов
 
-| Code | Описание              |
-| ---- | --------------------- |
-| 202  | Query log was cleared |
+##### Ответы
+
+| Код | Описание                   |
+| --- | -------------------------- |
+| 202 | Журнал запросов был очищен |
 
 #### GET
-##### Summary:
 
-Gets query log
+##### Summary
 
-##### Parameters
+Получает журнал запросов
 
-| Name               | Located in | Описание                                                                   | Required | Schema                                              |
-| ------------------ | ---------- | -------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)                                      | Yes      | long                                                |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)                                        | Yes      | long                                                |
-| devices            | query      | Filter by devices                                                          | No       | [ string ]                                          |
-| countries          | query      | Filter by countries                                                        | No       | [ string ]                                          |
-| companies          | query      | Filter by companies                                                        | No       | [ string ]                                          |
-| statuses           | query      | Filter by statuses                                                         | No       | [ [FilteringActionStatus](#FilteringActionStatus) ] |
-| categories         | query      | Filter by categories                                                       | No       | [ [CategoryType](#CategoryType) ]                   |
-| search             | query      | Filter by domain name                                                      | No       | string                                              |
-| limit              | query      | Limit the number of records to be returned                                 | No       | integer                                             |
-| cursor             | query      | Pagination cursor. Use cursor from response to paginate through the pages. | No       | string                                              |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                                                     | Обязательно | Схема                                               |
+| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно)                                      | Да          | long                                                |
+| time_to_millis   | query        | Время до в миллисекундах (включительно)                                      | Да          | long                                                |
+| devices            | query        | Фильтровать по устройствам                                                   | Нет         | [ string ]                                          |
+| countries          | query        | Фильтровать по странам                                                       | Нет         | [ string ]                                          |
+| companies          | query        | Фильтровать по компаниям                                                     | Нет         | [ string ]                                          |
+| statuses           | query        | Фильтровать по статусам                                                      | Нет         | [ [FilteringActionStatus](#FilteringActionStatus) ] |
+| categories         | query        | Фильтровать по категориям                                                    | Нет         | [ [CategoryType](#CategoryType) ]                   |
+| search             | query        | Фильтровать по доменному имени                                               | Нет         | string                                              |
+| limit              | query        | Ограничить количество возвращаемых записей                                   | Нет         | integer                                             |
+| cursor             | query        | Курсорная пагинация. Используйте курсор из ответа для разбивки по страницам. | Нет         | string                                              |
 
-| Code | Описание  |
-| ---- | --------- |
-| 200  | Query log |
+##### Ответы
+
+| Код | Описание        |
+| --- | --------------- |
+| 200 | Журнал запросов |
 
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Summary:
 
-Revokes a Refresh Token
+##### Summary
 
-##### Parameters
+Отзывает продлеваемый токен
 
-| Name          | Located in | Описание      | Required | Schema |
-| ------------- | ---------- | ------------- | -------- | ------ |
-| refresh_token | query      | Refresh Token | Yes      | string |
+##### Параметры
 
-##### Responses
+| Имя           | Расположен в | Описание           | Обязательно | Схема  |
+| ------------- | ------------ | ------------------ | ----------- | ------ |
+| refresh_token | query        | Продлеваемый токен | Да          | string |
 
-| Code | Описание              |
-| ---- | --------------------- |
-| 200  | Refresh token revoked |
+##### Ответы
+
+| Код | Описание                   |
+| --- | -------------------------- |
+| 200 | Продлеваемый токен отозван |
 
 null
 
 ### /oapi/v1/stats/categories
 
 #### GET
-##### Summary:
 
-Gets categories statistics
+##### Summary
 
-##### Parameters
+Получает статистику категорий
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                       |
-| ---- | ------------------------------ |
-| 200  | Categories statistics received |
-| 400  | Validation failed              |
+##### Ответы
+
+| Код | Описание                          |
+| --- | --------------------------------- |
+| 200 | Получена статистика по категориям |
+| 400 | Ошибка проверки                   |
 
 ### /oapi/v1/stats/companies
 
 #### GET
-##### Summary:
 
-Gets companies statistics
+##### Summary
 
-##### Parameters
+Получает статистику компаний
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                      |
-| ---- | ----------------------------- |
-| 200  | Companies statistics received |
-| 400  | Validation failed             |
+##### Ответы
+
+| Код | Описание                         |
+| --- | -------------------------------- |
+| 200 | Получена статистика по компаниям |
+| 400 | Ошибка проверки                  |
 
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
-##### Summary:
 
-Gets detailed companies statistics
+##### Summary
 
-##### Parameters
+Получает подробную статистику компаний
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
-| cursor             | query      | Pagination cursor                     | No       | string     |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
+| cursor             | query        | Курсорная пагинация                     | Нет         | string     |
 
-| Code | Описание                               |
-| ---- | -------------------------------------- |
-| 200  | Detailed companies statistics received |
-| 400  | Validation failed                      |
+##### Ответы
+
+| Код | Описание                                   |
+| --- | ------------------------------------------ |
+| 200 | Получена подробная статистика по компаниям |
+| 400 | Ошибка проверки                            |
 
 ### /oapi/v1/stats/countries
 
 #### GET
-##### Summary:
 
-Gets countries statistics
+##### Summary
 
-##### Parameters
+Получает статистику по странам
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                      |
-| ---- | ----------------------------- |
-| 200  | Countries statistics received |
-| 400  | Validation failed             |
+##### Ответы
+
+| Код | Описание                       |
+| --- | ------------------------------ |
+| 200 | Получена статистика по странам |
+| 400 | Ошибка проверки                |
 
 ### /oapi/v1/stats/devices
 
 #### GET
-##### Summary:
 
-Gets devices statistics
+##### Summary
 
-##### Parameters
+Получает статистику по устройствам
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                    |
-| ---- | --------------------------- |
-| 200  | Devices statistics received |
-| 400  | Validation failed           |
+##### Ответы
+
+| Код | Описание                           |
+| --- | ---------------------------------- |
+| 200 | Получена статистика по устройствам |
+| 400 | Ошибка проверки                    |
 
 ### /oapi/v1/stats/domains
 
 #### GET
-##### Summary:
 
-Gets domains statistics
+##### Summary
 
-##### Parameters
+Получает статистику по доменам
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                    |
-| ---- | --------------------------- |
-| 200  | Domains statistics received |
-| 400  | Validation failed           |
+##### Ответы
+
+| Код | Описание                       |
+| --- | ------------------------------ |
+| 200 | Получена статистика по доменам |
+| 400 | Ошибка проверки                |
 
 ### /oapi/v1/stats/time
 
 #### GET
-##### Summary:
 
-Gets time statistics
+##### Summary
 
-##### Parameters
+Получает статистику по времени
 
-| Name               | Located in | Описание                              | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+##### Параметры
 
-##### Responses
+| Имя                | Расположен в | Описание                                | Обязательно | Схема      |
+| ------------------ | ------------ | --------------------------------------- | ----------- | ---------- |
+| time_from_millis | query        | Время от в миллисекундах (включительно) | Да          | long       |
+| time_to_millis   | query        | Время до в миллисекундах (включительно) | Да          | long       |
+| devices            | query        | Фильтровать по устройствам              | Нет         | [ string ] |
+| countries          | query        | Фильтровать по странам                  | Нет         | [ string ] |
 
-| Code | Описание                 |
-| ---- | ------------------------ |
-| 200  | Time statistics received |
-| 400  | Validation failed        |
+##### Ответы
+
+| Код | Описание                       |
+| --- | ------------------------------ |
+| 200 | Получена статистика по времени |
+| 400 | Ошибка проверки                |
 
 ### /oapi/v1/web_services
 
 #### GET
-##### Summary:
 
-Lists web services
+##### Summary
 
-##### Responses
+Перечисляет веб-службы
 
-| Code | Описание             |
-| ---- | -------------------- |
-| 200  | List of web-services |
+##### Ответы
+
+| Код | Описание         |
+| --- | ---------------- |
+| 200 | Список веб-служб |

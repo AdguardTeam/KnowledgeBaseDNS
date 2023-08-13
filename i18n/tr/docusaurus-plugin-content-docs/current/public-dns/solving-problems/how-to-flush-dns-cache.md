@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+Here we explain how you can flush the DNS cache to resolve public DNS issues. Şifrelenmiş olanlar da dahil olmak üzere DNS sunucularını kurmak için AdGuard Reklam Engelleyiciyi kullanabilirsiniz
 
 Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
 
@@ -13,16 +13,16 @@ Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto
 
 ## DNS önbelleği nedir?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS önbelleği, ziyaret edilen sitelerin IP adreslerini yerel bilgisayarda depolar, böylece bir dahaki sefere daha hızlı yüklenirler. Uzun bir DNS araması yapmak yerine sistem, sorguları geçici DNS önbelleğindeki DNS kayıtlarıyla yanıtlar.
 
 The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
-* **Kaynak verileri (veya rdata)**;
-* **Kayıt türü**;
-* **Kayıt adı**;
-* **TTL (kullanım süresi)**;
-* **Sınıf**;
-* **Kaynak veri uzunluğu**.
+- **Kaynak verileri (veya rdata)**;
+- **Kayıt türü**;
+- **Kayıt adı**;
+- **TTL (kullanım süresi)**;
+- **Sınıf**;
+- **Kaynak veri uzunluğu**.
 
 ## Önbelleği temizlemeniz gerektiğinde
 
@@ -42,102 +42,110 @@ En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya 
 
 Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Genel* öğesini açın, aşağı kaydırın, *Sıfırla* öğesini bulun ve *Ağ Ayarlarını Sıfırla* öğesine dokunun.
 
-> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
-Android cihazınızda DNS önbelleğinizi temizlemenin en kolay yolu Uçak modunu açıp kapatmaktır. Uçak Modunu Hızlı Ayarlar bölmesinde etkinleştirebilir veya devre dışı bırakabilirsiniz.
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
 
-Zorla yeniden başlatmak da, cihazınız için DNS önbelleğini temizlemeye de yardımcı olabilir. Bunu yapmak için güç düğmesini en az 20 saniye basılı tutun. (Genellikle) cihazınızı elle yeniden başlatmaya zorlar ve DNS önbelleği temizlenir.
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Ayarlar > Sistem > Gelişmiş > Seçenekleri sıfırla > Ağ ayarlarını sıfırla* öğesini açın ve onaylamak için *Ayarları Sıfırla* öğesine dokunun.
+Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Not: Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
-MacOS'ta DNS önbelleğini temizlemek için Terminal'i açın (Spotlight aramasını kullanarak bulabilirsiniz - bunu yapmak için Komut+Boşluk tuşlarına basın ve *Terminal*yazın) ve aşağıdaki komutu girin:
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-macOS Big Sur 11.2.0 ve macOS Monterey 12.0.0'da şu komutu da kullanabilirsiniz:
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-Bundan sonra, işlemi tamamlamak için yönetici parolanızı girin.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-Windows cihazınızda DNS önbelleğini temizlemek için aşağıdakileri yapın:
+To flush DNS cache on your Windows device, do the following:
 
-Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig/flushdns` yazın ve Enter'a basın.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
-*DNS Çözümleyici Önbelleği başarıyla temizlendi* satırını göreceksiniz. Tamamlandı!
+You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux, systemd-resolved, DNSMasq, BIND veya Nscd gibi bir önbellekleme hizmeti kurulu ve çalışıyor olmadığı sürece işletim sistemi düzeyinde DNS önbelleğine sahip değildir. DNS önbelleğini temizleme işlemi Linux dağıtımına ve kullanılan önbellekleme hizmetine bağlıdır.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-Her dağıtım için bir terminal penceresi başlatmanız gerekir. Klavyenizde Ctrl+Alt+T tuşlarına basın ve Linux sisteminizin çalıştırdığı hizmetin DNS önbelleğini temizlemek için ilgili komutu kullanın.
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-Hangi DNS çözümleyicisini kullandığınızı öğrenmek için `sudo lsof -i :53 -S` komutunu yazın.
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-**systemd-resolved** DNS önbelleğini temizlemek için şunu yazın:
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-Başarılı olduğunda, komut herhangi bir mesaj döndürmez.
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
-**DNSMasq** önbelleğini temizlemek için yeniden başlatmanız gerekir:
+To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-**NSCD** önbelleğini temizlemek için hizmeti yeniden başlatmanız da gerekir:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
 #### BIND
 
-**BIND** DNS önbelleğini temizlemek için şu komutu çalıştırın:
+To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-Ardından BIND'i yeniden yüklemeniz gerekir:
+Then you will need to reload BIND:
 
 `rndc reload`
 
-Sunucunun başarıyla yeniden yüklendiği mesajını alırsınız.
+You will get the message that the server has been successfully reloaded.
 
 ## Chrome'da DNS önbelleği nasıl temizlenir
 
 This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-1. Chrome ayarlarında **güvenli DNS** devre dışı bırakın
+1. Chrome ayarlarında **güvenli DNS** öğesini devre dışı bırakın
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Disable **Async DNS resolver**
+1. **Async DNS resolver** öğesini devre dışı bırakın
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Buradaki iki düğmeye de basın
+1. Buradaki iki düğmeye de basın
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Press **Clear host cache**
+1. **Clear host cache** öğesine basın
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

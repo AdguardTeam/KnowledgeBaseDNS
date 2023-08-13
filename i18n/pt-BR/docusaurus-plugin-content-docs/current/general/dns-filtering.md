@@ -42,6 +42,7 @@ Outros provedores de DNS podem funcionar de maneira diferente, portanto, aprenda
 ### Listas de bloqueio de DNS locais
 
 Mas, ao confiar apenas nos servidores DNS para filtrar seu tráfego DNS, você perde toda a flexibilidade. Se o servidor selecionado bloquear um domínio, você não poderá acessá-lo. Com o AdGuard, você nem precisa configurar um servidor DNS específico para filtrar o tráfego DNS. Todos os produtos AdGuard permitem que você empregue listas de bloqueio de DNS, sejam arquivos de hosts simples ou listas que usam [sintaxe mais avançada](dns-filtering-syntax.md). Eles funcionam de maneira semelhante às listas de bloqueio regulares: quando uma solicitação de DNS corresponde a uma das regras na lista de filtros ativos, ela é bloqueada. Para ser mais preciso, ele é redirecionado para um "buraco negro".
+
 > No AdGuard para iOS, primeiro você deve ativar o "Modo avançado" nas configurações para obter acesso ao bloqueio de DNS.
 
 Você pode adicionar quantas listas de bloqueio personalizadas desejar. Por exemplo, você pode usar [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). Ele literalmente bloqueia tudo o que o servidor DNS AdGuard faz, mas neste caso você está livre para usar qualquer outro servidor DNS. Além disso, dessa forma, você pode adicionar mais filtros ou criar regras de exceção personalizadas, o que seria impossível com uma configuração simples de "usar um servidor DNS de bloqueio".
@@ -56,15 +57,15 @@ Em primeiro lugar, temos que mencionar que com o AdGuard você não precisa esco
 **Prós da filtragem de DNS:**
 
 1. Em algumas plataformas, essa é a única maneira de obter filtragem em todo o sistema. Por exemplo, no iOS apenas o navegador Safari suporta bloqueio de conteúdo no sentido familiar, para todo o resto há apenas filtragem de DNS.
-2. Algumas formas de rastreamento (como [rastreamento CNAME-cloaked](https://adguard.com/blog/cname-tracking.html)) só podem ser tratadas pela filtragem de DNS.
-3. O estágio de processamento de uma solicitação de DNS é o mais cedo possível para lidar com um anúncio ou um rastreador, o que ajuda a economizar um pouco da vida útil da bateria e do tráfego.
+1. Algumas formas de rastreamento (como [rastreamento CNAME-cloaked](https://adguard.com/blog/cname-tracking.html)) só podem ser tratadas pela filtragem de DNS.
+1. O estágio de processamento de uma solicitação de DNS é o mais cedo possível para lidar com um anúncio ou um rastreador, o que ajuda a economizar um pouco da vida útil da bateria e do tráfego.
 
 **Contras da filtragem de DNS:**
 
-1. A filtragem de DNS é "áspera", o que significa que não removerá os espaços em branco deixados para trás de um anúncio bloqueado ou aplicará qualquer tipo de filtragem cosmética. Muitos dos anúncios mais complicados não podem ser bloqueados no nível do DNS (ou melhor, podem, mas apenas bloqueando todos os domínios que estão sendo usados para outros fins).
+1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
-![Exemplo de diferença](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Um exemplo de diferença entre filtragem de DNS e filtragem de rede*
+    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 
-2. Não é possível saber a origem de uma solicitação de DNS, o que significa que você não pode distinguir entre diferentes aplicativos no nível do DNS. Isso prejudica as estatísticas e impossibilita a criação de regras de filtragem específicas do aplicativo.
+1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
 
-Recomendamos usar a filtragem de DNS além da filtragem de rede, não em vez dela, sempre que possível.
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

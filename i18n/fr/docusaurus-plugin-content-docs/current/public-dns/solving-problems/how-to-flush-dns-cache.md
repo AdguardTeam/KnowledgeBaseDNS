@@ -17,12 +17,12 @@ Le cache DNS stocke les adresses IP des sites visités sur l'ordinateur local po
 
 Le cache DNS contient ce qu'on appelle les [enregistrements de ressource (RR)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), qui sont :
 
-* **Données ressources (ou rdata)**;
-* **Type d'enregistrement**;
-* **Nom d'enregistrement**;
-* **TTL (durée de vie)**;
-* **Classe**;
-* **Longueur des données de la ressource**.
+- **Données ressources (ou rdata)**;
+- **Type d'enregistrement**;
+- **Nom d'enregistrement**;
+- **TTL (durée de vie)**;
+- **Classe**;
+- **Longueur des données de la ressource**.
 
 ## Quand peut-il s'avérer nécessaire de vider le cache
 
@@ -42,102 +42,110 @@ Le plus simple est d'activer le mode Avion (par exemple, dans le Centre de contr
 
 Une autre option consiste à réinitialiser les paramètres réseau de votre appareil dans l'application Paramètres. Ouvrez *Général*, faites défiler vers le bas, recherchez *Réinitialiser* et appuyez sur *Réinitialiser les paramètres réseau*.
 
-> Remarque : en procédant ainsi, vous perdrez les connexions aux routeurs Wi-Fi et d'autres paramètres réseau spécifiques, y compris les personnalisations des serveurs DNS. Vous devrez les réinitialiser manuellement.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
-Le moyen le plus simple de vider votre cache DNS sur votre appareil Android consiste à activer et désactiver le mode Avion. Vous pouvez activer/désactiver le mode Avion dans le volet Paramètres rapides.
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
 
-Un redémarrage complet peut également aider à vider le cache DNS de votre appareil. Pour cela, maintenez le bouton d'alimentation enfoncé pendant au moins 20 secondes. Cela obligera (généralement) votre appareil à redémarrer manuellement et le cache DNS sera effacé.
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Une autre option consiste à réinitialiser les paramètres réseau de votre appareil dans l'application Paramètres. Ouvrez *Paramètres > Système > Avancé > Options de réinitialisation > Réinitialiser les paramètres réseau* et appuyez sur *Réinitialiser les paramètres* pour confirmer.
+Une autre option consiste à réinitialiser les paramètres réseau de votre appareil dans l'application Paramètres. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Remarque : en procédant ainsi, vous perdrez les connexions aux routeurs Wi-Fi et d'autres paramètres réseau spécifiques, y compris les personnalisations des serveurs DNS. Vous devrez les réinitialiser manuellement.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
-Pour vider le cache DNS sur macOS, ouvrez le Terminal (vous pouvez le trouver en utilisant la recherche Spotlight — pour ça, appuyez sur Commande+Espace et tapez *Terminal*) et saisissez la commande suivante :
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-Sur macOS Big Sur 11.2.0 et macOS Monterey 12.0.0, vous pouvez également utiliser cette commande :
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-Ensuite, entrez votre mot de passe d'administrateur pour terminer le processus.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-Pour vider le cache DNS sur votre appareil Windows, procédez comme suit :
+To flush DNS cache on your Windows device, do the following:
 
-Ouvrez l'invite de commande en tant qu'administrateur. Vous pouvez le trouver dans le menu de départ en tapant *invite de commande* ou *cmd*. Tapez ensuite `ipconfig/flushdns` et appuyez la touche Entrée.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
-Vous verrez la ligne *Le cache du résolveur DNS a été vidé*. C'est fait !
+You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux ne dispose pas de cache DNS au niveau du système d'exploitation, à moins qu'un service de cache tel que systemd-resolved, DNSMasq, BIND ou Nscd soit installé et fonctionne. Le processus d'effacement du cache DNS dépend de la distribution Linux et du service de cache utilisé.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-Pour chaque distribution, vous devez démarrer une fenêtre de terminal. Appuyez sur Ctrl + Alt + T sur votre clavier et utilisez la commande correspondante pour effacer le cache DNS du service exécuté par votre système Linux.
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-Pour savoir quel résolveur DNS vous utilisez, commandez `sudo lsof -i :53 -S`.
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-Pour effacer le cache DNS **systemd-resolved** , tapez :
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-En cas de succès, la commande ne renvoie aucun message.
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
-Pour vider le cache **DNSMasq** , vous devez le redémarrer :
+To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-Pour vider le cache **NSCD** , vous devez également redémarrer le service :
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
 #### BIND
 
-Pour vider le cache DNS **BIND** , exécutez la commande :
+To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-Ensuite, vous devrez recharger BIND :
+Then you will need to reload BIND:
 
 `rndc reload`
 
-Vous recevrez le message indiquant que le serveur a été rechargé avec succès.
+You will get the message that the server has been successfully reloaded.
 
 ## Comment vider le cache DNS dans Chrome
 
-Cela peut être utile si vous ne souhaitez pas redémarrer un navigateur à chaque fois lorsque vous travaillez avec le DNS privé AdGuard ou AdGuard Home. Les réglages 1-2 ne doivent être modifiés qu'une seule fois.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-1. Désactivez **DNS sécurisé** dans les paramètres de Chrome
+1. Disable **secure DNS** in Chrome settings
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Désactivez **Résolveur DNS asynchrone**
+1. Disable **Async DNS resolver**
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Appuyez sur les deux boutons ici
+1. Press both buttons here
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Appuyez sur **Effacer le cache de l'hôte**
+1. Press **Clear host cache**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

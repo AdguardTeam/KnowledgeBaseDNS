@@ -19,29 +19,29 @@ Syntaxi pravidel filtrování AdGuard DNS můžete použít k tomu, aby byla pra
 
 Existují tři různé přístupy k psaní hostitelských seznamů zakázaných:
 
-* [Syntaxe ve stylu Adblock](#adblock-style-syntax): moderní přístup k psaní pravidel filtrování založený na použití podmnožiny syntaxe pravidel ve stylu Adblock. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
+- [Syntaxe ve stylu Adblock](#adblock-style-syntax): moderní přístup k psaní pravidel filtrování založený na použití podmnožiny syntaxe pravidel ve stylu Adblock. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
 
-* [`/etc/hosts` syntaxe](#etc-hosts-syntax): starý a osvědčený přístup, který používá stejnou syntaxi, jakou používají operační systémy pro své funkce hostitelských souborů.
+- [`/etc/hosts` syntaxe](#etc-hosts-syntax): starý a osvědčený přístup, který používá stejnou syntaxi, jakou používají operační systémy pro své funkce hostitelských souborů.
 
-* [Syntaxe pouze pro domény](#domains-only-syntax): jednoduchý seznam doménových názvů.
+- [Syntaxe pouze pro domény](#domains-only-syntax): jednoduchý seznam doménových názvů.
 
 Pokud vytváříte seznam zakázaných, doporučujeme použít [syntaxi ve stylu Adblock](#adblock-style-syntax). Oproti staré syntaxi má několik důležitých výhod:
 
-* **Velikost seznamu zakázaných.** Použití porovnávání vzorů umožňuje mít jediné pravidlo namísto stovek záznamů `/etc/hosts`.
+- **Velikost seznamu zakázaných.** Použití porovnávání vzorů umožňuje mít jediné pravidlo namísto stovek záznamů `/etc/hosts`.
 
-* **Kompatibilita.** Váš seznam zakázaných bude kompatibilní s blokátory reklam v prohlížeči a bude snazší sdílet pravidla se seznamem filtrů prohlížeče.
+- **Kompatibilita.** Váš seznam zakázaných bude kompatibilní s blokátory reklam v prohlížeči a bude snazší sdílet pravidla se seznamem filtrů prohlížeče.
 
-* **Rozšiřitelnost.** Za posledních deset let se syntaxe ve stylu Adblock značně vyvinula a nevidíme důvod, proč bychom ji nemohli ještě více rozšířit a poskytnout další funkce pro blokátory napříč celou sítí.
+- **Rozšiřitelnost.** Za posledních deset let se syntaxe ve stylu Adblock značně vyvinula a nevidíme důvod, proč bychom ji nemohli ještě více rozšířit a poskytnout další funkce pro blokátory napříč celou sítí.
 
 Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. Nazýváme jej [Překladač seznamu hostitelů][hlc] a sami jej použijeme k vytvoření [filtru AdGuard DNS][sdn].
 
 ## Základní příklady
 
-* `||example.org^`: blokuje přístup k doméně `example.org` a jejím subdoménám jako `www.example.org`.
+- `||example.org^`: blokuje přístup k doméně `example.org` a jejím subdoménám jako `www.example.org`.
 
-* `@@||example.org^`: odblokuje přístup k doméně `example.org` a jejím subdoménám.
+- `@@||example.org^`: odblokuje přístup k doméně `example.org` a jejím subdoménám.
 
-* `1.2.3.4 example.org`: (pozor, starý styl syntaxe `/etc/hosts`) v AdGuard Home, odezva s `1.2.3.4` do dotazu domény `example.org`, ale **ne** jejích subdomén. V soukromém AdGuard DNS blokuje přístup k `example.org`. Doména `www.example.org` zůstává povolena.
+- `1.2.3.4 example.org`: (pozor, starý styl syntaxe `/etc/hosts`) v AdGuard Home, odezva s `1.2.3.4` do dotazu domény `example.org`, ale **ne** jejích subdomén. V soukromém AdGuard DNS blokuje přístup k `example.org`. Doména `www.example.org` zůstává povolena.
 
   V AdGuard Home je použití nespecifikované IP adresy (`0.0.0.0`) nebo místní adresy (`127.0.0.1` a pod.) pro hostitele v podstatě stejné jako zablokování tohoto hostitele.
 
@@ -52,11 +52,11 @@ Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů fi
   0.0.0.0 example.org
   ```
 
-* `example.org`: jednoduché pravidlo domény. Blokuje doménu `example.org`, ale **ne** její subdomény. Doména `www.example.org` zůstává povolena.
+- `example.org`: jednoduché pravidlo domény. Blokuje doménu `example.org`, ale **ne** její subdomény. Doména `www.example.org` zůstává povolena.
 
-* `! Zde je komentář` a `# Také komentář`: komentáře.
+- `! Zde je komentář` a `# Také komentář`: komentáře.
 
-* `/REGEX/`: blokuje přístup doménám, které vyhovují regulárnímu výrazu.
+- `/REGEX/`: blokuje přístup doménám, které vyhovují regulárnímu výrazu.
 
 ## Syntaxe ve stylu Adblock
 
@@ -67,21 +67,21 @@ Toto je podmnožina [tradiční syntaxe ve stylu Adblock][adb], kterou používa
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* `pattern`: maska názvu hostitele. Každý název hostitele se shoduje s touto maskou. Vzor může obsahovat také speciální znaky, které jsou popsány níže.
+- `pattern`: maska názvu hostitele. Každý název hostitele se shoduje s touto maskou. Vzor může obsahovat také speciální znaky, které jsou popsány níže.
 
-* `@@`: značka, která se používá v pravidlech pro výjimky. Pokud chcete vypnout filtrování odpovídajících názvů hostitele, začněte pravidlo touto značkou.
+- `@@`: značka, která se používá v pravidlech pro výjimky. Pokud chcete vypnout filtrování odpovídajících názvů hostitele, začněte pravidlo touto značkou.
 
-* `modifiers`: parametry, které toto pravidlo upřesňují. Mohou omezit oblast působnosti pravidla nebo dokonce zcela změnit jeho fungování.
+- `modifiers`: parametry, které toto pravidlo upřesňují. Mohou omezit oblast působnosti pravidla nebo dokonce zcela změnit jeho fungování.
 
 ### Speciální znaky
 
-* `*`: zástupný znak. Používá se k reprezentaci libovolné sady znaků. Může to být také prázdný řetězec nebo řetězec libovolné délky.
+- `*`: zástupný znak. Používá se k reprezentaci libovolné sady znaků. Může to být také prázdný řetězec nebo řetězec libovolné délky.
 
-* `||`: odpovídá začátku názvu hostitele včetně subdomény. Např. `||example.org` odpovídá `example.org` a `test.example.org`, ale ne `testexample.org`.
+- `||`: odpovídá začátku názvu hostitele včetně subdomény. Např. `||example.org` odpovídá `example.org` a `test.example.org`, ale ne `testexample.org`.
 
-* `^`: oddělovací znak. Na rozdíl od blokování reklam v prohlížeči není v názvu hostitele nic odděleno, takže jediný účel tohoto znaku je označit konec názvu hostitele.
+- `^`: oddělovací znak. Na rozdíl od blokování reklam v prohlížeči není v názvu hostitele nic odděleno, takže jediný účel tohoto znaku je označit konec názvu hostitele.
 
-* `|`: ukazatel na začátku nebo konci názvu hostitele. Hodnota závisí na umístění znaku v masce. Např. pravidlo `ample.org|` odpovídá `example.org`, ale ne `example.org.com`. `|example` odpovídá `example.org`, ale ne `test.example`.
+- `|`: ukazatel na začátku nebo konci názvu hostitele. Hodnota závisí na umístění znaku v masce. Např. pravidlo `ample.org|` odpovídá `example.org`, ale ne `example.org.com`. `|example` odpovídá `example.org`, ale ne `test.example`.
 
 ### Regulární výrazy
 
@@ -93,9 +93,9 @@ pattern = "/" regexp "/"
 
 **Příklady:**
 
-* `/example.*/` zablokuje hostitele odpovídající `example.*` regexp.
+- `/example.*/` zablokuje hostitele odpovídající `example.*` regexp.
 
-* `@@/example.*/$important` odblokuje hostitele odpivídající `example.*` regexp. Všimněte si, že toto pravidlo také zahrnuje modifikátor `important`.
+- `@@/example.*/$important` odblokuje hostitele odpivídající `example.*` regexp. Všimněte si, že toto pravidlo také zahrnuje modifikátor `important`.
 
 ### Komentáře
 
@@ -114,12 +114,12 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
 
 **Příklady:**
 
-* ```none ||example.org^$important
+- ```none ||example.org^$important
    ```
 
   `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `important` je modifikátor.
 
-* V pravidle můžete použít více modifikátorů. V takovém případě je oddělte čárkami:
+- V pravidle můžete použít více modifikátorů. V takovém případě je oddělte čárkami:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -133,9 +133,9 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
 
 Modifikátor `client` umožňuje specifikovat klienty, na které se toto pravidlo vztahuje. Existují dva hlavní způsoby identifikace klienta:
 
-* Podle jejich IP adresy nebo prefixu CIDR. Tento způsob funguje pro všechny typy klientů.
+- Podle jejich IP adresy nebo prefixu CIDR. Tento způsob funguje pro všechny typy klientů.
 
-* Podle jejich názvu. Tento způsob funguje pouze pro trvalé klienty (v AdGuard Home) a zařízení (v soukromý AdGuard DNS), které jste přidali ručně.
+- Podle jejich názvu. Tento způsob funguje pouze pro trvalé klienty (v AdGuard Home) a zařízení (v soukromý AdGuard DNS), které jste přidali ručně.
 
   **POZNÁMKA:** v AdGuard Home nejsou v současné době podporovány identifikátory klientů, ale pouze názvy. Pokud jste přidali klienta s názvem “My Client“ a identifikátor klienta `my-client`, zapište modifikátor jako `$client= 'My Client'` na rozdíl od `$client= my-client`.
 
@@ -157,15 +157,15 @@ Názvy klientů obvykle obsahují mezery nebo jiné speciální znaky, proto bys
 
 **Příklady:**
 
-* `@@||*^$client=127.0.0.1`: odblokuje vše pro místního hostitele.
+- `@@||*^$client=127.0.0.1`: odblokuje vše pro místního hostitele.
 
-* `||example.org^$client='Frank\'s laptop'`: zablokuje doménu `example.org` pouze pro klienta s názvem `Frank's laptop`. Všimněte si, že uvozovka (`'`) v názvu musí být vynechána ze závorek.
+- `||example.org^$client='Frank\'s laptop'`: zablokuje doménu `example.org` pouze pro klienta s názvem `Frank's laptop`. Všimněte si, že uvozovka (`'`) v názvu musí být vynechána ze závorek.
 
-* `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: zablokuje doménu `example.org` pro všechny kromě klienta s názvem `Mary's, John's, and Boris's laptops`. Všimněte si, že čárka (`,`) v názvu musí být též vynechána ze závorek.
+- `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: zablokuje doménu `example.org` pro všechny kromě klienta s názvem `Mary's, John's, and Boris's laptops`. Všimněte si, že čárka (`,`) v názvu musí být též vynechána ze závorek.
 
-* `||example.org^$client=~Mom|~Dad|Kids`: zablokuje doménu `example.org` pro `Kids`, ale ne pro `Mom` and `Dad`. Tento příklad ukazuje, jak zadat více klientů v jednom pravidle.
+- `||example.org^$client=~Mom|~Dad|Kids`: zablokuje doménu `example.org` pro `Kids`, ale ne pro `Mom` and `Dad`. Tento příklad ukazuje, jak zadat více klientů v jednom pravidle.
 
-* `||example.org^$client=192.168.0.0/24`: zablokuje doménu `example.org` pro všechny klienty s IP adresami v rozsahu od `192.168.0.0` do `192.168.0.255`.
+- `||example.org^$client=192.168.0.0/24`: zablokuje doménu `example.org` pro všechny klienty s IP adresami v rozsahu od `192.168.0.0` do `192.168.0.255`.
 
 #### `denyallow`
 
@@ -196,11 +196,11 @@ Problém tohoto přístupu spočívá v tom, že tímto způsobem odblokujete ta
 
 **Příklady:**
 
-* `*$denyallow=com|net`: zablokovat vše kromě `*.com` a `*.net`.
+- `*$denyallow=com|net`: zablokovat vše kromě `*.com` a `*.net`.
 
-* `@@*$denyallow=com|net`: odblokovat vše kromě `*.com` a `*.net`.
+- `@@*$denyallow=com|net`: odblokovat vše kromě `*.com` a `*.net`.
 
-* `||example.org^$denyallow=sub.example.org`. zablokuje `example.org` a `*.example.org`, ale nezablokuje `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`. zablokuje `example.org` a `*.example.org`, ale nezablokuje `sub.example.org`.
 
 #### `dnstype`
 
@@ -229,9 +229,9 @@ $dnstype=value2
 
 **Příklady:**
 
-* `||example.org^$dnstype=AAAA`: blokuje DNS dotazy pro adresy IPv6 domény `example.org`.
+- `||example.org^$dnstype=AAAA`: blokuje DNS dotazy pro adresy IPv6 domény `example.org`.
 
-* `||example.org^$dnstype=~A|~CNAME`: povoluje pouze `A` a `CNAME` DNS dotazů pro `example.org` zablokuje zbytek.
+- `||example.org^$dnstype=~A|~CNAME`: povoluje pouze `A` a `CNAME` DNS dotazů pro `example.org` zablokuje zbytek.
 
 **POZNÁMKA:** před verzí **v0.108.0** by AdGuard Home k filtrování záznamů odpovědi použil typ požadavku, nikoli typ samotného záznamu odpovědi.  To způsobovalo problémy, protože to znamenalo, že nebylo možné napsat pravidla, která by v odpovědích na požadavky `A` a `AAAA` povolila určité záznamy `CNAME`. Ve verzi **v0.108.0** bylo toto chování změněno, takže nyní je to:
 
@@ -290,14 +290,14 @@ Modifikátor `$dnsrewrite` s kódem odezvy `NOERROR` může mít také prázdná
 pak bude odezva vypadat asi takto:
 
 ```sh
-$ nslookup example.com my.adguard.local
+nslookup example.com my.adguard.local
 ```
 
 ```none
-Server:     my.adguard.local
-Adresa:    127.0.0.1#53
+Server: my.adguard.local
+Address: 127.0.0.1#53
 
-Neautorizovaná odpověď:
+Non-authoritative answer:
 example.com canonical name = example.net.
 Název: example.net
 Adresa: 1.2.3.4
@@ -314,17 +314,17 @@ bude výsledkem odezva se dvěma záznamy `A`.
 
 Aktuálně podporované typy RR s příklady:
 
-* `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` přidá `PTR` záznam pro reverzní DNS. Výsledkem reverzních DNS požadavků na `1.2.3.4` na server DNS bude `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` přidá `PTR` záznam pro reverzní DNS. Výsledkem reverzních DNS požadavků na `1.2.3.4` na server DNS bude `example.net`.
 
   **POZNÁMKA:** IP ADRESA MUSÍ být v opačném pořadí. Viz. [RFC 1035][rfc1035].
 
-* `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` přidá odezvu `A` s hodnotou `1.2.3.4`.
+- `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` přidá odezvu `A` s hodnotou `1.2.3.4`.
 
-* `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` přidá záznam `AAAA` s hodnotou `abcd::1234`.
+- `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` přidá záznam `AAAA` s hodnotou `abcd::1234`.
 
-* `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` přidá záznam `CNAME`. Viz vysvětlení výše.
+- `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` přidá záznam `CNAME`. Viz vysvětlení výše.
 
-* `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` přidá záznam `HTTPS`. Podporována je pouze podmnožina hodnot parametrů: hodnoty musí na sebe `navazovat` a tam, kde se `očekává` `seznam hodnot`, je v současné době podporována pouze jedna hodnota:
+- `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` přidá záznam `HTTPS`. Podporována je pouze podmnožina hodnot parametrů: hodnoty musí na sebe `navazovat` a tam, kde se `očekává` `seznam hodnot`, je v současné době podporována pouze jedna hodnota:
 
    ```none
    ipv4hint=127.0.0.1             // podporováno.
@@ -335,23 +335,23 @@ Aktuálně podporované typy RR s příklady:
 
   To bude v budoucnu změněno.
 
-* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` přidá záznam `MX` s přednostní hodnotou `32` a změní hodnotu `example.mail`.
+- `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` přidá záznam `MX` s přednostní hodnotou `32` a změní hodnotu `example.mail`.
 
-* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` přidá hodnotu `SVCB`. Viz výše uvedený příklad `HTTPS`.
+- `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` přidá hodnotu `SVCB`. Viz výše uvedený příklad `HTTPS`.
 
-* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` přidá záznam `TXT` s hodnotou `hello_world`.
+- `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` přidá záznam `TXT` s hodnotou `hello_world`.
 
-* `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` přidá záznam `SRV` s přednostní hodnotou `10`, hodnota `60`, port `8080`, a cíl hodnoty `example.com`.
+- `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` přidá záznam `SRV` s přednostní hodnotou `10`, hodnota `60`, port `8080`, a cíl hodnoty `example.com`.
 
-* `||example.com^$dnsrewrite=NXDOMAIN;;` odpoví s kódem `NXDOMAIN`.
+- `||example.com^$dnsrewrite=NXDOMAIN;;` odpoví s kódem `NXDOMAIN`.
 
-* `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` odpoví s prázdnou odezvou `NOERROR` pro všechny požadavky `AAAA` mimo jeden pro `example.org`.
+- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` odpoví s prázdnou odezvou `NOERROR` pro všechny požadavky `AAAA` mimo jeden pro `example.org`.
 
 Pravidla výjimek odstraňují jedno nebo všechna pravidla:
 
-* `@@||example.com^$dnsrewrite` odstraní všechna pravidla pro přepis DNS.
+- `@@||example.com^$dnsrewrite` odstraní všechna pravidla pro přepis DNS.
 
-* `@@||example.com^$dnsrewrite=1.2.3.4` odstraní pravidlo pro přepis DNS, které přidá záznam `A` s hodnotou `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` odstraní pravidlo pro přepis DNS, které přidá záznam `A` s hodnotou `1.2.3.4`.
 
 #### `important`
 
@@ -359,7 +359,7 @@ Modifikátor `important` použitý na pravidlo zvyšuje jeho prioritu před jak�
 
 **Příklady:**
 
-* V tomto příkladu:
+- V tomto příkladu:
 
   ```none
   ||example.org^$important
@@ -368,7 +368,7 @@ Modifikátor `important` použitý na pravidlo zvyšuje jeho prioritu před jak�
 
   `||example.org^$important` zablokuje všechny požadavky na doménu `*.example.org` navzdory pravidlu výjimky.
 
-* V tomto příkladu:
+- V tomto příkladu:
 
   ```none
   ||example.org^$important
@@ -383,9 +383,9 @@ Pravidla s modifikátorem `badfilter` vypnou ostatní základní pravidla, na kt
 
 **Příklady:**
 
-* `||example.com$badfilter` zakáže `||example.com`.
+- `||example.com$badfilter` zakáže `||example.com`.
 
-* `@@||example.org^$badfilter` zakáže `@@||example.org^`.
+- `@@||example.org^$badfilter` zakáže `@@||example.org^`.
 
   **POZNÁMKA:** modifikátor `badfilter` v současné době nefunguje s pravidly ve stylu `/etc/hosts`. `127.0.0.1 example.org$badfilter` nezakáže **** původní pravidlo `127.0.0.1 example.org`.
 
@@ -411,42 +411,41 @@ Pokud jedna ze značek klienta odpovídá hodnotám vylučujícím `ctag`, toto 
 
 **Příklady:**
 
-* `||example.org^$ctag=device_pc|device_phone`: zablokuje `example.org` pro klienty označené jako `device_pc` nebo `device_phone`.
+- `||example.org^$ctag=device_pc|device_phone`: zablokuje `example.org` pro klienty označené jako `device_pc` nebo `device_phone`.
 
-* `||example.org^$ctag=~device_phone`: zablokuje `example.org` pro všechny klienty kromě těch, kteří jsou označeni jako `device_phone`.
+- `||example.org^$ctag=~device_phone`: zablokuje `example.org` pro všechny klienty kromě těch, kteří jsou označeni jako `device_phone`.
 
 Seznam povolených značek:
 
-* Podle typu zařízení:
+- Podle typu zařízení:
 
-  * `device_audio`: audio zařízení.
-  * `device_camera`: fotoaparáty.
-  * `device_gameconsole`: herní konzole.
-  * `device_laptop`: notebooky.
-  * `device_nas`: NAS servery (Síťová úložiště).
-  * `device_pc`: stolní počítače.
-  * `device_phone`: telefony.
-  * `device_printer`: tiskárny.
-  * `device_securityalarm`: bezpečnostní alarmy.
-  * `device_tablet`: tablety.
-  * `device_tv`: televizory.
-  * `device_other`: ostatní zařízení.
+    - `device_audio`: audio zařízení.
+    - `device_camera`: fotoaparáty.
+    - `device_gameconsole`: herní konzole.
+    - `device_laptop`: notebooky.
+    - `device_nas`: NAS servery (Síťová úložiště).
+    - `device_pc`: stolní počítače.
+    - `device_phone`: telefony.
+    - `device_printer`: tiskárny.
+    - `device_securityalarm`: bezpečnostní alarmy.
+    - `device_tablet`: tablety.
+    - `device_tv`: televizory.
+    - `device_other`: ostatní zařízení.
 
-* Podle operačního systému:
+- Podle operačního systému:
 
-  * `os_android`: Android.
-  * `os_ios`: iOS.
-  * `os_linux`: Linux.
-  * `os_macos`: macOS.
-  * `os_windows`: Windows.
-  * `os_other`: ostatní operační systémy.
+    - `os_android`: Android.
+    - `os_ios`: iOS.
+    - `os_linux`: Linux.
+    - `os_macos`: macOS.
+    - `os_windows`: Windows.
+    - `os_other`: ostatní operační systémy.
 
-* Podle skupiny uživatelů:
+- Podle skupiny uživatelů:
 
-  * `user_admin`: administrátoři.
-  * `user_regular`: běžní uživatelé.
-  * `user_child`: děti.
-
+    - `user_admin`: administrátoři.
+    - `user_regular`: běžní uživatelé.
+    - `user_child`: děti.
 
 ## Syntaxe stylu `/etc/hosts` {#etc-hosts-syntax}
 
@@ -470,7 +469,6 @@ Hostitelské názvy mohou obsahovat pouze alfanumerické znaky, pomlčky a znam�
 ```
 
 V AdGuard Home se IP adresy používají k odpovědi na DNS dotazy pro tyto domény. V soukromém AdGuard DNS jsou tyto adresy jednoduše blokovány.
-
 
 ## Syntaxe pouze pro domény
 

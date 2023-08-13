@@ -8,30 +8,34 @@ slug: Početna stranica
 
 DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Svaki put kada odete na Web lokaciju, vaš pregledač šalje DNS upit DNS serveru da bi provalio IP adresu Web lokacije. A običan DNS razrešivač jednostavno vraća IP adresu zahtevanog domena.
 
-> Podrazumevani DNS server obično obezbeđuje dobavljač Internet usluga. To znači da dobavljač Internet usluga može da prati vašu aktivnost na mreži i da prodaje evidencije trećim licima.
+:::note
 
-![Uređaj uvek koristi neki DNS server da bi dobio IP adrese aplikacija za ime domena do kojih želite da se krećete](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
 
-There are also DNS servers that can block certain websites at DNS-level. Kako funkcionišu? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+:::
+
+![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+
+There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 
-Sve je ovih dana povezano sa internetom, od TV-a do pametnih sijalica, od mobilnih uređaja do pametnog automobila. A gde je internet, tu su i reklame i tragači. In this case, a browser-based ad blocker has proven insufficient. Da biste dobili bolju zaštitu, koristite DNS u kombinaciji sa VPN i blokatorom reklama.
+Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker has proven insufficient. To get a better protection, use DNS in combination with VPN and ad blocker.
 
-Korišćenje DNS-a za blokiranje sadržaja ima neke prednosti, kao i očigledne nedostatke. S jedne strane, DNS nema slepe tačke pošto posmatra sve uređaje i ne samo pretraživače. Ali, sa druge strane, samo blokiranje DNS-a ne može da obezbedi kozmetičku filtraciju.
+Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
 
 ## What is AdGuard DNS?
 
-AdGuard DNS is one of the most privacy-oriented DNS services on the market. Podržava takve pouzdane protokole za šifriranje kao što su DNS-over-HTTPS, DNS-over-TLS i DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard ima sopstvenu bazu imena domena koja služe reklamama, tragačima i prevarama i redovno se ažurira.
+AdGuard DNS is one of the most privacy-oriented DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
 
-![Približna šema kako AdGuard DNS funkcioniše](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
+![An approximate scheme of how AdGuard DNS works](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
-> Oko 75% AdGuard DNS saobraćaja je šifrovano. This is actually what differentiates content-blocking DNS servers from others. Ako pogledate CloudFlare ili Quad9 statistiku, videćete da je šifrovani DNS samo mali deo svih upita.
+About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content-blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
 
-AdGuard DNS postoji u dva glavna oblika: [javni AdGuard DNS](public-dns/overview.md) i [privatni AdGuard DNS](private-dns/overview.md). Obe ove usluge ne zahtevaju instaliranje aplikacija. One se lako podešavaju i koriste i pružaju korisnicima minimalne funkcije neophodne za blokiranje reklama, praćenja, zlonamernih Veb lokacija i sadržaja za odrasle (ako je potrebno). Ne postoje ograničenja na kojim uređajima mogu da se koriste.
+AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
 
-Uprkos toliko sličnosti, privatni AdGuard DNS i javni AdGuard DNS su dve različite usluge. Njihova glavna razlika je u tome što možete da prilagodite privatni AdGuard DNS, dok javni AdGuard DNS ne možete.
+Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
 
 ## DNS podprogram za filtriranje u AdGuard proizvodima
 
-Svi glavni AdGuard proizvodi, uključujući AdGuard VPN, imaju **DNS podprogram za filtriranje** gde možete izabrati DNS server od strane dobavljača u kojeg imate poverenja. Naravno, AdGuard DNS podrazumevani, AdGuard DNS bez filtriranja i AdGuard DNS porodična zaštita su na listi. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — public or private.
+All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — public or private.

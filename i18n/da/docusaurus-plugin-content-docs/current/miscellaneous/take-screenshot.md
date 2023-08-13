@@ -17,18 +17,18 @@ At tage et skærmfoto på en Android-enhed kan gøres på forskellige måder afh
 
 Generelt kan følgende knapkombination bruges til Android:
 
-+ **Tryk og hold på knapperne *Lydstyrke ned* og *Tænd/Sluk* samtidigt i 1–2 sekunder**
+- **Tryk og hold på knapperne *Lydstyrke ned* og *Tænd/Sluk* samtidigt i 1–2 sekunder**
 
 Android-enheden fotograferer hele skærmen og gemme den som et foto. Skærmfotoet vil nu kunne findes i Screenshots-mappe i Galleri-appen.
 
 Proceduren kan dog, som allerede nævnt, variere afhængigt af den pågældende enhed. Lad os se på andre kombinationsmuligheder:
 
-+ **Tryk og hold på knapperne *Hjem* og *Tænd/Sluk* samtidigt i 1–2 sekunder;**
-+ **Tryk og hold på knapperne *Tilbage* og *Hjem* samtidigt**
+- **Tryk og hold på knapperne *Hjem* og *Tænd/Sluk* samtidigt i 1–2 sekunder;**
+- **Tryk og hold på knapperne *Tilbage* og *Hjem* samtidigt**
 
 I Android 8 og senere kan et skærmfoto også tages ved at placere kanten af en åben hånd lodret langs venstre/højre skærmkant og stryge hånden til den anden skærmkant, mens skærmen berøres med håndkanten.
 
-Fungerer fremgangsmåden ikke, så tjek *Indstillinger* > *Avancerede* funktioner for at aktivere *Stryg håndkant for skærmfoto*.
+If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
 
 Desuden kan der altid bruges særlige apps til at tage skærmfotos på enheder, f.eks. *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* mv.
 
@@ -38,17 +38,17 @@ Enhver iOS-enhed (bortset fra gamle) muliggør at tage skærmfotos vha. standard
 
 For at tage et skærmfoto på en iOS-enhed, så brug flg. kombination:
 
-+ **Tryk på knapperne *Sov/Vågn* (sideknap) og *Hjem* samtidigt, og slip dem derefter hurtigt**
+- **Tryk på knapperne *Sov/Vågn* (sideknap) og *Hjem* samtidigt, og slip dem derefter hurtigt**
 
 og denne til iPhone X eller senere:
 
-+ **Tryk på knapperne *Sov/Vågn* og *Lydstyrke op* samtidigt, og slip dem derefter hurtigt**
+- **Tryk på knapperne *Sov/Vågn* og *Lydstyrke op* samtidigt, og slip dem derefter hurtigt**
 
 iOS-enheden fotograferer hele skærmen og gemme den som et foto. Det kan herefter findes i en standard foto-app.
 
 ### Windows
 
-+ **For at tage et skærmfoto i Windows, så tryk på knappen *PrtScn***
+- **For at tage et skærmfoto i Windows, så tryk på knappen *PrtScn***
 
 På visse bærbare skal knappen *Fn* holdes nede, før der trykkes på *PrtScn*.
 
@@ -58,15 +58,15 @@ Windows fotograferer hele skærmen og kopierer den til udklipsholderen.
 
 For at tage et skærmfoto af et aktivt vindue, så brug flg. kombination:
 
-+ **Hold *Alt* nede, og tryk på *PrtScn* (eller *Fn + Alt + PrtScn* på nogle bærbare)**
+- **Hold *Alt* nede, og tryk på *PrtScn* (eller *Fn + Alt + PrtScn* på nogle bærbare)**
 
 For at tage et skærmfoto af et bestemt område, så brug flg. kombination:
 
-+ ***Hold knapperne *Win* (Windows-knappen) nede samt *Shift* nede, og tryk på ***S******
+- ***Hold knapperne *Win* (Windows-knappen) nede samt *Shift* nede, og tryk på ***S******
 
 Når skærmfotoet er taget, gemmes det i udklipsholderen. Man vil som regel kunne indsætte det i f.eks. et dokument, man redigerer, vha. knapkombinationen *Ctrl + V*. Er der behov for at gemme skærmfotoet i en fil, så åbn standardprogrammet **Paint** (eller ethvert andet billedbehandlingsprogram). Indsæt skærmfotoet dér vha. samme knapkombination eller ved at klikke på Indsæt-knappen (normalt i øverste venstre skærmhjørne) og gem det derefter.
 
-Windows 8 og 10 lader brugeren tage et skærmbillede meget hurtigt med *Win + PrtScn*-kombinationen. Så snart der trykkes på disse knapper, gemmes skærmfotoet automatisk som en fil i mappen Billeder -> Skærmfotos.
+Windows 8 og 10 lader brugeren tage et skærmbillede meget hurtigt med *Win + PrtScn*-kombinationen. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
 
 Der er også et dedikeret program til at tage skærmfotos kaldet *Snipping Tool*, der kan findes via Start-menuen blandt standardprogrammerne på computeren. Med Snipping Tool kan ethvert skrivebordsområde eller hele skærmen knipses. Efter at have taget et skærmfoto med dette program, kan fotoet redigeres og gemmes i den ønskede mappe på computeren.
 
@@ -76,21 +76,21 @@ Man kan desuden også tjekke forskellige apps til at tage computerskærmfotos, s
 
 For at tage et skærmfoto på en iOS-enhed, så brug flg. knapkombination:
 
-+ ***Tryk og hold både ***⌘ Cmd + Shift + 3******
+- ***Tryk og hold både ***⌘ Cmd + Shift + 3******
 
 Mac'en fotograferer hele skærmen og gemme den som en fil på skrivebordet.
 
 For at tage et skærmfoto af et aktivt vindue, så brug flg. kombination:
 
-+ **Tryk og hold både tasterne *⌘ Cmd + Shift + 4 + Mellemrum*.  Markøren skifter herefter til et kameraikon. Klik på vinduet for at fotografere det. Tryk på Esc-knappen for at annullere skærmfotografering**
+- **Tryk og hold både tasterne *⌘ Cmd + Shift + 4 + Mellemrum*.  Markøren skifter herefter til et kameraikon. Klik på vinduet for at fotografere det. Tryk på Esc-knappen for at annullere skærmfotografering**
 
 For at tage et skærmfoto af et bestemt område, så brug flg. kombination:
 
-+ ***Tryk og hold både ***⌘ Cmd + Shift + 4******. Træk trådkorset for at vælge det ønskede område. Slip musetasten eller pegefeltet for at tage et skærmfoto, tryk på Esc-knappen for at annullere det.
+- ***Tryk og hold både ***⌘ Cmd + Shift + 4******. Træk trådkorset for at vælge det ønskede område. Slip musetasten eller pegefeltet for at tage et skærmfoto, tryk på Esc-knappen for at annullere det.
 
 Brug flg. kombination for at tage et skærmfoto af *Touch Bar* (MacBook Pro):
 
-+ ***Hold ***⌘ Cmd + Shift + 6*** nede***
+- ***Hold ***⌘ Cmd + Shift + 6*** nede***
 
 Mac'en fotograferer hele *Touch Bar* og gemmer den som en fil på skrivebordet.
 

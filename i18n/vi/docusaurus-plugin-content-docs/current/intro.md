@@ -8,30 +8,34 @@ slug: /
 
 DNS stands for "Domain Name System", and its purpose is to convert websites' names into IP addresses. Mỗi lần bạn truy cập một trang web, trình duyệt của bạn sẽ gửi một truy vấn DNS đến máy chủ DNS để tìm ra địa chỉ IP của trang web. Và một trình phân giải DNS thông thường chỉ cần trả lại địa chỉ IP của miền được yêu cầu.
 
-> Máy chủ DNS mặc định thường do ISP của bạn cung cấp. Điều này có nghĩa là ISP của bạn có thể theo dõi hoạt động trực tuyến của bạn và bán nhật ký cho các bên thứ ba.
+:::note
 
-![Thiết bị của bạn luôn sử dụng một số máy chủ DNS để lấy địa chỉ IP của các ứng dụng tên miền muốn điều hướng đến](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
 
-There are also DNS servers that can block certain websites at DNS-level. Họ làm việc như thế nào? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+:::
+
+![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+
+There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 
-Tất cả mọi thứ đều được kết nối với Internet ngày nay, từ TV đến bóng đèn thông minh, từ thiết bị di động đến ô tô thông minh. Và Internet ở đâu, ở đó có quảng cáo và trình theo dõi. In this case, a browser-based ad blocker has proven insufficient. Để được bảo vệ tốt hơn, hãy sử dụng DNS kết hợp với VPN và trình chặn quảng cáo.
+Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker has proven insufficient. To get a better protection, use DNS in combination with VPN and ad blocker.
 
-Sử dụng DNS để chặn nội dung có một số ưu điểm cũng như những sai sót rõ ràng. Mặt khác, DNS không có điểm mù vì nó quan sát tất cả các thiết bị chứ không chỉ các trình duyệt. Tuy nhiên, mặt khác, chỉ chặn DNS không thể cung cấp tính năng lọc thẩm mỹ.
+Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
 
 ## What is AdGuard DNS?
 
-AdGuard DNS is one of the most privacy-oriented DNS services on the market. Nó hỗ trợ các giao thức mã hóa đáng tin cậy như DNS-over-HTTPS, DNS-over-TLS và DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard có cơ sở tên miền riêng phục vụ quảng cáo, trình theo dõi và gian lận và nó được cập nhật thường xuyên.
+AdGuard DNS is one of the most privacy-oriented DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
 
-![Lược đồ gần đúng về cách AdGuard DNS hoạt động](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
+![An approximate scheme of how AdGuard DNS works](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
-> Khoảng 75% lưu lượng AdGuard DNS được mã hóa. This is actually what differentiates content-blocking DNS servers from others. Nếu bạn nhìn vào số liệu thống kê của CloudFlare hoặc Quad9, bạn sẽ thấy rằng DNS được mã hóa chỉ là một phần nhỏ của tất cả các truy vấn.
+About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content-blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
 
-AdGuard DNS tồn tại ở hai dạng chính: [AdGuard DNS](public-dns/overview.md) công khai và [AdGuard DNS](private-dns/overview.md)riêng tư. Cả hai dịch vụ này đều không yêu cầu cài đặt bất kỳ ứng dụng nào. Chúng dễ thiết lập và sử dụng, đồng thời cung cấp cho người dùng các tính năng tối thiểu cần thiết để chặn quảng cáo, trình theo dõi, trang web độc hại và nội dung người lớn (nếu cần). Không có giới hạn nào đối với những thiết bị mà chúng có thể được sử dụng.
+AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
 
-Mặc dù có rất nhiều điểm tương đồng, AdGuard DNS riêng và AdGuard DNS công cộng là hai dịch vụ khác nhau. Sự khác biệt chính của chúng là bạn có thể tùy chỉnh AdGuard DNS riêng, trong khi AdGuard DNS công cộng không thể.
+Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
 
 ## Mô-đun lọc DNS trong các sản phẩm AdGuard
 
-Tất cả các sản phẩm AdGuard chính, bao gồm AdGuard VPN, đều có mô-đun lọc DNS **** nơi bạn có thể chọn máy chủ DNS bởi nhà cung cấp mà bạn tin tưởng. Tất nhiên, AdGuard DNS Default, AdGuard DNS Non-filter và AdGuard DNS Family Protection đều có trong danh sách. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — public or private.
+All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — public or private.

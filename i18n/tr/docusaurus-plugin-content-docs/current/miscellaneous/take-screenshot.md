@@ -17,18 +17,18 @@ Bir Android cihazda ekran görüntüsü almak, cihazın modeline ve üreticisine
 
 Generally, the following button combination can be used for Android:
 
-+ **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
+- **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
 
 Android cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. Böylece, ekran görüntüsünü Galerinizdeki bir Ekran Görüntüleri klasöründe bulabilirsiniz.
 
 Ancak, daha önce de belirtildiği gibi, prosedür belirli bir cihaza bağlı olarak değişebilir. Diğer olası kombinasyonlara bakalım:
 
-+ **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
-+ **Press and hold the *Back* and *Home* buttons simultaneously**
+- **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
+- **Press and hold the *Back* and *Home* buttons simultaneously**
 
 On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
 
-Bu yöntem işe yaramazsa, *Ayarlar* > *Gelişmiş* özellikleri kontrol ederek *Avuç içi kaydırarak yakalama* özelliğini etkinleştirin.
+If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
 
 Ayrıca, cihazlarınızda ekran görüntüsü almak için her zaman özel uygulamaları kullanabilirsiniz, örneğin — *Ekran Görüntüsü Kolay*, *Screenshot Ultimate*, *Screenshot Snap*, vb.
 
@@ -38,17 +38,17 @@ Herhangi bir iOS cihazı (eski olanlar hariç), standart araçları kullanarak e
 
 Bir iOS cihazında ekran görüntüsü almak için aşağıdaki kombinasyonu kullanın:
 
-+ ***Uyku/Uyanma* (yan) düğmesine ve *Ana Ekran* düğmesine aynı anda basın, ardından hızlıca bırakın**
+- ***Uyku/Uyanma* (yan) düğmesine ve *Ana Ekran* düğmesine aynı anda basın, ardından hızlıca bırakın**
 
 ve bu iPhone X veya sonrası için:
 
-+ ***Uyku/Uyanma* düğmesine ve *Sesi açma* düğmesine aynı anda basın, ardından hızlıca bırakın**
+- ***Uyku/Uyanma* düğmesine ve *Sesi açma* düğmesine aynı anda basın, ardından hızlıca bırakın**
 
 iOS cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. Bunu standart bir Fotoğraf uygulamasında bulabilirsiniz.
 
 ### Windows
 
-+ **Windows'ta ekran görüntüsü almak için *PrtScn* düğmesine basın**
+- **Windows'ta ekran görüntüsü almak için *PrtScn* düğmesine basın**
 
 Bazı dizüstü bilgisayarlarda *Fn* tuşunu basılı tutmanız ve ardından bunun yerine *PrtScn* tuşuna basmanız gerekir.
 
@@ -58,15 +58,15 @@ Windows tüm ekranı yakalar ve (görünmez) panoya kopyalar.
 
 Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanın:
 
-+ ***Alt* tuşunu basılı tutun ve *PrtScn* (veya bazı dizüstü bilgisayarlarda *Fn + Alt + PrtScn*) tuşlarına basın**
+- ***Alt* tuşunu basılı tutun ve *PrtScn* (veya bazı dizüstü bilgisayarlarda *Fn + Alt + PrtScn*) tuşlarına basın**
 
 Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanmalısınız:
 
-+ ****Win* (Windows düğmesi) ve *Shift* tuşuna basılı tutun ve ***S*** tuşuna basın***
+- ****Win* (Windows düğmesi) ve *Shift* tuşuna basılı tutun ve ***S*** tuşuna basın***
 
 Bir ekran görüntüsü aldıktan sonra panoya kaydedilecektir. Çoğu durumda, *Ctrl + V* tuş kombinasyonunu kullanarak düzenlemekte olduğunuz bir belgeye yapıştırabilirsiniz. Alternatif olarak, ekran görüntüsünü bir dosyaya kaydetmeniz gerekiyorsa, standart **Paint** programını (veya görüntülerle çalışabilen başka bir uygulamayı) açmalısınız. Aynı düğme kombinasyonunu kullanarak veya Yapıştır düğmesine (genellikle ekranın sol üst köşesinde) tıklayarak ekran görüntünüzü buraya yapıştırın ve ardından kaydedin.
 
-Windows 8 ve 10, *Win + PrtScn* kombinasyonu ile çok hızlı bir şekilde ekran görüntüsü almanızı sağlar. Bu düğmelere basar basmaz, ekran görüntüsü otomatik olarak Resimler -> Ekran Görüntüleri Klasörünüze bir dosya olarak kaydedilecektir.
+Windows 8 ve 10, *Win + PrtScn* kombinasyonu ile çok hızlı bir şekilde ekran görüntüsü almanızı sağlar. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
 
 Bilgisayarınızın standart programları arasında Başlat menüsünden bulabileceğiniz *Ekran Alıntısı Aracı* adlı ekran görüntüsü almak için özel bir program da bulunmaktadır. Ekran Alıntısı Aracı, masaüstünüzün herhangi bir alanını veya tüm ekranı yakalamanıza olanak tanır. Bu programı kullanarak ekran görüntüsü aldıktan sonra resmi düzenleyebilir ve bilgisayarınızdaki herhangi bir klasöre kaydedebilirsiniz.
 
@@ -76,21 +76,21 @@ Ayrıca, bilgisayarınızda ekran görüntüsü almak için **PicPick**, **Nimbu
 
 Mac'te ekran görüntüsü almak için aşağıdaki düğme kombinasyonunu kullanın:
 
-+ ******⌘ Cmd + Shift + 3*** tuşlarına basın ve birlikte basılı tutun***
+- ******⌘ Cmd + Shift + 3*** tuşlarına basın ve birlikte basılı tutun***
 
 Mac'iniz tüm ekranı yakalar ve masaüstünde bir dosya olarak kaydeder.
 
 Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanın:
 
-+ ***⌘ Cmd + Shift + 4 + Boşluk çubuğu* tuşlarına basın ve birlikte basılı tutun.  İşaretçi bir kamera simgesine dönüşür. Yakalamak için pencereye tıklayın. Ekran görüntüsü almayı iptal etmek için Esc düğmesine basın**
+- ***⌘ Cmd + Shift + 4 + Boşluk çubuğu* tuşlarına basın ve birlikte basılı tutun.  İşaretçi bir kamera simgesine dönüşür. Yakalamak için pencereye tıklayın. Ekran görüntüsü almayı iptal etmek için Esc düğmesine basın**
 
 Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanmalısınız:
 
-+ ***⌘ Cmd + Shift + 4*** ***tuşlarına basın ve birlikte basılı tutun***. Gerekli alanı seçmek için artı işaretine sürükleyin. Ekran görüntüsü almak için farenizi veya dokunmatik farenizi bırakın, iptal etmek için Esc düğmesine basın.
+- ***⌘ Cmd + Shift + 4*** ***tuşlarına basın ve birlikte basılı tutun***. Gerekli alanı seçmek için artı işaretine sürükleyin. Ekran görüntüsü almak için farenizi veya dokunmatik farenizi bırakın, iptal etmek için Esc düğmesine basın.
 
 *Touch Bar'ın* (MacBook Pro) ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanın:
 
-+ ******⌘ Cmd + Shift + 6*** tuşlarına basılı tutun***
+- ******⌘ Cmd + Shift + 6*** tuşlarına basılı tutun***
 
 Mac'iniz *Touch Bar'ın* tamamını yakalar ve masaüstünde bir dosya olarak kaydeder.
 

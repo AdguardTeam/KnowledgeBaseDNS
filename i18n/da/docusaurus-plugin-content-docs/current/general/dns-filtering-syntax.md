@@ -19,29 +19,29 @@ AdGuard DNS-filtreringsregelsyntaks kan bruges til at gøre regler mere fleksibl
 
 Der er tre forskellige tilgange til at skrive værtsblokeringslister:
 
-* [Adblock-syntakstype](#adblock-style-syntax): Den moderne tilgang til at skrive filtreringsregler baseret på brug af et undersæt af Adblock-regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
+- [Adblock-syntakstype](#adblock-style-syntax): Den moderne tilgang til at skrive filtreringsregler baseret på brug af et undersæt af Adblock-regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
 
-* [`/etc/hosts` syntaks](#etc-hosts-syntax): Den gamle, gennemprøvede tilgang, der bruger samme værtsfilsyntakser som operativsystemerne.
+- [`/etc/hosts` syntaks](#etc-hosts-syntax): Den gamle, gennemprøvede tilgang, der bruger samme værtsfilsyntakser som operativsystemerne.
 
-* [Syntaks kun til domæner](#domains-only-syntax): En simpel liste over domænenavne.
+- [Syntaks kun til domæner](#domains-only-syntax): En simpel liste over domænenavne.
 
 Opretter man en sortliste, anbefales brug af [Adblock-syntakstypen](#adblock-style-syntax). Den har et par vigtige fordele ift. den gamle syntakstype:
 
-* **Blokeringslistestørrelse.** Ved at bruge mønstertilpasning kan man have én enkelt regel i stedet for hundredvis af `/etc/hosts`-poster.
+- **Blokeringslistestørrelse.** Ved at bruge mønstertilpasning kan man have én enkelt regel i stedet for hundredvis af `/etc/hosts`-poster.
 
-* **Kompatibilitet.** Blokeringslisten vil være kompatibel med browser-adblockere, og regler kan nemmere deles med en browser-filtreringsliste.
+- **Kompatibilitet.** Blokeringslisten vil være kompatibel med browser-adblockere, og regler kan nemmere deles med en browser-filtreringsliste.
 
-* **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den yderligere og tilbyde flere funktioner til netværksniveau-blockere.
+- **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den yderligere og tilbyde flere funktioner til netværksniveau-blockere.
 
 Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af sortlister. Vi har kaldt det [Hostlist compiler][hlc] og vi bruger det selv til oprettelse af [AdGuard DNS-filtre][sdn].
 
 ## Basiseksempler
 
-* `||eksempel.org^`: blokér domæneadgang for `eksempel.org` og alle dets underdomæner, f.eks. `www.eksempel.org`.
+- `||eksempel.org^`: blokér domæneadgang for `eksempel.org` og alle dets underdomæner, f.eks. `www.eksempel.org`.
 
-* `||eksempel.org^`: Afblokér domæneadgang til `eksempel.org` og alle dets underdomæner.
+- `||eksempel.org^`: Afblokér domæneadgang til `eksempel.org` og alle dets underdomæner.
 
-* `1.2.3.4 eksempel.org`: (Bemærk, gammel `/etc/hosts`-syntakstype) i AdGuard Home, svar med `1.2.3.4` på forespørgsler for `eksempel.org`-domænet, men **ikke** dets underdomæner. Blokér i Private AdGuard DNS adgangen til `eksempel.org`. `www.eksempel.org` forbliver tilladt.
+- `1.2.3.4 eksempel.org`: (Bemærk, gammel `/etc/hosts`-syntakstype) i AdGuard Home, svar med `1.2.3.4` på forespørgsler for `eksempel.org`-domænet, men **ikke** dets underdomæner. Blokér i Private AdGuard DNS adgangen til `eksempel.org`. `www.eksempel.org` forbliver tilladt.
 
   I AdGuard Home er brug af den uspecificerede IP-adresse (`0.0.0.0`) eller en lokal adresse (`127.0.0.1` o.lign.) for en vært essentielt det samme som at blokere denne vært.
 
@@ -52,11 +52,11 @@ Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtrerin
   0.0.0.0 eksempel.org
   ```
 
-* `eksempel.org`: En simpel domæneregel. Blokerer `eksempel.org`-domænet, men **ikke** dets underdomæner. `www.eksempel.org` forbliver tilladt.
+- `eksempel.org`: En simpel domæneregel. Blokerer `eksempel.org`-domænet, men **ikke** dets underdomæner. `www.eksempel.org` forbliver tilladt.
 
-* `! Her angives en kommentar` og `# Også en kommentar`: Kommentarer.
+- `! Her angives en kommentar` og `# Også en kommentar`: Kommentarer.
 
-* `/REGEX/`: Blokér adgang til domæner matchende det angivne regulære udtryk.
+- `/REGEX/`: Blokér adgang til domæner matchende det angivne regulære udtryk.
 
 ## Adblock-syntakstype
 
@@ -67,21 +67,21 @@ Dette er et undersæt af den [traditionelle Adblock-syntakstype][adb] brugt af b
 modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 ```
 
-* `mønster`: Værtsnavnmasken. Alle værtsnavne matches mod denne maske. Mønsteret kan også indeholde specialtegn, som beskrevet nedenfor.
+- `mønster`: Værtsnavnmasken. Alle værtsnavne matches mod denne maske. Mønsteret kan også indeholde specialtegn, som beskrevet nedenfor.
 
-* `@@`: den markør, der bruges i undtagelsesreglerne. Ønskes filtrering for de matchende værtsnavne deaktiveret, så start reglen med denne markør.
+- `@@`: den markør, der bruges i undtagelsesreglerne. Ønskes filtrering for de matchende værtsnavne deaktiveret, så start reglen med denne markør.
 
-* `modifikatorer`: Parametre, som tydeliggør reglen. De kan begrænse reglens udstrækning eller endda helt ændre måden, den fungerer på.
+- `modifikatorer`: Parametre, som tydeliggør reglen. De kan begrænse reglens udstrækning eller endda helt ændre måden, den fungerer på.
 
 ### Specialtegn
 
-* `*`: jokertegnet. Det bruges til at repræsentere et hvilket som helst tegn. Dette kan også være en tom streng eller en streng af enhver længde.
+- `*`: jokertegnet. Det bruges til at repræsentere et hvilket som helst tegn. Dette kan også være en tom streng eller en streng af enhver længde.
 
-* `||`: Matcher begyndelsen af et værtsnavn, inkl. ethvert underdomæne. F.eks. så matcher `||eksempel.org` `eksempel.org` og `test.eksempel.org`, men ikke `testeksempel.org`.
+- `||`: Matcher begyndelsen af et værtsnavn, inkl. ethvert underdomæne. F.eks. så matcher `||eksempel.org` `eksempel.org` og `test.eksempel.org`, men ikke `testeksempel.org`.
 
-* `^`: separatortegnet. Ulig browser-adblocking, er der intet at adskille/opdele i et værtsnavn, så det eneste formål med dette tegn er at markere slutningen på værtsnavnet.
+- `^`: separatortegnet. Ulig browser-adblocking, er der intet at adskille/opdele i et værtsnavn, så det eneste formål med dette tegn er at markere slutningen på værtsnavnet.
 
-* `|`: En markør for begyndelsen eller slutningen på værtsnavnet. Værdien afhænger af tegnplaceringen i masken. F.eks. svarer reglen `emple.org|` til `eksempel.org`, men ikke til `eksempel.org.com`. `|eksempe` korresponderer med `eksempel.org`, men ikke med `test.eksempel`.
+- `|`: En markør for begyndelsen eller slutningen på værtsnavnet. Værdien afhænger af tegnplaceringen i masken. F.eks. svarer reglen `emple.org|` til `eksempel.org`, men ikke til `eksempel.org.com`. `|eksempe` korresponderer med `eksempel.org`, men ikke med `test.eksempel`.
 
 ### Regulære udtryk
 
@@ -93,9 +93,9 @@ mønster = "/" regexp "/"
 
 **Eksempler:**
 
-* `/eksempel.*/` blokerer værter matchende `eksempel.*`-regexp'et.
+- `/eksempel.*/` blokerer værter matchende `eksempel.*`-regexp'et.
 
-* `@@/eksempel.*/$important` afblokerer værter matchende `eksempel.*`-regexp'et. Bemærk, at denne regel også forudsætter `important`-modifikatoren.
+- `@@/eksempel.*/$important` afblokerer værter matchende `eksempel.*`-regexp'et. Bemærk, at denne regel også forudsætter `important`-modifikatoren.
 
 ### Kommentarer
 
@@ -114,18 +114,18 @@ Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer 
 
 **Eksempler:**
 
-* ``` ingen ||eksempel.org^$important
+- ``` ingen ||eksempel.org^$important
    ```
 
   `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. "important" er modifikationen.
 
-* Man ønsker måske at bruge flere modifikatorer i en regel. Adskil dem i så fald med kommaer:
+- Man ønsker måske at bruge flere modifikatorer i en regel. Adskil dem i så fald med kommaer:
 
   ```none
   ||eksempel.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` is the [`client`](#client) modifier with its value, `127.0.0.1`, is the delimiter. Og endelig er `dnstype=A` [`dnstype`](#dnstype)-modifikatoren med sin værdi `A`.
+  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` er [`klient`](#client)-modifikatoren med dens værdi `127.0.0.1`. Og endelig er `dnstype=A` [`dnstype`](#dnstype)-modifikatoren med sin værdi `A`.
 
 **BEMÆRK:** Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal hele regel **ignoreres**. På denne måde undgås falske positiver, når folk forsøger at bruge umodificerede browser-adblockingfilterlister, såsom EasyList eller EasyPrivacy.
 
@@ -133,9 +133,9 @@ Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer 
 
 Modifikatoren `client` muliggør at angive de klienter, for hvilke reglen anvendes. Der er to hovedmåder, en klient kan identificere på:
 
-* Via deres IP-adresse eller CIDR-præfiks. Denne måde fungerer for alle slags klienter.
+- Via deres IP-adresse eller CIDR-præfiks. Denne måde fungerer for alle slags klienter.
 
-* Via deres navn. Denne måde fungerer kun for vedvarende klienter (i AdGuard Home) og enheder (i Private AdGuard DNS), som man manuelt har tilføjet.
+- Via deres navn. Denne måde fungerer kun for vedvarende klienter (i AdGuard Home) og enheder (i Private AdGuard DNS), som man manuelt har tilføjet.
 
   **BEMÆRK:** I AdGuard Home understøttes ClientID'er ikke pt., kun navne. Har man tilføjet en klient med navnet "Min Klient" og klient-id `min-klient`, så bogstavér modifikatoren `$client='Min Klient'` i modsætning til `$client=min-klient`.
 
@@ -157,15 +157,15 @@ Klientnavne indeholder normalt mellemrum eller andre specialtegn, hvorfor navnet
 
 **Eksempler:**
 
-* `@@||*^$client=127.0.0.1`: Afblokér alt for localhost.
+- `@@||*^$client=127.0.0.1`: Afblokér alt for localhost.
 
-* `||eksempel.org^$client='Frank\'s bærbare'`: Blokér kun `eksempel.org` for klienten med navnet `Frank's bærbare`. Bemærk, at anførselstegnet (`'`) i navnet skal escapes.
+- `||eksempel.org^$client='Frank\'s bærbare'`: Blokér kun `eksempel.org` for klienten med navnet `Frank's bærbare`. Bemærk, at anførselstegnet (`'`) i navnet skal escapes.
 
-* `||eksmpel.org^$client=~'Mary\'s\, John\'s\ og Boris\'s bærbarer'`: Blokér `eksmpel.org` for alle undtagen for klientnavnene `Mary's, John's og Boris' bærbarer`. Bemærk, at komma (`,`) også skal escapes.
+- `||eksmpel.org^$client=~'Mary\'s\, John\'s\ og Boris\'s bærbarer'`: Blokér `eksmpel.org` for alle undtagen for klientnavnene `Mary's, John's og Boris' bærbarer`. Bemærk, at komma (`,`) også skal escapes.
 
-* `||eksempel.org^$client=~Mor|~Far|Børn`: Blokér `eksempel.org` for `Børn`, men ikke for `Mor` og `Far`. Dette eksempel viser, hvordan man angiver flere klienter i én regel.
+- `||eksempel.org^$client=~Mor|~Far|Børn`: Blokér `eksempel.org` for `Børn`, men ikke for `Mor` og `Far`. Dette eksempel viser, hvordan man angiver flere klienter i én regel.
 
-* `||eksempel.org^$client=192.168.0.0/24`: Blokér `eksempel.org` for alle klienter med IP-adresser i området fra `192.168.0.0` til `192.168.0.255`.
+- `||eksempel.org^$client=192.168.0.0/24`: Blokér `eksempel.org` for alle klienter med IP-adresser i området fra `192.168.0.0` til `192.168.0.255`.
 
 #### `denyallow`
 
@@ -196,11 +196,11 @@ Problemet med denne tilgang er, at man på denne måde også afblokerer sporings
 
 **Eksempler:**
 
-* `*$denyallow=com|net`: Blokér alt, undtagen `*.com` og `*.net`.
+- `*$denyallow=com|net`: Blokér alt, undtagen `*.com` og `*.net`.
 
-* `@@*$denyallow=com|net`: Afblokér alt, undtagen `*.com` og `*.net`.
+- `@@*$denyallow=com|net`: Afblokér alt, undtagen `*.com` og `*.net`.
 
-* `||eksempel.org^$denyallow=under.eksempel.org`. blokér `eksempel.org` og `*.eksempel.org`, men blokér ikke `under.eksempel.org`.
+- `||eksempel.org^$denyallow=under.eksempel.org`. blokér `eksempel.org` og `*.eksempel.org`, men blokér ikke `under.eksempel.org`.
 
 #### `dnstype`
 
@@ -229,9 +229,9 @@ $dnstype=værdi2
 
 **Eksempler:**
 
-* `||eksemple.org^$dnstype=AAAA`: Blokér DNS-forespørgsler for IPv6-adresserne på `eksemple.org`.
+- `||eksemple.org^$dnstype=AAAA`: Blokér DNS-forespørgsler for IPv6-adresserne på `eksemple.org`.
 
-* `||eksemple.org^$dnstype=~A|~CNAME`: Tillad kun `A` og `CNAME` DNS-forespørgsler for `eksemple.org`, blokér resten.
+- `||eksemple.org^$dnstype=~A|~CNAME`: Tillad kun `A` og `CNAME` DNS-forespørgsler for `eksemple.org`, blokér resten.
 
 **BEMÆRK:** Før version **v0.108.0,** brugte AdGuard Home forespørgselstypen til at filtrere svarposterne, i modsætning til selve svarposttypen.  Det gav problemer, da det betød, at der ikke kunne skrives regler, som ville tillade visse `CNAME`-poster i svar i `A`- og `AAAA`-forespørgsler. I **v0.108.0** blev denne adfærd ændret, så den nu er:
 
@@ -290,17 +290,17 @@ Modifikatoren `$dnsrewrite` med `NOERROR`-svarkoden kan også have tomme `RRTYPE
 så vil svaret være noget i retning af:
 
 ```sh
-$ nslookup eksempel.com my.adguard.local
+nslookup eksempel.com my.adguard.local
 ```
 
 ```none
-Server:     my.adguard.local
-Address:    127.0.0.1#53
+Server: my.adguard.local
+Address: 127.0.0.1#53
 
 Non-authoritative answer:
-eksempel.com canonical name = eksempel.net.
-Name:   eksempel.net
-Address: 1.2.3.4
+example.com canonical name = example.net.
+Navn: eksempel.net
+Adresse: 1.2.3.4
 ```
 
 Dernæst `CNAME`-omskrivningen. Derefter opsummeres alle andre posters værdier til ét svar, så dette:
@@ -314,17 +314,17 @@ vil resultere i et svar med to `A`-poster.
 
 Aktuelt understøttede RR-typer med eksempler:
 
-* `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;eksempel.net.` tilføjer en `PTR`-post for reverse DNS. Reverse DNS-forespørgsler for `1.2.3.4` til DNS-serveren vil resultere i `eksempel.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;eksempel.net.` tilføjer en `PTR`-post for reverse DNS. Reverse DNS-forespørgsler for `1.2.3.4` til DNS-serveren vil resultere i `eksempel.net`.
 
   **BEMÆRK:** IP'en SKAL være i omvendt rækkefølge. Se [RFC 1035][rfc1035].
 
-* `||eksempel.com^$dnsrewrite=NOERROR;A;1.2.3.4` tilføjer en `A`-post med værdien `1.2.3.4`.
+- `||eksempel.com^$dnsrewrite=NOERROR;A;1.2.3.4` tilføjer en `A`-post med værdien `1.2.3.4`.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` tilføjer en `AAAA`-post med værdien `abcd::1234`.
+- `||eksempel.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` tilføjer en `AAAA`-post med værdien `abcd::1234`.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;CNAME;eksempel.org` tilføjer en `CNAME`-post. Se forklaring ovenfor.
+- `||eksempel.com^$dnsrewrite=NOERROR;CNAME;eksempel.org` tilføjer en `CNAME`-post. Se forklaring ovenfor.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;HTTPS;32 eksempel.com alpn=h3` tilføjer en `HTTPS`-post. Kun et undersæt af parameterværdier understøttes: Værdier skal være `sammenhængende`, og hvor en `værdiliste` `forventes`, understøttes pt. kun én værdi:
+- `||eksempel.com^$dnsrewrite=NOERROR;HTTPS;32 eksempel.com alpn=h3` tilføjer en `HTTPS`-post. Kun et undersæt af parameterværdier understøttes: Værdier skal være `sammenhængende`, og hvor en `værdiliste` `forventes`, understøttes pt. kun én værdi:
 
    ```none
    ipv4hint=127.0.0.1             // Understøttet.
@@ -335,23 +335,23 @@ Aktuelt understøttede RR-typer med eksempler:
 
   Dette vil blive ændret fremtiden.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;MX;32 eksempel.mail` tilføjer en `MX`-post med forrangsværdien `32` og udvekslingsværdien `eksempel.mail`.
+- `||eksempel.com^$dnsrewrite=NOERROR;MX;32 eksempel.mail` tilføjer en `MX`-post med forrangsværdien `32` og udvekslingsværdien `eksempel.mail`.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;SVCB;32 eksempel.com alpn=h3` tilføjer en `SVCB`-value. Se `HTTPS`-eksemplet ovenfor.
+- `||eksempel.com^$dnsrewrite=NOERROR;SVCB;32 eksempel.com alpn=h3` tilføjer en `SVCB`-value. Se `HTTPS`-eksemplet ovenfor.
 
-* `||eksempel.com^$dnsrewrite=NOERROR;TXT;hallo_verden` tilføjer en `TXT`-post med værdien `hallo_verden`.
+- `||eksempel.com^$dnsrewrite=NOERROR;TXT;hallo_verden` tilføjer en `TXT`-post med værdien `hallo_verden`.
 
-* `||_svctype._tcp.eksempel.com^$dnsrewrite=NOERROR;SRV;10 60 8080 eksempel.com` tilføjer en `SRV`-post med prioritetsværdien `10`, vægtværdien `60`, porten`8080` og målværdien `eksempel.com`.
+- `||_svctype._tcp.eksempel.com^$dnsrewrite=NOERROR;SRV;10 60 8080 eksempel.com` tilføjer en `SRV`-post med prioritetsværdien `10`, vægtværdien `60`, porten`8080` og målværdien `eksempel.com`.
 
-* `||eksempel.com^$dnsrewrite=NXDOMAIN;;` svarer med en `NXDOMAIN`-kode.
+- `||eksempel.com^$dnsrewrite=NXDOMAIN;;` svarer med en `NXDOMAIN`-kode.
 
-* `$dnstype=AAAA,denyallow=eksempel.org,dnsrewrite=NOERROR;;` besvares med tomme `NOERROR`-svar for alle `AAAA`-forespørgsler, undtagen for dem indeholdende `eksempel.org`.
+- `$dnstype=AAAA,denyallow=eksempel.org,dnsrewrite=NOERROR;;` besvares med tomme `NOERROR`-svar for alle `AAAA`-forespørgsler, undtagen for dem indeholdende `eksempel.org`.
 
 Undtagelsesregler fjerner én eller alle regler:
 
-* `@@||eksempel.com^$dnsrewrite` fjerner alle DNS rewrite-regler.
+- `@@||eksempel.com^$dnsrewrite` fjerner alle DNS rewrite-regler.
 
-* `@@||eksempel.com^$dnsrewrite=1.2.3.4` fjerner DNS rewrite-reglen, der tilføjer en `A`-post med værdien `1.2.3.4`.
+- `@@||eksempel.com^$dnsrewrite=1.2.3.4` fjerner DNS rewrite-reglen, der tilføjer en `A`-post med værdien `1.2.3.4`.
 
 #### `important`
 
@@ -359,7 +359,7 @@ Modifikatoren `important` anvendt på en regel, øger dens prioritet over alle �
 
 **Eksempler:**
 
-* I dette eksempel:
+- I dette eksempel:
 
   ```none
   ||eksempel.org^$important
@@ -368,7 +368,7 @@ Modifikatoren `important` anvendt på en regel, øger dens prioritet over alle �
 
   `||eksempel.org^$important` blokerer alle forespørgsler til `*.eksempel.org` på trods af undtagelsesreglen.
 
-* I dette eksempel:
+- I dette eksempel:
 
   ```none
   ||eksempel.org^$important
@@ -383,9 +383,9 @@ Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke
 
 **Eksempler:**
 
-* `||eksempel.com$badfilter` dealtiverer `||eksempel.com`.
+- `||eksempel.com$badfilter` dealtiverer `||eksempel.com`.
 
-* `@@||eksempel.org^$badfilter` deaktiverer `@@||eksempel.org^`.
+- `@@||eksempel.org^$badfilter` deaktiverer `@@||eksempel.org^`.
 
   **BEMÆRK:** `badfilter`-modifikatoren fungerer ikke pt. med `/etc/hosts`-regeltyper. `127.0.0.1 eksempel.org$badfilter` deaktiverer **ikke** den oprindelige `127.0.0.1 eksempel.org`-regel.
 
@@ -411,42 +411,41 @@ Matcher en af klienternes tags undtagelses `ctag`-værdierne, gælder denne rege
 
 **Eksempler:**
 
-* `||eksempel.org^$ctag=device_pc|device_phone`: Blokerer `eksempel.org` for klienter tagget som `device_pc` eller `device_phone`.
+- `||eksempel.org^$ctag=device_pc|device_phone`: Blokerer `eksempel.org` for klienter tagget som `device_pc` eller `device_phone`.
 
-* `||eksempel.org^$ctag=~device_phone`: Blokerer `eksempel.org` for alle klienter, undtagen for den tagget som `device_phone`.
+- `||eksempel.org^$ctag=~device_phone`: Blokerer `eksempel.org` for alle klienter, undtagen for den tagget som `device_phone`.
 
 Oversigt over gyldige tags:
 
-* Efter enhedstype:
+- Efter enhedstype:
 
-  * `device_audio`: Lydenheder.
-  * `device_camera`: Kameraer.
-  * `device_gameconsole`: Spillekonsoller.
-  * `device_laptop`: Bærbare.
-  * `device_nas`: NAS (netværkstilsluttede lagerenheder).
-  * `device_pc`: PC'er.
-  * `device_phone`: Mobiler.
-  * `device_printer`: Printere.
-  * `device_securityalarm`: Sikkerhedsalarmer.
-  * `device_tablet`: Tablets.
-  * `device_tv`: TV.
-  * `device_other`: Øvrige enhedstyper.
+    - `device_audio`: Lydenheder.
+    - `device_camera`: Kameraer.
+    - `device_gameconsole`: Spillekonsoller.
+    - `device_laptop`: Bærbare.
+    - `device_nas`: NAS (netværkstilsluttede lagerenheder).
+    - `device_pc`: PC'er.
+    - `device_phone`: Mobiler.
+    - `device_printer`: Printere.
+    - `device_securityalarm`: Sikkerhedsalarmer.
+    - `device_tablet`: Tablets.
+    - `device_tv`: TV.
+    - `device_other`: Øvrige enhedstyper.
 
-* Efter styresystem:
+- Efter styresystem:
 
-  * `os_android`: Android.
-  * `os_ios`: iOS.
-  * `os_linux`: Linux.
-  * `os_macos`: macOS.
-  * `os_windows`: Windows.
-  * `os_other`: Øvrige OS'er.
+    - `os_android`: Android.
+    - `os_ios`: iOS.
+    - `os_linux`: Linux.
+    - `os_macos`: macOS.
+    - `os_windows`: Windows.
+    - `os_other`: Øvrige OS'er.
 
-* Efter brugergruppe:
+- Efter brugergruppe:
 
-  * `user_admin`: Administratorer.
-  * `user_regular`: Almindelige brugere.
-  * `user_child`: Børn.
-
+    - `user_admin`: Administratorer.
+    - `user_regular`: Almindelige brugere.
+    - `user_child`: Børn.
 
 ## `/etc/hosts`Syntakstype {#etc-hosts-syntax}
 
@@ -470,7 +469,6 @@ Værtsnavne må kun indeholde alfanumeriske tegn, bindestreg-/minustegn (`-`) sa
 ```
 
 I AdGuard Home bruges IP-adresserne til at besvare DNS-forespørgsler for disse domæner. I Private AdGuard DNS blokeres disse adresser simpelthen.
-
 
 ## Domæne-specifik syntaks
 

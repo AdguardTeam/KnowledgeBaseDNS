@@ -42,6 +42,7 @@ DNSサーバーは何千もあって、それぞれ特性と目的において�
 ### ローカルDNSブロックリスト
 
 しかし、DNSトラフィックをフィルタリングするためにDNSサーバーだけに頼ることは、柔軟性を失うことになります。 使っているサーバーがドメインをブロックしている場合、そのドメインにアクセスできません。 AdGuard ですと、DNSトラフィックをフィルタリングするために特定のDNSサーバーを設定する必要もありません。 AdGuard 製品のすべてで、DNS ブロックリスト（シンプルな hosts ファイルや[より高度な構文](dns-filtering-syntax.md)を使用するリストなど）を使用できます。 DNSブロックリストは、通常のブロックリストと同じように機能します。つまり、DNSリクエストがアクティブフィルタリストのルールの1つにマッチすると、そのリクエストはブロックされます。 より正確に言いますと、そのリクエストは"ブラックホール"に迂回されます。
+
 > ※iOS版AdGuardでは、DNSブロックリストにアクセスするためには、まず⚙設定→「高度な設定モード」を有効にする必要があります。
 
 カスタムブロックリストはいくつでも追加できます。 おすすめとして、[AdGuard DNS フィルター](https://github.com/AdguardTeam/AdGuardSDNSFilter)を追加できます。 このフィルタは、AdGuard DNS サーバーと同じものブロックしますが、フィルタの場合、同時に他のDNSサーバーを自由に使用することができるのです。 さらに、この方法では、フィルターを追加したり、カスタムの例外ルールを作成したりすることができます。これらはすべて、単にブロック系DNSサーバーを使用する場合では不可能なことです。
@@ -56,15 +57,15 @@ AdGuard を使えば、この二つのうち選ぶ必要はないということ
 **DNSフィルタリングのメリット:**
 
 1. プラットフォームによっては、これがシステム全体フィルタリングを実現する唯一の方法です。 例えば、iOSではSafariブラウザだけが、コンテンツ・ブロッキングをサポートしています。Safari以外にはDNSフィルタリングしか使えません。
-2. トラッキング（追跡）の一部（ [CNAMEトラッキング](https://adguard.com/blog/cname-tracking.html)など）は、DNSフィルタリングによってのみ防止できます。
-3. DNSリクエストを処理する段階は、広告やトラッカーに対処する場合の最も早い段階であるため、バッテリー寿命とトラフィックを少し節約するのに役立ちます。
+1. トラッキング（追跡）の一部（ [CNAMEトラッキング](https://adguard.com/blog/cname-tracking.html)など）は、DNSフィルタリングによってのみ防止できます。
+1. DNSリクエストを処理する段階は、広告やトラッカーに対処する場合の最も早い段階であるため、バッテリー寿命とトラフィックを少し節約するのに役立ちます。
 
 **DNSフィルタリングのデメリット:**
 
-1. DNSフィルタリングは"雑"なもので、ブロックされた広告の後に残る空白を削除したり、いわゆる「整形フィルタリング」を適用したりはできません。 また、より複雑な広告の多くは、DNSレベルではブロックできません（というか、ブロックはできますが、広告以外も配信するドメインをまるごとブロックすることになってしまいます）。
+1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
-![違いの例](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNSフィルタリング（左）とネットワークフィルタリング（右）の違いの例*
+    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 
-2. DNSリクエストの発信元を知ることはできないので、DNSレベルでアプリを区別することはできません。 これは統計に悪影響を及ぼし、特定のアプリ専用フィルタリングルールを作成することも不可能です。
+1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
 
-DNSフィルタリングは、可能な限り、ネットワーク・フィルタリングの代わりにではなく、ネットワーク・フィルタリングに加えて使用することをお勧めします。
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

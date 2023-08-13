@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+Her forklares, hvordan DNS-cachen kan tømmes for at løse offentlige DNS-problemer. AdGuard Ad Blocker kan bruges til opsætning af DNS-servere (også krypterede)
 
 Hurtig-link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
 
@@ -13,36 +13,40 @@ Hurtig-link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?aut
 
 ## Hvad er DNS-cache?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS-cache gemmer IP-adresserne på besøgte websteder på den lokale enhed, så de indlæses hurtigere næste gang. I stedet for at udføre et langt DNS-opslag, besvarer systemet forespørgslerne med DNS-poster fra den midlertidige DNS-cache.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS-cachen indeholder såkaldte [ressourceposter (RR'er)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), som er:
 
-* **Ressourcedata (eller rdata)**;
-* **Posttype**;
-* **Postnavn**;
-* **TTL (levetid)**;
-* **Klasse**;
-* **Ressourcedatalængde**.
+- **Ressourcedata (eller rdata)**;
+- **Posttype**;
+- **Postnavn**;
+- **TTL (levetid)**;
+- **Klasse**;
+- **Ressourcedatalængde**.
 
 ## Hvornår man muligvis skal rydde cachen
 
-**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+**DNS-udbyderen er skiftet til AdGuard DNS.** Ved skift af DNS kan det tage lidt tid at se resultatet grundet cachen.
 
-**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Der opleves jævnligt 404-fejl.** Webstedet er f.eks. overført til en anden server, og dets IP-adresse er ændret. For at få browseren til at åbne webstedet fra den nye IP-adresse, skal den cachelagrede IP fra DNS-cachen fjernes.
 
-**You want to improve your privacy.**
+**Fortroligheden ønskes forbedret.**
 
 ## Sådan renses DNS-cache på forskellige OS'er
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+Der er forskellige måder at rydde DNS-cachen på iPad eller iPhone.
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+Den enkleste måde er at aktivere Flytilstand (f.eks. via Kontrolcenter eller appen Indstillinger) og deaktivere den igen. Dette tømmer DNS-cachen.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstillinger-appen. Åbn *Generelt*, rul ned til *Nulstil* og tryk på *Nulstil netværksindstillinger*.
 
-> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
@@ -50,9 +54,13 @@ The easiest way to clear your DNS cache on your Android device is to turn the Ai
 
 A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstillinger-appen. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Disse vil skulle nulstilles manuelt.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
@@ -114,30 +122,30 @@ Then you will need to reload BIND:
 
 You will get the message that the server has been successfully reloaded.
 
-## How to flush DNS cache in Chrome
+## Sådan tømmes DNS-cache i Chrome
 
 This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
-1. Disable **secure DNS** in Chrome settings
+1. Slå **sikker DNS** fra i Chrome-indstillinger
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Disable **Async DNS resolver**
+1. Slå **Async DNS-resolver** fra
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Press both buttons here
+1. Tryk på begge knapper her
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Press **Clear host cache**
+1. Tryk på **Ryd værtscache**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

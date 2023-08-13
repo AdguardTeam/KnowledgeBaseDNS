@@ -19,29 +19,29 @@ Sie können die Syntax der AdGuard DNS-Filterregeln verwenden, um die Regeln fle
 
 Es gibt drei verschiedene Ansätze für die Erstellung von Hosts-Sperrlisten:
 
-* [Adblock-Syntax](#adblock-style-syntax): der moderne Ansatz zum Schreiben von Filterregeln, der auf der Verwendung einer Untermenge der Adblock-Syntax basiert. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
+- [Adblock-Syntax](#adblock-style-syntax): der moderne Ansatz zum Schreiben von Filterregeln, der auf der Verwendung einer Untermenge der Adblock-Syntax basiert. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
 
-* [`/etc/hosts` syntax](#etc-hosts-syntax): Der alte, bewährte Ansatz, der die gleiche Syntax verwendet, die auch die Betriebssysteme für ihre hosts-Dateien verwenden.
+- [`/etc/hosts` syntax](#etc-hosts-syntax): Der alte, bewährte Ansatz, der die gleiche Syntax verwendet, die auch die Betriebssysteme für ihre hosts-Dateien verwenden.
 
-* [Domains-only-Syntax](#domains-only-syntax): eine einfache Liste von Domainnamen.
+- [Domains-only-Syntax](#domains-only-syntax): eine einfache Liste von Domainnamen.
 
 Wenn Sie eine Blockliste erstellen, empfehlen wir, die Syntax [im Stil von Adblock zu verwenden](#adblock-style-syntax). Sie hat eine Reihe wichtiger Vorteile gegenüber der alten Syntax:
 
-* **Größe der Sperrlisten.** Durch die Verwendung des Musterabgleichs können Sie eine einzige Regel anstelle von Hunderten von `/etc/hosts` Einträgen verwenden.
+- **Größe der Sperrlisten.** Durch die Verwendung des Musterabgleichs können Sie eine einzige Regel anstelle von Hunderten von `/etc/hosts` Einträgen verwenden.
 
-* **Kompatibilität.** Ihre Blockliste ist mit Werbeblockern von Browsern kompatibel, und es ist einfacher, Regeln mit einer Browser-Filterliste auszutauschen.
+- **Kompatibilität.** Ihre Blockliste ist mit Werbeblockern von Browsern kompatibel, und es ist einfacher, Regeln mit einer Browser-Filterliste auszutauschen.
 
-* **Erweiterbarkeit.** In den letzten zehn Jahren hat sich die Adblock-Syntax stark weiterentwickelt, und wir sehen keinen Grund, sie nicht noch weiter zu erweitern und zusätzliche Funktionen für Blocker auf Netzwerkebene anzubieten.
+- **Erweiterbarkeit.** In den letzten zehn Jahren hat sich die Adblock-Syntax stark weiterentwickelt, und wir sehen keinen Grund, sie nicht noch weiter zu erweitern und zusätzliche Funktionen für Blocker auf Netzwerkebene anzubieten.
 
 Wenn Sie entweder eine Blockliste im Stil von `/etc/hosts` oder mehrere Filterlisten (unabhängig vom Typ) verwalten, bieten wir ein Werkzeug zur Zusammenstellung von Blocklisten. Wir haben ihn [Hostlist Compiler][hlc] genannt und verwenden ihn selbst, um [AdGuard DNS Filter][sdn] zu erstellen.
 
 ## Grundlegende Beispiele
 
-* `||example.org^`: sperrt den Zugriff auf die Domain `example.org` und alle ihre Subdomains, wie `www.example.org`.
+- `||example.org^`: sperrt den Zugriff auf die Domain `example.org` und alle ihre Subdomains, wie `www.example.org`.
 
-* `@@|| example.org^`: Entsperren Sie den Zugriff auf die `example.org`-Domain und alle ihre Subdomains.
+- `@@|| example.org^`: Entsperren Sie den Zugriff auf die `example.org`-Domain und alle ihre Subdomains.
 
-* `1.2.3.4 example.org`: (Achtung, alte `/etc/hosts`-style Syntax) in AdGuard Home, antwortet mit `1.2.3.4` auf Anfragen nach der `example.org` Domain, aber **nicht** deren Subdomains. Blockieren Sie im Private AdGuard DNS den Zugriff auf `example.org`. `www.example.org` bleibt erlaubt.
+- `1.2.3.4 example.org`: (Achtung, alte `/etc/hosts`-style Syntax) in AdGuard Home, antwortet mit `1.2.3.4` auf Anfragen nach der `example.org` Domain, aber **nicht** deren Subdomains. Blockieren Sie im Private AdGuard DNS den Zugriff auf `example.org`. `www.example.org` bleibt erlaubt.
 
   In AdGuard Home ist die Verwendung der nicht spezifizierten IP-Adresse (`0.0.0.0`) oder einer lokalen Adresse (`127.0.0.1` und ähnliche) für einen Host im Grunde dasselbe wie das Blockieren dieses Hosts.
 
@@ -52,11 +52,11 @@ Wenn Sie entweder eine Blockliste im Stil von `/etc/hosts` oder mehrere Filterli
   0.0.0.0 example.org
   ```
 
-* `example.org`: eine einfache Domainregel. Blockiert die Domain `example.org`, aber **nicht** ihre Subdomains. `www.example.org` bleibt erlaubt.
+- `example.org`: eine einfache Domainregel. Blockiert die Domain `example.org`, aber **nicht** ihre Subdomains. `www.example.org` bleibt erlaubt.
 
-* `! Hier kommt ein Kommentar` und `# Auch ein Kommentar`: Kommentare.
+- `! Hier kommt ein Kommentar` und `# Auch ein Kommentar`: Kommentare.
 
-* `/REGEX/`: blockiert den Zugriff auf die Domains, die dem angegebenen regulären Ausdruck entsprechen.
+- `/REGEX/`: blockiert den Zugriff auf die Domains, die dem angegebenen regulären Ausdruck entsprechen.
 
 ## Syntax im Adblock-Stil
 
@@ -67,21 +67,21 @@ Dies ist eine Untermenge der [traditionellen Adblock-style][adb]-Syntax, die von
 Modifikator = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* `pattern`: die Hostnamenmaske. Jeder Hostname wird mit dieser Maske abgeglichen. Das Muster kann auch Sonderzeichen enthalten, die im Folgenden beschrieben werden.
+- `pattern`: die Hostnamenmaske. Jeder Hostname wird mit dieser Maske abgeglichen. Das Muster kann auch Sonderzeichen enthalten, die im Folgenden beschrieben werden.
 
-* `@@`: die Markierung, die in den Ausnahmeregeln verwendet wird. Beginnen Sie Ihre Regel mit dieser Markierung, wenn Sie die Filterung für die entsprechenden Hostnamen ausschalten wollen.
+- `@@`: die Markierung, die in den Ausnahmeregeln verwendet wird. Beginnen Sie Ihre Regel mit dieser Markierung, wenn Sie die Filterung für die entsprechenden Hostnamen ausschalten wollen.
 
-* `modifiers`: Parameter, die die Regel verdeutlichen. Sie können den Geltungsbereich der Regel einschränken oder sogar ihre Funktionsweise vollständig ändern.
+- `modifiers`: Parameter, die die Regel verdeutlichen. Sie können den Geltungsbereich der Regel einschränken oder sogar ihre Funktionsweise vollständig ändern.
 
 ### Sonderzeichen
 
-* `*`: das Platzhalterzeichen. Es wird verwendet, um eine beliebige Menge von Zeichen darzustellen. Dies kann auch eine leere Zeichenkette oder eine Zeichenkette mit beliebiger Länge sein.
+- `*`: das Platzhalterzeichen. Es wird verwendet, um eine beliebige Menge von Zeichen darzustellen. Dies kann auch eine leere Zeichenkette oder eine Zeichenkette mit beliebiger Länge sein.
 
-* `||`: stimmt mit dem Anfang eines Hostnamens überein, einschließlich aller Subdomains. Zum Beispiel stimmt `||example.org` mit `example.org` und `test.example.org` überein, aber nicht mit `testexample.org`.
+- `||`: stimmt mit dem Anfang eines Hostnamens überein, einschließlich aller Subdomains. Zum Beispiel stimmt `||example.org` mit `example.org` und `test.example.org` überein, aber nicht mit `testexample.org`.
 
-* `^`: das Trennzeichen. Anders als bei der Werbeblockierung in Browsern gibt es in einem Hostnamen nichts zu trennen, so dass der einzige Zweck dieses Zeichens darin besteht, das Ende des Hostnamens zu markieren.
+- `^`: das Trennzeichen. Anders als bei der Werbeblockierung in Browsern gibt es in einem Hostnamen nichts zu trennen, so dass der einzige Zweck dieses Zeichens darin besteht, das Ende des Hostnamens zu markieren.
 
-* `|`: ein Zeiger auf den Anfang oder das Ende des Hostnamens. Der Wert hängt von der Platzierung des Zeichens in der Maske ab. Die Regel `ample.org|` entspricht zum Beispiel `example.org`, aber nicht `example.org.com`. `|example` entspricht `example.org` aber nicht `test.example`.
+- `|`: ein Zeiger auf den Anfang oder das Ende des Hostnamens. Der Wert hängt von der Platzierung des Zeichens in der Maske ab. Die Regel `ample.org|` entspricht zum Beispiel `example.org`, aber nicht `example.org.com`. `|example` entspricht `example.org` aber nicht `test.example`.
 
 ### Reguläre Ausdrücke
 
@@ -93,9 +93,9 @@ pattern = "/" regexp "/"
 
 **Beispiele:**
 
-* `/example.*/` sperrt Hosts, die mit der Regexp `example.*` übereinstimmen.
+- `/example.*/` sperrt Hosts, die mit der Regexp `example.*` übereinstimmen.
 
-* `@@/example.*/$important` hebt die Sperrung von Hosts auf, die mit dem Regexp `example.*` übereinstimmen. Beachten Sie, dass diese Regel auch den `wichtigen` Modifikator impliziert.
+- `@@/example.*/$important` hebt die Sperrung von Hosts auf, die mit dem Regexp `example.*` übereinstimmen. Beachten Sie, dass diese Regel auch den `wichtigen` Modifikator impliziert.
 
 ### Kommentare
 
@@ -114,12 +114,12 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
 
 **Beispiele:**
 
-* ```none ||example.org^$important
+- ```none ||example.org^$important
    ```
 
   ||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. „important“ ist der Modifikator.
 
-* Möglicherweise möchten Sie mehrere Modifikatoren in einer Regel verwenden. In diesem Fall sind sie durch Kommata zu trennen:
+- You may want to use multiple modifiers in a rule. In diesem Fall sind sie durch Kommata zu trennen:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -133,9 +133,9 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
 
 Der Modifikator `client` ermöglicht die Angabe von Clients, auf die diese Regel angewendet werden soll. Es gibt zwei Hauptmethoden, um einen Client zu identifizieren:
 
-* Durch ihre IP-Adresse oder ihr CIDR-Präfix. Dies funktioniert für alle Arten von Clients.
+- Durch ihre IP-Adresse oder ihr CIDR-Präfix. Dies funktioniert für alle Arten von Clients.
 
-* Durch ihren Namen. Auf diese Weise funktioniert das nur mit permanenten Clients (in AdGuard Home) und Geräten (in Private AdguardDNS), welche Sie manuell hinzugefügt haben.
+- Durch ihren Namen. Auf diese Weise funktioniert das nur mit permanenten Clients (in AdGuard Home) und Geräten (in Private AdguardDNS), welche Sie manuell hinzugefügt haben.
 
   **ANMERKUNG:** In AdGuard Home werden momentan nur Namen und keine „ClientIDs” unterstützt. Wenn Sie einen Client mit dem Namen „Mein Client” und der „ClientID” `mein-client` hinzugefügt haben, benennen Sie ihren Modifikator mit „`$client='Mein Client'`” anstelle von „`$client=mein-client`”.
 
@@ -157,15 +157,15 @@ Client-Namen enthalten in der Regel Leerzeichen oder andere Sonderzeichen, wesha
 
 **Beispiele:**
 
-* `@@||*^$client=127.0.0.1`: alles für localhost freigeben.
+- `@@||*^$client=127.0.0.1`: alles für localhost freigeben.
 
-* `||example.org^$client='Frank\'s laptop'`: sperrt `example.org` nur für den Client mit dem Namen `Frank's Laptop`. Beachten Sie, dass Anführungszeichen (`'`) im Namen mit einem Escape-Zeichen versehen werden müssen.
+- `||example.org^$client='Frank\'s laptop'`: sperrt `example.org` nur für den Client mit dem Namen `Frank's Laptop`. Beachten Sie, dass Anführungszeichen (`'`) im Namen mit einem Escape-Zeichen versehen werden müssen.
 
-* `||example.org^$client=~'Mary\'s\, John\'s\, und Boris\'s laptops'`: sperrt `example.org` für alle außer für den Client namens `Mary's, John's, and Boris's Laptops`. Beachten Sie, dass das Komma (`,`) ebenfalls mit einem Escapezeichen versehen werden muss.
+- `||example.org^$client=~'Mary\'s\, John\'s\, und Boris\'s laptops'`: sperrt `example.org` für alle außer für den Client namens `Mary's, John's, and Boris's Laptops`. Beachten Sie, dass das Komma (`,`) ebenfalls mit einem Escapezeichen versehen werden muss.
 
-* `||example.org^$client=~Mom|~Dad|Kids`: sperrt`example.org` für `Kids`, aber nicht für `Mom` und `Dad`. Dieses Beispiel zeigt, wie man mehrere Clients in einer Regel angeben kann.
+- `||example.org^$client=~Mom|~Dad|Kids`: sperrt`example.org` für `Kids`, aber nicht für `Mom` und `Dad`. Dieses Beispiel zeigt, wie man mehrere Clients in einer Regel angeben kann.
 
-* `||example.org^$client=192.168.0.0/24`: sperrt `example.org` für alle Clients mit IP-Adressen im Bereich von `192.168.0.0` bis `192.168.0.255`.
+- `||example.org^$client=192.168.0.0/24`: sperrt `example.org` für alle Clients mit IP-Adressen im Bereich von `192.168.0.0` bis `192.168.0.255`.
 
 #### `denyallow`
 
@@ -196,11 +196,11 @@ Das Problem bei diesem Ansatz ist, dass Sie auf diese Weise auch Tracking-Domain
 
 **Beispiele:**
 
-* `*$denyallow=com|net`: sperrt alles außer `*.com` und `*.net`.
+- `*$denyallow=com|net`: sperrt alles außer `*.com` und `*.net`.
 
-* `@@*$denyallow=com|net`: entsperrt alles außer `*.com` und `*.net`.
+- `@@*$denyallow=com|net`: entsperrt alles außer `*.com` und `*.net`.
 
-* `||example.org^$denyallow=sub.example.org`. sperrt `example.org` und `*.example.org`, aber nicht `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`. sperrt `example.org` und `*.example.org`, aber nicht `sub.example.org`.
 
 #### `dnstype`
 
@@ -229,9 +229,9 @@ $dnstype=value2
 
 **Beispiele:**
 
-* `||example.org^$dnstype=AAAA`: sperrt DNS-Anfragen für die IPv6-Adressen von `example.org`.
+- `||example.org^$dnstype=AAAA`: sperrt DNS-Anfragen für die IPv6-Adressen von `example.org`.
 
-* `||example.org^$dnstype=~A|~CNAME`: erlaubt ausschließlich `A` und `CNAME` DNS-Anfragen für `example.org`, der Rest wird gesperrt.
+- `||example.org^$dnstype=~A|~CNAME`: erlaubt ausschließlich `A` und `CNAME` DNS-Anfragen für `example.org`, der Rest wird gesperrt.
 
 **HINWEIS:** Vor der Version **v0.108.0** verwendete AdGuard Home den Typ der Anfrage, um die Antwortdatensätze zu filtern, und nicht den Typ des Antwortdatensatzes selbst.  Das führte zu Problemen, da dies bedeutete, dass man keine Regeln schreiben konnte, die bestimmte `CNAME`-Datensätze in Antworten auf `A`- und `AAAA`-Anfragen zuließen. In **v0.108.0** wurde dieses Verhalten geändert, so dass jetzt dieses:
 
@@ -290,16 +290,16 @@ Der `CNAME` ist besonders, weil AdGuard Home den Host auflöst und seine Informa
 dann lautet die Antwort etwa so:
 
 ```sh
-$ nslookup example.com my.adguard.local
+nslookup example.com my.adguard.local
 ```
 
 ```none
-Server:     my.adguard.local
-Address:    127.0.0.1#53
+Server: my.adguard.local
+Address: 127.0.0.1#53
 
 Non-authoritative answer:
 example.com canonical name = example.net.
-Name:   example.net
+Name: example.net
 Address: 1.2.3.4
 ```
 
@@ -314,17 +314,17 @@ führt zu einer Antwort mit zwei `A`-Datensätzen.
 
 Derzeit unterstützte RR-Typen mit Beispielen:
 
-* `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` fügt einen `PTR`-Eintrag für Reverse DNS hinzu. Reverse-DNS-Anfragen für `1.2.3.4` an den DNS-Server ergeben `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` fügt einen `PTR`-Eintrag für Reverse DNS hinzu. Reverse-DNS-Anfragen für `1.2.3.4` an den DNS-Server ergeben `example.net`.
 
   **HINWEIS:** Die IP MUSS in umgekehrter Reihenfolge angegeben werden. Siehe [RFC 1035][rfc1035].
 
-* `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` fügt einen `A`-Datensatz hinzu mit dem Wert `1.2.3.4`.
+- `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` fügt einen `A`-Datensatz hinzu mit dem Wert `1.2.3.4`.
 
-* `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` fügt einen `AAAA`-Datensatz mit dem Wert `abcd::1234` hinzu.
+- `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` fügt einen `AAAA`-Datensatz mit dem Wert `abcd::1234` hinzu.
 
-* `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` fügt einen `CNAME`-Eintrag hinzu. Siehe obige Erklärung.
+- `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` fügt einen `CNAME`-Eintrag hinzu. Siehe obige Erklärung.
 
-* `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` fügt einen `HTTPS`-Eintrag hinzu. Es wird nur eine Teilmenge von Parameterwerten unterstützt: Die Werte müssen `zusammenhängend` sein und wenn eine `Werteliste` `erwartet` wird, wird derzeit nur ein Wert unterstützt:
+- `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` fügt einen `HTTPS`-Eintrag hinzu. Es wird nur eine Teilmenge von Parameterwerten unterstützt: Die Werte müssen `zusammenhängend` sein und wenn eine `Werteliste` `erwartet` wird, wird derzeit nur ein Wert unterstützt:
 
    ```none
    ipv4hint=127.0.0.1             // Unterstützt.
@@ -335,23 +335,23 @@ Derzeit unterstützte RR-Typen mit Beispielen:
 
   Dies soll in Zukunft geändert werden.
 
-* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` fügt einen `MX`-Eintrag mit dem Prioritätswert `32` und dem Austauschwert `example.mail` hinzu.
+- `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` fügt einen `MX`-Eintrag mit dem Prioritätswert `32` und dem Austauschwert `example.mail` hinzu.
 
-* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` fügt einen `SVCB`-Wert hinzu. Siehe das obige `HTTPS`-Beispiel.
+- `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` fügt einen `SVCB`-Wert hinzu. Siehe das obige `HTTPS`-Beispiel.
 
-* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` fügt einen `TXT`-Datensatz mit dem Wert `hello_world`hinzu.
+- `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` fügt einen `TXT`-Datensatz mit dem Wert `hello_world`hinzu.
 
-* `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` fügt einen `SRV`-Eintrag mit dem Prioritätswert `10`, dem Gewichtswert `60`, dem Port`8080`und dem Zielwert `example.com` hinzu.
+- `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` fügt einen `SRV`-Eintrag mit dem Prioritätswert `10`, dem Gewichtswert `60`, dem Port`8080`und dem Zielwert `example.com` hinzu.
 
-* `||example.com^$dnsrewrite=NXDOMAIN;;` antwortet mit einem `NXDOMAIN`-Code.
+- `||example.com^$dnsrewrite=NXDOMAIN;;` antwortet mit einem `NXDOMAIN`-Code.
 
-* `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` antwortet mit einem leeren `NOERROR` antwortet auf alle `AAAA` Anfragen außer denen für `example.org`.
+- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` antwortet mit einem leeren `NOERROR` antwortet auf alle `AAAA` Anfragen außer denen für `example.org`.
 
 Ausnahmeregeln entfernen eine oder alle Regeln:
 
-* `@@||example.com^$dnsrewrite` entfernt alle DNS-Rewrite-Regeln.
+- `@@||example.com^$dnsrewrite` entfernt alle DNS-Rewrite-Regeln.
 
-* `@@||example.com^$dnsrewrite=1.2.3.4` entfernt die DNS-Rewrite-Regel, die einen `A`-Eintrag mit dem Wert `1.2.3.4` hinzufügt.
+- `@@||example.com^$dnsrewrite=1.2.3.4` entfernt die DNS-Rewrite-Regel, die einen `A`-Eintrag mit dem Wert `1.2.3.4` hinzufügt.
 
 #### `important`
 
@@ -359,7 +359,7 @@ Der `important` Modifikator, der auf eine Regel angewendet wird, erhöht ihre Pr
 
 **Beispiele:**
 
-* In diesem Beispiel:
+- In diesem Beispiel:
 
   ```none
   ||example.org^$important
@@ -368,7 +368,7 @@ Der `important` Modifikator, der auf eine Regel angewendet wird, erhöht ihre Pr
 
   `||example.org^$important` sperrt alle Anfragen an `*.example.org` trotz der Ausnahmeregel.
 
-* In diesem Beispiel:
+- In diesem Beispiel:
 
   ```none
   ||example^$important
@@ -383,9 +383,9 @@ Die Regeln mit dem Modifikator `badfilter` deaktivieren andere Grundregeln, auf 
 
 **Beispiele:**
 
-* `||example.com$badfilter` deaktiviert `||example.com`.
+- `||example.com$badfilter` deaktiviert `||example.com`.
 
-* `@@||example.org^$badfilter` deaktiviert `@@||example.org^`.
+- `@@||example.org^$badfilter` deaktiviert `@@||example.org^`.
 
   **Hinweis:** Der Modifikator `badfilter` funktioniert derzeit nicht mit Regeln im Stil von `/etc/hosts`. `127.0.0.1 example.org$badfilter` wird **nicht** die ursprüngliche Regel `127.0.0.1 example.org` deaktivieren.
 
@@ -411,42 +411,41 @@ Wenn einer der Tags des Clients mit den Ausschlusswerten `ctag` übereinstimmt, 
 
 **Beispiele:**
 
-* `||example.org^$ctag=device_pc|device_phone`: sperrt `example.org` für Clients, die als `device_pc` oder `device_phone` gekennzeichnet sind.
+- `||example.org^$ctag=device_pc|device_phone`: sperrt `example.org` für Clients, die als `device_pc` oder `device_phone` gekennzeichnet sind.
 
-* `||example.org^$ctag=~device_phone`: sperrt `example.org` für alle Clients außer denen, die als `device_phone` gekennzeichnet sind.
+- `||example.org^$ctag=~device_phone`: sperrt `example.org` für alle Clients außer denen, die als `device_phone` gekennzeichnet sind.
 
 Die Liste der zulässigen Tags:
 
-* Nach Gerätetyp:
+- Nach Gerätetyp:
 
-  * `device_audio`: Audiogeräte.
-  * `device_camera`: Kameras.
-  * `device_gameconsole`: Spielekonsolen.
-  * `device_laptop`: Laptops.
-  * `device_nas`: NAS (Network-attached Storages).
-  * `device_pc`: PCs.
-  * `device_phone`: Telefone.
-  * `device_printer`: Drucker.
-  * `device_securityalarm`: Sicherheitsalarmanlagen.
-  * `device_tablet`: Tablets.
-  * `device_tv`: Fernsehgeräte.
-  * `device_other`: andere Geräte.
+    - `device_audio`: Audiogeräte.
+    - `device_camera`: Kameras.
+    - `device_gameconsole`: Spielekonsolen.
+    - `device_laptop`: Laptops.
+    - `device_nas`: NAS (Network-attached Storages).
+    - `device_pc`: PCs.
+    - `device_phone`: Telefone.
+    - `device_printer`: Drucker.
+    - `device_securityalarm`: Sicherheitsalarmanlagen.
+    - `device_tablet`: Tablets.
+    - `device_tv`: Fernsehgeräte.
+    - `device_other`: andere Geräte.
 
-* Nach Betriebssystem:
+- Nach Betriebssystem:
 
-  * `os_android`: Android.
-  * `os_ios`: iOS.
-  * `os_linux`: Linux.
-  * `os_macos`: macOS.
-  * `os_windows`: Windows.
-  * `os_other`: andere Betriebssysteme.
+    - `os_android`: Android.
+    - `os_ios`: iOS.
+    - `os_linux`: Linux.
+    - `os_macos`: macOS.
+    - `os_windows`: Windows.
+    - `os_other`: andere Betriebssysteme.
 
-* Nach Benutzergruppen:
+- Nach Benutzergruppen:
 
-  * `user_admin`: Administratoren.
-  * `user_regular`: normale Benutzer.
-  * `user_child`: Kinder.
-
+    - `user_admin`: Administratoren.
+    - `user_regular`: normale Benutzer.
+    - `user_child`: Kinder.
 
 ## `/etc/hosts`-Stil-Syntax {#etc-hosts-syntax}
 
@@ -470,7 +469,6 @@ Hostnamen dürfen nur alphanumerische Zeichen, Bindestrich-Minuszeichen (`-`) un
 ```
 
 In AdGuard Home werden die IP-Adressen verwendet, um DNS-Anfragen für diese Domains zu beantworten. Im Private AdGuard DNS werden diese Adressen einfach gesperrt.
-
 
 ## Nur-Domain-Syntax
 

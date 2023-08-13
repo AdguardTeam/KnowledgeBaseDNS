@@ -3,11 +3,11 @@ title: 概览
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程序中。
 
-## 验证
+## Authentication
 
 ### 生成访问令牌
 
@@ -91,6 +91,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parameter         | Description                            |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
@@ -114,7 +115,7 @@ OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][op
 
 您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以在 [https://editor.swagger.io/][swagger] 打开本文件。
 
-## 反馈
+## Feedback
 
 如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您想添加什么。
 

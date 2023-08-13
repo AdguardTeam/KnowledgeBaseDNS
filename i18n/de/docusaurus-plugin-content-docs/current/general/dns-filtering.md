@@ -42,6 +42,7 @@ Andere DNS-Anbieter arbeiten möglicherweise anders. Informieren Sie sich daher 
 ### Lokale DNS-Blocklisten
 
 Aber wenn Sie sich nur auf DNS-Server verlassen, um Ihren DNS-Verkehr zu filtern, verlieren Sie jegliche Flexibilität. Wenn der gewählte Server eine Domain sperrt, können Sie nicht auf diese zugreifen. Mit AdGuard müssen Sie nicht einmal einen bestimmten DNS-Server konfigurieren, um den DNS-Verkehr zu filtern. Alle AdGuard-Produkte ermöglichen den Einsatz von DNS-Blocklisten, seien es einfache Hosts-Dateien oder Listen mit der [erweiterten Syntax](dns-filtering-syntax.md). Sie funktionieren ähnlich wie normale Blocklisten: Wenn eine DNS-Anfrage mit einer der Regeln in der aktiven Filterliste übereinstimmt, wird sie sperrt. Um genau zu sein, wird es in ein „schwarzes Loch” umgeleitet (also verworfen).
+
 > In AdGuard für iOS müssen Sie zunächst in den Einstellungen den „Erweiterten Modus“ aktivieren, um Zugang zur DNS-Blockierung zu erhalten.
 
 Sie können so viele benutzerdefinierte Blocklisten hinzufügen, wie Sie möchten. Sie können beispielsweise [AdGuard DNS-Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) verwenden. Er sperrt buchstäblich alles, was der AdGuard-DNS-Server tut, aber in diesem Fall steht es Ihnen frei, einen anderen DNS-Server zu verwenden. Außerdem können Sie auf diese Weise weitere Filter hinzufügen oder benutzerdefinierte Ausnahmeregeln erstellen, was mit einer einfachen „Verwendung eines blockierenden DNS-Servers“ nicht möglich wäre.
@@ -56,15 +57,15 @@ Zunächst einmal müssen wir erwähnen, dass Sie mit AdGuard nicht wählen müss
 **Vorteile der DNS-Filterung:**
 
 1. Auf einigen Plattformen ist dies die einzige Möglichkeit, eine systemweite Filterung zu erreichen. Unter iOS unterstützt beispielsweise nur der Safari-Browser das Sperren von Inhalten im bekannten Sinne, für alles andere gibt es nur DNS-Filterung.
-2. Einige Formen der Verfolgung (wie [CNAME-cloaked tracking](https://adguard.com/blog/cname-tracking.html)) können nur durch DNS-Filterung bekämpft werden.
-3. Die Phase der Verarbeitung einer DNS-Anfrage ist die früheste Phase, in der Sie möglicherweise mit einer Anzeige oder einem Tracker umgehen können. Dies hilft, ein wenig Akkulaufzeit und Datenverkehr zu sparen.
+1. Einige Formen der Verfolgung (wie [CNAME-cloaked tracking](https://adguard.com/blog/cname-tracking.html)) können nur durch DNS-Filterung bekämpft werden.
+1. Die Phase der Verarbeitung einer DNS-Anfrage ist die früheste Phase, in der Sie möglicherweise mit einer Anzeige oder einem Tracker umgehen können. Dies hilft, ein wenig Akkulaufzeit und Datenverkehr zu sparen.
 
 **Nachteile der DNS-Filterung:**
 
-1. Die DNS-Filterung ist „grob“, was bedeutet, dass sie keine Leerzeichen entfernt, die hinter einer gesperrten Werbung zurückbleiben, oder irgendeine Art von kosmetischer Filterung anwendet. Viele der komplizierteren Anzeigen können nicht auf DNS-Ebene gesperrt werden (oder besser gesagt, sie können es, aber nur durch Sperren der gesamten Domains, die für andere Zwecke verwendet werden).
+1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
-![Beispiel für den Unterschied](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Ein Beispiel für den Unterschied zwischen DNS-Filterung und Netzwerk-Filterung*
+    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 
-2. Es ist nicht möglich, den Ursprung einer DNS-Anfrage zu kennen, was bedeutet, dass man auf DNS-Ebene nicht zwischen verschiedenen Anwendungen unterscheiden kann. Dies wirkt sich negativ auf die Statistiken aus und macht es unmöglich, app-spezifische Filterregeln zu erstellen.
+1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
 
-Wir empfehlen, die DNS-Filterung nach Möglichkeit zusätzlich zur Netzwerkfilterung zu verwenden, nicht an deren Stelle.
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

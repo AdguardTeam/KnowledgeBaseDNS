@@ -19,29 +19,29 @@ Pode utilizar a sintaxe das regras de filtragem do AdGuard DNS para tornar as re
 
 Existem três abordagens diferentes para escrever listas de bloqueio de hosts:
 
-* [Sintaxe estilo Adblock](#adblock-style-syntax): a abordagem moderna à escrita de regras de filtragem baseada na utilização de um subconjunto da sintaxe de regras estilo Adblock. Dessa forma, as listas de bloqueio são compatíveis com os bloqueadores de anúncios do navegador.
+- [Sintaxe estilo Adblock](#adblock-style-syntax): a abordagem moderna à escrita de regras de filtragem baseada na utilização de um subconjunto da sintaxe de regras estilo Adblock. Dessa forma, as listas de bloqueio são compatíveis com os bloqueadores de anúncios do navegador.
 
-* [`/etc/hosts` sintaxe](#etc-hosts-syntax): a abordagem antiga e comprovada que usa a mesma sintaxe que os sistemas operacionais usam para seus arquivos de hosts.
+- [`/etc/hosts` sintaxe](#etc-hosts-syntax): a abordagem antiga e comprovada que usa a mesma sintaxe que os sistemas operacionais usam para seus arquivos de hosts.
 
-* [Sintaxe somente de domínios](#domains-only-syntax): uma lista simples de nomes de domínio.
+- [Sintaxe somente de domínios](#domains-only-syntax): uma lista simples de nomes de domínio.
 
 Se você estiver criando uma lista de bloqueio, recomendamos usar a sintaxe [estilo Adblock](#adblock-style-syntax). Tem algumas vantagens importantes sobre a sintaxe de estilo antigo:
 
-* **Tamanho das listas de bloqueio.** O uso de correspondência de padrões permite que você tenha uma única regra em vez de centenas de `/etc/hosts` entradas.
+- **Tamanho das listas de bloqueio.** O uso de correspondência de padrões permite que você tenha uma única regra em vez de centenas de `/etc/hosts` entradas.
 
-* **Compatibilidade.** Sua lista de bloqueio será compatível com bloqueadores de anúncios do navegador e será mais fácil compartilhar regras com uma lista de filtros do navegador.
+- **Compatibilidade.** Sua lista de bloqueio será compatível com bloqueadores de anúncios do navegador e será mais fácil compartilhar regras com uma lista de filtros do navegador.
 
-* **Extensibilidade.** Na última década, a sintaxe do estilo Adblock evoluiu muito e não vemos razão para não estendê-la ainda mais e oferecer recursos adicionais para bloqueadores no nível da rede.
+- **Extensibilidade.** Na última década, a sintaxe do estilo Adblock evoluiu muito e não vemos razão para não estendê-la ainda mais e oferecer recursos adicionais para bloqueadores no nível da rede.
 
 Se você estiver mantendo uma lista de bloqueio de estilo `/etc/hosts`ou várias listas de filtragem (independentemente do tipo), fornecemos uma ferramenta para compilação de lista de bloqueio. Nós a chamamos de [Compilador Hostlist][hlc] e nós mesmos a usamos para criar o [filtro AdGuard DNS][sdn].
 
 ## Exemplos básicos
 
-* `||exemplo.org^`: bloqueia o acesso ao domínio `exemplo.org` e a todos os seus subdomínios, como `www.exemplo.org`.
+- `||exemplo.org^`: bloqueia o acesso ao domínio `exemplo.org` e a todos os seus subdomínios, como `www.exemplo.org`.
 
-* `@@||exemplo.org^`: desbloqueia o acesso ao domínio `exemplo.org` e a todos os seus subdomínios.
+- `@@||exemplo.org^`: desbloqueia o acesso ao domínio `exemplo.org` e a todos os seus subdomínios.
 
-* `1.2.3.4 exemplo.org`: (atenção, `/etc/hosts` - estilo antigo de sintaxe) em AdGuard Home, responder com `1.2.3.4` a consultas para o domínio `exemplo.org` mas **não** os seus subdomínios. No AdGuard DNS Privado, bloqueia o acesso a `exemplo.org`. `www.exemplo.org` permanece permitido.
+- `1.2.3.4 exemplo.org`: (atenção, `/etc/hosts` - estilo antigo de sintaxe) em AdGuard Home, responder com `1.2.3.4` a consultas para o domínio `exemplo.org` mas **não** os seus subdomínios. No AdGuard DNS Privado, bloqueia o acesso a `exemplo.org`. `www.exemplo.org` permanece permitido.
 
   No AdGuard Home, usar o endereço IP não especificado (`0.0.0.0`) ou um endereço local (`127.0.0.1` e similares) para um host é basicamente o mesmo que bloquear esse host.
 
@@ -52,11 +52,11 @@ Se você estiver mantendo uma lista de bloqueio de estilo `/etc/hosts`ou várias
   0.0.0.0 exemplo.org
   ```
 
-* `exemplo.org`: uma regra de domínio simples. Bloqueia o domínio `exemplo.org`, mas **não** os seus subdomínios. `www.exemplo.org` permanece permitido.
+- `exemplo.org`: uma regra de domínio simples. Bloqueia o domínio `exemplo.org`, mas **não** os seus subdomínios. `www.exemplo.org` permanece permitido.
 
-* `! Aqui vai um comentário` e `# Também um comentário`: comentários.
+- `! Aqui vai um comentário` e `# Também um comentário`: comentários.
 
-* `/REGEX/`: bloqueia acesso aos domínios que correspondem à expressão regular especificada.
+- `/REGEX/`: bloqueia acesso aos domínios que correspondem à expressão regular especificada.
 
 ## Sintaxe estilo Adblock
 
@@ -67,21 +67,21 @@ Este é um subconjunto da [sintaxe tradicional do estilo Adblock][adb] que é us
 modificadores = [modificador0, modificador1[, ...[, modificadorN]]]
 ```
 
-* ` pattern `: a máscara do hostname. Cada hostname é comparado com esta máscara. O padrão também pode conter caracteres especiais, que são descritos abaixo.
+- ` pattern `: a máscara do hostname. Cada hostname é comparado com esta máscara. O padrão também pode conter caracteres especiais, que são descritos abaixo.
 
-* `@@`: o marcador que é usado nas regras de exceção. Inicie sua regra com este marcador se desejar desativar a filtragem dos nomes de host correspondentes.
+- `@@`: o marcador que é usado nas regras de exceção. Inicie sua regra com este marcador se desejar desativar a filtragem dos nomes de host correspondentes.
 
-* `modifiers`: parâmetros que esclarecem a regra. Eles podem limitar o escopo da regra ou até mesmo mudar completamente a forma como ela funciona.
+- `modifiers`: parâmetros que esclarecem a regra. Eles podem limitar o escopo da regra ou até mesmo mudar completamente a forma como ela funciona.
 
 ### Caracteres especiais
 
-* `*`: o caractere curinga. É usado para representar qualquer conjunto de caracteres. Isso também pode ser uma string vazia ou uma string de qualquer tamanho.
+- `*`: o caractere curinga. É usado para representar qualquer conjunto de caracteres. Isso também pode ser uma string vazia ou uma string de qualquer tamanho.
 
-* `||`: corresponde ao início de um nome de host, incluindo qualquer subdomínio. Por exemplo, `||exemplo.org` corresponde a `exemplo.org` e `teste.exemplo.org`, mas não `testexample.org`.
+- `||`: corresponde ao início de um nome de host, incluindo qualquer subdomínio. Por exemplo, `||exemplo.org` corresponde a `exemplo.org` e `teste.exemplo.org`, mas não `testexample.org`.
 
-* `^`: o caractere separador. Ao contrário do bloqueio de anúncios do navegador, não há nada para separar em um nome de host, portanto, o único objetivo desse caractere é marcar o final do nome do host.
+- `^`: o caractere separador. Ao contrário do bloqueio de anúncios do navegador, não há nada para separar em um nome de host, portanto, o único objetivo desse caractere é marcar o final do nome do host.
 
-* `|`: um ponteiro para o início ou o fim do nome do host. O valor depende do posicionamento do caractere na máscara. Por exemplo, a regra `ample.org|` corresponde a `exemplo.org` mas não a `exemplo.org.com`. `|exemplo` corresponde a `exemplo.org` mas não a `teste.exemplo`.
+- `|`: um ponteiro para o início ou o fim do nome do host. O valor depende do posicionamento do caractere na máscara. Por exemplo, a regra `ample.org|` corresponde a `exemplo.org` mas não a `exemplo.org.com`. `|exemplo` corresponde a `exemplo.org` mas não a `teste.exemplo`.
 
 ### Expressões regulares
 
@@ -93,9 +93,9 @@ padrão = "/" regexp "/"
 
 **Exemplos:**
 
-* `/example.*/` bloqueará os hosts correspondentes ao `example.*` regexp.
+- `/example.*/` bloqueará os hosts correspondentes ao `example.*` regexp.
 
-* `@@/example.*/$important` irá desbloquear os hosts correspondentes ao `exemplo.*` regexp. Observe que esta regra também implica o modificador`important`.
+- `@@/example.*/$important` irá desbloquear os hosts correspondentes ao `exemplo.*` regexp. Observe que esta regra também implica o modificador`important`.
 
 ### Comentários
 
@@ -114,12 +114,12 @@ Você pode alterar o comportamento de uma regra adicionando modificadores. Os mo
 
 **Exemplos:**
 
-* ```none ||exemplo.org^$important
+- ```none ||exemplo.org^$important
    ```
 
   `||example.org^` é o padrão correspondente. `$` é o delimitador, que sinaliza que o restante da regra são modificadores. `important` é o modificador.
 
-* Você pode querer usar vários modificadores em uma regra. Nesse caso, separe-os por vírgulas:
+- You may want to use multiple modifiers in a rule. Nesse caso, separe-os por vírgulas:
 
   ```none
   ||example.org^$client=127.0.0.1,dnstype=A
@@ -133,9 +133,9 @@ Você pode alterar o comportamento de uma regra adicionando modificadores. Os mo
 
 O modificador `client` permite especificar os clientes aos quais esta regra é aplicada. Existem duas maneiras principais de identificar um cliente:
 
-* Por seu endereço IP ou prefixo CIDR. Esta forma funciona para todos os tipos de clientes.
+- Por seu endereço IP ou prefixo CIDR. Esta forma funciona para todos os tipos de clientes.
 
-* Pelo seu nome. Essa forma funciona apenas para clientes persistentes (no AdGuard Home) e dispositivos (no DNS privado do AdGuard), que você adicionou manualmente.
+- Pelo seu nome. Essa forma funciona apenas para clientes persistentes (no AdGuard Home) e dispositivos (no DNS privado do AdGuard), que você adicionou manualmente.
 
   **NOTA:** No AdGuard Home, ClientIDs não são compatíveis atualmente, apenas nomes são compatíveis. Se você adicionou um cliente com o nome “My Client” e ClientID `my-client` digite seu modificador como `$client='My Client'` em vez de `$client=my-client`.
 
@@ -157,15 +157,15 @@ Os nomes dos clientes geralmente contêm espaços ou outros caracteres especiais
 
 **Exemplos:**
 
-* `@@||*^$client=127.0.0.1`: desbloqueie tudo para localhost.
+- `@@||*^$client=127.0.0.1`: desbloqueie tudo para localhost.
 
-* `||example.org^$client='Laptop do Frank'`: bloco `example.org` para o cliente chamado `Laptop do Frank` apenas. Observe que as aspas (`'`) no nome devem ter escape.
+- `||example.org^$client='Laptop do Frank'`: bloco `example.org` para o cliente chamado `Laptop do Frank` apenas. Observe que as aspas (`'`) no nome devem ter escape.
 
-* `||example.org^$client=~'Laptops de Mary, John e Boris`: bloqueie `example.org` para todos, exceto para o cliente chamado `Laptop de Mary, John e Boris`. Observe que a vírgula (`,`) também deve ser escapada.
+- `||example.org^$client=~'Laptops de Mary, John e Boris`: bloqueie `example.org` para todos, exceto para o cliente chamado `Laptop de Mary, John e Boris`. Observe que a vírgula (`,`) também deve ser escapada.
 
-* `||example.org^$client=~Mãe|~Pai|Crianças`: bloqueie `exemplo.org` para `Crianças`, mas não para `Mãe` e `Pai`. Este exemplo demonstra como especificar vários clientes em uma regra.
+- `||example.org^$client=~Mãe|~Pai|Crianças`: bloqueie `exemplo.org` para `Crianças`, mas não para `Mãe` e `Pai`. Este exemplo demonstra como especificar vários clientes em uma regra.
 
-* `||example.org^$client=192.168.0.0/24`: bloqueie `example.org` para todos os clientes com endereços IP no intervalo de `192.168.0.0` a `192.168.0.255`.
+- `||example.org^$client=192.168.0.0/24`: bloqueie `example.org` para todos os clientes com endereços IP no intervalo de `192.168.0.0` a `192.168.0.255`.
 
 #### `denyallow`
 
@@ -196,11 +196,11 @@ O problema com essa abordagem é que, dessa forma, você também desbloqueará o
 
 **Exemplos:**
 
-* `*$denyallow=com|net`: bloqueie tudo exceto `*.com` e `*.net`.
+- `*$denyallow=com|net`: bloqueie tudo exceto `*.com` e `*.net`.
 
-* `@@*$denyallow=com|net`: desbloqueie tudo exceto `*.com` e `*.net`.
+- `@@*$denyallow=com|net`: desbloqueie tudo exceto `*.com` e `*.net`.
 
-* `||exemplo.org^$denyallow=sub.exemplo.org`. bloqueie `example.org` e `*.example.org`, mas não bloqueie `sub.example.org`.
+- `||exemplo.org^$denyallow=sub.exemplo.org`. bloqueie `example.org` e `*.example.org`, mas não bloqueie `sub.example.org`.
 
 #### `dnstype`
 
@@ -229,9 +229,9 @@ $dnstype=valor2
 
 **Exemplos:**
 
-* `||example.org^$dnstype=AAAA`: bloqueia consultas DNS para os endereços IPv6 de `example.org`.
+- `||example.org^$dnstype=AAAA`: bloqueia consultas DNS para os endereços IPv6 de `example.org`.
 
-* `||example.org^$dnstype=~A|~CNAME`: permita apenas `A` e `CNAME` consultas DNS para `example.org`, bloqueie o resto.
+- `||example.org^$dnstype=~A|~CNAME`: permita apenas `A` e `CNAME` consultas DNS para `example.org`, bloqueie o resto.
 
 **NOTA:** Antes da versão **v0.108.0,** o AdGuard Home usaria o tipo de solicitação para filtrar os registros de resposta, em oposição ao tipo do próprio registro de resposta.  Isso causava problemas, pois significava que você não poderia escrever regras que permitissem certos registros `CNAME` em respostas em solicitações `A` e `AAAA`. Em **v0.108.0** esse comportamento foi alterado, agora isso:
 
@@ -290,17 +290,17 @@ O `CNAME` é especial porque o AdGuard Home resolverá o host e adicionará suas
 então a resposta será algo como:
 
 ```sh
-$ nslookup example.com my.adguard.local
+nslookup example.com my.adguard.local
 ```
 
 ```none
-Servidor: my.adguard.local
-Endereço: 127.0.0.1#53
+Server: my.adguard.local
+Address: 127.0.0.1#53
 
-Resposta não autoritativa:
-exemplo.com nome canônico = exemplo.net.
-Nome: example.net
-Endereço: 1.2.3.4
+Non-authoritative answer:
+example.com canonical name = example.net.
+Name: example.net
+Address: 1.2.3.4
 ```
 
 Em seguida, a substituição do `CNAME`. Depois disso, os valores de todos os outros registros são somados como uma resposta, então isso:
@@ -314,17 +314,17 @@ resultará em uma resposta com dois registros `A`.
 
 Tipos de RR atualmente compatíveis, com exemplos:
 
-* `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adiciona uma gravação `PTR`para DNS reverso. Solicitações DNS reversas para `1.2.3.4` para o servidor DNS resultarão em `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adiciona uma gravação `PTR`para DNS reverso. Solicitações DNS reversas para `1.2.3.4` para o servidor DNS resultarão em `example.net`.
 
   **NOTA:** o IP DEVE estar na ordem inversa. Veja [RFC 1035][rfc1035].
 
-* `||exemplo.com^$dnsrewrite=NOERROR;A;1.2.3.4` adiciona um registro `A` com o valor `1.2.3.4`.
+- `||exemplo.com^$dnsrewrite=NOERROR;A;1.2.3.4` adiciona um registro `A` com o valor `1.2.3.4`.
 
-* `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` adiciona um registro `AAAA` com o valor `abcd::1234`.
+- `||example.com^$dnsrewrite=NOERROR;AAAA;abcd::1234` adiciona um registro `AAAA` com o valor `abcd::1234`.
 
-* `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adiciona o registro `CNAME`. Veja a explicação acima.
+- `||example.com^$dnsrewrite=NOERROR;CNAME;example.org` adiciona o registro `CNAME`. Veja a explicação acima.
 
-* `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adiciona um registro `HTTPS`. Apenas um subconjunto de valores de parâmetro é suportado: os valores devem ser `contíguos` e, onde uma lista de `valores` é `esperada`, apenas um valor é atualmente compatível:
+- `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3` adiciona um registro `HTTPS`. Apenas um subconjunto de valores de parâmetro é suportado: os valores devem ser `contíguos` e, onde uma lista de `valores` é `esperada`, apenas um valor é atualmente compatível:
 
    ```none
    ipv4hint=127.0.0.1             // Compatível.
@@ -335,23 +335,23 @@ Tipos de RR atualmente compatíveis, com exemplos:
 
   Isso será alterado no futuro.
 
-* `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` adiciona um registro `MX` com valor de precedência `32` e valor de troca `example.mail`.
+- `||example.com^$dnsrewrite=NOERROR;MX;32 example.mail` adiciona um registro `MX` com valor de precedência `32` e valor de troca `example.mail`.
 
-* `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` adiciona um valor `SVCB`. Veja o exemplo `HTTPS` acima.
+- `||example.com^$dnsrewrite=NOERROR;SVCB;32 example.com alpn=h3` adiciona um valor `SVCB`. Veja o exemplo `HTTPS` acima.
 
-* `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` adiciona um registro `TXT` com o valor `hello_world`.
+- `||example.com^$dnsrewrite=NOERROR;TXT;hello_world` adiciona um registro `TXT` com o valor `hello_world`.
 
-* `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` adiciona um registo `SRV` com valor de prioridade `10`, valor de peso `60`, porta`8080`e valor de destino `example.com`.
+- `||_svctype._tcp.example.com^$dnsrewrite=NOERROR;SRV;10 60 8080 example.com` adiciona um registo `SRV` com valor de prioridade `10`, valor de peso `60`, porta`8080`e valor de destino `example.com`.
 
-* `||exemplo.com^$dnsrewrite=NXDOMAIN;;` responde com um código `NXDOMAIN`.
+- `||exemplo.com^$dnsrewrite=NXDOMAIN;;` responde com um código `NXDOMAIN`.
 
-* `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responde com um `NOERROR` vazio responde a todos os pedidos `AAAA` exceto os pedidos para `example.org`.
+- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responde com um `NOERROR` vazio responde a todos os pedidos `AAAA` exceto os pedidos para `example.org`.
 
 As regras de exceção removem uma ou todas as regras:
 
-* `@@||example.com^$dnsrewrite` remove todas as regras de reescrita de DNS.
+- `@@||example.com^$dnsrewrite` remove todas as regras de reescrita de DNS.
 
-* `@@||example.com^$dnsrewrite=1.2.3.4` remove a regra de reescrita de DNS que adiciona um registro `A` com o valor `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` remove a regra de reescrita de DNS que adiciona um registro `A` com o valor `1.2.3.4`.
 
 #### `important`
 
@@ -359,7 +359,7 @@ O modificador `important` aplicado a uma regra aumenta sua prioridade sobre qual
 
 **Exemplos:**
 
-* Neste exemplo:
+- Neste exemplo:
 
   ```none
   ||example.org^$important
@@ -368,7 +368,7 @@ O modificador `important` aplicado a uma regra aumenta sua prioridade sobre qual
 
   `||example.org^$important` bloqueará todas as solicitações para `*.example.org` apesar da regra de exceção.
 
-* Neste exemplo:
+- Neste exemplo:
 
   ```none
   ||example.org^$important
@@ -383,9 +383,9 @@ As regras com o modificador `badfilter` desativam outras regras básicas às qua
 
 **Exemplos:**
 
-* `||exemplo.com$badfilter` desativa `||exemplo.com`.
+- `||exemplo.com$badfilter` desativa `||exemplo.com`.
 
-* `@@||example.org^$badfilter` desativa `@@||example.org^`.
+- `@@||example.org^$badfilter` desativa `@@||example.org^`.
 
   **NOTA:** O modificador `badfilter` atualmente não funciona com regras de estilo `/etc/hosts`. `127.0.0.1 exemplo.org$badfilter` **não** irá desativar a regra original `127.0.0.1 exemplo.org`.
 
@@ -411,42 +411,41 @@ Se uma das tags do cliente corresponder aos valores de exclusão `ctag`, essa re
 
 **Exemplos:**
 
-* `||example.org^$ctag=device_pc|device_phone`: bloco `example.org` para clientes marcados como `device_pc` ou `device_phone`.
+- `||example.org^$ctag=device_pc|device_phone`: bloco `example.org` para clientes marcados como `device_pc` ou `device_phone`.
 
-* `||example.org^$ctag=~device_phone`: bloco `example.org` para todos os clientes, exceto aqueles marcados como `device_phone`.
+- `||example.org^$ctag=~device_phone`: bloco `example.org` para todos os clientes, exceto aqueles marcados como `device_phone`.
 
 A lista de tags permitidas:
 
-* Por tipo de dispositivo:
+- Por tipo de dispositivo:
 
-  * `device_audio`: dispositivos de áudio.
-  * `device_camera`: câmeras.
-  * `device_gameconsole`: consoles de jogos.
-  * `device_laptop`: notebooks.
-  * `device_nas`: NAS (Network-attached Storages).
-  * `device_pc`: PCs.
-  * `device_phone`: celulares.
-  * `device_printer`: impressoras.
-  * `device_securityalarm`: alarmes de segurança.
-  * `device_tablet`: tablets.
-  * `device_tv`: TVs.
-  * `device_other`: outros dispositivos.
+    - `device_audio`: dispositivos de áudio.
+    - `device_camera`: câmeras.
+    - `device_gameconsole`: consoles de jogos.
+    - `device_laptop`: notebooks.
+    - `device_nas`: NAS (Network-attached Storages).
+    - `device_pc`: PCs.
+    - `device_phone`: celulares.
+    - `device_printer`: impressoras.
+    - `device_securityalarm`: alarmes de segurança.
+    - `device_tablet`: tablets.
+    - `device_tv`: TVs.
+    - `device_other`: outros dispositivos.
 
-* Por sistema operacional:
+- Por sistema operacional:
 
-  * `os_android`: Android.
-  * `os_ios`: iOS.
-  * `os_linux`: Linux.
-  * `os_macos`: macOS.
-  * `os_windows`: Windows.
-  * `os_other`: outros sistemas operacionais.
+    - `os_android`: Android.
+    - `os_ios`: iOS.
+    - `os_linux`: Linux.
+    - `os_macos`: macOS.
+    - `os_windows`: Windows.
+    - `os_other`: outros sistemas operacionais.
 
-* Por grupo de usuários:
+- Por grupo de usuários:
 
-  * `user_admin`: administradores.
-  * `user_regular`: usuários comuns.
-  * `user_child`: filhos.
-
+    - `user_admin`: administradores.
+    - `user_regular`: usuários comuns.
+    - `user_child`: filhos.
 
 ## `/etc/hosts`-Sintaxe de estilo {#etc-hosts-syntax}
 
@@ -470,7 +469,6 @@ Os nomes de host podem conter apenas caracteres alfanuméricos, hífen (`-`) e p
 ```
 
 No AdGuard Home, os endereços IP são usados para responder às consultas de DNS desses domínios. No DNS privado do AdGuard, esses endereços são simplesmente bloqueados.
-
 
 ## Sintaxe somente de domínios
 
