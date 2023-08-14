@@ -14,7 +14,7 @@ DNS stamps allow you to customize secure DNS settings beyond the usual URLs. In 
 
 ## Choosing the protocol
 
-Types of secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on your preferences and usage conditions.
+Types of secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on your preferences and the context in which you'll be using them.
 
 ## Creating a DNS stamp
 
@@ -40,7 +40,7 @@ Types of secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `
     
     Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the ["Obtaining the Certificate Hash"](###obtaining-the-certificate-hash) section.
     - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
-    
+
     - For **DoH**:
       - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
 
