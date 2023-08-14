@@ -46,5 +46,9 @@
   "link.item.label.vpn": {
     "message": "AdGuard VPN",
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
+  },
+  "copyright": {
+    "message": "© AdGuard DNS, 2023",
+    "description": "The footer copyright"
   }
 }

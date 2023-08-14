@@ -42,6 +42,7 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 ### 本地 DNS 拦截列表
 
 但是如果只依赖 DNS 服务器来过滤 DNS 流量，用户就失去所有的灵活性。 如果选定的服务器拦截域名，用户将无法访问该域名。 但如果使用 AdGuard，您甚至不需要配置任何特定的 DNS 服务器就可以过滤 DNS 流量。 所有 AdGuard 产品允许用户应用 DNS 拦截列表，无论是简单的 Hosts 文件还是使用[更复杂语法](dns-filtering-syntax.md)的清单。 它们与一般的广告过滤器运行相似：当 DNS 请求与某一个属于激活过滤器列表的规则相匹配时，该 DNS 请求将会被阻止。 更准确地说，这个 DNS 请求将会发送到“黑洞”。
+
 > 在 AdGuard iOS 版上您先要在设置里启用「高级模式」以使用 DNS 拦截。
 
 用户可以自定义添加所要的拦截列表数量。 比方说，用户可以使用 [AdGuard DNS 过滤器](https://github.com/AdguardTeam/AdGuardSDNSFilter)。 它能够拦截所有 AdGuard DNS 服务器屏蔽的元素，但是使用 AdGuard DNS 过滤器的话，用户还可以使用任何其它 DNS 服务器。 此外，用户还可以添加更多过滤器或创建自定义排除项规则。上述的功能都不可能通过简单的「使用拦截 DNS 服务器」设置来实现。
@@ -56,15 +57,15 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 **Pros of DNS filtering:**
 
 1. 在某些平台上，这是实现系统范围过滤的唯一方法。 比方说，在 iOS 上只有 Safari 浏览器支持内容拦截。为了拦截其它内容，用户只可以用 DNS 过滤。
-2. 有些跟踪方式，比如 [CNAME 跟踪](https://adguard.com/blog/cname-tracking.html)，只可以通过 DNS 过滤被拦截。
-3. 处理 DNS 请求是您可以拦截广告或跟踪器的最早阶段。这样您可以节省点电池寿命及流量。
+1. 有些跟踪方式，比如 [CNAME 跟踪](https://adguard.com/blog/cname-tracking.html)，只可以通过 DNS 过滤被拦截。
+1. 处理 DNS 请求是您可以拦截广告或跟踪器的最早阶段。这样您可以节省点电池寿命及流量。
 
 **Cons of DNS filtering:**
 
-1. DNS 过滤是一种“粗略的过滤法”。意思是 DNS 过滤不会移除拦截广告后留下的白空，或让您使用自定义过滤方式。 许多更复杂的广告无法在 DNS 级别被阻止（或者更确切地说，它们可以被拦截，但只能通过阻止用于其他目的的整个网域）。
+1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
-![对比示例](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNS 与网络层面过滤的区别*
+    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 
-2. 无法知道 DNS 请求的来源，这意味着您无法区分 DNS 级别的不同应用。 这会影响统计数据，并且不允许我们创建针对特定的应用程序过滤规则。
+1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
 
-我们推荐在网络过滤的基础上再使用 DNS 过滤，而不是完全代替它。
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

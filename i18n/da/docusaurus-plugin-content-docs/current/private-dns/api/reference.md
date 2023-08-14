@@ -5,7 +5,7 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!-- 
+<!--
     The content below is simply an automatic conversion from the OpenAPI spec
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
@@ -13,7 +13,8 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-# AdGuard DNS API
+## AdGuard DNS API
+
 DNS API-dokumentation
 
 ## Version: 1.4
@@ -21,7 +22,8 @@ DNS API-dokumentation
 ### /oapi/v1/account/limits
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter kontokvoter
 
@@ -34,7 +36,8 @@ Henter kontokvoter
 ### /oapi/v1/devices
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Oplist enheder
 
@@ -45,7 +48,8 @@ Oplist enheder
 | 200  | Enhedsliste |
 
 #### POST
-##### Resumé:
+
+##### Resumé
 
 Opretter en ny enhed
 
@@ -60,7 +64,8 @@ Opretter en ny enhed
 ### /oapi/v1/devices/{device_id}
 
 #### SLET
-##### Resumé:
+
+##### Resumé
 
 Fjerner en enhed
 
@@ -78,7 +83,8 @@ Fjerner en enhed
 | 404  | Enhed ikke fundet |
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter en eksisterede enhed jf. ID
 
@@ -96,7 +102,8 @@ Henter en eksisterede enhed jf. ID
 | 404  | Enhed ikke fundet |
 
 #### PUT
-##### Resumé:
+
+##### Resumé
 
 Opdaterer en eksisterende enhed
 
@@ -117,7 +124,8 @@ Opdaterer en eksisterende enhed
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter DNS-over-HTTPS .mobileconfig-filen.
 
@@ -139,7 +147,8 @@ Henter DNS-over-HTTPS .mobileconfig-filen.
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter DNS-over-TLS .mobileconfig-filen.
 
@@ -161,7 +170,8 @@ Henter DNS-over-TLS .mobileconfig-filen.
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Resumé:
+
+##### Resumé
 
 Opdaterer enhedsindstillinger
 
@@ -182,11 +192,12 @@ Opdaterer enhedsindstillinger
 ### /oapi/v1/dns_servers
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Viser DNS-servere tilhørende brugeren.
 
-##### Beskrivelse:
+##### Beskrivelse
 
 Viser DNS-servere tilhørende brugeren. Som standard er der mindst én standardserver.
 
@@ -197,11 +208,12 @@ Viser DNS-servere tilhørende brugeren. Som standard er der mindst én standards
 | 200  | Liste over DNS-servere |
 
 #### POST
-##### Resumé:
+
+##### Resumé
 
 Opretter en ny DNS-server
 
-##### Beskrivelse:
+##### Beskrivelse
 
 Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers oprettes DNS-serveren med standardindstillinger.
 
@@ -216,11 +228,12 @@ Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers opret
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### SLET
-##### Resumé:
+
+##### Resumé
 
 Fjerner en DNS-server
 
-##### Beskrivelse:
+##### Beskrivelse
 
 Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til standard DNS-serveren. Sletning af en standard DNS-server er forbudt.
 
@@ -238,7 +251,8 @@ Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til stan
 | 404  | DNS-server ikke fundet |
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter en eksisterede DNS-server jf. ID
 
@@ -256,7 +270,8 @@ Henter en eksisterede DNS-server jf. ID
 | 404  | DNS-server ikke fundet |
 
 #### PUT
-##### Resumé:
+
+##### Resumé
 
 Opdaterer en eksisterende DNS-server
 
@@ -277,7 +292,8 @@ Opdaterer en eksisterende DNS-server
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Resumé:
+
+##### Resumé
 
 Opdaterer DNS-serverindstillinger
 
@@ -298,7 +314,8 @@ Opdaterer DNS-serverindstillinger
 ### /oapi/v1/filter_lists
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter filterliste
 
@@ -311,7 +328,8 @@ Henter filterliste
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Resumé:
+
+##### Resumé
 
 Genererer Access og Refresh tokener
 
@@ -328,7 +346,8 @@ null
 ### /oapi/v1/query_log
 
 #### SLET
-##### Resumé:
+
+##### Resumé
 
 Rydder forespørgselslog
 
@@ -339,7 +358,8 @@ Rydder forespørgselslog
 | 202  | Forespørgselslog hermed ryddet |
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter forespørgselslog
 
@@ -367,7 +387,8 @@ Henter forespørgselslog
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Resumé:
+
+##### Resumé
 
 Ophæver et Refresh-token
 
@@ -388,7 +409,8 @@ null
 ### /oapi/v1/stats/categories
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter kategoristatistik
 
@@ -411,7 +433,8 @@ Henter kategoristatistik
 ### /oapi/v1/stats/companies
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter virksomhedsstatistik
 
@@ -434,7 +457,8 @@ Henter virksomhedsstatistik
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter detaljerede virksomhedsstatistikker
 
@@ -458,7 +482,8 @@ Henter detaljerede virksomhedsstatistikker
 ### /oapi/v1/stats/countries
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter landestatistikker
 
@@ -481,7 +506,8 @@ Henter landestatistikker
 ### /oapi/v1/stats/devices
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter enhedsstatistikker
 
@@ -504,7 +530,8 @@ Henter enhedsstatistikker
 ### /oapi/v1/stats/domains
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter domænestatistikker
 
@@ -527,7 +554,8 @@ Henter domænestatistikker
 ### /oapi/v1/stats/time
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Henter tidsstatistikker
 
@@ -550,7 +578,8 @@ Henter tidsstatistikker
 ### /oapi/v1/web_services
 
 #### GET
-##### Resumé:
+
+##### Resumé
 
 Viser webtjenester
 

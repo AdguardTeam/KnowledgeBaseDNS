@@ -3,7 +3,7 @@ title: Přehled
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 AdGuard DNS poskytuje rozhraní REST API, které můžete použít k integraci svých aplikací.
 
@@ -91,6 +91,7 @@ Chcete-li odvolat obnovovací token, proveďte následující požadavek POST s 
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parametr          | Popis                                 |
 |:----------------- |:------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, který má být odvolán |

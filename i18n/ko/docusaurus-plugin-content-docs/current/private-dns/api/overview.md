@@ -3,7 +3,7 @@ title: 개요
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 Adguard DNS는 앱을 통합하는데 사용할 수 있는 REST API를 제공합니다.
 
@@ -91,6 +91,7 @@ To revoke a refresh token, make the following POST request with the given params
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parameter         | Description                            |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |

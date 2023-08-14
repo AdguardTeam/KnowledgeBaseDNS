@@ -3,7 +3,7 @@ title: Genel Bakış
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
@@ -91,6 +91,7 @@ To revoke a refresh token, make the following POST request with the given params
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parametre         | Açıklama                               |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
@@ -114,7 +115,7 @@ OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger
 
 You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
-## Geri bildirim
+## Geri Bildirim
 
 Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
 

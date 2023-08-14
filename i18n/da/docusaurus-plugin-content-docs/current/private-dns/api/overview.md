@@ -3,7 +3,7 @@ title: Oversigt
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
@@ -91,6 +91,7 @@ For at ophæve et opdateringstoken skal flg. POST-anmodning foretages med de giv
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parameter         | Beskrivelse                       |
 |:----------------- |:--------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, der skal ophæves |

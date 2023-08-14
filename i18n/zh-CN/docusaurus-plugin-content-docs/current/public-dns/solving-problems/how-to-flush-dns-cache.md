@@ -17,12 +17,12 @@ DNS cache stores the IP addresses of visited sites on the local computer so that
 
 The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
 
-* **资源数据（或 rdata）**；
-* **记录类型**；
-* **记录名字**；
-* **TTL（生存时间）**；
-* **类别**；
-* **资源数据长度**。
+- **资源数据（或 rdata）**；
+- **记录类型**；
+- **记录名字**；
+- **TTL（生存时间）**；
+- **类别**；
+- **资源数据长度**。
 
 ## 当您可能需要清除缓存时
 
@@ -42,7 +42,11 @@ The simplest way is to activate the Airplane mode (for example, in the Control C
 
 Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
 
-> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
@@ -50,9 +54,13 @@ The easiest way to clear your DNS cache on your Android device is to turn the Ai
 
 A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+Another option is to reset the network settings of your device in the Settings app. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> 注意：这样做，您将失去与 Wi-Fi 路由器和其他特定网络设置（包括 DNS 服务器自定义）的连接。 您将需要手动重置它们。
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
@@ -120,24 +128,24 @@ This may be useful if you do not want restart a browser every time during work w
 
 1. Disable **secure DNS** in Chrome settings
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Disable **Async DNS resolver**
+1. Disable **Async DNS resolver**
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Press both buttons here
+1. Press both buttons here
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Press **Clear host cache**
+1. Press **Clear host cache**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

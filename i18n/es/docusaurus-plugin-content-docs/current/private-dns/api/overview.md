@@ -1,9 +1,9 @@
 ---
-title: Overview
+title: Resumen
 sidebar_position: 1
 ---
 
-# AdGuard DNS API
+## AdGuard DNS API
 
 AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
@@ -15,11 +15,11 @@ Make a POST request for the following URL with the given params to generate the 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| Parameter             | Descripción                                                                                 |
+|:--------------------- |:------------------------------------------------------------------------------------------- |
+| **nombre de usuario** | Correo electrónico de la cuenta                                                             |
+| **contraseña**        | Contraseña de la cuenta                                                                     |
+| mfa_token             | Código de autenticación de dos factores (si está activada en la configuración de la cuenta) |
 
 In the response, you will get both `access_token` and `refresh_token`.
 
@@ -56,7 +56,7 @@ Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
+| Parameter         | Descripción                                                         |
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
@@ -91,7 +91,8 @@ To revoke a refresh token, make the following POST request with the given params
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
-| Parameter         | Description                            |
+
+| Parameter         | Descripción                            |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
@@ -99,12 +100,12 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
-- Header name should be `Authorization`
+- El nombre de la cabecera debe ser `Autorización`
 - Header value should be `Bearer {access_token}`
 
 ## API
 
-### Reference
+### Referencia
 
 Please see the methods reference [here](private-dns/api/reference.md).
 

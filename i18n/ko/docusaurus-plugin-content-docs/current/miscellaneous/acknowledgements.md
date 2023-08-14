@@ -7,19 +7,19 @@ sidebar_position: 5
 
 ## AdGuard DNS
 
-* Miek Gieben의 DNS 모듈: [https://github.com/miekg/dns](https://github.com/miekg/dns)
-* Jun Kimura의 GCache 모듈: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
-* Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
-* Daniel Martí의 Gofumpt 프로그램: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
-* Lucas Clemente의 QUIC-Go 모듈: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
-* Dominik Honnef의 Staticcheck 프로그램: [https://staticcheck.io](https://staticcheck.io/)
+- Miek Gieben의 DNS 모듈: [https://github.com/miekg/dns](https://github.com/miekg/dns)
+- Jun Kimura의 GCache 모듈: [https://github.com/bluele/gcache](https://github.com/bluele/gcache)
+- Go-Cache module by Patrick Mylund Nielsen: [https://github.com/patrickmn/go-cache](https://github.com/patrickmn/go-cache)
+- Daniel Martí의 Gofumpt 프로그램: [mvdan.cc/gofumpt](https://github.com/mvdan/gofumpt)
+- Lucas Clemente의 QUIC-Go 모듈: [https://github.com/lucas-clemente/quic-go](https://github.com/lucas-clemente/quic-go)
+- Dominik Honnef의 Staticcheck 프로그램: [https://staticcheck.io](https://staticcheck.io/)
 
 ## AdGuard API 및 웹사이트
 
-* Symfony: [http://symfony.com/](http://symfony.com/)
-* React: [https://reactjs.org/](https://reactjs.org/)
-* Vue: [https://vuejs.org/](https://vuejs.org/)
-* PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
-* Spring: [https://spring.io/](https://spring.io/)
-* ClickHouse: [https://clickhouse.com/](https://clickhouse.com/)
-* Logstash: [https://github.com/elastic/logstash](https://github.com/elastic/logstash)
+- Symfony: [http://symfony.com/](http://symfony.com/)
+- React: [https://reactjs.org/](https://reactjs.org/)
+- Vue: [https://vuejs.org/](https://vuejs.org/)
+- PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
+- Spring: [https://spring.io/](https://spring.io/)
+- ClickHouse: [https://clickhouse.com/](https://clickhouse.com/)
+- Logstash: [https://github.com/elastic/logstash](https://github.com/elastic/logstash)
