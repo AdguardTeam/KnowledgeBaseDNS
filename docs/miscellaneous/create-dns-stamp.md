@@ -24,21 +24,22 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `
 
 3. Fill in the necessary fields:
     - **IP address**:
+    Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
+
     :::note
 
     This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
 
     :::
-
-    Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
     - **Hashes**:
+    Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the ["Obtaining the Certificate Hash"](###obtaining-the-certificate-hash) section.
+
     :::note
 
     This field is optional
 
     :::
 
-    Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the ["Obtaining the Certificate Hash"](###obtaining-the-certificate-hash) section.
     - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
 
     - For **DoH**:
@@ -59,7 +60,7 @@ To fill in the **Hashes of the server's certificate** field, you can use the fol
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
 ```
 
-:::note
+:::caution
 
 The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 
