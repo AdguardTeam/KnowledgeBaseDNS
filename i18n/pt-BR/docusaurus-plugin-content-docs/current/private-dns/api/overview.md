@@ -3,11 +3,11 @@ title: Visão Geral
 sidebar_position: 1
 ---
 
-# API do AdGuard DNS
+## AdGuard DNS API
 
 O AdGuard DNS fornece uma API REST que você pode usar para integrar seus aplicativos a ele.
 
-## Autenticação
+## Authentication
 
 ### Gerar token de acesso
 
@@ -91,6 +91,7 @@ Para revogar um token de atualização, faça a seguinte solicitação POST com 
 $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
+
 | Parâmetro         | Descrição                                    |
 |:----------------- |:-------------------------------------------- |
 | **refresh_token** | `TOKEN DE ATUALIZAÇÃO` que deve ser revogado |
@@ -104,7 +105,7 @@ Uma vez que os tokens de acesso e atualização são gerados, as chamadas de API
 
 ## API
 
-### Reference
+### Referência
 
 Consulte a referência de métodos [aqui](private-dns/api/reference.md).
 
@@ -114,7 +115,7 @@ A especificação OpenAPI está disponível em [https://api.adguard-dns.io/stati
 
 Você pode usar diferentes ferramentas para visualizar a lista de métodos de API disponíveis. Para instância, você pode abrir este arquivo em [https://editor.swagger.io/][swagger].
 
-## Comentários
+## Feedback
 
 Se você deseja que esta API seja estendida com novos métodos, envie um e-mail para `devteam@adguard.com` e informe-nos o que você gostaria que fosse adicionado.
 

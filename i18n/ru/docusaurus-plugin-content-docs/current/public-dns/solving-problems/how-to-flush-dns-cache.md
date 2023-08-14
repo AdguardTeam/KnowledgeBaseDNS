@@ -13,36 +13,40 @@ sidebar_position: 1
 
 ## Что такое DNS-кеш?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS-кеш хранит IP-адреса посещённых сайтов на локальном компьютере, чтобы в следующий раз они загружались быстрее. Вместо того, чтобы выполнять длительный DNS-поиск, система отвечает на запросы с помощью записей DNS из временного DNS-кеша.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS-кеш содержит так называемые [записи о ресурсах](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), которые включают:
 
-* **Данные ресурса (или rdata)**;
-* **Тип записи**;
-* **Имя записи**;
-* **TTL (время жизни информации)**;
-* **Класс**;
-* **Длину данных ресурса**.
+- **Данные ресурса (или rdata)**;
+- **Тип записи**;
+- **Имя записи**;
+- **TTL (время жизни информации)**;
+- **Класс**;
+- **Длину данных ресурса**.
 
 ## Когда нужно сбросить кеш
 
-**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+**Вы сменили DNS-провайдера на AdGuard DNS.** Если пользователь изменил свой DNS, из-за кеша может потребоваться некоторое время, чтобы увидеть результат.
 
-**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Вы регулярно видите ошибку 404.** Например, сайт перенесли на другой сервер, и его IP-адрес изменился. Чтобы браузер открывал сайт с нового IP-адреса, необходимо удалить закешированный IP из DNS-кеша.
 
-**You want to improve your privacy.**
+**Вы хотите повысить уровень конфиденциальности.**
 
 ## Как сбросить DNS-кеш на разных ОС
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+Есть разные способы очистить DNS-кеш на iPhone и iPad.
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+Самый простой — включить Авиарежим (например, в Центре управления или в Настройках) и выключить его. DNS-кеш будет сброшен.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Откройте *Основные*, пролистайте вниз, найдите *Сброс* и нажмите *Сбросить настройки сети*.
 
-> Обратите внимание: делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
@@ -50,9 +54,13 @@ The easiest way to clear your DNS cache on your Android device is to turn the Ai
 
 A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings > System > Advanced > Reset options > Reset network settings* and tap *Reset Settings* to confirm.
+Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Обратите внимание: делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
@@ -114,30 +122,30 @@ Then you will need to reload BIND:
 
 You will get the message that the server has been successfully reloaded.
 
-## How to flush DNS cache in Chrome
+## Как сбросить DNS-кеш в Chrome
 
 This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
 1. Disable **secure DNS** in Chrome settings
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Disable **Async DNS resolver**
+1. Disable **Async DNS resolver**
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Press both buttons here
+1. Press both buttons here
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Press **Clear host cache**
+1. Press **Clear host cache**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

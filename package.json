@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "yarn lint:md && docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "yarn crowdin:sync && docusaurus deploy",
@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "lint:md": "markdownlint .",
     "crowdin": "crowdin",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
@@ -41,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "markdownlint": "^0.29.0",
+    "markdownlint-cli": "^0.35.0"
   }
 }

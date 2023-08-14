@@ -17,12 +17,12 @@ Do mezipaměti DNS se ukládají IP adresy navštívených webů v lokálním po
 
 Mezipaměť DNS obsahuje tzv. [zdrojová data (RR)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), které jsou:
 
-* **Zdrojová data (nebo rdata)**;
-* **Typ záznamu**;
-* **Název záznamu**;
-* **TTL (životnost)**;
-* **Třída**;
-* **Délka zdrojových dat**.
+- **Zdrojová data (nebo rdata)**;
+- **Typ záznamu**;
+- **Název záznamu**;
+- **TTL (životnost)**;
+- **Třída**;
+- **Délka zdrojových dat**.
 
 ## Kdy může být nutné vyprázdnit mezipaměť
 
@@ -42,102 +42,110 @@ Nejjednodušší je aktivovat režim Letadlo (například v Ovládacím centru n
 
 Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Obecné*, sjeďte dolů, vyhledejte *Resetovat* a klepněte na *Resetovat nastavení sítě*.
 
-> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### Android
 
-Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
+The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
 
-Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
+A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení > Systém > Pokročilé > Možnosti resetování > Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-> Poznámka: tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
+:::note
+
+By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+
+:::
 
 ### macOS
 
-Chcete-li v systému macOS vyprázdnit mezipaměť DNS, otevřete Terminál (najdete ho pomocí vyhledávání Spotlight — stiskněte klávesy Command+Mezerník a napište *Terminal*) a zadejte následující příkaz:
+To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
 
 `sudo killall -HUP mDNSResponder`
 
-V systémech macOS Big Sur 11.2.0 a macOS Monterey 12.0.0 můžete použít také tento příkaz:
+On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
 
 `sudo dscacheutil -flushcache`
 
-Poté zadejte heslo správce a dokončete proces.
+After that, enter your administrator password to complete the process.
 
 ### Windows
 
-Chcete-li vyprázdnit mezipaměť DNS v zařízení se systémem Windows, postupujte takto:
+To flush DNS cache on your Windows device, do the following:
 
-Otevřete příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
 
-Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
+You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například systemd-resolved, DNSMasq, BIND nebo Nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
-Pro každou distribuci je třeba spustit okno terminálu. Stiskněte Ctrl+Alt+T na klávesnici a pomocí odpovídajícího příkazu vymažte mezipaměť DNS pro službu, na které váš Linux běží.
+For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-Chcete-li zjistit, který řešitel DNS používáte, zadejte příkaz `sudo lsof -i :53 -S`.
+To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-Chcete-li vyprázdnit mezipaměť DNS **systemd-resolved**, zadejte příkaz:
+To clear the **systemd-resolved** DNS cache, type:
 
 `sudo systemd-resolve --flush-caches`
 
-V případě úspěchu příkaz nevrátí žádnou odpověď.
+On success, the command doesn’t return any message.
 
 #### DNSMasq
 
-Chcete-li vyprázdnit mezipaměť **DNSMasq**, musíte ji restartovat:
+To clear the **DNSMasq** cache, you need to restart it:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-Chcete-li vyprázdnit mezipaměť **NSCD**, musíte službu také restartovat:
+To clear the **NSCD** cache, you also need to restart the service:
 
 `sudo service nscd restart`
 
 #### BIND
 
-Chcete-li vyprázdnit mezipaměť DNS **BIND**, spusťte příkaz:
+To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-Pak je třeba znovu načíst BIND:
+Then you will need to reload BIND:
 
 `rndc reload`
 
-Zobrazí se zpráva, že server byl znovu úspěšně načten.
+You will get the message that the server has been successfully reloaded.
 
 ## Jak vyprázdnit mezipaměť DNS v Chrome
 
-To může být užitečné, pokud nechcete restartovat prohlížeč pokaždé, když pracujete se soukromým AdGuard DNS nebo AdGuard Home. Nastavení 1-2 stačí změnit pouze jednou.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
 
 1. Deaktivujte **zabezpečený DNS** v nastavení Chrome
 
-```bash
-chrome://settings/security
-```
+    ```bash
+    chrome://settings/security
+    ```
 
-2. Deaktivujte **DNS řešitel Async**
+1. Deaktivujte **DNS řešitel Async**
 
-```bash
-chrome://flags/#enable-async-dns
-```
+    ```bash
+    chrome://flags/#enable-async-dns
+    ```
 
-3. Zde stiskněte obě tlačítka
+1. Zde stiskněte obě tlačítka
 
-```bash
-chrome://net-internals/#sockets
-```
+    ```bash
+    chrome://net-internals/#sockets
+    ```
 
-4. Stiskněte **Vymazat mezipaměť hostitele**
+1. Stiskněte **Vymazat mezipaměť hostitele**
 
-```bash
-chrome://net-internals/#dns
-```
+    ```bash
+    chrome://net-internals/#dns
+    ```

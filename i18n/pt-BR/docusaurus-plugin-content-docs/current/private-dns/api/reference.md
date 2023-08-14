@@ -1,11 +1,11 @@
 ---
-title: Reference
+title: Referência
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!-- 
+<!--
     The content below is simply an automatic conversion from the OpenAPI spec
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
@@ -13,549 +13,578 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-# API do AdGuard DNS
-DNS API documentation
+## AdGuard DNS API
+
+Documentação da API DNS
 
 ## Version: 1.4
 
 ### /oapi/v1/account/limits
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets account limits
+##### Summary
 
-##### Responses
+Obtém limites de conta
 
-| Código | Descrição           |
-| ------ | ------------------- |
-| 200    | Account limits info |
+##### Respostas
+
+| Código | Descrição                          |
+| ------ | ---------------------------------- |
+| 200    | Informações sobre limites de conta |
 
 ### /oapi/v1/devices
 
-#### GET
-##### Summary:
+#### OBTER
 
-Lists devices
+##### Summary
 
-##### Responses
+Lista dispositivos
 
-| Código | Descrição       |
-| ------ | --------------- |
-| 200    | List of devices |
+##### Respostas
+
+| Código | Descrição             |
+| ------ | --------------------- |
+| 200    | Lista de dispositivos |
 
 #### POST
-##### Summary:
 
-Creates a new device
+##### Summary
 
-##### Responses
+Cria um novo dispositivo
 
-| Código | Descrição                       |
-| ------ | ------------------------------- |
-| 200    | Device created                  |
-| 400    | Validation failed               |
-| 429    | Devices count reached the limit |
+##### Respostas
+
+| Código | Descrição                                   |
+| ------ | ------------------------------------------- |
+| 200    | Dispositivo criado                          |
+| 400    | Falha na validação                          |
+| 429    | A contagem de dispositivos atingiu o limite |
 
 ### /oapi/v1/devices/{device_id}
 
-#### DELETE
-##### Summary:
+#### EXCLUIR
 
-Removes a device
+##### Summary
 
-##### Parameters
+Remove um dispositivo
 
-| Name      | Located in | Descrição | Required | Schema |
-| --------- | ---------- | --------- | -------- | ------ |
-| device_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
 
 | Código | Descrição                  |
 | ------ | -------------------------- |
-| 200    | Device deleted             |
+| 200    | Dispositivo excluído       |
 | 404    | Dispositivo não encontrado |
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets an existing device by ID
+##### Summary
 
-##### Parameters
+Obtém um dispositivo existente por ID
 
-| Name      | Located in | Descrição | Required | Schema |
-| --------- | ---------- | --------- | -------- | ------ |
-| device_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
 
 | Código | Descrição                  |
 | ------ | -------------------------- |
-| 200    | Device info                |
+| 200    | Informação do dispositivo  |
 | 404    | Dispositivo não encontrado |
 
 #### PUT
-##### Summary:
 
-Updates an existing device
+##### Summary
 
-##### Parameters
+Atualiza um dispositivo existente
 
-| Name      | Located in | Descrição | Required | Schema |
-| --------- | ---------- | --------- | -------- | ------ |
-| device_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
 
 | Código | Descrição                  |
 | ------ | -------------------------- |
-| 200    | Device updated             |
-| 400    | Validation failed          |
+| 200    | Dispositivo atualizado     |
+| 400    | Falha na validação         |
 | 404    | Dispositivo não encontrado |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets DNS-over-HTTPS .mobileconfig file.
+##### Summary
 
-##### Parameters
+Obtém o arquivo .mobileconfig DNS-over-HTTPS.
 
-| Name                    | Located in | Descrição                                                                      | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Sim      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Não      | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome                    | Localizado em | Descrição                                                                                 | Obrigatório | Esquema   |
+| ----------------------- | ------------- | ----------------------------------------------------------------------------------------- | ----------- | --------- |
+| device_id               | path          |                                                                                           | Sim         | linhas    |
+| exclude_wifi_networks | consulta      | Liste as redes Wi-Fi pelo SSID nas quais você deseja que o DNS do AdGuard seja desativado | Não         | [ linha ] |
+| exclude_domain          | consulta      | Listar domínios que utilizarão servidores DNS predefinidos em vez do AdGuard DNS          | Não         | [ linha ] |
 
-| Código | Descrição                  |
-| ------ | -------------------------- |
-| 200    | DNS-over-HTTPS .plist file |
-| 404    | Dispositivo não encontrado |
+##### Respostas
+
+| Código | Descrição                     |
+| ------ | ----------------------------- |
+| 200    | Arquivo .plist DNS-over-HTTPS |
+| 404    | Dispositivo não encontrado    |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets DNS-over-TLS .mobileconfig file.
+##### Summary
 
-##### Parameters
+Obtém o ficheiro .mobileconfig do DNS-over-TLS.
 
-| Name                    | Located in | Descrição                                                                      | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Sim      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Não      | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome                    | Localizado em | Descrição                                                                                 | Obrigatório | Esquema   |
+| ----------------------- | ------------- | ----------------------------------------------------------------------------------------- | ----------- | --------- |
+| device_id               | path          |                                                                                           | Sim         | linhas    |
+| exclude_wifi_networks | consulta      | Liste as redes Wi-Fi pelo SSID nas quais você deseja que o DNS do AdGuard seja desativado | Não         | [ linha ] |
+| exclude_domain          | consulta      | Listar domínios que utilizarão servidores DNS predefinidos em vez do AdGuard DNS          | Não         | [ linha ] |
 
-| Código | Descrição                  |
-| ------ | -------------------------- |
-| 200    | DNS-over-HTTPS .plist file |
-| 404    | Dispositivo não encontrado |
+##### Respostas
+
+| Código | Descrição                     |
+| ------ | ----------------------------- |
+| 200    | Arquivo .plist DNS-over-HTTPS |
+| 404    | Dispositivo não encontrado    |
 
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Summary:
 
-Updates device settings
+##### Summary
 
-##### Parameters
+Atualiza as configurações do dispositivo
 
-| Name      | Located in | Descrição | Required | Schema |
-| --------- | ---------- | --------- | -------- | ------ |
-| device_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
 
-| Código | Descrição                  |
-| ------ | -------------------------- |
-| 200    | Device settings updated    |
-| 400    | Validation failed          |
-| 404    | Dispositivo não encontrado |
+##### Respostas
+
+| Código | Descrição                                |
+| ------ | ---------------------------------------- |
+| 200    | Configurações do dispositivo atualizadas |
+| 400    | Falha na validação                       |
+| 404    | Dispositivo não encontrado               |
 
 ### /oapi/v1/dns_servers
 
-#### GET
-##### Summary:
+#### OBTER
 
-Lists DNS servers that belong to the user.
+##### Summary
 
-##### Descrição:
+Lista os servidores DNS que pertencem ao usuário.
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+##### Descrição
 
-##### Responses
+Lista os servidores DNS que pertencem ao usuário. Por padrão, há pelo menos um servidor padrão.
 
-| Código | Descrição           |
-| ------ | ------------------- |
-| 200    | List of DNS servers |
+##### Respostas
+
+| Código | Descrição               |
+| ------ | ----------------------- |
+| 200    | Lista de servidores DNS |
 
 #### POST
-##### Summary:
 
-Creates a new DNS server
+##### Summary
 
-##### Descrição:
+Cria um novo servidor DNS
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+##### Descrição
 
-##### Responses
+Cria um novo servidor DNS. Você pode anexar configurações personalizadas, caso contrário, o servidor DNS será criado com as configurações padrão.
 
-| Código | Descrição                           |
-| ------ | ----------------------------------- |
-| 200    | DNS server created                  |
-| 400    | Validation failed                   |
-| 429    | DNS servers count reached the limit |
+##### Respostas
+
+| Código | Descrição                                     |
+| ------ | --------------------------------------------- |
+| 200    | Servidor DNS criado                           |
+| 400    | Falha na validação                            |
+| 429    | A contagem de servidores DNS atingiu o limite |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
-#### DELETE
-##### Summary:
+#### EXCLUIR
 
-Removes a DNS server
+##### Summary
 
-##### Descrição:
+Remove um servidor DNS
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting a default DNS server is forbidden.
+##### Descrição
 
-##### Parameters
+Remove um servidor DNS. Todos os dispositivos conectados a este servidor DNS serão movidos para o servidor DNS padrão. Excluir um servidor DNS padrão é proibido.
 
-| Name            | Located in | Descrição | Required | Schema |
-| --------------- | ---------- | --------- | -------- | ------ |
-| dns_server_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome            | Localizado em | Descrição | Obrigatório | Esquema |
+| --------------- | ------------- | --------- | ----------- | ------- |
+| dns_server_id | path          |           | Sim         | linhas  |
 
-| Código | Descrição            |
-| ------ | -------------------- |
-| 200    | DNS server deleted   |
-| 404    | DNS server not found |
+##### Respostas
 
-#### GET
-##### Summary:
+| Código | Descrição                   |
+| ------ | --------------------------- |
+| 200    | Servidor DNS excluído       |
+| 404    | Servidor DNS não encontrado |
 
-Gets an existing DNS server by ID
+#### OBTER
 
-##### Parameters
+##### Summary
 
-| Name            | Located in | Descrição | Required | Schema |
-| --------------- | ---------- | --------- | -------- | ------ |
-| dns_server_id | path       |           | Sim      | string |
+Obtém um servidor DNS existente pelo ID
 
-##### Responses
+##### Parâmetros
 
-| Código | Descrição            |
-| ------ | -------------------- |
-| 200    | DNS server info      |
-| 404    | DNS server not found |
+| Nome            | Localizado em | Descrição | Obrigatório | Esquema |
+| --------------- | ------------- | --------- | ----------- | ------- |
+| dns_server_id | path          |           | Sim         | linhas  |
+
+##### Respostas
+
+| Código | Descrição                   |
+| ------ | --------------------------- |
+| 200    | Informação do servidor DNS  |
+| 404    | Servidor DNS não encontrado |
 
 #### PUT
-##### Summary:
 
-Updates an existing DNS server
+##### Summary
 
-##### Parameters
+Atualiza um servidor DNS existente
 
-| Name            | Located in | Descrição | Required | Schema |
-| --------------- | ---------- | --------- | -------- | ------ |
-| dns_server_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome            | Localizado em | Descrição | Obrigatório | Esquema |
+| --------------- | ------------- | --------- | ----------- | ------- |
+| dns_server_id | path          |           | Sim         | linhas  |
 
-| Código | Descrição            |
-| ------ | -------------------- |
-| 200    | DNS server updated   |
-| 400    | Validation failed    |
-| 404    | DNS server not found |
+##### Respostas
+
+| Código | Descrição                   |
+| ------ | --------------------------- |
+| 200    | Servidor DNS atualizado     |
+| 400    | Falha na validação          |
+| 404    | Servidor DNS não encontrado |
 
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Summary:
 
-Updates DNS server settings
+##### Summary
 
-##### Parameters
+Atualiza as configurações do servidor DNS
 
-| Name            | Located in | Descrição | Required | Schema |
-| --------------- | ---------- | --------- | -------- | ------ |
-| dns_server_id | path       |           | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome            | Localizado em | Descrição | Obrigatório | Esquema |
+| --------------- | ------------- | --------- | ----------- | ------- |
+| dns_server_id | path          |           | Sim         | linhas  |
 
-| Código | Descrição                   |
-| ------ | --------------------------- |
-| 200    | DNS server settings updated |
-| 400    | Validation failed           |
-| 404    | DNS server not found        |
+##### Respostas
+
+| Código | Descrição                                 |
+| ------ | ----------------------------------------- |
+| 200    | Configurações do servidor DNS atualizadas |
+| 400    | Falha na validação                        |
+| 404    | Servidor DNS não encontrado               |
 
 ### /oapi/v1/filter_lists
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets filter lists
+##### Summary
 
-##### Responses
+Obtém listas de filtros
 
-| Código | Descrição       |
-| ------ | --------------- |
-| 200    | List of filters |
+##### Respostas
+
+| Código | Descrição        |
+| ------ | ---------------- |
+| 200    | Lista de filtros |
 
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Summary:
 
-Generates Access and Refresh token
+##### Summary
 
-##### Responses
+Gera o token de acesso e de atualização
 
-| Código | Descrição                                                |
-| ------ | -------------------------------------------------------- |
-| 200    | Access token issued                                      |
-| 400    | Missing required parameters                              |
-| 401    | Invalid credentials, MFA token or refresh token provided |
+##### Respostas
+
+| Código | Descrição                                                           |
+| ------ | ------------------------------------------------------------------- |
+| 200    | Token de acesso emitido                                             |
+| 400    | Parâmetros obrigatórios ausentes                                    |
+| 401    | Credenciais inválidas, token MFA ou token de atualização fornecidos |
 
 null
 
 ### /oapi/v1/query_log
 
-#### DELETE
-##### Summary:
+#### EXCLUIR
 
-Clears query log
+##### Summary
 
-##### Responses
+Limpa o registo de consultas
+
+##### Respostas
+
+| Código | Descrição                          |
+| ------ | ---------------------------------- |
+| 202    | O registo de consultas foi apagado |
+
+#### OBTER
+
+##### Summary
+
+Obtém o registo de consultas
+
+##### Parâmetros
+
+| Nome               | Localizado em | Descrição                                                                  | Obrigatório | Esquema                                            |
+| ------------------ | ------------- | -------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive)                                      | Sim         | longo                                              |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)                                        | Sim         | longo                                              |
+| dispositivos       | consulta      | Filtrar por dispositivos                                                   | Não         | [ linha ]                                          |
+| países             | consulta      | Filtrar por países                                                         | Não         | [ linha ]                                          |
+| empresas           | consulta      | Filtrar por empresas                                                       | Não         | [ linha ]                                          |
+| status             | consulta      | Filtrar por status                                                         | Não         | [ [FilteringActionStatus](#FilteringActionStatus)] |
+| categorias         | consulta      | Filtrar por categorias                                                     | Não         | [ [CategoryType](#CategoryType)]                   |
+| pesquisa           | consulta      | Filtrar por nome de domínio                                                | Não         | linhas                                             |
+| limite             | consulta      | Limitar o número de registros a serem retornados                           | Não         | integer                                            |
+| cursor             | consulta      | Cursor de paginação. Usar o cursor da resposta para paginar pelas páginas. | Não         | linhas                                             |
+
+##### Respostas
 
 | Código | Descrição             |
 | ------ | --------------------- |
-| 202    | Query log was cleared |
-
-#### GET
-##### Summary:
-
-Gets query log
-
-##### Parameters
-
-| Name               | Located in | Descrição                                                                  | Required | Schema                                              |
-| ------------------ | ---------- | -------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)                                      | Sim      | long                                                |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)                                        | Sim      | long                                                |
-| devices            | query      | Filter by devices                                                          | Não      | [ string ]                                          |
-| countries          | query      | Filter by countries                                                        | Não      | [ string ]                                          |
-| companies          | query      | Filter by companies                                                        | Não      | [ string ]                                          |
-| statuses           | query      | Filter by statuses                                                         | Não      | [ [FilteringActionStatus](#FilteringActionStatus) ] |
-| categories         | query      | Filter by categories                                                       | Não      | [ [CategoryType](#CategoryType) ]                   |
-| search             | query      | Filter by domain name                                                      | Não      | string                                              |
-| limit              | query      | Limit the number of records to be returned                                 | Não      | integer                                             |
-| cursor             | query      | Pagination cursor. Use cursor from response to paginate through the pages. | Não      | string                                              |
-
-##### Responses
-
-| Código | Descrição |
-| ------ | --------- |
-| 200    | Query log |
+| 200    | Registro de consultas |
 
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Summary:
 
-Revokes a Refresh Token
+##### Summary
 
-##### Parameters
+Revoga um token de atualização
 
-| Name          | Located in | Descrição     | Required | Schema |
-| ------------- | ---------- | ------------- | -------- | ------ |
-| refresh_token | query      | Refresh Token | Sim      | string |
+##### Parâmetros
 
-##### Responses
+| Nome          | Localizado em | Descrição       | Obrigatório | Esquema |
+| ------------- | ------------- | --------------- | ----------- | ------- |
+| refresh_token | consulta      | Atualizar token | Sim         | linhas  |
 
-| Código | Descrição             |
-| ------ | --------------------- |
-| 200    | Refresh token revoked |
+##### Respostas
+
+| Código | Descrição                |
+| ------ | ------------------------ |
+| 200    | Atualizar token revogado |
 
 null
 
 ### /oapi/v1/stats/categories
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets categories statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas de categorias
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
 
-| Código | Descrição                      |
-| ------ | ------------------------------ |
-| 200    | Categories statistics received |
-| 400    | Validation failed              |
+##### Respostas
+
+| Código | Descrição                            |
+| ------ | ------------------------------------ |
+| 200    | Estatísticas de categorias recebidas |
+| 400    | Falha na validação                   |
 
 ### /oapi/v1/stats/companies
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets companies statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas de empresas
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
 
-| Código | Descrição                     |
-| ------ | ----------------------------- |
-| 200    | Companies statistics received |
-| 400    | Validation failed             |
+##### Respostas
+
+| Código | Descrição                          |
+| ------ | ---------------------------------- |
+| 200    | Estatísticas de empresas recebidas |
+| 400    | Falha na validação                 |
 
 ### /oapi/v1/stats/companies/detailed
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets detailed companies statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas detalhadas das empresas
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
-| cursor             | query      | Pagination cursor                     | Não      | string     |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| cursor             | consulta      | Cursor de paginação                   | Não         | linhas    |
 
-| Código | Descrição                              |
-| ------ | -------------------------------------- |
-| 200    | Detailed companies statistics received |
-| 400    | Validation failed                      |
+##### Respostas
+
+| Código | Descrição                                      |
+| ------ | ---------------------------------------------- |
+| 200    | Estatísticas detalhadas das empresas recebidas |
+| 400    | Falha na validação                             |
 
 ### /oapi/v1/stats/countries
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets countries statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas dos países
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
 
-| Código | Descrição                     |
-| ------ | ----------------------------- |
-| 200    | Countries statistics received |
-| 400    | Validation failed             |
+##### Respostas
+
+| Código | Descrição                         |
+| ------ | --------------------------------- |
+| 200    | Estatísticas dos países recebidas |
+| 400    | Falha na validação                |
 
 ### /oapi/v1/stats/devices
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets devices statistics
+##### Summary
 
-##### Parameters
+Reúne estatísticas de dispositivos
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
 
-| Código | Descrição                   |
-| ------ | --------------------------- |
-| 200    | Devices statistics received |
-| 400    | Validation failed           |
+##### Respostas
+
+| Código | Descrição                              |
+| ------ | -------------------------------------- |
+| 200    | Estatísticas de dispositivos recebidas |
+| 400    | Falha na validação                     |
 
 ### /oapi/v1/stats/domains
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets domains statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas de domínios
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
+| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
+| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
 
-| Código | Descrição                   |
-| ------ | --------------------------- |
-| 200    | Domains statistics received |
-| 400    | Validation failed           |
+##### Respostas
+
+| Código | Descrição                          |
+| ------ | ---------------------------------- |
+| 200    | Estatísticas de domínios recebidas |
+| 400    | Falha na validação                 |
 
 ### /oapi/v1/stats/time
 
-#### GET
-##### Summary:
+#### OBTER
 
-Gets time statistics
+##### Summary
 
-##### Parameters
+Obtém estatísticas de tempo
 
-| Name               | Located in | Descrição                             | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Sim      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Sim      | long       |
-| devices            | query      | Filter by devices                     | Não      | [ string ] |
-| countries          | query      | Filter by countries                   | Não      | [ string ] |
+##### Parâmetros
 
-##### Responses
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
-| Código | Descrição                |
-| ------ | ------------------------ |
-| 200    | Time statistics received |
-| 400    | Validation failed        |
+##### Respostas
+
+| Código | Descrição                       |
+| ------ | ------------------------------- |
+| 200    | Estatísticas de tempo recebidas |
+| 400    | Falha na validação              |
 
 ### /oapi/v1/web_services
 
-#### GET
-##### Summary:
+#### OBTER
 
-Lists web services
+##### Summary
 
-##### Responses
+Lista serviços web
 
-| Código | Descrição            |
-| ------ | -------------------- |
-| 200    | List of web-services |
+##### Respostas
+
+| Código | Descrição             |
+| ------ | --------------------- |
+| 200    | Lista de serviços Web |

@@ -42,6 +42,7 @@ Andre DNS-udbydere fungerer muligvis anderledes, så find ud af mere om dem, ind
 ### Lokale DNS-blokeringslister
 
 Ved kun at stole på DNS-servere til at filtrere DNS-trafik, mister man imidlertid al fleksibilitet. Blokerer den valgte server et domæne, kan man ikke tilgå det. Med AdGuard behøver man ikke engang at opsætte nogen bestemt DNS-server til at filtrere DNS-trafik. Alle AdGuard-produkter muliggør brug af DNS-sortlister, fra simple værtsfiler til lister med [mere avancerede syntakser](dns-filtering-syntax.md). De fungerer på samme måde som alm. sortlister: Matcher en DNS-forespørgsel en af reglerne i den aktive filterliste, blokeres den. Mere præcist, så omdirigeres den til et "sort hul".
+
 > I AdGuard til iOS skal man først aktivere "Avanceret tilstand" i indstillingerne for at få adgang til DNS-blokering.
 
 Så mange tilpassede sortlister som ønsket kan tilføjes. Man kan f.eks. bruge [AdGuard DNS-filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). Det blokerer bogstaveligt talt alt, hvad en AdGuard DNS-server gør, men samtidig kan enhver anden DNS-server frit anvendes. På denne måde kan der også tilføjes flere filtre eller oprettes tilpassede undtagelsesregler, hvilket vil være umuligt med en simpel "brug en blokerende DNS-server"-opsætning.
@@ -56,15 +57,15 @@ Først og fremmest skal nævnes, at man med AdGuard ikke behøver at vælge. Bå
 **Fordele ved DNS-filtrering:**
 
 1. På visse platforme er dette den eneste måde at opnå systemniveaufiltrering på. iOS understøtter f.eks. kun indholdsblokering i vanlig forstand i Safari-browseren, for alt andet findes kun DNS-filtrering.
-2. Visse former for sporing (såsom [CNAME-tilsløret sporing](https://adguard.com/blog/cname-tracking.html)) kan kun imødegås vha. DNS-filtrering.
-3. Stadiet, hvor en DNS-forespørgsel behandles, er det tidligste, man overhovedet kan imødegå en annonce eller tracker, hvilket medvirker til at spare en lille smule batteristrøm og trafik.
+1. Visse former for sporing (såsom [CNAME-tilsløret sporing](https://adguard.com/blog/cname-tracking.html)) kan kun imødegås vha. DNS-filtrering.
+1. Stadiet, hvor en DNS-forespørgsel behandles, er det tidligste, man overhovedet kan imødegå en annonce eller tracker, hvilket medvirker til at spare en lille smule batteristrøm og trafik.
 
 **Ulemper ved DNS-filtrering:**
 
-1. DNS-filtrering er "grov", dvs., at den hverken fjerner tomme felter efterladt fra en blokeret annonce eller anvender nogen form for kosmetisk filtrering. Mange af de mere komplicerede annoncer kan ikke blokeres på DNS-niveau (eller rettere sagt, det kan de, men kun ved at blokere selve domænerne, som muligvis også bruges til andre formål).
+1. DNS-filtrering er "grov", dvs., at den hverken fjerner tomme felter efterladt fra en blokeret annonce eller anvender nogen form for kosmetisk filtrering. Mange af de mere komplicerede annoncer kan ikke blokeres på DNS-niveau (eller rettere sagt, det kan de, men kun ved at blokere hele domænet, der muligvis også bruges til andre formål).
 
-![Eksempel på forskel](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Et eksempel på forskellen mellem DNS-filtrering og netværksfiltrering*
+    ![Eksempel på forskel](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Et eksempel på forskellen mellem DNS- og netværksfiltrering*
 
-2. Oprindelsen på en DNS-forespørgsel ikke kan fastslås, hvorfor der på DNS-niveau ikke kan skelnes mellem forskellige apps. Dette påvirker statistikken negativt og umuliggør at oprette app-specifikke filtreringsregler.
+1. Oprindelsen af en DNS-forespørgsel ikke kan fastslås, hvorfor der på DNS-niveau ikke kan skelnes mellem forskellige apps. Dette påvirker statistikken negativt og umuliggør oprettelse af app-specifikke filtreringsregler.
 
-Vi anbefaler brug af DNS-filtrering i tillæg til netværksfiltrering, ikke i stedet for, når dette er muligt.
+Brug af DNS-filtrering anbefales i tillæg til netværksfiltrering, ikke i stedet for, når dette er muligt.

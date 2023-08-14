@@ -399,7 +399,6 @@ In "Protected" mode, malware and phishing protection.
 | DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Add to AdGuard](adguard:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca) |
 | DNS-over-TLS - Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Add to AdGuard](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
 
-
 #### Family
 
 In "Family" mode, Protected + blocking adult content.
@@ -450,15 +449,6 @@ In "Family" mode, Protected + blocking adult content.
 | DNS-over-HTTPS, IPv4 | Hostname: `https://doh-de.blahdns.com/dns-query` IP: `159.69.198.101`    | [Add to AdGuard](adguard:add_dns_server?address=https://doh-de.blahdns.com/dns-query&name=doh-de.blahdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-de.blahdns.com/dns-query&name=doh-de.blahdns.com) |
 | DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `159.69.198.101:8443`        | [Add to AdGuard](sdns://AQMAAAAAAAAAEzE1OS42OS4xOTguMTAxOjg0NDMgyJjbSS4IgTY_2KH3NVGG0DNIgBPzLEqf8r00nAbcUxQbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                                                                                   |
 | DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.blahdns.com` IP: `2a01:4f8:1c1c:6b4b::1:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxYzFjOjZiNGI6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t)                                                                       |
-
-### Snopyta DNS
-
-[Snopyta DNS](https://snopyta.org/) is a privacy friendly DNS service run by Noah Seefried.
-
-| Protocol       | Address                                                                                           |                                                                                                                                                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://fi.doh.dns.snopyta.org/dns-query` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301` | [Add to AdGuard](adguard:add_dns_server?address=https://fi.doh.dns.snopyta.org/dns-query&name=fi.doh.dns.snopyta.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://fi.doh.dns.snopyta.org/dns-query&name=fi.doh.dns.snopyta.org) |
-| DNS-over-TLS   | `tls://fi.dot.dns.snopyta.org` IP: `95.216.24.230` and IPv6: `2a01:4f9:2a:1919::9301`             | [Add to AdGuard](adguard:add_dns_server?address=tls://fi.dot.dns.snopyta.org&name=fi.dot.dns.snopyta.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://fi.dot.dns.snopyta.org&name=fi.dot.dns.snopyta.org)                         |
 
 ### DNS for Family
 
@@ -684,7 +674,6 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://doh.applied-privacy.net/query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net) |
 | DNS-over-TLS   | `tls://dot1.applied-privacy.net`        | [Add to AdGuard](adguard:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net)             |
-
 
 ### Strongarm DNS
 
@@ -955,7 +944,6 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 | DNS, IPv4 | `109.69.8.51`      | [Add to AdGuard](adguard:add_dns_server?address=109.69.8.51&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=109.69.8.51&name=)           |
 | DNS, IPv6 | `2a00:1508:0:4::9` | [Add to AdGuard](adguard:add_dns_server?address=2a00:1508:0:4::9&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a00:1508:0:4::9&name=) |
 
-
 ### DNSlify DNS
 
 [DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
@@ -1017,7 +1005,6 @@ Family mode offers protection by "Safe" resolvers and blocks adult sites.
 | -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://basic.rethinkdns.com/` | [Add to AdGuard](adguard:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com) |
 | DNS-over-TLS   | `tls://max.rethinkdns.com`      | [Add to AdGuard](adguard:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com)               |
-
 
 ### ControlD
 
@@ -1103,3 +1090,25 @@ Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but
 | DNS, IPv4      | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
 | DNS, IPv6      | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
 | DNSCrypt, IPv4 | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
+
+### OpenBLD.net DNS
+
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resovers with blocking: adverticing, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
+
+#### Adaptieve filtering (ADA)
+
+Recommended for most users, very flexible filtering with blocking most ads networks, ad-tracking, malware and phishing domains.
+
+| Protocol       | Address                             |                                                                              |
+| -------------- | ----------------------------------- | ---------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://ada.openbld.net/dns-query` | [Add to AdGuard](sdns://AgAAAAAAAAAAAAAPYWRhLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
+| DNS-over-TLS   | `tls://ada.openbld.net`             | [Add to AdGuard](sdns://AwAAAAAAAAAAAAAPYWRhLm9wZW5ibGQubmV0)                |
+
+#### Strikte filtering (RIC)
+
+More strictly filtering policies with blocking - ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
+
+| Protocol      | Adres                               |                                                                                     |
+| ------------- | ----------------------------------- | ----------------------------------------------------------------------------------- |
+| DNS-via-HTTPS | `https://ric.openbld.net/dns-query` | [Toevoegen aan AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
+| DNS-via-TLS   | `tls://ric.openbld.net`             | [Toevoegen aan AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |

@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-`main` branch is published automatically to https://adguardteam.github.io/KnowledgeBaseDNS/.
+`main` branch is published automatically to [https://adguardteam.github.io/KnowledgeBaseDNS/](https://adguardteam.github.io/KnowledgeBaseDNS/).
 
 ## How to contribute
 
@@ -27,11 +27,25 @@ Then you should open Terminal on your computer and navigate to the directory whe
 
 - `yarn install`
 
+### Lint markdown
+
+ This command lints the markdown and outputs any errors to the console:
+
+- `yarn lint:md`
+
+ Some of errors can be fixed automatically:
+
+- `yarn lint:md --fix`
+
+ VSCode users can install the [markdownlint extension][vscode-markdownlint] to see the errors in the editor.
+
 ### Run it locally
 
 - `yarn start`
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command [lints markdown syntax](#lint-markdown),
+and if there is no markdownlint errors starts a local development server and opens up a browser window.
+Most changes are reflected live without having to restart the server.
 
 ## How to build
 
@@ -63,7 +77,7 @@ If you'd like to update the list of [known DNS Providers](https://github.com/Adg
 
 1. Go to [Online DNS Stamp calculator](https://dnscrypt.info/stamps/)
 2. Choose DNS-over-TLS from the drop-down menu
-3. Fill out the Host name field 
+3. Fill out the Host name field
 4. Copy the ready DNS stamp from the Stamp field
 
 ### For DNS-over-QUIC
@@ -84,3 +98,5 @@ If you'd like to update the list of [known DNS Providers](https://github.com/Adg
 
 1. Install dnslookup using [Homebrew](https://brew.sh/) or [from source](https://github.com/ameshkov/dnslookup)
 2. Run a command. Examples of commands for different protocols are given [on this page](https://github.com/ameshkov/dnslookup)
+
+[vscode-markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint

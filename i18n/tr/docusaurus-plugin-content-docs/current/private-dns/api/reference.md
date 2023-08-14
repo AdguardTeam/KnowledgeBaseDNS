@@ -5,7 +5,7 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!-- 
+<!--
     The content below is simply an automatic conversion from the OpenAPI spec
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
@@ -13,7 +13,8 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-# AdGuard DNS API
+## AdGuard DNS API
+
 DNS API documentation
 
 ## Sürüm: 1.4
@@ -21,7 +22,8 @@ DNS API documentation
 ### /oapi/v1/account/limits
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Gets account limits
 
@@ -34,7 +36,8 @@ Gets account limits
 ### /oapi/v1/devices
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Cihazları listeler
 
@@ -45,7 +48,8 @@ Cihazları listeler
 | 200 | List of devices |
 
 #### POST
-##### Özet:
+
+##### Özet
 
 Yeni bir cihaz oluşturur
 
@@ -60,15 +64,16 @@ Yeni bir cihaz oluşturur
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
-##### Özet:
+
+##### Özet
 
 Bir cihazı kaldırır
 
 ##### Parametreler
 
-| Name      | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------- | ---------------- | -------- | ------- | ---- |
-| device_id | path             |          | Evet    | dize |
+| device_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -78,15 +83,16 @@ Bir cihazı kaldırır
 | 404 | Cihaz bulunamadı |
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Gets an existing device by ID
 
 ##### Parametreler
 
-| Name          | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim          | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | ------------- | ---------------- | -------- | ------- | ---- |
-| cihaz_kimliği | path             |          | Evet    | dize |
+| cihaz_kimliği | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -96,15 +102,16 @@ Gets an existing device by ID
 | 404 | Cihaz bulunamadı |
 
 #### PUT
-##### Özet:
+
+##### Özet
 
 Updates an existing device
 
 ##### Parametreler
 
-| Name      | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------- | ---------------- | -------- | ------- | ---- |
-| device_id | path             |          | Evet    | dize |
+| device_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -117,13 +124,14 @@ Updates an existing device
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parametreler
 
-| Name                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
+| İsim                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
 | ----------------------- | ---------------- | ------------------------------------------------------------------------------ | ------- | ---------- |
 | cihaz_kimliği           | yol              |                                                                                | Evet    | dize       |
 | exclude_wifi_networks | sorgu            | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Hayır   | [ string ] |
@@ -139,15 +147,16 @@ Gets DNS-over-HTTPS .mobileconfig file.
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parametreler
 
-| Name                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
+| İsim                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
 | ----------------------- | ---------------- | ------------------------------------------------------------------------------ | ------- | ---------- |
-| cihaz_kimliği           | path             |                                                                                | Evet    | dize       |
+| cihaz_kimliği           | yol              |                                                                                | Evet    | dize       |
 | exclude_wifi_networks | sorgu            | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Hayır   | [ string ] |
 | exclude_domain          | sorgu            | List domains that will use default DNS servers instead of AdGuard DNS          | Hayır   | [ string ] |
 
@@ -161,15 +170,16 @@ Gets DNS-over-TLS .mobileconfig file.
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Özet:
+
+##### Özet
 
 Cihaz ayarlarını günceller
 
 ##### Parametreler
 
-| Name      | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------- | ---------------- | -------- | ------- | ---- |
-| device_id | path             |          | Evet    | dize |
+| device_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -182,11 +192,12 @@ Cihaz ayarlarını günceller
 ### /oapi/v1/dns_servers
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Kullanıcıya ait DNS sunucularını listeler.
 
-##### Açıklama:
+##### Açıklama
 
 Kullanıcıya ait DNS sunucularını listeler. By default there is at least one default server.
 
@@ -197,11 +208,12 @@ Kullanıcıya ait DNS sunucularını listeler. By default there is at least one 
 | 200 | List of DNS servers |
 
 #### POST
-##### Özet:
+
+##### Özet
 
 Yeni bir DNS sunucusu oluşturur
 
-##### Açıklama:
+##### Açıklama
 
 Yeni bir DNS sunucusu oluşturur. You can attach custom settings, otherwise DNS server will be created with default settings.
 
@@ -216,19 +228,20 @@ Yeni bir DNS sunucusu oluşturur. You can attach custom settings, otherwise DNS 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
-##### Özet:
+
+##### Özet
 
 Bir DNS sunucusunu kaldırır
 
-##### Açıklama:
+##### Açıklama
 
 Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayılan DNS sunucusuna taşınacaktır. Varsayılan bir DNS sunucusunu silmek yasaktır.
 
 ##### Parametreler
 
-| Name            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | path             |          | Evet    | dize |
+| dns_server_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -238,15 +251,16 @@ Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayı
 | 404 | DNS sunucusu bulunamadı |
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Gets an existing DNS server by ID
 
 ##### Parametreler
 
-| Name            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | path             |          | Evet    | dize |
+| dns_server_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -256,15 +270,16 @@ Gets an existing DNS server by ID
 | 404 | DNS sunucusu bulunamadı |
 
 #### PUT
-##### Özet:
+
+##### Özet
 
 Mevcut bir DNS sunucusunu günceller
 
 ##### Parametreler
 
-| Name            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | path             |          | Evet    | dize |
+| dns_server_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -277,15 +292,16 @@ Mevcut bir DNS sunucusunu günceller
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Özet:
+
+##### Özet
 
 DNS sunucusu ayarlarını günceller
 
 ##### Parametreler
 
-| Name            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | path             |          | Evet    | dize |
+| dns_server_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -298,7 +314,8 @@ DNS sunucusu ayarlarını günceller
 ### /oapi/v1/filter_lists
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Filtre listelerini alır
 
@@ -311,7 +328,8 @@ Filtre listelerini alır
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Özet:
+
+##### Özet
 
 Generates Access and Refresh token
 
@@ -328,7 +346,8 @@ boş
 ### /oapi/v1/query_log
 
 #### DELETE
-##### Özet:
+
+##### Özet
 
 Sorgu günlüğünü temizler
 
@@ -339,13 +358,14 @@ Sorgu günlüğünü temizler
 | 202 | Sorgu günlüğü temizlendi |
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Sorgu günlüğünü alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                                                                         | Gerekli | Şema                                                |
+| İsim               | Konumlandığı yer | Açıklama                                                                         | Gerekli | Şema                                                |
 | ------------------ | ---------------- | -------------------------------------------------------------------------------- | ------- | --------------------------------------------------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive)                                            | Evet    | uzun                                                |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)                                                | Evet    | uzun                                                |
@@ -367,13 +387,14 @@ Sorgu günlüğünü alır
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Özet:
+
+##### Özet
 
 Revokes a Refresh Token
 
 ##### Parametreler
 
-| Name          | Konumlandığı yer | Açıklama      | Gerekli | Şema |
+| İsim          | Konumlandığı yer | Açıklama      | Gerekli | Şema |
 | ------------- | ---------------- | ------------- | ------- | ---- |
 | refresh_token | sorgu            | Refresh Token | Evet    | dize |
 
@@ -388,13 +409,14 @@ boş
 ### /oapi/v1/stats/categories
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Kategori istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -411,13 +433,14 @@ Kategori istatistiklerini alır
 ### /oapi/v1/stats/companies
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Şirket istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -434,13 +457,14 @@ Kategori istatistiklerini alır
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Ayrıntılı şirket istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -458,13 +482,14 @@ Ayrıntılı şirket istatistiklerini alır
 ### /oapi/v1/stats/countries
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Ülke istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -481,13 +506,14 @@ Ayrıntılı şirket istatistiklerini alır
 ### /oapi/v1/stats/devices
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Cihaz istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -504,13 +530,14 @@ Cihaz istatistiklerini alır
 ### /oapi/v1/stats/domains
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Alan adı istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -527,13 +554,14 @@ Alan adı istatistiklerini alır
 ### /oapi/v1/stats/time
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Süre istatistiklerini alır
 
 ##### Parametreler
 
-| Name               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
+| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
@@ -550,7 +578,8 @@ Süre istatistiklerini alır
 ### /oapi/v1/web_services
 
 #### GET
-##### Özet:
+
+##### Özet
 
 Lists web services
 

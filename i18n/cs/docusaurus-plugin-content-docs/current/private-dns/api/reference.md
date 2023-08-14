@@ -5,7 +5,7 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!-- 
+<!--
     The content below is simply an automatic conversion from the OpenAPI spec
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
@@ -13,7 +13,8 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-# AdGuard DNS API
+## AdGuard DNS API
+
 Dokumentace DNS API
 
 ## Verze: 1.4
@@ -21,7 +22,8 @@ Dokumentace DNS API
 ### /oapi/v1/account/limits
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Zjišťuje limity účtu
 
@@ -34,7 +36,8 @@ Zjišťuje limity účtu
 ### /oapi/v1/devices
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Seznamy zařízení
 
@@ -45,7 +48,8 @@ Seznamy zařízení
 | 200 | Seznam zařízení |
 
 #### POST
-##### Shrnutí:
+
+##### Shrnutí
 
 Vytvoří nové zařízení
 
@@ -60,7 +64,8 @@ Vytvoří nové zařízení
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
-##### Shrnutí:
+
+##### Shrnutí
 
 Odstraní zařízení
 
@@ -78,7 +83,8 @@ Odstraní zařízení
 | 404 | Zařízení nenalezeno |
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá existující zařízení podle ID
 
@@ -96,7 +102,8 @@ Získá existující zařízení podle ID
 | 404 | Zařízení nenalezeno  |
 
 #### PUT
-##### Shrnutí:
+
+##### Shrnutí
 
 Aktualizuje existující zařízení
 
@@ -117,7 +124,8 @@ Aktualizuje existující zařízení
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá soubor .mobileconfig DNS-over-HTTPS.
 
@@ -139,7 +147,8 @@ Získá soubor .mobileconfig DNS-over-HTTPS.
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá soubor .mobileconfig DNS-over-TLS.
 
@@ -161,7 +170,8 @@ Získá soubor .mobileconfig DNS-over-TLS.
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Shrnutí:
+
+##### Shrnutí
 
 Aktualizuje nastavení zařízení
 
@@ -182,11 +192,12 @@ Aktualizuje nastavení zařízení
 ### /oapi/v1/dns_servers
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Seznam DNS serverů, které patří uživateli.
 
-##### Popis:
+##### Popis
 
 Seznam DNS serverů, které patří uživateli. Ve výchozím nastavení je alespoň jeden výchozí server.
 
@@ -197,11 +208,12 @@ Seznam DNS serverů, které patří uživateli. Ve výchozím nastavení je ales
 | 200 | Seznam DNS serverů |
 
 #### POST
-##### Shrnutí:
+
+##### Shrnutí
 
 Vytvoří nový DNS server
 
-##### Popis:
+##### Popis
 
 Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude DNS server vytvořen s výchozím nastavením.
 
@@ -216,11 +228,12 @@ Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude D
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
-##### Shrnutí:
+
+##### Shrnutí
 
 Odstraní DNS server
 
-##### Popis:
+##### Popis
 
 Odstraní DNS server. Všechna zařízení připojená k tomuto DNS serveru budou přesunuta na výchozí DNS server. Odstranění výchozího DNS serveru je zakázáno.
 
@@ -238,7 +251,8 @@ Odstraní DNS server. Všechna zařízení připojená k tomuto DNS serveru budo
 | 404 | DNS server nenalezen |
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá existující DNS server podle ID
 
@@ -256,7 +270,8 @@ Získá existující DNS server podle ID
 | 404 | DNS server nenalezen  |
 
 #### PUT
-##### Shrnutí:
+
+##### Shrnutí
 
 Aktualizuje existující DNS server
 
@@ -277,7 +292,8 @@ Aktualizuje existující DNS server
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Shrnutí:
+
+##### Shrnutí
 
 Aktualizuje nastavení DNS serveru
 
@@ -298,7 +314,8 @@ Aktualizuje nastavení DNS serveru
 ### /oapi/v1/filter_lists
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá seznamy filtrů
 
@@ -311,7 +328,8 @@ Získá seznamy filtrů
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Shrnutí:
+
+##### Shrnutí
 
 Vygeneruje přístupový a obnovovací token
 
@@ -328,7 +346,8 @@ null
 ### /oapi/v1/query_log
 
 #### DELETE
-##### Shrnutí:
+
+##### Shrnutí
 
 Vymaže záznamy dotazů
 
@@ -339,7 +358,8 @@ Vymaže záznamy dotazů
 | 202 | Význam dotazu vymazán |
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá záznamy dotazů
 
@@ -360,14 +380,15 @@ Získá záznamy dotazů
 
 ##### Odezvy
 
-| Kód | Popis           |
-| --- | --------------- |
-| 200 | Protokol dotazů |
+| Kód | Popis     |
+| --- | --------- |
+| 200 | Query log |
 
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Shrnutí:
+
+##### Shrnutí
 
 Odvolá obnovovací token
 
@@ -388,7 +409,8 @@ null
 ### /oapi/v1/stats/categories
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky kategorií
 
@@ -411,7 +433,8 @@ Získá statistiky kategorií
 ### /oapi/v1/stats/companies
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky společností
 
@@ -434,7 +457,8 @@ Získá statistiky společností
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá podrobné statistiky společností
 
@@ -458,7 +482,8 @@ Získá podrobné statistiky společností
 ### /oapi/v1/stats/countries
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky zemí
 
@@ -481,7 +506,8 @@ Získá statistiky zemí
 ### /oapi/v1/stats/devices
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky zařízení
 
@@ -504,7 +530,8 @@ Získá statistiky zařízení
 ### /oapi/v1/stats/domains
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky domén
 
@@ -527,7 +554,8 @@ Získá statistiky domén
 ### /oapi/v1/stats/time
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Získá statistiky času
 
@@ -550,7 +578,8 @@ Získá statistiky času
 ### /oapi/v1/web_services
 
 #### GET
-##### Shrnutí:
+
+##### Shrnutí
 
 Vypíše webové služby
 

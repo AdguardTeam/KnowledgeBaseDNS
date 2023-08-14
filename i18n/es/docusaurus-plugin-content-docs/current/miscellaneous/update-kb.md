@@ -15,13 +15,13 @@ Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://g
 
 The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+Puedes utilizar esta Base de Conocimiento localmente en tu ordenador para previsualizar los cambios que sugieres. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
 
 ## Translating articles {#translate-adguard}
 
 Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) of the AdGuard Ad Blocker Knowledge Base.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
+Cuando se trabaja en los artículos de la Base de conocimientos de AdGuard DNS, es posible que se encuentre con strings que contienen formas plurales que debe traducir con especial atención. [En un artículo separado](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), describimos en detalle las dificultades que pueden surgir al traducir strings con formas plurales, y dimos amplias instrucciones sobre cómo trabajar con ellas en la plataforma Crowdin.
 
 ## Working on open issues
 
