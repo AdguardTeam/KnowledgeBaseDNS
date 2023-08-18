@@ -295,10 +295,10 @@ nslookup eksempel.com my.adguard.local
 
 ```none
 Server: my.adguard.local
-Address: 127.0.0.1#53
+Adresse: 127.0.0.1#53
 
-Non-authoritative answer:
-example.com canonical name = example.net.
+Ikke-autoritativt svar:
+eksempel.com kanonisk navn = eksempel.net.
 Navn: eksempel.net
 Adresse: 1.2.3.4
 ```

@@ -28,7 +28,7 @@ Ancak, daha önce de belirtildiği gibi, prosedür belirli bir cihaza bağlı ol
 
 On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
 
-If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
+Bu yöntem işe yaramazsa, *Ayarlar* → *Gelişmiş* özellikleri kontrol ederek *Avuç içi kaydırarak yakalama* özelliğini etkinleştirin.
 
 Ayrıca, cihazlarınızda ekran görüntüsü almak için her zaman özel uygulamaları kullanabilirsiniz, örneğin — *Ekran Görüntüsü Kolay*, *Screenshot Ultimate*, *Screenshot Snap*, vb.
 
@@ -66,7 +66,7 @@ Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kombinasyonu
 
 Bir ekran görüntüsü aldıktan sonra panoya kaydedilecektir. Çoğu durumda, *Ctrl + V* tuş kombinasyonunu kullanarak düzenlemekte olduğunuz bir belgeye yapıştırabilirsiniz. Alternatif olarak, ekran görüntüsünü bir dosyaya kaydetmeniz gerekiyorsa, standart **Paint** programını (veya görüntülerle çalışabilen başka bir uygulamayı) açmalısınız. Aynı düğme kombinasyonunu kullanarak veya Yapıştır düğmesine (genellikle ekranın sol üst köşesinde) tıklayarak ekran görüntünüzü buraya yapıştırın ve ardından kaydedin.
 
-Windows 8 ve 10, *Win + PrtScn* kombinasyonu ile çok hızlı bir şekilde ekran görüntüsü almanızı sağlar. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
+Windows 8 ve 10, *Win + PrtScn* kombinasyonu ile çok hızlı bir şekilde ekran görüntüsü almanızı sağlar. Bu düğmelere basar basmaz, ekran görüntüsü otomatik olarak Resimler → Ekran Görüntüleri Klasörünüze bir dosya olarak kaydedilecektir.
 
 Bilgisayarınızın standart programları arasında Başlat menüsünden bulabileceğiniz *Ekran Alıntısı Aracı* adlı ekran görüntüsü almak için özel bir program da bulunmaktadır. Ekran Alıntısı Aracı, masaüstünüzün herhangi bir alanını veya tüm ekranı yakalamanıza olanak tanır. Bu programı kullanarak ekran görüntüsü aldıktan sonra resmi düzenleyebilir ve bilgisayarınızdaki herhangi bir klasöre kaydedebilirsiniz.
 

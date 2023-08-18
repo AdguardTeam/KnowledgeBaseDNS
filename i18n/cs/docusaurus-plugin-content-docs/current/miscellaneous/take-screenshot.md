@@ -28,7 +28,7 @@ Jak již bylo uvedeno, postup se může lišit v závislosti na konkrétním za�
 
 V systému Android 8 a novějším lze snímek obrazovky pořídit také tak, že položíte okraj otevřené ruky svisle podél levého/pravého okraje obrazovky a přejedete rukou k druhému okraji obrazovky, přičemž se dotknete obrazovky okrajem ruky.
 
-If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
+Pokud tato metoda nefunguje, zkontrolujte *Nastavení* → *Pokročilé funkce* a povolte *Přejetí dlaní k zachycení snímku obrazovky*.
 
 Kromě toho můžete vždy použít některou ze speciálních aplikací pro pořizování snímků obrazovky na svých zařízeních, např. — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* atd.
 
@@ -66,7 +66,7 @@ Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující
 
 Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí kombinace tlačítek *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Vložte tam snímek obrazovky pomocí stejné kombinace tlačítek nebo kliknutím na tlačítko Vložit (obvykle v levém horním rohu obrazovky) a poté jej uložte.
 
-Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí kombinace *Win + PrtScn*. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
+Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí kombinace *Win + PrtScn*. Jakmile stisknete tato tlačítka, snímek obrazovky se automaticky uloží jako soubor do složky Obrázky → Snímky obrazovky.
 
 K pořizování snímků obrazovky existuje také specializovaný program *Výstřižky*, který najdete v nabídce Start mezi standardními programy počítače. Výstřižky vám umožní zachytit jakoukoli oblast vaší pracovní plochy nebo celou obrazovku. Po pořízení snímku obrazovky pomocí tohoto programu můžete obrázek upravit a uložit do libovolné složky v počítači.
 

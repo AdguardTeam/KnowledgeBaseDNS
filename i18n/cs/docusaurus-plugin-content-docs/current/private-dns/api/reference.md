@@ -380,9 +380,9 @@ Získá záznamy dotazů
 
 ##### Odezvy
 
-| Kód | Popis     |
-| --- | --------- |
-| 200 | Query log |
+| Kód | Popis           |
+| --- | --------------- |
+| 200 | Protokol dotazů |
 
 ### /oapi/v1/revoke_token
 
