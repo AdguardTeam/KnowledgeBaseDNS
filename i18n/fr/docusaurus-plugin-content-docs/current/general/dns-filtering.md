@@ -62,10 +62,10 @@ Tout d'abord, nous devons mentionner qu'avec AdGuard, vous n'avez pas à choisir
 
 **Inconvénients du filtrage DNS :**
 
-1. Le filtrage DNS est "rudimentaire", ce qui signifie qu'il ne supprimera pas les espaces vides laissés derrière une publicité bloquée, ni n'appliquera aucune sorte de filtrage cosmétique. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. Le filtrage DNS est "rudimentaire", ce qui signifie qu'il ne supprimera pas les espaces vides laissés derrière une publicité bloquée, ni n'appliquera aucune sorte de filtrage cosmétique. La plupart des publicités les plus compliquées ne peuvent pas être bloquées au niveau DNS (ou plutôt, elles le peuvent, mais uniquement en bloquant les domaines entiers qui sont utilisés à d'autres fins).
 
-    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
+    ![Exemple de différence](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Un exemple de la différence entre le filtrage DNS et le filtrage réseau*
 
-1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
+1. C'est impossible de connaître l'origine d'une requête DNS, ce qui signifie que vous ne pouvez pas faire la distinction entre des apps différentes au niveau DNS. Cela a un impact négatif sur les statistiques et rend impossible la création de règles de filtrage spécifiques à l'application.
 
-We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.
+Nous vous recommandons d'utiliser le filtrage DNS en plus du filtrage réseau, et non à sa place, dans la mesure du possible.

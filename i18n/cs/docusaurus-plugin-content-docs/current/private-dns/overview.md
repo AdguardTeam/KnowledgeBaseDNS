@@ -13,17 +13,17 @@ Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## What is Private AdGuard DNS?
+## Co je soukromý AdGuard DNS?
 
 Soukromý AdGuard DNS je DNS server, který kromě výhod veřejného DNS serveru (jako je šifrování provozu a seznamy zakázaných domén) poskytuje funkce, jako je flexibilní přizpůsobení, statistiky DNS a rodičovská kontrola a lze jej snadno spravovat pomocí praktického ovládacího panelu.
 
-## Why you need Private AdGuard DNS
+## Proč potřebujete soukromý AdGuard DNS
 
 Dnes můžete k internetu připojit cokoli: televizory, ledničky, chytré žárovky nebo reproduktory. Spolu s nepopiratelnými vymoženostmi však získáte i slídiče zařízení a reklamy. Jednoduchý blokátor reklam v prohlížeči vás v tomto případě neochrání, ale AdGuard DNS, který můžete nastavit tak, aby filtroval datový provoz, blokoval obsah a slídiče, má účinek na celý systém.
 
 Již máme [veřejný AdGuard DNS](../public-dns/overview.md) a [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Některým uživatelům tato řešení vyhovují, ale pro jiné je veřejný AdGuard DNS málo flexibilní v konfiguraci a AdGuard Home postrádá jednoduchost. Zde přichází ke slovu soukromý AdGuard DNS. Má to nejlepší z obou světů: nabízí možnost přizpůsobení, ovládání a informace - to vše prostřednictvím jednoduchého a snadno použitelného ovládacího panelu.
 
-## The difference between Private and Public AdGuard DNS
+## Rozdíl mezi soukromým a veřejným AdGuard DNS
 
 Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGuard DNS a soukromých serverech AdGuard DNS.
 
@@ -36,12 +36,12 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 | -                                      | Podrobný záznam dotazů                                                                                        |
 | -                                      | Rodičovská ochrana                                                                                            |
 
-## How to set up Private AdGuard DNS
+## Jak nastavit soukromý AdGuard DNS
 
 1. Přejděte na svůj [ovládací panel AdGuard DNS](https://adguard-dns.io/dashboard/) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
 1. Klikněte na "Připojit zařízení" a postupujte podle pokynů na obrazovce
 
-:::note Supported platforms:
+:::note Podporované platformy:
 
 - Android
 - iOS
@@ -53,27 +53,27 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 
 :::
 
-Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+Každé zařízení, které přidáte do panelu AdGuard DNS, má svou vlastní jedinečnou adresu, kterou lze použít, pokud zařízení podporuje moderní šifrované protokoly DNS (DoH, DoT a DoQ).
 
-## Linked IP
+## Připojená IP
 
-If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+Pokud zařízení nepodporuje šifrovanou službu DNS a musíte použít běžnou službu DNS, existuje další způsob, jak umožnit službě AdGuard DNS rozpoznat zařízení — připojit jeho IP adresu. V tomto případě AdGuard DNS započítává všechny běžné DNS požadavky, které přicházejí z dané IP adresy do tohoto "zařízení".
 
-The only requirement for linking IP is that **it must be a residential IP address**.
+Jediným požadavkem pro připojení IP je, že **musí být rezidentní IP adresa**.
 
 :::note
 
-A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
+Rezidenční IP adresa je IP adresa přiřazená zařízení připojenému k rezidentnímu ISP. Obvykle je spojena s fyzickou lokalitou a je přidělena jednotlivým domům nebo bytům. Rezidenční IP adresy používají běžní uživatelé internetu pro své každodenní online aktivity, jako je procházení webu, přístup k platformám sociálních médií, odesílání e-mailů nebo streamování obsahu.
 
 :::
 
-If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
+Pokud se snažíte připojit rezidenční IP adresu a AdGuard DNS vám to neumožňuje, kontaktujte náš tým podpory na adrese support@adguard.com.
 
 ## Funkce soukromého AdGuard DNS
 
-### Blocklists management
+### Správa seznamů zakázaných
 
-With "Blocklists" feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
+Pomocí funkce "Seznamy zakázaných" můžete nastavit, které domény chcete blokovat a které ne. Vyberte si z široké škály seznamů zakázaných pro různé účely.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 

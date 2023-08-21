@@ -116,15 +116,15 @@ To flush the **BIND** DNS cache, run the command:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Pak je třeba znovu načíst BIND:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+Zobrazí se zpráva, že server byl znovu úspěšně načten.
 
 ## Jak vyprázdnit mezipaměť DNS v Chrome
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
+To může být užitečné, pokud nechcete restartovat prohlížeč pokaždé, když pracujete se soukromým AdGuard DNS nebo AdGuard Home. Nastavení 1-2 stačí změnit pouze jednou.
 
 1. Deaktivujte **zabezpečený DNS** v nastavení Chrome
 

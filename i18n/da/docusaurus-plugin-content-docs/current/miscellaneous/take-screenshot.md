@@ -28,7 +28,7 @@ Proceduren kan dog, som allerede nævnt, variere afhængigt af den pågældende 
 
 I Android 8 og senere kan et skærmfoto også tages ved at placere kanten af en åben hånd lodret langs venstre/højre skærmkant og stryge hånden til den anden skærmkant, mens skærmen berøres med håndkanten.
 
-If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
+Fungerer fremgangsmåden ikke, tjek *Indstillinger* *Avancerede* funktioner for at aktivere *Stryg håndkant for skærmfoto*.
 
 Desuden kan der altid bruges særlige apps til at tage skærmfotos på enheder, f.eks. *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* mv.
 
@@ -66,7 +66,7 @@ For at tage et skærmfoto af et bestemt område, så brug flg. kombination:
 
 Når skærmfotoet er taget, gemmes det i udklipsholderen. Man vil som regel kunne indsætte det i f.eks. et dokument, man redigerer, vha. knapkombinationen *Ctrl + V*. Er der behov for at gemme skærmfotoet i en fil, så åbn standardprogrammet **Paint** (eller ethvert andet billedbehandlingsprogram). Indsæt skærmfotoet dér vha. samme knapkombination eller ved at klikke på Indsæt-knappen (normalt i øverste venstre skærmhjørne) og gem det derefter.
 
-Windows 8 og 10 lader brugeren tage et skærmbillede meget hurtigt med *Win + PrtScn*-kombinationen. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
+Windows 8 og 10 lader brugeren tage et skærmbillede meget hurtigt med *Win + PrtScn*-kombinationen. Så snart der trykkes på disse taster, gemmes skærmfotoet automatisk som en billedfil i mappen Billeder → Skærmfotos.
 
 Der er også et dedikeret program til at tage skærmfotos kaldet *Snipping Tool*, der kan findes via Start-menuen blandt standardprogrammerne på computeren. Med Snipping Tool kan ethvert skrivebordsområde eller hele skærmen knipses. Efter at have taget et skærmfoto med dette program, kan fotoet redigeres og gemmes i den ønskede mappe på computeren.
 

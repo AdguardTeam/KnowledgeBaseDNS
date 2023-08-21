@@ -10,17 +10,17 @@ DNS staat voor "Domain Name System", en heeft tot doel de namen van websites om 
 
 :::note
 
-The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+De standaard DNS-server wordt meestal geleverd door je internetprovider. Dit betekent dat je ISP jouw online activiteiten kan volgen en logboeken aan derden kan verkopen.
 
 :::
 
-![Your device always uses some DNS server to obtain IP addresses of the domain name apps want to navigate to](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+![Jouw apparaat gebruikt altijd een DNS-server om IP-adressen te verkrijgen van de domeinnaam waar apps naartoe willen navigeren](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+Er zijn ook DNS-servers die bepaalde websites op DNS-niveau kunnen blokkeren. Hoe werken ze? Wanneer jouw apparaat een "slecht" verzoek verzendt, of het nu een advertentie of een tracker is, verhindert een DNS-server de verbinding door te reageren met een niet-routeerbaar IP-adres voor een geblokkeerd domein.
 
 ## Why use DNS for content blocking
 
-Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart auto. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker has proven insufficient. To get a better protection, use DNS in combination with VPN and ad blocker.
+Werkelijk alles is tegenwoordig verbonden met internet, van tv tot slimme lampen, van mobiele apparaten tot slimme auto's. En waar internet is, zijn er advertenties en volgers. In dit geval is een browsergebaseerde advertentieblokker onvoldoende gebleken. To get a better protection, use DNS in combination with VPN and ad blocker.
 
 Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
 

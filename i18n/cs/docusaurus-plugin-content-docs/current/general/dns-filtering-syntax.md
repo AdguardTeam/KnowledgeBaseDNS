@@ -295,9 +295,9 @@ nslookup example.com my.adguard.local
 
 ```none
 Server: my.adguard.local
-Address: 127.0.0.1#53
+Adresa: 127.0.0.1#53
 
-Non-authoritative answer:
+Neautorizovaná odpověď:
 example.com canonical name = example.net.
 Název: example.net
 Adresa: 1.2.3.4

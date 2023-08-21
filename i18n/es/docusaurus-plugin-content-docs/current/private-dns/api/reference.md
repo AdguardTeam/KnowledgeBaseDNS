@@ -380,9 +380,9 @@ Gets query log
 
 ##### Respuestas
 
-| Código | Descripción           |
-| ------ | --------------------- |
-| 200    | Registro de consultas |
+| Código | Descripción |
+| ------ | ----------- |
+| 200    | Query log   |
 
 ### /oapi/v1/revoke_token
 

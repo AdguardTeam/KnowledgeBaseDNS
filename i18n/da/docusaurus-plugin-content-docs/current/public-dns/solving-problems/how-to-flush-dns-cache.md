@@ -44,87 +44,87 @@ En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstill
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Man bliver nødt til at nulstille dem manuelt.
 
 :::
 
 ### Android
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+På en Android-enhed ryddes DNS-cachen nemmest ved at slå Flytilstand til og fra. Flytilstand kan slås til/fra via ruden Hurtige indstillinger.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+En "hård genstart" vil ligeledes rydde enhedens DNS-cache. For at gøre dette, tryk og hold på tænd-/slukknappen nedtrykket i mindst 20 sek. Dette tvinger (normalt) enheden til at genstarte manuelt, hvorefter DNS-cachen er renset.
 
-En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstillinger-appen. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
+En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstillinger-appen. Åbn *Indstillinger System Avanceret Nulstillingsmuligheder Nulstil netværksindstillinger* og tryk på *Nulstil indstillinger* for at bekræfte.
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Man bliver nødt til at genopsætte dem manuelt.
 
 :::
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+For at rydde DNS-cachen på macOS, åbn Terminal (kan findes via Spotlight-søgning, dvs., tryk på Kommando+Mellemrum og skriv *Terminal*) og angiv dernæst flg. kommando:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+På macOS Big Sur 11.2.0/Monterey 12.0.0 kan flg. kommando også bruges:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+Angiv herefter administratoradgangskoden for at fuldføre processen.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Gør flg. for at rydde DNS-cachen på en Windows-enhed:
 
-Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Åbn en Kommandoprompt som administrator. Den kan findes via Startmenuen ved at skrive *kommandoprompt* eller *cmd*. Skriv derefter `ipconfig/flushdns` og tryk på Retur.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+Dernæst ses linjen *DNS-opløser cachen er tømt*. Færdig!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux har ikke DNS-caching på OS-niveau, medmindre en cachingtjeneste såsom systemd-resolved, DNSMasq, BIND eller Nscd er installeret og kører. Processen med at rense DNS-cachen afhænger af Linux-distributionen og den anvendte cachetjeneste.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+For hver distribution skal et terminalvindue startes. Tryk på Ctrl+Alt+T på tastaturet, og brug den relevante kommando til at rense DNS-cachen for den tjeneste, Linux-systemet kører.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Brug flg. kommando til at fastslå den anvendte DNS-opløser: `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-To clear the **systemd-resolved** DNS cache, type:
+For at rydde **systemd-resolved** DNS-cache, skriv:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+Ved vellykket udførsel returnerer kommandoen ingen besked.
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+For at rydde **DNSMasq**-cachen, skal den genstartes:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-To clear the **NSCD** cache, you also need to restart the service:
+For at rydde **NSCD**-cachen, skal tjenesten også genstartes:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+For at rydde **BIND** DNS-cachen, kør kommandoen:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Genindlæs dernæst BIND:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+En besked om, at serveren er blevet genindlæst, vises efter gennemførsel.
 
 ## Sådan tømmes DNS-cache i Chrome
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
+Dette kan være nyttigt, hvis browseren ikke ønskes genstartet hver gang under arbejdet med AdGuard DNS Private eller AdGuard Home. Indstillinger 1-2 skal kun ændres én gang.
 
 1. Slå **sikker DNS** fra i Chrome-indstillinger
 

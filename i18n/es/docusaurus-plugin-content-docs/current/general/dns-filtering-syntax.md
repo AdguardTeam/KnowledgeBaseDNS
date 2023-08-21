@@ -46,13 +46,13 @@ Si estás manteniendo una lista de bloqueo de estilo `/etc/hosts`, o múltiples 
   En AdGuard Home, usar la dirección IP no especificada (`0.0.0.0`) o una dirección local (`127.0.0.1` y similares) para un host es básicamente lo mismo que bloquear ese host.
 
   ```none
-  # Devuelve la dirección IP 1.2.3.4 para ejemplo.org.
-  1.2.3.4 ejemplo.org
-  # Bloquea ejemplo.org respondiendo con 0.0.0.0.
+  # Devuelve la dirección IP 1.2.3.4 para example.org.
+  1.2.3.4 example.org
+  # Bloquea example.org respondiendo con 0.0.0.0.
   0.0.0.0 example.org
   ```
 
-- `example.org`: una regla de dominio simple. Bloquea el `ejemplo.org` dominio pero **no** sus subdominios. `www.example.org` sigue estando permitido.
+- `example.org`: una regla de dominio simple. Bloquea el dominio `example.org` pero **no** sus subdominios. `www.example.org` sigue estando permitido.
 
 - `! Es un comentario ` y `# También un comentario`: comentarios.
 
@@ -81,7 +81,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `^`: el carácter de separador. A diferencia del bloqueo de anuncios para navegador, no hay nada que separar en un nombre de host, por lo que el único propósito de este carácter es marcar el final del nombre de host.
 
-- `|`: un puntero al principio o al final del nombre de host. El valor depende de la ubicación del carácter. Por ejemplo, la regla `ample.org|` corresponde a `ample.org` pero no a `example.org.com`. `|example` corresponde a `example.org` pero no a `test.example`.
+- `|`: un puntero al principio o al final del nombre de host. El valor depende de la ubicación del carácter. Por ejemplo, la regla `ample.org|` corresponde a `example.org` pero no a `example.org.com`. `|example` corresponde a `example.org` pero no a `test.example`.
 
 ### Expresiones regulares
 
@@ -159,11 +159,11 @@ Los nombres de los clientes suelen contener espacios u otros caracteres especial
 
 - `@@||*^$client=127.0.0.1`: desbloquea todo para localhost.
 
-- `||ejemplo.org^$client="Frank\'s laptop"`: bloquea `ejemplo.org` sólo para el cliente llamado `"Frank\'s laptop"`. Ten en cuenta que las comillas (`"`) en el nombre deben escaparse.
+- `||example.org^$client="Frank\'s laptop"`: bloquea `example.org` sólo para el cliente llamado `"Frank\'s laptop"`. Ten en cuenta que las comillas (`"`) en el nombre deben escaparse.
 
 - `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` para todos excepto para el cliente llamado `Mary's, John's, and Boris's laptops`. Ten en cuenta que la coma (`,`) también debe escaparse.
 
-- `||example.org^$client=~Mom|~Dad|Kids`: bloque `ejemplo.org` para `Kids`, pero no para `Mom` y `Dad`. Este ejemplo demuestra cómo especificar varios clientes en una regla.
+- `||example.org^$client=~Mom|~Dad|Kids`: bloque `example.org` para `Kids`, pero no para `Mom` y `Dad`. Este ejemplo demuestra cómo especificar varios clientes en una regla.
 
 - `||example.org^$client=192.168.0.0/24`: block `example.org` para todos los clientes con direcciones IP en el rango de `192.168.0.0` a `192.168.0.255`.
 
@@ -200,7 +200,7 @@ El problema con este enfoque es que de esta manera también desbloquearás los d
 
 - `@@*$denyallow=com|net`: desbloquea todo excepto `*.com` y `*.net`.
 
-- `||ejemplo.org^$denyallow=sub.ejemplo.org`. bloquea `ejemplo.org` y `*.ejemplo.org` pero no bloquea `sub.ejemplo.org`.
+- `||example.org^$denyallow=sub.example.org`. bloquea `example.org` y `*.example.org` pero no bloquea `sub.example.org`.
 
 #### `dnstype`
 
@@ -345,7 +345,7 @@ Tipos de RR admitidos actualmente con ejemplos:
 
 - `||ejemplo.com^$dnsrewrite=DOMINIONX;;` responde con un código `NXDOMAIN`.
 
-- `$dnstype=AAAA,denyallow=ejemplo.org,dnsrewrite=NOERROR;;` responde con un vacío `NOERROR` responde para todas las solicitudes `AAAA` excepto las de `ejemplo.org`.
+- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responde con un vacío `NOERROR` responde para todas las solicitudes `AAAA` excepto las de `example.org`.
 
 Las reglas de excepción eliminan una o todas las reglas:
 
@@ -362,8 +362,8 @@ El modificador `importante` aplicado a una regla aumenta su prioridad sobre cual
 - En este ejemplo:
 
   ```none
-  ||ejemplo.org^$important
-  @@||ejemplo.org^
+  ||example.org^$important
+  @@||example.org^
   ```
 
   `||example.org^$important` bloqueará todas las solicitudes a `*.example.org` a pesar de la regla de excepción.
@@ -371,8 +371,8 @@ El modificador `importante` aplicado a una regla aumenta su prioridad sobre cual
 - En este ejemplo:
 
   ```none
-  ||ejemplo.org^$important
-  @@||ejemplo.org^$important
+  ||example.org^$important
+  @@||example.org^$important
   ```
 
   la regla de excepción también tiene el modificador `importante`, por lo que funcionará.
@@ -385,9 +385,9 @@ Las reglas con el modificador `badfilter` deshabilitan otras reglas básicas a l
 
 - `||ejemplo.com$badfilter` deshabilita `||ejemplo.com`.
 
-- `@@||ejemplo.org^$badfilter` deshabilita `@@||ejemplo.org^`.
+- `@@||example.org^$badfilter` deshabilita `@@||example.org^`.
 
-  **NOTA:** El modificador `badfilter` actualmente no funciona con `/etc/hosts`reglas de estilo. `127.0.0.1 ejemplo.org$badfilter` **no** deshabilitará la regla original `127.0.0.1 ejemplo.org`.
+  **NOTA:** El modificador `badfilter` actualmente no funciona con `/etc/hosts`reglas de estilo. `127.0.0.1 example.org$badfilter` **no** deshabilitará la regla original `127.0.0.1 example.org`.
 
 #### `ctag`
 
@@ -463,9 +463,9 @@ Los nombres de host pueden contener solo caracteres alfanuméricos, guiones meno
 
 ```none
 # Esto es un comentario
-127.0.0.1 ejemplo.org ejemplo.info
-127.0.0.1 ejemplo.com
-127.0.0.1 ejemplo.net # esto también es un comentario
+127.0.0.1 example.org ejemplo.info
+127.0.0.1 example.org
+127.0.0.1 example.org # esto también es un comentario
 ```
 
 En AdGuard Home, las direcciones IP se utilizan para responder a consultas de DNS para estos dominios. En Private AdGuard DNS, estas direcciones simplemente se bloquean.
@@ -478,12 +478,12 @@ Una lista simple de nombres de dominio, un nombre por línea.
 
 ```none
 # Este es un comentario
-ejemplo.com
-ejemplo.org
-ejemplo.net # esto también es un comentario
+example.org
+example.org
+example.org # esto también es un comentario
 ```
 
-Si una cadena no es un dominio válido (por ejemplo, `*.ejemplo.org`), AdGuard Home considerará que se trata de una regla [de tipo Adblock](#adblock-style-syntax).
+Si una cadena no es un dominio válido (por ejemplo, `*.example.org`), AdGuard Home considerará que se trata de una regla [de tipo Adblock](#adblock-style-syntax).
 
 ## Compilador de hostlists
 
