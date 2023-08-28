@@ -367,8 +367,8 @@ Henter forespørgselslog
 
 | Navn               | Placeret i   | Beskrivelse                                                           | Obligatorisk | Schema                                              |
 | ------------------ | ------------ | --------------------------------------------------------------------- | ------------ | --------------------------------------------------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive)                                 | Ja           | long                                                |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)                                   | Ja           | long                                                |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.)                                       | Ja           | long                                                |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.)                                       | Ja           | long                                                |
 | enheder            | forespørgsel | Filtrer efter enheder                                                 | Nej          | [ streng ]                                          |
 | lande              | forespørgsel | Filtrer efter lande                                                   | Nej          | [ streng ]                                          |
 | virksomheder       | forespørgsel | Filtrer efter virksomheder                                            | Nej          | [ streng ]                                          |
@@ -416,12 +416,12 @@ Henter kategoristatistik
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 
@@ -440,12 +440,12 @@ Henter virksomhedsstatistik
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 
@@ -464,13 +464,13 @@ Henter detaljerede virksomhedsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
-| markør             | forespørgsel | Bladringsmarkør                       | Nej          | streng     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
+| markør             | forespørgsel | Bladringsmarkør                 | Nej          | streng     |
 
 ##### Svar
 
@@ -489,12 +489,12 @@ Henter landestatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 
@@ -513,12 +513,12 @@ Henter enhedsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 
@@ -537,12 +537,12 @@ Henter domænestatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 
@@ -561,12 +561,12 @@ Henter tidsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                           | Obligatorisk | Schema     |
-| ------------------ | ------------ | ------------------------------------- | ------------ | ---------- |
-| time_from_millis | forespørgsel | Time from in milliseconds (inclusive) | Ja           | long       |
-| time_to_millis   | forespørgsel | Time to in milliseconds (inclusive)   | Ja           | long       |
-| enheder            | forespørgsel | Filtrer efter enheder                 | Nej          | [ streng ] |
-| lande              | forespørgsel | Filtrer efter lande                   | Nej          | [ streng ] |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
+| time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
+| time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
+| enheder            | forespørgsel | Filtrer efter enheder           | Nej          | [ streng ] |
+| lande              | forespørgsel | Filtrer efter lande             | Nej          | [ streng ] |
 
 ##### Svar
 

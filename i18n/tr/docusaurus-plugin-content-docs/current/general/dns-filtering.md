@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-DNS filtrelemenin faydalarını keşfetmenin en kolay yolu, AdGuard Reklam Engelleyiciyi kurmak veya AdGuard DNS'i denemektir. If you want to filter DNS at the network level, AdGuard Home is your tool
+DNS filtrelemenin faydalarını keşfetmenin en kolay yolu, AdGuard Reklam Engelleyiciyi kurmak veya AdGuard DNS'i denemektir. DNS'i ağ düzeyinde filtrelemek istiyorsanız, AdGuard Home sizin aracınızdır
 
 Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
 
@@ -23,7 +23,7 @@ Aynısı, elbette, yalnızca tarayıcılar için değil, herhangi bir web isteğ
 
 ## DNS filtreleme nasıl çalışır?
 
-DNS filtrelemeyi destekleyen AdGuard uygulamalarından birini kullandığınızda, cihazınız ile DNS sunucusu arasında bir arabellek görevi görür. Tarayıcılarınızın veya uygulamalarınızın göndermek üzere olduğu tüm DNS istekleri önce AdGuard tarafından işlenir. If you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. AdGuard will encrypt all your DNS requests before they leave your device, so that no malefactor could get access to their contents. On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a "blackhole" instead of forwarding them to the DNS server. More on that [later](#local-dns-blocklists).
+DNS filtrelemeyi destekleyen AdGuard uygulamalarından birini kullandığınızda, cihazınız ile DNS sunucusu arasında bir arabellek görevi görür. Tarayıcılarınızın veya uygulamalarınızın göndermek üzere olduğu tüm DNS istekleri önce AdGuard tarafından işlenir. İSS'niz tarafından sağlanan varsayılan DNS sunucusunu kullanıyorsanız, DNS trafiğiniz muhtemelen şifrelenmemiş, gözetlemeye ve ele geçirilmeye karşı savunmasızdır. AdGuard will encrypt all your DNS requests before they leave your device, so that no malefactor could get access to their contents. On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a "blackhole" instead of forwarding them to the DNS server. More on that [later](#local-dns-blocklists).
 
 ![DNS filtreleme nasıl çalışır](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
