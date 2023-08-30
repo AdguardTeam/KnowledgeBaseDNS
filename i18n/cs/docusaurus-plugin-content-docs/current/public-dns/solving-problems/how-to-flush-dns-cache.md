@@ -44,75 +44,75 @@ Další možností je obnovit síťové nastavení zařízení v Nastavení tele
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
 
 :::
 
 ### Android
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
 
-Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
+Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení → Systém → Pokročilé → Možnosti resetování → Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým nastavením sítě, včetně přizpůsobení serverů DNS. Budete muset resetovat ručně.
 
 :::
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+Chcete-li v systému macOS vyprázdnit mezipaměť DNS, otevřete Terminál (najdete ho pomocí vyhledávání Spotlight — stiskněte klávesy Command+Mezerník a napište *Terminal*) a zadejte následující příkaz:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+V systémech macOS Big Sur 11.2.0 a macOS Monterey 12.0.0 můžete použít také tento příkaz:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+Poté zadejte heslo správce a dokončete proces.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Chcete-li vyprázdnit mezipaměť DNS v zařízení se systémem Windows, postupujte takto:
 
-Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Otevřete příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například systemd-resolved, DNSMasq, BIND nebo Nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Pro každou distribuci je třeba spustit okno terminálu. Stiskněte Ctrl+Alt+T na klávesnici a pomocí odpovídajícího příkazu vymažte mezipaměť DNS pro službu, na které váš Linux běží.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Chcete-li zjistit, který řešitel DNS používáte, zadejte příkaz `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-To clear the **systemd-resolved** DNS cache, type:
+Chcete-li vyprázdnit mezipaměť DNS **systemd-resolved**, zadejte příkaz:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+V případě úspěchu příkaz nevrátí žádnou odpověď.
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+Chcete-li vyprázdnit mezipaměť **DNSMasq**, musíte ji restartovat:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-To clear the **NSCD** cache, you also need to restart the service:
+Chcete-li vyprázdnit mezipaměť **NSCD**, musíte službu také restartovat:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+Chcete-li vyprázdnit mezipaměť DNS **BIND**, spusťte příkaz:
 
 `rndc flush`
 

@@ -9,7 +9,7 @@ AdGuard DNS, güvenli bağlantı sağlayan ve ayrıca izleme, reklamlar, kimlik 
 
 ## Genel AdGuard DNS sunucuları
 
-AdGuard DNS has three different types of public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). Her sunucu farklı güvenli protokolleri destekler: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) ve DNS-over-QUIC (DoQ).
+AdGuard DNS üç farklı türde genel sunucuya sahiptir. "Varsayılan" sunucu, reklamları, izleyicileri, kötü amaçlı yazılımları ve kimlik avı siteleri engellemek içindir. "Family protection" da aynı şeyi yapar, ancak aynı zamanda yetişkinlere yönelik içeriğe sahip siteleri engeller ve bunu sağlayan tarayıcılarda "Güvenli arama" seçeneğini uygular. "Non-filtering" güvenli ve güvenilir bir bağlantı sağlar ancak hiçbir şeyi engellemez. Herhangi bir cihazda AdGuard DNS kurulumu hakkında ayrıntılı talimatları [web sitemizde](https://adguard-dns.io/public-dns.html) bulabilirsiniz. Her sunucu farklı güvenli protokolleri destekler: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) ve DNS-over-QUIC (DoQ).
 
 ## AdGuard VPN protokolleri
 

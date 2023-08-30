@@ -31,7 +31,7 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `
 
 
 :::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Anders kun je het verkrijgen door de instructies te volgen in het gedeelte [*Het verkrijgen van het certificaat-hash*](#obtaining-the-certificate-hash).
 
     :::note
 

@@ -79,7 +79,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`: herhangi bir alt alan dahil olmak üzere bir ana makine adının başlangıcıyla eşleşir. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
-- `^`: the separator character. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
+- `^`: ayırıcı karakter. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
 - `|`: a pointer to the beginning or the end of the hostname. The value depends on the character placement in the mask. For example, the rule `ample.org|` corresponds to `example.org` but not to `example.org.com`. `|example`, `example.org` alan adına karşılık gelir ancak `test.example` alan adına karşılık gelmez.
 

@@ -15,7 +15,7 @@ toc_max_heading_level: 4
 
 ## AdGuard DNS API
 
-DNS API documentation
+DNS API belgeleri
 
 ## Sürüm: 1.4
 
@@ -58,7 +58,7 @@ Yeni bir cihaz oluşturur
 | Kod | Açıklama                        |
 | --- | ------------------------------- |
 | 200 | Cihaz oluşturuldu               |
-| 400 | Validation failed               |
+| 400 | Doğrulama başarısız             |
 | 429 | Devices count reached the limit |
 
 ### /oapi/v1/devices/{device_id}
@@ -86,11 +86,11 @@ Bir cihazı kaldırır
 
 ##### Özet
 
-Gets an existing device by ID
+Mevcut bir cihazı kimliğe göre alır
 
 ##### Parametreler
 
-| İsim          | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| Ad            | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | ------------- | ---------------- | -------- | ------- | ---- |
 | cihaz_kimliği | yol              |          | Evet    | dize |
 
@@ -115,11 +115,11 @@ Updates an existing device
 
 ##### Yanıtlar
 
-| Kod | Açıklama          |
-| --- | ----------------- |
-| 200 | Cihaz güncellendi |
-| 400 | Validation failed |
-| 404 | Cihaz bulunamadı  |
+| Kod | Açıklama            |
+| --- | ------------------- |
+| 200 | Cihaz güncellendi   |
+| 400 | Doğrulama başarısız |
+| 404 | Cihaz bulunamadı    |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
@@ -186,7 +186,7 @@ Cihaz ayarlarını günceller
 | Kod | Açıklama                   |
 | --- | -------------------------- |
 | 200 | Cihaz ayarları güncellendi |
-| 400 | Validation failed          |
+| 400 | Doğrulama başarısız        |
 | 404 | Cihaz bulunamadı           |
 
 ### /oapi/v1/dns_servers
@@ -222,7 +222,7 @@ Yeni bir DNS sunucusu oluşturur. You can attach custom settings, otherwise DNS 
 | Kod | Açıklama                            |
 | --- | ----------------------------------- |
 | 200 | DNS sunucusu oluşturuldu            |
-| 400 | Validation failed                   |
+| 400 | Doğrulama başarısız                 |
 | 429 | DNS servers count reached the limit |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
@@ -286,7 +286,7 @@ Mevcut bir DNS sunucusunu günceller
 | Kod | Açıklama                 |
 | --- | ------------------------ |
 | 200 | DNS sunucusu güncellendi |
-| 400 | Validation failed        |
+| 400 | Doğrulama başarısız      |
 | 404 | DNS sunucusu bulunamadı  |
 
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
@@ -308,7 +308,7 @@ DNS sunucusu ayarlarını günceller
 | Kod | Açıklama                          |
 | --- | --------------------------------- |
 | 200 | DNS sunucusu ayarları güncellendi |
-| 400 | Validation failed                 |
+| 400 | Doğrulama başarısız               |
 | 404 | DNS sunucusu bulunamadı           |
 
 ### /oapi/v1/filter_lists
@@ -428,7 +428,7 @@ Kategori istatistiklerini alır
 | Kod | Açıklama                       |
 | --- | ------------------------------ |
 | 200 | Kategori istatistikleri alındı |
-| 400 | Validation failed              |
+| 400 | Doğrulama başarısız            |
 
 ### /oapi/v1/stats/companies
 
@@ -452,7 +452,7 @@ Kategori istatistiklerini alır
 | Kod | Açıklama                     |
 | --- | ---------------------------- |
 | 200 | Şirket istatistikleri alındı |
-| 400 | Validation failed            |
+| 400 | Doğrulama başarısız          |
 
 ### /oapi/v1/stats/companies/detailed
 
@@ -477,7 +477,7 @@ Ayrıntılı şirket istatistiklerini alır
 | Kod | Açıklama                               |
 | --- | -------------------------------------- |
 | 200 | Ayrıntılı şirket istatistikleri alındı |
-| 400 | Validation failed                      |
+| 400 | Doğrulama başarısız                    |
 
 ### /oapi/v1/stats/countries
 
@@ -501,7 +501,7 @@ Ayrıntılı şirket istatistiklerini alır
 | Kod | Açıklama                   |
 | --- | -------------------------- |
 | 200 | Ülke istatistikleri alındı |
-| 400 | Validation failed          |
+| 400 | Doğrulama başarısız        |
 
 ### /oapi/v1/stats/devices
 
@@ -525,7 +525,7 @@ Cihaz istatistiklerini alır
 | Kod | Açıklama                    |
 | --- | --------------------------- |
 | 200 | Cihaz istatistikleri alındı |
-| 400 | Validation failed           |
+| 400 | Doğrulama başarısız         |
 
 ### /oapi/v1/stats/domains
 
@@ -549,7 +549,7 @@ Alan adı istatistiklerini alır
 | Kod | Açıklama                       |
 | --- | ------------------------------ |
 | 200 | Alan adı istatistikleri alındı |
-| 400 | Validation failed              |
+| 400 | Doğrulama başarısız            |
 
 ### /oapi/v1/stats/time
 
@@ -573,7 +573,7 @@ Süre istatistiklerini alır
 | Kod | Açıklama                   |
 | --- | -------------------------- |
 | 200 | Süre istatistikleri alındı |
-| 400 | Validation failed          |
+| 400 | Doğrulama başarısız        |
 
 ### /oapi/v1/web_services
 

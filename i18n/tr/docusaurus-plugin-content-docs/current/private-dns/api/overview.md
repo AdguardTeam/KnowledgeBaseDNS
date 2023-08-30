@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## AdGuard DNS API
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNS, uygulamalarınızı entegre etmek için kullanabileceğiniz bir REST API sağlar.
 
 ## Kimlik Doğrulama
 

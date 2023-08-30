@@ -1,60 +1,60 @@
-# How to create your own DNS stamp for Secure DNS
+# Jak vytvořit vlastní razítko DNS pro zabezpečený DNS
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+Tento průvodce vám ukáže, jak vytvořit vlastní razítko DNS pro zabezpečený DNS. Zabezpečený DNS je služba, která zvyšuje bezpečnost a soukromí na internetu šifrováním dotazů DNS. Tím se zabrání tomu, aby vaše dotazy zachytily nebo zmanipulovaly zákeřné subjekty.
 
-Secure DNS usually uses `tls://`, `https://` or `quic://` URLs. This is sufficient for most users and is the recommended way.
+Zabezpečený DNS obvykle používá URL `tls://`, `https://` nebo `quic://`. Tento způsob je pro většinu uživatelů dostačující a je doporučován.
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+Pokud však potřebujete další zabezpečení, jako jsou předvyřešené IP adresy serverů a připnutí certifikátu pomocí hashe, můžete si vygenerovat vlastní razítko DNS.
 
-## Introduction to DNS stamps
+## Úvod k razítkům DNS
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+Razítka DNS jsou krátké řetězce, které obsahují všechny informace potřebné k připojení k zabezpečenému serveru DNS. Zjednodušují proces nastavení zabezpečeného DNS, protože uživatel nemusí všechny tyto údaje zadávat ručně.
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+Razítka DNS umožňují přizpůsobit nastavení zabezpečeného DNS nad rámec obvyklých adres URL. Umožňují zejména zadávat pevně zadané adresy serverů, používat hašování certifikátů atd. Díky těmto funkcím jsou razítka DNS robustnější a univerzálnější možností konfigurace nastavení zabezpečeného DNS.
 
-## Choosing the protocol
+## Výběr protokolu
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)` a `DNS-over-TLS (DoT)` a některé další. Výběr jednoho z těchto protokolů závisí na kontextu, ve kterém je budete používat.
 
-## Creating a DNS stamp
+## Vytvoření razítka DNS
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Otevřete [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-2. Depending on the chosen protocol, select the corresponding protocol from the dropdown menu (DoH, DoT, or DoQ).
+2. V závislosti na zvoleném protokolu vyberte příslušný protokol z rozbalovací nabídky (DoH, DoT nebo DoQ).
 
-3. Fill in the necessary fields:
-    - **IP address**: Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
-
-    :::note
-
-    This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
-
-
-:::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+3. Vyplňte potřebná pole:
+    - **IP adresa**: Zadejte IP adresu serveru DNS. Pokud používáte protokol DoT nebo DoQ, ujistěte se, že jste zadali také příslušný port.
 
     :::note
 
-    This field is optional
+    Toto pole je nepovinné a mělo by být použito s opatrností: použití této možnosti může narušit internet v sítích využívajících pouze protokol IPv6.
+
+
+:::
+    - **Hash**: Zadejte SHA256 přehled jednoho z certifikátů TBS nalezených v ověřovacím řetězci. Pokud DNS server, který používáte, poskytuje hotový hash, vyhledejte jej a zkopírujte. V opačném případě jej můžete získat podle pokynů v části [*Získání hashové hodnoty certifikátu*](#obtaining-the-certificate-hash).
+
+    :::note
+
+    Toto pole je nepovinné
 
 
 :::
 
-    - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
+    - **Název hostitele**: Zadejte název hostitele DNS serveru. Toto pole se používá k ověření názvu serveru v protokolech DoT a DoQ.
 
-    - For **DoH**:
-      - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
+    - Pro **DoH**:
+      - **Cesta**: Zadejte cestu k provádění požadavků DoH. Obvykle je to `"/dns-query"`, ale váš poskytovatel může poskytnout jinou cestu.
 
-    -     For **DoT and DoQ**:
-      - There are usually no specific fields for these protocols in this tool. Just make sure the port specified in the resolver address is the correct port.
+    -     Pro **DoT a DoQ**:
+      - V tomto nástroji obvykle nejsou pro tyto protokoly žádná specifická pole. Jen se ujistěte, že port zadaný v adrese řešitele je správný.
 
-    - In the **Properties** section, you can check the relevant properties if they are known and applicable to your DNS server.
+    - V části **Vlastnosti** můžete zkontrolovat příslušné vlastnosti, pokud jsou známé a použitelné pro váš DNS server.
 
-4. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+4. Vaše razítko se automaticky vygeneruje a zobrazí se v poli **Razítko**.
 
-### Obtaining the certificate hash
+### Získání hash certifikátu
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+Chcete-li vyplnit pole **hash certifikátu** serveru, můžete použít následující příkaz, kterým nahradíte `<IP_ADDRESS>`, `<PORT>` a `<SERVER_NAME>` odpovídajícími hodnotami pro váš DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
@@ -62,36 +62,36 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+Výsledek příkazu hash se může v průběhu času měnit v závislosti na aktualizaci certifikátu serveru. Pokud tedy razítko DNS náhle přestane fungovat, může být nutné přepočítat hash certifikátu a vygenerovat nové razítko. Pravidelná aktualizace razítka DNS pomůže zajistit trvalý bezpečný provoz služby zabezpečeného DNS.
 
 :::
 
-## Using the DNS stamp
+## Použití razítka DNS
 
-You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+Nyní máte vlastní razítko DNS, které můžete použít k nastavení služby zabezpečeného DNS. Toto razítko lze zadat do aplikací AdGuard a AdGuard VPN pro zvýšení soukromí a bezpečnosti na internetu.
 
-## Example of creating a DNS stamp
+## Příklad vytvoření razítka DNS
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+Uveďme si příklad vytvoření razítka pro AdGuard DNS pomocí DoT:
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Otevřete [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-2. Select the DNS-over-TLS (DoT) protocol.
+2. Vyberte protokol DNS-over-TLS (DoT).
 
-3. Fill in the following fields:
+3. Vyplňte následující pole:
 
-    - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
+    - **IP adresa**: Zadejte IP adresu a port DNS serveru. V tomto případě je to `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **Název hostitele**: Zadejte název hostitele DNS serveru. V tomto případě je to `dns.adguard-dns.com`.
 
-    - **Hashes**: Execute the command
+    - **Hash**: Proveďte příkaz
 
     ```bash
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
     ```
 
-    The result is `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Paste this SHA256 hash of the server's certificate into the field.
+    Výsledek je `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Do pole vložte tento hash SHA256 certifikátu serveru.
 
-4. Leave the Properties section blank.
+4. Sekci Vlastnosti ponechte prázdnou.
 
-5. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+5. Vaše razítko se automaticky vygeneruje a zobrazí se v poli **Razítko**.

@@ -15,16 +15,16 @@ Burada bilgisayarınızda veya mobil cihazınızda ekran görüntüsü almak iç
 
 Bir Android cihazda ekran görüntüsü almak, cihazın modeline ve üreticisine bağlı olarak çeşitli şekillerde yapılabilir.
 
-Generally, the following button combination can be used for Android:
+Genel olarak, Android için aşağıdaki düğme kombinasyonu kullanılabilir:
 
-- **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
+- ***Sesi Kısma* ve *Güç* düğmelerini aynı anda 1–2 saniye basılı tutun**
 
 Android cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. Böylece, ekran görüntüsünü Galerinizdeki bir Ekran Görüntüleri klasöründe bulabilirsiniz.
 
 Ancak, daha önce de belirtildiği gibi, prosedür belirli bir cihaza bağlı olarak değişebilir. Diğer olası kombinasyonlara bakalım:
 
-- **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
-- **Press and hold the *Back* and *Home* buttons simultaneously**
+- ***Ana Sayfa* ve *Güç* düğmelerini aynı anda 1–2 saniye basılı tutun;**
+- ***Geri* ve *Giriş* düğmelerine aynı anda basın ve basılı tutun**
 
 On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
 

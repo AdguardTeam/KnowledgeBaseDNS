@@ -28,15 +28,15 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 **You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
-**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. Tarayıcının siteyi yeni IP adresinden açmasını sağlamak için önbelleğe alınan IP'yi DNS önbelleğinden kaldırmanız gerekir.
 
-**You want to improve your privacy.**
+**Gizliliğinizi geliştirmek istiyorsunuz.**
 
 ## Farklı işletim sistemlerinde DNS önbelleği nasıl temizlenir
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+IPad veya iPhone'unuzdaki DNS önbelleğini temizlemenin farklı yolları vardır.
 
 En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya Ayarlar uygulamasında) ve tekrar devre dışı bırakmaktır. DNS önbelleği temizlenecektir.
 

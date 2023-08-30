@@ -1,60 +1,60 @@
-# How to create your own DNS stamp for Secure DNS
+# Sådan opretter eget DNS-stempel til Sikker DNS
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+Denne guide viser dig, hvordan et eget DNS-stempel til sikker DNS oprettes. Sikker DNS er en tjeneste, der forbedrer internetsikkerhed og fortrolighed ved at kryptere DNS-forespørgslerne. Dette forhindrer forespørgslerne i at blive opsnappet eller manipuleret af ondsindede aktører.
 
-Secure DNS usually uses `tls://`, `https://` or `quic://` URLs. This is sufficient for most users and is the recommended way.
+Sikker DNS bruger normalt `tls://`, `https://` eller `quic://` URL'er. Dette er tilstrækkeligt for de fleste brugere og er den anbefalede måde.
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+Har man brug for yderligere sikkerhed, som f.eks. forudopløste server-IP'er og certifikat pinning med hash, kan man generere sit eget DNS-stempel.
 
-## Introduction to DNS stamps
+## Introduktion til DNS-stempler
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+DNS-stempler er korte strenge indeholdende alle de nødvendige oplysninger for at oprette forbindelse til en sikker DNS-server. De forenkler processen med at opsætte sikker DNS, da brugeren ikke behøver at angive alle disse data manuelt.
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+DNS-stempler muliggør tilpasning af Sikker DNS-indstillinger ud over de sædvanlige URL'er. De giver især mulighed for at angive faste (hard-koded) serveradresser, bruge certifikat-hashing mv. Disse funktioner gør DNS-stempler til en mere robust og alsidig mulighed til opsætning af Sikker DNS-indstillinger.
 
-## Choosing the protocol
+## Valg af protokol
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+Typer af Sikker DNS inkluderer `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Valget af en af disse protokoller afhænger af brugskonteksten.
 
-## Creating a DNS stamp
+## Oprettelse af et DNS-stempel
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Åbn [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-2. Depending on the chosen protocol, select the corresponding protocol from the dropdown menu (DoH, DoT, or DoQ).
+2. Afhængigt af den valgte protokol, vælg den korresponderende protokol fra rullemenuen (DoH, DoT eller DoQ).
 
-3. Fill in the necessary fields:
-    - **IP address**: Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
-
-    :::note
-
-    This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
-
-
-:::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+3. Udfyld de nødvendige felter:
+    - **IP-adresse**: Angiv DNS-serverens IP-adresse. Bruges DoT- eller DoQ-protokollen, så sørg for, at den relevante port ligeledes er angivet.
 
     :::note
 
-    This field is optional
+    Dette felt er valgfrit og bør bruges med forsigtighed: Brug af denne indstilling kan afbryde internet på IPv6-netværk.
+
+
+:::
+    - **Hashes**: Angiv SHA256-sammendraget for et af de TBS-certifikater, der findes i valideringskæden. Leverer den anvendte DNS-server en færdig hash, så find og kopiér denne. Ellers kan den hentes ved at følge vejledningen i afsnittet [*Hentning af Certifikat Hash'en*](#obtaining-the-certificate-hash).
+
+    :::note
+
+    Dette felt er valgfrit
 
 
 :::
 
-    - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
+    - **Værtsnavn**: Angiv DNS-serverens værtsnavn. Dette felt bruges til bekræftelse af servernavnet i DoT- og DoQ-protokoller.
 
     - For **DoH**:
-      - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
+      - **Sti**: Angiv stien til udførelse af DoH-forespørgsler. Dette er normalt `"/dns-query"`, men din udbyder kan bruge en anden sti.
 
-    -     For **DoT and DoQ**:
-      - There are usually no specific fields for these protocols in this tool. Just make sure the port specified in the resolver address is the correct port.
+    -     For **DoT og DoQ**:
+      - Der er normalt ingen bestemte felter til disse protokoller i dette værktøj. Sørg blot for, at den i opløseradressen angivne port også er den korrekte port.
 
-    - In the **Properties** section, you can check the relevant properties if they are known and applicable to your DNS server.
+    - I afsnittet **Egenskaber** kan de relevante egenskaber markeres, såfremt de er kendte og relevante for DNS-serveren.
 
-4. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+4. Dit stempel genereres automatisk og vil fremgå i feltet **Stamp**.
 
-### Obtaining the certificate hash
+### Indhentning af certifikat-hash
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+For at udfylde **hash'ene for serverens certifikat**-felt kan flg. kommando bruges, hvor `<IP_ADDRESS>`, `<PORT>`og `<SERVER_NAME>` erstattes med de korresponderende værdier for din DNS-server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
@@ -62,36 +62,36 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+Resultatet af hash-kommandoen kan ændre sig over tid i takt med, at serverens certifikat opdateres. Holder DNS-stemplet derfor pludselig op holder op med at virke, skal certifikat-hash'en muligvis genberegnes og et nyt stempel genereres. Regelmæssig opdatering af DNS-stemplet vil medvirke til at sikre den fortsatte sikre drift af Sikker DNS-tjenesten.
 
 :::
 
-## Using the DNS stamp
+## Brug af DNS-stemplet
 
-You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+Du har nu dit eget DNS-stempel, som kan bruges til at opsætte Sikker DNS. Dette stempel kan angives i AdGuard og AdGuard VPN for forbedret internetfortrolighed og sikkerhed.
 
-## Example of creating a DNS stamp
+## Eksempel på oprettelse af et DNS-stempel
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+Lad os se på et eksempel på oprettelsen af et stempel til AdGuard DNS vha. DoT:
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Åbn [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-2. Select the DNS-over-TLS (DoT) protocol.
+2. Vælg protokollen DNS-over-TLS (DoT).
 
-3. Fill in the following fields:
+3. Udfyld flg. felter:
 
-    - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
+    - **IP-adresse**: Angiv DNS-serverens IP-adresse og port. I dette eksempel `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **Værtsnavn**: Angiv DNS-serverens værtsnavn. I dette eksempel `dns.adguard-dns.com`.
 
-    - **Hashes**: Execute the command
+    - **Hashes**: Eksekvér kommandoen
 
     ```bash
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
     ```
 
-    The result is `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Paste this SHA256 hash of the server's certificate into the field.
+    Resultatet er `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Indsæt denne SHA256-hash af serverens certificat i feltet.
 
-4. Leave the Properties section blank.
+4. Lad afsnittet Egenskaber stå tomt.
 
-5. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+5. Dit stempel genereres automatisk og vil fremgå i feltet **Stamp**.
