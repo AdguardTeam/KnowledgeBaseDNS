@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Zde vysvětlíme, jak můžete vyprázdnit mezipaměť DNS a vyřešit tak problémy se službami veřejného DNS. Pomocí Blokátoru reklam AdGuard můžete nastavit DNS servery, včetně šifrovaných
 
-Rychlý odkaz: [Stáhnout Blokátor reklam AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Rychlý odkaz: [Stáhnout Blokátor reklam AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

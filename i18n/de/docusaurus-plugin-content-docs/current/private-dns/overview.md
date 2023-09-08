@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Mit AdGuard DNS können Sie Ihre privaten DNS-Server einrichten, um DNS-Anfragen aufzulösen und Werbung, Tracker und bösartige Domains zu sperren, bevor diese Ihr Gerät erreichen
 
-Schnellzugriff: [AdGuard DNS ausprobieren](https://adguard-dns.io/dashboard/)
+Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 
 ## How to set up Private AdGuard DNS
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
+1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
 1. Click "Connect device" and follow on-screen instructions
 
 :::note Supported platforms:

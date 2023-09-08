@@ -7,7 +7,7 @@ sidebar_position: 1
 
 このページでは、パブリックDNSの問題を解決するために、DNSキャッシュをフラッシュする方法を説明しています。 DNSサーバーは、AdGuard 広告ブロッカーを使用して設定できます（暗号化されたDNSサーバーも設定可能）。
 
-クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

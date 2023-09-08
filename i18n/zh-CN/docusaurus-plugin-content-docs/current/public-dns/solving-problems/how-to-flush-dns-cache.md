@@ -7,7 +7,7 @@ sidebar_position: 1
 
 在这篇文章中，我们解释刷新 DNS 缓存以解决公共 DNS 问题的方式。 You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
 
-快捷链接：[下载 AdGuard 广告拦截程序](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 DNS 필터링의 이점을 살펴보는 가장 쉬운 방법은 AdGuard 광고 차단기를 설치하거나 AdGuard DNS를 사용해 보는 것입니다. 네트워크 수준에서 DNS를 필터링하려면 AdGuard Home을 사용해 보세요.
 
-빠른 링크: [AdGuard 광고 차단기 다운로드](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home 다운로드](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS 사용해보기](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,10 +43,15 @@ Other DNS providers may work differently, so learn more about them before commit
 
 But by relying on DNS servers only to filter your DNS traffic you lose all flexibility. If the selected server blocks a domain, you can't access it. With AdGuard, you don't even need to configure any specific DNS server to filter DNS traffic. All AdGuard products let you employ DNS blocklists, be it simple hosts files or lists that use [more advanced syntax](dns-filtering-syntax.md). They work similarly to regular blocklists: when a DNS request matches one of the rules in the active filter list, it gets blocked. To be more precise, it gets rerouted to a "blackhole".
 
-> In AdGuard for iOS, first you have to enable "Advanced mode" in settings in order to get access to DNS blocking.
+:::tip
+
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
 
 You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
-> There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## DNS filtering vs. network filtering
 

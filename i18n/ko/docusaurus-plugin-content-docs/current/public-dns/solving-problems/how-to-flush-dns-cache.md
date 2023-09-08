@@ -7,7 +7,7 @@ sidebar_position: 1
 
 공용 DNS 문제를 해결하기 위해 DNS 캐시를 지우는 방법을 알려드립니다. AdGuard 광고 차단기를 사용하여 암호화된 서버를 포함한 DNS 서버를 설정할 수 있습니다.
 
-빠른 링크: [AdGuard 광고 차단기 다운로드](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

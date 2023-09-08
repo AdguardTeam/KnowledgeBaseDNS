@@ -254,7 +254,7 @@ Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayı
 
 ##### Özet
 
-Gets an existing DNS server by ID
+Kimliğe göre mevcut bir DNS sunucusunu alır
 
 ##### Parametreler
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 A maneira mais fácil de explorar os benefícios da filtragem de DNS é instalar o bloqueador de anúncios AdGuard ou experimentar o AdGuard DNS. Se você deseja filtrar o DNS no nível da rede, o AdGuard Home é a ferramenta para você
 
-Links rápidos: [Baixar o bloqueador de anúncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Obter o AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Experimentar o AdGuard DNS](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,24 +43,29 @@ Outros provedores de DNS podem funcionar de maneira diferente, portanto, aprenda
 
 Mas, ao confiar apenas nos servidores DNS para filtrar seu tráfego DNS, você perde toda a flexibilidade. Se o servidor selecionado bloquear um domínio, você não poderá acessá-lo. Com o AdGuard, você nem precisa configurar um servidor DNS específico para filtrar o tráfego DNS. Todos os produtos AdGuard permitem que você empregue listas de bloqueio de DNS, sejam arquivos de hosts simples ou listas que usam [sintaxe mais avançada](dns-filtering-syntax.md). Eles funcionam de maneira semelhante às listas de bloqueio regulares: quando uma solicitação de DNS corresponde a uma das regras na lista de filtros ativos, ela é bloqueada. Para ser mais preciso, ele é redirecionado para um "buraco negro".
 
-> No AdGuard para iOS, primeiro você deve ativar o "Modo avançado" nas configurações para obter acesso ao bloqueio de DNS.
+:::tip
 
-Você pode adicionar quantas listas de bloqueio personalizadas desejar. Por exemplo, você pode usar [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). Ele literalmente bloqueia tudo o que o servidor DNS AdGuard faz, mas neste caso você está livre para usar qualquer outro servidor DNS. Além disso, dessa forma, você pode adicionar mais filtros ou criar regras de exceção personalizadas, o que seria impossível com uma configuração simples de "usar um servidor DNS de bloqueio".
-> Existem centenas de listas de bloqueio de DNS diferentes, você pode procurá-las [aqui](https://filterlists.com/).
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
+
+You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## Filtragem de DNS vs. filtragem de rede
 
-A filtragem de rede é o que chamamos de maneira "regular" que os aplicativos autônomos do AdGuard processam o tráfego de rede, daí o nome. Sinta-se à vontade para continuar lendo [este artigo](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
-Em primeiro lugar, temos que mencionar que com o AdGuard você não precisa escolher. Você sempre pode usar a filtragem de rede regular e a filtragem de DNS ao mesmo tempo. No entanto, é importante entender as principais diferenças entre os dois. A filtragem de DNS tem suas vantagens e desvantagens exclusivas:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
-**Prós da filtragem de DNS:**
+**Pros of DNS filtering:**
 
 1. Em algumas plataformas, essa é a única maneira de obter filtragem em todo o sistema. Por exemplo, no iOS apenas o navegador Safari suporta bloqueio de conteúdo no sentido familiar, para todo o resto há apenas filtragem de DNS.
 1. Algumas formas de rastreamento (como [rastreamento CNAME-cloaked](https://adguard.com/blog/cname-tracking.html)) só podem ser tratadas pela filtragem de DNS.
 1. O estágio de processamento de uma solicitação de DNS é o mais cedo possível para lidar com um anúncio ou um rastreador, o que ajuda a economizar um pouco da vida útil da bateria e do tráfego.
 
-**Contras da filtragem de DNS:**
+**Cons of DNS filtering:**
 
 1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 

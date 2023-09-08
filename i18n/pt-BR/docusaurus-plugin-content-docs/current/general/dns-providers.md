@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Aqui sugerimos uma lista de provedores de DNS confiáveis. Para usá-los, primeiro instale o bloqueador de anúncios AdGuard ou o AdGuard VPN em seu dispositivo. Em seguida, no mesmo dispositivo, clique no link de um provedor neste artigo
 
-Links rápidos: [Baixar o bloqueador de anúncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Baixar o AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

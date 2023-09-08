@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Рассказываем, как писать пользовательские правила DNS-фильтрации для использования в продуктах AdGuard
 
-Быстрые ссылки: [Скачать Блокировщик AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Установить AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Попробовать AdGuard DNS](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -129,7 +129,7 @@ pattern = "/" regexp "/"
 
 **Обратите внимание:** если правило содержит модификатор, не указанный в этом документе, всё правило **следует игнорировать**. Таким образом мы избегаем ложных срабатываний, когда люди пытаются использовать немодифицированные списки фильтров браузерных блокировщиков рекламы, таких как EasyList или EasyPrivacy.
 
-#### `клиент`
+#### `client`
 
 Модификатор `client` позволяет указывать клиентов, к которым применяется это правило. Есть два основных способа определения клиента:
 
@@ -353,7 +353,7 @@ Address: 1.2.3.4
 
 - `@@||example.com^$dnsrewrite=1.2.3.4` убирает правило DNS rewrite, которое добавляет запись `A` со значением `1.2.3.4`.
 
-#### `важно`
+#### `important`
 
 Модификатор `important`, применённый к правилу, повышает его приоритет по отношению к любому другому правилу без модификатора. Даже относительно базовых правил-исключений.
 

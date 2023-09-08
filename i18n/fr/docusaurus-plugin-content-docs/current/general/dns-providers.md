@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Nous proposons ici une liste de fournisseurs DNS fiables. Pour les utiliser, installez d'abord le Bloqueur AdGuard ou AdGuard VPN sur votre appareil. Ensuite, sur le même appareil, cliquez sur le lien vers un fournisseur dans cet article
 
-Liens rapides : [Télécharger le Bloqueur AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Télécharger AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

@@ -113,7 +113,7 @@ Please see the methods reference [here](private-dns/api/reference.md).
 
 OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ## Geri Bildirim
 

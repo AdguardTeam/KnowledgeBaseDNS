@@ -7,7 +7,7 @@ sidebar_position: 1
 
 探索 DNS 过滤的最简单方法是安装 AdGuard 广告拦截程序或试用 AdGuard DNS。 如果用户想在网络层面过滤 DNS，AdGuard Home 是最好的选择。
 
-快捷链接： [下载 AdGuard 广告拦截程序](https://adguard.com/download.html?auto=true&utm_source=kb_dns)，[获取 AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started)，[试用 AdGuard DNS](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,16 +43,21 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 但是如果只依赖 DNS 服务器来过滤 DNS 流量，用户就失去所有的灵活性。 如果选定的服务器拦截域名，用户将无法访问该域名。 但如果使用 AdGuard，您甚至不需要配置任何特定的 DNS 服务器就可以过滤 DNS 流量。 所有 AdGuard 产品允许用户应用 DNS 拦截列表，无论是简单的 Hosts 文件还是使用[更复杂语法](dns-filtering-syntax.md)的清单。 它们与一般的广告过滤器运行相似：当 DNS 请求与某一个属于激活过滤器列表的规则相匹配时，该 DNS 请求将会被阻止。 更准确地说，这个 DNS 请求将会发送到“黑洞”。
 
-> 在 AdGuard iOS 版上您先要在设置里启用「高级模式」以使用 DNS 拦截。
+:::tip
 
-用户可以自定义添加所要的拦截列表数量。 比方说，用户可以使用 [AdGuard DNS 过滤器](https://github.com/AdguardTeam/AdGuardSDNSFilter)。 它能够拦截所有 AdGuard DNS 服务器屏蔽的元素，但是使用 AdGuard DNS 过滤器的话，用户还可以使用任何其它 DNS 服务器。 此外，用户还可以添加更多过滤器或创建自定义排除项规则。上述的功能都不可能通过简单的「使用拦截 DNS 服务器」设置来实现。
-> 您可以[在这里](https://filterlists.com/)找到几百个不同的 DNS 拦截列表。
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
+
+You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## DNS filtering vs. network filtering
 
-网络过滤是我们所说的 AdGuard 独立应用程序处理网络流量的"常规"方式，因此得名。 您可以阅读[这篇文章](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/)回顾往期内容。
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
-首先，我们要提到一点，使用 AdGuard 的话，用户不需要二选一。 您可以同时使用常规网络层面过滤和 DNS 过滤。 不过，还是要明确分出它们俩的区别。 DNS 过滤不仅有其独特优点，但也有些缺点：
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
 **Pros of DNS filtering:**
 

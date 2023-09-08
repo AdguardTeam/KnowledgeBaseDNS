@@ -7,7 +7,7 @@ sidebar_position: 3
 
 このページでは、信頼できる DNS プロバイダーのおすすめリストがあります。 これらを使用するには、まず AdGuard 広告ブロッカーもしくは AdGuard VPN をお使いのデバイスにインストールしてください。 次に、同じデバイスで、この記事に記載されているプロバイダーへのリンクをクリックしてください。
 
-クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard VPN をダウンロード](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Hier finden Sie eine Liste mit vertrauenswürdigen DNS-Anbietern. Um sie zu nutzen, installieren Sie zunächst AdGuard Werbeblocker oder AdGuard VPN auf Ihrem Gerät. Klicken Sie dann auf demselben Gerät auf den Link zu einem Anbieter in diesem Artikel
 
-Schnellzugriff: [AdGuard Werbeblocker herunterladen](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard VPN herunterladen](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

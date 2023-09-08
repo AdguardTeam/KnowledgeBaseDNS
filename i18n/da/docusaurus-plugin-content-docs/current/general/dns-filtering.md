@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Den nemmeste måde at udforske fordelene ved DNS-filtrering på er at installere AdGuard Ad Blocker eller afprøve AdGuard DNS. Ønskes DNS filtreret på netværksniveau, så er AdGuard Home værktøjet
 
-Hurtig-links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Hent AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Prøv AdGuard DNS](https://adguard-dns.io/dashboard/)
+Hurtige links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Hent AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Prøv AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,24 +43,29 @@ Andre DNS-udbydere fungerer muligvis anderledes, så find ud af mere om dem, ind
 
 Ved kun at stole på DNS-servere til at filtrere DNS-trafik, mister man imidlertid al fleksibilitet. Blokerer den valgte server et domæne, kan man ikke tilgå det. Med AdGuard behøver man ikke engang at opsætte nogen bestemt DNS-server til at filtrere DNS-trafik. Alle AdGuard-produkter muliggør brug af DNS-sortlister, fra simple værtsfiler til lister med [mere avancerede syntakser](dns-filtering-syntax.md). De fungerer på samme måde som alm. sortlister: Matcher en DNS-forespørgsel en af reglerne i den aktive filterliste, blokeres den. Mere præcist, så omdirigeres den til et "sort hul".
 
-> I AdGuard til iOS skal man først aktivere "Avanceret tilstand" i indstillingerne for at få adgang til DNS-blokering.
+:::tip
 
-Så mange tilpassede sortlister som ønsket kan tilføjes. Man kan f.eks. bruge [AdGuard DNS-filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). Det blokerer bogstaveligt talt alt, hvad en AdGuard DNS-server gør, men samtidig kan enhver anden DNS-server frit anvendes. På denne måde kan der også tilføjes flere filtre eller oprettes tilpassede undtagelsesregler, hvilket vil være umuligt med en simpel "brug en blokerende DNS-server"-opsætning.
-> Der er hundredvis af forskellige DNS-blokeringslister, som kan tjekkes ud [hér](https://filterlists.com/).
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
+
+You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## DNS-filtrering contra netværksfiltrering
 
-Netværksfiltrering er, hvad vi kalder, den 'almindelige' måde, som enkeltstående AdGuard apps behandler netværkstrafik på, heraf navnet. Opfrisk evt. videnen herom ved at læse [denne artikel](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
-Først og fremmest skal nævnes, at man med AdGuard ikke behøver at vælge. Både alm. netværksfiltrering og DNS-filtrering kan altid anvendes sideløbende. Det er dog vigtigt at forstå de vigtigste forskelle de to imellem. DNS-filtrering har både sine unikke fordele og ulemper:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
-**Fordele ved DNS-filtrering:**
+**Pros of DNS filtering:**
 
 1. På visse platforme er dette den eneste måde at opnå systemniveaufiltrering på. iOS understøtter f.eks. kun indholdsblokering i vanlig forstand i Safari-browseren, for alt andet findes kun DNS-filtrering.
 1. Visse former for sporing (såsom [CNAME-tilsløret sporing](https://adguard.com/blog/cname-tracking.html)) kan kun imødegås vha. DNS-filtrering.
 1. Stadiet, hvor en DNS-forespørgsel behandles, er det tidligste, man overhovedet kan imødegå en annonce eller tracker, hvilket medvirker til at spare en lille smule batteristrøm og trafik.
 
-**Ulemper ved DNS-filtrering:**
+**Cons of DNS filtering:**
 
 1. DNS-filtrering er "grov", dvs., at den hverken fjerner tomme felter efterladt fra en blokeret annonce eller anvender nogen form for kosmetisk filtrering. Mange af de mere komplicerede annoncer kan ikke blokeres på DNS-niveau (eller rettere sagt, det kan de, men kun ved at blokere hele domænet, der muligvis også bruges til andre formål).
 
@@ -68,4 +73,4 @@ Først og fremmest skal nævnes, at man med AdGuard ikke behøver at vælge. Bå
 
 1. Oprindelsen af en DNS-forespørgsel ikke kan fastslås, hvorfor der på DNS-niveau ikke kan skelnes mellem forskellige apps. Dette påvirker statistikken negativt og umuliggør oprettelse af app-specifikke filtreringsregler.
 
-Brug af DNS-filtrering anbefales i tillæg til netværksfiltrering, ikke i stedet for, når dette er muligt.
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

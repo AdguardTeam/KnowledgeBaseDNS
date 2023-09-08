@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Nejjednodušší způsob, jak prozkoumat výhody DNS filtrování, je nainstalovat Blokátor reklam AdGuard nebo vyzkoušet AdGuard DNS. Pokud chcete filtrovat DNS na úrovni sítě, AdGuard Home je váš nástroj
 
-Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Získat AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
+Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://agrd.io/download-kb-adblock), [Získat AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Vyzkoušet AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,24 +43,29 @@ Jiní poskytovatelé DNS mohou fungovat jinak, proto si o nich zjistěte více i
 
 Spoléháte-li se však na servery DNS pouze při filtrování provozu DNS, ztrácíte veškerou flexibilitu. Pokud vybraný server blokuje doménu, nemáte k ní přístup. S AdGuardem nemusíte pro filtrování provozu DNS konfigurovat žádný konkrétní server DNS. Všechny produkty AdGuardu umožňují používat DNS seznamy zakázaných, ať už se jedná o jednoduché soubory hosts nebo seznamy, které používají [pokročilejší syntaxi](dns-filtering-syntax.md). Fungují podobně jako běžné seznamy zakázaných: pokud požadavek DNS odpovídá jednomu z pravidel v aktivním seznamu filtrů, je zablokován. Přesněji řečeno, je přesměrován do "černé díry".
 
-> V aplikaci AdGuard pro iOS musíte nejprve v nastavení povolit "Pokročilý režim", abyste získali přístup k DNS blokování.
+:::tip
 
-Můžete přidat libovolný počet vlastních seznamů zakázaných. Můžete např. použít [filtr AdGuard DNS](https://github.com/AdguardTeam/AdGuardSDNSFilter). Doslova blokuje vše, co dělá server AdGuard DNS, ale v tomto případě můžete použít jakýkoli jiný server DNS. Navíc tímto způsobem můžete přidávat další filtry nebo vytvářet vlastní pravidla výjimek, což by při jednoduchém "použití DNS serveru zakázaných" nebylo možné.
-> Existují stovky různých DNS seznamů zakázaných, můžete je hledat [zde](https://filterlists.com/).
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
+
+You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## DNS filtrování vs. filtrování sítě
 
-Filtrování sítě je to, čemu říkáme 'obvyklý' způsob, jakým samostatné aplikace AdGuard zpracovávají síťový provoz, odtud i název. Klidně si to osvěžte přečtením [tohoto článku](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
-Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můžete současně používat běžné filtrování sítě i DNS filtrování. Je však důležité pochopit hlavní rozdíly mezi nimi. DNS filtrování má své jedinečné výhody i nevýhody:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
-**Výhody DNS filtrování:**
+**Pros of DNS filtering:**
 
 1. Na některých platformách je to jediný způsob, jak dosáhnout filtrování v celém systému. Například v systému iOS podporuje blokování obsahu ve známém smyslu pouze prohlížeč Safari, u všech ostatních je k dispozici pouze DNS filtrování.
 1. Některé formy sledování (jako je [sledování se skrytým jménem CNAME](https://adguard.com/blog/cname-tracking.html)) lze řešit pouze pomocí DNS filtrování.
 1. Fáze zpracování DNS požadavku je první, kterou byste mohli řešit s reklamou nebo slídičem, což pomáhá ušetřit trochu výdrže baterie a datového provozu.
 
-**Nevýhody DNS filtrování:**
+**Cons of DNS filtering:**
 
 1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstávají za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
 
@@ -68,4 +73,4 @@ Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můž
 
 1. Není možné zjistit původ DNS požadavku, což znamená, že nelze rozlišovat mezi různými aplikacemi na úrovni DNS. To negativně ovlivňuje statistiky a znemožňuje vytváření pravidel filtrování pro konkrétní aplikace.
 
-Doporučujeme používat DNS filtrování jako doplněk k filtrování sítě, nikoli místo něj.
+We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.

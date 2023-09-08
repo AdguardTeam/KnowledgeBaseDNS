@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Pomocí AdGuard DNS můžete nastavit své soukromé DNS servery, které budou řešit požadavky DNS a blokovat reklamy, slídiče a škodlivé domény dříve, než se dostanou do vašeho zařízení
 
-Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
+Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 
 ## Jak nastavit soukromý AdGuard DNS
 
-1. Přejděte na svůj [ovládací panel AdGuard DNS](https://adguard-dns.io/dashboard/) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
+1. Přejděte na svůj [ovládací panel AdGuard DNS](https://agrd.io/download-dns) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
 1. Klikněte na "Připojit zařízení" a postupujte podle pokynů na obrazovce
 
 :::note Podporované platformy:

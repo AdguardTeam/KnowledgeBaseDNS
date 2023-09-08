@@ -7,7 +7,7 @@ sidebar_position: 1
 
 С помощью AdGuard DNS вы можете настроить свои DNS-серверы для разрешения DNS-запросов и блокировки рекламы, трекеров и вредоносных доменов до того, как они попадут на ваше устройство
 
-Быстрая ссылка: [Попробовать AdGuard DNS](https://adguard-dns.io/dashboard/)
+Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ sidebar_position: 1
 
 ## How to set up Private AdGuard DNS
 
-1. Перейдите на вашу [панель управления AdGuard DNS](https://adguard-dns.io/dashboard/) (если вы не авторизовались, войдите, используя свою учётную запись AdGuard)
+1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
 1. Click "Connect device" and follow on-screen instructions
 
 :::note Supported platforms:

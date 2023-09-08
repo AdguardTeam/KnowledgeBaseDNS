@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Рассказываем, как очистить DNS-кеш, чтобы решить проблемы с публичным DNS. Вы можете использовать Блокировщик рекламы AdGuard для настройки DNS-серверов, в том числе зашифрованных
 
-Быстрая ссылка: [Скачать Блокировщик рекламы AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

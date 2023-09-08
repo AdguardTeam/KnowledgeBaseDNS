@@ -7,7 +7,7 @@ sidebar_position: 1
 
 With AdGuard DNS, you can set up your private DNS servers to resolve DNS requests and block ads, trackers, and malicious domains before they reach your device
 
-Snelle link: [AdGuard DNS proberen](https://adguard-dns.io/dashboard/)
+Snelle link: [AdGuard DNS proberen](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ Here is a simple comparison of features available in Public AdGuard DNS and Priv
 
 ## How to set up Private AdGuard DNS
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
+1. Ga naar jouw [AdGuard DNS-dashboard](https://agrd.io/download-dns) (indien niet aangemeld, meld je aan met jouw AdGuard account)
 1. Click "Connect device" and follow on-screen instructions
 
 :::note Supported platforms:
