@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Here we explain how you can flush the DNS cache to resolve public DNS issues. Şifrelenmiş olanlar da dahil olmak üzere DNS sunucularını kurmak için AdGuard Reklam Engelleyiciyi kullanabilirsiniz
 
-Quick link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Hızlı bağlantı: [AdGuard Reklam Engelleyiciyi indir](https://agrd.io/download-kb-adblock)
 
 :::
 

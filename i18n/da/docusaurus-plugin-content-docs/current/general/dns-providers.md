@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Her foreslås en liste over betroede DNS-udbydere. For at bruge dem, installér først AdGuard Ad Blocker eller AdGuard VPN på enheden. Klik derefter fra enheden på linket til en udbyder i denne artikel
 
-Hurtig-links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Hurtige links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

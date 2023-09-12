@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Burada güvenilir DNS sağlayıcılarının bir listesini tavsiye ediyoruz. Bunları kullanmak için önce cihazınıza AdGuard Reklam Engelleyici veya AdGuard VPN yükleyin. Ardından, aynı cihazda, bu makaledeki bir sağlayıcıya giden bağlantıya tıklayın
 
-Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Hızlı bağlantılar: [AdGuard Reklam Engelleyici indir](https://agrd.io/download-kb-adblock), [AdGuard VPN indir](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

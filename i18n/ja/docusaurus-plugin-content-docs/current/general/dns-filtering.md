@@ -7,7 +7,7 @@ sidebar_position: 1
 
 DNSフィルタリングのメリットを実感するための一番簡単な方法は、AdGuard 広告ブロッカーをインストールするか、AdGuard DNS を試してみることです。 そして、ネットワークレベルでDNSフィルタリングしたい場合は、AdGuard Home が最適です。
 
-クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home を入手する](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS を試してみる](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -43,24 +43,29 @@ DNSサーバーは何千もあって、それぞれ特性と目的において�
 
 しかし、DNSトラフィックをフィルタリングするためにDNSサーバーだけに頼ることは、柔軟性を失うことになります。 使っているサーバーがドメインをブロックしている場合、そのドメインにアクセスできません。 AdGuard ですと、DNSトラフィックをフィルタリングするために特定のDNSサーバーを設定する必要もありません。 AdGuard 製品のすべてで、DNS ブロックリスト（シンプルな hosts ファイルや[より高度な構文](dns-filtering-syntax.md)を使用するリストなど）を使用できます。 DNSブロックリストは、通常のブロックリストと同じように機能します。つまり、DNSリクエストがアクティブフィルタリストのルールの1つにマッチすると、そのリクエストはブロックされます。 より正確に言いますと、そのリクエストは"ブラックホール"に迂回されます。
 
-> ※iOS版AdGuardでは、DNSブロックリストにアクセスするためには、まず⚙設定→「高度な設定モード」を有効にする必要があります。
+:::tip
 
-カスタムブロックリストはいくつでも追加できます。 おすすめとして、[AdGuard DNS フィルター](https://github.com/AdguardTeam/AdGuardSDNSFilter)を追加できます。 このフィルタは、AdGuard DNS サーバーと同じものブロックしますが、フィルタの場合、同時に他のDNSサーバーを自由に使用することができるのです。 さらに、この方法では、フィルターを追加したり、カスタムの例外ルールを作成したりすることができます。これらはすべて、単にブロック系DNSサーバーを使用する場合では不可能なことです。
-> DNSブロックリストには何百種類もあります。 [ここであらゆるものを探すことができます](https://filterlists.com/)。
+In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+
+:::
+
+You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+
+There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
 
 ## DNSフィルタリングとネットワークフィルタリングの比較
 
-ネットワーク・フィルタリングは、AdGuard のスタンドアロン・アプリがネットワークトラフィックを処理する"基本の"方法であり、これが名前の由来です。 詳しくは[こちらの記事](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/)で確認できます。
+Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
-AdGuard を使えば、この二つのうち選ぶ必要はないということをお伝えしたいと思います。 AdGuard なら通常のネットワークフィルタリングとDNSフィルタリングを同時に使用できます。 しかし、両者の主な違いを理解しておくことが重要です。 DNSフィルタリングにはそれなりの利点と欠点があります:
+First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
 
-**DNSフィルタリングのメリット:**
+**Pros of DNS filtering:**
 
 1. プラットフォームによっては、これがシステム全体フィルタリングを実現する唯一の方法です。 例えば、iOSではSafariブラウザだけが、コンテンツ・ブロッキングをサポートしています。Safari以外にはDNSフィルタリングしか使えません。
 1. トラッキング（追跡）の一部（ [CNAMEトラッキング](https://adguard.com/blog/cname-tracking.html)など）は、DNSフィルタリングによってのみ防止できます。
 1. DNSリクエストを処理する段階は、広告やトラッカーに対処する場合の最も早い段階であるため、バッテリー寿命とトラフィックを少し節約するのに役立ちます。
 
-**DNSフィルタリングのデメリット:**
+**Cons of DNS filtering:**
 
 1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 

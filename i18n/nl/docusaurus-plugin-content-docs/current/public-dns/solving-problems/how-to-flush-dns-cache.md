@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
 
-Snelle link: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Snelle link: [AdGuard Advertentieblokker downloaden](https://agrd.io/download-kb-adblock)
 
 :::
 

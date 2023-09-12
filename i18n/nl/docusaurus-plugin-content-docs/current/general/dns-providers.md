@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Here we suggest a list of trusted DNS providers. To use them, first install AdGuard Ad Blocker or AdGuard VPN on your device. Then, on the same device, click the link to a provider in this article
 
-Snelle links: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard VPN downloaden](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Snelle links: [AdGuard Advertentieblokker downloaden ](https://agrd.io/download-kb-adblock), [AdGuard VPN downloaden](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

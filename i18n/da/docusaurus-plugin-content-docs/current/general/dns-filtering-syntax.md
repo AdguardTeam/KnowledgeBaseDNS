@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 I denne artikel forklares, hvordan man skriver tilpassede filtreringsregler til brug i AdGuard-produkter
 
-Hurtig-links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Hent AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Prøv AdGuard DNS](https://adguard-dns.io/dashboard/)
+Hurtige links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Hent AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Prøv AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 

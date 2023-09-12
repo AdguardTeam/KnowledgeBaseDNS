@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Zde vám ukážeme, jak psát vlastní pravidla DNS filtrování pro použití v produktech AdGuard
 
-Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Získat AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Vyzkoušet AdGuard DNS](https://adguard-dns.io/dashboard/)
+Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://agrd.io/download-kb-adblock), [Získat AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Vyzkoušet AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 

@@ -7,7 +7,7 @@ sidebar_position: 3
 
 이 글에서는 신뢰할 수 있는 DNS 제공업체 목록을 확인할 수 있습니다. 이를 사용하려면 먼저 기기에 AdGuard 광고 차단기 또는 AdGuard VPN을 설치하세요. 그런 다음 동일한 기기에서 이 글에 언급된 제공업체 링크를 클릭합니다.
 
-빠른 링크: [AdGuard 광고 차단기 다운로드](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard VPN 다운로드](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

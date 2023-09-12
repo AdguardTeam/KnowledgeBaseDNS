@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Hier erklären wir, wie Sie den DNS-Cache leeren können, um Probleme mit dem öffentlichen DNS zu beheben. Sie können AdGuard Werbeblocker verwenden, um DNS-Server (auch verschlüsselte) einzurichten
 
-Schnellzugriff: [AdGuard Werbeblocker herunterladen](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

@@ -7,9 +7,9 @@ toc_max_heading_level: 4
 
 :::info
 
-Here we show you how to write custom DNS filtering rules for use in AdGuard products
+Burada, AdGuard ürünlerinde kullanılmak üzere özel DNS filtreleme kurallarının nasıl yazılacağını gösteriyoruz
 
-Quick links: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+Hızlı bağlantılar: [AdGuard Reklam Engelleyiciyi indir](https://agrd.io/download-kb-adblock), [AdGuard Home'u edin](https://github.com/AdguardTeam/AdGuardHome #getting-started), [AdGuard DNS'i dene](https://agrd.io/download-dns)
 
 :::
 
@@ -19,17 +19,17 @@ Kuralları daha esnek hâle getirmek için AdGuard DNS filtreleme kuralları sö
 
 Ana makine engel listeleri yazmak için üç farklı yaklaşım vardır:
 
-- [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. This way blocklists are compatible with browser ad blockers.
+- [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Bu şekilde engel listeleri tarayıcı reklam engelleyicileriyle uyumludur.
 
-- [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that uses the same syntax that operating systems do for their hosts files.
+- [`/etc/hosts` sözdizimi](#etc-hosts-syntax): işletim sistemlerinin hosts dosyaları için kullandığı söz diziminin aynısını kullanan eski, denenmiş ve doğru yaklaşım.
 
-- [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
+- [Yalnızca alan adı söz dizimi](#domains-only-syntax): alan adlarının basit bir listesi.
 
 Engellenenler listesi oluşturuyorsanız, [Adblock tarzı sözdizimini](#adblock-style-syntax) kullanmanızı öneririz. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
 
-- **Blocklists size.** Using pattern matching allows you to have a single rule instead of hundreds of `/etc/hosts` entries.
+- **Engel listesi boyutu.** Düzen eşleştirmeyi kullanmak, yüzlerce `/etc/hosts` girişi yerine tek bir kurala sahip olmanızı sağlar.
 
-- **Compatibility.** Your blocklist will be compatible with browser ad blockers, and it will be easier to share rules with a browser filter list.
+- **Uyumluluk.** Engel listeniz, tarayıcı reklam engelleyicilerle uyumlu olur ve bir tarayıcı filtre listesiyle kuralları paylaşmak daha kolay olacaktır.
 
 - **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
@@ -71,11 +71,11 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `@@`: the marker that is used in the exception rules. Eşleşen ana makine adları için filtrelemeyi kapatmak istiyorsanız kuralınıza bu işaretçiyle başlayın.
 
-- `modifiers`: parameters that clarify the rule. Kuralın kapsamını sınırlayabilir veya hatta çalışma şeklini tamamen değiştirebilirler.
+- `değiştiriciler`: kuralı netleştiren parametreler. Kuralın kapsamını sınırlayabilir veya hatta çalışma şeklini tamamen değiştirebilirler.
 
 ### Özel Karakterler
 
-- `*`: joker karakter. It is used to represent any set of characters. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
+- `*`: joker karakter. Herhangi bir karakter kümesini temsil etmek için kullanılır. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
 
 - `||`: herhangi bir alt alan dahil olmak üzere bir ana makine adının başlangıcıyla eşleşir. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
@@ -117,7 +117,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
 - ```none ||example.org^$important
    ```
 
-  `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` is the modifier.
+  `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` değiştiricidir.
 
 - Bir kuralda birden çok değiştirici kullanmak isteyebilirsiniz. In that case, separate them by commas:
 
@@ -135,9 +135,9 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
 
 - IP adreslerine veya CIDR öneklerine göre. Bu yol her türlü istemciler için çalışır.
 
-- Adlarına göre. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added.
+- Adlarına göre. Bu yol, yalnızca elle eklediğiniz kalıcı istemciler (AdGuard Home'da) ve cihazlar (Özel AdGuard DNS'de) için çalışır.
 
-  **NOTE:** In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  **NOT:** AdGuard Home'da şu anda ClientID'ler desteklenmemektedir, yalnızca adlar desteklenmektedir. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
 
 Söz dizimi şöyledir:
 
@@ -159,7 +159,7 @@ $client=~value1
 
 - `@@||*^$client=127.0.0.1`: localhost için her şeyin engelini kaldırın.
 
-- `||example.org^$client='Frank\'s laptop'`: `example.org` alan adını yalnızca `Frank'in dizüstü bilgisayarı` adlı istemci için engelleyin. Note that quote (`'`) in the name must be escaped.
+- `||example.org^$client='Frank\'s laptop'`: `example.org` alan adını yalnızca `Frank'in dizüstü bilgisayarı` adlı istemci için engelleyin. Addaki tırnak işaretinin (`'`) kaçınılması gerektiğini unutmayın.
 
 - `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`. Note that comma (`,`) must be escaped as well.
 

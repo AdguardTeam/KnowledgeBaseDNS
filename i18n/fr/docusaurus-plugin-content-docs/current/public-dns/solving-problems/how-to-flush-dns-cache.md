@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Nous expliquons ici comment vous pouvez vider le cache DNS pour résoudre les problèmes de DNS public. Vous pouvez utiliser le Bloqueur AdGuard pour configurer des serveurs DNS, y compris des serveurs chiffrés
 
-Lien rapide : [Télécharger le Bloqueur AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

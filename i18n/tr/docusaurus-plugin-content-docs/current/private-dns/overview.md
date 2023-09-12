@@ -7,7 +7,7 @@ sidebar_position: 1
 
 AdGuard DNS ile, DNS isteklerini çözümlemek ve reklamları, izleyicileri ve kötü amaçlı alan adlarını cihazınıza ulaşmadan önce engellemek için özel DNS sunucularınızı ayarlayabilirsiniz
 
-Quick link: [Try AdGuard DNS](https://adguard-dns.io/dashboard/)
+Hızlı bağlantı: [AdGuard DNS'i dene](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 
 ## Özel AdGuard DNS nasıl kurulur
 
-1. Go to your [AdGuard DNS dashboard](https://adguard-dns.io/dashboard/) (if not logged in, log in using your AdGuard account)
+1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
 1. "Cihazı bağla" öğesine tıklayın ve ekrandaki talimatları takip edin
 
 :::not Desteklenen platformlar:

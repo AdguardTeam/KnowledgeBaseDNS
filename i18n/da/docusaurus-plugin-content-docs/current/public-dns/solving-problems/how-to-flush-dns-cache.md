@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Her forklares, hvordan DNS-cachen kan tømmes for at løse offentlige DNS-problemer. AdGuard Ad Blocker kan bruges til opsætning af DNS-servere (også krypterede)
 
-Hurtig-link: [Download AdGuard Ad Blocker](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Hurtige links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

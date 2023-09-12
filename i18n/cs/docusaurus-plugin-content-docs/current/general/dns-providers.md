@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Zde nabízíme seznam důvěryhodných poskytovatelů DNS. Chcete-li je použít, nejprve si do zařízení nainstalujte Blokátor reklam AdGuard nebo AdGuard VPN. Poté na stejném zařízení klikněte na odkaz na poskytovatele v tomto článku
 
-Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [stáhnout AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Rychlé odkazy: [Stáhnout Blokátor reklam AdGuard](https://agrd.io/download-kb-adblock), [stáhnout AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 

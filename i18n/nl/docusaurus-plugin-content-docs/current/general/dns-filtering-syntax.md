@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Here we show you how to write custom DNS filtering rules for use in AdGuard products
 
-Snelle links: [AdGuard Advertentieblokker downloaden](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home downloaden](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS proberen](https://adguard-dns.io/dashboard/)
+Snelle links: [AdGuard Advertentieblokker downloaden](https://agrd.io/download-kb-adblock), [AdGuard Home downloaden](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS proberen](https://agrd.io/download-dns)
 
 :::
 

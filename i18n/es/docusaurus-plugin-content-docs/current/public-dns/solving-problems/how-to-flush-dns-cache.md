@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Aquí te explicamos cómo puedes borrar la caché DNS para resolver problemas de DNS público. Puedes usar el bloqueador de anuncios AdGuard para configurar servidores DNS, incluidos los cifrados
 
-Enlace rápido: [Descargar el bloqueador de anuncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

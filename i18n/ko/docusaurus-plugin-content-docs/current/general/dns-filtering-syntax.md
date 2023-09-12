@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 AdGuard 제품에서 사용할 사용자 정의 DNS 필터링 규칙을 작성하는 방법을 알려드립니다.
 
-빠른 링크: [AdGuard 광고 차단기 다운로드](https://adguard.com/download.html?auto=true&utm_source=kb_dns), [AdGuard Home 다운로드](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS 사용해보기](https://adguard-dns.io/dashboard/)
+Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 

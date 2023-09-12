@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Aqui nós explicamos como descartar o cache DNS para resolver problemas com um DNS público. Você pode usar o bloqueador de anúncios AdGuard para configurar servidores DNS, incluindo os criptografados
 
-Link rápido: [Baixar o bloqueador de anúncios AdGuard](https://adguard.com/download.html?auto=true&utm_source=kb_dns)
+Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
 
 :::
 

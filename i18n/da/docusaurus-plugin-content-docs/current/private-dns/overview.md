@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Med AdGuard DNS kan der opsættes egne private DNS-servere til at opløse DNS-forespørgsler og blokere annoncer, trackere og ondsindede domæner, før de når enheden
 
-Hurtig-link: [Prøv AdGuard DNS](https://adguard-dns.io/dashboard/)
+Hurtigt link: [Prøv AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -38,7 +38,7 @@ Her er en simpel sammenligning af funktioner tilgængelige i Public AdGuard DNS-
 
 ## Sådan opsættes Private AdGuard DNS
 
-1. Gå til [AdGuard DNS-kontrolpanelet](https://adguard-dns.io/dashboard/) (log ind på din AdGuard-konto, hvis det ikke allerede er sket)
+1. Gå til [AdGuard DNS-betjeningspanelet](https://agrd.io/download-dns) (hvis ikke indlogget, log ind via din AdGuard-konto)
 1. Klik på "Tilslut enhed", og følg skærmvejledningen
 
 :::note Understøttede platforme:
