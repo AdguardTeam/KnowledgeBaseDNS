@@ -3,6 +3,13 @@
     "ul-style": { "style": "dash" },
     "emphasis-style": { "style": "asterisk" },
     "no-duplicate-header": { "siblings_only": true },
+    "no-inline-html": {
+        "allowed_elements": [
+            "br",
+            "details",
+            "iframe",
+            "summary"
+    ]},
     "no-trailing-spaces": { "br_spaces": 0 },
     "line-length": false,
     "no-bare-urls": false,
