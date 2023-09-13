@@ -1120,6 +1120,6 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `193.110.81.0` and `185.253.5.0`                  | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=) |
-|DNS-over-HTTPS|`https://zero.dns0.eu/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk)|
-|DNS-over-TLS|`tls://zero.dns0.eu`|[Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1)|
-| DNS-over-QUIC | `quic://zero.dns0.eu` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)  |
+|DNS-over-HTTPS|`https://zero.dns0.eu/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS |`tls://zero.dns0.eu` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu) |
+| DNS-over-QUIC | `quic://zero.dns0.eu` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu) |
