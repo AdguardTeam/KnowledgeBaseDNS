@@ -1112,3 +1112,14 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS|`https://ric.openbld.net/dns-query`|[Add to AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk)|
 |DNS-over-TLS|`tls://ric.openbld.net`|[Add to AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)|
+
+#### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `193.110.81.0` and `185.253.5.0`                  | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=) |
+|DNS-over-HTTPS|`https://zero.dns0.eu/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS |`tls://zero.dns0.eu` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu) |
+| DNS-over-QUIC | `quic://zero.dns0.eu` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu) |
