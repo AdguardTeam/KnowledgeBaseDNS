@@ -17,7 +17,7 @@ To fix this problem, you need to allow AdGuard websites see your IP address in y
 
     1. Tap the **Page Settings** button, then tap **Show IP Address**
 
-    ![iCloud Private Relay settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
+        ![iCloud Private Relay settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
 
     1. Repeat for `adguard.com`
 
