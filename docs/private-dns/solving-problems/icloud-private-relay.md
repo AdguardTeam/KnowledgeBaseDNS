@@ -21,7 +21,7 @@ To fix this problem, you need to allow AdGuard websites see your IP address in y
 
     1. Repeat for `adguard.com`
 
-- On Mac
+- On Mac:
 
     1. Go to `adguard-dns.io`
 
