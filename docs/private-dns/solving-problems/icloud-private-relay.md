@@ -5,7 +5,7 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-When you're using iCloud Private Relay, AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/en/test.html)) will show that you are not using AdGuard DNS on that device.
+When you're using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![Device is not connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
