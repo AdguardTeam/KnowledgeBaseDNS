@@ -25,11 +25,11 @@ To fix this problem, you need to allow AdGuard websites see your IP address in y
 
     1. Go to `adguard-dns.io`
 
-    1. In Safari, choose **View** → **Reload and Show IP Address**.
+    1. In Safari, choose **View** → **Reload and Show IP Address**
 
     1. Repeat for `adguard.com`
 
-If you can't see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS or macOS, then try again.
+If you can't see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 Now your device should be displayed correctly in AdGuard DNS dashboard:
 
