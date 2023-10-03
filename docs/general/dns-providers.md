@@ -1123,3 +1123,59 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 |DNS-over-HTTPS|`https://zero.dns0.eu/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
 | DNS-over-TLS |`tls://zero.dns0.eu` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu) |
 | DNS-over-QUIC | `quic://zero.dns0.eu` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu) |
+
+### BebasDNS by BebasID
+
+[BebasDNS](https://github.com/bebasid/bebasid) is a free and neutral public resolver based in Indonesia. We have no-logs policy and support DNSSEC along with OpenNIC TLD. We support both port 53 and 1753 for Plain DNS
+
+#### Default
+
+This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains. 
+
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS, IPv4      | `103.87.68.194` and `34.101.185.130` | [Add to AdGuard](adguard:add_dns_server?address=103.87.68.194&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=) |
+| DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::53` | [Add to AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=)  |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com) |
+| DNS-over-TLS   | `tls://dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853) |
+| DNS-over-QUIC  | `quic://quic.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic.dns.bebasid.com:853&name=quic://quic.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://quic.dns.bebasid.com:853&name=quic://quic.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.bebasid.com` IP: `103.87.68.194:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTQ6ODQ0MyAxXDKkdrOao8ZeLyu7vTnVrT0C7YlPNNf6trdMkje7QR8yLmRuc2NyeXB0LWNlcnQuZG5zLmJlYmFzaWQuY29t) |
+
+#### Unfiltered
+
+This variant doesn't filter anything.
+
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS, IPv4      | `103.87.68.193` | [Add to AdGuard](adguard:add_dns_server?address=103.87.68.193&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.193&name=) |
+| DNS, IPv6      | `2a05:dfc7:bca0:d01c::2` | [Add to AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=)  |
+| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com) |
+| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
+| DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `34.101.185.130:5443` | [Add to AdGuard](sdns://AQcAAAAAAAAAEzM0LjEwMS4xODUuMTMwOjU0NDMghpbY0AAjPtvOiDsSzDh7Few4-cUrb6D33KwcMl75TtkqMi5kbnNjcnlwdC1jZXJ0LnVuZmlsdGVyZWQuZG5zLmJlYmFzaWQuY29t) |
+
+#### Security
+
+This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains. 
+
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS, IPv4      | `103.87.68.195` | [Add to AdGuard](adguard:add_dns_server?address=103.87.68.195&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.195&name=) |
+| DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::5353` | [Add to AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::5353&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::5353&name=)  |
+| DNS-over-HTTPS | `https://antivirus.bebasid.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com) |
+| DNS-over-TLS   | `tls://antivirus.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853) |
+| DNS-over-QUIC  | `quic://quic-antivirus.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic-antivirus.dns.bebasid.com:853&name=quic://quic-antivirus.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://quic-antivirus.dns.bebasid.com:853&name=quic://quic-antivirus.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.antivirus.bebasid.com` IP: `103.87.68.195:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTU6ODQ0MyDxbZzPMadetG2FodrzRfoiJjJi3cxbOsvKAvMyJ09rfiUyLmRuc2NyeXB0LWNlcnQuYW50aXZpcnVzLmJlYmFzaWQuY29t) |
+
+#### Family
+
+This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains. 
+
+| Protocol       | Address                    |                                                        |
+|----------------|------------------------------------------------------------------|------------------|
+| DNS, IPv4      | `103.87.68.196` | [Add to AdGuard](adguard:add_dns_server?address=103.87.68.196&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.196&name=) |
+| DNS, IPv6      | `2a05:dfc7:bca0:b00b:beba::51d` | [Add to AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:b00b:beba::51d&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:b00b:beba::51d&name=)  |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853) |
+| DNS-over-QUIC  | `quic://quic-sehat.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ) |
