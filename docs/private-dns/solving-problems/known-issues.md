@@ -38,6 +38,7 @@ Here’s how you can disable iCloud Private Relay on your iPhone:
 ![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
 
 On your Mac:
+
 1. Open *System Settings* and click your name or *Apple ID*.
 1. Select *iCloud* → *Private Relay*.
 1. Turn off Private Relay.
