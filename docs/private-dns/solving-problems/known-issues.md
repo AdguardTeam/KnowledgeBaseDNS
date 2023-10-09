@@ -52,7 +52,7 @@ After the iOS 17 update, Advanced Tracking and Fingerprinting Protection may be 
 
 Here’s how you can disable Advanced Tracking and Fingerprinting Protection:
 
-1. Open *Settings* and scroll down to *Safari*
+1. Open *Settings* and scroll down to *Safari*.
 1. Tap *Advanced*.
 1. Disable *Advanced Tracking and Fingerprinting Protection*.
 
