@@ -25,7 +25,7 @@ If you’re using Chrome and you don’t see any requests in your AdGuard DNS da
 
 If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you've set it up correctly.
 
-## iCloud Private Relay (Safari, macOs and iOS)
+## iCloud Private Relay (Safari, macOS, and iOS)
 
 If you enable iCloud Private Relay in your device settings, Safari will use Apple’s DNS addresses, which will override the AdGuard DNS settings.
 
