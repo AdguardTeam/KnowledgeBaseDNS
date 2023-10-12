@@ -1,6 +1,6 @@
 ---
 title: Known issues
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 After setting up AdGuard DNS, some users may find that it doesn’t work properly: they see a message that their device is not connected to AdGuard DNS and the requests from that device are not displayed in the Query log. This can happen because of certain hidden settings in your browser or operating system. Let’s look at several common issues and their solutions.
