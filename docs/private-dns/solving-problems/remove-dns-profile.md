@@ -1,9 +1,9 @@
 ---
-title: How to delete a DNS profile
+title: How to remove a DNS profile
 sidebar_position: 3
 ---
 
-If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to delete that DNS profile. Here's how to do it.
+If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to remove that DNS profile. Here's how to do it.
 
 On your Mac:
 
@@ -19,7 +19,7 @@ On your Mac:
 
     ![Deleting a profile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
 
-1. Confirm the deletion.
+1. Confirm the removal.
 
     ![Confirmation](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
 
@@ -41,4 +41,4 @@ On your iOS device:
 
     ![Deleting a profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
 
-1. Enter your device password to confirm the deletion.
+1. Enter your device password to confirm the removal.
