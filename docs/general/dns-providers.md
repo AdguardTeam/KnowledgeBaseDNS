@@ -1123,3 +1123,11 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 |DNS-over-HTTPS|`https://zero.dns0.eu/`|[Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
 | DNS-over-TLS |`tls://zero.dns0.eu` | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu) |
 | DNS-over-QUIC | `quic://zero.dns0.eu` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu) |
+
+#### ByteDance Public DNS
+
+ByteDance Public DNS is a free alternative DNS service by ByteDance at China.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `180.184.1.1` and `180.184.2.2`                  | [Add to AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
