@@ -583,11 +583,11 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 
 ### BebasDNS by BebasID
 
-[BebasDNS](https://github.com/bebasid/bebasid) is a free and neutral public resolver based in Indonesia. We have no-logs policy and support DNSSEC along with OpenNIC TLD. We support both port 53 and 1753 for Plain DNS
+[BebasDNS](https://github.com/bebasid/bebasid) is a free and neutral public resolver based in Indonesia. We have no-logs policy and support DNSSEC along with OpenNIC TLD. We support both port 53 and 1753 for Plain DNS.
 
 #### Default
 
-This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains. 
+This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -613,7 +613,7 @@ This variant doesn't filter anything.
 
 #### Security
 
-This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains. 
+This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -626,7 +626,7 @@ This is the security/antivirus variant of BebasDNS. This variant only blocks mal
 
 #### Family
 
-This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains. 
+This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -1149,4 +1149,4 @@ Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but
 | DNS-over-TLS | `uncensored.dns.dnswarden.com` | [Add to AdGuard](adguard:add_dns_server?address=huncensored.dns.dnswarden.com&name=uncensored.dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=huncensored.dns.dnswarden.com&uncensored.dns.dnswarden.com) |
 | DNS-over-HTTPS | `https://dns.dnswarden.com/uncensored` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnswarden.com/uncensored&name=https://dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnswarden.com/uncensored&https://dns.dnswarden.com) |
 
-You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content. 
+You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content.
