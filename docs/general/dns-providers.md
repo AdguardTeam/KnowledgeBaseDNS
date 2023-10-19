@@ -365,7 +365,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `54.174.40.213` and `52.3.100.184`                 | [Add to AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
-### SafeSurfer DNS
+### Safe Surfer
 
 [Safe Surfer](https://www.safesurfer.co.nz/) is a DNS service that blocks 50+ categories like porn, ads, malware, and popular social media sites making web surfing safer.
 
