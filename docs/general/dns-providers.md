@@ -448,7 +448,7 @@ These servers provide DNS resolution without traffic filtering.
 
 #### Safe
 
-Safe mode guard against infected, fraudulent or bot sites.
+Safe mode guards against infected, fraudulent, or bot sites.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
