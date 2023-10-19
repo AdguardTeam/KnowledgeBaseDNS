@@ -398,7 +398,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNS Privacy
 
-A collaborative open project to promote, implement and deploy [DNS Privacy](https://dnsprivacy.org/).
+A collaborative open project to promote, implement, and deploy [DNS Privacy](https://dnsprivacy.org/).
 
 DNS servers run by the [Stubby developers](https://getdnsapi.net/).
 
