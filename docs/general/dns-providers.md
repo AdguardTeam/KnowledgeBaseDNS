@@ -365,9 +365,9 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `54.174.40.213` and `52.3.100.184`                 | [Add to AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
-### SafeSurfer DNS
+### Safe Surfer
 
-[SafeSurfer DNS](https://www.safesurfer.co.nz/) is a DNS service by SafeSurfer that protects your device from harmful and adult contents.
+[Safe Surfer](https://www.safesurfer.co.nz/) is a DNS service that blocks 50+ categories like porn, ads, malware, and popular social media sites making web surfing safer.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -376,7 +376,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) is a DNS service that lets you block anything you wish while by default protecting you and your family from ads, trackers, malware, phishing, malicious sites, and much more.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -387,7 +387,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) provides free DNS service without logging and with DNSSEC enabled.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -398,7 +398,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNS Privacy
 
-A collaborative open project to promote, implement and deploy [DNS Privacy](https://dnsprivacy.org/).
+A collaborative open project to promote, implement, and deploy [DNS Privacy](https://dnsprivacy.org/).
 
 DNS servers run by the [Stubby developers](https://getdnsapi.net/).
 
@@ -408,7 +408,7 @@ DNS servers run by the [Stubby developers](https://getdnsapi.net/).
 | DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` and IPv6: `2001:610:1:40ba:145:100:185:15`  | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com) |
 | DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16`  | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
-Other DNS servers with 'no logging' policy.
+Other DNS servers with no-logging policy.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -433,7 +433,7 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 
 ### NextDNS
 
-[NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
+[NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers without logging in addition to its freemium configurable filtering resolvers with optional logging.
 
 #### Ultra-low latency
 
