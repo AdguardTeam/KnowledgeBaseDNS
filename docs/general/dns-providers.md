@@ -367,7 +367,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### SafeSurfer DNS
 
-[SafeSurfer DNS](https://www.safesurfer.co.nz/) is a DNS service by SafeSurfer that protects your device from harmful and adult contents.
+[Safe Surfer](https://www.safesurfer.co.nz/) is a DNS service that blocks 50+ categories like porn, ads, malware, and popular social media sites making web surfing safer.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
