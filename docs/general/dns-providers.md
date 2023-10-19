@@ -431,39 +431,6 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 | DNS-over-TLS   | Provider: `NIC Chile` Hostname: `dnsotls.lab.nic.cl` IP: `200.1.123.46` and IPv6: `2001:1398:1:0:200:1:123:46` | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsotls.lab.nic.cl&name=dnsotls.lab.nic.cl), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsotls.lab.nic.cl&name=dnsotls.lab.nic.cl) |
 | DNS-over-TLS  | Provider: `OARC` Hostname: `tls-dns-u.odvr.dns-oarc.net` IP: `184.105.193.78` and IPv6: `2620:ff:c000:0:1::64:25`   | [Add to AdGuard](adguard:add_dns_server?address=tls://tls-dns-u.odvr.dns-oarc.net&name=tls-dns-u.odvr.dns-oarc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://tls-dns-u.odvr.dns-oarc.net&name=tls-dns-u.odvr.dns-oarc.net) |
 
-### DNSlify DNS
-
-[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
-
-#### Default
-
-These servers provide DNS resolution without traffic filtering.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `185.235.81.1` and `185.235.81.2`             | [Add to AdGuard](adguard:add_dns_server?address=185.235.81.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.235.81.1&name=) |
-| DNS, IPv6      | `2a0d:4d00:81::1` and `2a0d:4d00:81::2`            | [Add to AdGuard](adguard:add_dns_server?address=2a0d:4d00:81::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:4d00:81::1&name=) |
-| DNS-over-HTTPS | `https://doh.dnslify.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.dnslify.com/dns-query&name=doh.dnslify.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.dnslify.com/dns-query&name=doh.dnslify.com) |
-| DNS-over-TLS | `tls://doh.dnslify.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://doh.dnslify.com&name=doh.dnslify.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://doh.dnslify.com&name=doh.dnslify.com) |
-
-#### Safe
-
-Safe mode guard against infected, fraudulent or bot sites.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `185.235.81.3` and `185.235.81.4`             | [Add to AdGuard](adguard:add_dns_server?address=185.235.81.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.235.81.3&name=) |
-| DNS, IPv6      | `2a0d:4d00:81::3` and `2a0d:4d00:81::4`            | [Add to AdGuard](adguard:add_dns_server?address=2a0d:4d00:81::3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:4d00:81::3&name=) |
-
-#### Family
-
-Family mode offers protection by "Safe" resolvers and blocks adult sites.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `185.235.81.5` and `185.235.81.6`             | [Add to AdGuard](adguard:add_dns_server?address=185.235.81.5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.235.81.5&name=) |
-| DNS, IPv6      | `2a0d:4d00:81::5` and `2a0d:4d00:81::6`            | [Add to AdGuard](adguard:add_dns_server?address=2a0d:4d00:81::5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:4d00:81::5&name=) |
-
 ### NextDNS
 
 [NextDNS](https://nextdns.io/) provides publicly accessible non-filtering resolvers with no logging in addition to its freemium configurable filtering resolvers with optional logging.
@@ -934,9 +901,9 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 
 [OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
 
-#### OSZX server
+#### OSZX DNS
 
-These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
+This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCrypt v2 support.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
