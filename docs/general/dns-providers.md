@@ -433,7 +433,7 @@ DNS servers with minimal logging/restrictions. These servers use some logging, s
 
 ### DNSlify DNS
 
-[DNSlify DNS](https://www.dnslify.com/services/) operate public DNS resolvers to speed up requests, increase redundancy. The service is provided by [Peerix](https://www.peerix.net/)
+[DNSlify DNS](https://www.dnslify.com/services/) operates public DNS resolvers to speed up requests and increase redundancy. The service is provided by [Peerix](https://www.peerix.net/).
 
 #### Default
 
