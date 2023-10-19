@@ -387,7 +387,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DNS.SB
 
-[DNS.SB](https://dns.sb/) provide free DNS service with no logging, DNSSEC enabled.
+[DNS.SB](https://dns.sb/) provides free DNS service without logging and with DNSSEC enabled.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
