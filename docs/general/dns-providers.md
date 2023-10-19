@@ -376,7 +376,7 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 
 ### DeCloudUs DNS
 
-[DeCloudUs DNS](https://decloudus.com/) A secure, private, open-source DNS resolver with malware protection, ad blocking and without logs. Degoogle and Ungoogle your phone, tablet, and computer.
+[DeCloudUs DNS](https://decloudus.com/) is a DNS service that lets you block anything you wish while by default protecting you and your family from ads, trackers, malware, phishing, malicious sites, and much more.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
