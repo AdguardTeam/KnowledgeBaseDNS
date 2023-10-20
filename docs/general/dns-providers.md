@@ -186,6 +186,12 @@ OpenDNS servers that provide adult content blocking.
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123`| [Add to AdGuard](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ) |
 | DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com) |
 
+:::info
+
+OpenDNS's servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
+
+:::
+
 ### Google DNS
 
 [Google DNS](https://developers.google.com/speed/public-dns/) is a free, global DNS resolution service that you can use as an alternative to your current DNS provider.
