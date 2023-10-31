@@ -17,7 +17,7 @@ Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock),
 
 These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
 
-### **AdGuard DNS**
+### AdGuard DNS
 
 [AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
@@ -614,7 +614,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4      | `64.6.64.6` and `64.6.65.6`                        | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=) |
 | DNS, IPv6      | `2620:74:1b::1:1` and `2620:74:1c::2:2`            | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
-## Regional resolvers
+## **Regional resolvers**
 
 Regional DNS resolvers are typically focused on specific geographic regions, offering optimized performance for users in those areas. These resolvers are often operated by non-profit organizations, local ISPs, or other entities.
 
@@ -872,7 +872,7 @@ In "Family" mode, protection from infected, fraudulent and adult sites is provid
 | DNS, IPv4 | `77.88.8.3` and `77.88.8.7` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.3&name=) |
 | DNS, IPv6 | `2a02:6b8::feed:a11` and `2a02:6b8:0:1::feed:a11` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:a11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:a11&name=) |
 
-## Small personal resolvers
+## **Small personal resolvers**
 
 These are DNS resolvers usually run by enthusiasts or small groups. While they may lack the scale and redundancy of larger providers, they often prioritize privacy, transparency, or offer specialized features.
 
