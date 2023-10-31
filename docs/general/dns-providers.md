@@ -13,11 +13,11 @@ Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock),
 
 :::
 
-## Public anycast resolvers
+## **Public anycast resolvers**
 
 These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
 
-### AdGuard DNS
+### **AdGuard DNS**
 
 [AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
 
