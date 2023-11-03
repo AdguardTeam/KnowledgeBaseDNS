@@ -20,11 +20,9 @@ toc_max_heading_level: 4
 
 DNS API documentation
 
-## Version: 1.5
-
 ## AdGuard DNS API Change Log
 
-## v1.0
+### v1.0
 
 - Added authentication.
 - CRUD operations with devices and DNS servers.
@@ -32,26 +30,26 @@ DNS API documentation
 - Downloading DOT and DOT .mobileconfig.
 - Filter Lists and Web-Services.
 
-## v1.1
+### v1.1
 
 - Added methods to retrieve statistics by time, domains, companies and devices.
 
 - Added method for updating device settings.
 - Fixed required fields definition.
 
-## v1.2
+### v1.2
 
 - Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
 
-## v1.3
+### v1.3
 
 - Added method to get account limits.
 
-## v1.4
+### v1.4
 
 - Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
 
-## v1.5
+### v1.5
 
 - Added new setting `block_nrd` and group all security-related settings
   to one place.
@@ -80,10 +78,10 @@ filtering newly registered domains.
 #### Model for saving server settings changed from
 
 ```json
-}
+{
   "protection_enabled" : true,
   "safebrowsing_enabled" : true,
-  ..
+  ...
 }
 ```
 
@@ -97,12 +95,14 @@ to:
      "block_dangerous_domains": true,
      "block_nrd": false
   }
-  ..
+  ...
 }
 ```
 
 here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value
 stored in `block_dangerous_domains`.
+
+## Version: 1.5
 
 ### /oapi/v1/account/limits
 
