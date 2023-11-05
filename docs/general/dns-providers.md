@@ -635,6 +635,17 @@ ByteDance Public DNS is a free alternative DNS service by ByteDance at China.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `180.184.1.1` and `180.184.2.2`                  | [Add to AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### Hurricane Electric Public Recursor
+
+Hurricane Electric Public Recursor is is a free alternative DNS service by Hurricane Electric with anycast.
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | `74.82.42.42` | [Add to AdGuard](adguard:add_dns_server?address=74.82.42.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=74.82.42.42&name=) |
+| DNS, IPv6 | `2001:470:20::2` | [Add to AdGuard](adguard:add_dns_server?address=2001:470:20::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:470:20::2&name=) |
+| DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
+| DNS-over-TLS | `tls://ordns.he.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net) |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
