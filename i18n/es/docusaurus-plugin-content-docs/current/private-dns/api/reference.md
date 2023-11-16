@@ -10,6 +10,9 @@ toc_max_heading_level: 4
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
 
+    Changelog is from here:
+    https://api.adguard-dns.io/static/api/CHANGELOG.md
+
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
@@ -17,7 +20,86 @@ toc_max_heading_level: 4
 
 DNS API documentation
 
-## Version: 1.4
+## AdGuard DNS API Change Log
+
+### v1.0
+
+- Added authentication.
+- CRUD operations with devices and DNS servers.
+- Query log.
+- Downloading DOT and DOT .mobileconfig.
+- Filter Lists and Web-Services.
+
+### v1.1
+
+- Added methods to retrieve statistics by time, domains, companies and devices.
+
+- Added method for updating device settings.
+- Fixed required fields definition.
+
+### v1.2
+
+- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
+
+### v1.3
+
+- Added method to get account limits.
+
+### v1.4
+
+- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
+
+### v1.5
+
+- Added new setting `block_nrd` and group all security-related settings to one place.
+
+#### Model for safebrowsing settings changed from
+
+``` json
+{
+   "enabled": true
+}
+```
+
+to:
+
+``` json
+{
+   "enabled": true,
+   "block_dangerous_domains": true,
+   "block_nrd": false
+}
+```
+
+where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
+
+#### Model for saving server settings changed from
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_enabled" : true,
+  ...
+}
+```
+
+to:
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_settings" : {
+     "enabled": true,
+     "block_dangerous_domains": true,
+     "block_nrd": false
+  }
+  ...
+}
+```
+
+here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
+
+## Version: 1.5
 
 ### /oapi/v1/account/limits
 
@@ -199,7 +281,7 @@ Lists DNS servers that belong to the user.
 
 ##### Descripción
 
-Lists DNS servers that belong to the user. De forma predeterminada, hay al menos un servidor predeterminado.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Respuestas
 
@@ -235,7 +317,7 @@ Removes a DNS server
 
 ##### Descripción
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting a default DNS server is forbidden.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parámetros
 
@@ -444,7 +526,7 @@ Gets companies statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 
 ##### Respuestas
@@ -468,7 +550,7 @@ Gets detailed companies statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 | cursor             | consulta   | Pagination cursor                     | No        | string     |
 
@@ -517,7 +599,7 @@ Gets devices statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 
 ##### Respuestas
@@ -541,7 +623,7 @@ Gets domains statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 
 ##### Respuestas
@@ -565,7 +647,7 @@ Gets time statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 
 ##### Respuestas

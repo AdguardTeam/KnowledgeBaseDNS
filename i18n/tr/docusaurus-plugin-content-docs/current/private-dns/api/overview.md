@@ -107,13 +107,13 @@ Once the access and the refresh tokens are generated, API calls can be made by p
 
 ### Referans
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Lütfen referans yöntemlerine [buradan](private-dns/api/reference.md) bakın.
 
 ### OpenAPI özellikleri
 
 OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. Örneğin bu dosyayı [https://editor.swagger.io/][swagger] adresinde açabilirsiniz.
 
 ## Geri Bildirim
 

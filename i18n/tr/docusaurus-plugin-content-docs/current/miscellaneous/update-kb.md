@@ -13,7 +13,7 @@ Yukarıda bahsedilen GitHub'ın işlevselliğini kullanarak mevcut makalelerde d
 
 Başlamaya hazır olduğunuzda, [KnowledgeBaseDNS deposunda](https://github.com/AdguardTeam/KnowledgeBaseDNS) çalışın. Bilgi Tabanımızdaki tüm metinler `Markdown` işaretleme dilinde yazılmıştır. Makaleleri düzenlerken veya yazarken bunu aklınızda bulundurun. Markdown söz dizimi hakkında daha fazla bilgi edinmek için [bu bağlantıyı](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) takip edin.
 
-Bilgi Tabanı sitesi, modern bir statik site oluşturucu olan Docusaurus 2 kullanılarak oluşturulmuştur. Değişiklikler veya eklemeler önerirken, tüm belgelerin platformun ilkelerine uygun olması gerektiğini göz önünde bulundurun. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
+Bilgi Tabanı sitesi, modern bir statik site oluşturucu olan Docusaurus 2 kullanılarak oluşturulmuştur. Değişiklikler veya eklemeler önerirken, tüm belgelerin platformun ilkelerine uygun olması gerektiğini göz önünde bulundurun. Onlar hakkında [bu kılavuzu](https://docusaurus.io/docs/category/guides) okuyabilirsiniz.
 
 Önerdiğiniz değişiklikleri önizlemek için bu Bilgi Tabanını bilgisayarınıza yerel olarak konuşlandırabilirsiniz. Bunun nasıl yapılacağına ilişkin ayrıntılı talimatlar, bu Bilgi Tabanının GitHub sayfasındaki [README.md dosyasında](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) bulunabilir.
 

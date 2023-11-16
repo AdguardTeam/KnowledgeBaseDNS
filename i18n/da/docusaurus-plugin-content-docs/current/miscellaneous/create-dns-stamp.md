@@ -57,7 +57,7 @@ Typer af Sikker DNS inkluderer `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `
 For at udfylde **hash'ene for serverens certifikat**-felt kan flg. kommando bruges, hvor `<IP_ADDRESS>`, `<PORT>`og `<SERVER_NAME>` erstattes med de korresponderende værdier for din DNS-server:
 
 ```bash
-echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
+echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
 ```
 
 :::caution
@@ -87,10 +87,10 @@ Lad os se på et eksempel på oprettelsen af et stempel til AdGuard DNS vha. DoT
     - **Hashes**: Eksekvér kommandoen
 
     ```bash
-    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
+    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    Resultatet er `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Indsæt denne SHA256-hash af serverens certificat i feltet.
+    Resultatet er `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Indsæt denne SHA256-hash af serverens certifikat i feltet.
 
 4. Lad afsnittet Egenskaber stå tomt.
 

@@ -58,7 +58,7 @@ En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstill
 
 :::note
 
-Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Man bliver nødt til at genopsætte dem manuelt.
+Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øvrige specifikke netværksindstillinger, inkl. DNS-servertilpasninger. Man bliver nødt til at nulstille dem manuelt.
 
 :::
 

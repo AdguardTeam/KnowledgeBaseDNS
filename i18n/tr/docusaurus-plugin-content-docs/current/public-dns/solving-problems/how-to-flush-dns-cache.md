@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Here we explain how you can flush the DNS cache to resolve public DNS issues. Şifrelenmiş olanlar da dahil olmak üzere DNS sunucularını kurmak için AdGuard Reklam Engelleyiciyi kullanabilirsiniz
+Burada, genel DNS sorunlarını çözmek için DNS önbelleğini nasıl temizleyebileceğinizi açıklıyoruz. Şifrelenmiş olanlar da dahil olmak üzere DNS sunucularını kurmak için AdGuard Reklam Engelleyiciyi kullanabilirsiniz
 
 Hızlı bağlantı: [AdGuard Reklam Engelleyiciyi indir](https://agrd.io/download-kb-adblock)
 
@@ -15,7 +15,7 @@ Hızlı bağlantı: [AdGuard Reklam Engelleyiciyi indir](https://agrd.io/downloa
 
 DNS önbelleği, ziyaret edilen sitelerin IP adreslerini yerel bilgisayarda depolar, böylece bir dahaki sefere daha hızlı yüklenirler. Uzun bir DNS araması yapmak yerine sistem, sorguları geçici DNS önbelleğindeki DNS kayıtlarıyla yanıtlar.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+DNS önbelleği, aşağıdakileri içeren [kaynak kayıtları (RR'ler)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records) içerir:
 
 - **Kaynak verileri (veya rdata)**;
 - **Kayıt türü**;
@@ -26,9 +26,9 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 ## Önbelleği temizlemeniz gerektiğinde
 
-**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+**DNS sağlayıcınızı AdGuard DNS olarak değiştirdiniz.** Kullanıcı DNS'sini değiştirmişse, önbellek nedeniyle sonucun görülmesi biraz zaman alabilir.
 
-**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. Tarayıcının siteyi yeni IP adresinden açmasını sağlamak için önbelleğe alınan IP'yi DNS önbelleğinden kaldırmanız gerekir.
+**Düzenli olarak 404 hatası alıyorsunuz.** Örneğin, site başka bir sunucuya aktarılmıştır ve IP adresi değişmiştir. Tarayıcının siteyi yeni IP adresinden açmasını sağlamak için önbelleğe alınan IP'yi DNS önbelleğinden kaldırmanız gerekir.
 
 **Gizliliğinizi geliştirmek istiyorsunuz.**
 
@@ -54,7 +54,7 @@ Android cihazınızda DNS önbelleğinizi temizlemenin en kolay yolu Uçak modun
 
 Zorla yeniden başlatmak da, cihazınız için DNS önbelleğini temizlemeye de yardımcı olabilir. Bunu yapmak için güç düğmesini en az 20 saniye basılı tutun. (Genellikle) cihazınızı elle yeniden başlatmaya zorlar ve DNS önbelleği temizlenir.
 
-Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
+Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Ayarlar → Sistem → Gelişmiş → Seçenekleri sıfırla → Ağ ayarlarını sıfırla* öğesini açın ve onaylamak için *Ayarları Sıfırla* öğesine dokunun.
 
 :::not
 

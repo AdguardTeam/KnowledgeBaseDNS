@@ -15,7 +15,9 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 ## What is Private AdGuard DNS?
 
-O AdGuard DNS Privado é um servidor DNS que, além dos benefícios de um servidor DNS público (como criptografia de tráfego e listas de bloqueio de domínio), oferece recursos como personalização flexível, estatísticas de DNS e controle dos pais e é facilmente gerenciado por meio de um painel prático.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+In addition to the benefits of a public DNS server (such as traffic encryption and domain blocklists), Private AdGuard DNS provides features like flexible customization, DNS statistics, and parental control, and is easily managed through a handy dashboard.
 
 ## Why you need Private AdGuard DNS
 
@@ -50,6 +52,7 @@ Aqui está uma comparação simples dos recursos disponíveis nos servidores AdG
 - Linux
 - Roteadores
 - Consolas de jogos
+- Smart TVs
 
 :::
 
@@ -85,7 +88,7 @@ For times when pre-installed *Blocklists* with thousands of rules are not enough
 
 ### Statistics
 
-In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
