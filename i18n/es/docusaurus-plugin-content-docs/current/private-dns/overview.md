@@ -15,7 +15,9 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 ## What is Private AdGuard DNS?
 
-DNS Privado de AdGuard es un servidor DNS que, además de los beneficios de un servidor DNS público (como el cifrado de tráfico y las listas de bloqueo de dominios), proporciona características como personalización flexible, estadísticas de DNS y control parental y se administra fácilmente a través de un práctico panel de control.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+In addition to the benefits of a public DNS server (such as traffic encryption and domain blocklists), Private AdGuard DNS provides features like flexible customization, DNS statistics, and parental control, and is easily managed through a handy dashboard.
 
 ## Why you need Private AdGuard DNS
 
@@ -50,6 +52,7 @@ Aquí hay una comparación simple de las características disponibles en los ser
 - Linux
 - Roteadores
 - Consolas de videojuegos
+- Smart TVs
 
 :::
 
@@ -85,7 +88,7 @@ For times when pre-installed *Blocklists* with thousands of rules are not enough
 
 ### Statistics
 
-In "Statistics" tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 

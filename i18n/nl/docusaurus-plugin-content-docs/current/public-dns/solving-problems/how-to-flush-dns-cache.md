@@ -1,11 +1,11 @@
 ---
-title: How to flush DNS cache
+title: Hoe de DNS-cache leeg te maken
 sidebar_position: 1
 ---
 
 :::info
 
-Here we explain how you can flush the DNS cache to resolve public DNS issues. You can use AdGuard Ad Blocker to set up DNS servers, including encrypted ones
+Hier leggen we uit hoe je de DNS-cache kunt leegmaken om problemen met publieke DNS op te lossen. Je kunt AdGuard Advertentieblokker gebruiken om DNS-servers in te stellen, inclusief versleutelde servers
 
 Snelle link: [AdGuard Advertentieblokker downloaden](https://agrd.io/download-kb-adblock)
 
@@ -13,9 +13,9 @@ Snelle link: [AdGuard Advertentieblokker downloaden](https://agrd.io/download-kb
 
 ## Wat is DNS-cache?
 
-DNS cache stores the IP addresses of visited sites on the local computer so that they load faster next time. Instead of doing a long DNS lookup, the system answers the queries with DNS records from the temporary DNS cache.
+DNS-cache slaat de IP-adressen van bezochte sites op de lokale computer op, zodat ze de volgende keer sneller worden geladen. In plaats van een langdurende DNS-zoekopdracht uit te voeren, gebruikt het systeem de DNS-records uit de tijdelijke DNS-cache.
 
-The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), which are:
+De DNS-cache bevat zogenaamde [resource records (RR's)](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records), namelijk:
 
 - **Resource data (or rdata)**;
 - **Record type**;
@@ -24,11 +24,11 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 - **Class**;
 - **Resource data length**.
 
-## When you might need to clear the cache
+## Wanneer u mogelijk de cache moet wissen
 
-**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+**Je heeft jouw DNS-provider gewijzigd naar AdGuard DNS.** Als de gebruiker zijn DNS heeft gewijzigd, kan het vanwege de cache enige tijd duren voordat het resultaat zichtbaar is.
 
-**You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Je krijgt regelmatig een 404-foutmelding.** De website is bijvoorbeeld overgezet naar een andere server en het IP-adres is veranderd. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
 **You want to improve your privacy.**
 

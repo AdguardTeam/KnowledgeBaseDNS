@@ -1,12 +1,14 @@
 ---
-title: Overview
+title: Overzicht
 sidebar_position: 1
 slug: /
 ---
 
-## What is DNS?
+## Wat is DNS?
 
-DNS staat voor "Domain Name System", en heeft tot doel de namen van websites om te zetten in IP-adressen. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. And a regular DNS resolver simply returns the IP address of the requested domain.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube-videospeler" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+DNS staat voor "Domain Name System", en heeft tot doel de namen van websites om te zetten in IP-adressen. Elke keer dat je naar een website gaat, stuurt je browser een DNS-query naar een DNS-server om het IP-adres van de website te achterhalen. En een gewone DNS-resolver retourneert eenvoudigweg het IP-adres van het aangevraagde domein.
 
 :::note
 
@@ -18,24 +20,24 @@ De standaard DNS-server wordt meestal geleverd door je internetprovider. Dit bet
 
 Er zijn ook DNS-servers die bepaalde websites op DNS-niveau kunnen blokkeren. Hoe werken ze? Wanneer jouw apparaat een "slecht" verzoek verzendt, of het nu een advertentie of een tracker is, verhindert een DNS-server de verbinding door te reageren met een niet-routeerbaar IP-adres voor een geblokkeerd domein.
 
-## Why use DNS for content blocking
+## Waarom DNS gebruiken voor het blokkeren van inhoud
 
-Werkelijk alles is tegenwoordig verbonden met internet, van tv tot slimme lampen, van mobiele apparaten tot slimme auto's. En waar internet is, zijn er advertenties en volgers. In dit geval is een browsergebaseerde advertentieblokker onvoldoende gebleken. To get a better protection, use DNS in combination with VPN and ad blocker.
+Werkelijk alles is tegenwoordig verbonden met internet, van tv tot slimme lampen, van mobiele apparaten tot slimme auto's. En waar internet is, zijn er advertenties en volgers. In dit geval is een browsergebaseerde advertentieblokker onvoldoende gebleken. Om beter beschermd te worden, gebruik je DNS in combinatie met VPN en een advertentieblokker.
 
-Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS has no blind spots since it observes all devices and not just the browsers. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
+Het gebruik van DNS voor blokkering van inhoud heeft bepaalde voordelen, maar ook duidelijke nadelen. Aan de ene kant heeft DNS geen blinde vlekken omdat het alle apparaten observeert en niet alleen de browsers. Maar, aan de andere kant kan DNS-blokkering op zichzelf geen cosmetische filtering bieden.
 
-## What is AdGuard DNS?
+## Wat is Adguard DNS?
 
-AdGuard DNS is one of the most privacy-oriented DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own base of domain names that serve ads, trackers, and fraud, and it is regularly updated.
+AdGuard DNS is een van de meest privacygerichte DNS-diensten op de markt. Het ondersteunt betrouwbare coderingsprotocollen zoals DNS-over-HTTPS, DNS-over-TLS en DNS-over-QUIC. Het kan werken als een gewone DNS-resolver in de modus Niet-filtering, maar het kan ook inhoud op DNS-niveau blokkeren: verzoeken naar advertentie-, volgers- en/of adult-domeinen identificeren (optioneel) en reageren met een leeg antwoord. AdGuard heeft een eigen database met domeinnamen die advertenties, volgers en fraude weergeven, en deze wordt regelmatig bijgewerkt.
 
-![An approximate scheme of how AdGuard DNS works](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
+![Een versimpeld schema over de werking van AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
-About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content-blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
+Ongeveer 75% van AdGuards DNS-verkeer is versleuteld. Dit is eigenlijk wat DNS-servers die inhoud blokkeren onderscheidt van andere. Als je de statistieken van CloudFlare of Quad9 bekijkt, zul je zien dat gecodeerde DNS slechts een klein deel van alle zoekopdrachten uitmaakt.
 
-AdGuard DNS exists in two main forms: [public AdGuard DNS](public-dns/overview.md) and [private AdGuard DNS](private-dns/overview.md). Both of these services do not require installing any apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
+AdGuard DNS bestaat in twee hoofdvormen: [publieke AdGuard DNS](public-dns/overview) en [private AdGuard DNS](private-dns/overview). Voor beide services hoeven geen apps te worden geïnstalleerd. Ze zijn eenvoudig in te stellen en te gebruiken en bieden gebruikers de minimale functies die nodig zijn om advertenties, volgers, kwaadaardige websites en inhoud voor volwassenen te blokkeren (indien nodig). Er zijn geen beperkingen op welke apparaten ze kunnen worden gebruikt.
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different services. Their main difference is that you can customize private AdGuard DNS, while public AdGuard DNS cannot.
+Ondanks vele overeenkomsten zijn AdGuards privé DNS-service en publieke DNS-service, twee verschillende diensten. Het belangrijkste verschil is dat je privé AdGuard DNS kunt aanpassen, terwijl dat bij publieke AdGuard DNS niet kan.
 
-## DNS filtering module in AdGuard products
+## DNS-filtermodule in AdGuard-producten
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — public or private.
+Alle belangrijke AdGuard-producten, inclusief AdGuard VPN, hebben een **DNS-filtermodule** waar je een DNS-server kunt selecteren op basis van een provider die je vertrouwt. Vanzelfsprekend zijn AdGuards standaard DNS; niet-filterende DNS en de gezinsbeschermende DNS ook keuzemogelijkheden. Bovendien kunnen gebruikers met AdGuard-apps [eenvoudig AdGuard DNS](https://adguard-dns.io/public-dns.html) configureren en gebruiken - openbaar of privé.

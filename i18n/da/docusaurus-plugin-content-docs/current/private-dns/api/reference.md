@@ -10,6 +10,9 @@ toc_max_heading_level: 4
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
 
+    Changelog is from here:
+    https://api.adguard-dns.io/static/api/CHANGELOG.md
+
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
@@ -17,7 +20,86 @@ toc_max_heading_level: 4
 
 DNS API-dokumentation
 
-## Version: 1.4
+## AdGuard DNS API-ændringslog
+
+### v1.0
+
+- Tilføjet godkendelse.
+- CRUD-operationer med enheder og DNS-servere.
+- Forespørgselslog.
+- Downloader DOT og DOT .mobileconfig.
+- Filterlister og webtjenester.
+
+### v1.1
+
+- Tilføjet metoder til statistikhentning efter tid, domæner, virksomheder og enheder.
+
+- Tilføjet metode til opdatering af enhedsindstillinger.
+- Rettet definition af obligatoriske felter.
+
+### v1.2
+
+- Tilføjet de nye protokoltyper DNS og DNSCRYPT. Udfasning af PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP og DNSCRYPT_UDP, som fjernes helt senere.
+
+### v1.3
+
+- Tilføjet metode til at hente kontokvoter.
+
+### v1.4
+
+- Tilføjet mulighed for tilpasset svarblokering: Standard (0.0.0.0), REFUSED, NXDOMAIN eller tilpasset IP-adresse.
+
+### v1.5
+
+- Tilføjet ny indstilling `block_nrd` og gruppér alle sikkerhedsrelaterede indstillinger på ét sted.
+
+#### Model for safebrowsing-indstillinger ændret fra
+
+``` json
+{
+   "enabled": true
+}
+```
+
+til:
+
+``` json
+{
+   "enabled": true,
+   "block_dangerous_domains": true,
+   "block_nrd": false
+}
+```
+
+hvor `enabled` nu styrer alle indstillinger i gruppen, `block_dangerous_domains` er det tidligere modelfelt "enabled", og `block_nrd` er indstillinger for filtrering af nyregistrerede domæner.
+
+#### Model til lagring af serverindstillinger ændret fra
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_enabled" : true,
+  ...
+}
+```
+
+til:
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_settings" : {
+     "enabled": true,
+     "block_dangerous_domains": true,
+     "block_nrd": false
+  }
+  ...
+}
+```
+
+her bruges det nye felt `safebrowsing_settings` i stedet for det udfasede `safebrowsing_enabled`, hvis værdi gemmes i `block_dangerous_domains`.
+
+## Version: 1.5
 
 ### /oapi/v1/account/limits
 
@@ -71,9 +153,9 @@ Fjerner en enhed
 
 ##### Parametre
 
-| Navn      | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------- | ---------- | ----------- | ------------ | ------ |
-| device_id | sti        |             | Ja           | streng |
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -90,9 +172,9 @@ Henter en eksisterede enhed jf. ID
 
 ##### Parametre
 
-| Navn      | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------- | ---------- | ----------- | ------------ | ------ |
-| device_id | sti        |             | Ja           | streng |
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -109,9 +191,9 @@ Opdaterer en eksisterende enhed
 
 ##### Parametre
 
-| Navn      | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------- | ---------- | ----------- | ------------ | ------ |
-| device_id | sti        |             | Ja           | streng |
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -131,7 +213,7 @@ Henter DNS-over-HTTPS .mobileconfig-filen.
 
 ##### Parametre
 
-| Navn                    | Placeret i   | Beskrivelse                                                                  | Obligatorisk | Schema     |
+| Navn                    | Placeret i   | Beskrivelse                                                                  | Obligatorisk | Struktur   |
 | ----------------------- | ------------ | ---------------------------------------------------------------------------- | ------------ | ---------- |
 | device_id               | sti          |                                                                              | Ja           | streng     |
 | exclude_wifi_networks | forespørgsel | Vis Wi-Fi netværk efter deres SSID, for hvilket AdGuard DNS skal deaktiveres | Nej          | [ streng ] |
@@ -154,7 +236,7 @@ Henter DNS-over-TLS .mobileconfig-filen.
 
 ##### Parametre
 
-| Navn                    | Placeret i   | Beskrivelse                                                                  | Obligatorisk | Schema     |
+| Navn                    | Placeret i   | Beskrivelse                                                                  | Obligatorisk | Struktur   |
 | ----------------------- | ------------ | ---------------------------------------------------------------------------- | ------------ | ---------- |
 | device_id               | sti          |                                                                              | Ja           | streng     |
 | exclude_wifi_networks | forespørgsel | Vis Wi-Fi netværk efter deres SSID, for hvilket AdGuard DNS skal deaktiveres | Nej          | [ streng ] |
@@ -177,9 +259,9 @@ Opdaterer enhedsindstillinger
 
 ##### Parametre
 
-| Navn      | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------- | ---------- | ----------- | ------------ | ------ |
-| device_id | sti        |             | Ja           | streng |
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -235,13 +317,13 @@ Fjerner en DNS-server
 
 ##### Beskrivelse
 
-Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til standard DNS-serveren. Sletning af en standard DNS-server er forbudt.
+Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til standard DNS-serveren. Sletning af standard DNS-serveren er forbudt.
 
 ##### Parametre
 
-| Navn            | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------------- | ---------- | ----------- | ------------ | ------ |
-| dns_server_id | sti        |             | Ja           | streng |
+| Navn            | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------------- | ---------- | ----------- | ------------ | -------- |
+| dns_server_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -258,9 +340,9 @@ Henter en eksisterede DNS-server jf. ID
 
 ##### Parametre
 
-| Navn            | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------------- | ---------- | ----------- | ------------ | ------ |
-| dns_server_id | sti        |             | Ja           | streng |
+| Navn            | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------------- | ---------- | ----------- | ------------ | -------- |
+| dns_server_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -277,9 +359,9 @@ Opdaterer en eksisterende DNS-server
 
 ##### Parametre
 
-| Navn            | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------------- | ---------- | ----------- | ------------ | ------ |
-| dns_server_id | sti        |             | Ja           | streng |
+| Navn            | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------------- | ---------- | ----------- | ------------ | -------- |
+| dns_server_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -299,9 +381,9 @@ Opdaterer DNS-serverindstillinger
 
 ##### Parametre
 
-| Navn            | Placeret i | Beskrivelse | Obligatorisk | Schema |
-| --------------- | ---------- | ----------- | ------------ | ------ |
-| dns_server_id | sti        |             | Ja           | streng |
+| Navn            | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------------- | ---------- | ----------- | ------------ | -------- |
+| dns_server_id | sti        |             | Ja           | streng   |
 
 ##### Svar
 
@@ -365,7 +447,7 @@ Henter forespørgselslog
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                                                           | Obligatorisk | Schema                                              |
+| Navn               | Placeret i   | Beskrivelse                                                           | Obligatorisk | Struktur                                            |
 | ------------------ | ------------ | --------------------------------------------------------------------- | ------------ | --------------------------------------------------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.)                                       | Ja           | long                                                |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.)                                       | Ja           | long                                                |
@@ -394,9 +476,9 @@ Ophæver et Refresh-token
 
 ##### Parametre
 
-| Navn          | Placeret i   | Beskrivelse   | Obligatorisk | Schema |
-| ------------- | ------------ | ------------- | ------------ | ------ |
-| refresh_token | forespørgsel | Refresh-token | Ja           | streng |
+| Navn          | Placeret i   | Beskrivelse   | Obligatorisk | Struktur |
+| ------------- | ------------ | ------------- | ------------ | -------- |
+| refresh_token | forespørgsel | Refresh-token | Ja           | streng   |
 
 ##### Svar
 
@@ -416,7 +498,7 @@ Henter kategoristatistik
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -440,7 +522,7 @@ Henter virksomhedsstatistik
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -464,7 +546,7 @@ Henter detaljerede virksomhedsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -489,7 +571,7 @@ Henter landestatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -513,7 +595,7 @@ Henter enhedsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -537,7 +619,7 @@ Henter domænestatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |
@@ -561,7 +643,7 @@ Henter tidsstatistikker
 
 ##### Parametre
 
-| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Schema     |
+| Navn               | Placeret i   | Beskrivelse                     | Obligatorisk | Struktur   |
 | ------------------ | ------------ | ------------------------------- | ------------ | ---------- |
 | time_from_millis | forespørgsel | Tid fra i millisekunder (inkl.) | Ja           | long       |
 | time_to_millis   | forespørgsel | Tid til i millisekunder (inkl.) | Ja           | long       |

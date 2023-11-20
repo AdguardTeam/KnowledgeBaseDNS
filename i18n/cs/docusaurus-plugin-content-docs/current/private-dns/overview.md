@@ -15,7 +15,9 @@ Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://agrd.io/download-dns)
 
 ## Co je soukromý AdGuard DNS?
 
-Soukromý AdGuard DNS je DNS server, který kromě výhod veřejného DNS serveru (jako je šifrování provozu a seznamy zakázaných domén) poskytuje funkce, jako je flexibilní přizpůsobení, statistiky DNS a rodičovská kontrola a lze jej snadno spravovat pomocí praktického ovládacího panelu.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Kromě výhod veřejného DNS serveru (jako je šifrování provozu a seznamy blokovaných domén) poskytuje Soukromý AdGuard DNS funkce, jako je flexibilní přizpůsobení, statistiky DNS a rodičovská ochrana a lze ho snadno spravovat pomocí praktického ovládacího panelu.
 
 ## Proč potřebujete soukromý AdGuard DNS
 
@@ -50,6 +52,7 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 - Linux
 - Routery
 - Herní konzole
+- Chytré TV
 
 :::
 
@@ -85,7 +88,7 @@ Pro chvíle, kdy předinstalované *seznamy zakázaných* s tisíci pravidly nes
 
 ### Statistiky
 
-Na kartě "Statistiky" můžete zobrazit všechny souhrnné statistiky DNS dotazů provedených zařízeními připojenými k vašemu soukromému AdGuard DNS. Zobrazuje celkový počet a zeměpisnou polohu požadavků, počet zablokovaných požadavků, seznam společností, kterým byly požadavky adresovány, typy požadavků a nejžádanější domény.
+Na kartě *Statistiky* můžete zobrazit všechny souhrnné statistiky DNS dotazů provedených zařízeními připojenými k vašemu soukromému AdGuard DNS. Zobrazuje celkový počet a zeměpisnou polohu požadavků, počet zablokovaných požadavků, seznam společností, kterým byly požadavky adresovány, typy požadavků a nejžádanější domény.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 

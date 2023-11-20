@@ -7,21 +7,21 @@ toc_max_heading_level: 4
 
 :::info
 
-Here we show you how to write custom DNS filtering rules for use in AdGuard products
+Hier laten we je zien hoe je aangepaste DNS-filterregels schrijft voor gebruik in AdGuard-producten
 
 Snelle links: [AdGuard Advertentieblokker downloaden](https://agrd.io/download-kb-adblock), [AdGuard Home downloaden](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS proberen](https://agrd.io/download-dns)
 
 :::
 
-## Introduction
+## Introductie
 
-You can use AdGuard DNS filtering rules syntax to make the rules more flexible, so they can block content according to your preferences. AdGuard DNS filtering rules syntax can be used in different AdGuard products such as AdGuard Home, AdGuard DNS, AdGuard for Windows/Mac/Android.
+Je kunt de syntaxis van AdGuard DNS-filterregels gebruiken om de regels flexibeler te maken, zodat ze inhoud kunnen blokkeren op basis van jouw voorkeuren. De syntaxis van AdGuard DNS-filterregels kan worden gebruikt in verschillende AdGuard-producten zoals AdGuard Home, AdGuard DNS en AdGuard voor Windows/Mac/Android.
 
-There are three different approaches to writing hosts blocklists:
+Er zijn drie verschillende benaderingen voor het schrijven van blokkeerlijsten voor hosts:
 
-- [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. This way blocklists are compatible with browser ad blockers.
+- [Syntaxis in Adblock-stijl](#adblock-style-syntax): de moderne benadering voor het schrijven van filterregels, gebaseerd op het gebruik van een subset van de regelsyntaxis in Adblock-stijl. Op deze manier zijn blokkeerlijsten compatibel met browseradvertentieblokkers.
 
-- [`/etc/hosts` syntax](#etc-hosts-syntax): the old, tried-and-true approach that uses the same syntax that operating systems do for their hosts files.
+- [`/etc/hosts` syntaxis](#etc-hosts-syntax): de oude, beproefde aanpak die dezelfde syntaxis gebruikt als besturingssystemen voor hun hosts-bestanden.
 
 - [Domains-only syntax](#domains-only-syntax): a simple list of domain names.
 
