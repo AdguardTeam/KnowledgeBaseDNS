@@ -25,7 +25,7 @@ Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs
 
 At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information - all through a simple easy-to-use dashboard.
 
-### The difference between private and public AdGuard DNS
+### The difference between public and private AdGuard DNS
 
 Here is a simple comparison of features available in public and private AdGuard DNS.
 
