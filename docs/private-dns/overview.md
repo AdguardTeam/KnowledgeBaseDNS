@@ -17,7 +17,7 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. Moreover, it provides additional features such as flexible customization, DNS statistics, and parental control. All these capabilities are easily accessible and managed via a user-friendly dashboard.
+Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
 
 ### Why you need private AdGuard DNS
 
