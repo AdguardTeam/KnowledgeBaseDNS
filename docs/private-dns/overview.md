@@ -106,7 +106,7 @@ This section features a range of settings allowing you to customize the operatio
 
 ### Blocklists management
 
-With *Blocklists* feature you can set which domains you want to block and which you don't. Сhoose from wide variety of blocklists for different purposes.
+The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
