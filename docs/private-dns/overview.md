@@ -27,7 +27,7 @@ At one time, the AdGuard product line included only [public AdGuard DNS](../publ
 
 ### The difference between private and public AdGuard DNS
 
-Here is a simple comparison of features available in public AdGuard DNS and private AdGuard DNS servers.
+Here is a simple comparison of features available in public and private AdGuard DNS.
 
 | Public AdGuard DNS  | Private AdGuard DNS |
 | ----------- | ----------- |
