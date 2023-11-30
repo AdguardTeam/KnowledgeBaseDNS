@@ -62,7 +62,7 @@ Every device that you add in the AdGuard DNS panel has its own unique address th
 
 ### For devices that do not support DoH, DoT, and DoQ
 
-If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address. 
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
 
 :::note
 
