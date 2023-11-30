@@ -62,7 +62,25 @@ Every device that you add in the AdGuard DNS panel has its own unique address th
 
 ### For devices that do not support DoH, DoT, and DoQ
 
-If the device does not support encrypted DNS and you have to use plain DNS, there's another way to allow AdGuard DNS to recognize the device — link its IP address. In this case AdGuard DNS counts all plain DNS requests that come from that IP address towards that "device".
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address. 
+
+:::note
+
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend choosing dedicated IP addresses.
+
+:::
+
+#### Dedicated IP addresses
+
+For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+
+When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If it is your case, you might need to rely on the Linked IP method.
+
+#### Linked IP
+
+If you connect your device to AdGuard DNS through Linked IP the service counts all plain DNS requests that come from that IP address towards that "device". With this connection method, you would have to reconnect manually or via a special program every time the device's IP changed, which occurred after every reboot.
 
 The only requirement for linking IP is that **it must be a residential IP address**.
 
