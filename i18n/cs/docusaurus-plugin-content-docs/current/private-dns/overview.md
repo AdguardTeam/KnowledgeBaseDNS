@@ -13,21 +13,21 @@ Rychlý odkaz: [Vyzkoušet AdGuard DNS](https://agrd.io/download-dns)
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## Co je soukromý AdGuard DNS?
+## Obecné
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Kromě výhod veřejného DNS serveru (jako je šifrování provozu a seznamy blokovaných domén) poskytuje Soukromý AdGuard DNS funkce, jako je flexibilní přizpůsobení, statistiky DNS a rodičovská ochrana a lze ho snadno spravovat pomocí praktického ovládacího panelu.
+Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
 
-## Proč potřebujete soukromý AdGuard DNS
+### Why you need private AdGuard DNS
 
 Dnes můžete k internetu připojit cokoli: televizory, ledničky, chytré žárovky nebo reproduktory. Spolu s nepopiratelnými vymoženostmi však získáte i slídiče zařízení a reklamy. Jednoduchý blokátor reklam v prohlížeči vás v tomto případě neochrání, ale AdGuard DNS, který můžete nastavit tak, aby filtroval datový provoz, blokoval obsah a slídiče, má účinek na celý systém.
 
-Již máme [veřejný AdGuard DNS](../public-dns/overview.md) a [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Některým uživatelům tato řešení vyhovují, ale pro jiné je veřejný AdGuard DNS málo flexibilní v konfiguraci a AdGuard Home postrádá jednoduchost. Zde přichází ke slovu soukromý AdGuard DNS. Má to nejlepší z obou světů: nabízí možnost přizpůsobení, ovládání a informace - to vše prostřednictvím jednoduchého a snadno použitelného ovládacího panelu.
+At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Některým uživatelům tato řešení vyhovují, ale pro jiné je veřejný AdGuard DNS málo flexibilní v konfiguraci a AdGuard Home postrádá jednoduchost. Zde přichází ke slovu soukromý AdGuard DNS. Má to nejlepší z obou světů: nabízí možnost přizpůsobení, ovládání a informace - to vše prostřednictvím jednoduchého a snadno použitelného ovládacího panelu.
 
-## Rozdíl mezi soukromým a veřejným AdGuard DNS
+### The difference between public and private AdGuard DNS
 
-Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGuard DNS a soukromých serverech AdGuard DNS.
+Here is a simple comparison of features available in public and private AdGuard DNS.
 
 | Veřejný AdGuard DNS                    | Soukromý DNS AdGuard                                                                                          |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -38,10 +38,12 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 | -                                      | Podrobný záznam dotazů                                                                                        |
 | -                                      | Rodičovská ochrana                                                                                            |
 
-## Jak nastavit soukromý AdGuard DNS
+## How to set up private AdGuard DNS
+
+### For devices that support DoH, DoT, and DoQ
 
 1. Přejděte na svůj [ovládací panel AdGuard DNS](https://agrd.io/download-dns) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
-1. Klikněte na "Připojit zařízení" a postupujte podle pokynů na obrazovce
+1. Click *Connect device* and follow on-screen instructions
 
 :::note Podporované platformy:
 
@@ -58,9 +60,27 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejných serverech AdGua
 
 Každé zařízení, které přidáte do panelu AdGuard DNS, má svou vlastní jedinečnou adresu, kterou lze použít, pokud zařízení podporuje moderní šifrované protokoly DNS (DoH, DoT a DoQ).
 
-## Připojená IP
+### For devices that do not support DoH, DoT, and DoQ
 
-Pokud zařízení nepodporuje šifrovanou službu DNS a musíte použít běžnou službu DNS, existuje další způsob, jak umožnit službě AdGuard DNS rozpoznat zařízení — připojit jeho IP adresu. V tomto případě AdGuard DNS započítává všechny běžné DNS požadavky, které přicházejí z dané IP adresy do tohoto "zařízení".
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
+
+:::note
+
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
+
+:::
+
+#### Dedicated IP addresses
+
+For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+
+When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
+
+#### Připojená IP
+
+If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
 Jediným požadavkem pro připojení IP je, že **musí být rezidentní IP adresa**.
 
@@ -73,18 +93,6 @@ Rezidenční IP adresa je IP adresa přiřazená zařízení připojenému k rez
 Pokud se snažíte připojit rezidenční IP adresu a AdGuard DNS vám to neumožňuje, kontaktujte náš tým podpory na adrese support@adguard.com.
 
 ## Funkce soukromého AdGuard DNS
-
-### Správa seznamů zakázaných
-
-Pomocí funkce "Seznamy zakázaných" můžete nastavit, které domény chcete blokovat a které ne. Vyberte si z široké škály seznamů zakázaných pro různé účely.
-
-![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
-
-### Uživatelská pravidla
-
-Pro chvíle, kdy předinstalované *seznamy zakázaných* s tisíci pravidly nestačí, máme šikovnou funkci nazvanou "Uživatelská pravidla". Zde můžete ručně přidat vlastní pravidla pro blokování/odblokování určité domény nebo importovat seznamy vlastních pravidel. (zkontrolujte [syntaxi pravidel DNS filtrování](../general/dns-filtering-syntax.md)). Seznamy můžete vyexportovat.
-
-![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
 ### Statistiky
 
@@ -110,10 +118,30 @@ Jedná se o podrobný protokol, kde můžete zkontrolovat informace o každém j
 
 ![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
+## Server settings
+
+This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
+
+### Správa seznamů zakázaných
+
+The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
+
+![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+
+### Security settings
+
+Even if you're aware of all the tricks online scammers use, there's always a chance you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
+
+The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
+
+### Uživatelská pravidla
+
+For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). Seznamy můžete vyexportovat.
+
+![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+
 ### Rodičovská ochrana
 
 Chcete-li své dítě chránit před online obsahem, který považujete za nevhodný, nastavte a aktivujte možnost *Rodičovská ochrana*. Kromě možností, jako je blokování obsahu pro dospělé a bezpečné vyhledávání, jsme přidali možnost ručně zadat domény pro blokování a nastavit plán, podle kterého bude *Rodičovská ochrana* fungovat.
 
 ![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
-
-V případě, že ještě nemáte soukromý AdGuard DNS, můžete jej získat na [oficiálních stránkách](https://adguard-dns.io/).

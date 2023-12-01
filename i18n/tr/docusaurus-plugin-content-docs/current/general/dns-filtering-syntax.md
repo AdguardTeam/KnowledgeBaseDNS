@@ -19,19 +19,19 @@ Kuralları daha esnek hâle getirmek için AdGuard DNS filtreleme kuralları sö
 
 Ana makine engel listeleri yazmak için üç farklı yaklaşım vardır:
 
-- [Adblock-style syntax](#adblock-style-syntax): the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Bu şekilde engel listeleri tarayıcı reklam engelleyicileriyle uyumludur.
+- [Reklam engelleme stili söz dizimi](#adblock-style-syntax): Reklam engelleme stili kural söz diziminin bir alt kümesini kullanmaya dayalı filtreleme kuralları yazmaya yönelik modern yaklaşım. Bu şekilde engel listeleri tarayıcı reklam engelleyicileriyle uyumludur.
 
 - [`/etc/hosts` sözdizimi](#etc-hosts-syntax): işletim sistemlerinin hosts dosyaları için kullandığı söz diziminin aynısını kullanan eski, denenmiş ve doğru yaklaşım.
 
 - [Yalnızca alan adı söz dizimi](#domains-only-syntax): alan adlarının basit bir listesi.
 
-Engellenenler listesi oluşturuyorsanız, [Adblock tarzı sözdizimini](#adblock-style-syntax) kullanmanızı öneririz. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
+Engellenenler listesi oluşturuyorsanız, [Reklam engelleme stili söz dizimini](#adblock-style-syntax) kullanmanızı öneririz. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
 
 - **Engel listesi boyutu.** Düzen eşleştirmeyi kullanmak, yüzlerce `/etc/hosts` girişi yerine tek bir kurala sahip olmanızı sağlar.
 
 - **Uyumluluk.** Engel listeniz, tarayıcı reklam engelleyicilerle uyumlu olur ve bir tarayıcı filtre listesiyle kuralları paylaşmak daha kolay olacaktır.
 
-- **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
+- **Genişletilebilirlik.** Geçtiğimiz on yılda, Reklam engelleme stili söz dizimi büyük ölçüde gelişti ve bunu daha da genişletmemek ve ağ düzeyindeki engelleyiciler için ek özellikler sunmamak için hiçbir neden göremiyoruz.
 
 `/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. Buna [Hostlist compiler][hlc] adını verdik ve [AdGuard DNS filtresi][sdn] oluşturmak için kendimiz kullanıyoruz.
 
@@ -58,9 +58,9 @@ Engellenenler listesi oluşturuyorsanız, [Adblock tarzı sözdizimini](#adblock
 
 - `/REGEX/`: belirtilen normal ifadeyle eşleşen alan adlarına erişimi engelleyin.
 
-## Adblock-Style Syntax
+## Reklam Engelleme Stili Söz Dizimi
 
-Bu, tarayıcı reklam engelleyicileri tarafından kullanılan [geleneksel Adblock tarzı][adb] sözdiziminin bir alt kümesidir.
+Bu, tarayıcı reklam engelleyicileri tarafından kullanılan [geleneksel Reklam engelleme stili][adb] söz diziminin bir alt kümesidir.
 
 ```none
      kural = ["@@"] pattern [ "$" modifiers ]
@@ -117,7 +117,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
 - ```none ||example.org^$important
    ```
 
-  `|example.org^` eşleşen kalıptır. `$` is the delimiter, which signals that the rest of the rule are modifiers. `important` değiştiricidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `important` değiştiricidir.
 
 - Bir kuralda birden çok değiştirici kullanmak isteyebilirsiniz. Bu durumda, bunları virgülle ayırın:
 
@@ -125,7 +125,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `|example.org^` eşleşen kalıptır. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1`, [`client`](#client) değiştiricisidir ve değeri, `127.0.0.1`, sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`](#dnstype) değiştiricisidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1`, [`client`](#client) değiştiricisidir ve değeri, `127.0.0.1`, sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`](#dnstype) değiştiricisidir.
 
 **NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 
@@ -151,7 +151,7 @@ Değerden önce bir `~` karakteri ekleyerek de istemcileri hariç tutabilirsiniz
 $client=~value1
 ```
 
-İstemci adları genellikle boşluklar veya diğer özel karakterler içerir, bu nedenle adı tırnak içine almalısınız. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+İstemci adları genellikle boşluklar veya diğer özel karakterler içerir, bu nedenle adı tırnak içine almalısınız. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Tırnak işaretlerinden (`"` ve `'`), virgüllerden (`,`) ve dikey çizgilerden (`|`) kaçınmak için ters eğik çizgiyi (`\`) kullanın.
 
 **NOT:** Bir istemciyi hariç tutarken, tırnakların dışına `~` işareti **koymalısınız**.
 
@@ -327,10 +327,10 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 - `||example.com^$dnsrewrite=NOERROR;HTTPS;32 example.com alpn=h3`, bir `HTTPS` kaydı ekler. Only a subset of parameter values is supported: values must be `contiguous` and, where a `value-list` is `expected`, only one value is currently supported:
 
    ```none
-   ipv4hint=127.0.0.1             // Supported.
-   ipv4hint="127.0.0.1"           // Unsupported.
-   ipv4hint=127.0.0.1,127.0.0.2   // Unsupported.
-   ipv4hint="127.0.0.1,127.0.0.2" // Unsupported.
+   ipv4hint=127.0.0.1             // Destekleniyor.
+   ipv4hint="127.0.0.1"           // Desteklenmiyor.
+   ipv4hint=127.0.0.1,127.0.0.2   // Desteklenmiyor.
+   ipv4hint="127.0.0.1,127.0.0.2" // Desteklenmiyor.
    ```
 
   Bu gelecekte değiştirilecektir.
@@ -457,7 +457,7 @@ IP_address canonical_hostname [aliases...]
 
 Girdilerin alanları herhangi bir sayıda boşluk veya sekme karakteri ile ayrılır. `#` karakterinden satır sonuna kadar olan metin bir yorumdur ve yok sayılır.
 
-Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-`) ve noktalar (`,`) içerebilir. They must begin with an alphabetic character and end with an alphanumeric character. İsteğe bağlı takma adlar, ad değişiklikleri, alternatif yazımlar, daha kısa ana makine adları veya genel ana makine adları (örneğin, `localhost`) sağlar.
+Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-`) ve noktalar (`,`) içerebilir. Alfabetik bir karakterle başlamalı ve alfasayısal bir karakterle bitmelidirler. İsteğe bağlı takma adlar, ad değişiklikleri, alternatif yazımlar, daha kısa ana makine adları veya genel ana makine adları (örneğin, `localhost`) sağlar.
 
 **Örnek:**
 
@@ -483,7 +483,7 @@ example.org
 example.net # bu da bir yorumdur
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style](#adblock-style-syntax) rule.
+Bir dize geçerli bir alan adı değilse (örn. `*.example.org`), AdGuard Home bunu bir [Reklam engelleme stili](#adblock-style-syntax) kuralı olarak değerlendirir.
 
 ## Hostlists Compiler
 

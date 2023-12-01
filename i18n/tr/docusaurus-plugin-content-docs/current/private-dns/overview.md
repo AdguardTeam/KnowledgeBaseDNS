@@ -13,21 +13,21 @@ Hızlı bağlantı: [AdGuard DNS'i dene](https://agrd.io/download-dns)
 
 ![Özel AdGuard DNS pano esas](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## Özel AdGuard DNS nedir?
+## Genel
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Özel AdGuard DNS, genel bir DNS sunucusunun avantajlarına (trafik şifreleme ve alan adı engel listeleri gibi) ek olarak esnek özelleştirme, DNS istatistikleri ve ebeveyn denetimi gibi özellikler sunar ve kullanışlı bir pano aracılığıyla kolayca yönetilir.
+Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
 
-## Özel AdGuard DNS'e neden ihtiyacınız var
+### Why you need private AdGuard DNS
 
 Bugün internete her şeyi bağlayabilirsiniz: TV'ler, buzdolapları, akıllı ampuller veya hoparlörler. Ancak inkar edilemez kolaylıkların yanı sıra izleyiciler ve reklamlar elde edersiniz. Basit bir tarayıcı tabanlı reklam engelleyici bu durumda sizi korumayacaktır, ancak trafiği filtrelemek, içeriği ve izleyicileri engellemek için ayarlayabileceğiniz AdGuard DNS, sistem genelinde bir etkiye sahiptir.
 
-Halihazırda [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home'a](https://github.com/AdguardTeam/AdGuardHome) sahibiz. Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar - tümü basit, kullanımı kolay bir pano aracılığıyla.
+At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar - tümü basit, kullanımı kolay bir pano aracılığıyla.
 
-## Özel ve Genel AdGuard DNS arasındaki fark
+### The difference between public and private AdGuard DNS
 
-Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basit bir karşılaştırmasını burada bulabilirsiniz.
+Here is a simple comparison of features available in public and private AdGuard DNS.
 
 | Genel AdGuard DNS                            | Özel AdGuard DNS                                                                                      |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -38,10 +38,12 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 | -                                            | Ayrıntılı sorgu günlüğü                                                                               |
 | -                                            | Ebeveyn denetimi                                                                                      |
 
-## Özel AdGuard DNS nasıl kurulur
+## How to set up private AdGuard DNS
+
+### For devices that support DoH, DoT, and DoQ
 
 1. [AdGuard DNS panonuza](https://agrd.io/download-dns) gidin (giriş yapmadıysanız AdGuard hesabınızı kullanarak giriş yapın)
-1. "Cihazı bağla" öğesine tıklayın ve ekrandaki talimatları takip edin
+1. Click *Connect device* and follow on-screen instructions
 
 :::note Desteklenen platformlar:
 
@@ -58,9 +60,27 @@ Genel AdGuard DNS ve Özel AdGuard DNS sunucularında bulunan özelliklerin basi
 
 AdGuard DNS paneline eklediğiniz her cihazın, modern şifreli DNS protokollerini (DoH, DoT ve DoQ) desteklemesi durumunda kullanılabilecek kendi benzersiz adresi vardır.
 
-## Bağlı IP
+### For devices that do not support DoH, DoT, and DoQ
 
-Cihaz şifreli DNS'i desteklemiyorsa ve düz DNS kullanmanız gerekiyorsa, AdGuard DNS'nin cihazı tanımasına izin vermenin başka bir yolu daha vardır — IP adresini bağlayın. Bu durumda AdGuard DNS, o IP adresinden o "cihaza" doğru gelen tüm düz DNS isteklerini sayar.
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
+
+:::not
+
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
+
+:::
+
+#### Dedicated IP addresses
+
+For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+
+When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
+
+#### Bağlı IP
+
+If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
 IP bağlamak için tek gereksinim **konut IP adresi olmasıdır**.
 
@@ -73,18 +93,6 @@ Konut IP adresi, bir konut İSS'sine bağlı bir cihaza atanan IP adresidir. Tip
 Bir konut IP adresini bağlamaya çalışıyorsanız ve AdGuard DNS buna izin vermiyorsa, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.
 
 ## Özel AdGuard DNS özellikleri
-
-### Engel listeleri yönetimi
-
-"Engel listeleri" özelliği ile hangi alan adlarını engellemek istediğinizi ve hangilerini istemediğinizi belirleyebilirsiniz. Farklı amaçlar için çok çeşitli engel listeleri arasından seçim yapın.
-
-![Özel AdGuard DNS panosu engel listeleri](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
-
-### Kullanıcı kuralları
-
-Binlerce kurala sahip önceden yüklenmiş *Engel listelerinin* yeterli olmadığı zamanlar için, "Kullanıcı kuralları" adlı kullanışlı bir fonksiyonumuz var. Burada, belirli bir etki alanını engellemek/engelini kaldırmak için manuel olarak özel kurallar ekleyebilir veya özel kural listelerini içe aktarabilirsiniz ([DNS filtreleme kuralları söz dizimine](../general/dns-filtering-syntax.md) bakın). Listeleri dışa aktarabilirsiniz.
-
-![Özel AdGuard DNS panosu kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
 ### İstatistikler
 
@@ -110,10 +118,30 @@ Bu, her bir istekle ilgili bilgileri kontrol edebileceğiniz ve ayrıca istekler
 
 ![Özel AdGuard DNS panosu sorgu günlüğü](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
+## Server settings
+
+This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
+
+### Engel listeleri yönetimi
+
+The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
+
+![Özel AdGuard DNS panosu engel listeleri](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+
+### Security settings
+
+Even if you're aware of all the tricks online scammers use, there's always a chance you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
+
+The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
+
+### Kullanıcı kuralları
+
+For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). Listeleri dışa aktarabilirsiniz.
+
+![Özel AdGuard DNS panosu kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+
 ### Ebeveyn denetimi
 
 Çocuğunuzu uygunsuz bulduğunuz çevrimiçi içerikten korumak için *Ebeveyn denetimi* seçeneğini ayarlayın ve etkinleştirin. "Yetişkinlere yönelik içerik" engelleme ve güvenli arama gibi seçeneklere ek olarak, engelleme için etki alanlarını manuel olarak belirleme ve *Ebeveyn kontrolü*'nün buna göre çalışması için bir zamanlama ayarlama olanağı ekledik.
 
 ![Özel AdGuard DNS panosu Ebeveyn Denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
-
-Henüz Özel AdGuard DNS'iniz yoksa [resmi siteden edinebilirsiniz](https://adguard-dns.io/).
