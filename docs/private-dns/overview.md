@@ -76,7 +76,7 @@ For every device that you connect to AdGuard DNS, you'll be offered two dedicate
 
 When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
 
-Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If it is your case, you might need to rely on the Linked IP method.
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
 
 #### Linked IP
 
