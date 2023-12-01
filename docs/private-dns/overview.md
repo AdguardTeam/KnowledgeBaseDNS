@@ -66,7 +66,7 @@ If the device does not support encrypted DNS and you have to use plain DNS, ther
 
 :::note
 
-Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend choosing dedicated IP addresses.
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
 
 :::
 
