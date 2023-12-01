@@ -80,7 +80,7 @@ Unfortunately, not all service providers offer IPv6 support, and not all devices
 
 #### Linked IP
 
-If you connect your device to AdGuard DNS through Linked IP the service counts all plain DNS requests that come from that IP address towards that "device". With this connection method, you would have to reconnect manually or via a special program every time the device's IP changed, which occurred after every reboot.
+If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
 The only requirement for linking IP is that **it must be a residential IP address**.
 
