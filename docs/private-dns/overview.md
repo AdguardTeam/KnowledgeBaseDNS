@@ -134,14 +134,38 @@ Even if you're aware of all the tricks online scammers use, there's always a cha
 
 The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
+### Parental control
+
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+
+![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+
 ### User rules
 
 For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### Parental control
+## Advanced
 
-To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+Here you can set the way AdGuard DNS should respond to blocked domains: Default (zero IP address), NXDOMAIN (indicating the domain does not exist), REFUSED (the server has refused to process the query), and Custom IP (where you can specify an IP address manually).
 
-![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+Additionally, you can adjust the Time-to-Live (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a certain period. A TTL of 0 indicates that the device will not cache responses.
+
+In the Advanced section, you will find three options to further tailor your experience:
+
+* Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore their DNS settings. Activating this option ensures AdGuard DNS can effectively protect your device.
+
+* Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
+
+* Log IP addresses. By enabling this option, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
+
+### Access settings
+
+Here you can manage an access to your DNS server by configuring the following settings:
+
+* Allowed clients. Define which clients are permitted to use your DNS server
+* Disallowed clients.  List clients that are barred from using your DNS server
+* Disallowed domains. Enter domain names to wich you want to block access to your DNS server. Wildcards and DNS filtering rules can be also listed here
+
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
