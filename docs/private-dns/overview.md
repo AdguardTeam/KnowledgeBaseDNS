@@ -154,18 +154,16 @@ Additionally, you can adjust the Time-to-Live (TTL) setting. This parameter defi
 
 In the Advanced section, you will find three options to further tailor your experience:
 
-* Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore their DNS settings. Activating this option ensures AdGuard DNS can effectively protect your device.
-
-* Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
-
-* Log IP addresses. By enabling this option, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
+- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore their DNS settings. Activating this option ensures AdGuard DNS can effectively protect your device.
+- Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
+- Log IP addresses. By enabling this option, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
 
 ### Access settings
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
-* Allowed clients. Define which clients are permitted to use your DNS server
-* Disallowed clients.  List clients that are barred from using your DNS server
-* Disallowed domains. Enter domain names to wich you want to block access to your DNS server. Wildcards and DNS filtering rules can be also listed here
+- Allowed clients. Define which clients are permitted to use your DNS server
+- Disallowed clients. List clients that are barred from using your DNS server
+- Disallowed domains. Enter domain names to wich you want to block access to your DNS server. Wildcards and DNS filtering rules can be also listed here
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
