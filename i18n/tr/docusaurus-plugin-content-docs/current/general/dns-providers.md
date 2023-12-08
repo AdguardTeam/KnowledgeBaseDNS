@@ -15,7 +15,7 @@ Hızlı bağlantılar: [AdGuard Reklam Engelleyici indir](https://agrd.io/downlo
 
 ## **Herkese açık anycast çözümleyicileri**
 
-These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
+Bunlar, DNS sorgularınızı en yakın veri merkezine yönlendirmek için herhangi bir yayın yönlendirmesini kullanan, küresel olarak dağıtılmış, büyük ölçekli DNS çözümleyicilerdir.
 
 ### AdGuard DNS
 
@@ -76,7 +76,7 @@ Bu sunucuların her biri güvenli ve güvenilir bir bağlantı sağlar, ancak "S
 
 ### BebasID tarafından BebasDNS
 
-[BebasDNS](https://github.com/bebasid/bebasid), Endonezya merkezli ücretsiz ve bağımsız bir herkese açık çözümleyicidir. We have no-logs policy and support DNSSEC along with OpenNIC TLD. Düz DNS için hem 53 hem de 1753 numaralı bağlantı noktasını destekliyoruz.
+[BebasDNS](https://github.com/bebasid/bebasid), Endonezya merkezli ücretsiz ve bağımsız bir herkese açık çözümleyicidir. Günlük tutmama politikamız var ve OpenNIC üst seviye alan adları ile birlikte DNSSEC'i destekliyoruz. Düz DNS için hem 53 hem de 1753 numaralı bağlantı noktasını destekliyoruz.
 
 #### Default
 
@@ -155,7 +155,7 @@ Cihazınızı kötü amaçlı yazılımlardan koruyan özel filtrelemeye sahip D
 | DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.220`  | [AdGuard'a ekle](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMjIwILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                             |
 | DNSCrypt, IPv6 | Sağlayıcı: `2.dnscrypt-cert.opendns.com` IP: `[2620:0:ccc::2]` | [AdGuard'a ekle](sdns://AQAAAAAAAAAAD1syNjIwOjA6Y2NjOjoyXSC3NRFAIG8iXT4r2CLX_WkeocM8yNZmjQy-BL-rykP7eRsyLmRuc2NyeXB0LWNlcnQub3BlbmRucy5jb20)                                                                            |
 | DNS-over-HTTPS | `https://doh.opendns.com/dns-query`                            | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.opendns.com/dns-query&name=doh.opendns.com) |
-| DNS-over-TLS   | `tls://dns.opendns.com`                                        | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.opendns.com&name=dns.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.opendns.com&name=dns.opendns.com)                         |
+| DNS-over-TLS   | `tls://dns.opendns.com`                                        | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.opendns.com&name=dns.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.opendns.com&name=dns.opendns.com)                         |
 
 #### FamilyShield
 
@@ -166,22 +166,22 @@ Yetişkinlere uygun içerik engelleme sağlayan OpenDNS sunucuları.
 | DNS, IPv4      | `208.67.222.123` ve `208.67.220.123`                          | [AdGuard'a ekle](adguard:add_dns_server?address=208.67.222.123&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=208.67.222.123&name=)                                                                                                                         |
 | DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.opendns.com` IP: `208.67.220.123` | [AdGuard'a ekle](sdns://AQAAAAAAAAAADjIwOC42Ny4yMjAuMTIzILc1EUAgbyJdPivYItf9aR6hwzzI1maNDL4Ev6vKQ_t5GzIuZG5zY3J5cHQtY2VydC5vcGVuZG5zLmNvbQ)                                                                                                                                 |
 | DNS-over-HTTPS | `https://doh.familyshield.opendns.com/dns-query`              | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.familyshield.opendns.com/dns-query&name=doh.familyshield.opendns.com) |
-| DNS-over-TLS   | `tls://familyshield.opendns.com`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://familyshield.opendns.com&name=familyshield.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://familyshield.opendns.com&name=familyshield.opendns.com)                                         |
+| DNS-over-TLS   | `tls://familyshield.opendns.com`                              | [AdGuard'a ekle](adguard:add_dns_server?address=tls://familyshield.opendns.com&name=familyshield.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://familyshield.opendns.com&name=familyshield.opendns.com)                                         |
 
 #### Sandbox
 
-Non-filtering OpenDNS servers.
+Filtreleme yapmayan OpenDNS sunucuları.
 
 | Protokol       | Adres                                       |                                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.2` and `208.67.220.2`           | [Add to AdGuard](adguard:add_dns_server?address=208.67.220.2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=208.67.222.2&name=)                                                                                                         |
-| DNS, IPv6      | `2620:0:ccc::2` IP: `2620:0:ccd::2`         | [Add to AdGuard](adguard:add_dns_server?address=2620:0:ccc::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:0:ccc::2&name=)                                                                                                       |
-| DNS-over-HTTPS | `https://doh.sandbox.opendns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com) |
-| DNS-over-TLS   | `tls://sandbox.opendns.com`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://sandbox.opendns.com&name=sandbox.opendns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://sandbox.opendns.com/dns-query&name=sandbox.opendns.com)                               |
+| DNS, IPv4      | `208.67.222.2` ve `208.67.220.2`            | [AdGuard'a ekle](adguard:add_dns_server?address=208.67.220.2&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=208.67.222.2&name=)                                                                                                         |
+| DNS, IPv6      | `2620:0:ccc::2` IP: `2620:0:ccd::2`         | [AdGuard'a ekle](adguard:add_dns_server?address=2620:0:ccc::2&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2620:0:ccc::2&name=)                                                                                                       |
+| DNS-over-HTTPS | `https://doh.sandbox.opendns.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com) |
+| DNS-over-TLS   | `tls://sandbox.opendns.com`                 | [AdGuard'a ekle](adguard:add_dns_server?address=tls://sandbox.opendns.com&name=sandbox.opendns.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://sandbox.opendns.com/dns-query&name=sandbox.opendns.com)                               |
 
 :::BİLGİ
 
-OpenDNS's servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
+OpenDNS sunucuları, NODATA'lı olanlar da dahil olmak üzere belirli yanıtlardan AUTHORITY bölümlerini kaldırır, bu da bu tür yanıtların önbelleğe alınmasını imkansız hâle getirir.
 
 :::
 
@@ -345,7 +345,7 @@ Kimlik avı, spam ve kötü amaçlı alan adlarını engeller.
 
 #### Minimum günlük tutma/sınırlamaları olan DNS sunucuları
 
-These servers use some logging, self-signed certs or no support for strict mode.
+Bu sunucular bazı günlük kaydı, kendinden imzalı sertifikalar kullanır veya katı mod desteği yoktur.
 
 | Protokol     | Adres                                                                                                                   |                                                                                                                                                                                                                                                 |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1028,7 +1028,7 @@ Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü
 | DNS-over-TLS   | `uncensored.dns.dnswarden.com`         | [AdGuard'a ekle](adguard:add_dns_server?address=huncensored.dns.dnswarden.com&name=uncensored.dns.dnswarden.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=huncensored.dns.dnswarden.com&uncensored.dns.dnswarden.com)         |
 | DNS-over-HTTPS | `https://dns.dnswarden.com/uncensored` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.dnswarden.com/uncensored&name=https://dns.dnswarden.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.dnswarden.com/uncensored&https://dns.dnswarden.com) |
 
-You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content.
+Ayrıca reklamları engellemek veya yetişkinlere yönelik içeriği filtrelemek için [özel DNS sunucusunu yapılandırabilirsiniz](https://dnswarden.com/customfilter.html).
 
 ### FFMUC DNS
 
@@ -1076,7 +1076,7 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 #### OSZX DNS
 
-This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCrypt v2 support.
+Bu hizmet, D-o-H, D-o-T ve DNSCrypt v2 desteği ile küçük bir reklam engelleme DNS hobi projesidir.
 
 | Protokol       | Adres                                                                     |                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1102,7 +1102,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/), 140 binden fazla reklam, reklam izleme, kötü amaçlı yazılım ve kimlik avı alan adlarını engeller. No logging, no ECS, DNSSEC validation, free!
+[Privacy-First DNS](https://tiarap.org/), 140 binden fazla reklam, reklam izleme, kötü amaçlı yazılım ve kimlik avı alan adlarını engeller. Günlük tutmama, ECS yok, DNSSEC doğrulaması var, ücretsiz!
 
 #### Singapore DNS Server
 
@@ -1131,7 +1131,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. No Logging, DNSSEC validation.
+[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük Tutmama, DNSSEC doğrulaması.
 
 #### DNS Server 1
 

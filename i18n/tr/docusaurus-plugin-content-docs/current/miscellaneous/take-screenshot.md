@@ -26,7 +26,7 @@ Ancak, daha önce de belirtildiği gibi, prosedür belirli bir cihaza bağlı ol
 - ***Ana Sayfa* ve *Güç* düğmelerini aynı anda 1–2 saniye basılı tutun;**
 - ***Geri* ve *Giriş* düğmelerine aynı anda basın ve basılı tutun**
 
-On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
+Android 8 ve sonraki sürümlerde, açık bir elin kenarını ekranın sol/sağ kenarı boyunca dikey olarak yerleştirerek ve elin kenarıyla ekrana dokunurken elin diğer ekran kenarına kaydırılmasıyla da ekran görüntüsü alınabilir.
 
 Bu yöntem işe yaramazsa, *Ayarlar* → *Gelişmiş* özellikleri kontrol ederek *Avuç içi kaydırarak yakalama* özelliğini etkinleştirin.
 

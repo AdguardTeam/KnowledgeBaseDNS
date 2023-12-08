@@ -15,17 +15,17 @@ Make a POST request for the following URL with the given params to generate the 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parametre         | Açıklama                                                         |
-|:----------------- |:---------------------------------------------------------------- |
-| **kullanıcı adı** | Hesap e-postası                                                  |
-| **parola**        | Hesap parolası                                                   |
-| mfa_token         | Two-Factor authentication token (if enabled in account settings) |
+| Parametre         | Açıklama                                                                       |
+|:----------------- |:------------------------------------------------------------------------------ |
+| **kullanıcı adı** | Hesap e-postası                                                                |
+| **parola**        | Hesap parolası                                                                 |
+| mfa_token         | İki Faktörlü kimlik doğrulama belirteci (hesap ayarlarında etkinleştirilmişse) |
 
-In the response, you will get both `access_token` and `refresh_token`.
+Yanıt olarak hem `access_token` hem de `refresh_token` alırsınız.
 
-- The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- `access_token` süresi belirli bir saniye sonra dolar (yanıttaki `expires_in` parametresiyle temsil edilir). `refresh_token` kullanarak yeni bir `access_token` oluşturabilirsiniz (Bakınız: `Yenileme Belirtecinden Erişim Belirteci Oluşturma`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token` kalıcıdır. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
 
 #### Örnek istek
 
@@ -48,17 +48,17 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### Yenileme Belirtecinden Erişim Belirteci Oluşturma
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Erişim belirteçlerinin geçerliliği sınırlıdır. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parametre         | Açıklama                                                            |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Parametre         | Açıklama                                                                 |
+|:----------------- |:------------------------------------------------------------------------ |
+| **refresh_token** | `REFRESH TOKEN` kullanılarak yeni bir erişim belirteci oluşturulmalıdır. |
 
 #### Örnek istek
 
@@ -98,10 +98,10 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### API'ye erişim
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim belirtecini geçirilerek API çağrıları yapılabilir.
 
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
+- Başlık adı `Authorization` olmalıdır
+- Başlık değeri `Bearer {access_token}` olmalıdır
 
 ## API
 

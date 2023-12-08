@@ -5,11 +5,11 @@ sidebar_position: 1
 
 ## Wat is AdGuard DNS?
 
-AdGuard DNS is een gratis, op privacy gerichte DNS-resolver die een veilige verbinding biedt en ook volgers, advertenties, phishing en inhoud voor volwassenen kan blokkeren (optioneel). AdGuard DNS vereist geen installatie van applicaties. It is easy to use and can be effortlessly set up on any device (smartphones, desktops, routers, game consoles, etc.).
+AdGuard DNS is een gratis, op privacy gerichte DNS-resolver die een veilige verbinding biedt en ook volgers, advertenties, phishing en inhoud voor volwassenen kan blokkeren (optioneel). AdGuard DNS vereist geen installatie van applicaties. Het is makkelijk te gebruiken en kan moeiteloos op elk apparaat worden geïnstalleerd (smartphones, desktops, routers, gameconsoles, enz.).
 
-## Public AdGuard DNS servers
+## Openbare AdGuard DNS-servers
 
-AdGuard DNS has three different types of public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+AdGuard DNS heeft drie verschillende soorten publieke servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
 
 ## AdGuard DNS protocols
 

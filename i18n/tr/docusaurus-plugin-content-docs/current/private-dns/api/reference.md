@@ -413,15 +413,15 @@ Filtre listelerini alır
 
 ##### Özet
 
-Generates Access and Refresh token
+Erişim ve Yenileme belirteci oluşturur
 
 ##### Yanıtlar
 
-| Kod | Açıklama                                                 |
-| --- | -------------------------------------------------------- |
-| 200 | Access token issued                                      |
-| 400 | Gerekli parametreler eksik                               |
-| 401 | Invalid credentials, MFA token or refresh token provided |
+| Kod | Açıklama                                                                  |
+| --- | ------------------------------------------------------------------------- |
+| 200 | Access token issued                                                       |
+| 400 | Gerekli parametreler eksik                                                |
+| 401 | Geçersiz kimlik bilgileri, MFA belirteci veya yenileme belirteci sağlandı |
 
 boş
 
@@ -476,9 +476,9 @@ Revokes a Refresh Token
 
 ##### Parametreler
 
-| Adı           | Konumlandığı yer | Açıklama      | Gerekli | Şema   |
-| ------------- | ---------------- | ------------- | ------- | ------ |
-| refresh_token | sorgu            | Refresh Token | Evet    | string |
+| Adı           | Konumlandığı yer | Açıklama           | Gerekli | Şema   |
+| ------------- | ---------------- | ------------------ | ------- | ------ |
+| refresh_token | sorgu            | Yenileme Belirteci | Evet    | string |
 
 ##### Yanıtlar
 
