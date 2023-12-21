@@ -155,7 +155,7 @@ Here you can set the way AdGuard DNS must respond to blocked domains:
 - REFUSED — the server has refused to process the request
 - Custom IP — you can manually specify an IP address
 
-Additionally, you can adjust the Time-to-Live (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
+Additionally, you can adjust the *Time to live* (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
 
 In the Advanced section, there are three options that can be customized:
 
