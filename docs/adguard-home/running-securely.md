@@ -9,17 +9,25 @@ This page contains a list of additional recommendations to help ensure the secur
 
 The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and practical option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
 
-(Note that the UI currently only allows you to select one interface, but you can actually select multiple addresses through the configuration file. We will be improving the UI in future releases.)
+::: note
+
+The UI currently only allows you to select one interface, but you can actually select multiple addresses through the configuration file. We will be improving the UI in future releases.
+
+:::
 
 If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually named `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
 
-If you plan to run AdGuard Home on a **router within a small isolated network,** select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software the router itself to use AdGuard Home too.
+If you plan to run AdGuard Home on a **router within a small isolated network,** select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
 
-If you intend to run AdGuard Home on a **publicly accessible server,** you'll probably want to select the *All interfaces* option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
+If you intend to run AdGuard Home on a **publicly accessible server,** you’ll probably want to select the *All interfaces* option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
 
 ## Access settings
 
-(If your AdGuard Home is not accessible from the outside, you can skip this section.)
+::: note
+
+If your AdGuard Home is not accessible from the outside, you can skip this section.
+
+:::
 
 At the bottom of the *Settings → DNS settings* page you will find the *Access settings* section. These settings allow you to either ban clients that are known to abuse your AdGuard Home instance or to enable the Allowlist mode. The Allowlist mode is recommended for public instances where the number of clients is known and all of the clients are able to use secure DNS.
 
@@ -29,9 +37,13 @@ To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP address
 
 ## Disabling plain DNS
 
-(If your AdGuard Home is not accessible from the outside, you can skip this section.)
+::: note
 
-If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it unavailable from the outside is a good idea.
+If your AdGuard Home is not accessible from the outside, you can skip this section.
+
+:::
+
+If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it unavailable from the outside.
 
 If you want to completely disable plain DNS serving, you can do so on the *Settings → Encryption settings* page.
 
@@ -39,15 +51,19 @@ If you want to restrict plain DNS to internal use only, stop your AdGuard Home, 
 
 ## Plain-DNS ratelimiting
 
-(If your AdGuard Home is not accessible from the outside, you can skip this section.)
+::: note
+
+If your AdGuard Home is not accessible from the outside, you can skip this section.
+
+:::
 
 The default plain-DNS ratelimit of 20 should generally be sufficient, but if you have a list of known clients, you can add them to the allowlist and set a stricter ratelimit for other clients.
 
 ## OS service concerns
 
-In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed has proper ownership and privileges set.
+In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed to has proper ownership and privileges set.
 
-We thank Go Compile for assistance in this section.
+We thank Go Compile for assistance in writing this section.
 
 ### Unix (FreeBSD, Linux, macOS, OpenBSD)
 
