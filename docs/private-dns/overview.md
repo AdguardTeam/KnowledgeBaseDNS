@@ -168,7 +168,7 @@ In the Advanced section, there are three options that can be customized:
 Here you can manage an access to your DNS server by configuring the following settings:
 
 - Allowed clients. Define which clients are permitted to use your DNS server
-- Disallowed clients. List clients that are barred from using your DNS server
+- Disallowed clients. List clients that are denied to use your DNS server
 - Disallowed domains. Enter domain names to wich you want to block access to your DNS server. Wildcards and DNS filtering rules can be also listed here
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
