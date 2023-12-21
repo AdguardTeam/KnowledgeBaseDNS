@@ -157,7 +157,7 @@ Here you can set the way AdGuard DNS must respond to blocked domains:
 
 Additionally, you can adjust the Time-to-Live (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
 
-In the Advanced section, you will find three options to further tailor your experience:
+In the Advanced section, there are three options that can be customized:
 
 - Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore their DNS settings. Activating this option ensures AdGuard DNS can effectively protect your device.
 - Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
