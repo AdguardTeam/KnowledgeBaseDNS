@@ -159,7 +159,7 @@ Additionally, you can adjust the Time-to-Live (TTL) setting. This parameter defi
 
 In the Advanced section, there are three options that can be customized:
 
-- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore their DNS settings. Activating this option ensures AdGuard DNS can effectively protect your device.
+- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore DNS settings. Enabling this option ensures that AdGuard DNS can effectively protect your device.
 - Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
 - Log IP addresses. By enabling this option, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
 
