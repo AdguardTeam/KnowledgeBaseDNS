@@ -167,7 +167,7 @@ In the Advanced section, there are three options that can be customized:
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
-- Allowed clients. Define which clients are permitted to use your DNS server
+- Allowed clients. Specify which clients are permitted to use your DNS server
 - Disallowed clients. List clients that are denied to use your DNS server
 - Disallowed domains. Enter domain names to wich you want to block access to your DNS server. Wildcards and DNS filtering rules can be also listed here
 
