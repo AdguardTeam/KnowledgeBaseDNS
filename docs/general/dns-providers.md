@@ -130,6 +130,19 @@ This is the family variant of BebasDNS. This variant blocks pornography, gamblin
 | DNS-over-QUIC  | `quic://quic-sehat.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ) |
 
+### Quick-GroovyDNS by MangOleh
+
+[Quick-Groovy](https://github.com/MangOleh22/Quick-Groovy) Free DNS for public resolvers under singapore, We have a no logging policy. provided by Quick-Groovy
+
+#### Default
+
+This is the default variant of Quick-Groovy. This variant blocks ads, malware, and phishing links.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `20.24.39.106` | [Add to AdGuard](adguard:add_dns_server?address=20.24.39.106&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=20.24.39.106&name=) |
+| DNS-over-HTTPS | `https://dns.quick-groovy.my.id/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.quick-groovy.my.id/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quick-groovy.my.id/dns-query&name=) |
+
 ### CFIEC Public DNS
 
 IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It supports DNS64 to provide domain name resolution only for IPv6 users.
