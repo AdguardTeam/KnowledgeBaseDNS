@@ -140,6 +140,19 @@ IPv6-based anycast DNS service with strong security capabilities and protection 
 | DNS-over-HTTPS | `https://dns.cfiec.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.cfiec.net/dns-query&name=dns.cfiec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cfiec.net/dns-query&name=dns.cfiec.net) |
 | DNS-over-TLS | `tls://dns.cfiec.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://tls://dns.cfiec.net&name=tls://dns.cfiec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://tls://dns.cfiec.net&name=tls://dns.cfiec.net) |
 
+### Quick-GroovyDNS by MangOleh
+
+[Quick-Groovy](https://github.com/MangOleh22/Quick-Groovy) Free DNS for public resolvers under singapore, We have a no logging policy. provided by Quick-Groovy
+
+#### Default
+
+This is the default variant of Quick-Groovy. This variant blocks ads, malware, and phishing links.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `20.24.39.106` | [Add to AdGuard](adguard:add_dns_server?address=20.24.39.106&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=20.24.39.106&name=) |
+| DNS-over-HTTPS | `https://dns.quick-groovy.my.id/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.quick-groovy.my.id/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quick-groovy.my.id/dns-query&name=) |
+
 ### Cisco OpenDNS
 
 [Cisco OpenDNS](https://www.opendns.com/) is a service which extends the DNS by incorporating features such as content filtering and phishing protection with a zero downtime.
