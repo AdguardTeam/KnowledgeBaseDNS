@@ -36,7 +36,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax]. 
 
 If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler] and we use it ourselves to create [AdGuard DNS filter].
 
-## Basic Examples {#basic-examples}
+## Basic examples {#basic-examples}
 
 - `||example.org^`: block access to the `example.org` domain and all its subdomains, like `www.example.org`.
 
@@ -59,7 +59,7 @@ If you're maintaining either a `/etc/hosts`-style blocklist or multiple filterin
 
 - `/REGEX/`: block access to the domains matching the specified regular expression.
 
-## Adblock-Style Syntax {#adblock-style-syntax}
+## Adblock-style syntax {#adblock-style-syntax}
 
 This is a subset of the [traditional Adblock-style syntax] which is used by browser ad blockers.
 
@@ -74,7 +74,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `modifiers`: parameters that clarify the rule. They may limit the scope of the rule or even completely change the way it works.
 
-### Special Characters {#special-characters}
+### Special characters {#special-characters}
 
 - `*`: the wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
 
@@ -84,7 +84,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `|`: a pointer to the beginning or the end of the hostname. The value depends on the character placement in the mask. For example, the rule `ample.org|` corresponds to `example.org` but not to `example.org.com`. `|example` corresponds to `example.org` but not to `test.example`.
 
-### Regular Expressions {#regular-expressions}
+### Regular expressions {#regular-expressions}
 
 If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
 
@@ -109,7 +109,7 @@ Any line that starts with an exclamation mark or a hash sign is a comment and it
 # This is also a comment.
 ```
 
-### Rule Modifiers {#rule-modifiers}
+### Rule modifiers {#rule-modifiers}
 
 You can change the behavior of a rule by adding modifiers. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
 
@@ -450,7 +450,7 @@ The list of allowed tags:
     - `user_regular`: regular users.
     - `user_child`: children.
 
-## `/etc/hosts`-Style Syntax {#etc-hosts-syntax}
+## `/etc/hosts`-style syntax {#etc-hosts-syntax}
 
 For each host a single line should be present with the following information:
 
@@ -473,7 +473,7 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 
 In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
 
-## Domains-Only Syntax {#domains-only-syntax}
+## Domains-only syntax {#domains-only-syntax}
 
 A simple list of domain names, one name per line.
 
@@ -489,7 +489,7 @@ example.net # this is also a comment
 If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will
 consider it to be an [Adblock-style syntax] rule.
 
-## Hostlists Compiler
+## Hostlists compiler {#hostlists-compiler}
 
 If you are maintaining a blocklist and use different sources in it, [Hostlist compiler] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
