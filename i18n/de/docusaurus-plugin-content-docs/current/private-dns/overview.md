@@ -29,7 +29,7 @@ At one time, the AdGuard product line included only [public AdGuard DNS](../publ
 
 Here is a simple comparison of features available in public and private AdGuard DNS.
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                            |
+| Public AdGuard DNS               | Privater AdGuard DNS                                                                           |
 | -------------------------------- | ---------------------------------------------------------------------------------------------- |
 | DNS traffic encryption           | DNS traffic encryption                                                                         |
 | Pre-determined domain blocklists | Customizable domain blocklists                                                                 |
@@ -134,14 +134,41 @@ Even if you're aware of all the tricks online scammers use, there's always a cha
 
 The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
+### Parental control
+
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+
+![Parental control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+
 ### User rules
 
 For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### Parental control
+## Advanced
 
-To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+Here you can set the way AdGuard DNS must respond to blocked domains:
 
-![Private AdGuard DNS dashboard Parental Control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+- Default — zero IP address
+- NXDOMAIN — the domain does not exist
+- REFUSED — the server has refused to process the request
+- Custom IP — you can manually specify an IP address
+
+Additionally, you can adjust the *Time to live* (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
+
+In the Advanced section, there are three options that can be customized:
+
+- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore DNS settings. Enabling this option ensures that AdGuard DNS can effectively protect your device.
+- Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
+- Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
+
+### Access settings
+
+Here you can manage an access to your DNS server by configuring the following settings:
+
+- Allowed clients. Specify which clients are permitted to use your DNS server
+- Disallowed clients. List clients that are denied to use your DNS server
+- Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
+
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.

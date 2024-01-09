@@ -17,17 +17,17 @@ Hızlı bağlantı: [AdGuard DNS'i dene](https://agrd.io/download-dns)
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+Özel AdGuard DNS, trafik şifreleme ve alan adı engel listeleri de dahil olmak üzere genel bir AdGuard DNS sunucusunun tüm avantajlarını sunar. Ayrıca esnek özelleştirme, DNS istatistikleri ve Ebeveyn denetimi gibi ek özellikler de sunar. Tüm bu seçeneklere kullanıcı dostu bir gösterge pano aracılığıyla kolayca erişilebilir ve yönetilebilir.
 
-### Why you need private AdGuard DNS
+### Özel AdGuard DNS'e neden ihtiyacınız var
 
 Bugün internete her şeyi bağlayabilirsiniz: TV'ler, buzdolapları, akıllı ampuller veya hoparlörler. Ancak inkar edilemez kolaylıkların yanı sıra izleyiciler ve reklamlar elde edersiniz. Basit bir tarayıcı tabanlı reklam engelleyici bu durumda sizi korumayacaktır, ancak trafiği filtrelemek, içeriği ve izleyicileri engellemek için ayarlayabileceğiniz AdGuard DNS, sistem genelinde bir etkiye sahiptir.
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar - tümü basit, kullanımı kolay bir pano aracılığıyla.
+Bir zamanlar, AdGuard ürün grubu yalnızca [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) içeriyordu. Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar - tümü basit, kullanımı kolay bir pano aracılığıyla.
 
-### The difference between public and private AdGuard DNS
+### Özel ve genel AdGuard DNS arasındaki fark
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaştırmasını bulabilirsiniz.
 
 | Genel AdGuard DNS                            | Özel AdGuard DNS                                                                                      |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -38,12 +38,12 @@ Here is a simple comparison of features available in public and private AdGuard 
 | -                                            | Ayrıntılı sorgu günlüğü                                                                               |
 | -                                            | Ebeveyn denetimi                                                                                      |
 
-## How to set up private AdGuard DNS
+## Özel AdGuard DNS nasıl kurulur
 
-### For devices that support DoH, DoT, and DoQ
+### DoH, DoT ve DoQ'yu destekleyen cihazlar için
 
 1. [AdGuard DNS panonuza](https://agrd.io/download-dns) gidin (giriş yapmadıysanız AdGuard hesabınızı kullanarak giriş yapın)
-1. Click *Connect device* and follow on-screen instructions
+1. *Cihazı bağla* öğesine tıklayın ve ekrandaki talimatları takip edin
 
 :::note Desteklenen platformlar:
 
@@ -60,27 +60,27 @@ Here is a simple comparison of features available in public and private AdGuard 
 
 AdGuard DNS paneline eklediğiniz her cihazın, modern şifreli DNS protokollerini (DoH, DoT ve DoQ) desteklemesi durumunda kullanılabilecek kendi benzersiz adresi vardır.
 
-### For devices that do not support DoH, DoT, and DoQ
+### DoH, DoT ve DoQ'yu desteklemeyen cihazlar için
 
-If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
+Cihaz şifrelenmiş DNS'i desteklemiyorsa ve düz DNS kullanmanız gerekiyorsa, AdGuard DNS'nin cihazı tanımasına izin vermenin iki yolu daha vardır — özel IP adresleri kullanın veya cihazın IP adresini bağlayın.
 
 :::not
 
-Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
+Yalnızca başka seçeneğiniz yoksa düz DNS adreslerini kullanın: bu, DNS isteklerinin güvenliğini azaltır. Düz DNS kullanmaya karar verirseniz, özel IP adresleri seçmenizi öneririz.
 
 :::
 
-#### Dedicated IP addresses
+#### Özel IP adresleri
 
-For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+AdGuard DNS'e bağladığınız her cihaz için, cihaz ayarlarınıza girebileceğiniz iki özel IPv6 adresi sunulacaktır. Her iki IPv6 adresini kullanmak zorunlu değildir, ancak genellikle cihazlar sizden iki IPv6 adresi girmenizi isteyebilir.
 
-When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+Bunlara bağlandığınızda, AdGuard DNS hangi cihazın DNS istekleri gönderdiğini belirleyebilecek ve bunun için istatistikleri görüntüleyebilecektir. Ve DNS kurallarını özellikle bu cihaz için yapılandırabileceksiniz.
 
-Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
+Ne yazık ki, tüm servis sağlayıcılar IPv6 desteği sunmaz ve tüm cihazlar IPv6 adreslerini yapılandırmanıza izin vermez. Eğer durumunuz buysa, Bağlı IP yöntemine güvenmeniz gerekebilir.
 
 #### Bağlı IP
 
-If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
+Cihazınızı Bağlı IP üzerinden AdGuard DNS'e bağlarsanız, hizmet bu IP adresinden gelen tüm düz DNS isteklerini bu "cihaza" doğru sayar. Bu bağlantı yöntemiyle, cihazın IP'si her değiştiğinde, yani her yeniden başlatmanın ardından elle veya özel bir program aracılığıyla yeniden bağlanmanız gerekir.
 
 IP bağlamak için tek gereksinim **konut IP adresi olmasıdır**.
 
@@ -118,30 +118,57 @@ Bu, her bir istekle ilgili bilgileri kontrol edebileceğiniz ve ayrıca istekler
 
 ![Özel AdGuard DNS panosu sorgu günlüğü](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-## Server settings
+## Sunucu ayarları
 
-This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
+Bu bölümde, özel AdGuard DNS'nin çalışmasını özelleştirmenize olanak tanıyan ve internetin tam istediğiniz gibi çalışmasını sağlayan bir dizi ayar bulunur.
 
 ### Engel listeleri yönetimi
 
-The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
+*Engel listeleri* özelliği, hangi alan adlarını engellemek istediğinizi ve hangilerini istemediğinizi belirtmenize olanak tanır. Farklı amaçlara yönelik çeşitli engel listeleri arasından seçim yapın.
 
 ![Özel AdGuard DNS panosu engel listeleri](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Security settings
+### Güvenlik ayarları
 
-Even if you're aware of all the tricks online scammers use, there's always a chance you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
+Çevrimiçi dolandırıcıların kullandığı tüm yöntemlerin farkında olsanız bile, yanlışlıkla kötü amaçlı bir bağlantıya tıklama ihtimaliniz her zaman vardır. Kendinizi bu tür durumlardan korumak için *Güvenlik ayarları* öğesine gidin ve burada listelenen seçeneklerin yanındaki kutuları işaretleyin.
 
-The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
-
-### Kullanıcı kuralları
-
-For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). Listeleri dışa aktarabilirsiniz.
-
-![Özel AdGuard DNS panosu kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+*Kötü amaçlı, kimlik avı ve dolandırıcılık alan adlarını engelle* özelliği, özel veri tabanında bulunan alan adlarını engeller. Ve *Yeni kaydedilen alan adlarını engelle* 30 günden daha kısa bir süre önce kaydedilen ve genellikle çevrimiçi gizliliğiniz açısından riskli olduğu düşünülen tüm alan adlarını eneller.
 
 ### Ebeveyn denetimi
 
 Çocuğunuzu uygunsuz bulduğunuz çevrimiçi içerikten korumak için *Ebeveyn denetimi* seçeneğini ayarlayın ve etkinleştirin. "Yetişkinlere yönelik içerik" engelleme ve güvenli arama gibi seçeneklere ek olarak, engelleme için etki alanlarını manuel olarak belirleme ve *Ebeveyn kontrolü*'nün buna göre çalışması için bir zamanlama ayarlama olanağı ekledik.
 
-![Özel AdGuard DNS panosu Ebeveyn Denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Ebeveyn denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+
+### Kullanıcı kuralları
+
+Binlerce kurala sahip önceden yüklenmiş engel listelerinin yeterli olmadığı durumlar için *Kullanıcı kuralları* adı verilen kullanışlı bir özelliğimiz var. Burada belirli bir alan adını engellemek/engelini kaldırmak için elle özel kurallar ekleyebilir veya özel kural listelerini içe aktarabilirsiniz (bkz. [DNS filtreleme kuralları söz dizimi](../general/dns-filtering-syntax.md)). Listeleri dışa aktarabilirsiniz.
+
+![Özel AdGuard DNS panosu kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+
+## Gelişmiş
+
+Burada AdGuard DNS'nin engellenen alan adlarına yanıt verme şeklini ayarlayabilirsiniz:
+
+- Varsayılan - sıfır IP adresi
+- NXDOMAIN — alan adı mevcut değil
+- REFUSED — sunucu isteği işlemeyi reddetti
+- Özel IP — elle bir IP adresi belirtebilirsiniz
+
+Ayrıca, *kullanım süresi* (TTL) ayarını yapabilirsiniz. Bu parametre, bir istemci aygıtın bir DNS isteğine verilen yanıtı önbelleğe aldığı süreyi (saniye cinsinden) tanımlar. Daha yüksek bir kullanım süresi, daha önce engellenmiş bir alan adının engeli kaldırılsa bile bir süre daha engellenmiş olarak görünebileceği anlamına gelir. Kullanım süresi değerinin 0 olması cihazın yanıtları önbelleğe almadığını gösterir.
+
+Gelişmiş bölümünde, özelleştirilebilecek üç seçenek vardır:
+
+- iCloud Private Relay'e erişimi engelle. iCloud Özel Geçişi kullanan aygıtlar DNS ayarlarını yok sayabilir. Bu seçeneğin etkinleştirilmesi, AdGuard DNS'nin cihazınızı etkili bir şekilde koruyabilmesini sağlar.
+- Firefox canary alan adını engelle. Bu ayar, AdGuard DNS sistem genelinde DNS hizmeti olarak ayarlandığında Firefox'un otomatik olarak DoH çözümleyicisine geçmesini engeller.
+- IP adreslerini günlüğe kaydet. Bu seçenek etkinleştirilirse, gelen DNS istekleriyle ilişkili IP adresleri kaydedilecek ve Sorgu günlüğünde görüntülenecektir.
+
+### Erişim ayarları
+
+Burada aşağıdaki ayarları yapılandırarak DNS sunucunuza erişimi yönetebilirsiniz:
+
+- İzin verilen istemciler. Hangi istemcilerin DNS sunucunuzu kullanmasına izin verildiğini belirtin
+- İzin verilmeyen istemciler. DNS sunucunuzu kullanması reddedilen istemcileri listeleyin
+- İzin verilmeyen alan adları. DNS sunucunuza erişimi reddedilecek alan adlarını belirtin. Joker karakterler ve DNS filtreleme kuralları da burada listelenebilir
+
+Bu seçenekleri ayarlayarak DNS sunucunuzu kimlerin kullandığını kontrol edebilir ve olası DDoS saldırılarını önleyebilirsiniz. İzin verilmeyen istekler Sorgu günlüğünüzde görünmez ve ücretsizdir.

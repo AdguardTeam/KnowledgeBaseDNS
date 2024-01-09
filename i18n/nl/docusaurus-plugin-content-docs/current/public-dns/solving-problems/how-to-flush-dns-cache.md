@@ -28,37 +28,37 @@ De DNS-cache bevat zogenaamde [resource records (RR's)](https://en.wikipedia.org
 
 **Je heeft jouw DNS-provider gewijzigd naar AdGuard DNS.** Als de gebruiker zijn DNS heeft gewijzigd, kan het vanwege de cache enige tijd duren voordat het resultaat zichtbaar is.
 
-**Je krijgt regelmatig een 404-foutmelding.** De website is bijvoorbeeld overgezet naar een andere server en het IP-adres is veranderd. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
+**Je krijgt regelmatig een 404-foutmelding.** De website is bijvoorbeeld overgezet naar een andere server en het IP-adres is veranderd. Om ervoor te zorgen dat de browser de website opent vanaf het nieuwe IP-adres, moet je het in de cache opgeslagen IP-adres uit de DNS-cache verwijderen.
 
-**You want to improve your privacy.**
+**Je wilt je privacy verbeteren.**
 
-## How to flush DNS cache on different OSs
+## Hoe DNS-cache op verschillende besturingssystemen leeg te maken
 
 ### iOS
 
-There are different ways to clear the DNS cache on your iPad or iPhone.
+Er zijn verschillende manieren om de DNS-cache op je iPad of iPhone te wissen.
 
-The simplest way is to activate the Airplane mode (for example, in the Control Center or in the Settings app) and to deactivate it again. The DNS cache will be flushed.
+De eenvoudigste manier is om de Vliegtuigmodus te activeren (bijvoorbeeld in het Controlecentrum of in de app-instellingen) en deze weer te deactiveren. De DNS-cache wordt geleegd.
 
-Another option is to reset the network settings of your device in the Settings app. Open *General*, scroll down, find *Reset* and tap *Reset Network Settings*.
+Een andere optie is om de netwerkinstellingen van jouw apparaat opnieuw in te stellen in de app Instellingen. Open *Algemeen*, scrol omlaag, zoek *Herstellen* en tik op *Netwerkinstellingen herstellen*.
 
-:::note
+:::opmerking
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Door dat te doen, verlies je verbindingen met Wi-Fi-routers en andere specifieke netwerkinstellingen, inclusief aanpassingen van DNS-servers. Je moet ze handmatig opnieuw instellen.
 
 :::
 
 ### Android
 
-The easiest way to clear your DNS cache on your Android device is to turn the Airplane mode on and off. You can enable/disable the Airplane Mode in the Quick Settings pane.
+De eenvoudigste manier om je DNS-cache op jouw Android-apparaat te wissen, is door de vliegtuigmodus in en uit te schakelen. Je kunt de vliegtuigmodus in- of uitschakelen in het deelvenster Snelle instellingen.
 
-A hard reboot can also help flush the DNS cache for your device. In order to do that, press and hold the power button for at least 20 seconds. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
+Een harde herstart kan ook helpen de DNS-cache voor jouw apparaat leeg te maken. Om dat te doen, houd je de aan/uit-knop minimaal 20 seconden ingedrukt. It will (usually) force your device to reboot manually and the DNS cache will be cleared.
 
-Another option is to reset the network settings of your device in the Settings app. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
+Een andere optie is om de netwerkinstellingen van jouw apparaat opnieuw in te stellen in de app Instellingen. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
 
-:::note
+:::opmerking
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Door dat te doen, verlies je verbindingen met Wi-Fi-routers en andere specifieke netwerkinstellingen, inclusief aanpassingen van DNS-servers. Je moet ze handmatig opnieuw instellen.
 
 :::
 

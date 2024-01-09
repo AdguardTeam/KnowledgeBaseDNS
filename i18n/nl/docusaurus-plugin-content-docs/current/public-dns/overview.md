@@ -9,20 +9,20 @@ AdGuard DNS is een gratis, op privacy gerichte DNS-resolver die een veilige verb
 
 ## Openbare AdGuard DNS-servers
 
-AdGuard DNS heeft drie verschillende soorten publieke servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+AdGuard DNS heeft drie verschillende soorten publieke servers. De "standaard" server is bedoeld voor het blokkeren van advertenties, volgers, malware en phishing-websites. "Gezinsbescherming" doet hetzelfde, maar blokkeert ook websites met inhoud voor volwassenen en dwingt de optie "Veilig zoeken" af in browsers die deze bieden. "Niet-filteren" zorgt voor een veilige en betrouwbare verbinding, maar blokkeert niets. Gedetailleerde instructies voor het instellen van AdGuard DNS op elk apparaat vind je op [onze website](https://adguard-dns.io/public-dns.html). Elke server ondersteunt verschillende veilige protocollen: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) en DNS-over-QUIC (DoQ).
 
-## AdGuard DNS protocols
+## AdGuard DNS-protocollen
 
-Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
+Naast gewone DNS (zowel IPv4 als IPv6) ondersteunt AdGuard DNS verschillende gecodeerde protocollen, zodat je degene kunt kiezen die het beste bij jou past.
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration. But compared to the DoH, DoT and DoQ protocols, DNSCrypt is considered obsolete and if possible we recommend using these protocols.
+Met AdGuard DNS kun je een specifiek gecodeerd protocol gebruiken: DNSCrypt. Hierdoor worden alle DNS-verzoeken versleuteld, wat je beschermt tegen mogelijke onderschepping van verzoeken en vervolgens afluisteren en/of wijzigen. Maar in vergelijking met de DoH-, DoT- en DoQ-protocollen wordt DNSCrypt als verouderd beschouwd en indien mogelijk raden we aan om deze protocollen te gebruiken.
 
-### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
+### DNS-over-HTTPS (DoH) en DNS-over-TLS (DoT)
 
-DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
+DoH en DoT zijn moderne, veilige DNS-protocollen die steeds populairder worden en in de nabije toekomst de industriestandaarden zullen worden. Beide zijn betrouwbaarder dan DNSCrypt en beide worden ondersteund door AdGuard DNS.
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+[DNS-over-QUIC is een nieuw DNS-encryptieprotocol](https://adguard.com/blog/dns-over-quic.html) en AdGuard DNS is de eerste publieke oplossing die dit ondersteunt. In tegenstelling tot DoH en DoT gebruikt het QUIC als transportprotocol en brengt het DNS eindelijk terug naar zijn roots: het werkt via UDP. Het biedt alle goede dingen die QUIC te bieden heeft: kant-en-klare encryptie, kortere verbindingstijden, betere prestaties wanneer datapakketten verloren gaan. Bovendien wordt QUIC verondersteld een protocol op transportniveau te zijn en zijn er geen risico's op lekken van metagegevens die bij DoH zouden kunnen optreden.

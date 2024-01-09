@@ -695,7 +695,7 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 | -------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
 | DNS-over-TLS   | `tls://dns.comss.one`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:784&name=dns.comss.one:784), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:784&name=dns.comss.one:784)       |
+| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)         |
 
 #### East DNS Server (Sibirien og Fjernøsten)
 
@@ -703,7 +703,7 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 | -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
 | DNS-over-TLS   | `tls://dns.east.comss.one`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:784&name=dns.east.comss.one:784), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:784&name=dns.east.comss.one:784)       |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)         |
 
 ### CZ.NIC ODVR
 
