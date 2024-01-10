@@ -489,7 +489,7 @@ example.net # this is also a comment
 If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will
 consider it to be an [Adblock-style syntax] rule.
 
-## Hostlists compiler {#hostlists-compiler}
+## Hostlist compiler {#hostlist-compiler}
 
 If you are maintaining a blocklist and use different sources in it, [Hostlist compiler] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
