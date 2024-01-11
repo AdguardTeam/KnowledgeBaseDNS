@@ -640,7 +640,7 @@ These servers block adult websites and inappropriate contents.
 
 [OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
 
-#### OSZX Server
+#### OSZX DNS
 
 These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
