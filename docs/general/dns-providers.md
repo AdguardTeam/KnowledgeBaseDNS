@@ -653,7 +653,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | DNS-over-HTTPS | `https://dns.oszx.co/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.oszx.co/dns-query&name=dns.oszx.co), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.oszx.co/dns-query&name=dns.oszx.co) |
 | DNS-over-TLS | `tls://dns.oszx.co` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.oszx.co&name=dns.oszx.co), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.oszx.co&name=dns.oszx.co) |
 
-#### PumpleX Server
+#### PumpleX server
 
 These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
