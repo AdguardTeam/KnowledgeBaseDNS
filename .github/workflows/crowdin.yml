@@ -31,6 +31,9 @@ jobs:
           commit-message: automatically update translations
           title: Update translations
           body: Transactions are synced from Crowdin
+          reviewers: |
+            el-termikael
+            vbagirov
           branch: update-translations
           base: master
           delete-branch: true
