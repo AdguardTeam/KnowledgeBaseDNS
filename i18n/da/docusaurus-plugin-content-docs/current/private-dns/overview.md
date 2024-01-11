@@ -17,17 +17,17 @@ Hurtigt link: [Prøv AdGuard DNS](https://agrd.io/download-dns)
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube-videoafspiller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+Privat AdGuard DNS tilbyder alle fordelene ved en offentlig AdGuard DNS-server, herunder trafikkryptering og domænesortlister. Den tilbyder også yderligere funktioner såsom fleksibel tilpasning, DNS-statistik og Forældrekontrol. Alle disse muligheder er let tilgængelige og håndteres via et brugervenligt kontrolpanel.
 
-### Why you need private AdGuard DNS
+### Hvorfor man behøver Private AdGuard DNS
 
 I dag kan alt tilsluttes internet: TV, køleskabe, køleskabe, smarte pærer eller højttalere. Men sammen med de ubestridelige bekvemmeligheder kommer trackere og annoncer. En simpel browserbaseret adblocker yder ikke beskyttelse i dette tilfælde, hvorimod AdGuard DNS — som kan opsættes til at filtrere trafik, blokere indhold og trackere — fungerer på systemniveau.
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. Det er hér, at Private AdGuard DNS kommer ind i billedet. Den har det bedste fra begge verdener: Den tilbyder tilpasningsmuligheder, styring og information — alt sammen via et enkelt, brugervenligt kontrolpanel.
+På et tidspunkt omfattede AdGuard-produktlinjen kun [Public AdGuard DNS](../public-dns/overview.md) og [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. Det er hér, at Private AdGuard DNS kommer ind i billedet. Den har det bedste fra begge verdener: Den tilbyder tilpasningsmuligheder, styring og information — alt sammen via et enkelt, brugervenligt kontrolpanel.
 
-### The difference between public and private AdGuard DNS
+### Forskellene mellem Public og Private AdGuard DNS
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+Her er en simpel funktionssammenligning mellem Public og Private AdGuard DNS.
 
 | Offentlig AdGuard DNS          | Privat AdGuard DNS                                                               |
 | ------------------------------ | -------------------------------------------------------------------------------- |
@@ -38,12 +38,12 @@ Here is a simple comparison of features available in public and private AdGuard 
 | -                              | Detaljeret forespørgselslog                                                      |
 | -                              | Forældrekontrol                                                                  |
 
-## How to set up private AdGuard DNS
+## Sådan opsættes Private AdGuard DNS
 
-### For devices that support DoH, DoT, and DoQ
+### Til enheder, som understøtter DoH, DoT og DoQ
 
 1. Gå til [AdGuard DNS-betjeningspanelet](https://agrd.io/download-dns) (hvis ikke indlogget, log ind via din AdGuard-konto)
-1. Click *Connect device* and follow on-screen instructions
+1. Klik på *Tilslut enhed*, og følg skærmvejledningen
 
 :::note Understøttede platforme:
 
@@ -60,27 +60,27 @@ Here is a simple comparison of features available in public and private AdGuard 
 
 Hver enhed, der tilføjes i AdGuard DNS-panelet, har sin egen unikke adresse, der kan bruges, hvis enheden understøtter moderne, krypterede DNS-protokoller (DoH, DoT og DoQ).
 
-### For devices that do not support DoH, DoT, and DoQ
+### Til enheder, som ikke understøtter DoH, DoT og DoQ
 
-If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
+Understøtter enheden ikke krypteret DNS, og alm. DNS derfor må bruges, findes to anden måde, med hvilke AdGuard DNS kan genkende enheden — benyt dedikerede IP-adresser eller link dens IP-adresse.
 
 :::note
 
-Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
+Brug kun alm. DNS-adresser, hvis der ikke har andre muligheder, da dette reducerer sikkerheden for DNS-forespørgsler. Vil man at bruge alm. DNS, anbefaler vi valg af dedikerede IP-adresser.
 
 :::
 
-#### Dedicated IP addresses
+#### Dedikerede IP-adresser
 
-For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+For hver enhed, der forbindes til AdGuard DNS, tilbydes to dedikerede IPv6-adresser, som kan angives i enhedsindstillingerne. Brug af begge IPv6-adresser er ikke obligatorisk, men ofte vil enheder anmode om to IPv6-adresser.
 
-When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+Når der oprettes forbindelse til dem, vil AdGuard DNS kunne fastslå, hvilken bestemt enhed, der sender DNS-forespørgsler og vise statistik for den. Man vil ligeledes kunne opsætte DNS-regler specifikt for denne enhed.
 
-Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
+Ikke alle tjenesteudbydere tilbyder dog IPv6-understøttelse, og ikke alle enheder tillader opsætning af IPv6-adresser. I så tilfælde må man muligvis nøjes med den linkede IP-metode.
 
 #### Linket IP
 
-If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
+Forbinder man sin enhed til AdGuard DNS via Linket IP, vil tjenesten tælle alle alm. DNS-forespørgsler, som kommer fra denne IP-adresse til den "enhed". Med denne forbindelsesmetode skal forbindelsen genoprettes manuelt eller via et særligt program, hver gang enhedens IP ændres, hvilket f.eks. sker efter hver genstart.
 
 Eneste krav for at linke en IP, er, at **det skal være en privat/hjemme IP-adresse**.
 
@@ -118,30 +118,57 @@ Dette er en detaljeret log, hvori man kan tjekke oplysningerne om hver enkelt fo
 
 ![Private AdGuard DNS-kontrolpanel, forespørgselslog](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-## Server settings
+## Serverindstillinger
 
-This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
+Dette afsnit indeholder en række indstillinger, som giver mulighed for at tilpasse driften af Private AdGuard DNS, hvilket sikrer, at internet fungerer præcist som ønsket.
 
 ### Håndtering af sortlister
 
-The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
+Funktionen *Sortlister* giver mulighed for at angive, hvilke domæner, man vil blokere, og hvilke man ikke vil. Vælg mellem et bredt udvalg af sortlister til forskellige formål.
 
 ![Private AdGuard DNS-kontrolpanel, sortlister](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Security settings
+### Sikkerhedsindstillinger
 
-Even if you're aware of all the tricks online scammers use, there's always a chance you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
+Selvom man er opmærksom på alle onlinesvindlernes tricks, er der altid en risiko for, at man utilsigtet får klikket på et ondsindet link. For at beskytte mod sådanne uheld, gå til afsnittet *Sikkerhedsindstillinger* og markér afkrydsningsfelterne ud for de her anførte valgmuligheder.
 
-The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
-
-### Brugerregler
-
-For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). Listerne kan eksporteres.
-
-![Private AdGuard DNS-kontrolpanel, brugerregler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+Funktionen *Blokér ondsindede, phishing- og svindeldomæner* blokerer domæner, som findes i den dedikerede database. *Blokér nyregistrerede domæner* blokerer alle domæner, som er registreret for mindre end 30 dage siden, og som ofte anses for risikable for onlinefortroligheden.
 
 ### Forældrekontrol
 
 For at beskytte sit barn mod onlineindhold, man finder upassende, opsæt og aktivér funktionen *Forældrekontrol*. Ud over muligheder såsom blokering af "voksenindhold" og sikker søgning, har vi tilføjet muligheden for manuelt at angive domæner til blokering samt opsætte en tidsplan for, hvornår *Forældrekontrol* skal være aktiv.
 
-![Private AdGuard DNS-kontrolpanel, Forælderkontrol](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Forældrekontrol](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+
+### Brugerregler
+
+I tilfælde hvor forudinstallerede sortlister med tusindvis af regler ikke er nok, har vi en praktisk funktion kaldet *Brugerregler*. Her kan der manuelt tilføjes tilpassede regler for at blokere/afblokere et bestemt domæne eller importere tilpassede regellister (tjek [syntaks for DNS-filtreringsregler](../general/dns-filtering-syntax.md) ud). Listerne kan eksporteres.
+
+![Private AdGuard DNS-kontrolpanel, brugerregler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+
+## Avanceret
+
+Her kan vælges, hvordan AdGuard skal reagere på blokerede DNS:
+
+- Standard — nul IP-adresse
+- NXDOMAIN — domænet findes ikke
+- REFUSED — serveren nægtede at behandle forespørgslen
+- Tilpasset IP — der kan manuelt angives en IP-adresse
+
+Derudover kan indstillingen *Time to live* (TTL) justeres. Denne parameter definerer den tidsperiode (i sekunder), i hvilken en klientenhed gemmer svaret på en DNS-forespørgsel. En højere TTL betyder, at selvom et tidligere blokeret domæne er afblokeret, kan det stadig se blokeret ud i et stykke tid. En TTL på 0 angiver, at enheden ikke cachelagrer svar.
+
+I afsnittet Avanceret findes tre muligheder, som kan tilpasses:
+
+- Blokér adgang til iCloud Private Relay. Enheder, som bruger iCloud Private Relay, ignorerer muligvis DNS-indstillinger. Aktivering af denne mulighed sikrer, at AdGuard DNS effektivt kan beskytte enheden.
+- Blokér Firefox canary-domæne. Denne indstilling forhindrer Firefox i automatisk at skifte til sin DoH-opløser, når AdGuard DNS er sat som overordnet system DNS-tjeneste.
+- Log IP-adresser. Er denne indstilling aktiveret, vil IP-adresser knyttet til indgående DNS-forespørgsler blive registreret og vist i Forespørgselslog.
+
+### Adgangsindstillinger
+
+Her kan adgangsmulighed til DNS-serveren håndteres via opsætning af flg. indstillinger:
+
+- Tilladte klienter. Angiv klienter med tilladelse til at bruge DNS-serveren
+- Ikke-tilladte klienter. Angiv klienter, som nægtes brug af DNS-serveren
+- Ikke-tilladte domæner. Angiv domænenavne, som nægtes adgang til DNS-serveren. Jokertegn og DNS-filtreringsregler kan også angives her
+
+Ved at opsætte disse muligheder kan man styre, hvem som bruger DNS-serveren og forhindre potentielle DDoS-angreb. Ikke-tilladte forespørgsler vises ikke i Forespørgselslog, og de er gratis.

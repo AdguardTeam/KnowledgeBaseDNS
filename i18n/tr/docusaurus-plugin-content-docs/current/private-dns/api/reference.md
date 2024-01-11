@@ -419,7 +419,7 @@ Erişim ve Yenileme belirteci oluşturur
 
 | Kod | Açıklama                                                                  |
 | --- | ------------------------------------------------------------------------- |
-| 200 | Access token issued                                                       |
+| 200 | Erişim belirteci verildi                                                  |
 | 400 | Gerekli parametreler eksik                                                |
 | 401 | Geçersiz kimlik bilgileri, MFA belirteci veya yenileme belirteci sağlandı |
 

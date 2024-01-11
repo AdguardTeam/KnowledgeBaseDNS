@@ -314,7 +314,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 Örneklerle birlikte şu anda desteklenen RR türleri:
 
-- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.`, ters DNS için bir `PTR` kaydı ekler. Reverse DNS requests for `1.2.3.4` to the DNS server will result in `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.`, ters DNS için bir `PTR` kaydı ekler. DNS sunucusuna `1.2.3.4` için yapılan ters DNS istekleri `example.net` alan adı olarak sonuçlanır.
 
   **NOT:** IP ters sırada OLMALIDIR. Bkz. [RFC 1035][rfc1035].
 

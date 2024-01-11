@@ -695,7 +695,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
 | DNS-over-TLS   | `tls://dns.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:784`        | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.comss.one:784&name=dns.comss.one:784), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.comss.one:784&name=dns.comss.one:784)       |
+| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
 
 #### East DNS Server (Sibirya ve Uzak Doğu)
 
@@ -703,7 +703,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
 | DNS-over-TLS   | `tls://dns.east.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.east.comss.one:784&name=dns.east.comss.one:784), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:784&name=dns.east.comss.one:784)       |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
 
 ### CZ.NIC ODVR
 
@@ -999,7 +999,7 @@ Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization 
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server), AdGuard Home altyapısı kullanılarak Trondheim, Norveç'te barındırılan kişisel bir DNS hizmetidir.
 
-Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Logging is used to improve its used filterlists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
+Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Günlük kaydı, kullanılan filtre listelerini iyileştirmek (örneğin, engellenmemesi gereken sitelerin engelini kaldırarak) ve sunucu sistemi güncellemeleri için en az kötü zamanları belirlemek için kullanılır.
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
