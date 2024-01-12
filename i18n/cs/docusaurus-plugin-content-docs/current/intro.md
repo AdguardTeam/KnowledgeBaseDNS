@@ -28,13 +28,13 @@ Použití DNS pro blokování obsahu má některé výhody i zjevné nedostatky.
 
 ## Co je AdGuard DNS?
 
-AdGuard DNS je jednou z nejvíce, na soukromí orientovaných služeb DNS na trhu. Podporuje spolehlivé šifrovací protokoly jako DNS-over-HTTPS, DNS-over-TLS a DNS-over-QUIC. Může pracovat jako obvyklý DNS řešitel v režimu bez filtrování, ale také může zajistit blokování obsahu na úrovni DNS: identifikovat požadavky na reklamní, sledovací a/nebo domény pro dospělé (volitelně) a odpovědět prázdnou odpovědí. AdGuard má vlastní databázi názvů domén, které zobrazují reklamy, slídiče a podvody, a pravidelně ji aktualizuje.
+AdGuard DNS je jednou z nejvíce, na soukromí orientovaných služeb DNS na trhu. Podporuje spolehlivé šifrovací protokoly jako DNS-over-HTTPS, DNS-over-TLS a DNS-over-QUIC. Může pracovat jako obvyklý DNS řešitel v režimu bez filtrování, ale také může zajistit blokování obsahu na úrovni DNS: identifikovat požadavky na reklamní, sledovací a/nebo domény pro dospělé (volitelně) a odpovědět prázdnou odpovědí. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
 
 ![Přibližné schéma fungování AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
 Přibližně 75 % datového provozu AdGuard DNS je šifrováno. Tím se vlastně DNS servery blokující obsah liší od ostatních. Pokud se podíváte na statistiky CloudFlare nebo Quad9, zjistíte, že šifrované DNS tvoří jen malý podíl všech dotazů.
 
-AdGuard DNS existuje ve dvou hlavních formách: [veřejný AdGuard DNS](public-dns/overview) a [soukromý AdGuard DNS](private-dns/overview). Obě tyto služby nevyžadují instalaci žádné aplikace. Snadno se nastavují a používají a poskytují uživatelům minimum funkcí potřebných k blokování reklam, slídičů, škodlivých webových stránek a obsahu pro dospělé (pokud je vyžadováno). Neexistují žádná omezení, s jakými zařízeními je lze používat.
+AdGuard DNS existuje ve dvou hlavních formách: [veřejný AdGuard DNS](public-dns/overview) a [soukromý AdGuard DNS](private-dns/overview). None of these services require the installation of apps. Snadno se nastavují a používají a poskytují uživatelům minimum funkcí potřebných k blokování reklam, slídičů, škodlivých webových stránek a obsahu pro dospělé (pokud je vyžadováno). Neexistují žádná omezení, s jakými zařízeními je lze používat.
 
 Navzdory mnoha podobnostem jsou soukromý AdGuard DNS a veřejný AdGuard DNS dvě různé služby. Hlavní rozdíl spočívá v tom, že soukromý AdGuard DNS si můžete přizpůsobit, zatímco veřejný AdGuard DNS nikoli.
 

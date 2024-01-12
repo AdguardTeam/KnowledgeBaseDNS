@@ -312,8 +312,8 @@ Kimlik avı, spam ve kötü amaçlı alan adlarını engeller.
 | -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [AdGuard'a ekle](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)                                                                            |
 | DNSCrypt, IPv6 | Sağlayıcı: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [AdGuard'a ekle](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0)                                                               |
-| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                          | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
-| DNS-over-TLS   | `tls://dns.decloudus.com`                                                      | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                          | [Add to AdGuard](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
+| DNS-over-TLS   | `tls://dns.decloudus.com`                                                      | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
 
 ### DNS Privacy
 
@@ -482,7 +482,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 | Protokol  | Adres                                  |                                                                                                                                                       |
 | --------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.4` ve `156.154.71.4`       | [AdGuard'a ekle](adguard:add_dns_server?address=156.154.70.4&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
+| DNS, IPv4 | `156.154.70.4` and `156.154.71.4`      | [AdGuard'a ekle](adguard:add_dns_server?address=156.154.70.4&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
 | DNS, IPv6 | `2610:a1:1018::4` ve `2610:a1:1019::4` | [AdGuard'a ekle](adguard:add_dns_server?address=2610:a1:1018::4&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2610:a1:1018::4&name=) |
 
 ### NextDNS
@@ -505,7 +505,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resovers with blocking: adverticing, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
 
 #### Adaptive Filtering (ADA)
 
@@ -695,7 +695,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
 | DNS-over-TLS   | `tls://dns.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
+| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
 
 #### East DNS Server (Sibirya ve Uzak Doğu)
 
@@ -703,7 +703,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
 | DNS-over-TLS   | `tls://dns.east.comss.one`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
 
 ### CZ.NIC ODVR
 

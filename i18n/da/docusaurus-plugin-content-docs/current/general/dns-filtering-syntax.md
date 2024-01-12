@@ -13,19 +13,19 @@ Hurtige links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock
 
 :::
 
-## Introduktion
+## Introduktion {#introduction}
 
 AdGuard DNS-filtreringsregelsyntaks kan bruges til at gøre regler mere fleksible, så de kan blokere indhold iht. personlige præferencer. AdGuard DNS-filtreringsregelsyntaks kan bruges i forskellige AdGuard-produkter, såsom AdGuard Home, AdGuard DNS, AdGuard til Windows/Mac/Android.
 
 Der er tre forskellige tilgange til at skrive værtsblokeringslister:
 
-- [Adblock-syntakstype](#adblock-style-syntax): Den moderne tilgang til at skrive filtreringsregler baseret på brug af et undersæt af Adblock-regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
+- [Adblock-syntakstype][]: Den moderne tilgang til at skrive filtreringsregler baseret på brug af et undersæt af Adblock-regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
 
 - [`/etc/hosts` syntaks](#etc-hosts-syntax): Den gamle, gennemprøvede tilgang, der bruger samme værtsfilsyntakser som operativsystemerne.
 
 - [Syntaks kun til domæner](#domains-only-syntax): En simpel liste over domænenavne.
 
-Opretter man en sortliste, anbefales brug af [Adblock-syntakstypen](#adblock-style-syntax). Den har et par vigtige fordele ift. den gamle syntakstype:
+Opretter man en sortliste, anbefales brug af [Adblock-syntakstypen][]. Den har et par vigtige fordele ift. den gamle syntakstype:
 
 - **Blokeringslistestørrelse.** Ved at bruge mønstertilpasning kan man have én enkelt regel i stedet for hundredvis af `/etc/hosts`-poster.
 
@@ -33,9 +33,9 @@ Opretter man en sortliste, anbefales brug af [Adblock-syntakstypen](#adblock-sty
 
 - **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den yderligere og tilbyde flere funktioner til netværksniveau-blockere.
 
-Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af sortlister. Vi har kaldt det [Hostlist compiler][hlc] og vi bruger det selv til oprettelse af [AdGuard DNS-filtre][sdn].
+Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af sortlister. Vi kaldte den [Hostlist-kompiler][], og vi bruger den selv til at oprette [AdGuard DNS-filter][].
 
-## Basiseksempler
+## Basiseksempler {#basic-examples}
 
 - `||eksempel.org^`: blokér domæneadgang for `eksempel.org` og alle dets underdomæner, f.eks. `www.eksempel.org`.
 
@@ -58,9 +58,9 @@ Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtrerin
 
 - `/REGEX/`: Blokér adgang til domæner matchende det angivne regulære udtryk.
 
-## Adblock-syntakstype
+## Adblock-syntakstype {#adblock-style-syntax}
 
-Dette er et undersæt af den [traditionelle Adblock-syntakstype][adb] brugt af browser-adblockere.
+Dette er en undergruppe af den [traditionelle Adblock-syntakstype][] brugt af webbrowser-adblockere.
 
 ```none
      regel = ["@@"] mønster [ "$" modifikatorer ]
@@ -73,7 +73,7 @@ modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 
 - `modifikatorer`: Parametre, som tydeliggør reglen. De kan begrænse reglens udstrækning eller endda helt ændre måden, den fungerer på.
 
-### Specialtegn
+### Specialtegn {#special-characters}
 
 - `*`: jokertegnet. Det bruges til at repræsentere et hvilket som helst tegn. Dette kan også være en tom streng eller en streng af enhver længde.
 
@@ -83,9 +83,9 @@ modifikatorer = [modifikator0, modifikator1[, ...[, modifikatorN]]]
 
 - `|`: En markør for begyndelsen eller slutningen på værtsnavnet. Værdien afhænger af tegnplaceringen i masken. F.eks. svarer reglen `emple.org|` til `eksempel.org`, men ikke til `eksempel.org.com`. `|eksempe` korresponderer med `eksempel.org`, men ikke med `test.eksempel`.
 
-### Regulære udtryk
+### Regulære udtryk {#regular-expressions}
 
-Ønskes endnu mere fleksibilitet ved regeludarbejdelse, kan [regulære udtryk][regexp] bruges i stedet for standarden, den forenklede matchende syntaks. Ønskes et regulært udtryk anvendt, skal mønsteret se således ud:
+Ønskes endnu mere fleksibilitet ved regeludarbejdelse, kan [regulære udtryk][regexp] bruges i stedet for standarden, den forenklede matchningssyntaks. Ønskes et regulært udtryk anvendt, skal mønsteret se således ud:
 
 ```none
 mønster = "/" regexp "/"
@@ -97,7 +97,7 @@ mønster = "/" regexp "/"
 
 - `@@/eksempel.*/$important` afblokerer værter matchende `eksempel.*`-regexp'et. Bemærk, at denne regel også forudsætter `important`-modifikatoren.
 
-### Kommentarer
+### Kommentarer {#comments}
 
 Enhver linje startende med et udråbs- eller et hash-tegn udgør en kommentar og ignoreres derfor af filtreringsmotoren. En kommentarer beskriver, hvad en regel gør, og den placeres normalt over reglen.
 
@@ -108,7 +108,7 @@ Enhver linje startende med et udråbs- eller et hash-tegn udgør en kommentar og
 # Dette er også en kommentar.
 ```
 
-### Regelmodifikatorer
+### Regelmodifikatorer {#rule-modifiers}
 
 Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer skal placeres i slutningen af reglen efter `$`-tegnet og adskilles med kommaer.
 
@@ -125,11 +125,11 @@ Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer 
   ||eksempel.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` er [`klient`](#client)-modifikatoren med dens værdi `127.0.0.1`. Og endelig er `dnstype=A` [`dnstype`](#dnstype)-modifikatoren med sin værdi `A`.
+  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` er [`klient`][]-modifikatoren med sin værdi, `127.0.0.1`, er afgrænsningstegnet. Og til sidst er `dnstype=A` [`dnstype`][]-modifikatoren med sin værdi `A`.
 
 **BEMÆRK:** Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal hele regel **ignoreres**. På denne måde undgås falske positiver, når folk forsøger at bruge umodificerede browser-adblockingfilterlister, såsom EasyList eller EasyPrivacy.
 
-#### `client`
+#### `client` {#client-modifier}
 
 Modifikatoren `client` muliggør at angive de klienter, for hvilke reglen anvendes. Der er to hovedmåder, en klient kan identificere på:
 
@@ -167,7 +167,7 @@ Klientnavne indeholder normalt mellemrum eller andre specialtegn, hvorfor navnet
 
 - `||eksempel.org^$client=192.168.0.0/24`: Blokér `eksempel.org` for alle klienter med IP-adresser i området fra `192.168.0.0` til `192.168.0.255`.
 
-#### `denyallow`
+#### `denyallow` {#denyallow-modifier}
 
 Modifikatoren `denyallow` kan bruges til at undtage domæner fra blokeringsreglen. Benyt `|`-tegnet som separator, når flere domæner føjes til én regel.
 
@@ -202,7 +202,7 @@ Problemet med denne tilgang er, at man på denne måde også afblokerer sporings
 
 - `||eksempel.org^$denyallow=under.eksempel.org`. blokér `eksempel.org` og `*.eksempel.org`, men blokér ikke `under.eksempel.org`.
 
-#### `dnstype`
+#### `dnstype` {#dnstype-modifier}
 
 Modifikatoren `dnstype` muliggør angivelse af DNS-forespørgsel eller svartype, for hvilken reglen udløses.
 
@@ -251,7 +251,7 @@ SVAR:
     ttl = 60
 ```
 
-#### `dnsrewrite`
+#### `dnsrewrite` {#dnsrewrite-modifier}
 
 Svarmodifikatoren `dnsrewrite` muliggør at erstatte indholdet af svaret på DNS-forespørgslen for de matchende værter. Bemærk, at denne modifikator i AdGuard Home fungerer i alle regler, men kun i tilpassede regler i Private AdGuard DNS.
 
@@ -353,7 +353,7 @@ Undtagelsesregler fjerner én eller alle regler:
 
 - `@@||eksempel.com^$dnsrewrite=1.2.3.4` fjerner DNS rewrite-reglen, der tilføjer en `A`-post med værdien `1.2.3.4`.
 
-#### `important`
+#### `important` {#important-modifier}
 
 Modifikatoren `important` anvendt på en regel, øger dens prioritet over alle øvrige regler uden modifikatoren. Selv over basisundtagelsesregler.
 
@@ -377,7 +377,7 @@ Modifikatoren `important` anvendt på en regel, øger dens prioritet over alle �
 
   undtagelsesreglen har også `vigtige`-modifikator, så den vil virke.
 
-#### `badfilter`
+#### `badfilter` {#badfilter-modifier}
 
 Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke de henviser. Det betyder, at teksten i den deaktiverede regel bør matche teksten i reglen `badfilter` (uden modifikatoren `badfilter`).
 
@@ -389,7 +389,7 @@ Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke
 
   **BEMÆRK:** `badfilter`-modifikatoren fungerer ikke pt. med `/etc/hosts`-regeltyper. `127.0.0.1 eksempel.org$badfilter` deaktiverer **ikke** den oprindelige `127.0.0.1 eksempel.org`-regel.
 
-#### `ctag`
+#### `ctag` {#ctag-modifier}
 
 **Modifikatoren `ctag` kan kun bruges i AdGuard Home.**
 
@@ -447,7 +447,7 @@ Oversigt over gyldige tags:
     - `user_regular`: Almindelige brugere.
     - `user_child`: Børn.
 
-## `/etc/hosts`Syntakstype {#etc-hosts-syntax}
+## `/etc/hosts`-syntakstype {#etc-hosts-syntax}
 
 For hver vært skal én enkelt linje fremgå med flg. oplysninger:
 
@@ -470,7 +470,7 @@ Værtsnavne må kun indeholde alfanumeriske tegn, bindestreg-/minustegn (`-`) sa
 
 I AdGuard Home bruges IP-adresserne til at besvare DNS-forespørgsler for disse domæner. I Private AdGuard DNS blokeres disse adresser simpelthen.
 
-## Domæne-specifik syntaks
+## Domænespecifik syntaks {#domains-only-syntax}
 
 En simpel liste over domænenavne, ét navn pr. linje.
 
@@ -483,11 +483,11 @@ eksempel.org
 eksempel.net # dette er også en kommentar
 ```
 
-Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-lignende](#adblock-style-syntax) regel.
+Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-syntakstype](#adblock-style-syntax) regel.
 
-## Hostlists Compiler
+## Hostliste-kompiler {#hostlist-compiler}
 
-Vedligeholder man en sortliste og bruger forskellige kilder heri, kan [Hostlists compiler][hlc] være et nyttigt værktøj. Det er et simpelt værktøj, der gør det nemmere at kompilere en værtsblokeringsliste, der er kompatibel med AdGuard Home, Private AdGuard DNS eller ethvert andet AdGuard-produkt med DNS-filtrering.
+Vedligeholder man en sortliste og bruger forskellige kilder heri, kan [Hostlist- kompileren][] være et nyttigt værktøj. Det er et simpelt værktøj, der gør det nemmere at kompilere en værtsblokeringsliste, der er kompatibel med AdGuard Home, Private AdGuard DNS eller ethvert andet AdGuard-produkt med DNS-filtrering.
 
 Hvad den er i stand til:
 
@@ -497,11 +497,17 @@ Hvad den er i stand til:
 
 3. Oprense den resulterende liste: Fjerne dubletter og ugyldige regler, samt komprimere listen.
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
+<!-- local links -->
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
-[sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+<!-- external links -->
+[Adblock-syntakstype]: #adblock-style-syntax
+[Adblock-syntakstypen]: #adblock-style-syntax
+[`klient`]: #client-modifier
+[`dnstype`]: #dnstype-modifier
+[AdGuard DNS-filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist-kompiler]: https://github.com/AdguardTeam/HostlistCompiler
+[Hostlist- kompileren]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
+[traditionelle Adblock-syntakstype]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
