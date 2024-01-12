@@ -308,12 +308,12 @@ Blokuje krádež identity, spam a škodlivé domény.
 
 [DeCloudUs DNS](https://decloudus.com/) je služba DNS, která umožňuje blokovat cokoli, co si přejete. Ve výchozím nastavení chrání vás a vaši rodinu před reklamami, slídiči, malwarem, krádeží identity, škodlivými stránkami a mnoha dalšími hrozbami.
 
-| Protokol       | Adresa                                                                            |                                                                                                                                                                                                                                         |
-| -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)                                                                                |
-| DNSCrypt, IPv6 | Poskytovatel: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0)                                                                   |
-| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                             | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com),  [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
-| DNS-over-TLS   | `tls://dns.decloudus.com`                                                         | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com),  [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
+| Protokol       | Adresa                                                                            |                                                                                                                                                                                                                                 |
+| -------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)                                                                        |
+| DNSCrypt, IPv6 | Poskytovatel: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0)                                                           |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                             | [Add to AdGuard](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
+| DNS-over-TLS   | `tls://dns.decloudus.com`                                                         | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
 
 ### DNS Privacy
 
@@ -482,7 +482,7 @@ Tyto servery zajišťují blokování nežádoucího a časově náročného obs
 
 | Protokol  | Adresa                                |                                                                                                                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4 | `156.154.70.4` a  `156.154.71.4`      | [Přidat do AdGuardu](adguard:add_dns_server?address=156.154.70.4&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
+| DNS, IPv4 | `156.154.70.4` and `156.154.71.4`     | [Přidat do AdGuardu](adguard:add_dns_server?address=156.154.70.4&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
 | DNS, IPv6 | `2610:a1:1018::4` a `2610:a1:1019::4` | [Přidat do AdGuardu](adguard:add_dns_server?address=2610:a1:1018::4&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::4&name=) |
 
 ### NextDNS
@@ -505,7 +505,7 @@ Tyto servery zajišťují blokování nežádoucího a časově náročného obs
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS řeší s blokováním: reklamy, sledování, adware, malware, škodlivé aktivity a phishingové společnosti, blokuje ~1M domén. Může obsahovat 24h/48h záznamy pro zmírnění útoku DDoS/Flood.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Může obsahovat 24h/48h záznamy pro zmírnění útoku DDoS/Flood.
 
 #### Adaptivní filtrování (ADA)
 
@@ -695,7 +695,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 | -------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
 | DNS-over-TLS   | `tls://dns.comss.one`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)              |
+| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
 
 #### East DNS Server (Sibiř a Dálný východ)
 
@@ -703,7 +703,7 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 | -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
 | DNS-over-TLS   | `tls://dns.east.comss.one`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)              |
+| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
 
 ### CZ.NIC ODVR
 

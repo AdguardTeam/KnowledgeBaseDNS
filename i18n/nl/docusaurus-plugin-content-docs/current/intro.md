@@ -28,13 +28,13 @@ Het gebruik van DNS voor blokkering van inhoud heeft bepaalde voordelen, maar oo
 
 ## Wat is Adguard DNS?
 
-AdGuard DNS is een van de meest privacygerichte DNS-diensten op de markt. Het ondersteunt betrouwbare coderingsprotocollen zoals DNS-over-HTTPS, DNS-over-TLS en DNS-over-QUIC. Het kan werken als een gewone DNS-resolver in de modus Niet-filtering, maar het kan ook inhoud op DNS-niveau blokkeren: verzoeken naar advertentie-, volgers- en/of adult-domeinen identificeren (optioneel) en reageren met een leeg antwoord. AdGuard heeft een eigen database met domeinnamen die advertenties, volgers en fraude weergeven, en deze wordt regelmatig bijgewerkt.
+AdGuard DNS is een van de meest privacygerichte DNS-diensten op de markt. Het ondersteunt betrouwbare coderingsprotocollen zoals DNS-over-HTTPS, DNS-over-TLS en DNS-over-QUIC. Het kan werken als een gewone DNS-resolver in de modus Niet-filtering, maar het kan ook inhoud op DNS-niveau blokkeren: verzoeken naar advertentie-, volgers- en/of adult-domeinen identificeren (optioneel) en reageren met een leeg antwoord. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
 
 ![Een versimpeld schema over de werking van AdGuard DNS](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
 Ongeveer 75% van AdGuards DNS-verkeer is versleuteld. Dit is eigenlijk wat DNS-servers die inhoud blokkeren onderscheidt van andere. Als je de statistieken van CloudFlare of Quad9 bekijkt, zul je zien dat gecodeerde DNS slechts een klein deel van alle zoekopdrachten uitmaakt.
 
-AdGuard DNS bestaat in twee hoofdvormen: [publieke AdGuard DNS](public-dns/overview) en [private AdGuard DNS](private-dns/overview). Voor beide services hoeven geen apps te worden geïnstalleerd. Ze zijn eenvoudig in te stellen en te gebruiken en bieden gebruikers de minimale functies die nodig zijn om advertenties, volgers, kwaadaardige websites en inhoud voor volwassenen te blokkeren (indien nodig). Er zijn geen beperkingen op welke apparaten ze kunnen worden gebruikt.
+AdGuard DNS bestaat in twee hoofdvormen: [publieke AdGuard DNS](public-dns/overview) en [private AdGuard DNS](private-dns/overview). None of these services require the installation of apps. Ze zijn eenvoudig in te stellen en te gebruiken en bieden gebruikers de minimale functies die nodig zijn om advertenties, volgers, kwaadaardige websites en inhoud voor volwassenen te blokkeren (indien nodig). Er zijn geen beperkingen op welke apparaten ze kunnen worden gebruikt.
 
 Ondanks vele overeenkomsten zijn AdGuards privé DNS-service en publieke DNS-service, twee verschillende diensten. Het belangrijkste verschil is dat je privé AdGuard DNS kunt aanpassen, terwijl dat bij publieke AdGuard DNS niet kan.
 

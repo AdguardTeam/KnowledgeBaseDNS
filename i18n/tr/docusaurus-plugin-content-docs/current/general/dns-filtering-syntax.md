@@ -13,19 +13,19 @@ Hızlı bağlantılar: [AdGuard Reklam Engelleyiciyi indir](https://agrd.io/down
 
 :::
 
-## Giriş
+## Giriş {#introduction}
 
 Kuralları daha esnek hâle getirmek için AdGuard DNS filtreleme kuralları söz dizimini kullanabilirsiniz, böylece tercihlerinize göre içeriği engelleyebilirler. AdGuard DNS filtreleme kuralları söz dizimi, AdGuard Home, AdGuard DNS, Windows/Mac/Android için AdGuard gibi farklı AdGuard ürünlerinde kullanılabilir.
 
 Ana makine engel listeleri yazmak için üç farklı yaklaşım vardır:
 
-- [Reklam engelleme stili söz dizimi](#adblock-style-syntax): Reklam engelleme stili kural söz diziminin bir alt kümesini kullanmaya dayalı filtreleme kuralları yazmaya yönelik modern yaklaşım. Bu şekilde engel listeleri tarayıcı reklam engelleyicileriyle uyumludur.
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Bu şekilde engel listeleri tarayıcı reklam engelleyicileriyle uyumludur.
 
 - [`/etc/hosts` sözdizimi](#etc-hosts-syntax): işletim sistemlerinin hosts dosyaları için kullandığı söz diziminin aynısını kullanan eski, denenmiş ve doğru yaklaşım.
 
 - [Yalnızca alan adı söz dizimi](#domains-only-syntax): alan adlarının basit bir listesi.
 
-Engellenenler listesi oluşturuyorsanız, [Reklam engelleme stili söz dizimini](#adblock-style-syntax) kullanmanızı öneririz. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Eski tarz söz dizimine göre birkaç önemli avantajı vardır:
 
 - **Engel listesi boyutu.** Düzen eşleştirmeyi kullanmak, yüzlerce `/etc/hosts` girişi yerine tek bir kurala sahip olmanızı sağlar.
 
@@ -33,9 +33,9 @@ Engellenenler listesi oluşturuyorsanız, [Reklam engelleme stili söz dizimini]
 
 - **Genişletilebilirlik.** Geçtiğimiz on yılda, Reklam engelleme stili söz dizimi büyük ölçüde gelişti ve bunu daha da genişletmemek ve ağ düzeyindeki engelleyiciler için ek özellikler sunmamak için hiçbir neden göremiyoruz.
 
-`/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. Buna [Hostlist compiler][hlc] adını verdik ve [AdGuard DNS filtresi][sdn] oluşturmak için kendimiz kullanıyoruz.
+`/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
-## Temel Örnekler
+## Basic examples {#basic-examples}
 
 - `||example.org^`: `example.org` alan adına ve `www.example.org` gibi tüm alt alan adlarına erişimi engeller.
 
@@ -58,9 +58,9 @@ Engellenenler listesi oluşturuyorsanız, [Reklam engelleme stili söz dizimini]
 
 - `/REGEX/`: belirtilen normal ifadeyle eşleşen alan adlarına erişimi engelleyin.
 
-## Reklam Engelleme Stili Söz Dizimi
+## Adblock-style syntax {#adblock-style-syntax}
 
-Bu, tarayıcı reklam engelleyicileri tarafından kullanılan [geleneksel Reklam engelleme stili][adb] söz diziminin bir alt kümesidir.
+This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
 
 ```none
      kural = ["@@"] pattern [ "$" modifiers ]
@@ -73,7 +73,7 @@ değiştiriciler = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `değiştiriciler`: kuralı netleştiren parametreler. Kuralın kapsamını sınırlayabilir veya hatta çalışma şeklini tamamen değiştirebilirler.
 
-### Özel Karakterler
+### Özel karakterler {#special-characters}
 
 - `*`: joker karakter. Herhangi bir karakter kümesini temsil etmek için kullanılır. Bu ayrıca boş bir dize veya herhangi bir uzunlukta bir dize olabilir.
 
@@ -83,9 +83,9 @@ değiştiriciler = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `|`: ana makine adının başına veya sonuna bir işaretçi. Değer, maskedeki karakter yerleşimine bağlıdır. Örneğin, `ample.org|` kuralı `example.org` alan adına karşılık gelir ancak `example.org.com` alan adına karşılık gelmez. `|example`, `example.org` alan adına karşılık gelir ancak `test.example` alan adına karşılık gelmez.
 
-### Düzenli İfadeler
+### Düzenli ifadeler {#regular-expressions}
 
-Kural oluşturmada daha fazla esneklik istiyorsanız, varsayılan basitleştirilmiş eşleme sözdizimi yerine [normal ifade][regexp] kullanabilirsiniz. Düzenli bir ifade kullanmak istiyorsanız, kalıp aşağıdaki gibi görünmelidir:
+If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. Düzenli bir ifade kullanmak istiyorsanız, kalıp aşağıdaki gibi görünmelidir:
 
 ```none
 pattern = "/" regexp "/"
@@ -97,7 +97,7 @@ pattern = "/" regexp "/"
 
 - `@@/example.*/$important`, `example.*` regexp'iyle eşleşen ana makinelerin engelini kaldırır. Bu kuralın aynı zamanda `önemli` değiştiricisi anlamına geldiğini unutmayın.
 
-### Yorumlar
+### Yorumlar {#comments}
 
 Ünlem işareti veya hash işareti ile başlayan her satır bir yorumdur ve filtreleme motoru tarafından göz ardı edilir. Yorumlar genellikle kuralların üzerine yerleştirilir ve bir kuralın ne yaptığını açıklamak için kullanılır.
 
@@ -108,7 +108,7 @@ pattern = "/" regexp "/"
 # Bu da bir yorumdur.
 ```
 
-### Kural Değiştiriciler
+### Kural değiştiriciler {#rule-modifiers}
 
 Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. Değiştiriciler, kuralın sonunda `$` karakterinden sonra yerleştirilmeli ve virgülle ayrılmalıdır.
 
@@ -125,11 +125,11 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1`, [`client`](#client) değiştiricisidir ve değeri, `127.0.0.1`, sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`](#dnstype) değiştiricisidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
 **NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 
-#### `i̇stemci`
+#### `i̇stemci` {#client-modifier}
 
 `client` değiştiricisi, bu kuralın uygulanacağı istemcilerin belirtilmesine izin verir. Bir istemciyi tanımlamanın iki ana yolu vardır:
 
@@ -167,7 +167,7 @@ $client=~value1
 
 - `||example.org^$client=192.168.0.0/24`: block `example.org` for all clients with IP addresses in the range from `192.168.0.0` to `192.168.0.255`.
 
-#### `denyallow`
+#### `denyallow` {#denyallow-modifier}
 
 Alan adlarını engelleme kuralından hariç tutmak için `denyallow` değiştiricisini kullanabilirsiniz. Bir kurala birden fazla alan adı eklemek için ayırıcı olarak `|` karakterini kullanın.
 
@@ -202,7 +202,7 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 - `||example.org^$denyallow=sub.example.org`. `example.org` ve `*.example.org` alan adlarını engelleyin ancak `sub.example.org` alan adını engellemeyin.
 
-#### `dnstype`
+#### `dnstype` {#dnstype-modifier}
 
 `dnstype` değiştiricisi, bu kuralın tetikleneceği DNS isteğinin veya yanıt türünün belirtilmesine izin verir.
 
@@ -251,7 +251,7 @@ ANSWERS:
     ttl = 60
 ```
 
-#### `dnsrewrite`
+#### `dnsrewrite` {#dnsrewrite-modifier}
 
 `dnsrewrite` yanıt değiştiricisi, eşleşen ana bilgisayarlar için DNS isteğine verilen yanıtın içeriğinin değiştirilmesine olanak tanır. AdGuard Home'daki bu değiştiricinin tüm kurallarda çalıştığını, ancak Özel AdGuard DNS'de ise yalnızca özel kurallarda çalıştığını unutmayın.
 
@@ -316,7 +316,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.`, ters DNS için bir `PTR` kaydı ekler. DNS sunucusuna `1.2.3.4` için yapılan ters DNS istekleri `example.net` alan adı olarak sonuçlanır.
 
-  **NOT:** IP ters sırada OLMALIDIR. Bkz. [RFC 1035][rfc1035].
+  **NOT:** IP ters sırada OLMALIDIR. See [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekler.
 
@@ -353,7 +353,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `@@||example.com^$dnsrewrite=1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekleyen DNS yeniden yazma kuralını kaldırır.
 
-#### `önemli`
+#### `important` {#important-modifier}
 
 Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Hatta temel istisna kuralları üzerinden bile.
 
@@ -377,7 +377,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
 
   istisna kuralı da `önemli` değiştiricisine sahiptir, bu nedenle çalışır.
 
-#### `badfilter`
+#### `badfilter` {#badfilter-modifier}
 
 `badfilter` değiştiricisine sahip kurallar, atıfta bulundukları diğer temel kuralları devre dışı bırakır. Bu, devre dışı bırakılan kuralın metninin `badfilter` kuralının metniyle eşleşmesi gerektiği anlamına gelir ( `badfilter` değiştiricisi olmadan).
 
@@ -389,7 +389,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
 
   **NOT:** `badfilter` değiştiricisi şu anda `/etc/hosts` tarzı kurallarla çalışmıyor. `127.0.0.1 example.org$badfilter` orijinal `127.0.0.1 example.org` kuralını devre dışı **bırakmaz**.
 
-#### `ctag`
+#### `ctag` {#ctag-modifier}
 
 **`ctag` değiştiricisi yalnızca AdGuard Home'da kullanılabilir.**
 
@@ -447,7 +447,7 @@ $ctag=~value1|~value2|...
     - `user_regular`: normal kullanıcılar.
     - `user_child`: çocuklar.
 
-## `/etc/hosts` Tarzı Söz Dizimi {#etc-hosts-syntax}
+## `/etc/hosts`-style syntax {#etc-hosts-syntax}
 
 Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdır:
 
@@ -470,7 +470,7 @@ Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-
 
 AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
 
-## Yalnızca Alan Adları Söz Dizimi
+## Domains-only syntax {#domains-only-syntax}
 
 Her satırda bir ad olacak şekilde basit bir alan adları listesi.
 
@@ -483,11 +483,11 @@ example.org
 example.net # bu da bir yorumdur
 ```
 
-Bir dize geçerli bir alan adı değilse (örn. `*.example.org`), AdGuard Home bunu bir [Reklam engelleme stili](#adblock-style-syntax) kuralı olarak değerlendirir.
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
-## Hostlists Compiler
+## Hostlist compiler {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlists compiler][hlc] may be useful to you. AdGuard Home, Özel AdGuard DNS veya DNS filtreli diğer herhangi bir AdGuard ürünü ile uyumlu bir ana makine engel listesi derlemeyi kolaylaştıran basit bir araçtır.
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. AdGuard Home, Özel AdGuard DNS veya DNS filtreli diğer herhangi bir AdGuard ürünü ile uyumlu bir ana makine engel listesi derlemeyi kolaylaştıran basit bir araçtır.
 
 Neler yapabiliyor:
 
@@ -497,11 +497,15 @@ Neler yapabiliyor:
 
 3. Ortaya çıkan listeyi temizleyin: kopyalarını çıkarın, geçersiz kuralları kaldırın ve listeyi sıkıştırın.
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
+<!-- local links -->
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
-[sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+<!-- external links -->
+[Adblock-style syntax]: #adblock-style-syntax
+[`client`]: #client-modifier
+[`dnstype`]: #dnstype-modifier
+[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
+[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

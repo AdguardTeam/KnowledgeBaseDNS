@@ -13,19 +13,19 @@ Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock),
 
 :::
 
-## Introducción
+## Introduction {#introduction}
 
 Puedes usar la sintaxis de las reglas de filtrado DNS de AdGuard para hacer que las reglas sean más flexibles, de esa manera pueden bloquear contenidos según tus preferencias. La sintaxis de las reglas de filtrado DNS de AdGuard puede ser usada en diferentes productos de AdGuard como AdGuard Home, AdGuard DNS y AdGuard para Windows/Mac/Android.
 
 Hay tres diferentes enfoques para escribir listas de bloqueo de hosts:
 
-- [Sintaxis estilo Adblock](#adblock-style-syntax): el enfoque más moderno para escribir reglas de filtrado, basado en el uso de un subconjunto de reglas al estilo de las usadas por AdBlock. De esta manera, las listas de bloqueo creadas son compatibles con las de los bloqueadores de anuncios para navegador.
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. De esta manera, las listas de bloqueo creadas son compatibles con las de los bloqueadores de anuncios para navegador.
 
 - [`/etc/hosts` Sintaxis](#etc-hosts-syntax): el enfoque antiguo y probado, que usa la misma sintaxis que los sistemas operativos usan para sus archivos de hosts.
 
 - [Sintaxis de dominios](#domains-only-syntax): una simple lista de nombres de dominio.
 
-Si estás creando una lista de bloqueo de hosts, te recomendamos que utilices la [sintaxis al estilo-Adblock](#adblock-style-syntax). Esta sintaxis posee algunas ventajas importantes respecto a la sintaxis antigua:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Esta sintaxis posee algunas ventajas importantes respecto a la sintaxis antigua:
 
 - **Tamaño de las listas de bloqueo.** El uso de comparación de patrones le permite tener una sola regla en lugar de cientos de entradas `/etc/hosts`.
 
@@ -33,9 +33,9 @@ Si estás creando una lista de bloqueo de hosts, te recomendamos que utilices la
 
 - **Extensibilidad.** Durante la última década, la sintaxis de estilo Adblock ha evolucionado enormemente, y no vemos por qué no extenderla aún más y proporcionar funciones adicionales para los bloqueadores de toda la red.
 
-Si estás manteniendo una lista de bloqueo de estilo `/etc/hosts`, o múltiples listas de filtrado (independientemente del tipo), proporcionamos una herramienta para la compilación de listas de bloqueo. Lo llamamos [ Compilador Hostlist][hlc] y lo usamos nosotros mismos para crear [ los filtros de AdGuard DNS][sdn].
+Si estás manteniendo una lista de bloqueo de estilo `/etc/hosts`, o múltiples listas de filtrado (independientemente del tipo), proporcionamos una herramienta para la compilación de listas de bloqueo. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
-## Ejemplos básicos
+## Basic examples {#basic-examples}
 
 - `||example.org^`: bloquea el acceso al dominio `example.org` y todos sus subdominios, como `www.example.org`.
 
@@ -58,9 +58,9 @@ Si estás manteniendo una lista de bloqueo de estilo `/etc/hosts`, o múltiples 
 
 - `/REGEX/`: bloquea el acceso a los dominios que coincidan con la expresión regular especificada.
 
-## Sintaxis de estilo Adblock
+## Adblock-style syntax {#adblock-style-syntax}
 
-Este es un subconjunto de la [sintaxis tradicional de estilo Adblock][adb] que utilizan los bloqueadores de anuncios para navegador.
+This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -73,7 +73,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `modifiers` (modificadores): parámetros que aclaran la regla. Pueden limitar el alcance de la norma o incluso cambiar por completo su funcionamiento.
 
-### Carácteres especiales
+### Special characters {#special-characters}
 
 - `*`: el carácter comodín. Se utiliza para representar cualquier conjunto de caracteres. Esto también puede ser una cadena de texto vacía o una cadena de texto de cualquier longitud.
 
@@ -83,9 +83,9 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `|`: un puntero al principio o al final del nombre de host. El valor depende de la ubicación del carácter. Por ejemplo, la regla `ample.org|` corresponde a `example.org` pero no a `example.org.com`. `|example` corresponde a `example.org` pero no a `test.example`.
 
-### Expresiones regulares
+### Regular expressions {#regular-expressions}
 
-Si deseas aún más flexibilidad en la creación de reglas, puedes usar [expresiones regulares][regexp] en lugar de la sintaxis simplificada predeterminada. Si desea utilizar una expresión regular, el patrón debe verse así:
+If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. Si desea utilizar una expresión regular, el patrón debe verse así:
 
 ```none
 pattern = "/" regexp "/"
@@ -97,7 +97,7 @@ pattern = "/" regexp "/"
 
 - `@@/example.*/$important` desbloqueará los hosts que coincidan con la regexp `example.*`. Tenga en cuenta que esta regla también implica el modificador `important` (importante).
 
-### Comentarios
+### Comments {#comments}
 
 Cualquier línea que comience con un signo de exclamación o de almohadilla es un comentario y será ignorado por el motor de filtrado. Los comentarios suelen colocarse encima de las reglas y se utilizan para describir lo que hace una regla.
 
@@ -108,7 +108,7 @@ Cualquier línea que comience con un signo de exclamación o de almohadilla es u
 # Esto también es un comentario.
 ```
 
-### Modificadores de reglas
+### Rule modifiers {#rule-modifiers}
 
 Puedes cambiar el comportamiento de una regla agregando modificadores. Los modificadores deben situarse al final de la regla después del carácter `$` y estar separados por comas.
 
@@ -125,11 +125,11 @@ Puedes cambiar el comportamiento de una regla agregando modificadores. Los modif
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. `client=127.0.0.1` es el modificador [`client`](#client) con su valor, `127.0.0.1`, es el delimitador. Y por último, `dnstype=A` es el modificador [`dnstype`](#dnstype) con su valor, `A`.
+  `||example.org^` es el patrón de coincidencia. `$` es el delimitador, que señala que el resto de la regla son modificadores. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
 **NOTA:** Si una regla contiene un modificador que no aparece en este documento, toda la regla **debe ser ignorada**. De este modo, evitamos los falsos positivos cuando alguien intenta utilizar listas de filtros para bloqueadores de anuncios sin modificarlas, como EasyList o EasyPrivacy.
 
-#### `cliente`
+#### `client` {#client-modifier}
 
 El modificador `client` (cliente) permite especificar los clientes a los que se aplica esta regla. Hay dos formas principales de identificar a un cliente:
 
@@ -167,7 +167,7 @@ Los nombres de los clientes suelen contener espacios u otros caracteres especial
 
 - `||example.org^$client=192.168.0.0/24`: block `example.org` para todos los clientes con direcciones IP en el rango de `192.168.0.0` a `192.168.0.255`.
 
-#### `denyallow`
+#### `denyallow` {#denyallow-modifier}
 
 Puedes usar el modificador `denyallow` para excluir dominios de la regla de bloqueo. Para agregar múltiples dominios a una regla, usa el carácter `|` como separador.
 
@@ -202,7 +202,7 @@ El problema con este enfoque es que de esta manera también desbloquearás los d
 
 - `||example.org^$denyallow=sub.example.org`. bloquea `example.org` y `*.example.org` pero no bloquea `sub.example.org`.
 
-#### `dnstype`
+#### `dnstype` {#dnstype-modifier}
 
 El modificador `dnstype` permite especificar el tipo de solicitud o respuesta de DNS en el que se activará esta regla.
 
@@ -251,7 +251,7 @@ RESPUESTAS:
     ttl = 60
 ```
 
-#### `dnsrewrite`
+#### `dnsrewrite` {#dnsrewrite-modifier}
 
 El modificador de respuesta `dnsrewrite` permite reemplazar el contenido de la respuesta a la solicitud de DNS para los hosts coincidentes. Ten en cuenta que este modificador en AdGuard Home funciona en todas las reglas, pero en Private AdGuard DNS, solo en las personalizadas.
 
@@ -316,7 +316,7 @@ Tipos de RR admitidos actualmente con ejemplos:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;ejemplo.net.` añade un registro `PTR`para DNS inverso. Invertir solicitudes DNS para `1.2.3.4` al servidor DNS dará como resultado `example.net`.
 
-  **NOTA:** la IP DEBE estar en orden inverso. Consulta [RFC 1035][rfc1035].
+  **NOTA:** la IP DEBE estar en orden inverso. See [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` agrega un registro `A` con el valor `1.2.3.4`.
 
@@ -353,7 +353,7 @@ Las reglas de excepción eliminan una o todas las reglas:
 
 - `@@||example.com^$dnsrewrite=1.2.3.4` elimina la regla de reconfiguración de DNS que agrega un registro `A` con el valor `1.2.3.4`.
 
-#### `importante`
+#### `important` {#important-modifier}
 
 El modificador `importante` aplicado a una regla aumenta su prioridad sobre cualquier otra regla sin el modificador. Incluso sobre reglas de excepción básicas.
 
@@ -377,7 +377,7 @@ El modificador `importante` aplicado a una regla aumenta su prioridad sobre cual
 
   la regla de excepción también tiene el modificador `importante`, por lo que funcionará.
 
-#### `badfilter`
+#### `badfilter` {#badfilter-modifier}
 
 Las reglas con el modificador `badfilter` deshabilitan otras reglas básicas a las que se refieren. Significa que el texto de la regla deshabilitada debe coincidir con el texto de la regla `badfilter` (sin el modificador `badfilter`).
 
@@ -389,7 +389,7 @@ Las reglas con el modificador `badfilter` deshabilitan otras reglas básicas a l
 
   **NOTA:** El modificador `badfilter` actualmente no funciona con `/etc/hosts`reglas de estilo. `127.0.0.1 example.org$badfilter` **no** deshabilitará la regla original `127.0.0.1 example.org`.
 
-#### `ctag`
+#### `ctag` {#ctag-modifier}
 
 **El modificador `ctag` solo se puede usar en AdGuard Home.**
 
@@ -447,7 +447,7 @@ La lista de tags permitidas:
     - `user_regular`: usuarios regulares.
     - `user_child`: niños.
 
-## `/etc/hosts`-Sintaxis de estilo {#etc-hosts-syntax}
+## `/etc/hosts`-style syntax {#etc-hosts-syntax}
 
 Para cada host debe estar presente una sola línea con la siguiente información:
 
@@ -470,7 +470,7 @@ Los nombres de host pueden contener solo caracteres alfanuméricos, guiones meno
 
 En AdGuard Home, las direcciones IP se utilizan para responder a consultas de DNS para estos dominios. En Private AdGuard DNS, estas direcciones simplemente se bloquean.
 
-## Sintaxis sólo para dominios
+## Domains-only syntax {#domains-only-syntax}
 
 Una lista simple de nombres de dominio, un nombre por línea.
 
@@ -483,11 +483,11 @@ example.org
 example.org # esto también es un comentario
 ```
 
-Si una cadena no es un dominio válido (por ejemplo, `*.example.org`), AdGuard Home considerará que se trata de una regla [de tipo Adblock](#adblock-style-syntax).
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
-## Compilador de hostlists
+## Hostlist compiler {#hostlist-compiler}
 
-Si estás manteniendo una lista de bloqueo y utilizas diferentes fuentes en ella, la [Compilación de listas de host][hlc] puede ser útil para ti. Es una herramienta sencilla que facilita la compilación de una lista de bloqueo de hosts compatible con AdGuard Home, Private AdGuard DNS o cualquier otro producto AdGuard con filtrado DNS.
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. Es una herramienta sencilla que facilita la compilación de una lista de bloqueo de hosts compatible con AdGuard Home, Private AdGuard DNS o cualquier otro producto AdGuard con filtrado DNS.
 
 De lo que es capaz:
 
@@ -497,11 +497,15 @@ De lo que es capaz:
 
 3. Limpia la lista resultante: deduplica, borra reglas no válidas y comprime la lista.
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
+<!-- local links -->
 
-[hlc]: https://github.com/AdguardTeam/HostlistCompiler
-[sdn]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
-[adb]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+<!-- external links -->
+[Adblock-style syntax]: #adblock-style-syntax
+[`client`]: #client-modifier
+[`dnstype`]: #dnstype-modifier
+[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
+[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
