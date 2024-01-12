@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Рассказываем, как писать пользовательские правила DNS-фильтрации для использования в продуктах AdGuard
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
+Быстрые ссылки: [Скачать Блокировщик AdGuard](https://agrd.io/download-kb-adblock), [Установить AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Попробовать AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -119,7 +119,7 @@ pattern = "/" regexp "/"
 
   `||example.org^` — паттерн правила. `$` — разделитель, который указывает на то, что остальные части правила — это модификаторы. `important` — модификатор.
 
-- You may want to use multiple modifiers in a rule. В этом случае разделяйте их запятыми:
+- Возможно, вы захотите использовать в правиле несколько модификаторов. В этом случае разделяйте их запятыми:
 
   ``none
   ||example.org^$client=127.0.0.1,dnstype=A

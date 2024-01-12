@@ -57,7 +57,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 **Sunucunun sertifika karmaları** alanını doldurmak için, `<IP_ADDRESS>`, `<PORT>` ve `<SERVER_NAME>` ile DNS sunucunuz için karşılık gelen değerleri değiştirerek aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
-echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
+echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
 ```
 
 :::dikkat
@@ -87,10 +87,10 @@ DoT kullanarak AdGuard DNS için bir damga oluşturma örneği üzerinden gideli
     - **Karma**: Komutu çalıştırın
 
     ```bash
-    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
+    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    Sonuç `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec` Sunucu sertifikasının bu SHA256 karmasını alana yapıştırın.
+    Sonuç `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Sunucu sertifikasının bu SHA256 karmasını alana yapıştırın.
 
 4. Özellikler bölümünü boş bırakın.
 

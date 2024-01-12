@@ -19,6 +19,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Idea
-
+# Editors
 .idea/*
+.vscode/*

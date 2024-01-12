@@ -10,6 +10,9 @@ toc_max_heading_level: 4
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
 
+    Changelog is from here:
+    https://api.adguard-dns.io/static/api/CHANGELOG.md
+
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
@@ -17,7 +20,86 @@ toc_max_heading_level: 4
 
 Dokumentace DNS API
 
-## Verze: 1.4
+## Seznam změn AdGuard DNS API
+
+### v1.0
+
+- Přidáno ověřování.
+- Operace CRUD se zařízeními a DNS servery.
+- Protokol dotazů.
+- Stahování souborů DoT a DoT .mobileconfig.
+- Seznamy filtrů a webové služby.
+
+### v1.1
+
+- Přidány metody pro načítání statistik podle času, domén, společností a zařízení.
+
+- Přidána metoda pro aktualizaci nastavení zařízení.
+- Opravena definice povinných polí.
+
+### v1.2
+
+- Přidány nové typy protokolů DNS a DNSCrypt. Zastaralé protokoly PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP a DNSCRYPT_UDP budou později odstraněny.
+
+### v1.3
+
+- Přidána metoda pro získání limitů účtu.
+
+### v1.4
+
+- Přidána konfigurovatelná možnost blokování odezvy: výchozí (0.0.0.0), REFUSED, NXDOMAIN nebo vlastní IP adresa.
+
+### v1.5
+
+- Přidáno nové nastavení `block_nrd` a seskupení všech nastavení souvisejících se zabezpečením na jedno místo.
+
+#### Změněn model pro nastavení bezpečného prohlížení
+
+``` json
+{
+   "enabled": true
+}
+```
+
+na:
+
+``` json
+{
+   "enabled": true,
+   "block_dangerous_domains": true,
+   "block_nrd": false
+}
+```
+
+kde `enabled` je nyní ovládání všech nastavení ve skupině, `block_dangerous_domains` je pole předchozího modelu "enabled" a `block_nrd` je nastavení pro filtrování nově registrovaných domén.
+
+#### Změněn model pro ukládání nastavení serveru
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_enabled" : true,
+  ...
+}
+```
+
+na:
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_settings" : {
+     "enabled": true,
+     "block_dangerous_domains": true,
+     "block_nrd": false
+  }
+  ...
+}
+```
+
+zde je použito nové pole `safebrowsing_settings` místo zastaralého `safebrowsing_enabled`, jehož hodnota je uložena v `block_dangerous_domains`.
+
+## Verze: 1.5
 
 ### /oapi/v1/account/limits
 

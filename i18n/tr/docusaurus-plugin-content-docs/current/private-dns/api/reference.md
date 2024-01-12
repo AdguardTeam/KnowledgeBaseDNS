@@ -10,6 +10,9 @@ toc_max_heading_level: 4
     https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
     https://swagger-markdown-ui.netlify.app/.
 
+    Changelog is from here:
+    https://api.adguard-dns.io/static/api/CHANGELOG.md
+
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
@@ -17,7 +20,86 @@ toc_max_heading_level: 4
 
 DNS API belgeleri
 
-## Sürüm: 1.4
+## AdGuard DNS API Değişiklik Günlüğü
+
+### v1.0
+
+- Kimlik doğrulama eklendi.
+- Cihazlar ve DNS sunucularıyla CRUD işlemleri.
+- Sorgu günlüğü.
+- DoT ve DoT .mobileconfig dosyasının indirilmesi.
+- Filtre Listeleri ve Web Hizmetleri.
+
+### v1.1
+
+- İstatistikleri zamana, alan adlarına, şirketlere ve cihazlara göre almak için yöntemler eklendi.
+
+- Cihaz ayarlarını güncellemek için yöntem eklendi.
+- Gerekli alanların tanımı düzeltildi.
+
+### v1.2
+
+- Yeni protokol türleri DNS ve DNSCrypt eklendi. Daha sonra çıkarılacak olan PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP ve DNSCRYPT_UDP kaldırılacaktır.
+
+### v1.3
+
+- Hesap limitlerini almak için yöntem eklendi.
+
+### v1.4
+
+- Yanıtın engellenmesi için yapılandırılabilir seçenek eklendi: varsayılan (0.0.0.0), REFUSED, NXDOMAIN veya özel IP adresi.
+
+### v1.5
+
+- Yeni `block_nrd` ayarı eklendi ve güvenlikle ilgili tüm ayarlar tek bir yerde toplandı.
+
+#### Güvenli gezinti ayarları için model şu şekilde değiştirildi
+
+``` json
+{
+   "enabled": true
+}
+```
+
+şuna:
+
+``` json
+{
+   "enabled": true,
+   "block_dangerous_domains": true,
+   "block_nrd": false
+}
+```
+
+burada `enabled` artık gruptaki tüm ayarları kontrol ediyor, b`lock_dangerous_domains` önceki model alanı "enabled" ve `block_nrd` yeni kaydedilen alan adların filtrelemeye yönelik ayarlardır.
+
+#### Sunucu ayarlarını kaydetme modeli şu şekilde değiştirildi
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_enabled" : true,
+  ...
+}
+```
+
+şuna:
+
+```json
+{
+  "protection_enabled" : true,
+  "safebrowsing_settings" : {
+     "enabled": true,
+     "block_dangerous_domains": true,
+     "block_nrd": false
+  }
+  ...
+}
+```
+
+burada değeri kullanımdan çıkarılacak olan `safebrowsing_enabled` yerine yeni `safebrowsing_settings` alanı kullanılır, `block_dangerous_domains` içinde saklanır.
+
+## Sürüm: 1.5
 
 ### /oapi/v1/account/limits
 
@@ -25,7 +107,7 @@ DNS API belgeleri
 
 ##### Özet
 
-Gets account limits
+Hesap limitlerini alır
 
 ##### Yanıtlar
 
@@ -71,7 +153,7 @@ Bir cihazı kaldırır
 
 ##### Parametreler
 
-| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| Adı       | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------- | ---------------- | -------- | ------- | ---- |
 | device_id | yol              |          | Evet    | dize |
 
@@ -90,9 +172,9 @@ Mevcut bir cihazı kimliğe göre alır
 
 ##### Parametreler
 
-| Ad            | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| ------------- | ---------------- | -------- | ------- | ---- |
-| cihaz_kimliği | yol              |          | Evet    | dize |
+| Adı           | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| ------------- | ---------------- | -------- | ------- | ------ |
+| cihaz_kimliği | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -105,13 +187,13 @@ Mevcut bir cihazı kimliğe göre alır
 
 ##### Özet
 
-Updates an existing device
+Mevcut bir cihazı günceller
 
 ##### Parametreler
 
-| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------- | ---------------- | -------- | ------- | ---- |
-| device_id | yol              |          | Evet    | dize |
+| Adı       | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------- | ---------------- | -------- | ------- | ------ |
+| device_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -127,22 +209,22 @@ Updates an existing device
 
 ##### Özet
 
-Gets DNS-over-HTTPS .mobileconfig file.
+DNS-over-HTTPS, .mobileconfig dosyasını alır.
 
 ##### Parametreler
 
-| İsim                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
-| ----------------------- | ---------------- | ------------------------------------------------------------------------------ | ------- | ---------- |
-| cihaz_kimliği           | yol              |                                                                                | Evet    | dize       |
-| exclude_wifi_networks | sorgu            | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Hayır   | [ string ] |
-| exclude_domain          | sorgu            | List domains that will use default DNS servers instead of AdGuard DNS          | Hayır   | [ string ] |
+| Adı                     | Konumlandığı yer | Açıklama                                                                                        | Gerekli | Şema       |
+| ----------------------- | ---------------- | ----------------------------------------------------------------------------------------------- | ------- | ---------- |
+| cihaz_kimliği           | yol              |                                                                                                 | Evet    | string     |
+| exclude_wifi_networks | sorgu            | AdGuard DNS'nin devre dışı bırakılmasını istediğiniz Wi-Fi ağlarını SSID'lerine göre listeleyin | Hayır   | [ string ] |
+| exclude_domain          | sorgu            | AdGuard DNS yerine varsayılan DNS sunucularını kullanacak alan adlarını listeleyin              | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
-| Kod | Açıklama                   |
-| --- | -------------------------- |
-| 200 | DNS-over-HTTPS .plist file |
-| 404 | Cihaz bulunamadı           |
+| Kod | Açıklama                      |
+| --- | ----------------------------- |
+| 200 | DNS-over-HTTPS .plist dosyası |
+| 404 | Cihaz bulunamadı              |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -150,22 +232,22 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Özet
 
-Gets DNS-over-TLS .mobileconfig file.
+DNS-over-TLS .mobileconfig dosyasını alır.
 
 ##### Parametreler
 
-| İsim                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
-| ----------------------- | ---------------- | ------------------------------------------------------------------------------ | ------- | ---------- |
-| cihaz_kimliği           | yol              |                                                                                | Evet    | dize       |
-| exclude_wifi_networks | sorgu            | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Hayır   | [ string ] |
-| exclude_domain          | sorgu            | List domains that will use default DNS servers instead of AdGuard DNS          | Hayır   | [ string ] |
+| Adı                     | Konumlandığı yer | Açıklama                                                                                        | Gerekli | Şema       |
+| ----------------------- | ---------------- | ----------------------------------------------------------------------------------------------- | ------- | ---------- |
+| cihaz_kimliği           | yol              |                                                                                                 | Evet    | dize       |
+| exclude_wifi_networks | sorgu            | AdGuard DNS'nin devre dışı bırakılmasını istediğiniz Wi-Fi ağlarını SSID'lerine göre listeleyin | Hayır   | [ string ] |
+| exclude_domain          | sorgu            | AdGuard DNS yerine varsayılan DNS sunucularını kullanacak alan adlarını listeleyin              | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
-| Kod | Açıklama                   |
-| --- | -------------------------- |
-| 200 | DNS-over-HTTPS .plist file |
-| 404 | Cihaz bulunamadı           |
+| Kod | Açıklama                      |
+| --- | ----------------------------- |
+| 200 | DNS-over-HTTPS .plist dosyası |
+| 404 | Cihaz bulunamadı              |
 
 ### /oapi/v1/devices/{device_id}/settings
 
@@ -177,9 +259,9 @@ Cihaz ayarlarını günceller
 
 ##### Parametreler
 
-| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------- | ---------------- | -------- | ------- | ---- |
-| device_id | yol              |          | Evet    | dize |
+| Adı       | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------- | ---------------- | -------- | ------- | ------ |
+| device_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -199,7 +281,7 @@ Kullanıcıya ait DNS sunucularını listeler.
 
 ##### Açıklama
 
-Kullanıcıya ait DNS sunucularını listeler. By default there is at least one default server.
+Kullanıcıya ait DNS sunucularını listeler. Varsayılan olarak en az bir varsayılan sunucu vardır.
 
 ##### Yanıtlar
 
@@ -215,15 +297,15 @@ Yeni bir DNS sunucusu oluşturur
 
 ##### Açıklama
 
-Yeni bir DNS sunucusu oluşturur. You can attach custom settings, otherwise DNS server will be created with default settings.
+Yeni bir DNS sunucusu oluşturur. Özel ayarlar ekleyebilirsiniz, aksi takdirde DNS sunucusu varsayılan ayarlarla oluşturulacaktır.
 
 ##### Yanıtlar
 
-| Kod | Açıklama                            |
-| --- | ----------------------------------- |
-| 200 | DNS sunucusu oluşturuldu            |
-| 400 | Doğrulama başarısız                 |
-| 429 | DNS servers count reached the limit |
+| Kod | Açıklama                        |
+| --- | ------------------------------- |
+| 200 | DNS sunucusu oluşturuldu        |
+| 400 | Doğrulama başarısız             |
+| 429 | DNS sunucu sayısı sınıra ulaştı |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
@@ -235,11 +317,11 @@ Bir DNS sunucusunu kaldırır
 
 ##### Açıklama
 
-Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayılan DNS sunucusuna taşınacaktır. Varsayılan bir DNS sunucusunu silmek yasaktır.
+Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayılan DNS sunucusuna taşınacaktır. Varsayılan DNS sunucusunun silinmesi yasaktır.
 
 ##### Parametreler
 
-| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
 | dns_server_id | yol              |          | Evet    | dize |
 
@@ -258,7 +340,7 @@ Kimliğe göre mevcut bir DNS sunucusunu alır
 
 ##### Parametreler
 
-| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
 | dns_server_id | yol              |          | Evet    | dize |
 
@@ -277,7 +359,7 @@ Mevcut bir DNS sunucusunu günceller
 
 ##### Parametreler
 
-| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema |
 | --------------- | ---------------- | -------- | ------- | ---- |
 | dns_server_id | yol              |          | Evet    | dize |
 
@@ -299,9 +381,9 @@ DNS sunucusu ayarlarını günceller
 
 ##### Parametreler
 
-| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | yol              |          | Evet    | dize |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------------- | ---------------- | -------- | ------- | ------ |
+| dns_server_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -331,15 +413,15 @@ Filtre listelerini alır
 
 ##### Özet
 
-Generates Access and Refresh token
+Erişim ve Yenileme belirteci oluşturur
 
 ##### Yanıtlar
 
-| Kod | Açıklama                                                 |
-| --- | -------------------------------------------------------- |
-| 200 | Access token issued                                      |
-| 400 | Gerekli parametreler eksik                               |
-| 401 | Invalid credentials, MFA token or refresh token provided |
+| Kod | Açıklama                                                                  |
+| --- | ------------------------------------------------------------------------- |
+| 200 | Erişim belirteci verildi                                                  |
+| 400 | Gerekli parametreler eksik                                                |
+| 401 | Geçersiz kimlik bilgileri, MFA belirteci veya yenileme belirteci sağlandı |
 
 boş
 
@@ -365,17 +447,17 @@ Sorgu günlüğünü alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                                                                         | Gerekli | Şema                                                |
+| Adı                | Konumlandığı yer | Açıklama                                                                         | Gerekli | Şema                                                |
 | ------------------ | ---------------- | -------------------------------------------------------------------------------- | ------- | --------------------------------------------------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive)                                            | Evet    | uzun                                                |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)                                                | Evet    | uzun                                                |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil)                                       | Evet    | uzun                                                |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)                                                | Evet    | long                                                |
 | cihazlar           | sorgu            | Cihazlara göre filtrele                                                          | Hayır   | [ string ]                                          |
 | ülkeler            | sorgu            | Ülkelere göre filtrele                                                           | Hayır   | [ string ]                                          |
 | şirketler          | sorgu            | Şirketlere göre filtrele                                                         | Hayır   | [ string ]                                          |
 | durumlar           | sorgu            | Durumlara göre filtrele                                                          | Hayır   | [ [FilteringActionStatus](#FilteringActionStatus) ] |
 | kategoriler        | sorgu            | Kategorilere göre filtrele                                                       | Hayır   | [ [CategoryType](#CategoryType) ]                   |
 | search             | sorgu            | Alan adına göre filtrele                                                         | Hayır   | dize                                                |
-| limit              | sorgu            | Limit the number of records to be returned                                       | Hayır   | integer                                             |
+| limit              | sorgu            | Döndürülecek kayıt sayısını sınırlayın                                           | Hayır   | integer                                             |
 | imleç              | sorgu            | Sayfalandırma imleci. Sayfalar arasında gezinmek için yanıttaki imleci kullanın. | Hayır   | dize                                                |
 
 ##### Yanıtlar
@@ -394,9 +476,9 @@ Revokes a Refresh Token
 
 ##### Parametreler
 
-| İsim          | Konumlandığı yer | Açıklama      | Gerekli | Şema |
-| ------------- | ---------------- | ------------- | ------- | ---- |
-| refresh_token | sorgu            | Refresh Token | Evet    | dize |
+| Adı           | Konumlandığı yer | Açıklama           | Gerekli | Şema   |
+| ------------- | ---------------- | ------------------ | ------- | ------ |
+| refresh_token | sorgu            | Yenileme Belirteci | Evet    | string |
 
 ##### Yanıtlar
 
@@ -416,12 +498,12 @@ Kategori istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | uzun       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -440,12 +522,12 @@ Kategori istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -464,13 +546,13 @@ Ayrıntılı şirket istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
-| imleç              | sorgu            | Sayfalandırma imleci                  | Hayır   | dize       |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
+| imleç              | sorgu            | Sayfalandırma imleci                       | Hayır   | dize       |
 
 ##### Yanıtlar
 
@@ -489,12 +571,12 @@ Ayrıntılı şirket istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | uzun       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -513,12 +595,12 @@ Cihaz istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -537,12 +619,12 @@ Alan adı istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -561,12 +643,12 @@ Süre istatistiklerini alır
 
 ##### Parametreler
 
-| İsim               | Konumlandığı yer | Açıklama                              | Gerekli | Şema       |
-| ------------------ | ---------------- | ------------------------------------- | ------- | ---------- |
-| time_from_millis | sorgu            | Time from in milliseconds (inclusive) | Evet    | uzun       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)     | Evet    | uzun       |
-| cihazlar           | sorgu            | Cihazlara göre filtrele               | Hayır   | [ string ] |
-| ülkeler            | sorgu            | Ülkelere göre filtrele                | Hayır   | [ string ] |
+| Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
+| ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
+| ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
@@ -581,7 +663,7 @@ Süre istatistiklerini alır
 
 ##### Özet
 
-Lists web services
+Web hizmetlerini listeler
 
 ##### Yanıtlar
 

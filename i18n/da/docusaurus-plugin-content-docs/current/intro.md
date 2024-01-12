@@ -6,6 +6,8 @@ slug: /
 
 ## Hvad er DNS?
 
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube-videoafspiller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 DNS står for "Domain Name System", hvis formål er at konvertere websteders navne til IP-adresser. Hver gang man går til et websted, sender browseren en DNS-forespørgsel til en DNS-server for at få oplyst webstedets IP-adresse. En alm. DNS-opløser returnerer blot IP-adressen på det anmodede domæne.
 
 :::note
@@ -32,7 +34,7 @@ AdGuard DNS er en af de mest fortrolighedsorienterede DNS-tjenester på markedet
 
 Ca. 75% af AdGuard DNS-trafik er krypteret. Det er faktisk dét, der adskiller indholdsblokerende DNS-servere fra de øvrige. Ved at kigge på statistikkerne fra CloudFlare eller Quad9 kan man se, at krypteret DNS kun udgør en lille del af samtlige forespørgsler.
 
-AdGuard DNS findes i to varianter: [Public AdGuard DNS](public-dns/overview.md) og [Private AdGuard DNS](private-dns/overview.md). Ingen af disse tjenester kræver installation af apps. De er nemme at opsætte og anvende, og de giver brugerne det minimum af funktioner, som kræves for at blokere annoncer, trackere, ondsindede websteder og, om ønsket, voksenindhold. Der er ingen begrænsninger af, med hvilke enheder de kan bruges.
+AdGuard DNS findes i to varianter: [Public AdGuard DNS](public-dns/overview) og [Private AdGuard DNS](private-dns/overview). Ingen af disse tjenester kræver installation af apps. De er nemme at opsætte og anvende, og de giver brugerne det minimum af funktioner, som kræves for at blokere annoncer, trackere, ondsindede websteder og, om ønsket, voksenindhold. Der er ingen begrænsninger af, med hvilke enheder de kan bruges.
 
 Trods mange ligheder, så er Private AdGuard DNS og Public AdGuard DNS to forskellige tjenestevarianter. Deres største forskel er, at Private AdGuard DNS kan tilpasses, mens Public AdGuard DNS ikke kan.
 
