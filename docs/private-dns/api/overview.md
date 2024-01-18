@@ -114,7 +114,7 @@ Once the access and the refresh tokens are generated, API calls can be made by p
 
 ### Reference
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Please see the methods reference [here](reference.md).
 
 ### OpenAPI spec
 
@@ -127,7 +127,7 @@ You can use different tools to view the list of available API methods. For insta
 
 ### Changelog
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](changelog.md).
 
 ## Feedback
 
