@@ -127,7 +127,7 @@ You can use different tools to view the list of available API methods. For insta
 
 ### Changelog
 
-The complete AdGuard DNS API changelog is available on [this page](changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](./changelog.md).
 
 ## Feedback
 
