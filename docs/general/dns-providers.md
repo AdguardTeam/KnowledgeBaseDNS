@@ -73,7 +73,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1`             | [Add to AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=) |
 | DNS-over-HTTPS | `https://dns.alidns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
 | DNS-over-TLS | `tls://dns.alidns.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com) |
-
+| DNS-over-QUIC | `quic://dns.alidns.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853) |
 ### BebasDNS by BebasID
 
 [BebasDNS](https://github.com/bebasid/bebasid) is a free and neutral public resolver based in Indonesia. We have no-logs policy and support DNSSEC along with OpenNIC TLD. We support both port 53 and 1753 for Plain DNS.
@@ -129,6 +129,18 @@ This is the family variant of BebasDNS. This variant blocks pornography, gamblin
 | DNS-over-TLS   | `tls://internetsehat.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853) |
 | DNS-over-QUIC  | `quic://quic-sehat.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://quic-sehat.dns.bebasid.com:853&name=quic://quic-sehat.dns.bebasid.com:853) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Add to AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ) |
+
+### ByteDance Public DNS
+
+[Bytedance PublicDNS]([https://console.volcengine.com/TrafficRoute/dns/publicdns](https://console.volcengine.com/TrafficRoute/dns/publicdns)) currently only supports IPv4. As of January 23, 2024, its AnyCast only covers mainland China.
+
+#### Default
+
+This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4      | `180.184.1.1` and `180.184.2.2` | [Add to AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
 ### CFIEC Public DNS
 
