@@ -136,7 +136,7 @@ This is the family variant of BebasDNS. This variant blocks pornography, gamblin
 
 #### Default
 
-This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains.
+The only DNS currently provided by ByteDance supports IPV4, and its DOH, DOT, DOQ and other encrypted DNS services will be launched soon.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
