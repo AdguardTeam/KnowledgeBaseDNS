@@ -9,7 +9,7 @@ sidebar_position: 2
 
 Download the archive with the binary file for your operating system from the [latest stable release page][releases]. The full list of supported platforms as well as links to beta and edge (unstable) releases can be found on [our platforms page][platforms].
 
-To install AdGuard Home as a service, unpack the archive, enter the `AdGuardHome` directory, and run:
+To install AdGuard Home as a service, extract the archive, enter the `AdGuardHome` directory, and run:
 
 ```sh
 ./AdGuardHome -s install
@@ -17,7 +17,7 @@ To install AdGuard Home as a service, unpack the archive, enter the `AdGuardHome
 
 #### Notes
 
-- Users of **Fedora Linux** and its derivatives: install AdGuard Home into the `/usr/local/bin` directory. Otherwise, it may cause issues with SELinux and permissions. See [issue 765] and [issue 3281].
+- Users of **Fedora Linux** and its derivatives: install AdGuard Home in the `/usr/local/bin` directory. Failure to do so may cause issues with SELinux and permissions. See [issue 765] and [issue 3281].
 
 - Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
 
@@ -29,13 +29,13 @@ We also provide an [official AdGuard Home docker image][docker] and an [official
 
 Some other unofficial options include:
 
-- (Maintained by [@frenck](https://github.com/frenck)) [Home Assistant add-on][has].
+- [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
 
-- (Maintained by [@kongfl888](https://github.com/kongfl888)) [OpenWrt LUCI app][luci].
+- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
 
-- (Maintained by [@graysky2](https://github.com/graysky2)) [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur].
+- [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur] maintained by [@graysky2](https://github.com/graysky2).
 
-- (Maintained by [@gramakri](https://github.com/gramakri)) [Cloudron app][cloudron].
+- [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
 
 [aghaur]:     https://aur.archlinux.org/packages/adguardhome/
 [arch]:       https://www.archlinux.org/
@@ -59,9 +59,9 @@ First of all, check your firewall settings. To install and use AdGuard Home, the
 - 80/TCP for the web interface;
 - 53/UDP for the DNS server.
 
-You may need to open additional ports for protocols other than plain DNS, for example DNS-over-HTTPS.
+You may need to open additional ports for protocols other than plain DNS, such as DNS-over-HTTPS.
 
-DNS servers bind to port 53, which requires superuser privileges most of the time, [see below](#running-without-superuser). Therefore, on unix systems you need to run it with `sudo` or `doas` in terminal:
+DNS servers bind to port 53, which requires superuser privileges most of the time, [see below](#running-without-superuser). Therefore, on Unix systems, you will need to run it with `sudo` or `doas` in terminal:
 
 ```sh
 sudo ./AdGuardHome
@@ -110,7 +110,7 @@ By default, the logs are written to `stderr` when you run AdGuard Home in a term
 
 - On macOS, the log is written to `/var/log/AdGuardHome.*.log` files.
 
-- On other unixes, the log is written to `syslog` or `journald`.
+- On other Unixes, the log is written to `syslog` or `journald`.
 
 - On Windows, the log is written to the Windows event log.
 
@@ -130,7 +130,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
 1. Download the new AdGuard Home package.
 
-1. Unpack it to a temporary directory.
+1. Extract it to a temporary directory.
 
 1. Replace the old AdGuard Home executable file with the new one.
 
@@ -158,23 +158,23 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. Open the preferences for your router. Usually, you can access it from your browser via a URL, such as <http://192.168.0.1/> or <http://192.168.1.1/>. You may be prompted to enter a password. If you don’t remember it, you can often reset the password by pressing a button on the router itself, but be aware that if this procedure is chosen, you will probably lose the entire router configuration. If your router requires an app to set it up, please install the app on your phone or PC and use it to access the router’s settings.
 
-1. Find the DHCP/DNS settings. Look for the DNS letters next to a field which allows two or three sets of numbers, each broken into four groups of one to three digits.
+1. Find the DHCP/DNS settings. Look for the DNS letters next to a field that allows two or three sets of numbers, each divided into four groups of one to three digits.
 
 1. Enter your AdGuard Home server addresses there.
 
-1. On some router types, a custom DNS server cannot be set up. In that case, setting up AdGuard Home as a DHCP server may help. Otherwise, you should check the router manual on how to customize DNS servers on your specific router model.
+1. On some router types, a custom DNS server cannot be set up. In that case, setting up AdGuard Home as a DHCP server may help. Otherwise, you should consult your router manual to learn how to customize DNS servers on your specific router model.
 
 ### Windows
 
-1. Open *Control Panel* through Start menu or Windows search.
+1. Open *Control Panel* from the Start menu or Windows search.
 
-1. Go to *Network and Internet* category and then to *Network and Sharing Center.*
+1. Go to *Network and Internet* and then to *Network and Sharing Center.*
 
-1. On the left side of the screen find the *Change adapter settings* button and click it.
+1. On the left side of the screen, find the *Change adapter settings* button and click it.
 
 1. Select your active connection, right-click it and choose *Properties.*
 
-1. Find *Internet Protocol Version 4 (TCP/IPv4)* (or, for IPv6, *Internet Protocol Version 6 (TCP/IPv6)*) in the list, select it and then click Properties again.
+1. Find *Internet Protocol Version 4 (TCP/IPv4)* (or, for IPv6, *Internet Protocol Version 6 (TCP/IPv6)*) in the list, select it, and then click Properties again.
 
 1. Choose *Use the following DNS server addresses* and enter your AdGuard Home server addresses.
 
@@ -190,13 +190,13 @@ This setup will automatically cover all devices connected to your home router, a
 
 ### Android
 
-1. From the Android Menu home screen, tap *Settings.*
+1. From the Android menu home screen, tap *Settings.*
 
-1. Tap *Wi-Fi* on the menu. The screen listing all of the available networks will be shown (it is impossible to set custom DNS for mobile connection).
+1. Tap *Wi-Fi* on the menu. The screen with all of the available networks will be displayed (it is impossible to set custom DNS for mobile connection).
 
 1. Long press the network you’re connected to and tap *Modify Network.*
 
-1. On some devices, you may need to check the box for *Advanced* to see further settings. To adjust your Android DNS settings, you will need to switch the IP settings from *DHCP* to *Static.*
+1. On some devices, you may need to check the box for *Advanced* to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from *DHCP* to *Static.*
 
 1. Change set DNS 1 and DNS 2 values to your AdGuard Home server addresses.
 
@@ -204,21 +204,21 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. From the home screen, tap *Settings.*
 
-1. Choose *Wi-Fi* in the left menu (it is impossible to configure DNS for mobile networks).
+1. Select *Wi-Fi* from the left menu (it is impossible to configure DNS for mobile networks).
 
 1. Tap the name of the currently active network.
 
-1. In the *DNS* field enter your AdGuard Home server addresses.
+1. In the *DNS* field, enter your AdGuard Home server addresses.
 
 ## Running without superuser (Linux only) {#running-without-superuser}
 
-You can run AdGuard Home without superuser privileges, but you need to either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
+You can run AdGuard Home without superuser privileges, but you must either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
 
 ### Granting the necessary capabilities
 
 Using this method requires the `setcap` utility. You may need to install it using your Linux distribution’s package manager.
 
-To allow AdGuard Home running on Linux to listen on port 53 without superuser privileges and bind its DNS servers to a particular interface run:
+To allow AdGuard Home running on Linux to listen on port 53 without superuser privileges and bind its DNS servers to a particular interface, run:
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
@@ -236,11 +236,11 @@ dns:
     port: 53
 ```
 
-You can change the port to anything above 1024 to avoid requiring superuser privileges. If the file does not exist, create it in the same folder, type these two lines down and save.
+You can change the port to anything above 1024 to avoid requiring superuser privileges. If the file does not exist, create it in the same folder, type these two lines down, and save.
 
 ## Limitations {#limitations}
 
-Some file systems don’t support the `mmap(2)` system call that the statistics system requires. See also [issue 1188].
+Some file systems don’t support the `mmap(2)` system call required by the statistics system. See also [issue 1188].
 
 You can resolve this issue:
 

@@ -7,7 +7,7 @@ This page contains a list of additional recommendations to help ensure the secur
 
 ## Choosing server addresses
 
-The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and practical option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
+The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and convenient option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
 
 ::: note
 
@@ -15,7 +15,7 @@ The UI currently only allows you to select one interface, but you can actually s
 
 :::
 
-If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually named `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
+If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually called `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
 
 If you plan to run AdGuard Home on a **router within a small isolated network,** select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
 
@@ -43,7 +43,7 @@ If your AdGuard Home is not accessible from the outside, you can skip this secti
 
 :::
 
-If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it unavailable from the outside.
+If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it inaccessible from the outside.
 
 If you want to completely disable plain DNS serving, you can do so on the *Settings → Encryption settings* page.
 
@@ -61,13 +61,13 @@ The default plain-DNS ratelimit of 20 should generally be sufficient, but if you
 
 ## OS service concerns
 
-In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed to has proper ownership and privileges set.
+In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed to has proper ownership and permissions set.
 
 We thank Go Compile for assistance in writing this section.
 
 ### Unix (FreeBSD, Linux, macOS, OpenBSD)
 
-AdGuard Home working directory, which is by default `/Applications/AdGuardHome` on macOS and `/opt/AdGuardHome` on other Unix systems, as well as the binary itself should generally have `root:root` ownership and not be writeable by anyone but `root`. You can check it with the following command, replacing `/opt/AdGuardHome` with your directory and `/opt/AdGuardHome/AdGuardHome` with your binary:
+AdGuard Home working directory, which is by default `/Applications/AdGuardHome` on macOS and `/opt/AdGuardHome` on other Unix systems, as well as the binary itself should generally have `root:root` ownership and not be writeable by anyone but `root`. You can check this with the following command, replacing `/opt/AdGuardHome` with your directory and `/opt/AdGuardHome/AdGuardHome` with your binary:
 
 ```sh
 ls -d -l /opt/AdGuardHome
@@ -81,7 +81,7 @@ drwxr-xr-x 4 root root 4096 Jan 1 12:00 /opt/AdGuardHome/
 -rwxr-xr-x 1 root root 29409280 Jan 1 12:00 /opt/AdGuardHome/AdGuardHome
 ```
 
-Note the lack of write permission for anyone but `root` as well as owned by `root`. If any of these are not correct, run the following commands under `root`:
+Note the lack of write permission for anyone but `root` as well as `root` ownership. If the permissions and/or ownership are not correct, run the following commands under `root`:
 
 ```sh
 chmod 755 /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome

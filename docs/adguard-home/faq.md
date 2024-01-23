@@ -3,11 +3,11 @@ title: FAQ
 sidebar_position: 3
 ---
 
-## Why AdGuard Home doesn’t block ads or threats? {#doesntblock}
+## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
 
-Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to resolve this issue.
+Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
 
-Most likely you didn’t configure your device to use AdGuard Home as its default DNS server. To check if you’re using AdGuard Home as the default DNS server:
+Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
 
 1. On Windows, open a Terminal window (*Start* → *Run* → `cmd.exe`). On other systems, open your Terminal application.
 
@@ -24,17 +24,17 @@ Most likely you didn’t configure your device to use AdGuard Home as its defaul
    Address: <IPv6>
    ```
 
-1. Check if the `Server` IP address is the one on which AdGuard Home is running. If not, you need to configure your device that way. See [below](#defaultdns) how to do it.
+1. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. See [below](#defaultdns) how to do this.
 
-1. Ensure that your request to `example.org` appears in the AdGuard Home UI on the *Query Log* page. If not, you need to configure AdGuard Home to listen on the specified network interface. The most straightforward way to do so is to reinstall AdGuard Home with default settings.
+1. Ensure that your request to `example.org` appears in the AdGuard Home UI on the *Query Log* page. If not, you need to configure AdGuard Home to listen on the specified network interface. The easiest way to do this is to reinstall AdGuard Home with default settings.
 
-If you are sure that your device uses AdGuard Home as its default DNS server, but the problem persists, it might have something to do with an AdGuard Home misconfiguration. Please check and ensure that:
+If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Please check and make sure that:
 
-1. You have the *Block domains using filters and hosts files* setting enabled on the *Settings → General settings* page.
+1. You have enabled the *Block domains using filters and hosts files* setting on the *Settings → General settings* page.
 
-1. You have the appropriate safety mechanisms, such as Parental Control, enabled on the *Settings → General settings* page.
+1. You have enabled the appropriate security mechanisms, such as Parental Control, on the *Settings → General settings* page.
 
-1. You have the appropriate filters enabled on the *Filters → DNS blocklists* page.
+1. You have enabled the appropriate filters on the *Filters → DNS blocklists* page.
 
 1. You don’t have any exception rule lists that may allow the requests enabled on the *Filters → DNS allowlists* page.
 
@@ -42,7 +42,7 @@ If you are sure that your device uses AdGuard Home as its default DNS server, bu
 
 1. You don’t have any custom filtering rules that may interfere on the *Filters → Custom filtering rules* page.
 
-## Where can I inspect the logs? {#logs}
+## Where can I view the logs? {#logs}
 
 The default location of the plain-text logs (not to be confused with the query logs) depends on the operating system and installation mode:
 
@@ -60,11 +60,11 @@ The default location of the plain-text logs (not to be confused with the query l
 
 - **OpenBSD:** `/var/log/daemon`.
 
-- On **Windows:** the [Windows Event Log][wlog] is used.
+- **Windows:** the [Windows Event Log][wlog] is used.
 
 [wlog]: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
 
-## How to configure AdGuard Home to write verbose-level logs? {#verboselog}
+## How do I configure AdGuard Home to write verbose-level logs? {#verboselog}
 
 To troubleshoot a complicated issue, the verbose-level logging is sometimes required. Here’s how to enable it:
 
@@ -90,13 +90,13 @@ To troubleshoot a complicated issue, the verbose-level logging is sometimes requ
 
 1. Once you’re done with the debugging, set `log.verbose` back to `false`.
 
-## How to show a custom block page? {#customblock}
+## How do I show a custom block page? {#customblock}
 
-:::note A note about HTTPS
+:::note
 
-Before doing any of this, please note that modern browsers are set up to use HTTPS, so they validate the authenticity of the web server certificate. That means that using any of these will result in warning screens.
+Before doing any of this, please note that modern browsers are set up to use HTTPS, so they validate the authenticity of the web server certificate. This means that using any of these will result in warning screens.
 
-There are a couple of proposed extensions that, when they become reasonably well supported by clients, would allow for a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
+There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
@@ -105,7 +105,7 @@ There are a couple of proposed extensions that, when they become reasonably well
 
 ### Prerequisites
 
-To use any of these ways to show a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. Something like [`pixelserv-tls`][pxsrv].
+To use any of these methods to display a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. Something like [`pixelserv-tls`][pxsrv].
 
 [pxsrv]: https://github.com/kvic-z/pixelserv-tls
 
@@ -149,7 +149,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 1. Click *Save.*
 
-## How to change dashboard interface’s address? {#webaddr}
+## How do I change dashboard interface’s address? {#webaddr}
 
 1. Stop AdGuard Home:
 
@@ -171,7 +171,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
    ./AdGuardHome -s start
    ```
 
-## How to set up AdGuard Home as default DNS server? {#defaultdns}
+## How do I set up AdGuard Home as default DNS server? {#defaultdns}
 
 See the [*Configuring Devices* section](getting-started.md#configure-devices) on the *Getting Started* page.
 
@@ -183,17 +183,17 @@ Here are some examples of what cannot be blocked by a DNS-level blocker:
 
 - Facebook, Twitter, Instagram sponsored posts.
 
-Essentially, any advertising that shares a domain with content cannot be blocked by a DNS-level blocker.
+Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker.
 
-### Is there a chance to handle this in the future?
+### Any possibility of dealing with this in the future?
 
-DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’re going to bring this feature support to AdGuard Home in the future. Unfortunately, even in this case, there still will be cases when this won’t be enough or would require quite complicated configuration.
+DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases there it won’t be enough or it will require quite complicated configuration.
 
 [adguard]: https://adguard.com/
 
-## Why am I getting `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
+## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53` and thus prevents AdGuard Home from binding to `127.0.0.1:53`. You can see that by running:
+This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. You can see this by running:
 
 ```sh
 sudo lsof -i :53
@@ -207,11 +207,11 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you need to either disable the `systemd-resolved` daemon or choose a different network interface and bind to an accessible IP address on it, for instance, the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
 
-Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the *Fix* button, which is shown near the `address already in use` message on the installation screen.
+Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the *Fix* button located next to the `address already in use` message on the installation screen.
 
-Secondly, if that doesn’t work, follow the guide below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do it yourself.
+Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
 
 1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
 
@@ -227,7 +227,7 @@ Secondly, if that doesn’t work, follow the guide below. Note that if you’re 
    DNSStubListener=no
    ```
 
- Specifying `127.0.0.1` as DNS server address **is necessary** because otherwise the nameserver will be `127.0.0.53` which doesn’t work without `DNSStubListener`.
+ Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
 
 1. Activate another `resolv.conf` file:
 
@@ -244,7 +244,7 @@ Secondly, if that doesn’t work, follow the guide below. Note that if you’re 
 
 After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
 
-## How to configure a reverse proxy server for AdGuard Home? {#reverseproxy}
+## How do I configure a reverse proxy server for AdGuard Home? {#reverseproxy}
 
 If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
 
@@ -270,7 +270,7 @@ location /aghome/ {
 }
 ```
 
-Or, if you just want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
+Or, if you only want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
 
 ```none
 DOMAIN {
@@ -282,16 +282,16 @@ DOMAIN {
 
 ### Disable DoH encryption on AdGuard Home
 
-When you use TLS on your reverse proxy server, there’s no need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home respond to DoH requests without TLS encryption.
+If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
 
 ### Real IP addresses of clients
 
-You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home take the headers containing the real client IP address into account. See the [configuration][conf] and [encryption][encr] pages for more information.
+You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## How to fix `permission denied` errors on Fedora? {#fedora}
+## How do I fix `permission denied` errors on Fedora? {#fedora}
 
 1. Move the `AdGuardHome` binary to `/usr/local/bin`.
 
@@ -312,7 +312,7 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing *directly* into `/usr/local/bin` by using the `-o` option of the install script:
+If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it *directly* into `/usr/local/bin` by using the `-o` option of the install script:
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
@@ -323,17 +323,17 @@ See [issue 765] and [issue 3281].
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
-## How to fix `incompatible file system` errors? {#incompatfs}
+## How do I fix `incompatible file system` errors? {#incompatfs}
 
 You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the *Getting Started* page.
 
-## How to update AdGuard Home manually? {#manual-update}
+## How do I update AdGuard Home manually? {#manual-update}
 
-In case the button isn’t shown or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home releases for Linux and Windows for AMD64 CPUs.
+If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
+1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -357,7 +357,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
    :::note OpenBSD
 
-   On OpenBSD you probably want to use `doas` instead of `sudo`.
+   On OpenBSD, you will probably want to use `doas` instead of `sudo`.
 
    :::
 
@@ -368,19 +368,19 @@ In case the button isn’t shown or an automatic update has failed, you can upda
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-1. Unpack the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to unpack it to `/tmp/`:
+1. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
 
    ```sh
    tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
-   On macOS, something like:
+   On macOS, type something like:
 
    ```sh
    unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
    ```
 
-1. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like:
+1. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
@@ -432,7 +432,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
    ```
 
-1. Unpack the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to unpack it to a temporary directory:
+1. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to extract it to a temporary directory:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -456,19 +456,19 @@ In all examples below, the PowerShell must be run as Administrator.
    .\AdGuardHome.exe -s start
    ```
 
-## How to uninstall AdGuard Home? {#uninstall}
+## How do I uninstall AdGuard Home? {#uninstall}
 
-The way to uninstall AdGuard Home depends on how you installed it.
+Depending on how you installed AdGuard Home, there are different ways to uninstall it.
 
 ::: caution
 
-After uninstalling AdGuard Home, don’t forget to change your devices configuration and point them to a different DNS server.
+After uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
 
 :::
 
 ### Regular installation
 
-In this case you need to do the following:
+In this case, do the following:
 
 - Unregister AdGuard Home service: `./AdGuardHome -s uninstall`.
 
