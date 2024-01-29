@@ -1,9 +1,14 @@
 ---
 title: Overview
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
@@ -11,8 +16,7 @@ AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
 ### Generate Access token
 
-Make a POST request for the following URL with the given params to generate
-the `access_token`:
+Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -53,8 +57,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Generate Access Token from Refresh Token
 
-Access tokens have limited validity. Once it expires, your app will have to use
-the `refresh token` to request for a new `access token`.
+Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 Make the following POST request with the given params to get a new access token:
 
@@ -102,8 +105,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### Accessing API
 
-Once the access and the refresh tokens are generated, API calls can be made by
-passing the access token in the header.
+Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
 - Header name should be `Authorization`
 - Header value should be `Bearer {access_token}`
@@ -112,19 +114,21 @@ passing the access token in the header.
 
 ### Reference
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Please see the methods reference [here](reference.md).
 
 ### OpenAPI spec
 
 OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-You can use different tools to view the list of available API methods. For
-instance, you can open this file in [https://editor.swagger.io/][swagger].
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/
 
+### Changelog
+
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+
 ## Feedback
 
-If you would like this API to be extended with new methods, please email us to
-`devteam@adguard.com` and let us know what you would like to be added.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
