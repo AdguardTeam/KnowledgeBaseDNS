@@ -84,7 +84,7 @@ Dette er standardvarianten af BebasDNS. Denne variant blokerer annonce-, malware
 
 | Protokol       | Adresse                                                             |                                                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.194` og `34.101.185.130`                                 | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.194&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
+| DNS, IPv4      | `103.87.68.194` and `35.219.67.150`                                 | [Føj til AdGuard](adguard:add_dns_server?address=103.87.68.194&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
 | DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::53`                                       | [Føj til AdGuard](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=)                                                                       |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                 | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com)                             |
 | DNS-over-TLS   | `tls://dns.bebasid.com:853`                                         | [Føj til AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                                                 |
@@ -102,7 +102,7 @@ Denne variant foretager ingen filtrering.
 | DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`                                            | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                                                   |
 | DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853`                                          | [Føj til AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)                             |
 | DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853`                                         | [Føj til AdGuard](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
-| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `34.101.185.130:5443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAEzM0LjEwMS4xODUuMTMwOjU0NDMghpbY0AAjPtvOiDsSzDh7Few4-cUrb6D33KwcMl75TtkqMi5kbnNjcnlwdC1jZXJ0LnVuZmlsdGVyZWQuZG5zLmJlYmFzaWQuY29t)                                                                                                        |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `35.219.67.150:5443` | [Føj til AdGuard](sdns://AQcAAAAAAAAAEjM1LjIxOS42Ny4xNTA6NTQ0MyAtDC9I4194j3U0lZcEBPPd43IvR8gGNOS5QNVIx_7PNyoyLmRuc2NyeXB0LWNlcnQudW5maWx0ZXJlZC5kbnMuYmViYXNpZC5jb20)                                                                                                         |
 
 #### Sikkerhed
 
@@ -308,12 +308,12 @@ Blokerer ondsindede samt phishing- og spam-domæner.
 
 [DeCloudUs DNS](https://decloudus.com/) er en DNS-tjeneste, der lader brugerne blokere alt, hvad de ønsker, mens den som standard beskytter brugere og familier mod annoncer, trackere, malware, phishing, ondsindede websteder og meget mere.
 
-| Protokol       | Adresse                                                                      |                                                                                                                                                                                                                                 |
-| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Føj til AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)                                                                           |
-| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0)                                                              |
-| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                        | [Add to AdGuard](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
-| DNS-over-TLS   | `tls://dns.decloudus.com`                                                    | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
+| Protokol       | Adresse                                                                      |                                                                                                                                                                                                                                   |
+| -------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `78.47.212.211:9443`           | [Føj til AdGuard](sdns://AQMAAAAAAAAAEjc4LjQ3LjIxMi4yMTE6OTQ0MyBNRN4TaVynkcwkVAbSBrCvr4X3c3Cygz_4VDUcRhhhYx4yLmRuc2NyeXB0LWNlcnQuRGVDbG91ZFVzLXRlc3Q)                                                                             |
+| DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.DeCloudUs-test` IP: `[2a01:4f8:13a:250b::30]:9443` | [Føj til AdGuard](sdns://AQMAAAAAAAAAHFsyYTAxOjRmODoxM2E6MjUwYjo6MzBdOjk0NDMgTUTeE2lcp5HMJFQG0gawr6-F93NwsoM_-FQ1HEYYYWMeMi5kbnNjcnlwdC1jZXJ0LkRlQ2xvdWRVcy10ZXN0)                                                                |
+| DNS-over-HTTPS | `https://dns.decloudus.com/dns-query`                                        | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.decloudus.com/dns-query&name=dns.decloudus.com) |
+| DNS-over-TLS   | `tls://dns.decloudus.com`                                                    | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.decloudus.com&name=dns.decloudus.com)                         |
 
 ### DNS Privacy
 
@@ -482,7 +482,7 @@ Disse servere blokerer uønsket og tidsspildende indhold samt inkluderer funktio
 
 | Protokol  | Adresse                                |                                                                                                                                                         |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `156.154.70.4` and `156.154.71.4`      | [Føj til AdGuard](adguard:add_dns_server?address=156.154.70.4&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
+| DNS, IPv4 | `156.154.70.4` og `156.154.71.4`       | [Føj til AdGuard](adguard:add_dns_server?address=156.154.70.4&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.4&name=)       |
 | DNS, IPv6 | `2610:a1:1018::4` og `2610:a1:1019::4` | [Føj til AdGuard](adguard:add_dns_server?address=2610:a1:1018::4&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::4&name=) |
 
 ### NextDNS
@@ -505,7 +505,7 @@ Disse servere blokerer uønsket og tidsspildende indhold samt inkluderer funktio
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Kan opbevare 24/48 timers logger mhp. DDoS-/Oversvømmelsesangrebsafbødning.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS opløsere med blokering: Annoncer, sporing, adware, malware, ondsindede aktiviteter og phishing-virksomheder. Blokerer ~1M domæner. Kan opbevare 24/48 timers logger mhp. DDoS-/Oversvømmelsesangrebsafbødning.
 
 #### Adaptiv filtrering (ADA)
 

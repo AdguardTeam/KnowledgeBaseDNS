@@ -28,13 +28,13 @@ Brug af DNS til indholdsblokering har nogle fordele såvel som åbenlyse mangler
 
 ## Hvad er AdGuard DNS?
 
-AdGuard DNS er en af de mest fortrolighedsorienterede DNS-tjenester på markedet. Den understøtter så pålidelige krypteringsprotokoller som DNS-over-HTTPS, DNS-over-TLS og DNS-over-QUIC. Den kan fungere som en alm. DNS-opløser i tilstanden Ikke-filtrering, men den kan også levere indholdsblokering på DNS-niveau: Identificere forespørgsler til annonce-, sporings- og/eller voksendomæner (valgfrit) og reagere med et tomt svar. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
+AdGuard DNS er en af de mest fortrolighedsorienterede DNS-tjenester på markedet. Den understøtter så pålidelige krypteringsprotokoller som DNS-over-HTTPS, DNS-over-TLS og DNS-over-QUIC. Den kan fungere som en alm. DNS-opløser i tilstanden Ikke-filtrering, men den kan også levere indholdsblokering på DNS-niveau: Identificere forespørgsler til annonce-, sporings- og/eller voksendomæner (valgfrit) og reagere med et tomt svar. AdGuard har sin egen hyppigt opdaterede database med navne på domæner, som leverer annoncer, trackere og scam.
 
 ![Omtrentligt skema over, hvordan AdGuard DNS fungerer](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
 Ca. 75% af AdGuard DNS-trafik er krypteret. Det er faktisk dét, der adskiller indholdsblokerende DNS-servere fra de øvrige. Ved at kigge på statistikkerne fra CloudFlare eller Quad9 kan man se, at krypteret DNS kun udgør en lille del af samtlige forespørgsler.
 
-AdGuard DNS findes i to varianter: [Public AdGuard DNS](public-dns/overview) og [Private AdGuard DNS](private-dns/overview). None of these services require the installation of apps. De er nemme at opsætte og anvende, og de giver brugerne det minimum af funktioner, som kræves for at blokere annoncer, trackere, ondsindede websteder og, om ønsket, voksenindhold. Der er ingen begrænsninger af, med hvilke enheder de kan bruges.
+AdGuard DNS findes i to varianter: [Public AdGuard DNS](public-dns/overview) og [Private AdGuard DNS](private-dns/overview). Ingen af disse tjenester kræver installation af apps. De er nemme at opsætte og anvende, og de giver brugerne det minimum af funktioner, som kræves for at blokere annoncer, trackere, ondsindede websteder og, om ønsket, voksenindhold. Der er ingen begrænsninger af, med hvilke enheder de kan bruges.
 
 Trods mange ligheder, så er Private AdGuard DNS og Public AdGuard DNS to forskellige tjenestevarianter. Deres største forskel er, at Private AdGuard DNS kan tilpasses, mens Public AdGuard DNS ikke kan.
 
