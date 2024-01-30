@@ -710,21 +710,11 @@ In "Family" mode, Protected + blocking adult content.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
 
-#### West DNS Server (Main)
-
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
-| DNS-over-TLS | `tls://dns.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one) |
-| DNS-over-QUIC | `quic://dns.comss.one:854` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854) |
-
-#### East DNS Server (Siberia and Far East)
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
-| DNS-over-TLS | `tls://dns.east.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one) |
-| DNS-over-QUIC | `quic://dns.east.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853) |
+| DNS-over-HTTPS | `https://dns.controld.com/comss` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com) |
+| DNS-over-TLS | `tls://comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com) |
+| DNS-over-QUIC | `quic://comss.dns.controld.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
 
 ### CZ.NIC ODVR
 
