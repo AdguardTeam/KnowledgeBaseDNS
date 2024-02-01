@@ -80,9 +80,9 @@ go to http://[::1]:3000
 
 There you will go through the initial configuration wizard.
 
-![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.jpg)
+![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
-![AdGuard Home user creation screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.jpg)
+![AdGuard Home user creation screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 
 See [our article on running AdGuard Home securely](running-securely.md) for guidance on how to select the initial configuration that fits you best.
 
@@ -120,7 +120,7 @@ You can change this behavior in the AdGuard Home [configuration file][conf].
 
 ## Updating {#update}
 
-![An example of an update notification](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.jpg)
+![An example of an update notification](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
 
 When a new version is released, AdGuard Home’s UI shows a notification message and the *Update now* button. Click this button, and AdGuard Home will be automatically updated to the latest version. Your current AdGuard Home executable file is saved inside the `backup` directory along with the current configuration file, so you can revert the changes, if necessary.
 
@@ -174,7 +174,7 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. Select your active connection, right-click it and choose *Properties.*
 
-1. Find *Internet Protocol Version 4 (TCP/IPv4)* (or, for IPv6, *Internet Protocol Version 6 (TCP/IPv6)*) in the list, select it, and then click Properties again.
+1. Find *Internet Protocol Version 4 (TCP/IPv4)* (or, for IPv6, *Internet Protocol Version 6 (TCP/IPv6)*) in the list, select it, and then click *Properties* again.
 
 1. Choose *Use the following DNS server addresses* and enter your AdGuard Home server addresses.
 
@@ -189,6 +189,13 @@ This setup will automatically cover all devices connected to your home router, a
 1. Select the DNS tab and enter your AdGuard Home server addresses.
 
 ### Android
+
+:::note
+
+Instructions for Android devices may differ depending on the OS version and the
+manufacturer.
+
+:::
 
 1. From the Android menu home screen, tap *Settings.*
 
@@ -210,11 +217,11 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. In the *DNS* field, enter your AdGuard Home server addresses.
 
-## Running without superuser (Linux only) {#running-without-superuser}
+## Running without superuser {#running-without-superuser}
 
 You can run AdGuard Home without superuser privileges, but you must either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
 
-### Granting the necessary capabilities
+### Granting the necessary capabilities (Linux only)
 
 Using this method requires the `setcap` utility. You may need to install it using your Linux distribution’s package manager.
 
@@ -236,7 +243,7 @@ dns:
     port: 53
 ```
 
-You can change the port to anything above 1024 to avoid requiring superuser privileges. If the file does not exist, create it in the same folder, type these two lines down, and save.
+You can change the port to anything above 1024 to avoid requiring superuser privileges.
 
 ## Limitations {#limitations}
 

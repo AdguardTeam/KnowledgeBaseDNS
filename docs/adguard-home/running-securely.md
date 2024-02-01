@@ -9,7 +9,7 @@ This page contains a list of additional recommendations to help ensure the secur
 
 The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and convenient option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
 
-::: note
+:::note
 
 The UI currently only allows you to select one interface, but you can actually select multiple addresses through the configuration file. We will be improving the UI in future releases.
 
@@ -23,13 +23,13 @@ If you intend to run AdGuard Home on a **publicly accessible server,** you’ll 
 
 ## Access settings
 
-::: note
+:::note
 
 If your AdGuard Home is not accessible from the outside, you can skip this section.
 
 :::
 
-At the bottom of the *Settings → DNS settings* page you will find the *Access settings* section. These settings allow you to either ban clients that are known to abuse your AdGuard Home instance or to enable the Allowlist mode. The Allowlist mode is recommended for public instances where the number of clients is known and all of the clients are able to use secure DNS.
+At the bottom of the *Settings* → *DNS settings* page you will find the *Access settings* section. These settings allow you to either ban clients that are known to abuse your AdGuard Home instance or to enable the Allowlist mode. The Allowlist mode is recommended for public instances where the number of clients is known and all of the clients are able to use secure DNS.
 
 To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP addresses for allowed clients in the *Allowed clients* field.
 
@@ -37,7 +37,7 @@ To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP address
 
 ## Disabling plain DNS
 
-::: note
+:::note
 
 If your AdGuard Home is not accessible from the outside, you can skip this section.
 
@@ -45,13 +45,13 @@ If your AdGuard Home is not accessible from the outside, you can skip this secti
 
 If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it inaccessible from the outside.
 
-If you want to completely disable plain DNS serving, you can do so on the *Settings → Encryption settings* page.
+If you want to completely disable plain DNS serving, you can do so on the *Settings* → *Encryption settings* page.
 
 If you want to restrict plain DNS to internal use only, stop your AdGuard Home, edit the `dns.bind_hosts` field in the configuration file to contain only the loopback address(es), and restart AdGuard Home.
 
 ## Plain-DNS ratelimiting
 
-::: note
+:::note
 
 If your AdGuard Home is not accessible from the outside, you can skip this section.
 

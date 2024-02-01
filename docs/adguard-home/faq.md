@@ -30,17 +30,17 @@ Most likely, you haven’t configured your device to use AdGuard Home as the def
 
 If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Please check and make sure that:
 
-1. You have enabled the *Block domains using filters and hosts files* setting on the *Settings → General settings* page.
+1. You have enabled the *Block domains using filters and hosts files* setting on the *Settings* → *General settings* page.
 
-1. You have enabled the appropriate security mechanisms, such as Parental Control, on the *Settings → General settings* page.
+1. You have enabled the appropriate security mechanisms, such as Parental Control, on the same page.
 
-1. You have enabled the appropriate filters on the *Filters → DNS blocklists* page.
+1. You have enabled the appropriate filters on the *Filters* → *DNS blocklists* page.
 
-1. You don’t have any exception rule lists that may allow the requests enabled on the *Filters → DNS allowlists* page.
+1. You don’t have any exception rule lists that may allow the requests enabled on the *Filters* → *DNS allowlists* page.
 
-1. You don’t have any DNS rewrites that may interfere on the *Filters → DNS rewrites* page.
+1. You don’t have any DNS rewrites that may interfere on the *Filters* → *DNS rewrites* page.
 
-1. You don’t have any custom filtering rules that may interfere on the *Filters → Custom filtering rules* page.
+1. You don’t have any custom filtering rules that may interfere on the *Filters* → *Custom filtering rules* page.
 
 ## Where can I view the logs? {#logs}
 
@@ -143,7 +143,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 1. Open the web UI.
 
-1. Open the *Settings → DNS settings* page.
+1. Navigate to *Settings* → *DNS settings.*
 
 1. In the *DNS server configuration* section, select the *Custom IP* radio button in the *Blocking mode* selector and enter the IPv4 and IPv6 addresses of the server.
 
@@ -181,13 +181,13 @@ Here are some examples of what cannot be blocked by a DNS-level blocker:
 
 - YouTube, Twitch ads.
 
-- Facebook, Twitter, Instagram sponsored posts.
+- Facebook, X (formerly Twitter), Instagram sponsored posts.
 
-Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker.
+Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker, unless you are ready to block the content as well.
 
 ### Any possibility of dealing with this in the future?
 
-DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases there it won’t be enough or it will require quite complicated configuration.
+DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
 
 [adguard]: https://adguard.com/
 
@@ -207,7 +207,7 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind your AdGuard Home to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
 
 Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the *Fix* button located next to the `address already in use` message on the installation screen.
 
@@ -312,7 +312,7 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it *directly* into `/usr/local/bin` by using the `-o` option of the install script:
+If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
@@ -460,9 +460,9 @@ In all examples below, the PowerShell must be run as Administrator.
 
 Depending on how you installed AdGuard Home, there are different ways to uninstall it.
 
-::: caution
+:::caution
 
-After uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
+Before uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
 
 :::
 
