@@ -192,8 +192,7 @@ This setup will automatically cover all devices connected to your home router, a
 
 :::note
 
-Instructions for Android devices may differ depending on the OS version and the
-manufacturer.
+Instructions for Android devices may differ depending on the OS version and the manufacturer.
 
 :::
 
