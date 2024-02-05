@@ -14,17 +14,16 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 
 ## v1.6
 
-- Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your
-  AdGuard DNS server from unauthorized access:
+- Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
 
     - `allowed_clients` — here you can specify which clients can use your DNS server. This field will have priority over the `blocked_clients` field
     - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
-    - `blocked_domain_rules` — here you can specify the domains that are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
+    - `blocked_domain_rules` — here you can specify which domains are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
 
 - Added new limits to Account limits:
 
-    - `access_rules` — provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
-    - `user_rules` — provides information about the amount of created user rules, as well as the limit on them
+    - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
+    - `user_rules` shows the amount of created user rules, as well as the limit on them
 
 - Added new setting: `ip_log_enabled` for the ability to log client IP addresses and domains.
 
