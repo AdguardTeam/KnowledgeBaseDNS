@@ -349,11 +349,11 @@ Currently supported RR types with examples:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
-Exception rules remove one or all rules:
+Exception rules unblock one or all rules:
 
-- `@@||example.com^$dnsrewrite` removes all DNS rewrite rules.
+- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` removes the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important` {#important-modifier}
 
