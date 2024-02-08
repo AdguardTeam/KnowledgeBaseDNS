@@ -906,16 +906,6 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 
 [AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
-#### Blitz
-
-[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant.
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS, uncensored | `https://blitz.ahadns.com` | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com) |
-| DNS-over-HTTPS, OISD filter | `https://blitz.ahadns.com/1:1` | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com) |
-| DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com)
-
 #### Netherlands
 
 | Protocol | Address | |
@@ -925,15 +915,6 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS | `tls://dot.nl.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net) |
 
-#### India
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS, IPv4 | `45.79.120.233` | [Add to AdGuard](adguard:add_dns_server?address=45.79.120.233&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=45.79.120.233&name=) |
-| DNS, IPv6 | `2400:8904:e001:43::43` | [Add to AdGuard](adguard:add_dns_server?address=2400:8904:e001:43::43&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:8904:e001:43::43&name=) |
-| DNS-over-HTTPS | `https://doh.in.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net) |
-| DNS-over-TLS | `tls://dot.in.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net) |
-
 #### Los Angeles
 
 | Protocol | Address | |
@@ -942,50 +923,6 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 | DNS, IPv6 | `2a04:bdc7:100:70::70` | [Add to AdGuard](adguard:add_dns_server?address=2a04:bdc7:100:70::70&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a04:bdc7:100:70::70&name=) |
 | DNS-over-HTTPS | `https://doh.la.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net) |
 | DNS-over-TLS | `tls://dot.la.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net) |
-
-#### New York
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS, IPv4 | `185.213.26.187` | [Add to AdGuard](adguard:add_dns_server?address=185.213.26.187&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.213.26.187&name=) |
-| DNS, IPv6 | `2a0d:5600:33:3::3` | [Add to AdGuard](adguard:add_dns_server?address=2a0d:5600:33:3::3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:5600:33:3::3&name=) |
-| DNS-over-HTTPS | `https://doh.ny.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net) |
-| DNS-over-TLS | `tls://dot.ny.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net) |
-
-#### Poland
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net) |
-| DNS-over-TLS | `tls://dot.pl.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net) |
-
-#### Italy
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net) |
-| DNS-over-TLS | `tls://dot.it.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net) |
-
-#### Spain
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net) |
-| DNS-over-TLS | `tls://dot.es.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net) |
-
-#### Norway
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.no.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net) |
-| DNS-over-TLS | `tls://dot.no.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net) |
-
-#### Chicago
-
-| Protocol | Address | |
-|----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net) |
-| DNS-over-TLS | `tls://dot.chi.ahadns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net) |
 
 ### Arapurayil
 
