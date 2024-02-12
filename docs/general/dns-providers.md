@@ -461,7 +461,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 | DNS, IPv4      | `156.154.70.1` and `156.154.71.1`                  | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.1&name=) |
 | DNS, IPv6      | `2610:a1:1018::1` and `2610:a1:1019::1`            | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Reliability & Performance 2*
+#### Reliability & Performance 2
 
 These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
 
@@ -517,7 +517,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Has 24h/48h logs for attack DDoS/Flood mitigation.
 
 #### Adaptive Filtering (ADA)
 
@@ -761,7 +761,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### 114DNS
 
-**114DNS** is a professional and high-reliability DNS service.
+[114DNS](https://www.114dns.com) is a professional and high-reliability DNS service.
 
 #### Normal
 
@@ -928,7 +928,7 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 
 [Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
+Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
