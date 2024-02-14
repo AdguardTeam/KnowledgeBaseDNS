@@ -3,7 +3,7 @@ title: Setting up AdGuard Home securely
 sidebar_position: 4
 ---
 
-This page contains a list of additional recommendations to help ensure the security of your AdGuard home.
+This page contains a list of additional recommendations to help ensure the security of your AdGuard Home.
 
 ## Choosing server addresses
 
@@ -17,7 +17,7 @@ The UI currently only allows you to select one interface, but you can actually s
 
 If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually called `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
 
-If you plan to run AdGuard Home on a **router within a small isolated network,** select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
+If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
 
 If you intend to run AdGuard Home on a **publicly accessible server,** you’ll probably want to select the *All interfaces* option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
 

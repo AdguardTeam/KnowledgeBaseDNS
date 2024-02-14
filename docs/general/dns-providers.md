@@ -41,7 +41,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `94.140.14.15` and `94.140.15.16`                  | [Add to AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS),  [Add to AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS) |
+| DNS, IPv4      | `94.140.14.15` and `94.140.15.16`                  | [Add to AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS) |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` and `2a10:50c0::bad2:ff`      | [Add to AdGuard](adguard:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS) |
 | DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS)
 | DNS-over-TLS | `tls://family.adguard-dns.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS) |
