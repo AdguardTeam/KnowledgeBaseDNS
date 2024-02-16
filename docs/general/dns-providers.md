@@ -517,7 +517,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Has 24h/48h logs for attack DDoS/Flood mitigation.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Has 24h/48h logs for DDoS/Flood attack mitigation.
 
 #### Adaptive Filtering (ADA)
 
