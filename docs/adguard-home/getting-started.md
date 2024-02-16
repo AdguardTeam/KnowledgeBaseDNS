@@ -168,11 +168,11 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. Open *Control Panel* from the Start menu or Windows search.
 
-1. Go to *Network and Internet* and then to *Network and Sharing Center.*
+1. Go to *Network and Internet* and then to *Network and Sharing Center*.
 
 1. On the left side of the screen, find the *Change adapter settings* button and click it.
 
-1. Select your active connection, right-click it and choose *Properties.*
+1. Select your active connection, right-click it and choose *Properties*.
 
 1. Find *Internet Protocol Version 4 (TCP/IPv4)* (or, for IPv6, *Internet Protocol Version 6 (TCP/IPv6)*) in the list, select it, and then click *Properties* again.
 
@@ -180,11 +180,11 @@ This setup will automatically cover all devices connected to your home router, a
 
 ### macOS
 
-1. Click the Apple icon and go to *System Preferences.*
+1. Click the Apple icon and go to *System Preferences*.
 
-1. Click *Network.*
+1. Click *Network*.
 
-1. Select the first connection in your list and click *Advanced.*
+1. Select the first connection in your list and click *Advanced*.
 
 1. Select the DNS tab and enter your AdGuard Home server addresses.
 
@@ -196,19 +196,19 @@ Instructions for Android devices may differ depending on the OS version and the 
 
 :::
 
-1. From the Android menu home screen, tap *Settings.*
+1. From the Android menu home screen, tap *Settings*.
 
 1. Tap *Wi-Fi* on the menu. The screen with all of the available networks will be displayed (it is impossible to set custom DNS for mobile connection).
 
-1. Long press the network you’re connected to and tap *Modify Network.*
+1. Long press the network you’re connected to and tap *Modify Network*.
 
-1. On some devices, you may need to check the box for *Advanced* to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from *DHCP* to *Static.*
+1. On some devices, you may need to check the box for *Advanced* to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from *DHCP* to *Static*.
 
 1. Change set DNS 1 and DNS 2 values to your AdGuard Home server addresses.
 
 ### iOS
 
-1. From the home screen, tap *Settings.*
+1. From the home screen, tap *Settings*.
 
 1. Select *Wi-Fi* from the left menu (it is impossible to configure DNS for mobile networks).
 
