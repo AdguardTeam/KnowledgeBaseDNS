@@ -188,3 +188,15 @@ html[lang='ko'] .navbar__search {
   /* ... */
 }
 
+.youtube-video {
+  width: 100%;
+  max-width: 560px;
+  height: 200px;
+}
+
+@media (min-width: 593px) {
+  .youtube-video {
+    height: 315px;
+  }
+}
+
