@@ -50,25 +50,25 @@ By doing that, you will lose connections to Wi-Fi routers and other specific net
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. It's important to note that the exact steps may vary depending on the version of Android you're using and the device manufacturer.
+There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
 
 #### Clear DNS cache via Chrome
 
-Google Chrome, often the go-to browser on Android, holds its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
 
 1. Launch Chrome on your Android device
-1. Enter `chrome://net-internals/#DNS` into address bar
+1. Type 'chrome://net-internals/#DNS' in the address bar
 1. On the DNS lookup page, choose DNS from the menu on the left
-1. In the panel on the right, tap the `Clear Host Cache` button to purge the DNS cache on your device
+1. In the panel on the right, tap the `Clear Host Cache` button to clear the DNS cache on your device
 
 #### Modify the Wi-Fi network to Static
 
-To clear your Android device's DNS cache by setting a Static IP for your Wi-Fi connection, follow these steps:
+To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
 1. Go to *Settings → Wi-Fi* and choose the network you're connected to
 1. Look for IP settings and select *Static*
-1. Fill in the required fields. The necessary information can be obtained from your network administrator or your router’s configuration page
-1. After entering the required info, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings, clearing the DNS cache in the process.
+1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
+1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
 
 #### Reset network settings
 
