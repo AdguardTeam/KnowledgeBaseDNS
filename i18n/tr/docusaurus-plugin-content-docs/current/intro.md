@@ -16,15 +16,15 @@ Varsayılan DNS sunucusu genellikle İSS'niz tarafından sağlanır. Bu, İSS'ni
 
 :::
 
-![Cihazınız, uygulamaların gitmek istediği alan adının IP adreslerini almak için her zaman bir DNS sunucusu kullanır](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+![Cihazınız, çeşitli uygulamalar, hizmetler, vb. tarafından erişilen alan adlarının IP adreslerini almak için her zaman bir DNS sunucusu kullanır.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
 DNS düzeyinde belirli siteleri engelleyebilen DNS sunucuları da vardır. Nasıl çalışırlar? Cihazınız, ister reklam ister izleyici olsun, "kötü" bir istek gönderdiğinde, bir DNS sunucusu engellenen bir alan adı için yönlendirilemeyen bir IP adresiyle yanıt vererek bağlantıyı engeller.
 
 ## İçerik engelleme için neden DNS kullanılmalı
 
-Bugünlerde TV'den akıllı ampullere, mobil cihazlardan akıllı otomobile kadar her şey kesinlikle internete bağlı. İnternetin olduğu her yerde reklamlar ve izleyiciler de vardır. Bu durumda, tarayıcı tabanlı bir reklam engelleyicinin yetersiz olduğu kanıtlanmıştır. Daha iyi bir koruma elde etmek için DNS'i VPN ve reklam engelleyici ile birlikte kullanın.
+Bugünlerde TV'den akıllı ampullere, mobil cihazlardan akıllı arabalara kadar her şey kesinlikle internete bağlı. İnternetin olduğu her yerde reklamlar ve izleyiciler de vardır. Bu durumda, tarayıcı tabanlı bir reklam engelleyicinin yetersiz olduğu kanıtlanmıştır. Daha iyi bir koruma elde etmek için DNS'i VPN ve reklam engelleyici ile birlikte kullanın.
 
-İçerik engelleme için DNS kullanmanın bazı avantajları olduğu kadar bariz kusurları da vardır. Bir yandan, DNS sadece tarayıcıları değil tüm cihazları gözlemlediği için kör noktalara sahip değildir. Ancak öte yandan, DNS engelleme tek başına kozmetik filtreleme sağlayamaz.
+İçerik engelleme için DNS kullanmanın bazı avantajları olduğu kadar bariz kusurları da vardır. Bir yandan DNS, tüm cihazlardan ve uygulamalarından gelen sorgular için döngüde yer alıyor. Ancak öte yandan, DNS engelleme tek başına kozmetik filtreleme sağlayamaz.
 
 ## AdGuard DNS nedir?
 
@@ -34,10 +34,10 @@ AdGuard DNS, piyasadaki en gizlilik odaklı DNS hizmetlerinden biridir. DNS-over
 
 AdGuard DNS trafiğinin yaklaşık %75'i şifrelenmiştir. DNS sunucularını engelleyen içeriği diğerlerinden ayıran aslında budur. CloudFlare veya Quad9 istatistiklerine bakarsanız, şifrelenmiş DNS'nin tüm sorguların sadece küçük bir kısmı olduğunu görürsünüz.
 
-AdGuard DNS iki ana biçimde mevcuttur: [genel AdGuard DNS](public-dns/overview) ve [özel AdGuard DNS](private-dns/overview). None of these services require the installation of apps. Kurulumu ve kullanımı kolaydır ve kullanıcılara reklamları, izleyicileri, kötü amaçlı siteleri ve (gerekirse) yetişkinlere yönelik içeriği engellemek için gereken minimum özellikleri sağlar. Hangi cihazlarla kullanılabileceği konusunda herhangi bir kısıtlama yoktur.
+AdGuard DNS iki ana biçimde mevcuttur: [Genel AdGuard DNS](public-dns/overview) ve [Özel AdGuard DNS](private-dns/overview). None of these services require the installation of apps. Kurulumu ve kullanımı kolaydır ve kullanıcılara reklamları, izleyicileri, kötü amaçlı siteleri ve (gerekirse) yetişkinlere yönelik içeriği engellemek için gereken minimum özellikleri sağlar. Hangi cihazlarla kullanılabileceği konusunda herhangi bir kısıtlama yoktur.
 
-Pek çok benzerliğe rağmen, özel AdGuard DNS ve genel AdGuard DNS iki farklı hizmettir. Temel farkları, özel AdGuard DNS'i özelleştirebilmeniz, ancak genel AdGuard DNS'nin yapamamasıdır.
+Pek çok benzerliğe rağmen, özel AdGuard DNS ve genel AdGuard DNS iki farklı üründür. Temel farkları, Özel AdGuard DNS'i özelleştirebilmeniz, ancak Genel AdGuard DNS'nin yapamamasıdır.
 
 ## AdGuard ürünlerinde DNS filtreleme modülü
 
-AdGuard VPN dahil olmak üzere tüm büyük AdGuard ürünlerinde, güvendiğiniz bir sağlayıcının DNS sunucusunu seçebileceğiniz bir **DNS filtreleme modülü** bulunur. Tabii ki AdGuard DNS Default, AdGuard DNS Non-filtering ve AdGuard DNS Family Protection listede yer alıyor. Ayrıca AdGuard uygulamaları, kullanıcıların [AdGuard DNS'i kolayca yapılandırmasına ve kullanmasına](https://adguard-dns.io/public-dns.html) olanak tanır — genel veya özel.
+AdGuard VPN dahil olmak üzere tüm büyük AdGuard ürünlerinde, güvendiğiniz bir sağlayıcının DNS sunucusunu seçebileceğiniz bir **DNS filtreleme modülü** bulunur. Tabii ki AdGuard DNS Default, AdGuard DNS Non-filtering ve AdGuard DNS Family Protection listede yer alıyor. Ayrıca AdGuard uygulamaları, kullanıcıların [AdGuard DNS'i kolayca yapılandırmasına ve kullanmasına](https://adguard-dns.io/public-dns.html) olanak tanır — Genel veya Özel.

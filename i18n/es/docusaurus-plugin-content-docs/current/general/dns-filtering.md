@@ -33,7 +33,7 @@ El filtrado de DNS puede desglosarse en dos funciones distintas: cifrar y rediri
 
 ### Servidores DNS
 
-Hay miles de servidores DNS para elegir, y todos son únicos en sus propiedades y propósitos. La mayoría simplemente devuelve la dirección IP del dominio solicitado, pero algunos tienen funciones adicionales: bloquean publicidad, seguimiento, dominios para adultos, etc. Hoy en día, todos los principales servidores DNS emplean uno o varios protocolos de cifrado fiables: DNS-over-HTTPS, DNS-over-TLS. AdGuard también proporciona un [servicio de DNS](https://adguard-dns.io/), y fue el pionero en ofrecer el nuevo y prometedor protocolo de cifrado [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html). AdGuard tiene diferentes servidores para diferentes objetivos. Este diagrama ilustra cómo funcionan los servidores de bloqueo de AdGuard:
+Hay miles de servidores DNS para elegir, y todos son únicos en sus propiedades y propósitos. La mayoría simplemente devuelve la dirección IP del dominio solicitado, pero algunos tienen funciones adicionales: bloquean publicidad, seguimiento, dominios para adultos, etc. Hoy en día, todos los principales servidores DNS emplean uno o varios protocolos de cifrado fiables: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard tiene diferentes servidores para diferentes objetivos. Este diagrama ilustra cómo funcionan los servidores de bloqueo de AdGuard:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ Otros proveedores de DNS pueden funcionar de forma diferente, así que infórmat
 
 ### Listas de bloqueo de DNS locales
 
-Pero al depender sólo de los servidores DNS para filtrar tu tráfico DNS, se pierde toda la flexibilidad. Si él servidor seleccionado bloquea un dominio, no podrás acceder a él. Con AdGuard, ni siquiera es necesario configurar un servidor DNS específico para filtrar el tráfico DNS. Todos los productos de AdGuard te permiten emplear listas de bloqueo DNS, ya sean simples archivos de hosts o listas que utilizan [sintaxis más avanzada](dns-filtering-syntax.md). Funcionan de manera similar a las listas de bloqueo regulares: cuando una solicitud DNS coincide con una de las reglas de la lista de filtros activa, se bloquea. Para ser más precisos, se desvía a un «agujero negro».
+Pero al depender sólo de los servidores DNS para filtrar tu tráfico DNS, se pierde toda la flexibilidad. Si él servidor seleccionado bloquea un dominio, no podrás acceder a él. Con AdGuard, ni siquiera es necesario configurar un servidor DNS específico para filtrar el tráfico DNS. Todos los productos de AdGuard te permiten emplear listas de bloqueo DNS, ya sean simples archivos de hosts o listas que utilizan [sintaxis más avanzada](dns-filtering-syntax.md). Funcionan de manera similar a las listas de bloqueo regulares: cuando una solicitud DNS coincide con una de las reglas de la lista de filtros activa, se bloquea. To be more precise, the DNS server gives a non-routable IP address for such a request.
 
 :::tip
 
-In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+In AdGuard for iOS, first you have to enable *Advanced mode* in *Settings* in order to get access to DNS blocking.
 
 :::
 
@@ -67,7 +67,7 @@ First of all, we have to mention that with AdGuard you don't have to choose. You
 
 **Cons of DNS filtering:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNS filtering is "coarse", which means it doesn't remove whitespace left behind a blocked ad or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 

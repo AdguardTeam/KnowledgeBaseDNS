@@ -50,9 +50,27 @@ Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øv
 
 ### Android
 
-På en Android-enhed ryddes DNS-cachen nemmest ved at slå Flytilstand til og fra. Flytilstand kan slås til/fra via ruden Hurtige indstillinger.
+There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
 
-En "hård genstart" vil ligeledes rydde enhedens DNS-cache. For at gøre dette, tryk og hold på tænd-/slukknappen nedtrykket i mindst 20 sek. Dette tvinger (normalt) enheden til at genstarte manuelt, hvorefter DNS-cachen er renset.
+#### Clear DNS cache via Chrome
+
+Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+
+1. Launch Chrome on your Android device
+1. Type `chrome://net-internals/#DNS` in the address bar
+1. On the DNS lookup page, choose DNS from the menu on the left
+1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
+
+#### Modify the Wi-Fi network to Static
+
+To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+
+1. Go to *Settings → Wi-Fi* and choose the network you're connected to
+1. Look for IP settings and select *Static*
+1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
+1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
+
+#### Reset network settings
 
 En anden mulighed er at nulstille enhedens netværksindstillingerne via Indstillinger-appen. Åbn *Indstillinger System Avanceret Nulstillingsmuligheder Nulstil netværksindstillinger* og tryk på *Nulstil indstillinger* for at bekræfte.
 

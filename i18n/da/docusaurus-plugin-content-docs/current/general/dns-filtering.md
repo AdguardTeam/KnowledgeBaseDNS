@@ -33,7 +33,7 @@ DNS-filtrering kan opdeles i to separate funktioner: At kryptere og omdirigere D
 
 ### DNS-servere
 
-Der er tusindvis af DNS-servere at vælge imellem, alle unikke i deres egenskaber og formål. De fleste returnerer blot IP-adressen på det forespurgte domæne, men nogle har ekstrafunktioner, da de blokerer annonce-, sporings-, voksendomæner mv. I dag anvender alle større DNS-servere en eller flere pålidelige krypteringsprotokoller: DNS-over-HTTPS, DNS-over-TLS. AdGuard leverer også en [DNS-tjeneste](https://adguard-dns.io/), der også var verdens første til at tilbyde den nye og meget lovende [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html)-krypteringsprotokol. AdGuard har forskellige servere til forskellige mål. Dette diagram illustrerer, hvordan AdGuard-blokeringsservere fungerer:
+Der er tusindvis af DNS-servere at vælge imellem, alle unikke i deres egenskaber og formål. De fleste returnerer blot IP-adressen på det forespurgte domæne, men nogle har ekstrafunktioner, da de blokerer annonce-, sporings-, voksendomæner mv. I dag anvender alle større DNS-servere en eller flere pålidelige krypteringsprotokoller: DNS-over-HTTPS, DNS-over-TLS. AdGuard leverer også en [DNS-tjeneste](https://adguard-dns.io/), der endda var verdens første til at tilbyde den nye og meget lovende [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html)-krypteringsprotokol. AdGuard har forskellige servere til forskellige mål. Dette diagram illustrerer, hvordan AdGuard-blokeringsservere fungerer:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ Andre DNS-udbydere fungerer muligvis anderledes, så find ud af mere om dem, ind
 
 ### Lokale DNS-blokeringslister
 
-Ved kun at stole på DNS-servere til at filtrere DNS-trafik, mister man imidlertid al fleksibilitet. Blokerer den valgte server et domæne, kan man ikke tilgå det. Med AdGuard behøver man ikke engang at opsætte nogen bestemt DNS-server til at filtrere DNS-trafik. Alle AdGuard-produkter muliggør brug af DNS-sortlister, fra simple værtsfiler til lister med [mere avancerede syntakser](dns-filtering-syntax.md). De fungerer på samme måde som alm. sortlister: Matcher en DNS-forespørgsel en af reglerne i den aktive filterliste, blokeres den. Mere præcist, så omdirigeres den til et "sort hul".
+Ved kun at stole på DNS-servere til at filtrere DNS-trafik, mister man imidlertid al fleksibilitet. Blokerer den valgte server et domæne, kan man ikke tilgå det. Med AdGuard behøver man ikke engang at opsætte nogen bestemt DNS-server til at filtrere DNS-trafik. Alle AdGuard-produkter muliggør brug af DNS-sortlister, fra simple værtsfiler til lister med [mere avancerede syntakser](dns-filtering-syntax.md). De fungerer på samme måde som alm. sortlister: Matcher en DNS-forespørgsel en af reglerne i den aktive filterliste, blokeres den. For at være mere præcis leverer DNS-serveren en ikke-rutbar IP-adresse ved en sådan forespørgsel.
 
 :::tip
 
-I AdGuard til iOS skal *Avanceret tilstand* først aktiveres i indstillingerne for at få adgang til DNS-blokering.
+I AdGuard til iOS skal *Avanceret tilstand* først aktiveres i *Indstillinger* for at få adgang til DNS-blokering.
 
 :::
 

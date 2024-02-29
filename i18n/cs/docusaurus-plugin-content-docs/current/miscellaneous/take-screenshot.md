@@ -54,7 +54,7 @@ Na některých noteboocích musíte podržet *Fn* a pak místo toho stisknout *P
 
 *Poznámka: Tlačítko PrtScn (Print Screen) může být na různých klávesnicích označováno různými zkratkami — PrntScrn, PrtScn, PrtScr nebo PrtSc.*
 
-Windows zachytí celou obrazovku a zkopíruje ji do (neviditelné) schránky.
+Windows zachytí celou obrazovku a zkopíruje ji do schránky.
 
 Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující kombinaci:
 

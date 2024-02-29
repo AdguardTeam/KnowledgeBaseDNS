@@ -347,11 +347,11 @@ Aktuálně podporované typy RR s příklady:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` odpoví s prázdnou odezvou `NOERROR` pro všechny požadavky `AAAA` mimo jeden pro `example.org`.
 
-Pravidla výjimek odstraňují jedno nebo všechna pravidla:
+Pravidla výjimek odblokují jedno nebo všechna pravidla:
 
-- `@@||example.com^$dnsrewrite` odstraní všechna pravidla pro přepis DNS.
+- `@@||example.com^$dnsrewrite` odblokuje všechna pravidla pro přepis DNS.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` odstraní pravidlo pro přepis DNS, které přidá záznam `A` s hodnotou `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` odblokuje pravidlo pro přepis DNS, které přidá záznam `A` s hodnotou `1.2.3.4`.
 
 #### `important` {#important-modifier}
 

@@ -54,7 +54,7 @@ If this method doesn’t work, check *Settings* → *Advanced* features to enabl
 
 *请注意：PrtScn（屏幕截图键）按钮在各种键盘上可能有不同的缩写 - PrntScrn、PrtScn、PrtScr 或 PrtSc。*
 
-Windows 捕获整个屏幕并将其复制到（不可见的）剪贴板。
+Windows captures the entire screen and copies it to the clipboard.
 
 要对一个活动窗口进行截图，请使用以下组合。
 

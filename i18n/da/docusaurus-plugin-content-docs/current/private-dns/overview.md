@@ -130,7 +130,7 @@ Funktionen *Sortlister* giver mulighed for at angive, hvilke domæner, man vil b
 
 ### Sikkerhedsindstillinger
 
-Selvom man er opmærksom på alle onlinesvindlernes tricks, er der altid en risiko for, at man utilsigtet får klikket på et ondsindet link. For at beskytte mod sådanne uheld, gå til afsnittet *Sikkerhedsindstillinger* og markér afkrydsningsfelterne ud for de her anførte valgmuligheder.
+Selvom man er opmærksom på alle onlinesvindlernes tricks, er der altid en risiko for et utilsigtet klik på et ondsindet link. For at beskytte mod sådanne uheld, gå til afsnittet *Sikkerhedsindstillinger* og markér afkrydsningsfelterne ud for de her anførte valgmuligheder.
 
 Funktionen *Blokér ondsindede, phishing- og svindeldomæner* blokerer domæner, som findes i den dedikerede database. *Blokér nyregistrerede domæner* blokerer alle domæner, som er registreret for mindre end 30 dage siden, og som ofte anses for risikable for onlinefortroligheden.
 

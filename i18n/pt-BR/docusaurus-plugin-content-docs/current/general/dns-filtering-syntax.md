@@ -314,7 +314,7 @@ resultará em uma resposta com dois registros `A`.
 
 Tipos de RR atualmente compatíveis, com exemplos:
 
-- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adiciona uma gravação `PTR`para DNS reverso. Solicitações DNS reversas para `1.2.3.4` para o servidor DNS resultarão em `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR` record for reverse DNS. Solicitações DNS reversas para `1.2.3.4` para o servidor DNS resultarão em `example.net`.
 
   **NOTA:** o IP DEVE estar na ordem inversa. See [RFC 1035][rfc1035].
 
@@ -347,11 +347,11 @@ Tipos de RR atualmente compatíveis, com exemplos:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responde com um `NOERROR` vazio responde a todos os pedidos `AAAA` exceto os pedidos para `example.org`.
 
-As regras de exceção removem uma ou todas as regras:
+Exception rules unblock one or all rules:
 
-- `@@||example.com^$dnsrewrite` remove todas as regras de reescrita de DNS.
+- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` remove a regra de reescrita de DNS que adiciona um registro `A` com o valor `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important` {#important-modifier}
 

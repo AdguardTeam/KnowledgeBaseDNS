@@ -6,100 +6,14 @@ toc_max_heading_level: 4
 ---
 
 <!--
-    The content below is simply an automatic conversion from the OpenAPI spec
-    https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
-    https://swagger-markdown-ui.netlify.app/.
-
-    Changelog is from here:
-    https://api.adguard-dns.io/static/api/CHANGELOG.md
+    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-## AdGuard DNS API
+Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overview.md). Pro kompletní seznam změn AdGuard DNS API navštivte [tuto stránku](private-dns/api/changelog.md).
 
-Dokumentace DNS API
-
-## Seznam změn AdGuard DNS API
-
-### v1.0
-
-- Přidáno ověřování.
-- Operace CRUD se zařízeními a DNS servery.
-- Protokol dotazů.
-- Stahování souborů DoT a DoT .mobileconfig.
-- Seznamy filtrů a webové služby.
-
-### v1.1
-
-- Přidány metody pro načítání statistik podle času, domén, společností a zařízení.
-
-- Přidána metoda pro aktualizaci nastavení zařízení.
-- Opravena definice povinných polí.
-
-### v1.2
-
-- Přidány nové typy protokolů DNS a DNSCrypt. Zastaralé protokoly PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP a DNSCRYPT_UDP budou později odstraněny.
-
-### v1.3
-
-- Přidána metoda pro získání limitů účtu.
-
-### v1.4
-
-- Přidána konfigurovatelná možnost blokování odezvy: výchozí (0.0.0.0), REFUSED, NXDOMAIN nebo vlastní IP adresa.
-
-### v1.5
-
-- Přidáno nové nastavení `block_nrd` a seskupení všech nastavení souvisejících se zabezpečením na jedno místo.
-
-#### Změněn model pro nastavení bezpečného prohlížení
-
-``` json
-{
-   "enabled": true
-}
-```
-
-na:
-
-``` json
-{
-   "enabled": true,
-   "block_dangerous_domains": true,
-   "block_nrd": false
-}
-```
-
-kde `enabled` je nyní ovládání všech nastavení ve skupině, `block_dangerous_domains` je pole předchozího modelu "enabled" a `block_nrd` je nastavení pro filtrování nově registrovaných domén.
-
-#### Změněn model pro ukládání nastavení serveru
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_enabled" : true,
-  ...
-}
-```
-
-na:
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_settings" : {
-     "enabled": true,
-     "block_dangerous_domains": true,
-     "block_nrd": false
-  }
-  ...
-}
-```
-
-zde je použito nové pole `safebrowsing_settings` místo zastaralého `safebrowsing_enabled`, jehož hodnota je uložena v `block_dangerous_domains`.
-
-## Verze: 1.5
+## Aktuální verze: 1.6
 
 ### /oapi/v1/account/limits
 
@@ -423,8 +337,6 @@ Vygeneruje přístupový a obnovovací token
 | 400 | Chybějící požadované parametry                              |
 | 401 | Neplatná pověření, poskytnutý token MFA nebo obnovený token |
 
-null
-
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -485,8 +397,6 @@ Odvolá obnovovací token
 | Kód | Popis                    |
 | --- | ------------------------ |
 | 200 | Obnovovací token odvolán |
-
-null
 
 ### /oapi/v1/stats/categories
 

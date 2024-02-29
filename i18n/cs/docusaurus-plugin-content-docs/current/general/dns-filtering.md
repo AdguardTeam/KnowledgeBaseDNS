@@ -33,7 +33,7 @@ DNS filtrování lze rozdělit na dvě samostatné funkce: šifrování a přesm
 
 ### DNS servery
 
-Na výběr jsou tisíce DNS serverů, které jsou jedinečné svými vlastnostmi a účelem. Většina z nich jednoduše vrací IP adresu požadované domény, ale některé mají i další funkce: blokují reklamy, slídiče, domény pro dospělé atd. V současné době všechny hlavní DNS servery používají jeden nebo více spolehlivých šifrovacích protokolů: DNS-over-HTTPS, DNS-over-TLS. AdGuard také poskytuje [ službu DNS ](https://adguard-dns.io/)a jako první na světě nabízí velmi nový a slibný šifrovací protokol [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html). AdGuard má různé servery pro různé cíle. Tento diagram znázorňuje, jak fungují blokovací servery AdGuardu:
+Na výběr jsou tisíce DNS serverů, které jsou jedinečné svými vlastnostmi a účelem. Většina z nich jednoduše vrací IP adresu požadované domény, ale některé mají i další funkce: blokují reklamy, slídiče, domény pro dospělé atd. V současné době všechny hlavní DNS servery používají jeden nebo více spolehlivých šifrovacích protokolů: DNS-over-HTTPS, DNS-over-TLS. AdGuard také poskytuje [službu DNS](https://adguard-dns.io/) a jako první na světě nabízí velmi nový a slibný šifrovací protokol [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html). AdGuard má různé servery pro různé cíle. Tento diagram znázorňuje, jak fungují blokovací servery AdGuardu:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ Jiní poskytovatelé DNS mohou fungovat jinak, proto si o nich zjistěte více i
 
 ### Místní DNS seznam blokovaných
 
-Spoléháte-li se však na servery DNS pouze při filtrování provozu DNS, ztrácíte veškerou flexibilitu. Pokud vybraný server blokuje doménu, nemáte k ní přístup. S AdGuardem nemusíte pro filtrování provozu DNS konfigurovat žádný konkrétní server DNS. Všechny produkty AdGuardu umožňují používat DNS seznamy zakázaných, ať už se jedná o jednoduché soubory hosts nebo seznamy, které používají [pokročilejší syntaxi](dns-filtering-syntax.md). Fungují podobně jako běžné seznamy zakázaných: pokud požadavek DNS odpovídá jednomu z pravidel v aktivním seznamu filtrů, je zablokován. Přesněji řečeno, je přesměrován do "černé díry".
+Spoléháte-li se však na servery DNS pouze při filtrování provozu DNS, ztrácíte veškerou flexibilitu. Pokud vybraný server blokuje doménu, nemáte k ní přístup. S AdGuardem nemusíte pro filtrování provozu DNS konfigurovat žádný konkrétní server DNS. Všechny produkty AdGuardu umožňují používat DNS seznamy zakázaných, ať už se jedná o jednoduché soubory hosts nebo seznamy, které používají [pokročilejší syntaxi](dns-filtering-syntax.md). Fungují podobně jako běžné seznamy zakázaných: pokud požadavek DNS odpovídá jednomu z pravidel v aktivním seznamu filtrů, je zablokován. Přesněji řečeno, DNS server poskytne pro takový požadavek nesměrovatelnou IP adresu.
 
 :::tip
 
-V aplikaci AdGuard pro iOS musíte nejprve v nastavení povolit *Pokročilý režim*, abyste získali přístup k DNS blokování.
+V aplikaci AdGuard pro iOS musíte nejprve v *Nastavení* povolit *Pokročilý režim*, abyste získali přístup k DNS blokování.
 
 :::
 
@@ -67,7 +67,7 @@ Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můž
 
 **Nevýhody DNS filtrování:**
 
-1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstávají za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
+1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstala za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Příklad rozdílu mezi filtrováním DNS a filtrováním sítě*
 

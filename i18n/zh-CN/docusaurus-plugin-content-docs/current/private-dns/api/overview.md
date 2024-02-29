@@ -1,9 +1,14 @@
 ---
 title: 概览
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程序中。
 
@@ -11,7 +16,7 @@ AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程
 
 ### 生成访问令牌
 
-使用给定的参数对以下 URL 发出 POST 请求以生成 `access_token`：
+Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -50,7 +55,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### 刷新以生成访问令牌
 
-访问令牌有有效期限 过期后，您的应用将不得不使用 `refresh token` 以请求新的 `access token`。
+访问令牌有有效期限 Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 使用给定的参数发出以下 POST 请求以获取新的访问令牌：
 
@@ -98,7 +103,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### 访问API
 
-生成访问和刷新令牌后，可以通过在标头中传递访问令牌来进行 API 调用。
+Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
 - 标头名称应为 `Authorization`
 - 标头值应为 `Bearer {access_token}`
@@ -107,17 +112,21 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### Reference
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Please see the methods reference [here](reference.md).
 
 ### 开源API 规范
 
 OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]。
 
-您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以在 [https://editor.swagger.io/][swagger] 打开本文件。
+您可以使用不同的工具来查看可用 API 方法的列表。 For instance, you can open this file in [https://editor.swagger.io/][swagger].
+
+### Changelog
+
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Feedback
 
-如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您想添加什么。
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

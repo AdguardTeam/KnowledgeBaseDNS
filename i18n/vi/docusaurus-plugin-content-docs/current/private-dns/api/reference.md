@@ -6,100 +6,14 @@ toc_max_heading_level: 4
 ---
 
 <!--
-    The content below is simply an automatic conversion from the OpenAPI spec
-    https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
-    https://swagger-markdown-ui.netlify.app/.
-
-    Changelog is from here:
-    https://api.adguard-dns.io/static/api/CHANGELOG.md
+    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-## AdGuard DNS API
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-DNS API documentation
-
-## AdGuard DNS API Change Log
-
-### v1.0
-
-- Added authentication.
-- CRUD operations with devices and DNS servers.
-- Query log.
-- Downloading DOT and DOT .mobileconfig.
-- Filter Lists and Web-Services.
-
-### v1.1
-
-- Added methods to retrieve statistics by time, domains, companies and devices.
-
-- Added method for updating device settings.
-- Fixed required fields definition.
-
-### v1.2
-
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
-
-### v1.3
-
-- Added method to get account limits.
-
-### v1.4
-
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
-
-### v1.5
-
-- Added new setting `block_nrd` and group all security-related settings to one place.
-
-#### Model for safebrowsing settings changed from
-
-``` json
-{
-   "enabled": true
-}
-```
-
-to:
-
-``` json
-{
-   "enabled": true,
-   "block_dangerous_domains": true,
-   "block_nrd": false
-}
-```
-
-where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
-
-#### Model for saving server settings changed from
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_enabled" : true,
-  ...
-}
-```
-
-to:
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_settings" : {
-     "enabled": true,
-     "block_dangerous_domains": true,
-     "block_nrd": false
-  }
-  ...
-}
-```
-
-here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
-
-## Version: 1.5
+## Current version: 1.6
 
 ### /oapi/v1/account/limits
 
@@ -423,8 +337,6 @@ Generates Access and Refresh token
 | 400  | Missing required parameters                              |
 | 401  | Invalid credentials, MFA token or refresh token provided |
 
-null
-
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -485,8 +397,6 @@ Revokes a Refresh Token
 | Code | Description           |
 | ---- | --------------------- |
 | 200  | Refresh token revoked |
-
-null
 
 ### /oapi/v1/stats/categories
 

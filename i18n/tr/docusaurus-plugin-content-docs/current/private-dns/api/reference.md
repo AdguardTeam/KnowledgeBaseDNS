@@ -6,100 +6,14 @@ toc_max_heading_level: 4
 ---
 
 <!--
-    The content below is simply an automatic conversion from the OpenAPI spec
-    https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
-    https://swagger-markdown-ui.netlify.app/.
-
-    Changelog is from here:
-    https://api.adguard-dns.io/static/api/CHANGELOG.md
+    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-## AdGuard DNS API
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-DNS API belgeleri
-
-## AdGuard DNS API Değişiklik Günlüğü
-
-### v1.0
-
-- Kimlik doğrulama eklendi.
-- Cihazlar ve DNS sunucularıyla CRUD işlemleri.
-- Sorgu günlüğü.
-- DoT ve DoT .mobileconfig dosyasının indirilmesi.
-- Filtre Listeleri ve Web Hizmetleri.
-
-### v1.1
-
-- İstatistikleri zamana, alan adlarına, şirketlere ve cihazlara göre almak için yöntemler eklendi.
-
-- Cihaz ayarlarını güncellemek için yöntem eklendi.
-- Gerekli alanların tanımı düzeltildi.
-
-### v1.2
-
-- Yeni protokol türleri DNS ve DNSCrypt eklendi. Daha sonra çıkarılacak olan PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP ve DNSCRYPT_UDP kaldırılacaktır.
-
-### v1.3
-
-- Hesap limitlerini almak için yöntem eklendi.
-
-### v1.4
-
-- Yanıtın engellenmesi için yapılandırılabilir seçenek eklendi: varsayılan (0.0.0.0), REFUSED, NXDOMAIN veya özel IP adresi.
-
-### v1.5
-
-- Yeni `block_nrd` ayarı eklendi ve güvenlikle ilgili tüm ayarlar tek bir yerde toplandı.
-
-#### Güvenli gezinti ayarları için model şu şekilde değiştirildi
-
-``` json
-{
-   "enabled": true
-}
-```
-
-şuna:
-
-``` json
-{
-   "enabled": true,
-   "block_dangerous_domains": true,
-   "block_nrd": false
-}
-```
-
-burada `enabled` artık gruptaki tüm ayarları kontrol ediyor, b`lock_dangerous_domains` önceki model alanı "enabled" ve `block_nrd` yeni kaydedilen alan adların filtrelemeye yönelik ayarlardır.
-
-#### Sunucu ayarlarını kaydetme modeli şu şekilde değiştirildi
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_enabled" : true,
-  ...
-}
-```
-
-şuna:
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_settings" : {
-     "enabled": true,
-     "block_dangerous_domains": true,
-     "block_nrd": false
-  }
-  ...
-}
-```
-
-burada değeri kullanımdan çıkarılacak olan `safebrowsing_enabled` yerine yeni `safebrowsing_settings` alanı kullanılır, `block_dangerous_domains` içinde saklanır.
-
-## Sürüm: 1.5
+## Güncel sürüm: 1.6
 
 ### /oapi/v1/account/limits
 
@@ -423,8 +337,6 @@ Erişim ve Yenileme belirteci oluşturur
 | 400 | Gerekli parametreler eksik                                                |
 | 401 | Geçersiz kimlik bilgileri, MFA belirteci veya yenileme belirteci sağlandı |
 
-boş
-
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -485,8 +397,6 @@ Revokes a Refresh Token
 | Kod | Açıklama              |
 | --- | --------------------- |
 | 200 | Refresh token revoked |
-
-boş
 
 ### /oapi/v1/stats/categories
 

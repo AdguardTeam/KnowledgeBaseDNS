@@ -54,7 +54,7 @@ On some notebooks you have to hold *Fn* and then press *PrtScn* instead.
 
 *Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
 
-Windows captures the entire screen and copies it to the (invisible) clipboard.
+Windows captures the entire screen and copies it to the clipboard.
 
 To take a screenshot of an active window, use the following combination:
 

@@ -1,9 +1,14 @@
 ---
 title: Tổng quan
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
@@ -107,13 +112,17 @@ Once the access and the refresh tokens are generated, API calls can be made by p
 
 ### Reference
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Please see the methods reference [here](reference.md).
 
 ### OpenAPI spec
 
 OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
 You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+
+### Changelog
+
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Feedback
 

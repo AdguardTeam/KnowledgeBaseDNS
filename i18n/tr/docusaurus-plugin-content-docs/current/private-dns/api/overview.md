@@ -1,9 +1,14 @@
 ---
 title: Genel Bakış
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS, uygulamalarınızı entegre etmek için kullanabileceğiniz bir REST API sağlar.
 
@@ -50,7 +55,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Yenileme Belirtecinden Erişim Belirteci Oluşturma
 
-Erişim belirteçlerinin geçerliliği sınırlıdır. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Erişim belirteçlerinin geçerliliği sınırlıdır. Süresi dolduğunda, uygulamanız yeni bir `refresh token` talep etmek için `access token` kullanması gerekecektir.
 
 Make the following POST request with the given params to get a new access token:
 
@@ -98,7 +103,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### API'ye erişim
 
-Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim belirtecini geçirilerek API çağrıları yapılabilir.
+Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
 - Başlık adı `Authorization` olmalıdır
 - Başlık değeri `Bearer {access_token}` olmalıdır
@@ -107,17 +112,21 @@ Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim b
 
 ### Referans
 
-Lütfen referans yöntemlerine [buradan](private-dns/api/reference.md) bakın.
+Lütfen referans yöntemlerine [buradan](reference.md) bakın.
 
 ### OpenAPI özellikleri
 
 OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. Örneğin bu dosyayı [https://editor.swagger.io/][swagger] adresinde açabilirsiniz.
+Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. Örneğin, bu dosyayı [https://editor.swagger.io/][swagger] adresinde açabilirsiniz.
+
+### Changelog
+
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Geri Bildirim
 
-Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

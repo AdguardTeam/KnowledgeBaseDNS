@@ -54,7 +54,7 @@ If this method doesn’t work, check *Settings* → *Advanced* features to enabl
 
 *Обратите внимание: клавиша PrtScn (Print Screen) может быть по-разному обозначена на различных клавиатурах — PrntScrn, PrtScn, PrtScr или PrtSc.*
 
-Windows зафиксирует изображение всего экрана и скопирует его в буфер обмена.
+Windows captures the entire screen and copies it to the clipboard.
 
 Чтобы сделать скриншот активного окна, воспользуйтесь следующей комбинацией:
 

@@ -347,7 +347,7 @@ Aktuelt understøttede RR-typer med eksempler:
 
 - `$dnstype=AAAA,denyallow=eksempel.org,dnsrewrite=NOERROR;;` besvares med tomme `NOERROR`-svar for alle `AAAA`-forespørgsler, undtagen for dem indeholdende `eksempel.org`.
 
-Undtagelsesregler fjerner én eller alle regler:
+Undtagelsesregler afblokerer én eller alle regler:
 
 - `@@||eksempel.com^$dnsrewrite` fjerner alle DNS rewrite-regler.
 
@@ -457,7 +457,7 @@ IP_adresse kanonisk_værtsnavn [aliases...]
 
 Indtastningsfelter adskilles med et vilkårligt antal mellemrum eller tabulatortegn. Tekst efter `#`-tegnet og indtil slutningen af linjen udgør en kommentar og ignoreres.
 
-Værtsnavne må kun indeholde alfanumeriske tegn, bindestreg-/minustegn (`-`) samt punktummer (`.`). De skal både starte og slutte med et alfanumerisk tegn. Valgfrie aliaser muliggør navneændringer, alternative stavemåder og kortere/generiske værtsnavne (f.eks. `localhost`).
+Værtsnavne må kun indeholde alfanumeriske tegn, bindestreg-/minustegn (`-`) samt punktummer (`.`). De skal starte med et alfabetisk tegn og slutte med et alfanumerisk tegn. Valgfrie aliaser muliggør navneændringer, alternative stavemåder og kortere/generiske værtsnavne (f.eks. `localhost`).
 
 **Eksempel:**
 

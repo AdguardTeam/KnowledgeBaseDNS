@@ -41,7 +41,7 @@ Tyto servery poskytují výchozí funkce + blokování webových stránek pro do
 
 | Protokol       | Adresa                                                                            |                                                                                                                                                                                                                                          |
 | -------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.15` a `94.140.15.16`                                                   | [Přidat do AdGuardu](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS),  [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                        |
+| DNS, IPv4      | `94.140.14.15` a `94.140.15.16`                                                   | [Přidat do AdGuardu](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                         |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` a `2a10:50c0::bad2:ff`                                       | [Přidat do AdGuardu](adguard:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)                                             |
 | DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query`                                        | [Přidat do AdGuardu](adguard:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS) |
 | DNS-over-TLS   | `tls://family.adguard-dns.com`                                                    | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)                         |
@@ -73,6 +73,7 @@ Každý z těchto serverů poskytuje bezpečné a spolehlivé připojení, ale n
 | DNS, IPv6      | `2400:3200::1` a `2400:3200:baba::1` | [Přidat do AdGuardu](adguard:add_dns_server?address=2400:3200::1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
 | DNS-over-HTTPS | `https://dns.alidns.com/dns-query`   | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
 | DNS-over-TLS   | `tls://dns.alidns.com`               | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
 ### BebasDNS by BebasID
 
@@ -84,7 +85,7 @@ Toto je výchozí varianta BebasDNS. Tato varianta blokuje reklamy, malware a kr
 
 | Protokol       | Adresa                                                                   |                                                                                                                                                                                                                                                            |
 | -------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.194` and `35.219.67.150`                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=103.87.68.194&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
+| DNS, IPv4      | `103.87.68.194` a `35.219.67.150`                                        | [Přidat do AdGuardu](adguard:add_dns_server?address=103.87.68.194&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.194&name=)                                                                                                   |
 | DNS, IPv6      | `2a05:dfc7:bca0:beba:51d::53`                                            | [Přidat do AdGuardu](adguard:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:beba:51d::53&name=)                                                                       |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com)                             |
 | DNS-over-TLS   | `tls://dns.bebasid.com:853`                                              | [Přidat do AdGuardu](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                                                 |
@@ -95,14 +96,14 @@ Toto je výchozí varianta BebasDNS. Tato varianta blokuje reklamy, malware a kr
 
 Tato varianta nic nefiltruje.
 
-| Protokol       | Adresa                                                                          |                                                                                                                                                                                                                                                                                    |
-| -------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.87.68.193`                                                                 | [Přidat do AdGuardu](adguard:add_dns_server?address=103.87.68.193&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.193&name=)                                                                                                                           |
-| DNS, IPv6      | `2a05:dfc7:bca0:d01c::2`                                                        | [Přidat do AdGuardu](adguard:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=)                                                                                                         |
-| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`                                            | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                                                   |
-| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853`                                          | [Přidat do AdGuardu](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)                             |
-| DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853`                                         | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `35.219.67.150:5443` | [Přidat do AdGuardu](sdns://AQcAAAAAAAAAEjM1LjIxOS42Ny4xNTA6NTQ0MyAtDC9I4194j3U0lZcEBPPd43IvR8gGNOS5QNVIx_7PNyoyLmRuc2NyeXB0LWNlcnQudW5maWx0ZXJlZC5kbnMuYmViYXNpZC5jb20)                                                                                                           |
+| Protokol       | Adresa                                                                              |                                                                                                                                                                                                                                                                                    |
+| -------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `103.87.68.193`                                                                     | [Přidat do AdGuardu](adguard:add_dns_server?address=103.87.68.193&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.87.68.193&name=)                                                                                                                           |
+| DNS, IPv6      | `2a05:dfc7:bca0:d01c::2`                                                            | [Přidat do AdGuardu](adguard:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a05:dfc7:bca0:d01c::2&name=)                                                                                                         |
+| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`                                                | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                                                   |
+| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853`                                              | [Přidat do AdGuardu](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)                             |
+| DNS-over-QUIC  | `quic://unfiltered.dns.bebasid.com:853`                                             | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://unfiltered.dns.bebasid.com:853&name=quic://unfiltered.dns.bebasid.com:853) |
+| DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.unfiltered.dns.bebasid.com` IP: `35.219.67.150:5443` | [Přidat do AdGuardu](sdns://AQcAAAAAAAAAEjM1LjIxOS42Ny4xNTA6NTQ0MyAtDC9I4194j3U0lZcEBPPd43IvR8gGNOS5QNVIx_7PNyoyLmRuc2NyeXB0LWNlcnQudW5maWx0ZXJlZC5kbnMuYmViYXNpZC5jb20)                                                                                                           |
 
 #### Security
 
@@ -409,6 +410,17 @@ Tyto servery používají některé záznamy, samopodepsané certifikáty nebo n
 | DNS-over-HTTPS | `https://dns.google/dns-query`                  | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
 | DNS-over-TLS   | `tls://dns.google`                              | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
 
+### Hurricane Electric Public Recursor
+
+Hurricane Electric Public Recursor je bezplatná alternativní DNS služba Hurricane Electric s funkcí anycast.
+
+| Protokol       | Adresa                           |                                                                                                                                                                                                                    |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `74.82.42.42`                    | [Přidat do AdGuardu](adguard:add_dns_server?address=74.82.42.42&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=74.82.42.42&name=)                                                               |
+| DNS, IPv6      | `2001:470:20::2`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=2001:470:20::2&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2001:470:20::2&name=)                                                         |
+| DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
+| DNS-over-TLS   | `tls://ordns.he.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
+
 ### Mullvad
 
 [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) poskytuje veřejně přístupné DNS s minimalizací QNAME, koncové body se nacházejí v Austrálii, Německu, Singapuru, Švédsku, Velké Británii a Spojených státech (New York a Los Angeles).
@@ -449,7 +461,7 @@ Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování
 | DNS, IPv4 | `156.154.70.1` a `156.154.71.1`       | [Přidat do AdGuardu](adguard:add_dns_server?address=156.154.70.1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
 | DNS, IPv6 | `2610:a1:1018::1` a `2610:a1:1019::1` | [Přidat do AdGuardu](adguard:add_dns_server?address=2610:a1:1018::1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Spolehlivost a výkonnost 2*
+#### Spolehlivost a výkon 2
 
 Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování konkrétních kategorií a také zabraňují přesměrování odpovědí na neexistující doménu (NXDomain) na cílovou stránku.
 
@@ -505,7 +517,7 @@ Tyto servery zajišťují blokování nežádoucího a časově náročného obs
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS řeší s blokováním: reklamy, sledování, adware, malware, škodlivé aktivity a phishingové společnosti, blokuje ~1M domén. Může obsahovat 24h/48h záznamy pro zmírnění útoku DDoS/Flood.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS řeší s blokováním: reklamy, sledování, adware, malware, škodlivé aktivity a phishingové společnosti, blokuje ~1M domén. Má 24h/48h zýznamy pro zmírnění útoků DDoS/Flood.
 
 #### Adaptivní filtrování (ADA)
 
@@ -627,6 +639,15 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | DNS, IPv4 | `64.6.64.6` a `64.6.65.6`             | [Přidat do AdGuardu](adguard:add_dns_server?address=64.6.64.6&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` a `2620:74:1c::2:2` | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
+### Wikimedia DNS
+
+[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) je mezipaměťová, rekurzivní, veřejná služba DoH a DoT řešitele, kterou provozuje a spravuje tým Site Reliability Engineering (Traffic) nadace Wikimedia Foundation ve všech šesti datových centrech Wikimedia s funkcí anycast.
+
+| Protokol       | Adresa                                                                              |                                                                                                                                                                                                                                        |
+| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wikimedia-dns.org/dns-query`                                               | [Přidat do AdGuardu](adguard:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org) |
+| DNS-over-TLS   | Název hostitele: `wikimedia-dns.org` IP: `185.71.138.138` a IPv6: `2001:67c:930::1` | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org), [Přidat do AdGuard VPN](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org)                            |
+
 ## **Regionální řešitelé**
 
 Regionální řešitelé DNS se obvykle zaměřují na určité zeměpisné oblasti a nabízejí optimalizovaný výkon pro uživatele v těchto oblastech. Tyto řešitele často provozují neziskové organizace, místní poskytovatelé internetových služeb nebo jiné subjekty.
@@ -642,7 +663,7 @@ Regionální řešitelé DNS se obvykle zaměřují na určité zeměpisné obla
 
 ### ByteDance Public DNS
 
-ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDance v Číně.
+ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDance v Číně. Jediný DNS, který společnost ByteDance v současné době poskytuje, podporuje protokol IPV4. Brzy budou spuštěny DOH, DOT, DOQ a další šifrované služby DNS.
 
 | Protokol  | Adresa                        |                                                                                                                                                      |
 | --------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -689,21 +710,11 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná služba DNS s ochranou proti reklamám, sledování a krádeži identity.
 
-#### West DNS Server (hlavní)
-
-| Protokol       | Adresa                            |                                                                                                                                                                                                                        |
-| -------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
-| DNS-over-TLS   | `tls://dns.comss.one`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
-
-#### East DNS Server (Sibiř a Dálný východ)
-
-| Protokol       | Adresa                                 |                                                                                                                                                                                                                                            |
-| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
+| Protokol       | Adresa                              |                                                                                                                                                                                                                                                       |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
 
 ### CZ.NIC ODVR
 
@@ -750,7 +761,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 
 ### 114DNS
 
-**114DNS** je profesionální a vysoce spolehlivá služba DNS.
+[114DNS](https://www.114dns.com) je profesionální a vysoce spolehlivá služba DNS.
 
 #### Normální
 
@@ -895,16 +906,6 @@ Nebudeme moci řádně sledovat jejich dostupnost. **Používejte je na vlastní
 
 [AhaDNS](https://ahadns.com/) je služba DNS pro blokování reklam, bez záznamů aktivit, poskytuje Fredrik Pettersson.
 
-#### Blitz
-
-[Konfigurovatelné filtrování](https://blitz-setup.ahadns.com/) – celosvětová varianta pouze pro DoH.
-
-| Protokol                                     | Adresa                            |                                                                                                                                                                                                                              |
-| -------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS, bez cenzury                  | `https://blitz.ahadns.com`        | [Přidat do AdGuardu](adguard:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com)               |
-| DNS-over-HTTPS, filtr OISD                   | `https://blitz.ahadns.com/1:1`    | [Přidat do AdGuardu](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com)       |
-| DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com) |
-
 #### Nizozemsko
 
 | Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
@@ -914,15 +915,6 @@ Nebudeme moci řádně sledovat jejich dostupnost. **Používejte je na vlastní
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
 
-#### Indie
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `45.79.120.233`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=45.79.120.233&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=45.79.120.233&name=)                                                                               |
-| DNS, IPv6      | `2400:8904:e001:43::43`               | [Přidat do AdGuardu](adguard:add_dns_server?address=2400:8904:e001:43::43&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2400:8904:e001:43::43&name=)                                                               |
-| DNS-over-HTTPS | `https://doh.in.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.in.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net)                         |
-
 #### Los Angeles
 
 | Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
@@ -931,50 +923,6 @@ Nebudeme moci řádně sledovat jejich dostupnost. **Používejte je na vlastní
 | DNS, IPv6      | `2a04:bdc7:100:70::70`                | [Přidat do AdGuardu](adguard:add_dns_server?address=2a04:bdc7:100:70::70&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a04:bdc7:100:70::70&name=)                                                                 |
 | DNS-over-HTTPS | `https://doh.la.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.la.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net)                         |
-
-#### New York
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.213.26.187`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=185.213.26.187&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=185.213.26.187&name=)                                                                             |
-| DNS, IPv6      | `2a0d:5600:33:3::3`                   | [Přidat do AdGuardu](adguard:add_dns_server?address=2a0d:5600:33:3::3&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:5600:33:3::3&name=)                                                                       |
-| DNS-over-HTTPS | `https://doh.ny.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.ny.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net)                         |
-
-#### Polsko
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.pl.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net)                         |
-
-#### Itálie
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net)                         |
-
-#### Španělsko
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.es.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net)                         |
-
-#### Norsko
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
-| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.no.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.no.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net)                         |
-
-#### Chicago
-
-| Protokol       | Adresa                                 |                                                                                                                                                                                                                                            |
-| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.chi.ahadns.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net)                         |
 
 ### Arapurayil
 

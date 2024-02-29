@@ -30,5 +30,9 @@
   "sidebar.sidebar.category.API": {
     "message": "API",
     "description": "The label for category API in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.AdGuard Home": {
+    "message": "AdGuard Home",
+    "description": "The label for category AdGuard Home in sidebar sidebar"
   }
 }

@@ -130,7 +130,7 @@ Met de functie *Blokkeerlijsten* kun je aangeven welke domeinen je wilt blokkere
 
 ### Beveiligingsinstellingen
 
-Zelfs als je op de hoogte bent van alle trucs die online oplichters gebruiken, is er altijd een kans dat je per ongeluk op een kwaadaardige link klikt. Om jezelf tegen dergelijke ongelukken te beschermen, ga je naar de sectie *Beveiligingsinstellingen* en vink je de vakjes aan naast de opties die daar worden vermeld.
+Even if you're aware of all the tricks online scammers use, there's always a risk you'll accidentally click a malicious link. Om jezelf tegen dergelijke ongelukken te beschermen, ga je naar de sectie *Beveiligingsinstellingen* en vink je de vakjes aan naast de opties die daar worden vermeld.
 
 De functie *Kkwaadaardige, phishing- en oplichtingsdomeinen blokkeren* blokkeert domeinen die in de speciale database worden gevonden. En de *Nieuw geregistreerde domeinen blokkeren* blokkeert alle domeinen die minder dan 30 dagen geleden zijn geregistreerd, wat vaak als riskant wordt beschouwd voor jouw online privacy.
 

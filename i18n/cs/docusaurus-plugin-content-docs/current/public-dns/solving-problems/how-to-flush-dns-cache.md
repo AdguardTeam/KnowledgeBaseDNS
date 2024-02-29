@@ -50,9 +50,27 @@ Tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým 
 
 ### Android
 
-Nejjednodušší způsob, jak vyprázdnit mezipaměť DNS v zařízení se systémem Android, je zapnout a vypnout režim Letadlo. Režim Letadlo můžete zapnout/vypnout v panelu Rychlých nastavení.
+There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
 
-Tvrdý restart může také pomoci vyprázdnit mezipaměť DNS zařízení. Za tímto účelem stiskněte a podržte tlačítko napájení po dobu alespoň 20 sekund. To (obvykle) vynutí ruční restart zařízení a vyprázdnění mezipaměti DNS.
+#### Clear DNS cache via Chrome
+
+Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+
+1. Launch Chrome on your Android device
+1. Type `chrome://net-internals/#DNS` in the address bar
+1. On the DNS lookup page, choose DNS from the menu on the left
+1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
+
+#### Modify the Wi-Fi network to Static
+
+To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+
+1. Go to *Settings → Wi-Fi* and choose the network you're connected to
+1. Look for IP settings and select *Static*
+1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
+1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
+
+#### Reset network settings
 
 Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení → Systém → Pokročilé → Možnosti resetování → Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
 
