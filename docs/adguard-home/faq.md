@@ -9,7 +9,7 @@ Suppose that you want AdGuard Home to block `somebadsite.com` but for some reaso
 
 Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
 
-1. On Windows, open Command Line Interface (*Start* → *Run* → `cmd.exe`). On other systems, open your Terminal application.
+1. On Windows, open Command Prompt (*Start* → *Run* → `cmd.exe`). On other systems, open your Terminal application.
 
 1. Execute `nslookup example.org`. It will print something like this:
 
