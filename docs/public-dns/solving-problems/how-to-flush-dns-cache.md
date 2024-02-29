@@ -57,9 +57,9 @@ There are different ways to clear the DNS cache on your Android device. The exac
 Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
 
 1. Launch Chrome on your Android device
-1. Type 'chrome://net-internals/#DNS' in the address bar
+1. Type `chrome://net-internals/#DNS` in the address bar
 1. On the DNS lookup page, choose DNS from the menu on the left
-1. In the panel on the right, tap the `Clear Host Cache` button to clear the DNS cache on your device
+1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
 
 #### Modify the Wi-Fi network to Static
 
