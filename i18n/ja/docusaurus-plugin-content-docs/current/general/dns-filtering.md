@@ -33,7 +33,7 @@ DNSフィルタリングは、2つの機能に分けることができます。D
 
 ### DNSサーバー
 
-DNSサーバーは何千もあって、それぞれ特性と目的においてユニークであります。 多くは単にリクエストされたドメインのIPアドレスを返すだけですが、広告、トラッキング、アダルトドメインなどをブロックする追加機能を持つものもあります。 現在、一般的なDNSサーバーのすべては、信頼できる暗号化プロトコル（DNS-over-HTTPS、DNS-over-TLS）を1つ以上採用しています。 AdGuard も[DNSサービス](https://adguard-dns.io/)を提供しており、非常に新しく有望な [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) 暗号化プロトコルを世界で初めて採用したDNSとなりました。 AdGuard は目的別に複数のDNSサーバーを用意しています。 以下の図は、AdGuardのブロッキングサーバーの仕組みを示しています:
+DNSサーバーは何千もあって、それぞれ特性と目的においてユニークであります。 多くは単にリクエストされたドメインのIPアドレスを返すだけですが、広告、トラッキング、アダルトドメインなどをブロックする追加機能を持つものもあります。 現在、一般的なDNSサーバーのすべては、信頼できる暗号化プロトコル（DNS-over-HTTPS、DNS-over-TLS）を1つ以上採用しています。 AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard は目的別に複数のDNSサーバーを用意しています。 以下の図は、AdGuardのブロッキングサーバーの仕組みを示しています:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ DNSサーバーは何千もあって、それぞれ特性と目的において�
 
 ### ローカルDNSブロックリスト
 
-しかし、DNSトラフィックをフィルタリングするためにDNSサーバーだけに頼ることは、柔軟性を失うことになります。 使っているサーバーがドメインをブロックしている場合、そのドメインにアクセスできません。 AdGuard ですと、DNSトラフィックをフィルタリングするために特定のDNSサーバーを設定する必要もありません。 AdGuard 製品のすべてで、DNS ブロックリスト（シンプルな hosts ファイルや[より高度な構文](dns-filtering-syntax.md)を使用するリストなど）を使用できます。 DNSブロックリストは、通常のブロックリストと同じように機能します。つまり、DNSリクエストがアクティブフィルタリストのルールの1つにマッチすると、そのリクエストはブロックされます。 より正確に言いますと、そのリクエストは"ブラックホール"に迂回されます。
+しかし、DNSトラフィックをフィルタリングするためにDNSサーバーだけに頼ることは、柔軟性を失うことになります。 使っているサーバーがドメインをブロックしている場合、そのドメインにアクセスできません。 AdGuard ですと、DNSトラフィックをフィルタリングするために特定のDNSサーバーを設定する必要もありません。 AdGuard 製品のすべてで、DNS ブロックリスト（シンプルな hosts ファイルや[より高度な構文](dns-filtering-syntax.md)を使用するリストなど）を使用できます。 DNSブロックリストは、通常のブロックリストと同じように機能します。つまり、DNSリクエストがアクティブフィルタリストのルールの1つにマッチすると、そのリクエストはブロックされます。 To be more precise, the DNS server gives a non-routable IP address for such a request.
 
 :::tip
 
-In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+In AdGuard for iOS, first you have to enable *Advanced mode* in *Settings* in order to get access to DNS blocking.
 
 :::
 
@@ -67,7 +67,7 @@ First of all, we have to mention that with AdGuard you don't have to choose. You
 
 **Cons of DNS filtering:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNS filtering is "coarse", which means it doesn't remove whitespace left behind a blocked ad or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 

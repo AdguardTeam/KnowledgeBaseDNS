@@ -33,7 +33,7 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 ### DNS 服务器
 
-一共有数千个 DNS 服务器可选。它们的属性与用途都是独一无二的。 大部分 DNS 服务器只能返回被请求网域的 IP 地址，但也有些 DNS 服务器具有一些额外功能。比如，它们能屏蔽广告、跟踪器、带有成人内容的网站等等。 现在部分主流 DNS 服务器都应用一个或更多可靠的加密协议，比如：DNS-over-HTTPS、DNS-over-TLS。 AdGuard 还提供 [DNS 服务](https://adguard-dns.io/)，我们是世界上第一个提供非常新的和有前途的 [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) 安全协议的公司。 AdGuard 为不同目的提供不同的服务器。 下面的图标展示 AdGuard 拦截服务器的工作原理：
+一共有数千个 DNS 服务器可选。它们的属性与用途都是独一无二的。 大部分 DNS 服务器只能返回被请求网域的 IP 地址，但也有些 DNS 服务器具有一些额外功能。比如，它们能屏蔽广告、跟踪器、带有成人内容的网站等等。 现在部分主流 DNS 服务器都应用一个或更多可靠的加密协议，比如：DNS-over-HTTPS、DNS-over-TLS。 AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard 为不同目的提供不同的服务器。 下面的图标展示 AdGuard 拦截服务器的工作原理：
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 ### 本地 DNS 拦截列表
 
-但是如果只依赖 DNS 服务器来过滤 DNS 流量，用户就失去所有的灵活性。 如果选定的服务器拦截域名，用户将无法访问该域名。 但如果使用 AdGuard，您甚至不需要配置任何特定的 DNS 服务器就可以过滤 DNS 流量。 所有 AdGuard 产品允许用户应用 DNS 拦截列表，无论是简单的 Hosts 文件还是使用[更复杂语法](dns-filtering-syntax.md)的清单。 它们与一般的广告过滤器运行相似：当 DNS 请求与某一个属于激活过滤器列表的规则相匹配时，该 DNS 请求将会被阻止。 更准确地说，这个 DNS 请求将会发送到“黑洞”。
+但是如果只依赖 DNS 服务器来过滤 DNS 流量，用户就失去所有的灵活性。 如果选定的服务器拦截域名，用户将无法访问该域名。 但如果使用 AdGuard，您甚至不需要配置任何特定的 DNS 服务器就可以过滤 DNS 流量。 所有 AdGuard 产品允许用户应用 DNS 拦截列表，无论是简单的 Hosts 文件还是使用[更复杂语法](dns-filtering-syntax.md)的清单。 它们与一般的广告过滤器运行相似：当 DNS 请求与某一个属于激活过滤器列表的规则相匹配时，该 DNS 请求将会被阻止。 To be more precise, the DNS server gives a non-routable IP address for such a request.
 
 :::tip
 
-In AdGuard for iOS, first you have to enable *Advanced mode* in settings in order to get access to DNS blocking.
+In AdGuard for iOS, first you have to enable *Advanced mode* in *Settings* in order to get access to DNS blocking.
 
 :::
 
@@ -67,7 +67,7 @@ First of all, we have to mention that with AdGuard you don't have to choose. You
 
 **Cons of DNS filtering:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. DNS filtering is "coarse", which means it doesn't remove whitespace left behind a blocked ad or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
 

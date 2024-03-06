@@ -1,9 +1,14 @@
 ---
 title: Přehled
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS poskytuje rozhraní REST API, které můžete použít k integraci svých aplikací.
 
@@ -107,13 +112,17 @@ Po vygenerování přístupových a obnovovacích tokenů lze volání API prov�
 
 ### Odkaz
 
-Viz odkaz na metody [zde](private-dns/api/reference.md).
+Viz odkaz na metody [zde](reference.md).
 
 ### Specifikace OpenAPI
 
 Specifikace OpenAPI je k dispozici na [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
 K zobrazení seznamu dostupných metod API můžete použít různé nástroje. Tento soubor můžete otevřít například v [https://editor.swagger.io/][swagger].
+
+### Seznam změn
+
+Kompletní seznam změn AdGuard DNS API je k dispozici na [této stránce](private-dns/api/changelog.md).
 
 ## Zpětná vazba
 

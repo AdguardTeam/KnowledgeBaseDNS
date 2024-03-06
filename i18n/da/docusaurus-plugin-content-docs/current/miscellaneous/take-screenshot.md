@@ -54,7 +54,7 @@ På visse bærbare skal knappen *Fn* holdes nede, før der trykkes på *PrtScn*.
 
 *Bemærk: Knappen PrtScn (Print Screen) forkortes forskelligt på forskellige tastaturer — PrntScrn, PrtScn, PrtScr eller PrtSc.*
 
-Windows fotograferer hele skærmen og kopierer den til udklipsholderen.
+Windows affotograferer hele skærmen og kopierer den til udklipsholderen.
 
 For at tage et skærmfoto af et aktivt vindue, så brug flg. kombination:
 

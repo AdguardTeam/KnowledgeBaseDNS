@@ -1,9 +1,14 @@
 ---
 title: Обзор
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS предоставляет REST API, который вы можете использовать в своих приложениях.
 
@@ -11,7 +16,7 @@ AdGuard DNS предоставляет REST API, который вы может�
 
 ### Генерация токена доступа
 
-Сделайте POST-запрос с указанными параметрами по следующему URL, чтобы сгенерировать `access_token`:
+Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -50,7 +55,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Генерация токена доступа через продлеваемый токен
 
-Токены доступа имеют ограниченное время действия. После истечения этого срока ваше приложение должно использовать `продлеваемый токен` для генерации нового `токена доступа`.
+Токены доступа имеют ограниченное время действия. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 Сделайте следующий POST-запрос с указанными параметрами, чтобы получить новый токен доступа:
 
@@ -98,7 +103,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### Получение доступа к API
 
-После того как токен доступа и продлеваемый токен сгенерированы, получить доступ к API можно, указав токен доступа в заголовке.
+Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
 
 - Имя заголовка должно быть `Authorization`
 - Значение заголовка должно быть `Bearer {access_token}`
@@ -107,17 +112,21 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### Руководство по API
 
-Перейдите по [этой ссылке](private-dns/api/reference.md), чтобы ознакомиться с руководством по методам API.
+Please see the methods reference [here](reference.md).
 
 ### Спецификация OpenAPI
 
 Спецификация OpenAPI доступна по адресу [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-Вы можете использовать другие инструменты для просмотра списка доступных методов API. Например, вы можете открыть этот файл в [https://editor.swagger.io/][swagger].
+Вы можете использовать другие инструменты для просмотра списка доступных методов API. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+
+### Changelog
+
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Обратная связь
 
-Если вы хотите расширить этот API, напишите нам по адресу `devteam@adguard.com` и расскажите, что вы хотите добавить.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

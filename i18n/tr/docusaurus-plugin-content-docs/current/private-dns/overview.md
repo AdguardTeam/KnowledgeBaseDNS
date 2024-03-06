@@ -130,7 +130,7 @@ Bu bölümde, özel AdGuard DNS'nin çalışmasını özelleştirmenize olanak t
 
 ### Güvenlik ayarları
 
-Çevrimiçi dolandırıcıların kullandığı tüm yöntemlerin farkında olsanız bile, yanlışlıkla kötü amaçlı bir bağlantıya tıklama ihtimaliniz her zaman vardır. Kendinizi bu tür durumlardan korumak için *Güvenlik ayarları* öğesine gidin ve burada listelenen seçeneklerin yanındaki kutuları işaretleyin.
+Çevrimiçi dolandırıcıların kullandığı tüm hilelerin farkında olsanız bile, yanlışlıkla kötü amaçlı bir bağlantıya tıklama riskiniz her zaman vardır. Kendinizi bu tür durumlardan korumak için *Güvenlik ayarları* öğesine gidin ve burada listelenen seçeneklerin yanındaki kutuları işaretleyin.
 
 *Kötü amaçlı, kimlik avı ve dolandırıcılık alan adlarını engelle* özelliği, özel veri tabanında bulunan alan adlarını engeller. Ve *Yeni kaydedilen alan adlarını engelle* 30 günden daha kısa bir süre önce kaydedilen ve genellikle çevrimiçi gizliliğiniz açısından riskli olduğu düşünülen tüm alan adlarını eneller.
 

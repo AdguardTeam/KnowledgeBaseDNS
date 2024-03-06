@@ -130,7 +130,7 @@ Funkce *Seznamy zakázaných* umožňuje určit, které domény chcete blokovat 
 
 ### Nastavení zabezpečení
 
-I když jste si vědomi všech triků, které online podvodníci používají, vždy existuje možnost, že omylem kliknete na škodlivý odkaz. Chcete-li se před podobnými nehodami chránit, přejděte do části *Nastavení zabezpečení* a zaškrtněte políčka vedle možností, které jsou zde uvedeny.
+I když jste si vědomi všech triků, které online podvodníci používají, vždy existuje nebezpečí, že omylem kliknete na škodlivý odkaz. Chcete-li se před podobnými nehodami chránit, přejděte do části *Nastavení zabezpečení* a zaškrtněte políčka vedle možností, které jsou zde uvedeny.
 
 Funkce *Blokovat škodlivé, phishingové a podvodné domény* zablokuje domény nalezené ve vyhrazené databázi. A možnost *Blokovat nově registrované domény* zablokuje všechny domény registrované před méně než 30 dny, které jsou často považovány za rizikové pro vaše online soukromí.
 

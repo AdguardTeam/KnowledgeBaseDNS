@@ -54,7 +54,7 @@ iOS 기기는 전체 화면을 캡처하여 사진으로 저장합니다. 기본
 
 *참고: PrtScn (인쇄 화면) 버튼은 PrntScrn, PrtScn, PrtScr 또는 PrtSc와 같은 다양한 키보드에서 다르게 나타날 수도 있습니다.*
 
-Windows는 전체 화면을 캡처하여 (보이지 않는) 클립보드에 복사합니다.
+Windows captures the entire screen and copies it to the clipboard.
 
 활성 창의 스크린샷을 찍으려면 다음 조합을 사용하십시오.
 

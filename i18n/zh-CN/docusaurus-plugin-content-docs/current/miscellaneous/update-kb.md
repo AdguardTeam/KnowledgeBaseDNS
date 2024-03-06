@@ -23,6 +23,6 @@ sidebar_position: 3
 
 在撰写AdGuard DNS知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
 
-## 致力于解决开放性问题
+## 解决待解决的问题
 
 有时存在与更新知识库相关的 [未完成任务](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/)。 您可以帮助我们以加速完成[就像](#suggest-change)您对这个知识库提出任何其他修改建议一样。 选择您认为有吸引力的任何问题并开始处理它。 如果您有任何问题 - 您可以在对该问题的评论中直接提问。

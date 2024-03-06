@@ -41,7 +41,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 | プロトコル          | アドレス                                                                          |                                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.15` と `94.140.15.16`                                               | [[AdGuard に追加する](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)] [[AdGuard VPN に追加する](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)]                                                         |
+| DNS, IPv4      | `94.140.14.15` と `94.140.15.16`                                               | [Add to AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                          |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` と `2a10:50c0::bad2:ff`                                   | [[AdGuardに追加する](adguard:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)] [[AdGuard VPNに追加する](adguardvpn:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)]                                               |
 | DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query`                                    | [[AdGuard に追加する](adguard:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS)] [[AdGuard VPN に追加する](adguardvpn:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS)] |
 | DNS-over-TLS   | `tls://family.adguard-dns.com`                                                | [[AdGuard に追加する](adguard:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)] [[AdGuard VPN に追加する](adguardvpn:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)]                         |
@@ -73,6 +73,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1` | [Add to AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
 | DNS-over-HTTPS | `https://dns.alidns.com/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
 | DNS-over-TLS   | `tls://dns.alidns.com`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
 ### BebasDNS by BebasID
 
@@ -409,6 +410,17 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | DNS-over-HTTPS | `https://dns.google/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dns.google/dns-query&name=dns.google), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.google/dns-query&name=dns.google) |
 | DNS-over-TLS   | `tls://dns.google`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.google&name=dns.google), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.google&name=dns.google)                         |
 
+### Hurricane Electric Public Recursor
+
+Hurricane Electric Public Recursor is a free alternative DNS service by Hurricane Electric with anycast.
+
+| プロトコル          | アドレス                             |                                                                                                                                                                                                             |
+| -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `74.82.42.42`                    | [Add to AdGuard](adguard:add_dns_server?address=74.82.42.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=74.82.42.42&name=)                                                               |
+| DNS, IPv6      | `2001:470:20::2`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:470:20::2&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:470:20::2&name=)                                                         |
+| DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
+| DNS-over-TLS   | `tls://ordns.he.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
+
 ### Mullvad
 
 [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Australia, Germany, Singapore, Sweden, United Kingdom and United States (New York and Los Angeles).
@@ -449,7 +461,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 | DNS, IPv4 | `156.154.70.1` and `156.154.71.1`       | [Add to AdGuard](adguard:add_dns_server?address=156.154.70.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
 | DNS, IPv6 | `2610:a1:1018::1` and `2610:a1:1019::1` | [Add to AdGuard](adguard:add_dns_server?address=2610:a1:1018::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Reliability & Performance 2*
+#### Reliability & Performance 2
 
 These servers provide reliable and fast DNS lookups without blocking any specific categories and also prevent redirecting NXDomain (non-existent domain) responses to landing pages.
 
@@ -505,7 +517,7 @@ These servers provide blocking unwanted and time-wasting content and also includ
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Can be has 24h/48h logs for DDoS/Flood mitigation attack.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Has 24h/48h logs for DDoS/Flood attack mitigation.
 
 #### Adaptive Filtering (ADA)
 
@@ -627,6 +639,15 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4 | `64.6.64.6` and `64.6.65.6`             | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` and `2620:74:1c::2:2` | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
+### Wikimedia DNS
+
+[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) is a caching, recursive, public DoH and DoT resolver service that is run and managed by the Site Reliability Engineering (Traffic) team at the Wikimedia Foundation on all six Wikimedia data centers with anycast.
+
+| プロトコル          | アドレス                                                                           |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wikimedia-dns.org/dns-query`                                          | [Add to AdGuard](adguard:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://wikimedia-dns.org/dns-query&name=wikimedia-dns.org) |
+| DNS-over-TLS   | Hostname: `wikimedia-dns.org` IP: `185.71.138.138` and IPv6: `2001:67c:930::1` | [Add to AdGuard](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org), [Add to AdGuard VPN](adguard:add_dns_server?address=tls://wikimedia-dns.org&name=wikimedia-dns.org)                            |
+
 ## **Regional resolvers**
 
 Regional DNS resolvers are typically focused on specific geographic regions, offering optimized performance for users in those areas. These resolvers are often operated by non-profit organizations, local ISPs, or other entities.
@@ -642,7 +663,7 @@ Regional DNS resolvers are typically focused on specific geographic regions, off
 
 ### ByteDance Public DNS
 
-ByteDance Public DNS is a free alternative DNS service by ByteDance at China.
+ByteDance Public DNS is a free alternative DNS service by ByteDance at China. The only DNS currently provided by ByteDance supports IPV4. DOH, DOT, DOQ, and other encrypted DNS services will be launched soon.
 
 | プロトコル     | アドレス                            |                                                                                                                                               |
 | --------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -689,21 +710,11 @@ In "Family" mode, Protected + blocking adult content.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
 
-#### West DNS Server (Main)
-
-| プロトコル          | アドレス                              |                                                                                                                                                                                                                 |
-| -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
-| DNS-over-TLS   | `tls://dns.comss.one`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.comss.one:854`        | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one:854&name=dns.comss.one:854)       |
-
-#### East DNS Server (Siberia and Far East)
-
-| プロトコル          | アドレス                                   |                                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.east.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.east.comss.one/dns-query&name=dns.east.comss.one) |
-| DNS-over-TLS   | `tls://dns.east.comss.one`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.east.comss.one&name=dns.east.comss.one)                         |
-| DNS-over-QUIC  | `quic://dns.east.comss.one`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.east.comss.one:853&name=dns.east.comss.one:853)       |
+| プロトコル          | アドレス                                |                                                                                                                                                                                                                                                |
+| -------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [Add to AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [Add to AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
 
 ### CZ.NIC ODVR
 
@@ -750,7 +761,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### 114DNS
 
-**114DNS** is a professional and high-reliability DNS service.
+[114DNS](https://www.114dns.com) is a professional and high-reliability DNS service.
 
 #### Normal
 
@@ -895,16 +906,6 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 
 [AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
-#### Blitz
-
-[Configurable filtering](https://blitz-setup.ahadns.com/) worldwide DoH-only variant.
-
-| プロトコル                                        | アドレス                              |                                                                                                                                                                                                                       |
-| -------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS, uncensored                   | `https://blitz.ahadns.com`        | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com&name=blitz.ahadns.com)               |
-| DNS-over-HTTPS, OISD filter                  | `https://blitz.ahadns.com/1:1`    | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1&name=blitz.ahadns.com)       |
-| DNS-over-HTTPS, OISD & Energized porn filter | `https://blitz.ahadns.com/1:1.12` | [Add to AdGuard](adguard:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://blitz.ahadns.com/1:1.12&name=blitz.ahadns.com) |
-
 #### Netherlands
 
 | プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
@@ -913,15 +914,6 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 | DNS, IPv6      | `2a04:52c0:101:75::75`                | [Add to AdGuard](adguard:add_dns_server?address=2a04:52c0:101:75::75&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a04:52c0:101:75::75&name=)                                                                 |
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
-
-#### India
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `45.79.120.233`                       | [Add to AdGuard](adguard:add_dns_server?address=45.79.120.233&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=45.79.120.233&name=)                                                                               |
-| DNS, IPv6      | `2400:8904:e001:43::43`               | [Add to AdGuard](adguard:add_dns_server?address=2400:8904:e001:43::43&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:8904:e001:43::43&name=)                                                               |
-| DNS-over-HTTPS | `https://doh.in.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.in.ahadns.net/dns-query&name=doh.in.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.in.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.in.ahadns.net&name=dot.in.ahadns.net)                         |
 
 #### Los Angeles
 
@@ -932,55 +924,11 @@ We won't be able to proper monitor their availability. **Use them at your own ri
 | DNS-over-HTTPS | `https://doh.la.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.la.ahadns.net/dns-query&name=doh.la.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.la.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.la.ahadns.net&name=dot.la.ahadns.net)                         |
 
-#### New York
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `185.213.26.187`                      | [Add to AdGuard](adguard:add_dns_server?address=185.213.26.187&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.213.26.187&name=)                                                                             |
-| DNS, IPv6      | `2a0d:5600:33:3::3`                   | [Add to AdGuard](adguard:add_dns_server?address=2a0d:5600:33:3::3&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0d:5600:33:3::3&name=)                                                                       |
-| DNS-over-HTTPS | `https://doh.ny.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ny.ahadns.net/dns-query&name=doh.ny.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.ny.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ny.ahadns.net&name=dot.ny.ahadns.net)                         |
-
-#### Poland
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.pl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.pl.ahadns.net/dns-query&name=doh.pl.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.pl.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pl.ahadns.net&name=dot.pl.ahadns.net)                         |
-
-#### Italy
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.it.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.it.ahadns.net/dns-query&name=doh.it.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.it.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.it.ahadns.net&name=dot.it.ahadns.net)                         |
-
-#### Spain
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.es.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.es.ahadns.net/dns-query&name=doh.es.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.es.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.es.ahadns.net&name=dot.es.ahadns.net)                         |
-
-#### Norway
-
-| プロトコル          | アドレス                                  |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.no.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.no.ahadns.net/dns-query&name=doh.no.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.no.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.no.ahadns.net&name=dot.no.ahadns.net)                         |
-
-#### Chicago
-
-| プロトコル          | アドレス                                   |                                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.chi.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.chi.ahadns.net/dns-query&name=doh.chi.ahadns.net) |
-| DNS-over-TLS   | `tls://dot.chi.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.chi.ahadns.net&name=dot.chi.ahadns.net)                         |
-
 ### Arapurayil
 
 [Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Non-logging | Filters ads, trackers, phishing,etc | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
+Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | プロトコル          | アドレス                                                         |                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -314,7 +314,7 @@ Address: 1.2.3.4
 
 当前支持带有示例的 RR 类型：
 
-- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` 为反向 DNS 添加 `PTR` 记录。 向 DNS 服务器发出的 `1.2.3.4` 反向 DNS 请求将产生 `example.net`。
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR` record for reverse DNS. 向 DNS 服务器发出的 `1.2.3.4` 反向 DNS 请求将产生 `example.net`。
 
   **注意：** IP 地址必须按反向顺序排列。 See [RFC 1035][rfc1035].
 
@@ -347,11 +347,11 @@ Address: 1.2.3.4
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` 以空的 `NOERROR` 响应所有 `AAAA` 的请求，除了 `example.org`。
 
-例外规则删除一个或所有规则：
+Exception rules unblock one or all rules:
 
-- `@@||example.com^$dnsrewrite` 删除所有 DNS 重写规则。
+- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` 删除添加带有 `1.2.3.4` 值 `A` 记录的 DNS 重写规则。
+- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
 #### `important` {#important-modifier}
 

@@ -1,9 +1,14 @@
 ---
 title: Oversigt
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 3
 ---
 
-## AdGuard DNS API
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
@@ -11,7 +16,7 @@ AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
 ### Generér adgangstoken
 
-Foretag en POST-anmodning for flg. URL med de givne parametre for at generere `access_token`:
+Foretag en POST-anmodning for flg. URL med de givne parametre for at generere et `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -50,7 +55,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Generere adgangstoken fra Refresh-token
 
-Et adgangstoken har en begrænset gyldighedsperiode. Når det udløber, vil appen skulle bruge `refresh-tokenet` ifm. anmodning om et nyt `adgangstoken`.
+Et adgangstoken har en begrænset gyldighedsperiode. Når det udløber, vil appen skulle bruge `refresh-token` ifm. anmodning om et nyt `adgangstoken`.
 
 Foretag flg. POST-anmodning med de givne parametre for at få et nyt adgangstoken:
 
@@ -107,17 +112,21 @@ Når først adgangs- og refresh-tokenerne er genereret, kan API-kald foretages v
 
 ### Reference
 
-Se metodereferencen [hér](private-dns/api/reference.md).
+Se metodereferencen [hér](reference.md).
 
 ### OpenAPI-specifikation
 
 OpenAPI-specifikationen er tilgængelig via [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metoder. F.eks. kan filen åbnes i [https://editor.swagger.io/][swagger].
+Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metoder. Filen kan f.eks. åbnes i [https://editor.swagger.io/][swagger].
+
+### Ændringslog
+
+Den komplette AdGuard DNS API-ændringslog er tilgængelig på [denne side](private-dns/api/changelog.md).
 
 ## Feedback
 
-Ønskes denne API udvidet med nye metoder, så send venligst en e-mail til `devteam@adguard.com` og fortæl os,, hvad der ønskes tilføjet.
+Ønskes denne API udvidet med nye metoder, så send os en e-mail via `devteam@adguard.com` med information om, hvad der ønskes tilføjet.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

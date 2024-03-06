@@ -6,100 +6,14 @@ toc_max_heading_level: 4
 ---
 
 <!--
-    The content below is simply an automatic conversion from the OpenAPI spec
-    https://api.adguard-dns.io/static/swagger/openapi.json to markdown using
-    https://swagger-markdown-ui.netlify.app/.
-
-    Changelog is from here:
-    https://api.adguard-dns.io/static/api/CHANGELOG.md
+    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-## AdGuard DNS API
+Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/overview.md). Besøg [denne side](private-dns/api/changelog.md)for at se den komplette AdGuard DNS API-ændringslog.
 
-DNS API-dokumentation
-
-## AdGuard DNS API-ændringslog
-
-### v1.0
-
-- Tilføjet godkendelse.
-- CRUD-operationer med enheder og DNS-servere.
-- Forespørgselslog.
-- Downloader DOT og DOT .mobileconfig.
-- Filterlister og webtjenester.
-
-### v1.1
-
-- Tilføjet metoder til statistikhentning efter tid, domæner, virksomheder og enheder.
-
-- Tilføjet metode til opdatering af enhedsindstillinger.
-- Rettet definition af obligatoriske felter.
-
-### v1.2
-
-- Tilføjet de nye protokoltyper DNS og DNSCRYPT. Udfasning af PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP og DNSCRYPT_UDP, som fjernes helt senere.
-
-### v1.3
-
-- Tilføjet metode til at hente kontokvoter.
-
-### v1.4
-
-- Tilføjet mulighed for tilpasset svarblokering: Standard (0.0.0.0), REFUSED, NXDOMAIN eller tilpasset IP-adresse.
-
-### v1.5
-
-- Tilføjet ny indstilling `block_nrd` og gruppér alle sikkerhedsrelaterede indstillinger på ét sted.
-
-#### Model for safebrowsing-indstillinger ændret fra
-
-``` json
-{
-   "enabled": true
-}
-```
-
-til:
-
-``` json
-{
-   "enabled": true,
-   "block_dangerous_domains": true,
-   "block_nrd": false
-}
-```
-
-hvor `enabled` nu styrer alle indstillinger i gruppen, `block_dangerous_domains` er det tidligere modelfelt "enabled", og `block_nrd` er indstillinger for filtrering af nyregistrerede domæner.
-
-#### Model til lagring af serverindstillinger ændret fra
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_enabled" : true,
-  ...
-}
-```
-
-til:
-
-```json
-{
-  "protection_enabled" : true,
-  "safebrowsing_settings" : {
-     "enabled": true,
-     "block_dangerous_domains": true,
-     "block_nrd": false
-  }
-  ...
-}
-```
-
-her bruges det nye felt `safebrowsing_settings` i stedet for det udfasede `safebrowsing_enabled`, hvis værdi gemmes i `block_dangerous_domains`.
-
-## Version: 1.5
+## Aktuel version: 1.6
 
 ### /oapi/v1/account/limits
 
@@ -423,8 +337,6 @@ Genererer Access og Refresh tokener
 | 400  | Mangler obligatoriske parametre                                              |
 | 401  | Ugyldige legitimationsoplysninger, MFA-token eller opfriskningstoken angivet |
 
-null
-
 ### /oapi/v1/query_log
 
 #### SLET
@@ -485,8 +397,6 @@ Ophæver et Refresh-token
 | Kode | Beskrivelse           |
 | ---- | --------------------- |
 | 200  | Refresh-token ophævet |
-
-null
 
 ### /oapi/v1/stats/categories
 

@@ -54,7 +54,7 @@ Bazı dizüstü bilgisayarlarda *Fn* tuşunu basılı tutmanız ve ardından bun
 
 *Lütfen unutmayın: PrtScn (Print Screen) düğmesi çeşitli klavyelerde farklı şekilde kısaltılmış hâlinda olabilir – PrntScrn, PrtScn, PrtScr veya PrtSc.*
 
-Windows tüm ekranı yakalar ve (görünmez) panoya kopyalar.
+Windows tüm ekranı yakalar ve panoya kopyalar.
 
 Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kombinasyonu kullanın:
 

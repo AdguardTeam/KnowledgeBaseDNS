@@ -35,7 +35,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 `/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
-## Basic examples {#basic-examples}
+## Temel örnekler {#basic-examples}
 
 - `||example.org^`: `example.org` alan adına ve `www.example.org` gibi tüm alt alan adlarına erişimi engeller.
 
@@ -347,11 +347,11 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
-İstisna kuralları, bir veya tüm kuralları kaldırır:
+İstisna kuralları bir veya tüm kuralların engelini kaldırır:
 
-- `@@||example.com^$dnsrewrite`, tüm DNS yeniden yazma kurallarını kaldırır.
+- `@@||example.com^$dnsrewrite` tüm DNS yeniden yazma kurallarının engelini kaldırır.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekleyen DNS yeniden yazma kuralını kaldırır.
+- `@@|example.com^$dnsrewrite=1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekleyen DNS yeniden yazma kuralının engelini kaldırır.
 
 #### `important` {#important-modifier}
 

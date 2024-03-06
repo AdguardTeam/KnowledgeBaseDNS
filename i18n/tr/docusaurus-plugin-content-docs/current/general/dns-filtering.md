@@ -33,7 +33,7 @@ DNS filtreleme iki ayrı işleve ayrılabilir: DNS trafiğini şifrelemek ile DN
 
 ### DNS sunucuları
 
-Aralarından seçim yapabileceğiniz binlerce DNS sunucusu vardır ve bunların tümü özellikleri ve amaçları bakımından benzersizdir. Çoğu yalnızca istenen alan adının IP adresini döndürür ancak bazılarının ek işlevleri vardır: reklamları, izlemeyi, yetişkinlere yönelik alan adlarını, vb. engeller. Günümüzde tüm büyük DNS sunucuları bir veya daha fazla güvenilir şifreleme protokolü kullanmaktadır: DNS-over-HTTPS, DNS-over-TLS. AdGuard ayrıca bir [DNS hizmeti](https://adguard-dns.io/) sunmaktadır ve çok yeni ve gelecek vaat eden [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) şifreleme protokolünü sunan dünyadaki ilk şirkettir. AdGuard'ın farklı amaçlar için farklı sunucuları vardır. Bu diyagram, AdGuard engelleme sunucularının nasıl çalıştığını göstermektedir:
+Aralarından seçim yapabileceğiniz binlerce DNS sunucusu vardır ve bunların tümü özellikleri ve amaçları bakımından benzersizdir. Çoğu yalnızca istenen alan adının IP adresini döndürür ancak bazılarının ek işlevleri vardır: reklamları, izlemeyi, yetişkinlere yönelik alan adlarını, vb. engeller. Günümüzde tüm büyük DNS sunucuları bir veya daha fazla güvenilir şifreleme protokolü kullanmaktadır: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard'ın farklı amaçlar için farklı sunucuları vardır. Bu diyagram, AdGuard engelleme sunucularının nasıl çalıştığını göstermektedir:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,11 +41,11 @@ Diğer DNS sağlayıcıları farklı çalışabilir, bu nedenle şu veya bu DNS 
 
 ### Yerel DNS engel listeleri
 
-Ancak, yalnızca DNS trafiğinizi filtrelemek için DNS sunucularına güvenerek tüm esnekliği kaybedersiniz. Seçilen sunucu bir alan adını engellerse, ona erişemezsiniz. AdGuard ile, DNS trafiğini filtrelemek için belirli bir DNS sunucusunu yapılandırmanız bile gerekmez. Tüm AdGuard ürünleri, basit ana makine dosyaları veya [daha gelişmiş söz dizimi](dns-filtering-syntax.md) kullanan listeler olsun, DNS engel listelerini kullanmanıza izin verir. Normal engel listeleri ile benzer şekilde çalışırlar: bir DNS isteği etkin filtre listesindeki kurallardan biriyle eşleştiğinde engellenir. Daha açık olmak gerekirse, bir "kara deliğe" yönlendirilir.
+Ancak, yalnızca DNS trafiğinizi filtrelemek için DNS sunucularına güvenerek tüm esnekliği kaybedersiniz. Seçilen sunucu bir alan adını engellerse, ona erişemezsiniz. AdGuard ile, DNS trafiğini filtrelemek için belirli bir DNS sunucusunu yapılandırmanız bile gerekmez. Tüm AdGuard ürünleri, basit ana makine dosyaları veya [daha gelişmiş söz dizimi](dns-filtering-syntax.md) kullanan listeler olsun, DNS engel listelerini kullanmanıza izin verir. Normal engel listeleri ile benzer şekilde çalışırlar: bir DNS isteği etkin filtre listesindeki kurallardan biriyle eşleştiğinde engellenir. Daha açık olmak gerekirse, DNS sunucusu böyle bir istek için yönlendirilemeyen bir IP adresi verir.
 
 :::ipucu
 
-iOS için AdGuard'da, DNS engellemeye erişmek için önce ayarlarda *Gelişmiş modu* etkinleştirmeniz gerekir.
+iOS için AdGuard'da, DNS engellemeye erişmek için önce *Ayarlarda* *Gelişmiş modu* etkinleştirmeniz gerekir.
 
 :::
 
@@ -67,7 +67,7 @@ Ağ filtreleme, AdGuard bağımsız uygulamalarının ağ trafiğini işlemesini
 
 **DNS filtrelemenin eksileri:**
 
-1. DNS filtering is "rough", meaning that it won't remove whitespaces that are left behind a blocked ad, or apply any sorts of cosmetic filtering. Daha karmaşık reklamların çoğu, DNS düzeyinde engellenemez (veya daha doğrusu, yalnızca başka amaçlar için kullanılan tüm alan adlarının engellenmesiyle engellenebilir).
+1. DNS filtreleme "kabadır", yani engellenen bir reklamın arkasında kalan boşlukları kaldırmaz veya herhangi bir kozmetik filtreleme uygulamaz. Daha karmaşık reklamların çoğu, DNS düzeyinde engellenemez (veya daha doğrusu, yalnızca başka amaçlar için kullanılan tüm alan adlarının engellenmesiyle engellenebilir).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *DNS filtreleme ve ağ filtreleme arasındaki farka bir örnek*
 
