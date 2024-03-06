@@ -28,13 +28,13 @@ Bugünlerde TV'den akıllı ampullere, mobil cihazlardan akıllı arabalara kada
 
 ## AdGuard DNS nedir?
 
-AdGuard DNS, piyasadaki en gizlilik odaklı DNS hizmetlerinden biridir. DNS-over-HTTPS, DNS-over-TLS ve DNS-over-QUIC gibi güvenilir şifreleme protokollerini destekler. Non-filtering modda normal bir DNS çözümleyici olarak çalışabilir, ancak aynı zamanda DNS düzeyinde içerik engelleme sağlayabilir: reklam, izleme ve/veya yetişkin alan adlarına (isteğe bağlı) yönelik istekleri tanımlayın ve boş bir yanıtla yanıt verin. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
+AdGuard DNS, piyasadaki en gizlilik odaklı DNS hizmetlerinden biridir. DNS-over-HTTPS, DNS-over-TLS ve DNS-over-QUIC gibi güvenilir şifreleme protokollerini destekler. Non-filtering modda normal bir DNS çözümleyici olarak çalışabilir, ancak aynı zamanda DNS düzeyinde içerik engelleme sağlayabilir: reklam, izleme ve/veya yetişkin alan adlarına (isteğe bağlı) yönelik istekleri tanımlayın ve boş bir yanıtla yanıt verin. AdGuard, reklam, izleyici ve dolandırıcılık hizmeti veren alan adlarını içeren ve sık sık güncellenen kendi veri tabanına sahiptir.
 
 ![AdGuard DNS'in nasıl çalıştığına dair yaklaşık bir şema](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
 AdGuard DNS trafiğinin yaklaşık %75'i şifrelenmiştir. DNS sunucularını engelleyen içeriği diğerlerinden ayıran aslında budur. CloudFlare veya Quad9 istatistiklerine bakarsanız, şifrelenmiş DNS'nin tüm sorguların sadece küçük bir kısmı olduğunu görürsünüz.
 
-AdGuard DNS iki ana biçimde mevcuttur: [Genel AdGuard DNS](public-dns/overview) ve [Özel AdGuard DNS](private-dns/overview). None of these services require the installation of apps. Kurulumu ve kullanımı kolaydır ve kullanıcılara reklamları, izleyicileri, kötü amaçlı siteleri ve (gerekirse) yetişkinlere yönelik içeriği engellemek için gereken minimum özellikleri sağlar. Hangi cihazlarla kullanılabileceği konusunda herhangi bir kısıtlama yoktur.
+AdGuard DNS iki ana biçimde mevcuttur: [Genel AdGuard DNS](public-dns/overview) ve [Özel AdGuard DNS](private-dns/overview). Bu hizmetlerin hiçbiri uygulama yüklemeyi gerektirmez. Kurulumu ve kullanımı kolaydır ve kullanıcılara reklamları, izleyicileri, kötü amaçlı siteleri ve (gerekirse) yetişkinlere yönelik içeriği engellemek için gereken minimum özellikleri sağlar. Hangi cihazlarla kullanılabileceği konusunda herhangi bir kısıtlama yoktur.
 
 Pek çok benzerliğe rağmen, özel AdGuard DNS ve genel AdGuard DNS iki farklı üründür. Temel farkları, Özel AdGuard DNS'i özelleştirebilmeniz, ancak Genel AdGuard DNS'nin yapamamasıdır.
 

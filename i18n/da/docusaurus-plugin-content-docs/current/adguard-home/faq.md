@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Man har højst sandsynligt ikke opsat sin enhed til at bruge AdGuard Home som standard DNS-server. Sådan tjekkes, om AdGuard Home bruges som standard DNS-server:
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). På andre systemer, åbn Terminal-applikationen.
+1. Åbn i Windows en kommandoprompt (_Start_ → _Kør_ → `cmd.exe`). På andre systemer, åbn Terminal-applikationen.
 
 2. Eksekvér `nslookup example.org`. Det vil give et skærmoutput i stil med dette:
 

@@ -50,27 +50,27 @@ Tímto postupem ztratíte připojení k routerům Wi-Fi a dalším specifickým 
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
+Vyprázdnění mezipaměti DNS v zařízení s Androidem lze provést různými způsoby. Přesný postup se může lišit v závislosti na verzi systému Android, kterou používáte, a na výrobci zařízení.
 
-#### Clear DNS cache via Chrome
+#### Vymazání mezipaměti DNS prostřednictvím Chrome
 
-Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+Google Chrome, často výchozí prohlížeč v systému Android, má vlastní mezipaměť DNS. Chcete-li vyprázdnit tuto mezipaměť v prohlížeči Chrome, postupujte podle následujících pokynů:
 
-1. Launch Chrome on your Android device
-1. Type `chrome://net-internals/#DNS` in the address bar
-1. On the DNS lookup page, choose DNS from the menu on the left
-1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
+1. Spusťte Chrome na svém Android zařízení
+1. Do adresního řádku napište `chrome://net-internals/#DNS`
+1. Na stránce vyhledávání DNS vyberte z nabídky vlevo položku DNS
+1. Na panelu vpravo klepněte na tlačítko *Clear Host Cache* a vymažte mezipaměť DNS v zařízení
 
-#### Modify the Wi-Fi network to Static
+#### Úprava sítě Wi-Fi na statickou
 
-To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+Chcete-li vymazat mezipaměť DNS u zařízení s Androidem změnou nastavení sítě Wi-Fi na možnost Statická, postupujte podle následujících kroků:
 
-1. Go to *Settings → Wi-Fi* and choose the network you're connected to
-1. Look for IP settings and select *Static*
-1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
-1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
+1. Přejděte do *Nastavení → Wi-Fi* a vyberte síť, ke které jste připojeni
+1. Vyhledejte nastavení IP a vyberte *Statická*
+1. Vyplňte požadovaná pole. Potřebné informace získáte od správce sítě nebo na konfigurační stránce routeru
+1. Po zadání požadovaných údajů se znovu připojte k síti Wi-Fi. Tato akce donutí zařízení aktualizovat nastavení IP a DNS a vymazat mezipaměť DNS
 
-#### Reset network settings
+#### Resetování nastavení sítě
 
 Další možností je obnovit síťové nastavení zařízení v Nastavení telefonu. Otevřete *Nastavení → Systém → Pokročilé → Možnosti resetování → Resetovat nastavení sítě* a klepněte na *Resetovat nastavení*.
 

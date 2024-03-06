@@ -14,7 +14,7 @@ AdGuard DNS, uygulamalarınızı entegre etmek için kullanabileceğiniz bir RES
 
 ## Kimlik Doğrulama
 
-### Generate Access token
+### Erişim belirteci oluştur
 
 Make a POST request for the following URL with the given params to generate the `access_token`:
 
@@ -120,13 +120,13 @@ OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger
 
 Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. Örneğin, bu dosyayı [https://editor.swagger.io/][swagger] adresinde açabilirsiniz.
 
-### Changelog
+### Değişiklik günlüğü
 
 The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Geri Bildirim
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

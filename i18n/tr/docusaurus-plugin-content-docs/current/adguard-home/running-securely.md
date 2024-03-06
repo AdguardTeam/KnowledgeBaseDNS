@@ -7,7 +7,7 @@ Bu sayfa, AdGuard Home'unuzun güvenliğini sağlamaya yardımcı olacak ek öne
 
 ## Sunucu adreslerini seçme
 
-AdGuard Home'u ilk kez başlattığınızda, düz DNS sunmak için hangi arayüzü kullanması gerektiği sorulacaktır. En güvenli ve kullanışlı seçenek, AdGuard Home'u nasıl çalıştırmak istediğinize bağlıdır. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
+AdGuard Home'u ilk kez başlattığınızda, düz DNS sunmak için hangi arayüzü kullanması gerektiği sorulacaktır. En güvenli ve kullanışlı seçenek, AdGuard Home'u nasıl çalıştırmak istediğinize bağlıdır. Adresleri daha sonra AdGuard Home'u durdurarak, yapılandırma dosyasındaki `dns.bind_hosts` alanını düzenleyerek ve AdGuard Home'u yeniden başlatarak değiştirebilirsiniz.
 
 :::note
 
@@ -15,11 +15,11 @@ Kullanıcı arayüzü şu anda yalnızca bir arayüz seçmenize izin veriyor, an
 
 :::
 
-If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). Genellikle `localhost`, `lo` veya benzer bir adla anılır ve `127.0.0.1` adresine sahiptir.
+AdGuard Home'u yalnızca **sizin bilgisayarınızda** çalıştırmak istiyorsanız, geri döngü aygıtını ("localhost" olarak da bilinir) seçin. Genellikle `localhost`, `lo` veya benzer bir adla anılır ve `127.0.0.1` adresine sahiptir.
 
-If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
+If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. İsimler değişebilir, ancak genellikle `wlan` veya `wlp` kelimelerini içerirler ve `192.168.` ile başlayan bir adrese sahiptirler. Yönlendiricideki yazılımın da AdGuard Home'u kullanmasını istiyorsanız muhtemelen geri döngü adresini de eklemelisiniz.
 
-AdGuard Home'u **genel erişime açık bir sunucuda** çalıştırmayı düşünüyorsanız, muhtemelen _Tüm arayüzler_ seçeneğini belirlemek isteyeceksiniz. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
+AdGuard Home'u **genel erişime açık bir sunucuda** çalıştırmayı düşünüyorsanız, muhtemelen _Tüm arayüzler_ seçeneğini belirlemek isteyeceksiniz. Bunun sunucunuzu DDoS saldırılarına maruz bırakabileceğini unutmayın, bu nedenle lütfen aşağıdaki erişim ayarları ve hız sınırlama bölümlerini okuyun.
 
 ## Erişim ayarları
 
@@ -31,7 +31,7 @@ AdGuard Home'unuza dışarıdan erişilemiyorsa, bu bölümü atlayabilirsiniz.
 
 _Ayarlar_ → _DNS ayarları_ sayfasının alt kısmında _Erişim ayarları_ bölümünü bulacaksınız. Bu ayarlar, AdGuard Home örneğinizi kötüye kullandığı bilinen istemcileri yasaklamanıza veya İzin listesi modunu etkinleştirmenize olanak tanır. İzin listesi modu, istemci sayısının bilindiği ve tüm istemcilerin güvenli DNS kullanabildiği genel örnekler için önerilir.
 
-To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP addresses for allowed clients in the _Allowed clients_ field.
+İzin listesi modunu etkinleştirmek için, _İzin verilen istemciler_ alanına izin verilen istemciler için [ClientIDs][cid] (önerilir) veya IP adreslerini girin.
 
 [cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
 
@@ -67,7 +67,7 @@ Bu bölümün yazılmasındaki yardımları için Go Compile'a teşekkür ederiz
 
 ### Unix (FreeBSD, Linux, macOS, OpenBSD)
 
-AdGuard Home working directory, which is by default `/Applications/AdGuardHome` on macOS and `/opt/AdGuardHome` on other Unix systems, as well as the binary itself should generally have `root:root` ownership and not be writeable by anyone but `root`. Bunu `/opt/AdGuardHome` yerine dizininizi ve `/opt/AdGuardHome/AdGuardHome` yerine ikili dosyanızı koyarak aşağıdaki komutla kontrol edebilirsiniz:
+MacOS üzerinde varsayılan olarak `/Applications/AdGuardHome` ve diğer Unix sistemlerinde `/opt/AdGuardHome` olan AdGuard Home çalışma dizini ve ikili dosyanın kendisi genellikle `root:root` sahipliğine sahip olmalı ve `root` dışında kimse tarafından yazılamamalıdır. Bunu `/opt/AdGuardHome` yerine dizininizi ve `/opt/AdGuardHome/AdGuardHome` yerine ikili dosyanızı koyarak aşağıdaki komutla kontrol edebilirsiniz:
 
 ```sh
 ls -d -l /opt/AdGuardHome
@@ -81,7 +81,7 @@ drwxr-xr-x 4 root root 4096 Jan 1 12:00 /opt/AdGuardHome/
 -rwxr-xr-x 1 root root 29409280 Jan 1 12:00 /opt/AdGuardHome/AdGuardHome
 ```
 
-Note the lack of write permission for anyone but `root` as well as `root` ownership. If the permissions and/or ownership are not correct, run the following commands under `root`:
+`root` dışında herhangi biri için yazma izni olmadığına ve `root` sahipliğine dikkat edin. Eğer izinler ve/veya sahiplik doğru değilse, `root` altında aşağıdaki komutları çalıştırın:
 
 ```sh
 chmod 755 /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
