@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: Değişiklik günlüğü
 sidebar_position: 3
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,7 +10,7 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/CHANGELOG.md
 -->
 
-This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
+Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik günlüğünü içerir.
 
 ## v1.6
 
@@ -34,9 +34,9 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 
 ## v1.5
 
-- Added new setting `block_nrd` and group all security-related settings to one place.
+- Yeni `block_nrd` ayarı eklendi ve güvenlikle ilgili tüm ayarlar tek bir yerde toplandı.
 
-### Model for safebrowsing settings changed
+### Güvenli gezinti ayarları için model değiştirildi
 
 From
 
@@ -84,7 +84,7 @@ From:
 }
 ```
 
-here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
+burada, değeri `block_dangerous_domains` içinde depolanan ve kullanımdan kaldırılan `safebrowsing_enabled` yerine yeni `safebrowsing_settings` alanı kullanılıyor.
 
 ## v1.4
 

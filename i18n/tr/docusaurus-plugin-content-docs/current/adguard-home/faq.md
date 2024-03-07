@@ -9,9 +9,9 @@ AdGuard Home'un \`somebadsite.com'u engellemesini istediğinizi ancak bazı nede
 
 Büyük olasılıkla, cihazınızı AdGuard Home'u varsayılan DNS sunucusu olarak kullanacak şekilde yapılandırmadınız. Varsayılan DNS sunucunuz olarak AdGuard Home'u kullanıp kullanmadığınızı kontrol etmek için:
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). Diğer sistemlerde, Terminal uygulamanızı açın.
+1. Windows'ta Komut İstemi'ni açın (_Başlat_ → _Çalıştır_ → `cmd.exe`). Diğer sistemlerde, Terminal uygulamanızı açın.
 
-2. nslookup example.org\` öğesini yürütün. Şuna benzer bir şey yazdıracaktır:
+2. nslookup example.org\` öğesini yürütün. Şuna benzer bir şey yazdırır:
 
    ```none
    Server: 192.168.0.1
@@ -24,11 +24,11 @@ Büyük olasılıkla, cihazınızı AdGuard Home'u varsayılan DNS sunucusu olar
    Address: <IPv6>
    ```
 
-3. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. Bunun nasıl yapılacağını [aşağıda](#defaultdns) görebilirsiniz.
+3. `Sunucu` IP adresinin AdGuard Home'un çalıştığı IP adresi olup olmadığını kontrol edin. Eğer yoksa, cihazınızı buna göre yapılandırmanız gerekir. Bunun nasıl yapılacağını [aşağıda](#defaultdns) görebilirsiniz.
 
-4. Ensure that your request to `example.org` appears in the AdGuard Home UI on the _Query Log_ page. If not, you need to configure AdGuard Home to listen on the specified network interface. The easiest way to do this is to reinstall AdGuard Home with default settings.
+4. AdGuard Home kullanıcı arayüzünde _Sorgu Günlüğü_ sayfasında `example.org` isteğinizin göründüğünden emin olun. Eğer görünmüyorsa, AdGuard Home'u belirtilen ağ arayüzünü dinleyecek şekilde yapılandırmanız gerekir. Bunu yapmanın en kolay yolu, AdGuard Home'u varsayılan ayarlarla yeniden kurmaktır.
 
-If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Lütfen aşağıdakileri kontrol edin ve emin olun:
+Cihazınızın varsayılan DNS sunucusu olarak AdGuard Home'u kullandığından eminseniz ancak sorun devam ediyorsa bunun nedeni AdGuard Home'un yanlış yapılandırılması olabilir. Lütfen aşağıdakileri kontrol edin ve emin olun:
 
 1. _Ayarlar_ → _Genel ayarlar_ sayfasında _Filtreleri ve hosts dosyalarını kullanarak alan adlarını engelle_ ayarını etkinleştirdiniz.
 
@@ -36,11 +36,11 @@ If you are sure that your device is using AdGuard Home as its default DNS server
 
 3. _Filtreler_ → _DNS engel listeleri_ sayfasında uygun filtreleri etkinleştirdiniz.
 
-4. You don’t have any exception rule lists that may allow the requests enabled on the _Filters_ → _DNS allowlists_ page.
+4. _Filtreler_ → _DNS izin listeleri_ sayfasında etkinleştirilen isteklere izin verebilecek herhangi bir istisna kuralı listeniz yok.
 
-5. You don’t have any DNS rewrites that may interfere on the _Filters_ → _DNS rewrites_ page.
+5. _Filtreler_ → _DNS yeniden yazmaları_ sayfasında müdahale edebilecek herhangi bir DNS yeniden yazmanız yok.
 
-6. You don’t have any custom filtering rules that may interfere on the _Filters_ → _Custom filtering rules_ page.
+6. _Filtreler_ → _Özel filtreleme kuralları_ sayfasında müdahale edebilecek herhangi bir özel filtreleme kuralınız yok.
 
 ## Günlükleri nerede görüntüleyebilirim? {#logs}
 
@@ -54,13 +54,13 @@ Düz metin günlüklerinin (sorgu günlükleri ile karıştırılmamalıdır) va
 
 - **macOS:** `/var/log/AdGuardHome.stderr.log`.
 
-- **Linux** systems with **Snapcraft** use the `snap logs adguard-home` command.
+- **Linux** sistemlerinde **Snapcraft** ile `snap logs adguard-home` komutu kullanılır.
 
 - **FreeBSD:** `/var/log/daemon.log`.
 
 - **OpenBSD:** `/var/log/daemon`.
 
-- **Windows:** the [Windows Event Log][wlog] is used.
+- **Windows:** [Windows Olay Günlüğü][wlog] kullanılır.
 
 [wlog]: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
 
@@ -106,11 +106,11 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 ### Ön Koşullar
 
-To use any of these methods to display a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. [`pixelserv-tls`][pxsrv] gibi bir şey.
+Özel bir blok sayfasını görüntülemek üzere bu yöntemlerden herhangi birini kullanmak için, bazı IP adreslerinde çalışan ve söz konusu sayfayı tüm yollarda sunan bir HTTP sunucusuna ihtiyacınız olacaktır. [`pixelserv-tls`][pxsrv] gibi bir şey.
 
 [pxsrv]: https://github.com/kvic-z/pixelserv-tls
 
-### Custom block page for Parental Control and Safe Browsing filters
+### Ebeveyn Denetimi ve Güvenli Gezinti filtreleri için özel engelleme sayfası
 
 Şu anda bu parametreleri kullanıcı arayüzünden ayarlamanın bir yolu yoktur, bu nedenle yapılandırma dosyasını elle düzenlemeniz gerekir:
 
@@ -146,7 +146,7 @@ To use any of these methods to display a custom block page, you’ll need an HTT
 
 2. Ayarlar\* → _DNS ayarları_ öğesine gidin.
 
-3. In the _DNS server configuration_ section, select the _Custom IP_ radio button in the _Blocking mode_ selector and enter the IPv4 and IPv6 addresses of the server.
+3. _DNS sunucusu yapılandırması_ bölümünde, _Engelleme modu_ seçicisinde _Özel IP_ onay düğmesini seçin ve sunucunun IPv4 ve IPv6 adreslerini girin.
 
 4. _Kaydet_ öğesine tıklayın.
 
@@ -174,7 +174,7 @@ To use any of these methods to display a custom block page, you’ll need an HTT
 
 ## AdGuard Home'u varsayılan DNS sunucusu olarak nasıl ayarlarım? {#defaultdns}
 
-See the [_Configuring Devices_ section](getting-started.md#configure-devices) on the _Getting Started_ page.
+_Başlarken_ sayfasındaki [_Cihazların Yapılandırılması_ bölümüne](getting-started.md#configure-devices) bakın.
 
 ## Bilinen herhangi bir sınırlama var mı? {#limitations}
 
@@ -188,13 +188,13 @@ Temel olarak, içerikle aynı alan adını paylaşan herhangi bir reklam, içeri
 
 ### Gelecekte bununla başa çıkma olasılığı var mı?
 
-DNS bunu yapmak için asla yeterli olmayacaktır. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. Gelecekte AdGuard Home'a bu özellik için destek ekleyeceğiz. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
+DNS bunu yapmak için asla yeterli olmayacaktır. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. Gelecekte AdGuard Home'a bu özellik için destek ekleyeceğiz. Ne yazık ki, o zaman bile yeterli olmayacağı veya oldukça karmaşık bir yapılandırma gerektireceği durumlar olur.
 
 [adguard]: https://adguard.com/
 
-## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
+## Ubuntu'ya kurmaya çalışırken neden `bind: address already in use` hatası alıyorum? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. Bunu çalıştırarak görebilirsiniz:
+Bunun nedeni, DNS için kullanılan `localhost` üzerindeki 53 numaralı bağlantı noktasının zaten başka bir program tarafından alınmış olmasıdır. Ubuntu, `127.0.0.53:53` adresini kullanan `systemd-resolved` adlı yerel bir DNS ile birlikte gelir, böylece AdGuard Home'un `127.0.0.1:53` adresine bağlanmasını engeller. Bunu çalıştırarak görebilirsiniz:
 
 ```sh
 sudo lsof -i :53
@@ -208,13 +208,13 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind your AdGuard Home to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+Bunu düzeltmek için ya `systemd-resolved` daemon'unu devre dışı bırakmalı ya da farklı bir ağ arayüzü seçmeli ve AdGuard Home'unuzu ağınızdaki yönlendiricinizin IP adresi gibi erişilebilir bir IP adresine bağlamalısınız. Ancak `localhost` üzerinde dinleme yapmanız gerekiyorsa, birkaç çözüm vardır.
 
 Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the _Fix_ button located next to the `address already in use` message on the installation screen.
 
-Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
+İkinci olarak, bu işe yaramazsa, aşağıdaki talimatları izleyin. AdGuard Home'u docker veya snap ile kullanıyorsanız, bunu kendiniz yapmanız gerekeceğini unutmayın.
 
-1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
+1. Gerekirse `/etc/systemd/resolved.conf.d` dizinini oluşturun:
 
    ```sh
    sudo mkdir -p /etc/systemd/resolved.conf.d
@@ -247,7 +247,7 @@ Bundan sonra, `systemd-resolved` `lsof` çıktısında gösterilmemeli ve AdGuar
 
 ## AdGuard Home için bir ters proxy sunucusunu nasıl yapılandırabilirim? {#reverseproxy}
 
-If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
+Zaten bir web sunucusu çalıştırıyorsanız ve AdGuard Home panosu kullanıcı arayüzüne `http://YOUR_SERVER/aghome/` gibi bir URL'den erişmek istiyorsanız, web sunucunuz için bu yapılandırmayı kullanabilirsiniz:
 
 ### nginx
 
@@ -314,7 +314,7 @@ AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almas�
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
+Eğer hâlâ `systemctl'den `code=exited status=203/EXEC`veya benzeri hatalar alıyorsanız, AdGuard Home'u kaldırmayı ve kurulum betiğinin`-o`seçeneğini kullanarak`/usr/local/bin\` içine **doğrudan** kurmayı deneyin:
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
@@ -328,15 +328,15 @@ Bkz. \[sorun 765] ve \[sorun 3281].
 
 ## `Uyumsuz dosya sistemi` hatalarını nasıl düzeltirim? {#incompatfs}
 
-You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+AdGuard Home kurulumunuzu veya çalışma dizininizi başka bir konuma taşımalısınız. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
 
 ## How do I update AdGuard Home manually? {#manual-update}
 
-If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
+If the button isn’t displayed or an automatic update has failed, you can update manually. Aşağıdaki örneklerde, AMD64 CPU'lar için Linux ve Windows için AdGuard Home sürümlerini kullanacağız.
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
+1. Download the new AdGuard Home package from the [releases page][releases]. Bu adımı komut satırından gerçekleştirmek istiyorsanız, şunu yazın:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -350,7 +350,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
+2. AdGuard Home'un kurulu olduğu dizine gidin. Çoğu Unix sisteminde varsayılan dizin `/opt/AdGuardHome` şeklindedir, ancak macOS'ta `/Applications/AdGuardHome` şeklinde olur.
 
 3. AdGuard Home'u durdurun:
 
@@ -364,7 +364,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
    :::
 
-4. Verilerinizi yedekleyin. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). Örneğin, verilerinizi `~/my-agh-backup` adlı yeni bir dizine yedeklemek için:
+4. Verilerinizi yedekleyin. Yani, yapılandırma dosyanız ve veri dizininiz (varsayılan olarak `AdGuardHome.yaml` ve `data/`). Örneğin, verilerinizi `~/my-agh-backup` adlı yeni bir dizine yedeklemek için:
 
    ```sh
    mkdir -p ~/my-agh-backup
@@ -411,7 +411,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıdır.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
+1. Download the new AdGuard Home package from the [releases page][releases]. Bu adımı komut satırından gerçekleştirmek istiyorsanız:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'

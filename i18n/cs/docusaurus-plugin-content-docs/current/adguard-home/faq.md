@@ -9,7 +9,7 @@ Předpokládejme, že chcete, aby AdGuard Home blokoval stránku `somebadsite.co
 
 Pravděpodobně jste nenakonfigurovali zařízení tak, aby používalo AdGuard Home jako výchozí DNS server. Zkontrolujte, zda používáte AdGuard Home jako výchozí DNS server:
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). V jiných systémech otevřete aplikaci Terminal.
+1. Ve Windows otevřete příkazový řádek (_Start_ → _Spustit_ → `cmd.exe`). V jiných systémech otevřete aplikaci Terminal.
 
 2. Spusťte příkaz `nslookup example.org`. Vypíše se něco takového:
 

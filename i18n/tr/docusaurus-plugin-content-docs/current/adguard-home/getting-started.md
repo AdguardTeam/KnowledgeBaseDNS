@@ -3,13 +3,13 @@ title: Başlarken
 sidebar_position: 2
 ---
 
-## Installation {#installation}
+## Kurulum {#installation}
 
 ### Resmi sürümler
 
 İşletim sisteminiz için ikili dosyayı içeren arşivi [en son kararlı sürüm sayfası][releases] adresinden indirin. Desteklenen platformların tam listesinin yanı sıra beta ve edge (kararsız) sürümlere bağlantılar [platformlar sayfamızda][platforms] bulunabilir.
 
-To install AdGuard Home as a service, extract the archive, enter the `AdGuardHome` directory, and run:
+AdGuard Home'u bir hizmet olarak kurmak için arşivi çıkarın, `AdGuardHome` dizinine girin ve çalıştırın:
 
 ```sh
 ./AdGuardHome -s install
@@ -17,9 +17,9 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 #### Notlar
 
-- Users of **Fedora Linux** and its derivatives: install AdGuard Home in the `/usr/local/bin` directory. Failure to do so may cause issues with SELinux and permissions. Bkz. \[sorun 765] ve \[sorun 3281].
+- **Fedora Linux** ve türevlerini kullananlar: AdGuard Home'u \`/usr/local/bin' dizinine kurun. Bunun yapılmaması SELinux ve izinlerle ilgili sorunlara neden olabilir. Bkz. \[sorun 765] ve \[sorun 3281].
 
-- Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
+- MacOS 10.15 Catalina\*\* ve daha yeni sürüm kullanıcıları AdGuard Home çalışma dizinini `/Applications` dizininin içine yerleştirmelidir.
 
 ### Docker ve Snap
 
@@ -31,11 +31,11 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 
 - [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [OpenWrt LUCI uygulaması][luci], [@kongfl888](https://github.com/kongfl888) tarafından sürdürülmektedir.
 
-- [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur] maintained by [@graysky2](https://github.com/graysky2).
+- [Arch Linux][arch], [Arch Linux ARM][archarm] ve diğer Arch tabanlı işletim sistemleri, [@graysky2](https://github.com/graysky2) tarafından sürdürülen [AUR'daki][aur] [`adguardhome` paketi][aghaur] aracılığıyla oluşturulabilir.
 
-- [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
+- [Cloudron uygulaması][cloudron], [@gramakri](https://github.com/gramakri) tarafından sürdürülmektedir.
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 
@@ -65,15 +65,15 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 
 ## İlk başlangıç {#first-time}
 
-Öncelikle güvenlik duvarı ayarlarınızı kontrol edin. To install and use AdGuard Home, the following ports and protocols must be available:
+Öncelikle güvenlik duvarı ayarlarınızı kontrol edin. AdGuard Home'u kurmak ve kullanmak için aşağıdaki bağlantı noktalarının ve protokollerin kullanılabilir olması gerekir:
 
-- 3000/TCP for the initial installation;
+- İlk kurulum için 3000/TCP;
 - Web arayüzü için 80/TCP;
 - DNS sunucusu için 53/UDP.
 
 DNS-over-HTTPS gibi düz DNS dışındaki protokoller için ek bağlantı noktaları açmanız gerekebilir.
 
-DNS servers bind to port 53, which requires superuser privileges most of the time, [see below](#running-without-superuser). Therefore, on Unix systems, you will need to run it with `sudo` or `doas` in terminal:
+DNS sunucuları, çoğu zaman süper kullanıcı ayrıcalıkları gerektiren 53 numaralı bağlantı noktasına bağlanır, [aşağıya bakın](#running-without-superuser). Bu nedenle, Unix sistemlerinde, terminalde `sudo` veya `doas` ile çalıştırmanız gerekecektir:
 
 ```sh
 sudo ./AdGuardHome
@@ -84,13 +84,13 @@ Windows'ta yönetici ayrıcalıklarıyla `cmd.exe` veya PowerShell'i çalıştı
 AdGuard Home'u ilk kez çalıştırdığınızda, `0.0.0.0:3000` adresini dinlemeye başlar ve tarayıcınızda açmanızı ister:
 
 ```none
-AdGuard Home is available at the following addresses:
-go to http://127.0.0.1:3000
-go to http://[::1]:3000
+AdGuard Home aşağıdaki adreslerde mevcuttur:
+http://127.0.0.1:3000 adresine gidin
+http://[::1]:3000 adresine gidin
 […]
 ```
 
-There you will go through the initial configuration wizard.
+Orada ilk yapılandırma sihirbazından geçeceksiniz.
 
 ![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
@@ -100,7 +100,7 @@ See [our article on running AdGuard Home securely](running-securely.md) for guid
 
 ## Hizmet olarak çalıştırma {#service}
 
-Bir sonraki adım AdGuard Home'u bir sistem hizmeti (diğer adıyla daemon) olarak kaydetmek olacaktır. To install AdGuard Home as a service, run:
+Bir sonraki adım AdGuard Home'u bir sistem hizmeti (diğer adıyla daemon) olarak kaydetmek olacaktır. AdGuard Home'u bir hizmet olarak kurmak için şunu çalıştırın:
 
 ```sh
 sudo ./AdGuardHome -s install
@@ -108,13 +108,13 @@ sudo ./AdGuardHome -s install
 
 Windows'ta, yönetici ayrıcalıklarıyla `cmd.exe` dosyasını çalıştırın ve bir Windows hizmetini kaydetmek için `AdGuardHome.exe -s install` komutunu çalıştırın.
 
-Here are the other commands you might need to control the service:
+Hizmeti kontrol etmek için ihtiyaç duyabileceğiniz diğer komutlar şunlardır:
 
-- `AdGuardHome -s uninstall`: Uninstall the AdGuard Home service.
-- `AdGuardHome -s start`: Start the service.
-- `AdGuardHome -s stop`: Stop the service.
-- `AdGuardHome -s restart`: Restart the service.
-- `AdGuardHome -s status`: Show the current service status.
+- `AdGuardHome -s uninstall`: AdGuard Home hizmetini kaldırın.
+- `AdGuardHome -s start`: Hizmeti başlatın.
+- `AdGuardHome -s stop`: Hizmeti durdurun.
+- `AdGuardHome -s restart`: Hizmeti yeniden başlatın.
+- `AdGuardHome -s status`: Geçerli hizmet durumunu gösterin.
 
 ### Günlükler
 
@@ -130,15 +130,15 @@ Bu davranışı AdGuard Home [yapılandırma dosyası][conf] içinde değiştire
 
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## Updating {#update}
+## Güncelleme {#update}
 
-![An example of an update notification](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
+![Bir güncelleme bildirimi örneği](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
 
 Yeni bir sürüm yayınlandığında, AdGuard Home'un kullanıcı arayüzünde bir bildirim mesajı ve _Şimdi güncelle_ düğmesi gösterilir. Bu düğmeye tıkladığınızda AdGuard Home otomatik olarak en son sürüme güncellenecektir. Mevcut AdGuard Home çalıştırılabilir dosyanız, mevcut yapılandırma dosyasıyla birlikte `backup` dizininin içine kaydedilir, böylece gerekirse değişiklikleri geri alabilirsiniz.
 
-### Manual update {#manual-update}
+### Elle güncelleme {#manual-update}
 
-Düğmenin gösterilmemesi veya otomatik güncellemenin başarısız olması durumunda, elle güncelleyebilirsiniz. We have a [detailed guide on manual updates][mupd], but in short:
+Düğmenin gösterilmemesi veya otomatik güncellemenin başarısız olması durumunda, elle güncelleyebilirsiniz. [Elle güncellemeler hakkında ayrıntılı bir kılavuzumuz][mupd] var, ancak kısaca:
 
 1. Yeni AdGuard Home paketini indirin.
 
@@ -166,15 +166,15 @@ AdGuard Home paketini Web API'sini kullanmaya gerek kalmadan güncellemek için 
 
 ### Yönlendirici
 
-This setup will automatically cover all devices connected to your home router, and you won’t need to configure each of them manually.
+Bu kurulum, ev yönlendiricinize bağlı tüm cihazları otomatik olarak kapsar ve her birini elle yapılandırmanız gerekmez.
 
-1. Yönlendiricinizin tercihlerini açın. Usually, you can access it from your browser via a URL, such as http\://192.168.0.1/ or http\://192.168.1.1/. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
+1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan http\://192.168.0.1/ veya http\://192.168.1.1/ gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
 
 2. DHCP/DNS ayarlarını bulun. Her biri bir ila üç basamaklı dört gruba bölünmüş iki veya üç sayı kümesine izin veren bir alanın yanındaki DNS harflerini arayın.
 
 3. AdGuard Home sunucu adreslerinizi oraya girin.
 
-4. On some router types, a custom DNS server cannot be set up. Bu durumda, AdGuard Home'u bir DHCP sunucusu olarak ayarlamak yardımcı olabilir. Aksi takdirde, belirli yönlendirici modelinizdeki DNS sunucularını nasıl özelleştireceğinizi öğrenmek için yönlendiricinizin kılavuzuna başvurmalısınız.
+4. Bazı yönlendirici türlerinde özel bir DNS sunucusu kurulamaz. Bu durumda, AdGuard Home'u bir DHCP sunucusu olarak ayarlamak yardımcı olabilir. Aksi takdirde, belirli yönlendirici modelinizdeki DNS sunucularını nasıl özelleştireceğinizi öğrenmek için yönlendiricinizin kılavuzuna başvurmalısınız.
 
 ### Windows
 
@@ -222,31 +222,31 @@ Android cihazlar için talimatlar işletim sistemi sürümüne ve üreticiye ba�
 
 1. Ana ekrandan _Ayarlar_ öğesine dokunun\*.
 
-2. Select _Wi-Fi_ from the left menu (it is impossible to configure DNS for mobile networks).
+2. Sol menüden _Wi-Fi_ öğesini seçin (mobil ağlar için DNS yapılandırması mümkün değildir).
 
 3. O anda aktif olan ağın adına dokunun.
 
-4. In the _DNS_ field, enter your AdGuard Home server addresses.
+4. _DNS_ alanına AdGuard Home sunucu adreslerinizi girin.
 
-## Running without superuser {#running-without-superuser}
+## Süper kullanıcı olmadan çalıştırma {#running-without-superuser}
 
 You can run AdGuard Home without superuser privileges, but you must either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
 
 ### Gerekli yetkilerin verilmesi (yalnızca Linux)
 
-Bu yöntemin kullanılması `setcap` yardımcı programını gerektirir. You may need to install it using your Linux distribution’s package manager.
+Bu yöntemin kullanılması `setcap` yardımcı programını gerektirir. Linux dağıtımınızın paket yöneticisini kullanarak kurmanız gerekebilir.
 
-To allow AdGuard Home running on Linux to listen on port 53 without superuser privileges and bind its DNS servers to a particular interface, run:
+Linux'da çalışan AdGuard Home'un süper kullanıcı ayrıcalıkları olmadan 53 numaralı bağlantı noktasını dinlemesine ve DNS sunucularını belirli bir arayüze bağlamasına izin vermek için çalıştırın:
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
 ```
 
-Then run `./AdGuardHome` as an unprivileged user.
+Ardından `./AdGuardHome` dosyasını ayrıcalıksız bir kullanıcı olarak çalıştırın.
 
 ### DNS dinleme bağlantı noktasını değiştirme
 
-To configure AdGuard Home to listen on a port that does not require superuser privileges, stop AdGuard Home, open `AdGuardHome.yaml` in your editor, and find these lines:
+AdGuard Home'u süper kullanıcı ayrıcalıkları gerektirmeyen bir bağlantı noktasını dinleyecek şekilde yapılandırmak için AdGuard Home'u durdurun, düzenleyicinizde `AdGuardHome.yaml` dosyasını açın ve bu satırları bulun:
 
 ```yaml
 dns:
@@ -254,7 +254,7 @@ dns:
     port: 53
 ```
 
-You can change the port to anything above 1024 to avoid requiring superuser privileges.
+Süper kullanıcı ayrıcalıkları gerektirmemek için bağlantı noktasını 1024'ün üzerinde herhangi bir değerle değiştirebilirsiniz.
 
 ## Limitations {#limitations}
 
@@ -262,7 +262,7 @@ Bazı dosya sistemleri, istatistik sisteminin gerektirdiği `mmap(2)` sistem ça
 
 Bu sorunu şu şekilde çözebilirsiniz:
 
-- either by supplying the `--work-dir DIRECTORY` arguments to the `AdGuardHome` binary. Bu seçenek AGH'ye tüm dosyaları için varsayılan `./data` dizini yerine başka bir dizin kullanmasını söyler.
+- ya da `AdGuardHome` ikili dosyasına `--work-dir DIRECTORY` argümanlarını sağlayarak. Bu seçenek AGH'ye tüm dosyaları için varsayılan `./data` dizini yerine başka bir dizin kullanmasını söyler.
 
 - veya `mmap(2)` destekleyen başka bir dosya sistemine (örneğin tmpfs) işaret eden sembolik bağlantılar oluşturarak:
 

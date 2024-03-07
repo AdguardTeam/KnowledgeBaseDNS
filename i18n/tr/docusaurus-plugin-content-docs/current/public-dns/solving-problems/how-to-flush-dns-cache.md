@@ -50,27 +50,27 @@ Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil d
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
+Android cihazınızdaki DNS önbelleğini temizlemenin farklı yolları vardır. Doğru adımlar, kullandığınız Android sürümüne ve cihaz üreticisine bağlı olarak değişebilir.
 
-#### Clear DNS cache via Chrome
+#### Chrome aracılığıyla DNS önbelleğini temizle
 
-Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+Android'de genellikle varsayılan tarayıcı olan Google Chrome'un kendi DNS önbelleği vardır. Chrome tarayıcısında bu önbelleği temizlemek için aşağıdaki talimatları izleyin:
 
-1. Launch Chrome on your Android device
-1. Type `chrome://net-internals/#DNS` in the address bar
-1. On the DNS lookup page, choose DNS from the menu on the left
-1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
+1. Android cihazınızda Chrome'u başlatın
+1. Adres çubuğuna `chrome://net-internals/#DNS` yazın
+1. DNS arama sayfasında, soldaki menüden DNS'i seçin
+1. Sağdaki panelde, cihazınızdaki DNS önbelleğini temizlemek için *Clear Host Cache* düğmesine dokunun
 
-#### Modify the Wi-Fi network to Static
+#### Wi-Fi ağını Statik olarak değiştir
 
-To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+Wi-Fi ağ ayarlarını Statik olarak değiştirerek Android cihazınızın DNS önbelleğini temizlemek için aşağıdaki adımları izleyin:
 
-1. Go to *Settings → Wi-Fi* and choose the network you're connected to
-1. Look for IP settings and select *Static*
-1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
-1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
+1. *Ayarlar → Wi-Fi* öğesine gidin ve bağlı olduğunuz ağı seçin
+1. IP ayarlarını bulun ve *Statik* öğesini seçin
+1. Gerekli alanları doldurun. Gerekli bilgileri ağ yöneticinizden veya yönlendiricinizin yapılandırma sayfasından alabilirsiniz
+1. Gerekli bilgileri girdikten sonra Wi-Fi ağınıza yeniden bağlanın. Bu eylem cihazınızı IP ve DNS ayarlarını güncellemeye ve DNS önbelleğini temizlemeye zorlar
 
-#### Reset network settings
+#### Ağ ayarlarını sıfırla
 
 Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Ayarlar → Sistem → Gelişmiş → Seçenekleri sıfırla → Ağ ayarlarını sıfırla* öğesini açın ve onaylamak için *Ayarları Sıfırla* öğesine dokunun.
 
