@@ -14,7 +14,7 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 
 ## v1.6
 
-*Released on 22 January 2024*
+*Released on January 22, 2024*
 
 - Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
 
@@ -36,7 +36,7 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 
 ## v1.5
 
-*Released on 16 June 2023*
+*Released on June 16, 2023*
 
 - Added new setting `block_nrd` and group all security-related settings to one place.
 
@@ -92,25 +92,25 @@ here new field `safebrowsing_settings` is used instead of deprecated `safebrowsi
 
 ## v1.4
 
-*Released on 29 March 2023*
+*Released on March 29, 2023*
 
 - Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
 
 ## v1.3
 
-*Released on 13 December 2022*
+*Released on December 13, 2022*
 
 - Added method to get account limits.
 
 ## v1.2
 
-*Released on 14 October 2022*
+*Released on October 14, 2022*
 
 - Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
 
 ## v1.1
 
-*Released on 07 July 2022*
+*Released on July 07, 2022*
 
 - Added methods to retrieve statistics by time, domains, companies and devices.
 - Added method for updating device settings.
@@ -118,7 +118,7 @@ here new field `safebrowsing_settings` is used instead of deprecated `safebrowsi
 
 ## v1.0
 
-*Released on 22 February 2022*
+*Released on February 22, 2022*
 
 - Added authentication.
 - CRUD operations with devices and DNS servers.
