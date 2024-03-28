@@ -125,7 +125,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`, is the delimiter. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`][] değiştiricisidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1`, [`client`][] değiştiricisidir ve değeri, `127.0.0.1`, sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`][] değiştiricisidir.
 
 **NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 

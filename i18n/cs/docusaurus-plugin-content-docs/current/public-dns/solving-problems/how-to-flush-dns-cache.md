@@ -96,7 +96,7 @@ Poté zadejte heslo správce a dokončete proces.
 
 Chcete-li vyprázdnit mezipaměť DNS v zařízení se systémem Windows, postupujte takto:
 
-Otevřete příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig/flushdns` a stiskněte Enter.
+Otevřete příkazový řádek jako správce. Najdete jej v nabídce Start zadáním *příkazový řádek* nebo *cmd*. Poté zadejte příkaz `ipconfig /flushdns` a stiskněte Enter.
 
 Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
 
