@@ -14,6 +14,8 @@ Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/o
 
 ## v1.6
 
+_Udgivet 22. januar 2024_
+
 - Tilføjet nyt afsnit "Adgangsindstillinger" for DNS-profiler (`access_settings`). Ved at tilpasse disse felter vil AdGuard DNS-serveren kunne beskyttes mod uautoriseret adgang:
 
   - `allowed_clients` — her kan angives, hvilke klienter, som kan bruge DNS-serveren. Dette felt vil have prioritet over feltet `blocked_clients`
@@ -33,6 +35,8 @@ Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/o
   - For `rules` i indstillingerne for tilpassede brugerregler
 
 ## v1.5
+
+_Udgivet 16. juni 2023_
 
 - Tilføjet ny indstilling `block_nrd` samt grupperet alle sikkerhedsrelaterede indstillinger på ét sted.
 
@@ -88,23 +92,33 @@ her bruges det nye felt `safebrowsing_settings` i stedet for det udfasede `safeb
 
 ## v1.4
 
+_Udgivet 29. marts 2023_
+
 - Tilføjet mulighed for tilpasset svarblokering: Standard (0.0.0.0), REFUSED, NXDOMAIN eller tilpasset IP-adresse.
 
 ## v1.3
+
+_Udgivet 13. december 2022_
 
 - Tilføjet metode til at hente kontokvoter.
 
 ## v1.2
 
+_Udgivet 14. oktober 2022_
+
 - Tilføjet de nye protokoltyper DNS og DNSCRYPT. Udfasning af PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP og DNSCRYPT_UDP, som fjernes helt senere.
 
 ## v1.1
+
+_Udgivet 7. juli 2022_
 
 - Tilføjet metoder til statistikhentning efter tid, domæner, virksomheder og enheder.
 - Tilføjet metode til opdatering af enhedsindstillinger.
 - Rettet definition af obligatoriske felter.
 
 ## v1.0
+
+_Udgivet 22. februar 2022_
 
 - Tilføjet godkendelse.
 - CRUD-operationer med enheder og DNS-servere.

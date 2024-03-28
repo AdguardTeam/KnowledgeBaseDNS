@@ -14,6 +14,8 @@ Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overv
 
 ## v1.6
 
+_Vydáno 22. ledna 2024_
+
 - Přidána nová sekce "Nastavení přístupu" pro DNS profily (`access_settings`). Přizpůsobením těchto polí budete moci chránit svůj server AdGuard DNS před neoprávněným přístupem:
 
   - `allowed_clients` — zde můžete určit, kteří klienti mohou používat váš DNS server. Toto pole má přednost před polem `blocked_clients`
@@ -33,6 +35,8 @@ Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overv
   - Pro `rules` v nastavení uživatelských pravidel
 
 ## v1.5
+
+_Vydáno 16. června 2023_
 
 - Přidáno nové nastavení `block_nrd` a seskupení všech nastavení souvisejících se zabezpečením na jednom místě.
 
@@ -88,23 +92,33 @@ zde je použito nové pole `safebrowsing_settings` místo zastaralého `safebrow
 
 ## v1.4
 
+_Vydáno 29. března 2023_
+
 - Přidána konfigurovatelná možnost blokování odezvy: výchozí (0.0.0.0), REFUSED, NXDOMAIN nebo vlastní IP adresa.
 
 ## v1.3
+
+_Vydáno 13. prosince 2022_
 
 - Přidána metoda pro získání limitů účtu.
 
 ## v1.2
 
+_Vydáno 14. října 2022_
+
 - Přidány nové typy protokolů DNS a DNSCrypt. Zastaralé protokoly PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP a DNSCRYPT_UDP budou později odstraněny.
 
 ## v1.1
+
+_Vydáno 07. července 2022_
 
 - Přidány metody pro načítání statistik podle času, domén, společností a zařízení.
 - Přidána metoda pro aktualizaci nastavení zařízení.
 - Opravena definice povinných polí.
 
 ## v1.0
+
+_Vydáno 22. února 2022_
 
 - Přidáno ověřování.
 - Operace CRUD se zařízeními a DNS servery.

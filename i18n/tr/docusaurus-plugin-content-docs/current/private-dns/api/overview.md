@@ -103,7 +103,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### API'ye erişim
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim belirtecini geçirilerek API çağrıları yapılabilir.
 
 - Başlık adı `Authorization` olmalıdır
 - Başlık değeri `Bearer {access_token}` olmalıdır

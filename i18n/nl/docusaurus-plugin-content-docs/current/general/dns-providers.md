@@ -13,17 +13,17 @@ Snelle links: [AdGuard Advertentieblokker downloaden ](https://agrd.io/download-
 
 :::
 
-## **Public anycast resolvers**
+## **Openbare anycast-resolvers**
 
-These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
+Dit zijn wereldwijd verspreide, grootschalige DNS-resolvers die gebruik maken van anycast-routing om jouw DNS-query's naar het dichtstbijzijnde datacenter te leiden.
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) is een alternatieve oplossing voor advertentieblokkering, privacybescherming en ouderlijk toezicht. Het biedt het nodige aantal beveiligingsfuncties tegen online advertenties, volgers en phishing, ongeacht welk platform en apparaat je gebruikt.
 
 #### Standaard
 
-These servers block ads, tracking, and phishing.
+Deze servers blokkeren advertenties, volgen en phishing.
 
 | Protocol       | Adres                                                                         |                                                                                                                                                                                                                                           |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ These servers block ads, tracking, and phishing.
 
 #### Gezinsbescherming
 
-These servers provide the Default features + Blocking adult websites + Safe search.
+Deze servers bieden de standaardfuncties + Websites voor volwassenen blokkeren + Veilig zoeken.
 
 | Protocol       | Adres                                                                         |                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

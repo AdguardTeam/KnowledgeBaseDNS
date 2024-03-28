@@ -96,7 +96,7 @@ Angiv herefter administratoradgangskoden for at fuldføre processen.
 
 Gør flg. for at rydde DNS-cachen på en Windows-enhed:
 
-Åbn en Kommandoprompt som administrator. Den kan findes via Startmenuen ved at skrive *kommandoprompt* eller *cmd*. Skriv derefter `ipconfig/flushdns` og tryk på Retur.
+Åbn en Kommandoprompt som administrator. Den kan findes via Startmenuen ved at skrive *kommandoprompt* eller *cmd*. Skriv dernæst `ipconfig/flushdns` og tryk på Retur.
 
 Dernæst ses linjen *DNS-opløser cachen er tømt*. Færdig!
 
