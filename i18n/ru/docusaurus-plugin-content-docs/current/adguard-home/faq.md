@@ -3,15 +3,15 @@ title: FAQ
 sidebar_position: 3
 ---
 
-## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
+## Почему AdGuard Home не блокирует рекламу или онлайн-угрозы? {#doesntblock}
 
-Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
+Предположим, вы хотите, чтобы AdGuard Home заблокировал `somebadsite.com`, но по какой-то причине он этого не делает. Попробуем решить эту проблему.
 
-Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
+Скорее всего, вы не настроили устройство на использование AdGuard Home в качестве DNS-сервера по умолчанию. Чтобы проверить, используете ли вы AdGuard Home в качестве DNS-сервера по умолчанию:
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). On other systems, open your Terminal application.
+1. В Windows откройте командную строку (_Пуск_ → _Выполнить_ → `cmd.exe`). В других системах откройте приложение Терминал.
 
-2. Execute `nslookup example.org`. It will print something like this:
+2. Выполните команду `nslookup example.org`. В результате вы увидите что-то вроде этого:
 
    ```none
    Server: 192.168.0.1
@@ -24,79 +24,79 @@ Most likely, you haven’t configured your device to use AdGuard Home as the def
    Address: <IPv6>
    ```
 
-3. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. See [below](#defaultdns) how to do this.
+3. Проверьте, является ли IP-адрес, указанный в строке `Server`, тем, на котором запущен AdGuard Home. Если нет, нужно соответствующим образом настроить устройство. Как это сделать, смотрите [ниже](#defaultdns).
 
-4. Ensure that your request to `example.org` appears in the AdGuard Home UI on the _Query Log_ page. If not, you need to configure AdGuard Home to listen on the specified network interface. The easiest way to do this is to reinstall AdGuard Home with default settings.
+4. Убедитесь, что ваш запрос к `example.org ` отображается в интерфейсе AdGuard Home в _Журнале запросов_. Если нет, необходимо настроить AdGuard Home на прослушивание указанного сетевого интерфейса. Самый простой способ сделать это — переустановить AdGuard Home с настройками по умолчанию.
 
-If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Please check and make sure that:
+Если вы уверены, что ваше устройство использует AdGuard Home в качестве DNS-сервера по умолчанию, но проблема сохраняется, это может быть связано с неправильной настройкой AdGuard Home. Пожалуйста, проверьте и убедитесь, что:
 
-1. You have enabled the _Block domains using filters and hosts files_ setting on the _Settings_ → _General settings_ page.
+1. Вы включили настройку _Блокировать домены с использованием фильтров и файлов hosts_ во вкладке _Настройки_ → _Основные настройки_.
 
-2. You have enabled the appropriate security mechanisms, such as Parental Control, on the same page.
+2. Вы включили соответствующие механизмы безопасности, такие как родительский контроль, на той же странице.
 
-3. You have enabled the appropriate filters on the _Filters_ → _DNS blocklists_ page.
+3. Вы включили соответствующие фильтры, перейдя в _Фильтры_ → _Чёрные списки DNS_.
 
-4. You don’t have any exception rule lists that may allow the requests enabled on the _Filters_ → _DNS allowlists_ page.
+4. У вас нет списков правил исключений, которые могли бы разрешить запросы, включённые на странице _Фильтры_ → _Белые списки DNS_.
 
-5. You don’t have any DNS rewrites that may interfere on the _Filters_ → _DNS rewrites_ page.
+5. У вас нет перезаписей DNS, которые могли бы мешать работе страницы _Фильтры_ → _Перезапись DNS-запросов_.
 
-6. You don’t have any custom filtering rules that may interfere on the _Filters_ → _Custom filtering rules_ page.
+6. У вас нет пользовательских правил фильтрации, которые могли бы мешать настройкам на странице _Фильтры_ → _Пользовательские правила фильтрации_.
 
-## Where can I view the logs? {#logs}
+## Где просмотреть логи? {#logs}
 
-The default location of the plain-text logs (not to be confused with the query logs) depends on the operating system and installation mode:
+Дефолтное расположение текстовых логов (не путайте их с теми, что в Журнале запросов) зависит от операционной системы и режима установки:
 
 <!-- TODO(a.garipov): Add more info about Docker; add links to tools. -->
 
-- **OpenWrt Linux:** use the `logread -e AdGuardHome` command.
+- **OpenWrt Linux:** используйте команду `logread -e AdGuardHome`.
 
-- **Linux** systems with **systemd** and other **Unix** systems with **SysV-style init:** `/var/log/AdGuardHome.err`.
+- Системы **Linux** с **systemd** и другие системы **Unix** с **SysV-стилем init:** используйте команду `/var/log/AdGuardHome.err`.
 
 - **macOS:** `/var/log/AdGuardHome.stderr.log`.
 
-- **Linux** systems with **Snapcraft** use the `snap logs adguard-home` command.
+- В системах **Linux** с **Snapcraft** используйте команду `snap logs adguard-home`.
 
 - **FreeBSD:** `/var/log/daemon.log`.
 
 - **OpenBSD:** `/var/log/daemon`.
 
-- **Windows:** the [Windows Event Log][wlog] is used.
+- **Windows:** используйте [Журнал событий Windows][wlog].
 
 [wlog]: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
 
-## How do I configure AdGuard Home to write verbose-level logs? {#verboselog}
+## Как настроить AdGuard Home для записи verbose-логов? {#verboselog}
 
-To troubleshoot a complicated issue, the verbose-level logging is sometimes required. Here’s how to enable it:
+Для устранения сложной проблемы иногда требуется собрать verbose-логи. Вот как это можно сделать:
 
-1. Stop AdGuard Home:
+1. Остановите AdGuard Home:
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Configure AdGuard Home to write verbose-level logs:
+2. Настройте AdGuard Home для записи verbose-логов:
 
-   1. Open `AdGuardHome.yaml` in your editor.
+   1. Откройте файл `AdGuardHome.yaml` в своём редакторе.
 
-   2. Set `log.file` to the desired path of the log file, for example `/tmp/aghlog.txt`. Note that the directory must exist.
+   2. Установите настройку `log.file` в путь до желаемого файла журнала, например `/tmp/aghlog.txt`. Обратите внимание, что директория должна существовать.
 
-   3. Set `log.verbose` to `true`.
+   3. Установите для параметра `log.verbose` значение `true`.
 
-3. Restart AdGuard Home and reproduce the issue:
+3. Перезапустите AdGuard Home и воспроизведите проблему:
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-4. Once you’re done with the debugging, set `log.verbose` back to `false`.
+4. Когда вы закончите отладку, установите `log.verbose` обратно на `false`.
 
-## How do I show a custom block page? {#customblock}
+## Как отобразить пользовательскую страницу блокировки? {#customblock}
 
 :::note
 
-Before doing any of this, please note that modern browsers are set up to use HTTPS, so they validate the authenticity of the web server certificate. This means that using any of these will result in warning screens.
+Прежде чем выполнять все эти действия, обратите внимание, что современные браузеры настроены на использование HTTPS, поэтому они проверяют подлинность сертификата веб-сервера. Это означает, что использование любого из них приведёт к появлению экранов с предупреждениями.
 
-There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
+Есть несколько расширений, которые, если они будут достаточно хорошо поддерживаться клиентами, обеспечат лучший опыт использования, в том числе [RFC 8914 Extended DNS Error codes][rfc8914] и [DNS Access Denied Error Page RFC draft][rfcaccess]. Мы внедрим их, когда браузеры начнут их поддерживать.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
 
@@ -104,25 +104,25 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 :::
 
-### Prerequisites
+### Необходимые условия
 
-To use any of these methods to display a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. Something like [`pixelserv-tls`][pxsrv].
+Чтобы использовать любой из этих методов для отображения пользовательской страницы блокировки, вам понадобится HTTP-сервер, работающий на некотором IP-адресе и обслуживающий соответствующую страницу по всем маршрутам. Что-то вроде [`pixelserv-tls`][pxsrv].
 
 [pxsrv]: https://github.com/kvic-z/pixelserv-tls
 
-### Custom block page for Parental Control and Safe Browsing filters
+### Пользовательская страница блокировки для фильтров Родительский контроль и Безопасный просмотр
 
-There is currently no way to set these parameters from the UI, so you’ll need to edit the configuration file manually:
+В настоящее время нет возможности установить эти параметры из пользовательского интерфейса, поэтому вам придётся отредактировать файл конфигурации вручную:
 
-1. Stop AdGuard Home:
+1. Остановите AdGuard Home:
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. Откройте файл `AdGuardHome.yaml` в своём редакторе.
 
-3. Set the `dns.parental_block_host` or `dns.safebrowsing_block_host` settings to the IP address of the server (in this example, `192.168.123.45`):
+3. Установите в настройках `dns.parental_block_host` или `dns.safebrowsing_block_host` IP-адрес сервера (в данном примере `192.168.123.45`):
 
    ```yaml
    # …
@@ -134,73 +134,73 @@ There is currently no way to set these parameters from the UI, so you’ll need 
      safebrowsing_block_host: 192.168.123.45
    ```
 
-4. Restart AdGuard Home:
+4. Перезапустите AdGuard Home:
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-### Custom block page for other filters
+### Пользовательская страница блокировки для других фильтров
 
-1. Open the web UI.
+1. Откройте веб-интерфейс.
 
-2. Navigate to _Settings_ → _DNS settings._
+2. Перейдите в _Настройки_ → _DNS-Настройки_.
 
-3. In the _DNS server configuration_ section, select the _Custom IP_ radio button in the _Blocking mode_ selector and enter the IPv4 and IPv6 addresses of the server.
+3. В разделе _Настройки DNS-сервера_ выберите пункт _Свой IP_ в селекторе _Режим блокировки_ и введите адреса IPv4- и IPv6-серверов.
 
-4. Click _Save_.
+4. Нажмите _Сохранить_.
 
-## How do I change dashboard interface’s address? {#webaddr}
+## Как изменить адрес интерфейса дашборда? {#webaddr}
 
-1. Stop AdGuard Home:
+1. Остановите AdGuard Home:
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. Откройте файл `AdGuardHome.yaml` в своём редакторе.
 
-3. Set the `http.address` setting to a new network interface. For example:
+3. Установите параметр 'http.address' на новый сетевой интерфейс. Например:
 
-   - `0.0.0.0:0` to listen on all network interfaces;
-   - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
-   - `127.0.0.1:0` to listen on the local loopback interface only.
+   - `0.0.0.0:0` для прослушивания на всех сетевых интерфейсах;
+   - `0.0.0.0:8080` для прослушивания всех сетевых интерфейсов с портом `8080`;
+   - `127.0.0.1:0` для прослушивания только локального loopback-интерфейса.
 
-4. Restart AdGuard Home:
+4. Перезапустите AdGuard Home:
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-## How do I set up AdGuard Home as default DNS server? {#defaultdns}
+## Как настроить AdGuard Home в качестве DNS-сервера по умолчанию? {#defaultdns}
 
-See the [_Configuring Devices_ section](getting-started.md#configure-devices) on the _Getting Started_ page.
+Вся необходимая информация есть в разделе [_Настройка устройств_](getting-started.md#configure-devices) на странице _Начало работы_.
 
-## Are there any known limitations? {#limitations}
+## Существуют ли какие-то известные ограничения? {#limitations}
 
-Here are some examples of what cannot be blocked by a DNS-level blocker:
+Вот несколько примеров того, что блокировщик DNS-уровня не сможет заблокировать:
 
-- YouTube, Twitch ads.
+- Реклама на YouTube, Twitch.
 
-- Facebook, X (formerly Twitter), Instagram sponsored posts.
+- Спонсируемые посты Facebook, X (ранее Twitter), Instagram.
 
-Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker, unless you are ready to block the content as well.
+В принципе, любая реклама, имеющая общий домен с контентом, не может быть заблокирована блокировщиком на уровне DNS, если только вы не готовы заблокировать и контент.
 
-### Any possibility of dealing with this in the future?
+### Есть ли возможность решить эту проблему в будущем?
 
-DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
+DNS никогда с этим не справится. Единственный вариант — использовать прокси-сервер для блокировки контента, как это сделано в [приложениях AdGuard][adguard]. В будущем мы добавим поддержку этой функции в AdGuard Home. К сожалению, даже тогда будут случаи, когда этого будет недостаточно или потребуется довольно сложная настройка.
 
 [adguard]: https://adguard.com/
 
-## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
+## Почему я получаю ошибку `bind: address already in use` при попытке установки на Ubuntu? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. You can see this by running:
+Это происходит потому, что порт 53 на `localhost`, который используется для DNS, уже занят другой программой. Ubuntu поставляется с локальным DNS под названием `systemd-resolved`, который использует адрес `127.0.0.53:53`, что не позволяет AdGuard Home привязываться к `127.0.0.1:53`. Вы можете убедиться в этом, выполнив команду:
 
 ```sh
 sudo lsof -i :53
 ```
 
-The output should be similar to:
+Результат должен быть похож на следующий:
 
 ```none
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -208,19 +208,19 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind your AdGuard Home to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+Чтобы это исправить, вам необходимо либо отключить демон `systemd-resolved`, либо выбрать другой сетевой интерфейс и привязать AdGuard Home к доступному IP-адресу на нём, например, к IP-адресу вашего роутера внутри вашей сети. Но если вам нужно прослушивать `localhost`, есть несколько решений.
 
-Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the _Fix_ button located next to the `address already in use` message on the installation screen.
+Во-первых, AdGuard Home может обнаружить такие конфигурации и отключить `systemd-resolved, если вы нажмёте кнопку *Fix*, расположенную рядом с сообщением `address already in use\` на экране установки.
 
-Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
+Во-вторых, если это не сработает, следуйте инструкциям ниже. Обратите внимание: если вы используете AdGuard Home с Docker или Snap, вам придётся сделать это самостоятельно.
 
-1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
+1. Создайте каталог `/etc/systemd/resolved.conf.d`, если это необходимо:
 
    ```sh
    sudo mkdir -p /etc/systemd/resolved.conf.d
    ```
 
-2. Deactivate `DNSStubListener` and update DNS server address. To do that, create a new file, `/etc/systemd/resolved.conf.d/adguardhome.conf`, with the following content:
+2. Деактивируйте `DNSStubListener` и обновите адрес DNS-сервера. Для этого создайте новый файл `/etc/systemd/resolved.conf.d/adguardhome.conf` со следующим содержимым:
 
    ```service
    [Resolve]
@@ -228,26 +228,26 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
    DNSStubListener=no
    ```
 
-Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
+Указать `127.0.0.1` в качестве адреса DNS-сервера **необходимо**. В противном случае сервером имён будет `127.0.0.53`, который не будет работать без `DNSStubListener`.
 
-1. Activate another `resolv.conf` file:
+1. Активируйте ещё один файл `resolv.conf`:
 
    ```sh
    sudo mv /etc/resolv.conf /etc/resolv.conf.backup
    sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
    ```
 
-2. Restart `DNSStubListener`:
+2. Перезапустите DNSStubListener:
 
    ```sh
    sudo systemctl reload-or-restart systemd-resolved
    ```
 
-After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
+После этого `systemd-resolved` не должен будет отображаться в выводе `lsof`, а AdGuard Home сможет привязываться к `127.0.0.1:53`.
 
-## How do I configure a reverse proxy server for AdGuard Home? {#reverseproxy}
+## Как настроить обратный прокси-сервер для AdGuard Home? {#reverseproxy}
 
-If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
+Если вы уже используете веб-сервер и хотите получить доступ к панели управления AdGuard Home с URL-адреса типа `http://YOUR_SERVER/aghome/`, вы можете использовать эту конфигурацию для своего веб-сервера:
 
 ### nginx
 
@@ -271,7 +271,7 @@ location /aghome/ {
 }
 ```
 
-Or, if you only want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
+Или, если вы хотите обслуживать AdGuard Home только с автоматическим TLS, используйте конфигурацию, аналогичную примеру ниже:
 
 ```none
 DOMAIN {
@@ -281,29 +281,29 @@ DOMAIN {
 }
 ```
 
-### Disable DoH encryption on AdGuard Home
+### Отключите шифрование DoH на AdGuard Home
 
-If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
+Если вы используете TLS на обратном прокси-сервере, вам не нужно использовать TLS на AdGuard Home. Установите `allow_unencrypted_doh: true` в `AdGuardHome.yaml`, чтобы разрешить AdGuard Home отвечать на запросы DoH без шифрования TLS.
 
-### Real IP addresses of clients
+### Реальные IP-адреса клиентов
 
-You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
+Вы можете установить параметр `trusted_proxies` на IP-адрес(-а) вашего HTTP-прокси, чтобы AdGuard Home учитывал заголовки, содержащие реальный IP-адрес клиента. Дополнительную информацию смотрите на страницах [настроек][conf] и [шифрования][encr].
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
 
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## How do I fix `permission denied` errors on Fedora? {#fedora}
+## Как исправить ошибки `permission denied` на Fedora? {#fedora}
 
-1. Move the `AdGuardHome` binary to `/usr/local/bin`.
+1. Переместите двоичный файл `AdGuardHome` в `/usr/local/bin`.
 
-2. As `root`, execute the following command to change the security context of the file:
+2. От имени `root` выполните следующую команду, чтобы изменить контекст безопасности файла:
 
    ```sh
    chcon -t bin_t /usr/local/bin/AdGuardHome
    ```
 
-3. Add the required firewall rules in order to make it reachable through the network. For example:
+3. Добавьте необходимые правила фаервола, чтобы сделать его доступным через сеть. Например:
 
    ```sh
    firewall-cmd --new-zone=adguard --permanent
@@ -314,45 +314,45 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
+Если вы по-прежнему получаете `code=exited status=203/EXEC` или подобные ошибки из `systemctl`, попробуйте удалить AdGuard Home и установить его **напрямую** в `/usr/local/bin` с помощью опции `-o ` сценария установки:
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
 ```
 
-See [issue 765] and [issue 3281].
+Смотрите \[ошибку 765] и \[ошибку 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
-## How do I fix `incompatible file system` errors? {#incompatfs}
+## Как исправить ошибки `incompatible file system`? {#incompatfs}
 
-You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+Переместите установку или рабочую директорию AdGuard Home в другое место. Вся необходимая информация есть в разделе [_Ограничения_](getting-started.md#limitations) на странице _Начало работы_.
 
-## How do I update AdGuard Home manually? {#manual-update}
+## Как обновить AdGuard Home вручную? {#manual-update}
 
-If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
+Если кнопка не отображается или автоматическое обновление не удалось, вы можете выполнить его вручную. В примерах ниже мы будем использовать версии AdGuard Home для Linux и Windows для процессоров AMD64.
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
+1. Загрузите новый пакет AdGuard Home со [страницы релизов][releases]. Если вы хотите выполнить этот шаг из командной строки, введите:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-   Or, with `wget`:
+   Или с помощью `wget`:
 
    ```sh
    wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
+2. Перейдите в директорию, в которой установлен AdGuard Home. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
 
-3. Stop AdGuard Home:
+3. Остановите AdGuard Home:
 
    ```sh
    sudo ./AdGuardHome -s stop
@@ -399,7 +399,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
    You can now remove the temporary directory.
 
-7. Restart AdGuard Home:
+7. Перезапустите AdGuard Home:
 
    ```sh
    sudo ./AdGuardHome -s start
@@ -411,7 +411,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 In all examples below, the PowerShell must be run as Administrator.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
+1. Загрузите новый пакет AdGuard Home со [страницы релизов][releases]. If you want to perform this step from the command line:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -421,7 +421,7 @@ In all examples below, the PowerShell must be run as Administrator.
 
 2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
 
-3. Stop AdGuard Home:
+3. Остановите AdGuard Home:
 
    ```ps1
    .\AdGuardHome.exe -s stop
@@ -442,7 +442,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. For example:
+6. Replace the old AdGuard Home executable file with the new one. Например:
 
    ```ps1
    $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
@@ -453,7 +453,7 @@ In all examples below, the PowerShell must be run as Administrator.
 
    You can now remove the temporary directory.
 
-7. Restart AdGuard Home:
+7. Перезапустите AdGuard Home:
 
    ```ps1
    .\AdGuardHome.exe -s start

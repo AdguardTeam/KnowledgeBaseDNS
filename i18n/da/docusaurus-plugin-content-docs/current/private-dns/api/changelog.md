@@ -12,7 +12,27 @@ toc_max_heading_level: 3
 
 Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.7
+
+_Released on March 11, 2024_
+
+- Added dedicated IPv4 addresses functionality:
+  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
+  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
+- Added new operations:
+  - List all available dedicated IPv4 addresses
+  - Allocate new dedicated IPv4 address
+  - Link an available IPv4 address to a device
+  - Unlink an IPv4 address from a device
+  - Request info on dedicated addresses associated with a device
+- Tilføjet nye grænser til Kontogrænser:
+  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
+- Removed deprecated field of DNSServerSettings:
+  - `safebrowsing_enabled`
+
 ## v1.6
+
+_Udgivet 22. januar 2024_
 
 - Tilføjet nyt afsnit "Adgangsindstillinger" for DNS-profiler (`access_settings`). Ved at tilpasse disse felter vil AdGuard DNS-serveren kunne beskyttes mod uautoriseret adgang:
 
@@ -33,6 +53,8 @@ Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/o
   - For `rules` i indstillingerne for tilpassede brugerregler
 
 ## v1.5
+
+_Udgivet 16. juni 2023_
 
 - Tilføjet ny indstilling `block_nrd` samt grupperet alle sikkerhedsrelaterede indstillinger på ét sted.
 
@@ -88,23 +110,33 @@ her bruges det nye felt `safebrowsing_settings` i stedet for det udfasede `safeb
 
 ## v1.4
 
+_Udgivet 29. marts 2023_
+
 - Tilføjet mulighed for tilpasset svarblokering: Standard (0.0.0.0), REFUSED, NXDOMAIN eller tilpasset IP-adresse.
 
 ## v1.3
+
+_Udgivet 13. december 2022_
 
 - Tilføjet metode til at hente kontokvoter.
 
 ## v1.2
 
+_Udgivet 14. oktober 2022_
+
 - Tilføjet de nye protokoltyper DNS og DNSCRYPT. Udfasning af PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP og DNSCRYPT_UDP, som fjernes helt senere.
 
 ## v1.1
+
+_Udgivet 7. juli 2022_
 
 - Tilføjet metoder til statistikhentning efter tid, domæner, virksomheder og enheder.
 - Tilføjet metode til opdatering af enhedsindstillinger.
 - Rettet definition af obligatoriske felter.
 
 ## v1.0
+
+_Udgivet 22. februar 2022_
 
 - Tilføjet godkendelse.
 - CRUD-operationer med enheder og DNS-servere.

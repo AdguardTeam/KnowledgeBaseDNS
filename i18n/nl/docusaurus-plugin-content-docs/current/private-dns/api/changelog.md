@@ -12,7 +12,27 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.7
+
+_Released on March 11, 2024_
+
+- Added dedicated IPv4 addresses functionality:
+  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
+  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
+- Added new operations:
+  - List all available dedicated IPv4 addresses
+  - Allocate new dedicated IPv4 address
+  - Link an available IPv4 address to a device
+  - Unlink an IPv4 address from a device
+  - Request info on dedicated addresses associated with a device
+- Nieuwe limieten toegevoegd aan accountlimieten:
+  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
+- Removed deprecated field of DNSServerSettings:
+  - `safebrowsing_enabled`
+
 ## v1.6
+
+_Uitgebracht op 22 januari 2024_
 
 - Nieuwe sectie "Toegangsinstellingen" toegevoegd voor DNS-profielen ('access_settings'). Door deze velden aan te passen, kun je je AdGuard DNS-server beschermen tegen ongeoorloofde toegang:
 
@@ -33,6 +53,8 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
   - Voor 'regels' in de instellingen voor aangepaste gebruikersregels
 
 ## v1.5
+
+_Uitgebracht op 16 juni 2023_
 
 - Added new setting `block_nrd` and group all security-related settings to one place.
 
@@ -88,23 +110,33 @@ here new field `safebrowsing_settings` is used instead of deprecated `safebrowsi
 
 ## v1.4
 
+_Uitgebracht op 29 maart 2023_
+
 - Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
 
 ## v1.3
+
+_Uitgebracht op 13 december 2022_
 
 - Added method to get account limits.
 
 ## v1.2
 
+_Uitgebracht op 14 oktober 2022_
+
 - Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
 
 ## v1.1
+
+_Uitgebracht op 07 juli 2022_
 
 - Added methods to retrieve statistics by time, domains, companies and devices.
 - Added method for updating device settings.
 - Fixed required fields definition.
 
 ## v1.0
+
+_Uitgebracht op 22 februari 2022_
 
 - Added authentication.
 - CRUD operations with devices and DNS servers.
