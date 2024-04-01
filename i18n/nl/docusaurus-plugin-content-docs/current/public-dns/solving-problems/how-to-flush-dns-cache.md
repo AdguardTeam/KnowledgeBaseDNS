@@ -96,7 +96,7 @@ After that, enter your administrator password to complete the process.
 
 To flush DNS cache on your Windows device, do the following:
 
-Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig/flushdns` and press Enter.
+Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Typ vervolgens `ipconfig /flushdns` en druk op Enter.
 
 You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 

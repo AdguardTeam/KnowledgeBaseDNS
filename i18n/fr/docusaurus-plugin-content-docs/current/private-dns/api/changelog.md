@@ -12,7 +12,27 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.7
+
+_Released on March 11, 2024_
+
+- Added dedicated IPv4 addresses functionality:
+  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
+  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
+- Added new operations:
+  - List all available dedicated IPv4 addresses
+  - Allocate new dedicated IPv4 address
+  - Link an available IPv4 address to a device
+  - Unlink an IPv4 address from a device
+  - Request info on dedicated addresses associated with a device
+- Added new limits to Account limits:
+  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
+- Removed deprecated field of DNSServerSettings:
+  - `safebrowsing_enabled`
+
 ## v1.6
+
+_Released on January 22, 2024_
 
 - Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
 
@@ -33,6 +53,8 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
   - For `rules` in custom user rules settings
 
 ## v1.5
+
+_Released on June 16, 2023_
 
 - Added new setting `block_nrd` and group all security-related settings to one place.
 
@@ -88,23 +110,33 @@ here new field `safebrowsing_settings` is used instead of deprecated `safebrowsi
 
 ## v1.4
 
+_Released on March 29, 2023_
+
 - Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
 
 ## v1.3
+
+_Released on December 13, 2022_
 
 - Added method to get account limits.
 
 ## v1.2
 
+_Released on October 14, 2022_
+
 - Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
 
 ## v1.1
+
+_Released on July 07, 2022_
 
 - Added methods to retrieve statistics by time, domains, companies and devices.
 - Added method for updating device settings.
 - Fixed required fields definition.
 
 ## v1.0
+
+_Released on February 22, 2022_
 
 - Added authentication.
 - CRUD operations with devices and DNS servers.

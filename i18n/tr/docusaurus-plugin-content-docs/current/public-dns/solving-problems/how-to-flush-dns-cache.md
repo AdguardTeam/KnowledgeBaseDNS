@@ -96,7 +96,7 @@ Bundan sonra, işlemi tamamlamak için yönetici parolanızı girin.
 
 Windows cihazınızda DNS önbelleğini temizlemek için aşağıdakileri yapın:
 
-Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig/flushdns` yazın ve Enter'a basın.
+Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* veya *cmd* yazarak bulabilirsiniz. Ardından `ipconfig /flushdns` yazın ve Enter'a basın.
 
 *DNS Çözümleyici Önbelleği başarıyla temizlendi* satırını göreceksiniz. Tamamlandı!
 
