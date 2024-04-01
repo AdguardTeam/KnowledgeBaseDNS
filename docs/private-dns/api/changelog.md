@@ -12,6 +12,24 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.7
+
+*Released on March 11, 2024*
+
+- Added dedicated IPv4 addresses functionality:
+    - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
+    - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
+- Added new operations:
+    - List all available dedicated IPv4 addresses
+    - Allocate new dedicated IPv4 address
+    - Link an available IPv4 address to a device
+    - Unlink an IPv4 address from a device
+    - Request info on dedicated addresses associated with a device
+- Added new limits to Account limits:
+    - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
+- Removed deprecated field of DNSServerSettings:
+    - `safebrowsing_enabled`
+
 ## v1.6
 
 *Released on January 22, 2024*
