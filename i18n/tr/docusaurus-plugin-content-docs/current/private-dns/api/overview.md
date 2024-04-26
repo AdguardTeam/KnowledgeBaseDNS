@@ -101,6 +101,43 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
+### Authorization endpoint
+
+> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+
+The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+
+The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+
+The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+
+| Parametre         | Açıklama                                                                                                                                                       |
+|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
+| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
+| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
+| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
+| **aid**           | Affiliate identifier                                                                                                                                           |
+
+Örneğin:
+
+```http request
+https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
+```
+
+To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+
+- For the Implicit grant, use **response_type=token** to include an access token.
+
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+
+Örneğin:
+
+```http request
+HTTP/1.1 302 Found
+Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
+```
+
 ### API'ye erişim
 
 Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim belirtecini geçirilerek API çağrıları yapılabilir.

@@ -77,7 +77,7 @@ Bu sunucuların her biri güvenli ve güvenilir bir bağlantı sağlar, ancak "S
 
 ### BebasID tarafından BebasDNS
 
-[BebasDNS](https://github.com/bebasid/bebasdns) is a free and neutral public resolver based in Indonesia which supports OpenNIC domain. Created by Komunitas Internet Netral Indonesia (KINI) to serve Indonesian user with free and neutral internet connection.
+[BebasDNS](https://github.com/bebasid/bebasdns), OpenNIC alan adını destekleyen Endonezya merkezli ücretsiz ve tarafsız bir genel çözümleyicidir. Created by Komunitas Internet Netral Indonesia (KINI) to serve Indonesian user with free and neutral internet connection.
 
 #### Default
 
@@ -144,9 +144,19 @@ This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [AdGuard'a ekle](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [AdGuard'a ekle](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
 
+### 0ms DNS
+
+[DNS](https://0ms.dev/) is a global DNS resolution service provided by 0ms Group as an alternative to your current DNS provider.
+
+It uses [OISD Big](https://oisd.nl/) as the basic filter to give everyone a more secure environment. It is designed with various optimizations, such as HTTP/3, caching, and more. Kullanıcıları potansiyel güvenlik tehditlerinden korumak için makine öğreniminden yararlanırken aynı zamanda zaman içinde kendini optimize eder.
+
+| Protokol       | Adres                       |                                                                                                                                                                                                 |
+| -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
+
 ### CFIEC Public DNS
 
-Güçlü güvenlik özelliklerine ve casus yazılımlara, kötü amaçlı sitelere karşı korumaya sahip IPv6 tabanlı her noktaya dağıtılabilen DNS hizmeti. Yalnızca IPv6 kullanıcıları için alan adı çözümlemesi sağlamak üzere DNS64'ü destekler.
+Güçlü güvenlik yeteneklerine ve casus yazılımlara, kötü amaçlı sitelere karşı korumaya sahip IPv6 tabanlı her noktaya dağıtılabilen DNS hizmeti. Yalnızca IPv6 kullanıcıları için alan adı çözümlemesi sağlamak üzere DNS64'ü destekler.
 
 | Protokol       | Adres                             |                                                                                                                                                                                                                 |
 | -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -530,7 +540,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Has 24h/48h logs for DDoS/Flood attack mitigation.
+[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. DDoS/Flood saldırılarının azaltılması için 24 veya 48 saat günlüklere sahiptir.
 
 #### Adaptive Filtering (ADA)
 

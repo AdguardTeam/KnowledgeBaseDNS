@@ -22,7 +22,7 @@ _Kurumsal_ plan yalnızca talep üzerine kullanılabilir. Eğer ilgileniyorsanı
 
 ## Para iadesi nasıl alınır {#refund}
 
-[Satış Koşullarımıza](https://adguard-dns.io/eula.html) uygun olarak, https\://adguard-dns.com/ adresinden satın aldığınız tüm AdGuard DNS Yıllık planları için %100 para iadesi alabilirsiniz. Para iadesi almak için, kullandığınız ödeme yöntemini belirterek support\@adguard.com adresinden destek ekibiyle iletişime geçmeniz gerekir. İşlem süresi genellikle 5-10 iş günü kadar sürer.
+[Satış Koşullarımıza](https://adguard-dns.io/eula.html) uygun olarak, https://adguard-dns.com/ adresinden satın aldığınız tüm AdGuard DNS Yıllık planları için %100 para iadesi alabilirsiniz. Para iadesi almak için, kullandığınız ödeme yöntemini belirterek support@adguard.com adresinden destek ekibiyle iletişime geçmeniz gerekir. İşlem süresi genellikle 5-10 iş günü kadar sürer.
 
 Aşağıdaki durumlarda para iadesi reddedilebilir:
 

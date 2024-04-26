@@ -144,6 +144,16 @@ Dette er en tilpasset BebasDNS-variant med kun Hagezi Multi Normal-filter
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Føj til AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Føj til AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
 
+### 0ms DNS
+
+[DNS](https://0ms.dev/) er en global DNS-opløsningstjeneste leveret af 0ms Group som et alternativ til en aktuelt anvendt DNS-udbyder.
+
+Den bruger [OISD Big](https://oisd.nl/) som basisfilter til at formidle et mere sikkert miljø for alle. Den er designet med forskellige optimeringer, såsom HTTP/3, caching mv. Den udnytter maskinlæring til at beskytte brugere mod potentielle sikkerhedstrusler, samtidig med at den optimerer sig selv over tid.
+
+| Protokol       | Adresse                     |                                                                                                                                                                                                   |
+| -------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
+
 ### CFIEC Public DNS
 
 IPv6-baseret anycast DNS-tjeneste med stærke sikkerhedsfunktioner og beskyttelse imod spyware og ondsindede websteder. Den understøtter DNS64 for kun at levere domænenavnsopløsning til rene IPv6-brugere.

@@ -5,13 +5,13 @@ sidebar_position: 3
 
 Bu Bilgi Tabanının amacı, herkese AdGuard DNS ile ilgili her türlü konuda en güncel bilgileri sağlamaktır. Ancak işler sürekli değişiyor ve bazen bir makale artık mevcut durumu yansıtmıyor - her bir bilgiyi takip edecek ve yeni sürümler yayınlandığında buna göre güncelleyecek çok fazla kişi yok.
 
-Bu nedenle, tüm BT içeriğimizi [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS)'a yerleştirdik ve şimdi kelimenin tam anlamıyla herkes, mevcut makalelere ve tamamen yeni makalelere düzenlemeler ve çeviriler önererek katkıda bulunabilir.
+Bu nedenle tüm BT içeriğimizi [GitHub'a](https://github.com/AdguardTeam/KnowledgeBaseDNS) yerleştirdik ve artık kelimenin tam anlamıyla herkes, tamamen yeni makalelerin yanı sıra mevcut makalelere düzenleme ve çeviri önererek buna katkıda bulunabilir.
 
 ## Bir değişiklik önerme veya yeni bir makale yazma {#suggest-change}
 
 Yukarıda bahsedilen GitHub'ın işlevselliğini kullanarak mevcut makalelerde değişiklik önerebilir ve Bilgi Tabanına yenilerini ekleyebilirsiniz. Platformla çalışma ilkelerine aşina değilseniz, [bu bölümdeki belgeleri](https://docs.github.com/en) okuyarak başlayın.
 
-Başlamaya hazır olduğunuzda, [KnowledgeBaseDNS deposunda](https://github.com/AdguardTeam/KnowledgeBaseDNS) çalışın. Bilgi Tabanımızdaki tüm metinler `Markdown` işaretleme dilinde yazılmıştır. Makaleleri düzenlerken veya yazarken bunu aklınızda bulundurun. Markdown söz dizimi hakkında daha fazla bilgi edinmek için [bu bağlantıyı](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) takip edin.
+Başlamaya hazır olduğunuzda, [KnowledgeBaseDNS deposunda](https://github.com/AdguardTeam/KnowledgeBaseDNS) çalışın. Bilgi Tabanımızdaki tüm metinler `Markdown` işaretleme dilinde yazılmıştır. Makaleleri düzenlerken veya yazarken bunu aklınızda bulundurun. Markdown söz dizimi hakkında daha fazla bilgi edinmek için [bu bağlantıyı](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) izleyin.
 
 Bilgi Tabanı sitesi, modern bir statik site oluşturucu olan Docusaurus 2 kullanılarak oluşturulmuştur. Değişiklikler veya eklemeler önerirken, tüm belgelerin platformun ilkelerine uygun olması gerektiğini göz önünde bulundurun. Onlar hakkında [bu kılavuzu](https://docusaurus.io/docs/category/guides) okuyabilirsiniz.
 

@@ -43,7 +43,7 @@ Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaş
 ### DoH, DoT ve DoQ'yu destekleyen cihazlar için
 
 1. [AdGuard DNS panonuza](https://agrd.io/download-dns) gidin (giriş yapmadıysanız AdGuard hesabınızı kullanarak giriş yapın)
-1. *Cihazı bağla* öğesine tıklayın ve ekrandaki talimatları takip edin
+1. *Cihazı bağla* öğesine tıklayın ve ekrandaki talimatları izleyin
 
 :::note Desteklenen platformlar:
 
@@ -64,7 +64,7 @@ AdGuard DNS paneline eklediğiniz her cihazın, modern şifreli DNS protokolleri
 
 Cihaz şifrelenmiş DNS'i desteklemiyorsa ve düz DNS kullanmanız gerekiyorsa, AdGuard DNS'nin cihazı tanımasına izin vermenin iki yolu daha vardır — özel IP adresleri kullanın veya cihazın IP adresini bağlayın.
 
-:::not
+:::note Not
 
 Yalnızca başka seçeneğiniz yoksa düz DNS adreslerini kullanın: bu, DNS isteklerinin güvenliğini azaltır. Düz DNS kullanmaya karar verirseniz, özel IP adresleri seçmenizi öneririz.
 
@@ -84,7 +84,7 @@ Cihazınızı Bağlı IP üzerinden AdGuard DNS'e bağlarsanız, hizmet bu IP ad
 
 IP bağlamak için tek gereksinim **konut IP adresi olmasıdır**.
 
-:::not
+:::note Not
 
 Konut IP adresi, bir konut İSS'sine bağlı bir cihaza atanan IP adresidir. Tipik olarak fiziksel bir konumla ilişkilendirilir ve bireysel evlere veya dairelere atanır. Konut IP adresleri, normal internet kullanıcıları tarafından web'de gezinme, sosyal medya platformlarına erişim, e-posta gönderme veya içerik canlı yayın akışı gibi günlük çevrimiçi etkinlikleri için kullanılır.
 

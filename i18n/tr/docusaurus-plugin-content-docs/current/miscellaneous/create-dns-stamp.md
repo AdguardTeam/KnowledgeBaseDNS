@@ -25,7 +25,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 3. Gerekli alanları doldurun:
     - **IP adresi**: DNS sunucusunun IP adresini girin. DoT veya DoQ protokolünü kullanıyorsanız uygun bağlantı noktasını da belirttiğinizden emin olun.
 
-    :::not
+    :::note Not
 
     Bu alan isteğe bağlıdır ve dikkatli kullanılmalıdır: Bu seçeneğin kullanılması, yalnızca IPv6 ağlarında interneti bozabilir.
 
@@ -33,7 +33,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 :::
     - **Karma**: Doğrulama zincirinde bulunan TBS sertifikalarından birinin SHA256 özetini girin. Kullanmakta olduğunuz DNS sunucusu hazır bir karma sağlıyorsa, bulun ve kopyalayın. Aksi takdirde, [*Sertifika Karmasını Elde Etme*](#obtaining-the-certificate-hash) bölümündeki talimatları izleyerek elde edebilirsiniz.
 
-    :::not
+    :::note Not
 
     Bu alan isteğe bağlıdır
 

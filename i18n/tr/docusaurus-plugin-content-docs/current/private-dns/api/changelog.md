@@ -12,22 +12,31 @@ toc_max_heading_level: 3
 
 Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik günlüğünü içerir.
 
+## v1.8
+
+_Released on April 20, 2024_
+
+- Added support for DNS-over-HTTPS with authentication:
+  - New operation — reset DNS-over-HTTPS password for device
+  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
+  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+
 ## v1.7
 
-_Released on March 11, 2024_
+_11 Mart 2024 tarihinde yayınlandı_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
+- Özel IPv4 adresleri işlevi eklendi:
+  - Özel IPv4 adresleri artık DNS sunucusu yapılandırması için cihazlarda kullanılabilir
+  - Özel IPv4 adresi artık bağlı olduğu cihazla ilişkilendirilmiştir, böylece bu adrese yapılan sorgular o cihaz için kaydedilir
+- Yeni işlemler eklendi:
+  - Mevcut tüm özel IPv4 adreslerini listeleme
+  - Yeni özel IPv4 adresi tahsis etme
+  - Kullanılabilir bir IPv4 adresini bir cihaza bağlama
+  - Bir cihazdan IPv4 adresinin bağlantısını kaldırma
+  - Bir cihazla ilişkilendirilmiş özel adreslerle ilgili bilgi isteği
 - Hesap limitlerine yeni limitler eklendi:
-  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+  - `dedicated_ipv4` — önceden tahsis edilmiş tahsisli IPv4 adreslerinin miktarı ve bunların sınırı hakkında bilgi sağlar
+- DNSServerSettings'in kullanımdan kalkmış alanı kaldırıldı:
   - `safebrowsing_enabled`
 
 ## v1.6

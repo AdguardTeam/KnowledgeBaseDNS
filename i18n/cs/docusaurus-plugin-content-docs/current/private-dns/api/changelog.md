@@ -12,22 +12,31 @@ toc_max_heading_level: 3
 
 Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.8
+
+_Released on April 20, 2024_
+
+- Added support for DNS-over-HTTPS with authentication:
+  - New operation — reset DNS-over-HTTPS password for device
+  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
+  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+
 ## v1.7
 
-_Released on March 11, 2024_
+_Vydáno 11. března 2024_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
+- Přidána funkčnost vyhrazených adres IPv4:
+  - Vyhrazené adresy IPv4 lze nyní používat v zařízeních pro konfiguraci DNS serveru
+  - Vyhrazená adresa IPv4 je nyní přidružena k zařízení, se kterým je propojena, takže dotazy na tuto adresu jsou zaznamenávány pro toto zařízení
+- Přidány nové operace:
+  - Seznam všech dostupných vyhrazených adres IPv4
+  - Přidělení nové vyhrazené adresy IPv4
+  - Propojení dostupné adresy IPv4 se zařízením
+  - Odpojení adresy IPv4 od zařízení
+  - Vyžádání informací o vyhrazených adresách přidružených k zařízení
 - Přidány nové limity do limitů účtu:
-  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+  - `dedicated_ipv4` — poskytuje informace o množství již přidružených vyhrazených adres IPv4 a o jejich limitu
+- Odstraněno zastaralé pole DNSServerSettings:
   - `safebrowsing_enabled`
 
 ## v1.6

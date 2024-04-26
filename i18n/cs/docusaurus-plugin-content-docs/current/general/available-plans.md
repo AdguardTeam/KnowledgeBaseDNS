@@ -22,7 +22,7 @@ Tarif _Enterprise_ je k dispozici pouze na vyžádání. Pokud máte zájem, vyp
 
 ## Jak získat refundaci {#refund}
 
-V souladu s našimi [Podmínkami prodeje](https://adguard-dns.io/eula.html) můžete získat 100% náhradu za všechny roční tarify AdGuard DNS zakoupené na skrze https\://adguard-dns.com/. Chcete-li získat zpět peníze, musíte kontaktovat podporu na adrese support\@adguard.com a uvést způsob platby, který jste použili. Doba zpracování obvykle trvá 5-10 pracovních dnů.
+V souladu s našimi [Podmínkami prodeje](https://adguard-dns.io/eula.html) můžete získat 100% náhradu za všechny roční tarify AdGuard DNS zakoupené na skrze https://adguard-dns.com/. Chcete-li získat zpět peníze, musíte kontaktovat podporu na adrese support@adguard.com a uvést způsob platby, který jste použili. Doba zpracování obvykle trvá 5-10 pracovních dnů.
 
 Refundace může být zamítnuta, pokud:
 

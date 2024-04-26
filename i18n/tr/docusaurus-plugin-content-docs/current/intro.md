@@ -10,7 +10,7 @@ slug: /
 
 DNS, "Alan Adı Sistemi" anlamına gelir ve amacı, site adlarını IP adreslerine dönüştürmektir. Bir siteye her gittiğinizde, tarayıcınız sitenin IP adresini bulmak için bir DNS sunucusuna bir DNS sorgusu gönderir. Ve normal bir DNS çözümleyici, istenen alan adının IP adresini döndürür.
 
-:::not
+:::note Not
 
 Varsayılan DNS sunucusu genellikle İSS'niz tarafından sağlanır. Bu, İSS'nizin çevrimiçi etkinliğinizi izleyebileceği ve günlükleri üçüncü taraflara satabileceği anlamına gelir.
 
