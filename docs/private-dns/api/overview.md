@@ -120,7 +120,7 @@ The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 | **response_type** | Tells the authorization server which grant to execute |
 | **client_id**     | The ID of the OAuth client that asks for authorization |
 | **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL |
-| **state**         | An opaque value, used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
+| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
 | **aid**           | Affiliate identifier |
 
 For example:
