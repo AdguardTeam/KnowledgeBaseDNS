@@ -105,7 +105,7 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 
 ### Authorization endpoint
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. 
+> To access this endpoint, you need to contact us at **devteam@adguard.com**.
 > Please describe the reason and use cases for this endpoint, as well as provide the redirect URI.
 > Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
 
