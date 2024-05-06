@@ -99,7 +99,6 @@ Než něco z toho provedete, mějte na paměti, že moderní prohlížeče jsou 
 Existuje řada navrhovaných rozšíření, která by v případě přiměřené podpory ze strany klientů poskytla lepší uživatelský komfort, včetně [RFC 8914 Extended DNS Error codes][rfc8914] a [DNS Access Denied Error Page RFC draft][rfcaccess]. Zavedeme je, až je prohlížeče začnou skutečně podporovat.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
-
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
@@ -290,7 +289,6 @@ Pokud používáte TLS na reverzním proxy serveru, nemusíte používat TLS v A
 Parametr `trusted_proxies` můžete nastavit na IP adresy proxy serveru HTTP, aby AdGuard Home zohlednil záhlaví obsahující skutečnou IP adresu klienta. Další informace naleznete na stránkách [konfigurace][conf] a [šifrování][encr].
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Jak opravím chyby `permission denied` v systému Fedora? {#fedora}
@@ -323,7 +321,6 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 Viz [issue 765] a [issue 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
 ## Jak opravím chyby `nekompatibilního souborového systému`? {#incompatfs}

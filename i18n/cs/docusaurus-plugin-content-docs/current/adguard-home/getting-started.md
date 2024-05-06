@@ -38,29 +38,17 @@ Mezi další neoficiální možnosti patří:
 - [Aplikace Cloudron][cloudron] spravuje [@gramakri](https://github.com/gramakri).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
-
 [arch]: https://www.archlinux.org/
-
 [archarm]: https://archlinuxarm.org/
-
 [aur]: https://wiki.archlinux.org/index.php/Arch_User_Repository
-
 [cloudron]: https://git.cloudron.io/cloudron/adguard-home-app
-
 [docker]: https://hub.docker.com/r/adguard/adguardhome
-
 [has]: https://github.com/hassio-addons/addon-adguard-home
-
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
-
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-
 [platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
-
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
-
 [snap]: https://snapcraft.io/adguard-home
 
 ## První spuštění {#first-time}
@@ -168,7 +156,7 @@ Chcete-li aktualizovat balíček AdGuard Home bez použití rozhraní Web API, s
 
 Toto nastavení automaticky pokryje všechna zařízení připojená k Vašemu domácímu routeru a nebudete je muset konfigurovat ručně.
 
-1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například http\://192.168.0.1/ nebo http\://192.168.1.1/. Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
+1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například http://192.168.0.1/ nebo http://192.168.1.1/. Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
 
 2. Vyhledejte nastavení DHCP/DNS. Hledejte písmena DNS vedle pole, které umožňuje zadat dvě nebo tři sady čísel, z nichž každá je rozdělena do čtyř skupin po jedné až třech číslicích.
 

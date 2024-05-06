@@ -9,19 +9,19 @@ toc_max_heading_level: 4
 
 Здесь вы найдёте список надёжных DNS-провайдеров. Чтобы использовать их, сначала установите на устройство Блокировщик рекламы AdGuard или AdGuard VPN. Затем на том же устройстве кликните по ссылке провайдера в этой статье
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+Быстрые ссылки: [Скачать Блокировщик AdGuard](https://agrd.io/download-kb-adblock), [Скачать AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
 
 :::
 
-## **Public anycast resolvers**
+## **Публичные anycast-резолверы**
 
-These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
+Это крупномасштабные DNS-резолверы, распределённые по всему миру, которые используют anycast-маршрутизацию, чтобы направлять ваши DNS-запросы в ближайший центр обработки данных.
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) — это альтернативный способ заблокировать рекламу, защитить личные данные и оградить детей от материалов для взрослых. Он включает в себя необходимый набор функций по защите от рекламы, трекинга и фишинга, независимо от платформы и устройства, которым вы пользуетесь.
 
-#### По умолчанию
+#### Стандартный
 
 These servers block ads, tracking, and phishing.
 
@@ -37,11 +37,11 @@ These servers block ads, tracking, and phishing.
 
 #### Семейная защита
 
-These servers provide the Default features + Blocking adult websites + Safe search.
+У этих серверов есть те же функции, что и у стандартных серверов, а ещё блокировка сайтов для взрослых и безопасный поиск.
 
 | Протокол       | Адрес                                                                               |                                                                                                                                                                                                                                           |
 | -------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.15` и `94.140.15.16`                                                     | [Add to AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                                 |
+| DNS, IPv4      | `94.140.14.15` и `94.140.15.16`                                                     | [Добавить в AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                         |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` и `2a10:50c0::bad2:ff`                                         | [Добавить в AdGuard](adguard:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)                                             |
 | DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query`                                          | [Добавить в AdGuard](adguard:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS) |
 | DNS-over-TLS   | `tls://family.adguard-dns.com`                                                      | [Добавить в AdGuard](adguard:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)                         |
@@ -51,7 +51,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 #### Нефильтрующий
 
-Each of these servers provides a secure and reliable connection, but unlike the "Standard" and "Family Protection" servers, they don't filter anything.
+Каждый из этих серверов обеспечивает безопасное и надёжное соединение, но, в отличие от серверов «Стандартный» и «Семейная защита», они ничего не фильтруют.
 
 | Протокол       | Адрес                                                                                 |                                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,57 +65,57 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) — это бесплатный рекурсивный DNS-сервис, который стремится обеспечить быстрое, стабильное и безопасное DNS-разрешение для большинства пользователей интернета. Он защищает пользователей от различных атак и угроз.
 
-| Протокол       | Адрес                                  |                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `223.5.5.5` and `223.6.6.6`            | [Add to AdGuard](adguard:add_dns_server?address=223.5.5.5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=223.5.5.5&name=)                                                                           |
-| DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1` | [Add to AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
-| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
-| DNS-over-TLS   | `tls://dns.alidns.com`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
-| DNS-over-QUIC  | `quic://dns.alidns.com:853`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
+| Протокол       | Адрес                                |                                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `223.5.5.5` и `223.6.6.6`            | [Добавить в AdGuard](adguard:add_dns_server?address=223.5.5.5&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=223.5.5.5&name=)                                                                           |
+| DNS, IPv6      | `2400:3200::1` и `2400:3200:baba::1` | [Добавить в AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
+| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`   | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
+| DNS-over-TLS   | `tls://dns.alidns.com`               | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`          | [Добавить в AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
-### BebasDNS by BebasID
+### BebasDNS от BebasID
 
-[BebasDNS](https://github.com/bebasid/bebasdns) is a free and neutral public resolver based in Indonesia which supports OpenNIC domain. Created by Komunitas Internet Netral Indonesia (KINI) to serve Indonesian user with free and neutral internet connection.
+[BebasDNS](https://github.com/bebasid/bebasdns) — это бесплатный и нейтральный публичный резолвер, который расположен в Индонезии и поддерживает домен OpenNIC. Создан Komunitas Internet Netral Indonesia (KINI), чтобы предоставить индонезийским пользователям бесплатное подключение к интернету.
 
-#### По умолчанию
+#### Стандартный
 
-This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains.
+Это вариант BebasDNS по умолчанию. Он блокирует рекламу, вредоносное ПО и фишинговые домены.
 
-| Протокол       | Адрес                                                                |                                                                                                                                                                                                                         |
-| -------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                  | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com) |
-| DNS-over-TLS   | `tls://dns.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                     |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.bebasid.com` IP: `103.87.68.194:8443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTQ6ODQ0MyAxXDKkdrOao8ZeLyu7vTnVrT0C7YlPNNf6trdMkje7QR8yLmRuc2NyeXB0LWNlcnQuZG5zLmJlYmFzaWQuY29t)                                                               |
+| Протокол       | Адрес                                                                 |                                                                                                                                                                                                                                 |
+| -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                   | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com) |
+| DNS-over-TLS   | `tls://dns.bebasid.com:853`                                           | [Добавить в AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                     |
+| DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.dns.bebasid.com` IP: `103.87.68.194:8443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTQ6ODQ0MyAxXDKkdrOao8ZeLyu7vTnVrT0C7YlPNNf6trdMkje7QR8yLmRuc2NyeXB0LWNlcnQuZG5zLmJlYmFzaWQuY29t)                                                                       |
 
-#### Unfiltered
+#### Нефильтрующий
 
-This variant doesn't filter anything.
+Этот сервер ничего не фильтрует.
 
-| Протокол       | Адрес                                  |                                                                                                                                                                                                                                                 |
-| -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`   | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                       |
-| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
+| Протокол       | Адрес                                  |                                                                                                                                                                                                                                                         |
+| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`   | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                       |
+| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [Добавить в AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
 
-#### Security
+#### Безопасность
 
-This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains.
+Это сервер BebasDNS, защищающий от вирусов и других угроз. Он блокирует только вредоносное ПО и фишинговые домены.
 
-| Протокол       | Адрес                                     |                                                                                                                                                                                                                                                 |
-| -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://antivirus.bebasid.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com) |
-| DNS-over-TLS   | `tls://antivirus.bebasid.com:853`         | [Add to AdGuard](adguard:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853)                     |
+| Протокол       | Адрес                                     |                                                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://antivirus.bebasid.com/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com) |
+| DNS-over-TLS   | `tls://antivirus.bebasid.com:853`         | [Добавить в AdGuard](adguard:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853)                     |
 
 #### Family
 
-This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains.
+Это семейный вариант BebasDNS. Он блокирует сайты с порнографическим содержанием, азартными играми и информацией, разжигающей ненависть, а также вредоносное ПО и фишинговые домены.
 
-| Протокол       | Адрес                                                                          |                                                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                  | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                         |
+| Протокол       | Адрес                                                                          |                                                                                                                                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                  | [Добавить в AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                             |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Добавить в AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                                 |
 
 #### Family With Ad Filtering
 
@@ -143,6 +143,16 @@ This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 | -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
+
+### 0ms DNS
+
+[DNS](https://0ms.dev/) is a global DNS resolution service provided by 0ms Group as an alternative to your current DNS provider.
+
+It uses [OISD Big](https://oisd.nl/) as the basic filter to give everyone a more secure environment. It is designed with various optimizations, such as HTTP/3, caching, and more. It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
+
+| Протокол       | Адрес                       |                                                                                                                                                                                                 |
+| -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
 
 ### CFIEC Public DNS
 

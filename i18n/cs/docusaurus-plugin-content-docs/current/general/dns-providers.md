@@ -144,6 +144,16 @@ Jedná se o vlastní variantu BebasDNS pouze s filtrem Hagezi Multi Normal
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Přidat do AdGuardu](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
 
+### 0ms DNS
+
+[DNS](https://0ms.dev/) je globální služba překladu DNS poskytovaná 0ms Group jako alternativa k vašemu současnému poskytovateli DNS.
+
+Jako základní filtr používá [OISD Big](https://oisd.nl/), aby všem poskytl bezpečnější prostředí. Je navržen s různými optimalizacemi, jako je HTTP/3, ukládání do mezipaměti a další. Využívá strojové učení k ochraně uživatelů před potenciálními bezpečnostními hrozbami a zároveň se v průběhu času optimalizuje.
+
+| Protokol       | Adresa                      |                                                                                                                                                                                                        |
+| -------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
+
 ### CFIEC Public DNS
 
 Služba DNS anycast založená na protokolu IPv6 se silnými bezpečnostními funkcemi a ochranou před spywarem a škodlivými webovými stránkami. Podporuje DNS64 a poskytuje překlad názvů domén pouze pro uživatele IPv6.

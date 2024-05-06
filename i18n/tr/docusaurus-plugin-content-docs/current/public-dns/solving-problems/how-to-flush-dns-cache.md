@@ -42,7 +42,7 @@ En basit yol, Uçak modunu etkinleştirmek (örneğin, Kontrol Merkezi'nde veya 
 
 Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Genel* öğesini açın, aşağı kaydırın, *Sıfırla* öğesini bulun ve *Ağ Ayarlarını Sıfırla* öğesine dokunun.
 
-:::not
+:::note Not
 
 Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
 
@@ -74,7 +74,7 @@ Wi-Fi ağ ayarlarını Statik olarak değiştirerek Android cihazınızın DNS �
 
 Başka bir seçenek de, Ayarlar uygulamasında cihazınızın ağ ayarlarını sıfırlamaktır. *Ayarlar → Sistem → Gelişmiş → Seçenekleri sıfırla → Ağ ayarlarını sıfırla* öğesini açın ve onaylamak için *Ayarları Sıfırla* öğesine dokunun.
 
-:::not
+:::note Not
 
 Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil diğer belirli ağ ayarlarına olan bağlantıları kaybedersiniz. Bunları elle sıfırlamanız gerekir.
 

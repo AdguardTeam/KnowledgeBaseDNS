@@ -137,7 +137,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
 
 - Adlarına göre. Bu yol, yalnızca elle eklediğiniz kalıcı istemciler (AdGuard Home'da) ve cihazlar (Özel AdGuard DNS'de) için çalışır.
 
-  **NOT:** AdGuard Home'da şu anda ClientID'ler desteklenmemektedir, yalnızca adlar desteklenmektedir. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  **NOT:** AdGuard Home'da şu anda ClientID'ler desteklenmemektedir, yalnızca adlar desteklenmektedir. Eğer ”İstemcim” adında ve ClientID `my-client` olan bir istemci eklediyseniz, değiştiricinizi `$client=my-client` yerine `$client='İstemcim'` olarak yazın.
 
 Söz dizimi şöyledir:
 
@@ -161,11 +161,11 @@ $client=~value1
 
 - `||example.org^$client='Frank\'s laptop'`: `example.org` alan adını yalnızca `Frank'in dizüstü bilgisayarı` adlı istemci için engelleyin. Addaki tırnak işaretinin (`'`) kaçınılması gerektiğini unutmayın.
 
-- `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: block `example.org` for everyone except for the client named `Mary's, John's, and Boris's laptops`. Virgülden (`,`) de kaçınılması gerektiğini unutmayın.
+- `||example.org^$client=~'Mary\'s\, John\'s\, and Boris\'s laptops'`: `Mary, John ve Boris dizüstü bilgisayarları` adlı istemci dışındaki herkes için `example.org` alan adını engelleyin. Virgülden (`,`) de kaçınılması gerektiğini unutmayın.
 
-- `||example.org^$client=~Mom|~Dad|Kids`: block `example.org` for `Kids`, but not for `Mom` and `Dad`. Bu örnek, bir kuralda birden çok istemcinin nasıl belirtileceğini gösterir.
+- `||example.org^$client=~Mom|~Dad|Kids`: `example.org` alan adını `Kids` için engelleyin ama `Mom` ve `Dad` için engellemeyin. Bu örnek, bir kuralda birden çok istemcinin nasıl belirtileceğini gösterir.
 
-- `||example.org^$client=192.168.0.0/24`: block `example.org` for all clients with IP addresses in the range from `192.168.0.0` to `192.168.0.255`.
+- `||example.org^$client=192.168.0.0/24`: IP adresleri `192.168.0.0` ila `192.168.0.255` aralığında olan tüm istemciler için `example.org` alan adını engelleyin.
 
 #### `denyallow` {#denyallow-modifier}
 
@@ -345,7 +345,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `||example.com^$dnsrewrite=NXDOMAIN;;`, bir `NXDOMAIN` kodu ile yanıt verir.
 
-- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
+- `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` `example.org` hariç tüm `AAAA` istekleri için boş `NOERROR` yanıtlarıyla yanıt verir.
 
 İstisna kuralları bir veya tüm kuralların engelini kaldırır:
 

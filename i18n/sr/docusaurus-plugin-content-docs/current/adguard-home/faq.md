@@ -99,7 +99,6 @@ Before doing any of this, please note that modern browsers are set up to use HTT
 There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
-
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
@@ -290,7 +289,6 @@ If you’re using TLS on your reverse proxy server, you don’t need to use TLS 
 You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
@@ -323,7 +321,6 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 See [issue 765] and [issue 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
 ## How do I fix `incompatible file system` errors? {#incompatfs}

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ### Officielle udgivelser
 
-Download arkivet med den binære fil til operativsystemet fra \[siden Seneste stabile udgivelser]\[Udgivelser]. Den fulde liste over understøttede platforme samt links til beta og edge (ustabile) udgivelser kan findes på \[vores side platforme]\[Platforme].
+Download the archive with the binary file for your operating system from the [latest stable release page][releases]. The full list of supported platforms as well as links to beta and edge (unstable) releases can be found on [our platforms page][platforms].
 
 For at installere AdGuard Home som en tjeneste, udpak arkivet, gå til mappen 'AdGuardHome' og eksekvér:
 
@@ -38,29 +38,17 @@ Nogle andre uofficielle muligheder indbefatter:
 - [Cloudron-app][cloudron] vedligeholdes af [@gramakri](https://github.com/gramakri).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
-
 [arch]: https://www.archlinux.org/
-
 [archarm]: https://archlinuxarm.org/
-
 [aur]: https://wiki.archlinux.org/index.php/Arch_User_Repository
-
 [cloudron]: https://git.cloudron.io/cloudron/adguard-home-app
-
 [docker]: https://hub.docker.com/r/adguard/adguardhome
-
 [has]: https://github.com/hassio-addons/addon-adguard-home
-
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
-
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-
 [platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
-
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
-
 [snap]: https://snapcraft.io/adguard-home
 
 ## Første start {#first-time}
@@ -168,7 +156,7 @@ For at opdatere AdGuard Home-pakken uden at skulle bruge Web API, eksekvér:
 
 Denne opsætning dækker automatisk alle enheder tilsluttet hjemmerouteren uden behov for manuelt at skulle opsætte nogen enhed.
 
-1. Åbn præferencerne for routeren. Disse kan normalt tilgås med en webbrowser via en URL, såsom http\://192.168.0.1/ eller http\://192.168.1.1/. Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
+1. Åbn præferencerne for routeren. Disse kan normalt tilgås med en webbrowser via en URL, såsom http://192.168.0.1/ eller http://192.168.1.1/. Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
 
 2. Find DHCP/DNS-indstillingerne. Se efter bogstaverne DNS ved siden af et felt, der tillader to eller tre sæt tal, hver opdelt i fire grupper med et til tre cifre.
 

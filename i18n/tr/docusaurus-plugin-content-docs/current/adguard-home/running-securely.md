@@ -90,6 +90,6 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 
 ### Windows
 
-The principle is the same on Windows: make sure that the AdGuard Home directory, typically `C:\Program Files\AdGuardHome`, and the `AdGuardHome.exe` binary have the permissions that would only allow regular users to read and execute/list them.
+Windows'ta da prensip aynıdır: AdGuard Home dizininin, tipik olarak `C:\Program Files\AdGuardHome` ve `AdGuardHome.exe` ikili dosyasının yalnızca normal kullanıcıların bunları okumasına ve çalıştırmasına veya listelemesine izin verecek izinlere sahip olduğundan emin olun.
 
 Gelecekte Windows yapılarını, bunun otomatik olarak gerçekleştirilmesini sağlayan MSI yükleyici dosyaları olarak yayınlamayı planlıyoruz.

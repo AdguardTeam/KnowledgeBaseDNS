@@ -99,7 +99,6 @@ sidebar_position: 3
 Есть несколько расширений, которые, если они будут достаточно хорошо поддерживаться клиентами, обеспечат лучший опыт использования, в том числе [RFC 8914 Extended DNS Error codes][rfc8914] и [DNS Access Denied Error Page RFC draft][rfcaccess]. Мы внедрим их, когда браузеры начнут их поддерживать.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
-
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
@@ -290,7 +289,6 @@ DOMAIN {
 Вы можете установить параметр `trusted_proxies` на IP-адрес(-а) вашего HTTP-прокси, чтобы AdGuard Home учитывал заголовки, содержащие реальный IP-адрес клиента. Дополнительную информацию смотрите на страницах [настроек][conf] и [шифрования][encr].
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Как исправить ошибки `permission denied` на Fedora? {#fedora}
@@ -323,7 +321,6 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 Смотрите \[ошибку 765] и \[ошибку 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
 ## Как исправить ошибки `incompatible file system`? {#incompatfs}

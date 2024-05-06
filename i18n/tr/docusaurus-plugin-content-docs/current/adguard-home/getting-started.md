@@ -38,29 +38,17 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 - [Cloudron uygulaması][cloudron], [@gramakri](https://github.com/gramakri) tarafından sürdürülmektedir.
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
-
 [arch]: https://www.archlinux.org/
-
 [archarm]: https://archlinuxarm.org/
-
 [aur]: https://wiki.archlinux.org/index.php/Arch_User_Repository
-
 [cloudron]: https://git.cloudron.io/cloudron/adguard-home-app
-
 [docker]: https://hub.docker.com/r/adguard/adguardhome
-
 [has]: https://github.com/hassio-addons/addon-adguard-home
-
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
-
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-
 [platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
-
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
-
 [snap]: https://snapcraft.io/adguard-home
 
 ## İlk başlangıç {#first-time}
@@ -96,7 +84,7 @@ Orada ilk yapılandırma sihirbazından geçeceksiniz.
 
 ![AdGuard Home kullanıcı oluşturma ekranı](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 
-See [our article on running AdGuard Home securely](running-securely.md) for guidance on how to select the initial configuration that fits you best.
+Size en uygun başlangıç yapılandırmasını nasıl seçeceğiniz konusunda rehberlik için [AdGuard Home'u güvenli bir şekilde çalıştırma makalemize](running-securely.md) bakın.
 
 ## Hizmet olarak çalıştırma {#service}
 
@@ -168,7 +156,7 @@ AdGuard Home paketini Web API'sini kullanmaya gerek kalmadan güncellemek için 
 
 Bu kurulum, ev yönlendiricinize bağlı tüm cihazları otomatik olarak kapsar ve her birini elle yapılandırmanız gerekmez.
 
-1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan http\://192.168.0.1/ veya http\://192.168.1.1/ gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
+1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan http://192.168.0.1/ veya http://192.168.1.1/ gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
 
 2. DHCP/DNS ayarlarını bulun. Her biri bir ila üç basamaklı dört gruba bölünmüş iki veya üç sayı kümesine izin veren bir alanın yanındaki DNS harflerini arayın.
 

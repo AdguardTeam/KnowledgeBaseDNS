@@ -99,7 +99,6 @@ Før noget af dette gøres, vær da opmærksom på, at moderne webbrowsere er op
 Der er en række foreslåede udvidelser, som, hvis de er rimeligt velunderstøttede af klienter, ville give en bedre brugeroplevelse, herunder [RFC 8914 Extended DNS Error codes][rfc8914] og [DNS Access Denied Error Page RFC draft][rfcaccess]. Vi implementerer dem, når webbrowsere reelt begynder at understøtte dem.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
-
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
@@ -290,7 +289,6 @@ Anvendes TLS på den reverse-proxyserveren, behøver man ikke bruge TLS på AdGu
 Man kan indstille parameteren `trusted_proxies` til sin HTTP-proxys IP-adresse(r) for at få AdGuard Home til at tage headerne indeholdende den reelle klient IP-adresse i betragtning. Se siderne [opsætning][conf] og [kryptering][encr] for yderligere information.
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Hvordan rettes "tilladelse nægtet"-fejl på Fedora? {#fedora}
@@ -323,7 +321,6 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 Se \[problematik 765] og \[problematik 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
 ## Hvordan rettes "inkompatibelt filsystem"-fejl? {#incompatfs}
@@ -336,7 +333,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download den nye AdGuard Home-pakke fra \[udgivelsessiden]\[Udgivelser]. For at udføre dette trin via kommandolinjen, skriv:
+1. Download the new AdGuard Home package from the [releases page][releases]. For at udføre dette trin via kommandolinjen, skriv:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -411,7 +408,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 I alle eksempler nedenfor skal PowerShell eksekveres som Administrator.
 
-1. Download den nye AdGuard Home-pakke fra \[udgivelsessiden]\[Udgivelser]. For at udføre dette trin via kommandolinjen:
+1. Download the new AdGuard Home package from the [releases page][releases]. For at udføre dette trin via kommandolinjen:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'

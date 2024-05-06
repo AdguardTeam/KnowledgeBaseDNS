@@ -99,7 +99,6 @@ Bunları yapmadan önce, modern tarayıcıların HTTPS kullanmak üzere ayarland
 There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
-
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
@@ -188,7 +187,7 @@ Temel olarak, içerikle aynı alan adını paylaşan herhangi bir reklam, içeri
 
 ### Gelecekte bununla başa çıkma olasılığı var mı?
 
-DNS bunu yapmak için asla yeterli olmayacaktır. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. Gelecekte AdGuard Home'a bu özellik için destek ekleyeceğiz. Ne yazık ki, o zaman bile yeterli olmayacağı veya oldukça karmaşık bir yapılandırma gerektireceği durumlar olur.
+DNS bunu yapmak için asla yeterli olmayacaktır. Tek seçeneğiniz, [bağımsız AdGuard uygulamalarında][adguard] yaptığımız gibi bir içerik engelleme proxy'si kullanmaktır. Gelecekte AdGuard Home'a bu özellik için destek ekleyeceğiz. Ne yazık ki, o zaman bile yeterli olmayacağı veya oldukça karmaşık bir yapılandırma gerektireceği durumlar olur.
 
 [adguard]: https://adguard.com/
 
@@ -210,7 +209,7 @@ systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 
 Bunu düzeltmek için ya `systemd-resolved` daemon'unu devre dışı bırakmalı ya da farklı bir ağ arayüzü seçmeli ve AdGuard Home'unuzu ağınızdaki yönlendiricinizin IP adresi gibi erişilebilir bir IP adresine bağlamalısınız. Ancak `localhost` üzerinde dinleme yapmanız gerekiyorsa, birkaç çözüm vardır.
 
-Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the _Fix_ button located next to the `address already in use` message on the installation screen.
+Öncelikle, kurulum ekranındaki 'adres zaten kullanımda' mesajının yanında bulunan _Düzelt_ düğmesine basarsanız, AdGuard Home bu tür yapılandırmaları algılayabilir ve sizin için `systemd-resolved` öğesini devre dışı bırakabilir.
 
 İkinci olarak, bu işe yaramazsa, aşağıdaki talimatları izleyin. AdGuard Home'u docker veya snap ile kullanıyorsanız, bunu kendiniz yapmanız gerekeceğini unutmayın.
 
@@ -281,16 +280,15 @@ DOMAIN {
 }
 ```
 
-### Disable DoH encryption on AdGuard Home
+### AdGuard Home'da DoH şifrelemesini devre dışı bırakma
 
-If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
+Ters proxy sunucunuzda TLS kullanıyorsanız, AdGuard Home'da TLS kullanmanıza gerek yoktur. AdGuard Home'un DoH isteklerine TLS şifrelemesi olmadan yanıt vermesine izin vermek için `AdGuardHome.yaml` içinde `allow_unencrypted_doh: true` ayarını yapın.
 
 ### İstemcilerin gerçek IP adresleri
 
 AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almasını sağlamak için `trusted_proxies` parametresini HTTP proxy'nizin IP adreslerine ayarlayabilirsiniz. Daha fazla bilgi için [configuration][conf] ve [encryption][encr] sayfalarına bakın.
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Fedora'da `permission denied` hatalarını nasıl düzeltirim? {#fedora}
@@ -323,20 +321,19 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 Bkz. \[sorun 765] ve \[sorun 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
-
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
 ## `Uyumsuz dosya sistemi` hatalarını nasıl düzeltirim? {#incompatfs}
 
 AdGuard Home kurulumunuzu veya çalışma dizininizi başka bir konuma taşımalısınız. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
 
-## How do I update AdGuard Home manually? {#manual-update}
+## AdGuard Home'u elle nasıl güncelleyebilirim? {#manual-update}
 
-If the button isn’t displayed or an automatic update has failed, you can update manually. Aşağıdaki örneklerde, AMD64 CPU'lar için Linux ve Windows için AdGuard Home sürümlerini kullanacağız.
+Düğme görüntülenmiyorsa veya otomatik güncelleme başarısız olduysa, elle güncelleyebilirsiniz. Aşağıdaki örneklerde, AMD64 CPU'lar için Linux ve Windows için AdGuard Home sürümlerini kullanacağız.
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. Bu adımı komut satırından gerçekleştirmek istiyorsanız, şunu yazın:
+1. Yeni AdGuard Home paketini [sürümler sayfasından][releases] indirin. Bu adımı komut satırından gerçekleştirmek istiyorsanız, şunu yazın:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -395,7 +392,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
 
    Artık geçici dizini kaldırabilirsiniz.
 
@@ -411,7 +408,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıdır.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. Bu adımı komut satırından gerçekleştirmek istiyorsanız:
+1. Yeni AdGuard Home paketini [sürümler sayfasından][releases] indirin. Bu adımı komut satırından gerçekleştirmek istiyorsanız:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -419,7 +416,7 @@ Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıd
    Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
    ```
 
-2. Navigate to the directory where AdGuard Home was installed. Aşağıdaki örneklerde `C:\Program Files\AdGuardHome` dizinini kullanacağız.
+2. AdGuard Home'un kurulu olduğu dizine gidin. Aşağıdaki örneklerde `C:\Program Files\AdGuardHome` dizinini kullanacağız.
 
 3. AdGuard Home'u durdurun:
 
@@ -449,7 +446,7 @@ Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıd
    Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
 
    Artık geçici dizini kaldırabilirsiniz.
 
@@ -459,9 +456,9 @@ Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıd
    .\AdGuardHome.exe -s start
    ```
 
-## How do I uninstall AdGuard Home? {#uninstall}
+## AdGuard Home'u nasıl kaldırabilirim? {#uninstall}
 
-Depending on how you installed AdGuard Home, there are different ways to uninstall it.
+AdGuard Home'u nasıl yüklediğinize bağlı olarak, onu kaldırmanın farklı yolları vardır.
 
 :::caution
 
@@ -469,7 +466,7 @@ AdGuard Home'u kaldırmadan önce, cihazlarınızın yapılandırmasını deği�
 
 :::
 
-### Regular installation
+### Normal kurulum
 
 Bu durumda aşağıdakileri yapın:
 

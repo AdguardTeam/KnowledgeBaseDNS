@@ -22,7 +22,7 @@ _Enterprise_-abonnementstypen er kun tilgængelig på forespørgsel. Ved evt. in
 
 ## Sådan opnås refusion {#refund}
 
-I overensstemmelse med vores [Salgsvilkår](https://adguard-dns.io/eula.html), kan der opnås 100% refusion på alle AdGuard DNS-årsabonnementstyper købt via https\://adguard-dns.com/. For at opnå refusion, kontakt supporten via support\@adguard.com med angivelse af den anvendte betalingsmetode. Behandlingstiden udgør normalt ca. 5-10 hverdage.
+I overensstemmelse med vores [Salgsvilkår](https://adguard-dns.io/eula.html), kan der opnås 100% refusion på alle AdGuard DNS-årsabonnementstyper købt via https://adguard-dns.com/. For at opnå refusion, kontakt supporten via support@adguard.com med angivelse af den anvendte betalingsmetode. Behandlingstiden udgør normalt ca. 5-10 hverdage.
 
 Refusion kan blive afvist, såfremt:
 
