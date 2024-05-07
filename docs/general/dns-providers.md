@@ -823,11 +823,11 @@ These servers block adult websites and inappropriate contents.
 
 ### JupitrDNS
 
-[JupitrDNS](https://jupitrdns.com/) is a a free hobby DNS service that blocks ads, trackers and malware.
+[JupitrDNS](https://jupitrdns.com/) is a a free recursive DNS service that blocks ads, trackers, and malware. It has DNSSEC support and does not store logs.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4 | `35.215.30.118` and `35.215.48.207` | [Add to AdGuard](adguard:add_dns_server?address=35.215.30.118&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=35.215.30.118&name=) |
+| DNS, IPv4 | `35.215.30.118` and `35.215.48.207` | [Add to AdGuard](adguard:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com) |
 | DNS-over-HTTPS | `https://dns.jupitrdns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com) |
 | DNS-over-TLS | `tls://dns.jupitrdns.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com) |
 | DNS-over-QUIC  | `quic://dns.jupitrdns.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com) |
