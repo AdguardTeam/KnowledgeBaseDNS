@@ -738,8 +738,8 @@ In "Family" mode, Protected + blocking adult content.
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
 | DNS-over-HTTPS | `https://dns.controld.com/comss` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com) |
-| DNS-over-TLS | `tls://comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com) |
-| DNS-over-QUIC | `quic://comss.dns.controld.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
+| DNS-over-TLS | `comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com) |
+| DNS-over-QUIC | `quic://comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://quic://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
 
 ### CZ.NIC ODVR
 
