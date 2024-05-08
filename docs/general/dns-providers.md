@@ -912,7 +912,10 @@ In "Basic" mode, there is no traffic filtering.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `77.88.8.8` and `77.88.8.1` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=) |
 | DNS, IPv6 | `2a02:6b8::feed:0ff` and `2a02:6b8:0:1::feed:0ff` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353`| [Add to AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA) |
+| DNS-over-HTTPS | IPv4: `77.88.8.8:443` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8:443&name=common.doh.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8:443&name=common.doh.dns.yandex.net) |
+| DNS-over-HTTPS | IPv6: `[2a02:6b8::feed:0ff]:443` | [Add to AdGuard](adguard:add_dns_server?address=[2a02:6b8::feed:0ff]:443&name=common.doh.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=[2a02:6b8::feed:0ff]:443&name=common.doh.dns.yandex.net) |
+| DNS-over-TLS | IPv4: `77.88.8.8:853` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8:853&name=common.dot.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8:853&name=common.dot.dns.yandex.net) |
+| DNS-over-TLS | IPv6: `[2a02:6b8::feed:0ff]:853` | [Add to AdGuard](adguard:add_dns_server?address=[2a02:6b8::feed:0ff]:853&name=common.dot.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=[2a02:6b8::feed:0ff]:853&name=common.dot.dns.yandex.net) |
 
 #### Safe
 
