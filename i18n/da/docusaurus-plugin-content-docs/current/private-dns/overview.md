@@ -146,6 +146,14 @@ I tilfælde hvor forudinstallerede sortlister med tusindvis af regler ikke er no
 
 ![Private AdGuard DNS-kontrolpanel, brugerregler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
+### DNS-over-HTTPS med godkendelse
+
+DNS-over-HTTPS med godkendelse giver et login og adgangskode til at oprette forbindelse til serveren. Dette kan begrænse adgangen for uautoriserede brugere og øge sikkerheden.
+
+For at aktivere denne funktion, gå til *Serverindstillinger* → *Enheder* → *Indstillinger* og skift til en DNS-server med godkendelse. Vælg *Afvis andre protokoller* for at deaktivere alternativ protokolbrug, sikre eksklusiv DNS-over-HTTPS godkendelse og blokering af tredjepartsadgang.
+
+![DNS-over-HTTPS med godkendelse](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
 ## Avanceret
 
 Her kan vælges, hvordan AdGuard skal reagere på blokerede DNS:

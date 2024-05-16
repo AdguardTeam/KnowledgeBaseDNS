@@ -50,5 +50,9 @@
   "copyright": {
     "message": "©AdGuard DNS, 2023",
     "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "AdGuard DNS",
+    "description": "The alt text of footer logo"
   }
 }

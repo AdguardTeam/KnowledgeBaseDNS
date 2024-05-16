@@ -101,23 +101,23 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
-### Authorization endpoint
+### Yetkilendirme uç noktası
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> Bu uç noktaya erişmek için **devteam@adguard.com** adresinden bizimle iletişime geçmeniz gerekir. Lütfen bu uç noktanın sebebini, kullanım durumlarını açıklayın ve yönlendirme URI'sini sağlayın. Onaylandıktan sonra, **client_id** parametresi için kullanılması gereken benzersiz bir i̇stemci tanımlayıcısı alırsınız.
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+**oapi/v1/oauth_authorize** uç noktası, kaynak sahibiyle etkileşime geçmek ve korunan kaynağa erişim yetkisi almak için kullanılır.
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+Hizmet, kimlik doğrulaması için sizi AdGuard'a yönlendirir (henüz giriş yapmadıysanız) ve ardından uygulamanıza geri döner.
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+**oapi/v1/oauth_authorize** uç noktasının istek parametreleri şunlardır:
 
-| Parametre         | Açıklama                                                                                                                                                       |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| Parametre         | Açıklama                                                                                                                                                        |
+|:----------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Yetkilendirme sunucusuna hangi iznin yürütüleceğini söyler                                                                                                      |
+| **client_id**     | Yetkilendirme isteyen OAuth istemcisinin kimliği                                                                                                                |
+| **redirect_uri**  | Bir URL içerir. Bu uç noktadan gelen başarılı bir yanıt, bu URL'ye yönlendirme yapar                                                                            |
+| **state**         | Güvenlik amacıyla kullanılan opak bir değer. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
+| **aid**           | Ortaklık tanımlayıcısı                                                                                                                                          |
 
 Örneğin:
 
@@ -125,9 +125,9 @@ The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+Yetkilendirme sunucusuna hangi izn türünün kullanılacağını bildirmek için **response_type** istek parametresi aşağıdaki gibi kullanılır:
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- Örtülü izin için, bir erişim belirteci eklemek üzere **Response_type=token** kullanın.
 
 A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
 

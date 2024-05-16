@@ -569,7 +569,7 @@ Mere strikse filtreringspolitikker med blokering af reklame-, marketing-, tracki
 | DNS, IPv4      | `193.110.81.0` og `185.253.5.0` | [Føj til AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
 | DNS-over-HTTPS | `https://zero.dns0.eu/`         | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
 | DNS-over-TLS   | `tls://zero.dns0.eu`            | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)           |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
 
 ### Quad9 DNS
 
@@ -733,11 +733,11 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) er en hurtig og sikker DNS-tjeneste med reklame-, sporings- og phishing-beskyttelse.
 
-| Protokol       | Adresse                             |                                                                                                                                                                                                                                                  |
-| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
-| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [Føj til AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
-| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [Føj til AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
+| Protokol       | Adresse                          |                                                                                                                                                                                                                                 |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.controld.com/comss` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)           |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`   | [Føj til AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)   |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com`  | [Føj til AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
 
 ### CZ.NIC ODVR
 
@@ -819,6 +819,17 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 | DNS-over-HTTPS | `https://public.dns.iij.jp/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://public.dns.iij.jp/dns-query&name=public.dns.iij.jp), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://public.dns.iij.jp/dns-query&name=public.dns.iij.jp) |
 | DNS-over-TLS   | `tls://public.dns.iij.jp`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://public.dns.iij.jp&name=public.dns.iij.jp), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.dns.iij.jp&name=public.dns.iij.jp)                         |
 
+### JupitrDNS
+
+[JupitrDNS](https://jupitrdns.com/) er en gratis rekursiv DNS-tjeneste, der blokerer annoncer, trackere og malware. Den har DNSSEC-understøttelse og lagrer ikke logfiler.
+
+| Protokol       | Adresse                               |                                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `35.215.30.118` og `35.215.48.207`    | [Føj til AdGuard](adguard:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com)                                             |
+| DNS-over-HTTPS | `https://dns.jupitrdns.com/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com) |
+| DNS-over-TLS   | `tls://dns.jupitrdns.com`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com)                         |
+| DNS-over-QUIC  | `quic://dns.jupitrdns.com`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com)                       |
+
 ### LibreDNS
 
 [LibreDNS](https://libredns.gr/) er en offentlig krypteret DNS-tjeneste drevet af [LibreOps](https://libreops.cc/).
@@ -895,29 +906,34 @@ Dette er blot en af de tilgængelige servere, den komplette liste findes [hér](
 
 I tilstanden "Basic" sker ingen trafikfiltrering.
 
-| Protokol       | Adresse                                                              |                                                                                                                                                               |
-| -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `77.88.8.8` og `77.88.8.1`                                           | [Føj til AdGuard](adguard:add_dns_server?address=77.88.8.8&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=)                   |
-| DNS, IPv6      | `2a02:6b8::feed:0ff` og `2a02:6b8:0:1::feed:0ff`                     | [Føj til AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=) |
-| DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [Føj til AdGuard](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA)      |
+| Protokol       | Adresse                                          |                                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.8` og `77.88.8.1`                       | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8&name=yandex.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=yandex.ipv4)                                                                   |
+| DNS, IPv6      | `2a02:6b8::feed:0ff` og `2a02:6b8:0:1::feed:0ff` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=yandex.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=yandex.ipv6)                                                 |
+| DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`    | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
+| DNS-over-TLS   | `tls://common.dot.dns.yandex.net`                | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
 #### Sikker
 
 I tilstanden "Safe" ydes beskyttelse mod inficerede og svigagtige websteder.
 
-| Protokol  | Adresse                                          |                                                                                                                                                               |
-| --------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `77.88.8.88` og `77.88.8.2`                      | [Føj til AdGuard](adguard:add_dns_server?address=77.88.8.88&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.88&name=)                 |
-| DNS, IPv6 | `2a02:6b8::feed:bad` og `2a02:6b8:0:1::feed:bad` | [Føj til AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:bad&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:bad&name=) |
+| Protokol       | Adresse                                          |                                                                                                                                                                                                                                         |
+| -------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.88` og `77.88.8.2`                      | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.88&name=yandex.safe.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.88&name=yandex.safe.ipv4)                                                             |
+| DNS, IPv6      | `2a02:6b8::feed:bad` og `2a02:6b8:0:1::feed:bad` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:bad&name=yandex.safe.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:bad&name=yandex.safe.ipv6)                                             |
+| DNS-over-HTTPS | `https://safe.dot.dns.yandex.net/dns-query`      | [Add to AdGuard](adguard:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh) |
+| DNS-over-TLS   | `tls://safe.dot.dns.yandex.net`                  | [Add to AdGuard](adguard:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot)                         |
 
 #### Family
 
 I tilstanden "Family" ydes beskyttelse mod inficerede, svigagtige og voksenwebsteder.
 
-| Protokol  | Adresse                                          |                                                                                                                                                               |
-| --------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `77.88.8.3` og `77.88.8.7`                       | [Føj til AdGuard](adguard:add_dns_server?address=77.88.8.3&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.3&name=)                   |
-| DNS, IPv6 | `2a02:6b8::feed:a11` og `2a02:6b8:0:1::feed:a11` | [Føj til AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:a11&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:a11&name=) |
+| Protokol       | Adresse                                          |                                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.3` og `77.88.8.7`                       | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.3&name=yandex.family.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.3&name=yandex.family.ipv4)                                                                   |
+| DNS, IPv6      | `2a02:6b8::feed:a11` og `2a02:6b8:0:1::feed:a11` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:a11&name=yandex.family.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:a11&name=yandex.family.ipv6)                                                 |
+| DNS-over-HTTPS | `https://family.dot.dns.yandex.net/dns-query`    | [Add to AdGuard](adguard:add_dns_server?address=https://family.dot.dns.yandex.net/dns-query&name=yandex.family.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dot.dns.yandex.net/dns-query&name=yandex.family.doh) |
+| DNS-over-TLS   | `tls://family.dot.dns.yandex.net`                | [Add to AdGuard](adguard:add_dns_server?address=tls://family.dot.dns.yandex.net&name=yandex.family.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dot.dns.yandex.net&name=yandex.family.dot)                         |
 
 ## **Små personlige opløsere**
 

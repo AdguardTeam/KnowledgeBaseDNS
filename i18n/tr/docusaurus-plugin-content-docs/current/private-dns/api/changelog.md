@@ -14,11 +14,11 @@ Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik gün
 
 ## v1.8
 
-_Released on April 20, 2024_
+_20 Nisan 2024 tarihinde yayınlandı_
 
-- Added support for DNS-over-HTTPS with authentication:
-  - New operation — reset DNS-over-HTTPS password for device
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
+- Kimlik doğrulama ile DNS-over-HTTPS desteği eklendi:
+  - Yeni işlem — cihaz için DNS-over-HTTPS parolasını sıfırlama
+  - Yeni cihaz ayarı — `detect_doh_auth_only`. Kimlik doğrulamalı DNS-over-HTTPS dışındaki tüm DNS bağlantı yöntemlerini devre dışı bırakır
   - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
 
 ## v1.7

@@ -101,23 +101,23 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:--------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, der skal ophæves |
 
-### Authorization endpoint
+### Godkendelsesendepunkt
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> For at tilgå dette endepunkt, kontakt os på **devteam@adguard.com**. Beskriv venligst årsagen til og brugstilfælde for dette endepunkt, samt angiv omdirigerings-URI'en. Efter godkendelse fremsendes et unikt klientidentifikator til brug for parameteren **client_id**.
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+**/oapi/v1/oauth_authorize** endepunktet bruges til at interager med ressourceejeren og opnå godkendelse til at tilgå den beskyttede ressource.
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+Man omdirigeres af tjenesten til AdGuard for godkendelse (hvis man ikke allerede er logget ind) og dernæst tilbage til sin applikation.
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+Forespørgselsparametrene til **/oapi/v1/oauth_authorize** endepunktet er:
 
-| Parameter         | Beskrivelse                                                                                                                                                    |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| Parameter         | Beskrivelse                                                                                                                                                                  |
+|:----------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Fortæller godkendelsesserveren, hvilken tildeling, der skal eksekveres                                                                                                       |
+| **client_id**     | ID'et på den OAuth-klient, der beder om godkendelse                                                                                                                          |
+| **redirect_uri**  | Indeholder en URL. Et vellykket svar fra dette endepunkt resulterer i en omdirigering til denne URL                                                                          |
+| **tilstand**      | En uigennemsigtig værdi brugt til sikkerhedsformål. Er denne forespørgselsparameter angivet i forespørgslen, returneres den til applikationen som en del af **redirect_uri** |
+| **aid**           | Affilieret-identifikator                                                                                                                                                     |
 
 F.eks.:
 
@@ -125,11 +125,11 @@ F.eks.:
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+For at informere godkendelsesserveren om, hvilken tildelingstype, der skal bruges, bruges **response_type**-forespørgselsparameteren som følger:
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- For den implicitte tildeling, brug **response_type=token** til at inkludere et adgangstoken.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+Et vellykket svar er **302 Found**, der udløser en omdirigering til **redirect_uri** (som er en anmodningsparameter). Svarparametrene er indlejret i fragmentkomponenten (delen efter `#`) i **redirect_uri**-parameteren i headeren **Location**.
 
 F.eks.:
 

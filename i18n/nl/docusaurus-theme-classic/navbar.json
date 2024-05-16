@@ -14,5 +14,9 @@
   "item.label.github": {
     "message": "GitHub",
     "description": "Navbar item with label github"
+  },
+  "logo.alt": {
+    "message": "AdGuard DNS",
+    "description": "The alt text of navbar logo"
   }
 }
