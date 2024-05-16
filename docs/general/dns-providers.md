@@ -912,10 +912,8 @@ In "Basic" mode, there is no traffic filtering.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `77.88.8.8` and `77.88.8.1` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=) |
 | DNS, IPv6 | `2a02:6b8::feed:0ff` and `2a02:6b8:0:1::feed:0ff` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=) |
-| DNS-over-HTTPS | IPv4: `77.88.8.8:443` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8:443&name=common.doh.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8:443&name=common.doh.dns.yandex.net) |
-| DNS-over-HTTPS | IPv6: `[2a02:6b8::feed:0ff]:443` | [Add to AdGuard](adguard:add_dns_server?address=[2a02:6b8::feed:0ff]:443&name=common.doh.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=[2a02:6b8::feed:0ff]:443&name=common.doh.dns.yandex.net) |
-| DNS-over-TLS | IPv4: `77.88.8.8:853` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8:853&name=common.dot.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8:853&name=common.dot.dns.yandex.net) |
-| DNS-over-TLS | IPv6: `[2a02:6b8::feed:0ff]:853` | [Add to AdGuard](adguard:add_dns_server?address=[2a02:6b8::feed:0ff]:853&name=common.dot.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=[2a02:6b8::feed:0ff]:853&name=common.dot.dns.yandex.net) |
+| DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
+| DNS-over-TLS | `tls://common.dot.dns.yandex.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot) |
 
 #### Safe
 
@@ -925,6 +923,8 @@ In "Safe" mode, protection from infected and fraudulent sites is provided.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `77.88.8.88` and `77.88.8.2` | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.88&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.88&name=) |
 | DNS, IPv6 | `2a02:6b8::feed:bad` and `2a02:6b8:0:1::feed:bad` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:bad&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:bad&name=) |
+| DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query) |
+| DNS-over-TLS | `tls://common.dot.dns.yandex.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net) |
 
 #### Family
 
