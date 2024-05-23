@@ -101,23 +101,23 @@ $ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, který má být odvolán |
 
-### Authorization endpoint
+### Autorizační koncový bod
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Popište prosím důvod a případy použití tohoto koncového bodu a uveďte URI přesměrování. Po schválení obdržíte jedinečný identifikátor klienta, který by měl být použit pro parametr **client_id**.
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+Koncový bod **/oapi/v1/oauth_authorize** slouží k interakci s vlastníkem zdroje a k získání oprávnění k přístupu k chráněnému zdroji.
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+Služba vás přesměruje na AdGuard k ověření (pokud ještě nejste přihlášeni) a poté zpět do vaší aplikace.
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+Parametry požadavku koncového bodu **/oapi/v1/oauth_authorize** jsou:
 
-| Parametr          | Popis                                                                                                                                                          |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| Parametr          | Popis                                                                                                                                                         |
+|:----------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Sděluje autorizačnímu serveru, který grant má provést                                                                                                         |
+| **client_id**     | ID klienta OAuth, který žádá o autorizaci                                                                                                                     |
+| **redirect_uri**  | Obsahuje URL. Úspěšná odezva z tohoto koncového bodu vede k přesměrování na tuto URL                                                                          |
+| **state**         | Neprůhledná hodnota používaná pro účely zabezpečení. Pokud je tento parametr požadavku nastaven v požadavku, je vrácen aplikaci jako součást **redirect_uri** |
+| **aid**           | Identifikátor přidruženého subjektu                                                                                                                           |
 
 Např:
 
@@ -125,11 +125,11 @@ Např:
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+K informování autorizačního serveru o tom, který typ grantu má být použit, se používá následující parametr požadavku **response_type**:
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- Pro implicitní grant použijte **response_type=token** k zahrnutí přístupového tokenu.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+Úspěšná odezva je **302 Found**, což vyvolá přesměrování na **redirect_uri** (což je parametr požadavku). Parametry odezvy jsou vloženy do fragmentové složky (část za `#`) parametru **redirect_uri** v záhlaví **Location**.
 
 Např:
 

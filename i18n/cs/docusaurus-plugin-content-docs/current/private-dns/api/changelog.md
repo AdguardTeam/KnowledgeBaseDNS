@@ -14,12 +14,12 @@ Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overv
 
 ## v1.8
 
-_Released on April 20, 2024_
+_Vydáno 20. dubna 2024_
 
-- Added support for DNS-over-HTTPS with authentication:
-  - New operation — reset DNS-over-HTTPS password for device
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+- Přidána podpora pro DNS-over-HTTPS s ověřováním:
+  - Nová operace — resetování hesla DNS-over-HTTPS pro zařízení
+  - Nastavení nového zařízení — `detect_doh_auth_only`. Zakáže všechny metody připojení DNS kromě DNS-over-HTTPS s ověřením
+  - Nové pole v Device DNSAddresses — `dns_over_https_with_auth_url`. Určuje adresu URL, která se má použít při připojení pomocí DNS-over-HTTPS s ověřením
 
 ## v1.7
 

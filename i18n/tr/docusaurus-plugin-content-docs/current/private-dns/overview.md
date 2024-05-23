@@ -146,6 +146,14 @@ Binlerce kurala sahip önceden yüklenmiş engel listelerinin yeterli olmadığ�
 
 ![Özel AdGuard DNS panosu kullanıcı kuralları](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
+### Kimlik doğrulamalı DNS-over-HTTPS
+
+Kimlik doğrulamalı DNS-over-HTTPS, sunucuya bağlanmak için bir giriş yapma ve parola sağlar. Bu, yetkisiz kullanıcıların erişimini sınırlandırabilir ve güvenliği artırabilir.
+
+Bu özelliği etkinleştirmek için *Sunucu ayarları* → *Aygıtlar* → *Ayarlar* öğesine gidin ve DNS sunucusunu kimlik doğrulamalı olan sunucu olarak değiştirin. Alternatif protokol kullanımını devre dışı bırakmak, özel DNS-over-HTTPS kimlik doğrulaması sağlamak ve üçüncü taraf erişimini engellemek için *Diğer protokolleri reddet * öğesini seçin.
+
+![Kimlik doğrulamalı DNS-over-HTTPS](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
 ## Gelişmiş
 
 Burada AdGuard DNS'nin engellenen alan adlarına yanıt verme şeklini ayarlayabilirsiniz:

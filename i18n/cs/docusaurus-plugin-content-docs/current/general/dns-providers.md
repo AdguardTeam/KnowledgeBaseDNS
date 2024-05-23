@@ -569,7 +569,7 @@ Přísnější zásady filtrování s blokováním - reklamy, marketing, sledov�
 | DNS, IPv4      | `193.110.81.0` a `185.253.5.0` | [Přidat do AdGuardu](adguard:add_dns_server?address=193.110.81.0&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
 | DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
 | DNS-over-TLS   | `tls://zero.dns0.eu`           | [Add to Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)               |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)           |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
 
 ### Quad9 DNS
 
@@ -733,11 +733,11 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 
 [Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná služba DNS s ochranou proti reklamám, sledování a krádeži identity.
 
-| Protokol       | Adresa                              |                                                                                                                                                                                                                                                       |
-| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.controld.com/comss`    | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)                            |
-| DNS-over-TLS   | `tls://comss.dns.controld.com`      | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)                    |
-| DNS-over-QUIC  | `quic://comss.dns.controld.com:853` | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com:853&name=comss.dns.controld.com:8534) |
+| Protokol       | Adresa                           |                                                                                                                                                                                                                                      |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://dns.controld.com/comss` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)           |
+| DNS-over-TLS   | `tls://comss.dns.controld.com`   | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)   |
+| DNS-over-QUIC  | `quic://comss.dns.controld.com`  | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
 
 ### CZ.NIC ODVR
 
@@ -819,6 +819,17 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 | DNS-over-HTTPS | `https://public.dns.iij.jp/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://public.dns.iij.jp/dns-query&name=public.dns.iij.jp), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://public.dns.iij.jp/dns-query&name=public.dns.iij.jp) |
 | DNS-over-TLS   | `tls://public.dns.iij.jp`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://public.dns.iij.jp&name=public.dns.iij.jp), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.dns.iij.jp&name=public.dns.iij.jp)                         |
 
+### JupitrDNS
+
+[JupitrDNS](https://jupitrdns.com/) je bezplatná rekurzivní služba DNS, která blokuje reklamy, slídiče a malware. Obsahuje podporu DNSSEC a neukládá záznamy.
+
+| Protokol       | Adresa                                |                                                                                                                                                                                                                                        |
+| -------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `35.215.30.118` a `35.215.48.207`     | [Přidat do AdGuardu](adguard:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=35.215.30.118&name=dns.jupitrdns.com)                                             |
+| DNS-over-HTTPS | `https://dns.jupitrdns.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.jupitrdns.com/dns-query&name=dns.jupitrdns.com) |
+| DNS-over-TLS   | `tls://dns.jupitrdns.com`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.jupitrdns.com&name=dns.jupitrdns.com)                         |
+| DNS-over-QUIC  | `quic://dns.jupitrdns.com`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.jupitrdns.com&name=dns.jupitrdns.com)                       |
+
 ### LibreDNS
 
 [LibreDNS](https://libredns.gr/) je veřejná šifrovaná služba DNS, kterou provozuje [LibreOps](https://libreops.cc/).
@@ -895,29 +906,34 @@ Toto je jen jeden z dostupných serverů, celý seznam najdete [zde](https://ser
 
 V "Základním" režimu není filtrování datového provozu prováděno.
 
-| Protokol       | Adresa                                                                    |                                                                                                                                                                    |
-| -------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `77.88.8.8` a `77.88.8.1`                                                 | [Přidat do AdGuardu](adguard:add_dns_server?address=77.88.8.8&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=)                   |
-| DNS, IPv6      | `2a02:6b8::feed:0ff` a `2a02:6b8:0:1::feed:0ff`                           | [Přidat do AdGuardu](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=) |
-| DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.browser.yandex.net` IP: `77.88.8.78:15353` | [Přidat do AdGuardu](sdns://AQQAAAAAAAAAEDc3Ljg4LjguNzg6MTUzNTMg04TAccn3RmKvKszVe13MlxTUB7atNgHhrtwG1W1JYyciMi5kbnNjcnlwdC1jZXJ0LmJyb3dzZXIueWFuZGV4Lm5ldA)        |
+| Protokol       | Adresa                                          |                                                                                                                                                                                                                                   |
+| -------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.8` a `77.88.8.1`                       | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.8&name=yandex.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.8&name=yandex.ipv4)                                                                   |
+| DNS, IPv6      | `2a02:6b8::feed:0ff` a `2a02:6b8:0:1::feed:0ff` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:0ff&name=yandex.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:0ff&name=yandex.ipv6)                                                 |
+| DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`   | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
+| DNS-over-TLS   | `tls://common.dot.dns.yandex.net`               | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
 #### Bezpečný
 
 V "Bezpečném" režimu je poskytována ochrana před infikovanými a podvodnými stránkami.
 
-| Protokol  | Adresa                                          |                                                                                                                                                                    |
-| --------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4 | `77.88.8.88` a `77.88.8.2`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=77.88.8.88&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.88&name=)                 |
-| DNS, IPv6 | `2a02:6b8::feed:bad` a `2a02:6b8:0:1::feed:bad` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a02:6b8::feed:bad&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:bad&name=) |
+| Protokol       | Adresa                                          |                                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.88` a `77.88.8.2`                      | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.88&name=yandex.safe.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.88&name=yandex.safe.ipv4)                                                             |
+| DNS, IPv6      | `2a02:6b8::feed:bad` a `2a02:6b8:0:1::feed:bad` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:bad&name=yandex.safe.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:bad&name=yandex.safe.ipv6)                                             |
+| DNS-over-HTTPS | `https://safe.dot.dns.yandex.net/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh) |
+| DNS-over-TLS   | `tls://safe.dot.dns.yandex.net`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot)                         |
 
 #### Family
 
 V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými stránkami a stránkami pro dospělé.
 
-| Protokol  | Adresa                                          |                                                                                                                                                                    |
-| --------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4 | `77.88.8.3` a `77.88.8.7`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=77.88.8.3&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.3&name=)                   |
-| DNS, IPv6 | `2a02:6b8::feed:a11` a `2a02:6b8:0:1::feed:a11` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a02:6b8::feed:a11&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:a11&name=) |
+| Protokol       | Adresa                                          |                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `77.88.8.3` a `77.88.8.7`                       | [Add to AdGuard](adguard:add_dns_server?address=77.88.8.3&name=yandex.family.ipv4), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=77.88.8.3&name=yandex.family.ipv4)                                                                   |
+| DNS, IPv6      | `2a02:6b8::feed:a11` a `2a02:6b8:0:1::feed:a11` | [Add to AdGuard](adguard:add_dns_server?address=2a02:6b8::feed:a11&name=yandex.family.ipv6), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:6b8::feed:a11&name=yandex.family.ipv6)                                                 |
+| DNS-over-HTTPS | `https://family.dot.dns.yandex.net/dns-query`   | [Add to AdGuard](adguard:add_dns_server?address=https://family.dot.dns.yandex.net/dns-query&name=yandex.family.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dot.dns.yandex.net/dns-query&name=yandex.family.doh) |
+| DNS-over-TLS   | `tls://family.dot.dns.yandex.net`               | [Add to AdGuard](adguard:add_dns_server?address=tls://family.dot.dns.yandex.net&name=yandex.family.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dot.dns.yandex.net&name=yandex.family.dot)                         |
 
 ## **Small personal resolvers**
 

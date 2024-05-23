@@ -146,6 +146,14 @@ Pro případy, kdy předinstalované seznamy zakázaných s tisíci pravidly nes
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
+### DNS-over-HTTPS s ověřováním
+
+DNS-over-HTTPS s ověřováním poskytuje přihlašovací jméno a heslo pro připojení k serveru. To může omezit přístup neoprávněných uživatelů a zvýšit bezpečnost.
+
+Chcete-li tuto funkci povolit, přejděte do *Nastavení serveru* → *Zařízení* → *Nastavení* a změňte DNS server na jeden s ověřováním. Výběrem možnosti *Zamítnout jiné protokoly* zakážete používání alternativních protokolů, čímž zajistíte výhradní ověřování DNS-over-HTTPS a zablokujete přístup třetích stran.
+
+![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
 ## Pokročilé
 
 Zde můžete nastavit způsob, jakým má AdGuard DNS reagovat na blokované domény:

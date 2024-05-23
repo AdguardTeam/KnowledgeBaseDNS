@@ -146,6 +146,14 @@ Voor gevallen waarin vooraf geïnstalleerde blokkeerlijsten met duizenden regels
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
+### DNS-over-HTTPS met authenticatie
+
+DNS-over-HTTPS met authenticatie biedt een aanmelding en wachtwoord om verbinding te maken met de server. Dit kan de toegang voor ongeautoriseerde gebruikers beperken en de veiligheid vergroten.
+
+Om deze functie in te schakelen, ga naar *Serverinstellingen* → *Apparaten* → *Instellingen* en verander de DNS-server naar degene met authenticatie. Selecteer *Andere protocollen weigeren* om het gebruik van alternatieve protocollen uit te schakelen, exclusieve DNS-over-HTTPS-authenticatie te garanderen en toegang van derden te blokkeren.
+
+![DNS-over-HTTPS met authenticatie](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
 ## Advanced
 
 Here you can set the way AdGuard DNS must respond to blocked domains:
