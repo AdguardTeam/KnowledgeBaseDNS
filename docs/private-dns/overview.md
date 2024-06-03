@@ -175,7 +175,7 @@ In the Advanced section, there are three options that can be customized:
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
-- Allowed clients. Specify which clients are permitted to use your DNS server. Please that allowed clients are not counted in added access rules, only disallowed clients and domains
+- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
 
 ![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
