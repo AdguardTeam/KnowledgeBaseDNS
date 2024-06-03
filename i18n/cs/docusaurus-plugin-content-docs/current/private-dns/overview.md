@@ -175,8 +175,17 @@ V sekci Pokročilé jsou tři možnosti, které lze přizpůsobit:
 
 Zde můžete spravovat přístup k DNS serveru pomocí následujících nastavení:
 
-- Povolení klienti. Určete, kteří klienti mohou používat váš DNS server
+- Povolení klienti. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+
+![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+
 - Blokovaní klienti. Seznam klientů, kterým je zakázáno používat váš DNS server
 - Blokované domény. Zadejte názvy domén, kterým bude odepřen přístup k DNS serveru. Zde lze také uvést zástupné znaky a pravidla DNS filtrování
+
+:::note
+
+If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+
+:::
 
 Nastavením těchto možností můžete kontrolovat, kdo používá váš DNS server, a zabránit případným útokům DDoS. Požadavky, které nejsou povoleny, se nezobrazí v protokolu dotazů a nejsou účtovány.
