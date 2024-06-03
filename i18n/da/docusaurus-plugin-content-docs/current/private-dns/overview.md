@@ -175,8 +175,17 @@ I afsnittet Avanceret findes tre muligheder, som kan tilpasses:
 
 Her kan adgangsmulighed til DNS-serveren håndteres via opsætning af flg. indstillinger:
 
-- Tilladte klienter. Angiv klienter med tilladelse til at bruge DNS-serveren
+- Tilladte klienter. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+
+![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+
 - Ikke-tilladte klienter. Angiv klienter, som nægtes brug af DNS-serveren
 - Ikke-tilladte domæner. Angiv domænenavne, som nægtes adgang til DNS-serveren. Jokertegn og DNS-filtreringsregler kan også angives her
+
+:::note
+
+If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+
+:::
 
 Ved at opsætte disse muligheder kan man styre, hvem som bruger DNS-serveren og forhindre potentielle DDoS-angreb. Ikke-tilladte forespørgsler vises ikke i Forespørgselslog, og de er gratis.
