@@ -454,15 +454,15 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://doh.mullvad.net/dns-query`          | [Add to AdGuard](adguard:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net) |
-| DNS-over-TLS   | `tls://doh.mullvad.net`           | [Add to AdGuard](adguard:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net) |
+| DNS-over-HTTPS | `https://dns.mullvad.net/dns-query`          | [Add to AdGuard](adguard:add_dns_server?address=https://dns.mullvad.net/dns-query&name=dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.mullvad.net/dns-query&name=dns.mullvad.net) |
+| DNS-over-TLS   | `tls://dns.mullvad.net`           | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.mullvad.net&name=dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.mullvad.net&name=dns.mullvad.net) |
 
 #### Ad blocking
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query`          | [Add to AdGuard](adguard:add_dns_server?address=https://adblock.doh.mullvad.net/dns-query&name=adblock.doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.doh.mullvad.net/dns-query&name=adblock.doh.mullvad.net) |
-| DNS-over-TLS   | `tls://adblock.doh.mullvad.net`           | [Add to AdGuard](adguard:add_dns_server?address=tls://adblock.doh.mullvad.net&name=adblock.doh.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.doh.mullvad.net&name=adblock.doh.mullvad.net) |
+| DNS-over-HTTPS | `https://adblock.dns.mullvad.net/dns-query`          | [Add to AdGuard](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://adblock.dns.mullvad.net`           | [Add to AdGuard](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net) |
 
 ### Nawala Childprotection DNS
 
