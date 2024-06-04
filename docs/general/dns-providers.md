@@ -387,7 +387,7 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | DNS, IPv4      | `185.222.222.222` and `45.11.45.11`                | [Add to AdGuard](adguard:add_dns_server?address=185.222.222.222&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.222.222.222&name=) |
 | DNS, IPv6      | `2a09::` and `2a11::`                              | [Add to AdGuard](adguard:add_dns_server?address=2a09::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a09::&name=) |
 | DNS-over-HTTPS | `https://doh.dns.sb/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.dns.sb/dns-query&name=doh.dns.sb), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.dns.sb/dns-query&name=doh.dns.sb) |
-| DNS-over-TLS | `tls://185.222.222.222` | [Add to AdGuard](adguard:add_dns_server?address=tls://185.222.222.222&name=185.222.222.222), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://185.222.222.222&name=185.222.222.222) |
+| DNS-over-TLS | `tls://dot.sb` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.sb&name=dot.sb), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.sb&name=dot.sb) |
 
 ### DNSPod Public DNS+
 
