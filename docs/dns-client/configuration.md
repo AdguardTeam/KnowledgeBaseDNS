@@ -24,7 +24,7 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
     **Example:** `true`
 
-- `size`: The maximum size of the DNS results cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
     **Example:** `128MB`
 
