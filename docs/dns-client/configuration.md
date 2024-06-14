@@ -14,7 +14,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of DNS server. It has the following properties:
+The `dns` object configures the behavior of the DNS server. It has the following properties:
 
 ### `cache` {#dns-cache}
 
@@ -28,7 +28,7 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
     **Example:** `128MB`
 
-- `client_size`: The maximum size of the DNS results cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
     **Example:** `4MB`
 
@@ -48,9 +48,9 @@ The `server` object configures the handling of incoming requests. It has the fol
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolving of [upstream](#dns-upstream) servers addresses. It has the following properties:
+The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
 
-- `servers`: The list of servers to use for resolving upstream servers hostnames.
+- `servers`: The list of servers to resolve the hostnames of upstream servers.
 
     **Property example:**
 
@@ -80,7 +80,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
             **Example:** `'mycompany.local'`
 
-        - `client`: The client’s address or a subnet of the client’s address that the set of upstream servers should be used to resolve requests from. It must have no significant bits outside of the subnet mask.
+        - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
 
             **Example:** `'192.0.2.0/24'`
 
@@ -114,7 +114,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of DNS server on failures. It has the following properties:
+The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
 
 - `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
 
@@ -175,15 +175,15 @@ The `log` object configures the logging. It has the following properties:
 
     **Example:** `syslog`
 
-- `format`: Specifies format of the log entries.
+- `format`: Specifies the format of the log entries.
 
     Possible values:
 
-    - `adguard_legacy`;
-    - `default`;
-    - `json`;
-    - `jsonhybrid`;
-    - `text`.
+    - `adguard_legacy`
+    - `default`
+    - `json`
+    - `jsonhybrid`
+    - `text`
 
     **Example:** `default`
 
@@ -191,10 +191,10 @@ The `log` object configures the logging. It has the following properties:
         TODO(s.chzhen):  Add output examples.
     -->
 
-- `timestamp`: Specifies if the log entries should contain timestamp.
+- `timestamp`: Specifies whether to include a timestamp in the log entries.
 
     **Example:** `false`
 
-- `verbose`: Specifies if the log should be more informative.
+- `verbose`: Specifies whether the log should be more informative.
 
     **Example:** `false`

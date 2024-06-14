@@ -11,23 +11,23 @@ A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS 
 
 ## Quick start {#start}
 
-:::note
+:::caution
 
-AdGuard DNS Client is still in the Beta stage. Things will break and there are still bugs.
+AdGuard DNS Client is still in the Beta stage. It may be unstable.
 
 :::
 
 Supported operating systems:
 
-- Linux;
-- macOS;
-- Windows.
+- Linux
+- macOS
+- Windows
 
 Supported CPU architectures:
 
-- 64-bit ARM;
-- AMD64;
-- i386.
+- 64-bit ARM
+- AMD64
+- i386
 
 ## Getting started {#start-basic}
 
@@ -69,18 +69,18 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ## Command-line options {#opts}
 
-Any option overrides the corresponding value provided by configuration file.
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
 ### Service {#opts-service}
 
 Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`: installs AdGuard DNS Client as a service;
-- `restart`: restarts the running AdGuard DNS Client service;
-- `start`: starts the installed AdGuard DNS Client service;
-- `status`: shows the status of the installed AdGuard DNS Client service;
-- `stop`: stops the running AdGuard DNS Client;
-- `uninstall`: uninstalls AdGuard DNS Client service.
+- `install`: installs AdGuard DNS Client as a service
+- `restart`: restarts the running AdGuard DNS Client service
+- `start`: starts the installed AdGuard DNS Client service
+- `status`: shows the status of the installed AdGuard DNS Client service
+- `stop`: stops the running AdGuard DNS Client
+- `uninstall`: uninstalls AdGuard DNS Client service
 
 ### Verbose {#opts-verbose}
 
@@ -99,7 +99,7 @@ The YAML configuration file is described in the [`configuration.md`] file, and t
 
 There are a few different error codes that may appear under different error conditions:
 
-- `0`: AdGuardDNSClient successfully finished and exited, no errors.
+- `0`: Successfully finished and exited, no errors.
 
 - `1`: Internal error, most probably misconfiguration.
 
