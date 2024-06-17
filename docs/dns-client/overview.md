@@ -5,9 +5,9 @@ sidebar_position: 1
 
 ## What is AdGuard DNS Client?
 
-A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
-[AdGuard DNS]: https://adguard-dns.io
+[agdns]: https://adguard-dns.io
 
 ## Quick start {#start}
 
@@ -71,6 +71,10 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 Each option overrides the corresponding value provided by the configuration file and the environment.
 
+### Help {#opts-help}
+
+Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+
 ### Service {#opts-service}
 
 Option `-s <value>` specifies the OS service action. Possible values are:
@@ -86,21 +90,25 @@ Option `-s <value>` specifies the OS service action. Possible values are:
 
 Option `-v` enables the verbose log output.
 
+### Version {#opts-version}
+
+Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+
 ## Configuration {#conf}
 
 ### File {#conf-file}
 
-The YAML configuration file is described in the [`configuration.md`] file, and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the environment, see [`environment.md`].
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
-[`configuration.md`]: configuration.md
-[`environment.md`]:   environment.md
+[conf]: configuration.md
+[env]:  environment.md
 
 ## Exit codes {#exit-codes}
 
-There are a few different error codes that may appear under different error conditions:
+There are a few different exit codes that may appear under different error conditions:
 
 - `0`: Successfully finished and exited, no errors.
 
-- `1`: Internal error, most probably misconfiguration.
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`: Bad command-line argument or its value.
+- `2`: Bad command-line argument or value.

@@ -335,7 +335,7 @@ You should move your AdGuard Home installation or working directory to another l
 
 ## What does `Error: control/version.json` mean? {#version-error}
 
-This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running AdGuardHome with the `--no-check-update` command-line option.
+This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
 
 ## How do I update AdGuard Home manually? {#manual-update}
 
