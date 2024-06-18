@@ -175,16 +175,16 @@ In the Advanced section, there are three options that can be customized:
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
-- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+- Allowed clients. Geef aan welke clients jouw DNS-server mogen gebruiken. Houd er rekening mee dat toegestane clients niet worden meegeteld in toegevoegde toegangsregels, alleen niet-toegestane clients en domeinen
 
-![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Toegevoegde regels](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
 - Disallowed clients. List clients that are denied to use your DNS server
 - Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
 
-:::note
+:::opmerking
 
-If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+Als je DNS alleen op bepaalde AS-nummers of IP-adressen wilt gebruiken, moet je al het andere blokkeren in het veld Toegestane clients. Het is niet genoeg om alleen de benodigde nummers en adressen toe te staan in het veld *Toegestane klanten*.
 
 :::
 

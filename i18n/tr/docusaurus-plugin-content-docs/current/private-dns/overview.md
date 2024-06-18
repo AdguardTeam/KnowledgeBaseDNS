@@ -175,16 +175,16 @@ Gelişmiş bölümünde, özelleştirilebilecek üç seçenek vardır:
 
 Burada aşağıdaki ayarları yapılandırarak DNS sunucunuza erişimi yönetebilirsiniz:
 
-- İzin verilen istemciler. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+- İzin verilen istemciler. Hangi istemcilerin DNS sunucunuzu kullanmasına izin verildiğini belirtin. İzin verilen istemcilerin eklenen erişim kurallarında sayılmadığını, yalnızca izin verilmeyen istemcilerin ve alan adlarının sayıldığını lütfen unutmayın
 
-![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Eklenen kurallar](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
 - İzin verilmeyen istemciler. DNS sunucunuzu kullanması reddedilen istemcileri listeleyin
 - İzin verilmeyen alan adları. DNS sunucunuza erişimi reddedilecek alan adlarını belirtin. Joker karakterler ve DNS filtreleme kuralları da burada listelenebilir
 
 :::note Not
 
-If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+DNS'i yalnızca belirli AS numaralarında veya IP adreslerinde kullanmak istiyorsanız, İzin verilmeyen istemciler alanında diğer her şeyi engellemelisiniz. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
 
 :::
 

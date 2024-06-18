@@ -42,6 +42,12 @@ Er man sikker på, at enheden bruger AdGuard Home som standard DNS-server, men p
 
 6. Der ikke er nogen tilpassede filtreringsregler, som kan forstyrre på siden _Filtre_ → _Tilpassede filtreringsregler_.
 
+## Hvad betyder "Blokeret af CNAME eller IP" i forespørgselsloggen? {#logs}
+
+AdGuard Home tjekker både DNS-forespørgsler og DNS-svar for at forhindre en adblockunddragelsesteknik kendt som [CNAME-cloaking][cname-cloak]. Det vil sige, at hvis filtreringsreglerne indeholder et domæne, f.eks. "tracker.eksempel", og et DNS-svar for et andet domænenavn, f.eks. "blogs.eksempel", indeholder dette domænenavn blandt dets CNAME-poster, blokeres dette svar, da det reelt leder til den blokerede sporingstjeneste.
+
+[cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
+
 ## Hvor kan man se logfilerne? {#logs}
 
 Standardplaceringen af alm. tekstlogfiler (ikke at forveksle med forespørgselslogfiler) afhænger af operativsystemet og installationstilstanden:
@@ -326,6 +332,10 @@ Se \[problematik 765] og \[problematik 3281].
 ## Hvordan rettes "inkompatibelt filsystem"-fejl? {#incompatfs}
 
 AdGuard Home-installationen eller arbejdsmappen bør flyttes til en anden placering. Se [afsnittet Begrænsninger](getting-started.md#limitations) på siden _Kom godt i gang_.
+
+## Hvad betyder "Fejl: control/version.json"? {#version-error}
+
+Denne fejlmeddelelse betyder, at AdGuard Home ikke kunne nå AdGuard-serverne for at søge efter opdateringer og/eller downloade dem. Dette kan betyde, at serverne blokeres af internetudbyderen eller er midlertidigt nede. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
 
 ## Hvordan opdateres AdGuard Home manuelt? {#manual-update}
 
