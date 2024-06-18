@@ -3,6 +3,8 @@ title: Overview
 sidebar_position: 1
 ---
 
+<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
+
 ## What is AdGuard DNS Client?
 
 A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
@@ -19,15 +21,15 @@ AdGuard DNS Client is still in the Beta stage. It may be unstable.
 
 Supported operating systems:
 
-- Linux
-- macOS
-- Windows
+  - Linux
+  - macOS
+  - Windows
 
 Supported CPU architectures:
 
-- 64-bit ARM
-- AMD64
-- i386
+  - 64-bit ARM
+  - AMD64
+  - i386
 
 ## Getting started {#start-basic}
 
@@ -79,12 +81,12 @@ Option `-h` makes AdGuard DNS Client print out a help message to standard output
 
 Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`: installs AdGuard DNS Client as a service
-- `restart`: restarts the running AdGuard DNS Client service
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+  - `install`: installs AdGuard DNS Client as a service
+  - `restart`: restarts the running AdGuard DNS Client service
+  - `start`: starts the installed AdGuard DNS Client service
+  - `status`: shows the status of the installed AdGuard DNS Client service
+  - `stop`: stops the running AdGuard DNS Client
+  - `uninstall`: uninstalls AdGuard DNS Client service
 
 ### Verbose {#opts-verbose}
 
@@ -107,8 +109,8 @@ The YAML configuration file is described in [its own article][conf], and there i
 
 There are a few different exit codes that may appear under different error conditions:
 
-- `0`: Successfully finished and exited, no errors.
+  - `0`: Successfully finished and exited, no errors.
 
-- `1`: Internal error, most likely a misconfiguration.
+  - `1`: Internal error, most likely a misconfiguration.
 
-- `2`: Bad command-line argument or value.
+  - `2`: Bad command-line argument or value.

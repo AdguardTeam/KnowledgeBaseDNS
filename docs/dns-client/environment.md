@@ -3,6 +3,8 @@ title: Environment
 sidebar_position: 3
 ---
 
+<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
+
 AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]:     configuration.md
@@ -12,7 +14,7 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 The log destination, must be an absolute path to the file or one of the special values.
 
-- `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
 
     :::note
 
@@ -20,11 +22,11 @@ The log destination, must be an absolute path to the file or one of the special 
 
     :::
 
-- `stdout` for standard output stream.
+  - `stdout` for standard output stream.
 
-- `stderr` for standard error stream.
+  - `stderr` for standard error stream.
 
-- Absolute path to the log file.
+  - Absolute path to the log file.
 
     **Example:** `/home/user/logs.txt`
 
@@ -40,11 +42,11 @@ This environment variable has priority over the [log.output][conf-log] field in 
 
 The format for log entries.  Valid formats are:
 
-- `adguard_legacy`
-- `default`
-- `json`
-- `json_hybrid`
-- `text`
+  - `adguard_legacy`
+  - `default`
+  - `json`
+  - `json_hybrid`
+  - `text`
 
 <!--
     TODO(s.chzhen):  Add output examples.
