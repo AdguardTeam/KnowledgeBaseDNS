@@ -286,6 +286,22 @@ DOMAIN {
 }
 ```
 
+### Apache
+
+```apache
+<VirtualHost *:80>
+  ProxyPass "/" "http://AGH_IP:AGH_PORT/"
+  ProxyPassReverse "/" "http://AGH_IP:AGH_PORT/"
+  PreserveHost On
+</VirtualHost>
+```
+
+:::note
+
+Consider not using subdirectories with the Apache reverse HTTP proxy, as it handles relative redirects differently than other web servers. This may cause problems with the AdGuard Home web interface.
+
+:::
+
 ### Disable DoH encryption on AdGuard Home
 
 If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
