@@ -42,6 +42,12 @@ Cihazınızın varsayılan DNS sunucusu olarak AdGuard Home'u kullandığından 
 
 6. _Filtreler_ → _Özel filtreleme kuralları_ sayfasında müdahale edebilecek herhangi bir özel filtreleme kuralınız yok.
 
+## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+
+AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+
+[cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
+
 ## Günlükleri nerede görüntüleyebilirim? {#logs}
 
 Düz metin günlüklerinin (sorgu günlükleri ile karıştırılmamalıdır) varsayılan konumu işletim sistemine ve kurulum moduna bağlıdır:
@@ -326,6 +332,10 @@ Bkz. \[sorun 765] ve \[sorun 3281].
 ## `Uyumsuz dosya sistemi` hatalarını nasıl düzeltirim? {#incompatfs}
 
 AdGuard Home kurulumunuzu veya çalışma dizininizi başka bir konuma taşımalısınız. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+
+## What does `Error: control/version.json` mean? {#version-error}
+
+This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
 
 ## AdGuard Home'u elle nasıl güncelleyebilirim? {#manual-update}
 

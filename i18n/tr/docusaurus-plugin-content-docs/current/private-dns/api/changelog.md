@@ -19,7 +19,7 @@ _20 Nisan 2024 tarihinde yayınlandı_
 - Kimlik doğrulama ile DNS-over-HTTPS desteği eklendi:
   - Yeni işlem — cihaz için DNS-over-HTTPS parolasını sıfırlama
   - Yeni cihaz ayarı — `detect_doh_auth_only`. Kimlik doğrulamalı DNS-over-HTTPS dışındaki tüm DNS bağlantı yöntemlerini devre dışı bırakır
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Kimlik doğrulamayla DNS-over-HTTPS kullanarak bağlanırken kullanılacak URL'yi belirtir
 
 ## v1.7
 

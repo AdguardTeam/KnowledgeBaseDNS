@@ -34,5 +34,9 @@
   "sidebar.sidebar.category.AdGuard Home": {
     "message": "AdGuard Home",
     "description": "The label for category AdGuard Home in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.AdGuard DNS Client": {
+    "message": "AdGuard DNS Client",
+    "description": "The label for category AdGuard DNS Client in sidebar sidebar"
   }
 }

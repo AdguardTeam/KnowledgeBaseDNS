@@ -42,6 +42,12 @@ sidebar_position: 3
 
 6. У вас нет пользовательских правил фильтрации, которые могли бы мешать настройкам на странице _Фильтры_ → _Пользовательские правила фильтрации_.
 
+## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+
+AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+
+[cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
+
 ## Где просмотреть логи? {#logs}
 
 Дефолтное расположение текстовых логов (не путайте их с теми, что в Журнале запросов) зависит от операционной системы и режима установки:
@@ -326,6 +332,10 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 ## Как исправить ошибки `incompatible file system`? {#incompatfs}
 
 Переместите установку или рабочую директорию AdGuard Home в другое место. Вся необходимая информация есть в разделе [_Ограничения_](getting-started.md#limitations) на странице _Начало работы_.
+
+## What does `Error: control/version.json` mean? {#version-error}
+
+This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
 
 ## Как обновить AdGuard Home вручную? {#manual-update}
 
