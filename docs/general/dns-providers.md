@@ -1129,3 +1129,14 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | DNS, IPv4 | `45.76.113.31` | [Add to AdGuard](adguard:add_dns_server?address=45.76.113.31&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=45.76.113.31&name=) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31`| [Add to AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
 | DNS-over-TLS | `tls://dot.seby.io` | [Add to AdGuard](adguard:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io) |
+
+### DNS VietNam
+
+[BlackMagicc DNS](https://bento.me/blackmagicc) a public DNS Server, ad blocking, security, adult content filter, DNSSEC validation.
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS, IPv4 | `103.178.234.160` | [Add to AdGuard](adguard:add_dns_server?address=103.178.234.160&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.178.234.160&name=) |
+| DNS, IPv6 | `2405:19c0:2:ea2e::1` | [Add to AdGuard](adguard:add_dns_server?address=2405:19c0:2:ea2e::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2405:19c0:2:ea2e::1&name=) |
+| DNS-over-HTTPS | `https://robin.techomespace.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://robin.techomespace.com/dns-query&name=blackmagiccdns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://robin.techomespace.com/dns-query&name=blackmagiccdns) |
+| DNS-over-TLS | `tls://robin.techomespace.com:853` | [Add to AdGuard](adguard:add_dns_server?address=tls://robin.techomespace.com:853&name=blackmagiccdns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://robin.techomespace.com:853&name=blackmagiccdns) |
