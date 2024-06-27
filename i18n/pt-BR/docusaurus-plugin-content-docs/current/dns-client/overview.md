@@ -37,6 +37,12 @@ Supported CPU architectures:
 
 1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
+   :::caution
+
+   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+
+   :::
+
 2. Install it as a service by running:
 
    ```sh
@@ -57,6 +63,7 @@ To check that it works, use any DNS checking utility. For example, using `nslook
 nslookup -debug 'www.example.com' '127.0.0.1'
 ```
 
+[launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
 [releases]: https://github.com/AdguardTeam/AdGuardDNSClient/releases
 
 ### Windows {#start-basic-win}

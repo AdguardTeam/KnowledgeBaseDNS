@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ### Officielle udgivelser
 
-Download the archive with the binary file for your operating system from the [latest stable release page][releases]. The full list of supported platforms as well as links to beta and edge (unstable) releases can be found on [our platforms page][platforms].
+Hent arkivet med den binære fil til operativsystemet fra [siden med seneste stabile udgivelse][releases]. Den fulde liste over understøttede platforme samt links til beta- og edge-udgaver (ustabile) kan findes på [vores platformsside][platforms].
 
 For at installere AdGuard Home som en tjeneste, udpak arkivet, gå til mappen 'AdGuardHome' og eksekvér:
 
