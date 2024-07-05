@@ -14,7 +14,7 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-This environment variable has priority over the [`log.output`][conf-log] field in the configuration file.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -24,7 +24,7 @@ This environment variable has priority over the [`log.output`][conf-log] field i
 
 The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-This environment variable has priority over the [`log.format`][conf-log] field in the configuration file.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -32,7 +32,7 @@ This environment variable has priority over the [`log.format`][conf-log] field i
 
 When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-This environment variable has priority over the [`log.timestamp`][conf-log] field in the configuration file.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -40,6 +40,6 @@ This environment variable has priority over the [`log.timestamp`][conf-log] fiel
 
 When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-This environment variable has priority over the [`log.verbose`][conf-log] field in the configuration file.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
