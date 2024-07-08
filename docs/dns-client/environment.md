@@ -12,27 +12,9 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
-
-    :::note
-
-    Log entries written to the system log are in text format and use the system timestamp.
-
-    :::
-
-  - `stdout` for standard output stream.
-
-  - `stderr` for standard error stream.
-
-  - Absolute path to the log file.
-
-    **Example:** `/home/user/logs.txt`
-
-    **Example:** `C:\Users\user\logs.txt`
-
-This environment variable has priority over the [log.output][conf-log] field in the configuration file.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -40,19 +22,9 @@ This environment variable has priority over the [log.output][conf-log] field in 
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries.  Valid formats are:
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-  - `adguard_legacy`
-  - `default`
-  - `json`
-  - `json_hybrid`
-  - `text`
-
-<!--
-    TODO(s.chzhen):  Add output examples.
--->
-
-This environment variable has priority over the [log.format][conf-log] field in the configuration file.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -60,7 +32,7 @@ This environment variable has priority over the [log.format][conf-log] field in 
 
 When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-This environment variable has priority over the [log.timestamp][conf-log] field in the configuration file.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -68,6 +40,6 @@ This environment variable has priority over the [log.timestamp][conf-log] field 
 
 When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-This environment variable has priority over the [log.verbose][conf-log] field in the configuration file.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
