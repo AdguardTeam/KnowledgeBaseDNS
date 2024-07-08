@@ -577,6 +577,6 @@ Web hizmetlerini listeler
 
 ##### Yanıtlar
 
-| Kod | Açıklama             |
-| --- | -------------------- |
-| 200 | List of web-services |
+| Kod | Açıklama                  |
+| --- | ------------------------- |
+| 200 | Web hizmetlerinin listesi |

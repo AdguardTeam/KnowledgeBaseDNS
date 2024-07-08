@@ -317,7 +317,7 @@
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Main",
+    "message": "Ana",
     "description": "The ARIA label for the main navigation"
   },
   "theme.docs.sidebar.navAriaLabel": {

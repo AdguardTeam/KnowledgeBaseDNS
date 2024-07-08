@@ -184,7 +184,7 @@ Burada aşağıdaki ayarları yapılandırarak DNS sunucunuza erişimi yönetebi
 
 :::note Not
 
-DNS'i yalnızca belirli AS numaralarında veya IP adreslerinde kullanmak istiyorsanız, İzin verilmeyen istemciler alanında diğer her şeyi engellemelisiniz. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+DNS'i yalnızca belirli AS numaralarında veya IP adreslerinde kullanmak istiyorsanız, İzin verilmeyen istemciler alanında diğer her şeyi engellemelisiniz. *İzin verilen istemciler* alanında yalnızca gerekli sayılara ve adreslere izin vermek yeterli olmayacaktır.
 
 :::
 

@@ -286,6 +286,24 @@ DOMAIN {
 }
 ```
 
+### Apache
+
+```apache
+<VirtualHost *:80>
+  ProxyPass "/" "http://AGH_IP:AGH_PORT/"
+  ProxyPassReverse "/" "http://AGH_IP:AGH_PORT/"
+  PreserveHost On
+</VirtualHost>
+```
+
+:::note
+
+Geen submappen gebruiken met de Apache reverse HTTP-proxy.  Het is een bekend probleem ([#6604]) dat Apache relatieve omleidingen anders behandelt dan andere webservers. Dit veroorzaakt problemen met de AdGuard Home-webinterface.
+
+[#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
+
+:::
+
 ### Disable DoH encryption on AdGuard Home
 
 If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.

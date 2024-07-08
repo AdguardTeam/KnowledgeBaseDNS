@@ -1,73 +1,45 @@
 ---
-title: Environment
+title: Miljø
 sidebar_position: 3
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
+AdGuard DNS Client bruger [miljøvariabler][wiki-env] til at gemme en del af opsætningen. Den øvrige opsætning er gemt i [opsætningsfilen][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-- `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
-  :::note
-
-  Log entries written to the system log are in text format and use the system timestamp.
-
-  :::
-
-- `stdout` for standard output stream.
-
-- `stderr` for standard error stream.
-
-- Absolute path to the log file.
-
-  **Example:** `/home/user/logs.txt`
-
-  **Example:** `C:\Users\user\logs.txt`
-
-This environment variable has priority over the [log.output][conf-log] field in the configuration file.
-
-**Default:** **Unset.**
+**Standard:** **Ikke opsat.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries.  Valid formats are:
+Formatet på logposter. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-- `adguard_legacy`
-- `default`
-- `json`
-- `json_hybrid`
-- `text`
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
-<!--
-    TODO(s.chzhen):  Add output examples.
--->
-
-This environment variable has priority over the [log.format][conf-log] field in the configuration file.
-
-**Default:** **Unset.**
+**Standard:** **Ikke opsat.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
+Når sat til `1`, har logposter et tidsstempel. Når sat til `0`, har logposter ingen.
 
-This environment variable has priority over the [log.timestamp][conf-log] field in the configuration file.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
-**Default:** **Unset.**
+**Standard:** **Ikke opsat.**
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+Når sat til `1`, detaljeret logning slået til. Når sat til `1`, detaljeret logning slået fra.
 
-This environment variable has priority over the [log.verbose][conf-log] field in the configuration file.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
-**Default:** **Unset.**
+**Standard:** **Ikke opsat.**

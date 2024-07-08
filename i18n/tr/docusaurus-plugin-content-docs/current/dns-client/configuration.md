@@ -16,31 +16,31 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of the DNS server. It has the following properties:
+`dns` nesnesi DNS sunucusunun davranışını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. It has the following properties:
+The `cache` object configures caching the results of querying DNS. Aşağıdaki özelliklere sahiptir:
 
 - `enabled`: Whether or not the DNS results should be cached.
 
-  **Example:** `true`
+  **Örnek:** `true`
 
 - `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-  **Example:** `128MB`
+  **Örnek:** `128MB`
 
-- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. It must be greater than zero if `enabled` is `true`.
 
-  **Example:** `4MB`
+  **Örnek:** `4MB`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. It has the following properties:
+The `server` object configures the handling of incoming requests. Aşağıdaki özelliklere sahiptir:
 
 - `listen_addresses`: The set of addresses with ports to listen on.
 
-  **Property example:**
+  **Özellik örneği:**
 
   ```yaml
   'listen_addresses':
@@ -50,11 +50,11 @@ The `server` object configures the handling of incoming requests. It has the fol
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
+The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. Aşağıdaki özelliklere sahiptir:
 
 - `servers`: The list of servers to resolve the hostnames of upstream servers.
 
-  **Property example:**
+  **Özellik örneği:**
 
   ```yaml
   'servers':
@@ -64,11 +64,11 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 - `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
 
-  **Example:** `2s`
+  **Örnek:** `2s`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. It has the following properties:
+The `upstream` object configures the actual resolving of requests. Aşağıdaki özelliklere sahiptir:
 
 - `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
 
@@ -88,11 +88,11 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
     :::note Not
 
-    Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+    Properties specified within a single entry are combined with a logical AND. Girişler mantıksal bir VEYA ile birleştirilir.
 
     :::
 
-    **Property example:**
+    **Özellik örneği:**
 
     ```yaml
     'match':
@@ -112,15 +112,15 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
 - `timeout`: The timeout for upstream DNS requests as a human-readable duration.
 
-  **Example:** `2s`
+  **Örnek:** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
+The `fallback` object configures the behavior of the DNS server in case of failure. Aşağıdaki özelliklere sahiptir:
 
 - `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
 
-  **Property example:**
+  **Özellik örneği:**
 
   ```yaml
   'servers':
@@ -129,29 +129,29 @@ The `fallback` object configures the behavior of the DNS server in case of failu
 
 - `timeout`: The timeout for fallback DNS requests as a human-readable duration.
 
-  **Example:** `2s`
+  **Örnek:** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. It has the following properties:
+The `debug` object configures the debugging features. Aşağıdaki özelliklere sahiptir:
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
+The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıdaki özelliklere sahiptir:
 
 - `port`: The port to listen on for debug HTTP requests on localhost.
 
-  **Example:** `6060`
+  **Örnek:** `6060`
 
 - `enabled`: Whether or not the debug profiling is enabled.
 
-  **Example:** `true`
+  **Örnek:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+`log` nesnesi günlüğe kaydını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 - `output`: The output to which logs are written.
 
@@ -161,7 +161,7 @@ The `log` object configures the logging. It has the following properties:
 
   :::
 
-  Possible values:
+  Olası değerler:
 
   - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
 
@@ -171,32 +171,46 @@ The `log` object configures the logging. It has the following properties:
 
   - Absolute path to the log file.
 
-  **Example:** `/home/user/logs`
+  **Örnek:** `/home/user/logs`
 
-  **Example:** `C:\Users\user\logs.txt`
+  **Örnek:** `C:\Kullanıcılar\kullanıcı\logs.txt`
 
-  **Example:** `syslog`
+  **Örnek:** `syslog`
 
-- `format`: Specifies the format of the log entries.
+- `format`: Günlük girdilerinin biçimini belirtir.
 
-  Possible values:
+  Olası değerler:
 
-  - `adguard_legacy`
-  - `default`
-  - `json`
-  - `jsonhybrid`
-  - `text`
+  - `default`: A simple format. Örnek:
 
-  **Example:** `default`
+    ```none
+    INFO service started prefix=program addr=127.0.0.1:53
+    ```
 
-  <!--
-      TODO(s.chzhen):  Add output examples.
-  -->
+  - `json`: A structured JSON format. Örnek:
 
-- `timestamp`: Specifies whether to include a timestamp in the log entries.
+    ```json
+    {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
+    ```
 
-  **Example:** `false`
+  - `jsonhybrid`: Same as `json` but with a limited number of fields. Örnek:
+
+    ```json
+    {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
+    ```
+
+  - `text`: A structured text format. Örnek:
+
+    ```none
+    level=INFO msg="service started" prefix=program addr=127.0.0.1:53
+    ```
+
+  **Örnek:** `default`
+
+- `timestamp`: Günlük girdilerine bir zaman damgası eklenip eklenmeyeceğini belirtir.
+
+  **Örnek:** `false`
 
 - `verbose`: Specifies whether the log should be more informative.
 
-  **Example:** `false`
+  **Örnek:** `false`
