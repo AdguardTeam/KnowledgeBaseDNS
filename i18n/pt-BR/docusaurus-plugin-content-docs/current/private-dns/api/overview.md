@@ -93,7 +93,7 @@ Para revogar um token de atualização, faça a seguinte solicitação POST com 
 #### Exemplo de Solicitação
 
 ```bash
-$ curl 'https://api.adguard-dns.com/oapi/v1/revoke_token' -i -X POST \
+$ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 

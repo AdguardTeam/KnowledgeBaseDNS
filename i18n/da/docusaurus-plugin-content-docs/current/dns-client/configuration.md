@@ -181,25 +181,25 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   Gyldige værdier:
 
-  - `default`: A simple format. Eksempel:
+  - `standard`: Et simpelt format. Eksempel:
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. Eksempel:
+  - `json`: Et struktureret JSON-format. Eksempel:
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Eksempel:
+  - `jsonhybrid`: Samme som `json`, men med et begrænset antal felter. Eksempel:
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Eksempel:
+  - `text`: Et struktureret tekstformat. Eksempel:
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53

@@ -540,7 +540,7 @@ Disse servere blokerer uønsket og tidsspildende indhold samt inkluderer funktio
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS opløsere med blokering: Annoncer, sporing, adware, malware, ondsindede aktiviteter og phishing-virksomheder. Blokerer ~1M domæner. Har 24/48 timers logfiler til imødegåelse af DDoS/oversvømmelsesangreb.
+[OpenBLD.net DNS](https://openbld.net/) — Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Har 24/48 timers logfiler til imødegåelse af DDoS/oversvømmelsesangreb.
 
 #### Adaptiv filtrering (ADA)
 
@@ -553,7 +553,7 @@ Anbefales til de fleste brugere, meget fleksibel filtrering med blokering af de 
 
 #### Stringent filtrering (RIC)
 
-Mere strikse filtreringspolitikker med blokering af reklame-, marketing-, tracking-, malware-, clickbait-, Coinhive- og phishing-domæner.
+More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
 
 | Protokol       | Adresse                             |                                                                               |
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
@@ -705,7 +705,7 @@ I tilstanden "Private", kun DNS-opløsning.
 | DNS, IPv4              | `149.112.121.10` og `149.112.122.10`                                                                | [Føj til AdGuard](adguard:add_dns_server?address=149.112.121.10&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=149.112.121.10&name=)                                                                                                                                 |
 | DNS, IPv6              | `2620:10A:80BB::10` og `2620:10A:80BC::10`                                                          | [Føj til AdGuard](adguard:add_dns_server?address=2620:10A:80BB::10&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2620:10A:80BB::10&name=)                                                                                                                           |
 | DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
-| DNS-over-TLS - Private | Værtsnavn: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` og IPv6: `2620:10A:80BB::10` | [Føj til AdGuard](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Private | Værtsnavn: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` og IPv6: `2620:10A:80BB::10` | [Føj til AdGuard](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
 #### Beskyttet
 
@@ -716,7 +716,7 @@ I tilstanden "Protected", malware- og phishing-beskyttelse.
 | DNS, IPv4                | `149.112.121.20` og `149.112.122.20`                                                                  | [Føj til AdGuard](adguard:add_dns_server?address=149.112.121.20&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=149.112.121.20&name=)                                                                                                                                         |
 | DNS, IPv6                | `2620:10A:80BB::20` og `2620:10A:80BC::20`                                                            | [Føj til AdGuard](adguard:add_dns_server?address=2620:10A:80BB::20&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2620:10A:80BB::20&name=)                                                                                                                                   |
 | DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](adguard:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca) |
-| DNS-over-TLS - Beskyttet | Værtsnavn: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` og IPv6: `2620:10A:80BB::20` | [Føj til AdGuard](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Protected | Værtsnavn: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` og IPv6: `2620:10A:80BB::20` | [Føj til AdGuard](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
 
 #### Family
 
@@ -727,7 +727,7 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 | DNS, IPv4             | `149.112.121.30` og `149.112.122.30`                                                               | [Føj til AdGuard](adguard:add_dns_server?address=149.112.121.30&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=149.112.121.30&name=)                                                                                                                             |
 | DNS, IPv6             | `2620:10A:80BB::30` og `2620:10A:80BC::30`                                                         | [Føj til AdGuard](adguard:add_dns_server?address=2620:10A:80BB::30&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2620:10A:80BB::30&name=)                                                                                                                       |
 | DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](adguard:add_dns_server?address=https://family.canadianshield.cira.ca/dns-query&name=family.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://family.canadianshield.cira.ca/dns-query&name=family.canadianshield.cira.ca) |
-| DNS-over-TLS - Family | Værtsnavn: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` og IPv6: `2620:10A:80BB::30` | [Føj til AdGuard](adguard:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Family | Værtsnavn: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` og IPv6: `2620:10A:80BB::30` | [Føj til AdGuard](adguard:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca)                         |
 
 ### Comss.one DNS
 

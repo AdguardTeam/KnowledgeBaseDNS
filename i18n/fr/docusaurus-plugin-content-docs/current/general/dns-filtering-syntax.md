@@ -125,7 +125,7 @@ Vous pouvez modifier le comportement d'une règle en ajoutant des modificateurs.
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` est le modèle correspondant. `$` est le délimiteur, qui signale que le reste de la règle sont des modificateurs. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`, is the delimiter. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
+  `||example.org^` est le modèle correspondant. `$` est le délimiteur, qui signale que le reste de la règle sont des modificateurs. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
 **ATTENTION :** Si une règle contient un modificateur non répertorié dans ce document, toute la règle **doit être ignorée**. De cette façon, nous évitons les faux positifs lorsque les gens essaient d'utiliser les listes de filtres des bloqueurs de publicités de navigateur non modifiés comme EasyList ou EasyPrivacy.
 

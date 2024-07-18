@@ -148,7 +148,7 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
   ```
 
 
-`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is de modifier [`client`][] met de waarde `127.0.0.1`als scheidingsteken. En tenslotte is `dnstype=A` de [`dnstype`][] modifier met zijn waarde `A`.
+`||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is de [`client`][] modifier met de waarde `127,0. 0,1`. `,` is het scheidingsteken tussen modifiers. En tenslotte is `dnstype=A` de [`dnstype`][] modifier met zijn waarde `A`.
 
 **NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
 

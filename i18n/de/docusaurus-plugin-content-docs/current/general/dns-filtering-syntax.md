@@ -125,7 +125,7 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`][] Modifikator mit seinem Wert, `127.0.0.1`, ist das Trennzeichen. Und schließlich ist `dnstype=A` der Modifikator [`dnstype`][] mit seinem Wert `A`.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. Und schließlich ist `dnstype=A` der Modifikator [`dnstype`][] mit seinem Wert `A`.
 
 **Hinweis:** Wenn eine Regel einen Modifikator enthält, der nicht in diesem Dokument aufgeführt ist, wird die gesamte Regel **nicht berücksichtigt**. Auf diese Weise vermeiden wir fehlerhafte Ergebnisse, wenn Nutzer:innen versuchen, die Filterlisten von unveränderten Werbeblockern wie „EasyList” oder „EasyPrivacy” zu verwenden.
 

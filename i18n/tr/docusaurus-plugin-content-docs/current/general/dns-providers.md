@@ -540,7 +540,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) - Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. DDoS/Flood saldırılarının azaltılması için 24 veya 48 saat günlüklere sahiptir.
+[OpenBLD.net DNS](https://openbld.net/) — Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. DDoS/Flood saldırılarının azaltılması için 24 veya 48 saat günlüklere sahiptir.
 
 #### Adaptive Filtering (ADA)
 
@@ -553,7 +553,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 #### Strict Filtering (RIC)
 
-Engelleme ile daha sıkı filtreleme politikaları - reklamlar, pazarlama, izleme, kötü amaçlı yazılım, tıklama tuzağı, coinhive ve kimlik avı alan adları.
+More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
 
 | Protokol       | Adres                               |                                                                              |
 | -------------- | ----------------------------------- | ---------------------------------------------------------------------------- |
@@ -705,7 +705,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | DNS, IPv4              | `149.112.121.10` ve `149.112.122.10`                                                                     | [AdGuard'a ekle](adguard:add_dns_server?address=149.112.121.10&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=149.112.121.10&name=)                                                                                                                                 |
 | DNS, IPv6              | `2620:10A:80BB::10` ve `2620:10A:80BC::10`                                                               | [AdGuard'a ekle](adguard:add_dns_server?address=2620:10A:80BB::10&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2620:10A:80BB::10&name=)                                                                                                                           |
 | DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                       | [AdGuard'a ekle](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
-| DNS-over-TLS - Private | Ana makine adı: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` ve IPv6: `2620:10A:80BB::10` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Private | Ana makine adı: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` ve IPv6: `2620:10A:80BB::10` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
 #### Protected
 
@@ -716,7 +716,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | DNS, IPv4                | `149.112.121.20` ve `149.112.122.20`                                                                       | [AdGuard'a ekle](adguard:add_dns_server?address=149.112.121.20&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=149.112.121.20&name=)                                                                                                                                         |
 | DNS, IPv6                | `2620:10A:80BB::20` ve `2620:10A:80BC::20`                                                                 | [AdGuard'a ekle](adguard:add_dns_server?address=2620:10A:80BB::20&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2620:10A:80BB::20&name=)                                                                                                                                   |
 | DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                       | [AdGuard'a ekle](adguard:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca) |
-| DNS-over-TLS - Protected | Ana makine adı: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` ve IPv6: `2620:10A:80BB::20` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Protected | Ana makine adı: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` ve IPv6: `2620:10A:80BB::20` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
 
 #### Family
 
@@ -727,7 +727,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 | DNS, IPv4             | `149.112.121.30` ve `149.112.122.30`                                                                    | [AdGuard'a ekle](adguard:add_dns_server?address=149.112.121.30&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=149.112.121.30&name=)                                                                                                                             |
 | DNS, IPv6             | `2620:10A:80BB::30` ve `2620:10A:80BC::30`                                                              | [AdGuard'a ekle](adguard:add_dns_server?address=2620:10A:80BB::30&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2620:10A:80BB::30&name=)                                                                                                                       |
 | DNS-over-HTTPS        | `https://family.canadianshield.cira.ca/dns-query`                                                       | [AdGuard'a ekle](adguard:add_dns_server?address=https://family.canadianshield.cira.ca/dns-query&name=family.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://family.canadianshield.cira.ca/dns-query&name=family.canadianshield.cira.ca) |
-| DNS-over-TLS - Family | Ana makine adı: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` ve IPv6: `2620:10A:80BB::30` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca)                         |
+| DNS-over-TLS — Family | Ana makine adı: `tls://family.canadianshield.cira.ca` IP: `149.112.121.30` ve IPv6: `2620:10A:80BB::30` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://family.canadianshield.cira.ca&name=family.canadianshield.cira.ca)                         |
 
 ### Comss.one DNS
 
