@@ -1,11 +1,11 @@
 ---
-title: Available plans
+title: How to purchase, upgrade, or get a refund
 sidebar_position: 4
 ---
 
 ## How to purchase a plan {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.com](https://adguard-dns.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
+AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
 
 The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
 
@@ -22,7 +22,7 @@ The *Enterprise* plan is available by request only. If you're interested, please
 
 ## How to get a refund {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/eula.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.com/. To get a refund, you need to contact support at support@adguard.com, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard.com, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
 
 A refund may be declined if:
 

@@ -82,13 +82,13 @@ Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
     - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.io`.
 
     - **Hashes**:
     Execute the command
 
     ```bash
-    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
+    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.io 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
     The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8`
