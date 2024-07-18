@@ -15,8 +15,8 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 ## v1.9 (11 July 2024)
 
 - Added automatic device connection functionality:
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
-  - New field in Device — `auto_device`, indicating that the device is automatically connected
+    - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
+    New field in Device — `auto_device`, indicating that the device is automatically connected
 - Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
 
 ## v1.8

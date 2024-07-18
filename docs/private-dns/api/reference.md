@@ -18,7 +18,8 @@ This article contains documentation for [AdGuard DNS API](private-dns/api/overvi
 ### /oapi/v1/account/limits
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets account limits
 
@@ -31,7 +32,8 @@ Gets account limits
 ### /oapi/v1/dedicated_addresses/ipv4
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Lists allocated dedicated IPv4 addresses
 
@@ -42,7 +44,8 @@ Lists allocated dedicated IPv4 addresses
 | 200  | List of dedicated IPv4 addresses |
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Allocates new dedicated IPv4
 
@@ -56,7 +59,8 @@ Allocates new dedicated IPv4
 ### /oapi/v1/devices
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Lists devices
 
@@ -67,7 +71,8 @@ Lists devices
 | 200  | List of devices |
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Creates a new device
 
@@ -82,7 +87,8 @@ Creates a new device
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
-##### Summary:
+
+##### Summary
 
 Removes a device
 
@@ -100,7 +106,8 @@ Removes a device
 | 404  | Device not found |
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets an existing device by ID
 
@@ -118,7 +125,8 @@ Gets an existing device by ID
 | 404  | Device not found |
 
 #### PUT
-##### Summary:
+
+##### Summary
 
 Updates an existing device
 
@@ -139,7 +147,8 @@ Updates an existing device
 ### /oapi/v1/devices/{device_id}/dedicated_addresses
 
 #### GET
-##### Summary:
+
+##### Summary
 
 List dedicated IPv4 and IPv6 addresses for a device
 
@@ -158,7 +167,8 @@ List dedicated IPv4 and IPv6 addresses for a device
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### DELETE
-##### Summary:
+
+##### Summary
 
 Unlink dedicated IPv4 from the device
 
@@ -176,7 +186,8 @@ Unlink dedicated IPv4 from the device
 | 404  | Device or address not found                          |
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Link dedicated IPv4 to the device
 
@@ -198,7 +209,8 @@ Link dedicated IPv4 to the device
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets DNS-over-HTTPS .mobileconfig file.
 
@@ -220,7 +232,8 @@ Gets DNS-over-HTTPS .mobileconfig file.
 ### /oapi/v1/devices/{device_id}/doh_password/reset
 
 #### PUT
-##### Summary:
+
+##### Summary
 
 Generate and set new DNS-over-HTTPS password
 
@@ -240,7 +253,8 @@ Generate and set new DNS-over-HTTPS password
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets DNS-over-TLS .mobileconfig file.
 
@@ -262,7 +276,8 @@ Gets DNS-over-TLS .mobileconfig file.
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
-##### Summary:
+
+##### Summary
 
 Updates device settings
 
@@ -283,11 +298,12 @@ Updates device settings
 ### /oapi/v1/dns_servers
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Lists DNS servers that belong to the user.
 
-##### Description:
+##### Description
 
 Lists DNS servers that belong to the user. By default there is at least one default server.
 
@@ -298,11 +314,12 @@ Lists DNS servers that belong to the user. By default there is at least one defa
 | 200  | List of DNS servers |
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Creates a new DNS server
 
-##### Description:
+##### Description
 
 Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
@@ -317,11 +334,12 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
-##### Summary:
+
+##### Summary
 
 Removes a DNS server
 
-##### Description:
+##### Description
 
 Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
@@ -339,7 +357,8 @@ Removes a DNS server. All devices attached to this DNS server will be moved to t
 | 404  | DNS server not found |
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets an existing DNS server by ID
 
@@ -357,7 +376,8 @@ Gets an existing DNS server by ID
 | 404  | DNS server not found |
 
 #### PUT
-##### Summary:
+
+##### Summary
 
 Updates an existing DNS server
 
@@ -378,7 +398,8 @@ Updates an existing DNS server
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
-##### Summary:
+
+##### Summary
 
 Updates DNS server settings
 
@@ -399,7 +420,8 @@ Updates DNS server settings
 ### /oapi/v1/filter_lists
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets filter lists
 
@@ -412,7 +434,8 @@ Gets filter lists
 ### /oapi/v1/oauth_token
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Generates Access and Refresh token
 
@@ -429,7 +452,8 @@ null
 ### /oapi/v1/query_log
 
 #### DELETE
-##### Summary:
+
+##### Summary
 
 Clears query log
 
@@ -440,7 +464,8 @@ Clears query log
 | 202  | Query log was cleared |
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets query log
 
@@ -468,7 +493,8 @@ Gets query log
 ### /oapi/v1/revoke_token
 
 #### POST
-##### Summary:
+
+##### Summary
 
 Revokes a Refresh Token
 
@@ -489,7 +515,8 @@ null
 ### /oapi/v1/stats/categories
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets categories statistics
 
@@ -512,7 +539,8 @@ Gets categories statistics
 ### /oapi/v1/stats/companies
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets companies statistics
 
@@ -535,7 +563,8 @@ Gets companies statistics
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets detailed companies statistics
 
@@ -559,7 +588,8 @@ Gets detailed companies statistics
 ### /oapi/v1/stats/countries
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets countries statistics
 
@@ -582,7 +612,8 @@ Gets countries statistics
 ### /oapi/v1/stats/devices
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets devices statistics
 
@@ -605,7 +636,8 @@ Gets devices statistics
 ### /oapi/v1/stats/domains
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets domains statistics
 
@@ -628,7 +660,8 @@ Gets domains statistics
 ### /oapi/v1/stats/time
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Gets time statistics
 
@@ -651,7 +684,8 @@ Gets time statistics
 ### /oapi/v1/web_services
 
 #### GET
-##### Summary:
+
+##### Summary
 
 Lists web services
 
