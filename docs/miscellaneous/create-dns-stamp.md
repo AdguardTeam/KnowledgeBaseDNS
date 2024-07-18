@@ -82,7 +82,7 @@ Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
     - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.io`.
+    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
 
     - **Hashes**:
     Execute the command
