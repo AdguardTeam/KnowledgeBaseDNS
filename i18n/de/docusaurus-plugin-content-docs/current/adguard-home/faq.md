@@ -3,7 +3,7 @@ title: FAQ
 sidebar_position: 3
 ---
 
-## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
+## Warum sperrt AdGuard Home keine Werbung oder Bedrohungen? {#doesntblock}
 
 Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
 
@@ -285,6 +285,24 @@ DOMAIN {
  reverse_proxy AGH_IP:AGH_PORT
 }
 ```
+
+### Apache
+
+```apache
+<VirtualHost *:80>
+  ProxyPass "/" "http://AGH_IP:AGH_PORT/"
+  ProxyPassReverse "/" "http://AGH_IP:AGH_PORT/"
+  PreserveHost On
+</VirtualHost>
+```
+
+:::note
+
+Do not use subdirectories with the Apache reverse HTTP proxy.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+
+[#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
+
+:::
 
 ### Disable DoH encryption on AdGuard Home
 

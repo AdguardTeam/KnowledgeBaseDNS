@@ -77,7 +77,7 @@ Bu sunucuların her biri güvenli ve güvenilir bir bağlantı sağlar, ancak "S
 
 ### BebasID tarafından BebasDNS
 
-[BebasDNS](https://github.com/bebasid/bebasdns), OpenNIC alan adını destekleyen Endonezya merkezli ücretsiz ve tarafsız bir genel çözümleyicidir. Created by Komunitas Internet Netral Indonesia (KINI) to serve Indonesian user with free and neutral internet connection.
+[BebasDNS](https://github.com/bebasid/bebasdns), OpenNIC alan adını destekleyen Endonezya merkezli ücretsiz ve tarafsız bir genel çözümleyicidir. Komunitas Internet Netral Indonesia (KINI) tarafından Endonezce kullanıcılara ücretsiz ve tarafsız internet bağlantısı sunmak için oluşturulmuştur.
 
 #### Default
 
@@ -119,7 +119,7 @@ Bu BebasDNS'in aile versiyonudur. This variant blocks pornography, gambling, hat
 
 #### Family With Ad Filtering
 
-This is the family variant of BebasDNS but with adblocker
+Bu, BebasDNS'in family çeşididir ancak reklam engelleyicilidir
 
 | Protokol       | Adres                                       |                                                                                                                                                                                                                                                             |
 | -------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -128,7 +128,7 @@ This is the family variant of BebasDNS but with adblocker
 
 #### OISD Filter
 
-This is a custom BebasDNS variant with only OISD Big filter
+Bu, yalnızca OISD Big filtreye sahip özel bir BebasDNS çeşididir
 
 | Protokol       | Adres                              |                                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -137,7 +137,7 @@ This is a custom BebasDNS variant with only OISD Big filter
 
 #### Hagezi Multi Normal Filter
 
-This is a custom BebasDNS variant with only Hagezi Multi Normal filter
+Bu, yalnızca Hagezi Multi Normal filtresine sahip özel bir BebasDNS çeşididir
 
 | Protokol       | Adres                                |                                                                                                                                                                                                                                                             |
 | -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -146,7 +146,7 @@ This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 
 ### 0ms DNS
 
-[DNS](https://0ms.dev/) is a global DNS resolution service provided by 0ms Group as an alternative to your current DNS provider.
+[DNS](https://0ms.dev/), mevcut DNS sağlayıcınıza alternatif olarak 0ms Group tarafından sağlanan küresel bir DNS çözümleme hizmetidir.
 
 Herkese daha güvenli bir ortam sağlamak için temel filtre olarak [OISD Big](https://oisd.nl/) kullanır. HTTP/3, önbellekleme ve daha fazlası gibi çeşitli optimizasyonlarla tasarlanmıştır. Kullanıcıları potansiyel güvenlik tehditlerinden korumak için makine öğreniminden yararlanırken aynı zamanda zaman içinde kendini optimize eder.
 

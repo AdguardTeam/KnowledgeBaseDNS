@@ -286,6 +286,24 @@ DOMAIN {
 }
 ```
 
+### Apache
+
+```apache
+<VirtualHost *:80>
+  ProxyPass "/" "http://AGH_IP:AGH_PORT/"
+  ProxyPassReverse "/" "http://AGH_IP:AGH_PORT/"
+  PreserveHost On
+</VirtualHost>
+```
+
+:::note
+
+Brug ikke undermapper med Apache reverse HTTP-proxy.  Det er et kendt problem ([#6604]), at Apache håndterer relative omdirigeringer anderledes end andre webservere. Dette forårsager problemer med AdGuard Home-webgrænsefladen.
+
+[#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
+
+:::
+
 ### Deaktivering af DoH-kryptering på AdGuard Home
 
 Anvendes TLS på den reverse-proxyserveren, behøver man ikke bruge TLS på AdGuard Home. Indstil `allow_unencrypted_doh: true` i `AdGuardHome.yaml` for at tillade AdGuard Home at svare på DoH-forespørgsler uden TLS-kryptering.
@@ -335,7 +353,7 @@ AdGuard Home-installationen eller arbejdsmappen bør flyttes til en anden placer
 
 ## Hvad betyder "Fejl: control/version.json"? {#version-error}
 
-Denne fejlmeddelelse betyder, at AdGuard Home ikke kunne nå AdGuard-serverne for at søge efter opdateringer og/eller downloade dem. Dette kan betyde, at serverne blokeres af internetudbyderen eller er midlertidigt nede. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+Denne fejlmeddelelse betyder, at AdGuard Home ikke kunne nå AdGuard-serverne for at søge efter opdateringer og/eller downloade dem. Dette kan betyde, at serverne blokeres af internetudbyderen eller er midlertidigt nede. Løser fejlen ikke sig selv efter et stykke tid, kan man prøve at udføre en [manuel opdatering](#manual-update) eller deaktivere det automatiske opdateringstjek ved at køre 'AdGuardHome'-eksekverbare med '--no-check-update' kommandolinjeparameteren.
 
 ## Hvordan opdateres AdGuard Home manuelt? {#manual-update}
 
@@ -343,7 +361,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. For at udføre dette trin via kommandolinjen, skriv:
+1. Hent den nye AdGuard Home-pakke fra [udgivelsessiden][releases]. For at udføre dette trin via kommandolinjen, skriv:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -418,7 +436,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 I alle eksempler nedenfor skal PowerShell eksekveres som Administrator.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. For at udføre dette trin via kommandolinjen:
+1. Hent den nye AdGuard Home-pakke fra [udgivelsessiden][releases]. For at udføre dette trin via kommandolinjen:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'

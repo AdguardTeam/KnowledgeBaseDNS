@@ -181,17 +181,31 @@ The `log` object configures the logging. It has the following properties:
 
   Possible values:
 
-  - `adguard_legacy`
-  - `default`
-  - `json`
-  - `jsonhybrid`
-  - `text`
+  - `default`: A simple format. Ejemplo:
+
+    ```none
+    INFO service started prefix=program addr=127.0.0.1:53
+    ```
+
+  - `json`: A structured JSON format. Ejemplo:
+
+    ```json
+    {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
+    ```
+
+  - `jsonhybrid`: Same as `json` but with a limited number of fields. Ejemplo:
+
+    ```json
+    {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
+    ```
+
+  - `text`: A structured text format. Ejemplo:
+
+    ```none
+    level=INFO msg="service started" prefix=program addr=127.0.0.1:53
+    ```
 
   **Example:** `default`
-
-  <!--
-      TODO(s.chzhen):  Add output examples.
-  -->
 
 - `timestamp`: Specifies whether to include a timestamp in the log entries.
 
