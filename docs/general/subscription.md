@@ -22,7 +22,7 @@ The *Enterprise* plan is available by request only. If you're interested, please
 
 ## How to get a refund {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard.com, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
 
 A refund may be declined if:
 
