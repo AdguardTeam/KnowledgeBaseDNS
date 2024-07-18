@@ -12,9 +12,9 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+De logbestemming moet een absoluut pad naar het bestand of een van de speciale waarden zijn. Zie de [logconfiguratiebeschrijving][conf-log] in het artikel over het configuratiebestand.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Deze omgevingsvariabele overschrijft het veld [`log.output`][conf-log] in het configuratiebestand.
 
 **Default:** **Unset.**
 
@@ -22,9 +22,9 @@ This environment variable overrides the [`log.output`][conf-log] field in the co
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
+The format for log entries. Zie de [logconfiguratiebeschrijving][conf-log] in het artikel over het configuratiebestand.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Deze omgevingsvariabele overschrijft het veld [`log.format`][conf-log] in het configuratiebestand.
 
 **Default:** **Unset.**
 
@@ -32,7 +32,7 @@ This environment variable overrides the [`log.format`][conf-log] field in the co
 
 When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Deze omgevingsvariabele overschrijft het veld [`log.timestamp`][conf-log] in het configuratiebestand.
 
 **Default:** **Unset.**
 
@@ -40,6 +40,6 @@ This environment variable overrides the [`log.timestamp`][conf-log] field in the
 
 When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Deze omgevingsvariabele overschrijft het veld [`log.verbose`][conf-log] in het configuratiebestand.
 
 **Default:** **Unset.**

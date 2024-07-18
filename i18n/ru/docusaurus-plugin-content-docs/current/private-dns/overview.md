@@ -15,7 +15,7 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 ## Общее
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
 
@@ -23,13 +23,13 @@ Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, in
 
 Сегодня к интернету можно подключить всё, что угодно: телевизоры, холодильники, умные лампочки и колонки. Но вместе с неоспоримыми удобствами в вашу жизнь, а точнее в ваши устройства, приходят трекеры и реклама. Простой браузерный блокировщик в этом случае вас не защитит, зато AdGuard DNS, который может опционально обеспечивать фильтрацию трафика и блокировку контента, поможет.
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Кому-то эти решения подошли, но для многих в публичном AdGuard DNS не хватило гибкости настроек, а в AdGuard Home — простоты. Можно сказать, что на стыке этих двух продуктов и появился приватный AdGuard DNS. Он предлагает обширные параметры настройки, контроль и информацию — и всё это с помощью простой и удобной приборной панели.
+At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Кому-то эти решения подошли, но для многих в публичном AdGuard DNS не хватило гибкости настроек, а в AdGuard Home — простоты. Можно сказать, что на стыке этих двух продуктов и появился приватный AdGuard DNS. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
 
 ### The difference between public and private AdGuard DNS
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+Вот простое сравнение функций, доступных в публичном и приватном AdGuard DNS.
 
-| Публичный AdGuard DNS                            | Private AdGuard DNS                                                                                          |
+| Публичный AdGuard DNS                            | Приватный AdGuard DNS                                                                                        |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | Шифрование DNS-трафика                           | Шифрование DNS-трафика                                                                                       |
 | Предустановленные списки заблокированных доменов | Настраиваемые списки блокировки доменов                                                                      |
@@ -38,14 +38,14 @@ Here is a simple comparison of features available in public and private AdGuard 
 | -                                                | Подробный журнал запросов                                                                                    |
 | -                                                | Родительский контроль                                                                                        |
 
-## How to set up private AdGuard DNS
+## Как настроить приватный AdGuard DNS
 
-### For devices that support DoH, DoT, and DoQ
+### Для устройств, поддерживающих DoH, DoT и DoQ
 
-1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
-1. Click *Connect device* and follow on-screen instructions
+1. Перейдите на вашу [панель управления AdGuard DNS](https://agrd.io/download-dns) (если вы не авторизовались, войдите, используя свою учётную запись AdGuard)
+1. Нажмите *Подключить устройство* и следуйте инструкциям на экране
 
-:::note Supported platforms:
+:::note Поддерживаемые платформы:
 
 - Android
 - iOS
@@ -54,35 +54,35 @@ Here is a simple comparison of features available in public and private AdGuard 
 - Linux
 - Роутеры
 - Игровые консоли
-- Smart TVs
+- Умные телевизоры
 
 :::
 
-Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
+У каждого устройствa, которое вы добавляете на панель управления AdGuard DNS, есть свой уникальный адрес. Его можно использовать, если устройство поддерживает современные зашифрованные протоколы DNS (DoH, DoT и DoQ).
 
-### For devices that do not support DoH, DoT, and DoQ
+### Для устройств, не поддерживающих DoH, DoT и DoQ
 
-If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
+Если устройство не поддерживает зашифрованный DNS и приходится использовать обычный DNS, есть ещё два способ разрешить AdGuard DNS распознавать устройство — использовать выделенные IP-адреса или привязать IP-адрес устройства.
 
 :::note
 
-Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
+Используйте обычные DNS-адреса только в том случае, если у вас нет других вариантов: это снижает безопасность DNS-запросов. Если вы решили использовать незашифрованный DNS, мы рекомендуем вам выбрать выделенные IP-адреса.
 
 :::
 
-#### Dedicated IP addresses
+#### Выделенные IP-адреса
 
-For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
+Для каждого устройства, которое вы подключаете к AdGuard DNS, вам будет предложено два выделенных IPv6-адреса, которые вы можете ввести в настройках устройства. Использование обоих адресов IPv6 не является обязательным, но часто устройства могут запрашивать ввод двух адресов IPv6.
 
-When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
+Когда вы подключаетесь к ним, AdGuard DNS сможет определить, какое именно устройство отправляет DNS-запросы, и отобразить статистику по нему. И вы сможете настроить правила DNS специально для этого устройства.
 
-Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
+К сожалению, не все поставщики услуг предлагают поддержку IPv6 и не все устройства позволяют настраивать адреса IPv6. If this is your case, you may have to rely on the Linked IP method.
 
-#### Linked IP
+#### Привязанный IP-адрес
 
 If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
-The only requirement for linking IP is that **it must be a residential IP address**.
+Единственное требование к привязке IP-адреса заключается в том, что **это должен быть резидентный IP-адрес**.
 
 :::note
 
@@ -90,7 +90,7 @@ A residential IP address is an IP address assigned to a device connected to a re
 
 :::
 
-If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard.com.
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
 
 ## Private AdGuard DNS features
 

@@ -12,9 +12,9 @@ AdGuard DNS Client bruger [miljøvariabler][wiki-env] til at gemme en del af ops
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+Logdestinationen skal være en absolut sti til filen eller en af de specielle værdier. Se [logningsopsætningsbeskrivelsen][conf-log] i artiklen om opsætningsfilen.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter [`log.output`][conf-log]-feltet i opsætningsfilen.
 
 **Standard:** **Ikke opsat.**
 
@@ -22,9 +22,9 @@ This environment variable overrides the [`log.output`][conf-log] field in the co
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-Formatet på logposter. See the [logging configuration description][conf-log] in the article about the configuration file.
+Formatet på logposter. Se [logningsopsætningsbeskrivelsen][conf-log] i artiklen om opsætningsfilen.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter [`log.format`][conf-log]-feltet i opsætningsfilen.
 
 **Standard:** **Ikke opsat.**
 
@@ -32,7 +32,7 @@ This environment variable overrides the [`log.format`][conf-log] field in the co
 
 Når sat til `1`, har logposter et tidsstempel. Når sat til `0`, har logposter ingen.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter [`log.timestamp`][conf-log]-feltet i opsætningsfilen.
 
 **Standard:** **Ikke opsat.**
 
@@ -40,6 +40,6 @@ This environment variable overrides the [`log.timestamp`][conf-log] field in the
 
 Når sat til `1`, detaljeret logning slået til. Når sat til `1`, detaljeret logning slået fra.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter [`log.verbose`][conf-log]-feltet i opsætningsfilen.
 
 **Standard:** **Ikke opsat.**

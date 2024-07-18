@@ -12,7 +12,7 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+The log destination, must be an absolute path to the file or one of the special values. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
 
 This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
@@ -22,7 +22,7 @@ This environment variable overrides the [`log.output`][conf-log] field in the co
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-Günlük girişlerinin biçimi. See the [logging configuration description][conf-log] in the article about the configuration file.
+Günlük girişlerinin biçimi. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
 
 This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 

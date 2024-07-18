@@ -181,25 +181,25 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıda
 
   Olası değerler:
 
-  - `default`: A simple format. Örnek:
+  - `default`: Basit bir biçim. Örnek:
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. Örnek:
+  - `json`: Yapılandırılmış bir JSON biçimi. Örnek:
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Örnek:
+  - `jsonhybrid`: json\` ile aynıdır ancak sınırlı sayıda alana sahiptir. Örnek:
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Örnek:
+  - `text`: Yapılandırılmış bir metin biçimi. Örnek:
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53

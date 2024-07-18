@@ -181,25 +181,25 @@ The `log` object configures the logging. It has the following properties:
 
   Possible values:
 
-  - `default`: A simple format. Example:
+  - `standaard`: Een eenvoudig formaat. Voorbeeld:
 
     ```none
-    INFO service started prefix=program addr=127.0.0.1:53
+    INFO service heeft prefix=program addr=127.0.0.1:53 gestart
     ```
 
-  - `json`: A structured JSON format. Example:
+  - 'json': een gestructureerd JSON-formaat. Voorbeeld:
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Example:
+  - 'jsonhybrid': Zelfde als 'json', maar met een beperkt aantal velden. Voorbeeld:
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Example:
+  - 'tekst': Een gestructureerd tekstformaat. Voorbeeld:
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53
