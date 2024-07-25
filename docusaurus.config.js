@@ -4,6 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
+const REPORTS_WEBSITE_URL = 'https://reports.adguard.com';
 
 // Allow to parameterise the website URL and the base path during the build.
 const url = process.env.URL || 'https://adguardteam.github.io';
@@ -165,7 +166,7 @@ module.exports = {
             },
             {
               label: 'report',
-              href: 'https://reports.adguard.com/new_issue.html',
+              href: REPORTS_WEBSITE_URL + '/new_issue.html',
             },
             {
               label: 'status',
