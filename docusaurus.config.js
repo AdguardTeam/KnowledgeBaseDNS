@@ -4,6 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
+const REPORTS_WEBSITE_URL = 'https://reports.adguard.com';
 
 // Allow to parameterise the website URL and the base path during the build.
 const url = process.env.URL || 'https://adguardteam.github.io';
@@ -94,47 +95,38 @@ module.exports = {
           title: 'dns',
           items: [
             {
-              html: `Cloud-based DNS service that will help you protect privacy and block ads.`
-            },
-          ]
-        },
-        {
-          title: 'dns',
-          items: [
-            {
-              label: 'connect_dns',
-              href: DNS_WEBSITE_URL + '/public-dns.html',
+              label: 'homepage',
+              href: DNS_WEBSITE_URL + '/welcome.html',
             },
             {
-              label: 'support_center',
-              href: DNS_WEBSITE_URL + '/support.html',
+              label: 'pricing',
+              href: DNS_WEBSITE_URL + '/license.html',
             },
-            {
-              label: 'faq',
-              href: DNS_WEBSITE_URL + '/support/faq.html',
-            },
-          ],
-        },
-        {
-          title: 'engage',
-          items: [
             {
               label: 'blog',
               href: DNS_WEBSITE_URL + '/blog/index.html',
             },
             {
-              label: 'privacy_policy',
-              href: ADGUARD_WEBSITE_URL + '/privacy/dns.html',
+              label: 'about_us',
+              href: DNS_WEBSITE_URL + '/about.html',
             },
             {
-              label: 'terms',
-              href: ADGUARD_WEBSITE_URL + '/eula.html',
+              label: 'connect_dns',
+              href: DNS_WEBSITE_URL + '/public-dns.html',
             },
             {
-              label: 'status',
-              href: 'https://status.adguard.com/',
-            }
-          ],
+              label: 'promo',
+              href: ADGUARD_WEBSITE_URL + '/promopages.html',
+            },
+            {
+              label: 'media',
+              href: DNS_WEBSITE_URL + '/media-materials.html',
+            },
+            {
+              label: 'press',
+              href: DNS_WEBSITE_URL + '/press-releases.html',
+            },
+          ]
         },
         {
           title: 'other_products',
@@ -146,6 +138,64 @@ module.exports = {
             {
               label: 'vpn',
               href: VPN_WEBSITE_URL,
+            },
+            {
+              label: 'temp_mail',
+              href: ADGUARD_WEBSITE_URL + '/adguard-temp-mail/overview.html',
+            },
+            {
+              label: 'adguard_home',
+              href: ADGUARD_WEBSITE_URL + '/adguard-home/overview.html',
+            },
+          ],
+        },
+        {
+          title: 'support',
+          items: [
+            {
+              label: 'support_center',
+              href: DNS_WEBSITE_URL + '/support.html',
+            },
+            {
+              label: 'faq',
+              href: DNS_WEBSITE_URL + '/support/faq.html',
+            },
+            {
+              label: 'versions',
+              href: DNS_WEBSITE_URL + '/versions.html',
+            },
+            {
+              label: 'report',
+              href: REPORTS_WEBSITE_URL + '/new_issue.html',
+            },
+            {
+              label: 'status',
+              href: 'https://status.adguard.com/',
+            }
+          ],
+        },
+        {
+          title: 'legal',
+          items: [
+            {
+              label: 'terms',
+              href: DNS_WEBSITE_URL + '/eula.html',
+            },
+            {
+              label: 'privacy_policy',
+              href: DNS_WEBSITE_URL + '/privacy.html',
+            },
+            {
+              label: 'terms_of_sale',
+              href: DNS_WEBSITE_URL + '/terms-of-sale.html',
+            },
+            {
+              label: 'refund',
+              href: DNS_WEBSITE_URL + '/terms-of-sale.html',
+            },
+            {
+              label: 'terms_and_conditions',
+              href: ADGUARD_WEBSITE_URL + '/terms-and-conditions.html',
             },
           ],
         },
