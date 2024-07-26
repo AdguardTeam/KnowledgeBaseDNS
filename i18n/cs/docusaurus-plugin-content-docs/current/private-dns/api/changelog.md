@@ -12,6 +12,13 @@ toc_max_heading_level: 3
 
 Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.9 (11. července 2024)
+
+- Přidána funkce automatického připojení zařízení:
+  - Nové nastavení serveru DNS — `auto_connect_devices_enabled`, umožnění schválení automatického připojení zařízení prostřednictvím určitého typu odkazu
+  - Nové pole v Zařízení - `auto_device`, které označuje, že zařízení je připojeno automaticky
+- Nahrazeno `int` za `long` pro `queries` v CategoryQueriesStats, pro `used` v AccountLimits a pro `blocked` a `queries` v QueriesStats
+
 ## v1.8
 
 _Vydáno 20. dubna 2024_

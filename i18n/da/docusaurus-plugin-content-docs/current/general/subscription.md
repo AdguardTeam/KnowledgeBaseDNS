@@ -1,11 +1,11 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Sådan købes, opgraderes eller opnås refusion
 sidebar_position: 4
 ---
 
 ## Sådan købes en abonnementstype {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). Betaling kan ske via Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay og UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Abonnementstyper kan fornyes på måneds- eller årsbasis.
+AdGuard DNS-abonnementstyper kan købes via [adguard-dns.io](https://adguard-dns.io/license.html). Betaling kan ske via Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay og UnionPay. Vi accepterer også flg. kryptovalutaer: Ethereum, Litecoin og Tether. Abonnementstyper kan fornyes på måneds- eller årsbasis.
 
 Den Personal-abonnementstypen er gratis for [AdGuard VPN](https://adguard-vpn.com/welcome.html) betalende brugere.
 
@@ -22,7 +22,7 @@ _Enterprise_-abonnementstypen er kun tilgængelig på forespørgsel. Ved evt. in
 
 ## Sådan opnås refusion {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. Behandlingstiden udgør normalt ca. 5-10 hverdage.
+I overensstemmelse med vores [Salgsvilkår](https://adguard-dns.io/terms-of-sale.html), kan der opnås 100% refusion på alle AdGuard DNS-årsabonnementstyper købt via https://adguard-dns.io/. For at opnå refusion, kontakt supporten via support@adguard-dns.io med angivelse af den anvendte betalingsmetode. Behandlingstiden udgør normalt ca. 5-10 hverdage.
 
 Refusion kan blive afvist, såfremt:
 

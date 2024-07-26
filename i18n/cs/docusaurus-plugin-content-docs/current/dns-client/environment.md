@@ -1,20 +1,20 @@
 ---
-title: Environment
+title: Prostředí
 sidebar_position: 3
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
+Klient AdGuard DNS používá [proměnné prostředí][wiki-env] k uložení části konfigurace. Zbytek konfigurace je uložen v [konfiguračním souboru][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+Cíl protokolu, musí to být absolutní cesta k souboru nebo jedna ze speciálních hodnot. Viz [popis konfigurace protokolu][conf-log] v článku o konfiguračním souboru.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Tato proměnná prostředí nahrazuje pole [`log.output`][conf-log] v konfiguračním souboru.
 
 **Default:** **Unset.**
 
@@ -22,24 +22,24 @@ This environment variable overrides the [`log.output`][conf-log] field in the co
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
+Formát záznamů protokolu. Viz [popis konfigurace protokolu][conf-log] v článku o konfiguračním souboru.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Tato proměnná prostředí nahrazuje pole [`log.format`][conf-log] v konfiguračním souboru.
 
 **Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
+Je-li nastavena hodnota `1`, záznamy protokolu obsahují časové razítko. Pokud je nastavena na `0`, záznamy protokolu jej nemají.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Tato proměnná prostředí nahrazuje pole [`log.timestamp`][conf-log] v konfiguračním souboru.
 
 **Default:** **Unset.**
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+Pokud je nastavena hodnota `1`, povolí slovní protokolování. Pokud je nastavena na `0`, je zakázáno.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Tato proměnná prostředí nahrazuje pole [`log.verbose`][conf-log] v konfiguračním souboru.
 
 **Default:** **Unset.**

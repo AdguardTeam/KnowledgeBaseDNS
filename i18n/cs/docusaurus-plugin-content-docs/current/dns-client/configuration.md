@@ -1,11 +1,11 @@
 ---
-title: Configuration file
+title: Konfigurační soubor
 sidebar_position: 2
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Úplný příklad konfiguračního souboru [YAML][yaml] s komentáři najdete v souboru [`config.dist.yml`][dist].
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
@@ -16,31 +16,31 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of the DNS server. It has the following properties:
+Objekt `dns` konfiguruje chování DNS serveru. Vyznačuje se těmito vlastnostmi:
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. It has the following properties:
+Objekt `cache` konfiguruje ukládání výsledků DNS dotazů do mezipaměti. Vyznačuje se těmito vlastnostmi:
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: Zda se mají výsledky DNS ukládat do mezipaměti.
 
-  **Example:** `true`
+  **Příklad:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: Maximální velikost mezipaměti výsledků DNS jako velikost dat čitelných pro člověka. Musí být větší než nula, pokud je `enabled` nastaveno na `true`.
 
-  **Example:** `128MB`
+  **Příklad:** `128MB`
 
-- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: Maximální velikost mezipaměti výsledků DNS pro každou nakonfigurovanou adresu nebo podsíť klienta jako velikost dat čitelná pro člověka. Musí být větší než nula, pokud je `enabled` nastaveno na `true`.
 
-  **Example:** `4MB`
+  **Příklad:** `4MB`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. It has the following properties:
+Objekt `server` konfiguruje zpracování příchozích požadavků. Vyznačuje se těmito vlastnostmi:
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: Sada adres s porty, na kterých se má naslouchat.
 
-  **Property example:**
+  **Příklad vlastnosti:**
 
   ```yaml
   'listen_addresses':
@@ -50,11 +50,11 @@ The `server` object configures the handling of incoming requests. It has the fol
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
+Objekt `bootstrap` konfiguruje překlad adres serverů [upstream](#dns-upstream). Vyznačuje se těmito vlastnostmi:
 
-- `servers`: The list of servers to resolve the hostnames of upstream servers.
+- `servers`: Seznam serverů pro překlad názvů hostitelů odchozích serverů.
 
-  **Property example:**
+  **Příklad vlastnosti:**
 
   ```yaml
   'servers':
@@ -62,37 +62,37 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: Časový limit pro spouštěcí požadavky DNS jako doba trvání čitelná pro člověka.
 
-  **Example:** `2s`
+  **Příklad:** `2s`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. It has the following properties:
+Objekt `upstream` konfiguruje skutečné řešení požadavků. Vyznačuje se těmito vlastnostmi:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`: Sada odchozích serverů s klíčem podle názvu skupiny. Vyznačuje se těmito poli:
 
-  - `address`: The upstream server’s address.
+  - `address`: Adresa odchozího serveru.
 
-    **Example:** `'8.8.8.8:53'`
+    **Příklad:** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: Seznam kritérií, podle kterých se má požadavek porovnat. Každá položka může obsahovat následující vlastnosti:
 
-    - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
+    - `question_domain`: Doména nebo přípona domény, kterou má sada odchozích serverů použít k překladu.
 
-      **Example:** `'mycompany.local'`
+      **Příklad:** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: Adresa klienta nebo podsíť adresy klienta, ze které má sada odchozích serverů překládat požadavky. Nesmí mít žádné významné bity mimo masku podsítě.
 
-      **Example:** `'192.0.2.0/24'`
+      **Příklad:** `'192.0.2.0/24'`
 
     :::note
 
-    Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+    Vlastnosti zadané v rámci jedné položky se kombinují pomocí logického AND. Záznamy se kombinují pomocí logického OR.
 
     :::
 
-    **Property example:**
+    **Příklad vlastnosti:**
 
     ```yaml
     'match':
@@ -104,113 +104,113 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` by měla obsahovat alespoň jednu položku s názvem `default` a volitelně jednu položku s názvem `private`, obě by neměly mít vlastnost `match`.
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Skupina `default` se použije, pokud mezi ostatními skupinami není žádná shoda. Skupina `private` bude použita pro překlad požadavků PTR pro privátní IP adresy. Pokud není definována žádná skupina `private`, budou tyto dotazy zodpovězeny pomocí `NXDOMAIN`.
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`: Časový limit pro odchozí požadavky DNS jako doba trvání čitelná pro člověka.
 
-  **Example:** `2s`
+  **Příklad:** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
+Objekt `fallback` konfiguruje chování DNS serveru v případě selhání. Vyznačuje se těmito vlastnostmi:
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: Seznam serverů, které se mají použít poté, co aktuální [upstream](#dns-upstream) neodpověděl.
 
-  **Property example:**
+  **Příklad vlastnosti:**
 
   ```yaml
   'servers':
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: Časový limit pro záložní požadavky DNS jako doba trvání čitelná pro člověka.
 
-  **Example:** `2s`
+  **Příklad:** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. It has the following properties:
+Objekt `debug` konfiguruje funkce ladění. Vyznačuje se těmito vlastnostmi:
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
+Objekt `pprof` konfiguruje obsluhu HTTP [`pprof`][pkg-pprof]. Vyznačuje se těmito vlastnostmi:
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: Port, na kterém budou naslouchat ladicí požadavky HTTP na localhost.
 
-  **Example:** `6060`
+  **Příklad:** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Zda je nebo není povoleno ladění profilů.
 
-  **Example:** `true`
+  **Příklad:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+Objekt `log` konfiguruje protokolování. Vyznačuje se těmito vlastnostmi:
 
-- `output`: The output to which logs are written.
+- `output`: Výstup, na který se zapisují protokoly.
 
   :::note
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Záznamy protokolu zapisované do systémového protokolu jsou ve formátu `text` (viz níže) a používají systémovou časové razítko.
 
   :::
 
-  Possible values:
+  Přípustné hodnoty:
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog` znamená, že se použije systémový protokol specifický pro danou platformu, což je syslog pro Linux a protokol událostí pro Windows.
 
-  - `stdout` for standard output stream.
+  - `stdout` pro standardní výstupní datový tok.
 
-  - `stderr` for standard error stream.
+  - `stderr` pro standardní chybový datový tok.
 
-  - Absolute path to the log file.
+  - Absolutní cesta k souboru protokolu.
 
-  **Example:** `/home/user/logs`
+  **Příklad:** `/home/user/logs`
 
-  **Example:** `C:\Users\user\logs.txt`
+  **Příklad:** `C:\Users\user\logs.txt`
 
-  **Example:** `syslog`
+  **Příklad:** `syslog`
 
-- `format`: Specifies the format of the log entries.
+- `format`: Určuje formát záznamů protokolu.
 
-  Possible values:
+  Přípustné hodnoty:
 
-  - `default`: A simple format. Příklad:
+  - `default`: Jednoduchý formát. Příklad:
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. Příklad:
+  - `json`: Strukturovaný formát JSON. Příklad:
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Příklad:
+  - `jsonhybrid`: Stejně jako `json`, ale s omezeným počtem polí. Příklad:
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Příklad:
+  - `json`: Strukturovaný textový formát. Příklad:
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53
     ```
 
-  **Example:** `default`
+  **Příklad:** `default`
 
-- `timestamp`: Specifies whether to include a timestamp in the log entries.
+- `timestamp`: Určuje, zda se má do položek protokolu zahrnout časové razítko.
 
-  **Example:** `false`
+  **Příklad:** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`: Určuje, zda má být protokol více informativní.
 
-  **Example:** `false`
+  **Příklad:** `false`

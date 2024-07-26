@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Güncel sürüm: 1.8
+## Güncel Sürüm: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Hesap limitlerini alır
 | Kod | Açıklama            |
 | --- | ------------------- |
 | 200 | Account limits info |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### GET
+
+##### Özet
+
+Tahsis edilmiş özel IPv4 adreslerini listeler
+
+##### Yanıtlar
+
+| Kod | Açıklama                       |
+| --- | ------------------------------ |
+| 200 | Özel IPv4 adreslerinin listesi |
+
+#### POST
+
+##### Özet
+
+Allocates new dedicated IPv4
+
+##### Yanıtlar
+
+| Kod | Açıklama                          |
+| --- | --------------------------------- |
+| 200 | Yeni IPv4 başarıyla tahsis edildi |
+| 429 | Özel IPv4 sayısı limite ulaştı    |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Mevcut bir cihazı günceller
 | 400 | Doğrulama başarısız |
 | 404 | Cihaz bulunamadı    |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### GET
+
+##### Özet
+
+List dedicated IPv4 and IPv6 addresses for a device
+
+##### Parametreler
+
+| Adı           | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| ------------- | ---------------- | -------- | ------- | ------ |
+| cihaz_kimliği | yol              |          | Evet    | string |
+
+##### Yanıtlar
+
+| Kod | Açıklama          |
+| --- | ----------------- |
+| 200 | Özel IPv4 ve IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### DELETE
+
+##### Özet
+
+Özel IPv4'ün cihazla bağlantısını kaldır
+
+##### Parametreler
+
+| Adı           | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| ------------- | ---------------- | -------- | ------- | ---- |
+| cihaz_kimliği | yol              |          | Evet    | dize |
+
+##### Yanıtlar
+
+| Kod | Açıklama                                             |
+| --- | ---------------------------------------------------- |
+| 200 | Özel IPv4'ün cihazla bağlantısı başarıyla kaldırıldı |
+| 404 | Cihaz veya adres bulunamadı                          |
+
+#### POST
+
+##### Özet
+
+Özel IPv4'ü cihaza bağla
+
+##### Parametreler
+
+| Adı       | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------- | ---------------- | -------- | ------- | ------ |
+| device_id | yol              |          | Evet    | string |
+
+##### Yanıtlar
+
+| Kod | Açıklama                                      |
+| --- | --------------------------------------------- |
+| 200 | Özel IPv4 başarıyla cihaza bağlandı           |
+| 400 | Doğrulama başarısız                           |
+| 404 | Cihaz veya adres bulunamadı                   |
+| 429 | Linked dedicated IPv4 count reached the limit |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
@@ -129,7 +218,7 @@ DNS-over-HTTPS, .mobileconfig dosyasını alır.
 
 | Adı                     | Konumlandığı yer | Açıklama                                                                                        | Gerekli | Şema       |
 | ----------------------- | ---------------- | ----------------------------------------------------------------------------------------------- | ------- | ---------- |
-| cihaz_kimliği           | yol              |                                                                                                 | Evet    | string     |
+| device_id               | yol              |                                                                                                 | Evet    | dize       |
 | exclude_wifi_networks | sorgu            | AdGuard DNS'nin devre dışı bırakılmasını istediğiniz Wi-Fi ağlarını SSID'lerine göre listeleyin | Hayır   | [ string ] |
 | exclude_domain          | sorgu            | AdGuard DNS yerine varsayılan DNS sunucularını kullanacak alan adlarını listeleyin              | Hayır   | [ string ] |
 
@@ -139,6 +228,27 @@ DNS-over-HTTPS, .mobileconfig dosyasını alır.
 | --- | ----------------------------- |
 | 200 | DNS-over-HTTPS .plist dosyası |
 | 404 | Cihaz bulunamadı              |
+
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Özet
+
+DNS-over-HTTPS parolası oluştur ve ayarla
+
+##### Parametreler
+
+| Adı       | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| --------- | ---------------- | -------- | ------- | ---- |
+| device_id | yol              |          | Evet    | dize |
+
+##### Yanıtlar
+
+| Kod | Açıklama                                     |
+| --- | -------------------------------------------- |
+| 200 | DNS-over-HTTPS parolası başarıyla sıfırlandı |
+| 404 | Cihaz bulunamadı                             |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -152,7 +262,7 @@ DNS-over-TLS .mobileconfig dosyasını alır.
 
 | Adı                     | Konumlandığı yer | Açıklama                                                                                        | Gerekli | Şema       |
 | ----------------------- | ---------------- | ----------------------------------------------------------------------------------------------- | ------- | ---------- |
-| cihaz_kimliği           | yol              |                                                                                                 | Evet    | dize       |
+| device_id               | yol              |                                                                                                 | Evet    | dize       |
 | exclude_wifi_networks | sorgu            | AdGuard DNS'nin devre dışı bırakılmasını istediğiniz Wi-Fi ağlarını SSID'lerine göre listeleyin | Hayır   | [ string ] |
 | exclude_domain          | sorgu            | AdGuard DNS yerine varsayılan DNS sunucularını kullanacak alan adlarını listeleyin              | Hayır   | [ string ] |
 
@@ -273,9 +383,9 @@ Mevcut bir DNS sunucusunu günceller
 
 ##### Parametreler
 
-| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | yol              |          | Evet    | dize |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------------- | ---------------- | -------- | ------- | ------ |
+| dns_server_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -295,9 +405,9 @@ DNS sunucusu ayarlarını günceller
 
 ##### Parametreler
 
-| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema   |
-| --------------- | ---------------- | -------- | ------- | ------ |
-| dns_server_id | yol              |          | Evet    | string |
+| Adı             | Konumlandığı yer | Açıklama | Gerekli | Şema |
+| --------------- | ---------------- | -------- | ------- | ---- |
+| dns_server_id | yol              |          | Evet    | dize |
 
 ##### Yanıtlar
 
@@ -336,6 +446,8 @@ Erişim ve Yenileme belirteci oluşturur
 | 200 | Erişim belirteci verildi                                                  |
 | 400 | Gerekli parametreler eksik                                                |
 | 401 | Geçersiz kimlik bilgileri, MFA belirteci veya yenileme belirteci sağlandı |
+
+null
 
 ### /oapi/v1/query_log
 
@@ -388,15 +500,17 @@ Revokes a Refresh Token
 
 ##### Parametreler
 
-| Adı           | Konumlandığı yer | Açıklama           | Gerekli | Şema   |
-| ------------- | ---------------- | ------------------ | ------- | ------ |
-| refresh_token | sorgu            | Yenileme Belirteci | Evet    | string |
+| Adı           | Konumlandığı yer | Açıklama           | Gerekli | Şema |
+| ------------- | ---------------- | ------------------ | ------- | ---- |
+| refresh_token | sorgu            | Yenileme Belirteci | Evet    | dize |
 
 ##### Yanıtlar
 
 | Kod | Açıklama              |
 | --- | --------------------- |
 | 200 | Refresh token revoked |
+
+null
 
 ### /oapi/v1/stats/categories
 
@@ -507,8 +621,8 @@ Cihaz istatistiklerini alır
 
 | Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
-| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | uzun       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | long       |
 | cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
 | ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
@@ -531,8 +645,8 @@ Alan adı istatistiklerini alır
 
 | Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
-| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | uzun       |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | long       |
 | cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
 | ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |
 
@@ -555,7 +669,7 @@ Süre istatistiklerini alır
 
 | Adı                | Konumlandığı yer | Açıklama                                   | Gerekli | Şema       |
 | ------------------ | ---------------- | ------------------------------------------ | ------- | ---------- |
-| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | long       |
+| time_from_millis | sorgu            | Milisaniye cinsinden başlayan süre (dahil) | Evet    | uzun       |
 | time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)          | Evet    | uzun       |
 | cihazlar           | sorgu            | Cihazlara göre filtrele                    | Hayır   | [ string ] |
 | ülkeler            | sorgu            | Ülkelere göre filtrele                     | Hayır   | [ string ] |

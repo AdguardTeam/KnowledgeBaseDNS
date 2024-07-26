@@ -3,9 +3,13 @@
     "message": "AdGuard DNS",
     "description": "The title of the footer links column with title=dns in the footer"
   },
-  "link.title.engage": {
-    "message": "Engageren",
-    "description": "The title of the footer links column with title=engage in the footer"
+  "link.title.legal": {
+    "message": "Juridische documenten",
+    "description": "The title of the footer links column with title=legal in the footer"
+  },
+  "link.title.support": {
+    "message": "Ondersteuning",
+    "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.other_products": {
     "message": "Andere producten",
@@ -29,11 +33,15 @@
   },
   "link.item.label.privacy_policy": {
     "message": "Privacybeleid",
-    "description": "The label of footer link with label=privacy_policy linking to https://adguard.com/privacy/dns.html"
+    "description": "The label of footer link with label=privacy_policy linking to https://adguard-dns.io/privacy.html"
+  },
+  "link.item.label.terms_of_sale": {
+    "message": "Verkoopsvoorwaarden",
+    "description": "The label of footer link with label=terms_of_sale linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms": {
-    "message": "Servicevoorwaarden",
-    "description": "The label of footer link with label=terms linking to https://adguard.com/eula.html"
+    "message": "EULA",
+    "description": "The label of footer link with label=terms linking to https://adguard-dns.io/eula.html"
   },
   "link.item.label.status": {
     "message": "AdGuard status",
@@ -47,12 +55,60 @@
     "message": "AdGuard VPN",
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
-  "copyright": {
-    "message": "© AdGuard DNS, 2023",
-    "description": "The footer copyright"
-  },
   "logo.alt": {
     "message": "AdGuard DNS",
     "description": "The alt text of footer logo"
+  },
+  "link.item.label.homepage": {
+    "message": "Startpagina",
+    "description": "The label of footer link with label=homepage linking to https://adguard-dns.io/welcome.html"
+  },
+  "link.item.label.pricing": {
+    "message": "Prijzen",
+    "description": "The label of footer link with label=pricing linking to https://adguard-dns.io/license.html"
+  },
+  "link.item.label.about_us": {
+    "message": "Over ons",
+    "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
+  },
+  "link.item.label.promo": {
+    "message": "AdGuard promotie activiteiten",
+    "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
+  },
+  "link.item.label.media": {
+    "message": "Mediakits",
+    "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
+  },
+  "link.item.label.press": {
+    "message": "In de pers",
+    "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
+  },
+  "link.item.label.temp_mail": {
+    "message": "AdGuard Tijdelijke Mail",
+    "description": "The label of footer link with label=temp_mail linking to https://adguard.com/adguard-temp-mail/overview.html"
+  },
+  "link.item.label.adguard_home": {
+    "message": "AdGuard Home",
+    "description": "The label of footer link with label=adguard_home linking to https://adguard.com/adguard-home/overview.html"
+  },
+  "link.item.label.versions": {
+    "message": "Versiegeschiedenis",
+    "description": "The label of footer link with label=versions linking to https://adguard-dns.io/versions.html"
+  },
+  "link.item.label.report": {
+    "message": "Een probleem melden",
+    "description": "The label of footer link with label=report linking to https://reports.adguard.com/new_issue.html"
+  },
+  "link.item.label.refund": {
+    "message": "Terugbetalingsbeleid",
+    "description": "The label of footer link with label=refund linking to https://adguard-dns.io/terms-of-sale.html"
+  },
+  "link.item.label.terms_and_conditions": {
+    "message": "Algemene voorwaarden",
+    "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
+  },
+  "copyright": {
+    "message": "© AdGuard DNS, 2024",
+    "description": "The footer copyright"
   }
 }

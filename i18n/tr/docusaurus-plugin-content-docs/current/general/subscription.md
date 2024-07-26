@@ -1,11 +1,11 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Nasıl satın alınır, yükseltilir veya para iadesi alınır
 sidebar_position: 4
 ---
 
 ## Plan nasıl satın alınır {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay ve UnionPay ile ödeme yapabilirsiniz. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Planlar aylık veya yıllık olarak yenilenebilir.
+AdGuard DNS planları [adguard-dns.io](https://adguard-dns.io/license.html) adresinden satın alınabilir. Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay ve UnionPay ile ödeme yapabilirsiniz. Ayrıca şu kripto para birimlerini de kabul ediyoruz: Ethereum, Litecoin ve Tether. Planlar aylık veya yıllık olarak yenilenebilir.
 
 Kişisel plan, [AdGuard VPN](https://adguard-vpn.com/welcome.html) ücretli kullanıcıları için ücretsizdir.
 
@@ -22,7 +22,7 @@ _Kurumsal_ plan yalnızca talep üzerine kullanılabilir. Eğer ilgileniyorsanı
 
 ## Para iadesi nasıl alınır {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. İşlem süresi genellikle 5-10 iş günü kadar sürer.
+[Satış Koşullarımıza](https://adguard-dns.io/terms-of-sale.html) uygun olarak, https://adguard-dns.io/ adresinden satın aldığınız tüm AdGuard DNS Yıllık planları için %100 para iadesi alabilirsiniz. Para iadesi almak için, kullandığınız ödeme yöntemini belirterek support@adguard-dns.io adresinden destek ekibiyle iletişime geçmeniz gerekir. İşlem süresi genellikle 5-10 iş günü kadar sürer.
 
 Aşağıdaki durumlarda para iadesi reddedilebilir:
 

@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Current version: 1.8
+## Current Version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Obtém limites de conta
 | Código | Descrição                          |
 | ------ | ---------------------------------- |
 | 200    | Informações sobre limites de conta |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### OBTER
+
+##### Summary
+
+Lists allocated dedicated IPv4 addresses
+
+##### Respostas
+
+| Código | Descrição                        |
+| ------ | -------------------------------- |
+| 200    | List of dedicated IPv4 addresses |
+
+#### POST
+
+##### Summary
+
+Allocates new dedicated IPv4
+
+##### Respostas
+
+| Código | Descrição                              |
+| ------ | -------------------------------------- |
+| 200    | New IPv4 successfully allocated        |
+| 429    | Dedicated IPv4 count reached the limit |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Atualiza um dispositivo existente
 | 400    | Falha na validação         |
 | 404    | Dispositivo não encontrado |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### OBTER
+
+##### Summary
+
+List dedicated IPv4 and IPv6 addresses for a device
+
+##### Parâmetros
+
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
+
+| Código | Descrição               |
+| ------ | ----------------------- |
+| 200    | Dedicated IPv4 and IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### EXCLUIR
+
+##### Summary
+
+Unlink dedicated IPv4 from the device
+
+##### Parâmetros
+
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
+
+| Código | Descrição                                            |
+| ------ | ---------------------------------------------------- |
+| 200    | Dedicated IPv4 successfully unlinked from the device |
+| 404    | Device or address not found                          |
+
+#### POST
+
+##### Summary
+
+Link dedicated IPv4 to the device
+
+##### Parâmetros
+
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
+
+| Código | Descrição                                        |
+| ------ | ------------------------------------------------ |
+| 200    | Dedicated IPv4 successfully linked to the device |
+| 400    | Falha na validação                               |
+| 404    | Device or address not found                      |
+| 429    | Linked dedicated IPv4 count reached the limit    |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### OBTER
@@ -139,6 +228,27 @@ Obtém o arquivo .mobileconfig DNS-over-HTTPS.
 | ------ | ----------------------------- |
 | 200    | Arquivo .plist DNS-over-HTTPS |
 | 404    | Dispositivo não encontrado    |
+
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Summary
+
+Generate and set new DNS-over-HTTPS password
+
+##### Parâmetros
+
+| Nome      | Localizado em | Descrição | Obrigatório | Esquema |
+| --------- | ------------- | --------- | ----------- | ------- |
+| device_id | path          |           | Sim         | linhas  |
+
+##### Respostas
+
+| Código | Descrição                                  |
+| ------ | ------------------------------------------ |
+| 200    | DNS-over-HTTPS password successfully reset |
+| 404    | Dispositivo não encontrado                 |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -337,6 +447,8 @@ Gera o token de acesso e de atualização
 | 400    | Parâmetros obrigatórios ausentes                                    |
 | 401    | Credenciais inválidas, token MFA ou token de atualização fornecidos |
 
+null
+
 ### /oapi/v1/query_log
 
 #### EXCLUIR
@@ -397,6 +509,8 @@ Revoga um token de atualização
 | Código | Descrição                |
 | ------ | ------------------------ |
 | 200    | Atualizar token revogado |
+
+null
 
 ### /oapi/v1/stats/categories
 

@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Current version: 1.8
+## Current Version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Gets account limits
 | Code | Description         |
 | ---- | ------------------- |
 | 200  | Account limits info |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### GET
+
+##### Summary
+
+Lists allocated dedicated IPv4 addresses
+
+##### Responses
+
+| Code | Description                      |
+| ---- | -------------------------------- |
+| 200  | List of dedicated IPv4 addresses |
+
+#### POST
+
+##### Summary
+
+Allocates new dedicated IPv4
+
+##### Responses
+
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | New IPv4 successfully allocated        |
+| 429  | Dedicated IPv4 count reached the limit |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Updates an existing device
 | 400  | Validation failed |
 | 404  | Device not found  |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### GET
+
+##### Summary
+
+List dedicated IPv4 and IPv6 addresses for a device
+
+##### Parameters
+
+| Name      | Located in | Description | Required | Schema |
+| --------- | ---------- | ----------- | -------- | ------ |
+| device_id | path       |             | Yes      | string |
+
+##### Responses
+
+| Code | Description             |
+| ---- | ----------------------- |
+| 200  | Dedicated IPv4 and IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### DELETE
+
+##### Summary
+
+Unlink dedicated IPv4 from the device
+
+##### Parameters
+
+| Name      | Located in | Description | Required | Schema |
+| --------- | ---------- | ----------- | -------- | ------ |
+| device_id | path       |             | Yes      | string |
+
+##### Responses
+
+| Code | Description                                          |
+| ---- | ---------------------------------------------------- |
+| 200  | Dedicated IPv4 successfully unlinked from the device |
+| 404  | Device or address not found                          |
+
+#### POST
+
+##### Summary
+
+Link dedicated IPv4 to the device
+
+##### Parameters
+
+| Name      | Located in | Description | Required | Schema |
+| --------- | ---------- | ----------- | -------- | ------ |
+| device_id | path       |             | Yes      | string |
+
+##### Responses
+
+| Code | Description                                      |
+| ---- | ------------------------------------------------ |
+| 200  | Dedicated IPv4 successfully linked to the device |
+| 400  | Validation failed                                |
+| 404  | Device or address not found                      |
+| 429  | Linked dedicated IPv4 count reached the limit    |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
@@ -139,6 +228,27 @@ Gets DNS-over-HTTPS .mobileconfig file.
 | ---- | -------------------------- |
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
+
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Summary
+
+Generate and set new DNS-over-HTTPS password
+
+##### Parameters
+
+| Name      | Located in | Description | Required | Schema |
+| --------- | ---------- | ----------- | -------- | ------ |
+| device_id | path       |             | Yes      | string |
+
+##### Responses
+
+| Code | Description                                |
+| ---- | ------------------------------------------ |
+| 200  | DNS-over-HTTPS password successfully reset |
+| 404  | Device not found                           |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -337,6 +447,8 @@ Generates Access and Refresh token
 | 400  | Missing required parameters                              |
 | 401  | Invalid credentials, MFA token or refresh token provided |
 
+null
+
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -397,6 +509,8 @@ Revokes a Refresh Token
 | Code | Description           |
 | ---- | --------------------- |
 | 200  | Refresh token revoked |
+
+null
 
 ### /oapi/v1/stats/categories
 

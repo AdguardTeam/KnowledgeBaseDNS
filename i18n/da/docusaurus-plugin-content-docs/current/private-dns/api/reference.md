@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/overview.md). Besøg [denne side](private-dns/api/changelog.md)for at se den komplette AdGuard DNS API-ændringslog.
 
-## Aktuel version: 1.8
+## Aktuel version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Henter kontokvoter
 | Kode | Beskrivelse           |
 | ---- | --------------------- |
 | 200  | Kontobegrænsningsinfo |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### GET
+
+##### Resumé
+
+Oplister alle tilgængelige dedikerede IPv4-adresser
+
+##### Svar
+
+| Kode | Beskrivelse                         |
+| ---- | ----------------------------------- |
+| 200  | Liste over dedikerede IPv4-adresser |
+
+#### POST
+
+##### Resumé
+
+Tildeler ny dedikeret IPv4-adresse
+
+##### Svar
+
+| Kode | Beskrivelse                      |
+| ---- | -------------------------------- |
+| 200  | Ny IPv4 er tildelt               |
+| 429  | Kvote for dedikeret IPv4 opbrugt |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Opdaterer en eksisterende enhed
 | 400  | Bekræftelse mislykkedes |
 | 404  | Enhed ikke fundet       |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### GET
+
+##### Resumé
+
+Oplist dedikerede IPv4- og IPv6-adresser til en enhed
+
+##### Parametre
+
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
+
+##### Svar
+
+| Kode | Beskrivelse             |
+| ---- | ----------------------- |
+| 200  | Dedikerede IPv4 og IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### SLET
+
+##### Resumé
+
+Fjern linket dedikeret IPv4 fra enheden
+
+##### Parametre
+
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
+
+##### Svar
+
+| Kode | Beskrivelse                                  |
+| ---- | -------------------------------------------- |
+| 200  | Linket dedikeret IPv4 er fjernet fra enheden |
+| 404  | Enhed eller adresse ikke fundet              |
+
+#### POST
+
+##### Resumé
+
+Link dedikeret IPv4 til enheden
+
+##### Parametre
+
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
+
+##### Svar
+
+| Kode | Beskrivelse                             |
+| ---- | --------------------------------------- |
+| 200  | Dedikeret IPv4 er linket til enheden    |
+| 400  | Bekræftelse mislykkedes                 |
+| 404  | Enhed eller adresse ikke fundet         |
+| 429  | Kvote for linket dedikeret IPv4 opbrugt |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
@@ -139,6 +228,27 @@ Henter DNS-over-HTTPS .mobileconfig-filen.
 | ---- | ------------------------- |
 | 200  | DNS-over-HTTPS .plist-fil |
 | 404  | Enhed ikke fundet         |
+
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Resumé
+
+Generér og angiv ny DNS-over-HTTPS adgangskode
+
+##### Parametre
+
+| Navn      | Placeret i | Beskrivelse | Obligatorisk | Struktur |
+| --------- | ---------- | ----------- | ------------ | -------- |
+| device_id | sti        |             | Ja           | streng   |
+
+##### Svar
+
+| Kode | Beskrivelse                              |
+| ---- | ---------------------------------------- |
+| 200  | DNS-over-HTTPS adgangskode er nulstillet |
+| 404  | Enhed ikke fundet                        |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -337,6 +447,8 @@ Genererer Access og Refresh tokener
 | 400  | Mangler obligatoriske parametre                                              |
 | 401  | Ugyldige legitimationsoplysninger, MFA-token eller opfriskningstoken angivet |
 
+null
+
 ### /oapi/v1/query_log
 
 #### SLET
@@ -397,6 +509,8 @@ Ophæver et Refresh-token
 | Kode | Beskrivelse           |
 | ---- | --------------------- |
 | 200  | Refresh-token ophævet |
+
+null
 
 ### /oapi/v1/stats/categories
 

@@ -61,50 +61,54 @@
   },
   "link.item.label.homepage": {
     "message": "Homepage",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/welcome.html"
+    "description": "The label of footer link with label=homepage linking to https://adguard-dns.io/welcome.html"
   },
   "link.item.label.pricing": {
     "message": "Pricing",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/license.html"
+    "description": "The label of footer link with label=pricing linking to https://adguard-dns.io/license.html"
   },
   "link.item.label.about_us": {
     "message": "About us",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/about.html"
+    "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.promo": {
     "message": "AdGuard promo activities",
-    "description": "The label of footer link with label=vpn linking to https://adguard.com/promopages.html"
+    "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
   },
   "link.item.label.media": {
     "message": "Media kits",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/media-materials.html"
+    "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
   },
   "link.item.label.press": {
     "message": "In the press",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/press-releases.html"
+    "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
   },
   "link.item.label.temp_mail": {
     "message": "AdGuard Temp Mail",
-    "description": "The label of footer link with label=vpn linking to https://adguard.com/adguard-temp-mail/overview.html"
+    "description": "The label of footer link with label=temp_mail linking to https://adguard.com/adguard-temp-mail/overview.html"
   },
   "link.item.label.adguard_home": {
     "message": "AdGuard Home",
-    "description": "The label of footer link with label=vpn linking to https://adguard.com/adguard-home/overview.html"
+    "description": "The label of footer link with label=adguard_home linking to https://adguard.com/adguard-home/overview.html"
   },
   "link.item.label.versions": {
     "message": "Version history",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/versions.html"
+    "description": "The label of footer link with label=versions linking to https://adguard-dns.io/versions.html"
   },
   "link.item.label.report": {
     "message": "Report an issue",
-    "description": "The label of footer link with label=vpn linking to https://reports.adguard.com/new_issue.html"
+    "description": "The label of footer link with label=report linking to https://reports.adguard.com/new_issue.html"
   },
   "link.item.label.refund": {
     "message": "Refund policy",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/terms-of-sale.html"
+    "description": "The label of footer link with label=refund linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms_and_conditions": {
     "message": "Terms and conditions",
-    "description": "The label of footer link with label=vpn linking to https://adguard-dns.io/terms-and-conditions.html"
+    "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
+  },
+  "copyright": {
+    "message": "© AdGuard DNS, 2024",
+    "description": "The footer copyright"
   }
 }

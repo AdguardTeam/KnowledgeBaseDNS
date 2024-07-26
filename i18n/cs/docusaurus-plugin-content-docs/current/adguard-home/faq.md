@@ -42,9 +42,9 @@ Pokud jste si jisti, že vaše zařízení používá AdGuard Home jako výchoz�
 
 6. Nemáte žádná vlastní pravidla filtrování, která by mohla zasahovat do _Filtrů_ → _Vlastních pravidel filtrování_.
 
-## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+## Co znamená “Blokováno CNAME nebo IP“ v záznamu dotazů? {#logs}
 
-AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+AdGuard Home kontroluje DNS požadavky i DNS odezvy, aby zabránil technice obcházení blokátoru reklam známé jako [CNAME cloaking][cname-cloak]. To znamená, že pokud vaše pravidla filtrování obsahují doménu, například `tracker.example`, a odezva DNS pro jiné doménové jméno, například `blogs.example`, obsahuje toto doménové jméno mezi záznamy CNAME, je tato odpověď zablokována, protože skutečně vede na blokovanou službu sledování.
 
 [cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Do not use subdirectories with the Apache reverse HTTP proxy.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+Nepoužívejte podadresáře s reverzním HTTP proxy Apache.  Je známý problém ([#6604]), že Apache zpracovává relativní přesměrování jinak než ostatní webové servery. To způsobuje problémy s webovým rozhraním AdGuard Home.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -351,9 +351,9 @@ Viz [issue 765] a [issue 3281].
 
 Měli byste přesunout instalaci nebo pracovní adresář AdGuard Home do jiného umístění. Viz část [omezení](getting-started.md#limitations) na stránce _Začínáme_.
 
-## What does `Error: control/version.json` mean? {#version-error}
+## Co znamená `Error: control/version.json`? {#version-error}
 
-This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+Tato chybová zpráva znamená, že se AdGuard Home nemohl spojit se servery AdGuardu, aby zkontroloval aktualizace a/nebo je stáhl. To může znamenat, že servery jsou blokovány vaším poskytovatelem internetových služeb nebo jsou dočasně mimo provoz. Pokud se chyba po nějaké době nevyřeší, můžete zkusit provést [ruční aktualizaci](#manual-update) nebo vypnout automatickou kontrolu aktualizací spuštěním spustitelného souboru `AdGuardHome` s příkazem `--no-check-update`.
 
 ## Jak mohu AdGuard Home aktualizovat ručně? {#manual-update}
 

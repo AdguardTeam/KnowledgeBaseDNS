@@ -125,7 +125,7 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. A na konec `dnstype=A` je [`dnstype`][] s jeho hodnotou `A`.
+  `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `client=127.0.0.1` je modifikátor [`client`][] s jeho hodnotou, `127.0.0.1`. `,` je oddělovač mezi modifikátory. A na konec `dnstype=A` je [`dnstype`][] s jeho hodnotou `A`.
 
 **POZNÁMKA:** pokud pravidlo obsahuje modifikátor, který není uveden v tomto dokumentu, musí být celé pravidlo **ignorováno**. Tímto způsobem se vyhneme falešně pozitivním výsledkům, když se lidé pokoušejí používat seznamy filtrů nemodifikovaných blokátorů reklam v prohlížečích, jako je EasyList nebo EasyPrivacy.
 

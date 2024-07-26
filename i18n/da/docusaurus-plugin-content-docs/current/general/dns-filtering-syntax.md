@@ -125,7 +125,7 @@ Adfærden for en regel kan ændres ved at tilføje modifikatorer. Modifikatorer 
   ||eksempel.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. Og til sidst er `dnstype=A` [`dnstype`][]-modifikatoren med sin værdi `A`.
+  `||eksempel.org^` er det matchende mønster. `$` er afgrænsningstegnet, der signalerer, at resten af reglen er modifikatorer. `client=127.0.0.1` er [`klient`][]-modifikatoren med dens værdi, `127.0.0.1`. `,` er afgrænsningen mellem modifikatorer. Og til sidst er `dnstype=A` [`dnstype`][]-modifikatoren med sin værdi `A`.
 
 **BEMÆRK:** Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal hele regel **ignoreres**. På denne måde undgås falske positiver, når folk forsøger at bruge umodificerede browser-adblockingfilterlister, såsom EasyList eller EasyPrivacy.
 
@@ -503,7 +503,7 @@ Hvad den er i stand til:
 <!-- external links -->
 [Adblock-syntakstype]: #adblock-style-syntax
 [Adblock-syntakstypen]: #adblock-style-syntax
-[`client`]: #client-modifier
+[`klient`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 [AdGuard DNS-filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist-kompiler]: https://github.com/AdguardTeam/HostlistCompiler
