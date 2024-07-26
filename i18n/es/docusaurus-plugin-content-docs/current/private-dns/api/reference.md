@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Current version: 1.8
+## Current Version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Gets account limits
 | Código | Descripción         |
 | ------ | ------------------- |
 | 200    | Account limits info |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### GET
+
+##### Summary
+
+Lists allocated dedicated IPv4 addresses
+
+##### Respuestas
+
+| Código | Descripción                      |
+| ------ | -------------------------------- |
+| 200    | List of dedicated IPv4 addresses |
+
+#### POST
+
+##### Summary
+
+Allocates new dedicated IPv4
+
+##### Respuestas
+
+| Código | Descripción                            |
+| ------ | -------------------------------------- |
+| 200    | New IPv4 successfully allocated        |
+| 429    | Dedicated IPv4 count reached the limit |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Actualiza un dispositivo existente
 | 400    | Validación fallida        |
 | 404    | Dispositivo no encontrado |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### GET
+
+##### Summary
+
+List dedicated IPv4 and IPv6 addresses for a device
+
+##### Parámetros
+
+| Nombre    | Ubicado en | Descripción | Requerido | Esquema |
+| --------- | ---------- | ----------- | --------- | ------- |
+| device_id | path       |             | Sí        | string  |
+
+##### Respuestas
+
+| Código | Descripción             |
+| ------ | ----------------------- |
+| 200    | Dedicated IPv4 and IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### DELETE
+
+##### Summary
+
+Unlink dedicated IPv4 from the device
+
+##### Parámetros
+
+| Nombre    | Ubicado en | Descripción | Requerido | Esquema |
+| --------- | ---------- | ----------- | --------- | ------- |
+| device_id | path       |             | Sí        | linha   |
+
+##### Respuestas
+
+| Código | Descripción                                          |
+| ------ | ---------------------------------------------------- |
+| 200    | Dedicated IPv4 successfully unlinked from the device |
+| 404    | Device or address not found                          |
+
+#### POST
+
+##### Summary
+
+Link dedicated IPv4 to the device
+
+##### Parámetros
+
+| Nombre    | Ubicado en | Descripción | Requerido | Esquema |
+| --------- | ---------- | ----------- | --------- | ------- |
+| device_id | path       |             | Sí        | linha   |
+
+##### Respuestas
+
+| Código | Descripción                                      |
+| ------ | ------------------------------------------------ |
+| 200    | Dedicated IPv4 successfully linked to the device |
+| 400    | Validación fallida                               |
+| 404    | Device or address not found                      |
+| 429    | Linked dedicated IPv4 count reached the limit    |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
@@ -140,9 +229,30 @@ Obtiene el archivo DNS-over-HTTPS .mobileconfig.
 | 200    | Archivo .plist DNS-sobre-HTTPS |
 | 404    | Dispositivo no encontrado      |
 
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Summary
+
+Generate and set new DNS-over-HTTPS password
+
+##### Parámetros
+
+| Nombre    | Ubicado en | Descripción | Requerido | Esquema |
+| --------- | ---------- | ----------- | --------- | ------- |
+| device_id | path       |             | Sí        | string  |
+
+##### Respuestas
+
+| Código | Descripción                                |
+| ------ | ------------------------------------------ |
+| 200    | DNS-over-HTTPS password successfully reset |
+| 404    | Dispositivo no encontrado                  |
+
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
-#### GET
+#### OBTENER
 
 ##### Summary
 
@@ -152,7 +262,7 @@ Obtiene el archivo .mobileconfig de DNS-over-TLS.
 
 | Nombre                  | Ubicado en | Descripción                                                                            | Requerido | Esquema   |
 | ----------------------- | ---------- | -------------------------------------------------------------------------------------- | --------- | --------- |
-| device_id               | path       |                                                                                        | Sí        | linha     |
+| device_id               | path       |                                                                                        | Sí        | string    |
 | exclude_wifi_networks | consulta   | Enumera las redes Wi-Fi por su SSID, en las que deseas deshabilitar AdGuard DNS        | No        | [ linha ] |
 | exclude_domain          | consulta   | Enumera los dominios que usarán servidores DNS predeterminados en lugar de AdGuard DNS | No        | [ linha ] |
 
@@ -175,7 +285,7 @@ Actualiza la configuración del dispositivo
 
 | Nombre    | Ubicado en | Descripción | Requerido | Esquema |
 | --------- | ---------- | ----------- | --------- | ------- |
-| device_id | path       |             | Sí        | linha   |
+| device_id | path       |             | Sí        | string  |
 
 ##### Respuestas
 
@@ -187,7 +297,7 @@ Actualiza la configuración del dispositivo
 
 ### /oapi/v1/dns_servers
 
-#### GET
+#### OBTENER
 
 ##### Summary
 
@@ -337,6 +447,8 @@ Genera un token de Acceso y Actualización
 | 400    | Missing required parameters                              |
 | 401    | Invalid credentials, MFA token or refresh token provided |
 
+null
+
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -351,7 +463,7 @@ Clears query log
 | ------ | --------------------- |
 | 202    | Query log was cleared |
 
-#### OBTENER
+#### GET
 
 ##### Summary
 
@@ -368,9 +480,9 @@ Gets query log
 | companies          | consulta   | Filter by companies                                                        | No        | [ string ]                                          |
 | statuses           | consulta   | Filter by statuses                                                         | No        | [ [FilteringActionStatus](#FilteringActionStatus) ] |
 | categories         | consulta   | Filter by categories                                                       | No        | [ [CategoryType](#CategoryType) ]                   |
-| search             | consulta   | Filtrar por nombre de dominio                                              | No        | string                                              |
+| search             | consulta   | Filtrar por nombre de dominio                                              | No        | linha                                               |
 | limit              | consulta   | Limit the number of records to be returned                                 | No        | integer                                             |
-| cursor             | consulta   | Pagination cursor. Use cursor from response to paginate through the pages. | No        | string                                              |
+| cursor             | consulta   | Pagination cursor. Use cursor from response to paginate through the pages. | No        | linha                                               |
 
 ##### Respuestas
 
@@ -390,7 +502,7 @@ Revokes a Refresh Token
 
 | Nombre        | Ubicado en | Descripción   | Requerido | Esquema |
 | ------------- | ---------- | ------------- | --------- | ------- |
-| refresh_token | consulta   | Refresh Token | Sí        | string  |
+| refresh_token | consulta   | Refresh Token | Sí        | linha   |
 
 ##### Respuestas
 
@@ -398,9 +510,11 @@ Revokes a Refresh Token
 | ------ | --------------------- |
 | 200    | Refresh token revoked |
 
+null
+
 ### /oapi/v1/stats/categories
 
-#### OBTENER
+#### GET
 
 ##### Summary
 
@@ -462,7 +576,7 @@ Gets detailed companies statistics
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
 | devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
-| cursor             | consulta   | Pagination cursor                     | No        | string     |
+| cursor             | consulta   | Pagination cursor                     | No        | linha      |
 
 ##### Respuestas
 
@@ -486,7 +600,7 @@ Gets countries statistics
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
 | devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
 
 ##### Respuestas
 
@@ -509,8 +623,8 @@ Gets devices statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
 
 ##### Respuestas
 
@@ -533,8 +647,8 @@ Gets domains statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| devices            | consulta   | Filter by devices                     | No        | [ string ] |
+| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
 
 ##### Respuestas
 
@@ -557,7 +671,7 @@ Gets time statistics
 | ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
 | time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
 | time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
+| devices            | consulta   | Filter by devices                     | No        | [ string ] |
 | countries          | consulta   | Filter by countries                   | No        | [ string ] |
 
 ##### Respuestas

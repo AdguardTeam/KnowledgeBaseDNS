@@ -256,13 +256,13 @@ Blokerer ondsindede samt phishing- og spam-domæner.
 
 #### Standard
 
-| Protokol             | Adresse                                          |                                                                                                                                                                                                                                                                       |
-| -------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `1.1.1.1` og `1.0.0.1`                           | [Føj til AdGuard](adguard:add_dns_server?address=1.1.1.1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.1&name=)                                                                                                                               |
-| DNS, IPv6            | `2606:4700:4700::1111` og `2606:4700:4700::1001` | [Føj til AdGuard](adguard:add_dns_server?address=2606:4700:4700::1111&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1111&name=)                                                                                                     |
-| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com)                                 |
-| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com)                           |
-| DNS-over-TLS         | `tls://1dot1dot1dot1.cloudflare-dns.com`         | [Føj til AdGuard](adguard:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://1dot1dot1dot1.cloudflare-dns.com&name=1dot1dot1dot1.cloudflare-dns.com) |
+| Protokol             | Adresse                                          |                                                                                                                                                                                                                                             |
+| -------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `1.1.1.1` og `1.0.0.1`                           | [Føj til AdGuard](adguard:add_dns_server?address=1.1.1.1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.1&name=)                                                                                                     |
+| DNS, IPv6            | `2606:4700:4700::1111` og `2606:4700:4700::1001` | [Føj til AdGuard](adguard:add_dns_server?address=2606:4700:4700::1111&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1111&name=)                                                                           |
+| DNS-over-HTTPS, IPv4 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com/dns-query&name=dns.cloudflare.com)       |
+| DNS-over-HTTPS, IPv6 | `https://dns.cloudflare.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com) |
+| DNS-over-TLS         | `tls://one.one.one.one`                          | [Føj til AdGuard](adguard:add_dns_server?address=tls://one.one.one.one&name=CloudflareDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://one.one.one.one&name=CloudflareDoT)                                               |
 
 #### Kun malware-blokering
 
@@ -385,7 +385,7 @@ Disse servere bruger noget logning, selvsignerede certifikater eller ingen under
 | DNS, IPv4      | `185.222.222.222` og `45.11.45.11` | [Føj til AdGuard](adguard:add_dns_server?address=185.222.222.222&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=185.222.222.222&name=)                                               |
 | DNS, IPv6      | `2a09::` og `2a11::`               | [Føj til AdGuard](adguard:add_dns_server?address=2a09::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a09::&name=)                                                                 |
 | DNS-over-HTTPS | `https://doh.dns.sb/dns-query`     | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.dns.sb/dns-query&name=doh.dns.sb), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.dns.sb/dns-query&name=doh.dns.sb) |
-| DNS-over-TLS   | `tls://185.222.222.222`            | [Føj til AdGuard](adguard:add_dns_server?address=tls://185.222.222.222&name=185.222.222.222), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://185.222.222.222&name=185.222.222.222)     |
+| DNS-over-TLS   | `tls://dot.sb`                     | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.sb&name=dot.sb), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.sb&name=dot.sb)                                         |
 
 ### DNSPod Public DNS+
 
@@ -446,21 +446,49 @@ Hurricane Electric Public Recursor er en gratis alternativ DNS-tjeneste fra Hurr
 
 ### Mullvad
 
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) leverer offentligt tilgængelig DNS med QNAME-minimering, endepunketer placeret i Australien, Singapore, Storbritannien, Sverige, Tyskland og USA (New York og Los Angeles).
+[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) leverer offentligt tilgængelig DNS med QNAME-minimering, endepunkter placeret i Singapore, Storbritannien, Sverige, Tyskland og USA (Dallas og New York).
 
 #### Ikke-filtrerende
 
-| Protokol       | Adresse                             |                                                                                                                                                                                                                           |
-| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.mullvad.net/dns-query&name=doh.mullvad.net) |
-| DNS-over-TLS   | `tls://doh.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://doh.mullvad.net&name=doh.mullvad.net)                         |
+| Protokol       | Adresse                             |                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH) |
+| DNS-over-TLS   | `tls://dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT)                         |
 
 #### Adblocking
 
 | Protokol       | Adresse                                     |                                                                                                                                                                                                                                                           |
 | -------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://adblock.doh.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://adblock.doh.mullvad.net/dns-query&name=adblock.doh.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.doh.mullvad.net/dns-query&name=adblock.doh.mullvad.net) |
-| DNS-over-TLS   | `tls://adblock.doh.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://adblock.doh.mullvad.net&name=adblock.doh.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.doh.mullvad.net&name=adblock.doh.mullvad.net)                         |
+| DNS-over-HTTPS | `https://adblock.dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://adblock.dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net)                         |
+
+#### Annonce- + malware-blokering
+
+| Protokol       | Adresse                                  |                                                                                                                                                                                                                                               |
+| -------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://base.dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://base.dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net)                         |
+
+#### Annonce- + malware- + sociale medier-blokering
+
+| Protokol       | Adresse                                      |                                                                                                                                                                                                                                                               |
+| -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://extended.dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://extended.dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net)                         |
+
+#### Annonce- + malware- + voksen- + hasardspilsblokering
+
+| Protokol       | Adresse                                    |                                                                                                                                                                                                                                                       |
+| -------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://family.dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://family.dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net)                         |
+
+#### Annonce- + malware- + voksen- + hasardspils- + sociale medier-blokering
+
+| Protokol       | Adresse                                 |                                                                                                                                                                                                                                           |
+| -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://all.dns.mullvad.net/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net) |
+| DNS-over-TLS   | `tls://all.dns.mullvad.net`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net)                         |
 
 ### Nawala Childprotection DNS
 
@@ -540,7 +568,7 @@ Disse servere blokerer uønsket og tidsspildende indhold samt inkluderer funktio
 
 ### OpenBLD.net DNS
 
-[OpenBLD.net DNS](https://openbld.net/) — Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS resolvers with blocking: advertising, tracking, adware, malware, malicious activities and phishing companies, blocks ~1M domains. Har 24/48 timers logfiler til imødegåelse af DDoS/oversvømmelsesangreb.
+[OpenBLD.net DNS](https://openbld.net/) — Anycast/GeoDNS DNS-over-HTTPS, DNS-over-TLS opløsere med blokering: Annoncer, sporing, adware, malware, ondsindede aktiviteter og phishing-virksomheder. Blokerer ~1M domæner. Har 24/48 timers logfiler til imødegåelse af DDoS/oversvømmelsesangreb.
 
 #### Adaptiv filtrering (ADA)
 
@@ -553,7 +581,7 @@ Anbefales til de fleste brugere, meget fleksibel filtrering med blokering af de 
 
 #### Stringent filtrering (RIC)
 
-More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
+Mere strikse filtreringspolitikker med blokering — reklame-, marketing-, tracking-, malware-, clickbait-, Coinhive- og phishing-domæner.
 
 | Protokol       | Adresse                             |                                                                               |
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
@@ -1127,3 +1155,14 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 | DNS, IPv4      | `45.76.113.31`                                            | [Føj til AdGuard](adguard:add_dns_server?address=45.76.113.31&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=45.76.113.31&name=)                                                         |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [Føj til AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8)                                                                 |
 | DNS-over-TLS   | `tls://dot.seby.io`                                       | [Føj til AdGuard](adguard:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io) |
+
+### BlackMagicc DNS
+
+[BlackMagicc DNS](https://bento.me/blackmagicc) er en personlig DNS-server placeret i Vietnam og beregnet til personlig brug samt brug i mindre omfang. Det har adblocking, malware-/phishing-beskyttelse, voksenindholdsfilter og DNSSEC-validering.
+
+| Protokol       | Adresse                                    |                                                                                                                                                                                                                                     |
+| -------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `103.178.234.160`                          | [Føj til AdGuard](adguard:add_dns_server?address=103.178.234.160&name=BlacMagiccDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=103.178.234.160&name=BlacMagiccDNS)                                                   |
+| DNS, IPv6      | `2405:19c0:2:ea2e::1`                      | [Føj til AdGuard](adguard:add_dns_server?address=2405:19c0:2:ea2e::1&name=BlacMagiccDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2405:19c0:2:ea2e::1&name=BlacMagiccDNS)                                           |
+| DNS-over-HTTPS | `https://robin.techomespace.com/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://robin.techomespace.com/dns-query&name=BlacMagiccDoH), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://robin.techomespace.com/dns-query&name=BlacMagiccDoH) |
+| DNS-over-TLS   | `tls://robin.techomespace.com:853`         | [Føj til AdGuard](adguard:add_dns_server?address=tls://robin.techomespace.com:853&name=BlacMagiccDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://robin.techomespace.com:853&name=BlacMagiccDoT)                 |

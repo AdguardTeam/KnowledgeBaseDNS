@@ -23,7 +23,7 @@ Privat AdGuard DNS tilbyder alle fordelene ved en offentlig AdGuard DNS-server, 
 
 I dag kan alt tilsluttes internet: TV, køleskabe, køleskabe, smarte pærer eller højttalere. Men sammen med de ubestridelige bekvemmeligheder kommer trackere og annoncer. En simpel browserbaseret adblocker yder ikke beskyttelse i dette tilfælde, hvorimod AdGuard DNS — som kan opsættes til at filtrere trafik, blokere indhold og trackere — fungerer på systemniveau.
 
-På et tidspunkt omfattede AdGuard-produktlinjen kun [Public AdGuard DNS](../public-dns/overview.md) og [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. Det er hér, at Private AdGuard DNS kommer ind i billedet. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+På et tidspunkt omfattede AdGuard-produktlinjen kun [Public AdGuard DNS](../public-dns/overview.md) og [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. Det er hér, at Private AdGuard DNS kommer ind i billedet. Den har det bedste fra begge verdener: Den tilbyder tilpasningsmuligheder, styring og information — alt sammen via et enkelt, brugervenligt kontrolpanel.
 
 ### Forskellene mellem Public og Private AdGuard DNS
 
@@ -90,7 +90,7 @@ En hjemme IP-adresse er en IP-adresse tildelt en enhed, der er tilsluttet en pri
 
 :::
 
-If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
+Forsøges en hjemme IP-adresse linket uden at AdGuard DNS vil tillader dette, bedes vores supportteam kontaktet via support@adguard-dns.io.
 
 ## Private AdGuard DNS-funktioner
 

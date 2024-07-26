@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overview.md). Pro kompletní seznam změn AdGuard DNS API navštivte [tuto stránku](private-dns/api/changelog.md).
 
-## Aktuální verze: 1.8
+## Aktuální verze: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -28,6 +28,33 @@ Zjišťuje limity účtu
 | Kód | Popis                     |
 | --- | ------------------------- |
 | 200 | Informace o limitech účtu |
+
+### /oapi/v1/dedicated_addresses/ipv4
+
+#### GET
+
+##### Shrnutí
+
+Seznamy přidělených vyhrazených adres IPv4
+
+##### Odezvy
+
+| Kód | Popis                         |
+| --- | ----------------------------- |
+| 200 | Seznam vyhrazených adres IPv4 |
+
+#### POST
+
+##### Shrnutí
+
+Přiděluje nové vyhrazené IPv4
+
+##### Odezvy
+
+| Kód | Popis                                |
+| --- | ------------------------------------ |
+| 200 | Nová IPv4 byla úspěšně přidělena     |
+| 429 | Počet vyhrazených IPv4 dosáhl limitu |
 
 ### /oapi/v1/devices
 
@@ -117,6 +144,68 @@ Aktualizuje existující zařízení
 | 400 | Ověření se nezdařilo   |
 | 404 | Zařízení nenalezeno    |
 
+### /oapi/v1/devices/{device_id}/dedicated_addresses
+
+#### GET
+
+##### Shrnutí
+
+Seznam vyhrazených adres IPv4 a IPv6 pro zařízení
+
+##### Parametry
+
+| Název     | Umístěno v | Popis | Požadováno | Schéma  |
+| --------- | ---------- | ----- | ---------- | ------- |
+| device_id | cesta      |       | Ano        | řetězec |
+
+##### Odezvy
+
+| Kód | Popis                 |
+| --- | --------------------- |
+| 200 | Vyhrazené IPv4 a IPv6 |
+
+### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+
+#### DELETE
+
+##### Shrnutí
+
+Odpojení vyhrazené IPv4 od zařízení
+
+##### Parametry
+
+| Název     | Umístěno v | Popis | Požadováno | Schéma  |
+| --------- | ---------- | ----- | ---------- | ------- |
+| device_id | cesta      |       | Ano        | řetězec |
+
+##### Odezvy
+
+| Kód | Popis                                            |
+| --- | ------------------------------------------------ |
+| 200 | Vyhrazená IPv4 byla úspěšně odpojena od zařízení |
+| 404 | Zařízení nebo adresa nalezeny                    |
+
+#### POST
+
+##### Shrnutí
+
+Připojení vyhrazené IPv4 k zařízení
+
+##### Parametry
+
+| Název     | Umístěno v | Popis | Požadováno | Schéma  |
+| --------- | ---------- | ----- | ---------- | ------- |
+| device_id | cesta      |       | Ano        | řetězec |
+
+##### Odezvy
+
+| Kód | Popis                                            |
+| --- | ------------------------------------------------ |
+| 200 | Vyhrazená IPv4 byla úspěšně připojena zařízení   |
+| 400 | Ověření se nezdařilo                             |
+| 404 | Zařízení nebo adresa nalezeny                    |
+| 429 | Počet vyhrazených připojených IPv4 dosáhl limitu |
+
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
@@ -139,6 +228,27 @@ Získá soubor .mobileconfig DNS-over-HTTPS.
 | --- | ---------------------------- |
 | 200 | Soubor .plist DNS-over-HTTPS |
 | 404 | Zařízení nenalezeno          |
+
+### /oapi/v1/devices/{device_id}/doh_password/reset
+
+#### PUT
+
+##### Shrnutí
+
+Generování a nastavení nového hesla DNS-over-HTTPS
+
+##### Parametry
+
+| Název     | Umístěno v | Popis | Požadováno | Schéma  |
+| --------- | ---------- | ----- | ---------- | ------- |
+| device_id | cesta      |       | Ano        | řetězec |
+
+##### Odezvy
+
+| Kód | Popis                                   |
+| --- | --------------------------------------- |
+| 200 | Heslo DNS-over-HTTPS úspěšně resetováno |
+| 404 | Zařízení nenalezeno                     |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -337,6 +447,8 @@ Vygeneruje přístupový a obnovovací token
 | 400 | Chybějící požadované parametry                              |
 | 401 | Neplatná pověření, poskytnutý token MFA nebo obnovený token |
 
+null
+
 ### /oapi/v1/query_log
 
 #### DELETE
@@ -397,6 +509,8 @@ Odvolá obnovovací token
 | Kód | Popis                    |
 | --- | ------------------------ |
 | 200 | Obnovovací token odvolán |
+
+null
 
 ### /oapi/v1/stats/categories
 

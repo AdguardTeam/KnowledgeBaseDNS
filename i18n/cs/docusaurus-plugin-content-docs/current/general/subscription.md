@@ -1,11 +1,11 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Jak zakoupit, upgradovat nebo získat vrácení peněz
 sidebar_position: 4
 ---
 
 ## Jak zakoupit tarif {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). Platit můžete kartami Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay a UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Tarify lze obnovovat měsíčně nebo ročně.
+Tarify AdGuard DNS lze zakoupit na [adguard-dns.io](https://adguard-dns.io/license.html). Platit můžete kartami Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay a UnionPay. Přijímáme také následující kryptoměny: Ethereum, Litecoin a Tether. Tarify lze obnovovat měsíčně nebo ročně.
 
 Tarif Personal je zdarma pro uživatele s placenýcm tarifem [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
@@ -22,7 +22,7 @@ Tarif _Enterprise_ je k dispozici pouze na vyžádání. Pokud máte zájem, vyp
 
 ## Jak získat refundaci {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. Doba zpracování obvykle trvá 5-10 pracovních dnů.
+V souladu s našimi [Podmínkami prodeje](https://adguard-dns.io/terms-of-sale.html) můžete získat 100% náhradu za všechny roční tarify AdGuard DNS zakoupené na skrze https://adguard-dns.io/. Chcete-li získat zpět peníze, musíte kontaktovat podporu na adrese support@adguard-dns.io a uvést způsob platby, který jste použili. Doba zpracování obvykle trvá 5-10 pracovních dnů.
 
 Refundace může být zamítnuta, pokud:
 

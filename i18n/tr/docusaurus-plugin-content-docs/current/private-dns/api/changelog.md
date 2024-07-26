@@ -12,6 +12,13 @@ toc_max_heading_level: 3
 
 Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik günlüğünü içerir.
 
+## v1.9 (11 Temmuz 2024)
+
+- Otomatik cihaz bağlantısı işlevi eklendi:
+  - Yeni DNS sunucusu ayarı — `auto_connect_devices_enabled`, belirli bir bağlantı türü aracılığıyla cihazların otomatik olarak bağlanmasının onaylanmasına olanak tanır
+  - Cihazda yeni alan — `auto_device`, cihazın otomatik olarak bağlandığını gösterir
+- CategoryQueriesStats içindeki `queries`, AccountLimits içindeki `used` ve QueriesStats içindeki `blocked` ve `queries` için `int` değeri `long` ile değiştirildi
+
 ## v1.8
 
 _20 Nisan 2024 tarihinde yayınlandı_

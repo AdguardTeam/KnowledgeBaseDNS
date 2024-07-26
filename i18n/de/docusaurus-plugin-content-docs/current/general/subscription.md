@@ -1,31 +1,31 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Kauf, Umstieg oder Rückerstattung
 sidebar_position: 4
 ---
 
-## How to purchase a plan {#purchase}
+## So erwerben Sie ein Abonnement {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
+AdGuard DNS- Abonnements können auf [adguard-dns.io](https://adguard-dns.io/license.html) erworben werden. Sie können mit Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay und UnionPay bezahlen. Wir akzeptieren auch die folgenden Kryptowährungen: Ethereum, Litecoin, und Tether. Die Pakete können auf monatlicher oder jährlicher Basis verlängert werden.
 
-The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
+Der Tarif Personal ist für zahlende Nutzer von [AdGuard VPN](https://adguard-vpn.com/welcome.html) kostenlos.
 
-## How to upgrade a plan {#upgrade}
+## So erweitern Sie ein Abonnement {#upgrade}
 
-To make the most out of AdGuard DNS, you can upgrade your plan for the following benefits:
+Um das Beste aus AdGuard DNS herauszuholen, können Sie Ihr Paket um die folgenden Vorteile erweitern:
 
-- To gain access to 2 dedicated IPv4 addresses and extend the number of devices, monthly requests, rules, and servers, you can **upgrade your plan to Team**
-- For more dedicated IPv4 addresses and an unlimited number of requests, devices, rules, and servers, **upgrade your plan to Enterprise**
+- Um Zugang zu 2 dedizierten IPv4-Adressen zu erhalten und die Anzahl der Geräte, monatlichen Anfragen, Regeln und Server zu erweitern, können Sie **Ihr Paket auf Team erweitern**
+- Wenn Sie weitere dedizierte IPv4-Adressen und eine unbegrenzte Anzahl von Anfragen, Geräten, Regeln und Servern benötigen, **erweitern Sie Ihr Paket auf Enterprise**
 
-You can upgrade your plan in your [AdGuard account](https://my.adguard.com/account/licenses). To do so, click _Upgrade_ under the section _AdGuard DNS_.
+Sie können Ihr Abonnement in Ihrem [AdGuard-Konto](https://my.adguard.com/account/licenses) erweitern. Klicken Sie dazu auf _Erweitern_ unter dem Abschnitt _AdGuard DNS_.
 
-The _Enterprise_ plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
+Der Tarif _Enterprise_ ist nur auf Anfrage erhältlich. Wenn Sie Interesse haben, füllen Sie bitte unser [Formular](https://surveys.adguard.com/dns_enterprise/form.html) aus und machen Sie einige Angaben zu Ihrem Unternehmen. Sobald wir Ihre Einsendung erhalten haben, werden wir Sie mit zusätzlichen Informationen kontaktieren.
 
-## How to get a refund {#refund}
+## So erhalten Sie eine Erstattung {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+In Übereinstimmung mit unseren [Verkaufsbedingungen] (https://adguard-dns.io/terms-of-sale.html) können Sie eine 100%ige Rückerstattung für alle AdGuard DNS- Jahresabonnements erhalten, die unter https://adguard-dns.io/ gekauft wurden. Um eine Rückerstattung zu erhalten, müssen Sie sich an den Kundendienst unter support@adguard-dns.io wenden und dabei die von Ihnen verwendete Zahlungsmethode angeben. Die Bearbeitungszeit beträgt in der Regel bis zu 5-10 Werktage.
 
-A refund may be declined if:
+Eine Erstattung kann abgelehnt werden, wenn:
 
-- A subscription was purchased more than 30 days ago
-- A subscription was purchased from a distributor
-- You applied for a partial refund for a renewal or upgrade
+- Ein Abonnement wurde vor mehr als 30 Tagen erworben
+- Ein Abonnement wurde bei einem Vertriebshändler erworben
+- Sie haben eine Teilerstattung für eine Erneuerung oder eine Erweiterung beantragt

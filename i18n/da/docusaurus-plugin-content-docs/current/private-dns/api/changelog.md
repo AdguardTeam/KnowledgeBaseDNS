@@ -12,6 +12,13 @@ toc_max_heading_level: 3
 
 Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.9 (11. juli 2024)
+
+- Tilføjet automatisk enhedstilslutningsfunktion:
+  - Ny DNS-serverindstilling — `auto_connect_devices_enabled`, der tillader godkendelse af automatisk tilslutning af enheder via en specifik linktype
+  - Nyt felt i Enhed — `auto_device`, der angiver, at enheden automatisk tilsluttes
+- Erstattet `int` med `long` for `queries` i CategoryQueriesStats, for `used` i AccountLimits samt for `blocked` og `queries` i QueriesStats
+
 ## v1.8
 
 _Udgivet 20. april 2024_

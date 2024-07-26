@@ -1,31 +1,31 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Как купить, обновить подписку или вернуть деньги
 sidebar_position: 4
 ---
 
-## How to purchase a plan {#purchase}
+## Как купить подписку {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
+Подписки AdGuard DNS можно приобрести на сайте [adguard-dns.io](https://adguard-dns.io/license.html). Вы можете оплатить покупку с помощью Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay и UnionPay. Мы также принимаем следующие криптовалюты: Ethereum, Litecoin и Tether. Подписки можно продлевать раз в месяц или год.
 
-The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
+Персональная подписка бесплатна для платных пользователей [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
-## How to upgrade a plan {#upgrade}
+## Как улучшить подписку {#upgrade}
 
-To make the most out of AdGuard DNS, you can upgrade your plan for the following benefits:
+Чтобы использовать максимум возможностей продуктов AdGuard DNS, вы можете улучшить подписку:
 
-- To gain access to 2 dedicated IPv4 addresses and extend the number of devices, monthly requests, rules, and servers, you can **upgrade your plan to Team**
-- For more dedicated IPv4 addresses and an unlimited number of requests, devices, rules, and servers, **upgrade your plan to Enterprise**
+- Чтобы получить доступ к двум выделенным адресам IPv4 и увеличить количество устройств, ежемесячных запросов, правил и серверов, вы можете **улучшить свою подписку до Командной**
+- Чтобы получить больше выделенных адресов IPv4 и неограниченное количество запросов, устройств, правил и серверов, **улучшите подписку до Корпоративной**
 
-You can upgrade your plan in your [AdGuard account](https://my.adguard.com/account/licenses). To do so, click _Upgrade_ under the section _AdGuard DNS_.
+Вы можете улучшить подписку [в личном кабинете AdGuard](https://my.adguard.com/account/licenses). Для этого нажмите _Улучшить_ в разделе _AdGuard DNS_.
 
-The _Enterprise_ plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
+_Корпоративная_ подписка доступна только по запросу. Если вам заинтересно, пожалуйста, заполните нашу [форму](https://surveys.adguard.com/dns_enterprise/form.html) и расскажите подробнее о вашей компании. Как только мы получим вашу заявку, мы свяжемся с вами и предоставим дополнительную информацию.
 
-## How to get a refund {#refund}
+## Как вернуть деньги {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+В соответствии с нашей [Публичной офертой](https://adguard-dns.io/terms-of-sale.html) вы можете получить полностью вернуть средства за любые годовые подписки AdGuard DNS, приобретённые на https://adguard-dns.io/. Чтобы вернуть деньги, обратитесь в поддержку по адресу support@adguard-dns.io, указав способ оплаты, который вы использовали. Срок обработки обычно занимает до 5–10 рабочих дней.
 
-A refund may be declined if:
+В возврате может быть отказано, если:
 
-- A subscription was purchased more than 30 days ago
-- A subscription was purchased from a distributor
-- You applied for a partial refund for a renewal or upgrade
+- Подписка была приобретена более 30 дней назад
+- Подписка была приобретена у дистрибьютора
+- Вы подали заявку на частичный возврат средств за улучшение или продление подписки

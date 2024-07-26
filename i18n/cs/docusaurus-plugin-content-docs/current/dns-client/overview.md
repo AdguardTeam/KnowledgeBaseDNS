@@ -5,59 +5,59 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## What is AdGuard DNS Client?
+## Co je AdGuard DNS Client?
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+Lehký multiplatformní klient DNS pro [AdGuard DNS][agdns]. Funguje jako DNS server, který předává požadavky DNS odpovídajícím odchozím řešitelům.
 
 [agdns]: https://adguard-dns.io
 
-## Quick start {#start}
+## Rychlé spuštění {#start}
 
 :::caution
 
-AdGuard DNS Client is still in the Beta stage. It may be unstable.
+AdGuard DNS Client je stále ve fázi beta. Může být nestabilní.
 
 :::
 
-Supported operating systems:
+Podporované operační systémy:
 
 - Linux
 - macOS
 - Windows
 
-Supported CPU architectures:
+Podporované architektury CPU:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Getting started {#start-basic}
+## Začínáme {#start-basic}
 
-### Unix-like operating systems {#start-basic-unix}
+### Operační systémy podobné Unixu {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. Stáhněte a rozbalte archiv `.tar.gz` nebo `.zip` ze [stránky vydání][releases].
 
    :::caution
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   V macOS je zásadní, aby globálně nainstalované démony vlastnil `root` (viz dokumentace [`launchd`][launchd-requirements]), takže spustitelný soubor `AdGuardDNSClient` musí být umístěn v adresáři `/Applications/` nebo jeho podadresář.
 
    :::
 
-2. Install it as a service by running:
+2. Nainstalujte jej jako službu spuštěním:
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. Upravte konfigurační soubor `config.yaml`.
 
-4. Start the service:
+4. Spusťte službu:
 
    ```sh
    ./AdGuardDNSClient -s start -v
    ```
 
-To check that it works, use any DNS checking utility. For example, using `nslookup`:
+Chcete-li zkontrolovat, zda funguje, použijte libovolný nástroj pro kontrolu DNS. Například pomocí `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -68,56 +68,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Just download and install using the MSI installer from the [releases page][releases].
+Stačí stáhnout a nainstalovat pomocí instalačního programu MSI ze [stránky vydání][releases].
 
-To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
+Chcete-li zkontrolovat, zda funguje, použijte libovolný nástroj pro kontrolu DNS. Například pomocí `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Command-line options {#opts}
+## Možnosti příkazového řádku {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Každá volba přepíše odpovídající hodnotu uvedenou v konfiguračním souboru a prostředí.
 
-### Help {#opts-help}
+### Nápověda {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+Možnost `-h` způsobí, že AdGuard DNS Client vytiskne zprávu nápovědy na standardní výstup a ukončí se s kódem stavu úspěchu.
 
-### Service {#opts-service}
+### Služba {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Possible values are:
+Možnost `-s <value>` určuje akci služby operačního systému. Přípustné hodnoty jsou:
 
-- `install`: installs AdGuard DNS Client as a service
-- `restart`: restarts the running AdGuard DNS Client service
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `install`: nainstaluje AdGuard DNS Client jako službu
+- `restart`: restartuje běžící službu AdGuard DNS Client
+- `start`: spustí nainstalovanou službu AdGuard DNS Client
+- `status`: zobrazí stav nainstalované služby AdGuard DNS Client
+- `stop`: ukončí spuštěný AdGuard DNS Client
+- `uninstall`: odinstaluje službu AdGuard DNS Client
 
 ### Verbose {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+Možnost `-v` umožňuje podrobný výstup protokolu.
 
-### Version {#opts-version}
+### Verze {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+Možnost `--version` způsobí, že AdGuard DNS Client vypíše verzi spustitelného souboru `AdGuardDNSClient` na standardní výstup a ukončí se stavovým kódem úspěchu.
 
-## Configuration {#conf}
+## Konfigurace {#conf}
 
-### File {#conf-file}
+### Soubor {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+Konfigurační soubor YAML je popsán ve [vlastním článku][conf] a k dispozici je také ukázkový konfigurační soubor `config.dist.yaml`.  Některé konfigurační parametry lze také nadefinovat pomocí příkazu [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Výstupní kódy {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Existuje několik různých kódů ukončení, které se mohou objevit při různých chybových stavech:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: Úspěšně dokončeno a ukončeno, žádné chyby.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: Interní chyba, pravděpodobně chybná konfigurace.
 
-- `2`: Bad command-line argument or value.
+- `2`: Chybný argument nebo hodnota příkazového řádku.
