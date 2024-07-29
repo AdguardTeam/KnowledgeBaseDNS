@@ -157,7 +157,7 @@ Please see the methods reference [here](reference.md).
 
 Вы можете использовать другие инструменты для просмотра списка доступных методов API. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
-### Changelog
+### История версий
 
 The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 

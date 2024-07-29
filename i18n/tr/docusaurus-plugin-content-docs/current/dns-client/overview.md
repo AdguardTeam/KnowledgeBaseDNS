@@ -43,13 +43,13 @@ Desteklenen CPU mimarileri:
 
    :::
 
-2. Install it as a service by running:
+2. Çalıştırarak bir hizmet olarak yükleyin:
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. `config.yaml` yapılandırma dosyasını düzenleyin.
 
 4. Hizmeti başlatın:
 
@@ -78,7 +78,7 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ## Komut satırı seçenekleri {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili değeri geçersiz kılar.
 
 ### Yardım {#opts-help}
 
@@ -91,9 +91,9 @@ Option `-s <value>` specifies the OS service action. Olası değerler:
 - `install`: installs AdGuard DNS Client as a service
 - `restart`: çalışan AdGuard DNS İstemcisi hizmetini yeniden başlatır
 - `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `status`: kurulu AdGuard DNS İstemcisi hizmetinin durumunu gösterir
+- `stop`: çalışan AdGuard DNS İstemcisini durdurur
+- `uninstall`: AdGuard DNS İstemcisi hizmetini kaldırır
 
 ### Verbose {#opts-verbose}
 

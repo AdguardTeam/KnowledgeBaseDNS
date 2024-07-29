@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: История версий
 sidebar_position: 3
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,71 +10,71 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/CHANGELOG.md
 -->
 
-This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
+В этой статье содержится список изменений для [AdGuard DNS API](private-dns/api/overview.md).
 
-## v1.9 (11 July 2024)
+## версия 1.9 (11 июля 2024 года)
 
-- Added automatic device connection functionality:
+- Добавлена функция автоматического подключения устройств:
   - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
   - New field in Device — `auto_device`, indicating that the device is automatically connected
 - Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
 
-## v1.8
+## Версия 1.8
 
-_Released on April 20, 2024_
+_Выпущена 20 апреля 2024 года_
 
-- Added support for DNS-over-HTTPS with authentication:
-  - New operation — reset DNS-over-HTTPS password for device
+- Добавлена поддержка DNS-over-HTTPS с аутентификацией:
+  - Новая операция — сброс пароля DNS-over-HTTPS для устройства
   - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Указывает URL-адрес, который будет использоваться при подключении с использованием DNS-over-HTTPS с аутентификацией
 
-## v1.7
+## Версия 1.7
 
-_Released on March 11, 2024_
+_Выпущена 11 марта 2024 года_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
-- Added new limits to Account limits:
+- Добавлена функциональность выделенных IPv4-адресов:
+  - Выделенные IPv4-адреса теперь можно использовать на устройствах для настройки DNS-сервера
+  - Выделенный IPv4-адрес теперь ассоциируется с устройством, к которому он привязан, поэтому запросы, сделанные на этот адрес, регистрируются для этого устройства
+- Добавлены новые операции:
+  - Перечислить все доступные выделенные IPv4-адреса
+  - Выделить новый IPv4-адрес
+  - Привязать доступный IPv4-адрес к устройству
+  - Отвязать IPv4-адрес от устройства
+  - Запрос информации о выделенных адресах, связанных с устройством
+- Добавлены новые лимиты в Лимиты аккаунта:
   - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
 - Removed deprecated field of DNSServerSettings:
   - `safebrowsing_enabled`
 
-## v1.6
+## Версия 1.6
 
-_Released on January 22, 2024_
+_Выпущена 22 января 2024 года_
 
-- Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
+- Добавлен новый раздел «Настройки доступа» для DNS-профилей (`access_settings`). Настраивая эти поля, вы сможете защитить свой сервер AdGuard DNS от несанкционированного доступа:
 
-  - `allowed_clients` — here you can specify which clients can use your DNS server. This field will have priority over the `blocked_clients` field
-  - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
-  - `blocked_domain_rules` — here you can specify which domains are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
+  - `allowed_clients` — здесь вы можете указать, какие клиенты могут использовать ваш DNS-сервер. У этого поля будет приоритет над полем `blocked_clients`
+  - `blocked_clients` — здесь вы можете указать, каким клиентам не разрешено использовать ваш DNS-сервер
+  - `blocked_domain_rules` — здесь вы можете указать, каким доменам не разрешён доступ к вашему DNS-серверу, а также определить такие домены с помощью подстановочных знаков и правил DNS-фильтрации
 
-- Added new limits to Account limits:
+- Добавлены новые лимиты в Лимиты аккаунта:
 
-  - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
-  - `user_rules` shows the amount of created user rules, as well as the limit on them
+  - `access_rules` предоставляет сумму используемых в данный момент значений `blocked_clients` и `blocked_domain_rules`, а также ограничение на правила доступа
+  - `user_rules` показывает количество созданных пользовательских правил, а также лимит на них
 
 - Added new setting: `ip_log_enabled` for the ability to log client IP addresses and domains.
 
-- Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
+- Добавлен новый код ошибки `FIELD_REACHED_LIMIT`, указывающий на достижение лимитов:
 
-  - For the total number of `blocked_clients` and `blocked_domain_rules` in access settings
-  - For `rules` in custom user rules settings
+  - Для общего количества `blocked_clients` и `blocked_domain_rules` в настройках доступа
+  - Для `rules` в настройках пользовательских правил
 
-## v1.5
+## Версия 1.5
 
-_Released on June 16, 2023_
+_Выпущена 16 июня 2023 года_
 
 - Added new setting `block_nrd` and group all security-related settings to one place.
 
-### Model for safebrowsing settings changed
+### Модель для настроек безопасного просмотра изменилась
 
 From
 
@@ -84,7 +84,7 @@ From
 }
 ```
 
-To:
+На:
 
 ```json
 {
@@ -96,9 +96,9 @@ To:
 
 where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
 
-### Model for saving server settings changed
+### Модель сохранения настроек сервера изменилась
 
-From:
+С:
 
 ```json
 {
@@ -108,7 +108,7 @@ From:
 }
 ```
 
-to:
+на:
 
 ```json
 {
@@ -124,38 +124,38 @@ to:
 
 here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
 
-## v1.4
+## Версия 1.4
 
-_Released on March 29, 2023_
+_Выпущена 29 марта 2023 года_
 
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
+- Добавлена настраиваемая опция для блокировки ответа: по умолчанию (0.0.0.0), REFUSED, NXDOMAIN или пользовательский IP-адрес.
 
-## v1.3
+## Версия 1.3
 
-_Released on December 13, 2022_
+_Выпущена 13 декабря 2022 года_
 
-- Added method to get account limits.
+- Добавлен метод для получения лимитов аккаунта.
 
-## v1.2
+## Версия 1.2
 
-_Released on October 14, 2022_
+_Выпущена 14 октября 2022 года_
 
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
+- Добавлены новые типы протоколов DNS и DNSCRYPT. Прекращена поддержка PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP и DNSCRYPT_UDP, которые будут удалены позже.
 
-## v1.1
+## Версия 1.1
 
-_Released on July 07, 2022_
+_Выпущена 7 июля 2022 года_
 
-- Added methods to retrieve statistics by time, domains, companies and devices.
-- Added method for updating device settings.
-- Fixed required fields definition.
+- Добавлены методы получения статистики по времени, доменам, компаниям и устройствам.
+- Добавлен метод обновления настроек устройства.
+- Исправлено определение обязательных полей.
 
-## v1.0
+## Версия 1.0
 
-_Released on February 22, 2022_
+_Выпущена 22 февраля 2022 года_
 
-- Added authentication.
-- CRUD operations with devices and DNS servers.
-- Query log.
-- Downloading DOT and DOT .mobileconfig.
+- Добавлена аутентификация.
+- CRUD-операции с устройствами и DNS-серверами.
+- Журнал запросов.
+- Загрузка DOT и DOT .mobileconfig.
 - Filter Lists and Web-Services.
