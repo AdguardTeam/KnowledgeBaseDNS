@@ -94,13 +94,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .footer__item {
-  max-width: 165px;
+  max-width: 210px;
   font-size: 13px;
 }
 
 .footer__link-item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-size: 13px;
-  line-height: 2.4;
 }
 
 .footer__link-item svg {
