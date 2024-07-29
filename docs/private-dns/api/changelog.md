@@ -96,7 +96,7 @@ To:
 }
 ```
 
-where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous model field `enabled`, and `block_nrd` is filtering settings for newly registered domains.
+where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
 
 ### Model for saving server settings changed
 
