@@ -4,39 +4,39 @@
     "description": "The title of the footer links column with title=dns in the footer"
   },
   "link.title.legal": {
-    "message": "Legal documents",
+    "message": "法的文書",
     "description": "The title of the footer links column with title=legal in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "サポート",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.other_products": {
-    "message": "Other Products",
+    "message": "その他の製品",
     "description": "The title of the footer links column with title=other_products in the footer"
   },
   "link.item.label.connect_dns": {
-    "message": "Connect to DNS",
+    "message": "DNSに接続する",
     "description": "The label of footer link with label=connect_dns linking to https://adguard-dns.io/public-dns.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "サポートセンター",
     "description": "The label of footer link with label=support_center linking to https://adguard-dns.io/support.html"
   },
   "link.item.label.faq": {
-    "message": "FAQ",
+    "message": "FAQ（よくあるご質問）",
     "description": "The label of footer link with label=faq linking to https://adguard-dns.io/support/faq.html"
   },
   "link.item.label.blog": {
-    "message": "Blog",
+    "message": "AdGuard DNS公式ブログ",
     "description": "The label of footer link with label=blog linking to https://adguard-dns.io/blog/index.html"
   },
   "link.item.label.privacy_policy": {
-    "message": "Privacy Policy",
+    "message": "プライバシーポリシー",
     "description": "The label of footer link with label=privacy_policy linking to https://adguard-dns.io/privacy.html"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of Sale",
+    "message": "販売規約",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms": {
@@ -44,11 +44,11 @@
     "description": "The label of footer link with label=terms linking to https://adguard-dns.io/eula.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard Status",
+    "message": "AdGuardステータス",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "AdGuard Ad Blocker",
+    "message": "AdGuard広告ブロッカー",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {
@@ -60,31 +60,31 @@
     "description": "The alt text of footer logo"
   },
   "link.item.label.homepage": {
-    "message": "Homepage",
+    "message": "トップページ",
     "description": "The label of footer link with label=homepage linking to https://adguard-dns.io/welcome.html"
   },
   "link.item.label.pricing": {
-    "message": "Pricing",
+    "message": "プライシング",
     "description": "The label of footer link with label=pricing linking to https://adguard-dns.io/license.html"
   },
   "link.item.label.about_us": {
-    "message": "About us",
+    "message": "AdGuard DNSについて",
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.promo": {
-    "message": "AdGuard promo activities",
+    "message": "AdGuard キャンペーンコンテンツ",
     "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
   },
   "link.item.label.media": {
-    "message": "Media kits",
+    "message": "メディアキット",
     "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
   },
   "link.item.label.press": {
-    "message": "In the press",
+    "message": "メディア掲載",
     "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
   },
   "link.item.label.temp_mail": {
-    "message": "AdGuard Temp Mail",
+    "message": "AdGuard 使い捨てメール",
     "description": "The label of footer link with label=temp_mail linking to https://adguard.com/adguard-temp-mail/overview.html"
   },
   "link.item.label.adguard_home": {
@@ -92,19 +92,19 @@
     "description": "The label of footer link with label=adguard_home linking to https://adguard.com/adguard-home/overview.html"
   },
   "link.item.label.versions": {
-    "message": "Version history",
+    "message": "バージョン履歴",
     "description": "The label of footer link with label=versions linking to https://adguard-dns.io/versions.html"
   },
   "link.item.label.report": {
-    "message": "Report an issue",
+    "message": "問題を報告する",
     "description": "The label of footer link with label=report linking to https://reports.adguard.com/new_issue.html"
   },
   "link.item.label.refund": {
-    "message": "Refund policy",
+    "message": "返金ポリシー",
     "description": "The label of footer link with label=refund linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms_and_conditions": {
-    "message": "Terms and conditions",
+    "message": "規約と条件",
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
   },
   "copyright": {

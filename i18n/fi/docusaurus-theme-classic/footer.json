@@ -4,39 +4,39 @@
     "description": "The title of the footer links column with title=dns in the footer"
   },
   "link.title.legal": {
-    "message": "Legal documents",
+    "message": "Oikeudelliset asiakirjat",
     "description": "The title of the footer links column with title=legal in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "Tuki",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.other_products": {
-    "message": "Other Products",
+    "message": "Muut tuotteet",
     "description": "The title of the footer links column with title=other_products in the footer"
   },
   "link.item.label.connect_dns": {
-    "message": "Connect to DNS",
+    "message": "Yhdistä DNS:ään",
     "description": "The label of footer link with label=connect_dns linking to https://adguard-dns.io/public-dns.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "Tukikeskus",
     "description": "The label of footer link with label=support_center linking to https://adguard-dns.io/support.html"
   },
   "link.item.label.faq": {
-    "message": "FAQ",
+    "message": "UKK",
     "description": "The label of footer link with label=faq linking to https://adguard-dns.io/support/faq.html"
   },
   "link.item.label.blog": {
-    "message": "Blog",
+    "message": "Blogi",
     "description": "The label of footer link with label=blog linking to https://adguard-dns.io/blog/index.html"
   },
   "link.item.label.privacy_policy": {
-    "message": "Privacy Policy",
+    "message": "Tietosuojakäytäntö",
     "description": "The label of footer link with label=privacy_policy linking to https://adguard-dns.io/privacy.html"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of Sale",
+    "message": "Myyntiehdot",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms": {
@@ -44,11 +44,11 @@
     "description": "The label of footer link with label=terms linking to https://adguard-dns.io/eula.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard Status",
+    "message": "AdGuardin tila",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "AdGuard Ad Blocker",
+    "message": "AdGuard Mainosesto",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {
@@ -60,31 +60,31 @@
     "description": "The alt text of footer logo"
   },
   "link.item.label.homepage": {
-    "message": "Homepage",
+    "message": "Kotisivu",
     "description": "The label of footer link with label=homepage linking to https://adguard-dns.io/welcome.html"
   },
   "link.item.label.pricing": {
-    "message": "Pricing",
+    "message": "Hinnoittelu",
     "description": "The label of footer link with label=pricing linking to https://adguard-dns.io/license.html"
   },
   "link.item.label.about_us": {
-    "message": "About us",
+    "message": "Tietoja meistä",
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.promo": {
-    "message": "AdGuard promo activities",
+    "message": "AdGuardin promotoiminta",
     "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
   },
   "link.item.label.media": {
-    "message": "Media kits",
+    "message": "Lehdistösisältö",
     "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
   },
   "link.item.label.press": {
-    "message": "In the press",
+    "message": "Lehdistössä",
     "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
   },
   "link.item.label.temp_mail": {
-    "message": "AdGuard Temp Mail",
+    "message": "AdGuard Temp Mail",
     "description": "The label of footer link with label=temp_mail linking to https://adguard.com/adguard-temp-mail/overview.html"
   },
   "link.item.label.adguard_home": {
@@ -92,19 +92,19 @@
     "description": "The label of footer link with label=adguard_home linking to https://adguard.com/adguard-home/overview.html"
   },
   "link.item.label.versions": {
-    "message": "Version history",
+    "message": "Versiohistoria",
     "description": "The label of footer link with label=versions linking to https://adguard-dns.io/versions.html"
   },
   "link.item.label.report": {
-    "message": "Report an issue",
+    "message": "Ilmoita ongelma",
     "description": "The label of footer link with label=report linking to https://reports.adguard.com/new_issue.html"
   },
   "link.item.label.refund": {
-    "message": "Refund policy",
+    "message": "Hyvityskäytäntö",
     "description": "The label of footer link with label=refund linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms_and_conditions": {
-    "message": "Terms and conditions",
+    "message": "Käyttöehdot",
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
   },
   "copyright": {

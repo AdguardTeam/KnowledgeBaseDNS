@@ -31,11 +31,11 @@ Some other unofficial options include:
 
 - [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [OpenWrt LUCI app][luci] поддерживается [@kongfl888](https://github.com/kongfl888).
 
-- [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur] maintained by [@graysky2](https://github.com/graysky2).
+- [Arch Linux][arch], [Arch Linux ARM][archarm] и другие ОС на базе Arch могут собираться с помощью пакета [`adguardhome`][aghaur] в [AUR][aur], поддерживаемого [@graysky2](https://github.com/graysky2).
 
-- [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
+- Приложение [Cloudron][cloudron] поддерживается [@gramakri](https://github.com/gramakri).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
@@ -51,15 +51,15 @@ Some other unofficial options include:
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
-## First start {#first-time}
+## Первый старт {#first-time}
 
-First of all, check your firewall settings. To install and use AdGuard Home, the following ports and protocols must be available:
+Прежде всего, проверьте настройки фаервола. Для установки и использования AdGuard Home должны быть доступны следующие порты и протоколы:
 
-- 3000/TCP for the initial installation;
-- 80/TCP for the web interface;
-- 53/UDP for the DNS server.
+- 3000/TCP для первоначальной установки;
+- 80/TCP для веб-интерфейса;
+- 53/UDP для DNS-сервера.
 
-You may need to open additional ports for protocols other than plain DNS, such as DNS-over-HTTPS.
+Возможно, вам потребуется открыть дополнительные порты для протоколов, отличных от обычного DNS, например DNS-over-HTTPS.
 
 DNS servers bind to port 53, which requires superuser privileges most of the time, [see below](#running-without-superuser). Therefore, on Unix systems, you will need to run it with `sudo` or `doas` in terminal:
 
@@ -67,54 +67,54 @@ DNS servers bind to port 53, which requires superuser privileges most of the tim
 sudo ./AdGuardHome
 ```
 
-On Windows, run `cmd.exe` or PowerShell with admin privileges and run `AdGuardHome.exe` from there.
+На Windows запустите `cmd.exe` или PowerShell с правами администратора и оттуда `AdGuardHome.exe`.
 
-When you run AdGuard Home for the first time, it starts listening on `0.0.0.0:3000` and prompts you to open it in your browser:
+Когда вы запускаете AdGuard Home в первый раз, он начинает прослушивать `0.0.0.0:3000` и предлагает вам открыть его в браузере:
 
 ```none
-AdGuard Home is available at the following addresses:
-go to http://127.0.0.1:3000
-go to http://[::1]:3000
+AdGuard Home доступен по следующим адресам:
+http://127.0.0.1:3000
+http://[::1]:3000
 […]
 ```
 
-There you will go through the initial configuration wizard.
+Там вы пройдёте первоначальную настройку.
 
-![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
+![Экран выбора сетевого интерфейса AdGuard Home](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
-![AdGuard Home user creation screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
+![Экран создания пользователя AdGuard Home](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 
-See [our article on running AdGuard Home securely](running-securely.md) for guidance on how to select the initial configuration that fits you best.
+Читайте [нашу статью о безопасном запуске AdGuard Home](running-securely.md) и узнайте, как выбрать начальную конфигурацию, которая подходит вам лучше всего.
 
-## Running as a service {#service}
+## Запуск в качестве службы {#service}
 
-The next step would be to register AdGuard Home as a system service (aka daemon). To install AdGuard Home as a service, run:
+Следующим шагом будет регистрация AdGuard Home в качестве системной службы (также известной как демон). Чтобы установить AdGuard Home в качестве службы, выполните команду:
 
 ```sh
 sudo ./AdGuardHome -s install
 ```
 
-On Windows, run `cmd.exe` with admin privileges and run `AdGuardHome.exe -s install` to register a Windows service.
+На Windows выполните `cmd.exe` с правами администратора и `AdGuardHome.exe -s install` для регистрации службы Windows.
 
-Here are the other commands you might need to control the service:
+Вот другие команды, которые могут понадобиться для управления сервисом:
 
-- `AdGuardHome -s uninstall`: Uninstall the AdGuard Home service.
-- `AdGuardHome -s start`: Start the service.
-- `AdGuardHome -s stop`: Stop the service.
-- `AdGuardHome -s restart`: Restart the service.
-- `AdGuardHome -s status`: Show the current service status.
+- `AdGuardHome -s uninstall`: удалить службу AdGuard Home.
+- `AdGuardHome -s start`: запустить службу.
+- `AdGuardHome -s stop`: остановить службу.
+- `AdGuardHome -s restart`: перезапустить службу.
+- `AdGuardHome -s status`: показать текущий статус службы.
 
-### Logs
+### Логи
 
-By default, the logs are written to `stderr` when you run AdGuard Home in a terminal. If you run it as a service, the log output depends on the platform:
+По умолчанию логи записываются в stderr, когда вы запускаете AdGuard Home в терминале. Если вы запускаете его как службу, вывод логов зависит от платформы:
 
-- On macOS, the log is written to `/var/log/AdGuardHome.*.log` files.
+- На macOS лог записывается в файлы '/var/log/AdGuardHome.\*.log.
 
-- On other Unixes, the log is written to `syslog` or `journald`.
+- В других Unix-системах лог записывается в `syslog` или `journald`.
 
-- On Windows, the log is written to the Windows event log.
+- В Windows лог записывается в журнал событий Windows.
 
-You can change this behavior in the AdGuard Home [configuration file][conf].
+Вы можете изменить это поведение [в файле конфигурации AdGuard Home][conf].
 
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
@@ -200,9 +200,9 @@ Instructions for Android devices may differ depending on the OS version and the 
 
 2. Tap _Wi-Fi_ on the menu. The screen with all of the available networks will be displayed (it is impossible to set custom DNS for mobile connection).
 
-3. Long press the network you’re connected to and tap _Modify Network_.
+3. Длинным нажатием выберите сеть, к которой вы подключены, и нажмите _Изменить сеть_.
 
-4. On some devices, you may need to check the box for _Advanced_ to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from _DHCP_ to _Static_.
+4. На некоторых устройствах для просмотра дополнительных настроек может потребоваться установить флажок _Дополнительно_. To adjust your Android DNS settings, you will need to change the IP settings from _DHCP_ to _Static_.
 
 5. Change set DNS 1 and DNS 2 values to your AdGuard Home server addresses.
 
