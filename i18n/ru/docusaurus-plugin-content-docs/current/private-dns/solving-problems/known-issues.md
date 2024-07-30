@@ -29,30 +29,30 @@ If you disable Chrome’s own DNS settings, the browser will use the DNS specifi
 
 If you enable iCloud Private Relay in your device settings, Safari will use Apple’s DNS addresses, which will override the AdGuard DNS settings.
 
-Here’s how you can disable iCloud Private Relay on your iPhone:
+Вот как можно отключить функцию iCloud Private Relay на iPhone:
 
-1. Open *Settings* and tap your name.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
+1. Откройте *Настройки* и коснитесь своего имени.
+1. Выберите *iCloud* → *Частный узел*.
+1. Отключите функцию Частный узел.
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![Частный узел iOS](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
 
-On your Mac:
+На Mac:
 
 1. Open *System Settings* and click your name or *Apple ID*.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
-1. Click *Done*.
+1. Выберите *iCloud* → *Частный узел*.
+1. Отключите функцию Частный узел.
+1. Нажмите *Готово*.
 
 ![macOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
 
 ## Advanced Tracking and Fingerprinting Protection (Safari, starting from iOS 17)
 
-After the iOS 17 update, Advanced Tracking and Fingerprinting Protection may be enabled in Safari settings, which could potentially have a similar effect to iCloud Private Relay bypassing AdGuard DNS settings.
+После обновления iOS 17 в настройках Safari может быть включена функция Расширенная защита от отслеживания действий и цифровых отпечатков, которая потенциально может иметь эффект, аналогичный Частному узлу iCloud, обходя настройки AdGuard DNS.
 
 Here’s how you can disable Advanced Tracking and Fingerprinting Protection:
 
-1. Open *Settings* and scroll down to *Safari*.
+1. Откройте *Настройки* и прокрутите вниз до *Safari*.
 1. Tap *Advanced*.
 1. Disable *Advanced Tracking and Fingerprinting Protection*.
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 С помощью AdGuard DNS вы можете настроить свои DNS-серверы для разрешения DNS-запросов и блокировки рекламы, трекеров и вредоносных доменов до того, как они попадут на ваше устройство
 
-Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
+Быстрая ссылка: [Попробуйте AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
@@ -17,7 +17,7 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+Приватный AdGuard DNS обладает всеми преимуществами сервера публичного AdGuard DNS, включая шифрование трафика и блокировку доменов. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
 
 ### Why you need private AdGuard DNS
 
@@ -76,11 +76,11 @@ At one time, the AdGuard product line included only [public AdGuard DNS](../publ
 
 Когда вы подключаетесь к ним, AdGuard DNS сможет определить, какое именно устройство отправляет DNS-запросы, и отобразить статистику по нему. И вы сможете настроить правила DNS специально для этого устройства.
 
-К сожалению, не все поставщики услуг предлагают поддержку IPv6 и не все устройства позволяют настраивать адреса IPv6. If this is your case, you may have to rely on the Linked IP method.
+К сожалению, не все поставщики услуг предлагают поддержку IPv6 и не все устройства позволяют настраивать адреса IPv6. Если это ваш случай, возможно, вам придётся прибегнуть к методу привязанного IP-адреса.
 
 #### Привязанный IP-адрес
 
-If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
+Если вы подключите своё устройство к AdGuard DNS через Привязанный IP-адрес, служба будет учитывать все обычные DNS-запросы, поступающие с этого IP-адреса, для этого «устройства». При таком способе подключения вам придеёся переподключаться вручную или через специальную программу каждый раз, когда меняется IP-адрес устройства, что происходит после каждой перезагрузки.
 
 Единственное требование к привязке IP-адреса заключается в том, что **это должен быть резидентный IP-адрес**.
 
@@ -94,21 +94,21 @@ If you're trying to link a residential IP address and AdGuard DNS does not allow
 
 ## Private AdGuard DNS features
 
-### Statistics
+### Статистика
 
 In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Traffic destination
+### Назначение трафика
 
-This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
+This feature shows you where DNS requests sent by your devices go. Помимо просмотра карты направлений запросов, вы можете фильтровать информацию по дате, устройству и стране.
 
 ![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Companies
+### Компании
 
-This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
+Эта вкладка позволяет быстро проверить, какие компании отправляют больше всего запросов, и какие компании имеют больше всего заблокированных запросов.
 
 ![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
@@ -163,29 +163,29 @@ Here you can set the way AdGuard DNS must respond to blocked domains:
 - REFUSED — the server has refused to process the request
 - Custom IP — you can manually specify an IP address
 
-Additionally, you can adjust the *Time to live* (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
+Кроме того, вы можете настроить параметр *«Время жизни* (TTL). This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. Более высокий TTL означает, что даже если ранее заблокированный домен разблокирован, он может некоторое время оставаться заблокированным. A TTL of 0 indicates that the device does not cache responses.
 
 In the Advanced section, there are three options that can be customized:
 
-- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore DNS settings. Enabling this option ensures that AdGuard DNS can effectively protect your device.
-- Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
-- Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
+- Block access to iCloud Private Relay. Устройства, использующие iCloud Private Relay, могут игнорировать настройки DNS. Включение этой опции гарантирует, что AdGuard DNS сможет эффективно защитить ваше устройство.
+- Блокировать канареечный домен Firefox. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
+- Log IP addresses. Если эта опция включена, IP-адреса, связанные с входящими DNS-запросами, будут записываться и отображаться в журнале запросов.
 
-### Access settings
+### Настройки доступа
 
-Here you can manage an access to your DNS server by configuring the following settings:
+Здесь вы можете управлять доступом к DNS-серверу, настраивая следующие параметры:
 
-- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+- Allowed clients. Укажите, каким клиентам разрешено использовать ваш DNS-сервер. Обратите внимание, что разрешённые клиенты не учитываются в добавленных правилах доступа, только запрещённые клиенты и домены
 
-![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Добавленные правила](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
-- Disallowed clients. List clients that are denied to use your DNS server
-- Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
+- Запрещённые клиенты. Список клиентов, которым запрещено использовать ваш DNS-сервер
+- Запрещённые домены. Укажите доменные имена, которым будет запрещён доступ к вашему DNS-серверу. Wildcards and DNS filtering rules can also be listed here
 
 :::note
 
-If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+Если вы хотите использовать DNS только для определённых номеров AS или IP-адресов, заблокируйте все остальные в поле Запрещённые клиенты. Просто разрешить только нужные номера и адреса в поле *Разрешённые клиенты* будет недостаточно.
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
+Настроив эти параметры, вы сможете контролировать, кто использует ваш DNS-сервер, и предотвращать потенциальные DDoS-атаки. Requests that are not allowed will not appear in your Query log, and they are free of charge.

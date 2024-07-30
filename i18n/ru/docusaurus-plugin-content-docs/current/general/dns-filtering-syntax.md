@@ -125,7 +125,7 @@ pattern = "/" regexp "/"
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` — совпадающий шаблон. `$` — разделитель, который указывает на то, что остальные части правила являются модификаторами. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
+  `||example.org^` — совпадающий шаблон. `$` — разделитель, который указывает на то, что остальные части правила являются модификаторами. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` — разделитель между модификаторами. И наконец, `dnstype=A` — [`dnstype-модификатор`][] со значением `А`.
 
 **Обратите внимание:** если правило содержит модификатор, не указанный в этом документе, всё правило **следует игнорировать**. Таким образом мы избегаем ложных срабатываний, когда люди пытаются использовать немодифицированные списки фильтров браузерных блокировщиков рекламы, таких как EasyList или EasyPrivacy.
 
@@ -314,9 +314,9 @@ Address: 1.2.3.4
 
 В данный момент поддерживаются подобные ресурсные записи:
 
-- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR` record for reverse DNS. Обратные DNS-запросы на `1.2.3.4` к DNS-серверу получат результат `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` добавляет запись `PTR` для обратного DNS. Обратные DNS-запросы на `1.2.3.4` к DNS-серверу получат результат `example.net`.
 
-  **ВНИМАНИЕ:** IP ДОЛЖЕН быть указан в обратном порядке. See [RFC 1035][rfc1035].
+  **ВНИМАНИЕ:** IP ДОЛЖЕН быть указан в обратном порядке. См. [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` добавляет запись `A` со значением `1.2.3.4`.
 
@@ -347,11 +347,11 @@ Address: 1.2.3.4
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` отвечает пустым `NOERROR` значением для всех запросов `AAAA`, кроме запросов к `example.org`.
 
-Exception rules unblock one or all rules:
+Правила исключений разблокируют одно или все правила:
 
-- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
+- `@@||example.com^$dnsrewrite` разблокирует все правила перезаписи DNS.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` разблокирует правило перезаписи DNS, которое добавляет запись `A` со значением `1.2.3.4`.
 
 #### `important` {#important-modifier}
 
@@ -447,7 +447,7 @@ $ctag=~value1|~value2|...
     - `user_regular`: рядовые пользователи.
     - `user_child`: дети.
 
-## `/etc/hosts`-style syntax {#etc-hosts-syntax}
+## синтаксис в стиле `/etc/hosts` {#etc-hosts-syntax}
 
 Для каждого хоста должна быть строка со следующей информацией:
 
@@ -470,7 +470,7 @@ IP_address canonical_hostname [aliases...]
 
 В AdGuard Home IP-адреса используются для ответа на DNS-запросы по этим доменам. В приватном AdGuard DNS эти адреса просто блокируются.
 
-## Domains-only syntax {#domains-only-syntax}
+## Синтаксис только для доменов {#domains-only-syntax}
 
 Простое перечисление имён доменов, по одному в линию.
 
@@ -485,9 +485,9 @@ example.net # это тоже комментарий
 
 If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
-## Hostlist compiler {#hostlist-compiler}
+## Компилятор хостлистов {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. Этот инструмент упрощает составление hosts-списка блокировки, совместимого с AdGuard Home, приватным AdGuard DNS или любым другим продуктом AdGuard с DNS-фильтрацией.
+Если вы поддерживаете список блокировки и используете в нём разные источники, [Компилятор хостлистов][] может быть вам полезен. Этот инструмент упрощает составление hosts-списка блокировки, совместимого с AdGuard Home, приватным AdGuard DNS или любым другим продуктом AdGuard с DNS-фильтрацией.
 
 Что он может сделать:
 
@@ -503,9 +503,10 @@ If you are maintaining a blocklist and use different sources in it, [Hostlist co
 <!-- external links -->
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
-[`dnstype`]: #dnstype-modifier
+[`dnstype-модификатор`]: #dnstype-modifier
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[Компилятор хостлистов]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 [traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

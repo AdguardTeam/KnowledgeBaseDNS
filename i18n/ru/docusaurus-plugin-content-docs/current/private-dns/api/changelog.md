@@ -17,7 +17,7 @@ toc_max_heading_level: 3
 - Добавлена функция автоматического подключения устройств:
   - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
   - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+- Заменили `int` на `long` для `queries` в CategoryQueriesStats, для `used` в AccountLimits, а также для `blocked` и `queries` в QueriesStats
 
 ## Версия 1.8
 
@@ -25,7 +25,7 @@ _Выпущена 20 апреля 2024 года_
 
 - Добавлена поддержка DNS-over-HTTPS с аутентификацией:
   - Новая операция — сброс пароля DNS-over-HTTPS для устройства
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
+  - New device setting — `detect_doh_auth_only`. Отключает все методы подключения DNS, кроме DNS-over-HTTPS с аутентификацией
   - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Указывает URL-адрес, который будет использоваться при подключении с использованием DNS-over-HTTPS с аутентификацией
 
 ## Версия 1.7
