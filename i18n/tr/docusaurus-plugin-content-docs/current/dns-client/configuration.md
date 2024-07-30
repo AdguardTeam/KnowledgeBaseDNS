@@ -20,7 +20,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. Aşağıdaki özelliklere sahiptir:
+`cache` nesnesi, DNS sorgulama sonuçlarının önbelleğe alınmasını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 - `enabled`: Whether or not the DNS results should be cached.
 
@@ -36,7 +36,7 @@ The `cache` object configures caching the results of querying DNS. Aşağıdaki 
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. Aşağıdaki özelliklere sahiptir:
+`server` nesnesi, gelen isteklerin işlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 - `listen_addresses`: The set of addresses with ports to listen on.
 
@@ -68,23 +68,23 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. Aşağıdaki özelliklere sahiptir:
+`upstream` nesnesi, isteklerin fiili çözümlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`: Grubun adına göre anahtarlanan üst kaynak sunucular kümesi. Aşağıdaki alanlara sahiptir:
 
-  - `address`: The upstream server’s address.
+  - `address`: Yukarı akış sunucusunun adresi.
 
-    **Example:** `'8.8.8.8:53'`
+    **Örnek:** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: İsteğin eşleştirileceği kriterlerin listesi. Her giriş aşağıdaki özellikleri içerebilir:
 
     - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
 
-      **Example:** `'mycompany.local'`
+      **Örnek:** `'mycompany.local'`
 
     - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
 
-      **Example:** `'192.0.2.0/24'`
+      **Örnek:** `'192.0.2.0/24'`
 
     :::note Not
 
