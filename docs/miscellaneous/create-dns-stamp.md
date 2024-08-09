@@ -14,7 +14,7 @@ DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In 
 
 ## Choosing the protocol
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
 
 ## Creating a DNS stamp
 
