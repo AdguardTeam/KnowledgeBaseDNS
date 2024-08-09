@@ -63,7 +63,7 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
     - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
     - `user_rules` shows the amount of created user rules, as well as the limit on them
 
-- Added new `ip_log_enabled` setting to log client IP addresses and domains
+- Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
 - Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
 

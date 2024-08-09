@@ -583,7 +583,7 @@ Recommended for most users, very flexible filtering with blocking most ads netwo
 
 #### Strict Filtering (RIC)
 
-More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive and phishing domains.
+More strictly filtering policies with blocking — ads, marketing, tracking, malware, clickbait, coinhive, malicious, and phishing domains.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
