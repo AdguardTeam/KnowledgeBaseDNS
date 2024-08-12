@@ -35,7 +35,7 @@ Gets account limits
 
 ##### Summary
 
-Lists allocated dedicated IPv4 addresses
+Lists dedicated IPv4 addresses
 
 ##### Responses
 
@@ -47,7 +47,7 @@ Lists allocated dedicated IPv4 addresses
 
 ##### Summary
 
-Allocates new dedicated IPv4
+Allocates new IPv4
 
 ##### Responses
 
