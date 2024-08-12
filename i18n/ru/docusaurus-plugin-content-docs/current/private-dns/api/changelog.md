@@ -12,12 +12,14 @@ toc_max_heading_level: 3
 
 В этой статье содержится список изменений для [AdGuard DNS API](private-dns/api/overview.md).
 
-## версия 1.9 (11 июля 2024 года)
+## Версия 1.9
+
+_Выпущена 11 июля 2024 года_
 
 - Добавлена функция автоматического подключения устройств:
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
-  - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+  - `auto_connect_devices_enabled` — новая настройка в разделе DNS-сервер, позволяющая утверждать автоматическое подключение устройств через определённый тип ссылки
+  - `auto_device` — новое поле в разделе Устройство, указывающее, что устройство подключено автоматически
+- Заменили `int` на `long` для `queries` в CategoryQueriesStats, для `used` в AccountLimits, а также для `blocked` и `queries` в QueriesStats
 
 ## Версия 1.8
 
@@ -25,8 +27,8 @@ _Выпущена 20 апреля 2024 года_
 
 - Добавлена поддержка DNS-over-HTTPS с аутентификацией:
   - Новая операция — сброс пароля DNS-over-HTTPS для устройства
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Указывает URL-адрес, который будет использоваться при подключении с использованием DNS-over-HTTPS с аутентификацией
+  - `detect_doh_auth_only` — новая настройка устройства. Отключает все методы подключения DNS, кроме DNS-over-HTTPS с аутентификацией
+  - `dns_over_https_with_auth_url` — новое поле в DeviceDNSAddresses. Указывает URL-адрес, который будет использоваться при подключении с использованием DNS-over-HTTPS с аутентификацией
 
 ## Версия 1.7
 
@@ -42,8 +44,8 @@ _Выпущена 11 марта 2024 года_
   - Отвязать IPv4-адрес от устройства
   - Запрос информации о выделенных адресах, связанных с устройством
 - Добавлены новые лимиты в Лимиты аккаунта:
-  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+  - `dedicated_ipv4` предоставляет информацию о количестве уже выделенных выделенных IPv4-адресов, а также лимите на них
+- Удалено устаревшее поле DNSServerSettings:
   - `safebrowsing_enabled`
 
 ## Версия 1.6
@@ -61,7 +63,7 @@ _Выпущена 22 января 2024 года_
   - `access_rules` предоставляет сумму используемых в данный момент значений `blocked_clients` и `blocked_domain_rules`, а также ограничение на правила доступа
   - `user_rules` показывает количество созданных пользовательских правил, а также лимит на них
 
-- Added new setting: `ip_log_enabled` for the ability to log client IP addresses and domains.
+- Добавлен новый параметр: `ip_log_enabled` для регистрации IP-адресов и доменов клиентов
 
 - Добавлен новый код ошибки `FIELD_REACHED_LIMIT`, указывающий на достижение лимитов:
 
@@ -72,11 +74,11 @@ _Выпущена 22 января 2024 года_
 
 _Выпущена 16 июня 2023 года_
 
-- Added new setting `block_nrd` and group all security-related settings to one place.
+- Добавлена новая настройка `block_nrd`, а все настройки, которые относятся к безопасности, собраны в одном месте
 
 ### Модель для настроек безопасного просмотра изменилась
 
-From
+С:
 
 ```json
 {
@@ -94,7 +96,7 @@ From
 }
 ```
 
-where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
+где `enabled` теперь контролирует все настройки в группе, `block_dangerous_domains` — поле предыдущей модели `enabled`, а `block_nrd` — настройка, которая блокирует вновь зарегистрированные домены.
 
 ### Модель сохранения настроек сервера изменилась
 
@@ -122,40 +124,40 @@ where `enabled` is now control all settings in group, `block_dangerous_domains` 
 }
 ```
 
-here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
+здесь используется новое поле `safebrowsing_settings` вместо устаревшего `safebrowsing_enabled`, значение которого хранится в `block_dangerous_domains`.
 
 ## Версия 1.4
 
 _Выпущена 29 марта 2023 года_
 
-- Добавлена настраиваемая опция для блокировки ответа: по умолчанию (0.0.0.0), REFUSED, NXDOMAIN или пользовательский IP-адрес.
+- Добавлена настраиваемая опция для блокировки ответа: по умолчанию (0.0.0.0), REFUSED, NXDOMAIN или пользовательский IP-адрес
 
 ## Версия 1.3
 
 _Выпущена 13 декабря 2022 года_
 
-- Добавлен метод для получения лимитов аккаунта.
+- Добавлен метод для получения лимитов аккаунта
 
 ## Версия 1.2
 
 _Выпущена 14 октября 2022 года_
 
-- Добавлены новые типы протоколов DNS и DNSCRYPT. Прекращена поддержка PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP и DNSCRYPT_UDP, которые будут удалены позже.
+- Добавлены новые типы протоколов DNS и DNSCRYPT. Прекращена поддержка PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP и DNSCRYPT_UDP, которые будут удалены позже
 
 ## Версия 1.1
 
-_Выпущена 7 июля 2022 года_
+_Released on July 7, 2022_
 
-- Добавлены методы получения статистики по времени, доменам, компаниям и устройствам.
-- Добавлен метод обновления настроек устройства.
-- Исправлено определение обязательных полей.
+- Добавлены методы получения статистики по времени, доменам, компаниям и устройствам
+- Добавлен метод обновления настроек устройства
+- Исправлено определение обязательных полей
 
 ## Версия 1.0
 
 _Выпущена 22 февраля 2022 года_
 
-- Добавлена аутентификация.
-- CRUD-операции с устройствами и DNS-серверами.
-- Журнал запросов.
-- Загрузка DOT и DOT .mobileconfig.
-- Filter Lists and Web-Services.
+- Добавлена аутентификация
+- CRUD-операции с устройствами и DNS-серверами
+- Журнал запросов
+- Загрузка DoH и DoT .mobileconfig
+- Фильтры и веб-сервисы

@@ -581,7 +581,7 @@ Doporučeno pro většinu uživatelů, velmi flexibilní filtrování s bloková
 
 #### Přísné filtrování (RIC)
 
-Přísnější zásady filtrování s blokováním — reklamy, marketing, sledování, malware, clickbait, coinhive a podvodné domény.
+More strictly filtering policies with blocking — ads, marketing, tracking, clickbait, coinhive, malicious, and phishing domains.
 
 | Protokol       | Adresa                              |                                                                                  |
 | -------------- | ----------------------------------- | -------------------------------------------------------------------------------- |
@@ -1014,7 +1014,7 @@ Bez záznamů | Filtruje reklamy, slídiče, blokuje krádež identity atd. | DN
 
 [Oficiální DNS server Dandelion Sprout's](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) je osobní služba DNS hostovaná v norském Trondheimu, která využívá infrastrukturu AdGuard Home.
 
-Blokuje více reklam a škodlivého softwaru než AdGuard DNS díky pokročilejší syntaxi, ale lépe si poradí se slídiči a blokuje pravicové bulváry a většinu imageboardů. Protokolování se používá ke zlepšení používaných seznamů filtrů (např. odblokováním stránek, které neměly být blokovány) a k určení nejméně vhodných časů pro aktualizace systému serveru.
+Blokuje více reklam a škodlivého softwaru než AdGuard DNS díky pokročilejší syntaxi, ale lépe si poradí se slídiči a blokuje pravicové bulváry a většinu imageboardů. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protokol       | Adresa                                                |                                                                                                                                                                                                                                                                                                        |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

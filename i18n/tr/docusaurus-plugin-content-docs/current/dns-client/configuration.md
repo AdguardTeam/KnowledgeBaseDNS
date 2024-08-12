@@ -28,11 +28,11 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 - `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-  **Örnek:** `128MB`
+  **Example:** `128 MB`
 
 - `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. It must be greater than zero if `enabled` is `true`.
 
-  **Örnek:** `4MB`
+  **Example:** `4 MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 - `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
 
-  **Örnek:** `2s`
+  **Example:** `2 s`
 
 ### `upstream` {#dns-upstream}
 

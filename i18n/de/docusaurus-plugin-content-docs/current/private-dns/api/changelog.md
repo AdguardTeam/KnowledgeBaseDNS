@@ -12,7 +12,9 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
-## v1.9 (11 July 2024)
+## v1.9
+
+_Released on July 11, 2024_
 
 - Added automatic device connection functionality:
   - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
@@ -26,7 +28,7 @@ _Released on April 20, 2024_
 - Added support for DNS-over-HTTPS with authentication:
   - New operation — reset DNS-over-HTTPS password for device
   - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
 
 ## v1.7
 
@@ -42,7 +44,7 @@ _Released on March 11, 2024_
   - Unlink an IPv4 address from a device
   - Request info on dedicated addresses associated with a device
 - Added new limits to Account limits:
-  - `dedicated_ipv4` — provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
+  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
 - Removed deprecated field of DNSServerSettings:
   - `safebrowsing_enabled`
 
@@ -50,7 +52,7 @@ _Released on March 11, 2024_
 
 _Released on January 22, 2024_
 
-- Added new section "Access settings" for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
+- Added new Access settings section for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
 
   - `allowed_clients` — here you can specify which clients can use your DNS server. This field will have priority over the `blocked_clients` field
   - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
@@ -61,7 +63,7 @@ _Released on January 22, 2024_
   - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
   - `user_rules` shows the amount of created user rules, as well as the limit on them
 
-- Added new setting: `ip_log_enabled` for the ability to log client IP addresses and domains.
+- Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
 - Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
 
@@ -72,11 +74,11 @@ _Released on January 22, 2024_
 
 _Released on June 16, 2023_
 
-- Added new setting `block_nrd` and group all security-related settings to one place.
+- Added a new `block_nrd` setting and grouped all security-related settings in one place
 
 ### Model for safebrowsing settings changed
 
-From
+From:
 
 ```json
 {
@@ -94,7 +96,7 @@ To:
 }
 ```
 
-where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
+where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
 
 ### Model for saving server settings changed
 
@@ -122,40 +124,40 @@ to:
 }
 ```
 
-here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
+here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
 
 ## v1.4
 
 _Released on March 29, 2023_
 
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
+- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
 
 ## v1.3
 
 _Released on December 13, 2022_
 
-- Added method to get account limits.
+- Added method to get account limits
 
 ## v1.2
 
 _Released on October 14, 2022_
 
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
+- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
 
 ## v1.1
 
-_Released on July 07, 2022_
+_Released on July 7, 2022_
 
-- Added methods to retrieve statistics by time, domains, companies and devices.
-- Added method for updating device settings.
-- Fixed required fields definition.
+- Added methods to retrieve statistics by time, domains, companies and devices
+- Added method for updating device settings
+- Fixed required fields definition
 
 ## v1.0
 
 _Released on February 22, 2022_
 
-- Added authentication.
-- CRUD operations with devices and DNS servers.
-- Query log.
-- Downloading DOT and DOT .mobileconfig.
-- Filter Lists and Web-Services.
+- Added authentication
+- CRUD operations with devices and DNS servers
+- Query log
+- Downloading DoH and DoT .mobileconfig
+- Filterlisten und Webdienste

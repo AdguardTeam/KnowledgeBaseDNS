@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQ（よくあるご質問）
 sidebar_position: 3
 ---
 

@@ -102,7 +102,7 @@ You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND, or nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
 
 For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
@@ -142,7 +142,7 @@ You will get the message that the server has been successfully reloaded.
 
 ## Comment vider le cache DNS dans Chrome
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1–2 only need to be changed once.
 
 1. Disable **secure DNS** in Chrome settings
 

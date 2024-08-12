@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Güncel Sürüm: 1.9
+## Current version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -35,7 +35,7 @@ Hesap limitlerini alır
 
 ##### Özet
 
-Tahsis edilmiş özel IPv4 adreslerini listeler
+Lists dedicated IPv4 addresses
 
 ##### Yanıtlar
 
@@ -47,7 +47,7 @@ Tahsis edilmiş özel IPv4 adreslerini listeler
 
 ##### Özet
 
-Allocates new dedicated IPv4
+Allocates new IPv4
 
 ##### Yanıtlar
 
