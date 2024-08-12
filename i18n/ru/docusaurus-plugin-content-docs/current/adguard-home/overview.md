@@ -3,8 +3,8 @@ title: Обзор
 sidebar_position: 1
 ---
 
-## What is AdGuard Home?
+## Что такое AdGuard Home?
 
-AdGuard Home is a network-wide software for blocking ads and tracking. Unlike AdGuard Public DNS and AdGuard Private DNS, AdGuard Home is designed to run on users’ own machines, which gives experienced users more control over their DNS traffic.
+AdGuard Home — это сетевое программное обеспечение для блокировки рекламы и отслеживания. В отличие от Публичного и Приватного AdGuard DNS, AdGuard Home предназначен для работы на собственных машинах пользователей, что даёт опытным пользователям больше контроля над DNS-трафиком.
 
-[This guide](getting-started.md) should help you get started.
+[Это руководство](getting-started.md) поможет вам начать работу.

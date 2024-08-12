@@ -581,7 +581,7 @@ Bu sunucular istenmeyen, zaman kaybettiren içeriklerin engellenmesini sağlar v
 
 #### Strict Filtering (RIC)
 
-Engelleme ile daha sıkı filtreleme politikaları — reklamlar, pazarlama, izleme, kötü amaçlı yazılım, tıklama tuzağı, coinhive ve kimlik avı alan adları.
+More strictly filtering policies with blocking — ads, marketing, tracking, clickbait, coinhive, malicious, and phishing domains.
 
 | Protokol       | Adres                               |                                                                              |
 | -------------- | ----------------------------------- | ---------------------------------------------------------------------------- |
@@ -1014,7 +1014,7 @@ Kayıt tutmaz | Reklamları, izleyicileri, kimlik avını, vb. filtreler | DNSSE
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server), AdGuard Home altyapısı kullanılarak Trondheim, Norveç'te barındırılan kişisel bir DNS hizmetidir.
 
-Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Günlük kaydı, kullanılan filtre listelerini iyileştirmek (örneğin, engellenmemesi gereken sitelerin engelini kaldırarak) ve sunucu sistemi güncellemeleri için en az kötü zamanları belirlemek için kullanılır.
+Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

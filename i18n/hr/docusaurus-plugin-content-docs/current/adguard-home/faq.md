@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Česta pitanja
 sidebar_position: 3
 ---
 

@@ -12,7 +12,9 @@ toc_max_heading_level: 3
 
 Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/overview.md).
 
-## v1.9 (11. juli 2024)
+## v1.9
+
+_Released on July 11, 2024_
 
 - Tilføjet automatisk enhedstilslutningsfunktion:
   - Ny DNS-serverindstilling — `auto_connect_devices_enabled`, der tillader godkendelse af automatisk tilslutning af enheder via en specifik linktype
@@ -26,7 +28,7 @@ _Udgivet 20. april 2024_
 - Tilføjet understøttelse af DNS-over-HTTPS med godkendelse:
   - Ny handling — nulstil DNS-over-HTTPS adgangskode for enheden
   - Ny enhedsindstilling — `detect_doh_auth_only`. Deaktiverer alle DNS-forbindelsesmetoder undtagen DNS-over-HTTPS med godkendelse
-  - Nyt felt i Enheds DNS-adresser — `dns_over_https_with_auth_url`. Angiver den URL, der skal bruges, når der oprettes forbindelse vha. DNS-over-HTTPS med godkendelse
+  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Angiver den URL, der skal bruges, når der oprettes forbindelse vha. DNS-over-HTTPS med godkendelse
 
 ## v1.7
 
@@ -42,7 +44,7 @@ _Udgivet 11. marts 2024_
   - Fjern tilknytning af en IPv4-adresse fra en enhed
   - Anmod om oplysninger på dedikerede adresser associeret med en enhed
 - Tilføjet nye grænser til Kontogrænser:
-  - `dedicated_ipv4` — giver information om mængden af allerede tildelte dedikerede IPv4-adresser, samt grænsen for dem
+  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
 - Fjernet forældet felt i DNSServerSettings:
   - `safebrowsing_enabled`
 
@@ -50,7 +52,7 @@ _Udgivet 11. marts 2024_
 
 _Udgivet 22. januar 2024_
 
-- Tilføjet nyt afsnit "Adgangsindstillinger" for DNS-profiler (`access_settings`). Ved at tilpasse disse felter vil AdGuard DNS-serveren kunne beskyttes mod uautoriseret adgang:
+- Added new Access settings section for DNS profiles (`access_settings`). Ved at tilpasse disse felter vil AdGuard DNS-serveren kunne beskyttes mod uautoriseret adgang:
 
   - `allowed_clients` — her kan angives, hvilke klienter, som kan bruge DNS-serveren. Dette felt vil have prioritet over feltet `blocked_clients`
   - `allowed_clients` — her kan angives, hvilke klienter, som ikke har tilladelse til bruge DNS-serveren
@@ -61,7 +63,7 @@ _Udgivet 22. januar 2024_
   - `access_rules` giver summen af de aktuelt anvendte `blocked_clients` og `blocked_domain_rules` værdier, samt grænsen for adgangsregler
   - `user_rules` viser antallet af oprettede brugerregler, såvel som grænsen for dem
 
-- Tilføjet ny indstilling: `ip_log_enabled` som muliggør logning af klientens IP-adresser og domæner.
+- Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
 - Tilføjet ny fejlkode "FIELD_REACHED_LIMIT" for at angive, hvornår grænserne er nået:
 
@@ -72,11 +74,11 @@ _Udgivet 22. januar 2024_
 
 _Udgivet 16. juni 2023_
 
-- Tilføjet ny indstilling `block_nrd` samt grupperet alle sikkerhedsrelaterede indstillinger på ét sted.
+- Added a new `block_nrd` setting and grouped all security-related settings in one place
 
 ### Model for safebrowsing-indstillinger ændret
 
-Fra
+Fra:
 
 ```json
 {
@@ -94,7 +96,7 @@ Til:
 }
 ```
 
-hvor `enabled` nu styrer alle indstillinger i gruppen, `block_dangerous_domains` er det tidligere modelfelt "enabled", og `block_nrd` er indstillinger for filtrering af nyregistrerede domæner.
+where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
 
 ### Model til lagring af serverindstillinger ændret
 
@@ -122,40 +124,40 @@ til:
 }
 ```
 
-her bruges det nye felt `safebrowsing_settings` i stedet for det udfasede `safebrowsing_enabled`, hvis værdigemmes i `block_dangerous_domains`.
+here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
 
 ## v1.4
 
 _Udgivet 29. marts 2023_
 
-- Tilføjet mulighed for tilpasset svarblokering: Standard (0.0.0.0), REFUSED, NXDOMAIN eller tilpasset IP-adresse.
+- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
 
 ## v1.3
 
 _Udgivet 13. december 2022_
 
-- Tilføjet metode til at hente kontokvoter.
+- Added method to get account limits
 
 ## v1.2
 
 _Udgivet 14. oktober 2022_
 
-- Tilføjet de nye protokoltyper DNS og DNSCRYPT. Udfasning af PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP og DNSCRYPT_UDP, som fjernes helt senere.
+- Tilføjet de nye protokoltyper DNS og DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
 
 ## v1.1
 
-_Udgivet 7. juli 2022_
+_Released on July 7, 2022_
 
-- Tilføjet metoder til statistikhentning efter tid, domæner, virksomheder og enheder.
-- Tilføjet metode til opdatering af enhedsindstillinger.
-- Rettet definition af obligatoriske felter.
+- Added methods to retrieve statistics by time, domains, companies and devices
+- Added method for updating device settings
+- Fixed required fields definition
 
 ## v1.0
 
 _Udgivet 22. februar 2022_
 
-- Tilføjet godkendelse.
-- CRUD-operationer med enheder og DNS-servere.
-- Forespørgselslog.
-- Downloader DOT og DOT .mobileconfig.
-- Filterlister og webtjenester.
+- Added authentication
+- CRUD operations with devices and DNS servers
+- Forespørgselslog
+- Downloading DoH and DoT .mobileconfig
+- Filter lists and web services

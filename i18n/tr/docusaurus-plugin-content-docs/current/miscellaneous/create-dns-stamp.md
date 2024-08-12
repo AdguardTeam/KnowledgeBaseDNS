@@ -2,7 +2,7 @@
 
 Bu kılavuz, Güvenli DNS için kendi DNS damganızı nasıl oluşturacağınızı gösterir. Güvenli DNS, DNS sorgularınızı şifreleyerek internet güvenliğinizi ve gizliliğinizi artıran bir hizmettir. Bu, sorgularınızın kötü niyetli kişiler tarafından ele geçirilmesini veya manipüle edilmesini önler.
 
-Güvenli DNS genellikle `tls://`, `https://` veya `quic://` URL'lerini kullanır. Bu, çoğu kullanıcı için yeterlidir ve tavsiye edilen yoldur.
+Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. Bu, çoğu kullanıcı için yeterlidir ve tavsiye edilen yoldur.
 
 Ancak, önceden çözümlenmiş sunucu IP'leri ve karma yoluyla sertifika sabitleme gibi ek güvenliğe ihtiyacınız varsa, kendi DNS damganızı oluşturabilirsiniz.
 
@@ -14,7 +14,7 @@ DNS damgaları, Güvenli DNS ayarlarını normal URL'lerin ötesinde özelleşti
 
 ## Protokol seçimi
 
-Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` ve diğerleri yer alır. Bu protokollerden birini seçmek, bunları hangi bağlamda kullanacağınıza bağlıdır.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Bu protokollerden birini seçmek, bunları hangi bağlamda kullanacağınıza bağlıdır.
 
 ## DNS damgası oluşturma
 

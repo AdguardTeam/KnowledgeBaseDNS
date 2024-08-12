@@ -5,59 +5,59 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## What is AdGuard DNS Client?
+## Что такое AdGuard DNS Client?
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+Кроссплатформенный облегчённый DNS-клиент для [AdGuard DNS][agdns]. Он работает как DNS-сервер, перенаправляющий DNS-запросы соответствующим upstream-резолверам.
 
 [agdns]: https://adguard-dns.io
 
-## Quick start {#start}
+## Быстрый старт {#start}
 
 :::caution
 
-AdGuard DNS Client is still in the Beta stage. It may be unstable.
+AdGuard DNS Client всё ещё находится в стадии бета-тестирования. Он может быть нестабильным.
 
 :::
 
-Supported operating systems:
+Поддерживаемые операционные системы:
 
 - Linux
 - macOS
 - Windows
 
-Supported CPU architectures:
+Поддерживаемые архитектуры процессоров:
 
-- 64-bit ARM
+- 64-разрядный ARM
 - AMD64
 - i386
 
-## Getting started {#start-basic}
+## Начало работы {#start-basic}
 
-### Unix-like operating systems {#start-basic-unix}
+### Unix-подобные операционные системы {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. Скачайте и распакуйте архив `.tar.gz` или `.zip` [со страницы релизов][releases].
 
    :::caution
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   На macOS очень важно, чтобы глобально установленные демоны принадлежали `root` (см. документацию [`launchd`][launchd-requirements]), поэтому исполняемый файл `AdGuardDNSClient` должен быть помещён в директорию `/Applications/` или её поддиректорию.
 
    :::
 
-2. Install it as a service by running:
+2. Установите его как службу, выполнив:
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. Отредактируйте файл конфигурации `config.yaml`.
 
-4. Start the service:
+4. Запустите службу:
 
    ```sh
    ./AdGuardDNSClient -s start -v
    ```
 
-To check that it works, use any DNS checking utility. For example, using `nslookup`:
+Чтобы убедиться, что он работает, используйте любую утилиту проверки DNS. Например, с помощью `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -68,56 +68,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Just download and install using the MSI installer from the [releases page][releases].
+Просто скачайте и установите с помощью установщика MSI со страницы [релизы][releases].
 
-To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
+Чтобы убедиться, что он работает, используйте любую утилиту проверки DNS. Например, с помощью `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Command-line options {#opts}
+## Параметры командной строки {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Каждый параметр переопределяет соответствующее значение, предоставленное файлом конфигурации и средой.
 
-### Help {#opts-help}
+### Справка {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+Опция `-h` заставляет AdGuard DNS Client выводить справочное сообщение на стандартный вывод и завершать работу с кодом успешного выполнения.
 
-### Service {#opts-service}
+### Сервис {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Possible values are:
+Параметр `-s <value>` определяет действие службы ОС. Возможные значения:
 
-- `install`: installs AdGuard DNS Client as a service
-- `restart`: restarts the running AdGuard DNS Client service
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `install`: устанавливает AdGuard DNS Client в качестве службы
+- `restart`: перезапускает запущенную службу AdGuard DNS Client
+- `start`: запускает установленную службу AdGuard DNS Client
+- `status`: показывает статус установленной службы AdGuard DNS Client
+- `stop`: останавливает запущенный AdGuard DNS Client
+- `uninstall`: удаляет службу AdGuard DNS Client
 
-### Verbose {#opts-verbose}
+### Подробно {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+Параметр `-v` включает подробный вывод логов.
 
-### Version {#opts-version}
+### Версия {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+Параметр `--version` заставляет AdGuard DNS Client выводить стандартную версию исполняемого файла `AdGuardDNSClient` и завершать работу с кодом успешного завершения.
 
-## Configuration {#conf}
+## Конфигурация {#conf}
 
-### File {#conf-file}
+### Файл {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+Конфигурационный файл YAML описан [в отдельной статье][conf], там же есть пример конфигурационного файла `config.dist.yaml`.  Некоторые параметры конфигурации также можно переопределить с помощью [среды][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Коды выхода {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Существует несколько кодов выхода, которые могут появляться при различных условиях ошибки:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: успешное завершение и выход, ошибок нет.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: внутренняя ошибка, скорее всего, неправильная конфигурация.
 
-- `2`: Bad command-line argument or value.
+- `2`: неверный аргумент или значение командной строки.

@@ -12,7 +12,9 @@ toc_max_heading_level: 3
 
 Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overview.md).
 
-## v1.9 (11. července 2024)
+## v1.9
+
+_Released on July 11, 2024_
 
 - Přidána funkce automatického připojení zařízení:
   - Nové nastavení serveru DNS — `auto_connect_devices_enabled`, umožnění schválení automatického připojení zařízení prostřednictvím určitého typu odkazu
@@ -26,7 +28,7 @@ _Vydáno 20. dubna 2024_
 - Přidána podpora pro DNS-over-HTTPS s ověřováním:
   - Nová operace — resetování hesla DNS-over-HTTPS pro zařízení
   - Nastavení nového zařízení — `detect_doh_auth_only`. Zakáže všechny metody připojení DNS kromě DNS-over-HTTPS s ověřením
-  - Nové pole v Device DNSAddresses — `dns_over_https_with_auth_url`. Určuje adresu URL, která se má použít při připojení pomocí DNS-over-HTTPS s ověřením
+  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Určuje adresu URL, která se má použít při připojení pomocí DNS-over-HTTPS s ověřením
 
 ## v1.7
 
@@ -42,7 +44,7 @@ _Vydáno 11. března 2024_
   - Odpojení adresy IPv4 od zařízení
   - Vyžádání informací o vyhrazených adresách přidružených k zařízení
 - Přidány nové limity do limitů účtu:
-  - `dedicated_ipv4` — poskytuje informace o množství již přidružených vyhrazených adres IPv4 a o jejich limitu
+  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
 - Odstraněno zastaralé pole DNSServerSettings:
   - `safebrowsing_enabled`
 
@@ -50,7 +52,7 @@ _Vydáno 11. března 2024_
 
 _Vydáno 22. ledna 2024_
 
-- Přidána nová sekce "Nastavení přístupu" pro DNS profily (`access_settings`). Přizpůsobením těchto polí budete moci chránit svůj server AdGuard DNS před neoprávněným přístupem:
+- Added new Access settings section for DNS profiles (`access_settings`). Přizpůsobením těchto polí budete moci chránit svůj server AdGuard DNS před neoprávněným přístupem:
 
   - `allowed_clients` — zde můžete určit, kteří klienti mohou používat váš DNS server. Toto pole má přednost před polem `blocked_clients`
   - `blocked_clients` — zde můžete určit, kteří klienti nesmí používat váš DNS server
@@ -61,7 +63,7 @@ _Vydáno 22. ledna 2024_
   - `access_rules` poskytuje součet aktuálně používaných hodnot `blocked_clients` a `blocked_domain_rules` a také limit přístupových pravidel
   - `user_rules` zobrazuje počet vytvořených uživatelských pravidel a jejich limit
 
-- Přidáno nové nastavení: `ip_log_enabled` pro možnost protokolování IP adres a domén klientů
+- Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
 - Přidán nový chybový kód `FIELD_REACHED_LIMIT`, který indikuje dosažení limitů:
 
@@ -72,7 +74,7 @@ _Vydáno 22. ledna 2024_
 
 _Vydáno 16. června 2023_
 
-- Přidáno nové nastavení `block_nrd` a seskupení všech nastavení souvisejících se zabezpečením na jednom místě.
+- Added a new `block_nrd` setting and grouped all security-related settings in one place
 
 ### Změněn model pro nastavení bezpečného prohlížení
 
@@ -94,7 +96,7 @@ Na:
 }
 ```
 
-kde `enabled` je nyní ovládání všech nastavení ve skupině, `block_dangerous_domains` je pole předchozího modelu "enabled" a `block_nrd` je nastavení profiltrování nově registrovaných domén.
+where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
 
 ### Změněn model pro ukládání nastavení serveru
 
@@ -122,40 +124,40 @@ na:
 }
 ```
 
-zde je použito nové pole `safebrowsing_settings` místo zastaralého `safebrowsing_enabled`, jehož hodnotaje uložena v `block_dangerous_domains`.
+here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
 
 ## v1.4
 
 _Vydáno 29. března 2023_
 
-- Přidána konfigurovatelná možnost blokování odezvy: výchozí (0.0.0.0), REFUSED, NXDOMAIN nebo vlastní IP adresa.
+- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
 
 ## v1.3
 
 _Vydáno 13. prosince 2022_
 
-- Přidána metoda pro získání limitů účtu.
+- Added method to get account limits
 
 ## v1.2
 
 _Vydáno 14. října 2022_
 
-- Přidány nové typy protokolů DNS a DNSCrypt. Zastaralé protokoly PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP a DNSCRYPT_UDP budou později odstraněny.
+- Přidány nové typy protokolů DNS a DNSCrypt. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
 
 ## v1.1
 
-_Vydáno 07. července 2022_
+_Released on July 7, 2022_
 
-- Přidány metody pro načítání statistik podle času, domén, společností a zařízení.
-- Přidána metoda pro aktualizaci nastavení zařízení.
-- Opravena definice povinných polí.
+- Added methods to retrieve statistics by time, domains, companies and devices
+- Added method for updating device settings
+- Fixed required fields definition
 
 ## v1.0
 
 _Vydáno 22. února 2022_
 
-- Přidáno ověřování.
-- Operace CRUD se zařízeními a DNS servery.
-- Protokol dotazů.
-- Stahování souborů DoT a DoT .mobileconfig.
-- Seznamy filtrů a webové služby.
+- Added authentication
+- CRUD operations with devices and DNS servers
+- Protokol dotazů
+- Downloading DoH and DoT .mobileconfig
+- Filter lists and web services

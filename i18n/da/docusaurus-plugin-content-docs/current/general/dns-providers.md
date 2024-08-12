@@ -581,7 +581,7 @@ Anbefales til de fleste brugere, meget fleksibel filtrering med blokering af de 
 
 #### Stringent filtrering (RIC)
 
-Mere strikse filtreringspolitikker med blokering — reklame-, marketing-, tracking-, malware-, clickbait-, Coinhive- og phishing-domæner.
+More strictly filtering policies with blocking — ads, marketing, tracking, clickbait, coinhive, malicious, and phishing domains.
 
 | Protokol       | Adresse                             |                                                                               |
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
@@ -1014,7 +1014,7 @@ Nul logging | Filtrerer annoncerer, trackere, phishing mv. | DNSSEC | QNAME-mini
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) er en personlig DNS-tjeneste hostet i Trondheim, Norge, vha. en AdGuard Home-infrastruktur.
 
-Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logning bruges til at forbedre dens anvendte filterlister (f.eks. ved afblokering af websteder, som ikke burde være blevet blokeret), samt til at bestemme de mindst forstyrrende tidspunkter for serversystemopdateringer.
+Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protokol       | Adresse                                               |                                                                                                                                                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

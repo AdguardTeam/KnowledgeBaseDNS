@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overview.md). Pro kompletní seznam změn AdGuard DNS API navštivte [tuto stránku](private-dns/api/changelog.md).
 
-## Aktuální verze: 1.9
+## Current version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -35,7 +35,7 @@ Zjišťuje limity účtu
 
 ##### Shrnutí
 
-Seznamy přidělených vyhrazených adres IPv4
+Lists dedicated IPv4 addresses
 
 ##### Odezvy
 
@@ -47,7 +47,7 @@ Seznamy přidělených vyhrazených adres IPv4
 
 ##### Shrnutí
 
-Přiděluje nové vyhrazené IPv4
+Allocates new IPv4
 
 ##### Odezvy
 

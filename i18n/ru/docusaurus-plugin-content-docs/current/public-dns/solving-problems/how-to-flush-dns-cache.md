@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Рассказываем, как очистить DNS-кеш, чтобы решить проблемы с публичным DNS. Вы можете использовать Блокировщик рекламы AdGuard для настройки DNS-серверов, в том числе зашифрованных
 
-Quick link: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock)
+Быстрая ссылка: [Скачать Блокировщик рекламы AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -44,125 +44,125 @@ DNS-кеш содержит так называемые [записи о рес�
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.
 
 :::
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
+Есть разные способы очистить DNS-кеш на Android. Точные шаги могут отличаться в зависимости от используемой версии Android и производителя устройства.
 
-#### Clear DNS cache via Chrome
+#### Очистить DNS-кеш через Chrome
 
-Google Chrome, often the default browser on Android, has its own DNS cache. To flush this cache in the Chrome browser, follow the instructions below:
+Google Chrome, который часто является браузером по умолчанию на Android, имеет свой собственный DNS-кеш. Чтобы очистить этот кеш в браузере Chrome, следуйте инструкции ниже:
 
-1. Launch Chrome on your Android device
-1. Type `chrome://net-internals/#DNS` in the address bar
-1. On the DNS lookup page, choose DNS from the menu on the left
-1. In the panel on the right, tap the *Clear Host Cache* button to clear the DNS cache on your device
+1. Запустите Chrome на своём Android-устройстве
+1. Введите `chrome://net-internals/#DNS` в адресной строке
+1. На странице DNS-поиска выберите DNS в меню слева
+1. На панели справа нажмите кнопку *Clear Host Cache*, чтобы очистить DNS-кеш на вашем устройстве
 
-#### Modify the Wi-Fi network to Static
+#### Измените сеть Wi-Fi на статическую
 
-To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+Чтобы очистить DNS-кеш вашего устройства Android, изменив сеть Wi-Fi на статическую, выполните следующие действия:
 
-1. Go to *Settings → Wi-Fi* and choose the network you're connected to
-1. Look for IP settings and select *Static*
-1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
-1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
+1. Перейдите в *Настройки → Wi-Fi* и выберите сеть, к которой вы подключены
+1. Найдите настройки IP и выберите *Статический*
+1. Заполните необходимые поля. Необходимую информацию можно получить у администратора сети или на странице конфигурации роутера
+1. После ввода информации снова подключитесь к сети Wi-Fi. Это действие заставит ваше устройство обновить настройки IP и DNS и очистить DNS-кеш
 
-#### Reset network settings
+#### Сбросить настройки сети
 
-Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Open *Settings → System → Advanced → Reset options → Reset network settings* and tap *Reset Settings* to confirm.
+Другой способ — сбросить сетевые настройки устройства в приложении Настройки. Откройте *Настройки → Системные → Расширенные → Сброс → Сброс параметров сети* и нажмите *Сбросить настройки*.
 
 :::note
 
-By doing that, you will lose connections to Wi-Fi routers and other specific network settings, including DNS servers customizations. You will need to reset them manually.
+Делая так, вы потеряете подключение к роутерам Wi-Fi и другие сетевые настройки, включая настройки DNS-серверов. Их нужно будет сбросить вручную.
 
 :::
 
 ### macOS
 
-To clear the DNS cache on macOS, open the Terminal (you can find it by using the Spotlight search — to do that, press Command+Space and type *Terminal*) and enter the following command:
+Чтобы очистить DNS-кеш на macOS, откройте Терминал (его можно найти, используя поиск Spotlight — чтобы сделать это, нажмите Command и пробел и наберите *Терминал*) и введите следующую команду:
 
 `sudo killall -HUP mDNSResponder`
 
-On macOS Big Sur 11.2.0 and macOS Monterey 12.0.0, you may also use this command:
+На macOS Big Sur 11.2.0 и macOS Monterey 12.0.0 также можно использовать эту команду:
 
 `sudo dscacheutil -flushcache`
 
-After that, enter your administrator password to complete the process.
+После введите пароль администратора, чтобы завершить процесс.
 
 ### Windows
 
-To flush DNS cache on your Windows device, do the following:
+Чтобы сбросить DNS-кеш на устройстве Windows, сделайте следующее:
 
-Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig /flushdns` and press Enter.
+Откройте командную строку от имени администратора. Её можно найти в меню «Пуск», введя *командная строка* или *cmd*. Затем введите `ipconfig /flushdns` и нажмите Enter.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+Вы увидите строку *Кеш DNS-резолвера успешно сброшен*. Готово!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND or Nscd is installed and running. The process of clearing the DNS cache depends on the Linux distribution and the caching service used.
+В Linux нет DNS-кеширования на уровне ОС, если только не установлена и не запущена служба кеширования, такая как systemd-resolved, DNSMasq, BIND или nscd. Сброс DNS-кеша зависит от дистрибутива Linux и используемой службы кеша.
 
-For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
+Для каждого дистрибутива нужно запустить окно терминала. Нажмите Ctrl+Alt+T и используйте соответствующую команду, чтобы очистить DNS-кеш для сервиса, с которым работает ваша система Linux.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+Чтобы узнать, какой DNS-резолвер вы используете, введите `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 
-To clear the **systemd-resolved** DNS cache, type:
+Чтобы очистить DNS-кеш **systemd-resolved**, введите:
 
 `sudo systemd-resolve --flush-caches`
 
-On success, the command doesn’t return any message.
+В случае успеха команда не возвращает никакого сообщения.
 
 #### DNSMasq
 
-To clear the **DNSMasq** cache, you need to restart it:
+Чтобы очистить кеш **DNSMasq**, вам нужно перезапустить его:
 
 `sudo service dnsmasq restart`
 
 #### NSCD
 
-To clear the **NSCD** cache, you also need to restart the service:
+Чтобы очистить кеш **NSCD**, вам также нужно перезапустить сервис:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+Чтобы сбросить DNS-кеш **BIND**, выполните команду:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Затем вам нужно перезагрузить BIND:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+Вы получите сообщение, что сервер успешно перезагружен.
 
 ## Как сбросить DNS-кеш в Chrome
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1-2 only need to be changed once.
+Это может быть полезно, если вы не хотите каждый раз перезапускать браузер при работе с приватным AdGuard DNS или AdGuard Home. Settings 1–2 only need to be changed once.
 
-1. Disable **secure DNS** in Chrome settings
+1. Отключите **безопасный DNS** в настройках Chrome
 
     ```bash
     chrome://settings/security
     ```
 
-1. Disable **Async DNS resolver**
+1. Отключите **Async DNS resolver**
 
     ```bash
     chrome://flags/#enable-async-dns
     ```
 
-1. Press both buttons here
+1. Нажмите обе кнопки здесь
 
     ```bash
     chrome://net-internals/#sockets
     ```
 
-1. Press **Clear host cache**
+1. Нажмите **Очистить кеш хоста**
 
     ```bash
     chrome://net-internals/#dns

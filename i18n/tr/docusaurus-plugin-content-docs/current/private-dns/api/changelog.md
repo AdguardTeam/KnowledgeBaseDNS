@@ -12,7 +12,9 @@ toc_max_heading_level: 3
 
 Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik günlüğünü içerir.
 
-## v1.9 (11 Temmuz 2024)
+## v1.9
+
+_Released on July 11, 2024_
 
 - Otomatik cihaz bağlantısı işlevi eklendi:
   - Yeni DNS sunucusu ayarı — `auto_connect_devices_enabled`, belirli bir bağlantı türü aracılığıyla cihazların otomatik olarak bağlanmasının onaylanmasına olanak tanır
@@ -26,7 +28,7 @@ _20 Nisan 2024 tarihinde yayınlandı_
 - Kimlik doğrulama ile DNS-over-HTTPS desteği eklendi:
   - Yeni işlem — cihaz için DNS-over-HTTPS parolasını sıfırlama
   - Yeni cihaz ayarı — `detect_doh_auth_only`. Kimlik doğrulamalı DNS-over-HTTPS dışındaki tüm DNS bağlantı yöntemlerini devre dışı bırakır
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Kimlik doğrulamayla DNS-over-HTTPS kullanarak bağlanırken kullanılacak URL'yi belirtir
+  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Kimlik doğrulamayla DNS-over-HTTPS kullanarak bağlanırken kullanılacak URL'yi belirtir
 
 ## v1.7
 
@@ -42,7 +44,7 @@ _11 Mart 2024 tarihinde yayınlandı_
   - Bir cihazdan IPv4 adresinin bağlantısını kaldırma
   - Bir cihazla ilişkilendirilmiş özel adreslerle ilgili bilgi isteği
 - Hesap limitlerine yeni limitler eklendi:
-  - `dedicated_ipv4` — önceden tahsis edilmiş tahsisli IPv4 adreslerinin miktarı ve bunların sınırı hakkında bilgi sağlar
+  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
 - DNSServerSettings'in kullanımdan kalkmış alanı kaldırıldı:
   - `safebrowsing_enabled`
 
@@ -50,7 +52,7 @@ _11 Mart 2024 tarihinde yayınlandı_
 
 _22 Ocak 2024 tarihinde yayınlandı_
 
-- DNS profilleri için yeni "Erişim ayarları" bölümü eklendi (`access_settings`). Bu alanları özelleştirerek AdGuard DNS sunucunuzu yetkisiz erişime karşı koruyabilirsiniz:
+- Added new Access settings section for DNS profiles (`access_settings`). Bu alanları özelleştirerek AdGuard DNS sunucunuzu yetkisiz erişime karşı koruyabilirsiniz:
 
   - `allowed_clients` — burada hangi istemcilerin DNS sunucunuzu kullanabileceğini belirtebilirsiniz. Bu alan `blocked_clients` alanına göre önceliğe sahip olur
   - `blocked_clients` — burada hangi istemcilerin DNS sunucunuzu kullanmasına izin verilmediğini belirtebilirsiniz
@@ -61,7 +63,7 @@ _22 Ocak 2024 tarihinde yayınlandı_
   - `access_rules` şu anda kullanılan `blocked_clients` ve `blocked_domain_rules` değerlerinin toplamının yanı sıra erişim kuralları sınırını da sağlar
   - `user_rules` oluşturulan kullanıcı kurallarının miktarını ve bunlar üzerindeki sınırı gösterir
 
-- Yeni ayar eklendi: İstemci IP adreslerini ve alan adlarını günlüğe kaydetme yeteneği için `ip_log_enabled`.
+- Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
 - Limitlere ulaşıldığını belirtmek için yeni `FIELD_REACHED_LIMIT` hata kodu eklendi:
 
@@ -72,11 +74,11 @@ _22 Ocak 2024 tarihinde yayınlandı_
 
 _16 Haziran 2023 tarihinde yayınlandı_
 
-- Yeni `block_nrd` ayarı eklendi ve güvenlikle ilgili tüm ayarlar tek bir yerde toplandı.
+- Added a new `block_nrd` setting and grouped all security-related settings in one place
 
 ### Güvenli gezinti ayarları için model değiştirildi
 
-From
+From:
 
 ```json
 {
@@ -94,7 +96,7 @@ To:
 }
 ```
 
-burada "enabled" artık gruptaki tüm ayarları kontrol ediyor, "block_dangerous_domains" önceki model alanı "enabled" ve "block_nrd" yeni kaydedilen alan adlarını filtrelemeye yönelik ayarlar.
+where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
 
 ### Sunucu ayarlarını kaydetme modeli değiştirildi
 
@@ -122,40 +124,40 @@ From:
 }
 ```
 
-burada, değeri `block_dangerous_domains` içinde depolanan ve kullanımdan kaldırılan `safebrowsing_enabled` yerine yeni `safebrowsing_settings` alanı kullanılıyor.
+here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
 
 ## v1.4
 
 _29 Mart 2023 tarihinde yayınlandı_
 
-- Yanıtın engellenmesi için yapılandırılabilir seçenek eklendi: varsayılan (0.0.0.0), REFUSED, NXDOMAIN veya özel IP adresi.
+- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
 
 ## v1.3
 
 _13 Aralık 2022 tarihinde yayınlandı_
 
-- Hesap limitlerini almak için yöntem eklendi.
+- Added method to get account limits
 
 ## v1.2
 
 _14 Ekim 2022 tarihinde yayınlandı_
 
-- Yeni protokol türleri DNS ve DNSCrypt eklendi. Daha sonra çıkarılacak olan PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP ve DNSCRYPT_UDP kaldırılacaktır.
+- Yeni protokol türleri DNS ve DNSCrypt eklendi. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
 
 ## v1.1
 
-_07 Temmuz 2022 tarihinde yayınlandı_
+_Released on July 7, 2022_
 
-- İstatistikleri zamana, alan adlarına, şirketlere ve cihazlara göre almak için yöntemler eklendi.
-- Cihaz ayarlarını güncellemek için yöntem eklendi.
-- Gerekli alanların tanımı düzeltildi.
+- Added methods to retrieve statistics by time, domains, companies and devices
+- Added method for updating device settings
+- Fixed required fields definition
 
 ## v1.0
 
 _22 Şubat 2022 tarihinde yayınlandı_
 
-- Kimlik doğrulama eklendi.
-- Cihazlar ve DNS sunucularıyla CRUD işlemleri.
-- Sorgu günlüğü.
-- DoT ve DoT .mobileconfig dosyasının indirilmesi.
-- Filtre Listeleri ve Web Hizmetleri.
+- Added authentication
+- CRUD operations with devices and DNS servers
+- Sorgu günlüğü
+- Downloading DoH and DoT .mobileconfig
+- Filter lists and web services

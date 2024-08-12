@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Extensibilité.** Au cours de la dernière décennie, la syntaxe de style Adblock a beaucoup évolué, et nous ne voyons aucune raison de ne pas l’étendre encore plus loin et d’offrir des fonctionnalités supplémentaires pour les bloqueurs au niveau du réseau.
 
-Si vous maintenez une liste de blocage de style `/etc/hosts`ou plusieurs listes de filtrage (quel que soit le type), nous fournissons un outil pour la compilation de listes de blocage. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+Si vous maintenez une liste de blocage de style `/etc/hosts` ou plusieurs listes de filtrage (quel que soit le type), nous fournissons un outil pour la compilation de listes de blocage. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Basic examples {#basic-examples}
 
@@ -46,9 +46,9 @@ Si vous maintenez une liste de blocage de style `/etc/hosts`ou plusieurs listes 
   Dans AdGuard Home, utiliser l’adresse IP non spécifiée (`0.0.0.0`) ou une adresse locale (`127.0.0.1` et les mêmes) pour un hôte est fondamentalement la même chose que de bloquer cet hôte.
 
   ```none
-  # Retourne l’adresse IP 1.2.3.4 par exemple.
+  # Retourne l’adresse IP 1.2.3.4 pour example.org.
   1.2.3.4 example.org
-# Bloque example.org en répondant avec 0.0.0.0.
+  # Bloque example.org en répondant avec 0.0.0.0.
   0.0.0.0 example.org
   ```
 

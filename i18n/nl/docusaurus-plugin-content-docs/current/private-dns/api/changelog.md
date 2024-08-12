@@ -12,7 +12,9 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
-## v1.9 (11 July 2024)
+## v1.9
+
+_Uitgebracht op 11 juli 2024_
 
 - Added automatic device connection functionality:
   - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
@@ -26,7 +28,7 @@ _Released on April 20, 2024_
 - Added support for DNS-over-HTTPS with authentication:
   - New operation — reset DNS-over-HTTPS password for device
   - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in Device DNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+  - Nieuw veld in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
 
 ## v1.7
 
@@ -42,7 +44,7 @@ _Uitgebracht op 11 maart 2024_
   - Een IPv4-adres ontkoppelen van een apparaat
   - Informatie opvragen over speciale adressen die aan een apparaat zijn gekoppeld
 - Nieuwe limieten toegevoegd aan accountlimieten:
-  - 'dedicated_ipv4' — geeft informatie over het aantal reeds toegewezen speciale IPv4-adressen en de limiet daarvoor
+  - 'dedicated_ipv4' geeft informatie over het aantal reeds toegewezen speciale IPv4-adressen en de limiet daarvoor
 - Verouderd veld van DNSServerSettings verwijderd:
   - `safebrowsing_enabled`
 
@@ -50,7 +52,7 @@ _Uitgebracht op 11 maart 2024_
 
 _Uitgebracht op 22 januari 2024_
 
-- Nieuwe sectie "Toegangsinstellingen" toegevoegd voor DNS-profielen ('access_settings'). Door deze velden aan te passen, kun je je AdGuard DNS-server beschermen tegen ongeoorloofde toegang:
+- Nieuwe sectie Toegangsinstellingen toegevoegd voor DNS-profielen (`access_settings`). Door deze velden aan te passen, kun je je AdGuard DNS-server beschermen tegen ongeoorloofde toegang:
 
   - 'allowed_clients' — hier kun je opgeven welke clients jouw DNS-server mogen gebruiken. Dit veld heeft voorrang op het veld 'blocked_clients'
   - `blocked_clients` - hier kun je opgeven welke clients jouw DNS-server niet mogen gebruiken
@@ -61,7 +63,7 @@ _Uitgebracht op 22 januari 2024_
   - "access_rules" geeft de som van de momenteel gebruikte waarden "blocked_clients" en "blocked_domain_rules" aan, alsmede de limiet voor toegangsregels
   - `user_rules` toont het aantal aangemaakte gebruikersregels en de limiet daarop
 
-- Nieuwe instelling toegevoegd: `ip_log_enabled` voor de mogelijkheid om client-IP-adressen en domeinen te loggen.
+- Er is een nieuwe `ip_log_enabled`-instelling toegevoegd om client-IP-adressen en -domeinen te loggen
 
 - Nieuwe foutcode `FIELD_REACHED_LIMIT` toegevoegd om aan te geven wanneer limieten zijn bereikt:
 
@@ -72,11 +74,11 @@ _Uitgebracht op 22 januari 2024_
 
 _Uitgebracht op 16 juni 2023_
 
-- Added new setting `block_nrd` and group all security-related settings to one place.
+- Er is een nieuwe 'block_nrd'-instelling toegevoegd en alle beveiligingsgerelateerde instellingen op één plek gegroepeerd
 
 ### Model for safebrowsing settings changed
 
-From
+From:
 
 ```json
 {
@@ -94,11 +96,11 @@ To:
 }
 ```
 
-where `enabled` is now control all settings in group, `block_dangerous_domains` is previous model field "enabled" and `block_nrd` is settings for filtering newly registered domains.
+waarbij `enabled` nu alle instellingen in de groep beheert, `block_dangerous_domains` het vorige `enabled`-modelveld is en `block_nrd` een instelling is die nieuw geregistreerde domeinen blokkeert.
 
 ### Model for saving server settings changed
 
-From:
+Van:
 
 ```json
 {
@@ -122,40 +124,40 @@ to:
 }
 ```
 
-here new field `safebrowsing_settings` is used instead of deprecated `safebrowsing_enabled`, whose value stored in `block_dangerous_domains`.
+hier wordt een nieuw veld `safebrowsing_settings` gebruikt in plaats van het verouderde `safebrowsing_enabled`, waarvan de waarde is opgeslagen in `block_dangerous_domains`.
 
 ## v1.4
 
 _Uitgebracht op 29 maart 2023_
 
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP-address.
+- Configureerbare optie toegevoegd voor het blokkeren van reacties: standaard (0.0.0.0), GEWEIGERD, NXDOMAIN of aangepast IP-adres
 
 ## v1.3
 
 _Uitgebracht op 13 december 2022_
 
-- Added method to get account limits.
+- Methode toegevoegd om accountlimieten te verkrijgen
 
 ## v1.2
 
 _Uitgebracht op 14 oktober 2022_
 
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later.
+- Added new protocol types DNS and DNSCRYPT. Afschaffen van PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP en DNSCRYPT_UDP die later zullen worden verwijderd
 
 ## v1.1
 
-_Uitgebracht op 07 juli 2022_
+_Released on July 7, 2022_
 
-- Added methods to retrieve statistics by time, domains, companies and devices.
-- Added method for updating device settings.
-- Fixed required fields definition.
+- Methoden toegevoegd om statistieken op te halen op basis van tijd, domeinen, bedrijven en apparaten
+- Methode toegevoegd voor het bijwerken van apparaatinstellingen
+- Definitie van vaste verplichte velden
 
 ## v1.0
 
 _Uitgebracht op 22 februari 2022_
 
-- Added authentication.
-- CRUD operations with devices and DNS servers.
-- Query log.
-- Downloading DOT and DOT .mobileconfig.
-- Filter Lists and Web-Services.
+- Authenticatie toegevoegd
+- CRUD-bewerkingen met apparaten en DNS-servers
+- Querylogboek
+- DoH en DoT .mobileconfig downloaden
+- Filterlijsten en webservices
