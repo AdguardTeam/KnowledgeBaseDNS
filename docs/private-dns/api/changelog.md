@@ -146,7 +146,7 @@ here a new field `safebrowsing_settings` is used instead of the deprecated `safe
 
 ## v1.1
 
-*Released on July 07, 2022*
+*Released on July 7, 2022*
 
 - Added methods to retrieve statistics by time, domains, companies and devices
 - Added method for updating device settings
