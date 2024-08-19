@@ -26,7 +26,7 @@ DoH and DoT are modern secure DNS protocols that gain more and more popularity a
 
 #### JSON API for DNS
 
-AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing in:
+AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
 
 ```text
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
