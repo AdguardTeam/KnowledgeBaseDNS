@@ -882,7 +882,7 @@ These servers block adult websites and inappropriate contents.
 
 ### JupitrDNS
 
-[JupitrDNS](https://jupitrdns.com/) is a free security focused recursive DNS service that blocks malware. It has DNSSEC support and does not store logs.
+[JupitrDNS](https://jupitrdns.com/) is a free security-focused recursive DNS service that blocks malware. It has DNSSEC support and does not store logs.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
