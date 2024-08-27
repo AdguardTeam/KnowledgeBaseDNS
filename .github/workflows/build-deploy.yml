@@ -15,18 +15,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: ${{ env.NODE_VERSION }}
 
-      - name: yarn install
-        run: yarn install
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
-      - name: yarn build
-        run: yarn build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: deploy
+      - name: Run build
+        run: pnpm build
+
+      - name: Deploy
         if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
