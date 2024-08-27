@@ -1,5 +1,8 @@
 name: Sync with Crowdin
 
+env:
+  NODE_VERSION: 20
+
 on:
   push:
     branches:
@@ -10,22 +13,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: ${{ env.NODE_VERSION }}
 
-      - name: yarn install
-        run: yarn install
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
-      - name: sync translations
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync translations
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-        run: yarn run crowdin:sync
+        run: pnpm run crowdin:sync
 
-      - name: create pull request
-        uses: peter-evans/create-pull-request@v4
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
           commit-message: automatically update translations
