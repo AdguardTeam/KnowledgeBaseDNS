@@ -146,7 +146,7 @@ _Uitgebracht op 14 oktober 2022_
 
 ## v1.1
 
-_Released on July 7, 2022_
+_Uitgebracht op 7 juli 2022_
 
 - Methoden toegevoegd om statistieken op te halen op basis van tijd, domeinen, bedrijven en apparaten
 - Methode toegevoegd voor het bijwerken van apparaatinstellingen

@@ -14,7 +14,7 @@ Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik gün
 
 ## v1.9
 
-_Released on July 11, 2024_
+_11 Temmuz 2024 tarihinde yayınlandı_
 
 - Otomatik cihaz bağlantısı işlevi eklendi:
   - Yeni DNS sunucusu ayarı — `auto_connect_devices_enabled`, belirli bir bağlantı türü aracılığıyla cihazların otomatik olarak bağlanmasının onaylanmasına olanak tanır

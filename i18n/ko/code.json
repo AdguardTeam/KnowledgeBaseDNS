@@ -165,7 +165,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "다시 시도해보세요",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "description": "The label of the button to try again when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "맨 위로 스크롤",

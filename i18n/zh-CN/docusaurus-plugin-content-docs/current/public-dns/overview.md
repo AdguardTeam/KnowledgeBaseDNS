@@ -23,6 +23,22 @@ AdGuard DNS允许您使用特定的加密协议：DNSCrypt 由于他，所有DNS
 
 DoH 和 DoT 是现代安全的 DNS 协议，它们越来越受欢迎，可预见的，在未来将成为最受欢迎的安全协议。 两者都比 DNSCcrypt 更可靠，并且都已经得到了 AdGuard DNS 的支持。
 
+#### JSON API for DNS
+
+AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+
+:::note
+
+Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+
+:::
+
 ### DNS-over-QUIC 端口
 
 [DNS-over-QUIC 是一个新的 DNS 安全协议](https://adguard.com/blog/dns-over-quic.html)，AdGuard DNS 是第一个支持它的公共解析器。 与 DoH 和 DoT 不同的是，它使用 QUIC 作为传输协议，并最终将 DNS 带回到它的根——通过 UDP 工作。 它带来了 QUIC 所能提供的所有好东西ーー开箱即用的加密、减少连接时间、当数据包丢失时更好的性能。 此外，QUIC 应该是一个传输级别的协议，并且不存在 DoH 可能发生的元数据泄漏风险。

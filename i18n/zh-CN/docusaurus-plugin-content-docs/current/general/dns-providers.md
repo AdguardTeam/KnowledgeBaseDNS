@@ -642,6 +642,37 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`                            | [Add to AdGuard](adguard:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net) |
 | DNS-over-TLS   | `tls://dns11.quad9.net`                                        | [Add to AdGuard](adguard:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net)                         |
 
+### Quadrant Security
+
+[Quadrant Security](https://www.quadrantsec.com/post/public-dns-resolver-with-tls-https-support) offers DoH and DoT servers for the general public with no logging or filtering.
+
+| 协议             | 地址                             |                                                                                                                                                                                                     |
+| -------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://doh.qis.io/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.qis.io/dns-query&name=doh.qis.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.qis.io/dns-query&name=doh.qis.io) |
+| DNS-over-TLS   | `tls://dns-tls.qis.io`         | [Add to AdGuard](adguard:add_dns_server?address=tls://dns-tls.qis.io&name=dns-tls.qis.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns-tls.qis.io&name=dns-tls.qis.io)         |
+
+### Rabbit DNS
+
+[Rabbit DNS](https://rabbitdns.org/) is a privacy-focused DoH service that doesn't collect any user data.
+
+#### 无过滤
+
+| 协议             | 地址                                    |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.rabbitdns.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org) |
+
+#### Security-filtering
+
+| 协议             | 地址                                         |                                                                                                                                                                                                                                                     |
+| -------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://security.rabbitdns.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://security.rabbitdns.org/dns-query&name=security.rabbitdns.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://security.rabbitdns.org/dns-query&name=security.rabbitdns.org) |
+
+#### Family-filtering
+
+| 协议             | 地址                                       |                                                                                                                                                                                                                                             |
+| -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://family.rabbitdns.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://family.rabbitdns.org/dns-query&name=family.rabbitdns.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.rabbitdns.org/dns-query&name=family.rabbitdns.org) |
+
 ### RethinkDNS
 
 [RethinkDNS](https://www.rethinkdns.com/configure) provides DNS-over-HTTPS service running as Cloudflare Worker and DNS-over-TLS service running as Fly.io Worker with configurable blocklists.
@@ -926,6 +957,24 @@ This is just one of the available servers, the full list can be found [here](htt
 | DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Add to AdGuard](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
 | DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
 
+### Xstl DNS
+
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
+
+#### SK Broadband
+
+| 协议             | 地址                              |                                                                                                                                                                                                         |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.seia.io/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io) |
+| DNS-over-TLS   | `tls://dns.seia.io`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io)                         |
+
+#### Oracle Cloud South Korea
+
+| 协议             | 地址                                        |                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://secondary.dns.seia.io/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://secondary.dns.seia.io/dns-query&name=secondary.dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://secondary.dns.seia.io/dns-query&name=secondary.dns.seia.io) |
+| DNS-over-TLS   | `tls://secondary.dns.seia.io`             | [Add to AdGuard](adguard:add_dns_server?address=tls://secondary.dns.seia.io&name=secondary.dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://secondary.dns.seia.io&name=secondary.dns.seia.io)                         |
+
 ### Yandex DNS
 
 [Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
@@ -1084,6 +1133,44 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://resolver-eu.lelux.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://resolver-eu.lelux.fi/dns-query&name=resolver-eu.lelux.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://resolver-eu.lelux.fi/dns-query&name=resolver-eu.lelux.fi) |
 | DNS-over-TLS   | `tls://resolver-eu.lelux.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://resolver-eu.lelux.fi&name=resolver-eu.lelux.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://resolver-eu.lelux.fi&name=resolver-eu.lelux.fi)                         |
+
+### Marbled Fennec
+
+Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving both OpenNIC and ICANN domains
+
+| 协议             | 地址                                        |                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.marbledfennec.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net) |
+| DNS-over-TLS   | `tls://dns.marbledfennec.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net)                         |
+
+### momou! DNS
+
+[momou! DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
+
+#### Standard
+
+Blocks ads, trackers, and malware
+
+| 协议             | 地址                               |                                                                                                                                                                                                             |
+| -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
+| DNS-over-TLS   | `tls://dns.momou.ch`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| 协议             | 地址                                    |                                                                                                                                                                                                                       |
+| -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.momou.ch/dns-query/kids` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch) |
+| DNS-over-TLS   | `tls://kids.dns.momou.ch`             | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch)               |
+
+#### Unfiltered
+
+| 协议             | 地址                                          |                                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.momou.ch/dns-query/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch) |
+| DNS-over-TLS   | `tls://unfiltered.dns.momou.ch`             | [Add to AdGuard](adguard:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch)   |
 
 ### OSZX DNS
 

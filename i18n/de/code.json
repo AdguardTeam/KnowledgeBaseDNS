@@ -165,7 +165,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "Erneut versuchen",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "description": "The label of the button to try again when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Zum Seitenanfang springen",

@@ -23,6 +23,22 @@ AdGuard DNS, belirli bir şifreli protokol kullanmanıza izin verir — DNSCrypt
 
 DoH ve DoT, giderek daha fazla popülerlik kazanan ve öngörülebilir gelecekte endüstri standartları hâline gelecek olan modern güvenli DNS protokolleridir. Her ikisi de DNSCrypt'ten daha güvenilirdir ve her ikisi de AdGuard DNS tarafından desteklenir.
 
+#### DNS için JSON API
+
+AdGuard DNS ayrıca DNS için bir JSON API sağlar. Aşağıdakileri yazarak JSON formatında bir DNS yanıtı almak mümkündür:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+
+:::note Not
+
+Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_subnet` ve `Comment` değerlerini desteklemez.
+
+:::
+
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC, yeni bir DNS şifreleme protokolüdür](https://adguard.com/blog/dns-over-quic.html) ve AdGuard DNS, onu destekleyen ilk genel çözümleyicidir. DoH ve DoT'un aksine, QUIC'i bir aktarım protokolü olarak kullanır ve sonunda DNS'i köklerine geri getirir — UDP üzerinden çalışır. QUIC'in sunduğu tüm iyi şeyleri getiriyor — kullanıma hazır şifreleme, azaltılmış bağlantı süreleri, veri paketleri kaybolduğunda daha iyi performans. Ayrıca, QUIC'in aktarım düzeyinde bir protokol olduğu varsayılır ve DoH ile oluşabilecek meta veri sızıntısı riski yoktur.
