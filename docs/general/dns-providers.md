@@ -1251,7 +1251,6 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4 | `103.178.234.160` | [Add to AdGuard](adguard:add_dns_server?address=103.178.234.160&name=BlacMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.178.234.160&name=BlacMagiccDNS) |
-| DNS, IPv6 | `2405:19c0:2:ea2e::1` | [Add to AdGuard](adguard:add_dns_server?address=2405:19c0:2:ea2e::1&name=BlacMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2405:19c0:2:ea2e::1&name=BlacMagiccDNS) |
-| DNS-over-HTTPS | `https://robin.techomespace.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://robin.techomespace.com/dns-query&name=BlacMagiccDoH), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://robin.techomespace.com/dns-query&name=BlacMagiccDoH) |
-| DNS-over-TLS | `tls://robin.techomespace.com:853` | [Add to AdGuard](adguard:add_dns_server?address=tls://robin.techomespace.com:853&name=BlacMagiccDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://robin.techomespace.com:853&name=BlacMagiccDoT) |
+| DNS, IPv4 | `103.252.122.187` | [Add to AdGuard](adguard:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS) |
+| DNS, IPv6 | `2401:4ae0::38` | [Add to AdGuard](adguard:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS) |
+| DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
