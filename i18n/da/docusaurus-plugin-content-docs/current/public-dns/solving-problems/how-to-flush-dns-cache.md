@@ -102,7 +102,7 @@ Dernæst ses linjen *DNS-opløser cachen er tømt*. Færdig!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND, or nscd is installed and running. Processen med at rense DNS-cachen afhænger af Linux-distributionen og den anvendte cachetjeneste.
+Linux har ikke DNS-caching på OS-niveau, medmindre en cachingtjeneste såsom systemd-resolved, DNSMasq, BIND eller nscd er installeret og kører. Processen med at rense DNS-cachen afhænger af Linux-distributionen og den anvendte cachetjeneste.
 
 For hver distribution skal et terminalvindue startes. Tryk på Ctrl+Alt+T på tastaturet, og brug den relevante kommando til at rense DNS-cachen for den tjeneste, Linux-systemet kører.
 
@@ -142,7 +142,7 @@ En besked om, at serveren er blevet genindlæst, vises efter gennemførsel.
 
 ## Sådan tømmes DNS-cache i Chrome
 
-Dette kan være nyttigt, hvis browseren ikke ønskes genstartet hver gang under arbejdet med AdGuard DNS Private eller AdGuard Home. Settings 1–2 only need to be changed once.
+Dette kan være nyttigt, hvis browseren ikke ønskes genstartet hver gang under arbejdet med AdGuard DNS Private eller AdGuard Home. Indstillingerne 1–2 skal kun ændres én gang.
 
 1. Slå **sikker DNS** fra i Chrome-indstillinger
 

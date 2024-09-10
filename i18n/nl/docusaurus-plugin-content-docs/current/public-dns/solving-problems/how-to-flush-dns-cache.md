@@ -142,7 +142,7 @@ You will get the message that the server has been successfully reloaded.
 
 ## How to flush DNS cache in Chrome
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Settings 1–2 only need to be changed once.
+This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Instellingen 1–2 hoeven slechts één keer te worden gewijzigd.
 
 1. Disable **secure DNS** in Chrome settings
 

@@ -35,7 +35,7 @@ Hesap limitlerini alır
 
 ##### Özet
 
-Lists dedicated IPv4 addresses
+Özel IPv4 adreslerini listeler
 
 ##### Yanıtlar
 
@@ -47,7 +47,7 @@ Lists dedicated IPv4 addresses
 
 ##### Özet
 
-Allocates new IPv4
+Yeni IPv4 tahsis eder
 
 ##### Yanıtlar
 

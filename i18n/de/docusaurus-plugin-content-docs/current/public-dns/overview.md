@@ -23,6 +23,22 @@ AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks
 
 DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
 
+#### JSON API for DNS
+
+AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+
+:::note
+
+Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+
+:::
+
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.

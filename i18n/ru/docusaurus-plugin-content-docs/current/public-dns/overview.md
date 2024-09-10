@@ -23,6 +23,22 @@ AdGuard DNS — это бесплатный, защищающий конфиде
 
 DoH и DoT — современные безопасные DNS-протоколы, которые набирают популярность и станут стандартами индустрии в обозримом будущем. Оба протокола более надёжны по сравнению с DNSCrypt, и оба поддерживаются AdGuard DNS.
 
+#### JSON API for DNS
+
+AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+
+:::note
+
+Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+
+:::
+
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC — это новый протокол шифрования DNS](https://adguard.com/blog/dns-over-quic.html), а AdGuard DNS — первый публичный резолвер, который его поддерживает. В отличие от DoH и DoT, он использует QUIC в качестве транспортного протокола и возвращает DNS к истокам — работе через UDP. Он привносит всё хорошее, что QUIC может предложить — готовое шифрование, ускоренное время соединения, лучшую производительность при потере пакетов трафика. К тому же, QUIC создавался как транспортный протокол, и с ним нет риска утечки метаданных, в отличие от DoH.

@@ -23,6 +23,22 @@ AdGuard DNS muliggør brug af en særlig krypteret protokol - DNSCrypt. Takket v
 
 DoH og DoT er moderne sikre DNS-protokoller, som vinder mere og mere popularitet og vil blive industristandarderne indenfor en overskuelig fremtid. Begge er mere pålidelige end DNSCrypt, og begge understøttes af AdGuard DNS.
 
+#### JSON API til DNS
+
+AdGuard DNS leverer også en JSON API til DNS. Det er muligt at få et DNS-svar i JSON ved at skrive:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+For detaljeret dokumentation henvises til [Googles guide til JSON API til DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). At få DNS-svar i JSON fungerer på samme måde med AdGuard DNS.
+
+:::note
+
+I modsætning til Google DNS understøtter AdGuard DNS ikke `edns_client_subnet` og `Kommentar` værdier i svar-JSON'er.
+
+:::
+
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC er en ny DNS-krypteringsprotokol](https://adguard.com/blog/dns-over-quic.html), og AdGuard DNS er den første offentlige opløser, der understøtter den. I modsætning til DoH og DoT, bruger den QUIC som en transportprotokol og bringer endelig DNS tilbage til sine rødder — at fungere over UDP. Det har alle de gode ting, som QUIC har at tilbyde — out-of-the-box kryptering, reducerede forbindelsesoprettelsestider, bedre ydeevne ifm. tab af datapakker. QUIC anses også for at være en protokol på transportniveau uden risiko for de metadatalæk, som kan forekomme med DoH.
