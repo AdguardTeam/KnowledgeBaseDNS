@@ -396,7 +396,6 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `119.29.29.29` and `119.28.28.28`                  | [Add to AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=) |
-| DNS-over-HTTPS | `https://doh.pub/dns-query` |[Add to AdGuard](adguard:add_dns_server?address=https://doh.pub/dns-query&name=doh.pub), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.pub/dns-query&name=doh.pub) |
 | DNS-over-HTTPS | `https://dns.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
 | DNS-over-TLS | `tls://dot.pub` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub) |
 
