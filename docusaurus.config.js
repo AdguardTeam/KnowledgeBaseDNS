@@ -7,6 +7,7 @@ const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
 const REPORTS_WEBSITE_URL = 'https://reports.adguard.com';
 
 // Allow to parameterise the website URL and the base path during the build.
+// By default, the website is published to Cloudflare Pages.
 const url = process.env.URL || 'https://kb-dns.pages.dev';
 const baseUrl = process.env.BASE_URL || '/';
 
