@@ -1,5 +1,11 @@
 name: Build and deploy
 
+env:
+  NODE_VERSION: 20
+  BASE_DOMAIN: kb-dns.pages.dev
+  BASE_PATH: /
+  PAGES_PROJECT: kb-dns
+
 on:
   push:
     branches:
@@ -26,14 +32,44 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
+
+      - name: Determine branch for deploy
+        id: get-branch
+        run: |
+          if [ "${{ github.ref_name }}" == "master" ]; then
+            echo "BRANCH_NAME=main" >> $GITHUB_ENV
+          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+            PR_NUMBER=${{ github.event.number }}
+            echo "BRANCH_NAME=pull-request-${PR_NUMBER}" >> $GITHUB_ENV
+          else
+            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
 
       - name: Run build
-        run: pnpm build
+        run: |
+          URL=https://${{ env.BASE_DOMAIN }} BASE_URL=${{ env.BASE_PATH }} pnpm build
 
-      - name: Deploy
-        if: github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@4.1.8
+          # Disable crawlers for preview builds.
+          echo "User-Agent: *\nDisallow: /" > build/robots.txt
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler pages deploy ./build --project-name="${{ env.PAGES_PROJECT }}" --branch ${{ env.BRANCH_NAME }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_WORKERS_ACCOUNT_ID }}
+
+      - name: Add comment to Pull Request
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
         with:
-          branch: gh-pages
-          folder: build
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Preview was deployed to: https://${{ env.BRANCH_NAME }}.${{ env.BASE_DOMAIN }}${{ env.BASE_PATH }}`
+            })
