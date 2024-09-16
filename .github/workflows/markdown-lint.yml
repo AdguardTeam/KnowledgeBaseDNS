@@ -1,5 +1,8 @@
 name: Lint Markdown
 
+env:
+  NODE_VERSION: 20
+
 on:
   push:
     branches:
