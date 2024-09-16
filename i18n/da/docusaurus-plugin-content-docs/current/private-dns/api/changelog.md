@@ -28,7 +28,7 @@ _Udgivet 20. april 2024_
 - Tilføjet understøttelse af DNS-over-HTTPS med godkendelse:
   - Ny handling — nulstil DNS-over-HTTPS adgangskode for enheden
   - Ny enhedsindstilling — `detect_doh_auth_only`. Deaktiverer alle DNS-forbindelsesmetoder undtagen DNS-over-HTTPS med godkendelse
-  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Angiver den URL, der skal bruges, når der oprettes forbindelse vha. DNS-over-HTTPS med godkendelse
+  - Nyt felt i DeviceDNSAddresses — `dns_over_https_with_auth_url`. Angiver den URL, der skal bruges, når der oprettes forbindelse vha. DNS-over-HTTPS med godkendelse
 
 ## v1.7
 

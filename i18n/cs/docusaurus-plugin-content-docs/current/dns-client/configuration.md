@@ -28,11 +28,11 @@ Objekt `cache` konfiguruje ukládání výsledků DNS dotazů do mezipaměti. Vy
 
 - `size`: Maximální velikost mezipaměti výsledků DNS jako velikost dat čitelných pro člověka. Musí být větší než nula, pokud je `enabled` nastaveno na `true`.
 
-  **Example:** `128 MB`
+  **Příklad:** `128 MB`
 
 - `client_size`: Maximální velikost mezipaměti výsledků DNS pro každou nakonfigurovanou adresu nebo podsíť klienta jako velikost dat čitelná pro člověka. Musí být větší než nula, pokud je `enabled` nastaveno na `true`.
 
-  **Example:** `4 MB`
+  **Příklad:** `4 MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ Objekt `bootstrap` konfiguruje překlad adres serverů [upstream](#dns-upstream)
 
 - `timeout`: Časový limit pro spouštěcí požadavky DNS jako doba trvání čitelná pro člověka.
 
-  **Example:** `2 s`
+  **Příklad:** `2 s`
 
 ### `upstream` {#dns-upstream}
 
