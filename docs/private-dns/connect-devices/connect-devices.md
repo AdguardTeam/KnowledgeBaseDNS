@@ -19,7 +19,7 @@ For devices that do not natively support encrypted DNS protocols, we offer three
 
 - [AdGuard DNS Client](/private-dns/connect-devices/other-options/client.md)
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.mds)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 If you want to restrict access to AdGuard DNS to certain devices, use [DNS-over-HTTPS with authentication](/private-dns/connect-devices/other-options/doh-authentication.md).
 
