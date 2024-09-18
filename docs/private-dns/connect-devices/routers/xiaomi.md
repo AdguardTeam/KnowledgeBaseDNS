@@ -19,5 +19,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 
 1. Further instructions.
 
-- [Dedicated IPs](/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

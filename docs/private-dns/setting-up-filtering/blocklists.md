@@ -54,4 +54,4 @@ To submit a request, you need to
 ## User rules
 
 You can also always create your own blocking rules.
-Learn more in the [User rules article](/user-rules.md).
+Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).

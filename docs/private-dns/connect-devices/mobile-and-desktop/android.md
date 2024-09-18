@@ -19,5 +19,5 @@ To connect an Android device to AdGuard DNS, first add it to Dashboard:
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

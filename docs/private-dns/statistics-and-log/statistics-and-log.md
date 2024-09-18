@@ -7,7 +7,7 @@ One of the purposes of using AdGuard DNS is to have a clear understanding of wha
 
 AdGuard DNS provides a wide range of useful tools for monitoring queries:
 
-- [Statistics](/statistics.md)
-- [Traffic destination](/traffic-destination.md)
-- [Companies](/companies.md)
-- [Query log](/query-log.md)
+- [Statistics](/private-dns/statistics-and-log/statistics.md)
+- [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
+- [Companies](/private-dns/statistics-and-log/companies.md)
+- [Query log](/private-dns/statistics-and-log/query-log.md)

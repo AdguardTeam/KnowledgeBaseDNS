@@ -27,5 +27,5 @@ You can read more about traffic filtering and blocking rules in the article ["Ho
 
 If you are interested in settings, there are separate articles for that:
 
-- [Advanced settings](/advanced.md)
-- [Access settings](/access.md)
+- [Advanced settings](/private-dns/server-and-settings/advanced.md)
+- [Access settings](/private-dns/server-and-settings/access.md)

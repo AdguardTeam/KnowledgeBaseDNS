@@ -22,4 +22,4 @@ Text.
 AdGuard DNS supports adding third-party blocking filters.
 Activate filters marked “security” for additional protection.
 
-To learn more about Blocklists [see separate article](/blocklists.md).
+To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).

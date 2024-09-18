@@ -45,5 +45,5 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 
 Alternatively you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

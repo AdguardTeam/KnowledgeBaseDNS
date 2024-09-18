@@ -29,5 +29,5 @@ Use this guide if your FritzBox router does not support DNS-over-TLS configurati
 
 Alternatively you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
