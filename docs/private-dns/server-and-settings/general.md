@@ -23,7 +23,7 @@ For instance, you can have:
 
 Blah blah blah.
 
-You can read more about traffic filtering and blocking rules in the article ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/).
+You can read more about traffic filtering and blocking rules in the article ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
 
 If you are interested in settings, there are separate articles for that:
 
