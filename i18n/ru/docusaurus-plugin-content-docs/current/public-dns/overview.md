@@ -23,19 +23,19 @@ AdGuard DNS — это бесплатный, защищающий конфиде
 
 DoH и DoT — современные безопасные DNS-протоколы, которые набирают популярность и станут стандартами индустрии в обозримом будущем. Оба протокола более надёжны по сравнению с DNSCrypt, и оба поддерживаются AdGuard DNS.
 
-#### JSON API for DNS
+#### JSON API для DNS
 
-AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
+AdGuard DNS также предоставляет JSON API для DNS. Получить DNS-ответ в формате JSON можно, набрав:
 
 ```text
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+Подробную документацию см. [в руководстве Google по JSON API для DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Получение DNS-ответа в формате JSON работает точно так же с AdGuard DNS.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+В отличие от Google DNS, AdGuard DNS не поддерживает значения `edns_client_subnet` и `Comment` в ответах JSON.
 
 :::
 
