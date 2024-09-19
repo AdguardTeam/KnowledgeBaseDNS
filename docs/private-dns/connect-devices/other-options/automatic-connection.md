@@ -21,7 +21,7 @@ Blah blah blah.
 
 ### Device name
 
-When manually creating devices, please note that there are a number of restrictions related to name length, characters, spaces and hyphens:
+When manually creating devices, please note that there are a number of restrictions related to name length, characters, spaces, and hyphens:
 
 **Name length**: maximum 50 characters. Characters beyond this limit are ignored.
 
