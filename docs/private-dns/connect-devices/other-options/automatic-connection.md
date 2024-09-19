@@ -31,7 +31,7 @@ When manually creating devices, please note that there are a number of restricti
 
 Let's look at one of the options with an example:
 
-- Let's create a device with the selected DNS-over-TLS protocol
+- Create a device with the selected DNS-over-TLS protocol
 - Give it a space-sensitive name: AdGuard Test Device
 - Device type: Android
 - Click the “Generate Link” button
