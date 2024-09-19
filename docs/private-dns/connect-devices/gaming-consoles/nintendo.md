@@ -7,7 +7,11 @@ It is likely that your router supports the use of encrypted DNS servers, so you 
 
 You can find instructions on how to configure your router in [this section](/private-dns/connect-devices/routers/routers.md).
 
-> Applies to: New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+:::note Compatibility
+
+Applies to: New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+
+:::
 
 ## Connect AdGuard DNS
 
