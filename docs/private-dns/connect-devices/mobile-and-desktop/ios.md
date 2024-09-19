@@ -3,7 +3,7 @@ title: iOS
 sidebar_position: 3
 ---
 
-To connect an iOs device to AdGuard DNS, first add it to Dashboard:
+To connect an iOS device to AdGuard DNS, first add it to *Dashboard*:
 
 1. smth
 1. smth
