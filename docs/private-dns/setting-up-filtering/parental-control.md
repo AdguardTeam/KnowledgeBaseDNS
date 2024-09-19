@@ -9,7 +9,7 @@ Parental control is a set of settings that gives you the flexibility to customiz
 
 ## How to set it up
 
-> You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/general), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+> You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Then, go to the settings of the selected server and enable the required configurations.
 
