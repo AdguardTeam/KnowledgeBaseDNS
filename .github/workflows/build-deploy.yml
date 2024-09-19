@@ -34,9 +34,9 @@ jobs:
       - name: Determine branch for deploy
         id: get-branch
         run: |
-          if [ "${{ github.ref_name }}" == "master" ]; then
+          if [ "${{ github.ref_name }}" = "master" ]; then
             echo "BRANCH_NAME=main" >> $GITHUB_ENV
-          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUMBER=${{ github.event.number }}
             echo "BRANCH_NAME=pull-request-${PR_NUMBER}" >> $GITHUB_ENV
           else
