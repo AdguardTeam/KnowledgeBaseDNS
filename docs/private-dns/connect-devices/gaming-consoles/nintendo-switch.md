@@ -3,7 +3,7 @@ title: Nintendo Switch
 sidebar_position: 3
 ---
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+It is likely that your router supports encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
 
 You can find instructions on how to configure your router in [this section](/private-dns/connect-devices/routers/routers.md).
 
