@@ -13,7 +13,7 @@ In this section you will find instructions on how to connect your device to AdGu
 - [Windows](/private-dns/connect-devices/mobile-and-desktop/windows.md)
 - [Linux](/private-dns/connect-devices/mobile-and-desktop/linux.md)
 - [Routers](/private-dns/connect-devices/routers/routers.md)
-- [Gaming consoles](/private-dns/connect-devices/gaming-consoles/gaming-consoles.md)
+- [Game consoles](/private-dns/connect-devices/game-consoles/game-consoles.md)
 
 For devices that do not natively support encrypted DNS protocols, we offer three other options:
 

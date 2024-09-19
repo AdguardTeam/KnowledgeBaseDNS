@@ -43,7 +43,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 1. Once the test is complete and you see Internet Connection: Successful, save your settings.
 
-It would be preferable to use Linked IP (Or link your Dedicated IP if you're using a team subscription)
+It would be preferable to use linked IP (or link your Dedicated IP if you're using a team subscription)
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
