@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## What it is and why you need it
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you're a system administrator setting up multiple corporate devices simultaneously, you'd prefer to minimize manual tasks as much as possible.
+Not everyone feels at ease adding devices through the Dashboard. For instance, if you're a system administrator setting up multiple corporate devices simultaneously, you'll want to minimize manual tasks as much as possible.
 
 Blah blah blah.
 
