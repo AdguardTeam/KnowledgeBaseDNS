@@ -102,7 +102,7 @@ Zobrazí se řádek *Successfully flushed the DNS Resolver Cache*. Hotovo!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND, or nscd is installed and running. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
+Linux neobsahuje mezipaměť DNS na úrovni operačního systému, pokud není nainstalována a spuštěna služba mezipaměti, například systemd-resolved, DNSMasq, BIND nebo nscd. Proces vyprázdnění mezipaměti DNS závisí na distribuci systému Linux a použité službě ukládání do mezipaměti.
 
 Pro každou distribuci je třeba spustit okno terminálu. Stiskněte Ctrl+Alt+T na klávesnici a pomocí odpovídajícího příkazu vymažte mezipaměť DNS pro službu, na které váš Linux běží.
 
@@ -142,7 +142,7 @@ Zobrazí se zpráva, že server byl znovu úspěšně načten.
 
 ## Jak vyprázdnit mezipaměť DNS v Chrome
 
-To může být užitečné, pokud nechcete restartovat prohlížeč pokaždé, když pracujete se soukromým AdGuard DNS nebo AdGuard Home. Settings 1–2 only need to be changed once.
+To může být užitečné, pokud nechcete restartovat prohlížeč pokaždé, když pracujete se soukromým AdGuard DNS nebo AdGuard Home. Nastavení 1–2 stačí změnit pouze jednou.
 
 1. Deaktivujte **zabezpečený DNS** v nastavení Chrome
 

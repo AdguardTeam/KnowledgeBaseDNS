@@ -23,19 +23,19 @@ AdGuard DNS umožňuje používat specifický šifrovaný protokol — DNSCrypt.
 
 DoH a DoT jsou moderní bezpečné protokoly DNS, které získávají stále větší popularitu a v dohledné budoucnosti se stanou průmyslovými standardy. Oba jsou spolehlivější než DNSCrypt a oba jsou podporovány AdGuard DNS.
 
-#### JSON API for DNS
+#### JSON API pro DNS
 
-AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS response in JSON by typing:
+AdGuard DNS také poskytuje JSON API pro DNS. Odpověď DNS v JSON lze získat zadáním:
 
 ```text
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+Podrobnou dokumentaci naleznete v [příručce Google k JSON API pro DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Získání odpovědi DNS ve formátu JSON funguje stejně jako u AdGuard DNS.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+Na rozdíl od Google DNS nepodporuje AdGuard DNS hodnoty `edns_client_subnet` a `Comment` v JSON odpovědích.
 
 :::
 

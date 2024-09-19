@@ -318,6 +318,8 @@ The `dnsrewrite` response modifier allows replacing the content of the response 
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home.**
 
+Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+
 The shorthand syntax is:
 
 
