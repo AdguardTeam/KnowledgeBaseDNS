@@ -9,7 +9,7 @@ In this section you will find instructions on how to connect your device to AdGu
 
 - [Android](/private-dns/connect-devices/mobile-and-desktop/android.md)
 - [iOS](/private-dns/connect-devices/mobile-and-desktop/ios.md)
-- [MacOS](/private-dns/connect-devices/mobile-and-desktop/macos.md)
+- [macOS](/private-dns/connect-devices/mobile-and-desktop/macos.md)
 - [Windows](/private-dns/connect-devices/mobile-and-desktop/windows.md)
 - [Linux](/private-dns/connect-devices/mobile-and-desktop/linux.md)
 - [Routers](/private-dns/connect-devices/routers/routers.md)
