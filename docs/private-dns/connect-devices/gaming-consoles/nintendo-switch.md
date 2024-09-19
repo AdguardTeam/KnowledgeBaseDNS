@@ -13,7 +13,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 1. Turn on your Nintendo Switch console and go to the Home Menu.
 
-1. Go to System Settings → Internet.
+1. Go to *System Settings* → *Internet*.
 
 1. Select the Wi-Fi network that you want to modify the DNS settings for.
 
