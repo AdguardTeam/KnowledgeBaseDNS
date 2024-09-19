@@ -21,7 +21,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 1. Scroll down and select *DNS Settings*.
 
-1. In the DNS Server field, enter one of the following DNS server addresses:
+1. In the *DNS Server* field, enter one of the following DNS server addresses:
 
     94.140.14.49
 
