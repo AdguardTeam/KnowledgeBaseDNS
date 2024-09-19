@@ -17,7 +17,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 1. Select the Wi-Fi network that you want to modify the DNS settings for.
 
-1. Click Change Settings for the selected Wi-Fi network.
+1. Click *Change Settings* for the selected Wi-Fi network.
 
 1. Scroll down and select DNS Settings.
 
