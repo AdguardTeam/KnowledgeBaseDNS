@@ -34,7 +34,7 @@ Let's look at one of the options with an example:
 - Create a device with the selected DNS-over-TLS protocol
 - Give it a space-sensitive name: AdGuard Test Device
 - Device type: Android
-- Click the “Generate Link” button
+- Click the *Generate Link* button
 - Link generated: **tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com**
 
 ### Device type
