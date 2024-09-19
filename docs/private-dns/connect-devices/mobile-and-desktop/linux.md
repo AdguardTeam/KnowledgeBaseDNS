@@ -3,7 +3,7 @@ title: Linux
 sidebar_position: 6
 ---
 
-To connect a Linux device to AdGuard DNS, first add it to Dashboard:
+To connect a Linux device to AdGuard DNS, first add it to *Dashboard*:
 
 1. smth
 1. smth
