@@ -318,7 +318,7 @@ The `dnsrewrite` response modifier allows replacing the content of the response 
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home.**
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Reacties op alle aanvragen voor een host die voldoen aan een `dnsrewrite`regel worden vervangen. Het antwoordgedeelte van het vervangende antwoord bevat alleen RR's die overeenkomen met het querytype van de aanvraag en mogelijk ook CNAME RR's. Houd er rekening mee dat dit betekent dat antwoorden op sommige verzoeken leeg kunnen worden (`NODATA`) als de host overeenkomt met een `dnsrewrite`-regel.
 
 The shorthand syntax is:
 
@@ -457,7 +457,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 `||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
 
-- In this example: 
+- In dit voorbeeld: 
   
   
 
