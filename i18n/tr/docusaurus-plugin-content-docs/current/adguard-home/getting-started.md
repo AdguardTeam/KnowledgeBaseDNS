@@ -80,7 +80,7 @@ http://[::1]:3000 adresine gidin
 
 Orada ilk yapılandırma sihirbazından geçeceksiniz.
 
-![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
+![AdGuard Home ağ arayüzü seçim ekranı](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
 ![AdGuard Home kullanıcı oluşturma ekranı](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 

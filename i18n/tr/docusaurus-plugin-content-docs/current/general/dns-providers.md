@@ -643,7 +643,7 @@ EDNS İstemci Alt Ağı, yetkili DNS sunucularına gönderilen isteklerde son ku
 
 ### Quadrant Security
 
-[Quadrant Security](https://www.quadrantsec.com/post/public-dns-resolver-with-tls-https-support) offers DoH and DoT servers for the general public with no logging or filtering.
+[Quadrant Security](https://www.quadrantsec.com/post/public-dns-resolver-with-tls-https-support), günlük kaydı veya filtreleme olmadan genel halk için DoH ve DoT sunucuları sunar.
 
 | Protokol       | Adres                          |                                                                                                                                                                                                     |
 | -------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

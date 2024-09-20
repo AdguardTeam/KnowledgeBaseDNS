@@ -111,13 +111,13 @@ Hizmet, kimlik doğrulaması için sizi AdGuard'a yönlendirir (henüz giriş ya
 
 **oapi/v1/oauth_authorize** uç noktasının istek parametreleri şunlardır:
 
-| Parametre         | Açıklama                                                                                                                                                        |
-|:----------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Yetkilendirme sunucusuna hangi iznin yürütüleceğini söyler                                                                                                      |
-| **client_id**     | Yetkilendirme isteyen OAuth istemcisinin kimliği                                                                                                                |
-| **redirect_uri**  | Bir URL içerir. Bu uç noktadan gelen başarılı bir yanıt, bu URL'ye yönlendirme yapar                                                                            |
-| **state**         | Güvenlik amacıyla kullanılan opak bir değer. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Ortaklık tanımlayıcısı                                                                                                                                          |
+| Parametre         | Açıklama                                                                                                                                                  |
+|:----------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Yetkilendirme sunucusuna hangi iznin yürütüleceğini söyler                                                                                                |
+| **client_id**     | Yetkilendirme isteyen OAuth istemcisinin kimliği                                                                                                          |
+| **redirect_uri**  | Bir URL içerir. Bu uç noktadan gelen başarılı bir yanıt, bu URL'ye yönlendirme yapar                                                                      |
+| **state**         | Güvenlik amacıyla kullanılan opak bir değer. Bu istek parametresi istekte ayarlanırsa, **redirect_uri** öğesinin bir parçası olarak uygulamaya döndürülür |
+| **aid**           | Ortaklık tanımlayıcısı                                                                                                                                    |
 
 Örneğin:
 
@@ -129,7 +129,7 @@ Yetkilendirme sunucusuna hangi izn türünün kullanılacağını bildirmek içi
 
 - Örtülü izin için, bir erişim belirteci eklemek üzere **Response_type=token** kullanın.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). Yanıt parametreleri, **redirect_uri** parametresinin **Location** başlığının parça bileşenine (yani `#` işaretinden sonraki kısım) gömülüdür.
 
 Örneğin:
 
@@ -159,9 +159,9 @@ Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araç
 
 ### Değişiklik günlüğü
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+AdGuard DNS API değişiklik günlüğünün tamamı [bu sayfada](private-dns/api/changelog.md) mevcuttur.
 
-## Geri Bildirim
+## Geri bildirim
 
 Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
 

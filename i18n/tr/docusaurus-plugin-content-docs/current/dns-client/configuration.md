@@ -110,15 +110,15 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
   The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`: İnsan tarafından okunabilir bir süre olarak üst kaynak sunucu DNS istekleri için zaman aşımı.
 
   **Örnek:** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. Aşağıdaki özelliklere sahiptir:
+`fallback` nesnesi, arıza durumunda DNS sunucusunun davranışını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: Asıl [üst kaynak sunucu](#dns-upstream) yanıt veremediğinde kullanılacak sunucuların listesi.
 
   **Özellik örneği:**
 

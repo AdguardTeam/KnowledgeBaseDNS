@@ -257,7 +257,7 @@ Svarmodifikatoren `dnsrewrite` muliggør at erstatte indholdet af svaret på DNS
 
 **Regler med svarmodifikatoren `dnsrewrite` har højere prioritet end øvrige regler i AdGuard Home.**
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Svar på alle forespørgsler om en vært matchende en `dnsrewrite`-regel bliver erstattet. Svarsafsnittet i erstatningssvaret vil kun indeholde RR'er matchende forespørgslens forespørgselstype og muligvis CNAME RR'er. Bemærk, at dette betyder, at svar på nogle forespørgsler kan blive tomme (`NODATA`), hvis værten matcher en `dnsrewrite`-regel.
 
 Stenografisyntaksen er:
 
