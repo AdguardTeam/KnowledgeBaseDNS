@@ -74,7 +74,7 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 
 All done! Your device is successfully connected to AdGuard DNS.
 
-## se a configuration profile
+## Use a configuration profile
 
 A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. It also allows you to configure Private AdGuard DNS on your device.
 

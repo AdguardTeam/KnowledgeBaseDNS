@@ -9,7 +9,7 @@ To connect an iOS device to AdGuard DNS, first add it to *Dashboard*:
 1. In the drop-down menu *Device type*, select iOS.
 1. Name the device.
 
-    ![Connecting_device *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
+    ![Connecting device *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
 ## Use AdGuard Ad Blocker (paid option)
 

@@ -7,9 +7,9 @@ To connect an Android device to AdGuard DNS, first add it to *Dashboard*:
 
 1. Go to *Dashboard* and click *Connect new device*.
 1. In the drop-down menu *Device type*, select Android.
-1. Name the device
+1. Name the device.
 
-    ![Connecting_device *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
+    ![Connecting device *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
 ## Use AdGuard Ad Blocker (paid option)
 
