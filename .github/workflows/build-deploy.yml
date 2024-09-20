@@ -1,7 +1,6 @@
 name: Build and deploy
 
 env:
-  NODE_VERSION: 20
   BASE_DOMAIN: kb-dns.pages.dev
   BASE_PATH: /
   PAGES_PROJECT: kb-dns
@@ -19,12 +18,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: node:20
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
+      - uses: actions/checkout@v4
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -37,9 +34,9 @@ jobs:
       - name: Determine branch for deploy
         id: get-branch
         run: |
-          if [ "${{ github.ref_name }}" == "master" ]; then
+          if [ "${{ github.ref_name }}" = "master" ]; then
             echo "BRANCH_NAME=main" >> $GITHUB_ENV
-          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUMBER=${{ github.event.number }}
             echo "BRANCH_NAME=pull-request-${PR_NUMBER}" >> $GITHUB_ENV
           else
