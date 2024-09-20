@@ -3,7 +3,7 @@ title: Android
 sidebar_position: 2
 ---
 
-To connect an Android device to AdGuard DNS, first add it to Dashboard:
+To connect an Android device to AdGuard DNS, first add it to *Dashboard*:
 
 1. Go to *Dashboard* and click *Connect new device*.
 1. In the drop-down menu *Device type*, select Android.
