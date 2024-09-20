@@ -7,7 +7,7 @@ The Advanced settings section is intended for the more experienced user and incl
 
 ## Respond to blocked domains
 
-smth smth
+Here you can select the DNS response for the blocked request:
 
 - **Default**: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule
 - **REFUSED**: Respond with REFUSED code

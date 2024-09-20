@@ -5,13 +5,13 @@ sidebar_position: 1
 
 ## What is server and how to use it
 
-When you set up a private AdGuard DNS, you'll come across the term "Servers."
+When you set up Private AdGuard DNS, you'll encounter the term *servers*.
 
 A server acts as the "profile" that you connect your devices to.
 
 Servers include configurations that you can customize to your liking.
 
-When you create an account, we automatically set up a server with default settings. You can either customize this server or create a new one.
+Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
 
 For instance, you can have:
 
@@ -21,11 +21,9 @@ For instance, you can have:
 
 1. A server that blocks adult content only during specific hours you choose.
 
-Blah blah blah.
+For more information on traffic filtering and blocking rules, check out the article  ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
 
-You can read more about traffic filtering and blocking rules in the article ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
-
-If you are interested in settings, there are separate articles for that:
+If you're interested in specific settings, there are dedicated articles available for that:
 
 - [Advanced settings](/private-dns/server-and-settings/advanced.md)
 - [Access settings](/private-dns/server-and-settings/access.md)
