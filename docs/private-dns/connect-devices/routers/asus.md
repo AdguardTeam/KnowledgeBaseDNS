@@ -26,7 +26,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 1. For *TLS Port*, enter 853.
 1. In the *TLS Hostname* field, enter the Private AdGuard DNS server address:
 
-    {Your_Device_ID}.d.adguard-dns.com
+    `{Your_Device_ID}.d.adguard-dns.com`
 
 1. Scroll to the bottom of the page and click *Apply*.
 

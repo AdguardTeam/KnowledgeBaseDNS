@@ -20,7 +20,7 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
     2. opkg install luci-app-https-dns-proxy
     3. /etc/init.d/rpcd restart```
 
-    Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-dns-proxy.
+Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-dns-proxy.
 
 - **Configure DoH provider**. https-dns-proxy is configured with Google DNS and Cloudflare DNS by default. You need to change it to AdGuard DoH. Specify several resolvers to improve fault tolerance.
 
@@ -43,7 +43,7 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
     1. opkg update
     2. opkg install unbound-daemon ca-certificates```
 
-    LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
+LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
 
 - **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
 
@@ -52,7 +52,7 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
     2. opkg install luci-app-unbound ca-certificates
     3. /etc/init.d/rpcd restart```
 
-    Navigate to *LuCI* → *Services* → *Recursive DNS* to configure Unbound.
+Navigate to *LuCI* → *Services* → *Recursive DNS* to configure Unbound.
 
 - **Configure AdGuard DNS-over-TLS**.
 

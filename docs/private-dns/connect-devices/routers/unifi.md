@@ -1,5 +1,5 @@
 ---
-title: Unifi
+title: UniFi
 sidebar_position: 10
 ---
 

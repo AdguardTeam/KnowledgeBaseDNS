@@ -19,21 +19,21 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 1. Open the app.
 1. Click the icon in the top right corner.
 
-    ![Protection icon *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
+    ![Protection icon *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
 
 1. Select *Preferences...*.
 
-    ![Preferences *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step4.png)
+    ![Preferences *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step4.png)
 
 1. Click the *DNS* tab from the top row of icons.
 
-    ![DNS tab *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step5.png)
+    ![DNS tab *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step5.png)
 
 1. Enable DNS protection by ticking the box at the top.
 
     ![DNS protection *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step6.png)
 
-1. Click the *+* button in the bottom left corner.
+1. Click *+* in the bottom left corner.
 
     ![Click + *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step7.png)
 

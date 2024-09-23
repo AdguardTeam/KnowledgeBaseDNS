@@ -21,7 +21,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
     ![Shield icon *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step3.jpg)
 
-1. Make sure that *DNS protection* is toggled on and then tap it.
+1. Make sure that *DNS protection* is toggled on and then tap it. Choose *DNS server*.
 
    ![DNS protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
    ![DNS server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
@@ -32,7 +32,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
 1. Copy one of the following DNS addresses and paste it into the *DNS server adress* field in the app. If you are not sure which one to prefer, choose DNS-over-HTTPS.
 
-    ![Copy server address *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
+    ![Copy server address *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
 
     ![Paste server address *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 
