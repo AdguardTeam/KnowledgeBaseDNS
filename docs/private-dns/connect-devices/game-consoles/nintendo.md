@@ -19,7 +19,7 @@ Applies to: New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo
 
 Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
 
-1. From the Home menu, select System Settings.
+1. From the home menu, select System Settings.
 1. Go to *Internet Settings* → *Connection Settings*.
 1. Select the connection file, then select *Change Settings*.
 1. Select *DNS*, then select *Set Up*.

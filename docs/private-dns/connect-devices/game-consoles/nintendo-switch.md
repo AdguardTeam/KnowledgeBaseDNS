@@ -13,7 +13,7 @@ You can find instructions on how to configure your router in [this section](/pri
 
 Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
 
-1. Turn on your Nintendo Switch console and go to the Home Menu.
+1. Turn on your Nintendo Switch console and go to the home menu.
 
 1. Go to *System Settings* → *Internet*.
 
