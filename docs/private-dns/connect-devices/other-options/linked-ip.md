@@ -3,11 +3,11 @@ title: Linked IPs
 sidebar_position: 3
 ---
 
-## What are linked IPs and why it's useful
+## What linked IPs are and why they are useful
 
 Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
 
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific "device. The only requirement for a linked IP address is that it must be a residential IP.
+You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
 
 :::note
 
@@ -32,7 +32,7 @@ The following instructions explain how to connect to the device via **linking IP
 
 ![Linked IP *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## DDNS: Why it's useful
+## Dynamic DNS: Why it is useful
 
 Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
@@ -50,8 +50,8 @@ This way, you won’t have to manually update the associated IP address each tim
 
 1. First, you need to check if DDNS is supported by your router settings:
 
-    - To do this, go to *Router settings* → *Network*
-    - Locate the DDNS or Dynamic DNS section
+    - Go to *Router settings* → *Network*
+    - Locate the DDNS or the *Dynamic DNS* section
     - Navigate to it and verify that the settings are indeed supported
 
     ![DDNS supported *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ddns_step1.png)

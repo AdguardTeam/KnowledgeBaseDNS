@@ -19,15 +19,13 @@ You can learn more about this in the [related article](/dns-client/overview/).
 
 ## Use AdGuard VPN CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (Command Line Interface). To get started with AdGuard VPN CLI, you’ll need to use a terminal.
+You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
 
 1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
 1. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
-1. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`
+1. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
 
-    where `<server_address>` is your private server’s address.
-
-1. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`
+1. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
@@ -75,7 +73,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (Command Line Inter
 
 ## Use dnsmasq
 
-1. Install dnsmasq using following commands:
+1. Install dnsmasq using the following commands:
 
     `sudo apt updatesudo`
 
@@ -83,7 +81,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (Command Line Inter
 
     `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-1. Use the following in dnsmasq.conf:
+1. Use the following commands in dnsmasq.conf:
 
     `no-resolv`
 
@@ -99,13 +97,17 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (Command Line Inter
 
     `add-cpe-id={Your_Device_ID}`
 
-1. Restart dnsmasq service:
+1. Restart the dnsmasq service:
 
     `sudo service dnsmasq restart`
 
 All done! Your device is successfully connected to AdGuard DNS.
 
-> If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+:::note Important
+
+If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+
+:::
 
 ## Use plain DNS
 

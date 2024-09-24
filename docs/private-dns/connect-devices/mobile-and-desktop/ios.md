@@ -48,11 +48,11 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## Use AdGuard VPN
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and private DNS, AdGuard VPN is your go-to option.
+Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
 
 1. Install the [AdGuard VPN app](https://adguard-vpn.com/ios/overview.html) on the device you want to connect to AdGuard DNS.
 1. Open the AdGuard VPN app.
-1. Select the menu by clicking the gear icon in the lower right corner of the screen.
+1. Tap the gear icon in the bottom right corner of the screen.
 
     ![Gear icon *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step3.jpg)
 

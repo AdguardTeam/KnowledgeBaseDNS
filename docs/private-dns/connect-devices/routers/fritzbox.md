@@ -23,7 +23,7 @@ Use this guide if your FritzBox router does not support DNS-over-TLS configurati
 1. Enter the administrator username (usually, it’s admin) and router password.
 1. Open *Internet* or *Home Network*.
 1. Select *DNS* or *DNS Settings*.
-1. Choose *Manual DNS*. Select *Use These DNS Servers* or *Specify DNS Server Manually* and enter the following DNS server addresses:
+1. Select *Manual DNS*, then *Use These DNS Servers* or *Specify DNS Server Manually*, and enter the following DNS server addresses:
 
     IPv4: 94.140.14.49 and 94.140.14.59
 

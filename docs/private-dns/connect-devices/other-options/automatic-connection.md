@@ -7,13 +7,13 @@ sidebar_position: 5
 
 Not everyone feels at ease adding devices through the Dashboard. For instance, if you're a system administrator setting up multiple corporate devices simultaneously, you'll want to minimize manual tasks as much as possible.
 
-You can create a connection link and use it in the device settings; it will be detected and automatically connect to the server.
+You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
 
-In *Servers* → *Server settings* → *Devices*, we’ve added a template that generates a link for the specific device type and protocol. If you prefer to create links manually, just follow the instructions in the Dashboard.
+In *Servers* → *Server settings* → *Devices*, we’ve added a template that generates a link for the specific device type and protocol. If you prefer to create links manually, just follow the instructions in the *Dashboard*.
 
 ## How to configure automatic connection
 
-1. Open Dashboard.
+1. Open *Dashboard*.
 1. Select the required server.
 1. Go to *Devices*.
 
@@ -21,13 +21,13 @@ In *Servers* → *Server settings* → *Devices*, we’ve added a template that 
 
     ![Connect devices automatically *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-1. Next, go to the device settings in the *Connect devices automatically* section by clicking on the *Link generator and instructions* button
-1. Select the desired protocol as well as the device name and type
+1. Next, go to the device settings in the *Connect devices automatically* section by clicking the *Link generator and instructions* button.
+1. Select the protocol you want to use as well as the device name and the device type.
 1. Click *Generate link*.
 
     ![Generate link *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 
-1. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.website.agrd.dev/welcome.html)
+1. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
 
 ## Rules for generating automatically connected devices
 
@@ -39,7 +39,7 @@ When manually creating devices, please note that there are a number of restricti
 
 **Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
 
-**Spaces and hyphens**: To represent a space, use a hyphen. To represent a hyphen, use a double hyphen `--`.
+**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
 
 Let's look at one of the options with an example:
 
