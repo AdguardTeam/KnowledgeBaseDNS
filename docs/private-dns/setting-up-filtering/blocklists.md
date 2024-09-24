@@ -16,7 +16,7 @@ Blocklists are designed for flexible customization of filtering rules. For examp
 To activate the block lists you want:
 
 1. Open the Dashboard.
-1. Go to the Servers section.
+1. Go to the *Servers* section.
 1. Select the required server.
 1. Click *Blocklists*.
 
