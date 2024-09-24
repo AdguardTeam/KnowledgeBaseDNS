@@ -3,7 +3,7 @@ title: Nintendo Switch
 sidebar_position: 3
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up a public AdGuard DNS or a private AdGuard DNS via linked IP address.
+Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
 
 It is likely that your router supports encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
 
