@@ -11,7 +11,7 @@ You can find instructions on how to configure your router in [this section](/pri
 
 :::note Compatibility
 
-Applies to: New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
 
 :::
 
