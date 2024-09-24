@@ -42,7 +42,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
 1. Your freshly created server should appear at the bottom of the list.
 
-   ![Your custom server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
+   ![Custom server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
 All done! Your device is successfully connected to AdGuard DNS.
 
