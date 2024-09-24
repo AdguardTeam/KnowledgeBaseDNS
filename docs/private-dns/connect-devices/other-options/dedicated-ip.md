@@ -25,7 +25,7 @@ The instructions below explain how to connect a dedicated IP to the device:
 1. Next, open *Plain DNS Server Addresses*.
 1. Select the server you wish to use.
 1. To bind a dedicated IPv4 address, click *Assign*.
-1. If you want to use a dedicated IPv6 address, click the Copy button.
+1. If you want to use a dedicated IPv6 address, click *Copy*.
 
     ![Copy address](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 
