@@ -15,7 +15,11 @@ Here are some general instructions for setting up Private AdGuard DNS on routers
 
 1. Enter the router's password.
 
-    > If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+    :::note Important
+
+    If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+
+    :::
 
 1. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
 

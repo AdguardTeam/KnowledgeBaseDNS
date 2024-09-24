@@ -25,4 +25,4 @@ Before applying the access settings, make sure you're not blocking your own IP a
 
     ![Access settings *border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-> To display IP addresses associated with DNS requests in the Query log, select the *Log IP addresses* checkbox. To do this, open *Server settings* → *Advanced settings*.
+    To display IP addresses associated with DNS requests in the Query log, select the *Log IP addresses* checkbox. To do this, open *Server settings* → *Advanced settings*.
