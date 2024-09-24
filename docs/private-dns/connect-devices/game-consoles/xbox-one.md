@@ -14,7 +14,7 @@ You can find instructions on how to configure your router in [this section](/pri
 Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
 
 1. Turn on your Xbox One console and sign in to your account.
-1. Press the Xbox button on your controller to open the guide, and then select *System* from the menu.
+1. Press the Xbox button on your controller to open the guide, then select *System* from the menu.
 1. In the *Settings* menu, select *Network*.
 1. Under *Network settings*, select *Advanced settings*.
 1. Under *DNS settings*, select *Manual*.
