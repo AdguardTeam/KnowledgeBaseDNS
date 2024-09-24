@@ -30,7 +30,7 @@ module.exports = {
   themes: ['docusaurus-theme-search-typesense'],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'cs', 'da', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'tr', 'zh-CN', 'zh-TW', 'pt-BR'],
+    locales: ['en', 'ru', 'cs', 'da', 'de', 'fr', 'es', 'it', 'pt-BR', 'tr', 'ja', 'ko', 'zh-CN', 'zh-TW'],
   },
   themeConfig: {
     colorMode: {
