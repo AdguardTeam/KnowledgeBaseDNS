@@ -98,7 +98,7 @@ You can configure your DNS server in your device settings. Please note that Andr
 
     ![Private DNS *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
 
-1. Select the *Private DNS provider hostname* option and and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`
+1. Select the *Private DNS provider hostname* option and and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`.
 1. Tap *Save*.
 
     ![Privat DNS *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
