@@ -22,7 +22,7 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 1. Return to *Network*.
 1. Choose *Edit Network* → *LAN*.
 1. Find *DHCP Name Server* and select *Manual*.
-1. Enter your gateway address in the DNS Server 1 field. Alternatively, you can enter the AdGuard DNS server addresses in DNS Server 1 and DNS Server 2 fields:
+1. Enter your gateway address in the *DNS Server 1* field. Alternatively, you can enter the AdGuard DNS server addresses in *DNS Server 1* and *DNS Server 2* fields:
 
     IPv4: 94.140.14.49 and 94.140.14.59
 
