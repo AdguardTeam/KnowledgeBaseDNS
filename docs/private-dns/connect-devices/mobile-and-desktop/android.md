@@ -68,7 +68,7 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 
     ![DNS server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 
-1. Scroll down to *Add a custom DNS server*.
+1. Scroll down and tap *Add a custom DNS server*.
 
     ![Add a DNS server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
 
