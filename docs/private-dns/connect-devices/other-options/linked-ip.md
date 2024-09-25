@@ -16,9 +16,7 @@ A **residential IP address** is assigned to a device connected to a residential 
 :::
 
 Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
-
 ![Linked IPv4 address *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-
 If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## How to set up linked IP
@@ -29,8 +27,7 @@ The following instructions explain how to connect to the device via **linking IP
 1. Add a new device or open the settings of a previously connected device.
 1. Go to *Use DNS server addresses*.
 1. Open *Plain DNS server addresses* and connect the linked IP.
-
-![Linked IP *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![Linked IP *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamic DNS: Why it is useful
 
@@ -49,13 +46,10 @@ This way, you won’t have to manually update the associated IP address each tim
 ## DDNS: How to set it up
 
 1. First, you need to check if DDNS is supported by your router settings:
-
     - Go to *Router settings* → *Network*
     - Locate the DDNS or the *Dynamic DNS* section
     - Navigate to it and verify that the settings are indeed supported
-
     ![DDNS supported *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ddns_step1.png)
-
 1. Register your domain with a popular service like [KeenDNS](https://help.keenetic.com/hc/en-us/articles/360000400919), [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 1. Enter the domain in your router settings and sync the configurations.
 1. Go to the Linked IP settings to connect the address, then navigate to *Advanced Settings* and click *Configure DDNS*.
@@ -75,13 +69,10 @@ The easiest way is to use the Task Scheduler:
     - Create a new task.
     - Set the trigger to run every 5 minutes.
     - Select *Run Program* as the action.
-
 1. Select a program:
     - In the *Program or Script* field, type `powershell'
     - In the *Add Arguments* field, type:
-
         `Command "Invoke-WebRequest -Uri 'http://link.adguard.ch/linkip/{ServerID}/{UniqueKey}'"`
-
 1. Save the task.
 
 ### On macOS and Linux
@@ -90,14 +81,10 @@ On macOS and Linux, the easiest way is to use `cron`:
 
 1. Open crontab:
     - In the terminal, run `crontab -e`.
-
 1. Add a task:
     - Insert the following line:
-
     `/5 * * * * curl http://link.adguard.ch/linkip/{ServerID}/{UniqueKey}`
-
-    This job will run every 5 minutes.
-
+    - This job will run every 5 minutes
 1. Save crontab.
 
 :::note Important
