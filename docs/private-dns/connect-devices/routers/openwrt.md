@@ -11,14 +11,14 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
 
     ```# Install packages
     1. opkg update2.
-    2. opkg install https-dns-proxy```
+    2. opkg install https-dns-proxy
 
 - **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
 
     ```# Install packages
     1. opkg update
     2. opkg install luci-app-https-dns-proxy
-    3. /etc/init.d/rpcd restart```
+    3. /etc/init.d/rpcd restart
 
 Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-dns-proxy.
 
@@ -32,7 +32,7 @@ Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-d
     5. uci set https-dns-proxy.dns.listen_addr="127.0.0.1"
     6. uci set https-dns-proxy.dns.listen_port="5053"
     7. uci commit https-dns-proxy
-    8. /etc/init.d/https-dns-proxy restart```
+    8. /etc/init.d/https-dns-proxy restart
 
 ## Configure DNS-over-TLS
 
@@ -40,7 +40,7 @@ Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-d
 
     ```# Install packages
     1. opkg update
-    2. opkg install unbound-daemon ca-certificates```
+    2. opkg install unbound-daemon ca-certificates
 
 LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
 
@@ -49,7 +49,7 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
     ```# Install packages
     1. opkg update
     2. opkg install luci-app-unbound ca-certificates
-    3. /etc/init.d/rpcd restart```
+    3. /etc/init.d/rpcd restart
 
 Navigate to *LuCI* → *Services* → *Recursive DNS* to configure Unbound.
 
@@ -67,7 +67,7 @@ Navigate to *LuCI* → *Services* → *Recursive DNS* to configure Unbound.
     10. uci add_list unbound.@zone[-1].server="2a10:50c0::ded:ff"
     11. uci add_list unbound.@zone[-1].server="2a10:50c0::dad:ff"
     12. uci commit unbound
-    13. /etc/init.d/unbound restart```
+    13. /etc/init.d/unbound restart
 
 ## Use your router admin panel
 
