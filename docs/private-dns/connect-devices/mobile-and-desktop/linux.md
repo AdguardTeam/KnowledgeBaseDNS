@@ -8,8 +8,7 @@ To connect a Linux device to AdGuard DNS, first add it to *Dashboard*:
 1. Go to *Dashboard* and click *Connect new device*.
 1. In the drop-down menu *Device type*, select Linux.
 1. Name the device.
-
-    ![Connecting device *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Connecting device *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Use AdGuard DNS Client
 
@@ -24,7 +23,6 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
 1. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
 1. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-
 1. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
@@ -33,20 +31,19 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 1. Select the *Wireless* tab, then choose the network you’re connected to.
 1. Click *Edit* → *IPv4*.
 1. Change the listed DNS addresses to the following addresses:
-    - 94.140.14.49
-    - 94.140.14.59
+    - `94.140.14.49`
+    - `94.140.14.59`
 1. Turn off *Auto mode*.
 1. Click *Apply*.
 1. Go to *IPv6*.
 1. Change the listed DNS addresses to the following addresses:
-    - 2a10:50c0:0:0:0:0:ded:ff
-    - 2a10:50c0:0:0:0:0:dad:ff
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 1. Turn off *Auto mode*.
 1. Click *Apply*.
-1. Link your IP address (or link your dedicated IP if you're using a Team subscription).
-
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Link your IP address (or your dedicated IP if you have a Team subscription):
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
@@ -55,21 +52,17 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 1. Enter your `admin` password.
 1. In the command line, type: `nano /etc/resolv.conf`.
 1. Change the listed DNS addresses to the following:
-
-    IPv4: 94.140.14.49 and 94.140.14.59
-
-    IPv6: 2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff
-
+    - IPv4: `94.140.14.49 and 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
 1. Press *Ctrl + O* to save the document.
 1. Press *Enter*.
 1. Press *Ctrl + X* to save the document.
 1. In the command line, type: `/etc/init.d/networking restart`.
 1. Press *Enter*.
 1. Close the Terminal.
-1. Link your IP address (or link your dedicated IP if you're using a Team subscription).
-
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Link your IP address (or your dedicated IP if you have a Team subscription):
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
