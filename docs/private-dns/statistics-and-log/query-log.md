@@ -11,7 +11,7 @@ It allows you to view all requests made by your devices during the selected time
 
 ## How to use it
 
-Here's what you can find in the Query log.
+Here's what you can see and what you can do in the Query log.
 
 ### Detailed information on requests
 

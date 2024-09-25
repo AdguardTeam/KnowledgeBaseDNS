@@ -3,7 +3,7 @@ title: Blocklists
 sidebar_position: 1
 ---
 
-## What are Blocklists
+## What are blocklists
 
 Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
 
@@ -13,7 +13,7 @@ Blocklists are designed for flexible customization of filtering rules. For examp
 
 ## How to activate blocklists in AdGuard DNS
 
-To activate the block lists you want:
+To activate the blocklists:
 
 1. Open the Dashboard.
 1. Go to the *Servers* section.
@@ -53,7 +53,7 @@ If you would like the list of AdGuard DNS filters to be expanded, you can submit
 To submit a request:
 
 1. Go to the link above (you may need to register on GitHub).
-1. Click *New Issue*.
+1. Click *New issue*.
 1. Click *Blocklist request* and fill out the form.
 1. After filling out the form, click *Submit new issue*.
 

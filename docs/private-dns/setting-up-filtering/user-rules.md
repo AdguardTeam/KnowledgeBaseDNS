@@ -24,9 +24,7 @@ To set up user rules:
 1. You'll find several options for adding user rules.
 
     - The easiest way is to use the generator. To use it, click *Add new rule* → Enter the name of the domain you want to block or unblock → Click *Add rule*
-
     ![Add rule *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-
-    - More detailed: Use the rule editor. Click *Open editor* and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+    - The advanced way is to use the rule editor. Click *Open editor* and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
 
 This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).

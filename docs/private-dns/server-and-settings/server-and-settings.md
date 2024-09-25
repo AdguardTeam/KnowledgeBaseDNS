@@ -15,11 +15,9 @@ Upon creating an account, we automatically establish a server with default setti
 
 For instance, you can have:
 
-1. A server that allows all requests.
-
-1. A server that blocks adult content and certain services.
-
-1. A server that blocks adult content only during specific hours you choose.
+- A server that allows all requests
+- A server that blocks adult content and certain services
+- A server that blocks adult content only during specific hours you choose
 
 For more information on traffic filtering and blocking rules, check out the article ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
 
