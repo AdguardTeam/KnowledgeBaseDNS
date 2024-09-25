@@ -39,7 +39,6 @@ Navigate to *LuCI* → *Services* → *HTTPS DNS Proxy* to configure the https-d
 - **Command-line instructions**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
 
     ```# Install packages
-
     1. opkg update
     2. opkg install unbound-daemon ca-certificates```
 
@@ -74,20 +73,17 @@ Navigate to *LuCI* → *Services* → *Recursive DNS* to configure Unbound.
 
 Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Open the router admin panel. It can be accessed at 192.168.1.1 or 192.168.0.1.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 1. Enter the administrator username (usually, it’s admin) and router password.
 1. Open *Network* → *Interfaces*.
 1. Select your Wi-Fi network or wired connection.
 1. Scroll down to IPv4 address or IPv6 address, depending on the IP version you want to configure.
 1. Under *Use custom DNS servers*, enter the IP addresses of the DNS servers you want to use. You can enter multiple DNS servers, separated by spaces or commas:
-
-    IPv4: 94.140.14.49 and 94.140.14.59
-
-    IPv6: 2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff
-
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 1. Optionally, you can enable DNS forwarding if you want the router to act as a DNS forwarder for devices on your network.
 1. Save the settings.
-1. Link your IP (or link your dedicated IP if you're using a Team subscription).
+1. Link your IP (or your dedicated IP if you have a Team subscription).
 
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
