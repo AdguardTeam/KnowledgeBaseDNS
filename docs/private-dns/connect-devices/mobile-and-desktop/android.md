@@ -27,7 +27,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
 1. Select *DNS server*.
 
-    ![DNS server *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
+    ![DNS server *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 
 1. Scroll down to *Custom servers* and tap *Add DNS server*.
 
