@@ -22,8 +22,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 1. For *DHCP Host Name*, select *Do Not Specify*.
 1. For *DNS Settings*, select *Manual*.
 1. In the *DNS Server* field, enter one of the following DNS server addresses:
-    * `94.140.14.49`
-    * `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 1. Select *Next* to continue.
 1. On the *MTU Settings* screen, select *Automatic*.
 1. On the *Proxy Server* screen, select *Do Not Use*.
@@ -32,5 +32,5 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
 
-* [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-* [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
