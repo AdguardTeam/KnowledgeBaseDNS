@@ -49,8 +49,9 @@ This way, you won’t have to manually update the associated IP address each tim
     - Go to *Router settings* → *Network*
     - Locate the DDNS or the *Dynamic DNS* section
     - Navigate to it and verify that the settings are indeed supported
-    ![DDNS supported *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ddns_step1.png)
-1. Register your domain with a popular service like [KeenDNS](https://help.keenetic.com/hc/en-us/articles/360000400919), [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
+    ![DDNS supported *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    *This is just an example of what it may look like. It may vary depending on your router.*
+1. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 1. Enter the domain in your router settings and sync the configurations.
 1. Go to the Linked IP settings to connect the address, then navigate to *Advanced Settings* and click *Configure DDNS*.
 1. Input the domain you registered earlier and click *Configure DDNS*.

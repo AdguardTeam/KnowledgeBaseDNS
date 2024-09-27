@@ -13,7 +13,7 @@ This helps prevent unauthorized users from accessing it and enhances security. A
 
 :::note Compatibility
 
-This feature is supported by [AdGuard DNS Client](/dns-client/overview/) as well as [AdGuard apps](https://adguard.website.agrd.dev/welcome.html).
+This feature is supported by [AdGuard DNS Client](/dns-client/overview.md) as well as [AdGuard apps](https://adguard.com/de/welcome.html).
 
 :::
 
