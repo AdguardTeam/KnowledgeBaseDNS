@@ -43,14 +43,13 @@ Dynamic DNS (DDNS) is a service that automatically updates DNS records whenever 
 
 This way, you won’t have to manually update the associated IP address each time it changes.
 
-## DDNS: How to set it up
+## Dynamic DNS: How to set it up
 
 1. First, you need to check if DDNS is supported by your router settings:
     - Go to *Router settings* → *Network*
     - Locate the DDNS or the *Dynamic DNS* section
-    - Navigate to it and verify that the settings are indeed supported
+    - Navigate to it and verify that the settings are indeed supported. *This is just an example of what it may look like. It may vary depending on your router*
     ![DDNS supported *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
-*This is just an example of what it may look like. It may vary depending on your router.*
 1. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 1. Enter the domain in your router settings and sync the configurations.
 1. Go to the Linked IP settings to connect the address, then navigate to *Advanced Settings* and click *Configure DDNS*.
