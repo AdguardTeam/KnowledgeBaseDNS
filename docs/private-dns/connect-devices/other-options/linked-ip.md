@@ -54,7 +54,7 @@ This way, you won’t have to manually update the associated IP address each tim
 1. Enter the domain in your router settings and sync the configurations.
 1. Go to the Linked IP settings to connect the address, then navigate to *Advanced Settings* and click *Configure DDNS*.
 1. Input the domain you registered earlier and click *Configure DDNS*.
-    ![DDNS supported *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ddns_step6.png)
+    ![Configure DDNS *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you've successfully set up DDNS!
 
@@ -72,7 +72,7 @@ The easiest way is to use the Task Scheduler:
 1. Select a program:
     - In the *Program or Script* field, type `powershell'
     - In the *Add Arguments* field, type:
-        `Command "Invoke-WebRequest -Uri 'http://link.adguard.ch/linkip/{ServerID}/{UniqueKey}'"`
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 1. Save the task.
 
 ### On macOS and Linux
@@ -83,7 +83,7 @@ On macOS and Linux, the easiest way is to use `cron`:
     - In the terminal, run `crontab -e`.
 1. Add a task:
     - Insert the following line:
-    `/5 * * * * curl http://link.adguard.ch/linkip/{ServerID}/{UniqueKey}`
+    `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - This job will run every 5 minutes
 1. Save crontab.
 
