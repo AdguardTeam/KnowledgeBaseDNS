@@ -51,18 +51,18 @@ jobs:
           echo "User-Agent: *\nDisallow: /" > build/robots.txt
 
       - name: Install Wrangler
-        if: github.repository == 'AdguardTeam/KnowledgeBaseDNS'
+        if: github.event.pull_request.head.repo.fork == false
         run: npm install -g wrangler
 
       - name: Deploy to Cloudflare Pages
-        if: github.repository == 'AdguardTeam/KnowledgeBaseDNS'
+        if: github.event.pull_request.head.repo.fork == false
         run: npx wrangler pages deploy ./build --project-name="${{ env.PAGES_PROJECT }}" --branch ${{ env.BRANCH_NAME }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_WORKERS_ACCOUNT_ID }}
 
       - name: Add comment to Pull Request
-        if: github.event_name == 'pull_request' && github.repository == 'AdguardTeam/KnowledgeBaseDNS'
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false
         uses: actions/github-script@v6
         with:
           script: |
