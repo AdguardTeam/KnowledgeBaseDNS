@@ -31,7 +31,7 @@ AdGuard DNS ayrıca DNS için bir JSON API sağlar. Aşağıdakileri yazarak JSO
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+Ayrıntılı dokümantasyon için [DNS-over-HTTPS için JSON API'ye ilişkin Google kılavuzuna](https://developers.google.com/speed/public-dns/docs/doh/json) bakın. JSON'da bir DNS yanıtı almak, AdGuard DNS ile aynı şekilde çalışır.
 
 :::note Not
 
