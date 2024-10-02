@@ -15,7 +15,7 @@ Unfortunately, the technical specifications of the connected device may not alwa
 
 Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use the [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
 
 The instructions below explain how to connect a dedicated IP to the device:
 
