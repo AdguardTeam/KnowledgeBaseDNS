@@ -11,7 +11,7 @@ Blocked requests will not be displayed in the Query Log and are not counted in t
 
 ### Allowed clients
 
-This setting  allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
 
 ### Disallowed clients
 
