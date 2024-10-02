@@ -7,7 +7,7 @@ sidebar_position: 1
 
 When you set up Private AdGuard DNS, you'll encounter the term *servers*.
 
-A server acts as the "profile" that you connect your devices to.
+A server acts as the “profile” that you connect your devices to.
 
 Servers include configurations that you can customize to your liking.
 
@@ -19,7 +19,7 @@ For instance, you can have:
 - A server that blocks adult content and certain services
 - A server that blocks adult content only during specific hours you choose
 
-For more information on traffic filtering and blocking rules, check out the article ["How to set up filtering in AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
+For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
 
 If you're interested in specific settings, there are dedicated articles available for that:
 

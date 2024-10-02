@@ -20,9 +20,11 @@ Now you can automatically connect your device to the server by creating a specia
 
 ### Examples of automatic connection addresses
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — This will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`.
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — This will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — This will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Naming conventions
 

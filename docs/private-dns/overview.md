@@ -210,6 +210,6 @@ In this section we describe a number of settings that allow you to fine-tune the
 
 ### Statistics and Query log
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, country.
+Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
 
 [Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
