@@ -99,25 +99,25 @@ Option `-s <value>` specifies the OS service action. Olası değerler:
 
 Option `-v` enables the verbose log output.
 
-### Version {#opts-version}
+### Sürüm {#opts-version}
 
 Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
 
-## Configuration {#conf}
+## Yapılandırma {#conf}
 
-### File {#conf-file}
+### Dosya {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+YAML yapılandırma dosyası [kendi makalesinde][conf] açıklanmıştır ve ayrıca `config.dist.yaml` örnek yapılandırma dosyası da bulunmaktadır.  Bazı yapılandırma parametreleri [ortam][env] kullanılarak da geçersiz kılınabilir.
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Çıkış kodları {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Farklı hata koşullarında görünebilecek birkaç farklı çıkış kodu vardır:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: Başarıyla tamamlandı ve çıkıldı, hata yok.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: Dâhili hata, büyük olasılıkla yanlış yapılandırma.
 
-- `2`: Bad command-line argument or value.
+- `2`: Hatalı komut satırı argümanı veya değeri.

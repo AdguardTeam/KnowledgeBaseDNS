@@ -5,7 +5,7 @@ sidebar_position: 2
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örneği için [`config.dist.yml`][dist] dosyasına bakın.
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
@@ -26,11 +26,11 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
   **Örnek:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: The maximum size of the DNS result cache as human-readable data size. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
   **Example:** `128 MB`
 
-- `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. It must be greater than zero if `enabled` is `true`.
+- `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
   **Example:** `4 MB`
 
@@ -38,7 +38,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 `server` nesnesi, gelen isteklerin işlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: Dinlenecek bağlantı noktalarına sahip adres kümesi.
 
   **Özellik örneği:**
 
@@ -137,7 +137,7 @@ The `debug` object configures the debugging features. Aşağıdaki özelliklere 
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıdaki özelliklere sahiptir:
+Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 - `port`: The port to listen on for debug HTTP requests on localhost.
 
@@ -163,13 +163,13 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıda
 
   Olası değerler:
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog`, Linux için syslog ve Windows için Olay Görüntüleyicisi olan platforma özgü sistem günlüğünün kullanıldığı anlamına gelir.
 
   - `stdout` for standard output stream.
 
   - `stderr` for standard error stream.
 
-  - Absolute path to the log file.
+  - Günlük dosyasının mutlak yolu.
 
   **Örnek:** `/home/user/logs`
 
@@ -211,6 +211,6 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıda
 
   **Örnek:** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`: Günlüğün daha bilgilendirici olup olmayacağını belirtir.
 
   **Örnek:** `false`
