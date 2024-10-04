@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Do not use subdirectories with the Apache reverse HTTP proxy.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+Apache ters HTTP proxy ile alt dizinleri kullanmayın.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
