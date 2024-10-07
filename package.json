@@ -14,7 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint:md": "markdownlint .",
     "crowdin": "crowdin",
-    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download --export-only-approved"
   },
   "dependencies": {
     "@crowdin/cli": "3.13.0",
