@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: Referenz
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Current version: 1.9
+## Aktuelle Version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -25,7 +25,7 @@ Gets account limits
 
 ##### Responses
 
-| Code | Description         |
+| Code | Beschreibung        |
 | ---- | ------------------- |
 | 200  | Account limits info |
 
@@ -39,7 +39,7 @@ Lists dedicated IPv4 addresses
 
 ##### Responses
 
-| Code | Description                      |
+| Code | Beschreibung                     |
 | ---- | -------------------------------- |
 | 200  | List of dedicated IPv4 addresses |
 
@@ -51,7 +51,7 @@ Allocates new IPv4
 
 ##### Responses
 
-| Code | Description                            |
+| Code | Beschreibung                           |
 | ---- | -------------------------------------- |
 | 200  | New IPv4 successfully allocated        |
 | 429  | Dedicated IPv4 count reached the limit |
@@ -66,7 +66,7 @@ Lists devices
 
 ##### Responses
 
-| Code | Description     |
+| Code | Beschreibung    |
 | ---- | --------------- |
 | 200  | List of devices |
 
@@ -78,7 +78,7 @@ Creates a new device
 
 ##### Responses
 
-| Code | Description                     |
+| Code | Beschreibung                    |
 | ---- | ------------------------------- |
 | 200  | Device created                  |
 | 400  | Validation failed               |
@@ -94,13 +94,13 @@ Removes a device
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description      |
+| Code | Beschreibung     |
 | ---- | ---------------- |
 | 200  | Device deleted   |
 | 404  | Device not found |
@@ -113,13 +113,13 @@ Gets an existing device by ID
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description      |
+| Code | Beschreibung     |
 | ---- | ---------------- |
 | 200  | Device info      |
 | 404  | Device not found |
@@ -132,13 +132,13 @@ Updates an existing device
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description       |
+| Code | Beschreibung      |
 | ---- | ----------------- |
 | 200  | Device updated    |
 | 400  | Validation failed |
@@ -154,13 +154,13 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description             |
+| Code | Beschreibung            |
 | ---- | ----------------------- |
 | 200  | Dedicated IPv4 and IPv6 |
 
@@ -174,13 +174,13 @@ Unlink dedicated IPv4 from the device
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description                                          |
+| Code | Beschreibung                                         |
 | ---- | ---------------------------------------------------- |
 | 200  | Dedicated IPv4 successfully unlinked from the device |
 | 404  | Device or address not found                          |
@@ -193,13 +193,13 @@ Link dedicated IPv4 to the device
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description                                      |
+| Code | Beschreibung                                     |
 | ---- | ------------------------------------------------ |
 | 200  | Dedicated IPv4 successfully linked to the device |
 | 400  | Validation failed                                |
@@ -216,7 +216,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parameters
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
+| Name                    | Located in | Beschreibung                                                                   | Required | Schema     |
 | ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
 | device_id               | path       |                                                                                | Yes      | string     |
 | exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
@@ -224,7 +224,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Responses
 
-| Code | Description                |
+| Code | Beschreibung               |
 | ---- | -------------------------- |
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
@@ -239,13 +239,13 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description                                |
+| Code | Beschreibung                               |
 | ---- | ------------------------------------------ |
 | 200  | DNS-over-HTTPS password successfully reset |
 | 404  | Device not found                           |
@@ -260,7 +260,7 @@ Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parameters
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
+| Name                    | Located in | Beschreibung                                                                   | Required | Schema     |
 | ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
 | device_id               | path       |                                                                                | Yes      | string     |
 | exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
@@ -268,7 +268,7 @@ Gets DNS-over-TLS .mobileconfig file.
 
 ##### Responses
 
-| Code | Description                |
+| Code | Beschreibung               |
 | ---- | -------------------------- |
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
@@ -283,13 +283,13 @@ Updates device settings
 
 ##### Parameters
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Name      | Located in | Beschreibung | Required | Schema |
+| --------- | ---------- | ------------ | -------- | ------ |
+| device_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description             |
+| Code | Beschreibung            |
 | ---- | ----------------------- |
 | 200  | Device settings updated |
 | 400  | Validation failed       |
@@ -303,13 +303,13 @@ Updates device settings
 
 Lists DNS servers that belong to the user.
 
-##### Description
+##### Beschreibung
 
 Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Responses
 
-| Code | Description         |
+| Code | Beschreibung        |
 | ---- | ------------------- |
 | 200  | List of DNS servers |
 
@@ -319,13 +319,13 @@ Lists DNS servers that belong to the user. By default there is at least one defa
 
 Creates a new DNS server
 
-##### Description
+##### Beschreibung
 
 Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Responses
 
-| Code | Description                         |
+| Code | Beschreibung                        |
 | ---- | ----------------------------------- |
 | 200  | DNS server created                  |
 | 400  | Validation failed                   |
@@ -339,19 +339,19 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 
 Removes a DNS server
 
-##### Description
+##### Beschreibung
 
 Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parameters
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Name            | Located in | Beschreibung | Required | Schema |
+| --------------- | ---------- | ------------ | -------- | ------ |
+| dns_server_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description          |
+| Code | Beschreibung         |
 | ---- | -------------------- |
 | 200  | DNS server deleted   |
 | 404  | DNS server not found |
@@ -364,13 +364,13 @@ Gets an existing DNS server by ID
 
 ##### Parameters
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Name            | Located in | Beschreibung | Required | Schema |
+| --------------- | ---------- | ------------ | -------- | ------ |
+| dns_server_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description          |
+| Code | Beschreibung         |
 | ---- | -------------------- |
 | 200  | DNS server info      |
 | 404  | DNS server not found |
@@ -383,13 +383,13 @@ Updates an existing DNS server
 
 ##### Parameters
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Name            | Located in | Beschreibung | Required | Schema |
+| --------------- | ---------- | ------------ | -------- | ------ |
+| dns_server_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description          |
+| Code | Beschreibung         |
 | ---- | -------------------- |
 | 200  | DNS server updated   |
 | 400  | Validation failed    |
@@ -405,13 +405,13 @@ Updates DNS server settings
 
 ##### Parameters
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Name            | Located in | Beschreibung | Required | Schema |
+| --------------- | ---------- | ------------ | -------- | ------ |
+| dns_server_id | path       |              | Yes      | string |
 
 ##### Responses
 
-| Code | Description                 |
+| Code | Beschreibung                |
 | ---- | --------------------------- |
 | 200  | DNS server settings updated |
 | 400  | Validation failed           |
@@ -427,7 +427,7 @@ Gets filter lists
 
 ##### Responses
 
-| Code | Description     |
+| Code | Beschreibung    |
 | ---- | --------------- |
 | 200  | List of filters |
 
@@ -441,7 +441,7 @@ Generates Access and Refresh token
 
 ##### Responses
 
-| Code | Description                                              |
+| Code | Beschreibung                                             |
 | ---- | -------------------------------------------------------- |
 | 200  | Access token issued                                      |
 | 400  | Missing required parameters                              |
@@ -459,7 +459,7 @@ Clears query log
 
 ##### Responses
 
-| Code | Description           |
+| Code | Beschreibung          |
 | ---- | --------------------- |
 | 202  | Query log was cleared |
 
@@ -471,7 +471,7 @@ Gets query log
 
 ##### Parameters
 
-| Name               | Located in | Description                                                                | Required | Schema                                              |
+| Name               | Located in | Beschreibung                                                               | Required | Schema                                              |
 | ------------------ | ---------- | -------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive)                                      | Yes      | long                                                |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)                                        | Yes      | long                                                |
@@ -486,9 +486,9 @@ Gets query log
 
 ##### Responses
 
-| Code | Description |
-| ---- | ----------- |
-| 200  | Query log   |
+| Code | Beschreibung |
+| ---- | ------------ |
+| 200  | Query log    |
 
 ### /oapi/v1/revoke_token
 
@@ -500,13 +500,13 @@ Revokes a Refresh Token
 
 ##### Parameters
 
-| Name          | Located in | Description   | Required | Schema |
+| Name          | Located in | Beschreibung  | Required | Schema |
 | ------------- | ---------- | ------------- | -------- | ------ |
 | refresh_token | query      | Refresh Token | Yes      | string |
 
 ##### Responses
 
-| Code | Description           |
+| Code | Beschreibung          |
 | ---- | --------------------- |
 | 200  | Refresh token revoked |
 
@@ -522,7 +522,7 @@ Gets categories statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -531,7 +531,7 @@ Gets categories statistics
 
 ##### Responses
 
-| Code | Description                    |
+| Code | Beschreibung                   |
 | ---- | ------------------------------ |
 | 200  | Categories statistics received |
 | 400  | Validation failed              |
@@ -546,7 +546,7 @@ Gets companies statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -555,7 +555,7 @@ Gets companies statistics
 
 ##### Responses
 
-| Code | Description                   |
+| Code | Beschreibung                  |
 | ---- | ----------------------------- |
 | 200  | Companies statistics received |
 | 400  | Validation failed             |
@@ -570,7 +570,7 @@ Gets detailed companies statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -580,7 +580,7 @@ Gets detailed companies statistics
 
 ##### Responses
 
-| Code | Description                            |
+| Code | Beschreibung                           |
 | ---- | -------------------------------------- |
 | 200  | Detailed companies statistics received |
 | 400  | Validation failed                      |
@@ -595,7 +595,7 @@ Gets countries statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -604,7 +604,7 @@ Gets countries statistics
 
 ##### Responses
 
-| Code | Description                   |
+| Code | Beschreibung                  |
 | ---- | ----------------------------- |
 | 200  | Countries statistics received |
 | 400  | Validation failed             |
@@ -619,7 +619,7 @@ Gets devices statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -628,7 +628,7 @@ Gets devices statistics
 
 ##### Responses
 
-| Code | Description                 |
+| Code | Beschreibung                |
 | ---- | --------------------------- |
 | 200  | Devices statistics received |
 | 400  | Validation failed           |
@@ -643,7 +643,7 @@ Gets domains statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -652,7 +652,7 @@ Gets domains statistics
 
 ##### Responses
 
-| Code | Description                 |
+| Code | Beschreibung                |
 | ---- | --------------------------- |
 | 200  | Domains statistics received |
 | 400  | Validation failed           |
@@ -667,7 +667,7 @@ Gets time statistics
 
 ##### Parameters
 
-| Name               | Located in | Description                           | Required | Schema     |
+| Name               | Located in | Beschreibung                          | Required | Schema     |
 | ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
 | time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
 | time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
@@ -676,7 +676,7 @@ Gets time statistics
 
 ##### Responses
 
-| Code | Description              |
+| Code | Beschreibung             |
 | ---- | ------------------------ |
 | 200  | Time statistics received |
 | 400  | Validation failed        |
@@ -691,6 +691,6 @@ Lists web services
 
 ##### Responses
 
-| Code | Description          |
+| Code | Beschreibung         |
 | ---- | -------------------- |
 | 200  | List of web-services |

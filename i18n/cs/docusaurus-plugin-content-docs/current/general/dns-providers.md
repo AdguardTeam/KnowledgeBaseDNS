@@ -389,12 +389,12 @@ Tyto servery používají některé záznamy, samopodepsané certifikáty nebo n
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
+[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) je poskytovatel DNS šetrný k soukromí, který má dlouholeté zkušenosti s vývojem služeb pro překlad názvů domén a jehož cílem je poskytovat uživatelům rychlejší, přesnější a stabilnější služby rekurzivního překladu.
 
 | Protokol       | Adresa                      |                                                                                                                                                                                                |
 | -------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `119.29.29.29`              | [Přidat do AdGuardu](adguard:add_dns_server?address=119.29.29.29&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Add to AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                  |
+| DNS, IPv6      | `2402:4e00::`               | [Přidat do AdGuardu](adguard:add_dns_server?address=2402:4e00::&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
 | DNS-over-HTTPS | `https://dns.pub/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
 | DNS-over-TLS   | `tls://dot.pub`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
 
@@ -838,7 +838,7 @@ Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) pos
 | Protokol       | Adresa                                                                            |                                                                                                                                                                                                                                            |
 | -------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP: `158.64.1.29` a IPv6: `2001:a18:1::29` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu) |
-| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` and IPv6: `2001:a18:1::29`           | [Add to AdGuard](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                                |
+| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` a IPv6: `2001:a18:1::29`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                         |
 
 ### 114DNS
 

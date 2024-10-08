@@ -38,7 +38,8 @@ Here is a simple comparison of features available in public and private AdGuard 
 | -                                            | Registro de consultas detallado                                                           |
 | -                                            | Control parental                                                                          |
 
-## How to set up private AdGuard DNS
+
+<!-- ## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
 
@@ -52,8 +53,8 @@ Here is a simple comparison of features available in public and private AdGuard 
 - Windows
 - Mac
 - Linux
-- Roteadores
-- Consolas de videojuegos
+- Routers
+- Gaming consoles
 - Smart TVs
 
 :::
@@ -134,11 +135,11 @@ Even if you're aware of all the tricks online scammers use, there's always a ris
 
 The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
-### Control parental
+### Parental control
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Control parental](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Parental control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 ### User rules
 
@@ -188,4 +189,28 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
+
+### How to connect devices to AdGuard DNS
+
+AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+
+[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+
+### Server and settings
+
+This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+
+[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+
+### How to set up filtering
+
+In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+
+[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+
+### Statistics and Query log
+
+Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+
+[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)

@@ -167,7 +167,7 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
   - `stdout` for standard output stream.
 
-  - `stderr` for standard error stream.
+  - Standart hata akışı için `stderr`.
 
   - Günlük dosyasının mutlak yolu.
 

@@ -389,12 +389,12 @@ Disse servere bruger noget logning, selvsignerede certifikater eller ingen under
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
+[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) er en fortrolighedsvenlig DNS-udbyder med mange års erfaring inden for udvikling af domænenavnsopløsningstjenester, hvis formål er at give brugerne en hurtigere, mere præcis og stabil rekursiv opløsningstjeneste.
 
 | Protokol       | Adresse                     |                                                                                                                                                                                           |
 | -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `119.29.29.29`              | [Føj til AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Add to AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                             |
+| DNS, IPv6      | `2402:4e00::`               | [Føj til AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
 | DNS-over-HTTPS | `https://dns.pub/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
 | DNS-over-TLS   | `tls://dot.pub`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
 
@@ -838,7 +838,7 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 | Protokol       | Adresse                                                                            |                                                                                                                                                                                                                                       |
 | -------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP: `158.64.1.29` og IPv6: `2001:a18:1::29` | [Føj til AdGuard](adguard:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu) |
-| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` and IPv6: `2001:a18:1::29`            | [Add to AdGuard](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                           |
+| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` og IPv6: `2001:a18:1::29`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                         |
 
 ### 114DNS
 
