@@ -16,7 +16,7 @@ To date, we’ve categorized over 15 million sites and built a database of 1.5 m
 Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
 Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
 
-### Blocki malicious domains using blocklists
+### Block malicious domains using blocklists
 
 AdGuard DNS supports adding third-party blocking filters.
 Activate filters marked `security` for additional protection.

@@ -10,7 +10,7 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
 - **Command-line instructions**. Install the required packages. DNS encryption should be enabled automatically.
 
     ```# Install packages
-    1. opkg update2.
+    1. opkg update
     2. opkg install https-dns-proxy
 
 - **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
