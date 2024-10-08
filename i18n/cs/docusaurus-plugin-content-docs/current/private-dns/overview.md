@@ -38,154 +38,179 @@ Zde je jednoduché srovnání funkcí dostupných ve veřejném a soukromém AdG
 | -                                      | Podrobný záznam dotazů                                                                                        |
 | -                                      | Rodičovská ochrana                                                                                            |
 
-## Jak nastavit soukromý AdGuard DNS
 
-### Pro zařízení podporující DoH, DoT a DoQ
+<!-- ## How to set up private AdGuard DNS
 
-1. Přejděte na svůj [ovládací panel AdGuard DNS](https://agrd.io/download-dns) (pokud nejste přihlášeni, přihlaste se pomocí svého AdGuard účtu)
-1. Klikněte na *Připojit zařízení* a postupujte podle pokynů na obrazovce
+### For devices that support DoH, DoT, and DoQ
 
-:::note Podporované platformy:
+1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
+1. Click *Connect device* and follow on-screen instructions
+
+:::note Supported platforms:
 
 - Android
 - iOS
 - Windows
 - Mac
 - Linux
-- Routery
-- Herní konzole
-- Chytré TV
+- Routers
+- Gaming consoles
+- Smart TVs
 
 :::
 
-Každé zařízení, které přidáte do panelu AdGuard DNS, má svou vlastní jedinečnou adresu, kterou lze použít, pokud zařízení podporuje moderní šifrované protokoly DNS (DoH, DoT a DoQ).
+Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
 
-### Pro zařízení nepodporující DoH, DoT a DoQ
+### For devices that do not support DoH, DoT, and DoQ
 
-Pokud zařízení nepodporuje šifrovaný DNS a musíte použít běžný DNS, existují další dva způsoby, jak umožnit AdGuard DNS rozpoznat zařízení — použijte vyhrazené IP adresy nebo IP adresu připojeného zařízení.
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
 
 :::note
 
-Běžné adresy DNS používejte pouze v případě, že nemáte jinou možnost: snižuje to bezpečnost požadavků DNS. Pokud se rozhodnete používat běžný DNS, doporučujeme zvolit vyhrazené IP adresy.
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
 
 :::
 
-#### Vyhrazené IP adresy
+#### Dedicated IP addresses
 
-Pro každé zařízení, které připojíte k AdGuard DNS, vám budou nabídnuty dvě vyhrazené adresy IPv6, které můžete zadat v nastavení zařízení. Použití obou adres IPv6 není povinné, ale zařízení mohou často požadovat zadání dvou adres IPv6.
+For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
 
-Po připojení k nim bude AdGuard DNS schopen určit, které konkrétní zařízení odesílá požadavky DNS a zobrazit pro ně statistiky. A budete moci nakonfigurovat pravidla DNS speciálně pro toto zařízení.
+When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
 
-Bohužel ne všichni poskytovatelé služeb nabízejí podporu protokolu IPv6 a ne všechna zařízení umožňují konfigurovat adresy IPv6. V takovém případě se možná budete muset spolehnout na metodu připojené IP.
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
 
-#### Připojená IP
+#### Linked IP
 
-Pokud připojíte zařízení k AdGuard DNS prostřednictvím připojené IP adresy, služba započítá všechny běžné požadavky DNS přicházející z této IP adresy do tohoto "zařízení". Při tomto způsobu připojení byste se museli znovu připojit ručně nebo pomocí speciálního programu pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
+If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
-Jediným požadavkem pro připojení IP je, že **musí být rezidentní IP adresa**.
+The only requirement for linking IP is that **it must be a residential IP address**.
 
 :::note
 
-Rezidenční IP adresa je IP adresa přiřazená zařízení připojenému k rezidentnímu ISP. Obvykle je spojena s fyzickou lokalitou a je přidělena jednotlivým domům nebo bytům. Rezidenční IP adresy používají běžní uživatelé internetu pro své každodenní online aktivity, jako je procházení webu, přístup k platformám sociálních médií, odesílání e-mailů nebo streamování obsahu.
+A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
 
 :::
 
-Pokud se snažíte připojit rezidenční IP adresu a AdGuard DNS vám to neumožňuje, kontaktujte náš tým podpory na adrese support@adguard-dns.io.
+If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
 
-## Funkce soukromého AdGuard DNS
+## Private AdGuard DNS features
 
-### Statistiky
+### Statistics
 
-Na kartě *Statistiky* můžete zobrazit všechny souhrnné statistiky DNS dotazů provedených zařízeními připojenými k vašemu soukromému AdGuard DNS. Zobrazuje celkový počet a zeměpisnou polohu požadavků, počet zablokovaných požadavků, seznam společností, kterým byly požadavky adresovány, typy požadavků a nejžádanější domény.
+In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Cíl datového provozu
+### Traffic destination
 
-Tato funkce vám ukáže, kam směřují DNS požadavky odeslané vašimi zařízeními. Kromě zobrazení mapy cílů požadavků můžete informace filtrovat podle data, zařízení a země.
+This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
 ![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Společnosti
+### Companies
 
-Na této kartě můžete rychle zjistit, které společnosti odesílají nejvíce požadavků a které společnosti jich mají nejvíce zablokovaných.
+This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
 ![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### Protokol dotazů
+### Query log
 
-Jedná se o podrobný protokol, kde můžete zkontrolovat informace o každém jednotlivém požadavku a také třídit požadavky podle stavu, typu, společnosti, zařízení, času a země.
+This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
 ![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-## Nastavení serveru
+## Server settings
 
-Tato část obsahuje řadu nastavení, která vám umožní přizpůsobit provoz soukromého AdGuard DNS a zajistit, aby internet fungoval přesně podle vašich představ.
+This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
 
-### Správa seznamů zakázaných
+### Blocklists management
 
-Funkce *Seznamy zakázaných* umožňuje určit, které domény chcete blokovat a které ne. Vyberte si z široké škály seznamů zakázaných pro různé účely.
+The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Nastavení zabezpečení
+### Security settings
 
-I když jste si vědomi všech triků, které online podvodníci používají, vždy existuje nebezpečí, že omylem kliknete na škodlivý odkaz. Chcete-li se před podobnými nehodami chránit, přejděte do části *Nastavení zabezpečení* a zaškrtněte políčka vedle možností, které jsou zde uvedeny.
+Even if you're aware of all the tricks online scammers use, there's always a risk you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
 
-Funkce *Blokovat škodlivé, phishingové a podvodné domény* zablokuje domény nalezené ve vyhrazené databázi. A možnost *Blokovat nově registrované domény* zablokuje všechny domény registrované před méně než 30 dny, které jsou často považovány za rizikové pro vaše online soukromí.
+The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
-### Rodičovská ochrana
+### Parental control
 
-Chcete-li své dítě chránit před online obsahem, který považujete za nevhodný, nastavte a aktivujte možnost *Rodičovská ochrana*. Kromě možností, jako je blokování obsahu pro dospělé a bezpečné vyhledávání, jsme přidali možnost ručně zadat domény pro blokování a nastavit plán, podle kterého bude *Rodičovská ochrana* fungovat.
+To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Rodičovská ochrana](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Parental control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-### Uživatelská pravidla
+### User rules
 
-Pro případy, kdy předinstalované seznamy zakázaných s tisíci pravidly nestačí, máme šikovnou funkci s názvem *Uživatelská pravidla*. Zde můžete ručně přidat vlastní pravidla pro blokování/odblokování určité domény nebo importovat seznamy vlastních pravidel. (podívejte se na [syntaxi pravidel DNS filtrování](../general/dns-filtering-syntax.md)). Seznamy můžete vyexportovat.
+For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### DNS-over-HTTPS s ověřováním
+### DNS-over-HTTPS with authentication
 
-DNS-over-HTTPS s ověřováním poskytuje přihlašovací jméno a heslo pro připojení k serveru. To může omezit přístup neoprávněných uživatelů a zvýšit bezpečnost.
+DNS-over-HTTPS with authentication provides a login and password to connect to the server. This can limit access to unauthorized users and increase security.
 
-Chcete-li tuto funkci povolit, přejděte do *Nastavení serveru* → *Zařízení* → *Nastavení* a změňte DNS server na jeden s ověřováním. Výběrem možnosti *Zamítnout jiné protokoly* zakážete používání alternativních protokolů, čímž zajistíte výhradní ověřování DNS-over-HTTPS a zablokujete přístup třetích stran.
+To enable this feature, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Select *Deny other protocols* to disable alternative protocol usage, ensuring exclusive DNS-over-HTTPS authentication and blocking third-party access.
 
 ![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-## Pokročilé
+## Advanced
 
-Zde můžete nastavit způsob, jakým má AdGuard DNS reagovat na blokované domény:
+Here you can set the way AdGuard DNS must respond to blocked domains:
 
-- Výchozí — nulová IP adresa
-- NXDOMAIN — doména neexistuje
-- REFUSED — server odmítl požadavek zpracovat
-- Vlastní IP — můžete ručně zadat IP adresu
+- Default — zero IP address
+- NXDOMAIN — the domain does not exist
+- REFUSED — the server has refused to process the request
+- Custom IP — you can manually specify an IP address
 
-Kromě toho můžete upravit nastavení *time-to-live* (TTL). Tento parametr definuje dobu (v sekundách), po kterou zařízení klienta ukládá odezvu na DNS požadavek do mezipaměti. Vyšší TTL znamená, že i když je dříve zablokovaná doména odblokována, může se ještě nějakou dobu jevit jako zablokovaná. Hodnota TTL 0 znamená, že zařízení neukládá odezvy do mezipaměti.
+Additionally, you can adjust the *Time to live* (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
 
-V sekci Pokročilé jsou tři možnosti, které lze přizpůsobit:
+In the Advanced section, there are three options that can be customized:
 
-- Blokovat přístup k iCloud Private Relay. Zařízení, která používají iCloud Private Relay, mohou nastavení DNS ignorovat. Povolením této možnosti zajistíte, že AdGuard DNS bude vaše zařízení účinně chránit.
-- Blokovat doménu Firefox canary. Toto nastavení zabraňuje automatickému přepnutí prohlížeče Firefox na řešitele DoH, pokud je AdGuard DNS nastaven jako DNS služba pro celý systém.
-- Zaznamenat IP adresy. Pokud je tato možnost povolena, budou IP adresy spojené s příchozími požadavky DNS zaznamenány a zobrazeny v protokolu dotazů.
+- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore DNS settings. Enabling this option ensures that AdGuard DNS can effectively protect your device.
+- Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
+- Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
 
-### Nastavení přístupu
+### Access settings
 
-Zde můžete spravovat přístup k DNS serveru pomocí následujících nastavení:
+Here you can manage an access to your DNS server by configuring the following settings:
 
-- Povolení klienti. Určete, kteří klienti mohou používat váš DNS server. Vezměte prosím na vědomí, že do přidaných pravidel přístupu se nezapočítávají povolení klienti, ale pouze zakázaní klienti a domény
+- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
 
-![Přidaná pravidla](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
-- Blokovaní klienti. Seznam klientů, kterým je zakázáno používat váš DNS server
-- Blokované domény. Zadejte názvy domén, kterým bude odepřen přístup k DNS serveru. Zde lze také uvést zástupné znaky a pravidla DNS filtrování
+- Disallowed clients. List clients that are denied to use your DNS server
+- Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
 
 :::note
 
-Pokud chcete používat DNS pouze na určitých číslech AS nebo IP adresách, měli byste v poli Blokovaní klienti zablokovat vše ostatní. Pouhé povolení pouze potřebných čísel a adres v poli *Povolení klienti* nestačí.
+If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
 
 :::
 
-Nastavením těchto možností můžete kontrolovat, kdo používá váš DNS server, a zabránit případným útokům DDoS. Požadavky, které nejsou povoleny, se nezobrazí v protokolu dotazů a nejsou účtovány.
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
+
+### How to connect devices to AdGuard DNS
+
+AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+
+[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+
+### Server a nastavení
+
+This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+
+[Server a nastavení](/private-dns/server-and-settings/server-and-settings.md)
+
+### Jak nastavit filtrování
+
+In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+
+[Jak nastavit filtrování](/private-dns/setting-up-filtering/blocklists.md)
+
+### Statistiky a protokol dotazů
+
+Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+
+[Statistiky a protokol dotazů](/private-dns/statistics-and-log/statistics.md)

@@ -38,12 +38,13 @@ Hier is een eenvoudige vergelijking van functies die beschikbaar zijn in openbar
 | -                                | Detailed query log                                                                                     |
 | -                                | Parental control                                                                                       |
 
-## Hoe je privé AdGuard DNS instelt
 
-### Voor apparaten die DoH, DoT en DoQ ondersteunen
+<!-- ## How to set up private AdGuard DNS
 
-1. Ga naar jouw [AdGuard DNS-dashboard](https://agrd.io/download-dns) (indien niet aangemeld, meld je aan met jouw AdGuard account)
-1. Klik op *Apparaat aansluiten* en volg de instructies op het scherm
+### For devices that support DoH, DoT, and DoQ
+
+1. Go to your [AdGuard DNS dashboard](https://agrd.io/download-dns) (if not logged in, log in using your AdGuard account)
+1. Click *Connect device* and follow on-screen instructions
 
 :::note Supported platforms:
 
@@ -54,33 +55,33 @@ Hier is een eenvoudige vergelijking van functies die beschikbaar zijn in openbar
 - Linux
 - Routers
 - Gaming consoles
-- Smart-TV's
+- Smart TVs
 
 :::
 
 Every device that you add in the AdGuard DNS panel has its own unique address that can be used if the device supports modern encrypted DNS protocols (DoH, DoT, and DoQ).
 
-### Voor apparaten die geen DoH, DoT en DoQ ondersteunen
+### For devices that do not support DoH, DoT, and DoQ
 
-Als het apparaat geen versleutelde DNS ondersteunt en je gewone DNS moet gebruiken, zijn er nog twee manieren om AdGuard DNS het apparaat te laten herkennen - gebruik specifieke IP-adressen of koppel het IP-adres van het apparaat.
+If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
 
 :::note
 
-Gebruik alleen gewone DNS-adressen als je geen andere opties hebt: dit vermindert de veiligheid van DNS-verzoeken. Als je besluit om gewone DNS te gebruiken, raden we je aan om speciale IP-adressen te kiezen.
+Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
 
 :::
 
-#### Toegewezen IP-adressen
+#### Dedicated IP addresses
 
-Voor elk apparaat dat je verbindt met AdGuard DNS, krijg je twee speciale IPv6-adressen die je kunt invoeren in de instellingen van je apparaat. Het is niet verplicht om beide IPv6-adressen te gebruiken, maar vaak vragen apparaten je om twee IPv6-adressen in te voeren.
+For every device that you connect to AdGuard DNS, you'll be offered two dedicated IPv6 addresses that you can enter in your device settings. Using both IPv6 addresses is not mandatory, but often devices might request you to enter two IPv6 addresses.
 
-Wanneer je er verbinding mee maakt, kan AdGuard DNS bepalen welk bepaald apparaat DNS-verzoeken verstuurt en er statistieken over weergeven. En je kunt DNS-regels specifiek voor dit apparaat configureren.
+When you connect to them, AdGuard DNS will be able to determine which particular device is sending DNS requests and display statistics for it. And you'll be able to configure DNS rules specifically for this device.
 
-Helaas bieden niet alle serviceproviders IPv6-ondersteuning en kun je niet op alle apparaten IPv6-adressen configureren. Als dit het geval is, moet je misschien vertrouwen op de Linked IP-methode.
+Unfortunately, not all service providers offer IPv6 support, and not all devices allow you to configure IPv6 addresses. If this is your case, you may have to rely on the Linked IP method.
 
 #### Linked IP
 
-Als je je apparaat via Linked IP verbindt met AdGuard DNS, telt de service alle gewone DNS-verzoeken die van dat IP-adres naar dat "apparaat" komen. Met deze verbindingsmethode zou je elke keer dat het IP-adres van het apparaat verandert, handmatig of via een speciaal programma opnieuw verbinding moeten maken, wat na elke herstart gebeurt.
+If you connect your device to AdGuard DNS via Linked IP, the service will count all plain DNS requests coming from that IP address towards that "device". With this connection method, you would have to reconnect manually or through a special program each time the device's IP changes, which happens after each reboot.
 
 The only requirement for linking IP is that **it must be a residential IP address**.
 
@@ -96,7 +97,7 @@ If you're trying to link a residential IP address and AdGuard DNS does not allow
 
 ### Statistics
 
-Op het tabblad *Statistieken* kun je alle samengevatte statistieken bekijken over DNS-query's gemaakt door apparaten die zijn aangesloten op jouw Private AdGuard DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
@@ -118,21 +119,21 @@ This is a detailed log where you can check out the information on every single r
 
 ![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-## Serverinstellingen
+## Server settings
 
-Dit gedeelte bevat een reeks instellingen waarmee je de werking van privé AdGuard DNS kunt aanpassen, zodat het internet precies zo werkt als jij wilt.
+This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
 
 ### Blocklists management
 
-Met de functie *Blokkeerlijsten* kun je aangeven welke domeinen je wilt blokkeren en welke niet. Kies uit verschillende blokkeerlijsten voor verschillende doeleinden.
+The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
 
 ![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Beveiligingsinstellingen
+### Security settings
 
-Even if you're aware of all the tricks online scammers use, there's always a risk you'll accidentally click a malicious link. Om jezelf tegen dergelijke ongelukken te beschermen, ga je naar de sectie *Beveiligingsinstellingen* en vink je de vakjes aan naast de opties die daar worden vermeld.
+Even if you're aware of all the tricks online scammers use, there's always a risk you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
 
-De functie *Kkwaadaardige, phishing- en oplichtingsdomeinen blokkeren* blokkeert domeinen die in de speciale database worden gevonden. En de *Nieuw geregistreerde domeinen blokkeren* blokkeert alle domeinen die minder dan 30 dagen geleden zijn geregistreerd, wat vaak als riskant wordt beschouwd voor jouw online privacy.
+The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
 ### Parental control
 
@@ -142,17 +143,17 @@ To protect your child from online content you deem inappropriate, set up and act
 
 ### User rules
 
-Voor gevallen waarin vooraf geïnstalleerde blokkeerlijsten met duizenden regels niet voldoende zijn, hebben we een handige functie genaamd *Gebruikersregels*. Hier kun je handmatig aangepaste regels toevoegen om een specifiek domein te blokkeren/deblokkeren of aangepaste regellijsten te importeren (zie [Syntaxis van DNS-filterregels](../general/dns-filtering-syntax.md)). You can export the lists.
+For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### DNS-over-HTTPS met authenticatie
+### DNS-over-HTTPS with authentication
 
-DNS-over-HTTPS met authenticatie biedt een aanmelding en wachtwoord om verbinding te maken met de server. Dit kan de toegang voor ongeautoriseerde gebruikers beperken en de veiligheid vergroten.
+DNS-over-HTTPS with authentication provides a login and password to connect to the server. This can limit access to unauthorized users and increase security.
 
-Om deze functie in te schakelen, ga naar *Serverinstellingen* → *Apparaten* → *Instellingen* en verander de DNS-server naar degene met authenticatie. Selecteer *Andere protocollen weigeren* om het gebruik van alternatieve protocollen uit te schakelen, exclusieve DNS-over-HTTPS-authenticatie te garanderen en toegang van derden te blokkeren.
+To enable this feature, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Select *Deny other protocols* to disable alternative protocol usage, ensuring exclusive DNS-over-HTTPS authentication and blocking third-party access.
 
-![DNS-over-HTTPS met authenticatie](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
 ## Advanced
 
@@ -175,17 +176,41 @@ In the Advanced section, there are three options that can be customized:
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
-- Allowed clients. Geef aan welke clients jouw DNS-server mogen gebruiken. Houd er rekening mee dat toegestane clients niet worden meegeteld in toegevoegde toegangsregels, alleen niet-toegestane clients en domeinen
+- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
 
-![Toegevoegde regels](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
 - Disallowed clients. List clients that are denied to use your DNS server
 - Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
 
-:::opmerking
+:::note
 
-Als je DNS alleen op bepaalde AS-nummers of IP-adressen wilt gebruiken, moet je al het andere blokkeren in het veld Toegestane clients. Het is niet genoeg om alleen de benodigde nummers en adressen toe te staan in het veld *Toegestane klanten*.
+If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
+
+### How to connect devices to AdGuard DNS
+
+AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+
+[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+
+### Server and settings
+
+This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+
+[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+
+### How to set up filtering
+
+In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+
+[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+
+### Statistics and Query log
+
+Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+
+[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
