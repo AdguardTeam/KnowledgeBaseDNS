@@ -3,7 +3,7 @@ title: Keenetic
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Keenetic-Router sind bekannt für ihre Stabilität und flexible Konfigurationen und sind einfach einzurichten, sodass Sie problemlos verschlüsselte Private AdGuard DNS auf Ihrem Gerät installieren können.
 
 ## DNS-over-HTTPS konfigurieren
 
