@@ -3,40 +3,40 @@ title: Asus
 sidebar_position: 3
 ---
 
-## 配置 TLS 加密协议的 DNS（DNS-over-TLS）
+## 配置 DNS-over-TLS
 
 以下是针对 Asus 路由器配置私人 AdGuard DNS 的一般指示说明。
 
-The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
+指示说明中的配置信息用特定路由器型号作为例子，因此可能与某些设备的界面有所不同。
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+如有必要：要在 ASUS 上配置 TLS 加密协议的 DNS（DNS-over-TLS），请在计算机上安装适合您路由器版本的 [ASUS Merlin 固件](https://www.asuswrt-merlin.net/download)。
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. In the _Advanced Settings_ sidebar, navigate to the WAN section.
-4. In the _WAN DNS Settings_ section, set _Connect to DNS Server automatically_ to _No_.
-5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
-6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
-7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
-8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
-9. For _TLS Port_, enter 853.
-10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
+1. 登录 Asus 路由器管理面板。 可以通过 [http://router.asus.com](http://router.asus.com/)、 [http://192.168.1.1](http://192.168.1.1/)、 [http://192.168.0.1](http://192.168.0.1/)、或 [http://192.168.2.1](http://192.168.2.1/) 访问。
+2. 输入管理员用户名（通常是「admin」）和路由器密码。
+3. 在「_高级设置_」侧边栏中，转到「WAN」部分。
+4. 在「_WAN DNS 设置_」部分中，将「_自动连接到 DNS 服务器_」设置为「_否_」。
+5. 将「_转发本地查询_」、「_启用 DNS 重新绑定_」和「_启用 DNSSEC_」设置为「_否_」。
+6. 将「DNS 隐私协议」更改为「DNS-over-TLS」。
+7. 确保「_DNS-over-TLS 描述文件_」设置为「_严格_」。
+8. 向下滚动到「_DNS-over-TLS 服务器列表_」部分。 在「_地址_」字段中，输入以下地址之一：
+   - `94.140.14.49` 和 `94.140.14.59`
+9. 指定「_TLS 端口_」，输入 853。
+10. 在「_TLS 主机名_」字段中，输入私人 AdGuard DNS 服务器地址：
     - `{Your_Device_ID}.d.adguard-dns.com`
-11. Scroll to the bottom of the page and click _Apply_.
+11. 滚动到页面底部并按「_应用_」。
 
 ## 使用路由器管理面板
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_.
-4. Select _WAN_ or _Internet_.
-5. Open _DNS Settings_ or _DNS_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
+1. 打开路由器管理面板。 可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
+2. 输入管理员用户名（通常是「admin」）和路由器密码。
+3. 打开「_高级设置_」或「_高级_」。
+4. 选择「_WAN_」或「_互联网_」。
+5. 打开「_DNS 设置_」或「_DNS_」。
+6. 选择「_手动 DNS_」。 选择「_使用指定 DNS 服务器_」或「_手动指定 DNS 服务器_」，然后输入以下 DNS 服务器地址：
    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 7. 请保存设置。
 8. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

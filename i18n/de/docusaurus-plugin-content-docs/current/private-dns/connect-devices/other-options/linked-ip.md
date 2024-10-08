@@ -1,37 +1,37 @@
 ---
-title: Linked IPs
+title: Verknüpfte IPs
 sidebar_position: 3
 ---
 
-## What linked IPs are and why they are useful
+## Was verknüpfte IPs sind und warum sie nützlich sind
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
+Nicht alle Geräte unterstützen verschlüsselte DNS-Protokolle. In diesem Fall sollten Nutzer:innen in Betracht ziehen, unverschlüsselten DNS einzurichten.
 
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. Die einzige Voraussetzung für eine verknüpfte IP-Adresse ist, dass es sich um eine Wohnsitz-IP handeln muss.
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+Eine **Wohnsitz-IP-Adresse** wird einem Gerät zugewiesen, das mit einem örtlichen ISP verbunden ist. Sie ist in der Regel an einen bestimmten Ort gebunden und wird einzelnen Häusern oder Wohnungen zugeordnet. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
 
 :::
 
 Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+![Verknüpfte IPv4-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+Falls dies passiert, wenden Sie sich bitte an den Support unter [support@adguard-dns.io](mailto:support@adguard-dns.io), und sie werden Ihnen mit den richtigen Konfigurationseinstellungen weiterhelfen.
 
-## How to set up linked IP
+## So richten Sie eine verknüpfte IP ein
 
-The following instructions explain how to connect to the device via **linking IP address**:
+Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über eine **verknüpfte IP-Adresse** herstellen:
 
 1. Open Dashboard.
 2. Add a new device or open the settings of a previously connected device.
 3. Go to _Use DNS server addresses_.
 4. Open _Plain DNS server addresses_ and connect the linked IP.
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## Dynamisches DNS: Warum es nützlich ist
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Jedes Mal, wenn ein Gerät eine Verbindung zum Netzwerk herstellt, erhält es eine neue dynamische IP-Adresse. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 

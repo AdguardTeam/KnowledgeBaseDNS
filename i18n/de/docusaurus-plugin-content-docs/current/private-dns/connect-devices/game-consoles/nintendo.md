@@ -11,7 +11,7 @@ It is likely that your router supports the use of encrypted DNS servers, so you 
 
 :::note Kompatibilität
 
-Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+Gilt für New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL und Nintendo 2DS.
 
 :::
 

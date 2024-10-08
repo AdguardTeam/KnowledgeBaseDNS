@@ -3,7 +3,7 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS routers are incredibly easy to use and can be combined into a single mesh network. You can manage your network remotely anytime, anywhere. You can also configure AdGuard DNS directly on the router.
+Synology NAS-Router sind einfach zu benutzen und können in einem einzigen Mesh-Netzwerk kombiniert werden. Sie können Ihr Netzwerk von überall und jederzeit verwalten. Sie können auch AdGuard DNS direkt auf dem Router konfigurieren.
 
 ## Use your router admin panel
 
@@ -21,4 +21,4 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 8. Link your IP (or your dedicated IP if you have a Team subscription).
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Verknüpfte IPs](private-dns/connect-devices/other-options/linked-ip.md)

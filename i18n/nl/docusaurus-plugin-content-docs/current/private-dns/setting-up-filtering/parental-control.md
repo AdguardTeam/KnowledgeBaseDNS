@@ -33,12 +33,12 @@ Removes the option to view and post comments under videos and interact with 18+ 
 
 ### Blocked services and websites
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS blocks access to popular services with one click. Het is handig als je niet wilt dat verbonden apparaten bijvoorbeeld Instagram en YouTube bezoeken.
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
 ### Schedule off time
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+Enables parental controls on selected days with a specified time interval. Je hebt je kind bijvoorbeeld toegestaan om doordeweeks slechts tot 23:00 YouTube-video's te bekijken. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
 
 ![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
