@@ -26,4 +26,4 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 11. Link your IP (or your dedicated IP if you have a Team subscription).
 
 - [Dedizierte IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Verknüpfte IPs](private-dns/connect-devices/other-options/linked-ip.md)
