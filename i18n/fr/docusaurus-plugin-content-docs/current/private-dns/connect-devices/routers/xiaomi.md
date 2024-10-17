@@ -3,16 +3,16 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have a lot of advantages: Steady strong signal, network security, stable operation, intelligent management, at the same time, the user can connect up to 64 devices to the local Wi-Fi network.
+Les routeurs Xiaomi présentent de nombreux avantages : un signal fort et constant, la sécurité du réseau, un fonctionnement stable, une gestion intelligente, en même temps, l'utilisateur peut connecter jusqu'à 64 appareils au réseau Wi-Fi local.
 
-Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
+Malheureusement, il ne prend pas en charge le DNS chiffré, mais il est excellent pour configurer AdGuard DNS via l'adresse IP liée.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Open the router admin panel. It can be accessed at `192.168.31.1` or the IP address of your router.
-2. Enter the administrator username (usually, it’s admin) and router password.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at `192.168.31.1` or the IP address of your router.
+2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
 3. Open _Advanced Settings_ or _Advanced_, depending on your router model.
 4. Open _Network_ or _Internet_ and look for DNS or DNS Settings.
 5. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
@@ -21,5 +21,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 6. Save the settings.
 7. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

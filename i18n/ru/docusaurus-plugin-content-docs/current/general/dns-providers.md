@@ -389,12 +389,12 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 
 ### DNSPod Public DNS+
 
-[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
+[DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) — это защищающий конфиденциальность DNS-провайдер с многолетним опытом развития DNS-сервисов, который стремится обеспечить пользователей быстрым, точным и стабильным рекурсивным сервисом разрешения имён.
 
 | Протокол       | Адрес                       |                                                                                                                                                                                                 |
 | -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `119.29.29.29`              | [Добавить в AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Add to AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                   |
+| DNS, IPv6      | `2402:4e00::`               | [Добавить в AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
 | DNS-over-HTTPS | `https://dns.pub/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
 | DNS-over-TLS   | `tls://dot.pub`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
 
@@ -405,6 +405,17 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 | Протокол  | Адрес                            |                                                                                                                                                           |
 | --------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` и `52.3.100.184` | [Добавить в AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
+
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) — это бесплатный, суверенный и соответствующий GDPR рекурсивный DNS-резолвер, уделяющий большое внимание безопасности для защиты граждан и организаций Европейского союза.
+
+| Протокол       | Адрес                          |                                                                                                                                                                            |
+| -------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `193.110.81.0` и `185.253.5.0` | [Добавить в AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Добавить в AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
 
 ### Dyn DNS
 
@@ -588,17 +599,6 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Добавить в AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Добавить в AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
 
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) — это бесплатный, суверенный и соответствующий GDPR рекурсивный DNS-резолвер, уделяющий большое внимание безопасности для защиты граждан и организаций Европейского союза.
-
-| Протокол       | Адрес                          |                                                                                                                                                                            |
-| -------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `193.110.81.0` и `185.253.5.0` | [Добавить в AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Добавить в AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Добавить в AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Добавить в AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
-
 ### Quad9 DNS
 
 [Quad9 DNS](https://quad9.net/) — это бесплатная рекурсивная anycast DNS-платформа, которая обеспечивает высокую производительность, конфиденциальность и защиту от фишинга и шпионских программ. Серверы Quad9 не предоставляют компонент цензуры.
@@ -616,7 +616,7 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                                     | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
 | DNS-over-TLS   | `tls://dns.quad9.net`                                                 | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net)                         |
 
-#### Незащищённый
+#### Unsecured
 
 У незащищённых DNS-серверов нет списков блокировки, DNSSEC или EDNS Сlient Subnet.
 
@@ -629,7 +629,7 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                                      | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 | DNS-over-TLS   | `tls://dns10.quad9.net`                                                  | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
 
-#### [Поддержка ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet)
+#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
 EDNS Client Subnet — это метод, который включает компоненты IP-адресов конечных пользователей в запросы, отправляемые на полномочные DNS-серверы. Он предоставляет список блокировки, DNSSEC и опцию EDNS Client Subnet.
 
@@ -684,7 +684,7 @@ EDNS Client Subnet — это метод, который включает ком
 | DNS-over-HTTPS | `https://basic.rethinkdns.com/` | [Добавить в AdGuard](adguard:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com) |
 | DNS-over-TLS   | `tls://max.rethinkdns.com`      | [Добавить в AdGuard](adguard:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com)               |
 
-### Безопасный DNS
+### Safe DNS
 
 [Safe DNS](https://www.safedns.com/) — это глобальная сеть, состоящая из серверов, расположенных по всему миру — в Северной и Южной Америке, Европе, Африке, Австралии и на Дальнем Востоке. Она быстро и надёжно обрабатывает DNS-запросы из любой точки мира.
 
@@ -692,7 +692,7 @@ EDNS Client Subnet — это метод, который включает ком
 | --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `195.46.39.39` и `195.46.39.40` | [Добавить в AdGuard](adguard:add_dns_server?address=195.46.39.39&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=195.46.39.39&name=) |
 
-### Sade Surfer
+### Safe Surfer
 
 [Safe Surfer](https://www.safesurfer.co.nz/) — это DNS-сервис, который блокирует 50+ категорий, таких как порно, реклама, вредоносные программы и популярные сайты социальных сетей, делая интернет безопаснее.
 
@@ -755,7 +755,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) защищает от кражи личных и финансовых данных. Помогает справиться с вирусами, программами-вымогателями и другими вредоносными программами.
 
-#### Приватный
+#### Private
 
 В «Приватном» режиме — только разрешение DNS.
 
@@ -766,7 +766,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
 | DNS-over-TLS — частный | Имя хоста: `tls://private.canadianshield.cira.ca` IP-адрес: `149.112.121.10` и IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
-#### Защищённый
+#### Protected
 
 В «Защищённом» режиме — защита от вредоносного ПО и фишинга.
 
@@ -838,13 +838,13 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | Протокол       | Адрес                                                                                   |                                                                                                                                                                                                                                             |
 | -------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://kaitain.restena.lu/dns-query` IP-адрес: `158.64.1.29` и IPv6: `2001:a18:1::29` | [Добавить в AdGuard](adguard:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://kaitain.restena.lu/dns-query&name=kaitain.restena.lu) |
-| DNS-over-TLS   | `tls://kaitain.restena.lu` IP: `158.64.1.29` and IPv6: `2001:a18:1::29`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                                 |
+| DNS-over-TLS   | `tls://kaitain.restena.lu` IP-адрес: `158.64.1.29` и IPv6: `2001:a18:1::29`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://kaitain.restena.lu&name=kaitain.restena.lu)                         |
 
 ### 114DNS
 
 [114DNS](https://www.114dns.com) — это профессиональный и надёжный DNS-сервис.
 
-#### Нормальный
+#### Normal
 
 Блокирует рекламу и раздражающие сайты.
 
@@ -852,7 +852,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.114` и `114.114.115.115` | [Добавить в AdGuard](adguard:add_dns_server?address=114.114.114.114&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.114&name=) |
 
-#### Безопасный
+#### Safe
 
 Блокирует фишинговые, вредоносные и другие небезопасные сайты.
 
@@ -978,7 +978,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [Yandex.DNS](https://dns.yandex.com/) — это бесплатный рекурсивный DNS-сервис. Серверы Yandex.DNS расположены в России, странах СНГ и Западной Европы. Пользовательские запросы обрабатываются ближайшим дата-центром, что обеспечивает высокую скорость соединения.
 
-#### Базовый
+#### Basic
 
 В «Базовом» режиме трафик не фильтруется.
 
@@ -989,7 +989,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`   | [Добавить в AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
 | DNS-over-TLS   | `tls://common.dot.dns.yandex.net`               | [Добавить в AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
-#### Безопасный
+#### Safe
 
 В «Безопасном» режиме обеспечивается защита от заражённых и мошеннических сайтов.
 
@@ -1021,7 +1021,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [AhaDNS](https://ahadns.com/) — DNS-сервис без логирования и с блокировкой рекламы от провайдера Fredrik Pettersson.
 
-#### Нидерланды
+#### Netherlands
 
 | Протокол       | Адрес                                 |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1030,7 +1030,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
 
-#### Лос-Анджелес
+#### Los Angeles
 
 | Протокол       | Адрес                                 |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1058,7 +1058,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | -------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Провайдер: `2.dnscrypt-cert.captnemo.in` IP-адрес: `139.59.48.222:4434` | [Добавить в AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Официальный DNS-сервер Dandelion Sprout
+### Dandelion Sprout's Official DNS Server
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) — это персональный DNS-сервер, использующий инфраструктуру AdGuard Home. Расположен в Тронхейме, Норвегия.
 
@@ -1205,7 +1205,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 [Privacy-First DNS](https://tiarap.org/) блокирует больше 140 тысяч рекламных, трекинговых, вредоносных и фишинговых доменов. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
 
-#### Сингапурский DNS-сервер
+#### Singapore DNS Server
 
 | Протокол       | Адрес                                                                             | Локация                                                                                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1218,7 +1218,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                             | [Добавить в AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                              | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Японский DNS-сервер
+#### Japan DNS Server
 
 | Протокол       | Адрес                                                                           |                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1234,7 +1234,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 [Seby DNS](https://dns.seby.io/) — это сервис, ориентированный на конфиденциальность, предоставляемый Sebastian Schmidt. Нет регистрации, проверка DNSSEC.
 
-#### DNS-сервер 1
+#### DNS Server 1
 
 | Протокол       | Адрес                                                             |                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

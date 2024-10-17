@@ -7,7 +7,7 @@ By configuring Access settings, you can protect your AdGuard DNS from unauthoriz
 
 Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
 
-## How to set it up
+## Nasıl ayarlanır
 
 ### Allowed clients
 

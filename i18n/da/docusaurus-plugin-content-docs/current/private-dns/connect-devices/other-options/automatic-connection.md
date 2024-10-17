@@ -1,42 +1,42 @@
 ---
-title: Automatic connection
+title: Automatisk tilslutning
 sidebar_position: 5
 ---
 
-## Why it is useful
+## Hvorfor det er nyttigt
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Ikke alle føler sig på hjemmebane ved at tilføje enheder via Kontrolpanel. Er man f.eks. en systemadministrator, der opsætter flere virksomhedsenheder samtidig, vil man gerne minimere manuelle opgaver mest muligt.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Man kan oprette et tilslutningslink og bruge dette i enhedsindstillingerne. Enheden blive detekteret og tilsluttes serveren automatisk.
 
-## How to configure automatic connection
+## Sådan opsættes automatisk tilslutning
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+1. Åbn _Kontrolpanel_ og vælg den relevante servere.
+2. Gå til _Enheder_.
+3. Aktivér muligheden for at tilslutte enheder automatisk.
+   ![Tilslut enheder automatisk \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Nu kan man automatisk tilslutte sin enhed til serveren ved at oprette en særlig adresse, der inkluderer enhedsnavn, enhedstype og aktuelt server-ID. Lad os se på, hvordan disse adresser ser ud og reglerne for at oprette dem.
 
-### Examples of automatic connection addresses
+### Eksempler på automatiske tilslutningsadresser
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dette vil automatisk oprette en `Android`-enhed med `DNS-over-TLS`-protokollen kaldet `AdGuard Test Device`
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dette vil automatisk oprette en `Windows`-enhed med `DNS-over-HTTPS`-protokollen kaldet `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` – dette vil automatisk oprette en `iOS`-enhed med `DNS-over-QUIC`-protokollen kaldet `Mary Sue`
 
-### Naming conventions
+### Navngivningskonventioner
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Når enheder oprettes manuelt, skal man være opmærksom på, at der er begrænsninger relateret til navnelængde, tegn, mellemrum og bindestreger.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Navnelængde**: Maks. 50 tegn. Tegn ud over denne længde ignoreres.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Tilladte tegn**: Engelske bogstaver, tal og bindestreger "-". Andre tegn ignoreres.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Mellemrum og bindestreger**: Brug en bindestreg for et mellemrum og en dobbelt bindestreg ( `--`) for en bindestreg.
 
-**Device type**: Use the following abbreviations:
+**Enhedstype**: Brug flg. forkortelser:
 
 - Windows — `win`
 - macOS — `mac`
@@ -45,15 +45,15 @@ When creating devices manually, please note that there are restrictions related 
 - Linux — `lnx`
 - Router — `rtr`
 - Smart TV — `stv`
-- Game console — `gam`
-- Other — `otr`
+- Spillekonsol — `gam`
+- Andre — `otr`
 
-## Link generator
+## Linkgenerator
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Vi har tilføjet en skabelon, der genererer et link til den bestemte enhedstype og protokol.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+1. Gå til _Servere_ → _Serverindstillinger_ → _Enheder_ → _Tilslut enheder automatisk_ og klik på _Linkgenerator og vejledning_.
+2. Vælg den ønskede protokol samt enhedsnavnet og enhedstypen.
+3. Klik på _Generér link_.
+   ![Generér link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+4. Linket er hermed genereret, kopiér nu serveradressen og brug den i en af [AdGuard-apperne](https://adguard.com/welcome.html)

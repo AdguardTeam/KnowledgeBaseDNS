@@ -7,7 +7,7 @@ Game consoles do not support encrypted DNS, but they are well suited for setting
 
 It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Comment configurer votre routeur](/private-dns/connect-devices/routers/routers.md)
 
 :::note Compatibility
 
@@ -24,7 +24,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 3. Select the connection file, then select _Change Settings_.
 4. Select _DNS_ → _Set Up_.
 5. Set _Auto-Obtain DNS_ to _No_.
-6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
+6. Select _Detailed Setup_ → _Primary DNS_. Maintenez la flèche gauche enfoncée pour supprimer le DNS existant.
 7. In the _DNS Server_ field, enter one of the following DNS server addresses:
    - `94.140.14.49`
    - `94.140.14.59`
@@ -32,5 +32,5 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

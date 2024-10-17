@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## General statistics
 
-The _Statistics_ tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
+L'onglet _Statistiques_ affiche toutes les statistiques résumées des requêtes DNS effectuées par des appareils connectés au DNS privé AdGuard. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 

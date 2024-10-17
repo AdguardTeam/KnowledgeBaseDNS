@@ -3,27 +3,27 @@ title: Steam Deck
 sidebar_position: 5
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Spielkonsolen unterstützen kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von Öffentlichem AdGuard DNS oder Privatem AdGuard DNS über eine verknüpfte IP-Adresse.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Möglicherweise unterstützt Ihr Router die Verwendung von verschlüsselten DNS-Servern, so dass Sie jederzeit Privates AdGuard DNS auf ihm konfigurieren und Ihre Spielkonsole damit verbinden können.
 
 [So konfigurieren Sie Ihren Router](/private-dns/connect-devices/routers/routers.md)
 
 ## Mit AdGuard DNS verbinden
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS-Server verwendet, oder konfigurieren Sie sie über eine verknüpfte IP:
 
-1. Open the Steam Deck settings by clicking the gear icon in the upper right corner of the screen.
-2. Click _Network_.
-3. Click the gear icon next to the network connection you want to configure.
-4. Select IPv4 or IPv6, depending on the type of network you're using.
-5. Select _Automatic (DHCP) addresses only_ or _Automatic (DHCP)_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Öffnen Sie die Steam Deck-Einstellungen, indem Sie auf das Zahnradsymbol in der oberen rechten Ecke des Bildschirms klicken.
+2. Klicken Sie auf _Netzwerk_.
+3. Klicken Sie auf das Zahnradsymbol neben jener Netzwerkverbindung, die Sie konfigurieren möchten.
+4. Wählen Sie IPv4 oder IPv6, je nachdem, welche Art von Netzwerk Sie verwenden.
+5. Wählen Sie _Nur automatische (DHCP) Adressen_ oder _Automatisch (DHCP)_.
+6. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
    - `94.140.14.49`
    - `94.140.14.59`
 7. Speichern Sie die Änderungen.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

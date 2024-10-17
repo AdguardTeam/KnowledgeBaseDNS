@@ -3,34 +3,34 @@ title: Nintendo
 sidebar_position: 2
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+ゲーム機は暗号化されたDNSをサポートしていませんが、リンクされたIPアドレスを介してパブリックAdGuard DNSまたはプライベートAdGuard DNSを設定できます。
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+お使いのルーターが暗号化DNSサーバーの使用をサポートしている可能性が高いため、ルーターにプライベートAdGuard DNSを設定し、ゲーム機をルーター（Wi-Fi）に接続するという方法もあります。そうすれば、ゲーム機は暗号化AdGuard DNSに接続されます。
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[ルーターでの設定方法はこちら](/private-dns/connect-devices/routers/routers.md)
 
-:::note Compatibility
+:::note 互換性
 
-Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+【対象機種】Newニンテンドー3DS、Newニンテンドー3DS LL、Newニンテンドー2DS LL、ニンテンドー3DS、ニンテンドー3DS LL、ニンテンドー2DS
 
 :::
 
-## Connect AdGuard DNS
+## AdGuard DNSに接続する方法
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+パブリックAdGuard DNSサーバーを使用するようにゲーム機を設定するか、リンクされたIPを介して設定します:
 
-1. From the home menu, select _System Settings_.
-2. Go to _Internet Settings_ → _Connection Settings_.
-3. Select the connection file, then select _Change Settings_.
-4. Select _DNS_ → _Set Up_.
-5. Set _Auto-Obtain DNS_ to _No_.
-6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
-7. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. ホームメニューから「_システム設定_」を選択します。
+2. 「_インターネット設定_」→「_接続設定_」に移動します。
+3. 接続ファイルを選択し、「_設定を変更_」を選択します。
+4. 「_DNS_」 → 「_セットアップ_ 」を選択します。
+5. _DNS の自動取得_を「_いいえ_」に設定します。
+6. _詳細セットアップ_ → _プライマリDNS_ を選択します。 既存の DNS を削除するには、左矢印を長押しします。
+7. 「_DNS サーバー_」欄に、次のいずれかの DNS サーバーアドレスを入力します:
    - `94.140.14.49`
    - `94.140.14.59`
-8. Save the settings.
+8. 設定を保存します。
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+リンクされたIP（チームプランをご利用の場合は専用IP）を使用するのがおすすめです:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

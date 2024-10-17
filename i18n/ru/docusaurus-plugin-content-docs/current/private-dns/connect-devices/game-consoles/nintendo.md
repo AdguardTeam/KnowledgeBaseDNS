@@ -3,34 +3,34 @@ title: Nintendo
 sidebar_position: 2
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Игровые консоли не поддерживают зашифрованный DNS, но они отлично подходят для настройки Публичного AdGuard DNS или Личного AdGuard DNS через привязанный IP-адрес.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Скорее всего, ваш роутер поддерживает использование зашифрованных DNS-серверов, поэтому вы всегда можете настроить Личный AdGuard DNS на нём и подключить к нему вашу игровую консоль.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Как настроить ваш роутер](/private-dns/connect-devices/routers/routers.md)
 
-:::note Compatibility
+:::note Совместимость
 
-Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+Применимо к: New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL и Nintendo 2DS.
 
 :::
 
-## Connect AdGuard DNS
+## Подключиться к AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Настройте вашу игровую консоль для использования Публичного AdGuard DNS или настройте её через привязанный IP:
 
-1. From the home menu, select _System Settings_.
-2. Go to _Internet Settings_ → _Connection Settings_.
-3. Select the connection file, then select _Change Settings_.
-4. Select _DNS_ → _Set Up_.
-5. Set _Auto-Obtain DNS_ to _No_.
-6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
-7. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. В главном меню выберите _Системные настройки_.
+2. Перейдите в _Настройки интернета_ → _Настройки подключения_.
+3. Выберите файл подключения, затем выберите _Изменить настройки_.
+4. Выберите _DNS_ → _Настройки_.
+5. Установите для _Автополучения DNS_ значение _Нет_.
+6. Выберите _Подробная настройка_ → _Основной DNS_. Удерживайте левую стрелку, чтобы удалить существующий DNS.
+7. В поле «DNS-сервер» введите один из следующих адресов DNS-сервера:
    - `94.140.14.49`
    - `94.140.14.59`
-8. Save the settings.
+8. Сохраните настройки.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Предпочтительнее использовать привязанный IP (или выделенный IP, если у вас подписка Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

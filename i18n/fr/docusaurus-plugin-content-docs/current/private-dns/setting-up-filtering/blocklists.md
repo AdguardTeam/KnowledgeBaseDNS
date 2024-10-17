@@ -5,11 +5,11 @@ sidebar_position: 1
 
 ## What blocklists are
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. Par exemple, il peut y avoir des règles pour les langues de site Web (comme les filtres allemands ou russes) ou des règles qui protègent contre les sites de hameçonnage (comme la Liste de blocage URL de hameçonnage). You can easily enable or disable these rules as a group.
 
 ## Why they are useful
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Blocklists are designed for flexible customization of filtering rules. Par exemple, vous pouvez vouloir bloquer des domaines publicitaires dans une région linguistique spécifique, ou vous pouvez vouloir vous débarrasser des domaines de traqueurs ou de publicités. Select the blocklists you want and customize the filtering to your liking.
 
 ## How to activate blocklists in AdGuard DNS
 
@@ -22,7 +22,7 @@ To activate the blocklists:
 
 ## Blocklists types
 
-### General
+### Général
 
 A group of filters that includes lists for blocking ads and tracking domains.
 

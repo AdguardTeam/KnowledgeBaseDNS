@@ -13,12 +13,12 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
 3. Åbn _Kontrolpanel_ eller _Netværk_.
 4. Vælg _Netværksgrænseflade_ eller _Netværksindstillinger_.
-5. Select your Wi-Fi network or wired connection.
+5. Vælg relevant Wi-Fi netværk eller kabelforbindelse.
 6. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
    - IPv4: `94.140.14.49` and `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+7. Gem indstillingerne.
+8. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)

@@ -7,22 +7,22 @@ sidebar_position: 4
 
 DNS-over-HTTPS with authentication allows you to set a username and password for accessing your chosen server.
 
-This helps prevent unauthorized users from accessing it and enhances security. Additionally, you can restrict the use of other protocols for specific profiles. This feature is particularly useful when your DNS server address is known to others. By adding a password, you can block access and ensure that only you can use it.
+Bu, yetkisiz kullanıcıların erişmesini önlemeye yardımcı olur ve güvenliği artırır. Ayrıca, belirli profiller için diğer protokollerin kullanımını kısıtlayabilirsiniz. Bu özellik, DNS sunucu adresinizin başkaları tarafından bilindiği durumlarda özellikle kullanışlıdır. By adding a password, you can block access and ensure that only you can use it.
 
-## How to set it up
+## Nasıl ayarlanır
 
 :::note Uyumluluk
 
-This feature is supported by [AdGuard DNS Client](/dns-client/overview.md) as well as [AdGuard apps](https://adguard.com/welcome.html).
+Bu özellik [AdGuard DNS İstemcisi](/dns-client/overview.md) ve [AdGuard uygulamaları](https://adguard.com/welcome.html) tarafından desteklenmektedir.
 
 :::
 
-1. Open Dashboard.
-2. Add a device or go to the settings of a previously created device.
-3. Click _Use DNS server addresses_ and open the _Encrypted DNS server addresses_ section.
-4. Configure DNS-over-HTTPS with authentication as you like.
-5. Reconfigure your device to use this server in the AdGuard DNS Client or one of the AdGuard apps.
-6. To do this, copy the address of the encrypted server and paste it into the AdGuard app or AdGuard DNS Client settings.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
-7. You can also deny the use of other protocols.
+1. Panoyu açın.
+2. Cihaz ekleyin veya daha önce oluşturulmuş bir cihazın ayarlarına gidin.
+3. _DNS sunucu adreslerini kullan_ öğesine tıklayın ve _Şifrelenmiş DNS sunucu adresleri_ bölümünü açın.
+4. DNS-over-HTTPS'i istediğiniz gibi kimlik doğrulamasıyla yapılandırın.
+5. AdGuard DNS İstemcisi veya AdGuard uygulamalarından birinde bu sunucuyu kullanmak için cihazınızı yeniden yapılandırın.
+6. Bunu yapmak için, şifrelenmiş sunucunun adresini kopyalayın ve AdGuard uygulamasına veya AdGuard DNS İstemcisi ayarlarına yapıştırın.
+   ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+7. Diğer protokollerin kullanımını da reddedebilirsiniz.
    ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

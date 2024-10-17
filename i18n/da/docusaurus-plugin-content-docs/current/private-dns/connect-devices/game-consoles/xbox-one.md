@@ -3,27 +3,27 @@ title: Xbox One
 sidebar_position: 6
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Spillekonsoller understøtter ikke krypteret DNS, men de er velegnede til opsætning af Public AdGuard DNS eller Private AdGuard DNS via en linket IP-adresse.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Det er sandsynligt, at routeren understøtter brugen af krypterede DNS-servere, så man kan altid opsætte Private AdGuard DNS på den og tilslutte spillekonsollen til den.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Sådan opsættes routeren](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Tilslut AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt den via en linket IP:
 
-1. Turn on your Xbox One console and sign in to your account.
-2. Press the Xbox button on your controller to open the guide, then select _System_ from the menu.
+1. Tænd Xbox One-konsollen og log ind på brugerkontoen.
+2. Tryk på Xbox-knappen på controlleren for at åbne guiden, og vælg dernæst _System_ i menuen.
 3. Vælg _Netværk_ i menuen _Indstillinger_.
-4. Under _Network Settings_, select _Advanced Settings_.
-5. Under _DNS Settings_, select _Manual_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+4. Under _Netværksindstillinger_ vælges _Avancerede indstillinger_.
+5. Som _DNS-indstillinger_ vælges _Manuel_.
+6. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save the changes.
+7. Gem ændringerne.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Brug af en linket IP (eller dedikeret IP, hvis man har et Team-abonnement) vil være at foretrække:
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

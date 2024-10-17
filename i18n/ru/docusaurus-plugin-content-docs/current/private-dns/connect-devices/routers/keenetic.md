@@ -3,46 +3,46 @@ title: Keenetic
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Роутеры Keenetic известны своей стабильностью, гибкой настройкой и простотой установки, что позволяет легко установить шифрованный Private AdGuard DNS на ваше устройство.
 
-## Configure DNS-over-HTTPS
+## Настройте DNS-over-HTTPS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
+1. Откройте панель управления роутера. К панели администрирования можно получить доступ по адресу my.keenetic.net, IP-адресу вашего роутера, или по адресу `192.168.1.1`.
+2. Нажмите кнопку меню в нижней части экрана и выберите «Управление».
+3. Откройте Системные настройки.
+4. Нажмите «Параметры компонента» → «Параметры системного компонента».
+5. В разделе «Утилиты и сервисы» выберите DNS-over-HTTPS-прокси и установите его.
+6. Перейдите в «Меню» → «Правила сети» → «Интернет-безопасность».
+7. Перейдите к DNS-over-HTTPS-серверам и нажмите «Добавить DNS-over-HTTPS-сервер».
+8. Введите URL приватного AdGuard DNS сервера в поле `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
 9. Нажмите _Сохранить_.
 
-## Configure DNS-over-TLS
+## Настройка DNS-over-TLS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
+1. Откройте панель управления роутера. К панели администрирования можно получить доступ по адресу my.keenetic.net, IP-адресу вашего роутера, или по адресу `192.168.1.1`.
+2. Нажмите кнопку меню в нижней части экрана и выберите «Управление».
+3. Откройте Системные настройки.
+4. Нажмите «Параметры компонента» → «Параметры системного компонента».
+5. В разделе «Утилиты и сервисы» выберите DNS-over-HTTPS-прокси и установите его.
+6. Перейдите в «Меню» → «Правила сети» → «Интернет-безопасность».
+7. Перейдите к DNS-over-HTTPS-серверам и нажмите «Добавить DNS-over-HTTPS-сервер».
+8. Введите URL приватного AdGuard DNS сервера в поле `tls://*********.d.adguard-dns.com`.
 9. Нажмите _Сохранить_.
 
-## Use your router admin panel
+## Через панель управления роутера
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _WAN_ or _Internet_.
-5. Select _DNS_ or _DNS Settings_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
+2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
+3. Откройте «Интернет» или «Домашнюю сеть».
+4. Выберите «WAN» или «Интернет».
+5. Выберите «DNS» или «Настройки DNS».
+6. Выберите «Ручной DNS». Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+7. Сохраните настройки.
+8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

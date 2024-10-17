@@ -1,21 +1,21 @@
 ---
-title: Server and settings
+title: Configurações do servidor
 sidebar_position: 1
 ---
 
-## What is server and how to use it
+## O que é um servidor e como usá-lo
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+Ao configurar o AdGuard DNS privado, você encontrará o termo _servidores_.
 
-A server acts as the “profile” that you connect your devices to.
+Um servidor atua como o “perfil” ao qual você conecta seus dispositivos.
 
-Servers include configurations that you can customize to your liking.
+Os servidores incluem configurações que você pode personalizar ao seu gosto.
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+Ao criar uma conta, estabelecemos automaticamente um servidor com configurações padrão. Você pode optar por modificar este servidor ou criar um novo.
 
-For instance, you can have:
+Por exemplo, você pode ter:
 
-- A server that allows all requests
+- Um servidor que permite todas as solicitações
 - A server that blocks adult content and certain services
 - A server that blocks adult content only during specific hours you choose
 

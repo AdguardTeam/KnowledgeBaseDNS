@@ -1,30 +1,30 @@
 ---
-title: User rules
+title: Benutzerregeln
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Warum diese Funktion nützlich ist
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Die Benutzerregeln sind die gleichen Filterregeln wie die, die in gängigen Blocklisten verwendet werden. Sie können das Filtern von Websites an Ihre Bedürfnisse anpassen, indem Sie Regeln manuell hinzufügen oder aus einer vordefinierten Liste importieren.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+Um Ihr Filtern flexibler und besser an Ihre Einstellungen anzupassen, werfen Sie einen Blick auf die [Regelsyntax](/general/dns-filtering-syntax/) für AdGuard DNS-Filterregeln.
 
-## How to use
+## Kurzanleitung
 
-To set up user rules:
+So richten Sie Benutzerregeln ein:
 
-1. Navigate to the _Dashboard_.
+1. Wechseln Sie zur _Übersicht_.
 
-2. Go to the _Servers_ section.
+2. Gehen Sie zum Abschnitt _Server_.
 
-3. Select the required server.
+3. Wählen Sie den erforderlichen Server aus.
 
-4. Click the _User rules_ option.
+4. Klicken Sie auf die Option _Benutzerregeln_.
 
-5. You'll find several options for adding user rules.
+5. Sie finden mehrere Optionen zum Hinzufügen von Benutzerregeln.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - Am einfachsten ist es, den Generator zu nutzen. Um ihn zu verwenden, klicken Sie auf _Neue Regel hinzufügen_ → Geben Sie den Namen der Domain ein, die Sie sperren oder entsperren möchten → Klicken Sie auf _Regel hinzufügen_
+     ![Regel hinzufügen \*Rand](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Der fortgeschrittene Weg ist die Verwendung des Regel-Editors. Klicken Sie auf _Editor öffnen_ und geben Sie Sperrregeln gemäß der [Syntax](/general/dns-filtering-syntax/) ein
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Mit dieser Funktion können Sie eine [Anfrage zu einer anderen Domain umleiten, indem der Inhalt der DNS-Anfrage ersetzt wird](/general/dns-filtering-syntax/#dnsrewrite-modifier).

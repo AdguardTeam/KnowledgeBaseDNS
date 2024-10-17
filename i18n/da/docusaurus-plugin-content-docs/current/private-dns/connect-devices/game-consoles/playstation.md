@@ -16,21 +16,21 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 1. Tænd PS4/PS5-konsollen og log ind på brugerkontoen.
 2. Fra startskærmen vælges tandhjulsikonet i øverste række.
 3. Vælg _Netværk_ i menuen _Indstillinger_.
-4. Select _Set Up Internet Connection_.
-5. Choose _Use Wi-Fi_ or _Use a LAN Cable_, depending on your network setup.
-6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
-7. For _DHCP Host Name_, select _Do Not Specify_.
-8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+4. Vælg _Opsæt internetforbindelse_.
+5. Vælg _Brug Wi-Fi_ eller _Brug LAN-kabel_ alt efter, hvad der er relevant.
+6. Vælg _Tilpasset_ og dernæst _Automatisk_ for _IP-adresseindstillinger_.
+7. For _DHCP-værtsnavn_ vælges _Angiv ikke_.
+8. For _DNS-indstillinger_ vælges _Manuel_.
+9. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
    - `94.140.14.49`
    - `94.140.14.59`
-10. Select _Next_ to continue.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
-14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+10. Vælg _Næste_ for at fortsætte.
+11. På skærmen _MTU-indstillinger_ vælges _Automatisk_.
+12. På skærmen _Proxyserver_ vælges _Anvend ikke_.
+13. Vælg _Test internetforbindelse_ for at teste de nye DNS-indstillinger.
+14. Når testen er færdig, og beskeden "Internetforbindelse: Etableret" ses, gem indstillingerne.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Brug af en linket IP (eller dedikeret IP, hvis man har et Team-abonnement) vil være at foretrække:
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

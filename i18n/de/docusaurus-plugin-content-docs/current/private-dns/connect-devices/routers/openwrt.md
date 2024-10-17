@@ -3,18 +3,18 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+OpenWRT-Router verwenden ein quelloffenes, Linux-basiertes Betriebssystem, das die Flexibilität bietet, Router und Gateways gemäß den Nutzer-Einstellungen zu konfigurieren. Sie unterstützen auch das Hinzufügen von verschlüsselten DNS-Servern, was bedeutet, dass Sie Privates AdGuard DNS auf Ihrem Gerät konfigurieren können.
 
 ## DNS-over-HTTPS konfigurieren
 
-- **Befehlszeilen-Anweisungen**. Installieren Sie die erforderlichen Pakete. DNS encryption should be enabled automatically.
+- **Befehlszeilen-Anweisungen**. Installieren Sie die erforderlichen Pakete. Die DNS-Verschlüsselung sollte automatisch aktiviert werden.
 
   ```# Install packages
-  1. opkg update
+  1. opkg update.
   2. opkg install https-dns-proxy
 
   ```
-- **Weboberfläche**. If you want to manage the settings using web interface, install the necessary packages.
+- **Weboberfläche**. Wenn Sie die Einstellungen über eine Weboberfläche verwalten möchten, installieren Sie die erforderlichen Pakete.
 
   ```# Install packages
   1. opkg update
@@ -22,9 +22,9 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-dns-proxy.
+Navigieren Sie zu _LuCI_ → _Dienste_ → _HTTPS DNS Proxy_, um den HTTPS-DNS-Proxy zu konfigurieren.
 
-- **DoH-Anbieter konfigurieren**. https-dns-proxy ist standardmäßig mit Google DNS und Cloudflare DNS konfiguriert. Sie müssen es auf AdGuard DNS-over-HTTPS ändern. Specify several resolvers to improve fault tolerance.
+- **DoH-Anbieter konfigurieren**. https-dns-proxy ist standardmäßig mit Google DNS und Cloudflare DNS konfiguriert. Sie müssen es auf AdGuard DNS-over-HTTPS ändern. Geben Sie mehrere Resolver an, um die Fehlerresistenz zu verbessern.
 
   ```# Configure DoH provider
   1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,16 +39,16 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
 
 ## DNS-over-TLS konfigurieren
 
-- **Befehlszeilen-Anweisungen**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **Befehlszeilen-Anweisungen**. [Deaktivieren](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Sie die DNS-Rolle von Dnsmasq oder entfernen Sie sie komplett, indem Sie optional [ihre DHCP-Rolle](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) mit odhcpd ersetzen.
 
   ```# Install packages
   1. opkg update
   2. opkg install unbound-daemon ca-certificates
   ```
 
-LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
+LAN-Clients und das lokale System sollten Unbound als primären Resolver verwenden, vorausgesetzt, Dnsmasq ist deaktiviert.
 
-- **Weboberfläche**. If you want to manage the settings using web interface, install the necessary packages.
+- **Weboberfläche**. Wenn Sie die Einstellungen über eine Weboberfläche verwalten möchten, installieren Sie die erforderlichen Pakete.
 
   ```# Install packages
   1. opkg update
@@ -56,7 +56,7 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
+Navigieren Sie zu _LuCI_ → _Dienste_ → _Rekursives DNS_, um Unbound zu konfigurieren.
 
 - **AdGuard DNS-over-TLS konfigurieren**.
 
@@ -75,21 +75,21 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
   13. /etc/init.d/unbound restart
   ```
 
-## Use your router admin panel
+## Administrationsoberfläche Ihres Routers verwenden
 
 Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
 
 1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
 2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
-3. Open _Network_ → _Interfaces_.
-4. Select your Wi-Fi network or wired connection.
-5. Scroll down to IPv4 address or IPv6 address, depending on the IP version you want to configure.
-6. Under _Use custom DNS servers_, enter the IP addresses of the DNS servers you want to use. You can enter multiple DNS servers, separated by spaces or commas:
+3. Öffnen Sie _Netzwerk_ → _Schnittstellen_.
+4. Wählen Sie Ihr WLAN-Netzwerk oder Ihre Kabelverbindung.
+5. Blättern Sie nach unten zu IPv4-Adresse oder IPv6-Adresse, je nach der IP-Version, die Sie konfigurieren möchten.
+6. Unter _Benutzerdefinierte DNS-Server verwenden_, geben Sie die IP-Adressen der DNS-Server ein, die Sie verwenden möchten. Sie können mehrere DNS-Server eingeben, getrennt durch Leerzeichen oder Kommas:
    - IPv4: `94.140.14.49` und `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
-7. Optionally, you can enable DNS forwarding if you want the router to act as a DNS forwarder for devices on your network.
+7. Optional können Sie die DNS-Weiterleitung aktivieren, wenn Sie möchten, dass der Router als DNS-Weiterleitung für Geräte in Ihrem Netzwerk fungiert.
 8. Speichern Sie die Einstellungen.
-9. Link your IP (or your dedicated IP if you have a Team subscription).
+9. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

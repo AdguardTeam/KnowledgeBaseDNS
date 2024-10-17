@@ -5,7 +5,7 @@ sidebar_position: 4
 
 To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
+1. 进入「_仪表盘_」并点击「_连接新设备_」。
 2. In the drop-down menu _Device type_, select Mac.
 3. Name the device.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
@@ -15,7 +15,7 @@ To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
 The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
 
 1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
+2. 打开应用程序。
 3. Click the icon in the top right corner.
    ![Protection icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
 4. Select _Preferences..._.
@@ -34,9 +34,9 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 10. Your newly created server should appear at the bottom of the list.
     ![Providers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
-## Use AdGuard VPN
+## 使用 AdGuard VPN
 
 Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
 
@@ -47,10 +47,10 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 4. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ text field. If you are not sure which one to prefer, select DNS-over-HTTPS.
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
 5. Click _Save and select_.
-6. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+6. 您所添加的 DNS 服务器将显示在「_自定义 DNS 服务器_」列表的底部。
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
 ## Use a configuration profile
 
@@ -71,11 +71,11 @@ If you are using a VPN, the configuration profile will be ignored.
    ![Install \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Enter the admin password and click _OK_.
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
-## Configure plain DNS
+## 配置无加密的 DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

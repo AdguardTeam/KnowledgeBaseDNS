@@ -1,13 +1,13 @@
 ---
-title: Statistics and Query log
+title: Статистика и журнал запросов
 sidebar_position: 1
 ---
 
-One of the purposes of using AdGuard DNS is to have a clear understanding of what your devices are doing and what they are connecting to. Without this clarity, there's no way to monitor the activity of your devices.
+Одной из целей использования AdGuard DNS является получение чёткого понимания того, что делают ваши устройства и к чему они подключаются. Без этого невозможно контролировать активность ваших устройств.
 
-AdGuard DNS provides a wide range of useful tools for monitoring queries:
+AdGuard DNS предоставляет широкий диапазон полезных инструментов для мониторинга запросов:
 
-- [Statistics](/private-dns/statistics-and-log/statistics.md)
-- [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
-- [Companies](/private-dns/statistics-and-log/companies.md)
-- [Query log](/private-dns/statistics-and-log/query-log.md)
+- [Статистика](/private-dns/statistics-and-log/statistics.md)
+- [Назначение трафика](/private-dns/statistics-and-log/traffic-destination.md)
+- [Компании](/private-dns/statistics-and-log/companies.md)
+- [Журнал запросов](/private-dns/statistics-and-log/query-log.md)

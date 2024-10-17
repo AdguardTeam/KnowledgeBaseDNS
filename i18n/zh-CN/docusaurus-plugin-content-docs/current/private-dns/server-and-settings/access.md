@@ -1,15 +1,15 @@
 ---
-title: Access settings
+title: 权限设置
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+通过配置权限设置，可以保护 AdGuard DNS 免受未经授权的访问。 例如，您使用的是一个专用的 IPv4 地址，攻击者通过嗅探器识别了它，并向它发送大量请求。 没问题，只需将麻烦的域名或 IP 地址添加到列表中，它将不再打扰您！
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+被拦截的请求不会显示在查询日志中，也不会计入总请求限制。
 
-## How to set it up
+## 设置方式
 
-### Allowed clients
+### 允许的客户端
 
 This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
 
@@ -27,6 +27,6 @@ Before applying the access settings, make sure you're not blocking your own IP a
 
 Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![其他设置 \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+要在查询日志中显示与 DNS 请求相关联的 IP 地址，请选择「_记录 IP 地址_」复选框。 为此，请打开「_服务器设置_」→「_高级设置_」。

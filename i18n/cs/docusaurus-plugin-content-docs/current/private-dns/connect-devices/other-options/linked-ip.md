@@ -87,7 +87,7 @@ On macOS and Linux, the easiest way is to use `cron`:
    - This job will run every 5 minutes
 3. Save crontab.
 
-:::note Important
+:::note Důležité
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.

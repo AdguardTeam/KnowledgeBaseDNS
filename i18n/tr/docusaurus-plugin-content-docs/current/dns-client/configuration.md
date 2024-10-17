@@ -26,13 +26,13 @@ Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örne�
 
   **Örnek:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
+- `size`: İnsan tarafından okunabilir veri boyutu olarak DNS sonuç önbelleğinin maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Example:** `128 MB`
+  **Örnek:** `128 MB`
 
 - `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Example:** `4 MB`
+  **Örnek:** `4 MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 - `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
 
-  **Example:** `2 s`
+  **Örnek:** `2 s`
 
 ### `upstream` {#dns-upstream}
 
@@ -82,7 +82,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
       **Örnek:** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. Alt ağ maskesinin dışında önemli bitler bulunmamalıdır.
 
       **Örnek:** `'192.0.2.0/24'`
 
@@ -133,13 +133,13 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. Aşağıdaki özelliklere sahiptir:
+`debug` nesnesi hata ayıklama özelliklerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 ### `pprof` {#debug-pprof}
 
 Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: localhost üzerinde hata ayıklama HTTP istekleri için dinlenecek bağlantı noktası.
 
   **Örnek:** `6060`
 
@@ -153,11 +153,11 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
 `log` nesnesi günlüğe kaydını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `output`: The output to which logs are written.
+- `output`: Günlüklerin yazılacağı çıktı.
 
   :::note Not
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Sistem günlüğüne yazılan günlük girdileri `text` biçimindedir (aşağıya bakın) ve sistem zaman damgasını kullanır.
 
   :::
 
@@ -165,7 +165,7 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
   - `syslog`, Linux için syslog ve Windows için Olay Görüntüleyicisi olan platforma özgü sistem günlüğünün kullanıldığı anlamına gelir.
 
-  - `stdout` for standard output stream.
+  - Standart çıktı akışı için `stdout`.
 
   - Standart hata akışı için `stderr`.
 

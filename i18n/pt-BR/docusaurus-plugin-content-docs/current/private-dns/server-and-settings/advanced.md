@@ -24,8 +24,8 @@ Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard 
 
 ## Block Firefox canary domain
 
-Prevents Firefox from switching to the DoH resolver from its settings when AdGuard DNS is configured system-wide.
+Impede que o Firefox alterne para o resolvedor DoH de suas configurações quando o AdGuard DNS é configurado em todo o sistema.
 
-## Log IP addresses
+## Registrar endereços IP
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+Por padrão, o AdGuard DNS não registra endereços IP de solicitações DNS recebidas. Se você ativar esta configuração, os endereços IP serão registrados e exibidos no registro de consultas.

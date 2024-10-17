@@ -7,42 +7,42 @@ Keenetic-Router sind bekannt für ihre Stabilität und flexible Konfigurationen 
 
 ## DNS-over-HTTPS konfigurieren
 
-1. Öffnen Sie das Router-Admin-Panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
-9. Click _Save_.
+1. Öffnen Sie das Router-Admin-Panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
+2. Drücken Sie die Menütaste unten auf dem Bildschirm und wählen Sie _Verwaltung_.
+3. Öffnen Sie _Systemeinstellungen_.
+4. Drücken Sie _Komponentenoptionen_ → _Systemkomponentenoptionen_.
+5. Wählen Sie unter _Dienstprogramme und Dienste_ den DNS-over-HTTPS-Proxy aus und installieren Sie ihn.
+6. Wechseln Sie zu _Menü_ → _Netzwerkregeln_ → _Internetsicherheit_.
+7. Navigieren Sie zu DNS-over-HTTPS-Servern und klicken Sie auf _DNS-over-HTTPS-Server hinzufügen_.
+8. Geben Sie die URL des Private AdGuard DNS-Servers in das Feld `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` ein.
+9. Klicken Sie auf _Speichern_.
 
 ## DNS-over-TLS konfigurieren
 
-1. Öffnen Sie das Router-Admin-Panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
-9. Click _Save_.
+1. Öffnen Sie das Router-Admin-Panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
+2. Drücken Sie die Menütaste unten auf dem Bildschirm und wählen Sie _Verwaltung_.
+3. Öffnen Sie _Systemeinstellungen_.
+4. Drücken Sie _Komponentenoptionen_ → _Systemkomponentenoptionen_.
+5. Wählen Sie unter _Dienstprogramme und Dienste_ den DNS-over-HTTPS-Proxy aus und installieren Sie ihn.
+6. Wechseln Sie zu _Menü_ → _Netzwerkregeln_ → _Internetsicherheit_.
+7. Navigieren Sie zu DNS-over-HTTPS-Servern und klicken Sie auf _DNS-over-HTTPS-Server hinzufügen_.
+8. Geben Sie die URL des Privaten AdGuard DNS-Servers in das Feld `tls://*********.d.adguard-dns.com` ein.
+9. Klicken Sie auf _Speichern_.
 
-## Use your router admin panel
+## Administrationsoberfläche Ihres Routers verwenden
 
 Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
 
 1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
 2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
-3. Open _Internet_ or _Home Network_.
-4. Select _WAN_ or _Internet_.
-5. Select _DNS_ or _DNS Settings_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
+3. Öffnen Sie _Internet_ oder _Heimnetzwerk_.
+4. Wählen Sie _WAN_ oder _Internet_.
+5. Wählen Sie _DNS_ oder _DNS-Einstellungen_.
+6. Wählen Sie _Manuelles DNS_. Wählen Sie _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
    - IPv4: `94.140.14.49` und `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 7. Speichern Sie die Einstellungen.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+8. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

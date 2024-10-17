@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### Как подключить устройства к AdGuard DNS
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+AdGuard DNS очень гибок и может быть настроен на различных устройствах, включая планшеты, ПК, роутеры и игровые консоли. Этот раздел предоставляет подробную инструкцию о том, как подключить ваше устройство к AdGuard DNS.
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[Как подключить устройства к AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### Серверы и настройки
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+Этот раздел объясняет, что такое «сервер» в AdGuard DNS и какие настройки доступны. Настройки позволяют настроить, как AdGuard DNS реагирует на заблокированные домены, и управлять доступом к вашему DNS серверу.
 
-[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+[Серверы и настройки](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### Как настроить фильтрацию
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+В этом разделе мы описываем ряд настроек, которые позволяют тонко настроить функциональность AdGuard DNS. С помощью чёрных списков, пользовательских правил, родительского контроля и фильтров безопасности вы можете настроить фильтрацию в соответствии с вашими потребностями.
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[Как настроить фильтрацию](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### Статистика и журнал запросов
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+Статистика и журнал запросов предоставляют представление о активности ваших устройств. Во вкладке *Статистика* вы можете увидеть сводку по DNS-запросам, сделанным устройствами, подключёнными к вашему приватному AdGuard DNS. В журнале запросов вы можете посмотреть информацию по каждому запросу и также сортировать запросы по статусу, типу, компании, устройству, времени и стране.
 
-[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
+[Статистика и журнал запросов](/private-dns/statistics-and-log/statistics.md)

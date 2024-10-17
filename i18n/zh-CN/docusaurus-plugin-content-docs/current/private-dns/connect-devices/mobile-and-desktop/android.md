@@ -3,77 +3,77 @@ title: Android
 sidebar_position: 2
 ---
 
-To connect an Android device to AdGuard DNS, first add it to _Dashboard_:
+要将 Android 设备连接至 AdGuard DNS，请将其添加到「_仪表盘_」：
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Android.
-3. Name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
+1. 进入「_仪表盘_」点击「_连接新设备_」。
+2. 在下拉菜单的「_设备类型_」中选择 Android。
+3. 命名设备。
+   ![连接设备 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard 广告拦截程序（付费）
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Android device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 AdGuard DNS 是一个理想的选择。 您可以选择多种加密协议。 除了 DNS 过滤，还可以获得一款出色的广告拦截程序。它在整个系统上屏蔽广告。
 
-1. Install [the AdGuard app](https://adguard.com/adguard-android/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
-3. Tap the shield icon in the menu bar at the bottom of the screen.
-   ![Shield icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
-4. Tap _DNS protection_.
-   ![DNS protection \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
-5. Select _DNS server_.
-   ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
-6. Scroll down to _Custom servers_ and tap _Add DNS server_.
-   ![Add DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _Server adresses_ field in the app. If you are not sure which one to use, select _DNS-over-HTTPS_.
+1. 在要连接到 AdGuard DNS 的设备上安装 [AdGuard 应用程序] (https://adguard.com/adguard-android/overview.html)。
+2. 打开应用程序。
+3. 点击屏幕底部菜单栏中的盾牌图标。
+   ![盾牌图标 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
+4. 点击「_DNS 保护_」。
+   ![DNS 保护 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
+5. 选择「_DNS 服务器_」。
+   ![DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
+6. 向下滚动至「_自定义服务器_」，然后点击「_添加 DNS 服务器_」。
+   ![添加 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
+7. 复制以下 DNS 地址之一，并将其粘贴到应用程序的「_服务器地址_」字段中。 如果不确定使用哪个地址，请选择「_DNS-over-HTTPS_」。
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
-8. Tap _Add_.
-9. The DNS server you’ve added will appear at the bottom of the _Custom servers_ list. To select it, tap its name or the radio button next to it.
-   ![Select DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
-10. Tap _Save and select_.
-    ![Save and select \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
+   ![自定义 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
+8. 点击「_添加_」。
+9. 您添加的 DNS 服务器将显示在「_自定义服务器_」列表的底部。 要选择它，请点击它的名称或旁边的单选按钮。
+   ![选择 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
+10. 点击「_保存并选择_」。
+    ![保存并选择 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
-## Use AdGuard VPN
+## AdGuard VPN
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
+并不是所有的 VPN 都支持加密 DNS。 然而，我们的 VPN 支持加密 DNS，因此，如果要同时使用 VPN 和私人 DNS，AdGuard VPN 是您的理想选择。
 
-1. Install [the AdGuard VPN app](https://adguard-vpn.com/android/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
-3. In the menu bar at the bottom of the screen, tap the gear icon.
-   ![Gear icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step3.png)
-4. Open _App settings_.
-   ![App settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
-5. Select _DNS server_.
-   ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
-6. Scroll down and tap _Add a custom DNS server_.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS servers adresses_ field in the app. If you are not sure which one to use, select DNS-over-HTTPS.
+1. 在想要连接到 AdGuard DNS 的设备上安装 [AdGuard VPN 应用程序](https://adguard-vpn.com/android/overview.html)。
+2. 打开应用程序。
+3. 在屏幕底部的菜单栏中，点击齿轮图标。
+   ![齿轮图标 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step3.png)
+4. 打开「_应用程序设置_」。
+   ![应用程序设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
+5. 选择「_DNS 服务器_」。
+   ![DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
+6. 向下滚动并点击「_添加自定义 DNS 服务器_」。
+   ![添加 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
+7. 复制以下 DNS 地址之一，并将其粘贴到应用程序的「_DNS 服务器地址_」字段中。 如果不确定使用哪个地址，请选择「DNS-over-HTTPS」。
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
-8. Tap _Save and select_.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+   ![自定义 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
+8. 点击「_保存并选择_」。
+   ![添加 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
+9. 您所添加的 DNS 服务器将显示在「_自定义 DNS 服务器_」列表的底部。
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
-## Configure Private DNS manually
+## 手动配置私人 DNS
 
-You can configure your DNS server in your device settings. Please note that Android devices only support DNS-over-TLS protocol.
+用户可以在设备设置中配置 DNS 服务器。 请注意，Android 设备仅支持 DNS-over-TLS 协议。
 
-1. Go to _Settings_ → _Wi-Fi & Internet_ (or _Network and Internet_, depending on your OS version).
-   ![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
-2. Select _Advanced_ and tap _Private DNS_.
-   ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
-3. Select the _Private DNS provider hostname_ option and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`.
-4. Tap _Save_.
-   ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   All done! Your device is successfully connected to AdGuard DNS.
+1. 前往「_设置_」→「_Wi-Fi 和互联网_」（或「_网络和互联网_」，取决于操作系统版本）。
+   ![设置 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
+2. 选择「_高级_」并点击「_私人 DNS_」。
+   ![私人 DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
+3. 选择「_私人 DNS 提供商主机名_」并输入您个人服务器的地址：`{Your_Device_ID}.d.adguard-dns.com`。
+4. 点击「_保存_」。
+   ![私人 DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
+   完成！ 您的设备已成功连接到 AdGuard DNS。
 
-## Configure plain DNS
+## 配置无加密的 DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

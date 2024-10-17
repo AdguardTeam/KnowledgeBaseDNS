@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: Registro de alterações
 sidebar_position: 3
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,75 +10,75 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/CHANGELOG.md
 -->
 
-This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
+Este artigo contém o registro de alterações para a [API do AdGuard DNS](private-dns/api/overview.md).
 
 ## v1.9
 
-_Released on July 11, 2024_
+_Lançado em 11 de julho de 2024_
 
-- Added automatic device connection functionality:
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
-  - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+- Adicionada funcionalidade de conexão automática de dispositivos:
+  - Nova configuração do servidor DNS — `auto_connect_devices_enabled`, permitindo aprovação para dispositivos de conexão automática através de um tipo de link específico
+  - Novo campo em Dispositivo — `auto_device`, indicando que o dispositivo está conectado automaticamente
+- Substituído `int` por `long` para `queries` em CategoryQueriesStats, para `used` em AccountLimits, e para `blocked` e `queries` em QueriesStats
 
 ## v1.8
 
-_Released on April 20, 2024_
+_Lançado em 20 de abril de 2024_
 
-- Added support for DNS-over-HTTPS with authentication:
-  - New operation — reset DNS-over-HTTPS password for device
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+- Adicionada suporte para DNS-over-HTTPS com autenticação:
+  - Nova operação — redefinir senha do DNS-over-HTTPS para dispositivo
+  - Nova configuração do dispositivo — `detect_doh_auth_only`. Desativa todos os métodos de conexão DNS, exceto DNS-over-HTTPS com autenticação
+  - Novo campo em DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indica a URL a ser usada ao conectar usando DNS-over-HTTPS com autenticação
 
 ## v1.7
 
-_Released on March 11, 2024_
+_Lançado em 11 de março de 2024_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
-- Added new limits to Account limits:
-  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+- Adicionada funcionalidade dedicada de endereços IPv4:
+  - Endereços IPv4 dedicados agora podem ser usados em dispositivos para configuração do servidor DNS
+  - O endereço IPv4 dedicado agora está associado ao dispositivo ao qual está vinculado, para que as consultas feitas a esse endereço sejam registradas para esse dispositivo
+- Novas operações adicionadas:
+  - Listar todos os endereços IPv4 dedicados disponíveis
+  - Alocar novo endereço IPv4 dedicado
+  - Vincular um endereço IPv4 disponível a um dispositivo
+  - Desvincular um endereço IPv4 de um dispositivo
+  - Solicitar informações sobre endereços dedicados associados a um dispositivo
+- Adicionados novos limites aos limites da conta:
+  - `dedicated_ipv4` fornece informações sobre a quantidade de endereços IPv4 dedicados já alocados, bem como o limite sobre eles
+- Removido campo obsoleto de DNSServerSettings:
   - `safebrowsing_enabled`
 
 ## v1.6
 
-_Released on January 22, 2024_
+_Lançado em 22 de janeiro de 2024_
 
-- Added new Access settings section for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
+- Adicionada uma nova seção de configurações de Acesso para perfis DNS (`access_settings`). Personalizando esses campos, você poderá proteger seu servidor AdGuard DNS de acessos não autorizados:
 
-  - `allowed_clients` — here you can specify which clients can use your DNS server. This field will have priority over the `blocked_clients` field
-  - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
-  - `blocked_domain_rules` — here you can specify which domains are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
+  - `allowed_clients` — aqui você pode especificar quais clientes podem usar seu servidor DNS. Este campo terá prioridade sobre o campo `blocked_clients`
+  - `blocked_clients` — aqui você pode especificar quais clientes não estão autorizados a usar seu servidor DNS
+  - `blocked_domain_rules` — aqui você pode especificar quais domínios não estão autorizados a acessar seu servidor DNS, bem como definir tais domínios com regras de wildcard e filtragem DNS
 
-- Added new limits to Account limits:
+- Adicionados novos limites aos limites da conta:
 
-  - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
-  - `user_rules` shows the amount of created user rules, as well as the limit on them
+  - `access_rules` fornece a soma dos valores atualmente usados de `blocked_clients` e `blocked_domain_rules`, assim como o limite sobre as regras de acesso
+  - `user_rules` mostra a quantidade de regras de usuário criadas, assim como o limite delas
 
-- Added a new `ip_log_enabled` setting to log client IP addresses and domains
+- Adicionada uma nova configuração `ip_log_enabled` para registrar endereços IP de clientes e domínios
 
-- Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
+- Adicionado novo código de erro `FIELD_REACHED_LIMIT` para indicar quando os limites foram alcançados:
 
-  - For the total number of `blocked_clients` and `blocked_domain_rules` in access settings
-  - For `rules` in custom user rules settings
+  - Para o número total de `blocked_clients` e `blocked_domain_rules` nas configurações de acesso
+  - Para `rules` nas configurações de regras de usuário personalizadas
 
 ## v1.5
 
-_Released on June 16, 2023_
+_Lançado em 16 de junho de 2023_
 
-- Added a new `block_nrd` setting and grouped all security-related settings in one place
+- Adicionada uma nova configuração `block_nrd` e agrupadas todas as configurações relacionadas à segurança em um só lugar
 
-### Model for safebrowsing settings changed
+### Modelo para configurações de navegação segura alterado
 
-From:
+De:
 
 ```json
 {
@@ -86,7 +86,7 @@ From:
 }
 ```
 
-To:
+Para:
 
 ```json
 {
@@ -96,26 +96,26 @@ To:
 }
 ```
 
-where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
+onde `enabled` agora controla todas as configurações do grupo, `block_dangerous_domains` é o campo do modelo anterior `enabled`, e `block_nrd` é uma configuração que bloqueia domínios recém-registrados.
 
-### Model for saving server settings changed
+### Modelo para salvar configurações do servidor alterado
 
-From:
+De:
 
 ```json
 {
-  "protection_enabled" : true,
-  "safebrowsing_enabled" : true,
+  "protection_enabled": true,
+  "safebrowsing_enabled": true,
   ..
 }
 ```
 
-to:
+para:
 
 ```json
 {
-  "protection_enabled" : true,
-  "safebrowsing_settings" : {
+  "protection_enabled": true,
+  "safebrowsing_settings": {
      "enabled": true,
      "block_dangerous_domains": true,
      "block_nrd": false
@@ -124,40 +124,40 @@ to:
 }
 ```
 
-here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
+aqui um novo campo `safebrowsing_settings` é utilizado em vez do obsoleto `safebrowsing_enabled`, cujo valor é armazenado em `block_dangerous_domains`.
 
 ## v1.4
 
-_Released on March 29, 2023_
+_Lançado em 29 de março de 2023_
 
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
+- Adicionada opção configurável para bloquear resposta: padrão (0.0.0.0), REFUSED, NXDOMAIN ou endereço IP customizado
 
 ## v1.3
 
-_Released on December 13, 2022_
+_Lançado em 13 de dezembro de 2022_
 
-- Added method to get account limits
+- Adicionado método para obter limites da conta
 
 ## v1.2
 
-_Released on October 14, 2022_
+_Lançado em 14 de outubro de 2022_
 
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
+- Adicionado novos tipos de protocolo DNS e DNSCRYPT. Desqualificando o PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP e DNSCRYPT_UDP, que serão removidos posteriormente
 
 ## v1.1
 
-_Released on July 7, 2022_
+_Lançado em 7 de julho de 2022_
 
-- Added methods to retrieve statistics by time, domains, companies and devices
-- Added method for updating device settings
-- Fixed required fields definition
+- Adicionados métodos para recuperar estatísticas por tempo, domínios, empresas e dispositivos
+- Adicionado método para atualizar configurações de dispositivo
+- Definido os campos obrigatórios
 
 ## v1.0
 
-_Released on February 22, 2022_
+_Lançada em 22 de fevereiro de 2022_
 
-- Added authentication
-- CRUD operations with devices and DNS servers
-- Query log
-- Downloading DoH and DoT .mobileconfig
-- Filter lists and web services
+- Autenticação adicionada
+- Operações CRUD com dispositivos e servidores DNS
+- Registro de consultas
+- Baixando DoH e DoT .mobileconfig
+- Listas de filtros e serviços web

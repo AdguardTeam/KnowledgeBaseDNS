@@ -14,13 +14,13 @@ Here you can select the DNS response for the blocked request:
 - **NXDOMAIN**: Respond with NXDOMAIN code
 - **Custom IP**: Respond with a manually set IP address
 
-## TTL (Time-To-Live)
+## Durée de vie (TTL)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. If the TTL value is high, recently unblocked requests may still look blocked for a while. If TTL is 0, the device does not cache responses.
+Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. Si la valeur TTL est élevée, les requêtes récemment débloquées peuvent sembler encore bloquées pendant un certain temps. Si le TTL est 0, le dispositif ne met pas les réponses en cache.
 
 ## Block access to iCloud Private Relay
 
-Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard DNS cannot protect them.
+Les appareils qui utilisent le relais privé iCloud peuvent ignorer leurs paramètres DNS, donc AdGuard DNS ne peut pas les protéger.
 
 ## Block Firefox canary domain
 
@@ -28,4 +28,4 @@ Prevents Firefox from switching to the DoH resolver from its settings when AdGua
 
 ## Log IP addresses
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. Si vous activez ce paramètre, les adresses IP seront journalisées et affichées dans le journal des requêtes.

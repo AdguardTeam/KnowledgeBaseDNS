@@ -3,34 +3,34 @@ title: Forespørgselslog
 sidebar_position: 5
 ---
 
-## What is Query log
+## Hvad er Forespørgselslog
 
-Query log is a useful tool for working with AdGuard DNS.
+Forespørgselslog er et nyttigt værktøj ved arbejde med AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Man kan se alle forespørgsler, som er foretaget af ens enheder i den valgte periode og sortere forespørgsler efter status, type, firma, enhed, land.
 
-## How to use it
+## Sådan bruges den
 
-Here's what you can see and what you can do in the _Query log_.
+Her er, hvad man kan se, og hvad man kan foretage sig i _Forespørgselslog_.
 
-### Detailed information on requests
+### Detaljeret information om forespørgsler
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Forespørgselsinfo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Blokering og afblokering af domæner
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+Forespørgsler kan blokeres og afblokeres uden at forlade loggen vha. de tilgængelige værktøjer.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Afblokér domæne \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Sortering af forespørgsler
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Man kan vælge status, type, firma, enhed og tidsinterval for den forespørgsel, man er interesseret i.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![Sortering af forespørgsler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Deaktivering af forespørgselslogning
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Ønskes det, kan man helt deaktivere logning i indstillingerne (husk dog, at statistikker ligeledes deaktiveres).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Logning \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

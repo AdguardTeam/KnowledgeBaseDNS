@@ -5,9 +5,9 @@ sidebar_position: 3
 
 ## What linked IPs are and why they are useful
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
+Tous les appareils ne peuvent pas prendre en charge les protocoles DNS chiffrés. In this case, users should consider setting up unencrypted DNS.
 
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Vous pouvez utiliser une **adresse IP liée** : dans cette configuration, le service considérera toutes les requêtes DNS standard provenant de cette adresse IP et pour cet appareil spécifique. The only requirement for a linked IP address is that it must be a residential IP.
 
 :::note
 
@@ -31,7 +31,7 @@ The following instructions explain how to connect to the device via **linking IP
 
 ## Dynamic DNS: Why it is useful
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Chaque fois qu'un appareil se connecte au réseau, il obtient une nouvelle adresse IP dynamique. Lorsqu'un appareil se déconnecte, le serveur DHCP réaffecte des adresses IP aux appareils restants. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 
@@ -53,7 +53,7 @@ This way, you won’t have to manually update the associated IP address each tim
 2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 3. Enter the domain in your router settings and sync the configurations.
 4. Go to the Linked IP settings to connect the address, then navigate to _Advanced Settings_ and click _Configure DDNS_.
-5. Input the domain you registered earlier and click _Configure DDNS_.
+5. Saisissez le domaine que vous avez enregistré précédemment et cliquez sur _Configurer DDNS_.
    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you've successfully set up DDNS!
@@ -91,6 +91,6 @@ On macOS and Linux, the easiest way is to use `cron`:
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- Si une logique ou un traitement des résultats de la requête plus complexe est nécessaire, envisagez d'utiliser des scripts (par exemple, Bash, Python) en conjonction avec un planificateur de tâches ou cron.
 
 :::

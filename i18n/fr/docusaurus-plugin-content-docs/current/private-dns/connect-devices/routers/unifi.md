@@ -5,9 +5,9 @@ sidebar_position: 10
 
 The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. Unfortunately, it does not support encrypted DNS, but it is great for setting up AdGuard DNS via linked IP.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
 1. Log in to the Ubiquiti UniFi controller.
 2. Go to _Settings_ → _Networks_.
@@ -25,5 +25,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 10. Save the settings.
 11. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [IPs dédiées](private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)

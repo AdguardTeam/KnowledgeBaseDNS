@@ -23,7 +23,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
 The following instructions explain how to connect to the device via **linking IP address**:
 
-1. Open Dashboard.
+1. Abra a Dashboard.
 2. Add a new device or open the settings of a previously connected device.
 3. Go to _Use DNS server addresses_.
 4. Open _Plain DNS server addresses_ and connect the linked IP.
@@ -60,37 +60,37 @@ All done, you've successfully set up DDNS!
 
 ## Automation of linked IP update via script
 
-### On Windows
+### No Windows
 
-The easiest way is to use the Task Scheduler:
+A maneira mais fácil é usar o Task Scheduler:
 
-1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
-   - Select _Run Program_ as the action.
-2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
+1. Crie uma tarefa:
+   - Abra o Task Scheduler.
+   - Crie uma nova tarefa.
+   - Defina o gatilho para executar a cada 5 minutos.
+   - Selecione _Executar Programa_ como a ação.
+2. Selecione um programa:
+   - No campo _Programa ou Script_, digite \`powershell'
+   - No campo _Adicionar Argumentos_, digite:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
-3. Save the task.
+3. Salve a tarefa.
 
-### On macOS and Linux
+### No macOS e Linux
 
-On macOS and Linux, the easiest way is to use `cron`:
+No macOS e Linux, a maneira mais fácil é usar `cron`:
 
-1. Open crontab:
-   - In the terminal, run `crontab -e`.
-2. Add a task:
-   - Insert the following line:
+1. Abra o crontab:
+   - No terminal, execute `crontab -e`.
+2. Adicione uma tarefa:
+   - Insira a seguinte linha:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - This job will run every 5 minutes
-3. Save crontab.
+   - Este trabalho será executado a cada 5 minutos
+3. Salve o crontab.
 
-:::note Important
+:::note Importante
 
-- Make sure you have `curl` installed on macOS and Linux.
-- Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- Certifique-se de ter `curl` instalado no macOS e Linux.
+- Lembre-se de copiar o endereço das configurações e substituir o `ServerID` e `UniqueKey`.
+- Se for necessária uma lógica mais complexa ou processamento dos resultados da consulta, considere usar scripts (por exemplo, Bash, Python) em conjunto com um agendador de tarefas ou cron.
 
 :::

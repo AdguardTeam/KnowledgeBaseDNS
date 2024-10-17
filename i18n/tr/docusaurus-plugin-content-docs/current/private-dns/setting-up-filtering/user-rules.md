@@ -13,13 +13,13 @@ To make your filtering more flexible and better suited to your preferences, chec
 
 Kullanıcı kurallarını ayarlamak için:
 
-1. Navigate to the _Dashboard_.
+1. _Pano_ öğesine gidin.
 
 2. _Sunucular_ bölümüne gidin.
 
 3. Gerekli sunucuyu seçin.
 
-4. Click the _User rules_ option.
+4. _Kullanıcı kuralları_ seçeneğine tıklayın.
 
 5. You'll find several options for adding user rules.
 

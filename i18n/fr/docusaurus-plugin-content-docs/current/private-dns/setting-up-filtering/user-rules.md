@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## What is it and why you need it
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+User rules are the same filtering rules as those used in common blocklists. Vous pouvez personnaliser le filtrage des sites Web selon vos besoins en ajoutant des règles manuellement ou en les important depuis une liste prédéfinie.
 
 To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
 
@@ -27,4 +27,4 @@ To set up user rules:
      ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
    - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Cette fonctionnalité vous permet de [rediriger une requête vers un autre domaine en remplaçant le contenu de la requête DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

@@ -3,66 +3,66 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+Чтобы подключить iOS-устройство к AdGuard DNS, сначала добавьте его на _Панель управления_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Windows.
-3. Name the device.
-   ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+1. Перейдите в раздел _Панель управления_ и нажмите _Подключить новое устройство_.
+2. В выпадающем меню _Тип устройства_ выберите Windows.
+3. Назовите устройство.
+   ![Подключение устройства \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## Используйте Блокировщик рекламы AdGuard (платная опция)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+Приложение AdGuard позволяет использовать зашифрованный DNS, что делает его идеальным для настройки AdGuard DNS на вашем устройстве Windows. Вы можете выбрать различные протоколы шифрования. Вместе с фильтрацией DNS вы также получите отличный блокировщик рекламы, который работает во всей системе.
 
-1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
-3. Click _Settings_ at the top of the app's home screen.
-   ![Settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
-4. Select the _DNS Protection_ tab from the menu on the left.
-   ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
-5. Click your currently selected DNS server.
-   ![DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
-6. Scroll down and click _Add a custom DNS server_.
-   ![Add a custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
-7. In the DNS upstreams field, paste one of the following addresses. If you’re not sure which one to prefer, choose DNS-over-HTTPS.
-   ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
-   ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
-8. Click _Save and select_.
-   ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
-   ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
+1. [Установите приложение](https://adguard.com/adguard-windows/overview.html) на устройство, которое хотите подключить к AdGuard DNS.
+2. Откройте приложение.
+3. Нажмите _Настройки_ в верхней части главного экрана приложения.
+   ![Настройки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
+4. Выберите вкладку _DNS-защита_ в меню слева.
+   ![DNS-защита \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
+5. Нажмите на выбранный DNS-сервер.
+   ![DNS-сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
+6. Прокрутите вниз и нажмите _Добавить пользовательский DNS-сервер_.
+   ![Добавить пользовательский DNS-сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
+7. В поле DNS upstreams вставьте один из следующих адресов. Если не уверены, какой адрес предпочтительнее, выберите DNS-over-HTTPS.
+   ![DoH сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
+   ![Создать сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
+8. Нажмите _Сохранить и выбрать_.
+   ![Сохранить и выбрать \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
+9. Добавленный вами DNS-сервер появится внизу списка _Пользовательских DNS-серверов_.
+   ![Пользовательские DNS-серверы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Готово! Ваше устройство успешно подключено к AdGuard DNS.
 
-## Use AdGuard VPN
+## Используйте AdGuard VPN
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
+Не все VPN-сервисы поддерживают зашифрованный DNS. Однако наш VPN это поддерживает, так что если вы нуждаетесь как в VPN, так и в частном DNS, AdGuard VPN — ваш выбор.
 
-1. Install AdGuard VPN.
-2. Open the app and click _Settings_.
-3. Select _App settings_.
-   ![App settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
-4. Scroll down and select _DNS servers_.
-   ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
-5. Click _Add custom DNS server_.
-   ![Add custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
-6. In the _Server address_ field, paste one of the following addresses. If you’re not sure which one to prefer, select DNS-over-HTTPS.
-   ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
-   ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
-7. Click _Save and select_.
-   ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
+1. Установите AdGuard VPN.
+2. Откройте приложение и нажмите _Настройки_.
+3. Выберите _Настройки приложения_.
+   ![Настройки приложения \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
+4. Прокрутите вниз и выберите _DNS-серверы_.
+   ![DNS-серверы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
+5. Нажмите _Добавить свой DNS-сервер_.
+   ![Добавить свой DNS-сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
+6. В поле _Адрес сервера_ вставьте один из следующих адресов. Если не уверены, какой адрес предпочтительнее, выберите DNS-over-HTTPS.
+   ![DoH сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
+   ![Создать сервер \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
+7. Нажмите _Сохранить и выбрать_.
+   ![Сохранить и выбрать \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Готово! Ваше устройство успешно подключено к AdGuard DNS.
 
-## Use AdGuard DNS Client
+## Использовать AdGuard DNS Client
 
-AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
+AdGuard DNS Client — это универсальный кроссплатформенный консольный инструмент, который позволяет подключиться к AdGuard DNS, используя зашифрованные DNS-протоколы.
 
-More details can be found in [different article](/dns-client/overview/).
+Более подробно можно ознакомиться в [другой статье](/dns-client/overview/).
 
-## Configure plain DNS
+## Настройка незашифрованного DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+Если вы предпочитаете не использовать дополнительное программное обеспечение для настройки DNS, вы можете выбрать незашифрованный DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

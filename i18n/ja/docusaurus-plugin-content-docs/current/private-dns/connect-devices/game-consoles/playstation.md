@@ -3,34 +3,34 @@ title: PlayStation PS4/PS5
 sidebar_position: 4
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+ゲーム機は暗号化されたDNSをサポートしていませんが、リンクされたIPアドレスを介してパブリックAdGuard DNSまたはプライベートAdGuard DNSを設定できます。
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+お使いのルーターが暗号化DNSサーバーの使用をサポートしている可能性が高いため、ルーターにプライベートAdGuard DNSを設定し、ゲーム機をルーター（Wi-Fi）に接続するという方法もあります。そうすれば、ゲーム機は暗号化AdGuard DNSに接続されます。
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[ルーターでの設定方法はこちら](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## AdGuard DNSに接続する方法
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+パブリックAdGuard DNSサーバーを使用するようにゲーム機を設定するか、リンクされたIPを介して設定します:
 
-1. Turn on your PS4/PS5 console and sign in to your account.
-2. From the home screen, select the gear icon located in the top row.
-3. In the _Settings_ menu, select _Network_.
-4. Select _Set Up Internet Connection_.
-5. Choose _Use Wi-Fi_ or _Use a LAN Cable_, depending on your network setup.
-6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
-7. For _DHCP Host Name_, select _Do Not Specify_.
-8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. お持ちのゲーム機（PS4/PS5）を起動して、アカウントにサインインしてください。
+2. ホーム画面から、最上段にある歯車アイコン（⚙）を選択します。
+3. 「_設定_」メニューで、「_ネットワーク_」を選択します。
+4. 「_インターネット接続を設定する_」を選択します。
+5. お使いのネットワーク環境（無線・有線）に応じて、「_Wi-Fi を使う_」または「_LAN ケーブルを使う_」を選択します。
+6. 「_カスタム_」を選択し、「_IPアドレス設定_」で「_自動_」を選択します。
+7. 「_DHCPホスト名_」では、「_指定しない_」を選択します。
+8. 「_DNS 設定_」で、「_手動_」を選択します。
+9. 「_DNS サーバー_」欄に、次のいずれかの DNS サーバーアドレスを入力します:
    - `94.140.14.49`
    - `94.140.14.59`
-10. Select _Next_ to continue.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
-14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+10. 「_次へ_」を選択して続行します。
+11. 「_MTU 設定_」画面で、「_自動_」を選択します。
+12. 「_プロキシサーバー_」画面で、「_使用しない_」を選択します。
+13. 「_インターネット接続のテスト_」（接続診断）を選択して、新しいDNS設定をテストします。
+14. テスト（接続診断）が完了し、「_インターネット接続：成功_」と表示されたら、設定を保存します。
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+リンクされたIP（チームプランをご利用の場合は専用IP）を使用するのがおすすめです:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

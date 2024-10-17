@@ -35,7 +35,7 @@ Desteklenen CPU mimarileri:
 
 ### Unix benzeri işletim sistemleri {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. `.tar.gz` or `.zip` arşivini [sürümler sayfasından][releases] indirin ve açın.
 
    :::dikkat
 
@@ -86,7 +86,7 @@ Option `-h` makes AdGuard DNS Client print out a help message to standard output
 
 ### Service {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Olası değerler:
+`-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
 
 - `install`: installs AdGuard DNS Client as a service
 - `restart`: çalışan AdGuard DNS İstemcisi hizmetini yeniden başlatır
@@ -97,7 +97,7 @@ Option `-s <value>` specifies the OS service action. Olası değerler:
 
 ### Verbose {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+`-v` seçeneği ayrıntılı günlük çıktısını etkinleştirir.
 
 ### Sürüm {#opts-version}
 

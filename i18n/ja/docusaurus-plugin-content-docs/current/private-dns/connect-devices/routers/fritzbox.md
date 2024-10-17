@@ -3,31 +3,31 @@ title: FritzBox
 sidebar_position: 4
 ---
 
-FRITZ!Box provides maximum flexibility for all devices by simultaneously using the 2.4 GHz and 5 GHz frequency bands. All devices connected to the FRITZ!Box are fully protected against attacks from the Internet. The configuration of this brand of routers also allows you to set up encrypted Private AdGuard DNS.
+FRITZ!Boxは、2.4GHzと5GHzの周波数帯域を同時に使用することで、あらゆる機器に最大限の柔軟性を提供します。 FRITZ!Boxに接続されたすべてのデバイスは、インターネット攻撃から完全に保護されています。 このブランドのルーターの設定により、暗号化されたプライベートAdGuard DNSを設定することもできます。
 
-## Configure DNS-over-TLS
+## DNS-over-TLS を構成して接続する
 
-1. Open the router admin panel. It can be accessed at fritz.box, the IP address of your router, or `192.168.178.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Under DNS-over-TLS (DoT), check _Use DNS-over-TLS_ if supported by the provider.
-6. Select _Use Custom TLS Server Name Indication (SNI)_ and enter the AdGuard Private DNS server address:  `{Your_Device_ID}.d.adguard-dns.com`.
-7. Save the settings.
+1. ルーターの管理画面を開きます。 （管理画面は、fritz.box、ルーターの IPアドレス、または `192.168.178.1` でアクセスできます。）
+2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
+3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
+4. 「_DNS_」または「_DNS設定_」を選択します。
+5. 「DNS over TLS（DoT）」で、プロバイダーがサポートしている場合は「_DNS over TLSを使用する_」にチェックを入れます。
+6. 「_カスタム TLS サーバー名表示 (SNI) を使用する_」を選択し、次のDNSサーバーアドレスを入力します: `{Your_Device_ID}.d.adguard-dns.com`。
+7. 設定を保存します。
 
-## Use your router admin panel
+## ルーターの管理画面を使って接続する
 
-Use this guide if your FritzBox router does not support DNS-over-TLS configuration:
+FritzBoxルーターがDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Select _Manual DNS_, then _Use These DNS Servers_ or _Specify DNS Server Manually_, and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. ルーターの管理画面を開きます。 （管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
+2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
+3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
+4. 「_DNS_」または「_DNS設定_」を選択します。
+5. 「_手動DNS_」を選択します。 「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバー アドレスを入力します:
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
+6. 設定を保存します。
+7. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -16,7 +16,7 @@ Til dato har vi kategoriseret flere end 15 millioner websteder og opbygget en da
 Svindlere bruger ofte nyligt registrerede domæner til phishing og svigagtige aktiviteter. Af denne grund har vi udviklet et specialfilter, der detekterer et domænes levetid, og blokerer det, hvis det er oprettet for nylig.
 Nogle gange forårsager dette falske positiver, men statistikker viser, at i de fleste tilfælde beskytter denne indstilling stadig vores brugere mod at miste fortrolige data.
 
-### Block malicious domains using blocklists
+### Blokér skadelige domæner med sortlister
 
 AdGuard DNS understøtter tilføjelse af tredjeparts blokeringsfiltre.
 Aktivér filtre markeret `sikkerhed` for ekstra beskyttelse.

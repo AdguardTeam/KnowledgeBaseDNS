@@ -1,44 +1,44 @@
 ---
-title: Parental control
+title: Kindersicherung
 sidebar_position: 4
 ---
 
-## What is it
+## Was ist das
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+Kindersicherung ist eine Reihe von Einstellungen, die Ihnen die Flexibilität bieten, den Zugriff auf bestimmte Websites mit „sensiblen“ Inhalt anzupassen.  Diese Funktion können Sie verwenden, um den Zugriff Ihrer Kinder auf Websites mit Inhalten für Erwachsene einzuschränken, Suchabfragen anzupassen, die Nutzung beliebter Dienste zu blockieren und mehr.
 
-## How to set it up
+## Kindersicherung einrichten
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Sie können alle Funktionen flexibel auf Ihren Servern konfigurieren, einschließlich der Kindersicherungsfunktion. [Im entsprechenden Artikel](private-dns/server-and-settings/server-and-settings.md) können Sie sich damit vertraut machen, was ein „Server“ in AdGuard DNS ist, und erfahren, wie Sie verschiedene Server mit unterschiedlichen Einstellungen erstellen.
 
-Then, go to the settings of the selected server and enable the required configurations.
+Gehen Sie anschließend zu den Einstellungen des ausgewählten Servers und aktivieren Sie die erforderlichen Konfigurationen.
 
-### Block adult websites
+### Websites für Erwachsene blockieren
 
-Blocks websites with inappropriate and adult content.
+Blockiert Websites mit unangemessenen und nicht jugendfreien Inhalten.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![Blockierte Website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### Sichere Suche
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Entfernt unangemessene Ergebnisse von Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave und Ecosia.
 
-![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+![Sichere Suche \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### Eingeschränkter Modus für YouTube
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+Entfernt die Option, Kommentare unter Videos anzusehen und zu posten sowie mit Inhalten ab 18 Jahren auf YouTube zu interagieren.
 
-![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![Eingeschränkter Modus \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### Gesperrte Dienste und Websites
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS sperrt den Zugriff auf beliebte Dienste mit einem Klick. Das ist nützlich, wenn Sie nicht möchten, dass verbundene Geräte z. B. Instagram und YouTube besuchen.
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Gesperrte Dienste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### Abschaltzeit einstellen
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+Mit dieser Funktion kann die Kindersicherung an ausgewählten Tagen mit einem bestimmten Zeitintervall aktiviert werden. Vielleicht haben Sie Ihrem Kind zum Beispiel erlaubt, YouTube-Videos nur bis 23:00 Uhr an Werktagen anzusehen. Aber an Wochenenden ist dieser Zugriff nicht eingeschränkt. Passen Sie den Zeitplan nach Ihren Wünschen an und blockieren Sie den Zugriff auf ausgewählte Websites zu den gewünschten Stunden.
 
-![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+![Zeitplan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

@@ -1,11 +1,11 @@
 ---
-title: General information
+title: Allgemeine Informationen
 sidebar_position: 1
 toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-In this section you will find instructions on how to connect your device to AdGuard DNS and learn about the main features of the service.
+Hier finden Sie Anweisungen, wie Sie Ihr Gerät mit AdGuard DNS verbinden und mehr über die Hauptfunktionen des Services erfahren.
 
 - [Android](/private-dns/connect-devices/mobile-and-desktop/android.md)
 - [iOS](/private-dns/connect-devices/mobile-and-desktop/ios.md)
@@ -15,12 +15,12 @@ In this section you will find instructions on how to connect your device to AdGu
 - [Router](/private-dns/connect-devices/routers/routers.md)
 - [Spielkonsolen](/private-dns/connect-devices/game-consoles/game-consoles.md)
 
-For devices that do not natively support encrypted DNS protocols, we offer three other options:
+Für Geräte, die verschlüsselte DNS-Protokolle nicht nativ unterstützen, bieten wir drei weitere Optionen an:
 
 - [AdGuard DNS Client](/dns-client/overview.md)
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
-If you want to restrict access to AdGuard DNS to certain devices, use [DNS-over-HTTPS with authentication](/private-dns/connect-devices/other-options/doh-authentication.md).
+Wenn Sie den Zugriff auf AdGuard DNS auf bestimmte Geräte beschränken möchten, verwenden Sie [DNS-over-HTTPS mit Authentifizierung](/private-dns/connect-devices/other-options/doh-authentication.md).
 
-For connecting a large number of devices, there is an [automatic connection option](/private-dns/connect-devices/other-options/automatic-connection.md).
+Für die Verbindung einer großen Anzahl von Geräten gibt es [Automatische Verbindung](/private-dns/connect-devices/other-options/automatic-connection.md).

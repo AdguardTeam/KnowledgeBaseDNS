@@ -1,17 +1,17 @@
 ---
-title: Query log
+title: Journal des requêtes
 sidebar_position: 5
 ---
 
-## What is Query log
+## Qu'est-ce que le journal des requêtes
 
-Query log is a useful tool for working with AdGuard DNS.
+Le journal des requêtes est un outil utile pour travailler avec AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Il vous permet de voir toutes les requêtes effectuées par vos appareils pendant la période sélectionnée et de trier les requêtes par état, type, sosiété, appareil, pays.
 
 ## How to use it
 
-Here's what you can see and what you can do in the _Query log_.
+Voici ce que vous pouvez voir et ce que vous pouvez faire dans le _Journal des requêtes_.
 
 ### Detailed information on requests
 
@@ -27,9 +27,9 @@ Requests can be blocked and unblocked without leaving the log, using the availab
 
 You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![Tri des requêtes \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Désactivation de la journalisation des requêtes
 
 If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
 

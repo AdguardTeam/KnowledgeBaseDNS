@@ -406,6 +406,17 @@ Disse servere bruger noget logning, selvsignerede certifikater eller ingen under
 | --------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` og `52.3.100.184` | [Føj til AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) er en gratis, suveræn og GDPR-kompatibel rekursiv DNS-opløser med et stærkt fokus på sikkerhed for at beskytte borgerne og organisationerne i EU.
+
+| Protokol       | Adresse                         |                                                                                                                                                                      |
+| -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `193.110.81.0` og `185.253.5.0` | [Føj til AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`            | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) er en gratis alternativ DNS-tjeneste fra Dyn.
@@ -588,17 +599,6 @@ Mere strikse filtreringspolitikker med blokering — reklame-, marketing-, track
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
 
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) er en gratis, suveræn og GDPR-kompatibel rekursiv DNS-opløser med et stærkt fokus på sikkerhed for at beskytte borgerne og organisationerne i EU.
-
-| Protokol       | Adresse                         |                                                                                                                                                                      |
-| -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `193.110.81.0` og `185.253.5.0` | [Føj til AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`            | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
-
 ### Quad9 DNS
 
 [Quad9 DNS](https://quad9.net/) er en højtydende gratis, rekursiv, anycast DNS-platform, der leverer fortrolighed samt sikkerhedsbeskyttelse mod phishing og spyware. Quad9-servere tilbyder ingen censureringskomponent.
@@ -629,7 +629,7 @@ Ikke-sikrede DNS-servere har ingen sikkerhedssortliste, DNSSEC eller EDNS Client
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                              | [Føj til AdGuard](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 | DNS-over-TLS   | `tls://dns10.quad9.net`                                          | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
 
-#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
+#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet)-support
 
 EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-adressedata i forespørgsler sendt til autoritative DNS-servere. Der tilbydes sikkerhedssortliste, DNSSEC og EDNS Client-Subnet.
 
@@ -684,7 +684,7 @@ EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 | DNS-over-HTTPS | `https://basic.rethinkdns.com/` | [Føj til AdGuard](adguard:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://basic.rethinkdns.com/&name=basic.rethinkdns.com) |
 | DNS-over-TLS   | `tls://max.rethinkdns.com`      | [Føj til AdGuard](adguard:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://max.rethinkdns.com&name=max.rethinkdns.com)               |
 
-### Safe DNS
+### Sikker DNS
 
 [Safe DNS](https://www.safedns.com/) er et globalt anycast-netværk bestående af servere placeret verden over — både Amerika, Europa, Afrika, Australien og Fjernøsten — for at sikre en hurtig og pålidelig DNS-opløsning fra ethvert punkt i verden.
 
@@ -755,7 +755,7 @@ ByteDance Public DNS er en gratis alternativ DNS-tjeneste fra ByteDance i Kina. 
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) beskytter mod tyveri af personlige og finansielle data. Hold vira, ransomware og anden malware ude af hjemmet.
 
-#### Private
+#### Fortrolige
 
 I tilstanden "Private", kun DNS-opløsning.
 
@@ -766,7 +766,7 @@ I tilstanden "Private", kun DNS-opløsning.
 | DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                  | [Føj til AdGuard](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
 | DNS-over-TLS — Private | Værtsnavn: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` og IPv6: `2620:10A:80BB::10` | [Føj til AdGuard](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
-#### Beskyttet
+#### Beskyttede
 
 I tilstanden "Protected", malware- og phishing-beskyttelse.
 
@@ -818,7 +818,7 @@ I tilstanden "Family", Beskyttet + blokering af voksenindhold.
 | DNS-over-HTTPS | `https://dns.digitale-gesellschaft.ch/dns-query` IP: `185.95.218.42` og IPv6: `2a05:fc84::42` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.digitale-gesellschaft.ch/dns-query&name=dns.digitale-gesellschaft.ch), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.digitale-gesellschaft.ch/dns-query&name=dns.digitale-gesellschaft.ch) |
 | DNS-over-TLS   | `tls://dns.digitale-gesellschaft.ch` IP: `185.95.218.43` og IPv6: `2a05:fc84::43`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.digitale-gesellschaft.ch&name=dns.digitale-gesellschaft.ch), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.digitale-gesellschaft.ch&name=dns.digitale-gesellschaft.ch)                         |
 
-### DNS for Family
+### Familie DNS
 
 [DNS for Family](https://dnsforfamily.com/) har til formål at blokere voksenwebsteder. Den muliggør, at børn og voksne kan surfe sikkert på internet uden at bekymre sig om at blive sporet af ondsindede websteder.
 
@@ -852,7 +852,7 @@ Bloker reklamer og irriterende websteder.
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.114` og `114.114.115.115` | [Føj til AdGuard](adguard:add_dns_server?address=114.114.114.114&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.114&name=) |
 
-#### Sikker
+#### Sikre
 
 Blokerer phishing, ondsindede og andre ikke-sikre websteder.
 
@@ -909,7 +909,7 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 | --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `117.50.10.10` og `52.80.52.52` | [Føj til AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=) |
 
-#### Blokeringsudgave
+#### Block Edition
 
 | Protokol  | Adresse                         |                                                                                                                                                   |
 | --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -967,7 +967,7 @@ Dette er blot en af de tilgængelige servere, den komplette liste findes [hér](
 | DNS-over-HTTPS | `https://dns.seia.io/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io) |
 | DNS-over-TLS   | `tls://dns.seia.io`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io)                         |
 
-#### Oracle Cloud South Korea
+#### Oracle Cloud Sydkorea
 
 | Protokol       | Adresse                                   |                                                                                                                                                                                                                                                   |
 | -------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -978,7 +978,7 @@ Dette er blot en af de tilgængelige servere, den komplette liste findes [hér](
 
 [Yandex.DNS](https://dns.yandex.com/) er en gratis rekursiv DNS-tjeneste. Yandex.DNS-servere er placeret i Rusland, SNG-lande og Vesteuropa. Brugerforespørgsler behandles af det nærmeste datacenter, hvilket giver høje forbindelseshastigheder.
 
-#### Basic
+#### Basis
 
 I tilstanden "Basic" sker ingen trafikfiltrering.
 
@@ -989,7 +989,7 @@ I tilstanden "Basic" sker ingen trafikfiltrering.
 | DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`    | [Føj til AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
 | DNS-over-TLS   | `tls://common.dot.dns.yandex.net`                | [Føj til AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
-#### Sikker
+#### Sikre
 
 I tilstanden "Safe" ydes beskyttelse mod inficerede og svigagtige websteder.
 
@@ -1205,7 +1205,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 
 [Privacy-First DNS](https://tiarap.org/) blokerer flere end 140K reklame-, reklamesporings-, malware- og phishing-domæner. Nul logning, ingen ECS, DNSSEC-validering, gratis!
 
-#### Singapore DNS Server
+#### Singapore DNS-servere
 
 | Protokol       | Adresse                                                                   | Placering                                                                                                                                                                                                             |
 | -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1218,7 +1218,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                     | [Føj til AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                      | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Japan DNS Server
+#### Japan DNS-servere
 
 | Protokol       | Adresse                                                                       |                                                                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1234,7 +1234,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 
 [Seby DNS](https://dns.seby.io/) er en fortrolighedsfokuseret DNS-tjeneste leveret af Sebastian Schmidt. Nul logning, DNSSEC-validering.
 
-#### DNS Server 1
+#### DNS-server 1
 
 | Protokol       | Adresse                                                   |                                                                                                                                                                                                           |
 | -------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

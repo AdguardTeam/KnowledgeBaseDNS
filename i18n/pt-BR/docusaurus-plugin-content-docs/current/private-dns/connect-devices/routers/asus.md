@@ -3,40 +3,40 @@ title: Asus
 sidebar_position: 3
 ---
 
-## Configure DNS-over-TLS
+## Configuração do DNS-over-TLS
 
-These are general instructions for configuring Private AdGuard DNS for Asus routers.
+Estas são instruções gerais para a configuração do AdGuard DNS Privado em roteadores Asus.
 
-The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
+As informações de configuração nestas instruções são retiradas de um modelo específico de roteador, portanto podem diferir da interface de um dispositivo individual.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+Se necessário: Para configurar o DNS-over-TLS no ASUS, instale o [firmware ASUS Merlin](https://www.asuswrt-merlin.net/download) adequado à versão do seu roteador no seu computador.
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. In the _Advanced Settings_ sidebar, navigate to the WAN section.
-4. In the _WAN DNS Settings_ section, set _Connect to DNS Server automatically_ to _No_.
-5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
-6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
-7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
-8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
-9. For _TLS Port_, enter 853.
-10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
+1. Efetue login no painel de administração do seu roteador Asus. Pode ser acessado via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), ou [http://192.168.2.1](http://192.168.2.1/).
+2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
+3. Na barra lateral das _Configurações Avançadas_, navegue até a seção WAN.
+4. Na seção _Configurações de DNS da WAN_, defina _Conectar ao servidor DNS automaticamente_ como _Não_.
+5. Defina _Encaminhar consultas locais_, _Ativar DNS Rebind_ e _Ativar DNSSEC_ como _Não_.
+6. Altere o protocolo de privacidade do DNS para DNS-over-TLS (DoT).
+7. Certifique-se de que o _Perfil DNS-over-TLS_ está definido como _Estrito_.
+8. Role para baixo até a seção _Lista de Servidores DNS-over-TLS_. No campo _Endereço_, insira um dos endereços abaixo:
+   - `94.140.14.49` e `94.140.14.59`
+9. Para _Porta TLS_, insira 853.
+10. No campo _TLS Hostname_, insira o endereço do servidor Private AdGuard DNS:
     - `{Your_Device_ID}.d.adguard-dns.com`
-11. Scroll to the bottom of the page and click _Apply_.
+11. Role até a parte inferior da página e clique em _Aplicar_.
 
-## Use your router admin panel
+## Use o painel de controle do seu roteador
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_.
-4. Select _WAN_ or _Internet_.
-5. Open _DNS Settings_ or _DNS_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.1.1` ou `192.168.0.1`.
+2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
+3. Abra _Configurações avançadas_ ou _Avançado_.
+4. Selecione _WAN_ ou _Internet_.
+5. Abra _Configurações de DNS_ ou _DNS_.
+6. Escolha _Manual DNS_. Selecione _Usar estes servidores DNS_ ou _Especificar servidor DNS manualmente_ e insira os seguintes endereços de servidor DNS:
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+7. Salve as configurações.
+8. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)

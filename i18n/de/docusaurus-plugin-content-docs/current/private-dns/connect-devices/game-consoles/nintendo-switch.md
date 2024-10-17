@@ -3,27 +3,27 @@ title: Nintendo Switch
 sidebar_position: 3
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Spielkonsolen unterstützen kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von Öffentlichem AdGuard DNS oder Privatem AdGuard DNS über eine verknüpfte IP-Adresse.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Möglicherweise unterstützt Ihr Router die Verwendung von verschlüsselten DNS-Servern, so dass Sie jederzeit Privates AdGuard DNS auf ihm konfigurieren und Ihre Spielkonsole damit verbinden können.
 
 [So konfigurieren Sie Ihren Router](/private-dns/connect-devices/routers/routers.md)
 
 ## Mit AdGuard DNS verbinden
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS-Server verwendet, oder konfigurieren Sie sie über eine verknüpfte IP:
 
-1. Turn on your Nintendo Switch console and go to the home menu.
-2. Go to _System Settings_ → _Internet_.
-3. Select the Wi-Fi network that you want to modify the DNS settings for.
-4. Click _Change Settings_ for the selected Wi-Fi network.
-5. Scroll down and select _DNS Settings_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Schalten Sie Ihre Nintendo Switch-Konsole ein und rufen Sie das Startmenü auf.
+2. Öffnen Sie _Systemeinstellungen_ → _Internet_.
+3. Wählen Sie das WLAN-Netzwerk aus, für das Sie die DNS-Einstellungen ändern möchten.
+4. Klicken Sie auf _Einstellungen ändern_ für das ausgewählte WLAN-Netzwerk.
+5. Blättern Sie nach unten und wählen Sie _DNS-Einstellungen_.
+6. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save your DNS settings.
+7. Speichern Sie Ihre DNS-Einstellungen.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

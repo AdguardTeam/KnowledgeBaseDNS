@@ -3,22 +3,22 @@ title: Şirketler
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Bu sekme, hangi şirketlerin en çok istek gönderdiğini ve hangi şirketlerin en çok engellenen isteklere sahip olduğunu hızlı bir şekilde görmenizi sağlar.
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![Şirketler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+Şirketler sayfası iki kategoriye ayrılmıştır:
 
 - **Top requested company**
 - **Top blocked company**
 
 These are further divided into sub-categories:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
+- **Reklamcılık**: kullanıcı verilerini toplayan ve paylaşan, davranışı analiz eden ve reklamları hedefleyen reklamcılık ve diğer reklamla ilgili istekler
+- **İzleyiciler**: sitelerden ve üçüncü taraflardan kullanıcı etkinliğini izlemek amacıyla gelen istekler
+- **Sosyal ağ**: sosyal ağ sitelerine gelen istekler
 - **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Diğer**
 
 ### Başlıca şirketler
 
