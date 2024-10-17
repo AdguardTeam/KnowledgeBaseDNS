@@ -21,7 +21,7 @@
 }
 
 [data-theme="dark"]:root {
-  --ifm-toc-border-color: #D93C8A;
+  --ifm-toc-border-color: #5b5b5b;
 }
 
 .docusaurus-highlight-code-line {
