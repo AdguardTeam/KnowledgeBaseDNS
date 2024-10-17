@@ -12,7 +12,7 @@ To connect an Android device to AdGuard DNS, first add it to _Dashboard_:
 
 ## Use AdGuard Ad Blocker (paid option)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Android device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Android device. You can choose from various encryption protocols. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
 
 1. Install [the AdGuard app](https://adguard.com/adguard-android/overview.html) on the device you want to connect to AdGuard DNS.
 2. Open the app.
@@ -60,7 +60,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configure Private DNS manually
 
-You can configure your DNS server in your device settings. Please note that Android devices only support DNS-over-TLS protocol.
+You can configure your DNS server in your device settings. Veuillez noter que les appareils Android ne prennent en charge que le protocole DNS-over-TLS.
 
 1. Go to _Settings_ → _Wi-Fi & Internet_ (or _Network and Internet_, depending on your OS version).
    ![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
@@ -75,5 +75,5 @@ You can configure your DNS server in your device settings. Please note that Andr
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

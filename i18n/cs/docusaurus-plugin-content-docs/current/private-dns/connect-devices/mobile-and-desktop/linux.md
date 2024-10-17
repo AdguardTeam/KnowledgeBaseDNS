@@ -3,70 +3,70 @@ title: Linux
 sidebar_position: 6
 ---
 
-To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
+Chcete-li zařízení Linux připojit k AdGuard DNS, přidejte je nejprve na _Přehled_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Linux.
-3. Name the device.
+1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
+2. V rozbalovací nabídce _Typ zařízení_ vyberte Linux.
+3. Pojmenujte zařízení.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS Client
+## Použití klienta AdGuard DNS
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+Klient AdGuard DNS je multiplatformní konzolový nástroj, který umožňuje používat šifrované protokoly DNS pro přístup k AdGuard DNS.
 
-You can learn more about this in the [related article](/dns-client/overview/).
+Více informací se dozvíte v [souvisejícím článku](/dns-client/overview/).
 
-## Use AdGuard VPN CLI
+## Použití AdGuard VPN CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
+Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní příkazového řádku). Chcete-li začít pracovat s rozhraním AdGuard VPN CLI, musíte použít Terminal.
 
-1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
-3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
+1. Nainstalujte AdGuard VPN CLI podle [těchto pokynů](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
+2. Přejděte do [nastavení](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+3. Chcete-li nastavit konkrétní server DNS, použijte příkaz: `adguardvpn-cli config set-dns <server_address>`, kde `<server_address>` je adresa vašeho privátního serveru.
+4. Aktivujte nastavení DNS zadáním `adguardvpn-cli config set-system-dns on`.
 
-## Configure manually on Ubuntu (linked IP or dedicated IP required)
+## Ruční konfigurace v Ubuntu (je vyžadována propojená IP nebo vyhrazená IP)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
-2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+1. Klikněte na _Systém_ → _Předvolby_ → _Síťová připojení_.
+2. Vyberte kartu _Bezdrátové připojení_ a poté vyberte síť, ke které jste připojeni.
+3. Klikněte na _Upravit_ → _IPv4_.
+4. Změňte uvedené adresy DNS na následující adresy:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
-6. Click _Apply_.
-7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+5. Vypněte _Automatický režim_.
+6. Klikněte na _Použít_.
+7. Přejděte na _IPv6_.
+8. Změňte uvedené adresy DNS na následující adresy:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
-10. Click _Apply_.
-11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+9. Vypněte _Automatický režim_.
+10. Klikněte na _Použít_.
+11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
+    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Configure manually on Debian (linked IP or dedicated IP required)
+## Ruční konfigurace v Debianu (je vyžadována propojená IP nebo vyhrazená IP)
 
-1. Open the Terminal.
-2. In the command line, type: `su`.
-3. Enter your `admin` password.
-4. In the command line, type: `nano /etc/resolv.conf`.
-5. Change the listed DNS addresses to the following:
-   - IPv4: `94.140.14.49 and 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
-6. Press _Ctrl + O_ to save the document.
-7. Press _Enter_.
-8. Press _Ctrl + X_ to save the document.
-9. In the command line, type: `/etc/init.d/networking restart`.
-10. Press _Enter_.
-11. Close the Terminal.
-12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Otevřete Terminal.
+2. Do příkazového řádku napište: `su`.
+3. Zadejte své heslo `admin`.
+4. Do příkazového řádku zadejte: `nano /etc/resolv.conf`.
+5. Změňte uvedené adresy DNS na následující:
+   - IPv4: `94.140.14.49 a 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff a 2a10:50c0:0:0:0:0:dad:ff`
+6. Stisknutím kláves _ctrl + O_ na klávesnici dokument uložte.
+7. Stiskněte _Enter_.
+8. Stisknutím kláves _Ctrl + X_ na klávesnici dokument uložte.
+9. Do příkazového řádku zadejte: `/etc/init.d/networking restart`.
+10. Stiskněte _Enter_.
+11. Zavřete Terminal.
+12. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
+    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Use dnsmasq
+## Použití dnsmasq
 
-1. Install dnsmasq using the following commands:
+1. Nainstalujte dnsmasq pomocí následujících příkazů:
 
    `sudo apt updatesudo`
 
@@ -74,7 +74,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-2. Use the following commands in dnsmasq.conf:
+2. V dnsmasq.conf použijte následující příkazy:
 
    `no-resolv`
 
@@ -90,21 +90,21 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `add-cpe-id={Your_Device_ID}`
 
-3. Restart the dnsmasq service:
+3. Restartujte službu dnsmasq:
 
    `sudo service dnsmasq restart`
 
-All done! Your device is successfully connected to AdGuard DNS.
+Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
-:::note Important
+:::note Důležité
 
-If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+Pokud se zobrazí oznámení, že nejste připojeni k AdGuard DNS, je port, na kterém běží dnsmasq pravděpodobně obsazen jinými službami. K vyřešení problému použijte [tyto pokyny](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse).
 
 :::
 
-## Use plain DNS
+## Použití běžného DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
+Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

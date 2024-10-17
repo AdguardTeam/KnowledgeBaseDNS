@@ -1,28 +1,28 @@
 ---
-title: DNS-over-HTTPS with authentication
+title: DNS-over-HTTPS s ověřováním
 sidebar_position: 4
 ---
 
-## Why it is useful
+## Proč je to užitečné
 
-DNS-over-HTTPS with authentication allows you to set a username and password for accessing your chosen server.
+Služba DNS-over-HTTPS s ověřováním umožňuje nastavit uživatelské jméno a heslo pro přístup k vybranému serveru.
 
-This helps prevent unauthorized users from accessing it and enhances security. Additionally, you can restrict the use of other protocols for specific profiles. This feature is particularly useful when your DNS server address is known to others. By adding a password, you can block access and ensure that only you can use it.
+To pomáhá zabránit přístupu neoprávněných uživatelů a zvyšuje bezpečnost. Kromě toho můžete pro určité profily omezit používání jiných protokolů. Tato funkce je užitečná zejména v případech, kdy je adresa vašeho serveru DNS známá ostatním uživatelům. Přidáním hesla můžete zablokovat přístup a zajistit, abyste jej mohli používat pouze vy.
 
-## How to set it up
+## Jak to nastavit
 
-:::note Compatibility
+:::note Kompatibilita
 
-This feature is supported by [AdGuard DNS Client](/dns-client/overview.md) as well as [AdGuard apps](https://adguard.com/welcome.html).
+Tuto funkci podporuje [Klient AdGuard DNS](/dns-client/overview.md) i [AdGuard apps](https://adguard.com/welcome.html).
 
 :::
 
-1. Open Dashboard.
-2. Add a device or go to the settings of a previously created device.
-3. Click _Use DNS server addresses_ and open the _Encrypted DNS server addresses_ section.
-4. Configure DNS-over-HTTPS with authentication as you like.
-5. Reconfigure your device to use this server in the AdGuard DNS Client or one of the AdGuard apps.
-6. To do this, copy the address of the encrypted server and paste it into the AdGuard app or AdGuard DNS Client settings.
+1. Otevřete hlavní panel.
+2. Přidejte zařízení nebo otevřete nastavení dříve vytvořeného zařízení.
+3. Klikněte na _Použít adresy serverů DNS_ a otevřete část _Adresy šifrovaných serverů DNS_.
+4. Nakonfigurujte DNS-over-HTTPS s ověřováním podle svých představ.
+5. Překonfigurujte zařízení tak, aby používalo tento server v klientovi AdGuard DNS nebo v jedné z aplikací AdGuard.
+6. Za tímto účelem zkopírujte adresu šifrovaného serveru a vložte ji do nastavení aplikace AdGuard nebo klienta AdGuard DNS.
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
-7. You can also deny the use of other protocols.
+7. Můžete také zakázat používání jiných protokolů.
    ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

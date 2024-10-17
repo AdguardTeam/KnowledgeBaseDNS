@@ -3,28 +3,28 @@ title: Brugerregler
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Hvad det er, og hvorfor man behøver det
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Brugerregler er de samme filtreringsregler som dem, der anvendes i almindelige blokeringslister. Man kan tilpasse webstedets filtrering jf. sine behov ved at tilføje regler manuelt eller importere dem fra en prædefineret liste.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+For at gøre filtreringen mere fleksibel og bedre tilpasset egne præferencer, kan man tjekke [regelsyntaksen](/general/dns-filtering-syntax/) ud for AdGuard DNS-filtreringsregler.
 
-## How to use
+## Anvendelse
 
-To set up user rules:
+For at opsætte brugerregler:
 
-1. Navigate to the _Dashboard_.
+1. Gå til _Kontrolpanel_.
 
 2. Gå til afsnittet _Servere_.
 
 3. Vælg den ønskede server.
 
-4. Click the _User rules_ option.
+4. Klik på indstillingen _Brugerregler_.
 
-5. You'll find several options for adding user rules.
+5. Der findes flere muligheder for at tilføje brugerregler.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - Den nemmeste måde er at bruge generatoren. For at bruge den, klik på _Tilføj ny regel_ → Angiv navnet på det domæne, man vil blokere eller afblokere → Klik på _Tilføj regel_
+     ![Tilføj regel \*grænse](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Den avancerede måde er at bruge regel-editoren. Klik på _Åbn editor_ og indtast blokkeringsregler iht. [syntaks](/general/dns-filtering-syntax/)
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Denne funktion muliggør at [omdirigere en forespørgsel til et andet domæne ved at erstatte indholdet af DNS-forespørgslen](/general/dns-filtering-syntax/#dnsrewrite-modifier).

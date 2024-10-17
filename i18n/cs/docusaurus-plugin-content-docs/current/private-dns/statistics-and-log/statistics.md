@@ -3,53 +3,53 @@ title: Statistiky
 sidebar_position: 2
 ---
 
-## General statistics
+## Obecné statistiky
 
-The _Statistics_ tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
+Na kartě _Statistiky_ se zobrazují všechny souhrnné statistiky požadavků DNS provedených zařízeními připojenými k soukromému AdGuard DNS. Zobrazují celkový počet a umístění požadavků, počet blokovaných požadavků, seznam společností, na které byly požadavky směřovány, typy požadavků a nejčastěji požadované domény.
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
-## Categories
+## Kategorie
 
-### Requests types
+### Typy požadavků
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Reklama**: reklama a další požadavky související s reklamou, které shromažďují a sdílejí uživatelská data, analyzují chování uživatelů a cílí reklamu
+- **Slídiče**: požadavky z webových stránek a třetích stran za účelem sledování aktivity uživatele
+- **Sociální sítě**: požadavky na webové stránky sociálních sítí
+- **CDN**: požadavek připojený k síti CDN (Content Delivery Network), celosvětové síti proxy serverů, která urychluje doručování obsahu koncovým uživatelům
+- **Další**
 
 ![Request types \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/request_types.png)
 
-### Top companies
+### Nejaktivnější společnosti
 
-Here you can see the companies that have sent the most requests.
+Zde si můžete prohlédnout společnosti, které zaslaly nejvíce požadavků.
 
 ![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies.png)
 
-### Top destinations
+### Nejaktivnější cíle
 
-This shows the countries to which the most requests have been sent.
+Zde jsou uvedeny země, do kterých bylo odesláno nejvíce požadavků.
 
-In addition to the country names, the list contains two more general categories:
+Kromě názvů zemí obsahuje seznam ještě dvě obecné kategorie:
 
-- **Not applicable**: Response doesn't include IP address
-- **Unknown destination**: Country can't be determined from IP address
+- **Neuplatňuje se**: odpověď neobsahuje IP adresu
+- **Neznámý cíl**: zemi nelze určit z IP adresy
 
 ![Top destinations \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 
-### Top domains
+### Nejaktivnější domény
 
-Contains a list of domains that have been sent the most requests.
+Obsahuje seznam domén, kterým bylo odesláno nejvíce požadavků.
 
 ![Top domains \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
-### Encrypted requests
+### Šifrované požadavky
 
-Shows the total number of requests and the percentage of encrypted and unencrypted traffic.
+Zobrazuje celkový počet požadavků a procento šifrovaného a nešifrovaného provozu.
 
 ![Encrypted requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
 
-### Top clients
+### Nejčastější klienti
 
-Displays the number of requests made to clients. To view client IP addresses, enable the _Log IP addresses_ option in the _Server settings_. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.
+Zobrazuje počet požadavků zadaných klientům. Chcete-li zobrazit IP adresy klientů, povolte v _Nastavení serveru_ možnost _Zaznamenat IP adresy_. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.

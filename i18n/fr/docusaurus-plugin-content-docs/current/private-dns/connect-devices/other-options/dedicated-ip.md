@@ -5,17 +5,17 @@ sidebar_position: 2
 
 ## What are dedicated IPs?
 
-Dedicated IPv4 addresses are available to users with Team and Enterprise subscriptions, while linked IPs are available to everyone.
+Les adresses IPv4 dédiées sont disponibles pour les utilisateurs avec des abonnements Équipe et Entreprise, tandis que les IPs liées sont disponibles pour tout le monde.
 
-If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. Avec les IPs liées, vous devez vous reconnecter manuellement ou utiliser un programme spécial chaque fois que l'adresse IP de l'appareil change, ce qui se produit après chaque redémarrage.
 
 ## Why do you need a dedicated IP?
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. There are two ways to set up AdGuard DNS: [using linked IPs](/private-dns/connect-devices/other-options/linked-ip.md) and using dedicated IPs.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. Il existe deux manières de configurer AdGuard DNS : [en utilisant des IPs liées](/private-dns/connect-devices/other-options/linked-ip.md) et en utilisant des IPs dédiées.
 
-Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
+Dedicated IPs are generally a more stable option. Les IPs liées ont certaines limitations, comme le fait que seules les adresses résidentielles sont autorisées, votre fournisseur peut changer l'adresse IP, et vous devrez relier à nouveau l'adresse IP. Avec les IPs dédiées, vous obtenez une adresse IP qui vous appartient exclusivement, et toutes les requêtes seront comptées pour votre appareil.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. Vous pourriez avoir besoin d'utiliser [les paramètres d'accès](/private-dns/server-and-settings/access.md) pour limiter le trafic des bots.
 
 The instructions below explain how to connect a dedicated IP to the device:
 

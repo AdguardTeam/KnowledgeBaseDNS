@@ -18,12 +18,12 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 5. Klik på _Gem_.
 6. Returnér til _Netværk_.
 7. Vælg _Redigér netværk_ → _LAN_.
-8. Find _DHCP Name Server_ and select _Manual_.
-9. Enter your gateway address in the _DNS Server 1_ field. Alternatively, you can enter the AdGuard DNS server addresses in _DNS Server 1_ and _DNS Server 2_ fields:
+8. Find _DHCP-navneserver_ og vælg _Manuel_.
+9. Angiv gateway-adressen i feltet _DNS Server 1_. Alternativt kan AdGuard DNS-serveradresserne angives i felterne _DNS-server 1_ og _DNS-server 2_:
    - IPv4: `94.140.14.49` and `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-10. Save the settings.
-11. Link your IP (or your dedicated IP if you have a Team subscription).
+10. Gem indstillingerne.
+11. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)

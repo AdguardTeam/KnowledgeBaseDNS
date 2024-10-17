@@ -1,31 +1,31 @@
 ---
-title: Advanced settings
+title: Расширенные настройки
 sidebar_position: 2
 ---
 
-The Advanced settings section is intended for the more experienced user and includes the following settings.
+Раздел «Расширенные настройки» предназначен для более опытных пользователей и включает следующие параметры.
 
-## Respond to blocked domains
+## Ответ на заблокированные домены
 
-Here you can select the DNS response for the blocked request:
+Здесь можно выбрать DNS-ответ для заблокированного запроса:
 
-- **Default**: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule
-- **REFUSED**: Respond with REFUSED code
-- **NXDOMAIN**: Respond with NXDOMAIN code
-- **Custom IP**: Respond with a manually set IP address
+- **По умолчанию**: Отвечает с нулевым IP-адресом (0.0.0.0 для A; :: для AAAA), когда заблокировано правилом в стиле Adblock; отвечает с IP-адресом, указанным в правиле, когда заблокировано правилом в стиле /etc/hosts
+- **REFUSED**: Отвечает с кодом REFUSED
+- **NXDOMAIN**: Отвечает с кодом NXDOMAIN
+- **Пользовательский IP**: Отвечает с вручную настроенным IP-адресом
 
-## TTL (Time-To-Live)
+## TTL (время жизни)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. If the TTL value is high, recently unblocked requests may still look blocked for a while. If TTL is 0, the device does not cache responses.
+Время жизни (TTL) задаёт период (в секундах), в течение которого устройство клиента будет хранить ответ на DNS-запрос в кеше и извлекать его без повторного обращения к DNS-серверу. Если значение TTL велико, недавно разблокированные запросы могут ещё некоторое время выглядеть заблокированными. Если TTL равен 0, устройство не кеширует ответы.
 
-## Block access to iCloud Private Relay
+## Блокировать доступ к Частному узлу iCloud
 
-Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard DNS cannot protect them.
+Устройства с Частным узлом iCloud могут игнорировать настройки DNS, поэтому AdGuard DNS не может их защитить.
 
-## Block Firefox canary domain
+## Блокировать канареечный домен Firefox
 
-Prevents Firefox from switching to the DoH resolver from its settings when AdGuard DNS is configured system-wide.
+Не позволяет Firefox переключаться на DNS преобразователь (DNS resolver) в настройках, если AdGuard DNS настроен на уровне системы.
 
-## Log IP addresses
+## Записывать IP-адреса
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+По умолчанию AdGuard DNS не записывает IP-адреса входящих DNS-запросов. Если вы включите эту настройку, IP-адреса будут записываться и отображаться в журнале запросов.

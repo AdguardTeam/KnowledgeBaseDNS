@@ -3,27 +3,27 @@ title: Xbox One
 sidebar_position: 6
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Игровые консоли не поддерживают зашифрованный DNS, но они отлично подходят для настройки Публичного AdGuard DNS или Личного AdGuard DNS через привязанный IP-адрес.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Скорее всего, ваш роутер поддерживает использование зашифрованных DNS-серверов, поэтому вы всегда можете настроить Личный AdGuard DNS на нём и подключить к нему вашу игровую консоль.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Как настроить ваш роутер](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Подключиться к AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Настройте вашу игровую консоль для использования Публичного AdGuard DNS или настройте её через привязанный IP:
 
-1. Turn on your Xbox One console and sign in to your account.
-2. Press the Xbox button on your controller to open the guide, then select _System_ from the menu.
-3. In the _Settings_ menu, select _Network_.
-4. Under _Network Settings_, select _Advanced Settings_.
-5. Under _DNS Settings_, select _Manual_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Включите консоль Xbox One и войдите в свой аккаунт.
+2. Нажмите кнопку Xbox на геймпаде, чтобы открыть руководство, а затем выберите в меню пункт _Система_.
+3. В меню «Настройки» выберите «Сеть».
+4. В разделе _Параметры сети_ выберите _Дополнительные параметры_.
+5. В разделе _Настройки DNS_ выберите пункт _Вручную_.
+6. В поле «DNS-сервер» введите один из следующих адресов DNS-сервера:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save the changes.
+7. Сохраните изменения.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Предпочтительнее использовать привязанный IP (или выделенный IP, если у вас подписка Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

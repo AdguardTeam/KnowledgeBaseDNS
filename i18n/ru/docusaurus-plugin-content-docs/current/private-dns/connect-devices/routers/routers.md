@@ -5,16 +5,16 @@ toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-First you need to add your router to the AdGuard DNS interface:
+Сначала вам нужно добавить ваш роутер в интерфейс AdGuard DNS:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Router.
-3. Select router brand and name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+1. Перейдите в раздел _Панель управления_ и нажмите _Подключить новое устройство_.
+2. В выпадающем меню _Тип устройства_, выберите Роутер.
+3. Выберите бренд роутера и назовите устройство.
+   ![Подключение устройства \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
-Below are instructions for different router models. Please select the one you need:
+Ниже приведены инструкции для различных моделей роутеров. Выберите то, которое вам нужно:
 
-- [Universal instructions](/private-dns/connect-devices/routers/universal.md)
+- [Универсальная инструкция](/private-dns/connect-devices/routers/universal.md)
 - [Asus](/private-dns/connect-devices/routers/asus.md)
 - [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
 - [Keenetic](/private-dns/connect-devices/routers/keenetic.md)

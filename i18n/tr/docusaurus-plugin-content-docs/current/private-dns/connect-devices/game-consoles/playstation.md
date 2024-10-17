@@ -11,26 +11,26 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 ## Connect AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 
 1. Turn on your PS4/PS5 console and sign in to your account.
-2. From the home screen, select the gear icon located in the top row.
-3. In the _Settings_ menu, select _Network_.
-4. Select _Set Up Internet Connection_.
+2. Ana ekrandan, üst sırada bulunan dişli çark simgesini seçin.
+3. _Ayarlar_ menüsünden _Ağ_ öğesini seçin.
+4. _İnternet Bağlantısını Ayarla_ öğesini seçin.
 5. Choose _Use Wi-Fi_ or _Use a LAN Cable_, depending on your network setup.
-6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
-7. For _DHCP Host Name_, select _Do Not Specify_.
-8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+6. _Özel_ öğesini seçin ve ardından _IP Adresi Ayarları_ için _Otomatik_ öğesini seçin.
+7. _DHCP Ana Bilgisayar Adı_ için _Belirtme_ öğesini seçin.
+8. _DNS Ayarları_ için _Manuel_ öğesini seçin.
+9. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
    - `94.140.14.49`
    - `94.140.14.59`
 10. Devam etmek için _İleri_ öğesini seçin.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
-14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+11. _MTU Ayarları_ ekranında _Otomatik_ öğesini seçin.
+12. _Proxy Sunucusu_ ekranında _Kullanma_ öğesini seçin.
+13. Yeni DNS ayarlarınızı test etmek için _İnternet Bağlantısını Test Et_ öğesini seçin.
+14. Test tamamlandıktan ve "İnternet Bağlantısı: Başarılı" mesajını gördükten sonra ayarlarınızı kaydedin.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

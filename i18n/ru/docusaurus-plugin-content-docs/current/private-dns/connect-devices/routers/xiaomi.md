@@ -3,23 +3,23 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have a lot of advantages: Steady strong signal, network security, stable operation, intelligent management, at the same time, the user can connect up to 64 devices to the local Wi-Fi network.
+Роутеры Xiaomi имеют много преимуществ: стабильный сильный сигнал, безопасность сети, стабильная работа, интеллектуальное управление, а также возможность подключения до 64 устройств к локальной сети Wi-Fi.
 
-Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
+К сожалению, он не поддерживает зашифрованный DNS, но отлично подходит для настройки AdGuard DNS через привязанный IP.
 
-## Use your router admin panel
+## Через панель управления роутера
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.31.1` or the IP address of your router.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_, depending on your router model.
-4. Open _Network_ or _Internet_ and look for DNS or DNS Settings.
-5. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Откройте панель управления роутера. К нему можно получить доступ по адресу `192.168.31.1` или IP-адресу вашего роутера.
+2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
+3. Откройте «Дополнительные настройки» или «Дополнительно», в зависимости от модели вашего роутера.
+4. Откройте «Сеть» или «Интернет» и найдите «DNS» или «Настройки DNS».
+5. Выберите «Ручной DNS». Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+6. Сохраните настройки.
+7. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

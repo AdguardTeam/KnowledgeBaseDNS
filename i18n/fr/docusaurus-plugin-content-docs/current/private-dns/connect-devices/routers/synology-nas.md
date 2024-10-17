@@ -5,12 +5,12 @@ sidebar_position: 9
 
 Synology NAS routers are incredibly easy to use and can be combined into a single mesh network. You can manage your network remotely anytime, anywhere. You can also configure AdGuard DNS directly on the router.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at `192.168.1.1` or `192.168.0.1`.
+2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
 3. Open _Control Panel_ or _Network_.
 4. Select _Network Interface_ or _Network Settings_.
 5. Select your Wi-Fi network or wired connection.
@@ -20,5 +20,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 7. Save the settings.
 8. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)

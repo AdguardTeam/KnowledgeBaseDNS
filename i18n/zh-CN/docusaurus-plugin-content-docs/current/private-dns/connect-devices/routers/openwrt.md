@@ -3,18 +3,18 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户首选项配置路由器和网关的灵活性。 开发者添加了加密 DNS 服务器的支持，让用户在设备上配置私人 AdGuard DNS。
 
-## Configure DNS-over-HTTPS
+## 配置 DNS-over-HTTPS
 
-- **Command-line instructions**. Install the required packages. DNS encryption should be enabled automatically.
+- **命令行指令**。 安装所需的软件包。 DNS 加密应自动启用。
 
   ```# Install packages
   1. opkg update
   2. opkg install https-dns-proxy
 
   ```
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
 
   ```# Install packages
   1. opkg update
@@ -22,9 +22,9 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-dns-proxy.
+请转到「_LuCI_」→「_服务_」→「_HTTPS DNS 代理_」以配置 https-dns-proxy。
 
-- **Configure DoH provider**. https-dns-proxy is configured with Google DNS and Cloudflare DNS by default. You need to change it to AdGuard DoH. Specify several resolvers to improve fault tolerance.
+- **配置 DNS-over-HTTPS 提供商**。 https-dns-proxy 默认配置 Google DNS 和 Cloudflare DNS。 用户要将其更改为 AdGuard DNS-over-HTTPS。 指定多个解析器以提高容错技术能力。
 
   ```# Configure DoH provider
   1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,16 +39,16 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
 
 ## 配置 DNS-over-TLS
 
-- **Command-line instructions**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **命令行指令**。 [禁用](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS 角色，或者完全删除它，并可选[用 odhcpd 取代](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound)其 DHCP 协议角色。
 
   ```# Install packages
   1. opkg update
   2. opkg install unbound-daemon ca-certificates
   ```
 
-LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
+假设 Dnsmasq 已禁用，LAN 客户端和本地系统应使用 Unbound 作为主要解析器。
 
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
 
   ```# Install packages
   1. opkg update
@@ -56,9 +56,9 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
+转到「_LuCI_」→「_服务_」→「_递归 DNS_」以配置 Unbound。
 
-- **Configure AdGuard DNS-over-TLS**.
+- **配置 AdGuard DNS-over-TLS**。
 
   ```1. uci add unbound zone
   2. uci set unbound.@zone[-1].enabled="1"
@@ -81,13 +81,13 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
 
 1. 打开路由器管理面板。 可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
-3. Open _Network_ → _Interfaces_.
-4. Select your Wi-Fi network or wired connection.
-5. Scroll down to IPv4 address or IPv6 address, depending on the IP version you want to configure.
-6. Under _Use custom DNS servers_, enter the IP addresses of the DNS servers you want to use. You can enter multiple DNS servers, separated by spaces or commas:
+3. 打开「_网络_」→「_接口_」。
+4. 选择您的 Wi-Fi 网络或有线连接。
+5. 向下滚动到 IPv4 地址或 IPv6 地址，具体取决于用户要配置的 IP 版本。
+6. 在「使用自定义 DNS 服务器」下，输入您希望使用的服务器 IP 地址。 用户可以输入多个 DNS 服务器，以空格或逗号分隔：
    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
-7. Optionally, you can enable DNS forwarding if you want the router to act as a DNS forwarder for devices on your network.
+7. 或者，如果用户希望路由器充当网络上设备的 DNS 转发器，可以启用 DNS 转发。
 8. 请保存设置。
 9. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 

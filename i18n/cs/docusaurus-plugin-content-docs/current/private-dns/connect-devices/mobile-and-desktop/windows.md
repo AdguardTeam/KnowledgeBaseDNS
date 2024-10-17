@@ -5,64 +5,64 @@ sidebar_position: 5
 
 Chcete-li zařízení iOS připojit k AdGuard DNS, přidejte je nejprve na _Přehled_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Windows.
-3. Name the device.
+1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
+2. V rozbalovací nabídce _Typ zařízení_ vyberte Windows.
+3. Pojmenujte zařízení.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
 ## Použití blokátoru reklam AdGuard (placená možnost)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. Můžete si vybrat z různých šifrovacích protokolů. Spolu s DNS filtrováním získáte také vynikající blokátor reklam, který funguje v celém systému.
+Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro nastavení AdGuard DNS v zařízení Windows. Můžete si vybrat z různých šifrovacích protokolů. Spolu s DNS filtrováním získáte také vynikající blokátor reklam, který funguje v celém systému.
 
-1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
-3. Click _Settings_ at the top of the app's home screen.
+1. [Nainstalujte aplikaci](https://adguard.com/adguard-windows/overview.html) do zařízení, které chcete připojit k AdGuard DNS.
+2. Otevřete aplikaci.
+3. Klikněte na _Nastavení_ v horní části domovské obrazovky aplikace.
    ![Settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
-4. Select the _DNS Protection_ tab from the menu on the left.
+4. V nabídce vlevo vyberte kartu _DNS ochrana_.
    ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
-5. Click your currently selected DNS server.
+5. Klikněte na aktuálně vybraný DNS server.
    ![DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
-6. Scroll down and click _Add a custom DNS server_.
+6. Přejděte dolů a klikněte na _Přidat vlastní DNS server_.
    ![Add a custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
-7. In the DNS upstreams field, paste one of the following addresses. If you’re not sure which one to prefer, choose DNS-over-HTTPS.
+7. Do pole odchozí DNS vložte jednu z následujících adres. Pokud si nejste jisti, kterému z nich dát přednost, vyberte možnost DNS-over-HTTPS.
    ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
    ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
 8. Klikněte na _Uložit a vybrat_.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+9. DNS server, který jste přidali, se objeví v dolní části seznamu _Vlastní DNS servery_.
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
 ## Použití AdGuard VPN
 
 Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže pokud potřebujete jak VPN, tak soukromý DNS, AdGuard VPN je vaše nejlepší volba.
 
-1. Install AdGuard VPN.
-2. Open the app and click _Settings_.
-3. Select _App settings_.
+1. Nainstalujte AdGuard VPN.
+2. Otevřete aplikaci a klikněte na _Nastavení_.
+3. Vyberte _Nastavení aplikace_.
    ![App settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
-4. Scroll down and select _DNS servers_.
+4. Přejděte dolů a vyberte _Servery DNS_.
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
-5. Click _Add custom DNS server_.
+5. Klikněte na _Přidat vlastní DNS server_.
    ![Add custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
-6. In the _Server address_ field, paste one of the following addresses. If you’re not sure which one to prefer, select DNS-over-HTTPS.
+6. Do pole _Adresa serveru_ vložte jednu z následujících adres. Pokud si nejste jisti, kterému z nich dát přednost, vyberte možnost DNS-over-HTTPS.
    ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
    ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
 7. Klikněte na _Uložit a vybrat_.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
-## Use AdGuard DNS Client
+## Použití klienta AdGuard DNS
 
-AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
+Klient AdGuard DNS je univerzální multiplatformní konzolový nástroj, který umožňuje připojení k AdGuard DNS pomocí šifrovaných protokolů DNS.
 
-More details can be found in [different article](/dns-client/overview/).
+Další podrobnosti najdete v [jiném článku](/dns-client/overview/).
 
 ## Konfigurace běžného DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

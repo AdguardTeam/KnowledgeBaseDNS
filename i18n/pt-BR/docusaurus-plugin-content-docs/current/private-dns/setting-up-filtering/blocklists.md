@@ -1,32 +1,32 @@
 ---
-title: Blocklists
+title: Listas de bloqueio
 sidebar_position: 1
 ---
 
-## What blocklists are
+## O que são Listas de bloqueio
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Listas de bloqueio são conjuntos de regras em formato de texto que o AdGuard DNS usa para filtrar anúncios e conteúdos que podem comprometer sua privacidade. Em geral, um filtro consiste em regras com um foco semelhante. Por exemplo, pode haver regras para idiomas de sites (como filtros em alemão ou russo) ou regras que protegem contra sites de phishing (como a Lista de Bloqueio de URL de Phishing). Você pode facilmente ativar ou desativar essas regras como um grupo.
 
-## Why they are useful
+## Por que elas são úteis
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Listas de bloqueio são projetadas para uma personalização flexível das regras de filtragem. Por exemplo, pode ser que você queira bloquear domínios de publicidade em uma região de idioma específica, ou talvez queira se livrar de domínios de rastreamento ou publicidade. Selecione as listas de bloqueio que você deseja e personalize a filtragem a seu gosto.
 
-## How to activate blocklists in AdGuard DNS
+## Como ativar listas de bloqueio no AdGuard DNS
 
-To activate the blocklists:
+Para ativar as listas de bloqueio:
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. Abra a Dashboard.
+2. Vá para a seção _Servidores_.
+3. Selecione o servidor requerido.
+4. Clique em _Listas de bloqueio_.
 
-## Blocklists types
+## Tipos de listas de bloqueio
 
 ### Geral
 
-A group of filters that includes lists for blocking ads and tracking domains.
+Um grupo de filtros que inclui listas para bloquear anúncios e domínios de rastreadores.
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Listas de bloqueio gerais \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
 ### Regional
 

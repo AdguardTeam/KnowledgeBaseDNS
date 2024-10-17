@@ -23,7 +23,7 @@ MikroTik routers use the open source RouterOS operating system, which provides r
      - `94.140.14.49`
      - `94.140.14.59`
    - Set _Allow Remote Requests_ to _Yes_ (this is crucial for DoH to function)
-   - In the _Use DoH server_ field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+   - Dans le champ _Utiliser le serveur DoH_, saisissez l'URL du serveur DNS AdGuard privé : `https://d.adguard-dns.com/dns-query/*******`
    - Click _OK_
 4. Create Static DNS Records:
    - In the _DNS Settings_, click _Static_
@@ -43,12 +43,12 @@ MikroTik routers use the open source RouterOS operating system, which provides r
    - You might need to reboot your MikroTik router for all changes to take effect
    - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at `192.168.1.1` or `192.168.0.1`.
+2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
 3. Open _Webfig_ → _IP_ → _DNS_.
 4. Select _Servers_ and enter one of the following DNS server addresses.
    - IPv4: `94.140.14.49` and `94.140.14.59`
@@ -56,5 +56,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 5. Save the settings.
 6. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -3,27 +3,27 @@ title: Xbox One
 sidebar_position: 6
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Spielkonsolen unterstützen kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von Öffentlichem AdGuard DNS oder Privatem AdGuard DNS über eine verknüpfte IP-Adresse.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Möglicherweise unterstützt Ihr Router die Verwendung von verschlüsselten DNS-Servern, so dass Sie jederzeit Privates AdGuard DNS auf ihm konfigurieren und Ihre Spielkonsole damit verbinden können.
 
 [So konfigurieren Sie Ihren Router](/private-dns/connect-devices/routers/routers.md)
 
 ## Mit AdGuard DNS verbinden
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS-Server verwendet, oder konfigurieren Sie sie über eine verknüpfte IP:
 
-1. Turn on your Xbox One console and sign in to your account.
-2. Press the Xbox button on your controller to open the guide, then select _System_ from the menu.
-3. In the _Settings_ menu, select _Network_.
-4. Under _Network Settings_, select _Advanced Settings_.
-5. Under _DNS Settings_, select _Manual_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Schalten Sie Ihre Xbox One-Konsole ein und melden Sie sich bei Ihrem Konto an.
+2. Drücken Sie die Xbox-Taste auf Ihrem Controller, um das Handbuch zu öffnen, und wählen Sie dann _System_ aus dem Menü.
+3. Wählen Sie im Menü _Einstellungen_ die Option _Netzwerk_.
+4. Wählen Sie unter _Netzwerkeinstellungen_ die Option _Erweiterte Einstellungen_.
+5. Wählen Sie unter _DNS-Einstellungen_ die Option _Manuell_.
+6. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
    - `94.140.14.49`
    - `94.140.14.59`
 7. Speichern Sie die Änderungen.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

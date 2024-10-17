@@ -3,18 +3,18 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+Роутеры OpenWRT используют операционную систему с открытым исходным кодом на базе Linux, которая предоставляет возможность гибкой настройки роутеров и шлюзов в соответствии с предпочтениями пользователей. Разработчики позаботились о добавлении поддержки зашифрованных DNS-серверов, что позволяет настроить Private AdGuard DNS на вашем устройстве.
 
-## Configure DNS-over-HTTPS
+## Настройте DNS-over-HTTPS
 
-- **Command-line instructions**. Install the required packages. DNS encryption should be enabled automatically.
+- **Инструкции командной строки**. Установите необходимые пакеты. DNS-шифрование должно быть включено автоматически.
 
   ```# Install packages
-  1. opkg update
+  1. opkg update
   2. opkg install https-dns-proxy
 
   ```
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Веб-интерфейс**. Если вы хотите управлять настройками через веб-интерфейс, установите необходимые пакеты.
 
   ```# Install packages
   1. opkg update
@@ -22,9 +22,9 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-dns-proxy.
+Перейдите в раздел «LuCI» → «Сервисы» → «HTTPS DNS Proxy» для настройки https-dns-proxy.
 
-- **Configure DoH provider**. https-dns-proxy is configured with Google DNS and Cloudflare DNS by default. You need to change it to AdGuard DoH. Specify several resolvers to improve fault tolerance.
+- **Настройте провайдер DoH**. https-dns-proxy настроен с Google DNS и Cloudflare DNS по умолчанию. Вам необходимо изменить его на AdGuard DoH. Укажите несколько DNS преобразователей (DNS resolvers) для повышения отказоустойчивости.
 
   ```# Configure DoH provider
   1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -37,18 +37,18 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
   8. /etc/init.d/https-dns-proxy restart
   ```
 
-## Configure DNS-over-TLS
+## Настройте DNS-over-TLS
 
-- **Command-line instructions**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **Инструкции командной строки**. [Отключите](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) роль DNS в Dnsmasq или удалите ее полностью, при необходимости [заменив](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) роль DHCP с odhcpd.
 
   ```# Install packages
   1. opkg update
   2. opkg install unbound-daemon ca-certificates
   ```
 
-LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
+Клиенты локальной сети и локальная система должны использовать Unbound в качестве основного резольвера при условии, что Dnsmasq отключён.
 
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Веб-интерфейс**. Если вы хотите управлять настройками через веб-интерфейс, установите необходимые пакеты.
 
   ```# Install packages
   1. opkg update
@@ -56,9 +56,9 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
+Перейдите в «LuCI» → «Сервисы» → «Рекурсивный DNS», чтобы настроить Unbound.
 
-- **Configure AdGuard DNS-over-TLS**.
+- **Настройка DNS-over-TLS**.
 
   ```1. uci add unbound zone
   2. uci set unbound.@zone[-1].enabled="1"
@@ -75,21 +75,21 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
   13. /etc/init.d/unbound restart
   ```
 
-## Use your router admin panel
+## Через панель управления роутера
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Network_ → _Interfaces_.
-4. Select your Wi-Fi network or wired connection.
-5. Scroll down to IPv4 address or IPv6 address, depending on the IP version you want to configure.
-6. Under _Use custom DNS servers_, enter the IP addresses of the DNS servers you want to use. You can enter multiple DNS servers, separated by spaces or commas:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Optionally, you can enable DNS forwarding if you want the router to act as a DNS forwarder for devices on your network.
-8. Save the settings.
-9. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
+2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
+3. Откройте «Сеть» → «Интерфейсы».
+4. Выберите сеть Wi-Fi или проводное соединение.
+5. Прокрутите вниз до IPv4-адреса или IPv6-адреса, в зависимости от версии IP, которую вы хотите настроить.
+6. Под пунктом «Использовать пользовательские DNS серверы» введите IP-адреса DNS-серверов, которые вы хотите использовать. Вы можете ввести несколько DNS-серверов, разделив их пробелами или запятыми:
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+7. При желании вы можете включить переадресацию DNS, если хотите, чтобы роутер действовал как переадресатор DNS для устройств в вашей сети.
+8. Сохраните настройки.
+9. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -98,7 +98,7 @@ This variant doesn't filter anything.
 | DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`   | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                       |
 | DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
 
-#### Security
+#### Sicherheit
 
 This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains.
 
@@ -406,6 +406,17 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | --------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` und `52.3.100.184` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=54.174.40.213&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
+
+| Protokoll      | Adresse                          |                                                                                                                                                                                  |
+| -------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `193.110.81.0` und `185.253.5.0` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=193.110.81.0&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Zu AdGuard hinzufügen](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Zu AdGuard hinzufügen](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=quic://zero.dns0.eu), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) ist ein kostenloser alternativer DNS-Dienst von Dyn.
@@ -588,17 +599,6 @@ More strictly filtering policies with blocking — ads, marketing, tracking, cli
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Zu AdGuard hinzufügen](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Zu AdGuard hinzufügen](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
 
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
-
-| Protokoll      | Adresse                          |                                                                                                                                                                                  |
-| -------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `193.110.81.0` und `185.253.5.0` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=193.110.81.0&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Zu AdGuard hinzufügen](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Zu AdGuard hinzufügen](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=quic://zero.dns0.eu), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
-
 ### Quad9 DNS
 
 [Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don't provide a censoring component.
@@ -661,7 +661,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.rabbitdns.org/dns-query` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org) |
 
-#### Sicherheitsfilter
+#### Security-filtering
 
 | Protokoll      | Adresse                                    |                                                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

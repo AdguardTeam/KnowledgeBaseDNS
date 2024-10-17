@@ -20,13 +20,13 @@ Here are some general instructions for setting up Private AdGuard DNS on routers
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
+3. Find where DNS settings are located in the router's admin console. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
    - IPv4: `94.140.14.49` ve `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 
 4. Ayarları kaydedin.
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -11,20 +11,20 @@ To make your filtering more flexible and better suited to your preferences, chec
 
 ## How to use
 
-To set up user rules:
+Para configurar as regras de usuário:
 
-1. Navigate to the _Dashboard_.
+1. Navegue até a _Daashboard_.
 
-2. Go to the _Servers_ section.
+2. Vá para a seção _Servidores_.
 
-3. Select the required server.
+3. Selecione o servidor requerido.
 
-4. Click the _User rules_ option.
+4. Clique na opção _Regras de usuário_.
 
-5. You'll find several options for adding user rules.
+5. Você encontrará várias opções para adicionar regras de usuário.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - A maneira mais fácil é usar o gerador. Para usá-lo, clique em _Adicionar nova regra_ → Insira o nome do domínio que você deseja bloquear ou desbloquear → Clique em _Adicionar regra_
+     ![Adicionar regra \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - A maneira avançada é usar o editor de regras. Clique em _Abrir editor_ e insira regras de bloqueio de acordo com a [sintaxe](/general/dns-filtering-syntax/)
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Esse recurso permite que você [redirecione uma consulta para outro domínio substituindo o conteúdo da consulta DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

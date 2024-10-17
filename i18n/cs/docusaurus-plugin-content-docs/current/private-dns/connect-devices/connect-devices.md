@@ -1,26 +1,26 @@
 ---
-title: General information
+title: Obecné informace
 sidebar_position: 1
 toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-In this section you will find instructions on how to connect your device to AdGuard DNS and learn about the main features of the service.
+V této části najdete pokyny k připojení zařízení k AdGuard DNS a informace o hlavních funkcích služby.
 
 - [Android](/private-dns/connect-devices/mobile-and-desktop/android.md)
 - [iOS](/private-dns/connect-devices/mobile-and-desktop/ios.md)
 - [macOS](/private-dns/connect-devices/mobile-and-desktop/macos.md)
 - [Windows](/private-dns/connect-devices/mobile-and-desktop/windows.md)
 - [Linux](/private-dns/connect-devices/mobile-and-desktop/linux.md)
-- [Routers](/private-dns/connect-devices/routers/routers.md)
-- [Game consoles](/private-dns/connect-devices/game-consoles/game-consoles.md)
+- [Routery](/private-dns/connect-devices/routers/routers.md)
+- [Herní konzole](/private-dns/connect-devices/game-consoles/game-consoles.md)
 
-For devices that do not natively support encrypted DNS protocols, we offer three other options:
+Pro zařízení, která nativně nepodporují šifrované protokoly DNS, nabízíme tři další možnosti:
 
-- [AdGuard DNS Client](/dns-client/overview.md)
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Klient AdGuard DNS](/dns-client/overview.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
-If you want to restrict access to AdGuard DNS to certain devices, use [DNS-over-HTTPS with authentication](/private-dns/connect-devices/other-options/doh-authentication.md).
+Pokud chcete omezit přístup k AdGuard DNS na určitá zařízení, použijte [DNS-over-HTTPS s ověřováním](/private-dns/connect-devices/other-options/doh-authentication.md).
 
-For connecting a large number of devices, there is an [automatic connection option](/private-dns/connect-devices/other-options/automatic-connection.md).
+Pro připojení velkého počtu zařízení existuje možnost [automatické připojení](/private-dns/connect-devices/other-options/automatic-connection.md).

@@ -11,14 +11,14 @@ You can create a connection link and use it in the device settings. Your device 
 
 ## How to configure automatic connection
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
+1. _Pano_ öğesini açın ve gerekli sunucuyu seçin.
+2. _Cihazlar_ öğesine gidin.
+3. Cihazların otomatik olarak bağlanma seçeneğini etkinleştirin.
    ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
 Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
 
-### Examples of automatic connection addresses
+### Otomatik bağlantı adreslerine örnekler
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
 
@@ -32,7 +32,7 @@ When creating devices manually, please note that there are restrictions related 
 
 **Name length**: 50 characters maximum. Characters beyond this limit are ignored.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Permitted characters**: English letters, numbers, and hyphens `-`. Diğer karakterler göz ardı edilir.
 
 **Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
 
@@ -43,17 +43,17 @@ When creating devices manually, please note that there are restrictions related 
 - Android — `adr`
 - iOS — `ios`
 - Linux — `lnx`
-- Router — `rtr`
+- Yönlendirici — `rtr`
 - Akıllı TV — `stv`
 - Oyun konsolu — `gam`
 - Diğer — `otr`
 
-## Link generator
+## Bağlantı oluşturucu
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Belirli cihaz türü ve protokol için bir bağlantı oluşturan bir şablon ekledik.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+1. _Sunucular_ → _Sunucu ayarları_ → _Cihazlar_ → _Cihazları otomatik olarak bağla_ öğesine gidin ve _Bağlantı oluşturucu ve talimatlar_ öğesine tıklayın.
+2. Kullanmak istediğiniz protokolün yanı sıra cihaz adını ve cihaz türünü seçin.
+3. _Bağlantı oluştur_ öğesine tıklayın.
+   ![Bağlantı oluştur \*mobil\_sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+4. Bağlantıyı başarıyla oluşturdunuz, şimdi sunucu adresini kopyalayın ve [AdGuard uygulamalarından](https://adguard.com/welcome.html) birinde kullanın

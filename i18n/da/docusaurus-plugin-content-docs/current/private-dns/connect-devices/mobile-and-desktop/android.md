@@ -3,39 +3,39 @@ title: Android
 sidebar_position: 2
 ---
 
-To connect an Android device to AdGuard DNS, first add it to _Dashboard_:
+For at tilslutte en Android-enhed til AdGuard DNS, føj den først til _Kontrolpanel_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Android.
-3. Name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
+1. Gå til _Kontrolpanel_ og klik på _Tilslut ny enhed_.
+2. Vælg Android i rullemenuen _Enhedstype_.
+3. Navngiv enheden.
+   ![Tilslutning af enhed \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
 ## Brug AdGuard Ad Blocker (betalt mulighed)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Android device. Man kan vælge mellem forskellige krypteringsprotokoller. Sammen med DNS-filtrering får man også en fremragende adblocker, der fungerer på hele systemet.
+Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til opsætning af AdGuard DNS på sin Android-enhed. Man kan vælge mellem forskellige krypteringsprotokoller. Sammen med DNS-filtrering får man også en fremragende adblocker, der fungerer på hele systemet.
 
-1. Install [the AdGuard app](https://adguard.com/adguard-android/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
-3. Tap the shield icon in the menu bar at the bottom of the screen.
-   ![Shield icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
-4. Tap _DNS protection_.
-   ![DNS protection \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
-5. Select _DNS server_.
-   ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
-6. Scroll down to _Custom servers_ and tap _Add DNS server_.
-   ![Add DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _Server adresses_ field in the app. If you are not sure which one to use, select _DNS-over-HTTPS_.
+1. Installér [AdGuard-appen](https://adguard.com/adguard-android/overview.html) på den enhed, der skal tilsluttes AdGuard DNS.
+2. Åbn appen.
+3. Tryk på skjoldikonet på menubjælken nederst på skærmen.
+   ![Skjoldikon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
+4. Tryk på _DNS-beskyttelse_.
+   ![DNS-beskyttelse \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
+5. Vælg _DNS-server_.
+   ![DNS-server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
+6. Rul ned til _Tilpassede servere_ og tryk på _Tilføj DNS-server_.
+   ![Tilføj DNS-server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
+7. Kopiér en af flg. DNS-adresser, og indsæt den i feltet _Serveradresser_ i appen. Er man usikker på, hvilken én man skal bruge, vælg _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
-8. Tap _Add_.
-9. The DNS server you’ve added will appear at the bottom of the _Custom servers_ list. To select it, tap its name or the radio button next to it.
-   ![Select DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
-10. Tap _Save and select_.
-    ![Save and select \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
+   ![Tilpasset DNS-server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
+8. Tryk på Tilføj\*.
+9. Den tilføjede DNS-server vises nederst på listen, _Tilpassede DNS-servere_. For at vælge den, tryk på navnet eller radioknappen ved siden af det.
+   ![Vælg DNS-server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
+10. Tryk på _Gem og vælg_.
+    ![Gem og vælg \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
 Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
-## Use AdGuard VPN
+## Brug af AdGuard VPN
 
 Ikke alle VPN-tjenester understøtter krypteret DNS. Vores VPN understøtter det dog, så har man behov for både et VPN og en privat DNS, er AdGuard VPN det oplagte valg.
 
@@ -66,7 +66,7 @@ Man kan opsætte DNS-serveren i enhedsindstillingerne. Bemærk venligst, at Andr
    ![Indstillinger \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
 2. Vælg _Avanceret_ og tryk på _Private DNS_.
    ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
-3. Select the _Private DNS provider hostname_ option and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`.
+3. Vælg indstillingen _Private DNS-udbyder værtsnavn_ og angiv adressen på den personlige server: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Tryk på _Gem_.
    ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
    All done! Enheden er nu tilsluttet AdGuard DNS.

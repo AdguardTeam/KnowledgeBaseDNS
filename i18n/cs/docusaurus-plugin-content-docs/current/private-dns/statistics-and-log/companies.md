@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: Společnosti
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Na této kartě můžete rychle zjistit, které společnosti odesílají nejvíce požadavků a které společnosti jich mají nejvíce zablokovaných.
 
 ![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+Stránka Společnosti je rozdělena do dvou kategorií:
 
-- **Top requested company**
-- **Top blocked company**
+- **Společnost zasílající nejvíce požadavků**
+- **Nejblokovanější společnost**
 
-These are further divided into sub-categories:
+Ty se dále dělí na podkategorie:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Reklama**: reklama a další požadavky související s reklamou, které shromažďují a sdílejí uživatelská data, analyzují chování uživatelů a cílí reklamu
+- **Slídiče**: požadavky z webových stránek a třetích stran za účelem sledování aktivity uživatele
+- **Sociální sítě**: požadavky na webové stránky sociálních sítí
+- **CDN**: požadavek připojený k síti CDN (Content Delivery Network), celosvětové síti proxy serverů, která urychluje doručování obsahu koncovým uživatelům
+- **Další**
 
-### Top companies
+### Nejaktivnější společnosti
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+V této tabulce zobrazujeme nejen názvy nejnavštěvovanějších nebo nejčastěji blokovaných společností, ale také informace o tom, z jakých domén se o ně žádá nebo které domény jsou nejvíce blokovány.
 
 ![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

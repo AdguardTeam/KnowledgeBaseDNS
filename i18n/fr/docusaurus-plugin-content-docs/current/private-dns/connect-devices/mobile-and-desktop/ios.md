@@ -12,7 +12,7 @@ To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
 
 ## Use AdGuard Ad Blocker (paid option)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your iOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your iOS device. You can choose from various encryption protocols. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
 
 1. Install the [AdGuard app](https://adguard.com/adguard-ios/overview.html) on the device you want to connect to AdGuard DNS.
 2. Open the AdGuard app.
@@ -67,7 +67,7 @@ If you are using a VPN, the configuration profile will be ignored.
 
 :::
 
-1. [Download](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml) profile.
+1. [Téléchargez](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml) le profil.
 2. Open settings.
 3. Tap _Profile Downloaded_.
    ![Profile Downloaded \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
@@ -78,5 +78,5 @@ If you are using a VPN, the configuration profile will be ignored.
 
 If you prefer not to use extra software to configure DNS, you can opt for unencrypted DNS. There are two options: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

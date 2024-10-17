@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: Journal des modifications
 sidebar_position: 3
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,20 +10,20 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/CHANGELOG.md
 -->
 
-This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
+Cet article contient le journal des changements pour [AdGuard DNS API](private-dns/api/overview.md).
 
 ## v1.9
 
-_Released on July 11, 2024_
+_Sortie le 11 juillet 2024_
 
 - Added automatic device connection functionality:
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
+  - Nouveau paramètre de serveur DNS — `auto_connect_devices_enabled`, permettant l’approbation pour des appareils se connectant automatiquement via un type de lien spécifique
   - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+- Remplacement de `int` par `long` pour `queries` dans CategoryQueriesStats, pour `used` dans AccountLimits, et pour `blocked` et `queries` dans QueriesStats
 
 ## v1.8
 
-_Released on April 20, 2024_
+_Sortie le 20 avril 2024_
 
 - Added support for DNS-over-HTTPS with authentication:
   - New operation — reset DNS-over-HTTPS password for device
@@ -32,25 +32,25 @@ _Released on April 20, 2024_
 
 ## v1.7
 
-_Released on March 11, 2024_
+_Sortie le 11 mars 2024_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
-- Added new limits to Account limits:
-  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+- Ajout de la fonctionnalité d'adresses IPv4 dédiées :
+  - Les adresses IPv4 dédiées peuvent désormais être utilisées sur des appareils pour la configuration du serveur DNS
+  - L'adresse IPv4 dédiée est désormais associée à l'appareil auquel elle est liée, de sorte que les requêtes faites à cette adresse sont enregistrées pour cet appareil
+- Ajout de nouvelles opérations :
+  - Répertorier toutes les adresses IPv4 dédiées disponibles
+  - Allouer une nouvelle adresse IPv4 dédiée
+  - Lier une adresse IPv4 disponible à un appareil
+  - Dissocier une adresse IPv4 d'un appareil
+  - Requête d'information sur les addresse dédiées associées à un appareil
+- Ajout de nouvelles limites aux limites de compte :
+  - `dedicated_ipv4` fournit des informations sur le nombre d'adresses IPv4 dédiées déjà allouées, ainsi que la limite sur celles-ci
+- Champs obsolète de DNSServerSettings supprimé :
   - `safebrowsing_enabled`
 
 ## v1.6
 
-_Released on January 22, 2024_
+_Sortie le 22 janvier 2024_
 
 - Added new Access settings section for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
 
@@ -58,21 +58,21 @@ _Released on January 22, 2024_
   - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
   - `blocked_domain_rules` — here you can specify which domains are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
 
-- Added new limits to Account limits:
+- Ajout de nouvelles limites aux limites de compte :
 
-  - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
-  - `user_rules` shows the amount of created user rules, as well as the limit on them
+  - `access_rules` fournit la somme des valeurs `blocked_clients` et `blocked_domain_rules` actuellement utilisées, ainsi que la limite des règles d'accès
+  - `user_rules` montre le nombre de règles utilisateur créées, ainsi que la limite qui leur est imposée
 
 - Added a new `ip_log_enabled` setting to log client IP addresses and domains
 
-- Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
+- Ajout d'un nouveau code d'erreur `FIELD_REACHED_LIMIT` pour indiquer quand les limites ont été atteintes :
 
   - For the total number of `blocked_clients` and `blocked_domain_rules` in access settings
   - For `rules` in custom user rules settings
 
 ## v1.5
 
-_Released on June 16, 2023_
+_Sortie le 16 juin 2023_
 
 - Added a new `block_nrd` setting and grouped all security-related settings in one place
 
@@ -128,36 +128,36 @@ here a new field `safebrowsing_settings` is used instead of the deprecated `safe
 
 ## v1.4
 
-_Released on March 29, 2023_
+_Sortie le 29 mars 2023_
 
 - Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
 
 ## v1.3
 
-_Released on December 13, 2022_
+_Sortie le 13 décembre 2022_
 
-- Added method to get account limits
+- Ajout d'une méthode pour obtenir les limites du compte
 
 ## v1.2
 
-_Released on October 14, 2022_
+_Sortie le 14 octobre 2022_
 
 - Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
 
 ## v1.1
 
-_Released on July 7, 2022_
+_Sortie le 7 juillet 2022_
 
-- Added methods to retrieve statistics by time, domains, companies and devices
+- Ajout de méthodes pour récupérer des statistiques par temps, domaines, sociétés et appareils
 - Added method for updating device settings
 - Fixed required fields definition
 
 ## v1.0
 
-_Released on February 22, 2022_
+_Sortie le 22 février 2022_
 
 - Added authentication
-- CRUD operations with devices and DNS servers
-- Query log
+- Opérations CRUD avec des appareils et des serveurs DNS
+- Journal des requêtes
 - Downloading DoH and DoT .mobileconfig
 - Filter lists and web services

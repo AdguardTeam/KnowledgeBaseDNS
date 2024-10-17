@@ -48,11 +48,11 @@
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
-    "message": "Routers",
+    "message": "路由器",
     "description": "The label for category Routers in sidebar sidebar"
   },
   "sidebar.sidebar.category.Game consoles": {
-    "message": "Game consoles",
+    "message": "游戏机",
     "description": "The label for category Game consoles in sidebar sidebar"
   },
   "sidebar.sidebar.category.Other options": {

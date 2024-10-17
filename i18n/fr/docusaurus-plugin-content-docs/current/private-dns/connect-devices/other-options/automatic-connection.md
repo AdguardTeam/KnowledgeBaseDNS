@@ -5,16 +5,16 @@ sidebar_position: 5
 
 ## Why it is useful
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Tout le monde ne se sent pas à l'aise pour ajouter des appareils via le tableau de bord. Par exemple, si vous êtes un administrateur système configurant plusieurs appareils d'entreprise simultanément, vous souhaiterez minimiser les tâches manuelles autant que possible.
 
 You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
 
 ## How to configure automatic connection
 
 1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+2. Allez dans _Appareils_.
+3. Activez l'option pour connecter les appareils automatiquement.
+   ![Connecter les appareils automatiquement \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
 Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
 
@@ -28,9 +28,9 @@ Now you can automatically connect your device to the server by creating a specia
 
 ### Naming conventions
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Lors de la création manuelle d'appareils, veuillez noter qu'il existe des restrictions liées à la longueur du nom, aux caractères, aux espaces et aux traits d'union.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Longueur du nom**: 50 caractères maximum. Les caractères au-delà de cette limite sont ignorés.
 
 **Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
 
@@ -52,7 +52,7 @@ When creating devices manually, please note that there are restrictions related 
 
 We’ve added a template that generates a link for the specific device type and protocol.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
+1. Allez à _Serveurs_ → _Paramètres du serveur_ → _Appareils_ → _Connecter les appareils automatiquement_ et cliquez sur _Générateur de liens et instructions_.
 2. Select the protocol you want to use as well as the device name and the device type.
 3. Click _Generate link_.
    ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)

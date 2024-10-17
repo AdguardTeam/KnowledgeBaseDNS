@@ -309,9 +309,9 @@ Kullanıcıya ait DNS sunucularını listeler. Varsayılan olarak en az bir vars
 
 ##### Yanıtlar
 
-| Kod | Açıklama            |
-| --- | ------------------- |
-| 200 | List of DNS servers |
+| Kod | Açıklama                  |
+| --- | ------------------------- |
+| 200 | DNS sunucularının listesi |
 
 #### POST
 
@@ -427,9 +427,9 @@ Filtre listelerini alır
 
 ##### Yanıtlar
 
-| Kod | Açıklama        |
-| --- | --------------- |
-| 200 | List of filters |
+| Kod | Açıklama            |
+| --- | ------------------- |
+| 200 | Filtrelerin listesi |
 
 ### /oapi/v1/oauth_token
 

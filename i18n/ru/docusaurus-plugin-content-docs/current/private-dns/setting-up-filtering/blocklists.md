@@ -1,65 +1,65 @@
 ---
-title: Blocklists
+title: Cписки блокировки
 sidebar_position: 1
 ---
 
-## What blocklists are
+## Что такое списки блокировки
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Cписки блокировки — это набор правил в текстовом формате, которые используются AdGuard DNS для фильтрации рекламы и контента, который может угрожать вашей защите данных. В общем, фильтр состоит из правил, имеющих схожую направленность. Здесь могут быть правила для языков сайтов (например, немецкие или русские фильтры) или правила для защиты от фишинговых сайтов (например, Phishing URL Blocklist). Вы можете легко включить или отключить эти правила как группу.
 
-## Why they are useful
+## Почему они полезны
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Cписки блокировки предназначены для гибкой настройки правил фильтрации. Например, вы можете захотеть заблокировать рекламные домены в определённом языковом регионе, или вы можете захотеть убрать домены трекеров или рекламы. Выберите необходимые списки блокировки и настройте фильтрацию по своему усмотрению.
 
-## How to activate blocklists in AdGuard DNS
+## Как активировать списки блокировки в AdGuard DNS
 
-To activate the blocklists:
+Чтобы активировать списки блокировки:
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. Откройте Панель управления.
+2. Перейдите в раздел _Серверы_.
+3. Выберите нужный сервер.
+4. Нажмите _Cписки блокировки_.
 
-## Blocklists types
+## Типы списков блокировки
 
 ### Общее
 
-A group of filters that includes lists for blocking ads and tracking domains.
+Группа фильтров, включающая списки блокировки рекламы и доменов трекеров.
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Основной режим списков блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
-### Regional
+### Региональные
 
-A group of filters consisting of regional lists to block domains in specific languages.
+Группа фильтров, состоящая из региональных списков для блокировки доменов на определённых языках.
 
-![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Региональные списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
 ### Безопасность
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+Группа фильтров, содержащая правила для блокировки мошеннических сайтов и фишинговых доменов.
 
-![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Списки безопасности \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
 ### Другие
 
-Blocklists with various blocking rules from third-party developers.
+Списки блокировки с различными правилами блокировки от сторонних разработчиков.
 
-![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Другие списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
 
-## Adding filters
+## Добавление фильтров
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+Если вы хотите, чтобы список фильтров AdGuard DNS был расширен, вы можете отправить запрос на добавление в соответствующем разделе [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) на GitHub.
 
-To submit a request:
+Чтобы отправить запрос:
 
-1. Go to the link above (you may need to register on GitHub).
-2. Click _New issue_.
-3. Click _Blocklist request_ and fill out the form.
-4. After filling out the form, click _Submit new issue_.
+1. Перейдите по ссылке выше (вам может понадобиться регистрация на GitHub).
+2. Нажмите _New issue_.
+3. Нажмите _Запрос на список блокировки_ и заполните форму.
+4. После заполнения формы нажмите _Submit new issue_.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+Если правила блокировки вашего фильтра не дублируют существующие, он будет добавлен в репозиторий.
 
 ## Пользовательские правила
 
-You can also create your own blocking rules.
-Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+Вы также можете создать свои собственные правила блокировки.
+Подробнее в статье [Пользовательские правила](/private-dns/setting-up-filtering/user-rules.md).

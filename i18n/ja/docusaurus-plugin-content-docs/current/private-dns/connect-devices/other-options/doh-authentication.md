@@ -11,7 +11,7 @@ This helps prevent unauthorized users from accessing it and enhances security. A
 
 ## How to set it up
 
-:::note Compatibility
+:::note 互換性
 
 This feature is supported by [AdGuard DNS Client](/dns-client/overview.md) as well as [AdGuard apps](https://adguard.com/welcome.html).
 

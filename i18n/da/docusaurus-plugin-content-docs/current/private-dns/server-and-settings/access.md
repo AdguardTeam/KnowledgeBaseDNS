@@ -3,30 +3,30 @@ title: Adgangsindstillinger
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+Ved at opsætte Adgangsindstillinger kan AdGuard DNS beskyttes mod uautoriseret adgang. F.eks., en dedikeret IPv4-adresse benyttes, og angribere, som bruger sniffere, har genkendt den og bombarderer den med forespørgsler. Intet problem, føj blot det irriterende domæne eller IP-adresse til listen, og det/den vil ikke kunne genere mere!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+Blokerede forespørgsler vises ikke i Forespørgselsloggen, og tælles ikke med i den samlede kvote.
 
-## How to set it up
+## Sådan opsættes det
 
-### Allowed clients
+### Tilladte klienter
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+Denne indstilling muliggør at angive, hvilke klienter, som kan bruge DNS-serveren. Den har den højeste prioritet. Hvis f.eks. den samme IP-adresse er på både sort- og hvidlisten, vil den stadig blive tilladt.
 
-### Disallowed clients
+### Ikke-tilladte klienter
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Her kan de klienter listes, som ikke har tilladelse til at bruge DNS-serveren. Man kan blokere adgangen for alle klienter og kun bruge de udvalgte. For at gøre dette, tilføj to adresser til de ikke-tilladte klienter: `0.0.0.0.0/0` og `::/0`. Angiv derefter i feltet _Tilladte klienter_ de adresser, som kan få adgang til serveren.
 
 :::note Vigtigt
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Før adgangsindstillingerne anvendes, skal man sikre sig, at man ikke blokerer sin egen IP-adresse. Gør man det, vil man ikke kunne få adgang til netværket. Skulle dette ske, afbryd blot forbindelsen til DNS-serveren, gå til adgangsindstillingerne og korrigér opsætningen.
 
 :::
 
-### Disallowed domains
+### Ikke-tilladte domæner
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+Her kan man angive de domæner (samt jokertegn og DNS-filtreringsregler), som nægtes adgang til DNS-serveren.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![Adgangsindstillinger \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+For at få vist IP-adresser knyttet til DNS-forespørgsler i forespørgselsloggen, markér afkrydsningsfeltet _Log IP-adresser_. For at gøre dette, åbn _Serverindstillinger_ → _Avancerede indstillinger_.

@@ -3,40 +3,40 @@ title: Asus
 sidebar_position: 3
 ---
 
-## Configure DNS-over-TLS
+## Настройка DNS-over-TLS
 
-These are general instructions for configuring Private AdGuard DNS for Asus routers.
+Это общая инструкция по настройке AdGuard DNS для роутеров Asus.
 
-The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
+Информация по настройке в этой инструкции взята с конкретной модели роутера, поэтому она может отличаться от интерфейса вашего устройства.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+При необходимости: Чтобы настроить DNS-over-TLS на ASUS, установите на компьютер прошивку [ASUS Merlin](https://www.asuswrt-merlin.net/download), подходящую для версии вашего роутера.
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. In the _Advanced Settings_ sidebar, navigate to the WAN section.
-4. In the _WAN DNS Settings_ section, set _Connect to DNS Server automatically_ to _No_.
-5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
-6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
-7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
-8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
-9. For _TLS Port_, enter 853.
-10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
+1. Войдите в панель управления роутера Asus. Доступ можно получить через [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), или [http://192.168.2.1](http://192.168.2.1/).
+2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
+3. На боковой панели «Дополнительные параметры» перейдите к разделу «WAN».
+4. В разделе «Настройки WAN DNS» установите для параметра «Автоматически подключаться к DNS-серверу» значение «Нет».
+5. Установите для параметра «Переадресация локальных запросов», «Включить повторную привязку DNS» и «Включить DNSSEC» значение «Нет».
+6. Измените протокол конфиденциальности DNS на DNS-over-TLS (DoT).
+7. Убедитесь, что для профиля DNS-over-TLS установлено значение «Строгий».
+8. Прокрутите вниз до раздела «Список серверов DNS-over-TLS». В поле «Адрес» введите один из следующих адресов:
+   - `94.140.14.49` и `94.140.14.59`
+9. В поле «Порт TLS» введите 853.
+10. В поле «Имя хоста TLS» введите адрес сервера Private AdGuard DNS:
     - `{Your_Device_ID}.d.adguard-dns.com`
-11. Scroll to the bottom of the page and click _Apply_.
+11. Прокрутите страницу вниз и нажмите «Применить».
 
-## Use your router admin panel
+## Через панель управления роутера
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_.
-4. Select _WAN_ or _Internet_.
-5. Open _DNS Settings_ or _DNS_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
+2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
+3. Откройте «Дополнительные настройки» или «Дополнительно».
+4. Выберите «WAN» или «Интернет».
+5. Откройте Настройки «DNS» или «DNS».
+6. Выберите «Ручной DNS». Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+7. Сохраните настройки.
+8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

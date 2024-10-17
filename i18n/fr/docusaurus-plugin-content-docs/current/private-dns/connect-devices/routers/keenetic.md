@@ -7,7 +7,7 @@ Keenetic routers are known for their stability and flexible configurations, and 
 
 ## Configure DNS-over-HTTPS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
 2. Press the menu button at the bottom of the screen and select _Management_.
 3. Open _System settings_.
 4. Press _Component options_ → _System component options_.
@@ -19,7 +19,7 @@ Keenetic routers are known for their stability and flexible configurations, and 
 
 ## Configure DNS-over-TLS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
 2. Press the menu button at the bottom of the screen and select _Management_.
 3. Open _System settings_.
 4. Press _Component options_ → _System component options_.
@@ -29,12 +29,12 @@ Keenetic routers are known for their stability and flexible configurations, and 
 8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. Click _Save_.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
+1. Ouvrez le panneau d'administration du routeur. It can be accessed at `192.168.1.1` or `192.168.0.1`.
+2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
 3. Open _Internet_ or _Home Network_.
 4. Select _WAN_ or _Internet_.
 5. Select _DNS_ or _DNS Settings_.
@@ -44,5 +44,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 7. Save the settings.
 8. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -257,7 +257,7 @@ $dnstype=value2
 
 **Правила, содержащие модификатор ответа `dnsrewrite`, получают больший приоритет в сравнении с другими правилами в AdGuard Home.**
 
-Ответы на все запросы к хосту, соответствующему правилу `dnsrewrite`, будут заменены. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Ответы на все запросы к хосту, соответствующему правилу `dnsrewrite`, будут заменены. Раздел ответа замещающего ответа будет содержать только RRs, которые соответствуют типу запроса и, возможно, CNAME RRs. Обратите внимание, что это означает, что ответы на некоторые запросы могут стать пустыми (`NODATA`), если хост соответствует правилу `dnsrewrite`.
 
 Сокращённый синтаксис:
 

@@ -39,4 +39,4 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 8. Tilslut IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

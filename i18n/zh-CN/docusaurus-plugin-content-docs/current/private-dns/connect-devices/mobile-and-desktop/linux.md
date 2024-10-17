@@ -5,7 +5,7 @@ sidebar_position: 6
 
 To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
+1. 进入「_仪表盘_」并点击「_连接新设备_」。
 2. In the drop-down menu _Device type_, select Linux.
 3. Name the device.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
@@ -30,13 +30,13 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 1. Click _System_ → _Preferences_ → _Network Connections_.
 2. Select the _Wireless_ tab, then choose the network you’re connected to.
 3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+4. 将列出的 DNS 地址更改为以下地址：
    - `94.140.14.49`
    - `94.140.14.59`
 5. Turn off _Auto mode_.
 6. Click _Apply_.
 7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+8. 将列出的 DNS 地址更改为以下地址：
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
 9. Turn off _Auto mode_.
@@ -94,7 +94,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `sudo service dnsmasq restart`
 
-All done! Your device is successfully connected to AdGuard DNS.
+完成！ 您的设备已成功连接到 AdGuard DNS。
 
 :::note Important
 
@@ -104,7 +104,7 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 
 ## Use plain DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
+如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 You have two choices: using linked IPs or dedicated IPs:
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
