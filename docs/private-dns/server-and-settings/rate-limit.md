@@ -17,5 +17,5 @@ If you are subscribed to AdGuard DNS *Team* or *Enterprise* plan, you can reques
 
  1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → *Account settings* → *Rate limit*
  1. Tap *request a limit increase* to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
- [Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+ ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
  1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
