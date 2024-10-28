@@ -3,42 +3,42 @@ title: Rodičovská ochrana
 sidebar_position: 4
 ---
 
-## What is it
+## Co to je
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+Rodičovská ochrana je soubor nastavení, který umožňuje přizpůsobit přístup k určitým webovým stránkám s "citlivým" obsahem.  Pomocí této funkce můžete dětem omezit přístup na stránky pro dospělé, přizpůsobit vyhledávací dotazy, zablokovat používání oblíbených služeb a další.
 
-## How to set it up
+## Jak to nastavit
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Na serverech můžete flexibilně konfigurovat všechny funkce, včetně funkce rodičovské ochrany. [V příslušném článku](private-dns/server-and-settings/server-and-settings.md) se můžete seznámit s tím, co je to "server" v AdGuard DNS, a dozvědět se, jak vytvořit různé servery s různými sadami nastavení.
 
-Then, go to the settings of the selected server and enable the required configurations.
+Poté přejděte do nastavení vybraného serveru a povolte požadované konfigurace.
 
-### Block adult websites
+### Blokování webových stránek pro dospělé
 
-Blocks websites with inappropriate and adult content.
+Blokuje webové stránky s nevhodným obsahem a obsahem pro dospělé.
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### Bezpečné vyhledávání
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Odstraňuje nevhodné výsledky ze služeb Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave a Ecosia.
 
 ![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### Omezený režim YouTube
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+Odstraňuje možnost prohlížet a přidávat komentáře pod videa a komunikovat s obsahem 18+ na YouTube.
 
 ![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### Blokované služby a weby
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS blokuje přístup k oblíbeným službám jedním kliknutím. Je to užitečné, pokud nechcete, aby připojená zařízení navštěvovala například Instagram a YouTube.
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### Nastavení času vypnutí
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+Povolí rodičovskou kontrolu ve vybraných dnech se zadaným časovým intervalem. Například jste svému dítěti povolili sledovat videa na YouTube pouze do 23:00 ve všední dny. O víkendech však tento přístup není omezen. Přizpůsobte si rozvrh podle svých představ a zablokujte přístup na vybrané stránky v požadovaných hodinách.
 
 ![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

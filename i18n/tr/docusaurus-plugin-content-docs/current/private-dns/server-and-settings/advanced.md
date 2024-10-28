@@ -14,17 +14,17 @@ Burada engellenen istek için DNS yanıtını seçebilirsiniz:
 - **NXDOMAIN**: NXDOMAIN koduyla yanıt verin
 - **Özel IP**: El ile ayarlanmış bir IP adresiyle yanıt verin
 
-## TTL (Time-To-Live)
+## TTL (Kullanım süresi)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. If the TTL value is high, recently unblocked requests may still look blocked for a while. If TTL is 0, the device does not cache responses.
+Kullanım süresi (TTL), bir istemci aygıtının bir DNS isteğine gelen yanıtı önbelleğe alması ve DNS sunucusundan yeniden istekte bulunmadan önbelleğinden alması için gereken zaman aralığını (saniye cinsinden) ayarlar. Eğer kullanım süresi yüksekse, yeni engellenmeyen istekler bir süre engelleniyormuş gibi görünmeye devam edebilir. TTL 0 ise cihaz yanıtları önbelleğe almaz.
 
 ## iCloud Private Relay'e erişimi engelle
 
-Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard DNS cannot protect them.
+iCloud Private Relay kullanan cihazlar, DNS ayarlarını yok sayabilir, bu nedenle AdGuard DNS onları koruyamaz.
 
 ## Firefox canary alan adını engelle
 
-Prevents Firefox from switching to the DoH resolver from its settings when AdGuard DNS is configured system-wide.
+AdGuard DNS sistem genelinde yapılandırıldığında Firefox'un ayarlarından DoH çözümleyicisine geçmesini engeller.
 
 ## IP adreslerini günlüğe kaydet
 

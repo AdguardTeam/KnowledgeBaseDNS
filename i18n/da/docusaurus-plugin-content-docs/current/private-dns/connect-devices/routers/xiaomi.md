@@ -3,23 +3,23 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have a lot of advantages: Steady strong signal, network security, stable operation, intelligent management, at the same time, the user can connect up to 64 devices to the local Wi-Fi network.
+Xiaomi-routere har mange fordele: Stabilt stærkt signal, netværkssikkerhed, stabil drift, intelligent håndtering. Brugeren kan ligeledes tilslutte op til 64 enheder til et lokalt Wi-Fi netværk.
 
-Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
+Desværre understøtter den ikke krypteret DNS, men den er fantastisk til opsætning af AdGuard DNS via linket IP.
 
 ## Brug routerens håndteringspanel
 
 Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
 
-1. Åbn routerens admin-panel. It can be accessed at `192.168.31.1` or the IP address of your router.
+1. Åbn routerens admin-panel. Routeren kan tilgås på `192.168.31.1`, eller hvis ændret, den aktuelle IP-adresse.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
-3. Open _Advanced Settings_ or _Advanced_, depending on your router model.
-4. Open _Network_ or _Internet_ and look for DNS or DNS Settings.
+3. Åbn _Avancerede indstillinger_ eller _Avanceret_, afhængigt af routermodel.
+4. Åbn _Netværk_ eller _Internet_ og find DNS eller DNS-indstillinger.
 5. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
    - IPv4: `94.140.14.49` and `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+6. Gem indstillingerne.
+7. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

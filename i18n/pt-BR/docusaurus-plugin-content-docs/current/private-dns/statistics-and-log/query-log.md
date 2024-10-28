@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: Registro de consultas
 sidebar_position: 5
 ---
 
-## What is Query log
+## O que é o Registro de consultas
 
-Query log is a useful tool for working with AdGuard DNS.
+O registro de consultas é uma ferramenta útil para trabalhar com AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Ele permite que você veja todas as solicitações feitas pelos seus dispositivos durante o período de tempo selecionado e classifique as solicitações por status, tipo, empresa, dispositivo, país.
 
-## How to use it
+## Como usar
 
-Here's what you can see and what you can do in the _Query log_.
+Veja o que você pode ver e o que você pode fazer no _Registro de consultas_.
 
-### Detailed information on requests
+### Informações detalhadas sobre as solicitações
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Informações sobre solicitações \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Bloqueando e desbloqueando domínios
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+As solicitações podem ser bloqueadas e desbloqueadas sem sair do registro, utilizando as ferramentas disponíveis.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Desbloquear domínio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Classificação de solicitações
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Você pode selecionar o status da solicitação, seu tipo, empresa, dispositivo e o período de tempo da solicitação que te interessa.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![Classificando solicitações \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Desativando o registro de consultas
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Se desejar, você pode desativar completamente o registro nas configurações da conta (mas lembre-se de que isso também desativará as estatísticas).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Registro \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

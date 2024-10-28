@@ -3,27 +3,27 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. Unfortunately, it does not support encrypted DNS, but it is great for setting up AdGuard DNS via linked IP.
+Le routeur UiFi (connu sous le nom de série UniFi d'Ubiquiti) présente un certain nombre d'avantages qui le rendent particulièrement adapté aux environnements domestiques, professionnels et d'entreprise. Malheureusement, il ne prend pas en charge le DNS chiffré, mais il est idéal pour configurer AdGuard DNS via IP liée.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Log in to the Ubiquiti UniFi controller.
-2. Go to _Settings_ → _Networks_.
-3. Click _Edit Network_ → _WAN_.
-4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses.
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-5. Click _Save_.
-6. Return to _Network_.
-7. Choose _Edit Network_ → _LAN_.
-8. Find _DHCP Name Server_ and select _Manual_.
-9. Enter your gateway address in the _DNS Server 1_ field. Alternatively, you can enter the AdGuard DNS server addresses in _DNS Server 1_ and _DNS Server 2_ fields:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-10. Save the settings.
-11. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Connectez-vous au contrôleur Ubiquiti UniFi.
+2. Accédez à _Paramètres_ → _Réseaux_.
+3. Cliquez sur _Modifier le réseau_ → _WAN_.
+4. Allez dans _Paramètres communs_ → _Serveur DNS_ et saisissez les adresses de serveur DNS suivantes.
+   - IPv4 : `94.140.14.49` et `94.140.14.59`
+   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
+5. Cliquez sur _Enregistrer_.
+6. Retournez au _Réseau_.
+7. Choisissez _Modifier le réseau_ → _LAN_.
+8. Recherchez _DHCP Name Server_ et sélectionnez _Manuel_.
+9. Saisissez votre adresse de passerelle dans le champ _Serveur DNS 1_. Vous pouvez également saisir les adresses des serveurs DNS AdGuard dans les champs _Serveur DNS 1_ et _Serveur DNS 2_ :
+   - IPv4 : `94.140.14.49` et `94.140.14.59`
+   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
+10. Enregistrez les paramètres.
+11. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
-- [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [IPs dédiées](private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)

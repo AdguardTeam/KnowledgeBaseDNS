@@ -7,7 +7,7 @@ sidebar_position: 4
 
 Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
 
-## How to set it up
+## 如何设置
 
 You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
 

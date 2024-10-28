@@ -1,5 +1,5 @@
 ---
-title: Using alongside iCloud Private Relay
+title: Usar junto con iCloud Private Relay
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4

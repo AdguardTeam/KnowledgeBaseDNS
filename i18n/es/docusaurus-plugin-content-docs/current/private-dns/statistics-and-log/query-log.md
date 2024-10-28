@@ -1,5 +1,5 @@
 ---
-title: Query log
+title: Registro de consultas
 sidebar_position: 5
 ---
 

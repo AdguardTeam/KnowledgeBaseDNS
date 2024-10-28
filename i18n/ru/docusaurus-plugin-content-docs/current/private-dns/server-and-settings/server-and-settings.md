@@ -1,27 +1,27 @@
 ---
-title: Server and settings
+title: Серверы и настройки
 sidebar_position: 1
 ---
 
-## What is server and how to use it
+## Что такое сервер и как его использовать
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+При настройке Личного AdGuard DNS вы столкнётесь с термином _сервер_.
 
-A server acts as the “profile” that you connect your devices to.
+Сервер действует как "профиль", к которому подключаются ваши устройства.
 
-Servers include configurations that you can customize to your liking.
+Серверы включают конфигурации, которые можно настроить по своему желанию.
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+При создании учетной записи мы автоматически создаем сервер с настройками по умолчанию. Вы можете изменить этот сервер или создать новый.
 
-For instance, you can have:
+Например, у вас может быть:
 
-- A server that allows all requests
-- A server that blocks adult content and certain services
-- A server that blocks adult content only during specific hours you choose
+- Сервер, который разрешает все запросы
+- Сервер, который блокирует контент для взрослых и определенные сервисы
+- Сервер, который блокирует контент для взрослых только в определенное выбранное вами время
 
-For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+Для получения дополнительной информации о фильтрации трафика и правилах блокировки ознакомьтесь со статьей [«Как настроить фильтрацию в AdGuard DNS»](/private-dns/setting-up-filtering/blocklists.md).
 
-If you're interested in specific settings, there are dedicated articles available for that:
+Если вас интересуют конкретные настройки, доступны специальные статьи:
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [Расширенные настройки](/private-dns/server-and-settings/advanced.md)
+- [Настройки доступа](/private-dns/server-and-settings/access.md)

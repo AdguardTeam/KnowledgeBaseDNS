@@ -5,17 +5,17 @@ sidebar_position: 4
 
 To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Mac.
-3. Name the device.
+1. Vai su _Cruscotto_ e fai clic su _Connetti nuovo dispositivo_.
+2. Nel menu a tendina _Tipo di dispositivo_, seleziona Mac.
+3. Assegna un nome al dispositivo.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## Utilizza AdGuard Blocca-Annunci (opzione a pagamento)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. Puoi scegliere tra vari protocolli di crittografia. Insieme al filtraggio DNS, ottieni anche un eccellente blocco degli annunci che funziona su tutto il sistema.
 
 1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
+2. Apri l'app.
 3. Click the icon in the top right corner.
    ![Protection icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
 4. Select _Preferences..._.
@@ -26,7 +26,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
    ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step6.png)
 7. Click _+_ in the bottom left corner.
    ![Click + \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step7.png)
-8. Copy one of the following DNS addresses and paste it into the _DNS servers_ field in the app. If you are not sure which one to prefer, select _DNS-over-HTTPS_.
+8. Copy one of the following DNS addresses and paste it into the _DNS servers_ field in the app. Se non sei sicuro di quale preferire, seleziona _DNS-over-HTTPS_.
    ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_1.png)
    ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_2.png)
 9. Click _Save and Choose_.
@@ -34,31 +34,31 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 10. Your newly created server should appear at the bottom of the list.
     ![Providers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Use AdGuard VPN
+## Utilizza l'app AdGuard VPN
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
+Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo fa, quindi se hai bisogno sia di una VPN che di un DNS privato, AdGuard VPN è la tua opzione ideale.
 
 1. Install the [AdGuard VPN app](https://adguard-vpn.com/mac/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the AdGuard VPN app.
+2. Apri l'app AdGuard VPN.
 3. Open _Settings_ → _App settings_ → _DNS servers_ → _Add Custom Server_.
    ![Add custom server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step3.png)
-4. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ text field. If you are not sure which one to prefer, select DNS-over-HTTPS.
+4. Copia uno dei seguenti indirizzi DNS e incollalo nel campo di testo _indirizzi server DNS_. If you are not sure which one to prefer, select DNS-over-HTTPS.
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
 5. Click _Save and select_.
 6. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Use a configuration profile
+## Usa un profilo di configurazione
 
-A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. It also allows you to configure Private AdGuard DNS on your device.
+A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
 
-:::note Important
+:::note Importante
 
-If you are using a VPN, the configuration profile will be ignored.
+Se stai utilizzando una VPN, il profilo di configurazione verrà ignorato.
 
 :::
 
@@ -71,11 +71,11 @@ If you are using a VPN, the configuration profile will be ignored.
    ![Install \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Enter the admin password and click _OK_.
 
-All done! Your device is successfully connected to AdGuard DNS.
+Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Configure plain DNS
+## Configura DNS semplice
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. You have two choices: using linked IPs or dedicated IPs.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)

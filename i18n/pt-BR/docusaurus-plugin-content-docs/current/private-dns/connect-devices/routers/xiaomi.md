@@ -3,23 +3,23 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have a lot of advantages: Steady strong signal, network security, stable operation, intelligent management, at the same time, the user can connect up to 64 devices to the local Wi-Fi network.
+Os roteadores Xiaomi têm muitas vantagens: sinal forte e estável, segurança da rede, operação estável, gerenciamento inteligente, ao mesmo tempo, o usuário pode conectar até 64 dispositivos à rede Wi-Fi local.
 
-Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
+Infelizmente, ele não oferece suporte para DNS criptografado, mas é ótimo para configurar o AdGuard DNS via IP vinculado.
 
-## Use your router admin panel
+## Use o painel de controle do seu roteador
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Use estas instruções se o seu roteador Keenetic não oferece suporte à configuração de DNS-over-HTTPS ou DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.31.1` or the IP address of your router.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_, depending on your router model.
-4. Open _Network_ or _Internet_ and look for DNS or DNS Settings.
-5. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.31.1` ou no endereço de IP do seu roteador.
+2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
+3. Abra Configurações avançadas ou Avançado, dependendo do modelo do seu roteador.
+4. Abra _Rede_ ou _Internet_ e procure DNS ou Configurações de DNS.
+5. Escolha _Manual DNS_. Selecione _Usar estes servidores DNS_ ou _Especificar servidor DNS manualmente_ e insira os seguintes endereços de servidor DNS:
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+6. Salve as configurações.
+7. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)

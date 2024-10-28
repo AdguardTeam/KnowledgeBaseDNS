@@ -5,7 +5,7 @@ sidebar_position: 3
 
 By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+Las peticiones bloqueadas no se mostrarán en el registro de consultas y no se cuentan en el límite total.
 
 ## How to set it up
 

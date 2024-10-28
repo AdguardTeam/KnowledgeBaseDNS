@@ -42,7 +42,7 @@ Cihazınızın varsayılan DNS sunucusu olarak AdGuard Home'u kullandığından 
 
 6. _Filtreler_ → _Özel filtreleme kuralları_ sayfasında müdahale edebilecek herhangi bir özel filtreleme kuralınız yok.
 
-## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+## Sorgu günlüğünde “CNAME veya IP tarafından engellendi” ne anlama geliyor? {#logs}
 
 AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Apache ters HTTP proxy ile alt dizinleri kullanmayın.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+Apache ters HTTP proxy ile alt dizinleri kullanmayın.  Apache'nin bağıl yönlendirmeleri diğer web sunucularından farklı şekilde ele aldığı bilinen bir sorundur ([#6604]). Bu, AdGuard Home web arayüzünde sorunlara neden olur.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 

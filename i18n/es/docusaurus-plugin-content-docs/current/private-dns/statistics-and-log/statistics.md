@@ -29,7 +29,7 @@ Here you can see the companies that have sent the most requests.
 
 ### Top destinations
 
-This shows the countries to which the most requests have been sent.
+Esto muestra los países a los que se han enviado más peticiones.
 
 In addition to the country names, the list contains two more general categories:
 

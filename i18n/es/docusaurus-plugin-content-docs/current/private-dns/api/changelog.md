@@ -158,6 +158,6 @@ _Released on February 22, 2022_
 
 - Added authentication
 - CRUD operations with devices and DNS servers
-- Query log
+- Registro de consultas
 - Downloading DoH and DoT .mobileconfig
 - Filter lists and web services

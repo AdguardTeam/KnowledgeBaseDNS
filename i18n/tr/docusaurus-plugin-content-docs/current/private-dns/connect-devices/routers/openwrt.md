@@ -3,7 +3,7 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+OpenWRT yönlendiriciler, yönlendiricileri ve ağ geçitlerini kullanıcı tercihlerine göre yapılandırma esnekliği sağlayan açık kaynaklı, Linux tabanlı bir işletim sistemi kullanır. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
 
 ## Configure DNS-over-HTTPS
 
@@ -12,7 +12,6 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
   ```# Install packages
   1. opkg update
   2. opkg install https-dns-proxy
-
   ```
 - **Web arayüzü**. Ayarları web arayüzünü kullanarak yönetmek istiyorsanız, gerekli paketleri yükleyin.
 
@@ -92,4 +91,4 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 9. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -406,6 +406,17 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | --------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` and `52.3.100.184` | [Add to AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
+
+| Protocol       | Adres                            |                                                                                                                                                                    |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `193.110.81.0` and `185.253.5.0` | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Toevoegen aan AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)    |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn.
@@ -587,17 +598,6 @@ Strengere filtering van beleid met blokkering van domeinen voor advertenties, ma
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Toevoegen aan AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Toevoegen aan AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
-
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
-
-| Protocol       | Adres                            |                                                                                                                                                                    |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `193.110.81.0` and `185.253.5.0` | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Toevoegen aan AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)    |
 
 ### Quad9 DNS
 

@@ -1,5 +1,5 @@
 ---
-title: User rules
+title: Regole utente
 sidebar_position: 2
 ---
 
@@ -15,9 +15,9 @@ To set up user rules:
 
 1. Navigate to the _Dashboard_.
 
-2. Go to the _Servers_ section.
+2. Vai alla sezione _Server_.
 
-3. Select the required server.
+3. Seleziona il server richiesto.
 
 4. Click the _User rules_ option.
 
@@ -27,4 +27,4 @@ To set up user rules:
      ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
    - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Questa funzione consente di [reindirizzare una query a un altro dominio sostituendo il contenuto della query DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

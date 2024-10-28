@@ -3,23 +3,23 @@ title: OPNSense
 sidebar_position: 8
 ---
 
-OPNSense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
+Firmware OPNSense se často používá ke konfiguraci bezdrátových přístupových bodů, serverů DHCP a serverů DNS a umožňuje konfigurovat AdGuard DNS přímo v zařízení.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Click _Services_ in the top menu, then select _DHCP Server_ from the drop-down menu.
-4. On the _DHCP Server_ page, select the interface that you want to configure the DNS settings for (e.g., LAN, WLAN).
-5. Scroll down to _DNS Servers_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Optionally, you can enable DNSSEC for enhanced security.
-9. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. V horní nabídce klikněte na _Služby_ a z rozevírací nabídky vyberte _server DHCP_.
+4. Na stránce _DHCP server_ vyberte rozhraní, pro které chcete konfigurovat nastavení DNS (např. LAN, WLAN).
+5. Přejděte dolů na _DNS servery_.
+6. Vyberte _Ruční DNS_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+7. Uložte nastavení.
+8. Volitelně můžete povolit DNSSEC pro zvýšení zabezpečení.
+9. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

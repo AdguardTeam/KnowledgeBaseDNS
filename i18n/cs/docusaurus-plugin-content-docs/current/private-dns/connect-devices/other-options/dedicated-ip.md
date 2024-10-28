@@ -1,32 +1,32 @@
 ---
-title: Dedicated IPs
+title: Vyhrazené IP adresy
 sidebar_position: 2
 ---
 
-## What are dedicated IPs?
+## Co jsou vyhrazené IP adresy?
 
-Dedicated IPv4 addresses are available to users with Team and Enterprise subscriptions, while linked IPs are available to everyone.
+Vyhrazené adresy IPv4 jsou k dispozici uživatelům s předplatným Team a Enterprise, zatímco propojené IP jsou k dispozici všem.
 
-If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhrazených IP adres. Požadavky na tyto adresy jsou považovány za "vaše" a podle toho jsou použity konfigurace a pravidla filtrování na úrovni serveru. Vyhrazené IP adresy jsou mnohem bezpečnější a snadněji se spravují. S propojenými IP adresami se musíte ručně znovu připojit nebo použít speciální program pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
 
-## Why do you need a dedicated IP?
+## Proč potřebujete vyhrazenou IP adresu?
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. There are two ways to set up AdGuard DNS: [using linked IPs](/private-dns/connect-devices/other-options/linked-ip.md) and using dedicated IPs.
+Technické specifikace připojeného zařízení bohužel nemusí vždy umožnit nastavení šifrovaného soukromého serveru AdGuard DNS. V takovém případě budete muset použít standardní nešifrovaný DNS. AdGuard DNS lze nastavit dvěma způsoby: [pomocí propojených IP](/private-dns/connect-devices/other-options/linked-ip.md) a pomocí vyhrazených IP.
 
-Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
+Vyhrazené IP adresy jsou obecně stabilnější variantou. Propojená IP má některá omezení, například jsou povoleny pouze rezidenční adresy, poskytovatel může IP změnit a je nutné IP adresu znovu propojit. S vyhrazenými IP adresami získáte IP adresu, která je výhradně vaše, a všechny požadavky se budou počítat pro vaše zařízení.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+Nevýhodou je, že můžete začít přijímat irelevantní provoz (skenery, boti), což se u veřejných DNS řešitelů stává vždy. Pro omezení provozu botů může být nutné použít [Nastavení přístupu](/private-dns/server-and-settings/access.md).
 
-The instructions below explain how to connect a dedicated IP to the device:
+Níže uvedené pokyny vysvětlují, jak k zařízení připojit vyhrazenou IP adresu:
 
-## Connect AdGuard DNS using dedicated IPs
+## Připojení AdGuard DNS pomocí vyhrazených IP adres
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously created device.
-3. Select _Use server addresses_.
-4. Next, open _Plain DNS Server Addresses_.
-5. Select the server you wish to use.
-6. To bind a dedicated IPv4 address, click _Assign_.
-7. If you want to use a dedicated IPv6 address, click _Copy_.
+1. Otevřete hlavní panel.
+2. Přidejte nové zařízení nebo otevřete nastavení dříve vytvořeného zařízení.
+3. Vyberte _Použít adresy serverů_.
+4. Poté otevřete _Běžné adresy DNS serverů_.
+5. Vyberte server, který chcete použít.
+6. Chcete-li vázat vyhrazenou adresu IPv4, klikněte na tlačítko _Přiřadit_.
+7. Pokud chcete použít vyhrazenou adresu IPv6, klikněte na _Kopírovat_.
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
-8. Copy and paste the selected dedicated address into the device configurations.
+8. Zkopírujte a vložte vybranou vyhrazenou adresu do konfigurace zařízení.

@@ -7,11 +7,11 @@ sidebar_position: 1
 
 Özel AdGuard DNS'i kurduğunuzda _sunucular_ terimiyle karşılaşırsınız.
 
-A server acts as the “profile” that you connect your devices to.
+Bir sunucu, cihazlarınızı bağladığınız "profil" olarak işlev görür.
 
-Servers include configurations that you can customize to your liking.
+Sunucular, isteğinize göre özelleştirebileceğiniz yapılandırmalar içerir.
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+Bir hesap oluşturduktan sonra, varsayılan ayarlarla otomatik olarak bir sunucu kurarız. Bu sunucuyu değiştirmeyi veya yeni bir tane oluşturmayı seçebilirsiniz.
 
 Örneğin, şunlara sahip olabilirsiniz:
 

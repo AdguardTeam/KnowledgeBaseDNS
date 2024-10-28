@@ -1,33 +1,33 @@
 ---
-title: FritzBox
+title: Fritz!Box
 sidebar_position: 4
 ---
 
-FRITZ!Box provides maximum flexibility for all devices by simultaneously using the 2.4 GHz and 5 GHz frequency bands. All devices connected to the FRITZ!Box are fully protected against attacks from the Internet. The configuration of this brand of routers also allows you to set up encrypted Private AdGuard DNS.
+FRITZ!Box poskytuje maximální flexibilitu pro všechna zařízení díky současnému využití frekvenčních pásem 2,4 GHz a 5 GHz. Všechna zařízení připojená k zařízení FRITZ!Box jsou plně chráněna proti útokům z internetu. Konfigurace směrovačů této značky také umožňuje nastavit šifrovaný Soukromý AdGuard DNS.
 
-## Configure DNS-over-TLS
+## Konfigurace DNS-over-TLS
 
-1. Open the router admin panel. It can be accessed at fritz.box, the IP address of your router, or `192.168.178.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Under DNS-over-TLS (DoT), check _Use DNS-over-TLS_ if supported by the provider.
-6. Select _Use Custom TLS Server Name Indication (SNI)_ and enter the AdGuard Private DNS server address:  `{Your_Device_ID}.d.adguard-dns.com`.
-7. Save the settings.
+1. Otevřete panel správce routeru. Přístup k němu je možný skrze adresu fritz.box, IP adresu vašeho routeru nebo `192.168.178.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Internet_ nebo _Domácí síť_.
+4. Vyberte _DNS_ nebo _Nastavení DNS_.
+5. V části DNS-over-TLS (DoT) zaškrtněte políčko _Použít DNS-over-TLS_, pokud to poskytovatel podporuje.
+6. Vyberte _Použít vlastní označení názvu serveru TLS (SNI)_ a zadejte adresu soukromého DNS serveru AdGuard: `{Your_Device_ID}.d.adguard-dns.com`.
+7. Uložte nastavení.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use this guide if your FritzBox router does not support DNS-over-TLS configuration:
+Pokud váš router Fritz!Box nepodporuje konfiguraci DNS-over-TLS, použijte tento návod:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Select _Manual DNS_, then _Use These DNS Servers_ or _Specify DNS Server Manually_, and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Internet_ nebo _Domácí síť_.
+4. Vyberte _DNS_ nebo _Nastavení DNS_.
+5. Vyberte možnost _Ruční DNS_, poté vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+6. Uložte nastavení.
+7. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

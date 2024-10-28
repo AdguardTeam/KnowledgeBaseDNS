@@ -406,6 +406,17 @@ Bu sunucular bazı günlük kaydı, kendinden imzalı sertifikalar kullanır vey
 | --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` ve `52.3.100.184` | [AdGuard'a ekle](adguard:add_dns_server?address=54.174.40.213&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu), Avrupa Birliği vatandaşlarını ve kuruluşlarını korumak için güvenliğe güçlü bir şekilde odaklanan, ücretsiz, egemen ve GDPR uyumlu bir özyinelemeli DNS çözümleyicisidir.
+
+| Protokol       | Adres                           |                                                                                                                                                                    |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `193.110.81.0` ve `185.253.5.0` | [AdGuard'a ekle](adguard:add_dns_server?address=193.110.81.0&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [AdGuard'a ekle](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`            | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://zero.dns0.eu), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/), Dyn tarafından sunulan ücretsiz bir alternatif DNS hizmetidir.
@@ -469,21 +480,21 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 | DNS-over-HTTPS | `https://base.dns.mullvad.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net) |
 | DNS-over-TLS   | `tls://base.dns.mullvad.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net)                         |
 
-#### Ad + malware + social media blocking
+#### Reklam + kötü amaçlı yazılım + sosyal medya engelleme
 
 | Protokol       | Adres                                        |                                                                                                                                                                                                                                                             |
 | -------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://extended.dns.mullvad.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net) |
 | DNS-over-TLS   | `tls://extended.dns.mullvad.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net)                         |
 
-#### Ad + malware + adult + gambling blocking
+#### Reklam + kötü amaçlı yazılım + yetişkin + kumar engelleme
 
 | Protokol       | Adres                                      |                                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://family.dns.mullvad.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net) |
 | DNS-over-TLS   | `tls://family.dns.mullvad.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net)                         |
 
-#### Ad + malware + adult + gambling + social media blocking
+#### Reklam + kötü amaçlı yazılım + yetişkin + kumar + sosyal medya engelleme
 
 | Protokol       | Adres                                   |                                                                                                                                                                                                                                         |
 | -------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -588,17 +599,6 @@ More strictly filtering policies with blocking — ads, marketing, tracking, cli
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [AdGuard'a ekle](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
 
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu), Avrupa Birliği vatandaşlarını ve kuruluşlarını korumak için güvenliğe güçlü bir şekilde odaklanan, ücretsiz, egemen ve GDPR uyumlu bir özyinelemeli DNS çözümleyicisidir.
-
-| Protokol       | Adres                           |                                                                                                                                                                    |
-| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `193.110.81.0` ve `185.253.5.0` | [AdGuard'a ekle](adguard:add_dns_server?address=193.110.81.0&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [AdGuard'a ekle](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`            | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://zero.dns0.eu), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
-
 ### Quad9 DNS
 
 [Quad9 DNS](https://quad9.net/), kimlik avı ve casus yazılımlara karşı yüksek performans, gizlilik ve güvenlik koruması sağlayan ücretsiz, özyinelemeli, anycast bir DNS platformudur. Quad9 sunucuları bir sansürleme bileşeni sağlamaz.
@@ -629,7 +629,7 @@ Güvenli olmayan DNS sunucuları güvenlik blok listeleri, DNSSEC veya EDNS İst
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                                | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 | DNS-over-TLS   | `tls://dns10.quad9.net`                                            | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
 
-#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
+#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) desteği
 
 EDNS İstemci Alt Ağı, yetkili DNS sunucularına gönderilen isteklerde son kullanıcı IP adresi verilerinin bileşenlerini içeren bir yöntemdir. Güvenlik engelleme listesi, DNSSEC, EDNS İstemci Alt Ağı sağlar.
 
@@ -890,7 +890,7 @@ Bu sunucular yetişkinlere yönelik siteleri ve uygunsuz içerikleri engeller.
 
 ### LibreDNS
 
-[LibreDNS](https://libredns.gr/), [LibreOps](https://libreops.cc/) tarafından işletilen genel şifreli bir DNS hizmetidir.
+[LibreDNS](https://libredns.gr/), [LibreOps](https://libreops.cc/) tarafından işletilen genel şifrelenmiş bir DNS hizmetidir.
 
 | Protokol       | Adres                                        |                                                                                                                                                                                                                         |
 | -------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -958,7 +958,7 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
+[Xstl DNS](https://get.dns.seia.io/), Güney Kore'de bulunan ve kullanıcının IP'sini günlüğe kaydetmeyen bir genel DNS hizmetidir. Reklamlar ve izleyiciler engellenir.
 
 #### SK Broadband
 
@@ -967,7 +967,7 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 | DNS-over-HTTPS | `https://dns.seia.io/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io) |
 | DNS-over-TLS   | `tls://dns.seia.io`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io)                         |
 
-#### Oracle Cloud South Korea
+#### Oracle Cloud Güney Kore
 
 | Protokol       | Adres                                     |                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1148,7 +1148,7 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 
 #### Standard
 
-Blocks ads, trackers, and malware
+Reklamları, izleyicileri ve kötü amaçlı yazılımları engeller
 
 | Protokol       | Adres                            |                                                                                                                                                                                                             |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1205,7 +1205,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 [Privacy-First DNS](https://tiarap.org/), 140 binden fazla reklam, reklam izleme, kötü amaçlı yazılım ve kimlik avı alan adlarını engeller. Günlük tutmama, ECS yok, DNSSEC doğrulaması var, ücretsiz!
 
-#### Singapore DNS Server
+#### Singapur DNS Sunucusu
 
 | Protokol       | Adres                                                                           | Konum                                                                                                                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1218,7 +1218,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                            | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Japan DNS Server
+#### Japonya DNS Sunucusu
 
 | Protokol       | Adres                                                                           |                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

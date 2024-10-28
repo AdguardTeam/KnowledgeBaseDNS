@@ -91,6 +91,6 @@ On macOS and Linux, the easiest way is to use `cron`:
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- Si se requiere una lógica o procesamiento de resultados de consultas más complejos, considera usar scripts (por ejemplo, Bash, Python) en conjunto con un programador de tareas o cron.
 
 :::

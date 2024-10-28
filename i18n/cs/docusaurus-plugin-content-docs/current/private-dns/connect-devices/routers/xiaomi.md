@@ -3,23 +3,23 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have a lot of advantages: Steady strong signal, network security, stable operation, intelligent management, at the same time, the user can connect up to 64 devices to the local Wi-Fi network.
+Routery Xiaomi mají mnoho výhod: Současně může uživatel k místní síti Wi-Fi připojit až 64 zařízení.
 
-Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
+Bohužel nepodporuje šifrované DNS, ale je skvělý pro nastavení AdGuard DNS prostřednictvím propojené IP.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
-1. Open the router admin panel. It can be accessed at `192.168.31.1` or the IP address of your router.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_, depending on your router model.
-4. Open _Network_ or _Internet_ and look for DNS or DNS Settings.
-5. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Přístup k němu je možný skrze `192.168.31.1` nebo na IP adrese vašeho routeru.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. V závislosti na modelu routeru otevřete _Pokročilá nastavení_ nebo _Pokročilé_.
+4. Otevřete _Síť_ nebo _Internet_ a vyhledejte Nastavení DNS nebo DNS.
+5. Vyberte _Ruční DNS_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+6. Uložte nastavení.
+7. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

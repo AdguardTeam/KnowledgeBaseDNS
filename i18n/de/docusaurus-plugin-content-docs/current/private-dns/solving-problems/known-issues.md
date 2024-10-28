@@ -1,59 +1,59 @@
 ---
-title: Known issues
+title: Bekannte Probleme
 sidebar_position: 1
 ---
 
-After setting up AdGuard DNS, some users may find that it doesn’t work properly: they see a message that their device is not connected to AdGuard DNS and the requests from that device are not displayed in the Query log. This can happen because of certain hidden settings in your browser or operating system. Let’s look at several common issues and their solutions.
+Nach der Einrichtung von AdGuard DNS kann es vorkommen, dass, dass es nicht richtig funktioniert: Man sieht eine Meldung, dass das Gerät nicht mit AdGuard DNS verbunden ist und die Anfragen von diesem Gerät werden nicht im Anfragenprotokoll angezeigt. Dies kann aufgrund bestimmter versteckter Einstellungen in Ihrem Browser oder Betriebssystem geschehen. Lassen Sie uns einige häufige Probleme und ihre Lösungen betrachten.
 
 :::tip
 
-You can check the status of AdGuard DNS on the [test page](https://adguard.com/test.html).
+Sie können den Status von AdGuard DNS auf der [Testseite](https://adguard.com/test.html) überprüfen.
 
 :::
 
-## Chrome’s secure DNS settings
+## Sichere DNS-Einstellungen von Chrome
 
-If you’re using Chrome and you don’t see any requests in your AdGuard DNS dashboard, this may be because Chrome uses its own DNS server. Here’s how you can disable it:
+Wenn Sie Chrome verwenden und keine Anfragen in Ihrer AdGuard DNS-Übersicht sehen, kann das daran liegen, dass Chrome seinen eigenen DNS-Server verwendet. Hier erfahren Sie, wie Sie diese Funktion deaktivieren können:
 
-1. Open Chrome’s settings.
-1. Navigate to *Privacy and security*.
-1. Select *Security*.
-1. Scroll down to *Use secure DNS*.
-1. Disable the feature.
+1. Öffnen Sie die Einstellungen in Chrome.
+1. Navigieren Sie zu *Datenschutz und Sicherheit*.
+1. Wählen Sie *Sicherheit*.
+1. Blättern Sie nach unten zu *Sicheres DNS verwenden*.
+1. Deaktivieren Sie diese Funktion.
 
-![Chrome’s Use secure DNS feature](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
+![Chromes Funktion „Sicheres DNS verwenden“](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you've set it up correctly.
+Wenn Sie die eigenen DNS-Einstellungen von Chrome deaktivieren, verwendet der Browser das in Ihrem Betriebssystem angegebene DNS, das AdGuard DNS sein sollte, wenn Sie es korrekt eingerichtet haben.
 
-## iCloud Private Relay (Safari, macOS, and iOS)
+## iCloud Privat-Relay (Safari, macOS und iOS)
 
-If you enable iCloud Private Relay in your device settings, Safari will use Apple’s DNS addresses, which will override the AdGuard DNS settings.
+Wenn Sie in den Einstellungen Ihres Geräts iCloud Privat-Relay aktivieren, verwendet Safari die DNS-Adressen von Apple, die die DNS-Einstellungen von AdGuard außer Kraft setzen.
 
-Here’s how you can disable iCloud Private Relay on your iPhone:
+Hier erfahren Sie, wie Sie iCloud Privat-Relay auf Ihrem iPhone deaktivieren können:
 
-1. Open *Settings* and tap your name.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
+1. Öffnen Sie *Einstellungen* und tippen Sie auf Ihren Namen.
+1. Wählen Sie *iCloud* → *Privat-Relay*.
+1. Deaktivieren Sie das Privat-Relay.
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS Privat-Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
 
-On your Mac:
+Auf Ihrem Mac:
 
-1. Open *System Settings* and click your name or *Apple ID*.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
-1. Click *Done*.
+1. Öffnen Sie *Systemeinstellungen* und klicken Sie auf Ihren Namen oder *Apple ID*.
+1. Wählen Sie *iCloud* → *Privat-Relay*.
+1. Deaktivieren Sie das Privat-Relay.
+1. Klicken Sie auf *Fertig*.
 
-![macOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
+![macOS Privat-Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
 
-## Advanced Tracking and Fingerprinting Protection (Safari, starting from iOS 17)
+## Erweiterter Schutz vor Tracking und Identifizierung (Safari, ab iOS 17)
 
-After the iOS 17 update, Advanced Tracking and Fingerprinting Protection may be enabled in Safari settings, which could potentially have a similar effect to iCloud Private Relay bypassing AdGuard DNS settings.
+Nach dem iOS 17-Update kann der erweiterte Schutz vor Tracking und Identifizierung in den Safari-Einstellungen aktiviert werden, was möglicherweise einen ähnlichen Effekt wie das Umgehen der AdGuard-DNS-Einstellungen durch iCloud Privat-Relay haben könnte.
 
-Here’s how you can disable Advanced Tracking and Fingerprinting Protection:
+Hier erfahren Sie, wie Sie den erweiterten Tracking- und Identifizierungsschutz deaktivieren können:
 
-1. Open *Settings* and scroll down to *Safari*.
-1. Tap *Advanced*.
-1. Disable *Advanced Tracking and Fingerprinting Protection*.
+1. Öffnen Sie *Einstellungen* und scrollen Sie nach unten zu *Safari*.
+1. Tippen Sie auf *Erweitert*.
+1. Deaktivieren Sie den *Erweiterter Tracking- und Identifizierungsschutz*.
 
-![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+![Erweiterter Tracking- und Identifizierungsschutz auf iOS *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)

@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: Компании
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Эта вкладка позволяет быстро проверить, какие компании отправляют больше всего запросов, и какие компании имеют больше всего заблокированных запросов.
 
 ![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+Страница компаний разделена на две категории:
 
-- **Top requested company**
-- **Top blocked company**
+- **Самая посещаемая компания**
+- **Самая блокируемая компания**
 
-These are further divided into sub-categories:
+Они также подразделяются на подкатегории:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Реклама**: рекламные и другие связанные с рекламой запросы, которые собирают и передают данные пользователей, анализируют их поведение, и таргетируют рекламу
+- **Трекеры**: запросы с сайтов и от третьих сторон с целью отслеживания активности пользователей
+- **Соцсети**: запросы к сайтам социальных сетей
+- **CDN**: запросы, связанные с Content Delivery Network (CDN), глобальной сетью прокси-серверов, ускоряющей доставку контента конечным пользователям
+- **Прочее**
 
-### Top companies
+### Топ компаний
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+В этой таблице мы показываем не только названия самых посещаемых или блокируемых компаний, но и информацию о том, с каких доменов запрашиваются данные или какие домены блокируются чаще всего.
 
 ![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

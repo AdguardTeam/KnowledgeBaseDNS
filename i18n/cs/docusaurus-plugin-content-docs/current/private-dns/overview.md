@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### Jak připojit zařízení k AdGuard DNS
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+AdGuard DNS je velmi flexibilní a lze ho nastavit na různých zařízeních včetně tabletů, počítačů, routerů a herních konzolí. Tato část obsahuje podrobné pokyny pro připojení zařízení k AdGuard DNS.
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[Jak připojit zařízení k AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
 
 ### Server a nastavení
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+Tato část vysvětluje, co je to "server" v AdGuard DNS a jaká nastavení jsou k dispozici. Nastavení umožňují přizpůsobit způsob, jakým AdGuard DNS reaguje na blokované domény a spravovat přístup k serveru DNS.
 
 [Server a nastavení](/private-dns/server-and-settings/server-and-settings.md)
 
 ### Jak nastavit filtrování
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+V této části popisujeme řadu nastavení, která umožňují jemně vyladit funkce AdGuard DNS. Pomocí seznamů blokování, uživatelských pravidel, rodičovské kontroly a bezpečnostních filtrů můžete nakonfigurovat filtrování podle svých potřeb.
 
 [Jak nastavit filtrování](/private-dns/setting-up-filtering/blocklists.md)
 
 ### Statistiky a protokol dotazů
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+Statistiky a protokol dotazů poskytují přehled o činnosti vašich zařízení. Karta *Statistiky* umožňuje zobrazit přehled požadavků DNS provedených zařízeními připojenými k soukromému AdGuard DNS. V protokolu dotazů můžete zobrazit informace o každém požadavku a také seřadit požadavky podle stavu, typu, společnosti, zařízení, času a země.
 
 [Statistiky a protokol dotazů](/private-dns/statistics-and-log/statistics.md)

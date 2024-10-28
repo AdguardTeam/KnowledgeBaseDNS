@@ -3,28 +3,27 @@ title: Uživatelská pravidla
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Co to je a proč to potřebujete
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Uživatelská pravidla jsou stejná pravidla filtrování jako pravidla používaná v běžných seznamech zakázaných. Filtrování webových stránek můžete přizpůsobit svým potřebám ručním přidáním pravidel nebo jejich importem z předdefinovaného seznamu.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+Aby bylo filtrování flexibilnější a lépe vyhovovalo vašim preferencím, podívejte se na [syntaxe pravidel](/general/dns-filtering-syntax/) pro pravidla filtrování DNS AdGuard.
 
-## How to use
+## Jak používat
 
-To set up user rules:
+Nastavení uživatelských pravidel:
 
-1. Navigate to the _Dashboard_.
+1. Přejděte na _Ovládací panel_.
 
-2. Go to the _Servers_ section.
+2. Přejděte do sekce _Servery_.
 
-3. Select the required server.
+3. Vyberte požadovaný server.
 
-4. Click the _User rules_ option.
+4. Klikněte na možnost _Uživatelská pravidla_.
 
-5. You'll find several options for adding user rules.
+5. Najdete zde několik možností přidávání uživatelských pravidel.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - Nejjednodušší je použít generátor. Chcete-li jej použít, klikněte na tlačítko _Přidat nové pravidlo_ → Zadejte název domény, kterou chcete zablokovat nebo odblokovat → Klikněte na tlačítko _Přidat pravidlo_ ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Pokročilým způsobem je použití editoru pravidel. Klikněte na _Otevřít editor_ a zadejte pravidla blokování podle [syntaxe](/general/dns-filtering-syntax/)
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Tato funkce umožňuje [přesměrovat dotaz na jinou doménu nahrazením obsahu dotazu DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

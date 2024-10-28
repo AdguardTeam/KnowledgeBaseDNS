@@ -3,40 +3,40 @@ title: Asus
 sidebar_position: 3
 ---
 
-## Configure DNS-over-TLS
+## Konfigurace DNS-over-TLS
 
-These are general instructions for configuring Private AdGuard DNS for Asus routers.
+Toto jsou obecné pokyny pro konfiguraci Soukromého AdGuard DNS pro routery Asus.
 
-The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
+Informace o konfiguraci v těchto pokynech jsou převzaty z konkrétního modelu routeru, takže se mohou lišit od rozhraní jednotlivých zařízení.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https://www.asuswrt-merlin.net/download) vhodný pro vaši verzi routeru.
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. In the _Advanced Settings_ sidebar, navigate to the WAN section.
-4. In the _WAN DNS Settings_ section, set _Connect to DNS Server automatically_ to _No_.
-5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
-6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
-7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
-8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
-9. For _TLS Port_, enter 853.
-10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
+1. Přihlaste se do panelu správce routeru Asus. Můžete k němu přistupovat skrze [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), nebo [http://192.168.2.1](http://192.168.2.1/).
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. V postranním panelu _Pokročilá nastavení_ přejděte do části WAN.
+4. V části _Nastavení DNS WAN_ nastavte _Připojit k DNS serveru automaticky_ na _Ne_.
+5. Nastavte položky _Předávání místních dotazů_, povolte opětovné navázání DNS a _povolte DNSSEC_ na hodnotu _Ne_.
+6. Změňte protokol ochrany soukromí DNS na DNS-over-TLS (DoT).
+7. Zkontrolujte, zda je profil _DNS-over-TLS_ nastaven na hodnotu _Přísný_.
+8. Přejděte dolů do sekce _Seznam serverů DNS-over-TLS_. Do pole _Adresa_ zadejte jednu z níže uvedených adres:
+   - `94.140.14.49` a `94.140.14.59`
+9. Pro port _TLS_ zadejte 853.
+10. Do pole _Název hostitele TLS_ zadejte adresu Soukromého DNS AdGuard:
     - `{Your_Device_ID}.d.adguard-dns.com`
-11. Scroll to the bottom of the page and click _Apply_.
+11. Přejděte na konec stránky a klikněte na tlačítko _Použít_.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Advanced Settings_ or _Advanced_.
-4. Select _WAN_ or _Internet_.
-5. Open _DNS Settings_ or _DNS_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Pokročilá nastavení_ nebo _Pokročilé_.
+4. Vyberte _WAN_ nebo _Internet_.
+5. Otevřete _Nastavení DNS_ nebo _DNS_.
+6. Vyberte _Ruční DNS_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+7. Uložte nastavení.
+8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Com o AdGuard DNS, você pode configurar seus servidores DNS privados para resolver solicitações de DNS e bloquear anúncios, rastreadores e domínios maliciosos antes que cheguem ao seu dispositivo
 
-Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
+Link rápido: [Experimente o DNS do AdGuard](https://agrd.io/download-dns)
 
 :::
 
@@ -15,19 +15,19 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 ## Geral
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="Player de vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+O DNS AdGuard privado oferece todas as vantagens de um servidor DNS AdGuard público, incluindo criptografia de tráfego e listas de bloqueio de domínios. Ele também oferece recursos adicionais, como personalização flexível, estatísticas de DNS e controle dos pais. Todas essas opções são facilmente acessíveis e gerenciadas por meio de um painel user-friendly.
 
-### Why you need private AdGuard DNS
+### Por que você precisa de um DNS AdGuard privado
 
 Hoje, você pode conectar qualquer coisa à Internet: TVs, geladeiras, lâmpadas inteligentes ou alto-falantes. Mas junto com as conveniências inegáveis, você obtém rastreadores e anúncios. Um bloqueador de anúncios simples baseado em navegador não o protegerá neste caso, mas o AdGuard DNS, que você pode configurar para filtrar tráfego, bloquear conteúdo e rastreadores, tem um efeito em todo o sistema.
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Essas soluções funcionam bem para alguns usuários, mas para outros, o AdGuard DNS público não tem flexibilidade de configuração, enquanto o AdGuard Home não tem simplicidade. É aí que entra o AdGuard DNS privado. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+No passado, a linha de produtos AdGuard incluía apenas [AdGuard DNS público](../public-dns/overview.md) e [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Essas soluções funcionam bem para alguns usuários, mas para outros, o AdGuard DNS público não tem flexibilidade de configuração, enquanto o AdGuard Home não tem simplicidade. É aí que entra o AdGuard DNS privado. Ele tem o melhor dos dois mundos: oferece personalização, controle e informações, tudo por meio de um painel simples e fácil de usar.
 
-### The difference between public and private AdGuard DNS
+### A diferença entre o AdGuard DNS público e o privado
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+Aqui está uma comparação simples entre os recursos disponíveis no AdGuard DNS público e privado.
 
 | AdGuard DNS Público                            | AdGuard DNS Privado                                                                                           |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### Como conectar dispositivos ao AdGuard DNS
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+O AdGuard DNS é muito flexível e pode ser configurado em vários dispositivos, incluindo tablets, PCs, roteadores e consoles de jogos. Esta seção fornece instruções detalhadas sobre como conectar seu dispositivo ao AdGuard DNS.
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[Como conectar dispositivos ao AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### Servidor e configurações
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+Esta seção explica o que é um "servidor" no AdGuard DNS e quais configurações estão disponíveis. As configurações permitem que você personalize como o AdGuard DNS responde a domínios bloqueados e gerencie o acesso ao seu servidor DNS.
 
-[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+[Servidor e configurações](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### Como configurar a filtragem
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+Nesta seção, descrevemos várias configurações que permitem ajustar a funcionalidade do AdGuard DNS. Usando listas de bloqueio, regras de usuário, controles parentais e filtros de segurança, você pode configurar a filtragem para atender às suas necessidades.
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[Como configurar a filtragem](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### Estatísticas e Registro de consultas
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+As estatísticas e o Registro de consultas fornecem insights sobre a atividade dos seus dispositivos. A aba *Estatísticas* permite que você visualize um resumo das solicitações de DNS feitas por dispositivos conectados ao seu AdGuard DNS Privado. No Registro de consultas, você pode visualizar informações sobre cada solicitação e também classificar as solicitações por status, tipo, empresa, dispositivo, horário e país.
 
-[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
+[Estatísticas e Registro de consultas](/private-dns/statistics-and-log/statistics.md)
