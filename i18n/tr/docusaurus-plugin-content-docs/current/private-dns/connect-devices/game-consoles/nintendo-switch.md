@@ -11,19 +11,19 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 ## Connect AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 
-1. Turn on your Nintendo Switch console and go to the home menu.
-2. Go to _System Settings_ → _Internet_.
-3. Select the Wi-Fi network that you want to modify the DNS settings for.
-4. Click _Change Settings_ for the selected Wi-Fi network.
-5. Scroll down and select _DNS Settings_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Nintendo Switch konsolunuzu açın ve ana menüye gidin.
+2. _Sistem Ayarları_ → _İnternet_ öğesine gidin\*.
+3. DNS ayarlarını değiştirmek istediğiniz Wi-Fi ağını seçin.
+4. Seçilen Wi-Fi ağı için _Ayarları Değiştir_ öğesine tıklayın.
+5. Aşağı kaydırın ve _DNS Ayarları_ öğesini seçin.
+6. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save your DNS settings.
+7. DNS ayarlarınızı kaydedin.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

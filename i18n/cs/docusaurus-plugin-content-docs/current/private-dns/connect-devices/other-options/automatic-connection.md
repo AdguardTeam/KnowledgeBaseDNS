@@ -1,42 +1,42 @@
 ---
-title: Automatic connection
+title: Automatické připojení
 sidebar_position: 5
 ---
 
-## Why it is useful
+## Proč je to užitečné
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Ne každému vyhovuje přidávání zařízení prostřednictvím Přehledu. Jste-li například správcem systému, který nastavuje více firemních zařízení současně, budete chtít co nejvíce minimalizovat manuální úkony.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Můžete vytvořit odkaz na připojení a použít jej v nastavení zařízení. Vaše zařízení bude detekováno a automaticky připojeno k serveru.
 
-## How to configure automatic connection
+## Jak nakonfigurovat automatické připojení
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
+1. Otevřete _Přehled_ a vyberte požadovaný server.
+2. Přejděte na _Zařízení_.
+3. Povolte možnost automatického připojení zařízení.
    ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Nyní můžete zařízení automaticky připojit k serveru vytvořením speciální adresy, která obsahuje název zařízení, typ zařízení a aktuální ID serveru. Podívejme se, jak tyto adresy vypadají a jaká jsou pravidla pro jejich vytváření.
 
-### Examples of automatic connection addresses
+### Příklady adres automatického připojení
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `Android` s protokolem `DNS-over-TLS` s názvem `AdGuard Test Device`
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — automaticky vytvoří zařízení `Windows` s protokolem `DNS-over-HTTPS` s názvem `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `iOS` s protokolem `DNS-over-QUIC` s názvem `Mary Sue`
 
-### Naming conventions
+### Konvence pojmenování
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Při ručním vytváření zařízení mějte na paměti, že existují omezení týkající se délky názvu, znaků, mezer a pomlček.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Délka názvu**: maximálně 50 znaků. Znaky nad tento limit jsou ignorovány.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Povolené znaky**: anglická písmena, číslice a pomlčky `-`. Ostatní znaky jsou ignorovány.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Mezery a pomlčky**: Pro mezeru se používá pomlčka a pro spojovník dvojitá pomlčka ( `--`).
 
-**Device type**: Use the following abbreviations:
+**Typ zařízení**: použijte následující zkratky:
 
 - Windows — `win`
 - macOS — `mac`
@@ -44,16 +44,16 @@ When creating devices manually, please note that there are restrictions related 
 - iOS — `ios`
 - Linux — `lnx`
 - Router — `rtr`
-- Smart TV — `stv`
-- Game console — `gam`
-- Other — `otr`
+- Chytrá TV — `stv`
+- Herní konzole — `gam`
+- Ostatní — `otr`
 
-## Link generator
+## Generátor odkazů
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Přidali jsme šablonu, která generuje odkaz pro konkrétní typ zařízení a protokol.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
+1. Přejděte na _Servery_ → _Nastavení serveru_ → _Zařízení_ → _Automatické připojení zařízení_ a klikněte na _Generátor odkazů a pokyny_.
+2. Vyberte protokol, který chcete použít, a název a typ zařízení.
+3. Klikněte na _Generovat odkaz_.
    ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+4. Odkaz jste úspěšně vygenerovali, nyní zkopírujte adresu serveru a použijte ji v jedné z aplikací [AdGuard](https://adguard.com/welcome.html)

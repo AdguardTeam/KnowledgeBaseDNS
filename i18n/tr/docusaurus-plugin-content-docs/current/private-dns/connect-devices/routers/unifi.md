@@ -19,11 +19,11 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 6. _Ağ_ öğesine geri dönün.
 7. _Ağı Düzenle_ → _LAN_ öğesini seçin.
 8. _DHCP Ad Sunucusu_ öğesini bulun ve _Manuel_ öğesini seçin.
-9. Enter your gateway address in the _DNS Server 1_ field. Alternatively, you can enter the AdGuard DNS server addresses in _DNS Server 1_ and _DNS Server 2_ fields:
+9. _DNS Sunucu 1_ alanına ağ geçidi adresinizi girin. Alternatif olarak, AdGuard DNS sunucu adreslerini _DNS Sunucusu 1_ ve _DNS Sunucusu 2_ alanlarına girebilirsiniz:
    - IPv4: `94.140.14.49` ve `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 10. Ayarları kaydedin.
-11. Link your IP (or your dedicated IP if you have a Team subscription).
+11. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](private-dns/connect-devices/other-options/linked-ip.md)

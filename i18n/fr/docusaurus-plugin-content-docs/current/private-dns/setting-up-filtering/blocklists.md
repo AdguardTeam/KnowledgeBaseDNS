@@ -1,65 +1,65 @@
 ---
-title: Blocklists
+title: Listes de blocage
 sidebar_position: 1
 ---
 
-## What blocklists are
+## Qu'est-ce qu'une liste de blocage ?
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Les listes de blocage sont des ensembles de règles au format texte que AdGuard DNS utilise pour filtrer les publicités et le contenu qui pourrait compromettre votre confidentialité. En général, un filtre est constitué de règles ayant un objectif similaire. Par exemple, il peut y avoir des règles pour les langues de site Web (comme les filtres allemands ou russes) ou des règles qui protègent contre les sites de hameçonnage (comme la Liste de blocage URL de hameçonnage). Vous pouvez facilement activer ou désactiver ces règles en groupe.
 
-## Why they are useful
+## Pourquoi c'est utile
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Les listes de blocage sont conçues pour une personnalisation flexible des règles de filtrage. Par exemple, vous pouvez vouloir bloquer des domaines publicitaires dans une région linguistique spécifique, ou vous pouvez vouloir vous débarrasser des domaines de traqueurs ou de publicités. Sélectionnez les listes de blocage que vous souhaitez et personnalisez le filtrage à votre goût.
 
-## How to activate blocklists in AdGuard DNS
+## Comment activer les listes de blocage dans AdGuard DNS
 
-To activate the blocklists:
+Pour activer les listes de blocage :
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. Ouvrez le tableau de bord.
+2. Allez à la section _Serveurs_.
+3. Sélectionnez le serveur requis.
+4. Cliquez sur _Listes de blocage_.
 
-## Blocklists types
+## Types de listes de blocage
 
-### General
+### Général
 
-A group of filters that includes lists for blocking ads and tracking domains.
+Un groupe de filtres qui inclut des listes pour bloquer les publicités et les domaines de suivi.
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Listes de blocage générales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
-### Regional
+### Régional
 
-A group of filters consisting of regional lists to block domains in specific languages.
+Un groupe de filtres composé de listes régionales pour bloquer des domaines dans des langues spécifiques.
 
-![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Listes de blocage régionales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
-### Security
+### Sécurité
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+Un groupe de filtres contenant des règles pour bloquer des sites frauduleux et des domaines d'hameçonnage.
 
-![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Listes de blocage de sécurité \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
-### Other
+### Autres
 
-Blocklists with various blocking rules from third-party developers.
+Listes de blocage avec de diverses règles de blocage provenant des développeurs tiers.
 
-![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Autres listes de blocage \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
 
-## Adding filters
+## Ajout de filtres
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+Si vous souhaitez que la liste des filtres AdGuard DNS soit élargie, vous pouvez soumettre une requête pour les ajouter dans la section pertinente de [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) sur GitHub.
 
-To submit a request:
+Pour soumettre une requête :
 
-1. Go to the link above (you may need to register on GitHub).
-2. Click _New issue_.
-3. Click _Blocklist request_ and fill out the form.
-4. After filling out the form, click _Submit new issue_.
+1. Allez au lien ci-dessus (vous devrez peut-être vous inscrire sur GitHub).
+2. Cliquez sur _Nouveau problème_.
+3. Cliquez sur _Demande de liste de blocage_ et remplissez le formulaire.
+4. Après avoir rempli le formulaire, cliquez sur _Soumettre nouveau problème_.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+Si les règles de blocage de votre filtre ne répètent pas les listes existantes, elles seront ajoutées au dépôt.
 
-## User rules
+## Règles utilisateur
 
-You can also create your own blocking rules.
-Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+Vous pouvez également créer vos propres règles de blocage.
+Apprenez plus dans l'[article sur les règles utilisateur](/private-dns/setting-up-filtering/user-rules.md).

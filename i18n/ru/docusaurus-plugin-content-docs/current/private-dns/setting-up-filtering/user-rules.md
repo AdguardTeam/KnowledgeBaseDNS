@@ -3,28 +3,28 @@ title: Пользовательские правила
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Что это такое и зачем это нужно
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Пользовательские правила — это те же самые правила фильтрации, что используются в общих чёрных списках. Вы можете настроить фильтрацию сайта в соответствии с вашими потребностями, добавляя правила вручную или импортируя их из предустановленного списка.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+Чтобы сделать фильтрацию более гибкой и подходящей под ваши предпочтения, ознакомьтесь с [синтаксисом правил](/general/dns-filtering-syntax/) для правил фильтрации AdGuard DNS.
 
-## How to use
+## Как пользоваться
 
-To set up user rules:
+Чтобы настроить пользовательские правила:
 
-1. Navigate to the _Dashboard_.
+1. Перейдите на _Панель управления_.
 
-2. Go to the _Servers_ section.
+2. Перейдите в раздел _Серверы_.
 
-3. Select the required server.
+3. Выберите нужный сервер.
 
-4. Click the _User rules_ option.
+4. Нажмите на опцию _Пользовательские правила_.
 
-5. You'll find several options for adding user rules.
+5. Вы найдёте несколько вариантов добавления пользовательских правил.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - Самый простой способ — использовать генератор. Чтобы воспользоваться им, нажмите _Добавить новое правило_ → Введите название домена, который вы хотите заблокировать или разблокировать → Нажмите _Добавить правило_
+     ![Добавить правило \*граница](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Расширенный способ — использовать редактор правил. Нажмите _Открыть редактор_ и введите правила блокировки в соответствии с [синтаксисом](/general/dns-filtering-syntax/).
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Эта функция позволяет [перенаправить запрос на другой домен, заменив содержимое DNS-запроса](/general/dns-filtering-syntax/#dnsrewrite-modifier).

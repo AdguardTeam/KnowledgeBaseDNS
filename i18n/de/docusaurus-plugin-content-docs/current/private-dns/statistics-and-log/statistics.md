@@ -1,55 +1,55 @@
 ---
-title: Statistics
+title: Statistiken
 sidebar_position: 2
 ---
 
-## General statistics
+## Allgemeine Statistiken
 
-The _Statistics_ tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
+Im Tab _Statistiken_ werden alle Statistiken über DNS-Anfragen von Geräten, die mit dem privaten AdGuard DNS verbunden sind, zusammengefasst. Man sieht die Gesamtzahl und den Standort der Anfragen, die Zahl der gesperrten Anfragen, die Liste der Unternehmen, an die die Anfragen gerichtet waren, die Anfragetypen und die am häufigsten angefragten Domains.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
+![Gesperrte Website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
-## Categories
+## Kategorien
 
-### Requests types
+### Anfragetypen
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Werbung**: Werbung und andere werbebezogene Anfragen, die Nutzerdaten sammeln und weitergeben, das Nutzerverhalten analysieren und gezielt Werbung schalten
+- **Tracker**: Anfragen von Websites und Dritten zum Zweck der Nachverfolgung von Nutzeraktivitäten
+- **Soziale Medien**: Anfragen an soziale Netzwerk-Websites
+- **CDN**: Anfrage im Zusammenhang mit Content Delivery Network (CDN), einem weltweiten Netzwerk von Proxy-Servern, das die Bereitstellung von Inhalten an Endnutzer beschleunigt
+- **Sonstiges**
 
-![Request types \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/request_types.png)
+![Anfragetypen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/request_types.png)
 
-### Top companies
+### Top Unternehmen
 
-Here you can see the companies that have sent the most requests.
+Hier sehen Sie die Unternehmen, die die meisten Anfragen gesendet haben.
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies.png)
+![Top Unternehmen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies.png)
 
-### Top destinations
+### Top Zielorte
 
-This shows the countries to which the most requests have been sent.
+Hier werden die Länder gezeigt, an die die meisten Anfragen gesendet wurden.
 
-In addition to the country names, the list contains two more general categories:
+Neben den Ländernamen enthält die Liste zwei allgemeinere Kategorien:
 
-- **Not applicable**: Response doesn't include IP address
-- **Unknown destination**: Country can't be determined from IP address
+- **Nicht anwendbar**: Die Antwort enthält keine IP-Adresse
+- **Unbekannter Zielort**: Das Land kann nicht anhand der IP-Adresse bestimmt werden
 
-![Top destinations \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
+![Top Zielorte \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 
-### Top domains
+### Top Domains
 
-Contains a list of domains that have been sent the most requests.
+Enthält eine Liste von Domains, an die die meisten Anfragen gesendet wurden.
 
-![Top domains \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
+![Top Domains \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
-### Encrypted requests
+### Verschlüsselte Anfragen
 
-Shows the total number of requests and the percentage of encrypted and unencrypted traffic.
+Zeigt die Gesamtzahl der Anfragen und den Prozentsatz des verschlüsselten und unverschlüsselten Datenverkehrs.
 
-![Encrypted requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
+![Verschlüsselte Anfragen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
 
-### Top clients
+### Top Clients
 
-Displays the number of requests made to clients. To view client IP addresses, enable the _Log IP addresses_ option in the _Server settings_. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.
+Zeigt die Anzahl der gesendeten Anfragen an Clients. Um IP-Adressen der Clients anzuzeigen, aktivieren Sie die Option _IP-Adressen protokollieren_ in den _Servereinstellungen_. [Weitere Informationen zu den Servereinstellungen](/private-dns/server-and-settings/advanced.md) finden Sie in einem entsprechenden Abschnitt.

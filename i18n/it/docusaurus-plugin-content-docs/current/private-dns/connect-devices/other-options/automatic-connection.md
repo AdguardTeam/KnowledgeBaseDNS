@@ -20,11 +20,11 @@ Now you can automatically connect your device to the server by creating a specia
 
 ### Examples of automatic connection addresses
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — questo creerà automaticamente un dispositivo `Android` con il protocollo `DNS-over-TLS` chiamato `AdGuard Test Device`
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — questo creerà automaticamente un dispositivo `Windows` con il protocollo `DNS-over-HTTPS` chiamato `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — questo creerà automaticamente un dispositivo `iOS` con il protocollo `DNS-over-QUIC` chiamato `Mary Sue`
 
 ### Naming conventions
 
@@ -52,7 +52,7 @@ When creating devices manually, please note that there are restrictions related 
 
 We’ve added a template that generates a link for the specific device type and protocol.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
+1. Vai a _Server_ → _Impostazioni server_ → _Dispositivi_ → _Connetti dispositivi automaticamente_ e clicca su _Generatore collegamenti e istruzioni_.
 2. Select the protocol you want to use as well as the device name and the device type.
 3. Click _Generate link_.
    ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)

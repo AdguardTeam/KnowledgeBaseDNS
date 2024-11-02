@@ -1,31 +1,31 @@
 ---
-title: Advanced settings
+title: Paramètres avancés
 sidebar_position: 2
 ---
 
-The Advanced settings section is intended for the more experienced user and includes the following settings.
+La section des paramètres avancés est destinée à l'utilisateur plus expérimenté et inclut les paramètres suivants.
 
-## Respond to blocked domains
+## Répondre aux domaines bloqués
 
-Here you can select the DNS response for the blocked request:
+Ici, vous pouvez sélectionner la réponse DNS pour la requête bloquée :
 
-- **Default**: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule
-- **REFUSED**: Respond with REFUSED code
-- **NXDOMAIN**: Respond with NXDOMAIN code
-- **Custom IP**: Respond with a manually set IP address
+- **Default** : Répondre avec adresse IP zéro (0.0.0.0 pour A ; :: pour AAAA) lorsque bloqué par la règle de style Adblock ; répondre avec l’adresse IP spécifiée dans la règle lorsque bloquée par la règle du style /etc/hosts
+- **REFUSED** : Répondre avec le code REFUSED
+- **NXDOMAIN** : Répondre avec le code NXDOMAIN
+- **IP personnalisée** : Répondre avec une adresse IP définie manuellement
 
-## TTL (Time-To-Live)
+## Durée de vie (TTL)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. If the TTL value is high, recently unblocked requests may still look blocked for a while. If TTL is 0, the device does not cache responses.
+La durée de vie (TTL) définit la période (en secondes) pendant laquelle un dispositif client peut mettre en cache la réponse à une requête DNS et la récupérer dans son cache sans redemander au serveur DNS. Si la valeur TTL est élevée, les requêtes récemment débloquées peuvent sembler encore bloquées pendant un certain temps. Si le TTL est 0, le dispositif ne met pas les réponses en cache.
 
-## Block access to iCloud Private Relay
+## Bloquer l'accès au relais privé iCloud
 
-Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard DNS cannot protect them.
+Les appareils qui utilisent le relais privé iCloud peuvent ignorer leurs paramètres DNS, donc AdGuard DNS ne peut pas les protéger.
 
-## Block Firefox canary domain
+## Bloquer le domaine Firefox Canary
 
-Prevents Firefox from switching to the DoH resolver from its settings when AdGuard DNS is configured system-wide.
+Empêche Firefox de basculer vers le résolveur DoH à partir de ses paramètres lorsque AdGuard DNS est configuré à l'échelle du système.
 
-## Log IP addresses
+## Enregistrer les adresses IP
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+Par défaut, AdGuard DNS ne journalise pas les adresses IP des requêtes DNS entrantes. Si vous activez ce paramètre, les adresses IP seront journalisées et affichées dans le journal des requêtes.

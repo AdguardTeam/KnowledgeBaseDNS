@@ -3,31 +3,31 @@ title: FritzBox
 sidebar_position: 4
 ---
 
-FRITZ!Box provides maximum flexibility for all devices by simultaneously using the 2.4 GHz and 5 GHz frequency bands. All devices connected to the FRITZ!Box are fully protected against attacks from the Internet. The configuration of this brand of routers also allows you to set up encrypted Private AdGuard DNS.
+FRITZ!Box fornisce la massima flessibilità per tutti i dispositivi utilizzando contemporaneamente le bande di frequenza da 2.4 GHz e 5 GHz. Tutti i dispositivi connessi al FRITZ!Box sono completamente protetti contro attacchi provenienti da Internet. La configurazione di questo marchio di router consente anche d'impostare DNS AdGuard Private crittografato.
 
-## Configure DNS-over-TLS
+## Configura DNS-over-TLS
 
-1. Open the router admin panel. It can be accessed at fritz.box, the IP address of your router, or `192.168.178.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Under DNS-over-TLS (DoT), check _Use DNS-over-TLS_ if supported by the provider.
-6. Select _Use Custom TLS Server Name Indication (SNI)_ and enter the AdGuard Private DNS server address:  `{Your_Device_ID}.d.adguard-dns.com`.
-7. Save the settings.
+1. Apri il pannello di amministrazione del router. Può essere acceduto all'indirizzo fritz.box, l'indirizzo IP del tuo router, o `192.168.178.1`.
+2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
+3. Apri _Internet_ o _Rete domestica_.
+4. Seleziona _DNS_ o _Impostazioni DNS_.
+5. In DNS-over-TLS (DoT), seleziona _Usa DNS-over-TLS_ se supportato dal provider.
+6. Seleziona _Usa indicazione del nome del server TLS personalizzato (SNI)_ e inserisci l'indirizzo del server AdGuard DNS Privato:  `{Your_Device_ID}.d.adguard-dns.com`.
+7. Salva le impostazioni.
 
-## Use your router admin panel
+## Utilizza il pannello di amministrazione del tuo router
 
-Use this guide if your FritzBox router does not support DNS-over-TLS configuration:
+Usa questa guida se il tuo router FritzBox non supporta la configurazione di DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _DNS_ or _DNS Settings_.
-5. Select _Manual DNS_, then _Use These DNS Servers_ or _Specify DNS Server Manually_, and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-6. Save the settings.
-7. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Apri il pannello di amministrazione del router. Può essere accessibile a `192.168.1.1` o `192.168.0.1`.
+2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
+3. Apri _Internet_ o _Rete domestica_.
+4. Seleziona _DNS_ o _Impostazioni DNS_.
+5. Scegli DNS manuale, poi _Usa questi server DNS_ o _Specificare manualmente il server DNS_, e inserisci i seguenti indirizzi del server DNS:
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+6. Salva le impostazioni.
+7. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)

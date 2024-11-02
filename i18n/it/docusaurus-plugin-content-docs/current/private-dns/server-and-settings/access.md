@@ -7,7 +7,7 @@ By configuring Access settings, you can protect your AdGuard DNS from unauthoriz
 
 Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
 
-## How to set it up
+## Come configurarlo
 
 ### Allowed clients
 
@@ -17,9 +17,9 @@ This setting allows you to specify which clients can use your DNS server. It has
 
 Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
 
-:::note Important
+:::note Importante
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. Se ciò accade, disconnetti semplicemente dal server DNS, vai alle impostazioni di accesso e regola le configurazioni di conseguenza.
 
 :::
 

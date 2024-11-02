@@ -10,17 +10,17 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/API.md
 -->
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNS proporciona una API REST que puede ser utilizada para integrar tus aplicaciones con él.
 
-## Authentication
+## Autenticación
 
-### Generate Access token
+### Generar el identificador de acceso
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+Realiza una petición POST para la siguiente URL con los parámetros dados para generar el `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter             | Descripción                                                                                 |
+| Parámetro             | Descripción                                                                                 |
 |:--------------------- |:------------------------------------------------------------------------------------------- |
 | **nombre de usuario** | Correo electrónico de la cuenta                                                             |
 | **contraseña**        | Contraseña de la cuenta                                                                     |
@@ -61,7 +61,7 @@ Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Descripción                                                         |
+| Parámetro         | Descripción                                                         |
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
@@ -97,7 +97,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-| Parameter         | Descripción                            |
+| Parámetro         | Descripción                            |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
@@ -111,7 +111,7 @@ The service redirects you to AdGuard to authenticate (if you are not already log
 
 The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
-| Parameter         | Descripción                                                                                                                                                    |
+| Parámetro         | Descripción                                                                                                                                                    |
 |:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **response_type** | Tells the authorization server which grant to execute                                                                                                          |
 | **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |

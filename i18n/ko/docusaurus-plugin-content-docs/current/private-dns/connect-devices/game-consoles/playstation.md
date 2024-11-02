@@ -3,15 +3,15 @@ title: PlayStation PS4/PS5
 sidebar_position: 4
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+게임 콘솔은 암호화된 DNS를 지원하지 않지만, 연결된 IP 주소를 통해 공용 AdGuard DNS 또는 개인 AdGuard DNS를 설정하는 데 적합합니다.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+귀하의 라우터에서 암호화된 DNS 서버의 사용을 지원할 가능성이 높으므로 항상 개인 AdGuard DNS를 환경 설정하고 게임 콘솔을 연결할 수 있습니다.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[라우터 설정 방법](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## AdGuard DNS 연결
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+게임 콘솔을 공용 AdGuard DNS 서버를 사용하도록 설정하거나 연결된 IP를 통해 환경 설정합니다.
 
 1. Turn on your PS4/PS5 console and sign in to your account.
 2. From the home screen, select the gear icon located in the top row.

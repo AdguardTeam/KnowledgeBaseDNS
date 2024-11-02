@@ -22,15 +22,15 @@ Stellen Sie eine POST-Anfrage für die folgende URL mit den angegebenen Paramete
 
 | Parameter    | Beschreibung                                                                            |
 |:------------ |:--------------------------------------------------------------------------------------- |
-| **username** | Account email                                                                           |
-| **password** | Account password                                                                        |
+| **username** | Konto-E-Mail                                                                            |
+| **password** | Konto-Passwort                                                                          |
 | mfa_token    | Token für die Zwei-Faktor-Authentifizierung (falls in den Kontoeinstellungen aktiviert) |
 
 In der Antwort erhalten Sie sowohl den `access_token` als auch den `refresh_token`.
 
-- Der `access_token` läuft nach einigen angegebenen Sekunden ab (dargestellt durch den `expires_in` Parameter in der Antwort). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- Der `access_token` läuft nach einigen angegebenen Sekunden ab (dargestellt durch den `expires_in` Parameter in der Antwort). Sie können einen neuen `access_token` unter Verwendung des `refresh_token` neu generieren (siehe: `Generieren eines Zugriffstokens aus einem Aktualisierungs-Token`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- Das `refresh_token` ist dauerhaft. Um den `refresh_token`zu widerrufen, siehe: `Widerruf eines Aktualisierungs-Tokens`.
 
 #### Beispielanfrage
 
@@ -53,17 +53,17 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### Zugriffstoken aus Aktualisierungs-Token generieren
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Zugriffstoken haben eine begrenzte Gültigkeit. Nach Ablauf muss Ihre App das Aktualisierungs-Token `` verwenden, um ein neues `Zugriffstoken`anzufordern.
 
-Make the following POST request with the given params to get a new access token:
+Führen Sie die folgende POST-Anfrage mit den angegebenen Parametern aus, um ein neues Zugriffstoken zu erhalten:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Beschreibung                                                        |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| Parameter         | Beschreibung                                                                   |
+|:----------------- |:------------------------------------------------------------------------------ |
+| **refresh_token** | `AKTUALISIERUNGS-TOKEN`, mit dem ein neuer Zugangstoken generiert werden muss. |
 
 #### Beispielanfrage
 
@@ -84,66 +84,66 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+### Widerruf eines Aktualisierungs-Tokens
 
-To revoke a refresh token, make the following POST request with the given params:
+Um ein Aktualisierungstoken zu widerrufen, führen Sie die folgende POST-Anfrage mit den angegebenen Parametern aus:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+#### Beispiel einer Anfrage
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-| Parameter         | Beschreibung                           |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| Parameter         | Beschreibung                                        |
+|:----------------- |:--------------------------------------------------- |
+| **refresh_token** | `AKTUALISIERUNGS-TOKEN`, der widerrufen werden soll |
 
-### Authorization endpoint
+### Autorisierungsendpunkt
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> Um Zugang zu diesem Endpunkt zu erhalten, müssen Sie uns unter **devteam@adguard.com** kontaktieren. Bitte beschreiben Sie den Grund und die Anwendungsfälle für diesen Endpunkt und geben Sie den URI für die Umleitung an. Nach der Genehmigung erhalten Sie eine eindeutige Kundenkennung, die für den Parameter **Client_id** verwendet werden sollte.
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+Der Endpunkt **/oapi/v1/oauth_authorize** wird verwendet, um mit dem Ressourceneigentümer zu interagieren und die Genehmigung für den Zugriff auf die geschützte Ressource zu erhalten.
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+Der Dienst leitet Sie an AdGuard weiter, um sich zu authentifizieren (falls Sie nicht bereits angemeldet sind) und dann zurück zu Ihrer Anwendung.
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+Die Anfrageparameter des Endpunkts **/oapi/v1/oauth_authorize** sind:
 
-| Parameter         | Beschreibung                                                                                                                                                   |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| Parameter         | Beschreibung                                                                                                                                                                                      |
+|:----------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Weist den Autorisierungsserver an, welche Erlaubnis ausgeführt werden soll                                                                                                                        |
+| **client_id**     | Die ID des OAuth-Clients, der die Autorisierung anfordert                                                                                                                                         |
+| **redirect_uri**  | Enthält eine URL. Eine erfolgreiche Antwort von diesem Endpunkt führt zu einer Umleitung zu dieser URL                                                                                            |
+| **state**         | Ein intransparenter Wert, der zu Sicherheitszwecken verwendet wird. Wenn dieser Anfrageparameter in der Anfrage gesetzt ist, wird er als Teil der **redirect_uri** an die Anwendung zurückgegeben |
+| **aid**           | Partnerkennung                                                                                                                                                                                    |
 
-For example:
+Zum Beispiel:
 
 ```http request
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+Um dem Autorisierungsserver mitzuteilen, welcher Grant-Typ zu verwenden ist, wird der Anfrageparameter **response_type** wie folgt verwendet:
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- Für die implizite Gewährung verwenden Sie **response_type=token**, um ein Zugriffstoken einzuschließen.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+Eine erfolgreiche Antwort ist **302 Found**, was eine Umleitung zu **redirect_uri** (ein Anfrageparameter) auslöst. Die Antwortparameter werden in die Fragmentkomponente (der Teil nach `#`) des **redirect_uri**-Parameters im **Location**-Header eingebettet.
 
-For example:
+Zum Beispiel:
 
 ```http request
 HTTP/1.1 302 Found
-Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
+Standort: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### Accessing API
+### Zugriff auf API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+Sobald das Zugriffs- und das Aktualisierungs-Token generiert sind, können API-Aufrufe durch Übergabe des Zugriffstokens in der Kopfzeile erfolgen.
 
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
+- Der Name der Kopfzeile muss `Authorization` lauten
+- Kopfzeilen-Wert muss sein `Bearer {access_token}`
 
 ## API
 

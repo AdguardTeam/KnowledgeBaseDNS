@@ -1,44 +1,44 @@
 ---
-title: How to remove a DNS profile
+title: So entfernen Sie ein DNS-Profil
 sidebar_position: 3
 ---
 
-If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to remove that DNS profile. Here's how to do it.
+Wenn Sie Ihr iPhone, iPad oder Ihren Mac mit einem konfigurierten DNS-Profil von Ihrem DNS-Server trennen müssen, müssen Sie dieses DNS-Profil entfernen. Und so geht's.
 
-On your Mac:
+Auf Ihrem Mac:
 
-1. Open *System Settings*.
+1. Öffnen Sie *Systemeinstellungen*.
 
-1. Click *Privacy & Security*.
+1. Klicken Sie auf *Sicherheit & Datenschutz*.
 
-1. Scroll down to *Profiles*.
+1. Blättern Sie nach unten zu *Profile*.
 
-    ![Profiles](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
+    ![Profile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
 
-1. Select a profile and click `–`.
+1. Wählen Sie ein Profil aus und klicken Sie auf `–`.
 
-    ![Deleting a profile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
+    ![Löschung eines Profils](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
 
-1. Confirm the removal.
+1. Bestätigen Sie das Entfernen.
 
-    ![Confirmation](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
+    ![Bestätigung](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
 
-On your iOS device:
+Auf Ihrem iOS-Gerät:
 
-1. Open *Settings*.
+1. Öffnen Sie *Einstellungen*.
 
-1. Select *General*.
+1. Wählen Sie *Allgemein*.
 
-    ![General settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
+    ![Allgemeine Einstellungen *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
 
-1. Scroll down to *VPN & Device Management*.
+1. Blättern Sie nach unten zu *VPN und Geräteverwaltung*.
 
-    ![VPN & Device Management *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
+    ![VPN und Geräteverwaltung *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
 
-1. Select the desired profile and tap *Remove Profile*.
+1. Wählen Sie das gewünschte Profil aus und tippen Sie auf *Profil entfernen*.
 
-    ![Profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
+    ![Profil *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
 
-    ![Deleting a profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
+    ![Löschen eines Profils *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
 
-1. Enter your device password to confirm the removal.
+1. Geben Sie Ihr Gerätepasswort ein, um das Entfernen zu bestätigen.

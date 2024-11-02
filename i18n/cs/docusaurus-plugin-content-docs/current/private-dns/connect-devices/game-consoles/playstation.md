@@ -3,34 +3,34 @@ title: PlayStation PS4/PS5
 sidebar_position: 4
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Herní konzole nepodporují šifrovaný DNS, ale jsou vhodné pro nastavení veřejného AdGuard DNS nebo soukromého AdGuard DNS prostřednictvím propojené IP adresy.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Je pravděpodobné, že váš router podporuje používání šifrovaných serverů DNS, takže na něm můžete kdykoli nakonfigurovat soukromý AdGuard DNS a připojit k němu herní konzoli.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Jak nakonfigurovat router](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Připojení k AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS, nebo ji nakonfigurujte pomocí propojené IP adresy:
 
-1. Turn on your PS4/PS5 console and sign in to your account.
-2. From the home screen, select the gear icon located in the top row.
-3. In the _Settings_ menu, select _Network_.
-4. Select _Set Up Internet Connection_.
-5. Choose _Use Wi-Fi_ or _Use a LAN Cable_, depending on your network setup.
-6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
-7. For _DHCP Host Name_, select _Do Not Specify_.
-8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Zapněte konzoli PS4/PS5 a přihlaste se ke svému účtu.
+2. Na domovské obrazovce vyberte ikonu ozubeného kola v horním řádku.
+3. V nabídce _Nastavení_ vyberte _Síť_.
+4. Vyberte _Nastavit připojení k Internetu_.
+5. V závislosti na nastavení sítě vyberte možnost _Použít Wi-Fi_ nebo _Použít LAN_.
+6. Vyberte možnost _Vlastní_ a poté vyberte možnost _Automatické nastavení IP adresy_.
+7. Pro položku _Název hostitele DHCP_ vyberte možnost _Neurčovat_.
+8. Pro _Nastavení DNS_ vyberte _Ručně_.
+9. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
    - `94.140.14.49`
    - `94.140.14.59`
-10. Select _Next_ to continue.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
-14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+10. Pokračujte výběrem možnosti _Další_.
+11. Na obrazovce _Nastavení MTU_ vyberte _Automaticky_.
+12. Na obrazovce _Proxy server_ vyberte _Nepoužívat_.
+13. Chcete-li otestovat nové nastavení DNS, vyberte možnost _Testovat připojení k Internetu_.
+14. Jakmile je test dokončen a zobrazí se "Připojení k internetu: Úspěšné", uložte nastavení.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

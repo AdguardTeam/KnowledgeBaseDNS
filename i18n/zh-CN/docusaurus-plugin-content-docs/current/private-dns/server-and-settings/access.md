@@ -1,32 +1,32 @@
 ---
-title: Access settings
+title: 权限设置
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+通过配置权限设置，可以保护 AdGuard DNS 免受未经授权的访问。 例如，您使用的是一个专用的 IPv4 地址，攻击者通过嗅探器识别了它，并向它发送大量请求。 没问题，只需将麻烦的域名或 IP 地址添加到列表中，它将不再打扰您！
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+被拦截的请求不会显示在查询日志中，也不会计入总请求限制。
 
-## How to set it up
+## 设置方式
 
-### Allowed clients
+### 允许的客户端
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+此设置让用户指定哪些客户端可以使用您的 DNS 服务器。 它拥有最高优先级。 例如，如果同一 IP 地址同时在拒绝列表和允许列表中，它仍然会被允许。
 
-### Disallowed clients
+### 禁止的客户端
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+在这里，用户可以列出不允许使用您的 DNS 服务器的客户端。 用户可以阻止所有客户端的访问权限，仅使用选定的客户端。 为此，将两个地址添加到不允许的客户端：`0.0.0.0.0/0` 和 `::/0`。 然后，在「_允许的客户端_」字段中，指定可以访问您服务器的地址。
 
-:::note Important
+:::note 重要信息
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+在应用访问权限设置之前，请确保没有阻止您自己的 IP 地址。 如果这样做，您将无法连接网络。 如果出现这种情况，只需断开与 DNS 服务器的连接，转到访问权限设置，并相应地调整配置。
 
 :::
 
-### Disallowed domains
+### 禁止的域名
 
 Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![其他设置 \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+要在查询日志中显示与 DNS 请求相关联的 IP 地址，请选择「_记录 IP 地址_」复选框。 为此，请打开「_服务器设置_」→「_高级设置_」。

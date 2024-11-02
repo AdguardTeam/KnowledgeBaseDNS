@@ -1,65 +1,65 @@
 ---
-title: Blocklists
+title: Seznamy zakázaných
 sidebar_position: 1
 ---
 
-## What blocklists are
+## Jaké jsou seznamy zakázaných
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Seznamy zakázaných jsou sady pravidel v textovém formátu, které AdGuard DNS používá k filtrování reklam a obsahu, který by mohl ohrozit vaše soukromí. Obecně se filtr skládá z pravidel s podobným zaměřením. Mohou existovat například pravidla pro jazyky webových stránek (například filtry pro němčinu nebo ruštinu) nebo pravidla chránící před phishingovými stránkami (například seznam blokovaných phishingových adres URL). Tato pravidla můžete snadno povolit nebo zakázat jako skupinu.
 
-## Why they are useful
+## Proč jsou užitečné
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Seznamy zakázaných jsou navrženy pro flexibilní přizpůsobení pravidel filtrování. Můžete například chtít zablokovat reklamní domény v určité jazykové oblasti nebo se zbavit sledovacích či reklamních domén. Vyberte požadované seznamy zakázaných a upravte filtrování podle svých představ.
 
-## How to activate blocklists in AdGuard DNS
+## Jak aktivovat seznamy zakázaných v AdGuard DNS
 
-To activate the blocklists:
+Aktivace seznamů zakázaných:
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. Otevřete ovládací panel.
+2. Přejděte do sekce _Servery_.
+3. Vyberte požadovaný server.
+4. Klikněte na _Seznamy zakázaných_.
 
-## Blocklists types
+## Typy seznamů zakázaných
 
 ### Obecné
 
-A group of filters that includes lists for blocking ads and tracking domains.
+Skupina filtrů, která obsahuje seznamy pro blokování reklam a sledovacích domén.
 
 ![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
-### Regional
+### Regionální
 
-A group of filters consisting of regional lists to block domains in specific languages.
+Skupina filtrů sestávající z regionálních seznamů pro blokování domén v určitých jazycích.
 
 ![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
-### Security
+### Zabezpečení
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+Skupina filtrů obsahující pravidla pro blokování podvodných stránek a phishingových domén.
 
 ![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
 ### Další
 
-Blocklists with various blocking rules from third-party developers.
+Seznamy zakázaných s různými pravidly blokování od vývojářů třetích stran.
 
 ![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
 
-## Adding filters
+## Přidávání filtrů
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+Pokud si přejete rozšířit seznam filtrů AdGuard DNS, můžete podat žádost o jejich přidání do příslušné sekce [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) na GitHubu.
 
-To submit a request:
+Podání žádosti:
 
-1. Go to the link above (you may need to register on GitHub).
-2. Click _New issue_.
-3. Click _Blocklist request_ and fill out the form.
-4. After filling out the form, click _Submit new issue_.
+1. Přejděte na výše uvedený odkaz (možná se budete muset zaregistrovat na GitHubu).
+2. Klikněte na _New issue_.
+3. Klikněte na _Blocklist request_ a vyplňte formulář.
+4. Po vyplnění formuláře klikněte na _Submit new issue_.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+Pokud pravidla blokování vašeho filtru nejsou duplicitní s existujícími seznamy, bude přidán do repozitáře.
 
 ## Uživatelská pravidla
 
-You can also create your own blocking rules.
-Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+Můžete si také vytvořit vlastní pravidla blokování.
+Více informací naleznete v článku [Uživatelská pravidla](/private-dns/setting-up-filtering/user-rules.md).

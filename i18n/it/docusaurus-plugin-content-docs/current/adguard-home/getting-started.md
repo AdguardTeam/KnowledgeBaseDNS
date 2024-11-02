@@ -25,7 +25,7 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
 
-### Other
+### Altro
 
 Some other unofficial options include:
 
@@ -182,7 +182,7 @@ This setup will automatically cover all devices connected to your home router, a
 
 1. Click the Apple icon and go to _System Preferences_.
 
-2. Click _Network_.
+2. Clicca _Rete_.
 
 3. Select the first connection in your list and click _Advanced_.
 

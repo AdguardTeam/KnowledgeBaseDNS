@@ -1,37 +1,37 @@
 ---
-title: Linked IPs
+title: 关联 IP 地址
 sidebar_position: 3
 ---
 
-## What linked IPs are and why they are useful
+## 什么是关联 IP 地址，为什么有用
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
+并非所有设备都支持加密的 DNS 协议。 在这种情况下，用户应考虑设置无加密的 DNS。
 
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+您可以使用**关联 IP 地址**：在此设置中，服务将视来自该 IP 地址和特定设备的所有标准 DNS 查询。 关联 IP 地址的唯一要求是，它必须是住宅 IP。
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+**住宅 IP 地址**是分配给连接到住宅互联网服务提供商（ISP）的设备地址。 通常它与地理位置相关联，并分配给个人住宅或公寓。 人们使用住宅 IP 地址进行日常在线活动，如浏览网络、发送电子邮箱、使用社交媒体或进行串流。
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+有时候，住宅 IP 地址可能已被使用，如果用户尝试连接到它，AdGuard DNS 将阻止连接。
+![关联 IPv4 地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+如果发生这种情况，请联系 [support@adguard-dns.io](mailto:support@adguard-dns.io) 支持，他们将帮助您完成正确的配置设置。
 
-## How to set up linked IP
+## 如何设置关联 IP
 
-The following instructions explain how to connect to the device via **linking IP address**:
+如何通过**关联 IP 地址**连接到设备的说明如下：
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously connected device.
-3. Go to _Use DNS server addresses_.
-4. Open _Plain DNS server addresses_ and connect the linked IP.
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+1. 打开仪表盘。
+2. 添加一个新设备或打开已连接设备的设置。
+3. 转到「_使用 DNS 服务器地址_」。
+4. 打开「_无加密的 DNS 服务器地址_」连接关联的 IP。
+   ![关联 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## 动态 DNS：为什么有用
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+每次设备连接到网络时，它都会获得一个新的动态 IP 地址。 当设备断开连接时，DHCP 协议服务器会将 IP 地址重新分配给其他设备。 This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 
@@ -87,7 +87,7 @@ On macOS and Linux, the easiest way is to use `cron`:
    - This job will run every 5 minutes
 3. Save crontab.
 
-:::note Important
+:::note 重要信息
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.

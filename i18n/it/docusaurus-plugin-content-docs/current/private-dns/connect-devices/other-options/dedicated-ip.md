@@ -15,13 +15,13 @@ Unfortunately, the technical specifications of the connected device may not alwa
 
 Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. Potresti aver bisogno di utilizzare [Impostazioni di accesso](/private-dns/server-and-settings/access.md) per limitare il traffico dei bot.
 
 The instructions below explain how to connect a dedicated IP to the device:
 
 ## Connect AdGuard DNS using dedicated IPs
 
-1. Open Dashboard.
+1. Apri cruscotto.
 2. Add a new device or open the settings of a previously created device.
 3. Select _Use server addresses_.
 4. Next, open _Plain DNS Server Addresses_.

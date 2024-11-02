@@ -3,18 +3,18 @@ title: Steam Deck
 sidebar_position: 5
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+게임 콘솔은 암호화된 DNS를 지원하지 않지만, 연결된 IP 주소를 통해 공용 AdGuard DNS 또는 개인 AdGuard DNS를 설정하는 데 적합합니다.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+귀하의 라우터에서 암호화된 DNS 서버의 사용을 지원할 가능성이 높으므로 항상 개인 AdGuard DNS를 환경 설정하고 게임 콘솔을 연결할 수 있습니다.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[라우터 설정 방법](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## AdGuard DNS 연결
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+게임 콘솔을 공용 AdGuard DNS 서버를 사용하도록 설정하거나 연결된 IP를 통해 환경 설정합니다.
 
-1. Open the Steam Deck settings by clicking the gear icon in the upper right corner of the screen.
-2. Click _Network_.
+1. 화면 오른쪽 위에 있는 톱니바퀴 아이콘을 눌러 Steam Deck 설정을 엽니다.
+2. **네트워크**를 클릭합니다.
 3. Click the gear icon next to the network connection you want to configure.
 4. Select IPv4 or IPv6, depending on the type of network you're using.
 5. Select _Automatic (DHCP) addresses only_ or _Automatic (DHCP)_.

@@ -3,34 +3,34 @@ title: PlayStation PS4/PS5
 sidebar_position: 4
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Les consoles de jeux ne prennent pas en charge le DNS crypté, mais elles sont bien adaptées à la configuration de l'AdGuard DNS public ou de l'AdGuard DNS privé via une adresse IP liée.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Il est probable que votre routeur prenne en charge l'utilisation de serveurs DNS cryptés, vous pouvez donc toujours configurer l'AdGuard DNS privé dessus et connecter votre console de jeux à celui-ci.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Comment configurer votre routeur](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Connectez AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Configurez votre console de jeux pour utiliser un serveur DNS AdGuard public ou configurez-la via IP liée :
 
-1. Turn on your PS4/PS5 console and sign in to your account.
-2. From the home screen, select the gear icon located in the top row.
-3. In the _Settings_ menu, select _Network_.
-4. Select _Set Up Internet Connection_.
-5. Choose _Use Wi-Fi_ or _Use a LAN Cable_, depending on your network setup.
-6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
-7. For _DHCP Host Name_, select _Do Not Specify_.
-8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Allumez votre console PS4/PS5 et connectez-vous à votre compte.
+2. Depuis l'écran d'accueil, sélectionnez l'icône d'engrenage située dans la rangée supérieure.
+3. Dans le menu _Paramètres_, sélectionnez _Réseau_.
+4. Sélectionnez _Configurer la connexion Internet_.
+5. Choisissez _Utiliser le Wi-Fi_ ou _Utiliser un câble LAN_, selon la configuration de votre réseau.
+6. Sélectionnez _Personnalisé_, puis sélectionnez _Automatique_ pour les _Paramètres d'adresse IP_.
+7. Pour le _nom d'hôte DHCP_, sélectionnez _Ne pas spécifier_.
+8. Pour les _paramètres DNS_, sélectionnez _Manuel_.
+9. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
    - `94.140.14.49`
    - `94.140.14.59`
-10. Select _Next_ to continue.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
-14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+10. Sélectionnez _Suivant_ pour continuer.
+11. Sur l'écran des _paramètres MTU_, sélectionnez _Automatique_.
+12. Sur l'écran du _Serveur proxy_, sélectionnez _Ne pas utiliser_.
+13. Sélectionnez _Tester la connexion Internet_ pour tester vos nouveaux paramètres DNS.
+14. Une fois le test terminé et que vous voyez "Connexion Internet : Réussie", enregistrez vos paramètres.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Il serait préférable d'utiliser une IP liée (ou une IP dédiée si vous avez un abonnement Équipe) :
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -3,34 +3,34 @@ title: Nintendo
 sidebar_position: 2
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Les consoles de jeux ne prennent pas en charge le DNS crypté, mais elles sont bien adaptées à la configuration de l'AdGuard DNS public ou de l'AdGuard DNS privé via une adresse IP liée.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Il est probable que votre routeur prenne en charge l'utilisation de serveurs DNS cryptés, vous pouvez donc toujours configurer l'AdGuard DNS privé dessus et connecter votre console de jeux à celui-ci.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Comment configurer votre routeur](/private-dns/connect-devices/routers/routers.md)
 
-:::note Compatibility
+:::note Compatibilité
 
-Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+S'applique à : New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL et Nintendo 2DS.
 
 :::
 
-## Connect AdGuard DNS
+## Connectez AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Configurez votre console de jeux pour utiliser un serveur DNS AdGuard public ou configurez-la via IP liée :
 
-1. From the home menu, select _System Settings_.
-2. Go to _Internet Settings_ → _Connection Settings_.
-3. Select the connection file, then select _Change Settings_.
-4. Select _DNS_ → _Set Up_.
-5. Set _Auto-Obtain DNS_ to _No_.
-6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
-7. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Dans le menu d'accueil, sélectionnez _Paramètres système_.
+2. Accédez aux _Paramètres Internet_ → _Paramètres de connexion_.
+3. Sélectionnez le fichier de connexion, puis sélectionnez _Modifier les paramètres_.
+4. Sélectionnez _DNS_ → _Configuration_.
+5. Réglez _Auto-Obtention du DNS_ sur _Non_.
+6. Sélectionnez _Configuration détaillée_ → _DNS principal_. Maintenez la flèche gauche enfoncée pour supprimer le DNS existant.
+7. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
    - `94.140.14.49`
    - `94.140.14.59`
-8. Save the settings.
+8. Enregistrez les paramètres.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Il serait préférable d'utiliser une IP liée (ou une IP dédiée si vous avez un abonnement Équipe) :
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

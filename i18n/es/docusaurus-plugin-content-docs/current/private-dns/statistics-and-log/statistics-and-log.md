@@ -3,9 +3,9 @@ title: Statistics and Query log
 sidebar_position: 1
 ---
 
-One of the purposes of using AdGuard DNS is to have a clear understanding of what your devices are doing and what they are connecting to. Without this clarity, there's no way to monitor the activity of your devices.
+Uno de los propósitos de usar AdGuard DNS es tener una comprensión clara de lo que están haciendo tus dispositivos y a qué se están conectando. Sin esta claridad, no hay forma de controlar la actividad de tus dispositivos.
 
-AdGuard DNS provides a wide range of useful tools for monitoring queries:
+AdGuard DNS proporciona una amplia gama de herramientas útiles para monitorear consultas:
 
 - [Statistics](/private-dns/statistics-and-log/statistics.md)
 - [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)

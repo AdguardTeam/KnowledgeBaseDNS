@@ -28,4 +28,4 @@ Prevents Firefox from switching to the DoH resolver from its settings when AdGua
 
 ## Log IP addresses
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. Si habilitas esta configuración, las direcciones IP serán registradas y mostradas en el registro de consultas.

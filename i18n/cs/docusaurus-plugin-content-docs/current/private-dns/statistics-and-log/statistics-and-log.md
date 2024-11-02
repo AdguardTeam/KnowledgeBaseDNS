@@ -3,11 +3,11 @@ title: Statistiky a protokol dotazů
 sidebar_position: 1
 ---
 
-One of the purposes of using AdGuard DNS is to have a clear understanding of what your devices are doing and what they are connecting to. Without this clarity, there's no way to monitor the activity of your devices.
+Jedním z účelů používání AdGuard DNS je mít přehled o tom, co vaše zařízení dělají a k čemu se připojují. Bez tohoto zpřehlednění není možné sledovat aktivitu zařízení.
 
-AdGuard DNS provides a wide range of useful tools for monitoring queries:
+AdGuard DNS poskytuje širokou škálu užitečných nástrojů pro sledování dotazů:
 
-- [Statistics](/private-dns/statistics-and-log/statistics.md)
-- [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
-- [Companies](/private-dns/statistics-and-log/companies.md)
-- [Query log](/private-dns/statistics-and-log/query-log.md)
+- [Statistiky](/private-dns/statistics-and-log/statistics.md)
+- [Cíl datového provozu](/private-dns/statistics-and-log/traffic-destination.md)
+- [Společnosti](/private-dns/statistics-and-log/companies.md)
+- [Protokol dotazů](/private-dns/statistics-and-log/query-log.md)

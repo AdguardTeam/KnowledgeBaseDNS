@@ -153,7 +153,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 3. In the _DNS server configuration_ section, select the _Custom IP_ radio button in the _Blocking mode_ selector and enter the IPv4 and IPv6 addresses of the server.
 
-4. Click _Save_.
+4. Cliquez sur _Enregistrer_.
 
 ## How do I change dashboard interface’s address? {#webaddr}
 
@@ -165,7 +165,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 2. Open `AdGuardHome.yaml` in your editor.
 
-3. Set the `http.address` setting to a new network interface. For example:
+3. Set the `http.address` setting to a new network interface. Par exemple :
 
    - `0.0.0.0:0` to listen on all network interfaces;
    - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
@@ -325,7 +325,7 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    chcon -t bin_t /usr/local/bin/AdGuardHome
    ```
 
-3. Add the required firewall rules in order to make it reachable through the network. For example:
+3. Add the required firewall rules in order to make it reachable through the network. Par exemple :
 
    ```sh
    firewall-cmd --new-zone=adguard --permanent
@@ -467,7 +467,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. For example:
+6. Replace the old AdGuard Home executable file with the new one. Par exemple :
 
    ```ps1
    $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
