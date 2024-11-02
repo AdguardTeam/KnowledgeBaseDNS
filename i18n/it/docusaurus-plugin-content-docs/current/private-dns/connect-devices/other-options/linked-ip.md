@@ -51,7 +51,7 @@ In questo modo, non dovrai aggiornare manualmente l'indirizzo IP associato ogni 
    - Accedi alla pagina e verifica che le impostazioni siano effettivamente supportate. _Questo è solo un esempio di come potrebbe apparire. Potrebbe variare a seconda del tuo router_
      ![DDNS supportato \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 2. Registra il tuo dominio con un servizio popolare come [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) o qualsiasi altro provider DDNS che preferisci.
-3. Enter the domain in your router settings and sync the configurations.
+3. Inserisci il dominio nelle impostazioni del router e sincronizza le configurazioni.
 4. Vai alle impostazioni IP collegate per connettere l'indirizzo, quindi naviga su _Impostazioni Avanzate_ e fai clic su _Configurazione DDNS_.
 5. Inserisci il dominio che hai registrato in precedenza e fai clic su _Configurare DDNS_.
    ![Configura DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)

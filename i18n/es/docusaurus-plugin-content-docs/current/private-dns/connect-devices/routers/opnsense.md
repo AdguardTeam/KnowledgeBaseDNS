@@ -3,23 +3,23 @@ title: OPNSense
 sidebar_position: 8
 ---
 
-OPNSense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
+El firmware de OPNSense se utiliza a menudo para configurar puntos de acceso inalámbricos, servidores DHCP, servidores DNS, permitiéndole configurar AdGuard DNS directamente en el dispositivo.
 
-## Use your router admin panel
+## Utiliza el panel de administración del router
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS-over-HTTPS o DNS-over-TLS:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Click _Services_ in the top menu, then select _DHCP Server_ from the drop-down menu.
-4. On the _DHCP Server_ page, select the interface that you want to configure the DNS settings for (e.g., LAN, WLAN).
-5. Scroll down to _DNS Servers_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Optionally, you can enable DNSSEC for enhanced security.
-9. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Abre el panel de administración del router. Se puede acceder en `192.168.1.1` o `192.168.0.1`.
+2. Introduce el nombre de usuario del administrador (generalmente, es admin) y la contraseña del router.
+3. Haz clic en _Servicios_ en el menú superior, luego selecciona _Servidor DHCP_ en el menú desplegable.
+4. En la página _Servidor DHCP_, selecciona la interfaz para la que deseas configurar los ajustes de DNS (p. ej., LAN, WLAN).
+5. Desplázate hacia abajo hasta _Servidores DNS_.
+6. Elige _DNS manual_. Selecciona _Usar estos servidores DNS_ o _Especificar servidor DNS manualmente_ e introduce las siguientes direcciones de servidor DNS:
+   - IPv4: `94.140.14.49` y `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
+7. Guarda la configuración.
+8. Opcionalmente, puedes habilitar DNSSEC para mejorar la seguridad.
+9. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP vinculadas](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -21,7 +21,7 @@ If you plan to run AdGuard Home on a **router within a small isolated network**,
 
 If you intend to run AdGuard Home on a **publicly accessible server,** you’ll probably want to select the _All interfaces_ option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
 
-## Access settings
+## Configuración de acceso
 
 :::note
 

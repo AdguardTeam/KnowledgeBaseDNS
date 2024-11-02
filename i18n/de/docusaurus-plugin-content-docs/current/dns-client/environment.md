@@ -1,45 +1,45 @@
 ---
-title: Environment
+title: Umgebung
 sidebar_position: 3
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
+AdGuard DNS Client verwendet [Umgebungsvariablen][wiki-env], um einen Teil der Konfiguration zu speichern. Die restliche Konfiguration wird in der [Konfigurationsdatei][conf] gespeichert.
 
 [conf]: configuration.md
-[wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
+[wiki-env]: https://de.wikipedia.org/wiki/Umgebungsvariable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+Das Ziel des Protokolls muss ein absoluter Pfad zu der Datei oder einer der speziellen Werte sein. Siehe die [Konfigurationsbeschreibung der Protokollierung][conf-log] im Artikel über die Konfigurationsdatei.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Diese Umgebungsvariable überschreibt das Feld [`log.output`][conf-log] in der Konfigurationsdatei.
 
-**Default:** **Unset.**
+**Standard:** **Nicht festgelegt.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
+Das Format für die Protokolleinträge. Siehe die [Konfigurationsbeschreibung der Protokollierung][conf-log] im Artikel über die Konfigurationsdatei.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Diese Umgebungsvariable überschreibt das Feld [`log.format`][conf-log] in der Konfigurationsdatei.
 
-**Default:** **Unset.**
+**Standard:** **Nicht festgelegt.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
+Mit dem Wert `1` werden die Protokolleinträge mit einem Zeitstempel versehen. Mit dem Wert `0` haben die Protokolleinträge keinen Zeitstempel.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Diese Umgebungsvariable überschreibt das Feld [`log.timestamp`][conf-log] in der Konfigurationsdatei.
 
-**Default:** **Unset.**
+**Standard:** **Nicht festgelegt.**
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+Mit dem Wert `1` wird die ausführliche Protokollierung aktiviert. Mit dem Wert `0` wird sie deaktiviert.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Diese Umgebungsvariable überschreibt das Feld [`log.verbose`][conf-log] in der Konfigurationsdatei.
 
-**Default:** **Unset.**
+**Standard:** **Nicht festgelegt.**

@@ -12,7 +12,7 @@ Bir iOS cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine ekle
 
 ## Use AdGuard Ad Blocker (paid option)
 
-AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
 1. AdGuard DNS'e bağlanmak istediğiniz cihaza [AdGuard uygulamasını](https://adguard.com/adguard-ios/overview.html) yükleyin.
 2. AdGuard uygulamasını açın.
@@ -24,8 +24,8 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazını
 5. Aşağıya kaydırın ve "Özel DNS sunucusu ekle" öğesine dokunun.
    ![DNS sunucusu ekle \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
 6. Aşağıdaki DNS adreslerinden birini kopyalayın ve uygulamadaki _DNS sunucu adresi_ alanına yapıştırın. Hangisini tercih edeceğinizden emin değilseniz DNS-over-HTTPS'yi seçin.
-   ![Copy server address \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
-   ![Paste server address \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
+   ![Sunucu adresini kopyala \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
+   ![Sunucu adresini yapıştır \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 7. _Kaydet Ve Seç_ öğesine dokunun.
    ![Kaydet Ve Seç \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step7.jpg)
 8. Yeni oluşturduğunuz sunucu listenin en altında görünmelidir.
@@ -48,10 +48,10 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 6. _Özel DNS sunucusu ekle_ öğesine gidin.
    ![Sunucu ekle \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step6.png)
 7. Aşağıdaki DNS adreslerinden birini kopyalayın ve _DNS sunucu adresleri_ metin alanına yapıştırın. Hangisini tercih edeceğinizden emin değilseniz _DNS-over-HTTPS_ öğesini seçin.
-   ![DoH server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
+   ![DNS-over-HTTPS sunucusu \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
+   ![Özel DNS sunucusu \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
 8. _Kaydet_ öğesine dokunun.
-   ![Save server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step8.jpg)
+   ![Sunucuyu kaydet \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step8.jpg)
 9. Yeni oluşturulan sunucunuz _Özel DNS sunucuları_ altında görünmelidir.
    ![Özel sunucular \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 

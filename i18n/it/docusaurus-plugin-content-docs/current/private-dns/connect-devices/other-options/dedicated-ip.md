@@ -1,32 +1,32 @@
 ---
-title: Dedicated IPs
+title: IP dedicati
 sidebar_position: 2
 ---
 
-## What are dedicated IPs?
+## Cosa sono gli IP dedicati?
 
-Dedicated IPv4 addresses are available to users with Team and Enterprise subscriptions, while linked IPs are available to everyone.
+Gli indirizzi IPv4 dedicati sono disponibili per gli utenti con abbonamenti Team ed Azienda, mentre gli IP collegati sono disponibili per tutti.
 
-If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+Se hai un abbonamento Team o Azienda, riceverai diversi indirizzi IP dedicati personali. Le richieste a questi indirizzi sono trattate come "tuoi", e le configurazioni a livello di server e le regole di filtraggio sono applicate di conseguenza. Gli indirizzi IP dedicati sono molto più sicuri e più facili da gestire. Con gli IP collegati, devi riconnetterti manualmente o utilizzare un programma speciale ogni volta che l'indirizzo IP del dispositivo cambia, il che accade dopo ogni riavvio.
 
-## Why do you need a dedicated IP?
+## Perché hai bisogno di un IP dedicato?
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. There are two ways to set up AdGuard DNS: [using linked IPs](/private-dns/connect-devices/other-options/linked-ip.md) and using dedicated IPs.
+Sfortunatamente, le specifiche tecniche del dispositivo connesso potrebbero non consentirti sempre di configurare un server DNS privato AdGuard crittografato. In questo caso, dovrai utilizzare DNS standard non crittografato. Ci sono due modi per impostare AdGuard DNS: [utilizzando IP collegati](/private-dns/connect-devices/other-options/linked-ip.md) e utilizzando IP dedicati.
 
-Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
+Gli IP dedicati sono generalmente un'opzione più stabile. L'IP collegato ha alcune limitazioni, come ad esempio sono consentiti solo indirizzi residenziali, il tuo fornitore può cambiare l'IP, e dovrai ricollegare l'indirizzo IP. Con gli IP dedicati, ottieni un indirizzo IP che è esclusivamente tuo, e tutte le richieste verranno conteggiate per il tuo dispositivo.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. Potresti aver bisogno di utilizzare [Impostazioni di accesso](/private-dns/server-and-settings/access.md) per limitare il traffico dei bot.
+Lo svantaggio è che potresti iniziare a ricevere traffico irrilevante (scannerizzatori, bot), come accade sempre con i risolutori DNS pubblici. Potresti aver bisogno di utilizzare [Impostazioni di accesso](/private-dns/server-and-settings/access.md) per limitare il traffico dei bot.
 
-The instructions below explain how to connect a dedicated IP to the device:
+Le istruzioni qui sotto spiegano come collegare un IP dedicato al dispositivo:
 
-## Connect AdGuard DNS using dedicated IPs
+## Collegare AdGuard DNS utilizzando IP dedicati
 
 1. Apri cruscotto.
-2. Add a new device or open the settings of a previously created device.
-3. Select _Use server addresses_.
-4. Next, open _Plain DNS Server Addresses_.
-5. Select the server you wish to use.
-6. To bind a dedicated IPv4 address, click _Assign_.
-7. If you want to use a dedicated IPv6 address, click _Copy_.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
-8. Copy and paste the selected dedicated address into the device configurations.
+2. Aggiungi un nuovo dispositivo o apri le impostazioni di un dispositivo precedentemente creato.
+3. Seleziona _Utilizza gli indirizzi del server_.
+4. Poi, apri _Indirizzi di server DNS semplici_.
+5. Seleziona il server che desideri utilizzare.
+6. Per associare un indirizzo IPv4 dedicato, fai clic su _Assegna_.
+7. Se desideri utilizzare un indirizzo IPv6 dedicato, fai clic su _Copia_.
+   ![Copia indirizzo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+8. Copia e incolla l'indirizzo dedicato selezionato nelle configurazioni del dispositivo.

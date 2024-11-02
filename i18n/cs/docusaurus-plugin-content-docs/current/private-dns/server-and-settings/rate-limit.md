@@ -1,23 +1,23 @@
 ---
-title: Rate limit
+title: Rychlostní limit
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+Omezení rychlosti DNS je metoda používaná k řízení objemu přenosů, které může DNS server zpracovat v určitém časovém rámci.
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+Bez omezení rychlosti jsou DNS servery náchylné k přetížení a uživatelé se tak mohou setkat se zpomalením, přerušením nebo úplným výpadkem služby. Omezení rychlosti zajišťuje, že DNS servery mohou udržet výkon a provozuschopnost i při velkém provozu. Omezení rychlosti také pomáhá chránit vás před škodlivými aktivitami, jako jsou útoky DoS a DDoS.
 
-## How does Rate limit work
+## Jak funguje omezení rychlosti
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+Omezování rychlosti DNS obvykle funguje tak, že se nastaví prahové hodnoty počtu požadavků, které může klient (IP adresa) zaslat DNS serveru za určité časové období. Pokud máte problémy s aktuálním rychlostním limitem AdGuard DNS a máte tarif _Team_ nebo _Enterprise_, můžete požádat o zvýšení tohoto limitu.
 
-## How to request DNS rate limit increase
+## Jak požádat o zvýšení limitu rychlosti DNS
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+Pokud máte předplacený tarif AdGuard DNS _Team_ nebo _Enterprise_, můžete požádat o vyšší limit. Postupujte podle následujících pokynů:
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+1. Přejděte na [Hlavní panel DNS](https://adguard-dns.io/dashboard/) → _Nastavení účtu_ → _Rychlostní limit_
+2. Klepněte na _Požadavek na zvýšení limitu_, abyste kontaktovali náš tým zákaznické podpory a požádali o zvýšení limitu. Budete muset zadat svůj CIDR a limit, který chcete mít
 
 ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
+1. Váš požadavek bude přezkoumán během 1-3 pracovních dnů. O změnách vás budeme kontaktovat e-mailem

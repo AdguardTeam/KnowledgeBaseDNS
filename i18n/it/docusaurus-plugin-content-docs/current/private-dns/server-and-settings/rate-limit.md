@@ -1,23 +1,23 @@
 ---
-title: Rate limit
+title: Limite richieste
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+La limitazione delle richieste DNS è un metodo utilizzato per controllare la quantità di traffico che un server DNS può elaborare in un certo intervallo di tempo.
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+Senza limiti di richieste, i server DNS sono vulnerabili a sovraccarichi e, di conseguenza, gli utenti potrebbero riscontrare rallentamenti, interruzioni o inattività totale del servizio. La limitazione di richieste garantisce che i server DNS possano mantenere prestazioni e tempi di attività anche in condizioni di traffico intenso. I limiti delle richieste aiutano anche a proteggerti da attività dannose, come attacchi DoS e DDoS.
 
-## How does Rate limit work
+## Come funziona il limite di richieste
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+La limitazione delle richieste DNS funziona tipicamente impostando soglie sul numero di richieste che un client (Indirizzo IP) può fare a un server DNS in un certo periodo di tempo. Se riscontri problemi con il limite attuale delle richieste di AdGuard DNS e sei in un _piano_ _Team_ o _Azienda_, puoi fare una richiesta di aumento del limite di velocità.
 
-## How to request DNS rate limit increase
+## Come richiedere un aumento del limite di richiesta DNS
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+Se sei sottoscritto al piano _Team_ o _Azienda_ di AdGuard DNS, puoi fare una Richiesta di un limite di velocità più alto. Per fare ciò, segui le istruzioni qui sotto:
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+1. Vai al [cruscotto DNS](https://adguard-dns.io/dashboard/) → _Impostazioni account_ → _Limite di velocità_
+2. Tocca _Richiesta di aumento del limite_ per contattare il nostro Supporto clienti e applica per l'aumento del limite di velocità. È necessario fornire il proprio CIDR e il limite che si desidera avere
 
-![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+![Limite delle richieste](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
+1. La tua richiesta sarà esaminata entro 1-3 giorni lavorativi. Ti contatteremo per le modifiche via e-mail

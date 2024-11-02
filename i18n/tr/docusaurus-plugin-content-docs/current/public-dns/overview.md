@@ -45,4 +45,4 @@ Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_sub
 
 ### Rate limit
 
-DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. Daha fazla bilgi için lütfen [ilgili makaleyi okuyun](/private-dns/server-and-settings/rate-limit.md).

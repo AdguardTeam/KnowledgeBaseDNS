@@ -1,23 +1,23 @@
 ---
-title: Rate limit
+title: Forespørgselskvote
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+DNS-forespørgselskvote er en metode, der bruges til at styre den trafikmængde, en DNS-server kan behandle inden for en bestemt tidsramme.
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+Uden en forespørgselskvote er DNS-servere sårbare over for overbelastning, og som et resultat heraf kan brugerne opleve forsinkelser, afbrydelser eller fuldstændig nedetid for tjenesten. Forespørgselskvote sikrer, at DNS-servere kan opretholde ydeevne og driftstid, selv under massiv trafikbelastning. Forespørgselskvote er også en hjælp til beskyttelse mod onsindet aktivitet, såsom DoS- og DDoS-angreb.
 
-## How does Rate limit work
+## Hvordan fungerer forespørgselskvote
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+DNS-forespørgselskvote fungerer typisk ved at sætte grænser for antallet af forespørgsler, en klient (IP-adresse) kan foretage til en DNS-server over et bestemt tidsinterval. Oplever man problemer med den nuværende AdGuard DNS-forespørgselskvote og er på en _Team_ eller _Enterprise_ abonnementstype, kan man anmode om en forhøjelse af forespørgselskvoten.
 
-## How to request DNS rate limit increase
+## Hvordan anmodes om en forøgelse af DNS-forespørgselskvoten
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+Abonnerer man på en AdGuard DNS _Team_ eller _Enterprise_ abonnementstype, kan man anmode om en højere forespørgselskvote. Følg vejledningen nedenfor for at gøre dette:
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+1. Gå til [DNS-kontrolpanel](https://adguard-dns.io/dashboard/) → _Konto indstillinger_ → _Forespørgselskvote_
+2. Tryk på _Anmod om en forespørgselskvoteforøgelse_ for at kontakte vores supportteam og ansøge om forespørgselskvoteforøgelsen. Man skal angive sin CIDR samt den kvote, man ønsker
 
-![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+![Forespørgselskvote](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
+1. Forespørgslen gennemgås inden for 1-3 arbejdsdage. Man vil blive kontakte vedr. ændringerne via e-mail

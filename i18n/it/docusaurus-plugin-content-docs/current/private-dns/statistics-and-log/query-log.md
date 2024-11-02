@@ -7,30 +7,30 @@ sidebar_position: 5
 
 Il registro delle richieste è uno strumento utile per lavorare con AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Ti consente di visualizzare tutte le richieste effettuate dai tuoi dispositivi durante il periodo selezionato e di ordinare le richieste per stato, tipo, azienda, dispositivo, paese.
 
-## How to use it
+## Come si usa
 
 Ecco cosa puoi vedere e cosa puoi fare nel _registro delle richieste_.
 
-### Detailed information on requests
+### Informazioni dettagliate sulle richieste
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Info sulle richieste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Blocco e sblocco di domini
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+Le richieste possono essere bloccate e sbloccate senza lasciare il registro, utilizzando gli strumenti disponibili.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Sblocca dominio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Ordinamento delle richieste
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Puoi selezionare lo stato della richiesta, il suo tipo, azienda, dispositivo e il periodo di tempo della richiesta che ti interessa.
 
 ![Ordinamento Richieste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
 ### Disattivazione della registrazione delle query
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Se lo desideri, puoi disattivare completamente la registrazione nelle impostazioni dell'account (ma ricorda che questo disattiverà anche le statistiche).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Registrazione \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

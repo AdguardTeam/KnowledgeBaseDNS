@@ -1,5 +1,5 @@
 ---
-title: Statistics and Query log
+title: Estadísticas y Registro de consultas
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ Uno de los propósitos de usar AdGuard DNS es tener una comprensión clara de lo
 
 AdGuard DNS proporciona una amplia gama de herramientas útiles para monitorear consultas:
 
-- [Statistics](/private-dns/statistics-and-log/statistics.md)
-- [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
-- [Companies](/private-dns/statistics-and-log/companies.md)
-- [Query log](/private-dns/statistics-and-log/query-log.md)
+- [Estadísticas](/private-dns/statistics-and-log/statistics.md)
+- [Destino del tráfico](/private-dns/statistics-and-log/traffic-destination.md)
+- [Empresas](/private-dns/statistics-and-log/companies.md)
+- [Registro de consultas](/private-dns/statistics-and-log/query-log.md)

@@ -441,11 +441,11 @@ Genera un token de Acceso y Actualización
 
 ##### Respuestas
 
-| Código | Descripción                                              |
-| ------ | -------------------------------------------------------- |
-| 200    | Access token issued                                      |
-| 400    | Faltan parámetros obligatorios                           |
-| 401    | Invalid credentials, MFA token or refresh token provided |
+| Código | Descripción                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| 200    | Token de acceso emitido                                                   |
+| 400    | Faltan parámetros obligatorios                                            |
+| 401    | Credenciales no válidas, token MFA o token de actualización proporcionado |
 
 null
 
@@ -473,7 +473,7 @@ Obtiene el registro de consultas
 
 | Nombre             | Ubicado en | Descripción                                                                            | Requerido | Esquema                                             |
 | ------------------ | ---------- | -------------------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)                                                  | Sí        | long                                                |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo)                                               | Sí        | long                                                |
 | time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo)                                               | Sí        | long                                                |
 | devices            | query      | Filtra por dispositivos                                                                | No        | [ string ]                                          |
 | countries          | query      | Filtra por países                                                                      | No        | [ string ]                                          |
@@ -518,23 +518,23 @@ null
 
 ##### Resumen
 
-Gets categories statistics
+Obtiene estadísticas de categorías
 
 ##### Parámetros
 
 | Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
 | ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)    | Sí        | long       |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
 | time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
-| devices            | query      | Filtra por dispositivos                  | No        | [ string ] |
+| devices            | query      | Filtrar por dispositivos                 | No        | [ string ] |
 | countries          | query      | Filtra por países                        | No        | [ string ] |
 
 ##### Respuestas
 
-| Código | Descripción                    |
-| ------ | ------------------------------ |
-| 200    | Categories statistics received |
-| 400    | Validación fallida             |
+| Código | Descripción                       |
+| ------ | --------------------------------- |
+| 200    | Categorías estadísticas recibidas |
+| 400    | Validación fallida                |
 
 ### /oapi/v1/stats/companies
 
@@ -542,15 +542,15 @@ Gets categories statistics
 
 ##### Resumen
 
-Gets companies statistics
+Obtiene estadísticas de empresas
 
 ##### Parámetros
 
 | Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
 | ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)    | Sí        | long       |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
 | time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
-| devices            | consulta   | Filtra por dispositivos                  | No        | [ linha ]  |
+| devices            | consulta   | Filtrar por dispositivos                 | No        | [ linha ]  |
 | countries          | query      | Filtra por países                        | No        | [ string ] |
 
 ##### Respuestas
@@ -615,23 +615,23 @@ Obtiene estadísticas de países
 
 ##### Resumen
 
-Gets devices statistics
+Obtiene estadísticas de dispositivos
 
 ##### Parámetros
 
 | Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
 | ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)    | Sí        | long       |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
 | time_to_millis   | consulta   | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
-| devices            | consulta   | Filtra por dispositivos                  | No        | [ string ] |
+| devices            | consulta   | Filtrar por dispositivos                 | No        | [ string ] |
 | countries          | query      | Filtra por países                        | No        | [ linha ]  |
 
 ##### Respuestas
 
-| Código | Descripción                 |
-| ------ | --------------------------- |
-| 200    | Devices statistics received |
-| 400    | Validación fallida          |
+| Código | Descripción                            |
+| ------ | -------------------------------------- |
+| 200    | Estadísticas de dispositivos recibidas |
+| 400    | Validación fallida                     |
 
 ### /oapi/v1/stats/domains
 
@@ -639,23 +639,23 @@ Gets devices statistics
 
 ##### Resumen
 
-Gets domains statistics
+Obtiene estadísticas de dominios
 
 ##### Parámetros
 
 | Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
 | ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)    | Sí        | long       |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
 | time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
-| devices            | query      | Filtra por dispositivos                  | No        | [ string ] |
+| devices            | query      | Filtrar por dispositivos                 | No        | [ string ] |
 | countries          | query      | Filtra por países                        | No        | [ linha ]  |
 
 ##### Respuestas
 
-| Código | Descripción                 |
-| ------ | --------------------------- |
-| 200    | Domains statistics received |
-| 400    | Validación fallida          |
+| Código | Descripción                        |
+| ------ | ---------------------------------- |
+| 200    | Estadísticas de dominios recibidas |
+| 400    | Validación fallida                 |
 
 ### /oapi/v1/stats/time
 
@@ -663,13 +663,13 @@ Gets domains statistics
 
 ##### Resumen
 
-Gets time statistics
+Obtiene estadísticas de tiempo
 
 ##### Parámetros
 
 | Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
 | ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)    | Sí        | long       |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
 | time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
 | devices            | consulta   | Filtra por dispositivos                  | No        | [ string ] |
 | countries          | consulta   | Filtra por países                        | No        | [ string ] |

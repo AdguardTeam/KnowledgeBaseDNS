@@ -3,28 +3,28 @@ title: Regole utente
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Cos'è e perché ne hai bisogno
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Le regole utente sono le stesse regole di filtraggio usate nelle liste di blocco comune. Puoi personalizzare il filtraggio del sito web per adattarlo alle tue esigenze aggiungendo regole manualmente o importandole da una lista predefinita.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+Per rendere il tuo filtraggio più flessibile e meglio adattato alle tue impostazioni, dai un'occhiata alla [sintassi delle regole](/general/dns-filtering-syntax/) per le regole di filtraggio di AdGuard DNS.
 
-## How to use
+## Come si usa
 
-To set up user rules:
+Per impostare le regole utente:
 
-1. Navigate to the _Dashboard_.
+1. Passa al _Cruscotto_.
 
 2. Vai alla sezione _Server_.
 
 3. Seleziona il server richiesto.
 
-4. Click the _User rules_ option.
+4. Clicca sull'opzione _Regole utente_.
 
-5. You'll find several options for adding user rules.
+5. Troverai diverse opzioni per aggiungere regole utente.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - Il modo più semplice è utilizzare il generatore. Per utilizzarlo, clicca su _Aggiungi nuova regola_ → Inserisci il nome del dominio che vuoi bloccare o sbloccare → Clicca su _Aggiungi regola_
+     ![Aggiungi regola \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Il metodo avanzato è utilizzare l'editor delle regole. Clicca su _Apri editor_ e inserisci le regole di blocco secondo la [sintassi](/general/dns-filtering-syntax/)
 
 Questa funzione consente di [reindirizzare una query a un altro dominio sostituendo il contenuto della query DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

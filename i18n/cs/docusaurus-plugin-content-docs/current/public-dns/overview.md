@@ -43,6 +43,6 @@ Na rozdíl od Google DNS nepodporuje AdGuard DNS hodnoty `edns_client_subnet` a 
 
 [DNS-over-QUIC je nový šifrovací protokol DNS](https://adguard.com/blog/dns-over-quic.html) a AdGuard DNS je první veřejný řešitel, který jej podporuje. Na rozdíl od DoH a DoT používá jako transportní protokol QUIC a konečně vrací DNS k jeho kořenům — pracuje přes UDP. Přináší všechny dobré vlastnosti, které nabízí QUIC — výchozí šifrování, zkrácení doby připojení, lepší výkon při ztrátě datových paketů. Kromě toho má být QUIC protokolem na transportní úrovni a nehrozí zde žádné riziko úniku metadat, k němuž by mohlo dojít v případě DoH.
 
-### Rate limit
+### Rychlostní limit
 
-DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+Omezení rychlosti DNS je technika používaná k regulaci množství přenosů, které může DNS server zpracovat v určitém časovém období. Nabízíme možnost zvýšit výchozí limit pro tarify Team a Enterprise soukromého AdGuard DNS. Další informace naleznete [v tomto článku](/private-dns/server-and-settings/rate-limit.md).
