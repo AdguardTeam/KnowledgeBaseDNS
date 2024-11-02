@@ -13,11 +13,11 @@ Le console di gioco non supportano DNS crittografati, ma sono ben adatte per con
 
 Configura la tua console di gioco per utilizzare un server DNS AdGuard pubblico o configurala tramite IP collegato:
 
-1. Turn on your Xbox One console and sign in to your account.
-2. Press the Xbox button on your controller to open the guide, then select _System_ from the menu.
+1. Accendi la tua console Xbox One e accedi al tuo account.
+2. Premi il pulsante Xbox sul controller per aprire il menu, quindi seleziona _Sistema_ dal menu.
 3. Nel menu _Impostazioni_, seleziona _Rete_.
-4. Under _Network Settings_, select _Advanced Settings_.
-5. Under _DNS Settings_, select _Manual_.
+4. In _Impostazioni di rete_, seleziona _Impostazioni Avanzate_.
+5. In _Impostazioni DNS_, seleziona _Manuale_.
 6. Nel campo _Server DNS_, inserisci uno dei seguenti indirizzi del server DNS:
    - `94.140.14.49`
    - `94.140.14.59`

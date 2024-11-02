@@ -21,9 +21,9 @@ L'app AdGuard ti consente di utilizzare DNS crittografati, rendendola perfetta p
 4. Assicurati che _Protezione DNS_ sia attivato e quindi toccalo. Scegli _server DNS_.
    ![Protezione DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
    ![Server DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
-5. Scroll down to the bottom and tap _Add a custom DNS server_.
+5. Scorri verso il basso fino in fondo e tocca _Aggiungi un server DNS personalizzato_.
    ![Aggiungi server DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
-6. Copy one of the following DNS addresses and paste it into the _DNS server adress_ field in the app. If you are not sure which one to prefer, choose DNS-over-HTTPS.
+6. Copia uno dei seguenti indirizzi DNS e incollalo nel campo _indirizzo server DNS_ nell'app. Se non sei sicuro di quale preferire, scegli DNS-over-HTTPS.
    ![Copia indirizzo server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
    ![Incolla indirizzo server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 7. Tocca _Salva e Seleziona_.

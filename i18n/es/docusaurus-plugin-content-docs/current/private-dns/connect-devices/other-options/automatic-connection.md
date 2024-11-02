@@ -1,42 +1,42 @@
 ---
-title: Automatic connection
+title: Conexión automática
 sidebar_position: 5
 ---
 
-## Why it is useful
+## ¿Por qué es útil?
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+No todos se sienten cómodos agregando dispositivos a través del _Dashboard_. Por ejemplo, si eres un administrador del sistema configurando múltiples dispositivos corporativos simultáneamente, querrás minimizar las tareas manuales tanto como sea posible.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Puedes crear un enlace de conexión y usarlo en la configuración del dispositivo. Tu dispositivo será detectado y se conectará automáticamente al servidor.
 
-## How to configure automatic connection
+## Cómo configurar la conexión automática
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+1. Abre el _Dashboard_ y selecciona el servidor requerido.
+2. Ve a _Dispositivos_.
+3. Habilita la opción para conectar dispositivos automáticamente.
+   ![Conectar dispositivos automáticamente \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Ahora puedes conectar automáticamente tu dispositivo al servidor creando una dirección especial que incluye el nombre del dispositivo, el tipo de dispositivo y el ID de servidor actual. Exploremos cómo son estas direcciones y las reglas para crearlas.
 
-### Examples of automatic connection addresses
+### Ejemplos de direcciones de conexión automática
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — esto creará automáticamente un dispositivo `Android` con el protocolo `DNS-over-TLS` llamado `AdGuard Test Device`
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — esto creará automáticamente un dispositivo `Windows` con el protocolo `DNS-over-HTTPS` llamado `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — esto creará automáticamente un dispositivo `iOS` con el protocolo `DNS mediante QUIC` llamado `Mary Sue`
 
-### Naming conventions
+### Convenciones de nomenclatura
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Al crear dispositivos manualmente, ten en cuenta que hay restricciones relacionadas con la longitud del nombre, caracteres, espacios y guiones.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Tamaño del nombre**: máximo 50 caracteres. Los caracteres que sobrepasen este límite se ignoran.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Caracteres permitidos**: letras, números y guiones `-`. Otros caracteres son ignorados.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Espacios y guiones**: usa un guion para un espacio y un doble guion ( `--`) para un guion.
 
-**Device type**: Use the following abbreviations:
+**Tipo de dispositivo**: usa las siguientes abreviaturas:
 
 - Windows — `win`
 - macOS — `mac`
@@ -45,15 +45,15 @@ When creating devices manually, please note that there are restrictions related 
 - Linux — `lnx`
 - Router — `rtr`
 - Smart TV — `stv`
-- Game console — `gam`
-- Other — `otr`
+- Consola de videojuegos — `gam`
+- Otro — `otr`
 
-## Link generator
+## Generador de enlaces
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Hemos agregado una plantilla que genera un enlace para el tipo de dispositivo específico y protocolo.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+1. Ve a _Servidores_ → _Configuración del servidor_ → _Dispositivos_ → _Conectar dispositivos automáticamente_ y haz clic en _Generador de enlaces e instrucciones_.
+2. Selecciona el protocolo que deseas usar, así como el nombre del dispositivo y el tipo de dispositivo.
+3. Haz clic en _Generar enlace_.
+   ![Generar enlace \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+4. Has generado el enlace con éxito, ahora copia la dirección del servidor y úsala en una de las [aplicaciones de AdGuard](https://adguard.com/welcome.html)

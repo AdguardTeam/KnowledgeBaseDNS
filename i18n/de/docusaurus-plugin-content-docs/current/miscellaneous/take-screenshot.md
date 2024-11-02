@@ -1,99 +1,99 @@
 ---
-title: 'How to take a screenshot'
+title: 'So erstellen Sie einen Bildschirmfoto'
 sidebar_position: 4
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Ein Bildschirmfoto ist eine Aufnahme des Bildschirms Ihres Computers oder Mobilgeräts, die mit Standardwerkzeugen oder einem speziellen Programm bzw. einer App erstellt werden kann.
 
-Sometimes a screenshot (or screenshots) is required by support team to better understand the problem, and not everyone knows how to take screenshots, especially of a separate window or a specific screen area on their devices. If you recognize yourself as one of these users, don’t worry. This article will help you as it describes a range of ways to take screenshots on different platforms.
+Manchmal benötigt das Support-Team ein Bildschirmfoto (oder mehrere), um das Problem besser zu verstehen, und nicht jeder weiß, wie man Bildschirmfotos macht, insbesondere von einem separaten Fenster oder einem bestimmten Bildschirmbereich auf seinem Gerät. Wenn Sie sich als einer dieser Nutzer wiedererkennen, brauchen Sie sich keine Sorgen zu machen. Dieser Artikel wird Ihnen helfen, denn er beschreibt eine Reihe von Möglichkeiten, Bildschirmfotos auf verschiedenen Plattformen zu erstellen.
 
-## How to take a screenshot
+## So erstellen Sie einen Bildschirmfoto
 
-Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+Hier finden Sie alle notwendigen Tastaturkürzel, die Sie kennen sollten, um Bildschirmfotos auf Ihrem Computer oder Mobilgerät zu erstellen.
 
 ### Android
 
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
+Das Aufnehmen von Bildschirmfotos auf einem Android-Gerät kann auf verschiedene Arten erfolgen — je nach Gerätemodell und Hersteller.
 
-Generally, the following button combination can be used for Android:
+Im Allgemeinen kann die folgende Tastenkombination für Android verwendet werden:
 
-- **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
+- **Halten Sie die Tasten *Lautstärke leiser* und *Ein/Aus* gleichzeitig für 1-2 Sekunden gedrückt**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a Screenshots folder in your Gallery.
+Ihr Android-Gerät erfasst den gesamten Bildschirm und speichert ihn als Foto. Sie finden das Bildschirmfoto also in einem Screenshot-Ordner in Ihrer Galerie.
 
-However, as already mentioned, the procedure may vary depending on the particular device. Let’s look at other possible combinations:
+Wie bereits erwähnt, kann das Verfahren jedoch je nach Gerät variieren. Schauen wir uns andere mögliche Kombinationen an:
 
-- **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
-- **Press and hold the *Back* and *Home* buttons simultaneously**
+- **Halten Sie die Tasten *Home* und *Power* gleichzeitig für 1 bis 2 Sekunden gedrückt;**
+- **Halten Sie die Tasten *Zurück* und *Home* gleichzeitig gedrückt**
 
-On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
+Unter Android 8 und höher kann ein Bildschirmfoto auch aufgenommen werden, indem man die Handkante einer geöffneten Hand vertikal entlang des linken/rechten Bildschirmrands platziert und die Hand zum anderen Bildschirmrand wischt, während man den Bildschirm mit der Handkante berührt.
 
-If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
+Wenn diese Methode nicht funktioniert, überprüfen Sie die Funktionen *Einstellungen* ➜ *Erweitert*, um die Funktion *Handflächenwischen zur Aufnahme* zu aktivieren.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+Außerdem können Sie jederzeit spezielle Anwendungen zum Aufnehmen von Screenshots auf Ihren Geräten verwenden, z. B. — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* usw.
 
 ### iOS
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
+Mit jedem iOS-Gerät (außer alten Geräten) können Sie mit den Standardwerkzeugen ein Bildschirmfoto erstellen.
 
-To take a screenshot on an iOS device, use the following combination:
+Um ein Bildschirmfoto auf einem iOS-Gerät zu erstellen, verwenden Sie die folgende Kombination:
 
-- **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
+- **Drücken Sie die *Seitentaste* und die *Home*-Taste gleichzeitig, dann lassen Sie sie schnell los**
 
-and this one for iPhone X or later:
+und diese hier für das iPhone X oder höher:
 
-- **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
+- **Drücken Sie die *Seitentaste* und die *Lautstärketaste*-Taste gleichzeitig und lassen Sie sie dann schnell los**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+Ihr iOS-Gerät erfasst den gesamten Bildschirm und speichert ihn als Foto. Sie können es in der normalen Foto-App finden.
 
 ### Windows
 
-- **To take a screenshot on Windows, press the *PrtScn* button**
+- **Um unter Windows ein Bildschirmfoto zu erstellen, drücken Sie die Taste *Druck***
 
-On some notebooks you have to hold *Fn* and then press *PrtScn* instead.
+Auf manchen Notebooks müssen Sie *Fn* gedrückt halten und dann stattdessen *Druck* drücken.
 
-*Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
+*Bitte beachten Sie: Die Taste „Druck” (engl. „PrtScn” - Print Screen) kann auf verschiedenen Tastaturen unterschiedlich abgekürzt werden - PrntScrn, PrtScn, PrtScr oder PrtSc.*
 
-Windows captures the entire screen and copies it to the clipboard.
+Windows erfasst den gesamten Bildschirm und kopiert ihn in die Zwischenablage.
 
-To take a screenshot of an active window, use the following combination:
+Um ein Bildschirmfoto von einem aktiven Fenster zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
-- **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
+- **Halten Sie *Alt* gedrückt und drücken Sie *Druck* (oder *Fn + Alt + Druck* auf einigen Laptops)**
 
-To take a screenshot of a specific area, you should use the following combination:
+Um ein Bildschirmfoto von einem bestimmten Bereich zu erstellen, sollten Sie das folgende Tastaturkürzel verwenden:
 
-- ***Hold down *Win* (the Windows button) and *Shift* and press ***S******
+- ***Halten Sie *Win* (die Windows-Taste) und *Umschalt* gedrückt und drücken Sie ***S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Nachdem Sie ein Bildschirmfoto erstellt haben, wird es in der Zwischenablage gespeichert. In den meisten Fällen können Sie es mit der Tastenkombination *Strg + V* in ein Dokument einfügen, das Sie gerade bearbeiten. Wenn Sie das Bildschirmfoto in einer Datei speichern möchten, sollten Sie alternativ das Standardprogramm **Paint** (oder eine andere Anwendung, die mit Bildern arbeiten kann) öffnen. Fügen Sie Ihr Bildschirmfoto mit der gleichen Tastenkombination oder durch Klicken auf die Schaltfläche Einfügen (normalerweise in der linken oberen Ecke des Bildschirms) dort ein und speichern Sie es dann.
 
-Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
+Unter Windows 8 und 10 können Sie mit dem Tastaturkürzel *Win + Druck* sehr schnell ein Bildschirmfoto erstellen. Sobald Sie diese Tasten drücken, wird der Screenshot automatisch als Datei in Ihrem Ordner „Bilder“ ➜ „Screenshots“ gespeichert.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Es gibt auch ein spezielles Programm zum Erstellen von Bildschirmfotos namens *Snipping Tool*, das Sie über das Startmenü unter den Standardprogrammen Ihres Computers finden können. Mit dem Snipping Tool können Sie einen beliebigen Bereich Ihres Desktops oder den gesamten Bildschirm erfassen. Nach der Aufnahme eines Bildschirmfotos mit diesem Programm können Sie das Bild bearbeiten und in einem beliebigen Ordner auf Ihrem Computer speichern.
 
 Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
-### MacOS
+### macOS
 
-To take a screenshot on Mac, use the following button combination:
+Um auf dem Mac ein Bildschirmfoto zu machen, verwenden Sie das folgende Tastaturkürzel:
 
-- ***Press and hold together ***⌘ Cmd + Shift + 3******
+- ***Drücken und halten Sie gleichzeitig die Tasten ***⌘ Cmd + Umschalt ⇧ + 3******
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Ihr Mac erfasst den gesamten Bildschirm und speichert ihn als Datei auf dem Schreibtisch.
 
-To take a screenshot of an active window, use the following combination:
+Um ein Bildschirmfoto von einem aktiven Fenster zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
-- **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
+- **Drücken und halten Sie gleichzeitig diese Tasten *⌘ Cmd + Umschalt ⇧ + 4 + Leertaste*.  Der Zeiger verwandelt sich in ein Kamerasymbol 📷. Klicken Sie auf das Fenster, um es zu erfassen. Press the Esc button to cancel taking a screenshot**
 
-To take a screenshot of a specific area, you should use the following combination:
+Um ein Bildschirmfoto von einem bestimmten Bereich zu erstellen, sollten Sie das folgende Tastaturkürzel verwenden:
 
-- ***Press and hold together ***⌘ Cmd + Shift + 4******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
+- ***Drücken und halten Sie gleichzeitig die Tasten ***⌘ Cmd + Umschalt ⇧ + 4******. Ziehen Sie das Fadenkreuz, um den gewünschten Bereich auszuwählen. Lassen Sie die Maus oder das Trackpad los, um ein Bildschirmfoto zu erstellen, drücken Sie die Esc-Taste, um den Vorgang abzubrechen.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
+Um ein Bildschirmfoto der *Touch Bar* (MacBook Pro) zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
-- ***Hold down ***⌘ Cmd + Shift + 6******
+- ***Halten Sie ***⌘ Cmd + Umschalt ⇧ + 6*** gedrückt***
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Ihr Mac nimmt die gesamte *Touch Bar* auf und speichert sie als Datei auf dem Schreibtisch.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
+Um ein Bildschirmfoto in die Zwischenablage zu kopieren, anstatt es zu speichern, halten Sie *Strg* zusammen mit einer der oben genannten Kombinationen gedrückt. Dann können Sie das Bildschirmfoto (aus der Zwischenablage) mit der Tastenkombination *Cmd + V* in ein Dokument oder ein Bild einfügen, das Sie gerade bearbeiten.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Sie können auch Bildschirmfotos erstellen, indem Sie die **Vorschau** verwenden und **Bildschirmfoto aufnehmen** (von dem ausgewählten Bereich, Fenster oder dem gesamten Bildschirm) wählen. Mit der **Vorschau** können Sie Ihre Bildschirmfotos in JPG, TIFF, PDF und anderen Dateiformaten speichern.

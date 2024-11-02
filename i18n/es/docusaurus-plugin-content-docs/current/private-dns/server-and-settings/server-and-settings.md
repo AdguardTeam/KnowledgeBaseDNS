@@ -1,27 +1,27 @@
 ---
-title: Server and settings
+title: Ajustes del servidor
 sidebar_position: 1
 ---
 
-## What is server and how to use it
+## ¿Qué es un servidor y cómo usarlo?
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+Cuando configuras AdGuard DNS privado, encontrarás el término _servidores_.
 
-A server acts as the “profile” that you connect your devices to.
+Un servidor actúa como el “perfil” al que conectas tus dispositivos.
 
-Servers include configurations that you can customize to your liking.
+Los servidores incluyen configuraciones que puedes personalizar a tu gusto.
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+Al crear una cuenta, automáticamente establecemos un servidor con configuraciones predeterminadas. Puedes optar por modificar este servidor o crear uno nuevo.
 
-For instance, you can have:
+Por ejemplo, puedes tener:
 
-- A server that allows all requests
-- A server that blocks adult content and certain services
-- A server that blocks adult content only during specific hours you choose
+- Un servidor que permite todas las peticiones
+- Un servidor que bloquea contenido para adultos y ciertos servicios
+- Un servidor que bloquea contenido para adultos solo durante las horas específicas que elijas
 
-For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+Para más información sobre filtrado de tráfico y reglas de bloqueo, consulta el artículo [“Cómo configurar el filtrado en AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
 
-If you're interested in specific settings, there are dedicated articles available for that:
+Si estás interesado en configuraciones específicas, hay artículos dedicados disponibles para eso:
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [Configuraciones avanzadas](/private-dns/server-and-settings/advanced.md)
+- [Configuraciones de acceso](/private-dns/server-and-settings/access.md)

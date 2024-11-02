@@ -1,28 +1,28 @@
 ---
-title: 'Updating the Knowledge Base'
+title: 'Aktualisieren der Wissensdatenbank'
 sidebar_position: 3
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Das Ziel dieser Wissensdatenbank ist es, jedem die aktuellsten Informationen zu allen möglichen DNS-bezogenen Themen von AdGuard zur Verfügung zu stellen. Aber die Dinge ändern sich ständig, und manchmal spiegelt ein Artikel nicht mehr den aktuellen Stand der Dinge wider - es gibt einfach nicht so viele von uns, die jede einzelne Information im Auge behalten und sie entsprechend aktualisieren können, wenn neue Versionen veröffentlicht werden.
 
-This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+Aus diesem Grund haben wir alle Inhalte unserer Wissensdatenbank auf [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS) eingestellt, und jetzt kann buchstäblich jeder dazu beitragen, indem er Bearbeitungen und Übersetzungen zu bestehenden Artikeln vorschlägt, aber auch völlig neue Artikel erstellt.
 
-## How to suggest a change or write a new article {#suggest-change}
+## Wie man eine Änderung vorschlägt oder einen neuen Artikel schreibt {#suggest-change}
 
-You can suggest changes to current articles and add new ones to the Knowledge Base using the functionality of the GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [documentation in this section](https://docs.github.com/en).
+Sie können Änderungen an aktuellen Artikeln vorschlagen und neue Artikel zur Wissensdatenbank hinzufügen, indem Sie die oben genannten Funktionen von GitHub nutzen. Wenn Sie mit den Grundsätzen der Arbeit mit der Plattform GitHub nicht vertraut sind, lesen Sie zunächst die Dokumentation [in diesem Abschnitt](https://docs.github.com/en) (englisch).
 
-Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). All texts in our Knowledge Base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+Sobald Sie bereit sind, arbeiten Sie unter diesem Link [mit dem KnowledgeBaseDNS-Repository](https://github.com/AdguardTeam/KnowledgeBaseDNS). Alle Texte in unserer Wissensdatenbank sind in der Auszeichnungssprache `Markdown` verfasst. Denken Sie daran, wenn Sie Artikel bearbeiten oder schreiben. Folgen Sie [diesem Link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), um mehr über die Markdown-Syntax zu erfahren.
 
-The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
+Die Website der Wissensdatenbank wurde mit Docusaurus 2 erstellt, einem modernen Generator für statische Websites. Wenn Sie Änderungen oder Ergänzungen vorschlagen, beachten Sie bitte, dass alle Dokumente den Grundsätzen der Plattform entsprechen müssen. Sie können sie in [diesem Leitfaden](https://docusaurus.io/docs/category/guides) nachlesen.
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+Sie können die Wissensdatenbank auch lokal auf Ihrem Computer bereitstellen, um eine Vorschau auf die von Ihnen vorgeschlagenen Änderungen zu erhalten. Detaillierte Anleitungen dazu finden Sie [in der README.md Datei](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) auf der GitHub-Seite dieser Wissensdatenbank.
 
-## Translating articles {#translate-adguard}
+## Artikel übersetzen {#translate-adguard}
 
-Translation of the existing articles of the Knowledge Base is carried out on [the Crowdin platform](https://crowdin.com/project/adguard-knowledge-bases). All the details about translations and working with Crowdin can be found [in the dedicated article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) of the AdGuard Ad Blocker Knowledge Base.
+Die Übersetzung der bestehenden Artikel der Wissensdatenbank erfolgt auf [der Crowdin-Plattform](https://crowdin.com/project/adguard-knowledge-bases). Alle Details zu Übersetzungen und zur Arbeit mit Crowdin finden Sie [im entsprechenden Artikel](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) der AdGuard Werbeblocker Wissensdatenbank.
 
-When working on AdGuard DNS Knowledge Base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
+Bei der Arbeit an AdGuard DNS Knowledge Base Artikeln kann es vorkommen, dass Sie auf Strings mit Pluralformen stoßen, die Sie besonders sorgfältig übersetzen sollten. [In einem separaten Artikel](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) beschreiben wir ausführlich die Schwierigkeiten, die bei der Übersetzung von Zeichenketten mit Pluralformen auftreten können, und geben eine ausführliche Anleitung, wie Sie damit auf der Crowdin-Plattform arbeiten können.
 
-## Working on open issues
+## Bearbeitung offener Fragen
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) related to updating the Knowledge Base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to this Knowledge Base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+Manchmal gibt es [offene Aufgaben](https://github.com/AdguardTeam/KnowledgeBaseDNS/issues/) im Zusammenhang mit der Aktualisierung der Wissensdatenbank. Sie können uns helfen, die Fertigstellung [auf die gleiche Weise](#suggest-change) zu beschleunigen, wie Sie auch andere Änderungen an dieser Wissensdatenbank vorschlagen würden. Wählen Sie ein beliebiges Thema, das Sie ansprechend finden, und beginnen Sie, daran zu arbeiten. Bei offenen Fragen können Sie diese direkt in den Kommentaren zum Problem stellen.

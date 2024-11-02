@@ -44,36 +44,36 @@ Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo
 3. Nella barra dei menu nella parte inferiore dello schermo, tocca l'icona dell'ingranaggio.
    ![Icona dell'ingranaggio \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step3.png)
 4. Apri _Impostazioni app_.
-   ![App settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
+   ![Impostazioni app \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
 5. Seleziona _server DNS_.
-   ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
-6. Scroll down and tap _Add a custom DNS server_.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS servers adresses_ field in the app. If you are not sure which one to use, select DNS-over-HTTPS.
+   ![Server DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
+6. Scorri verso il basso e tocca _Aggiungi un server DNS personalizzato_.
+   ![Aggiungi un server DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
+7. Copia uno dei seguenti indirizzi DNS e incollalo nel campo _Indirizzi server DNS_ nell'app. Se non sei sicuro di quale utilizzare, seleziona DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
+   ![Server DNS personalizzato \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Tocca _Salva e seleziona_.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+   ![Aggiungi un server DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
+9. Il server DNS che hai aggiunto verrà visualizzato in fondo all'elenco dei _Server DNS personalizzati_.
 
 Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Configure Private DNS manually
+## Configura DNS privato manualmente
 
-You can configure your DNS server in your device settings. Please note that Android devices only support DNS-over-TLS protocol.
+Puoi configurare il tuo server DNS nelle impostazioni del tuo dispositivo. Si prega di notare che i dispositivi Android supportano solo il protocollo DNS-over-TLS.
 
-1. Go to _Settings_ → _Wi-Fi & Internet_ (or _Network and Internet_, depending on your OS version).
-   ![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
-2. Select _Advanced_ and tap _Private DNS_.
-   ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
+1. Vai a _Impostazioni_ → _Wi-Fi & Internet_ (o _Rete e Internet_, a seconda della versione del tuo sistema operativo).
+   ![Impostazioni \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
+2. Seleziona _Avanzate_ e tocca _DNS privato_.
+   ![DNS privato \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
 3. Seleziona l'opzione _Nome host fornitore DNS privato_ e inserisci l'indirizzo del tuo server personale: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Tocca _Salva_.
    ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   All done! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+   Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
 ## Configura DNS semplice
 
-Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. You have two choices: using linked IPs or dedicated IPs.
+Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. Hai due opzioni: utilizzare IP collegati o IP dedicati.
 
 - [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -1,5 +1,5 @@
 ---
-title: Game consoles
+title: Console di gioco
 sidebar_position: 1
 ---
 

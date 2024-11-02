@@ -5,59 +5,59 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## What is AdGuard DNS Client?
+## Was ist AdGuard DNS Client?
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+Ein plattformübergreifender, schlanker DNS-Client für [AdGuard DNS][agdns]. Er fungiert als DNS-Server, der DNS-Anfragen an die entsprechenden vorgelagerten Resolver weiterleitet.
 
-[agdns]: https://adguard-dns.io
+[agdns]: https://adguard-dns.io/de/
 
-## Quick start {#start}
+## Schnellstart {#start}
 
 :::caution
 
-AdGuard DNS Client is still in the Beta stage. It may be unstable.
+AdGuard DNS Client befindet sich noch im Beta-Stadium. It may be unstable.
 
 :::
 
-Supported operating systems:
+Unterstützte Betriebssysteme:
 
 - Linux
 - macOS
 - Windows
 
-Supported CPU architectures:
+Unterstützte CPU-Architekturen:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Getting started {#start-basic}
+## Erste Schritte {#start-basic}
 
-### Unix-like operating systems {#start-basic-unix}
+### Unix-ähnliche Betriebssysteme {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. Laden Sie das `.tar.gz`- oder `.zip`-Archiv von der [Seite für Veröffentlichungen][releases] herunter und entpacken Sie es.
 
    :::caution
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   Unter macOS ist es wichtig, dass global installierte Daemons `root` gehören (siehe die [`launchd`-Dokumentation][launchd-requirements]) (engl.), daher muss die ausführbare Datei `AdGuardDNSClient` im Verzeichnis `/Applications/` oder dessen Unterverzeichnis abgelegt werden.
 
    :::
 
-2. Install it as a service by running:
+2. Installieren Sie ihn als Dienst, indem Sie Folgendes ausführen:
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. Bearbeiten Sie die Konfigurationsdatei `config.yaml`.
 
-4. Start the service:
+4. Starten Sie den Dienst:
 
    ```sh
    ./AdGuardDNSClient -s start -v
    ```
 
-To check that it works, use any DNS checking utility. For example, using `nslookup`:
+Um zu überprüfen, ob es funktioniert, verwenden Sie ein beliebiges DNS-Prüfprogramm. Zum Beispiel unter Verwendung von `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -68,56 +68,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Just download and install using the MSI installer from the [releases page][releases].
+Laden Sie einfach das MSI-Installationsprogramm von der [Seite für Veröffentlichungen][releases] herunter und installieren Sie es.
 
-To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
+Um zu überprüfen, ob es funktioniert, verwenden Sie ein beliebiges DNS-Prüfprogramm. Zum Beispiel mit `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Command-line options {#opts}
+## Kommandozeilenoptionen {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Jede Option überschreibt den entsprechenden Wert, der in der Konfigurationsdatei und der Umgebung angegeben ist.
 
-### Help {#opts-help}
+### Hilfe {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+Die Option `-h` bewirkt, dass AdGuard DNS Client eine Hilfemeldung auf der Standardausgabe ausgibt und mit einem Erfolgsstatuscode beendet wird.
 
-### Service {#opts-service}
+### Dienst {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Possible values are:
+Die Option `-s <value>` gibt die Aktion des Betriebssystemdienstes an. Mögliche Werte sind:
 
-- `install`: installs AdGuard DNS Client as a service
-- `restart`: restarts the running AdGuard DNS Client service
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `install`: installiert den AdGuard DNS Client als Dienst
+- `restart`: startet den laufenden Dienst AdGuard DNS Client neu
+- `start`: startet den installierten Dienst AdGuard DNS Client
+- `status`: zeigt den Status des installierten AdGuard DNS Client Dienstes
+- `stop`: beendet den laufenden AdGuard DNS Client
+- `uninstall`: deinstalliert den Dienst AdGuard DNS Client
 
-### Verbose {#opts-verbose}
+### Ausführlich {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+Die Option `-v` aktiviert die ausführliche Protokollausgabe.
 
 ### Version {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+Die Option `--version` bewirkt, dass AdGuard DNS Client die Version der ausführbaren Datei `AdGuardDNSClient` auf der Standardausgabe ausgibt und mit einem Erfolgsstatuscode beendet wird.
 
-## Configuration {#conf}
+## Konfiguration {#conf}
 
-### File {#conf-file}
+### Datei {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+Die YAML-Konfigurationsdatei wird in [eigenem Artikel][conf] beschrieben, und es gibt auch eine Beispielkonfigurationsdatei `config.dist.yaml`.  Einige Konfigurationsparameter können auch mit der Option [environment][env] überschrieben werden.
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Beendigungscodes {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Es gibt einige verschiedene Beendigungscodes, die unter verschiedenen Fehlerbedingungen auftreten können:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: Erfolgreich abgeschlossen und beendet, keine Fehler.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: Interner Fehler, höchstwahrscheinlich eine Fehlkonfiguration.
 
-- `2`: Bad command-line argument or value.
+- `2`: Falsches Kommandozeilenargument oder falscher Wert.

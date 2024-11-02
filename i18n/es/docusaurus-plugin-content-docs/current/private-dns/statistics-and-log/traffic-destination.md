@@ -1,8 +1,8 @@
 ---
-title: Traffic destination
+title: Destino del tráfico
 sidebar_position: 3
 ---
 
-This feature shows where DNS requests sent by your devices are routed. In addition to viewing a map of request destinations, you can filter the information by date, device, and country.
+Esta funcionalidad muestra dónde se envían las Peticiones DNS desde tus dispositivos. Además de visualizar un mapa de destinos de peticiones, puedes filtrar la información por fecha, dispositivo y país.
 
-![Traffic destination \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/traffic_destination.png)
+![Destino de tráfico \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/traffic_destination.png)

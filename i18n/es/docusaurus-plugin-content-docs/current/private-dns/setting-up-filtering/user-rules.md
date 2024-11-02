@@ -1,9 +1,9 @@
 ---
-title: User rules
+title: Reglas de usuario
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## Qué es y por qué lo necesitas
 
 Las reglas del usuario son las mismas reglas de filtrado que se utilizan en las listas de bloqueo comunes. Puedes personalizar el filtrado del sitio web para que se adapte a tus necesidades agregando reglas manualmente o importándolas de una lista predefinida.
 

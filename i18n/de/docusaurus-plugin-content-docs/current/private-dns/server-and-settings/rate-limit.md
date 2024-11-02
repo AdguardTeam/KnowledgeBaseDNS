@@ -1,23 +1,23 @@
 ---
-title: Rate limit
+title: Ratenbegrenzung
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+DNS-Ratenbegrenzung (Anfragelimit) ist eine Methode zur Kontrolle des Datenverkehrs, den ein DNS-Server in einem bestimmten Zeitrahmen verarbeiten kann.
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+Ohne Ratenbegrenzungen besteht die Gefahr einer Überlastung der DNS-Server. Infolgedessen kann es zu Verlangsamungen, Unterbrechungen oder einem vollständigen Ausfall des Dienstes kommen. Die Ratenbegrenzung stellt sicher, dass DNS-Server auch bei starkem Datenverkehr ihre Leistung und Betriebszeit aufrechterhalten können. Ratenbegrenzungen schützen Sie auch vor böswilligen Aktivitäten wie DoS- und DDoS-Angriffen.
 
-## How does Rate limit work
+## Wie funktioniert die Ratenbegrenzung?
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die Anzahl der Anfragen festgelegt werden, die ein Client (IP-Adresse) über einen bestimmten Zeitraum an einen DNS-Server senden kann. Wenn Sie Probleme mit der aktuellen AdGuard DNS-Ratenbegrenzung haben und einen _Team_- oder _Enterprise_-Plan haben, können Sie eine Erhöhung der Ratenbegrenzung anfordern.
 
-## How to request DNS rate limit increase
+## So beantragen Sie eine Erhöhung des DNS-Anfragelimits
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+Wenn Sie das AdGuard DNS _Team_- oder _Enterprise_-plan abonniert haben, können Sie ein höheres Anfragelimit beantragen. Befolgen Sie dazu bitte die nachstehenden Anweisungen:
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+1. Wechseln Sie zu [DNS-Übersicht](https://adguard-dns.io/dashboard/) → _Einstellungen_ → _Anfragelimit_
+2. Tippen Sie auf _Anfragen pro Sekunde erhöhen_, um unser Support-Team zu kontaktieren und die Erhöhung der Datenstrombegrenzung zu beantragen. Sie müssen Ihre CIDR und den gewünschten Grenzwert angeben
 
-![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+![Ratenbegrenzung](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
+1. Ihr Antrag wird innerhalb von 1-3 Arbeitstagen bearbeitet. Wir werden Sie per E-Mail über die Änderungen informieren

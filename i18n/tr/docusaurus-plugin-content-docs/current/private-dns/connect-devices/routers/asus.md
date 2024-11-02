@@ -11,7 +11,7 @@ Bu talimatlardaki yapılandırma bilgileri belirli bir yönlendirici modelinden 
 
 If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
+1. Log in to your Asus router admin panel. Buna [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.2.1](http://192.168.2.1/) aracılığıyla erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. _Gelişmiş Ayarlar_ kenar çubuğunda WAN bölümüne gidin.
 4. _WAN DNS Ayarları_ bölümünde _DNS Sunucusuna otomatik olarak bağlan_ öğesini _Hayır_ olarak ayarlayın.

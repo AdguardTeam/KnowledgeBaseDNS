@@ -5,34 +5,34 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-When you're using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
+Cuando utilizas iCloud Private Relay, el panel de DNS de AdGuard (y la página de prueba de AdGuard [asociada](https://adguard.com/test.html)) mostrará que no estás utilizando AdGuard DNS en ese dispositivo.
 
-![Device is not connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
+![El dispositivo no está conectado](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-To fix this problem, you need to allow AdGuard websites see your IP address in your device's settings.
+Para solucionar este problema, debes permitir que los sitios web de AdGuard vean tu dirección IP en la configuración de tu dispositivo.
 
-- On iPhone or iPad:
+- En iPhone o iPad:
 
-    1. Go to `adguard-dns.io`
+    1. Ve a `adguard-dns.io`
 
-    1. Tap the **Page Settings** button, then tap **Show IP Address**
+    1. Toca el botón **Configuración de página**, luego toca **Mostrar dirección IP**
 
-        ![iCloud Private Relay settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
+        ![Configuración de iCloud Private Relay *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
 
-    1. Repeat for `adguard.com`
+    1. Repite para `adguard.com`
 
-- On Mac:
+- En Mac:
 
-    1. Go to `adguard-dns.io`
+    1. Ve a `adguard-dns.io`
 
-    1. In Safari, choose **View** → **Reload and Show IP Address**
+    1. En Safari, elige **Ver** → **Recargar y Mostrar dirección IP**
 
-    1. Repeat for `adguard.com`
+    1. Repite para `adguard.com`
 
-If you can't see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
+Si no puedes ver la opción para permitir temporalmente que un sitio web vea tu dirección IP, actualiza tu dispositivo a la última versión de iOS, iPadOS o macOS y vuelve a intentarlo.
 
-Now your device should be displayed correctly in the AdGuard DNS dashboard:
+Ahora tu dispositivo debería mostrarse correctamente en el dashboard de AdGuard DNS:
 
-![Device is connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
+![El dispositivo está conectado](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you're browsing.
+Ten en cuenta que una vez que desactivas Private Relay para un sitio web específico, tu proveedor de red también podrá ver en qué sitio estás navegando.

@@ -62,18 +62,18 @@ Hepsi tamam, DDNS'i başarıyla kurdunuz!
 
 ### On Windows
 
-The easiest way is to use the Task Scheduler:
+En kolay yol Görev Zamanlayıcı'yı kullanmaktır:
 
-1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
+1. Bir görev oluşturun:
+   - Görev Zamanlayıcı'yı açın.
+   - Yeni bir görev oluşturun.
+   - Tetikleyiciyi her 5 dakikada bir çalışacak şekilde ayarlayın.
    - Select _Run Program_ as the action.
 2. Program seçin:
    - _Program veya Betik_ alanına `powershell` yazın
    - In the _Add Arguments_ field, type:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
-3. Save the task.
+3. Görevi kaydedin.
 
 ### On macOS and Linux
 
@@ -81,7 +81,7 @@ On macOS and Linux, the easiest way is to use `cron`:
 
 1. Crontab'ı açın:
    - Terminalde `crontab -e` komutunu çalıştırın.
-2. Add a task:
+2. Bir görev ekleyin:
    - Aşağıdaki satırı ekleyin:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
    - This job will run every 5 minutes

@@ -43,6 +43,6 @@ In tegenstelling tot Google DNS ondersteunt AdGuard DNS geen waarden voor `edns_
 
 [DNS-over-QUIC is een nieuw DNS-encryptieprotocol](https://adguard.com/blog/dns-over-quic.html) en AdGuard DNS is de eerste publieke oplossing die dit ondersteunt. In tegenstelling tot DoH en DoT gebruikt het QUIC als transportprotocol en brengt het DNS eindelijk terug naar zijn roots: het werkt via UDP. Het biedt alle goede dingen die QUIC te bieden heeft: kant-en-klare encryptie, kortere verbindingstijden, betere prestaties wanneer datapakketten verloren gaan. Bovendien wordt QUIC verondersteld een protocol op transportniveau te zijn en zijn er geen risico's op lekken van metagegevens die bij DoH zouden kunnen optreden.
 
-### Rate limit
+### Snelheidslimiet
 
-DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+DNS-ratelimiting is een techniek die wordt gebruikt om de hoeveelheid verkeer die een DNS-server binnen een specifieke tijdsperiode kan verwerken te reguleren. We bieden de optie om de standaardlimiet voor Team- en Enterprise-abonnementen van AdGuard DNS te verhogen. Voor meer informatie kunt je [het gerelateerde artikel lezen](/private-dns/server-and-settings/rate-limit.md).
