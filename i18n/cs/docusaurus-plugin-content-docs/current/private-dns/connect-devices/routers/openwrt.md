@@ -3,18 +3,18 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+Routery OpenWRT používají open source operační systém založený na Linuxu, který umožňuje flexibilní konfiguraci routerů a bran podle preferencí uživatele. Vývojáři se postarali o přidání podpory pro šifrované servery DNS a umožnili vám nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
 
-## Configure DNS-over-HTTPS
+## Konfigurace DNS-over-HTTPS
 
-- **Command-line instructions**. Install the required packages. DNS encryption should be enabled automatically.
+- **Pokyny příkazového řádku**. Nainstalujte požadované balíčky. Šifrování DNS by mělo být povoleno automaticky.
 
   ```# Install packages
   1. opkg update
   2. opkg install https-dns-proxy
 
   ```
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
 
   ```# Install packages
   1. opkg update
@@ -22,9 +22,9 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-dns-proxy.
+Přejděte do části _LuCI_ → _Služby_ → _HTTPS DNS Proxy_ a nakonfigurujte https-dns-proxy.
 
-- **Configure DoH provider**. https-dns-proxy is configured with Google DNS and Cloudflare DNS by default. You need to change it to AdGuard DoH. Specify several resolvers to improve fault tolerance.
+- **Nakonfigurujte poskytovatele DoH**. https-dns-proxy je ve výchozím nastavení nakonfigurován s Google DNS a Cloudflare DNS. Musíte ho změnit na AdGuard DoH. Zadejte několik řešitelů, abyste zlepšili odolnost proti chybám.
 
   ```# Configure DoH provider
   1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -37,18 +37,18 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
   8. /etc/init.d/https-dns-proxy restart
   ```
 
-## Configure DNS-over-TLS
+## Konfigurace DNS-over-TLS
 
-- **Command-line instructions**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **Pokyny příkazového řádku**. [Zakažte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) roli Dnsmasq DNS nebo ji zcela odeberte, případně [nahraďte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) její DHCP rolí s odhcpd.
 
   ```# Install packages
   1. opkg update
   2. opkg install unbound-daemon ca-certificates
   ```
 
-LAN clients and the local system should use Unbound as a primary resolver assuming that Dnsmasq is disabled.
+Klienti sítě LAN a místní systém by měli používat odchozí server jako primární řešitel za předpokladu, že je Dnsmasq zakázáno.
 
-- **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
+- **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
 
   ```# Install packages
   1. opkg update
@@ -56,9 +56,9 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
   3. /etc/init.d/rpcd restart
   ```
 
-Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
+Přejděte do části _LuCI_ → _Služby_ → _Rekurzivní DNS_ a nakonfigurujte Unbound.
 
-- **Configure AdGuard DNS-over-TLS**.
+- **Konfigurace AdGuard DNS-over-TLS**.
 
   ```1. uci add unbound zone
   2. uci set unbound.@zone[-1].enabled="1"
@@ -75,21 +75,21 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
   13. /etc/init.d/unbound restart
   ```
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Network_ → _Interfaces_.
-4. Select your Wi-Fi network or wired connection.
-5. Scroll down to IPv4 address or IPv6 address, depending on the IP version you want to configure.
-6. Under _Use custom DNS servers_, enter the IP addresses of the DNS servers you want to use. You can enter multiple DNS servers, separated by spaces or commas:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Optionally, you can enable DNS forwarding if you want the router to act as a DNS forwarder for devices on your network.
-8. Save the settings.
-9. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Síť_ → _Rozhraní_.
+4. Vyberte svou Wi-Fi nebo kabelové připojení.
+5. Přejděte dolů na adresu IPv4 nebo adresu IPv6 v závislosti na verzi IP, kterou chcete nakonfigurovat.
+6. V části _Použít vlastní servery DNS_ zadejte IP adresy DNS serverů, které chcete použít. Můžete zadat více serverů DNS oddělených mezerami nebo čárkami:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+7. Volitelně můžete povolit přesměrování DNS, pokud chcete, aby router fungoval jako přesměrovávač DNS pro zařízení v síti.
+8. Uložte nastavení.
+9. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

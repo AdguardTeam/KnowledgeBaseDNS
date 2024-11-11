@@ -13,11 +13,11 @@ AdGuard DNS üç farklı türde genel sunucuya sahiptir. "Varsayılan" sunucu, r
 
 ## AdGuard VPN protokolleri
 
-Düz DNS'nin (hem IPv4 hem de IPv6) yanı sıra AdGuard DNS, çeşitli şifreli protokolleri destekler, böylece size en uygun olanı seçebilirsiniz.
+Düz DNS'nin (hem IPv4 hem de IPv6) yanı sıra AdGuard DNS, çeşitli şifrelenmiş protokolleri destekler, böylece size en uygun olanı seçebilirsiniz.
 
 ### DNSCrypt
 
-AdGuard DNS, belirli bir şifreli protokol kullanmanıza izin verir — DNSCrypt. Bu sayede, tüm DNS istekleri şifrelenir, bu da sizi olası istek müdahalesinden ve ardından gizlice dinleme ve/veya değiştirmeden korur. Ancak DoH, DoT ve DoQ protokolleriyle karşılaştırıldığında DNSCrypt'in modası geçmiş olarak kabul edilir ve mümkünse bu protokolleri kullanmanızı öneririz.
+AdGuard DNS, belirli bir şifrelenmiş protokol kullanmanıza olanak tanır — DNSCrypt. Bu sayede, tüm DNS istekleri şifrelenir, bu da sizi olası istek müdahalesinden ve ardından gizlice dinleme ve/veya değiştirmeden korur. Ancak DoH, DoT ve DoQ protokolleriyle karşılaştırıldığında DNSCrypt'in modası geçmiş olarak kabul edilir ve mümkünse bu protokolleri kullanmanızı öneririz.
 
 ### DNS-over-HTTPS (DoH) ve DNS-over-TLS (DoT)
 
@@ -42,3 +42,7 @@ Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_sub
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC, yeni bir DNS şifreleme protokolüdür](https://adguard.com/blog/dns-over-quic.html) ve AdGuard DNS, onu destekleyen ilk genel çözümleyicidir. DoH ve DoT'un aksine, QUIC'i bir aktarım protokolü olarak kullanır ve sonunda DNS'i köklerine geri getirir — UDP üzerinden çalışır. QUIC'in sunduğu tüm iyi şeyleri getiriyor — kullanıma hazır şifreleme, azaltılmış bağlantı süreleri, veri paketleri kaybolduğunda daha iyi performans. Ayrıca, QUIC'in aktarım düzeyinde bir protokol olduğu varsayılır ve DoH ile oluşabilecek meta veri sızıntısı riski yoktur.
+
+### Rate limit
+
+DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. Daha fazla bilgi için lütfen [ilgili makaleyi okuyun](/private-dns/server-and-settings/rate-limit.md).

@@ -3,49 +3,49 @@ title: Linux
 sidebar_position: 6
 ---
 
-To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
+For at tilslutte en Linux-enhed til AdGuard DNS, føj den først til _Kontrolpanel_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Linux.
-3. Name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+1. Gå til _Kontrolpanel_ og klik på _Tilslut ny enhed_.
+2. Vælg Linux i rullemenuen _Enhedstype_.
+3. Navngiv enheden.
+   ![Tilslutning af enhed \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS Client
+## Brug AdGuard DNS Client
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+AdGuard DNS Client er et tværplatforms konsolværktøj, der muliggør brug af krypterede DNS-protokoller til at få adgang til AdGuard DNS.
 
-You can learn more about this in the [related article](/dns-client/overview/).
+Man kan læse mere om dette i den [relaterede artikel](/dns-client/overview/).
 
-## Use AdGuard VPN CLI
+## Brug AdGuard VPN CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
+Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænseflade). For at komme i gang med AdGuard VPN CLI skal man bruge Terminal.
 
-1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
-3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
+1. Installér AdGuard VPN CLI ved at følge [denne vejledning](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
+2. Gå til [indstillinger](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+3. For at indstille en bestemt DNS-server, brug kommandoen: `adguardvpn-cli config set-dns <server_address>`, hvor `<server_address>` er adressen på den private server.
+4. Aktivér DNS-indstillingerne ved at indtaste `adguardvpn-cli config set-system-dns on`.
 
-## Configure manually on Ubuntu (linked IP or dedicated IP required)
+## Opsæt manuelt på Ubuntu (linket IP eller dedikeret IP kræves)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
-2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+1. Klik på _System_ → _Præferencer_ → _Netværksforbindelser_.
+2. Vælg fanen _Trådløst_ og dernæst det tilsluttede netværk.
+3. Klik på _Redigér_ → _IPv4_.
+4. Skift de listede DNS-adresser til flg.:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
-6. Click _Apply_.
-7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+5. Slå _Autotilstand_ fra.
+6. Klik på _Anvend_.
+7. Gå til _IPv6_.
+8. Skift de listede DNS-adresser til flg.:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
-10. Click _Apply_.
-11. Link your IP address (or your dedicated IP if you have a Team subscription):
+9. Slå _Autotilstand_ fra.
+10. Klik på _Anvend_.
+11. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Configure manually on Debian (linked IP or dedicated IP required)
+## Opsæt manuelt på Debian (linket IP eller dedikeret IP kræves)
 
 1. Åbn en Terminal.
 2. Skriv på kommandolinjen: `su`.

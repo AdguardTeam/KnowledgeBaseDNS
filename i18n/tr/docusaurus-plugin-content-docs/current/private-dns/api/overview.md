@@ -129,7 +129,7 @@ Yetkilendirme sunucusuna hangi izn türünün kullanılacağını bildirmek içi
 
 - Örtülü izin için, bir erişim belirteci eklemek üzere **Response_type=token** kullanın.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). Yanıt parametreleri, **redirect_uri** parametresinin **Location** başlığının parça bileşenine (yani `#` işaretinden sonraki kısım) gömülüdür.
+Başarılı bir yanıt **302 Found** olur ve bu **redirect_uri** (bir istek parametresidir) adresine bir yönlendirmeyi tetikler. Yanıt parametreleri, **redirect_uri** parametresinin **Location** başlığının parça bileşenine (yani `#` işaretinden sonraki kısım) gömülüdür.
 
 Örneğin:
 

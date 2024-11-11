@@ -9,21 +9,21 @@ toc_max_heading_level: 4
 
 在这篇文章中，我们推荐一份受信任的 DNS 供应商名单。 要使用它们，请先在您的设备上安装 AdGuard 广告拦截程序或 AdGuard VPN。 然后，在同一设备上，点击本文中一个供应商的链接。
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Download AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)
+快速链接：[下载 AdGuard 广告拦截程序](https://agrd.io/download-kb-adblock)，[下载 AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)。
 
 :::
 
-## **Public anycast resolvers**
+## **公共 Anycast 解析器**
 
-These are globally distributed, large-scale DNS resolvers that use anycast routing to direct your DNS queries to the nearest data center.
+这些是分布在全球的大型 DNS 解析器，使用 Anycast 路由将用户的 DNS 查询引导到最近的数据中心。
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) is an alternative solution for ad blocking, privacy protection, and parental control. It provides the necessary number of protection features against online ads, trackers, and phishing, no matter what platform and device you use.
+[AdGuard DNS](https://adguard-dns.io/welcome.html) 是广告拦截、隐私保护和家长控制的替代解决方案。 无论用户使用什么平台和设备，它都能提供必要的保护，防止在线广告、跟踪器和网络钓鱼。
 
 #### 默认
 
-These servers block ads, tracking, and phishing.
+以下服务器阻止广告、跟踪和网络钓鱼。
 
 | 协议             | 地址                                                                       |                                                                                                                                                                                                                      |
 | -------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,11 +37,11 @@ These servers block ads, tracking, and phishing.
 
 #### 家庭保护
 
-These servers provide the Default features + Blocking adult websites + Safe search.
+以下服务器提供默认功能 + 禁止成人网站 + 安全搜索功能。
 
 | 协议             | 地址                                                                       |                                                                                                                                                                                                                            |
 | -------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `94.140.14.15` 和 `94.140.15.16`                                          | [Add to AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                  |
+| DNS, IPv4      | `94.140.14.15` 和 `94.140.15.16`                                          | [添加到 AdGuard](adguard:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS), [添加到 AdGuard VPN](adguardvpn:add_dns_server?address=94.140.14.15&name=AdGuard%20DNS)                                                        |
 | DNS, IPv6      | `2a10:50c0::bad1:ff` 和 `2a10:50c0::bad2:ff`                              | [添加到 AdGuard](adguard:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=2a10:50c0::bad1:ff&name=AdGuard%20DNS)                                             |
 | DNS-over-HTTPS | `https://family.adguard-dns.com/dns-query`                               | [添加到 AdGuard](adguard:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://family.adguard-dns.com/dns-query&name=AdGuard%20DNS) |
 | DNS-over-TLS   | `tls://family.adguard-dns.com`                                           | [添加到 AdGuard](adguard:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.adguard-dns.com&name=AdGuard%20DNS)                         |
@@ -51,7 +51,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 #### 无过滤
 
-Each of these servers provides a secure and reliable connection, but unlike the "Standard" and "Family Protection" servers, they don't filter anything.
+以下服务器都能提供安全可靠的连接，但与「标准」和「家庭保护」服务器不同，它们无法过滤任何内容。
 
 | 协议             | 地址                                                                      |                                                                                                                                                                                                                                    |
 | -------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,88 +65,88 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
+[Ali DNS](https://alidns.com/) 是免费的 DNS 递归解析系统，致力于为广大互联网用户提供“快速”、“稳定”、“安全”的 DNS 递归解析服务。 它包括 AliGuard 多种攻击防御策略，可以保护用户免受各种攻击和威胁。
 
-| 协议             | 地址                                     |                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `223.5.5.5` and `223.6.6.6`            | [Add to AdGuard](adguard:add_dns_server?address=223.5.5.5&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=223.5.5.5&name=)                                                                           |
-| DNS, IPv6      | `2400:3200::1` and `2400:3200:baba::1` | [Add to AdGuard](adguard:add_dns_server?address=2400:3200::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
-| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
-| DNS-over-TLS   | `tls://dns.alidns.com`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
-| DNS-over-QUIC  | `quic://dns.alidns.com:853`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
+| 协议             | 地址                                   |                                                                                                                                                                                                              |
+| -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `223.5.5.5` 和 `223.6.6.6`            | [添加到 AdGuard](adguard:add_dns_server?address=223.5.5.5&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=223.5.5.5&name=)                                                                           |
+| DNS, IPv6      | `2400:3200::1` 和 `2400:3200:baba::1` | [添加到 AdGuard](adguard:add_dns_server?address=2400:3200::1&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=2400:3200::1&name=)                                                                     |
+| DNS-over-HTTPS | `https://dns.alidns.com/dns-query`   | [添加到 AdGuard](adguard:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.alidns.com/dns-query&name=dns.alidns.com) |
+| DNS-over-TLS   | `tls://dns.alidns.com`               | [添加到 AdGuard](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
+| DNS-over-QUIC  | `quic://dns.alidns.com:853`          | [ 添加到 AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [ 添加到 AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)    |
 
-### BebasDNS by BebasID
+### BebasID 提供的 BebasDNS
 
-[BebasDNS](https://github.com/bebasid/bebasdns) is a free and neutral public resolver based in Indonesia which supports OpenNIC domain. Created by Komunitas Internet Netral Indonesia (KINI) to serve Indonesian user with free and neutral internet connection.
+[BebasDNS](https://github.com/bebasid/bebasdns) 是一个位于印度尼西亚，支持 OpenNIC 域名的免费中立公共 DNS 解析器。 它由印度尼西亚网络中立社区 (Komunitas Internet Netral Indonesia, KINI) 创建，旨在为印尼用户提供免费的中立互联网连接。
 
 #### 默认
 
-This is the default variant of BebasDNS. This variant blocks ads, malware, and phishing domains.
+这是 BebasDNS 的默认变体。 该变体仅阻止广告、恶意软件和网络钓鱼域名。
 
-| 协议             | 地址                                                                   |                                                                                                                                                                                                                         |
-| -------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                                  | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com) |
-| DNS-over-TLS   | `tls://dns.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                     |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.bebasid.com` IP: `103.87.68.194:8443` | [添加到 AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTQ6ODQ0MyAxXDKkdrOao8ZeLyu7vTnVrT0C7YlPNNf6trdMkje7QR8yLmRuc2NyeXB0LWNlcnQuZG5zLmJlYmFzaWQuY29t)                                                                      |
+| 协议             | 地址                                                               |                                                                                                                                                                                                                  |
+| -------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-query`                              | [添加到 AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/dns-query&name=dns.bebasid.com) |
+| DNS-over-TLS   | `tls://dns.bebasid.com:853`                                      | [添加到 AdGuard](adguard:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=dns.bebasid.com:853&name=dns.bebasid.com:853)                     |
+| DNSCrypt, IPv4 | 提供商：`2.dnscrypt-cert.dns.bebasid.com` IP 地址：`103.87.68.194:8443` | [添加到 AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTQ6ODQ0MyAxXDKkdrOao8ZeLyu7vTnVrT0C7YlPNNf6trdMkje7QR8yLmRuc2NyeXB0LWNlcnQuZG5zLmJlYmFzaWQuY29t)                                                               |
 
-#### Unfiltered
+#### 无过滤
 
-This variant doesn't filter anything.
+该变体无法过滤任何内容。
 
-| 协议             | 地址                                     |                                                                                                                                                                                                                                                 |
-| -------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`   | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                       |
-| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
+| 协议             | 地址                                     |                                                                                                                                                                                                                                          |
+| -------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/unfiltered`   | [添加到 AdGuard](adguard:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bebasid.com/unfiltered&name=dns.bebasid.com)                       |
+| DNS-over-TLS   | `tls://unfiltered.dns.bebasid.com:853` | [添加到 AdGuard](adguard:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=unfiltered.dns.bebasid.com:853&name=unfiltered.dns.bebasid.com:853) |
 
-#### Security
+#### 安全
 
-This is the security/antivirus variant of BebasDNS. This variant only blocks malware, and phishing domains.
+这是 BebasDNS 的安全/防病毒变体。 该变体仅阻止恶意软件和网络钓鱼域名。
 
-| 协议             | 地址                                        |                                                                                                                                                                                                                                                 |
-| -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://antivirus.bebasid.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com) |
-| DNS-over-TLS   | `tls://antivirus.bebasid.com:853`         | [Add to AdGuard](adguard:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853)                     |
+| 协议             | 地址                                        |                                                                                                                                                                                                                                          |
+| -------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://antivirus.bebasid.com/dns-query` | [添加到 AdGuard](adguard:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://antivirus.bebasid.com/dns-query&name=antivirus.bebasid.com) |
+| DNS-over-TLS   | `tls://antivirus.bebasid.com:853`         | [添加到 AdGuard](adguard:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=antivirus.bebasid.com:853&name=antivirus.bebasid.com:853)                     |
 
-#### Family
+#### 家庭
 
-This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains.
+这是 BebasDNS 的家庭模式变体。 该变体阻止色情、赌博、仇恨网站，阻止恶意软件和网络钓鱼域名。
 
-| 协议             | 地址                                                                             |                                                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                  | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [添加到 AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                                |
+| 协议             | 地址                                                                         |                                                                                                                                                                                                                                                          |
+| -------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                              | [添加到 AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                      | [添加到 AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
+| DNSCrypt, IPv4 | 提供商：`2.dnscrypt-cert.internetsehat.bebasid.com` IP 地址：`103.87.68.196:8443` | [添加到 AdGuard](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                         |
 
-#### Family With Ad Filtering
+#### 具有广告过滤功能的家庭模式
 
-This is the family variant of BebasDNS but with adblocker
+这是带有广告拦截器的 BebasDNS 家庭模式变体。
 
-| 协议             | 地址                                          |                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853`      | [Add to AdGuard](adguard:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853)             |
+| 协议             | 地址                                          |                                                                                                                                                                                                                                                      |
+| -------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock` | [添加到 AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853`      | [添加到 AdGuard](adguard:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853)             |
 
-#### OISD Filter
+#### OISD 过滤器
 
-This is a custom BebasDNS variant with only OISD Big filter
+这是一个自定义的 BebasDNS，仅包含 OISD Big 过滤器。
 
-| 协议             | 地址                                 |                                                                                                                                                                                                                                                             |
-| -------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853)                                     |
+| 协议             | 地址                                 |                                                                                                                                                                                                                                                      |
+| -------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd` | [添加到 AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`   | [添加到 AdGuard](adguard:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853)                                     |
 
-#### Hagezi Multi Normal Filter
+#### Hagezi Multi Normal 过滤器
 
-This is a custom BebasDNS variant with only Hagezi Multi Normal filter
+这是一个自定义的 BebasDNS，仅包含 Hagezi Multi Normal 过滤器。
 
-| 协议             | 地址                                   |                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
+| 协议             | 地址                                   |                                                                                                                                                                                                                                                      |
+| -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [添加到 AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [添加到 AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
 
 ### 0ms DNS
 
-[DNS](https://0ms.dev/) is a global DNS resolution service provided by 0ms Group as an alternative to your current DNS provider.
+[DNS](https://0ms.dev/) 是由 0ms Group 提供的全球 DNS 解析服务，用户可以将其作为当前 DNS 提供商的替代方案。
 
 It uses [OISD Big](https://oisd.nl/) as the basic filter to give everyone a more secure environment. It is designed with various optimizations, such as HTTP/3, caching, and more. It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
 
@@ -406,6 +406,17 @@ These servers use some logging, self-signed certs or no support for strict mode.
 | --------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` and `52.3.100.184` | [Add to AdGuard](adguard:add_dns_server?address=54.174.40.213&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
+
+| 协议             | 地址                               |                                                                                                                                                                    |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `193.110.81.0` and `185.253.5.0` | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Add to AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) is a free alternative DNS service by Dyn.
@@ -588,17 +599,6 @@ More strictly filtering policies with blocking — ads, marketing, tracking, cli
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [添加到 AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [添加到 AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
 
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) is a free, sovereign and GDPR-compliant recursive DNS resolver with a strong focus on security to protect the citizens and organizations of the European Union.
-
-| 协议             | 地址                               |                                                                                                                                                                    |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `193.110.81.0` and `185.253.5.0` | [Add to AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`          | [Add to AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`             | [Add to AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`            | [Add to AdGuard](adguard:add_dns_server?address=quic://zero.dns0.eu), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
-
 ### Quad9 DNS
 
 [Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don't provide a censoring component.
@@ -777,7 +777,7 @@ In "Protected" mode, malware and phishing protection.
 | DNS-over-HTTPS           | `https://protected.canadianshield.cira.ca/dns-query`                                                  | [Add to AdGuard](adguard:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://protected.canadianshield.cira.ca/dns-query&name=protected.canadianshield.cira.ca) |
 | DNS-over-TLS — Protected | Hostname: `tls://protected.canadianshield.cira.ca` IP: `149.112.121.20` and IPv6: `2620:10A:80BB::20` | [Add to AdGuard](adguard:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://protected.canadianshield.cira.ca&name=protected.canadianshield.cira.ca)                         |
 
-#### Family
+#### 家庭
 
 In "Family" mode, Protected + blocking adult content.
 
@@ -860,7 +860,7 @@ Blocks phishing, malicious and other unsafe websites.
 | --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.119` and `114.114.115.119` | [Add to AdGuard](adguard:add_dns_server?address=114.114.114.119&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.119&name=) |
 
-#### Family
+#### 家庭
 
 These servers block adult websites and inappropriate contents.
 
@@ -1000,7 +1000,7 @@ In "Safe" mode, protection from infected and fraudulent sites is provided.
 | DNS-over-HTTPS | `https://safe.dot.dns.yandex.net/dns-query`       | [Add to AdGuard](adguard:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://safe.dot.dns.yandex.net/dns-query&name=yandex.safe.doh) |
 | DNS-over-TLS   | `tls://safe.dot.dns.yandex.net`                   | [Add to AdGuard](adguard:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://safe.dot.dns.yandex.net&name=yandex.safe.dot)                         |
 
-#### Family
+#### 家庭
 
 In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
@@ -1164,7 +1164,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 | DNS-over-HTTPS | `https://dns.momou.ch/dns-query/kids` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch) |
 | DNS-over-TLS   | `tls://kids.dns.momou.ch`             | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch)               |
 
-#### Unfiltered
+#### 无过滤
 
 | 协议             | 地址                                          |                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

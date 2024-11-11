@@ -1,87 +1,87 @@
 ---
-title: Setting up AdGuard Home securely
+title: AdGuard Home sicher einrichten
 sidebar_position: 4
 ---
 
-This page contains a list of additional recommendations to help ensure the security of your AdGuard Home.
+Auf dieser Seite finden Sie eine Liste mit zusätzlichen Empfehlungen, die Ihnen helfen, die Sicherheit Ihres AdGuard Home zu gewährleisten.
 
-## Choosing server addresses
+## Auswahl von Serveradressen
 
-The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and convenient option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
-
-:::note
-
-The UI currently only allows you to select one interface, but you can actually select multiple addresses through the configuration file. We will be improving the UI in future releases.
-
-:::
-
-If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually called `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
-
-If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
-
-If you intend to run AdGuard Home on a **publicly accessible server,** you’ll probably want to select the _All interfaces_ option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
-
-## Access settings
+Wenn Sie AdGuard Home zum ersten Mal starten, werden Sie gefragt, welche Schnittstelle er für den reinen DNS-Dienst verwenden soll. Welche Option am sichersten und bequemsten ist, hängt davon ab, wie Sie AdGuard Home einsetzen möchten. Sie können die Adresse(n) später ändern, indem Sie AdGuard Home stoppen, das Feld `dns.bind_hosts` in der Konfigurationsdatei bearbeiten und AdGuard Home neu starten.
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Über die Benutzeroberfläche können Sie derzeit nur eine Schnittstelle auswählen, aber Sie können über die Konfigurationsdatei mehrere Adressen auswählen. Wir werden die Benutzeroberfläche in zukünftigen Versionen verbessern.
 
 :::
 
-At the bottom of the _Settings_ → _DNS settings_ page you will find the _Access settings_ section. These settings allow you to either ban clients that are known to abuse your AdGuard Home instance or to enable the Allowlist mode. The Allowlist mode is recommended for public instances where the number of clients is known and all of the clients are able to use secure DNS.
+Wenn Sie AdGuard Home nur auf **Ihrem Computer** ausführen möchten, wählen Sie das Loopback-Gerät (auch bekannt als "localhost"). Er heißt normalerweise `localhost`, `lo` oder ähnlich und hat die Adresse `127.0.0.1`.
 
-To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP addresses for allowed clients in the _Allowed clients_ field.
+Wenn Sie AdGuard Home auf einem **Router innerhalb eines kleinen isolierten Netzwerks** betreiben wollen, wählen Sie die lokal genutzte Schnittstelle. Die Namen können variieren, aber sie enthalten in der Regel die Worte `wlan` oder `wlp` und haben eine Adresse, die mit `192.168.` beginnt. Sie sollten vielleicht auch die Loopback-Adresse hinzufügen, wenn Sie möchten, dass die Software auf dem Router selbst auch AdGuard Home verwendet.
+
+Wenn Sie AdGuard Home auf einem **öffentlich zugänglichen Server** betreiben wollen, sollten Sie die Option _Alle Schnittstellen_ wählen. Beachten Sie, dass Ihr Server dadurch DDoS-Angriffen ausgesetzt sein kann. Lesen Sie daher bitte die Abschnitte über die Zugriffseinstellungen und die Ratenbegrenzung weiter unten.
+
+## Zugriffsrechte
+
+:::note
+
+Wenn Ihr AdGuard Home nicht von außerhalb zugänglich ist, können Sie diesen Abschnitt überspringen.
+
+:::
+
+Am Ende der Seite _Einstellungen_ ➜ _DNS-Einstellungen_ finden Sie den Abschnitt _Zugangseinstellungen_. Mit diesen Einstellungen können Sie Clients, die bekanntermaßen Ihre AdGuard Home Instanz missbrauchen, entweder verbieten oder den Zulassen-Modus aktivieren. Der Modus „Zulassen“ wird für öffentliche Instanzen empfohlen, bei denen die Anzahl der Clients bekannt ist und alle Clients in der Lage sind, sicheres DNS zu verwenden.
+
+Um den Modus „Zulassen“ zu aktivieren, geben Sie [ClientIDs][cid] (empfohlen) oder IP-Adressen für erlaubte Clients in das Feld _Zugelassene Clients_ ein.
 
 [cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
 
-## Disabling plain DNS
+## Einfaches DNS deaktivieren
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Wenn Ihr AdGuard Home nicht von außerhalb zugänglich ist, können Sie diesen Abschnitt überspringen.
 
 :::
 
-If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it inaccessible from the outside.
+Wenn alle Clients, die Ihren AdGuard Home nutzen, verschlüsselte Protokolle verwenden können, ist es eine gute Wahl, den einfachen DNS zu deaktivieren oder ihn von außerhalb unzugänglich zu machen.
 
-If you want to completely disable plain DNS serving, you can do so on the _Settings_ → _Encryption settings_ page.
+Wenn Sie das reine DNS-Serving vollständig deaktivieren möchten, können Sie dies auf der Seite _Einstellungen_ ➜ _Verschlüsselungseinstellungen_ tun.
 
-If you want to restrict plain DNS to internal use only, stop your AdGuard Home, edit the `dns.bind_hosts` field in the configuration file to contain only the loopback address(es), and restart AdGuard Home.
+Wenn Sie den reinen DNS auf die interne Nutzung beschränken wollen, stoppen Sie AdGuard Home, ändern Sie das Feld `dns.bind_hosts` in der Konfigurationsdatei so, dass es nur die Loopback-Adresse(n) enthält, und starten Sie AdGuard Home neu.
 
-## Plain-DNS ratelimiting
+## Einfaches DNS - Ratenbegrenzung
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Wenn Ihr AdGuard Home nicht von außerhalb zugänglich ist, können Sie diesen Abschnitt überspringen.
 
 :::
 
-The default plain-DNS ratelimit of 20 should generally be sufficient, but if you have a list of known clients, you can add them to the allowlist and set a stricter ratelimit for other clients.
+Die standardmäßige Plain-DNS-Ratelimitierung von 20 sollte im Allgemeinen ausreichen, aber wenn Sie eine Liste bekannter Clients haben, können Sie diese in die Zulassen-Liste aufnehmen und eine strengere Ratelimitierung für andere Clients festlegen.
 
-## OS service concerns
+## Bedenken hinsichtlich der OS-Dienste
 
-In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed to has proper ownership and permissions set.
+Um eine Privilegienerweiterung durch das Einschleusen von Binärdateien zu verhindern, ist es wichtig, dass der Ordner, in dem AdGuard Home installiert wird, die korrekten Eigentums- und Zugriffsrechte hat.
 
-We thank Go Compile for assistance in writing this section.
+Wir danken Go Compile für die Unterstützung bei der Erstellung dieses Abschnitts.
 
 ### Unix (FreeBSD, Linux, macOS, OpenBSD)
 
-AdGuard Home working directory, which is by default `/Applications/AdGuardHome` on macOS and `/opt/AdGuardHome` on other Unix systems, as well as the binary itself should generally have `root:root` ownership and not be writeable by anyone but `root`. You can check this with the following command, replacing `/opt/AdGuardHome` with your directory and `/opt/AdGuardHome/AdGuardHome` with your binary:
+Das Arbeitsverzeichnis von AdGuard Home, das standardmäßig `/Applications/AdGuardHome` auf macOS und `/opt/AdGuardHome` auf anderen Unix-Systemen ist, sowie das Binärprogramm selbst sollten im Allgemeinen den Besitz von `root:root` haben und von niemandem außer `root` geschrieben werden können. Sie können dies mit dem folgenden Befehl überprüfen, indem Sie `/opt/AdGuardHome` durch Ihr Verzeichnis und `/opt/AdGuardHome/AdGuardHome` durch Ihr Binärprogramm ersetzen:
 
 ```sh
 ls -d -l /opt/AdGuardHome
 ls -l /opt/AdGuardHome/AdGuardHome
 ```
 
-A reasonably secure output should look something like this:
+Eine einigermaßen sichere Ausgabe sollte in etwa so aussehen:
 
 ```none
 drwxr-xr-x 4 root root 4096 Jan 1 12:00 /opt/AdGuardHome/
 -rwxr-xr-x 1 root root 29409280 Jan 1 12:00 /opt/AdGuardHome/AdGuardHome
 ```
 
-Note the lack of write permission for anyone but `root` as well as `root` ownership. If the permissions and/or ownership are not correct, run the following commands under `root`:
+Beachten Sie die fehlende Schreibberechtigung für alle außer `root` sowie das `root`-Eigentum. Wenn die Berechtigungen und/oder Besitzverhältnisse nicht korrekt sind, führen Sie die folgenden Befehle unter `root` aus:
 
 ```sh
 chmod 755 /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
@@ -90,6 +90,6 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 
 ### Windows
 
-The principle is the same on Windows: make sure that the AdGuard Home directory, typically `C:\Program Files\AdGuardHome`, and the `AdGuardHome.exe` binary have the permissions that would only allow regular users to read and execute/list them.
+Das Prinzip ist unter Windows dasselbe: Stellen Sie sicher, dass das AdGuard Home Verzeichnis, typischerweise `C:\Programme\AdGuardHome`, und die Binärdatei `AdGuardHome.exe` die Berechtigungen haben, die es nur normalen Benutzern erlauben, sie zu lesen und auszuführen/aufzulisten.
 
-In the future we plan to release Windows builds as MSI installer files that make sure that this is performed automatically.
+In Zukunft planen wir, Windows-Builds als MSI-Installationsdateien zu veröffentlichen, die sicherstellen, dass dies automatisch geschieht.

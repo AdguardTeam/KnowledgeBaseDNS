@@ -11,19 +11,19 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 ## Connect AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 
-1. Open the Steam Deck settings by clicking the gear icon in the upper right corner of the screen.
+1. Ekranın sağ üst köşesindeki dişli çark simgesine tıklayarak Steam Deck ayarlarını açın.
 2. _Ağ_ öğesine tıklayın.
-3. Click the gear icon next to the network connection you want to configure.
-4. Select IPv4 or IPv6, depending on the type of network you're using.
-5. Select _Automatic (DHCP) addresses only_ or _Automatic (DHCP)_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+3. Yapılandırmak istediğiniz ağ bağlantısının yanındaki dişli çark simgesine tıklayın.
+4. Kullandığınız ağ türüne bağlı olarak IPv4 veya IPv6 öğesini seçin.
+5. Yalnızca _Otomatik (DHCP)_ adresler veya _Otomatik (DHCP)_ öğesini seçin.
+6. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
    - `94.140.14.49`
    - `94.140.14.59`
 7. Değişiklikleri kaydedin.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

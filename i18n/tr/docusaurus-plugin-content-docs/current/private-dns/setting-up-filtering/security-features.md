@@ -11,12 +11,12 @@ Burada saldırganlardan korunmak için hangi yöntemleri kullanmak istediğinizi
 
 Bugüne kadar 15 milyondan fazla siteyi kategorilendirdik; kimlik avı ve kötü amaçlı yazılımlarla bilinen 1,5 milyon siteden oluşan bir veri tabanı oluşturduk. AdGuard bu veri tabanını kullanarak sizi çevrimiçi tehditlerden korumak için ziyaret ettiğiniz siteleri kontrol eder.
 
-### Yeni kaydedilen alan adlarını engelle
+### Yeni tescilli alan adlarını engelle
 
-Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
+Dolandırıcılar, kimlik avı ve dolandırıcılık planları için genellikle yeni tescilli alan adlarını kullanır. Bu nedenle, bir alan adının kullanım süresini tespit eden ve yakın zamanda oluşturulmuşsa engelleyen özel bir filtre geliştirdik.
 Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
 
-### Block malicious domains using blocklists
+### Engel listelerini kullanarak kötü amaçlı alan adlarını engelle
 
 AdGuard DNS, üçüncü taraf engelleme filtrelerinin eklenmesini destekler.
 Ek koruma için `security` olarak işaretli filtreleri etkinleştirin.

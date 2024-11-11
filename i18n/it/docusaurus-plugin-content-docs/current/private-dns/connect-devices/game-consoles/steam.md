@@ -3,27 +3,27 @@ title: Steam Deck
 sidebar_position: 5
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Le console di gioco non supportano DNS crittografati, ma sono ben adatte per configurare AdGuard DNS Pubblico o AdGuard DNS Privato tramite un indirizzo IP collegato.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+È probabile che il tuo router supporti l'uso di server DNS crittografati, quindi puoi sempre configurare AdGuard DNS Privato su di esso e connettere la tua console di gioco ad esso.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Come configurare il tuo router](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Connetti AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Configura la tua console di gioco per utilizzare un server DNS AdGuard pubblico o configurala tramite IP collegato:
 
-1. Open the Steam Deck settings by clicking the gear icon in the upper right corner of the screen.
-2. Click _Network_.
-3. Click the gear icon next to the network connection you want to configure.
-4. Select IPv4 or IPv6, depending on the type of network you're using.
-5. Select _Automatic (DHCP) addresses only_ or _Automatic (DHCP)_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Apri le impostazioni di Steam Deck facendo clic sull'icona a forma di ingranaggio nell'angolo in alto a destra dello schermo.
+2. Clicca _Rete_.
+3. Fai clic sull'icona a forma di ingranaggio accanto alla connessione di rete che desideri configurare.
+4. Seleziona IPv4 o IPv6, a seconda del tipo di rete che stai utilizzando.
+5. Seleziona _Automatico (DHCP) solo indirizzi_ o _Automatico (DHCP)_.
+6. Nel campo _Server DNS_, inserisci uno dei seguenti indirizzi del server DNS:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save the changes.
+7. Salva i cambiamenti.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Sarebbe preferibile utilizzare un IP collegato (o un IP dedicato se hai un abbonamento Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)

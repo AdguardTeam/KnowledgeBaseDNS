@@ -3,27 +3,27 @@ title: Nintendo Switch
 sidebar_position: 3
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+游戏主机不支持加密 DNS，但它们非常适合通过关联的 IP 地址设置 公共 AdGuard DNS 或私人 AdGuard DNS。
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+路由器很可能支持加密的 DNS 服务器，因此用户可以配置私人 AdGuard DNS 并将游戏主机连接到它。
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[如何配置路由器](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## 连接 AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+将游戏主机配置为使用公共 AdGuard DNS 服务器，或用关联的 IP 进行配置：
 
-1. Turn on your Nintendo Switch console and go to the home menu.
-2. Go to _System Settings_ → _Internet_.
-3. Select the Wi-Fi network that you want to modify the DNS settings for.
-4. Click _Change Settings_ for the selected Wi-Fi network.
-5. Scroll down and select _DNS Settings_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. 打开 Nintendo Switch 主机并转到主菜单。
+2. 进入「_系统设置_」→「_互联网_」。
+3. 选择要修改 DNS 设置的 Wi-Fi 网络。
+4. 单击所选 Wi-Fi 网络的「_更改设置_」。
+5. 向下滚动并选择「_DNS 设置_」。
+6. 在「_DNS 服务器_」字段中，输入以下其中一个 DNS 服务器地址：
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save your DNS settings.
+7. 保存 DNS 设置。
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

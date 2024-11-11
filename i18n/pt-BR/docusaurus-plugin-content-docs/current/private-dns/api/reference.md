@@ -11,15 +11,15 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Este artigo contém documentação para a [ API do AdGuard DNS](private-dns/api/overview.md). Para o changelog completo da API do AdGuard DNS, visite [esta página](private-dns/api/changelog.md).
 
-## Current version: 1.9
+## Versão atual: 1.9
 
 ### /oapi/v1/account/limits
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém limites de conta
 
@@ -33,34 +33,34 @@ Obtém limites de conta
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
-Lists dedicated IPv4 addresses
+Lista de endereços IPv4 dedicados
 
 ##### Respostas
 
-| Código | Descrição                        |
-| ------ | -------------------------------- |
-| 200    | List of dedicated IPv4 addresses |
+| Código | Descrição                         |
+| ------ | --------------------------------- |
+| 200    | Lista de endereços IPv4 dedicados |
 
 #### POST
 
-##### Summary
+##### Resumo
 
-Allocates new IPv4
+Atribui novo IPv4
 
 ##### Respostas
 
-| Código | Descrição                              |
-| ------ | -------------------------------------- |
-| 200    | New IPv4 successfully allocated        |
-| 429    | Dedicated IPv4 count reached the limit |
+| Código | Descrição                                   |
+| ------ | ------------------------------------------- |
+| 200    | Novo IPv4 atribuído com sucesso             |
+| 429    | Contagem de IPv4 dedicados atingiu o limite |
 
 ### /oapi/v1/devices
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Lista dispositivos
 
@@ -72,7 +72,7 @@ Lista dispositivos
 
 #### POST
 
-##### Summary
+##### Resumo
 
 Cria um novo dispositivo
 
@@ -88,7 +88,7 @@ Cria um novo dispositivo
 
 #### EXCLUIR
 
-##### Summary
+##### Resumo
 
 Remove um dispositivo
 
@@ -107,7 +107,7 @@ Remove um dispositivo
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém um dispositivo existente por ID
 
@@ -126,7 +126,7 @@ Obtém um dispositivo existente por ID
 
 #### PUT
 
-##### Summary
+##### Resumo
 
 Atualiza um dispositivo existente
 
@@ -148,9 +148,9 @@ Atualiza um dispositivo existente
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
-List dedicated IPv4 and IPv6 addresses for a device
+Lista de endereços IPv4 e IPv6 dedicados para um dispositivo
 
 ##### Parâmetros
 
@@ -160,17 +160,17 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Respostas
 
-| Código | Descrição               |
-| ------ | ----------------------- |
-| 200    | Dedicated IPv4 and IPv6 |
+| Código | Descrição             |
+| ------ | --------------------- |
+| 200    | IPv4 e IPv6 dedicados |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### EXCLUIR
 
-##### Summary
+##### Resumo
 
-Unlink dedicated IPv4 from the device
+Desvincular IPv4 dedicado do dispositivo
 
 ##### Parâmetros
 
@@ -180,16 +180,16 @@ Unlink dedicated IPv4 from the device
 
 ##### Respostas
 
-| Código | Descrição                                            |
-| ------ | ---------------------------------------------------- |
-| 200    | Dedicated IPv4 successfully unlinked from the device |
-| 404    | Device or address not found                          |
+| Código | Descrição                                             |
+| ------ | ----------------------------------------------------- |
+| 200    | IPv4 dedicado desvinculado com sucesso do dispositivo |
+| 404    | Dispositivo ou endereço não encontrado                |
 
 #### POST
 
-##### Summary
+##### Resumo
 
-Link dedicated IPv4 to the device
+Vincular IPv4 dedicado ao dispositivo
 
 ##### Parâmetros
 
@@ -199,18 +199,18 @@ Link dedicated IPv4 to the device
 
 ##### Respostas
 
-| Código | Descrição                                        |
-| ------ | ------------------------------------------------ |
-| 200    | Dedicated IPv4 successfully linked to the device |
-| 400    | Falha na validação                               |
-| 404    | Device or address not found                      |
-| 429    | Linked dedicated IPv4 count reached the limit    |
+| Código | Descrição                                                |
+| ------ | -------------------------------------------------------- |
+| 200    | IPv4 dedicado vinculado com sucesso ao dispositivo       |
+| 400    | Falha na validação                                       |
+| 404    | Dispositivo ou endereço não encontrado                   |
+| 429    | A contagem de IPv4 dedicados vinculados atingiu o limite |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém o arquivo .mobileconfig DNS-over-HTTPS.
 
@@ -233,9 +233,9 @@ Obtém o arquivo .mobileconfig DNS-over-HTTPS.
 
 #### PUT
 
-##### Summary
+##### Resumo
 
-Generate and set new DNS-over-HTTPS password
+Gerar e definir nova senha do DNS-over-HTTPS
 
 ##### Parâmetros
 
@@ -245,16 +245,16 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Respostas
 
-| Código | Descrição                                  |
-| ------ | ------------------------------------------ |
-| 200    | DNS-over-HTTPS password successfully reset |
-| 404    | Dispositivo não encontrado                 |
+| Código | Descrição                                      |
+| ------ | ---------------------------------------------- |
+| 200    | Senha do DNS-over-HTTPS redefinida com sucesso |
+| 404    | Dispositivo não encontrado                     |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém o ficheiro .mobileconfig do DNS-over-TLS.
 
@@ -277,7 +277,7 @@ Obtém o ficheiro .mobileconfig do DNS-over-TLS.
 
 #### PUT
 
-##### Summary
+##### Resumo
 
 Atualiza as configurações do dispositivo
 
@@ -299,13 +299,13 @@ Atualiza as configurações do dispositivo
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Lista os servidores DNS que pertencem ao usuário.
 
 ##### Descrição
 
-Lista os servidores DNS que pertencem ao usuário. By default there is at least one default server.
+Lista os servidores DNS que pertencem ao usuário. Por padrão, há pelo menos um servidor padrão.
 
 ##### Respostas
 
@@ -315,7 +315,7 @@ Lista os servidores DNS que pertencem ao usuário. By default there is at least 
 
 #### POST
 
-##### Summary
+##### Resumo
 
 Cria um novo servidor DNS
 
@@ -335,13 +335,13 @@ Cria um novo servidor DNS. Você pode anexar configurações personalizadas, cas
 
 #### EXCLUIR
 
-##### Summary
+##### Resumo
 
 Remove um servidor DNS
 
 ##### Descrição
 
-Remove um servidor DNS. Todos os dispositivos conectados a este servidor DNS serão movidos para o servidor DNS padrão. Deleting the default DNS server is forbidden.
+Remove um servidor DNS. Todos os dispositivos conectados a este servidor DNS serão movidos para o servidor DNS padrão. É proibido excluir o servidor DNS padrão.
 
 ##### Parâmetros
 
@@ -358,7 +358,7 @@ Remove um servidor DNS. Todos os dispositivos conectados a este servidor DNS ser
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém um servidor DNS existente pelo ID
 
@@ -377,7 +377,7 @@ Obtém um servidor DNS existente pelo ID
 
 #### PUT
 
-##### Summary
+##### Resumo
 
 Atualiza um servidor DNS existente
 
@@ -399,7 +399,7 @@ Atualiza um servidor DNS existente
 
 #### PUT
 
-##### Summary
+##### Resumo
 
 Atualiza as configurações do servidor DNS
 
@@ -421,7 +421,7 @@ Atualiza as configurações do servidor DNS
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém listas de filtros
 
@@ -435,7 +435,7 @@ Obtém listas de filtros
 
 #### POST
 
-##### Summary
+##### Resumo
 
 Gera o token de acesso e de atualização
 
@@ -453,7 +453,7 @@ null
 
 #### EXCLUIR
 
-##### Summary
+##### Resumo
 
 Limpa o registo de consultas
 
@@ -465,7 +465,7 @@ Limpa o registo de consultas
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém o registo de consultas
 
@@ -473,8 +473,8 @@ Obtém o registo de consultas
 
 | Nome               | Localizado em | Descrição                                                                  | Obrigatório | Esquema                                            |
 | ------------------ | ------------- | -------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive)                                      | Sim         | longo                                              |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)                                        | Sim         | longo                                              |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)                                      | Sim         | longo                                              |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo)                                     | Sim         | longo                                              |
 | dispositivos       | consulta      | Filtrar por dispositivos                                                   | Não         | [ linha ]                                          |
 | países             | consulta      | Filtrar por países                                                         | Não         | [ linha ]                                          |
 | empresas           | consulta      | Filtrar por empresas                                                       | Não         | [ linha ]                                          |
@@ -486,15 +486,15 @@ Obtém o registo de consultas
 
 ##### Respostas
 
-| Código | Descrição |
-| ------ | --------- |
-| 200    | Query log |
+| Código | Descrição             |
+| ------ | --------------------- |
+| 200    | Registro de consultas |
 
 ### /oapi/v1/revoke_token
 
 #### POST
 
-##### Summary
+##### Resumo
 
 Revoga um token de atualização
 
@@ -516,18 +516,18 @@ null
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas de categorias
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
 ##### Respostas
 
@@ -540,18 +540,18 @@ Obtém estatísticas de categorias
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas de empresas
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
 ##### Respostas
 
@@ -564,19 +564,19 @@ Obtém estatísticas de empresas
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas detalhadas das empresas
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
-| cursor             | consulta      | Cursor de paginação                   | Não         | linhas    |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
+| cursor             | consulta      | Cursor de paginação                    | Não         | linhas    |
 
 ##### Respostas
 
@@ -589,18 +589,18 @@ Obtém estatísticas detalhadas das empresas
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas dos países
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
 ##### Respostas
 
@@ -613,18 +613,18 @@ Obtém estatísticas dos países
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Reúne estatísticas de dispositivos
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
 ##### Respostas
 
@@ -637,18 +637,18 @@ Reúne estatísticas de dispositivos
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas de domínios
 
 ##### Parâmetros
 
-| Nome               | Localizado em | Descrição                             | Obrigatório | Esquema   |
-| ------------------ | ------------- | ------------------------------------- | ----------- | --------- |
-| time_from_millis | consulta      | Time from in milliseconds (inclusive) | Sim         | longo     |
-| time_to_millis   | consulta      | Time to in milliseconds (inclusive)   | Sim         | longo     |
-| dispositivos       | consulta      | Filtrar por dispositivos              | Não         | [ linha ] |
-| países             | consulta      | Filtrar por países                    | Não         | [ linha ] |
+| Nome               | Localizado em | Descrição                              | Obrigatório | Esquema   |
+| ------------------ | ------------- | -------------------------------------- | ----------- | --------- |
+| time_from_millis | consulta      | Tempo de em milissegundos (inclusivo)  | Sim         | longo     |
+| time_to_millis   | consulta      | Tempo até em milissegundos (inclusivo) | Sim         | longo     |
+| dispositivos       | consulta      | Filtrar por dispositivos               | Não         | [ linha ] |
+| países             | consulta      | Filtrar por países                     | Não         | [ linha ] |
 
 ##### Respostas
 
@@ -661,7 +661,7 @@ Obtém estatísticas de domínios
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Obtém estatísticas de tempo
 
@@ -685,7 +685,7 @@ Obtém estatísticas de tempo
 
 #### OBTER
 
-##### Summary
+##### Resumo
 
 Lista serviços web
 

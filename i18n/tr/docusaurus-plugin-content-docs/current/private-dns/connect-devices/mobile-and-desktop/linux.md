@@ -3,66 +3,66 @@ title: Linux
 sidebar_position: 6
 ---
 
-To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
+Bir Linux cihazını AdGuard DNS'e bağlanmak için önce onu _Pano_ öğesine ekleyin:
 
 1. _Pano_ öğesine gidin ve _Yeni cihaz bağla_ öğesine tıklayın.
-2. In the drop-down menu _Device type_, select Linux.
-3. Name the device.
+2. Açılır menüde _Cihaz türü_ olarak Linux öğesini seçin.
+3. Cihazı adlandırın.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Use AdGuard DNS Client
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+AdGuard DNS İstemcisi, şifrelenmiş DNS protokollerini kullanarak AdGuard DNS'e erişmenizi sağlayan çapraz platformlu bir konsol yardımcı programıdır.
 
-You can learn more about this in the [related article](/dns-client/overview/).
+Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bulabilirsiniz.
 
 ## Use AdGuard VPN CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
+Özel AdGuard DNS'i AdGuard VPN CLI (komut satırı arayüzü) kullanarak kurabilirsiniz. AdGuard VPN CLI'yi kullanmaya başlamak için Terminal'i kullanmanız gerekir.
 
-1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+1. AdGuard VPN CLI'yi [bu talimatları](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/) izleyerek kurun.
+2. [Ayarlar](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/) öğesine erişin.
 3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
+4. DNS ayarlarını `adguardvpn-cli config set-system-dns on` yazarak etkinleştirin.
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
-2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+1. _Sistem_ → _Tercihler_ → _Ağ Bağlantıları_ öğesine tıklayın.
+2. _Kablosuz_ sekmesini seçin, ardından bağlı olduğunuz ağı seçin.
+3. _Düzenle_ → _IPv4_ öğesine tıklayın.
+4. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
    - `94.140.14.49`
    - `94.140.14.59`
 5. Turn off _Auto mode_.
-6. Click _Apply_.
+6. _Uygula_ öğesine tıklayın.
 7. _IPv6_ öğesine gidin.
-8. Change the listed DNS addresses to the following addresses:
+8. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
 9. Turn off _Auto mode_.
-10. Click _Apply_.
-11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+10. _Uygula_ öğesine tıklayın.
+11. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
+    - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
 1. Terminali açın.
-2. In the command line, type: `su`.
+2. Komut satırına şunu yazın: `su`.
 3. Enter your `admin` password.
-4. In the command line, type: `nano /etc/resolv.conf`.
-5. Change the listed DNS addresses to the following:
-   - IPv4: `94.140.14.49 and 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
-6. Press _Ctrl + O_ to save the document.
-7. Press _Enter_.
-8. Press _Ctrl + X_ to save the document.
-9. In the command line, type: `/etc/init.d/networking restart`.
-10. Press _Enter_.
+4. Komut satırına şunu yazın: `nano /etc/resolv.conf`.
+5. Listelenen DNS adreslerini aşağıdaki şekilde değiştirin:
+   - IPv4: `94.140.14.49` ve `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+6. Dokümanı kaydetmek için _Ctrl + O_ tuşlarına basın.
+7. _Enter_ tuşuna basın.
+8. Dokümanı kaydetmek için _Ctrl + X_ tuşlarına basın.
+9. Komut satırına şunu yazın: `/etc/init.d/networking restart`.
+10. _Enter_ tuşuna basın.
 11. Terminali kapatın.
-12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+12. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
+    - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -74,7 +74,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-2. Use the following commands in dnsmasq.conf:
+2. dnsmasq.conf dosyasında aşağıdaki komutları kullanın:
 
    `no-resolv`
 
@@ -94,17 +94,17 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `sudo service dnsmasq restart`
 
-Hepsi tamam! Your device is successfully connected to AdGuard DNS.
+Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 :::note Önemli
 
-If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Sorunu çözmek için [bu talimatları](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) kullanın.
 
 :::
 
 ## Use plain DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
+DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

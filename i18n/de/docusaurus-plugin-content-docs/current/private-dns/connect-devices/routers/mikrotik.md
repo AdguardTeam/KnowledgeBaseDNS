@@ -3,58 +3,58 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open source RouterOS operating system, which provides routing, wireless networking and firewall services for home and small office networks.
+MikroTik-Router verwenden das Open-Source-Betriebssystem RouterOS, das Routing, drahtlose Netzwerke und Firewall-Dienste für Heim- und Kleinbüronetzwerke bereitstellt.
 
 ## DNS-over-HTTPS konfigurieren
 
-1. Access your MikroTik router:
-   - Open your web browser and go to your router's IP address (usually `192.168.88.1`)
-   - Alternatively, you can use Winbox to connect to your MikroTik router
-   - Enter your administrator username and password
-2. Import root certificate:
-   - Download the latest bundle of trusted root certificates: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
-   - Navigate to _Files_. Click _Upload_ and select the downloaded cacert.pem certificate bundle
-   - Go to _System_ → _Certificates_ → _Import_
-   - In the _File Name_ field, choose the uploaded certificate file
-   - Click _Import_
-3. Configure DNS-over-HTTPS:
-   - Go to _IP_ → _DNS_
-   - In the _Servers_ section, add the following AdGuard DNS servers:
+1. Aufrufen der MikroTik-Router-Einstellungen:
+   - Öffnen Sie Ihren Browser und rufen Sie die IP-Adresse Ihres Routers auf (normalerweise `192.168.88.1`)
+   - Sie können auch Winbox verwenden, um eine Verbindung zu Ihrem MikroTik-Router herzustellen
+   - Geben Sie den Benutzernamen und das Passwort des Administrators ein
+2. Stammzertifikat importieren:
+   - Laden Sie das neueste Paket mit vertrauenswürdigen Stammzertifikaten herunter: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
+   - Navigieren Sie zu _Dateien_. Klicken Sie auf _Hochladen_ und wählen Sie das heruntergeladene cacert.pem-Zertifikatpaket aus
+   - Öffnen Sie _System_ → _Zertifikate_ → _Importieren_
+   - Wählen Sie im Feld _Dateiname_ die hochgeladene Zertifikatsdatei
+   - Klicken Sie auf _Importieren_
+3. DNS-over-HTTPS konfigurieren:
+   - Öffnen Sie _IP_ → _DNS_
+   - Fügen Sie im Abschnitt _Server_ die folgenden AdGuard DNS-Server hinzu:
      - `94.140.14.49`
      - `94.140.14.59`
-   - Set _Allow Remote Requests_ to _Yes_ (this is crucial for DoH to function)
-   - In the _Use DoH server_ field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+   - Setzen Sie _Allow Remote Requests_ auf _Yes_ (dies ist entscheidend für das Funktionieren von DNS-over-HTTPS)
+   - Geben Sie im Feld _DoH-Server verwenden_ die URL des privaten AdGuard DNS-Servers ein: `https://d.adguard-dns.com/dns-query/*******`
    - Klicken Sie auf _OK_
-4. Create Static DNS Records:
-   - In the _DNS Settings_, click _Static_
-   - Click _Add New_
-   - Set _Name_ to d.adguard-dns.com
-   - Set _Type_ to A
-   - Set _Address_ to `94.140.14.49`
-   - Set _TTL_ to 1d 00:00:00
-   - Repeat the process to create an identical entry, but with _Address_ set to `94.140.14.59`
-5. Disable Peer DNS on DHCP Client:
-   - Go to _IP_ → _DHCP Client_
-   - Double-click the client used for your Internet connection (usually on the WAN interface)
-   - Uncheck _Use Peer DNS_
+4. Statische DNS-Einträge erstellen:
+   - Klicken Sie in den _DNS-Einstellungen_ auf _Statisch_
+   - Klicken Sie auf _Hinzufügen_
+   - Setzen Sie _Name_ auf d.adguard-dns.com
+   - Setzen Sie _Type_ auf A
+   - Setzen Sie _Address_ auf `94.140.14.49`
+   - Setzen Sie _TTL_ auf 1d 00:00:00
+   - Wiederholen Sie den Vorgang, um einen identischen Eintrag zu erstellen, aber mit _Address_ auf `94.140.14.59` gesetzt
+5. Peer-DNS auf dem DHCP-Client deaktivieren:
+   - Öffnen Sie _IP_ → _DHCP-Client_
+   - Doppelklicken Sie auf den Client, der für Ihre Internetverbindung verwendet wird (normalerweise auf der WAN-Schnittstelle)
+   - Deaktivieren Sie _Peer DNS verwenden_
    - Klicken Sie auf _OK_
-6. Link your IP.
-7. Test and verify:
-   - You might need to reboot your MikroTik router for all changes to take effect
-   - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+6. Ihre IP-Adresse verknüpfen.
+7. Testen und überprüfen:
+   - Möglicherweise müssen Sie Ihren MikroTik-Router neu starten, damit alle Änderungen wirksam werden
+   - Leeren Sie den DNS-Cache Ihres Browsers. Sie können ein Tool wie [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) verwenden, um zu prüfen, ob Ihre DNS-Anfragen jetzt über AdGuard geleitet werden
 
-## Use your router admin panel
+## Administrationsoberfläche Ihres Routers verwenden
 
 Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
 
 1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
 2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
 3. Öffnen Sie _Webfig_ → _IP_ → _DNS_.
-4. Select _Servers_ and enter one of the following DNS server addresses.
+4. Wählen Sie _Server_ und geben Sie eine der folgenden DNS-Serveradressen ein.
    - IPv4: `94.140.14.49` und `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 5. Speichern Sie die Einstellungen.
-6. Link your IP (or your dedicated IP if you have a Team subscription).
+6. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

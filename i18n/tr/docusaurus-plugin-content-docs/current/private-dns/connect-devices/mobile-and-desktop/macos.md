@@ -7,75 +7,75 @@ To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
 
 1. _Pano_ öğesine gidin ve _Yeni cihaz bağla_ öğesine tıklayın.
 2. In the drop-down menu _Device type_, select Mac.
-3. Name the device.
+3. Cihazı adlandırın.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
 
 ## Use AdGuard Ad Blocker (paid option)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek macOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
 1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
 2. Uygulamayı açın.
-3. Click the icon in the top right corner.
-   ![Protection icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
-4. Select _Preferences..._.
-   ![Preferences \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step4.png)
-5. Click the _DNS_ tab from the top row of icons.
-   ![DNS tab \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step5.png)
-6. Enable DNS protection by ticking the box at the top.
-   ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step6.png)
-7. Click _+_ in the bottom left corner.
+3. Sağ üst köşedeki simgeye tıklayın.
+   ![Koruma simgesi \*mobil\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
+4. _Tercihler..._ öğesini seçin.
+   ![Tercihler \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step4.png)
+5. Simgelerin üst satırından _DNS_ sekmesine tıklayın.
+   ![DNS sekmesi \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step5.png)
+6. Üstteki kutuyu işaretleyerek DNS korumasını etkinleştirin.
+   ![DNS koruması \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step6.png)
+7. Sol alt köşedeki _+_ öğesine tıklayın.
    ![Click + \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step7.png)
-8. Copy one of the following DNS addresses and paste it into the _DNS servers_ field in the app. If you are not sure which one to prefer, select _DNS-over-HTTPS_.
-   ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_1.png)
-   ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_2.png)
-9. Click _Save and Choose_.
-   ![Save and Choose \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step9.png)
-10. Your newly created server should appear at the bottom of the list.
-    ![Providers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
+8. Aşağıdaki DNS adreslerinden birini kopyalayın ve uygulamadaki _DNS sunucuları_ alanına yapıştırın. Hangisini tercih edeceğinizden emin değilseniz _DNS-over-HTTPS_ öğesini seçin.
+   ![DoH sunucusu \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_1.png)
+   ![Sunucu oluştur \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_2.png)
+9. _Kaydet ve Seç_ öğesine tıklayın.
+   ![Kaydet ve Seç \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step9.png)
+10. Yeni oluşturulan sunucunuz listenin en altında görünmelidir.
+    ![Sağlayıcılar \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Hepsi tamam! Your device is successfully connected to AdGuard DNS.
+Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 ## Use AdGuard VPN
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
+Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
-1. Install the [AdGuard VPN app](https://adguard-vpn.com/mac/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the AdGuard VPN app.
-3. Open _Settings_ → _App settings_ → _DNS servers_ → _Add Custom Server_.
-   ![Add custom server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step3.png)
-4. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ text field. If you are not sure which one to prefer, select DNS-over-HTTPS.
-   ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
-5. Click _Save and select_.
-6. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
-   ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
+1. AdGuard DNS'e bağlanmak istediğiniz cihaza [AdGuard VPN uygulamasını](https://adguard-vpn.com/mac/overview.html) yükleyin.
+2. AdGuard VPN uygulamasını açın.
+3. _Ayarlar_ → _Uygulama ayarları_ → _DNS sunucuları_ → _Özel Sunucu Ekle_ öğesini açın.
+   ![Özel sunucu ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step3.png)
+4. Aşağıdaki DNS adreslerinden birini kopyalayın ve _DNS sunucu adresleri_ metin alanına yapıştırın. Hangisini tercih edeceğinizden emin değilseniz DNS-over-HTTPS'yi seçin.
+   ![DNS sunucuları \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
+5. _Kaydet ve seç_ öğesine tıklayın.
+6. Eklediğiniz DNS sunucusu _Özel DNS sunucuları_ listesinin altında görünür.
+   ![Özel DNS sunucuları \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-Hepsi tamam! Your device is successfully connected to AdGuard DNS.
+Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 ## Bir yapılandırma profili kullanın
 
-A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. It also allows you to configure Private AdGuard DNS on your device.
+A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
 :::note Önemli
 
-If you are using a VPN, the configuration profile will be ignored.
+Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
 :::
 
-1. On the device that you want to connect to AdGuard DNS, download the configuration profile.
-2. Choose Apple menu → _System Settings_, click _Privacy & Security_ in the sidebar, then click _Profiles_ on the right (you may need to scroll down).
-   ![Profile Downloaded \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step2.png)
-3. In the _Downloaded_ section, double-click the profile.
-   ![Downloaded \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step3.png)
-4. Review the profile contents and click _Install_.
-   ![Install \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
+1. AdGuard DNS'e bağlamak istediğiniz cihaza yapılandırma profilini indirin.
+2. Apple menüsünü seçin → _Sistem Ayarları_, kenar çubuğunda _Gizlilik ve Güvenlik_ öğesine tıklayın, ardından sağdaki _Profiller_ öğesine tıklayın (aşağı kaydırmanız gerekebilir).
+   ![Profil İndirildi \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step2.png)
+3. _İndirilenler_ bölümünde profile çift tıklayın.
+   ![İndirilen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step3.png)
+4. Profil içeriğini gözden geçirin ve _Yükle_ öğesine tıklayın.
+   ![Yükle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Enter the admin password and click _OK_.
 
-Hepsi tamam! Your device is successfully connected to AdGuard DNS.
+Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 ## Configure plain DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

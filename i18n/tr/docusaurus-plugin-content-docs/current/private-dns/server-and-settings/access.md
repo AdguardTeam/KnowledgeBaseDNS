@@ -3,19 +3,19 @@ title: Erişim ayarları
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karşı koruyabilirsiniz. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
 
 Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
 
-## How to set it up
+## Nasıl ayarlanır
 
-### Allowed clients
+### İzin verilen istemciler
 
-This setting allows you to specify which clients can use your DNS server. En yüksek önceliğe sahiptir. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+Bu ayar, hangi istemcilerin DNS sunucunuzu kullanabileceğini belirlemenizi sağlar. En yüksek önceliğe sahiptir. Örneğin, aynı IP adresi hem reddedilenler hem de izin verilenler listesindeyse, yine de izin verilecektir.
 
 ### İzin verilmeyen istemciler
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Burada DNS sunucunuzu kullanmasına izin verilmeyen istemcileri listeleyebilirsiniz. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
 
 :::note Önemli
 

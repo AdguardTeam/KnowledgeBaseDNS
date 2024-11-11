@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.sidebar.category.General": {
-    "message": "General",
+    "message": "Generale",
     "description": "The label for category General in sidebar sidebar"
   },
   "sidebar.sidebar.category.Public DNS": {
@@ -48,7 +48,7 @@
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
-    "message": "Routers",
+    "message": "Router",
     "description": "The label for category Routers in sidebar sidebar"
   },
   "sidebar.sidebar.category.Game consoles": {

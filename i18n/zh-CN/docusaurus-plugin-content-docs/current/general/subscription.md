@@ -1,11 +1,11 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: 购买、升级或退款
 sidebar_position: 4
 ---
 
-## How to purchase a plan {#purchase}
+## 如何购买套餐 {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
+AdGuard DNS 套餐可以在 [adguard-dns.io](https://adguard-dns.io/license.html) 上购买。 You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
 
 The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
 

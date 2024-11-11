@@ -1,59 +1,59 @@
 ---
-title: Automatic connection
+title: Автоматическое подключение
 sidebar_position: 5
 ---
 
-## Why it is useful
+## Почему это полезно
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Не всем удобно добавлять устройства через Панель управления. Например, если вы системный администратор, настраивающий несколько корпоративных устройств одновременно, вам захочется минимизировать ручные задачи по возможности.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Вы можете создать ссылку для подключения и использовать её в настройках устройства. Ваше устройство будет обнаружено и автоматически подключено к серверу.
 
-## How to configure automatic connection
+## Как настроить автоматическое подключение
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+1. Откройте _Панель управления_ и выберите необходимый сервер.
+2. Перейдите в _Устройства_.
+3. Включите опцию для автоматического подключения устройств.
+   ![Автоматическое подключение устройств \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Теперь вы можете автоматически подключить ваше устройство к серверу, создав специальный адрес, включающий имя устройства, тип устройства и текущий идентификатор сервера. Давайте рассмотрим, как выглядят эти адреса и правила их создания.
 
-### Examples of automatic connection addresses
+### Примеры адресов для автоматического подключения
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — это автоматически создаст устройство `Android` с протоколом `DNS-over-TLS` и именем `AdGuard Test Device`
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — это автоматически создаст устройство `Windows` с протоколом `DNS-over-HTTPS` и именем `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — это автоматически создаст устройство `iOS` с протоколом `DNS-over-QUIC` и именем `Mary Sue`
 
-### Naming conventions
+### Как назвать устройство
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+При ручном создании устройства, обратите внимание на ограничения, связанные с длиной имени, символами, пробелами и дефисами.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Длина имени**: не более 50 символов. Символы, превышающие этот лимит, игнорируются.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Разрешенные символы**: английские буквы, цифры и дефисы `-`. Другие символы игнорируются.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Пробелы и дефисы**: используйте дефис для пробела и двойной дефис (`--`) для дефиса.
 
-**Device type**: Use the following abbreviations:
+**Тип устройства**: используйте следующие сокращения:
 
 - Windows — `win`
 - macOS — `mac`
 - Android — `adr`
 - iOS — `ios`
 - Linux — `lnx`
-- Router — `rtr`
-- Smart TV — `stv`
-- Game console — `gam`
-- Other — `otr`
+- Роутер — `rtr`
+- Умный телевизор — `stv`
+- Игровая консоль — `gam`
+- Другое — `otr`
 
-## Link generator
+## Генератор ссылок
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Мы добавили шаблон, который генерирует ссылку для конкретного типа устройства и протокола.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+1. Перейдите в _Серверы_ → _Настройки сервера_ → _Устройства_ → _Автоматическое подключение устройств_ и нажмите _Генератор ссылок и инструкции_.
+2. Выберите протокол, который хотите использовать, а также имя и тип устройства.
+3. Нажмите _Сгенерировать ссылку_.
+   ![Сгенерировать ссылку \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+4. Вы успешно сгенерировали ссылку, теперь скопируйте адрес сервера и используйте его в одном из [приложений AdGuard](https://adguard.com/welcome.html)

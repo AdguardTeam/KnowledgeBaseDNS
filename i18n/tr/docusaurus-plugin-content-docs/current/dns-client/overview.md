@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## AdGuard DNS İstemcisi nedir?
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+[AdGuard DNS][agdns] için platformlar arası hafif bir DNS istemcisi. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [agdns]: https://adguard-dns.io
 
@@ -35,7 +35,7 @@ Desteklenen CPU mimarileri:
 
 ### Unix benzeri işletim sistemleri {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. `.tar.gz` or `.zip` arşivini [sürümler sayfasından][releases] indirin ve açın.
 
    :::dikkat
 
@@ -86,22 +86,22 @@ Option `-h` makes AdGuard DNS Client print out a help message to standard output
 
 ### Service {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Olası değerler:
+`-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
 
-- `install`: installs AdGuard DNS Client as a service
+- `install`: AdGuard DNS İstemcisini bir hizmet olarak yükler
 - `restart`: çalışan AdGuard DNS İstemcisi hizmetini yeniden başlatır
-- `start`: starts the installed AdGuard DNS Client service
+- `start`: yüklü AdGuard DNS İstemcisi hizmetini başlatır
 - `status`: kurulu AdGuard DNS İstemcisi hizmetinin durumunu gösterir
 - `stop`: çalışan AdGuard DNS İstemcisini durdurur
 - `uninstall`: AdGuard DNS İstemcisi hizmetini kaldırır
 
 ### Verbose {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+`-v` seçeneği ayrıntılı günlük çıktısını etkinleştirir.
 
 ### Sürüm {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+`--version` seçeneği, AdGuard DNS İstemcisinin `AdGuardDNSClient` çalıştırılabilir sürümünü standart çıktıya yazdırmasını ve bir başarı durum koduyla çıkmasını sağlar.
 
 ## Yapılandırma {#conf}
 

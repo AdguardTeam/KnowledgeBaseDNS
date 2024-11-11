@@ -7,18 +7,18 @@ sidebar_position: 3
 
 Bunlar, Asus yönlendiriciler için Özel AdGuard DNS yapılandırmasına yönelik genel talimatlardır.
 
-The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
+Bu talimatlardaki yapılandırma bilgileri belirli bir yönlendirici modelinden alınmıştır, bu nedenle bireysel bir cihazın arayüzünden farklılık gösterebilir.
 
 If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
-1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
+1. Log in to your Asus router admin panel. Buna [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.2.1](http://192.168.2.1/) aracılığıyla erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
-3. In the _Advanced Settings_ sidebar, navigate to the WAN section.
-4. In the _WAN DNS Settings_ section, set _Connect to DNS Server automatically_ to _No_.
+3. _Gelişmiş Ayarlar_ kenar çubuğunda WAN bölümüne gidin.
+4. _WAN DNS Ayarları_ bölümünde _DNS Sunucusuna otomatik olarak bağlan_ öğesini _Hayır_ olarak ayarlayın.
 5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
-6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
-7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
-8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
+6. DNS Gizlilik Protokolü öğesini DNS-over-TLS (DoT) olarak değiştirin.
+7. _DNS-over-TLS Profili_ öğesini _Katı_ olarak ayarlandığından emin olun.
+8. _DNS-over-TLS Sunucuları Listesi_ bölümüne doğru aşağı kaydırın. _Adres_ alanına aşağıdaki adreslerden birini girin:
    - `94.140.14.49` ve `94.140.14.59`
 9. _TLS Bağlantı Noktası_ için 853 girin.
 10. TLS Ana Makine Adı\* alanına Özel AdGuard DNS sunucu adresini girin:
@@ -27,16 +27,16 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 
 ## Yönlendirici yönetici panelini kullan
 
-1. Yönlendirici yönetici panelini açın. It can be accessed at `192.168.1.1` or `192.168.0.1`.
+1. Yönlendirici yönetici panelini açın. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
-3. Open _Advanced Settings_ or _Advanced_.
+3. _Gelişmiş Ayarlar_ veya _Gelişmiş_ öğesini açın.
 4. _WAN_ veya _İnternet_ öğesini seçin.
-5. Open _DNS Settings_ or _DNS_.
+5. _DNS Ayarları_ veya _DNS_ öğesini açın.
 6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` ve `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 7. Ayarları kaydedin.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

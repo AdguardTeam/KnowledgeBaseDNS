@@ -11,25 +11,25 @@ It allows you to view all requests made by your devices during the selected time
 
 ## Bu nasıl kullanılır
 
-Here's what you can see and what you can do in the _Query log_.
+İşte _Sorgu günlüğü_ içerisinde görebilecekleriniz ve yapabilecekleriniz.
 
 ### İstekler hakkında detaylı bilgi
 
 ![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Alan adlarını engelleme ve engeli kaldırma
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+İstekler, mevcut araçlar kullanılarak günlükten çıkmadan engellenebilir ve engeli kaldırılabilir.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Alan adının engelini kaldır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### İstekleri sıralama
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+İlgilendiğiniz isteğin durumunu, türünü, şirketini, cihazını ve zaman aralığını seçebilirsiniz.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![İstekleri sırala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Sorgu günlüğünü devre dışı bırakma
 
 If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
 

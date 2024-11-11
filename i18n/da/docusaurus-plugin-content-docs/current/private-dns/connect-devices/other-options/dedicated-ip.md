@@ -1,32 +1,32 @@
 ---
-title: Dedicated IPs
+title: Dedikerede IP'er
 sidebar_position: 2
 ---
 
-## What are dedicated IPs?
+## Hvad er dedikerede IP'er?
 
-Dedicated IPv4 addresses are available to users with Team and Enterprise subscriptions, while linked IPs are available to everyone.
+Dedikerede IPv4-adresser er tilgængelige for brugere med Team- og Enterprise-abonnementer, mens linkede IP'er er tilgængelige for alle.
 
-If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+Har man et Team- eller Enterprise-abonnement, vil man modtage flere personlige dedikerede IP-adresser. Forespørgsler til disse adresser behandles som "ens egne," og serveropsætningsindstillinger og filtreringsregler anvendes i overensstemmelse hermed. Dedikerede IP-adresser er meget mere sikre og lettere at håndtere. Med linkede IP'er skal man manuelt genoprette forbindelsen eller bruge et særligt program, hver gang enhedens IP-adresse ændres, hvilket sker efter hver genstart.
 
-## Why do you need a dedicated IP?
+## Hvorfor har man brug for en dedikeret IP?
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. There are two ways to set up AdGuard DNS: [using linked IPs](/private-dns/connect-devices/other-options/linked-ip.md) and using dedicated IPs.
+Desværre tillader de tekniske specifikationer for den tilsluttede enhed ikke altid, at man kan opsætte en krypteret privat AdGuard DNS-server. I så tilfælde vil man skulle bruge standard ukrypteret DNS. Der er to måder at opsætte AdGuard DNS på: [Vha. linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md) og vha. dedikerede IP'er.
 
-Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
+Dedikerede IP'er er generelt en mere stabil mulighed. Linket IP har nogle begrænsninger, såsom at kun private adresser er tilladt, udbyderen kan ændre IP'en, og man skal genlinke IP-adressen. Med dedikerede IP’er får man en IP-adresse, der er eksklusivt ens egen, og alle forespørgsler tælles for ens enhed.
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+Ulemperne er, at man måske begynder at modtage irrelevant trafik (skannere, bots), som det altid sker med offentlige DNS-opløsere. Man skal muligvis bruge [Adgangsindstillinger](/private-dns/server-and-settings/access.md) for at begrænse bot-trafik.
 
-The instructions below explain how to connect a dedicated IP to the device:
+Vejledningen nedenfor forklarer, hvordan man tilslutter en dedikeret IP til enheden:
 
-## Connect AdGuard DNS using dedicated IPs
+## Tilslut AdGuard DNS vha. dedikerede IP'er
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously created device.
-3. Select _Use server addresses_.
-4. Next, open _Plain DNS Server Addresses_.
-5. Select the server you wish to use.
-6. To bind a dedicated IPv4 address, click _Assign_.
-7. If you want to use a dedicated IPv6 address, click _Copy_.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
-8. Copy and paste the selected dedicated address into the device configurations.
+1. Åbn Kontrolpanel.
+2. Tilføj en ny enhed, eller åbn indstillingerne for en tidligere oprettet enhed.
+3. Vælg _Brug serveradresser_.
+4. Åbn dernæst _Almindelig DNS-serveradresser_.
+5. Vælg den server, man ønsker at bruge.
+6. For at tilknytte en dedikeret IPv4 adresse, klik på _Tildel_.
+7. Ønskes en dedikeret IPv6-adresse brugt, klik på _Kopiér_.
+   ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+8. Kopiér og indsæt den valgte dedikerede adresse i enhedens opsætninger.

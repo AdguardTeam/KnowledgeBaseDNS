@@ -3,34 +3,34 @@ title: Nintendo
 sidebar_position: 2
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+游戏主机不支持加密 DNS，但它非常适合通过关联的 IP 地址设置公共 AdGuard DNS 或私人 AdGuard DNS。
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+您的路由器很可能支持使用加密的分布式的命名系统（DNS）服务器，因此用户可以配置私人 AdGuard DNS 并将游戏主机连接到它。
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[如何配置路由器](/private-dns/connect-devices/routers/routers.md)
 
-:::note Compatibility
+:::note 兼容性
 
-Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Nintendo 3DS XL, and Nintendo 2DS.
+适用于以下游戏机：New Nintendo 3DS、New Nintendo 3DS XL、New Nintendo 2DS XL、Nintendo 3DS、Nintendo 3DS XL 和 Nintendo 2DS。
 
 :::
 
-## Connect AdGuard DNS
+## 连接 AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+将游戏主机配置使用公共 AdGuard DNS 服务器，或通过关联的 IP 进行配置：
 
-1. From the home menu, select _System Settings_.
-2. Go to _Internet Settings_ → _Connection Settings_.
-3. Select the connection file, then select _Change Settings_.
-4. Select _DNS_ → _Set Up_.
-5. Set _Auto-Obtain DNS_ to _No_.
-6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
-7. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. 从主菜单中，选择「_系统设置_」。
+2. 转至「_互联网设置_」→「_连接设置_」。
+3. 选择连接文件，然后选择「_更改设置_」。
+4. 选择「_DNS_」→「_设置_」。
+5. 将「_自动获取 DNS_」设置为「_否_」。
+6. 选择「_详细设置_」→「_主 DNS_」。 按住左箭头删除现有的 DNS。
+7. 在「_DNS 服务器_」字段中，输入以下其中一个 DNS 服务器地址：
    - `94.140.14.49`
    - `94.140.14.59`
 8. 请保存设置。
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

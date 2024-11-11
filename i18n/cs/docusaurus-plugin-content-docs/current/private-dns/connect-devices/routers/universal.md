@@ -1,32 +1,32 @@
 ---
-title: Universal instructions
+title: Univerzální pokyny
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Please note that the configuration details provided here are approximate and may differ from the settings on your particular model.
+Zde jsou uvedeny obecné pokyny pro nastavení Soukromého AdGuard DNS na routerech. Pokud nemůžete najít svůj konkrétní router v hlavním seznamu, můžete se obrátit na tohoto průvodce. Upozorňujeme, že zde uvedené údaje o konfiguraci jsou přibližné a mohou se lišit od nastavení vašeho konkrétního modelu.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-1. Otevřete předvolby routeru. Usually you can access them from your browser. Depending on the model of your router, try entering one the following addresses:
-   - Linksys and Asus routers typically use: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
-   - Ubiquiti routers typically use: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+1. Otevřete předvolby routeru. Obvykle k nim máte přístup z prohlížeče. V závislosti na modelu vašeho routeru zkuste zadat jednu z následujících adres:
+   - Routery Linksys a Asus obvykle používají: [http://192.168.1.1](http://192.168.1.1/)
+   - Routery Netgear obvykle používají: [http://192.168.0.1](http://192.168.0.1/) nebo [http://192.168.1.1](http://192.168.1.1/) Routery D-Link obvykle používají [http://192.168.0.1](http://192.168.0.1/)
+   - Routery Ubiquiti obvykle používají: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
-2. Enter the router's password.
+2. Zadejte heslo routeru.
 
-   :::note Important
+   :::note Důležité
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   Pokud je heslo neznámé, můžete ho často resetovat stisknutím tlačítka na routeru; tím se také obnoví tovární nastavení routeru. Některé modely mají speciální aplikaci pro správu, která by již měla být v počítači nainstalována.
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+3. V konzole správce routeru zjistěte, kde se nachází nastavení DNS. Změňte uvedené adresy DNS na následující adresy:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 
-4. Save the settings.
+4. Uložte nastavení.
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
