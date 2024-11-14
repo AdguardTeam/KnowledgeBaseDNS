@@ -42,7 +42,7 @@ You can install the extension from the [Chrome Web Store](https://chromewebstore
 
 If you want to see how it looks like on the DNS level, you can use the `dig` command and look for `EDE` in the output.
 
-```
+```text
 % dig @94.140.14.14 'ad.doubleclick.net' A IN +ednsopt=15:0000
 
 ...
