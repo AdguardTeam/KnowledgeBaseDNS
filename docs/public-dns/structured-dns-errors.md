@@ -15,7 +15,7 @@ Such errors don't explain what happened and why. This leaves users confused abou
 
 To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
 
-![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png)
+![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
 
 There’s a simpler solution: [Structured DNS Errors (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). The concept of SDE builds on the foundation of [*Extended DNS Errors* (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), which introduced the ability to include additional error information in DNS responses. The SDE draft takes this a step further by using [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (a restricted profile of JSON) to format the information in a way that browsers and client applications can easily parse.
 
