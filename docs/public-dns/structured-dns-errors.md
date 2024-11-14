@@ -40,7 +40,7 @@ To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo bro
 
 You can install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) or from [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
 
-If you want to see how it looks like on the DNS level, you can use the `dig` command and look for `EDE` in the output.
+If you want to see what it looks like at the DNS level, you can use the `dig` command and look for `EDE` in the output.
 
 ```text
 % dig @94.140.14.14 'ad.doubleclick.net' A IN +ednsopt=15:0000
