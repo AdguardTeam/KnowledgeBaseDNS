@@ -1,6 +1,6 @@
 ---
 title: Structured DNS Errors (SDE)
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [*Structured DNS Errors* (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what *Structured DNS Errors* are and how they work.
