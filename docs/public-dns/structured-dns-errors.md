@@ -7,7 +7,7 @@ With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS r
 
 ## What Structured DNS Errors are
 
-When a request to an advertising or tracking domain is blocked, the user may see empty spaces on a website or may not even notice that DNS filtering occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
 
 !["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
@@ -34,7 +34,7 @@ Although AdGuard DNS has implemented support for Structured DNS Errors, browsers
 
 ### AdGuard DNS demo extension for SDE
 
-To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how *Structured DNS Errors* could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, it will display a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and organization responsible.
+To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how *Structured DNS Errors* could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
 
 ![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
