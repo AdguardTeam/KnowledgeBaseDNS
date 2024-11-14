@@ -34,7 +34,7 @@ Although AdGuard DNS has implemented support for Structured DNS Errors, browsers
 
 ### AdGuard DNS demo extension for SDE
 
-To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how *Structured DNS Errors* could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, it will display a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and organization responsible.
+To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how *Structured DNS Errors* could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
 
 ![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
