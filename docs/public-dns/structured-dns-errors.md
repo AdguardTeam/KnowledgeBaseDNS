@@ -51,7 +51,7 @@ If you want to see how it looks like on the DNS level, you can use the `dig` com
 ; EDNS: version: 0, flags:; udp: 1232
 ; EDE: 17 (Filtered): ({"j":"Filtered by AdGuard DNS","o":"AdGuard DNS","c":["mailto:support@adguard-dns.io"]})
 ;; QUESTION SECTION:
-;ad.doubleclick.net.		IN	A
+;ad.doubleclick.net.  IN A
 
 ...
 ```
