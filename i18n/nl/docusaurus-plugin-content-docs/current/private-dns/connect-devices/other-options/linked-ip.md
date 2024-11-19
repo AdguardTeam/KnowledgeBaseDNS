@@ -5,39 +5,37 @@ sidebar_position: 3
 
 ## What linked IPs are and why they are useful
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
-
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Niet alle apparaten ondersteunen versleutelde DNS-protocollen. In dit geval moet je overwegen om een niet-versleutelde DNS in te stellen. Je kunt bijvoorbeeld een **gekoppeld IP-adres** gebruiken. De enige vereiste voor een gekoppeld IP-adres is dat het een residentieel IP-adres moet zijn.
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+Een **residentieel IP-adres** wordt toegewezen aan een apparaat dat is verbonden met een residentiële ISP. Meestal is het gekoppeld aan een fysieke locatie en toegekend aan individuele huizen of appartementen. Mensen gebruiken residentiële IP-adressen voor dagelijkse online activiteiten, zoals surfen op internet, het verzenden van e-mails, het gebruik van sociale media of het streamen van inhoud.
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+Soms kan een residentieel IP-adres al in gebruik zijn, en als je probeert er mee te verbinden, zal AdGuard DNS de verbinding voorkomen.
+![Gekoppeld IPv4-adres \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+Mocht dat gebeuren, neem dan contact op met de ondersteuning via [support@adguard-dns.io](mailto:support@adguard-dns.io), dan helpen zij je met de juiste configuratie-instellingen.
 
-## How to set up linked IP
+## Hoe een gekoppeld IP-adres in te stellen
 
-The following instructions explain how to connect to the device via **linking IP address**:
+De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat via **het koppelen van een IP-adres**:
 
 1. Open Dashboard.
-2. Add a new device or open the settings of a previously connected device.
-3. Go to _Use DNS server addresses_.
-4. Open _Plain DNS server addresses_ and connect the linked IP.
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+2. Voeg een nieuw apparaat toe of open de instellingen van een eerder verbonden apparaat.
+3. Ga naar _DNS-serveradressen gebruiken_.
+4. Open _Gewone DNS-serveradressen_ en verbind het gekoppelde IP-adres.
+   ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## Dynamische DNS: waarom het nuttig is
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Elke keer dat een apparaat verbinding maakt met het netwerk, krijgt het een nieuw dynamisch IP-adres. Wanneer de verbinding met een apparaat wordt verbroken, kan de DHCP-server het vrijgegeven IP-adres toewijzen aan een ander apparaat in het netwerk. Dit betekent dat dynamische IP-adressen vaak en onvoorspelbaar veranderen. Daarom moet je de instellingen bijwerken wanneer het apparaat opnieuw wordt opgestart of het netwerk verandert.
 
-To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
+Om het gekoppelde IP-adres automatisch up-to-date te houden, kun je DNS gebruiken. AdGuard DNS controleert regelmatig het IP-adres van je DDNS-domein en koppelt dit aan je server.
 
 :::note
 
-Dynamic DNS (DDNS) is a service that automatically updates DNS records whenever your IP address changes. It converts network IP addresses into easy-to-read domain names for convenience. The information that connects a name to an IP address is stored in a table on the DNS server. DDNS updates these records whenever there are changes to the IP addresses.
+Dynamic DNS (DDNS) is een service die DNS-records automatisch bijwerkt wanneer jouw IP-adres verandert. It converts network IP addresses into easy-to-read domain names for convenience. The information that connects a name to an IP address is stored in a table on the DNS server. DDNS updates these records whenever there are changes to the IP addresses.
 
 :::
 

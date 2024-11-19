@@ -11,32 +11,32 @@ Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
-![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![사설 AdGuard DNS 대시보드](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## General
+## 일반
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube 동영상 플레이어" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+사설 AdGuard DNS는 트래픽 암호화 및 도메인 차단 목록을 포함하여 공용 AdGuard DNS 서버의 모든 장점을 제공합니다. It also offers additional features such as flexible customization, DNS statistics, and Parental control. 이 모든 옵션은 사용자 친화적인 대시보드를 통해 쉽게 접근하고 관리할 수 있습니다.
 
-### Why you need private AdGuard DNS
+### 사설 AdGuard DNS가 필요한 이유는 무엇인가요?
 
-Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+오늘날에는 TV, 냉장고, 스마트 전구, 스피커 등을 인터넷에 연결할 수 있습니다. 그러나 부인할 수 없는 편리함과 함께 추적기와 광고에 노출됩니다. 단순한 브라우저 기반 광고 차단기는 이 경우 사용자를 보호하지 못하지만, 트래픽을 필터링하고 콘텐츠 및 추적기를 차단하도록 설정할 수 있는 AdGuard DNS는 보호할 수 있습니다.
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+한때 AdGuard 제품군에는 [공용 AdGuard DNS](../public-dns/overview.md)와 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)만 포함되어 있었습니다. These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
 
-### The difference between public and private AdGuard DNS
+### 공용과 사설 AdGuard DNS의 차이
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+아래에서는 공용 및 사설 AdGuard DNS에서 사용할 수 있는 기능을 비교했습니다.
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                            |
-| -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| DNS traffic encryption           | DNS traffic encryption                                                                         |
-| Pre-determined domain blocklists | Customizable domain blocklists                                                                 |
-| -                                | Custom DNS filtering rules with import/export feature                                          |
-| -                                | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
-| -                                | Detailed query log                                                                             |
-| -                                | Parental control                                                                               |
+| 공용 AdGuard DNS   | 사설 AdGuard DNS                            |
+| ---------------- | ----------------------------------------- |
+| DNS 트래픽 암호화      | DNS 트래픽 암호화                               |
+| 미리 결정된 도메인 차단 목록 | 사용자 정의 가능한 도메인 차단 목록                      |
+| -                | 가져오기/내보내기 기능이 있는 사용자 정의 DNS 필터링 규칙        |
+| -                | 요청 통계 (DNS 요청이 어떤 국가, 어떤 회사 등으로 전달되는지 확인) |
+| -                | 상세 쿼리 로그                                  |
+| -                | 자녀 보호                                     |
 
 
 <!-- ## How to set up private AdGuard DNS
@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### AdGuard DNS에 기기를 연결하는 방법
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+AdGuard DNS는 태블릿, PC, 라우터, 게임 콘솔 등 다양한 기기에서 설정할 수 있습니다. 이 섹션에서는 기기를 AdGuard DNS에 연결하는 방법을 확인할 수 있습니다.
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[AdGuard DNS에 기기를 연결하는 방법](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### 서버 및 설정
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+이 섹션에서는 AdGuard DNS에서 '서버'가 무엇이며 어떤 설정을 사용할 수 있는지 설명합니다. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
 
 [Server and settings](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### 필터링 설정하는 법
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+이 섹션에서는 AdGuard DNS의 기능을 미세 조정할 수 있는 여러 설정을 설명합니다. 차단 목록, 사용자 규칙, 자녀 보호 및 보안 필터를 사용하여 필요에 맞게 필터링을 구성할 수 있습니다.
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[필터링 설정하는 법](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### 통계와 쿼리 로그
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+통계 및 요청 로그는 기기 활동에 대한 정보를 제공합니다. 여기 *통계* 탭에서는 사설 AdGuard DNS에 연결된 기기에 의해 생성된 DNS 요청의 요약을 볼 수 있습니다. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
 
 [Statistics and Query log](/private-dns/statistics-and-log/statistics.md)

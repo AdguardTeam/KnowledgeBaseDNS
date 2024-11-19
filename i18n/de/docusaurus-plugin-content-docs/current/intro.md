@@ -34,7 +34,7 @@ AdGuard DNS ist einer der datenschutzfreundlichsten DNS-Dienste auf dem Markt. E
 
 Etwa 75 % des Datenverkehrs von AdGuard DNS ist verschlüsselt. Das ist tatsächlich das, was inhaltssperrende DNS-Server von anderen unterscheidet. Wenn Sie sich die Statistiken von CloudFlare oder Quad9 ansehen, werden Sie feststellen, dass verschlüsselte DNS nur einen kleinen Teil aller Abfragen ausmachen.
 
-AdGuard DNS exists in two main forms: [Public AdGuard DNS](public-dns/overview) and [Private AdGuard DNS](private-dns/overview). Keiner dieser Dienste erfordert die Installation von Apps. Sie sind einfach einzurichten und zu verwenden und bieten den Nutzer:innen ein Minimum an Funktionen, um Werbung, Tracker, bösartige Websites und jugendgefährdende Inhalte (falls erforderlich) zu sperren. Es gibt keine Einschränkungen hinsichtlich der Geräte, mit denen sie verwendet werden können.
+AdGuard DNS gibt es in zwei Hauptformen: [Public AdGuard DNS](public-dns/overview) und [Private AdGuard DNS](private-dns/overview). Keiner dieser Dienste erfordert die Installation von Apps. Sie sind einfach einzurichten und zu verwenden und bieten den Nutzer:innen ein Minimum an Funktionen, um Werbung, Tracker, bösartige Websites und jugendgefährdende Inhalte (falls erforderlich) zu sperren. Es gibt keine Einschränkungen hinsichtlich der Geräte, mit denen sie verwendet werden können.
 
 Trotz vieler Gemeinsamkeiten sind der private AdGuard DNS und der öffentliche AdGuard DNS zwei unterschiedliche Produkte. Der Hauptunterschied besteht darin, dass Sie den Privaten AdGuard DNS anpassen können, während dies beim Öffentlichen AdGuard DNS nicht möglich ist.
 

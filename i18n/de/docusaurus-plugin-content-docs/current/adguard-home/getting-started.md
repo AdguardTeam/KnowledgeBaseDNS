@@ -31,7 +31,7 @@ Einige andere inoffizielle Optionen sind:
 
 - [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [OpenWrt LUCI app][luci] betreut von [@kongfl888](https://github.com/kongfl888).
 
 - [Arch Linux][arch], [Arch Linux ARM][archarm] und andere Arch-basierte Betriebssysteme können über das [`adguardhome`-Paket][aghaur] im [AUR][aur] erstellt werden, das von [@graysky2](https://github.com/graysky2) gepflegt wird.
 
@@ -202,7 +202,7 @@ Instructions for Android devices may differ depending on the OS version and the 
 
 3. Long press the network you’re connected to and tap _Modify Network_.
 
-4. On some devices, you may need to check the box for _Advanced_ to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from _DHCP_ to _Static_.
+4. On some devices, you may need to check the box for _Advanced_ to see more settings. Um Ihre Android-DNS-Einstellungen anzupassen, müssen Sie die IP-Einstellungen von _DHCP_ auf _Statisch_ ändern.
 
 5. Change set DNS 1 and DNS 2 values to your AdGuard Home server addresses.
 
@@ -212,15 +212,15 @@ Instructions for Android devices may differ depending on the OS version and the 
 
 2. Select _Wi-Fi_ from the left menu (it is impossible to configure DNS for mobile networks).
 
-3. Tap the name of the currently active network.
+3. Tippen Sie auf den Namen des aktuell aktiven Netzwerks.
 
-4. In the _DNS_ field, enter your AdGuard Home server addresses.
+4. Geben Sie im Bereich _DNS_ die Adressen Ihrer AdGuard Home-Server ein.
 
-## Running without superuser {#running-without-superuser}
+## Ausführen ohne Superuser {#running-without-superuser}
 
-You can run AdGuard Home without superuser privileges, but you must either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
+Sie können AdGuard Home auch ohne Superuser-Rechte ausführen, aber Sie müssen der Binärdatei entweder eine Fähigkeit verleihen (unter Linux) oder sie anweisen, einen anderen Port zu verwenden (alle Plattformen).
 
-### Granting the necessary capabilities (Linux only)
+### Gewährung der erforderlichen Fähigkeiten (nur Linux)
 
 Using this method requires the `setcap` utility. You may need to install it using your Linux distribution’s package manager.
 
@@ -244,9 +244,9 @@ dns:
 
 You can change the port to anything above 1024 to avoid requiring superuser privileges.
 
-## Limitations {#limitations}
+## Einschränkungen {#limitations}
 
-Some file systems don’t support the `mmap(2)` system call required by the statistics system. See also [issue 1188].
+Einige Dateisysteme unterstützen den vom Statistiksystem benötigten `mmap(2)`-Systemaufruf nicht. See also [issue 1188].
 
 You can resolve this issue:
 

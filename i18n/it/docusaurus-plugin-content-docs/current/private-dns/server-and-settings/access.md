@@ -15,7 +15,7 @@ Questa impostazione consente di specificare quali client possono utilizzare il t
 
 ### Client non consentiti
 
-Qui puoi elencare i client ai quali non è consentito utilizzare il tuo server DNS. Puoi bloccare l'accesso a tutti i client e utilizzare solo quelli selezionati. Per fare ciò, aggiungi due indirizzi ai client non consentiti: `0.0.0.0.0/0` e `::/0`. Poi, nel campo _Clienti consentiti_, specifica gli indirizzi che possono accedere al tuo server.
+Qui puoi elencare i client ai quali non è consentito utilizzare il tuo server DNS. Puoi bloccare l'accesso a tutti i client e utilizzare solo quelli selezionati. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Poi, nel campo _Clienti consentiti_, specifica gli indirizzi che possono accedere al tuo server.
 
 :::note Importante
 

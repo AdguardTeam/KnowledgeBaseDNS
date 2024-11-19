@@ -1,6 +1,6 @@
 ---
 title: Kredity a poděkování
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 Náš vývojový tým by rád poděkoval vývojářům softwaru třetích stran, který používáme v AdGuard DNS, našim skvělým beta testerům a dalším zapojeným uživatelům, jejichž pomoc při hledání a odstraňování všech chyb, překládání AdGuard DNS a moderování našich komunit je neocenitelná.

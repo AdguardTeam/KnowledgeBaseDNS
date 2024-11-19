@@ -1,41 +1,41 @@
 ---
-title: Parental control
+title: 자녀 보호
 sidebar_position: 4
 ---
 
-## What is it
+## 자녀 보호 기능이란 무엇인가요?
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+자녀 보호 기능은 민감한 콘텐츠가 포함된 특정 웹사이트에 대한 액세스를 유연하게 맞춤 설정할 수 있는 설정 세트입니다.  이 기능을 사용하여 자녀가 성인 사이트에 접근하는 것을 제한하고, 검색 쿼리를 사용자 맞춤화하며, 인기 서비스의 사용을 차단하고, 그 외 여러 작업을 수행할 수 있습니다.
 
-## How to set it up
+## 설정 방법
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+서버에서 자녀 보호 기능을 포함한 모든 기능을 유연하게 구성할 수 있습니다. [해당 문서](private-dns/server-and-settings/server-and-settings.md)에서 AdGuard DNS에서 서버가 무엇인지 숙지하고 다양한 설정 세트로 다양한 서버를 만드는 방법을 배울 수 있습니다.
 
-Then, go to the settings of the selected server and enable the required configurations.
+그런 다음, 선택한 서버의 설정으로 이동하여 필요한 구성을 활성화하세요.
 
-### Block adult websites
+### 성인 웹사이트 차단
 
-Blocks websites with inappropriate and adult content.
+부적절하고 성인용 콘텐츠가 포함된 웹사이트를 차단합니다.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![차단된 웹사이트 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### 세이프서치
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave 및 Ecosia에서 불법적인 결과를 삭제합니다.
 
-![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+![세이프서치 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### YouTube 제한 모드
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+YouTube에서 영상에 대한 댓글을 보고 게시하며 18세 이상 콘텐츠와 상호작용할 수 있는 옵션을 삭제합니다.
 
-![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![제한 모드 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### 차단된 서비스 및 웹사이트
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합니다. 예를 들어, 연결된 기기가 Instagram 및 YouTube에 방문하는 것을 원하지 않는 경우 유용합니다.
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![차단된 서비스 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
 ### Schedule off time
 

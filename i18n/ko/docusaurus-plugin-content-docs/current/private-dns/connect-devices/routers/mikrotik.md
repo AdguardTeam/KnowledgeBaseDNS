@@ -3,29 +3,29 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open source RouterOS operating system, which provides routing, wireless networking and firewall services for home and small office networks.
+MikroTik 라우터는 가정 및 소규모 사무실 네트워크에 라우팅, 무선 네트워킹 및 방화벽 서비스를 제공하는 오픈 소스 RouterOS 운영 체제를 사용합니다.
 
 ## Configure DNS-over-HTTPS
 
 1. Access your MikroTik router:
-   - Open your web browser and go to your router's IP address (usually `192.168.88.1`)
-   - Alternatively, you can use Winbox to connect to your MikroTik router
-   - Enter your administrator username and password
-2. Import root certificate:
+   - 웹브라우저를 열고 라우터의 IP 주소(일반적으로 `192.168.88.1`)로 이동합니다.
+   - 또는 Winbox를 사용하여 MikroTik 라우터에 연결할 수 있습니다.
+   - 관리자 사용자 아이디와 비밀번호를 입력합니다.
+2. 루트 인증서를 가져옵니다.
    - Download the latest bundle of trusted root certificates: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
-   - Navigate to _Files_. Click _Upload_ and select the downloaded cacert.pem certificate bundle
-   - Go to _System_ → _Certificates_ → _Import_
-   - In the _File Name_ field, choose the uploaded certificate file
-   - Click _Import_
-3. Configure DNS-over-HTTPS:
-   - Go to _IP_ → _DNS_
-   - In the _Servers_ section, add the following AdGuard DNS servers:
+   - **파일**로 이동합니다. **업로드**를 클릭하고 다운로드한 cacert.pem 인증서 번들을 선택합니다.
+   - **시스템** → **인증서** → **가져오기**로 이동합니다.
+   - **파일 이름** 필드에서 업로드한 인증서 파일을 선택합니다.
+   - **가져오기**를 클릭합니다.
+3. DNS-over-HTTPS를 설정합니다.
+   - **IP** → **DNS**로 이동합니다.
+   - **서버** 섹션에서 다음 AdGuard DNS 서버를 추가합니다.
      - `94.140.14.49`
      - `94.140.14.59`
-   - Set _Allow Remote Requests_ to _Yes_ (this is crucial for DoH to function)
-   - In the _Use DoH server_ field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
-   - Click _OK_
-4. Create Static DNS Records:
+   - **원격 요청 허용**을 **예**로 설정합니다(DoH가 작동하려면 이 설정이 필수입니다).
+   - **DoH 서버 사용** 필드에 사설 AdGuard DNS 서버의 URL을 입력합니다: `https://d.adguard-dns.com/dns-query/*******`
+   - **확인**을 클릭합니다.
+4. 정적 DNS 레코드를 만듭니다.
    - In the _DNS Settings_, click _Static_
    - Click _Add New_
    - Set _Name_ to d.adguard-dns.com
@@ -37,7 +37,7 @@ MikroTik routers use the open source RouterOS operating system, which provides r
    - Go to _IP_ → _DHCP Client_
    - Double-click the client used for your Internet connection (usually on the WAN interface)
    - Uncheck _Use Peer DNS_
-   - Click _OK_
+   - **확인**을 클릭합니다.
 6. Link your IP.
 7. Test and verify:
    - You might need to reboot your MikroTik router for all changes to take effect
@@ -53,8 +53,8 @@ Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 
 4. Select _Servers_ and enter one of the following DNS server addresses.
    - IPv4: `94.140.14.49` 및 `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
-5. Save the settings.
-6. Link your IP (or your dedicated IP if you have a Team subscription).
+5. 설정을 저장합니다.
+6. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

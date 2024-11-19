@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Query log is a useful tool for working with AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Seçilen süre boyunca cihazlarınız tarafından yapılan tüm istekleri görüntülemenize ve istekleri duruma, türe, şirkete, cihaza, ülkeye göre sıralamanıza olanak tanır.
 
 ## Bu nasıl kullanılır
 
@@ -15,7 +15,7 @@ It allows you to view all requests made by your devices during the selected time
 
 ### İstekler hakkında detaylı bilgi
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![İstekler bilgisi \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Alan adlarını engelleme ve engeli kaldırma
 
@@ -31,6 +31,6 @@ It allows you to view all requests made by your devices during the selected time
 
 ### Sorgu günlüğünü devre dışı bırakma
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Dilerseniz, hesap ayarlarından günlüğe kaydetmeyi tamamen devre dışı bırakabilirsiniz (ancak bunun istatistikleri de devre dışı bırakacağını unutmayın).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Günlük kaydı \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

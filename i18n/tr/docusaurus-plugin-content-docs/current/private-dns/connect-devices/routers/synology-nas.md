@@ -3,9 +3,9 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS yönlendiricilerin kullanımı son derece kolaydır ve tek bir örgü ağda birleştirilebilir. You can manage your network remotely anytime, anywhere. You can also configure AdGuard DNS directly on the router.
+Synology NAS yönlendiricilerin kullanımı son derece kolaydır ve tek bir örgü ağda birleştirilebilir. Ağınızı istediğiniz zaman, istediğiniz yerden uzaktan yönetebilirsiniz. AdGuard DNS'i doğrudan yönlendirici üzerinde de yapılandırabilirsiniz.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

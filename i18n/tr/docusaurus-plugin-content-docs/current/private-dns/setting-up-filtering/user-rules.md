@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## What is it and why you need it
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Kullanıcı kuralları, yaygın engel listelerinde kullanılan kurallarla aynı filtreleme kurallarıdır. Kuralları elle ekleyerek veya önceden tanımlanmış bir listeden içe aktararak site filtrelemeyi ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
 
 Filtrelemenizi daha esnek ve tercihlere daha uygun hâle getirmek için AdGuard DNS filtreleme kuralları için [kural söz dizimini](/general/dns-filtering-syntax/) inceleyin.
 
@@ -21,7 +21,7 @@ Kullanıcı kurallarını ayarlamak için:
 
 4. _Kullanıcı kuralları_ seçeneğine tıklayın.
 
-5. You'll find several options for adding user rules.
+5. Kullanıcı kuralları eklemek için çeşitli seçenekler bulacaksınız.
 
    - En kolay yol oluşturucuyu kullanmaktır. Kullanmak için _Yeni kural ekle_ öğesine tıklayın → Engellemek veya engelini kaldırmak istediğiniz alan adını girin → _Kural ekle_ öğesine tıklayın
      ![Kural ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

@@ -39,7 +39,7 @@ Desteklenen CPU mimarileri:
 
    :::dikkat
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   macOS'ta, genel olarak yüklenen daemonların `root` tarafından sahiplenilmesi çok önemlidir (bkz. [`launchd` dokümantasyonu][launchd-requirements]), bu nedenle `AdGuardDNSClient` çalıştırılabilir dosyası `/Applications/` dizinine veya alt dizinine yerleştirilmelidir.
 
    :::
 
@@ -82,9 +82,9 @@ Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili de�
 
 ### Yardım {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+`-h` seçeneği AdGuard DNS İstemcisinin standart çıktıya bir yardım mesajı yazdırmasını ve başarılı durum koduyla çıkmasını sağlar.
 
-### Service {#opts-service}
+### Hizmet {#opts-service}
 
 `-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
 

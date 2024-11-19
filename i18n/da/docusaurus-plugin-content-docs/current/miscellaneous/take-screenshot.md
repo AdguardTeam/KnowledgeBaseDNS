@@ -1,6 +1,6 @@
 ---
 title: 'Sådan tages et skærmfoto'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Et skærmfoto er en optagelse af enhedens skærm, som kan fås ved at bruge standardværktøjer eller et særligt program/app.

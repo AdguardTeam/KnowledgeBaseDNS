@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: 参考资料
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
@@ -11,441 +11,441 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+本文章包含 [AdGuard DNS API](private-dns/api/overview.md) 的文档。 有关完成的 AdGuard DNS API 更新日志记录，请访问[此页面](private-dns/api/changelog.md)。
 
-## Current version: 1.9
+## 当前版本：1.9
 
 ### /oapi/v1/account/limits
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets account limits
+获取账号限额
 
-##### Responses
+##### 响应
 
-| Code | Description         |
-| ---- | ------------------- |
-| 200  | Account limits info |
+| 响应代码 | 详细信息   |
+| ---- | ------ |
+| 200  | 账号限额信息 |
 
 ### /oapi/v1/dedicated_addresses/ipv4
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Lists dedicated IPv4 addresses
+列出专用 IPv4 地址
 
-##### Responses
+##### 响应
 
-| Code | Description                      |
-| ---- | -------------------------------- |
-| 200  | List of dedicated IPv4 addresses |
+| 响应代码 | 详细信息         |
+| ---- | ------------ |
+| 200  | 专用 IPv4 地址列表 |
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Allocates new IPv4
+分配新的 IPv4 地址
 
-##### Responses
+##### 响应
 
-| Code | Description                            |
-| ---- | -------------------------------------- |
-| 200  | New IPv4 successfully allocated        |
-| 429  | Dedicated IPv4 count reached the limit |
+| 响应代码 | 详细信息           |
+| ---- | -------------- |
+| 200  | 成功分配的新 IPv4 地址 |
+| 429  | 专用 IPv4 数量达到上限 |
 
 ### /oapi/v1/devices
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Lists devices
+列出设备
 
-##### Responses
+##### 响应
 
-| Code | Description     |
-| ---- | --------------- |
-| 200  | List of devices |
+| 响应代码 | 详细信息 |
+| ---- | ---- |
+| 200  | 设备列表 |
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Creates a new device
+创建新设备
 
-##### Responses
+##### 响应
 
-| Code | Description                     |
-| ---- | ------------------------------- |
-| 200  | Device created                  |
-| 400  | Validation failed               |
-| 429  | Devices count reached the limit |
+| 响应代码 | 详细信息     |
+| ---- | -------- |
+| 200  | 设备已创建    |
+| 400  | 验证失败     |
+| 429  | 设备数量达到限制 |
 
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
 
-##### Summary
+##### 摘要
 
-Removes a device
+删除设备
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description      |
-| ---- | ---------------- |
-| 200  | Device deleted   |
-| 404  | Device not found |
+| 响应代码 | 详细信息  |
+| ---- | ----- |
+| 200  | 设备已删除 |
+| 404  | 未找到设备 |
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets an existing device by ID
+根据 ID 获取现有设备
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description      |
-| ---- | ---------------- |
-| 200  | Device info      |
-| 404  | Device not found |
+| 响应代码 | 详细信息  |
+| ---- | ----- |
+| 200  | 设备信息  |
+| 404  | 未找到设备 |
 
 #### PUT
 
-##### Summary
+##### 摘要
 
-Updates an existing device
+更新现有设备
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description       |
-| ---- | ----------------- |
-| 200  | Device updated    |
-| 400  | Validation failed |
-| 404  | Device not found  |
+| 响应代码 | 详细信息  |
+| ---- | ----- |
+| 200  | 设备已更新 |
+| 400  | 验证失败  |
+| 404  | 未找到设备 |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses
 
 #### GET
 
-##### Summary
+##### 摘要
 
-List dedicated IPv4 and IPv6 addresses for a device
+列出设备的专用 IPv4 和 IPv6 地址
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description             |
-| ---- | ----------------------- |
-| 200  | Dedicated IPv4 and IPv6 |
+| 响应代码 | 详细信息           |
+| ---- | -------------- |
+| 200  | 专用 IPv4 和 IPv6 |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### DELETE
 
-##### Summary
+##### 摘要
 
-Unlink dedicated IPv4 from the device
+解除设备上专用 IPv4 链接
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description                                          |
-| ---- | ---------------------------------------------------- |
-| 200  | Dedicated IPv4 successfully unlinked from the device |
-| 404  | Device or address not found                          |
+| 响应代码 | 详细信息              |
+| ---- | ----------------- |
+| 200  | 专用 IPv4 成功与设备解除连接 |
+| 404  | 设备或地址未找到          |
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Link dedicated IPv4 to the device
+将专用 IPv4 连接到设备
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description                                      |
-| ---- | ------------------------------------------------ |
-| 200  | Dedicated IPv4 successfully linked to the device |
-| 400  | Validation failed                                |
-| 404  | Device or address not found                      |
-| 429  | Linked dedicated IPv4 count reached the limit    |
+| 响应代码 | 详细信息              |
+| ---- | ----------------- |
+| 200  | 专用 IPv4 成功连接到设备   |
+| 400  | 验证失败              |
+| 404  | 设备或地址未找到          |
+| 429  | 连接的专用 IPv4 数量达到上限 |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets DNS-over-HTTPS .mobileconfig file.
+获取 DNS-over-HTTPS .mobileconfig 文件。
 
-##### Parameters
+##### 参数
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+| 名称                      | 位置 | 详细信息                                 | 必填 | 类型         |
+| ----------------------- | -- | ------------------------------------ | -- | ---------- |
+| device_id               | 路径 |                                      | 是  | 字符串        |
+| exclude_wifi_networks | 查询 | 按 SSID 列出想要禁用 AdGuard DNS 的 Wi-Fi 网络 | 否  | [ string ] |
+| exclude_domain          | 查询 | 列出将使用默认 DNS 服务器而不是 AdGuard DNS 的域名   | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+| 响应代码 | 详细信息                     |
+| ---- | ------------------------ |
+| 200  | DNS-over-HTTPS .plist 文件 |
+| 404  | 未找到设备                    |
 
 ### /oapi/v1/devices/{device_id}/doh_password/reset
 
 #### PUT
 
-##### Summary
+##### 摘要
 
-Generate and set new DNS-over-HTTPS password
+生成并设置新的 DNS-over-HTTPS 密码。
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description                                |
-| ---- | ------------------------------------------ |
-| 200  | DNS-over-HTTPS password successfully reset |
-| 404  | Device not found                           |
+| 响应代码 | 详细信息                  |
+| ---- | --------------------- |
+| 200  | DNS-over-HTTPS 密码成功重置 |
+| 404  | 未找到设备                 |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets DNS-over-TLS .mobileconfig file.
+获取 DNS-over-TLS .mobileconfig 文件。
 
-##### Parameters
+##### 参数
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+| 名称                      | 位置 | 详细信息                                 | 必填 | 类型         |
+| ----------------------- | -- | ------------------------------------ | -- | ---------- |
+| device_id               | 路径 |                                      | 是  | 字符串        |
+| exclude_wifi_networks | 查询 | 按 SSID 列出想要禁用 AdGuard DNS 的 Wi-Fi 网络 | 否  | [ string ] |
+| exclude_domain          | 查询 | 列出将使用默认 DNS 服务器而不是 AdGuard DNS 的域名   | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+| 响应代码 | 详细信息                     |
+| ---- | ------------------------ |
+| 200  | DNS-over-HTTPS .plist 文件 |
+| 404  | 未找到设备                    |
 
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
 
-##### Summary
+##### 摘要
 
-Updates device settings
+更新设备设置
 
-##### Parameters
+##### 参数
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| 名称        | 位置 | 详细信息 | 必填 | 类型  |
+| --------- | -- | ---- | -- | --- |
+| device_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description             |
-| ---- | ----------------------- |
-| 200  | Device settings updated |
-| 400  | Validation failed       |
-| 404  | Device not found        |
+| 响应代码 | 详细信息    |
+| ---- | ------- |
+| 200  | 设备设置已更新 |
+| 400  | 验证失败    |
+| 404  | 未找到设备   |
 
 ### /oapi/v1/dns_servers
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Lists DNS servers that belong to the user.
+列出属于用户的 DNS 服务器。
 
-##### Description
+##### 详细信息
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+列出属于用户的 DNS 服务器。 默认情况下，至少有一个默认服务器。
 
-##### Responses
+##### 响应
 
-| Code | Description         |
-| ---- | ------------------- |
-| 200  | List of DNS servers |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | DNS 服务器列表 |
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Creates a new DNS server
+创建新的 DNS 服务器
 
-##### Description
+##### 详细信息
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+创建新的 DNS 服务器。 用户可以附加自定义设置，否则将使用默认设置创建 DNS 服务器。
 
-##### Responses
+##### 响应
 
-| Code | Description                         |
-| ---- | ----------------------------------- |
-| 200  | DNS server created                  |
-| 400  | Validation failed                   |
-| 429  | DNS servers count reached the limit |
+| 响应代码 | 详细信息          |
+| ---- | ------------- |
+| 200  | DNS 服务器已创建    |
+| 400  | 验证失败          |
+| 429  | DNS 服务器数量已达上限 |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
 
-##### Summary
+##### 摘要
 
-Removes a DNS server
+删除 DNS 服务器
 
-##### Description
+##### 详细信息
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
+删除 DNS 服务器。 所有连接到此 DNS 服务器的设备都将移至默认 DNS 服务器。 禁止删除默认 DNS 服务器。
 
-##### Parameters
+##### 参数
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| 名称              | 位置 | 详细信息 | 必填 | 类型  |
+| --------------- | -- | ---- | -- | --- |
+| dns_server_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server deleted   |
-| 404  | DNS server not found |
+| 响应代码 | 详细信息        |
+| ---- | ----------- |
+| 200  | DNS 服务器已删除  |
+| 404  | 未找到 DNS 服务器 |
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets an existing DNS server by ID
+根据 ID 获取现有 DNS 服务器
 
-##### Parameters
+##### 参数
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| 名称              | 位置 | 详细信息 | 必填 | 类型  |
+| --------------- | -- | ---- | -- | --- |
+| dns_server_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server info      |
-| 404  | DNS server not found |
+| 响应代码 | 详细信息        |
+| ---- | ----------- |
+| 200  | DNS 服务器信息   |
+| 404  | 未找到 DNS 服务器 |
 
 #### PUT
 
-##### Summary
+##### 摘要
 
-Updates an existing DNS server
+更新现有 DNS 服务器。
 
-##### Parameters
+##### 参数
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| 名称              | 位置 | 详细信息 | 必填 | 类型  |
+| --------------- | -- | ---- | -- | --- |
+| dns_server_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server updated   |
-| 400  | Validation failed    |
-| 404  | DNS server not found |
+| 响应代码 | 详细信息        |
+| ---- | ----------- |
+| 200  | DNS 服务器已更新  |
+| 400  | 验证失败        |
+| 404  | 未找到 DNS 服务器 |
 
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
 
-##### Summary
+##### 摘要
 
-Updates DNS server settings
+更新 DNS 服务器设置
 
-##### Parameters
+##### 参数
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| 名称              | 位置 | 详细信息 | 必填 | 类型  |
+| --------------- | -- | ---- | -- | --- |
+| dns_server_id | 路径 |      | 是  | 字符串 |
 
-##### Responses
+##### 响应
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | DNS server settings updated |
-| 400  | Validation failed           |
-| 404  | DNS server not found        |
+| 响应代码 | 详细信息         |
+| ---- | ------------ |
+| 200  | DNS 服务器设置已更新 |
+| 400  | 验证失败         |
+| 404  | 未找到 DNS 服务器  |
 
 ### /oapi/v1/filter_lists
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets filter lists
+获取过滤器列表
 
-##### Responses
+##### 响应
 
-| Code | Description     |
-| ---- | --------------- |
-| 200  | List of filters |
+| 响应代码 | 详细信息  |
+| ---- | ----- |
+| 200  | 过滤器列表 |
 
 ### /oapi/v1/oauth_token
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Generates Access and Refresh token
+生成访问和刷新令牌
 
-##### Responses
+##### 响应
 
-| Code | Description                                              |
-| ---- | -------------------------------------------------------- |
-| 200  | Access token issued                                      |
-| 400  | Missing required parameters                              |
-| 401  | Invalid credentials, MFA token or refresh token provided |
+| 响应代码 | 详细信息                |
+| ---- | ------------------- |
+| 200  | 已颁发访问令牌             |
+| 400  | 缺少必需参数              |
+| 401  | 提供的凭证、MFA 令牌或刷新令牌无效 |
 
 null
 
@@ -453,62 +453,62 @@ null
 
 #### DELETE
 
-##### Summary
+##### 摘要
 
-Clears query log
+清除查询日志
 
-##### Responses
+##### 响应
 
-| Code | Description           |
-| ---- | --------------------- |
-| 202  | Query log was cleared |
+| 响应代码 | 详细信息    |
+| ---- | ------- |
+| 202  | 查询日志已清除 |
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets query log
+获取查询日志
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                                                                | Required | Schema                                              |
-| ------------------ | ---------- | -------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)                                      | Yes      | long                                                |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)                                        | Yes      | long                                                |
-| devices            | query      | Filter by devices                                                          | No       | [ string ]                                          |
-| countries          | query      | Filter by countries                                                        | No       | [ string ]                                          |
-| companies          | query      | Filter by companies                                                        | No       | [ string ]                                          |
-| statuses           | query      | Filter by statuses                                                         | No       | [ [FilteringActionStatus](#FilteringActionStatus) ] |
-| categories         | query      | Filter by categories                                                       | No       | [ [CategoryType](#CategoryType) ]                   |
-| search             | query      | Filter by domain name                                                      | No       | string                                              |
-| limit              | query      | Limit the number of records to be returned                                 | No       | integer                                             |
-| cursor             | query      | Pagination cursor. Use cursor from response to paginate through the pages. | No       | string                                              |
+| 名称                 | 位置 | 详细信息                   | 必填 | 类型                                                  |
+| ------------------ | -- | ---------------------- | -- | --------------------------------------------------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间       | 是  | long                                                |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间       | 是  | long                                                |
+| devices            | 查询 | 按设备筛选                  | 否  | [ string ]                                          |
+| countries          | 查询 | 按国家/地区筛选               | 否  | [ string ]                                          |
+| companies          | 查询 | 按公司筛选                  | 否  | [ string ]                                          |
+| statuses           | 查询 | 按状态筛选                  | 否  | [ [FilteringActionStatus](#FilteringActionStatus) ] |
+| categories         | 查询 | 按类别筛选                  | 否  | [ [CategoryType](#CategoryType) ]                   |
+| search             | 查询 | 按域名筛选                  | 否  | 字符串                                                 |
+| limit              | 查询 | 限制返回的记录数               | 否  | integer                                             |
+| cursor             | 查询 | 分页光标。 使用响应中的光标对页面进行分页。 | 否  | string                                              |
 
-##### Responses
+##### 响应
 
-| Code | Description |
-| ---- | ----------- |
-| 200  | Query log   |
+| 响应代码 | 详细信息 |
+| ---- | ---- |
+| 200  | 查询日志 |
 
 ### /oapi/v1/revoke_token
 
 #### POST
 
-##### Summary
+##### 摘要
 
-Revokes a Refresh Token
+撤销刷新令牌
 
-##### Parameters
+##### 参数
 
-| Name          | Located in | Description   | Required | Schema |
-| ------------- | ---------- | ------------- | -------- | ------ |
-| refresh_token | query      | Refresh Token | Yes      | string |
+| 名称            | 位置 | 详细信息 | 必填 | 类型     |
+| ------------- | -- | ---- | -- | ------ |
+| refresh_token | 查询 | 刷新令牌 | 是  | string |
 
-##### Responses
+##### 响应
 
-| Code | Description           |
-| ---- | --------------------- |
-| 200  | Refresh token revoked |
+| 响应代码 | 详细信息    |
+| ---- | ------- |
+| 200  | 刷新令牌已撤销 |
 
 null
 
@@ -516,181 +516,181 @@ null
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets categories statistics
+获取类别统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                    |
-| ---- | ------------------------------ |
-| 200  | Categories statistics received |
-| 400  | Validation failed              |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | 类别统计信息已获取 |
+| 400  | 验证失败      |
 
 ### /oapi/v1/stats/companies
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets companies statistics
+获取公司统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                   |
-| ---- | ----------------------------- |
-| 200  | Companies statistics received |
-| 400  | Validation failed             |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | 公司统计信息已获取 |
+| 400  | 验证失败      |
 
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets detailed companies statistics
+获取详细的公司统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
-| cursor             | query      | Pagination cursor                     | No       | string     |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
+| cursor             | 查询 | 分页光标             | 否  | string     |
 
-##### Responses
+##### 响应
 
-| Code | Description                            |
-| ---- | -------------------------------------- |
-| 200  | Detailed companies statistics received |
-| 400  | Validation failed                      |
+| 响应代码 | 详细信息         |
+| ---- | ------------ |
+| 200  | 详细的公司统计信息已获取 |
+| 400  | 验证失败         |
 
 ### /oapi/v1/stats/countries
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets countries statistics
+获取国家/地区统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                   |
-| ---- | ----------------------------- |
-| 200  | Countries statistics received |
-| 400  | Validation failed             |
+| 响应代码 | 详细信息         |
+| ---- | ------------ |
+| 200  | 国家/地区统计信息已获取 |
+| 400  | 验证失败         |
 
 ### /oapi/v1/stats/devices
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets devices statistics
+获取设备统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | Devices statistics received |
-| 400  | Validation failed           |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | 设备统计信息已获取 |
+| 400  | 验证失败      |
 
 ### /oapi/v1/stats/domains
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets domains statistics
+获取域名统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | Domains statistics received |
-| 400  | Validation failed           |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | 域名统计信息已获取 |
+| 400  | 验证失败      |
 
 ### /oapi/v1/stats/time
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Gets time statistics
+获取时间统计信息
 
-##### Parameters
+##### 参数
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| 名称                 | 位置 | 详细信息             | 必填 | 类型         |
+| ------------------ | -- | ---------------- | -- | ---------- |
+| time_from_millis | 查询 | 以毫秒为单位（含毫秒）的起始时间 | 是  | long       |
+| time_to_millis   | 查询 | 以毫秒为单位（含毫秒）的结束时间 | 是  | long       |
+| devices            | 查询 | 按设备筛选            | 否  | [ string ] |
+| countries          | 查询 | 按国家/地区筛选         | 否  | [ string ] |
 
-##### Responses
+##### 响应
 
-| Code | Description              |
-| ---- | ------------------------ |
-| 200  | Time statistics received |
-| 400  | Validation failed        |
+| 响应代码 | 详细信息      |
+| ---- | --------- |
+| 200  | 时间统计信息已获取 |
+| 400  | 验证失败      |
 
 ### /oapi/v1/web_services
 
 #### GET
 
-##### Summary
+##### 摘要
 
-Lists web services
+列出网络服务
 
-##### Responses
+##### 响应
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | List of web-services |
+| 响应代码 | 详细信息   |
+| ---- | ------ |
+| 200  | 网络服务列表 |

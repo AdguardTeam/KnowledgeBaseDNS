@@ -36,15 +36,15 @@
     "description": "The label for category AdGuard Home in sidebar sidebar"
   },
   "sidebar.sidebar.category.AdGuard DNS Client": {
-    "message": "AdGuard DNS Client",
+    "message": "AdGuard DNS 客户端",
     "description": "The label for category AdGuard DNS Client in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to connect devices": {
-    "message": "How to connect devices",
+    "message": "如何连接设备",
     "description": "The label for category How to connect devices in sidebar sidebar"
   },
   "sidebar.sidebar.category.Mobile and desktop": {
-    "message": "Mobile and desktop",
+    "message": "移动网络和桌面",
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
@@ -56,19 +56,19 @@
     "description": "The label for category Game consoles in sidebar sidebar"
   },
   "sidebar.sidebar.category.Other options": {
-    "message": "Other options",
+    "message": "其他选项",
     "description": "The label for category Other options in sidebar sidebar"
   },
   "sidebar.sidebar.category.Server and settings": {
-    "message": "Server and settings",
+    "message": "服务器和设置",
     "description": "The label for category Server and settings in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to set up filtering": {
-    "message": "How to set up filtering",
+    "message": "如何设置过滤",
     "description": "The label for category How to set up filtering in sidebar sidebar"
   },
   "sidebar.sidebar.category.Statistics and Query log": {
-    "message": "Statistics and Query log",
+    "message": "统计数字与查询日志",
     "description": "The label for category Statistics and Query log in sidebar sidebar"
   }
 }

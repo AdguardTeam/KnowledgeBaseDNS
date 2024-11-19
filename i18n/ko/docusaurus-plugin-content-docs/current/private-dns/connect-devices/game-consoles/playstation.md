@@ -21,7 +21,7 @@ sidebar_position: 4
 6. Select _Custom_ and then select _Automatic_ for _IP Address Settings_.
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
-9. In the _DNS Server_ field, enter one of the following DNS server addresses:
+9. **DNS 서버** 필드에 다음 DNS 서버 주소 중 하나를 입력합니다:
    - `94.140.14.49`
    - `94.140.14.59`
 10. Select _Next_ to continue.
@@ -30,7 +30,7 @@ sidebar_position: 4
 13. Select _Test Internet Connection_ to test your new DNS settings.
 14. Once the test is complete and you see "Internet Connection: Successful", save your settings.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+연결된 IP(또는 Team을 구독하는 경우 전용 IP)를 사용하는 것이 좋습니다:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

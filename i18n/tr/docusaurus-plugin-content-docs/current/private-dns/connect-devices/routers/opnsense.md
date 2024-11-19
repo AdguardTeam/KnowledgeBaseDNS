@@ -3,9 +3,9 @@ title: OPNSense
 sidebar_position: 8
 ---
 
-OPNSense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
+OPNSense donanım yazılımı genellikle kablosuz erişim noktalarını, DHCP sunucularını, DNS sunucularını yapılandırmak için kullanılır ve AdGuard DNS'i doğrudan cihaz üzerinde yapılandırmanıza olanak tanır.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

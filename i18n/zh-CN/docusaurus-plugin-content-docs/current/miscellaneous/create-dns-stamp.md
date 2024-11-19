@@ -1,60 +1,64 @@
-# How to create your own DNS stamp for Secure DNS
+- - -
+title: How to create your own DNS stamp for Secure DNS
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+sidebar_position: 4
+- - -
 
-Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
+本指南将介绍如何为安全 DNS 创建自己的 DNS 戳。 安全 DNS 是一项通过加密 DNS 查询来增强互联网安全和隐私的服务。 这可以防止用户的查询被恶意行为者拦截或操纵。
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+安全 DNS 通常使用 `tls://`、`https://` 或 `quic://` URL。 这对大多数用户来说已经足够，也是推荐的方式。
 
-## Introduction to DNS stamps
+不过，如果需要额外的安全性，例如预解析服务器 IP 或通过散列进行证书标号，用户可以生成自己的 DNS 戳。
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+## DNS 戳简介
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+DNS 戳是简短的字符串，包含连接到安全 DNS 服务器所需的全部信息。 DNS 戳简化设置安全 DNS 的过程，可使用户无需再手动输入这些数据。
 
-## Choosing the protocol
+DNS 戳让用户自定义常规 URL 之外的安全 DNS 设置。 它们还允许用户指定硬编码的服务器地址，使用证书哈希等等。 这些功能使 DNS 戳成为配置安全 DNS 设置更强大、更通用的选择。
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+## 选择协议
 
-## Creating a DNS stamp
+安全 DNS 的类型包括 `DNS-over-HTTPS (DoH)`、`DNS-over-QUIC (DoQ)`、`DNS-over-TLS (DoT)` 等。 具体协议的选择取决于您的使用环境。
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+## 创建 DNS 戳
 
-2. Depending on the chosen protocol, select the corresponding protocol from the dropdown menu (DoH, DoT, or DoQ).
+1. 打开 [DNSCrypt 戳计算器](https://dnscrypt.info/stamps/)。
 
-3. Fill in the necessary fields:
-    - **IP address**: Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
+2. 根据所选协议，从下拉菜单中选择相应协议(DoH、DoT 或 DoQ)。
 
-    :::note
-
-    This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
-
-
-:::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+3. 填写必填字段：
+    - **IP 地址**：输入 DNS 服务器的 IP 地址。 如果用户使用 DoT 或 DoQ 协议，请确保您也指定了适当的端口。
 
     :::note
 
-    This field is optional
+    该字段为可选项，应谨慎使用：使用该选项可能会干扰仅 IPv6 网络上的网络。
+
+
+:::
+    - **哈希值**：输入在验证链中找到的 TBS 证书之一的 SHA256 摘要。 如果您使用的 DNS 服务器提供了现成的哈希值，请找到并将其复制。 否则，您可以按照「[*获取证书哈希*](#obtaining-the-certificate-hash)」部分的说明获取。
+
+    :::note
+
+    该字段为可选项
 
 
 :::
 
-    - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
+    - **主机名**：输入 DNS 服务器的主机名。 该字段用于 DoT 和 DoQ 协议中的服务器名称验证。
 
-    - For **DoH**:
-      - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
+    - **DoH**：
+      - **路径**：输入执行 DoH 请求的路径。 该路径通常是 `"/dns-query"`，但您的提供商可能会提供不同的路径。
 
-    -     For **DoT and DoQ**:
-      - There are usually no specific fields for these protocols in this tool. Just make sure the port specified in the resolver address is the correct port.
+    -     对于 **DoT 和 DoQ**：
+      - 该工具中通常没有针对这些协议的特定字段。 只需确保解析器地址中指定的端口是正确端口即可。
 
-    - In the **Properties** section, you can check the relevant properties if they are known and applicable to your DNS server.
+    - 在「**属性**」部分中，可以检查相关属性是否已知且适用于您的 DNS 服务器。
 
-4. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+4. 您的 DNS 戳将自动生成，并在「**戳**」字段中显示。
 
-### Obtaining the certificate hash
+### 获取证书哈希
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+要填写**服务器证书哈希值**字段，可以使用以下命令，将 `<IP_ADDRESS>`、`<PORT>` 和 `<SERVER_NAME>` 替换为您的 DNS 服务器的相应值：
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -62,36 +66,36 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+哈希命令的结果可能随着服务器证书的更新而随时间变化。 所以，如果 DNS 戳突然停止工作，您可能需要重新计算证书的哈希值并生成一个新的 DNS 戳。 定期更新 DNS 戳有助于确保安全 DNS 服务的持续安全运行。
 
 :::
 
-## Using the DNS stamp
+## 使用 DNS 戳
 
-You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+现在您有自己的 DNS 戳，可以用来设置安全 DNS。 DNS 戳可以导入 AdGuard 和 AdGuard VPN，从而增强互联网隐私性和安全性。
 
-## Example of creating a DNS stamp
+## 创建 DNS 戳示例
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+让我们以使用 DoT 为 AdGuard DNS 创建 DNS 戳为例进行说明：
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. 打开 [DNSCrypt 戳计算器](https://dnscrypt.info/stamps/)。
 
-2. Select the DNS-over-TLS (DoT) protocol.
+2. 选择 DNS-over-TLS（DoT）协议。
 
-3. Fill in the following fields:
+3. 填写以下字段：
 
-    - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
+    - **IP 地址**：输入 DNS 服务器的 IP 地址和端口。 在本例中，它是 `94.140.14.14:853`。
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **主机名**：输入 DNS 服务器的主机名。 在本例中，它是 `dns.adguard-dns.com`。
 
-    - **Hashes**: Execute the command
+    - **哈希值**：执行命令
 
     ```bash
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server's certificate into the field.
+    结果为 `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` 将服务器证书的 SHA256 哈希值粘贴到字段中。
 
-4. Leave the Properties section blank.
+4. 将属性部分留空。
 
-5. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+5. 您的 DNS 戳将自动生成，并在「**戳**」字段中显示。

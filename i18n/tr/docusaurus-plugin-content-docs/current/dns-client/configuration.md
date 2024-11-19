@@ -22,7 +22,7 @@ Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örne�
 
 `cache` nesnesi, DNS sorgulama sonuçlarının önbelleğe alınmasını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: DNS sonuçlarının önbelleğe alınıp alınmayacağını belirtir.
 
   **Örnek:** `true`
 
@@ -62,7 +62,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: Önyükleme DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
   **Örnek:** `2 s`
 
@@ -108,7 +108,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Diğer gruplar arasında eşleşme olmadığında `default` grubu kullanılacaktır. Özel IP adresleri için PTR isteklerini çözmek için `private` grup kullanılacaktır. Bu tür sorgular, `private` grubu tanımlanmamışsa `NXDOMAIN` ile yanıtlanacaktır.
 
 - `timeout`: İnsan tarafından okunabilir bir süre olarak üst kaynak sunucu DNS istekleri için zaman aşımı.
 
@@ -127,7 +127,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: Yedek DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
   **Örnek:** `2s`
 
@@ -143,7 +143,7 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
   **Örnek:** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Hata ayıklama profilinin etkin olup olmadığını belirtir.
 
   **Örnek:** `true`
 

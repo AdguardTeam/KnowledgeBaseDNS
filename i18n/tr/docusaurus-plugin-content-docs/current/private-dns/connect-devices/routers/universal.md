@@ -3,20 +3,20 @@ title: Evrensel talimatlar
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
+İşte yönlendiricilerde Özel AdGuard DNS ayarlamak için bazı genel talimatlar. You can refer to this guide if you can't find your specific router in the main list. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 1. Yönlendiricinizin tercihlerini açın. Genellikle bunlara tarayıcınızdan erişebilirsiniz. Yönlendiricinizin modeline bağlı olarak aşağıdaki adreslerden birini girmeyi deneyin:
    - Linksys ve Asus yönlendiricileri genellikle şunu kullanır: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
+   - Netgear yönlendiricileri genellikle şunu kullanır: [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.1.1](http://192.168.1.1/) D-Link yönlendiricileri genellikle [http://192.168.0.1](http://192.168.0.1/) kullanır
    - Ubiquiti yönlendiricileri genellikle şunu kullanır: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
 2. Yönlendiricinin parolasını girin.
 
    :::note Önemli
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   Parolanızı bilmiyorsanız, genellikle yönlendirici üzerindeki bir düğmeye basarak parolanızı sıfırlayabilirsiniz; bu aynı zamanda yönlendiriciyi fabrika ayarlarına da sıfırlar. Some models have a dedicated management application, which should already be installed on your computer.
 
    :::
 

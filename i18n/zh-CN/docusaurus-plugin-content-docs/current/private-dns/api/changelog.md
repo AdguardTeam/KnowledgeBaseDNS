@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: 更新日志
 sidebar_position: 3
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,75 +10,75 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/CHANGELOG.md
 -->
 
-This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
+本文包含 [AdGuard DNS API](private-dns/api/overview.md) 的更新日志。
 
 ## v1.9
 
-_Released on July 11, 2024_
+_2024年7月11日发布_
 
-- Added automatic device connection functionality:
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
-  - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+- 新增自动设备连接功能：
+  - 新增 DNS 服务设置 — `auto_connect_devices_enabled`，允许通过特定链接类型验证自动连接设备。
+  - 设备中新增字段 — `auto_device`，表示设备已自动给连接。
+- 将 CategoryQueriesStats 中的 `queries`、AccountLimits 中的 `used` 以及 QueriesStats 中的 `blocked` 和 `queries` 由 `int` 替换为 `long`。
 
 ## v1.8
 
-_Released on April 20, 2024_
+_2024年4月20日发布_
 
-- Added support for DNS-over-HTTPS with authentication:
-  - New operation — reset DNS-over-HTTPS password for device
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+- 新增对使用具有身份验证的 DNS-over-HTTPS 的支持：
+  - 新增操作：重置设备的 DNS-over-HTTPS 密码。
+  - 新增设备设置：`detect_doh_auth_only`。 禁用除具有身份验证的 DNS-over-HTTPS 以外的所有 DNS 连接。
+  - DeviceDNSAddresses 新增字段：`dns_over_https_with_auth_url`。 用于指定使用具有身份验证的 DNS-over-HTTPS 连接时的 URL。
 
 ## v1.7
 
-_Released on March 11, 2024_
+_2024年3月11日发布_
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
-  - List all available dedicated IPv4 addresses
-  - Allocate new dedicated IPv4 address
-  - Link an available IPv4 address to a device
-  - Unlink an IPv4 address from a device
-  - Request info on dedicated addresses associated with a device
-- Added new limits to Account limits:
-  - `dedicated_ipv4` provides information about the amount of already allocated dedicated IPv4 addresses, as well as the limit on them
-- Removed deprecated field of DNSServerSettings:
+- 添加 IPv4 专用地址功能：
+  - 现在可在设备上使用专用 IPv4 地址配置 DNS 服务器。
+  - 专用 IPv4 地址现在与它所连接的设备相关联，以便记录对该设备的查询。
+- 新增操作：
+  - 列出所有可用的专用 IPv4 地址
+  - 分配新的专用 IPv4 地址
+  - 将可用的 IPv4 地址链接到设备
+  - 取消 IPv4 地址与设备的连接
+  - 查询与设备关联的专用地址信息
+- 已将新限制添加到账号限制中：
+  - `dedicated_ipv4`：提供有关已分配的专用 IPv4 地址数量及其限制的信息。
+- 删除了 `DNSServerSettings` 中的弃用字段：
   - `safebrowsing_enabled`
 
 ## v1.6
 
-_Released on January 22, 2024_
+_2024年1月22日发布_
 
-- Added new Access settings section for DNS profiles (`access_settings`). By customizing these fields, you’ll be able to protect your AdGuard DNS server from unauthorized access:
+- 为 DNS 描述文件新增了「访问设置」部分（`access_settings`）。 用户可以通过自定义这些字段来保护您的 AdGuard DNS 服务器，使其免受未经授权的访问：
 
-  - `allowed_clients` — here you can specify which clients can use your DNS server. This field will have priority over the `blocked_clients` field
-  - `blocked_clients` — here you can specify which clients are not allowed to use your DNS server
-  - `blocked_domain_rules` — here you can specify which domains are not allowed to access your DNS server, as well as define such domains with wildcard and DNS filtering rules
+  - `allowed_clients`：在这里，您可以设置允许使用您 DNS 服务器的客户端。 此字段优先于 `blocked_clients` 字段。
+  - `blocked_clients`：在这里，可以指定不允许哪些客户端使用您的 DNS 服务器。
+  - `blocked_domain_rules`：在这里，可以指定不允许哪些域名访问您的 DNS 服务器，并可以使用通配符和 DNS 过滤规则定义这些域名。
 
-- Added new limits to Account limits:
+- 已将新限制添加到账号限制中：
 
-  - `access_rules` provides the sum of currently used `blocked_clients` and `blocked_domain_rules` values, as well as the limit on access rules
-  - `user_rules` shows the amount of created user rules, as well as the limit on them
+  - `access_rules` 提供当前使用的 `blocked_clients` 和 `blocked_domain_rules` 的总和，以及访问规则的限制。
+  - `user_rules` 显示已创建的用户规则数量，以及用户规则限制。
 
-- Added a new `ip_log_enabled` setting to log client IP addresses and domains
+- 新增设置：`ip_log_enabled` 用于记录客户端 IP 地址和域名。
 
-- Added new error code `FIELD_REACHED_LIMIT` to indicate when limits have been reached:
+- 新增错误代码 `FIELD_REACHED_LIMIT`，用于指示字段值超过限制：
 
-  - For the total number of `blocked_clients` and `blocked_domain_rules` in access settings
-  - For `rules` in custom user rules settings
+  - 访问设置中 `blocked_clients` 和 `blocked_domain_rules` 的总数。
+  - 自定义用户规则设置中的 `rules`。
 
 ## v1.5
 
-_Released on June 16, 2023_
+_2023年6月16日发布_
 
-- Added a new `block_nrd` setting and grouped all security-related settings in one place
+- 添加新设置 block_nrd 并将所有安全相关设置分组到一处。
 
-### Model for safebrowsing settings changed
+### 安全浏览设置模式更改前：
 
-From:
+变更前：
 
 ```json
 {
@@ -86,7 +86,7 @@ From:
 }
 ```
 
-To:
+更改后：
 
 ```json
 {
@@ -96,11 +96,11 @@ To:
 }
 ```
 
-where `enabled` now controls all settings in the group, `block_dangerous_domains` is the previous `enabled` model field, and `block_nrd` is a setting that blocks newly registered domains.
+现在，其中的 `enabled` 会控制组中的所有设置， `block_dangerous_domains` 是之前模型的 `enabled` 字段，`block_nrd` 是过滤新注册域名的设置。
 
-### Model for saving server settings changed
+### 保存服务器设置的模型变更
 
-From:
+变更前：
 
 ```json
 {
@@ -110,7 +110,7 @@ From:
 }
 ```
 
-to:
+更改后：
 
 ```json
 {
@@ -124,40 +124,40 @@ to:
 }
 ```
 
-here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
+此处使用新字段 `safebrowsing_settings` 代替已弃用的 `safebrowsing_enabled`，其值存储在 `block_dangerous_domains`中。
 
 ## v1.4
 
-_Released on March 29, 2023_
+_2023年3月29日发布_
 
-- Added configurable option for blocking response: default (0.0.0.0), REFUSED, NXDOMAIN or custom IP address
+- 添加了用于阻止响应的可配置选项：默认 (0.0.0.0)、REFUSED、NXDOMAIN 或自定义 IP 地址。
 
 ## v1.3
 
-_Released on December 13, 2022_
+_2022年12月13日发布_
 
-- Added method to get account limits
+- 添加了获取账号限制的方法。
 
 ## v1.2
 
-_Released on October 14, 2022_
+_2022年10月14日发布_
 
-- Added new protocol types DNS and DNSCRYPT. Deprecating the PLAIN_TCP, PLAIN_UDP, DNSCRYPT_TCP and DNSCRYPT_UDP that will be removed later
+- 新增 DNS 和 DNSCRYPT 协议类型。 弃用即将删除的 PLAIN_TCP、PLAIN_UDP、DNSCRYPT_TCP 和 DNSCRYPT_UDP。
 
 ## v1.1
 
-_Released on July 7, 2022_
+_2022年7月7日发布_
 
-- Added methods to retrieve statistics by time, domains, companies and devices
-- Added method for updating device settings
-- Fixed required fields definition
+- 添加了按时间、域名、公司和设备检索统计数字的方法。
+- 添加了更新设备设置的方法。
+- 修复了必填字段定义。
 
 ## v1.0
 
-_Released on February 22, 2022_
+_2022年2月22日发布_
 
-- Added authentication
-- CRUD operations with devices and DNS servers
-- Query log
-- Downloading DoH and DoT .mobileconfig
-- Filter lists and web services
+- 添加了身份验证。
+- 对设备和 DNS 服务器进行 CRUD 操作。
+- 查询日志
+- 下载 DoH 和 DoT .mobileconfig。
+- 过滤列表和网络服务。

@@ -1,11 +1,11 @@
 ---
-title: Configuration file
+title: 配置文件
 sidebar_position: 2
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+完整的 [YAML][yaml] 配置文件示例请参考配置文件 [`config.dist.yml`][dist]。
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
@@ -16,31 +16,31 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of the DNS server. It has the following properties:
+`dns` 配置对象用于设置 DNS 服务器的行为。 它包含以下属性：
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. It has the following properties:
+`cache` 对象配置缓存查询 DNS 的结果。 它包含以下属性：
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`：是否启用 DNS 结果缓存。
 
-  **Example:** `true`
+  **示例：** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`：DNS 结果缓存的最大值（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
-  **Example:** `128 MB`
+  **示例：** `128MB`
 
-- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`：指定每个已配置客户端地址或子网的 DNS 结果缓存的最大尺寸（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
-  **Example:** `4 MB`
+  **示例：** `4MB`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. It has the following properties:
+`server` 对象配置处理传入请求。 它包含以下属性：
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`：客户端监听的地址和端口集合。
 
-  **Property example:**
+  **属性示例：**
 
   ```yaml
   'listen_addresses':
@@ -50,11 +50,11 @@ The `server` object configures the handling of incoming requests. It has the fol
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
+`bootstrap` 对象配置[上游](#dns-upstream)服务器地址的解析。 它包含以下属性：
 
-- `servers`: The list of servers to resolve the hostnames of upstream servers.
+- `servers`：该列表用于指定上游服务器主机名的解析服务器。
 
-  **Property example:**
+  **属性示例：**
 
   ```yaml
   'servers':
@@ -62,37 +62,37 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`：指定引导 DNS 请求的超时时间，使用人类可读的数据量格式。
 
-  **Example:** `2 s`
+  **示例：** `2s`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. It has the following properties:
+`upstream` 对象用于配置实际的请求解析。 它包含以下属性：
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`：使用服务器组名称作为键值定义了一组上游服务器集合。 它包含以下字段：
 
-  - `address`: The upstream server’s address.
+  - `address`：指定上游服务器的地址和端口。
 
-    **Example:** `'8.8.8.8:53'`
+    **示例：** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: 用于定义将哪些请求路由到该服务器组进行解析。 每个列表项可以包含以下属性：
 
-    - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
+    - `question_domain`：指定域名或域名后缀。如果请求的域名匹配该值，则使用此服务器组进行解析。
 
-      **Example:** `'mycompany.local'`
+      **示例：** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`：指定客户端的地址或子网。如果请求来自匹配的客户端地址或子网，则使用此服务器组进行解析。 该值必须是子网掩码内的有效地址。
 
-      **Example:** `'192.0.2.0/24'`
+      **示例：** `'192.0.2.0/24'`
 
     :::note
 
-    Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+    同一条目中指定的属性会使用逻辑 AND 进行组合判断。 不同条目之间的判断会使用逻辑 OR 进行组合判断。
 
     :::
 
-    **Property example:**
+    **属性示例：**
 
     ```yaml
     'match':
@@ -104,113 +104,113 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` 配置中至少需要包含一个名为 `default` 的条目，并且可以 (可选) 包含一个名为 `private` 的条目，两个条目都不应该包含 `match` 属性。
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  当其他组的匹配规则都不满足时，将使用 `default` 组指定的服务器进行解析。 如果定义了 `private` 组，则会将其用于解析来自私有 IP 地址的反向解析请求 (PTR)。 如果未定义 `private` 组，此类请求将返回 `NXDOMAIN`。
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`：指定上游 DNS 请求的超时时间，使用人类可读的数据量格式。
 
-  **Example:** `2s`
+  **示例：** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
+`fallback` 对象用于配置当主上游 DNS 服务器无法响应时的备用行为。 它包含以下属性：
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`：指定在主[上游服务器](#dns-upstream)无法响应时使用的备用服务器列表。
 
-  **Property example:**
+  **属性示例：**
 
   ```yaml
   'servers':
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`：指定备用 DNS 请求的超时时间，使用人类可读的数据量格式。
 
-  **Example:** `2s`
+  **示例：** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. It has the following properties:
+`debug` 对象配置调试功能。 它包含以下属性：
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
+`pprof` 对象配置 [`pprof`][pkg-pprof] HTTP 处理程序。 它包含以下属性：
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: 用于在本地监听调试 HTTP 请求的端口。
 
-  **Example:** `6060`
+  **示例：** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`：是否启用调试。
 
-  **Example:** `true`
+  **示例：** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+`log` 对象配置日志记录。 它包含以下属性：
 
-- `output`: The output to which logs are written.
+- `output`：指定日志记录的输出位置。
 
   :::note
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  写入系统日志的日志条目采用 `text` 文本格式（如下），并使用系统时间戳。
 
   :::
 
-  Possible values:
+  可能的选项值如下：
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog` 表示使用特定于平台的系统日志，对于 Linux 是 syslog，对于 Windows 是 Event Log。
 
-  - `stdout` for standard output stream.
+  - `stdout` 表示标准输出流。
 
-  - `stderr` for standard error stream.
+  - `stderr` 表示标准错误流。
 
-  - Absolute path to the log file.
+  - 日志文件的绝对路径。
 
-  **Example:** `/home/user/logs`
+  **示例：** `/home/user/logs`
 
-  **Example:** `C:\Users\user\logs.txt`
+  **示例：** `C:\Users\user\logs.txt`
 
-  **Example:** `syslog`
+  **示例：** `syslog`
 
-- `format`: Specifies the format of the log entries.
+- `format`：指定日志条目的格式。
 
-  Possible values:
+  可能的选项值如下：
 
-  - `default`: A simple format. 例如：
+  - `default`：简单格式。 例如：
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. 例如：
+  - `json`：结构化 JSON 格式。 例如：
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. 例如：
+  - `jsonhybrid`：与 `json` 相同，但字段数量有限。 例如：
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. 例如：
+  - `text`：结构化文本格式。 例如：
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53
     ```
 
-  **Example:** `default`
+  **示例：** `default`
 
-- `timestamp`: Specifies whether to include a timestamp in the log entries.
+- `timestamp`：指定是否在日志条目中包含时间戳。
 
-  **Example:** `false`
+  **示例：** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`：指定是否启用详细日志输出。
 
-  **Example:** `false`
+  **示例：**`false`

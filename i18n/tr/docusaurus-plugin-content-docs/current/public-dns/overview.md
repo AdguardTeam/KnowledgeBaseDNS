@@ -43,6 +43,6 @@ Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_sub
 
 [DNS-over-QUIC, yeni bir DNS şifreleme protokolüdür](https://adguard.com/blog/dns-over-quic.html) ve AdGuard DNS, onu destekleyen ilk genel çözümleyicidir. DoH ve DoT'un aksine, QUIC'i bir aktarım protokolü olarak kullanır ve sonunda DNS'i köklerine geri getirir — UDP üzerinden çalışır. QUIC'in sunduğu tüm iyi şeyleri getiriyor — kullanıma hazır şifreleme, azaltılmış bağlantı süreleri, veri paketleri kaybolduğunda daha iyi performans. Ayrıca, QUIC'in aktarım düzeyinde bir protokol olduğu varsayılır ve DoH ile oluşabilecek meta veri sızıntısı riski yoktur.
 
-### Rate limit
+### Oran kısıtlaması
 
-DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. Daha fazla bilgi için lütfen [ilgili makaleyi okuyun](/private-dns/server-and-settings/rate-limit.md).
+DNS oran kısıtlaması, bir DNS sunucusunun belirli bir süre içinde işleyebileceği trafik miktarını düzenlemek için kullanılan bir tekniktir. Özel AdGuard DNS'in Takım ve Kurumsal planları için varsayılan kısıtlamayı artırma seçeneği sunuyoruz. Daha fazla bilgi için lütfen [ilgili makaleyi okuyun](/private-dns/server-and-settings/rate-limit.md).
