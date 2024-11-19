@@ -5,9 +5,7 @@ sidebar_position: 3
 
 ## What linked IPs are and why they are useful
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
-
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Not all devices support encrypted DNS protocols. In this case, you should consider setting up unencrypted DNS. For example, you can use a **linked IP address**. The only requirement for a linked IP address is that it must be a residential IP.
 
 :::note
 
@@ -31,7 +29,7 @@ The following instructions explain how to connect to the device via **linking IP
 
 ## Dynamic DNS: Why it is useful
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 
@@ -87,7 +85,7 @@ On macOS and Linux, the easiest way is to use `cron`:
    - This job will run every 5 minutes
 3. Save crontab.
 
-:::note Important
+:::note 중요
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.

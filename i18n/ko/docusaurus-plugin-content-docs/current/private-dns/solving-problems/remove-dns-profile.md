@@ -1,44 +1,44 @@
 ---
-title: How to remove a DNS profile
+title: DNS 프로필 제거 방법
 sidebar_position: 3
 ---
 
 If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to remove that DNS profile. Here's how to do it.
 
-On your Mac:
+Mac의 경우
 
-1. Open *System Settings*.
+1. *시스템 설정*을 엽니다.
 
-1. Click *Privacy & Security*.
+1. *개인정보 & 보안*을 클릭합니다.
 
-1. Scroll down to *Profiles*.
+1. *프로필*로 스크롤합니다.
 
-    ![Profiles](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
+    ![프로필](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
 
-1. Select a profile and click `–`.
+1. 프로필을 선택하고 `–`를 클릭합니다.
 
-    ![Deleting a profile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
+    ![프로필 삭제](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
 
-1. Confirm the removal.
+1. 제거를 확인합니다.
 
-    ![Confirmation](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
+    ![확인](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
 
 On your iOS device:
 
-1. Open *Settings*.
+1. *설정*을 엽니다.
 
-1. Select *General*.
+1. *일반*을 선택합니다.
 
-    ![General settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
+    ![일반 설정 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
 
 1. Scroll down to *VPN & Device Management*.
 
     ![VPN & Device Management *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
 
-1. Select the desired profile and tap *Remove Profile*.
+1. 원하는 프로필을 선택하고 *프로필 제거*를 탭합니다.
 
-    ![Profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
+    ![프로필 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
 
-    ![Deleting a profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
+    ![프로필 삭제 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
 
-1. Enter your device password to confirm the removal.
+1. 제거를 확인하려면 기기 비밀번호를 입력합니다.

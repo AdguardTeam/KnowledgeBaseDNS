@@ -12,27 +12,27 @@ toc_max_heading_level: 3
 
 Adguard DNS는 앱을 통합하는데 사용할 수 있는 REST API를 제공합니다.
 
-## Authentication
+## 인증
 
-### Generate Access token
+### Access token 생성
 
 Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| 매개변수       | 설명                         |
+|:---------- |:-------------------------- |
+| **사용자 이름** | 계정 이메일                     |
+| **비밀번호**   | 계정 비밀번호                    |
+| mfa_token  | 이중 인증 토큰 (계정 설정에서 활성화된 경우) |
 
-In the response, you will get both `access_token` and `refresh_token`.
+응답으로 `access_token`과 `refresh_token`을 모두 받게 됩니다.
 
 - The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token`은 영구적으로 유지됩니다. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
 
-#### Example request
+#### 요청 예시
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +42,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### 응답 예시
 
 ```json
 {
@@ -53,19 +53,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+### Refresh token에서 Access Token 생성
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Access token은 제한된 유효 기간을 가지고 있습니다. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
+| 매개변수              | 설명                                                                  |
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
-#### Example request
+#### 요청 예시
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +73,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+#### 응답 예시
 
 ```json
 {
@@ -97,7 +97,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-| Parameter         | Description                            |
+| 매개변수              | 설명                                     |
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
@@ -111,7 +111,7 @@ The service redirects you to AdGuard to authenticate (if you are not already log
 
 The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
-| Parameter         | Description                                                                                                                                                    |
+| 매개변수              | 설명                                                                                                                                                             |
 |:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **response_type** | Tells the authorization server which grant to execute                                                                                                          |
 | **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
@@ -157,11 +157,11 @@ OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger
 
 You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
-### Changelog
+### 변경 로그
 
 The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
-## Feedback
+## 피드백
 
 If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 

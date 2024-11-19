@@ -193,19 +193,19 @@ Grundsätzlich kann jede Werbung, die eine Domain mit einem Inhalt teilt, nicht 
 
 ### Gibt es eine Möglichkeit, dies in Zukunft zu ändern?
 
-DNS wird dafür niemals ausreichen. Ihre einzige Möglichkeit ist die Verwendung eines Proxy zum Sperren von Inhalten, wie wir es in den [eigenständigen AdGuard-Anwendungen][adguard] tun. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
+DNS wird dafür niemals ausreichen. Ihre einzige Möglichkeit ist die Verwendung eines Proxy zum Sperren von Inhalten, wie wir es in den [eigenständigen AdGuard-Anwendungen][adguard] tun. Zukünftig wird AdGuard Home auch diese Funktion unterstützen. Leider wird es auch dann noch Fälle geben, in denen dies nicht ausreicht oder eine recht komplizierte Konfiguration erfordert.
 
 [adguard]: https://adguard.com/
 
 ## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. You can see this by running:
+This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. Sie können dies prüfen, indem Sie den Befehl ausführen:
 
 ```sh
 sudo lsof -i :53
 ```
 
-The output should be similar to:
+Die Ausgabe sollte in etwa so aussehen:
 
 ```none
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -225,7 +225,7 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
    sudo mkdir -p /etc/systemd/resolved.conf.d
    ```
 
-2. Deactivate `DNSStubListener` and update DNS server address. To do that, create a new file, `/etc/systemd/resolved.conf.d/adguardhome.conf`, with the following content:
+2. Deaktivieren Sie `DNSStubListener` und aktualisieren Sie die DNS-Serveradresse. Dazu erstellen Sie eine neue Datei, `/etc/systemd/resolved.conf.d/adguardhome.conf`, mit dem folgenden Inhalt:
 
    ```service
    [Resolve]
@@ -235,14 +235,14 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
 
 Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
 
-1. Activate another `resolv.conf` file:
+1. Aktivieren Sie eine weitere Datei `resolv.conf`:
 
    ```sh
    sudo mv /etc/resolv.conf /etc/resolv.conf.backup
    sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
    ```
 
-2. Restart `DNSStubListener`:
+2. Starten Sie `DNSStubListener` neu:
 
    ```sh
    sudo systemctl reload-or-restart systemd-resolved
@@ -276,7 +276,7 @@ location /aghome/ {
 }
 ```
 
-Or, if you only want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
+Oder, wenn Sie AdGuard Home nur mit automatischem TLS ausliefern möchten, verwenden Sie eine Konfiguration ähnlich dem unten gezeigten Beispiel:
 
 ```none
 DOMAIN {
@@ -304,20 +304,20 @@ Verwenden Sie keine Unterverzeichnisse mit dem Apache Reverse-HTTP-Proxy.  Es is
 
 :::
 
-### Disable DoH encryption on AdGuard Home
+### Deaktivieren Sie die DoH-Verschlüsselung auf AdGuard Home
 
 If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
 
-### Real IP addresses of clients
+### Wahre IP-Adressen der Clients
 
-You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
+Sie können den Parameter `trusted_proxies` auf die IP-Adresse(n) Ihres HTTP-Proxys setzen, damit AdGuard Home die Header berücksichtigt, die die echte Client-IP-Adresse enthalten. Weitere Informationen finden Sie auf den Seiten [configuration][conf] und [encryption][encr].
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
 
-1. Move the `AdGuardHome` binary to `/usr/local/bin`.
+1. Verschieben Sie die Binärdatei `AdGuardHome` nach `/usr/local/bin`.
 
 2. As `root`, execute the following command to change the security context of the file:
 
@@ -385,24 +385,24 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
    :::note OpenBSD
 
-   On OpenBSD, you will probably want to use `doas` instead of `sudo`.
+   Unter OpenBSD werden Sie wahrscheinlich `doas` anstelle von `sudo` verwenden wollen.
 
    :::
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `~/my-agh-backup`:
+4. Sichern Sie Ihre Daten. Das heißt, Ihre Konfigurationsdatei und das Datenverzeichnis (standardmäßig `AdGuardHome.yaml` und `data/`). Zum Beispiel, um Ihre Daten in einen neuen Ordner namens `~/my-agh-backup` zu sichern:
 
    ```sh
    mkdir -p ~/my-agh-backup
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
 
    ```sh
    tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
-   On macOS, type something like:
+   Unter macOS geben Sie etwas ein wie:
 
    ```sh
    unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
@@ -436,7 +436,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 In allen folgenden Beispielen muss die PowerShell als Administrator ausgeführt werden.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. Wenn Sie diesen Schritt über die Befehlszeile ausführen möchten:
+1. Laden Sie das neue AdGuard Home-Paket von der [Release-Seite][Releases] herunter. Wenn Sie diesen Schritt über die Befehlszeile ausführen möchten:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -452,7 +452,7 @@ In allen folgenden Beispielen muss die PowerShell als Administrator ausgeführt 
    .\AdGuardHome.exe -s stop
    ```
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). Zum Beispiel, um Ihre Daten in einem neuen Ordner namens `my-agh-backup` zu sichern:
+4. Sichern Sie Ihre Daten. Das heißt, Ihre Konfigurationsdatei und das Datenverzeichnis (standardmäßig `AdGuardHome.yaml` und `data/`). Zum Beispiel, um Ihre Daten in einem neuen Ordner namens `my-agh-backup` zu sichern:
 
    ```ps1
    $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
@@ -460,7 +460,7 @@ In allen folgenden Beispielen muss die PowerShell als Administrator ausgeführt 
    Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. Wenn Sie das Archiv beispielsweise in den Ordner `Downloads` heruntergeladen haben und es in einen temporären Ordner entpacken möchten:
+5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. Wenn Sie das Archiv beispielsweise in den Ordner `Downloads` heruntergeladen haben und es in einen temporären Ordner entpacken möchten:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'

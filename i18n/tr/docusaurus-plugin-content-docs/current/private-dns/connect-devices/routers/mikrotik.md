@@ -5,7 +5,7 @@ sidebar_position: 6
 
 MikroTik yönlendiriciler, ev ve küçük ofis ağları için yönlendirme, kablosuz ağ ve güvenlik duvarı hizmetleri sağlayan açık kaynaklı RouterOS işletim sistemini kullanır.
 
-## Configure DNS-over-HTTPS
+## DNS-over-HTTPS'i yapılandır
 
 1. MikroTik yönlendiricinize erişin:
    - Web tarayıcınızı açın ve yönlendiricinizin IP adresine gidin (genellikle `192.168.88.1`)
@@ -43,7 +43,7 @@ MikroTik yönlendiriciler, ev ve küçük ofis ağları için yönlendirme, kabl
    - Tüm değişikliklerin etkili olması için MikroTik yönlendiricinizi yeniden başlatmanız gerekebilir
    - Tarayıcınızın DNS önbelleğini temizleyin. DNS isteklerinizin artık AdGuard üzerinden yönlendirilip yönlendirilmediğini kontrol etmek için [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) gibi bir araç kullanabilirsiniz
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

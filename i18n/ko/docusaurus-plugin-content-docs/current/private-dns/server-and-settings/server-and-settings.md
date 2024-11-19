@@ -23,5 +23,5 @@ For more information on traffic filtering and blocking rules, check out the arti
 
 If you're interested in specific settings, there are dedicated articles available for that:
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [고급 설정](/private-dns/server-and-settings/advanced.md)
+- [접근 설정](/private-dns/server-and-settings/access.md)

@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: 公司
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+此标签让用户快速查看哪些公司发送的请求最多，以及哪些公司的请求已拦截最多。
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![公司 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+公司网页分为两类：
 
-- **Top requested company**
-- **Top blocked company**
+- **热门被请求的公司**
+- **热门已拦截的公司**
 
-These are further divided into sub-categories:
+进一步分为子类别：
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **广告**：包含广告或与广告有关的请求，它们将收集和分享用户数据，分析用户行为，并投放广告。
+- **跟踪器**：来自网站和第三方的请求，目的是跟踪用户活动。
+- **社交网络**：向社交网络网站发送的请求。
+- **CDN**：请求连接到内容分发网络（CDN），这是一个全球的代理服务器网络，能够加速内容传递到用户。
+- **其他**
 
-### Top companies
+### 公司排行
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+在此表格中，我们不仅显示访问最多或已拦截公司的名称，还展示请求或已拦截的域名信息。
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)
+![公司列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
 
-## Configure DNS-over-HTTPS
+## DNS-over-HTTPS'i yapılandır
 
 1. Yönlendirici yönetici panelini açın. my.keenetic.net adresinden, yönlendiricinizin IP adresinden veya `192.168.1.1` adresinden erişilebilir.
 2. Ekranın altındaki menü düğmesine basın ve _Yönetim_ öğesini seçin.
@@ -29,7 +29,7 @@ Keenetic routers are known for their stability and flexible configurations, and 
 8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. _Kaydet_ öğesine tıklayın.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

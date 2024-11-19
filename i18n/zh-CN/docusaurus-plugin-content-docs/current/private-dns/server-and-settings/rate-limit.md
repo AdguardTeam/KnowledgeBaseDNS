@@ -1,23 +1,23 @@
 ---
-title: Rate limit
+title: "\b请求数量限制\b"
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+DNS 请求数量限制是指一种用于调节 DNS 服务器在特定时间周期内可以处理的流量的技术。
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+没有请求数量限制，DNS 服务器容易受到过载的影响，结果是用户可能会遇到减慢、干扰或服务完全停机等问题。 请求数量限制确保 DNS 服务器即使在流量繁重的情况下也能保持性能和正常运行时间。 请求限制还可以保护用户免受恶意活动的影响，例如 DoS 和 DDoS 攻击。
 
-## How does Rate limit work
+## 请求数量限制的工作原理
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+DNS 速率限制通常通过设置客户端（IP 地址）在特定周期内可以向 DNS 服务器发送的请求数量的阈值来工作。 如果用户在当前的 AdGuard DNS 请求数量限制上遇到问题，并且您使用的是「_团队_」或「_企业版_」，可以请求增加请求数量。
 
-## How to request DNS rate limit increase
+## 如何申请 DNS 请求数量增加
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+如果您订阅了 AdGuard DNS「_团队_」或「_企业版_」，可以申请增加请求数量。 请按照以下说明进行操作：
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+1. 进入 [DNS 仪表板](https://adguard-dns.io/dashboard/) →「_账号设置_」→「_请求数量限制_」
+2. 点击「_提升数量上限_」联系我们的客户支持团队并申请提高限额。 请提供 CIDR 和想要的数量限制。
 
-![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+![请求数量限制](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Your request will be reviewed within 1-3 working days. We will contact you about the changes by email
+1. 我们将在 1-3 个工作日内审查您的申请。 我们将通过电子邮箱与您联系。

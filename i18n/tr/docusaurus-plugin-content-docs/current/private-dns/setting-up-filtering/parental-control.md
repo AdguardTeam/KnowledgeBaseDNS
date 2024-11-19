@@ -3,7 +3,7 @@ title: Ebeveyn denetimi
 sidebar_position: 4
 ---
 
-## What is it
+## Bu nedir
 
 Ebeveyn denetimi, "hassas" içerik barındıran belirli sitelere erişimi özelleştirme esnekliği sağlayan bir dizi ayardır.  Bu özelliği çocuklarınızın yetişkin sitelerine erişimini kısıtlamak, arama sorgularını özelleştirmek, popüler hizmetlerin kullanımını engellemek ve daha fazlası için kullanabilirsiniz.
 

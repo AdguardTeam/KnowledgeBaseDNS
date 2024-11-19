@@ -20,13 +20,13 @@ Here are some general instructions for setting up Private AdGuard DNS on routers
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
+3. Find where DNS settings are located in the router's admin console. 나열된 DNS 주소를 다음 주소로 변경합니다:
    - IPv4: `94.140.14.49` 및 `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
 
-4. Save the settings.
+4. 설정을 저장합니다.
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

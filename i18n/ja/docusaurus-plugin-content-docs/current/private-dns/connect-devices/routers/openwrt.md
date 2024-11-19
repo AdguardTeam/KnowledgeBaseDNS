@@ -3,7 +3,7 @@ title: OpenWRT
 sidebar_position: 7
 ---
 
-OpenWRT routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. The developers took care to add support for encrypted DNS servers, allowing you to configure Private AdGuard DNS on your device.
+OpenWRTルーターは、オープンソースでLinuxベースのオペレーティングシステムを使用しています。このオペレーティングシステムはユーザーの好みに応じてルーターやゲートウェイを構成できる柔軟性を提供します。 開発者は暗号化DNSサーバーのサポートを追加しているので、デバイス上でプライベート AdGuard DNS を設定可能になっています。
 
 ## DNS-over-HTTPS を設定する
 

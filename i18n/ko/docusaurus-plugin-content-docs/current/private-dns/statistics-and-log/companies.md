@@ -14,13 +14,13 @@ The Companies page is divided into two categories:
 
 These are further divided into sub-categories:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **광고**: 사용자 데이터를 수집 및 공유하고 행동을 분석하며 광고를 타겟팅하는 광고 및 기타 광고 관련 요청
+- **추적기**: 사용자 활동을 추적하기 위해 웹사이트와 제3자에서 발생한 요청
+- **소셜 미디어**: 소셜 네트워크 웹사이트에 대한 요청
+- **CDN**: 최종 사용자에게 콘텐츠를 빠르게 전송하는 전 세계 프록시 서버 네트워크인 CDN(콘텐츠 전송 네트워크)에 연결된 요청
+- **기타**
 
-### Top companies
+### 상위 기업
 
 In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
 

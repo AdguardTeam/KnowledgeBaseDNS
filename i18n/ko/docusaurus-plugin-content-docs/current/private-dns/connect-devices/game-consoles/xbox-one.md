@@ -18,12 +18,12 @@ sidebar_position: 6
 3. In the _Settings_ menu, select _Network_.
 4. Under _Network Settings_, select _Advanced Settings_.
 5. Under _DNS Settings_, select _Manual_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+6. **DNS 서버** 필드에 다음 DNS 서버 주소 중 하나를 입력합니다:
    - `94.140.14.49`
    - `94.140.14.59`
-7. Save the changes.
+7. 변경 사항을 저장합니다.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+연결된 IP(또는 Team을 구독하는 경우 전용 IP)를 사용하는 것이 좋습니다:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

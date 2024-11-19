@@ -1,6 +1,6 @@
 ---
 title: 'Opdatering af Vidensbase'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 Målet med denne vidensbase er at give alle den mest opdaterede information om alle slags AdGuard DNS-relaterede emner. Tingene ændrer sig dog konstant, og nogle gange afspejler en artikel ikke længere tingenes aktuelle tilstand — der er simpelthen ikke så mange af os til at holder øje med hver eneste bit af information og opdaterer det i alle nye versionsudgivelser.

@@ -1,6 +1,6 @@
 ---
 title: 'Bilgi Tabanını güncelleme'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 Bu Bilgi Tabanının amacı, herkese AdGuard DNS ile ilgili her türlü konuda en güncel bilgileri sağlamaktır. Ancak işler sürekli değişiyor ve bazen bir makale artık mevcut durumu yansıtmıyor - her bir bilgiyi takip edecek ve yeni sürümler yayınlandığında buna göre güncelleyecek çok fazla kişi yok.

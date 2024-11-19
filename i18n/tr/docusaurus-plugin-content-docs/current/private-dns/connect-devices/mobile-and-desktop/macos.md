@@ -3,14 +3,14 @@ title: macOS
 sidebar_position: 4
 ---
 
-To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
+Bir macOS cihazını AdGuard DNS'e bağlamak için önce cihazı _Pano_ öğesine ekleyin:
 
 1. _Pano_ öğesine gidin ve _Yeni cihaz bağla_ öğesine tıklayın.
-2. In the drop-down menu _Device type_, select Mac.
+2. Açılır menüde _Cihaz türü_ olarak macOS öğesini seçin.
 3. Cihazı adlandırın.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
 AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek macOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
@@ -36,7 +36,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek macOS cihazın
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Use AdGuard VPN
+## AdGuard VPN'i kullanma
 
 Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
@@ -52,7 +52,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Bir yapılandırma profili kullanın
+## Yapılandırma profili kullanma
 
 A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 

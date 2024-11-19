@@ -473,7 +473,7 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 | DNS-over-HTTPS | `https://adblock.dns.mullvad.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
 | DNS-over-TLS   | `tls://adblock.dns.mullvad.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net)                         |
 
-#### Ad + malware blocking
+#### Reklam + kötü amaçlı yazılım engelleme
 
 | Protokol       | Adres                                    |                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1062,7 +1062,7 @@ Kayıt tutmaz | Reklamları, izleyicileri, kimlik avını, vb. filtreler | DNSSE
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server), AdGuard Home altyapısı kullanılarak Trondheim, Norveç'te barındırılan kişisel bir DNS hizmetidir.
 
-Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
+Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Günlük kaydı, kullanılan filtre listelerini iyileştirmek (örneğin, engellenmemesi gereken sitelerin engelini kaldırarak) ve sunucu sistemi güncellemeleri için en az kötü zamanları belirlemek için kullanılır.
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

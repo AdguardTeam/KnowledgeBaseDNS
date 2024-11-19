@@ -3,42 +3,42 @@ title: 家长控制
 sidebar_position: 4
 ---
 
-## What is it
+## 这是什么
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+家长控制是一组设置，允许用户灵活地定制对某些含有"敏感"内容的网站的访问权限。  用户可以使用此功能来限制儿童访问成人网站，定制查询，阻止使用热门服务等。
 
 ## 如何设置
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+用户可以在服务器上灵活配置所有功能，包括家长控制功能。 [在相应的文章中](private-dns/server-and-settings/server-and-settings.md)，可以了解 AdGuard DNS 中的“服务器”是什么，并学习如何创建具有不同设置的不同服务器。
 
-Then, go to the settings of the selected server and enable the required configurations.
+然后，进入所选服务器的设置，启用所需的配置。
 
-### Block adult websites
+### 拦截成人网站
 
-Blocks websites with inappropriate and adult content.
+拦截含有不适当和成人内容的网站。
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![已拦截的网站 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### 安全搜索
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+删除来自 Google、Bing、DuckDuckGo、Yandex、Pixabay、Brave 和 Ecosia 的不适当结果。
 
-![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+![安全搜索 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### YouTube 受限模式
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+删除在 YouTube 上查看和发布评论的选项，并限制与 18+ 内容的互动。
 
-![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![受限模式 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### 已阻止的服务及网站
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS 只需一键即可阻止访问热门服务。 例如，您不希望连接的设备访问 Instagram 和 YouTube。
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![已拦截的服务 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### 设置禁用时间
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+在指定日期和时间间隔内启用家长控制。 例如，在工作日，您允许孩子在 23:00 之前观看 YouTube 视频， 但在周末，没有时间限制。 可以根据您的喜好定制时间段，并在您希望的时间段内阻止访问指定的网站。
 
-![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+![定时 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

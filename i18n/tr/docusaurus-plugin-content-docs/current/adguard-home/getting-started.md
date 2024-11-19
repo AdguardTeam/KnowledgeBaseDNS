@@ -244,7 +244,7 @@ dns:
 
 Süper kullanıcı ayrıcalıkları gerektirmemek için bağlantı noktasını 1024'ün üzerinde herhangi bir değerle değiştirebilirsiniz.
 
-## Limitations {#limitations}
+## Kısıtlamalar {#limitations}
 
 Bazı dosya sistemleri, istatistik sisteminin gerektirdiği `mmap(2)` sistem çağrısını desteklemez. Ayrıca bkz. \[sorun 1188].
 

@@ -7,7 +7,7 @@ By configuring Access settings, you can protect your AdGuard DNS from unauthoriz
 
 Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
 
-## How to set it up
+## 설정 방법
 
 ### Allowed clients
 
@@ -15,18 +15,18 @@ This setting allows you to specify which clients can use your DNS server. It has
 
 ### Disallowed clients
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
 
-:::note Important
+:::note 중요
 
 Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
 
 :::
 
-### Disallowed domains
+### 차단된 도메인
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+여기에서 DNS 서버에 액세스를 거부할 도메인(와일드카드 및 DNS 필터링 규칙 포함)을 지정할 수 있습니다.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![접근 설정 \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-ko.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+쿼리 로그에 DNS 요청과 연결된 IP 주소를 표시하려면 **IP 주소 로그** 체크박스를 선택하세요. 이렇게 하려면 **서버 설정** → **고급 설정**을 열으세요.

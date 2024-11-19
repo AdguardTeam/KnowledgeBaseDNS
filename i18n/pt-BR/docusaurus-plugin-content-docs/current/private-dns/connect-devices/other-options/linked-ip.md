@@ -5,19 +5,17 @@ sidebar_position: 3
 
 ## O que são IPs vinculados e por que são úteis
 
-Nem todos os dispositivos suportam protocolos DNS criptografados. Neste caso, os usuários devem considerar configurar DNS não criptografado.
-
-Você pode usar um **endereço IP vinculado**: nesta configuração, o serviço considerará todas as consultas DNS padrão provenientes desse endereço IP e para aquele dispositivo específico. O único requisito para um endereço IP vinculado é que deve ser um IP residencial.
+Nem todos os dispositivos são compatíveis com protocolos DNS criptografados. Neste caso, você deve considerar configurar DNS não criptografado. Por exemplo, você pode usar um **endereço de IP**. O único requisito para um endereço IP vinculado é que deve ser um IP residencial.
 
 :::note
 
-Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. Normalmente, ele está vinculado a uma localização física e é dado a casas ou apartamentos individuais. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como navegar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
+Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. Normalmente, ele está vinculado a uma localização física e é designado a casas ou apartamentos individuais. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como procurar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
 
 :::
 
 Às vezes, um endereço IP residencial pode já estar em uso, e se você tentar se conectar a ele, o AdGuard DNS impedirá a conexão.
 ![Endereço IPv4 vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-Se isso acontecer, entre em contato com o suporte em [support@adguard-dns.io](mailto:support@adguard-dns.io), e eles o ajudarão com as configurações corretas.
+Se isso acontecer, entre em contato com o suporte via [support@adguard-dns.io](mailto:support@adguard-dns.io), e eles te ajudarão com as configurações corretas.
 
 ## Como configurar IP vinculado
 
@@ -29,9 +27,9 @@ As instruções a seguir explicam como se conectar ao dispositivo via **endereç
 4. Abra _Endereços de servidor DNS simples_ e conecte o IP vinculado.
    ![IP vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## DNS dinâmico: por que é útil?
+## DNS dinâmico: por que é útil
 
-Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP reatribui endereços IP para os dispositivos restantes. Isso significa que os endereços IP dinâmicos podem mudar com frequência e de forma imprevisível. Consequentemente, você precisará atualizar as configurações sempre que o dispositivo for reiniciado ou a rede mudar.
+Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP pode atribuir o endereço de IP liberado a outro dispositivo na rede. Isso significa que os endereços IP dinâmicos mudam com frequência e de forma imprevisível. Consequentemente, você precisará atualizar as configurações sempre que o dispositivo for reiniciado ou a rede mudar.
 
 Para manter automaticamente o endereço IP vinculado atualizado, você pode usar DNS. O AdGuard DNS verificará regularmente o endereço IP do seu domínio DDNS e o vinculará ao seu servidor.
 
@@ -41,7 +39,7 @@ DNS dinâmico (DDNS) é um serviço que atualiza automaticamente os registros DN
 
 :::
 
-Dessa forma, você não precisará atualizar manualmente o endereço IP associado toda vez que ele mudar.
+Dessa forma, você não precisará atualizar manualmente o endereço de IP associado toda vez que ele mudar.
 
 ## DNS dinâmico: como configurá-lo
 
@@ -49,7 +47,7 @@ Dessa forma, você não precisará atualizar manualmente o endereço IP associad
    - Vá para _Configurações do roteador_ → _Rede_
    - Localize a seção DDNS ou _DNS Dinâmico_
    - Navegue até ele e verifique se as configurações são realmente compatíveis. _Isso é apenas um exemplo. Pode variar dependendo do seu roteador_
-     ![DDNS compatível \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+     ![DDNS suportado \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 2. Registre seu domínio em um serviço popular como [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), ou qualquer outro provedor de DDNS que preferir.
 3. Insira o domínio nas configurações do seu roteador e sincronize as configurações.
 4. Vá para as configurações de IP vinculado para conectar o endereço, depois navegue até _Configurações Avançadas_ e clique em _Configurar DDNS_.

@@ -3,13 +3,13 @@ title: DNS-over-HTTPS with authentication
 sidebar_position: 4
 ---
 
-## Why it is useful
+## 왜 유용한가요?
 
 DNS-over-HTTPS with authentication allows you to set a username and password for accessing your chosen server.
 
 This helps prevent unauthorized users from accessing it and enhances security. Additionally, you can restrict the use of other protocols for specific profiles. This feature is particularly useful when your DNS server address is known to others. By adding a password, you can block access and ensure that only you can use it.
 
-## How to set it up
+## 설정 방법
 
 :::note Compatibility
 

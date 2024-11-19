@@ -21,7 +21,7 @@ Você pode saber mais sobre isso no [artigo relacionado](/dns-client/overview/).
 Você pode configurar o AdGuard DNS Privado usando a interface de linha de comando (CLI) do AdGuard VPN. Para começar a usar o AdGuard VPN CLI, você precisará usar o Terminal.
 
 1. Instale o AdGuard VPN CLI seguindo [estas instruções](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Acesse as [configurações](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
 3. Para configurar um servidor DNS específico, use o comando: `adguardvpn-cli config set-dns <server_address>`, onde `<server_address>` é o endereço do seu servidor privado.
 4. Ative as configurações de DNS inserindo `adguardvpn-cli config set-system-dns on`.
 

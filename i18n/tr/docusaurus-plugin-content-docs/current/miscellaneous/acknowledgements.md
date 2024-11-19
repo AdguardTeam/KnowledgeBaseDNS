@@ -1,6 +1,6 @@
 ---
 title: Emeği Geçenler ve Katkıda Bulunanlar
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 Geliştirme ekibimiz, AdGuard DNSde kullandığımız üçüncü taraf yazılımın geliştiricilerine, harika beta test kullanıcılarımıza, tüm hataları bulma ve ortadan kaldırma, AdGuard DNS'i çevirme ve topluluklarımızı denetleme konusundaki yardımları paha biçilemez olan diğer ilgili kullanıcılarımıza teşekkür etmek istiyor.

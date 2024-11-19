@@ -25,12 +25,12 @@ Applies to New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 
 4. Select _DNS_ → _Set Up_.
 5. Set _Auto-Obtain DNS_ to _No_.
 6. Select _Detailed Setup_ → _Primary DNS_. Hold down the left arrow to delete the existing DNS.
-7. In the _DNS Server_ field, enter one of the following DNS server addresses:
+7. **DNS 서버** 필드에 다음 DNS 서버 주소 중 하나를 입력합니다:
    - `94.140.14.49`
    - `94.140.14.59`
-8. Save the settings.
+8. 설정을 저장합니다.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+연결된 IP(또는 Team을 구독하는 경우 전용 IP)를 사용하는 것이 좋습니다:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -1,13 +1,13 @@
 ---
-title: Statistics and Query log
+title: 통계와 쿼리 로그
 sidebar_position: 1
 ---
 
-One of the purposes of using AdGuard DNS is to have a clear understanding of what your devices are doing and what they are connecting to. Without this clarity, there's no way to monitor the activity of your devices.
+AdGuard DNS를 사용하는 목적 중 하나는 기기의 활동과 연결 대상을 명확하게 파악하는 것입니다. 이 도구가 없으면 기기의 활동을 모니터링할 수 없습니다.
 
-AdGuard DNS provides a wide range of useful tools for monitoring queries:
+AdGuard DNS는 쿼리를 모니터링하기 위한 다양한 유용한 도구를 제공합니다:
 
-- [Statistics](/private-dns/statistics-and-log/statistics.md)
-- [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
-- [Companies](/private-dns/statistics-and-log/companies.md)
-- [Query log](/private-dns/statistics-and-log/query-log.md)
+- [통계](/private-dns/statistics-and-log/statistics.md)
+- [트래픽 목적지](/private-dns/statistics-and-log/traffic-destination.md)
+- [기업](/private-dns/statistics-and-log/companies.md)
+- [쿼리 로그](/private-dns/statistics-and-log/query-log.md)

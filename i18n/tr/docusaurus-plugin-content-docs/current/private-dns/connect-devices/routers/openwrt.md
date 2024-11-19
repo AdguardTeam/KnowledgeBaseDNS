@@ -5,7 +5,7 @@ sidebar_position: 7
 
 OpenWRT yönlendiriciler, yönlendiricileri ve ağ geçitlerini kullanıcı tercihlerine göre yapılandırma esnekliği sağlayan açık kaynaklı, Linux tabanlı bir işletim sistemi kullanır. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
 
-## Configure DNS-over-HTTPS
+## DNS-over-HTTPS'i yapılandır
 
 - **Komut satırı talimatları**. Gerekli paketleri yükleyin. DNS şifrelemesi otomatik olarak etkinleştirilmelidir.
 
@@ -74,7 +74,7 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
   13. /etc/init.d/unbound restart
   ```
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

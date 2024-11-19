@@ -1,27 +1,27 @@
 ---
-title: Server and settings
+title: 服务器和设置
 sidebar_position: 1
 ---
 
-## What is server and how to use it
+## 什么是服务器及其使用方法
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+设置私人 AdGuard DNS 时，您将遇到「服务器」这个词。
 
-A server acts as the “profile” that you connect your devices to.
+服务器就像是一个“描述文件”，用户将设备连接至其中。
 
-Servers include configurations that you can customize to your liking.
+服务器包含用户可以根据自己的喜好自定义的配置。
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+创建账号时，我们会自动创建一个带有默认设置的服务器。 用户可以选择修改此服务器或创建一个新的服务器。
 
-For instance, you can have:
+例如，您可以拥有：
 
-- A server that allows all requests
-- A server that blocks adult content and certain services
-- A server that blocks adult content only during specific hours you choose
+- 一个允许所有请求的服务器
+- 一个拦截成人内容和某些服务的服务器
+- 一个仅在您选择的特定时段内拦截成人内容的服务器
 
-For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+有关流量过滤和拦截规则的更多信息，请查看相应的文章：[如何在 AdGuard DNS 中设置过滤](/private-dns/setting-up-filtering/blocklists.md)。
 
-If you're interested in specific settings, there are dedicated articles available for that:
+如果您对特定设置感兴趣，有专门的文章供您参考：
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [高级设置](/private-dns/server-and-settings/advanced.md)
+- [访问设置](/private-dns/server-and-settings/access.md)

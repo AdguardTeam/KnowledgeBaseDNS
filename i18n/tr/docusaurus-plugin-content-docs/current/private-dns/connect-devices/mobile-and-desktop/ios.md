@@ -10,7 +10,7 @@ Bir iOS cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine ekle
 3. Cihazı adlandırın.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
 AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
@@ -33,7 +33,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazını
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Use AdGuard VPN
+## AdGuard VPN'i kullanma
 
 Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
@@ -57,7 +57,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Bir yapılandırma profili kullanın
+## Yapılandırma profili kullanma
 
 An iOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
@@ -76,7 +76,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
 ## Configure plain DNS
 
-If you prefer not to use extra software to configure DNS, you can opt for unencrypted DNS. İki seçenek var: bağlı IP'ler veya özel IP'ler kullanmak.
+DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçenek var: bağlı IP'ler veya özel IP'ler kullanmak.
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
