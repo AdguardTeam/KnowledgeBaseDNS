@@ -47,33 +47,33 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어 Android 기
    ![앱 설정 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
 5. **DNS 서버**를 선택합니다.
    ![DNS 서버 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
-6. Scroll down and tap _Add a custom DNS server_.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS servers adresses_ field in the app. If you are not sure which one to use, select DNS-over-HTTPS.
+6. 아래로 스크롤하여 **사용자 정의 DNS 서버 추가**를 탭합니다.
+   ![DNS 서버 추가 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
+7. 다음 DNS 주소 중 하나를 복사하여 앱의 **DNS 서버 주소** 필드에 붙여넣습니다. If you are not sure which one to use, select DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
-   ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
+   ![사용자 정의 DNS 서버 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. **저장 및 선택**을 탭합니다.
-   ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+   ![DNS 서버 추가 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
+9. 추가한 DNS 서버는 **사용자 정의 DNS 서버** 목록 하단에 표시됩니다.
 
-All done! Your device is successfully connected to AdGuard DNS.
+기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 
-## Configure Private DNS manually
+## 수동으로 개인 DNS 구성
 
-You can configure your DNS server in your device settings. Please note that Android devices only support DNS-over-TLS protocol.
+기기 설정에서 DNS 서버를 구성할 수 있습니다. Android 기기는 DNS-over-TLS 프로토콜만 지원합니다.
 
-1. Go to _Settings_ → _Wi-Fi & Internet_ (or _Network and Internet_, depending on your OS version).
-   ![Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
-2. Select _Advanced_ and tap _Private DNS_.
-   ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
-3. Select the _Private DNS provider hostname_ option and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`.
+1. **설정** → **Wi-Fi 및 인터넷**(또는 OS 버전에 따라 **네트워크 및 인터넷**)으로 이동합니다.
+   ![설정 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
+2. **고급**을 선택하고 **개인 DNS**를 탭합니다.
+   ![개인 DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
+3. **개인 DNS 제공자 호스트 이름** 옵션을 선택하고 개인 서버 주소를 입력하세요: `{Your_Device_ID}.d.adguard-dns.com`.
 4. **저장**을 누릅니다.
-   ![Private DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   All done! Your device is successfully connected to AdGuard DNS.
+   ![개인 DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
+   모두 완료되었습니다! AdGuard DNS에 성공적으로 연결되었습니다!
 
 ## 평문 DNS 구성
 
-DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. You have two choices: using linked IPs or dedicated IPs.
+DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. 연결된 IP 또는 전용 IP를 사용할 수 있습니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

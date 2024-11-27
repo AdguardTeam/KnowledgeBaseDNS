@@ -1,9 +1,9 @@
 ---
-title: Linked IPs
+title: 연결된 IP
 sidebar_position: 3
 ---
 
-## What linked IPs are and why they are useful
+## 연결된 IP란 무엇이며 왜 유용한가요?
 
 Not all devices support encrypted DNS protocols. In this case, you should consider setting up unencrypted DNS. For example, you can use a **linked IP address**. The only requirement for a linked IP address is that it must be a residential IP.
 
@@ -67,9 +67,9 @@ The easiest way is to use the Task Scheduler:
    - Create a new task.
    - Set the trigger to run every 5 minutes.
    - Select _Run Program_ as the action.
-2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
+2. 프로그램을 선택합니다.
+   - **프로그램 또는 스크립트** 필드에 \`powershell'을 입력합니다.
+   - **인수 추가** 필드에 다음을 입력합니다.
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Save the task.
 

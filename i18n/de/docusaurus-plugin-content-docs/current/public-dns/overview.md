@@ -45,4 +45,4 @@ Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` u
 
 ### Ratenbegrenzung
 
-DNS-Datenstrombegrenzung ist eine Technik, mit der die Menge des Datenverkehrs, die ein DNS-Server innerhalb eines bestimmten Zeitraums bewältigen kann, geregelt wird. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. Für weitere Informationen lesen Sie bitte [den entsprechenden Artikel](/private-dns/server-and-settings/rate-limit.md).
+DNS-Datenstrombegrenzung ist eine Technik, mit der die Menge des Datenverkehrs, die ein DNS-Server innerhalb eines bestimmten Zeitraums bewältigen kann, geregelt wird. Wir bieten die Möglichkeit, das Standardlimit für Team- und Enterprise-Pakete von Private AdGuard DNS zu erhöhen. Für weitere Informationen lesen Sie bitte [den entsprechenden Artikel](/private-dns/server-and-settings/rate-limit.md).

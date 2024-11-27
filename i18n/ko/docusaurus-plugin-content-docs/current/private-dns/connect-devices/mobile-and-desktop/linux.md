@@ -59,10 +59,10 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 8. 문서를 저장하려면 **Ctrl + X**를 누릅니다.
 9. 명령줄에 `/etc/init.d/networking restart`를 입력합니다.
 10. **Enter**를 누릅니다.
-11. Close the Terminal.
+11. _Enter_를 누릅니다.
 12. IP 주소(또는 Team을 구독하는 경우 전용 IP)를 연결합니다.
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -107,4 +107,4 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. You have two choices: using linked IPs or dedicated IPs:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

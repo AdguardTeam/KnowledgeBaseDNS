@@ -32,11 +32,11 @@ toc_max_heading_level: 3
 
 ## v1.7
 
-_Released on March 11, 2024_
+**2024년 3월 11일에 출시됨**
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
+- 전용 IPv4 주소 기능이 추가되었습니다:
+  - 전용 IPv4 주소는 이제 DNS 서버 구성에 대해 기기에서 사용할 수 있습니다.
+  - 전용 IPv4 주소는 이제 연결된 기기에 연결되어 있어, 해당 주소에 대한 쿼리는 그 기기에 대해 기록됩니다.
 - Added new operations:
   - 사용 가능한 모든 전용 IPv4 주소 목록
   - 새 전용 IPv4 주소 할당
@@ -146,18 +146,18 @@ to:
 
 ## v1.1
 
-_Released on July 7, 2022_
+**2022년 7월 7일에 출시됨**
 
-- Added methods to retrieve statistics by time, domains, companies and devices
-- Added method for updating device settings
-- Fixed required fields definition
+- 도메인, 회사 및 기기에 대한 통계를 검색하는 방법 추가
+- 기기 설정을 업데이트하는 방법 추가
+- 필수 필드 정의 수정
 
 ## v1.0
 
-_Released on February 22, 2022_
+**2022년 2월 22일에 출시됨**
 
-- Added authentication
-- CRUD operations with devices and DNS servers
-- Query log
-- Downloading DoH and DoT .mobileconfig
-- Filter lists and web services
+- 인증 추가
+- 기기 및 DNS 서버와의 CRUD 작업
+- 쿼리 로그
+- DoH 및 DoT .mobileconfig 다운로드
+- 필터 목록 및 웹 서비스

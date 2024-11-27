@@ -197,9 +197,9 @@ DNS wird dafür niemals ausreichen. Ihre einzige Möglichkeit ist die Verwendung
 
 [adguard]: https://adguard.com/
 
-## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
+## Warum erhalte ich beim Installationsversuch auf Ubuntu die Fehlermeldung `bind: address already in use`? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. Sie können dies prüfen, indem Sie den Befehl ausführen:
+Dies geschieht, weil der Port 53 auf `localhost`, der für DNS verwendet wird, bereits von einem anderen Programm belegt ist. Ubuntu wird mit einem lokalen DNS namens `systemd-resolved` ausgeliefert, der die Adresse `127.0.0.53:53` verwendet und somit verhindert, dass sich AdGuard Home an `127.0.0.1:53` binden kann. Sie können dies prüfen, indem Sie den Befehl ausführen:
 
 ```sh
 sudo lsof -i :53
@@ -213,13 +213,13 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind your AdGuard Home to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+Um dies zu beheben, müssen Sie entweder den Daemon `systemd-resolved` deaktivieren oder eine andere Netzwerkschnittstelle wählen und Ihren AdGuard Home an eine erreichbare IP-Adresse binden, z.B. an die IP-Adresse Ihres Routers innerhalb Ihres Netzwerks. Wenn Sie jedoch auf `localhost` lauschen müssen, gibt es mehrere Lösungen.
 
-Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the _Fix_ button located next to the `address already in use` message on the installation screen.
+Erstens kann AdGuard Home solche Konfigurationen erkennen und `systemd-resolved` für Sie deaktivieren, wenn Sie auf dem Installationsbildschirm die Schaltfläche _Fix_ neben der Meldung `address already in use` drücken.
 
-Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
+Sollte das nicht funktionieren, befolgen Sie bitte die nachstehenden Anweisungen. Beachten Sie, dass Sie dies selbst tun müssen, wenn Sie AdGuard Home mit Docker oder Snap verwenden.
 
-1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
+1. Erstellen Sie den Ordner `/etc/systemd/resolved.conf.d`, falls erforderlich:
 
    ```sh
    sudo mkdir -p /etc/systemd/resolved.conf.d
@@ -233,7 +233,7 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
    DNSStubListener=no
    ```
 
-Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
+Die Angabe von `127.0.0.1` als DNS-Server-Adresse ist **notwendig.** Andernfalls wird der Nameserver `127.0.0.53` sein, was ohne `DNSStubListener` nicht funktionieren wird.
 
 1. Aktivieren Sie eine weitere Datei `resolv.conf`:
 
@@ -248,11 +248,11 @@ Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the
    sudo systemctl reload-or-restart systemd-resolved
    ```
 
-After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
+Danach sollte `systemd-resolved` in der Ausgabe von `lsof` nicht mehr angezeigt werden, und AdGuard Home sollte sich an `127.0.0.1:53` binden können.
 
-## How do I configure a reverse proxy server for AdGuard Home? {#reverseproxy}
+## Wie kann ein Reverse-Proxy-Server für AdGuard Home konfiguriert werden? {#reverseproxy}
 
-If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
+Wenn Sie bereits einen Webserver betreiben und auf das AdGuard Home-Benutzeroberfläche von einer URL wie `http://YOUR_SERVER/aghome/` zugreifen möchten, können Sie diese Konfiguration für Ihren Webserver verwenden:
 
 ### nginx
 
@@ -306,7 +306,7 @@ Verwenden Sie keine Unterverzeichnisse mit dem Apache Reverse-HTTP-Proxy.  Es is
 
 ### Deaktivieren Sie die DoH-Verschlüsselung auf AdGuard Home
 
-If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
+Wenn Sie TLS auf Ihrem Reverse-Proxy-Server verwenden, müssen Sie TLS nicht auf AdGuard Home verwenden. Setzen Sie `allow_unencrypted_doh: true` in `AdGuardHome.yaml`, damit AdGuard Home auf DoH-Anfragen ohne TLS-Verschlüsselung antworten kann.
 
 ### Wahre IP-Adressen der Clients
 
@@ -315,17 +315,17 @@ Sie können den Parameter `trusted_proxies` auf die IP-Adresse(n) Ihres HTTP-Pro
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## How do I fix `permission denied` errors on Fedora? {#fedora}
+## Wie kann der Fehler `permission denied` unter Fedora behoben werden? {#fedora}
 
 1. Verschieben Sie die Binärdatei `AdGuardHome` nach `/usr/local/bin`.
 
-2. As `root`, execute the following command to change the security context of the file:
+2. Führen Sie als `root` den folgenden Befehl aus, um den Sicherheitskontext der Datei zu ändern:
 
    ```sh
    chcon -t bin_t /usr/local/bin/AdGuardHome
    ```
 
-3. Add the required firewall rules in order to make it reachable through the network. Zum Beispiel:
+3. Fügen Sie die erforderlichen Firewall-Regeln hinzu, um die Erreichbarkeit über das Netzwerk zu gewährleisten. Zum Beispiel:
 
    ```sh
    firewall-cmd --new-zone=adguard --permanent
@@ -336,7 +336,7 @@ Sie können den Parameter `trusted_proxies` auf die IP-Adresse(n) Ihres HTTP-Pro
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
+Wenn Sie noch immer `code=exited status=203/EXEC` oder ähnliche Fehler von `systemctl` erhalten, versuchen Sie, AdGuard Home zu deinstallieren und es **direkt** in `/usr/local/bin` zu installieren, indem Sie die Option `-o` des Installationsskripts verwenden:
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
@@ -347,35 +347,35 @@ Siehe \[Problem 765] und \[Problem 3281].
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
-## How do I fix `incompatible file system` errors? {#incompatfs}
+## Wie kann der Fehler `incompatible file system` behoben werden? {#incompatfs}
 
-You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+Sie sollten Ihr AdGuard Home Installations- oder Arbeitsverzeichnis an einen anderen Ort verschieben. Siehe den Abschnitt [Einschränkungen](getting-started.md#limitations) auf der Seite _Erste Schritte_.
 
 ## Was bedeutet „Fehler: control/version.json“? {#version-error}
 
-Diese Fehlermeldung bedeutet, dass AdGuard Home die AdGuard-Server nicht erreichen konnte, um nach Aktualisierungen zu suchen und/oder diese herunterzuladen. Dies könnte bedeuten, dass die Server von Ihrem Internetanbieter gesperrt werden oder vorübergehend nicht erreichbar sind. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+Diese Fehlermeldung bedeutet, dass AdGuard Home die AdGuard-Server nicht erreichen konnte, um nach Aktualisierungen zu suchen und/oder diese herunterzuladen. Dies könnte bedeuten, dass die Server von Ihrem Internetanbieter gesperrt werden oder vorübergehend nicht erreichbar sind. Wenn sich der Fehler nach einiger Zeit nicht behoben ist, können Sie versuchen, ein [manuelles Update](#manual-update) durchzuführen oder die automatische Update-Prüfung zu deaktivieren, indem Sie die ausführbare Datei `AdGuardHome` mit der Befehlszeilenoption `--no-check-update` ausführen.
 
-## How do I update AdGuard Home manually? {#manual-update}
+## Wie kann AdGuard Home manuell aktualisiert werden? {#manual-update}
 
-If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
+Wenn die Schaltfläche nicht angezeigt wird oder eine automatische Aktualisierung fehlgeschlagen ist, können Sie AdGuard Home manuell aktualisieren. In den folgenden Beispielen verwenden wir die Versionen für Linux und Windows für AMD64 CPUs.
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
+1. Laden Sie das neue AdGuard Home-Paket von der [Release-Seite][Releases] herunter. Wenn Sie diesen Schritt über die Befehlszeile ausführen möchten, geben Sie folgenden Befehl ein:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-   Or, with `wget`:
+   Oder mit `wget`:
 
    ```sh
    wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
+2. Wechseln Sie in den Ordner, in dem AdGuard Home installiert ist. Auf den meisten Unix-Systemen ist das Standardverzeichnis `/opt/AdGuardHome`, aber unter macOS ist es `/Applications/AdGuardHome`.
 
 3. Beenden Sie AdGuard Home:
 
@@ -396,7 +396,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. Wenn Sie zum Beispiel das Archiv in den Ordner `~/Downloads` heruntergeladen haben und es nach `/tmp/` entpacken wollen:
 
    ```sh
    tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
