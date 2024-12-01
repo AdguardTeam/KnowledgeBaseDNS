@@ -19,7 +19,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
 7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
 8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
+   - `94.140.14.49` 및 `94.140.14.59`
 9. For _TLS Port_, enter 853.
 10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -39,4 +39,4 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 8. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

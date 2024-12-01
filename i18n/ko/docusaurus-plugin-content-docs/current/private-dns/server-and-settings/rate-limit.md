@@ -1,9 +1,9 @@
 ---
-title: Rate limit
+title: 요청 한도
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+DNS 요청 제한은 DNS 서버가 특정 시간대에 처리할 수 있는 트래픽 양을 제어하는 데 사용되는 방법입니다.
 
 Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
 

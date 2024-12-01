@@ -1,46 +1,46 @@
 ---
-title: Structured DNS Errors (SDE)
+title: "構造化DNSエラー (SDE: Structured DNS Errors)"
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
+AdGuard DNS v2.10 のリリースで、AdGuardは[RFC 8914](https://datatracker.ietf.org/doc/rfc8914/)の更新版である[**構造化DNSエラー** (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)のサポートを実装した世界初のパブリックDNSリゾルバーとなりました。 この機能のおかげで、DNS サーバーは、一般的なブラウザメッセージに頼るのではなく、ブロックされた Web サイトに関する詳細情報を DNS 応答で直接表示できるようになります。 この記事では、**構造化DNSエラー**とは何か、そしてどのように機能するかを説明します。
 
-## What Structured DNS Errors are
+## 構造化DNSエラー（Structured DNS Errors）とは
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+広告ドメインやトラッキングドメインへのリクエストがブロックされると、ユーザーにはウェブサイト上に空白スペースが表示されたり、またはDNSフィルタリングが行われたことに全く気づかなかったりします。 しかし、ウェブサイト全体がDNSレベルでブロックされると、ユーザーはそのページにまったくアクセスできなくなります。 ブロックされたウェブサイトにアクセスしようとすると、ブラウザーから「このサイトにアクセスできません」という一般的なエラーが表示されることがよくあります。
 
 !["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don't explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
+このようなエラーでは、何が起こったのか、なぜ起こったのかが説明されていません。 結果として、ユーザーはウェブサイトにアクセスできない理由について混乱し、インターネット接続または DNS リゾルバが壊れていると考えてしまうこともよくあります。
 
-To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
+このようなシチュエーションで混乱を減らすよう、DNSサーバーはユーザーを独自の説明付きページにリダイレクトすることができますが、 HTTPS ウェブサイト (多くのウェブサイトはHTTPSを使用) には別の証明書が必要になるという難点が出てきます。
 
 ![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
 
-There’s a simpler solution: [Structured DNS Errors (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). The concept of SDE builds on the foundation of [_Extended DNS Errors_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), which introduced the ability to include additional error information in DNS responses. The SDE draft takes this a step further by using [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (a restricted profile of JSON) to format the information in a way that browsers and client applications can easily parse.
+そこで、[構造化DNSエラー（SDE: Structured DNS Errors）](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)というもっと簡単な解決策があります。 SDE の概念は、[_拡張DNSエラー_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/) をベースに構築されており、後者においてはDNS応答に追加のエラー情報を含める機能が導入されました。 構造化DNSエラー（SDE）のドラフトは、[I-JSON](https://www.rfc-editor.org/rfc/rfc7493)(JSONの制限付きプロファイル)を用いて、ブラウザやクライアントアプリケーションが簡単に解析できる方法で情報をフォーマットすることで、この機能をさらに一歩進化させています。
 
-The SDE data is included in the `EXTRA-TEXT` field of the DNS response. It contains:
+SDEのデータはI-JSONファイルの形で、DNS応答の`EXTRA-TEXT` フィールドに含まれます。 データには以下の内容が含まれます:
 
-- `j` (justification): Reason for blocking
-- `c` (contact): Contact information for inquiries if the page was blocked by mistake
-- `o` (organization): Organization responsible for DNS filtering in this case (optional)
-- `s` (suberror): The suberror code for this particular DNS filtering (optional)
+- `j` (justification＝正当化): ブロックの理由
+- `c` (contact＝連絡先): ページが誤ブロックされた場合の問い合わせ先
+- `o` (organization＝組織): このケースに対してDNSフィルタリングを担当する組織 (任意)
+- `s` (suberror＝サブエラー): この場合のDNSフィルタリングに対するサブエラーコード (任意)
 
-Such a system enhances transparency between DNS services and users.
+このような仕組みにより、DNSサービスとユーザー間の透明性が向上します。
 
-### What is required to implement Structured DNS Errors
+### 構造化DNSエラー（SDE）の実装に必要なもの
 
-Although AdGuard DNS has implemented support for Structured DNS Errors, browsers currently do not natively support parsing and displaying SDE data. For users to see detailed explanations in their browsers when a website is blocked, browser developers need to adopt and support the SDE draft specification.
+AdGuard DNS は構造化DNSエラーのサポートをすでに実装していますが、ブラウザらは現在、SDEデータの解析と表示をネイティブにサポートしていません。 サイトがブロックされたときにブラウザでユーザーに詳細な説明が表示されるようになるには、それぞれのブラウザの開発者がSDEドラフト仕様を採用し、対応させる必要があります。
 
-### AdGuard DNS demo extension for SDE
+### SDEを体験できる AdGuard DNS デモ拡張機能
 
-To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how _Structured DNS Errors_ could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
+構造化DNSエラー（Structured DNS Errors）がどのように機能するかを紹介するために、AdGuard DNS は、ブラウザが構造化DNSエラーをサポートした場合にどのように機能するかを試せるデモブラウザ拡張機能を開発しました。 この拡張機能を有効にした状態で AdGuard DNS によってブロックされたWebサイトにアクセスしようとすると、ブロックの理由、連絡先の詳細、担当組織など、構造化DNSエラー（Structured DNS Errors）を介して提供される情報記載の説明ページが表示されます。
 
 ![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
-You can install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) or from [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
+拡張機能は[Chromeウェブストア](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen)または[GitHub](https://github.com/AdguardTeam/dns-sde-extension/)からインストールできます。
 
-If you want to see what it looks like at the DNS level, you can use the `dig` command and look for `EDE` in the output.
+DNSレベルでSDEの動作がどのように見えるかを確認したい場合は、`dig`コマンドを使い、出力で`EDE`を探します。
 
 ```text
 % dig @94.140.14.14 'ad.doubleclick.net' A IN +ednsopt=15:0000

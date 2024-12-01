@@ -714,7 +714,7 @@ EDNS Client Subnet ist eine Methode, die Komponenten von Endbenutzer-IP-Adressda
 
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) ist ein kostenloser DNS-Dienst, der im Vergleich zu Alternativen eine verbesserte DNS-Stabilität und Sicherheit bietet. Verisign respects users' privacy: they neither sell public DNS data to third parties nor redirect users' queries to serve them ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) ist ein kostenloser DNS-Dienst, der im Vergleich zu Alternativen eine verbesserte DNS-Stabilität und Sicherheit bietet. Verisign respektiert die Privatsphäre der Nutzer: Das Unternehmen verkauft weder öffentliche DNS-Daten an Dritte noch leitet es die Anfragen der Nutzer um, um ihnen Werbung anzuzeigen.
 
 | Protokoll | Adresse                                 |                                                                                                                                                                     |
 | --------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -723,7 +723,7 @@ EDNS Client Subnet ist eine Methode, die Komponenten von Endbenutzer-IP-Adressda
 
 ### Wikimedia DNS
 
-[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) is a caching, recursive, public DoH and DoT resolver service that is run and managed by the Site Reliability Engineering (Traffic) team at the Wikimedia Foundation on all six Wikimedia data centers with anycast.
+[Wikimedia DNS](https://meta.wikimedia.org/wiki/Wikimedia_DNS) ist ein zwischenspeichernder, rekursiver, öffentlicher DoH- und DoT-Auflösungsdienst, der vom Site Reliability Engineering (Traffic)-Team der Wikimedia Foundation in allen sechs Wikimedia-Rechenzentren mit Anycast betrieben und verwaltet wird.
 
 | Protokoll      | Adresse                                                                        |                                                                                                                                                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -732,7 +732,7 @@ EDNS Client Subnet ist eine Methode, die Komponenten von Endbenutzer-IP-Adressda
 
 ## **Regionale Resolver**
 
-Regional DNS resolvers are typically focused on specific geographic regions, offering optimized performance for users in those areas. Diese Resolver werden oft von gemeinnützigen Organisationen, lokalen ISPs oder anderen Einrichtungen bereitgestellt.
+Regionale DNS-Resolver sind in der Regel auf bestimmte geografische Regionen ausgerichtet und bieten eine optimierte Leistung für Benutzer in diesen Gebieten. Diese Resolver werden oft von gemeinnützigen Organisationen, lokalen ISPs oder anderen Einrichtungen bereitgestellt.
 
 ### Applied Privacy DNS
 
@@ -779,7 +779,7 @@ Im Modus „Protected” gibt's Schutz vor Malware und Phishing.
 
 #### Familie
 
-In "Family" mode, Protected + blocking adult content.
+Im Modus „Family“, Protected und Sperren von Inhalten für Erwachsene.
 
 | Protokoll                     | Adresse                                                                                            |                                                                                                                                                                                                                                                                                               |
 | ----------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -811,7 +811,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### Digitale Gesellschaft DNS
 
-[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/) is a public resolver operated by the Digital Society. Standort ist Zürich, Schweiz.
+Die „[Digitale Gesellschaft](https://www.digitale-gesellschaft.ch/dns/)“ ist ein öffentlicher Auflösungsdienst, der von der Digitalen Gesellschaft betrieben wird. Standort ist Zürich, Schweiz.
 
 | Protokoll      | Adresse                                                                                        |                                                                                                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -820,7 +820,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### DNS for Family
 
-[DNS for Family](https://dnsforfamily.com/) zielt darauf ab, Websites für Erwachsene zu sperren. It enables children and adults to surf the Internet safely without worrying about being tracked by malicious websites.
+[DNS for Family](https://dnsforfamily.com/) zielt darauf ab, Websites für Erwachsene zu sperren. Sie ermöglicht es Kindern und Erwachsenen, sicher im Internet zu surfen, ohne sich Sorgen machen zu müssen, von bösartigen Websites verfolgt zu werden.
 
 | Protokoll      | Adresse                                                    |                                                                                                                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -901,7 +901,7 @@ Diese Server sperren Websites mit nicht jugendfreien und unangemessenen Inhalten
 
 ### OneDNS
 
-[**OneDNS**](https://www.onedns.net/) is a secure, fast, free niche DNS service with malicious domains blocking facility.
+[**OneDNS**](https://www.onedns.net/) ist ein sicherer, schneller, kostenloser Nischen-DNS-Dienst mit der Möglichkeit, bösartige Domains zu sperren.
 
 #### Pure Edition
 
@@ -939,7 +939,7 @@ Dies ist nur einer der verfügbaren Server, die vollständige Liste finden Sie [
 
 ### SkyDNS RU
 
-[SkyDNS](https://www.skydns.ru/en/) solutions for content filtering and internet security.
+[SkyDNS](https://www.skydns.ru/en/)-Lösungen für Inhaltsfilterung und Internetsicherheit.
 
 | Protokoll | Adresse          |                                                                                                                                                                   |
 | --------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1002,7 +1002,7 @@ Im Modus „Sicher” ist ein Schutz vor infizierten und betrügerischen Website
 
 #### Familie
 
-In "Family" mode, protection from infected, fraudulent and adult sites is provided.
+Im Modus „Familie” wird Schutz vor infizierten, betrügerischen und nicht jugendfreien Websites geboten.
 
 | Protokoll      | Adresse                                           |                                                                                                                                                                                                                                                               |
 | -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1019,9 +1019,9 @@ Wir werden nicht in der Lage sein, ihre Verfügbarkeit angemessen zu überwachen
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
+[AhaDNS](https://ahadns.com/) ist ein von Fredrik Pettersson angebotener DNS-Dienst ohne Protokollierung und mit Werbeblockern.
 
-#### Netherlands
+#### Niederlande
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                                               |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1075,7 +1075,7 @@ Sperrt mehr Werbung und Malware als AdGuard DNS dank einer fortgeschritteneren S
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) ist ein redundanter DNS-Auflösungsdienst mit einem Werbeblocker und ohne Protokollierung, der von [adminforge](https://adminforge.de/) bereitgestellt wird.
 
 | Protokoll      | Adresse                                               |                                                                                                                                                                                                                       |
 | -------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1095,7 +1095,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
+[FFMUC](https://ffmuc.net/) bietet kostenlose DNS-Server, die von „Freifunk München“ bereitgestellt werden.
 
 | Protokoll            | Adresse                                                                |                                                                                                                                                                                                                               |
 | -------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1106,7 +1106,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
+[fvz DNS](http://meo.ws/) ist ein öffentlicher primärer OpenNIC Tier2 Anycast-DNS-Resolver von Fusl.
 
 | Protokoll      | Adresse                                                              |                                                                                                                                                              |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1155,7 +1155,7 @@ Sperrt Werbung, Tracker und Malware
 | DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
 | DNS-over-TLS   | `tls://dns.momou.ch`             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
 
-#### Kids
+#### Kindersicherung
 
 Kinderfreundlicher Filter, der auch Werbung, Tracker und Malware sperrt
 
@@ -1199,7 +1199,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 | DNSCrypt, IPv4 | Anbieter: `2.dnscrypt-cert.pumplex.com` IP: `51.38.82.198:5353`               | [Zu AdGuard hinzufügen](sdns://AQcAAAAAAAAAETUxLjM4LjgyLjE5ODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ)                                                                                |
 | DNSCrypt, IPv6 | Anbieter: `2.dnscrypt-cert.pumplex.com` IP: `[2001:41d0:801:2000::1b28]:5353` | [Zu AdGuard hinzufügen](sdns://AQcAAAAAAAAAHTIwMDE6NDFkMDo4MDE6MjAwMDo6MWIyODo1MzUzIMg95SNgpDPLmaHlbZVbYh5tJRvnYuDWqZ4lUG-mD49eGzIuZG5zY3J5cHQtY2VydC5wdW1wbGV4LmNvbQ)                                                                |
 | DNS-over-HTTPS | `https://dns.pumplex.com/dns-query`                                           | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.pumplex.com/dns-query&name=dns.pumplex.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.pumplex.com/dns-query&name=dns.pumplex.com) |
-| DNS-over-TLS   | `tls://dns.pumplex.com`                                                       | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.pumplex.com&name=dns.pumplex.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.pumplex.com&name=dns.pumplex.com)                                       |
+| DNS-over-TLS   | `tls://dns.pumplex.com`                                                       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dns.pumplex.com&name=dns.pumplex.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dns.pumplex.com&name=dns.pumplex.com)                         |
 
 ### Privacy-First DNS
 
@@ -1248,6 +1248,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 | Protokoll      | Adresse                                 |                                                                                                                                                                                                                                             |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.252.122.187`                       | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS)                                             |
-| DNS, IPv6      | `2401:4ae0::38`                         | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS)                                                 |
+| DNS, IPv4      | `103.70.12.129`                         | [Add to AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                               |
+| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                               |
+| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                                     |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |

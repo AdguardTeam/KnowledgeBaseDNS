@@ -3,23 +3,23 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+AdGuard DNS에 iOS 기기를 연결하려면 먼저 **대시보드**에 추가하세요.
 
 1. **대시보드**로 이동하여 **새 기기 연결**을 클릭합니다.
-2. In the drop-down menu _Device type_, select Windows.
+2. 드롭다운 메뉴에서 **기기 종류**을 선택합니다.
 3. 기기의 이름을 지정합니다.
-   ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+   ![연결 중\_기기 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
 ## AdGuard 광고 차단기 사용(유료 옵션)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
+AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있으므로 Windows 기기에서 AdGuard DNS를 설정하는 데 적합합니다. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
 
-1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
+1. AdGuard DNS에 연결하려는 기기에 [앱을 설치](https://adguard.com/adguard-windows/overview.html)하세요.
 2. 앱을 엽니다.
-3. Click _Settings_ at the top of the app's home screen.
-   ![Settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
-4. Select the _DNS Protection_ tab from the menu on the left.
-   ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
+3. 앱의 홈 화면 상단에서 **설정**을 클릭합니다.
+   ![설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
+4. 왼쪽 메뉴에서 **DNS 보호** 탭을 선택합니다.
+   ![DNS 보호 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
 5. 현재 선택한 DNS 서버를 클릭합니다.
    ![DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
 6. 아래로 스크롤하여 **사용자 정의 DNS 서버 추가**를 클릭합니다.

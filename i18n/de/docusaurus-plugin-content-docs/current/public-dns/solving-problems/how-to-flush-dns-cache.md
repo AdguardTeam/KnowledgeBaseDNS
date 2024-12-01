@@ -44,7 +44,7 @@ Eine weitere Möglichkeit besteht darin, die Netzwerkeinstellungen Ihres Geräts
 
 :::note
 
-Dadurch verlieren Sie die Verbindungen zu WLAN-Routern und andere spezifische Netzwerkeinstellungen, einschließlich der Anpassung von DNS-Servern. You will need to reset them manually.
+Dadurch verlieren Sie die Verbindungen zu WLAN-Routern und andere spezifische Netzwerkeinstellungen, einschließlich der Anpassung von DNS-Servern. Sie müssen diese manuell erneut eintragen.
 
 :::
 
@@ -70,13 +70,13 @@ Gehen Sie folgendermaßen vor, um den DNS-Cache Ihres Android-Geräts zu leeren,
 1. Füllen Sie die erforderlichen Felder aus. Die notwendigen Informationen erhalten Sie von Ihrem Netzwerkadministrator oder auf der Konfigurationsseite Ihres Routers
 1. Nachdem Sie die erforderlichen Informationen eingegeben haben, verbinden Sie sich erneut mit Ihrem WLAN-Netzwerk. Durch diese Aktion wird Ihr Gerät gezwungen, seine IP- und DNS-Einstellungen zu aktualisieren und den DNS-Cache zu leeren
 
-#### Reset network settings
+#### Netzwerkeinstellungen zurücksetzen
 
 Eine weitere Möglichkeit besteht darin, die Netzwerkeinstellungen Ihres Geräts in der App „Einstellungen“ zurückzusetzen. Öffnen Sie *„Einstellungen” ➜ „System” ➜ „Erweitert” ➜ „Optionen zurücksetzen” ➜ „Netzwerkeinstellungen zurücksetzen”* und tippen Sie zur Bestätigung auf *„Einstellungen zurücksetzen”*.
 
 :::note
 
-Dadurch verlieren Sie die Verbindungen zu WLAN-Routern und andere spezifische Netzwerkeinstellungen, einschließlich der Anpassung von DNS-Servern. You will need to reset them manually.
+Dadurch verlieren Sie die Verbindungen zu WLAN-Routern und andere spezifische Netzwerkeinstellungen, einschließlich der Anpassung von DNS-Servern. Sie müssen diese manuell erneut eintragen.
 
 :::
 
@@ -96,15 +96,15 @@ Geben Sie anschließend Ihr Administratorkennwort ein, um den Vorgang abzuschlie
 
 Um den DNS-Cache auf Ihrem Windows-Gerät zu leeren, gehen Sie wie folgt vor:
 
-Öffnen Sie die Eingabeaufforderung als Administrator. Sie finden es im Startmenü, indem Sie *Eingabeaufforderung* oder *cmd* eingeben. Then type `ipconfig /flushdns` and press Enter.
+Öffnen Sie die Eingabeaufforderung als Administrator. Sie finden es im Startmenü, indem Sie *Eingabeaufforderung* oder *cmd* eingeben. Geben Sie dann `ipconfig /flushdns` ein und drücken Sie die Eingabetaste.
 
 Als Ergebnis sehen Sie die Textzeile *Der DNS-Auflösungscache wurde geleert*. Fertig!
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND, or nscd is installed and running. Wie der DNS-Cache geleert wird, hängt von der Linux-Distribution und dem verwendeten Caching-Dienst ab.
+Linux verfügt über kein DNS-Caching auf Betriebssystemebene, es sei denn, ein Caching-Dienst wie systemd-resolved, DNSMasq, BIND oder nscd ist installiert und wird ausgeführt. Wie der DNS-Cache geleert wird, hängt von der Linux-Distribution und dem verwendeten Caching-Dienst ab.
 
-For each distribution you need to start a terminal window. Drücken Sie das Tastaturkürzel Strg+Alt+T und verwenden Sie den zu dem auf Ihrem Linux-System ausgeführten Dienst passenden Befehl, um den DNS-Cache zu leeren.
+Für jede Distribution müssen Sie zunächst ein Terminalfenster öffnen. Drücken Sie das Tastaturkürzel Strg+Alt+T und verwenden Sie den zu dem auf Ihrem Linux-System ausgeführten Dienst passenden Befehl, um den DNS-Cache zu leeren.
 
 Um herauszufinden, welchen DNS-Resolver Sie verwenden, geben Sie den Befehl `sudo lsof -i :53 -S`.
 
@@ -142,7 +142,7 @@ Sie erhalten daraufhin die Meldung, dass der Server erfolgreich neu geladen wurd
 
 ## So leeren Sie den DNS-Cache in Chrome
 
-Dies kann nützlich sein, wenn Sie bei der Arbeit mit dem privaten AdGuard DNS oder AdGuard Home nicht jedes Mal den Browser neu starten möchten. Settings 1–2 only need to be changed once.
+Dies kann nützlich sein, wenn Sie bei der Arbeit mit dem privaten AdGuard DNS oder AdGuard Home nicht jedes Mal den Browser neu starten möchten. Die Einstellungen 1 und 2 müssen nur einmalig geändert werden.
 
 1. Deaktivieren Sie **Sicheres DNS verwenden** in den Chrome-Einstellungen
 

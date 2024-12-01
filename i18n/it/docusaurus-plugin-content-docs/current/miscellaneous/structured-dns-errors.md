@@ -3,44 +3,44 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
+Con il rilascio di AdGuard DNS v2.10, AdGuard è diventato il primo risolutore DNS pubblico a implementare il supporto per [_Errori DNS Strutturati_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), un'aggiornamento a [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Questa funzione consente ai server DNS di fornire informazioni dettagliate sui siti web bloccati direttamente nella risposta DNS, piuttosto che fare affidamento su messaggi generici del browser. In questo articolo, spiegheremo cosa sono e come funzionano gli _SDE_.
 
-## What Structured DNS Errors are
+## Cosa sono gli SDE (errori DNS strutturati)
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+Quando una richiesta a un dominio pubblicitario o quello di tracciamento è bloccata, l'utente potrebbe vedere spazi vuoti su un sito web o potrebbe non notare affatto che è avvenuto un filtro DNS. Tuttavia, se un intero sito web è bloccato a livello DNS, l'utente non sarà completamente in grado di accedere alla pagina. Quando si tenta di accedere a un sito web bloccato, l'utente può vedere un errore generico "Questo sito non può essere raggiunto" visualizzato dal browser.
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![Errore "Questo sito non può essere raggiunto"](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don't explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
+Tali errori non spiegano cosa è successo e perché. Questo lascia gli utenti confusi su perché un sito web sia inaccessibile, portandoli spesso a supporre che la loro connessione a Internet o il risolutore DNS siano danneggiati.
 
-To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
+Per chiarire questo punto, i server DNS potrebbero reindirizzare gli utenti alla propria pagina con una spiegazione. Tuttavia, i siti web HTTPS (che sono la maggioranza dei siti web) richiederebbero un certificato.
 
-![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
+![Errore di certificato](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
 
-There’s a simpler solution: [Structured DNS Errors (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). The concept of SDE builds on the foundation of [_Extended DNS Errors_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), which introduced the ability to include additional error information in DNS responses. The SDE draft takes this a step further by using [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (a restricted profile of JSON) to format the information in a way that browsers and client applications can easily parse.
+Esiste una soluzione più semplice: [SDE (Errori DNS strutturati)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). Il concetto di SDE si basa sui principi degli [_Errori DNS Estesi_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), che ha introdotto la possibilità d'includere ulteriori informazioni sugli errori nelle risposte DNS. Il progetto SDE porta questo ulteriore passaggio utilizzando [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (un profilo ristretto di JSON) per formattare le informazioni in un modo che i browser e le app client possono facilmente analizzare.
 
-The SDE data is included in the `EXTRA-TEXT` field of the DNS response. It contains:
+I dati SDE sono inclusi nel campo `EXTRA-TEXT` della risposta DNS. Contiene:
 
-- `j` (justification): Reason for blocking
-- `c` (contact): Contact information for inquiries if the page was blocked by mistake
-- `o` (organization): Organization responsible for DNS filtering in this case (optional)
-- `s` (suberror): The suberror code for this particular DNS filtering (optional)
+- `j` (giustificazione): Motivo per cui è stato bloccato
+- `c` (contatto): Informazioni di contatto per richieste se la pagina è stata bloccata per errore
+- `o` (organizzazione): Organizzazione responsabile del filtraggio DNS in questo caso (facoltativo)
+- `s` (suberror): il codice suberror per questo particolare filtraggio DNS (facoltativo)
 
-Such a system enhances transparency between DNS services and users.
+Un sistema del genere aumenta la trasparenza tra i servizi DNS e gli utenti.
 
-### What is required to implement Structured DNS Errors
+### Cosa è richiesto per implementare gli SDE
 
-Although AdGuard DNS has implemented support for Structured DNS Errors, browsers currently do not natively support parsing and displaying SDE data. For users to see detailed explanations in their browsers when a website is blocked, browser developers need to adopt and support the SDE draft specification.
+Sebbene AdGuard DNS abbia implementato il supporto per gli SDE, i browser attualmente non supportano nativamente l'analisi e la visualizzazione dei dati SDE. Affinché gli utenti possano visualizzare spiegazioni dettagliate nei loro browser quando un sito web è bloccato, gli sviluppatori di browser devono adottare e supportare la specifica SDE.
 
-### AdGuard DNS demo extension for SDE
+### Estensione demo DNS AdGuard per SDE
 
-To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how _Structured DNS Errors_ could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
+Per mostrare come funzionano gli SDE AdGuard DNS ha sviluppato un'estensione demo per il browser che mostra come potrebbero funzionare gli _SDE_ se i browser li supportassero. Se provi a visitare un sito web bloccato da AdGuard DNS con questa estensione abilitata, vedrai una pagina di spiegazione dettagliata con le informazioni fornite tramite SDE, come il motivo del blocco, i dettagli di contatto e l'organizzazione responsabile.
 
-![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
+![Pagina di spiegazione](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
-You can install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) or from [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
+Puoi installare l'estensione dal [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) o da [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
 
-If you want to see what it looks like at the DNS level, you can use the `dig` command and look for `EDE` in the output.
+Se desideri vedere come appare a livello di DNS, puoi utilizzare il comando `dig` e cercare `EDE` nell'output.
 
 ```text
 % dig @94.140.14.14 'ad.doubleclick.net' A IN +ednsopt=15:0000

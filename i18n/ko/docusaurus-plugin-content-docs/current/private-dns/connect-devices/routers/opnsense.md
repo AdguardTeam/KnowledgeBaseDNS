@@ -3,7 +3,7 @@ title: OPNSense
 sidebar_position: 8
 ---
 
-OPNSense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
+OPNSense 펌웨어는 종종 무선 액세스 포인트, DHCP 서버, DNS 서버를 구성하는 데 사용되며, AdGuard DNS를 장치에서 직접 구성할 수 있도록 허용합니다.
 
 ## 라우터 관리 패널 사용
 
