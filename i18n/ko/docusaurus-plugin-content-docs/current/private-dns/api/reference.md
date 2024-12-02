@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: API에 대한 도움말
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
@@ -11,9 +11,9 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+이 문서에는 [AdGuard DNS API](private-dns/api/overview.md)에 대한 문서가 포함되어 있습니다. 전체 AdGuard DNS API 변경 로그는 [이 페이지](private-dns/api/changelog.md)를 방문하시기 바랍니다.
 
-## Current version: 1.9
+## 현재 버전: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -21,7 +21,7 @@ This article contains documentation for [AdGuard DNS API](private-dns/api/overvi
 
 ##### 요약
 
-Gets account limits
+계정 제한 가져오기
 
 ##### 응답
 

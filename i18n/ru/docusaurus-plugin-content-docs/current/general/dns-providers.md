@@ -629,7 +629,7 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`                                      | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 | DNS-over-TLS   | `tls://dns10.quad9.net`                                                  | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net)                         |
 
-#### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
+#### [Поддержка ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet)
 
 EDNS Client Subnet — это метод, который включает компоненты IP-адресов конечных пользователей в запросы, отправляемые на полномочные DNS-серверы. Он предоставляет список блокировки, DNSSEC и опцию EDNS Client Subnet.
 
@@ -692,7 +692,7 @@ EDNS Client Subnet — это метод, который включает ком
 | --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `195.46.39.39` и `195.46.39.40` | [Добавить в AdGuard](adguard:add_dns_server?address=195.46.39.39&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=195.46.39.39&name=) |
 
-### Safe Surfer
+### Sade Surfer
 
 [Safe Surfer](https://www.safesurfer.co.nz/) — это DNS-сервис, который блокирует 50+ категорий, таких как порно, реклама, вредоносные программы и популярные сайты социальных сетей, делая интернет безопаснее.
 

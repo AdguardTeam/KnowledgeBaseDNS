@@ -39,7 +39,7 @@ OpenWRT 라우터는 사용자 기본 설정에 따라 라우터와 게이트웨
 
 ## DNS-over-TLS 설정
 
-- **명령줄 지침**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **명령줄 지침**. Dnsmasq DNS 역할을 [비활성화](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role)하거나 선택적으로 완전히 제거하여 해당 DHCP 역할을 odhcpd로 [대체](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound)합니다.
 
   ```# Install packages
   1. opkg update

@@ -59,7 +59,7 @@ Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 ## Yapılandırma profili kullanma
 
-An iOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
+Apple tarafından "konfigürasyon profili" olarak da adlandırılan iOS aygıt profili, iOS aygıtınıza elle yükleyebileceğiniz veya bir MDM çözümü kullanarak dağıtabileceğiniz sertifika imzalı bir XML dosyasıdır. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
 :::note Önemli
 
@@ -69,8 +69,8 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
 1. Profili [indirin](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml).
 2. Ayarları açın.
-3. Tap _Profile Downloaded_.
-   ![Profile Downloaded \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
+3. _Profil İndirildi_ öğesine dokunun.
+   ![Profil İndirildi \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
 4. _Yükle_ öğesine dokunun ve ekrandaki talimatları izleyin.
    ![Yükle \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step4.png)
 

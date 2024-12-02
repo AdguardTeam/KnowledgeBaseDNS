@@ -43,6 +43,6 @@ curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 
 [DNS-over-QUIC — это новый протокол шифрования DNS](https://adguard.com/blog/dns-over-quic.html), а AdGuard DNS — первый публичный резолвер, который его поддерживает. В отличие от DoH и DoT, он использует QUIC в качестве транспортного протокола и возвращает DNS к истокам — работе через UDP. Он привносит всё хорошее, что QUIC может предложить — готовое шифрование, ускоренное время соединения, лучшую производительность при потере пакетов трафика. К тому же, QUIC создавался как транспортный протокол, и с ним нет риска утечки метаданных, в отличие от DoH.
 
-### Rate limit
+### Лимит запросов
 
-DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+Ограничение лимита запросов DNS — это метод, используемый для контроля объёма трафика, который DNS-сервер может обрабатывать за определённый промежуток времени. Мы предлагаем возможность увеличить лимит по умолчанию для Командных и Коммерческих планов Личного AdGuard DNS. Для получения дополнительной информации [прочтите сопутствующую статью](/private-dns/server-and-settings/rate-limit.md).

@@ -37,8 +37,8 @@ AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합
 
 ![차단된 서비스 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### 일정 설정
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+특정 날짜에 설정된 시간 간격으로 자녀 보호를 활성화합니다. 예를 들어, 자녀가 평일 23시까지만 YouTube 동영상을 시청하도록 허용했을 수 있습니다. 하지만 주말에는 이 접근이 제한되지 않습니다. 일정을 원하는 대로 사용자 맞춤화하고 원하는 시간 동안 선택한 사이트에 대한 접근을 차단하세요.
 
-![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+![일정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
