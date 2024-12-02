@@ -37,6 +37,5 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 1. Save the settings.
 1. Link your IP (or your dedicated IP if you have a Team subscription).
-
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
