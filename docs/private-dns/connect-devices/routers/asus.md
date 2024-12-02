@@ -15,7 +15,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 1. Enter the administrator username (usually, it’s admin) and router password.
 1. In the *Advanced Settings* sidebar, navigate to the WAN section.
 1. In the *WAN DNS Settings* section, set *Connect to DNS Server automatically* to *No*.
-1. Set *Forward local queries*, *Enable DNS Rebind*, and *Enable DNSSEC* to *No*.
+1. Set *Forward local queries*, *Enable DNS Rebind protection*, and *Enable DNSSEC suppport* to *No*.
 1. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
 1. Make sure the *DNS-over-TLS Profile* is set to *Strict*.
 1. Scroll down to the *DNS-over-TLS Servers List* section. In the *Address* field, enter one of the addresses below:

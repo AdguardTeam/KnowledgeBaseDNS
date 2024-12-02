@@ -23,7 +23,7 @@ MikroTik routers use the open source RouterOS operating system, which provides r
         - `94.140.14.49`
         - `94.140.14.59`
     - Set *Allow Remote Requests* to *Yes* (this is crucial for DoH to function)
-    - In the *Use DoH server* field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+    - In the *Use DoH server* field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
     - Click *OK*
 1. Create Static DNS Records:
     - In the *DNS Settings*, click *Static*
