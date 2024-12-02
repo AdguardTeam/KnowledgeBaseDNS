@@ -1,6 +1,5 @@
 ---
 title: How to create your own DNS stamp for Secure DNS
-
 sidebar_position: 4
 ---
 
