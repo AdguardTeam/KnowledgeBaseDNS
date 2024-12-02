@@ -3,7 +3,7 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS routers are incredibly easy to use and can be combined into a single mesh network. You can manage your network remotely anytime, anywhere. 라우터에서 AdGuard DNS를 직접 환경 설정할 수도 있습니다.
+Synology NAS 라우터는 매우 사용하기 쉬우며 단일 메시 네트워크로 결합할 수 있습니다. 언제 어디서나 원격으로 네트워크를 관리할 수 있습니다. 라우터에서 AdGuard DNS를 직접 환경 설정할 수도 있습니다.
 
 ## 라우터 관리 패널 사용
 

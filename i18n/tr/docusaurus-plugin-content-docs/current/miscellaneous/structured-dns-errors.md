@@ -3,19 +3,19 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
+With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Bu özellik, DNS sunucularının genel tarayıcı mesajlarına güvenmek yerine doğrudan DNS yanıtında engellenen siteler hakkında ayrıntılı bilgi sağlamasına olanak tanır. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
 
 ## What Structured DNS Errors are
 
 When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+!["Bu siteye ulaşılamıyor" hatası](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don't explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
+Bu tür hatalar neyin ve neden olduğunu açıklamıyor. Bu durum, kullanıcıların bir siteye neden erişilemediği konusunda kafalarının karışmasına ve genellikle internet bağlantılarının veya DNS çözümleyicilerinin bozuk olduğunu düşünmelerine neden olur.
 
-To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
+Bunu açıklığa kavuşturmak için DNS sunucuları kullanıcıları bir açıklamayla kendi sayfalarına yönlendirebilir. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
 
-![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
+![Sertifika hatası](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
 
 There’s a simpler solution: [Structured DNS Errors (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). The concept of SDE builds on the foundation of [_Extended DNS Errors_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), which introduced the ability to include additional error information in DNS responses. The SDE draft takes this a step further by using [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (a restricted profile of JSON) to format the information in a way that browsers and client applications can easily parse.
 

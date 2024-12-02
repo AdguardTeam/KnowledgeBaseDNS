@@ -14,7 +14,7 @@ Bir macOS cihazını AdGuard DNS'e bağlamak için önce cihazı _Pano_ öğesin
 
 AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek macOS cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
-1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
+1. AdGuard DNS'e bağlanmak istediğiniz cihaza [uygulamayı yükleyin](https://adguard.com/adguard-mac/overview.html).
 2. Uygulamayı açın.
 3. Sağ üst köşedeki simgeye tıklayın.
    ![Koruma simgesi \*mobil\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
@@ -69,7 +69,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
    ![İndirilen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step3.png)
 4. Profil içeriğini gözden geçirin ve _Yükle_ öğesine tıklayın.
    ![Yükle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
-5. Enter the admin password and click _OK_.
+5. Yönetici parolasını girin ve _Tamam_ öğesine tıklayın\*.
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 

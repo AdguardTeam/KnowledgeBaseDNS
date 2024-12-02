@@ -19,7 +19,7 @@ AdGuard Home'u yalnızca **sizin bilgisayarınızda** çalıştırmak istiyorsan
 
 If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. İsimler değişebilir, ancak genellikle `wlan` veya `wlp` kelimelerini içerirler ve `192.168.` ile başlayan bir adrese sahiptirler. Yönlendiricideki yazılımın da AdGuard Home'u kullanmasını istiyorsanız muhtemelen geri döngü adresini de eklemelisiniz.
 
-AdGuard Home'u **genel erişime açık bir sunucuda** çalıştırmayı düşünüyorsanız, muhtemelen _Tüm arayüzler_ seçeneğini belirlemek isteyeceksiniz. Bunun sunucunuzu DDoS saldırılarına maruz bırakabileceğini unutmayın, bu nedenle lütfen aşağıdaki erişim ayarları ve hız sınırlama bölümlerini okuyun.
+AdGuard Home'u **genel erişime açık bir sunucuda** çalıştırmayı düşünüyorsanız, muhtemelen _Tüm arayüzler_ seçeneğini belirlemek isteyeceksiniz. Bunun sunucunuzu DDoS saldırılarına maruz bırakabileceğini unutmayın, bu nedenle lütfen aşağıdaki erişim ayarları ve oran sınırlaması bölümlerini okuyun.
 
 ## Erişim ayarları
 
