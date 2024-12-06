@@ -5,7 +5,7 @@ sidebar_position: 6
 
 To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
+1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
 2. In the drop-down menu _Device type_, select Linux.
 3. Name the device.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)

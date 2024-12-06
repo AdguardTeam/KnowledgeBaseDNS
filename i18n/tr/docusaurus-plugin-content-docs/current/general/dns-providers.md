@@ -514,7 +514,7 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns), yerleşik güvenlik ve tehdit istihbaratı ile sitelere ve çevrimiçi uygulamalara hızlı ve güvenilir erişim sağlayan ücretsiz bir bulut tabanlı özyinelemeli DNS hizmetidir.
 
-#### Reliability & Performance 1
+#### Güvenilirlik ve Performans 1
 
 Bu sunucular, herhangi bir belirli kategoriyi engellemeden güvenilir ve hızlı DNS aramaları sağlar.
 
@@ -523,7 +523,7 @@ Bu sunucular, herhangi bir belirli kategoriyi engellemeden güvenilir ve hızlı
 | DNS, IPv4 | `156.154.70.1` ve `156.154.71.1`       | [AdGuard'a ekle](adguard:add_dns_server?address=156.154.70.1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
 | DNS, IPv6 | `2610:a1:1018::1` ve `2610:a1:1019::1` | [AdGuard'a ekle](adguard:add_dns_server?address=2610:a1:1018::1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Reliability & Performance 2
+#### Güvenilirlik ve Performans 2
 
 Bu sunucular, belirli kategorileri engellemeden güvenilir ve hızlı DNS aramaları sağlar ve ayrıca NXDomain (var olmayan alan adı) yanıtlarının açılış sayfalarına yönlendirilmesini önler.
 
