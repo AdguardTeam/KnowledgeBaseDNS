@@ -104,11 +104,11 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 
 ## Use EDNS (Extended DNS)
 
-EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing the DeviceID in plain DNS using an extra parameter.
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
 
 DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
 
-AdGuard DNS uses EDNS to retrieve the DeviceID by looking for option number 65074. If such an option exists, it will read the DeviceID from there. For this, you can use the command `dig` on the terminal:
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command on the terminal:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
@@ -116,7 +116,7 @@ dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 
 Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
 
-All done! The device ID should be displayed.
+All done! DeviceID should be displayed.
 
 :::note
 
