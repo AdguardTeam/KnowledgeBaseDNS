@@ -5,29 +5,29 @@ sidebar_position: 1
 
 :::info
 
-With AdGuard DNS, you can set up your private DNS servers to resolve DNS requests and block ads, trackers, and malicious domains before they reach your device
+使用 AdGuard DNS，可以设置自己的私有 DNS 服务器来解析 DNS 请求并在广告、跟踪器和恶意域名到达设备之前进行拦截。
 
-Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
+快速链接：[试用 AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
-![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![私有 AdGuard DNS 仪表板主页](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## General
+## 通用
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+私有 AdGuard DNS 提供公共 AdGuard DNS 服务器的所有优势，包括流量加密和域名拦截列表。 它还提供额外的功能，例如灵活的定制、DNS 统计和家长控制。 这些选项都可以通过用户友好的仪表板来轻松地访问和管理。
 
-### Why you need private AdGuard DNS
+### 为什么您需要私有 AdGuard DNS
 
-Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+今天，用户可以把任何东西连接到互联网上: 电视、冰箱、智能灯泡或扬声器。 但除了这些不可否认的便利之外，用户还会面临追踪器和广告。 在这种情况下，一个简单的基于浏览器的广告拦截器无法保护用户，但用 AdGuard DNS，用户可以设置流量过滤，内容和跟踪器拦截，享受一个系统范围的保护体验。
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+长久以来，AdGuard 产品线仅包括[公共 AdGuard DNS](../public-dns/overview.md) 和 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)。 这些解决方案对一些用户来说很好，但对另一些用户来说，公共 AdGuard DNS 缺乏配置的灵活性，而 AdGuard Home 则缺乏简单性。 这就是私人 AdGuard DNS 发挥作用的地方。 它拥有两个优点：它提供可定制性、控制和信息统计，所有这些都可以通过一个简单已用的仪表盘实现。
 
-### The difference between public and private AdGuard DNS
+### 公共 AdGuard DNS 和私有 AdGuard DNS 的区别
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+以下是公共 AdGuard DNS 和私有 AdGuard DNS 功能的简单比较。
 
 | 公共 AdGuard DNS | 私人 AdGuard DNS                    |
 | -------------- | --------------------------------- |
@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### 把设备连接到 AdGuard DNS
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+AdGuard DNS 非常灵活，可设置在各种设备上，包括平板电脑、PC、路由器和游戏机。 本节描述如何将设备连接至 AdGuard DNS 的详细指示说明。
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[把设备连接到 AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### 服务器和设置
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+本节解释在 AdGuard DNS 中 「服务器」 的定义以及可用的设置。 这些设置让用户自定义 AdGuard DNS 对已拦截域名的响应方式，并管理您的 DNS 服务器的访问权限。
 
-[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+[服务器和设置](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### 如何设置过滤
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+在本节中，我们描述一些允许用户微调 AdGuard DNS 功能的设置。 使用拦截列表、用户规则、家长控制及安全过滤功能，用户可以根据需求配置过滤规则。
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[如何设置过滤](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### 统计数字与查询日志
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+统计和查询日志可让用户深入了解设备的活动。 在「*统计数据*」标签中，用户可以查看连接私人 AdGuard DNS 的设备发出的 DNS 请求汇总。 在查询日志中，可以查看每个请求的信息，还可以按状态、类型、公司、设备、时间和国家/地区对请求进行排序。
 
-[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
+[统计数字与查询日志](/private-dns/statistics-and-log/statistics.md)

@@ -5,18 +5,18 @@ sidebar_position: 5
 
 ## Why it is useful
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Herkes, Pano üzerinden cihaz ekleme konusunda rahat hissetmeyebilir. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Bağlantı bağlantısı oluşturabilir ve bunu cihaz ayarlarında kullanabilirsiniz. Cihazınız algılanacak ve otomatik olarak sunucuya bağlanacaktır.
 
-## How to configure automatic connection
+## Otomatik bağlantı nasıl yapılandırılır
 
 1. _Pano_ öğesini açın ve gerekli sunucuyu seçin.
 2. _Cihazlar_ öğesine gidin.
 3. Cihazların otomatik olarak bağlanma seçeneğini etkinleştirin.
    ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Let’s explore what these addresses look like and the rules for creating them.
+Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Bu adreslerin nasıl göründüğünü ve bunları oluşturma kurallarını inceleyelim.
 
 ### Otomatik bağlantı adreslerine örnekler
 
@@ -26,7 +26,7 @@ Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren öze
 
 - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — bu otomatik olarak `Mary Sue` adında `DNS-over-QUIC` protokolüne sahip bir `iOS` cihazı oluşturur
 
-### Naming conventions
+### Adlandırma kuralları
 
 Cihazları elle oluştururken ad uzunluğu, karakterler, boşluklar ve tirelerle ilgili kısıtlamalar olduğunu lütfen unutmayın.
 

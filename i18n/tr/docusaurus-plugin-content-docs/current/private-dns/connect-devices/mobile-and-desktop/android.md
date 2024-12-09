@@ -10,7 +10,7 @@ Bir Android cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine 
 3. Cihazı adlandırın.
    ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
 AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Android cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
@@ -35,7 +35,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Android cihaz�
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Use AdGuard VPN
+## AdGuard VPN'i kullanma
 
 Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
@@ -66,7 +66,7 @@ DNS sunucunuzu cihaz ayarlarınızdan yapılandırabilirsiniz. Android cihazlar�
    ![Ayarlar \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
 2. _Gelişmiş_ öğesini seçin ve _Özel DNS_ öğesine dokunun.
    ![Özel DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
-3. Select the _Private DNS provider hostname_ option and enter the address of your personal server: `{Your_Device_ID}.d.adguard-dns.com`.
+3. _Özel DNS sağlayıcı ana makine adı_ öğesini seçin ve kişisel sunucunuzun adresini girin: `{Your_Device_ID}.d.adguard-dns.com`.
 4. _Kaydet_ öğesine dokunun.
    ![Özel DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
    Tamamlandı! Cihazınız AdGuard DNS'e başarıyla bağlandı.

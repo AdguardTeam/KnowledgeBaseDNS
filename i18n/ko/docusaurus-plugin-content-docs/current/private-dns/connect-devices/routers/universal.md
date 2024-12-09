@@ -1,32 +1,32 @@
 ---
-title: Universal instructions
+title: 일반 지침
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Please note that the configuration details provided here are approximate and may differ from the settings on your particular model.
+다음은 라우터에서 사설 AdGuard DNS를 설정하는 몇 가지 일반적인 지침입니다. 주 목록에서 특정 라우터를 찾을 수 없으면 이 가이드를 참조하십시오. 여기에 제공된 환경 설정 세부 사항은 대략적인 것이며 특정 모델의 설정과 다를 수 있습니다.
 
 ## 라우터 관리 패널 사용
 
-1. Open the preferences for your router. Usually you can access them from your browser. Depending on the model of your router, try entering one the following addresses:
-   - Linksys and Asus routers typically use: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
-   - Ubiquiti routers typically use: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+1. 라우터의 환경 설정을 엽니다. 보통 브라우저에서 이들에 액세스할 수 있습니다. 라우터 모델에 따라 다음 주소 중 하나를 입력해 보세요.
+   - Linksys 및 Asus 라우터는 일반적으로 [http://192.168.1.1](http://192.168.1.1/)를 사용합니다.
+   - Netgear 라우터는 일반적으로 [http://192.168.0.1](http://192.168.0.1/) 또는 [http://192.168.1.1](http://192.168.1.1/)을 사용합니다. D-Link 라우터는 일반적으로 [http://192.168.0.1](http://192.168.0.1/)를 사용합니다.
+   - Ubiquiti 라우터는 일반적으로 [http://unifi.ubnt.com](http://unifi.ubnt.com/)를 사용합니다.
 
-2. Enter the router's password.
+2. 라우터의 비밀번호를 입력합니다.
 
-   :::note Important
+   :::note 중요
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   비밀번호가 알려지지 않은 경우, 라우터의 버튼을 눌러 초기화할 수 있으며, 이로 인해 라우터가 공장 설정으로 초기화됩니다. 일부 모델에는 전용 관리 앱이 있으며, 이 앱은 이미 컴퓨터에 설치되어 있어야 합니다.
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
+3. 라우터의 관리 콘솔에서 DNS 설정이 어디에 위치하는지 찾으십시오. 나열된 DNS 주소를 다음 주소로 변경합니다:
    - IPv4: `94.140.14.49` 및 `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
 
-4. Save the settings.
+4. 설정을 저장합니다.
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -15,7 +15,7 @@ FRITZ!Box, 2,4 GHz ve 5 GHz frekans bantlarını aynı anda kullanarak tüm ciha
 6. Select _Use Custom TLS Server Name Indication (SNI)_ and enter the AdGuard Private DNS server address:  `{Your_Device_ID}.d.adguard-dns.com`.
 7. Ayarları kaydedin.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-TLS yapılandırmasını desteklemiyorsa bu kılavuzu kullanın:
 

@@ -1,6 +1,6 @@
 ---
 title: 'How to take a screenshot'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 La captura de pantalla es una captura de la pantalla de su ordenador o dispositivo móvil, que puede obtenerse utilizando herramientas habituales o un programa/aplicación especial.

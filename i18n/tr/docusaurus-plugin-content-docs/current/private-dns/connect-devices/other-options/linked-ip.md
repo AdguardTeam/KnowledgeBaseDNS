@@ -5,9 +5,7 @@ sidebar_position: 3
 
 ## What linked IPs are and why they are useful
 
-Tüm cihazlar şifrelenmiş DNS protokollerini desteklemeyebilir. Bu durumda, kullanıcılar şifrelenmemiş DNS kurmayı göz önünde bulundurmalıdır.
-
-Bir **bağlı IP adresi** kullanabilirsiniz: bu kurulumda, hizmet bu IP adresinden ve bu belirli cihaz için gelen tüm standart DNS sorgularını göz önünde bulundurur. Bağlı bir IP adresi için tek gereksinim, bunun bir konut IP'si olmasıdır.
+Tüm cihazlar şifrelenmiş DNS protokollerini desteklemez. Bu durumda, şifrelenmemiş DNS kurmayı düşünmelisiniz. Örneğin, **bağlı IP adresi** kullanabilirsiniz. Bağlı bir IP adresi için tek gereksinim, bunun bir konut IP'si olmasıdır.
 
 :::note
 
@@ -31,7 +29,7 @@ Aşağıdaki talimatlar, cihaza **IP adresini bağlamak** aracılığıyla nası
 
 ## Dynamic DNS: Why it is useful
 
-Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. Bir cihazın bağlantısı kesildiğinde, DHCP sunucusu IP adreslerini kalan cihazlara yeniden atar. Bu, dinamik IP adreslerinin sık sık ve öngörülemeyen bir şekilde değişebileceği anlamına gelir. Sonuç olarak, cihaz her yeniden başlatıldığında veya ağ değiştiğinde ayarları güncellemeniz gerekir.
+Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Sonuç olarak, cihaz her yeniden başlatıldığında veya ağ değiştiğinde ayarları güncellemeniz gerekir.
 
 Bağlı IP adresini otomatik olarak güncel tutmak için DNS kullanabilirsiniz. AdGuard DNS, DDNS alan adınızın IP adresini düzenli olarak kontrol eder ve sunucunuza bağlar.
 
@@ -79,8 +77,8 @@ En kolay yol Görev Zamanlayıcı'yı kullanmaktır:
 
 On macOS and Linux, the easiest way is to use `cron`:
 
-1. Crontab'ı açın:
-   - Terminalde `crontab -e` komutunu çalıştırın.
+1. Open crontab:
+   - In the terminal, run `crontab -e`.
 2. Bir görev ekleyin:
    - Aşağıdaki satırı ekleyin:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`

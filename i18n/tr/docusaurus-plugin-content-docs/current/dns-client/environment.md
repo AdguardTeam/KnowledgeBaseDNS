@@ -38,7 +38,7 @@ This environment variable overrides the [`log.timestamp`][conf-log] field in the
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+`1` olarak ayarlandığında ayrıntılı günlük kaydını etkinleştirir. `0` olarak ayarlandığında devre dışı bırakılır.
 
 This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 

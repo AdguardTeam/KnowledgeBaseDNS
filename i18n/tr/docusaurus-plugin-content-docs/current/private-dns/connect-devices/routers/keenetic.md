@@ -3,17 +3,17 @@ title: Keenetik
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bilinir ve kurulumu kolaydır, şifrelenmiş Özel AdGuard DNS'i cihazınıza kolayca kurmanızı sağlar.
 
-## Configure DNS-over-HTTPS
+## DNS-over-HTTPS'i yapılandır
 
 1. Yönlendirici yönetici panelini açın. my.keenetic.net adresinden, yönlendiricinizin IP adresinden veya `192.168.1.1` adresinden erişilebilir.
 2. Ekranın altındaki menü düğmesine basın ve _Yönetim_ öğesini seçin.
 3. _Sistem ayarları_ öğesini açın.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
+4. _Bileşen seçenekleri_ → _Sistemleri bileşen seçenekleri_ öğelerine basın.
+5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
+6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
+7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
 8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. _Kaydet_ öğesine tıklayın.
 
@@ -22,14 +22,14 @@ Keenetic routers are known for their stability and flexible configurations, and 
 1. Yönlendirici yönetici panelini açın. my.keenetic.net adresinden, yönlendiricinizin IP adresinden veya `192.168.1.1` adresinden erişilebilir.
 2. Ekranın altındaki menü düğmesine basın ve _Yönetim_ öğesini seçin.
 3. _Sistem ayarları_ öğesini açın.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
+4. _Bileşen seçenekleri_ → _Sistemleri bileşen seçenekleri_ öğelerine basın.
+5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
+6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
+7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
 8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. _Kaydet_ öğesine tıklayın.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

@@ -1,24 +1,24 @@
 ---
-title: Security features
+title: 보안 기능
 sidebar_position: 3
 ---
 
-The AdGuard DNS security settings are a set of configurations designed to protect the user's personal information.
+AdGuard DNS 보안 설정은 사용자의 개인정보를 보호하기 위해 설계된 일련의 구성입니다.
 
-Here you can choose which methods you want to use to protect yourself from attackers. This will protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data.
+여기에서 공격자로부터 자신을 보호하기 위해 사용할 방법을 선택할 수 있습니다. 이는 피싱 및 가짜 웹사이트 방문과 민감한 데이터의 잠재적 유출로부터 보호해 줍니다.
 
-### Block malicious, phishing, and scam domains
+### 악성, 피싱 및 사기 도메인 차단
 
-To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+현재까지 1,500만 개 이상의 사이트를 분류하고 피싱 및 멀웨어로 알려진 150만 개 웹사이트의 데이터베이스를 구축했습니다. AdGuard는 이 데이터베이스를 사용하여 사용자가 방문하는 웹사이트를 확인하여 온라인 위협으로부터 사용자를 보호합니다.
 
-### Block newly registered domains
+### 새로 등록된 도메인 차단
 
-Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
-Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
+사기꾼들은 종종 피싱 및 사기성 계획을 위해 최근에 등록된 도메인을 사용합니다. 이런 이유로 인해, 우리는 도메인의 수명 감지 및 최근에 생성된 경우 차단하는 특별한 필터를 개발했습니다.
+때때로 이는 잘못된 긍정 반응을 일으킬 수 있지만, 통계에 따르면 대부분의 경우 이 설정이 여전히 사용자의 기밀 데이터 손실로부터 보호합니다.
 
-### Block malicious domains using blocklists
+### 차단 목록을 사용하여 악성 도메인 차단
 
-AdGuard DNS supports adding third-party blocking filters.
-Activate filters marked `security` for additional protection.
+AdGuard DNS는 타사 차단 필터 추가를 지원합니다.
+`보안`으로 표시된 필터를 활성화하여 추가 보호를 받으세요.
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+차단 목록에 대해 자세히 알아보려면 [별도의 문서](/private-dns/setting-up-filtering/blocklists.md)를 참조하세요.

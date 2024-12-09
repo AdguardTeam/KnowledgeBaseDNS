@@ -1,6 +1,6 @@
 ---
 title: Créditos e agradecimentos
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores do software de terceiros que usamos no AdGuard DNS, nossos ótimos testadores beta e outros usuários comprometidos, cuja ajuda para encontrar e eliminar todos os bugs, traduzir o AdGuard DNS e moderar nossas comunidades é inestimável.

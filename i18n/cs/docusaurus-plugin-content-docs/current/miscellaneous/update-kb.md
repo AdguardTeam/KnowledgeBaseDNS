@@ -1,6 +1,6 @@
 ---
 title: 'Aktualizace databáze znalostí'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 Cílem této databáze znalostí je poskytnout všem nejaktuálnější informace o všech druzích témat souvisejících s AdGuardDNS. Věci se však neustále mění a někdy už článek neodráží aktuální stav věcí — není nás tolik, abychom mohli sledovat každou informaci a aktualizovat ji podle toho, když jsou vydány nové verze.

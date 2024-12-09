@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: 기업
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+이 탭은 가장 많은 요청을 전송하는 기업과 가장 많은 요청이 차단된 기업을 빠르게 확인할 수 있게 해줍니다.
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![기업 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+기업 페이지는 두 개의 카테고리로 나뉘어 있습니다:
 
-- **Top requested company**
-- **Top blocked company**
+- **상위 요청 기업**
+- **상위 차단 기업**
 
-These are further divided into sub-categories:
+이들은 다시 하위 카테고리로 나뉩니다:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **광고**: 사용자 데이터를 수집 및 공유하고 행동을 분석하며 광고를 타겟팅하는 광고 및 기타 광고 관련 요청
+- **추적기**: 사용자 활동을 추적하기 위해 웹사이트와 제3자에서 발생한 요청
+- **소셜 미디어**: 소셜 네트워크 웹사이트에 대한 요청
+- **CDN**: 최종 사용자에게 콘텐츠를 빠르게 전송하는 전 세계 프록시 서버 네트워크인 CDN(콘텐츠 전송 네트워크)에 연결된 요청
+- **기타**
 
-### Top companies
+### 상위 기업
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+이 표에서는 가장 많이 방문된 또는 가장 많이 차단된 기업의 이름뿐만 아니라, 어떤 도메인에서 요청이 발생하는지 또는 어떤 도메인이 가장 많이 차단되고 있는지에 대한 정보도 제공합니다.
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)
+![상위 기업 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

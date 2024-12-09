@@ -5,7 +5,7 @@ sidebar_position: 10
 
 UiFi yönlendirici (genellikle Ubiquiti'nin UniFi serisi olarak bilinir), onu özellikle ev, iş ve kurumsal ortamlar için uygun kılan bir dizi avantaja sahiptir. Ne yazık ki, şifrelenmiş DNS'i desteklemiyor, ancak bağlantılı IP üzerinden AdGuard DNS'i kurmak için harikadır.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

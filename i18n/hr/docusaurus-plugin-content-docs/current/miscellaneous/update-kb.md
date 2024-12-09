@@ -1,6 +1,6 @@
 ---
 title: 'Updating the Knowledge Base'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.

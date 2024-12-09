@@ -1,6 +1,6 @@
 ---
 title: '更新知识库'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 本知识库的目标是为每个人提供有关各种AdGuard DNS相关主题的最新信息。 但是事情在不断变化，有时一篇文章不再反映事物的当前状态——我们中没有那么多人关注每一个信息并在新版本发布时相应地更新它。
@@ -19,9 +19,9 @@ sidebar_position: 3
 
 ## 翻译文章 {#translate-adguard}
 
-知识库现有文章的翻译是在 [Crowdin 平台](https://crowdin.com/project/adguard-knowledge-bases)上进行的。 All the details about translations and working with Crowdin can be found [in the dedicated article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/) of the AdGuard Ad Blocker Knowledge Base.
+知识库现有文章的翻译是在 [Crowdin 平台](https://crowdin.com/project/adguard-knowledge-bases)上进行的。 有关翻译和使用 Crowdin 的所有详细信息，都可以在 AdGuard 广告拦截器知识库的[此篇文章](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/)中找到。
 
-在撰写AdGuard DNS知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 [In a separate article](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/), we describe in detail the difficulties that can arise when translating strings with plural forms, and provide extensive instructions on how to work with them on the Crowdin platform.
+在撰写AdGuard DNS知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 [在另一篇文章中](https://adguard.com/kb/miscellaneous/contribute/translate/plural-forms/)，我们详细描述了翻译具有复数形式的字符串时可能出现的困难，并就如何在 Crowdin 平台上处理这些问题给出了额外的说明。
 
 ## 解决待解决的问题
 

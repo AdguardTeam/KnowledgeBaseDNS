@@ -21,7 +21,7 @@ Les instructions ci-dessous expliquent comment connecter une IP dédiée à l'ap
 
 ## Connectez AdGuard DNS en utilisant des IPs dédiées
 
-1. Ouvrez le Tableau de bord.
+1. Open Dashboard.
 2. Ajoutez un nouvel appareil ou ouvrez les paramètres d'un appareil précédemment créé.
 3. Sélectionnez _Utiliser les adresses des serveurs_.
 4. Ensuite, ouvrez _Adresses des serveurs DNS brut_.

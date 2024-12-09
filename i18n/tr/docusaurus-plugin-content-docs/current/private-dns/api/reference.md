@@ -199,12 +199,12 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Yanıtlar
 
-| Kod | Açıklama                                      |
-| --- | --------------------------------------------- |
-| 200 | Özel IPv4 başarıyla cihaza bağlandı           |
-| 400 | Doğrulama başarısız                           |
-| 404 | Cihaz veya adres bulunamadı                   |
-| 429 | Linked dedicated IPv4 count reached the limit |
+| Kod | Açıklama                            |
+| --- | ----------------------------------- |
+| 200 | Özel IPv4 başarıyla cihaza bağlandı |
+| 400 | Doğrulama başarısız                 |
+| 404 | Cihaz veya adres bulunamadı         |
+| 429 | Özel IPv4 sayısı limite ulaştı      |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 

@@ -55,7 +55,7 @@ Es gibt Hunderte von verschiedenen DNS-Sperrlisten, die Sie [hier](https://filte
 
 ## DNS-Filterung im Vergleich zur Netzwerkfilterung
 
-Netzwerkfilterung ist der Begriff, den wir für die 'übliche' Art und Weise verwenden, wie eigenständige AdGuard-Apps den Netzwerkverkehr verarbeiten, daher der Name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Netzwerkfilterung ist der Begriff, den wir für die 'übliche' Art und Weise verwenden, wie eigenständige AdGuard-Apps den Netzwerkverkehr verarbeiten, daher der Name. Sie können sich gerne näher damit vertraut machen, indem Sie [diesen Artikel](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/) lesen.
 
 Zunächst einmal müssen wir erwähnen, dass Sie mit AdGuard nicht wählen müssen. Sie können immer sowohl die reguläre Netzwerkfilterung als auch die DNS-Filterung gleichzeitig verwenden. Es ist jedoch wichtig, die Hauptunterschiede zwischen den beiden zu verstehen. Die DNS-Filterung hat sowohl ihre einzigartigen Vor- als auch Nachteile:
 

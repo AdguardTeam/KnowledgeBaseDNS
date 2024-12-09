@@ -5,9 +5,7 @@ sidebar_position: 3
 
 ## Co jsou propojené IP adresy a proč jsou užitečné
 
-Ne všechna zařízení mohou podporovat šifrované protokoly DNS. V takovém případě by uživatelé měli zvážit nastavení nešifrovaného DNS.
-
-Můžete použít **propojenou IP adresu**: v tomto nastavení bude služba zohledňovat všechny standardní dotazy DNS přicházející z této IP adresy a pro toto konkrétní zařízení. Jediným požadavkem na propojenou IP adresu je, že se musí jednat o rezidenční IP adresu.
+Ne všechna zařízení podporují šifrované protokoly DNS. V takovém případě byste měli zvážit nastavení nešifrovaného DNS. Můžete například použít **propojenou IP adresu**. Jediným požadavkem na propojenou IP adresu je, že se musí jednat o rezidenční IP adresu.
 
 :::note
 
@@ -26,12 +24,12 @@ Následující pokyny vysvětlují, jak se k zařízení připojit pomocí **pro
 1. Otevřete hlavní panel.
 2. Přidejte nové zařízení nebo otevřete nastavení dříve připojeného zařízení.
 3. Přejděte na _Použít adresy DNS serverů_.
-4. Otevřete _Běžné adresy DNS serveru_ a připojte propojenou IP.
+4. Otevřete _Adresy běžného DNS serveru_ a připojte propojenou IP.
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamický DNS: Proč je užitečný
 
-Při každém připojení zařízení k síti získá novou dynamickou IP adresu. Když se zařízení odpojí, server DHCP znovu přidělí IP adresy zbývajícím zařízením. To znamená, že dynamické IP adresy se mohou často a nepředvídatelně měnit. Proto je nutné aktualizovat nastavení při každém restartu zařízení nebo při změně sítě.
+Při každém připojení zařízení k síti získá novou dynamickou IP adresu. Když se zařízení odpojí, server DHCP může uvolněnou adresu IP přidělit jinému zařízení v síti. To znamená, že dynamické IP adresy se často a nepředvídatelně mění. Proto je nutné aktualizovat nastavení při každém restartu zařízení nebo při změně sítě.
 
 Chcete-li automaticky aktualizovat propojenou IP adresu, můžete použít DNS. AdGuard DNS pravidelně kontroluje IP adresu vaší domény DDNS a propojuje ji s vaším serverem.
 
@@ -57,7 +55,7 @@ Takto nebudete muset ručně aktualizovat přidruženou IP adresu při každé j
 
 Hotovo, úspěšně jste nastavili DDNS!
 
-## Automatizace propojené aktualizace IP pomocí skriptu
+## Automatizace aktualizace propojené IP pomocí skriptu
 
 ### Ve Windows
 

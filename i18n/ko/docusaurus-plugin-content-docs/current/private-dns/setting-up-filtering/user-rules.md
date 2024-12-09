@@ -1,30 +1,30 @@
 ---
-title: User rules
+title: 사용자 규칙
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## 사용자 규칙이란 무엇이며 왜 필요한가요?
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+사용자 규칙은 일반 차단 목록에서 사용되는 것과 동일한 필터링 규칙입니다. 규칙을 수동으로 추가하거나 미리 정의된 목록에서 가져와 웹사이트 필터링을 필요에 맞게 사용자 정의할 수 있습니다.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+환경 설정에 더 잘 맞고 필터링을 더 유연하게 만들기 위해 AdGuard DNS 필터링 규칙에 대한 [규칙 구문](/general/dns-filtering-syntax/)을 확인하세요.
 
-## How to use
+## 사용 방법
 
-To set up user rules:
+사용자 규칙을 설정하는 방법
 
-1. Navigate to the _Dashboard_.
+1. **대시보드**로 이동합니다.
 
-2. Go to the _Servers_ section.
+2. **서버** 섹션으로 이동합니다.
 
-3. Select the required server.
+3. 필요한 서버를 선택합니다.
 
-4. Click the _User rules_ option.
+4. **사용자 규칙** 옵션을 클릭합니다.
 
-5. You'll find several options for adding user rules.
+5. 사용자 규칙을 추가할 수 있는 몇 가지 옵션이 있습니다.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - 가장 쉬운 방법은 생성기를 사용하는 것입니다. 생성기를 사용하려면 **새 규칙 추가** → 차단 또는 차단 해제할 도메인의 이름을 입력하고 **규칙 추가**를 클릭합니다.
+     ![규칙 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - 고급 방법은 규칙 편집기를 사용하는 것입니다. **편집기 열기**를 클릭하고 [구문](/general/dns-filtering-syntax/)에 따라 차단 규칙을 입력하세요.
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+이 기능을 사용하면 [DNS 쿼리의 내용을 교체하여 다른 도메인으로 쿼리를 리디렉션](/general/dns-filtering-syntax/#dnsrewrite-modifier)할 수 있습니다.

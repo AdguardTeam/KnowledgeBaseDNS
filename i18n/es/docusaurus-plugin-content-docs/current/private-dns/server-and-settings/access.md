@@ -15,7 +15,7 @@ Esta configuración permite especificar qué clientes pueden usar tu servidor DN
 
 ### Clientes no permitidos
 
-Aquí puedes enumerar los clientes que no están permitidos para usar tu servidor DNS. Puedes bloquear el acceso a todos los clientes y usar solo los seleccionados. Para hacer esto, agrega dos direcciones a los clientes no permitidos: `0.0.0.0.0/0` y `::/0`. Luego, en el campo _Clientes permitidos_, especifica las direcciones que pueden acceder a tu servidor.
+Aquí puedes enumerar los clientes que no están permitidos para usar tu servidor DNS. Puedes bloquear el acceso a todos los clientes y usar solo los seleccionados. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Luego, en el campo _Clientes permitidos_, especifica las direcciones que pueden acceder a tu servidor.
 
 :::note Importante
 

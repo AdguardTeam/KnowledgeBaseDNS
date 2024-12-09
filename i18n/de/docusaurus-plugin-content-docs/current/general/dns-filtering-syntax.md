@@ -125,7 +125,7 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is the delimiter between modifiers. Und schließlich ist `dnstype=A` der Modifikator [`dnstype`][] mit seinem Wert `A`.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`-][]Modifikator mit seinem Wert `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der Modifikator [`dnstype`][] mit seinem Wert `A`.
 
 **Hinweis:** Wenn eine Regel einen Modifikator enthält, der nicht in diesem Dokument aufgeführt ist, wird die gesamte Regel **nicht berücksichtigt**. Auf diese Weise vermeiden wir fehlerhafte Ergebnisse, wenn Nutzer:innen versuchen, die Filterlisten von unveränderten Werbeblockern wie „EasyList” oder „EasyPrivacy” zu verwenden.
 
@@ -257,7 +257,7 @@ Der `dnsrewrite`-Antwortmodifikator erlaubt es, den Inhalt der Antwort auf die D
 
 **Regeln mit dem Antwortmodifikator `dnsrewrite` haben eine höhere Priorität als andere Regeln in AdGuard Home.**
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Die Antworten auf alle Anfragen nach einem Host, der einer `dnsrewrite`-Regel entspricht, werden ersetzt. Der Antwortteil der Ersatzantwort enthält nur RRs, die dem Abfragetyp der Anfrage entsprechen, und möglicherweise CNAME-RRs. Beachten Sie, dass dies bedeutet, dass Antworten auf einige Anfragen leer sein können (`NODATA`), wenn der Host einer `dnsrewrite`-Regel entspricht.
 
 Die Kurzsyntax lautet:
 
@@ -316,7 +316,7 @@ führt zu einer Antwort mit zwei `A`-Datensätzen.
 
 Derzeit unterstützte RR-Typen mit Beispielen:
 
-- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR` record for reverse DNS. Reverse-DNS-Anfragen für `1.2.3.4` an den DNS-Server ergeben `example.net`.
+- `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` fügt einen `PTR`-Eintrag für Reverse DNS hinzu. Reverse-DNS-Anfragen für `1.2.3.4` an den DNS-Server ergeben `example.net`.
 
   **HINWEIS:** Die IP MUSS in umgekehrter Reihenfolge angegeben werden. Siehe [RFC 1035][rfc1035].
 
@@ -349,11 +349,11 @@ Derzeit unterstützte RR-Typen mit Beispielen:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` antwortet mit einem leeren `NOERROR` antwortet auf alle `AAAA` Anfragen außer denen für `example.org`.
 
-Exception rules unblock one or all rules:
+Ausschlussregeln heben die Sperre einer oder aller Regeln auf:
 
-- `@@||example.com^$dnsrewrite` unblocks all DNS rewrite rules.
+- `@@||example.com^$dnsrewrite` hebt das Sperren aller DNS-Rewrite-Regeln auf.
 
-- `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
+- `@@||example.com^$dnsrewrite=1.2.3.4` hebt die DNS-Rewrite-Regel auf, die einen `A`-Eintrag mit dem Wert `1.2.3.4` hinzufügt.
 
 #### `important` {#important-modifier}
 
@@ -505,7 +505,7 @@ Was es kann:
 <!-- external links -->
 [Adblock-Syntax]: #adblock-style-syntax
 [im Stil von Adblock zu verwenden]: #adblock-style-syntax
-[`client`]: #client-modifier
+[`client`-]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 [AdGuard DNS Filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist Compiler]: https://github.com/AdguardTeam/HostlistCompiler

@@ -15,7 +15,7 @@ Ce paramètre vous permet de spécifier quels clients peuvent utiliser votre ser
 
 ### Clients non autorisés
 
-Ici, vous pouvez lister les clients qui ne sont pas autorisés à utiliser votre serveur DNS. Vous pouvez bloquer l'accès à tous les clients et n'utiliser que ceux sélectionnés. Pour cela, ajoutez deux adresses aux clients non autorisés : `0.0.0.0.0/0` et `::/0`. Ensuite, dans le champ _Clients autorisés_, spécifiez les adresses qui peuvent accéder à votre serveur.
+Ici, vous pouvez lister les clients qui ne sont pas autorisés à utiliser votre serveur DNS. Vous pouvez bloquer l'accès à tous les clients et n'utiliser que ceux sélectionnés. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Ensuite, dans le champ _Clients autorisés_, spécifiez les adresses qui peuvent accéder à votre serveur.
 
 :::note Important
 
