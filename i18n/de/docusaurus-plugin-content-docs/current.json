@@ -40,11 +40,11 @@
     "description": "The label for category AdGuard DNS Client in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to connect devices": {
-    "message": "How to connect devices",
+    "message": "So verbinden Sie Geräte",
     "description": "The label for category How to connect devices in sidebar sidebar"
   },
   "sidebar.sidebar.category.Mobile and desktop": {
-    "message": "Mobile and desktop",
+    "message": "Mobil und Desktop",
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
@@ -52,11 +52,11 @@
     "description": "The label for category Routers in sidebar sidebar"
   },
   "sidebar.sidebar.category.Game consoles": {
-    "message": "Game consoles",
+    "message": "Spielkonsolen",
     "description": "The label for category Game consoles in sidebar sidebar"
   },
   "sidebar.sidebar.category.Other options": {
-    "message": "Other options",
+    "message": "Weitere Optionen",
     "description": "The label for category Other options in sidebar sidebar"
   },
   "sidebar.sidebar.category.Server and settings": {
@@ -68,7 +68,7 @@
     "description": "The label for category How to set up filtering in sidebar sidebar"
   },
   "sidebar.sidebar.category.Statistics and Query log": {
-    "message": "Statistics and Query log",
+    "message": "Statistiken und Anfragenprotokoll",
     "description": "The label for category Statistics and Query log in sidebar sidebar"
   }
 }

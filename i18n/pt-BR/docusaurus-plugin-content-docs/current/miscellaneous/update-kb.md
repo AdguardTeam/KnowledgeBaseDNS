@@ -1,6 +1,6 @@
 ---
 title: 'Atualizando a Base de Conhecimento'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 O objetivo desta Base de conhecimento é fornecer a todos as informações mais atualizadas sobre todos os tipos de tópicos relacionados ao AdGuard DNS. Mas as coisas mudam constantemente e, às vezes, um artigo não reflete mais o estado atual das coisas - simplesmente não há muitos de nós para ficar de olho em cada informação e atualizá-la de acordo quando novas versões são lançadas.

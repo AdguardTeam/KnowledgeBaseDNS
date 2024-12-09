@@ -5,9 +5,7 @@ sidebar_position: 3
 
 ## Was verknüpfte IPs sind und warum sie nützlich sind
 
-Nicht alle Geräte unterstützen verschlüsselte DNS-Protokolle. In diesem Fall sollten Nutzer:innen in Betracht ziehen, unverschlüsselten DNS einzurichten.
-
-Sie können eine **verknüpfte IP-Adresse** verwenden: In diesem Setup werden alle Standard-DNS-Anfragen von dieser IP-Adresse und für dieses spezielle Gerät berücksichtigt. Die einzige Voraussetzung für eine verknüpfte IP-Adresse ist, dass es sich um eine Wohnsitz-IP handeln muss.
+Nicht alle Geräte unterstützen verschlüsselte DNS-Protokolle. In diesem Fall sollten Sie die Einrichtung eines unverschlüsselten DNS in Betracht ziehen. Sie können zum Beispiel eine **verknüpfte IP-Adresse** verwenden. Die einzige Voraussetzung für eine verknüpfte IP-Adresse ist, dass es sich um eine private IP-Adresse handeln muss.
 
 :::note
 
@@ -31,7 +29,7 @@ Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über ei
 
 ## Dynamisches DNS: Warum es nützlich ist
 
-Jedes Mal, wenn ein Gerät eine Verbindung zum Netzwerk herstellt, erhält es eine neue dynamische IP-Adresse. Wenn ein Gerät die Verbindung trennt, weist der DHCP-Server die IP-Adressen den verbleibenden Geräten neu zu. Das bedeutet, dass dynamische IP-Adressen häufig und unvorhersehbar wechseln. Folglich müssen Sie die Einstellungen jedes Mal aktualisieren, wenn das Gerät neu gestartet wird oder sich das Netzwerk ändert.
+Jedes Mal, wenn ein Gerät eine Verbindung zum Netzwerk herstellt, erhält es eine neue dynamische IP-Adresse. Wenn ein Gerät die Verbindung trennt, kann der DHCP-Server die freigegebene IP-Adresse einem anderen Gerät im Netz zuweisen. Das bedeutet, dass sich dynamische IP-Adressen häufig und unvorhersehbar ändern. Folglich müssen Sie die Einstellungen jedes Mal aktualisieren, wenn das Gerät neu gestartet wird oder sich das Netzwerk ändert.
 
 Um die verknüpfte IP-Adresse automatisch zu aktualisieren, können Sie DNS verwenden. AdGuard DNS überprüft regelmäßig die IP-Adresse Ihrer DDNS-Domain und verknüpft sie mit Ihrem Server.
 
@@ -48,29 +46,29 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 1. Zuerst müssen Sie überprüfen, ob DDNS von Ihren Router-Einstellungen unterstützt wird:
    - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
    - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
-   - Navigieren Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. _Dies ist nur ein Beispiel, wie es aussehen könnte. Dies kann je nach Router variieren_
-     ![DDNS wird unterstützt \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. _Dies ist nur ein Beispiel, wie es aussehen könnte. Dies kann je nach Router variieren_
+     ![DDNS unterstützt \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 2. Registrieren Sie Ihre Domain bei einem beliebten Service wie [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) oder einem anderen DDNS-Anbieter Ihrer Wahl.
 3. Geben Sie die Domain in die Router-Einstellungen ein und synchronisieren Sie die Konfigurationen.
 4. Gehen Sie zu den Einstellungen der Verknüpften IP, um die Adresse zu verbinden, navigieren Sie dann zu _Erweiterte Einstellungen_ und klicken Sie auf _DDNS konfigurieren_.
 5. Geben Sie die Domain ein, die Sie zuvor registriert haben, und klicken Sie auf _DDNS konfigurieren_.
    ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Fertig! Sie haben DDNS erfolgreich eingestellt.
+Fertig! Sie haben DDNS erfolgreich eingerichtet!
 
 ## Automatisierung der Aktualisierung verknüpfter IPs über Skript
 
 ### Unter Windows
 
-Der einfachste Weg ist die Verwendung des Taskplaners:
+Der einfachste Weg ist die Verwendung des Aufgabenplaners:
 
 1. Erstellen Sie eine Aufgabe:
-   - Öffnen Sie den Taskplaner.
+   - Öffnen Sie den Aufgabenplaner.
    - Erstellen Sie eine neue Aufgabe.
-   - Legen Sie den Auslöser fest, um alle 5 Minuten ausgeführt zu werden.
+   - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
    - Wählen Sie _Programm ausführen_ als Aktion.
 2. Wählen Sie ein Programm:
-   - Geben Sie im Feld _Programm oder Skript_ `powershell` ein
+   - Geben Sie im Feld _Programm/Skript_ `powershell` ein
    - Geben Sie im Feld _Argumente hinzufügen_ ein:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Speichern Sie die Aufgabe.
@@ -91,6 +89,6 @@ Unter macOS und Linux ist es am einfachsten, `cron` zu verwenden:
 
 - Stellen Sie sicher, dass `curl` auf macOS und Linux installiert ist.
 - Denken Sie daran, die Adresse aus den Einstellungen zu kopieren und `ServerID` und `UniqueKey` zu ersetzen.
-- Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Taskplaner oder cron verwenden.
+- Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Aufgabenplaner oder cron verwenden.
 
 :::

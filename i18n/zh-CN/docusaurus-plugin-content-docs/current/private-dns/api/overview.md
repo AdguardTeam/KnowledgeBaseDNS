@@ -10,21 +10,21 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/API.md
 -->
 
-AdGuard DNS提供了一个 REST API，您可以使用它集成在您的应用程序中。
+AdGuard DNS 提供一个 REST API，可以使用它集成在您的应用程序中。
 
-## Authentication
+## 身份验证
 
 ### 生成访问令牌
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+使用以下参数向指定 URL 发送 POST 请求以生成 `access_token`：
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter    | Description                                                      |
-|:------------ |:---------------------------------------------------------------- |
-| **username** | Account email                                                    |
-| **password** | Account password                                                 |
-| mfa_token    | Two-Factor authentication token (if enabled in account settings) |
+| 参数           | 详细信息                  |
+|:------------ |:--------------------- |
+| **username** | 账号邮箱                  |
+| **password** | 账号密码                  |
+| mfa_token    | 双重身份验证令牌（如果已在账户设置中启用） |
 
 在响应中，您将同时获得 `access_token` 和 `refresh_token`。
 
@@ -55,15 +55,15 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### 刷新以生成访问令牌
 
-访问令牌有有效期限 Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+访问令牌有有效期限。 过期后，应用程序将需要使用 `refresh_token` 来请求新的 `access_token`。
 
 使用给定的参数发出以下 POST 请求以获取新的访问令牌：
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parameter         | Description                                                         |
-|:----------------- |:------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
+| 参数                | 详细信息                            |
+|:----------------- |:------------------------------- |
+| **refresh_token** | 必须使用 `REFRESH TOKEN` 来生成新的访问令牌。 |
 
 #### 示例请求
 
@@ -97,73 +97,73 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-| Parameter         | Description                            |
-|:----------------- |:-------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN` which is to be revoked |
+| 参数                | 详细信息                  |
+|:----------------- |:--------------------- |
+| **refresh_token** | 等待撤销的 `REFRESH TOKEN` |
 
-### Authorization endpoint
+### 授权端点
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> 要访问此端点，您需要通过 **devteam@adguard.com** 联系我们。 请描述您访问此端点的目的和用例，并提供重定向 URI。 获得批准后，您将收到一个唯一的客户端标识符，该标识符应用于 **client_id** 参数。
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+**/oapi/v1/oauth_authorize** 端点用于与资源所有者交互，并获取访问受保护资源的授权。
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+服务将用户重定向到 AdGuard 进行身份验证（如果您尚未登录），然后将您重定向回应用程序。
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+**/oapi/v1/oauth_authorize** 端点的请求参数如下：
 
-| Parameter         | Description                                                                                                                                                    |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| 参数                | 详细信息                                                            |
+|:----------------- |:--------------------------------------------------------------- |
+| **response_type** | 告诉授权服务器要执行哪个授权。                                                 |
+| **client_id**     | 请求授权的 OAuth 客户端的 ID。                                            |
+| **redirect_uri**  | 包含一个 URL。 该端点的成功响应会重定向到该 URL。                                   |
+| **state**         | 用于安全目的的不透明值。 如果请求中设置此请求参数，它将作为重定向 **redirect_uri** 的一部分返回给应用程序。 |
+| **aid**           | 联盟标识符                                                           |
 
-For example:
+示例：
 
 ```http request
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+用于告知授权服务器使用哪种授权类型 **response_type** 响应类型请求参数用法如下：
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- 对于隐式授权，使用 **response_type=token** 包含访问令牌。
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+一个成功的响应是 **302 Found**，将触发重定向到 **redirect_uri**（一个请求参数）。 响应参数嵌入在 **Location** 头部的 **redirect_uri** 参数的片段组件（即 `#` 后面的部分）中。
 
-For example:
+示例：
 
 ```http request
 HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### 访问API
+### 访问 API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+获取访问令牌和刷新令牌后，可以通过在请求头标中传递访问令牌来进行 API 调用。
 
 - 标头名称应为 `Authorization`
 - 标头值应为 `Bearer {access_token}`
 
 ## API
 
-### Reference
+### 参考资料
 
-Please see the methods reference [here](reference.md).
+请点击[此处](reference.md)查看方法参考。
 
 ### 开源API 规范
 
 OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]。
 
-您可以使用不同的工具来查看可用 API 方法的列表。 For instance, you can open this file in [https://editor.swagger.io/][swagger].
+您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以使用 Swagger 编辑器 [https://editor.swagger.io/][swagger] 打开此文件。
 
-### Changelog
+### 更新日志
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+完整的 AdGuard DNS API 更新日志可在[此页面](private-dns/api/changelog.md)查看。
 
-## Feedback
+## 反馈
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您希望添加的内容。
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

@@ -6,38 +6,38 @@ slug: /
 
 ## DNS 是什么？
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS stands for "Domain Name System", and its purpose is to convert website names into IP addresses. 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
+DNS 表示“域名系统”，它可以将网站的域名转换为 IP 地址。 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
 
 :::note
 
-The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+默认 DNS 服务器通常由用户的 ISP 提供。 这意味着您的 ISP 可以跟踪用户的在线活动并将日志出售给第三方。
 
 :::
 
-![Your device always uses a DNS server to obtain the IP addresses of the domains that are accessed by various apps, services, etc.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
+![您的设备始终使用 DNS 服务器来获取应用，服务的域名的 IP 地址](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+也有一些 DNS 服务器可以在 DNS 层面拦截特定的网站。 它们是如何工作的？ 当设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过回复被拦截域名一个不可路由的 IP 地址来阻止连接。
 
-## Why use DNS for content blocking
+## 为什么要使用 DNS 进行内容拦截？
 
-Absolutely everything is connected to the Internet these days, from TV to smart light bulbs, from mobile devices to smart car. And where the Internet is, there are ads and trackers. In this case, a browser-based ad blocker has proven insufficient. To get a better protection, use DNS in combination with VPN and ad blocker.
+如今的一切都连接到互联网，从电视到智能电灯，从移动设备到智能汽车。 然而哪里有互联网，哪里就有广告和跟踪器。 在这种情况下，基于浏览器的广告拦截器被证明是不够的。 要获得更好地保护，请同时使用 DNS，VPN 和广告拦截程序。
 
-Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS is in the loop for queries from all devices and their apps. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
+使用 DNS 进行内容拦截既有优点，也有明显的缺陷。 一方面，DNS 负责处理来自所有设备及其应用程序的查询。 不过，在另一方面，单独的 DNS 拦截不能提供外观过滤。
 
 ## 什么是 AdGuard DNS？
 
-AdGuard DNS is one of the most privacy-oriented DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
+AdGuard DNS 是市场上最注重隐私的 DNS 服务之一。 它支持如此可靠的加密协议，例如 DNS-over-HTTPS，DNS-over-TLS和DNS-over-Quic。 它可以在无过滤模式下作为常规DNS 解析器工作，也可以提供 DNS 级别的内容过滤：识别指向广告，跟踪器和/或成人内容的域名（可选），并以空响应回复。 AdGuard 拥有自己的数据库，经常更新提供广告、跟踪器和欺诈服务的网域名称。
 
-![An approximate scheme of how AdGuard DNS works](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
+![AdGuard DNS 的大致工作原理](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 
-About 75% of AdGuard DNS traffic is encrypted. This is actually what differentiates content-blocking DNS servers from others. If you take a look at CloudFlare or Quad9 stats, you’ll see that encrypted DNS is just a small share of all queries.
+大约 75% 的 AdGuard DNS 流量被加密。 这实际上就是内容屏蔽 DNS 服务器与其他服务器的区别。 如果查看一下 CloudFlare 或 Quad9 的统计数据，您就会发现加密 DNS 只占所有查询的一小部分。
 
-AdGuard DNS exists in two main forms: [Public AdGuard DNS](public-dns/overview) and [Private AdGuard DNS](private-dns/overview). None of these services require the installation of apps. They are easy to set up and use, and provide users with the minimum features necessary to block ads, trackers, malicious websites, and adult content (if required). There are no restrictions on what devices they can be used with.
+AdGuard DNS 存在两种主要的形式：[公共 AdGuard DNS](public-dns/overview)，以及[私有 AdGuard DNS](private-dns/overview)。 这些服务都不需要安装应用程序。 它们易于设置和使用，可为用户提供阻止广告、跟踪器、恶意网站和成人内容（如需要）所需的最低限度功能。 而且它们对可用的设备类型没有任何限制。
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different products. Their main difference is that you can customize Private AdGuard DNS, while Public AdGuard DNS cannot.
+尽管他们有许多相似之处，私有 AdGuard DNS 服务和公共 AdGuard DNS 服务是两种不同的产品。 它们的主要区别在于用户可以自定义私有 AdGuard DNS，而公共 AdGuard DNS 则不能。
 
-## AdGuard产品中的DNS过滤模块
+## AdGuard 产品中的 DNS 过滤模块
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — Public or Private.
+AdGuard 的所有主要服务，包括 AdGuard VPN，都有 **DNS 过滤模块**，用户可以选择自己信任的供应商提供的 DNS 服务器。 当然，AdGuard DNS 默认、AdGuard DNS 无过滤和 AdGuard DNS 家庭保护都在列表中。 此外，AdGuard 应用程序允许用户[简单轻松配置和使用 AdGuard DNS](https://adguard-dns.io/public-dns.html)，无论是公共还是私有的。

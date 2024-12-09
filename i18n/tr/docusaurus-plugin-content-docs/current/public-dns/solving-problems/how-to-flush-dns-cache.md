@@ -102,7 +102,7 @@ Komut İstemi'ni yönetici olarak açın. Başlat Menüsünde *komut istemi* vey
 
 ### Linux
 
-Linux does not have OS-level DNS caching unless a caching service such as systemd-resolved, DNSMasq, BIND, or nscd is installed and running. DNS önbelleğini temizleme işlemi Linux dağıtımına ve kullanılan önbellekleme hizmetine bağlıdır.
+Linux, systemd-resolved, DNSMasq, BIND veya nscd gibi bir önbellekleme hizmeti kurulu ve çalışıyor olmadığı sürece işletim sistemi düzeyinde DNS önbelleğine sahip değildir. DNS önbelleğini temizleme işlemi Linux dağıtımına ve kullanılan önbellekleme hizmetine bağlıdır.
 
 Her dağıtım için bir terminal penceresi başlatmanız gerekir. Klavyenizde Ctrl+Alt+T tuşlarına basın ve Linux sisteminizin çalıştırdığı hizmetin DNS önbelleğini temizlemek için ilgili komutu kullanın.
 
@@ -142,7 +142,7 @@ Sunucunun başarıyla yeniden yüklendiği mesajını alırsınız.
 
 ## Chrome'da DNS önbelleği nasıl temizlenir
 
-Özel AdGuard DNS veya AdGuard Home ile çalışırken her seferinde bir tarayıcıyı yeniden başlatmak istemiyorsanız bu yararlı olabilir. Settings 1–2 only need to be changed once.
+Özel AdGuard DNS veya AdGuard Home ile çalışırken her seferinde bir tarayıcıyı yeniden başlatmak istemiyorsanız bu yararlı olabilir. 1–2 ayarlarının yalnızca bir kez değiştirilmesi gereklidir.
 
 1. Chrome ayarlarında **güvenli DNS** öğesini devre dışı bırakın
 

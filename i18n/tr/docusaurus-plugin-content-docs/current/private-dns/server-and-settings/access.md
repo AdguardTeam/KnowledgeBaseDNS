@@ -3,9 +3,9 @@ title: Erişim ayarları
 sidebar_position: 3
 ---
 
-Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karşı koruyabilirsiniz. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karşı koruyabilirsiniz. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. Sorun değil, sadece sinir bozucu alan adını veya IP adresini listeye ekleyin ve artık sizi rahatsız etmesin!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+Engellenen istekler Sorgu Günlüğünde görüntülenmeyecek ve toplam limite dâhil edilmeyecektir.
 
 ## Nasıl ayarlanır
 
@@ -15,18 +15,18 @@ Bu ayar, hangi istemcilerin DNS sunucunuzu kullanabileceğini belirlemenizi sağ
 
 ### İzin verilmeyen istemciler
 
-Burada DNS sunucunuzu kullanmasına izin verilmeyen istemcileri listeleyebilirsiniz. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Burada DNS sunucunuzu kullanmasına izin verilmeyen istemcileri listeleyebilirsiniz. Tüm istemcilerin erişimini engelleyebilir ve yalnızca seçilenleri kullanabilirsiniz. Bunu yapmak için izin verilmeyen istemcilere iki adres ekleyin: `0.0.0.0/0` ve `::/0`. Daha sonra _İzin verilen istemciler_ alanına sunucunuza erişebilecek adresleri belirtin.
 
 :::note Önemli
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Erişim ayarlarını uygulamadan önce, kendi IP adresinizi engellemediğinizden emin olun. Eğer bunu yaparsanız, ağa erişemezsiniz. Eğer böyle bir durum olursa, DNS sunucusundan bağlantınızı kesin, erişim ayarlarına gidin ve yapılandırmaları buna göre ayarlayın.
 
 :::
 
 ### İzin verilmeyen alan adları
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+Burada, DNS sunucunuza erişimi reddedilecek alan adlarını (joker karakter ve DNS filtreleme kurallarının yanı sıra) belirtebilirsiniz.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![Erişim ayarları \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+Sorgu günlüğünde DNS istekleriyle ilişkili IP adreslerini görüntülemek için _IP adreslerini günlüğe kaydet_ onay kutusunu seçin. Bunu yapmak için _Sunucu ayarları_ → _Gelişmiş ayarlar_ öğesini açın.

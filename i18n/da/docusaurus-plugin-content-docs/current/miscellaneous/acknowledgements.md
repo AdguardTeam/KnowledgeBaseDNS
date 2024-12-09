@@ -1,6 +1,6 @@
 ---
 title: Tilskrivninger og Anerkendelser
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 Vores udviklerteam vil gerne takke udviklerne af den tredjepartssoftware, vi anvender i AdGuard DNS, vores fantastiske betatestere og andre engagerede brugere, hvis hjælp til at finde og eliminere alle fejlene, oversætte AdGuard DNS og moderere vores fællesskaber er uvurderlig.

@@ -1,65 +1,65 @@
 ---
-title: Blocklists
+title: 拦截列表
 sidebar_position: 1
 ---
 
-## What blocklists are
+## 拦截列表是什么
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+拦截列表是 AdGuard DNS 用于过滤可能危害用户隐私的广告和内容的规则集，格式为文本。 通常，一个过滤器由具有相似用途的规则构成。 例如，可以创建用于网站语言的规则（如中文或俄语的过滤规则）或针对钓鱼网站的规则（例如，网络钓鱼 URL 拦截列表）。 用户可以轻松地将这些规则作为一个组启用或禁用。
 
-## Why they are useful
+## 为什么拦截列表有用
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+拦截列表旨在灵活定制过滤规则。 例如，用户可能希望阻止特定语言区域的广告域名，或者摆脱跟踪器或广告域名。 选择所需的拦截列表，按您的喜好自定义过滤规则。
 
-## How to activate blocklists in AdGuard DNS
+## 如何在 AdGuard DNS 中激活拦截列表
 
-To activate the blocklists:
+要激活拦截列表：
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. 打开仪表盘。
+2. 前往「_服务器_」。
+3. 选择所需的服务器。
+4. 点击「_拦截列表_」。
 
-## Blocklists types
+## 拦截列表类型
 
-### General
+### 通用
 
-A group of filters that includes lists for blocking ads and tracking domains.
+包含屏蔽广告和跟踪域名列表的过滤组。
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![常规模式拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
-### Regional
+### 区域
 
-A group of filters consisting of regional lists to block domains in specific languages.
+一个包含区域列表，用于屏蔽特定语言中的域名的过滤组。
 
-![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![区域拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
 ### 安全
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+包含规则，用于屏蔽欺诈网站和钓鱼域名的过滤组。
 
-![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![安全拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
-### Other
+### 其他
 
-Blocklists with various blocking rules from third-party developers.
+来自第三方开发者的各种屏蔽规则的拦截列表。
 
-![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![其他拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
 
-## Adding filters
+## 添加过滤器
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+如果您希望扩展 AdGuard DNS 过滤器列表，可以在 GitHub 上的 [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) 的相关部分提交请求。
 
-To submit a request:
+提交请求：
 
-1. Go to the link above (you may need to register on GitHub).
-2. Click _New issue_.
-3. Click _Blocklist request_ and fill out the form.
-4. After filling out the form, click _Submit new issue_.
+1. 前往上方链接（您可能需要在 GitHub 上注册）。
+2. 点击「_New issue_」。
+3. 点击「_Blocklist request_」并填写表格。
+4. 填写表格后，点击「_Submit new issue_」。
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+如果您的过滤器拦截规则与现有列表中的不重复，它将被添加到存储库中。
 
-## User rules
+## 用户规则
 
-You can also create your own blocking rules.
-Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+您也可以创建自己的拦截规则。
+在[用户规则文章](/private-dns/setting-up-filtering/user-rules.md)中了解更多内容。

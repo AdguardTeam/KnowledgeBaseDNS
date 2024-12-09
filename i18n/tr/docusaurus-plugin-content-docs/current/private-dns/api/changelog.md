@@ -124,7 +124,7 @@ From:
 }
 ```
 
-here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
+burada, değeri `block_dangerous_domains` içinde saklanan ve kullanımdan kaldırılan `safebrowsing_enabled` yerine yeni bir alan olan `safebrowsing_settings` kullanılır.
 
 ## v1.4
 

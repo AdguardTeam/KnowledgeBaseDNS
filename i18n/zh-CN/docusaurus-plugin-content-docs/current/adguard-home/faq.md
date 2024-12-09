@@ -3,15 +3,15 @@ title: 常见问题
 sidebar_position: 3
 ---
 
-## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
+## 为什么 AdGuard Home 无法拦截广告或阻止其他威胁？ {#doesntblock}
 
-Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
+假设用户希望 AdGuard Home 拦截 `somebadsite.com`，但由于某些原因无法拦截它。 让我们试图解决这个问题。
 
-Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
+可能的原因是，用户尚未配置设备使用 AdGuard Home 作为默认 DNS 服务器。 要检查 AdGuard Home 是否默认 DNS 服务器请执行以下操作：
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). On other systems, open your Terminal application.
+1. 在 Windows 上，打开命令提示符 (「开始」→「运行」→ `cmd.exe`)。 在其他系统上，打开终端应用程序。
 
-2. Execute `nslookup example.org`. It will print something like this:
+2. 执行 `nslookup example.org`。 它将打印如下内容：
 
    ```none
    Server: 192.168.0.1
@@ -24,110 +24,110 @@ Most likely, you haven’t configured your device to use AdGuard Home as the def
    Address: <IPv6>
    ```
 
-3. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. See [below](#defaultdns) how to do this.
+3. 检查 `Server` IP 地址是否为 AdGuard Home 运行的 IP 地址。 如果不是，请配置设备。 请[参阅](#defaultdns)了解如何操作。
 
-4. Ensure that your request to `example.org` appears in the AdGuard Home UI on the _Query Log_ page. If not, you need to configure AdGuard Home to listen on the specified network interface. The easiest way to do this is to reinstall AdGuard Home with default settings.
+4. 确保您的 `example.org` 请求显示在 AdGuard Home 用户界面的「查询日志」页面上。 如果没有，要将 AdGuard Home 配置为侦听指定的网络接口。 最简单的设置方法是使用默认设置重新安装 AdGuard Home。
 
-If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Please check and make sure that:
+如果您的设备使用 AdGuard Home 作为默认 DNS 服务器，但问题仍然存在，那么原因可能是 AdGuard Home 配置错误。 请检查以下设置：
 
-1. You have enabled the _Block domains using filters and hosts files_ setting on the _Settings_ → _General settings_ page.
+1. 在「设置」→「常规设置」页面上启用「使用过滤器和 Hosts 文件以拦截指定域名」设置。
 
-2. You have enabled the appropriate security mechanisms, such as Parental Control, on the same page.
+2. 在同一页面上启用适当的安全机制，例如「家长控制」。
 
-3. You have enabled the appropriate filters on the _Filters_ → _DNS blocklists_ page.
+3. 在「过滤器」→「DNS 拦截列表」页面上启用相应的过滤器。
 
-4. You don’t have any exception rule lists that may allow the requests enabled on the _Filters_ → _DNS allowlists_ page.
+4. 在「过滤器」→「DNS 白名单」页面上没有任何例外规则列表可能允许启用请求。
 
-5. You don’t have any DNS rewrites that may interfere on the _Filters_ → _DNS rewrites_ page.
+5. 在「过滤器」→「DNS 重写」页面上没有任何可能干扰的 DNS 重写。
 
-6. You don’t have any custom filtering rules that may interfere on the _Filters_ → _Custom filtering rules_ page.
+6. 在「过滤器」→「自定义过滤规则」页面上没有任何可能干扰的自定义过滤规则。
 
-## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+## 查询日志中的「按 CNAME 或 IP 拦截」是什么意思？ {#logs}
 
-AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cname-cloak]的广告拦截规避技术。 如果用户的过滤规则包含域名，例如 `tracker.example`，并且其他域名的 DNS 响应，例如 `blogs.example`，在其 CNAME 记录中包含此域名，则该响应将被拦截，因为它实际上指向被拦截的跟踪服务。
 
 [cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
 
-## Where can I view the logs? {#logs}
+## 在哪里可以查看日志？ {#logs}
 
-The default location of the plain-text logs (not to be confused with the query logs) depends on the operating system and installation mode:
+纯文本日志的默认位置 (不要与查询日志混淆) 取决于操作系统和安装模式：
 
 <!-- TODO(a.garipov): Add more info about Docker; add links to tools. -->
 
-- **OpenWrt Linux:** use the `logread -e AdGuardHome` command.
+- **OpenWrt Linux:** 使用 `logread -e AdGuardHome` 命令。
 
-- **Linux** systems with **systemd** and other **Unix** systems with **SysV-style init:** `/var/log/AdGuardHome.err`.
+- 带有 **systemd** 的 **Linux** 系统和其他带有 **SysV-style init** 的 **Unix** 系统：`/var/log/AdGuardHome.err`。
 
-- **macOS:** `/var/log/AdGuardHome.stderr.log`.
+- **macOS:** `/var/log/AdGuardHome.stderr.log`。
 
-- **Linux** systems with **Snapcraft** use the `snap logs adguard-home` command.
+- 带有 **Snapcraft** 的 **Linux** 系统使用 `snap logs adguard-home` 命令。
 
-- **FreeBSD:** `/var/log/daemon.log`.
+- **FreeBSD:** `/var/log/daemon.log`。
 
-- **OpenBSD:** `/var/log/daemon`.
+- **OpenBSD:** `/var/log/daemon`。
 
-- **Windows:** the [Windows Event Log][wlog] is used.
+- **Windows:** 使用 [Windows 事件日志][wlog]。
 
 [wlog]: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
 
-## How do I configure AdGuard Home to write verbose-level logs? {#verboselog}
+## 如何配置 AdGuard Home 以写入详细级别的日志？ {#verboselog}
 
-To troubleshoot a complicated issue, the verbose-level logging is sometimes required. Here’s how to enable it:
+若要解决复杂的问题，有时需要详细级别的日志记录。 启用方法如下：
 
-1. Stop AdGuard Home:
+1. 停止 AdGuard Home：
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Configure AdGuard Home to write verbose-level logs:
+2. 配置 AdGuard Home 以写入详细级别的日志：
 
-   1. Open `AdGuardHome.yaml` in your editor.
+   1. 在编辑器中打开 `AdGuardHome.yaml`。
 
-   2. Set `log.file` to the desired path of the log file, for example `/tmp/aghlog.txt`. Note that the directory must exist.
+   2. 将 `log.file` 设置为日志文件的所需路径，例如 `/tmp/aghlog.txt`。 请注意，该目录必须存在。
 
-   3. Set `log.verbose` to `true`.
+   3. 将 `log.verbose` 设置为 `true`。
 
-3. Restart AdGuard Home and reproduce the issue:
+3. 重新启动 AdGuard Home 并重现问题：
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-4. Once you’re done with the debugging, set `log.verbose` back to `false`.
+4. 完成调试后，将 `log.verbose` 设置为 `false`。
 
-## How do I show a custom block page? {#customblock}
+## 如何显示自定义拦截页面？ {#customblock}
 
 :::note
 
-Before doing any of this, please note that modern browsers are set up to use HTTPS, so they validate the authenticity of the web server certificate. This means that using any of these will result in warning screens.
+在执行操作之前，请注意，现代浏览器设置为使用 HTTPS，因此它们会验证 Web 服务器证书的真实性。 这意味着使用其中任何一个证书将导致出现一个警告。
 
-There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
+有许多扩展被建议使用，如果得到客户端的合理支持，它们将提供更好的用户体验，包括 [RFC 8914 Extended DNS Error codes][rfc8914] 和 [DNS Access Denied Error Page RFC draft][rfcaccess]。 当浏览器开始支持它们时，我们将应用它们。
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
 
-### Prerequisites
+### 先决条件
 
-To use any of these methods to display a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. Something like [`pixelserv-tls`][pxsrv].
+要使用这些方法中的任何一种来显示自定义拦截页面，用户需要在某个 IP 地址上运行的 HTTP 服务器，并在所有路由上提供相关页面。 类似于 [`pixelserv-tls`][pxsrv]。
 
 [pxsrv]: https://github.com/kvic-z/pixelserv-tls
 
-### Custom block page for Parental Control and Safe Browsing filters
+### 「家长控制」和「安全浏览」过滤器的自定义拦截页面
 
-There is currently no way to set these parameters from the UI, so you’ll need to edit the configuration file manually:
+目前无法从用户界面设置这些参数，因此需要手动编辑配置文件：
 
-1. Stop AdGuard Home:
+1. 停止 AdGuard Home：
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. 在编辑器中打开 `AdGuardHome.yaml`。
 
-3. Set the `dns.parental_block_host` or `dns.safebrowsing_block_host` settings to the IP address of the server (in this example, `192.168.123.45`):
+3. 将 `dns.parental_block_host` 或 `dns.safebrowsing_block_host` 设置为服务器的 IP 地址 (在本例中为 `192.168.123.45`)：
 
    ```yaml
    # …
@@ -139,73 +139,73 @@ There is currently no way to set these parameters from the UI, so you’ll need 
      safebrowsing_block_host: 192.168.123.45
    ```
 
-4. Restart AdGuard Home:
+4. 重新启动 AdGuard Home：
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-### Custom block page for other filters
+### 其他过滤器的自定义拦截页面
 
-1. Open the web UI.
+1. 打开网页界面。
 
-2. Navigate to _Settings_ → _DNS settings._
+2. 前往「设置」→「DNS 设置」。
 
-3. In the _DNS server configuration_ section, select the _Custom IP_ radio button in the _Blocking mode_ selector and enter the IPv4 and IPv6 addresses of the server.
+3. 在「DNS 服务器配置」部分中，选择「拦截模式」选择器中的「自定义 IP」单选按钮，然后输入服务器的 IPv4 和 IPv6 地址。
 
-4. Click _Save_.
+4. 点击「保存」。
 
-## How do I change dashboard interface’s address? {#webaddr}
+## 如何更改仪表盘界面的地址？ {#webaddr}
 
-1. Stop AdGuard Home:
+1. 停止 AdGuard Home：
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. 在编辑器中打开 `AdGuardHome.yaml`。
 
-3. Set the `http.address` setting to a new network interface. For example:
+3. 将 `http.address` 设置为新的网络接口。 例如：
 
-   - `0.0.0.0:0` to listen on all network interfaces;
-   - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
-   - `127.0.0.1:0` to listen on the local loopback interface only.
+   - `0.0.0.0:0` 监听所有网络接口；
+   - `0.0.0.0:8080` 监听所有端口为 `8080` 的网络接口；
+   - `127.0.0.1:0` 仅监听本地环回接口。
 
-4. Restart AdGuard Home:
+4. 重新启动 AdGuard Home：
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-## How do I set up AdGuard Home as default DNS server? {#defaultdns}
+## 如何将 AdGuard Home 设置为默认 DNS 服务器？ {#defaultdns}
 
-See the [_Configuring Devices_ section](getting-started.md#configure-devices) on the _Getting Started_ page.
+请参阅「入门」页面上的[「配置设备」部分](getting-started.md#configure-devices)。
 
-## Are there any known limitations? {#limitations}
+## 是否有任何已知限制？ {#limitations}
 
-Here are some examples of what cannot be blocked by a DNS-level blocker:
+以下是 DNS 级拦截器无法拦截的内容的一些示例：
 
-- YouTube, Twitch ads.
+- YouTube、Twitch 广告。
 
-- Facebook, X (formerly Twitter), Instagram sponsored posts.
+- Facebook、X (以前称为 Twitter)、Instagram 赞助帖子。
 
-Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker, unless you are ready to block the content as well.
+基本上，任何与内容共享域的广告都无法被 DNS 级拦截器屏蔽，除非用户愿意拦截其他内容。
 
-### Any possibility of dealing with this in the future?
+### 将来是否有可能处理这个问题？
 
-DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
+DNS 永远不足以做到这一点。 用户唯一的选择是使用内容拦截代理，就像我们在[独立 AdGuard 应用程序][adguard]中所做的那样。 我们打算在 AdGuard Home 添加对该功能的支持。 遗憾的是，即便如此，在某些情况下还是不够用，或者需要相当复杂的配置。
 
 [adguard]: https://adguard.com/
 
-## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
+## 在 Ubuntu 上尝试安装时收到 `bind: address already in use` 错误 {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. You can see this by running:
+发生这种情况的原因是 `localhost` 上用于 DNS 的端口 53 已被另一个程序占用。 Ubuntu 附带一个名为 `systemd-resolved` 的本地 DNS，它使用地址 `127.0.0.53:53`，因此阻止 AdGuard Home 绑定到 `127.0.0.1:53`。 用户可以通过运行以下命令来查看：
 
 ```sh
 sudo lsof -i :53
 ```
 
-The output should be similar to:
+输出应类似于：
 
 ```none
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
@@ -213,19 +213,19 @@ systemd-r 14542 systemd-resolve 13u IPv4 86178 0t0 UDP 127.0.0.53:domain
 systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 ```
 
-To fix this, you must either disable the `systemd-resolved` daemon or choose a different network interface and bind your AdGuard Home to an accessible IP address on it, such as the IP address of your router inside your network. But if you do need to listen on `localhost`, there are several solutions.
+要解决此问题，必须禁用 `systemd-resolved` 守护进程，或选择其他网络接口，并将 AdGuard Home 绑定到其上的可访问 IP 地址，例如网络内路由器的 IP 地址。 不过，如果要在本地主机上监听，则有几种解决方案。
 
-Firstly, AdGuard Home can detect such configurations and disable `systemd-resolved` for you if you press the _Fix_ button located next to the `address already in use` message on the installation screen.
+首先，如果用户按下安装屏幕上 `address already in use` 消息旁边的「修复」按钮，AdGuard Home 可以检测到此类配置并禁用 `systemd-resolved`。
 
-Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
+其次，如果这不起作用，请按照以下说明操作。 请注意，如果您将 AdGuard Home 与 docker 或 snap 一起使用，必须自行执行此操作。
 
-1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
+1. 如果需要，请创建 `/etc/systemd/resolved.conf.d` 目录：
 
    ```sh
    sudo mkdir -p /etc/systemd/resolved.conf.d
    ```
 
-2. Deactivate `DNSStubListener` and update DNS server address. To do that, create a new file, `/etc/systemd/resolved.conf.d/adguardhome.conf`, with the following content:
+2. 停用 `DNSStubListener` 并更新 DNS 服务器地址。 为此，请创建一个新文件 `/etc/systemd/resolved.conf.d/adguardhome.conf`，内容如下：
 
    ```service
    [Resolve]
@@ -233,26 +233,26 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
    DNSStubListener=no
    ```
 
-Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
+**必须**将 `127.0.0.1` 指定为 DNS 服务器地址。否则，名称服务器将为 `127.0.0.53`，如果没有 `DNSStubListener`，它将无法工作。
 
-1. Activate another `resolv.conf` file:
+1. 激活另一个 `resolv.conf` 文件：
 
    ```sh
    sudo mv /etc/resolv.conf /etc/resolv.conf.backup
    sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
    ```
 
-2. Restart `DNSStubListener`:
+2. 重新启动 `DNSStubListener`：
 
    ```sh
    sudo systemctl reload-or-restart systemd-resolved
    ```
 
-After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
+之后，`systemd-resolved` 不应显示在 `lsof` 的输出中，并且 AdGuard Home 应该能够绑定到 `127.0.0.1:53`。
 
-## How do I configure a reverse proxy server for AdGuard Home? {#reverseproxy}
+## 如何为 AdGuard Home 配置反向代理服务器？ {#reverseproxy}
 
-If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
+如果您已经在运行 Web 服务器，并且想要从 `http://YOUR_SERVER/aghome/` 等 URL 访问 AdGuar Home 仪表盘用户界面，那么可以为您的 Web 服务器使用此配置：
 
 ### nginx
 
@@ -276,7 +276,7 @@ location /aghome/ {
 }
 ```
 
-Or, if you only want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
+或者，如果您只想使用自动 TLS 为 AdGuard Home 提供服务，请使用类似于以下示例的配置：
 
 ```none
 DOMAIN {
@@ -298,34 +298,34 @@ DOMAIN {
 
 :::note
 
-Do not use subdirectories with the Apache reverse HTTP proxy.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+请不要在 Apache 反向 HTTP 代理中使用子目录。  这是一个已知问题 ([#6604])，Apache 处理相对重定向的方式与其他网络服务器不同。 这会导致 AdGuard Home 网络界面出现问题。
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
 :::
 
-### Disable DoH encryption on AdGuard Home
+### 在 AdGuard Home 上禁用 DoH 加密
 
-If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
+如果在反向代理服务器上使用 TLS，那么无需在 AdGuard Home 上使用 TLS。 在 `AdGuardHome.yaml` 中设置 `allow_unencrypted_doh: true` 以允许 AdGuard Home 在没有 TLS 加密的情况下响应 DoH 请求。
 
-### Real IP addresses of clients
+### 客户端的真实 IP 地址
 
-You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
+用户可以将参数 `trust_proxies` 设置为 HTTP 代理的 IP 地址 (可以是多个)，以使 AdGuard Home 考虑包含真实客户端 IP 地址的标头。 请参阅[配置][conf]和[加密][encr]页面了解更多信息。
 
 [encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## How do I fix `permission denied` errors on Fedora? {#fedora}
+## 如何修复 Fedora 上的 `permission denied` 错误？ {#fedora}
 
-1. Move the `AdGuardHome` binary to `/usr/local/bin`.
+1. 将 `AdGuardHome` 二进制文件移动到 `/usr/local/bin`。
 
-2. As `root`, execute the following command to change the security context of the file:
+2. 以 `root` 身份执行以下命令来更改文件的安全上下文：
 
    ```sh
    chcon -t bin_t /usr/local/bin/AdGuardHome
    ```
 
-3. Add the required firewall rules in order to make it reachable through the network. For example:
+3. 添加所需的防火墙规则，使其可通过网络访问。 例如：
 
    ```sh
    firewall-cmd --new-zone=adguard --permanent
@@ -336,95 +336,95 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
+如果您仍然收到 `code=exited status=203/EXEC` 或来自 `systemctl` 的类似错误，请尝试卸载 AdGuard Home，并使用安装脚本的 `-o` 选项将其**直接**安装到 `/usr/local/bin` 中：
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
 ```
 
-See [issue 765] and [issue 3281].
+请参阅 [issue 765] 和 [issue 3281]。
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
-## How do I fix `incompatible file system` errors? {#incompatfs}
+## 如何修复不兼容的文件系统错误？ {#incompatfs}
 
-You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+您应该将 AdGuard Home 安装或工作目录移至其他位置。 请参阅「入门」页面上的[「限制」部分](getting-started.md#limitations)。
 
-## What does `Error: control/version.json` mean? {#version-error}
+## `Error: control/version.json` 是什么意思？ {#version-error}
 
-This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+此错误消息表示 AdGuard Home 无法访问 AdGuard 服务器以检查更新和/或下载更新。 这可能意味着服务器被您的 ISP 拦截或暂时关闭。 如果错误在一段时间后仍未自行解决，可以尝试执行[手动更新](#manual-update)或通过使用 `--no-check-update` 命令行选项运行 `AdGuardHome` 可执行文件来禁用自动更新检查。
 
-## How do I update AdGuard Home manually? {#manual-update}
+## 如何手动更新 AdGuard Home？ {#manual-update}
 
-If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
+如果该按钮未显示或自动更新失败，可以手动更新服务。 在下面的示例中，我们将使用适用于 AMD64 CPU 的 Linux 和 Windows 的 ADGuard Home 版本。
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
+1. 从[发布页面][releases]下载新的 AdGuard Home 软件包。 如果您要从命令行执行此步骤，请键入：
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-   Or, with `wget`:
+   或者，使用 `wget`：
 
    ```sh
    wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
+2. 导航到 AdGuard Home 的安装目录。 在大多数 Unix 系统上，默认目录是 `/opt/AdGuardHome`，但在 macOS 上是 `/Applications/AdGuardHome`。
 
-3. Stop AdGuard Home:
+3. 停止 AdGuard Home：
 
    ```sh
    sudo ./AdGuardHome -s stop
    ```
 
-   :::note OpenBSD
+   :::注意 OpenBSD
 
-   On OpenBSD, you will probably want to use `doas` instead of `sudo`.
+   在 OpenBSD 上，您可能需要使用 `doas` 而不是 `sudo`。
 
    :::
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `~/my-agh-backup`:
+4. 备份数据。 也就是说，您的配置文件和数据目录 (默认为 `AdGuardHome.yaml` 和 `data/`)。 例如，要将数据备份到名为 `~/my-agh-backup` 的新目录：
 
    ```sh
    mkdir -p ~/my-agh-backup
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您将压缩包下载到 `~/Downloads` 目录，并希望将其解压缩到 `/tmp/`：
 
    ```sh
    tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
-   On macOS, type something like:
+   在 macOS 上，键入如下内容：
 
    ```sh
    unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:
+6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 在大多数 Unix 系统上，该命令如下所示：
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
    ```
 
-   On macOS, something like:
+   在 macOS 上，类似：
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
 
-   You can now remove the temporary directory.
+   现在，您可以删除临时目录。
 
-7. Restart AdGuard Home:
+7. 重新启动 AdGuard Home：
 
    ```sh
    sudo ./AdGuardHome -s start
@@ -432,11 +432,11 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
-### Windows (Using PowerShell) {#manual-update-win}
+### Windows（使用 PowerShell）{#manual-update-win}
 
-In all examples below, the PowerShell must be run as Administrator.
+在下面的所有示例中，PowerShell 必须以管理员身份运行。
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
+1. 从[发布页面][releases]下载新的 AdGuard Home 软件包。 如果要从命令行执行此步骤：
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -444,15 +444,15 @@ In all examples below, the PowerShell must be run as Administrator.
    Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
    ```
 
-2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
+2. 导航到 AdGuard Home 的安装目录。 在下面的示例中，我们将使用 `C:\Program Files\AdGuardHome`。
 
-3. Stop AdGuard Home:
+3. 停止 AdGuard Home：
 
    ```ps1
    .\AdGuardHome.exe -s stop
    ```
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `my-agh-backup`:
+4. 备份数据。 也就是说，您的配置文件和数据目录 (默认为 `AdGuardHome.yaml` 和 `data/`)。 例如，要将数据备份到名为 `my-agh-backup` 的新目录：
 
    ```ps1
    $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
@@ -460,51 +460,51 @@ In all examples below, the PowerShell must be run as Administrator.
    Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to extract it to a temporary directory:
+5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您已将压缩包下载到 `Downloads` 目录，并希望将其解压缩到临时目录：
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
    Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. For example:
+6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 例如：
 
    ```ps1
    $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
    Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
 
-   You can now remove the temporary directory.
+   现在，您可以删除临时目录。
 
-7. Restart AdGuard Home:
+7. 重新启动 AdGuard Home：
 
    ```ps1
    .\AdGuardHome.exe -s start
    ```
 
-## How do I uninstall AdGuard Home? {#uninstall}
+## 如何卸载 AdGuard Home？ {#uninstall}
 
-Depending on how you installed AdGuard Home, there are different ways to uninstall it.
+根据您安装 AdGuard Home 的方式，有不同的卸载方法。
 
 :::caution
 
-Before uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
+在卸载 AdGuard Home 之前，请不要忘记更改设备的配置并将它们指向其他 DNS 服务器。
 
 :::
 
-### Regular installation
+### 常规安装
 
-In this case, do the following:
+在这种情况下，请执行以下操作：
 
-- Unregister AdGuard Home service: `./AdGuardHome -s uninstall`.
+- 注销 AdGuard Home 服务：`./AdGuardHome -s uninstall`.
 
-- Remove the AdGuard Home directory.
+- 删除 AdGuard Home 主目录。
 
 ### Docker
 
-Simply stop and remove the image.
+只需停止并删除图像即可。
 
 ### Snap Store
 

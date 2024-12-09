@@ -1,6 +1,6 @@
 ---
 title: '如何进行屏幕截图'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 屏幕截图是对你的电脑或移动设备屏幕的捕捉，可以通过使用 标准工具或特殊程序/应用程序 获得。
@@ -15,20 +15,20 @@ sidebar_position: 4
 
 可以通过多种方式在 Android 设备上截屏，具体取决于设备型号及其制造商。
 
-Generally, the following button combination can be used for Android:
+一般来说，Android 可以使用以下按钮组合：
 
-- **Press and hold the *Volume Down* and *Power* buttons simultaneously for 1–2 seconds**
+- **同时按住*下音量键*和*电源键* 1-2 秒**
 
 您的 Android 设备将捕获整个屏幕并将其保存为照片。 您的 Android 设备将捕获整个屏幕并将其保存为照片。
 
-However, as already mentioned, the procedure may vary depending on the particular device. 让我们看看其他可能的操作：
+然而，正如之前提到的，该过程可能会根据特定设备而有所不同。 让我们看看其他可能的操作：
 
-- **Press and hold the *Home* and *Power* buttons simultaneously for 1–2 seconds;**
-- **Press and hold the *Back* and *Home* buttons simultaneously**
+- **同时按住*Home 键*和*电源键* 1-2 秒；**
+- **同时按住「*返回键*」和「*Home 键*」。**
 
-On Android 8 and later, a screenshot can also be taken by placing the edge of an open hand vertically along the left/right screen edge and swiping the hand to the other screen edge while touching the screen with the hand edge.
+在 Android 8 及更高版本中，您还可以通过将张开的手掌边缘垂直放在屏幕左/右边缘，然后将手滑动到另一边缘，同时用手的边缘触摸屏幕来截屏。
 
-If this method doesn’t work, check *Settings* → *Advanced* features to enable *Palm swipe to capture*.
+如果此方法不起作用，请检查「*设置*」→「*高级*」功能，以启用「*轻扫以捕获*」。
 
 此外，您可以使用任何特殊的应用程序在设备上拍摄屏幕截图，例如，*轻松截屏*、*终极截图*、*Screenshot Snap* 等。
 
@@ -54,7 +54,7 @@ If this method doesn’t work, check *Settings* → *Advanced* features to enabl
 
 *请注意：PrtScn（屏幕截图键）按钮在各种键盘上可能有不同的缩写 - PrntScrn、PrtScn、PrtScr 或 PrtSc。*
 
-Windows captures the entire screen and copies it to the clipboard.
+Windows 可以截取整个屏幕并将截图复制到剪贴板。
 
 要对一个活动窗口进行截图，请使用以下组合。
 
@@ -66,7 +66,7 @@ Windows captures the entire screen and copies it to the clipboard.
 
 截图后，它将保存在剪贴板中。 在大多数情况下，您可以使用 *Ctrl + V* 按钮组合将其粘贴到当前正在编辑的文档中。 或者，如果您需要将屏幕截图保存到文件中，您应该打开 **Paint** 程序（或任何其他可以处理图像的应用程序）。 使用相同的按钮组合或通过点击粘贴按钮(通常在屏幕的左上角) 将你的截图粘贴到那里，然后保存它。
 
-Windows 8和10 允许您使用 *Win + PrtScn* 组合非常快速地截取屏幕截图。 As soon as you press these buttons, the screenshot will be automatically saved as a file to your Pictures → Screenshots Folder.
+Windows 8和10 允许您使用 *Win + PrtScn* 组合非常快速地截取屏幕截图。 按下这些按钮后，屏幕快照将自动作为文件保存到图片 → 屏幕截图文件夹中。
 
 还有一个用于截屏的专用程序，称为 *Snipping Tool* ，您可以通过“开始”菜单在计算机的标准程序中找到该程序。 截图工具可让您捕获桌面的任何区域或整个屏幕。 使用此程序截取屏幕截图后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
@@ -86,7 +86,7 @@ Windows 8和10 允许您使用 *Win + PrtScn* 组合非常快速地截取屏幕�
 
 要截取特定区域的屏幕截图，您应该使用以下组合：
 
-- ***同时按住 ***⌘ Cmd + Shift + 4******。 Drag the crosshair to select the needed area. 松开鼠标或触控板来进行截图，按Esc键来取消截图。
+- ***同时按住 ***⌘ Cmd + Shift + 4******。 拖动十字准线以选择所需区域。 松开鼠标或触控板来进行截图，按Esc键来取消截图。
 
 若要截取 *Touch Bar* （MacBook Pro） 的屏幕截图，请使用以下组合：
 

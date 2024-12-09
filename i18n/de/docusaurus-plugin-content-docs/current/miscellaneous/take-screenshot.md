@@ -1,6 +1,6 @@
 ---
 title: 'So erstellen Sie einen Bildschirmfoto'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Ein Bildschirmfoto ist eine Aufnahme des Bildschirms Ihres Computers oder Mobilgeräts, die mit Standardwerkzeugen oder einem speziellen Programm bzw. einer App erstellt werden kann.
@@ -70,7 +70,7 @@ Unter Windows 8 und 10 können Sie mit dem Tastaturkürzel *Win + Druck* sehr sc
 
 Es gibt auch ein spezielles Programm zum Erstellen von Bildschirmfotos namens *Snipping Tool*, das Sie über das Startmenü unter den Standardprogrammen Ihres Computers finden können. Mit dem Snipping Tool können Sie einen beliebigen Bereich Ihres Desktops oder den gesamten Bildschirm erfassen. Nach der Aufnahme eines Bildschirmfotos mit diesem Programm können Sie das Bild bearbeiten und in einem beliebigen Ordner auf Ihrem Computer speichern.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+Außerdem können Sie auch verschiedene Apps zum Aufnehmen von Bildschirmaufnahmen auf Ihrem Computer ausprobieren, wie z. B. **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, usw.
 
 ### macOS
 
@@ -82,7 +82,7 @@ Ihr Mac erfasst den gesamten Bildschirm und speichert ihn als Datei auf dem Schr
 
 Um ein Bildschirmfoto von einem aktiven Fenster zu erstellen, verwenden Sie das folgende Tastaturkürzel:
 
-- **Drücken und halten Sie gleichzeitig diese Tasten *⌘ Cmd + Umschalt ⇧ + 4 + Leertaste*.  Der Zeiger verwandelt sich in ein Kamerasymbol 📷. Klicken Sie auf das Fenster, um es zu erfassen. Press the Esc button to cancel taking a screenshot**
+- **Drücken und halten Sie gleichzeitig diese Tasten *⌘ Cmd + Umschalt ⇧ + 4 + Leertaste*.  Der Zeiger verwandelt sich in ein Kamerasymbol 📷. Klicken Sie auf das Fenster, um es zu erfassen. Drücken Sie die Esc-Taste, um die Aufnahme eines Bildschirmfotos abzubrechen.**
 
 Um ein Bildschirmfoto von einem bestimmten Bereich zu erstellen, sollten Sie das folgende Tastaturkürzel verwenden:
 

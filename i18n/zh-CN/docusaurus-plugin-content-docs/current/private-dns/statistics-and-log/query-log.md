@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: 查询日志
 sidebar_position: 5
 ---
 
-## What is Query log
+## 什么是查询日志
 
-Query log is a useful tool for working with AdGuard DNS.
+查询日志是一个用于与 AdGuard DNS 配合使用的有用工具。
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+它允许用户查看在所选时间周期内您的设备发出的所有请求，并按状态、类型、公司、设备、国家/地区对请求进行排序。
 
-## How to use it
+## 使用方式
 
-Here's what you can see and what you can do in the _Query log_.
+以下是在「查询日志」中用户可以看到的内容和可以执行的操作。
 
-### Detailed information on requests
+### 请求的详细信息
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![请求信息 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### 域名的拦截与取消拦截
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+您可以不离开日志界面，使用可用工具拦截或取消拦截请求。
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![取消拦截域名 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### 请求排序
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+您可以选择感兴趣的请求的状态、类型、公司、设备，以及请求的时间周期。
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![请求排序 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### 禁用查询日志记录
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+用户还可以在账号设置中完全禁用日志记录（请记住，这将禁用统计数字）。
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![日志记录 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

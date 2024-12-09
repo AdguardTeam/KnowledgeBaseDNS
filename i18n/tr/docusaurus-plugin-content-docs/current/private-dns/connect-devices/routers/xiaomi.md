@@ -7,7 +7,7 @@ Xiaomi yönlendiricilerin birçok avantajı vardır: Sürekli güçlü sinyal, a
 
 Ne yazık ki, şifrelenmiş DNS'i desteklemiyor, ancak bağlı IP aracılığıyla AdGuard DNS'i kurmak için harikadır.
 
-## Yönlendirici yönetici panelini kullan
+## Yönlendirici yönetici panelini kullanma
 
 Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
 

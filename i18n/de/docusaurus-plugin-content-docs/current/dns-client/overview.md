@@ -15,7 +15,7 @@ Ein plattformübergreifender, schlanker DNS-Client für [AdGuard DNS][agdns]. Er
 
 :::caution
 
-AdGuard DNS Client befindet sich noch im Beta-Stadium. It may be unstable.
+AdGuard DNS Client befindet sich noch im Beta-Stadium. Es könnte instabil sein.
 
 :::
 

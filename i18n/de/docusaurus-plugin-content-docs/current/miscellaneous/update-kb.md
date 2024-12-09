@@ -1,6 +1,6 @@
 ---
 title: 'Aktualisieren der Wissensdatenbank'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 Das Ziel dieser Wissensdatenbank ist es, jedem die aktuellsten Informationen zu allen möglichen DNS-bezogenen Themen von AdGuard zur Verfügung zu stellen. Aber die Dinge ändern sich ständig, und manchmal spiegelt ein Artikel nicht mehr den aktuellen Stand der Dinge wider - es gibt einfach nicht so viele von uns, die jede einzelne Information im Auge behalten und sie entsprechend aktualisieren können, wenn neue Versionen veröffentlicht werden.

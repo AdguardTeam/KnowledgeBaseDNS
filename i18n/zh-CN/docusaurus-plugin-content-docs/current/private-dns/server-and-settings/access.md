@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ### 禁止的客户端
 
-在这里，用户可以列出不允许使用您的 DNS 服务器的客户端。 用户可以阻止所有客户端的访问权限，仅使用选定的客户端。 为此，将两个地址添加到不允许的客户端：`0.0.0.0.0/0` 和 `::/0`。 然后，在「_允许的客户端_」字段中，指定可以访问您服务器的地址。
+在这里，用户可以列出不允许使用您的 DNS 服务器的客户端。 用户可以阻止所有客户端的访问权限，仅使用选定的客户端。 为此，将两个地址添加到不允许的客户端：`0.0.0.0/0` 和 `::/0`。 然后，在「_允许的客户端_」字段中，指定可以访问您服务器的地址。
 
 :::note 重要信息
 
@@ -25,7 +25,7 @@ sidebar_position: 3
 
 ### 禁止的域名
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+这里可以指定将被拒绝访问 DNS 服务器的域名（以及通配符和 DNS 过滤规则）。
 
 ![其他设置 \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 

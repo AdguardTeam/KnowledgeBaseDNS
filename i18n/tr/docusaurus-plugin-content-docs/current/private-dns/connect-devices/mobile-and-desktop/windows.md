@@ -10,18 +10,18 @@ Bir iOS cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine ekle
 3. Cihazı adlandırın.
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
 AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Windows cihazınızda AdGuard DNS kurmak için mükemmeldir. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
-1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
+1. AdGuard DNS'e bağlanmak istediğiniz cihaza [uygulamayı yükleyin](https://adguard.com/adguard-windows/overview.html).
 2. Uygulamayı açın.
 3. Uygulamanın ana ekranının üst kısmındaki _Ayarlar_ öğesine tıklayın.
    ![Uygulama ayarları \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 4. Soldaki menüden _DNS Koruması_ sekmesini seçin.
    ![DNS koruması \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
 5. Şu anda seçili olan DNS sunucunuza tıklayın.
-   ![DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
+   ![DNS sunucusu \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
 6. Aşağıya kaydırın ve _Özel DNS sunucusu ekle_ öğesine tıklayın.
    ![Özel DNS sunucusu ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
 7. In the DNS upstreams field, paste one of the following addresses. Hangisini tercih edeceğinizden emin değilseniz DNS-over-HTTPS'yi seçin.
@@ -34,11 +34,11 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Windows cihaz�
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Use AdGuard VPN
+## AdGuard VPN'i kullanma
 
 Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
-1. Install AdGuard VPN.
+1. AdGuard VPN’i yükleyin.
 2. Uygulamayı açın ve _Ayarlar_ öğesine tıklayın.
 3. _Uygulama ayarları_ öğesini seçin.
    ![Uygulama ayarları \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
@@ -54,9 +54,9 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Use AdGuard DNS Client
+## AdGuard DNS İstemcisini kullanma
 
-AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
+AdGuard DNS İstemcisi, şifrelenmiş DNS protokollerini kullanarak AdGuard DNS'e bağlanmanızı sağlayan çok yönlü, platformlar arası bir konsol aracıdır.
 
 Daha fazla ayrıntı [farklı makalede](/dns-client/overview/) bulunabilir.
 

@@ -29,9 +29,9 @@ Wir bieten auch ein [offizielles AdGuard Home Docker-Image][docker] und ein [off
 
 Einige andere inoffizielle Optionen sind:
 
-- [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
+- Das \[Home Assistant Add-on]\[wurde] von [@frenck](https://github.com/frenck) gepflegt.
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [OpenWrt LUCI app][luci] betreut von [@kongfl888](https://github.com/kongfl888).
 
 - [Arch Linux][arch], [Arch Linux ARM][archarm] und andere Arch-basierte Betriebssysteme können über das [`adguardhome`-Paket][aghaur] im [AUR][aur] erstellt werden, das von [@graysky2](https://github.com/graysky2) gepflegt wird.
 
@@ -166,75 +166,75 @@ Diese Einrichtung deckt automatisch alle Geräte ab, die mit Ihrem Heimrouter ve
 
 ### Windows
 
-1. Open _Control Panel_ from the Start menu or Windows search.
+1. Öffnen Sie die _Systemsteuerung_ über das Startmenü oder die Windows-Suche.
 
 2. Öffnen Sie _Netzwerk und Internet_ und dann _Netzwerk- und Freigabecenter_.
 
-3. On the left side of the screen, find the _Change adapter settings_ button and click it.
+3. Suchen Sie auf der linken Seite des Bildschirms die Schaltfläche _Adaptereinstellungen ändern_ und klicken Sie darauf.
 
-4. Select your active connection, right-click it and choose _Properties_.
+4. Wählen Sie Ihre aktive Verbindung aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie _Eigenschaften_.
 
-5. Find _Internet Protocol Version 4 (TCP/IPv4)_ (or, for IPv6, _Internet Protocol Version 6 (TCP/IPv6)_) in the list, select it, and then click _Properties_ again.
+5. Suchen Sie _Internet Protocol Version 4 (TCP/IPv4)_ (oder, für IPv6, _Internet Protocol Version 6 (TCP/IPv6)_) in der Liste, wählen Sie es aus und klicken Sie erneut auf _Eigenschaften_.
 
-6. Choose _Use the following DNS server addresses_ and enter your AdGuard Home server addresses.
+6. Wählen Sie _Folgende DNS-Serveradressen verwenden_ und geben Sie die Adressen Ihrer AdGuard Home-Server ein.
 
 ### macOS
 
-1. Click the Apple icon and go to _System Preferences_.
+1. Klicken Sie auf das Apple-Symbol und gehen Sie zu _Systemeinstellungen_.
 
 2. Klicken Sie auf _Netzwerk_.
 
-3. Select the first connection in your list and click _Advanced_.
+3. Wählen Sie die erste Verbindung in Ihrer Liste aus und klicken Sie auf _Weitere Optionen_.
 
-4. Select the DNS tab and enter your AdGuard Home server addresses.
+4. Wählen Sie den Tab „DNS“ und geben Sie die Adressen Ihrer AdGuard Home-Server ein.
 
 ### Android
 
 :::note
 
-Instructions for Android devices may differ depending on the OS version and the manufacturer.
+Die Anweisungen für Android-Geräte können sich je nach Betriebssystemversion und Hersteller unterscheiden.
 
 :::
 
-1. From the Android menu home screen, tap _Settings_.
+1. Tippen Sie auf dem Startbildschirm des Android-Menüs auf _Einstellungen_.
 
-2. Tippen Sie im Menü auf _Wi-Fi_. The screen with all of the available networks will be displayed (it is impossible to set custom DNS for mobile connection).
+2. Tippen Sie im Menü auf _Wi-Fi_. Der Bildschirm mit allen verfügbaren Netzwerken wird angezeigt (es ist nicht möglich, benutzerdefiniertes DNS für die mobile Verbindung festzulegen).
 
-3. Long press the network you’re connected to and tap _Modify Network_.
+3. Drücken Sie lange auf das Netzwerk, mit dem Sie verbunden sind, und tippen Sie auf _Netzwerk ändern_.
 
-4. On some devices, you may need to check the box for _Advanced_ to see more settings. To adjust your Android DNS settings, you will need to change the IP settings from _DHCP_ to _Static_.
+4. Auf einigen Geräten müssen Sie möglicherweise das Kontrollkästchen _Erweitert_ aktivieren, um weitere Einstellungen anzuzeigen. Um Ihre Android-DNS-Einstellungen anzupassen, müssen Sie die IP-Einstellungen von _DHCP_ auf _Statisch_ ändern.
 
-5. Change set DNS 1 and DNS 2 values to your AdGuard Home server addresses.
+5. Ändern Sie die Werte für „DNS 1” und „DNS 2” auf Ihre AdGuard Home-Serveradressen.
 
 ### iOS
 
-1. From the home screen, tap _Settings_.
+1. Tippen Sie auf dem Startbildschirm auf _Einstellungen_.
 
-2. Select _Wi-Fi_ from the left menu (it is impossible to configure DNS for mobile networks).
+2. Wählen Sie _WLAN_ aus dem linken Menü (es ist nicht möglich, DNS für mobile Netzwerke zu konfigurieren).
 
-3. Tap the name of the currently active network.
+3. Tippen Sie auf den Namen des aktuell aktiven Netzwerks.
 
-4. In the _DNS_ field, enter your AdGuard Home server addresses.
+4. Geben Sie im Bereich _DNS_ die Adressen Ihrer AdGuard Home-Server ein.
 
-## Running without superuser {#running-without-superuser}
+## Ausführen ohne Superuser {#running-without-superuser}
 
-You can run AdGuard Home without superuser privileges, but you must either grant the binary a capability (on Linux) or instruct it to use a different port (all platforms).
+Sie können AdGuard Home auch ohne Superuser-Rechte ausführen, aber Sie müssen der Binärdatei entweder eine Fähigkeit verleihen (unter Linux) oder sie anweisen, einen anderen Port zu verwenden (alle Plattformen).
 
-### Granting the necessary capabilities (Linux only)
+### Gewährung der erforderlichen Fähigkeiten (nur Linux)
 
-Using this method requires the `setcap` utility. You may need to install it using your Linux distribution’s package manager.
+Die Verwendung dieser Methode erfordert das Dienstprogramm `setcap`. Möglicherweise müssen Sie es über den Paketmanager Ihrer Linux-Distribution installieren.
 
-To allow AdGuard Home running on Linux to listen on port 53 without superuser privileges and bind its DNS servers to a particular interface, run:
+Um AdGuard Home unter Linux zu erlauben, den Port 53 ohne Superuser-Rechte zu überwachen und seine DNS-Server an eine bestimmte Schnittstelle zu binden, führen Sie folgenden Befehl aus:
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
 ```
 
-Then run `./AdGuardHome` as an unprivileged user.
+Führen Sie dann `./AdGuardHome` als unprivilegierter Benutzer aus.
 
-### Changing the DNS listen port
+### Ändern des DNS-Abhörports
 
-To configure AdGuard Home to listen on a port that does not require superuser privileges, stop AdGuard Home, open `AdGuardHome.yaml` in your editor, and find these lines:
+Um AdGuard Home so zu konfigurieren, dass es an einem Port lauscht, der keine Superuser-Rechte erfordert, stoppen Sie AdGuard Home, öffnen Sie `AdGuardHome.yaml` in Ihrem Editor oder im Terminal per `sudo nano /weg/zum/AdGuardHome.yaml` und suchen Sie diese Zeilen:
 
 ```yaml
 dns:
@@ -242,17 +242,17 @@ dns:
     port: 53
 ```
 
-You can change the port to anything above 1024 to avoid requiring superuser privileges.
+Sie können den Port auf einen Wert über 1024 ändern, um zu vermeiden, dass Sie Superuser-Rechte benötigen.
 
-## Limitations {#limitations}
+## Einschränkungen {#limitations}
 
-Some file systems don’t support the `mmap(2)` system call required by the statistics system. See also [issue 1188].
+Einige Dateisysteme unterstützen den vom Statistiksystem benötigten `mmap(2)`-Systemaufruf nicht. Siehe auch \[Problem 1188].
 
-You can resolve this issue:
+Sie können dieses Problem beheben:
 
-- either by supplying the `--work-dir DIRECTORY` arguments to the `AdGuardHome` binary. This option will tell AGH to use another directory for all its files instead of the default `./data` directory.
+- Entweder durch Angabe der Argumente `--work-dir DIRECTORY` an das `AdGuardHome`-Binary. Diese Option weist AGH an, ein anderes Verzeichnis für alle seine Dateien zu verwenden, anstatt des Standardverzeichnisses `./data`.
 
-- or by creating symbolic links pointing to another file system that supports `mmap(2)` (e.g. tmpfs):
+- Oder indem Sie symbolische Links erstellen, die auf ein anderes Dateisystem zeigen, das `mmap(2)` unterstützt (z.B. tmpfs):
 
   ```sh
   ln -s ${YOUR_AGH_PATH}/data/stats.db /tmp/stats.db
