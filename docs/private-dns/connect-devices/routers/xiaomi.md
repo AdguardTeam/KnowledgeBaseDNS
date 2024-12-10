@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have many advantages: a stable, strong signal, network security, stable operation, and intelligent management. The user can also connect up to 64 devices to a local Wi-Fi network.
+Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
 Unfortunately, it doesn't support encrypted DNS, but it's great for setting up AdGuard DNS via linked IP.
 
