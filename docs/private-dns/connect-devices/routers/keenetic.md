@@ -23,9 +23,9 @@ Keenetic routers are known for their stability and flexible configurations, and 
 1. Press the menu button at the bottom of the screen and select *Management*.
 1. Open *System settings*.
 1. Press *Component options* → *System component options*.
-1. In *Utilities and services*, select DNS-over-HTTPS proxy and install it.
+1. In *Utilities and services*, select DNS-over-TLS proxy and install it.
 1. Head to *Menu* → *Network rules* → *Internet safety*.
-1. Navigate to DNS-over-HTTPS servers and click *Add DNS-over-HTTPS server*.
+1. Navigate to DNS-over-TLS servers and click *Add DNS-over-TLS server*.
 1. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 1. Click *Save*.
 

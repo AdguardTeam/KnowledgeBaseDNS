@@ -28,10 +28,10 @@ MikroTik routers use the open source RouterOS operating system, which provides r
 1. Create Static DNS Records:
     - In the *DNS Settings*, click *Static*
     - Click *Add New*
-    - Set *Name* to d.adguard-dns.com
-    - Set *Type* to A
+    - Set *Name* to `d.adguard-dns.com`
+    - Set *Type* to `A`
     - Set *Address* to `94.140.14.49`
-    - Set *TTL* to 1d 00:00:00
+    - Set *TTL* to `1d 00:00:00`
     - Repeat the process to create an identical entry, but with *Address* set to `94.140.14.59`
 1. Disable Peer DNS on DHCP Client:
     - Go to *IP* → *DHCP Client*
@@ -45,7 +45,7 @@ MikroTik routers use the open source RouterOS operating system, which provides r
 
 ## Use your router admin panel
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Use these instructions if your Microtic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 1. Enter the administrator username (usually, it’s admin) and router password.
