@@ -3,7 +3,7 @@ title: DNS 프로필 제거 방법
 sidebar_position: 3
 ---
 
-If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to remove that DNS profile. Here's how to do it.
+구성된 DNS 프로필을 가진 iPhone, iPad 또는 Mac을 DNS 서버에서 분리해야 하는 경우 해당 DNS 프로필을 제거해야 합니다. 아래 방법을 확인하세요.
 
 Mac의 경우
 
@@ -23,7 +23,7 @@ Mac의 경우
 
     ![확인](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
 
-On your iOS device:
+iOS 기기에서:
 
 1. *설정*을 엽니다.
 
@@ -31,9 +31,9 @@ On your iOS device:
 
     ![일반 설정 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
 
-1. Scroll down to *VPN & Device Management*.
+1. *VPN & 디바이스 관리*로 스크롤합니다.
 
-    ![VPN & Device Management *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
+    ![VPN & 기기 관리 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
 
 1. 원하는 프로필을 선택하고 *프로필 제거*를 탭합니다.
 

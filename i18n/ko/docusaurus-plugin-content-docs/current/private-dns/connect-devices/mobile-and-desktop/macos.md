@@ -3,18 +3,18 @@ title: macOS
 sidebar_position: 4
 ---
 
-To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
+AdGuard DNS에 macOS 기기를 연결하려면 먼저 **대시보드**에 추가하세요.
 
 1. **대시보드**로 이동하여 **새 기기 연결**을 클릭합니다.
-2. In the drop-down menu _Device type_, select Mac.
+2. 하위 메뉴 **기기 종류**에서 Mac을 선택합니다.
 3. 기기의 이름을 지정합니다.
-   ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
+   ![기기 연결 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
 
 ## AdGuard 광고 차단기 사용(유료 옵션)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
+AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, macOS 기기에 AdGuard DNS를 설정하는 데 적합합니다. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
 
-1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
+1. AdGuard DNS에 연결하려는 기기에 [앱을 설치](https://adguard.com/adguard-mac/overview.html)하세요.
 2. 앱을 엽니다.
 3. 오른쪽 상단 모서리에 있는 아이콘을 클릭합니다.
    ![Protection icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)

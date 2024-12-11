@@ -3,29 +3,29 @@ title: iOS
 sidebar_position: 3
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+AdGuard DNS에 iOS 기기를 연결하려면 먼저 대시보드에 추가하세요:
 
 1. **대시보드**로 이동하여 **새 기기 연결**을 클릭합니다.
-2. In the drop-down menu _Device type_, select iOS.
+2. 드롭다운 메뉴에서 **기기 유형**을 선택합니다.
 3. 기기의 이름을 지정합니다.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
+   ![기기 연결 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
 ## AdGuard 광고 차단기 사용(유료 옵션)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your iOS device. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
+AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, iOS 기기에 AdGuard DNS를 설정하는 데 적합합니다. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
 
-1. Install the [AdGuard app](https://adguard.com/adguard-ios/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the AdGuard app.
-3. Select the _Protection_ tab in the bottom menu.
-   ![Shield icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step3.jpg)
-4. Make sure that _DNS protection_ is toggled on and then tap it. Choose _DNS server_.
-   ![DNS protection \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
-   ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
-5. Scroll down to the bottom and tap _Add a custom DNS server_.
-   ![Add DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
-6. Copy one of the following DNS addresses and paste it into the _DNS server adress_ field in the app. If you are not sure which one to prefer, choose DNS-over-HTTPS.
-   ![Copy server address \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
-   ![Paste server address \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
+1. AdGuard DNS에 연결하려는 기기에 [AdGuard 앱](https://adguard.com/adguard-ios/overview.html)을 설치합니다.
+2. AdGuard 앱을 엽니다.
+3. 하단 메뉴에서 **보호** 탭을 선택합니다.
+   ![방패 아이콘 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step3.jpg)
+4. **DNS 보호**가 켜져 있는지 확인한 다음 누릅니다. **DNS 서버**를 선택합니다.
+   ![DNS 보호 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
+   ![DNS 서버 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
+5. 아래로 스크롤하여 **사용자 정의 DNS 서버 추가**를 누릅니다.
+   ![DNS 서버 추가 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
+6. 다음 DNS 주소 중 하나를 복사하여 앱의 **DNS 서버 주소** 필드에 붙여넣습니다. 어떤 것을 선택해야 할지 모르는 경우, DNS-over-HTTPS를 선택합니다.
+   ![서버 주소 복사 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
+   ![서버 주소 붙여넣기 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 7. **저장 및 선택**을 누릅니다.
    ![저장 및 선택 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step7.jpg)
 8. 새로 생성한 서버가 목록 맨 아래에 나타납니다.

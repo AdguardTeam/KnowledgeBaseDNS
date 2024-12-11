@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: 쿼리 로그
 sidebar_position: 5
 ---
 
-## What is Query log
+## 쿼리 로그란 무엇인가요?
 
-Query log is a useful tool for working with AdGuard DNS.
+쿼리 로그는 AdGuard DNS를 사용하기 위한 유용한 도구입니다.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+선택한 기간 동안 기기에서 만든 모든 요청을 보고 요청을 상태, 유형, 기업, 기기, 국가별로 정렬할 수 있습니다.
 
-## How to use it
+## 사용 방법
 
-Here's what you can see and what you can do in the _Query log_.
+**쿼리 로그**에서 볼 수 있는 것과 할 수 있는 일입니다.
 
-### Detailed information on requests
+### 요청에 대한 자세한 정보
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![요청 유형 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### 도메인 차단 및 차단 해제
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+사용 가능한 도구를 사용하여 로그를 남기지 않고 요청을 차단하거나 차단을 해제할 수 있습니다.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![차단 해제 도메인 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### 요청 정렬
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+요청의 상태, 유형, 기업, 기기 및 관심 있는 요청의 기간을 선택할 수 있습니다.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![요청 정렬 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### 쿼리 로깅 비활성화
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+원하는 경우 계정 설정에서 로깅을 완전히 비활성화할 수 있습니다(단, 이로 인해 통계도 비활성화됨을 기억하세요).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![로깅 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

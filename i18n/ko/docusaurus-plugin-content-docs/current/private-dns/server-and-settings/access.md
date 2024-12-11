@@ -1,25 +1,25 @@
 ---
-title: Access settings
+title: 접근 설정
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+접근 설정을 구성하여 무단 액세스로부터 AdGuard DNS를 보호할 수 있습니다. 예를 들어, 전용 IPv4 주소를 사용하고 공격자가 스니퍼를 이용해 이를 인식하고 요청으로 폭격하고 있습니다. 문제가 없습니다. 성가신 도메인이나 IP 주소를 목록에 추가하면 더 이상 귀찮게 하지 않을 것입니다!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+차단된 요청은 쿼리 로그에 표시되지 않으며 총 한도에 포함되지 않습니다.
 
 ## 설정 방법
 
-### Allowed clients
+### 허용된 클라이언트
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+이 설정을 사용하면 어떤 클라이언트가 DNS 서버를 사용할 수 있는지를 지정할 수 있습니다. 가장 높은 우선 순위를 가집니다. 예를 들어, 동일한 IP 주소가 거부 목록과 허용 목록 모두에 있는 경우에도 여전히 허용됩니다.
 
-### Disallowed clients
+### 차단된 클라이언트
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+여기에서 DNS 서버를 사용할 수 없는 클라이언트를 나열할 수 있습니다. 모든 클라이언트의 접근을 차단하고 선택된 클라이언트만 사용할 수 있습니다. 이렇게 하려면 허용되지 않는 클라이언트에 두 개의 주소를 추가합니다: 0.0.0.0/0`및`::/0\`. 그런 다음, **허용된 클라이언트** 필드에 서버에 접근할 수 있는 주소를 지정합니다.
 
 :::note 중요
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+액세스 설정을 적용하기 전에 자신의 IP 주소를 차단하고 있지 않은지 확인하세요. 그럴 경우, 네트워크에 접근할 수 없습니다. 그런 일이 발생하면 DNS 서버에서 연결을 끊고 액세스 설정으로 가서 구성을 조정하세요.
 
 :::
 

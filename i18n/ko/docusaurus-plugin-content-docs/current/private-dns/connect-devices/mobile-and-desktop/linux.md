@@ -21,7 +21,7 @@ AdGuard DNS 클라이언트는 암호화된 DNS 프로토콜을 사용하여 AdG
 AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를 설정할 수 있습니다. AdGuard VPN CLI를 시작하려면 터미널을 사용해야 합니다.
 
 1. [이 지침](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/)에 따라 AdGuard VPN CLI를 설치합니다.
-2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+2. [설정](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/)으로 이동합니다.
 3. 특정 DNS 서버를 설정하려면 `adguardvpn-cli config set-dns <server_address>` 명령을 사용하세요. 여기서 `<server_address>`은 비공개 서버의 주소입니다.
 4. `adguardvpn-cli config set-system-dns on`을 입력하여 DNS 설정을 활성화합니다.
 
@@ -59,14 +59,14 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 8. 문서를 저장하려면 **Ctrl + X**를 누릅니다.
 9. 명령줄에 `/etc/init.d/networking restart`를 입력합니다.
 10. **Enter**를 누릅니다.
-11. Close the Terminal.
+11. _Enter_를 누릅니다.
 12. IP 주소(또는 Team을 구독하는 경우 전용 IP)를 연결합니다.
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Use dnsmasq
+## dnsmasq를 사용합니다.
 
-1. Install dnsmasq using the following commands:
+1. 다음 명령을 사용하여  dnsmasq 를 설치합니다.
 
    `sudo apt updatesudo`
 
@@ -74,7 +74,7 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 
    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-2. Use the following commands in dnsmasq.conf:
+2. dnsmasq.conf에서 다음 명령을 사용하세요:
 
    `no-resolv`
 
@@ -90,21 +90,21 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 
    `add-cpe-id={Your_Device_ID}`
 
-3. Restart the dnsmasq service:
+3. dnsmasq 서비스를 다시 시작하세요:
 
    `sudo service dnsmasq restart`
 
-All done! Your device is successfully connected to AdGuard DNS.
+기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 
 :::note 중요
 
-If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+AdGuard DNS에 연결되지 않았다는 알림이 표시되면, 대부분 dnsmasq가 실행 중인 포트가 다른 서비스에 의해 점유되고 있을 가능성이 높습니다. [이 설명서](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse)를 사용하여 문제를 해결하세요.
 
 :::
 
-## Use plain DNS
+## 일반 DNS 사용
 
-DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. You have two choices: using linked IPs or dedicated IPs:
+DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. 연결된 IP 또는 전용 IP를 사용하는 두 가지 선택 사항이 있습니다:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

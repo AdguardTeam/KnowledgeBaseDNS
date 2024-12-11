@@ -3,7 +3,7 @@ title: Evrensel talimatlar
 sidebar_position: 2
 ---
 
-İşte yönlendiricilerde Özel AdGuard DNS ayarlamak için bazı genel talimatlar. You can refer to this guide if you can't find your specific router in the main list. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
+İşte yönlendiricilerde Özel AdGuard DNS ayarlamak için bazı genel talimatlar. Ana listede belirli yönlendiricinizi bulamazsanız bu kılavuza başvurabilirsiniz. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
 
 ## Yönlendirici yönetici panelini kullanma
 

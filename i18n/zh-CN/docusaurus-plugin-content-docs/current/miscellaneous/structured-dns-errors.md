@@ -1,46 +1,46 @@
 ---
-title: Structured DNS Errors (SDE)
+title: 结构化 DNS 错误（SDE）
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
+AdGuard DNS v2.10 发布后，AdGuard 成为首个应用[**结构化 DNS 错误**](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)（英语：Structured DNS Errors，简称：SDE）支持的公共 DNS 解析器，是 [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/) 的更新。 新功能允许 DNS 服务器在 DNS 响应中提供有关已拦截网站的详细信息，而不局限于通用的浏览器消息。 在本文中，我们将解释什么是**结构化 DNS 错误**，以及其工作原理。
 
-## What Structured DNS Errors are
+## 什么是结构化 DNS 错误
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+由于 DNS 过滤，当对广告或跟踪域名的请求被拦截时，用户可能会在网页上看到空白区域，或者甚至完全没有注意到 DNS 过滤的发生。 然而，如果整个网站在 DNS 级别被拦截，用户将完全无法访问网页。 尝试访问已拦截的网站，用户可能会看到浏览器显示的通用「无法访问网站」错误。
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![无法访问网站的错误](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don't explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
+网页上并没有解释发生错误的原因。 这让用户感到困惑，不明白为什么有一个网站无法访问，往往导致用户假设自己的互联网连接或 DNS 解析器出现了问题。
 
-To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
+为了澄清这一点， DNS 服务器将用户重定向到他们的网页上并提供解释。 不过，HTTPS 网站（绝大多数网站）需要单独的证书才能被访问。
 
-![Certificate error](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
+![证书验证错误](https://cdn.adtidy.org/content/blog/dns/certificate_error.png?1)
 
-There’s a simpler solution: [Structured DNS Errors (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/). The concept of SDE builds on the foundation of [_Extended DNS Errors_ (RFC 8914)](https://datatracker.ietf.org/doc/rfc8914/), which introduced the ability to include additional error information in DNS responses. The SDE draft takes this a step further by using [I-JSON](https://www.rfc-editor.org/rfc/rfc7493) (a restricted profile of JSON) to format the information in a way that browsers and client applications can easily parse.
+缺少相关信息的问题有一个更简单的解决方案：[结构化 DNS 错误（SDE）](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)。 SDE 的概念建立在 [**Extended DNS Errors**（RFC 8914）](https://datatracker.ietf.org/doc/rfc8914/)的基础之上，该规范引入在 DNS 响应中包含额外错误信息的能力。 SDE 草稿通过使用 [I-JSON](https://www.rfc-editor.org/rfc/rfc7493)（一个限制性描述文件）将信息格式化为浏览器和客户端应用程序可以轻松解析的方式，从而更进一步。
 
-The SDE data is included in the `EXTRA-TEXT` field of the DNS response. It contains:
+SDE 数据包含在 DNS 响应的 `EXTRA-TEXT` 字段中。 它包含：
 
-- `j` (justification): Reason for blocking
-- `c` (contact): Contact information for inquiries if the page was blocked by mistake
-- `o` (organization): Organization responsible for DNS filtering in this case (optional)
-- `s` (suberror): The suberror code for this particular DNS filtering (optional)
+- `j`（justification）：已拦截的原因。
+- `c`（contact）：如果页面被错误屏蔽，用于查询的联系信息。
+- `o`（organization）：在这种情况下负责 DNS 过滤的组织（可选）。
+- `s`（suberror）：此特定的 DNS 过滤的子错误代码（可选）。
 
-Such a system enhances transparency between DNS services and users.
+这样的系统增强了 DNS 服务与用户之间的透明度。
 
-### What is required to implement Structured DNS Errors
+### 应用结构化 DNS 错误需要什么
 
-Although AdGuard DNS has implemented support for Structured DNS Errors, browsers currently do not natively support parsing and displaying SDE data. For users to see detailed explanations in their browsers when a website is blocked, browser developers need to adopt and support the SDE draft specification.
+尽管 AdGuard DNS 已实现结构化 DNS 错误的支持，目前浏览器并不原生支持解析和显示 SDE 数据。 要让用户在浏览器中看到网站被拦截的详细说明，浏览器开发者需要采用并支持 SDE 草案规范。
 
-### AdGuard DNS demo extension for SDE
+### AdGuard DNS SDE 的 Demo 扩展
 
-To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how _Structured DNS Errors_ could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
+为了展示结构化 DNS 错误的工作原理，AdGuard DNS 开发了一个演示浏览器扩展，能够展示如果浏览器支持**结构化 DNS 错误**，它们将如何工作。 如果用户尝试访问被 AdGuard DNS 拦截的网站，并且启用此扩展，您将看到一个详细的说明网页，其中包含通过 SDE 提供的信息，例如拦截原因、联系信息和负责的组织。
 
-![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
+![说明页面](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
-You can install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) or from [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
+您可以在 [Chrome Web 商店](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) 或 [GitHub](https://github.com/AdguardTeam/dns-sde-extension/) 安装扩展。
 
-If you want to see what it looks like at the DNS level, you can use the `dig` command and look for `EDE` in the output.
+如果您想查看在 DNS 级别的样子，可以使用 `dig` 命令并在输出中查找 `EDE`。
 
 ```text
 % dig @94.140.14.14 'ad.doubleclick.net' A IN +ednsopt=15:0000

@@ -17,7 +17,7 @@ toc_max_heading_level: 3
 **2024년 7월 11일에 출시됨**
 
 - 자동 기기 연결 기능이 추가되었습니다.
-  - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
+  - `auto_connect_devices_enabled`는 특정 링크 유형을 통해 기기의 자동 연결을 주장할 수 있는 DNS 서버 섹션의 새로운 설정입니다.
   - New field in Device — `auto_device`, indicating that the device is automatically connected
 - Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
 
@@ -28,16 +28,16 @@ toc_max_heading_level: 3
 - 인증이 있는 DNS-over-HTTPS 지원이 추가되었습니다.
   - New operation — reset DNS-over-HTTPS password for device
   - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. Indicates the URL to use when connecting using DNS-over-HTTPS with authentication
+  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. 인증이 있는 DNS-over-HTTPS를 사용할 때 연결에 사용할 URL을 나타냅니다.
 
 ## v1.7
 
-_Released on March 11, 2024_
+**2024년 3월 11일에 출시됨**
 
-- Added dedicated IPv4 addresses functionality:
-  - Dedicated IPv4 addresses can now be used on devices for DNS server configuration
-  - Dedicated IPv4 address is now associated with the device it is linked to, so that queries made to this address are logged for that device
-- Added new operations:
+- 전용 IPv4 주소 기능이 추가되었습니다:
+  - 전용 IPv4 주소는 이제 DNS 서버 구성에 대해 기기에서 사용할 수 있습니다.
+  - 전용 IPv4 주소는 이제 연결된 기기에 연결되어 있어, 해당 주소에 대한 쿼리는 그 기기에 대해 기록됩니다.
+- 새로운 작업이 추가되었습니다:
   - 사용 가능한 모든 전용 IPv4 주소 목록
   - 새 전용 IPv4 주소 할당
   - 사용 가능한 IPv4 주소를 기기에 연결
@@ -146,18 +146,18 @@ to:
 
 ## v1.1
 
-_Released on July 7, 2022_
+**2022년 7월 7일에 출시됨**
 
-- Added methods to retrieve statistics by time, domains, companies and devices
-- Added method for updating device settings
-- Fixed required fields definition
+- 도메인, 회사 및 기기에 대한 통계를 검색하는 방법 추가
+- 기기 설정을 업데이트하는 방법 추가
+- 필수 필드 정의 수정
 
 ## v1.0
 
-_Released on February 22, 2022_
+**2022년 2월 22일에 출시됨**
 
-- Added authentication
-- CRUD operations with devices and DNS servers
-- Query log
-- Downloading DoH and DoT .mobileconfig
-- Filter lists and web services
+- 인증 추가
+- 기기 및 DNS 서버와의 CRUD 작업
+- 쿼리 로그
+- DoH 및 DoT .mobileconfig 다운로드
+- 필터 목록 및 웹 서비스
