@@ -3,7 +3,7 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. Unfortunately, it does not support encrypted DNS, but it is great for setting up AdGuard DNS via linked IP.
+The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. 안타깝게도 암호화된 DNS는 지원하지 않지만 연결된 IP를 통해 AdGuard DNS를 설정하는 데는 매우 유용합니다.
 
 ## 라우터 관리 패널 사용
 

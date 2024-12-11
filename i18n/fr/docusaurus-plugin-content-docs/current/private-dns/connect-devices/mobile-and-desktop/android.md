@@ -75,5 +75,5 @@ Vous pouvez configurer votre serveur DNS dans les paramètres de votre appareil.
 
 Si vous préférez ne pas utiliser de logiciel supplémentaire pour la configuration DNS, vous pouvez opter pour le DNS non chiffré. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
 
-- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

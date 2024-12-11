@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi yönlendiricilerin birçok avantajı vardır: Sürekli güçlü sinyal, ağ güvenliği, kararlı çalışma, akıllı yönetim, aynı zamanda kullanıcı yerel Wi-Fi ağına 64 cihaza kadar bağlanabilir.
+Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
 Ne yazık ki, şifrelenmiş DNS'i desteklemiyor, ancak bağlı IP aracılığıyla AdGuard DNS'i kurmak için harikadır.
 
@@ -21,5 +21,5 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 6. Ayarları kaydedin.
 7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

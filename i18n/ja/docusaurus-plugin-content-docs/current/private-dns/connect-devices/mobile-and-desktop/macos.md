@@ -5,17 +5,17 @@ sidebar_position: 4
 
 To connect a macOS device to AdGuard DNS, first add it to _Dashboard_:
 
-1. Go to _Dashboard_ and click _Connect new device_.
+1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
 2. In the drop-down menu _Device type_, select Mac.
-3. Name the device.
+3. デバイスに名前を付けます。
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/choose_mac.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard 広告ブロッカーアプリを使用する（有料オプション）
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your macOS device. 様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
 
 1. [Install the app](https://adguard.com/adguard-mac/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
+2. アプリを開きます。
 3. Click the icon in the top right corner.
    ![Protection icon \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step3.png)
 4. Select _Preferences..._.
@@ -34,7 +34,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 10. Your newly created server should appear at the bottom of the list.
     ![Providers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
 ## Use AdGuard VPN
 
@@ -47,16 +47,16 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 4. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ text field. If you are not sure which one to prefer, select DNS-over-HTTPS.
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
 5. Click _Save and select_.
-6. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+6. 追加したDNSサーバーは、「カスタムDNSサーバー」リストの一番下に現れます。
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
 ## Use a configuration profile
 
 A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. It also allows you to configure Private AdGuard DNS on your device.
 
-:::note Important
+:::note 【重要】
 
 If you are using a VPN, the configuration profile will be ignored.
 
@@ -71,11 +71,11 @@ If you are using a VPN, the configuration profile will be ignored.
    ![Install \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Enter the admin password and click _OK_.
 
-All done! Your device is successfully connected to AdGuard DNS.
+完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
 ## Configure plain DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを選ぶことができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -42,8 +42,8 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 9. Turn off _Auto mode_.
 10. _Uygula_ öğesine tıklayın.
 11. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
-    - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
@@ -61,8 +61,8 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 10. _Enter_ tuşuna basın.
 11. Terminali kapatın.
 12. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
-    - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## dnsmasq'ı kullan
 
@@ -102,9 +102,31 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 
 :::
 
+## EDNS (Genişletilmiş DNS) kullanma
+
+EDNS, DNS protokolünü genişleterek daha büyük UDP paketlerinin ek veri taşımasını sağlar. AdGuard DNS'de, ekstra bir parametre kullanılarak DeviceID'nin düz DNS'te geçirilmesine izin verilir.
+
+Sekiz basamaklı bir onaltılık tanımlayıcı olan DeviceID (örneğin, `1a2b3c4d`), DNS isteklerini belirli cihazlara bağlamaya yardımcı olur. Şifrelenmiş DNS için, bu ID alan adının bir parçasıdır (örneğin, `1a2b3c4d.d.adguard-dns.com`). Şifrelenmemiş DNS için bu tanımlayıcıyı aktarmak üzere EDNS gereklidir.
+
+AdGuard DNS, `65074` numaralı seçeneği arayarak DeviceID'yi almak için EDNS kullanır. Böyle bir seçenek varsa, oradan DeviceID'yi okur. Bunun için terminalde `dig` komutunu kullanabilirsiniz:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Burada, `65074` seçenek kimliğidir ve `3031323334353637` onun hex biçimindeki değeridir (DeviceID: `01234567`).
+
+Hepsi tamam! DeviceID görüntülenmelidir.
+
+:::note
+
+`dig` komutu sadece bir örnektir, bu eylemi gerçekleştirmek için EDNS seçeneklerini ekleme yeteneğine sahip herhangi bir DNS yazılımını kullanabilirsiniz.
+
+:::
+
 ## Düz DNS kullanma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler:
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

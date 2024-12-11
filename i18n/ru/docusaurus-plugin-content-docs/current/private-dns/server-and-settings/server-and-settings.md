@@ -3,7 +3,7 @@ title: Серверы и настройки
 sidebar_position: 1
 ---
 
-## Что такое сервер и как его использовать
+## What is a server and how to use it
 
 При настройке Личного AdGuard DNS вы столкнётесь с термином _сервер_.
 

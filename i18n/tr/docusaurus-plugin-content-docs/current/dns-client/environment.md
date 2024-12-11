@@ -14,7 +14,7 @@ AdGuard DNS Client uses [environment variables][wiki-env] to store part of the c
 
 Günlük hedefi, dosyaya giden mutlak bir yol veya özel değerlerden biri olmalıdır. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Bu ortam değişkeni yapılandırma dosyasındaki [`log.output`][conf-log] alanını geçersiz kılar.
 
 **Default:** **Unset.**
 
@@ -24,15 +24,15 @@ This environment variable overrides the [`log.output`][conf-log] field in the co
 
 Günlük girişlerinin biçimi. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Bu ortam değişkeni yapılandırma dosyasındaki [`log.format`][conf-log] alanını geçersiz kılar.
 
 **Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
+`1` olarak ayarlandığında, günlük girdileri bir zaman damgasına sahip olur. `0` olarak ayarlandığında, günlük girdileri buna sahip olmaz.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Bu ortam değişkeni yapılandırma dosyasındaki [`log.timestamp`][conf-log] alanını geçersiz kılar.
 
 **Default:** **Unset.**
 
@@ -40,6 +40,6 @@ This environment variable overrides the [`log.timestamp`][conf-log] field in the
 
 `1` olarak ayarlandığında ayrıntılı günlük kaydını etkinleştirir. `0` olarak ayarlandığında devre dışı bırakılır.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Bu ortam değişkeni yapılandırma dosyasındaki [`log.verbose`][conf-log] alanını geçersiz kılar.
 
 **Default:** **Unset.**

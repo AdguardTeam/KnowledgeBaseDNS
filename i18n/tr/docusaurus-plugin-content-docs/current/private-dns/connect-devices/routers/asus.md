@@ -15,7 +15,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. _Gelişmiş Ayarlar_ kenar çubuğunda WAN bölümüne gidin.
 4. _WAN DNS Ayarları_ bölümünde _DNS Sunucusuna otomatik olarak bağlan_ öğesini _Hayır_ olarak ayarlayın.
-5. Set _Forward local queries_, _Enable DNS Rebind_, and _Enable DNSSEC_ to _No_.
+5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. DNS Gizlilik Protokolü öğesini DNS-over-TLS (DoT) olarak değiştirin.
 7. _DNS-over-TLS Profili_ öğesini _Katı_ olarak ayarlandığından emin olun.
 8. _DNS-over-TLS Sunucuları Listesi_ bölümüne doğru aşağı kaydırın. _Adres_ alanına aşağıdaki adreslerden birini girin:
@@ -37,6 +37,5 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 7. Ayarları kaydedin.
 8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
-
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

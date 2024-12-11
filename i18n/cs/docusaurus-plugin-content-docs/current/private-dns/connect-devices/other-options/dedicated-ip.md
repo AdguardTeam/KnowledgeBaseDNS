@@ -11,7 +11,7 @@ Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhr
 
 ## Proč potřebujete vyhrazenou IP adresu?
 
-Technické specifikace připojeného zařízení bohužel nemusí vždy umožnit nastavení šifrovaného soukromého serveru AdGuard DNS. V takovém případě budete muset použít standardní nešifrovaný DNS. AdGuard DNS lze nastavit dvěma způsoby: [pomocí propojených IP](/private-dns/connect-devices/other-options/linked-ip.md) a pomocí vyhrazených IP.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. V takovém případě budete muset použít standardní nešifrovaný DNS. AdGuard DNS lze nastavit dvěma způsoby: [pomocí propojených IP](/private-dns/connect-devices/other-options/linked-ip.md) a pomocí vyhrazených IP.
 
 Vyhrazené IP adresy jsou obecně stabilnější variantou. Propojená IP má některá omezení, například jsou povoleny pouze rezidenční adresy, poskytovatel může IP změnit a je nutné IP adresu znovu propojit. S vyhrazenými IP adresami získáte IP adresu, která je výhradně vaše, a všechny požadavky se budou počítat pro vaše zařízení.
 

@@ -18,8 +18,8 @@ toc_max_heading_level: 3
 Для устройств, которые не поддерживают зашифрованные DNS-протоколы, мы предлагаем три других варианта:
 
 - [Клиент AdGuard DNS](/dns-client/overview.md)
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 Если вы хотите ограничить доступ к AdGuard DNS для определенных устройств, используйте [DNS-over-HTTPS с аутентификацией](/private-dns/connect-devices/other-options/doh-authentication.md).
 

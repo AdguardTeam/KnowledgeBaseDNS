@@ -21,5 +21,5 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 8. İsteğe bağlı olarak, gelişmiş güvenlik için DNSSEC'yi etkinleştirebilirsiniz.
 9. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

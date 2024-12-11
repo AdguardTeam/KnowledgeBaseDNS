@@ -1,24 +1,22 @@
 - - -
-title: Jak vytvořit vlastní razítko DNS pro zabezpečený DNS
-
-sidebar_position: 4
+title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
 - - -
 
-Tento průvodce vám ukáže, jak vytvořit vlastní razítko DNS pro zabezpečený DNS. Zabezpečený DNS je služba, která zvyšuje bezpečnost a soukromí na internetu šifrováním dotazů DNS. Tím se zabrání tomu, aby vaše dotazy zachytily nebo zmanipulovaly zákeřné subjekty.
+This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
 
-Zabezpečený DNS obvykle používá URL `tls://`, `https://` nebo `quic://`. Tento způsob je pro většinu uživatelů dostačující a je doporučován.
+Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
 
-Pokud však potřebujete další zabezpečení, jako jsou předvyřešené IP adresy serverů a připnutí certifikátu pomocí hashe, můžete si vygenerovat vlastní razítko DNS.
+However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
 
 ## Úvod k razítkům DNS
 
-Razítka DNS jsou krátké řetězce, které obsahují všechny informace potřebné k připojení k zabezpečenému serveru DNS. Zjednodušují proces nastavení zabezpečeného DNS, protože uživatel nemusí všechny tyto údaje zadávat ručně.
+DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
 
-Razítka DNS umožňují přizpůsobit nastavení zabezpečeného DNS nad rámec obvyklých adres URL. Umožňují zejména zadávat pevně zadané adresy serverů, používat hašování certifikátů atd. Díky těmto funkcím jsou razítka DNS robustnější a univerzálnější možností konfigurace nastavení zabezpečeného DNS.
+DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
 
 ## Výběr protokolu
 
-Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)` a `DNS-over-TLS (DoT)` a některé další. Výběr jednoho z těchto protokolů závisí na kontextu, ve kterém je budete používat.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
 
 ## Vytvoření razítka DNS
 
@@ -58,7 +56,7 @@ Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (Do
 
 ### Získání hash certifikátu
 
-Chcete-li vyplnit pole **hash certifikátu** serveru, můžete použít následující příkaz, kterým nahradíte `<IP_ADDRESS>`, `<PORT>` a `<SERVER_NAME>` odpovídajícími hodnotami pro váš DNS server:
+To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -66,17 +64,17 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-Výsledek příkazu hash se může v průběhu času měnit v závislosti na aktualizaci certifikátu serveru. Pokud tedy razítko DNS náhle přestane fungovat, může být nutné přepočítat hash certifikátu a vygenerovat nové razítko. Pravidelná aktualizace razítka DNS pomůže zajistit trvalý bezpečný provoz služby zabezpečeného DNS.
+The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 
 :::
 
 ## Použití razítka DNS
 
-Nyní máte vlastní razítko DNS, které můžete použít k nastavení služby zabezpečeného DNS. Toto razítko lze zadat do aplikací AdGuard a AdGuard VPN pro zvýšení soukromí a bezpečnosti na internetu.
+You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
 
 ## Příklad vytvoření razítka DNS
 
-Uveďme si příklad vytvoření razítka pro AdGuard DNS pomocí DoT:
+Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. Otevřete [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 

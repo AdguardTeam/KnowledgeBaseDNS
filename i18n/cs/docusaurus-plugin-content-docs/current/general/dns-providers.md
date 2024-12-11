@@ -1144,7 +1144,7 @@ Marbled Fennec Networks hostuje DNS resolvery, které jsou schopné překládat 
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) poskytuje DoH a DoT řešitelům tři úrovně filtrování
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standardní
 

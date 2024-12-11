@@ -23,7 +23,7 @@ sidebar_position: 6
      - `94.140.14.49`
      - `94.140.14.59`
    - Установите для параметра _Разрешить удалённые запросы_ значение _Да_ (это необходимо для работы DNS-over-HTTPS)
-   - В поле _Использовать сервер DoH_ введите URL частного сервера AdGuard DNS: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Нажмите _ОK_
 4. Создайте статические записи DNS:
    - В _Настройках DNS_, нажмите _Статический_
@@ -56,5 +56,5 @@ sidebar_position: 6
 5. Сохраните настройки.
 6. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

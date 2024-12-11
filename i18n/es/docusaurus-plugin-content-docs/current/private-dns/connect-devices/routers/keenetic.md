@@ -14,7 +14,7 @@ Los routers Keenetic son conocidos por su estabilidad y configuraciones flexible
 5. En _Utilidades y servicios_, selecciona el proxy DNS-over-HTTPS e instálalo.
 6. Ve a _Menú_ → _Reglas de red_ → _Seguridad en Internet_.
 7. Navega hasta los servidores DNS-over-HTTPS y haz clic en _Añadir servidor DNS-over-HTTPS_.
-8. Introduce la URL del servidor DNS privado de AdGuard en el campo `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. Haz clic en _Guardar_.
 
 ## Configura DNS-over-TLS
@@ -26,7 +26,7 @@ Los routers Keenetic son conocidos por su estabilidad y configuraciones flexible
 5. En _Utilidades y servicios_, selecciona el proxy DNS-over-HTTPS e instálalo.
 6. Ve a _Menú_ → _Reglas de red_ → _Seguridad en Internet_.
 7. Navega hasta los servidores DNS-over-HTTPS y haz clic en _Añadir servidor DNS mediante HTTPS_.
-8. Introduce la URL del servidor DNS privado de AdGuard en el campo `tls://*********.d.adguard-dns.com`.
+8. Enter the URL of the Private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. Haz clic en _Guardar_.
 
 ## Utiliza el panel de administración del router
@@ -44,5 +44,5 @@ Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS
 7. Guarda la configuración.
 8. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 
-- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP vinculadas](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

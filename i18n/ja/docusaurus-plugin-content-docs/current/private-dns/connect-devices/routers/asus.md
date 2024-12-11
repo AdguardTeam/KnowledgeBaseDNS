@@ -15,7 +15,7 @@ sidebar_position: 3
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. 「_詳細設定_」サイドバーで、「WAN」セクションに移動します。
 4. _WAN DNS 設定セクション_で、「_DNS サーバーに自動的に接続_」を「_いいえ_」に設定します。
-5. [_ローカルクエリの転送_]、[_DNS リバインドの有効化_]、および [_DNSSECの有効化_] をすべて「いいえ」に設定します。
+5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. 「_DNSプライバシープロトコル_」を「_DNS-over-TLS（DoT）_」に変更します。
 7. _DNS-over-TLSプロファイル_が_Strict_に設定されていることを確認してください。
 8. 「_DNS-over-TLSサーバーのリスト_」セクションまでスクロールダウンします。 「_アドレス_」フィールドに、以下のいずれかのアドレスを入力します:
@@ -37,6 +37,5 @@ sidebar_position: 3
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 7. 設定を保存します。
 8. IP（チームプランをご利用の場合は専用IP）をリンクします。
-
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

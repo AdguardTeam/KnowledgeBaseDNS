@@ -23,7 +23,7 @@ MikroTik 라우터는 가정 및 소규모 사무실 네트워크에 라우팅, 
      - `94.140.14.49`
      - `94.140.14.59`
    - **원격 요청 허용**을 **예**로 설정합니다(DoH가 작동하려면 이 설정이 필수입니다).
-   - **DoH 서버 사용** 필드에 사설 AdGuard DNS 서버의 URL을 입력합니다: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - **확인**을 클릭합니다.
 4. 정적 DNS 레코드를 만듭니다.
    -  **DNS 설정**에서 **정적**을 클릭합니다.

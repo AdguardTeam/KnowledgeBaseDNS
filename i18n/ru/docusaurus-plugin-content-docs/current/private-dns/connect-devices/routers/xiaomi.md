@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Роутеры Xiaomi имеют много преимуществ: стабильный сильный сигнал, безопасность сети, стабильная работа, интеллектуальное управление, а также возможность подключения до 64 устройств к локальной сети Wi-Fi.
+Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
 К сожалению, он не поддерживает зашифрованный DNS, но отлично подходит для настройки AdGuard DNS через привязанный IP.
 
@@ -21,5 +21,5 @@ sidebar_position: 11
 6. Сохраните настройки.
 7. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

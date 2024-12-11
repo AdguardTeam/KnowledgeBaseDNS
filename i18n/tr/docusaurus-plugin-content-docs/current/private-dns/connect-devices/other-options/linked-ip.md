@@ -13,9 +13,11 @@ Tüm cihazlar şifrelenmiş DNS protokollerini desteklemez. Bu durumda, şifrele
 
 :::
 
-Bazen, bir konut IP adresi zaten kullanımda olabilir ve siz bu adrese bağlanmaya çalıştığınızda AdGuard DNS bağlantıyı önler.
-![Bağlı IPv4 adresi \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-Eğer böyle bir durum olursa lütfen [support@adguard-dns.io](mailto:support@adguard-dns.io) adresinden destek ekibiyle iletişime geçin, doğru yapılandırma ayarları konusunda size yardımcı olacaklardır.
+Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+
+![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
+If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## Bağlı IP nasıl kurulur
 
@@ -25,6 +27,7 @@ Aşağıdaki talimatlar, cihaza **IP adresini bağlamak** aracılığıyla nası
 2. Yeni bir cihaz ekleyin veya önceden bağlanmış bir cihazın ayarlarını açın.
 3. _DNS sunucu adreslerini kullan_ öğesine gidin.
 4. _Düz DNS sunucu adresleri_ öğesini açın ve bağlı IP'yi bağlayın.
+
    ![Bağlı IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamic DNS: Why it is useful
@@ -44,14 +47,21 @@ Bu şekilde, ilişkili IP adresini her değiştiğinde elle güncellemeniz gerek
 ## Dinamik DNS: Nasıl kurulur
 
 1. Öncelikle, DDNS'nin yönlendirici ayarlarınız tarafından desteklenip desteklenmediğini kontrol etmeniz gerekir:
+
    - _Yönlendirici ayarları_ → _Ağ_ öğesine gidin
    - DDNS veya _Dinamik DNS_ bölümünü bulun
-   - Oraya gidin ve ayarların gerçekten desteklendiğini doğrulayın. _Bu sadece neye benzeyebileceğine dair bir örnektir. Yönlendiricinize bağlı olarak değişebilir_
-     ![DDNS destekli \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Oraya gidin ve ayarların gerçekten desteklendiğini doğrulayın. _Bu sadece neye benzeyebileceğine dair bir örnektir. It may vary depending on your router_
+
+   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Alan adınızı [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) veya tercih ettiğiniz başka bir DDNS sağlayıcısı gibi popüler bir hizmetle tescil ettirin.
+
 3. Yönlendirici ayarlarınıza alan adını girin ve yapılandırmaları senkronize edin.
+
 4. Adresi bağlamak için Bağlı IP ayarlarına gidin, ardından _Gelişmiş Ayarlar_ öğesine gidin ve _DDNS'i yapılandır_ öğesine tıklayın.
+
 5. Daha önce tescil ettirdiğiniz alan adını girin ve _DDNS'i yapılandır_ öğesine tıklayın.
+
    ![DDNS'i yapılandır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Hepsi tamam, DDNS'i başarıyla kurdunuz!

@@ -7,7 +7,7 @@ With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS r
 
 ## What Structured DNS Errors are
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. Ancak bir sitenin tamamı DNS düzeyinde engellendiğinde, kullanıcı sayfaya erişim tamamen imkansız hâle gelecektir. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
 
 !["Bu siteye ulaşılamıyor" hatası](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
@@ -26,7 +26,7 @@ The SDE data is included in the `EXTRA-TEXT` field of the DNS response. Şunu i�
 - `o` (organization): Organization responsible for DNS filtering in this case (optional)
 - `s` (suberror): The suberror code for this particular DNS filtering (optional)
 
-Such a system enhances transparency between DNS services and users.
+Böyle bir sistem, DNS hizmetleri ile kullanıcılar arasındaki şeffaflığı artırır.
 
 ### What is required to implement Structured DNS Errors
 
@@ -36,9 +36,9 @@ Although AdGuard DNS has implemented support for Structured DNS Errors, browsers
 
 To showcase how Structured DNS Errors work, AdGuard DNS has developed a demo browser extension that shows how _Structured DNS Errors_ could work if browsers supported them. If you try to visit a website blocked by AdGuard DNS with this extension enabled, you will see a detailed explanation page with the information provided via SDE, such as the reason for blocking, contact details, and the organization responsible.
 
-![Explanation page](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
+![Açıklama sayfası](https://cdn.adtidy.org/blog/new/jlkdbaccess_blocked.png)
 
-You can install the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) or from [GitHub](https://github.com/AdguardTeam/dns-sde-extension/).
+Uzantıyı [Chrome Web Mağazası](https://chromewebstore.google.com/detail/oeinmjfnchfhaabhchfjkbdpmgeageen) veya [GitHub'dan](https://github.com/AdguardTeam/dns-sde-extension/) yükleyebilirsiniz.
 
 DNS düzeyinde neye benzediğini görmek istiyorsanız, `dig` komutunu kullanabilir ve çıktıda `EDE` araması yapabilirsiniz.
 

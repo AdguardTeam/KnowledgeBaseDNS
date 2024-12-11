@@ -23,7 +23,7 @@ MikroTik yönlendiriciler, ev ve küçük ofis ağları için yönlendirme, kabl
      - `94.140.14.49`
      - `94.140.14.59`
    - _Uzak İsteklere İzin Ver_ öğesini _Evet_ olarak ayarlayın (bu, DoH'un çalışması için önemlidir)
-   - _DoH sunucusunu kullan_ alanına özel AdGuard DNS sunucusunun URL'sini girin: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - _Tamam_ öğesine tıklayın
 4. Create Static DNS Records:
    - _DNS Ayarları_ öğesinde _Statik_ öğesine tıklayın
@@ -57,4 +57,4 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 6. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

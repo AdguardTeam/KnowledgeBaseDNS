@@ -11,7 +11,7 @@ Bir Takım veya Kurumsal aboneliğiniz varsa, birkaç kişisel özel IP adresi a
 
 ## Neden özel IP'ye ihtiyacınız var?
 
-Ne yazık ki, bağlı cihazın teknik özellikleri her zaman şifrelenmiş özel bir AdGuard DNS sunucusu kurmanıza izin vermeyebilir. Bu durumda, standart şifrelenmemiş DNS kullanmanız gerekir. AdGuard DNS'i kurmanın iki yolu vardır: [bağlı IP'leri kullanarak](/private-dns/connect-devices/other-options/linked-ip.md) ve özel IP'leri kullanarak.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Bu durumda, standart şifrelenmemiş DNS kullanmanız gerekir. AdGuard DNS'i kurmanın iki yolu vardır: [bağlı IP'leri kullanarak](/private-dns/connect-devices/other-options/linked-ip.md) ve özel IP'leri kullanarak.
 
 Özel IP'ler genellikle daha istikrarlı bir seçenektir. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. Özel IP'lerle, yalnızca size ait bir IP adresine sahip olursunuz ve cihazınıza gelen tüm istekler sayılacaktır.
 

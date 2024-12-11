@@ -1,24 +1,22 @@
 - - -
-title: Sådan opretter et eget DNS-stempel til Sikker DNS
-
-sidebar_position: 4
+title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
 - - -
 
-Denne guide viser dig, hvordan et eget DNS-stempel til sikker DNS oprettes. Sikker DNS er en tjeneste, der forbedrer internetsikkerhed og fortrolighed ved at kryptere DNS-forespørgslerne. Dette forhindrer forespørgslerne i at blive opsnappet eller manipuleret af ondsindede aktører.
+This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
 
-Sikker DNS bruger normalt `tls://`, `https://` eller `quic://` URL'er. Dette er tilstrækkeligt for de fleste brugere og er den anbefalede måde.
+Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
 
-Har man brug for yderligere sikkerhed, som f.eks. forudopløste server-IP'er og certifikat pinning med hash, kan man generere sit eget DNS-stempel.
+However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
 
 ## Introduktion til DNS-stempler
 
-DNS-stempler er korte strenge indeholdende alle de nødvendige oplysninger for at oprette forbindelse til en sikker DNS-server. De forenkler processen med at opsætte sikker DNS, da brugeren ikke behøver at angive alle disse data manuelt.
+DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
 
-DNS-stempler muliggør tilpasning af Sikker DNS-indstillinger ud over de sædvanlige URL'er. De giver især mulighed for at angive faste (hard-koded) serveradresser, bruge certifikat-hashing mv. Disse funktioner gør DNS-stempler til en mere robust og alsidig mulighed til opsætning af Sikker DNS-indstillinger.
+DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
 
 ## Valg af protokol
 
-Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Valget af en af disse protokoller afhænger af brugskonteksten.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
 
 ## Oprettelse af et DNS-stempel
 
@@ -58,7 +56,7 @@ Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DN
 
 ### Indhentning af certifikat-hash
 
-For at udfylde **hash'ene for serverens certifikat**-felt kan flg. kommando bruges, hvor `<IP_ADDRESS>`, `<PORT>`og `<SERVER_NAME>` erstattes med de korresponderende værdier for din DNS-server:
+To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -66,17 +64,17 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2
 
 :::caution
 
-Resultatet af hash-kommandoen kan ændre sig over tid i takt med, at serverens certifikat opdateres. Holder DNS-stemplet derfor pludselig op holder op med at virke, skal certifikat-hash'en muligvis genberegnes og et nyt stempel genereres. Regelmæssig opdatering af DNS-stemplet vil medvirke til at sikre den fortsatte sikre drift af Sikker DNS-tjenesten.
+The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 
 :::
 
 ## Brug af DNS-stemplet
 
-Du har nu dit eget DNS-stempel, som kan bruges til at opsætte Sikker DNS. Dette stempel kan angives i AdGuard og AdGuard VPN for forbedret internetfortrolighed og sikkerhed.
+You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
 
 ## Eksempel på oprettelse af et DNS-stempel
 
-Lad os se på et eksempel på oprettelsen af et stempel til AdGuard DNS vha. DoT:
+Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. Åbn [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 

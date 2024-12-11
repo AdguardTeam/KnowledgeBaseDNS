@@ -1144,7 +1144,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Стандартный
 
@@ -1248,7 +1248,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 | Протокол       | Адрес                                   |                                                                                                                                                                                                                                       |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.70.12.129`                         | [Add to AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                         |
-| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                         |
-| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                               |
+| DNS, IPv4      | `103.70.12.129`                         | [Добавить в AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                 |
+| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Добавить в AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
+| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Добавить в AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
