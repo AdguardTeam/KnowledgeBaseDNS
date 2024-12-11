@@ -14,7 +14,7 @@ Routery Keenetic jsou známé svou stabilitou a flexibilními konfiguracemi, sna
 5. V části _Nástroje a služby_ vyberte proxy DNS-over-HTTPS a nainstalujte jej.
 6. Přejděte do _Menu_ → _Pravidla sítě_ → _Bezpečnost internetu_.
 7. Přejděte na položku Servery DNS-over-HTTPS a klikněte na tlačítko _Přidat server DNS-over-HTTPS_.
-8. Do pole `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` zadejte adresu URL soukromého serveru AdGuard DNS.
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. Klikněte na _Uložit_.
 
 ## Konfigurace DNS-over-TLS
@@ -26,7 +26,7 @@ Routery Keenetic jsou známé svou stabilitou a flexibilními konfiguracemi, sna
 5. V části _Nástroje a služby_ vyberte proxy DNS-over-HTTPS a nainstalujte jej.
 6. Přejděte do _Menu_ → _Pravidla sítě_ → _Bezpečnost internetu_.
 7. Přejděte na položku Servery DNS-over-HTTPS a klikněte na tlačítko _Přidat server DNS-over-HTTPS_.
-8. Do pole `tls://*********.d.adguard-dns.com` zadejte adresu URL soukromého serveru AdGuard DNS.
+8. Enter the URL of the Private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. Klikněte na _Uložit_.
 
 ## Použijte panel správce routeru
@@ -44,5 +44,5 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
 7. Uložte nastavení.
 8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

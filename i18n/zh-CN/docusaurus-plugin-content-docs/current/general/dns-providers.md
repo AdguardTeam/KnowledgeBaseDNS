@@ -1144,7 +1144,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) 提供三级过滤的 DNS-over-HTTPS 和 TLS 加密协议的 DNS（DoT）解析器。
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### 标准
 

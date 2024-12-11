@@ -15,7 +15,7 @@ sidebar_position: 3
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
 3. На боковой панели «Дополнительные параметры» перейдите к разделу «WAN».
 4. В разделе «Настройки WAN DNS» установите для параметра «Автоматически подключаться к DNS-серверу» значение «Нет».
-5. Установите для параметра «Переадресация локальных запросов», «Включить повторную привязку DNS» и «Включить DNSSEC» значение «Нет».
+5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. Измените протокол конфиденциальности DNS на DNS-over-TLS (DoT).
 7. Убедитесь, что для профиля DNS-over-TLS установлено значение «Строгий».
 8. Прокрутите вниз до раздела «Список серверов DNS-over-TLS». В поле «Адрес» введите один из следующих адресов:
@@ -37,6 +37,5 @@ sidebar_position: 3
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 7. Сохраните настройки.
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
-
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

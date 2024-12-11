@@ -3,7 +3,7 @@ title: Servere og indstillinger
 sidebar_position: 1
 ---
 
-## Hvad er en server, og hvordan anvendes den
+## What is a server and how to use it
 
 Når en Privat AdGuard DNS opsættes, vil man støde på begrebet _servere_.
 

@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 전용 IP가 필요한 이유는 무엇인가요?
 
-안타깝게도 연결된 기기의 기술 사양이 항상 암호화된 사설 AdGuard DNS 서버를 설정할 수 없도록 허용되지는 않을 수 있습니다. 이 경우, 일반 암호화되지 않은 DNS를 사용해야 합니다. AdGuard DNS를 설정하려면 [연결된 IP](/private-dns/connect-devices/other-options/linked-ip.md) 또는 전용 IP를 사용할 수 있습니다.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. 이 경우, 일반 암호화되지 않은 DNS를 사용해야 합니다. AdGuard DNS를 설정하려면 [연결된 IP](/private-dns/connect-devices/other-options/linked-ip.md) 또는 전용 IP를 사용할 수 있습니다.
 
 전용 IP는 일반적으로 더 안정적인 옵션입니다. 연결된 IP에는 몇 가지 제한 사항이 있어서 거주지 주소만 허용되며, 제공자가 IP를 변경할 수 있고 IP 주소를 다시 연결해야 합니다. 전용 IP를 사용하면 본인만 사용할 수 있는 IP 주소가 제공되며 모든 요청이 해당 기기에서 계산됩니다.
 

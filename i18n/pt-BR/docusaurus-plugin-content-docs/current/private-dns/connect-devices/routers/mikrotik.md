@@ -23,7 +23,7 @@ Roteadores MikroTik utilizam o sistema operacional RouterOS de código aberto, q
      - `94.140.14.49`
      - `94.140.14.59`
    - Defina _Permitir solicitações remotas_ para _Sim_ (isso é crucial para o funcionamento do DNS-over-HTTPS)
-   - No campo _Usar servidor DNS-over-HTTPS_, insira a URL do servidor privado do AdGuard DNS: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Clique em _OK_
 4. Crie registros DNS estáticos:
    - Nas _Configurações de DNS_, clique em _Estático_
@@ -56,5 +56,5 @@ Use estas instruções se o seu roteador Keenetic não oferece suporte à config
 5. Salve as configurações.
 6. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

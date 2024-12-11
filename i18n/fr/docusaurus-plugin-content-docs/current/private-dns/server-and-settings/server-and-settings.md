@@ -3,7 +3,7 @@ title: Serveur et paramètres
 sidebar_position: 1
 ---
 
-## Qu'est-ce qu'un serveur et comment l'utiliser
+## What is a server and how to use it
 
 Lorsque vous configurez AdGuard DNS privé, vous rencontrerez le terme _serveurs_.
 

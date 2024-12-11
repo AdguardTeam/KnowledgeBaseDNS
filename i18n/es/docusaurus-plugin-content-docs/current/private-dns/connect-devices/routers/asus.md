@@ -15,7 +15,7 @@ Si es necesario: Configura DNS-over-TLS en ASUS, instala el [firmware ASUS Merli
 2. Introduce el nombre de usuario del administrador (generalmente, es admin) y la contraseña del router.
 3. En la barra lateral de _Configuración avanzada_, ve a la sección WAN.
 4. En la sección _Configuración de DNS de WAN_, configura _Conectar al servidor DNS automáticamente_ en _No_.
-5. Establece _Reenviar consultas locales_, _Habilitar DNS Rebind_ y _Habilitar DNSSEC_ en _No_.
+5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. Cambia el Protocolo de Privacidad de DNS a DNS-over-TLS (DoT).
 7. Asegúrate de que el _perfil de DNS-over-TLS_ está establecido en _estricto_.
 8. Desplázate hacia abajo hasta la sección _Lista de Servidores DNS-over-TLS_. En el campo _Dirección_, introduce una de las direcciones a continuación:
@@ -37,6 +37,5 @@ Si es necesario: Configura DNS-over-TLS en ASUS, instala el [firmware ASUS Merli
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
 7. Guarda la configuración.
 8. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
-
-- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP vinculadas](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

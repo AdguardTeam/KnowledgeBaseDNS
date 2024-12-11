@@ -23,7 +23,7 @@ Les routeurs MikroTik utilisent le système d'exploitation open source RouterOS,
      - `94.140.14.49`
      - `94.140.14.59`
    - Réglez _Autoriser les requêtes à distance_ sur _Oui_ (ceci est crucial pour le fonctionnement du DoH)
-   - Dans le champ _Utiliser le serveur DoH_, saisissez l'URL du serveur DNS AdGuard privé : `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Cliquez sur _OK_
 4. Créez des enregistrements DNS statiques :
    - Dans les _Paramètres DNS_, cliquez sur _Statique_
@@ -56,5 +56,5 @@ Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la co
 5. Enregistrez les paramètres.
 6. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
-- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

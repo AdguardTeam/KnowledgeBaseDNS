@@ -23,7 +23,7 @@ MikroTik routere bruger open-source RouterOS-operativsystemet, der leverer rutni
      - `94.140.14.49`
      - `94.140.14.59`
    - Sæt _Tillad fjernforespørgsler_ til _Ja_ (dette er afgørende for, at DoH kan fungere)
-   - Angiv i feltet _Brug DoH-server_ URL'en til den private AdGuard DNS-server: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Klik på _OK_
 4. Opret Statiske DNS-poster:
    - Klik i afsnittet _DNS-indstillinger_ på _Statisk_
@@ -56,5 +56,5 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 5. Gem indstillingerne.
 6. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linket IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

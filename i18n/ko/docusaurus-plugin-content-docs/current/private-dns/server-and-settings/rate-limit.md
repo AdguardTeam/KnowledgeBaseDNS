@@ -16,8 +16,9 @@ DNS 요청 한도는 일반적으로 클라이언트(IP 주소)가 주어진 기
 AdGuard DNS **엔터프라이즈** 또는 **팀** 요금제에 가입한 경우, 요청 한도 증가를 요청할 수 있습니다. 아래 지침을 따르세요.
 
 1. [DNS 대시보드](https://adguard-dns.io/dashboard/) → **계정 설정** → **요청 한도**으로 이동합니다.
+
 2. **요청 한도 증가**를 클릭하여 지원팀에 문의하고 요청 한도 증가를 신청하세요. CIDR과 원하는 한도를 제공해야 합니다.
 
-![요청 한도](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. 요청은 영업일 기준 1~3일 이내에 검토됩니다. 변경 사항에 대해 이메일로 연락드리겠습니다.
+3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

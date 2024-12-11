@@ -77,5 +77,5 @@ macOS 设备的描述文件，也被 Apple 称为「配置描述文件」，是�
 
 如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -14,7 +14,7 @@ sidebar_position: 5
 5. В разделе «Утилиты и сервисы» выберите DNS-over-HTTPS-прокси и установите его.
 6. Перейдите в «Меню» → «Правила сети» → «Интернет-безопасность».
 7. Перейдите к DNS-over-HTTPS-серверам и нажмите «Добавить DNS-over-HTTPS-сервер».
-8. Введите URL приватного AdGuard DNS сервера в поле `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. Нажмите _Сохранить_.
 
 ## Настройка DNS-over-TLS
@@ -26,7 +26,7 @@ sidebar_position: 5
 5. В разделе «Утилиты и сервисы» выберите DNS-over-HTTPS-прокси и установите его.
 6. Перейдите в «Меню» → «Правила сети» → «Интернет-безопасность».
 7. Перейдите к DNS-over-HTTPS-серверам и нажмите «Добавить DNS-over-HTTPS-сервер».
-8. Введите URL приватного AdGuard DNS сервера в поле `tls://*********.d.adguard-dns.com`.
+8. Enter the URL of the Private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. Нажмите _Сохранить_.
 
 ## Через панель управления роутера
@@ -44,5 +44,5 @@ sidebar_position: 5
 7. Сохраните настройки.
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

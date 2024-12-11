@@ -15,7 +15,7 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
 3. V postranním panelu _Pokročilá nastavení_ přejděte do části WAN.
 4. V části _Nastavení DNS WAN_ nastavte _Připojit k DNS serveru automaticky_ na _Ne_.
-5. Nastavte položky _Předávání místních dotazů_, povolte opětovné navázání DNS a _povolte DNSSEC_ na hodnotu _Ne_.
+5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. Změňte protokol ochrany soukromí DNS na DNS-over-TLS (DoT).
 7. Zkontrolujte, zda je profil _DNS-over-TLS_ nastaven na hodnotu _Přísný_.
 8. Přejděte dolů do sekce _Seznam serverů DNS-over-TLS_. Do pole _Adresa_ zadejte jednu z níže uvedených adres:
@@ -37,6 +37,5 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 7. Uložte nastavení.
 8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
-
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

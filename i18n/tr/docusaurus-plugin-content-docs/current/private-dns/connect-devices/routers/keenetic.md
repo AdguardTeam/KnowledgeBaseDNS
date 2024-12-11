@@ -14,7 +14,7 @@ Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bil
 5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
 6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
 7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. _Kaydet_ öğesine tıklayın.
 
 ## DNS-over-TLS'yi yapılandırma
@@ -26,7 +26,7 @@ Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bil
 5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
 6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
 7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
+8. Enter the URL of the Private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. _Kaydet_ öğesine tıklayın.
 
 ## Yönlendirici yönetici panelini kullanma
@@ -44,5 +44,5 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 7. Ayarları kaydedin.
 8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -11,7 +11,7 @@ Wenn Sie ein Team- oder Enterprise-Abonnement haben, erhalten Sie mehrere persö
 
 ## Warum benötigen Sie eine dedizierte IP?
 
-Leider erlauben die technischen Spezifikationen des angeschlossenen Geräts möglicherweise nicht immer, einen verschlüsselten privaten AdGuard DNS-Server einzurichten. In diesem Fall müssen Sie standardmäßiges unverschlüsseltes DNS verwenden. Es gibt zwei Möglichkeiten, AdGuard DNS einzurichten: [verknüpfte IPs verwenden](/private-dns/connect-devices/other-options/linked-ip.md) und dedizierte IPs verwenden.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. In diesem Fall müssen Sie standardmäßiges unverschlüsseltes DNS verwenden. Es gibt zwei Möglichkeiten, AdGuard DNS einzurichten: [verknüpfte IPs verwenden](/private-dns/connect-devices/other-options/linked-ip.md) und dedizierte IPs verwenden.
 
 Dedizierte IP-Adressen sind im Allgemeinen eine stabilere Option. Für verknüpfte IP-Adressen gelten einige Einschränkungen, z. B. sind nur Wohnadressen zulässig. Ihr Anbieter kann die IP-Adresse ändern und Sie müssen die IP-Adresse erneut verknüpfen. Mit dedizierten IPs erhalten Sie eine IP-Adresse, die ausschließlich Ihnen gehört, und alle Anfragen werden für Ihr Gerät gezählt.
 

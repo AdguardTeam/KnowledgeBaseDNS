@@ -18,8 +18,8 @@ toc_max_heading_level: 3
 对于本机不支持加密 DNS 协议的设备，我们提供其他三种选择：
 
 - [AdGuard DNS 客户端](/dns-client/overview.md)
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 如果用户在某些设备上想要限制 AdGuard DNS 的访问权限，请使用[带有身份验证的 DNS-over-HTTPS](/private-dns/connect-devices/other-options/doh-authentication.md)。
 

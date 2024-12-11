@@ -21,5 +21,5 @@ Utilizza queste istruzioni se il tuo router Keenetic non supporta la configurazi
 8. Facoltativamente, puoi abilitare DNSSEC per maggiore sicurezza.
 9. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

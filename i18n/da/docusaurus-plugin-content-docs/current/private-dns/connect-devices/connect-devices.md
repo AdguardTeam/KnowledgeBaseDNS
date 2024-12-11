@@ -18,7 +18,7 @@ I dette afsnit findes vejledning til, hvordan man tilslutter sin enhed til AdGua
 For enheder uden medfødt understøttelse af krypterede DNS-protokoller, tilbyder vi tre andre muligheder:
 
 - [AdGuard DNS Client](/dns-client/overview.md)
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 Vil man begrænse adgangen til AdGuard DNS til bestemte enheder, brug da [DNS-over-HTTPS med godkendelse](/private-dns/connect-devices/other-options/doh-authentication.md).

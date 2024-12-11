@@ -1144,7 +1144,7 @@ Marbled Fennec Networks hostet DNS-Resolver, die in der Lage sind, sowohl OpenNI
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) bietet DoH und DoT-Resolver mit drei Filterungsstufen
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 

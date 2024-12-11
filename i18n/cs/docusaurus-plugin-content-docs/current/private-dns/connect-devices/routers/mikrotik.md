@@ -23,7 +23,7 @@ Routery MikroTik využívají open source operační systém RouterOS, který po
      - `94.140.14.49`
      - `94.140.14.59`
    - Nastavte _Allow Remote Requests_ na _Yes_ (to je pro fungování DoH zásadní)
-   - Do pole _Použít server DoH_ zadejte adresu URL soukromého serveru AdGuard DNS: https://d.adguard-dns.com/dns-query/\*\*\*\*\*\*\*\`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Klikněte na _OK_
 4. Vytvořte záznam statického DNS:
    - V _Nastavení DNS_ klikněte na  _Statický_
@@ -56,5 +56,5 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
 5. Uložte nastavení.
 6. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

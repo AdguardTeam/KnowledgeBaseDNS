@@ -3,7 +3,7 @@ title: Sunucu ve ayarlar
 sidebar_position: 1
 ---
 
-## Sunucu nedir ve nasıl kullanılır
+## What is a server and how to use it
 
 Özel AdGuard DNS'i kurduğunuzda _sunucular_ terimiyle karşılaşırsınız.
 

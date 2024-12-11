@@ -37,7 +37,7 @@ Desteklenen CPU mimarileri:
 
 1. `.tar.gz` or `.zip` arşivini [sürümler sayfasından][releases] indirin ve açın.
 
-   :::dikkat
+   :::caution
 
    macOS'ta, genel olarak yüklenen daemonların `root` tarafından sahiplenilmesi çok önemlidir (bkz. [`launchd` dokümantasyonu][launchd-requirements]), bu nedenle `AdGuardDNSClient` çalıştırılabilir dosyası `/Applications/` dizinine veya alt dizinine yerleştirilmelidir.
 

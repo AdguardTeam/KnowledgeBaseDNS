@@ -1144,7 +1144,7 @@ Marbled Fennec Networks hoster DNS-opløsere, som er i stand til at opløse båd
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) leverer DoH- og DoT-opløsere med tre filtreringsniveauer
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 

@@ -16,8 +16,9 @@ La limitation de taux DNS fonctionne généralement en définissant des seuils s
 Si vous êtes abonné au plan AdGuard DNS _Team_ ou _Enterprise_, vous pouvez demander une limite de taux plus élevée. Pour ce faire, veuillez suivre les instructions ci-dessous :
 
 1. Allez à [tableau de bord DNS](https://adguard-dns.io/dashboard/) → _Paramètres du compte_ → _Limite de requêtes_
+
 2. Appuyez sur _Requête d'augmentation de limite_ pour contacter notre Équipe d'assistance et postuler pour l'augmentation de la limite de taux. Vous devez fournir votre CIDR et la limite que vous souhaitez avoir
 
-![Limite de requêtes](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Votre requête sera examinée dans un délai de 1 à 3 jours ouvrables. Nous vous contacterons au sujet des changements par courriel
+3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
