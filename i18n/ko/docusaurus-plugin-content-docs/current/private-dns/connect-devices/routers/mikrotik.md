@@ -7,12 +7,12 @@ MikroTik 라우터는 가정 및 소규모 사무실 네트워크에 라우팅, 
 
 ## DNS-over-HTTPS 설정
 
-1. Access your MikroTik router:
+1. MikroTik 라우터 설정으로 이동합니다.
    - 웹브라우저를 열고 라우터의 IP 주소(일반적으로 `192.168.88.1`)로 이동합니다.
    - 또는 Winbox를 사용하여 MikroTik 라우터에 연결할 수 있습니다.
    - 관리자 사용자 아이디와 비밀번호를 입력합니다.
 2. 루트 인증서를 가져옵니다.
-   - Download the latest bundle of trusted root certificates: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
+   - 신뢰할 수 있는 최신 루트 인증서 번들을 다운로드합니다: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
    - **파일**로 이동합니다. **업로드**를 클릭하고 다운로드한 cacert.pem 인증서 번들을 선택합니다.
    - **시스템** → **인증서** → **가져오기**로 이동합니다.
    - **파일 이름** 필드에서 업로드한 인증서 파일을 선택합니다.

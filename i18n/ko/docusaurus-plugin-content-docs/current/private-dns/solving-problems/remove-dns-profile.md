@@ -31,9 +31,9 @@ iOS 기기에서:
 
     ![일반 설정 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
 
-1. Scroll down to *VPN & Device Management*.
+1. *VPN & 디바이스 관리*로 스크롤합니다.
 
-    ![VPN & Device Management *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
+    ![VPN & 기기 관리 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
 
 1. 원하는 프로필을 선택하고 *프로필 제거*를 탭합니다.
 

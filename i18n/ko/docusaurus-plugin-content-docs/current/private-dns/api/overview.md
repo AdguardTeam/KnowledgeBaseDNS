@@ -16,7 +16,7 @@ Adguard DNS는 앱을 통합하는데 사용할 수 있는 REST API를 제공합
 
 ### Access token 생성
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+주어진 파라미터를 사용하여 다음 URL에 대한 POST 요청을 보내 `access_token`을 생성합니다.
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -28,9 +28,9 @@ Make a POST request for the following URL with the given params to generate the 
 
 응답으로 `access_token`과 `refresh_token`을 모두 받게 됩니다.
 
-- The `access_token` will expire after some specified seconds (represented by the `expires_in` param in the response). You can regenerate a new `access_token` using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+- `access_token`은 지정된 몇 초 후에 만료됩니다(응답의 응답의 `expires_in` 매개변수로 표시됨). 새로 `access_token`을 사용하여 새 `refresh_token`을 다시 생성할 수 있습니다. (참고: `새로 고침 토큰을 통한 액세스 토큰` 생성)
 
-- `refresh_token`은 영구적으로 유지됩니다. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token`은 영구적으로 유지됩니다. `새로 고침 토큰`을 해지하려면 다음을 참조하세요: `새로 고침 토큰 해지하기`
 
 #### 요청 예시
 
@@ -153,17 +153,17 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### OpenAPI 사양
 
-OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI 사양은 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]에서 확인할 수 있습니다.
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+다양한 도구를 사용하여 사용 가능한 API 메서드 목록을 볼 수 있습니다. 예를 들어, [https://editor.swagger.io/][swagger]에서 이 파일을 열 수 있습니다.
 
 ### 변경 로그
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+전체 AdGuard DNS API 변경 로그는 [이 페이지](private-dns/api/changelog.md)에서 확인할 수 있습니다.
 
 ## 피드백
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+이 API를 새로운 방법으로 확장하고 싶다면 `devteam@adguard.com` 으로 이메일을 보내 추가하고 싶은 내용을 알려주세요.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/
