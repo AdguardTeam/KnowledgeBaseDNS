@@ -5,7 +5,7 @@ sidebar_position: 6
 
 MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
 
-There are two ways to connect setting up Private AdGuard DNS on a MikroTik router — via configuring DNS-over-HTTPS or using the router admin panel.
+There are two ways to set up Private AdGuard DNS on a MikroTik router — via configuring DNS-over-HTTPS or using the router admin panel.
 
 ## Configure DNS-over-HTTPS
 
