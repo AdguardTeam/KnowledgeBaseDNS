@@ -3,7 +3,9 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open source RouterOS operating system, which provides routing, wireless networking and firewall services for home and small office networks.
+MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
+
+There are two ways to connect setting up Private AdGuard DNS on a MikroTik router — via configuring DNS-over-HTTPS or using the router admin panel.
 
 ## Configure DNS-over-HTTPS
 
@@ -38,14 +40,13 @@ MikroTik routers use the open source RouterOS operating system, which provides r
     - Double-click the client used for your Internet connection (usually on the WAN interface)
     - Uncheck *Use Peer DNS*
     - Click *OK*
-1. Link your IP.
 1. Test and verify:
     - You might need to reboot your MikroTik router for all changes to take effect
     - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
 ## Use your router admin panel
 
-Use these instructions if your Mikrotic router does not support DNS-over-HTTPS configuration:
+Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
 1. Access your MikroTik router:
     - Open your web browser and go to your router's IP address (usually `192.168.88.1`)
@@ -56,6 +57,7 @@ Use these instructions if your Mikrotic router does not support DNS-over-HTTPS c
     - In the *Servers* section, add the following AdGuard DNS servers:
         - IPv4: `94.140.14.49` and `94.140.14.59`
         - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+        - Dedicated IPv6: Private AdGuard DNS supports dedicated IPv6 addresses. To find them, open the Dashboard, click *Settings* next to your device → *Plain DNS server addresses* → *Dedicated IPv6 addresses*.
     - Click *OK*
 1. Disable Peer DNS on DHCP Client:
     - Go to *IP* → *DHCP Client*
