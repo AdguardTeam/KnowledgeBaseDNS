@@ -5,8 +5,6 @@ sidebar_position: 6
 
 MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
 
-There are two ways to set up Private AdGuard DNS on a MikroTik router — via configuring DNS-over-HTTPS or using the router admin panel.
-
 ## Configure DNS-over-HTTPS
 
 1. Access your MikroTik router:
@@ -44,7 +42,7 @@ There are two ways to set up Private AdGuard DNS on a MikroTik router — via co
     - You might need to reboot your MikroTik router for all changes to take effect
     - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
-## Use your router admin panel
+## My router does not support DNS-over-HTTPS
 
 Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
