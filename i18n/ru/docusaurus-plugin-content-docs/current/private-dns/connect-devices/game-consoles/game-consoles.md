@@ -1,9 +1,9 @@
 ---
-title: Game consoles
+title: Игровые консоли
 sidebar_position: 1
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Игровые консоли не поддерживают зашифрованный DNS, но они отлично подходят для настройки Публичного AdGuard DNS или Личного AdGuard DNS через привязанный IP-адрес.
 
 - [Nintendo](private-dns/connect-devices/game-consoles/nintendo.md)
 - [Nintendo Switch](private-dns/connect-devices/game-consoles/nintendo-switch.md)

@@ -5,26 +5,26 @@ sidebar_position: 2
 
 ## What is it and why you need it
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+Kullanıcı kuralları, yaygın engel listelerinde kullanılan kurallarla aynı filtreleme kurallarıdır. Kuralları elle ekleyerek veya önceden tanımlanmış bir listeden içe aktararak site filtrelemeyi ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+Filtrelemenizi daha esnek ve tercihlere daha uygun hâle getirmek için AdGuard DNS filtreleme kuralları için [kural söz dizimini](/general/dns-filtering-syntax/) inceleyin.
 
 ## Nasıl kullanılır
 
 Kullanıcı kurallarını ayarlamak için:
 
-1. Navigate to the _Dashboard_.
+1. _Pano_ öğesine gidin.
 
 2. _Sunucular_ bölümüne gidin.
 
 3. Gerekli sunucuyu seçin.
 
-4. Click the _User rules_ option.
+4. _Kullanıcı kuralları_ seçeneğine tıklayın.
 
-5. You'll find several options for adding user rules.
+5. Kullanıcı kuralları eklemek için çeşitli seçenekler bulacaksınız.
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - En kolay yol oluşturucuyu kullanmaktır. Kullanmak için _Yeni kural ekle_ öğesine tıklayın → Engellemek veya engelini kaldırmak istediğiniz alan adını girin → _Kural ekle_ öğesine tıklayın
+     ![Kural ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Gelişmiş yolu ise kural düzenleyicisini kullanmaktır. _Düzenleyiciyi aç_ öğesine tıklayın ve [söz dizimine](/general/dns-filtering-syntax/) göre engelleme kurallarını girin
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+Bu özellik, [DNS sorgusunun içeriğini değiştirerek sorguyu başka bir alan adına yönlendirmenize](/general/dns-filtering-syntax/#dnsrewrite-modifier) olanak tanır.

@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: Aziende
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Questa scheda ti consente di verificare rapidamente quali aziende inviano più richieste e quali hanno il maggior numero di richieste bloccate.
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![Aziende \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+La pagina delle Aziende è divisa in due categorie:
 
-- **Top requested company**
-- **Top blocked company**
+- **Azienda più richiesta**
+- **Azienda più bloccata**
 
-These are further divided into sub-categories:
+Queste sono ulteriormente suddivise in sottocategorie:
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Pubblicità**: richieste pubblicitarie e altre richieste correlate agli annunci che raccolgono e condividono i dati degli utenti, analizzano il comportamento degli utenti e mirano a pubblicità
+- **Tracker**: richieste da siti web e terze parti per la raccolta dell'attività degli utenti
+- **Social media**: richieste a siti web di social network
+- **CDN**: richiesta connessa a Content Delivery Network (CDN), una rete globale di server proxy che accelera la consegna dei contenuti agli utenti finali
+- **Altro**
 
-### Top companies
+### Aziende maggiori
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+In questa tabella, non mostriamo solo i nomi delle aziende più visitate o più bloccate, ma visualizziamo anche informazioni su quali domini sono stati richiesti oppure quali domini sono stati bloccati di più.
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)
+![Aziende principali \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

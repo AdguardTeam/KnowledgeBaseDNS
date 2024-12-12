@@ -11,86 +11,86 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Este artículo contiene la documentación para la [API de AdGuard DNS](private-dns/api/overview.md). Para ver el registro de cambios completo de la API de AdGuard DNS, visita [esta página](private-dns/api/changelog.md).
 
-## Current version: 1.9
+## Versión actual: 1.9
 
 ### /oapi/v1/account/limits
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets account limits
-
-##### Respuestas
-
-| Código | Descripción         |
-| ------ | ------------------- |
-| 200    | Account limits info |
-
-### /oapi/v1/dedicated_addresses/ipv4
-
-#### GET
-
-##### Summary
-
-Lists dedicated IPv4 addresses
+Obtiene los límites de la cuenta
 
 ##### Respuestas
 
 | Código | Descripción                      |
 | ------ | -------------------------------- |
-| 200    | List of dedicated IPv4 addresses |
+| 200    | Información de límites de cuenta |
 
-#### POST
+### /oapi/v1/dedicated_addresses/ipv4
 
-##### Summary
+#### GET
 
-Allocates new IPv4
+##### Resumen
+
+Lista de direcciones IPv4 dedicadas
 
 ##### Respuestas
 
-| Código | Descripción                            |
-| ------ | -------------------------------------- |
-| 200    | New IPv4 successfully allocated        |
-| 429    | Dedicated IPv4 count reached the limit |
+| Código | Descripción                         |
+| ------ | ----------------------------------- |
+| 200    | Lista de direcciones IPv4 dedicadas |
+
+#### POST
+
+##### Resumen
+
+Asignar nueva IPv4
+
+##### Respuestas
+
+| Código | Descripción                                        |
+| ------ | -------------------------------------------------- |
+| 200    | Nueva IPv4 asignada con éxito                      |
+| 429    | Se alcanzó el límite de direcciones IPv4 dedicadas |
 
 ### /oapi/v1/devices
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Lists devices
+Listas de dispositivos
 
 ##### Respuestas
 
-| Código | Descripción     |
-| ------ | --------------- |
-| 200    | List of devices |
+| Código | Descripción           |
+| ------ | --------------------- |
+| 200    | Lista de dispositivos |
 
 #### POST
 
-##### Summary
+##### Resumen
 
-Creates a new device
+Crea un nuevo dispositivo
 
 ##### Respuestas
 
-| Código | Descripción                     |
-| ------ | ------------------------------- |
-| 200    | Device created                  |
-| 400    | Validación fallida              |
-| 429    | Devices count reached the limit |
+| Código | Descripción                                 |
+| ------ | ------------------------------------------- |
+| 200    | Dispositivo creado                          |
+| 400    | Validación fallida                          |
+| 429    | El número de dispositivos alcanzó el límite |
 
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
 
-##### Summary
+##### Resumen
 
-Removes a device
+Elimina un dispositivo
 
 ##### Parámetros
 
@@ -102,14 +102,14 @@ Removes a device
 
 | Código | Descripción               |
 | ------ | ------------------------- |
-| 200    | Device deleted            |
+| 200    | Dispositivo eliminado     |
 | 404    | Dispositivo no encontrado |
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets an existing device by ID
+Obtiene un dispositivo existente por ID
 
 ##### Parámetros
 
@@ -119,14 +119,14 @@ Gets an existing device by ID
 
 ##### Respuestas
 
-| Código | Descripción               |
-| ------ | ------------------------- |
-| 200    | Device info               |
-| 404    | Dispositivo no encontrado |
+| Código | Descripción                 |
+| ------ | --------------------------- |
+| 200    | Información del dispositivo |
+| 404    | Dispositivo no encontrado   |
 
 #### PUT
 
-##### Summary
+##### Resumen
 
 Actualiza un dispositivo existente
 
@@ -148,9 +148,9 @@ Actualiza un dispositivo existente
 
 #### GET
 
-##### Summary
+##### Resumen
 
-List dedicated IPv4 and IPv6 addresses for a device
+Lista de direcciones IPv4 e IPv6 dedicadas para un dispositivo
 
 ##### Parámetros
 
@@ -160,17 +160,17 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Respuestas
 
-| Código | Descripción             |
-| ------ | ----------------------- |
-| 200    | Dedicated IPv4 and IPv6 |
+| Código | Descripción           |
+| ------ | --------------------- |
+| 200    | IPv4 e IPv6 dedicados |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### DELETE
 
-##### Summary
+##### Resumen
 
-Unlink dedicated IPv4 from the device
+Desvincular IPv4 dedicada del dispositivo
 
 ##### Parámetros
 
@@ -182,14 +182,14 @@ Unlink dedicated IPv4 from the device
 
 | Código | Descripción                                          |
 | ------ | ---------------------------------------------------- |
-| 200    | Dedicated IPv4 successfully unlinked from the device |
-| 404    | Device or address not found                          |
+| 200    | IPv4 dedicada desvinculada del dispositivo con éxito |
+| 404    | Dispositivo o dirección no encontrados               |
 
 #### POST
 
-##### Summary
+##### Resumen
 
-Link dedicated IPv4 to the device
+Vincular IPv4 dedicada al dispositivo
 
 ##### Parámetros
 
@@ -199,18 +199,18 @@ Link dedicated IPv4 to the device
 
 ##### Respuestas
 
-| Código | Descripción                                      |
-| ------ | ------------------------------------------------ |
-| 200    | Dedicated IPv4 successfully linked to the device |
-| 400    | Validación fallida                               |
-| 404    | Device or address not found                      |
-| 429    | Linked dedicated IPv4 count reached the limit    |
+| Código | Descripción                                                      |
+| ------ | ---------------------------------------------------------------- |
+| 200    | IPv4 dedicada vinculada al dispositivo con éxito                 |
+| 400    | Validación fallida                                               |
+| 404    | Dispositivo o dirección no encontrados                           |
+| 429    | Se alcanzó el límite de la cantidad de IPv4 dedicadas vinculadas |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
 
-##### Summary
+##### Resumen
 
 Obtiene el archivo DNS-over-HTTPS .mobileconfig.
 
@@ -233,9 +233,9 @@ Obtiene el archivo DNS-over-HTTPS .mobileconfig.
 
 #### PUT
 
-##### Summary
+##### Resumen
 
-Generate and set new DNS-over-HTTPS password
+Generar y establecer nueva contraseña para DNS-over-HTTPS
 
 ##### Parámetros
 
@@ -245,16 +245,16 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Respuestas
 
-| Código | Descripción                                |
-| ------ | ------------------------------------------ |
-| 200    | DNS-over-HTTPS password successfully reset |
-| 404    | Dispositivo no encontrado                  |
+| Código | Descripción                                         |
+| ------ | --------------------------------------------------- |
+| 200    | Contraseña de DNS-over-HTTPS restablecida con éxito |
+| 404    | Dispositivo no encontrado                           |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### OBTENER
 
-##### Summary
+##### Resumen
 
 Obtiene el archivo .mobileconfig de DNS-over-TLS.
 
@@ -277,7 +277,7 @@ Obtiene el archivo .mobileconfig de DNS-over-TLS.
 
 #### PUT
 
-##### Summary
+##### Resumen
 
 Actualiza la configuración del dispositivo
 
@@ -299,23 +299,23 @@ Actualiza la configuración del dispositivo
 
 #### OBTENER
 
-##### Summary
+##### Resumen
 
-Lists DNS servers that belong to the user.
+Lista los servidores DNS que pertenecen al usuario.
 
 ##### Descripción
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+Lista los servidores DNS que pertenecen al usuario. De forma predeterminada, hay al menos un servidor predeterminado.
 
 ##### Respuestas
 
-| Código | Descripción         |
-| ------ | ------------------- |
-| 200    | List of DNS servers |
+| Código | Descripción             |
+| ------ | ----------------------- |
+| 200    | Lista de servidores DNS |
 
 #### POST
 
-##### Summary
+##### Resumen
 
 Crea un nuevo servidor DNS
 
@@ -325,23 +325,23 @@ Crea un nuevo servidor DNS. Puedes adjuntar configuraciones personalizadas; de l
 
 ##### Respuestas
 
-| Código | Descripción                         |
-| ------ | ----------------------------------- |
-| 200    | DNS server created                  |
-| 400    | Validación fallida                  |
-| 429    | DNS servers count reached the limit |
+| Código | Descripción                            |
+| ------ | -------------------------------------- |
+| 200    | Servidor DNS creado                    |
+| 400    | Validación fallida                     |
+| 429    | Se alcanzó el límite de servidores DNS |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
 
-##### Summary
+##### Resumen
 
-Removes a DNS server
+Elimina un servidor DNS
 
 ##### Descripción
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
+Elimina un servidor DNS. Todos los dispositivos conectados a este servidor DNS se moverán al servidor DNS por defecto. Está prohibido eliminar un servidor DNS predeterminado.
 
 ##### Parámetros
 
@@ -353,14 +353,14 @@ Removes a DNS server. All devices attached to this DNS server will be moved to t
 
 | Código | Descripción                |
 | ------ | -------------------------- |
-| 200    | DNS server deleted         |
+| 200    | Servidor DNS eliminado     |
 | 404    | Servidor DNS no encontrado |
 
 #### OBTENER
 
-##### Summary
+##### Resumen
 
-Gets an existing DNS server by ID
+Obtiene un servidor DNS existente por ID
 
 ##### Parámetros
 
@@ -377,9 +377,9 @@ Gets an existing DNS server by ID
 
 #### PUT
 
-##### Summary
+##### Resumen
 
-Updates an existing DNS server
+Actualiza un servidor DNS existente
 
 ##### Parámetros
 
@@ -399,7 +399,7 @@ Updates an existing DNS server
 
 #### PUT
 
-##### Summary
+##### Resumen
 
 Actualiza la configuración del servidor DNS
 
@@ -421,7 +421,7 @@ Actualiza la configuración del servidor DNS
 
 #### OBTENER
 
-##### Summary
+##### Resumen
 
 Obtiene listas de filtros
 
@@ -435,17 +435,17 @@ Obtiene listas de filtros
 
 #### POST
 
-##### Summary
+##### Resumen
 
 Genera un token de Acceso y Actualización
 
 ##### Respuestas
 
-| Código | Descripción                                              |
-| ------ | -------------------------------------------------------- |
-| 200    | Access token issued                                      |
-| 400    | Missing required parameters                              |
-| 401    | Invalid credentials, MFA token or refresh token provided |
+| Código | Descripción                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| 200    | Token de acceso emitido                                                   |
+| 400    | Faltan parámetros obligatorios                                            |
+| 401    | Credenciales no válidas, token MFA o token de actualización proporcionado |
 
 null
 
@@ -453,62 +453,62 @@ null
 
 #### DELETE
 
-##### Summary
+##### Resumen
 
-Clears query log
+Borrar registros de consultas
+
+##### Respuestas
+
+| Código | Descripción                       |
+| ------ | --------------------------------- |
+| 202    | Se borró el registro de consultas |
+
+#### GET
+
+##### Resumen
+
+Obtiene el registro de consultas
+
+##### Parámetros
+
+| Nombre             | Ubicado en | Descripción                                                                            | Requerido | Esquema                                             |
+| ------------------ | ---------- | -------------------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo)                                               | Sí        | long                                                |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo)                                               | Sí        | long                                                |
+| devices            | query      | Filtra por dispositivos                                                                | No        | [ string ]                                          |
+| countries          | query      | Filtra por países                                                                      | No        | [ string ]                                          |
+| companies          | query      | Filtra por empresas                                                                    | No        | [ string ]                                          |
+| statuses           | query      | Filtra por status                                                                      | No        | [ [FilteringActionStatus](#FilteringActionStatus) ] |
+| categories         | query      | Filtra por categorías                                                                  | No        | [ [CategoryType](#CategoryType) ]                   |
+| search             | query      | Filtrar por nombre de dominio                                                          | No        | linha                                               |
+| limit              | query      | Limita el número de registros a devolver                                               | No        | integer                                             |
+| cursor             | query      | Cursor de paginación. Usa el cursor de respuesta para paginar a través de las páginas. | No        | linha                                               |
 
 ##### Respuestas
 
 | Código | Descripción           |
 | ------ | --------------------- |
-| 202    | Query log was cleared |
-
-#### GET
-
-##### Summary
-
-Gets query log
-
-##### Parámetros
-
-| Nombre             | Ubicado en | Descripción                                                                | Requerido | Esquema                                             |
-| ------------------ | ---------- | -------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive)                                      | Sí        | long                                                |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)                                        | Sí        | long                                                |
-| devices            | consulta   | Filter by devices                                                          | No        | [ string ]                                          |
-| countries          | consulta   | Filter by countries                                                        | No        | [ string ]                                          |
-| companies          | consulta   | Filter by companies                                                        | No        | [ string ]                                          |
-| statuses           | consulta   | Filter by statuses                                                         | No        | [ [FilteringActionStatus](#FilteringActionStatus) ] |
-| categories         | consulta   | Filter by categories                                                       | No        | [ [CategoryType](#CategoryType) ]                   |
-| search             | consulta   | Filtrar por nombre de dominio                                              | No        | linha                                               |
-| limit              | consulta   | Limit the number of records to be returned                                 | No        | integer                                             |
-| cursor             | consulta   | Pagination cursor. Use cursor from response to paginate through the pages. | No        | linha                                               |
-
-##### Respuestas
-
-| Código | Descripción |
-| ------ | ----------- |
-| 200    | Query log   |
+| 200    | Registro de consultas |
 
 ### /oapi/v1/revoke_token
 
 #### POST
 
-##### Summary
+##### Resumen
 
-Revokes a Refresh Token
+Revoca un Token de Actualización
 
 ##### Parámetros
 
-| Nombre        | Ubicado en | Descripción   | Requerido | Esquema |
-| ------------- | ---------- | ------------- | --------- | ------- |
-| refresh_token | consulta   | Refresh Token | Sí        | linha   |
+| Nombre        | Ubicado en | Descripción            | Requerido | Esquema |
+| ------------- | ---------- | ---------------------- | --------- | ------- |
+| refresh_token | query      | Token de actualización | Sí        | linha   |
 
 ##### Respuestas
 
-| Código | Descripción           |
-| ------ | --------------------- |
-| 200    | Refresh token revoked |
+| Código | Descripción                     |
+| ------ | ------------------------------- |
+| 200    | Token de actualización revocado |
 
 null
 
@@ -516,181 +516,181 @@ null
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets categories statistics
+Obtiene estadísticas de categorías
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | query      | Filtrar por dispositivos                 | No        | [ string ] |
+| countries          | query      | Filtra por países                        | No        | [ string ] |
 
 ##### Respuestas
 
-| Código | Descripción                    |
-| ------ | ------------------------------ |
-| 200    | Categories statistics received |
-| 400    | Validación fallida             |
+| Código | Descripción                       |
+| ------ | --------------------------------- |
+| 200    | Categorías estadísticas recibidas |
+| 400    | Validación fallida                |
 
 ### /oapi/v1/stats/companies
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets companies statistics
+Obtiene estadísticas de empresas
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | consulta   | Filtrar por dispositivos                 | No        | [ linha ]  |
+| countries          | query      | Filtra por países                        | No        | [ string ] |
 
 ##### Respuestas
 
-| Código | Descripción                   |
-| ------ | ----------------------------- |
-| 200    | Companies statistics received |
-| 400    | Validación fallida            |
+| Código | Descripción                        |
+| ------ | ---------------------------------- |
+| 200    | Estadísticas de empresas recibidas |
+| 400    | Validación fallida                 |
 
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets detailed companies statistics
+Obtiene estadísticas detalladas de empresas
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ linha ]  |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
-| cursor             | consulta   | Pagination cursor                     | No        | linha      |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | consulta   | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | consulta   | Filtra por dispositivos                  | No        | [ linha ]  |
+| countries          | consulta   | Filtra por países                        | No        | [ string ] |
+| cursor             | consulta   | Cursor de paginación                     | No        | linha      |
 
 ##### Respuestas
 
-| Código | Descripción                            |
-| ------ | -------------------------------------- |
-| 200    | Detailed companies statistics received |
-| 400    | Validación fallida                     |
+| Código | Descripción                                   |
+| ------ | --------------------------------------------- |
+| 200    | Estadísticas detalladas de empresas recibidas |
+| 400    | Validación fallida                            |
 
 ### /oapi/v1/stats/countries
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets countries statistics
+Obtiene estadísticas de países
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | consulta   | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | consulta   | Filtra por dispositivos                  | No        | [ string ] |
+| countries          | consulta   | Filtra por países                        | No        | [ linha ]  |
 
 ##### Respuestas
 
-| Código | Descripción                   |
-| ------ | ----------------------------- |
-| 200    | Countries statistics received |
-| 400    | Validación fallida            |
+| Código | Descripción                      |
+| ------ | -------------------------------- |
+| 200    | Estadísticas de países recibidas |
+| 400    | Validación fallida               |
 
 ### /oapi/v1/stats/devices
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets devices statistics
+Obtiene estadísticas de dispositivos
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | consulta   | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | consulta   | Filtrar por dispositivos                 | No        | [ string ] |
+| countries          | query      | Filtra por países                        | No        | [ linha ]  |
 
 ##### Respuestas
 
-| Código | Descripción                 |
-| ------ | --------------------------- |
-| 200    | Devices statistics received |
-| 400    | Validación fallida          |
+| Código | Descripción                            |
+| ------ | -------------------------------------- |
+| 200    | Estadísticas de dispositivos recibidas |
+| 400    | Validación fallida                     |
 
 ### /oapi/v1/stats/domains
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets domains statistics
+Obtiene estadísticas de dominios
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ linha ]  |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | query      | Filtrar por dispositivos                 | No        | [ string ] |
+| countries          | query      | Filtra por países                        | No        | [ linha ]  |
 
 ##### Respuestas
 
-| Código | Descripción                 |
-| ------ | --------------------------- |
-| 200    | Domains statistics received |
-| 400    | Validación fallida          |
+| Código | Descripción                        |
+| ------ | ---------------------------------- |
+| 200    | Estadísticas de dominios recibidas |
+| 400    | Validación fallida                 |
 
 ### /oapi/v1/stats/time
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Gets time statistics
+Obtiene estadísticas de tiempo
 
 ##### Parámetros
 
-| Nombre             | Ubicado en | Descripción                           | Requerido | Esquema    |
-| ------------------ | ---------- | ------------------------------------- | --------- | ---------- |
-| time_from_millis | consulta   | Time from in milliseconds (inclusive) | Sí        | long       |
-| time_to_millis   | consulta   | Time to in milliseconds (inclusive)   | Sí        | long       |
-| devices            | consulta   | Filter by devices                     | No        | [ string ] |
-| countries          | consulta   | Filter by countries                   | No        | [ string ] |
+| Nombre             | Ubicado en | Descripción                              | Requerido | Esquema    |
+| ------------------ | ---------- | ---------------------------------------- | --------- | ---------- |
+| time_from_millis | query      | Tiempo desde en milisegundos (inclusivo) | Sí        | long       |
+| time_to_millis   | query      | Tiempo hasta en milisegundos (inclusivo) | Sí        | long       |
+| devices            | consulta   | Filtra por dispositivos                  | No        | [ string ] |
+| countries          | consulta   | Filtra por países                        | No        | [ string ] |
 
 ##### Respuestas
 
-| Código | Descripción              |
-| ------ | ------------------------ |
-| 200    | Time statistics received |
-| 400    | Validación fallida       |
+| Código | Descripción                      |
+| ------ | -------------------------------- |
+| 200    | Estadísticas de tiempo recibidas |
+| 400    | Validación fallida               |
 
 ### /oapi/v1/web_services
 
 #### GET
 
-##### Summary
+##### Resumen
 
-Lists web services
+Lista de servicios web
 
 ##### Respuestas
 
-| Código | Descripción          |
-| ------ | -------------------- |
-| 200    | List of web-services |
+| Código | Descripción            |
+| ------ | ---------------------- |
+| 200    | Lista de servicios web |

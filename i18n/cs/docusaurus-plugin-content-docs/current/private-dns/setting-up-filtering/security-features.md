@@ -1,24 +1,24 @@
 ---
-title: Security features
+title: Funkce zabezpečení
 sidebar_position: 3
 ---
 
-The AdGuard DNS security settings are a set of configurations designed to protect the user's personal information.
+Nastavení zabezpečení AdGuard DNS je soubor konfigurací určených k ochraně osobních údajů uživatele.
 
-Here you can choose which methods you want to use to protect yourself from attackers. This will protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data.
+Zde si můžete vybrat metody, které chcete použít k ochraně před útočníky. To vás ochrání před návštěvou phishingových a falešných webových stránek i před možným únikem citlivých údajů.
 
-### Block malicious, phishing, and scam domains
+### Blokování škodlivého software, phishingu a podvodných domén
 
-To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+K dnešnímu dni jsme kategorizovali více než 15 milionů webů a vytvořili databázi 1,5 milionu webů, o nichž je známo, že obsahují phishing a malware. Pomocí této databáze, AdGuard kontroluje navštívené webové stránky a chrání vás před online hrozbami.
 
-### Block newly registered domains
+### Blokování nově registrovaných domén
 
-Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
-Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
+Podvodníci často používají nedávno registrované domény k phishingu a podvodným schématům. Z tohoto důvodu jsme vyvinuli speciální filtr, který zjišťuje životnost domény a blokuje ji, pokud byla vytvořena nedávno.
+Někdy to může způsobit falešné poplachy, ale statistiky ukazují, že ve většině případů toto nastavení stále chrání naše uživatele před ztrátou důvěrných dat.
 
-### Block malicious domains using blocklists
+### Blokování škodlivých domén pomocí seznamů zakázaných
 
-AdGuard DNS supports adding third-party blocking filters.
-Activate filters marked `security` for additional protection.
+AdGuard DNS podporuje přidávání filtrů blokování třetích stran.
+Pro další ochranu aktivujte filtry označené jako `bezpečnostní`.
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+Další informace o seznamech zakázaných [viz samostatný článek](/private-dns/setting-up-filtering/blocklists.md).

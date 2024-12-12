@@ -1,18 +1,18 @@
 ---
-title: Companies
+title: Virksomheder
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Denne fane muliggør hurtigt at tjekke, hvilke virksomheder, som sender flest forespørgsler, og hvilke, som har flest blokerede forespørgsler.
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![Virksomheder \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+Siden Virksomheder er opdelt i to kategorier:
 
-- **Top requested company**
-- **Top blocked company**
+- **Topforespurgt virksomhed**
+- **Topblokeret virksomhed**
 
-These are further divided into sub-categories:
+Disse er yderligere opdelt i underkategorier:
 
 - **Annoncering**: Annoncering og andre reklamerelaterede forespørgsler, som indsamler og deler brugerdata, analyserer brugeradfærd og målretter annoncer
 - **Trackere**: Forespørgsler fra websteder og tredjeparter med det formål at spore brugeraktivitet
@@ -22,6 +22,6 @@ These are further divided into sub-categories:
 
 ### Topvirksomheder
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+I denne tabel viser vi ikke kun navnene på de mest besøgte/blokerede virksomheder, men også information om, hvilke domæner, som forespørges, eller hvilke domæner, som blokeres mest.
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)
+![Topvirksomheder \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

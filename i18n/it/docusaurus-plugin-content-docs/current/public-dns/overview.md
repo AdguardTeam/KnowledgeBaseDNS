@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Panoramica
 sidebar_position: 1
 ---
 
@@ -42,3 +42,7 @@ Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Co
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+
+### Limite richieste
+
+DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).

@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: Anfragenprotokoll
 sidebar_position: 5
 ---
 
-## What is Query log
+## Anfragenprotokoll: Überblick
 
-Query log is a useful tool for working with AdGuard DNS.
+Das Anfragenprotokoll ist ein nützliches Tool für die Arbeit mit AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Es ermöglicht Ihnen, alle Anfragen Ihrer Geräte während des ausgewählten Zeitraums einzusehen und Anfragen nach Status, Typ, Unternehmen, Gerät und Land zu sortieren.
 
-## How to use it
+## Kurzanleitung
 
-Here's what you can see and what you can do in the _Query log_.
+Hier ist, was Sie im _Anfragenprotokoll_ sehen und was Sie tun können.
 
-### Detailed information on requests
+### Detaillierte Informationen zu Anfragen
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Anfragen-Informationen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Sperren und Entsperren von Domänen
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+Mithilfe der verfügbaren Tools können Anfragen gesperrt und entsperrt werden, ohne das Protokoll zu verlassen.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Domain entsperren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Sortieren von Anfragen
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Sie können den Status der Anfrage, ihren Typ, das Unternehmen, das Gerät und den Zeitraum, der Sie interessiert, auswählen.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![Anfragen sortieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Deaktivieren der Anfragenprotokollierung
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Wenn Sie möchten, können Sie die Protokollierung in den Kontoeinstellungen vollständig deaktivieren (denken Sie daran, dass dadurch auch die Statistiken deaktiviert werden).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Protokollierung \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

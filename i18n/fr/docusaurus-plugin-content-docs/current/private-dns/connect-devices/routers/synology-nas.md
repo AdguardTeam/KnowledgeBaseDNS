@@ -3,22 +3,22 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS routers are incredibly easy to use and can be combined into a single mesh network. You can manage your network remotely anytime, anywhere. You can also configure AdGuard DNS directly on the router.
+Les routeurs Synology NAS sont incroyablement faciles à utiliser et peuvent être combinés en un seul réseau maillé. Vous pouvez gérer votre réseau à distance, à tout moment et de n'importe où. Vous pouvez également configurer AdGuard DNS directement sur le routeur.
 
-## Use your router admin panel
+## Utilisez le panneau d'administration de votre routeur
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Control Panel_ or _Network_.
-4. Select _Network Interface_ or _Network Settings_.
-5. Select your Wi-Fi network or wired connection.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Ouvrez le panneau d'administration du routeur. On peut y accéder à `192.168.1.1` ou `192.168.0.1`.
+2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
+3. Ouvrez le _Panneau de configuration_ ou _Réseau_.
+4. Sélectionnez _Interface réseau_ ou _Paramètres réseau_.
+5. Sélectionnez votre réseau Wi-Fi ou votre connexion filaire.
+6. Choisissez _DNS Manuel_. Sélectionnez _Utiliser ces serveurs DNS_ ou _Spécifier le serveur DNS manuellement_ et saisissez les adresses des serveurs DNS suivantes :
+   - IPv4 : `94.140.14.49` et `94.140.14.59`
+   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
+7. Enregistrez les paramètres.
+8. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)

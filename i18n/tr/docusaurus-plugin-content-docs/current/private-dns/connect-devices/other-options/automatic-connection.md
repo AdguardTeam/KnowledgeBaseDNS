@@ -5,55 +5,55 @@ sidebar_position: 5
 
 ## Why it is useful
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Herkes, Pano üzerinden cihaz ekleme konusunda rahat hissetmeyebilir. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Bağlantı bağlantısı oluşturabilir ve bunu cihaz ayarlarında kullanabilirsiniz. Cihazınız algılanacak ve otomatik olarak sunucuya bağlanacaktır.
 
-## How to configure automatic connection
+## Otomatik bağlantı nasıl yapılandırılır
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
+1. _Pano_ öğesini açın ve gerekli sunucuyu seçin.
+2. _Cihazlar_ öğesine gidin.
+3. Cihazların otomatik olarak bağlanma seçeneğini etkinleştirin.
    ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Bu adreslerin nasıl göründüğünü ve bunları oluşturma kurallarını inceleyelim.
 
-### Examples of automatic connection addresses
+### Otomatik bağlantı adreslerine örnekler
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — bu işlem otomatik olarak `AdGuard Test Device` adında `DNS-over-TLS` protokolüne sahip bir `Android` cihazı oluşturur
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — bu otomatik olarak `John Doe` adında `DNS-over-HTTPS` protokolüne sahip bir `Windows` cihazı oluşturur
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — bu otomatik olarak `Mary Sue` adında `DNS-over-QUIC` protokolüne sahip bir `iOS` cihazı oluşturur
 
-### Naming conventions
+### Adlandırma kuralları
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Cihazları elle oluştururken ad uzunluğu, karakterler, boşluklar ve tirelerle ilgili kısıtlamalar olduğunu lütfen unutmayın.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Ad uzunluğu**: Maksimum 50 karakter. Bu sınırı aşan karakterler yok sayılır.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**İzin verilen karakterler**: İngilizce harfler, sayılar ve tireler `-`. Diğer karakterler göz ardı edilir.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Boşluklar ve tireler**: Boşluklar için tire, tireler için çift tire ( `--`) kullanın.
 
-**Device type**: Use the following abbreviations:
+**Cihaz türü**: Aşağıdaki kısaltmaları kullanın:
 
 - Windows — `win`
 - macOS — `mac`
 - Android — `adr`
 - iOS — `ios`
 - Linux — `lnx`
-- Router — `rtr`
+- Yönlendirici — `rtr`
 - Akıllı TV — `stv`
 - Oyun konsolu — `gam`
 - Diğer — `otr`
 
-## Link generator
+## Bağlantı oluşturucu
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Belirli cihaz türü ve protokol için bir bağlantı oluşturan bir şablon ekledik.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+1. _Sunucular_ → _Sunucu ayarları_ → _Cihazlar_ → _Cihazları otomatik olarak bağla_ öğesine gidin ve _Bağlantı oluşturucu ve talimatlar_ öğesine tıklayın.
+2. Kullanmak istediğiniz protokolün yanı sıra cihaz adını ve cihaz türünü seçin.
+3. _Bağlantı oluştur_ öğesine tıklayın.
+   ![Bağlantı oluştur \*mobil\_sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+4. Bağlantıyı başarıyla oluşturdunuz, şimdi sunucu adresini kopyalayın ve [AdGuard uygulamalarından](https://adguard.com/welcome.html) birinde kullanın

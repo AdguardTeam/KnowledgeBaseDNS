@@ -3,6 +3,6 @@ title: Trafik istikameti
 sidebar_position: 3
 ---
 
-This feature shows where DNS requests sent by your devices are routed. In addition to viewing a map of request destinations, you can filter the information by date, device, and country.
+Bu özellik, cihazlarınız tarafından gönderilen DNS isteklerinin nereye yönlendirildiğini gösterir. İstek istikametlerinin bir haritasını görüntülemenin yanı sıra, bilgileri tarihe, cihaza ve ülkeye göre filtreleyebilirsiniz.
 
-![Traffic destination \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/traffic_destination.png)
+![Trafik istikameti \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/traffic_destination.png)

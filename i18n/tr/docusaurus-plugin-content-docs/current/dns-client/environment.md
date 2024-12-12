@@ -1,18 +1,18 @@
 ---
-title: Environment
+title: Ortam
 sidebar_position: 3
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
+AdGuard DNS Client uses [environment variables][wiki-env] to store part of the configuration. Yapılandırmanın geri kalanı [yapılandırma dosyası][conf] içinde saklanır.
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
+Günlük hedefi, dosyaya giden mutlak bir yol veya özel değerlerden biri olmalıdır. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
 
 This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
@@ -38,7 +38,7 @@ This environment variable overrides the [`log.timestamp`][conf-log] field in the
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+`1` olarak ayarlandığında ayrıntılı günlük kaydını etkinleştirir. `0` olarak ayarlandığında devre dışı bırakılır.
 
 This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 

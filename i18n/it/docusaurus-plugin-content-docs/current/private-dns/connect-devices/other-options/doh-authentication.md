@@ -1,28 +1,28 @@
 ---
-title: DNS-over-HTTPS with authentication
+title: DNS-over-HTTPS con autenticazione
 sidebar_position: 4
 ---
 
-## Why it is useful
+## Perché è utile
 
-DNS-over-HTTPS with authentication allows you to set a username and password for accessing your chosen server.
+DNS-over-HTTPS con autenticazione consente di impostare un nome utente e una password per accedere al server scelto.
 
-This helps prevent unauthorized users from accessing it and enhances security. Additionally, you can restrict the use of other protocols for specific profiles. This feature is particularly useful when your DNS server address is known to others. By adding a password, you can block access and ensure that only you can use it.
+Questo aiuta a prevenire accessi non autorizzati e migliora la sicurezza. Inoltre, puoi limitare l'uso di altri protocolli per profili specifici. Questa funzione è particolarmente utile quando l'indirizzo del tuo server DNS è noto ad altri. Aggiungendo una password, puoi bloccare l'accesso e assicurarti che solo tu possa utilizzarlo.
 
-## How to set it up
+## Come configurarlo
 
-:::note Compatibility
+:::note Compatibilità
 
-This feature is supported by [AdGuard DNS Client](/dns-client/overview.md) as well as [AdGuard apps](https://adguard.com/welcome.html).
+Questa funzione è supportata da [AdGuard DNS Client](/dns-client/overview.md) così come da [App AdGuard](https://adguard.com/welcome.html).
 
 :::
 
-1. Open Dashboard.
-2. Add a device or go to the settings of a previously created device.
-3. Click _Use DNS server addresses_ and open the _Encrypted DNS server addresses_ section.
-4. Configure DNS-over-HTTPS with authentication as you like.
-5. Reconfigure your device to use this server in the AdGuard DNS Client or one of the AdGuard apps.
-6. To do this, copy the address of the encrypted server and paste it into the AdGuard app or AdGuard DNS Client settings.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
-7. You can also deny the use of other protocols.
-   ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+1. Apri cruscotto.
+2. Aggiungi un dispositivo o vai alle impostazioni di un dispositivo precedentemente creato.
+3. Clicca su _Usa indirizzi server DNS_ e apri la sezione _Indirizzi server DNS crittografati_.
+4. Configura DNS-over-HTTPS con autenticazione come desideri.
+5. Riconfigura il tuo dispositivo per utilizzare questo server nell'AdGuard DNS Client o in una delle app AdGuard.
+6. Per farlo, copia l'indirizzo del server crittografato e incollalo nelle impostazioni dell'app AdGuard o dell'AdGuard DNS Client.
+   ![Copia indirizzo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+7. Puoi anche negare l'uso di altri protocolli.
+   ![Nega protocolli \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

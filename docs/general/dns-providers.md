@@ -1147,7 +1147,7 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 
@@ -1251,6 +1251,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4 | `103.252.122.187` | [Add to AdGuard](adguard:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS) |
-| DNS, IPv6 | `2401:4ae0::38` | [Add to AdGuard](adguard:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS) |
+| DNS, IPv4 | `103.70.12.129` | [Add to AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS) |
+| DNS, IPv6 | `2001:df4:4c0:1::399:1` | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS) |
+| DNS-over-QUIC | `quic://rx.techomespace.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)  |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |

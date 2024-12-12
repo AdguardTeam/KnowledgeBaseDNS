@@ -406,6 +406,17 @@ Tyto servery používají některé záznamy, samopodepsané certifikáty nebo n
 | --------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `54.174.40.213` a `52.3.100.184` | [Přidat do AdGuardu](adguard:add_dns_server?address=54.174.40.213&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=54.174.40.213&name=) |
 
+### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) je bezplatný, suverénní rekurzivní DNS řešitel v souladu s GDPR se silným zaměřením na bezpečnost s cílem chránit občany a organizace Evropské unie.
+
+| Protokol       | Adresa                         |                                                                                                                                                                           |
+| -------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `193.110.81.0` a `185.253.5.0` | [Přidat do AdGuardu](adguard:add_dns_server?address=193.110.81.0&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Add to Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)               |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
+
 ### Dyn DNS
 
 [Dyn DNS](https://help.dyn.com/internet-guide-setup/) je bezplatná alternativní služba DNS společnosti Dyn.
@@ -587,17 +598,6 @@ Přísnější zásady filtrování s blokováním — reklamy, marketing, sledo
 | -------------- | ----------------------------------- | -------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
-
-#### dns0.eu
-
-[dns0.eu](https://www.dns0.eu) je bezplatný, suverénní rekurzivní DNS řešitel v souladu s GDPR se silným zaměřením na bezpečnost s cílem chránit občany a organizace Evropské unie.
-
-| Protokol       | Adresa                         |                                                                                                                                                                           |
-| -------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `193.110.81.0` a `185.253.5.0` | [Přidat do AdGuardu](adguard:add_dns_server?address=193.110.81.0&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
-| DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Add to Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)               |
-| DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
 
 ### Quad9 DNS
 
@@ -1205,7 +1205,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 [Privacy-First DNS](https://tiarap.org/) blokuje více než 140 tisíc reklam, slídičů, malwaru a domén zaměřených na krádež identity. Žádné záznamy, ECS, ověření DNSSEC, je zdarma!
 
-#### Singapurský DNS server
+#### Singapore DNS Server
 
 | Protokol       | Adresa                                                                         | Umístění                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1218,7 +1218,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                           | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Japonský DNS server
+#### Japan DNS Server
 
 | Protokol       | Adresa                                                                             |                                                                                                                                                                                                                        |
 | -------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1234,7 +1234,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 [Seby DNS](https://dns.seby.io/) je služba DNS zaměřená na ochranu soukromí, kterou poskytuje Sebastian Schmidt. Bez záznamů, ověřování DNSSEC.
 
-#### DNS server 1
+#### DNS Server 1
 
 | Protokol       | Adresa                                                         |                                                                                                                                                                                                                |
 | -------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1248,6 +1248,7 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 | Protokol       | Adresa                                  |                                                                                                                                                                                                                                      |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `103.252.122.187`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.252.122.187&name=BlackMagiccDNS)                                             |
-| DNS, IPv6      | `2401:4ae0::38`                         | [Přidat do AdGuardu](adguard:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2401:4ae0::38&name=BlackMagiccDNS)                                                 |
+| DNS, IPv4      | `103.70.12.129`                         | [Přidat do AdGuardu](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                 |
+| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
+| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |

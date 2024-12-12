@@ -1,38 +1,38 @@
 ---
-title: Using alongside iCloud Private Relay
+title: 与 iCloud 专用代理同时使用
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-When you're using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
+当您使用 iCloud 专用代理时，AdGuard DNS 仪表板（以及相关的 [AdGuard 测试页面](https://adguard.com/test.html)）会显示您未在该设备上使用 AdGuard DNS。
 
-![Device is not connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
+![设备未连接](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-To fix this problem, you need to allow AdGuard websites see your IP address in your device's settings.
+要解决此问题，需要在设备的设置中允许 AdGuard 网站查看您的 IP 地址。
 
-- On iPhone or iPad:
+- iPhone 或 iPad：
 
-    1. Go to `adguard-dns.io`
+    1. 转到 `adguard-dns.io`
 
-    1. Tap the **Page Settings** button, then tap **Show IP Address**
+    1. 点击「**页面设置**」，然后点击「**显示 IP 地址**」
 
-        ![iCloud Private Relay settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
+        ![iCloud 专用代理设置 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/icloudpr.jpg)
 
-    1. Repeat for `adguard.com`
+    1. 对 `adguard.com` 重复上述操作
 
-- On Mac:
+- Mac：
 
-    1. Go to `adguard-dns.io`
+    1. 转到 `adguard-dns.io`
 
-    1. In Safari, choose **View** → **Reload and Show IP Address**
+    1. 在 Safari 中，选择「**查看**」→「**重新加载并显示 IP 地址**」
 
-    1. Repeat for `adguard.com`
+    1. 对 `adguard.com` 重复上述操作
 
-If you can't see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
+如果看不到暂时允许网站查看您的 IP 地址的选项，请将设备更新到最新版本的 iOS、iPadOS 或 macOS，然后重试。
 
-Now your device should be displayed correctly in the AdGuard DNS dashboard:
+现在您的设备应该正确显示在 AdGuard DNS 仪表板中：
 
-![Device is connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
+![设备已连接](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you're browsing.
+请注意，一旦您关闭特定网站的专用代理，网络提供商也将能够看到您正在浏览的网站。

@@ -1,44 +1,44 @@
 ---
-title: Parental control
+title: Controllo parentale
 sidebar_position: 4
 ---
 
-## What is it
+## Cos'è
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+Il controllo parentale è un insieme di impostazioni che ti offre la flessibilità di personalizzare l'accesso a determinati siti web con contenuti "sensibili".  Puoi utilizzare questa funzionalità per limitare l'accesso dei tuoi figli a siti per adulti, personalizzare le query di ricerca, bloccare l'uso di servizi popolari e altro ancora.
 
-## How to set it up
+## Come configurarlo
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Puoi configurare in modo flessibile tutte le funzionalità sui tuoi server, inclusa la funzionalità di controllo genitori. [Nell'articolo corrispondente](private-dns/server-and-settings/server-and-settings.md), puoi familiarizzare con cosa sia un "server" in AdGuard DNS e imparare come creare diversi server con diversi set di impostazioni.
 
-Then, go to the settings of the selected server and enable the required configurations.
+Poi, vai alle impostazioni del server selezionato e abilita le configurazioni richieste.
 
-### Block adult websites
+### Bloccare i siti web per adulti
 
-Blocks websites with inappropriate and adult content.
+Blocca i siti web con contenuti inappropriati e per adulti.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![Sito web bloccato \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### Ricerca sicura
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Rimuove risultati inappropriati da Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave ed Ecosia.
 
-![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+![Ricerca sicura \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### Modalità ristretta di YouTube
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+Rimuove l'opzione di visualizzare e postare commenti sotto i video e interagire con contenuti 18+ su YouTube.
 
-![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![Modalità ristretta \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### Servizi e siti web bloccati
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS blocca l'accesso a servizi popolari con un clic. È utile se non vuoi che i dispositivi connessi visitino Instagram e YouTube, ad esempio.
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Servizi bloccati \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### Pianifica una pausa
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+Abilita i controlli parentali nei giorni selezionati con un intervallo di tempo specificato. Ad esempio, puoi aver consentito a tuo figlio di guardare video di YouTube solo fino alle 23:00 nei giorni feriali. Ma nei fine settimana, questo accesso non è limitato. Personalizza il programma a tuo piacimento e blocca l'accesso a siti selezionati durante le ore che desideri.
 
-![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+![Programma \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

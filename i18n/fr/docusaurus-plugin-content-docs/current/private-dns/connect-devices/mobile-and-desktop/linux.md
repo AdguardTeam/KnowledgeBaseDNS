@@ -3,70 +3,70 @@ title: Linux
 sidebar_position: 6
 ---
 
-To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
+Pour connecter un dispositif Linux à AdGuard DNS, commencez par l'ajouter au _tableau de bord_ :
 
-1. Go to _Dashboard_ and click _Connect new device_.
-2. In the drop-down menu _Device type_, select Linux.
-3. Name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+1. Allez dans le _tableau de bord_ et cliquez sur _Connecter un nouvel appareil_.
+2. Dans le menu déroulant _Type de dispositif_, sélectionnez Linux.
+3. Nommez le dispositif.
+   ![Connecter le dispositif \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS Client
+## Utiliser le client AdGuard DNS
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+Le client AdGuard DNS est un utilitaire de console multiplateforme qui vous permet d'utiliser des protocoles DNS chiffrés pour accéder à AdGuard DNS.
 
-You can learn more about this in the [related article](/dns-client/overview/).
+Vous pouvez en savoir plus à ce sujet dans l'[article connexe](/dns-client/overview/).
 
-## Use AdGuard VPN CLI
+## Utilisation de AdGuard VPN CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
+Vous pouvez configurer le DNS privé AdGuard à l'aide de l'interface de ligne de commande (CLI) VPN AdGuard. Pour commencer l'utilisation de AdGuard VPN CLI, vous devrez utiliser le Terminal.
 
-1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
-3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
+1. Installez AdGuard VPN CLI en suivant [ces instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
+2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+3. Pour définir un serveur DNS spécifique, utilisez la commande : `adguardvpn-cli config set-dns <server_address>`, où `<server_address>` est l'adresse de votre serveur privé.
+4. Activez les paramètres DNS en saisissant `adguardvpn-cli config set-system-dns on`.
 
-## Configure manually on Ubuntu (linked IP or dedicated IP required)
+## Configuration manuelle sur Ubuntu (IP liée ou IP dédiée requise)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
-2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+1. Cliquez sur _Système_ → _Préférences_ → _Connexions réseau_.
+2. Sélectionnez l'onglet _Sans fil_, puis choisissez le réseau auquel vous êtes connecté.
+3. Cliquez sur _Modifier_ → _IPv4_.
+4. Changez les adresses DNS de la liste pour les adresses suivantes :
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
-6. Click _Apply_.
-7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+5. Désactivez le _Mode automatique_.
+6. Cliquez sur _Appliquer_.
+7. Allez sur _IPv6_.
+8. Changez les adresses DNS de la liste pour les adresses suivantes :
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
-10. Click _Apply_.
-11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+9. Désactivez le _Mode automatique_.
+10. Cliquez sur _Appliquer_.
+11. Liez votre adresse IP (ou votre IP dédiée si vous avez un abonnement Équipe) :
+    - [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Configure manually on Debian (linked IP or dedicated IP required)
+## Configuration manuelle sur Debian (IP liée ou IP dédiée requise)
 
-1. Open the Terminal.
-2. In the command line, type: `su`.
-3. Enter your `admin` password.
-4. In the command line, type: `nano /etc/resolv.conf`.
-5. Change the listed DNS addresses to the following:
-   - IPv4: `94.140.14.49 and 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
-6. Press _Ctrl + O_ to save the document.
-7. Press _Enter_.
-8. Press _Ctrl + X_ to save the document.
-9. In the command line, type: `/etc/init.d/networking restart`.
-10. Press _Enter_.
-11. Close the Terminal.
-12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Ouvrez le Terminal.
+2. Dans la ligne de commande, tapez : `su`.
+3. Saisissez votre mot de passe `admin`.
+4. Dans la ligne de commande, tapez : `nano /etc/resolv.conf`.
+5. Changez les adresses DNS de la liste comme suit :
+   - IPv4 : `94.140.14.49 et 94.140.14.59`
+   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff et 2a10:50c0:0:0:0:0:dad:ff`
+6. Tapez 'Ctrl + O' pour enregistrer le fichier.
+7. Tapez _Entrée_.
+8. Tapez 'Ctrl + X' pour fermer le fichier.
+9. Dans la ligne de commande, tapez : `/etc/init.d/networking restart`.
+10. Tapez _Entrée_.
+11. Fermez le Terminal.
+12. Liez votre adresse IP (ou votre IP dédiée si vous avez un abonnement Équipe) :
+    - [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Use dnsmasq
+## Utilisation de dnsmasq
 
-1. Install dnsmasq using the following commands:
+1. Installez dnsmasq à l'aide des commandes suivantes :
 
    `sudo apt updatesudo`
 
@@ -74,7 +74,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-2. Use the following commands in dnsmasq.conf:
+2. Utilisez les commandes suivantes dans dnsmasq.conf :
 
    `no-resolv`
 
@@ -90,21 +90,21 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `add-cpe-id={Your_Device_ID}`
 
-3. Restart the dnsmasq service:
+3. Redémarrez le service dnsmasq :
 
    `sudo service dnsmasq restart`
 
-All done! Your device is successfully connected to AdGuard DNS.
+C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
 :::note Important
 
-If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+Si vous voyez une notification indiquant que vous n'êtes pas connecté à AdGuard DNS, il est fort probable que le port sur lequel dnsmasq s'exécute soit occupé par d'autres services. Utilisez [ces instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) pour résoudre le problème.
 
 :::
 
-## Use plain DNS
+## Utilisation du DNS simple
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
+Si vous préférez ne pas utiliser de logiciel supplémentaire pour la configuration DNS, vous pouvez opter pour le DNS non chiffré. Vous avez deux choix : utiliser des IP liées ou des IP dédiées :
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

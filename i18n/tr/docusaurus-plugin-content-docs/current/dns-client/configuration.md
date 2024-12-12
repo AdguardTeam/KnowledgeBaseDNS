@@ -22,17 +22,17 @@ Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örne�
 
 `cache` nesnesi, DNS sorgulama sonuçlarının önbelleğe alınmasını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: DNS sonuçlarının önbelleğe alınıp alınmayacağını belirtir.
 
   **Örnek:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
+- `size`: İnsan tarafından okunabilir veri boyutu olarak DNS sonuç önbelleğinin maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Example:** `128 MB`
+  **Örnek:** `128 MB`
 
 - `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Example:** `4 MB`
+  **Örnek:** `4 MB`
 
 ### `server` {#dns-server}
 
@@ -62,9 +62,9 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: Önyükleme DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
-  **Example:** `2 s`
+  **Örnek:** `2 s`
 
 ### `upstream` {#dns-upstream}
 
@@ -82,7 +82,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
       **Örnek:** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. Alt ağ maskesinin dışında önemli bitler bulunmamalıdır.
 
       **Örnek:** `'192.0.2.0/24'`
 
@@ -108,7 +108,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Diğer gruplar arasında eşleşme olmadığında `default` grubu kullanılacaktır. Özel IP adresleri için PTR isteklerini çözmek için `private` grup kullanılacaktır. Bu tür sorgular, `private` grubu tanımlanmamışsa `NXDOMAIN` ile yanıtlanacaktır.
 
 - `timeout`: İnsan tarafından okunabilir bir süre olarak üst kaynak sunucu DNS istekleri için zaman aşımı.
 
@@ -127,23 +127,23 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: Yedek DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
   **Örnek:** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. Aşağıdaki özelliklere sahiptir:
+`debug` nesnesi hata ayıklama özelliklerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 ### `pprof` {#debug-pprof}
 
 Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: localhost üzerinde hata ayıklama HTTP istekleri için dinlenecek bağlantı noktası.
 
   **Örnek:** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Hata ayıklama profilinin etkin olup olmadığını belirtir.
 
   **Örnek:** `true`
 
@@ -153,11 +153,11 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
 `log` nesnesi günlüğe kaydını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `output`: The output to which logs are written.
+- `output`: Günlüklerin yazılacağı çıktı.
 
   :::note Not
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Sistem günlüğüne yazılan günlük girdileri `text` biçimindedir (aşağıya bakın) ve sistem zaman damgasını kullanır.
 
   :::
 
@@ -165,7 +165,7 @@ Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşa�
 
   - `syslog`, Linux için syslog ve Windows için Olay Görüntüleyicisi olan platforma özgü sistem günlüğünün kullanıldığı anlamına gelir.
 
-  - `stdout` for standard output stream.
+  - Standart çıktı akışı için `stdout`.
 
   - Standart hata akışı için `stderr`.
 

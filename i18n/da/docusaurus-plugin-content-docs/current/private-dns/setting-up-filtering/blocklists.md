@@ -57,7 +57,7 @@ For at indsend en forespørgsel:
 3. Klik på _Sortlisteanmodning_ og udfyld formularen.
 4. Efter udfyldelsen, klik på _Indsend ny problematik_.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+Matcher ens eget filters blokeringsregler ikke de eksisterende lister, føjes filteret til repo'et.
 
 ## Brugerregler
 

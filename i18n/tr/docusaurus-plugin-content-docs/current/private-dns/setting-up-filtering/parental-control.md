@@ -3,13 +3,13 @@ title: Ebeveyn denetimi
 sidebar_position: 4
 ---
 
-## What is it
+## Bu nedir
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+Ebeveyn denetimi, "hassas" içerik barındıran belirli sitelere erişimi özelleştirme esnekliği sağlayan bir dizi ayardır.  Bu özelliği çocuklarınızın yetişkin sitelerine erişimini kısıtlamak, arama sorgularını özelleştirmek, popüler hizmetlerin kullanımını engellemek ve daha fazlası için kullanabilirsiniz.
 
-## How to set it up
+## Nasıl ayarlanır
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Sunucularınızdaki ebeveyn denetimi özelliği de dâhil olmak üzere tüm özellikleri esnek bir şekilde yapılandırabilirsiniz. [İlgili makalede](private-dns/server-and-settings/server-and-settings.md), AdGuard DNS'de "sunucunun" ne olduğunu ve farklı ayar kümeleriyle farklı sunucuların nasıl oluşturulacağını öğrenebilirsiniz.
 
 Daha sonra seçili sunucunun ayarlarına giderek gerekli yapılandırmaları etkinleştirin.
 
@@ -17,28 +17,28 @@ Daha sonra seçili sunucunun ayarlarına giderek gerekli yapılandırmaları etk
 
 Uygunsuz ve yetişkinlere yönelik içeriğe sahip siteleri engeller.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![Engellenen site \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
 ### Güvenli arama
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave ve Ecosia'dan uygunsuz sonuçları kaldırır.
 
 ![Güvenli arama \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
 ### YouTube kısıtlı mod
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+YouTube'daki videoların altındaki yorumları görüntüleme ve gönderme ve 18+ içeriklerle etkileşim kurma seçeneğini kaldırır.
 
 ![Kısıtlı mod \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
 ### Engellenen hizmetler ve siteler
 
-AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. Örneğin, bağlı cihazların Instagram ve YouTube'u ziyaret etmesini istemiyorsanız kullanışlıdır.
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Engellenen hizmetler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
 ### Plan kapanış zamanı
 
-Belirli bir zaman aralığıyla seçilen günlerde ebeveyn denetimlerini etkinleştirir. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. Ancak hafta sonları bu erişim kısıtlanmamaktadır. Planınızı istediğiniz gibi özelleştirin ve istediğiniz saatlerde seçili sitelere erişimi engelleyin.
+Belirli bir zaman aralığıyla seçilen günlerde ebeveyn denetimlerini etkinleştirir. Örneğin, çocuğunuzun YouTube videolarını sadece hafta içi 23:00'e kadar izlemesine izin vermiş olabilirsiniz. Ancak hafta sonları bu erişim kısıtlanmamaktadır. Planınızı istediğiniz gibi özelleştirin ve istediğiniz saatlerde seçili sitelere erişimi engelleyin.
 
 ![Plan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

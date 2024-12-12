@@ -1,96 +1,94 @@
 ---
-title: Linked IPs
+title: Привязанные IP-адреса
 sidebar_position: 3
 ---
 
-## What linked IPs are and why they are useful
+## Что такое привязанные IP-адреса и почему они полезны
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
-
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Не все устройства поддерживают зашифрованные DNS-протоколы. В этом случае стоит рассмотреть возможность настройки незашифрованного DNS. Например, вы можете использовать **привязанный IP-адрес**. Единственным требованием к привязанному IP-адресу является то, что это должен быть резидентный IP.
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+Резидентный IP-адрес — это IP-адрес, назначенный устройству, подключённому к резидентному интернет-провайдеру. Как правило, он связан с физическим местоположением и выделяется для отдельных домов или квартир. Люди используют резидентные IP-адреса для повседневной онлайн-деятельности, такой как просмотр веб-страниц, отправка почты, использование социальных сетей или стриминг контента.
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+Иногда резидентный IP-адрес уже может быть задействован, и при попытке подключения к нему, AdGuard DNS предотвратит соединение.
 ![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
 If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
-## How to set up linked IP
+## Как настроить привязанный IP
 
-The following instructions explain how to connect to the device via **linking IP address**:
+Следующая инструкция объясняет, как подключиться к устройству через **привязанный IP-адрес**:
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously connected device.
-3. Go to _Use DNS server addresses_.
-4. Open _Plain DNS server addresses_ and connect the linked IP.
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+1. Откройте Панель управления.
+2. Добавьте новое устройство или откройте настройки ранее подключённого устройства.
+3. Перейдите в раздел _Использовать адреса DNS-серверов_.
+4. Откройте _Адреса незашифрованных DNS-серверов_ и подключите привязанный IP.
+   ![Привязанный IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## Динамический DNS: зачем это нужно
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Каждый раз, когда устройство подключается к сети, оно получает новый динамический IP-адрес. Когда устройство отсоединяется, DHCP-сервер может назначить освободившийся IP-адрес другому устройству в сети. Это означает, что динамические IP-адреса меняются часто и непредсказуемо. Следовательно, вам нужно будет обновлять настройки всякий раз, когда перезагружается устройство или меняется сеть.
 
-To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
+Чтобы автоматически обновлять привязанный IP-адрес, вы можете использовать DNS. AdGuard DNS будет регулярно проверять IP-адрес вашего домена DDNS и связывать его с вашим сервером.
 
 :::note
 
-Dynamic DNS (DDNS) is a service that automatically updates DNS records whenever your IP address changes. It converts network IP addresses into easy-to-read domain names for convenience. The information that connects a name to an IP address is stored in a table on the DNS server. DDNS updates these records whenever there are changes to the IP addresses.
+Динамический DNS (DDNS) — это служба, которая автоматически обновляет записи DNS при каждом изменении вашего IP-адреса. Она преобразует сетевые IP-адреса в легко читаемые доменные имена для удобства. Информация, связывающая имя с IP-адресом, хранится в таблице на DNS-сервере. DDNS обновляет эти записи при любых изменениях IP-адресов.
 
 :::
 
-This way, you won’t have to manually update the associated IP address each time it changes.
+Таким образом, вам не придётся вручную обновлять привязанный IP-адрес каждый раз, когда он изменяется.
 
-## Dynamic DNS: How to set it up
+## Динамический DNS: как настроить
 
-1. First, you need to check if DDNS is supported by your router settings:
-   - Go to _Router settings_ → _Network_
-   - Locate the DDNS or the _Dynamic DNS_ section
-   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like. It may vary depending on your router_
+1. Сначала вам нужно проверить, поддерживает ли ваш роутер DDNS:
+   - Перейдите в _Настройки роутера_ → _Сеть_
+   - Найдите раздел DDNS или _Dynamic DNS_
+   - Перейдите в него и убедитесь, что настройки действительно поддерживаются. _This is just an example of what it may look like. It may vary depending on your router_
      ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
-2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
-3. Enter the domain in your router settings and sync the configurations.
-4. Go to the Linked IP settings to connect the address, then navigate to _Advanced Settings_ and click _Configure DDNS_.
-5. Input the domain you registered earlier and click _Configure DDNS_.
-   ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+2. Зарегистрируйте домен через популярный сервис, такой как [Dyn](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) или любой другой предпочитаемый вами поставщик DDNS.
+3. Введите домен в настройках роутера и синхронизируйте конфигурации.
+4. Откройте настройки _Привязанного IP-адреса_, затем перейдите в _Расширенные настройки_ и нажмите _Настроить Dyn_.
+5. Введите домен, который вы зарегистрировали ранее, и нажмите _Настроить Dyn_.
+   ![Настроить Dyn \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you've successfully set up DDNS!
+Готово, вы успешно настроили Dyn!
 
-## Automation of linked IP update via script
+## Автоматизация обновления привязанного IP-адреса через скрипт
 
-### On Windows
+### На Windows
 
-The easiest way is to use the Task Scheduler:
+Самый простой способ — использовать Планировщик задач:
 
-1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
-   - Select _Run Program_ as the action.
-2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
+1. Создайте задачу:
+   - Откройте Планировщик задач.
+   - Создайте новую задачу.
+   - Установите триггер на запуск каждые 5 минут.
+   - Выберите _Запуск программы_ в качестве действия.
+2. Выберите программу:
+   - В поле _Программа или скрипт_ введите `powershell`
+   - В поле _Добавить аргументы_ введите:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
-3. Save the task.
+3. Сохраните задачу.
 
-### On macOS and Linux
+### На macOS и Linux
 
-On macOS and Linux, the easiest way is to use `cron`:
+На macOS и Linux самый простой способ — использовать `cron`:
 
-1. Open crontab:
-   - In the terminal, run `crontab -e`.
-2. Add a task:
-   - Insert the following line:
+1. Откройте crontab:
+   - В терминале выполните `crontab -e`.
+2. Добавьте задачу:
+   - Добавьте следующую строку:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - This job will run every 5 minutes
-3. Save crontab.
+   - Эта задача будет выполняться каждые 5 минут
+3. Сохраните crontab.
 
-:::note Important
+:::note Важно
 
-- Make sure you have `curl` installed on macOS and Linux.
-- Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- Убедитесь, что на macOS и Linux установлен `curl`.
+- Не забудьте скопировать адрес из настроек и заменить значения `ServerID` и `UniqueKey`.
+- Если требуется более сложная логика или обработка результатов запросов, рассмотрите возможность использования скриптов (например, Bash, Python) в сочетании с планировщиком задач или cron.
 
 :::

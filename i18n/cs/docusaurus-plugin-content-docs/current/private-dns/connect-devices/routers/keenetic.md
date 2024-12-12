@@ -3,46 +3,46 @@ title: Keenetic
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Routery Keenetic jsou známé svou stabilitou a flexibilními konfiguracemi, snadno se nastavují a umožňují snadnou instalaci šifrovaného soukromého AdGuard DNS do vašeho zařízení.
 
-## Configure DNS-over-HTTPS
+## Konfigurace DNS-over-HTTPS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
+1. Otevřete panel správce routeru. Přístup k němu je možný skrze adresu my.keenetic.net, IP adresu vašeho routeru nebo `192.168.1.1`.
+2. Stiskněte tlačítko nabídky v dolní části obrazovky a vyberte _Správa_.
+3. Otevřete _Systémová nastavení_.
+4. Stiskněte _Možnosti komponenty_ → _Možnosti systémových komponent_.
+5. V části _Nástroje a služby_ vyberte proxy DNS-over-HTTPS a nainstalujte jej.
+6. Přejděte do _Menu_ → _Pravidla sítě_ → _Bezpečnost internetu_.
+7. Přejděte na položku Servery DNS-over-HTTPS a klikněte na tlačítko _Přidat server DNS-over-HTTPS_.
+8. Do pole `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` zadejte adresu URL soukromého serveru AdGuard DNS.
 9. Klikněte na _Uložit_.
 
-## Configure DNS-over-TLS
+## Konfigurace DNS-over-TLS
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
+1. Otevřete panel správce routeru. Přístup k němu je možný skrze adresu my.keenetic.net, IP adresu vašeho routeru nebo `192.168.1.1`.
+2. Stiskněte tlačítko nabídky v dolní části obrazovky a vyberte _Správa_.
+3. Otevřete _Systémová nastavení_.
+4. Stiskněte _Možnosti komponenty_ → _Možnosti systémových komponent_.
+5. V části _Nástroje a služby_ vyberte proxy DNS-over-HTTPS a nainstalujte jej.
+6. Přejděte do _Menu_ → _Pravidla sítě_ → _Bezpečnost internetu_.
+7. Přejděte na položku Servery DNS-over-HTTPS a klikněte na tlačítko _Přidat server DNS-over-HTTPS_.
+8. Do pole `tls://*********.d.adguard-dns.com` zadejte adresu URL soukromého serveru AdGuard DNS.
 9. Klikněte na _Uložit_.
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _WAN_ or _Internet_.
-5. Select _DNS_ or _DNS Settings_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Internet_ nebo _Domácí síť_.
+4. Vyberte _WAN_ nebo _Internet_.
+5. Vyberte _DNS_ nebo _Nastavení DNS_.
+6. Vyberte _Ruční DNS_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+7. Uložte nastavení.
+8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

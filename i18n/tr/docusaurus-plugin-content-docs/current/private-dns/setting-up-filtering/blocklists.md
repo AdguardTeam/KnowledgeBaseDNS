@@ -5,13 +5,13 @@ sidebar_position: 1
 
 ## Engel listeleri nelerdir
 
-Engel listeleri, AdGuard DNS'in gizliliğinizi tehlikeye atabilecek reklamları ve içerikleri filtrelemek için kullandığı metin biçimindeki kurallar kümesidir. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+Engel listeleri, AdGuard DNS'in gizliliğinizi tehlikeye atabilecek reklamları ve içerikleri filtrelemek için kullandığı metin biçimindeki kurallar kümesidir. Genel olarak bir filtre, benzer odak noktasına sahip kurallardan oluşur. Örneğin, site dilleri için kurallar (Almanca veya Rusça filtreleri gibi) veya kimlik avı sitelerine karşı koruma sağlayan kurallar (Phishing URL Blocklist gibi) olabilir. Bu kuralları bir grup olarak kolayca etkinleştirebilir veya devre dışı bırakabilirsiniz.
 
 ## Why they are useful
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+Engel listeleri, filtreleme kurallarının esnek bir şekilde özelleştirilmesi için tasarlanmıştır. Örneğin, belirli bir dil bölgesindeki reklam alan adlarını engellemek, izleme veya reklam alan adlarından kurtulmak isteyebilirsiniz. İstediğiniz engel listelerini seçin ve filtrelemeyi isteğinize göre özelleştirin.
 
-## How to activate blocklists in AdGuard DNS
+## AdGuard DNS'de engel listeleri nasıl etkinleştirilir
 
 Engel listelerini etkinleştirmek için:
 
@@ -20,23 +20,23 @@ Engel listelerini etkinleştirmek için:
 3. Gerekli sunucuyu seçin.
 4. _Engel listeleri_ öğesine tıklayın.
 
-## Blocklists types
+## Engel listesi türleri
 
 ### Genel
 
-A group of filters that includes lists for blocking ads and tracking domains.
+Reklamları ve izleme alan adlarını engellemek için listeler içeren bir filtre grubu.
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Genel engel listeleri \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
 ### Bölgesel
 
-A group of filters consisting of regional lists to block domains in specific languages.
+Belirli dillerdeki alan adlarını engellemek için bölgesel listelerden oluşan bir filtre grubu.
 
-![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Bölgesel engel listeleri \*sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
 ### Security
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+Dolandırcı siteleri ve kimlik avı alan adlarını engellemek için kurallar içeren bir filtre grubu.
 
 ![Güvenlik engel listeleri \*sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
@@ -48,16 +48,16 @@ A group of filters containing rules for blocking fraudulent sites and phishing d
 
 ## Filtre ekleme
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+AdGuard DNS filtrelerinin listesinin genişletilmesini istiyorsanız, GitHub'daki [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) adresinin ilgili bölümüne eklenmesi için bir istek gönderebilirsiniz.
 
 Talepte bulunmak için:
 
 1. Yukarıdaki bağlantıya gidin (GitHub'a kaydolmanız gerekebilir).
 2. _New issue_ öğesine tıklayın.
-3. Click _Blocklist request_ and fill out the form.
+3. _Blocklist request_ öğesine tıklayın ve formu doldurun.
 4. Formu doldurduktan sonra _Submit new issue_ öğesine tıklayın.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+Filtrenizin engelleme kuralları mevcut listeleri kopyalamıyorsa, depoya eklenecektir.
 
 ## Kullanıcı kuralları
 

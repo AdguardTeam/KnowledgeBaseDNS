@@ -1,32 +1,32 @@
 ---
-title: Access settings
+title: Impostazioni di accesso
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+Configurando le impostazioni di accesso, puoi proteggere il tuo AdGuard DNS da accessi non autorizzati. Ad esempio, stai utilizzando un indirizzo IPv4 dedicato e gli aggressori che usano gli sniffer lo hanno riconosciuto e lo stanno bombardando con richieste. Nessun problema, aggiungi semplicemente il fastidioso dominio o indirizzo IP alla lista e non ti darà più fastidio!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+Le richieste bloccate non verranno visualizzate nel registro delle query e non sono conteggiate nel limite totale.
 
-## How to set it up
+## Come configurarlo
 
-### Allowed clients
+### Clienti consentiti
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+Questa impostazione consente di specificare quali client possono utilizzare il tuo server DNS. Ha la massima priorità. Ad esempio, se lo stesso indirizzo IP è presente sia nell'elenco negato che in quello consentito, sarà comunque consentito.
 
-### Disallowed clients
+### Client non consentiti
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Qui puoi elencare i client ai quali non è consentito utilizzare il tuo server DNS. Puoi bloccare l'accesso a tutti i client e utilizzare solo quelli selezionati. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Poi, nel campo _Clienti consentiti_, specifica gli indirizzi che possono accedere al tuo server.
 
-:::note Important
+:::note Importante
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Prima di applicare le impostazioni di accesso, assicurati di non bloccare il tuo indirizzo IP. Se lo fai, non potrai accedere alla rete. Se ciò accade, disconnetti semplicemente dal server DNS, vai alle impostazioni di accesso e regola le configurazioni di conseguenza.
 
 :::
 
-### Disallowed domains
+### Domini non consentiti
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+Qui puoi specificare i domini (insieme a regole di carattere universale e regole di filtraggio DNS) che verranno negati l'accesso al tuo server DNS.
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![Impostazioni di accesso \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+Per visualizzare gli indirizzi IP associati alle richieste DNS nel Registro delle richieste, seleziona la casella _Registra indirizzi IP_. Per fare ciò, apri _Impostazioni del server_ → _Impostazioni avanzate_.

@@ -1,27 +1,27 @@
 ---
-title: Companies
+title: Sociétés
 sidebar_position: 4
 ---
 
-This tab allows you to quickly see which companies send the most requests and which companies have the most blocked requests.
+Cet onglet vous permet de vérifier rapidement quelles sociétés envoient le plus de demandes et quelles entreprises ont le plus de demandes bloquées.
 
-![Companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
+![Sociétés \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/companies.png)
 
-The Companies page is divided into two categories:
+La page des Sociétés est divisée en deux catégories :
 
-- **Top requested company**
-- **Top blocked company**
+- **Société la plus recherchée**
+- **Société la plus bloquée**
 
-These are further divided into sub-categories:
+Celles-ci sont divisées en sous-catégories :
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **Publicité** : demandes publicitaires et autres requêtes liées à la publicité qui collectent et partagent les données des utilisateurs, analysent le comportement des utilisateurs et ciblent les annonces
+- **Traqueurs** : requêtes provenant de sites Web et de tiers dans le but de suivre l'activité des utilisateurs
+- **Réseaux sociaux** : requêtes vers des sites de réseaux sociaux
+- **CDN** : requête liée au réseau de diffusion de contenu (CDN), un réseau mondial de serveurs proxy qui accélère la diffusion de contenu aux utilisateurs finaux
+- **Autre**
 
-### Top companies
+### Top des sociétés
 
-In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
+Dans ce tableau, nous ne montrons pas seulement les noms des sociétés les plus visitées ou les plus bloquées, mais nous affichons également des informations sur les domaines qui sont demandés ou qui sont les plus souvent bloqués.
 
-![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)
+![Top des sociétés \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies_breakdown.png)

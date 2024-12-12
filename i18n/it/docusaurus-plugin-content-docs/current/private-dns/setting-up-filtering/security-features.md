@@ -1,24 +1,24 @@
 ---
-title: Security features
+title: Funzionalità di sicurezza
 sidebar_position: 3
 ---
 
-The AdGuard DNS security settings are a set of configurations designed to protect the user's personal information.
+Le impostazioni di sicurezza di AdGuard DNS sono un insieme di configurazioni progettate per proteggere le informazioni personali dell'utente.
 
-Here you can choose which methods you want to use to protect yourself from attackers. This will protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data.
+Qui puoi scegliere quali metodi vuoi utilizzare per proteggerti dagli attaccanti. Questo ti proteggerà dalla visita di siti di phishing e falsi, così come da potenziali perdite di dati sensibili.
 
-### Block malicious, phishing, and scam domains
+### Bloccare i domini dannosi, di phishing e di truffa
 
-To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+Ad oggi, abbiamo classificato oltre 15 milioni di siti e creato un database di 1,5 milioni di siti Web noti per phishing e malware. Utilizzando questo database, AdGuard controlla i siti web visitati per proteggerti dalle minacce online.
 
-### Block newly registered domains
+### Blocca i domini appena registrati
 
-Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
-Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
+I truffatori usano spesso domini recentemente registrati per phishing e schemi fraudolenti. Per questo motivo, abbiamo sviluppato un filtro speciale che rileva la durata di un dominio e lo blocca se è stato creato recentemente.
+A volte questo può causare falsi positivi, ma le statistiche mostrano che nella maggior parte dei casi questa impostazione protegge comunque i nostri utenti dalla perdita di dati riservati.
 
-### Block malicious domains using blocklists
+### Bloccare i domini dannosi utilizzando le liste di blocco
 
-AdGuard DNS supports adding third-party blocking filters.
-Activate filters marked `security` for additional protection.
+AdGuard DNS supporta l'aggiunta di filtri di blocco di terze parti.
+Attiva i filtri contrassegnati `security` per una protezione aggiuntiva.
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+Per saperne di più sulle liste di blocco [vedi articolo separato](/private-dns/setting-up-filtering/blocklists.md).

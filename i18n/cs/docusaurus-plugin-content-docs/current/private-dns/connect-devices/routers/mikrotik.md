@@ -3,58 +3,58 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open source RouterOS operating system, which provides routing, wireless networking and firewall services for home and small office networks.
+Routery MikroTik využívají open source operační systém RouterOS, který poskytuje služby směrování, bezdrátových sítí a firewallu pro domácí a malé kancelářské sítě.
 
-## Configure DNS-over-HTTPS
+## Konfigurace DNS-over-HTTPS
 
-1. Access your MikroTik router:
-   - Open your web browser and go to your router's IP address (usually `192.168.88.1`)
-   - Alternatively, you can use Winbox to connect to your MikroTik router
-   - Enter your administrator username and password
-2. Import root certificate:
-   - Download the latest bundle of trusted root certificates: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
-   - Navigate to _Files_. Click _Upload_ and select the downloaded cacert.pem certificate bundle
-   - Go to _System_ → _Certificates_ → _Import_
-   - In the _File Name_ field, choose the uploaded certificate file
-   - Click _Import_
-3. Configure DNS-over-HTTPS:
-   - Go to _IP_ → _DNS_
-   - In the _Servers_ section, add the following AdGuard DNS servers:
+1. Přístup k routeru MikroTik:
+   - Otevřete webový prohlížeč a přejděte na IP adresu routeru (obvykle `192.168.88.1`)
+   - Případně můžete použít Winbox pro připojení k routeru MikroTik
+   - Zadejte uživatelské jméno a heslo správce
+2. Import kořenového certifikátu:
+   - Stáhněte si nejnovější balíček důvěryhodných kořenových certifikátů: [https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
+   - Přejděte na _Soubory_. Klikněte na tlačítko _Nahrát_ a vyberte stažený balíček certifikátů cacert.pem
+   - Přejděte na _Systém_ → _Certifikáty_ → _Import_
+   - V poli _Název souboru_ vyberte nahraný soubor certifikátu
+   - Klikněte na _Importovat_
+3. Konfigurace DNS-over-HTTPS:
+   - Přejděte na _IP_ → _DNS_
+   - V části _Servery_ přidejte následující servery AdGuard DNS:
      - `94.140.14.49`
      - `94.140.14.59`
-   - Set _Allow Remote Requests_ to _Yes_ (this is crucial for DoH to function)
-   - In the _Use DoH server_ field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
-   - Click _OK_
-4. Create Static DNS Records:
-   - In the _DNS Settings_, click _Static_
-   - Click _Add New_
-   - Set _Name_ to d.adguard-dns.com
-   - Set _Type_ to A
-   - Set _Address_ to `94.140.14.49`
-   - Set _TTL_ to 1d 00:00:00
-   - Repeat the process to create an identical entry, but with _Address_ set to `94.140.14.59`
-5. Disable Peer DNS on DHCP Client:
-   - Go to _IP_ → _DHCP Client_
-   - Double-click the client used for your Internet connection (usually on the WAN interface)
-   - Uncheck _Use Peer DNS_
-   - Click _OK_
-6. Link your IP.
-7. Test and verify:
-   - You might need to reboot your MikroTik router for all changes to take effect
-   - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+   - Nastavte _Allow Remote Requests_ na _Yes_ (to je pro fungování DoH zásadní)
+   - Do pole _Použít server DoH_ zadejte adresu URL soukromého serveru AdGuard DNS: https://d.adguard-dns.com/dns-query/\*\*\*\*\*\*\*\`
+   - Klikněte na _OK_
+4. Vytvořte záznam statického DNS:
+   - V _Nastavení DNS_ klikněte na  _Statický_
+   - Klikněte na _Přidat nový_
+   - Nastavte _Název_ na d.adguard-dns.com
+   - Nastavte _Typ_ na A
+   - Nastavte _Adresu_ na `94.140.14.49`
+   - Nastavte _TTL_ na 1d 00:00:00
+   - Zopakujte postup a vytvořte identickou položku, ale s _Adresou_ nastavenou na `94.140.14.59`
+5. Zakázání služby Peer DNS u klienta DHCP:
+   - Přejděte na _IP_ → _DHCP Client_
+   - Dvakrát klikněte na klienta používaného pro připojení k internetu (obvykle na rozhraní WAN)
+   - Zrušte zaškrtnutí políčka _Používat Peer DNS_
+   - Klikněte na _OK_
+6. Propojte svou IP.
+7. Testování a ověřování:
+   - Možná bude nutné restartovat router MikroTik, aby se všechny změny projevily
+   - Vymažte mezipaměť DNS prohlížeče. Pomocí nástroje, jako je [https://www.dnsleaktest.com](https://www.dnsleaktest.com/), můžete zkontrolovat, zda jsou vaše požadavky DNS nyní směrovány skrze AdGuard
 
-## Use your router admin panel
+## Použijte panel správce routeru
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Webfig_ → _IP_ → _DNS_.
-4. Select _Servers_ and enter one of the following DNS server addresses.
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-5. Save the settings.
-6. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
+3. Otevřete _Webfig_ → _IP_ → _DNS_.
+4. Vyberte možnost _Servery_ a zadejte jednu z následujících adres DNS serveru.
+   - IPv4: `94.140.14.49` a `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+5. Uložte nastavení.
+6. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

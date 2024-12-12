@@ -96,7 +96,7 @@ To:
 }
 ```
 
-burada `enabled` artık gruptaki tüm ayarları kontrol eder, `block_dangerous_domains` önceki `enabled` model alanıdır ve `block_nrd` yeni kaydedilen alan adlarını engelleyen bir ayardır.
+burada `enabled` artık gruptaki tüm ayarları kontrol eder, `block_dangerous_domains` önceki `enabled` model alanıdır ve `block_nrd` yeni tescilli alan adlarını engelleyen bir ayardır.
 
 ### Sunucu ayarlarını kaydetme modeli değiştirildi
 
@@ -124,7 +124,7 @@ From:
 }
 ```
 
-here a new field `safebrowsing_settings` is used instead of the deprecated `safebrowsing_enabled`, whose value is stored in `block_dangerous_domains`.
+burada, değeri `block_dangerous_domains` içinde saklanan ve kullanımdan kaldırılan `safebrowsing_enabled` yerine yeni bir alan olan `safebrowsing_settings` kullanılır.
 
 ## v1.4
 
@@ -146,7 +146,7 @@ _14 Ekim 2022 tarihinde yayınlandı_
 
 ## v1.1
 
-_Released on July 7, 2022_
+_7 Temmuz 2022 tarihinde yayınlandı_
 
 - İstatistikleri zamana, alan adlarına, şirketlere ve cihazlara göre almak için yöntemler eklendi
 - Cihaz ayarlarını güncellemek için yöntem eklendi

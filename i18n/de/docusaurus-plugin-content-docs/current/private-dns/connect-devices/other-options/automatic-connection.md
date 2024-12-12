@@ -3,22 +3,22 @@ title: Automatische Geräteverbindung
 sidebar_position: 5
 ---
 
-## Why it is useful
+## Warum sie nützlich ist
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+Nicht alle sind mit dem Hinzufügen von Geräten über die Übersicht vertraut. Wenn Sie beispielsweise als Systemadministrator mehrere Unternehmensgeräte gleichzeitig einrichten, möchten Sie manuelle Aufgaben so weit wie möglich minimieren.
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+Sie können einen Verbindungslink erstellen und ihn in den Geräteeinstellungen verwenden. Ihr Gerät wird erkannt und automatisch mit dem Server verbunden.
 
-## How to configure automatic connection
+## So richten Sie die automatische Verbindung ein
 
 1. Öffnen Sie die _Übersicht_ und wählen Sie den erforderlichen Server aus.
 2. Wechseln Sie zu _Geräte_.
 3. Aktivieren Sie die Option, um Geräte automatisch zu verbinden.
    ![Geräte automatisch verbinden \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+Nun können Sie Ihr Gerät automatisch mit dem Server verbinden, indem Sie eine spezielle Adresse erstellen, die den Gerätenamen, den Gerätetyp und die aktuelle Server-ID enthält. Lassen Sie uns untersuchen, wie diese Adressen aussehen und welche Regeln für ihre Erstellung gelten.
 
-### Examples of automatic connection addresses
+### Beispiele für automatische Verbindungsadressen
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dies erstellt automatisch ein `Android`-Gerät mit dem `DNS-over-TLS` Protokoll namens `AdGuard Test Device`
 
@@ -26,17 +26,17 @@ Now you can automatically connect your device to the server by creating a specia
 
 - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — dies wird automatisch ein `iOS`-Gerät mit dem `DNS-over-QUIC` Protokoll namens `Mary Sue` erstellen
 
-### Naming conventions
+### Konventionen zur Namensgebung
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+Beim manuellen Erstellen von Geräten gibt es Einschränkungen in Bezug auf die Namenslänge, Zeichen, Leerzeichen und Bindestriche.
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**Namenslänge**: maximal 50 Zeichen. Zeichen über dieser Begrenzung werden ignoriert.
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**Erlaubte Zeichen**: Englische Buchstaben, Zahlen und Bindestriche `-`. Andere Zeichen werden ignoriert.
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**Leerzeichen und Bindestriche**: Verwenden Sie einen Bindestrich für ein Leerzeichen und ein doppelte Bindestriche (`--`) für ein Bindestrich.
 
-**Device type**: Use the following abbreviations:
+**Gerätetyp**: Verwenden Sie die folgenden Abkürzungen:
 
 - Windows — `win`
 - macOS — `mac`
@@ -50,10 +50,10 @@ When creating devices manually, please note that there are restrictions related 
 
 ## Link-Generator
 
-We’ve added a template that generates a link for the specific device type and protocol.
+Wir haben eine Vorlage hinzugefügt, die einen Link für den spezifischen Gerätetyp und das Protokoll generiert.
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
+1. Wechseln Sie zu _Server_ → _Server-Einstellungen_ → _Geräte_ → _Geräte automatisch verbinden_ und klicken Sie auf _Link-Generator und Anleitung_.
+2. Wählen Sie das Protokoll aus, das Sie verwenden möchten, sowie den Gerätenamen und den Gerätetyp.
+3. Klicken Sie auf _Link generieren_.
    ![Link generieren \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+4. Sie haben den Link erfolgreich generiert. Kopieren Sie jetzt die Serveradresse und verwenden Sie sie in einer der [AdGuard-Apps](https://adguard.com/welcome.html)

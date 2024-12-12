@@ -3,31 +3,31 @@ title: Keenetic
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Keenetic 路由器以稳定性和灵活的配置而闻名，并且 Keenetic 路由器易于设置，让用户轻松在设备上安装加密的私有 AdGuard DNS。
 
-## Configure DNS-over-HTTPS
+## 配置 DNS-over-HTTPS
 
-1. 打开路由器管理面板。 It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
-9. Click _Save_.
+1. 打开路由器管理面板。 转到 my.keenetic.net、用路由器 IP 地址或 `192.168.1.1` 进行访问。
+2. 点击屏幕底部的菜单按钮并选择「管理」。
+3. 打开「_系统设置_」。
+4. 点击「_组件选项_」→「_系统组件选项_」。
+5. 在「_实用程序和服务_」中，选择并安装 DNS-over-HTTPS 代理。
+6. 前往「_菜单_」→「_网络规则_」→「_互联网安全_」。
+7. 前往 DNS-over-HTTPS 服务器并点击「_添加 DNS-over-HTTPS 服务器_」。
+8. 在 `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` 字段中输入私有 AdGuard DNS 服务器的 URL。
+9. 点击「_保存_」。
 
 ## 配置 DNS-over-TLS
 
-1. 打开路由器管理面板。 It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
-9. Click _Save_.
+1. 打开路由器管理面板。 转到 my.keenetic.net、用路由器 IP 地址或 `192.168.1.1` 进行访问。
+2. 点击屏幕底部的菜单按钮并选择「管理」。
+3. 打开「_系统设置_」。
+4. 点击「_组件选项_」→「_系统组件选项_」。
+5. 在「_实用程序和服务_」中，选择并安装 DNS-over-HTTPS 代理。
+6. 前往「_菜单_」→「_网络规则_」→「_互联网安全_」。
+7. 前往 DNS-over-HTTPS 服务器并点击「_添加 DNS-over-HTTPS 服务器_」。
+8. 在 `tls://*********.d.adguard-dns.com` 字段中输入私有 AdGuard DNS 服务器的 URL。
+9. 点击「_保存_」。
 
 ## 使用路由器管理面板
 

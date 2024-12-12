@@ -211,6 +211,6 @@ Bu bölümde, AdGuard DNS'in işlevselliğini ince ayar yapmanıza olanak tanıy
 
 ### İstatistik ve Sorgu günlüğü
 
-İstatistikler ve Sorgu günlüğü, cihazlarınızın etkinliği hakkında bilgi sağlar. *İstatistikler* sekmesi, Özel AdGuard DNS'inize bağlı cihazlar tarafından yapılan DNS isteklerinin bir özetini görüntülemenizi sağlar. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+İstatistikler ve Sorgu günlüğü, cihazlarınızın etkinliği hakkında bilgi sağlar. *İstatistikler* sekmesi, Özel AdGuard DNS'inize bağlı cihazlar tarafından yapılan DNS isteklerinin bir özetini görüntülemenizi sağlar. Sorgu günlüğünde, her bir istekle ilgili bilgileri görüntüleyebilir ve ayrıca istekleri duruma, türe, şirkete, cihaza, zamana ve ülkeye göre sıralayabilirsiniz.
 
 [İstatistik ve Sorgu günlüğü](/private-dns/statistics-and-log/statistics.md)

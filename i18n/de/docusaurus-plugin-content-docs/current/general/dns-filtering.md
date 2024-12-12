@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Der einfachste Weg, die Vorteile der DNS-Filterung zu entdecken, ist die Installation von AdGuard Werbeblocker oder das Ausprobieren von AdGuard DNS. Wenn Sie DNS auf Netzwerkebene filtern möchten, ist AdGuard Home Ihr Werkzeug
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
+Schnellzugriff: [AdGuard Werbeblocker herunterladen](https://agrd.io/download-kb-adblock), [AdGuard Home erhalten](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS ausprobieren](https://agrd.io/download-dns)
 
 :::
 
@@ -33,7 +33,7 @@ Die DNS-Filterung kann in zwei separate Funktionen unterteilt werden: Verschlüs
 
 ### DNS-Server
 
-Es stehen Tausende von DNS-Servern zur Auswahl, die sich alle durch ihre Eigenschaften und ihren Zweck unterscheiden. Die meisten geben einfach die IP-Adresse der angefragten Domain zurück, aber einige haben zusätzliche Funktionen: Sie sperren Werbung, Tracking, Domains für Erwachsene und so weiter. Heutzutage verwenden alle großen DNS-Server ein oder mehrere zuverlässige Verschlüsselungsprotokolle: DNS-over-HTTPS, DNS-over-TLS. AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world's first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard stellt verschiedene Server für unterschiedliche Ziele bereit. Dieses Diagramm veranschaulicht die Funktionsweise der Sperr-Server von AdGuard:
+Es stehen Tausende von DNS-Servern zur Auswahl, die sich alle durch ihre Eigenschaften und ihren Zweck unterscheiden. Die meisten geben einfach die IP-Adresse der angefragten Domain zurück, aber einige haben zusätzliche Funktionen: Sie sperren Werbung, Tracking, Domains für Erwachsene und so weiter. Heutzutage verwenden alle großen DNS-Server ein oder mehrere zuverlässige Verschlüsselungsprotokolle: DNS-over-HTTPS, DNS-over-TLS. AdGuard bietet auch einen [DNS-Dienst](https://adguard-dns.io/) an und war weltweit das erste Unternehmen, das das brandneue und vielversprechende [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html)-Verschlüsselungsprotokoll angeboten hat. AdGuard stellt verschiedene Server für unterschiedliche Ziele bereit. Dieses Diagramm veranschaulicht die Funktionsweise der Sperr-Server von AdGuard:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
@@ -41,36 +41,36 @@ Andere DNS-Anbieter arbeiten möglicherweise anders. Informieren Sie sich daher 
 
 ### Lokale DNS-Blocklisten
 
-Aber wenn Sie sich nur auf DNS-Server verlassen, um Ihren DNS-Verkehr zu filtern, verlieren Sie jegliche Flexibilität. Wenn der gewählte Server eine Domain sperrt, können Sie nicht auf diese zugreifen. Mit AdGuard müssen Sie nicht einmal einen bestimmten DNS-Server konfigurieren, um den DNS-Verkehr zu filtern. Alle AdGuard-Produkte ermöglichen den Einsatz von DNS-Blocklisten, seien es einfache Hosts-Dateien oder Listen mit der [erweiterten Syntax](dns-filtering-syntax.md). Sie funktionieren ähnlich wie normale Blocklisten: Wenn eine DNS-Anfrage mit einer der Regeln in der aktiven Filterliste übereinstimmt, wird sie sperrt. To be more precise, the DNS server gives a non-routable IP address for such a request.
+Aber wenn Sie sich nur auf DNS-Server verlassen, um Ihren DNS-Verkehr zu filtern, verlieren Sie jegliche Flexibilität. Wenn der gewählte Server eine Domain sperrt, können Sie nicht auf diese zugreifen. Mit AdGuard müssen Sie nicht einmal einen bestimmten DNS-Server konfigurieren, um den DNS-Verkehr zu filtern. Alle AdGuard-Produkte ermöglichen den Einsatz von DNS-Blocklisten, seien es einfache Hosts-Dateien oder Listen mit der [erweiterten Syntax](dns-filtering-syntax.md). Sie funktionieren ähnlich wie normale Blocklisten: Wenn eine DNS-Anfrage mit einer der Regeln in der aktiven Filterliste übereinstimmt, wird sie sperrt. Genauer gesagt, gibt der DNS-Server eine nicht weiterleitbare IP-Adresse für eine solche Anfrage an.
 
 :::tip
 
-In AdGuard for iOS, first you have to enable *Advanced mode* in *Settings* in order to get access to DNS blocking.
+In AdGuard für iOS müssen Sie zunächst den *Erweiterten Modus* in den *Einstellungen* aktivieren, um Zugang zur DNS-Blockierung zu erhalten.
 
 :::
 
-You can add as many custom blocklists as you wish. For instance, you can use [AdGuard DNS filter](https://github.com/AdguardTeam/AdGuardSDNSFilter). It quite literally blocks everything that AdGuard DNS server does, but in this case you are free to use any other DNS server. Plus, this way you can add more filters or create custom exception rules, all of which would be impossible with a simple "use a blocking DNS server" setup.
+Sie können so viele benutzerdefinierte Sperrlisten hinzufügen, wie Sie möchten. Sie können zum Beispiel den [AdGuard DNS-Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) verwenden. Er sperrt buchstäblich alles, was der AdGuard DNS-Server tut, aber in diesem Fall können Sie jeden anderen DNS-Server verwenden. Außerdem können Sie auf diese Weise weitere Filter hinzufügen oder benutzerdefinierte Ausnahmeregeln erstellen, was mit einer einfachen „Verwendung eines sperrenden DNS-Servers” unmöglich wäre.
 
-There are hundreds of different DNS blocklists, you can look for them [here](https://filterlists.com/).
+Es gibt Hunderte von verschiedenen DNS-Sperrlisten, die Sie [hier](https://filterlists.com/) finden können.
 
 ## DNS-Filterung im Vergleich zur Netzwerkfilterung
 
-Network filtering is what we call the 'regular' way AdGuard standalone apps process network traffic, hence the name. Feel free to brush up on it by reading [this article](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Netzwerkfilterung ist der Begriff, den wir für die 'übliche' Art und Weise verwenden, wie eigenständige AdGuard-Apps den Netzwerkverkehr verarbeiten, daher der Name. Sie können sich gerne näher damit vertraut machen, indem Sie [diesen Artikel](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/) lesen.
 
-First of all, we have to mention that with AdGuard you don't have to choose. You can always use both regular network filtering and DNS filtering at the same time. However, it's important to understand key differences between the two. DNS filtering has both its unique advantages and drawbacks:
+Zunächst einmal müssen wir erwähnen, dass Sie mit AdGuard nicht wählen müssen. Sie können immer sowohl die reguläre Netzwerkfilterung als auch die DNS-Filterung gleichzeitig verwenden. Es ist jedoch wichtig, die Hauptunterschiede zwischen den beiden zu verstehen. Die DNS-Filterung hat sowohl ihre einzigartigen Vor- als auch Nachteile:
 
-**Pros of DNS filtering:**
+**Vorteile der DNS-Filterung:**
 
 1. Auf einigen Plattformen ist dies die einzige Möglichkeit, eine systemweite Filterung zu erreichen. Unter iOS unterstützt beispielsweise nur der Safari-Browser das Sperren von Inhalten im bekannten Sinne, für alles andere gibt es nur DNS-Filterung.
 1. Einige Formen der Verfolgung (wie [CNAME-cloaked tracking](https://adguard.com/blog/cname-tracking.html)) können nur durch DNS-Filterung bekämpft werden.
 1. Die Phase der Verarbeitung einer DNS-Anfrage ist die früheste Phase, in der Sie möglicherweise mit einer Anzeige oder einem Tracker umgehen können. Dies hilft, ein wenig Akkulaufzeit und Datenverkehr zu sparen.
 
-**Cons of DNS filtering:**
+**Nachteile der DNS-Filterung:**
 
-1. DNS filtering is "coarse", which means it doesn't remove whitespace left behind a blocked ad or apply any sorts of cosmetic filtering. Many of the more complicated ads can't be blocked on DNS-level (or rather, they can, but only by blocking the entire domains which are being used for other purposes).
+1. Die DNS-Filterung ist „grob“, d. h. sie entfernt keine Leerräume, die hinter einer gesperrten Werbung zurückbleiben, und wendet auch keine kosmetische Filterung jeglicher Art an. Viele der komplizierteren Werbeanzeigen können nicht auf DNS-Ebene gesperrt werden (oder besser gesagt, sie können es, aber nur durch Sperrung der gesamten Domains, die für andere Zwecke verwendet werden).
 
-    ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *An example of the difference between DNS filtering and network filtering*
+    ![Beispiel für den Unterschied](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Ein Beispiel für den Unterschied zwischen DNS-Filterung und Netzwerk-Filterung*
 
-1. It's not possible to know the origin of a DNS request, which means you can't distinguish between different apps on the DNS-level. This impacts the statistics negatively and makes it impossible to create app-specific filtering rules.
+1. Es ist nicht möglich, den Ursprung einer DNS-Anfrage zu kennen, was bedeutet, dass man auf der DNS-Ebene nicht zwischen verschiedenen Apps unterscheiden kann. Dies wirkt sich negativ auf die Statistiken aus und macht es unmöglich, app-spezifische Filterregeln zu erstellen.
 
-We recommend using DNS filtering in addition to network filtering, not instead of it, whenever possible.
+Wir empfehlen, die DNS-Filterung nach Möglichkeit zusätzlich zur Netzwerkfilterung zu verwenden, nicht an deren Stelle.

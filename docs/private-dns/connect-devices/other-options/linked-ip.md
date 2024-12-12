@@ -5,9 +5,7 @@ sidebar_position: 3
 
 ## What linked IPs are and why they are useful
 
-Not all devices can support encrypted DNS protocols. In this case, users should consider setting up unencrypted DNS.
-
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Not all devices support encrypted DNS protocols. In this case, you should consider setting up unencrypted DNS. For example, you can use a **linked IP address**. The only requirement for a linked IP address is that it must be a residential IP.
 
 :::note
 
@@ -16,7 +14,9 @@ A **residential IP address** is assigned to a device connected to a residential 
 :::
 
 Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+
 ![Linked IPv4 address *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
 If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## How to set up linked IP
@@ -27,11 +27,12 @@ The following instructions explain how to connect to the device via **linking IP
 1. Add a new device or open the settings of a previously connected device.
 1. Go to *Use DNS server addresses*.
 1. Open *Plain DNS server addresses* and connect the linked IP.
+
     ![Linked IP *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamic DNS: Why it is useful
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 
@@ -49,11 +50,14 @@ This way, you won’t have to manually update the associated IP address each tim
     - Go to *Router settings* → *Network*
     - Locate the DDNS or the *Dynamic DNS* section
     - Navigate to it and verify that the settings are indeed supported. *This is just an example of what it may look like. It may vary depending on your router*
+
     ![DDNS supported *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 1. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 1. Enter the domain in your router settings and sync the configurations.
 1. Go to the Linked IP settings to connect the address, then navigate to *Advanced Settings* and click *Configure DDNS*.
 1. Input the domain you registered earlier and click *Configure DDNS*.
+
     ![Configure DDNS *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you've successfully set up DDNS!

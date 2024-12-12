@@ -3,25 +3,25 @@ title: Server a nastavení
 sidebar_position: 1
 ---
 
-## What is server and how to use it
+## Co je to server a jak jej používat
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+Při nastavování Soukromého AdGuard DNS se setkáte s pojmem _servery_.
 
-A server acts as the “profile” that you connect your devices to.
+Server slouží jako "profil", ke kterému připojujete svá zařízení.
 
-Servers include configurations that you can customize to your liking.
+Servery obsahují konfigurace, které si můžete přizpůsobit podle svých představ.
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+Po vytvoření účtu automaticky vytvoříme server s výchozím nastavením. Tento server můžete upravit nebo vytvořit nový.
 
-For instance, you can have:
+Můžete mít například:
 
-- A server that allows all requests
-- A server that blocks adult content and certain services
-- A server that blocks adult content only during specific hours you choose
+- Server, který umožňuje všechny požadavky
+- Server, který blokuje obsah pro dospělé a některé služby
+- Server, který blokuje obsah pro dospělé pouze v určitých hodinách, které si zvolíte
 
-For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+Další informace o filtrování provozu a pravidlech blokování naleznete v článku ["Jak nastavit filtrování v AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
 
-If you're interested in specific settings, there are dedicated articles available for that:
+Pokud vás zajímají konkrétní nastavení, jsou k dispozici specializované články:
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [Pokročilá nastavení](/private-dns/server-and-settings/advanced.md)
+- [Nastavení přístupu](/private-dns/server-and-settings/access.md)

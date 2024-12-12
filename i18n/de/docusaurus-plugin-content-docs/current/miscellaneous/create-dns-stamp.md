@@ -1,60 +1,64 @@
-# How to create your own DNS stamp for Secure DNS
+- - -
+title: So erstellen Sie Ihren eigenen DNS-Stempel für Secure DNS
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+sidebar_position: 4
+- - -
 
-Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
+Diese Anleitung zeigt Ihnen, wie Sie Ihren eigenen DNS-Stempel für Secure DNS erstellen. Secure DNS ist ein Dienst, der Ihre Internetsicherheit und Ihren Privatsphäre verbessert, indem er Ihre DNS-Anfragen verschlüsselt. Dadurch wird verhindert, dass Ihre Abfragen von böswilligen Akteuren abgefangen oder manipuliert werden.
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+Sicheres DNS verwendet in der Regel `tls://`, `https://`, oder `quic://` URLs. Dies ist für die meisten Benutzer ausreichend und wird empfohlen.
 
-## Introduction to DNS stamps
+Wenn Sie jedoch zusätzliche Sicherheit benötigen, wie z. B. vorab aufgelöste Server-IPs und Zertifikats-Pinning durch Hash, können Sie Ihren eigenen DNS-Stempel erzeugen.
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+## Einführung in DNS-Stempel
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+DNS-Stempel sind kurze Zeichenfolgen, die alle Informationen enthalten, die für die Verbindung mit einem sicheren DNS-Server erforderlich sind. Sie vereinfachen die Einrichtung von Secure DNS, da der Benutzer nicht alle Daten manuell eingeben muss.
 
-## Choosing the protocol
+DNS-Stempel ermöglichen es Ihnen, die Secure DNS-Einstellungen über die üblichen URLs hinaus anzupassen. Sie ermöglichen insbesondere die Angabe von fest kodierten Serveradressen, die Verwendung von Zertifikathashing und so weiter. Diese Funktionen machen DNS-Stempel zu einer robusten und vielseitigen Option für die Konfiguration von Secure DNS-Einstellungen.
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+## Auswahl des Protokolls
 
-## Creating a DNS stamp
+Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` und einige andere. Die Wahl eines dieser Protokolle hängt von dem Kontext ab, in dem Sie sie verwenden werden.
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+## Erstellen eines DNS-Stempels
 
-2. Depending on the chosen protocol, select the corresponding protocol from the dropdown menu (DoH, DoT, or DoQ).
+1. Öffnen Sie den [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/) (DNSCrypt-Stempel-Rechner).
 
-3. Fill in the necessary fields:
-    - **IP address**: Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
+2. Je nach gewähltem Protokoll wählen Sie das entsprechende Protokoll aus dem Auswahlmenü (DoH, DoT oder DoQ).
 
-    :::note
-
-    This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
-
-
-:::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+3. Füllen Sie die erforderlichen Felder aus:
+    - **IP-Adresse**: Geben Sie die IP-Adresse des DNS-Servers ein. Wenn Sie das DoT- oder DoQ-Protokoll verwenden, vergewissern Sie sich, dass Sie auch den entsprechenden Port angegeben haben.
 
     :::note
 
-    This field is optional
+    Dieses Feld ist optional und sollte mit Vorsicht verwendet werden: Das Verwenden dieser Option kann das Internet in reinen IPv6-Netzen stören.
+
+
+:::
+    - **Hashes**: Geben Sie den SHA256-Digest eines der in der Validierungskette gefundenen TBS-Zertifikate ein. Wenn der von Ihnen verwendete DNS-Server einen vorgefertigten Hash bereitstellt, suchen und kopieren Sie ihn. Andernfalls können Sie es durch Befolgen der Anweisungen im Abschnitt [*Abrufen des Zertifikats-Hashes*](#obtaining-the-certificate-hash) erhalten.
+
+    :::note
+
+    Dieses Feld ist optional
 
 
 :::
 
-    - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
+    - **Hostname**: Geben Sie den Hostnamen des DNS-Servers ein. Dieses Feld wird zur Überprüfung des Servernamens in den Protokollen DoT und DoQ verwendet.
 
-    - For **DoH**:
-      - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
+    - Für **DoH**:
+      - **Pfad**: Geben Sie den Pfad für die Ausführung von DoH-Anfragen an. Normalerweise ist dies `"/dns-query"`, aber Ihr Provider könnte einen anderen Pfad angegeben haben.
 
-    -     For **DoT and DoQ**:
-      - There are usually no specific fields for these protocols in this tool. Just make sure the port specified in the resolver address is the correct port.
+    -     Für **DoT und DoQ**:
+      - Normalerweise gibt es in diesem Tool keine speziellen Felder für diese Protokolle. Vergewissern Sie sich nur, dass der in der Resolveradresse angegebene Port der richtige ist.
 
-    - In the **Properties** section, you can check the relevant properties if they are known and applicable to your DNS server.
+    - Im Abschnitt **Eigenschaften** können Sie die relevanten Eigenschaften überprüfen, wenn sie bekannt sind und auf Ihren DNS-Server zutreffen.
 
-4. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+4. Ihr Stempel wird automatisch erstellt und im Feld **Stempel** angezeigt.
 
-### Obtaining the certificate hash
+### Abrufen des Zertifikats-Hashes
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+Um das Feld **Zertifikat-Hashes des Servers** auszufüllen, können Sie den folgenden Befehl verwenden, wobei Sie `<IP_ADDRESS>`, `<PORT>` und `<SERVER_NAME>` durch die entsprechenden Werte für Ihren DNS-Server ersetzen:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -62,36 +66,36 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+Das Ergebnis des Hash-Befehls kann sich im Laufe der Zeit ändern, wenn das Zertifikat des Servers aktualisiert wird. Wenn also Ihr DNS-Stempel plötzlich nicht mehr funktioniert, müssen Sie möglicherweise den Hash des Zertifikats neu berechnen und einen neuen Stempel erstellen. Die regelmäßige Aktualisierung Ihres DNS-Stempels trägt dazu bei, den sicheren Betrieb Ihres Secure DNS-Dienstes zu gewährleisten.
 
 :::
 
-## Using the DNS stamp
+## Verwendung des DNS-Stempels
 
-You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+Sie haben nun Ihren eigenen DNS-Stempel, den Sie zur Einrichtung von Secure DNS verwenden können. Dieser Stempel kann in AdGuard und AdGuard VPN eingegeben werden, um den Datenschutz und die Sicherheit im Internet zu verbessern.
 
-## Example of creating a DNS stamp
+## Beispiel für die Erstellung eines DNS-Stempels
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+Lassen Sie uns ein Beispiel für die Erstellung eines Stempels für AdGuard DNS mit DoT durchgehen:
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Öffnen Sie den [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/) (DNSCrypt-Stempel-Rechner).
 
-2. Select the DNS-over-TLS (DoT) protocol.
+2. Wählen Sie das Protokoll DNS-over-TLS (DoT).
 
-3. Fill in the following fields:
+3. Füllen Sie die folgenden Felder aus:
 
-    - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
+    - **IP-Adresse**: Geben Sie die IP-Adresse und den Port des DNS-Servers ein. In diesem Fall ist es `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **Hostname**: Geben Sie den Hostnamen des DNS-Servers ein. In diesem Fall ist es `dns.adguard-dns.com`.
 
-    - **Hashes**: Execute the command
+    - **Hashes**: Führen Sie folgenden Befehl aus
 
     ```bash
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server's certificate into the field.
+    Das Ergebnis ist `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Fügen Sie diesen SHA256-Hash des Serverzertifikats in das Feld ein.
 
-4. Leave the Properties section blank.
+4. Lassen Sie den Abschnitt Eigenschaften leer.
 
-5. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+5. Ihr Stempel wird automatisch erstellt und im Feld **Stempel** angezeigt.

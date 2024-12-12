@@ -3,30 +3,30 @@ title: Nastavení přístupu
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+Konfigurací nastavení přístupu můžete chránit svůj AdGuard DNS před neoprávněným přístupem. Používáte například vyhrazenou adresu IPv4, kterou útočníci pomocí snifferu rozpoznali a bombardují ji požadavky. Žádný problém, stačí přidat otravnou doménu nebo IP adresu do seznamu a už vás nebude obtěžovat!
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+Blokované požadavky se nezobrazují v protokolu dotazů a nezapočítávají se do celkového limitu.
 
-## How to set it up
+## Jak to nastavit
 
-### Allowed clients
+### Povolení klienti
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+Toto nastavení umožňuje určit, kteří klienti mohou používat váš server DNS. Má nejvyšší prioritu. Pokud je například stejná IP adresa na seznamu zakázaných i povolených adres, bude stále povolena.
 
-### Disallowed clients
+### Blokovaní klienti
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+Zde můžete zobrazit seznam klientů, kteří nemají povoleno používat váš server DNS. Můžete zablokovat přístup ke všem klientům a používat pouze vybrané klienty. Za tímto účelem přidejte dvě adresy mezi zakázané klienty: `0.0.0.0/0` a `::/0`. Poté v poli _Povolení klienti_ zadejte adresy, které mohou přistupovat k serveru.
 
-:::note Important
+:::note Důležité
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Před použitím nastavení přístupu se ujistěte, že neblokujete vlastní IP adresu. Pokud tak učiníte, nebudete mít přístup k síti. Pokud se tak stane, stačí se od serveru DNS odpojit, přejít do nastavení přístupu a odpovídajícím způsobem upravit konfiguraci.
 
 :::
 
-### Disallowed domains
+### Blokované domény
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+Zde můžete zadat domény (a také pravidla filtrování zástupných znaků a DNS), kterým bude odepřen přístup k serveru DNS.
 
 ![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+Chcete-li v protokolu dotazů zobrazit IP adresy spojené s požadavky DNS, zaškrtněte políčko _Zaznamenat IP adresy_. Chcete-li to provést, otevřete _Nastavení serveru_ → _Pokročilá nastavení_.

@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: Journal des requêtes
 sidebar_position: 5
 ---
 
-## What is Query log
+## Qu'est-ce que le journal des requêtes
 
-Query log is a useful tool for working with AdGuard DNS.
+Le journal des requêtes est un outil utile pour travailler avec AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Il vous permet de voir toutes les requêtes effectuées par vos appareils pendant la période sélectionnée et de trier les requêtes par état, type, sosiété, appareil, pays.
 
-## How to use it
+## Comment l'utiliser
 
-Here's what you can see and what you can do in the _Query log_.
+Voici ce que vous pouvez voir et ce que vous pouvez faire dans le _Journal des requêtes_.
 
-### Detailed information on requests
+### Informations détaillées sur les requêtes
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Informations sur les requêtes \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Blocage et déblocage des domaines
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+Les requêtes peuvent être bloquées et débloquées sans quitter le journal, en utilisant les outils disponibles.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Débloquer un domaine \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Tri des requêtes
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Vous pouvez sélectionner l'état de la requête, son type, sa société, son appareil et la période de la requête qui vous intéresse.
 
-![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
+![Tri des requêtes \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Désactivation de la journalisation des requêtes
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Si vous le souhaitez, vous pouvez complètement désactiver la journalisation dans les paramètres du compte (mais n'oubliez pas que cela désactivera également les statistiques).
 
-![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)
+![Journalisation \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

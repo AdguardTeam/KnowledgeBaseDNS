@@ -3,46 +3,46 @@ title: Keenetic
 sidebar_position: 5
 ---
 
-Keenetic routers are known for their stability and flexible configurations, and are easy to set up, allowing you to easily install encrypted Private AdGuard DNS on your device.
+Keeneticルーターは、安定性と柔軟に設定できることで知られており、セットアップが簡単で、暗号化されたプライベートAdGuard DNSのデバイスへの簡単なインストールを可能にします。
 
-## Configure DNS-over-HTTPS
+## DNS-over-HTTPS を設定する
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
-9. Click _Save_.
+1. ルーターの管理画面を開きます。 （管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
+2. 画面下部のメニューボタンを押し、「_管理_」を選択します。
+3. 「_システム設定_」を開きます。
+4. 「_コンポーネントオプション_」→ 「_システムコンポーネントオプション_」を押します。
+5. 「_ユーティリティとサービス_」で、 %value% プロキシを選択してインストールします。
+6. 「_メニュー_」→「_ネットワークルール_」→「イ_ンターネットの安全性_」に進みます。
+7. 「DNS-over-HTTPSサーバー」に移動し、「_DNS-over-HTTPSサーバーを追加_」をクリックします。
+8. `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` フィールドにプライベート AdGuard DNS サーバーの URL を入力します。
+9. [_保存_] をクリックします。
 
-## Configure DNS-over-TLS
+## DNS-over-TLS を構成して接続する
 
-1. Open the router admin panel. It can be accessed at my.keenetic.net, the IP address of your router, or `192.168.1.1`.
-2. Press the menu button at the bottom of the screen and select _Management_.
-3. Open _System settings_.
-4. Press _Component options_ → _System component options_.
-5. In _Utilities and services_, select DNS-over-HTTPS proxy and install it.
-6. Head to _Menu_ → _Network rules_ → _Internet safety_.
-7. Navigate to DNS-over-HTTPS servers and click _Add DNS-over-HTTPS server_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
-9. Click _Save_.
+1. ルーターの管理画面を開きます。 （管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
+2. 画面下部のメニューボタンを押し、「_管理_」を選択します。
+3. 「_システム設定_」を開きます。
+4. 「_コンポーネントオプション_」→ 「_システムコンポーネントオプション_」を押します。
+5. 「_ユーティリティとサービス_」で、 %value% プロキシを選択してインストールします。
+6. 「_メニュー_」→「_ネットワークルール_」→「イ_ンターネットの安全性_」に進みます。
+7. 「DNS-over-HTTPSサーバー」に移動し、「_DNS-over-HTTPSサーバーを追加_」をクリックします。
+8. `tls://*********.d.adguard-dns.com` フィールドにプライベート AdGuard DNS サーバーの URL を入力します。
+9. [_保存_] をクリックします。
 
-## Use your router admin panel
+## ルーターの管理画面を使って接続する
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+KeeneticルーターがDNS-over-HTTPSやDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Internet_ or _Home Network_.
-4. Select _WAN_ or _Internet_.
-5. Select _DNS_ or _DNS Settings_.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. ルーターの管理画面を開きます。 （管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
+2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
+3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
+4. 「_WAN_」または「_インターネット_」を選択します。
+5. 「_DNS_」または「_DNS設定_」を選択します。
+6. 「_手動DNS_」を選択します。 「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバーアドレスを入力します:
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
+7. 設定を保存します。
+8. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

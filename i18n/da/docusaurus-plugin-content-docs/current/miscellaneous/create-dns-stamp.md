@@ -1,4 +1,8 @@
-# Sådan opretter eget DNS-stempel til Sikker DNS
+- - -
+title: Sådan opretter et eget DNS-stempel til Sikker DNS
+
+sidebar_position: 4
+- - -
 
 Denne guide viser dig, hvordan et eget DNS-stempel til sikker DNS oprettes. Sikker DNS er en tjeneste, der forbedrer internetsikkerhed og fortrolighed ved at kryptere DNS-forespørgslerne. Dette forhindrer forespørgslerne i at blive opsnappet eller manipuleret af ondsindede aktører.
 

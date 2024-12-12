@@ -3,27 +3,27 @@ title: Xbox One
 sidebar_position: 6
 ---
 
-Game consoles do not support encrypted DNS, but they are well suited for setting up Public AdGuard DNS or Private AdGuard DNS via a linked IP address.
+Herní konzole nepodporují šifrovaný DNS, ale jsou vhodné pro nastavení veřejného AdGuard DNS nebo soukromého AdGuard DNS prostřednictvím propojené IP adresy.
 
-It is likely that your router supports the use of encrypted DNS servers, so you can always configure Private AdGuard DNS on it and connect your game console to it.
+Je pravděpodobné, že váš router podporuje používání šifrovaných serverů DNS, takže na něm můžete kdykoli nakonfigurovat soukromý AdGuard DNS a připojit k němu herní konzoli.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Jak nakonfigurovat router](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## Připojení k AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS, nebo ji nakonfigurujte pomocí propojené IP adresy:
 
-1. Turn on your Xbox One console and sign in to your account.
-2. Press the Xbox button on your controller to open the guide, then select _System_ from the menu.
-3. In the _Settings_ menu, select _Network_.
-4. Under _Network Settings_, select _Advanced Settings_.
-5. Under _DNS Settings_, select _Manual_.
-6. In the _DNS Server_ field, enter one of the following DNS server addresses:
+1. Zapněte konzoli Xbox One a přihlaste se ke svému účtu.
+2. Stisknutím tlačítka Xbox na ovladači otevřete průvodce a v nabídce vyberte možnost _Systém_.
+3. V nabídce _Nastavení_ vyberte _Síť_.
+4. V části _Nastavení sítě_ vyberte _Pokročilá nastavení_.
+5. V části _Nastavení DNS_ vyberte _Ručně_.
+6. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
    - `94.140.14.49`
    - `94.140.14.59`
 7. Save the changes.
 
-It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
+Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

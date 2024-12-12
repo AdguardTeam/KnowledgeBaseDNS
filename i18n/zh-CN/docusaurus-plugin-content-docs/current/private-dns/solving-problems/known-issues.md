@@ -1,59 +1,59 @@
 ---
-title: Known issues
+title: 已知问题
 sidebar_position: 1
 ---
 
-After setting up AdGuard DNS, some users may find that it doesn’t work properly: they see a message that their device is not connected to AdGuard DNS and the requests from that device are not displayed in the Query log. This can happen because of certain hidden settings in your browser or operating system. Let’s look at several common issues and their solutions.
+部分用户在设置 AdGuard DNS 后可能会发现它无法正常工作：用户收到信息显示其设备未连接到 AdGuard DNS，并且查询日志中不会显示来自该设备的请求。 这可能是由于浏览器或操作系统中某些隐藏的设置。 让我们来看看几个常见问题及其对应的解决方案。
 
 :::tip
 
-You can check the status of AdGuard DNS on the [test page](https://adguard.com/test.html).
+您可以在[测试页面](https://adguard.com/test.html)中检查 AdGuard DNS 的状态。
 
 :::
 
-## Chrome’s secure DNS settings
+## Chrome 浏览器的安全 DNS 设置
 
-If you’re using Chrome and you don’t see any requests in your AdGuard DNS dashboard, this may be because Chrome uses its own DNS server. Here’s how you can disable it:
+如果用户使用的是 Chrome 浏览器，并且在 AdGuard DNS 面板中看不到任何请求，这可能是因为 Chrome 浏览器使用了自己的 DNS 服务器。 以下是禁用它的方法：
 
-1. Open Chrome’s settings.
-1. Navigate to *Privacy and security*.
-1. Select *Security*.
-1. Scroll down to *Use secure DNS*.
-1. Disable the feature.
+1. 打开 Chrome 浏览器的设置。
+1. 转至「*隐私和安全*」。
+1. 选择「*安全*」。
+1. 向下滚动到「*使用安全 DNS*」。
+1. 禁用该功能。
 
-![Chrome’s Use secure DNS feature](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
+![Chrome 浏览器的使用安全 DNS 功能](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you've set it up correctly.
+如果禁用 Chrome 浏览器自身的 DNS 设置，浏览器就会使用操作系统指定的 DNS，如果设置正确，那么就会是 AdGuard DNS。
 
-## iCloud Private Relay (Safari, macOS, and iOS)
+## iCloud 私有代理（Safari、macOS 和 iOS）
 
-If you enable iCloud Private Relay in your device settings, Safari will use Apple’s DNS addresses, which will override the AdGuard DNS settings.
+如果您在设备设置中启用 iCloud 私有代理，那么 Safari 将会使用 Apple 的 DNS 地址，这将会覆盖 AdGuard DNS 设置。
 
-Here’s how you can disable iCloud Private Relay on your iPhone:
+以下是在 iPhone 上禁用 iCloud 私有代理的方法：
 
-1. Open *Settings* and tap your name.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
+1. 打开「*设置*」并点击您的姓名。
+1. 选择「*iCloud*」→「*私有代理*」。
+1. 关闭私有代理。
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS 私有代理](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
 
-On your Mac:
+在您的 Mac 上：
 
-1. Open *System Settings* and click your name or *Apple ID*.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
-1. Click *Done*.
+1. 打开「*系统设置*」并单击您的姓名或「*Apple ID*」。
+1. 选择「*iCloud*」→「*私有代理*」。
+1. 关闭私有代理。
+1. 单击*「完成」*。
 
-![macOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
+![macOS 私有代理](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
 
-## Advanced Tracking and Fingerprinting Protection (Safari, starting from iOS 17)
+## 高级跟踪和指纹保护（Safari，从 iOS 17 开始）
 
-After the iOS 17 update, Advanced Tracking and Fingerprinting Protection may be enabled in Safari settings, which could potentially have a similar effect to iCloud Private Relay bypassing AdGuard DNS settings.
+iOS 17 更新后，Safari 设置中的高级跟踪和指纹保护可能会被启用，这可能会产生类似于 iCloud 私有代理绕过 AdGuard DNS 设置的效果。
 
-Here’s how you can disable Advanced Tracking and Fingerprinting Protection:
+以下是禁用高级跟踪和指纹保护的方法：
 
-1. Open *Settings* and scroll down to *Safari*.
-1. Tap *Advanced*.
-1. Disable *Advanced Tracking and Fingerprinting Protection*.
+1. 打开「*设置*」并向下滚动到「*Safari*」。
+1. 单击「*高级*」。
+1. 禁用「*高级跟踪和指纹保护*」。
 
-![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+![iOS 跟踪和指纹保护 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)

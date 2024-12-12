@@ -1,32 +1,32 @@
 ---
-title: Universal instructions
+title: Универсальная инструкция
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Please note that the configuration details provided here are approximate and may differ from the settings on your particular model.
+Здесь приведены общие инструкции по настройке Private AdGuard DNS на роутерах. Вы можете обратиться к этому руководству, если не можете найти свой конкретный роутер в основном списке. Обратите внимание, что предоставленные здесь детали конфигурации носят приблизительный характер и могут отличаться от настроек на вашей модели.
 
-## Use your router admin panel
+## Через панель управления роутера
 
-1. Откройте настройки вашего роутера. Usually you can access them from your browser. Depending on the model of your router, try entering one the following addresses:
-   - Linksys and Asus routers typically use: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
-   - Ubiquiti routers typically use: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+1. Откройте настройки вашего роутера. Обычно доступ к ним можно получить через браузер. В зависимости от модели вашего роутера попробуйте ввести один из следующих адресов:
+   - Роутеры Linksys и Asus обычно используют: [http://192.168.1.1](http://192.168.1.1/)
+   - Роутеры Netgear обычно используют: [http://192.168.0.1](http://192.168.0.1/) или [http://192.168.1.1](http://192.168.1.1/). Роутеры D-Link обычно используют [http://192.168.0.1](http://192.168.0.1/)
+   - Роутеры Ubiquiti обычно используют: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
-2. Enter the router's password.
+2. Введите пароль от роутера.
 
-   :::note Important
+   :::note Важно
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   Если пароль неизвестен, его можно сбросить, нажав кнопку на роутере, однако это также сбросит роутер до заводских настроек. Некоторые модели имеют собственное приложение для управления, которое должно быть уже установлено на вашем компьютере.
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+3. Найдите, где в админ-консоли роутера находятся настройки DNS. Измените перечисленные DNS-адреса на следующие:
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 
-4. Save the settings.
+4. Сохраните настройки.
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

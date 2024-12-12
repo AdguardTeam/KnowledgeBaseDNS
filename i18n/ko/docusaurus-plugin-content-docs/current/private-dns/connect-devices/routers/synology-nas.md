@@ -3,22 +3,22 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS routers are incredibly easy to use and can be combined into a single mesh network. You can manage your network remotely anytime, anywhere. You can also configure AdGuard DNS directly on the router.
+Synology NAS 라우터는 매우 사용하기 쉬우며 단일 메시 네트워크로 결합할 수 있습니다. 언제 어디서나 원격으로 네트워크를 관리할 수 있습니다. 라우터에서 AdGuard DNS를 직접 환경 설정할 수도 있습니다.
 
-## Use your router admin panel
+## 라우터 관리 패널 사용
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 않는 경우, 이 지침을 따르세요.
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Control Panel_ or _Network_.
-4. Select _Network Interface_ or _Network Settings_.
-5. Select your Wi-Fi network or wired connection.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Save the settings.
-8. Link your IP (or your dedicated IP if you have a Team subscription).
+1. 라우터 관리자 패널을 엽니다. 192.168.1.1`또는`192.168.0.1\`에서 접속할 수 있습니다.
+2. 관리자 사용자 이름(일반적으로 admin)과 라우터 비밀번호를 입력합니다.
+3. **제어판** 혹은 **네트워크**를 엽니다.
+4. **네트워크 인터페이스** 또는 **네트워크 설정**을 선택합니다.
+5. Wi-Fi 네트워크 또는 유선 연결을 선택합니다.
+6. **수동 DNS**를 선택합니다. **이 DNS 서버 사용** 또는 **수동으로 DNS 서버 지정**을 선택하고 다음 DNS 서버 주소를 입력합니다:
+   - IPv4: `94.140.14.49` 및 `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
+7. 설정을 저장합니다.
+8. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [연결된 IP](private-dns/connect-devices/other-options/linked-ip.md)

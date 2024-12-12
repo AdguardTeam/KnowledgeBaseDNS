@@ -25,7 +25,7 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
 
-### Other
+### Outro
 
 Some other unofficial options include:
 

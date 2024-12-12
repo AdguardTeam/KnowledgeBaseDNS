@@ -1,6 +1,6 @@
 ---
 title: 'Ekran görüntüsü nasıl alınır'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Ekran görüntüsü, bilgisayarınızın veya mobil cihazınızın ekranının, standart araçlar veya özel bir program ya da uygulama kullanılarak elde edilebilen bir görüntüsüdür.

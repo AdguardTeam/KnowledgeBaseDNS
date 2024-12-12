@@ -3,34 +3,34 @@ title: Журнал запросов
 sidebar_position: 5
 ---
 
-## What is Query log
+## Что такое журнал запросов
 
-Query log is a useful tool for working with AdGuard DNS.
+Журнал запросов — полезный инструмент для работы с AdGuard DNS.
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+Он позволяет вам просматривать все запросы, сделанные вашими устройствами за выбранный период времени, и сортировать запросы по статусу, типу, компании, устройству, стране.
 
-## How to use it
+## Как им пользоваться
 
-Here's what you can see and what you can do in the _Query log_.
+Вот что вы можете увидеть и что вы можете сделать в _журнале запросов_.
 
-### Detailed information on requests
+### Подробная информация о запросах
 
 ![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### Блокировка и разблокировка доменов
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+Запросы могут быть заблокированы и разблокированы без выхода из журнала, с использованием доступных инструментов.
 
 ![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### Сортировка запросов
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+Вы можете выбрать статус запроса, его тип, компанию, устройство и период времени, который вас интересует.
 
 ![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### Отключение логирования запросов
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+Если хотите, вы можете полностью отключить логирование в настройках аккаунта (но помните, что это также отключит статистику).
 
 ![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

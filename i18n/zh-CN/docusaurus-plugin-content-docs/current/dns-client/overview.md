@@ -5,59 +5,59 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## What is AdGuard DNS Client?
+## 什么是 AdGuard DNS 客户端？
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+适用于 [AdGuard DNS][agdns] 的一个跨平台的轻量级 DNS 客户端。 它充当一个 DNS 服务器，将 DNS 请求转发到相应的上游解析器。
 
 [agdns]: https://adguard-dns.io
 
-## Quick start {#start}
+## 快速开始 {#start}
 
 :::caution
 
-AdGuard DNS Client is still in the Beta stage. It may be unstable.
+AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
 
 :::
 
-Supported operating systems:
+支持的操作系统：
 
 - Linux
 - macOS
 - Windows
 
-Supported CPU architectures:
+支持的 CPU 架构：
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Getting started {#start-basic}
+## 开始 {#start-basic}
 
-### Unix-like operating systems {#start-basic-unix}
+### 类 Unix 操作系统 {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. 从[版本页面][releases]下载并解压 `.tar.gz` 或 `.zip` 文件。
 
    :::caution
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   在 macOS 上，全局安装的守护进程必须归 `root` 所有 (参见 [`launchd` 文档][launchd-requirements])，因此 `AdGuardDNSClient` 可执行文件必须放在 `/Applications/` 目录或其子目录中。
 
    :::
 
-2. Install it as a service by running:
+2. 安装并运行以下命令将其设置为服务：
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. 编辑配置文件 `config.yaml`。
 
-4. Start the service:
+4. 启动服务：
 
    ```sh
    ./AdGuardDNSClient -s start -v
    ```
 
-To check that it works, use any DNS checking utility. For example, using `nslookup`:
+使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup`：
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -68,56 +68,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Just download and install using the MSI installer from the [releases page][releases].
+只需从[版本页面][releases]下载 MSI 安装程序并安装即可。
 
-To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
+使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup.exe`：
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Command-line options {#opts}
+## 命令行选项 {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+每个选项都会覆盖配置文件和环境变量中的对应值。
 
-### Help {#opts-help}
+### 帮助 {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+使用 `-h` 选项可在标准输出查看 AdGuard DNS Client 的帮助信息，并以成功状态退出。
 
-### Service {#opts-service}
+### 服务 {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Possible values are:
+`-s <value>` 选项用于指定对操作系统服务的操作。 可能的选项值如下：
 
-- `install`: installs AdGuard DNS Client as a service
-- `restart`: restarts the running AdGuard DNS Client service
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `install`：将 AdGuard DNS 客户端安装为一项服务
+- `restart`：重启正在运行的 AdGuard DNS 客户端服务
+- `start`：启动已安装的 AdGuard DNS 客户端服务
+- `status`：显示已安装的 AdGuard DNS 客户端服务状态
+- `stop`：停止正在运行的 AdGuard DNS 客户端服务
+- `uninstall`：卸载 AdGuard DNS 客户端服务
 
-### Verbose {#opts-verbose}
+### 详细日志输出 {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+`-v` 选项用于启用详细日志输出。
 
-### Version {#opts-version}
+### 版本 {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+`--version` 选项可以让 AdGuard DNS 客户端打印可执行文件 `AdGuardDNSClient` 的版本信息到标准输出并退出 (退出状态为成功)。
 
-## Configuration {#conf}
+## 配置文件 {#conf}
 
-### File {#conf-file}
+### 文件 {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+YAML 配置文件在[配置文件说明][conf]中描述，并有一个示例配置文件 `config.dist.yaml`。  部分配置参数可以通过设置[环境变量][env]来覆盖配置文件中的值。
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## 退出代码 {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+在不同的错误状况下返回不同的退出代码：
 
-- `0`: Successfully finished and exited, no errors.
+- `0`：成功完成并退出，没有错误。
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`：内部错误，很可能是配置错误导致。
 
-- `2`: Bad command-line argument or value.
+- `2`：无效的命令行参数或参数值。

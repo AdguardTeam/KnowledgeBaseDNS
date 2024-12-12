@@ -1,26 +1,26 @@
 ---
-title: Universal instructions
+title: 通用指示说明
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Please note that the configuration details provided here are approximate and may differ from the settings on your particular model.
+以下是一些有关在路由器上设置私人 AdGuard DNS 的一般指示说明。 如果在主列表中找不到特定的路由器，请参考本指南。 请注意，这里提供的配置详情只是近似值，可能与具体型号的设置有所不同。
 
 ## 使用路由器管理面板
 
-1. Open the preferences for your router. Usually you can access them from your browser. Depending on the model of your router, try entering one the following addresses:
-   - Linksys and Asus routers typically use: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
-   - Ubiquiti routers typically use: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+1. 打开路由器的首选项。 通常可以通过浏览器访问它们。 根据路由器型号，尝试输入以下地址之一：
+   - Linksys 和 Asus 路由器通常使用的地址：[http://192.168.1.1](http://192.168.1.1/)
+   - Netgear 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/) 或 [http://192.168.1.1](http://192.168.1.1/)，D-Link 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/)
+   - Ubiquiti 路由器通常使用的地址：[http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
-2. Enter the router's password.
+2. 请输入路由器密码。
 
-   :::note Important
+   :::note 重要信息
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   如果密码未知，用户一般可以通过按下路由器上的一个按钮来重置它；该操作将路由器恢复到出厂设置。 某些型号拥有专门的管理应用程序，这些应用程序应已经安装在计算机上。
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
+3. 在路由器的管理控制台上，找到 DNS 设置。 将列出的 DNS 地址更改为以下地址：
    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 

@@ -21,7 +21,7 @@ You can learn more about this in the [related article](/dns-client/overview/).
 You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
 
 1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-1. Access [settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+1. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
 1. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
 1. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
 
@@ -99,6 +99,28 @@ All done! Your device is successfully connected to AdGuard DNS.
 :::note Important
 
 If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+
+:::
+
+## Use EDNS (Extended DNS)
+
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+
+DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command on the terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+
+All done! DeviceID should be displayed.
+
+:::note
+
+The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
 
 :::
 

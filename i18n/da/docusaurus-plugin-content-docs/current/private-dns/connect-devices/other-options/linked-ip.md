@@ -5,92 +5,90 @@ sidebar_position: 3
 
 ## Hvad linkede IP-adresser er, og hvorfor de er nyttige
 
-Ikke alle enheder understøtter krypterede DNS-protokoller. I så tilfælde bør brugere overveje at opsætte ukrypteret DNS.
-
-You can use a **linked IP address**: in this setup, the service will consider all standard DNS queries coming from that IP address and for that specific device. The only requirement for a linked IP address is that it must be a residential IP.
+Ikke alle enheder understøtter krypterede DNS-protokoller. I så tilfælde bør man overveje at opsætte ukrypteret DNS. Man kan f.eks. bruge en **linket IP-adresse**. Eneste krav for at linke en IP-adresse er, at den skal være en hjemme IP-adresse.
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+En **hjemme IP-adresse** tildeles en enhed, der er tilsluttet en privat ISP. Den er typisk knyttet til en fysisk placering og tildeles individuelle boliger/lejligheder. Folk bruger hjemme IP-adresser til daglige onlineaktiviteter, såsom at surfe, sende e-mails, bruge sociale medier eller streaming.
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+Nogle gange kan en hjemme IP-adresse allerede være i brug, og forsøger man at tilslutte til den, vil AdGuard DNS forhindre forbindelsen.
+![Linket IPv4-adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+Sker dette, kontakt venligst supporten via [support@adguard-dns.io](mailto:support@adguard-dns.io), og de vil assistere med de korrekte opsætningsindstillinger.
 
-## How to set up linked IP
+## Sådan opsættes linket IP
 
-The following instructions explain how to connect to the device via **linking IP address**:
+Den følgende vejledning forklarer, hvordan der forbindes til enheden via en **linket IP-adresse**:
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously connected device.
-3. Go to _Use DNS server addresses_.
-4. Open _Plain DNS server addresses_ and connect the linked IP.
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+1. Åbn Kontrolpanel.
+2. Tilføj en ny enhed, eller åbn indstillingerne for en tidligere tilsluttet enhed.
+3. Gå til _Brug DNS-serveradresser_.
+4. Åbn _Almindelige DNS-serveradresser_ og tilslut den linkede IP.
+   ![Linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## Dynamisk DNS: Hvorfor det er nyttigt
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server reassigns IP addresses to the remaining devices. This means dynamic IP addresses can change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Hver gang en enhed tilslutter sig netværket, får den en ny dynamisk IP-adresse. Når en enhed afbryder forbindelsen, kan DHCP-serveren tildele den frigivne IP-adresse til en anden enhed på netværket. Dette betyder, at dynamiske IP-adresser ændres ofte og uforudsigeligt. Derfor skal indstillingerne opdateres, hver gang enheden genstartes, eller der sker netværksændringer.
 
-To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
+For automatisk at holde den linkede IP-adresse opdateret, kan man bruge DNS. AdGuard DNS tjekker regelmæssigt IP-adressen på DDNS-domænet og linker det til serveren.
 
 :::note
 
-Dynamic DNS (DDNS) is a service that automatically updates DNS records whenever your IP address changes. It converts network IP addresses into easy-to-read domain names for convenience. The information that connects a name to an IP address is stored in a table on the DNS server. DDNS updates these records whenever there are changes to the IP addresses.
+Dynamisk DNS (DDNS) er en tjeneste, der automatisk opdaterer DNS-poster, når IP-adressen ændrer sig. Den konverterer netværks IP-adresser til letlæselige domænenavne for bekvemmelighed. Den information, der forbinder et navn til en IP-adresse, lagres i en tabel på DNS-serveren. DDNS opdaterer disse poster, når der sker ændringer i IP-adresserne.
 
 :::
 
-This way, you won’t have to manually update the associated IP address each time it changes.
+På denne måde behøver man ikke manuelt at opdatere den tilknyttede IP-adresse, hver gang den ændres.
 
-## Dynamic DNS: How to set it up
+## Dynamisk DNS: Sådan opsættes det
 
-1. First, you need to check if DDNS is supported by your router settings:
-   - Go to _Router settings_ → _Network_
-   - Locate the DDNS or the _Dynamic DNS_ section
-   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like. It may vary depending on your router_
-     ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
-2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
-3. Enter the domain in your router settings and sync the configurations.
-4. Go to the Linked IP settings to connect the address, then navigate to _Advanced Settings_ and click _Configure DDNS_.
-5. Input the domain you registered earlier and click _Configure DDNS_.
-   ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+1. Tjek først, om DDNS understøttes i routerindstillingerne:
+   - Gå til _Routerindstillinger_ → _Netværk_
+   - Find DDNS eller afsnittet _Dynamisk DNS_
+   - Gå til dette og bekræft, at indstillingerne faktisk understøttes. _Dette er blot et eksempel på, hvordan det kan se ud. Det kan variere afhængigt af routeren_
+     ![DDNS understøttet \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+2. Registrér domænet hos en populær tjeneste, såsom [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) eller en anden foretrukken DDNS-udbyder.
+3. Angiv domænet i routerindstillingerne og synk opsætningerne.
+4. Gå til Linket IP-indstillinger for at tilslutte adressen, gå derefter til _Avancerede indstillinger_ og klik på _Opsæt DDNS_.
+5. Angiv det domæne, man tidligere registrerede, og klik på _Opsæt DDNS_.
+   ![Opsæt DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you've successfully set up DDNS!
+Opsætningen af DDNS er hermed færdig!
 
-## Automation of linked IP update via script
+## Automation af linket IP-opdatering via script
 
-### On Windows
+### Windows
 
-The easiest way is to use the Task Scheduler:
+Den nemmeste måde er at bruge Opgavestyring:
 
-1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
-   - Select _Run Program_ as the action.
-2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
+1. Opret en opgave:
+   - Åbn Opgavestyring.
+   - Opret en ny opgave.
+   - Indstil udløseren til at køre hvert 5. minut.
+   - Vælg _Kør program_ som handlingen.
+2. Vælg et program:
+   - Skriv i feltet _Program eller Script_ \`powershell'
+   - I feltet _Tilføj argumenter_, skriv:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
-3. Save the task.
+3. Gem opgaven.
 
-### On macOS and Linux
+### macOS og Linux
 
-On macOS and Linux, the easiest way is to use `cron`:
+Den nemmeste måde på macOS og Linux er at bruge `cron`:
 
-1. Open crontab:
-   - In the terminal, run `crontab -e`.
-2. Add a task:
-   - Insert the following line:
+1. Åbn crontab:
+   - Eksekvér i terminalen `crontab -e`.
+2. Tilføj en opgave:
+   - Indsæt flg. linje:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - This job will run every 5 minutes
-3. Save crontab.
+   - Denne opgave eksekveres hvert 5. minut
+3. Gem crontab.
 
 :::note Vigtigt
 
-- Make sure you have `curl` installed on macOS and Linux.
-- Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- Sørg for, at `curl` er installeret på macOS og Linux.
+- Husk at kopiere adressen fra indstillingerne og erstatte `ServerID` og `UniqueKey`.
+- Er mere kompleks logik eller behandling af forespørgselsresultater nødvendig, overvej at bruge scripts (f.eks. Bash, Python) ifm. opgavestyring eller cron.
 
 :::
