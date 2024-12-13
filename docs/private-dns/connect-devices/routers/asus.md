@@ -32,7 +32,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 1. Open *Advanced Settings* or *Advanced*.
 1. Select *WAN* or *Internet*.
 1. Open *DNS Settings* or *DNS*.
-1. Choose *Manual DNS*. Select *Use These DNS Servers* or *Specify DNS Server Manually* and enter the following DNS server addresses:
+1. Choose *Manual Setting*. Select *Use These DNS Servers* or *Specify DNS Server Manually* and enter the following DNS server addresses:
     - IPv4: `94.140.14.49` and `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 1. Save the settings.

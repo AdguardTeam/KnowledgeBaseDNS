@@ -1221,7 +1221,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware and phishing domains. No logging, no ECS, DNSSEC validation, free!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -1250,7 +1250,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) is a privacy focused DNS service provided by Sebastian Schmidt. No Logging, DNSSEC validation.
+[Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
 #### DNS Server 1
 
@@ -1262,7 +1262,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS Server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -1273,7 +1273,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### LaxrFar DNS
 
-[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on Ad Blocking, Privacy Malware Protection it has strict no-logging policy
+[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|

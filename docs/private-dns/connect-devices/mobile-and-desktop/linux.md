@@ -108,7 +108,7 @@ EDNS extends the DNS protocol, enabling larger UDP packets to carry additional d
 
 DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
 
-AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command on the terminal:
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
