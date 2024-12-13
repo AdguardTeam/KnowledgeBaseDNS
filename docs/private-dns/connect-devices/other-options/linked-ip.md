@@ -49,7 +49,7 @@ This way, you won’t have to manually update the associated IP address each tim
 1. First, you need to check if DDNS is supported by your router settings:
     - Go to *Router settings* → *Network*
     - Locate the DDNS or the *Dynamic DNS* section
-    - Navigate to it and verify that the settings are indeed supported. *This is just an example of what it may look like. It may vary depending on your router*
+    - Navigate to it and verify that the settings are indeed supported. *This is just an example of what it may look like, the settings may vary depending on your router*
 
     ![DDNS supported *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
