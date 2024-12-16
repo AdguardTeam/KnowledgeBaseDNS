@@ -3,26 +3,46 @@ title: Überblick
 sidebar_position: 1
 ---
 
-## What is AdGuard DNS?
+## Was ist AdGuard DNS?
 
-AdGuard DNS is a free, privacy-oriented DNS resolver that provides secure connection and also can block tracking, ads, phishing and adult content (optionally). AdGuard DNS does not require installing any applications. It is easy to use and can be effortlessly set up on any device (smartphones, desktops, routers, game consoles, etc.).
+AdGuard DNS ist ein kostenloser, datenschutzorientierter DNS-Auflösungsdienst, der eine sichere Verbindung bietet und auch Tracking, Werbung, Phishing und nicht jugendfreie Inhalte (optional) sperren kann. Für AdGuard DNS müssen keine Anwendungen installiert werden. Es ist einfach zu bedienen und lässt sich mühelos auf jedem Gerät einrichten (Smartphones, Desktops, Router, Spielkonsolen usw.).
 
-## Public AdGuard DNS servers
+## Öffentliche AdGuard DNS-Server
 
-AdGuard DNS has three different types of public servers. "Default" server is for blocking ads, trackers, malware and phishing websites. "Family protection" does the same, but also blocks websites with adult content and enforces "Safe search" option in browsers that provide it. "Non-filtering" provides a secure and reliable connection but doesn't block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ).
+AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. Der „Standard”-Server dient zum Sperren von Werbung, Trackern, Malware und Phishing-Websites. Der "Familienschutz" tut dasselbe, sperrt aber auch Websites mit nicht jugendfreien Inhalten und erzwingt die Option „Sichere Suche” in Browsern, die dies anbieten. „Ohne Filterung” bietet eine sichere und zuverlässige Verbindung, sperrt aber nichts. Eine ausführliche Anleitung zur Einrichtung von AdGuard DNS auf jedem Gerät finden Sie auf [unserer Website](https://adguard-dns.io/public-dns.html). Jeder Server unterstützt verschiedene Sicherheitsprotokolle: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), und DNS-over-QUIC (DoQ).
 
-## AdGuard DNS protocols
+## AdGuard DNS-Protokoll
 
-Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
+Neben einfachem DNS (sowohl IPv4 als auch IPv6) unterstützt AdGuard DNS verschiedene verschlüsselte Protokolle, so dass Sie das für Sie am besten geeignete auswählen können.
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration. But compared to the DoH, DoT and DoQ protocols, DNSCrypt is considered obsolete and if possible we recommend using these protocols.
+AdGuard DNS ermöglicht Ihnen die Verwendung eines speziellen verschlüsselten Protokolls — DNSCrypt. Dank dieser Funktion werden alle DNS-Anfragen verschlüsselt, was Sie vor dem Abfangen von Anfragen und dem anschließenden Abhören und/oder Ändern schützt. Im Vergleich zu den Protokollen DoH, DoT und DoQ gilt DNSCrypt jedoch als veraltet, und wir empfehlen nach Möglichkeit die Verwendung dieser Protokolle.
 
-### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
+### DNS-over-HTTPS (DoH) und DNS-over-TLS (DoT)
 
-DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
+DoH und DoT sind moderne, sichere DNS-Protokolle, die sich immer größerer Beliebtheit erfreuen und in absehbarer Zeit zu den Industriestandards gehören werden. Beide sind zuverlässiger als DNSCrypt und beide werden von AdGuard DNS unterstützt.
+
+#### JSON API für DNS
+
+AdGuard DNS bietet auch eine JSON-API für DNS. Es ist möglich, eine DNS-Antwort in JSON zu erhalten, indem man Folgendes eingibt:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+Eine ausführliche Dokumentation finden Sie in [Googles Anleitung zu JSON API für DNS über HTTPS (DoH) ](https://developers.google.com/speed/public-dns/docs/doh/json). Das Abrufen einer DNS-Antwort in JSON funktioniert mit AdGuard DNS auf die gleiche Weise.
+
+:::note
+
+Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` und `Comment`-Werte in Antwort-JSONs.
+
+:::
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard.com/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+[DNS-over-QUIC ist ein neues DNS-Verschlüsselungsprotokoll](https://adguard.com/blog/dns-over-quic.html) und AdGuard DNS ist der erste öffentliche Resolver, der es unterstützt. Im Gegensatz zu DoH und DoT verwendet es QUIC als Transportprotokoll und bringt DNS endlich zu seinen Wurzeln zurück - es arbeitet über UDP. Es bringt alle Vorteile von QUIC mit sich - sofort einsatzbereite Verschlüsselung, kürzere Verbindungszeiten, bessere Leistung bei Verlust von Datenpaketen. Außerdem soll QUIC ein Protokoll auf Transportebene sein, und es besteht keine Gefahr von Metadatenlecks, wie sie bei DoH auftreten können.
+
+### Ratenbegrenzung
+
+DNS-Datenstrombegrenzung ist eine Technik, mit der die Menge des Datenverkehrs, die ein DNS-Server innerhalb eines bestimmten Zeitraums bewältigen kann, geregelt wird. Wir bieten die Möglichkeit, das Standardlimit für Team- und Enterprise-Pakete von Private AdGuard DNS zu erhöhen. Für weitere Informationen lesen Sie bitte [den entsprechenden Artikel](/private-dns/server-and-settings/rate-limit.md).

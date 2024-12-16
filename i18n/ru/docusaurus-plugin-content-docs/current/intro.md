@@ -36,8 +36,8 @@ AdGuard DNS — это DNS-сервис, который заботится о в
 
 AdGuard DNS существует в двух основных формах: [Публичный AdGuard DNS](public-dns/overview) и [Личный AdGuard DNS](private-dns/overview). Ни один из этих сервисов не требует установки приложений. Их легко настроить и использовать, и они обеспечивают пользователей минимумом функций, необходимых для блкоировки рекламы, трекеров, вредоносных сайтов и контента для взрослых (если потребуется). Нет никаких ограничений на то, с какими устройствами их можно использовать.
 
-Despite so many similarities, private AdGuard DNS and public AdGuard DNS are two different products. Their main difference is that you can customize Private AdGuard DNS, while Public AdGuard DNS cannot.
+Несмотря на множество совпадений, Личный AdGuard DNS и Публичный AdGuard DNS — это два разных продукта. Главное отличие в том, что Личный AdGuard DNS можно настроить, а Публичный — нет.
 
 ## Модуль DNS-фильтрации в продуктах AdGuard
 
-All major AdGuard products, including AdGuard VPN, have a **DNS filtering module** where you can select a DNS server by a provider you trust. Of course, AdGuard DNS Default, AdGuard DNS Non-filtering and AdGuard DNS Family Protection are on the list. Also, AdGuard apps allow users to [easily configure and use AdGuard DNS](https://adguard-dns.io/public-dns.html) — Public or Private.
+Во всех крупных продуктах AdGuard, включая AdGuard VPN, есть **модуль DNS-фильтрации**, где можно выбрать DNS-сервер от провайдера, которому вы доверяете. Конечно, в списке есть серверы AdGuard DNS — По умолчанию, Нефильтрующий и Семейная защита. Также, приложения AdGuard позволяют пользователям [легко настраивать и пользоваться AdGuard DNS](https://adguard-dns.io/public-dns.html) — Публичным и Личным.

@@ -42,9 +42,9 @@ sidebar_position: 3
 
 6. У вас нет пользовательских правил фильтрации, которые могли бы мешать настройкам на странице _Фильтры_ → _Пользовательские правила фильтрации_.
 
-## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+## Что означает «Заблокировано по CNAME или IP» в журнале запросов? {#logs}
 
-AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+AdGuard Home проверяет как DNS-запросы, так и DNS-ответы, чтобы предотвратить технику обхода блокировки рекламы, известную как [CNAME cloaking][cname-cloak]. То есть если в ваших правилах фильтрации указан домен, скажем, `tracker.example`, а DNS-ответ для другого доменного имени, например `blogs.example`, содержит это доменное имя среди своих CNAME-записей, то этот ответ будет заблокирован, поскольку он действительно ведёт на заблокированный сервис отслеживания.
 
 [cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Do not use subdirectories with the Apache reverse HTTP proxy.  It's a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+Не используйте поддиректории с обратным HTTP-прокси Apache.  Известная проблема ([#6604]): Apache обрабатывает относительные перенаправления иначе, чем другие веб-серверы. Это вызывает проблемы с веб-интерфейсом AdGuard Home.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -351,9 +351,9 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 
 Переместите установку или рабочую директорию AdGuard Home в другое место. Вся необходимая информация есть в разделе [_Ограничения_](getting-started.md#limitations) на странице _Начало работы_.
 
-## What does `Error: control/version.json` mean? {#version-error}
+## Что означает `Error: control/version.json`? {#version-error}
 
-This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+Это сообщение об ошибке означает, что AdGuard Home не смог связаться с серверами AdGuard, чтобы проверить наличие обновлений и/или загрузить их. Это может означать, что серверы заблокированы вашим интернет-провайдером или временно не работают. Если через некоторое время ошибка не устранится, вы можете попробовать выполнить [ручное обновление](#manual-update) или отключить автоматическую проверку обновлений, запустив исполняемый файл `AdGuardHome` с опцией командной строки `--no-check-update`.
 
 ## Как обновить AdGuard Home вручную? {#manual-update}
 
@@ -375,7 +375,7 @@ This error message means that AdGuard Home was unable to reach AdGuard servers t
    'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
    ```
 
-2. Перейдите в директорию, в которой установлен AdGuard Home. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
+2. Перейдите в директорию, в которой установлен AdGuard Home. В большинстве систем Unix по умолчанию используется директория '/opt/AdGuardHome', а в macOS — '/Applications/AdGuardHome'.
 
 3. Остановите AdGuard Home:
 
@@ -385,44 +385,44 @@ This error message means that AdGuard Home was unable to reach AdGuard servers t
 
    :::note OpenBSD
 
-   On OpenBSD, you will probably want to use `doas` instead of `sudo`.
+   В OpenBSD вы, вероятно, захотите использовать `doas` вместо `sudo`.
 
    :::
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `~/my-agh-backup`:
+4. Сделайте резервную копию ваших данных. То есть ваш файл конфигурации и каталог данных (по умолчанию `AdGuardHome.yaml` и `data/`). Например, для резервного копирования данных в новую директорию под названием `~/my-agh-backup`:
 
    ```sh
    mkdir -p ~/my-agh-backup
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. Распакуйте архив AdGuard Home во временную директорию. Например, если вы скачали архив в директорию `~/Downloads` и хотите извлечь его в `/tmp/`:
 
    ```sh
    tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
-   On macOS, type something like:
+   На macOS введите что-то вроде:
 
    ```sh
    unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:
+6. Замените старый исполняемый файл AdGuard Home на новый. В большинстве Unix-систем команда будет выглядеть примерно так:
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
    ```
 
-   On macOS, something like:
+   На macOS введите что-то вроде:
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Вы также можете скопировать части документации пакета, такие как журнал изменений (`CHANGELOG.md`), файл README (`README.md`) и лицензию (`LICENSE.txt`).
 
-   You can now remove the temporary directory.
+   Теперь вы можете удалить временную директорию.
 
 7. Перезапустите AdGuard Home:
 
@@ -432,11 +432,11 @@ This error message means that AdGuard Home was unable to reach AdGuard servers t
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
-### Windows (Using PowerShell) {#manual-update-win}
+### Windows (с использованием PowerShell) {#manual-update-win}
 
-In all examples below, the PowerShell must be run as Administrator.
+Во всех приведённых ниже примерах PowerShell должен быть запущен от имени администратора.
 
-1. Загрузите новый пакет AdGuard Home со [страницы релизов][releases]. If you want to perform this step from the command line:
+1. Загрузите новый пакет AdGuard Home со [страницы релизов][releases]. Если вы хотите выполнить этот шаг из командной строки:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -444,7 +444,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
    ```
 
-2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
+2. Перейдите в директорию, в которой был установлен AdGuard Home. В приведённых ниже примерах мы будем использовать `C:\Program Files\AdGuardHome`.
 
 3. Остановите AdGuard Home:
 
@@ -452,7 +452,7 @@ In all examples below, the PowerShell must be run as Administrator.
    .\AdGuardHome.exe -s stop
    ```
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `my-agh-backup`:
+4. Сделайте резервную копию ваших данных. То есть ваш файл конфигурации и каталог данных (по умолчанию `AdGuardHome.yaml` и `data/`). Например, для резервного копирования данных в новую директорию под названием `my-agh-backup`:
 
    ```ps1
    $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
@@ -460,23 +460,23 @@ In all examples below, the PowerShell must be run as Administrator.
    Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to extract it to a temporary directory:
+5. Распакуйте архив AdGuard Home во временную директорию. Например, если вы скачали архив в директорию `Downloads` и хотите извлечь его во временную директорию:
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
    Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. Например:
+6. Замените старый исполняемый файл AdGuard Home на новый. Например:
 
    ```ps1
    $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
    Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Вы также можете скопировать части документации пакета, такие как журнал изменений (`CHANGELOG.md`), файл README (`README.md`) и лицензию (`LICENSE.txt`).
 
-   You can now remove the temporary directory.
+   Теперь вы можете удалить временную директорию.
 
 7. Перезапустите AdGuard Home:
 
@@ -484,27 +484,27 @@ In all examples below, the PowerShell must be run as Administrator.
    .\AdGuardHome.exe -s start
    ```
 
-## How do I uninstall AdGuard Home? {#uninstall}
+## Как удалить AdGuard Home? {#uninstall}
 
-Depending on how you installed AdGuard Home, there are different ways to uninstall it.
+В зависимости от того, как вы установили AdGuard Home, удалить его можно разными способами.
 
 :::caution
 
-Before uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
+Перед удалением AdGuard Home не забудьте изменить конфигурацию устройств и направить их на другой DNS-сервер.
 
 :::
 
-### Regular installation
+### Обычная установка
 
-In this case, do the following:
+В этом случае сделайте следующее:
 
-- Unregister AdGuard Home service: `./AdGuardHome -s uninstall`.
+- Отмените регистрацию сервиса AdGuard Home: './AdGuardHome -s uninstall'.
 
-- Remove the AdGuard Home directory.
+- Удалите домашнюю директорию AdGuard.
 
 ### Docker
 
-Simply stop and remove the image.
+Просто остановитесь и удалите изображение.
 
 ### Snap Store
 

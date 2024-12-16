@@ -156,7 +156,7 @@ Chcete-li aktualizovat balíček AdGuard Home bez použití rozhraní Web API, s
 
 Toto nastavení automaticky pokryje všechna zařízení připojená k Vašemu domácímu routeru a nebudete je muset konfigurovat ručně.
 
-1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například http://192.168.0.1/ nebo http://192.168.1.1/. Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
+1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například <http://192.168.0.1/> nebo <http://192.168.1.1/>. Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
 
 2. Vyhledejte nastavení DHCP/DNS. Hledejte písmena DNS vedle pole, které umožňuje zadat dvě nebo tři sady čísel, z nichž každá je rozdělena do čtyř skupin po jedné až třech číslicích.
 

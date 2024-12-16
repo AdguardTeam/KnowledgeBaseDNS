@@ -1,6 +1,6 @@
 ---
 title: 'Jak pořídit snímek obrazovky'
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 Snímek obrazovky je zachycení obrazovky počítače nebo mobilního zařízení, které lze získat pomocí standardních nástrojů nebo speciálního programu/aplikace.

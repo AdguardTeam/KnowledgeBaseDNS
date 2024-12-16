@@ -4,23 +4,23 @@
     "description": "The title of the footer links column with title=dns in the footer"
   },
   "link.title.legal": {
-    "message": "Legal documents",
+    "message": "법률 문서",
     "description": "The title of the footer links column with title=legal in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "고객 지원",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.other_products": {
-    "message": "Other Products",
+    "message": "기타 제품",
     "description": "The title of the footer links column with title=other_products in the footer"
   },
   "link.item.label.connect_dns": {
-    "message": "Connect to DNS",
+    "message": "DNS로 연결",
     "description": "The label of footer link with label=connect_dns linking to https://adguard-dns.io/public-dns.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "고객 지원 센터",
     "description": "The label of footer link with label=support_center linking to https://adguard-dns.io/support.html"
   },
   "link.item.label.faq": {
@@ -28,27 +28,27 @@
     "description": "The label of footer link with label=faq linking to https://adguard-dns.io/support/faq.html"
   },
   "link.item.label.blog": {
-    "message": "Blog",
+    "message": "블로그",
     "description": "The label of footer link with label=blog linking to https://adguard-dns.io/blog/index.html"
   },
   "link.item.label.privacy_policy": {
-    "message": "Privacy Policy",
+    "message": "개인정보 처리방침",
     "description": "The label of footer link with label=privacy_policy linking to https://adguard-dns.io/privacy.html"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of Sale",
+    "message": "판매 약관",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms": {
-    "message": "EULA",
+    "message": "최종 사용자 라이선스 계약",
     "description": "The label of footer link with label=terms linking to https://adguard-dns.io/eula.html"
   },
   "link.item.label.status": {
-    "message": "AdGuard Status",
+    "message": "AdGuard 상태",
     "description": "The label of footer link with label=status linking to https://status.adguard.com/"
   },
   "link.item.label.ad_blocker": {
-    "message": "AdGuard Ad Blocker",
+    "message": "AdGuard 광고 차단기",
     "description": "The label of footer link with label=ad_blocker linking to https://adguard.com"
   },
   "link.item.label.vpn": {
@@ -60,31 +60,31 @@
     "description": "The alt text of footer logo"
   },
   "link.item.label.homepage": {
-    "message": "Homepage",
+    "message": "홈페이지",
     "description": "The label of footer link with label=homepage linking to https://adguard-dns.io/welcome.html"
   },
   "link.item.label.pricing": {
-    "message": "Pricing",
+    "message": "가격",
     "description": "The label of footer link with label=pricing linking to https://adguard-dns.io/license.html"
   },
   "link.item.label.about_us": {
-    "message": "About us",
+    "message": "정보",
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.promo": {
-    "message": "AdGuard promo activities",
+    "message": "AdGuard 프로모션 활동",
     "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
   },
   "link.item.label.media": {
-    "message": "Media kits",
+    "message": "미디어 키트",
     "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
   },
   "link.item.label.press": {
-    "message": "In the press",
+    "message": "언론 보도",
     "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
   },
   "link.item.label.temp_mail": {
-    "message": "AdGuard Temp Mail",
+    "message": "AdGuard 임시 메일",
     "description": "The label of footer link with label=temp_mail linking to https://adguard.com/adguard-temp-mail/overview.html"
   },
   "link.item.label.adguard_home": {
@@ -92,19 +92,19 @@
     "description": "The label of footer link with label=adguard_home linking to https://adguard.com/adguard-home/overview.html"
   },
   "link.item.label.versions": {
-    "message": "Version history",
+    "message": "버전 내역",
     "description": "The label of footer link with label=versions linking to https://adguard-dns.io/versions.html"
   },
   "link.item.label.report": {
-    "message": "Report an issue",
+    "message": "문제 신고",
     "description": "The label of footer link with label=report linking to https://reports.adguard.com/new_issue.html"
   },
   "link.item.label.refund": {
-    "message": "Refund policy",
+    "message": "환불 정책",
     "description": "The label of footer link with label=refund linking to https://adguard-dns.io/terms-of-sale.html"
   },
   "link.item.label.terms_and_conditions": {
-    "message": "Terms and conditions",
+    "message": "이용 약관",
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
   },
   "copyright": {

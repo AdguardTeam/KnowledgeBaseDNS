@@ -1,87 +1,87 @@
 ---
-title: Setting up AdGuard Home securely
+title: Безопасная настройка AdGuard Home
 sidebar_position: 4
 ---
 
-This page contains a list of additional recommendations to help ensure the security of your AdGuard Home.
+На этой странице вы найдёте список дополнительных рекомендаций, которые помогут обеспечить безопасность вашего AdGuard Home.
 
-## Choosing server addresses
+## Выбор адреса сервера
 
-The first time you start AdGuard Home, you will be asked which interface it should use to serve plain DNS. The most secure and convenient option depends on how you want to run AdGuard Home. You can change the address(es) later, by stopping your AdGuard Home, editing the `dns.bind_hosts` field in the configuration file, and restarting AdGuard Home.
-
-:::note
-
-The UI currently only allows you to select one interface, but you can actually select multiple addresses through the configuration file. We will be improving the UI in future releases.
-
-:::
-
-If you intend to run AdGuard Home on **your computer only,** select the loopback device (also known as “localhost”). It is usually called `localhost`, `lo`, or something similar and has the address `127.0.0.1`.
-
-If you plan to run AdGuard Home on a **router within a small isolated network**, select the locally-served interface. The names can vary, but they usually contain the words `wlan` or `wlp` and have an address starting with `192.168.`. You should probably also add the loopback address as well, if you want software on the router itself to use AdGuard Home too.
-
-If you intend to run AdGuard Home on a **publicly accessible server,** you’ll probably want to select the _All interfaces_ option. Note that this may expose your server to DDoS attacks, so please read the sections on access settings and rate limiting below.
-
-## Access settings
+При первом запуске AdGuard Home вам будет предложено выбрать интерфейс, который он должен использовать для обслуживания обычного DNS. Самый безопасный и удобный вариант зависит от того, как вы хотите запускать AdGuard Home. Вы можете изменить адрес(а) позже, остановив AdGuard Home, отредактировав поле `dns.bind_hosts` в файле конфигурации и перезапустив AdGuard Home.
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Пользовательский интерфейс позволяет выбрать только один интерфейс, но на самом деле вы можете выбрать несколько адресов через файл конфигурации. Мы будем улучшать пользовательский интерфейс в будущих релизах.
 
 :::
 
-At the bottom of the _Settings_ → _DNS settings_ page you will find the _Access settings_ section. These settings allow you to either ban clients that are known to abuse your AdGuard Home instance or to enable the Allowlist mode. The Allowlist mode is recommended for public instances where the number of clients is known and all of the clients are able to use secure DNS.
+Если вы собираетесь запускать AdGuard Home только на **только на своём компьютере**, выберите устройство обратной связи (также известное как localhost). Обычно он называется `localhost`, `lo` или что-то подобное и имеет адрес `127.0.0.1`.
 
-To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP addresses for allowed clients in the _Allowed clients_ field.
+Если вы планируете запускать AdGuard Home на **роутере в небольшой изолированной сети**, выберите локально обслуживаемый интерфейс. Названия могут быть разными, но обычно они содержат слова `wlan` или `wlp` и имеют адрес, начинающийся с `192.168.`. Вероятно, вам также следует добавить loopback-адрес, если вы хотите, чтобы программное обеспечение на самом роутере также использовало AdGuard Home.
+
+Если вы собираетесь запускать AdGuard Home на **общедоступном сервере**, вам, вероятно, стоит выбрать опцию _Все интерфейсы_. Обратите внимание, что это может подвергнуть ваш сервер DDoS-атакам, поэтому прочтите разделы о настройках доступа и ограничении скорости ниже.
+
+## Настройки доступа
+
+:::note
+
+Если ваш AdGuard Home недоступен извне, вы можете пропустить этот раздел.
+
+:::
+
+В нижней части страницы _Настройки_ → _Настройки DNS_ находится раздел _Настройки доступа_. Эти настройки позволяют вам либо заблокировать клиентов, которые, как известно, злоупотребляют вашим AdGuard Home, либо включить режим Белого списка. Режим Белого списка рекомендуется для общедоступных сайтов, в которых известно количество клиентов и все клиенты могут использовать защищённый DNS.
+
+Чтобы включить режим Белого списка, введите [ClientIDs][cid] (рекомендуется) или IP-адреса разрешённых клиентов в поле _Разрешённые клиенты_.
 
 [cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
 
-## Disabling plain DNS
+## Отключение обычного DNS
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Если ваш AdGuard Home недоступен извне, вы можете пропустить этот раздел.
 
 :::
 
-If all clients using your AdGuard Home are able to use encrypted protocols, it is a good idea to disable plain DNS or make it inaccessible from the outside.
+Если все клиенты, использующие ваш AdGuard Home, могут использовать зашифрованные протоколы, рекомендуется отключить обычный DNS или сделать его недоступным извне.
 
-If you want to completely disable plain DNS serving, you can do so on the _Settings_ → _Encryption settings_ page.
+Если вы хотите полностью отключить обычный DNS, вы можете сделать это на странице _Настройки_ → _Настройки шифрования_.
 
-If you want to restrict plain DNS to internal use only, stop your AdGuard Home, edit the `dns.bind_hosts` field in the configuration file to contain only the loopback address(es), and restart AdGuard Home.
+Если вы хотите ограничить простой DNS только внутренним использованием, остановите AdGuard Home, измените поле `dns.bind_hosts` в конфигурационном файле так, чтобы оно содержало только loopback-адрес (или адреса), и перезапустите AdGuard Home.
 
-## Plain-DNS ratelimiting
+## Ограничение скорости обычного DNS
 
 :::note
 
-If your AdGuard Home is not accessible from the outside, you can skip this section.
+Если ваш AdGuard Home недоступен извне, вы можете пропустить этот раздел.
 
 :::
 
-The default plain-DNS ratelimit of 20 should generally be sufficient, but if you have a list of known clients, you can add them to the allowlist and set a stricter ratelimit for other clients.
+Стандартного ограничения скорости DNS, равного 20, обычно достаточно, но если у вас есть список известных клиентов, вы можете добавить их в Белый список и установить более строгое ограничение скорости для других клиентов.
 
-## OS service concerns
+## Проблемы с обслуживанием ОС
 
-In order to prevent privilege escalations through binary planting, it is important that the directory where AdGuard Home is installed to has proper ownership and permissions set.
+Чтобы предотвратить повышение привилегий через бинарную установку, важно, чтобы у директории, в которую установлен AdGuard Home, было правильное право собственности и разрешения.
 
-We thank Go Compile for assistance in writing this section.
+Мы благодарим Go Compile за помощь в написании этого раздела.
 
 ### Unix (FreeBSD, Linux, macOS, OpenBSD)
 
-AdGuard Home working directory, which is by default `/Applications/AdGuardHome` on macOS and `/opt/AdGuardHome` on other Unix systems, as well as the binary itself should generally have `root:root` ownership and not be writeable by anyone but `root`. You can check this with the following command, replacing `/opt/AdGuardHome` with your directory and `/opt/AdGuardHome/AdGuardHome` with your binary:
+Рабочая директория AdGuard Home, по умолчанию `/Applications/AdGuardHome` на macOS и `/opt/AdGuardHome` на других Unix-системах, а также сам двоичный файл должны иметь право собственности `root:root` и не должны быть доступны для записи никому, кроме `root`. Вы можете проверить это с помощью следующей команды, заменив `/opt/AdGuardHome` своей директорией и `/opt/AdGuardHome/AdGuardHome` своим двоичным файлом:
 
 ```sh
 ls -d -l /opt/AdGuardHome
 ls -l /opt/AdGuardHome/AdGuardHome
 ```
 
-A reasonably secure output should look something like this:
+Достаточно безопасный вывод должен выглядеть примерно так:
 
 ```none
 drwxr-xr-x 4 root root 4096 Jan 1 12:00 /opt/AdGuardHome/
 -rwxr-xr-x 1 root root 29409280 Jan 1 12:00 /opt/AdGuardHome/AdGuardHome
 ```
 
-Note the lack of write permission for anyone but `root` as well as `root` ownership. If the permissions and/or ownership are not correct, run the following commands under `root`:
+Обратите внимание на отсутствие прав на запись для всех, кроме `root`, а также на право владения `root`. Если разрешения и/или права собственности не верны, выполните следующие команды под `root`:
 
 ```sh
 chmod 755 /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
@@ -90,6 +90,6 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 
 ### Windows
 
-The principle is the same on Windows: make sure that the AdGuard Home directory, typically `C:\Program Files\AdGuardHome`, and the `AdGuardHome.exe` binary have the permissions that would only allow regular users to read and execute/list them.
+На Windows принцип тот же: убедитесь, что у директории AdGuard Home, обычно `C:\Program Files\AdGuardHome`, и двоичного файла `AdGuardHome.exe` есть права, позволяющие обычным пользователям читать и выполнять/перечислять их.
 
-In the future we plan to release Windows builds as MSI installer files that make sure that this is performed automatically.
+В будущем мы планируем выпускать сборки Windows в виде установочных файлов MSI, которые будут выполнять это автоматически.

@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: Riferimento
 sidebar_position: 2
 toc_min_heading_level: 3
 toc_max_heading_level: 4
@@ -11,441 +11,441 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Questo articolo contiene la documentazione per l'[API di AdGuard DNS](private-dns/api/overview.md). Per il registro delle modifiche completo dell'API di AdGuard DNS, visita [questa pagina](private-dns/api/changelog.md).
 
-## Current Version: 1.9
+## Versione attuale: 1.9
 
 ### /oapi/v1/account/limits
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets account limits
+Ottiene i limiti del profilo
 
-##### Responses
+##### Risposte
 
-| Code | Description         |
-| ---- | ------------------- |
-| 200  | Account limits info |
+| Codice | Descrizione                         |
+| ------ | ----------------------------------- |
+| 200    | Informazioni sui limiti del profilo |
 
 ### /oapi/v1/dedicated_addresses/ipv4
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Lists allocated dedicated IPv4 addresses
+Elenca gli indirizzi IPv4 dedicati
 
-##### Responses
+##### Risposte
 
-| Code | Description                      |
-| ---- | -------------------------------- |
-| 200  | List of dedicated IPv4 addresses |
+| Codice | Descrizione                         |
+| ------ | ----------------------------------- |
+| 200    | Lista degli indirizzi IPv4 dedicati |
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Allocates new dedicated IPv4
+Assegna un nuovo IPv4
 
-##### Responses
+##### Risposte
 
-| Code | Description                            |
-| ---- | -------------------------------------- |
-| 200  | New IPv4 successfully allocated        |
-| 429  | Dedicated IPv4 count reached the limit |
+| Codice | Descrizione                                             |
+| ------ | ------------------------------------------------------- |
+| 200    | Nuovo IPv4 assegnato con successo                       |
+| 429    | Il conteggio degli IPv4 dedicati ha raggiunto il limite |
 
 ### /oapi/v1/devices
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Lists devices
+Elenca i dispositivi
 
-##### Responses
+##### Risposte
 
-| Code | Description     |
-| ---- | --------------- |
-| 200  | List of devices |
+| Codice | Descrizione           |
+| ------ | --------------------- |
+| 200    | Elenco di dispositivi |
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Creates a new device
+Crea un nuovo dispositivo
 
-##### Responses
+##### Risposte
 
-| Code | Description                     |
-| ---- | ------------------------------- |
-| 200  | Device created                  |
-| 400  | Validation failed               |
-| 429  | Devices count reached the limit |
+| Codice | Descrizione                                         |
+| ------ | --------------------------------------------------- |
+| 200    | Dispositivo creato                                  |
+| 400    | Convalida fallita                                   |
+| 429    | Il conteggio dei dispositivi ha raggiunto il limite |
 
 ### /oapi/v1/devices/{device_id}
 
 #### DELETE
 
-##### Summary
+##### Riepilogo
 
-Removes a device
+Rimuove un dispositivo
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description      |
-| ---- | ---------------- |
-| 200  | Device deleted   |
-| 404  | Device not found |
+| Codice | Descrizione             |
+| ------ | ----------------------- |
+| 200    | Dispositivo eliminato   |
+| 404    | Dispositivo non trovato |
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets an existing device by ID
+Ottiene un dispositivo esistente per ID
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description      |
-| ---- | ---------------- |
-| 200  | Device info      |
-| 404  | Device not found |
+| Codice | Descrizione                  |
+| ------ | ---------------------------- |
+| 200    | Informazioni sul dispositivo |
+| 404    | Dispositivo non trovato      |
 
 #### PUT
 
-##### Summary
+##### Riepilogo
 
-Updates an existing device
+Aggiorna un dispositivo esistente
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description       |
-| ---- | ----------------- |
-| 200  | Device updated    |
-| 400  | Validation failed |
-| 404  | Device not found  |
+| Codice | Descrizione             |
+| ------ | ----------------------- |
+| 200    | Dispositivo aggiornato  |
+| 400    | Convalida fallita       |
+| 404    | Dispositivo non trovato |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-List dedicated IPv4 and IPv6 addresses for a device
+Elenca gli indirizzi IPv4 e IPv6 dedicati per un dispositivo
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description             |
-| ---- | ----------------------- |
-| 200  | Dedicated IPv4 and IPv6 |
+| Codice | Descrizione          |
+| ------ | -------------------- |
+| 200    | IPv4 e IPv6 dedicati |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### DELETE
 
-##### Summary
+##### Riepilogo
 
-Unlink dedicated IPv4 from the device
+Scollega l'IPv4 dedicato dal dispositivo
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description                                          |
-| ---- | ---------------------------------------------------- |
-| 200  | Dedicated IPv4 successfully unlinked from the device |
-| 404  | Device or address not found                          |
+| Codice | Descrizione                                           |
+| ------ | ----------------------------------------------------- |
+| 200    | IPv4 dedicato scollegato con successo dal dispositivo |
+| 404    | Dispositivo o indirizzo non trovato                   |
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Link dedicated IPv4 to the device
+Collega l'IPv4 dedicato al dispositivo
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description                                      |
-| ---- | ------------------------------------------------ |
-| 200  | Dedicated IPv4 successfully linked to the device |
-| 400  | Validation failed                                |
-| 404  | Device or address not found                      |
-| 429  | Linked dedicated IPv4 count reached the limit    |
+| Codice | Descrizione                                                       |
+| ------ | ----------------------------------------------------------------- |
+| 200    | IPv4 dedicato collegato con successo al dispositivo               |
+| 400    | Convalida fallita                                                 |
+| 404    | Dispositivo o indirizzo non trovato                               |
+| 429    | Il conteggio degli IPv4 dedicati collegati ha raggiunto il limite |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets DNS-over-HTTPS .mobileconfig file.
+Ottiene il file DNS-over-HTTPS .mobileconfig.
 
-##### Parameters
+##### Parametri
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+| Nome                    | Situato in | Descrizione                                                                                | Obbligatorio | Tipo       |
+| ----------------------- | ---------- | ------------------------------------------------------------------------------------------ | ------------ | ---------- |
+| device_id               | path       |                                                                                            | Sì           | string     |
+| exclude_wifi_networks | query      | Elenca le reti Wi-Fi secondo il loro SSID in cui desideri che AdGuard DNS sia disabilitato | No           | [ string ] |
+| exclude_domain          | query      | Elenca i domini che utilizzeranno i server DNS predefiniti, al posto di AdGuard DNS        | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+| Codice | Descrizione                    |
+| ------ | ------------------------------ |
+| 200    | File .plist del DNS-over-HTTPS |
+| 404    | Dispositivo non trovato        |
 
 ### /oapi/v1/devices/{device_id}/doh_password/reset
 
 #### PUT
 
-##### Summary
+##### Riepilogo
 
-Generate and set new DNS-over-HTTPS password
+Genera e imposta una nuova password DNS-over-HTTPS
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description                                |
-| ---- | ------------------------------------------ |
-| 200  | DNS-over-HTTPS password successfully reset |
-| 404  | Device not found                           |
+| Codice | Descrizione                                      |
+| ------ | ------------------------------------------------ |
+| 200    | Password DNS-over-HTTPS reimpostata con successo |
+| 404    | Dispositivo non trovato                          |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets DNS-over-TLS .mobileconfig file.
+Ottiene il file .mobileconfig. del DNS-over-TLS.
 
-##### Parameters
+##### Parametri
 
-| Name                    | Located in | Description                                                                    | Required | Schema     |
-| ----------------------- | ---------- | ------------------------------------------------------------------------------ | -------- | ---------- |
-| device_id               | path       |                                                                                | Yes      | string     |
-| exclude_wifi_networks | query      | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | No       | [ string ] |
-| exclude_domain          | query      | List domains that will use default DNS servers instead of AdGuard DNS          | No       | [ string ] |
+| Nome                    | Situato in | Descrizione                                                                                | Obbligatorio | Tipo       |
+| ----------------------- | ---------- | ------------------------------------------------------------------------------------------ | ------------ | ---------- |
+| device_id               | path       |                                                                                            | Sì           | string     |
+| exclude_wifi_networks | query      | Elenca le reti Wi-Fi secondo il loro SSID in cui desideri che AdGuard DNS sia disabilitato | No           | [ string ] |
+| exclude_domain          | query      | Elenca i domini che utilizzeranno i server DNS predefiniti, al posto di AdGuard DNS        | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                |
-| ---- | -------------------------- |
-| 200  | DNS-over-HTTPS .plist file |
-| 404  | Device not found           |
+| Codice | Descrizione                  |
+| ------ | ---------------------------- |
+| 200    | File .plist del DNS-over-TLS |
+| 404    | Dispositivo non trovato      |
 
 ### /oapi/v1/devices/{device_id}/settings
 
 #### PUT
 
-##### Summary
+##### Riepilogo
 
-Updates device settings
+Aggiorna le impostazioni del dispositivo
 
-##### Parameters
+##### Parametri
 
-| Name      | Located in | Description | Required | Schema |
-| --------- | ---------- | ----------- | -------- | ------ |
-| device_id | path       |             | Yes      | string |
+| Nome      | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------- | ---------- | ----------- | ------------ | ------ |
+| device_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description             |
-| ---- | ----------------------- |
-| 200  | Device settings updated |
-| 400  | Validation failed       |
-| 404  | Device not found        |
+| Codice | Descrizione                             |
+| ------ | --------------------------------------- |
+| 200    | Impostazioni del dispositivo aggiornate |
+| 400    | Convalida fallita                       |
+| 404    | Dispositivo non trovato                 |
 
 ### /oapi/v1/dns_servers
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Lists DNS servers that belong to the user.
+Elenca i server DNS appartenenti all'utente.
 
-##### Description
+##### Descrizione
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+Elenca i server DNS appartenenti all'utente. Di default, esiste almeno un server predefinito.
 
-##### Responses
+##### Risposte
 
-| Code | Description         |
-| ---- | ------------------- |
-| 200  | List of DNS servers |
+| Codice | Descrizione          |
+| ------ | -------------------- |
+| 200    | Elenco di server DNS |
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Creates a new DNS server
+Crea un nuovo server DNS
 
-##### Description
+##### Descrizione
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+Crea un nuovo server DNS. Puoi allegare delle impostazioni personalizzate, altrimenti il server DNS sarà creato con le impostazioni predefinite.
 
-##### Responses
+##### Risposte
 
-| Code | Description                         |
-| ---- | ----------------------------------- |
-| 200  | DNS server created                  |
-| 400  | Validation failed                   |
-| 429  | DNS servers count reached the limit |
+| Codice | Descrizione                                        |
+| ------ | -------------------------------------------------- |
+| 200    | Server DNS creato                                  |
+| 400    | Convalida fallita                                  |
+| 429    | Il conteggio dei server DNS ha raggiunto il limite |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
 #### DELETE
 
-##### Summary
+##### Riepilogo
 
-Removes a DNS server
+Rimuove un server DNS
 
-##### Description
+##### Descrizione
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
+Rimuove un server DNS. Tutti i dispositivi collegati a questo server DNS saranno spostati al server DNS predefinito. Eliminare il server DNS predefinito è vietato.
 
-##### Parameters
+##### Parametri
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Nome            | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------------- | ---------- | ----------- | ------------ | ------ |
+| dns_server_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server deleted   |
-| 404  | DNS server not found |
+| Codice | Descrizione            |
+| ------ | ---------------------- |
+| 200    | Server DNS eliminato   |
+| 404    | Server DNS non trovato |
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets an existing DNS server by ID
+Ottiene un server DNS esistente per ID
 
-##### Parameters
+##### Parametri
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Nome            | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------------- | ---------- | ----------- | ------------ | ------ |
+| dns_server_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server info      |
-| 404  | DNS server not found |
+| Codice | Descrizione                 |
+| ------ | --------------------------- |
+| 200    | Informazioni sul server DNS |
+| 404    | Server DNS non trovato      |
 
 #### PUT
 
-##### Summary
+##### Riepilogo
 
-Updates an existing DNS server
+Aggiorna un server DNS esistente
 
-##### Parameters
+##### Parametri
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Nome            | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------------- | ---------- | ----------- | ------------ | ------ |
+| dns_server_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | DNS server updated   |
-| 400  | Validation failed    |
-| 404  | DNS server not found |
+| Codice | Descrizione            |
+| ------ | ---------------------- |
+| 200    | Server DNS aggiornato  |
+| 400    | Convalida fallita      |
+| 404    | Server DNS non trovato |
 
 ### /oapi/v1/dns_servers/{dns_server_id}/settings
 
 #### PUT
 
-##### Summary
+##### Riepilogo
 
-Updates DNS server settings
+Aggiorna le impostazioni del server DNS
 
-##### Parameters
+##### Parametri
 
-| Name            | Located in | Description | Required | Schema |
-| --------------- | ---------- | ----------- | -------- | ------ |
-| dns_server_id | path       |             | Yes      | string |
+| Nome            | Situato in | Descrizione | Obbligatorio | Tipo   |
+| --------------- | ---------- | ----------- | ------------ | ------ |
+| dns_server_id | path       |             | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | DNS server settings updated |
-| 400  | Validation failed           |
-| 404  | DNS server not found        |
+| Codice | Descrizione                            |
+| ------ | -------------------------------------- |
+| 200    | Impostazioni del server DNS aggiornate |
+| 400    | Convalida fallita                      |
+| 404    | Server DNS non trovato                 |
 
 ### /oapi/v1/filter_lists
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets filter lists
+Ottiene gli elenchi di filtri
 
-##### Responses
+##### Risposte
 
-| Code | Description     |
-| ---- | --------------- |
-| 200  | List of filters |
+| Codice | Descrizione      |
+| ------ | ---------------- |
+| 200    | Elenco di filtri |
 
 ### /oapi/v1/oauth_token
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Generates Access and Refresh token
+Genera il token di Accesso e Aggiornamento
 
-##### Responses
+##### Risposte
 
-| Code | Description                                              |
-| ---- | -------------------------------------------------------- |
-| 200  | Access token issued                                      |
-| 400  | Missing required parameters                              |
-| 401  | Invalid credentials, MFA token or refresh token provided |
+| Codice | Descrizione                                                  |
+| ------ | ------------------------------------------------------------ |
+| 200    | Token d'accesso emesso                                       |
+| 400    | Parametri obbligatori mancanti                               |
+| 401    | Credenziali non valide, token MFA o di aggiornamento forniti |
 
 null
 
@@ -453,62 +453,62 @@ null
 
 #### DELETE
 
-##### Summary
+##### Riepilogo
 
-Clears query log
+Cancella il registro delle richieste
 
-##### Responses
+##### Risposte
 
-| Code | Description           |
-| ---- | --------------------- |
-| 202  | Query log was cleared |
+| Codice | Descrizione                                    |
+| ------ | ---------------------------------------------- |
+| 202    | Il registro delle richieste è stato cancellato |
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets query log
+Ottiene il registro delle richieste
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                                                                | Required | Schema                                              |
-| ------------------ | ---------- | -------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive)                                      | Yes      | long                                                |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)                                        | Yes      | long                                                |
-| devices            | query      | Filter by devices                                                          | No       | [ string ]                                          |
-| countries          | query      | Filter by countries                                                        | No       | [ string ]                                          |
-| companies          | query      | Filter by companies                                                        | No       | [ string ]                                          |
-| statuses           | query      | Filter by statuses                                                         | No       | [ [FilteringActionStatus](#FilteringActionStatus) ] |
-| categories         | query      | Filter by categories                                                       | No       | [ [CategoryType](#CategoryType) ]                   |
-| search             | query      | Filter by domain name                                                      | No       | string                                              |
-| limit              | query      | Limit the number of records to be returned                                 | No       | integer                                             |
-| cursor             | query      | Pagination cursor. Use cursor from response to paginate through the pages. | No       | string                                              |
+| Nome               | Situato in | Descrizione                                                                          | Obbligatorio | Tipo                                                |
+| ------------------ | ---------- | ------------------------------------------------------------------------------------ | ------------ | --------------------------------------------------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso)                                                   | Sì           | long                                                |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)                                                    | Sì           | long                                                |
+| devices            | query      | Filtra per dispositivi                                                               | No           | [ string ]                                          |
+| countries          | query      | Filtra per paesi                                                                     | No           | [ string ]                                          |
+| companies          | query      | Filtra per aziende                                                                   | No           | [ string ]                                          |
+| statuses           | query      | Filtra per stati                                                                     | No           | [ [FilteringActionStatus](#FilteringActionStatus) ] |
+| categories         | query      | Filtra per categorie                                                                 | No           | [ [CategoryType](#CategoryType) ]                   |
+| search             | query      | Filtra per nome di dominio                                                           | No           | string                                              |
+| limit              | query      | Limita il numero di registri da restituire                                           | No           | integer                                             |
+| cursor             | query      | Cursore d'impaginazione. Utilizza il cursore dalla risposta per sfogliare le pagine. | No           | string                                              |
 
-##### Responses
+##### Risposte
 
-| Code | Description |
-| ---- | ----------- |
-| 200  | Query log   |
+| Codice | Descrizione              |
+| ------ | ------------------------ |
+| 200    | Registro delle richieste |
 
 ### /oapi/v1/revoke_token
 
 #### POST
 
-##### Summary
+##### Riepilogo
 
-Revokes a Refresh Token
+Revoca un Token d'Aggiornamento
 
-##### Parameters
+##### Parametri
 
-| Name          | Located in | Description   | Required | Schema |
-| ------------- | ---------- | ------------- | -------- | ------ |
-| refresh_token | query      | Refresh Token | Yes      | string |
+| Nome          | Situato in | Descrizione           | Obbligatorio | Tipo   |
+| ------------- | ---------- | --------------------- | ------------ | ------ |
+| refresh_token | query      | Token d'Aggiornamento | Sì           | string |
 
-##### Responses
+##### Risposte
 
-| Code | Description           |
-| ---- | --------------------- |
-| 200  | Refresh token revoked |
+| Codice | Descrizione                    |
+| ------ | ------------------------------ |
+| 200    | Token d'aggiornamento revocato |
 
 null
 
@@ -516,181 +516,181 @@ null
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets categories statistics
+Ottiene le statistiche delle categorie
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                    |
-| ---- | ------------------------------ |
-| 200  | Categories statistics received |
-| 400  | Validation failed              |
+| Codice | Descrizione                          |
+| ------ | ------------------------------------ |
+| 200    | Statistiche delle categorie ricevute |
+| 400    | Convalida fallita                    |
 
 ### /oapi/v1/stats/companies
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets companies statistics
+Ottiene le statistiche delle aziende
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                   |
-| ---- | ----------------------------- |
-| 200  | Companies statistics received |
-| 400  | Validation failed             |
+| Codice | Descrizione                        |
+| ------ | ---------------------------------- |
+| 200    | Statistiche delle aziende ricevute |
+| 400    | Convalida fallita                  |
 
 ### /oapi/v1/stats/companies/detailed
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets detailed companies statistics
+Ottiene le statistiche dettagliate delle aziende
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
-| cursor             | query      | Pagination cursor                     | No       | string     |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
+| cursor             | query      | Cursore d'impaginazione            | No           | string     |
 
-##### Responses
+##### Risposte
 
-| Code | Description                            |
-| ---- | -------------------------------------- |
-| 200  | Detailed companies statistics received |
-| 400  | Validation failed                      |
+| Codice | Descrizione                                    |
+| ------ | ---------------------------------------------- |
+| 200    | Statistiche dettagliate delle aziende ricevute |
+| 400    | Convalida fallita                              |
 
 ### /oapi/v1/stats/countries
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets countries statistics
+Ottiene le statistiche dei paesi
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                   |
-| ---- | ----------------------------- |
-| 200  | Countries statistics received |
-| 400  | Validation failed             |
+| Codice | Descrizione                    |
+| ------ | ------------------------------ |
+| 200    | Statistiche dei paesi ricevute |
+| 400    | Convalida fallita              |
 
 ### /oapi/v1/stats/devices
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets devices statistics
+Ottiene le statistiche dei dispositivi
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | Devices statistics received |
-| 400  | Validation failed           |
+| Codice | Descrizione                          |
+| ------ | ------------------------------------ |
+| 200    | Statistiche dei dispositivi ricevute |
+| 400    | Convalida fallita                    |
 
 ### /oapi/v1/stats/domains
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets domains statistics
+Ottiene le statistiche dei domini
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description                 |
-| ---- | --------------------------- |
-| 200  | Domains statistics received |
-| 400  | Validation failed           |
+| Codice | Descrizione                     |
+| ------ | ------------------------------- |
+| 200    | Statistiche dei domini ricevute |
+| 400    | Convalida fallita               |
 
 ### /oapi/v1/stats/time
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Gets time statistics
+Ottiene le statistiche del periodo
 
-##### Parameters
+##### Parametri
 
-| Name               | Located in | Description                           | Required | Schema     |
-| ------------------ | ---------- | ------------------------------------- | -------- | ---------- |
-| time_from_millis | query      | Time from in milliseconds (inclusive) | Yes      | long       |
-| time_to_millis   | query      | Time to in milliseconds (inclusive)   | Yes      | long       |
-| devices            | query      | Filter by devices                     | No       | [ string ] |
-| countries          | query      | Filter by countries                   | No       | [ string ] |
+| Nome               | Situato in | Descrizione                        | Obbligatorio | Tipo       |
+| ------------------ | ---------- | ---------------------------------- | ------------ | ---------- |
+| time_from_millis | query      | Tempo da in millisecondi (incluso) | Sì           | long       |
+| time_to_millis   | query      | Tempo a in millisecondi (incluso)  | Sì           | long       |
+| devices            | query      | Filtra per dispositivi             | No           | [ string ] |
+| countries          | query      | Filtra per paesi                   | No           | [ string ] |
 
-##### Responses
+##### Risposte
 
-| Code | Description              |
-| ---- | ------------------------ |
-| 200  | Time statistics received |
-| 400  | Validation failed        |
+| Codice | Descrizione                      |
+| ------ | -------------------------------- |
+| 200    | Statistiche del periodo ricevute |
+| 400    | Convalida fallita                |
 
 ### /oapi/v1/web_services
 
 #### GET
 
-##### Summary
+##### Riepilogo
 
-Lists web services
+Elenca i servizi web
 
-##### Responses
+##### Risposte
 
-| Code | Description          |
-| ---- | -------------------- |
-| 200  | List of web-services |
+| Codice | Descrizione           |
+| ------ | --------------------- |
+| 200    | Elenco di servizi web |

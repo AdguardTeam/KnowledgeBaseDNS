@@ -5,7 +5,7 @@ sidebar_position: 2
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örneği için [`config.dist.yml`][dist] dosyasına bakın.
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
@@ -20,25 +20,25 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. Aşağıdaki özelliklere sahiptir:
+`cache` nesnesi, DNS sorgulama sonuçlarının önbelleğe alınmasını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: DNS sonuçlarının önbelleğe alınıp alınmayacağını belirtir.
 
   **Örnek:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: İnsan tarafından okunabilir veri boyutu olarak DNS sonuç önbelleğinin maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Örnek:** `128MB`
+  **Örnek:** `128 MB`
 
-- `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. It must be greater than zero if `enabled` is `true`.
+- `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Örnek:** `4MB`
+  **Örnek:** `4 MB`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. Aşağıdaki özelliklere sahiptir:
+`server` nesnesi, gelen isteklerin işlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: Dinlenecek bağlantı noktalarına sahip adres kümesi.
 
   **Özellik örneği:**
 
@@ -62,29 +62,29 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: Önyükleme DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
-  **Örnek:** `2s`
+  **Örnek:** `2 s`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. Aşağıdaki özelliklere sahiptir:
+`upstream` nesnesi, isteklerin fiili çözümlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`: Grubun adına göre anahtarlanan üst kaynak sunucular kümesi. Aşağıdaki alanlara sahiptir:
 
-  - `address`: The upstream server’s address.
+  - `address`: Yukarı akış sunucusunun adresi.
 
-    **Example:** `'8.8.8.8:53'`
+    **Örnek:** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: İsteğin eşleştirileceği kriterlerin listesi. Her giriş aşağıdaki özellikleri içerebilir:
 
     - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
 
-      **Example:** `'mycompany.local'`
+      **Örnek:** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. Alt ağ maskesinin dışında önemli bitler bulunmamalıdır.
 
-      **Example:** `'192.0.2.0/24'`
+      **Örnek:** `'192.0.2.0/24'`
 
     :::note Not
 
@@ -108,17 +108,17 @@ The `upstream` object configures the actual resolving of requests. Aşağıdaki 
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Diğer gruplar arasında eşleşme olmadığında `default` grubu kullanılacaktır. Özel IP adresleri için PTR isteklerini çözmek için `private` grup kullanılacaktır. Bu tür sorgular, `private` grubu tanımlanmamışsa `NXDOMAIN` ile yanıtlanacaktır.
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`: İnsan tarafından okunabilir bir süre olarak üst kaynak sunucu DNS istekleri için zaman aşımı.
 
   **Örnek:** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. Aşağıdaki özelliklere sahiptir:
+`fallback` nesnesi, arıza durumunda DNS sunucusunun davranışını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: Asıl [üst kaynak sunucu](#dns-upstream) yanıt veremediğinde kullanılacak sunucuların listesi.
 
   **Özellik örneği:**
 
@@ -127,23 +127,23 @@ The `fallback` object configures the behavior of the DNS server in case of failu
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: Yedek DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
   **Örnek:** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. Aşağıdaki özelliklere sahiptir:
+`debug` nesnesi hata ayıklama özelliklerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıdaki özelliklere sahiptir:
+Pprof` nesnesi [`pprof\`][pkg-pprof] HTTP işleyicilerini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: localhost üzerinde hata ayıklama HTTP istekleri için dinlenecek bağlantı noktası.
 
   **Örnek:** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Hata ayıklama profilinin etkin olup olmadığını belirtir.
 
   **Örnek:** `true`
 
@@ -153,23 +153,23 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıda
 
 `log` nesnesi günlüğe kaydını yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `output`: The output to which logs are written.
+- `output`: Günlüklerin yazılacağı çıktı.
 
   :::note Not
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Sistem günlüğüne yazılan günlük girdileri `text` biçimindedir (aşağıya bakın) ve sistem zaman damgasını kullanır.
 
   :::
 
   Olası değerler:
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog`, Linux için syslog ve Windows için Olay Görüntüleyicisi olan platforma özgü sistem günlüğünün kullanıldığı anlamına gelir.
 
-  - `stdout` for standard output stream.
+  - Standart çıktı akışı için `stdout`.
 
-  - `stderr` for standard error stream.
+  - Standart hata akışı için `stderr`.
 
-  - Absolute path to the log file.
+  - Günlük dosyasının mutlak yolu.
 
   **Örnek:** `/home/user/logs`
 
@@ -211,6 +211,6 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. Aşağıda
 
   **Örnek:** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`: Günlüğün daha bilgilendirici olup olmayacağını belirtir.
 
   **Örnek:** `false`

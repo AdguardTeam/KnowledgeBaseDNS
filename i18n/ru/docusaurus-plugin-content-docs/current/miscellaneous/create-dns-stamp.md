@@ -1,60 +1,64 @@
-# How to create your own DNS stamp for Secure DNS
+- - -
+title: How to create your own DNS stamp for Secure DNS
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+sidebar_position: 4
+- - -
 
-Secure DNS usually uses `tls://`, `https://` or `quic://` URLs. This is sufficient for most users and is the recommended way.
+В этой инструкции рассказывается о том, как создать собственную DNS-метку (DNS stamp) для шифрованного DNS. Шифрованный DNS — это сервис, который улучшает конфиденциальность и безопасность в интернете через шифрование DNS-запросов. Таким образом злоумышленники не смогут перехватить ваши DNS-запросы.
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+В шифрованном DNS обычно используются URL-адреса `tls://`, `https://` или `quic://`. Этого достаточно для большинства пользователей, и мы рекомендуем использовать именно их.
 
-## Introduction to DNS stamps
+Однако, если вам нужна дополнительная безопасность, например заведомо известные IP-адреса серверов и закрепление сертификата по хешу, вы можете создать собственную DNS-метку.
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+## Коротко о DNS-метках
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+DNS-метки (DNS stamps) — это короткие строки, в которых содержится вся необходимая информация для подключения к шифрованному DNS-серверу. Они упрощают процесс настройки шифрованного DNS, поскольку пользователю не нужно вручную вводить все эти данные.
 
-## Choosing the protocol
+DNS-метки позволяют настраивать, помимо обычных URL-адресов, другие параметры шифрованного DNS. В частности, они позволяют указывать жёстко заданные адреса серверов, использовать хеширование сертификатов и так далее. Поэтому DNS-метки — это универсальный и более надёжный вариант настройки шифрованного DNS.
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, and `DNS-over-TLS (DoT)` and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+## Выбор протокола
 
-## Creating a DNS stamp
+Типы шифрованного DNS включают в себя `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` и некоторые другие. Выбор одного из этих протоколов зависит от контекста, в котором вы будете их использовать.
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+## Создание DNS-метки
 
-2. Depending on the chosen protocol, select the corresponding protocol from the dropdown menu (DoH, DoT, or DoQ).
+1. Откройте [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-3. Fill in the necessary fields:
-    - **IP address**: Enter the IP address of the DNS server. If you are using the DoT or DoQ protocol, make sure that you have specified the appropriate port as well.
+2. В зависимости от выбранного протокола выберите соответствующий протокол из раскрывающегося меню (DoH, DoT или DoQ).
 
-    :::note
-
-    This field is optional and should be used with caution: using this option may disrupt the Internet on IPv6-only networks.
-
-
-:::
-    - **Hashes**: Enter the SHA256 digest of one of the TBS certificates found in the validation chain. If the DNS server you are using provides a ready-made hash, find and copy it. Otherwise, you can obtain it by following the instructions in the [*Obtaining the Certificate Hash*](#obtaining-the-certificate-hash) section.
+3. Заполните необходимые поля:
+    - **IP address**: Введите IP-адрес DNS-сервера. Если вы используете протокол DoT или DoQ, убедитесь, что вы также указали соответствующий порт.
 
     :::note
 
-    This field is optional
+    Это поле необязательное, и его следует заполнять с осторожностью: использование этого параметра может привести к нарушению работы интернета в сетях, поддерживающих только IPv6.
+
+
+:::
+    - **Hashes**: Введите SHA256-дайджест одного из сертификатов TBS, найденных в цепочке проверки. Если используемый вами DNS-сервер предоставляет готовый хеш, найдите и скопируйте его. Иначе вы можете получить его, следуя инструкциям в разделе [*Получение хеша сертификата*](#obtaining-the-certificate-hash).
+
+    :::note
+
+    Это поле необязательно
 
 
 :::
 
-    - **Host name**: Enter the host name of the DNS server. This field is used for server name verification in DoT and DoQ protocols.
+    - **Host name**: введите имя хоста DNS-сервера. Это поле используется для проверки имени сервера в протоколах DoT и DoQ.
 
-    - For **DoH**:
-      - **Path**: Enter the path for performing DoH requests. This is usually `"/dns-query"`, but your provider may provide a different path.
+    - Для **DoH**:
+      - **Path**: введите путь для выполнения DoH-запросов. Обычно это `"/dns-query"`, но ваш провайдер может указать другой путь.
 
-    -     For **DoT and DoQ**:
-      - There are usually no specific fields for these protocols in this tool. Just make sure the port specified in the resolver address is the correct port.
+    -     Для **DoT и DoQ**:
+      - Обычно в этом инструменте нет специальных полей для этих протоколов. Убедитесь, что порт, указанный в адресе резолвера, введён правильно.
 
-    - In the **Properties** section, you can check the relevant properties if they are known and applicable to your DNS server.
+    - В разделе **Properties** вы можете проверить соответствующие свойства, если они известны и применимы к вашему DNS-серверу.
 
-4. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+4. Ваша метка будет сгенерирована автоматически, и вы увидите ее в поле **Метка**.
 
-### Obtaining the certificate hash
+### Получение хеша сертификата
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+Чтобы заполнить поле **Hashes of the server's certificate**, можно воспользоваться следующей командой, заменив `<IP_ADDRESS>`, `<PORT>` и `<SERVER_NAME>` на соответствующие значения для вашего DNS-сервера:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -62,36 +66,36 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+Результат команды хеширования может меняться со временем по мере обновления сертификата сервера. Поэтому, если ваша DNS-метка внезапно перестанет работать, вам может потребоваться пересчитать хеш сертификата и сгенерировать новую метку. Если регулярно обновлять DNS-метки, шифрованный DNS будет работать непрерывно и надёжно.
 
 :::
 
-## Using the DNS stamp
+## Использование DNS-метки
 
-You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+Теперь у вас есть собственная DNS-метка, которую можно использовать для настройки шифрованного DNS. Эту метку можно ввести в AdGuard и AdGuard VPN для повышения конфиденциальности и безопасности в интернете.
 
-## Example of creating a DNS stamp
+## Пример создания DNS-метки
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+Разберем пример создания метки для AdGuard DNS с помощью DoT:
 
-1. Open the [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
+1. Откройте [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
-2. Select the DNS-over-TLS (DoT) protocol.
+2. Выберите протокол DNS-over-TLS (DoT).
 
-3. Fill in the following fields:
+3. Заполните следующие поля:
 
-    - **IP address**: Enter the IP address and port of the DNS server. In this case, it's `94.140.14.14:853`.
+    - **IP-адрес**: введите IP-адрес и порт DNS-сервера. В данном случае это `94.140.14.14:853`.
 
-    - **Host name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    - **Host name**: введите имя хоста DNS-сервера. В данном случае это `dns.adguard-dns.com`.
 
-    - **Hashes**: Execute the command
+    - **Hashes**: Выполните команду
 
     ```bash
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server's certificate into the field.
+    Результат: `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Вставьте этот хеш SHA256 сертификата сервера в поле.
 
-4. Leave the Properties section blank.
+4. Оставьте раздел «Свойства» пустым.
 
-5. Your stamp will be automatically generated and you will see it in the **Stamp** field.
+5. Ваша метка будет сгенерирована автоматически, и вы увидите ее в поле **Stamp**.

@@ -35,7 +35,7 @@ Zjišťuje limity účtu
 
 ##### Shrnutí
 
-Seznamy přidělených vyhrazených adres IPv4
+Seznam vyhrazených adres IPv4
 
 ##### Odezvy
 
@@ -47,7 +47,7 @@ Seznamy přidělených vyhrazených adres IPv4
 
 ##### Shrnutí
 
-Přiděluje nové vyhrazené IPv4
+Přiděluje nové IPv4
 
 ##### Odezvy
 

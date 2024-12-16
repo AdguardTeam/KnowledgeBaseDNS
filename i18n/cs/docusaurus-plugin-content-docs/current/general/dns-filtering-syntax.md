@@ -257,6 +257,8 @@ Modifikátor odpovědi `dnsrewrite` umožňuje nahradit obsah odpovědi na DNS p
 
 **Pravidla s modifikátorem odezvy `dnsrewrite` mají vyšší prioritu než ostatní pravidla v AdGuard Home.**
 
+Odezvy na všechny požadavky na hostitele vyhovující pravidlu `dnsrewrite` budou nahrazeny. Část odpovědí náhradní odezvy bude obsahovat pouze RR, které odpovídají typu dotazu požadavku, a případně RR CNAME. Všimněte si, že to znamená, že odezvy na některé požadavky mohou být prázdné (`NODATA`), pokud hostitel odpovídá pravidlu `dnsrewrite`.
+
 Zkrácená syntaxe je:
 
 ```none

@@ -1,4 +1,8 @@
-# Sådan opretter eget DNS-stempel til Sikker DNS
+- - -
+title: Sådan opretter et eget DNS-stempel til Sikker DNS
+
+sidebar_position: 4
+- - -
 
 Denne guide viser dig, hvordan et eget DNS-stempel til sikker DNS oprettes. Sikker DNS er en tjeneste, der forbedrer internetsikkerhed og fortrolighed ved at kryptere DNS-forespørgslerne. Dette forhindrer forespørgslerne i at blive opsnappet eller manipuleret af ondsindede aktører.
 
@@ -14,7 +18,7 @@ DNS-stempler muliggør tilpasning af Sikker DNS-indstillinger ud over de sædvan
 
 ## Valg af protokol
 
-Typer af Sikker DNS inkluderer `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Valget af en af disse protokoller afhænger af brugskonteksten.
+Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Valget af en af disse protokoller afhænger af brugskonteksten.
 
 ## Oprettelse af et DNS-stempel
 

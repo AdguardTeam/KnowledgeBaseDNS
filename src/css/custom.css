@@ -21,7 +21,7 @@
 }
 
 [data-theme="dark"]:root {
-  --ifm-toc-border-color: #D93C8A;
+  --ifm-toc-border-color: #5b5b5b;
 }
 
 .docusaurus-highlight-code-line {
@@ -38,7 +38,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .container img {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
   display: block;
 }
 
@@ -94,13 +93,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .footer__item {
-  max-width: 165px;
+  max-width: 210px;
   font-size: 13px;
 }
 
 .footer__link-item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
   font-size: 13px;
-  line-height: 2.4;
 }
 
 .footer__link-item svg {

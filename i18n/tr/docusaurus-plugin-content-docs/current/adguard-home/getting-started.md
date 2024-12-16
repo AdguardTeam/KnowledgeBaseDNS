@@ -80,7 +80,7 @@ http://[::1]:3000 adresine gidin
 
 Orada ilk yapılandırma sihirbazından geçeceksiniz.
 
-![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
+![AdGuard Home ağ arayüzü seçim ekranı](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
 ![AdGuard Home kullanıcı oluşturma ekranı](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 
@@ -156,7 +156,7 @@ AdGuard Home paketini Web API'sini kullanmaya gerek kalmadan güncellemek için 
 
 Bu kurulum, ev yönlendiricinize bağlı tüm cihazları otomatik olarak kapsar ve her birini elle yapılandırmanız gerekmez.
 
-1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan http://192.168.0.1/ veya http://192.168.1.1/ gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
+1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan <http://192.168.0.1/> veya <http://192.168.1.1/> gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
 
 2. DHCP/DNS ayarlarını bulun. Her biri bir ila üç basamaklı dört gruba bölünmüş iki veya üç sayı kümesine izin veren bir alanın yanındaki DNS harflerini arayın.
 
@@ -244,7 +244,7 @@ dns:
 
 Süper kullanıcı ayrıcalıkları gerektirmemek için bağlantı noktasını 1024'ün üzerinde herhangi bir değerle değiştirebilirsiniz.
 
-## Limitations {#limitations}
+## Kısıtlamalar {#limitations}
 
 Bazı dosya sistemleri, istatistik sisteminin gerektirdiği `mmap(2)` sistem çağrısını desteklemez. Ayrıca bkz. \[sorun 1188].
 

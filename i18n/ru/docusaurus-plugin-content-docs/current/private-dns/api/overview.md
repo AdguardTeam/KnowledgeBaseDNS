@@ -16,7 +16,7 @@ AdGuard DNS предоставляет REST API, который вы может�
 
 ### Генерация токена доступа
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+Сделайте POST-запрос с указанными параметрами по следующему URL, чтобы сгенерировать `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -55,7 +55,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Генерация токена доступа через продлеваемый токен
 
-Токены доступа имеют ограниченное время действия. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Токены доступа имеют ограниченное время действия. После истечения этого срока ваше приложение должно использовать `продлеваемый токен` для генерации нового `токена доступа`.
 
 Сделайте следующий POST-запрос с указанными параметрами, чтобы получить новый токен доступа:
 
@@ -101,23 +101,23 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:------------------------------------------------- |
 | **refresh_token** | `Продлеваемый токен`, который должен быть сброшен |
 
-### Authorization endpoint
+### Конечная точка авторизации
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+> Чтобы получить доступ к этой конечной точке, вам необходимо связаться с нами по адресу **devteam@adguard.com**. Пожалуйста, опишите причину и случаи использования этой конечной точки, а также укажите URI перенаправления. После одобрения вы получите уникальный идентификатор клиента, который следует использовать для параметра **client_id**.
 
-The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+Конечная точка **/oapi/v1/oauth_authorize** используется для взаимодействия с владельцем ресурса и получения разрешения на доступ к защищённому ресурсу.
 
-The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+Сервис перенаправляет вас в AdGuard для аутентификации (если вы ещё не вошли в систему), а затем обратно в приложение.
 
-The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
+Параметры запроса конечной точки **/oapi/v1/oauth_authorize**:
 
-| Параметр          | Описание                                                                                                                                                       |
-|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **response_type** | Tells the authorization server which grant to execute                                                                                                          |
-| **client_id**     | The ID of the OAuth client that asks for authorization                                                                                                         |
-| **redirect_uri**  | Contains a URL. A successful response from this endpoint results in a redirect to this URL                                                                     |
-| **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
-| **aid**           | Affiliate identifier                                                                                                                                           |
+| Параметр          | Описание                                                                                                                                                 |
+|:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **response_type** | Сообщает серверу авторизации, какой грант следует выполнить                                                                                              |
+| **client_id**     | Идентификатор клиента OAuth, который запрашивает авторизацию                                                                                             |
+| **redirect_uri**  | Содержит URL-адрес. Успешный ответ от этой конечной точки приводит к перенаправлению на этот URL                                                         |
+| **state**         | Непрозрачное значение, используемое в целях безопасности. Если этот параметр установлен в запросе, он возвращается приложению как часть **redirect_uri** |
+| **aid**           | Идентификатор партнёра                                                                                                                                   |
 
 Например:
 
@@ -125,11 +125,11 @@ The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
+Чтобы сообщить серверу авторизации, какой тип разрешения использовать, параметр запроса **response_type** используется следующим образом:
 
-- For the Implicit grant, use **response_type=token** to include an access token.
+- Для неявного разрешения используйте **response_type=token**, чтобы включить токен доступа.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+Успешный ответ — **302 Found**, который запускает перенаправление на параметр запроса **redirect_uri**. Параметры ответа встраиваются в компонент фрагмента (часть после `#`) параметра **redirect_uri** в заголовке **Локация**.
 
 Например:
 
@@ -140,7 +140,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### Получение доступа к API
 
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
+После того как токен доступа и продлеваемый токен сгенерированы, получить доступ к API можно, указав токен доступа в заголовке.
 
 - Имя заголовка должно быть `Authorization`
 - Значение заголовка должно быть `Bearer {access_token}`
@@ -149,21 +149,21 @@ Once the access and the refresh tokens are generated, API calls can be made by p
 
 ### Руководство по API
 
-Please see the methods reference [here](reference.md).
+Перейдите по [этой ссылке](reference.md), чтобы ознакомиться с руководством по методам API.
 
 ### Спецификация OpenAPI
 
 Спецификация OpenAPI доступна по адресу [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-Вы можете использовать другие инструменты для просмотра списка доступных методов API. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+Вы можете использовать другие инструменты для просмотра списка доступных методов API. Например, вы можете открыть этот файл в [https://editor.swagger.io/][swagger].
 
-### Changelog
+### История версий
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+Полный список изменений AdGuard DNS API можно найти [на этой странице](private-dns/api/changelog.md).
 
 ## Обратная связь
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Если вы хотите расширить этот API, напишите нам по адресу `devteam@adguard.com` и расскажите, что вы хотите добавить.
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

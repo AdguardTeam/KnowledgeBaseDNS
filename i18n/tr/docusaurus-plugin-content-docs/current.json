@@ -38,5 +38,37 @@
   "sidebar.sidebar.category.AdGuard DNS Client": {
     "message": "AdGuard DNS İstemcisi",
     "description": "The label for category AdGuard DNS Client in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.How to connect devices": {
+    "message": "Cihazlar nasıl bağlanır",
+    "description": "The label for category How to connect devices in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Mobile and desktop": {
+    "message": "Mobil ve masaüstü",
+    "description": "The label for category Mobile and desktop in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Routers": {
+    "message": "Yönlendiriciler",
+    "description": "The label for category Routers in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Game consoles": {
+    "message": "Oyun konsolları",
+    "description": "The label for category Game consoles in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Other options": {
+    "message": "Diğer seçenekler",
+    "description": "The label for category Other options in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Server and settings": {
+    "message": "Sunucu ve ayarlar",
+    "description": "The label for category Server and settings in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.How to set up filtering": {
+    "message": "Filtreleme nasıl kurulur",
+    "description": "The label for category How to set up filtering in sidebar sidebar"
+  },
+  "sidebar.sidebar.category.Statistics and Query log": {
+    "message": "İstatistik ve Sorgu günlüğü",
+    "description": "The label for category Statistics and Query log in sidebar sidebar"
   }
 }

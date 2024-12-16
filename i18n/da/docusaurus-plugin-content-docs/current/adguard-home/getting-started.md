@@ -156,7 +156,7 @@ For at opdatere AdGuard Home-pakken uden at skulle bruge Web API, eksekvér:
 
 Denne opsætning dækker automatisk alle enheder tilsluttet hjemmerouteren uden behov for manuelt at skulle opsætte nogen enhed.
 
-1. Åbn præferencerne for routeren. Disse kan normalt tilgås med en webbrowser via en URL, såsom http://192.168.0.1/ eller http://192.168.1.1/. Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
+1. Åbn præferencerne for routeren. Disse kan normalt tilgås med en webbrowser via en URL, såsom <http://192.168.0.1/> eller <http://192.168.1.1/>. Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
 
 2. Find DHCP/DNS-indstillingerne. Se efter bogstaverne DNS ved siden af et felt, der tillader to eller tre sæt tal, hver opdelt i fire grupper med et til tre cifre.
 

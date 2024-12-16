@@ -23,6 +23,26 @@ Met AdGuard DNS kun je een specifiek gecodeerd protocol gebruiken: DNSCrypt. Hie
 
 DoH en DoT zijn moderne, veilige DNS-protocollen die steeds populairder worden en in de nabije toekomst de industriestandaarden zullen worden. Beide zijn betrouwbaarder dan DNSCrypt en beide worden ondersteund door AdGuard DNS.
 
+#### JSON API voor DNS
+
+AdGuard DNS biedt ook een JSON API voor DNS. Het is mogelijk om een DNS-antwoord in JSON te krijgen door het volgende te typen:
+
+```text
+curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
+```
+
+Voor gedetailleerde documentatie, zie [Google's gids over JSON API voor DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Het verkrijgen van een DNS-respons in JSON werkt op dezelfde manier met AdGuard DNS.
+
+:::note
+
+In tegenstelling tot Google DNS ondersteunt AdGuard DNS geen waarden voor `edns_client_subnet` en `Comment` in respons-JSON's.
+
+:::
+
 ### DNS-over-QUIC (DoQ)
 
 [DNS-over-QUIC is een nieuw DNS-encryptieprotocol](https://adguard.com/blog/dns-over-quic.html) en AdGuard DNS is de eerste publieke oplossing die dit ondersteunt. In tegenstelling tot DoH en DoT gebruikt het QUIC als transportprotocol en brengt het DNS eindelijk terug naar zijn roots: het werkt via UDP. Het biedt alle goede dingen die QUIC te bieden heeft: kant-en-klare encryptie, kortere verbindingstijden, betere prestaties wanneer datapakketten verloren gaan. Bovendien wordt QUIC verondersteld een protocol op transportniveau te zijn en zijn er geen risico's op lekken van metagegevens die bij DoH zouden kunnen optreden.
+
+### Snelheidslimiet
+
+DNS-ratelimiting is een techniek die wordt gebruikt om de hoeveelheid verkeer die een DNS-server binnen een specifieke tijdsperiode kan verwerken te reguleren. We bieden de optie om de standaardlimiet voor Team- en Enterprise-abonnementen van AdGuard DNS te verhogen. Voor meer informatie kunt je [het gerelateerde artikel lezen](/private-dns/server-and-settings/rate-limit.md).

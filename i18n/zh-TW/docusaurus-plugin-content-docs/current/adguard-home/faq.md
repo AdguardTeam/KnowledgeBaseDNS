@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: 常見問答集
 sidebar_position: 3
 ---
 

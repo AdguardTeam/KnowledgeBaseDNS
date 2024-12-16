@@ -35,7 +35,7 @@ Henter kontokvoter
 
 ##### Resumé
 
-Oplister alle tilgængelige dedikerede IPv4-adresser
+Oplister dedikerede IPv4-adresser
 
 ##### Svar
 
@@ -47,7 +47,7 @@ Oplister alle tilgængelige dedikerede IPv4-adresser
 
 ##### Resumé
 
-Tildeler ny dedikeret IPv4-adresse
+Tildeler ny IPv4
 
 ##### Svar
 

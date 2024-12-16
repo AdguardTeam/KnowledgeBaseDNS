@@ -1,11 +1,11 @@
 ---
-title: Configuration file
+title: Файл конфигурации
 sidebar_position: 2
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Полный пример конфигурационного файла [YAML][yaml] с комментариями смотрите в файле [`config.dist.yml`][dist].
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
@@ -16,31 +16,31 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of the DNS server. It has the following properties:
+Объект `dns` настраивает поведение DNS-сервера. Он обладает следующими свойствами:
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. It has the following properties:
+Объект `cache` настраивает кеширование результатов запросов к DNS. Он обладает следующими свойствами:
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: следует ли кешировать результаты DNS.
 
-  **Example:** `true`
+  **Пример:** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: максимальный размер кеша результатов DNS в виде удобочитаемых данных. Он должен быть больше нуля, если `enabled` равно `true`.
 
-  **Example:** `128MB`
+  **Пример:** `128 МБ`
 
-- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: максимальный размер кеша результатов DNS для каждого настроенного адреса клиента или подсети в виде удобочитаемых данных. Он должен быть больше нуля, если `enabled` равно `true`.
 
-  **Example:** `4MB`
+  **Пример:** `4 МБ`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. It has the following properties:
+Объект `server` настраивает обработку входящих запросов. Он обладает следующими свойствами:
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: набор адресов с портами для прослушивания.
 
-  **Property example:**
+  **Пример свойства:**
 
   ```yaml
   'listen_addresses':
@@ -50,11 +50,11 @@ The `server` object configures the handling of incoming requests. It has the fol
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
+Объект `bootstrap` настраивает разрешение адресов серверов [upstream](#dns-upstream). Он обладает следующими свойствами:
 
-- `servers`: The list of servers to resolve the hostnames of upstream servers.
+- `серверы`: список серверов для разрешения имён хостов upstream-серверов.
 
-  **Property example:**
+  **Пример свойства:**
 
   ```yaml
   'servers':
@@ -62,37 +62,37 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
       - address: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: время ожидания для bootstrap DNS-запросов.
 
-  **Example:** `2s`
+  **Пример:** `2 с`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. It has the following properties:
+Объект `upstream` настраивает фактическое разрешение запросов. Он обладает следующими свойствами:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`: набор upstream-серверов, связанных с именем группы. Он содержит следующие поля:
 
-  - `address`: The upstream server’s address.
+  - `address`: адрес upstream-сервера.
 
-    **Example:** `'8.8.8.8:53'`
+    **Пример:** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: список критериев для сопоставления запроса. Каждая запись может содержать следующие свойства:
 
-    - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
+    - `question_domain`: домен или суффикс домена, для разрешения которого должен использоваться набор upstream-серверов.
 
-      **Example:** `'mycompany.local'`
+      **Пример:** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: адрес клиента или подсеть адресов клиента, с которых набор upstream-серверов должен разрешать запросы. В нём не должно быть значащих битов за пределами маски подсети.
 
-      **Example:** `'192.0.2.0/24'`
+      **Пример:** `'192.0.2.0/24'`
 
     :::note
 
-    Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+    Свойства, указанные в одной записи, объединяются с помощью логического AND. Записи объединяются логическим OR.
 
     :::
 
-    **Property example:**
+    **Пример свойства:**
 
     ```yaml
     'match':
@@ -104,113 +104,113 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` должно содержать как минимум одну запись с именем `default` и, опционально, одну запись с именем `private`, у обеих записей не должно быть свойства `match`.
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Группа `default` будет использоваться, если нет совпадений среди других групп. Группа `private` будет использоваться для разрешения PTR-запросов для частных IP-адресов. На такие запросы будет получен ответ `NXDOMAIN`, если не определена группа `private`.
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`: время ожидания для upstream DNS-запросов.
 
-  **Example:** `2s`
+  **Пример:** `2 с`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
+Объект `fallback` настраивает поведение DNS-сервера в случае сбоя. Он обладает следующими свойствами:
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: список серверов, которые будут использоваться после того, как фактический [upstream](#dns-upstream) не смог ответить.
 
-  **Property example:**
+  **Пример свойства:**
 
   ```yaml
   'servers':
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: время ожидания для fallback DNS-запросов.
 
-  **Example:** `2s`
+  **Пример:** `2 с`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. It has the following properties:
+Объект `debug` настраивает функции отладки. Он обладает следующими свойствами:
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
+Объект `pprof` настраивает HTTP-обработчики [`pprof`][pkg-pprof]. Он обладает следующими свойствами:
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: порт для прослушивания отладочных HTTP-запросов на localhost.
 
-  **Example:** `6060`
+  **Пример:** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: включено или нет профилирование отладки.
 
-  **Example:** `true`
+  **Пример:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+Объект `log` настраивает ведение журнала. Он обладает следующими свойствами:
 
-- `output`: The output to which logs are written.
+- 'output': куда записываются логи.
 
   :::note
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Записываются в системный журнал в текстовом формате (см. ниже) и используют системную временную метку.
 
   :::
 
-  Possible values:
+  Возможные значения:
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog` означает, что используется системный журнал, специфичный для конкретной платформы: syslog для Linux и Event Log для Windows.
 
-  - `stdout` for standard output stream.
+  - `stdout` для стандартного потока вывода.
 
-  - `stderr` for standard error stream.
+  - `stderr` для стандартного потока ошибок.
 
-  - Absolute path to the log file.
+  - Абсолютный путь к файлу журнала.
 
-  **Example:** `/home/user/logs`
+  **Пример:** `/home/user/logs`
 
-  **Example:** `C:\Users\user\logs.txt`
+  **Пример:** `C:\Users\user\logs.txt`
 
-  **Example:** `syslog`
+  **Пример:** `syslog`
 
-- `format`: Specifies the format of the log entries.
+- `format`: определяет формат записей журнала.
 
-  Possible values:
+  Возможные значения:
 
-  - `default`: A simple format. Пример:
+  - `default`: простой формат. Пример:
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. Пример:
+  - 'json': структурированный формат JSON. Пример:
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Пример:
+  - `jsonhybrid`: то же, что `json`, но с ограниченным количеством полей. Пример:
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Пример:
+  - `text`: структурированный текстовый формат. Пример:
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53
     ```
 
-  **Example:** `default`
+  **Пример:** `default`
 
-- `timestamp`: Specifies whether to include a timestamp in the log entries.
+- `timestamp`: указывает, включать ли временную метку в записях журнала.
 
-  **Example:** `false`
+  **Пример:** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`: указывает, должен ли журнал быть более информативным.
 
-  **Example:** `false`
+  **Пример:** `false`

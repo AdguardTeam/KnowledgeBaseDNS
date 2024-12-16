@@ -11,15 +11,15 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Эта статья содержит документацию для [AdGuard DNS API](private-dns/api/overview.md). Полный список изменений AdGuard DNS API можно найти [на этой странице](private-dns/api/changelog.md).
 
-## Current Version: 1.9
+## Текущая версия: 1.9
 
 ### /oapi/v1/account/limits
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает лимиты аккаунта
 
@@ -33,34 +33,34 @@ This article contains documentation for [AdGuard DNS API](private-dns/api/overvi
 
 #### GET
 
-##### Summary
+##### Что делает
 
-Lists allocated dedicated IPv4 addresses
+Перечисляет выделенные IPv4-адреса
 
 ##### Ответы
 
-| Код | Описание                         |
-| --- | -------------------------------- |
-| 200 | List of dedicated IPv4 addresses |
+| Код | Описание                       |
+| --- | ------------------------------ |
+| 200 | Список выделенных IPv4-адресов |
 
 #### POST
 
-##### Summary
+##### Что делает
 
-Allocates new dedicated IPv4
+Выделяет новый IPv4
 
 ##### Ответы
 
-| Код | Описание                               |
-| --- | -------------------------------------- |
-| 200 | New IPv4 successfully allocated        |
-| 429 | Dedicated IPv4 count reached the limit |
+| Код | Описание                                    |
+| --- | ------------------------------------------- |
+| 200 | Новый IPv4 успешно выделен                  |
+| 429 | Количество выделенных IPv4 достигло предела |
 
 ### /oapi/v1/devices
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Перечисляет устройства
 
@@ -72,7 +72,7 @@ Allocates new dedicated IPv4
 
 #### POST
 
-##### Summary
+##### Что делает
 
 Создаёт новое устройство
 
@@ -88,7 +88,7 @@ Allocates new dedicated IPv4
 
 #### DELETE
 
-##### Summary
+##### Что делает
 
 Удаляет устройство
 
@@ -107,7 +107,7 @@ Allocates new dedicated IPv4
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает существующее устройство по ID
 
@@ -126,7 +126,7 @@ Allocates new dedicated IPv4
 
 #### PUT
 
-##### Summary
+##### Что делает
 
 Обновляет существующее устройство
 
@@ -148,9 +148,9 @@ Allocates new dedicated IPv4
 
 #### GET
 
-##### Summary
+##### Что делает
 
-List dedicated IPv4 and IPv6 addresses for a device
+Список выделенных адресов IPv4 и IPv6 для устройства
 
 ##### Параметры
 
@@ -160,17 +160,17 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Ответы
 
-| Код | Описание                |
-| --- | ----------------------- |
-| 200 | Dedicated IPv4 and IPv6 |
+| Код | Описание               |
+| --- | ---------------------- |
+| 200 | Выделенные IPv4 и IPv6 |
 
 ### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
 
 #### DELETE
 
-##### Summary
+##### Что делает
 
-Unlink dedicated IPv4 from the device
+Отвязать выделенный IPv4 от устройства
 
 ##### Параметры
 
@@ -180,16 +180,16 @@ Unlink dedicated IPv4 from the device
 
 ##### Ответы
 
-| Код | Описание                                             |
-| --- | ---------------------------------------------------- |
-| 200 | Dedicated IPv4 successfully unlinked from the device |
-| 404 | Device or address not found                          |
+| Код | Описание                                      |
+| --- | --------------------------------------------- |
+| 200 | Выделенный IPv4 успешно отвязан от устройства |
+| 404 | Устройство или адрес не найдены               |
 
 #### POST
 
-##### Summary
+##### Что делает
 
-Link dedicated IPv4 to the device
+Привязать выделенный IPv4 к устройству
 
 ##### Параметры
 
@@ -199,18 +199,18 @@ Link dedicated IPv4 to the device
 
 ##### Ответы
 
-| Код | Описание                                         |
-| --- | ------------------------------------------------ |
-| 200 | Dedicated IPv4 successfully linked to the device |
-| 400 | Ошибка проверки                                  |
-| 404 | Device or address not found                      |
-| 429 | Linked dedicated IPv4 count reached the limit    |
+| Код | Описание                                                |
+| --- | ------------------------------------------------------- |
+| 200 | Выделенный IPv4 успешно привязан к устройству           |
+| 400 | Ошибка проверки                                         |
+| 404 | Устройство или адрес не найдены                         |
+| 429 | Количество привязанных выделенных IPv4 достигло предела |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает файл DNS-over-HTTPS .mobileconfig.
 
@@ -233,9 +233,9 @@ Link dedicated IPv4 to the device
 
 #### PUT
 
-##### Summary
+##### Что делает
 
-Generate and set new DNS-over-HTTPS password
+Создайте и установите новый пароль DNS-over-HTTPS
 
 ##### Параметры
 
@@ -245,16 +245,16 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Ответы
 
-| Код | Описание                                   |
-| --- | ------------------------------------------ |
-| 200 | DNS-over-HTTPS password successfully reset |
-| 404 | Устройство не найдено                      |
+| Код | Описание                              |
+| --- | ------------------------------------- |
+| 200 | Пароль DNS-over-HTTPS успешно сброшен |
+| 404 | Устройство не найдено                 |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает файл DNS-over-TLS .mobileconfig.
 
@@ -277,7 +277,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### PUT
 
-##### Summary
+##### Что делает
 
 Обновляет настройки устройства
 
@@ -299,13 +299,13 @@ Generate and set new DNS-over-HTTPS password
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Перечисляет DNS-серверы, принадлежащие пользователю.
 
 ##### Описание
 
-Перечисляет DNS-серверы, принадлежащие пользователю. By default there is at least one default server.
+Перечисляет DNS-серверы, принадлежащие пользователю. По умолчанию есть как минимум один сервер.
 
 ##### Ответы
 
@@ -315,7 +315,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### POST
 
-##### Summary
+##### Что делает
 
 Создаёт новый DNS-сервер
 
@@ -335,13 +335,13 @@ Generate and set new DNS-over-HTTPS password
 
 #### DELETE
 
-##### Summary
+##### Что делает
 
 Удаляет DNS-сервер
 
 ##### Описание
 
-Удаляет DNS-сервер. Все устройства, подключённые к этому DNS-серверу, будут перемещены на DNS-сервер по умолчанию. Deleting the default DNS server is forbidden.
+Удаляет DNS-сервер. Все устройства, подключённые к этому DNS-серверу, будут перемещены на DNS-сервер по умолчанию. Удалять DNS-сервер по умолчанию запрещено.
 
 ##### Параметры
 
@@ -358,7 +358,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает существующий DNS-сервер по ID
 
@@ -377,7 +377,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### PUT
 
-##### Summary
+##### Что делает
 
 Обновляет существующий DNS-сервер
 
@@ -399,7 +399,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### PUT
 
-##### Summary
+##### Что делает
 
 Обновляет настройки DNS-сервера
 
@@ -421,7 +421,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает списки фильтров
 
@@ -435,7 +435,7 @@ Generate and set new DNS-over-HTTPS password
 
 #### POST
 
-##### Summary
+##### Что делает
 
 Генерирует токен доступа и продлеваемый токен
 
@@ -453,7 +453,7 @@ null
 
 #### DELETE
 
-##### Summary
+##### Что делает
 
 Очищает журнал запросов
 
@@ -465,7 +465,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает журнал запросов
 
@@ -486,15 +486,15 @@ null
 
 ##### Ответы
 
-| Код | Описание  |
-| --- | --------- |
-| 200 | Query log |
+| Код | Описание        |
+| --- | --------------- |
+| 200 | Журнал запросов |
 
 ### /oapi/v1/revoke_token
 
 #### POST
 
-##### Summary
+##### Что делает
 
 Отзывает продлеваемый токен
 
@@ -516,7 +516,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику категорий
 
@@ -540,7 +540,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику компаний
 
@@ -564,7 +564,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает подробную статистику компаний
 
@@ -589,7 +589,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику по странам
 
@@ -613,7 +613,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику по устройствам
 
@@ -637,7 +637,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику по доменам
 
@@ -661,7 +661,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Получает статистику по времени
 
@@ -685,7 +685,7 @@ null
 
 #### GET
 
-##### Summary
+##### Что делает
 
 Перечисляет веб-службы
 

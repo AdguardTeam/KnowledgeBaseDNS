@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-`main` branch is published automatically to [https://adguardteam.github.io/KnowledgeBaseDNS/](https://adguardteam.github.io/KnowledgeBaseDNS/).
+`master` branch is published automatically to https://kb-dns.pages.dev/.
 
 ## How to contribute
 
@@ -15,7 +15,7 @@ You can help by contributing to the Knowledge Base, all details are in [this art
 First of all, you need to install the following:
 
 - [git](https://github.com/git-guides/install-git)
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+- [pnpm](https://pnpm.io/installation)
 
 Second, clone this repo to your local computer:
 
@@ -25,23 +25,23 @@ Alternatively, you can use the [Github app](https://desktop.github.com/) to do t
 
 Then you should open Terminal on your computer and navigate to the directory where you cloned this repo and run this command to install the local dependencies:
 
-- `yarn install`
+- `pnpm install`
 
 ### Lint markdown
 
  This command lints the markdown and outputs any errors to the console:
 
-- `yarn lint:md`
+- `pnpm lint:md`
 
  Some of errors can be fixed automatically:
 
-- `yarn lint:md --fix`
+- `pnpm lint:md --fix`
 
  VSCode users can install the [markdownlint extension][vscode-markdownlint] to see the errors in the editor.
 
 ### Run it locally
 
-- `yarn start`
+- `pnpm start`
 
 This command [lints markdown syntax](#lint-markdown),
 and if there is no markdownlint errors starts a local development server and opens up a browser window.
@@ -49,7 +49,7 @@ Most changes are reflected live without having to restart the server.
 
 ## How to build
 
-- `yarn build`
+- `pnpm build`
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
@@ -59,8 +59,8 @@ Translations are not pushed to the repo and prepared on-the-fly (`i18n` folder i
 
 Here's how you can debug translations locally.
 
-1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
-2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
+1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" pnpm run crowdin download`
+2. Run Docusaurus with the language of your choice: `pnpm run start -- --locale de`
 
 ## How to generate DNS stamps
 

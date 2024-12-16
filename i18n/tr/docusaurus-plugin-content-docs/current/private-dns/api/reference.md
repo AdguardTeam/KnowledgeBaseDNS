@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
-## Güncel Sürüm: 1.9
+## Current version: 1.9
 
 ### /oapi/v1/account/limits
 
@@ -35,7 +35,7 @@ Hesap limitlerini alır
 
 ##### Özet
 
-Tahsis edilmiş özel IPv4 adreslerini listeler
+Özel IPv4 adreslerini listeler
 
 ##### Yanıtlar
 
@@ -47,7 +47,7 @@ Tahsis edilmiş özel IPv4 adreslerini listeler
 
 ##### Özet
 
-Allocates new dedicated IPv4
+Yeni IPv4 tahsis eder
 
 ##### Yanıtlar
 
@@ -199,12 +199,12 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Yanıtlar
 
-| Kod | Açıklama                                      |
-| --- | --------------------------------------------- |
-| 200 | Özel IPv4 başarıyla cihaza bağlandı           |
-| 400 | Doğrulama başarısız                           |
-| 404 | Cihaz veya adres bulunamadı                   |
-| 429 | Linked dedicated IPv4 count reached the limit |
+| Kod | Açıklama                            |
+| --- | ----------------------------------- |
+| 200 | Özel IPv4 başarıyla cihaza bağlandı |
+| 400 | Doğrulama başarısız                 |
+| 404 | Cihaz veya adres bulunamadı         |
+| 429 | Özel IPv4 sayısı limite ulaştı      |
 
 ### /oapi/v1/devices/{device_id}/doh.mobileconfig
 
@@ -309,9 +309,9 @@ Kullanıcıya ait DNS sunucularını listeler. Varsayılan olarak en az bir vars
 
 ##### Yanıtlar
 
-| Kod | Açıklama            |
-| --- | ------------------- |
-| 200 | List of DNS servers |
+| Kod | Açıklama                  |
+| --- | ------------------------- |
+| 200 | DNS sunucularının listesi |
 
 #### POST
 
@@ -427,9 +427,9 @@ Filtre listelerini alır
 
 ##### Yanıtlar
 
-| Kod | Açıklama        |
-| --- | --------------- |
-| 200 | List of filters |
+| Kod | Açıklama            |
+| --- | ------------------- |
+| 200 | Filtrelerin listesi |
 
 ### /oapi/v1/oauth_token
 

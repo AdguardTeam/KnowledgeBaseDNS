@@ -125,7 +125,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` değiştiriciler arasındaki sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`][] değiştiricisidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1`, [`client`][] değiştiricisidir ve değeri `127.0.0.1`'dir. `,` değiştiriciler arasındaki sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`][] değiştiricisidir.
 
 **NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 
@@ -256,6 +256,8 @@ ANSWERS:
 `dnsrewrite` yanıt değiştiricisi, eşleşen ana bilgisayarlar için DNS isteğine verilen yanıtın içeriğinin değiştirilmesine olanak tanır. AdGuard Home'daki bu değiştiricinin tüm kurallarda çalıştığını, ancak Özel AdGuard DNS'de ise yalnızca özel kurallarda çalıştığını unutmayın.
 
 **`dnsrewrite` yanıt değiştiricisine sahip kurallar, AdGuard Home'daki diğer kurallardan daha yüksek önceliğe sahiptir.**
+
+`dnsrewrite` kuralına uyan bir ana makineye yönelik tüm isteklere verilen yanıtlar değiştirilecektir. Değiştirme yanıtının yanıt bölümü yalnızca isteğin sorgu türüyle eşleşen RR'leri ve muhtemelen CNAME RR'leri içerir. Bu, ana makinenin `dnsrewrite` kuralıyla eşleşmesi durumunda bazı isteklere verilen yanıtların boş (`NODATA`) olabileceği anlamına gelir.
 
 Kısa yol söz dizimi şöyledir:
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## AdGuard DNS İstemcisi nedir?
 
-A cross-platform lightweight DNS client for [AdGuard DNS][agdns]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+[AdGuard DNS][agdns] için platformlar arası hafif bir DNS istemcisi. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [agdns]: https://adguard-dns.io
 
@@ -35,21 +35,21 @@ Desteklenen CPU mimarileri:
 
 ### Unix benzeri işletim sistemleri {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. `.tar.gz` or `.zip` arşivini [sürümler sayfasından][releases] indirin ve açın.
 
    :::dikkat
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   macOS'ta, genel olarak yüklenen daemonların `root` tarafından sahiplenilmesi çok önemlidir (bkz. [`launchd` dokümantasyonu][launchd-requirements]), bu nedenle `AdGuardDNSClient` çalıştırılabilir dosyası `/Applications/` dizinine veya alt dizinine yerleştirilmelidir.
 
    :::
 
-2. Install it as a service by running:
+2. Çalıştırarak bir hizmet olarak yükleyin:
 
    ```sh
    ./AdGuardDNSClient -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. `config.yaml` yapılandırma dosyasını düzenleyin.
 
 4. Hizmeti başlatın:
 
@@ -78,46 +78,46 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ## Komut satırı seçenekleri {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili değeri geçersiz kılar.
 
 ### Yardım {#opts-help}
 
-Option `-h` makes AdGuard DNS Client print out a help message to standard output and exit with a success status-code.
+`-h` seçeneği AdGuard DNS İstemcisinin standart çıktıya bir yardım mesajı yazdırmasını ve başarılı durum koduyla çıkmasını sağlar.
 
-### Service {#opts-service}
+### Hizmet {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Olası değerler:
+`-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
 
-- `install`: installs AdGuard DNS Client as a service
+- `install`: AdGuard DNS İstemcisini bir hizmet olarak yükler
 - `restart`: çalışan AdGuard DNS İstemcisi hizmetini yeniden başlatır
-- `start`: starts the installed AdGuard DNS Client service
-- `status`: shows the status of the installed AdGuard DNS Client service
-- `stop`: stops the running AdGuard DNS Client
-- `uninstall`: uninstalls AdGuard DNS Client service
+- `start`: yüklü AdGuard DNS İstemcisi hizmetini başlatır
+- `status`: kurulu AdGuard DNS İstemcisi hizmetinin durumunu gösterir
+- `stop`: çalışan AdGuard DNS İstemcisini durdurur
+- `uninstall`: AdGuard DNS İstemcisi hizmetini kaldırır
 
 ### Verbose {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+`-v` seçeneği ayrıntılı günlük çıktısını etkinleştirir.
 
-### Version {#opts-version}
+### Sürüm {#opts-version}
 
-Option `--version` makes AdGuard DNS Client print out the version of the `AdGuardDNSClient` executable to standard output and exit with a success status-code.
+`--version` seçeneği, AdGuard DNS İstemcisinin `AdGuardDNSClient` çalıştırılabilir sürümünü standart çıktıya yazdırmasını ve bir başarı durum koduyla çıkmasını sağlar.
 
-## Configuration {#conf}
+## Yapılandırma {#conf}
 
-### File {#conf-file}
+### Dosya {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+YAML yapılandırma dosyası [kendi makalesinde][conf] açıklanmıştır ve ayrıca `config.dist.yaml` örnek yapılandırma dosyası da bulunmaktadır.  Bazı yapılandırma parametreleri [ortam][env] kullanılarak da geçersiz kılınabilir.
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Çıkış kodları {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Farklı hata koşullarında görünebilecek birkaç farklı çıkış kodu vardır:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: Başarıyla tamamlandı ve çıkıldı, hata yok.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: Dâhili hata, büyük olasılıkla yanlış yapılandırma.
 
-- `2`: Bad command-line argument or value.
+- `2`: Hatalı komut satırı argümanı veya değeri.
