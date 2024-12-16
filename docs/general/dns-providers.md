@@ -354,9 +354,13 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 | DNS-over-TLS | Provider: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` and IPv6: `2001:610:1:40ba:145:100:185:16`  | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
 ### FutureDNS
+
 [FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that blocks ads, trackers, and malware while prioritizing user security and anonymity. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
 
-##### Germany
+#### Servers
+
+#### Germany
+
 | Protocol                | Address                                         |                |
 |-------------------------|-------------------------------------------------|----------------|
 | DNS, IPv4               | `162.55.52.228`                                 | [Add to AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=) |
@@ -365,7 +369,8 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 | DNS-over-TLS            | `tls://dns.de.futuredns.eu.org`                  | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT) |
 | DNS-over-QUIC           | `quic://dns.de.futuredns.eu.org`                 | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ) |
 
-##### United States
+#### United States
+
 | Protocol                | Address                                         |                |
 |-------------------------|-------------------------------------------------|----------------|
 | DNS, IPv4               | `5.161.67.176`                                 | [Add to AdGuard](adguard:add_dns_server?address=5.161.67.176&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=5.161.67.176&name=) |
