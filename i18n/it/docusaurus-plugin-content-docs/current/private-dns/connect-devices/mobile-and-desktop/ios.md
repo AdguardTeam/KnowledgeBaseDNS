@@ -78,5 +78,5 @@ Se stai utilizzando una VPN, il profilo di configurazione verrà ignorato.
 
 Se preferisci non utilizzare software extra per configurare DNS, puoi optare per DNS non crittografato. Ci sono due opzioni: utilizzare IP collegati o IP dedicati.
 
-- [IP dedicate](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegate](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

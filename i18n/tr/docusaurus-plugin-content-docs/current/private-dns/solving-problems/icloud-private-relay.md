@@ -25,7 +25,7 @@ Bu sorunu çözmek için cihazınızın ayarlarında AdGuard sitelerin IP adresi
 
     1. `adguard-dns.io` adresine gidin
 
-    1. Safari'de, **Görüntüle** → **Yeniden Yükle ve IP Adresini Göster** öğesini seçin
+    1. Safari'de, **Görüntü** → **Yeniden Yükle ve IP Adresini Göster** öğesini seçin
 
     1. `adguard.com` adresi için tekrarlayın
 

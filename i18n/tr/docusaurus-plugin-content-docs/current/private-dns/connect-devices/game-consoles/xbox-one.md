@@ -9,7 +9,7 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 [How to configure your router](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## AdGuard DNS'e bağlanma
 
 Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 

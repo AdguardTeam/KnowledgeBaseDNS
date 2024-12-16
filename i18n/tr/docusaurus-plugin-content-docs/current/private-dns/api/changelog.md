@@ -78,7 +78,7 @@ _16 Haziran 2023 tarihinde yayınlandı_
 
 ### Güvenli gezinti ayarları için model değiştirildi
 
-From:
+Şundan:
 
 ```json
 {
@@ -86,7 +86,7 @@ From:
 }
 ```
 
-To:
+Şuna:
 
 ```json
 {
@@ -100,7 +100,7 @@ burada `enabled` artık gruptaki tüm ayarları kontrol eder, `block_dangerous_d
 
 ### Sunucu ayarlarını kaydetme modeli değiştirildi
 
-From:
+Şundan:
 
 ```json
 {

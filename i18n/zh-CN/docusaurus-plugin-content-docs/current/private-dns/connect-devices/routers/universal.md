@@ -28,5 +28,5 @@ sidebar_position: 2
 
 5. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

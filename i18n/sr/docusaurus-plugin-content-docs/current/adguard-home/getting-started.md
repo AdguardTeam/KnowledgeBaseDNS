@@ -156,7 +156,7 @@ To update AdGuard Home package without the need to use Web API run:
 
 This setup will automatically cover all devices connected to your home router, and you won’t need to configure each of them manually.
 
-1. Open the preferences for your router. Usually, you can access it from your browser via a URL, such as http://192.168.0.1/ or http://192.168.1.1/. You may be prompted to enter a password. If you don’t remember it, you can often reset the password by pressing a button on the router itself, but be aware that if this procedure is chosen, you will probably lose the entire router configuration. If your router requires an app to set it up, please install the app on your phone or PC and use it to access the router’s settings.
+1. Open the preferences for your router. Usually, you can access it from your browser via a URL, such as <http://192.168.0.1/> or <http://192.168.1.1/>. You may be prompted to enter a password. If you don’t remember it, you can often reset the password by pressing a button on the router itself, but be aware that if this procedure is chosen, you will probably lose the entire router configuration. If your router requires an app to set it up, please install the app on your phone or PC and use it to access the router’s settings.
 
 2. Find the DHCP/DNS settings. Look for the DNS letters next to a field that allows two or three sets of numbers, each divided into four groups of one to three digits.
 

@@ -49,7 +49,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
    ![DNS sunucusu \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Aşağıya kaydırın ve _Özel DNS sunucusu ekle_ öğesine dokunun.
    ![DNS sunucusu ekle \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS servers adresses_ field in the app. Hangi seçeneği kullanacağınızdan emin değilseniz, DNS-over-HTTPS öğesini işaretleyin.
+7. Aşağıdaki DNS adreslerinden birini kopyalayıp uygulamada _DNS sunucu adresleri_ alanına yapıştırın. Hangi seçeneği kullanacağınızdan emin değilseniz, DNS-over-HTTPS öğesini işaretleyin.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Özel DNS sunucusu \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. _Kaydet ve seç_ öğesine dokunun.
@@ -58,7 +58,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Configure Private DNS manually
+## AdGuard DNS'i elle yapılandırma
 
 DNS sunucunuzu cihaz ayarlarınızdan yapılandırabilirsiniz. Android cihazların yalnızca DNS-over-TLS protokolünü desteklediğini lütfen unutmayın.
 
@@ -71,7 +71,7 @@ DNS sunucunuzu cihaz ayarlarınızdan yapılandırabilirsiniz. Android cihazlar�
    ![Özel DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
    Tamamlandı! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Configure plain DNS
+## Düz DNS'i yapılandırma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 

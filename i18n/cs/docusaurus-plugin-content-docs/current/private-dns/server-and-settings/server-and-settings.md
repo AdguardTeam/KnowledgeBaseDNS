@@ -3,7 +3,7 @@ title: Server a nastavení
 sidebar_position: 1
 ---
 
-## Co je to server a jak jej používat
+## Co je server a jak jej používat
 
 Při nastavování Soukromého AdGuard DNS se setkáte s pojmem _servery_.
 

@@ -73,7 +73,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Configure plain DNS
+## Düz DNS'i yapılandırma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 

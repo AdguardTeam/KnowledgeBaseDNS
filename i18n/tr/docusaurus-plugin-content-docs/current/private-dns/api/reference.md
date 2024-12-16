@@ -66,9 +66,9 @@ Cihazları listeler
 
 ##### Yanıtlar
 
-| Kod | Açıklama        |
-| --- | --------------- |
-| 200 | List of devices |
+| Kod | Açıklama           |
+| --- | ------------------ |
+| 200 | Cihazların listesi |
 
 #### POST
 
