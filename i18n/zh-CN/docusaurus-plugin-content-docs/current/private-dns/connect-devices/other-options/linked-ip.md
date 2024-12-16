@@ -13,9 +13,11 @@ sidebar_position: 3
 
 :::
 
-有时候，住宅 IP 地址可能已被设置，如果用户尝试连接到它，AdGuard DNS 将阻止连接。
-![关联 IPv4 地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-如果发生这种情况，请联系 [support@adguard-dns.io](mailto:support@adguard-dns.io) 支持，他们将帮助您完成正确的配置设置。
+Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+
+![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
+If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## 如何设置关联 IP
 
@@ -25,6 +27,7 @@ sidebar_position: 3
 2. 添加新设备或打开已连接设备的设置。
 3. 转到「_使用 DNS 服务器地址_」。
 4. 打开「_无加密的 DNS 服务器地址_」连接关联的 IP。
+
    ![关联 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## 动态 DNS：为什么有用
@@ -44,14 +47,21 @@ sidebar_position: 3
 ## 动态 DNS：如何设置
 
 1. 首先，需要检查您的路由器设置是否支持 DDNS：
+
    - 转到「_路由器设置_」→「_网络_」。
    - 找到 DDNS 或「_动态 DNS_」部分。
-   - 请验证设置确实受支持。 _以下是一个示例。 这可能会因用户的路由器而异_
-     ![DDNS 支持 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - 请验证设置确实受支持。 _This is just an example of what it may look like, the settings may vary depending on your router_
+
+   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. 使用像 [DynDNS](https://dyn.com/remote-access/)、[NO-IP](https://www.noip.com/) 或您喜欢的任何其他 DNS 提供商注册您的域名。
+
 3. 在路由器设置中输入域名并同步配置。
+
 4. 前往关联 IP 设置以连接地址，然后导航到「_高级设置_」并点击「_配置 DDNS_」。
+
 5. 输入您之前注册的域名，然后点击「_配置 DDNS_」。
+
    ![配置 DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 全部完成，DDNS 设置成功！

@@ -91,5 +91,5 @@ Use estas instruções se o seu roteador Keenetic não oferece suporte à config
 8. Salve as configurações.
 9. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

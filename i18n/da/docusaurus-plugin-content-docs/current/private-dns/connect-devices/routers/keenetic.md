@@ -14,7 +14,7 @@ Keenetic routere er kendt for deres stabilitet og fleksible opsætninger, og der
 5. Under _Værktøjer og tjenester_, vælg og installér DNS-over-HTTPS-proxy.
 6. Gå til _Menu_ → _Netværksregler_ → _Internetsikkerhed_.
 7. Gå til DNS-over-HTTPS-servere, og klik på Tilføj DNS-over-HTTPS server\*.
-8. Angiv URL'en på den private AdGuard DNS-server i feltet `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
+8. Angiv URL'en på Private AdGuard DNS-serveren i feltet `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
 9. Klik på _Gem_.
 
 ## Opsæt DNS-over-TLS
@@ -26,7 +26,7 @@ Keenetic routere er kendt for deres stabilitet og fleksible opsætninger, og der
 5. Under _Værktøjer og tjenester_, vælg og installér DNS-over-HTTPS-proxy.
 6. Gå til _Menu_ → _Netværksregler_ → _Internetsikkerhed_.
 7. Gå til DNS-over-HTTPS-servere, og klik på Tilføj DNS-over-HTTPS server\*.
-8. Angiv URL'en på den private AdGuard DNS-server i feltet `tls://*********.d.adguard-dns.com`.
+8. Angiv URL'en på Private AdGuard DNS-serveren i feltet `tls://*********.d.adguard-dns.com`.
 9. Klik på _Gem_.
 
 ## Brug routerens håndteringspanel

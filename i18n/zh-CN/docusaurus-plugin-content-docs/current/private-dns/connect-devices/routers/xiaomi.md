@@ -3,7 +3,7 @@ title: 小米
 sidebar_position: 11
 ---
 
-小米路由器有很多优势：信号稳定强大、网络安全、运行稳定、智能管理，同时用户可以将多达 64 台设备连接到本地 Wi-Fi 网络。
+Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
 有一个缺点，小米路由器不支持加密 DNS，但非常适合通过绑定 IP 地址设置 AdGuard DNS。
 
@@ -21,5 +21,5 @@ sidebar_position: 11
 6. 请保存设置。
 7. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

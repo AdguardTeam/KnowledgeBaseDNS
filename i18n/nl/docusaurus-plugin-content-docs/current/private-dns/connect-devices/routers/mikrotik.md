@@ -3,7 +3,7 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open source RouterOS operating system, which provides routing, wireless networking and firewall services for home and small office networks.
+MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
 
 ## Configure DNS-over-HTTPS
 
@@ -23,38 +23,42 @@ MikroTik routers use the open source RouterOS operating system, which provides r
      - `94.140.14.49`
      - `94.140.14.59`
    - Set _Allow Remote Requests_ to _Yes_ (this is crucial for DoH to function)
-   - In the _Use DoH server_ field, enter the URL of the private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Click _OK_
 4. Create Static DNS Records:
    - In the _DNS Settings_, click _Static_
    - Click _Add New_
-   - Set _Name_ to d.adguard-dns.com
-   - Set _Type_ to A
+   - Set _Name_ to `d.adguard-dns.com`
+   - Set _Type_ to `A`
    - Set _Address_ to `94.140.14.49`
-   - Set _TTL_ to 1d 00:00:00
+   - Set _TTL_ to `1d 00:00:00`
    - Repeat the process to create an identical entry, but with _Address_ set to `94.140.14.59`
 5. Disable Peer DNS on DHCP Client:
    - Go to _IP_ → _DHCP Client_
    - Double-click the client used for your Internet connection (usually on the WAN interface)
    - Uncheck _Use Peer DNS_
    - Click _OK_
-6. Link your IP.
-7. Test and verify:
+6. Test and verify:
    - You might need to reboot your MikroTik router for all changes to take effect
    - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
-## Use your router admin panel
+## My router does not support DNS-over-HTTPS
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
-1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
-2. Enter the administrator username (usually, it’s admin) and router password.
-3. Open _Webfig_ → _IP_ → _DNS_.
-4. Select _Servers_ and enter one of the following DNS server addresses.
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-5. Save the settings.
-6. Link your IP (or your dedicated IP if you have a Team subscription).
-
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Toegang tot je MikroTik-router:
+   - Open je webbrowser en ga naar het IP-adres van je router (meestal `192.168.88.1`)
+   - Als alternatief kun je Winbox gebruiken om verbinding te maken met je MikroTik-router
+   - Voer je beheerdersgebruikersnaam en wachtwoord in
+2. Configure Plain DNS:
+   - Ga naar _IP_ → _DNS_
+   - Bij _Servers_ voeg de volgende AdGuard DNS-servers toe:
+     - IPv4: `94.140.14.49` and `94.140.14.59`
+     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+     - Toegewezen IPv6: Privé AdGuard DNS ondersteunt toegewezen IPv6-adressen. Om ze te vinden, open je het Dashboard, klik je op _Instellingen_ naast je apparaat → _Standaard DNS-serveradressen_ → _Toegewezen IPv6-adressen_.
+   - Klik _OK_
+3. Disable Peer DNS on DHCP Client:
+   - Ga naar _IP_ → _DHCP Client_
+   - Dubbelklik op de client die wordt gebruikt voor je internetverbinding (meestal op de WAN-interface)
+   - Verwijder het vinkje bij _Peer DNS gebruiken_
+   - Klik _OK_

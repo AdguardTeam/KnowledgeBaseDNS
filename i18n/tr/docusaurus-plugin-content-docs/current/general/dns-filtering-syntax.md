@@ -472,7 +472,7 @@ Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-
 
 AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
 
-## Domains-only syntax {#domains-only-syntax}
+## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 
 Her satırda bir ad olacak şekilde basit bir alan adları listesi.
 

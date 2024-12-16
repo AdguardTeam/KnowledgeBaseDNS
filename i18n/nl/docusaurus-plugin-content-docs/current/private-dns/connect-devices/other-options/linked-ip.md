@@ -13,8 +13,10 @@ Een **residentieel IP-adres** wordt toegewezen aan een apparaat dat is verbonden
 
 :::
 
-Soms kan een residentieel IP-adres al in gebruik zijn, en als je probeert er mee te verbinden, zal AdGuard DNS de verbinding voorkomen.
+Soms is een IP-adres voor thuisgebruik al in gebruik. Als je verbinding probeert te maken met dit adres, blokkeert AdGuard DNS de verbinding.
+
 ![Gekoppeld IPv4-adres \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
 Mocht dat gebeuren, neem dan contact op met de ondersteuning via [support@adguard-dns.io](mailto:support@adguard-dns.io), dan helpen zij je met de juiste configuratie-instellingen.
 
 ## Hoe een gekoppeld IP-adres in te stellen
@@ -25,6 +27,7 @@ De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat
 2. Voeg een nieuw apparaat toe of open de instellingen van een eerder verbonden apparaat.
 3. Ga naar _DNS-serveradressen gebruiken_.
 4. Open _Gewone DNS-serveradressen_ en verbind het gekoppelde IP-adres.
+
    ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamische DNS: waarom het nuttig is
@@ -44,14 +47,21 @@ This way, you won’t have to manually update the associated IP address each tim
 ## Dynamic DNS: How to set it up
 
 1. First, you need to check if DDNS is supported by your router settings:
+
    - Go to _Router settings_ → _Network_
    - Locate the DDNS or the _Dynamic DNS_ section
-   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like. It may vary depending on your router_
-     ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like, the settings may vary depending on your router_
+
+   ![DDNS-ondersteund \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
+
 3. Enter the domain in your router settings and sync the configurations.
+
 4. Go to the Linked IP settings to connect the address, then navigate to _Advanced Settings_ and click _Configure DDNS_.
+
 5. Input the domain you registered earlier and click _Configure DDNS_.
+
    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you've successfully set up DDNS!

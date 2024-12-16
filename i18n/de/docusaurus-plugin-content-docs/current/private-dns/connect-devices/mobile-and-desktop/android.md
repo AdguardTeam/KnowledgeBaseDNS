@@ -49,7 +49,7 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
    ![DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Blättern Sie nach unten und tippen Sie auf _Benutzerdefinierten DNS-Server hinzufügen_.
    ![DNS-Server hinzufügen \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Kopieren Sie eine der folgenden DNS-Adressen und fügen Sie sie in das Feld _DNS-Serveradressen_ in der App ein. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
+7. Copy one of the following DNS addresses and paste it into the _DNS server adresses_ field in the app. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Benutzerdefinierter DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Tippen Sie auf _Speichern und auswählen_.
@@ -75,5 +75,5 @@ Sie können Ihren DNS-Server in den Geräteeinstellungen konfigurieren. Bitte be
 
 Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

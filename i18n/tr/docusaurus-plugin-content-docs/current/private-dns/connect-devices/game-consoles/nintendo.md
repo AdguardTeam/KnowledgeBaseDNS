@@ -15,7 +15,7 @@ New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Ninten
 
 :::
 
-## Connect AdGuard DNS
+## AdGuard DNS'e bağlanma
 
 Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 

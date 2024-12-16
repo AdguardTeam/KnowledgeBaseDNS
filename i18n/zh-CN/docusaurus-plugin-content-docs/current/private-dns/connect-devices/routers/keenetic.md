@@ -14,7 +14,7 @@ Keenetic 路由器以稳定性和灵活的配置而闻名，并且 Keenetic 路�
 5. 在「_实用程序和服务_」中，选择并安装 DNS-over-HTTPS 代理。
 6. 前往「_菜单_」→「_网络规则_」→「_互联网安全_」。
 7. 前往 DNS-over-HTTPS 服务器并点击「_添加 DNS-over-HTTPS 服务器_」。
-8. 在 `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` 字段中输入私有 AdGuard DNS 服务器的 URL。
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. 点击「_保存_」。
 
 ## 配置 DNS-over-TLS
@@ -26,7 +26,7 @@ Keenetic 路由器以稳定性和灵活的配置而闻名，并且 Keenetic 路�
 5. 在「_实用程序和服务_」中，选择并安装 DNS-over-HTTPS 代理。
 6. 前往「_菜单_」→「_网络规则_」→「_互联网安全_」。
 7. 前往 DNS-over-HTTPS 服务器并点击「_添加 DNS-over-HTTPS 服务器_」。
-8. 在 `tls://*********.d.adguard-dns.com` 字段中输入私有 AdGuard DNS 服务器的 URL。
+8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. 点击「_保存_」。
 
 ## 使用路由器管理面板
@@ -44,5 +44,5 @@ Keenetic 路由器以稳定性和灵活的配置而闻名，并且 Keenetic 路�
 7. 请保存设置。
 8. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

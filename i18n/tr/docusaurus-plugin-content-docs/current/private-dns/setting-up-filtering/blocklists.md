@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Engel listeleri, AdGuard DNS'in gizliliğinizi tehlikeye atabilecek reklamları ve içerikleri filtrelemek için kullandığı metin biçimindeki kurallar kümesidir. Genel olarak bir filtre, benzer odak noktasına sahip kurallardan oluşur. Örneğin, site dilleri için kurallar (Almanca veya Rusça filtreleri gibi) veya kimlik avı sitelerine karşı koruma sağlayan kurallar (Phishing URL Blocklist gibi) olabilir. Bu kuralları bir grup olarak kolayca etkinleştirebilir veya devre dışı bırakabilirsiniz.
 
-## Why they are useful
+## Neden faydalıdırlar
 
 Engel listeleri, filtreleme kurallarının esnek bir şekilde özelleştirilmesi için tasarlanmıştır. Örneğin, belirli bir dil bölgesindeki reklam alan adlarını engellemek, izleme veya reklam alan adlarından kurtulmak isteyebilirsiniz. İstediğiniz engel listelerini seçin ve filtrelemeyi isteğinize göre özelleştirin.
 
