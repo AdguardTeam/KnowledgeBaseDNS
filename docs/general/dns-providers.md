@@ -369,7 +369,7 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 | DNS-over-TLS            | `tls://dns.de.futuredns.eu.org`                  | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT) |
 | DNS-over-QUIC           | `quic://dns.de.futuredns.eu.org`                 | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ) |
 
-#### United States
+##### United States
 
 | Protocol                | Address                                         |                |
 |-------------------------|-------------------------------------------------|----------------|
