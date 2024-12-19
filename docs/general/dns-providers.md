@@ -359,7 +359,7 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 
 #### Servers
 
-#### Germany
+##### Germany
 
 | Protocol                | Address                                         |                |
 |-------------------------|-------------------------------------------------|----------------|
