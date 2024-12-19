@@ -355,7 +355,7 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that blocks ads, trackers, and malware while prioritizing user security and anonymity. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
+[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that blocks ads, trackers, and malware. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
 
 #### Servers
 
