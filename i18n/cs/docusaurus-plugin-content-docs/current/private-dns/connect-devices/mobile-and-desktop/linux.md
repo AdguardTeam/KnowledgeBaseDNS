@@ -102,6 +102,28 @@ Pokud se zobrazí oznámení, že nejste připojeni k AdGuard DNS, je port, na k
 
 :::
 
+## Použití EDNS (Rozšířený DNS)
+
+EDNS rozšiřuje protokol DNS a umožňuje přenášet další data většími pakety UDP. V AdGuard DNS umožňuje předávání DeviceID v běžném DNS pomocí dalšího parametru.
+
+DeviceID, osmimístný hexadecimální identifikátor (např. `1a2b3c4d`), pomáhá spojit požadavky DNS s konkrétními zařízeními. U šifrovaného DNS je toto ID součástí domény (např. `1a2b3c4d.d.adguard-dns.com`). U nešifrovaného DNS je k přenosu tohoto identifikátoru vyžadován EDNS.
+
+AdGuard DNS používá EDNS k získání DeviceID vyhledáním čísla `65074`. Pokud taková možnost existuje, načte z ní DeviceID. K tomu můžete v terminálu použít příkaz `dig`:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Zde je `65074` ID možnosti a `3031323334353637` je její hodnota v hexadecimálním formátu (DeviceID: `01234567`).
+
+Vše je hotovo! Mělo by se zobrazit DeviceID.
+
+:::note
+
+Příkaz `dig` je pouze příkladem, k provedení této akce můžete použít libovolný software DNS s možností přidání voleb EDNS.
+
+:::
+
 ## Použití běžného DNS
 
 Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy:

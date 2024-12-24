@@ -351,6 +351,21 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 | DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls.sinodun.com` IP-адрес: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls1.sinodun.com` IP-адрес: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.eu.org) — это ориентированный на конфиденциальность DNS-сервис, который ставит безопасность и анонимность пользователей на первое место. Он поддерживает как стандартные, так и зашифрованные DNS-протоколы, сохраняя при этом строгую политику отсутствия логов.
+
+#### Стандартный
+
+| Протокол             | Адрес                                        |                                                                                                                                                                                                                                       |
+| -------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `162.55.52.228`                              | [Добавить в AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [Добавить в AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [Добавить в AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
 #### Другие DNS-серверы с политикой без логов
 
 | Протокол           | Адрес                                                                                                                |                                                                                                                                                                                                                                             |
@@ -391,12 +406,13 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 
 [DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) — это защищающий конфиденциальность DNS-провайдер с многолетним опытом развития DNS-сервисов, который стремится обеспечить пользователей быстрым, точным и стабильным рекурсивным сервисом разрешения имён.
 
-| Протокол       | Адрес                       |                                                                                                                                                                                                 |
-| -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `119.29.29.29`              | [Добавить в AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Добавить в AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
-| DNS-over-HTTPS | `https://dns.pub/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
-| DNS-over-TLS   | `tls://dot.pub`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
+| Протокол       | Адрес                           |                                                                                                                                                                                                                 |
+| -------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `119.29.29.29`                  | [Добавить в AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                                         |
+| DNS, IPv6      | `2402:4e00::`                   | [Добавить в AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                           |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)                 |
+| DNS-over-HTTPS | `https://sm2.doh.pub/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.doh.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.dns.pub) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                                         |
 
 ### DNSWatchGO
 
@@ -616,7 +632,7 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                                     | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
 | DNS-over-TLS   | `tls://dns.quad9.net`                                                 | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net)                         |
 
-#### Unsecured
+#### Незащищённый
 
 У незащищённых DNS-серверов нет списков блокировки, DNSSEC или EDNS Сlient Subnet.
 
@@ -661,13 +677,13 @@ EDNS Client Subnet — это метод, который включает ком
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dns.rabbitdns.org/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.rabbitdns.org/dns-query&name=dns.rabbitdns.org) |
 
-#### Security-filtering
+#### Безопасный
 
 | Протокол       | Адрес                                      |                                                                                                                                                                                                                                                             |
 | -------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://security.rabbitdns.org/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://security.rabbitdns.org/dns-query&name=security.rabbitdns.org), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://security.rabbitdns.org/dns-query&name=security.rabbitdns.org) |
 
-#### Family-filtering
+#### Семейный
 
 | Протокол       | Адрес                                    |                                                                                                                                                                                                                                                     |
 | -------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -755,7 +771,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) защищает от кражи личных и финансовых данных. Помогает справиться с вирусами, программами-вымогателями и другими вредоносными программами.
 
-#### Private
+#### Приватный
 
 В «Приватном» режиме — только разрешение DNS.
 
@@ -766,7 +782,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS         | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Добавить в AdGuard](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
 | DNS-over-TLS — частный | Имя хоста: `tls://private.canadianshield.cira.ca` IP-адрес: `149.112.121.10` и IPv6: `2620:10A:80BB::10` | [Добавить в AdGuard](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
-#### Protected
+#### Защищённый
 
 В «Защищённом» режиме — защита от вредоносного ПО и фишинга.
 
@@ -844,7 +860,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [114DNS](https://www.114dns.com) — это профессиональный и надёжный DNS-сервис.
 
-#### Normal
+#### Обычный
 
 Блокирует рекламу и раздражающие сайты.
 
@@ -852,7 +868,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `114.114.114.114` и `114.114.115.115` | [Добавить в AdGuard](adguard:add_dns_server?address=114.114.114.114&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.114&name=) |
 
-#### Safe
+#### Безопасный
 
 Блокирует фишинговые, вредоносные и другие небезопасные сайты.
 
@@ -978,7 +994,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [Yandex.DNS](https://dns.yandex.com/) — это бесплатный рекурсивный DNS-сервис. Серверы Yandex.DNS расположены в России, странах СНГ и Западной Европы. Пользовательские запросы обрабатываются ближайшим дата-центром, что обеспечивает высокую скорость соединения.
 
-#### Basic
+#### Базовый
 
 В «Базовом» режиме трафик не фильтруется.
 
@@ -989,7 +1005,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`   | [Добавить в AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
 | DNS-over-TLS   | `tls://common.dot.dns.yandex.net`               | [Добавить в AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
-#### Safe
+#### Безопасный
 
 В «Безопасном» режиме обеспечивается защита от заражённых и мошеннических сайтов.
 
@@ -1021,7 +1037,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 
 [AhaDNS](https://ahadns.com/) — DNS-сервис без логирования и с блокировкой рекламы от провайдера Fredrik Pettersson.
 
-#### Netherlands
+#### Нидерланды
 
 | Протокол       | Адрес                                 |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1030,7 +1046,7 @@ ByteDance Public DNS — это бесплатный альтернативны�
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
 
-#### Los Angeles
+#### Лос-Анджелес
 
 | Протокол       | Адрес                                 |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1144,7 +1160,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
+[momou&#33; DNS](https://dns.momou.ch/) предоставляет DoH- и DoT-резолверы с тремя уровнями фильтрации
 
 #### Стандартный
 
@@ -1155,7 +1171,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 | DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
 | DNS-over-TLS   | `tls://dns.momou.ch`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
 
-#### Kids
+#### Детский
 
 Фильтр для детей, который также блокирует рекламу, трекеры и вредоносное ПО
 
@@ -1205,7 +1221,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 [Privacy-First DNS](https://tiarap.org/) блокирует больше 140 тысяч рекламных, трекинговых, вредоносных и фишинговых доменов. Без логирования и ECS, с валидацией DNSSEC, бесплатный!
 
-#### Singapore DNS Server
+#### Сингапурский DNS-сервер
 
 | Протокол       | Адрес                                                                             | Локация                                                                                                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1218,7 +1234,7 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                             | [Добавить в AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                              | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Japan DNS Server
+#### Японский DNS-сервер
 
 | Протокол       | Адрес                                                                           |                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1232,9 +1248,9 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) — это сервис, ориентированный на конфиденциальность, предоставляемый Sebastian Schmidt. Нет регистрации, проверка DNSSEC.
+[Seby DNS](https://dns.seby.io/) — это сервис Sebastian Schmidt, ориентированный на конфиденциальность. Нет логирования, проверка DNSSEC.
 
-#### DNS Server 1
+#### DNS-сервер 1
 
 | Протокол       | Адрес                                                             |                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1248,7 +1264,15 @@ Marbled Fennec Networks размещает DNS-резолверы, способ�
 
 | Протокол       | Адрес                                   |                                                                                                                                                                                                                                       |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.70.12.129`                         | [Add to AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                         |
-| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                         |
-| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                               |
+| DNS, IPv4      | `103.70.12.129`                         | [Добавить в AdGuard](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                 |
+| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Добавить в AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
+| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Добавить в AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
+### LaxrFar DNS
+
+[LaxrFar DNS](https://laxrfar.xyz/) — это DNS, который блокирует рекламу, защищает от вредоносного ПО и имеет строгую политику отсутствия логов.
+
+| Протокол  | Адрес           |                                                                                                                                                           |
+| --------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `23.176.184.32` | [Добавить в AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |

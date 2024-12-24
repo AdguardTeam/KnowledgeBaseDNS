@@ -65,7 +65,7 @@ Bu sunucuların her biri güvenli ve güvenilir bir bağlantı sağlar, ancak "S
 
 ### Ali DNS
 
-[Ali DNS](https://alidns.com/), İnternet kullanıcılarının çoğu için hızlı, kararlı ve güvenli DNS çözünürlüğü sağlamayı taahhüt eden ücretsiz bir özyinelemeli DNS hizmetidir. Kullanıcıları çeşitli saldırılardan ve tehditlerden korumak için AliGuard özelliğini içerir.
+[Ali DNS](https://alidns.com/), internet kullanıcılarının çoğu için hızlı, kararlı ve güvenli DNS çözünürlüğü sağlamayı taahhüt eden ücretsiz bir özyinelemeli DNS hizmetidir. Kullanıcıları çeşitli saldırılardan ve tehditlerden korumak için AliGuard özelliğini içerir.
 
 | Protokol       | Adres                                 |                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -351,6 +351,21 @@ Kimlik avı, spam ve kötü amaçlı alan adlarını engeller.
 | DNS-over-TLS | Sağlayıcı: `Surfnet` Ana makine adı: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` ve IPv6: `2001:610:1:40ba:145:100:185:15`  | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | Sağlayıcı: `Surfnet` Ana makine adı: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` ve IPv6: `2001:610:1:40ba:145:100:185:16` | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.eu.org), kullanıcı güvenliğini ve anonimliğini ön planda tutan, gizlilik odaklı bir DNS hizmetidir. Hem standart DNS'i hem de şifrelenmiş protokolleri desteklerken, katı bir kayıt tutmama politikasını sürdürür.
+
+#### Standard
+
+| Protokol             | Adres                                        |                                                                                                                                                                                                                               |
+| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `162.55.52.228`                              | [AdGuard'a ekle](adguard:add_dns_server?address=162.55.52.228&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [AdGuard'a ekle](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
 #### Günlük tutmamama politikasına sahip diğer DNS sunucuları
 
 | Protokol           | Adres                                                                                                                      |                                                                                                                                                                                                                                     |
@@ -391,12 +406,13 @@ Bu sunucular bazı günlük kaydı, kendinden imzalı sertifikalar kullanır vey
 
 [DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) is a privacy-friendly DNS provider with years of experience in domain name resolution services development, it aims to provide users more rapid, accurate and stable recursive resolution service.
 
-| Protokol       | Adres                       |                                                                                                                                                                                         |
-| -------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `119.29.29.29`              | [AdGuard'a ekle](adguard:add_dns_server?address=119.29.29.29&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [AdGuard'a ekle](adguard:add_dns_server?address=2402:4e00::&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
-| DNS-over-HTTPS | `https://dns.pub/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
-| DNS-over-TLS   | `tls://dot.pub`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
+| Protokol       | Adres                           |                                                                                                                                                                                                         |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `119.29.29.29`                  | [AdGuard'a ekle](adguard:add_dns_server?address=119.29.29.29&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                                         |
+| DNS, IPv6      | `2402:4e00::`                   | [AdGuard'a ekle](adguard:add_dns_server?address=2402:4e00::&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                           |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)                 |
+| DNS-over-HTTPS | `https://sm2.doh.pub/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.doh.pub), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.dns.pub) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                                         |
 
 ### DNSWatchGO
 
@@ -514,7 +530,7 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns), yerleşik güvenlik ve tehdit istihbaratı ile sitelere ve çevrimiçi uygulamalara hızlı ve güvenilir erişim sağlayan ücretsiz bir bulut tabanlı özyinelemeli DNS hizmetidir.
 
-#### Reliability & Performance 1
+#### Güvenilirlik ve Performans 1
 
 Bu sunucular, herhangi bir belirli kategoriyi engellemeden güvenilir ve hızlı DNS aramaları sağlar.
 
@@ -523,7 +539,7 @@ Bu sunucular, herhangi bir belirli kategoriyi engellemeden güvenilir ve hızlı
 | DNS, IPv4 | `156.154.70.1` ve `156.154.71.1`       | [AdGuard'a ekle](adguard:add_dns_server?address=156.154.70.1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=156.154.70.1&name=)       |
 | DNS, IPv6 | `2610:a1:1018::1` ve `2610:a1:1019::1` | [AdGuard'a ekle](adguard:add_dns_server?address=2610:a1:1018::1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2610:a1:1018::1&name=) |
 
-#### Reliability & Performance 2
+#### Güvenilirlik ve Performans 2
 
 Bu sunucular, belirli kategorileri engellemeden güvenilir ve hızlı DNS aramaları sağlar ve ayrıca NXDomain (var olmayan alan adı) yanıtlarının açılış sayfalarına yönlendirilmesini önler.
 
@@ -757,7 +773,7 @@ ByteDance Public DNS, Çin'de ByteDance tarafından sunulan ücretsiz bir altern
 
 #### Private
 
-"Özel" modda, yalnızca DNS çözümlemesi.
+"Private" modda, yalnızca DNS çözümlemesi.
 
 | Protokol               | Adres                                                                                                    |                                                                                                                                                                                                                                                                                     |
 | ---------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1144,7 +1160,7 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/), DoH ve DoT çözümleyicilerine üç filtreleme düzeyi sağlar
+[momou&#33; DNS](https://dns.momou.ch/), DoH ve DoT çözümleyicilerine üç filtreleme düzeyi sağlar
 
 #### Standard
 
@@ -1232,9 +1248,9 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük Tutmama, DNSSEC doğrulaması.
+[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük tutmama, DNSSEC doğrulaması.
 
-#### DNS Server 1
+#### DNS Sunucusu 1
 
 | Protokol       | Adres                                                       |                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1244,7 +1260,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS Server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
+[BlackMagicc DNS](https://bento.me/blackmagicc), Vietnam'da bulunan kişisel ve küçük ölçekli kullanım için tasarlanmış kişisel bir DNS Sunucusudur. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
 
 | Protokol       | Adres                                   |                                                                                                                                                                                                                               |
 | -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1252,3 +1268,11 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 | DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [AdGuard'a ekle](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
 | DNS-over-QUIC  | `quic://rx.techomespace.com`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
+### LaxrFar DNS
+
+[LaxrFar DNS](https://laxrfar.xyz/), reklam engelleme, gizlilik, kötü amaçlı yazılım korumasına odaklanan ve katı bir günlük tutmama politikasına sahip bir DNS'dir.
+
+| Protokol  | Adres           |                                                                                                                                                   |
+| --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `23.176.184.32` | [AdGuard'a ekle](adguard:add_dns_server?address=23.176.184.32&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=23.176.184.32&name=) |

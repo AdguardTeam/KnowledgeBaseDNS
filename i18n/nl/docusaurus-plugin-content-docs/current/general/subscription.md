@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Hoe een abonnement aan te schaffen {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). Je kunt betalen met Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay en UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Abonnementen kunnen op maandelijkse of jaarlijkse basis worden verlengd.
+AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). Je kunt betalen met Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay en UnionPay. Abonnementen kunnen op maandelijkse of jaarlijkse basis worden verlengd.
 
 Het persoonlijke abonnement is gratis voor betalende gebruikers van [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 

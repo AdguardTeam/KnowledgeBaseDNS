@@ -13,9 +13,11 @@ En **hjemme IP-adresse** tildeles en enhed, der er tilsluttet en privat ISP. Den
 
 :::
 
-Nogle gange kan en hjemme IP-adresse allerede være i brug, og forsøger man at tilslutte til den, vil AdGuard DNS forhindre forbindelsen.
+Nogle gange kan en hjemme IP-adresse allerede være i brug, og forsøges den tilsluttet, forhindres dette af AdGuard DNS.
+
 ![Linket IPv4-adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-Sker dette, kontakt venligst supporten via [support@adguard-dns.io](mailto:support@adguard-dns.io), og de vil assistere med de korrekte opsætningsindstillinger.
+
+Sker dette, kontakt da supporten via [support@adguard-dns.io](mailto:support@adguard-dns.io), der så vil assistere med de korrekte opsætningsindstillinger.
 
 ## Sådan opsættes linket IP
 
@@ -25,6 +27,7 @@ Den følgende vejledning forklarer, hvordan der forbindes til enheden via en **l
 2. Tilføj en ny enhed, eller åbn indstillingerne for en tidligere tilsluttet enhed.
 3. Gå til _Brug DNS-serveradresser_.
 4. Åbn _Almindelige DNS-serveradresser_ og tilslut den linkede IP.
+
    ![Linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamisk DNS: Hvorfor det er nyttigt
@@ -44,14 +47,21 @@ På denne måde behøver man ikke manuelt at opdatere den tilknyttede IP-adresse
 ## Dynamisk DNS: Sådan opsættes det
 
 1. Tjek først, om DDNS understøttes i routerindstillingerne:
+
    - Gå til _Routerindstillinger_ → _Netværk_
    - Find DDNS eller afsnittet _Dynamisk DNS_
-   - Gå til dette og bekræft, at indstillingerne faktisk understøttes. _Dette er blot et eksempel på, hvordan det kan se ud. Det kan variere afhængigt af routeren_
-     ![DDNS understøttet \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Gå til dette og bekræft, at indstillingerne faktisk understøttes. \*Dette er blot et eksempel på, hvordan det kan se ud, da indstillingerne kan variere fra router til router
+
+   ![DDNS-understøttet \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Registrér domænet hos en populær tjeneste, såsom [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) eller en anden foretrukken DDNS-udbyder.
+
 3. Angiv domænet i routerindstillingerne og synk opsætningerne.
+
 4. Gå til Linket IP-indstillinger for at tilslutte adressen, gå derefter til _Avancerede indstillinger_ og klik på _Opsæt DDNS_.
+
 5. Angiv det domæne, man tidligere registrerede, og klik på _Opsæt DDNS_.
+
    ![Opsæt DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Opsætningen af DDNS er hermed færdig!

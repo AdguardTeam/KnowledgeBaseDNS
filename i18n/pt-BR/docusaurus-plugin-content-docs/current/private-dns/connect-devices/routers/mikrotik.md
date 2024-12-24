@@ -3,7 +3,7 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-Roteadores MikroTik utilizam o sistema operacional RouterOS de código aberto, que fornece serviços de roteamento, rede sem fio e firewall para redes domésticas e de pequenos escritórios.
+MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
 
 ## Configuração do DNS-over-HTTPS
 
@@ -23,38 +23,42 @@ Roteadores MikroTik utilizam o sistema operacional RouterOS de código aberto, q
      - `94.140.14.49`
      - `94.140.14.59`
    - Defina _Permitir solicitações remotas_ para _Sim_ (isso é crucial para o funcionamento do DNS-over-HTTPS)
-   - No campo _Usar servidor DNS-over-HTTPS_, insira a URL do servidor privado do AdGuard DNS: `https://d.adguard-dns.com/dns-query/*******`
+   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
    - Clique em _OK_
 4. Crie registros DNS estáticos:
    - Nas _Configurações de DNS_, clique em _Estático_
    - Clique em _Adicionar novo_
-   - Defina _Name_ para d.adguard-dns.com
-   - Defina _Type_ como A
+   - Set _Name_ to `d.adguard-dns.com`
+   - Set _Type_ to `A`
    - Defina o _Endereço_ como `94.140.14.49`
-   - Defina o _TTL_ para 1d 00:00:00
+   - Set _TTL_ to `1d 00:00:00`
    - Repita o processo para criar uma entrada idêntica, mas com _Address_ definido como `94.140.14.59`
 5. Desative o Peer DNS no DHCP Client:
    - Vá para _IP_ → _DHCP Client_
    - Clique duas vezes no cliente usado para sua conexão de internet (geralmente na interface WAN)
    - Desmarque _Usar Peer DNS_
    - Clique em _OK_
-6. Vincule seu IP.
-7. Teste e verifique:
-   - Pode ser necessário reiniciar seu roteador MikroTik para que todas as alterações tenham efeito
-   - Limpe o cache DNS do seu navegador. Você pode usar uma ferramenta como [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) para verificar se as suas solicitações de DNS estão agora sendo roteadas pelo AdGuard
+6. Test and verify:
+   - You might need to reboot your MikroTik router for all changes to take effect
+   - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
-## Use o painel de controle do seu roteador
+## My router does not support DNS-over-HTTPS
 
-Use estas instruções se o seu roteador Keenetic não oferece suporte à configuração de DNS-over-HTTPS ou DNS-over-TLS:
+Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
-1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.1.1` ou `192.168.0.1`.
-2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
-3. Abra _Webfig_ → _IP_ → _DNS_.
-4. Selecione _Servidores_ e insira um dos seguintes endereços de servidor DNS.
-   - IPv4: `94.140.14.49` e `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
-5. Salve as configurações.
-6. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
-
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+1. Acesse seu roteador MikroTik:
+   - Abra seu navegador e acesse o endereço de IP do seu roteador (geralmente `192.168.88.1`)
+   - Alternativamente, você pode usar o Winbox para conectar-se ao seu roteador MikroTik
+   - Digite seu nome de usuário e senha de administrador
+2. Configure Plain DNS:
+   - Go to _IP_ → _DNS_
+   - In the _Servers_ section, add the following AdGuard DNS servers:
+     - IPv4: `94.140.14.49` e `94.140.14.59`
+     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+     - Dedicated IPv6: Private AdGuard DNS supports dedicated IPv6 addresses. To find them, open the Dashboard, click _Settings_ next to your device → _Plain DNS server addresses_ → _Dedicated IPv6 addresses_.
+   - Click _OK_
+3. Desative o Peer DNS no DHCP Client:
+   - Go to _IP_ → _DHCP Client_
+   - Clique duas vezes no cliente usado para sua conexão de internet (geralmente na interface WAN)
+   - Uncheck _Use Peer DNS_
+   - Click _OK_

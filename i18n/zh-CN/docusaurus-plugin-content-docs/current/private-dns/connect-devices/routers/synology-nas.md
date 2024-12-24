@@ -20,5 +20,5 @@ Synology NAS 路由器非常易于使用，可以组合成一个 Mesh 网络即�
 7. 请保存设置。
 8. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](private-dns/connect-devices/other-options/linked-ip.md)
