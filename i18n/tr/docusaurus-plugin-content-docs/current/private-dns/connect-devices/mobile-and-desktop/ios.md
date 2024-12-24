@@ -74,7 +74,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 4. _Yükle_ öğesine dokunun ve ekrandaki talimatları izleyin.
    ![Yükle \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step4.png)
 
-## Configure plain DNS
+## Düz DNS'i yapılandırma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçenek var: bağlı IP'ler veya özel IP'ler kullanmak.
 

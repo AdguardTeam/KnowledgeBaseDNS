@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## How to purchase a plan {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Ethereum, Litecoin, and Tether. Plans can be renewed on a monthly or annual basis.
+AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. Plans can be renewed on a monthly or annual basis.
 
 The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
 

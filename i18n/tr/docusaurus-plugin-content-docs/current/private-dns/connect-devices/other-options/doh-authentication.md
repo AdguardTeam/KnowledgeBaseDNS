@@ -3,7 +3,7 @@ title: Kimlik doğrulamalı DNS-over-HTTPS
 sidebar_position: 4
 ---
 
-## Why it is useful
+## Neden faydalıdır
 
 Kimlik doğrulamalı DNS-over-HTTPS, seçtiğiniz sunucuya erişmek için bir kullanıcı adı ve parola belirlemenize olanak tanır.
 

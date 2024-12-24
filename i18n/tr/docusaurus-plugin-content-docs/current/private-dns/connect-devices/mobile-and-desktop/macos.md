@@ -54,7 +54,7 @@ Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
 ## Yapılandırma profili kullanma
 
-A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
+Apple tarafından "konfigürasyon profili" olarak da adlandırılan macOS aygıt profili, iOS aygıtınıza elle yükleyebileceğiniz veya bir MDM çözümü kullanarak dağıtabileceğiniz sertifika imzalı bir XML dosyasıdır. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
 :::note Önemli
 
@@ -73,7 +73,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 
-## Configure plain DNS
+## Düz DNS'i yapılandırma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 

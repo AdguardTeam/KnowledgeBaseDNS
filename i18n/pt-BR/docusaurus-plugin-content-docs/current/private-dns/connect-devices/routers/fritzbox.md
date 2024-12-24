@@ -29,5 +29,5 @@ Use este guia se o seu roteador FritzBox não oferece suporte à configuração 
 6. Salve as configurações.
 7. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

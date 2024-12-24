@@ -16,8 +16,9 @@ DNS oran sınırlaması genellikle bir istemcinin (IP adresi) belirli bir süre 
 AdGuard DNS _Takım_ veya _Kurumsal_ planına aboneyseniz, daha yüksek bir oran sınırlaması talep edebilirsiniz. Bunu yapmak için, aşağıdaki talimatları izleyin:
 
 1. [DNS panosu] (https://adguard-dns.io/dashboard/) → _Hesap ayarları_ → _Oran sınırlaması_ öğesine gidin
+
 2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
 
-![Oran sınırlaması](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Oran sınırlaması](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Talebiniz 1-3 iş günü içerisinde incelenecektir. Değişiklikler hakkında sizinle e-posta yoluyla iletişime geçeceğiz
+3. Talebiniz 1–3 iş günü içerisinde incelenecektir. Değişiklikler hakkında sizinle e-posta yoluyla iletişime geçeceğiz

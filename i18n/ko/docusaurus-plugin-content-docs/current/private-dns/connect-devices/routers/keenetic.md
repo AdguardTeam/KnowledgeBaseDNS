@@ -14,7 +14,7 @@ Keenetic 라우터는 안정성과 유연한 환경 설정으로 잘 알려져 �
 5. **유틸리티 및 서비스**에서 DNS-over-HTTPS 프록시를 선택하고 설치합니다.
 6. **메뉴** → **네트워크 규칙** → **인터넷 보안**으로 이동합니다.
 7. DNS-over-HTTPS 서버로 이동하여 **DNS-over-HTTPS 서버 추가**를 클릭합니다.
-8. `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` 필드에 사설 AdGuard DNS 서버의 URL을 입력합니다.
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. **저장**을 클릭합니다.
 
 ## DNS-over-TLS 설정
@@ -26,7 +26,7 @@ Keenetic 라우터는 안정성과 유연한 환경 설정으로 잘 알려져 �
 5. **유틸리티 및 서비스**에서 DNS-over-HTTPS 프록시를 선택하고 설치합니다.
 6. **메뉴** → **네트워크 규칙** → **인터넷 보안**으로 이동합니다.
 7. DNS-over-HTTPS 서버로 이동하여 **DNS-over-HTTPS 서버 추가**를 클릭합니다.
-8. `tls://*********.d.adguard-dns.com` 필드에 사설 AdGuard DNS 서버의 URL을 입력합니다.
+8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. **저장**을 클릭합니다.
 
 ## 라우터 관리 패널 사용

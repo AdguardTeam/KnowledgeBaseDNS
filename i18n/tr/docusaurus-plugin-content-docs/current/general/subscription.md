@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Plan nasıl satın alınır {#purchase}
 
-AdGuard DNS planları [adguard-dns.io](https://adguard-dns.io/license.html) adresinden satın alınabilir. Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay ve UnionPay ile ödeme yapabilirsiniz. Ayrıca şu kripto para birimlerini de kabul ediyoruz: Ethereum, Litecoin ve Tether. Planlar aylık veya yıllık olarak yenilenebilir.
+AdGuard DNS planları [adguard-dns.io](https://adguard-dns.io/license.html) adresinden satın alınabilir. Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay ve UnionPay ile ödeme yapabilirsiniz. Planlar aylık veya yıllık olarak yenilenebilir.
 
 Kişisel plan, [AdGuard VPN](https://adguard-vpn.com/welcome.html) ücretli kullanıcıları için ücretsizdir.
 

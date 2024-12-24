@@ -3,7 +3,7 @@ title: 服务器和设置
 sidebar_position: 1
 ---
 
-## 什么是服务器及其使用方法
+## What is a server and how to use it
 
 设置私人 AdGuard DNS 时，您将遇到「服务器」这个词。
 

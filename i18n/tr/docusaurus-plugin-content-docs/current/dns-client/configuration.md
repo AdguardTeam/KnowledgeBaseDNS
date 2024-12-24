@@ -28,11 +28,11 @@ Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örne�
 
 - `size`: İnsan tarafından okunabilir veri boyutu olarak DNS sonuç önbelleğinin maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Örnek:** `128 MB`
+  **Örnek:** `128MB`
 
 - `client_size`: Yapılandırılmış her istemcinin adresi veya alt ağı için DNS sonuç önbelleğinin insan tarafından okunabilir veri boyutu olarak maksimum boyutu. Eğer `enabled` değeri `true` ise sıfırdan büyük olmalıdır.
 
-  **Örnek:** `4 MB`
+  **Örnek:** `4MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 - `timeout`: Önyükleme DNS istekleri için insan tarafından okunabilir bir süre olarak zaman aşımını belirtir.
 
-  **Örnek:** `2 s`
+  **Örnek:** `2s`
 
 ### `upstream` {#dns-upstream}
 
@@ -88,7 +88,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
     :::note Not
 
-    Properties specified within a single entry are combined with a logical AND. Girişler mantıksal bir VEYA ile birleştirilir.
+    Tek bir girdi içerisinde belirtilen özellikler mantıksal bir AND ile birleştirilir. Girişler mantıksal bir VEYA ile birleştirilir.
 
     :::
 

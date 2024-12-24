@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## Sorgu günlüğü nedir
 
-Query log is a useful tool for working with AdGuard DNS.
+Sorgu günlüğü, AdGuard DNS ile çalışmak için faydalı bir araçtır.
 
 Seçilen süre boyunca cihazlarınız tarafından yapılan tüm istekleri görüntülemenize ve istekleri duruma, türe, şirkete, cihaza, ülkeye göre sıralamanıza olanak tanır.
 

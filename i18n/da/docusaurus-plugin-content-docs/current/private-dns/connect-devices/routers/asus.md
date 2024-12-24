@@ -15,7 +15,7 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
 3. Gå fra sidebjælken _Avancerede indstillinger_ til afsnittet _WAN_.
 4. I afsnittet _WAN DNS-indstillinger_ sættes _Forbind til DNS-server automatisk_ til _Nej_.
-5. Sæt _Videresend lokale forespørgsler_, _Aktivér DNS-genbinding_ og _Aktivér DNSSEC_ til _Nej_.
+5. Sæt _Videresend lokale forespørgsler_, _Aktivér DNS-genbindingsbeskyttelse_ og _Aktivér DNSSEC_ til _Nej_.
 6. Skift DNS-fortrolighedsprotokol til DNS-over-TLS (DoT).
 7. Sørg for, at _DNS-over-TLS-profilen_ er sat til _Striks_.
 8. Rul ned til afsnittet _DNS-over-TLS Serverliste_. Angiv i feltet _Adresse_ én af nedenstående adresser:
@@ -32,11 +32,10 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 3. Åbn _Avancerede indstillinger_ eller _Avanceret_.
 4. Vælg _WAN_ eller _Internet_.
 5. Åbn _DNS-indstillinger_ eller _DNS_.
-6. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
+6. Vælg _Manuel indstilling_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
    - IPv4: `94.140.14.49` and `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Gem indstillingerne.
 8. Tilslut IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

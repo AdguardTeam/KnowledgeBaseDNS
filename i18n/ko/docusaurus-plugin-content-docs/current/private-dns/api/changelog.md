@@ -18,17 +18,17 @@ toc_max_heading_level: 3
 
 - 자동 기기 연결 기능이 추가되었습니다.
   - `auto_connect_devices_enabled`는 특정 링크 유형을 통해 기기의 자동 연결을 주장할 수 있는 DNS 서버 섹션의 새로운 설정입니다.
-  - New field in Device — `auto_device`, indicating that the device is automatically connected
-- Replaced `int` with `long` for `queries` in CategoryQueriesStats, for `used` in AccountLimits, and for `blocked` and `queries` in QueriesStats
+  - 'auto_device\` - 기기가 자동으로 연결되었음을 나타내는 기기 섹션의 새 필드입니다.
+- CategoryQueriesStats에서 'queries'의 'int'를 'long'으로, AccountLimits에서 `used`를, QueriesStats에서 `blocked`과 `queries`를 대체했습니다.
 
 ## v1.8
 
 **2024년 4월 20일에 출시됨**
 
 - 인증이 있는 DNS-over-HTTPS 지원이 추가되었습니다.
-  - New operation — reset DNS-over-HTTPS password for device
-  - New device setting — `detect_doh_auth_only`. Disables all DNS connection methods except DNS-over-HTTPS with authentication
-  - New field in DeviceDNSAddresses — `dns_over_https_with_auth_url`. 인증이 있는 DNS-over-HTTPS를 사용할 때 연결에 사용할 URL을 나타냅니다.
+  - 새로운 작업 — 기기의 DNS-over-HTTPS 비밀번호를 초기화합니다.
+  - `detect_doh_auth_only` — 새로운 기기 설정입니다. 인증이 있는 DNS-over-HTTPS를 제외한 모든 DNS 연결 방법을 비활성화합니다.
+  - `dns_over_https_with_auth_url` — DeviceDNSAddresses에 새 필드입니다. 인증이 있는 DNS-over-HTTPS를 사용할 때 연결에 사용할 URL을 나타냅니다.
 
 ## v1.7
 
@@ -67,8 +67,8 @@ toc_max_heading_level: 3
 
 - 제한에 도달했을 때를 나타내는 새로운 오류 코드 `FIELD_REACHED_LIMIT`가 추가되었습니다:
 
-  - For the total number of `blocked_clients` and `blocked_domain_rules` in access settings
-  - For `rules` in custom user rules settings
+  - 접근 설정에서 `blocked_clients` 및 `blocked_domain_rules`의 총 수
+  - 사용자 정의 사용자 규칙 설정의 `rules`
 
 ## v1.5
 
@@ -78,7 +78,7 @@ toc_max_heading_level: 3
 
 ### 안전한 브라우징 설정 모델이 변경되었습니다.
 
-From:
+변경 전:
 
 ```json
 {
@@ -86,7 +86,7 @@ From:
 }
 ```
 
-To:
+변경 후:
 
 ```json
 {
@@ -100,7 +100,7 @@ To:
 
 ### 서버 설정 저장 모델이 변경되었습니다.
 
-From:
+변경 전:
 
 ```json
 {
@@ -110,7 +110,7 @@ From:
 }
 ```
 
-to:
+변경 후:
 
 ```json
 {
@@ -136,7 +136,7 @@ to:
 
 **2022년 12월 13일에 출시됨**
 
-- Added method to get account limits
+- 계정 한도를 확인하는 방법이 추가되었습니다.
 
 ## v1.2
 

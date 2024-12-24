@@ -14,8 +14,10 @@ Ne všechna zařízení podporují šifrované protokoly DNS. V takovém přípa
 :::
 
 Někdy se může stát, že je IP adresa rezidenční sítě již používána, a pokud se k ní pokusíte připojit, AdGuard DNS připojení zabrání.
+
 ![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+
+V takovém případě se obraťte na podporu na adrese [support@adguard-dns.io](mailto:support@adguard-dns.io), kde vám pomohou se správným nastavením konfigurace.
 
 ## Jak nastavit propojenou IP
 
@@ -25,6 +27,7 @@ Následující pokyny vysvětlují, jak se k zařízení připojit pomocí **pro
 2. Přidejte nové zařízení nebo otevřete nastavení dříve připojeného zařízení.
 3. Přejděte na _Použít adresy DNS serverů_.
 4. Otevřete _Adresy běžného DNS serveru_ a připojte propojenou IP.
+
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamický DNS: Proč je užitečný
@@ -44,13 +47,21 @@ Takto nebudete muset ručně aktualizovat přidruženou IP adresu při každé j
 ## Dynamický DNS: Jak nastavit
 
 1. Nejprve je třeba zkontrolovat, zda nastavení vašeho routeru podporuje DDNS:
+
    - Přejděte do _Nastavení routeru_ → _Sítě_
    - Vyhledejte sekci DDNS nebo _Dynamický DNS_
-   - Přejděte na něj a ověřte, zda jsou nastavení skutečně podporována. _Jedná se pouze o příklad, jak to může vypadat. Může se lišit v závislosti na routeru_ ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Přejděte na něj a ověřte, zda jsou nastavení skutečně podporována. _Toto je pouze příklad, jak by to mohlo vypadat. Nastavení se mohou lišit v závislosti na vašem routeru_
+
+   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Zaregistrujte svou doménu u oblíbené služby, jako je [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) nebo u jiného poskytovatele DDNS, který vám vyhovuje.
+
 3. Zadejte doménu do nastavení routeru a synchronizujte konfigurace.
+
 4. Přejděte do nastavení propojené IP a připojte adresu, poté přejděte na _Rozšířená nastavení_ a klikněte na _Konfigurace DDNS_.
+
 5. Zadejte doménu, kterou jste dříve zaregistrovali, a klikněte na tlačítko _Konfigurace DDNS_.
+
    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Hotovo, úspěšně jste nastavili DDNS!

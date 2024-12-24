@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## So erwerben Sie ein Abonnement {#purchase}
 
-AdGuard DNS- Abonnements können auf [adguard-dns.io](https://adguard-dns.io/license.html) erworben werden. Sie können mit Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay und UnionPay bezahlen. Wir akzeptieren auch die folgenden Kryptowährungen: Ethereum, Litecoin, und Tether. Die Pakete können auf monatlicher oder jährlicher Basis verlängert werden.
+AdGuard DNS- Abonnements können auf [adguard-dns.io](https://adguard-dns.io/license.html) erworben werden. Sie können mit Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay und UnionPay bezahlen. Die Pakete können auf monatlicher oder jährlicher Basis verlängert werden.
 
 Der Tarif Personal ist für zahlende Nutzer von [AdGuard VPN](https://adguard-vpn.com/welcome.html) kostenlos.
 

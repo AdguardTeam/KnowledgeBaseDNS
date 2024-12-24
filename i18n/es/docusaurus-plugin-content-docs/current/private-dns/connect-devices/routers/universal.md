@@ -28,5 +28,5 @@ Aquí hay algunas instrucciones generales para configurar AdGuard DNS privado en
 
 5. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 
-- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP vinculadas](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

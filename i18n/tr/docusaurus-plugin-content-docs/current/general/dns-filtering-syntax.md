@@ -41,7 +41,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - `@@|example.org^`: `example.org` alan adına ve tüm alt alan adlarına erişim engelini kaldırın.
 
-- `1.2.3.4 example.org`: (attention, old `/etc/hosts`-style syntax) in AdGuard Home, respond with `1.2.3.4` to queries for the `example.org` domain but **not** its subdomains. Özel AdGuard DNS'de, `example.org` alan adına erişimi engelleyin. `www.example.org` remains allowed.
+- `1.2.3.4 example.org`: (dikkat, eski `/etc/hosts` biçimi söz dizimi) AdGuard Home'da, `example.org` alan adına yönelik sorgulara `1.2.3.4` ile yanıt verin ancak alt alan adlarına **yanıt vermeyin**. Özel AdGuard DNS'de, `example.org` alan adına erişimi engelleyin. `www.example.org` remains allowed.
 
   AdGuard Home'da, bir ana makine için belirtilmemiş IP adresini (`0.0.0.0`) veya yerel bir adresi (`127.0.0.1` ve benzeri) kullanmak, temel olarak o ana makineyi engellemekle aynıdır.
 
@@ -449,7 +449,7 @@ $ctag=~value1|~value2|...
     - `user_regular`: normal kullanıcılar.
     - `user_child`: çocuklar.
 
-## `/etc/hosts`-style syntax {#etc-hosts-syntax}
+## `/etc/hosts` biçimi söz dizimi {#etc-hosts-syntax}
 
 Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdır:
 
@@ -472,7 +472,7 @@ Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-
 
 AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
 
-## Domains-only syntax {#domains-only-syntax}
+## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 
 Her satırda bir ad olacak şekilde basit bir alan adları listesi.
 

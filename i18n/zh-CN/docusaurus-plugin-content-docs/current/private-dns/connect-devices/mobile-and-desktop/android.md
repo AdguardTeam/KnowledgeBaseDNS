@@ -49,7 +49,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
    ![DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. 向下滚动并点击「_添加自定义 DNS 服务器_」。
    ![添加 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. 复制以下 DNS 地址之一，并将其粘贴到应用程序的「_DNS 服务器地址_」字段中。 如果不确定使用哪个地址，请选择「DNS-over-HTTPS」。
+7. Copy one of the following DNS addresses and paste it into the _DNS server adresses_ field in the app. 如果不确定使用哪个地址，请选择「DNS-over-HTTPS」。
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![自定义 DNS 服务器 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. 点击「_保存并选择_」。
