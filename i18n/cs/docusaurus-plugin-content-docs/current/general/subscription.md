@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Jak zakoupit tarif {#purchase}
 
-Tarify AdGuard DNS lze zakoupit na [adguard-dns.io](https://adguard-dns.io/license.html). Platit můžete kartami Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay a UnionPay. Přijímáme také následující kryptoměny: Ethereum, Litecoin a Tether. Tarify lze obnovovat měsíčně nebo ročně.
+Tarify AdGuard DNS lze zakoupit na [adguard-dns.io](https://adguard-dns.io/license.html). Platit můžete kartami Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay a UnionPay. Tarify lze obnovovat měsíčně nebo ročně.
 
 Tarif Personal je zdarma pro uživatele s placenýcm tarifem [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 

@@ -3,19 +3,19 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+iOSデバイスを AdGuard DNS に接続するには、まずはデバイスを「ダッシュボード」に追加します:
 
-1. Go to _Dashboard_ and click _Connect new device_.
+1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
 2. In the drop-down menu _Device type_, select Windows.
-3. Name the device.
+3. デバイスに名前を付けます。
    ![Connecting\_device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
-## Use AdGuard Ad Blocker (paid option)
+## AdGuard 広告ブロッカーアプリを使用する（有料オプション）
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. 様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
 
 1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
-2. Open the app.
+2. アプリを開きます。
 3. Click _Settings_ at the top of the app's home screen.
    ![Settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 4. Select the _DNS Protection_ tab from the menu on the left.
@@ -29,14 +29,14 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
    ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
 8. Click _Save and select_.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
-9. The DNS server you’ve added will appear at the bottom of the _Custom DNS servers_ list.
+9. 追加したDNSサーバーは、「カスタムDNSサーバー」リストの一番下に現れます。
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
-## Use AdGuard VPN
+## AdGuard VPN を使用する
 
-Not all VPN services support encrypted DNS. However, our VPN does, so if you need both a VPN and a private DNS, AdGuard VPN is your go-to option.
+VPNサービスの中には、暗号化DNSをサポートしていないものもあります。 しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
 
 1. Install AdGuard VPN.
 2. Open the app and click _Settings_.
@@ -52,17 +52,17 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 7. Click _Save and select_.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
-## Use AdGuard DNS Client
+## AdGuard DNS Client を使用する
 
 AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
 
 More details can be found in [different article](/dns-client/overview/).
 
-## Configure plain DNS
+## プレーンDNSを構成する
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
+DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを選ぶことができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

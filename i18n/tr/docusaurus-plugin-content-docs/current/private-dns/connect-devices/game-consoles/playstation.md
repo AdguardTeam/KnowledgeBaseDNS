@@ -9,11 +9,11 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 [How to configure your router](/private-dns/connect-devices/routers/routers.md)
 
-## Connect AdGuard DNS
+## AdGuard DNS'e bağlanma
 
 Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 
-1. Turn on your PS4/PS5 console and sign in to your account.
+1. PS4/PS5 konsolunuzu açın ve hesabınıza giriş yapın.
 2. Ana ekrandan, üst sırada bulunan dişli çark simgesini seçin.
 3. _Ayarlar_ menüsünden _Ağ_ öğesini seçin.
 4. _İnternet Bağlantısını Ayarla_ öğesini seçin.

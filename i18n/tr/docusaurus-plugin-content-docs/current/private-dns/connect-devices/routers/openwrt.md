@@ -38,7 +38,7 @@ https-dns-proxy'yi yapılandırmak için _LuCI_ → _Hizmetler_ → _HTTPS DNS P
 
 ## DNS-over-TLS'yi yapılandırma
 
-- **Komut satırı talimatları**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **Komut satırı talimatları**. Dnsmasq DNS rolünü [devre dışı bırakın](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) veya isteğe bağlı olarak DHCP rolünü odhcpd ile [değiştirerek](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) tamamen kaldırın.
 
   ```# Install packages
   1. opkg update
