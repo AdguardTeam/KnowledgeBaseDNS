@@ -78,5 +78,5 @@ iOS 设备的描述文件，也被 Apple 称为「配置描述文件」，是一
 
 如果您不希望通过额外的软件来配置 DNS，可以选择无加密的 DNS。 有两种选择：使用链接的 IP 或专用 IP 地址。
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

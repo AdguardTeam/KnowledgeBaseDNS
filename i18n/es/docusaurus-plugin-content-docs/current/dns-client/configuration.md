@@ -28,11 +28,11 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 - `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-  **Example:** `128 MB`
+  **Example:** `128MB`
 
 - `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-  **Example:** `4 MB`
+  **Example:** `4MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 - `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
 
-  **Example:** `2 s`
+  **Example:** `2s`
 
 ### `upstream` {#dns-upstream}
 

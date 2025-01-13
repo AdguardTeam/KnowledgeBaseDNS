@@ -13,9 +13,11 @@ sidebar_position: 3
 
 :::
 
-때때로 주거용 IP 주소가 이미 사용 중일 수 있으며, 이 주소에 연결을 시도하면 AdGuard DNS가 연결을 차단합니다.
-![연결된 IPv4 주소 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-이 경우 지원팀([support@adguard-dns.io](mailto:support@adguard-dns.io))으로 문의하시면 올바른 구성 설정을 도와드릴 것입니다.
+Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+
+![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
+If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## 연결 IP 설정 방법
 
@@ -25,6 +27,7 @@ sidebar_position: 3
 2. 새 기기를 추가하거나 이전에 연결된 기기의 설정을 엽니다.
 3. **DNS 서버 주소 사용**으로 이동합니다.
 4. **일반 DNS 서버 주소**를 열고 연결된 IP를 연결합니다.
+
    ![연결된 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## 동적 DNS
@@ -44,14 +47,21 @@ DDNS(동적 DNS)는 IP 주소가 변경될 때마다 DNS 레코드를 자동으�
 ## 동적 DNS: 설정 방법
 
 1. 라우터 설정에서 DDNS가 지원되는지 확인해야 합니다.
+
    - **라우터 설정** → **네트워크**로 이동합니다.
    - DDNS 또는 **동적 DNS** 섹션을 찾습니다.
-   - 해당 페이지로 이동하여 설정이 실제로 지원되는지 확인합니다. _이것은 어떤 모습일 수 있는지에 대한 예시일 뿐입니다. 라우터에 따라 다를 수 있습니다_
-     ![DDNS 지원 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - 해당 페이지로 이동하여 설정이 실제로 지원되는지 확인합니다. _This is just an example of what it may look like, the settings may vary depending on your router_
+
+   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) 등 인기 있는 서비스 또는 선호하는 기타 DDNS 공급업체에 도메인을 등록합니다.
+
 3. 라우터 설정에 도메인을 입력하고 구성을 동기화합니다.
+
 4. 연결된 IP 설정으로 이동하여 주소를 연결한 다음 **고급 설정**으로 이동하여 **DDNS 구성**을 클릭합니다.
+
 5. 이전에 등록한 도메인을 입력하고 **DDNS 구성**을 클릭합니다.
+
    ![DDNS 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 DDNS를 성공적으로 설정했습니다!
