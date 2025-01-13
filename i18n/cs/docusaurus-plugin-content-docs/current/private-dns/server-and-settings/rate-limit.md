@@ -16,8 +16,9 @@ Omezování rychlosti DNS obvykle funguje tak, že se nastaví prahové hodnoty 
 Pokud máte předplacený tarif AdGuard DNS _Team_ nebo _Enterprise_, můžete požádat o vyšší limit. Postupujte podle následujících pokynů:
 
 1. Přejděte na [Hlavní panel DNS](https://adguard-dns.io/dashboard/) → _Nastavení účtu_ → _Rychlostní limit_
+
 2. Klepněte na _Požadavek na zvýšení limitu_, abyste kontaktovali náš tým zákaznické podpory a požádali o zvýšení limitu. Budete muset zadat svůj CIDR a limit, který chcete mít
 
-![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Váš požadavek bude přezkoumán během 1-3 pracovních dnů. O změnách vás budeme kontaktovat e-mailem
+3. Váš požadavek bude přezkoumán během 1–3 pracovních dnů. O změnách vás budeme kontaktovat e-mailem

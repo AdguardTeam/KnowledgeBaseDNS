@@ -18,8 +18,8 @@ In this section you will find instructions on how to connect your device to AdGu
 For devices that do not natively support encrypted DNS protocols, we offer three other options:
 
 - [AdGuard DNS Client](/dns-client/overview.md)
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
 
 If you want to restrict access to AdGuard DNS to certain devices, use [DNS-over-HTTPS with authentication](/private-dns/connect-devices/other-options/doh-authentication.md).
 

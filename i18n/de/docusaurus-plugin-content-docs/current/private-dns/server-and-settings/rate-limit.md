@@ -16,8 +16,9 @@ Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die
 Wenn Sie das AdGuard DNS _Team_- oder _Enterprise_-plan abonniert haben, können Sie ein höheres Anfragelimit beantragen. Befolgen Sie dazu bitte die nachstehenden Anweisungen:
 
 1. Wechseln Sie zu [DNS-Übersicht](https://adguard-dns.io/dashboard/) → _Einstellungen_ → _Anfragelimit_
+
 2. Tippen Sie auf _Anfragen pro Sekunde erhöhen_, um unser Support-Team zu kontaktieren und die Erhöhung der Datenstrombegrenzung zu beantragen. Sie müssen Ihre CIDR und den gewünschten Grenzwert angeben
 
-![Ratenbegrenzung](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. Ihr Antrag wird innerhalb von 1-3 Arbeitstagen bearbeitet. Wir werden Sie per E-Mail über die Änderungen informieren
+3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

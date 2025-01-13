@@ -102,6 +102,28 @@ Ses en notifikation om, at man ikke er forbundet til AdGuard DNS, er det mest sa
 
 :::
 
+## Brug EDNS (Udvidet DNS)
+
+EDNS udvider DNS-protokollen, hvilket muliggør større UDP-pakker til transport af yderligere data. I AdGuard DNS muliggør det at videregive DeviceID i almindelig DNS vha. en ekstra parameter.
+
+DeviceID, en otte-cifret hexadecimal identifikator (f.eks. `1a2b3c4d`), assisterer med at linke DNS-forespørgsler til specifikke enheder. Ved krypteret DNS, er denne ID en del af domænet (f.eks. `1a2b3c4d.d.adguard-dns.com`). Ved ukrypteret DNS, kræves EDNS for at overføre denne identifikator.
+
+AdGuard DNS bruger EDNS til at hente DeviceID ved at lede efter nummermuligheden `65074`. Hvis en sådan mulighed findes, læses DeviceID derfra. Til dette kan man bruge `dig`-kommandoen i terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Her er `65074` valgmuligheds-ID'en, og `3031323334353637` er dens værdi i hex format (DeviceID: `01234567`).
+
+Færdig! DeviceID skal vises.
+
+:::note
+
+`dig`-kommandoen er blot et eksempel, man kan bruge enhver DNS-software med evnen til at tilføje EDNS-muligheder for at udføre denne handling.
+
+:::
+
 ## Brug almindelig DNS
 
 Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er:

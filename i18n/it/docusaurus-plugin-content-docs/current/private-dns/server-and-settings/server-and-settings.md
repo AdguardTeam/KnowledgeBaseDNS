@@ -3,7 +3,7 @@ title: Server e impostazioni
 sidebar_position: 1
 ---
 
-## Che cos'è un server e come utilizzarlo
+## What is a server and how to use it
 
 Quando configuri il DNS privato di AdGuard, incontrerai il termine _server_.
 

@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## 为什么要用专用 IP？
 
-不幸的是，所连接设备的技术规格并不总是让用户设置加密的私人 AdGuard DNS 服务器。 在这种情况下，用户要使用标准的无加密的 DNS。 有两种方式可以设置 AdGuard DNS：[使用关联 IP 地址](/private-dns/connect-devices/other-options/linked-ip.md)和专用 IP 地址。
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. 在这种情况下，用户要使用标准的无加密的 DNS。 有两种方式可以设置 AdGuard DNS：[使用关联 IP 地址](/private-dns/connect-devices/other-options/linked-ip.md)和专用 IP 地址。
 
 专用 IP 地址通常是更稳定的选择。 关联 IP 有一些限制，例如只允许住宅地址，提供商可以更改 IP，您需要重新关联 IP 地址。 通过专用 IP，用户将获得一个专属于您的 IP 地址，所有请求都将计入设备。
 

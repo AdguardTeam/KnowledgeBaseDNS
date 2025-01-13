@@ -14,7 +14,7 @@ Keeneticルーターは、安定性と柔軟に設定できることで知られ
 5. 「_ユーティリティとサービス_」で、 %value% プロキシを選択してインストールします。
 6. 「_メニュー_」→「_ネットワークルール_」→「イ_ンターネットの安全性_」に進みます。
 7. 「DNS-over-HTTPSサーバー」に移動し、「_DNS-over-HTTPSサーバーを追加_」をクリックします。
-8. `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` フィールドにプライベート AdGuard DNS サーバーの URL を入力します。
+8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
 9. [_保存_] をクリックします。
 
 ## DNS-over-TLS を構成して接続する
@@ -26,7 +26,7 @@ Keeneticルーターは、安定性と柔軟に設定できることで知られ
 5. 「_ユーティリティとサービス_」で、 %value% プロキシを選択してインストールします。
 6. 「_メニュー_」→「_ネットワークルール_」→「イ_ンターネットの安全性_」に進みます。
 7. 「DNS-over-HTTPSサーバー」に移動し、「_DNS-over-HTTPSサーバーを追加_」をクリックします。
-8. `tls://*********.d.adguard-dns.com` フィールドにプライベート AdGuard DNS サーバーの URL を入力します。
+8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
 9. [_保存_] をクリックします。
 
 ## ルーターの管理画面を使って接続する
@@ -44,5 +44,5 @@ KeeneticルーターがDNS-over-HTTPSやDNS-over-TLS設定をサポートして�
 7. 設定を保存します。
 8. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

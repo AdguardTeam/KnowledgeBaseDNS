@@ -16,8 +16,9 @@ DNS 速率限制通常通过设置客户端（IP 地址）在特定周期内可�
 如果您订阅了 AdGuard DNS「_团队_」或「_企业版_」，可以申请增加请求数量。 请按照以下说明进行操作：
 
 1. 进入 [DNS 仪表板](https://adguard-dns.io/dashboard/) →「_账号设置_」→「_请求数量限制_」
+
 2. 点击「_提升数量上限_」联系我们的客户支持团队并申请提高限额。 请提供 CIDR 和想要的数量限制。
 
-![请求数量限制](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-1. 我们将在 1-3 个工作日内审查您的申请。 我们将通过电子邮箱与您联系。
+3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
