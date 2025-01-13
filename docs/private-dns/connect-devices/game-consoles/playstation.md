@@ -11,14 +11,16 @@ It is likely that your router supports the use of encrypted DNS servers, so you 
 
 ## Connect AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
+Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
 
-1. Turn on your PS4/PS5 console and sign in to your account.
+### For PlayStation 4
+
+1. Turn on your PS4 console and sign in to your account.
 1. From the home screen, select the gear icon located in the top row.
-1. In the *Settings* menu, select *Network*.
+1. Go to *Settings* → *Network* → *Settings*.
 1. Select *Set Up Internet Connection*.
-1. Choose *Use Wi-Fi* or *Use a LAN Cable*, depending on your network setup.
-1. Select *Custom* and then select *Automatic* for *IP Address Settings*.
+1. Select *Use a LAN Cable* → *Easy*.
+1. Select *Manual* and then select *Automatic* for *IP Address Settings*.
 1. For *DHCP Host Name*, select *Do Not Specify*.
 1. For *DNS Settings*, select *Manual*.
 1. In the *DNS Server* field, enter one of the following DNS server addresses:
@@ -28,7 +30,26 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 1. On the *MTU Settings* screen, select *Automatic*.
 1. On the *Proxy Server* screen, select *Do Not Use*.
 1. Select *Test Internet Connection* to test your new DNS settings.
-1. Once the test is complete and you see "Internet Connection: Successful", save your settings.
+1. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
+
+### For PlayStation 5
+
+1. Turn on your PS5 console and sign in to your account.
+1. From the home screen, select the gear icon located in the top row.
+1. Go to *Settings* → *Network* → *Settings*.
+1. Select *Set Up Internet Connection*.
+1. Select *Set Up Wired LAN* → *Connect*.
+1. Select *Manual* and then select *Automatic* for *IP Address Settings*.
+1. For *DHCP Host Name*, select *Do Not Specify*.
+1. For *DNS Settings*, select *Manual*.
+1. In the *DNS Server* field, enter one of the following DNS server addresses:
+    - `94.140.14.49`
+    - `94.140.14.59`
+1. Select *Next* to continue.
+1. On the *MTU Settings* screen, select *Automatic*.
+1. On the *Proxy Server* screen, select *Do Not Use*.
+1. Select *Test Internet Connection* to test your new DNS settings.
+1. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
 
 It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
 

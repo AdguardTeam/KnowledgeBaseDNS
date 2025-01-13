@@ -64,5 +64,5 @@ Weitere Details finden Sie in einem [anderen Artikel](/dns-client/overview/).
 
 Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

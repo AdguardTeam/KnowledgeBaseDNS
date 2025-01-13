@@ -62,7 +62,7 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 11. _Enter_를 누릅니다.
 12. IP 주소(또는 Team을 구독하는 경우 전용 IP)를 연결합니다.
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## dnsmasq를 사용합니다.
 
@@ -102,9 +102,31 @@ AdGuard DNS에 연결되지 않았다는 알림이 표시되면, 대부분 dnsma
 
 :::
 
+## Use EDNS (Extended DNS)
+
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+
+DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+
+기기가 DeviceID should be displayed.
+
+:::note
+
+The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
+
+:::
+
 ## 일반 DNS 사용
 
 DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. 연결된 IP 또는 전용 IP를 사용하는 두 가지 선택 사항이 있습니다:
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -1,32 +1,32 @@
 ---
-title: Universal instructions
+title: 一般的な手順
 sidebar_position: 2
 ---
 
-Here are some general instructions for setting up Private AdGuard DNS on routers. You can refer to this guide if you can't find your specific router in the main list. Please note that the configuration details provided here are approximate and may differ from the settings on your particular model.
+ここでは、ルーターでプライベート AdGuard DNS を設定するための一般的な手順を紹介しております。 一覧で特定のルーター専用の手順が見つからない場合は、このガイドをお使いください。 ※ここに記載されている設定内容はおおよそのものであり、特定モデルの設定項目とは多少異なる場合があることにご注意ください。
 
-## Use your router admin panel
+## ルーターの管理画面を使って接続する
 
-1. Open the preferences for your router. Usually you can access them from your browser. Depending on the model of your router, try entering one the following addresses:
-   - Linksys and Asus routers typically use: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear routers typically use: [http://192.168.0.1](http://192.168.0.1/) or [http://192.168.1.1](http://192.168.1.1/) D-Link routers typically use [http://192.168.0.1](http://192.168.0.1/)
-   - Ubiquiti routers typically use: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+1. ルーターの設定を開きます。 ルーターの設定は通常、ブラウザからアクセスできます。 ルーターのモデルに応じて、以下のアドレスのいずれかを入力してみてください:
+   - Linksys および Asus ルーターは通常、[http://192.168.1.1](http://192.168.1.1/) を使用しています。
+   - Netgear ルーターは通常、[http://192.168.0.1](http://192.168.0.1/) または [http://192.168.1.1](http://192.168.1.1/) を使用しています。D-Link ルーターは通常、[http://192.168.0.1](http://192.168.0.1/) を使用しています。
+   - Ubiquiti ルーターは通常、[http://unifi.ubnt.com](http://unifi.ubnt.com/) を使用しています。
 
-2. Enter the router's password.
+2. ルーターのパスワードを入力します。
 
-   :::note Important
+   :::note 重要
 
-   If the password is unknown, you can often reset it by pressing a button on the router; it will also reset the router to its factory settings. Some models have a dedicated management application, which should already be installed on your computer.
+   パスワードが不明な場合、ルーターのボタンを押すことでリセットできることが多く、これによりルーターは工場出荷時の設定にリセットされます。 一部のモデルには専用の管理アプリがあり、その場合、アプリはすでにお使いのコンピュータにインストールされているはずです。
 
    :::
 
-3. Find where DNS settings are located in the router's admin console. Change the listed DNS addresses to the following addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+3. ルーターの管理コンソールでDNS設定を見つけます。 そこにあるDNSアドレスを以下のものに変更します:
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 
-4. Save the settings.
+4. 設定を保存します。
 
-5. Link your IP (or your dedicated IP if you have a Team subscription).
+5. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -3,7 +3,7 @@ title: Otomatik bağlantı
 sidebar_position: 5
 ---
 
-## Why it is useful
+## Neden faydalıdır
 
 Herkes, Pano üzerinden cihaz ekleme konusunda rahat hissetmeyebilir. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
 

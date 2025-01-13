@@ -32,5 +32,5 @@ sidebar_position: 2
 
 リンクされたIP（チームプランをご利用の場合は専用IP）を使用するのがおすすめです:
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -42,8 +42,8 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 9. Desligue o _Modo automático_.
 10. Clique em _Aplicar_.
 11. Vincule seu endereço de IP (ou seu IP dedicado, caso tenha uma assinatura Equipe):
-    - [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manualmente no Debian (IP vinculado ou IP dedicado necessário)
 
@@ -61,8 +61,8 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 10. Pressione _Enter_.
 11. Feche o Terminal.
 12. Vincule seu endereço de IP (ou seu IP dedicado, caso tenha uma assinatura Equipe):
-    - [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -102,9 +102,31 @@ Se você receber uma notificação de que não está conectado ao AdGuard DNS, p
 
 :::
 
+## Use EDNS (Extended DNS)
+
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+
+DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+
+Feito! DeviceID should be displayed.
+
+:::note
+
+The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
+
+:::
+
 ## Usando DNS simples
 
 Se você preferir não usar software extra para configuração de DNS, pode optar por DNS não criptografado. Você tem duas opções: usar IPs vinculados ou IPs dedicados:
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

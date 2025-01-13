@@ -29,5 +29,5 @@ Verwenden Sie diese Anleitung, wenn Ihr FritzBox-Router keine DNS-over-TLS-Konfi
 6. Speichern Sie die Einstellungen.
 7. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

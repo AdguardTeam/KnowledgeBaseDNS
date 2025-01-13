@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Routery Xiaomi mají mnoho výhod: Současně může uživatel k místní síti Wi-Fi připojit až 64 zařízení.
+Routery Xiaomi mají mnoho výhod: stabilní a silný signál, zabezpečení sítě, vysoký výkon a inteligentní správu. Uživatelé mohou k místní síti Wi-Fi připojit až 64 zařízení.
 
 Bohužel nepodporuje šifrované DNS, ale je skvělý pro nastavení AdGuard DNS prostřednictvím propojené IP.
 

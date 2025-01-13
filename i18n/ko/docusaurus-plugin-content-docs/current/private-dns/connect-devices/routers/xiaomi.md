@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi 라우터는 안정적이고 강력한 신호, 네트워크 보안, 안정적인 작동, 지능형 관리와 같은 많은 장점을 가지고 있으며 동시에 사용자는 최대 64 개의 기기를 로컬 Wi-Fi 네트워크에 연결할 수 있습니다.
+Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
 안타깝게도 암호화된 DNS는 지원하지 않지만 연결된 IP를 통해 AdGuard DNS를 설정하는 데는 매우 유용합니다.
 

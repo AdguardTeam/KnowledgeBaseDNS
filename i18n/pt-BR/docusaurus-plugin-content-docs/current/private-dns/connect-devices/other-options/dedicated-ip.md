@@ -11,7 +11,7 @@ Se você tiver uma assinatura Team ou Enterprise, receberá vários endereços d
 
 ## Por que você precisa de um IP dedicado?
 
-Infelizmente, as especificações técnicas do dispositivo conectado podem nem sempre permitir que você configure um servidor privado e criptografado do AdGuard DNS. Neste caso, você terá que usar DNS padrão não criptografado. Existem duas maneiras de configurar o AdGuard DNS: [usando IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md) e usando IPs dedicados.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Neste caso, você terá que usar DNS padrão não criptografado. Existem duas maneiras de configurar o AdGuard DNS: [usando IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md) e usando IPs dedicados.
 
 IPs dedicados são geralmente uma opção mais estável. O IP vinculado tem algumas limitações, por exemplo, a permissão de endereços residenciais apenas. No entanto, seu provedor pode mudar o IP, e você precisará revincular o endereço de IP. Com IPs dedicados, você obtém um Endereço de IP que é exclusivamente seu, e todas as Solicitações serão contadas para o seu dispositivo.
 

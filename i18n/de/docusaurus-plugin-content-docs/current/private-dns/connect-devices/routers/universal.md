@@ -28,5 +28,5 @@ Hier sind einige allgemeine Anweisungen zur Einrichtung von Private AdGuard DNS 
 
 5. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
