@@ -16,7 +16,7 @@ This article contains the changelog for [AdGuard DNS API](private-dns/api/overvi
 
 *Released on December 12, 2024*
 
-- Added new DNS server setting — `block_chrome_prefetch`. It disables private prefetch proxy function in Google Chrome. When this function is enabled, Chrome will sometimes prefetch links on the Google Search results page and on other participating websites, even before the user clicks on them.
+Added a new DNS server setting — `block_chrome_prefetch`. It disables *Private prefetch proxy* in Chrome. When this feature is enabled, Chrome will sometimes prefetch links on the Google Search results page and other participating websites even before the user clicks them.
 
 ## v1.9
 
