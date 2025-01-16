@@ -12,9 +12,15 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.10
+
+*Released on December 12, 2024*
+
+- Added new DNS server setting — `block_chrome_prefetch`. It disables private prefetch proxy function in Google Chrome. When this function is enabled, Chrome will sometimes prefetch links on the Google Search results page and on other participating websites, even before the user clicks on them.
+
 ## v1.9
 
- *Released on July 11, 2024*
+*Released on July 11, 2024*
 
 - Added automatic device connection functionality:
     - New DNS server setting — `auto_connect_devices_enabled`, allowing approval for auto-connecting devices through a specific link type
