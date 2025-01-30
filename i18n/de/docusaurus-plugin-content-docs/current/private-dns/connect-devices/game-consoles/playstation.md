@@ -11,7 +11,7 @@ Möglicherweise unterstützt Ihr Router die Verwendung von verschlüsselten DNS-
 
 ## Mit AdGuard DNS verbinden
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
+Konfigurieren Sie Ihre Spielkonsole so, dass sie einen öffentlichen AdGuard DNS-Server verwendet, oder konfigurieren Sie sie über eine verknüpfte IP.
 
 ### Für PlayStation 4
 
