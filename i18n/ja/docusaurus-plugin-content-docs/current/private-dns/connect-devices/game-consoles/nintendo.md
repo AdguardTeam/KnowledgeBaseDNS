@@ -20,17 +20,17 @@ sidebar_position: 2
 パブリックAdGuard DNSサーバーを使用するようにゲーム機を設定するか、リンクされたIPを介して設定します:
 
 1. ホームメニューから「_システム設定_」を選択します。
-2. 「_インターネット設定_」→「_接続設定_」に移動します。
-3. 接続ファイルを選択し、「_設定を変更_」を選択します。
-4. 「_DNS_」 → 「_セットアップ_ 」を選択します。
-5. _DNS の自動取得_を「_いいえ_」に設定します。
-6. _詳細セットアップ_ → _プライマリDNS_ を選択します。 既存の DNS を削除するには、左矢印を長押しします。
-7. 「_DNS サーバー_」欄に、次のいずれかの DNS サーバーアドレスを入力します:
+2. 「インターネット」→「_インターネット設定_」→「_接続設定_」に移動します。
+3. リストからネットワークを選択します。
+4. 「_設定を変更_」→「_DNS設定_」を選択します。
+5. 「_自動_」を「_手動_」に設定します。
+6. 「_プライマリDNS_」を選択します。 既存の DNS を削除するには、左矢印（Bボタン）を長押しします。
+7. 「_プライマリDNSサーバー_」欄に、次のいずれかの DNS サーバーアドレスを入力します:
    - `94.140.14.49`
    - `94.140.14.59`
 8. 設定を保存します。
 
 リンクされたIP（チームプランをご利用の場合は専用IP）を使用するのがおすすめです:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

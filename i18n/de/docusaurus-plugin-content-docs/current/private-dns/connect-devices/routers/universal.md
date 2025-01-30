@@ -20,7 +20,7 @@ Hier sind einige allgemeine Anweisungen zur Einrichtung von Private AdGuard DNS 
 
    :::
 
-3. Finden Sie heraus, wo die DNS-Einstellungen im Admin-Bereich des Routers zu finden sind. Ändern Sie die aufgelisteten DNS-Adressen in die folgenden Adressen:
+3. Finden Sie heraus, wo die DNS-Einstellungen im Admin-Bereich des Routers zu finden sind. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - IPv4: `94.140.14.49` und `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 
@@ -28,5 +28,5 @@ Hier sind einige allgemeine Anweisungen zur Einrichtung von Private AdGuard DNS 
 
 5. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

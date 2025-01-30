@@ -20,12 +20,12 @@ sidebar_position: 2
 将游戏主机配置使用公共 AdGuard DNS 服务器，或通过关联的 IP 进行配置：
 
 1. 从主菜单中，选择「_系统设置_」。
-2. 转至「_互联网设置_」→「_连接设置_」。
-3. 选择连接文件，然后选择「_更改设置_」。
-4. 选择「_DNS_」→「_设置_」。
-5. 将「_自动获取 DNS_」设置为「_否_」。
-6. 选择「_详细设置_」→「_主 DNS_」。 按住左箭头删除现有的 DNS。
-7. 在「_DNS 服务器_」字段中，输入以下其中一个 DNS 服务器地址：
+2. Go to _Internet_ → _Internet Settings_ → _Connection Settings_.
+3. Select your network from the list.
+4. Select _Change Settings_ → _DNS Settings_.
+5. Set _Automatic_ to _Manual_.
+6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
+7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
    - `94.140.14.49`
    - `94.140.14.59`
 8. 请保存设置。

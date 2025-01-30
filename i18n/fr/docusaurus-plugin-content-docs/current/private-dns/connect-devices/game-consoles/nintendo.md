@@ -20,12 +20,12 @@ S'applique à : New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nint
 Configurez votre console de jeux pour utiliser un serveur DNS AdGuard public ou configurez-la via IP liée :
 
 1. Dans le menu d'accueil, sélectionnez _Paramètres système_.
-2. Accédez aux _Paramètres Internet_ → _Paramètres de connexion_.
-3. Sélectionnez le fichier de connexion, puis sélectionnez _Modifier les paramètres_.
-4. Sélectionnez _DNS_ → _Configuration_.
-5. Réglez _Auto-Obtention du DNS_ sur _Non_.
-6. Sélectionnez _Configuration détaillée_ → _DNS principal_. Maintenez la flèche gauche enfoncée pour supprimer le DNS existant.
-7. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
+2. Go to _Internet_ → _Internet Settings_ → _Connection Settings_.
+3. Select your network from the list.
+4. Select _Change Settings_ → _DNS Settings_.
+5. Set _Automatic_ to _Manual_.
+6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
+7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
    - `94.140.14.49`
    - `94.140.14.59`
 8. Enregistrez les paramètres.

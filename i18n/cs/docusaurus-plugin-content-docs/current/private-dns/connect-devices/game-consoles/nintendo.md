@@ -20,12 +20,12 @@ Platí pro nové Nintendo 3DS, Nové Nintendo 3DS XL, Nové Nintendo 2DS XL, Nin
 Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS, nebo ji nakonfigurujte pomocí propojené IP adresy:
 
 1. V nabídce Domů vyberte _Nastavení systému_.
-2. Přejděte do _Nastavení internetu_ → _Nastavení připojení_.
-3. Vyberte soubor připojení a poté vyberte _Změnit nastavení_.
-4. Vyberte _DNS_ → _Nastavit_.
-5. Nastavte _Automaticky získat DNS_ na _Ne_.
-6. Vyberte _Podrobné nastavení_ → _Primární DNS_. Podržením šipky vlevo smažete stávající DNS.
-7. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
+2. Přejděte do _Internet_ → _Nastavení internetu_ → _Nastavení připojení_.
+3. Vyberte síť ze seznamu.
+4. Vyberte _Změnit nastavení_ → _Nastavení DNS_.
+5. Nastavte _Automaticky_ na _Ruční_.
+6. Vyberte _Primární DNS_. Podržením šipky doleva (tlačítko B) smažete stávající DNS.
+7. Do pole _Primární DNS_ zadejte jednu z následujících adres DNS serveru:
    - `94.140.14.49`
    - `94.140.14.59`
 8. Uložte nastavení.

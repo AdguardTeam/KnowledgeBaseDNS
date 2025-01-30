@@ -24,7 +24,7 @@ AdGuardアプリでは、暗号化されたDNSを使用できるため、Android
    ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. 「_カスタムサーバー_」までスクロールダウンし、「＋ DNSサーバーを追加する」をタップします。
    ![Add DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. 以下のDNSアドレスをコピーして、「サーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. 「_追加_」をタップします。
@@ -49,7 +49,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
    ![DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. 下にスクロールダウンして、「＋ カスタムDNSサーバーを追加する」をクリックします。
    ![Add a DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS server adresses_ field in the app. どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Custom DNS server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. 「_保存して選択する_」をタップします。
@@ -75,5 +75,5 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
 
 DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを設定することができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

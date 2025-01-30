@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bilinir ve kurulumu kolaydır, şifrelenmiş Özel AdGuard DNS'i cihazınıza kolayca kurmanızı sağlar.
 
-## DNS-over-HTTPS'i yapılandır
+## DNS-over-HTTPS'i yapılandırma
 
 1. Yönlendirici yönetici panelini açın. my.keenetic.net adresinden, yönlendiricinizin IP adresinden veya `192.168.1.1` adresinden erişilebilir.
 2. Ekranın altındaki menü düğmesine basın ve _Yönetim_ öğesini seçin.

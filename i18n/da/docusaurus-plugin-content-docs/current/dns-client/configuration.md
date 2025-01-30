@@ -28,11 +28,11 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 - `size`: Den maksimale størrelse af DNS-resultatcachen som menneskelig læsbar datastørrelse. Den skal være større end nul, hvis `enabled` er `true`.
 
-  **Example:** `128MB`
+  **Eksempel:** `128MB`
 
 - `client_size`: Maks. størrelse på DNS-resultatcachen for hver opsat klients adresse eller undernetværk som menneskelig læsbar datastørrelse. Den skal være større end nul, hvis `enabled` er `true`.
 
-  **Example:** `4MB`
+  **Eksempel:** `4MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 - 'timeout': Timeout for bootstrap DNS-forespørgsler som en menneskelig læsbar varighed.
 
-  **Eks.:** `2s`
+  **Eksempel:** `2s`
 
 ### `upstream` {#dns-upstream}
 

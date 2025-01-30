@@ -1,13 +1,13 @@
 ---
-title: Dedicated IPs
+title: 専用IP（Dedicated IPs）
 sidebar_position: 2
 ---
 
-## What are dedicated IPs?
+## 専用IPとは？
 
-Dedicated IPv4 addresses are available to users with Team and Enterprise subscriptions, while linked IPs are available to everyone.
+「専用IPv4アドレス」は、チームおよびエンタープライズプランを持つユーザーに提供される機能であり、「リンクされたIP」は全ユーザーが利用できる機能です。
 
-If you have a Team or Enterprise subscription, you'll receive several personal dedicated IP addresses. Requests to these addresses are treated as "yours," and server-level configurations and filtering rules are applied accordingly. Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+チームまたはエンタープライズプランをお持ちの場合、お客様は複数の専用IPアドレスを与えられます。 これらのアドレスへのリクエストは「あなたのもの」として扱われ、サーバーレベルの設定とフィルタリングルールがそれに応じて適用されます。 Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
 
 ## Why do you need a dedicated IP?
 

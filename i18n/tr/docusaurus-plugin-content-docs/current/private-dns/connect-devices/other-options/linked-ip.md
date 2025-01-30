@@ -90,7 +90,7 @@ On macOS and Linux, the easiest way is to use `cron`:
 1. Open crontab:
    - Terminalde `crontab -e` komutunu çalıştırın.
 2. Bir görev ekleyin:
-   - Aşağıdaki satırı ekleyin:
+   - Şu satırı ekleyin:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
    - Bu işlem her 5 dakikada bir çalışır
 3. Save crontab.

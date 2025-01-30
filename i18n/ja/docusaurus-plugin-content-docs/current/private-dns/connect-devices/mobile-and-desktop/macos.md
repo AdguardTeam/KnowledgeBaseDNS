@@ -42,11 +42,11 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
 
 1. AdGuard DNS に接続したいデバイスに [AdGuard VPN アプリ](https://adguard-vpn.com/mac/overview.html)をインストールします。
 2. AdGuard VPN アプリを開きます。
-3. Open _Settings_ → _App settings_ → _DNS servers_ → _Add Custom Server_.
+3. 「_設定_」 → 「_本アプリの設定_」 → 「_DNSサーバー_」 → 「_カスタムサーバーを追加_」を開きます。
    ![Add custom server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step3.png)
-4. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。 If you are not sure which one to prefer, select DNS-over-HTTPS.
+4. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。 どちらを選ぶべきかわからない場合は、「DNS-over-HTTPS」を選択します。
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
-5. Click _Save and select_.
+5. 「_保存して選択する_」をクリックします。
 6. 追加したDNSサーバーは、「カスタムDNSサーバー」リストの一番下に現れます。
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
@@ -54,7 +54,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
 
 ## 構成プロファイルを使用する
 
-A macOS device profile, also referred to as a "configuration profile" by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. これにより、デバイス上でプライベート AdGuard DNS を設定できます。
+macOSデバイスプロファイルは、Appleによって「構成プロファイル」とも呼ばれ、あなたが手動でmacOSデバイスにインストールしたり、MDMソリューションを使用してデプロイできる証明書に署名されたXMLファイルです。 これにより、デバイス上でプライベート AdGuard DNS を設定できます。
 
 :::note 【重要】
 
@@ -62,14 +62,14 @@ VPNを使用している場合、構成プロファイルは無視されます�
 
 :::
 
-1. On the device that you want to connect to AdGuard DNS, download the configuration profile.
-2. Choose Apple menu → _System Settings_, click _Privacy & Security_ in the sidebar, then click _Profiles_ on the right (you may need to scroll down).
+1. AdGuard DNSに接続したいデバイスで、構成プロファイルをダウンロードします。
+2. Appleメニュー→「システム設定」を選択し、「プライバシーとセキュリティ」をクリックし、右側の「プロファイル」をクリックします（スクロールダウンする必要がある場合があります）。
    ![Profile Downloaded \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step2.png)
-3. In the _Downloaded_ section, double-click the profile.
+3. 「ダウンロード済み」セクションで、プロファイルをダブルクリックします。
    ![Downloaded \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step3.png)
-4. Review the profile contents and click _Install_.
+4. プロファイルの内容を確認し、「_インストール_」をクリックします。
    ![Install \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
-5. Enter the admin password and click _OK_.
+5. 管理者パスワードを入力し、「OK」をクリックします。
 
 完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 
@@ -77,5 +77,5 @@ VPNを使用している場合、構成プロファイルは無視されます�
 
 DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを選ぶことができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -21,4 +21,4 @@ Wenn Sie das AdGuard DNS _Team_- oder _Enterprise_-plan abonniert haben, können
 
    ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
+3. Ihre Anfrage wird innerhalb von 1–3 Werktagen bearbeitet. Wir werden Sie per E-Mail über die Änderungen informieren

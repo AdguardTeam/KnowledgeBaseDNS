@@ -3,7 +3,7 @@ title: DNS-over-HTTPS with authentication
 sidebar_position: 4
 ---
 
-## Why it is useful
+## この方法のメリット
 
 DNS-over-HTTPS with authentication allows you to set a username and password for accessing your chosen server.
 

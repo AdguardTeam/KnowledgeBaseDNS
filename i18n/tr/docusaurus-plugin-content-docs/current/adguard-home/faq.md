@@ -102,7 +102,7 @@ Karmaşık bir sorunu gidermek için bazen ayrıntılı düzeyde günlük kaydı
 
 Bunları yapmadan önce, modern tarayıcıların HTTPS kullanmak üzere ayarlandığını, dolayısıyla web sunucusu sertifikasının gerçekliğini doğruladıklarını lütfen unutmayın. Bu, bunlardan herhangi birinin kullanılmasının uyarı ekranlarıyla sonuçlanacağı anlamına gelir.
 
-There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
+There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. Tarayıcılar bunları gerçekten desteklemeye başladığında bunları uygulayacağız.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08

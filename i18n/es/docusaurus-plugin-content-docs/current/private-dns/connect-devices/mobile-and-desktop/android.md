@@ -24,7 +24,7 @@ La app de AdGuard te permite usar DNS encriptado, lo que la hace perfecta para c
    ![Servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Desplázate hacia abajo hasta _Servidores personalizados_ y toca _Añadir servidor DNS_.
    ![Añadir servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copia una de las siguientes direcciones DNS y pégala en el campo _Direcciones del servidor_ en la aplicación. Si no estás seguro de cuál usar, selecciona _DNS-over-HTTPS_.
+7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Si no estás seguro de cuál usar, selecciona _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Servidor DNS personalizado \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Toca _Añadir_.
@@ -49,7 +49,7 @@ No todos los servicios VPN soportan DNS cifrado. Sin embargo, nuestro VPN sí lo
    ![Servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Desplázate hacia abajo y toca _Añadir un servidor DNS personalizado_.
    ![Añadir un servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS server adresses_ field in the app. Si no estás seguro de cuál usar, selecciona DNS-over-HTTPS.
+7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Si no estás seguro de cuál usar, selecciona DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Servidor DNS personalizado \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Toca _Guardar y seleccionar_.
