@@ -351,6 +351,21 @@ OpenDNS 服务器删除某些响应（包括带有 NODATA 的响应）中的 AUT
 | DNS-over-TLS | 提供商：`Surfnet` 主机名：`tls://dnsovertls.sinodun.com` IP 地址：`145.100.185.15` IPv6 地址：`2001:610:1:40ba:145:100:185:15` | [添加到 AdGuard](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | 提供商：`Surfnet` 主机名：`tls://dnsovertls1.sinodun.com` IP 地址：`145.100.185.16` 和 IPv6：`2001:610:1:40ba:145:100:185:16` | [添加到 AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that prioritizes user security and anonymity. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
+
+#### 标准
+
+| 协议                   | 地址                                           |                                                                                                                                                                                                                               |
+| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `162.55.52.228`                              | [Add to AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [Add to AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
 #### 其他采取「零日志」政策的 DNS 服务器。
 
 | 协议                 | 地址                                                                                                      |                                                                                                                                                                                                                              |
@@ -391,12 +406,13 @@ OpenDNS 服务器删除某些响应（包括带有 NODATA 的响应）中的 AUT
 
 [DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) 是一家拥有多年域名解析服务开发经验的隐私友好型 DNS 提供商，旨在为用户提供更快速、准确、稳定的递归解析服务。
 
-| 协议             | 地址                          |                                                                                                                                                                                  |
-| -------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `119.29.29.29`              | [添加到 AdGuard](adguard:add_dns_server?address=119.29.29.29&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [添加到 AdGuard](adguard:add_dns_server?address=2402:4e00::&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
-| DNS-over-HTTPS | `https://dns.pub/dns-query` | [添加到 AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
-| DNS-over-TLS   | `tls://dot.pub`             | [添加到 AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
+| 协议             | 地址                              |                                                                                                                                                                                                         |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `119.29.29.29`                  | [添加到 AdGuard](adguard:add_dns_server?address=119.29.29.29&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                                                |
+| DNS, IPv6      | `2402:4e00::`                   | [添加到 AdGuard](adguard:add_dns_server?address=2402:4e00::&name=)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                                  |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [添加到 AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)                        |
+| DNS-over-HTTPS | `https://sm2.doh.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.doh.pub), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.dns.pub) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [添加到 AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                                                |
 
 ### DNSWatchGO
 
@@ -1144,7 +1160,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) 提供三级过滤的 DNS-over-HTTPS 和 TLS 加密协议的 DNS（DoT）解析器。
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### 标准
 
@@ -1203,7 +1219,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) 拦截超过十四万个广告、广告跟踪、恶意软件和钓鱼域名。 无日志记录，无 ECS，DNSSEC 验证，免费！
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. 无日志记录，无 ECS，DNSSEC 验证，免费！
 
 #### 新加坡 DNS 服务器
 
@@ -1232,7 +1248,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) 是 Sebastian Schmidt 提供的一项注重隐私的 DNS 服务。 无日志记录，支持 DNSSEC 验证。
+[Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
 #### DNS 服务器 1
 
@@ -1244,7 +1260,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) 是一个位于越南的 DNS 服务器，供个人和小规模使用。 它具有广告拦截、恶意软件/网络钓鱼保护、成人内容过滤和 DNSSEC 验证功能。
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. 它具有广告拦截、恶意软件/网络钓鱼保护、成人内容过滤和 DNSSEC 验证功能。
 
 | 协议             | 地址                                      |                                                                                                                                                                                                                        |
 | -------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1252,3 +1268,11 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 | DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                          |
 | DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [添加到 AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS)，[添加到 AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
+### LaxrFar DNS
+
+[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
+
+| 协议        | 地址              |                                                                                                                                                   |
+| --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `23.176.184.32` | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |

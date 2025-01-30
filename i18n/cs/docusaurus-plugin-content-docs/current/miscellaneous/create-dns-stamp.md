@@ -1,7 +1,5 @@
 - - -
-title: Jak vytvořit vlastní razítko DNS pro zabezpečený DNS
-
-sidebar_position: 4
+title: Jak vytvořit vlastní razítko DNS pro zabezpečený DNS sidebar_position: 4
 - - -
 
 Tento průvodce vám ukáže, jak vytvořit vlastní razítko DNS pro zabezpečený DNS. Zabezpečený DNS je služba, která zvyšuje bezpečnost a soukromí na internetu šifrováním dotazů DNS. Tím se zabrání tomu, aby vaše dotazy zachytily nebo zmanipulovaly zákeřné subjekty.
@@ -14,11 +12,11 @@ Pokud však potřebujete další zabezpečení, jako jsou předvyřešené IP ad
 
 Razítka DNS jsou krátké řetězce, které obsahují všechny informace potřebné k připojení k zabezpečenému serveru DNS. Zjednodušují proces nastavení zabezpečeného DNS, protože uživatel nemusí všechny tyto údaje zadávat ručně.
 
-Razítka DNS umožňují přizpůsobit nastavení zabezpečeného DNS nad rámec obvyklých adres URL. Umožňují zejména zadávat pevně zadané adresy serverů, používat hašování certifikátů atd. Díky těmto funkcím jsou razítka DNS robustnější a univerzálnější možností konfigurace nastavení zabezpečeného DNS.
+Razítka DNS umožňují přizpůsobit nastavení zabezpečeného DNS nad rámec obvyklých adres URL. Umožňují zejména zadávat pevně zadané adresy serverů, používat hashování certifikátů atd. Díky těmto funkcím jsou razítka DNS robustnější a univerzálnější možností konfigurace nastavení zabezpečeného DNS.
 
 ## Výběr protokolu
 
-Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)` a `DNS-over-TLS (DoT)` a některé další. Výběr jednoho z těchto protokolů závisí na kontextu, ve kterém je budete používat.
+Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` a některé další. Výběr jednoho z těchto protokolů závisí na kontextu, ve kterém je budete používat.
 
 ## Vytvoření razítka DNS
 

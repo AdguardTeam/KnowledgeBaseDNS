@@ -11,7 +11,7 @@ Har man et Team- eller Enterprise-abonnement, vil man modtage flere personlige d
 
 ## Hvorfor har man brug for en dedikeret IP?
 
-Desværre tillader de tekniske specifikationer for den tilsluttede enhed ikke altid, at man kan opsætte en krypteret privat AdGuard DNS-server. I så tilfælde vil man skulle bruge standard ukrypteret DNS. Der er to måder at opsætte AdGuard DNS på: [Vha. linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md) og vha. dedikerede IP'er.
+Desværre tillader de tekniske specifikationer for den tilsluttede enhed ikke altid, at man kan opsætte en krypteret Private AdGuard DNS-server. I så tilfælde vil man skulle bruge standard ukrypteret DNS. Der er to måder at opsætte AdGuard DNS på: [Vha. linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md) og vha. dedikerede IP'er.
 
 Dedikerede IP'er er generelt en mere stabil mulighed. Linket IP har nogle begrænsninger, såsom at kun private adresser er tilladt, udbyderen kan ændre IP'en, og man skal genlinke IP-adressen. Med dedikerede IP’er får man en IP-adresse, der er eksklusivt ens egen, og alle forespørgsler tælles for ens enhed.
 

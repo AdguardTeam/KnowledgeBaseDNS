@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Sådan købes en abonnementstype {#purchase}
 
-AdGuard DNS-abonnementstyper kan købes via [adguard-dns.io](https://adguard-dns.io/license.html). Betaling kan ske via Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay og UnionPay. Vi accepterer også flg. kryptovalutaer: Ethereum, Litecoin og Tether. Abonnementstyper kan fornyes på måneds- eller årsbasis.
+AdGuard DNS-abonnementstyper kan købes via [adguard-dns.io](https://adguard-dns.io/license.html). Betaling kan ske via Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay og UnionPay. Abonnementstyper kan fornyes på måneds- eller årsbasis.
 
 Den Personal-abonnementstypen er gratis for [AdGuard VPN](https://adguard-vpn.com/welcome.html) betalende brugere.
 

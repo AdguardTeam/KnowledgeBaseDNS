@@ -28,11 +28,11 @@ Das Objekt `cache` konfiguriert das Zwischenspeichern der Ergebnisse von DNS-Abf
 
 - `size`: Die maximale Größe des DNS-Ergebnis-Caches als für den Nutzer erfassbare Datengröße. Sie muss größer als Null sein, wenn `enabled` auf `true` steht.
 
-  **Beispiel:** `128 MB`
+  **Example:** `128MB`
 
 - `client_size`: Die maximale Größe des DNS-Ergebnis-Caches für die Adresse oder das Subnetz eines jeden konfigurierten Clients in Form von für den Nutzer erfassbaren Daten. Sie muss größer als Null sein, wenn `enabled` auf `true` steht.
 
-  **Beispiel:** `4 MB`
+  **Example:** `4MB`
 
 ### `server` {#dns-server}
 
@@ -64,7 +64,7 @@ Das Objekt `bootstrap` konfiguriert die Auflösung von [upstream](#dns-upstream)
 
 - `timeout`: Die Zeitüberschreitung für Bootstrap-DNS-Anfragen in einer für den Nutzer erfassbaren Dauer.
 
-  **Beispiel:** `2 s`
+  **Beispiel:** `2s`
 
 ### `upstream` {#dns-upstream}
 

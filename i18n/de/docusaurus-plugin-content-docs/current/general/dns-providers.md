@@ -351,6 +351,21 @@ Ein gemeinschaftliches offenes Projekt zur Förderung, Implementierung und Berei
 | DNS-over-TLS | Anbieter: `Surfnet` Hostname: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` und IPv6: `2001:610:1:40ba:145:100:185:15`  | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | Anbieter: `Surfnet` Hostname: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` und IPv6: `2001:610:1:40ba:145:100:185:16` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that prioritizes user security and anonymity. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
+
+#### Standard
+
+| Protokoll            | Adresse                                      |                                                                                                                                                                                                                               |
+| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4            | `162.55.52.228`                              | [Add to AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [Add to AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
 #### Andere DNS-Server mit No-Logging-Richtlinie
 
 | Protokoll          | Adresse                                                                                                              |                                                                                                                                                                                                                                                   |
@@ -391,12 +406,13 @@ Diese Server verwenden einige Protokollierung, selbstsignierte Zertifikate oder 
 
 [DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) ist ein datenschutzfreundlicher DNS-Anbieter mit jahrelanger Erfahrung in der Entwicklung von Auflösungsdiensten für Domainnamen. Sein Ziel ist es, einen schnelleren, genaueren und stabileren rekursiven Auflösungsdienst zu bieten.
 
-| Protokoll      | Adresse                     |                                                                                                                                                                                                       |
-| -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `119.29.29.29`              | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=119.29.29.29&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2402:4e00::&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
-| DNS-over-HTTPS | `https://dns.pub/dns-query` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
-| DNS-over-TLS   | `tls://dot.pub`             | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
+| Protokoll      | Adresse                         |                                                                                                                                                                                                         |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `119.29.29.29`                  | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=119.29.29.29&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                           |
+| DNS, IPv6      | `2402:4e00::`                   | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2402:4e00::&name=), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                             |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)   |
+| DNS-over-HTTPS | `https://sm2.doh.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.doh.pub), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.dns.pub) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                           |
 
 ### DNSWatchGO
 
@@ -1144,7 +1160,7 @@ Marbled Fennec Networks hostet DNS-Resolver, die in der Lage sind, sowohl OpenNI
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) bietet DoH und DoT-Resolver mit drei Filterungsstufen
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 
@@ -1203,7 +1219,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) sperrt über 140.000 Werbe-, Werbe-Tracking, Malware und Phishing-Domains. Keine Protokollierung, kein ECS, DNSSEC-Validierung, kostenlos!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. Keine Protokollierung, kein ECS, DNSSEC-Validierung, kostenlos!
 
 #### Singapore DNS Server
 
@@ -1232,7 +1248,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) ist ein auf Datenschutz ausgerichteter DNS-Dienst, der von Sebastian Schmidt bereitgestellt wird. Keine Protokollierung, DNSSEC-Validierung.
+[Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
 #### DNS Server 1
 
@@ -1244,7 +1260,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) ist ein privater DNS-Server mit Sitz in Vietnam, der für den privaten und kleinen Gebrauch gedacht ist. Er bietet Werbeblocker, Schutz vor Malware/Phishing, Filter für nicht jugendfreie Inhalte und DNSSEC-Validierung.
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. Er bietet Werbeblocker, Schutz vor Malware/Phishing, Filter für nicht jugendfreie Inhalte und DNSSEC-Validierung.
 
 | Protokoll      | Adresse                                 |                                                                                                                                                                                                                                             |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1252,3 +1268,11 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 | DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
 | DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
+### LaxrFar DNS
+
+[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
+
+| Protokoll | Adresse         |                                                                                                                                                   |
+| --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `23.176.184.32` | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |

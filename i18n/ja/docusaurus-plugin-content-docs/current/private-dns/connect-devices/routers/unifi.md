@@ -3,27 +3,27 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. Unfortunately, it does not support encrypted DNS, but it is great for setting up AdGuard DNS via linked IP.
+UiFiルーター（一般的にはUbiquitiのUniFiシリーズとして知られています）には、家庭、ビジネス、エンタープライズ環境に適した多くの利点があります。 残念ながら、暗号化された DNS をサポートしていませんが、リンクされた IP を介して AdGuard DNS を設定するには最適です。
 
-## Use your router admin panel
+## ルーターの管理画面を使って接続する
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+UniFiルーターがDNS-over-TLSや DNS-over-HTTPS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
-1. Log in to the Ubiquiti UniFi controller.
-2. Go to _Settings_ → _Networks_.
-3. Click _Edit Network_ → _WAN_.
-4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses.
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-5. Click _Save_.
-6. Return to _Network_.
-7. Choose _Edit Network_ → _LAN_.
-8. Find _DHCP Name Server_ and select _Manual_.
-9. Enter your gateway address in the _DNS Server 1_ field. Alternatively, you can enter the AdGuard DNS server addresses in _DNS Server 1_ and _DNS Server 2_ fields:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-10. Save the settings.
-11. Link your IP (or your dedicated IP if you have a Team subscription).
+1. Ubiquiti UniFi コントローラにログインします。
+2. Settings → Networks にに移動します。
+3. 「Edit Network」→「WAN」をクリックします。
+4. 「Common Settings」→「DNS Server」に進み、以下のDNSサーバーアドレスを入力します。
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
+5. [_保存_] をクリックします。
+6. 「ネットワーク」に戻ります。
+7. Edit Network → LAN を選択します。
+8. DHCP Name Server を見つけ、Manual を選択します。
+9. DNS Server 1 フィールドにゲートウェイアドレスを入力します。 または、_DNS Server 1_ および _DNS Server 2_ フィールドに AdGuard DNS サーバー アドレスを入力することもできます：
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
+10. 設定を保存します。
+11. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](private-dns/connect-devices/other-options/linked-ip.md)

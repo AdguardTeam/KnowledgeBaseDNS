@@ -14,8 +14,10 @@ sidebar_position: 3
 :::
 
 Иногда резидентный IP-адрес уже может быть задействован, и при попытке подключения к нему, AdGuard DNS предотвратит соединение.
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+
+![Привязанный IPv4-адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
+Если это произошло, обратитесь в поддержку по адресу [support@adguard-dns.io](mailto:support@adguard-dns.io), и вам помогут с правильными настройками конфигурации.
 
 ## Как настроить привязанный IP
 
@@ -25,6 +27,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 2. Добавьте новое устройство или откройте настройки ранее подключённого устройства.
 3. Перейдите в раздел _Использовать адреса DNS-серверов_.
 4. Откройте _Адреса незашифрованных DNS-серверов_ и подключите привязанный IP.
+
    ![Привязанный IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Динамический DNS: зачем это нужно
@@ -44,14 +47,21 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 ## Динамический DNS: как настроить
 
 1. Сначала вам нужно проверить, поддерживает ли ваш роутер DDNS:
+
    - Перейдите в _Настройки роутера_ → _Сеть_
    - Найдите раздел DDNS или _Dynamic DNS_
-   - Перейдите в него и убедитесь, что настройки действительно поддерживаются. _This is just an example of what it may look like. It may vary depending on your router_
-     ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Перейдите в него и убедитесь, что настройки действительно поддерживаются. _This is just an example of what it may look like, the settings may vary depending on your router_
+
+   ![Поддержка DDNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Зарегистрируйте домен через популярный сервис, такой как [Dyn](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) или любой другой предпочитаемый вами поставщик DDNS.
+
 3. Введите домен в настройках роутера и синхронизируйте конфигурации.
+
 4. Откройте настройки _Привязанного IP-адреса_, затем перейдите в _Расширенные настройки_ и нажмите _Настроить Dyn_.
+
 5. Введите домен, который вы зарегистрировали ранее, и нажмите _Настроить Dyn_.
+
    ![Настроить Dyn \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Готово, вы успешно настроили Dyn!

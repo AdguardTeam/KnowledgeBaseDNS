@@ -11,15 +11,15 @@ Bir Takım veya Kurumsal aboneliğiniz varsa, birkaç kişisel özel IP adresi a
 
 ## Neden özel IP'ye ihtiyacınız var?
 
-Ne yazık ki, bağlı cihazın teknik özellikleri her zaman şifrelenmiş özel bir AdGuard DNS sunucusu kurmanıza izin vermeyebilir. Bu durumda, standart şifrelenmemiş DNS kullanmanız gerekir. AdGuard DNS'i kurmanın iki yolu vardır: [bağlı IP'leri kullanarak](/private-dns/connect-devices/other-options/linked-ip.md) ve özel IP'leri kullanarak.
+Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Bu durumda, standart şifrelenmemiş DNS kullanmanız gerekir. AdGuard DNS'i kurmanın iki yolu vardır: [bağlı IP'leri kullanarak](/private-dns/connect-devices/other-options/linked-ip.md) ve özel IP'leri kullanarak.
 
-Özel IP'ler genellikle daha istikrarlı bir seçenektir. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. Özel IP'lerle, yalnızca size ait bir IP adresine sahip olursunuz ve cihazınıza gelen tüm istekler sayılacaktır.
+Özel IP'ler genellikle daha istikrarlı bir seçenektir. Bağlı IP'nin bazı sınırlamaları vardır; örneğin yalnızca konut adreslerine izin verilir, sağlayıcınız IP'yi değiştirebilir ve IP adresini yeniden bağlamanız gerekir. Özel IP'lerle, yalnızca size ait bir IP adresine sahip olursunuz ve cihazınıza gelen tüm istekler sayılacaktır.
 
 Dezavantajı, genel DNS çözümleyicilerinde her zaman olduğu gibi alakasız trafik (tarayıcılar, botlar) almaya başlayabilirsiniz. Bot trafiğini kısıtlamak için [Erişim ayarları](/private-dns/server-and-settings/access.md) kullanmanız gerekebilir.
 
 Aşağıdaki talimatlar cihaza özel IP'nin nasıl bağlanacağını açıklamaktadır:
 
-## Connect AdGuard DNS using dedicated IPs
+## Özel IP'ler kullanarak AdGuard DNS'i bağlama
 
 1. Panoyu açın.
 2. Yeni bir cihaz ekleyin veya önceden oluşturulmuş bir cihazın ayarlarını açın.

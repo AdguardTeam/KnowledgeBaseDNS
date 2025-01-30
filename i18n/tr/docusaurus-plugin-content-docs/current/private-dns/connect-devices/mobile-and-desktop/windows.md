@@ -60,7 +60,7 @@ AdGuard DNS İstemcisi, şifrelenmiş DNS protokollerini kullanarak AdGuard DNS'
 
 Daha fazla ayrıntı [farklı makalede](/dns-client/overview/) bulunabilir.
 
-## Configure plain DNS
+## Düz DNS'i yapılandırma
 
 DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 

@@ -1,24 +1,22 @@
 - - -
-title: So erstellen Sie Ihren eigenen DNS-Stempel für Secure DNS
-
-sidebar_position: 4
+title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
 - - -
 
-Diese Anleitung zeigt Ihnen, wie Sie Ihren eigenen DNS-Stempel für Secure DNS erstellen. Secure DNS ist ein Dienst, der Ihre Internetsicherheit und Ihren Privatsphäre verbessert, indem er Ihre DNS-Anfragen verschlüsselt. Dadurch wird verhindert, dass Ihre Abfragen von böswilligen Akteuren abgefangen oder manipuliert werden.
+This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
 
-Sicheres DNS verwendet in der Regel `tls://`, `https://`, oder `quic://` URLs. Dies ist für die meisten Benutzer ausreichend und wird empfohlen.
+Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
 
-Wenn Sie jedoch zusätzliche Sicherheit benötigen, wie z. B. vorab aufgelöste Server-IPs und Zertifikats-Pinning durch Hash, können Sie Ihren eigenen DNS-Stempel erzeugen.
+However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
 
 ## Einführung in DNS-Stempel
 
-DNS-Stempel sind kurze Zeichenfolgen, die alle Informationen enthalten, die für die Verbindung mit einem sicheren DNS-Server erforderlich sind. Sie vereinfachen die Einrichtung von Secure DNS, da der Benutzer nicht alle Daten manuell eingeben muss.
+DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
 
-DNS-Stempel ermöglichen es Ihnen, die Secure DNS-Einstellungen über die üblichen URLs hinaus anzupassen. Sie ermöglichen insbesondere die Angabe von fest kodierten Serveradressen, die Verwendung von Zertifikathashing und so weiter. Diese Funktionen machen DNS-Stempel zu einer robusten und vielseitigen Option für die Konfiguration von Secure DNS-Einstellungen.
+DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
 
 ## Auswahl des Protokolls
 
-Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` und einige andere. Die Wahl eines dieser Protokolle hängt von dem Kontext ab, in dem Sie sie verwenden werden.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
 
 ## Erstellen eines DNS-Stempels
 
@@ -58,7 +56,7 @@ Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ
 
 ### Abrufen des Zertifikats-Hashes
 
-Um das Feld **Zertifikat-Hashes des Servers** auszufüllen, können Sie den folgenden Befehl verwenden, wobei Sie `<IP_ADDRESS>`, `<PORT>` und `<SERVER_NAME>` durch die entsprechenden Werte für Ihren DNS-Server ersetzen:
+To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -66,17 +64,17 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-Das Ergebnis des Hash-Befehls kann sich im Laufe der Zeit ändern, wenn das Zertifikat des Servers aktualisiert wird. Wenn also Ihr DNS-Stempel plötzlich nicht mehr funktioniert, müssen Sie möglicherweise den Hash des Zertifikats neu berechnen und einen neuen Stempel erstellen. Die regelmäßige Aktualisierung Ihres DNS-Stempels trägt dazu bei, den sicheren Betrieb Ihres Secure DNS-Dienstes zu gewährleisten.
+The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 
 :::
 
 ## Verwendung des DNS-Stempels
 
-Sie haben nun Ihren eigenen DNS-Stempel, den Sie zur Einrichtung von Secure DNS verwenden können. Dieser Stempel kann in AdGuard und AdGuard VPN eingegeben werden, um den Datenschutz und die Sicherheit im Internet zu verbessern.
+You now have your own DNS stamp that you can use to set up Secure DNS. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
 
 ## Beispiel für die Erstellung eines DNS-Stempels
 
-Lassen Sie uns ein Beispiel für die Erstellung eines Stempels für AdGuard DNS mit DoT durchgehen:
+Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. Öffnen Sie den [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/) (DNSCrypt-Stempel-Rechner).
 

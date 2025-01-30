@@ -13,9 +13,11 @@ Eine **Wohnsitz-IP-Adresse** wird einem Gerät zugewiesen, das mit einem örtlic
 
 :::
 
-Manchmal könnte eine Wohnsitz-IP-Adresse bereits verwendet werden, und falls Sie versuchen, eine Verbindung herzustellen, wird AdGuard DNS die Verbindung verhindern.
-![Verknüpfte IPv4-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
-Falls dies passiert, wenden Sie sich bitte an den Support unter [support@adguard-dns.io](mailto:support@adguard-dns.io), und sie werden Ihnen mit den richtigen Konfigurationseinstellungen weiterhelfen.
+Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+
+![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+
+If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
 
 ## So richten Sie eine verknüpfte IP ein
 
@@ -25,6 +27,7 @@ Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über ei
 2. Fügen Sie ein neues Gerät hinzu oder öffnen Sie die Einstellungen eines zuvor verbundenen Geräts.
 3. Gehen Sie zu _DNS-Serveradressen verwenden_.
 4. Öffnen Sie _Einfache DNS-Serveradressen_ und verbinden Sie die verknüpfte IP.
+
    ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamisches DNS: Warum es nützlich ist
@@ -44,14 +47,21 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 ## Dynamisches DNS: So richten Sie es ein
 
 1. Zuerst müssen Sie überprüfen, ob DDNS von Ihren Router-Einstellungen unterstützt wird:
+
    - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
    - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
-   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. _Dies ist nur ein Beispiel, wie es aussehen könnte. Dies kann je nach Router variieren_
-     ![DDNS unterstützt \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. _This is just an example of what it may look like, the settings may vary depending on your router_
+
+   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+
 2. Registrieren Sie Ihre Domain bei einem beliebten Service wie [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) oder einem anderen DDNS-Anbieter Ihrer Wahl.
+
 3. Geben Sie die Domain in die Router-Einstellungen ein und synchronisieren Sie die Konfigurationen.
+
 4. Gehen Sie zu den Einstellungen der Verknüpften IP, um die Adresse zu verbinden, navigieren Sie dann zu _Erweiterte Einstellungen_ und klicken Sie auf _DDNS konfigurieren_.
+
 5. Geben Sie die Domain ein, die Sie zuvor registriert haben, und klicken Sie auf _DDNS konfigurieren_.
+
    ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Fertig! Sie haben DDNS erfolgreich eingerichtet!
