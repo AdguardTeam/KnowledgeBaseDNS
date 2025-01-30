@@ -7,7 +7,7 @@ Oyun konsolları şifrelenmiş DNS'i desteklemez, ancak bağlı bir IP adresi ar
 
 Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi muhtemeldir, bu nedenle her zaman Özel AdGuard DNS'i yapılandırabilir ve oyun konsolunuzu buna bağlayabilirsiniz.
 
-[How to configure your router](/private-dns/connect-devices/routers/routers.md)
+[Yönlendiricinizi nasıl yapılandırabilirsiniz](/private-dns/connect-devices/routers/routers.md)
 
 ## AdGuard DNS'e bağlanma
 

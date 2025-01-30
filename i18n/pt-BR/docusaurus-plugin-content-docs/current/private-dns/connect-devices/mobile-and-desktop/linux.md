@@ -27,19 +27,19 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 
 ## Configure manualmente no Ubuntu (IP vinculado ou IP dedicado necessário)
 
-1. Clique em _Sistema_ → _Preferências_ → _Conexões de rede_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Selecione a aba _Sem fio_, depois escolha a rede à qual você está conectado.
-3. Clique em _Editar_ → _IPv4_.
-4. Altere os endereços DNS listados para os seguintes endereços:
+3. Go to _IPv4_.
+4. Set _Automatic (DHCP)_ to _Manual_.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Desligue o _Modo automático_.
 6. Clique em _Aplicar_.
 7. Vá para _IPv6_.
-8. Altere os endereços DNS listados para os seguintes endereços:
+8. Set _Automatic_ to _Manual_.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Desligue o _Modo automático_.
 10. Clique em _Aplicar_.
 11. Vincule seu endereço de IP (ou seu IP dedicado, caso tenha uma assinatura Equipe):
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)

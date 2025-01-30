@@ -27,19 +27,19 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 
 ## Ubuntu에서 수동으로 설정 (연결된 IP 또는 전용 IP 필요)
 
-1. **시스템** → **설정** → **네트워크 연결**을 클릭합니다.
+1. Click _System_ → _Settings_ → _Network_.
 2. **무선** 탭을 선택한 다음 현재 연결된 네트워크를 선택합니다.
-3. **편집** → **IPv4**를 클릭합니다.
-4. 나열된 DNS 주소를 다음 주소로 변경합니다:
+3. Go to _IPv4_.
+4. Set _Automatic (DHCP)_ to _Manual_.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. **자동 모드**를 끕니다.
 6. **적용**을 클릭합니다.
 7. **IPv6**로 이동합니다.
-8. 나열된 DNS 주소를 다음 주소로 변경합니다:
+8. Set _Automatic_ to _Manual_.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. **자동 모드**를 끕니다.
 10. **적용**을 클릭합니다.
 11. IP 주소(또는 Team을 구독하는 경우 전용 IP)를 연결합니다.
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)

@@ -12,6 +12,12 @@ toc_max_heading_level: 3
 
 Bu makale [AdGuard DNS API](private-dns/api/overview.md) için değişiklik günlüğünü içerir.
 
+## v1.10
+
+_12 Aralık 2024 tarihinde yayınlandı_
+
+Yeni bir DNS sunucusu ayarı eklendi — `block_chrome_prefetch`. Chrome'da _Özel önceden yükleme proxy'sini_ devre dışı bırakır. Bu özellik etkinleştirildiğinde, Chrome bazen Google Arama sonuçları sayfasındaki ve diğer katılımcı sitelerdeki bağlantıları kullanıcı tıklamadan önce ön belleğe yükler.
+
 ## v1.9
 
 _11 Temmuz 2024 tarihinde yayınlandı_

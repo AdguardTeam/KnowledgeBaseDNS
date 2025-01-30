@@ -3,7 +3,7 @@ title: Server und Einstellungen
 sidebar_position: 1
 ---
 
-## What is a server and how to use it
+## Was ein Server ist und wie man ihn benutzt
 
 Wenn Sie Privates AdGuard DNS einrichten, werden Sie auf den Begriff _Server_ stoßen.
 

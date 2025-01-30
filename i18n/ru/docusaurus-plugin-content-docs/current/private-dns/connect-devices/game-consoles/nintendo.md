@@ -20,12 +20,12 @@ sidebar_position: 2
 Настройте вашу игровую консоль для использования Публичного AdGuard DNS или настройте её через привязанный IP:
 
 1. В главном меню выберите _Системные настройки_.
-2. Перейдите в _Настройки интернета_ → _Настройки подключения_.
-3. Выберите файл подключения, затем выберите _Изменить настройки_.
-4. Выберите _DNS_ → _Настройки_.
-5. Установите для _Автополучения DNS_ значение _Нет_.
-6. Выберите _Подробная настройка_ → _Основной DNS_. Удерживайте левую стрелку, чтобы удалить существующий DNS.
-7. В поле «DNS-сервер» введите один из следующих адресов DNS-сервера:
+2. Go to _Internet_ → _Internet Settings_ → _Connection Settings_.
+3. Select your network from the list.
+4. Select _Change Settings_ → _DNS Settings_.
+5. Set _Automatic_ to _Manual_.
+6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
+7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
    - `94.140.14.49`
    - `94.140.14.59`
 8. Сохраните настройки.

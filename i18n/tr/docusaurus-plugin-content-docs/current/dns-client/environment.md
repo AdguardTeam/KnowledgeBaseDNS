@@ -16,7 +16,7 @@ Günlük hedefi, dosyaya giden mutlak bir yol veya özel değerlerden biri olmal
 
 Bu ortam değişkeni yapılandırma dosyasındaki [`log.output`][conf-log] alanını geçersiz kılar.
 
-**Default:** **Unset.**
+**Varsayılan:** **Ayarlanmamış.**
 
 [conf-log]: configuration.md#log
 
@@ -26,7 +26,7 @@ Günlük girişlerinin biçimi. Yapılandırma dosyasıyla ilgili makaledeki [g�
 
 Bu ortam değişkeni yapılandırma dosyasındaki [`log.format`][conf-log] alanını geçersiz kılar.
 
-**Default:** **Unset.**
+**Varsayılan:** **Ayarlanmamış.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
@@ -34,7 +34,7 @@ Bu ortam değişkeni yapılandırma dosyasındaki [`log.format`][conf-log] alan�
 
 Bu ortam değişkeni yapılandırma dosyasındaki [`log.timestamp`][conf-log] alanını geçersiz kılar.
 
-**Default:** **Unset.**
+**Varsayılan:** **Ayarlanmamış.**
 
 ## `VERBOSE` {#VERBOSE}
 
@@ -42,4 +42,4 @@ Bu ortam değişkeni yapılandırma dosyasındaki [`log.timestamp`][conf-log] al
 
 Bu ortam değişkeni yapılandırma dosyasındaki [`log.verbose`][conf-log] alanını geçersiz kılar.
 
-**Default:** **Unset.**
+**Varsayılan:** **Ayarlanmamış.**

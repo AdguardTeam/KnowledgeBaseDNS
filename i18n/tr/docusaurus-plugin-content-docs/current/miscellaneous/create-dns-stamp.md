@@ -2,9 +2,9 @@
 title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
 - - -
 
-This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
+Bu kılavuz, Güvenli DNS için kendi DNS damganızı nasıl oluşturacağınızı gösterir. Güvenli DNS, DNS sorgularınızı şifreleyerek internet güvenliğinizi ve gizliliğinizi artıran bir hizmettir. Bu, sorgularınızın kötü niyetli kişiler tarafından ele geçirilmesini veya manipüle edilmesini önler.
 
-Secure DNS usually uses `tls://`, `https://`, or `quic://` URLs. This is sufficient for most users and is the recommended way.
+Güvenli DNS genellikle `tls://`, `https://` veya `quic://` URL'lerini kullanır. This is sufficient for most users and is the recommended way.
 
 However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
 
@@ -16,7 +16,7 @@ DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In 
 
 ## Protokol seçimi
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` ve diğerleri yer alır. Bu protokollerden birini seçmek, bunları hangi bağlamda kullanacağınıza bağlıdır.
 
 ## DNS damgası oluşturma
 
@@ -64,13 +64,13 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+Karma komutunun sonucu, sunucunun sertifikası güncelleştirildikçe zaman içinde değişebilir. Bu nedenle, DNS damganız aniden çalışmayı durdurursa, sertifikanın karmasını yeniden hesaplamanız ve yeni bir damga oluşturmanız gerekebilir. DNS damganızı düzenli olarak güncellemek, Güvenli DNS hizmetinizin sürekli güvenli çalışmasını sağlamaya yardımcı olur.
 
 :::
 
 ## DNS damgasını kullanma
 
-You now have your own DNS stamp that you can use to set up Secure DNS. Bu damga, gelişmiş internet gizliliği ve güvenliği için AdGuard ve AdGuard VPN'e girilebilir.
+Artık Güvenli DNS kurmak için kullanabileceğiniz kendi DNS damganız var. Bu damga, gelişmiş internet gizliliği ve güvenliği için AdGuard ve AdGuard VPN'e girilebilir.
 
 ## DNS damgası oluşturma örneği
 

@@ -27,19 +27,19 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+3. Go to _IPv4_.
+4. Stel _Automatisch (DHCP)_ in op _Handmatig_.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
 6. Click _Apply_.
 7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+8. Stel _Automatisch_ in op _Handmatig_.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
     - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)

@@ -353,18 +353,29 @@ A collaborative open project to promote, implement, and deploy [DNS Privacy](htt
 
 ### FutureDNS
 
-[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that prioritizes user security and anonymity. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
+[FutureDNS](https://futuredns.eu.org) is a privacy-focused DNS service that blocks ads, trackers, and malware. It supports both standard DNS and encrypted protocols while maintaining a strict no-logging policy.
 
-#### Standard
+#### Servers
 
-| プロトコル                | アドレス                                         |                                                                                                                                                                                                                               |
-| -------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4            | `162.55.52.228`                              | [Add to AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
-| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [Add to AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
-| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
-| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+##### Germany
+
+| プロトコル          | アドレス                                         |                                                                                                                                                                                                                               |
+| -------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `162.55.52.228`                              | [Add to AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6      | `2a01:4f8:1c1c:adbc::`                       | [Add to AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS | `https://dns.de.futuredns.eu.org/dns-query/` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.de.futuredns.eu.org`              | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC  | `quic://dns.de.futuredns.eu.org`             | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
+##### United States
+
+| プロトコル          | アドレス                                        |                                                                                                                                                                                                                               |
+| -------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `5.161.67.176`                              | [Add to AdGuard](adguard:add_dns_server?address=5.161.67.176&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=5.161.67.176&name=)                                                                               |
+| DNS, IPv6      | `2a01:4ff:f0:87a2::`                        | [Add to AdGuard](adguard:add_dns_server?address=2a01:4ff:f0:87a2::&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4ff:f0:87a2::&name=)                                                                   |
+| DNS-over-HTTPS | `https://dns.us.futuredns.eu.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.us.futuredns.eu.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC  | `quic://dns.us.futuredns.eu.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ)                   |
 
 #### Other DNS servers with no-logging policy
 

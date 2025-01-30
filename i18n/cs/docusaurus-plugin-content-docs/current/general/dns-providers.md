@@ -355,16 +355,27 @@ Společný otevřený projekt na podporu, implementaci a nasazení [DNS Privacy]
 
 [FutureDNS](https://futuredns.eu.org) je DNS služba zaměřená na ochranu soukromí, která dává přednost bezpečnosti uživatelů a anonymitě. Podporuje standardní DNS i šifrované protokoly a zachovává přísnou zásadsu žádných záznamů aktivit.
 
-#### Standardní
+#### Servery
 
-| Protokol             | Adresa                                       |                                                                                                                                                                                                                                      |
-| -------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4            | `162.55.52.228`                              | [Přidat do AdGuardu](adguard:add_dns_server?address=162.55.52.228&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
-| DNS, IPv6            | `2a01:4f8:1c1c:adbc::`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
-| DNS-over-HTTPS, IPv4 | `https://dns.de.futuredns.eu.org/dns-query/` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-HTTPS, IPv6 | `https://dns.de.futuredns.eu.org/dns-query/` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-TLS         | `tls://dns.de.futuredns.eu.org`              | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
-| DNS-over-QUIC        | `quic://dns.de.futuredns.eu.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+##### Německo
+
+| Protokol       | Adresa                                       |                                                                                                                                                                                                                                      |
+| -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `162.55.52.228`                              | [Přidat do AdGuardu](adguard:add_dns_server?address=162.55.52.228&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
+| DNS, IPv6      | `2a01:4f8:1c1c:adbc::`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
+| DNS-over-HTTPS | `https://dns.de.futuredns.eu.org/dns-query/` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.de.futuredns.eu.org`              | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC  | `quic://dns.de.futuredns.eu.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
+##### Spojené státy americké
+
+| Protokol       | Adresa                                      |                                                                                                                                                                                                                                      |
+| -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `5.161.67.176`                              | [Přidat do AdGuardu](adguard:add_dns_server?address=5.161.67.176&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=5.161.67.176&name=)                                                                               |
+| DNS, IPv6      | `2a01:4ff:f0:87a2::`                        | [Přidat do AdGuardu](adguard:add_dns_server?address=2a01:4ff:f0:87a2::&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4ff:f0:87a2::&name=)                                                                   |
+| DNS-over-HTTPS | `https://dns.us.futuredns.eu.org/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.us.futuredns.eu.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC  | `quic://dns.us.futuredns.eu.org`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ)                   |
 
 #### Ostatní servery DNS se zásadou 'bez záznamů'
 
@@ -430,7 +441,7 @@ Tyto servery používají některé záznamy, samopodepsané certifikáty nebo n
 | -------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `193.110.81.0` a `185.253.5.0` | [Přidat do AdGuardu](adguard:add_dns_server?address=193.110.81.0&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
 | DNS-over-HTTPS | `https://zero.dns0.eu/`        | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
-| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Add to Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)               |
+| DNS-over-TLS   | `tls://zero.dns0.eu`           | [Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
 | DNS-over-QUIC  | `quic://zero.dns0.eu`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)                  |
 
 ### Dyn DNS
@@ -775,12 +786,12 @@ ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDa
 
 V "Soukromém" režimu — pouze překlad DNS.
 
-| Protokol                | Adresa                                                                                                   |                                                                                                                                                                                                                                                                                           |
-| ----------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4               | `149.112.121.10` a `149.112.122.10`                                                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=149.112.121.10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=149.112.121.10&name=)                                                                                                                                |
-| DNS, IPv6               | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                                | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:10A:80BB::10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:10A:80BB::10&name=)                                                                                                                          |
-| DNS-over-HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Přidat do AdGuard](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
-| DNS-over-TLS — soukromý | Název hostitele: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` a IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                        |
+| Protokol                | Adresa                                                                                                   |                                                                                                                                                                                                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4               | `149.112.121.10` a `149.112.122.10`                                                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=149.112.121.10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=149.112.121.10&name=)                                                                                                                                 |
+| DNS, IPv6               | `2620:10A:80BB::10` a `2620:10A:80BC::10`                                                                | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:10A:80BB::10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:10A:80BB::10&name=)                                                                                                                           |
+| DNS-over-HTTPS          | `https://private.canadianshield.cira.ca/dns-query`                                                       | [Přidat do AdGuardu](adguard:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://private.canadianshield.cira.ca/dns-query&name=private.canadianshield.cira.ca) |
+| DNS-over-TLS — soukromý | Název hostitele: `tls://private.canadianshield.cira.ca` IP: `149.112.121.10` a IPv6: `2620:10A:80BB::10` | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://private.canadianshield.cira.ca&name=private.canadianshield.cira.ca)                         |
 
 #### Chráněný
 
@@ -1074,7 +1085,7 @@ Bez záznamů | Filtruje reklamy, slídiče, blokuje krádež identity atd. | DN
 | -------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Přidat do AdGuardu](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Oficiální DNS server Dandelion Sprout's
+### Dandelion Sprout's Official DNS Server
 
 [Oficiální DNS server Dandelion Sprout's](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) je osobní služba DNS hostovaná v norském Trondheimu, která využívá infrastrukturu AdGuard Home.
 
@@ -1171,7 +1182,7 @@ Blokuje reklamy, slídiče a malware
 | DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
 | DNS-over-TLS   | `tls://dns.momou.ch`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
 
-#### Děti
+#### Kids
 
 Filtr vhodný pro děti, který také blokuje reklamy, slídiče a malware
 

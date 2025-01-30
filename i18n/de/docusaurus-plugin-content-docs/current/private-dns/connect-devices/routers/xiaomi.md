@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
+Xiaomi-Router haben viele Vorteile: ein stabiles, starkes Signal, Netzwerksicherheit, robuste Leistung und intelligente Verwaltung. Benutzer können bis zu 64 Geräte mit einem lokalen WLAN-Netzwerk verbinden.
 
 Leider unterstützen diese Router kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von AdGuard DNS über verknüpfte IPs.
 
@@ -21,5 +21,5 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 6. Speichern Sie die Einstellungen.
 7. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

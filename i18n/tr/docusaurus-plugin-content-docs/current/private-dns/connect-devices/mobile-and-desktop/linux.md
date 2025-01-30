@@ -27,19 +27,19 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. _Sistem_ → _Tercihler_ → _Ağ Bağlantıları_ öğesine tıklayın.
+1. Click _System_ → _Settings_ → _Network_.
 2. _Kablosuz_ sekmesini seçin, ardından bağlı olduğunuz ağı seçin.
-3. _Düzenle_ → _IPv4_ öğesine tıklayın.
-4. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+3. Go to _IPv4_.
+4. _Otomatik (DHCP)_ öğesini _Manuel_ olarak ayarlayın.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
 6. _Uygula_ öğesine tıklayın.
 7. _IPv6_ öğesine gidin.
-8. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+8. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
 10. _Uygula_ öğesine tıklayın.
 11. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
     - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
