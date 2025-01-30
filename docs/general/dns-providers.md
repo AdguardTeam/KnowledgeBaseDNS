@@ -956,7 +956,6 @@ These servers block adult websites and inappropriate contents.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `117.50.60.30` and `52.80.60.30` | [Add to AdGuard](adguard:add_dns_server?address=117.50.60.30&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=) |
 
-
 ### OpenNIC DNS
 
 [OpenNIC DNS](https://www.opennic.org/) is a free alternative DNS service by OpenNIC Project.
