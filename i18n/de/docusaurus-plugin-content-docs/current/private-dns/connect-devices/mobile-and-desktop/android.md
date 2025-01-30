@@ -24,7 +24,7 @@ Die AdGuard-App ermöglicht die Nutzung von verschlüsseltem DNS und eignet sich
    ![DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Blättern Sie nach unten zu _Benutzerdefinierte Server_ und tippen Sie auf _DNS-Server hinzufügen_.
    ![DNS-Server hinzufügen \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie _DNS-over-HTTPS_.
+7. Kopieren Sie eine der folgenden DNS-Adressen und fügen Sie sie in das Feld _Serveradressen_ in der App ein. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Benutzerdefinierter DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Tippen Sie auf _Hinzufügen_.
@@ -49,7 +49,7 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
    ![DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Blättern Sie nach unten und tippen Sie auf _Benutzerdefinierten DNS-Server hinzufügen_.
    ![DNS-Server hinzufügen \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
+7. Kopieren Sie eine der folgenden DNS-Adressen und fügen Sie sie in das Feld _DNS-Serveradressen_ in der App ein. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Benutzerdefinierter DNS-Server \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Tippen Sie auf _Speichern und auswählen_.
