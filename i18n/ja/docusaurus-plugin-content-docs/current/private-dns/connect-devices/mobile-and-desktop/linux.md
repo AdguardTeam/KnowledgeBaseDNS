@@ -8,7 +8,7 @@ Linuxデバイスを AdGuard DNS に接続するには、まずはデバイス�
 1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
 2. 「_デバイスタイプ_」というドロップダウンメニューで「Linux」を選択します。
 3. デバイスに名前を付けます。
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+   ![デバイスの接続 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## AdGuard DNS Client を使用する
 
@@ -27,23 +27,23 @@ AdGuard VPN for Linux (コマンドラインインターフェイス版AdGuard V
 
 ## Ubuntu で手動で設定する（リンクされたIPまたは専用IPが必要）
 
-1. System（システム）→Preferences（環境設定）→Network Connections（ネットワーク接続）をクリックします。
+1. System（システム）→Settings（設定）→Network（ネットワーク）をクリックします。
 2. 「Wireless」（無線・ワイヤレス）タブを選択し、現在接続しているWi-Fiネットワークを選択します。
-3. Edit（編集） → IPv4 をクリックします。
-4. そこにあるDNSアドレスを以下のものに変更します:
+3. 「IPv4」に移動します。
+4. 「_自動 (DHCP)_」を「_手動_」に設定します。
+5. そこにあるDNSアドレスを以下のものに変更します:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Auto mode（自動モード）をオフにします。
 6. 「Apply」（適用）をクリックします。
 7. 「IPv6」に移動します。
-8. そこにあるDNSアドレスを以下のものに変更します:
+8. 「_自動_」を「_手動_」に設定します。
+9. そこにあるDNSアドレスを以下のものに変更します:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Auto mode（自動モード）をオフにします。
 10. 「Apply」（適用）をクリックします。
 11. IPアドレス（チームプランをご利用の場合は専用IP）をリンクします。
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Debian で手動で設定する（リンクされたIPまたは専用IPが必要）
 
@@ -61,8 +61,8 @@ AdGuard VPN for Linux (コマンドラインインターフェイス版AdGuard V
 10. Enterキーを押します。
 11. Terminalを閉じます。
 12. IPアドレス（チームプランをご利用の場合は専用IP）をリンクします。
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## dnsmasq を使用する
 
@@ -108,7 +108,7 @@ EDNSはDNSプロトコルを拡張し、より大きなUDPパケットで追加�
 
 DeviceIDは8桁の16進数の識別子（例: `1a2b3c4d`）で、DNSリクエストを特定のデバイスに結びつけるのに役立ちます。 暗号化DNSの場合、このIDはドメインの一部となります（例：`1a2b3c4d.d.adguard-dns.com`）。 暗号化されていないDNSでは、この識別子を転送するためにEDNSが必要です。
 
-AdGuard DNS はEDNSを使用して、オプション番号`65074`を検索してDeviceIDを取得します。 そのようなオプションが存在する場合は、そこから DeviceID を読み取ります。 For this, you can use the `dig` command in the terminal:
+AdGuard DNS はEDNSを使用して、オプション番号`65074`を検索してDeviceIDを取得します。 そのようなオプションが存在する場合は、そこから DeviceID を読み取ります。 これには、ターミナルで `dig` コマンドを使うことができます:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
@@ -128,5 +128,5 @@ dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 
 DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを選ぶことができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

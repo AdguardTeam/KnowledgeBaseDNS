@@ -12,6 +12,12 @@ toc_max_heading_level: 3
 
 В этой статье содержится список изменений для [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.10
+
+_Released on December 12, 2024_
+
+Added a new DNS server setting — `block_chrome_prefetch`. It disables _Private prefetch proxy_ in Chrome. When this feature is enabled, Chrome will sometimes prefetch links on the Google Search results page and other participating websites even before the user clicks them.
+
 ## Версия 1.9
 
 _Выпущена 11 июля 2024 года_

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 OpenWRT yönlendiriciler, yönlendiricileri ve ağ geçitlerini kullanıcı tercihlerine göre yapılandırma esnekliği sağlayan açık kaynaklı, Linux tabanlı bir işletim sistemi kullanır. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
 
-## DNS-over-HTTPS'i yapılandır
+## DNS-over-HTTPS'i yapılandırma
 
 - **Komut satırı talimatları**. Gerekli paketleri yükleyin. DNS şifrelemesi otomatik olarak etkinleştirilmelidir.
 

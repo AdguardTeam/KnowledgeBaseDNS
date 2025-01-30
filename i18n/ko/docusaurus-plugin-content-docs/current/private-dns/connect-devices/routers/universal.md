@@ -20,7 +20,7 @@ sidebar_position: 2
 
    :::
 
-3. 라우터의 관리 콘솔에서 DNS 설정이 어디에 위치하는지 찾으십시오. 나열된 DNS 주소를 다음 주소로 변경합니다:
+3. 라우터의 관리 콘솔에서 DNS 설정이 어디에 위치하는지 찾으십시오. Change the listed DNS addresses to the following addresses:
    - IPv4: `94.140.14.49` 및 `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
 

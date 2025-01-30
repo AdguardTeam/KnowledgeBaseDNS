@@ -24,7 +24,7 @@ L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui la rend parfai
    ![Serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Faites défiler jusqu'à _Serveurs personnalisés_ et appuyez sur _Ajouter un serveur DNS_.
    ![Ajouter un serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copiez l'une des adresses DNS suivantes et collez-la dans le champ _Adresses du serveur_ dans l'application. Si vous n’êtes pas sûr de l’option à utiliser, sélectionnez _DNS-over-HTTPS_.
+7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Si vous n’êtes pas sûr de l’option à utiliser, sélectionnez _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Serveur DNS personnalisé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Appuyez sur _Ajouter_.
@@ -49,7 +49,7 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
    ![Serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Faites défiler et appuyez sur _Ajouter un serveur DNS personnalisé_.
    ![Ajouter un serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS server adresses_ field in the app. Si vous n'êtes pas sûr de laquelle utiliser, sélectionnez DNS-over-HTTPS.
+7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Si vous n'êtes pas sûr de laquelle utiliser, sélectionnez DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Serveur DNS personnalisé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Appuyez sur _Enregistrer et sélectionner_.

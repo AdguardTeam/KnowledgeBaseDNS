@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: 概要
 sidebar_position: 1
 ---
 
@@ -7,21 +7,21 @@ sidebar_position: 1
 
 AdGuard DNS を使用すると、プライベートDNSサーバーを設定してDNSリクエストを解決し、広告、トラッカー、悪意のあるドメインがデバイスに到達する前にブロックすることができます。
 
-Quick link: [Try AdGuard DNS](https://agrd.io/download-dns)
+クイックリンク: [AdGuard DNSを試す](https://agrd.io/download-dns)
 
 :::
 
 ![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
-## General
+## 一般設定
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Private AdGuard DNS offers all the advantages of a public AdGuard DNS server, including traffic encryption and domain blocklists. It also offers additional features such as flexible customization, DNS statistics, and Parental control. All these options are easily accessible and managed via a user-friendly dashboard.
+プライベートAdGuard DNSは、トラフィックの暗号化やドメインブロックリストなど、パブリックAdGuard DNSサーバーのすべての利点に加え、 柔軟なカスタマイズ、DNS統計、ペアレンタルコントロールなどの追加機能も提供しています。 これらのオプションはすべて、ユーザーフレンドリーなダッシュボードから簡単にアクセス・管理できます。
 
-### Why you need private AdGuard DNS
+### プライベートAdGuard DNSが必要な理由
 
-Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。 But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
 At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
 

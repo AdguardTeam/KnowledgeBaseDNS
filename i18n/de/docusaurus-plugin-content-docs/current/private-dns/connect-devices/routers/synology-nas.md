@@ -20,5 +20,5 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 7. Speichern Sie die Einstellungen.
 8. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](private-dns/connect-devices/other-options/linked-ip.md)

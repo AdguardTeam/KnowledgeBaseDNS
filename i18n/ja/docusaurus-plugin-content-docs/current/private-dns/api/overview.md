@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: 概要
 sidebar_position: 1
 toc_min_heading_level: 2
 toc_max_heading_level: 3
@@ -10,9 +10,9 @@ toc_max_heading_level: 3
     https://api.adguard-dns.io/static/api/API.md
 -->
 
-AdGuard DNS provides a REST API you can use to integrate your apps with it.
+AdGuard DNSは、アプリへの統合のために使用できる「REST API」を提供しております。テクニカル情報が多く正確性を保つため、以下の仕様概要は英語になっております。
 
-## Authentication
+## Authentication（認証）
 
 ### Generate Access token
 
@@ -157,13 +157,13 @@ OpenAPI specification is available at [https://api.adguard-dns.io/static/swagger
 
 You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
-### Changelog
+### Changelog（変更履歴）
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+AdGuard DNS API の変更履歴は全て[こちらのページ](private-dns/api/changelog.md)でご確認いただけます。
 
-## Feedback
+## フィードバック
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+本APIに新しいメソッドの追加を希望されている場合は、`devteam@adguard.com` までメールを送信していただき、追加したい内容をお知らせください。
 
 [openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

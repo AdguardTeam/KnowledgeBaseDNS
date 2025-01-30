@@ -13,11 +13,11 @@ Eine **Wohnsitz-IP-Adresse** wird einem Gerät zugewiesen, das mit einem örtlic
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+Es kann vorkommen, dass eine private IP-Adresse bereits verwendet wird. Wenn Sie dann versuchen, eine Verbindung zu dieser Adresse herzustellen, wird AdGuard DNS die Verbindung unterbinden.
 
-![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
+![Verknüpfte IPv4-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
 
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+Sollte dies der Fall sein, wenden Sie sich bitte an den Support unter [support@adguard-dns.io](mailto:support@adguard-dns.io), der Ihnen bei den richtigen Konfigurationseinstellungen behilflich sein wird.
 
 ## So richten Sie eine verknüpfte IP ein
 
@@ -50,9 +50,9 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
    - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
    - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
-   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. _This is just an example of what it may look like, the settings may vary depending on your router_
+   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
 
-   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS-Unterstützung \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registrieren Sie Ihre Domain bei einem beliebten Service wie [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) oder einem anderen DDNS-Anbieter Ihrer Wahl.
 

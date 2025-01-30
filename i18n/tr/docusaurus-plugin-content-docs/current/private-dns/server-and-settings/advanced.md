@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Gelişmiş ayarlar bölümü daha deneyimli kullanıcılara yöneliktir ve aşağıdaki ayarları içerir.
 
-## Engellenen alan adlarına yanıt ver
+## Engellenen alan adlarına yanıt verme
 
 Burada engellenen istek için DNS yanıtını seçebilirsiniz:
 
@@ -18,14 +18,14 @@ Burada engellenen istek için DNS yanıtını seçebilirsiniz:
 
 Kullanım süresi (TTL), bir istemci aygıtının bir DNS isteğine gelen yanıtı önbelleğe alması ve DNS sunucusundan yeniden istekte bulunmadan önbelleğinden alması için gereken zaman aralığını (saniye cinsinden) ayarlar. Eğer kullanım süresi yüksekse, yeni engellenmeyen istekler bir süre engelleniyormuş gibi görünmeye devam edebilir. TTL 0 ise cihaz yanıtları önbelleğe almaz.
 
-## iCloud Private Relay'e erişimi engelle
+## iCloud Private Relay'e erişimi engelleme
 
 iCloud Private Relay kullanan cihazlar, DNS ayarlarını yok sayabilir, bu nedenle AdGuard DNS onları koruyamaz.
 
-## Firefox canary alan adını engelle
+## Firefox canary alan adını engelleme
 
 AdGuard DNS sistem genelinde yapılandırıldığında Firefox'un ayarlarından DoH çözümleyicisine geçmesini engeller.
 
-## IP adreslerini günlüğe kaydet
+## IP adreslerini günlüğe kaydetme
 
 Varsayılan olarak AdGuard DNS, gelen DNS isteklerinin IP adreslerini günlüğe kaydetmez. Bu ayarı etkinleştirirseniz, IP adresleri günlüğe kaydedilecek ve Sorgu günlüğünde görüntülenecektir.

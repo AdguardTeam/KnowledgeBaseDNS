@@ -27,23 +27,23 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 
 ## Manuell auf Ubuntu konfigurieren (verknüpfte IP oder dedizierte IP erforderlich)
 
-1. Klicken Sie auf _System_ → _Einstellungen_ → _Netzwerkverbindungen_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Wählen Sie die Registerkarte _Wireless_, und dann das Netzwerk, mit dem Sie verbunden sind.
-3. Klicken Sie auf _Bearbeiten_ → _IPv4_.
-4. Ändern Sie die aufgelisteten DNS-Adressen in die folgenden Adressen:
+3. Go to _IPv4_.
+4. Setzen Sie _Automatisch (DHCP)_ auf _Manuell_.
+5. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Schalten Sie den _Auto-Modus_ aus.
 6. Klicken Sie auf _Übernehmen_.
 7. Gehen Sie zu _IPv6_.
-8. Ändern Sie die aufgelisteten DNS-Adressen in die folgenden Adressen:
+8. Setzen Sie _Automatisch_ auf _Manuell_.
+9. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Schalten Sie den _Auto-Modus_ aus.
 10. Klicken Sie auf _Übernehmen_.
 11. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Manuell auf Debian konfigurieren (verknüpfte IP oder dedizierte IP erforderlich)
 
@@ -61,8 +61,8 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 10. Drücken Sie _Eingabe_.
 11. Schließen Sie das Terminal.
 12. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## dnsmasq verwenden
 
@@ -102,25 +102,25 @@ Wenn Sie eine Benachrichtigung sehen, dass Sie nicht mit AdGuard DNS verbunden s
 
 :::
 
-## Use EDNS (Extended DNS)
+## EDNS (Extended DNS) verwenden
 
-EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+EDNS erweitert das DNS-Protokoll, indem es größere UDP-Pakete zur Übertragung zusätzlicher Daten ermöglicht. In AdGuard DNS ist es möglich, die DeviceID im reinen DNS mit einem zusätzlichen Parameter zu übergeben.
 
-DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+DeviceID, eine achtstellige hexadezimale Kennung (z. B. „1a2b3c4d“), hilft, DNS-Anfragen mit bestimmten Geräten zu verknüpfen. Bei verschlüsseltem DNS ist diese ID Teil der Domain (z. B. „1a2b3c4d.d.adguard-dns.com“). Bei unverschlüsseltem DNS ist EDNS erforderlich, um diese Kennung zu übertragen.
 
-AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+AdGuard DNS verwendet EDNS, um die DeviceID abzurufen, indem nach der Optionsnummer `65074` gesucht wird. Wenn eine solche Option vorhanden ist, wird die DeviceID von dort ausgelesen. Dazu können Sie den Befehl `dig` im Terminal verwenden:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 ```
 
-Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+Hier ist `65074` die Options-ID und „3031323334353637“ ihr Wert im Hex-Format (DeviceID: `01234567`).
 
-Fertig! DeviceID should be displayed.
+Fertig! Die DeviceID sollte angezeigt werden.
 
 :::note
 
-The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
+Der Befehl `dig` ist nur ein Beispiel, Sie können jede DNS-Software verwenden, die EDNS-Optionen hinzufügen kann, um diese Aktion durchzuführen.
 
 :::
 
@@ -128,5 +128,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -27,19 +27,19 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 
 ## Opsæt manuelt på Ubuntu (linket IP eller dedikeret IP kræves)
 
-1. Klik på _System_ → _Præferencer_ → _Netværksforbindelser_.
+1. Klik på _System_ → _Indstillinger_ → _Netværk_.
 2. Vælg fanen _Trådløst_ og dernæst det tilsluttede netværk.
-3. Klik på _Redigér_ → _IPv4_.
-4. Skift de listede DNS-adresser til flg.:
+3. Gå til _IPv4_.
+4. Indstil _Automatisk (DHCP)_ til _Manuel_.
+5. Skift de listede DNS-adresser til flg.:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Slå _Autotilstand_ fra.
 6. Klik på _Anvend_.
 7. Gå til _IPv6_.
-8. Skift de listede DNS-adresser til flg.:
+8. Indstil _Automatisk_ til _Manuel_.
+9. Skift de listede DNS-adresser til flg.:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Slå _Autotilstand_ fra.
 10. Klik på _Anvend_.
 11. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)

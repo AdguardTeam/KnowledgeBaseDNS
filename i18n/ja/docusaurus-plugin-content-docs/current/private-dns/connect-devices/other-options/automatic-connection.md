@@ -1,59 +1,59 @@
 ---
-title: Automatic connection
+title: デバイスの自動接続
 sidebar_position: 5
 ---
 
-## Why it is useful
+## この方法のメリット
 
-Not everyone feels at ease adding devices through the Dashboard. For instance, if you’re a system administrator setting up multiple corporate devices simultaneously, you’ll want to minimize manual tasks as much as possible.
+ダッシュボードからデバイスを追加する方法に安心できないこともあるかもしれません。 例えば、システム管理者が複数の企業内デバイスを同時にセットアップする場合、手作業はできるだけ少なくしたいところです。
 
-You can create a connection link and use it in the device settings. Your device will be detected and automatically connected to the server.
+そこで、接続用リンクを作成して、デバイス設定で使用するという方法（デバイスの自動接続）もあります。 そうすると、お使いのデバイスは検出され、サーバーに自動的に接続されます。
 
-## How to configure automatic connection
+## 自動接続の設定方法
 
-1. Open the _Dashboard_ and select the required server.
-2. Go to _Devices_.
-3. Enable the option to connect devices automatically.
+1. 「_ダッシュボード_」を開き、必要なサーバーを選択します。
+2. 「_デバイス_」に移動します。
+3. デバイスの自動的接続オプションを有効にします。
    ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
-Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
+これで、特別なアドレスを使用して、デバイス名、デバイスの種類、現在のサーバーIDを含むアドレスを使用して、デバイスを自動的にサーバーに接続できるようになります。 これらのアドレスがどのようなものなのか、また、アドレスを作成する方法を見てみましょう。
 
-### Examples of automatic connection addresses
+### 自動接続アドレスの例
 
-- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — これは `AdGuard Test Device` という名前の `Android` デバイスを `DNS-over-TLS` プロトコルで自動的に作成します。
 
-- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — これは `John Doe` という名前の `Windows` デバイスを `DNS-over-HTTPS` プロトコルで自動的に作成します。
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — これは `Mary Sue` という名前の `iOS` デバイスを `DNS-over-QUIC` プロトコルで自動的に作成します。
 
-### Naming conventions
+### 命名規則
 
-When creating devices manually, please note that there are restrictions related to name length, characters, spaces, and hyphens.
+手動でデバイスを作成する場合、名前の長さ、文字、スペース、ハイフンに関する制限があることに注意してください。
 
-**Name length**: 50 characters maximum. Characters beyond this limit are ignored.
+**名前の長さ**: 最大50文字。 この制限を超える文字は無視されます。
 
-**Permitted characters**: English letters, numbers, and hyphens `-`. Other characters are ignored.
+**使える文字**: 英字、数字、ハイフン「-」。 その他の文字は無視されます。
 
-**Spaces and hyphens**: Use a hyphen for a space and a double hyphen ( `--`) for a hyphen.
+**スペースとハイフン**: スペースにはハイフンを、ハイフンにはダブルハイフン ( `--`) を使用してください。
 
-**Device type**: Use the following abbreviations:
+**デバイスタイプ**: 以下の略語を使用してください:
 
 - Windows — `win`
 - macOS — `mac`
 - Android — `adr`
 - iOS — `ios`
 - Linux — `lnx`
-- Router — `rtr`
-- Smart TV — `stv`
-- Game console — `gam`
-- Other — `otr`
+- ルーター — `rtr`
+- スマートTV — `stv`
+- ゲーム機 — `gam`
+- その他 — `otr`
 
-## Link generator
+## リンクジェネレーター（リンク生成ツール）
 
-We’ve added a template that generates a link for the specific device type and protocol.
+任意のデバイスタイプとプロトコルのリンクを生成してくれるテンプレートもご用意しております。
 
-1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
-2. Select the protocol you want to use as well as the device name and the device type.
-3. Click _Generate link_.
+1. 「_サーバー_」 → 「_サーバー設定_」 → 「_デバイス_」 → 「_デバイスを自動的に接続_」 に移動し、「_リンクジェネレーターと手順_」をクリックします。
+2. 使用したいプロトコルとデバイス名、デバイスタイプを選択します。
+3. 「_リンクを生成する_」をクリックします。
    ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
-4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+4. これで、リンクの生成が完了です。そのサーバーアドレスをコピーし、デバイス上の[AdGuard アプリ](https://adguard.com/welcome.html)内で使用してください。

@@ -27,19 +27,19 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 
 ## Ruční konfigurace v Ubuntu (je vyžadována propojená IP nebo vyhrazená IP)
 
-1. Klikněte na _Systém_ → _Předvolby_ → _Síťová připojení_.
+1. Klikněte na _Systém_ → _Nastavení_ → _Síť_.
 2. Vyberte kartu _Bezdrátové připojení_ a poté vyberte síť, ke které jste připojeni.
-3. Klikněte na _Upravit_ → _IPv4_.
-4. Změňte uvedené adresy DNS na následující adresy:
+3. Přejděte na _IPv4_.
+4. Nastavte _Automaticky (DHCP)_ na _Ruční_.
+5. Změňte uvedené adresy DNS na následující adresy:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Vypněte _Automatický režim_.
 6. Klikněte na _Použít_.
 7. Přejděte na _IPv6_.
-8. Změňte uvedené adresy DNS na následující adresy:
+8. Nastavte _Automaticky_ na _Ruční_.
+9. Změňte uvedené adresy DNS na následující adresy:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Vypněte _Automatický režim_.
 10. Klikněte na _Použít_.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
