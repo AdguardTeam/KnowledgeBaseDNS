@@ -1301,3 +1301,26 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `23.176.184.32`                      | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
+
+### NWPS.fi DNS
+
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering. 
+
+#### Standard
+
+Blocks ads, trackers, and malware
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://public.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
+|DNS-over-TLS|`tls://public.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi) |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+|DNS-over-HTTPS|`https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
+|DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
+
