@@ -1,44 +1,44 @@
 ---
-title: Parental control
+title: ペアレンタルコントロール
 sidebar_position: 4
 ---
 
-## What is it
+## ペアレンタルコントロールとは
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with "sensitive" content.  You can use this feature to restrict your children's access to adult sites, customize search queries, block the use of popular services, and more.
+ペアレンタルコントロールは、「センシティブ」なコンテンツを含むウェブサイトへのアクセスを制限・カスタマイズする柔軟性を与える機能です。  この機能を使用すると、子供が成人向けサイトへアクセスできないように制限したり、検索クエリをカスタマイズしたり、人気のサービスの使用をブロックしたりできます。
 
-## How to set it up
+## 設定方法
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a "server" is in AdGuard DNS and learn how to create different servers with different sets of settings.
+ペアレンタルコントロール機能を含め、サーバー上で機能をすべて柔軟に設定できます。 [該当する記事](private-dns/server-and-settings/server-and-settings.md)では、AdGuard DNS における「サーバー」が何であるか、異なる設定セットを持つ異なるサーバーを作成する方法を確認するができます。
 
-Then, go to the settings of the selected server and enable the required configurations.
+次に、選択したサーバーの設定に移動し、必要な構成を有効にします。
 
-### Block adult websites
+### アダルト系サイトをブロックする
 
-Blocks websites with inappropriate and adult content.
+不適切なコンテンツや成人向けコンテンツのあるウェブサイトをブロックします。
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### セーフサーチ
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+検索エンジン（Google、Bing、DuckDuckGo、Yandex、Pixabay、Brave、Ecosia）で、不適切な検索結果を削除します。
 
 ![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
 
-### YouTube restricted mode
+### YouTube制限付きモードをオンにする
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+動画の下でコメントを表示・投稿できないようにし、YouTubeの18禁コンテンツに関わるオプションを無効にします。
 
 ![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
 
-### Blocked services and websites
+### ブロックするサービスやWebサイト
 
-AdGuard DNS blocks access to popular services with one click. It's useful if you don't want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS は、人気のあるサービスへのアクセスをワンクリックでブロックできます。 たとえば、AdGuard DNSに接続されているデバイスで、InstagramやYouTubeへのアクセスを防ぎたい場合に、この設定を使えます。
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Schedule off time
+### オフタイムを設定する
 
-Enables parental controls on selected days with a specified time interval. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.
+指定された時間間隔で選択した日にペアレンタルコントロールを有効にします。いわゆる「スクリーンタイム」設定のようなものです。 たとえば、子供にYouTube動画の閲覧を平日の21:00までに許可しているとします。 ところが、週末にはこの制限はないとします。 このような場合に、ニーズに合わせてスケジュールをカスタマイズし、希望の時間に選択したサイトへのアクセスをブロックするように設定できます。
 
 ![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)

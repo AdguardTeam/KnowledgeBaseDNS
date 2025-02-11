@@ -153,7 +153,7 @@ Sei pregato di consultare i riferimenti del metodo, [qui](reference.md).
 
 ### Specifiche OpenAPI
 
-Le specifiche di OpenAPI sono disponibili a [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
 Puoi utilizzare diversi strumenti per visualizzare l'elenco dei metodi API disponibili. Ad esempio, puoi aprire questo file su [https://editor.swagger.io/][swagger].
 
@@ -165,5 +165,5 @@ Il registro delle modifiche completo dell'API DNS di AdGuard è disponibile su [
 
 Se vorresti che quest'API fosse estesa con nuovi metodi, ti preghiamo di inviarci un'email a `devteam@adguard.com` e di farci sapere cosa vorresti fosse aggiunto.
 
-[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

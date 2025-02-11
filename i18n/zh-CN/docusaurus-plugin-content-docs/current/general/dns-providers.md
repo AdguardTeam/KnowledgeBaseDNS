@@ -932,15 +932,27 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 #### Pure Edition
 
-| 协议        | 地址                               |                                                                                                                                                 |
-| --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.10.10` and `52.80.52.52` | [Add to AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=) |
+| 协议             | 地址                                                  |                                                                                                                                                                                                                                         |
+| -------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `117.50.10.10` and `52.80.52.52`                    | [Add to AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=)                                                                                         |
+| DNS, IPv6      | `2400:7fc0:849e:200::8` and `2404:c2c0:85d8:901::8` | [Add to AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=)                                                                       |
+| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`             | [Add to AdGuard](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
+| DNS-over-TLS   | `tls://dot-pure.onedns.net`                         | [Add to AdGuard](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
 
 #### Block Edition
 
+| 协议             | 地址                                                  |                                                                                                                                                                                                                     |
+| -------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `52.80.66.66` and `117.50.22.22`                    | [Add to AdGuard](adguard:add_dns_server?address=52.80.66.66&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=)                                                                       |
+| DNS, IPv6      | `2400:7fc0:849e:200::4` and `2404:c2c0:85d8:901::4` | [Add to AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=)                                                   |
+| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                  | [Add to AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
+| DNS-over-TLS   | `tls://dot.onedns.net`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                         |
+
+#### Family Edition
+
 | 协议        | 地址                               |                                                                                                                                                 |
 | --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.11.11` and `52.80.66.66` | [Add to AdGuard](adguard:add_dns_server?address=117.50.11.11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.11.11&name=) |
+| DNS, IPv4 | `117.50.60.30` and `52.80.60.30` | [Add to AdGuard](adguard:add_dns_server?address=117.50.60.30&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=) |
 
 ### OpenNIC DNS
 
@@ -1005,7 +1017,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 [Yandex.DNS](https://dns.yandex.com/) 是一个免费的递归 DNS 服务。 Yandex.DNS 服务器位于俄罗斯、独联体国家和西欧。 用户的请求由提供高速连接的最近的数据中心处理。
 
-#### 基础
+#### Basic
 
 在「基础」模式下，服务器不进行流量过滤。
 
@@ -1048,7 +1060,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 [AhaDNS](https://ahadns.com/) 是由 Fredrik Pettersson 提供的零记录和广告拦截 DNS 服务。
 
-#### 荷兰
+#### Netherlands
 
 | 协议             | 地址                                    |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1057,7 +1069,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 | DNS-over-HTTPS | `https://doh.nl.ahadns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.nl.ahadns.net/dns-query&name=doh.nl.ahadns.net) |
 | DNS-over-TLS   | `tls://dot.nl.ahadns.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.nl.ahadns.net&name=dot.nl.ahadns.net)                         |
 
-#### 洛杉矶
+#### Los Angeles
 
 | 协议             | 地址                                    |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1182,7 +1194,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 | DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
 | DNS-over-TLS   | `tls://dns.momou.ch`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
 
-#### 儿童
+#### Kids
 
 儿童友好的过滤器，也会拦截广告、跟踪器和恶意软件
 
@@ -1232,7 +1244,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 [Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. 无日志记录，无 ECS，DNSSEC 验证，免费！
 
-#### 新加坡 DNS 服务器
+#### Singapore DNS Server
 
 | 协议             | 地址                                                                         | Location                                                                                                                                                                                                            |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1245,7 +1257,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [Add to AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### 日本 DNS 服务器
+#### Japan DNS Server
 
 | 协议             | 地址                                                                             |                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1261,7 +1273,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 [Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
-#### DNS 服务器 1
+#### DNS Server 1
 
 | 协议             | 地址                                                         |                                                                                                                                                                                                         |
 | -------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

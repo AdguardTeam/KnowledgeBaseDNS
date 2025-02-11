@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
+Xiaomi ルーターには、安定した強力な信号、ネットワーク セキュリティ、堅牢なパフォーマンス、スマートな管理など、多くの利点があります。 ユーザーは最大64台のデバイスをローカル Wi-Fi ネットワークに接続できます。
 
 残念ながら、暗号化された DNS をサポートしていませんが、リンクされた IP を介して AdGuard DNS を設定するには最適です。
 
@@ -21,5 +21,5 @@ UniFiルーターがDNS-over-TLSや DNS-over-HTTPS設定をサポートしてい
 6. 設定を保存します。
 7. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

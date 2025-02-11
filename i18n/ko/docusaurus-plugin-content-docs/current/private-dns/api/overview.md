@@ -153,7 +153,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### OpenAPI 사양
 
-OpenAPI 사양은 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]에서 확인할 수 있습니다.
+OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
 다양한 도구를 사용하여 사용 가능한 API 메서드 목록을 볼 수 있습니다. 예를 들어, [https://editor.swagger.io/][swagger]에서 이 파일을 열 수 있습니다.
 
@@ -165,5 +165,5 @@ OpenAPI 사양은 [https://api.adguard-dns.io/static/swagger/openapi.json][opena
 
 이 API를 새로운 방법으로 확장하고 싶다면 `devteam@adguard.com` 으로 이메일을 보내 추가하고 싶은 내용을 알려주세요.
 
-[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

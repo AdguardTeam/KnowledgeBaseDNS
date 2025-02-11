@@ -1,104 +1,104 @@
 ---
-title: Linked IPs
+title: リンクされたIP（Linked IPs）
 sidebar_position: 3
 ---
 
-## What linked IPs are and why they are useful
+## リンクされたIPとは何か、なぜ便利なのか
 
-Not all devices support encrypted DNS protocols. In this case, you should consider setting up unencrypted DNS. For example, you can use a **linked IP address**. The only requirement for a linked IP address is that it must be a residential IP.
+デバイスの中には、暗号化DNSプロトコルをサポートしていないものもあります。 その場合、暗号化されていないDNSを設定するという方法があります。 例えば、**リンクされたIPアドレス**を使用することができます。 リンクされたIPアドレスの唯一の要件は、居住用IPであることです。
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+**住宅用IPアドレス**は、住宅用ISP（インターネットプロバイダ）に接続されたデバイスに割り当てられています。 通常、物理的な場所に関連付けられ、個々の家やアパートに与えられます。 人々は、ウェブの閲覧、メールの送信、SNSの利用、またはコンテンツの閲覧・ストリーミングなど、日常的なオンライン活動のために住宅用IPアドレスを使用します。
 
 :::
 
-Sometimes, a residential IP address may already be in use, and if you try to connect to it, AdGuard DNS will prevent the connection.
+住宅用IPアドレスがすでに使用されている場合があり、そのIPアドレスに接続しようとすると、AdGuard DNS が接続を阻止します。
 
 ![Linked IPv4 address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked.png)
 
-If that happens, please reach out to support at [support@adguard-dns.io](mailto:support@adguard-dns.io), and they’ll assist you with the right configuration settings.
+そのような場合は、[support@adguard-dns.io](mailto:support@adguard-dns.io)までご連絡ください。正しいコンフィギュレーション設定をサポートいたします。
 
-## How to set up linked IP
+## リンクされたIPの設定方法
 
-The following instructions explain how to connect to the device via **linking IP address**:
+**リンクされたIPアドレス**を使用してデバイスに接続する方法は以下のとおりです：
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously connected device.
-3. Go to _Use DNS server addresses_.
-4. Open _Plain DNS server addresses_ and connect the linked IP.
+1. AdGuard DNSの「ダッシュボード」を開きます。
+2. 新しいデバイスを追加するか、以前に作成してあるデバイスの設定を開きます。
+3. 「_DNSサーバーアドレスを使用_」を選択します。
+4. 「_プレーン DNS サーバー アドレス_」を開き、リンクされたIPを接続します。
 
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## Dynamic DNS: Why it is useful
+## 「ダイナミック（動的）DNS」が便利な理由
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+デバイスがネットワークに接続するたびに、新しい動的IPアドレスが取得されます。 デバイスが切断されると、DHCPサーバーは解放されたIPアドレスをネットワーク上の別のデバイスに割り当てることができます。 つまり、動的IPアドレスは頻繁かつ予測不能に変更します。 そのため、デバイスが再起動されたり、ネットワークが変更されたりするたびに、設定を更新する必要が出てきます。
 
-To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
+リンクされたIPアドレスが自動的に更新されるようにするには、DNSを使用することができます。 AdGuard DNS は、あなたのDDNSドメインのIPアドレスを定期的にチェックし、それをあなたのサーバーにリンクしてくれます。
 
 :::note
 
-Dynamic DNS (DDNS) is a service that automatically updates DNS records whenever your IP address changes. It converts network IP addresses into easy-to-read domain names for convenience. The information that connects a name to an IP address is stored in a table on the DNS server. DDNS updates these records whenever there are changes to the IP addresses.
+ダイナミックDNS（DDNS）は、IPアドレスが変わるたびにDNSレコードを自動的に更新するサービスです。 ネットワークIPアドレスを読みやすいドメイン名に変換することで、利便性を高めます。 名前とIPアドレスを結びつける情報は、DNSサーバー上の表に格納されます。 DDNSは、IPアドレスに変更があるたびにこれらのレコードを更新します。
 
 :::
 
-This way, you won’t have to manually update the associated IP address each time it changes.
+こうすれば、IPアドレスが変更されるたびに、関連するIPアドレスを手動で更新する必要がなくなります。
 
-## Dynamic DNS: How to set it up
+## ダイナミックDNS（動的DNS）を設定する方法
 
-1. First, you need to check if DDNS is supported by your router settings:
+1. まず、お使いのルーターの設定でDDNSがサポートされているかどうかを確認する必要があります：
 
-   - Go to _Router settings_ → _Network_
-   - Locate the DDNS or the _Dynamic DNS_ section
-   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like, the settings may vary depending on your router_
+   - _ルーター設定_ → _ネットワーク_ に移動します
+   - DDNSまたは_ダイナミックDNS_（動的DNS）セクションを見つけます。
+   - それに移動し、設定が実際にサポートされていることを確認してください。 _以下は、見た目がどのようになるかの例です。実際の設定画面や項目は、ルーターによって若干異なる場合があります_：
 
-   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS がサポートされている場合 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
-2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
+2. 人気のあるサービス、例えば [DynDNS](https://dyn.com/remote-access/) や [NO-IP](https://www.noip.com/)、またはお好みの他の DDNS プロバイダでドメインを登録してください。
 
-3. Enter the domain in your router settings and sync the configurations.
+3. ルーターの設定にドメインを入力し、構成を同期します。
 
-4. Go to the Linked IP settings to connect the address, then navigate to _Advanced Settings_ and click _Configure DDNS_.
+4. リンクされた IP 設定に移動してアドレスを接続し、_詳細設定_ に移動して _DDNSの構成_ をクリックします。
 
-5. Input the domain you registered earlier and click _Configure DDNS_.
+5. 先ほど登録したドメインを入力し、「DDNS を設定」をクリックします。
 
    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you've successfully set up DDNS!
+これで、DDNS（動的DNS）の設定は完了です。
 
-## Automation of linked IP update via script
+## リンクされた IP 更新の自動化（スクリプト）
 
-### On Windows
+### Windows の場合
 
-The easiest way is to use the Task Scheduler:
+最も簡単な方法は、タスクスケジューラ（Task Scheduler）を使用することです：
 
-1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
-   - Select _Run Program_ as the action.
-2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
+1. タスクを作成します:
+   - タスク スケジューラを開きます。
+   - 新しいタスクを作成します。
+   - トリガーを 5 分ごとの実行に設定します。
+   - アクションとしては「_プログラムの実行_」を選択します。
+2. プログラムを選択します：
+   - プログラムまたはスクリプトのフィールドに、\`powershell'と入力します。
+   - Add Argumentsフィールドに、次のように入力します：
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
-3. Save the task.
+3. タスクを保存します。
 
-### On macOS and Linux
+### macOSとLinuxの場合
 
-On macOS and Linux, the easiest way is to use `cron`:
+macOS と Linux では、`cron` を使用するのが最も簡単な方法です。
 
-1. Open crontab:
-   - In the terminal, run `crontab -e`.
-2. Add a task:
-   - Insert the following line:
+1. crontab を開きます:
+   - ターミナルで `crontab -e` を実行します。
+2. タスクを追加します:
+   - 次の行を挿入します:
      `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - This job will run every 5 minutes
-3. Save crontab.
+   - このジョブは5分ごとに実行されます。
+3. crontabを保存します。
 
 :::note 【重要】
 
-- Make sure you have `curl` installed on macOS and Linux.
-- Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+- macOS と Linux に `curl` がインストールされていることを確認します。
+- 設定からアドレスをコピーし、`ServerID`と`UniqueKey`を置き換えることを忘れないでください。
+- より複雑なロジックやクエリー結果の処理が必要な場合は、スクリプト（BashやPythonなど）とタスクスケジューラーやcronの併用をご検討ください。
 
 :::

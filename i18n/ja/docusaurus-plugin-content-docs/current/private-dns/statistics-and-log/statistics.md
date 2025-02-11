@@ -1,55 +1,55 @@
 ---
-title: Statistics
+title: 統計
 sidebar_position: 2
 ---
 
-## General statistics
+## 全般的な統計
 
-The _Statistics_ tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
+「統計」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。 リクエストの総数と場所、ブロックされたリクエストの数、リクエスト先の企業リスト、リクエストの種類、最もリクエストの多いドメインが表示されます。
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
-## Categories
+## カテゴリ
 
-### Requests types
+### リクエストタイプ
 
-- **Advertising**: advertising and other ad-related requests that collect and share user data, analyze user behavior, and target ads
-- **Trackers**: requests from websites and third parties for the purpose of tracking user activity
-- **Social media**: requests to social network websites
-- **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
-- **Other**
+- **広告**: ユーザーデータを収集・共有し、ユーザーの行動を分析し、広告をターゲティングする広告およびその他の広告関連リクエスト
+- **トラッカー**: ユーザーの活動を追跡することを目的としる、ウェブサイトやサードパーティからのリクエスト
+- **ソーシャルメディア**: SNSウェブサイトへのリクエスト
+- **CDN**: エンドユーザーへのコンテンツ配信を高速化するプロキシサーバーの世界的なネットワークであるコンテンツ・デリバリー・ネットワーク（CDN）への接続リクエスト
+- **その他**
 
 ![Request types \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/request_types.png)
 
-### Top companies
+### リクエストが一番多い企業
 
-Here you can see the companies that have sent the most requests.
+ここでは、最も多くのリクエストを送信している企業が表示されます。
 
 ![Top companies \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_companies.png)
 
-### Top destinations
+### リクエストが一番多い国
 
-This shows the countries to which the most requests have been sent.
+ここでは、どの国へ最も多くのリクエストが送信されているのかが表示されます。
 
-In addition to the country names, the list contains two more general categories:
+国名に加えて、リストにはさらに2つの一般カテゴリが含まれます：
 
-- **Not applicable**: Response doesn't include IP address
-- **Unknown destination**: Country can't be determined from IP address
+- **該当なし**: 応答に IP アドレスが含まれていません
+- **送信先不明**: IPアドレスから国を特定できません
 
 ![Top destinations \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 
-### Top domains
+### リクエストが一番多いドメイン
 
-Contains a list of domains that have been sent the most requests.
+ここでは、どのドメインへ最も多くのリクエストが送信されているのかが表示されます。
 
 ![Top domains \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
-### Encrypted requests
+### 暗号化されたリクエスト
 
-Shows the total number of requests and the percentage of encrypted and unencrypted traffic.
+リクエストの総数と、暗号化されたトラフィックと暗号化されていないトラフィックの割合が表示されます。
 
 ![Encrypted requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
 
-### Top clients
+### 上位クライアント
 
-Displays the number of requests made to clients. To view client IP addresses, enable the _Log IP addresses_ option in the _Server settings_. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.
+ここでは、クライアントへのリクエスト数が表示されます。 クライアントのIPアドレスを表示するには、「サーバー設定」で「<b>IPアドレスをログ記録する</b>」を有効にしてください。 [サーバー設定の詳細はこちら](/private-dns/server-and-settings/advanced.md)をご覧ください。
