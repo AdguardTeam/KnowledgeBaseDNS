@@ -5,7 +5,7 @@ sidebar_position: 7
 
 OpenWRT yönlendiriciler, yönlendiricileri ve ağ geçitlerini kullanıcı tercihlerine göre yapılandırma esnekliği sağlayan açık kaynaklı, Linux tabanlı bir işletim sistemi kullanır. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
 
-## DNS-over-HTTPS'i yapılandır
+## DNS-over-HTTPS'i yapılandırma
 
 - **Komut satırı talimatları**. Gerekli paketleri yükleyin. DNS şifrelemesi otomatik olarak etkinleştirilmelidir.
 
@@ -38,7 +38,7 @@ https-dns-proxy'yi yapılandırmak için _LuCI_ → _Hizmetler_ → _HTTPS DNS P
 
 ## DNS-over-TLS'yi yapılandırma
 
-- **Komut satırı talimatları**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
+- **Komut satırı talimatları**. Dnsmasq DNS rolünü [devre dışı bırakın](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) veya isteğe bağlı olarak DHCP rolünü odhcpd ile [değiştirerek](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) tamamen kaldırın.
 
   ```# Install packages
   1. opkg update

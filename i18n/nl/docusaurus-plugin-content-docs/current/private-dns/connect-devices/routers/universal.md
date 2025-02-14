@@ -28,5 +28,5 @@ Here are some general instructions for setting up Private AdGuard DNS on routers
 
 5. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

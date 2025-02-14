@@ -351,6 +351,32 @@ Et åbent samarbejdsprojekt til fremme, implementering og udbredelse af [DNS-for
 | DNS-over-TLS | Udbyder: `Surfnet` Værtsnavn: `tls://dnsovertls.sinodun.com` IP: `145.100.185.15` og IPv6: `2001:610:1:40ba:145:100:185:15`  | [Føj til AdGuard](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | Udbyder: `Surfnet` Værtsnavn: `tls://dnsovertls1.sinodun.com` IP: `145.100.185.16` og IPv6: `2001:610:1:40ba:145:100:185:16` | [Føj til AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
+### FutureDNS
+
+[FutureDNS](https://futuredns.eu.org) er en fortrolighedsfokuseret DNS-tjeneste, der blokerer annoncer, trackere og malware. Den understøtter både standard DNS og krypterede protokoller, og opretholder samtidig en streng nul logning-politik.
+
+#### Servere
+
+##### Tyskland
+
+| Protokol       | Adresse                                      |                                                                                                                                                                                                                                     |
+| -------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `162.55.52.228`                              | [Føj til AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                                 |
+| DNS, IPv6      | `2a01:4f8:1c1c:adbc::`                       | [Føj til AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                                   |
+| DNS-over-HTTPS | `https://dns.de.futuredns.eu.org/dns-query/` | [Føj til AdGuard VPN](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.de.futuredns.eu.org`              | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                         |
+| DNS-over-QUIC  | `quic://dns.de.futuredns.eu.org`             | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                       |
+
+##### USA
+
+| Protokol       | Adresse                                     |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `5.161.67.176`                              | [Føj til AdGuard](adguard:add_dns_server?address=5.161.67.176&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=5.161.67.176&name=)                                                                               |
+| DNS, IPv6      | `2a01:4ff:f0:87a2::`                        | [Føj til AdGuard](adguard:add_dns_server?address=2a01:4ff:f0:87a2::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4ff:f0:87a2::&name=)                                                                   |
+| DNS-over-HTTPS | `https://dns.us.futuredns.eu.org/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns) |
+| DNS-over-TLS   | `tls://dns.us.futuredns.eu.org`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT)                     |
+| DNS-over-QUIC  | `quic://dns.us.futuredns.eu.org`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ)                   |
+
 #### Andre DNS-servere med nul logning-politik
 
 | Protokol           | Adresse                                                                                                             |                                                                                                                                                                                                                                       |
@@ -391,12 +417,13 @@ Disse servere bruger noget logning, selvsignerede certifikater eller ingen under
 
 [DNSPod Public DNS+](https://www.dnspod.cn/products/publicdns) er en fortrolighedsvenlig DNS-udbyder med mange års erfaring inden for udvikling af domænenavnsopløsningstjenester, hvis formål er at give brugerne en hurtigere, mere præcis og stabil rekursiv opløsningstjeneste.
 
-| Protokol       | Adresse                     |                                                                                                                                                                                           |
-| -------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `119.29.29.29`              | [Føj til AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                         |
-| DNS, IPv6      | `2402:4e00::`               | [Føj til AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                           |
-| DNS-over-HTTPS | `https://dns.pub/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub) |
-| DNS-over-TLS   | `tls://dot.pub`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                         |
+| Protokol       | Adresse                         |                                                                                                                                                                                                           |
+| -------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `119.29.29.29`                  | [Føj til AdGuard](adguard:add_dns_server?address=119.29.29.29&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=119.29.29.29&name=)                                                         |
+| DNS, IPv6      | `2402:4e00::`                   | [Føj til AdGuard](adguard:add_dns_server?address=2402:4e00::&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2402:4e00::&name=)                                                           |
+| DNS-over-HTTPS | `https://dns.pub/dns-query`     | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.pub/dns-query&name=dns.pub)                 |
+| DNS-over-HTTPS | `https://sm2.doh.pub/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.doh.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://sm2.doh.pub/dns-query&name=sm2.dns.pub) |
+| DNS-over-TLS   | `tls://dot.pub`                 | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.pub&name=dot.pub), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.pub&name=dot.pub)                                         |
 
 ### DNSWatchGO
 
@@ -1069,9 +1096,9 @@ Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syn
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Føj til AdGuard](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853)                             |
 | DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582)                   |
-| DNS, IPv4      | Varierer — se link ovenfor.                           |                                                                                                                                                                                                                                                                                                   |
-| DNS, IPv6      | Varierer — se link ovenfor.                           |                                                                                                                                                                                                                                                                                                   |
-| DNSCrypt, IPv4 | Varierer — se link ovenfor.                           |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv4      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv6      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
+| DNSCrypt, IPv4 | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
 
 ### DNS Forge
 
@@ -1144,7 +1171,7 @@ Marbled Fennec Networks hoster DNS-opløsere, som er i stand til at opløse båd
 
 ### momou! DNS
 
-[momou! DNS](https://dns.momou.ch/) leverer DoH- og DoT-opløsere med tre filtreringsniveauer
+[momou&#33; DNS](https://dns.momou.ch/) leverer DoH- og DoT-opløsere med tre niveauer af filtrering
 
 #### Standard
 
@@ -1213,7 +1240,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 | DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                               | [Føj til AdGuard](adguard:add_dns_server?address=2400:6180:0:d0::5f6e:4001&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:6180:0:d0::5f6e:4001&name=)                                           |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.dns.tiar.app` IP: `174.138.21.128`              | [Føj til AdGuard](sdns://AQMAAAAAAAAADjE3NC4xMzguMjEuMTI4IO-WgGbo2ZTwZdg-3dMa7u31bYZXRj5KykfN1_6Xw9T2HDIuZG5zY3J5cHQtY2VydC5kbnMudGlhci5hcHA)                                                                         |
 | DNSCrypt, IPv6 | Udbyder: `2.dnscrypt-cert.dns.tiar.app` IP: `[2400:6180:0:d0::5f6e:4001]` | [Føj til AdGuard](sdns://AQMAAAAAAAAAG1syNDAwOjYxODA6MDpkMDo6NWY2ZTo0MDAxXSDvloBm6NmU8GXYPt3TGu7t9W2GV0Y-SspHzdf-l8PU9hwyLmRuc2NyeXB0LWNlcnQuZG5zLnRpYXIuYXBw)                                                        |
-| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cached via third-party)               | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.tiarap.org/dns-query&name=doh.tiarap.org), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.tiarap.org/dns-query&name=doh.tiarap.org) |
+| DNS-over-HTTPS | `https://doh.tiarap.org/dns-query` (cachet via tredjepart)                | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.tiarap.org/dns-query&name=doh.tiarap.org), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.tiarap.org/dns-query&name=doh.tiarap.org) |
 | DNS-over-HTTPS | `https://doh.tiar.app/dns-query`                                          | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.tiar.app/dns-query&name=doh.tiar.app), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.tiar.app/dns-query&name=doh.tiar.app)         |
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                     | [Føj til AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                      | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
@@ -1252,3 +1279,11 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 | DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [Føj til AdGuard](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
 | DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
+### LaxrFar DNS
+
+[LaxrFar DNS](https://laxrfar.xyz/) er en DNS, med fokus på adblocking, fortrolighed, beskyttelse mod malware og med en striks nul logning-politik.
+
+| Protokol  | Adresse         |                                                                                                                                                     |
+| --------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `23.176.184.32` | [Føj til AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |

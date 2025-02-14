@@ -13,7 +13,7 @@ Sunucularınızdaki ebeveyn denetimi özelliği de dâhil olmak üzere tüm öze
 
 Daha sonra seçili sunucunun ayarlarına giderek gerekli yapılandırmaları etkinleştirin.
 
-### Yetişkin siteleri engelle
+### Yetişkin siteleri engelleme
 
 Uygunsuz ve yetişkinlere yönelik içeriğe sahip siteleri engeller.
 

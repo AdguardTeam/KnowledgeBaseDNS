@@ -24,7 +24,7 @@ sidebar_position: 2
    ![DNS сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Прокрутите вниз до раздела «Пользовательские серверы» и нажмите _Добавить DNS-сервер_.
    ![Добавить DNS-сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Скопируйте один из следующих DNS-адресов и вставьте его в поле _Адреса сервера_ в приложении. Если вы не уверены, какой выбрать, выберите _DNS-over-HTTPS_.
+7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Если вы не уверены, какой выбрать, выберите _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Пользовательский DNS-сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Нажмите _Добавить_.
@@ -49,7 +49,7 @@ sidebar_position: 2
    ![DNS сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Прокрутите вниз и нажмите _Добавить пользовательский DNS-сервер_.
    ![Добавить DNS-сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Скопируйте один из следующих DNS-адресов и вставьте его в поле _DNS-сервера_ в приложении. Если вы не уверены, какой выбрать, выберите DNS-over-HTTPS.
+7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Если вы не уверены, какой выбрать, выберите DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Пользовательский DNS-сервер \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Нажмите _Сохранить и выбрать_.

@@ -3,7 +3,7 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik-Router verwenden das Open-Source-Betriebssystem RouterOS, das Routing, drahtlose Netzwerke und Firewall-Dienste für Heim- und Kleinbüronetzwerke bereitstellt.
+MikroTik-Router verwenden das quelloffene Betriebssystem RouterOS, das Routing-, drahtlose Netzwerk- und Firewall-Dienste für Heim- und kleine Büronetzwerke bietet.
 
 ## DNS-over-HTTPS konfigurieren
 
@@ -38,23 +38,27 @@ MikroTik-Router verwenden das Open-Source-Betriebssystem RouterOS, das Routing, 
    - Doppelklicken Sie auf den Client, der für Ihre Internetverbindung verwendet wird (normalerweise auf der WAN-Schnittstelle)
    - Deaktivieren Sie _Peer DNS verwenden_
    - Klicken Sie auf _OK_
-6. Ihre IP-Adresse verknüpfen.
-7. Testen und überprüfen:
+6. Testen und überprüfen:
    - Möglicherweise müssen Sie Ihren MikroTik-Router neu starten, damit alle Änderungen wirksam werden
    - Leeren Sie den DNS-Cache Ihres Browsers. Sie können ein Tool wie [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) verwenden, um zu prüfen, ob Ihre DNS-Anfragen jetzt über AdGuard geleitet werden
 
-## Administrationsoberfläche Ihres Routers verwenden
+## Mein Router unterstützt kein DNS-over-HTTPS
 
-Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
+Verwenden Sie diese Anleitung, wenn Ihr MikroTik-Router keine DNS-over-HTTPS-Konfiguration unterstützt:
 
-1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
-2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
+1. Aufrufen der MikroTik-Router-Einstellungen:
+   - Öffnen Sie Ihren Browser und rufen Sie die IP-Adresse Ihres Routers auf (normalerweise `192.168.88.1`)
+   - Sie können auch Winbox verwenden, um eine Verbindung zu Ihrem MikroTik-Router herzustellen
+   - Geben Sie den Benutzernamen und das Passwort des Administrators ein
+2. Einfaches DNS konfigurieren:
+   - Öffnen Sie _IP_ ➜ _DNS_
+   - Fügen Sie im Abschnitt _Server_ die folgenden AdGuard DNS-Server hinzu:
+     - IPv4: `94.140.14.49` und `94.140.14.59`
+     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
+     - Dedizierte IPv6: Private AdGuard DNS unterstützt dedizierte IPv6-Adressen. Um sie zu finden, öffnen Sie die Übersicht, klicken Sie auf _Einstellungen_ neben Ihrem Gerät ➜ _Einzelne DNS-Serveradressen_ ➜ _Zugeordnete IPv6-Adressen_.
+   - Klicken Sie auf _OK_
 3. Öffnen Sie _Webfig_ → _IP_ → _DNS_.
-4. Wählen Sie _Server_ und geben Sie eine der folgenden DNS-Serveradressen ein.
-   - IPv4: `94.140.14.49` und `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
-5. Speichern Sie die Einstellungen.
-6. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
-
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+   - Öffnen Sie _IP_ ➜ _DHCP-Client_
+   - Doppelklicken Sie auf den Client, der für Ihre Internetverbindung verwendet wird (normalerweise auf der WAN-Schnittstelle)
+   - Deaktivieren Sie _Peer DNS verwenden_
+   - Klicken Sie auf _OK_

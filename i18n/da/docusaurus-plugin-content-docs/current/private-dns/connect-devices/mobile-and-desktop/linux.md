@@ -27,19 +27,19 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 
 ## Opsæt manuelt på Ubuntu (linket IP eller dedikeret IP kræves)
 
-1. Klik på _System_ → _Præferencer_ → _Netværksforbindelser_.
+1. Klik på _System_ → _Indstillinger_ → _Netværk_.
 2. Vælg fanen _Trådløst_ og dernæst det tilsluttede netværk.
-3. Klik på _Redigér_ → _IPv4_.
-4. Skift de listede DNS-adresser til flg.:
+3. Gå til _IPv4_.
+4. Indstil _Automatisk (DHCP)_ til _Manuel_.
+5. Skift de listede DNS-adresser til flg.:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Slå _Autotilstand_ fra.
 6. Klik på _Anvend_.
 7. Gå til _IPv6_.
-8. Skift de listede DNS-adresser til flg.:
+8. Indstil _Automatisk_ til _Manuel_.
+9. Skift de listede DNS-adresser til flg.:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Slå _Autotilstand_ fra.
 10. Klik på _Anvend_.
 11. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -99,6 +99,28 @@ Færdig! Enheden er nu tilsluttet AdGuard DNS.
 :::note Vigtigt
 
 Ses en notifikation om, at man ikke er forbundet til AdGuard DNS, er det mest sandsynlige, at den port, som dnsmasq kører på, er optaget af andre tjenester. Brug [denne vejledning](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+
+:::
+
+## Brug EDNS (Udvidet DNS)
+
+EDNS udvider DNS-protokollen, hvilket muliggør større UDP-pakker til transport af yderligere data. I AdGuard DNS muliggør det at videregive DeviceID i almindelig DNS vha. en ekstra parameter.
+
+DeviceID, en otte-cifret hexadecimal identifikator (f.eks. `1a2b3c4d`), assisterer med at linke DNS-forespørgsler til specifikke enheder. Ved krypteret DNS, er denne ID en del af domænet (f.eks. `1a2b3c4d.d.adguard-dns.com`). Ved ukrypteret DNS, kræves EDNS for at overføre denne identifikator.
+
+AdGuard DNS bruger EDNS til at hente DeviceID ved at lede efter nummermuligheden `65074`. Hvis en sådan mulighed findes, læses DeviceID derfra. Til dette kan man bruge `dig`-kommandoen i terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Her er `65074` valgmuligheds-ID'en, og `3031323334353637` er dens værdi i hex format (DeviceID: `01234567`).
+
+Færdig! DeviceID skal vises.
+
+:::note
+
+`dig`-kommandoen er blot et eksempel, man kan bruge enhver DNS-software med evnen til at tilføje EDNS-muligheder for at udføre denne handling.
 
 :::
 

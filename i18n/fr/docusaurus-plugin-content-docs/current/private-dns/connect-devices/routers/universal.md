@@ -20,7 +20,7 @@ Voici quelques instructions générales pour configurer AdGuard DNS privé sur l
 
    :::
 
-3. Trouvez où les paramètres DNS sont situés dans la console d'administration du routeur. Changez les adresses DNS de la liste pour les adresses suivantes :
+3. Trouvez où les paramètres DNS sont situés dans la console d'administration du routeur. Change the listed DNS addresses to the following addresses:
    - IPv4 : `94.140.14.49` et `94.140.14.59`
    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 
@@ -28,5 +28,5 @@ Voici quelques instructions générales pour configurer AdGuard DNS privé sur l
 
 5. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
-- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -27,19 +27,19 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+3. Go to _IPv4_.
+4. Set _Automatic (DHCP)_ to _Manual_.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
 6. Click _Apply_.
 7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+8. Set _Automatic_ to _Manual_.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -99,6 +99,28 @@ All done! Your device is successfully connected to AdGuard DNS.
 :::note Important
 
 If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+
+:::
+
+## Use EDNS (Extended DNS)
+
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+
+DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+
+All done! DeviceID should be displayed.
+
+:::note
+
+The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
 
 :::
 

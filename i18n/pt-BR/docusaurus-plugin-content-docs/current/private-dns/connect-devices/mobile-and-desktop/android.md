@@ -24,7 +24,7 @@ O aplicativo AdGuard permite que você use DNS criptografado, tornando-o perfeit
    ![Servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Role para baixo até _Servidores personalizados_ e toque em _Adicionar servidor DNS_.
    ![Adicionar servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copie um dos seguintes endereços DNS e cole-o no campo _Endereço do servidor_ no aplicativo. Se você não tem certeza, opte por _DNS-over-HTTPS_.
+7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Se você não tem certeza, opte por _DNS-over-HTTPS_.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Servidor DNS personalizado \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Toque em _Adicionar_.
@@ -49,7 +49,7 @@ Nem todos os serviços de VPN suportam DNS criptografado. No entanto, nossa VPN 
    ![Servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Role para baixo e toque em _Adicionar um servidor DNS personalizado_.
    ![Adicionar servidor DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copie um dos seguintes endereços DNS e cole-o no campo _Endereço dos servidores DNS_ no aplicativo. Se você não tem certeza, opte por DNS-over-HTTPS.
+7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Se você não tem certeza, opte por DNS-over-HTTPS.
    ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Servidor DNS personalizado \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Toque em Salvar e selecionar.
@@ -75,5 +75,5 @@ Você pode configurar seu servidor DNS nas configurações do seu dispositivo. P
 
 Se você preferir não usar software extra para configuração de DNS, pode optar por DNS não criptografado. Você tem duas opções: usar IPs vinculados ou IPs dedicados.
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

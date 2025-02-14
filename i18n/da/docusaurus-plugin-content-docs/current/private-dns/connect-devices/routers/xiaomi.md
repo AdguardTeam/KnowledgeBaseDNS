@@ -3,7 +3,7 @@ title: Xiaomi
 sidebar_position: 11
 ---
 
-Xiaomi-routere har mange fordele: Stabilt stærkt signal, netværkssikkerhed, stabil drift, intelligent håndtering. Brugeren kan ligeledes tilslutte op til 64 enheder til et lokalt Wi-Fi netværk.
+Xiaomi-routere har mange fordele: Et stabilt, stærkt signal, netværkssikkerhed, robust ydeevne og intelligent håndtering. Brugere kan tilslutte op til 64 enheder til et lokalt Wi-Fi netværk.
 
 Desværre understøtter den ikke krypteret DNS, men den er fantastisk til opsætning af AdGuard DNS via linket IP.
 

@@ -20,5 +20,5 @@ Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS
 7. Guarda la configuración.
 8. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 
-- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IPs vinculadas](private-dns/connect-devices/other-options/linked-ip.md)

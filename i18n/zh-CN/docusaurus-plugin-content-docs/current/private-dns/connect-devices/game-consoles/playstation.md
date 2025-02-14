@@ -11,26 +11,47 @@ sidebar_position: 4
 
 ## 连接 AdGuard DNS
 
-将游戏主机配置为使用公共 AdGuard DNS 服务器，或用关联的 IP 进行配置：
+Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
 
-1. 打开 PS4/PS5 主机并登录账户。
-2. 在主屏幕中，选择位于顶部的齿轮图标。
-3. 在「_设置_」菜单中，选择「_网络_」。
-4. 选择「_设置互联网连接_」。
-5. 根据网络设置，请选择「_使用 Wi-Fi_」或「_使用 LAN 电缆_」。
-6. 选择「_自定义_」，然后在「_IP 地址设置_」选择「_自动_」。
-7. 「_DHCP 主机名_」，选择「_未指定_」。
-8. 「_DNS 设置_」选择「_手动_」。
-9. 在「_DNS 服务器_」字段中，输入以下其中一个 DNS 服务器地址：
+### For PlayStation 4
+
+1. Turn on your PS4 console and sign in to your account.
+2. From the home screen, select the gear icon located in the top row.
+3. Go to _Settings_ → _Network_ → _Settings_.
+4. Select _Set Up Internet Connection_.
+5. Select _Use a LAN Cable_ → _Easy_.
+6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+7. For _DHCP Host Name_, select _Do Not Specify_.
+8. For _DNS Settings_, select _Manual_.
+9. 在「DNS 服务器」字段中，输入以下其中一个 DNS 服务器地址：
    - `94.140.14.49`
    - `94.140.14.59`
-10. 选择「_下一步_」继续。
-11. 在「_MTU 设置_」屏幕上，选择「_自动_」。
-12. 在「_代理服务器_」页面上，选择「_不使用_」。
-13. 选择「_测试互联网连接_」以测试新的 DNS 设置。
-14. 测试完成后，将看到「_互联网连接：成功_」，请保存设置。
+10. Select _Next_ to continue.
+11. On the _MTU Settings_ screen, select _Automatic_.
+12. On the _Proxy Server_ screen, select _Do Not Use_.
+13. Select _Test Internet Connection_ to test your new DNS settings.
+14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
+
+### For PlayStation 5
+
+1. Turn on your PS5 console and sign in to your account.
+2. From the home screen, select the gear icon located in the top row.
+3. Go to _Settings_ → _Network_ → _Settings_.
+4. Select _Set Up Internet Connection_.
+5. Select _Set Up Wired LAN_ → _Connect_.
+6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+7. For _DHCP Host Name_, select _Do Not Specify_.
+8. For _DNS Settings_, select _Manual_.
+9. 在「DNS 服务器」字段中，输入以下其中一个 DNS 服务器地址：
+   - `94.140.14.49`
+   - `94.140.14.59`
+10. Select _Next_ to continue.
+11. On the _MTU Settings_ screen, select _Automatic_.
+12. On the _Proxy Server_ screen, select _Do Not Use_.
+13. Select _Test Internet Connection_ to test your new DNS settings.
+14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
 
 最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：
 
-- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

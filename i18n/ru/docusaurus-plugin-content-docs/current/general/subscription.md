@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Как купить подписку {#purchase}
 
-Подписки AdGuard DNS можно приобрести на сайте [adguard-dns.io](https://adguard-dns.io/license.html). Вы можете оплатить покупку с помощью Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay и UnionPay. Мы также принимаем следующие криптовалюты: Ethereum, Litecoin и Tether. Подписки можно продлевать раз в месяц или год.
+Подписки AdGuard DNS можно приобрести на сайте [adguard-dns.io](https://adguard-dns.io/license.html). Вы можете оплатить покупку с помощью Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay и UnionPay. Подписки можно продлевать раз в месяц или год.
 
 Персональная подписка бесплатна для платных пользователей [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 

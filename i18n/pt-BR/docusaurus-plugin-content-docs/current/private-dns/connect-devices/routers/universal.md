@@ -20,7 +20,7 @@ Aqui estão algumas instruções gerais para a configuração do AdGuard DNS Pri
 
    :::
 
-3. Encontre o local onde as configurações de DNS estão localizadas no console de administração do roteador. Altere os endereços DNS listados para os seguintes endereços:
+3. Encontre o local onde as configurações de DNS estão localizadas no console de administração do roteador. Change the listed DNS addresses to the following addresses:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 
@@ -28,5 +28,5 @@ Aqui estão algumas instruções gerais para a configuração do AdGuard DNS Pri
 
 5. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [IPs dedicados](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -11,26 +11,47 @@ Es probable que tu router admita el uso de servidores DNS encriptados, por lo qu
 
 ## Conectar AdGuard DNS
 
-Configura tu consola de juegos para usar un servidor DNS público de AdGuard o configúralo a través de IP vinculada:
+Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
 
-1. Enciende tu consola PS4/PS5 e inicia sesión en tu cuenta.
-2. Desde la pantalla de inicio, selecciona el ícono de ajustes ubicado en la fila superior.
-3. En el menú _Configuración_, selecciona _Red_.
-4. Selecciona _Configurar Conexión a Internet_.
-5. Elige _Usar Wi-Fi_ o _Usar un cable LAN_, según la configuración de tu red.
-6. Selecciona _Personalizado_ y luego selecciona _Automático_ para _Configuración de dirección IP_.
-7. Para _Nombre de host DHCP_, selecciona _No especificar_.
-8. Para _Configuración de DNS_, selecciona _Manual_.
+### For PlayStation 4
+
+1. Turn on your PS4 console and sign in to your account.
+2. From the home screen, select the gear icon located in the top row.
+3. Go to _Settings_ → _Network_ → _Settings_.
+4. Select _Set Up Internet Connection_.
+5. Select _Use a LAN Cable_ → _Easy_.
+6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+7. For _DHCP Host Name_, select _Do Not Specify_.
+8. For _DNS Settings_, select _Manual_.
 9. En el campo _Servidor DNS_, ingresa una de las siguientes direcciones de servidor DNS:
    - `94.140.14.49`
    - `94.140.14.59`
-10. Elige _Siguiente_ para continuar.
-11. En la pantalla de Configuración de MTU, selecciona _Automático_.
-12. En la pantalla del servidor proxy, selecciona _No usar_.
-13. Selecciona _Probar Conexión a Internet_ para probar tu nueva configuración de DNS.
-14. Una vez que se complete la prueba y veas "Conexión a Internet: Correcta", guarda tu configuración.
+10. Select _Next_ to continue.
+11. On the _MTU Settings_ screen, select _Automatic_.
+12. On the _Proxy Server_ screen, select _Do Not Use_.
+13. Select _Test Internet Connection_ to test your new DNS settings.
+14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
+
+### For PlayStation 5
+
+1. Turn on your PS5 console and sign in to your account.
+2. From the home screen, select the gear icon located in the top row.
+3. Go to _Settings_ → _Network_ → _Settings_.
+4. Select _Set Up Internet Connection_.
+5. Select _Set Up Wired LAN_ → _Connect_.
+6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+7. For _DHCP Host Name_, select _Do Not Specify_.
+8. For _DNS Settings_, select _Manual_.
+9. En el campo _Servidor DNS_, ingresa una de las siguientes direcciones de servidor DNS:
+   - `94.140.14.49`
+   - `94.140.14.59`
+10. Select _Next_ to continue.
+11. On the _MTU Settings_ screen, select _Automatic_.
+12. On the _Proxy Server_ screen, select _Do Not Use_.
+13. Select _Test Internet Connection_ to test your new DNS settings.
+14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
 
 Sería preferible usar IP vinculada (o IP dedicada si tienes una suscripción de Team):
 
-- [IP dedicadas](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP vinculadas](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -27,19 +27,19 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. _Sistem_ → _Tercihler_ → _Ağ Bağlantıları_ öğesine tıklayın.
+1. Click _System_ → _Settings_ → _Network_.
 2. _Kablosuz_ sekmesini seçin, ardından bağlı olduğunuz ağı seçin.
-3. _Düzenle_ → _IPv4_ öğesine tıklayın.
-4. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+3. Go to _IPv4_.
+4. _Otomatik (DHCP)_ öğesini _Manuel_ olarak ayarlayın.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
 6. _Uygula_ öğesine tıklayın.
 7. _IPv6_ öğesine gidin.
-8. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+8. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
 10. _Uygula_ öğesine tıklayın.
 11. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
     - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -99,6 +99,28 @@ Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 :::note Önemli
 
 If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Sorunu çözmek için [bu talimatları](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) kullanın.
+
+:::
+
+## EDNS (Genişletilmiş DNS) kullanma
+
+EDNS, DNS protokolünü genişleterek daha büyük UDP paketlerinin ek veri taşımasını sağlar. AdGuard DNS'de, ekstra bir parametre kullanılarak DeviceID'nin düz DNS'te geçirilmesine izin verilir.
+
+Sekiz basamaklı bir onaltılık tanımlayıcı olan DeviceID (örneğin, `1a2b3c4d`), DNS isteklerini belirli cihazlara bağlamaya yardımcı olur. Şifrelenmiş DNS için, bu ID alan adının bir parçasıdır (örneğin, `1a2b3c4d.d.adguard-dns.com`). Şifrelenmemiş DNS için bu tanımlayıcıyı aktarmak üzere EDNS gereklidir.
+
+AdGuard DNS, `65074` numaralı seçeneği arayarak DeviceID'yi almak için EDNS kullanır. Böyle bir seçenek varsa, oradan DeviceID'yi okur. Bunun için terminalde `dig` komutunu kullanabilirsiniz:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Burada, `65074` seçenek kimliğidir ve `3031323334353637` onun hex biçimindeki değeridir (DeviceID: `01234567`).
+
+Hepsi tamam! DeviceID görüntülenmelidir.
+
+:::note
+
+`dig` komutu sadece bir örnektir, bu eylemi gerçekleştirmek için EDNS seçeneklerini ekleme yeteneğine sahip herhangi bir DNS yazılımını kullanabilirsiniz.
 
 :::
 

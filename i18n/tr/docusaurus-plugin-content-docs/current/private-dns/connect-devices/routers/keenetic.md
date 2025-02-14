@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bilinir ve kurulumu kolaydır, şifrelenmiş Özel AdGuard DNS'i cihazınıza kolayca kurmanızı sağlar.
 
-## DNS-over-HTTPS'i yapılandır
+## DNS-over-HTTPS'i yapılandırma
 
 1. Yönlendirici yönetici panelini açın. my.keenetic.net adresinden, yönlendiricinizin IP adresinden veya `192.168.1.1` adresinden erişilebilir.
 2. Ekranın altındaki menü düğmesine basın ve _Yönetim_ öğesini seçin.
@@ -14,7 +14,7 @@ Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bil
 5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
 6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
 7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
-8. Enter the URL of the private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
+8. Özel AdGuard DNS sunucusunun URL'sini `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` alanına girin.
 9. _Kaydet_ öğesine tıklayın.
 
 ## DNS-over-TLS'yi yapılandırma

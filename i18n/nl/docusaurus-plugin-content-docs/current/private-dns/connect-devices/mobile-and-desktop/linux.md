@@ -27,23 +27,23 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. Click _System_ → _Preferences_ → _Network Connections_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Click _Edit_ → _IPv4_.
-4. Change the listed DNS addresses to the following addresses:
+3. Go to _IPv4_.
+4. Stel _Automatisch (DHCP)_ in op _Handmatig_.
+5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Turn off _Auto mode_.
 6. Click _Apply_.
 7. Go to _IPv6_.
-8. Change the listed DNS addresses to the following addresses:
+8. Stel _Automatisch_ in op _Handmatig_.
+9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Turn off _Auto mode_.
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
@@ -61,8 +61,8 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 10. Press _Enter_.
 11. Close the Terminal.
 12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -102,9 +102,31 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 
 :::
 
+## EDNS (Extended DNS) gebruiken
+
+EDNS breidt het DNS-protocol uit, waarbij grotere UDP-pakketten extra gegevens kunnen bevatten. In AdGuard DNS staat het toe om DeviceID door te geven in standaard DNS met behulp van een extra parameter.
+
+DeviceID, een achtcijferige hexadecimale identificator (bijv. `1a2b3c4d`), helpt bij het koppelen van DNS-verzoeken aan specifieke apparaten. Voor versleutelde DNS is deze ID onderdeel van het domein (bijv., `1a2b3c4d.d.adguard-dns.com`). Voor onbeveiligde DNS is EDNS vereist om deze identificator over te dragen.
+
+AdGuard DNS gebruikt EDNS om DeviceID op te halen door te zoeken naar optie nummer `65074`. Als er een dergelijke optie bestaat, wordt de DeviceID daaruit gelezen. For this, you can use the `dig` command in the terminal:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Hier is `65074` de optie-ID en `3031323334353637` is de waarde in hex-formaat (DeviceID: `01234567`).
+
+Voltooid! DeviceID moet worden weergegeven.
+
+:::note
+
+De `dig`-opdracht is slechts een voorbeeld, je kunt elke DNS-software gebruiken met de mogelijkheid om EDNS-opties toe te voegen om deze actie uit te voeren.
+
+:::
+
 ## Use plain DNS
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

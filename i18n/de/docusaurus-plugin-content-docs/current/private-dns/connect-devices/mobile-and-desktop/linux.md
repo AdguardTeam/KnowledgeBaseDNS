@@ -27,19 +27,19 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 
 ## Manuell auf Ubuntu konfigurieren (verknüpfte IP oder dedizierte IP erforderlich)
 
-1. Klicken Sie auf _System_ → _Einstellungen_ → _Netzwerkverbindungen_.
+1. Click _System_ → _Settings_ → _Network_.
 2. Wählen Sie die Registerkarte _Wireless_, und dann das Netzwerk, mit dem Sie verbunden sind.
-3. Klicken Sie auf _Bearbeiten_ → _IPv4_.
-4. Ändern Sie die aufgelisteten DNS-Adressen in die folgenden Adressen:
+3. Go to _IPv4_.
+4. Setzen Sie _Automatisch (DHCP)_ auf _Manuell_.
+5. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Schalten Sie den _Auto-Modus_ aus.
 6. Klicken Sie auf _Übernehmen_.
 7. Gehen Sie zu _IPv6_.
-8. Ändern Sie die aufgelisteten DNS-Adressen in die folgenden Adressen:
+8. Setzen Sie _Automatisch_ auf _Manuell_.
+9. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Schalten Sie den _Auto-Modus_ aus.
 10. Klicken Sie auf _Übernehmen_.
 11. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
     - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -99,6 +99,28 @@ Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 :::note Wichtig
 
 Wenn Sie eine Benachrichtigung sehen, dass Sie nicht mit AdGuard DNS verbunden sind, ist höchstwahrscheinlich der Port, auf dem dnsmasq läuft, durch andere Dienste belegt. Folgen Sie [diese Anweisungen](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse), um das Problem zu lösen.
+
+:::
+
+## EDNS (Extended DNS) verwenden
+
+EDNS erweitert das DNS-Protokoll, indem es größere UDP-Pakete zur Übertragung zusätzlicher Daten ermöglicht. In AdGuard DNS ist es möglich, die DeviceID im reinen DNS mit einem zusätzlichen Parameter zu übergeben.
+
+DeviceID, eine achtstellige hexadezimale Kennung (z. B. „1a2b3c4d“), hilft, DNS-Anfragen mit bestimmten Geräten zu verknüpfen. Bei verschlüsseltem DNS ist diese ID Teil der Domain (z. B. „1a2b3c4d.d.adguard-dns.com“). Bei unverschlüsseltem DNS ist EDNS erforderlich, um diese Kennung zu übertragen.
+
+AdGuard DNS verwendet EDNS, um die DeviceID abzurufen, indem nach der Optionsnummer `65074` gesucht wird. Wenn eine solche Option vorhanden ist, wird die DeviceID von dort ausgelesen. Dazu können Sie den Befehl `dig` im Terminal verwenden:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Hier ist `65074` die Options-ID und „3031323334353637“ ihr Wert im Hex-Format (DeviceID: `01234567`).
+
+Fertig! Die DeviceID sollte angezeigt werden.
+
+:::note
+
+Der Befehl `dig` ist nur ein Beispiel, Sie können jede DNS-Software verwenden, die EDNS-Optionen hinzufügen kann, um diese Aktion durchzuführen.
 
 :::
 

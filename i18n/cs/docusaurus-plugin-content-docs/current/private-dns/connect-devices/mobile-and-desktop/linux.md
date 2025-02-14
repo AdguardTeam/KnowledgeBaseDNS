@@ -27,19 +27,19 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 
 ## Ruční konfigurace v Ubuntu (je vyžadována propojená IP nebo vyhrazená IP)
 
-1. Klikněte na _Systém_ → _Předvolby_ → _Síťová připojení_.
+1. Klikněte na _Systém_ → _Nastavení_ → _Síť_.
 2. Vyberte kartu _Bezdrátové připojení_ a poté vyberte síť, ke které jste připojeni.
-3. Klikněte na _Upravit_ → _IPv4_.
-4. Změňte uvedené adresy DNS na následující adresy:
+3. Přejděte na _IPv4_.
+4. Nastavte _Automaticky (DHCP)_ na _Ruční_.
+5. Změňte uvedené adresy DNS na následující adresy:
    - `94.140.14.49`
    - `94.140.14.59`
-5. Vypněte _Automatický režim_.
 6. Klikněte na _Použít_.
 7. Přejděte na _IPv6_.
-8. Změňte uvedené adresy DNS na následující adresy:
+8. Nastavte _Automaticky_ na _Ruční_.
+9. Změňte uvedené adresy DNS na následující adresy:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-9. Vypněte _Automatický režim_.
 10. Klikněte na _Použít_.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -99,6 +99,28 @@ Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 :::note Důležité
 
 Pokud se zobrazí oznámení, že nejste připojeni k AdGuard DNS, je port, na kterém běží dnsmasq pravděpodobně obsazen jinými službami. K vyřešení problému použijte [tyto pokyny](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse).
+
+:::
+
+## Použití EDNS (Rozšířený DNS)
+
+EDNS rozšiřuje protokol DNS a umožňuje přenášet další data většími pakety UDP. V AdGuard DNS umožňuje předávání DeviceID v běžném DNS pomocí dalšího parametru.
+
+DeviceID, osmimístný hexadecimální identifikátor (např. `1a2b3c4d`), pomáhá spojit požadavky DNS s konkrétními zařízeními. U šifrovaného DNS je toto ID součástí domény (např. `1a2b3c4d.d.adguard-dns.com`). U nešifrovaného DNS je k přenosu tohoto identifikátoru vyžadován EDNS.
+
+AdGuard DNS používá EDNS k získání DeviceID vyhledáním čísla `65074`. Pokud taková možnost existuje, načte z ní DeviceID. K tomu můžete v terminálu použít příkaz `dig`:
+
+```sh
+dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
+```
+
+Zde je `65074` ID možnosti a `3031323334353637` je její hodnota v hexadecimálním formátu (DeviceID: `01234567`).
+
+Vše je hotovo! Mělo by se zobrazit DeviceID.
+
+:::note
+
+Příkaz `dig` je pouze příkladem, k provedení této akce můžete použít libovolný software DNS s možností přidání voleb EDNS.
 
 :::
 

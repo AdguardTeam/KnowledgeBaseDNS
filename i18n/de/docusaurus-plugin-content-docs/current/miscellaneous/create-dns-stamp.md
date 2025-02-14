@@ -1,10 +1,8 @@
 - - -
-title: So erstellen Sie Ihren eigenen DNS-Stempel für Secure DNS
-
-sidebar_position: 4
+title: So erstellen Sie Ihren eigenen DNS-Stempel für Secure DNS sidebar_position: 4
 - - -
 
-Diese Anleitung zeigt Ihnen, wie Sie Ihren eigenen DNS-Stempel für Secure DNS erstellen. Secure DNS ist ein Dienst, der Ihre Internetsicherheit und Ihren Privatsphäre verbessert, indem er Ihre DNS-Anfragen verschlüsselt. Dadurch wird verhindert, dass Ihre Abfragen von böswilligen Akteuren abgefangen oder manipuliert werden.
+Diese Anleitung zeigt Ihnen, wie Sie Ihren eigenen DNS-Stempel für Secure DNS erstellen. Secure DNS ist ein Dienst, der Ihre Internetsicherheit und Ihren Datenschutz verbessert, indem er Ihre DNS-Anfragen verschlüsselt. Dadurch wird verhindert, dass Ihre Abfragen von böswilligen Akteuren abgefangen oder manipuliert werden.
 
 Sicheres DNS verwendet in der Regel `tls://`, `https://`, oder `quic://` URLs. Dies ist für die meisten Benutzer ausreichend und wird empfohlen.
 
