@@ -18,8 +18,8 @@ toc_max_heading_level: 3
 暗号化されたDNSプロトコルをネイティブにサポートしていないデバイスには、以下の3つのオプションを提供しております:
 
 - [AdGuard DNS Client](/dns-client/overview.md)
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
 
 AdGuard DNS へのアクセスを特定のデバイスに対して制限したい場合は、[認証付きDNS-over-HTTPS](/private-dns/connect-devices/other-options/doh-authentication.md)を使用してください。
 

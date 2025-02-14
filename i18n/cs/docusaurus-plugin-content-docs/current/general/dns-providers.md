@@ -932,15 +932,27 @@ Tyto servery blokují webové stránky pro dospělé a nevhodný obsah.
 
 #### Pure Edition
 
-| Protokol  | Adresa                         |                                                                                                                                                        |
-| --------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4 | `117.50.10.10` a `52.80.52.52` | [Přidat do AdGuardu](adguard:add_dns_server?address=117.50.10.10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=) |
+| Protokol       | Adresa                                              |                                                                                                                                                                                                                                                |
+| -------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `117.50.10.10` a `52.80.52.52`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=117.50.10.10&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=)                                                                                         |
+| DNS, IPv6      | `2400:7fc0:849e:200::8` and `2404:c2c0:85d8:901::8` | [Přidat do AdGuardu](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=)                                                                       |
+| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`             | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
+| DNS-over-TLS   | `tls://dot-pure.onedns.net`                         | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
 
 #### Block Edition
 
+| Protokol       | Adresa                                              |                                                                                                                                                                                                                            |
+| -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `52.80.66.66` a `117.50.22.22`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=52.80.66.66&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=)                                                                       |
+| DNS, IPv6      | `2400:7fc0:849e:200::4` and `2404:c2c0:85d8:901::4` | [Přidat do AdGuardu](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=)                                                   |
+| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                  | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
+| DNS-over-TLS   | `tls://dot.onedns.net`                              | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                         |
+
+#### Family Edition
+
 | Protokol  | Adresa                         |                                                                                                                                                        |
 | --------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4 | `117.50.11.11` a `52.80.66.66` | [Přidat do AdGuardu](adguard:add_dns_server?address=117.50.11.11&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=117.50.11.11&name=) |
+| DNS, IPv4 | `117.50.60.30` a `52.80.60.30` | [Přidat do AdGuardu](adguard:add_dns_server?address=117.50.60.30&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=) |
 
 ### OpenNIC DNS
 

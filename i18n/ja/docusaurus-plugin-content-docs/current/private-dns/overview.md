@@ -5,38 +5,38 @@ sidebar_position: 1
 
 :::info
 
-AdGuard DNS を使用すると、プライベートDNSサーバーを設定してDNSリクエストを解決し、広告、トラッカー、悪意のあるドメインがデバイスに到達する前にブロックすることができます。
+AdGuard DNS を使うと、プライベートDNSサーバーを設定してDNSリクエストを解決し、広告、トラッカー、悪意のあるドメインがデバイスに到達する前にブロックすることができます。
 
 クイックリンク: [AdGuard DNSを試す](https://agrd.io/download-dns)
 
 :::
 
-![Private AdGuard DNS dashboard main](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
+![プライベートAdGuard DNSダッシュボードメイン](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/main.png)
 
 ## 一般設定
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTubeビデオプレーヤー" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 プライベートAdGuard DNSは、トラフィックの暗号化やドメインブロックリストなど、パブリックAdGuard DNSサーバーのすべての利点に加え、 柔軟なカスタマイズ、DNS統計、ペアレンタルコントロールなどの追加機能も提供しています。 これらのオプションはすべて、ユーザーフレンドリーなダッシュボードから簡単にアクセス・管理できます。
 
 ### プライベートAdGuard DNSが必要な理由
 
-現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。 But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
+現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。 しかし、紛れもない利便性と同時に、トラッカーや広告も発生します。 この場合、単純なブラウザベースの広告ブロッカーでは防御できないが、トラフィックをフィルタリングし、コンテンツやトラッカーをブロックするように設定できるAdGuard DNSは、システム全体に効果があります。
 
-At one time, the AdGuard product line included only [public AdGuard DNS](../public-dns/overview.md) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+かつて、AdGuard 製品ラインアップには [パブリック AdGuard DNS](../public-dns/overview.md) と [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)のみが含まれていました。 これらのソリューションは、一部のユーザーにとっては問題なく機能するが、他のユーザーにとっては、パブリックAdGuard DNSは設定の柔軟性に欠け、AdGuard Homeはシンプルさに欠けています。 そこで、プライベートAdGuard DNSの出番となります。 シンプルで使いやすいダッシュボードを通じて、カスタマイズ性、コントロール性、そして情報性という、両方の長所を兼ね備えているのです。
 
-### The difference between public and private AdGuard DNS
+### AdGuard DNSのパブリックとプライベートの違い
 
-Here is a simple comparison of features available in public and private AdGuard DNS.
+ここでは、パブリックとプライベートのAdGuard DNSで利用可能な機能を簡単に比較します。
 
-| Public AdGuard DNS               | Private AdGuard DNS                                                                            |
-| -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| DNS traffic encryption           | DNS traffic encryption                                                                         |
-| Pre-determined domain blocklists | Customizable domain blocklists                                                                 |
-| -                                | Custom DNS filtering rules with import/export feature                                          |
-| -                                | Request statistics (see where do your DNS requests go: which countries, which companies, etc.) |
-| -                                | Detailed query log                                                                             |
-| -                                | Parental control                                                                               |
+| パブリック AdGuard DNS   | プライベート AdGuard DNS                              |
+| ------------------- | ----------------------------------------------- |
+| DNSトラフィックの暗号化       | DNS通信の暗号化                                       |
+| 事前に指定できるドメインブロックリスト | カスタマイズ可能なドメインブロックリスト                            |
+| -                   | カスタムDNSフィルタリングルールのインポート/エクスポート機能                |
+| -                   | DNSリクエストの統計（DNSリクエストがどこに行くかを確認できます：どの国、どの企業へなど） |
+| -                   | 詳細なクエリログ                                        |
+| -                   | ペアレンタルコントロール                                    |
 
 
 <!-- ## How to set up private AdGuard DNS
@@ -191,26 +191,26 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
 
-### How to connect devices to AdGuard DNS
+### デバイスを AdGuard DNS に接続する方法
 
-AdGuard DNS is very flexible and can be set up on various devices including tablets, PCs, routers, and game consoles. This section provides detailed instructions on how to connect your device to AdGuard DNS.
+AdGuard DNSは非常に柔軟で、タブレット、PC、ルーター、ゲーム機などのさまざまなデバイスで設定できます。 このセクションでは、お使いのデバイスをAdGuard DNSに接続する方法についての詳細なガイドを提供します。
 
-[How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
+[デバイスを AdGuard DNS に接続する方法](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### サーバーと設定
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+このセクションでは、AdGuard DNS における「サーバー」とは何か、どのような設定が利用できるかを説明しております。 この設定により、ブロックされたドメインへの AdGuard DNS の応答をカスタマイズし、DNS サーバーへのアクセスを管理できます。
 
-[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+[サーバーと設定](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### フィルタリングの設定方法
 
-In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
+このセクションでは、AdGuard DNS の機能性を微調整するための設定をいくつか説明しております。 ブロックリスト、ユーザールール、ペアレンタルコントロール、およびセキュリティフィルタリングを使用して、ニーズに合ったフィルタリングを設定できます。
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[フィルタリングの設定方法](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### 「統計」と「クエリログ」
 
-Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
+統計とクエリログにより、情報を確認してデバイスのアクティビティに関する状況や洞察を把握できます。 「*統計*」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。 「クエリログ」では、各リクエストに関する情報を表示したり、リクエストをステータス、タイプ、企業、デバイス、時間、国別に並べ替えたりすることができます。
 
-[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
+[「統計」と「クエリログ」](/private-dns/statistics-and-log/statistics.md)

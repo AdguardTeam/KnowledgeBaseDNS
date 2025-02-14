@@ -1,36 +1,36 @@
 ---
-title: Query log
+title: クエリログ
 sidebar_position: 5
 ---
 
-## What is Query log
+## 「クエリログ」とは
 
-Query log is a useful tool for working with AdGuard DNS.
+クエリログはAdGuard DNSを使用する際に便利なツールです。
 
-It allows you to view all requests made by your devices during the selected time period and sort requests by status, type, company, device, country.
+指定の期間中にデバイスによって行われたすべてのリクエストを表示し、ステータス、タイプ、企業、デバイス、国別にリクエストを並べ替えることができます。
 
-## How to use it
+## 使い方
 
-Here's what you can see and what you can do in the _Query log_.
+「クエリログ」で見ることができるもの、できることは以下のとおりです。
 
-### Detailed information on requests
+### 各リクエストの詳細情報
 
 ![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
-### Blocking and unblocking domains
+### ドメインのブロック・ブロック解除
 
-Requests can be blocked and unblocked without leaving the log, using the available tools.
+リクエストは、ログからその場でブロックおよびブロック解除できます。
 
 ![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
-### Sorting requests
+### リクエストの並べ替え
 
-You can select the status of the request, its type, company, device, and the time period of the request you are interested in.
+リクエストのステータス、タイプ、企業、デバイス、および期間を選択できます。
 
 ![Sorting requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/query_sorted.png)
 
-### Disabling query logging
+### クエリログの無効化
 
-If you wish, you can completely disable logging in the account settings (but remember that this will also disable statistics).
+アカウント設定でログ記録を完全に無効にすることができます。（ただし、これにより統計情報も無効になることにご注意ください。）
 
 ![Logging \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/logging.png)

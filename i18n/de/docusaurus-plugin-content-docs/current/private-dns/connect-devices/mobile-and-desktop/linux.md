@@ -27,9 +27,9 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 
 ## Manuell auf Ubuntu konfigurieren (verknüpfte IP oder dedizierte IP erforderlich)
 
-1. Click _System_ → _Settings_ → _Network_.
+1. Klicken Sie auf _System_ → _Einstellungen_ → _Netzwerk_.
 2. Wählen Sie die Registerkarte _Wireless_, und dann das Netzwerk, mit dem Sie verbunden sind.
-3. Go to _IPv4_.
+3. Gehen Sie zu _IPv4_.
 4. Setzen Sie _Automatisch (DHCP)_ auf _Manuell_.
 5. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
    - `94.140.14.49`

@@ -932,15 +932,27 @@ Bu sunucular yetişkinlere yönelik siteleri ve uygunsuz içerikleri engeller.
 
 #### Pure Edition
 
-| Protokol  | Adres                            |                                                                                                                                                 |
-| --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.10.10` and `52.80.52.52` | [Add to AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=) |
+| Protokol       | Adres                                               |                                                                                                                                                                                                                                         |
+| -------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `117.50.10.10` and `52.80.52.52`                    | [Add to AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=)                                                                                         |
+| DNS, IPv6      | `2400:7fc0:849e:200::8` and `2404:c2c0:85d8:901::8` | [Add to AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=)                                                                       |
+| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`             | [Add to AdGuard](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
+| DNS-over-TLS   | `tls://dot-pure.onedns.net`                         | [Add to AdGuard](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
 
 #### Block Edition
 
+| Protokol       | Adres                                               |                                                                                                                                                                                                                     |
+| -------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `52.80.66.66` and `117.50.22.22`                    | [Add to AdGuard](adguard:add_dns_server?address=52.80.66.66&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=)                                                                       |
+| DNS, IPv6      | `2400:7fc0:849e:200::4` and `2404:c2c0:85d8:901::4` | [Add to AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=)                                                   |
+| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                  | [Add to AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
+| DNS-over-TLS   | `tls://dot.onedns.net`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                         |
+
+#### Family Edition
+
 | Protokol  | Adres                            |                                                                                                                                                 |
 | --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.11.11` and `52.80.66.66` | [Add to AdGuard](adguard:add_dns_server?address=117.50.11.11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.11.11&name=) |
+| DNS, IPv4 | `117.50.60.30` and `52.80.60.30` | [Add to AdGuard](adguard:add_dns_server?address=117.50.60.30&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=) |
 
 ### OpenNIC DNS
 
@@ -994,7 +1006,7 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 | DNS-over-HTTPS | `https://dns.seia.io/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.seia.io/dns-query&name=dns.seia.io) |
 | DNS-over-TLS   | `tls://dns.seia.io`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.seia.io&name=dns.seia.io)                         |
 
-#### Oracle Cloud Güney Kore
+#### Oracle Cloud South Korea
 
 | Protokol       | Adres                                     |                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1048,7 +1060,7 @@ Uygunluklarını düzgün bir şekilde izleyemeyeceğiz. **Bunları kendi soruml
 
 [AhaDNS](https://ahadns.com/), Fredrik Pettersson tarafından sağlanan sıfır günlük tutma ve reklam engelleme DNS hizmetidir.
 
-#### Hollanda
+#### Netherlands
 
 | Protokol       | Adres                                 |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1232,7 +1244,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 [Privacy-First DNS](https://tiarap.org/), 140 binden fazla reklam, reklam izleme, kötü amaçlı yazılım ve kimlik avı alan adlarını engeller. Günlük tutmama, ECS yok, DNSSEC doğrulaması var, ücretsiz!
 
-#### Singapur DNS Sunucusu
+#### Singapore DNS Server
 
 | Protokol       | Adres                                                                      | Location                                                                                                                                                                                                            |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1245,7 +1257,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 | DNS-over-QUIC  | `quic://doh.tiar.app`                                                      | [Add to AdGuard](adguard:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doh.tiar.app:784&name=doh.tiar.app)                       |
 | DNS-over-TLS   | `tls://dot.tiar.app`                                                       | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.tiar.app&name=dot.tiar.app)                                 |
 
-#### Japonya DNS Sunucusu
+#### Japan DNS Server
 
 | Protokol       | Adres                                                                          |                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1261,7 +1273,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 [Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük tutmama, DNSSEC doğrulaması.
 
-#### DNS Sunucusu 1
+#### DNS Server 1
 
 | Protokol       | Adres                                                      |                                                                                                                                                                                                         |
 | -------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
