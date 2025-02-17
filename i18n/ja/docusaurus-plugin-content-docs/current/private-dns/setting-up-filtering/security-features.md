@@ -1,24 +1,24 @@
 ---
-title: Security features
+title: セキュリティ機能
 sidebar_position: 3
 ---
 
-The AdGuard DNS security settings are a set of configurations designed to protect the user's personal information.
+AdGuard DNS のセキュリティ設定は、ユーザーの個人情報を保護するために設計された設定群です。
 
-Here you can choose which methods you want to use to protect yourself from attackers. This will protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data.
+ここでは、攻撃者から自分自身を守るために使用したい方法を選択できます。 これにより、フィッシングや偽ウェブサイトへのアクセスが防止され、個人情報・機密データの漏洩のリスクから保護されます。
 
-### Block malicious, phishing, and scam domains
+### フィッシング、詐欺、悪質ドメインをブロック
 
-To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+現在までに1,500万以上のサイトを分類し、フィッシングやマルウェアで知られる150万のウェブサイトのデータベースを構築してきました。 このデータベースを使用して、AdGuardはあなたが訪問するウェブサイトをチェックし、オンライン脅威から守ります。
 
-### Block newly registered domains
+### 新しく登録されたドメインをブロックする
 
-Scammers often use recently registered domains for phishing and fraudulent schemes. For this reason, we have developed a special filter that detects the lifetime of a domain and blocks it if it was created recently.
-Sometimes this can cause false positives, but statistics show that in most cases this setting still protects our users from losing confidential data.
+詐欺師は、最近登録したドメインをフィッシングや詐欺に利用することが多い。 このため、ドメインの寿命を検出し、最近作成された場合はドメインをブロックするという特別なフィルタを開発しました。
+これにより誤検出が発生することもありますが、統計データによればほとんどの場合、ユーザーの機密データ漏えい防止となります。
 
-### Block malicious domains using blocklists
+### ブロックリストを使用して悪意のあるドメインをブロック
 
-AdGuard DNS supports adding third-party blocking filters.
-Activate filters marked `security` for additional protection.
+AdGuard DNSは、サードパーティのブロックフィルタの追加に対応しています。
+`security`としてマークされたフィルタを有効化して、保護層を増やせます。
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+ブロックリストについてさらに詳しくは、[こちらの別記事](/private-dns/setting-up-filtering/blocklists.md)を参照してください。

@@ -1,31 +1,31 @@
 ---
-title: Advanced settings
+title: 詳細設定
 sidebar_position: 2
 ---
 
-The Advanced settings section is intended for the more experienced user and includes the following settings.
+「詳細設定」セクションは、より詳しいユーザー向けであり、以下の設定が含まれています。
 
-## Respond to blocked domains
+## ブロックされたドメインへ応答する
 
-Here you can select the DNS response for the blocked request:
+ここでは、ブロックされたリクエストに対するDNS応答を指定できます：
 
-- **Default**: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule
-- **REFUSED**: Respond with REFUSED code
-- **NXDOMAIN**: Respond with NXDOMAIN code
-- **Custom IP**: Respond with a manually set IP address
+- Default（デフォルト）：Adblock系ルールによってブロックされると、ゼロIPアドレス（Aに対しては「0.0.0.0」、AAAAに対しては「::」）で応答します。/etc/hosts系ルールによってブロックされると、ルールにて指定されているIPアドレスで応答します。
+- **REFUSED**: 「REFUSED」コードで応答します。
+- **NXDOMAIN**：NXDOMAINコードで応答します。
+- **Custom IP（カスタムIP）**：手動で設定されたIPアドレスで応答します。
 
-## TTL (Time-To-Live)
+## TTL (Time-To-Live：存続時間)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server. If the TTL value is high, recently unblocked requests may still look blocked for a while. If TTL is 0, the device does not cache responses.
+TTL（Time-to-Live）は、クライアントデバイスがDNSリクエストに対する応答をキャッシュし、DNSサーバーに再リクエストせずにキャッシュから取得する期間（秒）を設定します。 TTLの値が大きいと、最近ブロック解除されたリクエストでもしばらくの間、まだブロックされているように見えることがあります。 そして TTL が 0 の場合、デバイスは応答をキャッシュしません。
 
-## Block access to iCloud Private Relay
+## iCloudプライベートリレーへのアクセスをブロックする
 
-Devices that use iCloud Private Relay may ignore their DNS settings, so AdGuard DNS cannot protect them.
+iCloudプライベートリレーを使用するデバイスは、DNS設定を無視することがあるため、AdGuard DNS はそのようなデバイスを保護することはできません。
 
-## Block Firefox canary domain
+## Firefox canary domain をブロック
 
-Prevents Firefox from switching to the DoH resolver from its settings when AdGuard DNS is configured system-wide.
+AdGuard DNS がシステム全体に設定されている場合、FirefoxがDoHリゾルバに切り替わることを設定から防ぎます。
 
-## Log IP addresses
+## IPアドレスをログ記録する
 
-By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests. If you enable this setting, IP addresses will be logged and displayed in Query log.
+デフォルトでは、AdGuard DNS は受信したDNSリクエストのIPアドレスをログ記録しません。 この設定を有効にすると、IPアドレスがログ記録されるようになり、クエリログに表示されます。

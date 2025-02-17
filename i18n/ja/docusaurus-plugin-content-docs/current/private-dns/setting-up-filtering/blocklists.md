@@ -1,65 +1,65 @@
 ---
-title: Blocklists
+title: ブロックリスト
 sidebar_position: 1
 ---
 
-## What blocklists are
+## ブロックリストとは
 
-Blocklists are sets of rules in text format that AdGuard DNS uses to filter out ads and content that could compromise your privacy. In general, a filter consists of rules with a similar focus. For example, there may be rules for website languages (such as German or Russian filters) or rules that protect against phishing sites (such as the Phishing URL Blocklist). You can easily enable or disable these rules as a group.
+ブロックリストは、広告やプライバシーを侵害する可能性のあるコンテンツをフィルタリングするために、AdGuard DNS が使用するテキスト形式ルールのセットです。 一般的にフィルタは、同じような焦点を持つルールで構成されます。 たとえば、ウェブサイトの言語に対するルール（例：ドイツ語やロシア語フィルタなど）や、フィッシングサイトから保護するルール（フィッシングURLブロックリストなど）があります。 フィルタというグループになっているこれらのルールを、グループとして簡単に有効または無効にできます。
 
-## Why they are useful
+## ブロックリストはどう役に立つのか
 
-Blocklists are designed for flexible customization of filtering rules. For example, you may want to block advertising domains in a specific language region, or you may want to get rid of tracking or advertising domains. Select the blocklists you want and customize the filtering to your liking.
+ブロックリストは、フィルタリングルールを柔軟にカスタマイズできるように設計されています。 例えば、特定の言語地域の広告ドメインをブロックしたい場合や、トラッキングや広告ドメインを排除したい場合などがあったりします。 ぜひお好みのブロックリストを選択し、フィルタリングをニーズに応じてカスタマイズしてください。
 
-## How to activate blocklists in AdGuard DNS
+## AdGuard DNS でブロックリストを有効化する方法
 
-To activate the blocklists:
+【ブロックリストを有効化する方法】
 
-1. Open the Dashboard.
-2. Go to the _Servers_ section.
-3. Select the required server.
-4. Click _Blocklists_.
+1. 「ダッシュボード」を開きます。
+2. 「サーバー」セクションに移動します。
+3. 必要なサーバーを選択します。
+4. 「ブロックリスト」をクリックします。
 
-## Blocklists types
+## ブロックリストの種類
 
-### General
+### 一般
 
-A group of filters that includes lists for blocking ads and tracking domains.
+広告やトラッキングドメインをブロックするリストを含むフィルタグループです。
 
 ![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
 
-### Regional
+### 地域特化
 
-A group of filters consisting of regional lists to block domains in specific languages.
+特定の言語のドメインをブロックするための地域リストで構成されたフィルタグループです。
 
 ![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
-### Security
+### セキュリティ
 
-A group of filters containing rules for blocking fraudulent sites and phishing domains.
+詐欺サイトやフィッシングドメインをブロックするためのルールを含むフィルタグループです。
 
 ![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
 
-### Other
+### その他
 
-Blocklists with various blocking rules from third-party developers.
+サードパーティの開発者からのさまざまなブロックルールを持つブロックリストです。
 
 ![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
 
-## Adding filters
+## フィルタを追加する方法
 
-If you would like the list of AdGuard DNS filters to be expanded, you can submit a request to add them in the relevant section of [Hostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry) on GitHub.
+AdGuard DNS フィルタのリストを拡張したい場合は、[GitHubのHostlistsregistry](https://github.com/AdguardTeam/HostlistsRegistry)の該当セクションで追加のリクエストを送信することができます。
 
-To submit a request:
+リクエストを送信する方法：
 
-1. Go to the link above (you may need to register on GitHub).
-2. Click _New issue_.
-3. Click _Blocklist request_ and fill out the form.
-4. After filling out the form, click _Submit new issue_.
+1. 上記のGitHubリンクにアクセスします（GitHubへの登録が必要な場合があります）。
+2. 「_New issue_」をクリックします。
+3. 「Blocklist request」をクリックし、フォームに記入します。
+4. フォームに記入したら、「_Submit new issue_」をクリックします。
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+ご提案のフィルタのブロックルールが既存のリストと重複しない場合、リポジトリに追加されます。
 
-## User rules
+## ユーザールール
 
-You can also create your own blocking rules.
-Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+独自のブロックルールを作成することもできます。
+詳細は、[こちらのユーザールールに関する記事](/private-dns/setting-up-filtering/user-rules.md)でご確認ください。

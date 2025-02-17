@@ -932,15 +932,27 @@ Disse servere blokerer voksenwebsteder og upassende indhold.
 
 #### Pure Edition
 
-| Protokol  | Adresse                         |                                                                                                                                                   |
-| --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.10.10` og `52.80.52.52` | [Føj til AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=) |
+| Protokol       | Adresse                                            |                                                                                                                                                                                                                                           |
+| -------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `117.50.10.10` og `52.80.52.52`                    | [Føj til AdGuard](adguard:add_dns_server?address=117.50.10.10&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=)                                                                                         |
+| DNS, IPv6      | `2400:7fc0:849e:200::8` og `2404:c2c0:85d8:901::8` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=)                                                                       |
+| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`            | [Føj til AdGuard](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
+| DNS-over-TLS   | `tls://dot-pure.onedns.net`                        | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
 
 #### Block Edition
 
+| Protokol       | Adresse                                            |                                                                                                                                                                                                                       |
+| -------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `52.80.66.66` og `117.50.22.22`                    | [Føj til AdGuard](adguard:add_dns_server?address=52.80.66.66&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=)                                                                       |
+| DNS, IPv6      | `2400:7fc0:849e:200::4` og `2404:c2c0:85d8:901::4` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=)                                                   |
+| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                 | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
+| DNS-over-TLS   | `tls://dot.onedns.net`                             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                         |
+
+#### Family-udgave
+
 | Protokol  | Adresse                         |                                                                                                                                                   |
 | --------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.11.11` og `52.80.66.66` | [Føj til AdGuard](adguard:add_dns_server?address=117.50.11.11&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.11.11&name=) |
+| DNS, IPv4 | `117.50.60.30` og `52.80.60.30` | [Føj til AdGuard](adguard:add_dns_server?address=117.50.60.30&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=) |
 
 ### OpenNIC DNS
 
@@ -1096,9 +1108,9 @@ Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syn
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Føj til AdGuard](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853)                             |
 | DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582)                   |
-| DNS, IPv4      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
-| DNS, IPv6      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
-| DNSCrypt, IPv4 | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv4      | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv6      | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
+| DNSCrypt, IPv4 | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
 
 ### DNS Forge
 

@@ -1,24 +1,24 @@
 ---
-title: Rate limit
+title: レート制限（1秒に処理できるリクエスト数）
 sidebar_position: 4
 ---
 
-DNS rate limiting is a method used to control the amount of traffic that a DNS server can process in a certain timeframe.
+DNSレート制限は、DNSサーバーが一定時間内に処理できるトラフィック量を制御するために使用される方法です。
 
-Without rate limits, DNS servers are vulnerable to being overloaded, and as a result, users might encounter slowdowns, interruptions, or complete downtime of the service. Rate limiting ensures that DNS servers can maintain performance and uptime even under heavy traffic conditions. Rate limits also help to protect you from malicious activity, such as DoS and DDoS attacks.
+レート制限がないと、DNSサーバーは過負荷の影響を受けやすくなり、その結果、ユーザーはサービスの速度低下、中断、または完全なダウンタイムに遭遇する可能性があります。 レート制限により、DNSサーバーは、トラフィックが多い状況下でもパフォーマンスとアップタイムを維持できます。 また、レート制限は、DoS攻撃やDDoS攻撃などの悪意のある行為からユーザーを保護するのにも役立ちます。
 
-## How does Rate limit work
+## レート制限の仕組み
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+DNSのレート制限は通常、クライアント（IPアドレス）が一定期間内にDNSサーバーに出せるリクエスト数にしきい値を設定することで機能します。 現在の AdGuard DNS のレート制限に問題があり、_チーム_ または _エンタープライズ_ プランをご利用の場合は、レート制限の引き上げをリクエストできます。
 
-## How to request DNS rate limit increase
+## DNSレート上限引き上げの申請方法
 
-If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can request a higher rate limit. To do so, please follow the instructions below:
+AdGuard DNS の _チーム_ または _エンタープライズ_ プランをご契約の場合、より高いレート制限を申請できます。 その後、以下の手順を行なってください:
 
-1. Go to [DNS dashboard](https://adguard-dns.io/dashboard/) → _Account settings_ → _Rate limit_
+1. [DNSダッシュボード](https://adguard-dns.io/dashboard/) → _アカウント設定_ → _レート制限_ に移動します。
 
-2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
+2. [_制限の引き上げをリクエスト_]をタップしてサポートチームに連絡し、レート制限の引き上げを申請してください。 CIDRとご希望の制限を記載してください。
 
-   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![レート制限](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
+3. 申請は1～3営業日以内に審査されます。 メールにて変更内容をご連絡いたします。

@@ -21,5 +21,5 @@ OPNSense ルーターが DNS-over-HTTPS または DNS-over-TLS の設定をサ�
 8. オプションとして、セキュリティを強化するためにDNSSECを有効にすることができます。
 9. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

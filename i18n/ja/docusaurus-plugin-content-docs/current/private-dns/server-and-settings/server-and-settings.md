@@ -1,27 +1,27 @@
 ---
-title: Server and settings
+title: サーバーと設定
 sidebar_position: 1
 ---
 
-## What is a server and how to use it
+## サーバーとは何か、どのように使用できるか
 
-When you set up Private AdGuard DNS, you'll encounter the term _servers_.
+パブリック AdGuard DNS を設定すると、「_サーバー_」という用語に出くわすことになります。
 
-A server acts as the “profile” that you connect your devices to.
+サーバーは、あなたがお使いのデバイスを接続する「プロファイル」として機能します。
 
-Servers include configurations that you can customize to your liking.
+サーバーには、好みに合わせてカスタマイズできる設定が含まれています。
 
-Upon creating an account, we automatically establish a server with default settings. You can choose to modify this server or create a new one.
+アカウントを作成すると、自動的にデフォルト設定のサーバーが立ち上がります。 このサーバーを調整するか、新しいサーバーを作成することができます。
 
-For instance, you can have:
+たとえば、以下のようなサーバーを持つことができます：
 
-- A server that allows all requests
-- A server that blocks adult content and certain services
-- A server that blocks adult content only during specific hours you choose
+- すべてのリクエストを許可するサーバー
+- 成人向けコンテンツと特定のサービスをブロックするサーバー
+- 特定の時間帯にのみ成人向けコンテンツをブロックするサーバー
 
-For more information on traffic filtering and blocking rules, check out the article [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+トラフィックのフィルタリングやブロックルールについて詳しくは、「[AdGuard DNSでフィルタリングを設定する方法](/private-dns/setting-up-filtering/blocklists.md)」という記事を確認してください。
 
-If you're interested in specific settings, there are dedicated articles available for that:
+特定の設定に興味がある場合は、それぞれの専用記事もございます：
 
-- [Advanced settings](/private-dns/server-and-settings/advanced.md)
-- [Access settings](/private-dns/server-and-settings/access.md)
+- [詳細設定](/private-dns/server-and-settings/advanced.md)
+- [アクセス設定](/private-dns/server-and-settings/access.md)
