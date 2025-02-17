@@ -153,7 +153,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### 开源API 规范
 
-OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][openapi]。
+OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
 您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以使用 Swagger 编辑器 [https://editor.swagger.io/][swagger] 打开此文件。
 
@@ -165,5 +165,5 @@ OpenAPI 规范可在 [https://api.adguard-dns.io/static/swagger/openapi.json][op
 
 如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您希望添加的内容。
 
-[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

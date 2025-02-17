@@ -1,30 +1,30 @@
 ---
-title: User rules
+title: ユーザールール
 sidebar_position: 2
 ---
 
-## What is it and why you need it
+## ユーザールールとは何か、どう役に立つのか
 
-User rules are the same filtering rules as those used in common blocklists. You can customize website filtering to suit your needs by adding rules manually or importing them from a predefined list.
+ユーザールールは、一般的なブロックリストで使用されるものと同じ形式のフィルタリングルールです。 ルールを手動で追加するか、事前定義されたリストからインポートすることで、ニーズに合わせてウェブサイトのフィルタリングをカスタマイズできます。
 
-To make your filtering more flexible and better suited to your preferences, check out the [rule syntax](/general/dns-filtering-syntax/) for AdGuard DNS filtering rules.
+独自のルールでフィルタリングをより柔軟にし、あなたの<ruby>好み<rt>ニーズ</rt></ruby>に合ったものにするために、ぜひ[AdGuard DNS フィルタリングルールのルール構文](/general/dns-filtering-syntax/)をチェックしてください。
 
-## How to use
+## 使い方
 
-To set up user rules:
+ユーザールールを設定する方法：
 
-1. Navigate to the _Dashboard_.
+1. 「_ダッシュボード_」に移動します。
 
-2. Go to the _Servers_ section.
+2. 「サーバー」セクションに移動します。
 
-3. Select the required server.
+3. 必要なサーバーを選択します。
 
-4. Click the _User rules_ option.
+4. 「_ユーザールール_」オプションをクリックします。
 
-5. You'll find several options for adding user rules.
+5. そうすると、ユーザールールを追加するためのいくつかのオプションが見つかります。
 
-   - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
-     ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - The advanced way is to use the rule editor. Click _Open editor_ and enter blocking rules according to [syntax](/general/dns-filtering-syntax/)
+   - 最も簡単な方法はルールジェネレーターを使うことです。 使用するには、「_新しいルールを追加_」をクリック → ブロックまたはブロック解除したいドメインの名前を入力 → 「_ルールを追加_」をクリックします。
+     ![ルールを追加 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - 上級者向けの方法はルールエディタを使用することです。 _エディタを開く_をクリックし、[語法](/general/dns-filtering-syntax/)に従ってブロックルールを入力します。
 
-This feature allows you to [redirect a query to another domain by replacing the contents of the DNS query](/general/dns-filtering-syntax/#dnsrewrite-modifier).
+この機能を使用すると、[DNSクエリの内容を置き換えることで、別のドメインにお問い合わせをリダイレクト](/general/dns-filtering-syntax/#dnsrewrite-modifier)できます。

@@ -1,44 +1,44 @@
 ---
-title: How to remove a DNS profile
+title: DNSプロファイルの削除方法
 sidebar_position: 3
 ---
 
-If you need to disconnect your iPhone, iPad, or Mac with a configured DNS profile from your DNS server, you need to remove that DNS profile. Here's how to do it.
+DNSプロファイルが設定されているiPhone、iPad、MacをDNSサーバーから切断する必要がある場合は、そのDNSプロファイルを削除する必要があります。 その方法は以下のとおりです。
 
-On your Mac:
+Macの場合：
 
-1. Open *System Settings*.
+1. 「*システム環境設定*」を開きます。
 
-1. Click *Privacy & Security*.
+1. 「*プライバシーとセキュリティ*」をクリックします。
 
-1. Scroll down to *Profiles*.
+1. 「*プロファイル*」までスクロールダウンします。
 
-    ![Profiles](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
+    ![プロファイル](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profiles.png)
 
-1. Select a profile and click `–`.
+1. プロファイルを選択して、「`–`」（マイナス）をクリックします。
 
-    ![Deleting a profile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
+    ![プロファイルの削除](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/delete.png)
 
-1. Confirm the removal.
+1. 削除を確定します。
 
-    ![Confirmation](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
+    ![確認](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/confirm.png)
 
-On your iOS device:
+iOSデバイスの場合:
 
-1. Open *Settings*.
+1. 「*設定*」アプリを開きます。
 
-1. Select *General*.
+1. 「*一般*」を選択します。
 
-    ![General settings *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
+    ![一般設定 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/general.jpeg)
 
-1. Scroll down to *VPN & Device Management*.
+1. 「*VPNとデバイス管理*」までスクロールダウンします。
 
-    ![VPN & Device Management *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
+    ![VPNとデバイス管理 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/vpn.jpeg)
 
-1. Select the desired profile and tap *Remove Profile*.
+1. 削除したいプロファイルを選択し、「*プロファイルを削除*」をタップします。
 
-    ![Profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
+    ![プロファイル *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/profile.jpeg)
 
-    ![Deleting a profile *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
+    ![プロファイルの削除 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/deleting-dns-profile/remove.jpeg)
 
-1. Enter your device password to confirm the removal.
+1. 削除を確定するにはデバイスのパスワードを入力します。

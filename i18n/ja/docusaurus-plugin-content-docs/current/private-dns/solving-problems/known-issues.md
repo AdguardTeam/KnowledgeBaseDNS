@@ -1,59 +1,59 @@
 ---
-title: Known issues
+title: 既知の問題
 sidebar_position: 1
 ---
 
-After setting up AdGuard DNS, some users may find that it doesn’t work properly: they see a message that their device is not connected to AdGuard DNS and the requests from that device are not displayed in the Query log. This can happen because of certain hidden settings in your browser or operating system. Let’s look at several common issues and their solutions.
+AdGuard DNS を設定した後、デバイスが AdGuard DNS に接続されていないというメッセージが表示されたり、そのデバイスからのリクエストが「クエリログ」に表示されないなど、AdGuard DNS が正しく機能しないことに気づくかもしれません。 これは、ブラウザやオペレーティングシステムの特定の隠れた設定が原因で発生することがあります。 よくある問題とその解決策を見てみましょう。
 
 :::tip
 
-You can check the status of AdGuard DNS on the [test page](https://adguard.com/test.html).
+AdGuard DNS のステータス・稼働状況は[こちらの専用テストページ](https://adguard.com/test.html)で確認できます。
 
 :::
 
-## Chrome’s secure DNS settings
+## ChromeのセキュアDNS設定
 
-If you’re using Chrome and you don’t see any requests in your AdGuard DNS dashboard, this may be because Chrome uses its own DNS server. Here’s how you can disable it:
+Chromeを使用していて、AdGuard DNSダッシュボードにリクエストが表示されない場合は、Chromeが独自のDNSサーバーを使用している可能性があります。 そのサーバーを無効にする方法は以下のとおりです:
 
-1. Open Chrome’s settings.
-1. Navigate to *Privacy and security*.
-1. Select *Security*.
-1. Scroll down to *Use secure DNS*.
-1. Disable the feature.
+1. Chromeの設定を開きます。
+1. 「*プライバシーとセキュリティ*」に移動します。
+1. 「*セキュリティ*」を選択します。
+1. 「*セキュア DNS を使用する*」までスクロールします。
+1. この機能をオフにします。
 
-![Chrome’s Use secure DNS feature](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
+![ChromeのセキュアDNS設定](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you've set it up correctly.
+Chrome独自のDNS設定を無効にすると、ブラウザはオペレーティングシステムで指定されているDNSを使用しますので、AdGuard DNSが正しく設定されていれば、AdGuardのDNSが使用されるはずです。
 
-## iCloud Private Relay (Safari, macOS, and iOS)
+## iCloudプライベートリレー (Safari、macOS、iOS)
 
-If you enable iCloud Private Relay in your device settings, Safari will use Apple’s DNS addresses, which will override the AdGuard DNS settings.
+デバイス設定で「iCloud プライベートリレー」を有効にすると、Safari は Apple の DNS アドレスを使用するため、AdGuard DNS 設定が上書きされます。
 
-Here’s how you can disable iCloud Private Relay on your iPhone:
+iPhoneでiCloudプライベートリレーを無効にする方法は以下のとおりです：
 
-1. Open *Settings* and tap your name.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
+1. 「*設定*」アプリを開き、上部の自分の名前をタップします。
+1. 「*iCloud*」→「*プライベートリレー*」を選択します。
+1. 「プライベートリレー」をオフにします。
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOSプライベートリレー](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
 
-On your Mac:
+Macの場合：
 
-1. Open *System Settings* and click your name or *Apple ID*.
-1. Select *iCloud* → *Private Relay*.
-1. Turn off Private Relay.
-1. Click *Done*.
+1. 「*システム設定*」を開き、自分の名前または*Apple ID*をクリックします。
+1. 「*iCloud*」→「*プライベートリレー*」を選択します。
+1. 「プライベートリレー」をオフにします。
+1. 「*完了*」をクリックします。
 
-![macOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
+![macOSプライベートリレー](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/mac-private-relay.png)
 
-## Advanced Tracking and Fingerprinting Protection (Safari, starting from iOS 17)
+## 「高度なトラッキングとフィンガープリント保護」 (iOS 17以降のSafari)
 
-After the iOS 17 update, Advanced Tracking and Fingerprinting Protection may be enabled in Safari settings, which could potentially have a similar effect to iCloud Private Relay bypassing AdGuard DNS settings.
+iOS 17へのアップデート後、Safariの設定で「高度なトラッキングとフィンガープリント保護」で有効になっている可能性があり、iCloud プライベートリレーがAdGuard DNS設定をバイパスするのと同様の効果が出てしまうことがあります。
 
-Here’s how you can disable Advanced Tracking and Fingerprinting Protection:
+「高度なトラッキングとフィンガープリント保護」を無効にする方法は以下のとおりです:
 
-1. Open *Settings* and scroll down to *Safari*.
-1. Tap *Advanced*.
-1. Disable *Advanced Tracking and Fingerprinting Protection*.
+1. デバイスで「*設定*」を開き、「*Safari*」までスクロールします。
+1. 「*詳細*」をタップします。
+1. 「*高度なトラッキングとフィンガープリント保護*」をオフにします。
 
-![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+![iOSの高度なトラッキングとフィンガープリント保護 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)

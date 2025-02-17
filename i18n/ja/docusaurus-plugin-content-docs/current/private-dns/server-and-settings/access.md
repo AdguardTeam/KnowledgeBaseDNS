@@ -1,32 +1,32 @@
 ---
-title: Access settings
+title: アクセス設定
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+アクセス設定を構成することで、お使いのAdGuard DNSを不正アクセスから保護できます。 例えば、専用のIPv4アドレスを使用しているときに、スニファーを使用した攻撃者がそれを認識し、要求で爆撃しているとします。 問題ありません。厄介なドメインまたはIPアドレスをリストに追加するだけで、もう邪魔されることはありません！
 
-Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
+ブロックされたリクエストはクエリ ログに表示されず、合計制限にもカウントされません。
 
-## How to set it up
+## 設定方法
 
-### Allowed clients
+### 許可クライアント
 
-This setting allows you to specify which clients can use your DNS server. It has the highest priority. For example, if the same IP address is on both the denied and allowed list, it will still be allowed.
+この設定では、どのクライアントがあなたのDNSサーバーを使用できるかを指定できます。 このリストは最優先です。 つまり、例えば、同じIPアドレスが拒否リストと許可リストの両方にある場合でも、許可されます。
 
-### Disallowed clients
+### 許可されていないクライアント
 
-Here you can list the clients that are not allowed to use your DNS server. You can block access to all clients and use only selected ones. To do this, add two addresses to the disallowed clients: `0.0.0.0/0` and `::/0`. Then, in the _Allowed clients_ field, specify the addresses that can access your server.
+ここでは、DNSサーバーの使用を許可されていないクライアントをリストアップできます。 すべてのクライアントへのアクセスをブロックし、選択したクライアントのみを使用することができます。 これを行うには、許可されていないクライアントに `0.0.0.0/0` と `::/0` の 2 つのアドレスを追加します。 次に、「_許可クライアント_」フィールドに、あなたのサーバーにアクセスできるアドレスを指定します。
 
 :::note 【重要】
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+アクセス設定を適用する前に、自分のIPアドレスがブロックされていないことを確認してください。 ブロックされていると、ネットワークにアクセスできなくなります。 もしそうなった場合は、DNSサーバーから切断し、アクセス設定に移動し、設定を適宜調整してください。
 
 :::
 
-### Disallowed domains
+### 許可されていないドメイン
 
-Here you can specify the domains (as well as wildcard and DNS filtering rules) that will be denied access to your DNS server.
+ここでは、DNSサーバーへのアクセスが拒否されるドメイン（ワイルドカードおよびDNSフィルタリングルールも含む）を指定できます。
 
-![Access settings \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
+![アクセス設定 \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-5/AS-en.png)
 
-To display IP addresses associated with DNS requests in the Query log, select the _Log IP addresses_ checkbox. To do this, open _Server settings_ → _Advanced settings_.
+DNSリクエストに関連するIPアドレスをクエリログに表示するには、「_IPアドレスをログする_」チェックボックスを選択してください。 そのためには、「_サーバー設定_」 → 「_詳細設定_」を開いてください。

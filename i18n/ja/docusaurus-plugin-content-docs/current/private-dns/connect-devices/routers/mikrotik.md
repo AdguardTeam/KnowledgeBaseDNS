@@ -3,7 +3,7 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
+MikroTikルーターは、オープンソースのRouterOSオペレーティングシステムを使用しており、家庭や小規模オフィスのネットワーク向けにルーティング、ワイヤレスネットワーク、ファイアウォールサービスを提供しています。
 
 ## DNS-over-HTTPS を設定する
 
@@ -23,42 +23,42 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
      - `94.140.14.49`
      - `94.140.14.59`
    - _Allow Remote Requests_ を _Yes_ に設定します（これは DoH が機能するために重要です）。
-   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+   - _Use DoH server_ フィールドに、プライベートAdGuard DNSサーバーのURLを入力します: `https://d.adguard-dns.com/dns-query/*******`
    - 「_OK_」をクリックします。
 4. 静的DNSレコードを作成する:
    - 「_DNS Settings_」で「_Static_」をクリックします。
    - _Add New_をクリックします。
-   - Set _Name_ to `d.adguard-dns.com`
-   - Set _Type_ to `A`
+   - _Name_を `d.adguard-dns.com` に設定します。
+   - _Type_を `A` に設定します。
    - _Address_を`94.140.14.49`に設定します。
-   - Set _TTL_ to `1d 00:00:00`
+   - _TTL_ を `1d 00:00:00` に設定します。
    - このプロセスを繰り返して、同一のエントリを作成します。ただし、今度は _Address_ を `94.140.14.59` にしてください。
 5. DHCP クライアントで Peer DNS を無効にする:
    - _IP_ → _DHCP Client_ へ進みます。
    - インターネット接続に使用されているクライアント（通常はWANインターフェース上）をダブルクリックします。
    - _Use Peer DNS_ のチェックを外します。
    - 「_OK_」をクリックします。
-6. Test and verify:
-   - You might need to reboot your MikroTik router for all changes to take effect
-   - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+6. テストして動作を確認する:
+   - すべての変更内容を適用させるには、MikroTikルーターを再起動する必要がある場合があります。
+   - ブラウザの DNS キャッシュをクリアします。 [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) のようなツールを使用して、DNSリクエストがちゃんとAdGuard経由でルーティングされているかどうかを確認できます。
 
-## My router does not support DNS-over-HTTPS
+## お使いのルーターはDNS-over-HTTPSをサポートしていません
 
-Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
+MikrotikルーターがDNS-over-HTTPSやDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
 1. お使いのMikroTikルーターにアクセスする:
    - ウェブブラウザを開き、ルーターのIPアドレス（通常は `192.168.88.1`）にアクセスします。
    - （または、Winboxを使用してMikroTikルーターに接続することもできます。）
    - 管理者のユーザー名とパスワードを入力します。
-2. Configure Plain DNS:
-   - Go to _IP_ → _DNS_
-   - In the _Servers_ section, add the following AdGuard DNS servers:
+2. プレーンDNSを構成する:
+   - _IP_ → _DNS_ に移動します。
+   - _Servers_ セクションで、以下の AdGuard DNS サーバーを追加します:
      - IPv4: `94.140.14.49` と `94.140.14.59`
      - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
-     - Dedicated IPv6: Private AdGuard DNS supports dedicated IPv6 addresses. To find them, open the Dashboard, click _Settings_ next to your device → _Plain DNS server addresses_ → _Dedicated IPv6 addresses_.
-   - Click _OK_
+     - 専用 IPv6: プライベート AdGuard DNS は専用 IPv6 アドレスをサポートしています。 それを見つけるには、ダッシュボードを開き、デバイスの横にある「_設定_」をクリック→「_プレーンDNSサーバーアドレス_」→「_専用IPv6アドレス_」。
+   - 「_OK_」をクリックします。
 3. DHCP クライアントで Peer DNS を無効にする:
-   - Go to _IP_ → _DHCP Client_
+   - _IP_ → _DHCP Client_ へ進みます。
    - インターネット接続に使用されているクライアント（通常はWANインターフェース上）をダブルクリックします。
-   - Uncheck _Use Peer DNS_
-   - Click _OK_
+   - _Use Peer DNS_ のチェックを外します。
+   - 「_OK_」をクリックします。

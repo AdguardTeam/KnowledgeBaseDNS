@@ -20,5 +20,5 @@ Synology NASルーターがDNS-over-TLSや DNS-over-HTTPS設定をサポート�
 7. 設定を保存します。
 8. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [リンクされたIP](private-dns/connect-devices/other-options/linked-ip.md)

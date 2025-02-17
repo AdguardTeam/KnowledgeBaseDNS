@@ -7,26 +7,26 @@ sidebar_position: 2
 
 「専用IPv4アドレス」は、チームおよびエンタープライズプランを持つユーザーに提供される機能であり、「リンクされたIP」は全ユーザーが利用できる機能です。
 
-チームまたはエンタープライズプランをお持ちの場合、お客様は複数の専用IPアドレスを与えられます。 これらのアドレスへのリクエストは「あなたのもの」として扱われ、サーバーレベルの設定とフィルタリングルールがそれに応じて適用されます。 Dedicated IP addresses are much more secure and easier to manage. With linked IPs, you have to manually reconnect or use a special program every time the device's IP address changes, which happens after every reboot.
+チームまたはエンタープライズプランをお持ちの場合、お客様は複数の専用IPアドレスを与えられます。 これらのアドレスへのリクエストは「あなたのもの」として扱われ、サーバーレベルの設定とフィルタリングルールがそれに応じて適用されます。 専用 IP アドレスはより安全で、管理もより簡単です。 リンクされたIPの場合、デバイスのIPアドレスが変わるたび（例えばデバイス再起動でIPは変更されます。）に手動で再接続するか、特別なプログラムを使う必要があります。
 
-## Why do you need a dedicated IP?
+## 専用IPが必要な理由は？
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. In this case, you will have to use standard unencrypted DNS. There are two ways to set up AdGuard DNS: [using linked IPs](/private-dns/connect-devices/other-options/linked-ip.md) and using dedicated IPs.
+残念ながら、接続デバイスの技術仕様によっては、暗号化されたプライベートAdGuard DNSサーバーを設定できない場合があります。 この場合、標準の暗号化されていないDNSを使用する必要があります。 AdGuard DNSを設定する方法は2つあります: [リンクされたIPを使用する](/private-dns/connect-devices/other-options/linked-ip.md)か、専用IPを使用するという2方法です。
 
-Dedicated IPs are generally a more stable option. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you'll need to relink the IP address. With dedicated IPs, you get an IP address that is exclusively yours, and all requests will be counted for your device.
+専用IPは一般的に、より安定したオプションです。 リンクされたIPにはいくつかの制限があります。たとえば、居住用アドレス以外は許可されておラズ、プロバイダーはIPを変更する可能性があり、その際IPアドレスを再リンクする必要が出てきます。 専用IPなら、あなた専用のIPアドレスが提供され、すべてのリクエストはあなたのデバイスのものとしてカウントされます。
 
-The disadvantage is that you may start receiving irrelevant traffic (scanners, bots), as always happens with public DNS resolvers. You may need to use [Access settings](/private-dns/server-and-settings/access.md) to limit bot traffic.
+デメリットは、パブリックDNSリゾルバで常に起こるように、無関係なトラフィック（スキャナやボット）を受信し始める可能性があることです。 その場合、[アクセス設定](/private-dns/server-and-settings/access.md)を使用してボットトラフィックを制限する必要があったりします。
 
-The instructions below explain how to connect a dedicated IP to the device:
+デバイスに専用IPを接続する方法は以下のとおりです：
 
-## Connect AdGuard DNS using dedicated IPs
+## 専用IPを使用して AdGuard DNS に接続する方法
 
-1. Open Dashboard.
-2. Add a new device or open the settings of a previously created device.
-3. Select _Use server addresses_.
-4. Next, open _Plain DNS Server Addresses_.
-5. Select the server you wish to use.
-6. To bind a dedicated IPv4 address, click _Assign_.
-7. If you want to use a dedicated IPv6 address, click _Copy_.
+1. AdGuard DNSの「ダッシュボード」を開きます。
+2. 新しいデバイスを追加するか、以前に作成してあるデバイスの設定を開きます。
+3. 「_サーバーアドレスを使用_」を選択します。
+4. 「_プレーンDNSサーバーアドレス_」を開きます。
+5. 使用したいサーバーを選択します。
+6. 専用IPv4アドレスをバインドするには、「_割り当てる_」をクリックします。
+7. 専用IPv6アドレスを使用したい場合は、「_コピー_」をクリックします。
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
-8. Copy and paste the selected dedicated address into the device configurations.
+8. コピーした専用アドレスをデバイス設定に貼り付けます。

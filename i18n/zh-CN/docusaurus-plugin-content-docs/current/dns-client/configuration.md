@@ -28,7 +28,7 @@ sidebar_position: 2
 
 - `size`：DNS 结果缓存的最大值（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
-  **Example:** `128MB`
+  **示例：** `128MB`
 
 - `client_size`：指定每个已配置客户端地址或子网的 DNS 结果缓存的最大尺寸（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
