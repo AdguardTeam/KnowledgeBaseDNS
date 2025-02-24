@@ -41,7 +41,7 @@ Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` u
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC ist ein neues DNS-Verschlüsselungsprotokoll](https://adguard.com/blog/dns-over-quic.html) und AdGuard DNS ist der erste öffentliche Resolver, der es unterstützt. Im Gegensatz zu DoH und DoT verwendet es QUIC als Transportprotokoll und bringt DNS endlich zu seinen Wurzeln zurück - es arbeitet über UDP. Es bringt alle Vorteile von QUIC mit sich - sofort einsatzbereite Verschlüsselung, kürzere Verbindungszeiten, bessere Leistung bei Verlust von Datenpaketen. Außerdem soll QUIC ein Protokoll auf Transportebene sein, und es besteht keine Gefahr von Metadatenlecks, wie sie bei DoH auftreten können.
+[DNS-over-QUIC is a new DNS encryption protocol](https://adguard-dns.io/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Im Gegensatz zu DoH und DoT verwendet es QUIC als Transportprotokoll und bringt DNS endlich zu seinen Wurzeln zurück - es arbeitet über UDP. Es bringt alle Vorteile von QUIC mit sich - sofort einsatzbereite Verschlüsselung, kürzere Verbindungszeiten, bessere Leistung bei Verlust von Datenpaketen. Außerdem soll QUIC ein Protokoll auf Transportebene sein, und es besteht keine Gefahr von Metadatenlecks, wie sie bei DoH auftreten können.
 
 ### Ratenbegrenzung
 

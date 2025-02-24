@@ -995,9 +995,20 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 | DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Add to AdGuard](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
 | DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
 
+### UK DNS Privacy Project
+
+[UK DNS Privacy Project](https://dnsprivacy.org.uk) is a public DNS service based in the United Kingdom with no tracking, no logging, DNSSEC enabled
+
+| Protokol       | Adres                                          |                                                                                                                                                                                                                                                   |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `209.250.227.42` and `64.176.190.82`           | [Add to AdGuard](adguard:add_dns_server?address=209.250.227.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=209.250.227.42&name=)                                                                                               |
+| DNS, IPv6      | `2001:19f0:7400:13c7:5400:05ff:fe40:d1ad`      | [Add to AdGuard](adguard:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=)                                             |
+| DNS-over-HTTPS | `https://resolver.dnsprivacy.org.uk/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk) |
+| DNS-over-TLS   | `tls://resolver.dnsprivacy.org.uk`             | [Add to AdGuard](adguard:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk)                         |
+
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/), Güney Kore'de bulunan ve kullanıcının IP'sini günlüğe kaydetmeyen bir genel DNS hizmetidir. Reklamlar ve izleyiciler engellenir.
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
 
 #### SK Broadband
 
@@ -1015,11 +1026,11 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/), ücretsiz bir özyinelemeli DNS hizmetidir. Yandex.DNS'in sunucuları Rusya, BDT ülkeleri ve Batı Avrupa'da bulunmaktadır. Kullanıcıların talepleri, yüksek bağlantı hızları sağlayan en yakın veri merkezi tarafından işlenir.
+[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
-"Basic" modda, trafik filtreleme yoktur.
+In "Basic" mode, there is no traffic filtering.
 
 | Protokol       | Adres                                             |                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1030,7 +1041,7 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 
 #### Safe
 
-"Safe" modda, virüslü ve sahte sitelere karşı koruma sağlanır.
+In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 | Protokol       | Adres                                             |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1041,7 +1052,7 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 
 #### Family
 
-"Family" modda, virüslü, sahte ve yetişkinlere yönelik sitelere karşı koruma sağlanır.
+In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
 | Protokol       | Adres                                             |                                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1052,13 +1063,13 @@ Bu mevcut sunuculardan sadece bir tanesidir, tam listeyi [burada](https://server
 
 ## **Küçük kişisel çözümleyiciler**
 
-Bunlar genellikle meraklılar veya küçük gruplar tarafından çalıştırılan DNS çözümleyicilerdir. Daha büyük sağlayıcıların ölçeğine ve yedekliliğine sahip olmasalar da genellikle gizliliğe, şeffaflığa öncelik verirler veya özel özellikler sunarlar.
+These are DNS resolvers usually run by enthusiasts or small groups. While they may lack the scale and redundancy of larger providers, they often prioritize privacy, transparency, or offer specialized features.
 
-Uygunluklarını düzgün bir şekilde izleyemeyeceğiz. **Bunları kendi sorumluluğunuzda kullanın.**
+We won't be able to proper monitor their availability. **Use them at your own risk.**
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/), Fredrik Pettersson tarafından sağlanan sıfır günlük tutma ve reklam engelleme DNS hizmetidir.
+[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
 #### Netherlands
 
@@ -1080,9 +1091,9 @@ Uygunluklarını düzgün bir şekilde izleyemeyeceğiz. **Bunları kendi soruml
 
 ### Arapurayil
 
-[Arapurayil](https://dns.arapurayil.com) Mumbai, Hindistan'da barındırılan kişisel bir DNS hizmetidir.
+[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Kayıt tutmaz | Reklamları, izleyicileri, kimlik avını, vb. filtreler | DNSSEC | QNAME Minimizasyonu | EDNS istemci Alt Ağı yok.
+Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | Protokol       | Adres                                                        |                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1091,7 +1102,7 @@ Kayıt tutmaz | Reklamları, izleyicileri, kimlik avını, vb. filtreler | DNSSE
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/), BLR1 bölgesindeki bir Digital Ocean damlacığından çalışan bir sunucudur. Abhay Rana aka Nemo tarafından sürdürülmektedir.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
 | Protokol       | Adres                                                            |                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1099,9 +1110,9 @@ Kayıt tutmaz | Reklamları, izleyicileri, kimlik avını, vb. filtreler | DNSSE
 
 ### Dandelion Sprout's Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server), AdGuard Home altyapısı kullanılarak Trondheim, Norveç'te barındırılan kişisel bir DNS hizmetidir.
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü amaçlı yazılımı engeller, ancak izleyicilere daha kolay gider ve alternatif sağ tabloidleri ve çoğu resim panosunu engeller. Günlük kaydı, kullanılan filtre listelerini iyileştirmek (örneğin, engellenmemesi gereken sitelerin engelini kaldırarak) ve sunucu sistemi güncellemeleri için en az kötü zamanları belirlemek için kullanılır.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1114,7 +1125,7 @@ Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/), [adminforge](https://adminforge.de/) tarafından sağlanan bir reklam engelleyici ve günlük tutmama özelliğine sahip yedek bir DNS çözümleyicisidir.
+[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1130,11 +1141,11 @@ Daha gelişmiş sözdizimi sayesinde AdGuard DNS'den daha fazla reklam ve kötü
 | DNS-over-TLS   | `uncensored.dns.dnswarden.com`         | [Add to AdGuard](adguard:add_dns_server?address=huncensored.dns.dnswarden.com&name=uncensored.dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=huncensored.dns.dnswarden.com&uncensored.dns.dnswarden.com)         |
 | DNS-over-HTTPS | `https://dns.dnswarden.com/uncensored` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnswarden.com/uncensored&name=https://dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnswarden.com/uncensored&https://dns.dnswarden.com) |
 
-Ayrıca reklamları engellemek veya yetişkinlere yönelik içeriği filtrelemek için [özel DNS sunucusunu yapılandırabilirsiniz](https://dnswarden.com/customfilter.html).
+You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content.
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/), Freifunk München tarafından sağlanan ücretsiz DNS sunucularıdır.
+[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
 | Protokol             | Adres                                                                  |                                                                                                                                                                                                                 |
 | -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1145,7 +1156,7 @@ Ayrıca reklamları engellemek veya yetişkinlere yönelik içeriği filtrelemek
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/), Fusl'ın genel birincil OpenNIC Tier2 Anycast DNS Çözümleyicisidir.
+[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | Protokol       | Adres                                                                |                                                                                                                                                       |
 | -------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1154,7 +1165,7 @@ Ayrıca reklamları engellemek veya yetişkinlere yönelik içeriği filtrelemek
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/), ibksturm tarafından sağlanan test sunucuları. OPENNIC, DNSSEC, filtreleme yok, günlük kaydı yok.
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging.
 
 | Protokol             | Adres                                                                   |                                                                                                                                                                                                                                             |
 | -------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1165,7 +1176,7 @@ Ayrıca reklamları engellemek veya yetişkinlere yönelik içeriği filtrelemek
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/), Elias Ojala, Finlandiya tarafından yönetilmektedir.
+[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
 
 | Protokol       | Adres                                    |                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1183,11 +1194,11 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 
 ### momou! DNS
 
-[momou&#33; DNS](https://dns.momou.ch/), DoH ve DoT çözümleyicilerine üç filtreleme düzeyi sağlar
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 
-Reklamları, izleyicileri ve kötü amaçlı yazılımları engeller
+Blocks ads, trackers, and malware
 
 | Protokol       | Adres                            |                                                                                                                                                                                                             |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1196,7 +1207,7 @@ Reklamları, izleyicileri ve kötü amaçlı yazılımları engeller
 
 #### Kids
 
-Reklamları, izleyicileri ve kötü amaçlı yazılımları da engelleyen çocuk dostu filtre
+Kids-friendly filter that also blocks ads, trackers, and malware
 
 | Protokol       | Adres                                 |                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1212,11 +1223,11 @@ Reklamları, izleyicileri ve kötü amaçlı yazılımları da engelleyen çocuk
 
 ### OSZX DNS
 
-[OSZX DNS](https://dns.oszx.co/), küçük bir Reklam Engelleme DNS hobi projesidir.
+[OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
 
 #### OSZX DNS
 
-Bu hizmet, D-o-H, D-o-T ve DNSCrypt v2 desteği ile küçük bir reklam engelleme DNS hobi projesidir.
+This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCrypt v2 support.
 
 | Protokol       | Adres                                                                    |                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1229,7 +1240,7 @@ Bu hizmet, D-o-H, D-o-T ve DNSCrypt v2 desteği ile küçük bir reklam engellem
 
 #### PumpleX
 
-Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleştirir.
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protokol       | Adres                                                                         |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1242,7 +1253,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/), 140 binden fazla reklam, reklam izleme, kötü amaçlı yazılım ve kimlik avı alan adlarını engeller. Günlük tutmama, ECS yok, DNSSEC doğrulaması var, ücretsiz!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -1271,7 +1282,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/), Sebastian Schmidt tarafından sağlanan gizlilik odaklı bir DNS hizmetidir. Günlük tutmama, DNSSEC doğrulaması.
+[Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
 #### DNS Server 1
 
@@ -1283,7 +1294,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc), Vietnam'da bulunan kişisel ve küçük ölçekli kullanım için tasarlanmış kişisel bir DNS Sunucusudur. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
 
 | Protokol       | Adres                                   |                                                                                                                                                                                                                               |
 | -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1294,8 +1305,30 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 
 ### LaxrFar DNS
 
-[LaxrFar DNS](https://laxrfar.xyz/), reklam engelleme, gizlilik, kötü amaçlı yazılım korumasına odaklanan ve katı bir günlük tutmama politikasına sahip bir DNS'dir.
+[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
 
 | Protokol  | Adres           |                                                                                                                                                   |
 | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `23.176.184.32` | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
+
+### NWPS.fi DNS
+
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
+
+#### Standard
+
+Blocks ads, trackers, and malware
+
+| Protokol       | Adres                                 |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| Protokol       | Adres                               |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |
