@@ -995,9 +995,20 @@ Dies ist nur einer der verfügbaren Server, die vollständige Liste finden Sie [
 | DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Add to AdGuard](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
 | DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
 
+### UK DNS Privacy Project
+
+[UK DNS Privacy Project](https://dnsprivacy.org.uk) is a public DNS service based in the United Kingdom with no tracking, no logging, DNSSEC enabled
+
+| Protokoll      | Adresse                                        |                                                                                                                                                                                                                                                   |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `209.250.227.42` and `64.176.190.82`           | [Add to AdGuard](adguard:add_dns_server?address=209.250.227.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=209.250.227.42&name=)                                                                                               |
+| DNS, IPv6      | `2001:19f0:7400:13c7:5400:05ff:fe40:d1ad`      | [Add to AdGuard](adguard:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=)                                             |
+| DNS-over-HTTPS | `https://resolver.dnsprivacy.org.uk/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk) |
+| DNS-over-TLS   | `tls://resolver.dnsprivacy.org.uk`             | [Add to AdGuard](adguard:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk)                         |
+
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/) ist ein öffentlicher DNS-Dienst mit Sitz in Südkorea, der die IP des Nutzers nicht protokolliert. Werbung und Tracker werden gesperrt.
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
 
 #### SK Broadband
 
@@ -1015,11 +1026,11 @@ Dies ist nur einer der verfügbaren Server, die vollständige Liste finden Sie [
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) ist ein kostenloser rekursiver DNS-Dienst. Die Server von Yandex.DNS befinden sich in Russland, den GUS-Ländern und Westeuropa. Die Anfragen werden vom nächstgelegenen Datenzentrum bearbeitet, das hohe Verbindungsgeschwindigkeiten bietet.
+[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
-Im „Basic”-Modus findet keine Datenverkehrsfilterung statt.
+In "Basic" mode, there is no traffic filtering.
 
 | Protokoll      | Adresse                                           |                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1030,7 +1041,7 @@ Im „Basic”-Modus findet keine Datenverkehrsfilterung statt.
 
 #### Sicher
 
-Im Modus „Sicher” ist ein Schutz vor infizierten und betrügerischen Websites gewährleistet.
+In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 | Protokoll      | Adresse                                           |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1041,7 +1052,7 @@ Im Modus „Sicher” ist ein Schutz vor infizierten und betrügerischen Website
 
 #### Familie
 
-Im Modus „Familie” wird Schutz vor infizierten, betrügerischen und nicht jugendfreien Websites geboten.
+In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
 | Protokoll      | Adresse                                           |                                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1052,13 +1063,13 @@ Im Modus „Familie” wird Schutz vor infizierten, betrügerischen und nicht ju
 
 ## **Kleine individuelle Resolver**
 
-Dies sind DNS-Resolver, die normalerweise von Enthusiasten oder kleinen Gruppen betrieben werden. Sie haben zwar nicht den Umfang und die Redundanz größerer Anbieter, legen aber oft Wert auf Datenschutz und Transparenz oder bieten spezielle Funktionen.
+These are DNS resolvers usually run by enthusiasts or small groups. While they may lack the scale and redundancy of larger providers, they often prioritize privacy, transparency, or offer specialized features.
 
-Wir werden nicht in der Lage sein, ihre Verfügbarkeit angemessen zu überwachen. **Die Verwendung erfolgt auf eigenes Risiko.**
+We won't be able to proper monitor their availability. **Use them at your own risk.**
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) ist ein von Fredrik Pettersson angebotener DNS-Dienst ohne Protokollierung und mit Werbeblockern.
+[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
 #### Netherlands
 
@@ -1080,9 +1091,9 @@ Wir werden nicht in der Lage sein, ihre Verfügbarkeit angemessen zu überwachen
 
 ### Arapurayil
 
-[Arapurayil](https://dns.arapurayil.com) ist ein persönlicher DNS-Dienst mit Sitz in Mumbai, Indien.
+[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-Nicht protokollierend | Filtert Werbung, Tracker, Phishing, usw. | DNSSEC | QNAME-Minimierung | Kein EDNS Client-Subnetz.
+Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | Protokoll      | Adresse                                                      |                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1091,7 +1102,7 @@ Nicht protokollierend | Filtert Werbung, Tracker, Phishing, usw. | DNSSEC | QNAM
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) ist ein Server, der auf einem Digital Ocean-Droplet in der BLR1-Region bereitsteht. Betreut von Abhay Rana alias Nemo.
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
 | Protokoll      | Adresse                                                          |                                                                                                                                                         |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1099,9 +1110,9 @@ Nicht protokollierend | Filtert Werbung, Tracker, Phishing, usw. | DNSSEC | QNAM
 
 ### Dandelion Sprout's Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) ist ein persönlicher DNS-Dienst, der in Trondheim, Norwegen, gehostet wird und eine AdGuard Home-Infrastruktur nutzt.
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Sperrt mehr Werbung und Malware als AdGuard DNS dank einer fortgeschritteneren Syntax, ist aber unempfindlicher gegenüber Trackern und sperrt rechtsextreme Boulevardblätter und die meisten Imageboards. Die Protokollierung dient dazu, die verwendeten Filterlisten zu verbessern (z. B. durch Aufhebung der Sperrung von Websites, die nicht hätten gesperrt werden dürfen) und die günstigsten Zeitpunkte für die Aktualisierung des Serversystems zu ermitteln.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | Protokoll      | Adresse                                               |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1114,7 +1125,7 @@ Sperrt mehr Werbung und Malware als AdGuard DNS dank einer fortgeschritteneren S
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) ist ein redundanter DNS-Auflösungsdienst mit einem Werbeblocker und ohne Protokollierung, der von [adminforge](https://adminforge.de/) bereitgestellt wird.
+[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
 | Protokoll      | Adresse                                               |                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1130,11 +1141,11 @@ Sperrt mehr Werbung und Malware als AdGuard DNS dank einer fortgeschritteneren S
 | DNS-over-TLS   | `uncensored.dns.dnswarden.com`         | [Add to AdGuard](adguard:add_dns_server?address=huncensored.dns.dnswarden.com&name=uncensored.dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=huncensored.dns.dnswarden.com&uncensored.dns.dnswarden.com)         |
 | DNS-over-HTTPS | `https://dns.dnswarden.com/uncensored` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnswarden.com/uncensored&name=https://dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnswarden.com/uncensored&https://dns.dnswarden.com) |
 
-Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/customfilter.html) konfigurieren, um Werbung zu sperren oder Inhalte für Erwachsene zu filtern.
+You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content.
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) bietet kostenlose DNS-Server, die von „Freifunk München“ bereitgestellt werden.
+[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
 | Protokoll            | Adresse                                                                |                                                                                                                                                                                                                 |
 | -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1145,7 +1156,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) ist ein öffentlicher primärer OpenNIC Tier2 Anycast-DNS-Resolver von Fusl.
+[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | Protokoll      | Adresse                                                              |                                                                                                                                                              |
 | -------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1154,7 +1165,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### ibksturm DNS
 
-[ibksturm DNS](https://ibksturm.synology.me/) testet die von ibksturm bereitgestellten Server. OPENNIC, DNSSEC, keine Filterung, keine Protokollierung.
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging.
 
 | Protokoll            | Adresse                                                                 |                                                                                                                                                                                                                                             |
 | -------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1165,7 +1176,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) wird von Elias Ojala, Finnland, bereitgestellt.
+[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
 
 | Protokoll      | Adresse                                  |                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1174,7 +1185,7 @@ Sie können auch [einen benutzerdefinierten DNS-Server](https://dnswarden.com/cu
 
 ### Marbled Fennec
 
-Marbled Fennec Networks hostet DNS-Resolver, die in der Lage sind, sowohl OpenNIC- als auch ICANN-Domains aufzulösen
+Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving both OpenNIC and ICANN domains
 
 | Protokoll      | Adresse                                   |                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1183,11 +1194,11 @@ Marbled Fennec Networks hostet DNS-Resolver, die in der Lage sind, sowohl OpenNI
 
 ### momou! DNS
 
-[momou&#33; DNS](https://dns.momou.ch/) bietet DoH- und DoT-Resolver mit drei Filterungsstufen
+[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
 
 #### Standard
 
-Sperrt Werbung, Tracker und Malware
+Blocks ads, trackers, and malware
 
 | Protokoll      | Adresse                          |                                                                                                                                                                                                             |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1196,7 +1207,7 @@ Sperrt Werbung, Tracker und Malware
 
 #### Kids
 
-Kinderfreundlicher Filter, der auch Werbung, Tracker und Malware sperrt
+Kids-friendly filter that also blocks ads, trackers, and malware
 
 | Protokoll      | Adresse                               |                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1212,11 +1223,11 @@ Kinderfreundlicher Filter, der auch Werbung, Tracker und Malware sperrt
 
 ### OSZX DNS
 
-[OSZX DNS](https://dns.oszx.co/) ist ein kleines Hobbyprojekt zum Sperren von Werbung über DNS.
+[OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
 
 #### OSZX DNS
 
-Bei diesem Dienst handelt es sich um ein kleines DNS-Hobbyprojekt mit D-o-H, D-o-T und DNSCrypt v2-Unterstützung, das Werbung sperrt.
+This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCrypt v2 support.
 
 | Protokoll      | Adresse                                                                  |                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1229,7 +1240,7 @@ Bei diesem Dienst handelt es sich um ein kleines DNS-Hobbyprojekt mit D-o-H, D-o
 
 #### PumpleX
 
-Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist aktiviert.
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | Protokoll      | Adresse                                                                       |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1242,7 +1253,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) sperrt über 140.000 Werbe-, Werbe-Tracking, Malware und Phishing-Domains. Keine Protokollierung, kein ECS, DNSSEC-Validierung, kostenlos!
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -1271,7 +1282,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### Seby DNS
 
-[Seby DNS](https://dns.seby.io/) ist ein auf Datenschutz ausgerichteter DNS-Dienst, der von Sebastian Schmidt bereitgestellt wird. Keine Protokollierung, DNSSEC-Validierung.
+[Seby DNS](https://dns.seby.io/) is a privacy-focused DNS service provided by Sebastian Schmidt. No logging, DNSSEC validation.
 
 #### DNS Server 1
 
@@ -1283,7 +1294,7 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) ist ein privater DNS-Server mit Sitz in Vietnam, der für den privaten und kleinen Gebrauch gedacht ist. Er bietet Werbeblocker, Schutz vor Malware/Phishing, Filter für nicht jugendfreie Inhalte und DNSSEC-Validierung.
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
 
 | Protokoll      | Adresse                                 |                                                                                                                                                                                                                               |
 | -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1294,8 +1305,30 @@ Diese Server sperren keine Werbung, führen keine Protokolle und DNSSEC ist akti
 
 ### LaxrFar DNS
 
-[LaxrFar DNS](https://laxrfar.xyz/) ist ein DNS, der sich auf Werbeblocker, Datenschutz und Malware-Schutz konzentriert und eine strikte Keine-Protokollierung-Politik verfolgt.
+[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
 
 | Protokoll | Adresse         |                                                                                                                                                   |
 | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `23.176.184.32` | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
+
+### NWPS.fi DNS
+
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
+
+#### Standard
+
+Blocks ads, trackers, and malware
+
+| Protokoll      | Adresse                               |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| Protokoll      | Adresse                             |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |

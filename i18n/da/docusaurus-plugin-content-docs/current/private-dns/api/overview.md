@@ -153,7 +153,7 @@ Se metodereferencen [hér](reference.md).
 
 ### OpenAPI-specifikation
 
-OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
+OpenAPI-specifikationen er tilgængelig via[https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
 Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metoder. Filen kan f.eks. åbnes i [https://editor.swagger.io/][swagger].
 

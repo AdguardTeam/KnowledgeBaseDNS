@@ -41,7 +41,7 @@ In tegenstelling tot Google DNS ondersteunt AdGuard DNS geen waarden voor `edns_
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC is een nieuw DNS-encryptieprotocol](https://adguard.com/blog/dns-over-quic.html) en AdGuard DNS is de eerste publieke oplossing die dit ondersteunt. In tegenstelling tot DoH en DoT gebruikt het QUIC als transportprotocol en brengt het DNS eindelijk terug naar zijn roots: het werkt via UDP. Het biedt alle goede dingen die QUIC te bieden heeft: kant-en-klare encryptie, kortere verbindingstijden, betere prestaties wanneer datapakketten verloren gaan. Bovendien wordt QUIC verondersteld een protocol op transportniveau te zijn en zijn er geen risico's op lekken van metagegevens die bij DoH zouden kunnen optreden.
+[DNS-over-QUIC is a new DNS encryption protocol](https://adguard-dns.io/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. In tegenstelling tot DoH en DoT gebruikt het QUIC als transportprotocol en brengt het DNS eindelijk terug naar zijn roots: het werkt via UDP. Het biedt alle goede dingen die QUIC te bieden heeft: kant-en-klare encryptie, kortere verbindingstijden, betere prestaties wanneer datapakketten verloren gaan. Bovendien wordt QUIC verondersteld een protocol op transportniveau te zijn en zijn er geen risico's op lekken van metagegevens die bij DoH zouden kunnen optreden.
 
 ### Snelheidslimiet
 

@@ -368,7 +368,7 @@ Address: 1.2.3.4
   @@||example.org^
   ```
 
-  `||example.org^$important` заблокирует все запросы к `*.example.org`, кроме правила исключения.
+  `||example.org^$important` заблокирует все запросы к `*.example.org`, несмотря на правило исключения.
 
 - В этом примере:
 
