@@ -1304,7 +1304,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### NWPS.fi DNS
 
-[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering. 
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
 
 #### Standard
 
@@ -1323,4 +1323,3 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS|`https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
 |DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
-
