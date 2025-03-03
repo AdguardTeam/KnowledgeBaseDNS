@@ -995,9 +995,20 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 | DNS-over-HTTPS | `https://dns.switch.ch/dns-query`                                                | [Add to AdGuard](adguard:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.switch.ch/dns-query&name=dns.switch.ch) |
 | DNS-over-TLS   | Hostname: `tls://dns.switch.ch` IP: `130.59.31.248` and IPv6: `2001:620:0:ff::2` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.switch.ch&name=dns.switch.ch)                         |
 
+### UK DNS Privacy Project
+
+[UK DNS Privacy Project](https://dnsprivacy.org.uk) is a public DNS service based in the United Kingdom with no tracking, no logging, DNSSEC enabled
+
+| 协议             | 地址                                             |                                                                                                                                                                                                                                                   |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `209.250.227.42` and `64.176.190.82`           | [Add to AdGuard](adguard:add_dns_server?address=209.250.227.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=209.250.227.42&name=)                                                                                               |
+| DNS, IPv6      | `2001:19f0:7400:13c7:5400:05ff:fe40:d1ad`      | [Add to AdGuard](adguard:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:19f0:7400:13c7:5400:05ff:fe40:d1ad&name=)                                             |
+| DNS-over-HTTPS | `https://resolver.dnsprivacy.org.uk/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://resolver.dnsprivacy.org.uk/dns-query&name=dnsprivacy.org.uk) |
+| DNS-over-TLS   | `tls://resolver.dnsprivacy.org.uk`             | [Add to AdGuard](adguard:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://resolver.dnsprivacy.org.uk&name=dnsprivacy.org.uk)                         |
+
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/) 是一个基于韩国的公共 DNS 服务，不会记录用户的 IP 地址。 广告和跟踪器已拦截。
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
 
 #### SK Broadband
 
@@ -1015,11 +1026,11 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) 是一个免费的递归 DNS 服务。 Yandex.DNS 服务器位于俄罗斯、独联体国家和西欧。 用户的请求由提供高速连接的最近的数据中心处理。
+[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
-在「基础」模式下，服务器不进行流量过滤。
+In "Basic" mode, there is no traffic filtering.
 
 | 协议             | 地址                                                |                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1030,7 +1041,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 #### 安全
 
-在「安全」模式下，可阻止感染和欺诈网站。
+In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 | 协议             | 地址                                                |                                                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1041,7 +1052,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 #### 家庭
 
-在「家庭」模式下，可防止感染、欺诈和成人网站。
+In "Family" mode, protection from infected, fraudulent and adult sites is provided.
 
 | 协议             | 地址                                                |                                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1052,13 +1063,13 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ## **个人小型解析器**
 
-这些是 DNS 解析器，通常由爱好者或小团体运行。 虽然它们可能缺乏大型提供商的规模和冗余，但它们往往优先考虑隐私、透明度或提供专门功能。
+These are DNS resolvers usually run by enthusiasts or small groups. While they may lack the scale and redundancy of larger providers, they often prioritize privacy, transparency, or offer specialized features.
 
-我们无法正确监控它们的可用性。 **使用它们需要您自担风险！**
+We won't be able to proper monitor their availability. **Use them at your own risk.**
 
 ### AhaDNS
 
-[AhaDNS](https://ahadns.com/) 是由 Fredrik Pettersson 提供的零记录和广告拦截 DNS 服务。
+[AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
 
 #### Netherlands
 
@@ -1080,9 +1091,9 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### Arapurayil
 
-[Arapurayil](https://dns.arapurayil.com) 是托管在印度孟买的个人 DNS 服务。
+[Arapurayil](https://dns.arapurayil.com) is a personal DNS service hosted in Mumbai, India.
 
-无日志 | 过滤广告、跟踪器、网络钓鱼等 | DNSSEC | QNAME 最小化 | 无 EDNS 客户端子网
+Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimization | No EDNS Client Subnet.
 
 | 协议             | 地址                                                           |                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1091,17 +1102,17 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### Captnemo DNS
 
-[Captnemo DNS](https://captnemo.in/dnscrypt/) 是运行在 Digital Ocean droplet BLR1 区域中的服务器。 由 Abhay Rana（又名 Nemo）维护。
+[Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
 
 | 协议             | 地址                                                               |                                                                                                                                               |
 | -------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [添加到 AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Dandelion Sprout 的官方 DNS 服务器
+### Dandelion Sprout's Official DNS Server
 
-[Dandelion Sprout 的官方 DNS 服务器](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server)是托管在挪威特隆赫姆的个人 DNS 服务，使用 AdGuard Home 基础设施。
+[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-由于更先进的语法，它比 AdGuard DNS 拦截的广告和恶意软件更多，更容易识别追踪器，并拦截 alt-right 小报和大多数图像板。 日志记录用于改进其使用的过滤列表（例如，通过取消拦截不应拦截的站点），并确定服务器系统更新的最小不良时间。
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
 
 | 协议             | 地址                                                    |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1114,7 +1125,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) 是 [adminforge](https://adminforge.de/) 提供的冗余 DNS 解析器，带有广告拦截器，没有日志记录。
+[DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
 
 | 协议             | 地址                                                    |                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1130,11 +1141,11 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 | DNS-over-TLS   | `uncensored.dns.dnswarden.com`         | [Add to AdGuard](adguard:add_dns_server?address=huncensored.dns.dnswarden.com&name=uncensored.dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=huncensored.dns.dnswarden.com&uncensored.dns.dnswarden.com)         |
 | DNS-over-HTTPS | `https://dns.dnswarden.com/uncensored` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnswarden.com/uncensored&name=https://dns.dnswarden.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnswarden.com/uncensored&https://dns.dnswarden.com) |
 
-您还可以[配置自定义 DNS 服务器](https://dnswarden.com/customfilter.html)以阻止广告或过滤成人内容。
+You can also [configure custom DNS server](https://dnswarden.com/customfilter.html) to block ads or filter adult content.
 
 ### FFMUC DNS
 
-[FFMUC](https://ffmuc.net/) 由 Freifunk Mnchen 提供的免费 DNS 服务器。
+[FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
 | 协议                   | 地址                                                                     |                                                                                                                                                                                                                 |
 | -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1145,7 +1156,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) 是 Fusl 的公共主要 OpenNIC Tier2 任播 DNS 解析器。
+[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | 协议             | 地址                                                                   |                                                                                                                                                    |
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1154,7 +1165,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### ibksturm DNS
 
-由 ibksturm 提供的 [ibksturm DNS](https://ibksturm.synology.me/) 测试服务器。 支持 OPENNIC、DNSSEC、无过滤、无日志记录。
+[ibksturm DNS](https://ibksturm.synology.me/) testing servers provided by ibksturm. OPENNIC, DNSSEC, no filtering, no logging.
 
 | 协议                   | 地址                                                                      |                                                                                                                                                                                                                                             |
 | -------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1165,7 +1176,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### Lelux DNS
 
-[Lelux.fi](https://lelux.fi/resolver/) 由 Elias Ojala 运营，芬兰。
+[Lelux.fi](https://lelux.fi/resolver/) is run by Elias Ojala, Finland.
 
 | 协议             | 地址                                       |                                                                                                                                                                                                                                             |
 | -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1174,7 +1185,7 @@ ByteDance Public DNS 是字节跳动在中国提供的免费替代 DNS 服务。
 
 ### Marbled Fennec
 
-Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 ICANN 域名的 DNS解析器。
+Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving both OpenNIC and ICANN domains
 
 | 协议             | 地址                                        |                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1187,7 +1198,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 #### 标准
 
-拦截广告、跟踪器和恶意软件
+Blocks ads, trackers, and malware
 
 | 协议             | 地址                               |                                                                                                                                                                                                             |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1196,7 +1207,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 #### Kids
 
-儿童友好的过滤器，也会拦截广告、跟踪器和恶意软件
+Kids-friendly filter that also blocks ads, trackers, and malware
 
 | 协议             | 地址                                    |                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1212,11 +1223,11 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### OSZX DNS
 
-[OSZX DNS](https://dns.oszx.co/) 是一个小型的广告拦截 DNS 爱好项目。
+[OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
 
 #### OSZX DNS
 
-该服务是一个小型广告拦截 DNS 爱好项目，支持 DoH、DoT 和 DNSCrypt v2。
+This service ia a small ad blocking DNS hobby project with D-o-H, D-o-T & DNSCrypt v2 support.
 
 | 协议             | 地址                                                                       |                                                                                                                                                                                                         |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1229,7 +1240,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 #### PumpleX
 
-这些服务器不提供广告拦截，不保留日志，并启用 DNSSEC。
+These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 | 协议             | 地址                                                                            |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1242,7 +1253,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### Privacy-First DNS
 
-[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. 无日志记录，无 ECS，DNSSEC 验证，免费！
+[Privacy-First DNS](https://tiarap.org/) blocks over 140K ads, ad-tracking, malware, and phishing domains. No logging, no ECS, DNSSEC validation, free!
 
 #### Singapore DNS Server
 
@@ -1283,7 +1294,7 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. 它具有广告拦截、恶意软件/网络钓鱼保护、成人内容过滤和 DNSSEC 验证功能。
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
 
 | 协议             | 地址                                      |                                                                                                                                                                                                                               |
 | -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1299,3 +1310,25 @@ Marbled Fennec 网络正在托管能够解析 OpenNIC（根域名系统） 和 I
 | 协议        | 地址              |                                                                                                                                                   |
 | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `23.176.184.32` | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
+
+### NWPS.fi DNS
+
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
+
+#### 标准
+
+Blocks ads, trackers, and malware
+
+| 协议             | 地址                                    |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| 协议             | 地址                                  |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |
