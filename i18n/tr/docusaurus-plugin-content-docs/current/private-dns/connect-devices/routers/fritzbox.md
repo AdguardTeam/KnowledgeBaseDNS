@@ -24,8 +24,8 @@ Keenetic yönlendiriciniz DNS-over-TLS yapılandırmasını desteklemiyorsa bu k
 3. _İnternet_ veya _Ev Ağı_ öğesini açın.
 4. _DNS_ veya _DNS Ayarları_ öğesini seçin.
 5. Select _Manual DNS_, then _Use These DNS Servers_ or _Specify DNS Server Manually_, and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 6. Ayarları kaydedin.
 7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 

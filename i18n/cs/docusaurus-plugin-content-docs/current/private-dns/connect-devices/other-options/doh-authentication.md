@@ -23,6 +23,6 @@ Tuto funkci podporuje [Klient AdGuard DNS](/dns-client/overview.md) i [AdGuard a
 4. Nakonfigurujte DNS-over-HTTPS s ověřováním podle svých představ.
 5. Překonfigurujte zařízení tak, aby používalo tento server v klientovi AdGuard DNS nebo v jedné z aplikací AdGuard.
 6. Za tímto účelem zkopírujte adresu šifrovaného serveru a vložte ji do nastavení aplikace AdGuard nebo klienta AdGuard DNS.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. Můžete také zakázat používání jiných protokolů.
-   ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+    ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

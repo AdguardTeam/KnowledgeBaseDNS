@@ -24,8 +24,8 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen öffentlichen AdGuard DNS
 7. Wählen Sie für _DHCP-Hostname_ die Option _Nicht angeben_.
 8. Wählen Sie für _DNS-Einstellungen_ die Option _Manuell_.
 9. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Wählen Sie _Weiter_, um fortzufahren.
 11. Wählen Sie auf dem Bildschirm _MTU-Einstellungen_ die Option _Automatisch_.
 12. Wählen Sie auf dem Bildschirm _Proxyserver_ die Option _Nicht verwenden_.
@@ -43,8 +43,8 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen öffentlichen AdGuard DNS
 7. Wählen Sie für _DHCP-Hostname_ die Option _Nicht angeben_.
 8. Wählen Sie für _DNS-Einstellungen_ die Option _Manuell_.
 9. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Wählen Sie _Weiter_, um fortzufahren.
 11. Wählen Sie auf dem Bildschirm _MTU-Einstellungen_ die Option _Automatisch_.
 12. Wählen Sie auf dem Bildschirm _Proxyserver_ die Option _Nicht verwenden_.

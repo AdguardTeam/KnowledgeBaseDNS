@@ -37,25 +37,25 @@ Supported CPU architectures:
 
 1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
-   :::caution
+  :::caution
 
-   On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+  On macOS, it's crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
 
-   :::
+  :::
 
 2. Install it as a service by running:
 
-   ```sh
-   ./AdGuardDNSClient -s install -v
-   ```
+  ```sh
+  ./AdGuardDNSClient -s install -v
+  ```
 
 3. Edit the configuration file `config.yaml`.
 
 4. Start the service:
 
-   ```sh
-   ./AdGuardDNSClient -s start -v
-   ```
+  ```sh
+  ./AdGuardDNSClient -s start -v
+  ```
 
 To check that it works, use any DNS checking utility. For example, using `nslookup`:
 

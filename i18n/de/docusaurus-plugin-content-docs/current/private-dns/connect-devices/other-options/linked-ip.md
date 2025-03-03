@@ -28,7 +28,7 @@ Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über ei
 3. Gehen Sie zu _DNS-Serveradressen verwenden_.
 4. Öffnen Sie _Einfache DNS-Serveradressen_ und verbinden Sie die verknüpfte IP.
 
-   ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamisches DNS: Warum es nützlich ist
 
@@ -48,11 +48,11 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
 1. Zuerst müssen Sie überprüfen, ob DDNS von Ihren Router-Einstellungen unterstützt wird:
 
-   - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
-   - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
-   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
+    - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
+    - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
+    - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
 
-   ![DDNS-Unterstützung \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    ![DDNS-Unterstützung \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registrieren Sie Ihre Domain bei einem beliebten Service wie [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) oder einem anderen DDNS-Anbieter Ihrer Wahl.
 
@@ -62,7 +62,7 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
 5. Geben Sie die Domain ein, die Sie zuvor registriert haben, und klicken Sie auf _DDNS konfigurieren_.
 
-   ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+    ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Fertig! Sie haben DDNS erfolgreich eingerichtet!
 
@@ -73,14 +73,14 @@ Fertig! Sie haben DDNS erfolgreich eingerichtet!
 Der einfachste Weg ist die Verwendung des Aufgabenplaners:
 
 1. Erstellen Sie eine Aufgabe:
-   - Öffnen Sie den Aufgabenplaner.
-   - Erstellen Sie eine neue Aufgabe.
-   - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
-   - Wählen Sie _Programm ausführen_ als Aktion.
+    - Öffnen Sie den Aufgabenplaner.
+    - Erstellen Sie eine neue Aufgabe.
+    - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
+    - Wählen Sie _Programm ausführen_ als Aktion.
 2. Wählen Sie ein Programm:
-   - Geben Sie im Feld _Programm/Skript_ `powershell` ein
-   - Geben Sie im Feld _Argumente hinzufügen_ ein:
-     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+    - Geben Sie im Feld _Programm/Skript_ `powershell` ein
+    - Geben Sie im Feld _Argumente hinzufügen_ ein:
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Speichern Sie die Aufgabe.
 
 ### Unter macOS und Linux
@@ -88,11 +88,11 @@ Der einfachste Weg ist die Verwendung des Aufgabenplaners:
 Unter macOS und Linux ist es am einfachsten, `cron` zu verwenden:
 
 1. Öffnen Sie crontab:
-   - Führen Sie im Terminal `crontab -e` aus.
+    - Führen Sie im Terminal `crontab -e` aus.
 2. Fügen Sie eine Aufgabe hinzu:
-   - Fügen Sie die folgende Zeile ein:
-     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - Diese Aufgabe wird alle 5 Minuten ausgeführt
+    - Fügen Sie die folgende Zeile ein:
+        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+    - Diese Aufgabe wird alle 5 Minuten ausgeführt
 3. Speichern Sie crontab.
 
 :::note Wichtig

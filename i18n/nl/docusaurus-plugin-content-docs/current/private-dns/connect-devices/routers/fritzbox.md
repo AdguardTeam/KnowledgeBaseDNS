@@ -24,8 +24,8 @@ Use this guide if your FritzBox router does not support DNS-over-TLS configurati
 3. Open _Internet_ or _Home Network_.
 4. Select _DNS_ or _DNS Settings_.
 5. Select _Manual DNS_, then _Use These DNS Servers_ or _Specify DNS Server Manually_, and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 6. Save the settings.
 7. Link your IP (or your dedicated IP if you have a Team subscription).
 

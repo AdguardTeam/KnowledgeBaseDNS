@@ -8,7 +8,7 @@ Bir Linux cihazını AdGuard DNS'e bağlanmak için önce onu _Pano_ öğesine e
 1. _Pano_ öğesine gidin ve _Yeni cihaz bağla_ öğesine tıklayın.
 2. Açılır menüde _Cihaz türü_ olarak Linux öğesini seçin.
 3. Cihazı adlandırın.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## AdGuard DNS İstemcisini kullanma
 
@@ -32,14 +32,14 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 3. Go to _IPv4_.
 4. _Otomatik (DHCP)_ öğesini _Manuel_ olarak ayarlayın.
 5. Change the listed DNS addresses to the following addresses:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. _Uygula_ öğesine tıklayın.
 7. _IPv6_ öğesine gidin.
 8. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
 9. Change the listed DNS addresses to the following addresses:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. _Uygula_ öğesine tıklayın.
 11. IP adresinizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın:
     - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 3. Enter your `admin` password.
 4. Komut satırına şunu yazın: `nano /etc/resolv.conf`.
 5. Listelenen DNS adreslerini aşağıdaki şekilde değiştirin:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 6. Dokümanı kaydetmek için _Ctrl + O_ tuşlarına basın.
 7. _Enter_ tuşuna basın.
 8. Dokümanı kaydetmek için _Ctrl + X_ tuşlarına basın.
@@ -68,31 +68,31 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 
 1. Aşağıdaki komutları kullanarak dnsmasq'ı yükleyin:
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. dnsmasq.conf dosyasında aşağıdaki komutları kullanın:
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. dnsmasq hizmetini yeniden başlatın:
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 

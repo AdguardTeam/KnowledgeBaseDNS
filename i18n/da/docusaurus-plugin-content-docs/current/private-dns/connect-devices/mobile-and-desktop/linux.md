@@ -8,7 +8,7 @@ For at tilslutte en Linux-enhed til AdGuard DNS, føj den først til _Kontrolpan
 1. Gå til _Kontrolpanel_ og klik på _Tilslut ny enhed_.
 2. Vælg Linux i rullemenuen _Enhedstype_.
 3. Navngiv enheden.
-   ![Tilslutning af enhed \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Brug AdGuard DNS Client
 
@@ -32,14 +32,14 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 3. Gå til _IPv4_.
 4. Indstil _Automatisk (DHCP)_ til _Manuel_.
 5. Skift de listede DNS-adresser til flg.:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. Klik på _Anvend_.
 7. Gå til _IPv6_.
 8. Indstil _Automatisk_ til _Manuel_.
 9. Skift de listede DNS-adresser til flg.:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klik på _Anvend_.
 11. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 3. Angiv `admin`-adgangskoden.
 4. Skriv på kommandolinjen: `nano /etc/resolv.conf`.
 5. Erstat de viste DNS-adresser med flg.:
-   - IPv4: `94.140.14.49 og 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff og 2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49 og 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff og 2a10:50c0:0:0:0:0:dad:ff`
 6. Tryk på _Ctrl + O_ for at gemme dokumentet.
 7. Tryk på _Retur_.
 8. Tryk på _Ctrl + X_ for at gemme dokumentet.
@@ -68,31 +68,31 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 
 1. Installér dnsmasq vha. flg. kommandoer:
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. Brug flg. kommandoer i dnsmasq.conf:
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. Genstart dnsmasq-tjenesten:
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 Færdig! Enheden er nu tilsluttet AdGuard DNS.
 

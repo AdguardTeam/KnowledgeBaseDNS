@@ -26,8 +26,8 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 5. Nastavte _Automaticky_ na _Ruční_.
 6. Vyberte _Primární DNS_. Podržením šipky doleva (tlačítko B) smažete stávající DNS.
 7. Do pole _Primární DNS_ zadejte jednu z následujících adres DNS serveru:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 8. Uložte nastavení.
 
 Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):
