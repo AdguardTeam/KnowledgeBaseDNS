@@ -10,7 +10,7 @@ Nejprve je třeba přidat router do rozhraní AdGuard DNS:
 1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
 2. V rozbalovací nabídce _Typ zařízení_ vyberte Router.
 3. Vyberte značku routeru a pojmenujte zařízení.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 Níže jsou uvedeny pokyny pro různé modely routerů. Vyberte ten, který potřebujete:
 

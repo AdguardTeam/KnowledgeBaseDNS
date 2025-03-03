@@ -26,8 +26,8 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 5. Indstil _Automatisk_ til _Manuel_.
 6. Vælg _Primær DNS_. Hold venstre pil nede (B-knap) for at slette den eksisterende DNS.
 7. Angiv i feltet _Primær DNS_ en af flg. DNS-serveradresser:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 8. Gem indstillingerne.
 
 Det vil være at foretrække at bruge en linket IP (eller en dedikeret IP, hvis man har et Team-abonnement):

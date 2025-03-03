@@ -23,8 +23,8 @@ Kullanıcı kurallarını ayarlamak için:
 
 5. Kullanıcı kuralları eklemek için çeşitli seçenekler bulacaksınız.
 
-   - En kolay yol oluşturucuyu kullanmaktır. Kullanmak için _Yeni kural ekle_ öğesine tıklayın → Engellemek veya engelini kaldırmak istediğiniz alan adını girin → _Kural ekle_ öğesine tıklayın
-     ![Kural ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-   - Gelişmiş yolu ise kural düzenleyicisini kullanmaktır. _Düzenleyiciyi aç_ öğesine tıklayın ve [söz dizimine](/general/dns-filtering-syntax/) göre engelleme kurallarını girin
+    - En kolay yol oluşturucuyu kullanmaktır. Kullanmak için _Yeni kural ekle_ öğesine tıklayın → Engellemek veya engelini kaldırmak istediğiniz alan adını girin → _Kural ekle_ öğesine tıklayın
+        ![Kural ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+    - Gelişmiş yolu ise kural düzenleyicisini kullanmaktır. _Düzenleyiciyi aç_ öğesine tıklayın ve [söz dizimine](/general/dns-filtering-syntax/) göre engelleme kurallarını girin
 
 Bu özellik, [DNS sorgusunun içeriğini değiştirerek sorguyu başka bir alan adına yönlendirmenize](/general/dns-filtering-syntax/#dnsrewrite-modifier) olanak tanır.

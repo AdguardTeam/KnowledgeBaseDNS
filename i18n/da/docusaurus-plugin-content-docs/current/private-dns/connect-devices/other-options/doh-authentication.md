@@ -23,6 +23,6 @@ Denne funktion understøttes af [AdGuard DNS Client](/dns-client/overview.md) as
 4. Opsæt DNS-over-HTTPS med godkendelse som ønsket.
 5. Genopsæt enheden til at bruge denne server i AdGuard DNS Client eller en af AdGuard-apperne.
 6. For at gøre dette, kopiér adressen på den krypterede server og indsæt den i AdGuard-appen eller AdGuard DNS Client-indstillingerne.
-   ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+    ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. Man kan også nægte brugen af andre protokoller.
-   ![Nægt protokoller \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+    ![Nægt protokoller \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

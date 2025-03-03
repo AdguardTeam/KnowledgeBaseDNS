@@ -8,7 +8,7 @@ Um ein Linux-Gerät mit AdGuard DNS zu verbinden, fügen Sie es zunächst der _�
 1. In _Übersicht_ klicken Sie auf _Neues Gerät verbinden_.
 2. Wählen Sie im Auswahlmenü _Gerätetyp_ Linux aus.
 3. Benennen Sie das Gerät.
-   ![Gerät verbinden \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Gerät verbinden \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## AdGuard DNS Client verwenden
 
@@ -32,14 +32,14 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 3. Gehen Sie zu _IPv4_.
 4. Setzen Sie _Automatisch (DHCP)_ auf _Manuell_.
 5. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. Klicken Sie auf _Übernehmen_.
 7. Gehen Sie zu _IPv6_.
 8. Setzen Sie _Automatisch_ auf _Manuell_.
 9. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klicken Sie auf _Übernehmen_.
 11. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
     - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 3. Geben Sie Ihr `admin`-Passwort ein.
 4. Geben Sie in die Befehlszeile ein: `nano /etc/resolv.conf`.
 5. Ändern Sie die aufgelisteten DNS-Adressen in folgende:
-   - IPv4: `94.140.14.49 und 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff und 2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49 und 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff und 2a10:50c0:0:0:0:0:dad:ff`
 6. Drücken Sie _Strg+O_, um das Dokument zu speichern.
 7. Drücken Sie _Eingabe_.
 8. Drücken Sie _Strg+X_, um das Dokument zu speichern.
@@ -68,31 +68,31 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 
 1. Installieren Sie dnsmasq mit den folgenden Befehlen:
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. Verwenden Sie die folgenden Befehle in dnsmasq.conf:
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. Starten Sie den dnsmasq-Dienst neu:
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 

@@ -8,7 +8,7 @@ Chcete-li zařízení Linux připojit k AdGuard DNS, přidejte je nejprve na _P�
 1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
 2. V rozbalovací nabídce _Typ zařízení_ vyberte Linux.
 3. Pojmenujte zařízení.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Použití klienta AdGuard DNS
 
@@ -32,14 +32,14 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 3. Přejděte na _IPv4_.
 4. Nastavte _Automaticky (DHCP)_ na _Ruční_.
 5. Změňte uvedené adresy DNS na následující adresy:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. Klikněte na _Použít_.
 7. Přejděte na _IPv6_.
 8. Nastavte _Automaticky_ na _Ruční_.
 9. Změňte uvedené adresy DNS na následující adresy:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klikněte na _Použít_.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 3. Zadejte své heslo `admin`.
 4. Do příkazového řádku zadejte: `nano /etc/resolv.conf`.
 5. Změňte uvedené adresy DNS na následující:
-   - IPv4: `94.140.14.49 a 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff a 2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49 a 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff a 2a10:50c0:0:0:0:0:dad:ff`
 6. Stisknutím kláves _ctrl + O_ na klávesnici dokument uložte.
 7. Stiskněte _Enter_.
 8. Stisknutím kláves _Ctrl + X_ na klávesnici dokument uložte.
@@ -68,31 +68,31 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 
 1. Nainstalujte dnsmasq pomocí následujících příkazů:
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. V dnsmasq.conf použijte následující příkazy:
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. Restartujte službu dnsmasq:
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 

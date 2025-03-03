@@ -19,8 +19,8 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 4. Vyberte IPv4 nebo IPv6 v závislosti na typu sítě, kterou používáte.
 5. Vyberte možnost _Pouze automatické (DHCP) adresy_ nebo _Automatické (DHCP)_.
 6. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 7. Save the changes.
 
 Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):

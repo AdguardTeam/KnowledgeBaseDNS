@@ -24,8 +24,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. _DHCP Ana Bilgisayar Adı_ için _Belirtme_ öğesini seçin.
 8. _DNS Ayarları_ için _Manuel_ öğesini seçin.
 9. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Devam etmek için _İleri_ öğesini seçin.
 11. _MTU Ayarları_ ekranında _Otomatik_ öğesini seçin.
 12. _Proxy Sunucusu_ ekranında _Kullanma_ öğesini seçin.
@@ -43,8 +43,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. _DHCP Ana Bilgisayar Adı_ için _Belirtme_ öğesini seçin.
 8. _DNS Ayarları_ için _Manuel_ öğesini seçin.
 9. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Devam etmek için _İleri_ öğesini seçin.
 11. _MTU Ayarları_ ekranında _Otomatik_ öğesini seçin.
 12. _Proxy Sunucusu_ ekranında _Kullanma_ öğesini seçin.

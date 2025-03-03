@@ -13,16 +13,16 @@ Büyük olasılıkla, cihazınızı AdGuard Home'u varsayılan DNS sunucusu olar
 
 2. nslookup example.org\` öğesini yürütün. Şuna benzer bir şey yazdırır:
 
-   ```none
-   Server: 192.168.0.1
-   Address: 192.168.0.1#53
+ ```none
+ Server: 192.168.0.1
+ Address: 192.168.0.1#53
 
-   Non-authoritative answer:
-   Name: example.org
-   Address: <IPv4>
-   Name: example.org
-   Address: <IPv6>
-   ```
+ Non-authoritative answer:
+ Name: example.org
+ Address: <IPv4>
+ Name: example.org
+ Address: <IPv6>
+ ```
 
 3. `Sunucu` IP adresinin AdGuard Home'un çalıştığı IP adresi olup olmadığını kontrol edin. Eğer yoksa, cihazınızı buna göre yapılandırmanız gerekir. Bunun nasıl yapılacağını [aşağıda](#defaultdns) görebilirsiniz.
 
@@ -76,23 +76,23 @@ Karmaşık bir sorunu gidermek için bazen ayrıntılı düzeyde günlük kaydı
 
 1. AdGuard Home'u durdurun:
 
-   ```sh
-   ./AdGuardHome -s stop
-   ```
+ ```sh
+ ./AdGuardHome -s stop
+ ```
 
 2. AdGuard Home'u ayrıntılı düzeyde günlükler yazacak şekilde yapılandırın:
 
-   1. Düzenleyicinizde `AdGuardHome.yaml` dosyasını açın.
+ 1. Düzenleyicinizde `AdGuardHome.yaml` dosyasını açın.
 
-   2. `log.file` dosyasını istediğiniz günlük dosyası yoluna ayarlayın, örneğin `/tmp/aghlog.txt`. Dizinin var olması gerektiğini unutmayın.
+ 2. `log.file` dosyasını istediğiniz günlük dosyası yoluna ayarlayın, örneğin `/tmp/aghlog.txt`. Dizinin var olması gerektiğini unutmayın.
 
-   3. `log.verbose` öğesini `true` olarak ayarlayın.
+ 3. `log.verbose` öğesini `true` olarak ayarlayın.
 
 3. AdGuard Home'u yeniden başlatın ve sorunu yeniden oluşturun:
 
-   ```sh
-   ./AdGuardHome -s start
-   ```
+ ```sh
+ ./AdGuardHome -s start
+ ```
 
 4. Hata ayıklama işlemini tamamladığınızda, `log.verbose` ayarını `false` olarak geri ayarlayın.
 
@@ -121,29 +121,29 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 1. AdGuard Home'u durdurun:
 
-   ```sh
-   ./AdGuardHome -s stop
-   ```
+ ```sh
+ ./AdGuardHome -s stop
+ ```
 
 2. Düzenleyicinizde `AdGuardHome.yaml` dosyasını açın.
 
 3. `dns.parental_block_host` veya `dns.safebrowsing_block_host` ayarlarını sunucunun IP adresine ayarlayın (bu örnekte, `192.168.123.45`):
 
-   ```yaml
+ ```yaml
+ # …
+ dns:
    # …
-   dns:
-     # …
 
-     # NOT: Sunucunuzun gerçek IP adresiyle değiştirin.
-     parental_block_host: 192.168.123.45
-     safebrowsing_block_host: 192.168.123.45
-   ```
+   # NOT: Sunucunuzun gerçek IP adresiyle değiştirin.
+   parental_block_host: 192.168.123.45
+   safebrowsing_block_host: 192.168.123.45
+ ```
 
 4. AdGuard Home'u yeniden başlatın:
 
-   ```sh
-   ./AdGuardHome -s start
-   ```
+ ```sh
+ ./AdGuardHome -s start
+ ```
 
 ### Diğer filtreler için özel engelleme sayfası
 
@@ -159,23 +159,23 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 1. AdGuard Home'u durdurun:
 
-   ```sh
-   ./AdGuardHome -s stop
-   ```
+ ```sh
+ ./AdGuardHome -s stop
+ ```
 
 2. Düzenleyicinizde `AdGuardHome.yaml` dosyasını açın.
 
 3. 'http.address' ayarını yeni bir ağ arayüzüne ayarlayın. Örneğin:
 
-   - Tüm ağ arayüzlerini dinlemek için `0.0.0.0:0`;
-   - `8080` bağlantı noktasına sahip tüm ağ arabirimlerini dinlemek için `0.0.0.0:8080`;
-   - Sadece yerel geri döngü arayüzünü dinlemek için `127.0.0.1:0`.
+ - Tüm ağ arayüzlerini dinlemek için `0.0.0.0:0`;
+ - `8080` bağlantı noktasına sahip tüm ağ arabirimlerini dinlemek için `0.0.0.0:8080`;
+ - Sadece yerel geri döngü arayüzünü dinlemek için `127.0.0.1:0`.
 
 4. AdGuard Home'u yeniden başlatın:
 
-   ```sh
-   ./AdGuardHome -s start
-   ```
+ ```sh
+ ./AdGuardHome -s start
+ ```
 
 ## AdGuard Home'u varsayılan DNS sunucusu olarak nasıl ayarlarım? {#defaultdns}
 
@@ -221,32 +221,32 @@ Bunu düzeltmek için ya `systemd-resolved` daemon'unu devre dışı bırakmalı
 
 1. Gerekirse `/etc/systemd/resolved.conf.d` dizinini oluşturun:
 
-   ```sh
-   sudo mkdir -p /etc/systemd/resolved.conf.d
-   ```
+ ```sh
+ sudo mkdir -p /etc/systemd/resolved.conf.d
+ ```
 
 2. `DNSStubListener` öğesini devre dışı bırakın ve DNS sunucu adresini güncelleyin. Bunu yapmak için, aşağıdaki içeriğe sahip yeni bir `/etc/systemd/resolved.conf.d/adguardhome.conf` dosyası oluşturun:
 
-   ```service
-   [Resolve]
-   DNS=127.0.0.1
-   DNSStubListener=no
-   ```
+ ```service
+ [Resolve]
+ DNS=127.0.0.1
+ DNSStubListener=no
+ ```
 
 DNS sunucu adresi olarak `127.0.0.1` belirtilmesi **gereklidir.** Aksi takdirde ad sunucusu `127.0.0.53` olacaktır ve bu da `DNSStubListener` olmadan çalışmaz.
 
 1. Başka bir `resolv.conf` dosyasını etkinleştirin:
 
-   ```sh
-   sudo mv /etc/resolv.conf /etc/resolv.conf.backup
-   sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
-   ```
+ ```sh
+ sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+ sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+ ```
 
 2. `DNSStubListener` öğesini yeniden başlatın:
 
-   ```sh
-   sudo systemctl reload-or-restart systemd-resolved
-   ```
+ ```sh
+ sudo systemctl reload-or-restart systemd-resolved
+ ```
 
 Bundan sonra, `systemd-resolved` `lsof` çıktısında gösterilmemeli ve AdGuard Home `127.0.0.1:53` adresine bağlanabilmelidir.
 
@@ -321,20 +321,20 @@ AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almas�
 
 2. Dosyanın güvenlik bağlamını değiştirmek için `root` olarak aşağıdaki komutu çalıştırın:
 
-   ```sh
-   chcon -t bin_t /usr/local/bin/AdGuardHome
-   ```
+ ```sh
+ chcon -t bin_t /usr/local/bin/AdGuardHome
+ ```
 
 3. Ağ üzerinden erişilebilir hâle getirmek için gerekli güvenlik duvarı kurallarını ekleyin. Örneğin:
 
-   ```sh
-   firewall-cmd --new-zone=adguard --permanent
-   firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
-   firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
-   firewall-cmd --zone=adguard --add-port=53/udp --permanent
-   firewall-cmd --zone=adguard --add-port=80/tcp --permanent
-   firewall-cmd --reload
-   ```
+ ```sh
+ firewall-cmd --new-zone=adguard --permanent
+ firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
+ firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
+ firewall-cmd --zone=adguard --add-port=53/udp --permanent
+ firewall-cmd --zone=adguard --add-port=80/tcp --permanent
+ firewall-cmd --reload
+ ```
 
 Eğer hâlâ `systemctl'den `code=exited status=203/EXEC`veya benzeri hatalar alıyorsanız, AdGuard Home'u kaldırmayı ve kurulum betiğinin`-o`seçeneğini kullanarak`/usr/local/bin\` içine **doğrudan** kurmayı deneyin:
 
@@ -363,72 +363,72 @@ Düğme görüntülenmiyorsa veya otomatik güncelleme başarısız olduysa, ell
 
 1. Yeni AdGuard Home paketini [sürümler sayfasından][releases] indirin. Bu adımı komut satırından gerçekleştirmek istiyorsanız, şunu yazın:
 
-   ```sh
-   curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
-   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-   ```
+ ```sh
+ curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
+ 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+ ```
 
-   Ya da `wget` ile:
+ Ya da `wget` ile:
 
-   ```sh
-   wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
-   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-   ```
+ ```sh
+ wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
+ 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+ ```
 
 2. AdGuard Home'un kurulu olduğu dizine gidin. Çoğu Unix sisteminde varsayılan dizin `/opt/AdGuardHome` şeklindedir, ancak macOS'ta `/Applications/AdGuardHome` şeklinde olur.
 
 3. AdGuard Home'u durdurun:
 
-   ```sh
-   sudo ./AdGuardHome -s stop
-   ```
+ ```sh
+ sudo ./AdGuardHome -s stop
+ ```
 
-   :::note OpenBSD
+ :::note OpenBSD
 
-   OpenBSD üzerinde, muhtemelen `sudo` yerine `doas` kullanmak isteyeceksiniz.
+ OpenBSD üzerinde, muhtemelen `sudo` yerine `doas` kullanmak isteyeceksiniz.
 
-   :::
+ :::
 
 4. Verilerinizi yedekleyin. Yani, yapılandırma dosyanız ve veri dizininiz (varsayılan olarak `AdGuardHome.yaml` ve `data/`). Örneğin, verilerinizi `~/my-agh-backup` adlı yeni bir dizine yedeklemek için:
 
-   ```sh
-   mkdir -p ~/my-agh-backup
-   cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
-   ```
+ ```sh
+ mkdir -p ~/my-agh-backup
+ cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
+ ```
 
 5. AdGuard Home arşivini geçici bir dizine çıkarın. Örneğin, arşivi `~/Downloads` dizininize indirdiyseniz ve `/tmp/` dizinine çıkarmak istiyorsanız:
 
-   ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
-   ```
+ ```sh
+ tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+ ```
 
-   macOS'ta aşağıdaki gibi bir şey yazın:
+ macOS'ta aşağıdaki gibi bir şey yazın:
 
-   ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
-   ```
+ ```sh
+ unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+ ```
 
 6. Eski AdGuard Home yürütülebilir dosyasını yenisiyle değiştirin. Çoğu Unix sisteminde komut aşağıdaki gibi görünecektir:
 
-   ```sh
-   sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
-   ```
+ ```sh
+ sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
+ ```
 
-   macOS'ta aşağıdaki gibi bir şey:
+ macOS'ta aşağıdaki gibi bir şey:
 
-   ```sh
-   sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
-   ```
+ ```sh
+ sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
+ ```
 
-   Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
+ Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
 
-   Artık geçici dizini kaldırabilirsiniz.
+ Artık geçici dizini kaldırabilirsiniz.
 
 7. AdGuard Home'u yeniden başlatın:
 
-   ```sh
-   sudo ./AdGuardHome -s start
-   ```
+ ```sh
+ sudo ./AdGuardHome -s start
+ ```
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
@@ -438,51 +438,51 @@ Aşağıdaki tüm örneklerde, PowerShell Yönetici olarak çalıştırılmalıd
 
 1. Yeni AdGuard Home paketini [sürümler sayfasından][releases] indirin. Bu adımı komut satırından gerçekleştirmek istiyorsanız:
 
-   ```ps1
-   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-   $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
-   Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
-   ```
+ ```ps1
+ $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+ $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
+ Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
+ ```
 
 2. AdGuard Home'un kurulu olduğu dizine gidin. Aşağıdaki örneklerde `C:\Program Files\AdGuardHome` dizinini kullanacağız.
 
 3. AdGuard Home'u durdurun:
 
-   ```ps1
-   .\AdGuardHome.exe -s stop
-   ```
+ ```ps1
+ .\AdGuardHome.exe -s stop
+ ```
 
 4. Verilerinizi yedekleyin. Yani, yapılandırma dosyanız ve veri dizini (varsayılan olarak `AdGuardHome.yaml` ve `data/`). Örneğin, verilerinizi `my-agh-backup` adlı yeni bir dizine yedeklemek için:
 
-   ```ps1
-   $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
-   New-Item -Path $newDir -ItemType Directory
-   Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
-   ```
+ ```ps1
+ $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
+ New-Item -Path $newDir -ItemType Directory
+ Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
+ ```
 
 5. AdGuard Home arşivini geçici bir dizine çıkarın. Örneğin, arşivi `İndirilenler` dizininize indirdiyseniz ve geçici bir dizine çıkarmak istiyorsanız:
 
-   ```ps1
-   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-   Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
-   ```
+ ```ps1
+ $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+ Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
+ ```
 
 6. Eski AdGuard Home yürütülebilir dosyasını yenisiyle değiştirin. Örneğin:
 
-   ```ps1
-   $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
-   Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
-   ```
+ ```ps1
+ $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
+ Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
+ ```
 
-   Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
+ Ayrıca değişiklik günlüğü (`CHANGELOG.md`), README dosyası (`README.md`) ve lisans (`LICENSE.txt`) gibi paketin dokümantasyon bölümlerini de kopyalamak isteyebilirsiniz.
 
-   Artık geçici dizini kaldırabilirsiniz.
+ Artık geçici dizini kaldırabilirsiniz.
 
 7. AdGuard Home'u yeniden başlatın:
 
-   ```ps1
-   .\AdGuardHome.exe -s start
-   ```
+ ```ps1
+ .\AdGuardHome.exe -s start
+ ```
 
 ## AdGuard Home'u nasıl kaldırabilirim? {#uninstall}
 

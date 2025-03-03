@@ -23,6 +23,6 @@ DNS-over-HTTPS с аутентификацией позволяет задать
 4. Настройте DNS-over-HTTPS с аутентификацией по своему усмотрению.
 5. Перенастройте свое устройство для использования этого сервера в AdGuard DNS Client или одном из приложений AdGuard.
 6. Для этого скопируйте адрес зашифрованного сервера и вставьте его в настройки приложения AdGuard или AdGuard DNS Client.
-   ![Копировать адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+    ![Копировать адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. Вы также можете запретить использование других протоколов.
-   ![Запретить протоколы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+    ![Запретить протоколы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
