@@ -19,7 +19,7 @@ Si nécessaire : Configurez DNS-over-TLS sur ASUS, installez le [firmware ASUS M
 6. Modifiez le protocole de confidentialité DNS en DNS-over-TLS (DoT).
 7. Assurez-vous que le _profil DNS-over-TLS_ est défini sur _Strict_.
 8. Faites défiler jusqu'à la section _Liste des serveurs DNS-over-TLS_. Dans le champ _Adresse_, saisissez l'une des adresses ci-dessous :
-   - `94.140.14.49` et `94.140.14.59`
+    - `94.140.14.49` et `94.140.14.59`
 9. Pour _Port TLS_, saisissez 853.
 10. Dans le champ _Nom d'hôte TLS_, saisissez l'adresse du serveur DNS AdGuard privé :
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ Si nécessaire : Configurez DNS-over-TLS sur ASUS, installez le [firmware ASUS M
 4. Sélectionnez _WAN_ ou _Internet_.
 5. Ouvrez _Paramètres DNS_ ou _DNS_.
 6. Choose _Manual Setting_. Sélectionnez _Utiliser ces serveurs DNS_ ou _Spécifier le serveur DNS manuellement_ et saisissez les adresses des serveurs DNS suivantes :
-   - IPv4 : `94.140.14.49` et `94.140.14.59`
-   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4 : `94.140.14.49` et `94.140.14.59`
+    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 7. Enregistrez les paramètres.
 8. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
-   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

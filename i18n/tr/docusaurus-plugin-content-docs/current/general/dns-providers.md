@@ -1198,7 +1198,7 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 
 #### Standard
 
-Blocks ads, trackers, and malware
+Reklamları, izleyicileri ve kötü amaçlı yazılımları engeller
 
 | Protokol       | Adres                            |                                                                                                                                                                                                             |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1207,7 +1207,7 @@ Blocks ads, trackers, and malware
 
 #### Kids
 
-Kids-friendly filter that also blocks ads, trackers, and malware
+Reklamları, izleyicileri ve kötü amaçlı yazılımları da engelleyen çocuk dostu filtre
 
 | Protokol       | Adres                                 |                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1317,7 +1317,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 #### Standard
 
-Blocks ads, trackers, and malware
+Reklamları, izleyicileri ve kötü amaçlı yazılımları engeller
 
 | Protokol       | Adres                                 |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1326,7 +1326,7 @@ Blocks ads, trackers, and malware
 
 #### Kids
 
-Kids-friendly filter that also blocks ads, trackers, and malware
+Reklamları, izleyicileri ve kötü amaçlı yazılımları da engelleyen çocuk dostu filtre
 
 | Protokol       | Adres                               |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

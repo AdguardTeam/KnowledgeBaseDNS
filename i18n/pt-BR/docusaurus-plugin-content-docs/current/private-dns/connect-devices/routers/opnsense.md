@@ -15,8 +15,8 @@ Use estas instruções se o seu roteador Keenetic não oferece suporte à config
 4. Na página _Servidor DHCP_, selecione a interface para a qual deseja definir as configurações de DNS (por exemplo, LAN, WLAN).
 5. Role para baixo até _Servidores DNS_.
 6. Escolha _Manual DNS_. Selecione _Usar estes servidores DNS_ ou _Especificar servidor DNS manualmente_ e insira os seguintes endereços de servidor DNS:
-   - IPv4: `94.140.14.49` e `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` e `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 7. Salve as configurações.
 8. Você também tem a opção de habilitar DNSSEC para maior segurança.
 9. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).

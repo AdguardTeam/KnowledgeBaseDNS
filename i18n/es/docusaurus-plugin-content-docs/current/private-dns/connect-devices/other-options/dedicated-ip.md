@@ -28,5 +28,5 @@ Las instrucciones a continuación explican cómo conectar una IP dedicada al dis
 5. Selecciona el servidor que deseas usar.
 6. Para enlazar una dirección IPv4 dedicada, haz clic en _Asignar_.
 7. Si deseas usar una dirección IPv6 dedicada, haz clic en _Copiar_.
-   ![Copiar dirección \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+    ![Copiar dirección \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copia y pega la dirección dedicada seleccionada en la configuración del dispositivo.

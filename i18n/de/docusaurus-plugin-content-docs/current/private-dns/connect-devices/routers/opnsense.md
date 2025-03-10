@@ -15,8 +15,8 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 4. Wählen Sie auf der Seite _DHCP-Server_ die Schnittstelle aus, für die Sie die DNS-Einstellungen konfigurieren möchten (z. B. LAN, WLAN).
 5. Blättern Sie nach unten zu _DNS-Server_.
 6. Wählen Sie _Manuelles DNS_. Wählen Sie _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
-   - IPv4: `94.140.14.49` und `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` und `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 7. Speichern Sie die Einstellungen.
 8. Optional können Sie DNSSEC aktivieren, um die Sicherheit zu erhöhen.
 9. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).

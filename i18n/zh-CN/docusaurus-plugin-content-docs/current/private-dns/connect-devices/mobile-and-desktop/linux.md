@@ -8,7 +8,7 @@ sidebar_position: 6
 1. 进入「_仪表盘_」并点击「_连接新设备_」。
 2. 在下拉菜单「_设备类型_」中，选择 Linux。
 3. 命名设备。
-   ![连接设备 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## 使用 AdGuard DNS 客户端
 
@@ -32,14 +32,14 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 3. Go to _IPv4_.
 4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. 点击「_应用_」。
 7. 前往「_IPv6_」。
 8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. 点击「_应用_」。
 11. 连接您的 IP 地址（如果用户有团队订阅，可以使用专用 IP 地址）：
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 3. 输入您的 `admin` 密码。
 4. 在命令行输入：`nano /etc/resolv.conf`。
 5. 将列出的 DNS 地址更改为以下地址：
-   - IPv4：`94.140.14.49 和 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff 及 2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4：`94.140.14.49 和 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff 及 2a10:50c0:0:0:0:0:dad:ff`
 6. 按「_Ctrl + O_」以保存文件。
 7. 按下回车键。
 8. 按「_Ctrl + X_」以保存文件。
@@ -68,31 +68,31 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 
 1. 使用以下命令安装 dnsmasq：
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. 在 dnsmasq.conf 中使用以下命令：
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. 重启 dnsmasq 服务：
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 完成！ 您的设备已成功连接到 AdGuard DNS。
 

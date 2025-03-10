@@ -16,8 +16,8 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
 3. V závislosti na modelu routeru otevřete _Pokročilá nastavení_ nebo _Pokročilé_.
 4. Otevřete _Síť_ nebo _Internet_ a vyhledejte Nastavení DNS nebo DNS.
 5. Vyberte _Ruční DNS_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
-   - IPv4: `94.140.14.49` a `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` a `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 6. Uložte nastavení.
 7. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 

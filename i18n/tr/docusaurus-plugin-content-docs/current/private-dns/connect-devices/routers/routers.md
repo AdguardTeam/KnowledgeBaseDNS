@@ -10,7 +10,7 @@ toc_max_heading_level: 3
 1. _Pano_ öğesine gidin ve _Yeni cihaz bağla_ öğesine tıklayın.
 2. Açılır menüde _Cihaz türü_ olarak Yönlendirici öğesini seçin.
 3. Yönlendirici markasını seçin ve cihazı adlandırın.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 Aşağıda farklı yönlendirici modelleri için talimatlar bulunmaktadır. Lütfen ihtiyacınız olanı seçin:
 

@@ -39,8 +39,8 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 4. Vælg _WAN_ eller _Internet_.
 5. Vælg _DNS_ eller _DNS-indstillinger_.
 6. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Gem indstillingerne.
 8. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 

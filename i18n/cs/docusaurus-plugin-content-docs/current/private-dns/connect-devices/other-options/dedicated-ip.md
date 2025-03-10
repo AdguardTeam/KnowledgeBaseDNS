@@ -28,5 +28,5 @@ Níže uvedené pokyny vysvětlují, jak k zařízení připojit vyhrazenou IP a
 5. Vyberte server, který chcete použít.
 6. Chcete-li vázat vyhrazenou adresu IPv4, klikněte na tlačítko _Přiřadit_.
 7. Pokud chcete použít vyhrazenou adresu IPv6, klikněte na _Kopírovat_.
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Zkopírujte a vložte vybranou vyhrazenou adresu do konfigurace zařízení.

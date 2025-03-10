@@ -23,6 +23,6 @@ Bu özellik [AdGuard DNS İstemcisi](/dns-client/overview.md) ve [AdGuard uygula
 4. DNS-over-HTTPS'i istediğiniz gibi kimlik doğrulamasıyla yapılandırın.
 5. AdGuard DNS İstemcisi veya AdGuard uygulamalarından birinde bu sunucuyu kullanmak için cihazınızı yeniden yapılandırın.
 6. Bunu yapmak için, şifrelenmiş sunucunun adresini kopyalayın ve AdGuard uygulamasına veya AdGuard DNS İstemcisi ayarlarına yapıştırın.
-   ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+    ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. Diğer protokollerin kullanımını da reddedebilirsiniz.
-   ![Protokolleri reddet \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+    ![Protokolleri reddet \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

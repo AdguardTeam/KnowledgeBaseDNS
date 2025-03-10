@@ -8,7 +8,7 @@ Um ein iOS-Gerät mit AdGuard DNS zu verbinden, fügen Sie es zunächst der _Üb
 1. In _Übersicht_ klicken Sie auf _Neues Gerät verbinden_.
 2. Wählen Sie im Auswahlmenü _Gerätetyp_ Windows aus.
 3. Benennen Sie das Gerät.
-   ![Gerät verbinden \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+    ![Gerät verbinden \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
 ## AdGuard Werbeblocker verwenden (kostenpflichtige Option)
 
@@ -17,20 +17,20 @@ Die AdGuard-App ermöglicht die Nutzung von verschlüsseltem DNS und eignet sich
 1. [Installieren Sie die App](https://adguard.com/adguard-windows/overview.html) auf dem Gerät, das Sie mit AdGuard DNS verbinden möchten.
 2. Öffnen Sie die App.
 3. Klicken Sie oben auf der Startseite der App auf _Einstellungen_.
-   ![Einstellungen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
+    ![Einstellungen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 4. Wählen Sie _DNS-Schutz_ aus dem Menü auf der linken Seite.
-   ![DNS-Schutz \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
+    ![DNS-Schutz \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
 5. Klicken Sie auf Ihren aktuell ausgewählten DNS-Server.
-   ![DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
+    ![DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
 6. Blättern Sie nach unten und klicken Sie auf _Benutzerdefinierten DNS-Server hinzufügen_.
-   ![Benutzerdefinierten DNS-Server hinzufügen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
+    ![Benutzerdefinierten DNS-Server hinzufügen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
 7. Geben Sie im Feld **DNS-Upstreams** eine der folgenden Adressen ein. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
-   ![DoH-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
-   ![Server erstellen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
+    ![DoH-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
+    ![Server erstellen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
 8. Klicken Sie auf _Speichern und auswählen_.
-   ![Speichern und auswählen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
+    ![Speichern und auswählen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
 9. Der hinzugefügte DNS-Server wird unten in der Liste der _Benutzerdefinierten DNS-Server_ angezeigt.
-   ![Benutzer-DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
+    ![Benutzer-DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
 Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 
@@ -41,16 +41,16 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
 1. Installieren Sie AdGuard VPN.
 2. Öffnen Sie die App und klicken Sie auf _Einstellungen_.
 3. Wählen Sie _App-Einstellungen_.
-   ![App-Einstellungen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
+    ![App-Einstellungen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
 4. Blättern Sie nach unten und wählen Sie _DNS-Server_.
-   ![DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
+    ![DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
 5. Klicken Sie auf _Eigenen DNS-Server hinzufügen_.
-   ![Eigenen DNS-Server hinzufügen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
+    ![Eigenen DNS-Server hinzufügen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
 6. Fügen Sie im Feld _Adresse des Servers_ eine der folgenden Adressen ein. Wenn Sie nicht sicher sind, welche Sie verwenden sollen, wählen Sie DNS-over-HTTPS.
-   ![DoH-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
-   ![Server erstellen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
+    ![DoH-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
+    ![Server erstellen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
 7. Klicken Sie auf _Speichern und auswählen_.
-   ![Speichern und auswählen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
+    ![Speichern und auswählen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 

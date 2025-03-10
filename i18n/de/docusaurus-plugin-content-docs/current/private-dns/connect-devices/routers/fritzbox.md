@@ -24,8 +24,8 @@ Verwenden Sie diese Anleitung, wenn Ihr FritzBox-Router keine DNS-over-TLS-Konfi
 3. Öffnen Sie _Internet_ oder _Heimnetzwerk_.
 4. Wählen Sie _DNS_ oder _DNS-Einstellungen_.
 5. Wählen Sie _Manuelles DNS_, dann _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
-   - IPv4: `94.140.14.49` und `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` und `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 6. Speichern Sie die Einstellungen.
 7. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 

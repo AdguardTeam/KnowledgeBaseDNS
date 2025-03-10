@@ -8,7 +8,7 @@ Pour connecter un appareil Android à AdGuard DNS, ajoutez-le d'abord au _tablea
 1. Allez dans le _tableau de bord_ et cliquez sur _Connecter un nouvel appareil_.
 2. Dans le menu déroulant _Type d'appareil_, sélectionnez Android.
 3. Nommez le dispositif.
-   ![Connexion de l'appareil \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
+    ![Connexion de l'appareil \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
 ## Utilisez le Bloqueur AdGuard (option payante)
 
@@ -17,21 +17,21 @@ L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui la rend parfai
 1. Installez [l'application AdGuard](https://adguard.com/adguard-android/overview.html) sur l'appareil que vous souhaitez connecter à AdGuard DNS.
 2. Ouvrez l'application.
 3. Appuyez sur l'icône du bouclier dans la barre de menu en bas de l'écran.
-   ![Icône du bouclier \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
+    ![Icône du bouclier \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step3.png)
 4. Appuyez sur _Protection DNS_.
-   ![Protection DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
+    ![Protection DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step4.png)
 5. Sélectionnez _serveur DNS_.
-   ![Serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
+    ![Serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. Faites défiler jusqu'à _Serveurs personnalisés_ et appuyez sur _Ajouter un serveur DNS_.
-   ![Ajouter un serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
+    ![Ajouter un serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
 7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Si vous n’êtes pas sûr de l’option à utiliser, sélectionnez _DNS-over-HTTPS_.
-   ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
-   ![Serveur DNS personnalisé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
+    ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
+    ![Serveur DNS personnalisé \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. Appuyez sur _Ajouter_.
 9. Le serveur DNS que vous avez ajouté apparaîtra en bas de la liste des _Serveurs personnalisés_. Pour le sélectionner, appuyez sur son nom ou le bouton radio à côté.
-   ![Sélectionner le serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
+    ![Sélectionner le serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
 10. Appuyez sur _Enregistrer et sélectionner_.
-    ![Enregistrer et sélectionner \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
+    ![Enregistrer et sélectionner \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
@@ -42,18 +42,18 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 1. Installez [l'application AdGuard VPN](https://adguard-vpn.com/android/overview.html) sur l'appareil que vous souhaitez connecter à AdGuard DNS.
 2. Ouvrez l'application.
 3. Dans la barre de menu en bas de l'écran, appuyez sur l'icône d'engrenage.
-   ![Icône d'engrenage \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step3.png)
+    ![Icône d'engrenage \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step3.png)
 4. Ouvrez _Paramètres de l'application_.
-   ![Paramètres de l'application \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
+    ![Paramètres de l'application \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step4.png)
 5. Sélectionnez _serveur DNS_.
-   ![Serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
+    ![Serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Faites défiler et appuyez sur _Ajouter un serveur DNS personnalisé_.
-   ![Ajouter un serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
+    ![Ajouter un serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
 7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Si vous n'êtes pas sûr de laquelle utiliser, sélectionnez DNS-over-HTTPS.
-   ![DoH \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
-   ![Serveur DNS personnalisé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
+    ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
+    ![Serveur DNS personnalisé \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. Appuyez sur _Enregistrer et sélectionner_.
-   ![Ajouter un serveur DNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
+    ![Ajouter un serveur DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. Le serveur DNS que vous avez ajouté apparaîtra en bas de la liste des _Serveurs DNS personnalisés_.
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
@@ -63,13 +63,13 @@ C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 Vous pouvez configurer votre serveur DNS dans les paramètres de votre appareil. Veuillez noter que les appareils Android ne prennent en charge que le protocole DNS-over-TLS.
 
 1. Allez vers _Paramètres_ → _Wi-Fi & Internet_ (ou _Réseau et Internet_, selon votre version de l'OS).
-   ![Paramètres \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
+    ![Paramètres \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)
 2. Sélectionnez _Avancés_ et tapez sur _DNS privé_.
-   ![DNS privé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
+    ![DNS privé \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step2.png)
 3. Sélectionnez l'option _nom d'hôte du fournisseur DNS privé_ et saisissez l'adresse de votre serveur personnelle : `{Your_Device_ID}.d.adguard-dns.com`.
 4. Tapez _Enregistrer_.
-   ![DNS privé \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   C'est tout ! Votre dispositif est maintenant connecté à AdGuard DNS.
+    ![DNS privé \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
+    C'est tout ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
 ## Configuration du DNS brut
 

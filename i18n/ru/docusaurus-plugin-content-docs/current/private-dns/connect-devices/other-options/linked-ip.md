@@ -28,7 +28,7 @@ sidebar_position: 3
 3. Перейдите в раздел _Использовать адреса DNS-серверов_.
 4. Откройте _Адреса незашифрованных DNS-серверов_ и подключите привязанный IP.
 
-   ![Привязанный IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![Привязанный IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Динамический DNS: зачем это нужно
 
@@ -48,11 +48,11 @@ sidebar_position: 3
 
 1. Сначала вам нужно проверить, поддерживает ли ваш роутер DDNS:
 
-   - Перейдите в _Настройки роутера_ → _Сеть_
-   - Найдите раздел DDNS или _Dynamic DNS_
-   - Перейдите в него и убедитесь, что настройки действительно поддерживаются. _This is just an example of what it may look like, the settings may vary depending on your router_
+    - Перейдите в _Настройки роутера_ → _Сеть_
+    - Найдите раздел DDNS или _Dynamic DNS_
+    - Перейдите в него и убедитесь, что настройки действительно поддерживаются. _Это только пример того, как это может выглядеть, настройки могут различаться в зависимости от вашего роутера_
 
-   ![Поддержка DDNS \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    ![Поддержка DDNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Зарегистрируйте домен через популярный сервис, такой как [Dyn](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) или любой другой предпочитаемый вами поставщик DDNS.
 
@@ -62,7 +62,7 @@ sidebar_position: 3
 
 5. Введите домен, который вы зарегистрировали ранее, и нажмите _Настроить Dyn_.
 
-   ![Настроить Dyn \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+    ![Настроить Dyn \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Готово, вы успешно настроили Dyn!
 
@@ -73,14 +73,14 @@ sidebar_position: 3
 Самый простой способ — использовать Планировщик задач:
 
 1. Создайте задачу:
-   - Откройте Планировщик задач.
-   - Создайте новую задачу.
-   - Установите триггер на запуск каждые 5 минут.
-   - Выберите _Запуск программы_ в качестве действия.
+    - Откройте Планировщик задач.
+    - Создайте новую задачу.
+    - Установите триггер на запуск каждые 5 минут.
+    - Выберите _Запуск программы_ в качестве действия.
 2. Выберите программу:
-   - В поле _Программа или скрипт_ введите `powershell`
-   - В поле _Добавить аргументы_ введите:
-     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+    - В поле _Программа или скрипт_ введите `powershell`
+    - В поле _Добавить аргументы_ введите:
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Сохраните задачу.
 
 ### На macOS и Linux
@@ -88,11 +88,11 @@ sidebar_position: 3
 На macOS и Linux самый простой способ — использовать `cron`:
 
 1. Откройте crontab:
-   - В терминале выполните `crontab -e`.
+    - В терминале выполните `crontab -e`.
 2. Добавьте задачу:
-   - Добавьте следующую строку:
-     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - Эта задача будет выполняться каждые 5 минут
+    - Добавьте следующую строку:
+        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+    - Эта задача будет выполняться каждые 5 минут
 3. Сохраните crontab.
 
 :::note Важно

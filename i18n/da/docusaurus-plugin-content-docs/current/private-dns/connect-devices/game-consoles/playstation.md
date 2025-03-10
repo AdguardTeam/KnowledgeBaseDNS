@@ -24,8 +24,8 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 7. For _DHCP-værtsnavn_ vælges _Angiv ikke_.
 8. For _DNS-indstillinger_ vælges _Manuel_.
 9. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Vælg _Næste_ for at fortsætte.
 11. På skærmen _MTU-indstillinger_ vælges _Automatisk_.
 12. På skærmen _Proxyserver_ vælges _Anvend ikke_.
@@ -43,8 +43,8 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 7. For _DHCP-værtsnavn_ vælges _Angiv ikke_.
 8. For _DNS-indstillinger_ vælges _Manuel_.
 9. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Vælg _Næste_ for at fortsætte.
 11. På skærmen _MTU-indstillinger_ vælges _Automatisk_.
 12. På skærmen _Proxyserver_ vælges _Anvend ikke_.
