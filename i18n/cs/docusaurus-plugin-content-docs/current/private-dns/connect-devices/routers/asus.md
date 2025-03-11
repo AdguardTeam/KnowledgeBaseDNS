@@ -19,7 +19,7 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
 6. Změňte protokol ochrany soukromí DNS na DNS-over-TLS (DoT).
 7. Zkontrolujte, zda je profil _DNS-over-TLS_ nastaven na hodnotu _Přísný_.
 8. Přejděte dolů do sekce _Seznam serverů DNS-over-TLS_. Do pole _Adresa_ zadejte jednu z níže uvedených adres:
-   - `94.140.14.49` a `94.140.14.59`
+    - `94.140.14.49` a `94.140.14.59`
 9. Pro port _TLS_ zadejte 853.
 10. Do pole _Název hostitele TLS_ zadejte adresu Soukromého DNS AdGuard:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
 4. Vyberte _WAN_ nebo _Internet_.
 5. Otevřete _Nastavení DNS_ nebo _DNS_.
 6. Vyberte _Ruční nastavení_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
-   - IPv4: `94.140.14.49` a `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` a `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 7. Uložte nastavení.
 8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
-   - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

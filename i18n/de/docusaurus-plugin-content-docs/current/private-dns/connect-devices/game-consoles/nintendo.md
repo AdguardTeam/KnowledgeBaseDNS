@@ -26,8 +26,8 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS
 5. Setzen Sie _Automatisch_ auf _Manuell_.
 6. Wählen Sie _Primärer DNS_. Halten Sie die linke Pfeiltaste (B-Taste) gedrückt, um den vorhandenen DNS zu löschen.
 7. Geben Sie in das Feld _Primärer DNS_ eine der folgenden DNS-Serveradressen ein:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 8. Speichern Sie die Einstellungen.
 
 Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):

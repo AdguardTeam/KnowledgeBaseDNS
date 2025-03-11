@@ -13,15 +13,15 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 2. _Ayarlar_ → _Ağlar_ öğesine gidin\*.
 3. _Ağı Düzenle_ → _WAN_ öğesine tıklayın.
 4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses.
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 5. _Kaydet_ öğesine tıklayın.
 6. _Ağ_ öğesine geri dönün.
 7. _Ağı Düzenle_ → _LAN_ öğesini seçin.
 8. _DHCP Ad Sunucusu_ öğesini bulun ve _Manuel_ öğesini seçin.
 9. _DNS Sunucu 1_ alanına ağ geçidi adresinizi girin. Alternatif olarak, AdGuard DNS sunucu adreslerini _DNS Sunucusu 1_ ve _DNS Sunucusu 2_ alanlarına girebilirsiniz:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 10. Ayarları kaydedin.
 11. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 

@@ -19,8 +19,8 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 4. Klik på _Skift indstillinger_ for det valgte Wi-Fi netværk.
 5. Rul ned og vælg _DNS-indstillinger_.
 6. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 7. Gem DNS-indstillingerne.
 
 Brug af en linket IP (eller dedikeret IP, hvis man har et Team-abonnement) vil være at foretrække:

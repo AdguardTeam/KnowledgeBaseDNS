@@ -19,7 +19,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 6. DNS Gizlilik Protokolü öğesini DNS-over-TLS (DoT) olarak değiştirin.
 7. _DNS-over-TLS Profili_ öğesini _Katı_ olarak ayarlandığından emin olun.
 8. _DNS-over-TLS Sunucuları Listesi_ bölümüne doğru aşağı kaydırın. _Adres_ alanına aşağıdaki adreslerden birini girin:
-   - `94.140.14.49` ve `94.140.14.59`
+    - `94.140.14.49` ve `94.140.14.59`
 9. _TLS Bağlantı Noktası_ için 853 girin.
 10. TLS Ana Makine Adı\* alanına Özel AdGuard DNS sunucu adresini girin:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 4. _WAN_ veya _İnternet_ öğesini seçin.
 5. _DNS Ayarları_ veya _DNS_ öğesini açın.
 6. _Manuel Ayar_ öğesini seçin. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 7. Ayarları kaydedin.
 8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
-   - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

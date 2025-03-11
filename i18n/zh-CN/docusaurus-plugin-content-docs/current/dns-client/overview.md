@@ -37,25 +37,25 @@ AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
 
 1. 从[版本页面][releases]下载并解压 `.tar.gz` 或 `.zip` 文件。
 
-   :::caution
+  :::caution
 
-   在 macOS 上，全局安装的守护进程必须归 `root` 所有 (参见 [`launchd` 文档][launchd-requirements])，因此 `AdGuardDNSClient` 可执行文件必须放在 `/Applications/` 目录或其子目录中。
+  在 macOS 上，全局安装的守护进程必须归 `root` 所有 (参见 [`launchd` 文档][launchd-requirements])，因此 `AdGuardDNSClient` 可执行文件必须放在 `/Applications/` 目录或其子目录中。
 
-   :::
+  :::
 
 2. 安装并运行以下命令将其设置为服务：
 
-   ```sh
-   ./AdGuardDNSClient -s install -v
-   ```
+  ```sh
+  ./AdGuardDNSClient -s install -v
+  ```
 
 3. 编辑配置文件 `config.yaml`。
 
 4. 启动服务：
 
-   ```sh
-   ./AdGuardDNSClient -s start -v
-   ```
+  ```sh
+  ./AdGuardDNSClient -s start -v
+  ```
 
 使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup`：
 

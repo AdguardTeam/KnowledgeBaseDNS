@@ -255,7 +255,7 @@ RESPUESTAS:
 
 El modificador de respuesta `dnsrewrite` permite reemplazar el contenido de la respuesta a la solicitud de DNS para los hosts coincidentes. Ten en cuenta que este modificador en AdGuard Home funciona en todas las reglas, pero en Private AdGuard DNS, solo en las personalizadas.
 
-**Las reglas con el modificador de respuesta `dnsrewrite` tienen mayor prioridad que otras reglas en AdGuard Home.**
+**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
 Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request's query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
@@ -355,9 +355,15 @@ Exception rules unblock one or all rules:
 
 - `@@||example.com^$dnsrewrite=1.2.3.4` unblocks the DNS rewrite rule that adds an `A` record with the value `1.2.3.4`.
 
+:::info
+
+If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+
+:::
+
 #### `important` {#important-modifier}
 
-El modificador `importante` aplicado a una regla aumenta su prioridad sobre cualquier otra regla sin el modificador. Incluso sobre reglas de excepción básicas.
+The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
 **Ejemplos:**
 
@@ -381,7 +387,7 @@ El modificador `importante` aplicado a una regla aumenta su prioridad sobre cual
 
 #### `badfilter` {#badfilter-modifier}
 
-Las reglas con el modificador `badfilter` deshabilitan otras reglas básicas a las que se refieren. Significa que el texto de la regla deshabilitada debe coincidir con el texto de la regla `badfilter` (sin el modificador `badfilter`).
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
 **Ejemplos:**
 
@@ -393,9 +399,9 @@ Las reglas con el modificador `badfilter` deshabilitan otras reglas básicas a l
 
 #### `ctag` {#ctag-modifier}
 
-**El modificador `ctag` solo se puede usar en AdGuard Home.**
+**The `ctag` modifier can only be used in AdGuard Home.**
 
-Permite bloquear dominios solo para tipos específicos de tags de cliente DNS. Puedes asignar tags a los clientes en la interfaz de usuario de AdGuard Home. En el futuro, planeamos asignar etiquetas automáticamente analizando el comportamiento de cada cliente.
+It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
 La sintaxis es:
 
@@ -403,13 +409,13 @@ La sintaxis es:
 $ctag=valor1|valor2|...
 ```
 
-Si una de las etiquetas del cliente coincide con los valores `ctag`, esta regla se aplica al cliente. La sintaxis para la exclusión es:
+If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~valor1|~valor2|...
 ```
 
-Si una de las etiquetas del cliente coincide con los valores de exclusión `ctag`, esta regla no se aplica al cliente.
+If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
 **Ejemplos:**
 
@@ -417,7 +423,7 @@ Si una de las etiquetas del cliente coincide con los valores de exclusión `ctag
 
 - `||example.org^$ctag=~device_phone`:Bloquear `example.org` para todos los clientes excepto aquellos etiquetados como `device_phone`.
 
-La lista de tags permitidas:
+The list of allowed tags:
 
 - Por tipo de dispositivo:
 
@@ -451,15 +457,15 @@ La lista de tags permitidas:
 
 ## `/etc/hosts`-style syntax {#etc-hosts-syntax}
 
-Para cada host debe estar presente una sola línea con la siguiente información:
+For each host a single line should be present with the following information:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Los campos de las entradas están separados por cualquier número de espacios o caracteres de tabulación. El texto desde el carácter `#` hasta el final de la línea es un comentario y se ignora.
+Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
 
-Los nombres de host pueden contener solo caracteres alfanuméricos, guiones menos (`-`) y puntos (``). Deben comenzar con un carácter alfabético y terminar con un carácter alfanumérico. Los alias opcionales proporcionan cambios de nombre, ortografía alternativa, nombres de host más cortos o nombres de host genéricos (por ejemplo, `localhost`).
+Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
 **Ejemplo:**
 
@@ -470,11 +476,11 @@ Los nombres de host pueden contener solo caracteres alfanuméricos, guiones meno
 127.0.0.1 example.org # esto también es un comentario
 ```
 
-En AdGuard Home, las direcciones IP se utilizan para responder a consultas de DNS para estos dominios. En Private AdGuard DNS, estas direcciones simplemente se bloquean.
+In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
 
 ## Domains-only syntax {#domains-only-syntax}
 
-Una lista simple de nombres de dominio, un nombre por línea.
+A simple list of domain names, one name per line.
 
 **Ejemplo:**
 
@@ -489,9 +495,9 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 ## Hostlist compiler {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. Es una herramienta sencilla que facilita la compilación de una lista de bloqueo de hosts compatible con AdGuard Home, Private AdGuard DNS o cualquier otro producto AdGuard con filtrado DNS.
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-De lo que es capaz:
+What it's capable of:
 
 1. Compila una lista de bloqueo única de varias fuentes.
 
@@ -503,6 +509,7 @@ De lo que es capaz:
 
 
 <!-- external links -->
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier

@@ -19,6 +19,6 @@ Als je geabonneerd bent op een AdGuard DNS _Team_ of _Zakelijk_ abonnement, kun 
 
 2. Tik op _limietverhoging aanvragen_ om contact op te nemen met ons supportteam en de tariefverhoging aan te vragen. Je moet je CIDR opgeven en de limiet die je wilt hebben
 
-   ![Snelheidslimiet](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+ ![Snelheidslimiet](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Je verzoek wordt binnen 1-3 werkdagen behandeld. We nemen per e-mail contact met je op over de wijzigingen

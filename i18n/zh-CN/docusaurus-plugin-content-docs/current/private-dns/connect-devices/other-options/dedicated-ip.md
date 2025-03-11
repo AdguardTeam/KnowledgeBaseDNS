@@ -28,5 +28,5 @@ Unfortunately, the technical specifications of the connected device may not alwa
 5. 请选择想要使用的服务器。
 6. 要绑定专用 IPv4 地址，请点击「_分配_」。
 7. 如果要使用专用 IPv6 地址，请点击「_复制_」。
-   ![复制地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+    ![复制地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. 复制并粘贴所选的专用地址到设备配置中。

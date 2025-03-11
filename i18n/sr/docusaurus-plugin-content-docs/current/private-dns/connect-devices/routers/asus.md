@@ -19,7 +19,7 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 6. Change DNS Privacy Protocol to DNS-over-TLS (DoT).
 7. Make sure the _DNS-over-TLS Profile_ is set to _Strict_.
 8. Scroll down to the _DNS-over-TLS Servers List_ section. In the _Address_ field, enter one of the addresses below:
-   - `94.140.14.49` and `94.140.14.59`
+    - `94.140.14.49` and `94.140.14.59`
 9. For _TLS Port_, enter 853.
 10. In the _TLS Hostname_ field, enter the Private AdGuard DNS server address:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 4. Select _WAN_ or _Internet_.
 5. Open _DNS Settings_ or _DNS_.
 6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Save the settings.
 8. Link your IP (or your dedicated IP if you have a Team subscription).
-   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

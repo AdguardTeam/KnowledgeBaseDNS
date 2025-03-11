@@ -28,7 +28,7 @@ De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat
 3. Ga naar _DNS-serveradressen gebruiken_.
 4. Open _Gewone DNS-serveradressen_ en verbind het gekoppelde IP-adres.
 
-   ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamische DNS: waarom het nuttig is
 
@@ -48,11 +48,11 @@ This way, you won’t have to manually update the associated IP address each tim
 
 1. First, you need to check if DDNS is supported by your router settings:
 
-   - Go to _Router settings_ → _Network_
-   - Locate the DDNS or the _Dynamic DNS_ section
-   - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like, the settings may vary depending on your router_
+    - Go to _Router settings_ → _Network_
+    - Locate the DDNS or the _Dynamic DNS_ section
+    - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-   ![DDNS-ondersteund \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    ![DDNS-ondersteund \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 
@@ -62,7 +62,7 @@ This way, you won’t have to manually update the associated IP address each tim
 
 5. Input the domain you registered earlier and click _Configure DDNS_.
 
-   ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you've successfully set up DDNS!
 
@@ -73,14 +73,14 @@ All done, you've successfully set up DDNS!
 The easiest way is to use the Task Scheduler:
 
 1. Create a task:
-   - Open the Task Scheduler.
-   - Create a new task.
-   - Set the trigger to run every 5 minutes.
-   - Select _Run Program_ as the action.
+    - Open the Task Scheduler.
+    - Create a new task.
+    - Set the trigger to run every 5 minutes.
+    - Select _Run Program_ as the action.
 2. Select a program:
-   - In the _Program or Script_ field, type \`powershell'
-   - In the _Add Arguments_ field, type:
-     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+    - In the _Program or Script_ field, type \`powershell'
+    - In the _Add Arguments_ field, type:
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Save the task.
 
 ### On macOS and Linux
@@ -88,11 +88,11 @@ The easiest way is to use the Task Scheduler:
 On macOS and Linux, the easiest way is to use `cron`:
 
 1. Open crontab:
-   - In the terminal, run `crontab -e`.
+    - In the terminal, run `crontab -e`.
 2. Add a task:
-   - Insert the following line:
-     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - This job will run every 5 minutes
+    - Insert the following line:
+        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+    - This job will run every 5 minutes
 3. Save crontab.
 
 :::note Important

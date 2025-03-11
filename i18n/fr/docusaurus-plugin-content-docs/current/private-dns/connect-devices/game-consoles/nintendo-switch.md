@@ -19,8 +19,8 @@ Configurez votre console de jeux pour utiliser un serveur DNS AdGuard public ou 
 4. Cliquez sur _Modifier les paramètres_ pour le réseau Wi-Fi sélectionné.
 5. Faites défiler vers le bas et sélectionnez _Paramètres DNS_.
 6. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 7. Enregistrez vos paramètres DNS.
 
 Il serait préférable d'utiliser une IP liée (ou une IP dédiée si vous avez un abonnement Équipe) :

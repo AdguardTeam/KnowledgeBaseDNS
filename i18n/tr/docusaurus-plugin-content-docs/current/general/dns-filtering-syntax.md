@@ -125,7 +125,7 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1`, [`client`][] değiştiricisidir ve değeri `127.0.0.1`'dir. `,` değiştiriciler arasındaki sınırlayıcıdır. Ve son olarak, `dnstype=A`, değeri `A` olan [`dnstype`][] değiştiricisidir.
+  `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` değiştiriciler arasındaki sınırlayıcıdır. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
 **NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
 
@@ -255,7 +255,7 @@ ANSWERS:
 
 `dnsrewrite` yanıt değiştiricisi, eşleşen ana bilgisayarlar için DNS isteğine verilen yanıtın içeriğinin değiştirilmesine olanak tanır. AdGuard Home'daki bu değiştiricinin tüm kurallarda çalıştığını, ancak Özel AdGuard DNS'de ise yalnızca özel kurallarda çalıştığını unutmayın.
 
-**`dnsrewrite` yanıt değiştiricisine sahip kurallar, AdGuard Home'daki diğer kurallardan daha yüksek önceliğe sahiptir.**
+**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
 `dnsrewrite` kuralına uyan bir ana makineye yönelik tüm isteklere verilen yanıtlar değiştirilecektir. Değiştirme yanıtının yanıt bölümü yalnızca isteğin sorgu türüyle eşleşen RR'leri ve muhtemelen CNAME RR'leri içerir. Bu, ana makinenin `dnsrewrite` kuralıyla eşleşmesi durumunda bazı isteklere verilen yanıtların boş (`NODATA`) olabileceği anlamına gelir.
 
@@ -318,7 +318,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.`, ters DNS için bir `PTR` kaydı ekler. DNS sunucusuna `1.2.3.4` için yapılan ters DNS istekleri `example.net` alan adı olarak sonuçlanır.
 
-  **NOT:** IP ters sırada OLMALIDIR. Bkz. [RFC 1035][rfc1035].
+  **NOT:** IP ters sırada OLMALIDIR. See [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekler.
 
@@ -355,9 +355,15 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `@@|example.com^$dnsrewrite=1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekleyen DNS yeniden yazma kuralının engelini kaldırır.
 
+:::info
+
+If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+
+:::
+
 #### `important` {#important-modifier}
 
-Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Hatta temel istisna kuralları üzerinden bile.
+The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
 **Örnekler:**
 
@@ -381,7 +387,7 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
 
 #### `badfilter` {#badfilter-modifier}
 
-`badfilter` değiştiricisine sahip kurallar, atıfta bulundukları diğer temel kuralları devre dışı bırakır. Bu, devre dışı bırakılan kuralın metninin `badfilter` kuralının metniyle eşleşmesi gerektiği anlamına gelir ( `badfilter` değiştiricisi olmadan).
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
 **Örnekler:**
 
@@ -393,9 +399,9 @@ Bir kurala uygulanan `önemli` değiştirici, değiştirici olmadan diğer herha
 
 #### `ctag` {#ctag-modifier}
 
-**`ctag` değiştiricisi yalnızca AdGuard Home'da kullanılabilir.**
+**The `ctag` modifier can only be used in AdGuard Home.**
 
-Alan adlarını yalnızca belirli DNS istemci etiketleri türleri için engellemeye olanak tanır. AdGuard Home Kullanıcı Arayüzünde istemcilere etiket atayabilirsiniz. Gelecekte, her istemcinin davranışını analiz ederek etiketleri otomatik olarak atamayı planlıyoruz.
+It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
 Söz dizimi şöyledir:
 
@@ -403,13 +409,13 @@ Söz dizimi şöyledir:
 $ctag=value1|value2|...
 ```
 
-İstemcinin etiketlerinden biri `ctag` değerleriyle eşleşiyorsa, bu kural istemci için geçerlidir. İstisna söz dizimi şöyledir:
+If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-İstemcinin etiketlerinden biri istisna `ctag` değerleriyle eşleşiyorsa, bu kural istemci için geçerli değildir.
+If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
 **Örnekler:**
 
@@ -417,7 +423,7 @@ $ctag=~value1|~value2|...
 
 - `||example.org^$ctag=~device_phone`: `example.org` alan adını `device_phone` olarak etiketlenenler hariç tüm istemciler için engelleyin.
 
-İzin verilen etiketlerin listesi:
+The list of allowed tags:
 
 - Cihaz türüne göre:
 
@@ -451,15 +457,15 @@ $ctag=~value1|~value2|...
 
 ## `/etc/hosts` biçimi söz dizimi {#etc-hosts-syntax}
 
-Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdır:
+For each host a single line should be present with the following information:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Girdilerin alanları herhangi bir sayıda boşluk veya sekme karakteri ile ayrılır. `#` karakterinden satır sonuna kadar olan metin bir yorumdur ve yok sayılır.
+Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
 
-Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-`) ve noktalar (`,`) içerebilir. Alfabetik bir karakterle başlamalı ve alfasayısal bir karakterle bitmelidirler. İsteğe bağlı takma adlar, ad değişiklikleri, alternatif yazımlar, daha kısa ana makine adları veya genel ana makine adları (örneğin, `localhost`) sağlar.
+Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
 **Örnek:**
 
@@ -470,11 +476,11 @@ Ana makine adları yalnızca alfanümerik karakterler, tire-eksi işaretleri (`-
 127.0.0.1 example.net # bu da bir yorumdur
 ```
 
-AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
+In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
 
 ## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 
-Her satırda bir ad olacak şekilde basit bir alan adları listesi.
+A simple list of domain names, one name per line.
 
 **Örnek:**
 
@@ -489,9 +495,9 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 ## Hostlist compiler {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. AdGuard Home, Özel AdGuard DNS veya DNS filtreli diğer herhangi bir AdGuard ürünü ile uyumlu bir ana makine engel listesi derlemeyi kolaylaştıran basit bir araçtır.
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-Neler yapabiliyor:
+What it's capable of:
 
 1. Birden fazla kaynaktan tek bir engel listesi derleyin.
 
@@ -503,6 +509,7 @@ Neler yapabiliyor:
 
 
 <!-- external links -->
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier

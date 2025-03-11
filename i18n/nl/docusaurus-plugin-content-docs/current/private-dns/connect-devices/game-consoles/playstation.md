@@ -24,8 +24,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. In the _DNS Server_ field, enter one of the following DNS server addresses:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Select _Next_ to continue.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.
@@ -43,8 +43,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. Selecteer bij _DHCP-hostnaam_ de optie _Niet opgeven_.
 8. Selecteer bij _DNS-instellingen_ de optie _Handmatig_.
 9. Voer in het veld _DNS-server_ een van de volgende DNS-serveradressen in:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Selecteer _Volgende_ om door te gaan.
 11. Selecteer in het _MTU-instellingen_ scherm de optie _Automatisch_.
 12. Selecteer in het scherm _Proxyserver_ de optie _Niet gebruiken_.

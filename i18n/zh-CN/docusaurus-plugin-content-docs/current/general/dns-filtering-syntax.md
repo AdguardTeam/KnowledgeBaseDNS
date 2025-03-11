@@ -19,13 +19,13 @@ toc_max_heading_level: 4
 
 这是三种不同的编写主机拦截列表方法：
 
-- [Adblock-style 的语法][]是基于使用 Adblock 风格的规则语法子集编写过滤规则的现代方法。 这样阻止拦截列表与浏览器广告拦截器兼容。
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. 这样阻止拦截列表与浏览器广告拦截器兼容。
 
 - [`/etc/hosts`语法](#etc-hosts-syntax)：使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
 
 - [Domains-only 语法](#domains-only-syntax)是一个简单的域名列表。
 
-如果用户要创建拦截列表，我们建议使用 [Adblock-style 语法][]。 与旧式语法相比，它有几个重要的优点：
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. 与旧式语法相比，它有几个重要的优点：
 
 - **拦截列表大小。**使用模式匹配允许您拥有单个规则，而不是数百个 `/etc/hosts` 条目。
 
@@ -33,7 +33,7 @@ toc_max_heading_level: 4
 
 - **可扩展性。**在过去的十年中，Adblock 风格的语法有了很大的发展，我们认为我们能进一步扩展它并为网络范围的拦截器提供额外的功能。
 
-如果用户要维护 `/etc/hosts` 样式的拦截列表或过滤列表（无论类型），我们提供一个用于编写拦截列表的工具。 我们将其命名为 [Hostlist 编译器][] ，我们自己使用它来创建 [AdGuard DNS 过滤器][]。
+如果用户要维护 `/etc/hosts` 样式的拦截列表或过滤列表（无论类型），我们提供一个用于编写拦截列表的工具。 We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## 基本示例 {#basic-examples}
 
@@ -60,7 +60,7 @@ toc_max_heading_level: 4
 
 ## Adblock-style 语法 {#adblock-style-syntax}
 
-这是[传统 Adblock-style 语法][] 的子集，浏览器广告拦截程序使用这种语法。
+This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -85,7 +85,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### 正则表达式 {#regular-expressions}
 
-如果用户希望更加灵活地制定规则，可以使用[正则表达式][regexp]代替默认的简易匹配语法。 如果用户要使用正则表达式，则必须使用如下格式：
+If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. 如果用户要使用正则表达式，则必须使用如下格式：
 
 ```none
 pattern = "/" regexp "/"
@@ -125,7 +125,7 @@ pattern = "/" regexp "/"
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` 是匹配模式。 `$` 是分隔符，表明规则的其余部分是修饰符。 `client=127.0.0.1` 是 [` client `][] 修饰符，其值是 `127.0.0.1`。 `,` 是修饰符之间的分隔符。 最后， `dnstype=A` 是 [`dnstype`][] 修饰符，其值为 `A`。
+  `||example.org^` 是匹配模式。 `$` 是分隔符，表明规则的其余部分是修饰符。 `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` 是修饰符之间的分隔符。 And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
 **注意：** 如果规则包含本文档中未列出的修饰符，整个规则**将被忽略**。 通过这种方式，当人们尝试使用未经修改的浏览器广告拦截器的过滤器列表（如 EasyList 或 EasyPrivacy）时，我们可以避免误报。
 
@@ -255,7 +255,7 @@ $dnstype=value2
 
 `dnsrewrite` 响应修饰符允许替换匹配主机的 DNS 请求的响应内容。 请注意，AdGuard Home 中的这个修饰符对所有规则都有效，但在私人 AdGuard DNS 中，只对自定义规则有效。
 
-**具有 `dnsrewrite` 响应修饰符的规则比 AdGuard Home 中的其他规则具有更高的优先级。**
+**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
 所有与匹配 `dnsrewrite` 规则的主机相关的请求响应将会被替换。 替换响应的应答部分将只包含与请求查询类型匹配的 RR 记录和可能的 CNAME RR 记录。 请注意，这意味着，如果主机匹配了某个 `dnsrewrite` 规则，一些请求的响应可能会变为空白（`NODATA`）。
 
@@ -318,7 +318,7 @@ Address: 1.2.3.4
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` 添加了一个反向 DNS 的 `PTR` 记录。 向 DNS 服务器发出的 `1.2.3.4` 反向 DNS 请求将产生 `example.net`。
 
-  **注意：** IP 地址必须按反向顺序排列。 参见 [RFC 1035][rfc1035]。
+  **注意：** IP 地址必须按反向顺序排列。 See [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` 添加了一个值为 `1.2.3.4` 的 `A` 记录。
 
@@ -355,9 +355,15 @@ Address: 1.2.3.4
 
 - `@@||example.com^$dnsrewrite=1.2.3.4` 域名解析到IP地址 `1.2.3.4` 的 `A` 的 DNS 重写规则已解除阻止。
 
+:::info
+
+If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+
+:::
+
 #### `important` {#important-modifier}
 
-应用于规则 `important` 修饰符，会增加其优先级，高于其他没有修饰符的规则。 甚至高于基本的例外规则。
+The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
 **例如：**
 
@@ -381,7 +387,7 @@ Address: 1.2.3.4
 
 #### `badfilter` {#badfilter-modifier}
 
-具有 `badfilter` 修饰符的规则将禁用其所引用的其他基本规则。 这意味着禁用规则的文本应该与 `badfilter` 规则的文本匹配（没有 `badfilter` 修饰符）。
+The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
 **例如：**
 
@@ -393,9 +399,9 @@ Address: 1.2.3.4
 
 #### `ctag` {#ctag-modifier}
 
-**`ctag` 修饰符只能在 AdGuard Home 中使用。**
+**The `ctag` modifier can only be used in AdGuard Home.**
 
-它仅允许拦截特定类型的 DNS 客户端标记的域名。 用户可以在 AdGuard Hone 界面中为客户端分配标签。 将来，我们计划通过分析每个客户端的行为来自动分配标签。
+It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
 语法为：
 
@@ -403,13 +409,13 @@ Address: 1.2.3.4
 $ctag=value1|value2|...
 ```
 
-如果客户端的一个标签与 `ctag` 值相匹配，则此规则适用于该客户端。 排除的语法为：
+If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-如果客户端的一个标签与 `ctag` 值相匹配，则此规则不适用于该客户端。
+If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
 
 **例如：**
 
@@ -417,7 +423,7 @@ $ctag=~value1|~value2|...
 
 - `||example.org^$ctag=~device_phone`：为除了标记为 `device_phone` 的客户端以外的所有客户端，拦截 `example.org` 。
 
-允许的标签列表：
+The list of allowed tags:
 
 - 按设备类型：
 
@@ -451,15 +457,15 @@ $ctag=~value1|~value2|...
 
 ## `/etc/hosts` 样式语法 {#etc-hosts-syntax}
 
-对于每个主机，都应该有一个包含以下信息的单行：
+For each host a single line should be present with the following information:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-条目的字段由任意数量的空格或制表符分隔。 从 `#` 字符到行尾的文本是注释，将被忽略。
+Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
 
-主机名只能包含字母数字字符、连字符-减号 (`-`) 和句号 (`.`) 。 它们必须以字母字符开头，以字母数字字符结尾。 可选的别名提供了名称变更、替代拼写、更短的主机名或通用主机名（例如， `localhost`）。
+Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
 **例如：**
 
@@ -470,11 +476,11 @@ IP_address canonical_hostname [aliases...]
 127.0.0.1 example.net # 这也是一个注释
 ```
 
-在 AdGuard Home 中，IP 地址用于响应这些域的 DNS 查询。 在私有 AdGuard DNS 中，这些 IP 地址被拦截。
+In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
 
 ## 仅限域的语法 {#domains-only-syntax}
 
-一个简单的域名列表，每行一个域名。
+A simple list of domain names, one name per line.
 
 **例如：**
 
@@ -485,13 +491,13 @@ example.org
 example.net # 这也是一个注释
 ```
 
-如果字符串不是有效域（例如 `*.example.org`），AdGuard Home 将 认为它是 [Adblock-style 的语法][]规则。
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
 ## 主机清单编译器 {#hostlist-compiler}
 
-如果您正在维护一个拦截列表并在其中使用不同的源代码， [Hostlist 编译器][]可能对您有用。 这是一个简单的工具，可以更轻松地编译与 AdGuard Home、私有 AdGuard DNS 或任何其他具有 DNS 过滤功能的 AdGuard 产品兼容的主机拦截列表。
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-功能：
+What it's capable of:
 
 1. 从多个源编译单个黑名单。
 
@@ -503,12 +509,12 @@ example.net # 这也是一个注释
 
 
 <!-- external links -->
-[Adblock-style 的语法]: #adblock-style-syntax
-[Adblock-style 语法]: #adblock-style-syntax
-[` client `]: #client-modifier
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+[Adblock-style syntax]: #adblock-style-syntax
+[`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
-[AdGuard DNS 过滤器]: https://github.com/AdguardTeam/AdGuardSDNSFilter
-[Hostlist 编译器]: https://github.com/AdguardTeam/HostlistCompiler
+[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
-[传统 Adblock-style 语法]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

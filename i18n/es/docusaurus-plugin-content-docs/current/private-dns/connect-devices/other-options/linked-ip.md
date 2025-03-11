@@ -28,7 +28,7 @@ Las siguientes instrucciones explican cómo conectarse al dispositivo a través 
 3. Ve a _Utilizar direcciones de servidor DNS_.
 4. Abre _Direcciones de servidor DNS simple_ y conecta la IP vinculada.
 
-   ![IP vinculada \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![IP vinculada \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## DNS dinámico: por qué es útil
 
@@ -48,11 +48,11 @@ De esta manera, no tendrás que actualizar manualmente la dirección IP asociada
 
 1. Primero, debes comprobar si el DDNS es compatible con la configuración de tu router:
 
-   - Ve a _Configuraciones del router_ → _Red_
-   - Localiza la sección DDNS o _DNS dinámico_
-   - Navega hasta él y verifica que la configuración es realmente compatible. _This is just an example of what it may look like, the settings may vary depending on your router_
+    - Ve a _Configuraciones del router_ → _Red_
+    - Localiza la sección DDNS o _DNS dinámico_
+    - Navega hasta él y verifica que la configuración es realmente compatible. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-   ![DDNS supported \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registra tu dominio en un servicio popular como [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), o cualquier otro proveedor de DDNS que prefieras.
 
@@ -62,7 +62,7 @@ De esta manera, no tendrás que actualizar manualmente la dirección IP asociada
 
 5. Ingresa el dominio que registraste anteriormente y haz clic en _Configurar DDNS_.
 
-   ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+    ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 ¡Todo listo, has configurado DDNS con éxito!
 
@@ -73,14 +73,14 @@ De esta manera, no tendrás que actualizar manualmente la dirección IP asociada
 La forma más sencilla es usar Task Scheduler:
 
 1. Crea una tarea:
-   - Abre el Task Scheduler.
-   - Crea una nueva tarea.
-   - Establece el trigger para que se ejecute cada 5 minutos.
-   - Selecciona _Ejecutar programa_ como la acción.
+    - Abre el Task Scheduler.
+    - Crea una nueva tarea.
+    - Establece el trigger para que se ejecute cada 5 minutos.
+    - Selecciona _Ejecutar programa_ como la acción.
 2. Selecciona un programa:
-   - En el campo _Programa o Script_, escribe \`powershell'
-   - En el campo _Agregar argumentos_, escribe:
-     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+    - En el campo _Programa o Script_, escribe \`powershell'
+    - En el campo _Agregar argumentos_, escribe:
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Guarda la tarea.
 
 ### En macOS y Linux
@@ -88,11 +88,11 @@ La forma más sencilla es usar Task Scheduler:
 En macOS y Linux, la forma más sencilla es usar `cron`:
 
 1. Abre crontab:
-   - En la terminal, ejecuta `crontab -e`.
+    - En la terminal, ejecuta `crontab -e`.
 2. Agrega una tarea:
-   - Inserta la siguiente línea:
-     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - Este trabajo se ejecutará cada 5 minutos
+    - Inserta la siguiente línea:
+        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+    - Este trabajo se ejecutará cada 5 minutos
 3. Guarda crontab.
 
 :::note Importante

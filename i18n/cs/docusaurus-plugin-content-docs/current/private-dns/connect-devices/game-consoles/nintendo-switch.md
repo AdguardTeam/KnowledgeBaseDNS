@@ -19,8 +19,8 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 4. Klikněte na _Změnit nastavení_ vybrané Wi-Fi.
 5. Přejděte dolů a vyberte _Nastavení DNS_.
 6. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 7. Uložte nastavení DNS.
 
 Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):

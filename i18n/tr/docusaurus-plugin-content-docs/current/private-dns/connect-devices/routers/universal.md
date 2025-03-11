@@ -8,21 +8,21 @@ sidebar_position: 2
 ## Yönlendirici yönetici panelini kullanma
 
 1. Yönlendiricinizin tercihlerini açın. Genellikle bunlara tarayıcınızdan erişebilirsiniz. Yönlendiricinizin modeline bağlı olarak aşağıdaki adreslerden birini girmeyi deneyin:
-   - Linksys ve Asus yönlendiricileri genellikle şunu kullanır: [http://192.168.1.1](http://192.168.1.1/)
-   - Netgear yönlendiricileri genellikle şunu kullanır: [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.1.1](http://192.168.1.1/) D-Link yönlendiricileri genellikle [http://192.168.0.1](http://192.168.0.1/) kullanır
-   - Ubiquiti yönlendiricileri genellikle şunu kullanır: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
+    - Linksys ve Asus yönlendiricileri genellikle şunu kullanır: [http://192.168.1.1](http://192.168.1.1/)
+    - Netgear yönlendiricileri genellikle şunu kullanır: [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.1.1](http://192.168.1.1/) D-Link yönlendiricileri genellikle [http://192.168.0.1](http://192.168.0.1/) kullanır
+    - Ubiquiti yönlendiricileri genellikle şunu kullanır: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
 2. Yönlendiricinin parolasını girin.
 
-   :::note Önemli
+    :::note Önemli
 
-   Parolanızı bilmiyorsanız, genellikle yönlendirici üzerindeki bir düğmeye basarak parolanızı sıfırlayabilirsiniz; bu aynı zamanda yönlendiriciyi fabrika ayarlarına da sıfırlar. Some models have a dedicated management application, which should already be installed on your computer.
+    Parolanızı bilmiyorsanız, genellikle yönlendirici üzerindeki bir düğmeye basarak parolanızı sıfırlayabilirsiniz; bu aynı zamanda yönlendiriciyi fabrika ayarlarına da sıfırlar. Some models have a dedicated management application, which should already be installed on your computer.
 
-   :::
+    :::
 
 3. Yönlendiricinin yönetici konsolunda DNS ayarlarının nerede olduğunu bulun. Change the listed DNS addresses to the following addresses:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` ve `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 
 4. Ayarları kaydedin.
 
