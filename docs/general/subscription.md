@@ -16,7 +16,7 @@ To make the most out of AdGuard DNS, you can upgrade your plan for the following
 - To gain access to 2 dedicated IPv4 addresses and extend the number of devices, monthly requests, rules, and servers, you can **upgrade your plan to Team**
 - For more dedicated IPv4 addresses and an unlimited number of requests, devices, rules, and servers, **upgrade your plan to Enterprise**
 
-You can upgrade your plan in your [AdGuard account](https://my.adguard.com/account/licenses). To do so, click *Upgrade* under the section *AdGuard DNS*.
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). To do so, click *Upgrade* under the section *AdGuard DNS*.
 
 The *Enterprise* plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
 
