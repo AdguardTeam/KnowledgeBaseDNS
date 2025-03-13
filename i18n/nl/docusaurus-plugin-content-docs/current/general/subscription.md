@@ -16,7 +16,7 @@ Om het meeste uit AdGuard DNS te halen, kun je je abonnement upgraden voor de vo
 - Om toegang te krijgen tot 2 toegewezen IPv4-adressen en het aantal apparaten, maandelijkse verzoeken, regels en servers uit te breiden, kun je **jouw abonnement upgraden naar Team**
 - Voor meer toegewezen IPv4-adressen en een onbeperkt aantal verzoeken, apparaten, regels en servers, **upgrade jouw abonnement naar Enterprise**
 
-Je kunt je abonnement upgraden in je [AdGuard-account](https://my.adguard.com/account/licenses). Klik hiervoor op _Upgraden_ onder de sectie _AdGuard DNS_.
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Klik hiervoor op _Upgraden_ onder de sectie _AdGuard DNS_.
 
 Het _Enterprise_-abonnement is alleen op aanvraag beschikbaar. Als je geïnteresseerd bent, vul dan ons [formulier] (https://surveys.adguard.com/dns_enterprise/form.html) in en geef wat details over je bedrijf. Zodra we je inzending hebben ontvangen, nemen we contact met je op voor meer informatie.
 

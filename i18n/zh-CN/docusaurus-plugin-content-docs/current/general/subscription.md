@@ -16,7 +16,7 @@ AdGuard DNS 套餐可以在 [adguard-dns.io](https://adguard-dns.io/license.html
 - **升级到「团队版」套餐**：获得 2 个 IPv4 专用地址，同时将增加使用设备数量、每月请求量、自定义规则和服务数量。
 - **升级到「企业版」套餐**：获得更多 IPv4 专用地址，以及无限量的设备数量、请求量、自定义规则和服务数量。
 
-您可以在 [AdGuard 账号](https://my.adguard.com/account/licenses)中升级订阅套餐。 要升级订阅，请点击「AdGuard DNS」板块下的「升级」按钮。
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). 要升级订阅，请点击「AdGuard DNS」板块下的「升级」按钮。
 
 「企业版」订阅仅限申请使用。 如果您对「企业版」感兴趣，请填写我们的[申请表](https://surveys.adguard.com/dns_enterprise/form.html)，提供贵公司的相关详细信息。 我们收到提交后，将与您联系并进一步沟通。
 

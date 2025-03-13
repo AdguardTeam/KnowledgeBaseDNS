@@ -16,7 +16,7 @@ For bedre at udnytte AdGuard DNS, kan abonnementstypen opgraderes med flg. forde
 - For at få adgang til 2 dedikerede IPv4-adresser og udvide antallet af enheder, månedlige forespørgsler, regler og servere, kan **abonnementstypen opgraderes til Team**
 - For flere dedikerede IPv4-adresser og et ubegrænset antal forespørgsler, enheder, regler og servere, **opgradér abonnementstypen til Enterprise**
 
-Abonnementstypen kan opgraderes via [AdGuard-kontoen](https://my.adguard.com/account/licenses). For at gøre dette, klik på _Opgradering_ under afsnittet _AdGuard DNS_.
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). For at gøre dette, klik på _Opgradering_ under afsnittet _AdGuard DNS_.
 
 _Enterprise_-abonnementstypen er kun tilgængelig på forespørgsel. Ved evt. interesse, udfyld venligst vores [formular](https://surveys.adguard.com/dns_enterprise/form.html) og giv nogle oplysninger om virksomheden. Når vi har modtaget indsendelsen, vender vi tilbage med yderligere oplysninger.
 
