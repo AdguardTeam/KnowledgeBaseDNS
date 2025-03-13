@@ -16,7 +16,7 @@ AdGuard DNS'den en iyi şekilde yararlanmak için planınızı aşağıdaki avan
 - 2 özel IPv4 adresine erişim kazanmak ve cihaz, aylık istek, kural ve sunucu sayısını artırmak için planınızı **Takım'a yükseltebilirsiniz**
 - Daha fazla ayrılmış IPv4 adresi ve sınırsız sayıda istek, cihaz, kural ve sunucu için **planınızı Kurumsal'a yükseltin**
 
-Planınızı [AdGuard hesabınızdan](https://my.adguard.com/account/licenses) yükseltebilirsiniz. Bunu yapmak için _AdGuard DNS_ bölümünün altındaki _Yükselt_ öğesine tıklayın.
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Bunu yapmak için _AdGuard DNS_ bölümünün altındaki _Yükselt_ öğesine tıklayın.
 
 _Kurumsal_ plan yalnızca talep üzerine kullanılabilir. Eğer ilgileniyorsanız, lütfen [form](https://surveys.adguard.com/dns_enterprise/form.html) adresimizi doldurun ve şirketiniz hakkında bazı bilgiler verin. Başvurunuzu aldıktan sonra, daha fazla bilgi için sizinle iletişime geçeceğiz.
 
