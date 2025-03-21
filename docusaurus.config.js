@@ -198,7 +198,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `© AdGuard DNS, ${new Date().getFullYear()}`,
+      copyright: `© 2009–${new Date().getFullYear()} Adguard Software Ltd.`,
     },
     prism: {
       theme: lightCodeTheme,
