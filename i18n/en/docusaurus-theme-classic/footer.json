@@ -55,6 +55,10 @@
     "message": "AdGuard VPN",
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
+  "link.item.label.mail": {
+    "message": "AdGuard Mail",
+    "description": "The label of footer link with label=mail linking to https://adguard-mail.com"
+  },
   "logo.alt": {
     "message": "AdGuard DNS",
     "description": "The alt text of footer logo"
@@ -71,17 +75,9 @@
     "message": "About us",
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
-  "link.item.label.promo": {
-    "message": "AdGuard promo activities",
-    "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
-  },
-  "link.item.label.media": {
-    "message": "Media kits",
-    "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
-  },
-  "link.item.label.press": {
-    "message": "In the press",
-    "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
+  "link.item.label.support_adguard": {
+    "message": "Support AdGuard",
+    "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.temp_mail": {
     "message": "AdGuard Temp Mail",
@@ -106,9 +102,5 @@
   "link.item.label.terms_and_conditions": {
     "message": "Terms and conditions",
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
-  },
-  "copyright": {
-    "message": "© AdGuard DNS, 2024",
-    "description": "The footer copyright"
   }
 }
