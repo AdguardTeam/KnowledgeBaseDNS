@@ -3,6 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
+const MAIL_WEBSITE_URL = 'https://adguard-mail.com';
 const VPN_WEBSITE_URL = 'https://adguard-vpn.com';
 const REPORTS_WEBSITE_URL = 'https://reports.adguard.com';
 
@@ -116,16 +117,8 @@ module.exports = {
               href: DNS_WEBSITE_URL + '/public-dns.html',
             },
             {
-              label: 'promo',
-              href: ADGUARD_WEBSITE_URL + '/promopages.html',
-            },
-            {
-              label: 'media',
-              href: DNS_WEBSITE_URL + '/media-materials.html',
-            },
-            {
-              label: 'press',
-              href: DNS_WEBSITE_URL + '/press-releases.html',
+              label: 'support_adguard',
+              href: ADGUARD_WEBSITE_URL + '/support-adguard.html',
             },
           ]
         },
@@ -139,6 +132,10 @@ module.exports = {
             {
               label: 'vpn',
               href: VPN_WEBSITE_URL,
+            },
+            {
+              label: 'mail',
+              href: MAIL_WEBSITE_URL,
             },
             {
               label: 'temp_mail',
@@ -201,7 +198,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `© AdGuard DNS, ${new Date().getFullYear()}`,
+      copyright: `© 2009–${new Date().getFullYear()} Adguard Software Ltd.`,
     },
     prism: {
       theme: lightCodeTheme,
