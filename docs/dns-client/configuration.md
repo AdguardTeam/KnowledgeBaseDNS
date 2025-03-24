@@ -38,6 +38,28 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
+  - `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses.
+
+    :::note
+
+    This object is available since `v0.0.3`.
+
+    :::
+
+    It has the following fields:
+
+      - `enabled`: Whether bind retry is enabled or not.
+
+        **Example:** `true`
+
+      - `interval`: The interval between retries as a human-readable duration.
+
+        **Example:** `1s`
+
+      - `count`: The maximum number of attempts after the first failure.
+
+        **Example:** `4`
+
   - `listen_addresses`: The set of addresses with ports to listen on.
 
     **Property example:**
