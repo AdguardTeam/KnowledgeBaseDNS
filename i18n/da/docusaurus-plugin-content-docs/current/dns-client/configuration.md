@@ -38,6 +38,28 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 `server`-objektet opsætter håndteringen af indgående forespørgsler. Den har flg. egenskaber:
 
+- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note
+
+  This object is available since **v0.0.3**.
+
+  :::
+
+  Den har flg. egenskaber:
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **Eks.:** `true`
+
+  - `interval`: The interval between retries as a human-readable duration.
+
+    **Example:** `1s`
+
+  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+
+    **Example:** `4`
+
 - `listen_addresses`: Sættet af adresser med porte at lytte på.
 
   **Egenskabseksempel:**
@@ -70,7 +92,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 'upstream'-objektet opsætter den faktiske forespørgselsopløsning. Den har flg. egenskaber:
 
-- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Den har flg. felter:
+- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Den har flg. egenskaber:
 
   - `address`: Opstrømsserveradresse.
 
