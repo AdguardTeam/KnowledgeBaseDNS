@@ -11,7 +11,7 @@ Yönlendiricinizin şifrelenmiş DNS sunucularının kullanımını desteklemesi
 
 ## AdGuard DNS'e bağlanma
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
+Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın.
 
 ### PlayStation 4 için
 

@@ -55,6 +55,10 @@
     "message": "AdGuard VPN",
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
+  "link.item.label.mail": {
+    "message": "AdGuard Mail",
+    "description": "The label of footer link with label=mail linking to https://adguard-mail.com"
+  },
   "logo.alt": {
     "message": "AdGuard DNS",
     "description": "The alt text of footer logo"
@@ -71,17 +75,9 @@
     "message": "O nama",
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
-  "link.item.label.promo": {
-    "message": "Promotivne aktivnosti AdGuard",
-    "description": "The label of footer link with label=promo linking to https://adguard.com/promopages.html"
-  },
-  "link.item.label.media": {
-    "message": "Paketi za medije",
-    "description": "The label of footer link with label=media linking to https://adguard-dns.io/media-materials.html"
-  },
-  "link.item.label.press": {
-    "message": "U medijima",
-    "description": "The label of footer link with label=press linking to https://adguard-dns.io/press-releases.html"
+  "link.item.label.support_adguard": {
+    "message": "Support AdGuard",
+    "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.temp_mail": {
     "message": "AdGuard Privremena pošta",
@@ -108,7 +104,7 @@
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
   },
   "copyright": {
-    "message": "© AdGuard DNS, 2024",
+    "message": "© 2009–2025 Adguard Software Ltd.",
     "description": "The footer copyright"
   }
 }

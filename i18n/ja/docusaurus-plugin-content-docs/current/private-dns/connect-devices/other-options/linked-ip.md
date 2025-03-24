@@ -28,7 +28,7 @@ sidebar_position: 3
 3. 「_DNSサーバーアドレスを使用_」を選択します。
 4. 「_プレーン DNS サーバー アドレス_」を開き、リンクされたIPを接続します。
 
-   ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## 「ダイナミック（動的）DNS」が便利な理由
 
@@ -48,11 +48,11 @@ sidebar_position: 3
 
 1. まず、お使いのルーターの設定でDDNSがサポートされているかどうかを確認する必要があります：
 
-   - _ルーター設定_ → _ネットワーク_ に移動します
-   - DDNSまたは_ダイナミックDNS_（動的DNS）セクションを見つけます。
-   - それに移動し、設定が実際にサポートされていることを確認してください。 _以下は、見た目がどのようになるかの例です。実際の設定画面や項目は、ルーターによって若干異なる場合があります_：
+    - _ルーター設定_ → _ネットワーク_ に移動します
+    - DDNSまたは_ダイナミックDNS_（動的DNS）セクションを見つけます。
+    - それに移動し、設定が実際にサポートされていることを確認してください。 _以下は、見た目がどのようになるかの例です。実際の設定画面や項目は、ルーターによって若干異なる場合があります_：
 
-   ![DDNS がサポートされている場合 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+    ![DDNS がサポートされている場合 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. 人気のあるサービス、例えば [DynDNS](https://dyn.com/remote-access/) や [NO-IP](https://www.noip.com/)、またはお好みの他の DDNS プロバイダでドメインを登録してください。
 
@@ -62,7 +62,7 @@ sidebar_position: 3
 
 5. 先ほど登録したドメインを入力し、「DDNS を設定」をクリックします。
 
-   ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 これで、DDNS（動的DNS）の設定は完了です。
 
@@ -73,14 +73,14 @@ sidebar_position: 3
 最も簡単な方法は、タスクスケジューラ（Task Scheduler）を使用することです：
 
 1. タスクを作成します:
-   - タスク スケジューラを開きます。
-   - 新しいタスクを作成します。
-   - トリガーを 5 分ごとの実行に設定します。
-   - アクションとしては「_プログラムの実行_」を選択します。
+    - タスク スケジューラを開きます。
+    - 新しいタスクを作成します。
+    - トリガーを 5 分ごとの実行に設定します。
+    - アクションとしては「_プログラムの実行_」を選択します。
 2. プログラムを選択します：
-   - プログラムまたはスクリプトのフィールドに、\`powershell'と入力します。
-   - Add Argumentsフィールドに、次のように入力します：
-     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+    - プログラムまたはスクリプトのフィールドに、\`powershell'と入力します。
+    - Add Argumentsフィールドに、次のように入力します：
+        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. タスクを保存します。
 
 ### macOSとLinuxの場合
@@ -88,11 +88,11 @@ sidebar_position: 3
 macOS と Linux では、`cron` を使用するのが最も簡単な方法です。
 
 1. crontab を開きます:
-   - ターミナルで `crontab -e` を実行します。
+    - ターミナルで `crontab -e` を実行します。
 2. タスクを追加します:
-   - 次の行を挿入します:
-     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-   - このジョブは5分ごとに実行されます。
+    - 次の行を挿入します:
+        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+    - このジョブは5分ごとに実行されます。
 3. crontabを保存します。
 
 :::note 【重要】

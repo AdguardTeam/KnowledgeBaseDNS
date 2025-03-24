@@ -20,7 +20,7 @@ sidebar_position: 2
 
     :::
 
-3. Yönlendiricinin yönetici konsolunda DNS ayarlarının nerede olduğunu bulun. Change the listed DNS addresses to the following addresses:
+3. Yönlendiricinin yönetici konsolunda DNS ayarlarının nerede olduğunu bulun. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
     - IPv4: `94.140.14.49` ve `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 

@@ -19,7 +19,7 @@ sidebar_position: 3
 6. DNS 개인정보 보호 프로토콜을 DNS-over-TLS(DoT)로 변경합니다.
 7. **DNS-over-TLS 프로필**이 **Strict**로 설정되어 있는지 확인합니다.
 8. **DNS-over-TLS 서버 목록** 섹션까지 아래로 스크롤합니다. **주소** 필드에 아래 주소 중 하나를 입력합니다.
-   - `94.140.14.49` 및 `94.140.14.59`
+    - `94.140.14.49` 및 `94.140.14.59`
 9. **TLS 포트**의 경우, 853을 입력합니다.
 10. **TLS 호스트 이름** 필드에 사설 AdGuard DNS 서버 주소를 입력합니다.
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ sidebar_position: 3
 4. **WAN** 또는 **인터넷**을 선택합니다.
 5. **DNS 설정** 또는 **DNS**를 엽니다.
 6. Choose _Manual Setting_. **이 DNS 서버 사용** 또는 **수동으로 DNS 서버 지정**을 선택하고 다음 DNS 서버 주소를 입력합니다:
-   - IPv4: `94.140.14.49` 및 `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` 및 `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
 7. 설정을 저장합니다.
 8. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
-   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

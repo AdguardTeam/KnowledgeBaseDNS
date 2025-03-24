@@ -24,8 +24,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. **DNS 서버** 필드에 다음 DNS 서버 주소 중 하나를 입력합니다:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Select _Next_ to continue.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.
@@ -43,8 +43,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. **DNS 서버** 필드에 다음 DNS 서버 주소 중 하나를 입력합니다:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 10. Select _Next_ to continue.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.

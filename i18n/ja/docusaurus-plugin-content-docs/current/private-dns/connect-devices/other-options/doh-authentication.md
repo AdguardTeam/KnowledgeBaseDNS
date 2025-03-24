@@ -23,6 +23,6 @@ sidebar_position: 4
 4. 「認証付き DNS-over-HTTPS 」をお好みに設定します。
 5. AdGuard DNS Client または AdGuard アプリのいずれかで、このサーバーを使用するようにデバイスを再設定します。
 6. これを行うには、暗号化されたサーバーのアドレスをコピーして、AdGuard アプリまたは AdGuard DNS Client の設定に貼り付けます。
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. 他のプロトコルの使用を拒否するよう設定しておくこともできます。
-   ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+    ![Deny protocols \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

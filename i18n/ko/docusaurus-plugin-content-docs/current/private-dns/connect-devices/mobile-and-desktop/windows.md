@@ -8,7 +8,7 @@ AdGuard DNS에 iOS 기기를 연결하려면 먼저 **대시보드**에 추가�
 1. **대시보드**로 이동하여 **새 기기 연결**을 클릭합니다.
 2. 드롭다운 메뉴에서 **기기 종류**을 선택합니다.
 3. 기기의 이름을 지정합니다.
-   ![연결 중\_기기 \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+    ![연결 중_기기 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
 ## AdGuard 광고 차단기 사용(유료 옵션)
 
@@ -17,20 +17,20 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있으므로 Windo
 1. AdGuard DNS에 연결하려는 기기에 [앱을 설치](https://adguard.com/adguard-windows/overview.html)하세요.
 2. 앱을 엽니다.
 3. 앱의 홈 화면 상단에서 **설정**을 클릭합니다.
-   ![설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
+    ![설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 4. 왼쪽 메뉴에서 **DNS 보호** 탭을 선택합니다.
-   ![DNS 보호 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
+    ![DNS 보호 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
 5. 현재 선택한 DNS 서버를 클릭합니다.
-   ![DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
+    ![DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
 6. 아래로 스크롤하여 **사용자 정의 DNS 서버 추가**를 클릭합니다.
-   ![사용자 정의 DNS 서버 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
+    ![사용자 정의 DNS 서버 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
 7. DNS 업스트림 필드에 다음 주소 중 하나를 붙여넣습니다. 어떤 것을 선택해야 할지 모르겠다면, DNS-over-HTTPS를 선택하세요.
-   ![DoH 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
-   ![서버 생성 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
+    ![DoH 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
+    ![서버 생성 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
 8. **저장 및 선택**을 클릭합니다.
-   ![저장 및 선택 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
+    ![저장 및 선택 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
 9. 추가한 DNS 서버는 **사용자 정의 DNS 서버** 목록 하단에 표시됩니다.
-   ![사용자 정의 DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
+    ![사용자 정의 DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
 기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 
@@ -41,16 +41,16 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있으므로 Windo
 1. AdGuard VPN을 설치합니다.
 2. 앱을 열고 **설정**을 클릭합니다.
 3. **앱 설정**을 선택합니다.
-   ![앱 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
+    ![앱 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
 4. 아래로 스크롤하여 **DNS 서버**를 선택합니다.
-   ![DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
+    ![DNS 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
 5. **사용자 정의 DNS 서버 추가**를 클릭합니다.
-   ![사용자 정의 DNS 서버 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
+    ![사용자 정의 DNS 서버 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
 6. **서버 주소** 필드에 다음 주소 중 하나를 붙여넣습니다. 어떤 것을 선택해야 할지 모르겠다면, DNS-over-HTTPS를 선택하세요.
-   ![DoH 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
-   ![서버 생성 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
+    ![DoH 서버 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
+    ![서버 생성 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
 7. **저장 및 선택**을 클릭합니다.
-   ![저장 및 선택 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
+    ![저장 및 선택 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 

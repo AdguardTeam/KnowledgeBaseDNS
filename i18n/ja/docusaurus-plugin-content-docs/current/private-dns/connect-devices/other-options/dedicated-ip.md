@@ -28,5 +28,5 @@ sidebar_position: 2
 5. 使用したいサーバーを選択します。
 6. 専用IPv4アドレスをバインドするには、「_割り当てる_」をクリックします。
 7. 専用IPv6アドレスを使用したい場合は、「_コピー_」をクリックします。
-   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. コピーした専用アドレスをデバイス設定に貼り付けます。

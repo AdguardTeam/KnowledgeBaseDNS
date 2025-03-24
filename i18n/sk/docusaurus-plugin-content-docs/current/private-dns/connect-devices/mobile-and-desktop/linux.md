@@ -8,7 +8,7 @@ To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
 1. Go to _Dashboard_ and click _Connect new device_.
 2. In the drop-down menu _Device type_, select Linux.
 3. Name the device.
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Use AdGuard DNS Client
 
@@ -32,14 +32,14 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 3. Go to _IPv4_.
 4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
-   - `94.140.14.49`
-   - `94.140.14.59`
+    - `94.140.14.49`
+    - `94.140.14.59`
 6. Click _Apply_.
 7. Go to _IPv6_.
 8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
-   - `2a10:50c0:0:0:0:0:ded:ff`
-   - `2a10:50c0:0:0:0:0:dad:ff`
+    - `2a10:50c0:0:0:0:0:ded:ff`
+    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 3. Enter your `admin` password.
 4. In the command line, type: `nano /etc/resolv.conf`.
 5. Change the listed DNS addresses to the following:
-   - IPv4: `94.140.14.49 and 94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49 and 94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
 6. Press _Ctrl + O_ to save the document.
 7. Press _Enter_.
 8. Press _Ctrl + X_ to save the document.
@@ -68,31 +68,31 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
 1. Install dnsmasq using the following commands:
 
-   `sudo apt updatesudo`
+    `sudo apt updatesudo`
 
-   `apt install`
+    `apt install`
 
-   `dnsmasqsudo nano /etc/dnsmasq.conf`
+    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. Use the following commands in dnsmasq.conf:
 
-   `no-resolv`
+    `no-resolv`
 
-   `bogus-priv`
+    `bogus-priv`
 
-   `strict-order`
+    `strict-order`
 
-   `server=94.140.14.49`
+    `server=94.140.14.49`
 
-   `server=94.140.14.59`
+    `server=94.140.14.59`
 
-   `port=5353`
+    `port=5353`
 
-   `add-cpe-id={Your_Device_ID}`
+    `add-cpe-id={Your_Device_ID}`
 
 3. Restart the dnsmasq service:
 
-   `sudo service dnsmasq restart`
+    `sudo service dnsmasq restart`
 
 All done! Your device is successfully connected to AdGuard DNS.
 

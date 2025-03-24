@@ -41,7 +41,7 @@ Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_sub
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard-dns.io/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. DoH ve DoT'un aksine, QUIC'i bir aktarım protokolü olarak kullanır ve sonunda DNS'i köklerine geri getirir — UDP üzerinden çalışır. QUIC'in sunduğu tüm iyi şeyleri getiriyor — kullanıma hazır şifreleme, azaltılmış bağlantı süreleri, veri paketleri kaybolduğunda daha iyi performans. Ayrıca, QUIC'in aktarım düzeyinde bir protokol olduğu varsayılır ve DoH ile oluşabilecek meta veri sızıntısı riski yoktur.
+[DNS-over-QUIC, yeni bir DNS şifreleme protokolüdür](https://adguard.com/blog/dns-over-quic.html) ve AdGuard DNS, onu destekleyen ilk genel çözümleyicidir. DoH ve DoT'un aksine, QUIC'i bir aktarım protokolü olarak kullanır ve sonunda DNS'i köklerine geri getirir — UDP üzerinden çalışır. QUIC'in sunduğu tüm iyi şeyleri getiriyor — kullanıma hazır şifreleme, azaltılmış bağlantı süreleri, veri paketleri kaybolduğunda daha iyi performans. Ayrıca, QUIC'in aktarım düzeyinde bir protokol olduğu varsayılır ve DoH ile oluşabilecek meta veri sızıntısı riski yoktur.
 
 ### Oran sınırlaması
 

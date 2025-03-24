@@ -16,7 +16,7 @@ Um das Beste aus AdGuard DNS herauszuholen, können Sie Ihr Paket um die folgend
 - Um Zugang zu 2 dedizierten IPv4-Adressen zu erhalten und die Anzahl der Geräte, monatlichen Anfragen, Regeln und Server zu erweitern, können Sie **Ihr Paket auf Team erweitern**
 - Wenn Sie weitere dedizierte IPv4-Adressen und eine unbegrenzte Anzahl von Anfragen, Geräten, Regeln und Servern benötigen, **erweitern Sie Ihr Paket auf Enterprise**
 
-Sie können Ihr Abonnement in Ihrem [AdGuard-Konto](https://my.adguard.com/account/licenses) erweitern. Klicken Sie dazu auf _Erweitern_ unter dem Abschnitt _AdGuard DNS_.
+You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Klicken Sie dazu auf _Erweitern_ unter dem Abschnitt _AdGuard DNS_.
 
 Der Tarif _Enterprise_ ist nur auf Anfrage erhältlich. Wenn Sie Interesse haben, füllen Sie bitte unser [Formular](https://surveys.adguard.com/dns_enterprise/form.html) aus und machen Sie einige Angaben zu Ihrem Unternehmen. Sobald wir Ihre Einsendung erhalten haben, werden wir Sie mit zusätzlichen Informationen kontaktieren.
 

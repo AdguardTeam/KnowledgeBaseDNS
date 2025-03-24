@@ -357,7 +357,7 @@ Uitzonderingsregels deblokkeren één of alle regels:
 
 :::info
 
-If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+Als je een blokkeerlijst bijhoudt die is opgenomen in AdGuard DNS en AdGuard Home (d.w.z. opgenomen in [HostlijstenRegister][hostlistsregistry]), worden `$dnsrewrite` regels er automatisch uitgefilterd. Als deze regels vereist zijn voor jouw blokkeerlijst, vraag dan toestemming door een nieuw probleem te openen in de [HostlijstenRegister][hostlistsregistry] repo.
 
 :::
 
@@ -491,11 +491,11 @@ example.org
 example.net # this is also a comment
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
+Als een string geen geldig domein is (bijv. `*.example.org`), zal AdGuard Home het beschouwen als een [Adblock-stijl syntax][]-regel.
 
 ## Hostlijst-compiler {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+Als je een blokkeerlijst onderhoudt en daarin verschillende bronnen gebruikt, kan [de Hostlist-compiler][] nuttig voor je zijn. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
 What it's capable of:
 
@@ -511,10 +511,12 @@ What it's capable of:
 <!-- external links -->
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
+[Adblock-stijl syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[de Hostlist-compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 [traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

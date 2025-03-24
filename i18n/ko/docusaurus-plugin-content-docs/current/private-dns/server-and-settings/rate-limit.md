@@ -19,6 +19,6 @@ AdGuard DNS **엔터프라이즈** 또는 **팀** 요금제에 가입한 경우,
 
 2. **요청 한도 증가**를 클릭하여 지원팀에 문의하고 요청 한도 증가를 신청하세요. CIDR과 원하는 한도를 제공해야 합니다.
 
-   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+ ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
