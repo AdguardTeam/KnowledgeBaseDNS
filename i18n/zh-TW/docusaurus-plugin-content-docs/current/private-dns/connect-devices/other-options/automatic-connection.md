@@ -14,7 +14,7 @@ You can create a connection link and use it in the device settings. Your device 
 1. Open the _Dashboard_ and select the required server.
 2. Go to _Devices_.
 3. Enable the option to connect devices automatically.
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
 Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
 
@@ -55,5 +55,5 @@ We’ve added a template that generates a link for the specific device type and 
 1. Go to _Servers_ → _Server settings_ → _Devices_ → _Connect devices automatically_ and click _Link generator and instructions_.
 2. Select the protocol you want to use as well as the device name and the device type.
 3. Click _Generate link_.
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)

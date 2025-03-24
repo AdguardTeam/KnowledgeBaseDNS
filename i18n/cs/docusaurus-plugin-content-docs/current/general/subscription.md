@@ -16,7 +16,7 @@ Chcete-li využít AdGuard DNS naplno, můžete svůj tarif upgradovat a získat
 - Chcete-li získat přístup ke 2 vyhrazeným adresám IPv4 a rozšířit počet zařízení, měsíčních požadavků, pravidel a serverů, můžete **upgradovat svůj tarif na Team**
 - Pro více vyhrazených adres IPv4 a neomezený počet požadavků, zařízení, pravidel a serverů **upgradujte svůj tarif na Enterprise**
 
-Svůj tarif můžete upgradovat ve svém [AdGuard účtu](https://my.adguard.com/account/licenses). Chcete-li tak učinit, klikněte na _Upgradovat_ v části _AdGuard DNS_.
+Svůj tarif můžete upgradovat ve svém [AdGuard účtu](https://adguardaccount.com/account/licenses). Chcete-li tak učinit, klikněte na _Upgradovat_ v části _AdGuard DNS_.
 
 Tarif _Enterprise_ je k dispozici pouze na vyžádání. Pokud máte zájem, vyplňte [formulář](https://surveys.adguard.com/dns_enterprise/form.html) a uveďte nějaké podrobnosti o své společnosti. Jakmile obdržíme vaši žídost, budeme vás kontaktovat s dalšími informacemi.
 

@@ -20,11 +20,11 @@ New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Ninten
 Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapılandırın veya bunu bağlı IP üzerinden yapılandırın:
 
 1. Ana menüden _Sistem Ayarları_ öğesini seçin.
-2. Go to _Internet_ → _Internet Settings_ → _Connection Settings_.
-3. Select your network from the list.
-4. Select _Change Settings_ → _DNS Settings_.
-5. Set _Automatic_ to _Manual_.
-6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
+2. _İnternet_ → _İnternet Ayarları_ → _Bağlantı Ayarları_ öğesine gidin.
+3. Listeden ağınızı seçin.
+4. _Ayarları Değiştir_ → _DNS Ayarları_ öğesini seçin.
+5. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
+6. Select _Primary DNS_. Mevcut DNS'i silmek için sol oku (B tuşu) basılı tutun.
 7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
     - `94.140.14.49`
     - `94.140.14.59`

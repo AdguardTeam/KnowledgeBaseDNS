@@ -21,23 +21,23 @@ Bu konu hakkında daha fazla bilgiyi [ilgili makalede](/dns-client/overview/) bu
 Özel AdGuard DNS'i AdGuard VPN CLI (komut satırı arayüzü) kullanarak kurabilirsiniz. AdGuard VPN CLI'yi kullanmaya başlamak için Terminal'i kullanmanız gerekir.
 
 1. AdGuard VPN CLI'yi [bu talimatları](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/) izleyerek kurun.
-2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+2. [Ayarlar](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/) öğesine gidin.
 3. Belirli bir DNS sunucusu ayarlamak için şu komutu kullanın: `adguardvpn-cli config set-dns <server_address>`, buradaki `<server_address>` özel sunucunuzun adresidir.
 4. DNS ayarlarını `adguardvpn-cli config set-system-dns on` yazarak etkinleştirin.
 
 ## Configure manually on Ubuntu (linked IP or dedicated IP required)
 
-1. Click _System_ → _Settings_ → _Network_.
+1. _Sistem_ → _Ayarlar_ → _Ağ_ öğesine tıklayın.
 2. _Kablosuz_ sekmesini seçin, ardından bağlı olduğunuz ağı seçin.
-3. Go to _IPv4_.
+3. _IPv4_ öğesine gidin.
 4. _Otomatik (DHCP)_ öğesini _Manuel_ olarak ayarlayın.
-5. Change the listed DNS addresses to the following addresses:
+5. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
     - `94.140.14.49`
     - `94.140.14.59`
 6. _Uygula_ öğesine tıklayın.
 7. _IPv6_ öğesine gidin.
 8. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
-9. Change the listed DNS addresses to the following addresses:
+9. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
     - `2a10:50c0:0:0:0:0:ded:ff`
     - `2a10:50c0:0:0:0:0:dad:ff`
 10. _Uygula_ öğesine tıklayın.

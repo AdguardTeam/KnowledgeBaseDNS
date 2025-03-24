@@ -28,5 +28,5 @@ Unfortunately, the technical specifications of the connected device may not alwa
 5. 사용하려는 서버를 선택합니다.
 6. 전용 IPv4 주소를 연결하려면 **할당**을 클릭합니다.
 7. 전용 IPv6 주소를 사용하려면 **복사**를 클릭합니다.
-   ![주소 복사 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+    ![주소 복사 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. 선택한 전용 주소를 복사하여 기기 설정에 붙여넣습니다.

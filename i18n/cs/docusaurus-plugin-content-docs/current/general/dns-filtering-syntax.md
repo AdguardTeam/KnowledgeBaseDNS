@@ -19,13 +19,13 @@ Syntaxi pravidel filtrování AdGuard DNS můžete použít k tomu, aby byla pra
 
 Existují tři různé přístupy k psaní hostitelských seznamů zakázaných:
 
-- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
+- [Syntaxe ve stylu Adblock][]: moderní přístup k psaní pravidel filtrování založený na použití podmnožiny syntaxe pravidel ve stylu Adblock. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
 
 - [`/etc/hosts` syntaxe](#etc-hosts-syntax): starý a osvědčený přístup, který používá stejnou syntaxi, jakou používají operační systémy pro své funkce hostitelských souborů.
 
 - [Syntaxe pouze pro domény](#domains-only-syntax): jednoduchý seznam doménových názvů.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Oproti staré syntaxi má několik důležitých výhod:
+Pokud vytváříte seznam zakázaných, doporučujeme použít [syntaxi ve stylu Adblock][]. Oproti staré syntaxi má několik důležitých výhod:
 
 - **Velikost seznamu zakázaných.** Použití porovnávání vzorů umožňuje mít jediné pravidlo namísto stovek záznamů `/etc/hosts`.
 
@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Rozšiřitelnost.** Za posledních deset let se syntaxe ve stylu Adblock značně vyvinula a nevidíme důvod, proč bychom ji nemohli ještě více rozšířit a poskytnout další funkce pro blokátory napříč celou sítí.
 
-Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. Pojmenovali jsme ho [Hostlist kompilátor][] a sami ho používáme k vytváření [filtru AdGuard DNS][].
 
 ## Základní příklady {#basic-examples}
 
@@ -60,7 +60,7 @@ Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů fi
 
 ## Syntaxe ve stylu Adblock {#adblock-style-syntax}
 
-This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
+Toto je podmnožina [tradiční syntaxe ve stylu Adblock][], kterou používají blokátory reklam v prohlížečích.
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -85,7 +85,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Regulární výrazy {#regular-expressions}
 
-If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. Pokud chcete použít regulární výraz, musí vzor vypadat takto:
+Pokud chcete ještě větší flexibilitu při vytváření pravidel, můžete použít [regulární výrazy][regexp] namísto výchozí zjednodušené syntaxe porovnávání. Pokud chcete použít regulární výraz, musí vzor vypadat takto:
 
 ```none
 pattern = "/" regexp "/"
@@ -125,7 +125,7 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` je oddělovač mezi modifikátory. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
+  `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `client=127.0.0.1` je modifikátor [`client`][] s jeho hodnotou, `127.0.0.1`. `,` je oddělovač mezi modifikátory. A na konec `dnstype=A` je [`dnstype`][] s jeho hodnotou `A`.
 
 **POZNÁMKA:** pokud pravidlo obsahuje modifikátor, který není uveden v tomto dokumentu, musí být celé pravidlo **ignorováno**. Tímto způsobem se vyhneme falešně pozitivním výsledkům, když se lidé pokoušejí používat seznamy filtrů nemodifikovaných blokátorů reklam v prohlížečích, jako je EasyList nebo EasyPrivacy.
 
@@ -255,7 +255,7 @@ ANSWERS:
 
 Modifikátor odpovědi `dnsrewrite` umožňuje nahradit obsah odpovědi na DNS požadavek pro odpovídající hostitele. Všimněte si, že tento modifikátor v AdGuard Home funguje ve všech pravidlech, ale v soukromém AdGuard DNS pouze ve vlastních pravidlech.
 
-**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
+**Pravidla s modifikátorem odezvy `dnsrewrite` mají vyšší prioritu než ostatní pravidla v AdGuard Home a AdGuard DNS.**
 
 Odezvy na všechny požadavky na hostitele vyhovující pravidlu `dnsrewrite` budou nahrazeny. Část odpovědí náhradní odezvy bude obsahovat pouze RR, které odpovídají typu dotazu požadavku, a případně RR CNAME. Všimněte si, že to znamená, že odezvy na některé požadavky mohou být prázdné (`NODATA`), pokud hostitel odpovídá pravidlu `dnsrewrite`.
 
@@ -318,7 +318,7 @@ Aktuálně podporované typy RR s příklady:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` přidá `PTR` záznam pro reverzní DNS. Výsledkem reverzních DNS požadavků na `1.2.3.4` na server DNS bude `example.net`.
 
-  **POZNÁMKA:** IP ADRESA MUSÍ být v opačném pořadí. See [RFC 1035][rfc1035].
+  **POZNÁMKA:** IP ADRESA MUSÍ být v opačném pořadí. Viz [RFC 1035][rfc1035].
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` přidá odezvu `A` s hodnotou `1.2.3.4`.
 
@@ -357,13 +357,13 @@ Pravidla výjimek odblokují jedno nebo všechna pravidla:
 
 :::info
 
-If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+Pokud spravujete seznam zakázaných, který je zahrnut do AdGuard DNS a AdGuard Home (tj. zahrnut do [HostlistsRegistry][hostlistsregistry]), budou pravidla `$dnsrewrite` automaticky odfiltrována. Pokud jsou tato pravidla vyžadována pro váš seznam zakázaných, požádejte o oprávnění otevřením nového problému v repozitáři [HostlistsRegistry][hostlistsregistry].
 
 :::
 
 #### `important` {#important-modifier}
 
-The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
+Modifikátor `important` použitý na pravidlo zvyšuje jeho prioritu před jakýmkoli jiným pravidlem bez modifikátoru. Dokonce i přes základní pravidla výjimek.
 
 **Příklady:**
 
@@ -387,7 +387,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 #### `badfilter` {#badfilter-modifier}
 
-The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+Pravidla s modifikátorem `badfilter` vypnou ostatní základní pravidla, na která se vztahují. To znamená, že text vypnutého pravidla by měl odpovídat textu pravidla `badfilter` (bez modifikátoru `badfilter`).
 
 **Příklady:**
 
@@ -399,9 +399,9 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 #### `ctag` {#ctag-modifier}
 
-**The `ctag` modifier can only be used in AdGuard Home.**
+**Modifikátor `ctag` lze použít pouze v AdGuard Home.**
 
-It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+Umožňuje blokovat domény pouze pro určité typy značek klientů DNS. Značky můžete klientům přiřadit v uživatelském rozhraní AdGuard Home. V budoucnu plánujeme automatické přiřazování značek na základě analýzy chování jednotlivých klientů.
 
 Syntaxe je:
 
@@ -409,13 +409,13 @@ Syntaxe je:
 $ctag=value1|value2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+Pokud jedna ze značek klienta odpovídá hodnotám `ctag`, toto pravidlo se na klienta vztahuje. Syntaxe pro výjimku je:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
+Pokud jedna ze značek klienta odpovídá hodnotám vylučujícím `ctag`, toto pravidlo se na klienta nevztahuje.
 
 **Příklady:**
 
@@ -423,7 +423,7 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 - `||example.org^$ctag=~device_phone`: zablokuje `example.org` pro všechny klienty kromě těch, kteří jsou označeni jako `device_phone`.
 
-The list of allowed tags:
+Seznam povolených značek:
 
 - Podle typu zařízení:
 
@@ -457,15 +457,15 @@ The list of allowed tags:
 
 ## Syntaxe stylu `/etc/hosts` {#etc-hosts-syntax}
 
-For each host a single line should be present with the following information:
+Pro každého hostitele by měl být uveden jeden řádek s následujícími informacemi:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
+Pole záznamů jsou oddělena libovolným počtem znaků mezery nebo tabulátoru. Text od znaku `#` do konce řádku je komentář a je ignorován.
 
-Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
+Hostitelské názvy mohou obsahovat pouze alfanumerické znaky, pomlčky a znaménka (`-`) a tečky (`.`). Musí začínat abecedním znakem a končit alfanumerickým znakem. Volitelné aliasy umožňují změny názvů, alternativní hláskování, kratší hostitelské názvy nebo obecné hostitelské názvy (například `localhost`).
 
 **Příklad:**
 
@@ -476,11 +476,11 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # toto je taky komentář
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+V AdGuard Home se IP adresy používají k odpovědi na DNS dotazy pro tyto domény. V soukromém AdGuard DNS jsou tyto adresy jednoduše blokovány.
 
 ## Syntaxe pouze pro domény {#domains-only-syntax}
 
-A simple list of domain names, one name per line.
+Jednoduchý seznam názvů domén, jeden název na řádek.
 
 **Příklad:**
 
@@ -491,13 +491,13 @@ example.org
 example.net # toto je také komentář
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
+Pokud řetězec není platnou doménou (např. `*.example.org`), bude jej AdGuard Home považovat za pravidlo [ve stylu AdBlock][].
 
 ## Překladač hostitelských seznamů {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+Pokud spravujete seznam zakázaných a používáte v něm různé zdroje, může se vám hodit kompilátor [Hostitelských seznamů][]. Jedná se o jednoduchý nástroj, který usnadňuje sestavení seznamu blokovaných hostitelů kompatibilního s AdGuard Home, soukromým AdGuard DNS nebo jiným produktem AdGuard s DNS filtrováním.
 
-What it's capable of:
+Co dokáže:
 
 1. Sestavit jeden seznam blokování z více zdrojů.
 
@@ -510,11 +510,14 @@ What it's capable of:
 
 <!-- external links -->
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-[Adblock-style syntax]: #adblock-style-syntax
+[Syntaxe ve stylu Adblock]: #adblock-style-syntax
+[syntaxi ve stylu Adblock]: #adblock-style-syntax
+[ve stylu AdBlock]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
-[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
-[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[filtru AdGuard DNS]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist kompilátor]: https://github.com/AdguardTeam/HostlistCompiler
+[Hostitelských seznamů]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
-[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+[tradiční syntaxe ve stylu Adblock]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

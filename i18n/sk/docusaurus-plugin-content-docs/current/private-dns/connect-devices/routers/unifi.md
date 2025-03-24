@@ -13,15 +13,15 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 2. Go to _Settings_ → _Networks_.
 3. Click _Edit Network_ → _WAN_.
 4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses.
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 5. Click _Save_.
 6. Return to _Network_.
 7. Choose _Edit Network_ → _LAN_.
 8. Find _DHCP Name Server_ and select _Manual_.
 9. Enter your gateway address in the _DNS Server 1_ field. Alternatively, you can enter the AdGuard DNS server addresses in _DNS Server 1_ and _DNS Server 2_ fields:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+    - IPv4: `94.140.14.49` and `94.140.14.59`
+    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 10. Save the settings.
 11. Link your IP (or your dedicated IP if you have a Team subscription).
 

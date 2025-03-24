@@ -14,7 +14,7 @@ sidebar_position: 5
 1. 「_ダッシュボード_」を開き、必要なサーバーを選択します。
 2. 「_デバイス_」に移動します。
 3. デバイスの自動的接続オプションを有効にします。
-   ![Connect devices automatically \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
 これで、特別なアドレスを使用して、デバイス名、デバイスの種類、現在のサーバーIDを含むアドレスを使用して、デバイスを自動的にサーバーに接続できるようになります。 これらのアドレスがどのようなものなのか、また、アドレスを作成する方法を見てみましょう。
 
@@ -55,5 +55,5 @@ sidebar_position: 5
 1. 「_サーバー_」 → 「_サーバー設定_」 → 「_デバイス_」 → 「_デバイスを自動的に接続_」 に移動し、「_リンクジェネレーターと手順_」をクリックします。
 2. 使用したいプロトコルとデバイス名、デバイスタイプを選択します。
 3. 「_リンクを生成する_」をクリックします。
-   ![Generate link \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. これで、リンクの生成が完了です。そのサーバーアドレスをコピーし、デバイス上の[AdGuard アプリ](https://adguard.com/welcome.html)内で使用してください。

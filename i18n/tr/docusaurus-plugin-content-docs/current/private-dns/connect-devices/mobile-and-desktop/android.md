@@ -24,7 +24,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Android cihaz�
     ![DNS sunucusu \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. _Özel sunucular_ öğesine aşağı kaydırın ve _DNS sunucusu ekle_ öğesine dokunun.
     ![DNS sunucusu ekle \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _Server addresses_ field in the app. Hangi seçeneği kullanacağınızdan emin değilseniz, _DNS-over-HTTPS_ öğesini işaretleyin.
+7. Aşağıdaki DNS adreslerinden birini kopyalayın ve uygulamadaki _Sunucu adresleri_ alanına yapıştırın. Hangi seçeneği kullanacağınızdan emin değilseniz, _DNS-over-HTTPS_ öğesini işaretleyin.
     ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
     ![Özel DNS sunucusu \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. _Ekle_ öğesine dokunun.
@@ -49,7 +49,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
     ![DNS sunucusu \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. Aşağıya kaydırın ve _Özel DNS sunucusu ekle_ öğesine dokunun.
     ![DNS sunucusu ekle \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. Copy one of the following DNS addresses and paste it into the _DNS server addresses_ field in the app. Hangi seçeneği kullanacağınızdan emin değilseniz, DNS-over-HTTPS öğesini işaretleyin.
+7. Aşağıdaki DNS adreslerinden birini kopyalayıp uygulamada _DNS sunucu adresleri_ alanına yapıştırın. Hangi seçeneği kullanacağınızdan emin değilseniz, DNS-over-HTTPS öğesini işaretleyin.
     ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
     ![Özel DNS sunucusu \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. _Kaydet ve seç_ öğesine dokunun.

@@ -4,15 +4,15 @@ title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
 
 Bu kılavuz, Güvenli DNS için kendi DNS damganızı nasıl oluşturacağınızı gösterir. Güvenli DNS, DNS sorgularınızı şifreleyerek internet güvenliğinizi ve gizliliğinizi artıran bir hizmettir. Bu, sorgularınızın kötü niyetli kişiler tarafından ele geçirilmesini veya manipüle edilmesini önler.
 
-Güvenli DNS genellikle `tls://`, `https://` veya `quic://` URL'lerini kullanır. This is sufficient for most users and is the recommended way.
+Güvenli DNS genellikle `tls://`, `https://` veya `quic://` URL'lerini kullanır. Bu, çoğu kullanıcı için yeterlidir ve önerilen yoldur.
 
-However, if you need additional security, like pre-resolved server IPs and certificate pinning by hash, you may generate your own DNS stamp.
+Ancak, önceden çözümlenmiş sunucu IP'leri ve karma yoluyla sertifika sabitleme gibi ek güvenliğe ihtiyacınız varsa, kendi DNS damganızı oluşturabilirsiniz.
 
 ## DNS damgalarına giriş
 
-DNS stamps are short strings that contain all the information needed to connect to a secure DNS server. They simplify the process of setting up Secure DNS as the user does not need to manually enter all this data.
+DNS damgaları, güvenli bir DNS sunucusuna bağlanmak için gereken tüm bilgileri içeren kısa dizelerdir. Kullanıcının tüm bu verileri elle girmesi gerekmediğinden, Güvenli DNS kurma sürecini basitleştirirler.
 
-DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In particular, they allow you to specify hard-coded server addresses, use certificate hashing, and so on. These features make DNS stamps a more robust and versatile option for configuring Secure DNS settings.
+DNS damgaları, Güvenli DNS ayarlarını normal URL'lerin ötesinde özelleştirmenize olanak tanır. Özellikle, sabit kodlanmış sunucu adreslerini belirtmenize, sertifika karması kullanmanıza, vb. izin verirler. Bu özellikler, DNS damgalarını Güvenli DNS ayarlarını yapılandırmak için daha sağlam ve çok yönlü bir seçenek hâline getirir.
 
 ## Protokol seçimi
 
@@ -56,7 +56,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 
 ### Sertifika karmasının elde edilmesi
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+**Sunucunun sertifika karmaları** alanını doldurmak için, `<IP_ADDRESS>`, `<PORT>` ve `<SERVER_NAME>` ile DNS sunucunuz için karşılık gelen değerleri değiştirerek aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256

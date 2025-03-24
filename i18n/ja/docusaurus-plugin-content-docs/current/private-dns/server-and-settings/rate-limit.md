@@ -19,6 +19,6 @@ AdGuard DNS の _チーム_ または _エンタープライズ_ プランをご
 
 2. [_制限の引き上げをリクエスト_]をタップしてサポートチームに連絡し、レート制限の引き上げを申請してください。 CIDRとご希望の制限を記載してください。
 
-   ![レート制限](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+ ![レート制限](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. 申請は1～3営業日以内に審査されます。 メールにて変更内容をご連絡いたします。

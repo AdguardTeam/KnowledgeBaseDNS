@@ -102,5 +102,9 @@
   "link.item.label.terms_and_conditions": {
     "message": "Terms and conditions",
     "description": "The label of footer link with label=terms_and_conditions linking to https://adguard.com/terms-and-conditions.html"
+  },
+  "copyright": {
+    "message": "© 2009–2025 Adguard Software Ltd.",
+    "description": "The footer copyright"
   }
 }

@@ -10,7 +10,7 @@ toc_max_heading_level: 3
 1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
 2. ドロップダウンメニューの「_デバイスタイプ_」からルーターを選択します。
 3. ルーターブランドを選択し、デバイスに名前を付けます。
-   ![Connecting device \*mobile\_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 以下は、各ルーターモデルのためのガイドです。 必要なものをお選びください:
 

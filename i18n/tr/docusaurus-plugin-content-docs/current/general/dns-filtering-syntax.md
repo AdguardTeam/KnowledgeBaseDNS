@@ -357,13 +357,13 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 :::info
 
-If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+AdGuard DNS ve AdGuard Home'a dâhil olan bir engel listesi tutuyorsanız (yani [HostlistsRegistry'ye][hostlistsregistry] dâhil edildiyse), `$dnsrewrite` kuralları otomatik olarak filtrelenecektir. Bu kurallar engel listeniz için gerekliyse, lütfen [HostlistsRegistry][hostlistsregistry] deposunda yeni bir sorun açarak izin isteyin.
 
 :::
 
 #### `important` {#important-modifier}
 
-The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
+Bir kurala uygulanan `important` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Hatta temel istisna kuralları üzerinden bile geçerlidir.
 
 **Örnekler:**
 
@@ -409,7 +409,7 @@ Söz dizimi şöyledir:
 $ctag=value1|value2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+İstemcinin etiketlerinden biri `ctag` değerleriyle eşleşiyorsa, bu kural istemci için geçerlidir. İstisna söz dizimi şöyledir:
 
 ```none
 $ctag=~value1|~value2|...
@@ -423,7 +423,7 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 - `||example.org^$ctag=~device_phone`: `example.org` alan adını `device_phone` olarak etiketlenenler hariç tüm istemciler için engelleyin.
 
-The list of allowed tags:
+İzin verilen etiketlerin listesi:
 
 - Cihaz türüne göre:
 
@@ -457,13 +457,13 @@ The list of allowed tags:
 
 ## `/etc/hosts` biçimi söz dizimi {#etc-hosts-syntax}
 
-For each host a single line should be present with the following information:
+Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdır:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
+Fields of the entries are separated by any number of space or tab characters. `#` karakterinden satır sonuna kadar olan metin bir yorumdur ve yok sayılır.
 
 Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
@@ -476,11 +476,11 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # bu da bir yorumdur
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
 
 ## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 
-A simple list of domain names, one name per line.
+Her satırda bir ad olacak şekilde basit bir alan adları listesi.
 
 **Örnek:**
 
@@ -497,7 +497,7 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-What it's capable of:
+Neler yapabiliyor:
 
 1. Birden fazla kaynaktan tek bir engel listesi derleyin.
 
@@ -509,6 +509,8 @@ What it's capable of:
 
 
 <!-- external links -->
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
