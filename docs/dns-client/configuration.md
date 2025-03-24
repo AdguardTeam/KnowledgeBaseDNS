@@ -38,7 +38,7 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
-  - `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service. It can increase the startup time, so it should be disabled if not needed.
+  - `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
 
     :::note
 
