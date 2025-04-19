@@ -1307,11 +1307,11 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### LaxrFar DNS
 
-[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
+[LaxrFar DNS](https://laxrfar.de/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `23.176.184.32`                      | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
+| DNS, IPv4      | `179.61.253.223`                      | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=) |
 
 ### NWPS.fi DNS
 
