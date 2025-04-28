@@ -1329,8 +1329,11 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### DNSGUARD
 
-[DNSGUARD](https://dnsguard.pub/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
+This dns block ads, tracking, and malware, with a strict no-logging policy.
 
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `179.61.253.223`                      | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=) |
+| Protocol         | Address                                             |                |
+|------------------|-----------------------------------------------------|----------------|
+| DNS, IPv4        | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
+| DNS-over-HTTPS   | `https://dnsguard.pub/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS     | `tls://dnsguard.pub`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD) |
+| DNS-over-QUIC    | `quic://dnsguard.pub`                               | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD) |
