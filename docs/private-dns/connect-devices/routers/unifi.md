@@ -7,7 +7,7 @@ The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of adva
 
 ## Use your router admin panel
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Use these instructions if your UiFi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Log in to the Ubiquiti UniFi controller.
 1. Go to *Settings* → *Networks*.
