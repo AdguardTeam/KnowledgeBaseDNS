@@ -744,7 +744,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 
 It is designed with various optimizations, such as HTTP/3, caching, and more.
 It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
-Some of its users did see how the DNS handles queries in real-time from its the statistics page, but currently the stats page is temporarily disabled.
+Some of its users did see how the DNS handles queries in real-time from its statistics page, but currently the stats page is temporarily disabled.
 Even if the stats page is temporarily disabled, the DNS itself still able to serve users' requests normally.
 
 | Protocol       | Address                                            |                |
