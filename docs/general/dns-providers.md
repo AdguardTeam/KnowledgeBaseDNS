@@ -144,19 +144,6 @@ This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853) |
 
-### vv DNS
-
-[vv DNS](https://vv.services/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
-
-It is designed with various optimizations, such as HTTP/3, caching, and more.
-It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
-Some of its users did see how the DNS handles queries in real-time from its the statistics page, but currently the stats page is temporarily disabled.
-Even if the stats page is temporarily disabled, the DNS itself still able to serve users' requests normally.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://vv.services/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://vv.services/dns-query&name=vv.services), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://vv.services/dns-query&name=vv.services) |
-
 ### CFIEC Public DNS
 
 IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It supports DNS64 to provide domain name resolution only for IPv6 users.
@@ -750,6 +737,19 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `64.6.64.6` and `64.6.65.6`                        | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=) |
 | DNS, IPv6      | `2620:74:1b::1:1` and `2620:74:1c::2:2`            | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
+
+### vv DNS
+
+[vv DNS](https://vv.services/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
+
+It is designed with various optimizations, such as HTTP/3, caching, and more.
+It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
+Some of its users did see how the DNS handles queries in real-time from its the statistics page, but currently the stats page is temporarily disabled.
+Even if the stats page is temporarily disabled, the DNS itself still able to serve users' requests normally.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://vv.services/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://vv.services/dns-query&name=vv.services), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://vv.services/dns-query&name=vv.services) |
 
 ### Wikimedia DNS
 
