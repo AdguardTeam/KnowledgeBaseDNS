@@ -83,9 +83,12 @@ Each of these servers provides a secure and reliable connection, but unlike the 
  
  | Type            | Address                                              |                                                                                                                               |
  |-----------------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
- | DNS, IPv4       | `89.213.211.154`                                     | [Add to AdGuard](adguard:add_dns_server?address=89.213.211.154&name=89.213.211.154), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=89.213.211.154&name=89.213.211.154) |
+ | DNS, IPv4       | `103.168.147.197`                                    | [Add to AdGuard](adguard:add_dns_server?address=103.168.147.197&name=103.168.147.197), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=103.168.147.197&name=103.168.147.197) |
+ | DNS, IPv6       | `2001:df4:f80:1:fe84:4cbd:3000:cafe`                 | [Add to AdGuard](adguard:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe) |
  | DNS-over-HTTPS  | `https://dns.caliph.dev/dns-query`                   | [Add to AdGuard](adguard:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev) |
  | DNS-over-TLS    | `tls://dns.caliph.dev:853`                           | [Add to AdGuard](adguard:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853) |
+ | DNS-over-QUIC   | `quic://dns.caliph.dev:853`                          | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853) |
+
 
 ### BebasDNS by BebasID
 
