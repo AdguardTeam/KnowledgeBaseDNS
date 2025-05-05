@@ -738,9 +738,9 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | DNS, IPv4      | `64.6.64.6` and `64.6.65.6`                        | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=) |
 | DNS, IPv6      | `2620:74:1b::1:1` and `2620:74:1c::2:2`            | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
-### vv DNS
+### v.recipes DNS
 
-[vv DNS](https://vv.services/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
+[v.recipes DNS](https://v.recipes/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
 
 It is designed with various optimizations, such as HTTP/3, caching, and more.
 It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
@@ -749,7 +749,7 @@ Even if the stats page is temporarily disabled, the DNS itself still able to ser
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://vv.services/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://vv.services/dns-query&name=vv.services), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://vv.services/dns-query&name=vv.services) |
+| DNS-over-HTTPS | `https://v.recipes/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes) |
 
 ### Wikimedia DNS
 
