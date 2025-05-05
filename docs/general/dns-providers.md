@@ -1329,7 +1329,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### DNSGUARD
 
-This dns block ads, tracking, and malware, with a strict no-logging policy.
+This DNS service blocks ads, tracking, and malware and has a strict no-logging policy.
 
 | Protocol         | Address                                             |                |
 |------------------|-----------------------------------------------------|----------------|
