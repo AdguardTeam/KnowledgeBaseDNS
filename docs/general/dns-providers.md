@@ -144,18 +144,6 @@ This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853` | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853) |
 
-### 0ms DNS
-
-[DNS](https://0ms.dev/) is a global DNS resolution service provided by 0ms Group as an alternative to your current DNS provider.
-
-It uses [OISD Big](https://oisd.nl/) as the basic filter to give everyone a more secure environment.
-It is designed with various optimizations, such as HTTP/3, caching, and more.
-It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
-
 ### CFIEC Public DNS
 
 IPv6-based anycast DNS service with strong security capabilities and protection from spyware, malicious websites. It supports DNS64 to provide domain name resolution only for IPv6 users.
@@ -761,6 +749,19 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `64.6.64.6` and `64.6.65.6`                        | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=) |
 | DNS, IPv6      | `2620:74:1b::1:1` and `2620:74:1c::2:2`            | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
+
+### v.recipes DNS
+
+[v.recipes DNS](https://v.recipes/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
+
+It is designed with various optimizations, such as HTTP/3, caching, and more.
+It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
+Some of its users did see how the DNS handles queries in real-time from its statistics page, but currently the stats page is temporarily disabled.
+Even if the stats page is temporarily disabled, the DNS itself still able to serve users' requests normally.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://v.recipes/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes) |
 
 ### Wikimedia DNS
 
