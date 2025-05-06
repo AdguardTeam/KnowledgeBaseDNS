@@ -76,10 +76,8 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNS-over-QUIC | `quic://dns.alidns.com:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853) |
 
 ### Caliph DNS 
- [Caliph DNS](https://dns.caliph.dev) is a dns service for free dns service to surf the internet safely and without worries. and makes surfing fast because it is based in Indonesia.
+ [Caliph DNS](https://dns.caliph.dev) is a free DNS service based in Indonesia to surf the Internet safely and without worries.
  
- #### Default 
- This is the default configuration of Caliph DNS. this configuration is to block web like phishing, Malware, adware, and adult content.
  
  | Type            | Address                                              |                                                                                                                               |
  |-----------------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
