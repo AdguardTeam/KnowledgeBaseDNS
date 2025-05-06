@@ -823,7 +823,7 @@ In "Family" mode, Protected + blocking adult content.
 
 #### Geo-blocking bypass
 
-Access to AI, blocking malicious websites and phishing
+Access to AI, blocking phishing and malicious websites
 
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
