@@ -834,7 +834,7 @@ Access to AI, blocking malicious websites and phishing
 
 #### Geo-blocking bypass with ad filtering
 
-Access to AI, blocking of ads, counters, malicious websites and phishing
+Access to AI, blocking of ads, counters, phishing and malicious websites 
 
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
