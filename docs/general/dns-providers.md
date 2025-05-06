@@ -819,7 +819,7 @@ In "Family" mode, Protected + blocking adult content.
 
 ### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) – fast and secure DNS servers based on SmartDNS with access to AI services, protection from advertising, tracking, phishing and malicious sites, and support for encryption of DNS requests-over-HTTPS, DNS-over-TLS and DNS-over-QUIC.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service based on SmartDNS with access to AI services, protection from advertising, tracking, phishing, and malicious websites. It supports the encryption of DNS-over HTTPS, DNS-over TLS, and DNS-over QUIC requests.
 
 #### Geo-blocking bypass
 
