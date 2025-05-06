@@ -836,7 +836,7 @@ In "Family" mode, Protected + blocking adult content.
 
 #### Geo-blocking bypass
 
-Access to AI, blocking phishing and malicious websites
+Access to AI, blocking phishing and malicious websites.
 
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
@@ -847,7 +847,7 @@ Access to AI, blocking phishing and malicious websites
 
 #### Geo-blocking bypass with ad filtering
 
-Access to AI, blocking of ads, counters, phishing and malicious websites 
+Access to AI, blocking of ads, counters, phishing and malicious websites.
 
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
