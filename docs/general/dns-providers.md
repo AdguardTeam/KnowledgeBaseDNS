@@ -1351,7 +1351,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare's infrastructure and ASTRACAT's data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
 
 | Protocol          | Address                                       | 
 |-------------------|-----------------------------------------------|
