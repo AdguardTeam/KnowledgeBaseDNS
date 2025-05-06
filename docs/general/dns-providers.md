@@ -1318,14 +1318,6 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 | DNS-over-QUIC | `quic://rx.techomespace.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)  |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
 
-### LaxrFar DNS
-
-[LaxrFar DNS](https://laxrfar.xyz/) is a DNS that is focused on ad blocking, privacy, malware protection and has a strict no-logging policy.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `23.176.184.32`                      | [Add to AdGuard](adguard:add_dns_server?address=23.176.184.32&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
-
 ### NWPS.fi DNS
 
 [NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
@@ -1347,3 +1339,14 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |----------------|----------------------------------------------------|----------------|
 |DNS-over-HTTPS|`https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
 |DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
+
+### DNSGUARD
+
+This DNS service blocks ads, tracking, and malware and has a strict no-logging policy.
+
+| Protocol         | Address                                             |                |
+|------------------|-----------------------------------------------------|----------------|
+| DNS, IPv4        | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
+| DNS-over-HTTPS   | `https://dnsguard.pub/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS     | `tls://dnsguard.pub`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD) |
+| DNS-over-QUIC    | `quic://dnsguard.pub`                               | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD) |
