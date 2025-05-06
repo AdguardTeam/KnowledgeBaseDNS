@@ -832,13 +832,29 @@ In "Family" mode, Protected + blocking adult content.
 
 ### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service with protection against ads, tracking, and phishing.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) is a fast and secure DNS service based on SmartDNS with access to AI services, protection from advertising, tracking, phishing, and malicious websites. It supports the encryption of DNS-over HTTPS, DNS-over TLS, and DNS-over QUIC requests.
+
+#### Geo-blocking bypass
+
+Access to AI, blocking phishing and malicious websites.
 
 | Protocol | Address | |
 |----------------|-------------------------------------|----------------|
-| DNS-over-HTTPS | `https://dns.controld.com/comss` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com) |
-| DNS-over-TLS | `tls://comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com) |
-| DNS-over-QUIC | `quic://comss.dns.controld.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
+| DNS, IPv4 | `83.220.169.155` and `212.109.195.93` | [Add to AdGuard](adguard:add_dns_server?address=83.220.169.155&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=212.109.195.93&name=dns.comss.one) |
+| DNS-over-HTTPS | `https://dns.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one) |
+| DNS-over-TLS | `tls://dns.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.comss.one&name=dns.comss.one) |
+| DNS-over-QUIC | `quic://dns.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.comss.one&name=dns.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one&name=dns.comss.one) |
+
+#### Geo-blocking bypass with ad filtering
+
+Access to AI, blocking of ads, counters, phishing and malicious websites.
+
+| Protocol | Address | |
+|----------------|-------------------------------------|----------------|
+| DNS, IPv4 | `195.133.25.16` | [Add to AdGuard](adguard:add_dns_server?address=195.133.25.16&name=router.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=195.133.25.16&name=router.comss.one) |
+| DNS-over-HTTPS | `https://router.comss.one/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://router.comss.one/dns-query&name=router.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://router.comss.one/dns-query&name=router.comss.one) |
+| DNS-over-TLS | `tls://router.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=tls://router.comss.one&name=router.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://router.comss.one&name=router.comss.one) |
+| DNS-over-QUIC | `quic://router.comss.one` | [Add to AdGuard](adguard:add_dns_server?address=quic://router.comss.one&name=router.comss.one), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://router.comss.one&name=router.comss.one) |
 
 ### CZ.NIC ODVR
 
