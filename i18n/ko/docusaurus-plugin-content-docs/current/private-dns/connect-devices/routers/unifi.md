@@ -7,7 +7,7 @@ The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of adva
 
 ## 라우터 관리 패널 사용
 
-Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 않는 경우, 이 지침을 따르세요.
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Ubiquiti UniFi 컨트롤러에 로그인합니다.
 2. **설정** → **네트워크**로 이동합니다.

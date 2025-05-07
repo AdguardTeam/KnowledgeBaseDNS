@@ -7,7 +7,7 @@ Le routeur UiFi (connu sous le nom de série UniFi d'Ubiquiti) présente un cert
 
 ## Utilisez le panneau d'administration de votre routeur
 
-Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la configuration DNS-over-HTTPS ou DNS-over-TLS :
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Connectez-vous au contrôleur Ubiquiti UniFi.
 2. Accédez à _Paramètres_ → _Réseaux_.
