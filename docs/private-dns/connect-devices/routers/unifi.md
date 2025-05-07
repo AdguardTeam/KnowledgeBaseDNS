@@ -3,7 +3,43 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. Unfortunately, it does not support encrypted DNS, but it is great for setting up AdGuard DNS via linked IP.
+The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. 
+
+Support for DNS-over-HTTPS has been recently added to the newer UniFI firmware. UniFi refers to this as Encrypted DNS.
+
+## Configure DNS-over-HTTPS
+
+Use these instructions if your UniFi router does support the DNS-over-HTTPS:
+
+UiFI routers uses a DNS Stamp URL to specify the DNS-over-HTTPS URL. This needs to be calculated using your private DNS-over-HTTPS URL.
+
+Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL
+1. Go to the AdGuard DNS Private Dashboard.
+1. Proceed to *Encrypted DNS* → *Custom* and enter the following DNS server addresses.
+    - Device type: 'Router'
+    - Device brand: 'Unifi'
+    - Devive name: '(use your Unifi device name).
+1. Click Next.
+1. Scroll to *Use DNS server addresses* → *DNS-over-HTTPS* and take note of the DNS-over-HTTPS URL (e.g. https://d.adguard-dns.com/dns-query/123456abc)
+
+Generate a DNS Steamp using [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/), and set:
+1. Protocol to DNS-over-HTTPS
+1. Host name to d.adguard-dns.com
+1. Path to /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
+1. Untick
+    - No filter
+    - No logs
+1. Copy the DNS Stamp URL (e.g. sdns://AgcAAAAAA…)
+
+Turn on DNS-over-HTTPS in UnFi
+1. Log in to the Ubiquiti UniFi controller.
+1. Go to *Settings* → *Security*.
+1. Click *Protection*.
+1. Proceed to *Encrypted DNS* → *Custom* and enter the following DNS server addresses.
+    - Server Name: 'AdGuard DNS'
+    - DNS Stamp: DNS Stamp URL copied from above.
+1. Click *Save*.
+
 
 ## Use your router admin panel
 
