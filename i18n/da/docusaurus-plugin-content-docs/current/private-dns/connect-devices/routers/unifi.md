@@ -7,7 +7,7 @@ UiFi-routeren (almindeligvis kendt som Ubiquitis UniFi-serie) har en række ford
 
 ## Brug routerens håndteringspanel
 
-Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Log ind på Ubiquiti UniFi-controlleren.
 2. Gå til _Indstillinger_ → _Netværk_.

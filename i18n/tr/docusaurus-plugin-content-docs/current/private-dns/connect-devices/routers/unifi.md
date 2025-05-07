@@ -7,7 +7,7 @@ UiFi yönlendirici (genellikle Ubiquiti'nin UniFi serisi olarak bilinir), onu ö
 
 ## Yönlendirici yönetici panelini kullanma
 
-Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Log in to the Ubiquiti UniFi controller.
 2. _Ayarlar_ → _Ağlar_ öğesine gidin\*.

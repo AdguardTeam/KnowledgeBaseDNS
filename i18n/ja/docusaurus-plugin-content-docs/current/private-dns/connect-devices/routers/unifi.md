@@ -7,7 +7,7 @@ UiFiルーター（一般的にはUbiquitiのUniFiシリーズとして知られ
 
 ## ルーターの管理画面を使って接続する
 
-UniFiルーターがDNS-over-TLSや DNS-over-HTTPS設定をサポートしていない場合は、以下のガイドをご利用ください:
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Ubiquiti UniFi コントローラにログインします。
 2. Settings → Networks にに移動します。
