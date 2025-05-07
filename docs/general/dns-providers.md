@@ -1235,35 +1235,6 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 |DNS-over-HTTPS|`https://dns.marbledfennec.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net) |
 |DNS-over-TLS|`tls://dns.marbledfennec.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net) |
 
-### momou! DNS
-
-[momou&#33; DNS](https://dns.momou.ch/) provides DoH & DoT resolvers with three levels of filtering
-
-#### Standard
-
-Blocks ads, trackers, and malware
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`https://dns.momou.ch/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
-|DNS-over-TLS|`tls://dns.momou.ch` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch) |
-
-#### Kids
-
-Kids-friendly filter that also blocks ads, trackers, and malware
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`https://dns.momou.ch/dns-query/kids` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch) |
-|DNS-over-TLS|`tls://kids.dns.momou.ch` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch) |
-
-#### Unfiltered
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-|DNS-over-HTTPS|`https://dns.momou.ch/dns-query/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch) |
-|DNS-over-TLS|`tls://unfiltered.dns.momou.ch` | [Add to AdGuard](adguard:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch) |
-
 ### OSZX DNS
 
 [OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
