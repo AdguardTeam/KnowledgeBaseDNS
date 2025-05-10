@@ -1339,13 +1339,16 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |DNS-over-HTTPS|`https://kids.ns.nwps.fi/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
 |DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
 
-### DNSGUARD
+### [DNSGUARD](https://dnsguard.pub)
 
 This DNS service blocks ads, tracking, and malware and has a strict no-logging policy.
 
 | Protocol         | Address                                             |                |
 |------------------|-----------------------------------------------------|----------------|
-| DNS, IPv4        | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
+| DNS, 1. IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
+| DNS, 2. IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD) |
+| DNS, 1. IPv6     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD) |
+| DNS, 2. IPv6     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD) |
 | DNS-over-HTTPS   | `https://dnsguard.pub/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
 | DNS-over-TLS     | `tls://dnsguard.pub`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD) |
 | DNS-over-QUIC    | `quic://dnsguard.pub`                               | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD) |
