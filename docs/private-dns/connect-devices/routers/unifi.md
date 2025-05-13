@@ -9,7 +9,7 @@ The newer UniFi firmware recently added support for DNS-over-HTTPS. UniFi refers
 
 ## Configure DNS-over-HTTPS
 
-Use these instructions if your UniFi router does support the DNS-over-HTTPS:
+Follow these instructions if your UniFi router supports DNS-over-HTTPS.
 
 UiFI routers uses a DNS Stamp URL to specify the DNS-over-HTTPS URL. This needs to be calculated using your private DNS-over-HTTPS URL.
 
