@@ -33,7 +33,7 @@ Generate a DNS Steamp using [DNSCrypt DNS Stamp Calculator](https://dnscrypt.inf
     - No logs
 1. Copy the DNS Stamp URL (e.g. sdns://AgcAAAAAA…)
 
-Turn on DNS-over-HTTPS in UnFi
+Turn on DNS-over-HTTPS in UniFi
 
 1. Log in to the Ubiquiti UniFi controller.
 1. Go to *Settings* → *Security*.
