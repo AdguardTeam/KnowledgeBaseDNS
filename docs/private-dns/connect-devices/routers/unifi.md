@@ -5,7 +5,7 @@ sidebar_position: 10
 
 The UiFi router, commonly known as the Ubiquiti UniFi series, has a number of advantages that make it particularly suitable for home, business, and enterprise environments.
 
-Support for DNS-over-HTTPS has been recently added to the newer UniFI firmware. UniFi refers to this as Encrypted DNS.
+The newer UniFi firmware recently added support for DNS-over-HTTPS. UniFi refers to this feature as *Encrypted DNS*.
 
 ## Configure DNS-over-HTTPS
 
