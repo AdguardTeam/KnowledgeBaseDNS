@@ -27,7 +27,7 @@ Generate a DNS Steamp using [DNSCrypt DNS Stamp Calculator](https://dnscrypt.inf
 
 1. Protocol to DNS-over-HTTPS
 1. Host name to d.adguard-dns.com
-1. Path to /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
+1. Path: /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
 1. Untick
     - No filter
     - No logs
