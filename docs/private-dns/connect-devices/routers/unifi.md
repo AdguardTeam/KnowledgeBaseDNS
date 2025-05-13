@@ -19,7 +19,7 @@ Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
 1. Proceed to *Encrypted DNS* → *Custom* and enter the following DNS server settings:
     - Device type: 'Router'
     - Device brand: 'Unifi'
-    - Devive name: '(use your Unifi device name).
+    - Devive name: '(use your Unifi device name)
 1. Click Next.
 1. Scroll to *Use DNS server addresses* → *DNS-over-HTTPS* and take note of the DNS-over-HTTPS URL (e.g. https://d.adguard-dns.com/dns-query/123456abc)
 
