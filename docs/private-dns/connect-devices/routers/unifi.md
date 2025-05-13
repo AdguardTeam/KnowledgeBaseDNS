@@ -40,7 +40,7 @@ Turn on DNS-over-HTTPS in UniFi
 1. Click *Protection*.
 1. Proceed to *Encrypted DNS* → *Custom* and enter the following DNS server addresses.
     - Server Name: 'AdGuard DNS'
-    - DNS Stamp: DNS Stamp URL copied from above.
+    - DNS Stamp: DNS Stamp URL copied from above
 1. Click *Save*.
 
 ## Use your router admin panel
