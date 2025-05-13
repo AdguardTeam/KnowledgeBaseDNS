@@ -23,7 +23,7 @@ Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
 1. Click Next.
 1. Scroll to *Use DNS server addresses* → *DNS-over-HTTPS* and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
 
-Generate a DNS Steamp using [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/), and set:
+Generate a DNS Stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/), and set it:
 
 1. Protocol to DNS-over-HTTPS
 1. Host name to d.adguard-dns.com
