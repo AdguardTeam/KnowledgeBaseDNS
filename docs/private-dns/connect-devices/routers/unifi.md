@@ -13,7 +13,7 @@ Follow these instructions if your UniFi router supports DNS-over-HTTPS.
 
 UiFi routers use a DNS Stamp URL to specify the DNS-over-HTTPS URL. This URL must be calculated using your private DNS-over-HTTPS URL.
 
-Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL
+Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
 
 1. Go to the AdGuard DNS Private Dashboard.
 1. Proceed to *Encrypted DNS* → *Custom* and enter the following DNS server addresses.
