@@ -31,7 +31,7 @@ Generate a DNS Stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.
 1. Untick
     - No filter
     - No logs
-1. Copy the DNS Stamp URL (e.g. sdns://AgcAAAAAA…)
+1. Copy the DNS Stamp URL (e.g., sdns://AgcAAAAAA…)
 
 Turn on DNS-over-HTTPS in UniFi
 
