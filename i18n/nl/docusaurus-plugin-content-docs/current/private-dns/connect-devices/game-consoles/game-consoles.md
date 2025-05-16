@@ -1,5 +1,5 @@
 ---
-title: Game consoles
+title: Spelconsoles
 sidebar_position: 1
 ---
 

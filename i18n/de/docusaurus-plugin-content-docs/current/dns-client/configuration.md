@@ -38,6 +38,28 @@ Das Objekt `cache` konfiguriert das Zwischenspeichern der Ergebnisse von DNS-Abf
 
 Das Objekt `server` konfiguriert die Verarbeitung der eingehenden Anfragen. Es hat folgende Eigenschaften:
 
+- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note
+
+  This object is available since **v0.0.3**.
+
+  :::
+
+  Es hat folgende Eigenschaften:
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **Beispiel:** `true`
+
+  - `interval`: The interval between retries as a human-readable duration.
+
+    **Example:** `1s`
+
+  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+
+    **Example:** `4`
+
 - `listen_addresses`: Die Menge der Adressen mit den zu überwachenden Ports.
 
   **Eigenschaftsbeispiel:**
@@ -70,7 +92,7 @@ Das Objekt `bootstrap` konfiguriert die Auflösung von [upstream](#dns-upstream)
 
 Das Objekt `upstream` konfiguriert die eigentliche Auflösung von Anfragen. Es hat folgende Eigenschaften:
 
-- `groups`: Die Gruppe von Upstream-Servern, die durch den Gruppennamen gekennzeichnet sind. Es enthält die folgenden Felder:
+- `groups`: Die Gruppe von Upstream-Servern, die durch den Gruppennamen gekennzeichnet sind. Es hat folgende Eigenschaften:
 
   - `address`: Die Adresse des Upstream-Servers.
 

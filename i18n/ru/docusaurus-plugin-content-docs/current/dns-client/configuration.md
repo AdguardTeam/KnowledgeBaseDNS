@@ -38,6 +38,28 @@ sidebar_position: 2
 
 Объект `server` настраивает обработку входящих запросов. Он обладает следующими свойствами:
 
+- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note
+
+  This object is available since **v0.0.3**.
+
+  :::
+
+  Он обладает следующими свойствами:
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **Пример:** `true`
+
+  - `interval`: The interval between retries as a human-readable duration.
+
+    **Example:** `1s`
+
+  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+
+    **Example:** `4`
+
 - `listen_addresses`: набор адресов с портами для прослушивания.
 
   **Пример свойства:**
@@ -70,7 +92,7 @@ sidebar_position: 2
 
 Объект `upstream` настраивает фактическое разрешение запросов. Он обладает следующими свойствами:
 
-- `groups`: набор upstream-серверов, связанных с именем группы. Он содержит следующие поля:
+- `groups`: набор upstream-серверов, связанных с именем группы. Он обладает следующими свойствами:
 
   - `address`: адрес upstream-сервера.
 
