@@ -1345,7 +1345,7 @@ This DNS service blocks ads, tracking, and malware and has a strict no-logging p
 
 | Protocol         | Address                                             |                |
 |------------------|-----------------------------------------------------|----------------|
-| DNS, 1. IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
+| DNS 1, IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
 | DNS, 2. IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD) |
 | DNS, 1. IPv6     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD) |
 | DNS, 2. IPv6     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD) |
