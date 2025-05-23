@@ -3,11 +3,49 @@ title: UniFi
 sidebar_position: 10
 ---
 
-Der UiFi-Router (allgemein bekannt als die UniFi-Serie von Ubiquiti) hat eine Reihe von Vorteilen, die ihn besonders geeignet für Heim-, Geschäfts- und Unternehmensumgebungen machen. Leider unterstützen diese Router kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von AdGuard DNS über verknüpfte IPs.
+The UiFi router, commonly known as the Ubiquiti UniFi series, has a number of advantages that make it particularly suitable for home, business, and enterprise environments.
+
+The newer UniFi firmware recently added support for DNS-over-HTTPS. UniFi refers to this feature as _Encrypted DNS_.
+
+## DNS-over-HTTPS konfigurieren
+
+Befolgen Sie diese Anweisungen, wenn Ihr UniFi-Router DNS-over-HTTPS unterstützt.
+
+UiFi routers use a DNS Stamp URL to specify the DNS-over-HTTPS URL. This URL must be calculated using your private DNS-over-HTTPS URL.
+
+Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
+
+1. Go to the AdGuard DNS Private Dashboard.
+2. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server settings:
+    - Device type: 'Router'
+    - Device brand: 'Unifi'
+    - Device name: '(use your Unifi device name)
+3. Click _Next_.
+4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
+
+Generate a DNS Stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/), and set it:
+
+1. Protocol: DNS-over-HTTPS
+2. Host name: d.adguard-dns.com
+3. Path: /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
+4. Untick
+    - No filter
+    - No logs
+5. Copy the DNS Stamp URL (e.g., sdns://AgcAAAAAA…)
+
+Turn on DNS-over-HTTPS in UniFi
+
+1. Melden Sie sich am Ubiquiti UniFi-Controller an.
+2. Go to _Settings_ → _Security_.
+3. Click _Protection_.
+4. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server addresses.
+    - Server Name: 'AdGuard DNS'
+    - DNS Stamp: DNS Stamp URL copied from above
+5. Klicken Sie auf _Speichern_.
 
 ## Administrationsoberfläche Ihres Routers verwenden
 
-Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Melden Sie sich am Ubiquiti UniFi-Controller an.
 2. Öffnen Sie _Einstellungen_ → _Netzwerke_.

@@ -40,11 +40,11 @@
     "description": "The label for category AdGuard DNS Client in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to connect devices": {
-    "message": "How to connect devices",
+    "message": "Hoe apparaten aan te sluiten",
     "description": "The label for category How to connect devices in sidebar sidebar"
   },
   "sidebar.sidebar.category.Mobile and desktop": {
-    "message": "Mobile and desktop",
+    "message": "Mobiel en desktop",
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
@@ -52,23 +52,23 @@
     "description": "The label for category Routers in sidebar sidebar"
   },
   "sidebar.sidebar.category.Game consoles": {
-    "message": "Game consoles",
+    "message": "Spelconsoles",
     "description": "The label for category Game consoles in sidebar sidebar"
   },
   "sidebar.sidebar.category.Other options": {
-    "message": "Other options",
+    "message": "Andere opties",
     "description": "The label for category Other options in sidebar sidebar"
   },
   "sidebar.sidebar.category.Server and settings": {
-    "message": "Server and settings",
+    "message": "Server en instellingen",
     "description": "The label for category Server and settings in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to set up filtering": {
-    "message": "How to set up filtering",
+    "message": "Hoe een filter in te stellen",
     "description": "The label for category How to set up filtering in sidebar sidebar"
   },
   "sidebar.sidebar.category.Statistics and Query log": {
-    "message": "Statistics and Query log",
+    "message": "Statistieken en zoeklogboek",
     "description": "The label for category Statistics and Query log in sidebar sidebar"
   }
 }

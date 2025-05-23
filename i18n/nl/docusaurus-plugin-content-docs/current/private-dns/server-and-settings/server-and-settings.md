@@ -1,5 +1,5 @@
 ---
-title: Server and settings
+title: Server en instellingen
 sidebar_position: 1
 ---
 
