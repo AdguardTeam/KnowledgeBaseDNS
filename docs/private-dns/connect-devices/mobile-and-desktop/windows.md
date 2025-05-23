@@ -72,8 +72,8 @@ Click on the network (Wi-Fi ID or Ethernet) you want to configure.
 1. Change DNS settings to *Manual*.
 1. Toggle the IPv4 switch to *On*.
 1. Enter the following DNS server addresses:
-    * Preferred DNS: `94.140.14.49`
-    * Alternate DNS: `94.140.14.59`
+    - Preferred DNS: `94.140.14.49`
+    - Alternate DNS: `94.140.14.59`
 1. Turn *DNS over HTTPS  template* to *On (manual template)* and enter your Personal DNS address. You can find it in the Dashboard under *Server settings* → *Devices* → *Devices settings* → DNS-over-HTTPS.
 1. Click Save. That’s it — your device is now connected to AdGuard DNS!
     ![Save DNS settings *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
