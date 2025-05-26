@@ -65,7 +65,7 @@ Available only on Windows 11.
 :::
 
 1. In the *Search* bar on the taskbar, type **Ethernet settings** or **Wi-Fi settings**, depending on your connection type.
-Click on the network (Wi-Fi ID or Ethernet) you want to configure.
+Click the network (Wi-Fi ID or Ethernet) you want to configure.
     ![Search *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
 1. Scroll to *DNS server assignment* and click *Edit*.
     ![DNS server assignment *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
