@@ -36,15 +36,15 @@
     "description": "The label for category AdGuard Home in sidebar sidebar"
   },
   "sidebar.sidebar.category.AdGuard DNS Client": {
-    "message": "AdGuard DNS Client",
+    "message": "Cliente DNS do AdGuard",
     "description": "The label for category AdGuard DNS Client in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to connect devices": {
-    "message": "How to connect devices",
+    "message": "Como conectar dispositivos",
     "description": "The label for category How to connect devices in sidebar sidebar"
   },
   "sidebar.sidebar.category.Mobile and desktop": {
-    "message": "Mobile and desktop",
+    "message": "Dispositivos móveis e desktop",
     "description": "The label for category Mobile and desktop in sidebar sidebar"
   },
   "sidebar.sidebar.category.Routers": {
@@ -52,23 +52,23 @@
     "description": "The label for category Routers in sidebar sidebar"
   },
   "sidebar.sidebar.category.Game consoles": {
-    "message": "Game consoles",
+    "message": "Consoles de jogos",
     "description": "The label for category Game consoles in sidebar sidebar"
   },
   "sidebar.sidebar.category.Other options": {
-    "message": "Other options",
+    "message": "Outras opções",
     "description": "The label for category Other options in sidebar sidebar"
   },
   "sidebar.sidebar.category.Server and settings": {
-    "message": "Server and settings",
+    "message": "Servidor e configurações",
     "description": "The label for category Server and settings in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to set up filtering": {
-    "message": "How to set up filtering",
+    "message": "Como configurar a filtragem",
     "description": "The label for category How to set up filtering in sidebar sidebar"
   },
   "sidebar.sidebar.category.Statistics and Query log": {
-    "message": "Statistics and Query log",
+    "message": "Estatísticas e Registro de consultas",
     "description": "The label for category Statistics and Query log in sidebar sidebar"
   }
 }

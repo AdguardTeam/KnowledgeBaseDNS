@@ -8,17 +8,17 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="Player de vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS stands for "Domain Name System", and its purpose is to convert website names into IP addresses. Cada vez que você acessa um site, seu navegador envia uma consulta DNS a um servidor DNS para descobrir o endereço IP do site. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
+DNS significa "Sistema de nomes de domínio" e seu objetivo é converter os nomes dos sites em endereços IP. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
 
 :::note
 
-The default DNS server is usually provided by your ISP. This means that your ISP can track your online activity and sell logs to third parties.
+O servidor DNS padrão geralmente é fornecido pelo seu ISP. Isso significa que seu ISP pode rastrear sua atividade online e vender logs para terceiros.
 
 :::
 
 ![Your device always uses a DNS server to obtain the IP addresses of the domains that are accessed by various apps, services, etc.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+Existem também servidores DNS que podem bloquear determinados sites no nível DNS. How do they work? Quando seu dispositivo envia uma solicitação "ruim", seja um anúncio ou um rastreador, um servidor DNS impede a conexão respondendo com um endereço IP não roteável para um domínio bloqueado.
 
 ## Why use DNS for content blocking
 
@@ -26,9 +26,9 @@ Absolutely everything is connected to the Internet these days, from TV to smart 
 
 Using DNS for content blocking has some advantages as well as obvious flaws. On the one hand, DNS is in the loop for queries from all devices and their apps. But, on the other hand, DNS blocking alone cannot provide cosmetic filtering.
 
-## What is AdGuard DNS?
+## O que é AdGuard DNS?
 
-AdGuard DNS is one of the most privacy-oriented DNS services on the market. It supports such reliable encryption protocols as DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC. It can work as a regular DNS resolver in Non-filtering mode, but also it can provide DNS-level content blocking: identify requests to ad, tracking, and/or adult domains (optionally), and respond with an empty response. AdGuard has its own frequently updated database with names of domains that serve ads, trackers, and scam.
+O AdGuard DNS é um dos serviços de DNS mais focados na privacidade do mercado. Ele suporta protocolos de criptografia confiáveis como DNS-over-HTTPS, DNS-over-TLS e DNS-over-QUIC. Ele pode funcionar como um resolvedor de DNS regular no modo sem filtragem, mas também pode fornecer bloqueio de conteúdo no nível de DNS: identifique solicitações para domínios de anúncio, rastreamento e/ou adulto (opcionalmente) e responda com uma resposta vazia. O AdGuard possui seu próprio banco de dados atualizado frequentemente com nomes de domínios que servem anúncios, rastreadores e golpes.
 
 ![An approximate scheme of how AdGuard DNS works](https://cdn.adtidy.org/public/Adguard/Blog/scr2.png)
 

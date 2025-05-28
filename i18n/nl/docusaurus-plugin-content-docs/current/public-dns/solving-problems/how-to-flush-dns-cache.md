@@ -124,45 +124,45 @@ To clear the **DNSMasq** cache, you need to restart it:
 
 #### NSCD
 
-To clear the **NSCD** cache, you also need to restart the service:
+Om de **NSCD** cache te wissen, moet je ook de service herstarten:
 
 `sudo service nscd restart`
 
 #### BIND
 
-To flush the **BIND** DNS cache, run the command:
+Om de **BIND** DNS-cache leeg te maken, voer je de opdracht uit:
 
 `rndc flush`
 
-Then you will need to reload BIND:
+Vervolgens moet je BIND opnieuw laden:
 
 `rndc reload`
 
-You will get the message that the server has been successfully reloaded.
+Je krijgt de melding dat de server succesvol opnieuw is geladen.
 
-## How to flush DNS cache in Chrome
+## Hoe DNS-cache in Chrome leeg te maken
 
-This may be useful if you do not want restart a browser every time during work with the private AdGuard DNS or AdGuard Home. Instellingen 1–2 hoeven slechts één keer te worden gewijzigd.
+Dit kan handig zijn als je tijdens het werken met de privé AdGuard DNS of AdGuard Home niet elke keer een browser opnieuw wilt opstarten. Instellingen 1–2 hoeven slechts één keer te worden gewijzigd.
 
-1. Disable **secure DNS** in Chrome settings
+1. **Beveiligde DNS** uitschakelen in Chrome-instellingen
 
     ```bash
     chrome://settings/security
     ```
 
-1. Disable **Async DNS resolver**
+1. **Asynchrone DNS-resolver** uitschakelen
 
     ```bash
     chrome://flags/#enable-async-dns
     ```
 
-1. Press both buttons here
+1. Druk hier op beide knoppen
 
     ```bash
     chrome://net-internals/#sockets
     ```
 
-1. Press **Clear host cache**
+1. Druk op **Hostcache wissen**
 
     ```bash
     chrome://net-internals/#dns

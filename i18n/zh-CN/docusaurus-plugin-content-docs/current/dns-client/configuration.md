@@ -38,6 +38,28 @@ sidebar_position: 2
 
 `server` 对象配置处理传入请求。 它包含以下属性：
 
+- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note
+
+  This object is available since **v0.0.3**.
+
+  :::
+
+  它包含以下属性：
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **示例：** `true`
+
+  - `interval`: The interval between retries as a human-readable duration.
+
+    **Example:** `1s`
+
+  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+
+    **Example:** `4`
+
 - `listen_addresses`：客户端监听的地址和端口集合。
 
   **属性示例：**
@@ -70,7 +92,7 @@ sidebar_position: 2
 
 `upstream` 对象用于配置实际的请求解析。 它包含以下属性：
 
-- `groups`：使用服务器组名称作为键值定义了一组上游服务器集合。 它包含以下字段：
+- `groups`：使用服务器组名称作为键值定义了一组上游服务器集合。 它包含以下属性：
 
   - `address`：指定上游服务器的地址和端口。
 
