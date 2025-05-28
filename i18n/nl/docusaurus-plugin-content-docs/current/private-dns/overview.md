@@ -197,20 +197,20 @@ AdGuard DNS is very flexible and can be set up on various devices including tabl
 
 [How to connect devices to AdGuard DNS](/private-dns/connect-devices/connect-devices.md)
 
-### Server and settings
+### Server en instellingen
 
 This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
 
-[Server and settings](/private-dns/server-and-settings/server-and-settings.md)
+[Server en instellingen](/private-dns/server-and-settings/server-and-settings.md)
 
-### How to set up filtering
+### Hoe een filter in te stellen
 
 In this section we describe a number of settings that allow you to fine-tune the functionality of AdGuard DNS. Using blocklists, user rules, parental controls and security filters, you can configure filtering to suit your needs.
 
-[How to set up filtering](/private-dns/setting-up-filtering/blocklists.md)
+[Hoe een filter in te stellen](/private-dns/setting-up-filtering/blocklists.md)
 
-### Statistics and Query log
+### Statistieken en zoeklogboek
 
 Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
 
-[Statistics and Query log](/private-dns/statistics-and-log/statistics.md)
+[Statistieken en zoeklogboek](/private-dns/statistics-and-log/statistics.md)
