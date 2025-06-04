@@ -3,12 +3,14 @@ title: Windows
 sidebar_position: 5
 ---
 
-Chcete-li zařízení iOS připojit k AdGuard DNS, přidejte je nejprve na _Přehled_:
+Chcete-li zařízení Windows připojit k AdGuard DNS, přidejte je nejprve na _Přehled_:
 
 1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
 2. V rozbalovací nabídce _Typ zařízení_ vyberte Windows.
 3. Pojmenujte zařízení.
     ![Connecting_device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+
+Můžete to nastavit prostřednictvím aplikací [AdGuard](#use-adguard-ad-blocker-paid-option) nebo [AdGuard VPN](#use-adguard-vpn) v [nastavení Windows](#configure-via-windows-settings), nebo pomocí [AdGuard DNS Client](#use-adguard-dns-client).
 
 ## Použití blokátoru reklam AdGuard (placená možnost)
 
@@ -53,6 +55,28 @@ Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže 
     ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+
+## Konfigurace prostřednictvím nastavení Windows
+
+:::note
+
+Dodtupné pouze ve Windows 11.
+
+:::
+
+1. Do _vyhledávacího panelu_ na zadejte **Nastavení sítě** nebo **Nastavení Wi-Fi** podle typu připojení.
+    Klikněte na síť (Wi-Fi ID nebo Ethernet), kterou chcete konfigurovat.
+    ![Search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
+2. Přejděte na _přiřazení DNS serveru_ a klikněte na tlačítko _Upravit_.
+    ![DNS server assignment \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
+3. Změňte nastavení DNS na _Ruční_.
+4. Přepněte přepínač IPv4 na _Zapnuto_.
+5. Zadejte následující adresy serverů DNS:
+    - Preferovaný DNS: `94.140.14.49`
+    - Alternativní DNS: `94.140.14.59`
+6. Nastavte možnost _DNS-over-HTTPS_ na _Zapnuto (ruční šablona)_ a zadejte svou adresu osobního DNS. Najdete to na hlavním panelu v části _Nastavení serveru_ → _Zařízení_ → _Nastavení zařízení_ → DNS-over-HTTPS.
+7. Klikněte na _Uložit_. To je vše — vaše zařízení je nyní připojeno k AdGuard DNS!
+    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
 ## Použití klienta AdGuard DNS
 

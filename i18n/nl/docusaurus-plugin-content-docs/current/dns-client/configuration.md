@@ -38,6 +38,28 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
+- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note
+
+  This object is available since **v0.0.3**.
+
+  :::
+
+  It has the following properties:
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **Example:** `true`
+
+  - `interval`: The interval between retries as a human-readable duration.
+
+    **Example:** `1s`
+
+  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+
+    **Example:** `4`
+
 - `listen_addresses`: The set of addresses with ports to listen on.
 
   **Property example:**
@@ -70,7 +92,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 The `upstream` object configures the actual resolving of requests. It has the following properties:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following fields:
+- `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
 
   - `address`: The upstream server’s address.
 

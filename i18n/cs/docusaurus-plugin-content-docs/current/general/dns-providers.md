@@ -75,6 +75,18 @@ Každý z těchto serverů poskytuje bezpečné a spolehlivé připojení, ale n
 | DNS-over-TLS   | `tls://dns.alidns.com`               | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.alidns.com&name=dns.alidns.com)                         |
 | DNS-over-QUIC  | `quic://dns.alidns.com:853`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.alidns.com:853&name=dns.alidns.com:853)       |
 
+### Caliph DNS
+
+ [Caliph DNS](https://dns.caliph.dev) je bezplatná DNS služba se sídlem v Indonésii, která umožňuje bezpečné a bezstarostné surfování na internetu.
+
+ | Typ            | Adresa                               |                                                                                                                                                                                                                                                                        |
+ | -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+ | DNS, IPv4      | `103.168.147.197`                    | [Přidat do AdGuardu](adguard:add_dns_server?address=103.168.147.197&name=103.168.147.197), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=103.168.147.197&name=103.168.147.197)                                                                             |
+ | DNS, IPv6      | `2001:df4:f80:1:fe84:4cbd:3000:cafe` | [Přidat do AdGuardu](adguard:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe) |
+ | DNS-over-HTTPS | `https://dns.caliph.dev/dns-query`   | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev)                                             |
+ | DNS-over-TLS   | `tls://dns.caliph.dev:853`           | [Přidat do AdGuardu](adguard:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853)                                                                 |
+ | DNS-over-QUIC  | `quic://dns.caliph.dev:853`          | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853)                                                   |
+
 ### BebasDNS by BebasID
 
 [BebasDNS](https://github.com/bebasid/bebasdns) je bezplatný a neutrální veřejný řešitel se sídlem v Indonésii, který podporuje doménu OpenNIC. Vytvořen Komunitas Internet Netral Indonesia (KINI), aby indonéským uživatelům poskytoval bezplatné a neutrální připojení k internetu.
@@ -114,7 +126,7 @@ Toto je výchozí rodinná varianta BebasDNS. Tato varianta blokuje pornografii,
 | Protokol       | Adresa                                                                             |                                                                                                                                                                                                                                                                        |
 | -------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                              | [Přidat do AdGuardu](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
+| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                              | [Přidat do AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                      |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                                |
 
 #### Family With Ad Filtering
@@ -143,16 +155,6 @@ Jedná se o vlastní variantu BebasDNS pouze s filtrem Hagezi Multi Normal
 | -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
 | DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Přidat do AdGuardu](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
-
-### 0ms DNS
-
-[DNS](https://0ms.dev/) je globální služba překladu DNS poskytovaná 0ms Group jako alternativa k vašemu současnému poskytovateli DNS.
-
-Jako základní filtr používá [OISD Big](https://oisd.nl/), aby všem poskytl bezpečnější prostředí. Je navržen s různými optimalizacemi, jako je HTTP/3, ukládání do mezipaměti a další. Využívá strojové učení k ochraně uživatelů před potenciálními bezpečnostními hrozbami a zároveň se v průběhu času optimalizuje.
-
-| Protokol       | Adresa                      |                                                                                                                                                                                                        |
-| -------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://0ms.dev/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://0ms.dev/dns-query&name=dns.0ms.dev) |
 
 ### CFIEC Public DNS
 
@@ -198,7 +200,7 @@ Servery OpenDNS bez filtrování.
 
 | Protokol       | Adresa                                      |                                                                                                                                                                                                                                                                |
 | -------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `208.67.222.2` a `208.67.220.2`             | [Přidat do AdGuardu](adguard:add_dns_server?address=208.67.220.2&name=), [Přidat AdGuard VPN](adguardvpn:add_dns_server?address=208.67.222.2&name=)                                                                                                            |
+| DNS, IPv4      | `208.67.222.2` a `208.67.220.2`             | [Přidat do AdGuardu](adguard:add_dns_server?address=208.67.220.2&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=208.67.222.2&name=)                                                                                                         |
 | DNS, IPv6      | `2620:0:ccc::2` IP: `2620:0:ccd::2`         | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:0:ccc::2&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:0:ccc::2&name=)                                                                                                       |
 | DNS-over-HTTPS | `https://doh.sandbox.opendns.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.sandbox.opendns.com/dns-query&name=doh.sandbox.opendns.com) |
 | DNS-over-TLS   | `tls://sandbox.opendns.com`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://sandbox.opendns.com&name=sandbox.opendns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://sandbox.opendns.com/dns-query&name=sandbox.opendns.com)                               |
@@ -637,7 +639,7 @@ Obvyklé servery DNS, které poskytují ochranu před krádeží identity a spyw
 | Protokol       | Adresa                                                             |                                                                                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `9.9.9.9` a `149.112.112.112`                                      | [Přidat do AdGuardu](adguard:add_dns_server?address=9.9.9.9&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.9&name=)                                                                           |
-| DNS, IPv6      | `2620:fe::fe` IP: `2620:fe::fe:9`                                  | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:fe::fe&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::fe&name=)                                                                   |
+| DNS, IPv6      | `2620:fe::fe` a `2620:fe::9`                                       | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:fe::fe&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::fe&name=)                                                                   |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.9:8443`       | [Přidat do AdGuardu](sdns://AQMAAAAAAAAADDkuOS45Ljk6ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                              |
 | DNSCrypt, IPv6 | Poskytovatel: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443` | [Přidat do AdGuardu](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0)                                                                      |
 | DNS-over-HTTPS | `https://dns.quad9.net/dns-query`                                  | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
@@ -739,6 +741,18 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | DNS-over-HTTPS | `https://doh.360.cn/dns-query`   | [Přidat do AdGuardu](adguard:add_dns_server?address=https://doh.360.cn/dns-query&name=doh.360.cn), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.360.cn/dns-query&name=doh.360.cn) |
 | DNS-over-TLS   | `tls://dot.360.cn`               | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dot.360.cn&name=dot.360.cn), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.360.cn&name=dot.360.cn)                         |
 
+### Surfshark DNS
+
+[Surfshark DNS](https://dns.surfsharkdns.com/) je DNS služba, která nezaznamenává, nesleduje ani neprodává vaše údaje. Globální infrastruktura Surfshark zajišťuje stabilní a konzistentní rychlost.
+
+| Protokol       | Adresa                                   |                                                                                                                                                                                                                                                    |
+| -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `194.169.169.169`                        | [Přidat do AdGuardu](adguard:add_dns_server?address=194.169.169.169&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=194.169.169.169&name=)                                                                                       |
+| DNS, IPv6      | `2a09:a707:169::`                        | [Přidat do AdGuardu](adguard:add_dns_server?address=2a09:a707:169::&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a09:a707:169::&name=)                                                                                       |
+| DNS-over-HTTPS | `https://dns.surfsharkdns.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.surfsharkdns.com/dns-query&name=dns.surfsharkdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.surfsharkdns.com/dns-query&name=dns.surfsharkdns.com) |
+| DNS-over-TLS   | `tls://dns.surfsharkdns.com`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.surfsharkdns.com&name=dns.surfsharkdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.surfsharkdns.com&name=dns.surfsharkdns.com)                         |
+| DNS-over-QUIC  | `quic://dns.surfsharkdns.com`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.surfsharkdns.com&name=dns.surfsharkdns.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.surfsharkdns.com&name=dns.surfsharkdns.com)                       |
+
 ### Verisign Public DNS
 
 [Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) je bezplatná služba DNS, která oproti jiným alternativám nabízí lepší stabilitu a zabezpečení DNS. Verisign respektuje soukromí uživatelů: neprodává veřejná data DNS třetím stranám a nepřesměrovává dotazy uživatelů pro zobrazování reklam.
@@ -747,6 +761,16 @@ EDNS Client-Subnet je metoda, která zahrnuje součásti údajů o IP adresách 
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS, IPv4 | `64.6.64.6` a `64.6.65.6`             | [Přidat do AdGuardu](adguard:add_dns_server?address=64.6.64.6&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` a `2620:74:1c::2:2` | [Přidat do AdGuardu](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
+
+### v.recipes DNS
+
+[v.recipes DNS](https://v.recipes/dns/) je globální služba DNS poskytovaná jako alternativa k vašemu současnému poskytovateli DNS.
+
+Je navržen s různými optimalizacemi, jako je HTTP/3, ukládání do mezipaměti a další. Využívá strojové učení k ochraně uživatelů před potenciálními bezpečnostními hrozbami a zároveň se v průběhu času optimalizuje. Někteří uživatelé na stránce statistik viděli, jak DNS zpracovává dotazy v reálném čase, ale v současné době je stránka statistik dočasně vypnutá. I když je stránka se statistikami dočasně vypnutá, samotný DNS je stále schopen normálně obsluhovat požadavky uživatelů.
+
+| Protokol       | Adresa                        |                                                                                                                                                                                                        |
+| -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://v.recipes/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://v.recipes/dns-query&name=v.recipes) |
 
 ### Wikimedia DNS
 
@@ -817,13 +841,29 @@ V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
 
 ### Comss.one DNS
 
-[Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná služba DNS s ochranou proti reklamám, sledování a krádeži identity.
+[Comss.one DNS](https://www.comss.ru/page.php?id=7315) je rychlá a bezpečná DNS služba založená na technologii SmartDNS s přístupem ke službám umělé inteligence, ochranou před reklamou, sledováním, phishingem a škodlivými webovými stránkami. Podporuje šifrování požadavků DNS-over HTTPS, DNS-over TLS a DNS-over QUIC.
 
-| Protokol       | Adresa                           |                                                                                                                                                                                                                                      |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://dns.controld.com/comss` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)           |
-| DNS-over-TLS   | `tls://comss.dns.controld.com`   | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://comss.dns.controld.com&name=comss.dns.controld.com)   |
-| DNS-over-QUIC  | `quic://comss.dns.controld.com`  | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
+#### Obcházení geografického blokování
+
+Přístup k AI, blokování phishingových a škodlivých webových stránek.
+
+| Protokol       | Adresa                              |                                                                                                                                                                                                                                      |
+| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `83.220.169.155` a `212.109.195.93` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.controld.com/comss&name=dns.controld.com)           |
+| DNS-over-HTTPS | `tls://comss.dns.controld.com`      | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.comss.one/dns-query&name=dns.comss.one)               |
+| DNS-over-TLS   | `tls://dns.comss.one`               | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://comss.dns.controld.com&name=comss.dns.controld.com) |
+| DNS-over-QUIC  | `quic://dns.comss.one`              | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dns.comss.one&name=dns.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.comss.one&name=dns.comss.one)                                     |
+
+#### Obcházení geografického blokování s filtrování reklam
+
+Přístup k AI, blokování reklam, čítačů, phishingu a škodlivých webových stránek.
+
+| Protokol       | Adresa                               |                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `195.133.25.16`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=195.133.25.16&name=router.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=195.133.25.16&name=router.comss.one)                                           |
+| DNS-over-HTTPS | `https://router.comss.one/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://router.comss.one/dns-query&name=router.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://router.comss.one/dns-query&name=router.comss.one) |
+| DNS-over-TLS   | `tls://router.comss.one`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://router.comss.one&name=router.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://router.comss.one&name=router.comss.one)                         |
+| DNS-over-QUIC  | `quic://router.comss.one`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://router.comss.one&name=router.comss.one), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://router.comss.one&name=router.comss.one)                       |
 
 ### CZ.NIC ODVR
 
@@ -969,12 +1009,11 @@ Toto je jen jeden z dostupných serverů, celý seznam najdete [zde](https://ser
 
 [Quad101](https://101.101.101.101) je bezplatná alternativní služba DNS bez přihlašování od TWNIC (Taiwan Network Information Center).
 
-| Protokol       | Adresa                                |                                                                                                                                                                                                                    |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS, IPv4      | `101.101.101.101` a `101.102.103.104` | [Přidat do AdGuardu](adguard:add_dns_server?address=101.101.101.101&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=101.101.101.101&name=)                                                       |
-| DNS, IPv6      | `2001:de4::101` a `2001:de4::102`     | [Přidat do AdGuardu](adguard:add_dns_server?address=2001:de4::101&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2001:de4::101&name=)                                                           |
-| DNS-over-HTTPS | `https://dns.twnic.tw/dns-query`      | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.twnic.tw/dns-query&name=dns.twnic.tw), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.twnic.tw/dns-query&name=dns.twnic.tw) |
-| DNS-over-TLS   | `tls://101.101.101.101`               | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101)             |
+| Protokol     | Adresa                                |                                                                                                                                                                                                        |
+| ------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4    | `101.101.101.101` a `101.102.103.104` | [Přidat do AdGuardu](adguard:add_dns_server?address=101.101.101.101&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=101.101.101.101&name=)                                           |
+| DNS, IPv6    | `2001:de4::101` a `2001:de4::102`     | [Přidat do AdGuardu](adguard:add_dns_server?address=2001:de4::101&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2001:de4::101&name=)                                               |
+| DNS-over-TLS | `tls://101.101.101.101`               | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101) |
 
 ### SkyDNS RU
 
@@ -1192,35 +1231,6 @@ Marbled Fennec Networks hostuje DNS resolvery, které jsou schopné překládat 
 | DNS-over-HTTPS | `https://dns.marbledfennec.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net) |
 | DNS-over-TLS   | `tls://dns.marbledfennec.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net)                         |
 
-### momou! DNS
-
-[momou&#33; DNS](https://dns.momou.ch/) poskytuje DoH a DoT řešitelům tři úrovně filtrování
-
-#### Standardní
-
-Blokuje reklamy, slídiče a malware
-
-| Protokol       | Adresa                           |                                                                                                                                                                                                                    |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://dns.momou.ch/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query&name=dns.momou.ch) |
-| DNS-over-TLS   | `tls://dns.momou.ch`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.momou.ch&name=dns.momou.ch)                         |
-
-#### Kids
-
-Filtr vhodný pro děti, který také blokuje reklamy, slídiče a malware
-
-| Protokol       | Adresa                                |                                                                                                                                                                                                                              |
-| -------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.momou.ch/dns-query/kids` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/kids&name=dns.momou.ch) |
-| DNS-over-TLS   | `tls://kids.dns.momou.ch`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.dns.momou.ch&name=kids.dns.momou.ch)               |
-
-#### Bez filtrování
-
-| Protokol       | Adresa                                      |                                                                                                                                                                                                                                          |
-| -------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.momou.ch/dns-query/unfiltered` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.momou.ch/dns-query/unfiltered&name=dns.momou.ch) |
-| DNS-over-TLS   | `tls://unfiltered.dns.momou.ch`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.dns.momou.ch&name=unfiltered.dns.momou.ch)   |
-
 ### OSZX DNS
 
 [OSZX DNS](https://dns.oszx.co/) je malý projekt pro blokování reklam založený na DNS.
@@ -1303,14 +1313,6 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 | DNS-over-QUIC  | `quic://rx.techomespace.com`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
 | DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
 
-### LaxrFar DNS
-
-[LaxrFar DNS](https://laxrfar.xyz/) je DNS, který se zaměřuje na blokování reklam, ochranu soukromí a malwaru a má přísné zásady žádných záznamů aktivit.
-
-| Protokol  | Adresa          |                                                                                                                                                          |
-| --------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `23.176.184.32` | [Přidat do AdGuardu](adguard:add_dns_server?address=23.176.184.32&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=23.176.184.32&name=) |
-
 ### NWPS.fi DNS
 
 [NWPS.fi DNS](https://nwps.fi) poskytuje DoH a DoT řešitelům dvě úrovně filtrování.
@@ -1332,3 +1334,27 @@ Filtr vhodný pro děti, který také blokuje reklamy, slídiče a malware
 | -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
 | DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |
+
+### ASTRACAT DNS
+
+[ASTRACAT DNS](https://astracat.vercel.app/) je DNS řešitel zaměřený na ochranu soukromí, který je postaven na infrastruktuře Cloudflare a datovém centru ASTRACAT. Klade důraz na vysokou rychlost, žádné přihlašování a žádnou cenzuru a poskytuje bezpečné a spolehlivé řešení DNS.
+
+| Protokol       | Adresa                                                                                                                                                                                                                                                                                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `85.209.2.112`                                | [Přidat do AdGuardu](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                             |
+| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
+| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`     | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                                 |
+
+### DNSGUARD
+
+[DNSGuard](https://dnsguard.pub) blokuje reklamy, sledování a malware a má přísné zásady žádného záznamu aktivit.
+
+| Protokol       | Adresa                           |                                                                                                                                                                                                            |
+| -------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `179.61.253.223`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
+| DNS 2, IPv4    | `179.61.253.223`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
+| DNS 1, IPv6    | `179.61.253.223`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
+| DNS 2, IPv6    | `179.61.253.223`                 | [Přidat do AdGuardu](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
+| DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS   | `tls://dnsguard.pub`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                         |
+| DNS-over-QUIC  | `quic://dnsguard.pub`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                       |

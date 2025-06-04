@@ -38,6 +38,28 @@ Objekt `cache` konfiguruje ukládání výsledků DNS dotazů do mezipaměti. Vy
 
 Objekt `server` konfiguruje zpracování příchozích požadavků. Vyznačuje se těmito vlastnostmi:
 
+- `bind_retry`: Konfigurace mechanismu opakování pro vazbu na adresy pro naslouchání. To je užitečné, pokud je server spuštěn dříve, než je síť připravena, a adresy ještě nejsou k dispozici, jako je tomu v některých edicích systému Windows při instalaci jako systémová služba.
+
+  :::note
+
+  Tento objekt je k dispozici od **v0.0.3**.
+
+  :::
+
+  Vyznačuje se těmito vlastnostmi:
+
+  - `enabled`: Zda je povoleno opakování vazby, nebo ne.
+
+    **Příklad:** `true`
+
+  - `interval`: Interval mezi opakovanými pokusy jako doba trvání čitelná pro člověka.
+
+    **Příklad:** `1s`
+
+  - `count`: Maximální počet pokusů po prvním selhání. Pokud je tedy `count` rovno `4`, celkový počet pokusů bude pět.
+
+    **Příklad:** `4`
+
 - `listen_addresses`: Sada adres s porty, na kterých se má naslouchat.
 
   **Příklad vlastnosti:**
@@ -70,7 +92,7 @@ Objekt `bootstrap` konfiguruje překlad adres serverů [upstream](#dns-upstream)
 
 Objekt `upstream` konfiguruje skutečné řešení požadavků. Vyznačuje se těmito vlastnostmi:
 
-- `groups`: Sada odchozích serverů s klíčem podle názvu skupiny. Vyznačuje se těmito poli:
+- `groups`: Sada odchozích serverů s klíčem podle názvu skupiny. Vyznačuje se těmito vlastnostmi:
 
   - `address`: Adresa odchozího serveru.
 
