@@ -1,5 +1,5 @@
 ---
-title: Statistics and Query log
+title: Statistieken en zoeklogboek
 sidebar_position: 1
 ---
 
