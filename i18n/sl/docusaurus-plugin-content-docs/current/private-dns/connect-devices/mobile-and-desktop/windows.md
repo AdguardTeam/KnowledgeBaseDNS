@@ -3,12 +3,14 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
 
 1. Go to _Dashboard_ and click _Connect new device_.
 2. In the drop-down menu _Device type_, select Windows.
 3. Name the device.
     ![Connecting_device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+
+You can set it up via [AdGuard](#use-adguard-ad-blocker-paid-option) or [AdGuard VPN](#use-adguard-vpn) apps, in [Windows settings](#configure-via-windows-settings), or using the [AdGuard DNS Client](#use-adguard-dns-client).
 
 ## Use AdGuard Ad Blocker (paid option)
 
@@ -53,6 +55,28 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
     ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 All done! Your device is successfully connected to AdGuard DNS.
+
+## Configure via Windows settings
+
+:::note
+
+Available only on Windows 11.
+
+:::
+
+1. In the _Search_ bar on the taskbar, type **Ethernet settings** or **Wi-Fi settings**, depending on your connection type.
+    Click the network (Wi-Fi ID or Ethernet) you want to configure.
+    ![Search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
+2. Scroll to _DNS server assignment_ and click _Edit_.
+    ![DNS server assignment \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
+3. Change DNS settings to _Manual_.
+4. Toggle the IPv4 switch to _On_.
+5. Enter the following DNS server addresses:
+    - Preferred DNS: `94.140.14.49`
+    - Alternate DNS: `94.140.14.59`
+6. Turn _DNS over HTTPS template_ to _On (manual template)_ and enter your personal DNS address. You can find it in the Dashboard under _Server settings_ → _Devices_ → _Devices settings_ → DNS-over-HTTPS.
+7. Click _Save_. That’s it — your device is now connected to AdGuard DNS!
+    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
 ## Use AdGuard DNS Client
 
