@@ -3,11 +3,49 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router (commonly known as Ubiquiti's UniFi series) has a number of advantages that make it particularly suitable for home, business, and enterprise environments. 안타깝게도 암호화된 DNS는 지원하지 않지만 연결된 IP를 통해 AdGuard DNS를 설정하는 데는 매우 유용합니다.
+The UiFi router, commonly known as the Ubiquiti UniFi series, has a number of advantages that make it particularly suitable for home, business, and enterprise environments.
+
+The newer UniFi firmware recently added support for DNS-over-HTTPS. UniFi refers to this feature as _Encrypted DNS_.
+
+## DNS-over-HTTPS 설정
+
+Follow these instructions if your UniFi router supports DNS-over-HTTPS.
+
+UiFi routers use a DNS Stamp URL to specify the DNS-over-HTTPS URL. This URL must be calculated using your private DNS-over-HTTPS URL.
+
+Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
+
+1. Go to the AdGuard DNS Private Dashboard.
+2. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server settings:
+    - Device type: 'Router'
+    - Device brand: 'Unifi'
+    - Device name: '(use your Unifi device name)
+3. Click _Next_.
+4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
+
+Generate a DNS Stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/), and set it:
+
+1. Protocol: DNS-over-HTTPS
+2. Host name: d.adguard-dns.com
+3. Path: /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
+4. Untick
+    - No filter
+    - No logs
+5. Copy the DNS Stamp URL (e.g., sdns://AgcAAAAAA…)
+
+Turn on DNS-over-HTTPS in UniFi
+
+1. Ubiquiti UniFi 컨트롤러에 로그인합니다.
+2. Go to _Settings_ → _Security_.
+3. Click _Protection_.
+4. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server addresses.
+    - Server Name: 'AdGuard DNS'
+    - DNS Stamp: DNS Stamp URL copied from above
+5. **저장**을 클릭합니다.
 
 ## 라우터 관리 패널 사용
 
-Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 않는 경우, 이 지침을 따르세요.
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Ubiquiti UniFi 컨트롤러에 로그인합니다.
 2. **설정** → **네트워크**로 이동합니다.
@@ -15,7 +53,7 @@ Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 
 4. **일반 설정** → **DNS 서버**로 이동하여 다음 DNS 서버 주소를 입력합니다.
     - IPv4: `94.140.14.49` 및 `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
-5. **저장**을 클릭합니다.
+5. Click _Save_.
 6. **네트워크**로 돌아갑니다.
 7. **네트워크 수정** → **LAN**을 클릭합니다.
 8. **DHCP 이름 서버**를 찾아 **수동**을 선택합니다.

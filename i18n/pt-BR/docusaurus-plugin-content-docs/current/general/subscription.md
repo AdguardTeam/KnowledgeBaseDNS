@@ -1,31 +1,31 @@
 ---
-title: How to purchase, upgrade, or get a refund
+title: Como comprar, atualizar ou obter um reembolso
 sidebar_position: 4
 ---
 
-## How to purchase a plan {#purchase}
+## Como comprar um plano {#purchase}
 
-AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. Plans can be renewed on a monthly or annual basis.
+Os planos do AdGuard DNS podem ser adquiridos em [adguard-dns.io](https://adguard-dns.io/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. Os planos podem ser renovados mensal ou anualmente.
 
-The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
+O plano pessoal é gratuito para usuários pagos do [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
-## How to upgrade a plan {#upgrade}
+## Como atualizar um plano {#upgrade}
 
-To make the most out of AdGuard DNS, you can upgrade your plan for the following benefits:
+Para aproveitar melhor o AdGuard DNS, você pode atualizar seu plano para obter os seguintes benefícios:
 
-- To gain access to 2 dedicated IPv4 addresses and extend the number of devices, monthly requests, rules, and servers, you can **upgrade your plan to Team**
-- For more dedicated IPv4 addresses and an unlimited number of requests, devices, rules, and servers, **upgrade your plan to Enterprise**
+- Para ter acesso a 2 endereços IPv4 dedicados e aumentar o número de dispositivos, solicitações mensais, regras e servidores, você pode **atualizar seu plano para a Equipe**
+- Para mais endereços IPv4 dedicados e um número ilimitado de solicitações, dispositivos, regras e servidores, **atualize seu plano para Empresarial**
 
-You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). To do so, click _Upgrade_ under the section _AdGuard DNS_.
+Você pode atualizar seu plano na sua [conta AdGuard](https://my.adguard.com/account/licenses). Para fazer isso, clique em _Atualizar_ na seção _AdGuard DNS_.
 
-The _Enterprise_ plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
+O plano _Empresarial_ está disponível somente por solicitação. Se você estiver interessado, preencha nosso [formulário](https://surveys.adguard.com/dns_enterprise/form.html) e forneça alguns dados sobre sua empresa. Assim que recebermos sua submissão, entraremos em contato com mais informações.
 
-## How to get a refund {#refund}
+## Como obter um reembolso {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+De acordo com nossos [Termos de Venda](https://adguard-dns.io/terms-of-sale.html), você pode obter um reembolso de 100% em qualquer plano Anual do AdGuard DNS adquirido em https://adguard-dns.io/. Para obter um reembolso, você precisa entrar em contato com o suporte em support@adguard-dns.io, especificando o método de pagamento que você utilizou. O tempo de processamento geralmente leva de 5 a 10 dias úteis.
 
-A refund may be declined if:
+Um reembolso poderá ser recusado se:
 
-- A subscription was purchased more than 30 days ago
-- A subscription was purchased from a distributor
-- You applied for a partial refund for a renewal or upgrade
+- Uma assinatura foi adquirida há mais de 30 dias
+- Uma assinatura foi adquirida de um distribuidor
+- Você solicitou um reembolso parcial para uma renovação ou atualização
