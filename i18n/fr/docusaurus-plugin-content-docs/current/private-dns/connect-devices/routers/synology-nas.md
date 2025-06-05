@@ -21,4 +21,4 @@ Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la co
 8. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)

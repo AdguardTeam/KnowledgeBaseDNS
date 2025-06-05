@@ -21,4 +21,4 @@ Utilizza queste istruzioni se il tuo router Keenetic non supporta la configurazi
 8. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegati](private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
