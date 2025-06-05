@@ -19,11 +19,11 @@ Hent DNS-over-HTTPS URL'en, der bruges til at beregne DNS Stamp URL'en.
 2. Fortsæt til _Krypteret DNS_ → _Tilpasset_ og angiv flg. DNS-serverindstillinger:
     - Enhedstype: 'Router'
     - Enhedsmærke: 'Unifi'
-    - Enhedsnavn: '(brug aktuelt Unifi-enhedsnavn)
+    - Device name: Use your Unifi device name
 3. Klik på _Næste_.
 4. Rul til _Anvend DNS-serveradresser_ → _DNS-over-HTTPS_ og notér DNS-over-HTTPS URL'en (f.eks. https://d.adguard-dns.com/dns-query/123456abc).
 
-Generér et DNS-stempel vha. [DNSCrypt DNS Stempel Calculator](https://dnscrypt.info/stamps/), og indstil det:
+Generate a DNS stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) and set it.
 
 1. Protokol: DNS-over-HTTPS
 2. Værtsnavn: d.adguard-dns.com
@@ -31,37 +31,36 @@ Generér et DNS-stempel vha. [DNSCrypt DNS Stempel Calculator](https://dnscrypt.
 4. Afmarkér
     - Intet filter
     - Ingen logger
-5. Kopiér DNS Stamp URL'en (f.eks. sdns://AgcAAAAAA…)
+5. Copy the DNS stamp URL (e.g., sdns://AgcAAAAAA…)
 
-Slå DNS-over-HTTPS til i UniFi
+Turn on DNS-over-HTTPS in UniFi.
 
 1. Log ind på Ubiquiti UniFi-controlleren.
 2. Gå til _Indstillinger_ → _Sikkerhed_.
 3. Klik på _Beskyttelse_.
 4. Fortsæt til _Krypteret DNS_ → _Tilpasset_ og angiv flg. DNS-serveradresser.
     - Servernavn: 'AdGuard DNS'
-    - DNS Stamp: DNS Stamp URL kopieret fra ovenfor
+    - DNS Stamp: DNS stamp URL copied from above
 5. Klik på _Gem_.
 
 ## Brug routerens håndteringspanel
 
-Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
+Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration.
 
 1. Log ind på Ubiquiti UniFi-controlleren.
 2. Gå til _Indstillinger_ → _Netværk_.
 3. Klik på _Redigér netværk_ → _WAN_.
-4. Fortsæt til _Almindelige indstillinger_ → _DNS-server_, og angiv flg. DNS-serveradresser.
+4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses:
     - IPv4: `94.140.14.49` and `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 5. Klik på _Gem_.
 6. Returnér til _Netværk_.
 7. Vælg _Redigér netværk_ → _LAN_.
 8. Find _DHCP-navneserver_ og vælg _Manuel_.
-9. Angiv gateway-adressen i feltet _DNS Server 1_. Alternativt kan AdGuard DNS-serveradresserne angives i felterne _DNS-server 1_ og _DNS-server 2_:
+9. Angiv gateway-adressen i feltet _DNS Server 1_. Alternatively, you can enter the AdGuard DNS server addresses in the _DNS Server 1_ and _DNS Server 2_ fields:
     - IPv4: `94.140.14.49` and `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 10. Gem indstillingerne.
 11. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-
-- [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)

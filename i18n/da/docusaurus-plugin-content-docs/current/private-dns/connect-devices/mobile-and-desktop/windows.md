@@ -3,7 +3,7 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
+For at slutte en Windows-enhed til AdGuard DNS, føj den først til _Kontrolpanel_:
 
 1. Gå til _Kontrolpanel_ og klik på _Tilslut ny enhed_.
 2. Vælg Windows i rullemenuen _Enhedstype_.
@@ -56,27 +56,27 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vo
 
 Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
-## Configure via Windows settings
+## Opsæt via Windows-indstillinger
 
 :::note
 
-Available only on Windows 11.
+Kun tilgængelig på Windows 11.
 
 :::
 
-1. In the _Search_ bar on the taskbar, type **Ethernet settings** or **Wi-Fi settings**, depending on your connection type.
-    Click the network (Wi-Fi ID or Ethernet) you want to configure.
-    ![Search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
-2. Scroll to _DNS server assignment_ and click _Edit_.
-    ![DNS server assignment \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
-3. Change DNS settings to _Manual_.
-4. Toggle the IPv4 switch to _On_.
-5. Enter the following DNS server addresses:
-    - Preferred DNS: `94.140.14.49`
-    - Alternate DNS: `94.140.14.59`
-6. Turn _DNS over HTTPS template_ to _On (manual template)_ and enter your personal DNS address. You can find it in the Dashboard under _Server settings_ → _Devices_ → _Devices settings_ → DNS-over-HTTPS.
-7. Klik på _Gem_. That’s it — your device is now connected to AdGuard DNS!
-    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
+1. Skriv i _Søgefeltet_ på procesbjælken **Ethernet-indstillinger** eller **Wi-Fi indstillinger**, afhængigt af forbindelsestypen.
+    Klik på det netværk (Wi-Fi ID eller Ethernet), der skal opsættes.
+    ![Søg \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
+2. Find _DNS-servertildeling_, og klik på _Redigér_.
+    ![DNS-servertildeling \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
+3. Skift DNS-indstillinger til _Manuel_.
+4. Slå IPv4-knappen til _Til_.
+5. Angiv flg. DNS-serveradresser:
+    - Foretrukken DNS: `94.140.14.49`
+    - Alternativ DNS: `94.140.14.59`
+6. Slå _DNS over HTTPS-skabelon_ til _Til (manuel skabelon)_ og angiv den personlige DNS-adresse. Man kan finde den i kontrolpanelet under _Serverindstillinger_ → _Enheder_ → _Enhedsindstillinger_ → DNS-over-HTTPS.
+7. Klik på _Gem_. Det var det – enheden er nu forbundet til AdGuard DNS!
+    ![Gem DNS-indstillinger \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
 ## Brug AdGuard DNS Client
 

@@ -21,4 +21,4 @@ sidebar_position: 9
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
 - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP](private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
