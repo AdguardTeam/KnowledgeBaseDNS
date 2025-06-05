@@ -65,3 +65,7 @@ Use these instructions if your UniFi router does not support the DNS-over-HTTPS 
 
 - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+
+It now supports DNS over HTTPS:
+see: https://tatey.com/2025/01/06/configuring-dns-over-https-unifi-adguard/
+
