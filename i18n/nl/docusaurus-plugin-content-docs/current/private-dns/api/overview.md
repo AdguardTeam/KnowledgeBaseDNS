@@ -119,7 +119,7 @@ The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 | **state**         | An opaque value used for security purposes. If this request parameter is set in the request, it is returned to the application as part of the **redirect_uri** |
 | **aid**           | Affiliate identifier                                                                                                                                           |
 
-For example:
+Bijvoorbeeld:
 
 ```http request
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
@@ -131,7 +131,7 @@ To inform the authorization server which grant type to use, the **response_type*
 
 A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
 
-For example:
+Bijvoorbeeld:
 
 ```http request
 HTTP/1.1 302 Found

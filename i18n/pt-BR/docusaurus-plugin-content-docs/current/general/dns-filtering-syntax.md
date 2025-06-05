@@ -9,11 +9,11 @@ toc_max_heading_level: 4
 
 Aqui, mostramos como escrever regras de filtragem de DNS personalizadas para uso nos produtos AdGuard
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
+Links rápidos: [Baixe o bloqueador de anúncios do AdGuard](https://agrd.io/download-kb-adblock), [Adquira o AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Experimente o AdGuard DNS](https://agrd.io/download-dns)
 
 :::
 
-## Introduction {#introduction}
+## Introdução {#introduction}
 
 Pode utilizar a sintaxe das regras de filtragem do AdGuard DNS para tornar as regras mais flexíveis, para que possam bloquear o conteúdo conforme as suas preferências. A sintaxe das regras de filtragem do AdGuard DNS pode ser utilizada em diferentes produtos AdGuard, tais como AdGuard Home, AdGuard DNS, AdGuard para Windows/Mac/Android.
 
@@ -35,7 +35,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 Se você estiver mantendo uma lista de bloqueio de estilo `/etc/hosts`ou várias listas de filtragem (independentemente do tipo), fornecemos uma ferramenta para compilação de lista de bloqueio. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
-## Basic examples {#basic-examples}
+## Exemplos básicos {#basic-examples}
 
 - `||exemplo.org^`: bloqueia o acesso ao domínio `exemplo.org` e a todos os seus subdomínios, como `www.exemplo.org`.
 

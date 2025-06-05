@@ -3,12 +3,14 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
+To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
 
 1. Go to _Dashboard_ and click _Connect new device_.
 2. In the drop-down menu _Device type_, select Windows.
 3. Name the device.
     ![Connecting_device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
+
+Je kunt dit instellen via de [AdGuard](#use-adguard-ad-blocker-paid-option) of [AdGuard VPN](#use-adguard-vpn) apps, in de [Windows instellingen](#configure-via-windows-settings), of met behulp van de [AdGuard DNS Client](#use-adguard-dns-client).
 
 ## Use AdGuard Ad Blocker (paid option)
 
@@ -53,6 +55,28 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
     ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 All done! Your device is successfully connected to AdGuard DNS.
+
+## Configureren via Windows-instellingen
+
+:::note
+
+Alleen beschikbaar op Windows 11.
+
+:::
+
+1. Typ in de _Zoekbalk_ op de taakbalk **Ethernet-instellingen** of **Wi-Fi-instellingen**, afhankelijk van je verbindingstype.
+    Klik op het netwerk (Wi-Fi-ID of Ethernet) dat je wilt configureren.
+    ![Zoeken \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
+2. Blader naar _DNS-servertoewijzing_ en klik op _Bewerken_.
+    ![DNS-servertoewijzing \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
+3. Wijzig de DNS-instellingen naar _Handmatig_.
+4. Zet de IPv4-schakelaar op _Aan_.
+5. Voer de volgende DNS-serveradressen in:
+    - Voorkeur DNS: '94.140.14.49'
+    - Alternatieve DNS: '94.140.14.59'
+6. Zet _DNS-over-HTTPS-sjabloon_ op _Aan (handmatig sjabloon)_ en voer je persoonlijke DNS-adres in. Je kunt het vinden in het Dashboard onder _Serverinstellingen_ → _Apparaten_ → _Apparaatinstellingen_ → DNS-over-HTTPS.
+7. Klik op _Opslaan_. Dat is alles - je apparaat is nu verbonden met AdGuard DNS!
+    ![DNS-instellingen opslaan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
 ## Use AdGuard DNS Client
 

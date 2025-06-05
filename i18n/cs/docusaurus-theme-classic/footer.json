@@ -76,7 +76,7 @@
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Support AdGuard",
+    "message": "Podpořit AdGuard",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.temp_mail": {
