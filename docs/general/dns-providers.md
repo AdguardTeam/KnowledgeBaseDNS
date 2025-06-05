@@ -1366,7 +1366,6 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 ### 18Bit DNS
 
 [18bit DNS](https://www.18bit.cn) is a public encrypted DNS service for the China region, which has been running for many years for free. It consists of over 10 endpoints and provides fast, secure, and privacy protected DNS services for users in the China region. In addition, it also has malware/phishing protection;
-> **中文翻译**：[18bit DNS](https://www.18bit.cn)是由个人开发者运营和维护，面向中国区域的公共加密DNS服务，由超10+台服务器组成的公益性DNS解析网络，为中国区域用户提供快速、安全、隐私保护的DNS服务；
 
 
 | Protocol | Address | |
