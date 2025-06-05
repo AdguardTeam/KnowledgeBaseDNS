@@ -38,6 +38,28 @@ Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örne�
 
 `server` nesnesi, gelen isteklerin işlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
+- `bind_retry`: Dinleme adreslerine bağlanmak için yeniden deneme mekanizmasının yapılandırması. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+
+  :::note Not
+
+  Bu nesne **v0.0.3** sürümünden beri mevcuttur.
+
+  :::
+
+  Aşağıdaki özelliklere sahiptir:
+
+  - `enabled`: Whether bind retry is enabled or not.
+
+    **Örnek:** `true`
+
+  - `interval`: İnsan tarafından okunabilir bir süre olarak yeniden denemeler arasındaki aralık.
+
+    **Örnek:** `1s`
+
+  - 'count': İlk hatadan sonraki maksimum deneme sayısı. Yani, `count` değeri `4` ise toplam deneme sayısı beş olacaktır.
+
+    **Örnek:** `4`
+
 - `listen_addresses`: Dinlenecek bağlantı noktalarına sahip adres kümesi.
 
   **Özellik örneği:**
@@ -70,7 +92,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 `upstream` nesnesi, isteklerin fiili çözümlenmesini yapılandırır. Aşağıdaki özelliklere sahiptir:
 
-- `groups`: Grubun adına göre anahtarlanan üst kaynak sunucular kümesi. Aşağıdaki alanlara sahiptir:
+- `groups`: Grubun adına göre anahtarlanan üst kaynak sunucular kümesi. Aşağıdaki özelliklere sahiptir:
 
   - `address`: Yukarı akış sunucusunun adresi.
 

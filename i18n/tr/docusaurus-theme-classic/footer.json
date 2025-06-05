@@ -56,7 +56,7 @@
     "description": "The label of footer link with label=vpn linking to https://adguard-vpn.com"
   },
   "link.item.label.mail": {
-    "message": "AdGuard Mail",
+    "message": "AdGuard Posta",
     "description": "The label of footer link with label=mail linking to https://adguard-mail.com"
   },
   "logo.alt": {
@@ -76,7 +76,7 @@
     "description": "The label of footer link with label=about_us linking to https://adguard-dns.io/about.html"
   },
   "link.item.label.support_adguard": {
-    "message": "Support AdGuard",
+    "message": "AdGuard'a destek ol",
     "description": "The label of footer link with label=support_adguard linking to https://adguard.com/support-adguard.html"
   },
   "link.item.label.temp_mail": {

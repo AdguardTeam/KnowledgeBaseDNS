@@ -34,7 +34,7 @@ A group of filters consisting of regional lists to block domains in specific lan
 
 ![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
 
-### Security
+### Beveiliging
 
 A group of filters containing rules for blocking fraudulent sites and phishing domains.
 
