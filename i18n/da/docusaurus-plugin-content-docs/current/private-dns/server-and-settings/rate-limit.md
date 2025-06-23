@@ -19,6 +19,6 @@ Abonnerer man på en AdGuard DNS _Team_ eller _Enterprise_ abonnementstype, kan 
 
 2. Tryk på _Anmod om en forespørgselskvoteforøgelse_ for at kontakte vores supportteam og ansøge om forespørgselskvoteforøgelsen. Man skal angive sin CIDR samt den kvote, man ønsker
 
- ![Forespørgselskvote](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+     ![Forespørgselskvote](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Forespørgslen gennemgås inden for 1–3 arbejdsdage. Information om ændringerne vil ske pr. e-mail

@@ -12,9 +12,9 @@ sidebar_position: 5
 ## 自動接続の設定方法
 
 1. 「_ダッシュボード_」を開き、必要なサーバーを選択します。
-2. 「_デバイス_」に移動します。
+2. Go to _Advanced_.
 3. デバイスの自動的接続オプションを有効にします。
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 これで、特別なアドレスを使用して、デバイス名、デバイスの種類、現在のサーバーIDを含むアドレスを使用して、デバイスを自動的にサーバーに接続できるようになります。 これらのアドレスがどのようなものなのか、また、アドレスを作成する方法を見てみましょう。
 

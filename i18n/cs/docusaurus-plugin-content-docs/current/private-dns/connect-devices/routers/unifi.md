@@ -19,11 +19,11 @@ Získejte URL DNS-over-HTTPS, která se používá k výpočtu DNS razítka URL.
 2. Přejděte na _Šifrovaný DNS_ → _Vlastní_ a zadejte následující nastavení DNS serveru:
     - Typ zařízení: 'Router'
     - Značka zařízení: 'Unifi'
-    - Název zařízení: '(použijte název vašeho zařízení Unifi)'
+    - Název zařízení: použijte název vašeho zařízení Unifi
 3. Klikněte na _Další_.
 4. Přejděte na _Používat adresy DNS serverů_ → _DNS-over-HTTPS_ a poznamenejte si adresu URL DNS-over-HTTPS (např. https://d.adguard-dns.com/dns-query/123456abc).
 
-Vygenerujte DNS razítko pomocí [kalkulačky DNS razítek DNSCrypt] (https://dnscrypt.info/stamps/) a nastavte ho:
+Vygenerujte DNS razítko pomocí [kalkulačky DNS razítek DNSCrypt] (https://dnscrypt.info/stamps/) a nastavte ho.
 
 1. Protokol: DNS-over-HTTPS
 2. Název hostitele: d.adguard-dns.com
@@ -33,7 +33,7 @@ Vygenerujte DNS razítko pomocí [kalkulačky DNS razítek DNSCrypt] (https://dn
     - Žádné logy
 5. Zkopírujte URL pro razítko DNS (např. sdns://AgcAAAAAA…)
 
-Zapněte DNS-over-HTTPS v UniFi
+Zapněte DNS-over-HTTPS v UniFi.
 
 1. Přihlaste se k ovladači Ubiquiti UniFi.
 2. Přejděte do _Nastavení_ → _Bezpečnost_.
@@ -45,12 +45,12 @@ Zapněte DNS-over-HTTPS v UniFi
 
 ## Použijte panel správce routeru
 
-Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
+Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny.
 
 1. Přihlaste se k ovladači Ubiquiti UniFi.
 2. Přejděte do _Nastavení_ → _Sítě_.
 3. Klikněte na _Upravit síť_ → _WAN_.
-4. Přejděte na _Společná nastavení_ → _DNS server_ a zadejte následující adresy DNS serverů.
+4. Přejděte na _Společná nastavení_ → _DNS server_ a zadejte následující adresy DNS serverů:
     - IPv4: `94.140.14.49` a `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 5. Klikněte na _Uložit_.
@@ -62,6 +62,5 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 10. Uložte nastavení.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
-
-- [Vyhrazené IP adresy](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedikované IP adresy](private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](private-dns/connect-devices/other-options/linked-ip.md)

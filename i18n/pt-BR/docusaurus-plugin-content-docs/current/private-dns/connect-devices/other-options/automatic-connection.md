@@ -12,9 +12,9 @@ Você pode criar um link de conexão e usá-lo nas configurações do dispositiv
 ## Como configurar a conexão automática
 
 1. Abra a _Dashboard_ e selecione o servidor necessário.
-2. Vá para _Dispositivos_.
+2. Go to _Advanced_.
 3. Ative a opção para conectar dispositivos automaticamente.
-    ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Agora você pode conectar automaticamente seu dispositivo ao servidor criando um endereço especial que inclui o nome do dispositivo, tipo de dispositivo e ID do servidor atual. Vamos explorar como são esses endereços e as regras para criá-los.
 

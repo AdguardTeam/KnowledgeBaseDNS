@@ -13,16 +13,16 @@ Pravděpodobně jste nenakonfigurovali zařízení tak, aby používalo AdGuard 
 
 2. Spusťte příkaz `nslookup example.org`. Vypíše se něco takového:
 
- ```none
- Server: 192.168.0.1
- Address: 192.168.0.1#53
+  ```none
+  Server: 192.168.0.1
+  Address: 192.168.0.1#53
 
- Non-authoritative answer:
- Name: example.org
- Address: <IPv4>
- Name: example.org
- Address: <IPv6>
- ```
+  Non-authoritative answer:
+  Name: example.org
+  Address: <IPv4>
+  Name: example.org
+  Address: <IPv6>
+  ```
 
 3. Zkontrolujte, zda IP adresa `serveru` je ta, na které běží AdGuard Home. Pokud tomu tak není, je třeba zařízení odpovídajícím způsobem nakonfigurovat. Podívejte se [níže](#defaultdns), jak to provést.
 
@@ -76,23 +76,23 @@ Při řešení složitých problémů je někdy nutné použít protokolování 
 
 1. Ukončete AdGuard Home:
 
- ```sh
- ./AdGuardHome -s stop
- ```
+  ```sh
+  ./AdGuardHome -s stop
+  ```
 
 2. Nakonfigurujte AdGuard Home tak, aby zapisoval protokoly na úrovni verbose:
 
- 1. Otevřete `AdGuardHome.yaml` ve svém editoru.
+  1. Otevřete `AdGuardHome.yaml` ve svém editoru.
 
- 2. Nastavte `log.file` na požadovanou cestu k souboru protokolu, např. `/tmp/aghlog.txt`. Upozorňujeme, že adresář musí existovat.
+  2. Nastavte `log.file` na požadovanou cestu k souboru protokolu, např. `/tmp/aghlog.txt`. Upozorňujeme, že adresář musí existovat.
 
- 3. Nastavte `log.verbose` na hodnotu `true`.
+  3. Nastavte `log.verbose` na hodnotu `true`.
 
 3. Restartujte AdGuard Home a reprodukujte problém:
 
- ```sh
- ./AdGuardHome -s start
- ```
+  ```sh
+  ./AdGuardHome -s start
+  ```
 
 4. Po dokončení ladění nastavte hodnotu `log.verbose` zpět na `false`.
 
@@ -121,29 +121,29 @@ V současné době není možné tyto parametry nastavit z uživatelského rozhr
 
 1. Ukončete AdGuard Home:
 
- ```sh
- ./AdGuardHome -s stop
- ```
+  ```sh
+  ./AdGuardHome -s stop
+  ```
 
 2. Otevřete `AdGuardHome.yaml` ve svém editoru.
 
 3. Nastavte `dns.parental_block_host` nebo `dns.safebrowsing_block_host` na IP adresu serveru (v tomto příkladu na `192.168.123.45`):
 
- ```yaml
- # …
- dns:
-   # …
+  ```yaml
+  # …
+  dns:
+    # …
 
-   # POZNÁMKA: Změňte na skutečnou IP adresu serveru.
-   parental_block_host: 192.168.123.45
-   safebrowsing_block_host: 192.168.123.45
- ```
+    # POZNÁMKA: Změňte na skutečnou IP adresu serveru.
+    parental_block_host: 192.168.123.45
+    safebrowsing_block_host: 192.168.123.45
+  ```
 
 4. Restartujte AdGuard Home:
 
- ```sh
- ./AdGuardHome -s start
- ```
+  ```sh
+  ./AdGuardHome -s start
+  ```
 
 ### Stránka s vlastním blokováním pro další filtry
 
@@ -159,23 +159,23 @@ V současné době není možné tyto parametry nastavit z uživatelského rozhr
 
 1. Ukončete AdGuard Home:
 
- ```sh
- ./AdGuardHome -s stop
- ```
+  ```sh
+  ./AdGuardHome -s stop
+  ```
 
 2. Otevřete `AdGuardHome.yaml` ve svém editoru.
 
 3. Nastavte `http.address` na nové síťové rozhraní. Např:
 
- - `0.0.0.0:0` k naslouchání na všech síťových rozhraní;
- - `0.0.0.0:8080` k naslouchání na všech síťových rozhraní s portem `8080`;
- - `127.0.0.1:0` k naslouchání pouze na místním rozhraní zpětné smyčky.
+  - `0.0.0.0:0` k naslouchání na všech síťových rozhraní;
+  - `0.0.0.0:8080` k naslouchání na všech síťových rozhraní s portem `8080`;
+  - `127.0.0.1:0` k naslouchání pouze na místním rozhraní zpětné smyčky.
 
 4. Restartujte AdGuard Home:
 
- ```sh
- ./AdGuardHome -s start
- ```
+  ```sh
+  ./AdGuardHome -s start
+  ```
 
 ## Jak nastavím AdGuard Home jako výchozí DNS server? {#defaultdns}
 
@@ -221,32 +221,32 @@ Pokud to nepomůže, postupujte podle následujících pokynů. Upozorňujeme, �
 
 1. V případě potřeby vytvořte adresář `/etc/systemd/resolved.conf.d`:
 
- ```sh
- sudo mkdir -p /etc/systemd/resolved.conf.d
- ```
+  ```sh
+  sudo mkdir -p /etc/systemd/resolved.conf.d
+  ```
 
 2. Deaktivujte `DNSStubListener` a aktualizujte adresu DNS serveru. Za tímto účelem vytvořte nový soubor `/etc/systemd/resolved.conf.d/adguardhome.conf` s následujícím obsahem:
 
- ```service
- [Resolve]
- DNS=127.0.0.1
- DNSStubListener=no
- ```
+  ```service
+  [Resolve]
+  DNS=127.0.0.1
+  DNSStubListener=no
+  ```
 
 Jako adresu DNS serveru je **nutné zadat `127.0.0.1`.** Jinak bude název serveru `127.0.0.53`, což bez `DNSStubListener` nebude fungovat.
 
 1. Aktivujte další soubor `resolv.conf`:
 
- ```sh
- sudo mv /etc/resolv.conf /etc/resolv.conf.backup
- sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
- ```
+  ```sh
+  sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  ```
 
 2. Restartujte `DNSStubListener`:
 
- ```sh
- sudo systemctl reload-or-restart systemd-resolved
- ```
+  ```sh
+  sudo systemctl reload-or-restart systemd-resolved
+  ```
 
 Poté by se ve výstupu příkazu `lsof` nemělo zobrazovat `systemd-resolved` a AdGuard Home by měl být schopen navázat se na `127.0.0.1:53`.
 
@@ -321,20 +321,20 @@ Parametr `trusted_proxies` můžete nastavit na IP adresy proxy serveru HTTP, ab
 
 2. Jako `root` proveďte následující příkaz pro změnu bezpečnostního kontextu souboru:
 
- ```sh
- chcon -t bin_t /usr/local/bin/AdGuardHome
- ```
+  ```sh
+  chcon -t bin_t /usr/local/bin/AdGuardHome
+  ```
 
 3. Přidejte požadovaná pravidla brány firewall, aby byla přístupná skrze síť. Např:
 
- ```sh
- firewall-cmd --new-zone=adguard --permanent
- firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
- firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
- firewall-cmd --zone=adguard --add-port=53/udp --permanent
- firewall-cmd --zone=adguard --add-port=80/tcp --permanent
- firewall-cmd --reload
- ```
+  ```sh
+  firewall-cmd --new-zone=adguard --permanent
+  firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
+  firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
+  firewall-cmd --zone=adguard --add-port=53/udp --permanent
+  firewall-cmd --zone=adguard --add-port=80/tcp --permanent
+  firewall-cmd --reload
+  ```
 
 Pokud stále dostáváte `code=exited status=203/EXEC` nebo podobné chyby ze `systemctl`, zkuste odinstalovat AdGuard Home a nainstalovat jej **přímo** do `/usr/local/bin` pomocí volby `-o` instalačního skriptu:
 
@@ -363,72 +363,72 @@ Pokud se tlačítko nezobrazí nebo se automatická aktualizace nezdařila, mů�
 
 1. Stáhněte si nový balíček AdGuard Home ze [stránky vydání][releases]. Pokud chcete tento krok provést z příkazového řádku, zadejte:
 
- ```sh
- curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
- 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
- ```
+  ```sh
+  curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
+  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+  ```
 
- Nebo pomocí `wget`:
+  Nebo pomocí `wget`:
 
- ```sh
- wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
- 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
- ```
+  ```sh
+  wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
+  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+  ```
 
 2. Přejděte do adresáře, kde je AdGuard Home nainstalován. Ve většině unixových systémů je výchozí adresář `/opt/AdGuardHome`, ale v systému MacOS je to `/Applications/AdGuardHome`.
 
 3. Ukončete AdGuard Home:
 
- ```sh
- sudo ./AdGuardHome -s stop
- ```
+  ```sh
+  sudo ./AdGuardHome -s stop
+  ```
 
- :::note OpenBSD
+  :::note OpenBSD
 
- V systému OpenBSD budete pravděpodobně chtít použít `doas` místo `sudo`.
+  V systému OpenBSD budete pravděpodobně chtít použít `doas` místo `sudo`.
 
- :::
+  :::
 
 4. Zálohujte svá data. Tedy konfigurační soubor a adresář s daty (ve výchozím nastavení `AdGuardHome.yaml` a `data/`). Příklad pro zálohování dat do nového adresáře s názvem `~/my-agh-backup`:
 
- ```sh
- mkdir -p ~/my-agh-backup
- cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
- ```
+  ```sh
+  mkdir -p ~/my-agh-backup
+  cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
+  ```
 
 5. Rozbalte archiv AdGuard Home do dočasného adresáře. Pokud jste například stáhli archiv do adresáře `~/Downloads` a chcete jej rozbalit do adresáře `/tmp/`:
 
- ```sh
- tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
- ```
+  ```sh
+  tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+  ```
 
- V macOS zadejte něco jako:
+  V macOS zadejte něco jako:
 
- ```sh
- unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
- ```
+  ```sh
+  unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+  ```
 
 6. Nahraďte starý spustitelný soubor AdGuard Home novým. Ve většině unixových systémů by měl příkaz vypadal takto:
 
- ```sh
- sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
- ```
+  ```sh
+  sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
+  ```
 
- V macOS zadejte něco jako:
+  V macOS zadejte něco jako:
 
- ```sh
- sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
- ```
+  ```sh
+  sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
+  ```
 
- Možná budete chtít zkopírovat také dokumentační části balíčku, například protokol změn (`CHANGELOG.md`), soubor README (`README.md`) a licenci (`LICENSE.txt`).
+  Možná budete chtít zkopírovat také dokumentační části balíčku, například protokol změn (`CHANGELOG.md`), soubor README (`README.md`) a licenci (`LICENSE.txt`).
 
- Nyní můžete dočasný adresář odstranit.
+  Nyní můžete dočasný adresář odstranit.
 
 7. Restartujte AdGuard Home:
 
- ```sh
- sudo ./AdGuardHome -s start
- ```
+  ```sh
+  sudo ./AdGuardHome -s start
+  ```
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
@@ -438,51 +438,51 @@ Ve všech níže uvedených příkladech musí být PowerShell spuštěn jako sp
 
 1. Stáhněte si nový balíček AdGuard Home ze [stránky vydání][releases]. Pokud chcete tento krok provést z příkazového řádku:
 
- ```ps1
- $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
- $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
- Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
- ```
+  ```ps1
+  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+  $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
+  Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
+  ```
 
 2. Přejděte do adresáře, kde byl AdGuard Home nainstalován. V níže uvedených příkladech použijeme `C:\Program Files\AdGuardHome`.
 
 3. Ukončete AdGuard Home:
 
- ```ps1
- .\AdGuardHome.exe -s stop
- ```
+  ```ps1
+  .\AdGuardHome.exe -s stop
+  ```
 
 4. Zálohujte svá data. Tedy konfigurační soubor a adresář s daty (ve výchozím nastavení `AdGuardHome.yaml` a `data/`). Příklad pro zálohování dat do nového adresáře s názvem `my-agh-backup`:
 
- ```ps1
- $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
- New-Item -Path $newDir -ItemType Directory
- Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
- ```
+  ```ps1
+  $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
+  New-Item -Path $newDir -ItemType Directory
+  Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
+  ```
 
 5. Rozbalte archiv AdGuard Home do dočasného adresáře. Pokud jste například stáhli archiv do adresáře `Downloads` a chcete jej rozbalit do dočasného adresáře:
 
- ```ps1
- $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
- Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
- ```
+  ```ps1
+  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+  Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
+  ```
 
 6. Nahraďte starý spustitelný soubor AdGuard Home novým. Např:
 
- ```ps1
- $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
- Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
- ```
+  ```ps1
+  $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
+  Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
+  ```
 
- Možná budete chtít zkopírovat také dokumentační části balíčku, například protokol změn (`CHANGELOG.md`), soubor README (`README.md`) a licenci (`LICENSE.txt`).
+  Možná budete chtít zkopírovat také dokumentační části balíčku, například protokol změn (`CHANGELOG.md`), soubor README (`README.md`) a licenci (`LICENSE.txt`).
 
- Nyní můžete dočasný adresář odstranit.
+  Nyní můžete dočasný adresář odstranit.
 
 7. Restartujte AdGuard Home:
 
- ```ps1
- .\AdGuardHome.exe -s start
- ```
+  ```ps1
+  .\AdGuardHome.exe -s start
+  ```
 
 ## Jak odinstalovat AdGuard Home? {#uninstall}
 

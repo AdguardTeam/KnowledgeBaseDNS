@@ -19,6 +19,6 @@ Se sei sottoscritto al piano _Team_ o _Azienda_ di AdGuard DNS, puoi fare una Ri
 
 2. Tocca _Richiesta di aumento del limite_ per contattare il nostro Supporto clienti e applica per l'aumento del limite di velocità. È necessario fornire il proprio CIDR e il limite che si desidera avere
 
- ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

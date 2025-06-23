@@ -12,9 +12,9 @@ Man kan oprette et tilslutningslink og bruge dette i enhedsindstillingerne. Enhe
 ## Sådan opsættes automatisk tilslutning
 
 1. Åbn _Kontrolpanel_ og vælg den relevante servere.
-2. Gå til _Enheder_.
+2. Go to _Advanced_.
 3. Aktivér muligheden for at tilslutte enheder automatisk.
-    ![Tilslut enheder automatisk \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Nu kan man automatisk tilslutte sin enhed til serveren ved at oprette en særlig adresse, der inkluderer enhedsnavn, enhedstype og aktuelt server-ID. Lad os se på, hvordan disse adresser ser ud og reglerne for at oprette dem.
 
