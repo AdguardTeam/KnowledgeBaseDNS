@@ -1370,3 +1370,35 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
 | DNS-over-TLS | `tls://dns.18bit.cn` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS) |
+
+### DNS4EU
+
+[DNS4EU](https://www.joindns4.eu) is a free, privacy-focused, and secure DNS resolver designed to protect citizens across the European Union. Co-funded by the European Union.
+
+#### Protective
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://protective.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS | `tls://protective.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU) |
+
+#### With child protection
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://child.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://child.joindns4.eu/dns-query&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS | `tls://child.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://child.joindns4.eu&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child.joindns4.eu&name=DNS4EU) |
+
+#### With ad-blocking
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://noads.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS | `tls://noads.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://noads.joindns4.eu&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://noads.joindns4.eu&name=DNS4EU) |
+
+#### With child protection and ad-blocking
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS | `tls://child-noads.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU) |
