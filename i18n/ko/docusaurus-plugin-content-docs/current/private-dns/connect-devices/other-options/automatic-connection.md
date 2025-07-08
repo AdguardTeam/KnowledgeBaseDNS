@@ -12,9 +12,9 @@ sidebar_position: 5
 ## 기기 자동 연결을 설정하는 방법
 
 1. **대시보드**를 열고 필요한 서버를 선택합니다.
-2. **기기**로 이동합니다.
+2. Go to _Advanced_.
 3. 기기를 자동으로 연결하는 옵션을 활성화합니다.
-    ![기기를 자동으로 연결하는 방법 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 이제 기기 이름, 기기 유형 및 현재 서버 ID가 포함된 특별한 주소를 생성함으로써 기기를 서버에 자동으로 연결할 수 있습니다. 이 주소가 어떤 모양인지와 생성 규칙에 대해 알아보겠습니다.
 

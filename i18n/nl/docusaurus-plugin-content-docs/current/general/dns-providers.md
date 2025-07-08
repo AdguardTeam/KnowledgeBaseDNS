@@ -79,13 +79,13 @@ Elk van deze servers biedt een veilige en betrouwbare verbinding, maar in tegens
 
  [Caliph DNS](https://dns.caliph.dev) is een gratis DNS-service gevestigd in Indonesië om veilig en zonder zorgen op het Internet te surfen.
 
- | Soort          | Adres                                |                                                                                                                                                                                                                                                                               |
- | -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
- | DNS, IPv4      | `103.168.147.197`                    | [Toevoegen aan AdGuard](adguard:add_dns_server?address=103.168.147.197&name=103.168.147.197), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=103.168.147.197&name=103.168.147.197)                                                                             |
- | DNS, IPv6      | `2001:df4:f80:1:fe84:4cbd:3000:cafe` | [Toevoegen aan AdGuard](adguard:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=2001:df4:f80:1:fe84:4cbd:3000:cafe&name=2001:df4:f80:1:fe84:4cbd:3000:cafe) |
- | DNS-over-HTTPS | `https://dns.caliph.dev/dns-query`   | [Toevoegen aan AdGuard](adguard:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev)                                             |
- | DNS-over-TLS   | `tls://dns.caliph.dev:853`           | [Toevoegen aan AdGuard](adguard:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853)                                                                 |
- | DNS-over-QUIC  | `quic://dns.caliph.dev:853`          | [Toevoegen aan AdGuard](adguard:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853)                                                   |
+ | Soort          | Adres                              |                                                                                                                                                                                                                                   |
+ | -------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+ | DNS, IPv4      | `160.19.167.150`                   | [Add to AdGuard](adguard:add_dns_server?address=160.19.167.150&name=160.19.167.150), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=160.19.167.150&name=160.19.167.150)                                                   |
+ | DNS, IPv6      | `2001:df7:5300:3::51e`             | [Add to AdGuard](adguard:add_dns_server?address=2001:df7:5300:3::51e&name=2001:df7:5300:3::51e), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df7:5300:3::51e&name=2001:df7:5300:3::51e)                           |
+ | DNS-over-HTTPS | `https://dns.caliph.dev/dns-query` | [Toevoegen aan AdGuard](adguard:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev) |
+ | DNS-over-TLS   | `tls://dns.caliph.dev:853`         | [Toevoegen aan AdGuard](adguard:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853)                     |
+ | DNS-over-QUIC  | `quic://dns.caliph.dev:853`        | [Toevoegen aan AdGuard](adguard:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.caliph.dev:853&name=dns.caliph.dev:853)       |
 
 ### BebasDNS door BebasID
 
@@ -762,7 +762,7 @@ EDNS Client Subnet is een methode die componenten van de IP-adresgegevens van ei
 | DNS, IPv4 | `64.6.64.6` and `64.6.65.6`             | [Add to AdGuard](adguard:add_dns_server?address=64.6.64.6&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=64.6.64.6&name=)             |
 | DNS, IPv6 | `2620:74:1b::1:1` and `2620:74:1c::2:2` | [Add to AdGuard](adguard:add_dns_server?address=2620:74:1b::1:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:74:1b::1:1&name=) |
 
-### v.recipes DNS
+### v.recipes DNS (former 0ms.dev)
 
 [v.recipes DNS](https://v.recipes/dns/) is a global DNS resolution service provided as an alternative to your current DNS provider.
 
@@ -1003,7 +1003,7 @@ These servers block adult websites and inappropriate contents.
 | DNS, IPv4 | `217.160.70.42`         | [Add to AdGuard](adguard:add_dns_server?address=217.160.70.42&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=217.160.70.42&name=)                 |
 | DNS, IPv6 | `2001:8d8:1801:86e7::1` | [Add to AdGuard](adguard:add_dns_server?address=2001:8d8:1801:86e7::1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:8d8:1801:86e7::1&name=) |
 
-This is just one of the available servers, the full list can be found [here](https://servers.opennic.org/).
+This is just one of the available servers, the full list can be found on the [OpenNIC public servers page](https://servers.opennic.org/).
 
 ### Quad101
 
@@ -1339,11 +1339,11 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 [ASTRACAT DNS](https://astracat.vercel.app/) is een op privacy gerichte DNS-resolver gebouwd op de infrastructuur van Cloudflare en het gegevenscentrum van ASTRACAT. Het benadrukt hoge snelheid, geen logboekregistratie en geen censuur, en biedt een veilige en betrouwbare DNS-resolutie-ervaring.
 
-| Protocol       | Adres                                                                                                                                                                                                                                                                                                                                                                 |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `85.209.2.112`                                | [Toevoegen aan AdGuard](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                             |
+| Protocol       | Adres                                                 |                                                                                                                                                                                                                                                                                                               |
+| -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `85.209.2.112`                                        | [Toevoegen aan AdGuard](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
 | DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [Toevoegen aan AdGuard](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
-| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`     | [Toevoegen aan AdGuard](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                                 |
+| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [Toevoegen aan AdGuard](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
 
 ### DNSGuard
 
@@ -1352,9 +1352,18 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 | Protocol       | Adres                            |                                                                                                                                                                                                      |
 | -------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `179.61.253.223`                 | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                  |
-| DNS 2, IPv4    | `179.61.253.223`                 | [Toevoegen aan AdGuardian](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                 |
-| DNS 1, IPv6    | `179.61.253.223`                 | [Toevoegen aan AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)    |
-| DNS 2, IPv6    | `179.61.253.223`                 | [Toevoegen aan AdGuardian](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD) |
+| DNS 2, IPv4    | `181.214.231.96`                 | [Toevoegen aan AdGuardian](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                 |
+| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [Toevoegen aan AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)    |
+| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [Toevoegen aan AdGuardian](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD) |
 | DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD)  |
 | DNS-over-TLS   | `tls://dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                          |
 | DNS-over-QUIC  | `quic://dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                        |
+
+### 18Bit DNS
+
+[18Bit DNS](https://www.18bit.cn) is een gratis, versleutelde openbare DNS-service voor de Chinese regio die al vele jaren actief is. Met meer dan 10 eindpunten biedt het gebruikers in de regio China snelle, veilige en privé DNS-services. Daarnaast biedt het bescherming tegen malware en phishing.
+
+| Protocol       | Adres                            |                                                                                                                                                                                                                   |
+| -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [Toevoegen aan AdGuard](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
+| DNS-over-TLS   | `tls://dns.18bit.cn`             | [Toevoegen aan AdGuard](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS)                         |

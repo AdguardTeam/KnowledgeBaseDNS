@@ -12,9 +12,9 @@ sidebar_position: 5
 ## Как настроить автоматическое подключение
 
 1. Откройте _Панель управления_ и выберите необходимый сервер.
-2. Перейдите в _Устройства_.
+2. Go to _Advanced_.
 3. Включите опцию для автоматического подключения устройств.
-    ![Автоматическое подключение устройств \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Теперь вы можете автоматически подключить ваше устройство к серверу, создав специальный адрес, включающий имя устройства, тип устройства и текущий идентификатор сервера. Давайте рассмотрим, как выглядят эти адреса и правила их создания.
 
