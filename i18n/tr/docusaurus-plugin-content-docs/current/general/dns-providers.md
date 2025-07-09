@@ -898,6 +898,65 @@ Access to AI, blocking of ads, counters, phishing and malicious websites.
 | DNSCrypt, IPv4 | Provider: `dnsforfamily.com` IP: `94.130.180.225`          | [AdGuard'a ekle](sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                                |
 | DNSCrypt, IPv6 | Provider: `dnsforfamily.com` IP: `[2a01:4f8:1c0c:40db::1]` | [AdGuard'a ekle](sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFdIKeNqJacdMufL_kvUDGFm5-J2r4yS94vn4S5ie-o8MCMEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                    |
 
+### DNS4EU
+
+[DNS4EU](https://www.joindns4.eu) is a free, privacy-focused, and secure DNS resolver designed to protect citizens across the European Union. Co-funded by the European Union.
+
+#### Protective resolution
+
+Blocks access to known malicious and fraudulent websites.
+
+| Protokol       | Adres                                                 |                                                                                                                                                                                                         |
+| -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.1` and `86.54.11.201`                       | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.1&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:1` and `2a13:1001::86:54:11:201` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:1&name=)                                       |
+| DNS-over-HTTPS | `https://protective.joindns4.eu/dns-query`            | [Add to AdGuard](adguard:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://protective.joindns4.eu`                        | [Add to AdGuard](adguard:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU)             |
+
+#### Protective resolution with child protection
+
+Avoid access to websites inappropriate for children such as explicit content, violence or drugs on top of the protective functionality.
+
+| Protokol       | Adres                                                  |                                                                                                                                                                                               |
+| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.12` and `86.54.11.212`                       | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.12&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.12&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:12` and `2a13:1001::86:54:11:212` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:12&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:12&name=)                           |
+| DNS-over-HTTPS | `https://child.joindns4.eu/dns-query`                  | [Add to AdGuard](adguard:add_dns_server?address=https://child.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child.joindns4.eu`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://child.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child.joindns4.eu&name=)                         |
+
+#### Protective resolution with ad blocking
+
+Hide website and in-app ads on top of the protective functionality.
+
+| Protokol       | Adres                                                  |                                                                                                                                                                                               |
+| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.13` and `86.54.11.213`                       | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.13&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.13&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:13` and `2a13:1001::86:54:11:213` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:13&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:13&name=)                           |
+| DNS-over-HTTPS | `https://noads.joindns4.eu/dns-query`                  | [Add to AdGuard](adguard:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://noads.joindns4.eu`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://noads.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://noads.joindns4.eu&name=)                         |
+
+#### Protective resolution with child protection and ad blocking
+
+Avoid access to websites inappropriate for children, such as explicit content, violence or drugs. Plus filter ads on top of the protective functionality.
+
+| Protokol       | Adres                                                  |                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.11` and `86.54.11.211`                       | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.11&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:11` and `2a13:1001::86:54:11:211` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:11&name=)                                       |
+| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query`            | [Add to AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                        | [Add to AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                         |
+
+#### Unfiltered resolution
+
+Unfiltered option is a valid option for users who are confident their devices and connection are secure, and are looking for fast, reliable, and anonymised resolution service.
+
+| Protokol       | Adres                                                   |                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.100` and `86.54.11.200`                       | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=)                                                           |
+| DNS, IPv6      | `2a13:1001::86:54:11:100` and `2a13:1001::86:54:11:100` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=)                                     |
+| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`              | [Add to AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                         | [Add to AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                         |
+
 ### Fondation Restena DNS
 
 [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) servers provided by [Restena Foundation](https://www.restena.lu/).
@@ -1337,13 +1396,13 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/), Cloudflare'in alt yapısı ve ASTRACAT'ın veri merkezi üzerine inşa edilmiş gizlilik odaklı bir DNS çözümleyicisidir. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
 
 | Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `85.209.2.112`                                        | [AdGuard'a ekle](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
-| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
-| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
+| DNS, IPv4      | `85.209.2.112`                                        | [Add to AdGuard](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
+| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
+| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [Add to AdGuard](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
 
 ### DNSGuard
 
@@ -1351,19 +1410,19 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 | Protokol       | Adres                            |                                                                                                                                                                                                     |
 | -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `179.61.253.223`                 | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
-| DNS 2, IPv4    | `181.214.231.96`                 | [AdGuard'a ekle](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
-| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [AdGuard'a ekle](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
-| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [AdGuard'a ekle](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
+| DNS 1, IPv4    | `179.61.253.223`                 | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
+| DNS 2, IPv4    | `181.214.231.96`                 | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
+| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
+| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
 | DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
 | DNS-over-TLS   | `tls://dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                         |
 | DNS-over-QUIC  | `quic://dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                       |
 
 ### 18Bit DNS
 
-[18Bit DNS](https://www.18bit.cn), Çin bölgesi için uzun yıllardır faaliyet gösteren ücretsiz, şifrelenmiş bir genel DNS hizmetidir. 10'dan fazla uç noktadan oluşan bu servis, Çin bölgesindeki kullanıcılara hızlı, güvenli ve özel DNS hizmetleri sağlıyor. Ayrıca kötü amaçlı yazılımlara ve kimlik avına karşı koruma özelliği de bulunuyor.
+[18Bit DNS](https://www.18bit.cn) is a free, encrypted public DNS service for the Chinese region that has been operating for many years. Consisting of over 10 endpoints, it provides users in the China region with fast, secure, and private DNS services. Additionally, it has malware and phishing protection.
 
 | Protokol       | Adres                            |                                                                                                                                                                                                     |
 | -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
-| DNS-over-TLS   | `tls://dns.18bit.cn`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS)                         |
+| DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
+| DNS-over-TLS   | `tls://dns.18bit.cn`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS)                         |
