@@ -64,7 +64,7 @@ sidebar_position: 3
 
     ![Настроить Dyn \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Готово, вы успешно настроили Dyn!
+Готово, вы успешно настроили DDNS!
 
 ## Автоматизация обновления привязанного IP-адреса через скрипт
 

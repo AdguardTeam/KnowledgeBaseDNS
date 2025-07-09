@@ -12,9 +12,9 @@ sidebar_position: 5
 ## 如何配置自动连接
 
 1. 打开「_仪表盘_」并选择所需的服务器。
-2. 转到「_设备_」。
+2. Go to _Advanced_.
 3. 启用自动连接设备的选项。
-    ![自动连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 现在，可以通过创建包含设备名称、设备类型和当前服务器 ID 的特殊地址，将设备自动连接到服务器。 让我们来了解这些地址的格式以及创建它们的规则。
 

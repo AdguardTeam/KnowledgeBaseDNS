@@ -21,4 +21,4 @@ Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 
 8. IP(또는 팀 구독이 있는 경우 전용 IP)를 연결합니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [연결된 IP](private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)

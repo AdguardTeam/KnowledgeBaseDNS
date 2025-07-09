@@ -19,7 +19,7 @@ Hent DNS-over-HTTPS URL'en, der bruges til at beregne DNS Stamp URL'en.
 2. Fortsæt til _Krypteret DNS_ → _Tilpasset_ og angiv flg. DNS-serverindstillinger:
     - Enhedstype: 'Router'
     - Enhedsmærke: 'Unifi'
-    - Enhedsnavn: '(brug aktuelt Unifi-enhedsnavn)
+    - Enhedsnavn: Benyt det aktuelle Unifi-enhedsnavn
 3. Klik på _Næste_.
 4. Rul til _Anvend DNS-serveradresser_ → _DNS-over-HTTPS_ og notér DNS-over-HTTPS URL'en (f.eks. https://d.adguard-dns.com/dns-query/123456abc).
 
@@ -45,7 +45,7 @@ Slå DNS-over-HTTPS til i UniFi
 
 ## Brug routerens håndteringspanel
 
-Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration:
+Brug denne vejledning, hvis UniFi-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS.
 
 1. Log ind på Ubiquiti UniFi-controlleren.
 2. Gå til _Indstillinger_ → _Netværk_.
@@ -62,6 +62,5 @@ Use these instructions if your UniFi router does not support the DNS-over-HTTPS 
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 10. Gem indstillingerne.
 11. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-
-- [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)

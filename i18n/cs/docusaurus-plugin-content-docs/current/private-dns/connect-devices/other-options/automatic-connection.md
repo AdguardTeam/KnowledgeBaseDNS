@@ -12,9 +12,9 @@ Můžete vytvořit odkaz na připojení a použít jej v nastavení zařízení.
 ## Jak nakonfigurovat automatické připojení
 
 1. Otevřete _Přehled_ a vyberte požadovaný server.
-2. Přejděte na _Zařízení_.
+2. Go to _Advanced_.
 3. Povolte možnost automatického připojení zařízení.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Nyní můžete zařízení automaticky připojit k serveru vytvořením speciální adresy, která obsahuje název zařízení, typ zařízení a aktuální ID serveru. Podívejme se, jak tyto adresy vypadají a jaká jsou pravidla pro jejich vytváření.
 

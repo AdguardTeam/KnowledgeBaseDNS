@@ -12,9 +12,9 @@ Bağlantı bağlantısı oluşturabilir ve bunu cihaz ayarlarında kullanabilirs
 ## Otomatik bağlantı nasıl yapılandırılır
 
 1. _Pano_ öğesini açın ve gerekli sunucuyu seçin.
-2. _Cihazlar_ öğesine gidin.
+2. Go to _Advanced_.
 3. Cihazların otomatik olarak bağlanma seçeneğini etkinleştirin.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Bu adreslerin nasıl göründüğünü ve bunları oluşturma kurallarını inceleyelim.
 
