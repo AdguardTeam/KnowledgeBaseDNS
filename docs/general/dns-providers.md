@@ -1429,3 +1429,13 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
 | DNS-over-TLS | `tls://dns.18bit.cn` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS) |
+
+### SZ DNS
+
+[SZ DNS](https://www.sz-dns.com/) is a free public recursive DNS resolver focused on privacy, speed, and ad/tracker blocking. It exclusively supports encrypted protocols (DoH, DoT, DoQ) and uses GeoDNS to ensure low latency.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://doh.sz-dns.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.sz-dns.com/dns-query&name=SZ%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.sz-dns.com/dns-query&name=SZ%20DNS) |
+| DNS-over-TLS   | `tls://dot.sz-dns.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.sz-dns.com&name=SZ%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.sz-dns.com&name=SZ%20DNS) |
+| DNS-over-QUIC  | `quic://doq.sz-dns.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://doq.sz-dns.com&name=SZ%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doq.sz-dns.com&name=SZ%20DNS) |
