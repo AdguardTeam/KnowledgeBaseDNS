@@ -12,7 +12,7 @@ Můžete vytvořit odkaz na připojení a použít jej v nastavení zařízení.
 ## Jak nakonfigurovat automatické připojení
 
 1. Otevřete _Přehled_ a vyberte požadovaný server.
-2. Go to _Advanced_.
+2. Přejděte na _Pokročilé_.
 3. Povolte možnost automatického připojení zařízení.
     ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 

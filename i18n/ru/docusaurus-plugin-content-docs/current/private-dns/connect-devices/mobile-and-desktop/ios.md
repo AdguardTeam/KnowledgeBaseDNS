@@ -67,7 +67,7 @@ sidebar_position: 3
 
 :::
 
-1. [Скачать](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml) профиль.
+1. Скачайте профиль конфигурации.
 2. Откройте настройки.
 3. Нажмите _Профиль загружен_.
     ![Профиль загружен \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
