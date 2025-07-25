@@ -898,6 +898,65 @@ Přístup k AI, blokování reklam, čítačů, phishingu a škodlivých webový
 | DNSCrypt, IPv4 | Poskytovatel: `dnsforfamily.com` IP: `94.130.180.225`          | [Přidat do AdGuardu](sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                                   |
 | DNSCrypt, IPv6 | Poskytovatel: `dnsforfamily.com` IP: `[2a01:4f8:1c0c:40db::1]` | [Přidat do AdGuardu](sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFdIKeNqJacdMufL_kvUDGFm5-J2r4yS94vn4S5ie-o8MCMEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                       |
 
+### DNS4EU
+
+[DNS4EU](https://www.joindns4.eu) je bezplatný, bezpečný řešitel DNS zaměřený na ochranu soukromí a určený k ochraně občanů v celé Evropské unii. Spolufinancováno Evropskou unií.
+
+#### Ochranné usnesení
+
+Blokuje přístup na známé škodlivé a podvodné webové stránky.
+
+| Protokol       | Adresa                                              |                                                                                                                                                                                                                |
+| -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.1` a `86.54.11.201`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=86.54.11.1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.1&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:1` a `2a13:1001::86:54:11:201` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a13:1001::86:54:11:1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:1&name=)                                       |
+| DNS-over-HTTPS | `https://protective.joindns4.eu/dns-query`          | [Přidat do AdGuardu](adguard:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://protective.joindns4.eu`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU)             |
+
+#### Ochranné usnesení s ochranou dítěte
+
+Kromě ochranných funkcí zamezuje přístupu na webové stránky nevhodné pro děti, jako je explicitní obsah, násilí nebo drogy.
+
+| Protokol       | Adresa                                               |                                                                                                                                                                                                      |
+| -------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.12` a `86.54.11.212`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=86.54.11.12&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.12&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:12` a `2a13:1001::86:54:11:212` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a13:1001::86:54:11:12&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:12&name=)                           |
+| DNS-over-HTTPS | `https://child.joindns4.eu/dns-query`                | [Přidat do AdGuardu](adguard:add_dns_server?address=https://child.joindns4.eu/dns-query&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://child.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child.joindns4.eu`                            | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://child.joindns4.eu&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://child.joindns4.eu&name=)                         |
+
+#### Ochranné usnesení s blokováním reklam
+
+Skrývá webové stránky a reklamy v aplikacích nad ochrannou funkcí.
+
+| Protokol       | Adresa                                               |                                                                                                                                                                                                      |
+| -------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.13` a `86.54.11.213`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=86.54.11.13&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.13&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:13` a `2a13:1001::86:54:11:213` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a13:1001::86:54:11:13&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:13&name=)                           |
+| DNS-over-HTTPS | `https://noads.joindns4.eu/dns-query`                | [Přidat do AdGuardu](adguard:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://noads.joindns4.eu`                            | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://noads.joindns4.eu&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://noads.joindns4.eu&name=)                         |
+
+#### Ochranné usnesení s ochranou dítěte a blokováním reklam
+
+Zamezuje přístupu na webové stránky nevhodné pro děti, jako je explicitní obsah, násilí nebo drogy. Navíc filtrujte reklamy nad ochrannou funkcí.
+
+| Protokol       | Adresa                                               |                                                                                                                                                                                                                  |
+| -------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.11` a `86.54.11.211`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=86.54.11.11&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.11&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:11` a `2a13:1001::86:54:11:211` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a13:1001::86:54:11:11&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:11&name=)                                       |
+| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query`          | [Přidat do AdGuardu](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                      | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                         |
+
+#### Nefiltrované usnesení
+
+Možnost bez filtrování je vhodnou volbou pro uživatele, kteří si jsou jisti, že jejich zařízení a připojení jsou bezpečné, a hledají rychlou, spolehlivou a anonymizovanou službu řešení DNS.
+
+| Protokol       | Adresa                                                |                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.100` a `86.54.11.200`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=86.54.11.100&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=)                                                          |
+| DNS, IPv6      | `2a13:1001::86:54:11:100` a `2a13:1001::86:54:11:100` | [Přidat do AdGuardu](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=)                                    |
+| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`            | [Přidat do AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                       | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                        |
+
 ### Fondation Restena DNS
 
 Servery [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver) poskytované společností [Restena Foundation](https://www.restena.lu/).

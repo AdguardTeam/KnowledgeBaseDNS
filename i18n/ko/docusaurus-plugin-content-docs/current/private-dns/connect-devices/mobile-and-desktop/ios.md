@@ -67,7 +67,7 @@ VPN을 사용 중인 경우, 구성 프로필은 무시됩니다.
 
 :::
 
-1. [프로필 다운로드](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml).
+1. 프로필 다운로드.
 2. 설정을 엽니다.
 3. **프로필 다운로드됨**을 누릅니다.
     ![프로필 다운로드 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)

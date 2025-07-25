@@ -898,6 +898,65 @@ Adgang til AI, blokering af annoncer, tællere, phishing og ondsindede websteder
 | DNSCrypt, IPv4 | Udbyder: `dnsforfamily.com` IP: `94.130.180.225`          | [Føj til AdGuard](sdns://AQIAAAAAAAAADjk0LjEzMC4xODAuMjI1ILtn1Ada3rLi6VNcj4pB-I5eHBqFzFbs_XFRHG-6KenTEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                                 |
 | DNSCrypt, IPv6 | Udbyder: `dnsforfamily.com` IP: `[2a01:4f8:1c0c:40db::1]` | [Føj til AdGuard](sdns://AQIAAAAAAAAAF1syYTAxOjRmODoxYzBjOjQwZGI6OjFdIKeNqJacdMufL_kvUDGFm5-J2r4yS94vn4S5ie-o8MCMEGRuc2ZvcmZhbWlseS5jb20)                                                                                                                                                     |
 
+### DNS4EU
+
+[DNS4EU](https://www.joindns4.eu) er en gratis, fortrolighedsfokuseret og sikker DNS-opløser designet til at beskytte borgere i hele EU. Delfinansieret af EU.
+
+#### Beskyttende opløsning
+
+Blokerer adgang til kendte ondsindede og svigagtige websteder.
+
+| Protokol       | Adresse                                              |                                                                                                                                                                                                           |
+| -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.1` og `86.54.11.201`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.1&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:1` og `2a13:1001::86:54:11:201` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:1&name=)                                       |
+| DNS-over-HTTPS | `https://protective.joindns4.eu/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://protective.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://protective.joindns4.eu`                       | [Føj til AdGuard](adguard:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://protective.joindns4.eu&name=DNS4EU)             |
+
+#### Beskyttende opløsning med børnebeskyttelse
+
+Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer, oveni den beskyttende funktionalitet.
+
+| Protokol       | Adresse                                               |                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.12` og `86.54.11.212`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.12&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.12&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:12` og `2a13:1001::86:54:11:212` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:12&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:12&name=)                           |
+| DNS-over-HTTPS | `https://child.joindns4.eu/dns-query`                 | [Føj til AdGuard](adguard:add_dns_server?address=https://child.joindns4.eu/dns-query&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://child.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child.joindns4.eu`                             | [Føj til AdGuard](adguard:add_dns_server?address=tls://child.joindns4.eu&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://child.joindns4.eu&name=)                         |
+
+#### Beskyttende opløsning med adblocking
+
+Skjul websteds- og in-app-annoncer oven i den beskyttende funktionalitet.
+
+| Protokol       | Adresse                                               |                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.13` og `86.54.11.213`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.13&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.13&name=)                                                 |
+| DNS, IPv6      | `2a13:1001::86:54:11:13` og `2a13:1001::86:54:11:213` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:13&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:13&name=)                           |
+| DNS-over-HTTPS | `https://noads.joindns4.eu/dns-query`                 | [Føj til AdGuard](adguard:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://noads.joindns4.eu`                             | [Føj til AdGuard](adguard:add_dns_server?address=tls://noads.joindns4.eu&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://noads.joindns4.eu&name=)                         |
+
+#### Beskyttende opløsning med børnebeskyttelse og adblocking
+
+Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Plus filtrér annoncer oven i den beskyttende funktionalitet.
+
+| Protokol       | Adresse                                               |                                                                                                                                                                                                             |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.11` og `86.54.11.211`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.11&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.11&name=)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:11` og `2a13:1001::86:54:11:211` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:11&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:11&name=)                                       |
+| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                       | [Føj til AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                         |
+
+#### Ufiltreret opløsning
+
+Ufiltreret mulighed er et alternativ til brugere, som er sikre på, at deres enheder og forbindelse er sikre, og som søger en hurtig, pålidelig og anonymiseret opløsningstjeneste.
+
+| Protokol       | Adresse                                                |                                                                                                                                                                                                             |
+| -------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.100` og `86.54.11.200`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.100&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=)                                                           |
+| DNS, IPv6      | `2a13:1001::86:54:11:100` og `2a13:1001::86:54:11:100` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=)                                     |
+| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`             | [Føj til AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                        | [Føj til AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=)                         |
+
 ### Fondation Restena DNS
 
 [Restena DNS](https://www.restena.lu/en/service/public-dns-resolver)-servere leveres af [Restena Foundation](https://www.restena.lu/).
@@ -1151,20 +1210,20 @@ Nul logging | Filtrerer annoncerer, trackere, phishing mv. | DNSSEC | QNAME-mini
 
 [Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) er en personlig DNS-tjeneste hostet i Trondheim, Norge, vha. en AdGuard Home-infrastruktur.
 
-Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logning bruges til forbedring af de anvendte filterlister (f.eks. ved at afblokere websteder, som ikke burde have været blokeret) og til at bestemme de mindst forstyrrende tidspunkter for server-/systemopdateringer.
+Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logning bruges til forbedring af de anvendte filterlister (f.eks. ved at afblokere websteder, som ikke burde have været blokeret) og til at bestemme de mindst forstyrrende tidspunkter for serversystemopdateringer.
 
 | Protokol       | Adresse                                               |                                                                                                                                                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Føj til AdGuard](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853)                             |
 | DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582)                   |
-| DNS, IPv4      | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
-| DNS, IPv6      | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
-| DNSCrypt, IPv4 | Varierer; se ovenstående link.                        |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv4      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
+| DNS, IPv6      | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
+| DNSCrypt, IPv4 | Varierer; se link ovenfor.                            |                                                                                                                                                                                                                                                                                                   |
 
 ### DNS Forge
 
-[DNS Forge](https://dnsforge.de/) er en redundant DNS-opløser med adblocker og uden logning leveret af [adminforge](https://adminforge.de/).
+[DNS Forge](https://dnsforge.de/) er en redundant DNS-opløser med adblocker og nul logning leveret af [adminforge](https://adminforge.de/).
 
 | Protokol       | Adresse                                              |                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1195,7 +1254,7 @@ Man kan også [opsætte en tilpasset DNS-server](https://dnswarden.com/customfil
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) er en Fusls offentlig primære OpenNIC Tier2 Anycast DNS-opløser.
+[fvz DNS](http://meo.ws/) er en Fusls offentlig primær OpenNIC Tier2 Anycast DNS-opløser.
 
 | Protokol       | Adresse                                                             |                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1267,7 +1326,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 
 #### Singapore DNS Server
 
-| Protokol       | Adresse                                                                   | Placering                                                                                                                                                                                                             |
+| Protokol       | Adresse                                                                   | Lokation                                                                                                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `174.138.21.128`                                                          | [Føj til AdGuard](adguard:add_dns_server?address=174.138.21.128&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=174.138.21.128&name=)                                                                 |
 | DNS, IPv6      | `2400:6180:0:d0::5f6e:4001`                                               | [Føj til AdGuard](adguard:add_dns_server?address=2400:6180:0:d0::5f6e:4001&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:6180:0:d0::5f6e:4001&name=)                                           |
@@ -1304,7 +1363,7 @@ Disse servere tilbyder ingen adblocking, opbevarer ingen logfiler og har DNSSEC 
 
 ### BlackMagicc DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) er en personlig DNS-server placeret i Vietnam og beregnet til personlig brug samt brug i mindre målestok. Den har adblocking, malware-/phishing-beskyttelse, voksenindholdsfilter og DNSSEC-validering.
+[BlackMagicc DNS](https://bento.me/blackmagicc) er en personlig DNS-server placeret i Vietnam og beregnet til personlig brug samt brug i mindre målestok. Tilbyder adblocking, malware-/phishing-beskyttelse, voksenindholdsfilter og DNSSEC-validering.
 
 | Protokol       | Adresse                                 |                                                                                                                                                                                                                                 |
 | -------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1326,7 +1385,7 @@ Blokerer annoncer, trackere og malware
 | DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
 | DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
 
-#### Kids
+#### Børn
 
 Børnevenligt filter, der også blokerer annoncer, trackere og malware
 
@@ -1347,7 +1406,7 @@ Børnevenligt filter, der også blokerer annoncer, trackere og malware
 
 ### DNSGuard
 
-Denne DNS-tjeneste, med en striks nul logning-politik, blokerer annoncer, sporing og malware.
+[DNSGuard](https://dnsguard.pub) blokerer annoncer, sporing samt malware og har en striks nul logning-politik.
 
 | Protokol       | Adresse                          |                                                                                                                                                                                                       |
 | -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

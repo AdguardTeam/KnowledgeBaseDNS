@@ -67,7 +67,7 @@ Si estás usando un VPN, el perfil de configuración será ignorado.
 
 :::
 
-1. [Descargar](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml) perfil.
+1. Descarga el perfil.
 2. Abre la configuración.
 3. Toca _Perfil Descargado_.
     ![Perfil descargado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)

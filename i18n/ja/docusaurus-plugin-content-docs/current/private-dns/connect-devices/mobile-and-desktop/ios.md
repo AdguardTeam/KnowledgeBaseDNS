@@ -67,7 +67,7 @@ VPNを使用している場合、構成プロファイルは無視されます�
 
 :::
 
-1. [プロファイルをダウンロード](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml)します。
+1. 構成プロファイルをダウンロードします。
 2. iOSの「設定」を開きます。
 3. 「ダウンロード済みプロファイル」をタップします。
     ![Profile Downloaded \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
