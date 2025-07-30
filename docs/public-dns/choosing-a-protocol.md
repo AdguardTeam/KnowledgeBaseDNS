@@ -21,7 +21,7 @@ However, it can be unstable and result in performance issues. When all data pack
 
 ### DNS-over-QUIC (DoQ)
 
-DNS-over-QUIC is a DNS protocol that takes advantage of the QUIC transport layer protocol and uses it to transmit DNS requests. It avoids one of the main problems with the DoH protocol: instability due to head-of-line blocking.
+DNS-over-QUIC is a DNS protocol that uses the QUIC transport layer protocol to transmit DNS requests. It solves one of the main problems with the DoH protocol: instability due to head-of-line blocking.
 
 Since DoQ keeps DNS activity separate from web traffic by using the QUIC protocol, it avoids the timing issues observed in DoH and, as a consequence, doesn’t reveal any traffic patterns. This makes it harder to link your DNS queries to your browsing, even if the traffic itself is easier to spot.
 
