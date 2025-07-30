@@ -15,10 +15,6 @@ AdGuard DNS has three different types of public servers. O servidor "padrão" é
 
 Além do DNS simples (IPv4 e IPv6), o AdGuard DNS suporta vários protocolos criptografados, para que você possa escolher o que melhor se adapta a você.
 
-### DNSCrypt
-
-O AdGuard DNS permite que você use um protocolo criptografado específico — DNSCrypt. Graças a ele, todas as solicitações de DNS estão sendo criptografadas, o que protege você de possíveis interceptações de solicitações e posterior espionagem e/ou alteração. Mas comparado aos protocolos DoH, DoT e DoQ, o DNSCrypt é considerado obsoleto e, se possível, recomendamos o uso desses protocolos.
-
 ### DNS-over-HTTPS (DoH) e DNS-over-TLS (DoT)
 
 DoH e DoT são protocolos DNS seguros modernos que ganham cada vez mais popularidade e se tornarão os padrões da indústria no futuro próximo. Ambos são mais confiáveis que o DNSCrypt e ambos são suportados pelo AdGuard DNS.
