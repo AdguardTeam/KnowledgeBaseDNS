@@ -9,7 +9,7 @@ AdGuard DNS supports DoH, DoT, and DoQ — three secure encrypted DNS protocols.
 
 ### DNS-over-TLS (DoT)
 
-DNS-over-TLS improves privacy by encrypting your DNS traffic and sending it over a dedicated port (port 853) specifically reserved for encrypted DNS traffic. 
+DNS-over-TLS improves privacy by encrypting your DNS traffic and sending it over a dedicated port (port 853) specifically reserved for encrypted DNS traffic.
 
 When it comes to privacy, DoT isn’t the strongest option. Because it uses a dedicated port (853), it’s easier for networks to detect and possibly block. However, it can still be useful in enterprise or managed environments, where administrators want to allow secure DNS but still keep control over network traffic.
 
