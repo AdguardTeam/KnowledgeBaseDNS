@@ -15,10 +15,6 @@ AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. De
 
 Neben einfachem DNS (sowohl IPv4 als auch IPv6) unterstützt AdGuard DNS verschiedene verschlüsselte Protokolle, so dass Sie das für Sie am besten geeignete auswählen können.
 
-### DNSCrypt
-
-AdGuard DNS ermöglicht Ihnen die Verwendung eines speziellen verschlüsselten Protokolls — DNSCrypt. Dank dieser Funktion werden alle DNS-Anfragen verschlüsselt, was Sie vor dem Abfangen von Anfragen und dem anschließenden Abhören und/oder Ändern schützt. Im Vergleich zu den Protokollen DoH, DoT und DoQ gilt DNSCrypt jedoch als veraltet, und wir empfehlen nach Möglichkeit die Verwendung dieser Protokolle.
-
 ### DNS-over-HTTPS (DoH) und DNS-over-TLS (DoT)
 
 DoH und DoT sind moderne, sichere DNS-Protokolle, die sich immer größerer Beliebtheit erfreuen und in absehbarer Zeit zu den Industriestandards gehören werden. Beide sind zuverlässiger als DNSCrypt und beide werden von AdGuard DNS unterstützt.

@@ -15,10 +15,6 @@ AdGuard DNS üç farklı türde genel sunucuya sahiptir. "Varsayılan" sunucu, r
 
 Düz DNS'nin (hem IPv4 hem de IPv6) yanı sıra AdGuard DNS, çeşitli şifrelenmiş protokolleri destekler, böylece size en uygun olanı seçebilirsiniz.
 
-### DNSCrypt
-
-AdGuard DNS, belirli bir şifrelenmiş protokol kullanmanıza olanak tanır — DNSCrypt. Bu sayede, tüm DNS istekleri şifrelenir, bu da sizi olası istek müdahalesinden ve ardından gizlice dinleme ve/veya değiştirmeden korur. Ancak DoH, DoT ve DoQ protokolleriyle karşılaştırıldığında DNSCrypt'in modası geçmiş olarak kabul edilir ve mümkünse bu protokolleri kullanmanızı öneririz.
-
 ### DNS-over-HTTPS (DoH) ve DNS-over-TLS (DoT)
 
 DoH ve DoT, giderek daha fazla popülerlik kazanan ve öngörülebilir gelecekte endüstri standartları hâline gelecek olan modern güvenli DNS protokolleridir. Her ikisi de DNSCrypt'ten daha güvenilirdir ve her ikisi de AdGuard DNS tarafından desteklenir.

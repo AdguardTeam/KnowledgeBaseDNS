@@ -15,10 +15,6 @@ AdGuard DNS heeft drie verschillende soorten publieke servers. De "standaard" se
 
 Naast gewone DNS (zowel IPv4 als IPv6) ondersteunt AdGuard DNS verschillende gecodeerde protocollen, zodat je degene kunt kiezen die het beste bij jou past.
 
-### DNSCrypt
-
-Met AdGuard DNS kun je een specifiek gecodeerd protocol gebruiken: DNSCrypt. Hierdoor worden alle DNS-verzoeken versleuteld, wat je beschermt tegen mogelijke onderschepping van verzoeken en vervolgens afluisteren en/of wijzigen. Maar in vergelijking met de DoH-, DoT- en DoQ-protocollen wordt DNSCrypt als verouderd beschouwd en indien mogelijk raden we aan om deze protocollen te gebruiken.
-
 ### DNS-over-HTTPS (DoH) en DNS-over-TLS (DoT)
 
 DoH en DoT zijn moderne, veilige DNS-protocollen die steeds populairder worden en in de nabije toekomst de industriestandaarden zullen worden. Beide zijn betrouwbaarder dan DNSCrypt en beide worden ondersteund door AdGuard DNS.

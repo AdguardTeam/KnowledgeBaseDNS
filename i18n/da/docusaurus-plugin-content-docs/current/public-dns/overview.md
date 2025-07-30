@@ -15,10 +15,6 @@ AdGuard DNS har tre forskellige typer offentlige servere. "Standard"-serveren er
 
 Udover alm. DNS (både IPv4 og IPv6) understøtter AdGuard DNS forskellige krypterede protokoller, så man kan vælge den, der passer bedst.
 
-### DNSCrypt
-
-AdGuard DNS muliggør brug af en særlig krypteret protokol - DNSCrypt. Takket være den, krypteres alle DNS-forespørgsler, hvilket beskytter mod mulig opfangning af forespørgsler og efterfølgende aflytning og/eller ændring. Sammenlignet med DoH-, DoT- og DoQ-protokollerne, anses DNSCrypt dog for forældet, og hvis muligt, anbefales brug af disse protokoller i stedet.
-
 ### DNS-over-HTTPS (DoH) og DNS-over-TLS (DoT)
 
 DoH og DoT er moderne sikre DNS-protokoller, som vinder mere og mere popularitet og vil blive industristandarderne indenfor en overskuelig fremtid. Begge er mere pålidelige end DNSCrypt, og begge understøttes af AdGuard DNS.
