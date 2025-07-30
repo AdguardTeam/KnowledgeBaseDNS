@@ -3,7 +3,7 @@ title: Choosing a DNS protocol
 sidebar_position: 2
 ---
 
-A DNS protocol is the set of rules that your device uses to communicate with a DNS server — the system that translates (or “resolves”) website names (like *example.com*) into IP addresses that computers understand. This process used to happen in plain text, meaning it could be seen or intercepted by others, like your internet provider or hackers. Encrypted DNS protocols fix that by protecting your DNS requests, making your browsing more private and secure.
+A DNS protocol is a set of rules that your device uses to communicate with a DNS server — a system that translates website names, like example.com, into IP addresses that computers can understand. This process used to occur in plain text, meaning it could be seen or intercepted by third parties, such as your ISP or hackers. Encrypted DNS protocols address this issue by protecting your DNS requests, thereby making your browsing more private and secure.
 
 AdGuard DNS supports DoH, DoT, and DoQ — three secure encrypted DNS protocols. They’re designed to protect your DNS traffic, but each has its own strengths and limitations. Here's a simple overview to help you understand the differences and pick the one that fits you best.
 
