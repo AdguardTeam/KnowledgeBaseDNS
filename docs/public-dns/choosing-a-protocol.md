@@ -15,7 +15,7 @@ When it comes to privacy, DoT isn’t the strongest option. Because it uses a de
 
 ### DNS-over-HTTPS (DoH)
 
-DNS-over-HTTPS sends your DNS queries through the same secure connection used to load websites — over port 443. This makes it harder for networks or censors to detect or block, which is great for privacy and specially useful when bypassing censorship.
+DNS-over-HTTPS sends your DNS queries through the same secure connection used to load websites — over port 443. This makes it harder for networks or censors to detect or block, which is great for privacy and especially useful when bypassing censorship.
 
 However, it can be unstable and result in performance issues. When all data packets share the same connection, they rely on the same transport layer. This can cause a problem called head-of-line blocking. If one packet is lost or delayed, it holds up everything else, even other packets that aren't related. As a result, all responses get delayed, even if most of the data is ready to be delivered.
 
@@ -31,6 +31,6 @@ If you're looking for a combination of privacy and stability, DoQ is usually the
 
 :::note
 
-More detailed information about head-of-line blocking and the DNS-over-QUIC protocol in our [blog post](https://adguard-dns.io/en/blog/dns-over-quic.html)
+More detailed information about head-of-line blocking and the DNS-over-QUIC protocol can be found in our [blog post](https://adguard-dns.io/en/blog/dns-over-quic.html)
 
 :::
