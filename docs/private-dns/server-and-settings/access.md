@@ -3,7 +3,7 @@ title: Access settings
 sidebar_position: 3
 ---
 
-By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won't bother you anymore!
+By configuring Access settings, you can protect your AdGuard DNS from unauthorized access. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 Blocked requests will not be displayed in the Query Log and are not counted in the total limit.
 
@@ -19,7 +19,7 @@ Here you can list the clients that are not allowed to use your DNS server. You c
 
 :::note Important
 
-Before applying the access settings, make sure you're not blocking your own IP address. If you do, you won't be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. If that happens, just disconnect from the DNS server, go to the access settings, and adjust the configurations accordingly.
 
 :::
 

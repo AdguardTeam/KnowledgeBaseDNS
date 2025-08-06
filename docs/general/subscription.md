@@ -20,11 +20,11 @@ To make the most out of AdGuard DNS, you can upgrade your plan for the following
 
 You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). To do so, click *Upgrade* under the section *AdGuard DNS*.
 
-The *Enterprise* plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
+The *Enterprise* plan is available by request only. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
 
 ## How to get a refund {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. The processing time usually takes up to 5-10 business days.
 
 A refund may be declined if:
 
