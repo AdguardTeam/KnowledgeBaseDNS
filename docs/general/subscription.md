@@ -9,6 +9,8 @@ AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/li
 
 The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
 
+AdGuard DNS plans are activated immediately. Sometimes activation might take up to five minutes. If you can’t activate your subscription, please contact our support team at support@adguard-dns.io.
+
 ## How to upgrade a plan {#upgrade}
 
 To make the most out of AdGuard DNS, you can upgrade your plan for the following benefits:
