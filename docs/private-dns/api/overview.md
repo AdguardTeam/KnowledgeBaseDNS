@@ -153,7 +153,7 @@ Once the access and the refresh tokens are generated, API calls can be made by p
 
 ### Reference
 
-Please see the methods reference [here](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### OpenAPI spec
 

@@ -3,15 +3,15 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [*Structured DNS Errors* (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we'll explain what *Structured DNS Errors* are and how they work.
+With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [*Structured DNS Errors* (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). This feature allows DNS servers to provide detailed information about blocked websites directly in the DNS response, rather than relying on generic browser messages. In this article, we’ll explain what *Structured DNS Errors* are and how they work.
 
 ## What Structured DNS Errors are
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic "This site can't be reached" error displayed by the browser.
+When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. However, if an entire website is blocked at the DNS level, the user will be completely unable to access the page. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don't explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
+Such errors don’t explain what happened and why. This leaves users confused about why a website is inaccessible, often leading them to assume that their Internet connection or DNS resolver is broken.
 
 To clarify this, DNS servers could redirect users to their own page with an explanation. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
 
