@@ -43,3 +43,13 @@ Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `
 ### Rate limit
 
 DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note
+
+This is an obsolete protocol with restricted support.
+
+:::
