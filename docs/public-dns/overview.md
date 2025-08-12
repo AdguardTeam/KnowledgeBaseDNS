@@ -16,16 +16,6 @@ Each server supports different secure protocols: DNSCrypt, DNS-over-HTTPS (DoH),
 
 Besides plain DNS (both IPv4 and IPv6) AdGuard DNS supports various encrypted protocols, so you can choose the one that suits you best.
 
-### DNSCrypt
-
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
-
-:::note
-
-This is an obsolete protocol with restricted support.
-
-:::
-
 ### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
 
 DoH and DoT are modern secure DNS protocols that gain more and more popularity and will become the industry standards for the foreseeable future. Both are more reliable than DNSCrypt and both are supported by AdGuard DNS.
@@ -53,3 +43,13 @@ Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `
 ### Rate limit
 
 DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note
+
+This is an obsolete protocol with restricted support.
+
+:::
