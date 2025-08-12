@@ -16,7 +16,7 @@ DNS damgaları, Güvenli DNS ayarlarını normal URL'lerin ötesinde özelleşti
 
 ## Protokol seçimi
 
-Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` ve diğerleri yer alır. Bu protokollerden birini seçmek, bunları hangi bağlamda kullanacağınıza bağlıdır.
+Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` ve diğerleri yer alır. Choosing one of these protocols depends on the context in which you’ll be using them.
 
 ## DNS damgası oluşturma
 
@@ -56,7 +56,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 
 ### Sertifika karmasının elde edilmesi
 
-**Sunucunun sertifika karmaları** alanını doldurmak için, `<IP_ADDRESS>`, `<PORT>` ve `<SERVER_NAME>` ile DNS sunucunuz için karşılık gelen değerleri değiştirerek aşağıdaki komutu kullanabilirsiniz:
+To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -64,7 +64,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-Karma komutunun sonucu, sunucunun sertifikası güncelleştirildikçe zaman içinde değişebilir. Bu nedenle, DNS damganız aniden çalışmayı durdurursa, sertifikanın karmasını yeniden hesaplamanız ve yeni bir damga oluşturmanız gerekebilir. DNS damganızı düzenli olarak güncellemek, Güvenli DNS hizmetinizin sürekli güvenli çalışmasını sağlamaya yardımcı olur.
+The result of the hash command may change over time as the server’s certificate is updated. Bu nedenle, DNS damganız aniden çalışmayı durdurursa, sertifikanın karmasını yeniden hesaplamanız ve yeni bir damga oluşturmanız gerekebilir. DNS damganızı düzenli olarak güncellemek, Güvenli DNS hizmetinizin sürekli güvenli çalışmasını sağlamaya yardımcı olur.
 
 :::
 
@@ -74,7 +74,7 @@ Artık Güvenli DNS kurmak için kullanabileceğiniz kendi DNS damganız var. Bu
 
 ## DNS damgası oluşturma örneği
 
-DoT kullanarak AdGuard DNS için bir damga oluşturma örneği üzerinden gidelim:
+Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. [DNSCrypt Damga Hesaplayıcısını](https://dnscrypt.info/stamps/) açın.
 
@@ -82,9 +82,9 @@ DoT kullanarak AdGuard DNS için bir damga oluşturma örneği üzerinden gideli
 
 3. Aşağıdaki alanları doldurun:
 
-    - **IP adresi**: DNS sunucusunun IP adresini ve bağlantı noktasını girin. Bu durumda, `94.140.14.14:853` şeklindedir.
+    - **IP adresi**: DNS sunucusunun IP adresini ve bağlantı noktasını girin. In this case, it’s `94.140.14.14:853`.
 
-    - **Ana makine adı**: DNS sunucusunun ana makine adını girin. Bu durumda, `dns.adguard-dns.com` şeklindedir.
+    - **Ana makine adı**: DNS sunucusunun ana makine adını girin. In this case, it’s `dns.adguard-dns.com`.
 
     - **Karma**: Komutu çalıştırın
 
@@ -92,7 +92,7 @@ DoT kullanarak AdGuard DNS için bir damga oluşturma örneği üzerinden gideli
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    Sonuç `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Sunucu sertifikasının bu SHA256 karmasını alana yapıştırın.
+    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server’s certificate into the field.
 
 4. Özellikler bölümünü boş bırakın.
 

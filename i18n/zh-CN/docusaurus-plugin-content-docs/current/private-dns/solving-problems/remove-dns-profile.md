@@ -3,7 +3,7 @@ title: 如何删除 DNS 配置文件
 sidebar_position: 3
 ---
 
-如果有用户想断开已有 DNS 配置文件的 iPhone、iPad 或 Mac 与您 DNS 服务器的连接，需要删除对应 DNS 配置文件。 以下是具体操作方法。
+如果有用户想断开已有 DNS 配置文件的 iPhone、iPad 或 Mac 与您 DNS 服务器的连接，需要删除对应 DNS 配置文件。 Here’s how to do it.
 
 在 Mac 上：
 

@@ -9,7 +9,7 @@ DNS 请求数量限制是指一种用于调节 DNS 服务器在特定时间周�
 
 ## 请求数量限制的工作原理
 
-DNS 速率限制通常通过设置客户端（IP 地址）在特定周期内可以向 DNS 服务器发送的请求数量的阈值来工作。 如果用户在当前的 AdGuard DNS 请求数量限制上遇到问题，并且您使用的是「_团队_」或「_企业版_」，可以请求增加请求数量。
+DNS 速率限制通常通过设置客户端（IP 地址）在特定周期内可以向 DNS 服务器发送的请求数量的阈值来工作。 If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## 如何申请 DNS 请求数量增加
 

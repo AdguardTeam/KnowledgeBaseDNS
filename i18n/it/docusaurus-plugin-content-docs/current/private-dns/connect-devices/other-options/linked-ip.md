@@ -9,7 +9,7 @@ Not all devices support encrypted DNS protocols. In this case, you should consid
 
 :::note
 
-A **residential IP address** is assigned to a device connected to a residential ISP. It's usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
+A **residential IP address** is assigned to a device connected to a residential ISP. It’s usually tied to a physical location and given to individual homes or apartments. People use residential IP addresses for everyday online activities like browsing the web, sending emails, using social media, or streaming content.
 
 :::
 
@@ -32,7 +32,7 @@ The following instructions explain how to connect to the device via **linking IP
 
 ## Dynamic DNS: Why it is useful
 
-Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Consequently, you'll need to update settings whenever the device is rebooted or the network changes.
+Every time a device connects to the network, it gets a new dynamic IP address. When a device disconnects, the DHCP server can assign the released IP address to another device on the network. This means dynamic IP addresses change frequently and unpredictably. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 To automatically keep the linked IP address updated, you can use DNS. AdGuard DNS will regularly check the IP address of your DDNS domain and link it to your server.
 
@@ -64,7 +64,7 @@ This way, you won’t have to manually update the associated IP address each tim
 
     ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you've successfully set up DDNS!
+All done, you’ve successfully set up DDNS!
 
 ## Automation of linked IP update via script
 
@@ -78,7 +78,7 @@ The easiest way is to use the Task Scheduler:
     - Set the trigger to run every 5 minutes.
     - Select _Run Program_ as the action.
 2. Select a program:
-    - In the _Program or Script_ field, type \`powershell'
+    - In the _Program or Script_ field, type `powershell`
     - In the _Add Arguments_ field, type:
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Save the task.

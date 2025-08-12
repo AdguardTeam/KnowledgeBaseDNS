@@ -21,7 +21,7 @@ sidebar_position: 2
 
 4. 点击「用户规则」。
 
-5. 您将找到几种添加用户规则的选项。
+5. You’ll find several options for adding user rules.
 
     - 最简单的方式是使用生成器。 点击「添加新规则」→ 输入您要拦截或取消拦截的域名 → 点击「添加规则」。
         ![添加规则 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

@@ -26,7 +26,7 @@ DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Do
 
 ## 何时可能需要清除缓存
 
-**您已将 DNS 提供商更改为 AdGuard DNS。**如果用户更改 DNS，由于缓存的原因，可能需要一些时间才能看到结果。
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **您经常收到 404 错误**。例如，网站被转移到新服务器，其 IP 地址已经改变。 要使浏览器从新的 IP 地址打开网站，需要从 DNS 缓存中删除已经缓存的 IP。
 
@@ -50,7 +50,7 @@ DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Do
 
 ### Android
 
-在 Android 设备上，有多种方式可以清理 DNS 缓存。 具体步骤会随着设备和 Android 版本而变化。
+在 Android 设备上，有多种方式可以清理 DNS 缓存。 The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### 通过 Chrome 清理 DNS 缓存
 
@@ -63,11 +63,11 @@ Google Chrome 通常是 Android 设备的默认浏览器，拥有自己的 DNS �
 
 #### 将 Wi-Fi 网络修改为静态网络
 
-要把 Wi-Fi 网络设置更改为静态网络以清除 Android 设备的 DNS 缓存，请按照以下步骤操作：
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. 前往*「设置」→「Wi-Fi」*并选择您所连接的网络。
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. 查找 IP 设置并选择「*静态*」。
-1. 填写必填字段。 您可以从网络管理员或路由器的配置页面获取必要的信息。
+1. 填写必填字段。 You can get the necessary information from your network administrator or from your router’s configuration page
 1. 输入所需信息后，重新连接到您的 Wi-Fi 网络。 此操作将强制设备更新其 IP 和 DNS 设置并清除 DNS 缓存。
 
 #### 高级网络设置
@@ -106,7 +106,7 @@ Linux 没有操作系统级别的 DNS 缓存，除非您安装并运行了 syste
 
 每个发行版本都需要先启动终端窗口。 按键盘上的 Ctrl+Alt+T，然后使用相应的命令清除 Linux 系统运行的服务的 DNS 缓存。
 
-要了解您正在使用哪个 DNS 解析器，请使用命令 `sudo lsof -i :53 -S`。
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

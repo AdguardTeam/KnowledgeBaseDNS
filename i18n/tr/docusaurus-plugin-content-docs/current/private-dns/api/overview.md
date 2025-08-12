@@ -149,7 +149,7 @@ Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim b
 
 ### Referans
 
-Lütfen referans yöntemlerine [buradan](reference.md) bakın.
+Please see the [method’s reference](reference.md).
 
 ### OpenAPI özellikleri
 

@@ -57,7 +57,7 @@ Talepte bulunmak için:
 3. _Blocklist request_ öğesine tıklayın ve formu doldurun.
 4. Formu doldurduktan sonra _Submit new issue_ öğesine tıklayın.
 
-Filtrenizin engelleme kuralları mevcut listeleri kopyalamıyorsa, depoya eklenecektir.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## Kullanıcı kuralları
 

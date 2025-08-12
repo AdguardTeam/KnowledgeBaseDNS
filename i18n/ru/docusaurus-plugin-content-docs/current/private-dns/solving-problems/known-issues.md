@@ -23,7 +23,7 @@ sidebar_position: 1
 
 ![Функция «Использовать безопасный DNS-сервер» в Chrome](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Если вы отключите собственные DNS-настройки в Chrome, браузер будет использовать DNS, указанный в вашей операционной системе, который должен быть AdGuard DNS, если вы правильно его настроили.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## Частный узел iCloud (Safari, macOS и iOS)
 

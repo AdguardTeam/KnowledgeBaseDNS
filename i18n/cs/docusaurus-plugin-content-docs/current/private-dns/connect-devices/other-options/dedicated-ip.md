@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Vyhrazené adresy IPv4 jsou k dispozici uživatelům s předplatným Team a Enterprise, zatímco propojené IP jsou k dispozici všem.
 
-Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhrazených IP adres. Požadavky na tyto adresy jsou považovány za "vaše" a podle toho jsou použity konfigurace a pravidla filtrování na úrovni serveru. Vyhrazené IP adresy jsou mnohem bezpečnější a snadněji se spravují. S propojenými IP adresami se musíte ručně znovu připojit nebo použít speciální program pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
+Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhrazených IP adres. Požadavky na tyto adresy jsou považovány za vaše a podle toho jsou použity konfigurace a pravidla filtrování na úrovni serveru. Vyhrazené IP adresy jsou mnohem bezpečnější a snadněji se spravují. S propojenými IP adresami se musíte ručně znovu připojit nebo použít speciální program pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
 
 ## Proč potřebujete vyhrazenou IP adresu?
 

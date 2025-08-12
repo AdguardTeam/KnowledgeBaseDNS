@@ -57,7 +57,7 @@ Para enviar uma solicitação:
 3. Clique em _Solicitação de lista de bloqueio_ e preencha o formulário.
 4. Após preencher o formulário, clique em _Enviar nova questão_.
 
-Se as regras de bloqueio do seu filtro não duplicarem as listas existentes, serão adicionadas ao repositório.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## Regras de usuário
 

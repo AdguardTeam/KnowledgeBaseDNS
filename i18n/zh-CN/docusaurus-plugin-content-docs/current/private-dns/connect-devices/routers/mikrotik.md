@@ -8,7 +8,7 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
 ## 配置 DNS-over-HTTPS
 
 1. 请转到 MikroTik 路由器设置：
-    - 打开浏览器并转到路由器的 IP 地址（通常为 `192.168.88.1`）。
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - 或者，也可以使用 Winbox 连接到 MikroTik 路由器。
     - 输入您的管理员用户名和密码。
 2. 导入根证书：
@@ -40,14 +40,14 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
     - 点击「_确定_」。
 6. Test and verify:
     - You might need to reboot your MikroTik router for all changes to take effect
-    - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+    - Clear your browser’s DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
 ## My router does not support DNS-over-HTTPS
 
 Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
 1. 请转到 MikroTik 路由器设置：
-    - 打开浏览器并转到路由器的 IP 地址（通常为 `192.168.88.1`）。
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - 或者，也可以使用 Winbox 连接到 MikroTik 路由器。
     - 输入您的管理员用户名和密码。
 2. Configure Plain DNS:

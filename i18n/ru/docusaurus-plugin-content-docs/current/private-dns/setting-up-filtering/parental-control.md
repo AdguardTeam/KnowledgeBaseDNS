@@ -5,11 +5,11 @@ sidebar_position: 4
 
 ## Что это такое
 
-Родительский контроль — это набор настроек, который позволяет гибко настраивать доступ к определённым сайтам с «чувствительным» контентом.  С помощью этой функции можно ограничить доступ детей к сайтам для взрослых, настроить поисковые запросы, заблокировать использование популярных сервисов и многое другое.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## Как настроить
 
-Вы можете гибко настроить все функции на своих серверах, включая функцию родительского контроля. [В соответствующей статье](private-dns/server-and-settings/server-and-settings.md) вы можете ознакомиться с тем, что такое «сервер» в AdGuard DNS, и узнать, как создать разные серверы с разными наборами настроек.
+Вы можете гибко настроить все функции на своих серверах, включая функцию родительского контроля. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Затем перейдите в настройки выбранного сервера и включите необходимые конфигурации.
 
@@ -33,7 +33,7 @@ sidebar_position: 4
 
 ### Заблокированные сервисы и сайты
 
-AdGuard DNS блокирует доступ к популярным сервисам одним нажатием. Полезно, если вы не хотите, чтобы подключённые устройства заходили, например, на YouTube или в Instagram.
+AdGuard DNS блокирует доступ к популярным сервисам одним нажатием. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Заблокированные сервисы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

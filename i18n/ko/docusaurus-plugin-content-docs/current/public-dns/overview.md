@@ -9,15 +9,11 @@ AdGuard DNS는 무료로, 안전한 연결을 제공하고 추적, 광고, 피�
 
 ## 공용 AdGuard DNS 서버
 
-AdGuard DNS has three different types of public servers. "기본" 서버는 광고, 추적기, 멀웨어 및 피싱 웹사이트를 차단하기 위한 것입니다. "가족 보호"도 동일하지만 성인 콘텐츠가 포함된 웹사이트를 차단하고 이를 제공하는 브라우저에서 "안전한 검색" 옵션을 제공합니다. "필터링 하지 않음" 은 안전하고 신뢰할 수 있는 연결을 제공하지만 아무것도 차단하지 않습니다. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). 각 서버는 DNSCrypt, DNS-over-HTTPS(DoH), DNS-over-TLS(DoT) 및 DNS-over-QUIC(DoQ)와 같은 다양한 보안 프로토콜을 지원합니다.
+AdGuard DNS has three different types of public servers. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. You can find detailed instructions on setting up AdGuard DNS on any device on [our website](https://adguard-dns.io/public-dns.html). 각 서버는 DNSCrypt, DNS-over-HTTPS(DoH), DNS-over-TLS(DoT) 및 DNS-over-QUIC(DoQ)와 같은 다양한 보안 프로토콜을 지원합니다.
 
 ## AdGuard DNS 프로토콜
 
 일반 DNS(IPv4 및 IPv6 모두) 외에도 AdGuard DNS는 다양한 암호화 프로토콜을 지원하므로 가장 적합한 프로토콜을 선택할 수 있습니다.
-
-### DNSCrypt
-
-AdGuard DNS를 사용하면 특정 암호화 프로토콜 DNSCrypt를 사용할 수 있습니다. 그 덕분에 모든 DNS 요청이 암호화되어 요청 가로채기 및 도청, 변경으로부터 사용자를 보호합니다. 그러나 DoH, DoT 및 DoQ 프로토콜에 비교할 때, DNSCrypt는 더 이상 사용되지 않는 것으로 간주되며 가능한 경우 이러한 프로토콜을 사용하는 것이 좋습니다.
 
 ### DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT)
 
@@ -31,11 +27,11 @@ AdGuard DNS also provides a JSON API for DNS. It is possible to get a DNS respon
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google's guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
+For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Getting a DNS response in JSON works the same way with AdGuard DNS.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Comment` values in response JSONs.
+Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
 
 :::
 
@@ -46,3 +42,13 @@ Unlike with Google DNS, AdGuard DNS doesn't support `edns_client_subnet` and `Co
 ### 요청 한도
 
 DNS rate limiting is a technique used to regulate the amount of traffic a DNS server can handle within a specific time period. We offer the option to increase the default limit for Team and Enterprise plans of Private AdGuard DNS. For more information, please [read the related article](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note
+
+This is an obsolete protocol with restricted support.
+
+:::

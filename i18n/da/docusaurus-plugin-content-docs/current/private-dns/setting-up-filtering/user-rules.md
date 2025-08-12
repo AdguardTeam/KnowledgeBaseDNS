@@ -21,7 +21,7 @@ For at opsætte brugerregler:
 
 4. Klik på indstillingen _Brugerregler_.
 
-5. Der findes flere muligheder for at tilføje brugerregler.
+5. You’ll find several options for adding user rules.
 
     - Den nemmeste måde er at bruge generatoren. For at bruge den, klik på _Tilføj ny regel_ → Angiv navnet på det domæne, man vil blokere eller afblokere → Klik på _Tilføj regel_
         ![Tilføj regel \*grænse](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

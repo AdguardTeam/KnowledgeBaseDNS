@@ -23,7 +23,7 @@ Anvendes Chrome, og ses ingen forespørgsler i AdGuard DNS-kontrolpanelet, kan d
 
 ![Chromes funktion Benyt sikker DNS](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Deaktiveres Chromes egne DNS-indstillinger, vil webbrowseren bruge operativsystemets opsatte DNS, hvilket bør være AdGuard DNS, såfremt den er korrekt opsat.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud Private Relay (Safari, macOS og iOS)
 

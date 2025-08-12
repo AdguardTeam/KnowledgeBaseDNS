@@ -54,7 +54,7 @@ Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
 ## Použití konfiguračního profilu
 
-Profil zařízení macOS, který společnost Apple označuje také jako "konfigurační profil", je certifikátem podepsaný soubor XML, který můžete do zařízení nainstalovat ručně nebo nasadit pomocí řešení MDM. Umožňuje také nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
+Profil zařízení macOS, který společnost Apple označuje také jako konfigurační profil, je certifikátem podepsaný soubor XML, který můžete do zařízení nainstalovat ručně nebo nasadit pomocí řešení MDM. Umožňuje také nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
 
 :::note Důležité
 

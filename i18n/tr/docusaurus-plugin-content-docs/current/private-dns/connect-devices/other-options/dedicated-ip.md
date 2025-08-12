@@ -7,13 +7,13 @@ sidebar_position: 2
 
 Özel IPv4 adresleri Takım ve Kurumsal aboneliklere sahip kullanıcılar tarafından kullanılabilirken, bağlı IP'ler herkes tarafından kullanılabilir.
 
-Bir Takım veya Kurumsal aboneliğiniz varsa, birkaç kişisel özel IP adresi alırsınız. Bu adreslere gelen istekler "sizin" olarak değerlendirilir, sunucu düzeyindeki yapılandırmalar ve filtreleme kuralları buna göre uygulanır. Özel IP adresleri çok daha güvenli ve yönetimi daha kolaydır. Bağlı IP'lerde, cihazın IP adresi her yeniden başlatmadan sonra değiştiğinde, elle yeniden bağlanmanız veya özel bir program kullanmanız gerekir.
+If you have a Team or Enterprise subscription, you’ll receive several personal dedicated IP addresses. Requests to these addresses are treated as yours, and server-level configurations and filtering rules are applied accordingly. Özel IP adresleri çok daha güvenli ve yönetimi daha kolaydır. With linked IPs, you have to manually reconnect or use a special program every time the device’s IP address changes, which happens after every reboot.
 
 ## Neden özel IP'ye ihtiyacınız var?
 
 Ne yazık ki, bağlı cihazın teknik özellikleri her zaman şifrelenmiş özel bir AdGuard DNS sunucusu kurmanıza izin vermeyebilir. Bu durumda, standart şifrelenmemiş DNS kullanmanız gerekir. AdGuard DNS'i kurmanın iki yolu vardır: [bağlı IP'leri kullanarak](/private-dns/connect-devices/other-options/linked-ip.md) ve özel IP'leri kullanarak.
 
-Özel IP'ler genellikle daha istikrarlı bir seçenektir. Bağlı IP'nin bazı sınırlamaları vardır; örneğin yalnızca konut adreslerine izin verilir, sağlayıcınız IP'yi değiştirebilir ve IP adresini yeniden bağlamanız gerekir. Özel IP'lerle, yalnızca size ait bir IP adresine sahip olursunuz ve cihazınıza gelen tüm istekler sayılacaktır.
+Özel IP'ler genellikle daha istikrarlı bir seçenektir. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you’ll need to relink the IP address. Özel IP'lerle, yalnızca size ait bir IP adresine sahip olursunuz ve cihazınıza gelen tüm istekler sayılacaktır.
 
 Dezavantajı, genel DNS çözümleyicilerinde her zaman olduğu gibi alakasız trafik (tarayıcılar, botlar) almaya başlayabilirsiniz. Bot trafiğini kısıtlamak için [Erişim ayarları](/private-dns/server-and-settings/access.md) kullanmanız gerekebilir.
 

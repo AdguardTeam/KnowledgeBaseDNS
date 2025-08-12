@@ -54,7 +54,7 @@ Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 ## Brug en opsætningsprofil
 
-En macOS-enhedsprofil, også kaldet en "opsætningsprofil" jf. Apple, er en certifikatsigneret XML-fil, som man kan installere manuelt på enheden eller udrulle vha. en MDM-løsning. Den muliggør også opsætning af AdGuard DNS på enheden.
+A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Den muliggør også opsætning af AdGuard DNS på enheden.
 
 :::note Vigtigt
 

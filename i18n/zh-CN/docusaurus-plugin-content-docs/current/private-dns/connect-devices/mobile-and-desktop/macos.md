@@ -54,7 +54,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 macOS 设备上使用 AdG
 
 ## 使用配置文件
 
-macOS 设备的描述文件，也被 Apple 称为「配置描述文件」，是一个通过证书签名的 XML 文件，用户可以手动在设备上安装，或者通过 MDM 解决方案进行部署。 用户还可以用配置描述文件在设备上配私人 AdGuard DNS。
+A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. 用户还可以用配置描述文件在设备上配私人 AdGuard DNS。
 
 :::note 重要信息
 

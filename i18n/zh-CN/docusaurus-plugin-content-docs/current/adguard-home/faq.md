@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-请不要在 Apache 反向 HTTP 代理中使用子目录。  这是一个已知问题 ([#6604])，Apache 处理相对重定向的方式与其他网络服务器不同。 这会导致 AdGuard Home 网络界面出现问题。
+请不要在 Apache 反向 HTTP 代理中使用子目录。  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. 这会导致 AdGuard Home 网络界面出现问题。
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 

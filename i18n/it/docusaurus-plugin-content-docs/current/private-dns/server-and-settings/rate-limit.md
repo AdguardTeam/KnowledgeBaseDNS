@@ -9,7 +9,7 @@ Senza limiti di richieste, i server DNS sono vulnerabili a sovraccarichi e, di c
 
 ## Come funziona il limite di richieste
 
-La limitazione delle richieste DNS funziona tipicamente impostando soglie sul numero di richieste che un client (Indirizzo IP) può fare a un server DNS in un certo periodo di tempo. Se riscontri problemi con il limite attuale delle richieste di AdGuard DNS e sei in un _piano_ _Team_ o _Azienda_, puoi fare una richiesta di aumento del limite di velocità.
+La limitazione delle richieste DNS funziona tipicamente impostando soglie sul numero di richieste che un client (Indirizzo IP) può fare a un server DNS in un certo periodo di tempo. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## Come richiedere un aumento del limite di richiesta DNS
 

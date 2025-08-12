@@ -33,8 +33,8 @@ sidebar_position: 2
 
 除了国家/地区名称外，列表还包含两个常规类别：
 
-- **不适用**：响应不包含 IP 地址。
-- **未知目的地**：无法从 IP 地址确定国家。
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![流量目的地排行 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

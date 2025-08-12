@@ -9,7 +9,7 @@ Sin límites de tasa, los servidores DNS son vulnerables a ser sobrecargados, y 
 
 ## ¿Cómo funciona el límite de tasa?
 
-La limitación de tasa de DNS típicamente funciona estableciendo umbrales en el número de peticiones que un cliente (dirección IP) puede hacer a un servidor DNS durante un cierto período. Si estás teniendo problemas con el límite de tasa actual de AdGuard DNS y estás en un plan _Team_ o _Enterprise_, puedes hacer una Petición para un aumento del límite de tasa.
+La limitación de tasa de DNS típicamente funciona estableciendo umbrales en el número de peticiones que un cliente (dirección IP) puede hacer a un servidor DNS durante un cierto período. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## Cómo hacer una Petición de aumento del límite de tasa de DNS
 

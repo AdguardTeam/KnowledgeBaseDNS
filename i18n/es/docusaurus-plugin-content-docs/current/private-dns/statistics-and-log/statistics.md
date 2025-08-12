@@ -33,8 +33,8 @@ Esto muestra los países a los que se han enviado más peticiones.
 
 Además de los nombres de los países, la lista contiene dos categorías generales más:
 
-- **No aplicable**: La respuesta no incluye la dirección IP
-- **Destino desconocido**: No se puede determinar el país a partir de la dirección IP
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Principales destinos \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

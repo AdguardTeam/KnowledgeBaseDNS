@@ -9,15 +9,11 @@ AdGuard DNS, güvenli bağlantı sağlayan ve ayrıca izleme, reklamlar, kimlik 
 
 ## Genel AdGuard DNS sunucuları
 
-AdGuard DNS üç farklı türde genel sunucuya sahiptir. "Varsayılan" sunucu, reklamları, izleyicileri, kötü amaçlı yazılımları ve kimlik avı siteleri engellemek içindir. "Family protection" da aynı şeyi yapar, ancak aynı zamanda yetişkinlere yönelik içeriğe sahip siteleri engeller ve bunu sağlayan tarayıcılarda "Güvenli arama" seçeneğini uygular. "Non-filtering" güvenli ve güvenilir bir bağlantı sağlar ancak hiçbir şeyi engellemez. Herhangi bir cihazda AdGuard DNS kurulumu hakkında ayrıntılı talimatları [web sitemizde](https://adguard-dns.io/public-dns.html) bulabilirsiniz. Her sunucu farklı güvenli protokolleri destekler: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) ve DNS-over-QUIC (DoQ).
+AdGuard DNS üç farklı türde genel sunucuya sahiptir. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Herhangi bir cihazda AdGuard DNS kurulumu hakkında ayrıntılı talimatları [web sitemizde](https://adguard-dns.io/public-dns.html) bulabilirsiniz. Her sunucu farklı güvenli protokolleri destekler: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) ve DNS-over-QUIC (DoQ).
 
 ## AdGuard VPN protokolleri
 
 Düz DNS'nin (hem IPv4 hem de IPv6) yanı sıra AdGuard DNS, çeşitli şifrelenmiş protokolleri destekler, böylece size en uygun olanı seçebilirsiniz.
-
-### DNSCrypt
-
-AdGuard DNS, belirli bir şifrelenmiş protokol kullanmanıza olanak tanır — DNSCrypt. Bu sayede, tüm DNS istekleri şifrelenir, bu da sizi olası istek müdahalesinden ve ardından gizlice dinleme ve/veya değiştirmeden korur. Ancak DoH, DoT ve DoQ protokolleriyle karşılaştırıldığında DNSCrypt'in modası geçmiş olarak kabul edilir ve mümkünse bu protokolleri kullanmanızı öneririz.
 
 ### DNS-over-HTTPS (DoH) ve DNS-over-TLS (DoT)
 
@@ -31,11 +27,11 @@ AdGuard DNS ayrıca DNS için bir JSON API sağlar. Aşağıdakileri yazarak JSO
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-Ayrıntılı dokümantasyon için [DNS-over-HTTPS için JSON API'ye ilişkin Google kılavuzuna](https://developers.google.com/speed/public-dns/docs/doh/json) bakın. JSON'da bir DNS yanıtı almak, AdGuard DNS ile aynı şekilde çalışır.
+For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). JSON'da bir DNS yanıtı almak, AdGuard DNS ile aynı şekilde çalışır.
 
 :::note Not
 
-Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_subnet` ve `Comment` değerlerini desteklemez.
+Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
 
 :::
 
@@ -46,3 +42,13 @@ Google DNS'den farklı olarak AdGuard DNS, yanıt JSON'larında `edns_client_sub
 ### Oran sınırlaması
 
 DNS oran sınırlaması, bir DNS sunucusunun belirli bir süre içinde işleyebileceği trafik miktarını düzenlemek için kullanılan bir tekniktir. Özel AdGuard DNS'in Takım ve Kurumsal planları için varsayılan kısıtlamayı artırma seçeneği sunuyoruz. Daha fazla bilgi için lütfen [ilgili makaleyi okuyun](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note Not
+
+This is an obsolete protocol with restricted support.
+
+:::

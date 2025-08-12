@@ -59,7 +59,7 @@ Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
 ## Usa un profilo di configurazione
 
-Un profilo dispositivo iOS, noto anche come "profilo di configurazione" da Apple, è un file XML firmato con un certificato che puoi installare manualmente sul tuo dispositivo iOS o distribuire utilizzando una soluzione MDM. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
+An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
 
 :::note Importante
 

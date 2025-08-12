@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::note
 
-**住宅 IP 地址**是指分配给连接到住宅互联网服务提供商（ISP）的设备地址。 通常它与地理位置相关联，并分配给个人住宅或公寓。 人们使用住宅 IP 地址进行日常在线活动，如浏览网络、发送电子邮箱、使用社交媒体或进行串流。
+**住宅 IP 地址**是指分配给连接到住宅互联网服务提供商（ISP）的设备地址。 It’s usually tied to a physical location and given to individual homes or apartments. 人们使用住宅 IP 地址进行日常在线活动，如浏览网络、发送电子邮箱、使用社交媒体或进行串流。
 
 :::
 
@@ -32,7 +32,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
 ## 动态 DNS：为什么有用
 
-每次设备连接到网络时，它都会获得一个新的动态 IP 地址。 当设备断开连接时，DHCP 协议服务器可以将释放的 IP 地址分配给网络上的另一台设备。 这意味着动态 IP 地址经常变化，而用户无法预测变化地址的时间。 因此，每当设备重新启动或网络变化时，您需要更新设置。
+每次设备连接到网络时，它都会获得一个新的动态 IP 地址。 当设备断开连接时，DHCP 协议服务器可以将释放的 IP 地址分配给网络上的另一台设备。 这意味着动态 IP 地址经常变化，而用户无法预测变化地址的时间。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 要自动保持关联 IP 地址更新，用户可以使用 DNS。 AdGuard DNS 将定期检查 DDNS 域名的 IP 地址，并将其连接到用户的服务器。
 
@@ -64,7 +64,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
     ![配置 DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-全部完成，DDNS 设置成功！
+All done, you’ve successfully set up DDNS!
 
 ## 通过脚本自动更新关联 IP 地址
 
@@ -78,7 +78,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
     - 将触发器设置为每 5 分钟运行。
     - 选择「_运行程序_」作为操作。
 2. 选择一个程序：
-    - 在「_程序或脚本_」字段中，输入 `powershell`
+    - In the _Program or Script_ field, type `powershell`
     - 在「_添加参数_」字段中，输入：
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. 保存任务。

@@ -3,7 +3,7 @@ title: İstatistik ve Sorgu günlüğü
 sidebar_position: 1
 ---
 
-AdGuard DNS kullanmanın amaçlarından biri de cihazlarınızın ne yaptığını ve neye bağlandığını net bir şekilde anlamaktır. Bu netlik olmadan, cihazlarınızın etkinliklerini izlemenin bir yolu yoktur.
+AdGuard DNS kullanmanın amaçlarından biri de cihazlarınızın ne yaptığını ve neye bağlandığını net bir şekilde anlamaktır. Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS, sorguları izlemek için çok çeşitli kullanışlı araçlar sağlar:
 

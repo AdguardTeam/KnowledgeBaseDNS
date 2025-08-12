@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## What is a server and how to use it
 
-设置私人 AdGuard DNS 时，您将遇到「服务器」这个词。
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 服务器就像是一个“描述文件”，用户将设备连接至其中。
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 有关流量过滤和拦截规则的更多信息，请查看相应的文章：[如何在 AdGuard DNS 中设置过滤](/private-dns/setting-up-filtering/blocklists.md)。
 
-如果您对特定设置感兴趣，有专门的文章供您参考：
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [高级设置](/private-dns/server-and-settings/advanced.md)
 - [访问设置](/private-dns/server-and-settings/access.md)

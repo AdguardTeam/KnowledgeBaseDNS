@@ -8,7 +8,7 @@ MikroTik-Router verwenden das quelloffene Betriebssystem RouterOS, das Routing-,
 ## DNS-over-HTTPS konfigurieren
 
 1. Aufrufen der MikroTik-Router-Einstellungen:
-    - Öffnen Sie Ihren Browser und rufen Sie die IP-Adresse Ihres Routers auf (normalerweise `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Sie können auch Winbox verwenden, um eine Verbindung zu Ihrem MikroTik-Router herzustellen
     - Geben Sie den Benutzernamen und das Passwort des Administrators ein
 2. Stammzertifikat importieren:
@@ -40,14 +40,14 @@ MikroTik-Router verwenden das quelloffene Betriebssystem RouterOS, das Routing-,
     - Klicken Sie auf _OK_
 6. Testen und überprüfen:
     - Möglicherweise müssen Sie Ihren MikroTik-Router neu starten, damit alle Änderungen wirksam werden
-    - Leeren Sie den DNS-Cache Ihres Browsers. Sie können ein Tool wie [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) verwenden, um zu prüfen, ob Ihre DNS-Anfragen jetzt über AdGuard geleitet werden
+    - Clear your browser’s DNS cache. Sie können ein Tool wie [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) verwenden, um zu prüfen, ob Ihre DNS-Anfragen jetzt über AdGuard geleitet werden
 
 ## Mein Router unterstützt kein DNS-over-HTTPS
 
 Verwenden Sie diese Anleitung, wenn Ihr MikroTik-Router keine DNS-over-HTTPS-Konfiguration unterstützt:
 
 1. Aufrufen der MikroTik-Router-Einstellungen:
-    - Öffnen Sie Ihren Browser und rufen Sie die IP-Adresse Ihres Routers auf (normalerweise `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Sie können auch Winbox verwenden, um eine Verbindung zu Ihrem MikroTik-Router herzustellen
     - Geben Sie den Benutzernamen und das Passwort des Administrators ein
 2. Einfaches DNS konfigurieren:

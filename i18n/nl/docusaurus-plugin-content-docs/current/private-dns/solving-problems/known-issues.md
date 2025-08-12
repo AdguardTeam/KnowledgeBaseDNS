@@ -23,7 +23,7 @@ Als je Chrome gebruikt en je ziet geen verzoeken in jouw AdGuard DNS-dashboard, 
 
 ![Chrome’s Use secure DNS feature](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Als je de eigen DNS-instellingen van Chrome uitschakelt, gebruikt de browser de DNS die is opgegeven in jouw besturingssysteem. Dit zou AdGuard DNS moeten zijn als je dit correct hebt ingesteld.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud Private Relay (Safari, macOS en iOS)
 

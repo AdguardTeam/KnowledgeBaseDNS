@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
-有一个缺点，小米路由器不支持加密 DNS，但非常适合通过绑定 IP 地址设置 AdGuard DNS。
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## 使用路由器管理面板
 

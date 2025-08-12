@@ -3,7 +3,7 @@ title: 权限设置
 sidebar_position: 3
 ---
 
-通过配置权限设置，可以保护 AdGuard DNS 免受未经授权的访问。 例如，您使用的是一个专用的 IPv4 地址，攻击者通过嗅探器识别了它，并向它发送大量请求。 没问题，只需将麻烦的域名或 IP 地址添加到列表中，它将不再打扰您！
+通过配置权限设置，可以保护 AdGuard DNS 免受未经授权的访问。 例如，您使用的是一个专用的 IPv4 地址，攻击者通过嗅探器识别了它，并向它发送大量请求。 No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 被拦截的请求不会显示在查询日志中，也不会计入总请求限制。
 
@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note 重要信息
 
-在应用访问权限设置之前，请确保没有阻止您自己的 IP 地址。 如果这样做，您将无法连接网络。 如果出现这种情况，只需断开与 DNS 服务器的连接，转到访问权限设置，并相应地调整配置。
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. 如果出现这种情况，只需断开与 DNS 服务器的连接，转到访问权限设置，并相应地调整配置。
 
 :::
 

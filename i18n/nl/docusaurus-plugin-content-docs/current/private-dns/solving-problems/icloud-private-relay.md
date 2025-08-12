@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-Wanneer je iCloud Private Relay gebruikt, zal het AdGuard DNS-dashboard (en de bijbehorende [AdGuard-testpagina](https://adguard.com/test.html)) laten zien dat je AdGuard DNS niet gebruikt op dat apparaat.
+When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![Apparaat is niet verbonden](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-Om dit probleem op te lossen, moet je AdGuard-websites jouw IP-adres laten zien in de instellingen van je apparaat.
+To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
 
 - Op iPhone of iPad:
 
@@ -29,10 +29,10 @@ Om dit probleem op te lossen, moet je AdGuard-websites jouw IP-adres laten zien 
 
     1. Herhaal dit voor `adguard.com`
 
-If you can't see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
+If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 Now your device should be displayed correctly in the AdGuard DNS dashboard:
 
 ![Device is connected](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you're browsing.
+Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.

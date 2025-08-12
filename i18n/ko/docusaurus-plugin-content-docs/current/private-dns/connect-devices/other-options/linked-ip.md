@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::note
 
-**주거용 IP 주소**는 주거용 ISP에 연결된 기기에 할당됩니다. 일반적으로 물리적 위치와 연결되어 있으며 개별 주택이나 아파트에 제공됩니다. 사람들은 웹 검색, 이메일 전송, 소셜 미디어 사용, 콘텐츠 스트리밍과 같은 일상적인 온라인 활동에 주거용 IP 주소를 사용합니다.
+**주거용 IP 주소**는 주거용 ISP에 연결된 기기에 할당됩니다. It’s usually tied to a physical location and given to individual homes or apartments. 사람들은 웹 검색, 이메일 전송, 소셜 미디어 사용, 콘텐츠 스트리밍과 같은 일상적인 온라인 활동에 주거용 IP 주소를 사용합니다.
 
 :::
 
@@ -32,7 +32,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
 ## 동적 DNS
 
-기기가 네트워크에 연결할 때마다 새로운 동적 IP 주소를 얻습니다. 기기가 연결이 끊어지면, DHCP 서버는 해제된 IP 주소를 네트워크의 다른 기기에 할당할 수 있습니다. 즉, 동적 IP 주소는 예측할 수 없을 정도로 자주 변경됩니다. 따라서 기기를 재부팅하거나 네트워크가 변경될 때마다 설정을 업데이트해야 합니다.
+기기가 네트워크에 연결할 때마다 새로운 동적 IP 주소를 얻습니다. 기기가 연결이 끊어지면, DHCP 서버는 해제된 IP 주소를 네트워크의 다른 기기에 할당할 수 있습니다. 즉, 동적 IP 주소는 예측할 수 없을 정도로 자주 변경됩니다. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 연결된 IP 주소를 자동으로 업데이트하려면 DNS를 사용하면 됩니다. AdGuard DNS는 정기적으로 DDNS 도메인의 IP 주소를 확인하여 서버에 연결합니다.
 
@@ -64,7 +64,7 @@ DDNS(동적 DNS)는 IP 주소가 변경될 때마다 DNS 레코드를 자동으�
 
     ![DDNS 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-DDNS를 성공적으로 설정했습니다!
+All done, you’ve successfully set up DDNS!
 
 ## 스크립트를 통한 연결된 IP 업데이트 자동화
 
@@ -78,7 +78,7 @@ DDNS를 성공적으로 설정했습니다!
     - 트리거를 5분마다 실행되도록 설정합니다.
     - 액션으로 **프로그램 실행**을 선택합니다.
 2. 프로그램을 선택합니다.
-    - **프로그램 또는 스크립트** 필드에 \`powershell'을 입력합니다.
+    - In the _Program or Script_ field, type `powershell`
     - **인수 추가** 필드에 다음을 입력합니다.
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. 작업을 저장합니다.

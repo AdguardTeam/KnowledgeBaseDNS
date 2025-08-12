@@ -8,7 +8,7 @@ MikroTik yönlendiriciler, ev ve küçük ofis ağları için yönlendirme, kabl
 ## DNS-over-HTTPS'i yapılandırma
 
 1. MikroTik yönlendiricinize erişin:
-    - Web tarayıcınızı açın ve yönlendiricinizin IP adresine gidin (genellikle `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Alternatif olarak, MikroTik yönlendiricinize bağlanmak için Winbox'ı kullanabilirsiniz
     - Enter your administrator username and password
 2. Kök sertifikayı içe aktarın:
@@ -40,14 +40,14 @@ MikroTik yönlendiriciler, ev ve küçük ofis ağları için yönlendirme, kabl
     - _Tamam_ öğesine tıklayın
 6. Test edin ve doğrulayın:
     - Tüm değişikliklerin etkili olması için MikroTik yönlendiricinizi yeniden başlatmanız gerekebilir
-    - Tarayıcınızın DNS önbelleğini temizleyin. DNS isteklerinizin artık AdGuard üzerinden yönlendirilip yönlendirilmediğini kontrol etmek için [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) gibi bir araç kullanabilirsiniz
+    - Clear your browser’s DNS cache. DNS isteklerinizin artık AdGuard üzerinden yönlendirilip yönlendirilmediğini kontrol etmek için [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) gibi bir araç kullanabilirsiniz
 
 ## Yönlendiricim DNS-over-HTTPS'yi desteklemiyor
 
 MikroTik yönlendiriciniz DNS-over-HTTPS yapılandırmasını desteklemiyorsa şu talimatları kullanın:
 
 1. MikroTik yönlendiricinize erişin:
-    - Web tarayıcınızı açın ve yönlendiricinizin IP adresine gidin (genellikle `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Alternatif olarak, MikroTik yönlendiricinize bağlanmak için Winbox'ı kullanabilirsiniz
     - Enter your administrator username and password
 2. Düz DNS'i yapılandırın:

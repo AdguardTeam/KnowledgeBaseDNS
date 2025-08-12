@@ -39,7 +39,7 @@ AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
 
   :::caution
 
-  在 macOS 上，全局安装的守护进程必须归 `root` 所有 (参见 [`launchd` 文档][launchd-requirements])，因此 `AdGuardDNSClient` 可执行文件必须放在 `/Applications/` 目录或其子目录中。
+  On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
 
   :::
 

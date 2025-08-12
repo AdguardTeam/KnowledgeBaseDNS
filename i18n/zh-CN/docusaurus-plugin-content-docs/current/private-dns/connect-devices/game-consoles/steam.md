@@ -16,7 +16,7 @@ sidebar_position: 5
 1. 单击屏幕右上角的齿轮图标打开 Steam Deck 设置。
 2. 单击「_网络_」。
 3. 单击要配置的网络连接旁边的齿轮图标。
-4. 根据您使用的网络类型，选择 IPv4 地址或 IPv6 地址。
+4. Select IPv4 or IPv6, depending on the type of network you’re using.
 5. 选择「仅自动（DHCP）地址」或「自动（DHCP）」。
 6. 在「DNS 服务器」字段中，输入以下其中一个 DNS 服务器地址：
     - `94.140.14.49`

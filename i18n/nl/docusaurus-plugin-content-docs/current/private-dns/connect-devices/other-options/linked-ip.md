@@ -9,7 +9,7 @@ Niet alle apparaten ondersteunen versleutelde DNS-protocollen. In dit geval moet
 
 :::note
 
-Een **residentieel IP-adres** wordt toegewezen aan een apparaat dat is verbonden met een residentiële ISP. Meestal is het gekoppeld aan een fysieke locatie en toegekend aan individuele huizen of appartementen. Mensen gebruiken residentiële IP-adressen voor dagelijkse online activiteiten, zoals surfen op internet, het verzenden van e-mails, het gebruik van sociale media of het streamen van inhoud.
+Een **residentieel IP-adres** wordt toegewezen aan een apparaat dat is verbonden met een residentiële ISP. It’s usually tied to a physical location and given to individual homes or apartments. Mensen gebruiken residentiële IP-adressen voor dagelijkse online activiteiten, zoals surfen op internet, het verzenden van e-mails, het gebruik van sociale media of het streamen van inhoud.
 
 :::
 
@@ -32,7 +32,7 @@ De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat
 
 ## Dynamische DNS: waarom het nuttig is
 
-Elke keer dat een apparaat verbinding maakt met het netwerk, krijgt het een nieuw dynamisch IP-adres. Wanneer de verbinding met een apparaat wordt verbroken, kan de DHCP-server het vrijgegeven IP-adres toewijzen aan een ander apparaat in het netwerk. Dit betekent dat dynamische IP-adressen vaak en onvoorspelbaar veranderen. Daarom moet je de instellingen bijwerken wanneer het apparaat opnieuw wordt opgestart of het netwerk verandert.
+Elke keer dat een apparaat verbinding maakt met het netwerk, krijgt het een nieuw dynamisch IP-adres. Wanneer de verbinding met een apparaat wordt verbroken, kan de DHCP-server het vrijgegeven IP-adres toewijzen aan een ander apparaat in het netwerk. Dit betekent dat dynamische IP-adressen vaak en onvoorspelbaar veranderen. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 Om het gekoppelde IP-adres automatisch up-to-date te houden, kun je DNS gebruiken. AdGuard DNS controleert regelmatig het IP-adres van je DDNS-domein en koppelt dit aan je server.
 
@@ -64,7 +64,7 @@ This way, you won’t have to manually update the associated IP address each tim
 
     ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you've successfully set up DDNS!
+All done, you’ve successfully set up DDNS!
 
 ## Automation of linked IP update via script
 
@@ -78,7 +78,7 @@ The easiest way is to use the Task Scheduler:
     - Set the trigger to run every 5 minutes.
     - Select _Run Program_ as the action.
 2. Select a program:
-    - In the _Program or Script_ field, type \`powershell'
+    - In the _Program or Script_ field, type `powershell`
     - In the _Add Arguments_ field, type:
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Save the task.

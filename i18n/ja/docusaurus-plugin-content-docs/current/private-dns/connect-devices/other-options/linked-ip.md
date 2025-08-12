@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::note
 
-**住宅用IPアドレス**は、住宅用ISP（インターネットプロバイダ）に接続されたデバイスに割り当てられています。 通常、物理的な場所に関連付けられ、個々の家やアパートに与えられます。 人々は、ウェブの閲覧、メールの送信、SNSの利用、またはコンテンツの閲覧・ストリーミングなど、日常的なオンライン活動のために住宅用IPアドレスを使用します。
+**住宅用IPアドレス**は、住宅用ISP（インターネットプロバイダ）に接続されたデバイスに割り当てられています。 It’s usually tied to a physical location and given to individual homes or apartments. 人々は、ウェブの閲覧、メールの送信、SNSの利用、またはコンテンツの閲覧・ストリーミングなど、日常的なオンライン活動のために住宅用IPアドレスを使用します。
 
 :::
 
@@ -32,7 +32,7 @@ sidebar_position: 3
 
 ## 「ダイナミック（動的）DNS」が便利な理由
 
-デバイスがネットワークに接続するたびに、新しい動的IPアドレスが取得されます。 デバイスが切断されると、DHCPサーバーは解放されたIPアドレスをネットワーク上の別のデバイスに割り当てることができます。 つまり、動的IPアドレスは頻繁かつ予測不能に変更します。 そのため、デバイスが再起動されたり、ネットワークが変更されたりするたびに、設定を更新する必要が出てきます。
+デバイスがネットワークに接続するたびに、新しい動的IPアドレスが取得されます。 デバイスが切断されると、DHCPサーバーは解放されたIPアドレスをネットワーク上の別のデバイスに割り当てることができます。 つまり、動的IPアドレスは頻繁かつ予測不能に変更します。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 リンクされたIPアドレスが自動的に更新されるようにするには、DNSを使用することができます。 AdGuard DNS は、あなたのDDNSドメインのIPアドレスを定期的にチェックし、それをあなたのサーバーにリンクしてくれます。
 
@@ -64,7 +64,7 @@ sidebar_position: 3
 
     ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-これで、DDNS（動的DNS）の設定は完了です。
+All done, you’ve successfully set up DDNS!
 
 ## リンクされた IP 更新の自動化（スクリプト）
 
@@ -78,7 +78,7 @@ sidebar_position: 3
     - トリガーを 5 分ごとの実行に設定します。
     - アクションとしては「_プログラムの実行_」を選択します。
 2. プログラムを選択します：
-    - プログラムまたはスクリプトのフィールドに、\`powershell'と入力します。
+    - In the _Program or Script_ field, type `powershell`
     - Add Argumentsフィールドに、次のように入力します：
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. タスクを保存します。

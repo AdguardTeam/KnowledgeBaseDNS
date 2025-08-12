@@ -54,7 +54,7 @@ No todos los servicios VPN soportan DNS cifrado. Sin embargo, nuestro VPN sí lo
 
 ## Usar un perfil de configuración
 
-Un perfil de dispositivo macOS, también llamado "perfil de configuración" por Apple, es un archivo XML firmado por certificado que puedes instalar manualmente en tu dispositivo o implementar utilizando una solución MDM. También te permite configurar DNS privado de AdGuard en tu dispositivo.
+A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. También te permite configurar DNS privado de AdGuard en tu dispositivo.
 
 :::note Importante
 

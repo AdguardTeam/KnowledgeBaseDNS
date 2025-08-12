@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Hvad er en server, og hvordan anvendes den
 
-Når en Privat AdGuard DNS opsættes, vil man støde på begrebet _servere_.
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 En servere fungerer som den “profil”, hvortil enheder tilsluttes.
 
@@ -21,7 +21,7 @@ Man kan f.eks. have:
 
 For mere information om trafikfiltrering og blokeringsregler, se artiklen [“Sådan opsættes filtrering i AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
 
-Er man interesseret i bestemte indstillinger, findes der forskellige dedikerede artikler:
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [Avancerede indstillinger](/private-dns/server-and-settings/advanced.md)
 - [Adgangsindstillinger](/private-dns/server-and-settings/access.md)

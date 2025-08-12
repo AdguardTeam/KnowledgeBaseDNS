@@ -21,7 +21,7 @@ sidebar_position: 2
 
 4. **사용자 규칙** 옵션을 클릭합니다.
 
-5. 사용자 규칙을 추가할 수 있는 몇 가지 옵션이 있습니다.
+5. You’ll find several options for adding user rules.
 
     - 가장 쉬운 방법은 생성기를 사용하는 것입니다. 생성기를 사용하려면 **새 규칙 추가** → 차단 또는 차단 해제할 도메인의 이름을 입력하고 **규칙 추가**를 클릭합니다.
         ![규칙 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

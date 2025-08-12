@@ -5,11 +5,11 @@ sidebar_position: 4
 
 ## Definição
 
-O controle parental é um conjunto de configurações que oferece a flexibilidade de personalizar o acesso a certos sites com conteúdo "sensível".  Você pode usar este recurso para restringir o acesso de seus filhos a sites adultos, personalizar consultas de busca, bloquear o uso de serviços populares e muito mais.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## Como configurar
 
-Você pode configurar todos os recursos de forma flexível em seus servidores, incluindo o recurso de controle parental. [No artigo correspondente](private-dns/server-and-settings/server-and-settings.md), você pode se familiarizar com o que é um "servidor" no AdGuard DNS e aprender como criar diferentes servidores com diferentes conjuntos de configurações.
+Você pode configurar todos os recursos de forma flexível em seus servidores, incluindo o recurso de controle parental. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Em seguida, vá para as configurações do servidor selecionado e ative as configurações necessárias.
 
@@ -33,7 +33,7 @@ Remove a opção de visualizar e postar comentários em vídeos e interagir com 
 
 ### Sites e serviços bloqueados
 
-O AdGuard DNS bloqueia o acesso a serviços populares com um clique. É útil se você não quiser que dispositivos conectados visitem Instagram e YouTube, por exemplo.
+O AdGuard DNS bloqueia o acesso a serviços populares com um clique. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Serviços bloqueados \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

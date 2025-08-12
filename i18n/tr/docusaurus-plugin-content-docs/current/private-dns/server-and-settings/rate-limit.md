@@ -9,7 +9,7 @@ Oran sınırlaması olmadan, DNS sunucuları aşırı yüklenmeye karşı savunm
 
 ## Oran sınırlaması nasıl çalışır
 
-DNS oran sınırlaması genellikle bir istemcinin (IP adresi) belirli bir süre içinde bir DNS sunucusuna yapabileceği istek sayısına eşikler koyarak çalışır. Mevcut AdGuard DNS oran sınırlamasıyla ilgili sorun yaşıyorsanız ve bir _Takım_ veya _Kurumsal_ planındaysanız, oran sınırlama artışı talebinde bulunabilirsiniz.
+DNS oran sınırlaması genellikle bir istemcinin (IP adresi) belirli bir süre içinde bir DNS sunucusuna yapabileceği istek sayısına eşikler koyarak çalışır. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## DNS pran sınırlama artışı nasıl talep edilir
 
