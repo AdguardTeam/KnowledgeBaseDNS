@@ -18,7 +18,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
 1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
 1. Open the app.
-1. Click *Settings* at the top of the app's home screen.
+1. Click *Settings* at the top of the app’s home screen.
     ![Settings *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 1. Select the *DNS Protection* tab from the menu on the left.
     ![DNS protection *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)

@@ -57,14 +57,14 @@ This command generates static content into the `build` directory and can be serv
 
 Translations are not pushed to the repo and prepared on-the-fly (`i18n` folder is added to `.gitignore`).
 
-Here's how you can debug translations locally.
+Here’s how you can debug translations locally.
 
 1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" pnpm run crowdin download`
 2. Run Docusaurus with the language of your choice: `pnpm run start -- --locale de`
 
 ## How to generate DNS stamps
 
-If you'd like to update the list of [known DNS Providers](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/docs/general/dns-providers.md), you'll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
+If you’d like to update the list of [known DNS Providers](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/docs/general/dns-providers.md), you’ll need to know how to create and check DNS stamps. Read the brief tutorial below to learn how to do it.
 
 ### For DNS-over-HTTPS
 

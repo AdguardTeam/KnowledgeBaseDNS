@@ -51,7 +51,7 @@ These servers provide the Default features + Blocking adult websites + Safe sear
 
 #### Non-filtering
 
-Each of these servers provides a secure and reliable connection, but unlike the "Standard" and "Family Protection" servers, they don't filter anything.
+Each of these servers provides a secure and reliable connection, but unlike the *Standard* and *Family Protection* servers, they don’t filter anything.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -103,7 +103,7 @@ This is the default variant of BebasDNS. This variant blocks ads, malware, and p
 
 #### Unfiltered
 
-This variant doesn't filter anything.
+This variant doesn’t filter anything.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -207,7 +207,7 @@ Non-filtering OpenDNS servers.
 
 :::info
 
-OpenDNS's servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
+OpenDNS’s servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
 
 :::
 
@@ -563,7 +563,7 @@ These servers provide reliable and fast DNS lookups without blocking any specifi
 
 #### Threat Protection
 
-These servers provide protection against malicious domains and also include "Reliability & Performance" features.
+These servers provide protection against malicious domains and also include *Reliability & Performance* features.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -572,7 +572,7 @@ These servers provide protection against malicious domains and also include "Rel
 
 #### Family Secure
 
-These servers provide adult content blocking and also include "Reliability & Performance" + "Threat Protection" features.
+These servers provide adult content blocking and also include *Reliability & Performance* + *Threat Protection* features.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -581,7 +581,7 @@ These servers provide adult content blocking and also include "Reliability & Per
 
 #### Business Secure
 
-These servers provide blocking unwanted and time-wasting content and also include "Reliability & Performance" + "Threat Protection" + "Family Secure" features.
+These servers provide blocking unwanted and time-wasting content and also include *Reliability & Performance* + *Threat Protection* + *Family Secure* features.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -630,7 +630,7 @@ More strictly filtering policies with blocking — ads, marketing, tracking, cli
 
 ### Quad9 DNS
 
-[Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don't provide a censoring component.
+[Quad9 DNS](https://quad9.net/) is a free, recursive, anycast DNS platform that provides high-performance, privacy, and security protection from phishing and spyware. Quad9 servers don’t provide a censoring component.
 
 #### Standard
 
@@ -647,7 +647,7 @@ Regular DNS servers which provide protection from phishing and spyware. They inc
 
 #### Unsecured
 
-Unsecured DNS servers don't provide security blocklists, DNSSEC, or EDNS Client Subnet.
+Unsecured DNS servers don’t provide security blocklists, DNSSEC, or EDNS Client Subnet.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -682,7 +682,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 
 ### Rabbit DNS
 
-[Rabbit DNS](https://rabbitdns.org/) is a privacy-focused DoH service that doesn't collect any user data.
+[Rabbit DNS](https://rabbitdns.org/) is a privacy-focused DoH service that doesn’t collect any user data.
 
 #### Non-filtering
 
@@ -755,7 +755,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users' privacy: they neither sell public DNS data to third parties nor redirect users' queries to serve them ads.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) is a free DNS service that offers improved DNS stability and security over other alternatives. Verisign respects users’ privacy: they neither sell public DNS data to third parties nor redirect users’ queries to serve them ads.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -769,7 +769,7 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 It is designed with various optimizations, such as HTTP/3, caching, and more.
 It leverages machine learning to protect users from potential security threats while also optimizing itself over time.
 Some of its users did see how the DNS handles queries in real-time from its statistics page, but currently the stats page is temporarily disabled.
-Even if the stats page is temporarily disabled, the DNS itself still able to serve users' requests normally.
+Even if the stats page is temporarily disabled, the DNS itself still able to serve users’ requests normally.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -811,7 +811,7 @@ ByteDance Public DNS is a free alternative DNS service by ByteDance at China. Th
 
 #### Private
 
-In "Private" mode, DNS resolution only.
+In *Private* mode, DNS resolution only.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -822,7 +822,7 @@ In "Private" mode, DNS resolution only.
 
 #### Protected
 
-In "Protected" mode, malware and phishing protection.
+In *Protected* mode, malware and phishing protection.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -833,7 +833,7 @@ In "Protected" mode, malware and phishing protection.
 
 #### Family
 
-In "Family" mode, Protected + blocking adult content.
+In *Family* mode, *Protected* + blocking adult content.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -1109,7 +1109,7 @@ This is just one of the available servers, the full list can be found on the [Op
 
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn't log the user's IP. Ads & trackers are blocked.
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn’t log the user’s IP. Ads & trackers are blocked.
 
 #### SK Broadband
 
@@ -1127,11 +1127,11 @@ This is just one of the available servers, the full list can be found on the [Op
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS' servers are located in Russia, CIS countries, and Western Europe. Users' requests are processed by the nearest data center which provides high connection speeds.
+[Yandex.DNS](https://dns.yandex.com/) is a free recursive DNS service. Yandex.DNS’ servers are located in Russia, CIS countries, and Western Europe. Users’ requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basic
 
-In "Basic" mode, there is no traffic filtering.
+In *Basic* mode, there is no traffic filtering.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -1142,7 +1142,7 @@ In "Basic" mode, there is no traffic filtering.
 
 #### Safe
 
-In "Safe" mode, protection from infected and fraudulent sites is provided.
+In *Safe* mode, protection from infected and fraudulent sites is provided.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -1153,7 +1153,7 @@ In "Safe" mode, protection from infected and fraudulent sites is provided.
 
 #### Family
 
-In "Family" mode, protection from infected, fraudulent and adult sites is provided.
+In *Family* mode, protection from infected, fraudulent and adult sites is provided.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
@@ -1166,7 +1166,7 @@ In "Family" mode, protection from infected, fraudulent and adult sites is provid
 
 These are DNS resolvers usually run by enthusiasts or small groups. While they may lack the scale and redundancy of larger providers, they often prioritize privacy, transparency, or offer specialized features.
 
-We won't be able to proper monitor their availability. **Use them at your own risk.**
+We won’t be able to proper monitor their availability. **Use them at your own risk.**
 
 ### AhaDNS
 
@@ -1209,11 +1209,11 @@ Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimizatio
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Add to AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Dandelion Sprout's Official DNS Server
+### Dandelion Sprout’s Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
+[Dandelion Sprout’s Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn't have been blocked), and to determine the least bad times for server system updates.
+Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn’t have been blocked), and to determine the least bad times for server system updates.
 
 | Protocol       | Address                    |                                                        |
 |----------------|------------------------------------------------------------------|------------------|
@@ -1257,7 +1257,7 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) is a Fusl's public primary OpenNIC Tier2 Anycast DNS Resolver.
+[fvz DNS](http://meo.ws/) is a Fusl’s public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|

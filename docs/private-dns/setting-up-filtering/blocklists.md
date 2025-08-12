@@ -57,7 +57,7 @@ To submit a request:
 1. Click *Blocklist request* and fill out the form.
 1. After filling out the form, click *Submit new issue*.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## User rules
 
