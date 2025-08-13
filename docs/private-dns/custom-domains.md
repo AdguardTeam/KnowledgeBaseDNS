@@ -7,7 +7,7 @@ AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) in
 
 :::note
 
-Custom domains are currently available only for the **Enterprise** subscription, but we plan to expand support to the **Team** plan in future updates.
+Custom domains are available to the users of **Enterprise** and **Team** plans.
 
 :::
 
