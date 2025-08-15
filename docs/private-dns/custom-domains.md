@@ -13,7 +13,7 @@ Custom domains are available to the users of **Enterprise** and **Team** plans.
 
 ## How to set up a custom domain
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [*Account settings*](https://adguard-dns.io/en/dashboard/account). Scroll down to *Advanced settings* and select *Custom domains*. Next you will need to go through three main steps: the protocol, CNAME, and certificates.
+To configure a custom domain, log in to your AdGuard DNS dashboard and go to [*Account settings*](https://adguard-dns.io/en/dashboard/account). Scroll down to *Advanced settings* and select *Custom domains*. Next, you will need to go through the three main steps.
 
  1. Choose the protocol. Here, you have two options:
 
