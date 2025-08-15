@@ -15,17 +15,17 @@ Custom domains are available to the users of **Enterprise** and **Team** plans.
 
 To configure a custom domain, log in to your AdGuard DNS dashboard and go to [*Account settings*](https://adguard-dns.io/en/dashboard/account). Scroll down to *Advanced settings* and select *Custom domains*. Next, you will need to go through the three main steps.
 
- 1. Choose the protocol. Here, you have two options:
+1. Choose the protocol. Here, you have two options:
 
     - Add DoH domain (for DNS-over-HTTPS)
     - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
 
     ![Choose the protocol *mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
- 1. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+1. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
 
     ![CNAME record *mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
- 1. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+1. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
 
     ![Custom domain list *mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
