@@ -22,7 +22,7 @@ To configure a custom domain, log in to your AdGuard DNS dashboard and go to [*A
 
     ![Choose the protocol *mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
- 1. After selecting your preferred protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+ 1. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
 
     ![CNAME record *mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
