@@ -3,7 +3,7 @@ title: Impostazioni di accesso
 sidebar_position: 3
 ---
 
-Configurando le impostazioni di accesso, puoi proteggere il tuo AdGuard DNS da accessi non autorizzati. Ad esempio, stai utilizzando un indirizzo IPv4 dedicato e gli aggressori che usano gli sniffer lo hanno riconosciuto e lo stanno bombardando con richieste. Nessun problema, aggiungi semplicemente il fastidioso dominio o indirizzo IP alla lista e non ti darà più fastidio!
+Configurando le impostazioni di accesso, puoi proteggere il tuo AdGuard DNS da accessi non autorizzati. Ad esempio, stai utilizzando un indirizzo IPv4 dedicato e gli aggressori che usano gli sniffer lo hanno riconosciuto e lo stanno bombardando con richieste. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 Le richieste bloccate non verranno visualizzate nel registro delle query e non sono conteggiate nel limite totale.
 
@@ -19,7 +19,7 @@ Qui puoi elencare i client ai quali non è consentito utilizzare il tuo server D
 
 :::note Importante
 
-Prima di applicare le impostazioni di accesso, assicurati di non bloccare il tuo indirizzo IP. Se lo fai, non potrai accedere alla rete. Se ciò accade, disconnetti semplicemente dal server DNS, vai alle impostazioni di accesso e regola le configurazioni di conseguenza.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Se ciò accade, disconnetti semplicemente dal server DNS, vai alle impostazioni di accesso e regola le configurazioni di conseguenza.
 
 :::
 

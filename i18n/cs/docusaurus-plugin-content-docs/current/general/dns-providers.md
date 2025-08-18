@@ -51,7 +51,7 @@ Tyto servery poskytují výchozí funkce + blokování webových stránek pro do
 
 #### Bez filtrování
 
-Každý z těchto serverů poskytuje bezpečné a spolehlivé připojení, ale na rozdíl od serverů "Standardní" a "Ochrana rodiny" nic nefiltruje.
+Každý z těchto serverů poskytuje bezpečné a spolehlivé připojení, ale na rozdíl od serverů *Standardní* a *Ochrana rodiny* nic nefiltruje.
 
 | Protokol       | Adresa                                                                             |                                                                                                                                                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -563,7 +563,7 @@ Tyto servery poskytují spolehlivé a rychlé DNS vyhledávání bez blokování
 
 #### Ochrana před hrozbami
 
-Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také funkce "Spolehlivost a výkonnost".
+Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také funkce *Spolehlivost a výkonnost*.
 
 | Protokol  | Adresa                                |                                                                                                                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -572,7 +572,7 @@ Tyto servery poskytují ochranu proti škodlivým doménám a obsahují také fu
 
 #### Zabezpečení rodiny
 
-Tyto servery poskytují blokování obsahu pro dospělé a zahrnují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami".
+Tyto servery poskytují blokování obsahu pro dospělé a zahrnují také funkce *Spolehlivost a výkonnost* + *Ochrana před hrozbami*.
 
 | Protokol  | Adresa                                |                                                                                                                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -581,7 +581,7 @@ Tyto servery poskytují blokování obsahu pro dospělé a zahrnují také funkc
 
 #### Zabezpečení podnikání
 
-Tyto servery zajišťují blokování nežádoucího a časově náročného obsahu a obsahují také funkce "Spolehlivost a výkonnost" + "Ochrana před hrozbami" + "Zabezpečení rodiny".
+Tyto servery zajišťují blokování nežádoucího a časově náročného obsahu a obsahují také funkce *Spolehlivost a výkonnost* + *Ochrana před hrozbami* + *Zabezpečení rodiny*.
 
 | Protokol  | Adresa                                |                                                                                                                                                              |
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -808,7 +808,7 @@ ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDa
 
 #### Soukromý
 
-V "Soukromém" režimu — pouze překlad DNS.
+V *Soukromém* režimu — pouze překlad DNS.
 
 | Protokol                | Adresa                                                                                                   |                                                                                                                                                                                                                                                                                            |
 | ----------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -819,7 +819,7 @@ V "Soukromém" režimu — pouze překlad DNS.
 
 #### Chráněný
 
-V "Chráněném" režimu — ochrana proti malwaru a krádeži identity.
+V *Chráněném* režimu — ochrana proti malwaru a krádeži identity.
 
 | Protokol                | Adresa                                                                                                     |                                                                                                                                                                                                                                                                                                    |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -830,7 +830,7 @@ V "Chráněném" režimu — ochrana proti malwaru a krádeži identity.
 
 #### Family
 
-V "Rodinném" režimu — Chráněný + blokování obsahu pro dospělé.
+V *Rodinném* režimu — *Chráněný* + blokování obsahu pro dospělé.
 
 | Protokol               | Adresa                                                                                                  |                                                                                                                                                                                                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1128,7 +1128,7 @@ Toto je pouze jeden z dostupných serverů, úplný seznam najdete na [stránce 
 
 #### Základní
 
-V "Základním" režimu není filtrování datového provozu prováděno.
+V *Základním* režimu není filtrování datového provozu prováděno.
 
 | Protokol       | Adresa                                          |                                                                                                                                                                                                                                          |
 | -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1139,7 +1139,7 @@ V "Základním" režimu není filtrování datového provozu prováděno.
 
 #### Bezpečný
 
-V "Bezpečném" režimu je poskytována ochrana před infikovanými a podvodnými stránkami.
+V *Bezpečném* režimu je poskytována ochrana před infikovanými a podvodnými stránkami.
 
 | Protokol       | Adresa                                          |                                                                                                                                                                                                                                                |
 | -------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1150,7 +1150,7 @@ V "Bezpečném" režimu je poskytována ochrana před infikovanými a podvodným
 
 #### Family
 
-V "Rodinném" režimu je zajištěna ochrana před infikovanými, podvodnými stránkami a stránkami pro dospělé.
+V *Rodinném* režimu je zajištěna ochrana před infikovanými, podvodnými stránkami a stránkami pro dospělé.
 
 | Protokol       | Adresa                                          |                                                                                                                                                                                                                                                        |
 | -------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

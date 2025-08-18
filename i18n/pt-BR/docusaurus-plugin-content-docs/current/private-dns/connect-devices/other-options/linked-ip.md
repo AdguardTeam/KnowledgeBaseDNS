@@ -9,7 +9,7 @@ Nem todos os dispositivos são compatíveis com protocolos DNS criptografados. N
 
 :::note
 
-Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. Normalmente, ele está vinculado a uma localização física e é designado a casas ou apartamentos individuais. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como procurar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
+Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. It’s usually tied to a physical location and given to individual homes or apartments. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como procurar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
 
 :::
 
@@ -32,7 +32,7 @@ As instruções a seguir explicam como se conectar ao dispositivo via **endereç
 
 ## DNS dinâmico: por que é útil
 
-Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP pode atribuir o endereço de IP liberado a outro dispositivo na rede. Isso significa que os endereços IP dinâmicos mudam com frequência e de forma imprevisível. Consequentemente, você precisará atualizar as configurações sempre que o dispositivo for reiniciado ou a rede mudar.
+Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP pode atribuir o endereço de IP liberado a outro dispositivo na rede. Isso significa que os endereços IP dinâmicos mudam com frequência e de forma imprevisível. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 Para manter automaticamente o endereço IP vinculado atualizado, você pode usar DNS. O AdGuard DNS verificará regularmente o endereço IP do seu domínio DDNS e o vinculará ao seu servidor.
 
@@ -64,7 +64,7 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
 
     ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Tudo pronto, você configurou o DDNS com sucesso!
+All done, you’ve successfully set up DDNS!
 
 ## Automação da atualização de IP vinculado via script
 
@@ -78,7 +78,7 @@ A maneira mais fácil é usar o Task Scheduler:
     - Defina o gatilho para executar a cada 5 minutos.
     - Selecione _Executar Programa_ como a ação.
 2. Selecione um programa:
-    - No campo _Programa ou Script_, digite \`powershell'
+    - In the _Program or Script_ field, type `powershell`
     - No campo _Adicionar Argumentos_, digite:
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Salve a tarefa.

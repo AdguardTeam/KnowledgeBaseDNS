@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-iCloud 비공개 릴레이를 사용하는 경우, AdGuard DNS 대시보드(및 관련 [테스트 페이지](https://adguard.com/test.html))에는 해당 기기에서 AdGuard DNS를 사용하고 있지 않다는 메시지가 표시됩니다.
+When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![기기가 연결되지 않음](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-이 문제를 해결하려면 기기 설정에서 AdGuard 웹사이트가 사용자의 IP 주소를 볼 수 있도록 허용해야 합니다.
+To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
 
 - iPhone 또는 iPad의 경우:
 
@@ -29,10 +29,10 @@ iCloud 비공개 릴레이를 사용하는 경우, AdGuard DNS 대시보드(및 
 
     1. `adguard.com`으로 위 과정을 반복하세요.
 
-웹사이트에서 일시적으로 IP 주소를 볼 수 있도록 허용하는 옵션이 표시되지 않는 경우 기기를 최신 버전의 iOS, iPadOS 또는 macOS로 업데이트한 다음 다시 시도하세요.
+If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 이제 AdGuard DNS 상태창에 기기가 올바르게 표시될 것 입니다.
 
 ![기기가 연결됨](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-특정 웹사이트에 대해 비공개 릴레이를 끄면 네트워크 공급자도 귀하가 탐색 중인 사이트를 볼 수 있다는 점에 유의하세요.
+Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.

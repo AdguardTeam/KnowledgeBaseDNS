@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Apache ters HTTP proxy ile alt dizinleri kullanmayın.  Apache'nin bağıl yönlendirmeleri diğer web sunucularından farklı şekilde ele aldığı bilinen bir sorundur ([#6604]). Bu, AdGuard Home web arayüzünde sorunlara neden olur.
+Apache ters HTTP proxy ile alt dizinleri kullanmayın.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Bu, AdGuard Home web arayüzünde sorunlara neden olur.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 

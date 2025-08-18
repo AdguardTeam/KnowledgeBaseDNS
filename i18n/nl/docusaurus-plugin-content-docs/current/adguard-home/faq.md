@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Geen submappen gebruiken met de Apache reverse HTTP-proxy.  Het is een bekend probleem ([#6604]) dat Apache relatieve omleidingen anders behandelt dan andere webservers. Dit veroorzaakt problemen met de AdGuard Home-webinterface.
+Geen submappen gebruiken met de Apache reverse HTTP-proxy.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Dit veroorzaakt problemen met de AdGuard Home-webinterface.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 

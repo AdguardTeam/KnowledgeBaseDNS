@@ -57,7 +57,7 @@ Um eine Anfrage zu senden:
 3. Klicken Sie auf _Blocklist request_ und füllen Sie das Formular aus.
 4. Nachdem Sie das Formular ausgefüllt haben, klicken Sie auf _Submit new issue_.
 
-Wenn die Sperrregeln Ihres Filters nicht mit den bestehenden Listen übereinstimmen, wird er in das Repository aufgenommen.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## Benutzerregeln
 

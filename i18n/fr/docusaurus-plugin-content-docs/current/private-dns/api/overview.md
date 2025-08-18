@@ -149,7 +149,7 @@ Une fois les jetons d'accès et d'actualisation générés, des appels API peuve
 
 ### Référence
 
-Veuillez consulter la référence des méthodes [ici](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### Spécification OpenAPI
 

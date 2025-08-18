@@ -3,7 +3,7 @@ title: 'Aktualisieren der Wissensdatenbank'
 sidebar_position: 1
 ---
 
-Das Ziel dieser Wissensdatenbank ist es, jedem die aktuellsten Informationen zu allen möglichen DNS-bezogenen Themen von AdGuard zur Verfügung zu stellen. Aber die Dinge ändern sich ständig, und manchmal spiegelt ein Artikel nicht mehr den aktuellen Stand der Dinge wider - es gibt einfach nicht so viele von uns, die jede einzelne Information im Auge behalten und sie entsprechend aktualisieren können, wenn neue Versionen veröffentlicht werden.
+Das Ziel dieser Wissensdatenbank ist es, jedem die aktuellsten Informationen zu allen möglichen DNS-bezogenen Themen von AdGuard zur Verfügung zu stellen. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 Aus diesem Grund haben wir alle Inhalte unserer Wissensdatenbank auf [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS) eingestellt, und jetzt kann buchstäblich jeder dazu beitragen, indem er Bearbeitungen und Übersetzungen zu bestehenden Artikeln vorschlägt, aber auch völlig neue Artikel erstellt.
 
@@ -15,7 +15,7 @@ Sobald Sie bereit sind, arbeiten Sie unter diesem Link [mit dem KnowledgeBaseDNS
 
 Die Website der Wissensdatenbank wurde mit Docusaurus 2 erstellt, einem modernen Generator für statische Websites. Wenn Sie Änderungen oder Ergänzungen vorschlagen, beachten Sie bitte, dass alle Dokumente den Grundsätzen der Plattform entsprechen müssen. Sie können sie in [diesem Leitfaden](https://docusaurus.io/docs/category/guides) nachlesen.
 
-Sie können die Wissensdatenbank auch lokal auf Ihrem Computer bereitstellen, um eine Vorschau auf die von Ihnen vorgeschlagenen Änderungen zu erhalten. Detaillierte Anleitungen dazu finden Sie [in der README.md Datei](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) auf der GitHub-Seite dieser Wissensdatenbank.
+Sie können die Wissensdatenbank auch lokal auf Ihrem Computer bereitstellen, um eine Vorschau auf die von Ihnen vorgeschlagenen Änderungen zu erhalten. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## Artikel übersetzen {#translate-adguard}
 

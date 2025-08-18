@@ -199,7 +199,7 @@ AdGuard DNS je velmi flexibilní a lze ho nastavit na různých zařízeních v�
 
 ### Server a nastavení
 
-Tato část vysvětluje, co je to "server" v AdGuard DNS a jaká nastavení jsou k dispozici. Nastavení umožňují přizpůsobit způsob, jakým AdGuard DNS reaguje na blokované domény, a spravovat přístup k serveru DNS.
+Tato část vysvětluje, co je to server v AdGuard DNS a jaká nastavení jsou k dispozici. Nastavení umožňují přizpůsobit způsob, jakým AdGuard DNS reaguje na blokované domény, a spravovat přístup k serveru DNS.
 
 [Server a nastavení](/private-dns/server-and-settings/server-and-settings.md)
 

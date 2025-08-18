@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS, "Alan Adı Sistemi" anlamına gelir ve amacı, site adlarını IP adreslerine dönüştürmektir. Bir siteye her gittiğinizde, tarayıcınız sitenin IP adresini bulmak için bir DNS sunucusuna bir DNS sorgusu gönderir. Ve normal bir DNS çözümleyici, istenen alan adının IP adresini döndürür.
+DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. Bir siteye her gittiğinizde, tarayıcınız sitenin IP adresini bulmak için bir DNS sunucusuna bir DNS sorgusu gönderir. Ve normal bir DNS çözümleyici, istenen alan adının IP adresini döndürür.
 
 :::note Not
 
@@ -18,7 +18,7 @@ Varsayılan DNS sunucusu genellikle İSS'niz tarafından sağlanır. Bu, İSS'ni
 
 ![Cihazınız, çeşitli uygulamalar, hizmetler, vb. tarafından erişilen alan adlarının IP adreslerini almak için her zaman bir DNS sunucusu kullanır.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-DNS düzeyinde belirli siteleri engelleyebilen DNS sunucuları da vardır. Nasıl çalışırlar? Cihazınız, ister reklam ister izleyici olsun, "kötü" bir istek gönderdiğinde, bir DNS sunucusu engellenen bir alan adı için yönlendirilemeyen bir IP adresiyle yanıt vererek bağlantıyı engeller.
+DNS düzeyinde belirli siteleri engelleyebilen DNS sunucuları da vardır. Nasıl çalışırlar? When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## İçerik engelleme için neden DNS kullanılmalı
 

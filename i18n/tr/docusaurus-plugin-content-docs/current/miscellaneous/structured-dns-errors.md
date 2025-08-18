@@ -3,15 +3,15 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Bu özellik, DNS sunucularının genel tarayıcı mesajlarına güvenmek yerine doğrudan DNS yanıtında engellenen siteler hakkında ayrıntılı bilgi sağlamasına olanak tanır. In this article, we'll explain what _Structured DNS Errors_ are and how they work.
+With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS resolver to implement support for [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), an update to [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Bu özellik, DNS sunucularının genel tarayıcı mesajlarına güvenmek yerine doğrudan DNS yanıtında engellenen siteler hakkında ayrıntılı bilgi sağlamasına olanak tanır. In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
 
 ## What Structured DNS Errors are
 
-When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. Ancak bir sitenin tamamı DNS düzeyinde engellendiğinde, kullanıcı sayfaya erişim tamamen imkansız hâle gelecektir. Engellenmiş bir siteye erişmeye çalışırken, kullanıcı tarayıcı tarafından görüntülenen genel bir “Bu siteye erişilemiyor” hatası görebilir.
+When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. Ancak bir sitenin tamamı DNS düzeyinde engellendiğinde, kullanıcı sayfaya erişim tamamen imkansız hâle gelecektir. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-!["Bu siteye ulaşılamıyor" hatası](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Bu tür hatalar neyin ve neden olduğunu açıklamıyor. Bu durum, kullanıcıların bir siteye neden erişilemediği konusunda kafalarının karışmasına ve genellikle internet bağlantılarının veya DNS çözümleyicilerinin bozuk olduğunu düşünmelerine neden olur.
+Such errors don’t explain what happened and why. Bu durum, kullanıcıların bir siteye neden erişilemediği konusunda kafalarının karışmasına ve genellikle internet bağlantılarının veya DNS çözümleyicilerinin bozuk olduğunu düşünmelerine neden olur.
 
 Bunu açıklığa kavuşturmak için DNS sunucuları kullanıcıları bir açıklamayla kendi sayfalarına yönlendirebilir. However, HTTPS websites (which are the majority of websites) would require a separate certificate.
 

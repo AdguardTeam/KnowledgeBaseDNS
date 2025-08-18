@@ -5,11 +5,11 @@ sidebar_position: 4
 
 ## Was ist das
 
-Kindersicherung ist eine Reihe von Einstellungen, die Ihnen die Flexibilität bieten, den Zugriff auf bestimmte Websites mit „sensiblen“ Inhalt anzupassen.  Diese Funktion können Sie verwenden, um den Zugriff Ihrer Kinder auf Websites mit Inhalten für Erwachsene einzuschränken, Suchabfragen anzupassen, die Nutzung beliebter Dienste zu blockieren und mehr.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## Kindersicherung einrichten
 
-Sie können alle Funktionen flexibel auf Ihren Servern konfigurieren, einschließlich der Kindersicherungsfunktion. [Im entsprechenden Artikel](private-dns/server-and-settings/server-and-settings.md) können Sie sich damit vertraut machen, was ein „Server“ in AdGuard DNS ist, und erfahren, wie Sie verschiedene Server mit unterschiedlichen Einstellungen erstellen.
+Sie können alle Funktionen flexibel auf Ihren Servern konfigurieren, einschließlich der Kindersicherungsfunktion. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Gehen Sie anschließend zu den Einstellungen des ausgewählten Servers und aktivieren Sie die erforderlichen Konfigurationen.
 
@@ -33,7 +33,7 @@ Entfernt die Option, Kommentare unter Videos anzusehen und zu posten sowie mit I
 
 ### Gesperrte Dienste und Websites
 
-AdGuard DNS sperrt den Zugriff auf beliebte Dienste mit einem Klick. Das ist nützlich, wenn Sie nicht möchten, dass verbundene Geräte z. B. Instagram und YouTube besuchen.
+AdGuard DNS sperrt den Zugriff auf beliebte Dienste mit einem Klick. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Gesperrte Dienste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

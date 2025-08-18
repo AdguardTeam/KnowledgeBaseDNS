@@ -9,7 +9,7 @@ Ikke alle enheder understøtter krypterede DNS-protokoller. I så tilfælde bør
 
 :::note
 
-En **hjemme IP-adresse** tildeles en enhed, der er tilsluttet en privat ISP. Den er typisk knyttet til en fysisk placering og tildeles individuelle boliger/lejligheder. Folk bruger hjemme IP-adresser til daglige onlineaktiviteter, såsom at surfe, sende e-mails, bruge sociale medier eller streaming.
+En **hjemme IP-adresse** tildeles en enhed, der er tilsluttet en privat ISP. It’s usually tied to a physical location and given to individual homes or apartments. Folk bruger hjemme IP-adresser til daglige onlineaktiviteter, såsom at surfe, sende e-mails, bruge sociale medier eller streaming.
 
 :::
 
@@ -32,7 +32,7 @@ Den følgende vejledning forklarer, hvordan der forbindes til enheden via en **l
 
 ## Dynamisk DNS: Hvorfor det er nyttigt
 
-Hver gang en enhed tilslutter sig netværket, får den en ny dynamisk IP-adresse. Når en enhed afbryder forbindelsen, kan DHCP-serveren tildele den frigivne IP-adresse til en anden enhed på netværket. Dette betyder, at dynamiske IP-adresser ændres ofte og uforudsigeligt. Derfor skal indstillingerne opdateres, hver gang enheden genstartes, eller der sker netværksændringer.
+Hver gang en enhed tilslutter sig netværket, får den en ny dynamisk IP-adresse. Når en enhed afbryder forbindelsen, kan DHCP-serveren tildele den frigivne IP-adresse til en anden enhed på netværket. Dette betyder, at dynamiske IP-adresser ændres ofte og uforudsigeligt. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 For automatisk at holde den linkede IP-adresse opdateret, kan man bruge DNS. AdGuard DNS tjekker regelmæssigt IP-adressen på DDNS-domænet og linker det til serveren.
 
@@ -64,7 +64,7 @@ På denne måde behøver man ikke manuelt at opdatere den tilknyttede IP-adresse
 
     ![Opsæt DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Opsætningen af DDNS er hermed færdig!
+All done, you’ve successfully set up DDNS!
 
 ## Automation af linket IP-opdatering via script
 
@@ -78,7 +78,7 @@ Den nemmeste måde er at bruge Opgavestyring:
     - Indstil udløseren til at køre hvert 5. minut.
     - Vælg _Kør program_ som handlingen.
 2. Vælg et program:
-    - Skriv i feltet _Program eller Script_ \`powershell'
+    - In the _Program or Script_ field, type `powershell`
     - I feltet _Tilføj argumenter_, skriv:
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Gem opgaven.

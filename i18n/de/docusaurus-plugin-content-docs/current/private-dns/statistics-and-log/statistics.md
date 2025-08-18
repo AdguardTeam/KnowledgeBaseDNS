@@ -33,8 +33,8 @@ Hier werden die Länder gezeigt, an die die meisten Anfragen gesendet wurden.
 
 Neben den Ländernamen enthält die Liste zwei allgemeinere Kategorien:
 
-- **Nicht anwendbar**: Die Antwort enthält keine IP-Adresse
-- **Unbekannter Zielort**: Das Land kann nicht anhand der IP-Adresse bestimmt werden
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Top Zielorte \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

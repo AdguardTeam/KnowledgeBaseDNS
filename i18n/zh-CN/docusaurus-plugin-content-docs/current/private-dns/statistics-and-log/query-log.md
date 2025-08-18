@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## 使用方式
 
-以下是在「查询日志」中用户可以看到的内容和可以执行的操作。
+Here’s what you can see and what you can do in the _Query log_.
 
 ### 请求的详细信息
 

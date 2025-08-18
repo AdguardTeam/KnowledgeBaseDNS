@@ -8,7 +8,7 @@ MikroTikルーターは、オープンソースのRouterOSオペレーティン�
 ## DNS-over-HTTPS を設定する
 
 1. お使いのMikroTikルーターにアクセスする:
-    - ウェブブラウザを開き、ルーターのIPアドレス（通常は `192.168.88.1`）にアクセスします。
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - （または、Winboxを使用してMikroTikルーターに接続することもできます。）
     - 管理者のユーザー名とパスワードを入力します。
 2. ルート証明書をインポートする:
@@ -40,14 +40,14 @@ MikroTikルーターは、オープンソースのRouterOSオペレーティン�
     - 「_OK_」をクリックします。
 6. テストして動作を確認する:
     - すべての変更内容を適用させるには、MikroTikルーターを再起動する必要がある場合があります。
-    - ブラウザの DNS キャッシュをクリアします。 [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) のようなツールを使用して、DNSリクエストがちゃんとAdGuard経由でルーティングされているかどうかを確認できます。
+    - Clear your browser’s DNS cache. [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) のようなツールを使用して、DNSリクエストがちゃんとAdGuard経由でルーティングされているかどうかを確認できます。
 
 ## お使いのルーターはDNS-over-HTTPSをサポートしていません
 
 MikrotikルーターがDNS-over-HTTPSやDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
 1. お使いのMikroTikルーターにアクセスする:
-    - ウェブブラウザを開き、ルーターのIPアドレス（通常は `192.168.88.1`）にアクセスします。
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - （または、Winboxを使用してMikroTikルーターに接続することもできます。）
     - 管理者のユーザー名とパスワードを入力します。
 2. プレーンDNSを構成する:

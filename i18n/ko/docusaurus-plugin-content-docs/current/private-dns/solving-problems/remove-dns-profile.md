@@ -3,7 +3,7 @@ title: DNS 프로필 제거 방법
 sidebar_position: 3
 ---
 
-구성된 DNS 프로필을 가진 iPhone, iPad 또는 Mac을 DNS 서버에서 분리해야 하는 경우 해당 DNS 프로필을 제거해야 합니다. 아래 방법을 확인하세요.
+구성된 DNS 프로필을 가진 iPhone, iPad 또는 Mac을 DNS 서버에서 분리해야 하는 경우 해당 DNS 프로필을 제거해야 합니다. Here’s how to do it.
 
 Mac의 경우
 

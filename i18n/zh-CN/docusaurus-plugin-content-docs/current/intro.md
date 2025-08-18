@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS 表示“域名系统”，它可以将网站的域名转换为 IP 地址。 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
+DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. 每次你访问一个网站，你的浏览器向DNS 服务器发送一个DNS查询用于找到网站的IP 地址 一个常规DNS 解析器只是返回请求域名的IP 地址。
 
 :::note
 
@@ -18,7 +18,7 @@ DNS 表示“域名系统”，它可以将网站的域名转换为 IP 地址。
 
 ![您的设备始终使用 DNS 服务器来获取应用，服务的域名的 IP 地址](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-也有一些 DNS 服务器可以在 DNS 层面拦截特定的网站。 它们是如何工作的？ 当设备发送一个“不好的”请求，无论是广告还是跟踪器，DNS 服务器通过回复被拦截域名一个不可路由的 IP 地址来阻止连接。
+也有一些 DNS 服务器可以在 DNS 层面拦截特定的网站。 它们是如何工作的？ When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## 为什么要使用 DNS 进行内容拦截？
 

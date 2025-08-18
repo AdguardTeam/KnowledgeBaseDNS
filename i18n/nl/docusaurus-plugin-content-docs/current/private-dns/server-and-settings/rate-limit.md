@@ -9,7 +9,7 @@ Zonder snelheidslimieten zijn DNS-servers kwetsbaar voor overbelasting, en als g
 
 ## Hoe werkt de snelheidsimiet
 
-DNS-snelheidsbeperking werkt meestal door drempels in te stellen voor het aantal verzoeken dat een client (IP-adres) gedurende een bepaalde periode aan een DNS-server kan doen. Als je problemen hebt met de huidige AdGuard DNS-snelheidslimiet en een _Team_- of _Zakelijk_-abonnement hebt, kun je een verhoging van de snelheidslimiet aanvragen.
+DNS-snelheidsbeperking werkt meestal door drempels in te stellen voor het aantal verzoeken dat een client (IP-adres) gedurende een bepaalde periode aan een DNS-server kan doen. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## Hoe een verzoek om een verhoging van de DNS-snelheidslimiet aan te vragen
 

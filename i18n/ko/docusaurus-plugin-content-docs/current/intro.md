@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube 동영상 플레이어" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS stands for "Domain Name System", and its purpose is to convert website names into IP addresses. 웹 사이트로 이동할 때마다, 브라우저는 웹 사이트의 IP 주소를 파악하기 위해 DNS 서버에 DNS 쿼리를 전송합니다.  그리고 일반 DNS 클라이언트는 단순히 요청된 도메인의 IP 주소를 반환합니다.
+DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. 웹 사이트로 이동할 때마다, 브라우저는 웹 사이트의 IP 주소를 파악하기 위해 DNS 서버에 DNS 쿼리를 전송합니다.  그리고 일반 DNS 클라이언트는 단순히 요청된 도메인의 IP 주소를 반환합니다.
 
 :::note
 
@@ -18,7 +18,7 @@ The default DNS server is usually provided by your ISP. This means that your ISP
 
 ![Your device always uses a DNS server to obtain the IP addresses of the domains that are accessed by various apps, services, etc.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a "bad" request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+There are also DNS servers that can block certain websites at DNS-level. How do they work? When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 

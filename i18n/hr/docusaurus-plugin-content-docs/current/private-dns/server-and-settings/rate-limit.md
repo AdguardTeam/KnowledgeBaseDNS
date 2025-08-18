@@ -9,7 +9,7 @@ Without rate limits, DNS servers are vulnerable to being overloaded, and as a re
 
 ## How does Rate limit work
 
-DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you're having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+DNS rate-limiting typically works by setting thresholds on the number of requests a client (IP address) can make to a DNS server over a certain time period. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## How to request DNS rate limit increase
 
@@ -19,6 +19,6 @@ If you are subscribed to AdGuard DNS _Team_ or _Enterprise_ plan, you can reques
 
 2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
 
- ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

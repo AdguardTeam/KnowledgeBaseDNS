@@ -23,7 +23,7 @@ AdGuard DNS privato offre tutti i vantaggi di un server pubblico di AdGuard DNS,
 
 Oggi, puoi connettere qualsiasi cosa a Internet: TV, frigoriferi, lampadine intelligenti o altoparlanti. Ma insieme alle innegabili comodità, ricevi tracciatori e pubblicità. Un semplice bloccatore di annunci basato sul browser non ti proteggerà in questo caso, ma AdGuard DNS, che puoi configurare per filtrare il traffico, bloccare contenuti e tracciiatori, ha un effetto a livello del sistema.
 
-Una volta, la linea di prodotti AdGuard includeva soltanto [AdGuard DNS pubblico](../public-dns/overview.md) e [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Queste soluzioni vanno bene per alcuni utenti, ma per altri, l'AdGuard DNS pubblico manca della flessibilità di configurazione, mentre AdGuard Home manca di semplicità. È qui che entra in gioco AdGuard DNS privato. Offre il meglio di entrambi i mondi: offre personalizzabilità, controllo e informazioni, tutto tramite un semplice pannello di controllo facile da usare.
+Una volta, la linea di prodotti AdGuard includeva soltanto [AdGuard DNS pubblico](../public-dns/overview.md) e [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Queste soluzioni vanno bene per alcuni utenti, ma per altri, l'AdGuard DNS pubblico manca della flessibilità di configurazione, mentre AdGuard Home manca di semplicità. That’s where private AdGuard DNS comes into play. Offre il meglio di entrambi i mondi: offre personalizzabilità, controllo e informazioni, tutto tramite un semplice pannello di controllo facile da usare.
 
 ### La differenza tra AdGuard DNS pubblico e privato
 
@@ -199,7 +199,7 @@ AdGuard DNS è molto flessibile e può essere configurato su vari dispositivi, t
 
 ### Server e impostazioni
 
-Questa sezione spiega cosa sia un "server" in AdGuard DNS e quali impostazioni siano disponibili. Le impostazioni ti consentono di personalizzare come AdGuard DNS risponde ai domini bloccati e gestire l'accesso al tuo server DNS.
+This section explains what a server is in AdGuard DNS and what settings are available. Le impostazioni ti consentono di personalizzare come AdGuard DNS risponde ai domini bloccati e gestire l'accesso al tuo server DNS.
 
 [Server e impostazioni](/private-dns/server-and-settings/server-and-settings.md)
 

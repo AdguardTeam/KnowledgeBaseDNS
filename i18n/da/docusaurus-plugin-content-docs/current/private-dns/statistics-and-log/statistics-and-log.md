@@ -3,7 +3,7 @@ title: Statistik- og forespørgselslog
 sidebar_position: 1
 ---
 
-Et af formålene med at bruge AdGuard DNS er, at man får en klar forståelse af, hvad ens enheder foretager sig, og hvad de tilslutter sig. Uden denne klarhed er der ingen måde, hvorpå man kan overvåge sine enheders aktivitet.
+Et af formålene med at bruge AdGuard DNS er, at man får en klar forståelse af, hvad ens enheder foretager sig, og hvad de tilslutter sig. Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS tilbyder en bred vifte af nyttige værktøjer til at overvåge forespørgsler:
 

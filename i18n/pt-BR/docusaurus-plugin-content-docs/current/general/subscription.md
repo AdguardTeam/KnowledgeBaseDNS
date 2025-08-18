@@ -9,6 +9,8 @@ Os planos do AdGuard DNS podem ser adquiridos em [adguard-dns.io](https://adguar
 
 O plano pessoal é gratuito para usuários pagos do [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
+AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. If you can’t activate your subscription, please email our support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## Como atualizar um plano {#upgrade}
 
 Para aproveitar melhor o AdGuard DNS, você pode atualizar seu plano para obter os seguintes benefícios:
@@ -18,11 +20,11 @@ Para aproveitar melhor o AdGuard DNS, você pode atualizar seu plano para obter 
 
 Você pode atualizar seu plano na sua [conta AdGuard](https://my.adguard.com/account/licenses). Para fazer isso, clique em _Atualizar_ na seção _AdGuard DNS_.
 
-O plano _Empresarial_ está disponível somente por solicitação. Se você estiver interessado, preencha nosso [formulário](https://surveys.adguard.com/dns_enterprise/form.html) e forneça alguns dados sobre sua empresa. Assim que recebermos sua submissão, entraremos em contato com mais informações.
+O plano _Empresarial_ está disponível somente por solicitação. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
 
 ## Como obter um reembolso {#refund}
 
-De acordo com nossos [Termos de Venda](https://adguard-dns.io/terms-of-sale.html), você pode obter um reembolso de 100% em qualquer plano Anual do AdGuard DNS adquirido em https://adguard-dns.io/. Para obter um reembolso, você precisa entrar em contato com o suporte em support@adguard-dns.io, especificando o método de pagamento que você utilizou. O tempo de processamento geralmente leva de 5 a 10 dias úteis.
+De acordo com nossos [Termos de Venda](https://adguard-dns.io/terms-of-sale.html), você pode obter um reembolso de 100% em qualquer plano Anual do AdGuard DNS adquirido em https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. O tempo de processamento geralmente leva de 5 a 10 dias úteis.
 
 Um reembolso poderá ser recusado se:
 

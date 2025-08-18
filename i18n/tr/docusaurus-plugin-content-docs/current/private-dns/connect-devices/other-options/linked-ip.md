@@ -9,7 +9,7 @@ Tüm cihazlar şifrelenmiş DNS protokollerini desteklemez. Bu durumda, şifrele
 
 :::note
 
-**Konut IP adresi**, konut bir İSS'ye bağlı bir cihaza atanır. Genellikle fiziksel bir konuma bağlıdır ve bireysel evlere veya dairelere verilir. İnsanlar web'de gezinmek, e-posta göndermek, sosyal medya kullanmak veya canlı yayın akışı içeriği sağlamak gibi günlük çevrimiçi etkinlikler için konut IP adreslerini kullanırlar.
+**Konut IP adresi**, konut bir İSS'ye bağlı bir cihaza atanır. It’s usually tied to a physical location and given to individual homes or apartments. İnsanlar web'de gezinmek, e-posta göndermek, sosyal medya kullanmak veya canlı yayın akışı içeriği sağlamak gibi günlük çevrimiçi etkinlikler için konut IP adreslerini kullanırlar.
 
 :::
 
@@ -32,7 +32,7 @@ Aşağıdaki talimatlar, cihaza **IP adresini bağlamak** aracılığıyla nası
 
 ## Dinamik DNS: Neden yararlıdır
 
-Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. Bir cihazın bağlantısı kesildiğinde, DHCP sunucusu serbest bırakılan IP adresini ağdaki başka bir cihaza atayabilir. Bu, dinamik IP adreslerinin sık sık ve öngörülemeyen bir şekilde değiştiği anlamına gelir. Sonuç olarak, cihaz her yeniden başlatıldığında veya ağ değiştiğinde ayarları güncellemeniz gerekir.
+Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. Bir cihazın bağlantısı kesildiğinde, DHCP sunucusu serbest bırakılan IP adresini ağdaki başka bir cihaza atayabilir. Bu, dinamik IP adreslerinin sık sık ve öngörülemeyen bir şekilde değiştiği anlamına gelir. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 Bağlı IP adresini otomatik olarak güncel tutmak için DNS kullanabilirsiniz. AdGuard DNS, DDNS alan adınızın IP adresini düzenli olarak kontrol eder ve sunucunuza bağlar.
 
@@ -64,7 +64,7 @@ Bu şekilde, ilişkili IP adresini her değiştiğinde elle güncellemeniz gerek
 
     ![DDNS'i yapılandır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Hepsi tamam, DDNS'i başarıyla kurdunuz!
+All done, you’ve successfully set up DDNS!
 
 ## Betik aracılığıyla bağlı IP güncellemesinin otomasyonu
 
@@ -78,7 +78,7 @@ En kolay yol Görev Zamanlayıcı'yı kullanmaktır:
     - Tetikleyiciyi her 5 dakikada bir çalışacak şekilde ayarlayın.
     - Eylem olarak _Programı Başlat_ öğesini seçin.
 2. Program seçin:
-    - _Program veya Betik_ alanına `powershell` yazın
+    - In the _Program or Script_ field, type `powershell`
     - In the _Add Arguments_ field, type:
         - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Görevi kaydedin.

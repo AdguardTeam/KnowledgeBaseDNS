@@ -3,7 +3,7 @@ title: Sådan fjernes en DNS-profil
 sidebar_position: 3
 ---
 
-Har man behov for at frakoble sin iPhone, iPad eller Mac med en opsat DNS-profil fra DNS-serveren, skal den pågældende DNS-profil fjernes. Det gør man således.
+Har man behov for at frakoble sin iPhone, iPad eller Mac med en opsat DNS-profil fra DNS-serveren, skal den pågældende DNS-profil fjernes. Here’s how to do it.
 
 På Mac:
 

@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## 使い方
 
-「クエリログ」で見ることができるもの、できることは以下のとおりです。
+Here’s what you can see and what you can do in the _Query log_.
 
 ### 各リクエストの詳細情報
 

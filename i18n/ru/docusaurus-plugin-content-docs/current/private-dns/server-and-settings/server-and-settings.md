@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Что такое сервер и как его использовать
 
-При настройке Личного AdGuard DNS вы столкнётесь с термином _сервер_.
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 Сервер действует как "профиль", к которому подключаются ваши устройства.
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 Для получения дополнительной информации о фильтрации трафика и правилах блокировки ознакомьтесь со статьей [«Как настроить фильтрацию в AdGuard DNS»](/private-dns/setting-up-filtering/blocklists.md).
 
-Если вас интересуют конкретные настройки, доступны специальные статьи:
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [Расширенные настройки](/private-dns/server-and-settings/advanced.md)
 - [Настройки доступа](/private-dns/server-and-settings/access.md)

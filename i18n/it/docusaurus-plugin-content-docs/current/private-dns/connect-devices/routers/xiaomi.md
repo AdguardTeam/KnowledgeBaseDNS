@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
-Sfortunatamente, non supporta DNS crittografati, ma è ottimo per impostare AdGuard DNS tramite IP collegato.
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## Utilizza il pannello di amministrazione del tuo router
 

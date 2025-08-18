@@ -149,7 +149,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### Руководство по API
 
-Перейдите по [этой ссылке](reference.md), чтобы ознакомиться с руководством по методам API.
+Please see the [method’s reference](reference.md).
 
 ### Спецификация OpenAPI
 

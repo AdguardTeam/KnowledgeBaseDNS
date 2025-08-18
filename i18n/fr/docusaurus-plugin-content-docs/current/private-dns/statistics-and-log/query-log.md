@@ -11,7 +11,7 @@ Il vous permet de voir toutes les requêtes effectuées par vos appareils pendan
 
 ## Comment l'utiliser
 
-Voici ce que vous pouvez voir et ce que vous pouvez faire dans le _Journal des requêtes_.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### Informations détaillées sur les requêtes
 

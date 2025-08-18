@@ -11,7 +11,7 @@ Te permite ver todas las peticiones realizadas por tus dispositivos durante el p
 
 ## Cómo utilizarlo
 
-Aquí tienes lo que puedes ver y lo que puedes hacer en el _Registro de consultas_.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### Información detallada sobre las peticiones
 

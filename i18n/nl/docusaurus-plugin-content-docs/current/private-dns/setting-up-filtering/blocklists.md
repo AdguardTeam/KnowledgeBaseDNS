@@ -57,7 +57,7 @@ To submit a request:
 3. Click _Blocklist request_ and fill out the form.
 4. After filling out the form, click _Submit new issue_.
 
-Als de blokkeerregels van je filter de bestaande lijsten niet dupliceren, worden deze toegevoegd aan het archief.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## User rules
 

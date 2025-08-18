@@ -5,11 +5,11 @@ sidebar_position: 4
 
 ## Co to je
 
-Rodičovská ochrana je soubor nastavení, který umožňuje přizpůsobit přístup k určitým webovým stránkám s "citlivým" obsahem.  Pomocí této funkce můžete dětem omezit přístup na stránky pro dospělé, přizpůsobit vyhledávací dotazy, zablokovat používání oblíbených služeb a další.
+Rodičovská ochrana je soubor nastavení, který umožňuje přizpůsobit přístup k určitým webovým stránkám s citlivým obsahem. Pomocí této funkce můžete dětem omezit přístup na stránky pro dospělé, přizpůsobit vyhledávací dotazy, zablokovat používání oblíbených služeb a další.
 
 ## Jak to nastavit
 
-Na serverech můžete flexibilně konfigurovat všechny funkce, včetně funkce rodičovské ochrany. [V příslušném článku](private-dns/server-and-settings/server-and-settings.md) se můžete seznámit s tím, co je to "server" v AdGuard DNS, a dozvědět se, jak vytvořit různé servery s různými sadami nastavení.
+Na serverech můžete flexibilně konfigurovat všechny funkce, včetně funkce rodičovské ochrany. [V příslušném článku](private-dns/server-and-settings/server-and-settings.md) se můžete seznámit s tím, co je to server v AdGuard DNS, a dozvědět se, jak vytvořit různé servery s různými sadami nastavení.
 
 Poté přejděte do nastavení vybraného serveru a povolte požadované konfigurace.
 

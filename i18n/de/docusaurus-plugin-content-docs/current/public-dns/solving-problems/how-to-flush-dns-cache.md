@@ -26,7 +26,7 @@ Der DNS-Cache enthält sogenannte [Resource Records (RRs)](https://de.wikipedia.
 
 ## Wann Sie den Cache leeren sollten
 
-**Sie haben Ihren DNS-Anbieter zu AdGuard DNS geändert.** Wenn der Benutzer seinen DNS geändert hat, kann es aufgrund des Cache einige Zeit dauern, bis das Ergebnis angezeigt wird.
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **Sie erhalten regelmäßig eine 404-Fehlermeldung.** Zum Beispiel wurde die Website auf einen anderen Server übertragen und die IP-Adresse hat sich geändert. Damit der Browser die Website von der neuen IP-Adresse laden kann, müssen Sie die alte zwischengespeicherte IP-Adresse aus dem DNS-Cache entfernen.
 
@@ -50,7 +50,7 @@ Dadurch verlieren Sie die Verbindungen zu WLAN-Routern und andere spezifische Ne
 
 ### Android
 
-Es gibt verschiedene Möglichkeiten, den DNS-Cache auf Ihrem Android-Gerät zu leeren. Die genauen Schritte können je nach der von Ihnen verwendeten Android-Version und dem Gerätehersteller variieren.
+Es gibt verschiedene Möglichkeiten, den DNS-Cache auf Ihrem Android-Gerät zu leeren. The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### DNS-Cache über Chrome leeren
 
@@ -63,11 +63,11 @@ Google Chrome, oft der Standardbrowser auf Android, verwendet einen eigenen DNS-
 
 #### Ändern Sie das WLAN-Netzwerk auf „Statisch“
 
-Gehen Sie folgendermaßen vor, um den DNS-Cache Ihres Android-Geräts zu leeren, indem Sie die WLAN-Netzwerkeinstellungen auf „Statisch“ ändern:
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. Öffnen Sie *Einstellungen ➜ WLAN* und wählen Sie das Netzwerk, mit dem Sie verbunden sind
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. Suchen Sie nach IP-Einstellungen und wählen Sie *Statisch*
-1. Füllen Sie die erforderlichen Felder aus. Die notwendigen Informationen erhalten Sie von Ihrem Netzwerkadministrator oder auf der Konfigurationsseite Ihres Routers
+1. Füllen Sie die erforderlichen Felder aus. You can get the necessary information from your network administrator or from your router’s configuration page
 1. Nachdem Sie die erforderlichen Informationen eingegeben haben, verbinden Sie sich erneut mit Ihrem WLAN-Netzwerk. Durch diese Aktion wird Ihr Gerät gezwungen, seine IP- und DNS-Einstellungen zu aktualisieren und den DNS-Cache zu leeren
 
 #### Netzwerkeinstellungen zurücksetzen
@@ -106,7 +106,7 @@ Linux verfügt über kein DNS-Caching auf Betriebssystemebene, es sei denn, ein 
 
 Für jede Distribution müssen Sie zunächst ein Terminalfenster öffnen. Drücken Sie das Tastaturkürzel Strg+Alt+T und verwenden Sie den zu dem auf Ihrem Linux-System ausgeführten Dienst passenden Befehl, um den DNS-Cache zu leeren.
 
-Um herauszufinden, welchen DNS-Resolver Sie verwenden, geben Sie den Befehl `sudo lsof -i :53 -S`.
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

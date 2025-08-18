@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## Как им пользоваться
 
-Вот что вы можете увидеть и что вы можете сделать в _журнале запросов_.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### Подробная информация о запросах
 

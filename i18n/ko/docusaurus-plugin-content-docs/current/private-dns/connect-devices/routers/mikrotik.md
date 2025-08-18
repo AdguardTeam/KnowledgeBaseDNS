@@ -8,7 +8,7 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
 ## DNS-over-HTTPS 설정
 
 1. MikroTik 라우터 설정으로 이동합니다.
-    - 웹브라우저를 열고 라우터의 IP 주소(일반적으로 `192.168.88.1`)로 이동합니다.
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - 또는 Winbox를 사용하여 MikroTik 라우터에 연결할 수 있습니다.
     - 관리자 사용자 아이디와 비밀번호를 입력합니다.
 2. 루트 인증서를 가져옵니다.
@@ -40,14 +40,14 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
     - **확인**을 클릭합니다.
 6. Test and verify:
     - You might need to reboot your MikroTik router for all changes to take effect
-    - Clear your browser's DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+    - Clear your browser’s DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
 
 ## My router does not support DNS-over-HTTPS
 
 Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
 1. MikroTik 라우터 설정으로 이동합니다.
-    - 웹브라우저를 열고 라우터의 IP 주소(일반적으로 `192.168.88.1`)로 이동합니다.
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - 또는 Winbox를 사용하여 MikroTik 라우터에 연결할 수 있습니다.
     - 관리자 사용자 아이디와 비밀번호를 입력합니다.
 2. Configure Plain DNS:

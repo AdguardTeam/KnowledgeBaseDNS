@@ -149,7 +149,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### 参考资料
 
-请点击[此处](reference.md)查看方法参考。
+Please see the [method’s reference](reference.md).
 
 ### 开源API 规范
 

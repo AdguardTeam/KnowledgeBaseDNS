@@ -26,7 +26,7 @@ DNS-cachen indeholder såkaldte [ressourceposter (RR'er)](https://en.wikipedia.o
 
 ## Hvornår man muligvis skal rydde cachen
 
-**DNS-udbyderen er skiftet til AdGuard DNS.** Ved skift af DNS kan det tage lidt tid at se resultatet grundet cachen.
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **Der opleves jævnligt 404-fejl.** Webstedet er f.eks. overført til en anden server, og dets IP-adresse er ændret. For at få browseren til at åbne webstedet fra den nye IP-adresse, skal den cachelagrede IP fra DNS-cachen fjernes.
 
@@ -50,7 +50,7 @@ Bemærk: Ved at gøre dette, mistes alle forbindelser til Wi-Fi routere samt øv
 
 ### Android
 
-Der er forskellige måder at rydde DNS-cachen på en Android-enhed. De præcise trin kan variere afhængigt af den anvendte Android-version og enhedsproducent.
+Der er forskellige måder at rydde DNS-cachen på en Android-enhed. The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### Ryd DNS-cache via Chrome
 
@@ -63,11 +63,11 @@ Google Chrome, ofte standardbrowseren på Android, har sin egen DNS-cache. Følg
 
 #### Ændr Wi-Fi netværket til Statisk
 
-Følg disse trin for at rydde Android-enhedens DNS-cache ved at ændre Wi-Fi netværksindstillingerne til Statisk:
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. Gå til *Indstillinger → Wi-Fi* og vælg det netværk, der er oprettet forbindelse til
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. Se efter IP-indstillinger og vælg *Statisk*
-1. Udfyld de krævede felter. Man kan få de nødvendige oplysninger fra sin netværksadministrator eller fra routerens opsætningsside
+1. Udfyld de krævede felter. You can get the necessary information from your network administrator or from your router’s configuration page
 1. Efter indtastning af de krævede oplysninger, opret forbindelse til Wi-Fi-netværk igen. Denne handling vil tvinge enheden til at opdatere sine IP- og DNS-indstillinger samt rydde DNS-cachen
 
 #### Nulstil netværksindstillinger
@@ -106,7 +106,7 @@ Linux har ikke DNS-caching på OS-niveau, medmindre en cachingtjeneste såsom sy
 
 For hver distribution skal et terminalvindue startes. Tryk på Ctrl+Alt+T på tastaturet, og brug den relevante kommando til at rense DNS-cachen for den tjeneste, Linux-systemet kører.
 
-Brug flg. kommando til at fastslå den anvendte DNS-opløser: `sudo lsof -i :53 -S`.
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

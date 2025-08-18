@@ -57,7 +57,7 @@ AdGuard DNS 필터 목록을 확장하고 싶다면, GitHub의 [Hostlistsregistr
 3. **Blocklist request** 클릭하고 양식을 작성합니다.
 4. 양식을 작성한 후에 **Submit new issue**을 클릭합니다.
 
-필터의 차단 규칙이 기존 목록에 중복되지 않으면 레포지터리에 추가됩니다.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## 사용자 규칙
 

@@ -26,7 +26,7 @@ DNS önbelleği, aşağıdakileri içeren [kaynak kayıtları (RR'ler)](https://
 
 ## Önbelleği temizlemeniz gerektiğinde
 
-**DNS sağlayıcınızı AdGuard DNS olarak değiştirdiniz.** Kullanıcı DNS'sini değiştirmişse, önbellek nedeniyle sonucun görülmesi biraz zaman alabilir.
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **Düzenli olarak 404 hatası alıyorsunuz.** Örneğin, site başka bir sunucuya aktarılmıştır ve IP adresi değişmiştir. Tarayıcının siteyi yeni IP adresinden açmasını sağlamak için önbelleğe alınan IP'yi DNS önbelleğinden kaldırmanız gerekir.
 
@@ -50,7 +50,7 @@ Bunu yaparak, Wi-Fi yönlendiricilerine ve DNS sunucu özelleştirmeleri dahil d
 
 ### Android
 
-Android cihazınızdaki DNS önbelleğini temizlemenin farklı yolları vardır. Doğru adımlar, kullandığınız Android sürümüne ve cihaz üreticisine bağlı olarak değişebilir.
+Android cihazınızdaki DNS önbelleğini temizlemenin farklı yolları vardır. The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### Chrome aracılığıyla DNS önbelleğini temizle
 
@@ -63,11 +63,11 @@ Android'de genellikle varsayılan tarayıcı olan Google Chrome'un kendi DNS ön
 
 #### Wi-Fi ağını Statik olarak değiştir
 
-Wi-Fi ağ ayarlarını Statik olarak değiştirerek Android cihazınızın DNS önbelleğini temizlemek için aşağıdaki adımları izleyin:
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. *Ayarlar → Wi-Fi* öğesine gidin ve bağlı olduğunuz ağı seçin
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. IP ayarlarını bulun ve *Statik* öğesini seçin
-1. Gerekli alanları doldurun. Gerekli bilgileri ağ yöneticinizden veya yönlendiricinizin yapılandırma sayfasından alabilirsiniz
+1. Gerekli alanları doldurun. You can get the necessary information from your network administrator or from your router’s configuration page
 1. Gerekli bilgileri girdikten sonra Wi-Fi ağınıza yeniden bağlanın. Bu eylem cihazınızı IP ve DNS ayarlarını güncellemeye ve DNS önbelleğini temizlemeye zorlar
 
 #### Ağ ayarlarını sıfırla
@@ -106,7 +106,7 @@ Linux, systemd-resolved, DNSMasq, BIND veya nscd gibi bir önbellekleme hizmeti 
 
 Her dağıtım için bir terminal penceresi başlatmanız gerekir. Klavyenizde Ctrl+Alt+T tuşlarına basın ve Linux sisteminizin çalıştırdığı hizmetin DNS önbelleğini temizlemek için ilgili komutu kullanın.
 
-Hangi DNS çözümleyicisini kullandığınızı öğrenmek için `sudo lsof -i :53 -S` komutunu yazın.
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

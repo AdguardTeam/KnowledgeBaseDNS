@@ -33,8 +33,8 @@ Her fremgår de lande, hvortil de fleste forespørgsler er blevet sendt.
 
 Ud over landenavnene indeholder listen yderligere to generelle kategorier:
 
-- **Ikke anvendelig**: Svaret inkluderer ikke IP-adresse
-- **Ukendt destination**: Land kan ikke bestemmes ud fra IP-adressen
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Topdestinationer \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

@@ -9,7 +9,7 @@ Uden en forespørgselskvote er DNS-servere sårbare over for overbelastning, og 
 
 ## Hvordan fungerer forespørgselskvote
 
-DNS-forespørgselskvote fungerer typisk ved at sætte grænser for antallet af forespørgsler, en klient (IP-adresse) kan foretage til en DNS-server over et bestemt tidsinterval. Oplever man problemer med den nuværende AdGuard DNS-forespørgselskvote og er på en _Team_ eller _Enterprise_ abonnementstype, kan man anmode om en forhøjelse af forespørgselskvoten.
+DNS-forespørgselskvote fungerer typisk ved at sætte grænser for antallet af forespørgsler, en klient (IP-adresse) kan foretage til en DNS-server over et bestemt tidsinterval. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## Hvordan anmodes om en forøgelse af DNS-forespørgselskvoten
 

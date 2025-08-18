@@ -21,7 +21,7 @@ Kullanıcı kurallarını ayarlamak için:
 
 4. _Kullanıcı kuralları_ seçeneğine tıklayın.
 
-5. Kullanıcı kuralları eklemek için çeşitli seçenekler bulacaksınız.
+5. You’ll find several options for adding user rules.
 
     - En kolay yol oluşturucuyu kullanmaktır. Kullanmak için _Yeni kural ekle_ öğesine tıklayın → Engellemek veya engelini kaldırmak istediğiniz alan adını girin → _Kural ekle_ öğesine tıklayın
         ![Kural ekle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

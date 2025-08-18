@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi-routere har mange fordele: Et stabilt, stærkt signal, netværkssikkerhed, robust ydeevne og intelligent håndtering. Brugere kan tilslutte op til 64 enheder til et lokalt Wi-Fi netværk.
 
-Desværre understøtter den ikke krypteret DNS, men den er fantastisk til opsætning af AdGuard DNS via linket IP.
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## Brug routerens håndteringspanel
 

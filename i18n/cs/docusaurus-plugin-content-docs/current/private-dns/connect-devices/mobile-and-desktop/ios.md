@@ -59,7 +59,7 @@ Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
 ## Použití konfiguračního profilu
 
-Profil zařízení iOS, který společnost Apple označuje také jako "konfigurační profil", je certifikátem podepsaný soubor XML, který můžete do zařízení iOS nainstalovat ručně nebo nasadit pomocí řešení MDM. Umožňuje také nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
+Profil zařízení iOS, který společnost Apple označuje také jako konfigurační profil, je certifikátem podepsaný soubor XML, který můžete do zařízení iOS nainstalovat ručně nebo nasadit pomocí řešení MDM. Umožňuje také nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
 
 :::note Důležité
 

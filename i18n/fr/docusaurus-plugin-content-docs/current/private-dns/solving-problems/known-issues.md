@@ -23,7 +23,7 @@ Si vous utilisez Chrome et vous ne voyez aucune requête dans votre tableau de b
 
 ![Fonction Utiliser DNS sécurisé de Chrome](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Si vous désactivez les propres paramètres DNS de Chrome, le navigateur utilisera le DNS spécifié dans votre système d'exploitation, qui devrait être AdGuard DNS si vous l'avez configuré correctement.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## Relais privé iCloud (Safari, macOS et iOS)
 

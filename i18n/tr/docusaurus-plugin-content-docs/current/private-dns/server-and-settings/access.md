@@ -3,7 +3,7 @@ title: Erişim ayarları
 sidebar_position: 3
 ---
 
-Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karşı koruyabilirsiniz. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. Sorun değil, sadece sinir bozucu alan adını veya IP adresini listeye ekleyin ve artık sizi rahatsız etmesin!
+Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karşı koruyabilirsiniz. For example, you are using a dedicated IPv4 address, and attackers using sniffers have recognized it and are bombarding it with requests. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 Engellenen istekler Sorgu Günlüğünde görüntülenmeyecek ve toplam limite dâhil edilmeyecektir.
 
@@ -19,7 +19,7 @@ Burada DNS sunucunuzu kullanmasına izin verilmeyen istemcileri listeleyebilirsi
 
 :::note Önemli
 
-Erişim ayarlarını uygulamadan önce, kendi IP adresinizi engellemediğinizden emin olun. Eğer bunu yaparsanız, ağa erişemezsiniz. Eğer böyle bir durum olursa, DNS sunucusundan bağlantınızı kesin, erişim ayarlarına gidin ve yapılandırmaları buna göre ayarlayın.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Eğer böyle bir durum olursa, DNS sunucusundan bağlantınızı kesin, erişim ayarlarına gidin ve yapılandırmaları buna göre ayarlayın.
 
 :::
 
