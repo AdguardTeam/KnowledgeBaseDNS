@@ -3,7 +3,7 @@ title: Adgangsindstillinger
 sidebar_position: 3
 ---
 
-Ved at opsætte Adgangsindstillinger kan AdGuard DNS beskyttes mod uautoriseret adgang. F.eks., en dedikeret IPv4-adresse benyttes, og angribere, som bruger sniffere, har genkendt den og bombarderer den med forespørgsler. Intet problem, føj blot det irriterende domæne eller IP-adresse til listen, og det/den vil ikke kunne genere mere!
+Ved at opsætte Adgangsindstillinger kan AdGuard DNS beskyttes mod uautoriseret adgang. F.eks., en dedikeret IPv4-adresse benyttes, og angribere, som bruger sniffere, har genkendt den og bombarderer den med forespørgsler. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 Blokerede forespørgsler vises ikke i Forespørgselsloggen, og tælles ikke med i den samlede kvote.
 
@@ -19,7 +19,7 @@ Her kan de klienter listes, som ikke har tilladelse til at bruge DNS-serveren. M
 
 :::note Vigtigt
 
-Før adgangsindstillingerne anvendes, skal man sikre sig, at man ikke blokerer sin egen IP-adresse. Gør man det, vil man ikke kunne få adgang til netværket. Skulle dette ske, afbryd blot forbindelsen til DNS-serveren, gå til adgangsindstillingerne og korrigér opsætningen.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Skulle dette ske, afbryd blot forbindelsen til DNS-serveren, gå til adgangsindstillingerne og korrigér opsætningen.
 
 :::
 

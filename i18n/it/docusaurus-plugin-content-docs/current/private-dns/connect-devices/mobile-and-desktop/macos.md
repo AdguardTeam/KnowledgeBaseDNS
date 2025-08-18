@@ -54,7 +54,7 @@ Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
 ## Usa un profilo di configurazione
 
-Un profilo dispositivo macOS, noto anche come "profilo di configurazione" da Apple, è un file XML firmato da un certificato che puoi installare manualmente sul tuo dispositivo o distribuire utilizzando una soluzione MDM. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
+A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
 
 :::note Importante
 

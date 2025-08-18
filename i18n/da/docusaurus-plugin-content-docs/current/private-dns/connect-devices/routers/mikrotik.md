@@ -8,7 +8,7 @@ MikroTik-routere bruger open-source operativsystemet RouterOS, der leverer rutni
 ## Opsæt DNS-over-HTTPS
 
 1. Tilgå MikroTik-routeren:
-    - Åbn en webbrowser og gå til routerens IP-adresse (oftest `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Brug alternativt Winbox til at oprette forbindelse til MikroTik-routeren
     - Angiv administratorbrugernavn og -adgangskode
 2. Import af rodcertifikat:
@@ -40,14 +40,14 @@ MikroTik-routere bruger open-source operativsystemet RouterOS, der leverer rutni
     - Klik på _OK_
 6. Test og bekræft:
     - MikroTik-routeren skal muligvis genstartes for at effektuere alle ændringer
-    - Ryd webbrowserens DNS-cache. Der kan bruges et værktøj, såsom [https://www.dnsleaktest.com](https://www.dnsleaktest.com/), til at tjekke, om DNS-forespørgslerne nu rutes igennem AdGuard
+    - Clear your browser’s DNS cache. Der kan bruges et værktøj, såsom [https://www.dnsleaktest.com](https://www.dnsleaktest.com/), til at tjekke, om DNS-forespørgslerne nu rutes igennem AdGuard
 
 ## Routeren understøtter ikke DNS-over-HTTPS
 
 Brug denne vejledning, hvis MikroTik-routeren ikke understøtter opsætning af DNS-over-HTTPS:
 
 1. Tilgå MikroTik-routeren:
-    - Åbn en webbrowser og gå til routerens IP-adresse (oftest `192.168.88.1`)
+    - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
     - Brug alternativt Winbox til at oprette forbindelse til MikroTik-routeren
     - Angiv administratorbrugernavn og -adgangskode
 2. Opsæt almindelig DNS:

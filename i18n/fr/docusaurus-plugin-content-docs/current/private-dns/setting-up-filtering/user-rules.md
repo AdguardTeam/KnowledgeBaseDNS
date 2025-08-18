@@ -21,7 +21,7 @@ Pour configurer les règles utilisateur :
 
 4. Cliquez sur l'option _Règles utilisateur_.
 
-5. Vous trouverez plusieurs options pour ajouter des règles utilisateur.
+5. You’ll find several options for adding user rules.
 
     - Le moyen le plus facile est d'utiliser le générateur. Pour l'utiliser, cliquez sur _Ajouter nouvelle règle_ → Entrez le nom du domaine que vous souhaitez bloquer ou débloquer → Cliquez sur _Ajouter la règle_
         ![Ajouter règle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

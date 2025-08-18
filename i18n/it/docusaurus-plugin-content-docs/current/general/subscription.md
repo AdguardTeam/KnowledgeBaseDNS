@@ -9,6 +9,8 @@ AdGuard DNS plans can be purchased on [adguard-dns.io](https://adguard-dns.io/li
 
 The Personal plan is free for [AdGuard VPN](https://adguard-vpn.com/welcome.html) paid users.
 
+AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. If you can’t activate your subscription, please email our support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## How to upgrade a plan {#upgrade}
 
 To make the most out of AdGuard DNS, you can upgrade your plan for the following benefits:
@@ -18,11 +20,11 @@ To make the most out of AdGuard DNS, you can upgrade your plan for the following
 
 You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). To do so, click _Upgrade_ under the section _AdGuard DNS_.
 
-The _Enterprise_ plan is available by request only. If you're interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we'll contact you with further information.
+The _Enterprise_ plan is available by request only. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
 
 ## How to get a refund {#refund}
 
-In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you've used. The processing time usually takes up to 5-10 business days.
+In accordance with our [Terms of Sale](https://adguard-dns.io/terms-of-sale.html), you can get a 100% refund on any AdGuard DNS Yearly plans purchased at https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. The processing time usually takes up to 5-10 business days.
 
 A refund may be declined if:
 

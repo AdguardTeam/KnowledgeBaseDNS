@@ -7,13 +7,13 @@ sidebar_position: 2
 
 Endereços IPv4 dedicados estão disponíveis para usuários com assinaturas Team e Enterprise, enquanto IPs vinculados estão disponíveis para todos.
 
-Se você tiver uma assinatura Team ou Enterprise, receberá vários endereços de IP individuais dedicados. Solicitações para estes endereços são tratadas como "suas", e as configurações e regras de filtragem de nível de servidor são aplicadas conforme necessário. Endereços de IP dedicados são muito mais seguros e fáceis de gerenciar. Com IPs vinculados, você precisa reconectar manualmente ou usar um programa especial toda vez que o endereço de IP do dispositivo mudar, o que acontece após cada reinicialização.
+If you have a Team or Enterprise subscription, you’ll receive several personal dedicated IP addresses. Requests to these addresses are treated as yours, and server-level configurations and filtering rules are applied accordingly. Endereços de IP dedicados são muito mais seguros e fáceis de gerenciar. With linked IPs, you have to manually reconnect or use a special program every time the device’s IP address changes, which happens after every reboot.
 
 ## Por que você precisa de um IP dedicado?
 
 Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Neste caso, você terá que usar DNS padrão não criptografado. Existem duas maneiras de configurar o AdGuard DNS: [usando IPs vinculados](/private-dns/connect-devices/other-options/linked-ip.md) e usando IPs dedicados.
 
-IPs dedicados são geralmente uma opção mais estável. O IP vinculado tem algumas limitações, por exemplo, a permissão de endereços residenciais apenas. No entanto, seu provedor pode mudar o IP, e você precisará revincular o endereço de IP. Com IPs dedicados, você obtém um Endereço de IP que é exclusivamente seu, e todas as Solicitações serão contadas para o seu dispositivo.
+IPs dedicados são geralmente uma opção mais estável. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you’ll need to relink the IP address. Com IPs dedicados, você obtém um Endereço de IP que é exclusivamente seu, e todas as Solicitações serão contadas para o seu dispositivo.
 
 A desvantagem é que você pode começar a receber tráfego irrelevante (scanners, bots), como sempre acontece com resolvedores de DNS públicos. Você pode precisar usar as [Configurações de acesso](/private-dns/server-and-settings/access.md) para limitar o tráfego de bots.
 

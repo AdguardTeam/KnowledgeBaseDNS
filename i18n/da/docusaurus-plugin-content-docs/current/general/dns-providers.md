@@ -51,7 +51,7 @@ Disse servere leverer standardfunktionerne + blokering af voksenwebsteder + sikk
 
 #### Ikke-filtrerende
 
-Hver af disse servere leverer en sikker og pålidelig forbindelse, men modsat "Standard"- og "Family Protection"-serverne, foretager de ikke filtrering.
+Each of these servers provides a secure and reliable connection, but unlike the *Standard* and *Family Protection* servers, they don’t filter anything.
 
 | Protokol       | Adresse                                                                       |                                                                                                                                                                                                                                             |
 | -------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ Dette er standardvarianten af BebasDNS. Denne variant blokerer reklame-, malware
 
 #### Ufiltreret
 
-Denne variant foretager ingen filtrering.
+This variant doesn’t filter anything.
 
 | Protokol       | Adresse                                |                                                                                                                                                                                                                                                   |
 | -------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,7 +207,7 @@ Ikke-filtrerende OpenDNS-servere.
 
 :::info
 
-OpenDNS' servere fjerner AUTHORITY-afsnittene fra visse svar, herunder dem med NODATA, hvilket umuliggør cachelagring af sådanne svar.
+OpenDNS’s servers remove the AUTHORITY sections from certain responses, including those with NODATA, which makes caching such responses impossible.
 
 :::
 
@@ -563,7 +563,7 @@ Disse servere leverer pålidelige og hurtige DNS-opslag uden at blokere bestemte
 
 #### Trusselsbeskyttelse
 
-Disse servere yder beskyttelse mod ondsindede domæner samt inkluderer funktionerne "Pålidelighed og Ydelse".
+These servers provide protection against malicious domains and also include *Reliability & Performance* features.
 
 | Protokol  | Adresse                                |                                                                                                                                                         |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -572,7 +572,7 @@ Disse servere yder beskyttelse mod ondsindede domæner samt inkluderer funktione
 
 #### Familiesikker
 
-Disse servere leverer blokering af voksenindhold samt inkluderer funktionerne "Pålidelighed og Ydeevne" + "Trusselsbeskyttelse".
+These servers provide adult content blocking and also include *Reliability & Performance* + *Threat Protection* features.
 
 | Protokol  | Adresse                                |                                                                                                                                                         |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -581,7 +581,7 @@ Disse servere leverer blokering af voksenindhold samt inkluderer funktionerne "P
 
 #### Virksomhedssikker
 
-Disse servere blokerer uønsket og tidsspildende indhold samt inkluderer funktionerne "Pålidelighed og Ydeevne" + "Trusselsbeskyttelse" + "Familiesikker".
+These servers provide blocking unwanted and time-wasting content and also include *Reliability & Performance* + *Threat Protection* + *Family Secure* features.
 
 | Protokol  | Adresse                                |                                                                                                                                                         |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -630,7 +630,7 @@ Mere strikse filtreringspolitikker med blokering — ondsindede samt reklame-, m
 
 ### Quad9 DNS
 
-[Quad9 DNS](https://quad9.net/) er en højtydende gratis, rekursiv anycast DNS-platform, der leverer fortrolighed samt sikkerhedsbeskyttelse mod phishing og spyware. Quad9-servere tilbyder ingen censureringskomponent.
+[Quad9 DNS](https://quad9.net/) er en højtydende gratis, rekursiv anycast DNS-platform, der leverer fortrolighed samt sikkerhedsbeskyttelse mod phishing og spyware. Quad9 servers don’t provide a censoring component.
 
 #### Standard
 
@@ -647,7 +647,7 @@ Alm. DNS-servere med beskyttelse mod phishing og spyware. De inkluderer sortlist
 
 #### Ikke-sikret
 
-Ikke-sikrede DNS-servere tilbyder ingen sikkerhedssortliste, DNSSEC eller EDNS Client Subnet.
+Unsecured DNS servers don’t provide security blocklists, DNSSEC, or EDNS Client Subnet.
 
 | Protokol       | Adresse                                                          |                                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -682,7 +682,7 @@ EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 
 ### Rabbit DNS
 
-[Rabbit DNS](https://rabbitdns.org/) er en fortrolighedsfokuseret DoH-tjeneste, der ikke indsamler nogen brugerdata.
+[Rabbit DNS](https://rabbitdns.org/) is a privacy-focused DoH service that doesn’t collect any user data.
 
 #### Ikke-filtrerende
 
@@ -755,7 +755,7 @@ EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 
 ### Verisign Public DNS
 
-[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) er en gratis DNS-tjeneste med forbedret DNS-stabilitet og sikkerhed ift. andre alternativer. Verisign respekterer brugernes fortrolighed og sælger ikke offentlige DNS-data til tredjeparter eller omdirigerer brugerforespørgsler mhp. reklamevisning.
+[Verisign Public DNS](https://www.verisign.com/security-services/public-dns/) er en gratis DNS-tjeneste med forbedret DNS-stabilitet og sikkerhed ift. andre alternativer. Verisign respects users’ privacy: they neither sell public DNS data to third parties nor redirect users’ queries to serve them ads.
 
 | Protokol  | Adresse                                |                                                                                                                                                         |
 | --------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -766,7 +766,7 @@ EDNS Client Subnet er en metode, der inkluderer komponenter af slutbrugerens IP-
 
 [v.recipes DNS](https://v.recipes/dns/) er en global DNS-opløsningstjeneste leveret som et alternativ til en aktuelt anvendt DNS-udbyder.
 
-Den er designet med forskellige optimeringer, såsom HTTP/3, caching mv. Den udnytter maskinlæring til at beskytte brugere mod potentielle sikkerhedstrusler, samtidig med at den optimerer sig selv over tid. Nogle af dens brugere så, hvordan DNS'en håndterer forespørgsler i realtid fra dens statistikside, men p.t. er statistiksiden midlertidigt deaktiveret. Selv om statistiksiden midlertidigt er slået fra, kan DNS'en stadig stadig håndtere brugernes forespørgsler normalt.
+Den er designet med forskellige optimeringer, såsom HTTP/3, caching mv. Den udnytter maskinlæring til at beskytte brugere mod potentielle sikkerhedstrusler, samtidig med at den optimerer sig selv over tid. Nogle af dens brugere så, hvordan DNS'en håndterer forespørgsler i realtid fra dens statistikside, men p.t. er statistiksiden midlertidigt deaktiveret. Even if the stats page is temporarily disabled, the DNS itself still able to serve users’ requests normally.
 
 | Protokol       | Adresse                       |                                                                                                                                                                                                   |
 | -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -808,7 +808,7 @@ ByteDance Public DNS er en gratis alternativ DNS-tjeneste fra ByteDance i Kina. 
 
 #### Fortrolige
 
-I tilstanden "Private", kun DNS-opløsning.
+In *Private* mode, DNS resolution only.
 
 | Protokol               | Adresse                                                                                             |                                                                                                                                                                                                                                                                                       |
 | ---------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -819,7 +819,7 @@ I tilstanden "Private", kun DNS-opløsning.
 
 #### Beskyttede
 
-I tilstanden "Protected", malware- og phishing-beskyttelse.
+In *Protected* mode, malware and phishing protection.
 
 | Protokol                 | Adresse                                                                                               |                                                                                                                                                                                                                                                                                               |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -830,7 +830,7 @@ I tilstanden "Protected", malware- og phishing-beskyttelse.
 
 #### Family
 
-I tilstanden "Family", Beskyttet + blokering af voksenindhold.
+In *Family* mode, *Protected* + blocking adult content.
 
 | Protokol              | Adresse                                                                                            |                                                                                                                                                                                                                                                                                   |
 | --------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1106,7 +1106,7 @@ Dette er blot en af de tilgængelige servere, den komplette liste findes på sid
 
 ### Xstl DNS
 
-[Xstl DNS](https://get.dns.seia.io/), baseret i Sydkorea, er en offentlig DNS-tjeneste, der ikke logger brugerens IP. Annoncer og trackere blokeres.
+[Xstl DNS](https://get.dns.seia.io/) is a public DNS service based in South Korea that doesn’t log the user’s IP. Annoncer og trackere blokeres.
 
 #### SK Broadband
 
@@ -1124,11 +1124,11 @@ Dette er blot en af de tilgængelige servere, den komplette liste findes på sid
 
 ### Yandex DNS
 
-[Yandex.DNS](https://dns.yandex.com/) er en gratis rekursiv DNS-tjeneste. Yandex.DNS-servere er placeret i Rusland, SNG-lande og Vesteuropa. Brugerforespørgsler behandles af det nærmeste datacenter, hvilket giver høje forbindelseshastigheder.
+[Yandex.DNS](https://dns.yandex.com/) er en gratis rekursiv DNS-tjeneste. Yandex.DNS’ servers are located in Russia, CIS countries, and Western Europe. Users’ requests are processed by the nearest data center which provides high connection speeds.
 
 #### Basis
 
-I tilstanden "Basic" sker ingen trafikfiltrering.
+In *Basic* mode, there is no traffic filtering.
 
 | Protokol       | Adresse                                          |                                                                                                                                                                                                                                     |
 | -------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1139,7 +1139,7 @@ I tilstanden "Basic" sker ingen trafikfiltrering.
 
 #### Sikker
 
-I tilstanden "Safe" ydes beskyttelse mod inficerede og svigagtige websteder.
+In *Safe* mode, protection from infected and fraudulent sites is provided.
 
 | Protokol       | Adresse                                          |                                                                                                                                                                                                                                           |
 | -------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1150,7 +1150,7 @@ I tilstanden "Safe" ydes beskyttelse mod inficerede og svigagtige websteder.
 
 #### Family
 
-I tilstanden "Family" ydes beskyttelse mod inficerede, svigagtige og voksenwebsteder.
+In *Family* mode, protection from infected, fraudulent and adult sites is provided.
 
 | Protokol       | Adresse                                          |                                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1163,7 +1163,7 @@ I tilstanden "Family" ydes beskyttelse mod inficerede, svigagtige og voksenwebst
 
 Disse er DNS-opløsere, som normalt drives af entusiaster eller små grupper. Selvom de måske ikke har samme kapacitet og redundans som større udbydere, prioriterer de ofte fortrolighed/transparens eller tilbyder særlige funktioner.
 
-Vi kan ikke i tilstrækkelig grad monitorere deres tilgængelighed. **Brug af dem er for egen risiko.**
+We won’t be able to proper monitor their availability. **Brug af dem er for egen risiko.**
 
 ### AhaDNS
 
@@ -1206,11 +1206,11 @@ Nul logging | Filtrerer annoncerer, trackere, phishing mv. | DNSSEC | QNAME-mini
 | -------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Udbyder: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Føj til AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Dandelion Sprout's Official DNS Server
+### Dandelion Sprout’s Official DNS Server
 
-[Dandelion Sprout's Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) er en personlig DNS-tjeneste hostet i Trondheim, Norge, vha. en AdGuard Home-infrastruktur.
+[Dandelion Sprout’s Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
 
-Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logning bruges til forbedring af de anvendte filterlister (f.eks. ved at afblokere websteder, som ikke burde have været blokeret) og til at bestemme de mindst forstyrrende tidspunkter for serversystemopdateringer.
+Blokerer flere annoncer og malware end AdGuard DNS grundet en mere avanceret syntaks, men med mindre striks håndtering af trackere, samt blokering af alt-right tabloids og de fleste imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn’t have been blocked), and to determine the least bad times for server system updates.
 
 | Protokol       | Adresse                                               |                                                                                                                                                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1254,7 +1254,7 @@ Man kan også [opsætte en tilpasset DNS-server](https://dnswarden.com/customfil
 
 ### fvz DNS
 
-[fvz DNS](http://meo.ws/) er en Fusls offentlig primær OpenNIC Tier2 Anycast DNS-opløser.
+[fvz DNS](http://meo.ws/) is a Fusl’s public primary OpenNIC Tier2 Anycast DNS Resolver.
 
 | Protokol       | Adresse                                                             |                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

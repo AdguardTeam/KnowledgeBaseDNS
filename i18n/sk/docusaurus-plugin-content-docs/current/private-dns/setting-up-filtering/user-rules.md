@@ -21,7 +21,7 @@ To set up user rules:
 
 4. Click the _User rules_ option.
 
-5. You'll find several options for adding user rules.
+5. You’ll find several options for adding user rules.
 
     - The easiest way is to use the generator. To use it, click _Add new rule_ → Enter the name of the domain you want to block or unblock → Click _Add rule_
         ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

@@ -33,8 +33,8 @@ sidebar_position: 2
 
 国名に加えて、リストにはさらに2つの一般カテゴリが含まれます：
 
-- **該当なし**: 応答に IP アドレスが含まれていません
-- **送信先不明**: IPアドレスから国を特定できません
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Top destinations \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

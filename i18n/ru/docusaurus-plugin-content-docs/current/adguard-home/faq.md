@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Не используйте поддиректории с обратным HTTP-прокси Apache.  Известная проблема ([#6604]): Apache обрабатывает относительные перенаправления иначе, чем другие веб-серверы. Это вызывает проблемы с веб-интерфейсом AdGuard Home.
+Не используйте поддиректории с обратным HTTP-прокси Apache.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Это вызывает проблемы с веб-интерфейсом AdGuard Home.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 

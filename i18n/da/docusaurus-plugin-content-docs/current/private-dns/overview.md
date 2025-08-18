@@ -23,7 +23,7 @@ Privat AdGuard DNS tilbyder alle fordelene ved en offentlig AdGuard DNS-server, 
 
 I dag kan alt tilsluttes internet: TV, køleskabe, køleskabe, smarte pærer eller højttalere. Men sammen med de ubestridelige bekvemmeligheder kommer trackere og annoncer. En simpel browserbaseret adblocker yder ikke beskyttelse i dette tilfælde, hvorimod AdGuard DNS — som kan opsættes til at filtrere trafik, blokere indhold og trackere — fungerer på systemniveau.
 
-På et tidspunkt omfattede AdGuard-produktlinjen kun [Public AdGuard DNS](../public-dns/overview.md) og [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. Det er hér, at Private AdGuard DNS kommer ind i billedet. Den har det bedste fra begge verdener: Den tilbyder tilpasningsmuligheder, styring og information — alt sammen via et enkelt, brugervenligt kontrolpanel.
+På et tidspunkt omfattede AdGuard-produktlinjen kun [Public AdGuard DNS](../public-dns/overview.md) og [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Disse løsninger fungerer fint for visse brugere, mens andre savner opsætningsfleksibilitet i den offentlige AdGuard DNS og enkelhed i AdGuard Home. That’s where private AdGuard DNS comes into play. Den har det bedste fra begge verdener: Den tilbyder tilpasningsmuligheder, styring og information — alt sammen via et enkelt, brugervenligt kontrolpanel.
 
 ### Forskellene mellem Public og Private AdGuard DNS
 
@@ -199,7 +199,7 @@ AdGuard DNS er meget fleksibel og kan bruges på en række enheder, herunder tab
 
 ### Servere og indstillinger
 
-Dette afsnit forklarer, hvad en "server" er i AdGuard DNS, og hvilke indstillinger, som er tilgængelige. Indstillingen muliggør at tilpasse, hvordan AdGuard DNS reagerer på blokerede domæner og håndterer adgangen til DNS-serveren.
+This section explains what a server is in AdGuard DNS and what settings are available. Indstillingen muliggør at tilpasse, hvordan AdGuard DNS reagerer på blokerede domæner og håndterer adgangen til DNS-serveren.
 
 [Servere og indstillinger](/private-dns/server-and-settings/server-and-settings.md)
 

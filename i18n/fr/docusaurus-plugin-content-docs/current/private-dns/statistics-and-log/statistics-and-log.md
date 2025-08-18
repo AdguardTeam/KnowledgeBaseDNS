@@ -3,7 +3,7 @@ title: Statistiques et le Journal des requêtes
 sidebar_position: 1
 ---
 
-L'un des objectifs de l'utilisation d'AdGuard DNS est d'avoir une compréhension claire de ce que font vos appareils et à quoi ils se connectent. Sans cela, il n'y a aucun moyen de surveiller l'activité de vos appareils.
+L'un des objectifs de l'utilisation d'AdGuard DNS est d'avoir une compréhension claire de ce que font vos appareils et à quoi ils se connectent. Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS fournit une large plage d'outils utiles pour surveiller les requêtes :
 

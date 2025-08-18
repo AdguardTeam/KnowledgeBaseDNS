@@ -39,7 +39,7 @@ AdGuard DNS Client всё ещё находится в стадии бета-т�
 
   :::caution
 
-  На macOS очень важно, чтобы глобально установленные демоны принадлежали `root` (см. документацию [`launchd`][launchd-requirements]), поэтому исполняемый файл `AdGuardDNSClient` должен быть помещён в директорию `/Applications/` или её поддиректорию.
+  On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
 
   :::
 

@@ -9,6 +9,8 @@ AdGuard DNS-abonnementstyper kan købes via [adguard-dns.io](https://adguard-dns
 
 Den Personal-abonnementstypen er gratis for [AdGuard VPN](https://adguard-vpn.com/welcome.html) betalende brugere.
 
+AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. If you can’t activate your subscription, please email our support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## Sådan opgraderes en abonnementstype {#upgrade}
 
 For bedre at udnytte AdGuard DNS, kan abonnementstypen opgraderes med flg. fordele:
@@ -18,11 +20,11 @@ For bedre at udnytte AdGuard DNS, kan abonnementstypen opgraderes med flg. forde
 
 Abonnementstypen kan opgraderes via [AdGuard-kontoen](https://adguardaccount.com/account/licenses). For at gøre dette, klik på _Opgradering_ under afsnittet _AdGuard DNS_.
 
-_Enterprise_-abonnementstypen er kun tilgængelig på forespørgsel. Ved evt. interesse, udfyld venligst vores [formular](https://surveys.adguard.com/dns_enterprise/form.html) og giv nogle oplysninger om virksomheden. Når vi har modtaget indsendelsen, vender vi tilbage med yderligere oplysninger.
+_Enterprise_-abonnementstypen er kun tilgængelig på forespørgsel. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
 
 ## Sådan opnås refusion {#refund}
 
-I overensstemmelse med vores [Salgsvilkår](https://adguard-dns.io/terms-of-sale.html), kan der opnås 100% refusion på alle AdGuard DNS-årsabonnementstyper købt via https://adguard-dns.io/. For at opnå refusion, kontakt supporten via support@adguard-dns.io med angivelse af den anvendte betalingsmetode. Behandlingstiden udgør normalt ca. 5-10 hverdage.
+I overensstemmelse med vores [Salgsvilkår](https://adguard-dns.io/terms-of-sale.html), kan der opnås 100% refusion på alle AdGuard DNS-årsabonnementstyper købt via https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. Behandlingstiden udgør normalt ca. 5-10 hverdage.
 
 Refusion kan blive afvist, såfremt:
 

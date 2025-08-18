@@ -59,7 +59,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
 
 ## 構成プロファイルを使用する
 
-iOSデバイスプロファイルは、Appleによって「構成プロファイル」とも呼ばれ、あなたが手動でiOSデバイスにインストールしたり、MDMソリューションを使用してデプロイできる証明書に署名されたXMLファイルです。 これにより、デバイス上でプライベート AdGuard DNS を設定できます。
+An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. これにより、デバイス上でプライベート AdGuard DNS を設定できます。
 
 :::note 【重要】
 

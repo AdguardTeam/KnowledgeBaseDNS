@@ -3,7 +3,7 @@ title: 접근 설정
 sidebar_position: 3
 ---
 
-접근 설정을 구성하여 무단 액세스로부터 AdGuard DNS를 보호할 수 있습니다. 예를 들어, 전용 IPv4 주소를 사용하고 공격자가 스니퍼를 이용해 이를 인식하고 요청으로 폭격하고 있습니다. 문제가 없습니다. 성가신 도메인이나 IP 주소를 목록에 추가하면 더 이상 귀찮게 하지 않을 것입니다!
+접근 설정을 구성하여 무단 액세스로부터 AdGuard DNS를 보호할 수 있습니다. 예를 들어, 전용 IPv4 주소를 사용하고 공격자가 스니퍼를 이용해 이를 인식하고 요청으로 폭격하고 있습니다. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 차단된 요청은 쿼리 로그에 표시되지 않으며 총 한도에 포함되지 않습니다.
 
@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note 중요
 
-액세스 설정을 적용하기 전에 자신의 IP 주소를 차단하고 있지 않은지 확인하세요. 그럴 경우, 네트워크에 접근할 수 없습니다. 그런 일이 발생하면 DNS 서버에서 연결을 끊고 액세스 설정으로 가서 구성을 조정하세요.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. 그런 일이 발생하면 DNS 서버에서 연결을 끊고 액세스 설정으로 가서 구성을 조정하세요.
 
 :::
 

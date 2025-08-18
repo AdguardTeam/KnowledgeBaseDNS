@@ -3,7 +3,7 @@ title: Evrensel talimatlar
 sidebar_position: 2
 ---
 
-İşte yönlendiricilerde Özel AdGuard DNS ayarlamak için bazı genel talimatlar. Ana listede belirli yönlendiricinizi bulamazsanız bu kılavuza başvurabilirsiniz. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
+İşte yönlendiricilerde Özel AdGuard DNS ayarlamak için bazı genel talimatlar. You can refer to this guide if you can’t find your specific router in the main list. Lütfen burada verilen yapılandırma ayrıntılarının yaklaşık olduğunu ve kendi modelinizdeki ayarlardan farklı olabileceğini unutmayın.
 
 ## Yönlendirici yönetici panelini kullanma
 
@@ -12,7 +12,7 @@ sidebar_position: 2
     - Netgear yönlendiricileri genellikle şunu kullanır: [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.1.1](http://192.168.1.1/) D-Link yönlendiricileri genellikle [http://192.168.0.1](http://192.168.0.1/) kullanır
     - Ubiquiti yönlendiricileri genellikle şunu kullanır: [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
-2. Yönlendiricinin parolasını girin.
+2. Enter the router’s password.
 
     :::note Önemli
 
@@ -20,7 +20,7 @@ sidebar_position: 2
 
     :::
 
-3. Yönlendiricinin yönetici konsolunda DNS ayarlarının nerede olduğunu bulun. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+3. Find where DNS settings are located in the router’s admin console. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
     - IPv4: `94.140.14.49` ve `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 

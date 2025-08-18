@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Sunucu nedir ve nasıl kullanılır
 
-Özel AdGuard DNS'i kurduğunuzda _sunucular_ terimiyle karşılaşırsınız.
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 Bir sunucu, cihazlarınızı bağladığınız "profil" olarak işlev görür.
 
@@ -21,7 +21,7 @@ Bir hesap oluşturduktan sonra, varsayılan ayarlarla otomatik olarak bir sunucu
 
 Trafik filtreleme ve engelleme kuralları hakkında daha fazla bilgi için [“AdGuard DNS'de filtreleme nasıl kurulur”](/private-dns/setting-up-filtering/blocklists.md) başlıklı makaleye bakın.
 
-Eğer belirli ayarlarla ilgileniyorsanız, bu konuda özel makaleler mevcuttur:
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [Gelişmiş ayarlar](/private-dns/server-and-settings/advanced.md)
 - [Erişim ayarları](/private-dns/server-and-settings/access.md)

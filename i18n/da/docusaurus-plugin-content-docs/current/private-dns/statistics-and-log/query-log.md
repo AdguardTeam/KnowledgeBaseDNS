@@ -11,7 +11,7 @@ Man kan se alle forespørgsler, som er foretaget af ens enheder i den valgte per
 
 ## Sådan bruges den
 
-Her er, hvad man kan se, og hvad man kan foretage sig i _Forespørgselslog_.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### Detaljeret information om forespørgsler
 

@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Расширяемость.** За последнее десятилетие синтаксис Adblock значительно развился, и мы не видим причин, почему мы не можем расширить его ещё больше и дать дополнительные возможности сетевым блокировщикам.
 
-Если вы поддерживаете чёрный список в стиле `/etc/hosts` или несколько списков фильтрации (независимо от типа), мы предоставляем инструмент для их составления. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Базовые примеры {#basic-examples}
 
@@ -79,7 +79,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`: совпадает с началом имени хоста, включая любые субдомены. Например, `||example.org` соответствует `example.org` и `test.example.org`, но не `testexample.org`.
 
-- `^`: символ-разделитель. В отличие от блокировки рекламы в браузере в имени хоста нечего разделять, поэтому единственная цель этого символа — отметить конец имени хоста.
+- `^`: символ-разделитель. Unlike browser ad blocking, there’s nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
 - `|`: указатель на начало или конец имени хоста. Значение зависит от расположения символов в маске. Например, правило `ample.org|` относится к `example.org`, но не к `example.org.com`. А правило `|example` относится к `example.org`, но не к `test.example`.
 
@@ -127,33 +127,45 @@ pattern = "/" regexp "/"
 
   `||example.org^` — совпадающий шаблон. `$` — разделитель, который указывает на то, что остальные части правила являются модификаторами. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` — разделитель между модификаторами. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
-**Обратите внимание:** если правило содержит модификатор, не указанный в этом документе, всё правило **следует игнорировать**. Таким образом мы избегаем ложных срабатываний, когда люди пытаются использовать немодифицированные списки фильтров браузерных блокировщиков рекламы, таких как EasyList или EasyPrivacy.
+:::note
+
+If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers’ filter lists like EasyList or EasyPrivacy.
+
+:::
 
 #### `client` {#client-modifier}
 
-Модификатор `client` позволяет указывать клиентов, к которым применяется это правило. Есть два основных способа определения клиента:
+The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
 - По его IP-адресу или CIDR-префиксу. Этот способ подходит для всех типов клиентов.
 
 - По имени. Этот способ работает только для сохранённых клиентов в AdGuard Home и устройств в приватном AdGuard DNS, которых вы добавили вручную.
 
-  **Внимание:** в AdGuard Home ClientID временно не поддерживаются, только имена. Если вы добавили клиента с именем «My Client» и ID клиента`my-client`, напишите модификатор как `$client='My Client'`, а не `$client=my-client`.
+  :::note
 
-Синтаксис:
+  In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+
+  :::
+
+The syntax is:
 
 ```none
 $client=value1|value2|...
 ```
 
-Вы также можете исключить клиента из фильтрации, добавив перед значением символ `~`. В этом случае правило не будет применяться к DNS-запросам этого клиента.
+You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client’s DNS requests.
 
 ```none
 $client=~value1
 ```
 
-Имена клиентов обычно содержат пробелы или другие специальные символы, поэтому необходимо заключать их в кавычки. Поддерживаются как одинарные, так и двойные кавычки ASCII. Используйте обратный слеш (`\`), чтобы изолировать кавычки (`"` и `'`), запятые (`,`) и вертикальные разделители (`|`).
+Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**Обратите внимание:** исключая клиента из фильтрации, **обязательно** выносите символ `~` за кавычки.
+:::note
+
+When excluding a client, you **must** place `~` outside the quotes.
+
+:::
 
 **Примеры:**
 
@@ -169,15 +181,15 @@ $client=~value1
 
 #### `denyallow` {#denyallow-modifier}
 
-Вы можете использовать модификатор `denyallow`, чтобы исключить домены из правила блокировки. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
+You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
 
-Синтаксис:
+The syntax is:
 
 ```none
 $denyallow=domain1|domain2|...
 ```
 
-Этот модификатор позволяет избежать создания ненужных правил исключения, когда блокирующее правило охватывает слишком много доменов. Возможно, вы захотите заблокировать всё, за исключением нескольких доменов верхнего уровня. Вы можете использовать стандартный подход, т. е. такие правила, как эти:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Заблокировать всё.
@@ -188,7 +200,7 @@ $denyallow=domain1|domain2|...
 @@||net^
 ```
 
-Проблема этого подхода в том, что вы также разблокируете отслеживающие домены, расположенные на этих доменах верхнего уровня (например, `google-analytics.com`). Но её можно решить с помощью модификатора `denyallow`:
+The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here’s how to solve this with `denyallow`:
 
 ```none
 *$denyallow=com|net
@@ -200,28 +212,28 @@ $denyallow=domain1|domain2|...
 
 - `@@*$denyallow=com|net`: разблокирует все домены, кроме `*.com` и `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`. блокирует `example.org` и `*.example.org`, но не блокирует `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org` but don’t block `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
-Модификатор `dnstype` позволяет указать тип DNS-запроса или ответа, на который будет срабатывать это правило.
+The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
 
-Синтаксис:
+The syntax is:
 
 ```none
 $dnstype=value1|value2|...
 $dnstype=~value1|~value2|~...
 ```
 
-Имена типов можно указывать в любом регистре, но они проверяются на соответствие настоящим типам DNS-записей.
+The names of the types are case-insensitive, but are validated against a set of actual DNS resource record (RR) types.
 
-Не объединяйте исключающие правила с включающими. Например, это правило:
+Do not combine exclusion rules with inclusion ones. This:
 
 ```none
 $dnstype=~value1|value2
 ```
 
-эквивалентно этому:
+is equivalent to this:
 
 ```none
 $dnstype=value2
@@ -233,13 +245,17 @@ $dnstype=value2
 
 - `||example.org^$dnstype=~A|~CNAME`: пропускает только `A` и `CNAME` DNS-запросы для домена `example.org` и блокирует все остальные.
 
-**Обратите внимание:** до версии **0.108.0** для фильтрации записей ответа AdGuard Home использовал тип запроса, а не тип ответа самой записи.  Это вызывало проблемы, поскольку у пользователя не было возможности написать правила, которые разрешали бы определённые записи `CNAME` в ответах на запросы `A` и `AAAA`. Начиная с версии **0.108.0** были внесены изменения, и теперь это правило:
+:::note
+
+Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+
+:::
 
 ```none
 ||canon.example.com^$dnstype=~CNAME
 ```
 
-позволяет избежать фильтрации следующего ответа:
+allows you to avoid filtering of the following response:
 
 ```none
 ОТВЕТЫ:
@@ -253,13 +269,13 @@ $dnstype=value2
 
 #### `dnsrewrite` {#dnsrewrite-modifier}
 
-Модификатор ответа `dnsrewrite` позволяет заменить содержание ответа на DNS-запрос для совпадающих хостов. Обратите внимание, что этот модификатор работает во всех правилах AdGuard Home, а в приватном AdGuard DNS — только в пользовательских.
+The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
-Ответы на все запросы к хосту, соответствующему правилу `dnsrewrite`, будут заменены. Раздел ответа замещающего ответа будет содержать только RRs, которые соответствуют типу запроса и, возможно, CNAME RRs. Обратите внимание, что это означает, что ответы на некоторые запросы могут стать пустыми (`NODATA`), если хост соответствует правилу `dnsrewrite`.
+Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
-Сокращённый синтаксис:
+The shorthand syntax is:
 
 ```none
 $dnsrewrite=1.2.3.4
@@ -268,9 +284,9 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-Ключевые слова должны быть написаны ЗАГЛАВНЫМИ буквами (например, `NOERROR`). Перезапись ключевых слов получает приоритет над предыдущими, результатом будет пустой ответ с соответствующим кодом.
+The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
 
-Полный синтаксис использует форму `RCODE;RRTYPE;VALUE`:
+The full syntax is of the form `RCODE;RRTYPE;VALUE`:
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4
@@ -279,9 +295,9 @@ $dnsrewrite=NOERROR;CNAME;example.net
 $dnsrewrite=REFUSED;;
 ```
 
-У модификатора `$dnsrewrite` с кодом ответа `NOERROR` также могут быть пустые поля `RRTYPE` и `VALUE`.
+The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
 
-Модификатор `CNAME` особенный, поскольку AdGuard Home будет резолвить хост и добавит его информацию к ответу. Так будет происходить, если у домена `example.net` будет IP-адрес `1.2.3.4`, а у пользователя в правилах фильтрации указано следующее:
+The `CNAME` one is special because AdGuard Home will resolve the host and add its info to the response. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
 
 ```none
 ||example.com^$dnsrewrite=example.net
@@ -289,7 +305,7 @@ $dnsrewrite=REFUSED;;
 ||example.com^$dnsrewrite=NOERROR;CNAME;example.net
 ```
 
-в таком случае ответ будет выглядеть примерно так:
+then the response will be something like:
 
 ```sh
 nslookup example.com my.adguard.local
@@ -305,20 +321,24 @@ Name: example.net
 Address: 1.2.3.4
 ```
 
-Далее идёт перезапись `CNAME`. После этого все значения других записей суммируются в один ответ, таким образом это:
+Next, the `CNAME` rewrite. After that, all other records’ values are summed as one response, so this:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-получит ответ с двумя записями `A`.
+will result in a response with two `A` records.
 
-В данный момент поддерживаются подобные ресурсные записи:
+Currently supported RR types with examples:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` добавляет запись `PTR` для обратного DNS. Обратные DNS-запросы на `1.2.3.4` к DNS-серверу получат результат `example.net`.
 
-  **ВНИМАНИЕ:** IP ДОЛЖЕН быть указан в обратном порядке. See [RFC 1035][rfc1035].
+  :::note
+
+  The IP MUST be in reverse order. See [RFC 1035][rfc1035].
+
+  :::
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` добавляет запись `A` со значением `1.2.3.4`.
 
@@ -349,7 +369,7 @@ Address: 1.2.3.4
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` отвечает пустым `NOERROR` значением для всех запросов `AAAA`, кроме запросов к `example.org`.
 
-Правила исключений разблокируют одно или все правила:
+Exception rules unblock one or all rules:
 
 - `@@||example.com^$dnsrewrite` разблокирует все правила перезаписи DNS.
 
@@ -395,7 +415,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 - `@@||example.org^$badfilter` отменяет `@@||example.org^`.
 
-  **Обратите внимание:** модификатор `badfilter` не работает с правилами `/etc/hosts`. `127.0.0.1 example.org$badfilter` **не отменяет** оригинальное правило `127.0.0.1 example.org`.
+  :::note
+
+  The `badfilter` modifier currently doesn’t work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+
+  :::
 
 #### `ctag` {#ctag-modifier}
 
@@ -403,19 +427,19 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
-Синтаксис:
+The syntax is:
 
 ```none
 $ctag=value1|value2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+If one of client’s tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
+If one of client’s tags matches the exclusion `ctag` values, this rule doesn’t apply to the client.
 
 **Примеры:**
 
@@ -497,11 +521,11 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-What it's capable of:
+What it’s capable of:
 
 1. Собрать единый список блокировки из разных источников.
 
-2. Исключить правила, которые вам не нужны.
+2. Exclude the rules you don’t need.
 
 3. Подчистить список, получившийся в результате: убрать дубли, неработающие правила и сжать список.
 

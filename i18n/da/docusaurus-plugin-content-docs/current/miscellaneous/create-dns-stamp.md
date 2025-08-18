@@ -16,7 +16,7 @@ DNS-stempler muliggør tilpasning af Sikker DNS-indstillinger ud over de sædvan
 
 ## Valg af protokol
 
-Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Valget af en af disse protokoller afhænger af den aktuelle brugskontekst.
+Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DNS-over-TLS (DoT)` og en række andre. Choosing one of these protocols depends on the context in which you’ll be using them.
 
 ## Oprettelse af et DNS-stempel
 
@@ -56,7 +56,7 @@ Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DN
 
 ### Indhentning af certifikat-hash
 
-For at udfylde **hash'ene for serverens certifikatfelt** kan flg. kommando bruges, hvor man erstatter `<IP_ADDRESS>`, `<PORT>` og `<SERVER_NAME>` med de korresponderende værdier for sin DNS-server:
+To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -64,7 +64,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2
 
 :::caution
 
-Resultatet af hash-kommandoen kan ændre sig over tid i takt med, at servercertifikatet opdateres. Ophører DNS-stemplet derfor pludselig med at virke, skal certifikat-hash'en muligvis genberegnes og et nyt stempel genereres. Regelmæssig opdatering af DNS-stemplet vil medvirke til at sikre den fortsatte sikre drift af Sikker DNS-tjenesten.
+The result of the hash command may change over time as the server’s certificate is updated. Ophører DNS-stemplet derfor pludselig med at virke, skal certifikat-hash'en muligvis genberegnes og et nyt stempel genereres. Regelmæssig opdatering af DNS-stemplet vil medvirke til at sikre den fortsatte sikre drift af Sikker DNS-tjenesten.
 
 :::
 
@@ -74,7 +74,7 @@ Man har nu sit eget DNS-stempel, som man kan bruge til at opsætte Sikker DNS. D
 
 ## Eksempel på oprettelse af et DNS-stempel
 
-Lad os gennemgå et eksempel på oprettelsen af et stempel til AdGuard DNS vha. DoT:
+Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. Åbn [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
@@ -82,9 +82,9 @@ Lad os gennemgå et eksempel på oprettelsen af et stempel til AdGuard DNS vha. 
 
 3. Udfyld flg. felter:
 
-    - **IP-adresse**: Angiv DNS-serverens IP-adresse og port. I dette eksempel `94.140.14.14:853`.
+    - **IP-adresse**: Angiv DNS-serverens IP-adresse og port. In this case, it’s `94.140.14.14:853`.
 
-    - **Værtsnavn**: Angiv DNS-serverens værtsnavn. I dette eksempel `dns.adguard-dns.com`.
+    - **Værtsnavn**: Angiv DNS-serverens værtsnavn. In this case, it’s `dns.adguard-dns.com`.
 
     - **Hashes**: Eksekvér kommandoen
 
@@ -92,7 +92,7 @@ Lad os gennemgå et eksempel på oprettelsen af et stempel til AdGuard DNS vha. 
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    Resultatet er `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Indsæt denne SHA256-hash af serverens certifikat i feltet.
+    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server’s certificate into the field.
 
 4. Lad afsnittet Egenskaber stå tomt.
 

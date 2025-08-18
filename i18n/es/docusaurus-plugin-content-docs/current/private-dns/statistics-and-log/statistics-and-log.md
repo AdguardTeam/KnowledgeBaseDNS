@@ -3,7 +3,7 @@ title: Estadísticas y Registro de consultas
 sidebar_position: 1
 ---
 
-Uno de los propósitos de usar AdGuard DNS es tener una comprensión clara de lo que están haciendo tus dispositivos y a qué se están conectando. Sin esta claridad, no hay forma de controlar la actividad de tus dispositivos.
+Uno de los propósitos de usar AdGuard DNS es tener una comprensión clara de lo que están haciendo tus dispositivos y a qué se están conectando. Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS proporciona una amplia gama de herramientas útiles para monitorear consultas:
 

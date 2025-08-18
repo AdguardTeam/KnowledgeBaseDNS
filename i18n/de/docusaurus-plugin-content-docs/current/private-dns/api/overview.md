@@ -149,7 +149,7 @@ Sobald das Zugriffs- und das Aktualisierungs-Token generiert sind, können API-A
 
 ### Referenz
 
-Bitte lesen Sie die Methodenreferenz [hier](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### OpenAPI-Spezifikation
 

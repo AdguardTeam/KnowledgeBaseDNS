@@ -3,7 +3,7 @@ title: 安全功能
 sidebar_position: 3
 ---
 
-AdGuard DNS 的安全设置是一组保护用户个人信息的配置。
+The AdGuard DNS security settings are a set of configurations designed to protect the user’s personal information.
 
 在这里，用户可以选择使用哪些方法来保护自己免受攻击者的侵害。 此功能将保护用户免于访问钓鱼和假网站，并防止敏感数据的潜在泄漏。
 

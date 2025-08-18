@@ -23,7 +23,7 @@ sidebar_position: 1
 
 ![Chrome 浏览器的使用安全 DNS 功能](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-如果禁用 Chrome 浏览器自身的 DNS 设置，浏览器就会使用操作系统指定的 DNS，如果设置正确，那么就会是 AdGuard DNS。
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud 私有代理（Safari、macOS 和 iOS）
 

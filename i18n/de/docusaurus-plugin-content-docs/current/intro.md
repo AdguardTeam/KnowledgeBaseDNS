@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS steht für „Domain Name System“ und soll Website-Namen in IP-Adressen umwandeln. Jedes Mal, wenn Sie eine Website aufrufen, sendet Ihr Browser eine DNS-Anfrage an einen DNS-Server, um die IP-Adresse der Website zu ermitteln. Und ein normaler DNS-Auflösungsdienst liefert einfach die IP-Adresse der angeforderten Domain.
+DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. Jedes Mal, wenn Sie eine Website aufrufen, sendet Ihr Browser eine DNS-Anfrage an einen DNS-Server, um die IP-Adresse der Website zu ermitteln. Und ein normaler DNS-Auflösungsdienst liefert einfach die IP-Adresse der angeforderten Domain.
 
 :::note
 
@@ -18,7 +18,7 @@ Der Standard-DNS-Server wird in der Regel von Ihrem Internetdienstanbieter berei
 
 ![Ihr Gerät verwendet immer einen DNS-Server, um die IP-Adressen der Domains zu erhalten, auf die verschiedene Anwendungen, Dienste usw. zugreifen.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-Es gibt auch DNS-Server, die bestimmte Websites auf DNS-Ebene sperren können. Wie funktionieren diese? Wenn Ihr Gerät eine „unerwünschte“ Anfrage sendet, sei es eine Werbeanzeige oder ein Tracker, verhindert ein DNS-Server die Verbindung, indem er mit einer nicht routbaren IP-Adresse für eine gesperrte Domain antwortet.
+Es gibt auch DNS-Server, die bestimmte Websites auf DNS-Ebene sperren können. Wie funktionieren diese? When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Warum DNS für das Sperren von Inhalten verwenden?
 

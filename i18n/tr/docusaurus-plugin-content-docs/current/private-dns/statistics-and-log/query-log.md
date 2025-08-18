@@ -11,7 +11,7 @@ Seçilen süre boyunca cihazlarınız tarafından yapılan tüm istekleri görü
 
 ## Bu nasıl kullanılır
 
-İşte _Sorgu günlüğü_ içerisinde görebilecekleriniz ve yapabilecekleriniz.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### İstekler hakkında detaylı bilgi
 

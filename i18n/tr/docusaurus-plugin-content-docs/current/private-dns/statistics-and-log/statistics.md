@@ -33,8 +33,8 @@ Bu, en çok talebin gönderildiği ülkeleri gösterir.
 
 Ülke isimlerine ek olarak, liste iki genel kategori daha içermektedir:
 
-- **Uygulanamaz**: Yanıt IP adresini içermiyor
-- **Bilinmeyen istikamet**: IP adresinden ülke belirlenemiyor
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Başlıca istikametler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

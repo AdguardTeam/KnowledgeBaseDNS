@@ -9,6 +9,8 @@ sidebar_position: 4
 
 Персональная подписка бесплатна для платных пользователей [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
+AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. If you can’t activate your subscription, please email our support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## Как улучшить подписку {#upgrade}
 
 Чтобы использовать максимум возможностей продуктов AdGuard DNS, вы можете улучшить подписку:
@@ -18,11 +20,11 @@ sidebar_position: 4
 
 You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Для этого нажмите _Улучшить_ в разделе _AdGuard DNS_.
 
-_Корпоративная_ подписка доступна только по запросу. Если вам заинтересно, пожалуйста, заполните нашу [форму](https://surveys.adguard.com/dns_enterprise/form.html) и расскажите подробнее о вашей компании. Как только мы получим вашу заявку, мы свяжемся с вами и предоставим дополнительную информацию.
+_Корпоративная_ подписка доступна только по запросу. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
 
 ## Как вернуть деньги {#refund}
 
-В соответствии с нашей [Публичной офертой](https://adguard-dns.io/terms-of-sale.html) вы можете получить полностью вернуть средства за любые годовые подписки AdGuard DNS, приобретённые на https://adguard-dns.io/. Чтобы вернуть деньги, обратитесь в поддержку по адресу support@adguard-dns.io, указав способ оплаты, который вы использовали. Срок обработки обычно занимает до 5–10 рабочих дней.
+В соответствии с нашей [Публичной офертой](https://adguard-dns.io/terms-of-sale.html) вы можете получить полностью вернуть средства за любые годовые подписки AdGuard DNS, приобретённые на https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. Срок обработки обычно занимает до 5–10 рабочих дней.
 
 В возврате может быть отказано, если:
 

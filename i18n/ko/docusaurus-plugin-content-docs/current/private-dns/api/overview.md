@@ -149,7 +149,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### 참조
 
-[이 링크](reference.md)를 클릭하면 API 메소드 가이드를 확인할 수 있습니다.
+Please see the [method’s reference](reference.md).
 
 ### OpenAPI 사양
 

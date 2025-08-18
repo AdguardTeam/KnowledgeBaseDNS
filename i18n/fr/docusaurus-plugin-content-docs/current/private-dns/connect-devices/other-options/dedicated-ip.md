@@ -7,13 +7,13 @@ sidebar_position: 2
 
 Les adresses IPv4 dédiées sont disponibles pour les utilisateurs avec des abonnements Équipe et Entreprise, tandis que les IPs liées sont disponibles pour tout le monde.
 
-Si vous avez un abonnement Équipe ou Entreprise, vous recevrez plusieurs adresses IP dédiées personnelles. Les requêtes vers ces adresses sont considérées comme "les vôtres", et les configurations au niveau du serveur et les règles de filtrage sont appliquées en conséquence. Les adresses IP dédiées sont beaucoup plus sécuritaires et plus faciles à gérer. Avec les IPs liées, vous devez vous reconnecter manuellement ou utiliser un programme spécial chaque fois que l'adresse IP de l'appareil change, ce qui se produit après chaque redémarrage.
+If you have a Team or Enterprise subscription, you’ll receive several personal dedicated IP addresses. Requests to these addresses are treated as yours, and server-level configurations and filtering rules are applied accordingly. Les adresses IP dédiées sont beaucoup plus sécuritaires et plus faciles à gérer. With linked IPs, you have to manually reconnect or use a special program every time the device’s IP address changes, which happens after every reboot.
 
 ## Pourquoi avez-vous besoin d'une IP dédiée ?
 
 Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Dans ce cas, vous devrez utiliser un DNS standard non chiffré. Il existe deux manières de configurer AdGuard DNS : [en utilisant des IPs liées](/private-dns/connect-devices/other-options/linked-ip.md) et en utilisant des IPs dédiées.
 
-Les IPs dédiées sont généralement une option plus stable. Les IPs liées ont certaines limitations, comme le fait que seules les adresses résidentielles sont autorisées, votre fournisseur peut changer l'adresse IP, et vous devrez relier à nouveau l'adresse IP. Avec les IPs dédiées, vous obtenez une adresse IP qui vous appartient exclusivement, et toutes les requêtes seront comptées pour votre appareil.
+Les IPs dédiées sont généralement une option plus stable. Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you’ll need to relink the IP address. Avec les IPs dédiées, vous obtenez une adresse IP qui vous appartient exclusivement, et toutes les requêtes seront comptées pour votre appareil.
 
 L'inconvénient est que vous pourriez commencer à recevoir un trafic non pertinent (scanneurs, bots), comme cela se produit toujours avec des résolveurs DNS publics. Vous pourriez avoir besoin d'utiliser [les paramètres d'accès](/private-dns/server-and-settings/access.md) pour limiter le trafic des bots.
 

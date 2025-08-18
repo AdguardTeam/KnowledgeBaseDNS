@@ -3,7 +3,7 @@ title: DNS profili nasıl kaldırılır
 sidebar_position: 3
 ---
 
-Yapılandırılmış bir DNS profiline sahip iPhone, iPad veya Mac'inizin DNS sunucunuzla bağlantısını kesmeniz gerekiyorsa bu DNS profilini kaldırmanız gerekir. İşte bunu nasıl yapacağınız.
+Yapılandırılmış bir DNS profiline sahip iPhone, iPad veya Mac'inizin DNS sunucunuzla bağlantısını kesmeniz gerekiyorsa bu DNS profilini kaldırmanız gerekir. Here’s how to do it.
 
 Mac'inizde:
 

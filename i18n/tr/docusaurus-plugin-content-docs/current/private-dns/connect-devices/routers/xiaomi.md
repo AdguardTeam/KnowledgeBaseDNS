@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi yönlendiricilerin birçok avantajı vardır: istikrarlı, güçlü bir sinyal, ağ güvenliği, sağlam performans ve akıllı yönetim. Kullanıcılar yerel Wi-Fi ağına 64 cihaza kadar bağlanabilir.
 
-Ne yazık ki, şifrelenmiş DNS'i desteklemiyor, ancak bağlı IP aracılığıyla AdGuard DNS'i kurmak için harikadır.
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## Yönlendirici yönetici panelini kullanma
 

@@ -16,7 +16,7 @@ DNS-метки позволяют настраивать, помимо обыч�
 
 ## Выбор протокола
 
-Типы Secure DNS включают в себя `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` и некоторые другие. Выбор одного из этих протоколов зависит от контекста, в котором вы будете их использовать.
+Типы Secure DNS включают в себя `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` и некоторые другие. Choosing one of these protocols depends on the context in which you’ll be using them.
 
 ## Создание DNS-метки
 
@@ -56,7 +56,7 @@ DNS-метки позволяют настраивать, помимо обыч�
 
 ### Получение хеша сертификата
 
-Чтобы заполнить поле **Hashes of the server's certificate**, можно воспользоваться следующей командой, заменив `<IP_ADDRESS>`, `<PORT>` и `<SERVER_NAME>` на соответствующие значения для вашего DNS-сервера:
+To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -64,7 +64,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-Результат команды хеширования может меняться со временем по мере обновления сертификата сервера. Поэтому, если ваша DNS-метка внезапно перестанет работать, вам может потребоваться пересчитать хеш сертификата и сгенерировать новую метку. Если регулярно обновлять DNS-метки, шифрованный DNS будет работать непрерывно и надёжно.
+The result of the hash command may change over time as the server’s certificate is updated. Поэтому, если ваша DNS-метка внезапно перестанет работать, вам может потребоваться пересчитать хеш сертификата и сгенерировать новую метку. Если регулярно обновлять DNS-метки, шифрованный DNS будет работать непрерывно и надёжно.
 
 :::
 
@@ -74,7 +74,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 ## Пример создания DNS-метки
 
-Разберем пример создания метки для AdGuard DNS с помощью DoT:
+Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. Откройте [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/).
 
@@ -82,9 +82,9 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 3. Заполните следующие поля:
 
-    - **IP-адрес**: введите IP-адрес и порт DNS-сервера. В данном случае это `94.140.14.14:853`.
+    - **IP-адрес**: введите IP-адрес и порт DNS-сервера. In this case, it’s `94.140.14.14:853`.
 
-    - **Host name**: введите имя хоста DNS-сервера. В данном случае это `dns.adguard-dns.com`.
+    - **Host name**: введите имя хоста DNS-сервера. In this case, it’s `dns.adguard-dns.com`.
 
     - **Hashes**: Выполните команду
 
@@ -92,7 +92,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    Результат: `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Вставьте этот хеш SHA256 сертификата сервера в поле.
+    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server’s certificate into the field.
 
 4. Оставьте раздел «Свойства» пустым.
 

@@ -9,6 +9,8 @@ Tarify AdGuard DNS lze zakoupit na [adguard-dns.io](https://adguard-dns.io/licen
 
 Tarif Personal je zdarma pro uživatele s placenýcm tarifem [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
+Tarify AdGuard DNS jsou aktivovány okamžitě. Někdy může aktivace trvat až pět minut. Pokud nemůžete aktivovat své předplatné, zašlete prosím e-mail našemu týmu podpory na adresu [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## Jak upgradovat tarif {#upgrade}
 
 Chcete-li využít AdGuard DNS naplno, můžete svůj tarif upgradovat a získat následující výhody:

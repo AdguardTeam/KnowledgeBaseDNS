@@ -33,8 +33,8 @@ sidebar_position: 2
 
 В дополнение к названиям стран список содержит две более общие категории:
 
-- **Не применимо**: Ответ не содержит IP-адреса
-- **Неизвестное направление**: Страна не может быть определена по IP-адресу
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Топ направлений \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

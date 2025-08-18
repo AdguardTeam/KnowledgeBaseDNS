@@ -3,15 +3,15 @@ title: .
 sidebar_position: 5
 ---
 
-Con el lanzamiento de AdGuard DNS V2.10, este se ha convertido en el primer solucionador DNS público en implementar soporte para [\*Errores de DNS estructurados (SDE)] (https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/) una actualización de [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Esta función permite a los servidores DNS proporcionar información detallada sobre los sitios web bloqueados directamente en respuesta del DNS, en lugar de depender de mensajes genéricos del navegador. En este artículo, explicaremos que son los "Errores DNS estructurados" y como funcionan.
+Con el lanzamiento de AdGuard DNS V2.10, este se ha convertido en el primer solucionador DNS público en implementar soporte para [\*Errores de DNS estructurados (SDE)] (https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/) una actualización de [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Esta función permite a los servidores DNS proporcionar información detallada sobre los sitios web bloqueados directamente en respuesta del DNS, en lugar de depender de mensajes genéricos del navegador. In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
 
 ## Que son los Errores de DNS Estructurados
 
-Cuando se bloquea un anuncio o dominio, el usuario puede que vea un espacio en blanco en la web o ni siquiera se dé cuenta de que el DNS ha filtrado y bloqueado el elemento. Sin embargo, si la página web es esta dentro del rango de bloqueo del DNS, el usuario no podrá acceder a la página de ninguna manera. Al intentar acceder a una página web bloqueada, le aparecerá al usuario un error genérico "No se puede acceder a este sitio".
+Cuando se bloquea un anuncio o dominio, el usuario puede que vea un espacio en blanco en la web o ni siquiera se dé cuenta de que el DNS ha filtrado y bloqueado el elemento. Sin embargo, si la página web es esta dentro del rango de bloqueo del DNS, el usuario no podrá acceder a la página de ninguna manera. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-![Error "No se puede acceder a este sitio web"](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Tales errores no tienen explicación de porque han ocurrido. Esto hace que los usuarios no entiendan el por qué no pueden acceder y puede que crean que es por su conexión a internet o que el DNS este roto.
+Such errors don’t explain what happened and why. Esto hace que los usuarios no entiendan el por qué no pueden acceder y puede que crean que es por su conexión a internet o que el DNS este roto.
 
 Para aclarar esto, los servidores DNS podrían redirigir a los usuarios a una página con la explicación. Sin embargo, los sitios web HTTPS (que son la mayoría de los sitios web) requerirían un certificado aparte.
 

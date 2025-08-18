@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi ルーターには、安定した強力な信号、ネットワーク セキュリティ、堅牢なパフォーマンス、スマートな管理など、多くの利点があります。 ユーザーは最大64台のデバイスをローカル Wi-Fi ネットワークに接続できます。
 
-残念ながら、暗号化された DNS をサポートしていませんが、リンクされた IP を介して AdGuard DNS を設定するには最適です。
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## ルーターの管理画面を使って接続する
 

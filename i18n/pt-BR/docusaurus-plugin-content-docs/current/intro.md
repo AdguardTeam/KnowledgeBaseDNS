@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="Player de vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS significa "Sistema de nomes de domínio" e seu objetivo é converter os nomes dos sites em endereços IP. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
+DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. Each time you go to a website, your browser sends a DNS query to a DNS server to figure out the IP address of the website. E um resolvedor de DNS regular simplesmente retorna o endereço IP do domínio solicitado.
 
 :::note
 
@@ -18,7 +18,7 @@ O servidor DNS padrão geralmente é fornecido pelo seu ISP. Isso significa que 
 
 ![Your device always uses a DNS server to obtain the IP addresses of the domains that are accessed by various apps, services, etc.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-Existem também servidores DNS que podem bloquear determinados sites no nível DNS. How do they work? Quando seu dispositivo envia uma solicitação "ruim", seja um anúncio ou um rastreador, um servidor DNS impede a conexão respondendo com um endereço IP não roteável para um domínio bloqueado.
+Existem também servidores DNS que podem bloquear determinados sites no nível DNS. How do they work? When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
 
 ## Why use DNS for content blocking
 
