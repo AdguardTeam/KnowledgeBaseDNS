@@ -18,7 +18,7 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 
 1. [Installér appen](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
 2. Åbn appen.
-3. Click _Settings_ at the top of the app’s home screen.
+3. Klik på _Indstillinger_ øverst på app-startskærmen.
     ![Indstillinger \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
 4. Vælg fanen _DNS-beskyttelse_ fra menuen til venstre.
     ![DNS-beskyttelse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)

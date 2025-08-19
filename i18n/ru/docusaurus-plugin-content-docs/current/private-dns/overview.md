@@ -214,3 +214,9 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 Статистика и журнал запросов предоставляют представление о активности ваших устройств. Во вкладке *Статистика* вы можете увидеть сводку по DNS-запросам, сделанным устройствами, подключёнными к вашему приватному AdGuard DNS. В журнале запросов вы можете посмотреть информацию по каждому запросу и также сортировать запросы по статусу, типу, компании, устройству, времени и стране.
 
 [Статистика и журнал запросов](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

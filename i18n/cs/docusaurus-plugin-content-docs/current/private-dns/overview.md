@@ -214,3 +214,9 @@ V této části popisujeme řadu nastavení, která umožňují jemně vyladit f
 Statistiky a protokol dotazů poskytují přehled o činnosti vašich zařízení. Karta *Statistiky* umožňuje zobrazit přehled požadavků DNS provedených zařízeními připojenými k soukromému AdGuard DNS. V protokolu dotazů můžete zobrazit informace o každém požadavku a také seřadit požadavky podle stavu, typu, společnosti, zařízení, času a země.
 
 [Statistiky a protokol dotazů](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

@@ -214,3 +214,9 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 統計とクエリログにより、情報を確認してデバイスのアクティビティに関する状況や洞察を把握できます。 「*統計*」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。 「クエリログ」では、各リクエストに関する情報を表示したり、リクエストをステータス、タイプ、企業、デバイス、時間、国別に並べ替えたりすることができます。
 
 [「統計」と「クエリログ」](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

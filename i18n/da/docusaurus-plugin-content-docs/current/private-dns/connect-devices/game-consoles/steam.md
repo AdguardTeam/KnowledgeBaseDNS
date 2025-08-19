@@ -16,7 +16,7 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 1. Åbn Stream Deck-indstillingerne ved at klikke på tandhjulsikonet øverst til højre på skærmen.
 2. Klik på _Netværk_.
 3. Klik på tandhjulsikonet ud for den netværksforbindelse, der skal opsættes.
-4. Select IPv4 or IPv6, depending on the type of network you’re using.
+4. Vælg IPv4 eller IPv6 afhængigt af den anvendte netværkstype.
 5. Vælg _Kun automatiske adresser (DHCP)_ eller _Automatisk (DHCP)_.
 6. Angiv i feltet _DNS-server_ en af flg. DNS-serveradresser:
     - `94.140.14.49`

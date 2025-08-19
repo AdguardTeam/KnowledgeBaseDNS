@@ -3,15 +3,15 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-AdGuard er med udgivelsen af AdGuard DNS v2.10 blevet den første offentlige DNS-opløser, der implementerer understøttelse af [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), en opdatering til [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Denne funktion tillader DNS-servere at give detaljeret information om blokerede websteder direkte i DNS-svaret, i stedet for at være afhængige af generiske webbrowserbeskeder. In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
+AdGuard er med udgivelsen af AdGuard DNS v2.10 blevet den første offentlige DNS-opløser, der implementerer understøttelse af [_Structured DNS Errors_ (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), en opdatering til [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/). Denne funktion tillader DNS-servere at give detaljeret information om blokerede websteder direkte i DNS-svaret, i stedet for at være afhængige af generiske webbrowserbeskeder. I denne artikel forklarer vi, hvad _Structured DNS Errors_ er, og hvordan de fungerer.
 
 ## Hvad Structured DNS Errors er
 
-Når en forespørgsel til et reklame- eller trackingdomæne blokeres, kan brugeren se tomme pladser på et websted eller måske endda ikke bemærke, at DNS-filtrering er sket. Blokeres et helt websted imidlertid på DNS-niveau, vil brugeren være helt ude af stand til at tilgå siden. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
+Når en forespørgsel til et reklame- eller trackingdomæne blokeres, kan brugeren se tomme pladser på et websted eller måske endda ikke bemærke, at DNS-filtrering er sket. Blokeres et helt websted imidlertid på DNS-niveau, vil brugeren være helt ude af stand til at tilgå siden. Når et blokeret websted forsøges tilgået, kan brugeren se en generisk "Dette websted kan ikke nås"-fejl vist af webbrowseren.
 
-![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+!["Dette websted kan ikke nås"-fejl](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don’t explain what happened and why. Dette efterlader brugere forvirrede over, hvorfor et websted er utilgængeligt, hvilket ofte får dem til at antage, at deres internetforbindelse eller DNS-opløser er i stykker.
+Sådanne fejl forklarer ikke, hvad der skete, og hvorfor. Dette efterlader brugere forvirrede over, hvorfor et websted er utilgængeligt, hvilket ofte får dem til at antage, at deres internetforbindelse eller DNS-opløser er i stykker.
 
 For at præcisere dette, kan DNS-servere omdirigere brugere til deres egen side med en forklaring. HTTPS-websteder (hvilket udgør flertallet af websteder) ville imidlertid kræve et særskilt certifikat.
 

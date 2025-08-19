@@ -25,7 +25,7 @@ DNS-over-QUIC, DNS isteklerini iletmek için QUIC aktarım katmanı protokolün�
 
 Since DoQ uses the QUIC protocol to keep DNS activity separate from web traffic, it avoids the timing issues observed in DoH. Consequently, it doesn’t reveal any traffic patterns. This makes it harder to link your DNS queries to your browsing activity, even though the traffic itself is easier to spot.
 
-However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. If you are not ready to deal with that, it might not be the best choice.
+However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. Bununla başa çıkmaya hazır değilseniz, bu en iyi seçim olmayabilir.
 
 ![DoH ile DoQ karşılaştırması \*border](https://cdn.adtidy.org/blog/new/gy178dohdoq.jpg)
 

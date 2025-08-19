@@ -3,7 +3,7 @@ title: 'Opdatering af Vidensbase'
 sidebar_position: 1
 ---
 
-Målet med denne vidensbase er at give alle den mest opdaterede information om alle slags AdGuard DNS-relaterede emner. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Målet med denne vidensbase er at give alle den mest opdaterede information om alle slags AdGuard DNS-relaterede emner. Tingene ændrer sig dog konstant, og nogle gange afspejler en artikel ikke længere tingenes aktuelle tilstand — der er simpelthen ikke så mange af os til at holder øje med hver eneste bit af information og opdaterer det i alle nye versionsudgivelser.
 
 Dette er grunden til, at alt vores KB-indhold er placeret på [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), og nu kan bogstaveligt talt enhver bidrage til det ved at foreslå redigeringer og oversættelser til eksisterende artikler såvel som helt nye.
 
@@ -15,7 +15,7 @@ Når man er klar til at starte, så arbejd i [ KnowledgeBaseDNS-repo'et](https:/
 
 Knowledge Base-webstedet er bygget vha. Docusaurus 2 - en moderne statisk webstedsgenerator. Ved forslag til ændringer eller tilføjelser, så tag højde for, at alle dokumenter skal overholde platformsprincipperne. Mere om dem kan læses i [denne guide](https://docusaurus.io/docs/category/guides).
 
-Denne vidensbase kan udrulles lokalt til egen computer til forhåndsvisning af foreslåede ændringer. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
+Denne vidensbase kan udrulles lokalt til egen computer til forhåndsvisning af foreslåede ændringer. Detaljeret vejledning til, hvordan dette gøres, kan findes [i README.md-filen](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) på denne videnbases GitHub-side.
 
 ## Artikeloversættelse {#translate-adguard}
 

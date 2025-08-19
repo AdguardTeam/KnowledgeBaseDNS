@@ -9,7 +9,7 @@ AdGuard DNS er en gratis, fortrolighedsorienteret DNS-opløser, der giver sikker
 
 ## Offentlige AdGuard DNS-servere
 
-AdGuard DNS har tre forskellige typer offentlige servere. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Detaljerede vejledninger til opsætning af AdGuard DNS på enhver enhed kan findes på [vores websted](https://adguard-dns.io/public-dns.html). Hver server understøtter forskellige sikre protokoller: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) og DNS-over-QUIC (DoQ).
+AdGuard DNS har tre forskellige typer offentlige servere. *Standard*-serveren er til blokering af annonce-, tracker-, malware- og phishing-websteder. *Familiebeskyttelse* gør det samme, men blokerer også websteder med voksenindhold og håndhæver muligheden *Sikker søgning* i webbrowsere, som tilbyder den. *Ikke-filtrering* leverer en sikker og pålidelig forbindelse uden blokering af nogen art. Detaljerede vejledninger til opsætning af AdGuard DNS på enhver enhed kan findes på [vores websted](https://adguard-dns.io/public-dns.html). Hver server understøtter forskellige sikre protokoller: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) og DNS-over-QUIC (DoQ).
 
 ## AdGuard DNS-protokoller
 
@@ -27,11 +27,11 @@ AdGuard DNS leverer også en JSON API til DNS. Det er muligt at få et DNS-svar 
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). At få DNS-svar i JSON fungerer på samme måde med AdGuard DNS.
+For detaljeret dokumentation henvises til [Googles guide til JSON API til DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). At få DNS-svar i JSON fungerer på samme måde med AdGuard DNS.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
+Ulig Google DNS understøtter AdGuard DNS ikke `edns_client_subnet` og `Kommentar` værdier i svar-JSON'er.
 
 :::
 
@@ -45,10 +45,10 @@ DNS-forespørgselskvote er en teknik, der bruges til at regulere den trafikmæng
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+AdGuard DNS muliggør brug af en dedikeret krypteringsprotokol — DNSCrypt. Grundet denne, krypteres alle DNS-forespørgsler, hvilket beskytter mod mulig opfangning af forespørgsler og efterfølgende aflytning og/eller ændring.
 
 :::note
 
-This is an obsolete protocol with restricted support.
+Dette er en forældet protokol med begrænset understøttelse.
 
 :::
