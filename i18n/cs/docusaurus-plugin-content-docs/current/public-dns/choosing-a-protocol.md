@@ -21,11 +21,11 @@ Může však být nestabilní a způsobovat problémy s výkonem. Pokud všechny
 
 ### DNS-over-QUIC (DoQ)
 
-DNS-over-QUIC je protokol DNS, který k přenosu požadavků DNS používá protokol transportní vrstvy QUIC. It solves one of the main problems with the DoH protocol: head-of-line blocking.
+DNS-over-QUIC je protokol DNS, který k přenosu požadavků DNS používá protokol transportní vrstvy QUIC. Řeší jeden z hlavních problémů protokolu DoH: head-of-line blocking.
 
 Protože DoQ používá protokol QUIC k oddělení činnosti DNS od webového provozu, vyhýbá se problémům s časováním pozorovaným u DoH. Z toho vyplývá, že neodhaluje žádné vzorce provozu. Díky tomu je obtížnější spojit vaše dotazy DNS s vaší aktivitou při procházení, i když samotný provoz je snadněji zjistitelný.
 
-However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. If you are not ready to deal with that, it might not be the best choice.
+DoQ však zůstává experimentálním protokolem a může čelit problémům se stabilitou nebo být blokován poskytovateli internetových služeb a cenzory. Pokud na to nejste připraveni, možná to není ta nejlepší volba.
 
 ![DoH vs. DoQ \*border](https://cdn.adtidy.org/blog/new/gy178dohdoq.jpg)
 

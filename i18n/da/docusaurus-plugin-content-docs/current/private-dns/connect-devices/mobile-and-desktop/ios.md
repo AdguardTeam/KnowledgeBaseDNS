@@ -59,7 +59,7 @@ Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 ## Brug en opsætningsprofil
 
-An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Den muliggør også opsætning af AdGuard DNS på enheden.
+En iOS-enhedsprofil, også kaldet en konfigurationsprofil af Apple, er en certifikatsigneret XML-fil, der kan installeres manuelt på iOS-enheden eller udrulles vha. en MDM-løsning. Den muliggør også opsætning af AdGuard DNS på enheden.
 
 :::note Vigtigt
 

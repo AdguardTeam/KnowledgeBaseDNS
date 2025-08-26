@@ -214,3 +214,9 @@ In questa sezione descriviamo un certo numero di impostazioni che ti consentono 
 Statistiche e registro delle richieste forniscono informazioni sull'attività dei tuoi dispositivi. La scheda delle *Statistiche* ti consente di visualizzare un riepilogo delle richieste DNS effettuate dai dispositivi connessi al tuo AdGuard DNS privato. Nel registro delle richieste, puoi visualizzare informazioni su ogni richiesta e anche ordinare le richieste per stato, tipo, azienda, dispositivo, ora e paese.
 
 [Statistiche e registro delle richieste](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

@@ -45,10 +45,10 @@ DNS-ratelimiting is een techniek die wordt gebruikt om de hoeveelheid verkeer di
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+Met AdGuard DNS kun je een specifiek versleuteld protocol gebruiken: DNSCrypt. Hierdoor worden alle DNS-verzoeken versleuteld, wat je beschermt tegen mogelijke onderschepping van verzoeken en daaropvolgend afluisteren en/of wijzigen.
 
 :::note
 
-This is an obsolete protocol with restricted support.
+Dit is een verouderd protocol met beperkte ondersteuning.
 
 :::

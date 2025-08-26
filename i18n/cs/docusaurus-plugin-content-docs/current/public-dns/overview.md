@@ -45,10 +45,10 @@ Omezení rychlosti DNS je technika používaná k regulaci množství přenosů,
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+AdGuard DNS umožňuje používat specifický šifrovaný protokol — DNSCrypt. Díky tomu jsou všechny DNS požadavky šifrovány, což vás chrání před možným zachycením požadavků a následným odposlechem a/nebo změnou.
 
 :::note
 
-This is an obsolete protocol with restricted support.
+Jedná se o zastaralý protokol s omezenou podporou.
 
 :::

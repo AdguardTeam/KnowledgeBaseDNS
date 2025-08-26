@@ -25,7 +25,7 @@ DNS-over-QUIC is een DNS-protocol dat gebruik maakt van het QUIC-transportlaagpr
 
 Aangezien DoQ het QUIC-protocol gebruikt om DNS-activiteit gescheiden te houden van webverkeer, worden de timingproblemen vermeden die in DoH worden waargenomen. Consequently, it doesn’t reveal any traffic patterns. Dit maakt het moeilijker om je DNS-query's te koppelen aan je browse-activiteit, ook al is het verkeer zelf gemakkelijker te herkennen.
 
-However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. If you are not ready to deal with that, it might not be the best choice.
+DoQ blijft echter een experimenteel protocol en kan te maken krijgen met stabiliteitsproblemen of worden geblokkeerd door ISP's en censuur. Als je er niet klaar voor bent om daarmee om te gaan, is dit misschien niet de beste keuze.
 
 ![DoH vs. DoQ \*border](https://cdn.adtidy.org/blog/new/gy178dohdoq.jpg)
 

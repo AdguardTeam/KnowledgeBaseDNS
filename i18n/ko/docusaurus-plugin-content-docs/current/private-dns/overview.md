@@ -214,3 +214,9 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 통계 및 요청 로그는 기기 활동에 대한 정보를 제공합니다. 여기 *통계* 탭에서는 사설 AdGuard DNS에 연결된 기기에 의해 생성된 DNS 요청의 요약을 볼 수 있습니다. 쿼리 로그에서 각 요청에 대한 정보를 확인하고 요청을 상태, 유형, 기업, 기기, 시간 및 국가별로 정렬할 수 있습니다.
 
 [통계와 쿼리 로그](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

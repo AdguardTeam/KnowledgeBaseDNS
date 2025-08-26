@@ -214,3 +214,9 @@ Dans cette section, nous décrivons un certain nombre de paramètres qui vous pe
 Les Statistiques et le Journal des requêtes donnent un aperçu de l'activité de vos appareils. L'onglet *Statistiques* vous permet de voir un résumé des requêtes DNS effectuées par les appareils connectés à votre AdGuard DNS privé. Dans le Journal des requêtes, vous pouvez voir des informations sur chaque requête et également trier les requêtes par état, type, société, appareil, temps et pays.
 
 [Statistiques et le Journal des requêtes](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

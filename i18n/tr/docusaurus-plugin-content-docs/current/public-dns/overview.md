@@ -45,7 +45,7 @@ DNS oran sınırlaması, bir DNS sunucusunun belirli bir süre içinde işleyebi
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+AdGuard DNS, belirli bir şifrelenmiş protokol kullanmanıza olanak tanır — DNSCrypt. Bu sayede, tüm DNS istekleri şifrelenir, bu da sizi olası istek müdahalesinden ve ardından gizlice dinleme ve/veya değiştirmeden korur.
 
 :::note Not
 

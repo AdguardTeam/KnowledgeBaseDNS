@@ -214,3 +214,9 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 统计和查询日志可让用户深入了解设备的活动。 在「*统计数据*」标签中，用户可以查看连接私人 AdGuard DNS 的设备发出的 DNS 请求汇总。 在查询日志中，可以查看每个请求的信息，还可以按状态、类型、公司、设备、时间和国家/地区对请求进行排序。
 
 [统计数字与查询日志](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

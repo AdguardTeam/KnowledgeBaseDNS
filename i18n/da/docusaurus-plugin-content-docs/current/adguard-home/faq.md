@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Brug ikke undermapper med Apache reverse HTTP-proxy.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Dette forårsager problemer med AdGuard Home-webgrænsefladen.
+Brug ikke undermapper med Apache reverse HTTP-proxy.  Det er et kendt problem ([#6604]), at Apache håndterer relative omdirigeringer anderledes end andre webservere. Dette forårsager problemer med AdGuard Home-webgrænsefladen.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
