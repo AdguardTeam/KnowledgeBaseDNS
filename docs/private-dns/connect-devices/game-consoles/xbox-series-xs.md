@@ -1,5 +1,5 @@
 ---
-title: Xbox One
+title: Xbox Series X|S
 sidebar_position: 6
 ---
 
@@ -13,7 +13,7 @@ It is likely that your router supports the use of encrypted DNS servers, so you 
 
 Configure your game console to use a public AdGuard DNS server or configure it via linked IP:
 
-1. Turn on your Xbox One console and sign in to your account.
+1. Turn on your Xbox Series X|S console and sign in to your account.
 1. Press the Xbox button on your controller to open the guide, then select *System* from the menu.
 1. In the *Settings* menu, select *Network*.
 1. Under *Network Settings*, select *Advanced Settings*.
