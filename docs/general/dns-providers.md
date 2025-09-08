@@ -1250,8 +1250,10 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Hostname: `tls://dot.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net) |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-TLS | Hostname: `tls://dot.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net) |
+| DNS-over-HTTPS | Hostname: `https://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-HTTP/3 | Hostname: `h3://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-QUIC | Hostname: `quic://doq.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0) |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ) |
 
