@@ -7,14 +7,14 @@ Routery OpenWRT používají open source operační systém založený na Linuxu
 
 ## Konfigurace DNS-over-HTTPS
 
-- **Pokyny příkazového řádku**. Nainstalujte požadované balíčky. Šifrování DNS by mělo být povoleno automaticky.
+ - **Pokyny příkazového řádku**. Nainstalujte požadované balíčky. Šifrování DNS by mělo být povoleno automaticky.
 
     ```# Install packages
     1. opkg update
     2. opkg install https-dns-proxy
 
     ```
-- **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
+ - **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
 
     ```# Install packages
     1. opkg update
@@ -24,7 +24,7 @@ Routery OpenWRT používají open source operační systém založený na Linuxu
 
 Přejděte do části _LuCI_ → _Služby_ → _HTTPS DNS Proxy_ a nakonfigurujte https-dns-proxy.
 
-- **Nakonfigurujte poskytovatele DoH**. https-dns-proxy je ve výchozím nastavení nakonfigurován s Google DNS a Cloudflare DNS. Musíte ho změnit na AdGuard DoH. Zadejte několik řešitelů, abyste zlepšili odolnost proti chybám.
+ - **Nakonfigurujte poskytovatele DoH**. https-dns-proxy je ve výchozím nastavení nakonfigurován s Google DNS a Cloudflare DNS. Musíte ho změnit na AdGuard DoH. Zadejte několik řešitelů, abyste zlepšili odolnost proti chybám.
 
     ```# Configure DoH provider
     1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,7 +39,7 @@ Přejděte do části _LuCI_ → _Služby_ → _HTTPS DNS Proxy_ a nakonfigurujt
 
 ## Konfigurace DNS-over-TLS
 
-- **Pokyny příkazového řádku**. [Zakažte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) roli Dnsmasq DNS nebo ji zcela odeberte, případně [nahraďte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) její DHCP rolí s odhcpd.
+ - **Pokyny příkazového řádku**. [Zakažte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) roli Dnsmasq DNS nebo ji zcela odeberte, případně [nahraďte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) její DHCP rolí s odhcpd.
 
     ```# Install packages
     1. opkg update
@@ -48,7 +48,7 @@ Přejděte do části _LuCI_ → _Služby_ → _HTTPS DNS Proxy_ a nakonfigurujt
 
 Klienti sítě LAN a místní systém by měli používat odchozí server jako primární řešitel za předpokladu, že je Dnsmasq zakázáno.
 
-- **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
+ - **Webové rozhraní**. Pokud chcete spravovat nastavení pomocí webového rozhraní, nainstalujte potřebné balíčky.
 
     ```# Install packages
     1. opkg update
@@ -58,7 +58,7 @@ Klienti sítě LAN a místní systém by měli používat odchozí server jako p
 
 Přejděte do části _LuCI_ → _Služby_ → _Rekurzivní DNS_ a nakonfigurujte Unbound.
 
-- **Konfigurace AdGuard DNS-over-TLS**.
+ - **Konfigurace AdGuard DNS-over-TLS**.
 
     ```1. uci add unbound zone
     2. uci set unbound.@zone[-1].enabled="1"
@@ -91,5 +91,5 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
 8. Uložte nastavení.
 9. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

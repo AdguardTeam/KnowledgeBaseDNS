@@ -21,5 +21,5 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 8. DNSSEC kan valgfrit slås til for øget sikkerhed.
 9. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

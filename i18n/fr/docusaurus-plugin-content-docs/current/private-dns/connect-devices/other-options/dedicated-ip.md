@@ -28,5 +28,5 @@ Les instructions ci-dessous expliquent comment connecter une IP dédiée à l'ap
 5. Sélectionnez le serveur que vous souhaitez utiliser.
 6. Pour lier une adresse IPv4 dédiée, cliquez sur _Assigner_.
 7. Si vous souhaitez utiliser une adresse IPv6 dédiée, cliquez sur _Copier_.
-    ![Copier l'adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Copier l'adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copiez et collez l'adresse dédiée sélectionnée dans les configurations de l'appareil.

@@ -19,6 +19,6 @@ Pokud máte předplacený tarif AdGuard DNS _Team_ nebo _Enterprise_, můžete p
 
 2. Klepněte na _Požadavek na zvýšení limitu_, abyste kontaktovali náš tým zákaznické podpory a požádali o zvýšení limitu. Budete muset zadat svůj CIDR a limit, který chcete mít
 
-     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Váš požadavek bude přezkoumán během 1–3 pracovních dnů. O změnách vás budeme kontaktovat e-mailem

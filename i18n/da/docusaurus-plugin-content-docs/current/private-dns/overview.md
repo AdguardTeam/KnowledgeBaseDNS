@@ -215,8 +215,8 @@ Statistik- og forespørgselslog giver indsigt i aktiviteten på enhederne. Fanen
 
 [Statistik- og forespørgselslog](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### Tilpassede domæner
 
-AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+Abonnenter på AdGuard DNS Enterprise og Team kan bruge deres egne domæner (såsom `dns.eksempel.com`) i stedet for standard `d.adguard-dns.com`. Denne indstilling sikrer problemfri integration med virksomhedens sikkerhedspolitikker, samtidig med at alle adblocking- og fortrolighedsfunktioner leveret af AdGuard DNS bevares.
 
-[Custom domains](/private-dns/custom-domains.md)
+[Tilpassede domæner](/private-dns/custom-domains.md)

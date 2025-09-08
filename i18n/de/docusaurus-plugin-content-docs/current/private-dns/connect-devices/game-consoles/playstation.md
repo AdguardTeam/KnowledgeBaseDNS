@@ -53,5 +53,5 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen öffentlichen AdGuard DNS
 
 Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

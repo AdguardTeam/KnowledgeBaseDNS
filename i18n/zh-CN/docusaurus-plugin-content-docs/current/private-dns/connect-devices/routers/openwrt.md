@@ -7,14 +7,14 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 
 ## 配置 DNS-over-HTTPS
 
-- **命令行指令**。 安装所需的软件包。 DNS 加密应自动启用。
+ - **命令行指令**。 安装所需的软件包。 DNS 加密应自动启用。
 
     ```# Install packages
     1. opkg update
     2. opkg install https-dns-proxy
 
     ```
-- **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
+ - **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
 
     ```# Install packages
     1. opkg update
@@ -24,7 +24,7 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 
 请转到「_LuCI_」→「_服务_」→「_HTTPS DNS 代理_」以配置 https-dns-proxy。
 
-- **配置 DNS-over-HTTPS 提供商**。 https-dns-proxy 默认配置 Google DNS 和 Cloudflare DNS。 用户要将其更改为 AdGuard DNS-over-HTTPS。 指定多个解析器以提高容错技术能力。
+ - **配置 DNS-over-HTTPS 提供商**。 https-dns-proxy 默认配置 Google DNS 和 Cloudflare DNS。 用户要将其更改为 AdGuard DNS-over-HTTPS。 指定多个解析器以提高容错技术能力。
 
     ```# Configure DoH provider
     1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,7 +39,7 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 
 ## 配置 DNS-over-TLS
 
-- **命令行指令**。 [禁用](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS 角色，或者完全删除它，并可选[用 odhcpd 取代](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound)其 DHCP 协议角色。
+ - **命令行指令**。 [禁用](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS 角色，或者完全删除它，并可选[用 odhcpd 取代](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound)其 DHCP 协议角色。
 
     ```# Install packages
     1. opkg update
@@ -48,7 +48,7 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 
 假设 Dnsmasq 已禁用，LAN 客户端和本地系统应使用 Unbound 作为主要解析器。
 
-- **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
+ - **Web 接口**。 如果用户想使用 Web 界面管理设置，请安装必要的软件包。
 
     ```# Install packages
     1. opkg update
@@ -58,7 +58,7 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 
 转到「_LuCI_」→「_服务_」→「_递归 DNS_」以配置 Unbound。
 
-- **配置 AdGuard DNS-over-TLS**。
+ - **配置 AdGuard DNS-over-TLS**。
 
     ```1. uci add unbound zone
     2. uci set unbound.@zone[-1].enabled="1"
@@ -91,5 +91,5 @@ OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户�
 8. 请保存设置。
 9. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

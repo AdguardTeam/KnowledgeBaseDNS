@@ -22,7 +22,7 @@ sidebar_position: 3
     - `94.140.14.49` 和 `94.140.14.59`
 9. 指定「_TLS 端口_」，输入 853。
 10. 在「_TLS 主机名_」字段中，输入私人 AdGuard DNS 服务器地址：
-    - `{Your_Device_ID}.d.adguard-dns.com`
+     - `{Your_Device_ID}.d.adguard-dns.com`
 11. 滚动到页面底部并按「_应用_」。
 
 ## 使用路由器管理面板

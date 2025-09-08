@@ -14,11 +14,11 @@ Zde jsou uvedeny obecné pokyny pro nastavení Soukromého AdGuard DNS na router
 
 2. Zadejte heslo routeru.
 
-    :::note Důležité
+   :::note Důležité
 
-    Pokud je heslo neznámé, můžete ho často resetovat stisknutím tlačítka na routeru; tím se také obnoví tovární nastavení routeru. Některé modely mají speciální aplikaci pro správu, která by již měla být v počítači nainstalována.
+   Pokud je heslo neznámé, můžete ho často resetovat stisknutím tlačítka na routeru; tím se také obnoví tovární nastavení routeru. Některé modely mají speciální aplikaci pro správu, která by již měla být v počítači nainstalována.
 
-    :::
+   :::
 
 3. V konzole správce routeru zjistěte, kde se nachází nastavení DNS. Změňte uvedené adresy DNS na následující adresy:
     - IPv4: `94.140.14.49` a `94.140.14.59`
@@ -28,5 +28,5 @@ Zde jsou uvedeny obecné pokyny pro nastavení Soukromého AdGuard DNS na router
 
 5. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

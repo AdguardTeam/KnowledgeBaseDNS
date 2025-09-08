@@ -28,7 +28,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 3. 转到「_使用 DNS 服务器地址_」。
 4. 打开「_无加密的 DNS 服务器地址_」连接关联的 IP。
 
-    ![关联 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![关联 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## 动态 DNS：为什么有用
 
@@ -52,7 +52,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
     - 找到 DDNS 或「_动态 DNS_」部分。
     - 请验证设置确实受支持。 _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. 使用像 [DynDNS](https://dyn.com/remote-access/)、[NO-IP](https://www.noip.com/) 或您喜欢的任何其他 DNS 提供商注册您的域名。
 
@@ -62,7 +62,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
 5. 输入您之前注册的域名，然后点击「_配置 DDNS_」。
 
-    ![配置 DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![配置 DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -91,14 +91,14 @@ All done, you’ve successfully set up DDNS!
     - 在终端中运行 `crontab -e`。
 2. 添加任务：
     - 插入以下行：
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - 此任务将每 5 分钟运行一次
 3. 保存 crontab。
 
 :::note 重要信息
 
-- 确保您在 macOS 和 Linux 上已安装 `curl`。
-- 记得从设置中复制地址并替换 `ServerID` 和 `UniqueKey`。
-- 如果需要更复杂的逻辑或查询结果的处理，请考虑使用脚本（例如 Bash、Python）结合任务调度程序或 cron。
+ - 确保您在 macOS 和 Linux 上已安装 `curl`。
+ - 记得从设置中复制地址并替换 `ServerID` 和 `UniqueKey`。
+ - 如果需要更复杂的逻辑或查询结果的处理，请考虑使用脚本（例如 Bash、Python）结合任务调度程序或 cron。
 
 :::

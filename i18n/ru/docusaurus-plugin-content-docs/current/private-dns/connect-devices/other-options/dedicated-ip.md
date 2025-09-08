@@ -28,5 +28,5 @@ If you have a Team or Enterprise subscription, you’ll receive several personal
 5. Выберите сервер, который вы хотите использовать.
 6. Для привязки выделенного IPv4-адреса нажмите _Назначить_.
 7. Если вы хотите использовать выделенный IPv6-адрес, нажмите _Копировать_.
-    ![Копировать адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Копировать адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Скопируйте и вставьте выбранный выделенный адрес в настройки устройства.

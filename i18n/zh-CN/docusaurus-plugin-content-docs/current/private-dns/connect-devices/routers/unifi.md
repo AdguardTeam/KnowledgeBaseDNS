@@ -62,5 +62,5 @@ Use these instructions if your UniFi router does not support the DNS-over-HTTPS 
     - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 10. 请保存设置。
 11. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
-    - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+     - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)

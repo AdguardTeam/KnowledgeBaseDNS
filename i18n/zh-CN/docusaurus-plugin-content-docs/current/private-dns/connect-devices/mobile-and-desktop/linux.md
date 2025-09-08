@@ -8,7 +8,7 @@ sidebar_position: 6
 1. 进入「_仪表盘_」并点击「_连接新设备_」。
 2. 在下拉菜单「_设备类型_」中，选择 Linux。
 3. 命名设备。
-    ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+   ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## 使用 AdGuard DNS 客户端
 
@@ -42,8 +42,8 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
     - `2a10:50c0:0:0:0:0:dad:ff`
 10. 点击「_应用_」。
 11. 连接您的 IP 地址（如果用户有团队订阅，可以使用专用 IP 地址）：
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## 在 Debian 上手动配置（需要已链接 IP 地址或专用 IP 地址）
 
@@ -61,38 +61,38 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 10. 按下回车键。
 11. 关闭终端。
 12. 连接您的 IP 地址（如果用户有团队订阅，可以使用专用 IP 地址）：
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## 使用 dnsmasq
 
 1. 使用以下命令安装 dnsmasq：
 
-    `sudo apt updatesudo`
+   `sudo apt updatesudo`
 
-    `apt install`
+   `apt install`
 
-    `dnsmasqsudo nano /etc/dnsmasq.conf`
+   `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. 在 dnsmasq.conf 中使用以下命令：
 
-    `no-resolv`
+   `no-resolv`
 
-    `bogus-priv`
+   `bogus-priv`
 
-    `strict-order`
+   `strict-order`
 
-    `server=94.140.14.49`
+   `server=94.140.14.49`
 
-    `server=94.140.14.59`
+   `server=94.140.14.59`
 
-    `port=5353`
+   `port=5353`
 
-    `add-cpe-id={Your_Device_ID}`
+   `add-cpe-id={Your_Device_ID}`
 
 3. 重启 dnsmasq 服务：
 
-    `sudo service dnsmasq restart`
+   `sudo service dnsmasq restart`
 
 完成！ 您的设备已成功连接到 AdGuard DNS。
 
@@ -128,5 +128,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP：
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -53,5 +53,5 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 
 Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

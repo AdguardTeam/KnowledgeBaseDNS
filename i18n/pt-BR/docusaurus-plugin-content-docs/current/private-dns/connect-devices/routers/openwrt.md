@@ -7,14 +7,14 @@ Os roteadores OpenWRT utilizam um sistema operacional de código aberto baseado 
 
 ## Configuração do DNS-over-HTTPS
 
-- **Instruções de linha de comando**. Instale os pacotes necessários. A criptografia de DNS deve ser habilitada automaticamente.
+ - **Instruções de linha de comando**. Instale os pacotes necessários. A criptografia de DNS deve ser habilitada automaticamente.
 
     ```# Install packages
     1. opkg update
     2. opkg install https-dns-proxy
 
     ```
-- **Interface da Web**. Se você deseja gerenciar as configurações usando a interface da Web, instale os pacotes necessários.
+ - **Interface da Web**. Se você deseja gerenciar as configurações usando a interface da Web, instale os pacotes necessários.
 
     ```# Install packages
     1. opkg update
@@ -24,7 +24,7 @@ Os roteadores OpenWRT utilizam um sistema operacional de código aberto baseado 
 
 Navegue até _LuCI_ → _Serviços_ → _Proxy DNS HTTPS_ para configurar o https-dns-proxy.
 
-- **Configure o provedor de Dns-over-Https**. https-dns-proxy está configurado com o DNS do Google e o DNS da Cloudflare por padrão. Você precisa alterá-lo para o DNS-over-HTTPS do AdGuard. Especifique vários resolvedores de Dns para melhorar a tolerância a falhas.
+ - **Configure o provedor de Dns-over-Https**. https-dns-proxy está configurado com o DNS do Google e o DNS da Cloudflare por padrão. Você precisa alterá-lo para o DNS-over-HTTPS do AdGuard. Especifique vários resolvedores de Dns para melhorar a tolerância a falhas.
 
     ```# Configure DoH provider
     1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,7 +39,7 @@ Navegue até _LuCI_ → _Serviços_ → _Proxy DNS HTTPS_ para configurar o http
 
 ## Configuração do DNS-over-TLS
 
-- **Instruções de linha de comando**. [Desative](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) o papel do DNS Dnsmasq ou remova-o completamente opcionalmente [substituindo](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) seu papel DHCP pelo odhcpd.
+ - **Instruções de linha de comando**. [Desative](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) o papel do DNS Dnsmasq ou remova-o completamente opcionalmente [substituindo](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) seu papel DHCP pelo odhcpd.
 
     ```# Install packages
     1. opkg update
@@ -48,7 +48,7 @@ Navegue até _LuCI_ → _Serviços_ → _Proxy DNS HTTPS_ para configurar o http
 
 Os clientes LAN e o sistema local devem usar o Unbound como um Resolvedor de DNS primário, supondo que o Dnsmasq esteja desativado.
 
-- **Interface da Web**. Se você deseja gerenciar as configurações usando a interface da Web, instale os pacotes necessários.
+ - **Interface da Web**. Se você deseja gerenciar as configurações usando a interface da Web, instale os pacotes necessários.
 
     ```# Install packages
     1. opkg update
@@ -58,7 +58,7 @@ Os clientes LAN e o sistema local devem usar o Unbound como um Resolvedor de DNS
 
 Navegue até _LuCI_ → _Serviços_ → _DNS Recursivo_ para configurar o Unbound.
 
-- **Configuração do AdGuard DNS-over-TLS**.
+ - **Configuração do AdGuard DNS-over-TLS**.
 
     ```1. uci add unbound zone
     2. uci set unbound.@zone[-1].enabled="1"
@@ -91,5 +91,5 @@ Use estas instruções se o seu roteador Keenetic não oferece suporte à config
 8. Salve as configurações.
 9. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

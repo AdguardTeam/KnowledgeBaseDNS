@@ -37,25 +37,25 @@ Understøttede CPU-arkitekturer:
 
 1. Download og udpak `.tar.gz`- eller `.zip`-arkivet fra [udgivelsessiden][releases].
 
-  :::caution
+   :::caution
 
-  På macOS er det afgørende, at globalt installerede daemons ejes af `root` (se \[`launchd`-dokumentationen]\[launchd-krav]), så den eksekverbare `AdGuardDNSClient` skal placeres i mappen `/Applications/` eller dens undermappe.
+   På macOS er det afgørende, at globalt installerede daemons ejes af `root` (se \[`launchd`-dokumentationen]\[launchd-krav]), så den eksekverbare `AdGuardDNSClient` skal placeres i mappen `/Applications/` eller dens undermappe.
 
-  :::
+   :::
 
 2. Installér den som en tjeneste ved at eksekvere:
 
-  ```sh
-  ./AdGuardDNSClient -s install -v
-  ```
+   ```sh
+   ./AdGuardDNSClient -s install -v
+   ```
 
 3. Redigér opsætningsfilen `config.yaml`.
 
 4. Start tjenesten:
 
-  ```sh
-  ./AdGuardDNSClient -s start -v
-  ```
+   ```sh
+   ./AdGuardDNSClient -s start -v
+   ```
 
 For at tjekke, at det virker, brug et hvilket som helst DNS-kontrolværktøj. F.eks. ved at bruge `nslookup`:
 

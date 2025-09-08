@@ -21,5 +21,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 8. Optionally, you can enable DNSSEC for enhanced security.
 9. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

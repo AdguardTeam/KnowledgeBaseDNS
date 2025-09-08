@@ -14,11 +14,11 @@ Aqui estão algumas instruções gerais para a configuração do AdGuard DNS Pri
 
 2. Enter the router’s password.
 
-    :::note Importante
+   :::note Importante
 
-    Se a senha for desconhecida, você pode frequentemente redefini-la pressionando um botão no roteador; isso também redefinirá o roteador para as configurações de fábrica. Alguns modelos têm um aplicativo de gerenciamento dedicado, que já deve estar instalado no seu computador.
+   Se a senha for desconhecida, você pode frequentemente redefini-la pressionando um botão no roteador; isso também redefinirá o roteador para as configurações de fábrica. Alguns modelos têm um aplicativo de gerenciamento dedicado, que já deve estar instalado no seu computador.
 
-    :::
+   :::
 
 3. Find where DNS settings are located in the router’s admin console. Change the listed DNS addresses to the following addresses:
     - IPv4: `94.140.14.49` e `94.140.14.59`
@@ -28,5 +28,5 @@ Aqui estão algumas instruções gerais para a configuração do AdGuard DNS Pri
 
 5. Vincule seu IP (ou seu IP dedicado, caso tenha uma assinatura Equipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

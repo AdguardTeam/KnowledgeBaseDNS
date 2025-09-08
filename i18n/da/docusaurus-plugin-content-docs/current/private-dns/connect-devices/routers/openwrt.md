@@ -7,14 +7,14 @@ OpenWRT-routere bruger et open-source, Linux-baseret operativsystem, der giver f
 
 ## Opsæt DNS-over-HTTPS
 
-- **Kommandolinjevejledning**. Installér de nødvendige pakker. DNS-kryptering bør aktiveres automatisk.
+ - **Kommandolinjevejledning**. Installér de nødvendige pakker. DNS-kryptering bør aktiveres automatisk.
 
     ```# Install packages
     1. opkg update
     2. opkg install https-dns-proxy
 
     ```
-- **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
+ - **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
 
     ```# Install packages
     1. opkg update
@@ -24,7 +24,7 @@ OpenWRT-routere bruger et open-source, Linux-baseret operativsystem, der giver f
 
 Gå til _LuCI_ → _Tjenester_ → _HTTPS DNS-proxy_ for at opsætte https-dns-proxy.
 
-- **Opsæt DoH-udbyder**. https-dns-proxy er opsat med Google DNS og Cloudflare DNS som standard. Dette skal ændres til AdGuard DoH. Angiv flere opløsere for at forbedre fejltolerancen.
+ - **Opsæt DoH-udbyder**. https-dns-proxy er opsat med Google DNS og Cloudflare DNS som standard. Dette skal ændres til AdGuard DoH. Angiv flere opløsere for at forbedre fejltolerancen.
 
     ```# Configure DoH provider
     1. while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
@@ -39,7 +39,7 @@ Gå til _LuCI_ → _Tjenester_ → _HTTPS DNS-proxy_ for at opsætte https-dns-p
 
 ## Opsæt DNS-over-TLS
 
-- **Kommandolinjevejledning**. [Deaktivér](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS-rollen eller fjern den helt og evt. [erstatte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) dens DHCP-rolle med odhcpd.
+ - **Kommandolinjevejledning**. [Deaktivér](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS-rollen eller fjern den helt og evt. [erstatte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) dens DHCP-rolle med odhcpd.
 
     ```# Install packages
     1. opkg update
@@ -48,7 +48,7 @@ Gå til _LuCI_ → _Tjenester_ → _HTTPS DNS-proxy_ for at opsætte https-dns-p
 
 LAN-klienter og det lokale system bør bruge Unbound som en primær opløser, forudsat at Dnsmasq er deaktiveret.
 
-- **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
+ - **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
 
     ```# Install packages
     1. opkg update
@@ -58,7 +58,7 @@ LAN-klienter og det lokale system bør bruge Unbound som en primær opløser, fo
 
 Gå til _LuCI_ → _Tjenester_ → _Rekursiv DNS_ for at opsætte Unbound.
 
-- **Opsæt AdGuard DNS-over-TLS**.
+ - **Opsæt AdGuard DNS-over-TLS**.
 
     ```1. uci add unbound zone
     2. uci set unbound.@zone[-1].enabled="1"
@@ -91,5 +91,5 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 8. Gem indstillingerne.
 9. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)

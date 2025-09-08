@@ -8,7 +8,7 @@ To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
 1. Go to _Dashboard_ and click _Connect new device_.
 2. In the drop-down menu _Device type_, select Linux.
 3. Name the device.
-    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+   ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Use AdGuard DNS Client
 
@@ -42,8 +42,8 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
     - `2a10:50c0:0:0:0:0:dad:ff`
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
@@ -61,38 +61,38 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 10. Press _Enter_.
 11. Close the Terminal.
 12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
 1. Install dnsmasq using the following commands:
 
-    `sudo apt updatesudo`
+   `sudo apt updatesudo`
 
-    `apt install`
+   `apt install`
 
-    `dnsmasqsudo nano /etc/dnsmasq.conf`
+   `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. Use the following commands in dnsmasq.conf:
 
-    `no-resolv`
+   `no-resolv`
 
-    `bogus-priv`
+   `bogus-priv`
 
-    `strict-order`
+   `strict-order`
 
-    `server=94.140.14.49`
+   `server=94.140.14.49`
 
-    `server=94.140.14.59`
+   `server=94.140.14.59`
 
-    `port=5353`
+   `port=5353`
 
-    `add-cpe-id={Your_Device_ID}`
+   `add-cpe-id={Your_Device_ID}`
 
 3. Restart the dnsmasq service:
 
-    `sudo service dnsmasq restart`
+   `sudo service dnsmasq restart`
 
 All done! Your device is successfully connected to AdGuard DNS.
 
@@ -128,5 +128,5 @@ De `dig`-opdracht is slechts een voorbeeld, je kunt elke DNS-software gebruiken 
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
 
-- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
