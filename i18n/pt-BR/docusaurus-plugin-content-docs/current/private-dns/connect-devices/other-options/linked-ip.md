@@ -28,7 +28,7 @@ As instruções a seguir explicam como se conectar ao dispositivo via **endereç
 3. Vá para _Usar endereços de servidor DNS_.
 4. Abra _Endereços de servidor DNS simples_ e conecte o IP vinculado.
 
-    ![IP vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![IP vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## DNS dinâmico: por que é útil
 
@@ -52,7 +52,7 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
     - Localize a seção DDNS ou _DNS Dinâmico_
     - Navegue até ele e verifique se as configurações são realmente compatíveis. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registre seu domínio em um serviço popular como [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), ou qualquer outro provedor de DDNS que preferir.
 
@@ -62,7 +62,7 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
 
 5. Insira o domínio que você registrou anteriormente e clique em _Configurar DDNS_.
 
-    ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -91,14 +91,14 @@ No macOS e Linux, a maneira mais fácil é usar `cron`:
     - No terminal, execute `crontab -e`.
 2. Adicione uma tarefa:
     - Insira a seguinte linha:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - Este trabalho será executado a cada 5 minutos
 3. Salve o crontab.
 
 :::note Importante
 
-- Certifique-se de ter `curl` instalado no macOS e Linux.
-- Lembre-se de copiar o endereço das configurações e substituir o `ServerID` e `UniqueKey`.
-- Se for necessária uma lógica mais complexa ou processamento dos resultados da consulta, considere usar scripts (por exemplo, Bash, Python) em conjunto com um agendador de tarefas ou cron.
+ - Certifique-se de ter `curl` instalado no macOS e Linux.
+ - Lembre-se de copiar o endereço das configurações e substituir o `ServerID` e `UniqueKey`.
+ - Se for necessária uma lógica mais complexa ou processamento dos resultados da consulta, considere usar scripts (por exemplo, Bash, Python) em conjunto com um agendador de tarefas ou cron.
 
 :::

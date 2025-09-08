@@ -26,8 +26,8 @@ Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapıland�
 5. _Otomatik_ öğesini _Manuel_ olarak ayarlayın.
 6. Select _Primary DNS_. Mevcut DNS'i silmek için sol oku (B tuşu) basılı tutun.
 7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 8. Ayarları kaydedin.
 
 Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:

@@ -19,6 +19,6 @@ DNS 速率限制通常通过设置客户端（IP 地址）在特定周期内可�
 
 2. 点击「_提升数量上限_」联系我们的客户支持团队并申请提高限额。 请提供 CIDR 和想要的数量限制。
 
-     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

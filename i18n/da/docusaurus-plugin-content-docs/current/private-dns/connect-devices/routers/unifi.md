@@ -62,5 +62,5 @@ Brug denne vejledning, hvis UniFi-routeren ikke understøtter opsætning af DNS-
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 10. Gem indstillingerne.
 11. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-    - [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)
+     - [Dedikerede IP'er](private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)

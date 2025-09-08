@@ -22,7 +22,7 @@ Falls notwendig: Konfigurieren Sie DNS-over-TLS auf ASUS, installieren Sie die [
     - `94.140.14.49` und `94.140.14.59`
 9. Geben Sie als _TLS-Port_ 853 ein.
 10. Geben Sie im Feld _TLS-Hostname_ die Private AdGuard DNS-Serveradresse ein:
-    - `{Your_Device_ID}.d.adguard-dns.com`
+     - `{Your_Device_ID}.d.adguard-dns.com`
 11. Blättern Sie bis zum Ende der Seite und klicken Sie auf _Übernehmen_.
 
 ## Administrationsoberfläche Ihres Routers verwenden

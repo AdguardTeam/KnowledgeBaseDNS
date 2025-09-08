@@ -21,5 +21,5 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 6. 请保存设置。
 7. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

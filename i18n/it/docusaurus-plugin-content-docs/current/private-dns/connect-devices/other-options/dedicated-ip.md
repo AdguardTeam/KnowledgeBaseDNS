@@ -28,5 +28,5 @@ Le istruzioni qui sotto spiegano come collegare un IP dedicato al dispositivo:
 5. Seleziona il server che desideri utilizzare.
 6. Per associare un indirizzo IPv4 dedicato, fai clic su _Assegna_.
 7. Se desideri utilizzare un indirizzo IPv6 dedicato, fai clic su _Copia_.
-    ![Copia indirizzo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Copia indirizzo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copia e incolla l'indirizzo dedicato selezionato nelle configurazioni del dispositivo.

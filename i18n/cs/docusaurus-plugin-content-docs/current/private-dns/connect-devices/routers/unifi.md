@@ -62,5 +62,5 @@ Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 10. Uložte nastavení.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
-    - [Dedikované IP adresy](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Propojené IP adresy](private-dns/connect-devices/other-options/linked-ip.md)
+     - [Dedikované IP adresy](private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Propojené IP adresy](private-dns/connect-devices/other-options/linked-ip.md)

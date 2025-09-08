@@ -29,5 +29,5 @@ Use this guide if your FritzBox router does not support DNS-over-TLS configurati
 6. Save the settings.
 7. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

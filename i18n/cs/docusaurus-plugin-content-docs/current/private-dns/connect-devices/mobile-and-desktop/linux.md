@@ -8,7 +8,7 @@ Chcete-li zařízení Linux připojit k AdGuard DNS, přidejte je nejprve na _P�
 1. Přejděte na _Přehled_ a klikněte na _Připojit nové zařízení_.
 2. V rozbalovací nabídce _Typ zařízení_ vyberte Linux.
 3. Pojmenujte zařízení.
-    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+   ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## Použití klienta AdGuard DNS
 
@@ -42,8 +42,8 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
     - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klikněte na _Použít_.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
-    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Ruční konfigurace v Debianu (je vyžadována propojená IP nebo vyhrazená IP)
 
@@ -61,38 +61,38 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 10. Stiskněte _Enter_.
 11. Zavřete Terminal.
 12. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
-    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+     - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Použití dnsmasq
 
 1. Nainstalujte dnsmasq pomocí následujících příkazů:
 
-    `sudo apt updatesudo`
+   `sudo apt updatesudo`
 
-    `apt install`
+   `apt install`
 
-    `dnsmasqsudo nano /etc/dnsmasq.conf`
+   `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. V dnsmasq.conf použijte následující příkazy:
 
-    `no-resolv`
+   `no-resolv`
 
-    `bogus-priv`
+   `bogus-priv`
 
-    `strict-order`
+   `strict-order`
 
-    `server=94.140.14.49`
+   `server=94.140.14.49`
 
-    `server=94.140.14.59`
+   `server=94.140.14.59`
 
-    `port=5353`
+   `port=5353`
 
-    `add-cpe-id={Your_Device_ID}`
+   `add-cpe-id={Your_Device_ID}`
 
 3. Restartujte službu dnsmasq:
 
-    `sudo service dnsmasq restart`
+   `sudo service dnsmasq restart`
 
 Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
@@ -128,5 +128,5 @@ Příkaz `dig` je pouze příkladem, k provedení této akce můžete použít l
 
 Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy:
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

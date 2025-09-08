@@ -14,11 +14,11 @@ sidebar_position: 2
 
 2. Enter the router’s password.
 
-    :::note 重要信息
+   :::note 重要信息
 
-    如果密码未知，用户一般可以通过按下路由器上的一个按钮来重置它；该操作将路由器恢复到出厂设置。 某些型号拥有专门的管理应用程序，这些应用程序应已经安装在计算机上。
+   如果密码未知，用户一般可以通过按下路由器上的一个按钮来重置它；该操作将路由器恢复到出厂设置。 某些型号拥有专门的管理应用程序，这些应用程序应已经安装在计算机上。
 
-    :::
+   :::
 
 3. Find where DNS settings are located in the router’s admin console. Change the listed DNS addresses to the following addresses:
     - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
@@ -28,5 +28,5 @@ sidebar_position: 2
 
 5. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

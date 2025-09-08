@@ -25,5 +25,5 @@ sidebar_position: 6
 
 最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

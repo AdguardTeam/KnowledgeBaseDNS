@@ -14,11 +14,11 @@ Her er nogle generelle vejledninger til opsætning af Private AdGuard DNS på ro
 
 2. Angiv routerens adgangskode.
 
-    :::note Vigtigt
+   :::note Vigtigt
 
-    Er adgangskoden ikke kendt, kan man ofte nulstille routeren via en trykknap. Dette nulstille dog routeren til sine fabriksindstillingerne. Nogle modeller har en dedikeret administrationsapplikation, man allerede burde have installeret på sin computer.
+   Er adgangskoden ikke kendt, kan man ofte nulstille routeren via en trykknap. Dette nulstille dog routeren til sine fabriksindstillingerne. Nogle modeller har en dedikeret administrationsapplikation, man allerede burde have installeret på sin computer.
 
-    :::
+   :::
 
 3. Find ud af, hvor DNS-indstillingerne er placeret i routerens admin-konsol. Erstat de aktuelle DNS-adresser med flg.:
     - IPv4: `94.140.14.49` and `94.140.14.59`
@@ -28,5 +28,5 @@ Her er nogle generelle vejledninger til opsætning af Private AdGuard DNS på ro
 
 5. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)

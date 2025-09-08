@@ -28,7 +28,7 @@ Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über ei
 3. Gehen Sie zu _DNS-Serveradressen verwenden_.
 4. Öffnen Sie _Einfache DNS-Serveradressen_ und verbinden Sie die verknüpfte IP.
 
-    ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamisches DNS: Warum es nützlich ist
 
@@ -52,7 +52,7 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
     - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
     - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
 
-    ![DDNS-Unterstützung \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS-Unterstützung \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registrieren Sie Ihre Domain bei einem beliebten Service wie [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) oder einem anderen DDNS-Anbieter Ihrer Wahl.
 
@@ -62,7 +62,7 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
 5. Geben Sie die Domain ein, die Sie zuvor registriert haben, und klicken Sie auf _DDNS konfigurieren_.
 
-    ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -91,14 +91,14 @@ Unter macOS und Linux ist es am einfachsten, `cron` zu verwenden:
     - Führen Sie im Terminal `crontab -e` aus.
 2. Fügen Sie eine Aufgabe hinzu:
     - Fügen Sie die folgende Zeile ein:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - Diese Aufgabe wird alle 5 Minuten ausgeführt
 3. Speichern Sie crontab.
 
 :::note Wichtig
 
-- Stellen Sie sicher, dass `curl` auf macOS und Linux installiert ist.
-- Denken Sie daran, die Adresse aus den Einstellungen zu kopieren und `ServerID` und `UniqueKey` zu ersetzen.
-- Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Aufgabenplaner oder cron verwenden.
+ - Stellen Sie sicher, dass `curl` auf macOS und Linux installiert ist.
+ - Denken Sie daran, die Adresse aus den Einstellungen zu kopieren und `ServerID` und `UniqueKey` zu ersetzen.
+ - Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Aufgabenplaner oder cron verwenden.
 
 :::

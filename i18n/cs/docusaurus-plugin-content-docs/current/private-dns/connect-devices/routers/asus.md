@@ -22,7 +22,7 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
     - `94.140.14.49` a `94.140.14.59`
 9. Pro port _TLS_ zadejte 853.
 10. Do pole _Název hostitele TLS_ zadejte adresu Soukromého DNS AdGuard:
-    - `{Your_Device_ID}.d.adguard-dns.com`
+     - `{Your_Device_ID}.d.adguard-dns.com`
 11. Přejděte na konec stránky a klikněte na tlačítko _Použít_.
 
 ## Použijte panel správce routeru

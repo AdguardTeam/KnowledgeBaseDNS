@@ -32,5 +32,5 @@ Opsæt spillekonsollen til at bruge en offentlig AdGuard DNS-server eller opsæt
 
 Det vil være at foretrække at bruge en linket IP (eller en dedikeret IP, hvis man har et Team-abonnement):
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

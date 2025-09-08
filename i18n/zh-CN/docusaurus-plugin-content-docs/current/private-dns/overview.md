@@ -23,7 +23,7 @@ sidebar_position: 1
 
 今天，用户可以把任何东西连接到互联网上: 电视、冰箱、智能灯泡或扬声器。 但除了这些不可否认的便利之外，用户还会面临追踪器和广告。 在这种情况下，一个简单的基于浏览器的广告拦截器无法保护用户，但用 AdGuard DNS，用户可以设置流量过滤，内容和跟踪器拦截，享受一个系统范围的保护体验。
 
-长久以来，AdGuard 产品线仅包括[公共 AdGuard DNS](../public-dns/overview.md) 和 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)。 这些解决方案对一些用户来说很好，但对另一些用户来说，公共 AdGuard DNS 缺乏配置的灵活性，而 AdGuard Home 则缺乏简单性。 That’s where private AdGuard DNS comes into play. 它拥有两个优点：它提供可定制性、控制和信息统计，所有这些都可以通过一个简单已用的仪表盘实现。
+长久以来，AdGuard 产品线仅包括[公共 AdGuard DNS](../public-dns/overview.md) 和 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)。 这些解决方案对一些用户来说很好，但对另一些用户来说，公共 AdGuard DNS 缺乏配置的灵活性，而 AdGuard Home 则缺乏简单性。 这就是私人 AdGuard DNS 发挥作用的地方。 它拥有两个优点：它提供可定制性、控制和信息统计，所有这些都可以通过一个简单已用的仪表盘实现。
 
 ### 公共 AdGuard DNS 和私有 AdGuard DNS 的区别
 
@@ -199,7 +199,7 @@ AdGuard DNS 非常灵活，可设置在各种设备上，包括平板电脑、PC
 
 ### 服务器和设置
 
-This section explains what a server is in AdGuard DNS and what settings are available. 这些设置让用户自定义 AdGuard DNS 对已拦截域名的响应方式，并管理您的 DNS 服务器的访问权限。
+本节解释在 AdGuard DNS 中 「服务器」 的定义以及可用的设置。 这些设置让用户自定义 AdGuard DNS 对已拦截域名的响应方式，并管理您的 DNS 服务器的访问权限。
 
 [服务器和设置](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -215,8 +215,8 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 
 [统计数字与查询日志](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### 自定义域名
 
-AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS 企业版和团队版订阅用户可以使用自己的域名（如 `dns.example.com`），而不是默认的 `d.adguard-dns.com`。 此设置通过确保与企业安全政策的无缝集成，同时保留 AdGuard DNS 提供的完整阻止广告和隐私保护功能。
 
-[Custom domains](/private-dns/custom-domains.md)
+[自定义域名](/private-dns/custom-domains.md)

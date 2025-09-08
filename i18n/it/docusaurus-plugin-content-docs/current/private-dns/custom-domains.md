@@ -1,9 +1,9 @@
 ---
-title: Custom domains
+title: Domini personali
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+Gli abbonati AdGuard DNS possono approntare i propri domini (come `dns.example.com`) invece del dominio predefinito `d.adguard-dns.com`. Questa funzione è pensata per aiutare le aziende ad allineare la protezione DNS con la propria infrastruttura, assicurando un'integrazione ininterrotta con le politiche di sicurezza aziendale, mantenendo tutte le funzioni di blocco delle inserzioni e riservatezza offerte da AdGuard DNS.
 
 :::note
 
@@ -17,15 +17,15 @@ To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_A
 
 1. Choose the protocol. Here, you have two options:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - Add DoH domain (for DNS-over-HTTPS)
+   - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
 2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
 3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

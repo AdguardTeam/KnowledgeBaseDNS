@@ -28,7 +28,7 @@ De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat
 3. Ga naar _DNS-serveradressen gebruiken_.
 4. Open _Gewone DNS-serveradressen_ en verbind het gekoppelde IP-adres.
 
-    ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamische DNS: waarom het nuttig is
 
@@ -52,7 +52,7 @@ This way, you won’t have to manually update the associated IP address each tim
     - Locate the DDNS or the _Dynamic DNS_ section
     - Navigate to it and verify that the settings are indeed supported. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS-ondersteund \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS-ondersteund \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Register your domain with a popular service like [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), or any other DDNS provider you prefer.
 
@@ -62,7 +62,7 @@ This way, you won’t have to manually update the associated IP address each tim
 
 5. Input the domain you registered earlier and click _Configure DDNS_.
 
-    ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![Configure DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -91,14 +91,14 @@ On macOS and Linux, the easiest way is to use `cron`:
     - In the terminal, run `crontab -e`.
 2. Add a task:
     - Insert the following line:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - This job will run every 5 minutes
 3. Save crontab.
 
 :::note Important
 
-- Make sure you have `curl` installed on macOS and Linux.
-- Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
-- If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
+ - Make sure you have `curl` installed on macOS and Linux.
+ - Remember to copy the address from the settings and replace the `ServerID` and `UniqueKey`.
+ - If more complex logic or processing of query results is required, consider using scripts (e.g. Bash, Python) in conjunction with a task scheduler or cron.
 
 :::

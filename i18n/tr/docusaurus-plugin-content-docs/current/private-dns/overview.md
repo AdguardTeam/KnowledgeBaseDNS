@@ -215,8 +215,8 @@ Bu bölümde, AdGuard DNS'in işlevselliğini ince ayar yapmanıza olanak tanıy
 
 [İstatistik ve Sorgu günlüğü](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### Özel alan adları
 
-AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS Kurumsal ve Takım aboneleri varsayılan `d.adguard-dns.com` yerine kendi alan adlarını (örneğin `dns.example.com`) kullanabilirler. Bu ayar, AdGuard DNS tarafından sağlanan tam reklam engelleme ve gizlilik özelliklerini korurken kurumsal güvenlik politikalarıyla sorunsuz entegrasyon sağlar.
 
-[Custom domains](/private-dns/custom-domains.md)
+[Özel alan adları](/private-dns/custom-domains.md)
