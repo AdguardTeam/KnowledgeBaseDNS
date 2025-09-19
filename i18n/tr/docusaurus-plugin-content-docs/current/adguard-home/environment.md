@@ -1,12 +1,12 @@
 ---
-title: Environment variables
+title: Çevre değişkenleri
 sidebar_position: 5
 ---
 
-This page lists the supported environment variables and their descriptions.
+Bu sayfa desteklenen ortam değişkenlerini ve açıklamalarını listeler.
 
 ## `ADGUARD_HOME_DEFAULT_WEB_PORT` {#ADGUARD_HOME_DEFAULT_WEB_PORT}
 
-Sets the suggested default HTTP port displayed in the installation wizard.
+Kurulum sihirbazında görüntülenen önerilen varsayılan HTTP bağlantı noktasını ayarlar.
 
-**Default:** `80`.
+**Varsayılan:** `80`.

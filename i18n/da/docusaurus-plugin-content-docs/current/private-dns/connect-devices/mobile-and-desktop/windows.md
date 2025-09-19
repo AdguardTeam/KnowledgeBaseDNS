@@ -72,8 +72,8 @@ Kun tilgængelig på Windows 11.
 3. Skift DNS-indstillinger til _Manuel_.
 4. Slå IPv4-knappen til _Til_.
 5. Angiv flg. DNS-serveradresser:
-    - Foretrukken DNS: `94.140.14.49`
-    - Alternativ DNS: `94.140.14.59`
+   - Foretrukken DNS: `94.140.14.49`
+   - Alternativ DNS: `94.140.14.59`
 6. Slå _DNS over HTTPS-skabelon_ til _Til (manuel skabelon)_ og angiv den personlige DNS-adresse. Man kan finde den i kontrolpanelet under _Serverindstillinger_ → _Enheder_ → _Enhedsindstillinger_ → DNS-over-HTTPS.
 7. Klik på _Gem_. Det var det – enheden er nu forbundet til AdGuard DNS!
    ![Gem DNS-indstillinger \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
@@ -88,5 +88,5 @@ Flere detaljer kan findes i [forskellig artikel](/dns-client/overview/).
 
 Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
- - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

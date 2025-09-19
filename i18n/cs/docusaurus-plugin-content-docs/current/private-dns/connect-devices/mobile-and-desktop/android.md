@@ -75,5 +75,5 @@ Server DNS můžete nakonfigurovat v nastavení zařízení. Upozorňujeme, že 
 
 Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy.
 
- - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -32,18 +32,18 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 3. Gå til _IPv4_.
 4. Indstil _Automatisk (DHCP)_ til _Manuel_.
 5. Skift de listede DNS-adresser til flg.:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. Klik på _Anvend_.
 7. Gå til _IPv6_.
 8. Indstil _Automatisk_ til _Manuel_.
 9. Skift de listede DNS-adresser til flg.:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klik på _Anvend_.
 11. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
-     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Opsæt manuelt på Debian (linket IP eller dedikeret IP kræves)
 
@@ -52,8 +52,8 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 3. Angiv `admin`-adgangskoden.
 4. Skriv på kommandolinjen: `nano /etc/resolv.conf`.
 5. Erstat de viste DNS-adresser med flg.:
-    - IPv4: `94.140.14.49 og 94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff og 2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49 og 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff og 2a10:50c0:0:0:0:0:dad:ff`
 6. Tryk på _Ctrl + O_ for at gemme dokumentet.
 7. Tryk på _Retur_.
 8. Tryk på _Ctrl + X_ for at gemme dokumentet.
@@ -61,8 +61,8 @@ Man kan opsætte Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænsef
 10. Tryk på _Retur_.
 11. Luk Terminal.
 12. Link IP-adressen (eller den dedikerede IP, hvis man har et Team-abonnement):
-     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Brug dnsmasq
 
@@ -128,5 +128,5 @@ Færdig! DeviceID skal vises.
 
 Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er:
 
- - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -17,8 +17,8 @@ Chcete-li nakonfigurovat vlastní doménu, přihlaste se do svého ovládacího 
 
 1. Výběr protokolu. Zde máte dvě možnosti:
 
-    - Přidat doménu DNS-over-HTTPS (pro DNS-over-HTTPS)
-    - Přidat doménu DoT/DoQ (pro DNS-over-TLS nebo DNS-over-QUIC)
+   - Přidat doménu DNS-over-HTTPS (pro DNS-over-HTTPS)
+   - Přidat doménu DoT/DoQ (pro DNS-over-TLS nebo DNS-over-QUIC)
 
    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 

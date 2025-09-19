@@ -72,8 +72,8 @@ Alleen beschikbaar op Windows 11.
 3. Wijzig de DNS-instellingen naar _Handmatig_.
 4. Zet de IPv4-schakelaar op _Aan_.
 5. Voer de volgende DNS-serveradressen in:
-    - Voorkeur DNS: '94.140.14.49'
-    - Alternatieve DNS: '94.140.14.59'
+   - Voorkeur DNS: '94.140.14.49'
+   - Alternatieve DNS: '94.140.14.59'
 6. Zet _DNS-over-HTTPS-sjabloon_ op _Aan (handmatig sjabloon)_ en voer je persoonlijke DNS-adres in. Je kunt het vinden in het Dashboard onder _Serverinstellingen_ → _Apparaten_ → _Apparaatinstellingen_ → DNS-over-HTTPS.
 7. Klik op _Opslaan_. Dat is alles - je apparaat is nu verbonden met AdGuard DNS!
    ![DNS-instellingen opslaan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
@@ -88,5 +88,5 @@ More details can be found in [different article](/dns-client/overview/).
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs.
 
- - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

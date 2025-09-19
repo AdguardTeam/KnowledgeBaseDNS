@@ -19,10 +19,10 @@ Falls notwendig: Konfigurieren Sie DNS-over-TLS auf ASUS, installieren Sie die [
 6. Ändern Sie das DNS-Datenschutzprotokoll in „DNS-over-TLS (DoT)“.
 7. Stellen Sie sicher, dass das _DNS-over-TLS-Profil_ auf _Streng_ eingestellt ist.
 8. Blättern Sie nach unten zum Abschnitt _DNS-over-TLS-Serverliste_. Geben Sie im Feld _Adresse_ eine der folgenden Adressen ein:
-    - `94.140.14.49` und `94.140.14.59`
+   - `94.140.14.49` und `94.140.14.59`
 9. Geben Sie als _TLS-Port_ 853 ein.
 10. Geben Sie im Feld _TLS-Hostname_ die Private AdGuard DNS-Serveradresse ein:
-     - `{Your_Device_ID}.d.adguard-dns.com`
+    - `{Your_Device_ID}.d.adguard-dns.com`
 11. Blättern Sie bis zum Ende der Seite und klicken Sie auf _Übernehmen_.
 
 ## Administrationsoberfläche Ihres Routers verwenden
@@ -33,9 +33,9 @@ Falls notwendig: Konfigurieren Sie DNS-over-TLS auf ASUS, installieren Sie die [
 4. Wählen Sie _WAN_ oder _Internet_.
 5. Öffnen Sie _DNS-Einstellungen_ oder _DNS_.
 6. Wählen Sie _Manuelle Einstellungen_. Wählen Sie _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
-    - IPv4: `94.140.14.49` und `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` und `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 7. Speichern Sie die Einstellungen.
 8. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
-    - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

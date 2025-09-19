@@ -24,8 +24,8 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 7. Pro položku _Název hostitele DHCP_ vyberte možnost _Neurčovat_.
 8. Pro _Nastavení DNS_ vyberte _Ručně_.
 9. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 10. Pokračujte výběrem možnosti _Další_.
 11. Na obrazovce _Nastavení MTU_ vyberte _Automaticky_.
 12. Na obrazovce _Proxy server_ vyberte _Nepoužívat_.
@@ -43,8 +43,8 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 7. Pro položku _Název hostitele DHCP_ vyberte možnost _Neurčovat_.
 8. Pro _Nastavení DNS_ vyberte _Ručně_.
 9. Do pole _DNS server_ zadejte jednu z následujících adres DNS serveru:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 10. Pokračujte výběrem možnosti _Další_.
 11. Na obrazovce _Nastavení MTU_ vyberte _Automaticky_.
 12. Na obrazovce _Proxy server_ vyberte _Nepoužívat_.
@@ -53,5 +53,5 @@ Nakonfigurujte herní konzoli tak, aby používala veřejný server AdGuard DNS,
 
 Bylo by vhodnější použít propojenou IP (nebo vyhrazenou IP, pokud máte předplatné Team):
 
- - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
