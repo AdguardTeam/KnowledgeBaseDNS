@@ -8,9 +8,9 @@ sidebar_position: 2
 ## 使用路由器管理面板
 
 1. 打开路由器的首选项。 通常可以通过浏览器访问它们。 根据路由器型号，尝试输入以下地址之一：
-    - Linksys 和 Asus 路由器通常使用的地址：[http://192.168.1.1](http://192.168.1.1/)
-    - Netgear 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/) 或 [http://192.168.1.1](http://192.168.1.1/)，D-Link 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/)
-    - Ubiquiti 路由器通常使用的地址：[http://unifi.ubnt.com](http://unifi.ubnt.com/)
+   - Linksys 和 Asus 路由器通常使用的地址：[http://192.168.1.1](http://192.168.1.1/)
+   - Netgear 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/) 或 [http://192.168.1.1](http://192.168.1.1/)，D-Link 路由器通常使用的地址：[http://192.168.0.1](http://192.168.0.1/)
+   - Ubiquiti 路由器通常使用的地址：[http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
 2. Enter the router’s password.
 
@@ -21,12 +21,12 @@ sidebar_position: 2
    :::
 
 3. Find where DNS settings are located in the router’s admin console. Change the listed DNS addresses to the following addresses:
-    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
-    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
+   - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 
 4. 请保存设置。
 
 5. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

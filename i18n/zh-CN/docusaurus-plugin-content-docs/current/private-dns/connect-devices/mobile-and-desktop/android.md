@@ -75,5 +75,5 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
 
 如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
 
- - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)
