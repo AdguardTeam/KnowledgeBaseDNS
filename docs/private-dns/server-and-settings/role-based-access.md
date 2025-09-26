@@ -33,4 +33,3 @@ DNS accounts support three access levels. Ownership is fixed at registration, wh
 2. In the *Organization* section, open [*Members*](https://adguard-dns.io/dashboard/account/members).
 3. Click *Add member*, enter your colleague’s email address, and select the access type — admin or viewer.
 4. Wait until they accept the invitation, and you’re ready to collaborate!
-
