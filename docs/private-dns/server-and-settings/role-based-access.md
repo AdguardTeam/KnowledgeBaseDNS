@@ -3,7 +3,7 @@ title: Role-based access
 sidebar_position: 5
 ---
 
-With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member signs in individually, ensuring a secure and efficient workflow in collaborative environments.
+With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member logs in individually, ensuring a secure and efficient workflow in collaborative environments.
 
 :::note
 
