@@ -1414,6 +1414,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 
 
+
 ### DNSGuard
 
 [DNSGuard](https://dnsguard.pub) blocks ads, tracking, and malware and has a strict no-logging policy.
