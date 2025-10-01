@@ -20,11 +20,11 @@ Nyní můžete zařízení automaticky připojit k serveru vytvořením speciál
 
 ### Příklady adres automatického připojení
 
- - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `Android` s protokolem `DNS-over-TLS` s názvem `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `Android` s protokolem `DNS-over-TLS` s názvem `AdGuard Test Device`
 
- - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — automaticky vytvoří zařízení `Windows` s protokolem `DNS-over-HTTPS` s názvem `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — automaticky vytvoří zařízení `Windows` s protokolem `DNS-over-HTTPS` s názvem `John Doe`
 
- - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `iOS` s protokolem `DNS-over-QUIC` s názvem `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `iOS` s protokolem `DNS-over-QUIC` s názvem `Mary Sue`
 
 ### Konvence pojmenování
 
@@ -38,15 +38,15 @@ Při ručním vytváření zařízení mějte na paměti, že existují omezení
 
 **Typ zařízení**: použijte následující zkratky:
 
- - Windows — `win`
- - macOS — `mac`
- - Android — `adr`
- - iOS — `ios`
- - Linux — `lnx`
- - Router — `rtr`
- - Chytrá TV — `stv`
- - Herní konzole — `gam`
- - Ostatní — `otr`
+- Windows — `win`
+- macOS — `mac`
+- Android — `adr`
+- iOS — `ios`
+- Linux — `lnx`
+- Router — `rtr`
+- Chytrá TV — `stv`
+- Herní konzole — `gam`
+- Ostatní — `otr`
 
 ## Generátor odkazů
 

@@ -20,11 +20,11 @@ sidebar_position: 5
 
 ### 自动连接地址示例
 
- - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-TLS` 协议的 `Android` 设备，名称为 `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-TLS` 协议的 `Android` 设备，名称为 `AdGuard Test Device`
 
- - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` —— 这将自动创建一个使用 `DNS-over-HTTPS` 协议的 `Windows` 设备，名称为 `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` —— 这将自动创建一个使用 `DNS-over-HTTPS` 协议的 `Windows` 设备，名称为 `John Doe`
 
- - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-Quic` 协议的 `iOS` 设备，名称为 `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-Quic` 协议的 `iOS` 设备，名称为 `Mary Sue`
 
 ### 命名设备
 
@@ -38,15 +38,15 @@ sidebar_position: 5
 
 **设备类型**：请使用以下缩写：
 
- - Windows：`win`
- - macOS：`mac`
- - Android：`adr`
- - iOS：`ios`
- - Linux：`lnx`
- - 路由器：`rtr`
- - 智能电视：`stv`
- - 游戏机：`gam`
- - 其他：`otr`
+- Windows：`win`
+- macOS：`mac`
+- Android：`adr`
+- iOS：`ios`
+- Linux：`lnx`
+- 路由器：`rtr`
+- 智能电视：`stv`
+- 游戏机：`gam`
+- 其他：`otr`
 
 ## 链接生成器
 

@@ -9,7 +9,7 @@ With the release of AdGuard DNS v2.10, AdGuard has become the first public DNS r
 
 When a request to an advertising or tracking domain is blocked, the user may see blank spaces on a website or may not even notice that DNS filtering has occurred. Ancak bir sitenin tamamı DNS düzeyinde engellendiğinde, kullanıcı sayfaya erişim tamamen imkansız hâle gelecektir. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+!["Bu siteye ulaşılamıyor" hatası](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
 Such errors don’t explain what happened and why. Bu durum, kullanıcıların bir siteye neden erişilemediği konusunda kafalarının karışmasına ve genellikle internet bağlantılarının veya DNS çözümleyicilerinin bozuk olduğunu düşünmelerine neden olur.
 
