@@ -48,9 +48,9 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
 
 1. Primeiro, você precisa verificar se o DDNS é compatível com as configurações do seu roteador:
 
-    - Vá para _Configurações do roteador_ → _Rede_
-    - Localize a seção DDNS ou _DNS Dinâmico_
-    - Navegue até ele e verifique se as configurações são realmente compatíveis. _This is just an example of what it may look like, the settings may vary depending on your router_
+   - Vá para _Configurações do roteador_ → _Rede_
+   - Localize a seção DDNS ou _DNS Dinâmico_
+   - Navegue até ele e verifique se as configurações são realmente compatíveis. _This is just an example of what it may look like, the settings may vary depending on your router_
 
    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
@@ -73,14 +73,14 @@ All done, you’ve successfully set up DDNS!
 A maneira mais fácil é usar o Task Scheduler:
 
 1. Crie uma tarefa:
-    - Abra o Task Scheduler.
-    - Crie uma nova tarefa.
-    - Defina o gatilho para executar a cada 5 minutos.
-    - Selecione _Executar Programa_ como a ação.
+   - Abra o Task Scheduler.
+   - Crie uma nova tarefa.
+   - Defina o gatilho para executar a cada 5 minutos.
+   - Selecione _Executar Programa_ como a ação.
 2. Selecione um programa:
-    - In the _Program or Script_ field, type `powershell`
-    - No campo _Adicionar Argumentos_, digite:
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - In the _Program or Script_ field, type `powershell`
+   - No campo _Adicionar Argumentos_, digite:
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Salve a tarefa.
 
 ### No macOS e Linux
@@ -88,17 +88,17 @@ A maneira mais fácil é usar o Task Scheduler:
 No macOS e Linux, a maneira mais fácil é usar `cron`:
 
 1. Abra o crontab:
-    - No terminal, execute `crontab -e`.
+   - No terminal, execute `crontab -e`.
 2. Adicione uma tarefa:
-    - Insira a seguinte linha:
-       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Este trabalho será executado a cada 5 minutos
+   - Insira a seguinte linha:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Este trabalho será executado a cada 5 minutos
 3. Salve o crontab.
 
 :::note Importante
 
- - Certifique-se de ter `curl` instalado no macOS e Linux.
- - Lembre-se de copiar o endereço das configurações e substituir o `ServerID` e `UniqueKey`.
- - Se for necessária uma lógica mais complexa ou processamento dos resultados da consulta, considere usar scripts (por exemplo, Bash, Python) em conjunto com um agendador de tarefas ou cron.
+- Certifique-se de ter `curl` instalado no macOS e Linux.
+- Lembre-se de copiar o endereço das configurações e substituir o `ServerID` e `UniqueKey`.
+- Se for necessária uma lógica mais complexa ou processamento dos resultados da consulta, considere usar scripts (por exemplo, Bash, Python) em conjunto com um agendador de tarefas ou cron.
 
 :::

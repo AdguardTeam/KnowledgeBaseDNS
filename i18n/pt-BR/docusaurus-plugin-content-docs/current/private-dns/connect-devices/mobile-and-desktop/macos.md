@@ -77,5 +77,5 @@ Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
 
 Se você preferir não usar software extra para configuração de DNS, pode optar por DNS não criptografado. Você tem duas opções: usar IPs vinculados ou IPs dedicados.
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

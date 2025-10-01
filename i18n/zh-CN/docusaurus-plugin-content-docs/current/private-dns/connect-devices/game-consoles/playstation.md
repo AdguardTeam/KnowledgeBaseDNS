@@ -24,8 +24,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. 在「DNS 服务器」字段中，输入以下其中一个 DNS 服务器地址：
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 10. Select _Next_ to continue.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.
@@ -43,8 +43,8 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. 在「DNS 服务器」字段中，输入以下其中一个 DNS 服务器地址：
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 10. Select _Next_ to continue.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.
@@ -53,5 +53,5 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

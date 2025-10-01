@@ -14,13 +14,13 @@ First you need to add your router to the AdGuard DNS interface:
 
 Below are instructions for different router models. Please select the one you need:
 
- - [Universal instructions](/private-dns/connect-devices/routers/universal.md)
- - [Asus](/private-dns/connect-devices/routers/asus.md)
- - [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
- - [Keenetic](/private-dns/connect-devices/routers/keenetic.md)
- - [MikroTik](/private-dns/connect-devices/routers/mikrotik.md)
- - [OpenWRT](/private-dns/connect-devices/routers/openwrt.md)
- - [OpenSense](/private-dns/connect-devices/routers/opnsense.md)
- - [Synology NAS](/private-dns/connect-devices/routers/synology-nas.md)
- - [Unifi](/private-dns/connect-devices/routers/unifi.md)
- - [Xiaomi](/private-dns/connect-devices/routers/xiaomi.md)
+- [Universal instructions](/private-dns/connect-devices/routers/universal.md)
+- [Asus](/private-dns/connect-devices/routers/asus.md)
+- [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
+- [Keenetic](/private-dns/connect-devices/routers/keenetic.md)
+- [MikroTik](/private-dns/connect-devices/routers/mikrotik.md)
+- [OpenWRT](/private-dns/connect-devices/routers/openwrt.md)
+- [OpenSense](/private-dns/connect-devices/routers/opnsense.md)
+- [Synology NAS](/private-dns/connect-devices/routers/synology-nas.md)
+- [Unifi](/private-dns/connect-devices/routers/unifi.md)
+- [Xiaomi](/private-dns/connect-devices/routers/xiaomi.md)

@@ -3,24 +3,24 @@ title: UniFi
 sidebar_position: 10
 ---
 
-The UiFi router, commonly known as the Ubiquiti UniFi series, has a number of advantages that make it particularly suitable for home, business, and enterprise environments.
+Маршрутизатор UiFi, широко известный как серия Ubiquiti UniFi, имеет ряд преимуществ, которые делают его оптимальным для домашней, бизнес- и корпоративной среды.
 
-The newer UniFi firmware recently added support for DNS-over-HTTPS. UniFi refers to this feature as _Encrypted DNS_.
+В новой прошивке UniFi недавно появилась поддержка DNS-over-HTTPS. В UniFi эта функция называется _Зашифрованный DNS_.
 
 ## Настройте DNS-over-HTTPS
 
-Follow these instructions if your UniFi router supports DNS-over-HTTPS.
+Следуйте этой инструкции, если ваш роутер UniFi поддерживает DNS-over-HTTPS.
 
-UiFi routers use a DNS Stamp URL to specify the DNS-over-HTTPS URL. This URL must be calculated using your private DNS-over-HTTPS URL.
+Роутеры UiFi используют URL DNS Stamp для указания URL DNS-over-HTTPS. Этот URL должен быть вычислен с использованием вашего частного DNS-over-HTTPS URL.
 
-Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
+Получите DNS-over-HTTPS URL, который используется для вычисления URL DNS Stamp.
 
-1. Go to the AdGuard DNS Private Dashboard.
-2. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server settings:
-   - Device type: 'Router'
-   - Device brand: 'Unifi'
-   - Device name: Use your Unifi device name
-3. Click _Next_.
+1. Перейдите в Панель управления AdGuard DNS.
+2. Перейдите к разделу _Зашифрованный DNS_ → _Пользовательский_ и введите следующие настройки DNS-сервера:
+   - Тип устройства: «Маршрутизатор»
+   - Марка устройства: «Unifi»
+   - Имя устройства: используйте имя вашего устройства Unifi
+3. Нажмите _Далее_.
 4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
 
 Generate a DNS stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) and set it.
@@ -63,4 +63,4 @@ Use these instructions if your UniFi router does not support the DNS-over-HTTPS 
 10. Сохраните настройки.
 11. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
     - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+    - [Привязанные IP](private-dns/connect-devices/other-options/linked-ip.md)

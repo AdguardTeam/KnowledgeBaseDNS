@@ -9,7 +9,7 @@ When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associa
 
 ![Cihaz bağlı değil](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
+Bu sorunu çözmek için cihazınızın ayarlarında AdGuard sitelerin IP adresinizi görmesine izin vermeniz gerekir.
 
 - iPhone veya iPad'de:
 

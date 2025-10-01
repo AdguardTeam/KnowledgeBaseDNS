@@ -17,8 +17,8 @@ For at opsætte et tilpasset domæne, log ind på AdGuard DNS-kontrolpanelet og 
 
 1. Vælg protokol. Her findes to muligheder:
 
-    - Tilføj DoH-domæne (til DNS-over-HTTPS)
-    - Tilføj DoT-/DoQ-domæne (til DNS-over-TLS/DNS-over-QUIC)
+   - Tilføj DoH-domæne (til DNS-over-HTTPS)
+   - Tilføj DoT-/DoQ-domæne (til DNS-over-TLS/DNS-over-QUIC)
 
    ![Vælg protokol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 

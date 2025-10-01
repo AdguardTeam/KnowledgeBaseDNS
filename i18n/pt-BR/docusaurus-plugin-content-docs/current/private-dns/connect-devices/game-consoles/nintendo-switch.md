@@ -19,11 +19,11 @@ Configure o seu console de jogos para usar um servidor público AdGuard DNS ou c
 4. Clique em Alterar configurações para a rede Wi-Fi selecionada.
 5. Role para baixo e selecione Configurações de DNS.
 6. No campo _Servidor DNS_, insira um dos seguintes endereços de servidor DNS:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Salve suas configurações de DNS.
 
 Seria preferível usar o IP vinculado (ou o IP dedicado se você tiver uma assinatura Equipe):
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

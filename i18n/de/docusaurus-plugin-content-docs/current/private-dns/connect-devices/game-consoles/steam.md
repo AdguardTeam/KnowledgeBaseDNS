@@ -19,11 +19,11 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS
 4. Select IPv4 or IPv6, depending on the type of network you’re using.
 5. Wählen Sie _Nur automatische (DHCP) Adressen_ oder _Automatisch (DHCP)_.
 6. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Speichern Sie die Änderungen.
 
 Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
- - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

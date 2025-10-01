@@ -59,7 +59,7 @@ sidebar_position: 3
 
 ## Использовать профиль конфигурации
 
-An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
+Профиль устройства iOS, также называемый «профиль конфигурации» Apple, — это подписанный сертификатом XML-файл, который можно установить вручную на устройстве iOS или развернуть с помощью решения MDM. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
 
 :::note Важно
 

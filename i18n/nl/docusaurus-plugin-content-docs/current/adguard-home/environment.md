@@ -1,12 +1,12 @@
 ---
-title: Environment variables
+title: Omgevingsvariabelen
 sidebar_position: 5
 ---
 
-This page lists the supported environment variables and their descriptions.
+Deze pagina bevat een lijst van de ondersteunde omgevingsvariabelen en hun beschrijvingen.
 
 ## `ADGUARD_HOME_DEFAULT_WEB_PORT` {#ADGUARD_HOME_DEFAULT_WEB_PORT}
 
-Sets the suggested default HTTP port displayed in the installation wizard.
+Stelt de voorgestelde standaard HTTP-poort in die wordt weergegeven in de installatie wizard.
 
-**Default:** `80`.
+**Standaard:** `80`.
