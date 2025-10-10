@@ -1,31 +1,31 @@
 ---
-title: Custom domains
+title: Özel alan adları
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. Bu özellik, AdGuard DNS tarafından sağlanan tam reklam engelleme ve gizlilik özelliklerini korurken kurumsal güvenlik politikalarıyla sorunsuz entegrasyon sağlayarak işletmelerin DNS korumasını altyapılarıyla uyumlu hâle getirmelerine yardımcı olmayı amaçlamaktadır.
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+Özel alan adları **Kurumsal** ve **Takım** planlarının kullanıcıları tarafından kullanılabilir.
 
 :::
 
 ## How to set up a custom domain
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+Özel bir alan adı yapılandırmak için AdGuard DNS panonuza giriş yapın ve [_Hesap ayarları_](https://adguard-dns.io/en/dashboard/account) öğesine gidin. _Gelişmiş ayarlar_ öğesine aşağı kaydırın ve _Özel alan adları_ öğesini seçin. Ardından, üç ana adımdan geçmeniz gerekir.
 
-1. Choose the protocol. Here, you have two options:
+1. Protokolü seçin. Burada iki seçeneğiniz var:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - DoH alan adı ekleyin (DNS-over-HTTPS için)
+   - DoT/DoQ alan adı ekleyin (DNS-over-TLS veya DNS-over-QUIC için)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
 2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![CNAME kaydı \*mobil](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Bir sertifika oluşturun. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Doğrulandıktan sonra, özel alan adınız panoda kullanıma hazır olarak görünür.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Özel alan adı listesi \*mobil](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

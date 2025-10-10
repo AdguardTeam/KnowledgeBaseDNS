@@ -26,8 +26,8 @@ sidebar_position: 2
 5. Set _Automatic_ to _Manual_.
 6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
 7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 8. 请保存设置。
 
 最好使用关联的 IP 地址（如果拥有团队版订阅，可以使用专用 IP 地址）：

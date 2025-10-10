@@ -28,5 +28,5 @@ Vejledningen nedenfor forklarer, hvordan man tilslutter en dedikeret IP til enhe
 5. Vælg den server, man ønsker at bruge.
 6. For at tilknytte en dedikeret IPv4 adresse, klik på _Tildel_.
 7. Ønskes en dedikeret IPv6-adresse brugt, klik på _Kopiér_.
-    ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Kopiér og indsæt den valgte dedikerede adresse i enhedens opsætninger.

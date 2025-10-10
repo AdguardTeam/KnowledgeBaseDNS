@@ -53,5 +53,5 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 
 Sería preferible usar IP vinculada (o IP dedicada si tienes una suscripción de Team):
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

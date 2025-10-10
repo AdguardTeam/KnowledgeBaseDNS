@@ -10,7 +10,7 @@ Først skal man tilføje routeren til AdGuard DNS-grænsefladen:
 1. Gå til _Kontrolpanel_ og klik på _Tilslut ny enhed_.
 2. Vælg Router i rullemenuen _Enhedstype_.
 3. Vælg routermærke og navngiv enheden.
-    ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+   ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 Nedenfor er vejledninger til forskellige routermodeller. Vælg den, der er relevant:
 

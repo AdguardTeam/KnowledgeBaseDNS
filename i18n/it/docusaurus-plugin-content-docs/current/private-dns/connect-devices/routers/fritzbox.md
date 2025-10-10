@@ -24,8 +24,8 @@ Usa questa guida se il tuo router FritzBox non supporta la configurazione di DNS
 3. Apri _Internet_ o _Rete domestica_.
 4. Seleziona _DNS_ o _Impostazioni DNS_.
 5. Scegli DNS manuale, poi _Usa questi server DNS_ o _Specificare manualmente il server DNS_, e inserisci i seguenti indirizzi del server DNS:
-    - IPv4: `94.140.14.49` e `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 6. Salva le impostazioni.
 7. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 

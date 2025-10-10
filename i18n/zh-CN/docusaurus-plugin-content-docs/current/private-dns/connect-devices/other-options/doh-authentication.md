@@ -23,6 +23,6 @@ sidebar_position: 4
 4. 按照自己的需求配置身份验证的 DNS-over-HTTPS。
 5. 重新配置设备以在 AdGuard DNS 客户端或 AdGuard 应用程序中使用此服务器。
 6. 为此，复制加密服务器的地址并将其粘贴到 AdGuard 应用程序或 AdGuard DNS 客户端的设置中。
-    ![复制地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+   ![复制地址 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. 用户还可以禁止使用其他协议。
-    ![禁止协议 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+   ![禁止协议 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

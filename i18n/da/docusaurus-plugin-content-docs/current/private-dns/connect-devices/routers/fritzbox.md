@@ -24,8 +24,8 @@ Brug denne vejledning, hvis FritzBox-routeren ikke understøtter opsætning af D
 3. Åbn _Internet_ eller _Hjemmenetværk_.
 4. Vælg _DNS_ eller _DNS-indstillinger_.
 5. Vælg _Manuel DNS_, dernæst _Anvend disse DNS-servere_ eller _Angiv DNS-server manuelt_ og angiv flg. DNS-serveradresser:
-    - IPv4: `94.140.14.49` and `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` and `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 6. Gem indstillingerne.
 7. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 

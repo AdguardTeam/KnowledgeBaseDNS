@@ -19,8 +19,8 @@ Configura la tua console di gioco per utilizzare un server DNS AdGuard pubblico 
 4. In _Impostazioni di rete_, seleziona _Impostazioni Avanzate_.
 5. In _Impostazioni DNS_, seleziona _Manuale_.
 6. Nel campo _Server DNS_, inserisci uno dei seguenti indirizzi del server DNS:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Salva i cambiamenti.
 
 Sarebbe preferibile utilizzare un IP collegato (o un IP dedicato se hai un abbonamento Team):

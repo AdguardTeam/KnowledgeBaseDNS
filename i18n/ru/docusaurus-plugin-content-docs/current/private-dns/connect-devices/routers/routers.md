@@ -10,7 +10,7 @@ toc_max_heading_level: 3
 1. Перейдите в раздел _Панель управления_ и нажмите _Подключить новое устройство_.
 2. В выпадающем меню _Тип устройства_, выберите Роутер.
 3. Выберите бренд роутера и назовите устройство.
-    ![Подключение устройства \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+   ![Подключение устройства \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 Ниже приведены инструкции для различных моделей роутеров. Выберите то, которое вам нужно:
 
