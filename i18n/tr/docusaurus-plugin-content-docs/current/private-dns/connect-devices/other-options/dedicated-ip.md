@@ -28,5 +28,5 @@ Aşağıdaki talimatlar cihaza özel IP'nin nasıl bağlanacağını açıklamak
 5. Kullanmak istediğiniz sunucuyu seçin.
 6. Özel bir IPv4 adresini bağlamak için _Ata_ öğesine tıklayın.
 7. Özel bir IPv6 adresi kullanmak istiyorsanız, _Kopyala_ öğesine tıklayın.
-    ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Seçili özel adresi kopyalayıp cihaz yapılandırmalarına yapıştırın.

@@ -214,3 +214,9 @@ Bu bölümde, AdGuard DNS'in işlevselliğini ince ayar yapmanıza olanak tanıy
 İstatistikler ve Sorgu günlüğü, cihazlarınızın etkinliği hakkında bilgi sağlar. *İstatistikler* sekmesi, Özel AdGuard DNS'inize bağlı cihazlar tarafından yapılan DNS isteklerinin bir özetini görüntülemenizi sağlar. Sorgu günlüğünde, her bir istekle ilgili bilgileri görüntüleyebilir ve ayrıca istekleri duruma, türe, şirkete, cihaza, zamana ve ülkeye göre sıralayabilirsiniz.
 
 [İstatistik ve Sorgu günlüğü](/private-dns/statistics-and-log/statistics.md)
+
+### Özel alan adları
+
+AdGuard DNS Kurumsal ve Takım aboneleri varsayılan `d.adguard-dns.com` yerine kendi alan adlarını (örneğin `dns.example.com`) kullanabilirler. Bu ayar, AdGuard DNS tarafından sağlanan tam reklam engelleme ve gizlilik özelliklerini korurken kurumsal güvenlik politikalarıyla sorunsuz entegrasyon sağlar.
+
+[Özel alan adları](/private-dns/custom-domains.md)

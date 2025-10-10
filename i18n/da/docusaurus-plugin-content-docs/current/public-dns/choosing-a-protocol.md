@@ -21,11 +21,11 @@ Den kan dog være ustabil og medføre i ydelsesproblemer. Når alle datapakker d
 
 ### DNS-over-QUIC (DoQ)
 
-DNS-over-Quic er en DNS-protokol, der bruger QUIC-transportlagsprotokollen til at transmittere DNS-forespørgsler. It solves one of the main problems with the DoH protocol: head-of-line blocking.
+DNS-over-Quic er en DNS-protokol, der bruger QUIC-transportlagsprotokollen til at transmittere DNS-forespørgsler. Den løser et af hovedproblemerne med DoH-protokollen: head-of-line blokering.
 
-Da DoQ bruger QUIC-protokollen til at holde DNS-aktivitet adskilt fra webtrafik, undgår den de timingproblemer, som ses med DoH. Consequently, it doesn’t reveal any traffic patterns. Dette gør det sværere at linke DNS-forespørgslerne til surfingaktiviten, selvom trafikken i sig selv er lettere at opdage.
+Da DoQ bruger QUIC-protokollen til at holde DNS-aktivitet adskilt fra webtrafik, undgår den de timingproblemer, som ses med DoH. Den afslører derfor ingen trafikmønstre. Dette gør det sværere at linke DNS-forespørgslerne til surfingaktiviten, selvom trafikken i sig selv er lettere at opdage.
 
-However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. If you are not ready to deal with that, it might not be the best choice.
+Dog er DoQ stadig en eksperimentel protokol, der kan opleve stabilitetsproblemer eller ISP- og censurmyndighedsblokering. Er man ikke klar til at håndtere dét, er den muligvis ikke det optimale valg.
 
 ![DoH kontra DoQ \*border](https://cdn.adtidy.org/blog/new/gy178dohdoq.jpg)
 

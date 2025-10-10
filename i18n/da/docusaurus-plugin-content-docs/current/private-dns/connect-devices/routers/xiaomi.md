@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi-routere har mange fordele: Et stabilt, stærkt signal, netværkssikkerhed, robust ydeevne og intelligent håndtering. Brugere kan tilslutte op til 64 enheder til et lokalt Wi-Fi netværk.
 
-Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
+Desværre understøtter den ikke krypteret DNS, men den er fantastisk til opsætning af AdGuard DNS via linket IP.
 
 ## Brug routerens håndteringspanel
 
@@ -16,8 +16,8 @@ Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af D
 3. Åbn _Avancerede indstillinger_ eller _Avanceret_, afhængigt af routermodel.
 4. Åbn _Netværk_ eller _Internet_ og find DNS eller DNS-indstillinger.
 5. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
-    - IPv4: `94.140.14.49` and `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` and `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 6. Gem indstillingerne.
 7. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 

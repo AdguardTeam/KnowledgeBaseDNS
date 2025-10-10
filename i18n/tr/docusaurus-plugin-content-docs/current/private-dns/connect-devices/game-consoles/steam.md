@@ -19,8 +19,8 @@ Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapıland�
 4. Select IPv4 or IPv6, depending on the type of network you’re using.
 5. Yalnızca _Otomatik (DHCP)_ adresler veya _Otomatik (DHCP)_ öğesini seçin.
 6. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Değişiklikleri kaydedin.
 
 Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:

@@ -28,5 +28,5 @@ Die nachstehenden Anweisungen erklären, wie Sie eine dedizierte IP mit dem Ger�
 5. Wählen Sie den Server aus, den Sie verwenden möchten.
 6. Um eine dedizierte IPv4-Adresse zu binden, klicken Sie auf _Zuweisen_.
 7. Wenn Sie eine dedizierte IPv6-Adresse verwenden möchten, klicken Sie auf _Kopieren_.
-    ![Adresse kopieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Adresse kopieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Kopieren Sie die ausgewählte dedizierte Adresse und fügen Sie sie in die Gerätekonfigurationen ein.

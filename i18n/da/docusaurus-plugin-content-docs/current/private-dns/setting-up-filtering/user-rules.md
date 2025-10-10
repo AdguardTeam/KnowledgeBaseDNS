@@ -21,10 +21,10 @@ For at opsætte brugerregler:
 
 4. Klik på indstillingen _Brugerregler_.
 
-5. You’ll find several options for adding user rules.
+5. Der findes flere muligheder for at tilføje brugerregler.
 
-    - Den nemmeste måde er at bruge generatoren. For at bruge den, klik på _Tilføj ny regel_ → Angiv navnet på det domæne, man vil blokere eller afblokere → Klik på _Tilføj regel_
-        ![Tilføj regel \*grænse](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - Den avancerede måde er at bruge regel-editoren. Klik på _Åbn editor_ og indtast blokkeringsregler iht. [syntaks](/general/dns-filtering-syntax/)
+   - Den nemmeste måde er at bruge generatoren. For at bruge den, klik på _Tilføj ny regel_ → Angiv navnet på det domæne, man vil blokere eller afblokere → Klik på _Tilføj regel_
+     ![Tilføj regel \*grænse](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Den avancerede måde er at bruge regel-editoren. Klik på _Åbn editor_ og indtast blokkeringsregler iht. [syntaks](/general/dns-filtering-syntax/)
 
 Denne funktion muliggør at [omdirigere en forespørgsel til et andet domæne ved at erstatte indholdet af DNS-forespørgslen](/general/dns-filtering-syntax/#dnsrewrite-modifier).

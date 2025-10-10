@@ -16,8 +16,8 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 3. Yönlendirici modelinize bağlı olarak _Gelişmiş Ayarlar_ veya _Gelişmiş_ öğesini açın.
 4. _Ağ_ veya _İnternet_ öğesini açın ve DNS veya DNS Ayarları öğesini arayın.
 5. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-    - IPv4: `94.140.14.49` ve `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` ve `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 6. Ayarları kaydedin.
 7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 

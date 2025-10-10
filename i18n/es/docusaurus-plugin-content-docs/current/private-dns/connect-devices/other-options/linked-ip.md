@@ -28,7 +28,7 @@ Las siguientes instrucciones explican cómo conectarse al dispositivo a través 
 3. Ve a _Utilizar direcciones de servidor DNS_.
 4. Abre _Direcciones de servidor DNS simple_ y conecta la IP vinculada.
 
-    ![IP vinculada \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![IP vinculada \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## DNS dinámico: por qué es útil
 
@@ -52,7 +52,7 @@ De esta manera, no tendrás que actualizar manualmente la dirección IP asociada
     - Localiza la sección DDNS o _DNS dinámico_
     - Navega hasta él y verifica que la configuración es realmente compatible. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registra tu dominio en un servicio popular como [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), o cualquier otro proveedor de DDNS que prefieras.
 
@@ -62,7 +62,7 @@ De esta manera, no tendrás que actualizar manualmente la dirección IP asociada
 
 5. Ingresa el dominio que registraste anteriormente y haz clic en _Configurar DDNS_.
 
-    ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -91,14 +91,14 @@ En macOS y Linux, la forma más sencilla es usar `cron`:
     - En la terminal, ejecuta `crontab -e`.
 2. Agrega una tarea:
     - Inserta la siguiente línea:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
     - Este trabajo se ejecutará cada 5 minutos
 3. Guarda crontab.
 
 :::note Importante
 
-- Asegúrate de tener `curl` instalado en macOS y Linux.
-- Recuerda copiar la dirección de la configuración y reemplazar `ServerID` y `UniqueKey`.
-- Si se requiere una lógica o procesamiento de resultados de consultas más complejos, considera usar scripts (por ejemplo, Bash, Python) en conjunto con un programador de tareas o cron.
+ - Asegúrate de tener `curl` instalado en macOS y Linux.
+ - Recuerda copiar la dirección de la configuración y reemplazar `ServerID` y `UniqueKey`.
+ - Si se requiere una lógica o procesamiento de resultados de consultas más complejos, considera usar scripts (por ejemplo, Bash, Python) en conjunto con un programador de tareas o cron.
 
 :::

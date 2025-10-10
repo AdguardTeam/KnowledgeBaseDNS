@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS stands for *Domain Name System*, and its purpose is to convert website names into IP addresses. Каждый раз, когда вы заходите на сайт, ваш браузер отправляет запрос на DNS-сервер, чтобы определить IP-адрес сайта. В ответ обычный DNS-резолвер просто возвращает IP-адрес запрошенного домена.
+DNS расшифровывается как *‎cистема доменных имён* (от англ. Domain Name System). Её цель — переводить названия сайтов в IP-адреса. Каждый раз, когда вы заходите на сайт, ваш браузер отправляет запрос на DNS-сервер, чтобы определить IP-адрес сайта. В ответ обычный DNS-резолвер просто возвращает IP-адрес запрошенного домена.
 
 :::note
 
@@ -18,7 +18,7 @@ DNS stands for *Domain Name System*, and its purpose is to convert website names
 
 ![Ваше устройство всегда использует DNS-сервер для получения IP-адресов доменов, к которым обращаются различные приложения, сервисы и т. д.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-Есть и DNS-серверы, которые блокируют сайты на уровне DNS. Как они работают? When your device sends a bad request, be it an ad or a tracker, a DNS server prevents the connection by responding with a non-routable IP address for a blocked domain.
+Есть и DNS-серверы, которые блокируют сайты на уровне DNS. Как они работают? Когда ваше устройство отправляет «плохой» запрос, будь то реклама или трекер, DNS-сервер предотвращает соединение, отвечая немаршрутизируемым IP-адресом заблокированного домена.
 
 ## Зачем использовать DNS для блокировки контента
 

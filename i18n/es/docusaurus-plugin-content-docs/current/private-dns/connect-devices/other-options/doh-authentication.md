@@ -23,6 +23,6 @@ Esta función es compatible con [AdGuard DNS Client](/dns-client/overview.md) as
 4. Configura DNS-over-HTTPS con autenticación como desees.
 5. Reconfigura tu dispositivo para usar este servidor en el Cliente AdGuard DNS o en una de las apps de AdGuard.
 6. Para hacer esto, copia la dirección del servidor encriptado y pégala en la app de AdGuard o en la configuración del Cliente AdGuard DNS.
-    ![Copiar dirección \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+   ![Copiar dirección \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. También puedes denegar el uso de otros protocolos.
-    ![Denegar protocolos \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+   ![Denegar protocolos \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

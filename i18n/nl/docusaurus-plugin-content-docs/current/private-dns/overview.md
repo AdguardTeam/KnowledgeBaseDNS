@@ -214,3 +214,9 @@ In this section we describe a number of settings that allow you to fine-tune the
 Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
 
 [Statistieken en zoeklogboek](/private-dns/statistics-and-log/statistics.md)
+
+### Aangepaste domeinen
+
+AdGuard DNS Zakelijk- en Team-abonnees kunnen hun eigen domeinen (zoals `dns.example.com`) gebruiken in plaats van de standaard `d.adguard-dns.com`. Deze instelling zorgt voor een naadloze integratie met het beveiligingsbeleid van bedrijven, terwijl de volledige advertentieblokkering en privacyfuncties van AdGuard DNS behouden blijven.
+
+[Aangepaste domeinen](/private-dns/custom-domains.md)

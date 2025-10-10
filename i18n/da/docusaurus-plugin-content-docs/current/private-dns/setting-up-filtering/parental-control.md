@@ -5,11 +5,11 @@ sidebar_position: 4
 
 ## Hvad er det
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Man kan bruge denne funktion til at begrænse sine børns adgang til voksenwebsteder, tilpasse søgeforespørgsler, blokere brugen af populære tjenester mv.
 
 ## Sådan opsættes det
 
-Man kan fleksibelt opsætte alle funktioner på sine servere, herunder funktionen Forældrekontrol. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Man kan fleksibelt opsætte alle funktioner på sine servere, herunder funktionen Forældrekontrol. [I artiklen](private-dns/server-and-settings/server-and-settings.md) kan man gøre sig bekendt med, hvad en "server" er i AdGuard DNS og læse, hvordan man opretter forskellige servere med forskellige sæt af indstillinger.
 
 Gå dernæst til indstillingerne for den valgte server og aktivér de ønskede opsætninger.
 
@@ -33,7 +33,7 @@ Fjerner muligheden for at se og skrive kommentarer under videoer og interagere m
 
 ### Blokerede tjenester og websteder
 
-AdGuard DNS blokerer adgang til populære tjenester med ét klik. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS blokerer adgang til populære tjenester med ét klik. Dette er nyttigt, hvis man ikke ønsker, at tilsluttede enheder besøger f.eks. Instagram og YouTube.
 
 ![Blokerede tjenester \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

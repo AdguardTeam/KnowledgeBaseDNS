@@ -19,8 +19,8 @@ Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapıland�
 4. Seçilen Wi-Fi ağı için _Ayarları Değiştir_ öğesine tıklayın.
 5. Aşağı kaydırın ve _DNS Ayarları_ öğesini seçin.
 6. DNS Sunucusu alanına aşağıdaki DNS sunucu adreslerinden birini girin:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. DNS ayarlarınızı kaydedin.
 
 Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:

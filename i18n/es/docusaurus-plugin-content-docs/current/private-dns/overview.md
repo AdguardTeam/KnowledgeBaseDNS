@@ -23,7 +23,7 @@ AdGuard DNS Privado ofrece todas las ventajas de AdGuard DNS Público, incluido 
 
 Hoy en día, puedes conectar cualquier cosa a Internet: televisores, refrigeradores, bombillas inteligentes o altavoces. Pero junto con las innegables comodidades, obtienes rastreadores y anuncios. Un simple bloqueador de anuncios basado en navegador no te protegerá en este caso, pero AdGuard DNS, que puedes configurar para filtrar el tráfico, bloquear contenido y rastreadores, tiene un efecto en todo el sistema.
 
-En el pasado, la línea de producto AdGuard incluía solo [AdGuard DNS público](../public-dns/overview.md) y [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Estas soluciones funcionan bien para algunos usuarios, pero para otros, el DNS público de AdGuard carece de la flexibilidad de configuración, mientras que AdGuard Home carece de simplicidad. That’s where private AdGuard DNS comes into play. Tiene lo mejor de ambos mundos: ofrece personalización, control e información, todo a través de un panel de un dashbord simple y fácil de usar.
+En el pasado, la línea de producto AdGuard incluía solo [AdGuard DNS público](../public-dns/overview.md) y [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome). Estas soluciones funcionan bien para algunos usuarios, pero para otros, el DNS público de AdGuard carece de la flexibilidad de configuración, mientras que AdGuard Home carece de simplicidad. Ahí es donde entra en juego el DNS privado de AdGuard. Tiene lo mejor de ambos mundos: ofrece personalización, control e información, todo a través de un panel de un dashbord simple y fácil de usar.
 
 ### La diferencia entre AdGuard DNS privado y público
 
@@ -199,7 +199,7 @@ AdGuard DNS es muy flexible y se puede configurar en varios dispositivos, inclui
 
 ### Servidor y configuración
 
-This section explains what a server is in AdGuard DNS and what settings are available. Las configuraciones permiten personalizar cómo AdGuard DNS responde a los dominios bloqueados y administrar el acceso a tu servidor DNS.
+Esta sección explica qué es un "servidor" en AdGuard DNS y qué configuraciones están disponibles. Las configuraciones permiten personalizar cómo AdGuard DNS responde a los dominios bloqueados y administrar el acceso a tu servidor DNS.
 
 [Servidor y configuración](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -214,3 +214,9 @@ En esta sección describimos una serie de configuraciones que le permiten ajusta
 Estadísticas y registro de consultas proporcionan información sobre la actividad de tus dispositivos. La pestaña *Estadísticas* te permite ver un resumen de las peticiones DNS realizadas por los dispositivos conectados a tu DNS privado de AdGuard. En el registro de consultas, puedes ver información sobre cada petición y también clasificar las peticiones por estado, tipo, empresa, dispositivo, hora y país.
 
 [Estadísticas y Registro de consultas](/private-dns/statistics-and-log/statistics.md)
+
+### Dominios personalizados
+
+Los suscriptores de AdGuard DNS Enterprise y Equipo pueden usar sus propios dominios (como `dns.example.com`) en lugar del dominio predeterminado `d.adguard-dns.com`. Esta configuración garantiza una integración fluida con las políticas de seguridad corporativas, mientras se mantienen todas las funciones de bloqueo de anuncios y privacidad proporcionadas por AdGuard DNS.
+
+[Dominios personalizados](/private-dns/custom-domains.md)

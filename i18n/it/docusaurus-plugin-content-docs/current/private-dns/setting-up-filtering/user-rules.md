@@ -23,8 +23,8 @@ Per impostare le regole utente:
 
 5. You’ll find several options for adding user rules.
 
-    - Il modo più semplice è utilizzare il generatore. Per utilizzarlo, clicca su _Aggiungi nuova regola_ → Inserisci il nome del dominio che vuoi bloccare o sbloccare → Clicca su _Aggiungi regola_
-        ![Aggiungi regola \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - Il metodo avanzato è utilizzare l'editor delle regole. Clicca su _Apri editor_ e inserisci le regole di blocco secondo la [sintassi](/general/dns-filtering-syntax/)
+   - Il modo più semplice è utilizzare il generatore. Per utilizzarlo, clicca su _Aggiungi nuova regola_ → Inserisci il nome del dominio che vuoi bloccare o sbloccare → Clicca su _Aggiungi regola_
+     ![Aggiungi regola \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Il metodo avanzato è utilizzare l'editor delle regole. Clicca su _Apri editor_ e inserisci le regole di blocco secondo la [sintassi](/general/dns-filtering-syntax/)
 
 Questa funzione consente di [reindirizzare una query a un altro dominio sostituendo il contenuto della query DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

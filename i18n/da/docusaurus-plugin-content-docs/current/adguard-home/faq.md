@@ -13,16 +13,16 @@ Man har højst sandsynligt ikke opsat sin enhed til at bruge AdGuard Home som st
 
 2. Eksekvér `nslookup example.org`. Det vil give et skærmoutput i stil med dette:
 
-  ```none
-  Server: 192.168.0.1
-  Address: 192.168.0.1#53
+   ```none
+   Server: 192.168.0.1
+   Address: 192.168.0.1#53
 
-  Non-authoritative answer:
-  Name: example.org
-  Address: <IPv4>
-  Name: example.org
-  Address: <IPv6>
-  ```
+   Non-authoritative answer:
+   Name: example.org
+   Address: <IPv4>
+   Name: example.org
+   Address: <IPv6>
+   ```
 
 3. Tjek, om 'Server' IP-adressen er den, hvor AdGuard Home kører. Hvis ikke, opsæt da enheden i overensstemmelse hermed. Se [nedenfor](#defaultdns), hvordan dette gøres.
 
@@ -76,23 +76,23 @@ For at fejlfinde på et kompliceret problem kræves nogle gange logning på udf�
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Opsæt AdGuard Home til at skrive logfiler på udførligt (verbose) niveau:
 
-  1. Åbn `AdGuardHome.yaml` i editoren.
+   1. Åbn `AdGuardHome.yaml` i editoren.
 
-  2. Indstil `log.file` til den ønskede sti til logfilen, f.eks. `/tmp/aghlog.txt`. Bemærk, at mappen skal eksistere.
+   2. Indstil `log.file` til den ønskede sti til logfilen, f.eks. `/tmp/aghlog.txt`. Bemærk, at mappen skal eksistere.
 
-  3. Indstil 'log.verbose' til 'true'.
+   3. Indstil 'log.verbose' til 'true'.
 
 3. Genstart AdGuard Home og genskab problemet:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 4. Når fejlfindingen er færdig, sæt `log.verbose` tilbage til `false`.
 
@@ -121,29 +121,29 @@ Disse parametre kan pt. ikke indstilles fra UI'en, hvorfor opsætningsfilen skal
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Åbn `AdGuardHome.yaml` i editoren.
 
 3. Sæt indstillingerne "dns.parental_block_host" eller "dns.safebrowsing_block_host" til serverens IP-adresse (i dette eksempel "192.168.123.45"):
 
-  ```yaml
-  # …
-  dns:
-    # …
+   ```yaml
+   # …
+   dns:
+     # …
 
-    # BEMÆRK: Ændr til den faktiske IP-adresse på serveren.
-    parental_block_host: 192.168.123.45
-    safebrowsing_block_host: 192.168.123.45
-  ```
+     # BEMÆRK: Ændr til den faktiske IP-adresse på serveren.
+     parental_block_host: 192.168.123.45
+     safebrowsing_block_host: 192.168.123.45
+   ```
 
 4. Genstart AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ### Tilpasset blokeringsside til andre filtre
 
@@ -159,23 +159,23 @@ Disse parametre kan pt. ikke indstilles fra UI'en, hvorfor opsætningsfilen skal
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Åbn `AdGuardHome.yaml` i editoren.
 
 3. Sæt `http.address`-indstillingen til en ny netværksgrænseflade. F.eks.:
 
-  - `0.0.0.0:0` for at lytte på alle netværksgrænseflader;
-  - `0.0.0.0:0:8080` for at lytte på alle netværksgrænseflader med port `8080`;
-  - `127.0.0.1:0` for kun at lytte på den lokale loopback-grænseflade.
+   - `0.0.0.0:0` for at lytte på alle netværksgrænseflader;
+   - `0.0.0.0:0:8080` for at lytte på alle netværksgrænseflader med port `8080`;
+   - `127.0.0.1:0` for kun at lytte på den lokale loopback-grænseflade.
 
 4. Genstart AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ## Hvordan opsættes AdGuard Home som standard DNS-server? {#defaultdns}
 
@@ -221,32 +221,32 @@ For det andet, hvis dette ikke virker, følg da vejledningen nedenfor. Bemærk, 
 
 1. Opret om nødvendigt mappen `/etc/systemd/resolved.conf.d`:
 
-  ```sh
-  sudo mkdir -p /etc/systemd/resolved.conf.d
-  ```
+   ```sh
+   sudo mkdir -p /etc/systemd/resolved.conf.d
+   ```
 
 2. Deaktivér `DNSStubListener` og opdatér DNS-serveradressen. For at gøre dette, opret en ny fil, `/etc/systemd/resolved.conf.d/adguardhome.conf`, med flg. indhold:
 
-  ```service
-  [Resolve]
-  DNS=127.0.0.1
-  DNSStubListener=no
-  ```
+   ```service
+   [Resolve]
+   DNS=127.0.0.1
+   DNSStubListener=no
+   ```
 
 Angivelse af `127.0.0.1` som DNS-serveradressen er **nødvendig.**, da navneserveren ellers vil være `127.0.0.53`, hvilket ikke vil fungerer uden `DNSStubListener`.
 
 1. Aktivér en anden `resolv.conf`-fil:
 
-  ```sh
-  sudo mv /etc/resolv.conf /etc/resolv.conf.backup
-  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
-  ```
+   ```sh
+   sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+   sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+   ```
 
 2. Genstart `DNSStubListener`:
 
-  ```sh
-  sudo systemctl reload-or-restart systemd-resolved
-  ```
+   ```sh
+   sudo systemctl reload-or-restart systemd-resolved
+   ```
 
 Derefter skulle `systemd-resolved` ikke blive vist i outputtet af `lsof`, og AdGuard Home skulle være i stand til at tilknytte sig `127.0.0.1:53`.
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Brug ikke undermapper med Apache reverse HTTP-proxy.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Dette forårsager problemer med AdGuard Home-webgrænsefladen.
+Brug ikke undermapper med Apache reverse HTTP-proxy.  Det er et kendt problem ([#6604]), at Apache håndterer relative omdirigeringer anderledes end andre webservere. Dette forårsager problemer med AdGuard Home-webgrænsefladen.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -321,20 +321,20 @@ Man kan indstille parameteren `trusted_proxies` til sin HTTP-proxys IP-adresse(r
 
 2. Som `root`, eksekvér flg. kommando for at ændre sikkerhedskonteksten for filen:
 
-  ```sh
-  chcon -t bin_t /usr/local/bin/AdGuardHome
-  ```
+   ```sh
+   chcon -t bin_t /usr/local/bin/AdGuardHome
+   ```
 
 3. Tilføj de nødvendige firewall-regler for at gøre den tilgængelig over netværket. F.eks.:
 
-  ```sh
-  firewall-cmd --new-zone=adguard --permanent
-  firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
-  firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
-  firewall-cmd --zone=adguard --add-port=53/udp --permanent
-  firewall-cmd --zone=adguard --add-port=80/tcp --permanent
-  firewall-cmd --reload
-  ```
+   ```sh
+   firewall-cmd --new-zone=adguard --permanent
+   firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
+   firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
+   firewall-cmd --zone=adguard --add-port=53/udp --permanent
+   firewall-cmd --zone=adguard --add-port=80/tcp --permanent
+   firewall-cmd --reload
+   ```
 
 Opleves stadig `code=exited status=203/EXEC`, eller lignende fejl fra `systemctl`, så prøv at afinstallere AdGuard Home og installere den **direkte** i `/usr/local/bin` ved brug af `-o `-muligheden i installationsscriptet:
 
@@ -363,72 +363,72 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 1. Hent den nye AdGuard Home-pakke fra [udgivelsessiden][releases]. For at udføre dette trin via kommandolinjen, skriv:
 
-  ```sh
-  curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
-  Eller med 'wget':
+   Eller med 'wget':
 
-  ```sh
-  wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
 2. Gå til den mappe, hvori AdGuard Home er installeret. På de fleste Unix-systemer er standardmappen `/opt/AdGuardHome`, men på macOS er det `/Applications/AdGuardHome`.
 
 3. Stop AdGuard Home:
 
-  ```sh
-  sudo ./AdGuardHome -s stop
-  ```
+   ```sh
+   sudo ./AdGuardHome -s stop
+   ```
 
-  :::note OpenBSD
+   :::note OpenBSD
 
-  På OpenBSD vil man sandsynligvis bruge `doas` i stedet for `sudo`.
+   På OpenBSD vil man sandsynligvis bruge `doas` i stedet for `sudo`.
 
-  :::
+   :::
 
 4. Sikkerhedskopiér data. Det vil sige opsætningsfilen og databiblioteket (`AdGuardHome.yaml` og `data/` som standard). For f.eks. at sikkerhedskopiere data til en ny mappe kaldet `~/my-agh-backup`:
 
-  ```sh
-  mkdir -p ~/my-agh-backup
-  cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
-  ```
+   ```sh
+   mkdir -p ~/my-agh-backup
+   cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
+   ```
 
 5. Udpak AdGuard Home-arkivet til en midlertidig mappe. Downloades arkivet til `~/Downloads`-mappen, så udpak det f.eks. til `/tmp/`:
 
-  ```sh
-  tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
-  ```
+   ```sh
+   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   ```
 
-  På macOS, skriv noget i stil med:
+   På macOS, skriv noget i stil med:
 
-  ```sh
-  unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
-  ```
+   ```sh
+   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   ```
 
 6. Erstat den gamle AdGuard Home eksekverbare fil med den nye. På de fleste Unix-systemer vil kommandoen se således ud:
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
+   ```
 
-  På macOS, skriv noget i stil med:
+   På macOS, skriv noget i stil med:
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
+   ```
 
-  Man ønsker måske også kopiere dokumentationsdelene af pakken, såsom ændringsloggen (`CHANGELOG.md`), README-filen (`README.md`) og licensen (`LICENSE.txt`).
+   Man ønsker måske også kopiere dokumentationsdelene af pakken, såsom ændringsloggen (`CHANGELOG.md`), README-filen (`README.md`) og licensen (`LICENSE.txt`).
 
-  Den midlertidige mappe kan derefter fjernes.
+   Den midlertidige mappe kan derefter fjernes.
 
 7. Genstart AdGuard Home:
 
-  ```sh
-  sudo ./AdGuardHome -s start
-  ```
+   ```sh
+   sudo ./AdGuardHome -s start
+   ```
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
@@ -438,51 +438,51 @@ I alle eksempler nedenfor skal PowerShell eksekveres som Administrator.
 
 1. Hent den nye AdGuard Home-pakke fra [udgivelsessiden][releases]. For at udføre dette trin via kommandolinjen:
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
-  Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
+   Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
+   ```
 
 2. Gå til mappen, hvori AdGuard Home er installeret. I eksemplerne nedenfor bruges `C:\Program Files\AdGuardHome`.
 
 3. Stop AdGuard Home:
 
-  ```ps1
-  .\AdGuardHome.exe -s stop
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s stop
+   ```
 
 4. Sikkerhedskopiér data. Det vil sige opsætningsfilen og databiblioteket (`AdGuardHome.yaml` og `data/` som standard). For f.eks. at sikkerhedskopiere data til en ny mappe kaldet `~/my-agh-backup`:
 
-  ```ps1
-  $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
-  New-Item -Path $newDir -ItemType Directory
-  Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
-  ```
+   ```ps1
+   $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
+   New-Item -Path $newDir -ItemType Directory
+   Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
+   ```
 
 5. Udpak AdGuard Home-arkivet til en midlertidig mappe. Er arkivet downloadet til f.eks. `Downloads`-mappen og ønskes udpakket til en midlertidig mappe:
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
+   ```
 
 6. Erstat den gamle AdGuard Home eksekverbare fil med den nye. F.eks.:
 
-  ```ps1
-  $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
-  Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
-  ```
+   ```ps1
+   $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
+   Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
+   ```
 
-  Man ønsker måske også kopiere dokumentationsdelene af pakken, såsom ændringsloggen (`CHANGELOG.md`), README-filen (`README.md`) og licensen (`LICENSE.txt`).
+   Man ønsker måske også kopiere dokumentationsdelene af pakken, såsom ændringsloggen (`CHANGELOG.md`), README-filen (`README.md`) og licensen (`LICENSE.txt`).
 
-  Den midlertidige mappe kan derefter fjernes.
+   Den midlertidige mappe kan derefter fjernes.
 
 7. Genstart AdGuard Home:
 
-  ```ps1
-  .\AdGuardHome.exe -s start
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s start
+   ```
 
 ## Hvordan afinstalleres AdGuard Home? {#uninstall}
 
