@@ -1396,7 +1396,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+[ASTRACAT DNS](https://astracat.vercel.app/) — это DNS-резолвер, ориентированный на конфиденциальность, построенный на инфраструктуре Cloudflare и дата-центре ASTRACAT. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
 
 | Протокол       | Адрес                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1408,15 +1408,15 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 [DNSGuard](https://dnsguard.pub) blocks ads, tracking, and malware and has a strict no-logging policy.
 
-| Протокол       | Адрес                            |                                                                                                                                                                                                     |
-| -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS 1, IPv4    | `179.61.253.223`                 | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
-| DNS 2, IPv4    | `181.214.231.96`                 | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
-| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
-| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
-| DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
-| DNS-over-TLS   | `tls://dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                         |
-| DNS-over-QUIC  | `quic://dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                       |
+| Протокол       | Адрес                                |                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS 1, IPv4    | `62.192.153.242`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD)                                         |
+| DNS 2, IPv4    | `62.192.153.243`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD)                                         |
+| DNS 1, IPv6    | `2a0c:4ac1:29::2`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD)                                       |
+| DNS 2, IPv6    | `2a0c:4ac1:29::3`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD)                                       |
+| DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS   | `tls://dns.dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
+| DNS-over-QUIC  | `quic://dns.dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
 
 ### 18Bit DNS
 
