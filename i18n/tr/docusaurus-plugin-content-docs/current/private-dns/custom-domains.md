@@ -26,6 +26,6 @@ AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) in
 
    ![CNAME kaydı \*mobil](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Doğrulandıktan sonra, özel alan adınız panoda kullanıma hazır olarak görünür.
+3. Bir sertifika oluşturun. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Doğrulandıktan sonra, özel alan adınız panoda kullanıma hazır olarak görünür.
 
    ![Özel alan adı listesi \*mobil](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

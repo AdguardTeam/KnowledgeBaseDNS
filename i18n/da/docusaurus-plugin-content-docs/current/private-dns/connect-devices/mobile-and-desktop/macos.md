@@ -77,5 +77,5 @@ Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
- - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -77,5 +77,5 @@ Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 
 Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
 
- - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

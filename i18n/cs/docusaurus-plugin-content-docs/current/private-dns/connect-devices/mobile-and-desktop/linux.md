@@ -32,18 +32,18 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 3. Přejděte na _IPv4_.
 4. Nastavte _Automaticky (DHCP)_ na _Ruční_.
 5. Změňte uvedené adresy DNS na následující adresy:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. Klikněte na _Použít_.
 7. Přejděte na _IPv6_.
 8. Nastavte _Automaticky_ na _Ruční_.
 9. Změňte uvedené adresy DNS na následující adresy:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klikněte na _Použít_.
 11. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
-     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Ruční konfigurace v Debianu (je vyžadována propojená IP nebo vyhrazená IP)
 
@@ -52,8 +52,8 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 3. Zadejte své heslo `admin`.
 4. Do příkazového řádku zadejte: `nano /etc/resolv.conf`.
 5. Změňte uvedené adresy DNS na následující:
-    - IPv4: `94.140.14.49 a 94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff a 2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49 a 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff a 2a10:50c0:0:0:0:0:dad:ff`
 6. Stisknutím kláves _ctrl + O_ na klávesnici dokument uložte.
 7. Stiskněte _Enter_.
 8. Stisknutím kláves _Ctrl + X_ na klávesnici dokument uložte.
@@ -61,8 +61,8 @@ Soukromý AdGuard DNS můžete nastavit pomocí AdGuard VPN CLI (rozhraní pří
 10. Stiskněte _Enter_.
 11. Zavřete Terminal.
 12. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team):
-     - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Použití dnsmasq
 
@@ -128,5 +128,5 @@ Příkaz `dig` je pouze příkladem, k provedení této akce můžete použít l
 
 Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy:
 
- - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

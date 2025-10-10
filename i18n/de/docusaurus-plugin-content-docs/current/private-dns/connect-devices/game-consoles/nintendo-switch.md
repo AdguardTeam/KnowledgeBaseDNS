@@ -19,11 +19,11 @@ Konfigurieren Sie Ihre Spielkonsole so, dass sie einen Öffentlichen AdGuard DNS
 4. Klicken Sie auf _Einstellungen ändern_ für das ausgewählte WLAN-Netzwerk.
 5. Blättern Sie nach unten und wählen Sie _DNS-Einstellungen_.
 6. Geben Sie in das Feld _DNS-Server_ eine der folgenden DNS-Serveradressen ein:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Speichern Sie Ihre DNS-Einstellungen.
 
 Es wäre vorzuziehen, eine verknüpfte IP zu verwenden (oder eine dedizierte IP, wenn Sie ein Team-Abonnement haben):
 
- - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

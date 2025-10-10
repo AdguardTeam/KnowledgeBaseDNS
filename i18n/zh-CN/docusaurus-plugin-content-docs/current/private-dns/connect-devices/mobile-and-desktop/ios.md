@@ -78,5 +78,5 @@ An iOS device profile, also referred to as a configuration profile by Apple, is 
 
 如果您不希望通过额外的软件来配置 DNS，可以选择无加密的 DNS。 有两种选择：使用链接的 IP 或专用 IP 地址。
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

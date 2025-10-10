@@ -78,5 +78,5 @@ Pokud používáte VPN, bude konfigurační profil ignorován.
 
 Pokud nechcete ke konfiguraci DNS používat další software, můžete se rozhodnout pro nešifrovaný DNS. Existují dvě možnosti: použití propojených IP adres nebo vyhrazených IP adres.
 
- - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
