@@ -19,11 +19,11 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 4. Under _Network Settings_, select _Advanced Settings_.
 5. Under _DNS Settings_, select _Manual_.
 6. In the _DNS Server_ field, enter one of the following DNS server addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 7. Save the changes.
 
 It would be preferable to use linked IP (or dedicated IP if you have a Team subscription):
 
- - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)

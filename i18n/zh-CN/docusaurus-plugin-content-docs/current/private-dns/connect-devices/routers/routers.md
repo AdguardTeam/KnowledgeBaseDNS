@@ -14,13 +14,13 @@ toc_max_heading_level: 3
 
 以下是不同路由器型号的指示说明。 请选择您需要的型号：
 
- - [通用指示说明](/private-dns/connect-devices/routers/universal.md)
- - [Asus](/private-dns/connect-devices/routers/asus.md)
- - [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
- - [Keenetic](/private-dns/connect-devices/routers/keenetic.md)
- - [MikroTik](/private-dns/connect-devices/routers/mikrotik.md)
- - [OpenWRT](/private-dns/connect-devices/routers/openwrt.md)
- - [OpenSense](/private-dns/connect-devices/routers/opnsense.md)
- - [Synology NAS](/private-dns/connect-devices/routers/synology-nas.md)
- - [Unifi](/private-dns/connect-devices/routers/unifi.md)
- - [小米](/private-dns/connect-devices/routers/xiaomi.md)
+- [通用指示说明](/private-dns/connect-devices/routers/universal.md)
+- [Asus](/private-dns/connect-devices/routers/asus.md)
+- [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
+- [Keenetic](/private-dns/connect-devices/routers/keenetic.md)
+- [MikroTik](/private-dns/connect-devices/routers/mikrotik.md)
+- [OpenWRT](/private-dns/connect-devices/routers/openwrt.md)
+- [OpenSense](/private-dns/connect-devices/routers/opnsense.md)
+- [Synology NAS](/private-dns/connect-devices/routers/synology-nas.md)
+- [Unifi](/private-dns/connect-devices/routers/unifi.md)
+- [小米](/private-dns/connect-devices/routers/xiaomi.md)

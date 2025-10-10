@@ -9,7 +9,7 @@ AdGuard DNS-abonnementstyper kan købes via [adguard-dns.io](https://adguard-dns
 
 Den Personal-abonnementstypen er gratis for [AdGuard VPN](https://adguard-vpn.com/welcome.html) betalende brugere.
 
-AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. Kan man ikke aktivere sit abonnement, send venligst vores supportteam en e-mail via [support@adguard-dns.io](mailto:support@adguard-dns.io).
+AdGuard DNS-abonnementstyper aktiveres med det samme. Aktivering kan dog i visse tilfælde tage op til fem minutter. Kan man ikke aktivere sit abonnement, send venligst vores supportteam en e-mail via [support@adguard-dns.io](mailto:support@adguard-dns.io).
 
 ## Sådan opgraderes en abonnementstype {#upgrade}
 

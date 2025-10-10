@@ -3,7 +3,7 @@ title: 'Обновление Базы знаний'
 sidebar_position: 1
 ---
 
-Цель Базы знаний — предоставить пользователям актуальную информацию по всем вопросам, касающимся AdGuard DNS. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+Цель Базы знаний — предоставить пользователям актуальную информацию по всем вопросам, касающимся AdGuard DNS. Всё в мире постоянно меняется, и наш продукт не исключение, поэтому время от времени статьи перестают отражать реальное положение вещей. Нас не так много, чтобы уследить за каждой крупицей информации и обновлять статьи с выходом последних версий продукта.
 
 По этой причине мы переместили всё содержимое нашей Базы знаний на [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), и теперь буквально каждый человек может принять участие в её обновлении — редактировать и переводить существующие статьи или создавать новые.
 
@@ -15,7 +15,7 @@ sidebar_position: 1
 
 Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, учитывайте, что все документы должны соответствовать принципам работы платформы. Вы можете прочитать о них в [этом гиде](https://docusaurus.io/docs/category/guides).
 
-Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
+Вы можете развернуть эту базу знаний локально на своём компьютере для предварительного просмотра предложенных изменений. Подробные инструкции о том, как это сделать, можно найти [в файле README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) на странице GitHub этой Базы знаний.
 
 ## Переводы статей {#translate-adguard}
 

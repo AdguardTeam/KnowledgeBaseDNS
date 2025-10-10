@@ -20,11 +20,11 @@ Nu kan man automatisk tilslutte sin enhed til serveren ved at oprette en særlig
 
 ### Eksempler på automatiske tilslutningsadresser
 
- - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dette vil automatisk oprette en `Android`-enhed med `DNS-over-TLS`-protokollen kaldet `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dette vil automatisk oprette en `Android`-enhed med `DNS-over-TLS`-protokollen kaldet `AdGuard Test Device`
 
- - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dette vil automatisk oprette en `Windows`-enhed med `DNS-over-HTTPS`-protokollen kaldet `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dette vil automatisk oprette en `Windows`-enhed med `DNS-over-HTTPS`-protokollen kaldet `John Doe`
 
- - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` – dette vil automatisk oprette en `iOS`-enhed med `DNS-over-QUIC`-protokollen kaldet `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` – dette vil automatisk oprette en `iOS`-enhed med `DNS-over-QUIC`-protokollen kaldet `Mary Sue`
 
 ### Navngivningskonventioner
 
@@ -38,15 +38,15 @@ Når enheder oprettes manuelt, skal man være opmærksom på, at der er begræns
 
 **Enhedstype**: Brug flg. forkortelser:
 
- - Windows — `win`
- - macOS — `mac`
- - Android — `adr`
- - iOS — `ios`
- - Linux — `lnx`
- - Router — `rtr`
- - Smart TV — `stv`
- - Spillekonsol — `gam`
- - Andre — `otr`
+- Windows — `win`
+- macOS — `mac`
+- Android — `adr`
+- iOS — `ios`
+- Linux — `lnx`
+- Router — `rtr`
+- Smart TV — `stv`
+- Spillekonsol — `gam`
+- Andre — `otr`
 
 ## Linkgenerator
 
