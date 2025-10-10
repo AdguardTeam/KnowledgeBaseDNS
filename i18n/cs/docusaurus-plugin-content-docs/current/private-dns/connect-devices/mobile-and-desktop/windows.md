@@ -72,8 +72,8 @@ Dodtupné pouze ve Windows 11.
 3. Změňte nastavení DNS na _Ruční_.
 4. Přepněte přepínač IPv4 na _Zapnuto_.
 5. Zadejte následující adresy serverů DNS:
-    - Preferovaný DNS: `94.140.14.49`
-    - Alternativní DNS: `94.140.14.59`
+   - Preferovaný DNS: `94.140.14.49`
+   - Alternativní DNS: `94.140.14.59`
 6. Nastavte možnost _DNS-over-HTTPS_ na _Zapnuto (ruční šablona)_ a zadejte svou adresu osobního DNS. Najdete to na hlavním panelu v části _Nastavení serveru_ → _Zařízení_ → _Nastavení zařízení_ → DNS-over-HTTPS.
 7. Klikněte na _Uložit_. To je vše — vaše zařízení je nyní připojeno k AdGuard DNS!
    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
@@ -88,5 +88,5 @@ Další podrobnosti najdete v [jiném článku](/dns-client/overview/).
 
 Pokud nechcete používat další software pro konfiguraci DNS, můžete se rozhodnout pro nešifrovaný DNS. Máte dvě možnosti: použít propojené IP adresy nebo vyhrazené IP adresy.
 
- - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)

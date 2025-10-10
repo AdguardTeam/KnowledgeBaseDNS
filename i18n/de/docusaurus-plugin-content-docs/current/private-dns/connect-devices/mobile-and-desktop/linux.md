@@ -32,18 +32,18 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 3. Gehen Sie zu _IPv4_.
 4. Setzen Sie _Automatisch (DHCP)_ auf _Manuell_.
 5. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. Klicken Sie auf _Übernehmen_.
 7. Gehen Sie zu _IPv6_.
 8. Setzen Sie _Automatisch_ auf _Manuell_.
 9. Ändern Sie die aufgeführten DNS-Adressen in die folgenden Adressen:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. Klicken Sie auf _Übernehmen_.
 11. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
-     - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Manuell auf Debian konfigurieren (verknüpfte IP oder dedizierte IP erforderlich)
 
@@ -52,8 +52,8 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 3. Geben Sie Ihr `admin`-Passwort ein.
 4. Geben Sie in die Befehlszeile ein: `nano /etc/resolv.conf`.
 5. Ändern Sie die aufgelisteten DNS-Adressen in folgende:
-    - IPv4: `94.140.14.49 und 94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff und 2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49 und 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff und 2a10:50c0:0:0:0:0:dad:ff`
 6. Drücken Sie _Strg+O_, um das Dokument zu speichern.
 7. Drücken Sie _Eingabe_.
 8. Drücken Sie _Strg+X_, um das Dokument zu speichern.
@@ -61,8 +61,8 @@ Sie können Privates AdGuard DNS mithilfe AdGuard VPN CLI (Befehlszeilenschnitts
 10. Drücken Sie _Eingabe_.
 11. Schließen Sie das Terminal.
 12. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben):
-     - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## dnsmasq verwenden
 
@@ -128,5 +128,5 @@ Der Befehl `dig` ist nur ein Beispiel, Sie können jede DNS-Software verwenden, 
 
 Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden:
 
- - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

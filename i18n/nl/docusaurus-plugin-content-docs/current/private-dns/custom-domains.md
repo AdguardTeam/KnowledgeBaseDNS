@@ -17,8 +17,8 @@ Om een aangepast domein te configureren, meld je aan bij je AdGuard DNS-dashboar
 
 1. Het protocol kiezen. Hier heb je twee opties:
 
-    - DoH-domein toevoegen (voor DNS-over-HTTPS)
-    - DoT/DoQ-domein toevoegen (voor DNS-over-TLS of DNS-over-QUIC)
+   - DoH-domein toevoegen (voor DNS-over-HTTPS)
+   - DoT/DoQ-domein toevoegen (voor DNS-over-TLS of DNS-over-QUIC)
 
    ![Kies het protocol \*mobiel](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 

@@ -32,18 +32,18 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 3. Go to _IPv4_.
 4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. 点击「_应用_」。
 7. 前往「_IPv6_」。
 8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. 点击「_应用_」。
 11. 连接您的 IP 地址（如果用户有团队订阅，可以使用专用 IP 地址）：
-     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## 在 Debian 上手动配置（需要已链接 IP 地址或专用 IP 地址）
 
@@ -52,8 +52,8 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 3. 输入您的 `admin` 密码。
 4. 在命令行输入：`nano /etc/resolv.conf`。
 5. 将列出的 DNS 地址更改为以下地址：
-    - IPv4：`94.140.14.49 和 94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff 及 2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4：`94.140.14.49 和 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff 及 2a10:50c0:0:0:0:0:dad:ff`
 6. 按「_Ctrl + O_」以保存文件。
 7. 按下回车键。
 8. 按「_Ctrl + X_」以保存文件。
@@ -61,8 +61,8 @@ AdGuard DNS 客户端是一个跨平台的控制台工具，让用户使用加�
 10. 按下回车键。
 11. 关闭终端。
 12. 连接您的 IP 地址（如果用户有团队订阅，可以使用专用 IP 地址）：
-     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## 使用 dnsmasq
 
@@ -128,5 +128,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP：
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

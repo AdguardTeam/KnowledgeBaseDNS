@@ -17,8 +17,8 @@ Um eine benutzerdefinierte Domain zu konfigurieren, melden Sie sich bei Ihrem Ad
 
 1. Protokoll auswählen. Hier haben Sie zwei Möglichkeiten:
 
-    - DoH-Domain hinzufügen (für DNS-over-HTTPS)
-    - DoT/DoQ-Domain hinzufügen (für DNS-over-TLS oder DNS-over-QUIC)
+   - DoH-Domain hinzufügen (für DNS-over-HTTPS)
+   - DoT/DoQ-Domain hinzufügen (für DNS-over-TLS oder DNS-over-QUIC)
 
    ![Protokoll auswählen \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_de_1.png)
 

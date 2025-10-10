@@ -1,12 +1,12 @@
 ---
-title: Environment variables
+title: Proměnné prostředí
 sidebar_position: 5
 ---
 
-This page lists the supported environment variables and their descriptions.
+Tato stránka obsahuje seznam podporovaných proměnných prostředí a jejich popisy.
 
 ## `ADGUARD_HOME_DEFAULT_WEB_PORT` {#ADGUARD_HOME_DEFAULT_WEB_PORT}
 
-Sets the suggested default HTTP port displayed in the installation wizard.
+Nastaví doporučený výchozí port HTTP zobrazený v instalačním průvodci.
 
-**Default:** `80`.
+**Výchozí:** `80`.

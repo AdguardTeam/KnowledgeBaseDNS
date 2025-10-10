@@ -72,8 +72,8 @@ Available only on Windows 11.
 3. Change DNS settings to _Manual_.
 4. Toggle the IPv4 switch to _On_.
 5. Enter the following DNS server addresses:
-    - Preferred DNS: `94.140.14.49`
-    - Alternate DNS: `94.140.14.59`
+   - Preferred DNS: `94.140.14.49`
+   - Alternate DNS: `94.140.14.59`
 6. Turn _DNS over HTTPS template_ to _On (manual template)_ and enter your personal DNS address. You can find it in the Dashboard under _Server settings_ → _Devices_ → _Devices settings_ → DNS-over-HTTPS.
 7. 点击「保存」。 That’s it — your device is now connected to AdGuard DNS!
    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
@@ -88,5 +88,5 @@ More details can be found in [different article](/dns-client/overview/).
 
 如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

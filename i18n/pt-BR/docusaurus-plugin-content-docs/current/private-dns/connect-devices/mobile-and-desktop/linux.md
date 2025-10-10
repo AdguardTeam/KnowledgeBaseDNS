@@ -32,18 +32,18 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 3. Go to _IPv4_.
 4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. Clique em _Aplicar_.
 7. Vá para _IPv6_.
 8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. Clique em _Aplicar_.
 11. Vincule seu endereço de IP (ou seu IP dedicado, caso tenha uma assinatura Equipe):
-     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manualmente no Debian (IP vinculado ou IP dedicado necessário)
 
@@ -52,8 +52,8 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 3. Digite sua senha `admin`.
 4. Na linha de comando, digite: `nano /etc/resolv.conf`.
 5. Altere os endereços DNS listados para os seguintes:
-    - IPv4: `94.140.14.49` e `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 6. Pressione _Ctrl + O_ para salvar o documento.
 7. Pressione _Enter_.
 8. Pressione _Ctrl + X_ para salvar o documento.
@@ -61,8 +61,8 @@ Você pode configurar o AdGuard DNS Privado usando a interface de linha de coman
 10. Pressione _Enter_.
 11. Feche o Terminal.
 12. Vincule seu endereço de IP (ou seu IP dedicado, caso tenha uma assinatura Equipe):
-     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-     - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -128,5 +128,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 Se você preferir não usar software extra para configuração de DNS, pode optar por DNS não criptografado. Você tem duas opções: usar IPs vinculados ou IPs dedicados:
 
- - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
- - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
