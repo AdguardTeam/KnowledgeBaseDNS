@@ -54,7 +54,7 @@ sidebar_position: 4
 
 ## Использовать профиль конфигурации
 
-A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
+Профиль macOS устройства, называемый также «профиль конфигурации» компанией Apple, — это XML-файл, подписанный сертификатом, который можно установить на устройство вручную или развернуть с помощью решения MDM. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
 
 :::note Важно
 

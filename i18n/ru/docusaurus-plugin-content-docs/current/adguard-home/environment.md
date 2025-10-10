@@ -1,12 +1,12 @@
 ---
-title: Environment variables
+title: Переменные окружения
 sidebar_position: 5
 ---
 
-This page lists the supported environment variables and their descriptions.
+На этой странице перечислены поддерживаемые переменные окружения и их описание.
 
 ## `ADGUARD_HOME_DEFAULT_WEB_PORT` {#ADGUARD_HOME_DEFAULT_WEB_PORT}
 
-Sets the suggested default HTTP port displayed in the installation wizard.
+Задаёт рекомендуемый HTTP-порт по умолчанию, который отображается в мастере установки.
 
-**Default:** `80`.
+**По умолчанию:** `80`.

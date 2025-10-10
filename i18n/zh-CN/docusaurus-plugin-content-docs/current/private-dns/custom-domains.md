@@ -17,8 +17,8 @@ AdGuard DNS 订阅用户可以设置自己的域名（如 `dns.example.com`）�
 
 1. 选择协议。 您有两个选项：
 
-    - 添加 DoH 域名（用于 DNS-over-HTTPS）
-    - 添加 DoT/DoQ 域名（适用于 DNS-over-TLS 或 DNS-over-QUIC）
+   - 添加 DoH 域名（用于 DNS-over-HTTPS）
+   - 添加 DoT/DoQ 域名（适用于 DNS-over-TLS 或 DNS-over-QUIC）
 
    ![选择协议 \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_cn_1.png)
 

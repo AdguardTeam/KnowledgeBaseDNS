@@ -1,31 +1,31 @@
 ---
-title: Choosing a DNS protocol
+title: Выбор протокола DNS
 sidebar_position: 2
 ---
 
-A DNS protocol is a set of rules that your device uses to communicate with a DNS server — a system that translates website names, like example.com, into IP addresses that computers can understand. This process used to occur in plain text, meaning it could be seen or intercepted by third parties, such as your ISP or hackers. Encrypted DNS protocols address this issue by protecting your DNS requests, thereby making your browsing more private and secure.
+Протокол DNS — это набор правил, которые ваше устройство использует для связи с DNS-сервером — системой, преобразующей имена сайтов, такие как example.com, в IP-адреса, понятные компьютерам. Ранее этот процесс происходил в незашифрованном виде, а значит, его могли увидеть или перехватить третьи стороны, такие как ваш провайдер или злоумышленники. Зашифрованные DNS-протоколы решают эту проблему. Они защищают ваши DNS-запросы, обеспечивая более приватный и безопасный просмотр сайтов.
 
-AdGuard DNS supports three secure, encrypted DNS protocols: DoH, DoT, and DoQ. They’re all designed to protect your DNS traffic, but each one has its own strengths and limitations. The following overview will help you understand the differences and choose the best one for you.
+AdGuard DNS поддерживает три безопасных зашифрованных протокола: DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) и DNS-over-QUIC (DoQ). Все они предназначены для защиты вашего DNS-трафика, но у каждого есть свои сильные и слабые стороны. Этот обзор поможет вам понять различия и выбрать наиболее подходящий вариант.
 
 ### DNS-over-TLS (DoT)
 
-DNS-over-TLS improves privacy by encrypting your DNS traffic and sending it over port 853, which is specifically reserved for encrypted DNS traffic.
+DNS-over-TLS повышает конфиденциальность, шифруя ваш DNS-трафик и отправляя его через порт 853, который специально зарезервирован для зашифрованного DNS-трафика.
 
-DoT isn’t the strongest option when it comes to privacy. It uses the dedicated port (853), making it easier for networks to detect and possibly block. However, DoT can still be useful in enterprise or managed environments where administrators want to allow secure DNS while maintaining control over network traffic.
+DoT — не самый надёжный вариант, когда дело касается конфиденциальности. Он использует выделенный порт (853), из-за чего сети могут его легче обнаруживать и, возможно, блокировать. Тем не менее DoT может быть полезен в корпоративных или управляемых средах, где администраторы хотят разрешить безопасный DNS, сохранив контроль над сетевым трафиком.
 
 ### DNS-over-HTTPS (DoH)
 
-DNS-over-HTTPS sends your DNS queries over port 443, the same secure connection used to load websites. This makes it harder for networks or censors to detect or block.
+DNS-over-HTTPS отправляет ваши DNS-запросы через порт 443, то же безопасное соединение, которое используется для загрузки сайтов. Это затрудняет обнаружение или блокировку со стороны сетей или цензоров.
 
-However, it can be unstable and result in performance issues. When all data packets share the same connection, they rely on the same transport layer. This can cause a problem called head-of-line blocking. If one packet is lost or delayed, it holds up everything else, including unrelated packets. As a result, all responses are delayed, even if most of the data is ready to be delivered.
+Однако он может работать нестабильно и вызывать проблемы с производительностью. Когда все пакеты данных используют одно соединение, они зависят от одного и того же транспортного уровня. Это может привести к проблеме, называемой head-of-line blocking. Если один пакет теряется или задерживается, он задерживает и все остальные, в том числе не связанные с ним пакеты. В результате все ответы задерживаются, даже если большая часть данных готова к отправке.
 
 ### DNS-over-QUIC (DoQ)
 
-DNS-over-QUIC is a DNS protocol that uses the QUIC transport layer protocol to transmit DNS requests. It solves one of the main problems with the DoH protocol: head-of-line blocking.
+DNS-over-QUIC — это протокол DNS, который использует транспортный протокол QUIC для передачи DNS-запросов. Он решает одну из главных проблем протокола DoH — head-of-line blocking.
 
-Since DoQ uses the QUIC protocol to keep DNS activity separate from web traffic, it avoids the timing issues observed in DoH. Consequently, it doesn’t reveal any traffic patterns. This makes it harder to link your DNS queries to your browsing activity, even though the traffic itself is easier to spot.
+DoQ использует протокол QUIC для разделения DNS -активности и веб-трафика, что позволяет избежать проблем с задержками пакетов, которые есть в DoH. Следовательно, он не раскрывает никаких особенностей трафика. Это затрудняет связывание ваших DNS-запросов с вашей активностью при просмотре веб-страниц, даже несмотря на то, что сам трафик легче обнаружить.
 
-However, DoQ remains an experimental protocol and might face stability problems or be blocked by ISPs and censors. If you are not ready to deal with that, it might not be the best choice.
+Однако DoQ всё ещё остаётся экспериментальным протоколом и может столкнуться с проблемами стабильности или быть заблокирован провайдерами и цензурой. Если вы не готовы к этому, возможно, это не лучший выбор.
 
 ![DoH vs. DoQ \*border](https://cdn.adtidy.org/blog/new/gy178dohdoq.jpg)
 

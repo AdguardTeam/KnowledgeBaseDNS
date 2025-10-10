@@ -17,8 +17,8 @@ Para configurar um domínio personalizado, entre no seu painel do AdGuard DNS e 
 
 1. Escolha o protocolo. Aqui, você tem duas opções:
 
-    - Adicionar domínio DoH (para DNS-over-HTTPS)
-    - Adicionar domínio DNS-over-TLS/DNS-over-QUIC (para DNS-over-TLS ou DNS-over-QUIC)
+   - Adicionar domínio DoH (para DNS-over-HTTPS)
+   - Adicionar domínio DNS-over-TLS/DNS-over-QUIC (para DNS-over-TLS ou DNS-over-QUIC)
 
    ![Escolha o protocolo \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_pt_br_1.png)
 

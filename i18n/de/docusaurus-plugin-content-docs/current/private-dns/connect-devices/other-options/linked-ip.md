@@ -48,9 +48,9 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
 1. Zuerst müssen Sie überprüfen, ob DDNS von Ihren Router-Einstellungen unterstützt wird:
 
-    - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
-    - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
-    - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
+   - Öffnen Sie _Router-Einstellungen_ → _Netzwerk_
+   - Suchen Sie den Abschnitt DDNS oder _Dynamic DNS_
+   - Wechseln Sie dorthin und überprüfen Sie, ob die Einstellungen tatsächlich unterstützt werden. \*Dies ist nur ein Beispiel, wie es aussehen könnte.
 
    ![DDNS-Unterstützung \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
@@ -73,14 +73,14 @@ All done, you’ve successfully set up DDNS!
 Der einfachste Weg ist die Verwendung des Aufgabenplaners:
 
 1. Erstellen Sie eine Aufgabe:
-    - Öffnen Sie den Aufgabenplaner.
-    - Erstellen Sie eine neue Aufgabe.
-    - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
-    - Wählen Sie _Programm ausführen_ als Aktion.
+   - Öffnen Sie den Aufgabenplaner.
+   - Erstellen Sie eine neue Aufgabe.
+   - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
+   - Wählen Sie _Programm ausführen_ als Aktion.
 2. Wählen Sie ein Programm:
-    - In the _Program or Script_ field, type `powershell`
-    - Geben Sie im Feld _Argumente hinzufügen_ ein:
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - In the _Program or Script_ field, type `powershell`
+   - Geben Sie im Feld _Argumente hinzufügen_ ein:
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Speichern Sie die Aufgabe.
 
 ### Unter macOS und Linux
@@ -88,17 +88,17 @@ Der einfachste Weg ist die Verwendung des Aufgabenplaners:
 Unter macOS und Linux ist es am einfachsten, `cron` zu verwenden:
 
 1. Öffnen Sie crontab:
-    - Führen Sie im Terminal `crontab -e` aus.
+   - Führen Sie im Terminal `crontab -e` aus.
 2. Fügen Sie eine Aufgabe hinzu:
-    - Fügen Sie die folgende Zeile ein:
-       `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Diese Aufgabe wird alle 5 Minuten ausgeführt
+   - Fügen Sie die folgende Zeile ein:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Diese Aufgabe wird alle 5 Minuten ausgeführt
 3. Speichern Sie crontab.
 
 :::note Wichtig
 
- - Stellen Sie sicher, dass `curl` auf macOS und Linux installiert ist.
- - Denken Sie daran, die Adresse aus den Einstellungen zu kopieren und `ServerID` und `UniqueKey` zu ersetzen.
- - Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Aufgabenplaner oder cron verwenden.
+- Stellen Sie sicher, dass `curl` auf macOS und Linux installiert ist.
+- Denken Sie daran, die Adresse aus den Einstellungen zu kopieren und `ServerID` und `UniqueKey` zu ersetzen.
+- Wenn eine komplexere Logik oder Verarbeitung der Abfrageergebnisse erforderlich ist, sollten Sie Skripte (z. B. Bash, Python) in Kombination mit einem Aufgabenplaner oder cron verwenden.
 
 :::

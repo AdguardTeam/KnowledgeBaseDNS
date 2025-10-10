@@ -48,9 +48,9 @@ Takto nebudete muset ručně aktualizovat přidruženou IP adresu při každé j
 
 1. Nejprve je třeba zkontrolovat, zda nastavení vašeho routeru podporuje DDNS:
 
-    - Přejděte do _Nastavení routeru_ → _Sítě_
-    - Vyhledejte sekci DDNS nebo _Dynamický DNS_
-    - Přejděte na něj a ověřte, zda jsou nastavení skutečně podporována. _Toto je pouze příklad, jak by to mohlo vypadat. Nastavení se mohou lišit v závislosti na vašem routeru_
+   - Přejděte do _Nastavení routeru_ → _Sítě_
+   - Vyhledejte sekci DDNS nebo _Dynamický DNS_
+   - Přejděte na něj a ověřte, zda jsou nastavení skutečně podporována. _Toto je pouze příklad, jak by to mohlo vypadat. Nastavení se mohou lišit v závislosti na vašem routeru_
 
    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
@@ -73,14 +73,14 @@ Hotovo, úspěšně jste nastavili DDNS!
 Nejjednodušší je použít Plánovač úloh:
 
 1. Vytvořte úlohu:
-    - Otevřete Plánovač úloh.
-    - Vytvořte novou úlohu.
-    - Nastavte spouštění na každých 5 minut.
-    - Jako akci vyberte _Spustit program_.
+   - Otevřete Plánovač úloh.
+   - Vytvořte novou úlohu.
+   - Nastavte spouštění na každých 5 minut.
+   - Jako akci vyberte _Spustit program_.
 2. Vyberte program:
-    - Do pole _Program nebo Script_ zadejte \`powershell'
-    - Do pole _Přidat argumenty_ zadejte:
-        - `Příkaz "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - Do pole _Program nebo Script_ zadejte \`powershell'
+   - Do pole _Přidat argumenty_ zadejte:
+     - `Příkaz "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Uložte úlohu.
 
 ### V macOS a Linux
@@ -88,17 +88,17 @@ Nejjednodušší je použít Plánovač úloh:
 V systémech MacOS a Linux je nejjednodušší použít příkaz `cron`:
 
 1. Otevřete crontab:
-    - V Terminalu spusťte `crontab -e`.
+   - V Terminalu spusťte `crontab -e`.
 2. Přidejte úlohu:
-    - Vložte následující řádek:
-       `/5 * * * * curl https://linkip.adguard dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Tato úloha se spustí každých 5 minut
+   - Vložte následující řádek:
+     `/5 * * * * curl https://linkip.adguard dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Tato úloha se spustí každých 5 minut
 3. Uložte crontab.
 
 :::note Důležité
 
- - Ujistěte se, že máte nainstalovaný `curl` na macOS a Linuxu.
- - Nezapomeňte zkopírovat adresu z nastavení a nahradit `ServerID` a `UniqueKey`.
- - Pokud je vyžadována složitější logika nebo zpracování výsledků dotazu, zvažte použití skriptů (např. Bash, Python) ve spojení s plánovačem úloh nebo cronem.
+- Ujistěte se, že máte nainstalovaný `curl` na macOS a Linuxu.
+- Nezapomeňte zkopírovat adresu z nastavení a nahradit `ServerID` a `UniqueKey`.
+- Pokud je vyžadována složitější logika nebo zpracování výsledků dotazu, zvažte použití skriptů (např. Bash, Python) ve spojení s plánovačem úloh nebo cronem.
 
 :::
