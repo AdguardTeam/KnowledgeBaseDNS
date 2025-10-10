@@ -1408,15 +1408,15 @@ Børnevenligt filter, der også blokerer annoncer, trackere og malware
 
 [DNSGuard](https://dnsguard.pub) blokerer annoncer, sporing samt malware og har en striks nul logning-politik.
 
-| Protokol       | Adresse                          |                                                                                                                                                                                                       |
-| -------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `179.61.253.223`                 | [Føj til AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
-| DNS 2, IPv4    | `181.214.231.96`                 | [Føj til AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
-| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [Føj til AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
-| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [Føj til AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
-| DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
-| DNS-over-TLS   | `tls://dnsguard.pub`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                         |
-| DNS-over-QUIC  | `quic://dnsguard.pub`            | [Føj til AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                       |
+| Protokol       | Adresse                              |                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `62.192.153.242`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD)                                         |
+| DNS 2, IPv4    | `62.192.153.243`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD)                                         |
+| DNS 1, IPv6    | `2a0c:4ac1:29::2`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD)                                       |
+| DNS 2, IPv6    | `2a0c:4ac1:29::3`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD)                                       |
+| DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS   | `tls://dns.dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
+| DNS-over-QUIC  | `quic://dns.dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
 
 ### 18Bit DNS
 
