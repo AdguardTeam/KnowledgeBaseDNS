@@ -1275,7 +1275,7 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 | DNS-over-TLS, IPv4 | Hostname: `tls://ibksturm.synology.me` IP: `213.196.191.96` | [Add to AdGuard](adguard:add_dns_server?address=tls://ibksturm.synology.me&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ibksturm.synology.me&name=ibksturm.synology.me) |
 | DNS-over-QUIC, IPv4 | Hostname: `quic://ibksturm.synology.me` IP: `213.196.191.96` | [Add to AdGuard](adguard:add_dns_server?address=quic://ibksturm.synology.me&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://ibksturm.synology.me&name=ibksturm.synology.me) |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `213.196.191.96` | [Add to AdGuard](adguard:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me) |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgKmPSv6jOgF7lERDduUMH7a4Z5ShV7PrD-IcS23XUsPkYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgK374BJKvK0aJHWKjmXdkG8_X2KEoao_LALK_nK6PM_AYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
 
 ### Lelux DNS
 
