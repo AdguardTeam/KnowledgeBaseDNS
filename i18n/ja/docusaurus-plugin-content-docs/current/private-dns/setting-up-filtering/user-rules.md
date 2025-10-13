@@ -21,7 +21,7 @@ sidebar_position: 2
 
 4. 「_ユーザールール_」オプションをクリックします。
 
-5. そうすると、ユーザールールを追加するためのいくつかのオプションが見つかります。
+5. You’ll find several options for adding user rules.
 
     - 最も簡単な方法はルールジェネレーターを使うことです。 使用するには、「_新しいルールを追加_」をクリック → ブロックまたはブロック解除したいドメインの名前を入力 → 「_ルールを追加_」をクリックします。
         ![ルールを追加 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

@@ -38,27 +38,27 @@ sidebar_position: 2
 
 Объект `server` настраивает обработку входящих запросов. Он обладает следующими свойствами:
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: настройка механизма повторных попыток привязки к прослушиваемым адресам. Она нужна, когда сервер запускается доготовности сети, адреса ещё недоступны, как на некоторых версиях Windows при установке в качестве системного сервиса.
 
   :::note
 
-  This object is available since **v0.0.3**.
+  Этот объект доступен начиная с версии **0.0.3**.
 
   :::
 
   Он обладает следующими свойствами:
 
-  - `enabled`: Whether bind retry is enabled or not.
+  - `enabled`: указывает, включена ли повторная попытка привязки или нет.
 
     **Пример:** `true`
 
-  - `interval`: The interval between retries as a human-readable duration.
+  - 'interval': интервал между повторными попытками в виде удобочитаемой продолжительности.
 
     **Example:** `1s`
 
-  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+  - `count`: Максимальное количество попыток после первой неудачи. То есть, если значение переменной `count` равно 4, общее число попыток будет равно пяти.
 
-    **Example:** `4`
+    **Пример:** `4`
 
 - `listen_addresses`: набор адресов с портами для прослушивания.
 

@@ -3,15 +3,15 @@ title: "構造化DNSエラー (SDE: Structured DNS Errors)"
 sidebar_position: 5
 ---
 
-AdGuard DNS v2.10 のリリースで、AdGuardは[RFC 8914](https://datatracker.ietf.org/doc/rfc8914/)の更新版である[**構造化DNSエラー** (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)のサポートを実装した世界初のパブリックDNSリゾルバーとなりました。 この機能のおかげで、DNS サーバーは、一般的なブラウザメッセージに頼るのではなく、ブロックされた Web サイトに関する詳細情報を DNS 応答で直接表示できるようになります。 この記事では、**構造化DNSエラー**とは何か、そしてどのように機能するかを説明します。
+AdGuard DNS v2.10 のリリースで、AdGuardは[RFC 8914](https://datatracker.ietf.org/doc/rfc8914/)の更新版である[**構造化DNSエラー** (SDE)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)のサポートを実装した世界初のパブリックDNSリゾルバーとなりました。 この機能のおかげで、DNS サーバーは、一般的なブラウザメッセージに頼るのではなく、ブロックされた Web サイトに関する詳細情報を DNS 応答で直接表示できるようになります。 In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
 
 ## 構造化DNSエラー（Structured DNS Errors）とは
 
-広告ドメインやトラッキングドメインへのリクエストがブロックされると、ユーザーにはウェブサイト上に空白スペースが表示されたり、またはDNSフィルタリングが行われたことに全く気づかなかったりします。 しかし、ウェブサイト全体がDNSレベルでブロックされると、ユーザーはそのページにまったくアクセスできなくなります。 ブロックされたウェブサイトにアクセスしようとすると、ブラウザーから「このサイトにアクセスできません」という一般的なエラーが表示されることがよくあります。
+広告ドメインやトラッキングドメインへのリクエストがブロックされると、ユーザーにはウェブサイト上に空白スペースが表示されたり、またはDNSフィルタリングが行われたことに全く気づかなかったりします。 しかし、ウェブサイト全体がDNSレベルでブロックされると、ユーザーはそのページにまったくアクセスできなくなります。 When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-このようなエラーでは、何が起こったのか、なぜ起こったのかが説明されていません。 結果として、ユーザーはウェブサイトにアクセスできない理由について混乱し、インターネット接続または DNS リゾルバが壊れていると考えてしまうこともよくあります。
+Such errors don’t explain what happened and why. 結果として、ユーザーはウェブサイトにアクセスできない理由について混乱し、インターネット接続または DNS リゾルバが壊れていると考えてしまうこともよくあります。
 
 このようなシチュエーションで混乱を減らすよう、DNSサーバーはユーザーを独自の説明付きページにリダイレクトすることができますが、 HTTPS ウェブサイト (多くのウェブサイトはHTTPSを使用) には別の証明書が必要になるという難点が出てきます。
 

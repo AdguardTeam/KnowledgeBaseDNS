@@ -149,7 +149,7 @@ Una vez generados el identificador de acceso y de actualización, se pueden real
 
 ### Referencia
 
-Por favor, consulta los métodos de referencia de [aquí](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### Especificaciones de OpenAPI
 

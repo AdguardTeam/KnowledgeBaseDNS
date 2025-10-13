@@ -57,7 +57,7 @@ sidebar_position: 1
 3. 点击「_Blocklist request_」并填写表格。
 4. 填写表格后，点击「_Submit new issue_」。
 
-如果您的过滤器拦截规则与现有列表中的不重复，它将被添加到存储库中。
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## 用户规则
 

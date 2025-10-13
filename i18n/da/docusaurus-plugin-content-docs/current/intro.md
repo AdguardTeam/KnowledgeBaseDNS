@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="YouTube-videoafspiller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS står for "Domain Name System", hvis formål er at konvertere websteders navne til IP-adresser. Hver gang man går til et websted, sender browseren en DNS-forespørgsel til en DNS-server for at få oplyst webstedets IP-adresse. En alm. DNS-opløser returnerer blot IP-adressen på det anmodede domæne.
+DNS står for *Domain Name System*, hvis formål er at konvertere webstedsnavne til IP-adresser. Hver gang man går til et websted, sender browseren en DNS-forespørgsel til en DNS-server for at få oplyst webstedets IP-adresse. En alm. DNS-opløser returnerer blot IP-adressen på det anmodede domæne.
 
 :::note
 
@@ -18,7 +18,7 @@ Standard DNS-serveren leveres normalt af internetudbyderen. Det betyder, at inte
 
 ![Enheden bruger altid en DNS-server til at hente IP-adresserne på de domæner, som tilgås af forskellige apps, tjenester mv.](https://cdn.adtidy.org/content/blog/articles/dns-cbs/scr1.png)
 
-Der findes også DNS-servere, som kan blokere bestemte websteder på DNS-niveau. Hvordan fungerer de? Når enheden sender en "dårlig" forespørgsel, hvad enten det er en annonce eller tracker, obstruerer en DNS-server forbindelsen ved at svare med en ikke-rutbar IP-adresse for et blokeret domæne.
+Der findes også DNS-servere, som kan blokere bestemte websteder på DNS-niveau. Hvordan fungerer de? Når en enhed sender en "dårlig" forespørgsel, hvad enten det er en annonce eller tracker, forhindrer en DNS-server forbindelsen ved at svare med en ikke-rutbar IP-adresse til et blokeret domæne.
 
 ## Hvorfor bruge DNS til indholdsblokering?
 

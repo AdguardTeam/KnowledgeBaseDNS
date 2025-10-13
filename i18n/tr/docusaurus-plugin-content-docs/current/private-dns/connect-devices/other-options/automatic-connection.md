@@ -12,9 +12,9 @@ Bağlantı bağlantısı oluşturabilir ve bunu cihaz ayarlarında kullanabilirs
 ## Otomatik bağlantı nasıl yapılandırılır
 
 1. _Pano_ öğesini açın ve gerekli sunucuyu seçin.
-2. _Cihazlar_ öğesine gidin.
+2. Go to _Advanced_.
 3. Cihazların otomatik olarak bağlanma seçeneğini etkinleştirin.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Bu adreslerin nasıl göründüğünü ve bunları oluşturma kurallarını inceleyelim.
 
@@ -55,5 +55,5 @@ Belirli cihaz türü ve protokol için bir bağlantı oluşturan bir şablon ekl
 1. _Sunucular_ → _Sunucu ayarları_ → _Cihazlar_ → _Cihazları otomatik olarak bağla_ öğesine gidin ve _Bağlantı oluşturucu ve talimatlar_ öğesine tıklayın.
 2. Kullanmak istediğiniz protokolün yanı sıra cihaz adını ve cihaz türünü seçin.
 3. _Bağlantı oluştur_ öğesine tıklayın.
-    ![Bağlantı oluştur \*mobil_sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![Bağlantı oluştur \*mobil_sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Bağlantıyı başarıyla oluşturdunuz, şimdi sunucu adresini kopyalayın ve [AdGuard uygulamalarından](https://adguard.com/welcome.html) birinde kullanın

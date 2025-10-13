@@ -16,7 +16,7 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 1. Open the Steam Deck settings by clicking the gear icon in the upper right corner of the screen.
 1. Click *Network*.
 1. Click the gear icon next to the network connection you want to configure.
-1. Select IPv4 or IPv6, depending on the type of network you're using.
+1. Select IPv4 or IPv6, depending on the type of network you’re using.
 1. Select *Automatic (DHCP) addresses only* or *Automatic (DHCP)*.
 1. In the *DNS Server* field, enter one of the following DNS server addresses:
     - `94.140.14.49`

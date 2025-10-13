@@ -9,7 +9,7 @@ Ohne Ratenbegrenzungen besteht die Gefahr einer Überlastung der DNS-Server. Inf
 
 ## Wie funktioniert die Ratenbegrenzung?
 
-Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die Anzahl der Anfragen festgelegt werden, die ein Client (IP-Adresse) über einen bestimmten Zeitraum an einen DNS-Server senden kann. Wenn Sie Probleme mit der aktuellen AdGuard DNS-Ratenbegrenzung haben und einen _Team_- oder _Enterprise_-Plan haben, können Sie eine Erhöhung der Ratenbegrenzung anfordern.
+Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die Anzahl der Anfragen festgelegt werden, die ein Client (IP-Adresse) über einen bestimmten Zeitraum an einen DNS-Server senden kann. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## So beantragen Sie eine Erhöhung des DNS-Anfragelimits
 
@@ -19,6 +19,6 @@ Wenn Sie das AdGuard DNS _Team_- oder _Enterprise_-plan abonniert haben, können
 
 2. Tippen Sie auf _Anfragen pro Sekunde erhöhen_, um unser Support-Team zu kontaktieren und die Erhöhung der Datenstrombegrenzung zu beantragen. Sie müssen Ihre CIDR und den gewünschten Grenzwert angeben
 
- ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Ihre Anfrage wird innerhalb von 1–3 Werktagen bearbeitet. Wir werden Sie per E-Mail über die Änderungen informieren

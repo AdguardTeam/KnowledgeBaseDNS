@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi routers have many advantages: a stable, strong signal, network security, robust performance, and smart management. Users can connect up to 64 devices to a local Wi-Fi network.
 
-Desafortunadamente, no soporta DNS cifrado, pero es excelente para configurar AdGuard DNS a través de la IP vinculada.
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## Utiliza el panel de administración del router
 
@@ -21,5 +21,5 @@ Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS
 6. Guarda la configuración.
 7. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+ - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+ - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

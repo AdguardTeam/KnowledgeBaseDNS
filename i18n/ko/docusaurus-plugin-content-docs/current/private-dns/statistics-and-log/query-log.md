@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## 사용 방법
 
-**쿼리 로그**에서 볼 수 있는 것과 할 수 있는 일입니다.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### 요청에 대한 자세한 정보
 

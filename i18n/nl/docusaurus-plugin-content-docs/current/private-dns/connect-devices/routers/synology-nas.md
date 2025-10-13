@@ -15,10 +15,10 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 4. Select _Network Interface_ or _Network Settings_.
 5. Select your Wi-Fi network or wired connection.
 6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-    - IPv4: `94.140.14.49` and `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` and `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Save the settings.
 8. Link your IP (or your dedicated IP if you have a Team subscription).
 
 - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Gekoppelde IP's](private-dns/connect-devices/other-options/linked-ip.md)

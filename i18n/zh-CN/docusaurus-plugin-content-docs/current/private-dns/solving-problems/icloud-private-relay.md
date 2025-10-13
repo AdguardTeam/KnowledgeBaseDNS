@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-当您使用 iCloud 专用代理时，AdGuard DNS 仪表板（以及相关的 [AdGuard 测试页面](https://adguard.com/test.html)）会显示您未在该设备上使用 AdGuard DNS。
+When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![设备未连接](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-要解决此问题，需要在设备的设置中允许 AdGuard 网站查看您的 IP 地址。
+To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
 
 - iPhone 或 iPad：
 
@@ -29,10 +29,10 @@ toc_max_heading_level: 4
 
     1. 对 `adguard.com` 重复上述操作
 
-如果看不到暂时允许网站查看您的 IP 地址的选项，请将设备更新到最新版本的 iOS、iPadOS 或 macOS，然后重试。
+If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 现在您的设备应该正确显示在 AdGuard DNS 仪表板中：
 
 ![设备已连接](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-请注意，一旦您关闭特定网站的专用代理，网络提供商也将能够看到您正在浏览的网站。
+Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.

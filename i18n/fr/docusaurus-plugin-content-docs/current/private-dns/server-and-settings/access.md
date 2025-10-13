@@ -3,7 +3,7 @@ title: Paramètres d'accès
 sidebar_position: 3
 ---
 
-En configurant les paramètres d'accès, vous pouvez protéger votre AdGuard DNS contre tout accès non autorisé. Par exemple, vous utilisez une adresse IPv4 dédiée et les attaquants utilisant des sniffers l’ont reconnue et la bombardent de requêtes. Pas de problème, il suffit d'ajouter le domaine ou l'adresse IP gênante à la liste et ils ne vous dérangeront plus !
+En configurant les paramètres d'accès, vous pouvez protéger votre AdGuard DNS contre tout accès non autorisé. Par exemple, vous utilisez une adresse IPv4 dédiée et les attaquants utilisant des sniffers l’ont reconnue et la bombardent de requêtes. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 Les requêtes bloquées ne seront pas affichées dans le Journal des requêtes et ne sont pas comptées dans la limite totale.
 
@@ -19,7 +19,7 @@ Ici, vous pouvez lister les clients qui ne sont pas autorisés à utiliser votre
 
 :::note Important
 
-Avant d'appliquer les paramètres d'accès, assurez-vous de ne pas bloquer votre propre adresse IP. Si vous le faites, vous ne pourrez pas accéder au réseau. Si cela se produit, déconnectez-vous simplement du serveur DNS, allez dans les paramètres d'accès, et ajustez les configurations en conséquence.
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Si cela se produit, déconnectez-vous simplement du serveur DNS, allez dans les paramètres d'accès, et ajustez les configurations en conséquence.
 
 :::
 

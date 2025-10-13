@@ -12,9 +12,9 @@ Man kan oprette et tilslutningslink og bruge dette i enhedsindstillingerne. Enhe
 ## Sådan opsættes automatisk tilslutning
 
 1. Åbn _Kontrolpanel_ og vælg den relevante servere.
-2. Gå til _Enheder_.
+2. Gå til _Avanceret_.
 3. Aktivér muligheden for at tilslutte enheder automatisk.
-    ![Tilslut enheder automatisk \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+   ![Tilslut enheder automatisk \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Nu kan man automatisk tilslutte sin enhed til serveren ved at oprette en særlig adresse, der inkluderer enhedsnavn, enhedstype og aktuelt server-ID. Lad os se på, hvordan disse adresser ser ud og reglerne for at oprette dem.
 
@@ -55,5 +55,5 @@ Vi har tilføjet en skabelon, der genererer et link til den bestemte enhedstype 
 1. Gå til _Servere_ → _Serverindstillinger_ → _Enheder_ → _Tilslut enheder automatisk_ og klik på _Linkgenerator og vejledning_.
 2. Vælg den ønskede protokol samt enhedsnavnet og enhedstypen.
 3. Klik på _Generér link_.
-    ![Generér link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![Generér link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Linket er hermed genereret, kopiér nu serveradressen og brug den i en af [AdGuard-apperne](https://adguard.com/welcome.html)

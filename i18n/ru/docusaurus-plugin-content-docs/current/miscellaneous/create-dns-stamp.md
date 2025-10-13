@@ -1,5 +1,5 @@
 - - -
-title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
+title: Как создать собственную DNS-метку ( DNS stamp) для Secure DNS sidebar_position: 4
 - - -
 
 В этой инструкции рассказывается о том, как создать собственную DNS-метку (DNS stamp) для Secure DNS. Secure DNS — это сервис, который улучшает конфиденциальность и безопасность в интернете через шифрование DNS-запросов. Таким образом злоумышленники не смогут перехватить ваши DNS-запросы.

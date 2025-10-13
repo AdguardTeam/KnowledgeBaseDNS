@@ -23,7 +23,7 @@ Chrome을 사용 중이고 AdGuard DNS 대시보드에 요청이 표시되지 �
 
 ![Chrome의 보안 DNS 사용 기능](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Chrome의 자체 DNS 설정을 비활성화하면 브라우저는 운영 체제가 지정한 DNS를 사용합니다. 올바르게 설정했다면 AdGuard DNS가 되어야 합니다.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud 비공개 릴레이(Safari, macOS 및 iOS)
 

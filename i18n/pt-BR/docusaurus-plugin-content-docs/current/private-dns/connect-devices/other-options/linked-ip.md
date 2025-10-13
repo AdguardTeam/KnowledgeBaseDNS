@@ -9,7 +9,7 @@ Nem todos os dispositivos são compatíveis com protocolos DNS criptografados. N
 
 :::note
 
-Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. Normalmente, ele está vinculado a uma localização física e é designado a casas ou apartamentos individuais. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como procurar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
+Um **endereço IP residencial** é atribuído a um dispositivo conectado a um ISP residencial. It’s usually tied to a physical location and given to individual homes or apartments. As pessoas usam endereços IP residenciais para atividades online do dia a dia, como procurar na Web, enviar e-mails, usar redes sociais ou streaming de conteúdo.
 
 :::
 
@@ -28,11 +28,11 @@ As instruções a seguir explicam como se conectar ao dispositivo via **endereç
 3. Vá para _Usar endereços de servidor DNS_.
 4. Abra _Endereços de servidor DNS simples_ e conecte o IP vinculado.
 
-    ![IP vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![IP vinculado \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## DNS dinâmico: por que é útil
 
-Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP pode atribuir o endereço de IP liberado a outro dispositivo na rede. Isso significa que os endereços IP dinâmicos mudam com frequência e de forma imprevisível. Consequentemente, você precisará atualizar as configurações sempre que o dispositivo for reiniciado ou a rede mudar.
+Toda vez que um dispositivo se conecta à rede, ele recebe um novo endereço IP dinâmico. Quando um dispositivo se desconecta, o servidor DHCP pode atribuir o endereço de IP liberado a outro dispositivo na rede. Isso significa que os endereços IP dinâmicos mudam com frequência e de forma imprevisível. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 Para manter automaticamente o endereço IP vinculado atualizado, você pode usar DNS. O AdGuard DNS verificará regularmente o endereço IP do seu domínio DDNS e o vinculará ao seu servidor.
 
@@ -48,11 +48,11 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
 
 1. Primeiro, você precisa verificar se o DDNS é compatível com as configurações do seu roteador:
 
-    - Vá para _Configurações do roteador_ → _Rede_
-    - Localize a seção DDNS ou _DNS Dinâmico_
-    - Navegue até ele e verifique se as configurações são realmente compatíveis. _This is just an example of what it may look like, the settings may vary depending on your router_
+   - Vá para _Configurações do roteador_ → _Rede_
+   - Localize a seção DDNS ou _DNS Dinâmico_
+   - Navegue até ele e verifique se as configurações são realmente compatíveis. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registre seu domínio em um serviço popular como [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/), ou qualquer outro provedor de DDNS que preferir.
 
@@ -62,9 +62,9 @@ Dessa forma, você não precisará atualizar manualmente o endereço de IP assoc
 
 5. Insira o domínio que você registrou anteriormente e clique em _Configurar DDNS_.
 
-    ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![Configurar DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Tudo pronto, você configurou o DDNS com sucesso!
+All done, you’ve successfully set up DDNS!
 
 ## Automação da atualização de IP vinculado via script
 
@@ -73,14 +73,14 @@ Tudo pronto, você configurou o DDNS com sucesso!
 A maneira mais fácil é usar o Task Scheduler:
 
 1. Crie uma tarefa:
-    - Abra o Task Scheduler.
-    - Crie uma nova tarefa.
-    - Defina o gatilho para executar a cada 5 minutos.
-    - Selecione _Executar Programa_ como a ação.
+   - Abra o Task Scheduler.
+   - Crie uma nova tarefa.
+   - Defina o gatilho para executar a cada 5 minutos.
+   - Selecione _Executar Programa_ como a ação.
 2. Selecione um programa:
-    - No campo _Programa ou Script_, digite \`powershell'
-    - No campo _Adicionar Argumentos_, digite:
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - In the _Program or Script_ field, type `powershell`
+   - No campo _Adicionar Argumentos_, digite:
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Salve a tarefa.
 
 ### No macOS e Linux
@@ -88,11 +88,11 @@ A maneira mais fácil é usar o Task Scheduler:
 No macOS e Linux, a maneira mais fácil é usar `cron`:
 
 1. Abra o crontab:
-    - No terminal, execute `crontab -e`.
+   - No terminal, execute `crontab -e`.
 2. Adicione uma tarefa:
-    - Insira a seguinte linha:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Este trabalho será executado a cada 5 minutos
+   - Insira a seguinte linha:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Este trabalho será executado a cada 5 minutos
 3. Salve o crontab.
 
 :::note Importante

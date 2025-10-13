@@ -23,7 +23,7 @@ Chrome kullanıyorsanız ve AdGuard DNS panonuzda herhangi bir istek görmüyors
 
 ![Chrome'un güvenli DNS kullan özelliği](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Chrome'un kendi DNS ayarlarını devre dışı bırakırsanız tarayıcı, işletim sisteminizde belirtilen DNS'i kullanır; doğru şekilde ayarladıysanız bu DNS, AdGuard DNS olmalıdır.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud Özel Geçişi (Safari, macOS ve iOS)
 

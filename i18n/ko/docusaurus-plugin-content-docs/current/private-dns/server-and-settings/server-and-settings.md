@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## What is a server and how to use it
 
-사설 AdGuard DNS를 설정할 때 **서버**라는 용어가 표시됩니다.
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 서버는 기기를 연결하는 '프로필' 역할을 합니다.
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 트래픽 필터링 및 차단 규칙에 대한 자세한 정보는 ['AdGuard DNS에서 필터링 설정 방법'](/private-dns/setting-up-filtering/blocklists.md) 기사를 참고하세요.
 
-특정 설정에 관심이 있다면 해당 주제에 대한 전담 문서를 참조하세요.
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [고급 설정](/private-dns/server-and-settings/advanced.md)
 - [접근 설정](/private-dns/server-and-settings/access.md)

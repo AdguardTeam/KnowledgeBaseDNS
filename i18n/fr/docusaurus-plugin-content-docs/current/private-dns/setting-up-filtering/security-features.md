@@ -3,7 +3,7 @@ title: Fonctionnalités de sécurité
 sidebar_position: 3
 ---
 
-Les paramètres de sécurité de AdGuard DNS sont un ensemble de configurations conçues pour protéger les informations personnelles de l'utilisateur.
+The AdGuard DNS security settings are a set of configurations designed to protect the user’s personal information.
 
 Ici, vous pouvez choisir les méthodes que vous souhaitez utiliser pour vous protéger contre les attaquants. Vous éviterez ainsi de visiter des sites d'hameçonnage et des sites falsifiés, ainsi que des fuites potentielles de données sensibles.
 

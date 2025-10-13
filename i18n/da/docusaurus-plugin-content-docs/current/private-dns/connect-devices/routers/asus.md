@@ -19,7 +19,7 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 6. Skift DNS-fortrolighedsprotokol til DNS-over-TLS (DoT).
 7. Sørg for, at _DNS-over-TLS-profilen_ er sat til _Striks_.
 8. Rul ned til afsnittet _DNS-over-TLS Serverliste_. Angiv i feltet _Adresse_ én af nedenstående adresser:
-    - `94.140.14.49` og `94.140.14.59`
+   - `94.140.14.49` og `94.140.14.59`
 9. Som _TLS-port_, angiv 853.
 10. Angiv Private AdGuard DNS-serveradressen i feltet _TLS-værtsnavn_:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 4. Vælg _WAN_ eller _Internet_.
 5. Åbn _DNS-indstillinger_ eller _DNS_.
 6. Vælg _Manuel indstilling_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
-    - IPv4: `94.140.14.49` and `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` and `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Gem indstillingerne.
 8. Tilslut IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-    - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -33,8 +33,8 @@ This shows the countries to which the most requests have been sent.
 
 In addition to the country names, the list contains two more general categories:
 
-- **Not applicable**: Response doesn't include IP address
-- **Unknown destination**: Country can't be determined from IP address
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![Top destinations *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

@@ -54,7 +54,7 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, macOS 기�
 
 ## 구성 프로필 사용
 
-Apple에서 '구성 프로필'이라고도 하는 macOS 기기 프로필은 기기에 수동으로 설치하거나 MDM 솔루션을 사용하여 배포할 수 있는 인증서로 서명된 XML 파일입니다. 이 프로필은 기기에서 개인 AdGuard DNS를 구성하는 데에도 사용됩니다.
+A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. 이 프로필은 기기에서 개인 AdGuard DNS를 구성하는 데에도 사용됩니다.
 
 :::note 중요
 

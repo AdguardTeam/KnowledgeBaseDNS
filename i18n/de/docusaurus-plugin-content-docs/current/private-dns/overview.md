@@ -214,3 +214,9 @@ In diesem Abschnitt werden eine Reihe von Einstellungen beschrieben, mit denen S
 Statistiken und Anfragenprotokoll geben Aufschluss über die Aktivitäten Ihrer Geräte. Im Tab *Statistiken* können Sie eine Zusammenfassung der DNS-Anfragen einsehen, die von Geräten gestellt werden, die mit Ihrem Privaten AdGuard DNS verbunden sind. Im Anfragenprotokoll können Sie Informationen zu jeder Anfrage anzeigen und Anfragen nach Status, Typ, Unternehmen, Gerät, Zeit und Land sortieren.
 
 [Statistiken und Anfragenprotokoll](/private-dns/statistics-and-log/statistics.md)
+
+### Benutzerdefinierte Domains
+
+Wenn Sie ein Enterprise- oder Team-Abonnement haben, können Sie Ihre eigenen Domains (wie `dns.example.com`) anstelle der Standarddomain `d.adguard-dns.com` einrichten. Diese Einstellung integriert sich nahtlos in die Sicherheitsrichtlinien Ihres Unternehmens und erhält dabei alle AdGuard DNS-Funktionen zum Werbeblocken und Datenschutz.
+
+[Benutzerdefinierte Domains](/private-dns/custom-domains.md)

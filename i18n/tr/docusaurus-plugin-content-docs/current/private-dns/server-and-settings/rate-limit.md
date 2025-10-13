@@ -9,7 +9,7 @@ Oran sınırlaması olmadan, DNS sunucuları aşırı yüklenmeye karşı savunm
 
 ## Oran sınırlaması nasıl çalışır
 
-DNS oran sınırlaması genellikle bir istemcinin (IP adresi) belirli bir süre içinde bir DNS sunucusuna yapabileceği istek sayısına eşikler koyarak çalışır. Mevcut AdGuard DNS oran sınırlamasıyla ilgili sorun yaşıyorsanız ve bir _Takım_ veya _Kurumsal_ planındaysanız, oran sınırlama artışı talebinde bulunabilirsiniz.
+DNS oran sınırlaması genellikle bir istemcinin (IP adresi) belirli bir süre içinde bir DNS sunucusuna yapabileceği istek sayısına eşikler koyarak çalışır. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## DNS pran sınırlama artışı nasıl talep edilir
 
@@ -19,6 +19,6 @@ AdGuard DNS _Takım_ veya _Kurumsal_ planına aboneyseniz, daha yüksek bir oran
 
 2. Tap _request a limit increase_ to contact our support team and apply for the rate limit increase. You will need to provide your CIDR and the limit you want to have
 
- ![Oran sınırlaması](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Oran sınırlaması](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Talebiniz 1–3 iş günü içerisinde incelenecektir. Değişiklikler hakkında sizinle e-posta yoluyla iletişime geçeceğiz

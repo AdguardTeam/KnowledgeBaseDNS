@@ -149,7 +149,7 @@ Una volta che i token d'accesso e di aggiornamento sono generati, le chiamate al
 
 ### Riferimento
 
-Sei pregato di consultare i riferimenti del metodo, [qui](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### Specifiche OpenAPI
 

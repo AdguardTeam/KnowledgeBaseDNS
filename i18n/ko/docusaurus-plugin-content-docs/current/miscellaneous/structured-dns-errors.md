@@ -3,15 +3,15 @@ title: Structured DNS Errors(SDE)
 sidebar_position: 5
 ---
 
-AdGuard DNS 2.10의 출시와 함께 AdGuard DNS는 Structured DNS Errors(SDE)에 대한 지원을 추가한 최초의 공용 DNS 리졸버가 되었습니다. Structured DNS Errors는 RFC 8914에 추가된 기능입니다. 이 기능을 사용하면 DNS 서버가 일반적인 브라우저 메시지에 의존하지 않고 차단된 웹사이트에 대한 자세한 정보를 DNS 응답에 직접 제공할 수 있습니다. 이 글에서는 **Structured DNS Errors**가 무엇이며 어떻게 작동하는지 설명합니다.
+AdGuard DNS 2.10의 출시와 함께 AdGuard DNS는 Structured DNS Errors(SDE)에 대한 지원을 추가한 최초의 공용 DNS 리졸버가 되었습니다. Structured DNS Errors는 RFC 8914에 추가된 기능입니다. 이 기능을 사용하면 DNS 서버가 일반적인 브라우저 메시지에 의존하지 않고 차단된 웹사이트에 대한 자세한 정보를 DNS 응답에 직접 제공할 수 있습니다. In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
 
 ## Structured DNS Errors란 무엇인가요?
 
-광고 또는 추적 도메인에 대한 요청이 차단되면 사용자는 웹사이트에 빈 공간이 표시되거나 DNS 필터링이 발생했다는 사실조차 인지하지 못할 수 있습니다. 그러나 전체 웹사이트가 DNS 수준에서 차단되면 사용자는 해당 페이지에 완전히 액세스할 수 없게 됩니다. 차단된 웹사이트에 액세스하려고 할 때 브라우저에 일반적인 '이 사이트에 연결할 수 없습니다' 오류가 표시될 수 있습니다.
+광고 또는 추적 도메인에 대한 요청이 차단되면 사용자는 웹사이트에 빈 공간이 표시되거나 DNS 필터링이 발생했다는 사실조차 인지하지 못할 수 있습니다. 그러나 전체 웹사이트가 DNS 수준에서 차단되면 사용자는 해당 페이지에 완전히 액세스할 수 없게 됩니다. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-!['이 사이트에 접근할 수 없습니다' 오류](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-이러한 오류는 무슨 일이 왜 발생했는지 설명하지 못합니다. 이로 인해 사용자는 웹사이트에 액세스할 수 없는 이유에 대해 혼란스러워하며 인터넷 연결이나 DNS 리졸버가 고장났다고 생각하는 경우가 많습니다.
+Such errors don’t explain what happened and why. 이로 인해 사용자는 웹사이트에 액세스할 수 없는 이유에 대해 혼란스러워하며 인터넷 연결이나 DNS 리졸버가 고장났다고 생각하는 경우가 많습니다.
 
 이를 명확히 하기 위해 DNS 서버는 사용자를 설명이 포함된 자체 페이지로 리디렉션할 수 있습니다. 그러나 HTTPS 웹사이트(대부분의 웹사이트)에는 별도의 인증서가 필요합니다.
 

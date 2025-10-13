@@ -16,7 +16,7 @@ DNS stamps allow you to customize Secure DNS settings beyond the usual URLs. In 
 
 ## 选择协议
 
-Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you'll be using them.
+Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)`, and some others. Choosing one of these protocols depends on the context in which you’ll be using them.
 
 ## 创建 DNS 戳
 
@@ -56,7 +56,7 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-
 
 ### 获取证书哈希
 
-To fill in the **Hashes of the server's certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -64,7 +64,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server's certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+The result of the hash command may change over time as the server’s certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 
 :::
 
@@ -74,7 +74,7 @@ You now have your own DNS stamp that you can use to set up Secure DNS. This stam
 
 ## 创建 DNS 戳示例
 
-Let's go through an example of creating a stamp for AdGuard DNS using DoT:
+Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
 
 1. 打开 [DNSCrypt 戳计算器](https://dnscrypt.info/stamps/)。
 
@@ -82,9 +82,9 @@ Let's go through an example of creating a stamp for AdGuard DNS using DoT:
 
 3. 填写以下字段：
 
-    - **IP 地址**：输入 DNS 服务器的 IP 地址和端口。 在本例中，它是 `94.140.14.14:853`。
+    - **IP 地址**：输入 DNS 服务器的 IP 地址和端口。 In this case, it’s `94.140.14.14:853`.
 
-    - **主机名**：输入 DNS 服务器的主机名。 在本例中，它是 `dns.adguard-dns.com`。
+    - **主机名**：输入 DNS 服务器的主机名。 In this case, it’s `dns.adguard-dns.com`.
 
     - **哈希值**：执行命令
 
@@ -92,7 +92,7 @@ Let's go through an example of creating a stamp for AdGuard DNS using DoT:
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    结果为 `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` 将服务器证书的 SHA256 哈希值粘贴到字段中。
+    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server’s certificate into the field.
 
 4. 将属性部分留空。
 

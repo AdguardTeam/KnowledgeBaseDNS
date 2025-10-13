@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi-Router haben viele Vorteile: ein stabiles, starkes Signal, Netzwerksicherheit, robuste Leistung und intelligente Verwaltung. Benutzer können bis zu 64 Geräte mit einem lokalen WLAN-Netzwerk verbinden.
 
-Leider unterstützen diese Router kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von AdGuard DNS über verknüpfte IPs.
+Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
 
 ## Administrationsoberfläche Ihres Routers verwenden
 
@@ -16,8 +16,8 @@ Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- 
 3. Öffnen Sie je nach Routermodell _Erweiterte Einstellungen_ oder _Erweitert_.
 4. Öffnen Sie _Netzwerk_ oder _Internet_ und suchen Sie nach DNS oder DNS-Einstellungen.
 5. Wählen Sie _Manuelles DNS_. Wählen Sie _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
-    - IPv4: `94.140.14.49` und `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` und `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 6. Speichern Sie die Einstellungen.
 7. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 

@@ -39,8 +39,8 @@ Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la co
 4. Sélectionnez _WAN_ ou _Internet_.
 5. Sélectionnez _DNS_ ou _Paramètres DNS_.
 6. Choisissez _DNS Manuel_. Sélectionnez _Utiliser ces serveurs DNS_ ou _Spécifier le serveur DNS manuellement_ et saisissez les adresses des serveurs DNS suivantes :
-    - IPv4 : `94.140.14.49` et `94.140.14.59`
-    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4 : `94.140.14.49` et `94.140.14.59`
+   - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 7. Enregistrez les paramètres.
 8. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 

@@ -3,7 +3,7 @@ title: 'Atualizando a Base de Conhecimento'
 sidebar_position: 1
 ---
 
-O objetivo desta Base de conhecimento é fornecer a todos as informações mais atualizadas sobre todos os tipos de tópicos relacionados ao AdGuard DNS. Mas as coisas mudam constantemente e, às vezes, um artigo não reflete mais o estado atual das coisas - simplesmente não há muitos de nós para ficar de olho em cada informação e atualizá-la de acordo quando novas versões são lançadas.
+O objetivo desta Base de conhecimento é fornecer a todos as informações mais atualizadas sobre todos os tipos de tópicos relacionados ao AdGuard DNS. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 É por isso que colocamos todo o nosso conteúdo da KB no [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), e agora literalmente qualquer pessoa pode contribuir sugerindo edições e traduções de artigos existentes, bem como de artigos totalmente novos.
 
@@ -15,7 +15,7 @@ Quando estiver pronto para começar, trabalhe com o [repositório KnowledgeBaseD
 
 O site da Base de Conhecimento é construído usando o Docusaurus 2 — um moderno gerador de sites estáticos. Ao sugerir alterações ou acréscimos, leve em consideração que todos os documentos devem obedecer aos princípios da plataforma. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
 
-Você pode implantar esta Base de Conhecimento localmente em seu computador para visualizar as alterações sugeridas. Instruções detalhadas sobre como fazer isso podem ser encontradas [no arquivo README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) na página GitHub desta Base de Conhecimento.
+Você pode implantar esta Base de Conhecimento localmente em seu computador para visualizar as alterações sugeridas. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## Traduzindo artigos {#translate-adguard}
 

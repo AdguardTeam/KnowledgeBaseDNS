@@ -9,7 +9,7 @@ Tüm cihazlar şifrelenmiş DNS protokollerini desteklemez. Bu durumda, şifrele
 
 :::note
 
-**Konut IP adresi**, konut bir İSS'ye bağlı bir cihaza atanır. Genellikle fiziksel bir konuma bağlıdır ve bireysel evlere veya dairelere verilir. İnsanlar web'de gezinmek, e-posta göndermek, sosyal medya kullanmak veya canlı yayın akışı içeriği sağlamak gibi günlük çevrimiçi etkinlikler için konut IP adreslerini kullanırlar.
+**Konut IP adresi**, konut bir İSS'ye bağlı bir cihaza atanır. It’s usually tied to a physical location and given to individual homes or apartments. İnsanlar web'de gezinmek, e-posta göndermek, sosyal medya kullanmak veya canlı yayın akışı içeriği sağlamak gibi günlük çevrimiçi etkinlikler için konut IP adreslerini kullanırlar.
 
 :::
 
@@ -28,11 +28,11 @@ Aşağıdaki talimatlar, cihaza **IP adresini bağlamak** aracılığıyla nası
 3. _DNS sunucu adreslerini kullan_ öğesine gidin.
 4. _Düz DNS sunucu adresleri_ öğesini açın ve bağlı IP'yi bağlayın.
 
-    ![Bağlı IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![Bağlı IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dinamik DNS: Neden yararlıdır
 
-Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. Bir cihazın bağlantısı kesildiğinde, DHCP sunucusu serbest bırakılan IP adresini ağdaki başka bir cihaza atayabilir. Bu, dinamik IP adreslerinin sık sık ve öngörülemeyen bir şekilde değiştiği anlamına gelir. Sonuç olarak, cihaz her yeniden başlatıldığında veya ağ değiştiğinde ayarları güncellemeniz gerekir.
+Bir cihaz ağa her bağlandığında yeni bir dinamik IP adresi alır. Bir cihazın bağlantısı kesildiğinde, DHCP sunucusu serbest bırakılan IP adresini ağdaki başka bir cihaza atayabilir. Bu, dinamik IP adreslerinin sık sık ve öngörülemeyen bir şekilde değiştiği anlamına gelir. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 Bağlı IP adresini otomatik olarak güncel tutmak için DNS kullanabilirsiniz. AdGuard DNS, DDNS alan adınızın IP adresini düzenli olarak kontrol eder ve sunucunuza bağlar.
 
@@ -48,11 +48,11 @@ Bu şekilde, ilişkili IP adresini her değiştiğinde elle güncellemeniz gerek
 
 1. Öncelikle, DDNS'nin yönlendirici ayarlarınız tarafından desteklenip desteklenmediğini kontrol etmeniz gerekir:
 
-    - _Yönlendirici ayarları_ → _Ağ_ öğesine gidin
-    - DDNS veya _Dinamik DNS_ bölümünü bulun
-    - Oraya gidin ve ayarların gerçekten desteklendiğini doğrulayın. _Bu, neye benzeyebileceğine dair sadece bir örnektir, ayarlar yönlendiricinize bağlı olarak değişebilir_
+   - _Yönlendirici ayarları_ → _Ağ_ öğesine gidin
+   - DDNS veya _Dinamik DNS_ bölümünü bulun
+   - Oraya gidin ve ayarların gerçekten desteklendiğini doğrulayın. _Bu, neye benzeyebileceğine dair sadece bir örnektir, ayarlar yönlendiricinize bağlı olarak değişebilir_
 
-    ![DDNS destekli \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS destekli \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Alan adınızı [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) veya tercih ettiğiniz başka bir DDNS sağlayıcısı gibi popüler bir hizmetle tescil ettirin.
 
@@ -62,9 +62,9 @@ Bu şekilde, ilişkili IP adresini her değiştiğinde elle güncellemeniz gerek
 
 5. Daha önce tescil ettirdiğiniz alan adını girin ve _DDNS'i yapılandır_ öğesine tıklayın.
 
-    ![DDNS'i yapılandır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![DDNS'i yapılandır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-Hepsi tamam, DDNS'i başarıyla kurdunuz!
+All done, you’ve successfully set up DDNS!
 
 ## Betik aracılığıyla bağlı IP güncellemesinin otomasyonu
 
@@ -73,14 +73,14 @@ Hepsi tamam, DDNS'i başarıyla kurdunuz!
 En kolay yol Görev Zamanlayıcı'yı kullanmaktır:
 
 1. Bir görev oluşturun:
-    - Görev Zamanlayıcı'yı açın.
-    - Yeni bir görev oluşturun.
-    - Tetikleyiciyi her 5 dakikada bir çalışacak şekilde ayarlayın.
-    - Eylem olarak _Programı Başlat_ öğesini seçin.
+   - Görev Zamanlayıcı'yı açın.
+   - Yeni bir görev oluşturun.
+   - Tetikleyiciyi her 5 dakikada bir çalışacak şekilde ayarlayın.
+   - Eylem olarak _Programı Başlat_ öğesini seçin.
 2. Program seçin:
-    - _Program veya Betik_ alanına `powershell` yazın
-    - In the _Add Arguments_ field, type:
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - In the _Program or Script_ field, type `powershell`
+   - In the _Add Arguments_ field, type:
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Görevi kaydedin.
 
 ### On macOS and Linux
@@ -88,11 +88,11 @@ En kolay yol Görev Zamanlayıcı'yı kullanmaktır:
 On macOS and Linux, the easiest way is to use `cron`:
 
 1. Open crontab:
-    - Terminalde `crontab -e` komutunu çalıştırın.
+   - Terminalde `crontab -e` komutunu çalıştırın.
 2. Bir görev ekleyin:
-    - Şu satırı ekleyin:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Bu işlem her 5 dakikada bir çalışır
+   - Şu satırı ekleyin:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Bu işlem her 5 dakikada bir çalışır
 3. Save crontab.
 
 :::note Önemli

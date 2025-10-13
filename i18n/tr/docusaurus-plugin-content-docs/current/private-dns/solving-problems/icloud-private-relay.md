@@ -5,7 +5,7 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-iCloud Private Relay kullanırken, AdGuard DNS panosu (ve ilgili [AdGuard test sayfası](https://adguard.com/test.html)) o aygıtta AdGuard DNS kullanmadığınızı gösterir.
+When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![Cihaz bağlı değil](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
@@ -29,10 +29,10 @@ Bu sorunu çözmek için cihazınızın ayarlarında AdGuard sitelerin IP adresi
 
     1. `adguard.com` adresi için tekrarlayın
 
-Bir sitenin IP adresinizi geçici olarak görmesine izin verme seçeneğini göremiyorsanız aygıtınızı iOS, iPadOS veya macOS'in en son sürümüne güncelleyin ve ardından tekrar deneyin.
+If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 Artık cihazınız AdGuard DNS panosunda doğru şekilde görüntülenmelidir:
 
 ![Cihaz bağlandı](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-Belirli bir site için Private Relay'i kapattığınızda ağ sağlayıcınızın da hangi siteye göz attığınızı görebileceğini unutmayın.
+Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.

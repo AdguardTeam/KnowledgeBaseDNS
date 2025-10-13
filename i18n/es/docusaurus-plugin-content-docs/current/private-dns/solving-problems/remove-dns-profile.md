@@ -3,7 +3,7 @@ title: Cómo eliminar un perfil DNS
 sidebar_position: 3
 ---
 
-Si necesitas desconectar tu iPhone, iPad o Mac con un perfil DNS configurado desde tu servidor DNS, debes eliminar ese perfil DNS. Aquí te explicamos cómo hacerlo.
+Si necesitas desconectar tu iPhone, iPad o Mac con un perfil DNS configurado desde tu servidor DNS, debes eliminar ese perfil DNS. Here’s how to do it.
 
 En tu Mac:
 

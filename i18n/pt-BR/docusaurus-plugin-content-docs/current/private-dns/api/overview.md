@@ -149,7 +149,7 @@ Uma vez que os tokens de acesso e atualização são gerados, as chamadas de API
 
 ### Referência
 
-Por favor, consulte a referência de métodos [aqui](reference.md).
+Please see the [method’s reference](reference.md).
 
 ### OpenAPI spec
 

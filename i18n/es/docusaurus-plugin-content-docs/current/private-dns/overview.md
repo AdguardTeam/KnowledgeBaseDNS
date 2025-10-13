@@ -214,3 +214,9 @@ En esta sección describimos una serie de configuraciones que le permiten ajusta
 Estadísticas y registro de consultas proporcionan información sobre la actividad de tus dispositivos. La pestaña *Estadísticas* te permite ver un resumen de las peticiones DNS realizadas por los dispositivos conectados a tu DNS privado de AdGuard. En el registro de consultas, puedes ver información sobre cada petición y también clasificar las peticiones por estado, tipo, empresa, dispositivo, hora y país.
 
 [Estadísticas y Registro de consultas](/private-dns/statistics-and-log/statistics.md)
+
+### Dominios personalizados
+
+Los suscriptores de AdGuard DNS Enterprise y Equipo pueden usar sus propios dominios (como `dns.example.com`) en lugar del dominio predeterminado `d.adguard-dns.com`. Esta configuración garantiza una integración fluida con las políticas de seguridad corporativas, mientras se mantienen todas las funciones de bloqueo de anuncios y privacidad proporcionadas por AdGuard DNS.
+
+[Dominios personalizados](/private-dns/custom-domains.md)

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Vyhrazené adresy IPv4 jsou k dispozici uživatelům s předplatným Team a Enterprise, zatímco propojené IP jsou k dispozici všem.
 
-Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhrazených IP adres. Požadavky na tyto adresy jsou považovány za "vaše" a podle toho jsou použity konfigurace a pravidla filtrování na úrovni serveru. Vyhrazené IP adresy jsou mnohem bezpečnější a snadněji se spravují. S propojenými IP adresami se musíte ručně znovu připojit nebo použít speciální program pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
+Pokud máte předplatné Team nebo Enterprise, získáte několik osobních vyhrazených IP adres. Požadavky na tyto adresy jsou považovány za vaše a podle toho jsou použity konfigurace a pravidla filtrování na úrovni serveru. Vyhrazené IP adresy jsou mnohem bezpečnější a snadněji se spravují. S propojenými IP adresami se musíte ručně znovu připojit nebo použít speciální program pokaždé, když se změní IP adresa zařízení, což se děje po každém restartu.
 
 ## Proč potřebujete vyhrazenou IP adresu?
 
@@ -28,5 +28,5 @@ Níže uvedené pokyny vysvětlují, jak k zařízení připojit vyhrazenou IP a
 5. Vyberte server, který chcete použít.
 6. Chcete-li vázat vyhrazenou adresu IPv4, klikněte na tlačítko _Přiřadit_.
 7. Pokud chcete použít vyhrazenou adresu IPv6, klikněte na _Kopírovat_.
-    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Zkopírujte a vložte vybranou vyhrazenou adresu do konfigurace zařízení.

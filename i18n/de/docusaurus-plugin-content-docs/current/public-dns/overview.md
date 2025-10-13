@@ -9,15 +9,11 @@ AdGuard DNS ist ein kostenloser, datenschutzorientierter DNS-Auflösungsdienst, 
 
 ## Öffentliche AdGuard DNS-Server
 
-AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. Der „Standard”-Server dient zum Sperren von Werbung, Trackern, Malware und Phishing-Websites. Der "Familienschutz" tut dasselbe, sperrt aber auch Websites mit nicht jugendfreien Inhalten und erzwingt die Option „Sichere Suche” in Browsern, die dies anbieten. „Ohne Filterung” bietet eine sichere und zuverlässige Verbindung, sperrt aber nichts. Eine ausführliche Anleitung zur Einrichtung von AdGuard DNS auf jedem Gerät finden Sie auf [unserer Website](https://adguard-dns.io/public-dns.html). Jeder Server unterstützt verschiedene Sicherheitsprotokolle: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), und DNS-over-QUIC (DoQ).
+AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Eine ausführliche Anleitung zur Einrichtung von AdGuard DNS auf jedem Gerät finden Sie auf [unserer Website](https://adguard-dns.io/public-dns.html). Jeder Server unterstützt verschiedene Sicherheitsprotokolle: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), und DNS-over-QUIC (DoQ).
 
 ## AdGuard DNS-Protokoll
 
 Neben einfachem DNS (sowohl IPv4 als auch IPv6) unterstützt AdGuard DNS verschiedene verschlüsselte Protokolle, so dass Sie das für Sie am besten geeignete auswählen können.
-
-### DNSCrypt
-
-AdGuard DNS ermöglicht Ihnen die Verwendung eines speziellen verschlüsselten Protokolls — DNSCrypt. Dank dieser Funktion werden alle DNS-Anfragen verschlüsselt, was Sie vor dem Abfangen von Anfragen und dem anschließenden Abhören und/oder Ändern schützt. Im Vergleich zu den Protokollen DoH, DoT und DoQ gilt DNSCrypt jedoch als veraltet, und wir empfehlen nach Möglichkeit die Verwendung dieser Protokolle.
 
 ### DNS-over-HTTPS (DoH) und DNS-over-TLS (DoT)
 
@@ -31,11 +27,11 @@ AdGuard DNS bietet auch eine JSON-API für DNS. Es ist möglich, eine DNS-Antwor
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-Eine ausführliche Dokumentation finden Sie in [Googles Anleitung zu JSON API für DNS über HTTPS (DoH) ](https://developers.google.com/speed/public-dns/docs/doh/json). Das Abrufen einer DNS-Antwort in JSON funktioniert mit AdGuard DNS auf die gleiche Weise.
+For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Das Abrufen einer DNS-Antwort in JSON funktioniert mit AdGuard DNS auf die gleiche Weise.
 
 :::note
 
-Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` und `Comment`-Werte in Antwort-JSONs.
+Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
 
 :::
 
@@ -46,3 +42,13 @@ Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` u
 ### Ratenbegrenzung
 
 DNS-Datenstrombegrenzung ist eine Technik, mit der die Menge des Datenverkehrs, die ein DNS-Server innerhalb eines bestimmten Zeitraums bewältigen kann, geregelt wird. Wir bieten die Möglichkeit, das Standardlimit für Team- und Enterprise-Pakete von Private AdGuard DNS zu erhöhen. Für weitere Informationen lesen Sie bitte [den entsprechenden Artikel](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note
+
+This is an obsolete protocol with restricted support.
+
+:::

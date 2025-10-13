@@ -23,7 +23,7 @@ Wenn Sie Chrome verwenden und keine Anfragen in Ihrer AdGuard DNS-Übersicht seh
 
 ![Chromes Funktion „Sicheres DNS verwenden“](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Wenn Sie die eigenen DNS-Einstellungen von Chrome deaktivieren, verwendet der Browser das in Ihrem Betriebssystem angegebene DNS, das AdGuard DNS sein sollte, wenn Sie es korrekt eingerichtet haben.
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloud Privat-Relay (Safari, macOS und iOS)
 

@@ -3,7 +3,7 @@ title: 통계와 쿼리 로그
 sidebar_position: 1
 ---
 
-AdGuard DNS를 사용하는 목적 중 하나는 기기의 활동과 연결 대상을 명확하게 파악하는 것입니다. 이 도구가 없으면 기기의 활동을 모니터링할 수 없습니다.
+AdGuard DNS를 사용하는 목적 중 하나는 기기의 활동과 연결 대상을 명확하게 파악하는 것입니다. Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS는 쿼리를 모니터링하기 위한 다양한 유용한 도구를 제공합니다:
 

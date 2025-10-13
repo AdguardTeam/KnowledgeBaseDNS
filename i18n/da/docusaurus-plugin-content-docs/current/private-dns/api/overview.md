@@ -149,7 +149,7 @@ Når først adgangs- og refresh-tokenerne er genereret, kan API-kald foretages v
 
 ### Reference
 
-Se metodereferencen [hér](reference.md).
+Se [metodereferencen](reference.md).
 
 ### OpenAPI-specifikation
 

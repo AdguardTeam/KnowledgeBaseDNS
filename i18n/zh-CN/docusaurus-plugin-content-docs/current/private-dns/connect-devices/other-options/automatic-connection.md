@@ -12,9 +12,9 @@ sidebar_position: 5
 ## 如何配置自动连接
 
 1. 打开「_仪表盘_」并选择所需的服务器。
-2. 转到「_设备_」。
+2. Go to _Advanced_.
 3. 启用自动连接设备的选项。
-    ![自动连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
+   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 现在，可以通过创建包含设备名称、设备类型和当前服务器 ID 的特殊地址，将设备自动连接到服务器。 让我们来了解这些地址的格式以及创建它们的规则。
 
@@ -55,5 +55,5 @@ sidebar_position: 5
 1. 转到「_服务器_」→「_服务器设置_」→「_设备_」→「_自动连接设备_」然后点击「_链接生成器和指示说明_」。
 2. 选择要使用的协议，以及设备名称和设备类型。
 3. 点击「_生成链接_」。
-    ![生成链接 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![生成链接 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. 链接生成成功。请复制服务器地址并在 [AdGuard 应用程序](https://adguard.com/welcome.html)中使用它。

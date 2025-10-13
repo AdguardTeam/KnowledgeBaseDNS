@@ -59,7 +59,7 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, iOS 기기
 
 ## 구성 프로필 사용
 
-iOS 장치 프로필은 Apple에서 '구성 프로필'이라고도 하며, iOS 장치에 수동으로 설치하거나 MDM 솔루션을 사용하여 배포할 수 있는 인증서 서명된 XML 파일입니다. 이 프로필은 기기에서 개인 AdGuard DNS를 구성하는 데에도 사용됩니다.
+An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. 이 프로필은 기기에서 개인 AdGuard DNS를 구성하는 데에도 사용됩니다.
 
 :::note 중요
 
@@ -67,7 +67,7 @@ VPN을 사용 중인 경우, 구성 프로필은 무시됩니다.
 
 :::
 
-1. [프로필 다운로드](https://dns.website.agrd.dev/public_api/v1/settings/e7b499cc-94c0-4448-8404-88d11f4f51a2/doh_mobileconfig.xml).
+1. 프로필 다운로드.
 2. 설정을 엽니다.
 3. **프로필 다운로드됨**을 누릅니다.
     ![프로필 다운로드 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Hvad er en server, og hvordan anvendes den
 
-Når en Privat AdGuard DNS opsættes, vil man støde på begrebet _servere_.
+Når en Private AdGuard DNS opsættes, vil man støde på begrebet _servere_.
 
 En servere fungerer som den “profil”, hvortil enheder tilsluttes.
 

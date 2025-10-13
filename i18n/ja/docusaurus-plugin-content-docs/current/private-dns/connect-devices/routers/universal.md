@@ -3,7 +3,7 @@ title: 一般的な手順
 sidebar_position: 2
 ---
 
-ここでは、ルーターでプライベート AdGuard DNS を設定するための一般的な手順を紹介しております。 一覧で特定のルーター専用の手順が見つからない場合は、このガイドをお使いください。 ※ここに記載されている設定内容はおおよそのものであり、特定モデルの設定項目とは多少異なる場合があることにご注意ください。
+ここでは、ルーターでプライベート AdGuard DNS を設定するための一般的な手順を紹介しております。 You can refer to this guide if you can’t find your specific router in the main list. ※ここに記載されている設定内容はおおよそのものであり、特定モデルの設定項目とは多少異なる場合があることにご注意ください。
 
 ## ルーターの管理画面を使って接続する
 
@@ -12,7 +12,7 @@ sidebar_position: 2
     - Netgear ルーターは通常、[http://192.168.0.1](http://192.168.0.1/) または [http://192.168.1.1](http://192.168.1.1/) を使用しています。D-Link ルーターは通常、[http://192.168.0.1](http://192.168.0.1/) を使用しています。
     - Ubiquiti ルーターは通常、[http://unifi.ubnt.com](http://unifi.ubnt.com/) を使用しています。
 
-2. ルーターのパスワードを入力します。
+2. Enter the router’s password.
 
     :::note 重要
 
@@ -20,7 +20,7 @@ sidebar_position: 2
 
     :::
 
-3. ルーターの管理コンソールでDNS設定を見つけます。 そこにあるDNSアドレスを以下のものに変更します:
+3. Find where DNS settings are located in the router’s admin console. そこにあるDNSアドレスを以下のものに変更します:
     - IPv4: `94.140.14.49` と `94.140.14.59`
     - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 

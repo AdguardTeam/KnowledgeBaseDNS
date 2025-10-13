@@ -10,7 +10,7 @@ Primeiro, você precisa adicionar seu roteador à interface do AdGuard DNS:
 1. Vá para o _painel_ e clique em _Conectar novo dispositivo_.
 2. No menu suspenso _Tipo de dispositivo_, selecione Roteador.
 3. Selecione a marca do roteador e nomeie o dispositivo.
-    ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+   ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 Abaixo estão as instruções para diferentes modelos de roteador. Por favor, selecione aquele que você precisa:
 

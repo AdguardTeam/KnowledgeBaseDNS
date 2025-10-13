@@ -23,7 +23,7 @@ AdGuard DNS を使うと、プライベートDNSサーバーを設定してDNS�
 
 現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。 しかし、紛れもない利便性と同時に、トラッカーや広告も発生します。 この場合、単純なブラウザベースの広告ブロッカーでは防御できないが、トラフィックをフィルタリングし、コンテンツやトラッカーをブロックするように設定できるAdGuard DNSは、システム全体に効果があります。
 
-かつて、AdGuard 製品ラインアップには [パブリック AdGuard DNS](../public-dns/overview.md) と [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)のみが含まれていました。 これらのソリューションは、一部のユーザーにとっては問題なく機能するが、他のユーザーにとっては、パブリックAdGuard DNSは設定の柔軟性に欠け、AdGuard Homeはシンプルさに欠けています。 そこで、プライベートAdGuard DNSの出番となります。 シンプルで使いやすいダッシュボードを通じて、カスタマイズ性、コントロール性、そして情報性という、両方の長所を兼ね備えているのです。
+かつて、AdGuard 製品ラインアップには [パブリック AdGuard DNS](../public-dns/overview.md) と [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)のみが含まれていました。 これらのソリューションは、一部のユーザーにとっては問題なく機能するが、他のユーザーにとっては、パブリックAdGuard DNSは設定の柔軟性に欠け、AdGuard Homeはシンプルさに欠けています。 That’s where private AdGuard DNS comes into play. シンプルで使いやすいダッシュボードを通じて、カスタマイズ性、コントロール性、そして情報性という、両方の長所を兼ね備えているのです。
 
 ### AdGuard DNSのパブリックとプライベートの違い
 
@@ -199,7 +199,7 @@ AdGuard DNSは非常に柔軟で、タブレット、PC、ルーター、ゲー�
 
 ### サーバーと設定
 
-このセクションでは、AdGuard DNS における「サーバー」とは何か、どのような設定が利用できるかを説明しております。 この設定により、ブロックされたドメインへの AdGuard DNS の応答をカスタマイズし、DNS サーバーへのアクセスを管理できます。
+This section explains what a server is in AdGuard DNS and what settings are available. この設定により、ブロックされたドメインへの AdGuard DNS の応答をカスタマイズし、DNS サーバーへのアクセスを管理できます。
 
 [サーバーと設定](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -214,3 +214,9 @@ AdGuard DNSは非常に柔軟で、タブレット、PC、ルーター、ゲー�
 統計とクエリログにより、情報を確認してデバイスのアクティビティに関する状況や洞察を把握できます。 「*統計*」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。 「クエリログ」では、各リクエストに関する情報を表示したり、リクエストをステータス、タイプ、企業、デバイス、時間、国別に並べ替えたりすることができます。
 
 [「統計」と「クエリログ」](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/custom-domains.md)

@@ -23,7 +23,7 @@ Chromeを使用していて、AdGuard DNSダッシュボードにリクエスト
 
 ![ChromeのセキュアDNS設定](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Chrome独自のDNS設定を無効にすると、ブラウザはオペレーティングシステムで指定されているDNSを使用しますので、AdGuard DNSが正しく設定されていれば、AdGuardのDNSが使用されるはずです。
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloudプライベートリレー (Safari、macOS、iOS)
 

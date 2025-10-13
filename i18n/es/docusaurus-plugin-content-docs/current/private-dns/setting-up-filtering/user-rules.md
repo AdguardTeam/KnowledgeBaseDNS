@@ -21,10 +21,10 @@ Para configurar reglas de usuario:
 
 4. Haz clic en la opción _Reglas del usuario_.
 
-5. Encontrarás varias opciones para agregar reglas de usuario.
+5. You’ll find several options for adding user rules.
 
     - La forma más sencilla es usar el generador. Para usarlo, haz clic en _Agregar nueva regla_ → Ingresa el nombre del dominio que deseas bloquear o desbloquear → Haz clic en _Agregar regla_
-        ![Agregar regla \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+       ![Agregar regla \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
     - La forma avanzada es usar el editor de reglas. Haz clic en _Abrir editor_ e ingresa las reglas de bloqueo de acuerdo con la [sintaxis](/general/dns-filtering-syntax/)
 
 Esta función te permite [redirigir una consulta a otro dominio reemplazando el contenido de la consulta DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

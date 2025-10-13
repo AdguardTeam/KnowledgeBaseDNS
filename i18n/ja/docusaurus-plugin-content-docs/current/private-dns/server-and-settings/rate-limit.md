@@ -9,7 +9,7 @@ DNSレート制限は、DNSサーバーが一定時間内に処理できるト�
 
 ## レート制限の仕組み
 
-DNSのレート制限は通常、クライアント（IPアドレス）が一定期間内にDNSサーバーに出せるリクエスト数にしきい値を設定することで機能します。 現在の AdGuard DNS のレート制限に問題があり、_チーム_ または _エンタープライズ_ プランをご利用の場合は、レート制限の引き上げをリクエストできます。
+DNSのレート制限は通常、クライアント（IPアドレス）が一定期間内にDNSサーバーに出せるリクエスト数にしきい値を設定することで機能します。 If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## DNSレート上限引き上げの申請方法
 
@@ -19,6 +19,6 @@ AdGuard DNS の _チーム_ または _エンタープライズ_ プランをご
 
 2. [_制限の引き上げをリクエスト_]をタップしてサポートチームに連絡し、レート制限の引き上げを申請してください。 CIDRとご希望の制限を記載してください。
 
- ![レート制限](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+     ![レート制限](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. 申請は1～3営業日以内に審査されます。 メールにて変更内容をご連絡いたします。

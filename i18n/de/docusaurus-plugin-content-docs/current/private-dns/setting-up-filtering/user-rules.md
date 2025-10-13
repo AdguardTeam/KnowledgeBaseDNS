@@ -21,10 +21,10 @@ So richten Sie Benutzerregeln ein:
 
 4. Klicken Sie auf die Option _Benutzerregeln_.
 
-5. Sie finden mehrere Optionen zum Hinzufügen von Benutzerregeln.
+5. You’ll find several options for adding user rules.
 
-    - Am einfachsten ist es, den Generator zu nutzen. Um ihn zu verwenden, klicken Sie auf _Neue Regel hinzufügen_ → Geben Sie den Namen der Domain ein, die Sie sperren oder entsperren möchten → Klicken Sie auf _Regel hinzufügen_
-        ![Regel hinzufügen \*Rand](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - Der fortgeschrittene Weg ist die Verwendung des Regel-Editors. Klicken Sie auf _Editor öffnen_ und geben Sie Sperrregeln gemäß der [Syntax](/general/dns-filtering-syntax/) ein
+   - Am einfachsten ist es, den Generator zu nutzen. Um ihn zu verwenden, klicken Sie auf _Neue Regel hinzufügen_ → Geben Sie den Namen der Domain ein, die Sie sperren oder entsperren möchten → Klicken Sie auf _Regel hinzufügen_
+     ![Regel hinzufügen \*Rand](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Der fortgeschrittene Weg ist die Verwendung des Regel-Editors. Klicken Sie auf _Editor öffnen_ und geben Sie Sperrregeln gemäß der [Syntax](/general/dns-filtering-syntax/) ein
 
 Mit dieser Funktion können Sie eine [Anfrage zu einer anderen Domain umleiten, indem der Inhalt der DNS-Anfrage ersetzt wird](/general/dns-filtering-syntax/#dnsrewrite-modifier).

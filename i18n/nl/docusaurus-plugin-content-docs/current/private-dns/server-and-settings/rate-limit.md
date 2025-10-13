@@ -9,7 +9,7 @@ Zonder snelheidslimieten zijn DNS-servers kwetsbaar voor overbelasting, en als g
 
 ## Hoe werkt de snelheidsimiet
 
-DNS-snelheidsbeperking werkt meestal door drempels in te stellen voor het aantal verzoeken dat een client (IP-adres) gedurende een bepaalde periode aan een DNS-server kan doen. Als je problemen hebt met de huidige AdGuard DNS-snelheidslimiet en een _Team_- of _Zakelijk_-abonnement hebt, kun je een verhoging van de snelheidslimiet aanvragen.
+DNS-snelheidsbeperking werkt meestal door drempels in te stellen voor het aantal verzoeken dat een client (IP-adres) gedurende een bepaalde periode aan een DNS-server kan doen. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## Hoe een verzoek om een verhoging van de DNS-snelheidslimiet aan te vragen
 
@@ -19,6 +19,6 @@ Als je geabonneerd bent op een AdGuard DNS _Team_ of _Zakelijk_ abonnement, kun 
 
 2. Tik op _limietverhoging aanvragen_ om contact op te nemen met ons supportteam en de tariefverhoging aan te vragen. Je moet je CIDR opgeven en de limiet die je wilt hebben
 
- ![Snelheidslimiet](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Snelheidslimiet](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Je verzoek wordt binnen 1-3 werkdagen behandeld. We nemen per e-mail contact met je op over de wijzigingen
