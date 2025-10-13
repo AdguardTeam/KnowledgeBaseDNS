@@ -353,32 +353,6 @@ DNS-серверы с фильтрацией, защищающей ваше ус
 | DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls.sinodun.com` IP-адрес: `145.100.185.15` и IPv6: `2001:610:1:40ba:145:100:185:15`  | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls.sinodun.com&name=dnsovertls.sinodun.com)     |
 | DNS-over-TLS | Провайдер: `Surfnet` Имя хоста: `tls://dnsovertls1.sinodun.com` IP-адрес: `145.100.185.16` и IPv6: `2001:610:1:40ba:145:100:185:16` | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsovertls1.sinodun.com&name=dnsovertls1.sinodun.com) |
 
-### FutureDNS
-
-[FutureDNS](https://futuredns.eu.org) — это DNS-сервис, ориентированный на конфиденциальность, который блокирует рекламу, трекеры и вредоносное ПО. Он поддерживает как стандартные, так и зашифрованные DNS-протоколы, сохраняя при этом строгую политику отсутствия логов.
-
-#### Серверы
-
-##### Германия
-
-| Протокол       | Адрес                                        |                                                                                                                                                                                                                                       |
-| -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `162.55.52.228`                              | [Добавить в AdGuard](adguard:add_dns_server?address=162.55.52.228&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=162.55.52.228&name=)                                                                             |
-| DNS, IPv6      | `2a01:4f8:1c1c:adbc::`                       | [Добавить в AdGuard](adguard:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4f8:1c1c:adbc::&name=)                                                               |
-| DNS-over-HTTPS | `https://dns.de.futuredns.eu.org/dns-query/` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.de.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-TLS   | `tls://dns.de.futuredns.eu.org`              | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.de.futuredns.eu.org&name=FutureDNSDoT)                     |
-| DNS-over-QUIC  | `quic://dns.de.futuredns.eu.org`             | [Добавить в AdGuard](adguard:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.de.futuredns.eu.org&name=FutureDNSDoQ)                   |
-
-##### Соединённые Штаты
-
-| Протокол       | Адрес                                       |                                                                                                                                                                                                                                       |
-| -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `5.161.67.176`                              | [Добавить в AdGuard](adguard:add_dns_server?address=5.161.67.176&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=5.161.67.176&name=)                                                                               |
-| DNS, IPv6      | `2a01:4ff:f0:87a2::`                        | [Добавить в AdGuard](adguard:add_dns_server?address=2a01:4ff:f0:87a2::&name=), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=2a01:4ff:f0:87a2::&name=)                                                                   |
-| DNS-over-HTTPS | `https://dns.us.futuredns.eu.org/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.us.futuredns.eu.org/dns-query/&name=futuredns) |
-| DNS-over-TLS   | `tls://dns.us.futuredns.eu.org`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.us.futuredns.eu.org&name=FutureDNSDoT)                     |
-| DNS-over-QUIC  | `quic://dns.us.futuredns.eu.org`            | [Добавить в AdGuard](adguard:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.us.futuredns.eu.org&name=FutureDNSDoQ)                   |
-
 #### Другие DNS-серверы с политикой без логов
 
 | Протокол           | Адрес                                                                                                                |                                                                                                                                                                                                                                             |
@@ -1245,12 +1219,14 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 [FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.
 
-| Протокол             | Адрес                                                                  |                                                                                                                                                                                                                 |
-| -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-TLS, IPv4   | Hostname: `tls://dot.ffmuc.net`                                        | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net)                         |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query`                            | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443`            | [Добавить в AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0)                                                                   |
-| DNSCrypt, IPv6       | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Добавить в AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ)                                                    |
+| Протокол        | Адрес                                                                  |                                                                                                                                                                                                                 |
+| --------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-TLS    | Hostname: `tls://dot.ffmuc.net`                                        | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net)                         |
+| DNS-over-HTTPS  | Hostname: `https://doh.ffmuc.net/dns-query`                            | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-HTTP/3 | Hostname: `h3://doh.ffmuc.net/dns-query`                               | [Add to AdGuard](adguard:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net)       |
+| DNS-over-QUIC   | Hostname: `quic://doq.ffmuc.net`                                       | [Add to AdGuard](adguard:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net)                       |
+| DNSCrypt, IPv4  | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443`            | [Добавить в AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0)                                                                   |
+| DNSCrypt, IPv6  | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Добавить в AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ)                                                    |
 
 ### fvz DNS
 
@@ -1270,7 +1246,7 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 | DNS-over-TLS, IPv4   | Hostname: `tls://ibksturm.synology.me` IP: `213.196.191.96`             | [Add to AdGuard](adguard:add_dns_server?address=tls://ibksturm.synology.me&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ibksturm.synology.me&name=ibksturm.synology.me)                         |
 | DNS-over-QUIC, IPv4  | Hostname: `quic://ibksturm.synology.me` IP: `213.196.191.96`            | [Add to AdGuard](adguard:add_dns_server?address=quic://ibksturm.synology.me&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://ibksturm.synology.me&name=ibksturm.synology.me)                       |
 | DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `213.196.191.96` | [Add to AdGuard](adguard:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me) |
-| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443`          | [Добавить в AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgKmPSv6jOgF7lERDduUMH7a4Z5ShV7PrD-IcS23XUsPkYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt)                                                                                           |
+| DNSCrypt, IPv4       | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443`          | [Добавить в AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgK374BJKvK0aJHWKjmXdkG8_X2KEoao_LALK_nK6PM_AYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt)                                                                                           |
 
 ### Lelux DNS
 
@@ -1396,7 +1372,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+[ASTRACAT DNS](https://astracat.vercel.app/) — это DNS-резолвер, ориентированный на конфиденциальность, построенный на инфраструктуре Cloudflare и дата-центре ASTRACAT. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
 
 | Протокол       | Адрес                                                 |                                                                                                                                                                                                                                                                                                 |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1408,15 +1384,15 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 [DNSGuard](https://dnsguard.pub) blocks ads, tracking, and malware and has a strict no-logging policy.
 
-| Протокол       | Адрес                            |                                                                                                                                                                                                     |
-| -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS 1, IPv4    | `179.61.253.223`                 | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD)                                 |
-| DNS 2, IPv4    | `181.214.231.96`                 | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD)                                 |
-| DNS 1, IPv6    | `2a0f:5707:aaf1:006c::1`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD)                 |
-| DNS 2, IPv6    | `2a0f:5707:aaf1:006c::2`         | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD)                 |
-| DNS-over-HTTPS | `https://dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
-| DNS-over-TLS   | `tls://dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD)                         |
-| DNS-over-QUIC  | `quic://dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD)                       |
+| Протокол       | Адрес                                |                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS 1, IPv4    | `62.192.153.242`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD)                                         |
+| DNS 2, IPv4    | `62.192.153.243`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD)                                         |
+| DNS 1, IPv6    | `2a0c:4ac1:29::2`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD)                                       |
+| DNS 2, IPv6    | `2a0c:4ac1:29::3`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD)                                       |
+| DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS   | `tls://dns.dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
+| DNS-over-QUIC  | `quic://dns.dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
 
 ### 18Bit DNS
 

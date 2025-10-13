@@ -212,7 +212,7 @@ Problém tohoto přístupu spočívá v tom, že tímto způsobem odblokujete ta
 
 - `@@*$denyallow=com|net`: odblokovat vše kromě `*.com` a `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`: zablokuje `example.org` a `*.example.org`, ale nezablokuje `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 

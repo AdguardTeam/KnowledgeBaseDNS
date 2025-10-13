@@ -212,7 +212,7 @@ $denyallow=domain1|domain2|...
 
 - `@@*$denyallow=com|net`: разблокирует все домены, кроме `*.com` и `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`: блокирует `example.org` и `*.example.org`, но не блокирует `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
