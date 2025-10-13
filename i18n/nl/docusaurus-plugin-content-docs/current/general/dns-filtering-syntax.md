@@ -212,7 +212,7 @@ The problem with this approach is that this way you will also unblock tracking d
 
 - `@@*$denyallow=com|net`: deblokkeer alles behalve `*.com` en `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`: blokkeert `example.org` en `*.example.org`, maar blokkeert `sub.example.org` niet.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
