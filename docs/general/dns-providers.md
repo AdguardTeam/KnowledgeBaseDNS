@@ -1250,8 +1250,10 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-TLS, IPv4 | Hostname: `tls://dot.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net) |
-| DNS-over-HTTPS, IPv4 | Hostname: `https://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-TLS | Hostname: `tls://dot.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.ffmuc.net&name=dot.ffmuc.net) |
+| DNS-over-HTTPS | Hostname: `https://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-HTTP/3 | Hostname: `h3://doh.ffmuc.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://doh.ffmuc.net/dns-query&name=doh.ffmuc.net) |
+| DNS-over-QUIC | Hostname: `quic://doq.ffmuc.net` | [Add to AdGuard](adguard:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://doq.ffmuc.net&name=doq.ffmuc.net) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `5.1.66.255:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAADzUuMS42Ni4yNTU6ODQ0MyAH0Hrxz9xdmXadPwJmkKcESWXCdCdseRyu9a7zuQxG-hkyLmRuc2NyeXB0LWNlcnQuZmZtdWMubmV0) |
 | DNSCrypt, IPv6 | Provider: `2.dnscrypt-cert.ffmuc.net` IP: `[2001:678:e68:f000::]:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAGlsyMDAxOjY3ODplNjg6ZjAwMDo6XTo4NDQzIAfQevHP3F2Zdp0_AmaQpwRJZcJ0J2x5HK71rvO5DEb6GTIuZG5zY3J5cHQtY2VydC5mZm11Yy5uZXQ) |
 
@@ -1413,13 +1415,13 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 
 | Protocol         | Address                                             |                |
 |------------------|-----------------------------------------------------|----------------|
-| DNS 1, IPv4     | `179.61.253.223`                                    | [Add to AdGuard](adguard:add_dns_server?address=179.61.253.223&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=179.61.253.223&name=DNSGUARD) |
-| DNS 2, IPv4     | `181.214.231.96`                                    | [Add to AdGuard](adguard:add_dns_server?address=181.214.231.96&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=181.214.231.96&name=DNSGUARD) |
-| DNS 1, IPv6     | `2a0f:5707:aaf1:006c::1`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::1&name=DNSGUARD) |
-| DNS 2, IPv6     | `2a0f:5707:aaf1:006c::2`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0f:5707:aaf1:006c::2&name=DNSGUARD) |
-| DNS-over-HTTPS   | `https://dnsguard.pub/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dnsguard.pub/dns-query&name=DNSGUARD) |
-| DNS-over-TLS     | `tls://dnsguard.pub`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dnsguard.pub&name=DNSGUARD) |
-| DNS-over-QUIC    | `quic://dnsguard.pub`                               | [Add to AdGuard](adguard:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dnsguard.pub&name=DNSGUARD) |
+| DNS 1, IPv4     | `62.192.153.242`                                    | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD) |
+| DNS 2, IPv4     | `62.192.153.243`                                    | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD) |
+| DNS 1, IPv6     | `2a0c:4ac1:29::2`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD) |
+| DNS 2, IPv6     | `2a0c:4ac1:29::3`                                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD) |
+| DNS-over-HTTPS   | `https://dns.dnsguard.pub/dns-query`                    | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS     | `tls://dns.dnsguard.pub`                                | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD) |
+| DNS-over-QUIC    | `quic://dns.dnsguard.pub`                               | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD) |
 
 ### 18Bit DNS
 
