@@ -219,4 +219,4 @@ AdGuard DNS 非常灵活，可设置在各种设备上，包括平板电脑、PC
 
 AdGuard DNS 企业版和团队版订阅用户可以使用自己的域名（如 `dns.example.com`），而不是默认的 `d.adguard-dns.com`。 此设置通过确保与企业安全政策的无缝集成，同时保留 AdGuard DNS 提供的完整阻止广告和隐私保护功能。
 
-[自定义域名](/private-dns/custom-domains.md)
+[自定义域名](/private-dns/server-and-settings/custom-domains.md)

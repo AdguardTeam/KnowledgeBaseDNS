@@ -219,4 +219,4 @@ Statistics and Query log provide insight into the activity of your devices. The 
 
 AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
 
-[Custom domains](/private-dns/custom-domains.md)
+[Custom domains](/private-dns/server-and-settings/custom-domains.md)

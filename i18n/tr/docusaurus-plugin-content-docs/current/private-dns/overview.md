@@ -219,4 +219,4 @@ Bu bölümde, AdGuard DNS'in işlevselliğini ince ayar yapmanıza olanak tanıy
 
 AdGuard DNS Kurumsal ve Takım aboneleri varsayılan `d.adguard-dns.com` yerine kendi alan adlarını (örneğin `dns.example.com`) kullanabilirler. Bu ayar, AdGuard DNS tarafından sağlanan tam reklam engelleme ve gizlilik özelliklerini korurken kurumsal güvenlik politikalarıyla sorunsuz entegrasyon sağlar.
 
-[Özel alan adları](/private-dns/custom-domains.md)
+[Özel alan adları](/private-dns/server-and-settings/custom-domains.md)

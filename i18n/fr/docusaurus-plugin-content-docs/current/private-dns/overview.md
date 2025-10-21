@@ -219,4 +219,4 @@ Les Statistiques et le Journal des requêtes donnent un aperçu de l'activité d
 
 Les abonnés à AdGuard DNS Entreprise et Équipe peuvent utiliser leurs propres domaines (comme `dns.example.com`) au lieu du domaine par défaut `d.adguard-dns.com`. Ce paramètre garantit une intégration fluide avec les politiques de sécurité d’entreprise tout en maintenant toutes les fonctionnalités de blocage des publicités et de confidentialité fournies par AdGuard DNS.
 
-[Domaines personnalisés](/private-dns/custom-domains.md)
+[Domaines personnalisés](/private-dns/server-and-settings/custom-domains.md)

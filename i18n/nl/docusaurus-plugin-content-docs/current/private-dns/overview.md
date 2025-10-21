@@ -219,4 +219,4 @@ Statistics and Query log provide insight into the activity of your devices. The 
 
 AdGuard DNS Zakelijk- en Team-abonnees kunnen hun eigen domeinen (zoals `dns.example.com`) gebruiken in plaats van de standaard `d.adguard-dns.com`. Deze instelling zorgt voor een naadloze integratie met het beveiligingsbeleid van bedrijven, terwijl de volledige advertentieblokkering en privacyfuncties van AdGuard DNS behouden blijven.
 
-[Aangepaste domeinen](/private-dns/custom-domains.md)
+[Aangepaste domeinen](/private-dns/server-and-settings/custom-domains.md)

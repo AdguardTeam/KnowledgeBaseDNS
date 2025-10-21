@@ -219,4 +219,4 @@ Estadísticas y registro de consultas proporcionan información sobre la activid
 
 Los suscriptores de AdGuard DNS Enterprise y Equipo pueden usar sus propios dominios (como `dns.example.com`) en lugar del dominio predeterminado `d.adguard-dns.com`. Esta configuración garantiza una integración fluida con las políticas de seguridad corporativas, mientras se mantienen todas las funciones de bloqueo de anuncios y privacidad proporcionadas por AdGuard DNS.
 
-[Dominios personalizados](/private-dns/custom-domains.md)
+[Dominios personalizados](/private-dns/server-and-settings/custom-domains.md)
