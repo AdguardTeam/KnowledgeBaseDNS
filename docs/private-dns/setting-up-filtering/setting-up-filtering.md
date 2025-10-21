@@ -16,7 +16,7 @@ AdGuard DNS provides a range of tools for customizing filtering and access:
   Lets you add custom filters and your own filtering rules
 
 - [Security features](/private-dns/setting-up-filtering/security-features.md)
-  
+
   Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
 
 - [Parental control](/private-dns/setting-up-filtering/parental-control.md)
