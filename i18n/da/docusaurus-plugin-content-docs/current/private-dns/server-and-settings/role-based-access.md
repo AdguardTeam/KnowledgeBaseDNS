@@ -1,35 +1,35 @@
 ---
-title: Role-based access
+title: Rollebaseret adgang
 sidebar_position: 5
 ---
 
-With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member logs in individually, ensuring a secure and efficient workflow in collaborative environments.
+Kontoindehavere med rollebaseret adgang kan invitere medlemmer med bestemte roller til at håndtere DNS uden at dele legitimationsoplysninger. Hvert medlem logger ind individuelt, hvilket sikrer en sikker og effektiv arbejdsgang i samarbejdsmiljøer.
 
 :::note
 
-This feature is available for **Business** accounts with a **Team** or **Enterprise** subscription.
+Denne funktion er tilgængelig i **Virksohedskonti** med et **Team**- eller **Enterprise**-abonnement.
 
 :::
 
-## Types of members
+## Medlemstyper
 
-DNS accounts support three access levels. Ownership is fixed at registration, while **admins** and **viewers** are added through invitations. Roles can be updated or revoked at any time, and the number of members is virtually unlimited.
+DNS-konti understøtter tre adgangsniveauer. Ejerskab fastlægges under registreringen, mens **admins** og **seer** tilføjes via invitationer. Roller kan opdateres eller tilbagekaldes når som helst, og antallet af medlemmer er stort set ubegrænset.
 
-- **Owner**: the account holder with full access to all settings and billing
+- **Ejer**: Kontohaveren med fuld adgang til alle indstillinger og fakturering
 
-![Owner settings](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
+![Ejerindstillinger](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
 
-- **Admin**: a member who can modify DNS settings, manage devices, and invite other members. Best for system administrators or MSPs responsible for network filtering in organizations. With a single login, admins can manage several accounts and switch between them quickly
+- **Admin**: Et medlem, der kan ændre DNS-indstillinger, håndtere enheder og invitere andre medlemmer. Bedst til systemadministratorer eller MSP'er med ansvar for netværksfiltrering i organisationer. Med ét login kan admins håndtere flere konti og hurtigt skifte mellem dem
 
-![Multiple DNS accounts](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
+![Flere DNS-konti](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
 
-- **Viewer**: a member with read-only access. Can view settings and statistics but cannot make changes. Best for consultants or managers who monitor network activity and provide recommendations without modifying DNS settings
+- **Seer**: Medlem med skrivebeskyttet adgang. Kan se indstillinger og statistikker, men kan ikke foretage ændringer. Bedst til konsulenter eller ledere, som overvåger netværksaktivitet og giver anbefalinger uden at ændre DNS-indstillinger
 
-## How to invite members
+## Sådan inviteres medlemmer
 
-![Adding a member](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
+![Tilføjelse af medlem](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
 
-1. Go to your dashboard → [_Settings_](https://adguard-dns.io/dashboard/settings/).
-2. In the _Organization_ section, open [_Members_](https://adguard-dns.io/dashboard/account/members).
-3. Click _Add member_, enter your colleague’s email address, and select the access type — admin or viewer.
-4. Wait until they accept the invitation, and you’re ready to collaborate!
+1. Gå til kontrolpanelet → [_Indstillinger_](https://adguard-dns.io/dashboard/settings/).
+2. I afsnittet _Organisation_, åbn [_Medlemmer_](https://adguard-dns.io/dashboard/account/members).
+3. Klik på _Tilføj medlem_, indtast kollegaens e-mailadresse og vælg adgangstypen — admin eller seer.
+4. Afvent vedkommendes accept af invitationen, hvorefter man klar til at samarbejde!
