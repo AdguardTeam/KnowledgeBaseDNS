@@ -21,14 +21,14 @@ sidebar_position: 10
    - Марка устройства: «Unifi»
    - Имя устройства: используйте имя вашего устройства Unifi
 3. Нажмите _Далее_.
-4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
+4. Прокрутите до _Через адреса DNS-серверов_ → _DNS-over-HTTPS_ и обратите внимание на URL DNS-over-HTTPS (например, https://d.adguard-dns.com/dns-query/123456abc).
 
-Generate a DNS stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) and set it.
+Сгенерируйте DNS-метку с помощью [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) и установите её.
 
-1. Protocol: DNS-over-HTTPS
-2. Host name: d.adguard-dns.com
-3. Path: /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
-4. Untick
+1. Протокол: DNS-over-HTTPS
+2. Имя хоста: d.adguard-dns.com
+3. Путь: /dns-query/123456abc (замените 123456abc на значение, полученное из Панели управления Личного AdGuard DNS)
+4. Снимите галочки
    - No filter
    - No logs
 5. Copy the DNS stamp URL (e.g., sdns://AgcAAAAAA…)

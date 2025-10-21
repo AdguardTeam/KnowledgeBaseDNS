@@ -1,35 +1,35 @@
 ---
-title: Role-based access
+title: Доступ на основе ролей
 sidebar_position: 5
 ---
 
-With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member logs in individually, ensuring a secure and efficient workflow in collaborative environments.
+Благодаря доступу на основе ролей владельцы учётных записей могут приглашать участников с определёнными ролями для управления DNS без совместного использования учётных данных. У каждого участника будет индивидуальный доступ в систему, что обеспечит безопасный и эффективный рабочий процесс в условиях совместной работы.
 
 :::note
 
-This feature is available for **Business** accounts with a **Team** or **Enterprise** subscription.
+Эта функция доступна для **Бизнес-аккаунтов** с **Командной** или **Корпоративной** подпиской.
 
 :::
 
-## Types of members
+## Типы участников
 
-DNS accounts support three access levels. Ownership is fixed at registration, while **admins** and **viewers** are added through invitations. Roles can be updated or revoked at any time, and the number of members is virtually unlimited.
+DNS-аккаунты поддерживают три уровня доступа. Права владельца закрепляются при регистрации, а **администраторы** и **участники** добавляются по приглашениям. Роли можно обновлять или отзывать в любое время, а количество участников практически не ограничено.
 
-- **Owner**: the account holder with full access to all settings and billing
+- **Владелец**: держатель аккаунта с полным доступом ко всем настройкам и оплате
 
-![Owner settings](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
+![Настройки владельца](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_ru.png)
 
-- **Admin**: a member who can modify DNS settings, manage devices, and invite other members. Best for system administrators or MSPs responsible for network filtering in organizations. With a single login, admins can manage several accounts and switch between them quickly
+- **Администратор**: участник, который может изменять DNS-настройки, управлять устройствами и приглашать других участников. Лучше всего подходит для системных администраторов или MSP-специалистов, отвечающих за сетевую фильтрацию в организациях. Используя один логин, администраторы могут управлять несколькими аккаунтами и быстро переключаться между ними
 
-![Multiple DNS accounts](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
+![Несколько DNS-аккаунтов](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_ru.png)
 
-- **Viewer**: a member with read-only access. Can view settings and statistics but cannot make changes. Best for consultants or managers who monitor network activity and provide recommendations without modifying DNS settings
+- **Участник**: участник с доступом только для чтения. Может просматривать настройки и статистику, но не может вносить изменения. Идеально подходит для консультантов или менеджеров, которые следят за активностью в сети и предоставляют рекомендации, не изменяя DNS-настройки
 
-## How to invite members
+## Как пригласить пользователей
 
-![Adding a member](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
+![Добавление участника](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_ru.png)
 
-1. Go to your dashboard → [_Settings_](https://adguard-dns.io/dashboard/settings/).
-2. In the _Organization_ section, open [_Members_](https://adguard-dns.io/dashboard/account/members).
-3. Click _Add member_, enter your colleague’s email address, and select the access type — admin or viewer.
-4. Wait until they accept the invitation, and you’re ready to collaborate!
+1. Перейдите к вашей панели управления → [_Настройки_](https://adguard-dns.io/dashboard/settings/).
+2. В разделе _Организация_ откройте [_Пользователи_](https://adguard-dns.io/dashboard/account/members).
+3. Нажмите _Добавить пользователя_, введите адрес почты вашего коллеги и выберите тип доступа — администратор или участник.
+4. Дождитесь, пока они примут приглашение, и приступайте к совместной работе!
