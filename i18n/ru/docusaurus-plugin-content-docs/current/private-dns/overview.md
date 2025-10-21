@@ -219,4 +219,4 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 
 AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
 
-[Пользовательские домены](/private-dns/custom-domains.md)
+[Пользовательские домены](/private-dns/server-and-settings/custom-domains.md)
