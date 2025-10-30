@@ -71,9 +71,9 @@ For iOS versions prior to 26.1:
 
 ## Limit IP Address Tracking on iPhone
 
-When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS's ability to filter traffic.
+When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS’s ability to filter traffic.
 
-This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple's own private relay servers. This prevents AdGuard DNS from receiving your device's actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
+This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple’s own private relay servers. This prevents AdGuard DNS from receiving your device’s actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
 
 To restore full DNS-based filtering, you will need to disable this feature for the Wi-Fi network you are currently using.
 
@@ -82,7 +82,7 @@ Please follow the steps below:
 1. Open *Settings* on your iPhone.
 1. Tap *Wi-Fi*.
 1. Find and tap the name of the Wi-Fi network you are currently connected to.
-1. On the network's settings page, toggle off the switch for *Limit IP Address Tracking.*
+1. On the network’s settings page, toggle off the switch for *Limit IP Address Tracking.*
 
 ![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
 
