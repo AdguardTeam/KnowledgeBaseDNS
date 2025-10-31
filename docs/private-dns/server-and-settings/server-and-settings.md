@@ -19,7 +19,7 @@ For instance, you can have:
 - A server that blocks adult content and certain services
 - A server that blocks adult content only during specific hours you choose
 
-For more information on traffic filtering and blocking rules, check out the [“How to set up filtering in AdGuard DNS”](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
+For more information on traffic filtering and blocking rules, check out the [*How to set up filtering in AdGuard DNS*](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
 
 If you’re interested in specific settings, there are dedicated articles available for that:
 

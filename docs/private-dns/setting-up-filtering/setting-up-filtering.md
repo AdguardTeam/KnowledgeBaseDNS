@@ -3,7 +3,7 @@ title: How to set up filtering
 sidebar_position: 1
 ---
 
-Private DNS does more than just blocking ads, trackers and other unwanted requests. It also lets you fine-tune blocking and set up access restriction to certain websites or services.
+Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
 
 AdGuard DNS provides a range of tools for customizing filtering and access:
 
