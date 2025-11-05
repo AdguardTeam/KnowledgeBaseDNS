@@ -215,8 +215,8 @@ Statistiky a protokol dotazů poskytují přehled o činnosti vašich zařízen�
 
 [Statistiky a protokol dotazů](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### Vlastní domény
 
-AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+Předplatitelé AdGuard DNS Enterprise a Team mohou místo výchozí domény `d.adguard-dns.com` používat své vlastní domény (např. `dns.example.com`). Toto nastavení zajišťuje hladkou integraci s bezpečnostními zásadami společnosti a zároveň zachovává všechny funkce blokování reklam a ochrany soukromí, které poskytuje AdGuard DNS.
 
-[Custom domains](/private-dns/custom-domains.md)
+[Vlastní domény](/private-dns/custom-domains.md)

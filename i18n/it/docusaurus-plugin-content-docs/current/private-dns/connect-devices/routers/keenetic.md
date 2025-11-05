@@ -39,8 +39,8 @@ Utilizza queste istruzioni se il tuo router Keenetic non supporta la configurazi
 4. Seleziona _WAN_ o _Internet_.
 5. Seleziona _DNS_ o _Impostazioni DNS_.
 6. Scegli _Manuale DNS_. Seleziona _Usa questi server DNS_ oppure _Specifica manualmente il server DNS_ e inserisci i seguenti indirizzi server:
-    - IPv4: `94.140.14.49` e `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` e `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 7. Salva le impostazioni.
 8. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 

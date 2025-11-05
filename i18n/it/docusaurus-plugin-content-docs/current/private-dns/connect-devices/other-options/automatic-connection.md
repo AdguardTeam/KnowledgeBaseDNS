@@ -14,7 +14,7 @@ Puoi creare un collegamento e utilizzarlo nelle impostazioni del dispositivo. Il
 1. Apri il _Cruscotto_ e seleziona il server richiesto.
 2. Go to _Advanced_.
 3. Abilita l'opzione per connettere i dispositivi automaticamente.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
+   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Ora puoi connettere automaticamente il tuo dispositivo al server creando un indirizzo speciale che include il nome del dispositivo, il tipo di dispositivo e l'ID del server corrente. Esploriamo come appaiono questi indirizzi e le regole per crearli.
 
@@ -55,5 +55,5 @@ Abbiamo aggiunto un modello che genera un collegamento per il tipo di dispositiv
 1. Vai a _Server_ → _Impostazioni server_ → _Dispositivi_ → _Connetti dispositivi automaticamente_ e clicca su _Generatore collegamenti e istruzioni_.
 2. Seleziona il protocollo che desideri usare, il nome del dispositivo e il tipo di dispositivo.
 3. Clicca su _Genera collegamento_.
-    ![Genera collegamento \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![Genera collegamento \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Hai generato correttamente il collegamento, ora copia l'indirizzo del server e usalo in una delle [app AdGuard](https://adguard.com/welcome.html)

@@ -163,7 +163,7 @@ Client names usually contain spaces or other special characters, which is why yo
 
 :::note Not
 
-When excluding a client, you **must** place `~` outside the quotes.
+Bir istemciyi hariç tutarken, tırnakların dışına `~` işareti **koymalısınız**.
 
 :::
 
@@ -212,7 +212,7 @@ The problem with this approach is that this way you will also unblock tracking d
 
 - `@@*$denyallow=com|net`: `*.com` ve `*.net` dışındaki her şeyin engelini kaldırın.
 
-- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org` but don’t block `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
@@ -273,7 +273,7 @@ The `dnsrewrite` response modifier allows replacing the content of the response 
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. Değiştirme yanıtının yanıt bölümü yalnızca isteğin sorgu türüyle eşleşen RR'leri ve muhtemelen CNAME RR'leri içerir. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
 The shorthand syntax is:
 
@@ -297,7 +297,7 @@ $dnsrewrite=REFUSED;;
 
 The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
 
-The `CNAME` one is special because AdGuard Home will resolve the host and add its info to the response. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
+`CNAME` özeldir çünkü AdGuard Home ana makineyi çözer ve bilgisini yanıta ekler. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
 
 ```none
 ||example.com^$dnsrewrite=example.net
@@ -321,7 +321,7 @@ Ad: example.net
 Adres: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite. After that, all other records’ values are summed as one response, so this:
+Next, the `CNAME` rewrite. Bundan sonra, diğer tüm kayıtların değerleri tek bir yanıt olarak toplanır, yani bu:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
@@ -500,7 +500,7 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # bu da bir yorumdur
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. In Private AdGuard DNS, these addresses are simply blocked.
 
 ## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 

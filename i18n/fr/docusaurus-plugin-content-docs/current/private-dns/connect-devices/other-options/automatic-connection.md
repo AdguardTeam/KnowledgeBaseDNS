@@ -14,7 +14,7 @@ Vous pouvez créer un lien de connexion et l'utiliser dans les paramètres de l'
 1. Ouvrez le _tableau de bord_ et sélectionnez le serveur requis.
 2. Go to _Advanced_.
 3. Activez l'option pour connecter les appareils automatiquement.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
+   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 Vous pouvez connecter automatiquement votre appareil au serveur en créant une adresse spéciale qui inclut le nom de l'appareil, le type d'appareil et l'ID du serveur actuel. Explorons à quoi ressemblent ces adresses et les règles pour les créer.
 
@@ -55,5 +55,5 @@ Nous avons ajouté un modèle qui génère un lien pour le type d'appareil et le
 1. Allez à _Serveurs_ → _Paramètres du serveur_ → _Appareils_ → _Connecter les appareils automatiquement_ et cliquez sur _Générateur de liens et instructions_.
 2. Sélectionnez le protocole que vous souhaitez utiliser ainsi que le nom de l'appareil et le type d'appareil.
 3. Cliquez sur _Générer un lien_.
-    ![Générer le lien \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![Générer le lien \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Vous avez réussi à générer le lien, copiez maintenant l'adresse du serveur et utilisez-la dans l'un des [applications AdGuard](https://adguard.com/welcome.html)

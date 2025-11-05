@@ -1,31 +1,31 @@
 ---
-title: Custom domains
+title: Tilpassede domæner
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS-abonnenter kan opsætte egne domæner (såsom `dns.eksempel.com`) i stedet for standard `d.adguard-dns.com`. Denne funktion er beregnet til at hjælpe virksomheder med at tilpasse DNS-beskyttelse til deres infrastruktur ved at sikre problemfri integration med virksomhedens sikkerhedspolitikker, mens alle adblocking- og fortrolighedsfunktioner leveret af AdGuard DNS samtidig bevares.
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+Tilpassede domæner er tilgængelige for brugere af **Enterprise**- og **Team**-abonnementstyper.
 
 :::
 
-## How to set up a custom domain
+## Sådan opsættes et tilpasset domæne
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+For at opsætte et tilpasset domæne, log ind på AdGuard DNS-kontrolpanelet og gå til [_Kontoindstillinger_](https://adguard-dns.io/en/dashboard/account). Rul ned til _Avanceret indstillinger_ og vælg _Tilpassede domæner_. Gennemgå dernæst de tre hovedtrin.
 
-1. Choose the protocol. Here, you have two options:
+1. Vælg protokol. Her findes to muligheder:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - Tilføj DoH-domæne (til DNS-over-HTTPS)
+   - Tilføj DoT-/DoQ-domæne (til DNS-over-TLS/DNS-over-QUIC)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Vælg protokol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
-2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+2. Efter valg af protokol, angiv det foretrukne domænenavn (f.eks. `eksempel.com`) og bekræft CNAME-posten.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![CNAME-post \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Opsætning af certifikat. Til DoT-/DoQ-domæner skal et jokertegns TLS-certifikat uploades. Vælges DoH, kan man enten angive sit eget TLS-certifikat eller få AdGuard DNS til at generere ét. Når det er blevet bekræftet, vil det tilpasset domæne fremgå i kontrolpanelet, klar til brug.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Tilpasset domæneliste \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

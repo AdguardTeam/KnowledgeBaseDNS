@@ -1,31 +1,31 @@
 ---
-title: Custom domains
+title: Dominios personalizados
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+Los suscriptores de AdGuard DNS pueden realizar la configuración de sus propios dominios (como `dns.example.com`) en lugar del dominio predeterminado `d.adguard-dns.com`. Esta función está diseñada para ayudar a las empresas a alinear la Protección DNS con su infraestructura, garantizando una integración fluida con las políticas de seguridad corporativas, mientras se mantienen todas las funciones de bloqueo de anuncios y privacidad proporcionadas por AdGuard DNS.
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+Los dominios personalizados están disponibles para los usuarios de los planes **Enterprise** y **Equipo**.
 
 :::
 
-## How to set up a custom domain
+## Cómo realizar la configuración de un dominio personalizado
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+Para configurar un dominio personalizado, inicia sesión en tu panel de control de AdGuard DNS y ve a [_Configuración de la cuenta_](https://adguard-dns.io/es/dashboard/account). Desplázate hacia abajo hasta la configuración avanzada y selecciona _Dominios personalizados_. A continuación, deberá pasar por los tres pasos principales.
 
-1. Choose the protocol. Here, you have two options:
+1. Elige el protocolo. Aquí, tienes dos opciones:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+    - Agrega un dominio DoH (para DNS-over-HTTPS)
+    - Agrega un dominio DoT/DoQ (para DNS-over-TLS o DNS-over-QUIC)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Elija el protocolo \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_es_1.png)
 
-2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+2. Después de seleccionar el protocolo, introduce el nombre de dominio preferido (por ejemplo, "example.com") y verifica el registro CNAME.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![Registro CNAME \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_es_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Configura un certificado. Para los dominios de DNS-over-TLS/DNS-over-QUIC, deberás cargar un certificado TLS wildcard. Si eliges DNS-over-HTTPS, puedes proporcionar tu propio certificado TLS o permitir que AdGuard DNS genere uno para ti. Una vez verificado, tu dominio personalizado aparecerá en el panel de control, listo para ser utilizado.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Lista de dominios personalizados \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_es_3.png)

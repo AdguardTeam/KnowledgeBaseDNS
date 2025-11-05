@@ -37,25 +37,25 @@ Podporované architektury CPU:
 
 1. Stáhněte a rozbalte archiv `.tar.gz` nebo `.zip` ze [stránky vydání][releases].
 
-  :::caution
+   :::caution
 
-  V macOS je zásadní, aby globálně nainstalované démony vlastnil `root` (viz dokumentace [`launchd`][launchd-requirements]), takže spustitelný soubor `AdGuardDNSClient` musí být umístěn v adresáři `/Applications/` nebo jeho podadresář.
+   V macOS je zásadní, aby globálně nainstalované démony vlastnil `root` (viz dokumentace [`launchd`][launchd-requirements]), takže spustitelný soubor `AdGuardDNSClient` musí být umístěn v adresáři `/Applications/` nebo jeho podadresář.
 
-  :::
+   :::
 
 2. Nainstalujte jej jako službu spuštěním:
 
-  ```sh
-  ./AdGuardDNSClient -s install -v
-  ```
+   ```sh
+   ./AdGuardDNSClient -s install -v
+   ```
 
 3. Upravte konfigurační soubor `config.yaml`.
 
 4. Spusťte službu:
 
-  ```sh
-  ./AdGuardDNSClient -s start -v
-  ```
+   ```sh
+   ./AdGuardDNSClient -s start -v
+   ```
 
 Chcete-li zkontrolovat, zda funguje, použijte libovolný nástroj pro kontrolu DNS. Například pomocí `nslookup`:
 

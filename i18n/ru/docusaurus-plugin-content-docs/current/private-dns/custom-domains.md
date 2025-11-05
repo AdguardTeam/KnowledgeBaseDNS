@@ -1,31 +1,31 @@
 ---
-title: Custom domains
+title: Пользовательские домены
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+Подписчики AdGuard DNS могут настраивать собственные домены (например, `dns.example.com`) вместо `d.adguard-dns.com`, который используется по умолчанию. Эта функция призвана помочь компаниям привести DNS-защиту в соответствие со своей инфраструктурой, обеспечивая бесшовную интеграцию с корпоративной политикой безопасности, сохраняя при этом все функции блокировки рекламы и конфиденциальности, предоставляемые AdGuard DNS.
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+Пользовательские домены доступны пользователям **Командной** и **Корпоративной** подписок.
 
 :::
 
-## How to set up a custom domain
+## Как настроить пользовательский домен
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+Чтобы настроить пользовательский домен, войдите в панель управления AdGuard DNS и перейдите в раздел [_Настройки_](https://adguard-dns.io/en/dashboard/account). Прокрутите вниз до _Расширенных настроек_ и выберите _Пользовательские домены_. Затем выполните три основных шага.
 
-1. Choose the protocol. Here, you have two options:
+1. Выберите протокол. Есть два варианта:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - Добавить домен DoH (для DNS-over-HTTPS)
+   - Добавить домен DoT/DoQ (для DNS-over-TLS или DNS-over-QUIC)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Выберите протокол \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
-2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+2. Выбрав протокол, введите предпочтительное доменное имя (например, `example.com`) и проверьте запись CNAME.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![Запись CNAME \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Установите сертификат. Для доменов DoT/DoQ вам понадобится загрузить сертификат TLS с подстановочным знаком. Если вы выбрали DoH, вы можете либо предоставить свой собственный TLS-сертификат, либо позволить AdGuard DNS сгенерировать его для вас. После проверки ваш пользовательский домен появится на панели управления, готовый к использованию.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Список пользовательских доменов \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

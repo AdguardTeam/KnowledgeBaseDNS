@@ -1,31 +1,31 @@
 ---
-title: Custom domains
+title: Aangepaste domeinen
 sidebar_position: 6
 ---
 
-AdGuard DNS subscribers can set up their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This feature is intended to help businesses align DNS protection with their infrastructure by ensuring seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS-abonnees kunnen hun eigen domeinen (zoals `dns.example.com`) instellen in plaats van de standaard `d.adguard-dns.com`. Deze functie is bedoeld om bedrijven te helpen DNS-beveiliging af te stemmen op hun infrastructuur door naadloze integratie met het beveiligingsbeleid van het bedrijf te garanderen, terwijl de volledige advertentieblokkering en privacyfuncties van AdGuard DNS behouden blijven.
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+Aangepaste domeinen zijn beschikbaar voor de gebruikers van **Zakelijk**- en **Team**-abonnementen.
 
 :::
 
-## How to set up a custom domain
+## Hoe een aangepast domein in te stellen
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+Om een aangepast domein te configureren, meld je aan bij je AdGuard DNS-dashboard en ga naar [_Accountinstellingen_](https://adguard-dns.io/en/dashboard/account). Scroll omlaag naar _Geavanceerde instellingen_ en selecteer _Aangepaste domeinen_. Vervolgens moet je de drie belangrijkste stappen doorlopen.
 
-1. Choose the protocol. Here, you have two options:
+1. Het protocol kiezen. Hier heb je twee opties:
 
-    - Add DoH domain (for DNS-over-HTTPS)
-    - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - DoH-domein toevoegen (voor DNS-over-HTTPS)
+   - DoT/DoQ-domein toevoegen (voor DNS-over-TLS of DNS-over-QUIC)
 
-    ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Kies het protocol \*mobiel](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
-2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+2. Voer na het selecteren van het protocol de gewenste domeinnaam in (bijvoorbeeld `voorbeeld.com`) en controleer het CNAME-record.
 
-    ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![CNAME-record \*mobiel](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Een certificaat instellen. Voor DoT/DoQ-domeinen moet je een TLS-certificaat met jokertekens uploaden. Als je DoH kiest, kun je je eigen TLS-certificaat opgeven of AdGuard DNS er een voor je laten genereren. Na verificatie verschijnt je aangepaste domein op het dashboard, klaar voor gebruik.
 
-    ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Aangepaste domeinlijst \*mobiel](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

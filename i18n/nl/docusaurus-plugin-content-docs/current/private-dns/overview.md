@@ -215,8 +215,8 @@ Statistics and Query log provide insight into the activity of your devices. The 
 
 [Statistieken en zoeklogboek](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### Aangepaste domeinen
 
-AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+AdGuard DNS Zakelijk- en Team-abonnees kunnen hun eigen domeinen (zoals `dns.example.com`) gebruiken in plaats van de standaard `d.adguard-dns.com`. Deze instelling zorgt voor een naadloze integratie met het beveiligingsbeleid van bedrijven, terwijl de volledige advertentieblokkering en privacyfuncties van AdGuard DNS behouden blijven.
 
-[Custom domains](/private-dns/custom-domains.md)
+[Aangepaste domeinen](/private-dns/custom-domains.md)

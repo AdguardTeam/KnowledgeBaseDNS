@@ -28,7 +28,7 @@ Den følgende vejledning forklarer, hvordan der forbindes til enheden via en **l
 3. Gå til _Brug DNS-serveradresser_.
 4. Åbn _Almindelige DNS-serveradresser_ og tilslut den linkede IP.
 
-    ![Linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![Linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## Dynamisk DNS: Hvorfor det er nyttigt
 
@@ -48,11 +48,11 @@ På denne måde behøver man ikke manuelt at opdatere den tilknyttede IP-adresse
 
 1. Tjek først, om DDNS understøttes i routerindstillingerne:
 
-    - Gå til _Routerindstillinger_ → _Netværk_
-    - Find DDNS eller afsnittet _Dynamisk DNS_
-    - Gå til dette og bekræft, at indstillingerne faktisk understøttes. \*Dette er blot et eksempel på, hvordan det kan se ud, da indstillingerne kan variere fra router til router
+   - Gå til _Routerindstillinger_ → _Netværk_
+   - Find DDNS eller afsnittet _Dynamisk DNS_
+   - Gå til dette og bekræft, at indstillingerne faktisk understøttes. \*Dette er blot et eksempel på, hvordan det kan se ud, da indstillingerne kan variere fra router til router
 
-    ![DDNS-understøttet \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS-understøttet \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. Registrér domænet hos en populær tjeneste, såsom [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) eller en anden foretrukken DDNS-udbyder.
 
@@ -62,7 +62,7 @@ På denne måde behøver man ikke manuelt at opdatere den tilknyttede IP-adresse
 
 5. Angiv det domæne, man tidligere registrerede, og klik på _Opsæt DDNS_.
 
-    ![Opsæt DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![Opsæt DDNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 Opsætningen af DDNS er hermed færdig!
 
@@ -73,14 +73,14 @@ Opsætningen af DDNS er hermed færdig!
 Den nemmeste måde er at bruge Opgavestyring:
 
 1. Opret en opgave:
-    - Åbn Opgavestyring.
-    - Opret en ny opgave.
-    - Indstil udløseren til at køre hvert 5. minut.
-    - Vælg _Kør program_ som handlingen.
+   - Åbn Opgavestyring.
+   - Opret en ny opgave.
+   - Indstil udløseren til at køre hvert 5. minut.
+   - Vælg _Kør program_ som handlingen.
 2. Vælg et program:
-    - I feltet _Program eller Script_, skriv \`powershell'
-    - I feltet _Tilføj argumenter_, skriv:
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - I feltet _Program eller Script_, skriv \`powershell'
+   - I feltet _Tilføj argumenter_, skriv:
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Gem opgaven.
 
 ### macOS og Linux
@@ -88,11 +88,11 @@ Den nemmeste måde er at bruge Opgavestyring:
 Den nemmeste måde på macOS og Linux er at bruge `cron`:
 
 1. Åbn crontab:
-    - Eksekvér i terminalen `crontab -e`.
+   - Eksekvér i terminalen `crontab -e`.
 2. Tilføj en opgave:
-    - Indsæt flg. linje:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - Denne opgave eksekveres hvert 5. minut
+   - Indsæt flg. linje:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - Denne opgave eksekveres hvert 5. minut
 3. Gem crontab.
 
 :::note Vigtigt

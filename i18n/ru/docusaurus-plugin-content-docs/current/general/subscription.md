@@ -9,7 +9,7 @@ sidebar_position: 4
 
 Персональная подписка бесплатна для платных пользователей [AdGuard VPN](https://adguard-vpn.com/welcome.html).
 
-AdGuard DNS plans are activated immediately. Sometimes, activation may take up to five minutes. If you can’t activate your subscription, please email our support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+Планы AdGuard DNS активируются сразу же. Иногда активация может занять до пяти минут. Если вы не можете активировать свою подписку, напишите нашей команде поддержки на почту [support@adguard-dns.io](mailto:support@adguard-dns.io).
 
 ## Как улучшить подписку {#upgrade}
 
@@ -18,13 +18,13 @@ AdGuard DNS plans are activated immediately. Sometimes, activation may take up t
 - Чтобы получить доступ к двум выделенным адресам IPv4 и увеличить количество устройств, ежемесячных запросов, правил и серверов, вы можете **улучшить свою подписку до Командной**
 - Чтобы получить больше выделенных адресов IPv4 и неограниченное количество запросов, устройств, правил и серверов, **улучшите подписку до Корпоративной**
 
-You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Для этого нажмите _Улучшить_ в разделе _AdGuard DNS_.
+Вы можете улучшить подписку [в личном кабинете AdGuard](https://adguardaccount.com/account/licenses). Для этого нажмите _Улучшить_ в разделе _AdGuard DNS_.
 
-_Корпоративная_ подписка доступна только по запросу. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Once we receive your submission, we’ll contact you with further information.
+_Корпоративная_ подписка доступна только по запросу. Если вы заинтересованы, заполните нашу [форму](https://surveys.adguard.com/dns_enterprise/form.html) и расскажите подробнее о вашей компании. Мы свяжемся с вами и предоставим дополнительную информацию.
 
 ## Как вернуть деньги {#refund}
 
-В соответствии с нашей [Публичной офертой](https://adguard-dns.io/terms-of-sale.html) вы можете получить полностью вернуть средства за любые годовые подписки AdGuard DNS, приобретённые на https://adguard-dns.io/. To get a refund, you need to contact support at support@adguard-dns.io, specifying the payment method you’ve used. Срок обработки обычно занимает до 5–10 рабочих дней.
+В соответствии с нашей [Публичной офертой](https://adguard-dns.io/terms-of-sale.html) вы можете получить полностью вернуть средства за любые годовые подписки AdGuard DNS, приобретённые на https://adguard-dns.io/. Чтобы вернуть деньги, обратитесь в поддержку по адресу support@adguard-dns.io. Укажите способ оплаты, который вы использовали. Срок обработки обычно занимает до 5–10 рабочих дней.
 
 В возврате может быть отказано, если:
 
