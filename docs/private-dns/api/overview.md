@@ -36,7 +36,7 @@ When included in the request header, access tokens can be used to authorize requ
 #### Request example
 
 ``` bash
-$ curl 'http://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: Bearer {access_token}'
 ```
 
