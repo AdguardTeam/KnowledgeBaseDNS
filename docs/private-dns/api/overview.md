@@ -16,26 +16,24 @@ AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
 ### API keys
 
-#### Generate API keys
-
-To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
-
-#### How to use API keys
-
 When included in the request header, API keys can be used to authorize requests to User API.
 
-#### Example request
+#### Request example
 
 ``` bash
 $ curl 'http://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: ApiKey {api_key}'
 ```
 
+#### Generating API keys
+
+To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+
 ### Access tokens
 
 When included in the request header, access tokens can be used to authorize requests to User API.
 
-#### Example request
+#### Request example
 
 ``` bash
 $ curl 'http://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
@@ -58,11 +56,11 @@ In the response, you will get both `access_token` and `refresh_token`.
 
 - The `access_token` will expire after some specified seconds (represented by
   the `expires_in` param in the response). You can regenerate a new `access_token`
-  using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+  using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- The `refresh_token` is permanent. To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
 
-#### Example request
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -72,7 +70,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### Response example
 
 ```json
 {
@@ -83,7 +81,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generating access tokens from refresh tokens
+#### Generating access tokens from refresh tokens
 
 Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
@@ -95,7 +93,7 @@ Make the following POST request with the given params to get a new access token:
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
-#### Example request
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -103,7 +101,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+##### Response example
 
 ```json
 {
@@ -114,13 +112,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking refresh tokens
+#### Revoking refresh tokens
 
 To revoke a refresh token, make the following POST request with the given params:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request example
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
