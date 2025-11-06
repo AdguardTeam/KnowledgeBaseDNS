@@ -21,7 +21,7 @@ When included in the request header, API keys can be used to authorize requests 
 #### Request example
 
 ``` bash
-$ curl 'http://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: ApiKey {api_key}'
 ```
 
