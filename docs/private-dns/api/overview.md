@@ -70,7 +70,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Response example
+##### Response example
 
 ```json
 {
@@ -131,9 +131,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 ### Authorization endpoint
 
-> To access this endpoint, you need to contact us at **devteam@adguard.com**.
-> Please describe the reason and use cases for this endpoint, as well as provide the redirect URI.
-> Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+:::warning
+
+To access this endpoint, you need to contact us at **devteam@adguard.com**.
+Please describe the reason and use cases for this endpoint, as well as provide the redirect URI.
+Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
+
+:::
 
 The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
 
