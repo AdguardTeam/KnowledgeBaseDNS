@@ -14,7 +14,33 @@ AdGuard DNS provides a REST API you can use to integrate your apps with it.
 
 ## Authentication
 
-### Generate Access token
+### API keys
+
+When included in the request header, API keys can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generating API keys
+
+To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+
+### Access tokens
+
+When included in the request header, access tokens can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Generating access tokens
 
 Make a POST request for the following URL with the given params to generate the `access_token`:
 
@@ -30,11 +56,11 @@ In the response, you will get both `access_token` and `refresh_token`.
 
 - The `access_token` will expire after some specified seconds (represented by
   the `expires_in` param in the response). You can regenerate a new `access_token`
-  using the `refresh_token` (Refer: `Generate Access Token from Refresh Token`).
+  using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
 
-- The `refresh_token` is permanent. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- The `refresh_token` is permanent. To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
 
-#### Example request
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -44,7 +70,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Example response
+#### Response example
 
 ```json
 {
@@ -55,7 +81,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generate Access Token from Refresh Token
+#### Generating access tokens from refresh tokens
 
 Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
@@ -67,7 +93,7 @@ Make the following POST request with the given params to get a new access token:
 |:----------------- |:------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` using which a new access token has to be generated. |
 
-#### Example request
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -75,7 +101,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Example response
+##### Response example
 
 ```json
 {
@@ -86,13 +112,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+#### Revoking refresh tokens
 
 To revoke a refresh token, make the following POST request with the given params:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Request Example
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -133,7 +159,7 @@ To inform the authorization server which grant type to use, the **response_type*
 
 - For the Implicit grant, use **response_type=token** to include an access token.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after `#`) of the **redirect_uri** parameter in the **Location** header.
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
 
 For example:
 
@@ -141,13 +167,6 @@ For example:
 HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
-
-### Accessing API
-
-Once the access and the refresh tokens are generated, API calls can be made by passing the access token in the header.
-
-- Header name should be `Authorization`
-- Header value should be `Bearer {access_token}`
 
 ## API
 
