@@ -12,7 +12,7 @@ To connect an iOS device to AdGuard DNS, first add it to *Dashboard*:
 
 ## Use the AdGuard DNS app
 
-The AdGuard DNS app is designed for basic DNS-level protection —  blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.  
+The AdGuard DNS app is designed for basic DNS-level protection —  blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
 
 To set up your device:
 
@@ -38,7 +38,7 @@ To set up your device:
 
 ![Enable *mobile_ *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
-1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click *Enable*, and follow the in-app instructions. 
+1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click *Enable*, and follow the in-app instructions.
 
 1. If you prefer to use native DNS, go to *Settings* → *General* → *VPN & Device Management* → *DNS* and enable AdGuard DNS.
 
