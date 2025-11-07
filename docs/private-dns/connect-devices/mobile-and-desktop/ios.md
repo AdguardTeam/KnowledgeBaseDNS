@@ -36,7 +36,7 @@ To set up your device:
 
 1. Your device is successfully connected to AdGuard DNS. All you have to do is tap *Enable* to start the protection.
 
-![Enable *mobile_ *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
+![Enable *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
 1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click *Enable*, and follow the in-app instructions.
 
