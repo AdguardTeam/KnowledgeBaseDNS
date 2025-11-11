@@ -9,6 +9,7 @@ In this section you will find instructions on how to connect your device to AdGu
 
 - [Android](/private-dns/connect-devices/mobile-and-desktop/android.md)
 - [iOS](/private-dns/connect-devices/mobile-and-desktop/ios.md)
+- [AdGuard DNS Mobile App](/private-dns/connect-devices/mobile-and-desktop/dns-mobile-app.md)
 - [macOS](/private-dns/connect-devices/mobile-and-desktop/macos.md)
 - [Windows](/private-dns/connect-devices/mobile-and-desktop/windows.md)
 - [Linux](/private-dns/connect-devices/mobile-and-desktop/linux.md)
