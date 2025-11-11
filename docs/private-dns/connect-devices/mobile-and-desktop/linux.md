@@ -1,6 +1,6 @@
 ---
 title: Linux
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 To connect a Linux device to AdGuard DNS, first add it to *Dashboard*:
