@@ -1,6 +1,6 @@
 ---
 title: Windows
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 To connect a Windows device to AdGuard DNS, first add it to *Dashboard*:
