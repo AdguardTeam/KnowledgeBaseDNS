@@ -8,7 +8,7 @@ To connect a new device to your DNS server using the AdGuard DNS mobile app:
 1. Go to *Dashboard* → [*Servers*](https://adguard-dns.io/dashboard/servers).
 
 1. Select the desired server.
-1. Scroll down and click **Setup ID**.
+1. Scroll down and click *Setup ID*.
 
     ![Setup ID *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/server_settings_setup_ID.png)
 
