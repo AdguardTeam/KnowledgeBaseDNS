@@ -219,4 +219,4 @@ Statistiky a protokol dotazů poskytují přehled o činnosti vašich zařízen�
 
 Předplatitelé AdGuard DNS Enterprise a Team mohou místo výchozí domény `d.adguard-dns.com` používat své vlastní domény (např. `dns.example.com`). Toto nastavení zajišťuje hladkou integraci s bezpečnostními zásadami společnosti a zároveň zachovává všechny funkce blokování reklam a ochrany soukromí, které poskytuje AdGuard DNS.
 
-[Vlastní domény](/private-dns/custom-domains.md)
+[Vlastní domény](/private-dns/server-and-settings/custom-domains.md)

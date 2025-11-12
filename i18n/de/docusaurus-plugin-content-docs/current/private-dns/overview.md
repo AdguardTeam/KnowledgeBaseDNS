@@ -219,4 +219,4 @@ Statistiken und Anfragenprotokoll geben Aufschluss über die Aktivitäten Ihrer 
 
 Wenn Sie ein Enterprise- oder Team-Abonnement haben, können Sie Ihre eigenen Domains (wie `dns.example.com`) anstelle der Standarddomain `d.adguard-dns.com` einrichten. Diese Einstellung integriert sich nahtlos in die Sicherheitsrichtlinien Ihres Unternehmens und erhält dabei alle AdGuard DNS-Funktionen zum Werbeblocken und Datenschutz.
 
-[Benutzerdefinierte Domains](/private-dns/custom-domains.md)
+[Benutzerdefinierte Domains](/private-dns/server-and-settings/custom-domains.md)
