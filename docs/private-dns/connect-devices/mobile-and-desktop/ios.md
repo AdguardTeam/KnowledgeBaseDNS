@@ -22,7 +22,7 @@ To set up your device:
 1. Select your device type and give it a name, then click *Next*.
 1. Expand the *Use AdGuard apps* section.
 
-![Use AdGuard Apps *border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+![Use AdGuard apps *border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
 
 1. Under *Use the AdGuard DNS app*, choose one of these setup methods:
 
