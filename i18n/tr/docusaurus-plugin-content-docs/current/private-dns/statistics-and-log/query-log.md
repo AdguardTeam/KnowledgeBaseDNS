@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Sorgu günlüğü, AdGuard DNS ile çalışmak için faydalı bir araçtır.
 
-Seçilen süre boyunca cihazlarınız tarafından yapılan tüm istekleri görüntülemenize ve istekleri duruma, türe, şirkete, cihaza, ülkeye göre sıralamanıza olanak tanır.
+Seçilen zaman aralığında cihazlarınız tarafından yapılan tüm istekleri görüntülemenize ve istekleri duruma, türe, şirkete, cihaza, ülkeye göre sıralamanıza olanak tanır.
 
 ## Bu nasıl kullanılır
 

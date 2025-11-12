@@ -12,6 +12,15 @@ toc_max_heading_level: 3
 
 В этой статье содержится список изменений для [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.11
+
+_Released on November 5, 2025_
+
+- Added API keys authentication method:
+  - API keys can be generated and revoked in the [User preferences](https://adguard-dns.io/en/dashboard/user-settings/api-keys) section
+  - API keys can be used to authorize requests to the API by including them in the request header with the `Authorization: ApiKey {api_key}` format
+  - API keys provide an alternative authentication method alongside access tokens
+
 ## Версия 1.10
 
 _Выпущена 12 декабря 2024 года_

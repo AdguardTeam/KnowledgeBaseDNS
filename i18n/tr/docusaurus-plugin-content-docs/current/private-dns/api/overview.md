@@ -14,7 +14,33 @@ AdGuard DNS, uygulamalarınızı entegre etmek için kullanabileceğiniz bir RES
 
 ## Kimlik Doğrulama
 
-### Erişim belirteci oluştur
+### API keys
+
+API anahtarları, istek başlığına eklendiğinde Kullanıcı API'sine yapılan istekleri yetkilendirmek için kullanılabilir.
+
+#### İstek örneği
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generating API keys
+
+To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+
+### Access tokens
+
+When included in the request header, access tokens can be used to authorize requests to User API.
+
+#### İstek örneği
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Örnek yanıt
 
 Make a POST request for the following URL with the given params to generate the `access_token`:
 
@@ -26,13 +52,13 @@ Make a POST request for the following URL with the given params to generate the 
 | **parola**        | Hesap parolası                                                                 |
 | mfa_token         | İki Faktörlü kimlik doğrulama belirteci (hesap ayarlarında etkinleştirilmişse) |
 
-Yanıt olarak hem `access_token` hem de `refresh_token` alırsınız.
+In the response, you will get both `access_token` and `refresh_token`.
 
-- `access_token` süresi belirli bir saniye sonra dolar (yanıttaki `expires_in` parametresiyle temsil edilir). `refresh_token` kullanarak yeni bir `access_token` oluşturabilirsiniz (Bakınız: `Yenileme Belirtecinden Erişim Belirteci Oluşturma`).
+- `access_token` süresi belirli bir saniye sonra dolar (yanıttaki `expires_in` parametresiyle temsil edilir). You can regenerate a new `access_token` using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
 
-- `refresh_token` kalıcıdır. To revoke a `refresh_token`, refer: `Revoking a Refresh Token`.
+- `refresh_token` kalıcıdır. To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
 
-#### Örnek istek
+##### İstek örneği
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Örnek yanıt
+##### Yanıt örneği
 
 ```json
 {
@@ -53,9 +79,9 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Yenileme Belirtecinden Erişim Belirteci Oluşturma
+#### Generating access tokens from refresh tokens
 
-Erişim belirteçlerinin geçerliliği sınırlıdır. Süresi dolduğunda, uygulamanız yeni bir `refresh token` talep etmek için `access token` kullanması gerekecektir.
+Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
 Make the following POST request with the given params to get a new access token:
 
@@ -65,7 +91,7 @@ Make the following POST request with the given params to get a new access token:
 |:----------------- |:------------------------------------------------------------------------ |
 | **refresh_token** | `REFRESH TOKEN` kullanılarak yeni bir erişim belirteci oluşturulmalıdır. |
 
-#### Örnek istek
+##### İstek örneği
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Örnek yanıt
+##### Yanıt örneği
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revoking a Refresh Token
+#### Revoking refresh tokens
 
 To revoke a refresh token, make the following POST request with the given params:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### İstek Örneği
+##### İstek örneği
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -101,15 +127,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:-------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN` which is to be revoked |
 
-### Yetkilendirme uç noktası
+### Authorization endpoint
 
-> Bu uç noktaya erişmek için **devteam@adguard.com** adresinden bizimle iletişime geçmeniz gerekir. Lütfen bu uç noktanın sebebini, kullanım durumlarını açıklayın ve yönlendirme URI'sini sağlayın. Onaylandıktan sonra, **client_id** parametresi için kullanılması gereken benzersiz bir i̇stemci tanımlayıcısı alırsınız.
+:::warning
 
-**oapi/v1/oauth_authorize** uç noktası, kaynak sahibiyle etkileşime geçmek ve korunan kaynağa erişim yetkisi almak için kullanılır.
+To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
 
-Hizmet, kimlik doğrulaması için sizi AdGuard'a yönlendirir (henüz giriş yapmadıysanız) ve ardından uygulamanıza geri döner.
+:::
 
-**oapi/v1/oauth_authorize** uç noktasının istek parametreleri şunlardır:
+The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+
+The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+
+The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
 | Parametre         | Açıklama                                                                                                                                                  |
 |:----------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,11 +155,11 @@ Hizmet, kimlik doğrulaması için sizi AdGuard'a yönlendirir (henüz giriş ya
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-Yetkilendirme sunucusuna hangi izn türünün kullanılacağını bildirmek için **response_type** istek parametresi aşağıdaki gibi kullanılır:
+To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
 
 - Örtülü izin için, bir erişim belirteci eklemek üzere **Response_type=token** kullanın.
 
-Başarılı bir yanıt **302 Found** olur ve bu **redirect_uri** (bir istek parametresidir) adresine bir yönlendirmeyi tetikler. Yanıt parametreleri, **redirect_uri** parametresinin **Location** başlığının parça bileşenine (yani `#` işaretinden sonraki kısım) gömülüdür.
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
 
 Örneğin:
 
@@ -138,32 +168,25 @@ HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### API'ye erişim
-
-Erişim ve yenileme belirteçleri oluşturulduktan sonra, başlıktaki erişim belirtecini geçirilerek API çağrıları yapılabilir.
-
-- Başlık adı `Authorization` olmalıdır
-- Başlık değeri `Bearer {access_token}` olmalıdır
-
 ## API
 
 ### Referans
 
 Please see the [method’s reference](reference.md).
 
-### OpenAPI özellikleri
+### OpenAPI spec
 
 OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
-Kullanılabilir API yöntemlerinin listesini görüntülemek için farklı araçlar kullanabilirsiniz. Örneğin, bu dosyayı [https://editor.swagger.io/][swagger] adresinde açabilirsiniz.
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ### Değişiklik günlüğü
 
-AdGuard DNS API değişiklik günlüğünün tamamı [bu sayfada](private-dns/api/changelog.md) mevcuttur.
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Geri bildirim
 
-Bu API'nin yeni yöntemlerle genişletilmesini istiyorsanız, lütfen `devteam@adguard.com` adresine e-posta gönderin ve nelerin eklenmesini istediğinizi bize bildirin.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

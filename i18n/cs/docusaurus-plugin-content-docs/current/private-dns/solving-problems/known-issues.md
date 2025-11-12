@@ -35,7 +35,7 @@ Zde se dozvíte, jak můžete na iPhonu zakázat iCloud Soukromý přenos:
 1. Vyberte *iCloud* → *Soukromý přenos*.
 1. Vypněte Soukromý přenos.
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay-ios-1.png)
 
 V počítači Mac:
 
@@ -52,8 +52,38 @@ Po aktualizaci na iOS 17 může být v nastavení Safari povolena Pokročilá oc
 
 Zde je návod, jak deaktivovat Pokročilou ochranu před sledováním a fingerprintingem:
 
+Pro iOS 26.1 a novější verze:
+
+1. Přejděte do *Nastavení*.
+1. Přejděte dolů a vyberte *Aplikace*.
+1. Přejděte do *Safari* → *Pokročilé*.
+1. Klepněte na *Pokročilá ochrana před sledováním a fingerprintingem* a poté na *Vypnuto*.
+
+![iOS 26.1 Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+
+Pro verze iOS před 26.1:
+
 1. Otevřete *Nastavení* a přejděte dolů na *Safari*.
 1. Klepněte na *Pokročilé*.
 1. Zakařte *Pokročilou ochranu před sledováním a fingerprintingem*.
 
 ![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+
+## Omezení sledování IP adres na iPhonu
+
+Pokud je ve vašem iPhonu aktivována funkce Limit IP Address Tracking (Omezení sledování IP adres), může to narušit schopnost AdGuard DNS filtrovat provoz.
+
+K tomu dochází, protože tato funkce směruje DNS dotazy ze Safari (a dalších aplikací, které ji podporují) přes vlastní soukromé přenosové servery společnosti Apple. Tím se zabrání tomu, aby AdGuard DNS přijímal skutečnou IP adresu vašeho zařízení a zpracovával DNS požadavky, což má za následek deaktivaci filtrování reklam a slídičů.
+
+Chcete-li obnovit úplné filtrování založené na DNS, budete muset tuto funkci deaktivovat pro Wi-Fi síť, kterou právě používáte.
+
+Postupujte podle následujících kroků:
+
+1. Otevřete *Nastavení* na svém iPhonu.
+1. Klepněte na *Wi-Fi*.
+1. Vyhledejte a klepněte na název sítě Wi-Fi, ke které jste aktuálně připojeni.
+1. Na stránce nastavení sítě vypněte přepínač *Omezit sledování IP adres.*
+
+![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+
+DNS filtrování bude obnoveno ihned po deaktivaci tohoto nastavení. Upozorňujeme, že tento postup možná budete muset opakovat pro další sítě Wi-Fi, ke kterým se v budoucnu připojíte.

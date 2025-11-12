@@ -1,6 +1,6 @@
 ---
 title: Contrôle Parental
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Qu'est-ce que c'est

@@ -12,6 +12,15 @@ toc_max_heading_level: 3
 
 Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.11
+
+_Vydáno 5. listopadu 2025_
+
+- Přidána metoda ověřování pomocí API klíčů:
+  - API klíče lze generovat a odvolávat v sekci [Předvolby uživatele](https://adguard-dns.io/en/dashboard/user-settings/api-keys)
+  - API klíče lze použít k autorizaci požadavků na API tak, že je zahrnete do hlavičky požadavku ve formátu `Authorization: ApiKey {api_key}`
+  - API klíče poskytují alternativní metodu ověřování vedle přístupových tokenů
+
 ## v1.10
 
 _Vydáno 12. prosince 2024_

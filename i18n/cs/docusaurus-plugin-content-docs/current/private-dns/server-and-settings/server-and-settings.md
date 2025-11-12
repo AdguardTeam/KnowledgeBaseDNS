@@ -19,9 +19,12 @@ Můžete mít například:
 - Server, který blokuje obsah pro dospělé a některé služby
 - Server, který blokuje obsah pro dospělé pouze v určitých hodinách, které si zvolíte
 
-Další informace o filtrování provozu a pravidlech blokování naleznete v článku ["Jak nastavit filtrování v AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
+For more information on traffic filtering and blocking rules, check out the [_How to set up filtering in AdGuard DNS_](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
 
 Pokud vás zajímají konkrétní nastavení, jsou k dispozici specializované články:
 
 - [Pokročilá nastavení](/private-dns/server-and-settings/advanced.md)
 - [Nastavení přístupu](/private-dns/server-and-settings/access.md)
+- [Rate limit](/private-dns/server-and-settings/rate-limit.md)
+- [Role-based access](/private-dns/server-and-settings/role-based-access.md)
+- [Custom domains](/private-dns/server-and-settings/custom-domains.md)
