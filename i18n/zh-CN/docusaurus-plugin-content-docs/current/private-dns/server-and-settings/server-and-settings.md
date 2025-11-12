@@ -19,9 +19,12 @@ When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 - 一个拦截成人内容和某些服务的服务器
 - 一个仅在您选择的特定时段内拦截成人内容的服务器
 
-有关流量过滤和拦截规则的更多信息，请查看相应的文章：[如何在 AdGuard DNS 中设置过滤](/private-dns/setting-up-filtering/blocklists.md)。
+For more information on traffic filtering and blocking rules, check out the [_How to set up filtering in AdGuard DNS_](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
 
 If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [高级设置](/private-dns/server-and-settings/advanced.md)
 - [访问设置](/private-dns/server-and-settings/access.md)
+- [Rate limit](/private-dns/server-and-settings/rate-limit.md)
+- [Role-based access](/private-dns/server-and-settings/role-based-access.md)
+- [Custom domains](/private-dns/server-and-settings/custom-domains.md)

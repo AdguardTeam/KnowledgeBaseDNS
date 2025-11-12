@@ -1,6 +1,6 @@
 ---
 title: 차단 목록
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## 차단 목록이란 무엇인가요?

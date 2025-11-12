@@ -1,6 +1,6 @@
 ---
 title: Funkce zabezpečení
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Nastavení zabezpečení AdGuard DNS je soubor konfigurací určených k ochraně osobních údajů uživatele.

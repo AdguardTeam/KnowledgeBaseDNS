@@ -1,6 +1,6 @@
 ---
 title: Brugerregler
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Hvad det er, og hvorfor man behøver det

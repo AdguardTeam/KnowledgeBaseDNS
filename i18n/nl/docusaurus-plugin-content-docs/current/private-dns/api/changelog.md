@@ -12,6 +12,15 @@ toc_max_heading_level: 3
 
 This article contains the changelog for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.11
+
+_Uitgebracht op 5 november 2025_
+
+- Authenticatiemethode voor API-sleutels toegevoegd:
+  - API-sleutels kunnen worden gegenereerd en ingetrokken in de sectie [Gebruikersvoorkeuren](https://adguard-dns.io/en/dashboard/user-settings/api-keys)
+  - API-sleutels kunnen worden gebruikt om verzoeken aan de API te autoriseren door ze op te nemen in de aanvraagkoptekst met de indeling `Autorisatie: ApiKey {api_key}`
+  - API-sleutels bieden een alternatieve authenticatiemethode naast toegangstokens
+
 ## v1.10
 
 _Uitgebracht op 12 december 2024_
@@ -84,7 +93,7 @@ _Uitgebracht op 16 juni 2023_
 
 ### Model for safebrowsing settings changed
 
-From:
+Van:
 
 ```json
 {
@@ -106,7 +115,7 @@ waarbij `enabled` nu alle instellingen in de groep beheert, `block_dangerous_dom
 
 ### Model for saving server settings changed
 
-Van:
+From:
 
 ```json
 {

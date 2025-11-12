@@ -35,7 +35,7 @@ iPhone'unuzda iCloud Özel Geçişi'i şu şekilde devre dışı bırakabilirsin
 1. *iCloud* → *Özel Geçişi* öğesini seçin.
 1. Özel Geçişi kapatın.
 
-![iOS Özel Geçişi](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS Özel Geçişi](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay-ios-1.png)
 
 Mac'inizde:
 
@@ -52,8 +52,38 @@ Mac'inizde:
 
 Gelişmiş İzleme ve Parmak İzi Korumasını şu şekilde devre dışı bırakabilirsiniz:
 
-1. *Ayarlar* öğesini açın ve *Safari* öğesine aşağı kaydırın.
-1. *Gelişmiş* öğesine dokunun.
-1. *Gelişmiş İzleme ve Parmak İzi Korumasını* devre dışı bırakın.
+iOS 26.1 ve sonraki sürümler için:
 
-![iOS İzleme ve Parmak İzi Koruması *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+1. *Ayarlar* öğesine gidin.
+1. Aşağı kaydırın ve *Uygulamalar* öğesini seçin.
+1. Go to *Safari* → *Advanced*.
+1. Tap *Advanced Tracking and Fingerprinting Protection* and then *Off*.
+
+![iOS 26.1 İzleme ve Parmak İzi Koruması *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+
+26.1'den önceki iOS sürümleri için:
+
+1. Open *Settings* and scroll down to *Safari*.
+1. Tap *Advanced*.
+1. Disable *Advanced Tracking and Fingerprinting Protection*.
+
+![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+
+## Limit IP Address Tracking on iPhone
+
+When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS’s ability to filter traffic.
+
+This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple’s own private relay servers. This prevents AdGuard DNS from receiving your device’s actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
+
+To restore full DNS-based filtering, you will need to disable this feature for the Wi-Fi network you are currently using.
+
+Lütfen aşağıdaki adımları izleyin:
+
+1. iPhone'unuzda *Ayarlar* öğesini açın.
+1. *Wi-Fi* öğesine dokunun.
+1. Şu anda bağlı olduğunuz Wi-Fi ağının adını bulun ve dokunun.
+1. On the network’s settings page, toggle off the switch for *Limit IP Address Tracking.*
+
+![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+
+DNS filtering will resume immediately after disabling this setting. Please note that you may need to repeat this process for other Wi-Fi networks you connect to in the future.

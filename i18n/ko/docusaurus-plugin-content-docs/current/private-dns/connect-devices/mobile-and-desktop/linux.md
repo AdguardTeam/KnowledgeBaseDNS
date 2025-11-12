@@ -8,7 +8,7 @@ Linux 기기를 AdGuard DNS에 연결하려면 먼저 **대시보드**에 추가
 1. **대시보드**로 이동하여 **새 기기 연결**을 클릭합니다.
 2. 하위 메뉴 **기기 종류**에서 Linux를 선택합니다.
 3. 기기의 이름을 지정합니다.
-    ![장치 연결 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
+   ![장치 연결 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
 ## AdGuard DNS 클라이언트 사용
 
@@ -32,14 +32,14 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 3. Go to _IPv4_.
 4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 6. **적용**을 클릭합니다.
 7. **IPv6**로 이동합니다.
 8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
-    - `2a10:50c0:0:0:0:0:ded:ff`
-    - `2a10:50c0:0:0:0:0:dad:ff`
+   - `2a10:50c0:0:0:0:0:ded:ff`
+   - `2a10:50c0:0:0:0:0:dad:ff`
 10. **적용**을 클릭합니다.
 11. IP 주소(또는 Team을 구독하는 경우 전용 IP)를 연결합니다.
     - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
@@ -52,8 +52,8 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 3. `admin` 비밀번호를 입력합니다.
 4. 명령줄에 `nano /etc/resolv.conf`를 입력합니다.
 5. 나열된 DNS 주소를 다음으로 변경합니다.
-    - IPv4: `94.140.14.49 및 94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff 및 2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49 및 94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff 및 2a10:50c0:0:0:0:0:dad:ff`
 6. 문서를 저장하려면 **Ctrl + O**를 누릅니다.
 7. **Enter**를 누릅니다.
 8. 문서를 저장하려면 **Ctrl + X**를 누릅니다.
@@ -68,31 +68,31 @@ AdGuard VPN CLI(명령줄 인터페이스)를 사용하여 사설 AdGuard DNS를
 
 1. 다음 명령을 사용하여  dnsmasq 를 설치합니다.
 
-    `sudo apt updatesudo`
+   `sudo apt updatesudo`
 
-    `apt install`
+   `apt install`
 
-    `dnsmasqsudo nano /etc/dnsmasq.conf`
+   `dnsmasqsudo nano /etc/dnsmasq.conf`
 
 2. dnsmasq.conf에서 다음 명령을 사용하세요:
 
-    `no-resolv`
+   `no-resolv`
 
-    `bogus-priv`
+   `bogus-priv`
 
-    `strict-order`
+   `strict-order`
 
-    `server=94.140.14.49`
+   `server=94.140.14.49`
 
-    `server=94.140.14.59`
+   `server=94.140.14.59`
 
-    `port=5353`
+   `port=5353`
 
-    `add-cpe-id={Your_Device_ID}`
+   `add-cpe-id={Your_Device_ID}`
 
 3. dnsmasq 서비스를 다시 시작하세요:
 
-    `sudo service dnsmasq restart`
+   `sudo service dnsmasq restart`
 
 기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 

@@ -1,6 +1,6 @@
 ---
 title: Règles utilisateur
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Qu'est-ce que c'est et pourquoi en avez-vous besoin
