@@ -28,7 +28,7 @@ To set up your device:
 
     - Click *Configure* if you’re on the device you want to protect.
     - Scan the QR code with the device you want to protect.
-    - Copy your Setup ID and paste it directly into the app.
+    - Copy your setup ID and paste it directly into the app.
 
       ![SetupID *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
 
