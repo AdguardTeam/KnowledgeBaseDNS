@@ -20,7 +20,7 @@ To set up your device:
 1. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 1. Click *Add new device* on the *Home* tab.
 1. Select your device type and give it a name, then click *Next*.
-1. Expand the *Use AdGuard Apps* section.
+1. Expand the *Use AdGuard apps* section.
 
 ![Use AdGuard Apps *border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
 
