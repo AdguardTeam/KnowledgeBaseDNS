@@ -12,7 +12,7 @@ To connect an Android device to AdGuard DNS, first add it to *Dashboard*:
 
 ## Use the AdGuard DNS app
 
-The AdGuard DNS app is designed for basic DNS-level protection —  blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
+The AdGuard DNS app is designed for basic DNS-level protection — blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
 
 To set up your device:
 
