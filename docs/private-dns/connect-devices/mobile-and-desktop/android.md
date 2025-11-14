@@ -22,7 +22,7 @@ To set up your device:
 1. Select your device type and give it a name, then click *Next*.
 1. Expand the *Use AdGuard apps* section.
 
-![Use AdGuard apps *border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
+   ![Use AdGuard apps *border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
 
 1. Under *Use the AdGuard DNS app*, choose one of these setup methods:
 
@@ -34,13 +34,13 @@ To set up your device:
 
 1. Tap *Continue* → *Connect*.
 
-![Connect *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
+    ![Connect *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
 
 1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click *Enable*, and follow the in-app instructions.
 
 1. All done! Your device is successfully connected to AdGuard DNS. Click *Enable* every time you want to start the protection.
 
-![Enable *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
+    ![Enable *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
 ## Use AdGuard Ad Blocker (paid option)
 
