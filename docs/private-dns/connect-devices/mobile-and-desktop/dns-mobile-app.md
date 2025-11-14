@@ -26,4 +26,5 @@ To connect a new device to your DNS server using the AdGuard DNS mobile app:
 
     ![Connect *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectMobile.png)
 
-Done! You are now connected, and the device will be automatically created in the Dashboard.
+Done! You are now connected, and the device will automatically appear on your *Dashboard*.
+
