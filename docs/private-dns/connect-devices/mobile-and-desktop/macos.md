@@ -1,6 +1,6 @@
 ---
 title: macOS
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 To connect a macOS device to AdGuard DNS, first add it to *Dashboard*:
