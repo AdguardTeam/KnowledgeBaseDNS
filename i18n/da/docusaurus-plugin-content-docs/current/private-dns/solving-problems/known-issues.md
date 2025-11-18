@@ -35,7 +35,7 @@ Sådan deaktiveres iCloud Private Relay på en iPhone:
 1. Vælg *iCloud* → *Private Relay*.
 1. Slå Private Relay fra.
 
-![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS Private Relay](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay-ios-1.png)
 
 På Mac:
 
@@ -52,8 +52,38 @@ Efter iOS 17-opdateringen kan Avanceret sporings- og fingeraftryksbeskyttelse v�
 
 Sådan deaktiveres Avanceret sporings- og fingeraftryksbeskyttelse:
 
+Til iOS 26.1 og senere versioner:
+
+1. Gå til *Indstillinger*.
+1. Rul ned, og vælg *Apps*.
+1. Gå til *Safari* → *Avanceret*.
+1. Tryk på *Avanceret sporings- og fingeraftryksbeskyttelse* og dernæst *Fra*.
+
+![iOS 26.1 Sporings- og fingeraftryksbeskyttelse *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+
+Til iOS-versioner før 26.1:
+
 1. Åbn *Indstillinger* og rul ned til *Safari*.
 1. Tryk på *Avanceret*.
 1. Slå *Avanceret sporings- og fingeraftryksbeskyttelse* fra.
 
 ![iOS Sporings- og fingeraftryksbeskyttelse *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+
+## Begræns IP-adressesporing på iPhone
+
+Når funktionen Begræns IP-adressesporing er slået til på iPhone, kan det forstyrre AdGuard DNS' evne til at filtrere trafik.
+
+Dette sker, fordi funktionen sender DNS-forespørgsler fra Safari (og andre apps, som understøtter den) via Apples egne private relæservere. Dette forhindrer AdGuard DNS i at modtage enhedens reelle IP-adresse og behandle DNS-forespørgsler, hvilket resulterer i deaktiveret filtrering af annoncer og trackere.
+
+For at gendanne fuld DNS-baseret filtrering, slå denne funktion fra for det Wi-Fi-netværk, der p.t. anvendes.
+
+Følg venligst trinnene nedenfor:
+
+1. Åbn appen *Indstillinger* på iPhonen.
+1. Tryk på *Wi-Fi*.
+1. Klik på navnet på det p.t. tilsluttede Wi-Fi-netværk.
+1. Slå kontakten *Begræns IP-adressesporing fra* fra på netværksindstillingssiden.
+
+![Begræns IP-adressesporing *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+
+DNS-filtrering genoptages straks efter deaktivering af denne indstilling. Bemærk, at denne proces muligvis skal gentages for øvrige Wi-Fi-netværk, som der kan oprettes forbindelse til i fremtiden.

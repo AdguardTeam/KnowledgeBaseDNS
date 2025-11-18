@@ -9,7 +9,7 @@ AdGuard DNS — это бесплатный, защищающий конфиде
 
 ## Публичные серверы AdGuard DNS
 
-У AdGuard DNS три типа публичных серверов. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Инструкцию по установке AdGuard DNS на любом устройстве можно найти [на нашем сайте](https://adguard-dns.io/public-dns.html). Каждый сервер поддерживает разные протоколы безопасности: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) и DNS-over-QUIC (DoQ).
+У AdGuard DNS три типа публичных серверов. Сервер *По умолчанию* — для блокировки рекламы, трекеров, вредоносного ПО и фишинговых сайтов. Сервер *Семейная защита* делает то же самое, но ещё блокирует сайты с контентом для взрослых и включает опцию *Безопасный поиск* в браузерах, где она доступна. *Нефильтрующий* сервер обеспечивает безопасное и надёжное соединение, но ничего не блокирует. Инструкцию по установке AdGuard DNS на любом устройстве можно найти [на нашем сайте](https://adguard-dns.io/public-dns.html). Каждый сервер поддерживает разные протоколы безопасности: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) и DNS-over-QUIC (DoQ).
 
 ## Протоколы AdGuard DNS
 
@@ -27,11 +27,11 @@ AdGuard DNS также предоставляет JSON API для DNS. Полу�
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Получение DNS-ответа в формате JSON работает точно так же с AdGuard DNS.
+Подробную документацию см. [в руководстве Google по JSON API для DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Получение DNS-ответа в формате JSON работает точно так же с AdGuard DNS.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
+В отличие от Google DNS, AdGuard DNS не поддерживает значения `edns_client_subnet` и `Comment` в ответах JSON.
 
 :::
 
@@ -45,10 +45,10 @@ Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+С AdGuard DNS можно использовать специальный протокол шифрования — DNSCrypt. Благодаря ему, все DNS-запросы зашифровываются, что защищает вас от их возможного перехвата и последующего чтения и/или подмены.
 
 :::note
 
-This is an obsolete protocol with restricted support.
+Это устаревший протокол с ограниченной поддержкой.
 
 :::

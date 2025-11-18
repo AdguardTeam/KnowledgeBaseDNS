@@ -10,6 +10,42 @@ Pour connecter un appareil iOS à AdGuard DNS, commencez par l'ajouter au _table
 3. Nommez le dispositif.
    ![Connexion de l'appareil \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
+## Utilisez l'application AdGuard DNS
+
+L'application AdGuard DNS est conçue pour une protection DNS de base — elle bloque les publicités, les traqueurs et les sites web malveillants. Si vous n’avez pas besoin de toute la gamme de fonctionnalités proposées par le Bloqueur AdGuard ou AdGuard VPN, ce pourrait être le meilleur choix pour vous.
+
+Pour configurer votre appareil :
+
+1. [Téléchargez l'application AdGuard DNS](https://agrd.io/ios_dns).
+2. Allez sur votre tableau de bord DNS AdGuard à [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+3. Cliquez sur _Ajouter un nouvel appareil_ dans l'onglet _Accueil_.
+4. Sélectionnez le type de votre appareil et donnez-lui un nom, puis cliquez sur _Suivant_.
+5. Développez la section _Utiliser les applications AdGuard_.
+
+![Utiliser les applications AdGuard \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+
+1. Sous _Utiliser l'application AdGuard DNS_, choisissez l'une de ces méthodes de configuration :
+
+   - Cliquez sur _Configurer_ si vous vous trouvez sur l'appareil que vous souhaitez protéger.
+   - Scannez le code QR avec l'appareil que vous souhaitez protéger.
+   - Copiez votre identifiant de configuration et collez-le directement dans l'application.
+
+     ![Id de configuration \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+
+2. Appuyez sur _Continuer_ → _Se connecter_.
+
+![Connecter \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
+
+1. Votre dispositif est maintenant connecté à AdGuard DNS. Il vous suffit d'appuyer sur _Activer_ pour démarrer la protection.
+
+![Activer \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+
+1. Même en utilisant un protocole basé sur un VPN, vous devez autoriser la création d'un profil VPN avant d'être pleinement protégé. Pour cela, allez sur la page d’accueil de l’application, cliquez sur _Activer_ et suivez les instructions intégrées.
+
+2. Si vous préférez utiliser un DNS natif, allez dans _Paramètres_ → _Général_ → _Gestion du VPN et dispositifs_ → _DNS_ et activez le DNS AdGuard.
+
+C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+
 ## Utilisez le Bloqueur AdGuard (option payante)
 
 L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait pour configurer AdGuard DNS sur votre appareil iOS. Vous pouvez choisir parmi les différents protocoles de chiffrement. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
@@ -59,7 +95,7 @@ C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
 ## Utilisez un profil de configuration
 
-An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Il vous permet également de configurer le DNS AdGuard privé sur votre appareil.
+Un profil d'appareil iOS, également appelé "profil de configuration" par Apple, est un fichier XML signé par un certificat que vous pouvez installer manuellement sur votre appareil iOS ou déployer en utilisant une solution MDM. Il vous permet également de configurer le DNS AdGuard privé sur votre appareil.
 
 :::note Important
 
@@ -78,5 +114,5 @@ Si vous utilisez un VPN, le profil de configuration sera ignoré.
 
 Si vous préférez ne pas utiliser de logiciel supplémentaire pour configurer le DNS, vous pouvez opter pour un DNS non chiffré. Il existe deux options : utiliser des adresses IP liées ou des adresses IP dédiées.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

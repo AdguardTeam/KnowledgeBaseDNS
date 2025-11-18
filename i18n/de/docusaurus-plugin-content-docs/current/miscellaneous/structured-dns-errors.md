@@ -3,15 +3,15 @@ title: Structured DNS Errors (SDE)
 sidebar_position: 5
 ---
 
-Mit der Veröffentlichung von AdGuard DNS v2.10 ist AdGuard der erste öffentliche DNS-Auflösungsdienst, der Unterstützung für [_Structured DNS Errors_ (SDE)] (https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), ein Aktualisierung von [RFC 8914] (https://datatracker.ietf.org/doc/rfc8914/), bietet. Mit dieser Funktion können DNS-Server detaillierte Informationen über gesperrte Websites direkt in der DNS-Antwort bereitstellen, anstatt sich auf allgemeine Browsermeldungen zu verlassen. In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
+Mit der Veröffentlichung von AdGuard DNS v2.10 ist AdGuard der erste öffentliche DNS-Auflösungsdienst, der Unterstützung für [_Structured DNS Errors_ (SDE)] (https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/), ein Aktualisierung von [RFC 8914] (https://datatracker.ietf.org/doc/rfc8914/), bietet. Mit dieser Funktion können DNS-Server detaillierte Informationen über gesperrte Websites direkt in der DNS-Antwort bereitstellen, anstatt sich auf allgemeine Browsermeldungen zu verlassen. In diesem Artikel erklären wir, was _Structured DNS Errors_ sind und wie sie funktionieren.
 
 ## Was sind Structured DNS Errors?
 
-Wenn eine Anfrage an eine Werbe- oder Tracking-Domain gesperrt wird, sieht man möglicherweise leere Stellen auf einer Website oder merkt nicht, dass eine DNS-Filterung stattgefunden hat. Wenn jedoch eine gesamte Website auf DNS-Ebene gesperrt ist, kann die Website nicht mehr aufgerufen werden. When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
+Wenn eine Anfrage an eine Werbe- oder Tracking-Domain gesperrt wird, sieht man möglicherweise leere Stellen auf einer Website oder merkt nicht, dass eine DNS-Filterung stattgefunden hat. Wenn jedoch eine gesamte Website auf DNS-Ebene gesperrt ist, kann die Website nicht mehr aufgerufen werden. Beim Versuch, auf eine gesperrte Website zuzugreifen, kann es vorkommen, dass der Browser die allgemeine Fehlermeldung „Diese Website ist nicht erreichbar“ anzeigt.
 
-![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![Fehler „Diese Website ist nicht erreichbar“](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-Such errors don’t explain what happened and why. Dies hat zur Folge, dass man nicht weiß, warum eine Website nicht zugänglich ist, und oft davon ausgeht, dass die Internetverbindung oder der DNS-Auflösungsdienst gestört ist.
+Solche Fehler erklären nicht, was passiert ist und warum. Dies hat zur Folge, dass man nicht weiß, warum eine Website nicht zugänglich ist, und oft davon ausgeht, dass die Internetverbindung oder der DNS-Auflösungsdienst gestört ist.
 
 DNS-Server könnten durch Umleitung auf die eigene Erklärungsseite dieses Problem lösen. Für HTTPS-Websites (die die Mehrheit der Websites ausmachen) ist jedoch ein separates Zertifikat erforderlich.
 

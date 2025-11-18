@@ -11,7 +11,7 @@ Es ermöglicht Ihnen, alle Anfragen Ihrer Geräte während des ausgewählten Zei
 
 ## Kurzanleitung
 
-Here’s what you can see and what you can do in the _Query log_.
+Hier ist, was Sie im _Anfragenprotokoll_ sehen und was Sie tun können.
 
 ### Detaillierte Informationen zu Anfragen
 

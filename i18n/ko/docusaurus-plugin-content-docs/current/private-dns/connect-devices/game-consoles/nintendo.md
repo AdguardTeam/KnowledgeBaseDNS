@@ -26,8 +26,8 @@ New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL, Nintendo 3DS, Ninten
 5. Set _Automatic_ to _Manual_.
 6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
 7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 8. 설정을 저장합니다.
 
 연결된 IP(또는 Team을 구독하는 경우 전용 IP)를 사용하는 것이 좋습니다:

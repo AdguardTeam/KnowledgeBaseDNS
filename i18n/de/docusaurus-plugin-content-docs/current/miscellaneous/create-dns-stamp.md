@@ -16,7 +16,7 @@ DNS-Stempel ermöglichen es Ihnen, die Secure DNS-Einstellungen über die üblic
 
 ## Auswahl des Protokolls
 
-Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` und einige andere. Choosing one of these protocols depends on the context in which you’ll be using them.
+Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-over-TLS (DoT)` und einige andere. Die Wahl eines dieser Protokolle hängt von dem Kontext ab, in dem Sie sie verwenden werden.
 
 ## Erstellen eines DNS-Stempels
 
@@ -56,7 +56,7 @@ Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ
 
 ### Abrufen des Zertifikats-Hashes
 
-To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
+Um das Feld **Zertifikat-Hashes des Servers** auszufüllen, können Sie den folgenden Befehl verwenden, wobei Sie `<IP_ADDRESS>`, `<PORT>` und `<SERVER_NAME>` durch die entsprechenden Werte für Ihren DNS-Server ersetzen:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
@@ -64,7 +64,7 @@ echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2
 
 :::caution
 
-The result of the hash command may change over time as the server’s certificate is updated. Wenn also Ihr DNS-Stempel plötzlich nicht mehr funktioniert, müssen Sie möglicherweise den Hash des Zertifikats neu berechnen und einen neuen Stempel erstellen. Die regelmäßige Aktualisierung Ihres DNS-Stempels trägt dazu bei, den sicheren Betrieb Ihres Secure DNS-Dienstes zu gewährleisten.
+Das Ergebnis des Hash-Befehls kann sich im Laufe der Zeit ändern, wenn das Zertifikat des Servers aktualisiert wird. Wenn also Ihr DNS-Stempel plötzlich nicht mehr funktioniert, müssen Sie möglicherweise den Hash des Zertifikats neu berechnen und einen neuen Stempel erstellen. Die regelmäßige Aktualisierung Ihres DNS-Stempels trägt dazu bei, den sicheren Betrieb Ihres Secure DNS-Dienstes zu gewährleisten.
 
 :::
 
@@ -74,7 +74,7 @@ Sie haben nun Ihren eigenen DNS-Stempel, den Sie zur Einrichtung von Secure DNS 
 
 ## Beispiel für die Erstellung eines DNS-Stempels
 
-Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
+Lassen Sie uns ein Beispiel für die Erstellung eines Stempels für AdGuard DNS mit DoT durchgehen:
 
 1. Öffnen Sie den [DNSCrypt Stamp Calculator](https://dnscrypt.info/stamps/) (DNSCrypt-Stempel-Rechner).
 
@@ -82,9 +82,9 @@ Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
 
 3. Füllen Sie die folgenden Felder aus:
 
-    - **IP-Adresse**: Geben Sie die IP-Adresse und den Port des DNS-Servers ein. In this case, it’s `94.140.14.14:853`.
+    - **IP-Adresse**: Geben Sie die IP-Adresse und den Port des DNS-Servers ein. In diesem Fall ist es `94.140.14.14:853`.
 
-    - **Hostname**: Geben Sie den Hostnamen des DNS-Servers ein. In this case, it’s `dns.adguard-dns.com`.
+    - **Hostname**: Geben Sie den Hostnamen des DNS-Servers ein. In diesem Fall ist es `dns.adguard-dns.com`.
 
     - **Hashes**: Führen Sie folgenden Befehl aus
 
@@ -92,7 +92,7 @@ Let’s go through an example of creating a stamp for AdGuard DNS using DoT:
     echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
     ```
 
-    The result is `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Paste this SHA256 hash of the server’s certificate into the field.
+    Das Ergebnis ist `1ebea9685d57a3063c427ac4f0983f34e73c129b06e7e7705640cacd40c371c8` Fügen Sie diesen SHA256-Hash des Serverzertifikats in das Feld ein.
 
 4. Lassen Sie den Abschnitt Eigenschaften leer.
 

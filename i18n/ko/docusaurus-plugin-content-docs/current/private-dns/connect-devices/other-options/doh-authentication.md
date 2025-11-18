@@ -23,6 +23,6 @@ sidebar_position: 4
 4. 원하는 대로 인증이 있는 DNS-over-HTTPS를 구성합니다.
 5. AdGard DNS 클라이언트 또는 AdGard 앱 중 하나에서 이 서버를 사용하도록 기기를 재구성합니다.
 6. 이를 위해 암호화된 서버의 주소를 복사하여 AdGuard 앱이나 AdGuard DNS 클라이언트 설정에 붙여넣습니다.
-    ![주소 복사 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
+   ![주소 복사 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/doh_step6.png)
 7. 다른 프로토콜의 사용도 거부할 수 있습니다.
-    ![프로토콜 거부 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)
+   ![프로토콜 거부 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/deny_protocol.png)

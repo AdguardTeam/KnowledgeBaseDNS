@@ -14,9 +14,35 @@ AdGuard DNS предоставляет REST API, который вы может�
 
 ## Аутентификация
 
-### Генерация токена доступа
+### API keys
 
-Сделайте POST-запрос с указанными параметрами по следующему URL, чтобы сгенерировать `access_token`:
+When included in the request header, API keys can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generating API keys
+
+To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+
+### Access tokens
+
+When included in the request header, access tokens can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Пример ответа
+
+Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -26,13 +52,13 @@ AdGuard DNS предоставляет REST API, который вы может�
 | **пароль**           | Пароль                                                                   |
 | mfa_token            | Токен двухфакторной аутентификации (если включена в настройках аккаунта) |
 
-В ответ вы получите `access_token` и `refresh_token`.
+In the response, you will get both `access_token` and `refresh_token`.
 
-- `access_token` истекает через несколько секунд (срок указан в параметре `expires_in`). Вы можете запросить новый `access_token`, используя `refresh_token` (См.: `Генерация токена доступа через продлеваемый токен`).
+- `access_token` истекает через несколько секунд (срок указан в параметре `expires_in`). You can regenerate a new `access_token` using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
 
-- `refresh_token` генерируется один раз и затем не изменяется. Чтобы отозвать `refresh_token`, см.: `Отзыв продлеваемого токена`.
+- `refresh_token` генерируется один раз и затем не изменяется. To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
 
-#### Пример запроса
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Пример ответа
+##### Response example
 
 ```json
 {
@@ -53,11 +79,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Генерация токена доступа через продлеваемый токен
+#### Generating access tokens from refresh tokens
 
-Токены доступа имеют ограниченное время действия. После истечения этого срока ваше приложение должно использовать `продлеваемый токен` для генерации нового `токена доступа`.
+Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
-Сделайте следующий POST-запрос с указанными параметрами, чтобы получить новый токен доступа:
+Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -65,7 +91,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 |:----------------- |:-------------------------------------------------------------------------------------- |
 | **refresh_token** | `Продлеваемый токен`, с помощью которого должен быть сгенерирован новый токен доступа. |
 
-#### Пример запроса
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Пример ответа
+##### Response example
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Отзыв продлеваемого токена
+#### Revoking refresh tokens
 
-Чтобы сбросить продлеваемый токен, сделайте следующий POST-запрос с указанными параметрами:
+To revoke a refresh token, make the following POST request with the given params:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Пример запроса
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -101,15 +127,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:------------------------------------------------- |
 | **refresh_token** | `Продлеваемый токен`, который должен быть сброшен |
 
-### Конечная точка авторизации
+### Authorization endpoint
 
-> Чтобы получить доступ к этой конечной точке, вам необходимо связаться с нами по адресу **devteam@adguard.com**. Пожалуйста, опишите причину и случаи использования этой конечной точки, а также укажите URI перенаправления. После одобрения вы получите уникальный идентификатор клиента, который следует использовать для параметра **client_id**.
+:::warning
 
-Конечная точка **/oapi/v1/oauth_authorize** используется для взаимодействия с владельцем ресурса и получения разрешения на доступ к защищённому ресурсу.
+To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
 
-Сервис перенаправляет вас в AdGuard для аутентификации (если вы ещё не вошли в систему), а затем обратно в приложение.
+:::
 
-Параметры запроса конечной точки **/oapi/v1/oauth_authorize**:
+The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+
+The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+
+The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
 | Параметр          | Описание                                                                                                                                                 |
 |:----------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,11 +155,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-Чтобы сообщить серверу авторизации, какой тип разрешения использовать, параметр запроса **response_type** используется следующим образом:
+To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
 
 - Для неявного разрешения используйте **response_type=token**, чтобы включить токен доступа.
 
-Успешный ответ — **302 Found**, который запускает перенаправление на параметр запроса **redirect_uri**. Параметры ответа встраиваются в компонент фрагмента (часть после `#`) параметра **redirect_uri** в заголовке **Локация**.
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
 
 Например:
 
@@ -138,32 +168,25 @@ HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### Получение доступа к API
-
-После того как токен доступа и продлеваемый токен сгенерированы, получить доступ к API можно, указав токен доступа в заголовке.
-
-- Имя заголовка должно быть `Authorization`
-- Значение заголовка должно быть `Bearer {access_token}`
-
 ## API
 
 ### Руководство по API
 
-Перейдите по [этой ссылке](reference.md), чтобы ознакомиться с руководством по методам API.
+Please see the [method’s reference](reference.md).
 
-### Спецификация OpenAPI
+### OpenAPI spec
 
-Спецификация OpenAPI доступна по адресу [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
-Вы можете использовать другие инструменты для просмотра списка доступных методов API. Например, вы можете открыть этот файл в [https://editor.swagger.io/][swagger].
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ### История версий
 
-Полный список изменений AdGuard DNS API можно найти [на этой странице](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Обратная связь
 
-Если вы хотите расширить этот API, напишите нам по адресу `devteam@adguard.com` и расскажите, что вы хотите добавить.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
-[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

@@ -9,7 +9,7 @@ Ohne Ratenbegrenzungen besteht die Gefahr einer Überlastung der DNS-Server. Inf
 
 ## Wie funktioniert die Ratenbegrenzung?
 
-Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die Anzahl der Anfragen festgelegt werden, die ein Client (IP-Adresse) über einen bestimmten Zeitraum an einen DNS-Server senden kann. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
+Die DNS-Ratenbegrenzung funktioniert in der Regel, indem Schwellenwerte für die Anzahl der Anfragen festgelegt werden, die ein Client (IP-Adresse) über einen bestimmten Zeitraum an einen DNS-Server senden kann. Wenn Sie Probleme mit der aktuellen AdGuard DNS-Ratenbegrenzung haben und einen _Team_- oder _Enterprise_-Plan haben, können Sie eine Erhöhung der Ratenbegrenzung anfordern.
 
 ## So beantragen Sie eine Erhöhung des DNS-Anfragelimits
 
