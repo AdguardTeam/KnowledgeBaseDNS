@@ -16,7 +16,7 @@ The AdGuard DNS app is designed for basic DNS-level protection — blocking ads,
 
 To set up your device:
 
-1. Download the AdGuard DNS app.
+1. [Download the AdGuard DNS app](agrd.io/android_dns).
 1. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 1. Click *Add new device* on the *Home* tab.
 1. Select your device type and give it a name, then click *Next*.
