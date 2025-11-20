@@ -18,7 +18,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
 1. [下载 AdGuard DNS 应用](https://agrd.io/ios_dns)
 2. 前往您的 AdGuard DNS 控制面板：[adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/)
-3. 在「主页」选项卡上，点击「添加新设备」
+3. Click _Connect device_ on the _Home_ tab.
 4. 选择设备类型并命名，然后点击「下一步」
 5. 展开「使用 AdGuard 应用」版块
 

@@ -20,7 +20,7 @@ Para configurar seu dispositivo:
 
 2. Acesse o painel de controle do AdGuard DNS em [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Clique em _Adicionar novo dispositivo_ na aba _Início_.
+3. Click _Connect device_ on the _Home_ tab.
 
 4. Selecione o tipo do seu dispositivo e dê um nome a ele, em seguida clique em _Avançar_.
 
