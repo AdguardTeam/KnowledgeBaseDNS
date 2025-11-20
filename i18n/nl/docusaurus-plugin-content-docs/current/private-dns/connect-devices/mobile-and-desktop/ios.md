@@ -18,7 +18,7 @@ Om je apparaat in te stellen:
 
 1. [Download de AdGuard DNS-app](https://agrd.io/ios_dns).
 2. Ga naar je AdGuard DNS-dashboard op [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
-3. Klik op _Nieuw apparaat toevoegen_ op het tabblad _Start_.
+3. Click _Connect device_ on the _Home_ tab.
 4. Selecteer je apparaattype en geef het een naam, klik dan op _Volgende_.
 5. Vouw de sectie _AdGuard-apps gebruiken_ uit.
 

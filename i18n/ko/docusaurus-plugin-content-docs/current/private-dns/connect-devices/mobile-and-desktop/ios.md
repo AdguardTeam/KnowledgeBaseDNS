@@ -18,7 +18,7 @@ AdGuard DNS 앱은 광고, 추적기 및 악성 웹사이트를 차단하는 기
 
 1. [AdGuard DNS 앱을 다운로드](https://agrd.io/ios_dns)합니다.
 2. [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/)에서 AdGuard DNS 대시보드로 이동합니다.
-3. **홈** 탭에서 **새 기기 추가**를 클릭합니다.
+3. Click _Connect device_ on the _Home_ tab.
 4. 기기 유형을 선택하고 이름을 지정한 후 **다음**을 클릭합니다.
 5. **AdGuard 앱 사용** 섹션을 확장합니다.
 

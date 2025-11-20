@@ -20,7 +20,7 @@ Om je apparaat in te stellen:
 
 2. Ga naar je AdGuard DNS-dashboard op [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Klik op _Nieuw apparaat toevoegen_ op het tabblad _Start_.
+3. Click _Connect device_ on the _Home_ tab.
 
 4. Selecteer je apparaattype en geef het een naam, klik dan op _Volgende_.
 
