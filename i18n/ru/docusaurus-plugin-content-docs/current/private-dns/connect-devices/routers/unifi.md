@@ -29,38 +29,38 @@ sidebar_position: 10
 2. Имя хоста: d.adguard-dns.com
 3. Путь: /dns-query/123456abc (замените 123456abc на значение, полученное из Панели управления Личного AdGuard DNS)
 4. Снимите галочки
-   - No filter
-   - No logs
-5. Copy the DNS stamp URL (e.g., sdns://AgcAAAAAA…)
+   - Без фильтра
+   - Без логов
+5. Скопируйте URL-адрес DNS-метки (например, sdns://AgcAAAAAA…)
 
-Turn on DNS-over-HTTPS in UniFi.
+Включите DNS-over-HTTPS в UniFi.
 
 1. Войдите в систему на контроллере Ubiquiti UniFi.
-2. Go to _Settings_ → _Security_.
-3. Click _Protection_.
-4. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server addresses.
-   - Server Name: 'AdGuard DNS'
-   - DNS Stamp: DNS stamp URL copied from above
+2. Перейдите в _Настройки_ → _Безопасность_.
+3. Нажмите на _Защита_.
+4. Перейдите к разделу «Зашифрованный DNS» → «Пользовательские» и введите следующие адреса серверов DNS.
+   - Имя сервера: 'AdGuard DNS'
+   - DNS Stamp: URL DNS-метку, скопированную ранее
 5. Нажмите _Сохранить_.
 
 ## Через панель управления роутера
 
-Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration.
+Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
 
 1. Войдите в систему на контроллере Ubiquiti UniFi.
-2. Перейдите в «Настройки» → «Сети».
-3. Нажмите кнопку «Редактировать сеть» → «WAN».
-4. Proceed to _Common Settings_ → _DNS Server_ and enter the following DNS server addresses:
+2. Перейдите в _Настройки_ → _Сети_.
+3. Нажмите кнопку _Редактировать сеть_ → _WAN_.
+4. Перейдите к разделу «Общие настройки» → «DNS-сервер» и введите следующие адреса DNS-серверов.
    - IPv4: `94.140.14.49` и `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 5. Нажмите _Сохранить_.
-6. Вернитесь в раздел «Сеть».
-7. Выберите «Редактировать сеть» → «Локальная сеть».
-8. Найдите «DHCP Name Server» и выберите «Вручную».
-9. Введите адрес шлюза в поле «DNS-сервер 1». Alternatively, you can enter the AdGuard DNS server addresses in the _DNS Server 1_ and _DNS Server 2_ fields:
+6. Вернитесь в раздел _Сеть_.
+7. Выберите _Редактировать сеть_ → _Локальная сеть_.
+8. Найдите _DHCP Name Server_ и выберите _Вручную_.
+9. Введите адрес шлюза в поле «DNS-сервер 1». Кроме того, вы можете ввести адреса DNS-серверов AdGuard в поля _DNS-сервер 1_ и _DNS-сервер 2_:
    - IPv4: `94.140.14.49` и `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 10. Сохраните настройки.
 11. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
-    - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Привязанные IP](private-dns/connect-devices/other-options/linked-ip.md)
+    - [Выделенные IP-адреса](private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Привязанные IP-адреса](private-dns/connect-devices/other-options/linked-ip.md)

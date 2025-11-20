@@ -19,9 +19,12 @@ Man kan f.eks. have:
 - En server, der blokerer voksenindhold og visse tjenester
 - En server, der kun blokerer voksenindhold i bestemte tidsinterval, som man vælger
 
-For mere information om trafikfiltrering og blokeringsregler, se artiklen [“Sådan opsættes filtrering i AdGuard DNS”](/private-dns/setting-up-filtering/blocklists.md).
+For mere information om trafikfiltrering og blokeringsregler, se afsnittet [_Sådan opsættes filtrering i AdGuard DNS_](/private-dns/setting-up-filtering/setting-up-filtering.md).
 
 Er man interesseret i bestemte indstillinger, findes der forskellige dedikerede artikler:
 
 - [Avancerede indstillinger](/private-dns/server-and-settings/advanced.md)
 - [Adgangsindstillinger](/private-dns/server-and-settings/access.md)
+- [Forespørgselskvote](/private-dns/server-and-settings/rate-limit.md)
+- [Rollebaseret adgang](/private-dns/server-and-settings/role-based-access.md)
+- [Tilpassede domæner](/private-dns/server-and-settings/custom-domains.md)

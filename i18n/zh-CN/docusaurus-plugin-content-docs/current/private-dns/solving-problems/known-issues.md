@@ -35,7 +35,7 @@ If you disable Chrome’s own DNS settings, the browser will use the DNS specifi
 1. 选择「*iCloud*」→「*私有代理*」。
 1. 关闭私有代理。
 
-![iOS 私有代理](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOS 私有代理](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay-ios-1.png)
 
 在您的 Mac 上：
 
@@ -52,8 +52,38 @@ iOS 17 更新后，Safari 设置中的高级跟踪和指纹保护可能会被启
 
 以下是禁用高级跟踪和指纹保护的方法：
 
-1. 打开「*设置*」并向下滚动到「*Safari*」。
-1. 单击「*高级*」。
-1. 禁用「*高级跟踪和指纹保护*」。
+For iOS 26.1 and later versions:
 
-![iOS 跟踪和指纹保护 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+1. Go to *Settings*.
+1. Scroll down and select *Apps*.
+1. Go to *Safari* → *Advanced*.
+1. Tap *Advanced Tracking and Fingerprinting Protection* and then *Off*.
+
+![iOS 26.1 Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+
+For iOS versions prior to 26.1:
+
+1. Open *Settings* and scroll down to *Safari*.
+1. Tap *Advanced*.
+1. Disable *Advanced Tracking and Fingerprinting Protection*.
+
+![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+
+## Limit IP Address Tracking on iPhone
+
+When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS’s ability to filter traffic.
+
+This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple’s own private relay servers. This prevents AdGuard DNS from receiving your device’s actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
+
+To restore full DNS-based filtering, you will need to disable this feature for the Wi-Fi network you are currently using.
+
+Please follow the steps below:
+
+1. Open *Settings* on your iPhone.
+1. Tap *Wi-Fi*.
+1. Find and tap the name of the Wi-Fi network you are currently connected to.
+1. On the network’s settings page, toggle off the switch for *Limit IP Address Tracking.*
+
+![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+
+DNS filtering will resume immediately after disabling this setting. Please note that you may need to repeat this process for other Wi-Fi networks you connect to in the future.

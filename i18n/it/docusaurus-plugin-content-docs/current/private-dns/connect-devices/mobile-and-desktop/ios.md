@@ -10,6 +10,42 @@ Per connettere un dispositivo iOS a AdGuard DNS, prima aggiungilo al _Cruscotto_
 3. Assegna un nome al dispositivo.
    ![Collegamento dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
+## Usa l'app AdGuard DNS
+
+L'app AdGuard DNS è progettata per una protezione di base a livello DNS, bloccando inserzioni, tracciatori e siti web dannosi. Se non hai bisogno dell'intera gamma di funzioni offerta da AdGuard Ad Blocker o AdGuard VPN, questa può essere la scelta migliore per te.
+
+Per approntare il tuo dispositivo:
+
+1. [Scarica l'app AdGuard DNS](https://agrd.io/ios_dns).
+2. Vai allo cruscotto AdGuard DNS a [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+3. Clicca _Aggiungi nuovo dispositivo_ nella scheda _Inizio_.
+4. Seleziona il tipo di dispositivo e dagli un nome, quindi clicca _Avanti_.
+5. Espandi la sezione _Usa le app AdGuard_.
+
+![Usa app AdGuard \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+
+1. In _Usa l'app DNS AdGuard_, scegli uno di questi metodi di approntamento:
+
+   - Clicca _Configura_ se sei sul dispositivo che vuoi proteggere.
+   - Scansiona il codice QR con il dispositivo che vuoi proteggere.
+   - Copia il tuo ID di configurazione e incollalo direttamente nell'app.
+
+     ![ID di configurazione \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+
+2. Tocca _Continua_ → _Connetti_.
+
+![Connetti \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
+
+1. Il tuo dispositivo è connesso correttamente a AdGuard DNS. È sufficiente toccare _Attiva_ per avviare la protezione.
+
+![Abilita \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+
+1. Quando si utilizza un protocollo basato su VPN, è comunque necessario consentire la creazione di un profilo VPN prima di essere completamente protetti. Per farlo, vai nella pagine iniziale dell'app, clicca su _Abilita_ e segui le istruzioni in-app.
+
+2. Se preferisci utilizzare il DNS nativo, vai su _Impostazioni_ → _Generale_ → _Gestione VPN e dispositivi_ → _DNS_ e abilita AdGuard DNS.
+
+Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+
 ## Utilizza AdGuard Blocca-Annunci (opzione a pagamento)
 
 L'app AdGuard ti consente di utilizzare DNS crittografati, rendendola perfetta per configurare AdGuard DNS sul tuo dispositivo iOS. Puoi scegliere tra vari protocolli di crittografia. Insieme al filtraggio DNS, ottieni anche un eccellente blocco degli annunci che funziona su tutto il sistema.
@@ -59,7 +95,7 @@ Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
 ## Usa un profilo di configurazione
 
-An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
+Un profilo dispositivo iOS, noto anche come "profilo di configurazione" da Apple, è un file XML firmato con un certificato che puoi installare manualmente sul tuo dispositivo iOS o distribuire utilizzando una soluzione MDM. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
 
 :::note Importante
 
@@ -78,5 +114,5 @@ Se stai utilizzando una VPN, il profilo di configurazione verrà ignorato.
 
 Se preferisci non utilizzare software extra per configurare DNS, puoi optare per DNS non crittografato. Ci sono due opzioni: utilizzare IP collegati o IP dedicati.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)

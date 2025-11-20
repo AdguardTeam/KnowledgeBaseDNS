@@ -12,6 +12,15 @@ toc_max_heading_level: 3
 
 Dieser Artikel enthält das Änderungsprotokoll für [AdGuard DNS-API](private-dns/api/overview.md).
 
+## v1.11
+
+_Veröffentlicht am 5. November 2025_
+
+- Authentifizierungsmethode für API-Schlüssel hinzugefügt:
+  - API-Schlüssel können im Abschnitt [Benutzereinstellungen](https://adguard-dns.io/en/dashboard/user-settings/api-keys) erstellt und widerrufen werden
+  - API-Schlüssel können zur Autorisierung von Anfragen an die API verwendet werden, indem sie im Anfrage-Header im Format `Authorization: ApiKey {api_key}` angegeben werden
+  - API-Schlüssel bieten neben Zugriffstoken eine alternative Authentifizierungsmethode
+
 ## v1.10
 
 _Veröffentlicht am 12. Dezember 2024_

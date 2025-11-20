@@ -5,7 +5,7 @@ sidebar_position: 11
 
 Xiaomi-Router haben viele Vorteile: ein stabiles, starkes Signal, Netzwerksicherheit, robuste Leistung und intelligente Verwaltung. Benutzer können bis zu 64 Geräte mit einem lokalen WLAN-Netzwerk verbinden.
 
-Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting up AdGuard DNS via linked IP.
+Leider unterstützen diese Router kein verschlüsseltes DNS, eignen sich aber gut für die Einrichtung von AdGuard DNS über verknüpfte IPs.
 
 ## Administrationsoberfläche Ihres Routers verwenden
 

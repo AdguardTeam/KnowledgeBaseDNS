@@ -9,7 +9,7 @@ AdGuard DNS ist ein kostenloser, datenschutzorientierter DNS-Auflösungsdienst, 
 
 ## Öffentliche AdGuard DNS-Server
 
-AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Eine ausführliche Anleitung zur Einrichtung von AdGuard DNS auf jedem Gerät finden Sie auf [unserer Website](https://adguard-dns.io/public-dns.html). Jeder Server unterstützt verschiedene Sicherheitsprotokolle: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), und DNS-over-QUIC (DoQ).
+AdGuard DNS verfügt über drei verschiedene Arten von öffentlichen Servern. Der *Standardserver* dient zum Blockieren von Werbung, Trackern, Malware und Phishing-Websites. *Familienschutz* tut dasselbe, blockiert aber auch Websites mit nicht jugendfreien Inhalten und erzwingt die Option *"Sichere Suche"* in Browsern, die dies anbieten. *Ohne Filterung* bietet eine sichere und zuverlässige Verbindung, blockiert aber nichts. Eine ausführliche Anleitung zur Einrichtung von AdGuard DNS auf jedem Gerät finden Sie auf [unserer Website](https://adguard-dns.io/public-dns.html). Jeder Server unterstützt verschiedene Sicherheitsprotokolle: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), und DNS-over-QUIC (DoQ).
 
 ## AdGuard DNS-Protokoll
 
@@ -27,17 +27,17 @@ AdGuard DNS bietet auch eine JSON-API für DNS. Es ist möglich, eine DNS-Antwor
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Das Abrufen einer DNS-Antwort in JSON funktioniert mit AdGuard DNS auf die gleiche Weise.
+Eine ausführliche Dokumentation finden Sie in [Googles Anleitung zu JSON API für DNS-over-HTTPS (DoH) ](https://developers.google.com/speed/public-dns/docs/doh/json). Das Abrufen einer DNS-Antwort in JSON funktioniert mit AdGuard DNS auf die gleiche Weise.
 
 :::note
 
-Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
+Im Gegensatz zu Google DNS unterstützt AdGuard DNS keine `edns_client_subnet` und `Comment`-Werte in Antwort-JSONs.
 
 :::
 
 ### DNS-over-QUIC (DoQ)
 
-[DNS-over-QUIC is a new DNS encryption protocol](https://adguard-dns.io/en/blog/dns-over-quic.html) and AdGuard DNS is the first public resolver that supports it. Im Gegensatz zu DoH und DoT verwendet es QUIC als Transportprotokoll und bringt DNS endlich zu seinen Wurzeln zurück - es arbeitet über UDP. Es bringt alle Vorteile von QUIC mit sich - sofort einsatzbereite Verschlüsselung, kürzere Verbindungszeiten, bessere Leistung bei Verlust von Datenpaketen. Außerdem soll QUIC ein Protokoll auf Transportebene sein, und es besteht keine Gefahr von Metadatenlecks, wie sie bei DoH auftreten können.
+[DNS-over-QUIC ist ein neues DNS-Verschlüsselungsprotokoll](https://adguard.com/blog/dns-over-quic.html) und AdGuard DNS ist der erste öffentliche Resolver, der es unterstützt. Im Gegensatz zu DoH und DoT verwendet es QUIC als Transportprotokoll und bringt DNS endlich zu seinen Wurzeln zurück - es arbeitet über UDP. Es bringt alle Vorteile von QUIC mit sich - sofort einsatzbereite Verschlüsselung, kürzere Verbindungszeiten, bessere Leistung bei Verlust von Datenpaketen. Außerdem soll QUIC ein Protokoll auf Transportebene sein, und es besteht keine Gefahr von Metadatenlecks, wie sie bei DoH auftreten können.
 
 ### Ratenbegrenzung
 
@@ -45,10 +45,10 @@ DNS-Datenstrombegrenzung ist eine Technik, mit der die Menge des Datenverkehrs, 
 
 ### DNSCrypt
 
-AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+AdGuard DNS ermöglicht Ihnen die Verwendung eines speziellen verschlüsselten Protokolls – DNSCrypt. Dank dieser Funktion werden alle DNS-Anfragen verschlüsselt, was Sie vor dem Abfangen von Anfragen und dem anschließenden Abhören und/oder Ändern schützt.
 
 :::note
 
-This is an obsolete protocol with restricted support.
+Dies ist ein veraltetes Protokoll mit eingeschränkter Unterstützung.
 
 :::

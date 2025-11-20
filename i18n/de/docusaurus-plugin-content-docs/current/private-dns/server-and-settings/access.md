@@ -3,7 +3,7 @@ title: Zugriffsrechte
 sidebar_position: 3
 ---
 
-Durch die Konfiguration der Zugriffseinstellungen können Sie Ihren AdGuard DNS vor unbefugtem Zugriff schützen. Zum Beispiel verwenden Sie eine dedizierte IPv4-Adresse, und Angreifer, die Schnüffler verwenden, haben sie erkannt und bombardieren sie mit Anfragen. No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
+Durch die Konfiguration der Zugriffseinstellungen können Sie Ihren AdGuard DNS vor unbefugtem Zugriff schützen. Zum Beispiel verwenden Sie eine dedizierte IPv4-Adresse, und Angreifer, die Schnüffler verwenden, haben sie erkannt und bombardieren sie mit Anfragen. Kein Problem, fügen Sie einfach die lästige Domain oder IP-Adresse der Liste hinzu und sie wird Sie nicht mehr stören!
 
 Blockierte Anfragen werden nicht im Anfragenprotokoll angezeigt und zählen nicht zum Gesamtlimit.
 
@@ -19,7 +19,7 @@ Hier können Sie die Clients auflisten, die Ihren DNS-Server nicht verwenden dü
 
 :::note Wichtig
 
-Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Falls dies passiert, trennen Sie einfach die Verbindung zum DNS-Server, öffnen Sie die Zugriffseinstellungen und passen Sie die Konfiguration entsprechend an.
+Bevor Sie die Zugriffseinstellungen übernehmen, stellen Sie sicher, dass Sie Ihre eigene IP-Adresse nicht blockieren. In diesem Fall können Sie nicht auf das Netzwerk zugreifen. Falls dies passiert, trennen Sie einfach die Verbindung zum DNS-Server, öffnen Sie die Zugriffseinstellungen und passen Sie die Konfiguration entsprechend an.
 
 :::
 
