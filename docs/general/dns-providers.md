@@ -91,7 +91,7 @@ DNS Anti Malware / DNS Antivirus is a protective DNS service designed to safegua
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/antivirus` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id) |
 
-#### Family DNS
+#### FAMILY DNS
 
 Family DNS is a specialized DNS service that automatically filters adult and inappropriate content. By blocking access to harmful or unsuitable websites, it helps create a safer online environment for children and families, ensuring that browsing remains appropriate and secure.
 
