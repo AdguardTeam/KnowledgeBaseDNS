@@ -63,6 +63,58 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
 
+### LKBIN DNS
+
+[LKBIN DNS](https://mydns.lkbin.my.id/) is a free recursive DNS service that is committed to delivering fast, stable, and secure DNS resolution for Internet users. It integrates DNSSEC for authenticity, blocks ads and malware to enhance safety, and supports DoH (DNS over HTTPS) to protect user privacy.
+
+#### ADBLOCK
+
+Ad-Blocking DNS is a service that automatically blocks advertisements and online trackers. By filtering unwanted domains at the DNS level, it prevents intrusive ads from loading and stops tracking scripts from collecting user data, resulting in a cleaner, faster, and more private browsing experience.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id) |
+
+#### UNFILTERED
+
+This type of DNS service provides unrestricted access to the internet by not applying any censorship or content filtering. It also ensures user privacy by avoiding activity logging, meaning queries are not recorded or tracked. As a result, users experience a neutral, open, and private DNS resolution environment.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
+
+#### ANTI MALWARE
+
+DNS Anti Malware / DNS Antivirus is a protective DNS service designed to safeguard users against online threats. It automatically blocks access to domains associated with malware, ransomware, and phishing attacks, helping ensure a safer and more secure browsing experience.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/antivirus` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id) |
+
+#### Family DNS
+
+Family DNS is a specialized DNS service that automatically filters adult and inappropriate content. By blocking access to harmful or unsuitable websites, it helps create a safer online environment for children and families, ensuring that browsing remains appropriate and secure.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/family` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id) |
+
+#### HAGEZI FILTER
+
+This DNS service allows users to apply customizable filtering rules using the Hagezi blocklists. The Hagezi filter is a well‑known community‑maintained set of DNS blocklists that target ads, trackers, malware, and other unwanted domains. By integrating these lists, the custom DNS provides flexible protection and privacy, enabling users to choose the level of filtering that best suits their needs.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id) |
+
+#### ADGUARD FILTER
+
+This DNS service uses AdGuard’s advanced filtering technology to block ads, trackers, and malicious domains directly at the DNS level. By leveraging AdGuard’s regularly updated blocklists, it enhances privacy, improves browsing speed, and protects users from harmful or unwanted online content.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/adguard` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id) |
+
 ### Ali DNS
 
 [Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
