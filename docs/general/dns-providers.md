@@ -85,8 +85,7 @@ This type of DNS service provides unrestricted access to the internet by not app
 
 #### ANTIVIRUS
 
-Antivirus is a protective DNS service designed to safeguard users against online threats.  
-It automatically blocks access to domains associated with malware, ransomware, and phishing attacks, helping ensure a safer and more secure browsing experience.
+Antivirus is a protective DNS service designed to safeguard users against online threats. 
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
