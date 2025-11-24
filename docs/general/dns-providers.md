@@ -83,7 +83,7 @@ This type of DNS service provides unrestricted access to the internet by not app
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
 
-## ANTIVIRUS
+#### ANTIVIRUS
 
 Antivirus is a protective DNS service designed to safeguard users against online threats.  
 It automatically blocks access to domains associated with malware, ransomware, and phishing attacks, helping ensure a safer and more secure browsing experience.
