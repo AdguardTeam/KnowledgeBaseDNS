@@ -85,7 +85,7 @@ This type of DNS service provides unrestricted access to the internet by not app
 
 #### ANTIVIRUS
 
-DNS Anti Malware / DNS Antivirus is a protective DNS service designed to safeguard users against online threats. It automatically blocks access to domains associated with malware, ransomware, and phishing attacks, helping ensure a safer and more secure browsing experience.
+Antivirus is a protective DNS service designed to safeguard users against online threats. It automatically blocks access to domains associated with malware, ransomware, and phishing attacks, helping ensure a safer and more secure browsing experience.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -106,14 +106,6 @@ This DNS service allows users to apply customizable filtering rules using the Ha
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id) |
-
-#### ADGUARD FILTER
-
-This DNS service uses AdGuard’s advanced filtering technology to block ads, trackers, and malicious domains directly at the DNS level. By leveraging AdGuard’s regularly updated blocklists, it enhances privacy, improves browsing speed, and protects users from harmful or unwanted online content.
-
-| Protocol       | Address                                            |                |
-|----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://mydns.lkbin.my.id/adguard` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id) |
 
 ### Ali DNS
 
