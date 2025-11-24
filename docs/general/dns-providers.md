@@ -65,7 +65,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
 ### LKBIN DNS
 
-[LKBIN DNS](https://mydns.lkbin.my.id/) is a free recursive DNS service that is committed to delivering fast, stable, and secure DNS resolution for Internet users. It integrates DNSSEC for authenticity, blocks ads and malware to enhance safety, and supports DoH (DNS over HTTPS) to protect user privacy.
+[LKBIN DNS](https://mydns.lkbin.my.id/) is a free recursive DNS service that is committed to delivering fast, stable, and secure DNS resolution for Internet users. It integrates DNSSEC for authenticity, blocks ads and malware to enhance safety, and supports only DoH (DNS over HTTPS) to protect user privacy. For your information, we do not store logs or user data on this service.
 
 #### ADBLOCK
 
