@@ -3,18 +3,15 @@ title: Managing the AdGuard DNS mobile app via MDM
 sidebar_position: 7
 ---
 
-# Managing the AdGuard DNS mobile app via MDM
-
 The AdGuard DNS mobile app supports enterprise management through MDM (Mobile Device Management) systems using the Managed App Configuration (MAC) standard.
 
-This allows IT administrators to configure app settings centrally through EMM consoles, such as Google Workspace, Microsoft Intune, and other solutions compatible with [AppConfig.org](https://www.appconfig.org/).
+This allows IT administrators to configure and implement AdGuard DNS settings across multiple devices centrally through EMM consoles, such as Google Workspace, Microsoft Intune, and other solutions compatible with [AppConfig.org](https://www.appconfig.org/).
 
-## Compatibility and requirements
+:::note
 
-### Supported platforms
+Managed App Configuration is fully implemented and tested on Android, while support for iOS is planned and will be added in a future update.
 
-- **Android**: Fully implemented and tested
-- **iOS**: In development
+:::
 
 ### Supported EMM solutions
 
@@ -30,131 +27,24 @@ The app is compatible with any EMM systems that support the AppConfig.org standa
 
 ## Supported parameters
 
-### Setup ID (setup_id)
+### Managed App Configuration Parameters
 
-**Type:** String  
-**Required:** No  
-**Valid values:** AdGuard DNS setup identifier
-
-#### What the parameter does
-
-Setup ID is a unique identifier for connecting a mobile device to your server in AdGuard DNS.
-
-#### How the app responds to the parameter
-
-On initial installation:
-
-- If Setup ID is provided, the app automatically enters managed mode if it's not already in it
-- The Setup ID input field becomes locked and filled with the specified value
-- User cannot change the Setup ID manually
-- The "Reset connection" option becomes unavailable
-
-When the Setup ID value changes:
-
-- The app completely resets the current connection
-- All settings are reset
-- User must go through the connection process again with the new Setup ID
-- DNS protection automatically stops
-
-If the parameter is not specified:
-
-- User can enter Setup ID manually on first launch or scan a QR code
-
-### Device name (device_name)
-
-**Type:** String  
-**Required:** No  
-**Valid values:** Any device name
-
-#### What the parameter does
-
-Device Name sets the display name of the device in the AdGuard DNS control panel. This helps identify devices in a corporate environment.
-
-#### How the app responds to the parameter
-
-On initial installation:
-
-- If name is provided, the app automatically enters managed mode if it's not already in it
-- The specified name is automatically used when registering the device, if not set via Setup ID
-- The device name input field is locked during setup
-
-When the value changes:
-
-- Nothing happens
-
-If the parameter is not specified:
-
-- User can enter device name manually on first launch
-- The app may suggest Device Name specified via Setup ID
-
-### DNS Protocol (dns_protocol)
-
-**Type:** Choice  
-**Required:** No  
-**Valid values for Android:**
-
-- `doh` — DNS-over-HTTPS (default)
-- `dot` — DNS-over-TLS
-- `doq` — DNS-over-QUIC
-
-**Valid values for iOS:**
-
-- `doh_native` — DNS-over-HTTPS + Native (default)
-- `dot_native` — DNS-over-TLS + Native
-- `doh_vpn` — DNS-over-HTTPS (default) + VPN
-- `dot_vpn` — DNS-over-TLS + VPN
-- `doq_vpn` — DNS-over-QUIC + VPN
-
-#### What the parameter does
-
-DNS Protocol determines which encryption protocol will be used for communication with AdGuard DNS servers.
-DNS-over-QUIC not compatible with Native mode on iOS.
-
-#### How the app responds to the parameter
-
-On initial installation:
-
-- If protocol is specified, the app automatically enters managed mode if it's not already in it
-- The specified protocol will be used by default
-- Protocol selection in settings becomes locked
-
-When the value changes:
-
-- The app automatically switches to the new protocol
-- If DNS protection is active, automatic reconnection occurs
-
-If the parameter is not specified:
-
-- The user can select protocol manually in settings
+| **Parameter**                     | **Type** | **Required** | **Valid values**                                                                                         | **What it does**                                                                                    | **How the app responds**                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------- | -------- | ------------ | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Setup ID** (`setup_id`)         | String   | No           | AdGuard DNS setup identifier                                                                             | A unique identifier for connecting a mobile device to your server in AdGuard DNS.                              | **On initial installation:**<br>• If provided, the app enters managed mode automatically<br>• Setup ID field becomes locked and pre-filled<br>• User cannot change it<br>• “Reset connection” becomes unavailable<br><br>**When value changes:**<br>• App fully resets the connection<br>• All settings reset<br>• User must reconnect with the new Setup ID<br>• DNS protection stops<br><br>**If not specified:**<br>• User can enter Setup ID manually or scan a QR code |
+| **Device name** (`device_name`)   | String   | No           | Any device name                                                                                          | Sets the device's display name in the AdGuard DNS control panel to help identify devices.                      | **On initial installation:**<br>• If provided, the app enters managed mode automatically<br>• Name is used when registering the device (unless Setup ID already sets it)<br>• Device name field is locked<br><br>**When value changes:**<br>• Nothing happens<br><br>**If not specified:**<br>• User can enter device name manually<br>• App may suggest name from Setup ID                                                                                                 |
+| **DNS Protocol** (`dns_protocol`) | Choice   | No           | **Android:** `doh`, `dot`, `doq`<br>**iOS:** `doh_native`, `dot_native`, `doh_vpn`, `dot_vpn`, `doq_vpn` | Defines which encrypted DNS protocol is used. *Note:* DNS-over-QUIC is not compatible with Native mode on iOS. | **On initial installation:**<br>• If provided, the app enters managed mode automatically<br>• Selected protocol is applied by default<br>• Protocol selection in settings becomes locked<br><br>**When value changes:**<br>• App switches to the new protocol<br>• If DNS protection is on, it reconnects automatically<br><br>**If not specified:**<br>• User can choose protocol manually in settings                                                                     |
 
 ## Managed mode
 
-The app automatically enters managed mode when the MDM system provides at least one configuration parameter.
+The app automatically enters managed mode when the MDM system provides at least one configuration parameter. In this mode, MDM settings always take priority over user preferences: any parameter configured through MDM cannot be changed by the user, while parameters not defined by MDM remain editable. 
 
-MDM parameters always take precedence over user settings:
-
-- If a parameter is set via MDM, the user cannot change it
-- Parameters not set via MDM remain available for user modification
-- When MDM configuration is updated, changes are applied automatically
-
-When the MDM system removes all configuration parameters at once:
-
-- The app automatically exits managed mode
-- All previously locked settings become available
-- User can freely change parameters
+When the MDM configuration is updated, all changes are applied automatically. If the MDM system removes all configuration parameters at once, the app exits managed mode, previously locked settings become available again, and the user can freely modify all parameters.
 
 ## Configuration updates
 
-- The app automatically receives notifications about configuration changes
-- Changes are applied immediately upon receipt from the EMM system. EMM systems may have sync delays before configuration reaches the device.
-- No app restart required
+The app automatically receives notifications about configuration changes, and any updates delivered by the EMM system are applied immediately upon arrival. Depending on the EMM provider, there may be a delay before the configuration reaches the device. No app restart is required for the changes to take effect.
 
-### AppConfig specification
+## Configuration testing
 
-AdGuard DNS Mobile follows the [AppConfig.org](https://www.appconfig.org/) standard to ensure compatibility with a wide range of EMM solutions.
-
-### Configuration testing
-
-On **Android**, use [Test DPC](https://play.google.com/store/apps/details?id=com.afwsamples.testdpc) for testing without a full MDM. As an alternative, you can use adb commands to simulate managed configuration.
-
-On iOS, use a test account in your MDM solution.
+On **Android**, use [Test DPC](https://play.google.com/store/apps/details?id=com.afwsamples.testdpc) for testing without a full MDM. As an alternative, you can use adb commands to simulate managed configuration. On **iOS**, you can use a test account in your MDM solution.
