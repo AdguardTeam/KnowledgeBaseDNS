@@ -3,11 +3,23 @@ title: Server setup ID
 sidebar_position: 6
 ---
 
+:::info
+
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 ## What is a server setup ID?
 
 If you want to connect a device to a specific server and don’t want to manually create each device in the Dashboard on the website, you can use the **server setup ID**. Simply take the ID and use it to connect via the AdGuard DNS app. This way, the “device” will be automatically created upon connection.
 
 ## How to connect using server setup ID
+
+:::note
+
+If you're configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
 
 1. Go to *Dashboard* → [*Servers*](https://adguard-dns.io/dashboard/servers).
 1. Select the desired server.
