@@ -3,15 +3,15 @@ title: Managing the AdGuard DNS mobile app via MDM
 sidebar_position: 7
 ---
 
+:::info
+
+This article describes a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 The AdGuard DNS mobile app supports enterprise management through MDM (Mobile Device Management) systems using the Managed App Configuration (MAC) standard.
 
 This allows IT administrators to configure and implement AdGuard DNS settings across multiple devices centrally through EMM consoles, such as Google Workspace, Microsoft Intune, and other solutions compatible with [AppConfig.org](https://www.appconfig.org/).
-
-:::note
-
-Managed App Configuration is fully implemented and tested on Android, while support for iOS is planned and will be added in a future update.
-
-:::
 
 ### Supported EMM solutions
 
@@ -44,7 +44,3 @@ When the MDM configuration is updated, all changes are applied automatically. If
 ## Configuration updates
 
 The app automatically receives notifications about configuration changes, and any updates delivered by the EMM system are applied immediately upon arrival. Depending on the EMM provider, there may be a delay before the configuration reaches the device. No app restart is required for the changes to take effect.
-
-## Configuration testing
-
-On **Android**, use [Test DPC](https://play.google.com/store/apps/details?id=com.afwsamples.testdpc) for testing without a full MDM. As an alternative, you can use adb commands to simulate managed configuration. On **iOS**, you can use a test account in your MDM solution.
