@@ -1,35 +1,35 @@
 ---
-title: Role-based access
+title: Rollenbasierter Zugriff
 sidebar_position: 5
 ---
 
-With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member logs in individually, ensuring a secure and efficient workflow in collaborative environments.
+Durch rollenbasierte Zugriffskontrolle können Kontoinhaber Mitglieder mit bestimmten Rollen zur DNS-Verwaltung einladen, ohne Anmeldeinformationen weitergeben zu müssen. Jedes Mitglied meldet sich einzeln an, wodurch ein sicherer und effizienter Arbeitsablauf in gemeinschaftlichen Umgebungen gewährleistet wird.
 
 :::note
 
-This feature is available for **Business** accounts with a **Team** or **Enterprise** subscription.
+Diese Funktion ist für **Business**-Konten mit einem **Team**- oder **Enterprise**-Abonnement verfügbar.
 
 :::
 
-## Types of members
+## Mitgliederarten
 
-DNS accounts support three access levels. Ownership is fixed at registration, while **admins** and **viewers** are added through invitations. Roles can be updated or revoked at any time, and the number of members is virtually unlimited.
+DNS-Konten unterstützen drei Zugriffsebenen. Die Eigentumssituation wird bei der Registrierung festgelegt, während **Administratoren** und **Betrachter** durch Einladungen hinzugefügt werden. Die Rollen können jederzeit aktualisiert oder widerrufen werden, und die Anzahl der Mitglieder ist praktisch unbegrenzt.
 
-- **Owner**: the account holder with full access to all settings and billing
+- **Eigentümer**: Der Kontoinhaber mit uneingeschränktem Zugriff auf alle Einstellungen und Abrechnungen
 
-![Owner settings](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
+![Eigentümer-Einstellungen](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
 
-- **Admin**: a member who can modify DNS settings, manage devices, and invite other members. Best for system administrators or MSPs responsible for network filtering in organizations. With a single login, admins can manage several accounts and switch between them quickly
+- **Admin**: Ein Mitglied, das DNS-Einstellungen ändern, Geräte verwalten und andere Mitglieder einladen kann. Ideal für Systemadministratoren oder MSPs (Managed Services Provider), die für die Netzwerkfilterung in Unternehmen verantwortlich sind. Mit einer einzigen Anmeldung können Administratoren mehrere Konten verwalten und schnell zwischen diesen wechseln.
 
-![Multiple DNS accounts](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
+![Mehrere DNS-Konten](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
 
-- **Viewer**: a member with read-only access. Can view settings and statistics but cannot make changes. Best for consultants or managers who monitor network activity and provide recommendations without modifying DNS settings
+- **Betrachter**: Ein Mitglied mit Lesezugriff. Einstellungen und Statistiken können angezeigt werden, aber es können keine Änderungen vorgenommen werden. Ideal für Berater oder Verwalter, die Netzwerkaktivitäten überwachen und Empfehlungen aussprechen, ohne die DNS-Einstellungen zu ändern.
 
-## How to invite members
+## So laden Sie Mitglieder ein
 
-![Adding a member](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
+![Mitglied hinzufügen](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
 
-1. Go to your dashboard → [_Settings_](https://adguard-dns.io/dashboard/settings/).
-2. In the _Organization_ section, open [_Members_](https://adguard-dns.io/dashboard/account/members).
-3. Click _Add member_, enter your colleague’s email address, and select the access type — admin or viewer.
-4. Wait until they accept the invitation, and you’re ready to collaborate!
+1. Öffnen Sie Ihre Übersicht → [_Einstellungen_](https://adguard-dns.io/dashboard/settings/).
+2. Öffnen Sie im Abschnitt _Organisation_ den Punkt [_Mitglieder_](https://adguard-dns.io/dashboard/account/members).
+3. Klicken Sie auf _Mitglied hinzufügen_, geben Sie die E-Mail-Adresse Ihres Kollegen ein und wählen Sie die Zugriffsart aus – Administrator oder Betrachter.
+4. Warten Sie, bis diese die Einladung angenommen haben, und schon können Sie mit der Zusammenarbeit beginnen!

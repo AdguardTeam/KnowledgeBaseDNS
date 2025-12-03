@@ -28,7 +28,7 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 3. **DNS 서버 주소 사용**으로 이동합니다.
 4. **일반 DNS 서버 주소**를 열고 연결된 IP를 연결합니다.
 
-    ![연결된 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+   ![연결된 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
 ## 동적 DNS
 
@@ -48,11 +48,11 @@ DDNS(동적 DNS)는 IP 주소가 변경될 때마다 DNS 레코드를 자동으�
 
 1. 라우터 설정에서 DDNS가 지원되는지 확인해야 합니다.
 
-    - **라우터 설정** → **네트워크**로 이동합니다.
-    - DDNS 또는 **동적 DNS** 섹션을 찾습니다.
-    - 해당 페이지로 이동하여 설정이 실제로 지원되는지 확인합니다. _This is just an example of what it may look like, the settings may vary depending on your router_
+   - **라우터 설정** → **네트워크**로 이동합니다.
+   - DDNS 또는 **동적 DNS** 섹션을 찾습니다.
+   - 해당 페이지로 이동하여 설정이 실제로 지원되는지 확인합니다. _This is just an example of what it may look like, the settings may vary depending on your router_
 
-    ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
+   ![DDNS supported \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
 
 2. [DynDNS](https://dyn.com/remote-access/), [NO-IP](https://www.noip.com/) 등 인기 있는 서비스 또는 선호하는 기타 DDNS 공급업체에 도메인을 등록합니다.
 
@@ -62,7 +62,7 @@ DDNS(동적 DNS)는 IP 주소가 변경될 때마다 DNS 레코드를 자동으�
 
 5. 이전에 등록한 도메인을 입력하고 **DDNS 구성**을 클릭합니다.
 
-    ![DDNS 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
+   ![DDNS 설정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
 All done, you’ve successfully set up DDNS!
 
@@ -73,14 +73,14 @@ All done, you’ve successfully set up DDNS!
 가장 쉬운 방법은 작업 스케줄러(Task Scheduler)를 사용하는 것입니다.
 
 1. 작업을 만듭니다.
-    - 작업 스케줄러를 엽니다.
-    - 새 작업을 만듭니다.
-    - 트리거를 5분마다 실행되도록 설정합니다.
-    - 액션으로 **프로그램 실행**을 선택합니다.
+   - 작업 스케줄러를 엽니다.
+   - 새 작업을 만듭니다.
+   - 트리거를 5분마다 실행되도록 설정합니다.
+   - 액션으로 **프로그램 실행**을 선택합니다.
 2. 프로그램을 선택합니다.
-    - In the _Program or Script_ field, type `powershell`
-    - **인수 추가** 필드에 다음을 입력합니다.
-        - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
+   - In the _Program or Script_ field, type `powershell`
+   - **인수 추가** 필드에 다음을 입력합니다.
+     - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. 작업을 저장합니다.
 
 ### macOS 및 Linux
@@ -88,11 +88,11 @@ All done, you’ve successfully set up DDNS!
 macOS 및 Linux에서 가장 쉬운 방법은 `cron`을 사용하는 것입니다.
 
 1. crontab을 엽니다.
-    - 터미널에서 `crontab -e`를 실행합니다.
+   - 터미널에서 `crontab -e`를 실행합니다.
 2. 작업을 추가합니다.
-    - 다음 줄을 삽입합니다:
-        `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
-    - 이 작업은 5분마다 실행됩니다.
+   - 다음 줄을 삽입합니다:
+     `/5 * * * * curl https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}`
+   - 이 작업은 5분마다 실행됩니다.
 3. crontab을 저장합니다.
 
 :::note 중요

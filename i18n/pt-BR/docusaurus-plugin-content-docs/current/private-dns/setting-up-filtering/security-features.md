@@ -1,6 +1,6 @@
 ---
 title: Recursos de segurança
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 The AdGuard DNS security settings are a set of configurations designed to protect the user’s personal information.

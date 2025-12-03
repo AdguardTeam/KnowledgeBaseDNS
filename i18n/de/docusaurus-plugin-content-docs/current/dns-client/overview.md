@@ -39,7 +39,7 @@ Unterstützte CPU-Architekturen:
 
    :::caution
 
-   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   Unter macOS ist es wichtig, dass global installierte Daemons `root` gehören (siehe die [`launchd`-Dokumentation][launchd-requirements]) (engl.), daher muss die ausführbare Datei `AdGuardDNSClient` im Verzeichnis `/Applications/` oder dessen Unterverzeichnis abgelegt werden.
 
    :::
 

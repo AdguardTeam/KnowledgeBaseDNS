@@ -10,6 +10,42 @@ To connect an iOS device to AdGuard DNS, first add it to _Dashboard_:
 3. Name the device.
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
+## De AdGuard DNS-app gebruiken
+
+De AdGuard DNS-app is ontworpen voor basisbescherming op DNS-niveau — het blokkeren van advertenties, volgers en kwaadaardige websites. Als je niet het volledige scala aan functies van AdGuard Advertentieblokker of AdGuard VPN nodig hebt, is dit misschien de beste keuze voor jou.
+
+Om je apparaat in te stellen:
+
+1. [Download de AdGuard DNS-app](https://agrd.io/ios_dns).
+2. Ga naar je AdGuard DNS-dashboard op [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+3. Klik op _Nieuw apparaat toevoegen_ op het tabblad _Start_.
+4. Selecteer je apparaattype en geef het een naam, klik dan op _Volgende_.
+5. Vouw de sectie _AdGuard-apps gebruiken_ uit.
+
+![Gebruik AdGuard-apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+
+1. Kies onder _Gebruik de AdGuard DNS-app_ een van de volgende installatiemethoden:
+
+   - Klik op _Configureren_ als je op het apparaat bent dat je wilt beschermen.
+   - Scan de QR-code met het apparaat dat je wilt beschermen.
+   - Kopieer jouw installatie-ID en plak deze rechtstreeks in de app.
+
+     ![Installatie-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+
+2. Tik op _Doorgaan_ → _Verbinden_.
+
+![Verbinden \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
+
+1. Your device is successfully connected to AdGuard DNS. Je hoeft alleen maar op _Inschakelen_ te tikken om de bescherming te starten.
+
+![Inschakelen \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+
+1. Bij gebruik van een VPN-gebaseerd protocol moet je nog steeds toestaan dat je een VPN-profiel aanmaakt voordat je volledig beschermd bent. Ga hiervoor naar de startpagina van de app, klik op _Inschakelen_ en volg de instructies in de app.
+
+2. Als je liever de systeem-eigen DNS wilt gebruiken, ga je naar _Instellingen_ → _Algemeen_ → _VPN & Apparaatbeheer_ → _DNS_ en schakel je AdGuard DNS in.
+
+All done! Your device is successfully connected to AdGuard DNS.
+
 ## Use AdGuard Ad Blocker (paid option)
 
 The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your iOS device. You can choose from various encryption protocols. Along with DNS filtering, you also get an excellent ad blocker that works across your entire system.
@@ -31,7 +67,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 8. Your freshly created server should appear at the bottom of the list.
    ![Custom server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-All done! Your device is successfully connected to AdGuard DNS.
+All done! Je apparaat is succesvol verbonden met AdGuard DNS.
 
 ## Use AdGuard VPN
 
@@ -55,7 +91,7 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 9. Your freshly created server should appear under _Custom DNS servers_.
    ![Custom servers \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Voltooid! Jouw apparaat is succesvol verbonden met AdGuard DNS.
 
 ## Use a configuration profile
 

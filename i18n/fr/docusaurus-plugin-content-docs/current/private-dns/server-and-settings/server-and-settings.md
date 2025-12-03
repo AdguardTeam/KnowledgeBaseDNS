@@ -19,9 +19,12 @@ Par exemple, vous pouvez avoir :
 - Un serveur qui bloque le contenu pour adultes et certains services
 - Un serveur qui bloque le contenu pour adultes uniquement pendant des heures spécifiques que vous choisissez
 
-Pour plus d'informations sur le filtrage du trafic et les règles de blocage, consultez l'article ["Comment configurer le filtrage dans AdGuard DNS"](/private-dns/setting-up-filtering/blocklists.md).
+For more information on traffic filtering and blocking rules, check out the [_How to set up filtering in AdGuard DNS_](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
 
 If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [Paramètres Avancés](/private-dns/server-and-settings/advanced.md)
 - [Paramètres d'accès](/private-dns/server-and-settings/access.md)
+- [Rate limit](/private-dns/server-and-settings/rate-limit.md)
+- [Role-based access](/private-dns/server-and-settings/role-based-access.md)
+- [Custom domains](/private-dns/server-and-settings/custom-domains.md)

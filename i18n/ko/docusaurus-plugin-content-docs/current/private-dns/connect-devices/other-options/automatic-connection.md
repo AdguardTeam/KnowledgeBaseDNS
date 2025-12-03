@@ -14,7 +14,7 @@ sidebar_position: 5
 1. **대시보드**를 열고 필요한 서버를 선택합니다.
 2. Go to _Advanced_.
 3. 기기를 자동으로 연결하는 옵션을 활성화합니다.
-    ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
+   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
 
 이제 기기 이름, 기기 유형 및 현재 서버 ID가 포함된 특별한 주소를 생성함으로써 기기를 서버에 자동으로 연결할 수 있습니다. 이 주소가 어떤 모양인지와 생성 규칙에 대해 알아보겠습니다.
 
@@ -55,5 +55,5 @@ sidebar_position: 5
 1. **서버** → **서버 설정** → **기기** → **기기를 자동으로 연결**로 이동한 후 **링크 생성기 및 설명서**를 클릭합니다.
 2. 사용하려는 프로토콜과 기기 이름 및 기기 유형을 선택합니다.
 3. **링크 생성**을 클릭합니다.
-    ![링크 생성 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
+   ![링크 생성 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. 링크를 성공적으로 생성했으면 이제 서버 주소를 복사하여 [AdGuard 앱](https://adguard.com/welcome.html) 중 하나에서 사용합니다.

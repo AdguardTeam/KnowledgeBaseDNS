@@ -1,6 +1,6 @@
 ---
 title: 자녀 보호
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## 자녀 보호 기능이란 무엇인가요?

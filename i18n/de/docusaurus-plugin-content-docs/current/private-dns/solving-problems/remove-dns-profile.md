@@ -3,7 +3,7 @@ title: So entfernen Sie ein DNS-Profil
 sidebar_position: 3
 ---
 
-Wenn Sie Ihr iPhone, iPad oder Ihren Mac mit einem konfigurierten DNS-Profil von Ihrem DNS-Server trennen müssen, müssen Sie dieses DNS-Profil entfernen. Here’s how to do it.
+Wenn Sie Ihr iPhone, iPad oder Ihren Mac mit einem konfigurierten DNS-Profil von Ihrem DNS-Server trennen müssen, müssen Sie dieses DNS-Profil entfernen. Und so geht's.
 
 Auf Ihrem Mac:
 

@@ -31,6 +31,6 @@ DoQ использует протокол QUIC для разделения DNS -
 
 :::note
 
-More detailed information about head-of-line blocking and the DNS-over-QUIC protocol can be found in our [blog post](https://adguard-dns.io/en/blog/dns-over-quic.html)
+Узнать больше о проблеме head-of-line blocking и протоколе DNS-over-QUIC можно [в нашем посте](https://adguard-dns.io/ru/blog/dns-over-quic.html)
 
 :::

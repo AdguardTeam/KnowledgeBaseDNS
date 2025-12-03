@@ -38,27 +38,27 @@ Das Objekt `cache` konfiguriert das Zwischenspeichern der Ergebnisse von DNS-Abf
 
 Das Objekt `server` konfiguriert die Verarbeitung der eingehenden Anfragen. Es hat folgende Eigenschaften:
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: Die Konfiguration des Wiederholungsmechanismus für die Bindung an die Lauschadressen. Dies ist nützlich, wenn der Server gestartet wird, bevor das Netzwerk bereit ist und die Adressen noch nicht verfügbar sind, wie bei einigen Windows-Editionen, die als Systemdienst installiert werden.
 
   :::note
 
-  This object is available since **v0.0.3**.
+  Dieses Objekt ist seit **v0.0.3** verfügbar.
 
   :::
 
   Es hat folgende Eigenschaften:
 
-  - `enabled`: Whether bind retry is enabled or not.
+  - `enabled`: Gibt an, ob der Bindungswiederholungsversuch aktiviert ist oder nicht.
 
     **Beispiel:** `true`
 
-  - `interval`: The interval between retries as a human-readable duration.
+  - `interval`: Gibt das Intervall zwischen den Wiederholungsversuchen in einer für den Menschen lesbaren Dauer an.
 
-    **Example:** `1s`
+    **Beispiel:** `1s`
 
-  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+  - `count`: Gibt die maximale Anzahl der Versuche nach dem ersten Fehlversuch an. Das heißt, wenn `count` `4` ist, beträgt die Gesamtzahl der Versuche fünf.
 
-    **Example:** `4`
+    **Beispiel:** `4`
 
 - `listen_addresses`: Die Menge der Adressen mit den zu überwachenden Ports.
 
