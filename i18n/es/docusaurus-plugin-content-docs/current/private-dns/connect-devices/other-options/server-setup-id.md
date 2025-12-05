@@ -3,11 +3,23 @@ title: ID de configuración del servidor
 sidebar_position: 6
 ---
 
+:::info
+
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 ## ¿Qué es un ID de configuración del servidor?
 
 Si quieres conectar un dispositivo a un servidor específico y no quieres crear manualmente cada dispositivo en el Panel de control del sitio web, puedes usar el **ID de configuración del servidor**. Simplemente toma el ID y úsalo para conectarte a través de la app DNS de AdGuard. De esta manera, el "dispositivo" se creará automáticamente al conectarse.
 
 ## Cómo conectar usando el ID de configuración del servidor
+
+:::note
+
+If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
 
 1. Ve a _panel de control_ → [_Servidores_](https://adguard-dns.io/dashboard/servers).
 2. Selecciona el servidor deseado.

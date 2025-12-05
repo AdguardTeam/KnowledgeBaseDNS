@@ -55,35 +55,35 @@ Voici comment vous pouvez désactiver la protection avancée contre le suivi et 
 For iOS 26.1 and later versions:
 
 1. Go to *Settings*.
-1. Scroll down and select *Apps*.
-1. Go to *Safari* → *Advanced*.
-1. Tap *Advanced Tracking and Fingerprinting Protection* and then *Off*.
+1. Défilez vers le bas et sélectionnez *Applications*.
+1. Allez dans *Safari* → *Avancé*.
+1. Appuyez sur *Protection avancée contre le suivi et le fingerprinting*, puis sur *Désactivé*.
 
-![iOS 26.1 Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+![iOS 26.1 Protection contre le suivi et le fingerprinting *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
 
-For iOS versions prior to 26.1:
+Pour les versions d'iOS antérieures à 26.1 :
 
-1. Open *Settings* and scroll down to *Safari*.
-1. Tap *Advanced*.
-1. Disable *Advanced Tracking and Fingerprinting Protection*.
+1. Ouvrez *Paramètres* et faites défiler jusqu'à *Safari*.
+1. Tapez sur *Avancés*.
+1. Désactivez *Protection avancée contre le suivi et le fingerprinting*.
 
-![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+![Protection avancée contre le suivi et le fingerprinting sur iOS *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
 
-## Limit IP Address Tracking on iPhone
+## Limiter le suivi des adresses IP sur l'iPhone
 
-When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS’s ability to filter traffic.
+Lorsque la fonction Limiter le suivi des adresses IP est activée sur votre iPhone, elle peut interférer avec la capacité d'AdGuard DNS à filtrer le trafic.
 
-This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple’s own private relay servers. This prevents AdGuard DNS from receiving your device’s actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
+Cela est dû au fait que la fonction achemine les requêtes DNS provenant de Safari (et d'autres applications qui la prennent en charge) par l'intermédiaire de serveurs relais privés d'Apple. Cela empêche AdGuard DNS de recevoir l'adresse IP réelle de votre appareil et de traiter les requêtes DNS, ce qui désactive le filtrage des publicités et des traqueurs.
 
-To restore full DNS-based filtering, you will need to disable this feature for the Wi-Fi network you are currently using.
+Pour rétablir le filtrage complet basé sur le DNS, vous devez désactiver cette fonction pour le réseau Wi-Fi que vous utilisez actuellement.
 
-Please follow the steps below:
+Veuillez suivre les étapes ci-dessous :
 
-1. Open *Settings* on your iPhone.
-1. Tap *Wi-Fi*.
-1. Find and tap the name of the Wi-Fi network you are currently connected to.
-1. On the network’s settings page, toggle off the switch for *Limit IP Address Tracking.*
+1. Ouvrez les *Réglages* sur votre iPhone.
+1. Appuyez sur *Wi-Fi*.
+1. Trouvez et appuyez sur le nom du réseau Wi-Fi auquel vous êtes actuellement connecté.
+1. Sur la page des paramètres du réseau, désactivez l'option *Limiter le suivi des adresses IP.*
 
-![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+![Limiter le suivi des adresses IP *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
 
-DNS filtering will resume immediately after disabling this setting. Please note that you may need to repeat this process for other Wi-Fi networks you connect to in the future.
+Le filtrage DNS reprend immédiatement après la désactivation de ce paramètre. Notez que vous devrez peut-être répéter cette opération pour d'autres réseaux Wi-Fi auxquels vous vous connecterez à l'avenir.

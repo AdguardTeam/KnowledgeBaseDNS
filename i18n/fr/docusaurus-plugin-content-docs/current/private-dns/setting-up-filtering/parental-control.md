@@ -5,11 +5,11 @@ sidebar_position: 5
 
 ## Qu'est-ce que c'est
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+Le contrôle parental est un ensemble de paramètres qui vous donne la flexibilité de personnaliser l'accès à certains sites Web avec un contenu "sensible". Vous pouvez utiliser cette fonctionnalité pour restreindre l'accès de vos enfants aux sites pour adultes, personnaliser les requêtes de recherche, bloquer l'utilisation de services populaires, et plus encore.
 
 ## Comment le mettre en place
 
-Vous pouvez configurer de manière flexible toutes les fonctionnalités sur vos serveurs, y compris la fonctionnalité de contrôle parental. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Vous pouvez configurer de manière flexible toutes les fonctionnalités sur vos serveurs, y compris la fonctionnalité de contrôle parental. [Dans l'article correspondant](private-dns/server-and-settings/server-and-settings.md), vous pouvez vous familiariser avec ce qu'est un "serveur" dans AdGuard DNS et apprendre à créer différents serveurs avec différents ensembles de paramètres.
 
 Ensuite, accédez aux paramètres du serveur sélectionné et activez les configurations requises.
 
@@ -33,7 +33,7 @@ Supprime l'option de visionner et de publier des commentaires sous les vidéos e
 
 ### Services et sites Web bloqués
 
-AdGuard DNS bloque l'accès aux services populaires en un clic. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
+AdGuard DNS bloque l'accès aux services populaires en un clic. C'est utile si vous ne voulez pas que les appareils connectés visitent Instagram et YouTube, par exemple.
 
 ![Services bloqués \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

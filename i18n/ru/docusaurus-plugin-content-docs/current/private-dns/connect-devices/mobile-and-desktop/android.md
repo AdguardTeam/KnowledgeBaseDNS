@@ -20,7 +20,7 @@ sidebar_position: 2
 
 2. Перейдите на Панель управления AdGuard DNS по адресу [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Нажмите _Добавить устройство_ на _Главной_.
+3. Click _Connect device_ on the _Home_ tab.
 
 4. Выберите тип устройства и дайте ему название, затем нажмите _Далее_.
 

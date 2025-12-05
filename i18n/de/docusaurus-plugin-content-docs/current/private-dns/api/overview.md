@@ -14,7 +14,7 @@ AdGuard DNS bietet eine REST-API, die Sie zur Integration Ihrer Anwendungen verw
 
 ## Authentifizierung
 
-### API keys
+### API-Schlüssel
 
 When included in the request header, API keys can be used to authorize requests to User API.
 

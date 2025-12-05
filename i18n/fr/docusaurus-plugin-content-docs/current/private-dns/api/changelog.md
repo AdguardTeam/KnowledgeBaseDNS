@@ -14,18 +14,18 @@ Cet article contient le journal des changements pour [AdGuard DNS API](private-d
 
 ## v1.11
 
-_Released on November 5, 2025_
+_Sortie le 5 novembre 2025_
 
-- Added API keys authentication method:
-  - API keys can be generated and revoked in the [User preferences](https://adguard-dns.io/en/dashboard/user-settings/api-keys) section
-  - API keys can be used to authorize requests to the API by including them in the request header with the `Authorization: ApiKey {api_key}` format
-  - API keys provide an alternative authentication method alongside access tokens
+- Ajout d'une méthode d'authentification par clés API :
+  - Les clés API peuvent être générées et révoquées dans la section [Préférences de l'utilisateur](https://adguard-dns.io/en/dashboard/user-settings/api-keys)
+  - Les clés d'API peuvent être utilisées pour autoriser les demandes à l'API en les incluant dans l'en-tête de la demande avec le format `Authorization : ApiKey {api_key}`
+  - Les clés API constituent une méthode d'authentification alternative aux jetons d'accès
 
 ## v1.10
 
-_Released on December 12, 2024_
+_Sortie le 12 décembre 2024_
 
-Added a new DNS server setting — `block_chrome_prefetch`. It disables _Private prefetch proxy_ in Chrome. When this feature is enabled, Chrome will sometimes prefetch links on the Google Search results page and other participating websites even before the user clicks them.
+Ajout d'un nouveau paramètre de serveur DNS — `block_chrome_prefetch`. Cela désactive le _proxy de préchargement privé_ dans Chrome. Lorsque cette fonction est activée, Chrome précharge parfois les liens de la page de résultats de recherche Google Search et d'autres sites web participants avant même que l'utilisateur ne clique dessus.
 
 ## v1.9
 

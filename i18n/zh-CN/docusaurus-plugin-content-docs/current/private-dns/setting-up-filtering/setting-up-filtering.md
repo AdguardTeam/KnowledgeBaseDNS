@@ -3,22 +3,22 @@ title: 如何设置过滤
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+私有 DNS 的功能远不止拦截广告、跟踪器和其他不良请求。 它还支持用户精细调整拦截规则，并限制对特定网站或服务的访问。
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS 提供一系列用于自定义过滤与访问管理的工具：
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [拦截列表](/private-dns/setting-up-filtering/blocklists.md)：
 
-  Core feature for quick and easy filtering customization
+  核心功能，支持快速、简便地自定义过滤规则
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [用户规则](/private-dns/setting-up-filtering/user-rules.md)：
 
-  Lets you add custom filters and your own filtering rules
+  允许用户添加自定义过滤器及个人过滤规则
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [安全功能](/private-dns/setting-up-filtering/security-features.md)：
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  保护用户免受钓鱼网站、欺诈网站的侵害，并防止敏感数据潜在泄漏
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [家长控制](/private-dns/setting-up-filtering/parental-control.md)：
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  支持限制对网站和服务（包括含敏感内容的网站）的访问，强制开启安全搜索，并可设置设备使用时长

@@ -3,7 +3,7 @@ title: Instructions universelles
 sidebar_position: 2
 ---
 
-Voici quelques instructions générales pour configurer AdGuard DNS privé sur les routeurs. You can refer to this guide if you can’t find your specific router in the main list. Veuillez noter que les détails de configuration fournis ici sont approximatifs et peuvent différer des paramètres de votre modèle particulier.
+Voici quelques instructions générales pour configurer AdGuard DNS privé sur les routeurs. Vous pouvez vous référer à ce guide si vous ne trouvez pas votre routeur spécifique dans la liste principale. Veuillez noter que les détails de configuration fournis ici sont approximatifs et peuvent différer des paramètres de votre modèle particulier.
 
 ## Utilisez le panneau d'administration de votre routeur
 
@@ -12,7 +12,7 @@ Voici quelques instructions générales pour configurer AdGuard DNS privé sur l
    - Les routeurs Netgear utilisent généralement : [http://192.168.0.1](http://192.168.0.1/) ou [http://192.168.1.1](http://192.168.1.1/) Les routeurs D-Link utilisent généralement [http://192.168.0.1](http://192.168.0.1/)
    - Les routeurs Ubiquiti utilisent généralement : [http://unifi.ubnt.com](http://unifi.ubnt.com/)
 
-2. Enter the router’s password.
+2. Saisissez le mot de passe du routeur.
 
    :::note Important
 
@@ -20,7 +20,7 @@ Voici quelques instructions générales pour configurer AdGuard DNS privé sur l
 
    :::
 
-3. Find where DNS settings are located in the router’s admin console. Change the listed DNS addresses to the following addresses:
+3. Trouvez où les paramètres DNS sont situés dans la console d'administration du routeur. Changez les adresses DNS de la liste pour les adresses suivantes :
    - IPv4 : `94.140.14.49` et `94.140.14.59`
    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 

@@ -9,7 +9,7 @@ Nicht alle Geräte unterstützen verschlüsselte DNS-Protokolle. In diesem Fall 
 
 :::note
 
-Eine **Wohnsitz-IP-Adresse** wird einem Gerät zugewiesen, das mit einem örtlichen ISP verbunden ist. It’s usually tied to a physical location and given to individual homes or apartments. Menschen verwenden Wohnsitz-IP-Adressen für alltägliche Online-Aktivitäten wie das Durchsuchen des Internets, das Senden von E-Mails, die Nutzung sozialer Netzwerke oder das Streamen von Inhalten.
+Eine **Wohnsitz-IP-Adresse** wird einem Gerät zugewiesen, das mit einem örtlichen ISP verbunden ist. Sie ist in der Regel an einen bestimmten Ort gebunden und wird einzelnen Häusern oder Wohnungen zugeordnet. Menschen verwenden Wohnsitz-IP-Adressen für alltägliche Online-Aktivitäten wie das Durchsuchen des Internets, das Senden von E-Mails, die Nutzung sozialer Netzwerke oder das Streamen von Inhalten.
 
 :::
 
@@ -32,7 +32,7 @@ Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über ei
 
 ## Dynamisches DNS: Warum es nützlich ist
 
-Jedes Mal, wenn ein Gerät eine Verbindung zum Netzwerk herstellt, erhält es eine neue dynamische IP-Adresse. Wenn ein Gerät die Verbindung trennt, kann der DHCP-Server die freigegebene IP-Adresse einem anderen Gerät im Netz zuweisen. Das bedeutet, dass sich dynamische IP-Adressen häufig und unvorhersehbar ändern. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
+Jedes Mal, wenn ein Gerät eine Verbindung zum Netzwerk herstellt, erhält es eine neue dynamische IP-Adresse. Wenn ein Gerät die Verbindung trennt, kann der DHCP-Server die freigegebene IP-Adresse einem anderen Gerät im Netz zuweisen. Das bedeutet, dass sich dynamische IP-Adressen häufig und unvorhersehbar ändern. Folglich müssen Sie die Einstellungen jedes Mal aktualisieren, wenn das Gerät neu gestartet wird oder sich das Netzwerk ändert.
 
 Um die verknüpfte IP-Adresse automatisch zu aktualisieren, können Sie DNS verwenden. AdGuard DNS überprüft regelmäßig die IP-Adresse Ihrer DDNS-Domain und verknüpft sie mit Ihrem Server.
 
@@ -64,7 +64,7 @@ Auf diese Weise müssen Sie die zugehörige IP-Adresse nicht jedes Mal manuell a
 
    ![DDNS konfigurieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dns_supported.png)
 
-All done, you’ve successfully set up DDNS!
+Fertig! Sie haben DDNS erfolgreich eingerichtet!
 
 ## Automatisierung der Aktualisierung verknüpfter IPs über Skript
 
@@ -78,7 +78,7 @@ Der einfachste Weg ist die Verwendung des Aufgabenplaners:
    - Legen Sie einen Trigger (Auslöser) fest, um alle 5 Minuten ausgeführt zu werden.
    - Wählen Sie _Programm ausführen_ als Aktion.
 2. Wählen Sie ein Programm:
-   - In the _Program or Script_ field, type `powershell`
+   - Geben Sie im Feld _Programm/Skript_ `powershell` ein
    - Geben Sie im Feld _Argumente hinzufügen_ ein:
      - `Command "Invoke-WebRequest -Uri 'https://linkip.adguard-dns.com/linkip/{ServerID}/{UniqueKey}'"`
 3. Speichern Sie die Aufgabe.

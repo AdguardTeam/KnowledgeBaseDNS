@@ -1,34 +1,46 @@
 ---
-title: Server setup ID
+title: ID nastavení serveru
 sidebar_position: 6
 ---
 
-## What is a server setup ID?
+:::info
 
-If you want to connect a device to a specific server and don’t want to manually create each device in the Dashboard on the website, you can use the **server setup ID**. Simply take the ID and use it to connect via the AdGuard DNS app. This way, the “device” will be automatically created upon connection.
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
 
-## How to connect using server setup ID
+:::
 
-1. Go to _Dashboard_ → [_Servers_](https://adguard-dns.io/dashboard/servers).
-2. Select the desired server.
-3. Scroll down and click _Setup ID_.
+## Co je ID nastavení serveru?
+
+Pokud chcete připojit zařízení k určitému serveru a nechcete ručně vytvářet každé zařízení na hlavním panelu na webových stránkách, můžete použít **ID nastavení serveru**. Stačí vzít ID a použít ho k připojení přes aplikaci AdGuard DNS. Tímto způsobem bude “zařízení” po připojení automaticky vytvořeno.
+
+## Jak se připojit pomocí ID nastavení serveru
+
+:::note
+
+If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
+
+1. Přejděte na _Hlavní panel_ → [_Servery_](https://adguard-dns.io/dashboard/servers).
+2. Vyberte požadovaný server.
+3. Přejděte dolů a klikněte na _ID nastavení_.
    ![Setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/server_settings_setup_ID.png)
-4. Copy the **setup ID**.
+4. Zkopírujte **ID nastavení**.
    ![Server setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/settings_setup_ID.png)
-5. Open the app and paste the **setup ID**.
+5. Otevřete aplikaci a vložte **ID nastavení**.
    ![Paste setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDMobile.png)
-6. Choose a device name.
-7. Click **Connect**.
+6. Vyberte název zařízení.
+7. Klikněte na **Připojit**.
    ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectMobile.png)
 
-Hotovo! You are now connected, and the device will be automatically created in the Dashboard.
+Hotovo! Nyní jste připojeni a zařízení se automaticky vytvoří na hlavním panelu.
 
-## Resetting the server setup ID
+## Resetování ID nastavení serveru
 
-If you want to disconnect all devices using a specific setup ID, you can reset it. To do so, follow these steps:
+Pokud chcete odpojit všechna zařízení používající konkrétní ID nastavení, můžete jej resetovat. Postupujte podle těchto kroků:
 
-1. Go to _Dashboard_ → [_Servers_](https://adguard-dns.io/dashboard/servers) and select the desired server.
-2. Scroll down and click _Setup ID_.
-3. Click _Reset setup ID_.
+1. Přejděte na _Hlavní panel_ → [_Servery_](https://adguard-dns.io/dashboard/servers) a vyberte požadovaný server.
+2. Přejděte dolů a klikněte na _ID nastavení_.
+3. Klikněte na _Resetovat ID nastavení_.
 
-After resetting, the Setup ID will change, and all devices that were using the old ID will be disconnected from the server.
+Po resetování se změní ID nastavení a všechna zařízení, která používala staré ID, budou odpojena od serveru.

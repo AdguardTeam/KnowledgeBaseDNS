@@ -3,11 +3,23 @@ title: 服务器 Setup ID
 sidebar_position: 6
 ---
 
+:::info
+
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 ## 服务器 Setup ID 是什么？
 
 若需将设备连接至特定服务器，且不希望手动在网页控制面板中逐一创建设备，可以使用**服务器 Setup ID**。 只需获取该 ID 并通过 AdGuard DNS 应用完成连接， 「设备」将在连接时自动创建至控制面板。
 
 ## 通过服务器 Setup ID 连接的操作步骤
+
+:::note
+
+If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
 
 1. 前往「控制面板」→「[服务器](https://adguard-dns.io/dashboard/servers)」
 2. 选择所需的服务器

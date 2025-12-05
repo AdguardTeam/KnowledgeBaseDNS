@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
+Lorsque vous utilisez le Relais privé iCloud, le tableau de bord AdGuard DNS (et la [page de test AdGuard](https://adguard.com/test.html)) indiquera que vous n'utilisez pas AdGuard DNS sur cet appareil.
 
 ![Appareil non connecté](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
+Pour résoudre ce problème, vous devez autoriser les sites Web AdGuard à voir votre adresse IP dans les paramètres de votre appareil.
 
 - Sur iPhone ou iPad :
 
@@ -29,7 +29,7 @@ To fix this problem, you need to allow AdGuard websites see your IP address in y
 
     1. Répétez pour `adguard.com`
 
-If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
+Si vous ne voyez pas l'option pour autoriser temporairement un site Web à voir votre adresse IP, mettez à jour votre appareil vers la dernière version d'iOS, d'iPadOS ou de macOS, puis réessayez.
 
 Maintenant, votre appareil devrait être affiché correctement dans le tableau de bord AdGuard DNS :
 

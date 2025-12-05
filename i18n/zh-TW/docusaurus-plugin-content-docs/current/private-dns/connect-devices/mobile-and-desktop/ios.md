@@ -18,7 +18,7 @@ To set up your device:
 
 1. [Download the AdGuard DNS app](https://agrd.io/ios_dns).
 2. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
-3. Click _Add new device_ on the _Home_ tab.
+3. Click _Connect device_ on the _Home_ tab.
 4. Select your device type and give it a name, then click _Next_.
 5. Expand the _Use AdGuard apps_ section.
 

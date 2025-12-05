@@ -20,7 +20,7 @@ Per approntare il tuo dispositivo:
 
 2. Vai allo cruscotto AdGuard DNS a [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Clicca _Aggiungi nuovo dispositivo_ nella scheda _Inizio_.
+3. Click _Connect device_ on the _Home_ tab.
 
 4. Seleziona il tipo di dispositivo e dagli un nome, quindi clicca _Avanti_.
 

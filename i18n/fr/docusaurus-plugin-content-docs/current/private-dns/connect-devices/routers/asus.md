@@ -15,7 +15,7 @@ Si nécessaire : Configurez DNS-over-TLS sur ASUS, installez le [firmware ASUS M
 2. Saisissez le nom d'utilisateur de l'administrateur (en général, c'est admin) et le mot de passe du routeur.
 3. Dans la barre latérale _Paramètres avancés_, accédez à la section WAN.
 4. Dans la section _Paramètres DNS WAN_, réglez le paramètre _Connexion automatique au serveur DNS_ sur _Non_.
-5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
+5. Définissez _Transférer les requêtes locales_, _Activer la protection DNS Rebind_, et _Activer le support DNSSEC_ sur _Non_.
 6. Modifiez le protocole de confidentialité DNS en DNS-over-TLS (DoT).
 7. Assurez-vous que le _profil DNS-over-TLS_ est défini sur _Strict_.
 8. Faites défiler jusqu'à la section _Liste des serveurs DNS-over-TLS_. Dans le champ _Adresse_, saisissez l'une des adresses ci-dessous :
@@ -32,7 +32,7 @@ Si nécessaire : Configurez DNS-over-TLS sur ASUS, installez le [firmware ASUS M
 3. Ouvrez _Paramètres avancés_ ou _Avancé_.
 4. Sélectionnez _WAN_ ou _Internet_.
 5. Ouvrez _Paramètres DNS_ ou _DNS_.
-6. Choose _Manual Setting_. Sélectionnez _Utiliser ces serveurs DNS_ ou _Spécifier le serveur DNS manuellement_ et saisissez les adresses des serveurs DNS suivantes :
+6. Choisissez _Réglage Manuel_. Sélectionnez _Utiliser ces serveurs DNS_ ou _Spécifier le serveur DNS manuellement_ et saisissez les adresses des serveurs DNS suivantes :
    - IPv4 : `94.140.14.49` et `94.140.14.59`
    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 7. Enregistrez les paramètres.

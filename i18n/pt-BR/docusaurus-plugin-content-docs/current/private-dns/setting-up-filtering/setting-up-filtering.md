@@ -3,22 +3,22 @@ title: Como configurar a filtragem
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+O DNS Privado faz mais do que apenas bloquear anúncios, rastreadores e outras solicitações indesejadas. Também permite que você ajuste com precisão o bloqueio e restrinja o acesso a certos sites ou serviços.
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+O AdGuard DNS fornece uma variedade de ferramentas para personalizar a filtragem e o acesso:
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [Listas de bloqueio](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  Funcionalidade principal para personalização rápida e fácil de filtros
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [Regras de usuário](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  Permite adicionar filtragens personalizadas e suas próprias regras de filtragem
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [Recursos de segurança](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  Isso irá evitar que você visite sites de phishing e falsos, assim como de possíveis vazamentos de dados sensíveis
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [Controle parental](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  Permite restringir o acesso a sites e serviços (incluindo aqueles com conteúdo sensível), aplicar pesquisa segura e configurar o tempo de uso da tela
