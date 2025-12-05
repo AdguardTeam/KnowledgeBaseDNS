@@ -64,7 +64,7 @@
     "description": "The label for category Server and settings in sidebar sidebar"
   },
   "sidebar.sidebar.category.How to set up filtering": {
-    "message": "How to set up filtering",
+    "message": "Comment configurer le filtrage",
     "description": "The label for category How to set up filtering in sidebar sidebar"
   },
   "sidebar.sidebar.category.Statistics and Query log": {

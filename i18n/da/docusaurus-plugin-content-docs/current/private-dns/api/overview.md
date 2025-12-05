@@ -54,7 +54,7 @@ Foretag en POST-forespørgsel for flg. URL med de givne parametre for at generer
 
 I svaret vil både `access_token` og `refresh_token` fremgå.
 
-- `access_token` udløber efter et antal angivne sekunder (jf. svarets `expires_in`-parameter). You can regenerate a new `access_token` using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
+- `access_token` udløber efter et antal angivne sekunder (jf. svarets `expires_in`-parameter). Et nyt `access_token` kan genereres vha. `refresh_token` (se: `Generering af adgangstokener fra opfriskningstokener`).
 
 - `refresh_token` er permanent. For at tilbagekalde et `refresh_token`, se: `Tilbagekaldelse af et Refresh-token`.
 

@@ -10,39 +10,39 @@ iOSデバイスを AdGuard DNS に接続するには、まずはデバイスを�
 3. デバイスに名前を付けます。
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
-## Use the AdGuard DNS app
+## AdGuard DNS アプリを使う
 
-The AdGuard DNS app is designed for basic DNS-level protection — blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
+AdGuard DNSアプリは基本的なDNSレベル保護を目的としており、広告、トラッカー、そして悪意あるウェブサイトをブロックします。 AdGuard 広告ブロッカーまたは AdGuard VPN が提供するすべての機能が必要でない方には、このアプリが最適な選択肢かもしれません。
 
-To set up your device:
+デバイスの設定方法：
 
-1. [Download the AdGuard DNS app](https://agrd.io/ios_dns).
-2. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
-3. Click _Add new device_ on the _Home_ tab.
-4. Select your device type and give it a name, then click _Next_.
-5. Expand the _Use AdGuard apps_ section.
+1. AdGuard DNS アプリを [App Store からダウンロード](https://agrd.io/ios_dns)します。
+2. AdGuard DNS ダッシュボード（[adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/)）にアクセスします。
+3. 「ダッシュボード」タブの「_ホーム_」画面で「_デバイスを接続する_」をクリックします。
+4. デバイスタイプを選択し名前を付けて、「_次へ_」をクリックします。
+5. 「_AdGuardアプリを使って接続_」セクションを開きます。
 
-![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps-ja.png)
 
-1. Under _Use the AdGuard DNS app_, choose one of these setup methods:
+1. 「AdGuard DNS アプリを使う」セクションで、以下の設定方法のいずれかを選択します：
 
-   - Click _Configure_ if you’re on the device you want to protect.
-   - Scan the QR code with the device you want to protect.
-   - Copy your setup ID and paste it directly into the app.
+   - DNSに接続したいデバイス上で操作する場合は「_設定する_」をクリック
+   - DNSに接続したいデバイスでQRコードをスキャン
+   - 「Setup ID」をコピーし、保護したいデバイス上のアプリに直接貼り付ける:
 
-     ![SetupID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+     ![SetupID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/setup-id-ja.png)
 
-2. Tap _Continue_ → _Connect_.
+2. 「_続行する_」 → 「_接続する_」をタップします。
 
 ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. これで、お使いのデバイスは正常に AdGuard DNS に接続されました。 All you have to do is tap _Enable_ to start the protection.
+1. これで、お使いのデバイスは正常に AdGuard DNS に接続されました。 保護機能をオンにするには、「_有効する_」ボタンをタップするだけです。
 
-![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-ja.png)
 
-1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click _Enable_, and follow the in-app instructions.
+1. VPNベースのプロトコルを使用する場合、保護を有効にする前にVPNプロファイルの作成を許可する必要があります。 これを行うには、アプリのホームページで「_有効にする_」をクリックし、アプリ内の指示に従ってください。
 
-2. If you prefer to use native DNS, go to _Settings_ → _General_ → _VPN & Device Management_ → _DNS_ and enable AdGuard DNS.
+2. iOSのネイティブDNSを好むユーザーは、iOSの_設定_アプリ → 「_一般_」 → 「_VPNとデバイス管理_」 → 「_DNS_」 でAdGuard DNSを有効にする必要があります。
 
 完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
 

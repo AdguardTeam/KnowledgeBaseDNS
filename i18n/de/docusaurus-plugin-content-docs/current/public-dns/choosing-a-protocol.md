@@ -1,5 +1,5 @@
 ---
-title: Choosing a DNS protocol
+title: Auswahl eines DNS-Protokolls
 sidebar_position: 2
 ---
 

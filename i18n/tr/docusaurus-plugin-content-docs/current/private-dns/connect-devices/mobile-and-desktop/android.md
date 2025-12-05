@@ -10,7 +10,7 @@ Bir Android cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine 
 3. Cihazı adlandırın.
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
-## Use the AdGuard DNS app
+## AdGuard DNS uygulamasını kullanma
 
 The AdGuard DNS app is designed for basic DNS-level protection — blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
 
@@ -20,7 +20,7 @@ To set up your device:
 
 2. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Click _Add new device_ on the _Home_ tab.
+3. Click _Connect device_ on the _Home_ tab.
 
 4. Select your device type and give it a name, then click _Next_.
 

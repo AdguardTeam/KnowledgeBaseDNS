@@ -14,7 +14,7 @@ Les routeurs Keenetic sont connus pour leur stabilité et leurs configurations f
 5. Dans _Utilitaires et services_, sélectionnez le proxy DNS-over-HTTPS et installez-le.
 6. Allez dans _Menu_ → _Règles de réseau_ → _Sécurité Internet_.
 7. Naviguez jusqu'aux serveurs DNS-over-HTTPS et cliquez sur _Ajouter un serveur DNS-over-HTTPS_.
-8. Enter the URL of the Private AdGuard DNS server in the `https://d.adguard-dns.com/dns-query/{Your_Device_ID}` field.
+8. Saisissez l'URL du serveur DNS privé AdGuard dans le champ `https://d.adguard-dns.com/dns-query/{Your_Device_ID}`.
 9. Cliquez sur _Enregistrer_.
 
 ## Configuration DNS-over-TLS
@@ -26,7 +26,7 @@ Les routeurs Keenetic sont connus pour leur stabilité et leurs configurations f
 5. Dans _Utilitaires et services_, sélectionnez le proxy DNS-over-HTTPS et installez-le.
 6. Allez dans _Menu_ → _Règles de réseau_ → _Sécurité Internet_.
 7. Naviguez jusqu'aux serveurs DNS-over-HTTPS et cliquez sur _Ajouter un serveur DNS-over-HTTPS_.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
+8. Saisissez l'URL du serveur DNS privé AdGuard dans le champ `tls://*********.d.adguard-dns.com`.
 9. Cliquez sur _Enregistrer_.
 
 ## Utilisez le panneau d'administration de votre routeur

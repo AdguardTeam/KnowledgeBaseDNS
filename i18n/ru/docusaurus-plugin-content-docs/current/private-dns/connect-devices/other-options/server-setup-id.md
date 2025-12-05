@@ -3,11 +3,23 @@ title: ID установки сервера
 sidebar_position: 6
 ---
 
+:::info
+
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 ## Что такое ID установки сервера?
 
 Если вы хотите подключить устройство к серверу и не хотите вручную добавлять каждое устройство на Панели управления на сайте, вы можете использовать **ID установки сервера**. Просто возьмите ID и используйте его для подключения через приложение AdGuard DNS. Таким образом, «устройство» будет добавлено автоматически при подключении.
 
 ## Как подключиться, используя ID установки сервера
+
+:::note
+
+If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
 
 1. Перейдите на _Панель управления_ → [_Серверы_](https://adguard-dns.io/dashboard/servers).
 2. Выберите нужный сервер.

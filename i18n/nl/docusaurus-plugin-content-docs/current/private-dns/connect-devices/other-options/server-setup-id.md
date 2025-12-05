@@ -3,11 +3,23 @@ title: Server installatie-ID
 sidebar_position: 6
 ---
 
+:::info
+
+This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+
+:::
+
 ## Wat is een serverinstallatie-ID?
 
 Als je een apparaat met een specifieke server wilt verbinden en niet elk apparaat handmatig wilt aanmaken in het Dashboard op de website, kun je de **serverinstallatie-ID** gebruiken. Neem gewoon de ID en gebruik die om via de AdGuard DNS-app te verbinden. Op deze manier wordt het "apparaat" automatisch aangemaakt bij de verbinding.
 
 ## Verbinding maken met behulp van de serverinstallatie-ID
+
+:::note
+
+If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+
+:::
 
 1. Ga naar _Dashboard_ → [_Servers_](https://adguard-dns.io/dashboard/servers).
 2. Selecteer de gewenste server.

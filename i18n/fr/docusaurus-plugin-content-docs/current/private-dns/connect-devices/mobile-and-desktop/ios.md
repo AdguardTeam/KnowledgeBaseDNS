@@ -18,7 +18,7 @@ Pour configurer votre appareil :
 
 1. [Téléchargez l'application AdGuard DNS](https://agrd.io/ios_dns).
 2. Allez sur votre tableau de bord DNS AdGuard à [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
-3. Cliquez sur _Ajouter un nouvel appareil_ dans l'onglet _Accueil_.
+3. Cliquez sur _Connecter l'appareil_ dans l'onglet _Accueil_.
 4. Sélectionnez le type de votre appareil et donnez-lui un nom, puis cliquez sur _Suivant_.
 5. Développez la section _Utiliser les applications AdGuard_.
 

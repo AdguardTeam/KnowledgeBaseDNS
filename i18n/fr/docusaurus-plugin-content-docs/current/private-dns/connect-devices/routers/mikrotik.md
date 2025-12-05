@@ -3,12 +3,12 @@ title: MikroTik
 sidebar_position: 6
 ---
 
-MikroTik routers use the open-source RouterOS operating system, which provides routing, wireless networking, and firewall services for home and small office networks.
+Les routeurs MikroTik utilisent le système d'exploitation open source RouterOS, qui fournit des services de routage, de mise en réseau sans fil et de pare-feu pour les réseaux domestiques et de petites sociétés.
 
 ## Configurer DNS-over-HTTPS
 
 1. Accédez à votre routeur MikroTik :
-   - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
+   - Ouvrez votre navigateur web et allez à l'adresse IP de votre routeur (généralement `192.168.88.1`)
    - Sinon, vous pouvez utiliser Winbox pour vous connecter à votre routeur MikroTik
    - Saisissez votre nom d'utilisateur et votre mot de passe administrateur
 2. Importez le certificat racine :
@@ -23,31 +23,31 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
      - `94.140.14.49`
      - `94.140.14.59`
    - Réglez _Autoriser les requêtes à distance_ sur _Oui_ (ceci est crucial pour le fonctionnement du DoH)
-   - In the _Use DoH server_ field, enter the URL of the Private AdGuard DNS server: `https://d.adguard-dns.com/dns-query/*******`
+   - Dans le champ _Utiliser le serveur DoH_, saisissez l'URL du serveur DNS AdGuard privé : `https://d.adguard-dns.com/dns-query/*******`
    - Cliquez sur _OK_
 4. Créez des enregistrements DNS statiques :
    - Dans les _Paramètres DNS_, cliquez sur _Statique_
    - Cliquez sur _Ajouter Nouveau_
-   - Set _Name_ to `d.adguard-dns.com`
-   - Set _Type_ to `A`
+   - Définissez _Nom_ sur d.adguard-dns.com
+   - Réglez _Type_ sur A
    - Réglez _Adresse_ sur '94.140.14.49'
-   - Set _TTL_ to `1d 00:00:00`
+   - Réglez _TTL_ sur 1j 00:00:00
    - Répétez le processus pour créer une entrée identique mais avec _Adresse_ réglée sur `94.140.14.59`
 5. Désactivez le Peer DNS sur le client DHCP :
    - Accédez à _IP_ → _DHCP Client_
    - Double-cliquez sur le client utilisé pour votre connexion Internet (généralement sur l'interface WAN)
    - Décochez _Utiliser le DNS Peer_
    - Cliquez sur _OK_
-6. Test and verify:
-   - You might need to reboot your MikroTik router for all changes to take effect
-   - Clear your browser’s DNS cache. You can use a tool like [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) to check if your DNS requests are now routed through AdGuard
+6. Test et vérification :
+   - Vous devrez peut-être redémarrer votre routeur MikroTik pour que toutes les modifications prennent effet
+   - Videz le cache DNS de votre navigateur. Vous pouvez utiliser un outil comme [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) pour vérifier si vos requêtes DNS sont maintenant routées via AdGuard
 
 ## My router does not support DNS-over-HTTPS
 
 Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
 
 1. Accédez à votre routeur MikroTik :
-   - Open your web browser and go to your router’s IP address (usually `192.168.88.1`)
+   - Ouvrez votre navigateur web et allez à l'adresse IP de votre routeur (généralement `192.168.88.1`)
    - Sinon, vous pouvez utiliser Winbox pour vous connecter à votre routeur MikroTik
    - Saisissez votre nom d'utilisateur et votre mot de passe administrateur
 2. Configure Plain DNS:

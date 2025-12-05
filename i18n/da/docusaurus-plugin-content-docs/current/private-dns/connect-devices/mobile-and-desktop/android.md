@@ -10,41 +10,41 @@ For at tilslutte en Android-enhed til AdGuard DNS, føj den først til _Kontrolp
 3. Navngiv enheden.
    ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
-## Use the AdGuard DNS app
+## Benyt AdGuard DNS-appen
 
-The AdGuard DNS app is designed for basic DNS-level protection — blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
+AdGuard DNS-appen er designet til basis DNS-niveaubeskyttelse – blokering af annoncer, trackere og ondsindede websteder. Er der ikke behov for alle de funktioner, som tilbydes af AdGuard Ad Blocker eller AdGuard VPN, kan dette være det bedste valg.
 
-To set up your device:
+Opsætning af enheden:
 
-1. [Download the AdGuard DNS app](https://agrd.io/android_dns).
+1. [Download AdGuard DNS-appen](https://agrd.io/android_dns).
 
-2. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+2. Gå til AdGuard DNS-kontrolpanelet på [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
 
-3. Click _Add new device_ on the _Home_ tab.
+3. Klik på _Tilføj enhed_ på fanen _Hjem_.
 
-4. Select your device type and give it a name, then click _Next_.
+4. Vælg enhedstypen og navngiv den, og klik dernæst på _Næste_.
 
-5. Expand the _Use AdGuard apps_ section.
+5. Udvid afsnittet _Brug AdGuard-apps_.
 
-   ![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
+   ![Brug AdGuard-apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
 
-6. Under _Use the AdGuard DNS app_, choose one of these setup methods:
+6. Vælg under _Benyt AdGuard DNS-appen_ en af disse opsætningsmetoder:
 
-   - Click _Configure_ if you’re on the device you want to protect.
-   - Scan the QR code with the device you want to protect.
-   - Copy your setup ID and paste it directly into the app.
+   - Klik på _Opsæt_ fra den enhed, der ønskes beskyttet.
+   - Skan QR-koden med den enhed, der ønskes beskyttet.
+   - Kopiér opsætnings-ID'et, og indsæt det direkte i appen.
 
-     ![Setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupID.png)
+     ![Opsætnings-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupID.png)
 
-7. Tap _Continue_ → _Connect_.
+7. Tryk på _Fortsæt_ → _Tilslut_.
 
-   ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
+   ![Tilslut \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
 
-8. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click _Enable_, and follow the in-app instructions.
+8. Ved brug af en VPN-baseret protokol skal der stadig tillades oprettelse af en VPN-profil for at opnå fuld beskyttelse. For at gøre dette, gå til appens startside, klik på _Slå til_, og følg vejledningen i appen.
 
-9. Færdig! Enheden er nu tilsluttet AdGuard DNS. Click _Enable_ every time you want to start the protection.
+9. Færdig! Enheden er nu tilsluttet AdGuard DNS. Klik på _Slå til_, hver gang beskyttelsen ønskes startet.
 
-   ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
+   ![Slå til \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
 ## Brug AdGuard Ad Blocker (betalt mulighed)
 

@@ -1,24 +1,24 @@
 ---
-title: How to set up filtering
+title: Come impostare il filtraggio
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+Il DNS privato fa molto di più che bloccare inserzioni, tracciatori e altre richieste indesiderate. Permette inoltre di affinare il bloccaggio e limitare l'accesso a determinati siti web o servizi.
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS fornisce una gamma di strumenti per personalizzare il filtraggio e l'accesso:
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [Liste blocchi](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  Funzione basilare per una personalizzazione del filtraggio rapida e semplice
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [Regole utente](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  Ti permette di aggiungere filtri personali e le tue regole di filtraggio
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [Funzioni di sicurezza](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  Proteggiti dalla visita di siti di phishing e falsi, così come da potenziali perdite di dati sensibili
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [Controllo genitori](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  Ti permette di limitare l'accesso a siti Web e servizi (inclusi quelli con contenuti sensibili), applicare la ricerca sicura e impostare il tempo di uso dello schermo

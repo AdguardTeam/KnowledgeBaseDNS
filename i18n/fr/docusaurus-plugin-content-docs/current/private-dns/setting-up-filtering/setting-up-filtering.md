@@ -1,24 +1,24 @@
 ---
-title: How to set up filtering
+title: Comment configurer le filtrage
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+Le DNS Privé fait plus que simplement bloquer les annonces, les traqueurs et d'autres requêtes indésirables. Il vous permet également d'affiner le blocage et de restreindre l'accès à certains sites web ou services.
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS propose une gamme d'outils pour personnaliser le filtrage et l'accès :
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [Les listes de blocage](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  Fonctionnalité essentielle pour une personnalisation rapide et facile du filtrage
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [Les Règles utilisateur](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  Vous permettent d'ajouter des filtres personnalisés et vos propres règles de filtrage
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [Les fonctionnalités de sécurité](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  Vous protègent contre la visite de sites web d'hameçonnage et de faux sites, ainsi que contre les fuites potentielles de données sensibles
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [Le Contrôle parental](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  Permet de restreindre l'accès aux sites web et aux services (y compris ceux contenant des informations sensibles), d'activer la recherche sécurisée et de configurer le temps d'écran

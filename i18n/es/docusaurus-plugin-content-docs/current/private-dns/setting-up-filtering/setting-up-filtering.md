@@ -1,24 +1,24 @@
 ---
-title: How to set up filtering
+title: Cómo configurar el filtrado
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+El DNS privado hace más que solo bloquear anuncios, rastreadores y otras peticiones no deseadas. También permite ajustar el bloqueo y restringir el acceso a determinados sitios web o servicios.
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS proporciona una gama de herramientas para personalizar el filtrado y el acceso:
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [Listas de bloqueo](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  Función principal para una personalización de filtros rápida y sencilla
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [Reglas del usuario](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  Te permite añadir filtros personalizados y tus propias reglas de filtrado
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [Funciones de seguridad](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  Esto te protegerá de visitar sitios web de phishing y falsos, así como de posibles filtraciones de datos sensibles
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [Control parental](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  Permite restringir el acceso a sitios web y servicios (incluidos aquellos con contenido sensible), hacer cumplir la búsqueda segura y configurar el tiempo de pantalla

@@ -1,34 +1,46 @@
 ---
-title: Server setup ID
+title: Serveropsætnings-ID
 sidebar_position: 6
 ---
 
-## What is a server setup ID?
+:::info
 
-If you want to connect a device to a specific server and don’t want to manually create each device in the Dashboard on the website, you can use the **server setup ID**. Simply take the ID and use it to connect via the AdGuard DNS app. This way, the “device” will be automatically created upon connection.
+Denne artikel dækker en funktion tilgængelig i AdGuard DNS mobil-appen. For at prøve den selv, download AdGuard DNS-appen til [Android](https://agrd.io/android_dns) eller [iOS](https://agrd.io/ios_dns).
 
-## How to connect using server setup ID
+:::
 
-1. Go to _Dashboard_ → [_Servers_](https://adguard-dns.io/dashboard/servers).
-2. Select the desired server.
-3. Scroll down and click _Setup ID_.
-   ![Setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/server_settings_setup_ID.png)
-4. Copy the **setup ID**.
-   ![Server setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/settings_setup_ID.png)
-5. Open the app and paste the **setup ID**.
-   ![Paste setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDMobile.png)
-6. Choose a device name.
-7. Click **Connect**.
-   ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectMobile.png)
+## Hvad er et serveropsætnings-ID?
 
-Færdig! You are now connected, and the device will be automatically created in the Dashboard.
+Ønskes en enhed tilsluttet en bestemt server, uden at hver enhed skal oprettes manuelt i kontrolpanelet på webstedet, kan **serveropsætnings-ID** bruges. Benyt blot ID'et til at tilslutte via AdGuard DNS-appen. På denne måde oprettes "enheden" automatisk ved tilslutning.
 
-## Resetting the server setup ID
+## Sådan tilsluttes ved brug af serveropsætnings-ID
 
-If you want to disconnect all devices using a specific setup ID, you can reset it. To do so, follow these steps:
+:::note
 
-1. Go to _Dashboard_ → [_Servers_](https://adguard-dns.io/dashboard/servers) and select the desired server.
-2. Scroll down and click _Setup ID_.
-3. Click _Reset setup ID_.
+Opsættes AdGuard på flere håndterede enheder, bør det overvejes at bruge håndteret app-opsætning for automatisk at angive serveropsætnings-ID'et til hver app. [Læs mere](/private-dns/connect-devices/other-options/mdm-config.md).
 
-After resetting, the Setup ID will change, and all devices that were using the old ID will be disconnected from the server.
+:::
+
+1. Gå til _Kontrolpanel_ → [_Servere_](https://adguard-dns.io/dashboard/servers).
+2. Vælg den ønskede server.
+3. Rul ned og klik på _Opsætning-ID_.
+   ![Opsætnings-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/server_settings_setup_ID.png)
+4. Kopiér **opsætnings-ID'et**.
+   ![Serveropsætnings-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/settings_setup_ID.png)
+5. Åbn appen og indsæt **opsætnings-ID'et**.
+   ![Indsæt opsætnings-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDMobile.png)
+6. Vælg et enhedsnavn.
+7. Klik på **Tilslut**.
+   ![Tilslut \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectMobile.png)
+
+Færdig! Enheden er nu tilsluttet og oprettes automatisk i Kontrolpanel.
+
+## Nulstilling af serveropsætnings-ID
+
+Ønskes forbindelsen afbrudt til alle enheder, som benytter et bestemt opsætnings-ID, kan dette nulstilles. For at gøre dette, følg blot disse trin:
+
+1. Gå til _Kontrolpanel_ → [_Servere_](https://adguard-dns.io/dashboard/servers) og vælg den ønskede server.
+2. Rul ned og klik på _Opsætning-ID_.
+3. Klik på _Nulstil opsætnings-ID_.
+
+Efter nulstillingen vil opsætnings-ID'et være ændret, og alle enheder, som brugte det gamle ID, frakobles serveren.
