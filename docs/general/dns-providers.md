@@ -775,7 +775,7 @@ CERT-EE (RIA) provides a DNS service that blocks malicious and phishing domains.
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
-| DNS-over-TLS | `tls://dns.cert.ee` | [Add to AdGuard](adguard:add_dns_server?address=tls://tls://dns.cert.ee&name=dns.cert.ee), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee) |
+| DNS-over-TLS | `tls://dns.cert.ee` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee) |
 
 ### CIRA Canadian Shield DNS
 
