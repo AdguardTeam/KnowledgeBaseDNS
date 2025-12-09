@@ -768,6 +768,15 @@ ByteDance Public DNS is a free alternative DNS service by ByteDance at China. Th
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `180.184.1.1` and `180.184.2.2`                  | [Add to AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA) provides a DNS service that blocks malicious and phishing domains. Operated in Estonia, it works abroad as well. Requests are encrypted to enhance privacy and prevent interception or spoofing.
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS | `tls://dns.cert.ee` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee) |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
