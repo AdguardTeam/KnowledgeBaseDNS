@@ -1181,21 +1181,6 @@ Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimizatio
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Add to AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Dandelion Sprout’s Official DNS Server
-
-[Dandelion Sprout’s Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
-
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn’t have been blocked), and to determine the least bad times for server system updates.
-
-| Protocol       | Address                    |                                                        |
-|----------------|------------------------------------------------------------------|------------------|
-| DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
-| DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853` | [Add to AdGuard](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853) |
-| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | [Add to AdGuard](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582) |
-| DNS, IPv4      | Varies; see link above. |     |
-| DNS, IPv6      | Varies; see link above. |     |
-| DNSCrypt, IPv4 | Varies; see link above. |     |
-
 ### DNS Forge
 
 [DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
