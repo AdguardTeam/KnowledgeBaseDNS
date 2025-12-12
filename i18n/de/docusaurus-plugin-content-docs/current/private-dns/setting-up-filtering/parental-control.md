@@ -37,6 +37,12 @@ AdGuard DNS sperrt den Zugriff auf beliebte Dienste mit einem Klick. Das ist nü
 
 ![Gesperrte Dienste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Abschaltzeit einstellen
 
 Mit dieser Funktion kann die Kindersicherung an ausgewählten Tagen mit einem bestimmten Zeitintervall aktiviert werden. Vielleicht haben Sie Ihrem Kind zum Beispiel erlaubt, YouTube-Videos nur bis 23:00 Uhr an Werktagen anzusehen. Aber an Wochenenden ist dieser Zugriff nicht eingeschränkt. Passen Sie den Zeitplan nach Ihren Wünschen an und blockieren Sie den Zugriff auf ausgewählte Websites zu den gewünschten Stunden.

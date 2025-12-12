@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article describes a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+This article describes a feature available in the AdGuard DNS mobile app. Om het zelf te proberen, download je de AdGuard DNS-app voor [Android](https://agrd.io/android_dns) of [iOS](https://agrd.io/ios_dns).
 
 :::
 

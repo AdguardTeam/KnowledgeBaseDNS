@@ -765,6 +765,15 @@ ByteDance Public DNS is a free alternative DNS service by ByteDance at China. Th
 | --------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `180.184.1.1` and `180.184.2.2` | [Add to AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA) levert een DNS-service die kwaadaardige en phishing-domeinen blokkeert. Het bedrijf wordt in Estland geëxploiteerd en werkt ook in het buitenland. Verzoeken worden versleuteld om de privacy te verbeteren en onderschepping of spoofing te voorkomen.
+
+| Protocol       | Adres                           |                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Toevoegen aan AdGuard](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS   | `tls://dns.cert.ee`             | [Toevoegen aan AdGuard](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Toevoegen aan AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee)                                             |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.
