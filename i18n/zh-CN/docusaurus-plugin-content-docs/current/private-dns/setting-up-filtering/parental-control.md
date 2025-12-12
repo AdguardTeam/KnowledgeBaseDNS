@@ -37,6 +37,12 @@ AdGuard DNS 只需一键即可阻止访问热门服务。 It’s useful if you d
 
 ![已拦截的服务 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### 设置禁用时间
 
 在指定日期和时间间隔内启用家长控制。 例如，在工作日，您允许孩子在 23:00 之前观看 YouTube 视频， 但在周末，没有时间限制。 可以根据您的喜好定制时间段，并在您希望的时间段内阻止访问指定的网站。

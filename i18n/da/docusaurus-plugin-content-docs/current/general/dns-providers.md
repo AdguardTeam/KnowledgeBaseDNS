@@ -765,6 +765,15 @@ ByteDance Public DNS er en gratis alternativ DNS-tjeneste fra ByteDance i Kina. 
 | --------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `180.184.1.1` og `180.184.2.2` | [Føj til AdGuard](adguard:add_dns_server?address=180.184.1.1&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA) leverer en DNS-tjeneste, der blokerer skadelige og phishing-domæner. Driftet i Estland, men fungerer også i udlandet. Forespørgsler krypteres for at øge fortroligheden og forhindre opsnapning eller spoofing.
+
+| Protokol       | Adresse                         |                                                                                                                                                                                                                               |
+| -------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS   | `tls://dns.cert.ee`             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee)                                             |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) beskytter mod tyveri af personlige og finansielle data. Hold vira, ransomware og anden malware ude af hjemmet.

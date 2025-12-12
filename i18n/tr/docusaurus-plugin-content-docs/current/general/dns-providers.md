@@ -765,6 +765,15 @@ ByteDance Public DNS is a free alternative DNS service by ByteDance at China. Th
 | --------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `180.184.1.1` ve `180.184.2.2` | [AdGuard'a ekle](adguard:add_dns_server?address=180.184.1.1&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA), kötü amaçlı ve kimlik avı alan adlarını engelleyen bir DNS hizmeti sunar. Estonya'da işletilen bu hizmet, yurt dışında da çalışmaktadır. Requests are encrypted to enhance privacy and prevent interception or spoofing.
+
+| Protokol       | Adres                           |                                                                                                                                                                                                                             |
+| -------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS   | `tls://dns.cert.ee`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee)                                             |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) protects against theft of personal and financial data. Keep viruses, ransomware, and other malware out of your home.

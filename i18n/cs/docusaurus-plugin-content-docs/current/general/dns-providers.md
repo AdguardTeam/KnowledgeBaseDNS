@@ -765,6 +765,15 @@ ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDa
 | --------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `180.184.1.1` a `180.184.2.2` | [Přidat do AdGuardu](adguard:add_dns_server?address=180.184.1.1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA) poskytuje DNS službu, která blokuje škodlivé a phishingové domény. Provozuje se v Estonsku, ale funguje také v zahraničí. Požadavky jsou šifrovány, aby se zvýšila ochrana soukromí a zabránilo se odposlechu nebo spoofingu.
+
+| Protokol       | Adresa                          |                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS   | `tls://dns.cert.ee`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee)                                             |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) chrání před krádeží osobních a finančních údajů. Chrání vás před viry, ransomwarem a dalším malwarem.
