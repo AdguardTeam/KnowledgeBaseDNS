@@ -1,6 +1,6 @@
 ---
 title: Listes de blocage
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## Qu'est-ce qu'une liste de blocage ?
@@ -57,7 +57,7 @@ Pour soumettre une requête :
 3. Cliquez sur _Demande de liste de blocage_ et remplissez le formulaire.
 4. Après avoir rempli le formulaire, cliquez sur _Soumettre nouveau problème_.
 
-If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
+Si les règles de blocage de votre filtre ne répètent pas les listes existantes, elles seront ajoutées au dépôt.
 
 ## Règles utilisateur
 

@@ -20,11 +20,11 @@ Ahora puedes conectar automáticamente tu dispositivo al servidor creando una di
 
 ### Ejemplos de direcciones de conexión automática
 
- - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — esto creará automáticamente un dispositivo `Android` con el protocolo `DNS-over-TLS` llamado `AdGuard Test Device`
+- `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — esto creará automáticamente un dispositivo `Android` con el protocolo `DNS-over-TLS` llamado `AdGuard Test Device`
 
- - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — esto creará automáticamente un dispositivo `Windows` con el protocolo `DNS-over-HTTPS` llamado `John Doe`
+- `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — esto creará automáticamente un dispositivo `Windows` con el protocolo `DNS-over-HTTPS` llamado `John Doe`
 
- - `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — esto creará automáticamente un dispositivo `iOS` con el protocolo `DNS mediante QUIC` llamado `Mary Sue`
+- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — esto creará automáticamente un dispositivo `iOS` con el protocolo `DNS mediante QUIC` llamado `Mary Sue`
 
 ### Convenciones de nomenclatura
 
@@ -38,15 +38,15 @@ Al crear dispositivos manualmente, ten en cuenta que hay restricciones relaciona
 
 **Tipo de dispositivo**: usa las siguientes abreviaturas:
 
- - Windows — `win`
- - macOS — `mac`
- - Android — `adr`
- - iOS — `ios`
- - Linux — `lnx`
- - Router — `rtr`
- - Smart TV — `stv`
- - Consola de videojuegos — `gam`
- - Otro — `otr`
+- Windows — `win`
+- macOS — `mac`
+- Android — `adr`
+- iOS — `ios`
+- Linux — `lnx`
+- Router — `rtr`
+- Smart TV — `stv`
+- Consola de videojuegos — `gam`
+- Otro — `otr`
 
 ## Generador de enlaces
 

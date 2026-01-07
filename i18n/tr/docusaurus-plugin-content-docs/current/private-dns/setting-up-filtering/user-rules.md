@@ -1,6 +1,6 @@
 ---
 title: Kullanıcı kuralları
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## What is it and why you need it

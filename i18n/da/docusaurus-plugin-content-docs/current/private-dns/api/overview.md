@@ -14,9 +14,35 @@ AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
 ## Godkendelse
 
-### Generér adgangstoken
+### API-nøgler
 
-Foretag en POST-anmodning for flg. URL med de givne parametre for at generere et `access_token`:
+Når API-nøgler medtages i forespørgsels-headeren, kan de bruges til at godkende forespørgsler til Bruger-API'en.
+
+#### Forespørgselseksempel
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generering af API-nøgler
+
+For at udstede eller tilbagekalde API-nøgler, gå til det [korresponderende underafsnit](https://adguard-dns.io/en/dashboard/user-settings/api-keys) i *Brugerpræferencer*.
+
+### Adgangstokener
+
+Når adgangstokener medtages i forespørgsels-headeren, kan de bruges til at godkende forespørgsler til Bruger-API'en.
+
+#### Forespørgselseksempel
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Eksempelsvar
+
+Foretag en POST-forespørgsel for flg. URL med de givne parametre for at generere et `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -28,11 +54,11 @@ Foretag en POST-anmodning for flg. URL med de givne parametre for at generere et
 
 I svaret vil både `access_token` og `refresh_token` fremgå.
 
-- `access_token` udløber efter et antal angivne sekunder (jf. svarets `expires_in`-parameter). Et nyt `access_token` kan genereres vha. `refresh_token` (se: `Generere adgangstoken fra Refresh-token`).
+- `access_token` udløber efter et antal angivne sekunder (jf. svarets `expires_in`-parameter). Et nyt `access_token` kan genereres vha. `refresh_token` (se: `Generering af adgangstokener fra opfriskningstokener`).
 
-- `refresh_token` er permanent. For at ophæve et `refresh_token`, se: `Ophævelse af et Refresh-token`.
+- `refresh_token` er permanent. For at tilbagekalde et `refresh_token`, se: `Tilbagekaldelse af et Refresh-token`.
 
-#### Eksempelanmodning
+##### Forespørgselseksempel
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Eksempelsvar
+##### Svareksempel
 
 ```json
 {
@@ -53,11 +79,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generere adgangstoken fra Refresh-token
+#### Generering af adgangstokener fra Refresh-tokener
 
-Et adgangstoken har en begrænset gyldighedsperiode. Når det udløber, vil appen skulle bruge `refresh-token` ifm. anmodning om et nyt `adgangstoken`.
+Adgangstokener har begrænset gyldighed. Når det udløber, vil appen skulle bruge `refresh-token` til at anmode om et nyt `adgangstoken`.
 
-Foretag flg. POST-anmodning med de givne parametre for at få et nyt adgangstoken:
+Foretag flg. POST-forespørgsel med de givne parametre for at få et nyt adgangstoken:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -65,7 +91,7 @@ Foretag flg. POST-anmodning med de givne parametre for at få et nyt adgangstoke
 |:----------------- |:------------------------------------------------------------ |
 | **refresh_token** | `REFRESH TOKEN`, hvormed et nyt adgangstoken skal genereres. |
 
-#### Eksempelanmodning
+##### Forespørgselseksempel
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Eksempelsvar
+##### Svareksempel
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Ophævelse af et Refresh-token
+#### Tilbagekaldelse af et opdateringstokener
 
-For at ophæve et opdateringstoken skal flg. POST-anmodning foretages med de givne parametre:
+For at tilbagekalde et opdateringstoken skal flg. POST-forespørgsel foretages med de givne parametre:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Anmodningseksempel
+##### Forespørgselseksempel
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -103,13 +129,17 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 ### Godkendelsesendepunkt
 
-> For at tilgå dette endepunkt, kontakt os på **devteam@adguard.com**. Beskriv venligst årsagen til og brugstilfælde for dette endepunkt, samt angiv omdirigerings-URI'en. Efter godkendelse fremsendes et unikt klientidentifikator til brug for parameteren **client_id**.
+:::warning
 
-**/oapi/v1/oauth_authorize** endepunktet bruges til at interager med ressourceejeren og opnå godkendelse til at tilgå den beskyttede ressource.
+For at tilgå dette endepunkt, kontakt os via **devteam@adguard.com**. Beskriv venligst årsagen til og brugstilfælde for dette endepunkt, samt angiv omdirigerings-URI'en. Efter godkendelse fremsendes en unik klientidentifikator til brug for parameteren **client_id**.
 
-Man omdirigeres af tjenesten til AdGuard for godkendelse (hvis man ikke allerede er logget ind) og dernæst tilbage til sin applikation.
+:::
 
-Forespørgselsparametrene til **/oapi/v1/oauth_authorize** endepunktet er:
+Endepunktet **/oapi/v1/oauth_authorize** bruges til at interager med ressourceejeren og opnå godkendelse til at tilgå den beskyttede ressource.
+
+Tjenesten foretager omdirigering til AdGuard for godkendelse (hvis indlogning ikke allerede er sket) og dernæst tilbage til applikationen.
+
+Forespørgselsparametrene til **/oapi/v1/oauth_authorize**-endepunktet er:
 
 | Parameter         | Beskrivelse                                                                                                                                                                  |
 |:----------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,11 +155,11 @@ F.eks.:
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-For at informere godkendelsesserveren om, hvilken tildelingstype, der skal bruges, bruges **response_type**-forespørgselsparameteren som følger:
+For at underrette godkendelsesserveren om, hvilken tildelingstype, der skal bruges, anvendes **response_type**-forespørgselsparameteren som følger:
 
 - For den implicitte tildeling, brug **response_type=token** til at inkludere et adgangstoken.
 
-Et vellykket svar er **302 Found**, der udløser en omdirigering til **redirect_uri** (som er en anmodningsparameter). Svarparametrene er indlejret i fragmentkomponenten (delen efter `#`) i **redirect_uri**-parameteren i headeren **Location**.
+Et vellykket svar er **302 Found**, der udløser en omdirigering til **redirect_uri** (der er en forespørgselsparameter). Svarparametrene er indlejret i fragmentkomponenten (delen efter symbolet `#`) i `redirect_uri` i headeren *Location*.
 
 F.eks.:
 
@@ -137,13 +167,6 @@ F.eks.:
 HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
-
-### Adgang til API
-
-Når først adgangs- og refresh-tokenerne er genereret, kan API-kald foretages ved at videregive adgangstokenet i headeren.
-
-- Header-navnet skal være `Authorization`
-- Header-værdien skal være `Bearer {access_token}`
 
 ## API
 
@@ -163,7 +186,7 @@ Den komplette AdGuard DNS API-ændringslog er tilgængelig på [denne side](priv
 
 ## Feedback
 
-Ønskes denne API udvidet med nye metoder, så send os en e-mail via `devteam@adguard.com` med information om, hvad der ønskes tilføjet.
+Ønskes denne API udvidet med nye metoder, send os venligst en e-mail via `devteam@adguard.com` med information om, hvad der ønskes tilføjet.
 
 [openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

@@ -10,6 +10,42 @@ For at tilslutte en Android-enhed til AdGuard DNS, føj den først til _Kontrolp
 3. Navngiv enheden.
    ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
+## Benyt AdGuard DNS-appen
+
+AdGuard DNS-appen er designet til basis DNS-niveaubeskyttelse – blokering af annoncer, trackere og ondsindede websteder. Er der ikke behov for alle de funktioner, som tilbydes af AdGuard Ad Blocker eller AdGuard VPN, kan dette være det bedste valg.
+
+Opsætning af enheden:
+
+1. [Download AdGuard DNS-appen](https://agrd.io/android_dns).
+
+2. Gå til AdGuard DNS-kontrolpanelet på [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+
+3. Klik på _Tilføj enhed_ på fanen _Hjem_.
+
+4. Vælg enhedstypen og navngiv den, og klik dernæst på _Næste_.
+
+5. Udvid afsnittet _Brug AdGuard-apps_.
+
+   ![Brug AdGuard-apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
+
+6. Vælg under _Benyt AdGuard DNS-appen_ en af disse opsætningsmetoder:
+
+   - Klik på _Opsæt_ fra den enhed, der ønskes beskyttet.
+   - Skan QR-koden med den enhed, der ønskes beskyttet.
+   - Kopiér opsætnings-ID'et, og indsæt det direkte i appen.
+
+     ![Opsætnings-ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupID.png)
+
+7. Tryk på _Fortsæt_ → _Tilslut_.
+
+   ![Tilslut \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
+
+8. Ved brug af en VPN-baseret protokol skal der stadig tillades oprettelse af en VPN-profil for at opnå fuld beskyttelse. For at gøre dette, gå til appens startside, klik på _Slå til_, og følg vejledningen i appen.
+
+9. Færdig! Enheden er nu tilsluttet AdGuard DNS. Klik på _Slå til_, hver gang beskyttelsen ønskes startet.
+
+   ![Slå til \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
+
 ## Brug AdGuard Ad Blocker (betalt mulighed)
 
 Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til opsætning af AdGuard DNS på sin Android-enhed. Man kan vælge mellem forskellige krypteringsprotokoller. Sammen med DNS-filtrering får man også en fremragende adblocker, der fungerer på hele systemet.

@@ -1,6 +1,6 @@
 ---
 title: Uživatelská pravidla
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Co to je a proč to potřebujete

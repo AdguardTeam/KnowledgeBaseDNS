@@ -10,6 +10,42 @@ Chcete-li zařízení iOS připojit k AdGuard DNS, přidejte je nejprve na _Pře
 3. Pojmenujte zařízení.
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
 
+## Použití aplikace AdGuard DNS
+
+Aplikace AdGuard DNS je navržena pro základní ochranu na úrovni DNS — blokování reklam, slídičů a nebezpečných webových stránek. Pokud nepotřebujete všechny funkce, které nabízí Blokátor reklam AdGuard nebo AdGuard VPN, může to být pro vás nejlepší volba.
+
+Nastavení zařízení:
+
+1. [Stáhněte si aplikaci AdGuard DNS](https://agrd.io/ios_dns).
+2. Přejděte na hlavní panel AdGuard DNS skrze [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+3. Klikněte na _Připojit zařízení_ na kartě _Přehled_.
+4. Vyberte typ zařízení, pojmenujte jej a klikněte na _Další_.
+5. Rozbalte sekci _Používat aplikace AdGuard_.
+
+![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+
+1. V části _Použít aplikaci AdGuard DNS_ vyberte jednu z těchto metod nastavení:
+
+   - Pokud používáte zařízení, které chcete chránit, klikněte na _Konfigurovat_.
+   - Naskenujte kód QR pomocí zařízení, které chcete chránit.
+   - Zkopírujte své ID nastavení a vložte jej přímo do aplikace.
+
+     ![SetupID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+
+2. Klepněte na _Pokračovat_ → _Připojit_.
+
+![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
+
+1. Vaše zařízení je úspěšně připojeno k AdGuard DNS. Stačí klepnout na _Povolit_ a ochrana se spustí.
+
+![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+
+1. Při použití protokolu VPN je ještě nutné povolit vytvoření profilu VPN, abyste byli plně chráněni. Chcete-li to provést, přejděte na domovskou stránku aplikace, klikněte na _Povolit_ a postupujte podle pokynů v aplikaci.
+
+2. Pokud chcete použít nativní DNS, přejděte do _Nastavení_ → _Obecné_ → _VPN a správa zařízení_ → _DNS_ a povolte AdGuard DNS.
+
+Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+
 ## Použití blokátoru reklam AdGuard (placená možnost)
 
 Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro nastavení AdGuard DNS v zařízení iOS. Můžete si vybrat z různých šifrovacích protokolů. Spolu s DNS filtrováním získáte také vynikající blokátor reklam, který funguje v celém systému.

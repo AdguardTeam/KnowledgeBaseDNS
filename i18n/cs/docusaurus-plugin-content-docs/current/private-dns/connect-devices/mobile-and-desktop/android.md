@@ -10,6 +10,42 @@ Chcete-li zařízení Android připojit k AdGuard DNS, přidejte je nejprve na _
 3. Pojmenujte zařízení.
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/choose_android.png)
 
+## Použití aplikace AdGuard DNS
+
+Aplikace AdGuard DNS je navržena pro základní ochranu na úrovni DNS — blokování reklam, slídičů a nebezpečných webových stránek. Pokud nepotřebujete všechny funkce, které nabízí Blokátor reklam AdGuard nebo AdGuard VPN, může to být pro vás nejlepší volba.
+
+Nastavení zařízení:
+
+1. [Stáhněte si aplikaci AdGuard DNS](https://agrd.io/android_dns).
+
+2. Přejděte na hlavní panel AdGuard DNS skrze [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+
+3. Klikněte na _Připojit zařízení_ na kartě _Přehled_.
+
+4. Vyberte typ zařízení, pojmenujte jej a klikněte na _Další_.
+
+5. Rozbalte sekcit _Používat aplikace AdGuard_.
+
+   ![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardApps.png)
+
+6. V části _Použít aplikaci AdGuard DNS_ vyberte jednu z těchto metod nastavení:
+
+   - Pokud používáte zařízení, které chcete chránit, klikněte na _Konfigurovat_.
+   - Naskenujte kód QR pomocí zařízení, které chcete chránit.
+   - Zkopírujte své ID nastavení a vložte jej přímo do aplikace.
+
+     ![Setup ID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupID.png)
+
+7. Klepněte na _Pokračovat_ → _Připojit_.
+
+   ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
+
+8. Při použití protokolu VPN je ještě nutné povolit vytvoření profilu VPN, abyste byli plně chráněni. Chcete-li to provést, přejděte na domovskou stránku aplikace, klikněte na _Povolit_ a postupujte podle pokynů v aplikaci.
+
+9. Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS. Pokaždé, když chcete spustit ochranu, klikněte na _Povolit_.
+
+   ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
+
 ## Použití blokátoru reklam AdGuard (placená možnost)
 
 Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro nastavení AdGuard DNS v zařízení Android. Můžete si vybrat z různých šifrovacích protokolů. Spolu s DNS filtrováním získáte také vynikající blokátor reklam, který funguje v celém systému.

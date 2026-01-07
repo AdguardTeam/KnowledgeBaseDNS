@@ -14,25 +14,25 @@ You can set it up via [AdGuard](#use-adguard-ad-blocker-paid-option) or [AdGuard
 
 ## Utilisez le Bloqueur AdGuard (option payante)
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. Vous pouvez choisir parmi les différents protocoles de chiffrement. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
+L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait pour configurer AdGuard DNS sur votre appareil Windows. Vous pouvez choisir parmi les différents protocoles de chiffrement. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
 
-1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
+1. [Installez l'application](https://adguard.com/adguard-windows/overview.html) sur le dispositif que vous souhaitez connecter à AdGuard DNS.
 2. Ouvrez l'application.
-3. Click _Settings_ at the top of the app’s home screen.
-   ![Settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
-4. Select the _DNS Protection_ tab from the menu on the left.
-   ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
-5. Click your currently selected DNS server.
-   ![DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
-6. Scroll down and click _Add a custom DNS server_.
-   ![Add a custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
-7. In the DNS upstreams field, paste one of the following addresses. If you’re not sure which one to prefer, choose DNS-over-HTTPS.
-   ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
-   ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
+3. Cliquez sur _Paramètres_ en haut de l'écran d'accueil de l'application.
+   ![Paramètres \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step3.png)
+4. Sélectionnez l'onglet _Protection DNS_ du menu à gauche.
+   ![Protection DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step4.png)
+5. Cliquez sur votre serveur DNS actuellement sélectionné.
+   ![Serveur DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step5.png)
+6. Faites défiler l'écran vers le bas et cliquez sur _Ajouter un serveur DNS personnalisé_.
+   ![Ajouter un serveur personnalisé \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step6.png)
+7. Dans le champ des en-têtes DNS, collez l'une des adresses suivantes. Si vous hésitez entre les deux, choisissez DNS-over-HTTPS.
+   ![Serveur DoH \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
+   ![Créer serveur \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_2.png)
 8. Cliquez sur _Enregistrer et sélectionner_.
-   ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
+   ![Enregistrer et sélectionner \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step8.png)
 9. Le serveur DNS que vous avez ajouté apparaîtra en bas de la liste des _Serveurs DNS personnalisés_.
-   ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
+   ![Serveurs DNS personnalisés \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
@@ -40,19 +40,19 @@ C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
 Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre VPN le fait, donc si vous avez besoin à la fois d'un VPN et d'un DNS privé, AdGuard VPN est votre option de choix.
 
-1. Install AdGuard VPN.
-2. Open the app and click _Settings_.
-3. Select _App settings_.
-   ![App settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
-4. Scroll down and select _DNS servers_.
-   ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
-5. Click _Add custom DNS server_.
-   ![Add custom DNS server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
-6. In the _Server address_ field, paste one of the following addresses. If you’re not sure which one to prefer, select DNS-over-HTTPS.
-   ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_1.png)
-   ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
+1. Installez AdGuard VPN.
+2. Ouvrez l'application et cliquez sur _Paramètres_.
+3. Sélectionnez _Paramètres de l'application_.
+   ![Paramètres de l'application \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step4.png)
+4. Faites défiler vers le bas et sélectionnez _Serveurs DNS_.
+   ![Serveurs DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step5.png)
+5. Cliquez sur _Ajouter un serveur DNS personnalisé_.
+   ![Ajouter un serveur DNS personnalisé \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step6.png)
+6. Dans le champ _Adresse du serveur_, collez l'une des adresses suivantes. Si vous n'êtes pas sûr de celle à privilégier, sélectionnez DNS-over-HTTPS.
+   ![Serveur DoH \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step7_1.png)
+   ![Créer serveur \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step7_2.png)
 7. Cliquez sur _Enregistrer et sélectionner_.
-   ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
+   ![Enregistrer et sélectionner \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
@@ -80,9 +80,9 @@ Available only on Windows 11.
 
 ## Utiliser le client AdGuard DNS
 
-AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
+AdGuard DNS Client est un outil console polyvalent et multiplateforme qui vous permet de vous connecter à AdGuard DNS en utilisant des protocoles DNS chiffrés.
 
-More details can be found in [different article](/dns-client/overview/).
+Des détails supplémentaires peuvent être trouvés dans [un article différent](/dns-client/overview/).
 
 ## Configuration du DNS brut
 

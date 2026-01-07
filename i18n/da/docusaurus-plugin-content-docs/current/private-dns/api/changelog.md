@@ -12,6 +12,15 @@ toc_max_heading_level: 3
 
 Denne artikel indeholder ændringsloggen for [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.11
+
+_Udgivet 5. november 2025_
+
+- Tilføjet API-nøglegodkendelsesmetode:
+  - API-nøgler kan genereres og tilbagekaldes i afsnittet [Brugerpræferencer](https://adguard-dns.io/en/dashboard/user-settings/api-keys)
+  - API-nøgler kan bruges til at godkende forespørgsler til API'en ved at medtage dem i forespørgsels-headeren i formatet `Authorization: ApiKey {api_key}`
+  - API-nøgler tilbyder en alternativ godkendelsesmetode sammen med adgangstokener
+
 ## v1.10
 
 _Udgivet 12. december 2024_

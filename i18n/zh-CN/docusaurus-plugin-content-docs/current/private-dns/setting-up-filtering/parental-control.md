@@ -1,6 +1,6 @@
 ---
 title: 家长控制
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## 这是什么

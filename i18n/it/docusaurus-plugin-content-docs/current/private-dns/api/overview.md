@@ -14,7 +14,33 @@ AdGuard DNS fornisce un'API di REST che puoi utilizzare per integrare con esso l
 
 ## Autenticazione
 
-### Genera Token d'accesso
+### Chiavi API
+
+Se incluse nell'intestazione della richiesta, le chiavi API possono essere usate per autorizzare le richieste all'API utente.
+
+#### Esempio di richiesta
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generazione delle chiavi API
+
+Per assegnare o revocare le chiavi API, vai alla [sottosezione corrispondente](https://adguard-dns.io/en/dashboard/user-settings/api-keys) delle *Preferenze utente*.
+
+### Token d'accesso
+
+Se inclusi nell'intestazione della richiesta, i token di accesso possono essere usati per autorizzare le richieste all'API utente.
+
+#### Esempio di richiesta
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Esempio di risposta
 
 Effettua una richiesta POST per il seguente URL con i parametri dati, per generare `access_token`:
 
@@ -32,7 +58,7 @@ Nella risposta, otterrai sia `access_token` che `refresh_token`.
 
 - `refresh_token` è permanente. Per revocare un `refresh_token`, fai riferimento a: `Revocare un Token di aggiornamento`.
 
-#### Esempio di richiesta
+##### Esempio di richiesta
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Esempio di risposta
+##### Esempio di risposta
 
 ```json
 {
@@ -53,7 +79,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Genera Token d'Accesso dal Token di Aggiornamento
+#### Generazione di token di accesso da token di aggiornamento
 
 I token d'accesso hanno una validità limitata. Una volta scaduta, la tua app dovrà utilizzarre il `token d'aggiornamento` per richiedere un nuovo `token d'accesso`.
 
@@ -65,7 +91,7 @@ Effettua la seguente richiesta POST con i dati parametri per ottenere un nuovo t
 |:----------------- |:---------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, con cui dev'essere generato un nuovo token d'accesso. |
 
-#### Esempio di richiesta
+##### Esempio di richiesta
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Esempio di risposta
+##### Esempio di risposta
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Revocare un Token di Aggiornamento
+#### Revoca dei token di aggiornamento
 
 Per revocare un token d'aggiornamento, effettua la seguente richiesta di POST, con i seguenti parametri:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Esempio di Richiesta
+##### Esempio di richiesta
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -103,7 +129,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 ### Endpoint di autorizzazione
 
-> Per accedere a questo endpoint, è necessario contattarci a **devteam@adguard.com**. Si prega di descrivere il motivo e gli casi d'uso per questo endpoint, nonché di fornire l'URI di reindirizzamento. Una volta approvato, riceverai un identificatore cliente unico, che dovrà essere utilizzato per il parametro **client_id**.
+:::warning
+
+Per accedere a questo endpoint, è necessario contattarci a **devteam@adguard.com**. Si prega di descrivere il motivo e gli casi d'uso per questo endpoint, nonché di fornire l'URI di reindirizzamento. Una volta approvato, riceverai un identificatore cliente unico, che dovrà essere utilizzato per il parametro **client_id**.
+
+:::
 
 L'endpoint **/oapi/v1/oauth_authorize** viene utilizzato per interagire con il proprietario delle risorse e ottenere l'autorizzazione per accedere alla risorsa protetta.
 
@@ -129,7 +159,7 @@ Per informare il server di autorizzazione quale tipo di concessione utilizzare, 
 
 - Per la concessione implicita, usa **response_type=token** per includere un token di accesso.
 
-Una risposta positiva è **302 Found**, che attiva un reindirizzamento a **redirect_uri** (che è un parametro di richiesta). I parametri di risposta sono incorporati nel componente frammento (la parte dopo `#`) del parametro **redirect_uri** nell'intestazione **Location**.
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
 
 Ad esempio:
 
@@ -138,32 +168,25 @@ HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### Accesso all'API
-
-Una volta che i token d'accesso e di aggiornamento sono generati, le chiamate all'API possono essere effettuate passando il token d'accesso nell'intestazione.
-
-- Il nome dell'intestazione dovrebbe essere `Authorization`
-- Il nome dell'intestazione dovrebbe essere `Bearer {access_token}`
-
 ## API
 
 ### Riferimento
 
 Please see the [method’s reference](reference.md).
 
-### Specifiche OpenAPI
+### OpenAPI spec
 
 OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
-Puoi utilizzare diversi strumenti per visualizzare l'elenco dei metodi API disponibili. Ad esempio, puoi aprire questo file su [https://editor.swagger.io/][swagger].
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ### Registro delle modifiche
 
-Il registro delle modifiche completo dell'API DNS di AdGuard è disponibile su [questa pagina](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Feedback
 
-Se vorresti che quest'API fosse estesa con nuovi metodi, ti preghiamo di inviarci un'email a `devteam@adguard.com` e di farci sapere cosa vorresti fosse aggiunto.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

@@ -1,6 +1,6 @@
 ---
 title: 用户规则
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## 这是什么，作用是什么？

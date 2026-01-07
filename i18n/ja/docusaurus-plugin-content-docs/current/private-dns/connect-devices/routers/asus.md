@@ -19,7 +19,7 @@ sidebar_position: 3
 6. 「_DNSプライバシープロトコル_」を「_DNS-over-TLS（DoT）_」に変更します。
 7. _DNS-over-TLSプロファイル_が_Strict_に設定されていることを確認してください。
 8. 「_DNS-over-TLSサーバーのリスト_」セクションまでスクロールダウンします。 「_アドレス_」フィールドに、以下のいずれかのアドレスを入力します:
-    - `94.140.14.49` と `94.140.14.59`
+   - `94.140.14.49` と `94.140.14.59`
 9. _TLSポート_には「853」を入力します。
 10. 「_TLSホスト名_」フィールドに、プライベート AdGuard DNS サーバーのアドレスを入力します:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ sidebar_position: 3
 4. 「_WAN_」または「_インターネット_」を選択します。
 5. 「_DNS設定_」または「_DNS_」を開きます。
 6. 「_手動設定_」を選択します。 「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバーアドレスを入力します:
-    - IPv4: `94.140.14.49` と `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` と `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 7. 設定を保存します。
 8. IP（チームプランをご利用の場合は専用IP）をリンクします。
-    - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

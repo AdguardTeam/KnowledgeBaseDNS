@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Was ein Server ist und wie man ihn benutzt
 
-When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
+Wenn Sie Privates AdGuard DNS einrichten, werden Sie auf den Begriff _Server_ stoßen.
 
 Ein Server fungiert als „Profil“, mit dem Sie Ihre Geräte verbinden.
 
@@ -19,9 +19,12 @@ Sie können zum Beispiel Folgendes erhalten:
 - Ein Server, der Inhalte für Erwachsene und bestimmte Dienste blockiert
 - Ein Server, der Inhalte für Erwachsene nur zu bestimmten, von Ihnen festgelegten Zeiten blockiert
 
-Weitere Informationen zur Filterung des Datenverkehrs und zu Sperrregeln finden Sie in dem Artikel [„So richten Sie die Filterung in AdGuard DNS ein“](/private-dns/setting-up-filtering/blocklists.md).
+Weitere Informationen zur Filterung des Datenverkehrs und zu Sperrregeln finden Sie in dem Artikel [_So richten Sie die Filterung in AdGuard DNS ein_](/private-dns/setting-up-filtering/blocklists.md).
 
-If you’re interested in specific settings, there are dedicated articles available for that:
+Wenn Sie an bestimmten Einstellungen interessiert sind, finden Sie dazu spezielle Artikel:
 
 - [Erweiterte Einstellungen](/private-dns/server-and-settings/advanced.md)
 - [Zugriffsrechte](/private-dns/server-and-settings/access.md)
+- [Ratenbegrenzung](/private-dns/server-and-settings/rate-limit.md)
+- [Rollenbasierter Zugriff](/private-dns/server-and-settings/role-based-access.md)
+- [Eigene Domains](/private-dns/server-and-settings/custom-domains.md)

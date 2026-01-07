@@ -1,6 +1,6 @@
 ---
 title: Benutzerregeln
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Warum diese Funktion nützlich ist
@@ -21,7 +21,7 @@ So richten Sie Benutzerregeln ein:
 
 4. Klicken Sie auf die Option _Benutzerregeln_.
 
-5. You’ll find several options for adding user rules.
+5. Sie finden mehrere Optionen zum Hinzufügen von Benutzerregeln.
 
    - Am einfachsten ist es, den Generator zu nutzen. Um ihn zu verwenden, klicken Sie auf _Neue Regel hinzufügen_ → Geben Sie den Namen der Domain ein, die Sie sperren oder entsperren möchten → Klicken Sie auf _Regel hinzufügen_
      ![Regel hinzufügen \*Rand](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)

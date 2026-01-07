@@ -212,7 +212,7 @@ Problemet med denne tilgang er, at man på denne måde også afblokerer sporings
 
 - `@@*$denyallow=com|net`: Afblokér alt, undtagen `*.com` og `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
+- `||eksempel.org^$denyallow=sub.eksempel.org`: Blokér `eksempel.org` og `*.eksempel.org`, men ikke `sub.eksempel.org`.
 
 #### `dnstype` {#dnstype-modifier}
 

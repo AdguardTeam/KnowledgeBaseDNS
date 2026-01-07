@@ -1,6 +1,6 @@
 ---
 title: Listas de bloqueo
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## ¿Qué son las listas de bloqueo?

@@ -1,6 +1,6 @@
 ---
 title: Parental control
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## What is it
@@ -36,6 +36,12 @@ Removes the option to view and post comments under videos and interact with 18+ 
 AdGuard DNS blocks access to popular services with one click. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Blocked services *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including *Adult content*, *Games*, *Banking*, and *Communication*. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking *border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
 ### Schedule off time
 
