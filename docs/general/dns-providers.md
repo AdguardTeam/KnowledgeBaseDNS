@@ -1378,7 +1378,7 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 | Protocol          | Address                                       |                |
 |-------------------|-----------------------------------------------|
 
-| DNS-over-HTTPS| `https://dns.astracat.ru/dns-query` | [Add to AdGuard][Add to AdGuard](adguard:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS) |
+| DNS-over-HTTPS| `https://dns.astracat.ru/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS) |
 
 
 ### DNSGuard
