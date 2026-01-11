@@ -1372,14 +1372,12 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
 
 ### ASTRACAT DNS
+[ASTRACAT DNS](https://astracat.ru/) is a privacy-focused DNS resolver designed for high speed, no logging, and no censorship. It provides secure and reliable DNS resolution.
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+| Protocol        | Address                             |                |
+|-----------------|-------------------------------------|----------------|
+| DNS-over-HTTPS  | `https://dns.astracat.ru/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS) |
 
-| Protocol          | Address                                       |                |
-|-------------------|-----------------------------------------------|
-| DNS, IPv4         | `85.209.2.112`                                | [Add to AdGuard](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS) |
-| DNS-over-HTTPS    | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
-| DNS-over-TLS      | `tls://frd4wvnobp.cloudflare-gateway.com`     | [Add to AdGuard](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com) |
 
 ### DNSGuard
 
