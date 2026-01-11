@@ -1372,11 +1372,13 @@ Kids-friendly filter that also blocks ads, trackers, and malware
 |DNS-over-TLS|`tls://kids.ns.nwps.fi` | [Add to AdGuard](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi) |
 
 ### ASTRACAT DNS
+
 [ASTRACAT DNS](https://astracat.ru/) is a privacy-focused DNS resolver designed for high speed, no logging, and no censorship. It provides secure and reliable DNS resolution.
 
 | Protocol        | Address                             |                |
 |-----------------|-------------------------------------|----------------|
 | DNS-over-HTTPS  | `https://dns.astracat.ru/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.astracat.ru/dns-query&name=ASTRACAT%20DNS) |
+
 
 
 ### DNSGuard
