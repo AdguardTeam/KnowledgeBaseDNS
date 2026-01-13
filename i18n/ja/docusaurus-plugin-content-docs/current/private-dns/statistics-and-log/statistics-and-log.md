@@ -3,7 +3,7 @@ title: 「統計」と「クエリログ」
 sidebar_position: 1
 ---
 
-AdGuard DNS を使用するメリットの1つは、デバイスが何をしているか、どこに接続しているかを明確に把握できることです。 このような明確さなしでは、デバイスのアクティビティを監視する方法はほとんどありません。
+AdGuard DNS を使用するメリットの1つは、デバイスが何をしているか、どこに接続しているかを明確に把握できることです。 Without this clarity, there’s no way to monitor the activity of your devices.
 
 AdGuard DNS は、クエリを監視するための便利なツールの幅広いレンジを提供しています：
 

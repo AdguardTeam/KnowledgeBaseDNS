@@ -13,16 +13,16 @@ sidebar_position: 3
 
 2. 执行 `nslookup example.org`。 它将打印如下内容：
 
-  ```none
-  Server: 192.168.0.1
-  Address: 192.168.0.1#53
+   ```none
+   Server: 192.168.0.1
+   Address: 192.168.0.1#53
 
-  Non-authoritative answer:
-  Name: example.org
-  Address: <IPv4>
-  Name: example.org
-  Address: <IPv6>
-  ```
+   Non-authoritative answer:
+   Name: example.org
+   Address: <IPv4>
+   Name: example.org
+   Address: <IPv6>
+   ```
 
 3. 检查 `Server` IP 地址是否为 AdGuard Home 运行的 IP 地址。 如果不是，请配置设备。 请[参阅](#defaultdns)了解如何操作。
 
@@ -76,23 +76,23 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 1. 停止 AdGuard Home：
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. 配置 AdGuard Home 以写入详细级别的日志：
 
-  1. 在编辑器中打开 `AdGuardHome.yaml`。
+   1. 在编辑器中打开 `AdGuardHome.yaml`。
 
-  2. 将 `log.file` 设置为日志文件的所需路径，例如 `/tmp/aghlog.txt`。 请注意，该目录必须存在。
+   2. 将 `log.file` 设置为日志文件的所需路径，例如 `/tmp/aghlog.txt`。 请注意，该目录必须存在。
 
-  3. 将 `log.verbose` 设置为 `true`。
+   3. 将 `log.verbose` 设置为 `true`。
 
 3. 重新启动 AdGuard Home 并重现问题：
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 4. 完成调试后，将 `log.verbose` 设置为 `false`。
 
@@ -121,29 +121,29 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 1. 停止 AdGuard Home：
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. 在编辑器中打开 `AdGuardHome.yaml`。
 
 3. 将 `dns.parental_block_host` 或 `dns.safebrowsing_block_host` 设置为服务器的 IP 地址 (在本例中为 `192.168.123.45`)：
 
-  ```yaml
-  # …
-  dns:
-    # …
+   ```yaml
+   # …
+   dns:
+     # …
 
-    # NOTE: Change to the actual IP address of your server.
-    parental_block_host: 192.168.123.45
-    safebrowsing_block_host: 192.168.123.45
-  ```
+     # NOTE: Change to the actual IP address of your server.
+     parental_block_host: 192.168.123.45
+     safebrowsing_block_host: 192.168.123.45
+   ```
 
 4. 重新启动 AdGuard Home：
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ### 其他过滤器的自定义拦截页面
 
@@ -159,23 +159,23 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 1. 停止 AdGuard Home：
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. 在编辑器中打开 `AdGuardHome.yaml`。
 
 3. 将 `http.address` 设置为新的网络接口。 例如：
 
-  - `0.0.0.0:0` 监听所有网络接口；
-  - `0.0.0.0:8080` 监听所有端口为 `8080` 的网络接口；
-  - `127.0.0.1:0` 仅监听本地环回接口。
+   - `0.0.0.0:0` 监听所有网络接口；
+   - `0.0.0.0:8080` 监听所有端口为 `8080` 的网络接口；
+   - `127.0.0.1:0` 仅监听本地环回接口。
 
 4. 重新启动 AdGuard Home：
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ## 如何将 AdGuard Home 设置为默认 DNS 服务器？ {#defaultdns}
 
@@ -221,32 +221,32 @@ systemd-r 14542 systemd-resolve 14u IPv4 86179 0t0 TCP 127.0.0.53:domain
 
 1. 如果需要，请创建 `/etc/systemd/resolved.conf.d` 目录：
 
-  ```sh
-  sudo mkdir -p /etc/systemd/resolved.conf.d
-  ```
+   ```sh
+   sudo mkdir -p /etc/systemd/resolved.conf.d
+   ```
 
 2. 停用 `DNSStubListener` 并更新 DNS 服务器地址。 为此，请创建一个新文件 `/etc/systemd/resolved.conf.d/adguardhome.conf`，内容如下：
 
-  ```service
-  [Resolve]
-  DNS=127.0.0.1
-  DNSStubListener=no
-  ```
+   ```service
+   [Resolve]
+   DNS=127.0.0.1
+   DNSStubListener=no
+   ```
 
 **必须**将 `127.0.0.1` 指定为 DNS 服务器地址。否则，名称服务器将为 `127.0.0.53`，如果没有 `DNSStubListener`，它将无法工作。
 
 1. 激活另一个 `resolv.conf` 文件：
 
-  ```sh
-  sudo mv /etc/resolv.conf /etc/resolv.conf.backup
-  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
-  ```
+   ```sh
+   sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+   sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+   ```
 
 2. 重新启动 `DNSStubListener`：
 
-  ```sh
-  sudo systemctl reload-or-restart systemd-resolved
-  ```
+   ```sh
+   sudo systemctl reload-or-restart systemd-resolved
+   ```
 
 之后，`systemd-resolved` 不应显示在 `lsof` 的输出中，并且 AdGuard Home 应该能够绑定到 `127.0.0.1:53`。
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-请不要在 Apache 反向 HTTP 代理中使用子目录。  这是一个已知问题 ([#6604])，Apache 处理相对重定向的方式与其他网络服务器不同。 这会导致 AdGuard Home 网络界面出现问题。
+请不要在 Apache 反向 HTTP 代理中使用子目录。  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. 这会导致 AdGuard Home 网络界面出现问题。
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -321,20 +321,20 @@ DOMAIN {
 
 2. 以 `root` 身份执行以下命令来更改文件的安全上下文：
 
-  ```sh
-  chcon -t bin_t /usr/local/bin/AdGuardHome
-  ```
+   ```sh
+   chcon -t bin_t /usr/local/bin/AdGuardHome
+   ```
 
 3. 添加所需的防火墙规则，使其可通过网络访问。 例如：
 
-  ```sh
-  firewall-cmd --new-zone=adguard --permanent
-  firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
-  firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
-  firewall-cmd --zone=adguard --add-port=53/udp --permanent
-  firewall-cmd --zone=adguard --add-port=80/tcp --permanent
-  firewall-cmd --reload
-  ```
+   ```sh
+   firewall-cmd --new-zone=adguard --permanent
+   firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
+   firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
+   firewall-cmd --zone=adguard --add-port=53/udp --permanent
+   firewall-cmd --zone=adguard --add-port=80/tcp --permanent
+   firewall-cmd --reload
+   ```
 
 如果您仍然收到 `code=exited status=203/EXEC` 或来自 `systemctl` 的类似错误，请尝试卸载 AdGuard Home，并使用安装脚本的 `-o` 选项将其**直接**安装到 `/usr/local/bin` 中：
 
@@ -363,72 +363,72 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 
 1. 从[发布页面][releases]下载新的 AdGuard Home 软件包。 如果您要从命令行执行此步骤，请键入：
 
-  ```sh
-  curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
-  或者，使用 `wget`：
+   或者，使用 `wget`：
 
-  ```sh
-  wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
 2. 导航到 AdGuard Home 的安装目录。 在大多数 Unix 系统上，默认目录是 `/opt/AdGuardHome`，但在 macOS 上是 `/Applications/AdGuardHome`。
 
 3. 停止 AdGuard Home：
 
-  ```sh
-  sudo ./AdGuardHome -s stop
-  ```
+   ```sh
+   sudo ./AdGuardHome -s stop
+   ```
 
-  :::注意 OpenBSD
+   :::注意 OpenBSD
 
-  在 OpenBSD 上，您可能需要使用 `doas` 而不是 `sudo`。
+   在 OpenBSD 上，您可能需要使用 `doas` 而不是 `sudo`。
 
-  :::
+   :::
 
 4. 备份数据。 也就是说，您的配置文件和数据目录 (默认为 `AdGuardHome.yaml` 和 `data/`)。 例如，要将数据备份到名为 `~/my-agh-backup` 的新目录：
 
-  ```sh
-  mkdir -p ~/my-agh-backup
-  cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
-  ```
+   ```sh
+   mkdir -p ~/my-agh-backup
+   cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
+   ```
 
 5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您将压缩包下载到 `~/Downloads` 目录，并希望将其解压缩到 `/tmp/`：
 
-  ```sh
-  tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
-  ```
+   ```sh
+   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   ```
 
-  在 macOS 上，键入如下内容：
+   在 macOS 上，键入如下内容：
 
-  ```sh
-  unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
-  ```
+   ```sh
+   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   ```
 
 6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 在大多数 Unix 系统上，该命令如下所示：
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
+   ```
 
-  在 macOS 上，类似：
+   在 macOS 上，类似：
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
+   ```
 
-  您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
+   您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
 
-  现在，您可以删除临时目录。
+   现在，您可以删除临时目录。
 
 7. 重新启动 AdGuard Home：
 
-  ```sh
-  sudo ./AdGuardHome -s start
-  ```
+   ```sh
+   sudo ./AdGuardHome -s start
+   ```
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
@@ -438,51 +438,51 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
 
 1. 从[发布页面][releases]下载新的 AdGuard Home 软件包。 如果要从命令行执行此步骤：
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
-  Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
+   Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
+   ```
 
 2. 导航到 AdGuard Home 的安装目录。 在下面的示例中，我们将使用 `C:\Program Files\AdGuardHome`。
 
 3. 停止 AdGuard Home：
 
-  ```ps1
-  .\AdGuardHome.exe -s stop
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s stop
+   ```
 
 4. 备份数据。 也就是说，您的配置文件和数据目录 (默认为 `AdGuardHome.yaml` 和 `data/`)。 例如，要将数据备份到名为 `my-agh-backup` 的新目录：
 
-  ```ps1
-  $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
-  New-Item -Path $newDir -ItemType Directory
-  Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
-  ```
+   ```ps1
+   $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
+   New-Item -Path $newDir -ItemType Directory
+   Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
+   ```
 
 5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您已将压缩包下载到 `Downloads` 目录，并希望将其解压缩到临时目录：
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
+   ```
 
 6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 例如：
 
-  ```ps1
-  $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
-  Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
-  ```
+   ```ps1
+   $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
+   Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
+   ```
 
-  您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
+   您可能还希望复制软件包的文档部分，例如更改日志 (`CHANGELOG.md`)、README 文件 (`README.md`) 和许可证 (`LICENSE.txt`)。
 
-  现在，您可以删除临时目录。
+   现在，您可以删除临时目录。
 
 7. 重新启动 AdGuard Home：
 
-  ```ps1
-  .\AdGuardHome.exe -s start
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s start
+   ```
 
 ## 如何卸载 AdGuard Home？ {#uninstall}
 

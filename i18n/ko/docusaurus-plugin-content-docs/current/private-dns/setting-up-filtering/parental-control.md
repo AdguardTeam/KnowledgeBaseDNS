@@ -1,15 +1,15 @@
 ---
 title: 자녀 보호
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## 자녀 보호 기능이란 무엇인가요?
 
-자녀 보호 기능은 민감한 콘텐츠가 포함된 특정 웹사이트에 대한 액세스를 유연하게 맞춤 설정할 수 있는 설정 세트입니다.  이 기능을 사용하여 자녀가 성인 사이트에 접근하는 것을 제한하고, 검색 쿼리를 사용자 맞춤화하며, 인기 서비스의 사용을 차단하고, 그 외 여러 작업을 수행할 수 있습니다.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## 설정 방법
 
-서버에서 자녀 보호 기능을 포함한 모든 기능을 유연하게 구성할 수 있습니다. [해당 문서](private-dns/server-and-settings/server-and-settings.md)에서 AdGuard DNS에서 서버가 무엇인지 숙지하고 다양한 설정 세트로 다양한 서버를 만드는 방법을 배울 수 있습니다.
+서버에서 자녀 보호 기능을 포함한 모든 기능을 유연하게 구성할 수 있습니다. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 그런 다음, 선택한 서버의 설정으로 이동하여 필요한 구성을 활성화하세요.
 
@@ -33,7 +33,7 @@ YouTube에서 영상에 대한 댓글을 보고 게시하며 18세 이상 콘텐
 
 ### 차단된 서비스 및 웹사이트
 
-AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합니다. 예를 들어, 연결된 기기가 Instagram 및 YouTube에 방문하는 것을 원하지 않는 경우 유용합니다.
+AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합니다. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![차단된 서비스 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

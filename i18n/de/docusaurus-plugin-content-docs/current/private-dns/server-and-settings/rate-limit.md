@@ -19,6 +19,6 @@ Wenn Sie das AdGuard DNS _Team_- oder _Enterprise_-plan abonniert haben, können
 
 2. Tippen Sie auf _Anfragen pro Sekunde erhöhen_, um unser Support-Team zu kontaktieren und die Erhöhung der Datenstrombegrenzung zu beantragen. Sie müssen Ihre CIDR und den gewünschten Grenzwert angeben
 
-     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Ihre Anfrage wird innerhalb von 1–3 Werktagen bearbeitet. Wir werden Sie per E-Mail über die Änderungen informieren

@@ -1,6 +1,6 @@
 ---
 title: Uživatelská pravidla
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Co to je a proč to potřebujete
@@ -23,7 +23,7 @@ Nastavení uživatelských pravidel:
 
 5. Najdete zde několik možností přidávání uživatelských pravidel.
 
-    - Nejjednodušší je použít generátor. Chcete-li jej použít, klikněte na tlačítko _Přidat nové pravidlo_ → Zadejte název domény, kterou chcete zablokovat nebo odblokovat → Klikněte na tlačítko _Přidat pravidlo_ ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - Pokročilým způsobem je použití editoru pravidel. Klikněte na _Otevřít editor_ a zadejte pravidla blokování podle [syntaxe](/general/dns-filtering-syntax/)
+   - Nejjednodušší je použít generátor. Chcete-li jej použít, klikněte na tlačítko _Přidat nové pravidlo_ → Zadejte název domény, kterou chcete zablokovat nebo odblokovat → Klikněte na tlačítko _Přidat pravidlo_ ![Add rule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Pokročilým způsobem je použití editoru pravidel. Klikněte na _Otevřít editor_ a zadejte pravidla blokování podle [syntaxe](/general/dns-filtering-syntax/)
 
 Tato funkce umožňuje [přesměrovat dotaz na jinou doménu nahrazením obsahu dotazu DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

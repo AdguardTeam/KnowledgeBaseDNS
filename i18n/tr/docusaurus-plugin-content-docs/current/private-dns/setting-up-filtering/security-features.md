@@ -1,11 +1,11 @@
 ---
 title: Güvenlik özellikleri
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-AdGuard DNS güvenlik ayarları, kullanıcının kişisel bilgilerini korumak için tasarlanmış bir dizi yapılandırmadır.
+The AdGuard DNS security settings are a set of configurations designed to protect the user’s personal information.
 
-Burada saldırganlardan korunmak için hangi yöntemleri kullanmak istediğinizi seçebilirsiniz. Bu sizi kimlik avı ve sahte siteleri ziyaret etmekten ve hassas verilerinizin sızdırılması ihtimalinden korur.
+Burada saldırganlardan korunmak için hangi yöntemleri kullanmak istediğinizi seçebilirsiniz. Bu sizi kimlik avı ve sahte siteleri ziyaret etmekten ve hassas verilerin olası sızıntılarından korur.
 
 ### Kötü amaçlı, kimlik avı ve dolandırıcılık alan adlarını engelle
 

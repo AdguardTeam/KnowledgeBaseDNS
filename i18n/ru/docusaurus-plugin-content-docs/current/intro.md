@@ -8,7 +8,7 @@ slug: /
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/MSp7Ki03-LI" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-DNS расшифровывается как «‎cистема доменных имён» (от англ. Domain Name System). Её цель — переводить названия сайтов в IP-адреса. Каждый раз, когда вы заходите на сайт, ваш браузер отправляет запрос на DNS-сервер, чтобы определить IP-адрес сайта. В ответ обычный DNS-резолвер просто возвращает IP-адрес запрошенного домена.
+DNS расшифровывается как *‎cистема доменных имён* (от англ. Domain Name System). Её цель — переводить названия сайтов в IP-адреса. Каждый раз, когда вы заходите на сайт, ваш браузер отправляет запрос на DNS-сервер, чтобы определить IP-адрес сайта. В ответ обычный DNS-резолвер просто возвращает IP-адрес запрошенного домена.
 
 :::note
 

@@ -9,15 +9,11 @@ AdGuard DNS is een gratis, op privacy gerichte DNS-resolver die een veilige verb
 
 ## Openbare AdGuard DNS-servers
 
-AdGuard DNS heeft drie verschillende soorten publieke servers. De "standaard" server is bedoeld voor het blokkeren van advertenties, volgers, malware en phishing-websites. "Gezinsbescherming" doet hetzelfde, maar blokkeert ook websites met inhoud voor volwassenen en dwingt de optie "Veilig zoeken" af in browsers die deze bieden. "Niet-filteren" zorgt voor een veilige en betrouwbare verbinding, maar blokkeert niets. Gedetailleerde instructies voor het instellen van AdGuard DNS op elk apparaat vind je op [onze website](https://adguard-dns.io/public-dns.html). Elke server ondersteunt verschillende veilige protocollen: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) en DNS-over-QUIC (DoQ).
+AdGuard DNS heeft drie verschillende soorten publieke servers. *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. Gedetailleerde instructies voor het instellen van AdGuard DNS op elk apparaat vind je op [onze website](https://adguard-dns.io/public-dns.html). Elke server ondersteunt verschillende veilige protocollen: DNSCrypt, DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) en DNS-over-QUIC (DoQ).
 
 ## AdGuard DNS-protocollen
 
 Naast gewone DNS (zowel IPv4 als IPv6) ondersteunt AdGuard DNS verschillende gecodeerde protocollen, zodat je degene kunt kiezen die het beste bij jou past.
-
-### DNSCrypt
-
-Met AdGuard DNS kun je een specifiek gecodeerd protocol gebruiken: DNSCrypt. Hierdoor worden alle DNS-verzoeken versleuteld, wat je beschermt tegen mogelijke onderschepping van verzoeken en vervolgens afluisteren en/of wijzigen. Maar in vergelijking met de DoH-, DoT- en DoQ-protocollen wordt DNSCrypt als verouderd beschouwd en indien mogelijk raden we aan om deze protocollen te gebruiken.
 
 ### DNS-over-HTTPS (DoH) en DNS-over-TLS (DoT)
 
@@ -31,11 +27,11 @@ AdGuard DNS biedt ook een JSON API voor DNS. Het is mogelijk om een DNS-antwoord
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-Voor gedetailleerde documentatie, zie [Google's gids over JSON API voor DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Het verkrijgen van een DNS-respons in JSON werkt op dezelfde manier met AdGuard DNS.
+For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). Het verkrijgen van een DNS-respons in JSON werkt op dezelfde manier met AdGuard DNS.
 
 :::note
 
-In tegenstelling tot Google DNS ondersteunt AdGuard DNS geen waarden voor `edns_client_subnet` en `Comment` in respons-JSON's.
+Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
 
 :::
 
@@ -46,3 +42,13 @@ In tegenstelling tot Google DNS ondersteunt AdGuard DNS geen waarden voor `edns_
 ### Snelheidslimiet
 
 DNS-ratelimiting is een techniek die wordt gebruikt om de hoeveelheid verkeer die een DNS-server binnen een specifieke tijdsperiode kan verwerken te reguleren. We bieden de optie om de standaardlimiet voor Team- en Enterprise-abonnementen van AdGuard DNS te verhogen. Voor meer informatie kunt je [het gerelateerde artikel lezen](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+Met AdGuard DNS kun je een specifiek versleuteld protocol gebruiken: DNSCrypt. Hierdoor worden alle DNS-verzoeken versleuteld, wat je beschermt tegen mogelijke onderschepping van verzoeken en daaropvolgend afluisteren en/of wijzigen.
+
+:::note
+
+Dit is een verouderd protocol met beperkte ondersteuning.
+
+:::

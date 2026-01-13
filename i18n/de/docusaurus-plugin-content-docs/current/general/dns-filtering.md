@@ -15,7 +15,7 @@ Um die DNS-Filterung besser zu verstehen, sollten wir zunächst die Frage „Was
 
 ## Was bedeutet DNS?
 
-DNS steht für „Domain Name System“ und hat die Aufgabe, die Namen von Websites in etwas zu übersetzen, das Browser verstehen können, nämlich in IP-Adressen. Jedes Mal, wenn Sie eine Website aufrufen, sendet Ihr Browser eine Anfrage an einen speziellen Servertyp (DNS-Server). Dieser Server prüft den angeforderten Domainnamen und antwortet mit einer entsprechenden IP-Adresse. Sehr schematisch lässt sich das so darstellen:
+DNS steht für *Domain Name System* und hat die Aufgabe, die Namen von Websites in etwas zu übersetzen, das Browser verstehen können, nämlich in IP-Adressen. Jedes Mal, wenn Sie eine Website aufrufen, sendet Ihr Browser eine Anfrage an einen speziellen Servertyp (DNS-Server). Dieser Server prüft den angeforderten Domainnamen und antwortet mit einer entsprechenden IP-Adresse. Sehr schematisch lässt sich das so darstellen:
 
 ![Wie DNS funktioniert](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -61,13 +61,13 @@ Zunächst einmal müssen wir erwähnen, dass Sie mit AdGuard nicht wählen müss
 
 **Vorteile der DNS-Filterung:**
 
-1. Auf einigen Plattformen ist dies die einzige Möglichkeit, eine systemweite Filterung zu erreichen. Unter iOS unterstützt beispielsweise nur der Safari-Browser das Sperren von Inhalten im bekannten Sinne, für alles andere gibt es nur DNS-Filterung.
+1. Auf einigen Plattformen ist dies die einzige Möglichkeit, eine systemweite Filterung zu erreichen. Unter iOS unterstützt beispielsweise nur der Safari-Browser das Blockieren von Inhalten im bekannten Sinne, für alles andere gibt es nur DNS-Filterung.
 1. Einige Formen der Verfolgung (wie [CNAME-cloaked tracking](https://adguard.com/blog/cname-tracking.html)) können nur durch DNS-Filterung bekämpft werden.
 1. Die Phase der Verarbeitung einer DNS-Anfrage ist die früheste Phase, in der Sie möglicherweise mit einer Anzeige oder einem Tracker umgehen können. Dies hilft, ein wenig Akkulaufzeit und Datenverkehr zu sparen.
 
 **Nachteile der DNS-Filterung:**
 
-1. Die DNS-Filterung ist „grob“, d. h. sie entfernt keine Leerräume, die hinter einer gesperrten Werbung zurückbleiben, und wendet auch keine kosmetische Filterung jeglicher Art an. Viele der komplizierteren Werbeanzeigen können nicht auf DNS-Ebene gesperrt werden (oder besser gesagt, sie können es, aber nur durch Sperrung der gesamten Domains, die für andere Zwecke verwendet werden).
+1. Die DNS-Filterung ist „grob“, d. h. sie entfernt keine Leerräume, die hinter einer gesperrten Werbung zurückbleiben, und wendet auch keine kosmetische Filterung jeglicher Art an. Viele der komplexeren Anzeigen lassen sich nicht auf DNS-Ebene blockieren (oder besser gesagt, sie lassen sich zwar blockieren, aber nur, indem man die gesamten Domains blockiert, die für andere Zwecke verwendet werden).
 
     ![Beispiel für den Unterschied](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Ein Beispiel für den Unterschied zwischen DNS-Filterung und Netzwerk-Filterung*
 

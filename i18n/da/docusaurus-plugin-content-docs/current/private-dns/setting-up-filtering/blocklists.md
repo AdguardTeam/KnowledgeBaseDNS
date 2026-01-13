@@ -1,6 +1,6 @@
 ---
 title: Sortlister
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## Hvad sortlister er
@@ -57,7 +57,7 @@ For at indsend en forespørgsel:
 3. Klik på _Sortlisteanmodning_ og udfyld formularen.
 4. Efter udfyldelsen, klik på _Indsend ny problematik_.
 
-Matcher ens eget filters blokeringsregler ikke de eksisterende lister, føjes filteret til repo'et.
+Dublerer ens eget filters blokeringsregler ikke de eksisterende lister, føjes filteret til repo'et.
 
 ## Brugerregler
 

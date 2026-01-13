@@ -127,7 +127,11 @@ Chování pravidla můžete změnit přidáním modifikátorů. Modifikátory mu
 
   `||example.org^` je odpovídající vzor. `$` je oddělovač, který signalizuje, že zbytek pravidla jsou modifikátory. `client=127.0.0.1` je modifikátor [`client`][] s jeho hodnotou, `127.0.0.1`. `,` je oddělovač mezi modifikátory. A na konec `dnstype=A` je [`dnstype`][] s jeho hodnotou `A`.
 
-**POZNÁMKA:** pokud pravidlo obsahuje modifikátor, který není uveden v tomto dokumentu, musí být celé pravidlo **ignorováno**. Tímto způsobem se vyhneme falešně pozitivním výsledkům, když se lidé pokoušejí používat seznamy filtrů nemodifikovaných blokátorů reklam v prohlížečích, jako je EasyList nebo EasyPrivacy.
+:::note
+
+Pokud pravidlo obsahuje modifikátor, který není uveden v tomto dokumentu, musí být celé pravidlo **ignorováno**. Tímto způsobem se vyhneme falešně pozitivním výsledkům, když se lidé pokoušejí používat seznamy filtrů nemodifikovaných blokátorů reklam v prohlížečích, jako je EasyList nebo EasyPrivacy.
+
+:::
 
 #### `client` {#client-modifier}
 
@@ -137,7 +141,11 @@ Modifikátor `client` umožňuje specifikovat klienty, na které se toto pravidl
 
 - Podle jejich názvu. Tento způsob funguje pouze pro trvalé klienty (v AdGuard Home) a zařízení (v soukromý AdGuard DNS), které jste přidali ručně.
 
-  **POZNÁMKA:** v AdGuard Home nejsou v současné době podporovány identifikátory klientů, ale pouze názvy. Pokud jste přidali klienta s názvem “My Client“ a identifikátor klienta `my-client`, zapište modifikátor jako `$client= 'My Client'` na rozdíl od `$client= my-client`.
+  :::note
+
+  V AdGuard Home nejsou v současné době podporovány identifikátory klientů, ale pouze názvy. Pokud jste přidali klienta s názvem “My Client“ a identifikátor klienta `my-client`, zapište modifikátor jako `$client= 'My Client'` na rozdíl od `$client= my-client`.
+
+  :::
 
 Syntaxe je:
 
@@ -153,7 +161,11 @@ $client=~value1
 
 Názvy klientů obvykle obsahují mezery nebo jiné speciální znaky, proto byste měli název uzavřít do uvozovek. Podporovány jsou jednoduché i dvojité uvozovky ASCII. Zpětné lomítko (`\`) použijte k vynechání uvozovek (`"` a `'`), čárek (`,`) a svislých čar (`|`).
 
-**POZNÁMKA:** když vyloučíte klienta, **musíte** umístit znak `~` mimo uvozovky.
+:::note
+
+Když vyloučíte klienta, **musíte** umístit znak `~` mimo uvozovky.
+
+:::
 
 **Příklady:**
 
@@ -200,7 +212,7 @@ Problém tohoto přístupu spočívá v tom, že tímto způsobem odblokujete ta
 
 - `@@*$denyallow=com|net`: odblokovat vše kromě `*.com` a `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`. zablokuje `example.org` a `*.example.org`, ale nezablokuje `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: zablokuje `example.org` a `*.example.org`, ale ne `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
@@ -233,7 +245,11 @@ $dnstype=value2
 
 - `||example.org^$dnstype=~A|~CNAME`: povoluje pouze `A` a `CNAME` DNS dotazů pro `example.org` zablokuje zbytek.
 
-**POZNÁMKA:** před verzí **v0.108.0** by AdGuard Home k filtrování záznamů odpovědi použil typ požadavku, nikoli typ samotného záznamu odpovědi.  To způsobovalo problémy, protože to znamenalo, že nebylo možné napsat pravidla, která by v odpovědích na požadavky `A` a `AAAA` povolila určité záznamy `CNAME`. Ve verzi **v0.108.0** bylo toto chování změněno, takže nyní je to:
+:::note
+
+Před verzí **v0.108.0** používal AdGuard Home k filtrování záznamů o odpovědi typ požadavku, nikoli typ samotného záznamu o odpovědi.  To způsobovalo problémy, protože to znamenalo, že nebylo možné napsat pravidla, která by v odpovědích na požadavky `A` a `AAAA` povolila určité záznamy `CNAME`. Ve verzi **v0.108.0** bylo toto chování změněno, takže nyní je to:
+
+:::
 
 ```none
 ||canon.example.com^$dnstype=~CNAME
@@ -318,7 +334,11 @@ Aktuálně podporované typy RR s příklady:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` přidá `PTR` záznam pro reverzní DNS. Výsledkem reverzních DNS požadavků na `1.2.3.4` na server DNS bude `example.net`.
 
-  **POZNÁMKA:** IP ADRESA MUSÍ být v opačném pořadí. Viz [RFC 1035][rfc1035].
+  :::note
+
+  IP adresa MUSÍ být v obráceném pořadí. Viz [RFC 1035][rfc1035].
+
+  :::
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` přidá odezvu `A` s hodnotou `1.2.3.4`.
 
@@ -395,7 +415,11 @@ Pravidla s modifikátorem `badfilter` vypnou ostatní základní pravidla, na kt
 
 - `@@||example.org^$badfilter` zakáže `@@||example.org^`.
 
-  **POZNÁMKA:** modifikátor `badfilter` v současné době nefunguje s pravidly ve stylu `/etc/hosts`. `127.0.0.1 example.org$badfilter` nezakáže **** původní pravidlo `127.0.0.1 example.org`.
+  :::note
+
+  Modifikátor `badfilter` v současné době nefunguje s pravidly ve stylu `/etc/hosts`. `127.0.0.1 example.org$badfilter` nezakáže **** původní pravidlo `127.0.0.1 example.org`.
+
+  :::
 
 #### `ctag` {#ctag-modifier}
 

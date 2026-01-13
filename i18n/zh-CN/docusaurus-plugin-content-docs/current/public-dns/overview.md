@@ -9,15 +9,11 @@ AdGuard DNS 是款个免费的、注重隐私的DNS解析器，他可以提供�
 
 ## 免费的 AdGuard DNS 服务器
 
-AdGuard DNS 有三个公共服务器的类型。 ”默认“服务器是用于拦截广告、追踪器、恶意软件和钓鱼网站的。 ”家庭保护“也有同样的功能。他会屏蔽儿童不适合儿童的网站，并在提供”安全搜索“选项的浏览器中强制执行。 ”不过滤“提供了一个安全可靠的链接，但是不会过滤任何东西。 您可以在[我们的网站](https://adguard-dns.io/public-dns.html)上找到有关在任何设备上设置 AdGuard DNS 的详细说明。 每个服务器都支持不同的安全协议： DNSCrypt、DNS-over-HTTPS (DoH)、DNS-over-TLS (DoT)、和 DNS-over-QUIC (DoQ)。
+AdGuard DNS 有三个公共服务器的类型。 *Default* server is for blocking ads, trackers, malware and phishing websites. *Family protection* does the same, but also blocks websites with adult content and enforces *Safe search* option in browsers that provide it. *Non-filtering* provides a secure and reliable connection but doesn’t block anything. 您可以在[我们的网站](https://adguard-dns.io/public-dns.html)上找到有关在任何设备上设置 AdGuard DNS 的详细说明。 每个服务器都支持不同的安全协议： DNSCrypt、DNS-over-HTTPS (DoH)、DNS-over-TLS (DoT)、和 DNS-over-QUIC (DoQ)。
 
 ## AdGuard DNS 协议
 
 除了无加密的DNS(IPv4和IPv6)，AdGuard DNS支持各种加密协议，所以你可以选择一个最适合你的加密协议。
-
-### DNSCrypt（开源的加密协议）
-
-AdGuard DNS允许您使用特定的加密协议：DNSCrypt 由于他，所有DNS请求都被加密，这可以保护您免受可能的请求拦截和随后的窃听和更改。 但是与 DoH、 DoT 和 DoQ 协议相比，DNSCcrypt 被广泛认为是过时的，如果可以的话，我们建议使用这些协议。
 
 ### DNS-over-HTTPS (DoH) 和DNS-over-TLS (DoT)
 
@@ -31,11 +27,11 @@ AdGuard DNS 还提供用于 DNS 的 JSON 应用程序接口（API）。 可以�
 curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ```
 
-有关详细文档，请参阅 [ Google 关于 DNS-over-HTTPS 的 JSON API 指南](https://developers.google.com/speed/public-dns/docs/doh/json)。 在 AdGuard DNS 中，获取 JSON 格式的 DNS 响应的操作方式相同。
+For detailed documentation, refer to [Google’s guide to JSON API for DNS-over-HTTPS](https://developers.google.com/speed/public-dns/docs/doh/json). 在 AdGuard DNS 中，获取 JSON 格式的 DNS 响应的操作方式相同。
 
 :::note
 
-与 Google DNS 不同，AdGuard DNS 的响应 JSON 中不支持 `edns_client_subnet` 和 `Comment` 值。
+Unlike with Google DNS, AdGuard DNS doesn’t support `edns_client_subnet` and `Comment` values in response JSONs.
 
 :::
 
@@ -46,3 +42,13 @@ curl 'https://dns.adguard-dns.com/resolve?name=www.example.com'
 ### 请求数量限制
 
 DNS 请求数量限制是一种用于调节 DNS 服务器在特定时间周期内可以处理的流量的技术。 我们提供提高 AdGuard DNS 的「团队版」和「企业版」套餐默认限制的选项。 有关更多信息，请[阅读相关文章](/private-dns/server-and-settings/rate-limit.md)。
+
+### DNSCrypt
+
+AdGuard DNS allows you to use a specific encrypted protocol — DNSCrypt. Thanks to it, all DNS requests are being encrypted, which protects you from possible request interception and subsequent eavesdropping and/or alteration.
+
+:::note
+
+This is an obsolete protocol with restricted support.
+
+:::

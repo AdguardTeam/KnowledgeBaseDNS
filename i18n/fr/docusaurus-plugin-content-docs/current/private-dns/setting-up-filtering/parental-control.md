@@ -1,11 +1,11 @@
 ---
 title: Contrôle Parental
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Qu'est-ce que c'est
 
-Le contrôle parental est un ensemble de paramètres qui vous donne la flexibilité de personnaliser l'accès à certains sites Web avec un contenu "sensible".  Vous pouvez utiliser cette fonctionnalité pour restreindre l'accès de vos enfants aux sites pour adultes, personnaliser les requêtes de recherche, bloquer l'utilisation de services populaires, et plus encore.
+Le contrôle parental est un ensemble de paramètres qui vous donne la flexibilité de personnaliser l'accès à certains sites Web avec un contenu "sensible". Vous pouvez utiliser cette fonctionnalité pour restreindre l'accès de vos enfants aux sites pour adultes, personnaliser les requêtes de recherche, bloquer l'utilisation de services populaires, et plus encore.
 
 ## Comment le mettre en place
 

@@ -26,8 +26,8 @@ Configura tu consola de juegos para usar un servidor DNS público de AdGuard o c
 5. Set _Automatic_ to _Manual_.
 6. Select _Primary DNS_. Hold down the left arrow (B button) to delete the existing DNS.
 7. In the _Primary DNS_ field, enter one of the following DNS server addresses:
-    - `94.140.14.49`
-    - `94.140.14.59`
+   - `94.140.14.49`
+   - `94.140.14.59`
 8. Guarda la configuración.
 
 Sería preferible usar IP vinculada (o IP dedicada si tienes una suscripción de Team):

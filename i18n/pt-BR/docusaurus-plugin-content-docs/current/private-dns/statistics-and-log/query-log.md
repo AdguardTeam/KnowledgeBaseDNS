@@ -11,7 +11,7 @@ Ele permite que você veja todas as solicitações feitas pelos seus dispositivo
 
 ## Como usar
 
-Veja o que você pode ver e o que você pode fazer no _Registro de consultas_.
+Here’s what you can see and what you can do in the _Query log_.
 
 ### Informações detalhadas sobre as solicitações
 

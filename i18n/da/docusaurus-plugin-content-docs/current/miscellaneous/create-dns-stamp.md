@@ -56,7 +56,7 @@ Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DN
 
 ### Indhentning af certifikat-hash
 
-For at udfylde **hash'ene for serverens certifikatfelt** kan flg. kommando bruges, hvor man erstatter `<IP_ADDRESS>`, `<PORT>` og `<SERVER_NAME>` med de korresponderende værdier for sin DNS-server:
+For at udfylde **hash'ene for serverens certifikatfelt** kan man bruge flg. kommando, hvor `<IP_ADDRESS>`, `<PORT>` og `<SERVER_NAME>` erstattes med de korresponderende værdier for ens DNS-server:
 
 ```bash
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servernavn <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256

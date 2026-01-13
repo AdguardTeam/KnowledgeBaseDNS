@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Genişletilebilirlik.** Geçtiğimiz on yılda, Reklam engelleme stili söz dizimi büyük ölçüde gelişti ve bunu daha da genişletmemek ve ağ düzeyindeki engelleyiciler için ek özellikler sunmamak için hiçbir neden göremiyoruz.
 
-`/etc/hosts` tarzı bir blok listesi veya birden fazla filtreleme listesi (türüne bakılmaksızın) tutuyorsanız, blok listesi derleme için bir araç sunuyoruz. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Temel örnekler {#basic-examples}
 
@@ -79,7 +79,7 @@ değiştiriciler = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`: herhangi bir alt alan dahil olmak üzere bir ana makine adının başlangıcıyla eşleşir. Örneğin, `|example.org`, `example.org` ve `test.example.org` ile eşleşir ancak `testexample.org` ile eşleşmez.
 
-- `^`: ayırıcı karakter. Tarayıcı reklam engellemesinden farklı olarak, ana makine adında ayrılacak hiçbir şey yoktur, dolayısıyla bu karakterin tek amacı ana makine adının sonunu işaretlemektir.
+- `^`: ayırıcı karakter. Unlike browser ad blocking, there’s nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
 - `|`: ana makine adının başına veya sonuna bir işaretçi. Değer, maskedeki karakter yerleşimine bağlıdır. Örneğin, `ample.org|` kuralı `example.org` alan adına karşılık gelir ancak `example.org.com` alan adına karşılık gelmez. `|example`, `example.org` alan adına karşılık gelir ancak `test.example` alan adına karşılık gelmez.
 
@@ -127,33 +127,45 @@ Değiştiriciler ekleyerek bir kuralın davranışını değiştirebilirsiniz. D
 
   `|example.org^` eşleşen kalıptır. `$`, kuralın geri kalanının değiştirici olduğunu belirten sınırlayıcıdır. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` değiştiriciler arasındaki sınırlayıcıdır. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
-**NOT:** Bir kural bu belgede listelenmeyen bir değiştirici içeriyorsa, kuralın tamamı **yok sayılmalıdır**. Bu şekilde, insanlar EasyList veya EasyPrivacy gibi değiştirilmemiş tarayıcı reklam engelleyicilerinin filtre listelerini kullanmaya çalıştıklarında yanlış pozitiflerden kaçınıyoruz.
+:::note Not
+
+If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers’ filter lists like EasyList or EasyPrivacy.
+
+:::
 
 #### `i̇stemci` {#client-modifier}
 
-`client` değiştiricisi, bu kuralın uygulanacağı istemcilerin belirtilmesine izin verir. Bir istemciyi tanımlamanın iki ana yolu vardır:
+The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
 - IP adreslerine veya CIDR öneklerine göre. Bu yol her türlü istemciler için çalışır.
 
 - Adlarına göre. Bu yol, yalnızca elle eklediğiniz kalıcı istemciler (AdGuard Home'da) ve cihazlar (Özel AdGuard DNS'de) için çalışır.
 
-  **NOT:** AdGuard Home'da şu anda ClientID'ler desteklenmemektedir, yalnızca adlar desteklenmektedir. Eğer ”İstemcim” adında ve ClientID `my-client` olan bir istemci eklediyseniz, değiştiricinizi `$client=my-client` yerine `$client='İstemcim'` olarak yazın.
+  :::note Not
 
-Söz dizimi şöyledir:
+  In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+
+  :::
+
+The syntax is:
 
 ```none
 $client=value1|value2|...
 ```
 
-Değerden önce bir `~` karakteri ekleyerek de istemcileri hariç tutabilirsiniz. Bu durumda kural, bu istemcinin DNS isteklerine uygulanmaz.
+You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client’s DNS requests.
 
 ```none
 $client=~value1
 ```
 
-İstemci adları genellikle boşluklar veya diğer özel karakterler içerir, bu nedenle adı tırnak içine almalısınız. Hem tek hem de çift ASCII tırnak işaretleri desteklenir. Tırnak işaretlerinden (`"` ve `'`), virgüllerden (`,`) ve dikey çizgilerden (`|`) kaçınmak için ters eğik çizgiyi (`\`) kullanın.
+Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOT:** Bir istemciyi hariç tutarken, tırnakların dışına `~` işareti **koymalısınız**.
+:::note Not
+
+Bir istemciyi hariç tutarken, tırnakların dışına `~` işareti **koymalısınız**.
+
+:::
 
 **Örnekler:**
 
@@ -169,15 +181,15 @@ $client=~value1
 
 #### `denyallow` {#denyallow-modifier}
 
-Alan adlarını engelleme kuralından hariç tutmak için `denyallow` değiştiricisini kullanabilirsiniz. Bir kurala birden fazla alan adı eklemek için ayırıcı olarak `|` karakterini kullanın.
+You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
 
-Söz dizimi şöyledir:
+The syntax is:
 
 ```none
 $denyallow=domain1|domain2|...
 ```
 
-Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında gereksiz istisna kuralları oluşturmaktan kaçınmaya olanak tanır. Birkaç üst seviye alan adları dışında her şeyi engellemek isteyebilirsiniz. Standart yaklaşımı, yani aşağıdaki gibi kuralları kullanabilirsiniz:
+This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
 
 ```none
 ! Her şeyi engelleyin.
@@ -188,7 +200,7 @@ Bu değiştirici, engelleme kuralımız çok fazla alan adını kapsadığında 
 @@||net^
 ```
 
-Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `google-analytics.com`) bulunan izleme alan adlarının engelini kaldırmanızdır. Bunu `denyallow` ile nasıl çözeceğiniz aşağıda açıklanmıştır:
+The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here’s how to solve this with `denyallow`:
 
 ```none
 *$denyallow=com|net
@@ -200,28 +212,28 @@ Bu yaklaşımla ilgili sorun, bu şekilde bu üst seviye alan adlarında (ör. `
 
 - `@@*$denyallow=com|net`: `*.com` ve `*.net` dışındaki her şeyin engelini kaldırın.
 
-- `||example.org^$denyallow=sub.example.org`. `example.org` ve `*.example.org` alan adlarını engelleyin ancak `sub.example.org` alan adını engellemeyin.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
-`dnstype` değiştiricisi, bu kuralın tetikleneceği DNS isteğinin veya yanıt türünün belirtilmesine izin verir.
+The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
 
-Söz dizimi şöyledir:
+The syntax is:
 
 ```none
 $dnstype=value1|value2|...
 $dnstype=~value1|~value2|~...
 ```
 
-Türlerin adları büyük/küçük harfe duyarlı değildir, ancak gerçek DNS kaynak kaydı (RR) türleri kümesine göre doğrulanır.
+The names of the types are case-insensitive, but are validated against a set of actual DNS resource record (RR) types.
 
-İstisna kurallarını dahil etme kurallarıyla birleştirmeyin. Bu:
+Do not combine exclusion rules with inclusion ones. This:
 
 ```none
 $dnstype=~value1|value2
 ```
 
-şuna eş değerdir:
+is equivalent to this:
 
 ```none
 $dnstype=value2
@@ -233,13 +245,17 @@ $dnstype=value2
 
 - `||example.org^$dnstype=~A|~CNAME`: `example.org` için yalnızca `A` ve `CNAME` DNS sorgularına izin verin ve gerisini engelleyin.
 
-**NOT:** **v0.108.0 sürümünden önce,** AdGuard Home yanıt kayıtlarını filtrelemek için yanıt kaydının türünün aksine istek türünü kullanırdı.  Bu, `A` ve `AAAA` isteğindeki yanıtlarda belirli `CNAME` kaydına izin verecek kurallar yazamayacağınız anlamına geldiğinden sorunlara neden oldu. Bu özellik **v0.108.0** sürümünde değiştirildi, yani şimdi:
+:::note Not
+
+Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+
+:::
 
 ```none
 ||canon.example.com^$dnstype=~CNAME
 ```
 
-aşağıdaki yanıtın filtrelenmesini önlemenizi sağlar:
+allows you to avoid filtering of the following response:
 
 ```none
 ANSWERS:
@@ -253,13 +269,13 @@ ANSWERS:
 
 #### `dnsrewrite` {#dnsrewrite-modifier}
 
-`dnsrewrite` yanıt değiştiricisi, eşleşen ana bilgisayarlar için DNS isteğine verilen yanıtın içeriğinin değiştirilmesine olanak tanır. AdGuard Home'daki bu değiştiricinin tüm kurallarda çalıştığını, ancak Özel AdGuard DNS'de ise yalnızca özel kurallarda çalıştığını unutmayın.
+The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
-`dnsrewrite` kuralına uyan bir ana makineye yönelik tüm isteklere verilen yanıtlar değiştirilecektir. Değiştirme yanıtının yanıt bölümü yalnızca isteğin sorgu türüyle eşleşen RR'leri ve muhtemelen CNAME RR'leri içerir. Bu, ana makinenin `dnsrewrite` kuralıyla eşleşmesi durumunda bazı isteklere verilen yanıtların boş (`NODATA`) olabileceği anlamına gelir.
+Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. Değiştirme yanıtının yanıt bölümü yalnızca isteğin sorgu türüyle eşleşen RR'leri ve muhtemelen CNAME RR'leri içerir. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
-Kısa yol söz dizimi şöyledir:
+The shorthand syntax is:
 
 ```none
 $dnsrewrite=1.2.3.4
@@ -268,9 +284,9 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-Anahtar kelimelerin TÜMÜ büyük harfle yazılmalıdır (örn. `NOERROR`). Anahtar kelime yeniden yazımları diğerine göre önceliklidir ve uygun bir yanıt kodu ile boş bir yanıtla sonuçlanacaktır.
+The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
 
-Tam söz dizimi `RCODE;RRTYPE;VALUE` şeklindedir:
+The full syntax is of the form `RCODE;RRTYPE;VALUE`:
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4
@@ -279,9 +295,9 @@ $dnsrewrite=NOERROR;CNAME;example.net
 $dnsrewrite=REFUSED;;
 ```
 
-`NOERROR` yanıt koduna sahip `$dnsrewrite` değiştiricisi ayrıca boş `RRTYPE` ve `VALUE` alanlarına sahip olabilir.
+The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
 
-`CNAME` özeldir çünkü AdGuard Home ana makineyi çözer ve bilgisini yanıta ekler. Yani, `example.net` alan adının IP'si `1.2.3.4` ise ve kullanıcının filtre kurallarında bu varsa:
+`CNAME` özeldir çünkü AdGuard Home ana makineyi çözer ve bilgisini yanıta ekler. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
 
 ```none
 ||example.com^$dnsrewrite=example.net
@@ -289,7 +305,7 @@ $dnsrewrite=REFUSED;;
 ||example.com^$dnsrewrite=NOERROR;CNAME;example.net
 ```
 
-o zaman yanıt şöyle bir şey olacaktır:
+then the response will be something like:
 
 ```sh
 nslookup example.com my.adguard.local
@@ -305,20 +321,24 @@ Ad: example.net
 Adres: 1.2.3.4
 ```
 
-Ardından, `CNAME` yeniden yazılır. Bundan sonra, diğer tüm kayıtların değerleri tek bir yanıt olarak toplanır, yani bu:
+Next, the `CNAME` rewrite. Bundan sonra, diğer tüm kayıtların değerleri tek bir yanıt olarak toplanır, yani bu:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-iki `A` kaydıyla bir yanıtla sonuçlanır.
+will result in a response with two `A` records.
 
-Örneklerle birlikte şu anda desteklenen RR türleri:
+Currently supported RR types with examples:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.`, ters DNS için bir `PTR` kaydı ekler. DNS sunucusuna `1.2.3.4` için yapılan ters DNS istekleri `example.net` alan adı olarak sonuçlanır.
 
-  **NOT:** IP ters sırada OLMALIDIR. See [RFC 1035][rfc1035].
+  :::note Not
+
+  The IP MUST be in reverse order. See [RFC 1035][rfc1035].
+
+  :::
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4`, `1.2.3.4` değerine sahip bir `A` kaydı ekler.
 
@@ -349,7 +369,7 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` `example.org` hariç tüm `AAAA` istekleri için boş `NOERROR` yanıtlarıyla yanıt verir.
 
-İstisna kuralları bir veya tüm kuralların engelini kaldırır:
+Exception rules unblock one or all rules:
 
 - `@@||example.com^$dnsrewrite` tüm DNS yeniden yazma kurallarının engelini kaldırır.
 
@@ -357,13 +377,13 @@ iki `A` kaydıyla bir yanıtla sonuçlanır.
 
 :::info
 
-AdGuard DNS ve AdGuard Home'a dâhil olan bir engel listesi tutuyorsanız (yani [HostlistsRegistry'ye][hostlistsregistry] dâhil edildiyse), `$dnsrewrite` kuralları otomatik olarak filtrelenecektir. Bu kurallar engel listeniz için gerekliyse, lütfen [HostlistsRegistry][hostlistsregistry] deposunda yeni bir sorun açarak izin isteyin.
+If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
 
 :::
 
 #### `important` {#important-modifier}
 
-Bir kurala uygulanan `important` değiştirici, değiştirici olmadan diğer herhangi bir kurala göre önceliğini artırır. Hatta temel istisna kuralları üzerinden bile geçerlidir.
+The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
 **Örnekler:**
 
@@ -395,7 +415,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 - `@@|example.org^$badfilter`, `@@|example.org^` alan adını devre dışı bırakır.
 
-  **NOT:** `badfilter` değiştiricisi şu anda `/etc/hosts` tarzı kurallarla çalışmıyor. `127.0.0.1 example.org$badfilter` orijinal `127.0.0.1 example.org` kuralını devre dışı **bırakmaz**.
+  :::note Not
+
+  The `badfilter` modifier currently doesn’t work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+
+  :::
 
 #### `ctag` {#ctag-modifier}
 
@@ -403,19 +427,19 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
-Söz dizimi şöyledir:
+The syntax is:
 
 ```none
 $ctag=value1|value2|...
 ```
 
-İstemcinin etiketlerinden biri `ctag` değerleriyle eşleşiyorsa, bu kural istemci için geçerlidir. İstisna söz dizimi şöyledir:
+If one of client’s tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
+If one of client’s tags matches the exclusion `ctag` values, this rule doesn’t apply to the client.
 
 **Örnekler:**
 
@@ -423,7 +447,7 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 - `||example.org^$ctag=~device_phone`: `example.org` alan adını `device_phone` olarak etiketlenenler hariç tüm istemciler için engelleyin.
 
-İzin verilen etiketlerin listesi:
+The list of allowed tags:
 
 - Cihaz türüne göre:
 
@@ -457,13 +481,13 @@ If one of client's tags matches the exclusion `ctag` values, this rule doesn't a
 
 ## `/etc/hosts` biçimi söz dizimi {#etc-hosts-syntax}
 
-Her ana makine için aşağıdaki bilgileri içeren tek bir satır bulunmalıdır:
+For each host a single line should be present with the following information:
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. `#` karakterinden satır sonuna kadar olan metin bir yorumdur ve yok sayılır.
+Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
 
 Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
@@ -476,11 +500,11 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # bu da bir yorumdur
 ```
 
-AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. Özel AdGuard DNS'de bu adresler basitçe engellenir.
+AdGuard Home'da IP adresleri, bu alan adları için DNS sorgularına yanıt vermek için kullanılır. In Private AdGuard DNS, these addresses are simply blocked.
 
 ## Yalnızca alan adları söz dizimi {#domains-only-syntax}
 
-Her satırda bir ad olacak şekilde basit bir alan adları listesi.
+A simple list of domain names, one name per line.
 
 **Örnek:**
 
@@ -501,7 +525,7 @@ Neler yapabiliyor:
 
 1. Birden fazla kaynaktan tek bir engel listesi derleyin.
 
-2. İhtiyacınız olmayan kuralları hariç tutun.
+2. Exclude the rules you don’t need.
 
 3. Ortaya çıkan listeyi temizleyin: kopyalarını çıkarın, geçersiz kuralları kaldırın ve listeyi sıkıştırın.
 
@@ -509,8 +533,6 @@ Neler yapabiliyor:
 
 
 <!-- external links -->
-[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier

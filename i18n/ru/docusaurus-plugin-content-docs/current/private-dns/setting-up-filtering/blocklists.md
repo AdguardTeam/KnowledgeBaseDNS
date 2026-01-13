@@ -1,6 +1,6 @@
 ---
 title: Cписки блокировки
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## Что такое списки блокировки

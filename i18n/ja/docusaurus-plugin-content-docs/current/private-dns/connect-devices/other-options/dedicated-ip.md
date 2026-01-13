@@ -7,13 +7,13 @@ sidebar_position: 2
 
 「専用IPv4アドレス」は、チームおよびエンタープライズプランを持つユーザーに提供される機能であり、「リンクされたIP」は全ユーザーが利用できる機能です。
 
-チームまたはエンタープライズプランをお持ちの場合、お客様は複数の専用IPアドレスを与えられます。 これらのアドレスへのリクエストは「あなたのもの」として扱われ、サーバーレベルの設定とフィルタリングルールがそれに応じて適用されます。 専用 IP アドレスはより安全で、管理もより簡単です。 リンクされたIPの場合、デバイスのIPアドレスが変わるたび（例えばデバイス再起動でIPは変更されます。）に手動で再接続するか、特別なプログラムを使う必要があります。
+If you have a Team or Enterprise subscription, you’ll receive several personal dedicated IP addresses. Requests to these addresses are treated as yours, and server-level configurations and filtering rules are applied accordingly. 専用 IP アドレスはより安全で、管理もより簡単です。 With linked IPs, you have to manually reconnect or use a special program every time the device’s IP address changes, which happens after every reboot.
 
 ## 専用IPが必要な理由は？
 
 残念ながら、接続デバイスの技術仕様によっては、暗号化されたプライベートAdGuard DNSサーバーを設定できない場合があります。 この場合、標準の暗号化されていないDNSを使用する必要があります。 AdGuard DNSを設定する方法は2つあります: [リンクされたIPを使用する](/private-dns/connect-devices/other-options/linked-ip.md)か、専用IPを使用するという2方法です。
 
-専用IPは一般的に、より安定したオプションです。 リンクされたIPにはいくつかの制限があります。たとえば、居住用アドレス以外は許可されておラズ、プロバイダーはIPを変更する可能性があり、その際IPアドレスを再リンクする必要が出てきます。 専用IPなら、あなた専用のIPアドレスが提供され、すべてのリクエストはあなたのデバイスのものとしてカウントされます。
+専用IPは一般的に、より安定したオプションです。 Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you’ll need to relink the IP address. 専用IPなら、あなた専用のIPアドレスが提供され、すべてのリクエストはあなたのデバイスのものとしてカウントされます。
 
 デメリットは、パブリックDNSリゾルバで常に起こるように、無関係なトラフィック（スキャナやボット）を受信し始める可能性があることです。 その場合、[アクセス設定](/private-dns/server-and-settings/access.md)を使用してボットトラフィックを制限する必要があったりします。
 
@@ -28,5 +28,5 @@ sidebar_position: 2
 5. 使用したいサーバーを選択します。
 6. 専用IPv4アドレスをバインドするには、「_割り当てる_」をクリックします。
 7. 専用IPv6アドレスを使用したい場合は、「_コピー_」をクリックします。
-    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. コピーした専用アドレスをデバイス設定に貼り付けます。

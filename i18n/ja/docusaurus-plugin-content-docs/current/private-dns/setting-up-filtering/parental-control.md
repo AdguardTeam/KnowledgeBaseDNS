@@ -1,15 +1,15 @@
 ---
 title: ペアレンタルコントロール
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## ペアレンタルコントロールとは
 
-ペアレンタルコントロールは、「センシティブ」なコンテンツを含むウェブサイトへのアクセスを制限・カスタマイズする柔軟性を与える機能です。  この機能を使用すると、子供が成人向けサイトへアクセスできないように制限したり、検索クエリをカスタマイズしたり、人気のサービスの使用をブロックしたりできます。
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## 設定方法
 
-ペアレンタルコントロール機能を含め、サーバー上で機能をすべて柔軟に設定できます。 [該当する記事](private-dns/server-and-settings/server-and-settings.md)では、AdGuard DNS における「サーバー」が何であるか、異なる設定セットを持つ異なるサーバーを作成する方法を確認するができます。
+ペアレンタルコントロール機能を含め、サーバー上で機能をすべて柔軟に設定できます。 [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 次に、選択したサーバーの設定に移動し、必要な構成を有効にします。
 
@@ -33,7 +33,7 @@ sidebar_position: 4
 
 ### ブロックするサービスやWebサイト
 
-AdGuard DNS は、人気のあるサービスへのアクセスをワンクリックでブロックできます。 たとえば、AdGuard DNSに接続されているデバイスで、InstagramやYouTubeへのアクセスを防ぎたい場合に、この設定を使えます。
+AdGuard DNS は、人気のあるサービスへのアクセスをワンクリックでブロックできます。 It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

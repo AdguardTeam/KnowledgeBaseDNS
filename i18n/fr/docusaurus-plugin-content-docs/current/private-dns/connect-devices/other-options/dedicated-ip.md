@@ -11,7 +11,7 @@ Si vous avez un abonnement Équipe ou Entreprise, vous recevrez plusieurs adress
 
 ## Pourquoi avez-vous besoin d'une IP dédiée ?
 
-Unfortunately, the technical specifications of the connected device may not always allow you to set up an encrypted Private AdGuard DNS server. Dans ce cas, vous devrez utiliser un DNS standard non chiffré. Il existe deux manières de configurer AdGuard DNS : [en utilisant des IPs liées](/private-dns/connect-devices/other-options/linked-ip.md) et en utilisant des IPs dédiées.
+Malheureusement, les spécifications techniques de l'appareil connecté ne permettent pas toujours de configurer un serveur DNS privé AdGuard chiffré. Dans ce cas, vous devrez utiliser un DNS standard non chiffré. Il existe deux manières de configurer AdGuard DNS : [en utilisant des IPs liées](/private-dns/connect-devices/other-options/linked-ip.md) et en utilisant des IPs dédiées.
 
 Les IPs dédiées sont généralement une option plus stable. Les IPs liées ont certaines limitations, comme le fait que seules les adresses résidentielles sont autorisées, votre fournisseur peut changer l'adresse IP, et vous devrez relier à nouveau l'adresse IP. Avec les IPs dédiées, vous obtenez une adresse IP qui vous appartient exclusivement, et toutes les requêtes seront comptées pour votre appareil.
 
@@ -28,5 +28,5 @@ Les instructions ci-dessous expliquent comment connecter une IP dédiée à l'ap
 5. Sélectionnez le serveur que vous souhaitez utiliser.
 6. Pour lier une adresse IPv4 dédiée, cliquez sur _Assigner_.
 7. Si vous souhaitez utiliser une adresse IPv6 dédiée, cliquez sur _Copier_.
-    ![Copier l'adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
+   ![Copier l'adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copiez et collez l'adresse dédiée sélectionnée dans les configurations de l'appareil.

@@ -26,7 +26,7 @@ Le cache DNS contient ce qu'on appelle les [enregistrements de ressource (RR)](h
 
 ## Quand peut-il s'avérer nécessaire de vider le cache
 
-**Vous avez changé votre fournisseur DNS pour AdGuard DNS.** Si l'utilisateur a modifié son DNS, l'affichage du résultat peut prendre un certain temps à cause du cache.
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **Vous recevez régulièrement une erreur 404.** Par exemple, le site web a été transféré sur un autre serveur et son adresse IP a changé. Pour que le navigateur ouvre le site web à partir de la nouvelle adresse IP, vous devez supprimer l'adresse IP mise en cache du cache DNS.
 
@@ -50,7 +50,7 @@ By doing that, you will lose connections to Wi-Fi routers and other specific net
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
+There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### Clear DNS cache via Chrome
 
@@ -63,11 +63,11 @@ Google Chrome, often the default browser on Android, has its own DNS cache. To f
 
 #### Modify the Wi-Fi network to Static
 
-To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. Go to *Settings → Wi-Fi* and choose the network you're connected to
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. Look for IP settings and select *Static*
-1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
+1. Fill in the required fields. You can get the necessary information from your network administrator or from your router’s configuration page
 1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
 
 #### Reset network settings
@@ -98,7 +98,7 @@ To flush DNS cache on your Windows device, do the following:
 
 Open the Command Prompt as an administrator. You can find it in the Start Menu by typing *command prompt* or *cmd*. Then type `ipconfig /flushdns` and press Enter.
 
-You will see the line *Successfully flushed the DNS Resolver Cache*. Done!
+You will see the line *Successfully flushed the DNS Resolver Cache*. C'est fait !
 
 ### Linux
 
@@ -106,7 +106,7 @@ Linux does not have OS-level DNS caching unless a caching service such as system
 
 For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

@@ -26,7 +26,7 @@ The DNS cache contains so-called [resource records (RRs)](https://en.wikipedia.o
 
 ## 캐시를 지워야 하는 경우
 
-**You've changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
+**You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
 **You regularly get a 404 error.** For example, the website has been transferred to another server, and its IP address has changed. To make the browser open the website from the new IP address, you need to remove the cached IP from the DNS cache.
 
@@ -50,7 +50,7 @@ By doing that, you will lose connections to Wi-Fi routers and other specific net
 
 ### Android
 
-There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you're using and the device manufacturer.
+There are different ways to clear the DNS cache on your Android device. The exact steps may vary depending on the version of Android you’re using and the device manufacturer.
 
 #### Clear DNS cache via Chrome
 
@@ -63,11 +63,11 @@ Google Chrome, often the default browser on Android, has its own DNS cache. To f
 
 #### Modify the Wi-Fi network to Static
 
-To clear your Android device's DNS cache by changing Wi-Fi network settings to Static, follow these steps:
+To clear your Android device’s DNS cache by changing Wi-Fi network settings to Static, follow these steps:
 
-1. Go to *Settings → Wi-Fi* and choose the network you're connected to
+1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. Look for IP settings and select *Static*
-1. Fill in the required fields. You can get the necessary information from your network administrator or from your router's configuration page
+1. Fill in the required fields. You can get the necessary information from your network administrator or from your router’s configuration page
 1. After entering the required information, reconnect to your Wi-Fi network. This action will force your device to update its IP and DNS settings and clear the DNS cache
 
 #### Reset network settings
@@ -106,7 +106,7 @@ Linux does not have OS-level DNS caching unless a caching service such as system
 
 For each distribution you need to start a terminal window. Press Ctrl+Alt+T on your keyboard and use the corresponding command to clear the DNS cache for the service your Linux system is running.
 
-To find out which DNS resolver you're using, command `sudo lsof -i :53 -S`.
+To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 #### systemd-resolved
 

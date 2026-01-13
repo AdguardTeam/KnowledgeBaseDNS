@@ -7,7 +7,7 @@ Mit der Veröffentlichung von AdGuard DNS v2.10 ist AdGuard der erste öffentlic
 
 ## Was sind Structured DNS Errors?
 
-Wenn eine Anfrage an eine Werbe- oder Tracking-Domain gesperrt wird, sieht man möglicherweise leere Stellen auf einer Website oder merkt nicht, dass eine DNS-Filterung stattgefunden hat. Wenn jedoch eine gesamte Website auf DNS-Ebene gesperrt ist, kann die Website nicht mehr aufgerufen werden. Beim Versuch, auf eine gesperrte Website zuzugreifen, kann es vorkommen, dass der Browser die allgemeine Fehlermeldung „Diese Website ist nicht erreichbarn“ anzeigt.
+Wenn eine Anfrage an eine Werbe- oder Tracking-Domain gesperrt wird, sieht man möglicherweise leere Stellen auf einer Website oder merkt nicht, dass eine DNS-Filterung stattgefunden hat. Wenn jedoch eine gesamte Website auf DNS-Ebene gesperrt ist, kann die Website nicht mehr aufgerufen werden. Beim Versuch, auf eine gesperrte Website zuzugreifen, kann es vorkommen, dass der Browser die allgemeine Fehlermeldung „Diese Website ist nicht erreichbar“ anzeigt.
 
 ![Fehler „Diese Website ist nicht erreichbar“](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 

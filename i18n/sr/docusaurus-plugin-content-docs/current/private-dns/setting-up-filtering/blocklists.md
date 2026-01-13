@@ -1,6 +1,6 @@
 ---
 title: Blocklists
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## What blocklists are
@@ -57,7 +57,7 @@ To submit a request:
 3. Click _Blocklist request_ and fill out the form.
 4. After filling out the form, click _Submit new issue_.
 
-If your filter's blocking rules do not duplicate the existing lists, it will be added to the repository.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## User rules
 

@@ -1,15 +1,15 @@
 ---
 title: Kindersicherung
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Was ist das
 
-Kindersicherung ist eine Reihe von Einstellungen, die Ihnen die Flexibilität bieten, den Zugriff auf bestimmte Websites mit „sensiblen“ Inhalt anzupassen.  Diese Funktion können Sie verwenden, um den Zugriff Ihrer Kinder auf Websites mit Inhalten für Erwachsene einzuschränken, Suchabfragen anzupassen, die Nutzung beliebter Dienste zu blockieren und mehr.
+Kindersicherung ist eine Reihe von Einstellungen, die Ihnen die Flexibilität bieten, den Zugriff auf bestimmte Websites mit sensiblen Inhalt anzupassen. Diese Funktion können Sie verwenden, um den Zugriff Ihrer Kinder auf Websites mit Inhalten für Erwachsene einzuschränken, Suchabfragen anzupassen, die Nutzung beliebter Dienste zu blockieren und mehr.
 
 ## Kindersicherung einrichten
 
-Sie können alle Funktionen flexibel auf Ihren Servern konfigurieren, einschließlich der Kindersicherungsfunktion. [Im entsprechenden Artikel](private-dns/server-and-settings/server-and-settings.md) können Sie sich damit vertraut machen, was ein „Server“ in AdGuard DNS ist, und erfahren, wie Sie verschiedene Server mit unterschiedlichen Einstellungen erstellen.
+Sie können alle Funktionen flexibel auf Ihren Servern konfigurieren, einschließlich der Kindersicherungsfunktion. [Im entsprechenden Artikel](private-dns/server-and-settings/server-and-settings.md) können Sie sich damit vertraut machen, was ein Server in AdGuard DNS ist, und erfahren, wie Sie verschiedene Server mit unterschiedlichen Einstellungen erstellen.
 
 Gehen Sie anschließend zu den Einstellungen des ausgewählten Servers und aktivieren Sie die erforderlichen Konfigurationen.
 

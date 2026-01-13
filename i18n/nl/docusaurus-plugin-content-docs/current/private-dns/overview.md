@@ -23,7 +23,7 @@ Private AdGuard DNS biedt alle voordelen van een openbare AdGuard DNS-server, in
 
 Today, you can connect anything to the Internet: TVs, refrigerators, smart bulbs, or speakers. But along with the undeniable conveniences you get trackers and ads. A simple browser-based ad blocker will not protect you in this case, but AdGuard DNS, which you can set up to filter traffic, block content and trackers, has a system-wide effect.
 
-Ooit omvatte de AdGuard-productlijn alleen [openbare AdGuard DNS](../public-dns/overview.md) en [AdGuard Startpagina](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That's where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
+Ooit omvatte de AdGuard-productlijn alleen [openbare AdGuard DNS](../public-dns/overview.md) en [AdGuard Startpagina](https://github.com/AdguardTeam/AdGuardHome). These solutions work fine for some users, but for others, the public AdGuard DNS lacks the flexibility of configuration, while the AdGuard Home lacks simplicity. That’s where private AdGuard DNS comes into play. It has the best of both worlds: it offers customizability, control and information — all through a simple easy-to-use dashboard.
 
 ### Het verschil tussen publieke en private AdGuard DNS
 
@@ -199,7 +199,7 @@ AdGuard DNS is very flexible and can be set up on various devices including tabl
 
 ### Server en instellingen
 
-This section explains what a "server" is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
+This section explains what a server is in AdGuard DNS and what settings are available. The settings allow you to customise how AdGuard DNS responds to blocked domains and manage access to your DNS server.
 
 [Server en instellingen](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -214,3 +214,9 @@ In this section we describe a number of settings that allow you to fine-tune the
 Statistics and Query log provide insight into the activity of your devices. The *Statistics* tab allows you to view a summary of DNS requests made by devices connected to your Private AdGuard DNS. In the Query log, you can view information about each request and also sort requests by status, type, company, device, time, and country.
 
 [Statistieken en zoeklogboek](/private-dns/statistics-and-log/statistics.md)
+
+### Aangepaste domeinen
+
+AdGuard DNS Zakelijk- en Team-abonnees kunnen hun eigen domeinen (zoals `dns.example.com`) gebruiken in plaats van de standaard `d.adguard-dns.com`. Deze instelling zorgt voor een naadloze integratie met het beveiligingsbeleid van bedrijven, terwijl de volledige advertentieblokkering en privacyfuncties van AdGuard DNS behouden blijven.
+
+[Aangepaste domeinen](/private-dns/server-and-settings/custom-domains.md)

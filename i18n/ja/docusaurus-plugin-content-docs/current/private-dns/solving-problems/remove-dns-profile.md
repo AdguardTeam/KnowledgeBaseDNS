@@ -3,7 +3,7 @@ title: DNSプロファイルの削除方法
 sidebar_position: 3
 ---
 
-DNSプロファイルが設定されているiPhone、iPad、MacをDNSサーバーから切断する必要がある場合は、そのDNSプロファイルを削除する必要があります。 その方法は以下のとおりです。
+DNSプロファイルが設定されているiPhone、iPad、MacをDNSサーバーから切断する必要がある場合は、そのDNSプロファイルを削除する必要があります。 Here’s how to do it.
 
 Macの場合：
 

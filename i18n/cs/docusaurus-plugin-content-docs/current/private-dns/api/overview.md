@@ -14,7 +14,33 @@ AdGuard DNS poskytuje rozhraní REST API, které můžete použít k integraci s
 
 ## Ověřování
 
-### Generování přístupového tokenu
+### API keys
+
+Pokud jsou API klíče zahrnuty v hlavičce požadavku, lze je použít k autorizaci požadavků na uživatelské API.
+
+#### Příklad požadavku
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generování klíčů API
+
+Chcete-li vydat nebo odvolat API klíče, přejděte do [příslušné podsekce](https://adguard-dns.io/en/dashboard/user-settings/api-keys) v části *Předvolby uživatele*.
+
+### Přístupové tokeny
+
+Pokud jsou tokeny zahrnuty v hlavičce požadavku, lze je použít k autorizaci požadavků na uživatelské API.
+
+#### Příklad požadavku
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### Příklad odpovědi
 
 Proveďte požadavek POST na následující URL s danými parametry a vygenerujte `access_token`:
 
@@ -28,11 +54,11 @@ Proveďte požadavek POST na následující URL s danými parametry a vygenerujt
 
 V odpovědi obdržíte jak `access_token`, tak i `refresh_token`.
 
-- Platnost `code_token` vyprší po několika zadaných sekundách (reprezentovaných hodnotou parametrem `expires_in` v odpovědi). Můžete znovu vygenerovat nový `code_token` pomocí `refresh_token` (viz: `Generate Access Token from Refresh Token`).
+- Platnost `code_token` vyprší po několika zadaných sekundách (reprezentovaných hodnotou parametrem `expires_in` v odpovědi). Můžete znovu vygenerovat nový `access_token` pomocí `refresh_token` (viz: `Generování přístupových tokenů z obnovovacích tokenů`).
 
-- `refresh_token` je trvalý. Odvolání `refresh_token`, viz: `Revoking a Refresh Token`.
+- `refresh_token` je trvalý. Odvolání `refresh_token`, viz: `Odvolání obnovovacích tokenu`.
 
-#### Příklad požadavku
+##### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### Příklad odpovědi
+##### Příklad odpovědi
 
 ```json
 {
@@ -53,7 +79,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Generování přístupového tokenu z obnovovacího tokenu
+#### Generování přístupových tokenů z obnovovacích tokenů
 
 Přístupové tokeny mají omezenou platnost. Po vypršení jeho platnosti bude muset vaše aplikace použít `refresh_token` a požádat o nový `access_token`.
 
@@ -65,7 +91,7 @@ Pro získání nového přístupového tokenu proveďte následující požadave
 |:----------------- |:------------------------------------------------------------------------- |
 | **refresh_token** | `REFRESH TOKEN`, pomocí kterého je třeba vygenerovat nový `access_token`. |
 
-#### Příklad požadavku
+##### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### Příklad odpovědi
+##### Příklad odpovědi
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### Odvolání obnovovacího tokenu
+#### Odvolání obnovovacích tokenů
 
 Chcete-li odvolat obnovovací token, proveďte následující požadavek POST s danými parametry:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### Příklad požadavku
+##### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -103,7 +129,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 ### Autorizační koncový bod
 
-> Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Popište prosím důvod a případy použití tohoto koncového bodu a uveďte URI přesměrování. Po schválení obdržíte jedinečný identifikátor klienta, který by měl být použit pro parametr **client_id**.
+:::warning
+
+Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Popište prosím důvod a případy použití tohoto koncového bodu a uveďte URI přesměrování. Po schválení obdržíte jedinečný identifikátor klienta, který by měl být použit pro parametr **client_id**.
+
+:::
 
 Koncový bod **/oapi/v1/oauth_authorize** slouží k interakci s vlastníkem zdroje a k získání oprávnění k přístupu k chráněnému zdroji.
 
@@ -129,7 +159,7 @@ K informování autorizačního serveru o tom, který typ grantu má být použi
 
 - Pro implicitní grant použijte **response_type=token** k zahrnutí přístupového tokenu.
 
-Úspěšná odezva je **302 Found**, což vyvolá přesměrování na **redirect_uri** (což je parametr požadavku). Parametry odezvy jsou vloženy do fragmentové složky (část za `#`) parametru **redirect_uri** v záhlaví **Location**.
+Úspěšná odezva je **302 Found**, což vyvolá přesměrování na **redirect_uri** (což je parametr požadavku). Parametry odezvy jsou vloženy do fragmentové složky (část za symbolem `#`) parametru `redirect_uri` v záhlaví *Location*.
 
 Např:
 
@@ -137,13 +167,6 @@ Např:
 HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
-
-### Přístup k rozhraní API
-
-Po vygenerování přístupových a obnovovacích tokenů lze volání API provádět pomocí předání přístupového tokenu v záhlaví.
-
-- Název záhlaví by měl být `Autorization`
-- Hodnota záhlaví by měla být `Bearer {access_token}`
 
 ## API
 

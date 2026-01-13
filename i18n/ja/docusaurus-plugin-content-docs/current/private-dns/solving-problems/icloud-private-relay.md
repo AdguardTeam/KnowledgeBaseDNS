@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-iCloudプライベートリレーをデバイスで使用している場合、AdGuard DNSダッシュボード（および関連する[AdGuardテストページ](https://adguard.com/test.html)）では、そのデバイスでAdGuard DNSを使用していないとを表示されます。
+When you’re using iCloud Private Relay, the AdGuard DNS dashboard (and associated [AdGuard test page](https://adguard.com/test.html)) will show that you are not using AdGuard DNS on that device.
 
 ![デバイスは接続されていません](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-この問題を解決するには、デバイスの設定で AdGuard ウェブサイトがあなたのIPアドレスを見られるように許可する必要があります。
+To fix this problem, you need to allow AdGuard websites see your IP address in your device’s settings.
 
 - iPhone・iPadの場合：
 
@@ -29,10 +29,10 @@ iCloudプライベートリレーをデバイスで使用している場合、Ad
 
     1. `adguard.com` に対してもじ１と２のステップを行います。
 
-ウェブサイトにあなたの IP アドレスを見れるための一時的許可のオプションが表示されていない場合は、デバイスを最新の iOS、iPadOS、または macOS にアップデートし、再度お試しください。
+If you can’t see the option to temporarily allow a website to see your IP address, update your device to the latest version of iOS, iPadOS, or macOS, then try again.
 
 これで、AdGuard DNS のダッシュボードにデバイスが正しく表示されるはずです：
 
 ![デバイスは接続されています](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-※特定のウェブサイトに対してiCloudプライベートリレーをオフにすると、あなたのネットワークプロバイダーもあなたが閲覧しているサイトを見ることができるようになることにご注意ください。
+Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.

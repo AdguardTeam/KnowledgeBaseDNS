@@ -1,6 +1,6 @@
 ---
 title: ユーザールール
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## ユーザールールとは何か、どう役に立つのか
@@ -21,10 +21,10 @@ sidebar_position: 2
 
 4. 「_ユーザールール_」オプションをクリックします。
 
-5. そうすると、ユーザールールを追加するためのいくつかのオプションが見つかります。
+5. You’ll find several options for adding user rules.
 
-    - 最も簡単な方法はルールジェネレーターを使うことです。 使用するには、「_新しいルールを追加_」をクリック → ブロックまたはブロック解除したいドメインの名前を入力 → 「_ルールを追加_」をクリックします。
-        ![ルールを追加 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - 上級者向けの方法はルールエディタを使用することです。 _エディタを開く_をクリックし、[語法](/general/dns-filtering-syntax/)に従ってブロックルールを入力します。
+   - 最も簡単な方法はルールジェネレーターを使うことです。 使用するには、「_新しいルールを追加_」をクリック → ブロックまたはブロック解除したいドメインの名前を入力 → 「_ルールを追加_」をクリックします。
+     ![ルールを追加 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - 上級者向けの方法はルールエディタを使用することです。 _エディタを開く_をクリックし、[語法](/general/dns-filtering-syntax/)に従ってブロックルールを入力します。
 
 この機能を使用すると、[DNSクエリの内容を置き換えることで、別のドメインにお問い合わせをリダイレクト](/general/dns-filtering-syntax/#dnsrewrite-modifier)できます。

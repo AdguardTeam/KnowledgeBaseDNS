@@ -1,15 +1,15 @@
 ---
 title: Forældrekontrol
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Hvad er det
 
-Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med "sensitivt" indhold.  Man kan bruge denne funktion til at begrænse sine børns adgang til voksenwebsteder, tilpasse søgeforespørgsler, blokere brugen af populære tjenester mv.
+Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Man kan bruge denne funktion til at begrænse sine børns adgang til voksenwebsteder, tilpasse søgeforespørgsler, blokere brugen af populære tjenester mv.
 
 ## Sådan opsættes det
 
-Man kan fleksibelt opsætte alle funktioner på sine servere, herunder funktionen Forældrekontrol. [I artiklen](private-dns/server-and-settings/server-and-settings.md) kan man gøre sig bekendt med, hvad en "server" er i AdGuard DNS, og læse, hvordan man opretter forskellige servere med forskellige sæt af indstillinger.
+Man kan fleksibelt opsætte alle funktioner på sine servere, herunder funktionen Forældrekontrol. [I artiklen](private-dns/server-and-settings/server-and-settings.md) kan man gøre sig bekendt med, hvad en "server" er i AdGuard DNS og læse, hvordan man opretter forskellige servere med forskellige sæt af indstillinger.
 
 Gå dernæst til indstillingerne for den valgte server og aktivér de ønskede opsætninger.
 
@@ -33,7 +33,7 @@ Fjerner muligheden for at se og skrive kommentarer under videoer og interagere m
 
 ### Blokerede tjenester og websteder
 
-AdGuard DNS blokerer adgang til populære tjenester med ét klik. Dette er nyttigt, hvis man f.eks. ikke ønsker, at tilsluttede enheder besøger Instagram og YouTube.
+AdGuard DNS blokerer adgang til populære tjenester med ét klik. Dette er nyttigt, hvis man ikke ønsker, at tilsluttede enheder besøger f.eks. Instagram og YouTube.
 
 ![Blokerede tjenester \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

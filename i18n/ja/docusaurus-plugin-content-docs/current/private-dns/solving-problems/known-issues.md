@@ -23,7 +23,7 @@ Chromeを使用していて、AdGuard DNSダッシュボードにリクエスト
 
 ![ChromeのセキュアDNS設定](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-Chrome独自のDNS設定を無効にすると、ブラウザはオペレーティングシステムで指定されているDNSを使用しますので、AdGuard DNSが正しく設定されていれば、AdGuardのDNSが使用されるはずです。
+If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
 
 ## iCloudプライベートリレー (Safari、macOS、iOS)
 
@@ -35,7 +35,7 @@ iPhoneでiCloudプライベートリレーを無効にする方法は以下の�
 1. 「*iCloud*」→「*プライベートリレー*」を選択します。
 1. 「プライベートリレー」をオフにします。
 
-![iOSプライベートリレー](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay.png)
+![iOSプライベートリレー](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/private-relay-ios-1.png)
 
 Macの場合：
 
@@ -52,8 +52,38 @@ iOS 17へのアップデート後、Safariの設定で「高度なトラッキ�
 
 「高度なトラッキングとフィンガープリント保護」を無効にする方法は以下のとおりです:
 
-1. デバイスで「*設定*」を開き、「*Safari*」までスクロールします。
-1. 「*詳細*」をタップします。
-1. 「*高度なトラッキングとフィンガープリント保護*」をオフにします。
+For iOS 26.1 and later versions:
 
-![iOSの高度なトラッキングとフィンガープリント保護 *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+1. Go to *Settings*.
+1. Scroll down and select *Apps*.
+1. Go to *Safari* → *Advanced*.
+1. Tap *Advanced Tracking and Fingerprinting Protection* and then *Off*.
+
+![iOS 26.1 Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/adv-tracking-browser-1.png)
+
+For iOS versions prior to 26.1:
+
+1. Open *Settings* and scroll down to *Safari*.
+1. Tap *Advanced*.
+1. Disable *Advanced Tracking and Fingerprinting Protection*.
+
+![iOS Tracking and Fingerprinting Protection *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-tracking-and-fingerprinting.png)
+
+## Limit IP Address Tracking on iPhone
+
+When the Limit IP Address Tracking feature is enabled on your iPhone, it can interfere with AdGuard DNS’s ability to filter traffic.
+
+This happens because the feature routes DNS queries from Safari (and other apps that support it) through Apple’s own private relay servers. This prevents AdGuard DNS from receiving your device’s actual IP address and processing DNS requests, resulting in disabled filtering for ads and trackers.
+
+To restore full DNS-based filtering, you will need to disable this feature for the Wi-Fi network you are currently using.
+
+Please follow the steps below:
+
+1. Open *Settings* on your iPhone.
+1. Tap *Wi-Fi*.
+1. Find and tap the name of the Wi-Fi network you are currently connected to.
+1. On the network’s settings page, toggle off the switch for *Limit IP Address Tracking.*
+
+![Limit IP Address Tracking *mobile](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/ios-wifi-limit-ip-1.png)
+
+DNS filtering will resume immediately after disabling this setting. Please note that you may need to repeat this process for other Wi-Fi networks you connect to in the future.

@@ -9,6 +9,8 @@ AdGuard DNS- Abonnements können auf [adguard-dns.io](https://adguard-dns.io/lic
 
 Der Tarif Personal ist für zahlende Nutzer von [AdGuard VPN](https://adguard-vpn.com/welcome.html) kostenlos.
 
+AdGuard DNS-Pläne werden sofort aktiviert. Mitunter kann die Aktivierung bis zu fünf Minuten dauern. Sollten Sie Ihr Abonnement nicht aktivieren können, wenden Sie sich bitte per E-Mail an unser Support-Team unter [support@adguard-dns.io](mailto:support@adguard-dns.io).
+
 ## So erweitern Sie ein Abonnement {#upgrade}
 
 Um das Beste aus AdGuard DNS herauszuholen, können Sie Ihr Paket um die folgenden Vorteile erweitern:
@@ -16,13 +18,13 @@ Um das Beste aus AdGuard DNS herauszuholen, können Sie Ihr Paket um die folgend
 - Um Zugang zu 2 dedizierten IPv4-Adressen zu erhalten und die Anzahl der Geräte, monatlichen Anfragen, Regeln und Server zu erweitern, können Sie **Ihr Paket auf Team erweitern**
 - Wenn Sie weitere dedizierte IPv4-Adressen und eine unbegrenzte Anzahl von Anfragen, Geräten, Regeln und Servern benötigen, **erweitern Sie Ihr Paket auf Enterprise**
 
-You can upgrade your plan in your [AdGuard account](https://adguardaccount.com/account/licenses). Klicken Sie dazu auf _Erweitern_ unter dem Abschnitt _AdGuard DNS_.
+Sie können Ihr Abonnement in Ihrem [AdGuard-Konto](https://adguardaccount.com/account/licenses) erweitern. Klicken Sie dazu auf _Erweitern_ unter dem Abschnitt _AdGuard DNS_.
 
-Der Tarif _Enterprise_ ist nur auf Anfrage erhältlich. Wenn Sie Interesse haben, füllen Sie bitte unser [Formular](https://surveys.adguard.com/dns_enterprise/form.html) aus und machen Sie einige Angaben zu Ihrem Unternehmen. Sobald wir Ihre Einsendung erhalten haben, werden wir Sie mit zusätzlichen Informationen kontaktieren.
+Der Tarif _Enterprise_ ist nur auf Anfrage erhältlich. Wenn Sie interessiert sind, füllen Sie bitte unser [Formular](https://surveys.adguard.com/dns_enterprise/form.html) aus und geben Sie einige Details an. Sobald wir Ihre Anfrage erhalten haben, werden wir Sie mit weiteren Informationen kontaktieren.
 
 ## So erhalten Sie eine Erstattung {#refund}
 
-In Übereinstimmung mit unseren [Verkaufsbedingungen] (https://adguard-dns.io/terms-of-sale.html) können Sie eine 100%ige Rückerstattung für alle AdGuard DNS- Jahresabonnements erhalten, die unter https://adguard-dns.io/ gekauft wurden. Um eine Rückerstattung zu erhalten, müssen Sie sich an den Kundendienst unter support@adguard-dns.io wenden und dabei die von Ihnen verwendete Zahlungsmethode angeben. Die Bearbeitungszeit beträgt in der Regel bis zu 5-10 Werktage.
+In Übereinstimmung mit unseren [Verkaufsbedingungen] (https://adguard-dns.io/terms-of-sale.html) können Sie eine 100%ige Rückerstattung für alle AdGuard DNS- Jahresabonnements erhalten, die unter https://adguard-dns.io/ gekauft wurden. Um eine Rückerstattung zu erhalten, müssen Sie sich unter Angabe der von Ihnen verwendeten Zahlungsmethode an den Support unter support@adguard-dns.io wenden. Die Bearbeitungszeit beträgt in der Regel bis zu 5-10 Werktage.
 
 Eine Erstattung kann abgelehnt werden, wenn:
 

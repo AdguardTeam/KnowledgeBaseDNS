@@ -19,7 +19,7 @@ sidebar_position: 3
 6. 将「DNS 隐私协议」更改为「DNS-over-TLS」。
 7. 确保「_DNS-over-TLS 描述文件_」设置为「_严格_」。
 8. 向下滚动到「_DNS-over-TLS 服务器列表_」部分。 在「_地址_」字段中，输入以下地址之一：
-    - `94.140.14.49` 和 `94.140.14.59`
+   - `94.140.14.49` 和 `94.140.14.59`
 9. 指定「_TLS 端口_」，输入 853。
 10. 在「_TLS 主机名_」字段中，输入私人 AdGuard DNS 服务器地址：
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ sidebar_position: 3
 4. 选择「_WAN_」或「_互联网_」。
 5. 打开「_DNS 设置_」或「_DNS_」。
 6. Choose _Manual Setting_. 选择「_使用指定 DNS 服务器_」或「_手动指定 DNS 服务器_」，然后输入以下 DNS 服务器地址：
-    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
-    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
+   - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 7. 请保存设置。
 8. 关联 IP 地址（如果您有团队版订阅，也可以关联您的专用 IP 地址）。
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

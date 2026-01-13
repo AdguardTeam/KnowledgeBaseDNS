@@ -1,6 +1,6 @@
 ---
 title: Listas de bloqueo
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## ¿Qué son las listas de bloqueo?
@@ -57,7 +57,7 @@ Para enviar una petición:
 3. Haz clic en _Solicitud de lista de bloqueo_ y completa el formulario.
 4. Después de completar el formulario, haz clic en _Enviar nueva incidencia_.
 
-Si las reglas de bloqueo de tu filtro no duplican las listas existentes, se añadirá al repositorio.
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## Reglas de usuario
 

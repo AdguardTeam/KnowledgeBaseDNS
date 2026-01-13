@@ -3,7 +3,7 @@ title: '기술 자료 업데이트'
 sidebar_position: 1
 ---
 
-이 기술 자료의 목표는 모든 종류의 AdGuard DNS 관련 주제에 대한 최신 정보를 모든 사용자에게 제공하는 것입니다. 그러나 상황은 끊임없이 변하고 때로는 기사가 현재 상태를 반영하지 않을 수도 있습니다. - 새로운 버전이 출시 될 때 모든 정보를 주시하고 그에 따라 업데이트 할 수 있는 사람은 많지 않습니다.
+이 기술 자료의 목표는 모든 종류의 AdGuard DNS 관련 주제에 대한 최신 정보를 모든 사용자에게 제공하는 것입니다. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 이것이 우리가 모든 KB 콘텐츠를 [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS)배치한 이유이며,  말 그대로 누구나 기존 번역과 완전히 새로운 번역에 대한 편집을 제안함으로써 기여할 수 있습니다.
 
@@ -15,7 +15,7 @@ sidebar_position: 1
 
 The Knowledge Base website is built using Docusaurus 2 — a modern static website generator. 변경 또는 추가를 제안 할 때 모든 문서는 플랫폼의 원칙을 준수해야 한다는 점을 고려하십시오. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
 
-이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base's GitHub page.
+이 기술 자료를 컴퓨터에 배포하여 제안한 변경 사항을 미리 볼 수 있습니다. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## 기사 번역 {#translate-adguard}
 

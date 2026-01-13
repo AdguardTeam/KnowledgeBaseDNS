@@ -3,7 +3,7 @@ title: '更新知识库'
 sidebar_position: 1
 ---
 
-本知识库的目标是为每个人提供有关各种AdGuard DNS相关主题的最新信息。 但是事情在不断变化，有时一篇文章不再反映事物的当前状态——我们中没有那么多人关注每一个信息并在新版本发布时相应地更新它。
+本知识库的目标是为每个人提供有关各种AdGuard DNS相关主题的最新信息。 But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 这就是为什么我们将所有 知识库 内容放在 [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS) 上，现在任何人都可以通过建议对现有文章以及全新文章进行编辑和翻译来为它做出贡献。
 
@@ -15,7 +15,7 @@ sidebar_position: 1
 
 知识库网站是用 Docusaurus 2 建立的，这是一个现代静态网站生成器。 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 用户可以在 [ Docusaurus 指南](https://docusaurus.io/docs/category/guides)了解它们。
 
-你可以把这个知识库部署在你的电脑上，以概述你建议的变化。 有关如何执行此操作的详细说明可以在此知识库的 GitHub 页面上的 [README.md](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) 文件中找到。
+你可以把这个知识库部署在你的电脑上，以概述你建议的变化。 Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## 翻译文章 {#translate-adguard}
 

@@ -19,7 +19,7 @@ sidebar_position: 3
 6. Измените протокол конфиденциальности DNS на DNS-over-TLS (DoT).
 7. Убедитесь, что для профиля DNS-over-TLS установлено значение «Строгий».
 8. Прокрутите вниз до раздела «Список серверов DNS-over-TLS». В поле «Адрес» введите один из следующих адресов:
-    - `94.140.14.49` и `94.140.14.59`
+   - `94.140.14.49` и `94.140.14.59`
 9. В поле «Порт TLS» введите 853.
 10. В поле «Имя хоста TLS» введите адрес сервера Private AdGuard DNS:
     - `{Your_Device_ID}.d.adguard-dns.com`
@@ -33,9 +33,9 @@ sidebar_position: 3
 4. Выберите «WAN» или «Интернет».
 5. Откройте Настройки «DNS» или «DNS».
 6. Выберите _Manual Setting_. Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
-    - IPv4: `94.140.14.49` и `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 7. Сохраните настройки.
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
-    - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

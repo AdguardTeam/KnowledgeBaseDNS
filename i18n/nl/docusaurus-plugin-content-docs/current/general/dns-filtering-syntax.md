@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Extensibility.** In the past decade, the Adblock-style syntax has greatly evolved, and we see no reason not to extend it even further and offer additional features for network-level blockers.
 
-If you're maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Basisvoorbeelden {#basic-examples}
 
@@ -79,7 +79,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`: matches the beginning of a hostname, including any subdomain. For instance, `||example.org` matches `example.org` and `test.example.org` but not `testexample.org`.
 
-- `^`: the separator character. Unlike browser ad blocking, there's nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
+- `^`: the separator character. Unlike browser ad blocking, there’s nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
 
 - `|`: a pointer to the beginning or the end of the hostname. The value depends on the character placement in the mask. For example, the rule `ample.org|` corresponds to `example.org` but not to `example.org.com`. `|example` corresponds to `example.org` but not to `test.example`.
 
@@ -127,7 +127,11 @@ You can change the behavior of a rule by adding modifiers. Modifiers must be loc
 
   `||example.org^` is the matching pattern. `$` is the delimiter, which signals that the rest of the rule are modifiers. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` is het scheidingsteken tussen modifiers. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
 
-**NOTE:** If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers' filter lists like EasyList or EasyPrivacy.
+:::note
+
+Als een regel een modifier bevat die niet in dit document is opgenomen, moet de hele regel **genegeerd worden**. Op deze manier voorkomen we vals-positieven wanneer mensen proberen ongewijzigde filterlijsten van browser-advertentieblokkeerders zoals EasyList of EasyPrivacy te gebruiken.
+
+:::
 
 #### `cliënt` {#client-modifier}
 
@@ -137,7 +141,11 @@ The `client` modifier allows specifying clients this rule is applied to. There a
 
 - By their name. This way only works for persistent clients (in AdGuard Home) and devices (in Private AdGuard DNS), which you have manually added.
 
-  **NOTE:** In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  :::note
+
+  In AdGuard Home worden ClientID's momenteel niet ondersteund, alleen namen. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+
+  :::
 
 The syntax is:
 
@@ -145,7 +153,7 @@ The syntax is:
 $client=value1|value2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client's DNS requests.
+You can also exclude clients by adding a `~` character before the value. In dit geval wordt de regel niet toegepast op de DNS-verzoeken van deze client.
 
 ```none
 $client=~value1
@@ -153,7 +161,11 @@ $client=~value1
 
 Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
 
-**NOTE:** When excluding a client, you **must** place `~` outside the quotes.
+:::note
+
+Als je een cliënt uitsluit, **moet** je `~` buiten de aanhalingstekens plaatsen.
+
+:::
 
 **Examples:**
 
@@ -188,7 +200,7 @@ This modifier allows avoiding creating unnecessary exception rules when our bloc
 @@||net^
 ```
 
-The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here's how to solve this with `denyallow`:
+The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Hier zie je hoe je dit oplost met `denyallow`:
 
 ```none
 *$denyallow=com|net
@@ -200,7 +212,7 @@ The problem with this approach is that this way you will also unblock tracking d
 
 - `@@*$denyallow=com|net`: deblokkeer alles behalve `*.com` en `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`. block `example.org` and `*.example.org` but don't block `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
@@ -233,7 +245,11 @@ $dnstype=value2
 
 - `||example.org^$dnstype=~A|~CNAME`: only allow `A` and `CNAME` DNS queries for `example.org`, block out the rest.
 
-**NOTE:** Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+:::note
+
+Voor versie **v0.108.0,** gebruikte AdGuard Home het type van het verzoek om de antwoordrecords te filteren, in tegenstelling tot het type van het antwoordrecord zelf.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+
+:::
 
 ```none
 ||canon.example.com^$dnstype=~CNAME
@@ -257,7 +273,7 @@ The `dnsrewrite` response modifier allows replacing the content of the response 
 
 **Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
 
-Reacties op alle aanvragen voor een host die voldoen aan een `dnsrewrite`regel worden vervangen. Het antwoordgedeelte van het vervangende antwoord bevat alleen RR's die overeenkomen met het querytype van de aanvraag en mogelijk ook CNAME RR's. Houd er rekening mee dat dit betekent dat antwoorden op sommige verzoeken leeg kunnen worden (`NODATA`) als de host overeenkomt met een `dnsrewrite`-regel.
+Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. Het antwoordgedeelte van het vervangende antwoord bevat alleen RR's die overeenkomen met het querytype van het Verzoek en mogelijk ook CNAME RR's. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
 The shorthand syntax is:
 
@@ -305,7 +321,7 @@ Name: example.net
 Address: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite. After that, all other records' values are summed as one response, so this:
+Next, the `CNAME` rewrite. Daarna worden de waarden van alle andere records samengeteld als één antwoord, dus dit:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
@@ -318,7 +334,11 @@ Currently supported RR types with examples:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` adds a `PTR` record for reverse DNS. Reverse DNS requests for `1.2.3.4` to the DNS server will result in `example.net`.
 
-  **NOTE:** the IP MUST be in reverse order. See [RFC 1035][rfc1035].
+  :::note
+
+  De IP MOET in omgekeerde volgorde zijn. See [RFC 1035][rfc1035].
+
+  :::
 
 - `||example.com^$dnsrewrite=NOERROR;A;1.2.3.4` adds an `A` record with the value `1.2.3.4`.
 
@@ -349,7 +369,7 @@ Currently supported RR types with examples:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` responds with an empty `NOERROR` answers for all `AAAA` requests except the ones for `example.org`.
 
-Uitzonderingsregels deblokkeren één of alle regels:
+Exception rules unblock one or all rules:
 
 - `@@||example.com^$dnsrewrite` deblokkeert alle DNS-herschrijfregels.
 
@@ -357,7 +377,7 @@ Uitzonderingsregels deblokkeren één of alle regels:
 
 :::info
 
-Als je een blokkeerlijst bijhoudt die is opgenomen in AdGuard DNS en AdGuard Home (d.w.z. opgenomen in [HostlijstenRegister][hostlistsregistry]), worden `$dnsrewrite` regels er automatisch uitgefilterd. Als deze regels vereist zijn voor jouw blokkeerlijst, vraag dan toestemming door een nieuw probleem te openen in de [HostlijstenRegister][hostlistsregistry] repo.
+If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
 
 :::
 
@@ -395,7 +415,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 - `@@||example.org^$badfilter` disables `@@||example.org^`.
 
-  **NOTE:** The `badfilter` modifier currently doesn't work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+  :::note
+
+  De `badfilter`-modifier werkt momenteel niet met `/etc/hosts`-stijl regels. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+
+  :::
 
 #### `ctag` {#ctag-modifier}
 
@@ -409,13 +433,13 @@ The syntax is:
 $ctag=value1|value2|...
 ```
 
-If one of client's tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+Als een van de tags van de client overeenkomt met de `ctag`-waarden, wordt deze regel toegepast op de client. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client's tags matches the exclusion `ctag` values, this rule doesn't apply to the client.
+Als een van de tags van de client overeenkomt met de uitsluiting `ctag` waarden, wordt deze regel niet toegepast op de client.
 
 **Examples:**
 
@@ -491,17 +515,17 @@ example.org
 example.net # this is also a comment
 ```
 
-Als een string geen geldig domein is (bijv. `*.example.org`), zal AdGuard Home het beschouwen als een [Adblock-stijl syntax][]-regel.
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
 ## Hostlijst-compiler {#hostlist-compiler}
 
-Als je een blokkeerlijst onderhoudt en daarin verschillende bronnen gebruikt, kan [de Hostlist-compiler][] nuttig voor je zijn. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
 
-What it's capable of:
+Waar het toe in staat is:
 
 1. Compile a single blocklist from multiple sources.
 
-2. Exclude the rules you don't need.
+2. Exclude the rules you don’t need.
 
 3. Cleanup the resulting list: deduplicate, remove invalid rules, and compress the list.
 
@@ -511,12 +535,10 @@ What it's capable of:
 <!-- external links -->
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
-[Adblock-stijl syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
-[de Hostlist-compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
 [traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

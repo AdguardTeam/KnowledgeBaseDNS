@@ -7,9 +7,9 @@ Vydáním AdGuard DNS v2.10 se AdGuard stal prvním veřejným DNS řešitelem, 
 
 ## Co jsou strukturované chyby DNS
 
-Pokud je požadavek na reklamní nebo sledovací doménu zablokován, může se stát, že se na webových stránkách zobrazí prázdná místa nebo si uživatel ani nevšimne, že došlo k DNS filtrování. Pokud je však celá webová stránka zablokována na úrovni DNS, uživatel se na ni vůbec nedostane. Při pokusu o přístup na blokovanou webovou stránku se může v prohlížeči zobrazit obecná chyba "Tento web není dostupný".
+Pokud je požadavek na reklamní nebo sledovací doménu zablokován, může se stát, že se na webových stránkách zobrazí prázdná místa nebo si uživatel ani nevšimne, že došlo k DNS filtrování. Pokud je však celá webová stránka zablokována na úrovni DNS, uživatel se na ni vůbec nedostane. Při pokusu o přístup na blokovanou webovou stránku se může v prohlížeči zobrazit obecná chyba “Tento web není dostupný“.
 
-!["This site can't be reached" error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can't be reached“ error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
 Takové chyby nevysvětlují, co se stalo a proč. Uživatelé jsou proto zmateni, proč jsou webové stránky nedostupné, a často se domnívají, že jejich připojení k internetu nebo řešitel DNS je nefunkční.
 

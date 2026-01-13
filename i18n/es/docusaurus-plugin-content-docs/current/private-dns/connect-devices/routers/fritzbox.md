@@ -24,8 +24,8 @@ Utiliza esta guía si tu router FritzBox no admite la configuración de DNS-over
 3. Abre _Internet_ o _Red doméstica_.
 4. Selecciona _DNS_ o _Configuración de DNS_.
 5. Selecciona _DNS manual_, luego _Usar estos servidores DNS_ o _Especificar servidor DNS manualmente_, e introduce las siguientes direcciones del servidor DNS:
-    - IPv4: `94.140.14.49` y `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` y `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
 6. Guarda la configuración.
 7. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 

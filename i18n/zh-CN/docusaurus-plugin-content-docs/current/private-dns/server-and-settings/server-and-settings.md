@@ -3,7 +3,7 @@ title: 服务器和设置
 sidebar_position: 1
 ---
 
-## What is a server and how to use it
+## 什么是服务器及其使用方法
 
 设置私人 AdGuard DNS 时，您将遇到「服务器」这个词。
 
@@ -19,9 +19,12 @@ sidebar_position: 1
 - 一个拦截成人内容和某些服务的服务器
 - 一个仅在您选择的特定时段内拦截成人内容的服务器
 
-有关流量过滤和拦截规则的更多信息，请查看相应的文章：[如何在 AdGuard DNS 中设置过滤](/private-dns/setting-up-filtering/blocklists.md)。
+有关流量过滤和拦截规则的更多信息，请查看「[如何在 AdGuard DNS 中设置过滤](/private-dns/setting-up-filtering/setting-up-filtering.md)」。
 
-如果您对特定设置感兴趣，有专门的文章供您参考：
+如果您对特定设置感兴趣，有专门的文章可供参考：
 
 - [高级设置](/private-dns/server-and-settings/advanced.md)
 - [访问设置](/private-dns/server-and-settings/access.md)
+- [请求数量限制](/private-dns/server-and-settings/rate-limit.md)
+- [基于成员类型的访问](/private-dns/server-and-settings/role-based-access.md)
+- [自定义域名](/private-dns/server-and-settings/custom-domains.md)

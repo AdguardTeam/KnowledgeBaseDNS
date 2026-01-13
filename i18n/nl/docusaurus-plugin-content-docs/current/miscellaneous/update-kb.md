@@ -3,7 +3,7 @@ title: 'Updating the Knowledge Base'
 sidebar_position: 1
 ---
 
-The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
+The goal of this Knowledge Base is to provide everyone with the most up-to-date information on all kinds of AdGuard DNS-related topics. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 This is why we placed all of our KB content to [GitHub](https://github.com/AdguardTeam/KnowledgeBaseDNS), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
 
@@ -15,7 +15,7 @@ Once you are ready to start, work in [the KnowledgeBaseDNS repository](https://g
 
 De Knowledge Base-website is gebouwd met behulp van Docusaurus 2 - een moderne statische websitegenerator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [this guide](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Gedetailleerde instructies over hoe dit te doen zijn te vinden [in het README.md bestand](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) op de GitHub-pagina van deze Kennisbank.
+You can deploy this Knowledge Base locally to your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## Translating articles {#translate-adguard}
 

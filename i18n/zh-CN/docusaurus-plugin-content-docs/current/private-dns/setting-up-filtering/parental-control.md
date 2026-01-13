@@ -1,15 +1,15 @@
 ---
 title: 家长控制
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## 这是什么
 
-家长控制是一组设置，允许用户灵活地定制对某些含有"敏感"内容的网站的访问权限。  用户可以使用此功能来限制儿童访问成人网站，定制查询，阻止使用热门服务等。
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## 如何设置
 
-用户可以在服务器上灵活配置所有功能，包括家长控制功能。 [在相应的文章中](private-dns/server-and-settings/server-and-settings.md)，可以了解 AdGuard DNS 中的“服务器”是什么，并学习如何创建具有不同设置的不同服务器。
+用户可以在服务器上灵活配置所有功能，包括家长控制功能。 [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 然后，进入所选服务器的设置，启用所需的配置。
 
@@ -33,7 +33,7 @@ sidebar_position: 4
 
 ### 已阻止的服务及网站
 
-AdGuard DNS 只需一键即可阻止访问热门服务。 例如，您不希望连接的设备访问 Instagram 和 YouTube。
+AdGuard DNS 只需一键即可阻止访问热门服务。 It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![已拦截的服务 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

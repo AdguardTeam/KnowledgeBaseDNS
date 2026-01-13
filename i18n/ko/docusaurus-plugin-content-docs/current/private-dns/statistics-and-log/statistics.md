@@ -33,8 +33,8 @@ sidebar_position: 2
 
 국가 이름 외에도 목록에는 두 개의 일반 카테고리가 추가로 포함됩니다:
 
-- **해당 없음**: 응답에 IP 주소가 포함되지 않습니다.
-- **알 수 없는 위치**: IP 주소로부터 국가를 확인할 수 없습니다.
+- **Not applicable**: Response doesn’t include IP address
+- **Unknown destination**: Country can’t be determined from IP address
 
 ![상위 도착지 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_destinations.png)
 

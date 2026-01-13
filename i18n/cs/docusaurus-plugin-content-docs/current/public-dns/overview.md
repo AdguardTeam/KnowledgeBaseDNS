@@ -9,15 +9,11 @@ AdGuard DNS je bezplatný DNS řešitel zaměřený na ochranu soukromí, který
 
 ## Veřejné servery DNS AdGuard
 
-AdGuard DNS má tři různé typy veřejných serverů. "Výchozí" server slouží k blokování reklam, slídičů, malwaru a krádeže identity. "Ochrana rodiny" dělá totéž, ale také blokuje weby s obsahem pro dospělé a vynucuje možnost "Bezpečné vyhledávání" v prohlížečích, které ji poskytují. "Bez filtrování" poskytuje bezpečné a spolehlivé připojení, ale nic neblokuje. Podrobné pokyny k nastavení AdGuard DNS na libovolném zařízení najdete na [našich stránkách](https://adguard-dns.io/public-dns.html). Každý server podporuje jiné zabezpečené protokoly: DNSCrypt, DNS-over-HTTPS (DoH), DNS skrze TLS (DoT) a DNS-over-QUIC (DoQ).
+AdGuard DNS má tři různé typy veřejných serverů. *Výchozí* server slouží k blokování reklam, slídičů, malwaru a krádeže identity. *Ochrana rodiny* dělá totéž, ale také blokuje weby s obsahem pro dospělé a vynucuje možnost *Bezpečné vyhledávání* v prohlížečích, které ji poskytují. *Bez filtrování* poskytuje bezpečné a spolehlivé připojení, ale nic neblokuje. Podrobné pokyny k nastavení AdGuard DNS na libovolném zařízení najdete na [našich stránkách](https://adguard-dns.io/public-dns.html). Každý server podporuje jiné zabezpečené protokoly: DNSCrypt, DNS-over-HTTPS (DoH), DNS skrze TLS (DoT) a DNS-over-QUIC (DoQ).
 
 ## Protokoly AdGuard DNS
 
 Kromě běžného DNS (IPv4 i IPv6) podporuje AdGuard DNS různé šifrované protokoly, takže si můžete vybrat ten, který vám nejlépe vyhovuje.
-
-### DNSCrypt
-
-AdGuard DNS umožňuje používat specifický šifrovaný protokol — DNSCrypt. Díky tomu jsou všechny DNS požadavky šifrovány, což vás chrání před možným zachycením požadavků a následným odposlechem a/nebo změnou. Ve srovnání s protokoly DoH, DoT a DoQ je však DNSCrypt považován za zastaralý a pokud je to možné, doporučujeme používat tyto protokoly.
 
 ### DNS-over-HTTPS (DoH) a DNS-over-TLS (DoT)
 
@@ -46,3 +42,13 @@ Na rozdíl od Google DNS nepodporuje AdGuard DNS hodnoty `edns_client_subnet` a 
 ### Rychlostní limit
 
 Omezení rychlosti DNS je technika používaná k regulaci množství přenosů, které může DNS server zpracovat v určitém časovém období. Nabízíme možnost zvýšit výchozí limit pro tarify Team a Enterprise soukromého AdGuard DNS. Další informace naleznete [v tomto článku](/private-dns/server-and-settings/rate-limit.md).
+
+### DNSCrypt
+
+AdGuard DNS umožňuje používat specifický šifrovaný protokol — DNSCrypt. Díky tomu jsou všechny DNS požadavky šifrovány, což vás chrání před možným zachycením požadavků a následným odposlechem a/nebo změnou.
+
+:::note
+
+Jedná se o zastaralý protokol s omezenou podporou.
+
+:::

@@ -15,7 +15,7 @@ Abychom lépe porozuměli filtrování DNS, měli bychom si nejprve odpovědět 
 
 ## Co je DNS?
 
-DNS je zkratka pro "Domain name system" (decentralizovaný systém doménových názvů) a jeho účelem je překládat názvy webových stránek do podoby srozumitelné prohlížečům, tj. IP adres. Pokaždé, když přejdete na webovou stránku, prohlížeč odešle požadavek na speciální typ serveru (server DNS). Tento server se podívá na požadovaný název domény a odpoví odpovídající IP adresou. Velmi schematicky to lze znázornit takto:
+DNS je zkratka pro *Domain name system* a jeho účelem je překládat názvy webových stránek do podoby srozumitelné prohlížečům, tj. IP adres. Pokaždé, když přejdete na webovou stránku, prohlížeč odešle požadavek na speciální typ serveru (server DNS). Tento server se podívá na požadovaný název domény a odpoví odpovídající IP adresou. Velmi schematicky to lze znázornit takto:
 
 ![How DNS works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -23,7 +23,7 @@ Totéž samozřejmě platí pro všechny aplikace a programy, které odesílají
 
 ## Jak funguje DNS filtrování?
 
-Pokud používáte některou z aplikací AdGuard, která podporuje DNS filtrování, funguje jako vyrovnávací paměť mezi vaším zařízením a serverem DNS. Všechny DNS požadavky, které se vaše prohlížeče nebo aplikace chystají odeslat, nejprve zpracuje AdGuard. Pokud používáte výchozí DNS server poskytovaný poskytovatelem internetových služeb (ISP), je pravděpodobné, že vaše přenosy DNS nejsou šifrované a jsou náchylné k odposlechu a zcizení. AdGuard zašifruje všechny vaše DNS požadavky ještě předtím, než opustí vaše zařízení, aby se k jejich obsahu nedostal žádný zloduch. Kromě toho dokáže AdGuard identifikovat požadavky na reklamní, sledovací domény a/nebo domény pro dospělé a přesměrovat je do "černé díry" namísto přesměrování na DNS server. Více o tom později [později](#local-dns-blocklists).
+Pokud používáte některou z aplikací AdGuard, která podporuje DNS filtrování, funguje jako vyrovnávací paměť mezi vaším zařízením a serverem DNS. Všechny DNS požadavky, které se vaše prohlížeče nebo aplikace chystají odeslat, nejprve zpracuje AdGuard. Pokud používáte výchozí DNS server poskytovaný poskytovatelem internetových služeb (ISP), je pravděpodobné, že vaše přenosy DNS nejsou šifrované a jsou náchylné k odposlechu a zcizení. AdGuard zašifruje všechny vaše DNS požadavky ještě předtím, než opustí vaše zařízení, aby se k jejich obsahu nedostal žádný zloduch. Kromě toho dokáže AdGuard identifikovat požadavky na reklamní, sledovací domény a/nebo domény pro dospělé a přesměrovat je do “černé díry“ namísto přesměrování na DNS server. Více o tom později [později](#local-dns-blocklists).
 
 ![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
@@ -49,13 +49,13 @@ V aplikaci AdGuard pro iOS musíte nejprve v *Nastavení* povolit *Pokročilý r
 
 :::
 
-Můžete přidat libovolný počet vlastních seznamů zakázaných. Můžete např. použít [filtr AdGuard DNS](https://github.com/AdguardTeam/AdGuardSDNSFilter). Doslova blokuje vše, co dělá server AdGuard DNS, ale v tomto případě můžete použít jakýkoli jiný server DNS. Navíc tímto způsobem můžete přidávat další filtry nebo vytvářet vlastní pravidla výjimek, což by při jednoduchém "použití DNS serveru zakázaných" nebylo možné.
+Můžete přidat libovolný počet vlastních seznamů zakázaných. Můžete např. použít [filtr AdGuard DNS](https://github.com/AdguardTeam/AdGuardSDNSFilter). Doslova blokuje vše, co dělá server AdGuard DNS, ale v tomto případě můžete použít jakýkoli jiný server DNS. Navíc tímto způsobem můžete přidávat další filtry nebo vytvářet vlastní pravidla výjimek, což by při jednoduchém “použití DNS serveru zakázaných“ nebylo možné.
 
-Existují stovky různých DNS seznamů zakázaných, můžete je hledat [zde](https://filterlists.com/).
+Existují stovky různých DNS seznamů zakázaných, můžete je hledat na [filters.com](https://filterlists.com/).
 
 ## DNS filtrování vs. filtrování sítě
 
-Filtrování sítě je to, čemu říkáme 'obvyklý' způsob, jakým samostatné aplikace AdGuard zpracovávají síťový provoz, odtud i název. Klidně si to osvěžte přečtením [tohoto článku](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
+Filtrování sítě je to, čemu říkáme obvyklý způsob, jakým samostatné aplikace AdGuard zpracovávají síťový provoz, odtud i název. Klidně si to osvěžte přečtením [tohoto článku](https://adguard.com/kb/general/ad-filtering/how-ad-blocking-works/).
 
 Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můžete současně používat běžné filtrování sítě i DNS filtrování. Je však důležité pochopit hlavní rozdíly mezi nimi. DNS filtrování má své jedinečné výhody i nevýhody:
 
@@ -67,7 +67,7 @@ Především musíme zmínit, že s AdGuardem si nemusíte vybírat. Vždy můž
 
 **Nevýhody DNS filtrování:**
 
-1. DNS filtrování je "hrubé", což znamená, že neodstraňuje prázdná místa, která zůstala za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
+1. DNS filtrování je hrubé, což znamená, že neodstraňuje prázdná místa, která zůstala za blokovanou reklamou, ani nepoužívá žádné kosmetické filtrování. Mnoho složitějších reklam nelze zablokovat na úrovni DNS (respektive lze, ale pouze zablokováním celých domén, které se používají k jiným účelům).
 
     ![Example of difference](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/dns_diff.jpg) *Příklad rozdílu mezi filtrováním DNS a filtrováním sítě*
 

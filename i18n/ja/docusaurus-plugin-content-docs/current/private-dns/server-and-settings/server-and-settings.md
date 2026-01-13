@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## サーバーとは何か、どのように使用できるか
 
-パブリック AdGuard DNS を設定すると、「_サーバー_」という用語に出くわすことになります。
+When you set up Private AdGuard DNS, you’ll encounter the term _servers_.
 
 サーバーは、あなたがお使いのデバイスを接続する「プロファイル」として機能します。
 
@@ -19,9 +19,12 @@ sidebar_position: 1
 - 成人向けコンテンツと特定のサービスをブロックするサーバー
 - 特定の時間帯にのみ成人向けコンテンツをブロックするサーバー
 
-トラフィックのフィルタリングやブロックルールについて詳しくは、「[AdGuard DNSでフィルタリングを設定する方法](/private-dns/setting-up-filtering/blocklists.md)」という記事を確認してください。
+For more information on traffic filtering and blocking rules, check out the [_How to set up filtering in AdGuard DNS_](/private-dns/setting-up-filtering/setting-up-filtering.md) section.
 
-特定の設定に興味がある場合は、それぞれの専用記事もございます：
+If you’re interested in specific settings, there are dedicated articles available for that:
 
 - [詳細設定](/private-dns/server-and-settings/advanced.md)
 - [アクセス設定](/private-dns/server-and-settings/access.md)
+- [Rate limit](/private-dns/server-and-settings/rate-limit.md)
+- [Role-based access](/private-dns/server-and-settings/role-based-access.md)
+- [Custom domains](/private-dns/server-and-settings/custom-domains.md)

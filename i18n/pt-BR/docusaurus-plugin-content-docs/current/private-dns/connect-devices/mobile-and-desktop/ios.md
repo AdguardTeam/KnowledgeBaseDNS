@@ -8,7 +8,43 @@ Para conectar um dispositivo iOS ao AdGuard DNS, primeiro adicione-o à _Dashboa
 1. Vá para o _painel_ e clique em _Conectar novo dispositivo_.
 2. No menu suspenso _Tipo de dispositivo_, selecione iOS.
 3. Nomeie o dispositivo.
-    ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
+   ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/choose_ios.png)
+
+## Use o aplicativo AdGuard DNS
+
+O aplicativo AdGuard DNS foi projetado para proteção básica em nível de DNS — bloqueando anúncios, rastreadores e sites maliciosos. Se você não precisa de todos os recursos oferecidos pelo bloqueador de anúncios AdGuard ou pelo AdGuard VPN, esta pode ser a melhor opção para você.
+
+Para configurar seu dispositivo:
+
+1. [Baixe o aplicativo AdGuard DNS](https://agrd.io/ios_dns).
+2. Acesse o painel de controle do AdGuard DNS em [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
+3. Click _Connect device_ on the _Home_ tab.
+4. Selecione o tipo do seu dispositivo e dê um nome a ele, em seguida clique em _Avançar_.
+5. Expanda a seção _Usar aplicativos do AdGuard_.
+
+![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+
+1. Em _Usar o aplicativo DNS do AdGuard_, escolha um destes métodos de configuração:
+
+   - Clique em _Configurar_ se você estiver no dispositivo que deseja proteger.
+   - Escaneie o código QR com o dispositivo que deseja proteger.
+   - Copie seu ID de configuração e cole-o diretamente no aplicativo.
+
+     ![SetupID \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/SetupIDiOS.png)
+
+2. Toque em _Continuar_ → _Conectar_.
+
+![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
+
+1. Seu dispositivo foi conectado com sucesso ao AdGuard DNS. Basta tocar em _Ativar_ para iniciar a proteção.
+
+![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
+
+1. Ao usar um protocolo baseado em VPN, você ainda precisa permitir a criação de um perfil de VPN antes de estar totalmente protegido. Para fazer isso, acesse a página inicial do aplicativo, clique em _Ativar_ e siga as instruções no aplicativo.
+
+2. Se preferir usar o DNS nativo, acesse _Configurações_ → _Geral_ → _Gerenciamento de VPN e dispositivos_ → _DNS_ e ative o DNS do AdGuard.
+
+Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
 
 ## Usando o Bloqueador de anúncios AdGuard (opção paga)
 
@@ -17,19 +53,19 @@ O aplicativo AdGuard permite que você use DNS criptografado, tornando-o perfeit
 1. Instale o [aplicativo AdGuard](https://adguard.com/adguard-ios/overview.html) no dispositivo que você quer conectar ao AdGuard DNS.
 2. Abra o aplicativo do AdGuard.
 3. Selecione a aba _Proteção_ no menu inferior.
-    ![Ícone do escudo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step3.jpg)
+   ![Ícone do escudo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step3.jpg)
 4. Certifique-se de que a _Proteção de DNS_ esteja ativada e toque nela. Escolha _Servidor DNS_.
-    ![Proteção de DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
-    ![Servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
+   ![Proteção de DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4.jpg)
+   ![Servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
 5. Role para baixo até a parte inferior e toque em _Adicionar um servidor DNS personalizado_.
-    ![Adicionar servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
+   ![Adicionar servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
 6. Copie um dos seguintes endereços DNS e cole-o no campo de texto _Endereço do servidor DNS_ no aplicativo. Se você não tem certeza sobre sua escolha, opte por DNS-over-HTTPS.
-    ![Copiar endereço do servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
-    ![Colar endereço do servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
+   ![Copiar endereço do servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
+   ![Colar endereço do servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 7. Toque em _Salvar e selecionar_.
-    ![Salvar e selecionar \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step7.jpg)
+   ![Salvar e selecionar \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step7.jpg)
 8. Seu servidor recém-criado deve aparecer na parte inferior da lista.
-    ![Servidor personalizado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
+   ![Servidor personalizado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
 Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
 
@@ -40,20 +76,20 @@ Nem todos os serviços de VPN suportam DNS criptografado. No entanto, nossa VPN 
 1. Instale o [aplicativo AdGuard VPN](https://adguard-vpn.com/ios/overview.html) no dispositivo que você quer conectar ao AdGuard DNS.
 2. Abra o aplicativo AdGuard VPN.
 3. Toque no ícone de engrenagem no canto inferior direito da tela.
-    ![Ícone de engrenagem \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step3.jpg)
+   ![Ícone de engrenagem \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step3.jpg)
 4. Abra _Geral_.
-    ![Configurações gerais \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step4.jpg)
+   ![Configurações gerais \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step4.jpg)
 5. Selecione _Servidor DNS_.
-    ![Servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step5.png)
+   ![Servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step5.png)
 6. Role para baixo até _Adicionar servidor DNS personalizado_.
-    ![Adicionar servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step6.png)
+   ![Adicionar servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step6.png)
 7. Copie um dos seguintes endereços DNS e cole-o no campo de texto _Endereços de servidor DNS_. Se você não tem certeza sobre sua escolha, selecione _DNS-over-HTTPS_. Se você não tem certeza sobre qual optar, selecione _DNS-over-HTTPS_.
-    ![Servidor DNS-over-HTTPS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
-    ![Servidor DNS personalizado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
+   ![Servidor DNS-over-HTTPS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
+   ![Servidor DNS personalizado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
 8. Toque em _Salvar_.
-    ![Salvar servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step8.jpg)
+   ![Salvar servidor \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step8.jpg)
 9. Seu servidor recém-criado deve aparecer em _Servidores DNS personalizados_.
-    ![Servidores personalizados \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
+   ![Servidores personalizados \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
 Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
 
@@ -70,9 +106,9 @@ Se você estiver usando uma VPN, o perfil de configuração será ignorado.
 1. Baixe o perfil.
 2. Abra as configurações.
 3. Toque em _Perfil Baixado_.
-    ![Perfil Baixado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
+   ![Perfil Baixado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step3.png)
 4. Toque em _Instalar_ e siga as instruções na tela.
-    ![Instalar \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step4.png)
+   ![Instalar \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_manual/manual_step4.png)
 
 ## Configurando DNS simples
 

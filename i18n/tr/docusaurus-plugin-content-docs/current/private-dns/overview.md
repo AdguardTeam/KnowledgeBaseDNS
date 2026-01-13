@@ -23,7 +23,7 @@ Hızlı bağlantı: [AdGuard DNS'i dene](https://agrd.io/download-dns)
 
 Bugün internete her şeyi bağlayabilirsiniz: TV'ler, buzdolapları, akıllı ampuller veya hoparlörler. Ancak inkar edilemez kolaylıkların yanı sıra izleyiciler ve reklamlar elde edersiniz. Basit bir tarayıcı tabanlı reklam engelleyici bu durumda sizi korumayacaktır, ancak trafiği filtrelemek, içeriği ve izleyicileri engellemek için ayarlayabileceğiniz AdGuard DNS, sistem genelinde bir etkiye sahiptir.
 
-Bir zamanlar, AdGuard ürün grubu yalnızca [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) içeriyordu. Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. İşte bu noktada özel AdGuard DNS devreye giriyor. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar — tümü basit, kullanımı kolay bir pano aracılığıyla.
+Bir zamanlar, AdGuard ürün grubu yalnızca [genel AdGuard DNS](../public-dns/overview.md) ve [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) içeriyordu. Bu çözümler bazı kullanıcılar için iyi çalışıyor, ancak diğerleri için genel AdGuard DNS yapılandırma esnekliğinden yoksunken AdGuard Home basitlikten yoksun. That’s where private AdGuard DNS comes into play. Her iki dünyanın da en iyisine sahiptir: özelleştirilebilirlik, kontrol ve bilgi sunar — tümü basit, kullanımı kolay bir pano aracılığıyla.
 
 ### Özel ve genel AdGuard DNS arasındaki fark
 
@@ -199,7 +199,7 @@ AdGuard DNS oldukça esnektir ve tabletler, bilgisayarlar, yönlendiriciler ve o
 
 ### Sunucu ve ayarlar
 
-Bu bölümde, AdGuard DNS'de "sunucu'nun" ne olduğu ve hangi ayarların kullanılabileceği açıklanmaktadır. Ayarlar, AdGuard DNS'in engellenen alan adlarına nasıl yanıt vereceğini özelleştirmenize ve DNS sunucunuza erişimi yönetmenize olanak tanır.
+This section explains what a server is in AdGuard DNS and what settings are available. Ayarlar, AdGuard DNS'in engellenen alan adlarına nasıl yanıt vereceğini özelleştirmenize ve DNS sunucunuza erişimi yönetmenize olanak tanır.
 
 [Sunucu ve ayarlar](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -214,3 +214,9 @@ Bu bölümde, AdGuard DNS'in işlevselliğini ince ayar yapmanıza olanak tanıy
 İstatistikler ve Sorgu günlüğü, cihazlarınızın etkinliği hakkında bilgi sağlar. *İstatistikler* sekmesi, Özel AdGuard DNS'inize bağlı cihazlar tarafından yapılan DNS isteklerinin bir özetini görüntülemenizi sağlar. Sorgu günlüğünde, her bir istekle ilgili bilgileri görüntüleyebilir ve ayrıca istekleri duruma, türe, şirkete, cihaza, zamana ve ülkeye göre sıralayabilirsiniz.
 
 [İstatistik ve Sorgu günlüğü](/private-dns/statistics-and-log/statistics.md)
+
+### Özel alan adları
+
+AdGuard DNS Kurumsal ve Takım aboneleri varsayılan `d.adguard-dns.com` yerine kendi alan adlarını (örneğin `dns.example.com`) kullanabilirler. Bu ayar, AdGuard DNS tarafından sağlanan tam reklam engelleme ve gizlilik özelliklerini korurken kurumsal güvenlik politikalarıyla sorunsuz entegrasyon sağlar.
+
+[Özel alan adları](/private-dns/server-and-settings/custom-domains.md)

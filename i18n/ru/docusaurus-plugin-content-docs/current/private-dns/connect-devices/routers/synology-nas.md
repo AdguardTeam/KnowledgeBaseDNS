@@ -15,10 +15,10 @@ sidebar_position: 9
 4. Выберите «Сетевой интерфейс» или «Настройки сети».
 5. Выберите сеть Wi-Fi или проводное соединение.
 6. Выберите «Ручной DNS». Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
-    - IPv4: `94.140.14.49` и `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` и `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 7. Сохраните настройки.
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
 - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+- [Привязанные IP-адреса](private-dns/connect-devices/other-options/linked-ip.md)

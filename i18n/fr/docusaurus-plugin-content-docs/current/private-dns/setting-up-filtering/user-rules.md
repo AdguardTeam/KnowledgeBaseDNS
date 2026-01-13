@@ -1,6 +1,6 @@
 ---
 title: Règles utilisateur
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Qu'est-ce que c'est et pourquoi en avez-vous besoin
@@ -23,8 +23,8 @@ Pour configurer les règles utilisateur :
 
 5. Vous trouverez plusieurs options pour ajouter des règles utilisateur.
 
-    - Le moyen le plus facile est d'utiliser le générateur. Pour l'utiliser, cliquez sur _Ajouter nouvelle règle_ → Entrez le nom du domaine que vous souhaitez bloquer ou débloquer → Cliquez sur _Ajouter la règle_
-        ![Ajouter règle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - Le moyen avancé est d'utiliser l'éditeur de règles. Cliquez sur _Ouvrir l'éditeur_ et entrez les règles de blocage selon la [syntaxe](/general/dns-filtering-syntax/)
+   - Le moyen le plus facile est d'utiliser le générateur. Pour l'utiliser, cliquez sur _Ajouter nouvelle règle_ → Entrez le nom du domaine que vous souhaitez bloquer ou débloquer → Cliquez sur _Ajouter la règle_
+     ![Ajouter règle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - Le moyen avancé est d'utiliser l'éditeur de règles. Cliquez sur _Ouvrir l'éditeur_ et entrez les règles de blocage selon la [syntaxe](/general/dns-filtering-syntax/)
 
 Cette fonctionnalité vous permet de [rediriger une requête vers un autre domaine en remplaçant le contenu de la requête DNS](/general/dns-filtering-syntax/#dnsrewrite-modifier).

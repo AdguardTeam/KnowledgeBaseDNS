@@ -1,6 +1,6 @@
 ---
 title: ブロックリスト
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## ブロックリストとは
@@ -57,7 +57,7 @@ AdGuard DNS フィルタのリストを拡張したい場合は、[GitHubのHost
 3. 「Blocklist request」をクリックし、フォームに記入します。
 4. フォームに記入したら、「_Submit new issue_」をクリックします。
 
-ご提案のフィルタのブロックルールが既存のリストと重複しない場合、リポジトリに追加されます。
+If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
 
 ## ユーザールール
 

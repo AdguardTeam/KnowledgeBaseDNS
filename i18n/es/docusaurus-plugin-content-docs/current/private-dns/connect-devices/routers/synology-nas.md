@@ -15,8 +15,8 @@ Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS
 4. Selecciona _Interfaz de Red_ o _Configuración de Red_.
 5. Selecciona tu red Wi-Fi o conexión por cable.
 6. Elige _DNS manual_. Selecciona _Usar estos servidores DNS_ o _Especificar servidor DNS manualmente_ e introduce las siguientes direcciones de servidor DNS:
-    - IPv4: `94.140.14.49` y `94.140.14.59`
-    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
+   - IPv4: `94.140.14.49` y `94.140.14.59`
+   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
 7. Guarda la configuración.
 8. Vincula tu IP (o tu IP dedicada si tienes una suscripción de equipo).
 

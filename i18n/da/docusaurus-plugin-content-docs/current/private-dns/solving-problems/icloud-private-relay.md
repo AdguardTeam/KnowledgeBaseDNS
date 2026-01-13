@@ -9,7 +9,7 @@ Når iCloud Private Relay anvendes, vil AdGuard DNS-kontrolpanelet (og den tilkn
 
 ![Enhed er ikke tilsluttet](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-not-connected.jpeg)
 
-For at løse dette problem, tillad via enhedens indstillinger, at AdGuard-websteder kan se din IP-adresse.
+For at løse dette problem, tillad via enhedens indstillinger, at AdGuard-websteder kan se IP-adressen.
 
 - iPhone eller iPad:
 
@@ -29,7 +29,7 @@ For at løse dette problem, tillad via enhedens indstillinger, at AdGuard-webste
 
     1. Gentag for `adguard.com`
 
-Findes muligheden for midlertidigt at tillade et websted at se din IP-adresse ikke, så opdatér enheden til seneste version af iOS, iPadOS eller macOS, og forsøg dernæst igen.
+Findes muligheden for midlertidigt at tillade et websted at se IP-adressen ikke, så opdatér enheden til seneste version af iOS, iPadOS eller macOS, og forsøg dernæst igen.
 
 Nu skulle enheden blive vist korrekt i AdGuard DNS-kontrolpanelet:
 

@@ -13,16 +13,16 @@ Most likely, you haven’t configured your device to use AdGuard Home as the def
 
 2. Execute `nslookup example.org`. It will print something like this:
 
-  ```none
-  Server: 192.168.0.1
-  Address: 192.168.0.1#53
+   ```none
+   Server: 192.168.0.1
+   Address: 192.168.0.1#53
 
-  Non-authoritative answer:
-  Name: example.org
-  Address: <IPv4>
-  Name: example.org
-  Address: <IPv6>
-  ```
+   Non-authoritative answer:
+   Name: example.org
+   Address: <IPv4>
+   Name: example.org
+   Address: <IPv6>
+   ```
 
 3. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. See [below](#defaultdns) how to do this.
 
@@ -76,23 +76,23 @@ To troubleshoot a complicated issue, the verbose-level logging is sometimes requ
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Configure AdGuard Home to write verbose-level logs:
 
-  1. Open `AdGuardHome.yaml` in your editor.
+   1. Open `AdGuardHome.yaml` in your editor.
 
-  2. Set `log.file` to the desired path of the log file, for example `/tmp/aghlog.txt`. Note that the directory must exist.
+   2. Set `log.file` to the desired path of the log file, for example `/tmp/aghlog.txt`. Note that the directory must exist.
 
-  3. Set `log.verbose` to `true`.
+   3. Set `log.verbose` to `true`.
 
 3. Restart AdGuard Home and reproduce the issue:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 4. Once you’re done with the debugging, set `log.verbose` back to `false`.
 
@@ -121,29 +121,29 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Open `AdGuardHome.yaml` in your editor.
 
 3. Set the `dns.parental_block_host` or `dns.safebrowsing_block_host` settings to the IP address of the server (in this example, `192.168.123.45`):
 
-  ```yaml
-  # …
-  dns:
-    # …
+   ```yaml
+   # …
+   dns:
+     # …
 
-    # NOTE: Change to the actual IP address of your server.
-    parental_block_host: 192.168.123.45
-    safebrowsing_block_host: 192.168.123.45
-  ```
+     # NOTE: Change to the actual IP address of your server.
+     parental_block_host: 192.168.123.45
+     safebrowsing_block_host: 192.168.123.45
+   ```
 
 4. Restart AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ### Custom block page for other filters
 
@@ -159,23 +159,23 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 1. Stop AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s stop
-  ```
+   ```sh
+   ./AdGuardHome -s stop
+   ```
 
 2. Open `AdGuardHome.yaml` in your editor.
 
 3. Set the `http.address` setting to a new network interface. Bijvoorbeeld:
 
-  - `0.0.0.0:0` to listen on all network interfaces;
-  - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
-  - `127.0.0.1:0` to listen on the local loopback interface only.
+   - `0.0.0.0:0` to listen on all network interfaces;
+   - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
+   - `127.0.0.1:0` to listen on the local loopback interface only.
 
 4. Restart AdGuard Home:
 
-  ```sh
-  ./AdGuardHome -s start
-  ```
+   ```sh
+   ./AdGuardHome -s start
+   ```
 
 ## How do I set up AdGuard Home as default DNS server? {#defaultdns}
 
@@ -221,32 +221,32 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
 
 1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
 
-  ```sh
-  sudo mkdir -p /etc/systemd/resolved.conf.d
-  ```
+   ```sh
+   sudo mkdir -p /etc/systemd/resolved.conf.d
+   ```
 
 2. Deactivate `DNSStubListener` and update DNS server address. To do that, create a new file, `/etc/systemd/resolved.conf.d/adguardhome.conf`, with the following content:
 
-  ```service
-  [Resolve]
-  DNS=127.0.0.1
-  DNSStubListener=no
-  ```
+   ```service
+   [Resolve]
+   DNS=127.0.0.1
+   DNSStubListener=no
+   ```
 
 Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
 
 1. Activate another `resolv.conf` file:
 
-  ```sh
-  sudo mv /etc/resolv.conf /etc/resolv.conf.backup
-  sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
-  ```
+   ```sh
+   sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+   sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+   ```
 
 2. Restart `DNSStubListener`:
 
-  ```sh
-  sudo systemctl reload-or-restart systemd-resolved
-  ```
+   ```sh
+   sudo systemctl reload-or-restart systemd-resolved
+   ```
 
 After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Geen submappen gebruiken met de Apache reverse HTTP-proxy.  Het is een bekend probleem ([#6604]) dat Apache relatieve omleidingen anders behandelt dan andere webservers. Dit veroorzaakt problemen met de AdGuard Home-webinterface.
+Geen submappen gebruiken met de Apache reverse HTTP-proxy.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. Dit veroorzaakt problemen met de AdGuard Home-webinterface.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -321,20 +321,20 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
 
 2. As `root`, execute the following command to change the security context of the file:
 
-  ```sh
-  chcon -t bin_t /usr/local/bin/AdGuardHome
-  ```
+   ```sh
+   chcon -t bin_t /usr/local/bin/AdGuardHome
+   ```
 
 3. Add the required firewall rules in order to make it reachable through the network. Bijvoorbeeld:
 
-  ```sh
-  firewall-cmd --new-zone=adguard --permanent
-  firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
-  firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
-  firewall-cmd --zone=adguard --add-port=53/udp --permanent
-  firewall-cmd --zone=adguard --add-port=80/tcp --permanent
-  firewall-cmd --reload
-  ```
+   ```sh
+   firewall-cmd --new-zone=adguard --permanent
+   firewall-cmd --zone=adguard --add-source=192.168.0.14/24 --permanent
+   firewall-cmd --zone=adguard --add-port=3000/tcp --permanent
+   firewall-cmd --zone=adguard --add-port=53/udp --permanent
+   firewall-cmd --zone=adguard --add-port=80/tcp --permanent
+   firewall-cmd --reload
+   ```
 
 If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
 
@@ -363,72 +363,72 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
 
-  ```sh
-  curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
-  Or, with `wget`:
+   Or, with `wget`:
 
-  ```sh
-  wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
-  'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
-  ```
+   ```sh
+   wget -O '/tmp/AdGuardHome_linux_amd64.tar.gz'\
+   'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz'
+   ```
 
 2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
 
 3. Stop AdGuard Home:
 
-  ```sh
-  sudo ./AdGuardHome -s stop
-  ```
+   ```sh
+   sudo ./AdGuardHome -s stop
+   ```
 
-  :::note OpenBSD
+   :::note OpenBSD
 
-  On OpenBSD, you will probably want to use `doas` instead of `sudo`.
+   On OpenBSD, you will probably want to use `doas` instead of `sudo`.
 
-  :::
+   :::
 
 4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `~/my-agh-backup`:
 
-  ```sh
-  mkdir -p ~/my-agh-backup
-  cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
-  ```
+   ```sh
+   mkdir -p ~/my-agh-backup
+   cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
+   ```
 
 5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
 
-  ```sh
-  tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
-  ```
+   ```sh
+   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   ```
 
-  On macOS, type something like:
+   On macOS, type something like:
 
-  ```sh
-  unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
-  ```
+   ```sh
+   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   ```
 
 6. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
+   ```
 
-  On macOS, something like:
+   On macOS, something like:
 
-  ```sh
-  sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
-  ```
+   ```sh
+   sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
+   ```
 
-  You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
 
-  You can now remove the temporary directory.
+   You can now remove the temporary directory.
 
 7. Restart AdGuard Home:
 
-  ```sh
-  sudo ./AdGuardHome -s start
-  ```
+   ```sh
+   sudo ./AdGuardHome -s start
+   ```
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
@@ -438,51 +438,51 @@ In all examples below, the PowerShell must be run as Administrator.
 
 1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
-  Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   $aghUri = 'https://static.adguard.com/adguardhome/release/AdGuardHome_windows_amd64.zip'
+   Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
+   ```
 
 2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
 
 3. Stop AdGuard Home:
 
-  ```ps1
-  .\AdGuardHome.exe -s stop
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s stop
+   ```
 
 4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `my-agh-backup`:
 
-  ```ps1
-  $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
-  New-Item -Path $newDir -ItemType Directory
-  Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
-  ```
+   ```ps1
+   $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
+   New-Item -Path $newDir -ItemType Directory
+   Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
+   ```
 
 5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to extract it to a temporary directory:
 
-  ```ps1
-  $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
-  Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
-  ```
+   ```ps1
+   $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
+   Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
+   ```
 
 6. Replace the old AdGuard Home executable file with the new one. Bijvoorbeeld:
 
-  ```ps1
-  $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
-  Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
-  ```
+   ```ps1
+   $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'
+   Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
+   ```
 
-  You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
 
-  You can now remove the temporary directory.
+   You can now remove the temporary directory.
 
 7. Restart AdGuard Home:
 
-  ```ps1
-  .\AdGuardHome.exe -s start
-  ```
+   ```ps1
+   .\AdGuardHome.exe -s start
+   ```
 
 ## How do I uninstall AdGuard Home? {#uninstall}
 

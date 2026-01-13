@@ -1,6 +1,6 @@
 ---
 title: Sicherheitsfunktionen
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Sicherheitseinstellungen in AdGuard DNS sind eine Reihe von Konfigurationen, die dem Schutz der Nutzerdaten dienen.

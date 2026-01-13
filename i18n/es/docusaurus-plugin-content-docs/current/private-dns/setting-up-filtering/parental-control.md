@@ -1,15 +1,15 @@
 ---
 title: Control parental
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## ¿Qué es?
 
-El control parental es un conjunto de configuraciones que le da la flexibilidad para personalizar el acceso a ciertos sitios web con contenido "sensible".  Puedes usar esta función para restringir el acceso de tus hijos a sitios para adultos, personalizar consultas de búsqueda, bloquear el uso de servicios populares y más.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## Cómo configurarlo
 
-Puedes configurar todas las funciones en tus servidores de forma flexible, incluyendo la función de control parental. [En el artículo correspondiente](private-dns/server-and-settings/server-and-settings.md), puedes familiarizarte con lo que es un "servidor" en AdGuard DNS y aprender a crear diferentes servidores con diferentes conjuntos de configuración.
+Puedes configurar todas las funciones en tus servidores de forma flexible, incluyendo la función de control parental. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Luego, ve a la configuración del servidor seleccionado y habilita las configuraciones requeridas.
 
@@ -33,7 +33,7 @@ Elimina la opción de ver y publicar comentarios en videos e interactuar con con
 
 ### Servicios y sitios web bloqueados
 
-AdGuard DNS bloquea el acceso a servicios populares con un solo clic. Es útil si no deseas que los dispositivos conectados visiten Instagram y YouTube, por ejemplo.
+AdGuard DNS bloquea el acceso a servicios populares con un solo clic. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Servicios bloqueados \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

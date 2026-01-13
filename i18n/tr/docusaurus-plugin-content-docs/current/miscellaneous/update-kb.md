@@ -3,7 +3,7 @@ title: 'Bilgi Tabanını güncelleme'
 sidebar_position: 1
 ---
 
-Bu Bilgi Tabanının amacı, herkese AdGuard DNS ile ilgili her türlü konuda en güncel bilgileri sağlamaktır. Ancak işler sürekli değişiyor ve bazen bir makale artık mevcut durumu yansıtmıyor - her bir bilgiyi takip edecek ve yeni sürümler yayınlandığında buna göre güncelleyecek çok fazla kişi yok.
+Bu Bilgi Tabanının amacı, herkese AdGuard DNS ile ilgili her türlü konuda en güncel bilgileri sağlamaktır. But things constantly change, and sometimes an article doesn’t reflect the current state of things anymore — there are simply not so many of us to keep an eye on every single bit of information and update it accordingly when new versions are released.
 
 Bu nedenle tüm BT içeriğimizi [GitHub'a](https://github.com/AdguardTeam/KnowledgeBaseDNS) yerleştirdik ve artık kelimenin tam anlamıyla herkes, tamamen yeni makalelerin yanı sıra mevcut makalelere düzenleme ve çeviri önererek buna katkıda bulunabilir.
 
@@ -15,7 +15,7 @@ Başlamaya hazır olduğunuzda, [KnowledgeBaseDNS deposunda](https://github.com/
 
 Bilgi Tabanı sitesi, modern bir statik site oluşturucu olan Docusaurus 2 kullanılarak oluşturulmuştur. Değişiklikler veya eklemeler önerirken, tüm belgelerin platformun ilkelerine uygun olması gerektiğini göz önünde bulundurun. Onlar hakkında [bu kılavuzu](https://docusaurus.io/docs/category/guides) okuyabilirsiniz.
 
-Önerdiğiniz değişiklikleri önizlemek için bu Bilgi Tabanını bilgisayarınıza yerel olarak konuşlandırabilirsiniz. Bunun nasıl yapılacağına ilişkin ayrıntılı talimatlar, bu Bilgi Tabanının GitHub sayfasındaki [README.md dosyasında](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) bulunabilir.
+Önerdiğiniz değişiklikleri önizlemek için bu Bilgi Tabanını bilgisayarınıza yerel olarak konuşlandırabilirsiniz. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/master/README.md) on this Knowledge Base’s GitHub page.
 
 ## Makaleleri çevirme {#translate-adguard}
 

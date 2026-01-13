@@ -10,7 +10,7 @@ Primero debes añadir tu router a la interfaz de AdGuard DNS:
 1. Ve a _Dashboard_ y haz clic en _Conectar nuevo dispositivo_.
 2. En el menú desplegable _Tipo de dispositivo_, selecciona Router.
 3. Selecciona la marca del router y dale un nombre al dispositivo.
-    ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+   ![Conectando dispositivo \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 A continuación se presentan instrucciones para diferentes modelos de routers. Por favor, selecciona el que necesitas:
 

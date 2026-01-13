@@ -1,15 +1,15 @@
 ---
 title: Ebeveyn denetimi
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## Bu nedir
 
-Ebeveyn denetimi, "hassas" içerik barındıran belirli sitelere erişimi özelleştirme esnekliği sağlayan bir dizi ayardır.  Bu özelliği çocuklarınızın yetişkin sitelerine erişimini kısıtlamak, arama sorgularını özelleştirmek, popüler hizmetlerin kullanımını engellemek ve daha fazlası için kullanabilirsiniz.
+Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## Nasıl ayarlanır
 
-Sunucularınızdaki ebeveyn denetimi özelliği de dâhil olmak üzere tüm özellikleri esnek bir şekilde yapılandırabilirsiniz. [İlgili makalede](private-dns/server-and-settings/server-and-settings.md), AdGuard DNS'de "sunucunun" ne olduğunu ve farklı ayar kümeleriyle farklı sunucuların nasıl oluşturulacağını öğrenebilirsiniz.
+Sunucularınızdaki ebeveyn denetimi özelliği de dâhil olmak üzere tüm özellikleri esnek bir şekilde yapılandırabilirsiniz. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
 Daha sonra seçili sunucunun ayarlarına giderek gerekli yapılandırmaları etkinleştirin.
 
@@ -33,7 +33,7 @@ YouTube'daki videoların altındaki yorumları görüntüleme ve gönderme ve 18
 
 ### Engellenen hizmetler ve siteler
 
-AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. Örneğin, bağlı cihazların Instagram ve YouTube'u ziyaret etmesini istemiyorsanız kullanışlıdır.
+AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
 
 ![Engellenen hizmetler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 

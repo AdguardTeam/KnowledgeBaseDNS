@@ -10,7 +10,7 @@ toc_max_heading_level: 3
 1. 进入「_仪表盘_」并点击「_连接新设备_」。
 2. 在下拉菜单「_设备类型_」中，选择路由器。
 3. 选择路由器品牌并设备的命名。
-    ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
+   ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
 以下是不同路由器型号的指示说明。 请选择您需要的型号：
 

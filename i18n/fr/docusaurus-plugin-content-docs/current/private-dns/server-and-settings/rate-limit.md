@@ -9,7 +9,7 @@ Sans limites de requêtes, les serveurs DNS sont vulnérables à une surcharge, 
 
 ## Comment fonctionne la limite de requêtes
 
-La limitation de taux DNS fonctionne généralement en définissant des seuils sur le nombre de requêtes qu'un client (adresse IP) peut envoyer à un serveur DNS sur une certaine période. Si vous rencontrez des problèmes avec la limite de taux actuelle de AdGuard DNS et que vous êtes sur un plan _Èquipe_ ou _Entreprise_, vous pouvez soumettre une demande d'augmentation de la limite de taux.
+La limitation de taux DNS fonctionne généralement en définissant des seuils sur le nombre de requêtes qu'un client (adresse IP) peut envoyer à un serveur DNS sur une certaine période. Si vous rencontrez des problèmes avec la limite de taux actuelle de AdGuard DNS et que vous êtes sur un plan _Équipe_ ou _Entreprise_, vous pouvez soumettre une demande d'augmentation de la limite de taux.
 
 ## Comment demander une augmentation de la limite de requêtes DNS
 
@@ -19,6 +19,6 @@ Si vous êtes abonné au plan AdGuard DNS _Team_ ou _Enterprise_, vous pouvez de
 
 2. Appuyez sur _Requête d'augmentation de limite_ pour contacter notre Équipe d'assistance et postuler pour l'augmentation de la limite de taux. Vous devez fournir votre CIDR et la limite que vous souhaitez avoir
 
-     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
-3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email
+3. Votre requête sera examinée dans un délai de 1 à 3 jours ouvrables. Nous vous contacterons au sujet des changements par email

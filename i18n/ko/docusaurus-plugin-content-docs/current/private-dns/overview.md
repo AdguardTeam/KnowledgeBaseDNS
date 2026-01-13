@@ -23,7 +23,7 @@ AdGuard DNS를 사용하면 개인 DNS 서버를 설정하여 DNS 요청을 해�
 
 오늘날에는 TV, 냉장고, 스마트 전구, 스피커 등을 인터넷에 연결할 수 있습니다. 그러나 부인할 수 없는 편리함과 함께 추적기와 광고에 노출됩니다. 단순한 브라우저 기반 광고 차단기는 이 경우 사용자를 보호하지 못하지만, 트래픽을 필터링하고 콘텐츠 및 추적기를 차단하도록 설정할 수 있는 AdGuard DNS는 보호할 수 있습니다.
 
-한때 AdGuard 제품군에는 [공용 AdGuard DNS](../public-dns/overview.md)와 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)만 포함되어 있었습니다. 이러한 솔루션은 일부 사용자에게 잘 작동하지만, 다른 사용자에게는 공용 AdGuard DNS가 유연한 구성이 부족하고, AdGuard Home은 단순성이 부족합니다. 이 두 제품의 접점에서 사설 AdGuard DNS가 탄생했습니다. AdGuard DNS는 사용하기 쉬운 간단한 대시보드를 통해 사용자 정의 기능, 제어 및 정보를 제공합니다.
+한때 AdGuard 제품군에는 [공용 AdGuard DNS](../public-dns/overview.md)와 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)만 포함되어 있었습니다. 이러한 솔루션은 일부 사용자에게 잘 작동하지만, 다른 사용자에게는 공용 AdGuard DNS가 유연한 구성이 부족하고, AdGuard Home은 단순성이 부족합니다. That’s where private AdGuard DNS comes into play. AdGuard DNS는 사용하기 쉬운 간단한 대시보드를 통해 사용자 정의 기능, 제어 및 정보를 제공합니다.
 
 ### 공용과 사설 AdGuard DNS의 차이
 
@@ -199,7 +199,7 @@ AdGuard DNS는 태블릿, PC, 라우터, 게임 콘솔 등 다양한 기기에�
 
 ### 서버 및 설정
 
-이 섹션에서는 AdGuard DNS에서 '서버'가 무엇이며 어떤 설정을 사용할 수 있는지 설명합니다. 이 설정을 통해 AdGuard DNS가 차단된 도메인에 응답하는 방법을 구성하고 DNS 서버에 대한 액세스를 제어할 수 있습니다.
+This section explains what a server is in AdGuard DNS and what settings are available. 이 설정을 통해 AdGuard DNS가 차단된 도메인에 응답하는 방법을 구성하고 DNS 서버에 대한 액세스를 제어할 수 있습니다.
 
 [서버 및 설정](/private-dns/server-and-settings/server-and-settings.md)
 
@@ -214,3 +214,9 @@ AdGuard DNS는 태블릿, PC, 라우터, 게임 콘솔 등 다양한 기기에�
 통계 및 요청 로그는 기기 활동에 대한 정보를 제공합니다. 여기 *통계* 탭에서는 사설 AdGuard DNS에 연결된 기기에 의해 생성된 DNS 요청의 요약을 볼 수 있습니다. 쿼리 로그에서 각 요청에 대한 정보를 확인하고 요청을 상태, 유형, 기업, 기기, 시간 및 국가별로 정렬할 수 있습니다.
 
 [통계와 쿼리 로그](/private-dns/statistics-and-log/statistics.md)
+
+### Custom domains
+
+AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
+
+[Custom domains](/private-dns/server-and-settings/custom-domains.md)

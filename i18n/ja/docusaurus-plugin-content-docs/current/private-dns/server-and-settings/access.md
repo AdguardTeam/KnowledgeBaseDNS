@@ -3,7 +3,7 @@ title: アクセス設定
 sidebar_position: 3
 ---
 
-アクセス設定を構成することで、お使いのAdGuard DNSを不正アクセスから保護できます。 例えば、専用のIPv4アドレスを使用しているときに、スニファーを使用した攻撃者がそれを認識し、要求で爆撃しているとします。 問題ありません。厄介なドメインまたはIPアドレスをリストに追加するだけで、もう邪魔されることはありません！
+アクセス設定を構成することで、お使いのAdGuard DNSを不正アクセスから保護できます。 例えば、専用のIPv4アドレスを使用しているときに、スニファーを使用した攻撃者がそれを認識し、要求で爆撃しているとします。 No problem, just add the pesky domain or IP address to the list and it won’t bother you anymore!
 
 ブロックされたリクエストはクエリ ログに表示されず、合計制限にもカウントされません。
 
@@ -19,7 +19,7 @@ sidebar_position: 3
 
 :::note 【重要】
 
-アクセス設定を適用する前に、自分のIPアドレスがブロックされていないことを確認してください。 ブロックされていると、ネットワークにアクセスできなくなります。 もしそうなった場合は、DNSサーバーから切断し、アクセス設定に移動し、設定を適宜調整してください。
+Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. もしそうなった場合は、DNSサーバーから切断し、アクセス設定に移動し、設定を適宜調整してください。
 
 :::
 

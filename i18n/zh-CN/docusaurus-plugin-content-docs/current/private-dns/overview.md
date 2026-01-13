@@ -214,3 +214,9 @@ AdGuard DNS 非常灵活，可设置在各种设备上，包括平板电脑、PC
 统计和查询日志可让用户深入了解设备的活动。 在「*统计数据*」标签中，用户可以查看连接私人 AdGuard DNS 的设备发出的 DNS 请求汇总。 在查询日志中，可以查看每个请求的信息，还可以按状态、类型、公司、设备、时间和国家/地区对请求进行排序。
 
 [统计数字与查询日志](/private-dns/statistics-and-log/statistics.md)
+
+### 自定义域名
+
+AdGuard DNS 企业版和团队版订阅用户可以使用自己的域名（如 `dns.example.com`），而不是默认的 `d.adguard-dns.com`。 此设置通过确保与企业安全政策的无缝集成，同时保留 AdGuard DNS 提供的完整阻止广告和隐私保护功能。
+
+[自定义域名](/private-dns/server-and-settings/custom-domains.md)

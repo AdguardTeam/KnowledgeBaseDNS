@@ -3,15 +3,15 @@ title: 结构化 DNS 错误（SDE）
 sidebar_position: 5
 ---
 
-AdGuard DNS v2.10 发布后，AdGuard 成为首个应用[**结构化 DNS 错误**](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)（英语：Structured DNS Errors，简称：SDE）支持的公共 DNS 解析器，是 [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/) 的更新。 新功能允许 DNS 服务器在 DNS 响应中提供有关已拦截网站的详细信息，而不局限于通用的浏览器消息。 在本文中，我们将解释什么是**结构化 DNS 错误**，以及其工作原理。
+AdGuard DNS v2.10 发布后，AdGuard 成为首个应用[**结构化 DNS 错误**](https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error/09/)（英语：Structured DNS Errors，简称：SDE）支持的公共 DNS 解析器，是 [RFC 8914](https://datatracker.ietf.org/doc/rfc8914/) 的更新。 新功能允许 DNS 服务器在 DNS 响应中提供有关已拦截网站的详细信息，而不局限于通用的浏览器消息。 In this article, we’ll explain what _Structured DNS Errors_ are and how they work.
 
 ## 什么是结构化 DNS 错误
 
-由于 DNS 过滤，当对广告或跟踪域名的请求被拦截时，用户可能会在网页上看到空白区域，或者甚至完全没有注意到 DNS 过滤的发生。 然而，如果整个网站在 DNS 级别被拦截，用户将完全无法访问网页。 尝试访问已拦截的网站，用户可能会看到浏览器显示的通用「无法访问网站」错误。
+由于 DNS 过滤，当对广告或跟踪域名的请求被拦截时，用户可能会在网页上看到空白区域，或者甚至完全没有注意到 DNS 过滤的发生。 然而，如果整个网站在 DNS 级别被拦截，用户将完全无法访问网页。 When trying to access a blocked website, the user may see a generic “This site can’t be reached” error displayed by the browser.
 
-![无法访问网站的错误](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
+![“This site can’t be reached” error](https://cdn.adtidy.org/content/blog/dns/dns_error.png)
 
-网页上并没有解释发生错误的原因。 这让用户感到困惑，不明白为什么有一个网站无法访问，往往导致用户假设自己的互联网连接或 DNS 解析器出现了问题。
+Such errors don’t explain what happened and why. 这让用户感到困惑，不明白为什么有一个网站无法访问，往往导致用户假设自己的互联网连接或 DNS 解析器出现了问题。
 
 为了澄清这一点， DNS 服务器将用户重定向到他们的网页上并提供解释。 不过，HTTPS 网站（绝大多数网站）需要单独的证书才能被访问。
 

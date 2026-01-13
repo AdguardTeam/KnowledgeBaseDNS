@@ -65,7 +65,7 @@ Google Chrome, oft der Standardbrowser auf Android, verwendet einen eigenen DNS-
 
 Gehen Sie folgendermaßen vor, um den DNS-Cache Ihres Android-Geräts zu leeren, indem Sie die WLAN-Netzwerkeinstellungen auf „Statisch“ ändern:
 
-1. Öffnen Sie *Einstellungen ➜ WLAN* und wählen Sie das Netzwerk, mit dem Sie verbunden sind
+1. Gehen Sie zu *Einstellungen → WLAN* und wählen Sie das Netzwerk aus, mit dem Sie verbunden sind.
 1. Suchen Sie nach IP-Einstellungen und wählen Sie *Statisch*
 1. Füllen Sie die erforderlichen Felder aus. Die notwendigen Informationen erhalten Sie von Ihrem Netzwerkadministrator oder auf der Konfigurationsseite Ihres Routers
 1. Nachdem Sie die erforderlichen Informationen eingegeben haben, verbinden Sie sich erneut mit Ihrem WLAN-Netzwerk. Durch diese Aktion wird Ihr Gerät gezwungen, seine IP- und DNS-Einstellungen zu aktualisieren und den DNS-Cache zu leeren

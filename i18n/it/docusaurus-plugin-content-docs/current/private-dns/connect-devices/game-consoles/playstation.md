@@ -24,12 +24,12 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. Nel campo _Server DNS_, inserisci uno dei seguenti indirizzi del server DNS:
-    - `94.140.14.49`
-    - `94.140.14.59`
-10. Select _Next_ to continue.
+   - `94.140.14.49`
+   - `94.140.14.59`
+10. Seleziona _Avanti_ per continuare.
 11. On the _MTU Settings_ screen, select _Automatic_.
 12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
+13. Seleziona _Verifica connessione Internet_ per testare le nuove impostazioni DNS.
 14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
 
 ### For PlayStation 5
@@ -43,12 +43,12 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 7. For _DHCP Host Name_, select _Do Not Specify_.
 8. For _DNS Settings_, select _Manual_.
 9. Nel campo _Server DNS_, inserisci uno dei seguenti indirizzi del server DNS:
-    - `94.140.14.49`
-    - `94.140.14.59`
-10. Select _Next_ to continue.
-11. On the _MTU Settings_ screen, select _Automatic_.
-12. On the _Proxy Server_ screen, select _Do Not Use_.
-13. Select _Test Internet Connection_ to test your new DNS settings.
+   - `94.140.14.49`
+   - `94.140.14.59`
+10. Seleziona _Avanti_ per continuare.
+11. Nella schermata _Impostazioni MTU_, seleziona _Automatico_.
+12. Nella schermata _Server proxy_, seleziona _Non utilizzare_.
+13. Seleziona _Verifica connessione Internet_ per testare le nuove impostazioni DNS.
 14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
 
 Sarebbe preferibile utilizzare un IP collegato (o un IP dedicato se hai un abbonamento Team):

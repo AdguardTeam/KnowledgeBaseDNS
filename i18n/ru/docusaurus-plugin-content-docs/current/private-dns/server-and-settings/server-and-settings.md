@@ -19,9 +19,12 @@ sidebar_position: 1
 - Сервер, который блокирует контент для взрослых и определенные сервисы
 - Сервер, который блокирует контент для взрослых только в определенное выбранное вами время
 
-Для получения дополнительной информации о фильтрации трафика и правилах блокировки ознакомьтесь со статьей [«Как настроить фильтрацию в AdGuard DNS»](/private-dns/setting-up-filtering/blocklists.md).
+Больше информации о фильтрации трафика и правилах блокировки — в статье [«Как настроить фильтрацию в AdGuard DNS»](/private-dns/setting-up-filtering/blocklists.md).
 
-Если вас интересуют конкретные настройки, доступны специальные статьи:
+О конкретных настройках читайте в специальных статьях:
 
 - [Расширенные настройки](/private-dns/server-and-settings/advanced.md)
 - [Настройки доступа](/private-dns/server-and-settings/access.md)
+- [Лимит запросов](/private-dns/server-and-settings/rate-limit.md)
+- [Настройки доступа](/private-dns/server-and-settings/role-based-access.md)
+- [Пользовательские домены](/private-dns/server-and-settings/custom-domains.md)

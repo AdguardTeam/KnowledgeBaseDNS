@@ -14,9 +14,35 @@ AdGuard DNS 提供一个 REST API，可以使用它集成在您的应用程序�
 
 ## 身份验证
 
-### 生成访问令牌
+### API keys
 
-使用以下参数向指定 URL 发送 POST 请求以生成 `access_token`：
+When included in the request header, API keys can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: ApiKey {api_key}'
+```
+
+#### Generating API keys
+
+To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+
+### Access tokens
+
+When included in the request header, access tokens can be used to authorize requests to User API.
+
+#### Request example
+
+``` bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
+    -H 'Authorization: Bearer {access_token}'
+```
+
+#### 示例响应
+
+Make a POST request for the following URL with the given params to generate the `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -26,13 +52,13 @@ AdGuard DNS 提供一个 REST API，可以使用它集成在您的应用程序�
 | **password** | 账号密码                  |
 | mfa_token    | 双重身份验证令牌（如果已在账户设置中启用） |
 
-在响应中，您将同时获得 `access_token` 和 `refresh_token`。
+In the response, you will get both `access_token` and `refresh_token`.
 
-- `access_token` 将在指定的几秒后过期（由响应中的 `expires_in` 参数决定） 您可以重新生成一个新的 `access_token` 使用 `refresh_token`（参考：`Generate Access Token from Refresh Token`）。
+- `access_token` 将在指定的几秒后过期（由响应中的 `expires_in` 参数决定） You can regenerate a new `access_token` using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
 
-- `refresh_token` 是永久性的。 要撤销 `refresh_token`，请参阅：`Revoking a Refresh Token`。
+- `refresh_token` 是永久性的。 To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
 
-#### 示例请求
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -42,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-#### 示例响应
+##### Response example
 
 ```json
 {
@@ -53,11 +79,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### 刷新以生成访问令牌
+#### Generating access tokens from refresh tokens
 
-访问令牌有有效期限。 过期后，应用程序将需要使用 `refresh_token` 来请求新的 `access_token`。
+Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
 
-使用给定的参数发出以下 POST 请求以获取新的访问令牌：
+Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -65,7 +91,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 |:----------------- |:------------------------------- |
 | **refresh_token** | 必须使用 `REFRESH TOKEN` 来生成新的访问令牌。 |
 
-#### 示例请求
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
@@ -73,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-#### 示例响应
+##### Response example
 
 ```json
 {
@@ -84,13 +110,13 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-### 移除刷新令牌
+#### Revoking refresh tokens
 
-要取消刷新该令牌，请使用给定参数发出以下 POST 请求：
+To revoke a refresh token, make the following POST request with the given params:
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-#### 请求示例
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
@@ -101,15 +127,19 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 |:----------------- |:--------------------- |
 | **refresh_token** | 等待撤销的 `REFRESH TOKEN` |
 
-### 授权端点
+### Authorization endpoint
 
-> 要访问此端点，您需要通过 **devteam@adguard.com** 联系我们。 请描述您访问此端点的目的和用例，并提供重定向 URI。 获得批准后，您将收到一个唯一的客户端标识符，该标识符应用于 **client_id** 参数。
+:::warning
 
-**/oapi/v1/oauth_authorize** 端点用于与资源所有者交互，并获取访问受保护资源的授权。
+To access this endpoint, you need to contact us at **devteam@adguard.com**. Please describe the reason and use cases for this endpoint, as well as provide the redirect URI. Upon approval, you will receive a unique client identifier, which should be used for the **client_id** parameter.
 
-服务将用户重定向到 AdGuard 进行身份验证（如果您尚未登录），然后将您重定向回应用程序。
+:::
 
-**/oapi/v1/oauth_authorize** 端点的请求参数如下：
+The **/oapi/v1/oauth_authorize** endpoint is used to interact with the resource owner and get the authorization to access the protected resource.
+
+The service redirects you to AdGuard to authenticate (if you are not already logged in) and then back to your application.
+
+The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
 | 参数                | 详细信息                                                            |
 |:----------------- |:--------------------------------------------------------------- |
@@ -119,51 +149,44 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 | **state**         | 用于安全目的的不透明值。 如果请求中设置此请求参数，它将作为重定向 **redirect_uri** 的一部分返回给应用程序。 |
 | **aid**           | 联盟标识符                                                           |
 
-示例：
+例如：
 
 ```http request
 https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-用于告知授权服务器使用哪种授权类型 **response_type** 响应类型请求参数用法如下：
+To inform the authorization server which grant type to use, the **response_type** request parameter is used as follows:
 
 - 对于隐式授权，使用 **response_type=token** 包含访问令牌。
 
-一个成功的响应是 **302 Found**，将触发重定向到 **redirect_uri**（一个请求参数）。 响应参数嵌入在 **Location** 头部的 **redirect_uri** 参数的片段组件（即 `#` 后面的部分）中。
+A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
 
-示例：
+例如：
 
 ```http request
 HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
-### 访问 API
-
-获取访问令牌和刷新令牌后，可以通过在请求头标中传递访问令牌来进行 API 调用。
-
-- 标头名称应为 `Authorization`
-- 标头值应为 `Bearer {access_token}`
-
 ## API
 
 ### 参考资料
 
-请点击[此处](reference.md)查看方法参考。
+Please see the [method’s reference](reference.md).
 
-### 开源API 规范
+### OpenAPI spec
 
 OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
-您可以使用不同的工具来查看可用 API 方法的列表。 例如，您可以使用 Swagger 编辑器 [https://editor.swagger.io/][swagger] 打开此文件。
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ### 更新日志
 
-完整的 AdGuard DNS API 更新日志可在[此页面](private-dns/api/changelog.md)查看。
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## 反馈
 
-如果您希望使用新方法扩展此 API，请发送电子邮件至 `devteam@adguard.com` 并让我们知道您希望添加的内容。
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
 [openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

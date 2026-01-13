@@ -9,7 +9,7 @@ DNS 요청 제한은 DNS 서버가 특정 시간대에 처리할 수 있는 트�
 
 ## 요청 수 한도 제한의 작동 방식
 
-DNS 요청 한도는 일반적으로 클라이언트(IP 주소)가 주어진 기간 동안 DNS 서버에 쿼리할 수 있는 횟수에 제한을 추가하는 방식으로 작동합니다. 현재 AdGuard DNS 요청 한도에 문제가 있고 **엔터프라이즈** 또는 __팀\*\* 요금제를 사용 중인 경우, 요청 한도를 늘릴 수 있습니다.
+DNS 요청 한도는 일반적으로 클라이언트(IP 주소)가 주어진 기간 동안 DNS 서버에 쿼리할 수 있는 횟수에 제한을 추가하는 방식으로 작동합니다. If you’re having issues with the current AdGuard DNS rate limit and are on a _Team_ or _Enterprise_ plan, you can request a rate limit increase.
 
 ## DNS 요청 한도를 늘리는 방법
 
@@ -19,6 +19,6 @@ AdGuard DNS **엔터프라이즈** 또는 **팀** 요금제에 가입한 경우,
 
 2. **요청 한도 증가**를 클릭하여 지원팀에 문의하고 요청 한도 증가를 신청하세요. CIDR과 원하는 한도를 제공해야 합니다.
 
-     ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
+   ![Rate limit](https://cdn.adtidy.org/content/kb/dns/private/rate_limit.png)
 
 3. Your request will be reviewed within 1–3 working days. We will contact you about the changes by email

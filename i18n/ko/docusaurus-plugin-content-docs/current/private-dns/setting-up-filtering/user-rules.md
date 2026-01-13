@@ -1,6 +1,6 @@
 ---
 title: 사용자 규칙
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## 사용자 규칙이란 무엇이며 왜 필요한가요?
@@ -21,10 +21,10 @@ sidebar_position: 2
 
 4. **사용자 규칙** 옵션을 클릭합니다.
 
-5. 사용자 규칙을 추가할 수 있는 몇 가지 옵션이 있습니다.
+5. You’ll find several options for adding user rules.
 
-    - 가장 쉬운 방법은 생성기를 사용하는 것입니다. 생성기를 사용하려면 **새 규칙 추가** → 차단 또는 차단 해제할 도메인의 이름을 입력하고 **규칙 추가**를 클릭합니다.
-        ![규칙 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
-    - 고급 방법은 규칙 편집기를 사용하는 것입니다. **편집기 열기**를 클릭하고 [구문](/general/dns-filtering-syntax/)에 따라 차단 규칙을 입력하세요.
+   - 가장 쉬운 방법은 생성기를 사용하는 것입니다. 생성기를 사용하려면 **새 규칙 추가** → 차단 또는 차단 해제할 도메인의 이름을 입력하고 **규칙 추가**를 클릭합니다.
+     ![규칙 추가 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/userrules_step5.png)
+   - 고급 방법은 규칙 편집기를 사용하는 것입니다. **편집기 열기**를 클릭하고 [구문](/general/dns-filtering-syntax/)에 따라 차단 규칙을 입력하세요.
 
 이 기능을 사용하면 [DNS 쿼리의 내용을 교체하여 다른 도메인으로 쿼리를 리디렉션](/general/dns-filtering-syntax/#dnsrewrite-modifier)할 수 있습니다.

@@ -214,3 +214,9 @@ I dette afsnit beskriver vi en række indstillinger til finjustering af funktion
 Statistik- og forespørgselslog giver indsigt i aktiviteten på enhederne. Fanen *Statistik* viser en oversigt over DNS-forespørgsler foretaget af enheder tilkoblet Private AdGuard DNS. Forespørgselsloggen viser information om hver forespørgsel og sorterer også forespørgsler efter status, type, firma, enhed, tid og land.
 
 [Statistik- og forespørgselslog](/private-dns/statistics-and-log/statistics.md)
+
+### Tilpassede domæner
+
+Abonnenter på AdGuard DNS Enterprise og Team kan bruge deres egne domæner (såsom `dns.eksempel.com`) i stedet for standard `d.adguard-dns.com`. Denne indstilling sikrer problemfri integration med virksomhedens sikkerhedspolitikker, samtidig med at alle adblocking- og fortrolighedsfunktioner leveret af AdGuard DNS bevares.
+
+[Tilpassede domæner](/private-dns/server-and-settings/custom-domains.md)

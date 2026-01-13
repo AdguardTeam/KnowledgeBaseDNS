@@ -9,6 +9,8 @@ AdGuard DNS planları [adguard-dns.io](https://adguard-dns.io/license.html) adre
 
 Kişisel plan, [AdGuard VPN](https://adguard-vpn.com/welcome.html) ücretli kullanıcıları için ücretsizdir.
 
+AdGuard DNS planları hemen etkinleştirilir. Bazen etkinleştirme beş dakika kadar sürebilir. Aboneliğinizi etkinleştiremiyorsanız lütfen destek ekibimize [support@adguard-dns.io](mailto:support@adguard-dns.io) adresinden e-posta gönderin.
+
 ## Plan nasıl yükseltilir {#upgrade}
 
 AdGuard DNS'den en iyi şekilde yararlanmak için planınızı aşağıdaki avantajlardan yararlanmak için yükseltebilirsiniz:
@@ -18,7 +20,7 @@ AdGuard DNS'den en iyi şekilde yararlanmak için planınızı aşağıdaki avan
 
 Planınızı [AdGuard hesabınızdan](https://my.adguard.com/account/licenses) yükseltebilirsiniz. Bunu yapmak için _AdGuard DNS_ bölümünün altındaki _Yükselt_ öğesine tıklayın.
 
-_Kurumsal_ plan yalnızca talep üzerine kullanılabilir. Eğer ilgileniyorsanız, lütfen [form](https://surveys.adguard.com/dns_enterprise/form.html) adresimizi doldurun ve şirketiniz hakkında bazı bilgiler verin. Başvurunuzu aldıktan sonra, daha fazla bilgi için sizinle iletişime geçeceğiz.
+_Kurumsal_ plan yalnızca talep üzerine kullanılabilir. If you’re interested, please fill out our [form](https://surveys.adguard.com/dns_enterprise/form.html) and provide some details about your company. Başvurunuzu aldıktan sonra, daha fazla bilgi için sizinle iletişime geçeceğiz.
 
 ## Para iadesi nasıl alınır {#refund}
 
