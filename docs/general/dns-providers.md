@@ -1264,7 +1264,7 @@ The service supports encrypted DNS protocols only and does not log individual DN
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=<https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=<https://juuri.hagezi.org/dns-query&name=juuri.hagezi.orgg) |
+| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
 | DNS-over-TLS | `tls://juuri.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org) |
 | DNS-over-QUIC | `quic://juuri.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org) |
 
