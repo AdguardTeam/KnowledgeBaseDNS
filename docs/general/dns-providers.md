@@ -1240,7 +1240,7 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 ### HaGeZi DNS
 
-HaGeZi DNS is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
+[HaGeZi DNS](https://github.com/hagezi/dns-servers) is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
 
 The service supports encrypted DNS protocols only and does not log individual DNS queries.
 
