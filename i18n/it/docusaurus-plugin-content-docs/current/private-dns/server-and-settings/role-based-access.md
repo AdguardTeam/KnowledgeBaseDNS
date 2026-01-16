@@ -1,35 +1,35 @@
 ---
-title: Role-based access
+title: Accesso basato sui ruoli
 sidebar_position: 5
 ---
 
-With role-based access, account owners can invite members with specific roles to manage DNS without sharing credentials. Each member logs in individually, ensuring a secure and efficient workflow in collaborative environments.
+Con l'accesso basato sui ruoli, i proprietari del profilo possono invitare membri con ruoli specifici a gestire DNS senza condividere le credenziali. Ogni membro accede individualmente, assicurando un flusso di lavoro sicuro ed efficiente negli ambienti collaborativi.
 
 :::note
 
-This feature is available for **Business** accounts with a **Team** or **Enterprise** subscription.
+Questa funzione è disponibile per i profili **Business** con un abbonamento **Team** o **Azienda**.
 
 :::
 
-## Types of members
+## Tipi di membri
 
-DNS accounts support three access levels. Ownership is fixed at registration, while **admins** and **viewers** are added through invitations. Roles can be updated or revoked at any time, and the number of members is virtually unlimited.
+I profili DNS hanno tre livelli di accesso. La proprietà viene definita al momento della registrazione, mentre **amministratori** e **visitatori** vengono aggiunti tramite invito. I ruoli possono essere aggiornati o revocati in qualunque momento e il numero di membri è virtualmente senza limite.
 
-- **Owner**: the account holder with full access to all settings and billing
+- **Proprietario**: il profilo con pieno accesso a tutte le impostazioni e alla fatturazione
 
-![Owner settings](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
+![Impostazioni del proprietario](https://cdn.adtidy.org/content/release_notes/dns/v2-16/settings_en.png)
 
-- **Admin**: a member who can modify DNS settings, manage devices, and invite other members. Best for system administrators or MSPs responsible for network filtering in organizations. With a single login, admins can manage several accounts and switch between them quickly
+- **Amministratore**: un membro che può modificare le impostazioni DNS, gestire dispositivi e invitare altri membri. Ideale per gli amministratori di sistema o gli MSP responsabili del filtraggio della rete nelle organizzazioni. Con un unico accesso, gli amministratori possono gestire diversi profili e passare rapidamente da uno all'altro
 
-![Multiple DNS accounts](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
+![Profili DNS multipli](https://cdn.adtidy.org/content/release_notes/dns/v2-16/dns_acc_en.png)
 
-- **Viewer**: a member with read-only access. Can view settings and statistics but cannot make changes. Best for consultants or managers who monitor network activity and provide recommendations without modifying DNS settings
+- **Visitatore**: un membro con accesso in sola lettura. Può vedere le impostazioni e le statistiche ma non può apportare modifiche. Ideale per consulenti o gestori che monitorano l'attività della rete dedicata e forniscono raccomandazioni senza modificare le impostazioni DNS
 
-## How to invite members
+## Come invitare i membri
 
-![Adding a member](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
+![Aggiunta di un membro](https://cdn.adtidy.org/content/release_notes/dns/v2-16/members_en.png)
 
-1. Go to your dashboard → [_Settings_](https://adguard-dns.io/dashboard/settings/).
-2. In the _Organization_ section, open [_Members_](https://adguard-dns.io/dashboard/account/members).
-3. Click _Add member_, enter your colleague’s email address, and select the access type — admin or viewer.
-4. Wait until they accept the invitation, and you’re ready to collaborate!
+1. Vai alla tua plancia → [_impostazioni_](https://adguard-dns.io/dashboard/settings/).
+2. Nella sezione _Organizzazione_, apri [_Membri_](https://adguard-dns.io/dashboard/account/members).
+3. Clicca _Aggiungi membro_, inserisci l'indirizzo e-mail del tuo collega e seleziona il tipo di accesso — amministratore o spettatore.
+4. Attendi che accettino l'invito e sarai pronto per collaborare!

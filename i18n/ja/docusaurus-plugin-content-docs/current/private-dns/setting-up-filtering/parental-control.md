@@ -37,6 +37,12 @@ AdGuard DNS は、人気のあるサービスへのアクセスをワンクリ�
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### オフタイムを設定する
 
 指定された時間間隔で選択した日にペアレンタルコントロールを有効にします。いわゆる「スクリーンタイム」設定のようなものです。 たとえば、子供にYouTube動画の閲覧を平日の21:00までに許可しているとします。 ところが、週末にはこの制限はないとします。 このような場合に、ニーズに合わせてスケジュールをカスタマイズし、希望の時間に選択したサイトへのアクセスをブロックするように設定できます。

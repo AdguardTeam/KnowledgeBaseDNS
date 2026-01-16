@@ -37,6 +37,12 @@ AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합
 
 ![차단된 서비스 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### 일정 설정
 
 특정 날짜에 설정된 시간 간격으로 자녀 보호를 활성화합니다. 예를 들어, 자녀가 평일 23시까지만 YouTube 동영상을 시청하도록 허용했을 수 있습니다. 하지만 주말에는 이 접근이 제한되지 않습니다. 일정을 원하는 대로 사용자 맞춤화하고 원하는 시간 동안 선택한 사이트에 대한 접근을 차단하세요.

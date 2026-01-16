@@ -14,35 +14,35 @@ AdGuard DNS fournit une API REST que vous pouvez utiliser pour y intégrer vos a
 
 ## Authentification
 
-### API keys
+### Clés API
 
-When included in the request header, API keys can be used to authorize requests to User API.
+Lorsqu'elles sont incluses dans l'en-tête de la requête, les clés API peuvent être utilisées pour autoriser les requêtes adressées à l'API utilisateur.
 
 #### Exemple de requête
 
 ``` bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
-    -H 'Authorization: ApiKey {api_key}'
+    -H 'Authorization : ApiKey {api_key}'
 ```
 
-#### Generating API keys
+#### Génération de clés API
 
-To issue or revoke API keys, go to the [corresponding subsection](https://adguard-dns.io/en/dashboard/user-settings/api-keys) of *User preferences*.
+Pour attribuer ou révoquer des clés API, allez dans la [sous-section correspondante](https://adguard-dns.io/en/dashboard/user-settings/api-keys) des *préférences de l'utilisateur*.
 
-### Access tokens
+### Jetons d'accès
 
-When included in the request header, access tokens can be used to authorize requests to User API.
+Lorsqu'ils sont inclus dans l'en-tête de la demande, les jetons d'accès peuvent être utilisés pour autoriser les demandes auprès de l'API utilisateur.
 
 #### Exemple de requête
 
 ``` bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
-    -H 'Authorization: Bearer {access_token}'
+    -H 'Authorization : Bearer {access_token}'
 ```
 
 #### Exemple de réponse
 
-Make a POST request for the following URL with the given params to generate the `access_token`:
+Faites une requête POST pour l'URL suivante avec les paramètres donnés pour générer le `access_token` :
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -52,11 +52,11 @@ Make a POST request for the following URL with the given params to generate the 
 | **password** | Mot de passe du compte                                                             |
 | mfa_token    | Jeton d'authentification à deux facteurs (si activé dans les paramètres du compte) |
 
-In the response, you will get both `access_token` and `refresh_token`.
+Dans la réponse, vous obtiendrez à la fois `access_token` et `refresh_token`.
 
-- Le `access_token` expirera après un certain nombre de secondes spécifiées (représentées par le paramètre `expires_in` dans la réponse). You can regenerate a new `access_token` using the `refresh_token` (Refer to `Generating access tokens from refresh tokens`).
+- Le `access_token` expirera après un certain nombre de secondes spécifiées (représentées par le paramètre `expires_in` dans la réponse). Vous pouvez régénérer un nouveau `access_token` en utilisant le `refresh_token` (Référez-vous à : `Générer un jeton d'accès à partir du jeton d'actualisation`).
 
-- Le `refresh_token` est permanent. To revoke a `refresh_token`, refer to `Revoking refresh tokens`.
+- Le `refresh_token` est permanent. Pour révoquer un `refresh_token` référez-vous à : `Révocation d’un jeton d’actualisation`.
 
 ##### Exemple de requête
 
@@ -68,7 +68,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'mfa_token=727810'
 ```
 
-##### Response example
+##### Exemple de réponse
 
 ```json
 {
@@ -79,11 +79,11 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 }
 ```
 
-#### Generating access tokens from refresh tokens
+#### Génération de jetons d’accès à partir de jetons d'actualisation
 
-Access tokens have limited validity. Once it expires, your app will have to use the `refresh token` to request for a new `access token`.
+Les jetons d'accès ont une validité limitée. Une fois qu'il a expiré, votre application devra utiliser le `jeton d'actualisation` pour demander un nouveau `jeton d'accès`.
 
-Make the following POST request with the given params to get a new access token:
+Effectuez la requête POST suivante avec les paramètres donnés pour obtenir un nouveau jeton d'accès :
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
@@ -99,7 +99,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-##### Response example
+##### Exemple de réponse
 
 ```json
 {

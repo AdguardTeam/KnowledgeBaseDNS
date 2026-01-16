@@ -44,5 +44,5 @@ Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la co
 7. Enregistrez les paramètres.
 8. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

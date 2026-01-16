@@ -21,29 +21,29 @@ Puoi saperne di più in [questo articolo correlato](/dns-client/overview/).
 Puoi configurare AdGuard DNS privato utilizzando AdGuard VPN CLI (interfaccia a riga di comando). Per iniziare con AdGuard VPN CLI, dovrai utilizzare il Terminale.
 
 1. Installa AdGuard VPN CLI seguendo [queste istruzioni](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+2. Vai [alle impostazioni](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
 3. Per impostare un server DNS specifico, usa il comando: `adguardvpn-cli config set-dns <server_address>`, dove `<server_address>` è l'indirizzo del tuo server privato.
 4. Attiva le impostazioni DNS inserendo `adguardvpn-cli config set-system-dns on`.
 
 ## Configura manualmente su Ubuntu (richiesta IP collegato o IP dedicato)
 
-1. Click _System_ → _Settings_ → _Network_.
+1. Clicca su _Sistema_ → _Preferenze_ → _Connessioni di rete_.
 2. Seleziona la scheda _Wireless_, quindi scegli la rete a cui sei connesso.
-3. Go to _IPv4_.
-4. Set _Automatic (DHCP)_ to _Manual_.
-5. Change the listed DNS addresses to the following addresses:
+3. Vai a _IPv4_.
+4. Imposta _Automatico (DHCP)_ su _Manuale_.
+5. Sostituisci gli indirizzi DNS elencati con gli indirizzi seguenti:
    - `94.140.14.49`
    - `94.140.14.59`
 6. Clicca su _Applica_.
 7. Vai a _IPv6_.
-8. Set _Automatic_ to _Manual_.
-9. Change the listed DNS addresses to the following addresses:
+8. Imposta _Automatico_ su _Manuale_.
+9. Sostituisci gli indirizzi DNS elencati con gli indirizzi seguenti:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Clicca su _Applica_.
 11. Collega il tuo indirizzo IP (o il tuo IP dedicato se hai un abbonamento Team):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configura manualmente su Debian (richiesta IP collegato o IP dedicato)
 
@@ -61,8 +61,8 @@ Puoi configurare AdGuard DNS privato utilizzando AdGuard VPN CLI (interfaccia a 
 10. Premi _Invio_.
 11. Chiudi il Terminale.
 12. Collega il tuo indirizzo IP (o il tuo IP dedicato se hai un abbonamento Team):
-    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Usa dnsmasq
 
@@ -102,25 +102,25 @@ Se vedi una notifica che non sei connesso a AdGuard DNS, molto probabilmente la 
 
 :::
 
-## Use EDNS (Extended DNS)
+## Usa EDNS (DNS Esteso)
 
-EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+EDNS estende il protocollo DNS, abilitando i pacchetti UDP più grandi a trasportare dati aggiuntivi. In AdGuard DNS, consente il passaggio del DeviceID nel DNS semplice usando un parametro extra.
 
-DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+DeviceID, un identificatore esadecimale a otto cifre (ad es., `1a2b3c4d`), aiuta a collegare le richieste DNS a dispositivi specifici. Per il DNS crittografato, questo ID è parte del dominio (ad esempio, `1a2b3c4d.d.adguard-dns.com`). Per il DNS non crittografato, è necessario EDNS per trasferire questo identificatore.
 
-AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+AdGuard DNS usa EDNS per recuperare il DeviceID cercando il numero di opzione `65074`. Se esiste un'opzione del genere, leggerà il DeviceID da lì. Per questo, puoi usare il comando `dig` nel terminale:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 ```
 
-Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+Qui, `65074` è l'ID dell'opzione, e `3031323334353637` è il suo valore in formato esadecimale (DeviceID: `01234567`).
 
-Tutto fatto! DeviceID should be displayed.
+Tutto fatto! Il DeviceID deve essere visualizzato.
 
 :::note
 
-The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
+Il comando `dig` è solo un esempio, puoi usare qualsiasi programma DNS con la capacità di aggiungere opzioni EDNS per eseguire questa azione.
 
 :::
 
@@ -128,5 +128,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. Hai due opzioni: utilizzare IP collegati o IP dedicati:
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)

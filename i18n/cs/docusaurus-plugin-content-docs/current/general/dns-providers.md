@@ -765,6 +765,15 @@ ByteDance Public DNS je bezplatná alternativní DNS služba společnosti ByteDa
 | --------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4 | `180.184.1.1` a `180.184.2.2` | [Přidat do AdGuardu](adguard:add_dns_server?address=180.184.1.1&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=180.184.1.1&name=) |
 
+### CERT-EE
+
+CERT-EE (RIA) poskytuje DNS službu, která blokuje škodlivé a phishingové domény. Provozuje se v Estonsku, ale funguje také v zahraničí. Požadavky jsou šifrovány, aby se zvýšila ochrana soukromí a zabránilo se odposlechu nebo spoofingu.
+
+| Protokol       | Adresa                          |                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.cert.ee/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cert.ee/dns-query&name=dns.cert.ee/dns-query) |
+| DNS-over-TLS   | `tls://dns.cert.ee`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.cert.ee&name=dns.cert.ee)                                             |
+
 ### CIRA Canadian Shield DNS
 
 [CIRA Shield DNS](https://www.cira.ca/cybersecurity-services/canadianshield/how-works) chrání před krádeží osobních a finančních údajů. Chrání vás před viry, ransomwarem a dalším malwarem.
@@ -1169,21 +1178,6 @@ Bez záznamů | Filtruje reklamy, slídiče, blokuje krádež identity atd. | DN
 | -------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Přidat do AdGuardu](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Oficiální DNS server Dandelion Sprout's
-
-[Oficiální DNS server Dandelion Sprout's](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) je osobní služba DNS hostovaná v norském Trondheimu, která využívá infrastrukturu AdGuard Home.
-
-Blokuje více reklam a škodlivého softwaru než AdGuard DNS díky pokročilejší syntaxi, ale lépe si poradí se slídiči a blokuje pravicové bulváry a většinu imageboardů. Protokolování se používá ke zlepšení používaných seznamů filtrů (např. odblokováním stránek, které neměly být blokovány) a k určení nejméně vhodných časů pro aktualizace systému serveru.
-
-| Protokol       | Adresa                                                |                                                                                                                                                                                                                                                                                                        |
-| -------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
-| DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853)                             |
-| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582)                   |
-| DNS, IPv4      | Různé; viz výše uvedený odkaz.                        |                                                                                                                                                                                                                                                                                                        |
-| DNS, IPv6      | Různé; viz výše uvedený odkaz.                        |                                                                                                                                                                                                                                                                                                        |
-| DNSCrypt, IPv4 | Různé; viz výše uvedený odkaz.                        |                                                                                                                                                                                                                                                                                                        |
-
 ### DNS Forge
 
 [DNS Forge](https://dnsforge.de/) je redundantní DNS řešitel s blokátorem reklam a bez záznamů, který poskytuje [adminforge](https://adminforge.de/).
@@ -1225,6 +1219,36 @@ Můžete také [nakonfigurovat vlastní DNS server](https://dnswarden.com/custom
 | -------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `185.121.177.177:5353` | [Přidat do AdGuardu](sdns://AQYAAAAAAAAAFDE4NS4xMjEuMTc3LjE3Nzo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
 | DNSCrypt, IPv4 | Poskytovatel: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `169.239.202.202:5353` | [Přidat do AdGuardu](sdns://AQYAAAAAAAAAFDE2OS4yMzkuMjAyLjIwMjo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
+
+### HaGeZi DNS
+
+[HaGeZi DNS](https://github.com/hagezi/dns-servers) is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
+
+The service supports encrypted DNS protocols only and does not log individual DNS queries.
+
+#### Germany, Falkenstein
+
+| Protokol       | Adresa                              |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
+| DNS-over-TLS   | `tls://root.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://root.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org)                       |
+
+#### Germany, Nuremberg
+
+| Protokol       | Adresa                               |                                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
+| DNS-over-TLS   | `tls://wurzn.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://wurzn.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org)                       |
+
+#### Finland, Helsinki
+
+| Protokol       | Adresa                               |                                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
+| DNS-over-TLS   | `tls://juuri.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://juuri.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org)                       |
 
 ### ibksturm DNS
 

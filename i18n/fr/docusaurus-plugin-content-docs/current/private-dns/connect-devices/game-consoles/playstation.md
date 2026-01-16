@@ -11,16 +11,16 @@ Il est probable que votre routeur prenne en charge l'utilisation de serveurs DNS
 
 ## Connectez AdGuard DNS
 
-Configure your game console to use a public AdGuard DNS server or configure it via linked IP.
+Configurez votre console de jeu pour utiliser un serveur DNS AdGuard public ou configurez-la via IP liée.
 
-### For PlayStation 4
+### Pour PlayStation 4
 
-1. Turn on your PS4 console and sign in to your account.
+1. Allumez votre console PS4 et connectez-vous à votre compte.
 2. Depuis l'écran d'accueil, sélectionnez l'icône d'engrenage située dans la rangée supérieure.
-3. Go to _Settings_ → _Network_ → _Settings_.
+3. Allez dans _Paramètres_ → _Réseau_ → _Paramètres_.
 4. Sélectionnez _Configurer la connexion Internet_.
-5. Select _Use a LAN Cable_ → _Easy_.
-6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+5. Sélectionnez _Utiliser un câble LAN_ → _Facile_.
+6. Sélectionnez _Manuel_ puis _Automatique_ pour les _Paramètres d'adresse IP_.
 7. Pour le _nom d'hôte DHCP_, sélectionnez _Ne pas spécifier_.
 8. Pour les _paramètres DNS_, sélectionnez _Manuel_.
 9. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
@@ -30,16 +30,16 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 11. Sur l'écran des _paramètres MTU_, sélectionnez _Automatique_.
 12. Sur l'écran du _Serveur proxy_, sélectionnez _Ne pas utiliser_.
 13. Sélectionnez _Tester la connexion Internet_ pour tester vos nouveaux paramètres DNS.
-14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
+14. Une fois le test terminé et que vous voyez "Connexion Internet : Réussie", enregistrez vos paramètres.
 
-### For PlayStation 5
+### Pour PlayStation 5
 
-1. Turn on your PS5 console and sign in to your account.
+1. Allumez votre console PS5 et connectez-vous à votre compte.
 2. Depuis l'écran d'accueil, sélectionnez l'icône d'engrenage située dans la rangée supérieure.
-3. Go to _Settings_ → _Network_ → _Settings_.
+3. Allez dans _Paramètres_ → _Réseau_ → _Paramètres_.
 4. Sélectionnez _Configurer la connexion Internet_.
-5. Select _Set Up Wired LAN_ → _Connect_.
-6. Select _Manual_ and then select _Automatic_ for _IP Address Settings_.
+5. Sélectionnez _Configurer le LAN câblé_ → _Connecter_.
+6. Sélectionnez _Manuel_ puis _Automatique_ pour les _Paramètres d'adresse IP_.
 7. Pour le _nom d'hôte DHCP_, sélectionnez _Ne pas spécifier_.
 8. Pour les _paramètres DNS_, sélectionnez _Manuel_.
 9. Dans le champ _Serveur DNS_, saisissez l'une des adresses de serveur DNS suivantes :
@@ -49,9 +49,9 @@ Configure your game console to use a public AdGuard DNS server or configure it v
 11. Sur l'écran des _paramètres MTU_, sélectionnez _Automatique_.
 12. Sur l'écran du _Serveur proxy_, sélectionnez _Ne pas utiliser_.
 13. Sélectionnez _Tester la connexion Internet_ pour tester vos nouveaux paramètres DNS.
-14. Once the test is complete and you see “Internet Connection: Successful”, save your settings.
+14. Une fois le test terminé et que vous voyez "Connexion Internet : Réussie", enregistrez vos paramètres.
 
 Il serait préférable d'utiliser une IP liée (ou une IP dédiée si vous avez un abonnement Équipe) :
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
