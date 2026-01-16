@@ -26,7 +26,7 @@ Keenetic yönlendiriciler kararlılıkları ve esnek konfigürasyonları ile bil
 5. _Hizmetler ve servisler_ bölümünde DNS-over-HTTPS proxy'sini seçin ve yükleyin.
 6. _Menü_ → _Ağ kuralları_ → _İnternet güvenliği_ öğesine gidin.
 7. DNS-over-HTTPS sunucularına gidin ve _DNS-over-HTTPS sunucusu ekle_ öğesine tıklayın.
-8. Enter the URL of the private AdGuard DNS server in the `tls://*********.d.adguard-dns.com` field.
+8. Özel AdGuard DNS sunucusunun URL'sini `tls://*********.d.adguard-dns.com` alanına girin.
 9. _Kaydet_ öğesine tıklayın.
 
 ## Yönlendirici yönetici panelini kullanma

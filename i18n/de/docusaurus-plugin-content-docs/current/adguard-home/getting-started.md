@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ### Offizielle Veröffentlichungen
 
-Laden Sie das Archiv mit der Binärdatei für Ihr Betriebssystem von der \[Seite der letzten stabilen Version]\[Veröffentlichungen] herunter. Die vollständige Liste der unterstützten Plattformen sowie Links zu Beta- und Edge-Versionen (instabilen Versionen) finden Sie auf \[unserer Plattformseite]\[Plattformen].
+Laden Sie das Archiv mit der Binärdatei für Ihr Betriebssystem von der [Seite der letzten stabilen Version][Releases] herunter. Die vollständige Liste der unterstützten Plattformen sowie Links zu Beta- und Edge-Versionen (instabilen Versionen) finden Sie auf [unserer Plattformseite][platforms].
 
 Um AdGuard Home als Dienst zu installieren, entpacken Sie das Archiv, geben Sie das Verzeichnis „AdGuardHome“ an und führen Sie es aus:
 
@@ -17,9 +17,9 @@ Um AdGuard Home als Dienst zu installieren, entpacken Sie das Archiv, geben Sie 
 
 #### Hinweise
 
-- Benutzer von **Fedora Linux** und dessen Derivaten: Installieren Sie AdGuard Home in das Verzeichnis „/usr/local/bin“. Andernfalls kann es zu Problemen mit SELinux und Berechtigungen kommen. Siehe \[Problem 765] und \[Problem 3281].
+- Benutzer von **Fedora Linux** und dessen Derivaten: Installieren Sie AdGuard Home in das Verzeichnis `/usr/local/bin`. Andernfalls kann es zu Problemen mit SELinux und Berechtigungen kommen. Siehe \[Problem 765] und \[Problem 3281].
 
-- Benutzer von **macOS 10.15 Catalina** und neuer sollten das Arbeitsverzeichnis von AdGuard Home in das Verzeichnis „/Applications“ (Programme) legen.
+- Benutzer von **macOS 10.15 Catalina** und neuer sollten das Arbeitsverzeichnis von AdGuard Home in das Verzeichnis `/Applications` (Programme) legen.
 
 ### Docker und Snap
 

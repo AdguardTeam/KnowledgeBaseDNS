@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+Bu makale, AdGuard DNS mobil uygulamasında bulunan bir özelliği kapsamaktadır. Bunu kendiniz denemek için [Android](https://agrd.io/android_dns) veya [iOS](https://agrd.io/ios_dns) için AdGuard DNS uygulamasını indirin.
 
 :::
 

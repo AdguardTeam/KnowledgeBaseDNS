@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 Cet article contient la documentation sur l'[API DNS AdGuard](private-dns/api/overview.md). Pour le journal des modifications complet de l'API AdGuard DNS, visitez [cette page](private-dns/api/changelog.md).
 
-## Current version: 1.10
+## Version actuelle : 1.10
 
 ### /oapi/v1/account/limits
 

@@ -23,7 +23,7 @@ Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
 3. Click _Next_.
 4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
 
-Generate a DNS stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) and set it.
+[DNSCrypt DNS Damga Hesaplayıcısı](https://dnscrypt.info/stamps/) kullanarak bir DNS damgası oluşturun ve ayarlayın.
 
 1. Protokol: DNS-over-HTTPS
 2. Host name: d.adguard-dns.com

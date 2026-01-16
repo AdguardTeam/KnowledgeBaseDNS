@@ -1,46 +1,47 @@
 ---
-title: Managing the AdGuard DNS mobile app via MDM
+title: Správa mobilní aplikace AdGuard DNS přes MDM
 sidebar_position: 7
 ---
 
 :::info
 
-This article describes a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+Tento článek popisuje funkci dostupnou v mobilní aplikaci AdGuard DNS. Chcete-li to vyzkoušet sami, stáhněte si aplikaci AdGuard DNS pro [Android](https://agrd.io/android_dns) nebo pro [iOS](https://agrd.io/ios_dns).
 
 :::
 
-The AdGuard DNS mobile app supports enterprise management through MDM (Mobile Device Management) systems using the Managed App Configuration (MAC) standard.
+Mobilní aplikace AdGuard DNS podporuje správu podnikových zařízení prostřednictvím systémů MDM (Mobile Device Management) využívajících standard MAC (Managed App Configuration).
 
-This allows IT administrators to configure and implement AdGuard DNS settings across multiple devices centrally through EMM consoles, such as Google Workspace, Microsoft Intune, and other solutions compatible with [AppConfig.org](https://www.appconfig.org/).
+To umožňuje správcům IT centrálně konfigurovat a implementovat nastavení AdGuard DNS na více zařízeních prostřednictvím konzolí EMM, jako jsou Google Workspace, Microsoft Intune a další řešení kompatibilní s [AppConfig.org](https://www.appconfig.org/).
 
-### Supported EMM solutions
+### Podporovaná řešení EMM
 
-The app is compatible with any EMM systems that support the AppConfig.org standard:
+Aplikace je kompatibilní se všemi systémy EMM, které podporují standard AppConfig.org:
 
 - Google Workspace (Android Enterprise)
 - Microsoft Intune
 - VMware Workspace ONE
-- Jamf Pro (for iOS)
+- Jamf Pro (pro iOS)
+- mobiconnect
 - MobileIron
 - BlackBerry UEM
-- Other AppConfig-compatible solutions
+- Další řešení kompatibilní s AppConfig
 
-## Supported parameters
+## Podporované parametry
 
-### Managed App Configuration Parameters
+### Spravované parametry konfigurace aplikace
 
-| **Parameter**                                        | **Type** | **Required** | **Valid values**                                                                                                                                                                                                                                                 | **What the parameter does**                                                                                                                            | **On initial installation**                                                                                             | **When value changes**                                                                                                                                                                                                                                                   | **If not specified**                                                        |
-| ---------------------------------------------------- | -------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
-| **Setup ID** (`setup_id`)         | String   | Ne           | AdGuard DNS setup identifier                                                                                                                                                                                                                                     | Identifies the device for connecting to the AdGuard DNS server.                                                                        | App enters managed mode; field is locked; user cannot change it; “Reset connection” option unavailable. | Connection and settings are fully reset; user must reconnect; DNS protection stops.                                                                                                                                                                      | User can enter manually or use a QR code.                   |
-| **Device name** (`device_name`)   | String   | Ne           | Any device name                                                                                                                                                                                                                                                  | Sets the device’s display name in the AdGuard DNS control panel. It must have a maximum length of 64 characters.       | App enters managed mode; name used automatically if not set via Setup ID; field is locked.              | Nothing happens.                                                                                                                                                                                                                                         | User can enter manually; app may suggest name via Setup ID. |
-| **DNS Protocol** (`dns_protocol`) | Choice   | Ne           | **Android:** doh, dot, doq. **iOS:** doh_native, dot_native, doh_vpn, dot_vpn, doq_vpn. | Determines which encrypted DNS protocol is used (Note: DoQ not compatible with Native mode on iOS). | App enters managed mode; specified protocol applied by default; selection in settings locked.           | App switches to the new protocol; reconnects automatically if DNS protection is active. When switching the operating mode (Native ↔ VPN), the app will not reconnect automatically, the user must manually reconnect. | User can select manually in settings.                       |
+| **Parametr**                                          | **Typ**   | **Požadováno** | **Platné hodnoty**                                                                                                                                                                                                                                               | **Co parametr dělá**                                                                                                                                                   | **Při prvotní instalaci**                                                                                                                             | **Když se hodnota změní**                                                                                                                                                                                                                                          | **Není-li specifikováno**                                                                              |
+| ----------------------------------------------------- | --------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **ID nastavení** (`setup_id`)      | Řetězec   | Ne             | Identifikátor nastavení AdGuard DNS                                                                                                                                                                                                                              | Identifikuje zařízení pro připojení k serveru AdGuard DNS.                                                                                             | Aplikace přejde do řízeného režimu; pole je uzamčeno; uživatel jej nemůže změnit; možnost ”Obnovit připojení” není k dispozici.       | Připojení a nastavení jsou zcela resetovány; uživatel se musí znovu připojit; ochrana DNS se zastaví.                                                                                                                                              | Uživatel může zadat ručně nebo použít QR kód.                                          |
+| **Název zařízení** (`device_name`) | Řetězec   | Ne             | Jakýkoliv název zařízení                                                                                                                                                                                                                                         | Nastaví zobrazovaný název zařízení v ovládacím panelu AdGuard DNS. Musí mít maximální délku 64 znaků.                                  | Aplikace přejde do řízeného režimu; název se použije automaticky, pokud není nastaven prostřednictvím ID nastavení; pole je uzamčeno. | Nic se neděje.                                                                                                                                                                                                                                     | Uživatel může zadat ručně; aplikace může navrhnout název prostřednictvím ID nastavení. |
+| **DNS Protokol** (`dns_protocol`)  | Volitelné | Ne             | **Android:** doh, dot, doq. **iOS:** doh_native, dot_native, doh_vpn, dot_vpn, doq_vpn. | Určuje, který šifrovaný protokol DNS se používá (poznámka: DoQ není kompatibilní s nativním režimem v systému iOS). | Aplikace přejde do řízeného režimu; přednastavený protokol se použije jako výchozí; výběr v nastavení je uzamčen.                     | Aplikace přepne na nový protokol; pokud je aktivní ochrana DNS, automaticky se znovu připojí. Při přepnutí provozního režimu (Native ↔ VPN) se aplikace nepřipojí automaticky, uživatel se musí připojit ručně. | Uživatel může vybrat ručně v nastavení.                                                |
 
-## Managed mode
+## Spravovaný režim
 
-The app automatically enters managed mode when the MDM system provides at least one configuration parameter. In this mode, MDM settings always take priority over user preferences: any parameter configured through MDM cannot be changed by the user, while parameters not defined by MDM remain editable.
+Aplikace automaticky přejde do spravovaného režimu, pokud systém MDM poskytne alespoň jeden konfigurační parametr. V tomto režimu mají nastavení MDM vždy přednost před uživatelskými preferencemi: žádné parametry nakonfigurované prostřednictvím MDM nelze uživatelem změnit, zatímco parametry, které nejsou definovány MDM, zůstávají editovatelné.
 
-When the MDM configuration is updated, all changes are applied automatically. If the MDM system removes all configuration parameters at once, the app exits managed mode, previously locked settings become available again, and the user can freely modify all parameters.
+Po aktualizaci konfigurace MDM se všechny změny použijí automaticky. Pokud systém MDM odstraní všechny konfigurační parametry najednou, aplikace opustí řízený režim, dříve uzamčená nastavení se znovu zpřístupní a uživatel může libovolně měnit všechny parametry.
 
-## Configuration updates
+## Aktualizace konfigurace
 
-The app automatically receives notifications about configuration changes, and any updates delivered by the EMM system are applied immediately upon arrival. Depending on the EMM provider, there may be a delay before the configuration reaches the device. No app restart is required for the changes to take effect.
+Aplikace automaticky přijímá oznámení o změnách konfigurace a veškeré aktualizace dodané systémem EMM jsou aplikovány ihned po doručení. V závislosti na poskytovateli EMM může dojít ke zpoždění, než se konfigurace dostane do zařízení. Pro provedení změn není požadován restart aplikace.

@@ -17,7 +17,7 @@ Cette fonctionnalité est prise en charge par le [Client DNS AdGuard](/dns-clien
 
 :::
 
-1. Open Dashboard.
+1. Ouvrez le tableau de bord.
 2. Ajoutez un appareil ou accédez aux paramètres d'un appareil précédemment créé.
 3. Cliquez sur _Utiliser les adresses des serveurs DNS_ et ouvrez la section _Adresses des serveurs DNS chiffrés_.
 4. Configurez DNS-over-HTTPS avec authentification comme bon vous semble.

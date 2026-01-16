@@ -37,6 +37,12 @@ AdGuard DNS blokuje přístup k oblíbeným službám jedním kliknutím. Je to 
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Blokovat weby podle kategorie
+
+Tato funkce vám umožňuje omezit přístup k určitým kategoriím webových stránek výběrem z více než 20 kategorií, včetně _Obsahu pro dospělé_, _Her_, _Bankovnictví_ a _Komunikace_. Pokud například zablokujete weby obsahující informace o alkoholu, tabáku nebo drogách, vybrané zařízení již nebude moci otevírat stránky spadající do těchto kategorií.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Nastavení času vypnutí
 
 Povolí rodičovskou kontrolu ve vybraných dnech se zadaným časovým intervalem. Například jste svému dítěti povolili sledovat videa na YouTube pouze do 23:00 ve všední dny. O víkendech však tento přístup není omezen. Přizpůsobte si rozvrh podle svých představ a zablokujte přístup na vybrané stránky v požadovaných hodinách.

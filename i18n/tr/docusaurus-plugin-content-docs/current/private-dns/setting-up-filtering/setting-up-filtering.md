@@ -3,7 +3,7 @@ title: Filtreleme nasıl kurulur
 sidebar_position: 1
 ---
 
-Özel DNS, reklamları, izleyicileri ve diğer istenmeyen istekleri engellemekten daha fazlasını yapar. It also lets you fine-tune blocking and restrict access to certain websites or services.
+Özel DNS, reklamları, izleyicileri ve diğer istenmeyen istekleri engellemekten daha fazlasını yapar. Ayrıca engellemeyi ince ayar yapmanıza ve belirli sitelere veya hizmetlere erişimi kısıtlamanıza olanak tanır.
 
 AdGuard DNS, filtreleme ve erişimi özelleştirmek için çeşitli araçlar sağlar:
 
@@ -21,4 +21,4 @@ AdGuard DNS, filtreleme ve erişimi özelleştirmek için çeşitli araçlar sa�
 
 - [Ebeveyn kontrolü](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  Sitelere ve hizmetlere (hassas içeriğe sahip olanlar dâhil) erişimi kısıtlamanızı, güvenli aramayı zorunlu kılmanızı ve ekran süresini ayarlamanızı sağlar

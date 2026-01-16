@@ -11,7 +11,7 @@ Ti consente di visualizzare tutte le richieste effettuate dai tuoi dispositivi d
 
 ## Come si usa
 
-Here’s what you can see and what you can do in the _Query log_.
+Ecco cosa puoi vedere e cosa puoi fare nel _Registro richieste_.
 
 ### Informazioni dettagliate sulle richieste
 

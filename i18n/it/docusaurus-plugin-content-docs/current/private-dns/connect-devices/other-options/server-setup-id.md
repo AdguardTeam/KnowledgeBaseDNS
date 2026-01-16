@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article covers a feature available in the AdGuard DNS mobile app. To try it yourself, download the AdGuard DNS app for [Android](https://agrd.io/android_dns) or [iOS](https://agrd.io/ios_dns).
+Questo articolo copre una funzione disponibile nell'app mobile AdGuard DNS. Per provarlo tu stesso, scarica l'app AdGuard DNS per [Android](https://agrd.io/android_dns) o [iOS](https://agrd.io/ios_dns).
 
 :::
 
@@ -17,7 +17,7 @@ Se vuoi connettere un dispositivo a un server specifico e non vuoi creare manual
 
 :::note
 
-If you’re configuring AdGuard on multiple managed devices, consider using managed app configuration to automatically provide the server setup ID to each app. [Learn more](/private-dns/connect-devices/other-options/mdm-config.md).
+Se stai configurando AdGuard in più dispositivi gestiti, considera di usare la configurazione app gestita per fornire automaticamente a ogni app l'ID approntamento server. [Scopri di più](/private-dns/connect-devices/other-options/mdm-config.md).
 
 :::
 

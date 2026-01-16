@@ -21,6 +21,7 @@ The app is compatible with any EMM systems that support the AppConfig.org standa
 - Microsoft Intune
 - VMware Workspace ONE
 - Jamf Pro (for iOS)
+- mobiconnect
 - MobileIron
 - BlackBerry UEM
 - Other AppConfig-compatible solutions

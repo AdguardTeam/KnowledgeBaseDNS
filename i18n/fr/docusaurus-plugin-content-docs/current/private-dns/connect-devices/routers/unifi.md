@@ -13,34 +13,34 @@ Suivez ces instructions si votre routeur UniFi supporte DNS-over-HTTPS.
 
 Les routeurs UiFi utilisent une URL de timbre DNS pour spécifier l'URL DNS-over-HTTPS. Cette URL doit être calculée à l'aide de votre URL privée DNS-over-HTTPS.
 
-Obtain the DNS-over-HTTPS URL that is used to calculate the DNS Stamp URL.
+Obtenez l'URL de DNS-over-HTTPS utilisée pour calculer l'URL du tampon DNS.
 
-1. Go to the AdGuard DNS Private Dashboard.
-2. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server settings:
-   - Device type: 'Router'
-   - Device brand: 'Unifi'
-   - Device name: Use your Unifi device name
-3. Click _Next_.
-4. Scroll to _Use DNS server addresses_ → _DNS-over-HTTPS_ and take note of the DNS-over-HTTPS URL (e.g., https://d.adguard-dns.com/dns-query/123456abc).
+1. Accédez au tableau de bord privé AdGuard DNS.
+2. Allez dans _DNS chiffré_ → _Personnalisé_ et saisissez les paramètres du serveur DNS suivants :
+   - Type d'appareil : 'Routeur'
+   - Marque d'appareil : 'Unifi'
+   - Nom d'appareil : Utilisez le nom de votre appareil Unifi
+3. Cliquez sur _Suivant_.
+4. Défilez jusqu'à _Utiliser les adresses de serveur DNS_ → _DNS sur HTTPS_ et notez l'URL DNS sur HTTPS (par exemple, https://d.adguard-dns.com/dns-query/123456abc).
 
-Generate a DNS stamp using the [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) and set it.
+Générez un tampon DNS en utilisant le [DNSCrypt DNS Stamp Calculator](https://dnscrypt.info/stamps/) et configurez-le.
 
-1. Protocol: DNS-over-HTTPS
-2. Host name: d.adguard-dns.com
-3. Path: /dns-query/123456abc (replace 123456abc with the value obtained from your AdGuard DNS Private Dashboard)
-4. Untick
-   - No filter
-   - No logs
-5. Copy the DNS stamp URL (e.g., sdns://AgcAAAAAA…)
+1. Protocole : DNS-over-HTTPS
+2. Nom d'hôte : d.adguard-dns.com
+3. Chemin : /dns-query/123456abc (remplacez 123456abc par la valeur obtenue depuis votre tableau de bord privé AdGuard DNS)
+4. Décochez
+   - Pas de filtrage
+   - Sans journalisation
+5. Copiez l'URL du tampon DNS (par exemple, sdns://AgcAAAAAA…)
 
-Turn on DNS-over-HTTPS in UniFi.
+Activez DNS-over-HTTPS dans UniFi.
 
 1. Connectez-vous au contrôleur Ubiquiti UniFi.
-2. Go to _Settings_ → _Security_.
-3. Click _Protection_.
-4. Proceed to _Encrypted DNS_ → _Custom_ and enter the following DNS server addresses.
-   - Server Name: 'AdGuard DNS'
-   - DNS Stamp: DNS stamp URL copied from above
+2. Accédez à _Paramètres_ → _Sécurité_.
+3. Cliquez sur _Protection_.
+4. Allez dans _DNS chiffré_ → _Personnalisé_ et saisissez les adresses des serveurs DNS suivantes.
+   - Nom du serveur�: 'AdGuard DNS'
+   - Tampon DNS : URL de l'empreinte DNS copiée à partir de l'adresse ci-dessus
 5. Cliquez sur _Enregistrer_.
 
 ## Utilisez le panneau d'administration de votre routeur
@@ -62,5 +62,5 @@ Utilisez ces instructions si votre routeur Keenetic ne prend pas en charge la co
    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 10. Enregistrez les paramètres.
 11. Liez votre IP (ou votre IP dédiée si vous avez un abonnement Équipe).
-    - [Dedicated IPs](private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [Linked IPs](private-dns/connect-devices/other-options/linked-ip.md)
+    - [IPs dédiées](private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [IPs liées](private-dns/connect-devices/other-options/linked-ip.md)

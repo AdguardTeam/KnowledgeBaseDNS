@@ -15,7 +15,7 @@ Se necessario: Configura DNS-over-TLS su ASUS, installa il [firmware ASUS Merlin
 2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
 3. Nella barra laterale _Impostazioni avanzate_, vai alla sezione WAN.
 4. Nella sezione _Impostazioni DNS WAN_, imposta _Connetti automaticamente al server DNS_ su _No_.
-5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
+5. Imposta _Inoltra query locali_, _Attiva rebind DNS_ e _Attiva DNSSEC_ su _No_.
 6. Cambia il protocollo di privacy DNS in DNS-over-TLS (DoT).
 7. Assicurati che il _profilo DNS-over-TLS_ sia impostato su _Strict_.
 8. Scorri in basso alla sezione _DNS-over-TLS Servers List_. Nel campo _Indirizzo_, inserisci uno degli indirizzi qui sotto:
@@ -32,10 +32,10 @@ Se necessario: Configura DNS-over-TLS su ASUS, installa il [firmware ASUS Merlin
 3. Apri _Impostazioni avanzate_ o _Avanzate_.
 4. Seleziona _WAN_ o _Internet_.
 5. Apri _Impostazioni DNS_ o _DNS_.
-6. Choose _Manual Setting_. Seleziona _Usa questi server DNS_ oppure _Specifica manualmente il server DNS_ e inserisci i seguenti indirizzi server:
+6. Scegli _Impostazione Manuale_. Seleziona _Usa questi server DNS_ oppure _Specifica manualmente il server DNS_ e inserisci i seguenti indirizzi server:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 7. Salva le impostazioni.
 8. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
-   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)

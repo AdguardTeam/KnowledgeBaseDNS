@@ -12,9 +12,9 @@ Puoi creare un collegamento e utilizzarlo nelle impostazioni del dispositivo. Il
 ## Come configurare la connessione automatica
 
 1. Apri il _Cruscotto_ e seleziona il server richiesto.
-2. Go to _Advanced_.
+2. Vai a _Avanzate_.
 3. Abilita l'opzione per connettere i dispositivi automaticamente.
-   ![Connect devices automatically \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically.png)
+   ![Connetti i dispositivi automaticamente \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step4.png)
 
 Ora puoi connettere automaticamente il tuo dispositivo al server creando un indirizzo speciale che include il nome del dispositivo, il tipo di dispositivo e l'ID del server corrente. Esploriamo come appaiono questi indirizzi e le regole per crearli.
 

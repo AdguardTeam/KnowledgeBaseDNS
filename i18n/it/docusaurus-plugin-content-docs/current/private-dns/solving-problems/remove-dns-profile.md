@@ -3,7 +3,7 @@ title: Come rimuovere un profilo DNS
 sidebar_position: 3
 ---
 
-Se devi disconnettere il tuo iPhone, iPad o Mac con un profilo DNS configurato dal tuo server DNS, devi rimuovere tale profilo DNS. Here’s how to do it.
+Se devi disconnettere il tuo iPhone, iPad o Mac con un profilo DNS configurato dal tuo server DNS, devi rimuovere tale profilo DNS. Ecco come farlo.
 
 Sul tuo Mac:
 

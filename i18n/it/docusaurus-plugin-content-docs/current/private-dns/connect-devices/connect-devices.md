@@ -18,8 +18,8 @@ In questa sezione troverai istruzioni su come connettere il tuo dispositivo ad A
 Per i dispositivi che non supportano nativamente i protocolli DNS crittografati, offriamo tre altre opzioni:
 
 - [AdGuard DNS Client](/dns-client/overview.md)
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
 
 Se desideri limitare l'accesso ad AdGuard DNS a determinati dispositivi, utilizza [DNS-over-HTTPS con autenticazione](/private-dns/connect-devices/other-options/doh-authentication.md).
 
