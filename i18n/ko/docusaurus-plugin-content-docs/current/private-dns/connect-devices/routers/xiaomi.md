@@ -9,7 +9,7 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 ## 라우터 관리 패널 사용
 
-Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 않는 경우, 이 지침을 따르세요.
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. 라우터 관리자 패널을 엽니다. 192.168.31.1\` 또는 라우터의 IP 주소로 접속할 수 있습니다.
 2. 관리자 사용자 아이디(일반적으로 admin)와 라우터 비밀번호를 입력합니다.

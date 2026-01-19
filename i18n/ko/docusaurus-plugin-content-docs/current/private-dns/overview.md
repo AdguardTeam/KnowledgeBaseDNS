@@ -215,8 +215,8 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 
 [통계와 쿼리 로그](/private-dns/statistics-and-log/statistics.md)
 
-### Custom domains
+### 사용자 정의 도메인
 
 AdGuard DNS Enterprise and Team subscribers can use their own domains (like `dns.example.com`) instead of the default `d.adguard-dns.com`. This setting ensures seamless integration with corporate security policies while maintaining full ad-blocking and privacy features provided by AdGuard DNS.
 
-[Custom domains](/private-dns/server-and-settings/custom-domains.md)
+[사용자 정의 도메인](/private-dns/server-and-settings/custom-domains.md)

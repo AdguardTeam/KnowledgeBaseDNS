@@ -81,7 +81,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
  | Type           | Adresse                            |                                                                                                                                                                                                                     |
  | -------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
- | DNS, IPv4      | `160.19.167.150`                   | [Add to AdGuard](adguard:add_dns_server?address=160.19.167.150&name=160.19.167.150), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=160.19.167.150&name=160.19.167.150)                                     |
+ | DNS, IPv4      | `160.19.167.150`                   | [Zu Adguard hinzufügen](adguard:add_dns_server?address=103.168.147.197&name=103.168.147.197), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=103.168.147.197&name=103.168.147.197)                   |
  | DNS, IPv6      | `2001:df7:5300:3::51e`             | [Add to AdGuard](adguard:add_dns_server?address=2001:df7:5300:3::51e&name=2001:df7:5300:3::51e), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:df7:5300:3::51e&name=2001:df7:5300:3::51e)             |
  | DNS-over-HTTPS | `https://dns.caliph.dev/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.caliph.dev/dns-query&name=dns.caliph.dev) |
  | DNS-over-TLS   | `tls://dns.caliph.dev:853`         | [Add to AdGuard](adguard:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=dns.caliph.dev:853&name=dns.caliph.dev:853)                     |
@@ -121,40 +121,40 @@ This is the security/antivirus variant of BebasDNS. This variant only blocks mal
 
 #### Familie
 
-This is the family variant of BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains.
+Dies ist die Produktfamilie von BebasDNS. This variant blocks pornography, gambling, hate site, blocks malware, and phishing domains.
 
-| Protokoll      | Adresse                                                                        |                                                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                  | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                          | [Add to AdGuard](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
-| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                      |
+| Protokoll      | Adresse                                                                        |                                                                                                                                                                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/dns-query`                                  | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/dns-query&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://internetsehat.bebasid.com:853`                                          | [Zu Adguard hinzufügen](adguard:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=internetsehat.bebasid.com:853&name=internetsehat.bebasid.com:853)                     |
+| DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.internetsehat.bebasid.com` IP: `103.87.68.196:8443` | [Zu AdGuard hinzufügen](sdns://AQMAAAAAAAAAEjEwMy44Ny42OC4xOTY6ODQ0MyD5k4vgIHmBCZ2DeLtmoDVu1C6nVrRNzSVgZ1T0m0-3rCkyLmRuc2NyeXB0LWNlcnQuaW50ZXJuZXRzZWhhdC5iZWJhc2lkLmNvbQ)                                                                                                    |
 
 #### Familienschutz mit Werbefilterung
 
-This is the family variant of BebasDNS but with adblocker
+Dies ist die Produktfamilie von BebasDNS, aber mit Werbeblocker
 
-| Protokoll      | Adresse                                     |                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853`      | [Add to AdGuard](adguard:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853)             |
+| Protokoll      | Adresse                                     |                                                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://internetsehat.bebasid.com/adblock` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://family-adblock.bebasid.com:853`      | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=family-adblock.bebasid.com:853&name=family-adblock.bebasid.com:853)             |
 
 #### OISD-Filter
 
-This is a custom BebasDNS variant with only OISD Big filter
+Dies ist eine benutzerdefinierte BebasDNS-Variante nur mit OISD großem Filter
 
-| Protokoll      | Adresse                            |                                                                                                                                                                                                                                                             |
-| -------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853)                                     |
+| Protokoll      | Adresse                            |                                                                                                                                                                                                                                                                           |
+| -------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-oisd` | [Zu Adguard hinzufügen](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://oisd.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=oisd.dns.bebasid.com:853&name=oisd.dns.bebasid.com:853)                                                   |
 
 #### Hagezi Multi Normal Filter
 
 This is a custom BebasDNS variant with only Hagezi Multi Normal filter
 
-| Protokoll      | Adresse                              |                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
-| DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                             |
+| Protokoll      | Adresse                              |                                                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://dns.bebasid.com/dns-hagezi` | [Zu AdGuard hinzufügen](adguard:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com), [Zu AdGuard VPN hinzufügen](adguardvpn:add_dns_server?address=https://internetsehat.bebasid.com/adblock&name=internetsehat.bebasid.com) |
+| DNS-over-TLS   | `tls://hagezi.dns.bebasid.com:853`   | [Add to AdGuard](adguard:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=hagezi.dns.bebasid.com:853&name=hagezi.dns.bebasid.com:853)                                           |
 
 ### CFIEC Public DNS
 
@@ -1222,33 +1222,33 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 
 ### HaGeZi DNS
 
-[HaGeZi DNS](https://github.com/hagezi/dns-servers) is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
+[HaGeZi DNS](https://github.com/hagezi/dns-servers) ist ein kostenloser öffentlicher DNS-Dienst, der das Filtern von Werbung, Trackern, Phishing, Betrug und bösartigen Domains auf DNS-Ebene ermöglicht und dabei einen starken Fokus auf Datenschutz und Sicherheit legt. Alle Server befinden sich ausschließlich innerhalb der EU und werden in Übereinstimmung mit den Anforderungen der DSGVO und den Empfehlungen der ENISA betrieben.
 
-The service supports encrypted DNS protocols only and does not log individual DNS queries.
+Der Dienst unterstützt ausschließlich verschlüsselte DNS-Protokolle und protokolliert keine individuelle DNS-Anfragen.
 
-#### Germany, Falkenstein
+#### Deutschand, Falkenstein
 
-| Protokoll      | Adresse                             |                                                                                                                                                                                                                         |
-| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
-| DNS-over-TLS   | `tls://root.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://root.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org)                       |
+| Protokoll      | Adresse                             |                                                                                                                                                                                                                                       |
+| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Zu Adguard hinzufügen](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
+| DNS-over-TLS   | `tls://root.hagezi.org`             | [Zu Adguard hinzufügen](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://root.hagezi.org`            | [Zu Adguard hinzufügen](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org)                       |
 
-#### Germany, Nuremberg
+#### Deutschland, Nürnberg
 
-| Protokoll      | Adresse                              |                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
-| DNS-over-TLS   | `tls://wurzn.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://wurzn.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org)                       |
+| Protokoll      | Adresse                              |                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Zu Adguard hinzufügen](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
+| DNS-over-TLS   | `tls://wurzn.hagezi.org`             | [Zu Adguard hinzufügen](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://wurzn.hagezi.org`            | [Zu Adguard hinzufügen](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org)                       |
 
-#### Finland, Helsinki
+#### Finnland, Helsinki
 
-| Protokoll      | Adresse                              |                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
-| DNS-over-TLS   | `tls://juuri.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://juuri.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org)                       |
+| Protokoll      | Adresse                              |                                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Zu Adguard hinzufügen](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
+| DNS-over-TLS   | `tls://juuri.hagezi.org`             | [Zu Adguard hinzufügen](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://juuri.hagezi.org`            | [Zu Adguard hinzufügen](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Zu Adguard VPN hinzufügen](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org)                       |
 
 ### ibksturm DNS
 
