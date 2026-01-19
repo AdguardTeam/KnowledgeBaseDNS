@@ -42,23 +42,23 @@ Les routeurs MikroTik utilisent le système d'exploitation open source RouterOS,
    - Vous devrez peut-être redémarrer votre routeur MikroTik pour que toutes les modifications prennent effet
    - Videz le cache DNS de votre navigateur. Vous pouvez utiliser un outil comme [https://www.dnsleaktest.com](https://www.dnsleaktest.com/) pour vérifier si vos requêtes DNS sont maintenant routées via AdGuard
 
-## My router does not support DNS-over-HTTPS
+## Mon routeur ne prend pas en charge DNS-over-HTTPS
 
-Use these instructions if your MikroTik router does not support DNS-over-HTTPS configuration:
+Utilisez ces instructions si votre routeur MikroTik ne prend pas en charge la configuration DNS-over-HTTPS :
 
 1. Accédez à votre routeur MikroTik :
    - Ouvrez votre navigateur web et allez à l'adresse IP de votre routeur (généralement `192.168.88.1`)
    - Sinon, vous pouvez utiliser Winbox pour vous connecter à votre routeur MikroTik
    - Saisissez votre nom d'utilisateur et votre mot de passe administrateur
-2. Configure Plain DNS:
-   - Go to _IP_ → _DNS_
-   - In the _Servers_ section, add the following AdGuard DNS servers:
+2. Configurez le DNS simple :
+   - Accédez à _IP_ → _DNS_
+   - Dans la section _Serveurs_ ajoutez les serveurs AdGuard DNS suivants :
      - IPv4 : `94.140.14.49` et `94.140.14.59`
      - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
-     - Dedicated IPv6: Private AdGuard DNS supports dedicated IPv6 addresses. To find them, open the Dashboard, click _Settings_ next to your device → _Plain DNS server addresses_ → _Dedicated IPv6 addresses_.
-   - Click _OK_
+     - Adresse IPv6 dédiée : le DNS privé AdGuard prend en charge les adresses IPv6 dédiées. Pour les trouver, ouvrez le tableau de bord, cliquez sur _Paramètres_ à côté de votre appareil → _Adresses des serveurs DNS bruts_ → _Adresses IPv6 dédiées_.
+   - Cliquez sur _OK_
 3. Désactivez le Peer DNS sur le client DHCP :
-   - Go to _IP_ → _DHCP Client_
+   - Accédez à _IP_ → _Client DHCP_
    - Double-cliquez sur le client utilisé pour votre connexion Internet (généralement sur l'interface WAN)
-   - Uncheck _Use Peer DNS_
-   - Click _OK_
+   - Décochez _Utiliser le DNS Peer_
+   - Cliquez sur _OK_

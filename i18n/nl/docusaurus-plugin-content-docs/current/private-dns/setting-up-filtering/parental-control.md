@@ -37,6 +37,12 @@ AdGuard DNS blocks access to popular services with one click. It’s useful if y
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Websites blokkeren per categorie
+
+Met deze functie kun je de toegang beperken tot specifieke categorieën websites door te kiezen uit meer dan 20 categorieën, waaronder _Volwassen content_, _Games_, _Banken_ en _Communicatie_. Als je bijvoorbeeld sites blokkeert die informatie bevatten over alcohol, tabak of drugs, kan het geselecteerde apparaat geen pagina's meer openen die onder die categorieën vallen.
+
+![Categoriegebaseerde blokkering \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Schedule off time
 
 Enables parental controls on selected days with a specified time interval. Je hebt je kind bijvoorbeeld toegestaan om doordeweeks slechts tot 23:00 YouTube-video's te bekijken. But on weekends, this access is not restricted. Customize the schedule to your liking and block access to selected sites during the hours you want.

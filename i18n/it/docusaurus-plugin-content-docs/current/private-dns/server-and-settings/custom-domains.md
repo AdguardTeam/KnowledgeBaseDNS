@@ -7,25 +7,25 @@ Gli abbonati AdGuard DNS possono approntare i propri domini (come `dns.example.c
 
 :::note
 
-Custom domains are available to the users of **Enterprise** and **Team** plans.
+I domini personali sono disponibili per gli utenti dei piani **Commerciale** e **Gruppo**.
 
 :::
 
-## How to set up a custom domain
+## Come approntare un dominio personale
 
-To configure a custom domain, log in to your AdGuard DNS dashboard and go to [_Account settings_](https://adguard-dns.io/en/dashboard/account). Scroll down to _Advanced settings_ and select _Custom domains_. Next, you will need to go through the three main steps.
+Per configurare un dominio personale, accedi alla tua plancia di AdGuard DNS e vai in [_Impostazioni profilo_](https://adguard-dns.io/en/dashboard/account). Scorri verso il basso fino a _Impostazioni avanzate_ e seleziona _Domini personali_. Successivamente, dovrai seguire le tre fasi principali.
 
-1. Choose the protocol. Here, you have two options:
+1. Scegli il protocollo. Qui hai due opzioni:
 
-   - Add DoH domain (for DNS-over-HTTPS)
-   - Add DoT/DoQ domain (for DNS-over-TLS or DNS-over-QUIC)
+   - Aggiungi dominio DoH (per DNS-over-HTTPS)
+   - Aggiungi dominio DoT/DoQ (per DNS-over-TLS o DNS-over-QUIC)
 
-   ![Choose the protocol \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
+   ![Scegli il protocollo \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_1.png)
 
-2. After selecting the protocol, enter the preferred domain name (e.g., `example.com`) and verify the CNAME record.
+2. Dopo aver selezionato il protocollo, inserisci il nome di dominio preferito (ad esempio, `example.com`) e verifica la registrazione CNAME.
 
-   ![CNAME record \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
+   ![Registrazione CNAME \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_2.png)
 
-3. Set up a certificate. For DoT/DoQ domains, you’ll need to upload a wildcard TLS certificate. If you choose DoH, you can either provide your own TLS certificate or let AdGuard DNS generate one for you. Once verified, your custom domain will appear in the dashboard, ready for use.
+3. Appronta un certificato. Per i domini DoT/DoQ, sarà necessario caricare un certificato TLS con carattere universale. Se scegli DoH, puoi fornire il tuo certificato TLS oppure lasciare che AdGuard DNS ne generi uno per te. Una volta verificato, il tuo dominio personale apparirà nella plancia, pronto per l'uso.
 
-   ![Custom domain list \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)
+   ![Lista di domini personali \*mobile](https://cdn.adtidy.org/content/release_notes/dns/v2-15/picture_en_3.png)

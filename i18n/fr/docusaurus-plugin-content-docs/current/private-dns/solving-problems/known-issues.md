@@ -23,7 +23,7 @@ Si vous utilisez Chrome et vous ne voyez aucune requête dans votre tableau de b
 
 ![Fonction Utiliser DNS sécurisé de Chrome](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/known_issues/secure-dns.png)
 
-If you disable Chrome’s own DNS settings, the browser will use the DNS specified in your operating system, which should be AdGuard DNS if you’ve set it up correctly.
+Si vous désactivez les paramètres DNS de Chrome, le navigateur utilisera le DNS spécifié dans votre système d'exploitation, qui devrait être AdGuard DNS si vous l'avez configuré correctement.
 
 ## Relais privé iCloud (Safari, macOS et iOS)
 
@@ -52,9 +52,9 @@ Après la mise à jour d'iOS 17, la protection avancée contre le suivi et le fi
 
 Voici comment vous pouvez désactiver la protection avancée contre le suivi et le fingerprinting :
 
-For iOS 26.1 and later versions:
+Pour iOS 26.1 et versions ultérieures :
 
-1. Go to *Settings*.
+1. Allez dans les *Paramètres*.
 1. Défilez vers le bas et sélectionnez *Applications*.
 1. Allez dans *Safari* → *Avancé*.
 1. Appuyez sur *Protection avancée contre le suivi et le fingerprinting*, puis sur *Désactivé*.

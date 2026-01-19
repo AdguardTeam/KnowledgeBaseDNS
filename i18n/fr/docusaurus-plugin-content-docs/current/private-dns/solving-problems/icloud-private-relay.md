@@ -35,4 +35,4 @@ Maintenant, votre appareil devrait être affiché correctement dans le tableau d
 
 ![L'appareil est connecté](https://cdn.adtidy.org/content/kb/dns/private/solving_problems/icloud_private_relay/device-connected.jpeg)
 
-Mind that once you turn off Private Relay for a specific website, your network provider will also be able to see which site you’re browsing.
+Gardez à l'esprit qu'une fois que vous désactivez le Relais privé pour un site Web spécifique, votre fournisseur de réseau pourra également voir quel site vous parcourez.

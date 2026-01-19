@@ -143,7 +143,7 @@ The `client` modifier allows specifying clients this rule is applied to. There a
 
   :::note Not
 
-  In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  AdGuard Home'da şu anda ClientID'ler desteklenmemektedir, yalnızca adlar desteklenmektedir. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
 
   :::
 
@@ -153,7 +153,7 @@ The syntax is:
 $client=value1|value2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client’s DNS requests.
+You can also exclude clients by adding a `~` character before the value. Bu durumda, kural bu istemcinin DNS isteklerine uygulanmayacaktır.
 
 ```none
 $client=~value1
@@ -417,7 +417,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
   :::note Not
 
-  The `badfilter` modifier currently doesn’t work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+  `badfilter` değiştiricisi şu anda `/etc/hosts` tarzıkurallarla çalışmıyor. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
 
   :::
 
@@ -433,7 +433,7 @@ The syntax is:
 $ctag=value1|value2|...
 ```
 
-If one of client’s tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+İstemcinin etiketlerinden biri `ctag` değerleriyle eşleşiyorsa, bu kural istemci için geçerlidir. The syntax for exclusion is:
 
 ```none
 $ctag=~value1|~value2|...
