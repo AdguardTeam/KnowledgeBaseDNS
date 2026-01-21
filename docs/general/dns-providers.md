@@ -1045,9 +1045,10 @@ This is just one of the available servers, the full list can be found on the [Op
 
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4 | `101.101.101.101` and `101.102.103.104` | [Add to AdGuard](adguard:add_dns_server?address=101.101.101.101&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=101.101.101.101&name=) |
-| DNS, IPv6 | `2001:de4::101` and `2001:de4::102` | [Add to AdGuard](adguard:add_dns_server?address=2001:de4::101&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:de4::101&name=) |
-| DNS-over-TLS | `tls://101.101.101.101` | [Add to AdGuard](adguard:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://101.101.101.101&name=101.101.101.101) |
+| DNS, IPv4 | `101.101.101.101` and `101.102.103.104` | [Add to AdGuard](adguard:add_dns_server?address=101.101.101.101&name=Quad101), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=101.101.101.101&name=Quad101) |
+| DNS, IPv6 | `2001:de4::101` and `2001:de4::102` | [Add to AdGuard](adguard:add_dns_server?address=2001:de4::101&name=Quad101), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2001:de4::101&name=Quad101) |
+| DNS-over-HTTPS | `https://dns.twnic.tw/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.twnic.tw/dns-query&name=Quad101), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.twnic.tw/dns-query&name=Quad101) |
+| DNS-over-TLS | `tls://101.101.101.101` | [Add to AdGuard](adguard:add_dns_server?address=tls://101.101.101.101&name=Quad101), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://101.101.101.101&name=Quad101) |
 
 ### SkyDNS RU
 
