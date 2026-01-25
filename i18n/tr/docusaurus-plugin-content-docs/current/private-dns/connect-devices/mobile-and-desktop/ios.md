@@ -14,17 +14,17 @@ Bir iOS cihazını AdGuard DNS'e bağlamak için önce onu _Pano_ öğesine ekle
 
 The AdGuard DNS app is designed for basic DNS-level protection — blocking ads, trackers, and malicious websites. If you don’t need the full range of features offered by AdGuard Ad Blocker or AdGuard VPN, this may be the best choice for you.
 
-To set up your device:
+Cihazınızı ayarlamak için:
 
-1. [Download the AdGuard DNS app](https://agrd.io/ios_dns).
-2. Go to your AdGuard DNS dashboard at [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/).
-3. Click _Connect device_ on the _Home_ tab.
-4. Select your device type and give it a name, then click _Next_.
-5. Expand the _Use AdGuard apps_ section.
+1. [AdGuard DNS uygulamasını indirin](https://agrd.io/ios_dns).
+2. [adguard-dns.io/dashboard](https://adguard-dns.io/dashboard/) adresinden AdGuard DNS panonuza gidin.
+3. _Ana sayfa_ sekmesinde _Cihaz bağla_ öğesine tıklayın.
+4. Cihaz türünüzü seçin ve bir ad verin, ardından _Sonraki_ öğesine tıklayın.
+5. _AdGuard uygulamalarını kullan_ bölümünü genişletin.
 
-![Use AdGuard apps \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
+![AdGuard uygulamalarını kullan \*border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/UseAdGuardDnsAppsiOS.png)
 
-1. Under _Use the AdGuard DNS app_, choose one of these setup methods:
+1. _AdGuard DNS uygulamasını kullan_ öğesinin altında, şu yükleme yöntemlerinden birini seçin:
 
    - Click _Configure_ if you’re on the device you want to protect.
    - Scan the QR code with the device you want to protect.
@@ -42,7 +42,7 @@ To set up your device:
 
 1. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click _Enable_, and follow the in-app instructions.
 
-2. If you prefer to use native DNS, go to _Settings_ → _General_ → _VPN & Device Management_ → _DNS_ and enable AdGuard DNS.
+2. Yerel DNS kullanmayı tercih ediyorsanız, _Ayarlar_ → _Genel_ → _VPN ve Cihaz Yönetimi_ → _DNS_ öğesine gidin ve AdGuard DNS'i etkinleştirin.
 
 Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
 

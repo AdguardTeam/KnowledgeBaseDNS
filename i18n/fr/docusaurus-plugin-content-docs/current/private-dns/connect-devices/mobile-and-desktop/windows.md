@@ -3,14 +3,14 @@ title: Windows
 sidebar_position: 5
 ---
 
-To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
+Pour connecter un dispositif Windows à AdGuard DNS, commencez par l'ajouter au _tableau de bord_ :
 
 1. Allez dans le _tableau de bord_ et cliquez sur _Connecter un nouvel appareil_.
 2. Dans le menu déroulant _Type d'appareil_, sélectionnez Windows.
 3. Nommez le dispositif.
    ![Connexion de l'appareil \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
 
-You can set it up via [AdGuard](#use-adguard-ad-blocker-paid-option) or [AdGuard VPN](#use-adguard-vpn) apps, in [Windows settings](#configure-via-windows-settings), or using the [AdGuard DNS Client](#use-adguard-dns-client).
+Vous pouvez le configurer via les applications [AdGuard](#use-adguard-ad-blocker-paid-option) ou [AdGuard VPN](#use-adguard-vpn), dans les [paramètres Windows](#configure-via-windows-settings), ou en utilisant le [client AdGuard DNS](#use-adguard-dns-client).
 
 ## Utilisez le Bloqueur AdGuard (option payante)
 
@@ -56,27 +56,27 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
-## Configure via Windows settings
+## Configuration via les paramètres Windows
 
 :::note
 
-Available only on Windows 11.
+Disponible uniquement sur Windows 11.
 
 :::
 
-1. In the _Search_ bar on the taskbar, type **Ethernet settings** or **Wi-Fi settings**, depending on your connection type.
-   Click the network (Wi-Fi ID or Ethernet) you want to configure.
-   ![Search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
-2. Scroll to _DNS server assignment_ and click _Edit_.
-   ![DNS server assignment \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
-3. Change DNS settings to _Manual_.
-4. Toggle the IPv4 switch to _On_.
-5. Enter the following DNS server addresses:
-   - Preferred DNS: `94.140.14.49`
-   - Alternate DNS: `94.140.14.59`
-6. Turn _DNS over HTTPS template_ to _On (manual template)_ and enter your personal DNS address. You can find it in the Dashboard under _Server settings_ → _Devices_ → _Devices settings_ → DNS-over-HTTPS.
-7. Cliquez sur _Enregistrer_. That’s it — your device is now connected to AdGuard DNS!
-   ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
+1. Dans la barre _Recherche_ de la barre des tâches, tapez **Paramètres Ethernet** ou **Paramètres Wi-Fi**, selon votre type de connexion.
+   Cliquez sur le réseau (identifiant Wi-Fi ou Ethernet) que vous souhaitez configurer.
+   ![Rechercher \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_1.png)
+2. Défilez jusqu'à l'_Attribution du serveur DNS_ et cliquez sur _Modifier_.
+   ![Attribution du serveur DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_step_2.png)
+3. Réglez les paramètres DNS sur _Manuel_.
+4. Basculez le commutateur IPv4 sur _Activé_.
+5. Saisissez les adresses des serveurs DNS suivantes :
+   - DNS préféré : `94.140.14.49`
+   - DNS alternatif : `94.140.14.59`
+6. Activez le _modèle DNS-over-HTTPS_ sur _Activé (modèle manuel)_ et saisissez votre adresse DNS personnelle. Vous la trouverez dans le tableau de bord sous _Paramètres du serveur_ → _Appareils_ → _Paramètres des appareils_ → DNS-over-HTTPS.
+7. Cliquez sur _Enregistrer_. Voilà, votre appareil est maintenant connecté à AdGuard DNS !
+   ![Enregistrer les paramètres DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
 ## Utiliser le client AdGuard DNS
 
@@ -88,5 +88,5 @@ Des détails supplémentaires peuvent être trouvés dans [un article différent
 
 Si vous préférez ne pas utiliser de logiciel supplémentaire pour la configuration DNS, vous pouvez opter pour le DNS non chiffré. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
 
-- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

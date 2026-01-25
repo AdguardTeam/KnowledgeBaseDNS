@@ -37,6 +37,12 @@ AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. It’s usefu
 
 ![Engellenen hizmetler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Siteleri kategoriye göre engelleme
+
+Bu özellik, _Yetişkin içerik_, _Oyunlar_, _Bankacılık_ ve _İletişim_ dâhil olmak üzere 20'den fazla kategori arasından seçim yaparak belirli site kategorilerine erişimi kısıtlamanıza olanak tanır. Örneğin, alkol, tütün veya uyuşturucu hakkında bilgi içeren siteleri engellerseniz, seçilen cihaz artık bu kategorilere giren sayfaları açamayacaktır.
+
+![Kategori tabanlı engelleme \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Plan kapanış zamanı
 
 Belirli bir zaman aralığıyla seçilen günlerde ebeveyn denetimlerini etkinleştirir. Örneğin, çocuğunuzun YouTube videolarını sadece hafta içi 23:00'e kadar izlemesine izin vermiş olabilirsiniz. Ancak hafta sonları bu erişim kısıtlanmamaktadır. Planınızı istediğiniz gibi özelleştirin ve istediğiniz saatlerde seçili sitelere erişimi engelleyin.

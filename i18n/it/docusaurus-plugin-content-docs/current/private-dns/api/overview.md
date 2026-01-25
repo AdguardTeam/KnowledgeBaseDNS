@@ -159,7 +159,7 @@ Per informare il server di autorizzazione quale tipo di concessione utilizzare, 
 
 - Per la concessione implicita, usa **response_type=token** per includere un token di accesso.
 
-A successful response is **302 Found**, which triggers a redirect to **redirect_uri** (which is a request parameter). The response parameters are embedded in the fragment component (the part after the `#` symbol) of the `redirect_uri` in the *Location* header.
+Una risposta positiva è **302 Found**, che attiva un reindirizzamento a **redirect_uri** (che è un parametro di richiesta). I parametri della risposta sono incorporati nel componente frammento (la parte dopo il simbolo `#`) del `redirect_uri` nell'intestazione *Location*.
 
 Ad esempio:
 
@@ -172,21 +172,21 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 ### Riferimento
 
-Please see the [method’s reference](reference.md).
+Sei pregato di consultare i riferimenti del metodo, [qui](reference.md).
 
-### OpenAPI spec
+### Specifiche OpenAPI
 
-OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
+Le specifiche di OpenAPI sono disponibili a [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
 
-You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
+Puoi utilizzare diversi strumenti per visualizzare l'elenco dei metodi API disponibili. Ad esempio, puoi aprire questo file su [https://editor.swagger.io/][swagger].
 
 ### Registro delle modifiche
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+Il registro delle modifiche completo dell'API DNS di AdGuard è disponibile su [questa pagina](private-dns/api/changelog.md).
 
 ## Feedback
 
-If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
+Se vorresti che quest'API fosse estesa con nuovi metodi, ti preghiamo di inviarci un'email a `devteam@adguard.com` e di farci sapere cosa vorresti fosse aggiunto.
 
-[openapi]: https://api.adguard-dns.io/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

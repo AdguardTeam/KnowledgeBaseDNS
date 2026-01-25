@@ -1181,21 +1181,6 @@ Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimizatio
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [Add to AdGuard](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
 
-### Dandelion Sprout’s Official DNS Server
-
-[Dandelion Sprout’s Official DNS Server](https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout's%20Official%20DNS%20Server) is a personal DNS service hosted in Trondheim, Norway, using an AdGuard Home infrastructure.
-
-Blocks more ads and malware than AdGuard DNS thanks to more advanced syntax, but goes easier on trackers, and blocks alt-right tabloids and most imageboards. Logging is used to improve its used filter lists (e.g. by unblocking sites that shouldn’t have been blocked), and to determine the least bad times for server system updates.
-
-| Protocol       | Address                    |                                                        |
-|----------------|------------------------------------------------------------------|------------------|
-| DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
-| DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853` | [Add to AdGuard](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853) |
-| DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582` | [Add to AdGuard](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582) |
-| DNS, IPv4      | Varies; see link above. |     |
-| DNS, IPv6      | Varies; see link above. |     |
-| DNSCrypt, IPv4 | Varies; see link above. |     |
-
 ### DNS Forge
 
 [DNS Forge](https://dnsforge.de/) is a redundant DNS resolver with an ad blocker and no logging provided by [adminforge](https://adminforge.de/).
@@ -1237,6 +1222,36 @@ You can also [configure custom DNS server](https://dnswarden.com/customfilter.ht
 |----------------|----------------------------------------------------|----------------|
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `185.121.177.177:5353` | [Add to AdGuard](sdns://AQYAAAAAAAAAFDE4NS4xMjEuMTc3LjE3Nzo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dnsrec.meo.ws` IP: `169.239.202.202:5353`| [Add to AdGuard](sdns://AQYAAAAAAAAAFDE2OS4yMzkuMjAyLjIwMjo1MzUzIBpq0KMrTFphppXRU2cNaasWkD-ew_f2TxPlNaMYsiilHTIuZG5zY3J5cHQtY2VydC5kbnNyZWMubWVvLndz) |
+
+### HaGeZi DNS
+
+[HaGeZi DNS](https://github.com/hagezi/dns-servers) is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
+
+The service supports encrypted DNS protocols only and does not log individual DNS queries.
+
+#### Germany, Falkenstein
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
+| DNS-over-TLS | `tls://root.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org) |
+| DNS-over-QUIC | `quic://root.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org) |
+
+#### Germany, Nuremberg
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
+| DNS-over-TLS | `tls://wurzn.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org) |
+| DNS-over-QUIC | `quic://wurzn.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org) |
+
+#### Finland, Helsinki
+
+| Protocol | Address | |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
+| DNS-over-TLS | `tls://juuri.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org) |
+| DNS-over-QUIC | `quic://juuri.hagezi.org` | [Add to AdGuard](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org) |
 
 ### ibksturm DNS
 

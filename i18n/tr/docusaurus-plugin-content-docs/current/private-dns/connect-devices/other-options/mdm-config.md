@@ -21,6 +21,7 @@ Uygulama, AppConfig.org standardını destekleyen tüm EMM sistemleriyle uyumlud
 - Microsoft Intune
 - VMware Workspace ONE
 - Jamf Pro (iOS için)
+- mobiconnect
 - MobileIron
 - BlackBerry UEM
 - Diğer AppConfig uyumlu çözümler

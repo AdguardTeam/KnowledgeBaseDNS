@@ -37,6 +37,12 @@ AdGuard DNS блокирует доступ к популярным сервис
 
 ![Заблокированные сервисы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Настроить расписание
 
 Включает Родительский контроль в выбранные дни с указанным интервалом времени. Например, вы можете разрешить ребёнку смотреть видео на YouTube только до 23:00 в будние дни. Но в выходные этот доступ не ограничен. Настройте расписание по вашему усмотрению и блокируйте доступ к выбранным сайтам в нужное вам время.

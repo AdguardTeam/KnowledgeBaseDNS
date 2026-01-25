@@ -37,6 +37,12 @@ O AdGuard DNS bloqueia o acesso a serviços populares com um clique. It’s usef
 
 ![Serviços bloqueados \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
+### Block websites by category
+
+This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+
+![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+
 ### Agendamento de desativação
 
 Ativa os controles parentais em dias selecionados com um intervalo de tempo especificado. Por exemplo, você pode ter permitido que seu filho assistisse a vídeos do YouTube apenas até às 23:00 nos dias de semana. Mas nos fins de semana, esse acesso não é restrito. Personalize o agendamento de acordo com sua preferência e bloqueie o acesso a sites selecionados durante as horas que você desejar.
