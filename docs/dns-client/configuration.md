@@ -70,6 +70,18 @@ The `server` object configures the handling of incoming requests. It has the fol
         - address: '[::1]:53'
     ```
 
+  - `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+
+    :::note
+
+    This object is available since **v0.0.4**.
+
+    :::
+
+      - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+
+        **Example:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
 The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
