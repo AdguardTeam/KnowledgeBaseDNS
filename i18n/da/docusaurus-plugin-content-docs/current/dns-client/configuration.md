@@ -11,7 +11,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -69,6 +69,18 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
       - address: '127.0.0.1:53'
       - address: '[::1]:53'
   ```
+
+- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+
+  :::note
+
+  This object is available since **v0.0.4**.
+
+  :::
+
+  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+
+    **Eks.:** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 

@@ -9,7 +9,7 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 ## 使用路由器管理面板
 
-如果您的 Keenetic 路由器不支持 DNS-over-HTTPS 或 DNS-over-TLS 配置，请使用以下指示说明：
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. 打开路由器管理面板。 用户可以通过 `192.168.31.1` 或路由器的 IP 地址进行访问。
 2. 输入管理员用户名（通常是「admin」）和路由器密码。

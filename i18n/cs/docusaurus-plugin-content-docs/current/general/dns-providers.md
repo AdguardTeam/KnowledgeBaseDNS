@@ -1222,33 +1222,33 @@ Můžete také [nakonfigurovat vlastní DNS server](https://dnswarden.com/custom
 
 ### HaGeZi DNS
 
-[HaGeZi DNS](https://github.com/hagezi/dns-servers) is a free public DNS service that provides DNS-level filtering of ads, trackers, phishing, scam, and malicious domains, with a strong focus on privacy and security. All servers are located exclusively within the EU and operate in compliance with GDPR requirements and ENISA recommendations.
+[HaGeZi DNS](https://github.com/hagezi/dns-servers) je bezplatná veřejná služba DNS, která poskytuje filtrování reklam, slídičů, phishingu, podvodných a škodlivých domén na úrovni DNS s důrazem na soukromí a bezpečnost. Všechny servery se nacházejí výhradně v rámci EU a fungují v souladu s požadavky GDPR a doporučeními ENISA.
 
-The service supports encrypted DNS protocols only and does not log individual DNS queries.
+Služba podporuje pouze šifrované protokoly DNS a nezaznamenává jednotlivé dotazy DNS.
 
-#### Germany, Falkenstein
+#### Německo, Falkenstein
 
-| Protokol       | Adresa                              |                                                                                                                                                                                                                         |
-| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
-| DNS-over-TLS   | `tls://root.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://root.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org)                       |
+| Protokol       | Adresa                              |                                                                                                                                                                                                                                |
+| -------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS-over-HTTPS | `https://root.hagezi.org/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://root.hagezi.org/dns-query&name=root.hagezi.org) |
+| DNS-over-TLS   | `tls://root.hagezi.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://root.hagezi.org&name=root.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://root.hagezi.org`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://root.hagezi.org&name=root.hagezi.org)                       |
 
-#### Germany, Nuremberg
+#### Německo, Norimberk
 
-| Protokol       | Adresa                               |                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
-| DNS-over-TLS   | `tls://wurzn.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://wurzn.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org)                       |
+| Protokol       | Adresa                               |                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://wurzn.hagezi.org/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://wurzn.hagezi.org/dns-query&name=wurzn.hagezi.org) |
+| DNS-over-TLS   | `tls://wurzn.hagezi.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://wurzn.hagezi.org&name=wurzn.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://wurzn.hagezi.org`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://wurzn.hagezi.org&name=wurzn.hagezi.org)                       |
 
-#### Finland, Helsinki
+#### Finsko, Helsinky
 
-| Protokol       | Adresa                               |                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
-| DNS-over-TLS   | `tls://juuri.hagezi.org`             | [Add to AdGuard](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org)                         |
-| DNS-over-QUIC  | `quic://juuri.hagezi.org`            | [Add to AdGuard](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org)                       |
+| Protokol       | Adresa                               |                                                                                                                                                                                                                                    |
+| -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://juuri.hagezi.org/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://juuri.hagezi.org/dns-query&name=juuri.hagezi.org) |
+| DNS-over-TLS   | `tls://juuri.hagezi.org`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://juuri.hagezi.org&name=juuri.hagezi.org)                         |
+| DNS-over-QUIC  | `quic://juuri.hagezi.org`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://juuri.hagezi.org&name=juuri.hagezi.org)                       |
 
 ### ibksturm DNS
 
