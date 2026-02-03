@@ -5,7 +5,7 @@ sidebar_position: 3
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client использует [переменные окружения][wiki-env] для хранения части настроек. Остальные настройки хранятся [в файле конфигурации][conf].
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. Остальные настройки хранятся [в файле конфигурации][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://ru.wikipedia.org/wiki/Переменная_среды
