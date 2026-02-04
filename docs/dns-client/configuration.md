@@ -11,7 +11,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -69,6 +69,18 @@ The `server` object configures the handling of incoming requests. It has the fol
         - address: '127.0.0.1:53'
         - address: '[::1]:53'
     ```
+
+  - `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+
+    :::note
+
+    This object is available since **v0.0.4**.
+
+    :::
+
+      - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+
+        **Example:** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 
