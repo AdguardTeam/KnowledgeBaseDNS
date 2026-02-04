@@ -57,7 +57,11 @@ If you need any specific blocklist to be added to AdGuard DNS, you can download 
 1. In the *Custom* section, click *Add custom blocklist*
 1. Enter the blocklist name, its URL, and an optional description, then click *Add*
 
-Please note that each subscription plan has a limit on the total number of filtering rules. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+:::note 
+
+Each subscription plan has a limit on the total number of filtering rules. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+
+:::
 
 If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
 
