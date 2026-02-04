@@ -9,4 +9,4 @@ Game consoles do not support encrypted DNS, but they are well suited for setting
 - [Nintendo Switch](private-dns/connect-devices/game-consoles/nintendo-switch.md)
 - [PlayStation](private-dns/connect-devices/game-consoles/playstation.md)
 - [Steam Deck](/private-dns/connect-devices/game-consoles/steam.md)
-- [Xbox One](private-dns/connect-devices/game-consoles/xbox-one.md)
+- [Xbox](private-dns/connect-devices/game-consoles/xbox.md)
