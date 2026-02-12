@@ -5,19 +5,13 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## Hvad er AdGuard DNS Client?
+## Hvad er AdGuard DNS CLI?
 
-En krydsplatforms, letvægts DNS-klient til [AdGuard DNS][agdns]. Den fungerer som en DNS-server, der videresender DNS-forespørgsler til de korresponderende upstream-opløsere.
+En krydsplatforms, letvægts DNS-klient til \[AdGuard DNS]\[agdns]. Den fungerer som en DNS-server, der videresender DNS-forespørgsler til de korresponderende upstream-opløsere.
 
-[agdns]: https://adguard-dns.io
+[AdGuard DNS]: https://adguard-dns.io
 
 ## Hurtigstart {#start}
-
-:::caution
-
-AdGuard DNS Client er stadig i betastadiet. Den kan være ustabil.
-
-:::
 
 Understøttede operativsystemer:
 
@@ -39,14 +33,14 @@ Understøttede CPU-arkitekturer:
 
    :::caution
 
-   På macOS er det afgørende, at globalt installerede daemons ejes af `root` (se \[`launchd`-dokumentationen]\[launchd-krav]), så den eksekverbare `AdGuardDNSClient` skal placeres i mappen `/Applications/` eller dens undermappe.
+   På macOS er det afgørende, at globalt installerede daemons ejes af `root` (se \[`launchd`-dokumentationen]\[launchd-krav]), så den eksekverbare `adguarddns-cli` skal placeres i mappen `/Applications/` eller dens undermappe.
 
    :::
 
 2. Installér den som en tjeneste ved at eksekvere:
 
    ```sh
-   ./AdGuardDNSClient -s install -v
+   ./adguarddns-cli -s install -v
    ```
 
 3. Redigér opsætningsfilen `config.yaml`.
@@ -54,7 +48,7 @@ Understøttede CPU-arkitekturer:
 4. Start tjenesten:
 
    ```sh
-   ./AdGuardDNSClient -s start -v
+   ./adguarddns-cli -s start -v
    ```
 
 For at tjekke, at det virker, brug et hvilket som helst DNS-kontrolværktøj. F.eks. ved at bruge `nslookup`:
@@ -64,7 +58,7 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 ```
 
 [launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
-[releases]: https://github.com/AdguardTeam/AdGuardDNSClient/releases
+[releases]: https://github.com/AdguardTeam/AdGuardDNSCLI/releases
 
 ### Windows {#start-basic-win}
 
@@ -82,18 +76,18 @@ Hver valgmulighed tilsidesætter den korresponderende værdi fra opsætningsfile
 
 ### Hjælp {#opts-help}
 
-Valgmulighed `-h` får AdGuard DNS Client til at udskrive en hjælpemeddelelse til standardoutput og afslutte med en succes-statuskode.
+Valgmulighed `-h` får AdGuard DNS CLI til at udskrive en hjælpemeddelelse til standardoutput og afslutte med en udført-statuskode.
 
 ### Tjeneste {#opts-service}
 
 Mulighed `-s <value>` angiver OS-tjenestehandlingen. Gyldige værdier er:
 
-- `install`: Installerer AdGuard DNS Client som en tjeneste
-- `restart`: Genstarter den kørende AdGuard DNS Client-tjeneste
-- `start`: Starter den installerede AdGuard DNS Client-tjeneste
-- `status`: Viser statussen på den installerede AdGuard DNS Client-tjeneste
-- `stop`: Stopper den kørende AdGuard DNS Client
-- `uninstall`: Afinstallerer AdGuard DNS Client-tjenesten
+- `install`: Installerer AdGuard DNS CLI som en tjeneste
+- `restart`: Genstarter den kørende AdGuard DNS CLI-tjeneste
+- `start`: Starter den installerede AdGuard DNS CLI-tjeneste
+- `status`: Viser statussen på den installerede AdGuard DNS CLI-tjeneste
+- `stop`: Stopper den kørende AdGuard DNS CLI
+- `uninstall`: Afinstallerer AdGuard DNS CLI-tjenesten
 
 ### Udførlig {#opts-verbose}
 
@@ -101,7 +95,7 @@ Valgmulighed `-v` aktiverer det udførlige logoutput.
 
 ### Version {#opts-version}
 
-Valgmulighed `--version` får AdGuard DNS Client til at udskrive versionen på den eksekverbare `AdGuardDNSClient` til standardoutput og afslutte med en succes-statuskode.
+Valgmuligheden `--version` får AdGuard DNS CLI til at udskrive versionen på applikationen til standardoutput og afslutte med en udført-statuskode.
 
 ## Opsætning {#conf}
 

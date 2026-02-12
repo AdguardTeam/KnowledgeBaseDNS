@@ -9,7 +9,7 @@ Desværre understøtter den ikke krypteret DNS, men den er fantastisk til opsæt
 
 ## Brug routerens håndteringspanel
 
-Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
+Følg denne vejledning, hvis en Xiaomi-router ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
 
 1. Åbn routerens admin-panel. Routeren kan tilgås på `192.168.31.1`, eller hvis ændret, den aktuelle IP-adresse.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.

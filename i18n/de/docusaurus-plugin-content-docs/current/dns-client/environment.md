@@ -5,7 +5,7 @@ sidebar_position: 3
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client verwendet [Umgebungsvariablen][wiki-env], um einen Teil der Konfiguration zu speichern. Die restliche Konfiguration wird in der [Konfigurationsdatei][conf] gespeichert.
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. Die restliche Konfiguration wird in der [Konfigurationsdatei][conf] gespeichert.
 
 [conf]: configuration.md
 [wiki-env]: https://de.wikipedia.org/wiki/Umgebungsvariable
