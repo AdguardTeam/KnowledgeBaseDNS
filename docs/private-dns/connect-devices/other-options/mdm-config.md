@@ -48,9 +48,9 @@ The app automatically receives notifications about configuration changes, and an
 
 ## Configuring devices to always use AdGuard DNS
 
-Using MDM, you can configure devices so that DNS protection is always-on. Users cannot change DNS settings or bypass protection.
+Using MDM, you can configure devices so that DNS protection is **always on**. Users cannot change DNS settings or bypass protection.
 
-:::important
+:::caution
 
 To prevent users from disabling DNS settings on their device, the AdGuard DNS app itself must also be locked via MDM.
 
@@ -58,15 +58,15 @@ To prevent users from disabling DNS settings on their device, the AdGuard DNS ap
 
 ### On Android
 
-When configuring via MDM, set `com.adguard.dnsclient` as `Always-on`and add `Lockdown` so that the user cannot remove the VPN profile from the device settings.
+When configuring via MDM, set `com.adguard.dnsclient` as `Always-on` and add `Lockdown` so that the user cannot remove the VPN profile from the device settings.
 
 ### On iOS
 
-On iOS, AdGuard DNS uses DNS proxy to enforce DNS policies on managed devices. To enable this, create a `mobileconfig` for the device and deploy it via MDM.
+On iOS, AdGuard DNS uses a DNS proxy to enforce DNS policies and stay **always on** for supervised devices. To enable this, create a `mobileconfig` for the device and deploy it via MDM.
 
 :::important
 
-The same method can be used to enable DNS proxy on non-supervised managed devices (e.g., personal devices given access to corporate resources and apps). However, users can open Settings and switch to a different mode. On these devices, DNS proxy is not **always on**; it works as an optional, separate mode.
+This method can also be used for non-supervised devices, such as personal devices that have been given access to corporate resources and apps. However, users can open System settings and switch to a different mode. On these devices, DNS proxy is not **always on**; it works as an optional, separate mode.
 
 :::
 
