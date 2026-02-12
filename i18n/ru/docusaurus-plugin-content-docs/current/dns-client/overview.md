@@ -5,19 +5,13 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## Что такое AdGuard DNS Client?
+## What is AdGuard DNS CLI?
 
-Кроссплатформенный облегчённый DNS-клиент для [AdGuard DNS][agdns]. Он работает как DNS-сервер, перенаправляющий DNS-запросы соответствующим upstream-резолверам.
+A cross-platform lightweight DNS client for [AdGuard DNS]. Он работает как DNS-сервер, перенаправляющий DNS-запросы соответствующим upstream-резолверам.
 
-[agdns]: https://adguard-dns.io
+[AdGuard DNS]: https://adguard-dns.io
 
 ## Быстрый старт {#start}
-
-:::caution
-
-AdGuard DNS Client всё ещё находится в стадии бета-тестирования. Он может быть нестабильным.
-
-:::
 
 Поддерживаемые операционные системы:
 
@@ -39,14 +33,14 @@ AdGuard DNS Client всё ещё находится в стадии бета-т�
 
    :::caution
 
-   На macOS очень важно, чтобы глобально установленные демоны принадлежали `root` (см. документацию [`launchd`][launchd-requirements]), поэтому исполняемый файл `AdGuardDNSClient` должен быть помещён в директорию `/Applications/` или её поддиректорию.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
 2. Установите его как службу, выполнив:
 
    ```sh
-   ./AdGuardDNSClient -s install -v
+   ./adguarddns-cli -s install -v
    ```
 
 3. Отредактируйте файл конфигурации `config.yaml`.
@@ -54,7 +48,7 @@ AdGuard DNS Client всё ещё находится в стадии бета-т�
 4. Запустите службу:
 
    ```sh
-   ./AdGuardDNSClient -s start -v
+   ./adguarddns-cli -s start -v
    ```
 
 Чтобы убедиться, что он работает, используйте любую утилиту проверки DNS. Например, с помощью `nslookup`:
@@ -64,7 +58,7 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 ```
 
 [launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
-[releases]: https://github.com/AdguardTeam/AdGuardDNSClient/releases
+[releases]: https://github.com/AdguardTeam/AdGuardDNSCLI/releases
 
 ### Windows {#start-basic-win}
 
@@ -82,18 +76,18 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ### Справка {#opts-help}
 
-Опция `-h` заставляет AdGuard DNS Client выводить справочное сообщение на стандартный вывод и завершать работу с кодом успешного выполнения.
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
 ### Сервис {#opts-service}
 
 Параметр `-s <value>` определяет действие службы ОС. Возможные значения:
 
-- `install`: устанавливает AdGuard DNS Client в качестве службы
-- `restart`: перезапускает запущенную службу AdGuard DNS Client
-- `start`: запускает установленную службу AdGuard DNS Client
-- `status`: показывает статус установленной службы AdGuard DNS Client
-- `stop`: останавливает запущенный AdGuard DNS Client
-- `uninstall`: удаляет службу AdGuard DNS Client
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
 ### Подробно {#opts-verbose}
 
@@ -101,7 +95,7 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ### Версия {#opts-version}
 
-Параметр `--version` заставляет AdGuard DNS Client выводить стандартную версию исполняемого файла `AdGuardDNSClient` и завершать работу с кодом успешного завершения.
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
 ## Конфигурация {#conf}
 

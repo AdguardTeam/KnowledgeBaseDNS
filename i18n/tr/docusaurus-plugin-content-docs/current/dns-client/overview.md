@@ -5,19 +5,13 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## AdGuard DNS İstemcisi nedir?
+## What is AdGuard DNS CLI?
 
-[AdGuard DNS][agdns] için platformlar arası hafif bir DNS istemcisi. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
-[agdns]: https://adguard-dns.io
+[AdGuard DNS]: https://adguard-dns.io
 
 ## Hızlı başlangıç {#start}
-
-:::caution
-
-AdGuard DNS İstemcisi hâlâ Beta aşamasındadır. Kararsız olabilir.
-
-:::
 
 Desteklenen işletim sistemleri:
 
@@ -39,14 +33,14 @@ Desteklenen CPU mimarileri:
 
    :::caution
 
-   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
 2. Çalıştırarak bir hizmet olarak yükleyin:
 
    ```sh
-   ./AdGuardDNSClient -s install -v
+   ./adguarddns-cli -s install -v
    ```
 
 3. `config.yaml` yapılandırma dosyasını düzenleyin.
@@ -54,7 +48,7 @@ Desteklenen CPU mimarileri:
 4. Hizmeti başlatın:
 
    ```sh
-   ./AdGuardDNSClient -s start -v
+   ./adguarddns-cli -s start -v
    ```
 
 Çalıştığını kontrol etmek için herhangi bir DNS kontrol yardımcı programını kullanın. Örneğin, `nslookup` kullanarak:
@@ -64,7 +58,7 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 ```
 
 [launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
-[releases]: https://github.com/AdguardTeam/AdGuardDNSClient/releases
+[releases]: https://github.com/AdguardTeam/AdGuardDNSCLI/releases
 
 ### Windows {#start-basic-win}
 
@@ -82,18 +76,18 @@ Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili de�
 
 ### Yardım {#opts-help}
 
-`-h` seçeneği AdGuard DNS İstemcisinin standart çıktıya bir yardım mesajı yazdırmasını ve başarılı durum koduyla çıkmasını sağlar.
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
 ### Hizmet {#opts-service}
 
 `-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
 
-- `install`: AdGuard DNS İstemcisini bir hizmet olarak yükler
-- `restart`: çalışan AdGuard DNS İstemcisi hizmetini yeniden başlatır
-- `start`: yüklü AdGuard DNS İstemcisi hizmetini başlatır
-- `status`: kurulu AdGuard DNS İstemcisi hizmetinin durumunu gösterir
-- `stop`: çalışan AdGuard DNS İstemcisini durdurur
-- `uninstall`: AdGuard DNS İstemcisi hizmetini kaldırır
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
 ### Verbose {#opts-verbose}
 
@@ -101,7 +95,7 @@ Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili de�
 
 ### Sürüm {#opts-version}
 
-`--version` seçeneği, AdGuard DNS İstemcisinin `AdGuardDNSClient` çalıştırılabilir sürümünü standart çıktıya yazdırmasını ve bir başarı durum koduyla çıkmasını sağlar.
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
 ## Yapılandırma {#conf}
 

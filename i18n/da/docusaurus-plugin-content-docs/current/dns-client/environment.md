@@ -5,7 +5,7 @@ sidebar_position: 3
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS Client bruger [miljøvariabler][wiki-env] til at gemme en del af opsætningen. Den øvrige opsætning er gemt i [opsætningsfilen][conf].
+AdGuard DNS CLI bruger [miljøvariablen][wiki-env] til at gemme en del af opsætningen. Den øvrige opsætning er gemt i [opsætningsfilen][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable

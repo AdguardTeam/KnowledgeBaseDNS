@@ -5,7 +5,7 @@ sidebar_position: 3
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-Klient AdGuard DNS používá [proměnné prostředí][wiki-env] k uložení části konfigurace. Zbytek konfigurace je uložen v [konfiguračním souboru][conf].
+Klient AdGuard DNS CLI používá [proměnné prostředí][wiki-env] k uložení části konfigurace. Zbytek konfigurace je uložen v [konfiguračním souboru][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
