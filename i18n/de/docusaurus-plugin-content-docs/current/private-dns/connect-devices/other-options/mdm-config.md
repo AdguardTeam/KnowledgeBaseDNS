@@ -1,15 +1,15 @@
 ---
-title: App für Mobilgeräte über MDM verwalten
+title: Verwaltung der App „AdGuard DNS“ für Mobilgeräte über MDM
 sidebar_position: 7
 ---
 
 :::info
 
-Dieser Artikel beschreibt eine Funktion, die in der App für Mobilgeräte verfügbar ist. Um es selbst auszuprobieren, laden Sie die AdGuard DNS App für [Android](https://agrd.io/android_dns) oder [iOS](https://agrd.io/ios_dns) herunter.
+Dieser Artikel beschreibt eine Funktion, die in der App „AdGuard DNS“ für Mobilgeräte verfügbar ist. Um es selbst auszuprobieren, laden Sie die App „AdGuard DNS” für [Android](https://agrd.io/android_dns) oder [iOS](https://agrd.io/ios_dns) herunter.
 
 :::
 
-Die AdGuard DNS App für Mobilgeräte unterstützt die Unternehmensverwaltung über MDM-Systeme (Mobile Device Management) unter Verwendung des MAC-Standards (Managed App Configuration).
+Die App „AdGuard DNS“ für Mobigeräte unterstützt die Unternehmensverwaltung über MDM-Systeme (Mobile Device Management) unter Verwendung des MAC-Standards (Managed App Configuration).
 
 Dadurch können IT-Administratoren die AdGuard-DNS-Einstellungen über EMM-Konsolen wie Google Workspace, Microsoft Intune und andere mit [AppConfig.org](https://www.appconfig.org/) kompatible Lösungen zentral für mehrere Geräte konfigurieren und implementieren.
 
@@ -153,4 +153,4 @@ A minimal profile consists of a top-level payload with a single nested payload:
 | **ProviderBundleIdentifier** | `com.adguard.ios.adguard-dns.dnsproxy`         | Bundle ID of the DNS proxy provider inside the app. Do not change.                                                                                                                                                                                  |
 | **ProviderConfiguration**    | `{ }`                                          | Configuration dictionary passed by iOS into the extension. Empty because all settings come from the main app.                                                                                                                                       |
 
-Once the profile is installed and the user logs into DNS, the Network Extension with DNS proxy starts automatically.
+**Once the profile is installed, make sure to log in to the AdGuard DNS app and activate protection.** After that, the Network Extension with DNS proxy will start automatically.
