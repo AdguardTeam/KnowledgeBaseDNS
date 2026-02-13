@@ -153,4 +153,4 @@ A minimal profile consists of a top-level payload with a single nested payload:
 | **ProviderBundleIdentifier** | `com.adguard.ios.adguard-dns.dnsproxy`         | Bundle ID of the DNS proxy provider inside the app. Do not change.                   |
 | **ProviderConfiguration**    | `{ }`                                          | Configuration dictionary passed by iOS into the extension. Empty because all settings come from the main app.                                                                                                                                                |
 
-Once the profile is installed and the user logs into DNS, the Network Extension with DNS proxy starts automatically.
+**Once the profile is installed, make sure to log in to the AdGuard DNS app and activate protection.** After that, the Network Extension with DNS proxy will start automatically.
