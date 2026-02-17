@@ -65,7 +65,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
 ### LKBIN DNS
 
-[LKBIN DNS](https://mydns.lkbin.my.id) is a free and secure public resolver from LKBIN. Only supports dns over https (DOH) protocol. It focuses on providing adblocker and privacy-friendly internet access with support for modern encryption protocols to ensure a safer browsing experience.
+[LKBIN DNS](https://mydns.lkbin.my.id) is a free and secure public resolver from LKBIN. Only supports dns over https (DOH) protocol. It focuses on providing adblocker and privacy-friendly internet access with support for modern encryption protocols to ensure a safer browsing experience. Regarding privacy, LKBIN DNS maintains a no-logs policy for DNS queries to ensure user privacy. No personally identifiable information (PII) is collected or stored.
 
 #### Unfiltered
 
