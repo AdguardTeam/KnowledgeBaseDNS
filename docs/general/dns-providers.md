@@ -75,9 +75,9 @@ This is an unfiltered DNS variant that ensures high speed, performance, and stab
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
 
-#### Adblock
+#### Default / Adblock
 
-This is a DNS Adblock variant that removes annoying ads and data trackers. Browsing is safer and faster.
+This is a DNS Default / Adblock variant that removes annoying ads and data trackers. Browsing is safer and faster.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
@@ -91,7 +91,7 @@ This DNS works to ensure a family-friendly internet, such as blocking prohibited
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/family` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id) |
 
-#### Security
+#### Security / Antivirus
 
 This DNS ensures an extra layer of security blocking malicious domains, phishing, and ransomware.
 
