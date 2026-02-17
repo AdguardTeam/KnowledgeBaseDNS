@@ -75,9 +75,9 @@ This is an unfiltered DNS variant that ensures high speed, performance, and stab
 |----------------|----------------------------------------------------|----------------|
 | DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
 
-#### Default / Adblock
+#### Default (Adblocking)
 
-This is a DNS Default / Adblock variant that removes annoying ads and data trackers. Browsing is safer and faster.
+This is the standard LKBIN DNS configuration with integrated adblocking. It automatically filters out annoying ads and data trackers to provide a safer and faster browsing experience.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
