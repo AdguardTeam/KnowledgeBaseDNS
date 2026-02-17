@@ -5,7 +5,7 @@ sidebar_position: 3
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-AdGuard DNS İstemcisi yapılandırmanın bir kısmını saklamak için [ortam değişkenleri][wiki-env] kullanır. Yapılandırmanın geri kalanı [yapılandırma dosyası][conf] içinde saklanır.
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. Yapılandırmanın geri kalanı [yapılandırma dosyası][conf] içinde saklanır.
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable

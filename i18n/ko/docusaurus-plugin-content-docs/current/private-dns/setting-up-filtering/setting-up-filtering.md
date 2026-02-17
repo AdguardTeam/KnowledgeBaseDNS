@@ -1,24 +1,24 @@
 ---
-title: How to set up filtering
+title: 필터링 설정하는 법
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+개인 DNS는 광고, 추적기 및 기타 원치 않는 요청을 차단할 뿐만 아니라, 차단 설정을 세부적으로 조정하고 특정 웹사이트나 서비스에 대한 접근을 제한할 수 있게 해줍니다.
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS는 필터링 및 접근 권한을 맞춤 설정할 수 있는 다양한 도구를 제공합니다:
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [차단 목록](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  빠르고 쉬운 필터링 맞춤 설정을 위한 핵심 기능입니다.
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [사용자 규칙](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  사용자 정의 필터와 자신만의 필터링 규칙을 추가할 수 있습니다.
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [보안 기능](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  피싱 및 가짜 웹사이트 방문과 민감한 데이터의 잠재적 유출로부터 사용자를 보호합니다.
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [자녀 보호](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  민감한 콘텐츠가 포함된 웹사이트 및 서비스에 대한 액세스를 제한하고, 안전한 검색을 적용하고, 화면 사용 시간을 설정할 수 있습니다.

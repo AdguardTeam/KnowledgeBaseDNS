@@ -5,19 +5,13 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## 什么是 AdGuard DNS 客户端？
+## What is AdGuard DNS CLI?
 
-适用于 [AdGuard DNS][agdns] 的一个跨平台的轻量级 DNS 客户端。 它充当一个 DNS 服务器，将 DNS 请求转发到相应的上游解析器。
+A cross-platform lightweight DNS client for [AdGuard DNS]. 它充当一个 DNS 服务器，将 DNS 请求转发到相应的上游解析器。
 
-[agdns]: https://adguard-dns.io
+[AdGuard DNS]: https://adguard-dns.io
 
 ## 快速开始 {#start}
-
-:::caution
-
-AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
-
-:::
 
 支持的操作系统：
 
@@ -39,14 +33,14 @@ AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
 
    :::caution
 
-   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `AdGuardDNSClient` executable must be placed in the `/Applications/` directory or its subdirectory.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
 2. 安装并运行以下命令将其设置为服务：
 
    ```sh
-   ./AdGuardDNSClient -s install -v
+   ./adguarddns-cli -s install -v
    ```
 
 3. 编辑配置文件 `config.yaml`。
@@ -54,7 +48,7 @@ AdGuard DNS 客户端仍处于测试阶段。 它可能运行不稳定。
 4. 启动服务：
 
    ```sh
-   ./AdGuardDNSClient -s start -v
+   ./adguarddns-cli -s start -v
    ```
 
 使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup`：
@@ -64,7 +58,7 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 ```
 
 [launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
-[releases]: https://github.com/AdguardTeam/AdGuardDNSClient/releases
+[releases]: https://github.com/AdguardTeam/AdGuardDNSCLI/releases
 
 ### Windows {#start-basic-win}
 
@@ -82,18 +76,18 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ### 帮助 {#opts-help}
 
-使用 `-h` 选项可在标准输出查看 AdGuard DNS Client 的帮助信息，并以成功状态退出。
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
 ### 服务 {#opts-service}
 
 `-s <value>` 选项用于指定对操作系统服务的操作。 可能的选项值如下：
 
-- `install`：将 AdGuard DNS 客户端安装为一项服务
-- `restart`：重启正在运行的 AdGuard DNS 客户端服务
-- `start`：启动已安装的 AdGuard DNS 客户端服务
-- `status`：显示已安装的 AdGuard DNS 客户端服务状态
-- `stop`：停止正在运行的 AdGuard DNS 客户端服务
-- `uninstall`：卸载 AdGuard DNS 客户端服务
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
 ### 详细日志输出 {#opts-verbose}
 
@@ -101,7 +95,7 @@ nslookup -debug "www.example.com" "127.0.0.1"
 
 ### 版本 {#opts-version}
 
-`--version` 选项可以让 AdGuard DNS 客户端打印可执行文件 `AdGuardDNSClient` 的版本信息到标准输出并退出 (退出状态为成功)。
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
 ## 配置文件 {#conf}
 

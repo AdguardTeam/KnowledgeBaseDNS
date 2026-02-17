@@ -11,7 +11,7 @@ sidebar_position: 2
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -69,6 +69,18 @@ Objekt `server` konfiguruje zpracování příchozích požadavků. Vyznačuje s
       - address: '127.0.0.1:53'
       - address: '[::1]:53'
   ```
+
+- `pending_requests`: Konfigurace pro zpracování duplicitních souběžných požadavků používaná k omezení útoků typu cache poisoning.
+
+  :::note
+
+  Tento objekt je k dispozici od **v0.0.4**.
+
+  :::
+
+  - `enabled`: Pokud je hodnota true, server provede pouze jeden požadavek pro každou jedinečnou otázku.  Výchozí hodnota je true.
+
+    **Příklad:** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 

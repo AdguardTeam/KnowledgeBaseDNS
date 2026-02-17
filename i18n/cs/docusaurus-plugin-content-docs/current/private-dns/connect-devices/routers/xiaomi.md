@@ -9,7 +9,7 @@ Bohužel nepodporuje šifrované DNS, ale je skvělý pro nastavení AdGuard DNS
 
 ## Použijte panel správce routeru
 
-Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
+Pokud váš router Xiaomi nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
 
 1. Otevřete panel správce routeru. Přístup k němu je možný skrze `192.168.31.1` nebo na IP adrese vašeho routeru.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.

@@ -11,7 +11,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -69,6 +69,18 @@ The `server` object configures the handling of incoming requests. It has the fol
       - address: '127.0.0.1:53'
       - address: '[::1]:53'
   ```
+
+- `pending_requests`: Configuratie voor het afhandelen van dubbele gelijktijdige verzoeken die worden gebruikt om cache poisoning-aanvallen te beperken.
+
+  :::note
+
+  Dit object is beschikbaar sinds **v0.0.4**.
+
+  :::
+
+  - `enabled`: Als deze op waar staat, zal de server slechts een enkel verzoek uitvoeren voor elke unieke vraag.  Standaard is waar.
+
+    **Example:** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 
@@ -167,7 +179,7 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the
 
 - `enabled`: Whether or not the debug profiling is enabled.
 
-  **Example:** `true`
+  **Voorbeeld:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
