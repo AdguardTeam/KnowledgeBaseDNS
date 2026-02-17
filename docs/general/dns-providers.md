@@ -63,6 +63,42 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
 
+### LKBIN DNS
+
+[LKBIN DNS](https://mydns.lkbin.my.id) is a free and secure public resolver from LKBIN. It focuses on providing adblocker and privacy-friendly internet access with support for modern encryption protocols to ensure a safer browsing experience.
+
+#### Unfiltered
+
+This is an unfiltered DNS variant that ensures high speed, performance, and stability.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
+
+#### Adblock
+
+This is a DNS Adblock variant that removes annoying ads and data trackers. Browsing is safer and faster.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id) |
+
+#### Family
+
+This DNS works to ensure a family-friendly internet, such as blocking prohibited sites and including adblock too.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/family` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id) |
+
+#### Security
+
+This DNS ensures an extra layer of security blocking malicious domains, phishing, and ransomware.
+
+| Protocol       | Address                                            |                |
+|----------------|----------------------------------------------------|----------------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/antivirus` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id) |
+
 ### Ali DNS
 
 [Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
