@@ -65,7 +65,7 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 
 ### LKBIN DNS
 
-[LKBIN DNS](https://mydns.lkbin.my.id) is a free and secure public resolver from LKBIN. Only supports dns over https (DOH) protocol. It focuses on providing adblocker and privacy-friendly internet access with support for modern encryption protocols to ensure a safer browsing experience. Regarding privacy, LKBIN DNS maintains a no-logs policy for DNS queries to ensure user privacy. No personally identifiable information (PII) is collected or stored.
+[LKBIN DNS](https://mydns.lkbin.my.id) is a free and secure public resolver from LKBIN. It exclusively supports the DNS-over-HTTPS (DoH) protocol; other protocols such as DNS-over-TLS (DoT), DNS-over-QUIC (DoQ), and DNSCrypt are not supported. Additionally, LKBIN DNS does not provide direct IPv4 or IPv6 addresses for resolution. The service focuses on adblocking and privacy, maintaining a strict no-logs policy where no DNS queries or personally identifiable information (PII) are collected or stored.
 
 #### Unfiltered
 
@@ -93,7 +93,7 @@ This DNS works to ensure a family-friendly internet, such as blocking prohibited
 
 #### Security / Antivirus
 
-This DNS ensures an extra layer of security blocking malicious domains, phishing, and ransomware.
+Unlike the Default variant, this version focuses strictly on security threats. It is designed to block access to malicious domains, including malware, phishing, and spyware, without filtering ads or trackers. This is ideal for users who want protection against cyber threats while maintaining normal ad visibility.
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
