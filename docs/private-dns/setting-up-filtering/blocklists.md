@@ -68,7 +68,7 @@ Learn more in the [User rules article](/private-dns/setting-up-filtering/user-ru
 
 If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/blocklists_en.png)
+![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
 
 1. Open the dashboard and click *Servers* in the left-hand menu
 1. Select *My server → Blocklists*
