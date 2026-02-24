@@ -64,21 +64,21 @@ If your filter’s blocking rules do not duplicate the existing lists, it will b
 You can also create your own blocking rules.
 Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Aangepaste blokkeerlijsten
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Als je een specifieke blokkeerlijst aan AdGuard DNS wilt toevoegen, kun je deze downloaden via een URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Aangepaste blokkeerlijst toevoegen](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Open het dashboard en klik op _Servers_ in het menu aan de linkerkant
+2. Selecteer _Mijn server → Blokkeerlijsten_
+3. Klik in het gedeelte _Aangepast_ op _Aangepaste blokkeerlijst toevoegen_
+4. Voer de naam van de blokkeerlijst, de URL en een optionele beschrijving in en klik vervolgens op _Toevoegen_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+Elk abonnement heeft een limiet voor het totale aantal filterregels: Persoonlijk — 1000, Team — 5000, Zakelijk — 100.000. Deze beperking is ingesteld omdat blokkeerlijsten naar DNS-servers worden gedownload. Het toestaan van onbeperkte blokkeerlijstgroottes zou kunnen leiden tot overbelasting van de server en mogelijk prestatieproblemen.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Als een aangepaste blokkeerlijst de limiet overschrijdt, wordt deze **automatisch uitgeschakeld** en ontvang je een bijbehorende melding. Om een nieuw toegevoegde blokkeerlijst in te schakelen die de regellimiet overschrijdt, moet je ofwel andere blokkeerlijsten verwijderen of upgraden naar een abonnement met een hogere limiet.
