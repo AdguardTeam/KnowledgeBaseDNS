@@ -64,21 +64,21 @@ Dublerer ens eget filters blokeringsregler ikke de eksisterende lister, føjes f
 Man kan også oprette egne blokeringsregler.
 Læs mere herom i [artiklen Brugerregler](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Tilpassede sortlister
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Ved behov for, at en bestemt sortliste føjes til AdGuard DNS, kan denne downloades via URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Tilføj tilpasset sortliste](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Åbn kontrolpanelet og klik på _Servere_ i menuen til venstre
+2. Vælg _Min server → Sortlister_
+3. I afsnittet _Tilpasset_, klik på _Tilføj tilpasset sortliste_
+4. Angiv sortlistenavnet, dens URL samt en valgfri beskrivelse, og klik dernæst på _Tilføj_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+Hver abonnementstype har en kvote for det samlede antal filtreringsregler: Personal — 1K, Team — 5K, Enterprise — 100K. Denne kvote er indført, da sortlister downloades til DNS-servere, hvorfor ubegrænsede sortlistestørrelser ville kunne føre til serveroverbelastninger og potentielt forårsage ydeevneproblemer.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Overstiger en tilpasset sortliste kvoten, bliver den **slået fra automatisk**, og en notifikation herom vises. For at aktivere en nyligt tilføjet sortliste, der overstiger regelkvoten, skal der enten fjernes andre sortlister eller opgraderes til en abonnementstype med en højere regelkvote.
