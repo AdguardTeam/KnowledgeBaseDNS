@@ -63,3 +63,22 @@ If your filter’s blocking rules do not duplicate the existing lists, it will b
 
 You can also create your own blocking rules.
 Learn more in the [User rules article](/private-dns/setting-up-filtering/user-rules.md).
+
+## Custom blocklists
+
+If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+
+![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+
+1. Open the dashboard and click *Servers* in the left-hand menu
+1. Select *My server → Blocklists*
+1. In the *Custom* section, click *Add custom blocklist*
+1. Enter the blocklist name, its URL, and an optional description, then click *Add*
+
+:::note
+
+Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+
+:::
+
+If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
