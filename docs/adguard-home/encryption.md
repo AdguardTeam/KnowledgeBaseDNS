@@ -15,7 +15,7 @@ AdGuard Home also supports [DNSCrypt][dnscrypt-info] (both client-side and serve
 
 :::
 
-This guide explains how to setup a "Secure DNS" server with AdGuard Home.
+This guide explains how to setup an encrypted DNS server with AdGuard Home.
 
 [dnscrypt-info]: https://dnscrypt.info/
 
@@ -116,7 +116,7 @@ If a certificate and/or a private key is specified by file path, AdGuard Home wi
 
 We already have a [guide][reverse-proxy-faq] on configuring a reverse proxy server for accessing AdGuard Home web UI.
 
-Since v0.107.0 AdGuard Home is able to restrict DNS-over-HTTPS requests which came from the proxy server not included into "trusted" list. By default, it's configured to accept requests from IPv4 and IPv6 loopback addresses.
+AdGuard Home is able to restrict DNS-over-HTTPS requests which came from the proxy server not included into "trusted" list. By default, it's configured to accept requests from IPv4 and IPv6 loopback addresses.
 
 To enable AdGuard Home to handle DNS-over-HTTPS requests from a reverse proxy server, set the `trusted_proxies` setting in `AdGuardHome.yaml` to the IP address of the proxy server. If you have several proxy servers, you can use a CIDR instead of a simple IP address.
 
@@ -124,7 +124,7 @@ To enable AdGuard Home to handle DNS-over-HTTPS requests from a reverse proxy se
 
 To configure AdGuard Home for accepting requests from Nginx reverse proxy server, make sure that the reverse proxy server itself is configured correctly.
 
-The `nginx.conf` file should contain the appropriate directives to add the supported forwarding headers to the request which are `X-Real-IP` or `X-Forwarded-For`. This may be achieved with `ngx_http_realip_module` which is explained [here][ngx-http-realip-module]. In short, the module takes real IP address of the client and writes it to the HTTP request's header. The AdGuard Home will receive and interpret the value of this header as real client's address. The address of the reverse proxy server will be received too and also checked against the "trusted" proxies list.
+The `nginx.conf` file should contain the appropriate directives to add the supported forwarding headers to the request which are `X-Real-IP` or `X-Forwarded-For`. This may be achieved with [`ngx_http_realip_module`][ngx-http-realip-module]. In short, the module takes real IP address of the client and writes it to the HTTP request's header. The AdGuard Home will receive and interpret the value of this header as real client's address. The address of the reverse proxy server will be received too and also checked against the "trusted" proxies list.
 
 Another header you might want to proxy is the `Host` header, which is required to make AdGuard Home recognize requests from clients that have a ClientID in their hostnames.
 
@@ -144,7 +144,7 @@ AdGuard Home will get the `192.168.1.2` as the address of your proxy server and 
 
 ### Cloudflare CDN
 
-The Cloudflare's content delivery network acts as the reverse proxy appending its [own headers][cloudflare-headers] to the forwarded requests, which are `CF-Connecting-IP` and `True-Client-IP`. These are also supported by AdGuard Home so the reverse proxy servers' [addresses][cloudflare-addresses] may be inserted into `trusted_proxies` list directly. An official Cloudflare's reference on restoring the original visitor's IP may be found [here][cloudflare-real-ip].
+The Cloudflare's content delivery network acts as the reverse proxy appending its [own headers][cloudflare-headers] to the forwarded requests, which are `CF-Connecting-IP` and `True-Client-IP`. These are also supported by AdGuard Home so the reverse proxy servers' [addresses][cloudflare-addresses] may be inserted into `trusted_proxies` list directly. See the [official Cloudflare's reference][cloudflare-real-ip] on restoring the original visitor's IP.
 
 ### Other Headers
 
@@ -171,13 +171,13 @@ location /dns-query {
 
 ### Android
 
-- Android 9 supports `DNS-over-TLS` natively. To configure it, go to *Settings* → *Network & internet* → *Advanced* → *Private DNS* and enter your domain name there.
+- Android 9 and above supports `DNS-over-TLS` natively. To configure it, go to *Settings* → *Network & internet* → *Advanced* → *Private DNS* and enter your domain name there.
 - [AdGuard for Android][ag-for-android] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
 - [Intra][intra] adds `DNS-over-HTTPS` support to Android.
 
 ### iOS
 
-- iOS 14 and higher support `DNS-over-TLS` and `DNS-over-HTTPS` natively via configuration profiles. In order to make things easier, AdGuard Home can generate these configuration profiles for you. Just head to *Setup Guide* → *DNS Privacy* and scroll to iOS.
+- iOS 14 and above support `DNS-over-TLS` and `DNS-over-HTTPS` natively via configuration profiles. In order to make things easier, AdGuard Home can generate these configuration profiles for you. Just head to *Setup Guide* → *DNS Privacy* and scroll to iOS.
 - [AdGuard for iOS][ag-for-ios] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
 - [DNSCloak][dnscloak] supports `DNS-over-HTTPS` but in order to configure it to use your own server, you'll need to generate a [DNS Stamp][stamps] for it.
 
@@ -197,8 +197,6 @@ location /dns-query {
 - [dnscrypt-proxy][dnscrypt-proxy] supports `DNS-over-HTTPS`.
 - [Mozilla Firefox][firefox] supports `DNS-over-HTTPS`.
 
-You can find more implementations [here][dnscrypt-imps1] and [here][dnscrypt-imps2].
-
 [ag-for-android]: https://adguard.com/en/adguard-android/overview.html
 [intra]:          https://getintra.org
 [ag-for-ios]:     https://adguard.com/en/adguard-ios/overview.html
@@ -208,22 +206,20 @@ You can find more implementations [here][dnscrypt-imps1] and [here][dnscrypt-imp
 [ag-dnsproxy]:    https://github.com/AdguardTeam/dnsproxy
 [dnscrypt-proxy]: https://github.com/jedisct1/dnscrypt-proxy
 [firefox]:        https://www.mozilla.org/firefox
-[dnscrypt-imps1]: https://dnscrypt.info/implementations
-[dnscrypt-imps2]: https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Clients
 
 ## Configuring DNSCrypt {#configure-dnscrypt}
 
-Since v0.105.0, AdGuard Home is able to work as a DNSCrypt server. However, this feature is only available via configuration file, and can't be set up using the Web UI. This guide explains how to do this.
+AdGuard Home is able to work as a DNSCrypt server. However, this feature is only available via configuration file, and can't be set up using the Web UI. This guide explains how to do this.
 
 ### Generating a configuration file
 
 Here is how to generate a DNSCrypt configuration file and point AdGuard Home to it:
 
-1. :::info Important
+:::info Important
 
    Make sure that your TLS settings are valid and encryption is enabled.
 
-   :::
+:::
 
 1. Get the latest version of the [`dnscrypt`] utility for your system. Extract the archive and navigate to the resulting directory.
 
@@ -304,13 +300,7 @@ Here is how to generate a DNSCrypt configuration file and point AdGuard Home to 
 
     You may add the path to the binary into your `PATH`/`$env:PATH`.
 
-1. :::info Important
-
-   Stop AdGuard Home before changing the configuration file.
-
-   :::
-
-   In the configuration file (typically `AdGuardHome.yaml`), add the following lines:
+1. In the configuration file (typically `AdGuardHome.yaml`), add the following lines:
 
    ```yaml
    'tls':
@@ -322,6 +312,12 @@ Here is how to generate a DNSCrypt configuration file and point AdGuard Home to 
    ```
 
    Where `5443` is the port for your DNSCrypt server and `./dnscrypt.yaml` is the name of the configuration file generated in step 2.
+
+   :::info Important
+
+   Stop AdGuard Home before changing the configuration file.
+
+   :::
 
    :::tip
 
@@ -391,12 +387,13 @@ Here is how to generate a DNSCrypt stamp and check your installation:
 - [AdGuard for Windows][win] supports DNSCrypt.
 - [Simple DNSCrypt][simp] is a simple management tool to configure and run `dnscrypt-proxy` on Windows.
 
-You can find more implementations on the [DNSCrypt website][info].
+See the [DNSCrypt website][imps1] and [DNS privacy project's list][imps2] for more.
 
-[andr]: https://adguard.com/en/adguard-android/overview.html
-[cloa]: https://itunes.apple.com/app/id1452162351
-[info]: https://dnscrypt.info/implementations
-[ios]:  https://adguard.com/en/adguard-ios/overview.html
-[prox]: https://github.com/DNSCrypt/dnscrypt-proxy
-[simp]: https://simplednscrypt.org/
-[win]:  https://adguard.com/en/adguard-windows/overview.html
+[andr]:  https://adguard.com/en/adguard-android/overview.html
+[cloa]:  https://itunes.apple.com/app/id1452162351
+[imps1]: https://dnscrypt.info/implementations
+[imps2]: https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Clients
+[ios]:   https://adguard.com/en/adguard-ios/overview.html
+[prox]:  https://github.com/DNSCrypt/dnscrypt-proxy
+[simp]:  https://simplednscrypt.org/
+[win]:   https://adguard.com/en/adguard-windows/overview.html
