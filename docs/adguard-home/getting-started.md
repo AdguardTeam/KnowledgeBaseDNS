@@ -136,7 +136,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
 1. Restart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 
