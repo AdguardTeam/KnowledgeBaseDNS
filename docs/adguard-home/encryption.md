@@ -11,7 +11,7 @@ AdGuard Home supports all modern DNS encryption protocols **out-of-the-box**:
 
 :::note
 
-AdGuard Home also supports [DNSCrypt][dnscrypt-info] (both client-side and server-side). See [this section](#configure-dnscrypt) to learn about configuring AdGuard Home as a DNSCrypt server.
+AdGuard Home supports both client-side and server-side [DNSCrypt][dnscrypt-info]. [Learn how to configure AdGuard Home as a DNSCrypt server](#configure-dnscrypt).
 
 :::
 
@@ -21,7 +21,7 @@ This guide explains how to setup an encrypted DNS server with AdGuard Home.
 
 ## Server installation {#server-installation}
 
-The purpose of securing the DNS traffic is to secure it from third-parties that might be analyzing or modifying it, e.g. from ISP.
+The purpose of securing the DNS traffic is to secure it from third parties that might be analyzing or modifying it, e.g., from ISP.
 
 <!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
@@ -39,11 +39,11 @@ First of all, you need a domain name. If you have never registered one, here is 
 
 ## Get an SSL certificate {#certificate}
 
-Both `DNS-over-HTTPS` and `DNS-over-TLS` are based on [TLS encryption][tls-wikipedia] so in order to use them, you will need to acquire an SSL certificate.
+Both `DNS-over-HTTPS` and `DNS-over-TLS` are based on [TLS encryption][tls-wikipedia], so you will need an SSL certificate to use them.
 
-An SSL certificate can be bought from a "Certificate Authority" (CA), a company trusted by browsers and operating systems to enroll SSL certificates for domains.
+An SSL certificate can be bought from a Certificate Authority (CA), a company trusted by browsers and operating systems to enroll SSL certificates for domains.
 
-Alternatively, you can get the certificate for free from ["Let's Encrypt" CA][letsencrypt], a free certificate authority developed by the Internet Security Research Group (ISRG).
+Alternatively, you can get the certificate for free from the [Let’s Encrypt CA][letsencrypt], a free certificate authority developed by the Internet Security Research Group (ISRG).
 
 This guide explains how to get a certificate from them.
 
@@ -52,22 +52,22 @@ This guide explains how to get a certificate from them.
 Certbot is an easy-to-use client that fetches a certificate from Let’s Encrypt.
 
 1. Go to [certbot.eff.org][certbot] and choose *None of the above* software and your operating system.
-1. Follow the installation instructions, and stop there – don't get to the *Get Started* section.
+1. Follow the installation instructions and stop before reaching the *Get Started* section.
 
 #### Get a certificate using DNS challenge
 
-You have just got a domain name so I suppose using DNS challenge will be the easiest way to get a certificate.
+You have a domain name, using DNS challenge is the easiest way to get a certificate.
 
-Run this command and follow the certbot's instructions:
+Run this command and follow the certbot’s instructions:
 
 ```sh
 sudo certbot certonly --manual --preferred-challenges=dns --preferred-chain="ISRG Root X1"
 ```
 
-In the end you'll get two files:
+In the end, you’ll get two files:
 
-- `fullchain.pem` – your PEM-encoded SSL certificate.
-- `privkey.pem` – your PEM-encoded private key.
+- `fullchain.pem`: your PEM-encoded SSL certificate
+- `privkey.pem`: your PEM-encoded private key
 
 Both will be necessary to configure AdGuard Home.
 
@@ -79,12 +79,12 @@ You will need to use the very same procedure to renew the existing certificate.
 
 ### Using Lego
 
-There's also a really nice and easy-to-use alternative to CertBot called [LEGO][lego-source].
+There’s also a really nice and easy-to-use alternative to CertBot called [LEGO][lego-source].
 
 1. Install it using [an appropriate method][lego-install].
-1. Choose your DNS provider from [the list][lego-provider] and follow the instruction to obtain a certificate.
+1. Choose your DNS provider from [the list][lego-provider] and follow the instructions to obtain a certificate.
 
-Also, here's [a simple script][legoagh] that you can use to automate certificates generation and renewal.
+Also, here’s [a simple script][legoagh] that you can use to automate certificates generation and renewal.
 
 [tls-wikipedia]: https://en.wikipedia.org/wiki/Transport_Layer_Security
 [letsencrypt]:   https://letsencrypt.org
@@ -108,7 +108,7 @@ Also, here's [a simple script][legoagh] that you can use to automate certificate
 
 :::note
 
-If a certificate and/or a private key is specified by file path, AdGuard Home will automatically reload them when they change. The reload may also be triggered by a SIGHUP signal.
+AdGuard Home will automatically reload certificates and/or private keys specified by file path when they change. A reload may also be triggered by a `SIGHUP` signal.
 
 :::
 
@@ -118,7 +118,7 @@ If a certificate and/or a private key is specified by file path, AdGuard Home wi
 
 We already have a [guide][reverse-proxy-faq] on configuring a reverse proxy server for accessing AdGuard Home web UI.
 
-AdGuard Home is able to restrict DNS-over-HTTPS requests which came from the proxy server not included into "trusted" list. By default, it's configured to accept requests from IPv4 and IPv6 loopback addresses.
+AdGuard Home is able to restrict DNS-over-HTTPS requests which came from the proxy server not included into "trusted" list. By default, it’s configured to accept requests from IPv4 and IPv6 loopback addresses.
 
 To enable AdGuard Home to handle DNS-over-HTTPS requests from a reverse proxy server, set the `trusted_proxies` setting in `AdGuardHome.yaml` to the IP address of the proxy server. If you have several proxy servers, you can use a CIDR instead of a simple IP address.
 
@@ -126,7 +126,7 @@ To enable AdGuard Home to handle DNS-over-HTTPS requests from a reverse proxy se
 
 To configure AdGuard Home for accepting requests from Nginx reverse proxy server, make sure that the reverse proxy server itself is configured correctly.
 
-The `nginx.conf` file should contain the appropriate directives to add the supported forwarding headers to the request which are `X-Real-IP` or `X-Forwarded-For`. This may be achieved with [`ngx_http_realip_module`][ngx-http-realip-module]. In short, the module takes real IP address of the client and writes it to the HTTP request's header. The AdGuard Home will receive and interpret the value of this header as real client's address. The address of the reverse proxy server will be received too and also checked against the "trusted" proxies list.
+The `nginx.conf` file should contain the appropriate directives to add the supported forwarding headers to the request which are `X-Real-IP` or `X-Forwarded-For`. This may be achieved with [`ngx_http_realip_module`][ngx-http-realip-module]. In short, the module takes real IP address of the client and writes it to the HTTP request’s header. The AdGuard Home will receive and interpret the value of this header as real client’s address. The address of the reverse proxy server will be received too and also checked against the "trusted" proxies list.
 
 Another header you might want to proxy is the `Host` header, which is required to make AdGuard Home recognize requests from clients that have a ClientID in their hostnames.
 
@@ -146,7 +146,7 @@ AdGuard Home will get the `192.168.1.2` as the address of your proxy server and 
 
 ### Cloudflare CDN
 
-The Cloudflare's content delivery network acts as the reverse proxy appending its [own headers][cloudflare-headers] to the forwarded requests, which are `CF-Connecting-IP` and `True-Client-IP`. These are also supported by AdGuard Home so the reverse proxy servers' [addresses][cloudflare-addresses] may be inserted into `trusted_proxies` list directly. See the [official Cloudflare's reference][cloudflare-real-ip] on restoring the original visitor's IP.
+The Cloudflare’s content delivery network acts as the reverse proxy appending its [own headers][cloudflare-headers] to the forwarded requests, which are `CF-Connecting-IP` and `True-Client-IP`. These are also supported by AdGuard Home so the reverse proxy servers’ [addresses][cloudflare-addresses] may be inserted into `trusted_proxies` list directly. See the [official Cloudflare’s reference][cloudflare-real-ip] on restoring the original visitor’s IP.
 
 ### Other Headers
 
@@ -183,7 +183,7 @@ location /dns-query {
 
 - iOS 14 and above support `DNS-over-TLS` and `DNS-over-HTTPS` natively via configuration profiles. In order to make things easier, AdGuard Home can generate these configuration profiles for you. Just head to *Setup Guide* → *DNS Privacy* and scroll to iOS.
 - [AdGuard for iOS][ag-for-ios] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
-- [DNSCloak][dnscloak] supports `DNS-over-HTTPS` but in order to configure it to use your own server, you'll need to generate a [DNS Stamp][stamps] for it.
+- [DNSCloak][dnscloak] supports `DNS-over-HTTPS` but in order to configure it to use your own server, you’ll need to generate a [DNS Stamp][stamps] for it.
 
 ### Windows
 
@@ -213,7 +213,7 @@ location /dns-query {
 
 ## Configuring DNSCrypt {#configure-dnscrypt}
 
-AdGuard Home is able to work as a DNSCrypt server. However, this feature is only available via configuration file, and can't be set up using the Web UI. This guide explains how to do this.
+AdGuard Home is able to work as a DNSCrypt server. However, this feature is only available via configuration file, and can’t be set up using the Web UI. This guide explains how to do this.
 
 ### Generating a configuration file
 
@@ -341,7 +341,7 @@ Here is how to generate a DNSCrypt stamp and check your installation:
 
    :::note
 
-   Enter the host with your custom port!
+   Enter the host with your custom port.
 
    :::
 
@@ -391,7 +391,7 @@ Here is how to generate a DNSCrypt stamp and check your installation:
 - [AdGuard for Windows][win] supports DNSCrypt.
 - [Simple DNSCrypt][simp] is a simple management tool to configure and run `dnscrypt-proxy` on Windows.
 
-See the [DNSCrypt website][imps1] and [DNS privacy project's list][imps2] for more.
+See the [DNSCrypt website][imps1] and [DNS privacy project’s list][imps2] for more.
 
 [andr]:  https://adguard.com/en/adguard-android/overview.html
 [cloa]:  https://itunes.apple.com/app/id1452162351
