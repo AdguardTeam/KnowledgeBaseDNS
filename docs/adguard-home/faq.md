@@ -312,7 +312,7 @@ If you’re using TLS on your reverse proxy server, you don’t need to use TLS 
 
 You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
