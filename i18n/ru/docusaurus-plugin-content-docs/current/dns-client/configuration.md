@@ -70,15 +70,15 @@ sidebar_position: 2
       - address: '[::1]:53'
   ```
 
-- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+- `pending_requests`: конфигурация для обработки дублирующихся одновременных запросов, используемая для смягчения атак отравления кеша.
 
   :::note
 
-  This object is available since **v0.0.4**.
+  Этот объект доступен начиная с версии **0.0.4**.
 
   :::
 
-  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+  - `enabled`: если значение равно true, сервер будет выполнять только один запрос для каждого уникального вопроса.  По умолчанию значение равно true.
 
     **Пример:** `true`
 

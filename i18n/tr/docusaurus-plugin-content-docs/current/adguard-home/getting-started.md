@@ -136,7 +136,7 @@ Düğmenin gösterilmemesi veya otomatik güncellemenin başarısız olması dur
 
 4. AdGuard Home'u yeniden başlatın.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 

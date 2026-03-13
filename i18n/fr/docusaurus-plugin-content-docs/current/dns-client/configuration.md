@@ -1,132 +1,132 @@
 ---
-title: Configuration file
+title: Fichier de configuration
 sidebar_position: 2
 ---
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Voir le fichier [`config.dist.yml`][dist] pour un exemple complet d'un fichier de configuration [YAML][yaml] avec des commentaires.
 
 <!--
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
 
-The `dns` object configures the behavior of the DNS server. It has the following properties:
+L'objet `dns` configure le comportement du serveur DNS. Il a les propriétés suivantes :
 
 ### `cache` {#dns-cache}
 
-The `cache` object configures caching the results of querying DNS. It has the following properties:
+L'objet `cache` configure le stockage en cache des résultats de requête DNS. Il a les propriétés suivantes :
 
-- `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: Si les résultats DNS doivent être mis en cache, ou pas.
 
-  **Example:** `true`
+  **Exemple :** `true`
 
-- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: La taille maximale du cache des résultats DNS en tant que taille de données lisible par l'homme. Elle doit être supérieure à zéro si `enabled` est `true`.
 
-  **Example:** `128MB`
+  **Exemple :** `128 MB`
 
-- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: La taille maximale du cache des résultats DNS pour chaque adresse du client configuré ou sous-réseau en tant que taille de données lisible par l'homme. Elle doit être supérieure à zéro si `enabled` est `true`.
 
-  **Example:** `4MB`
+  **Exemple :** `4 MB`
 
 ### `server` {#dns-server}
 
-The `server` object configures the handling of incoming requests. It has the following properties:
+L'objet `server` configure la gestion des requêtes entrantes. Il a les propriétés suivantes :
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: La configuration du mécanisme de re-tentative pour joindre les adresses d'écoute. C'est utile si le serveur est démarré avant que le réseau ne soit prêt et que les adresses ne soient pas encore disponibles, comme sur certaines éditions de Windows lorsqu'elles sont installées en tant que service système.
 
   :::note
 
-  This object is available since **v0.0.3**.
+  Cet objet est disponible depuis **v0.0.3**.
 
   :::
 
-  It has the following properties:
+  Il a les propriétés suivantes :
 
-  - `enabled`: Whether bind retry is enabled or not.
+  - `enabled` : Indique si la nouvelle tentative de liaison est activée ou non.
 
-    **Example:** `true`
+    **Exemple :** `true`
 
-  - `interval`: The interval between retries as a human-readable duration.
+  - `interval` : L'intervalle entre les tentatives sous forme de durée lisible par l'homme.
 
-    **Example:** `1s`
+    **Exemple :** `1s`
 
-  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+  - `count`: Le nombre maximum de tentatives après le premier échec. C'est-à-dire que si `count` est `4`, le nombre total de tentatives sera de cinq.
 
-    **Example:** `4`
+    **Exemple :** `4`
 
-- `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: L'ensemble d'adresses avec des ports à écouter.
 
-  **Property example:**
+  **Exemple de propriété :**
 
   ```yaml
   'listen_addresses':
-      - address: '127.0.0.1:53'
-      - address: '[::1]:53'
+      - adresse: '127.0.0.1:53'
+      - adresse: '[::1]:53'
   ```
 
-- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+- `pending_requests` : Configuration permettant de gérer les requêtes simultanées dupliquées afin d’atténuer les attaques par empoisonnement du cache.
 
   :::note
 
-  This object is available since **v0.0.4**.
+  Cet objet est disponible depuis **v0.0.4**.
 
   :::
 
-  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+  - `enabled` : Si true, le serveur n'effectuera qu'une seule requête pour chaque question unique.  La valeur par défaut est true.
 
-    **Example:** `true`
+    **Exemple :** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 
-The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
+L'objet `bootstrap` configure la résolution des adresses des serveurs [en amont](#dns-upstream). Il a les propriétés suivantes :
 
-- `servers`: The list of servers to resolve the hostnames of upstream servers.
+- `servers`: La liste des serveurs pour résoudre les noms d'hôtes des serveurs en amont.
 
-  **Property example:**
+  **Exemple de propriété :**
 
   ```yaml
   'servers':
-      - address: '8.8.8.8:53'
-      - address: '192.168.1.1:53'
+      - adresse: '8.8.8.8:53'
+      - adresse: '192.168.1.1:53'
   ```
 
-- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: Le délai pour les requêtes DNS d'amorçage en tant que durée lisible par l'homme.
 
-  **Example:** `2s`
+  **Exemple :** `2 s`
 
 ### `upstream` {#dns-upstream}
 
-The `upstream` object configures the actual resolving of requests. It has the following properties:
+L'objet `upstream` configure la résolution effective des requêtes. Il a les propriétés suivantes :
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
+- `groups`: L'ensemble des serveurs en amont par le nom du groupe. Il a les propriétés suivantes :
 
-  - `address`: The upstream server’s address.
+  - `address`: L'adresse du serveur en amont.
 
-    **Example:** `'8.8.8.8:53'`
+    **Exemple :** `'8.8.8.8:53'`
 
-  - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+  - `match`: La liste des critères pour faire correspondre la requête. Chaque entrée peut contenir les propriétés suivantes :
 
-    - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
+    - `question_domain`: Le domaine ou un suffixe du domaine que l'ensemble des serveurs en amont doit utiliser pour résoudre.
 
-      **Example:** `'mycompany.local'`
+      **Exemple :** `'mycompany.local'`
 
-    - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+    - `client`: L'adresse du client ou un sous-réseau de l'adresse du client à partir duquel l'ensemble des serveurs en amont doit résoudre les requêtes. Il ne doit pas avoir de bits significatifs en dehors du masque de sous-réseau.
 
-      **Example:** `'192.0.2.0/24'`
+      **Exemple :** `'192.0.2.0/24'`
 
     :::note
 
-    Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+    Les propriétés spécifiées dans une seule entrée sont combinées avec un ET logique. Les entrées sont combinées avec un OR logique.
 
     :::
 
-    **Property example:**
+    **Exemple de propriété :**
 
     ```yaml
     'match':
@@ -138,113 +138,113 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` doit contenir au moins une seule entrée nommée `default`, et éventuellement une seule entrée nommée `private`, aucune des deux ne devrait avoir de propriété `match`.
 
   :::
 
-  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+  Le groupe `default` sera utilisé lorsqu'il n'y a pas de correspondances parmi les autres groupes. Le groupe `private` sera utilisé pour résoudre les requêtes PTR pour les adresses IP privées. Ces requêtes seront répondues avec `NXDOMAIN` si aucun groupe `private` n'est défini.
 
-- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+- `timeout`: Le délai pour les requêtes DNS en amont en tant que durée lisible par l'homme.
 
-  **Example:** `2s`
+  **Exemple :** `2s`
 
 ### `fallback` {#dns-fallback}
 
-The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
+L'objet `fallback` configure le comportement du serveur DNS en cas d'échec. Il a les propriétés suivantes :
 
-- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: La liste des serveurs à utiliser après que l'[amont](#dns-upstream) n'ait pas répondu.
 
-  **Property example:**
+  **Exemple de propriété :**
 
   ```yaml
   'servers':
       - address: 'tls://94.140.14.140'
   ```
 
-- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: Le délai pour les requêtes DNS de traitement de secours en tant que durée lisible par l'homme.
 
-  **Example:** `2s`
+  **Exemple :** `2s`
 
 ## `debug` {#debug}
 
-The `debug` object configures the debugging features. It has the following properties:
+L'objet `debug` configure les fonctionnalités de débogage. Il a les propriétés suivantes :
 
 ### `pprof` {#debug-pprof}
 
-The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
+L'objet `pprof` configure les gestionnaires HTTP [`pprof`][pkg-pprof]. Il a les propriétés suivantes :
 
-- `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: Le port à écouter pour les requêtes HTTP de débogage sur localhost.
 
-  **Example:** `6060`
+  **Exemple :** `6060`
 
-- `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Si oui ou non le profilage de débogage est activé.
 
-  **Example:** `true`
+  **Exemple :** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+L'objet `log` configure la journalisation. Il a les propriétés suivantes :
 
-- `output`: The output to which logs are written.
+- `output`: La sortie vers laquelle les journaux sont écrits.
 
   :::note
 
-  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Les entrées de journal écrites dans le journal système sont au format `text` (voir ci-dessous) et utilisent l'horodatage du système.
 
   :::
 
-  Possible values:
+  Valeurs possibles :
 
-  - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+  - `syslog` signifie que le journal système spécifique à la plateforme est utilisé, notamment syslog pour Linux et Event Log pour Windows.
 
-  - `stdout` for standard output stream.
+  - `stdout` pour le flux de sortie standard.
 
-  - `stderr` for standard error stream.
+  - `stderr` pour le flux d'erreur standard.
 
-  - Absolute path to the log file.
+  - Chemin absolu vers le fichier de journal.
 
-  **Example:** `/home/user/logs`
+  **Exemple :** `/home/user/logs`
 
-  **Example:** `C:\Users\user\logs.txt`
+  **Exemple :** `C:\Users\user\logs.txt`
 
-  **Example:** `syslog`
+  **Exemple :** `syslog`
 
-- `format`: Specifies the format of the log entries.
+- `format`: Spécifie le format des entrées de journal.
 
-  Possible values:
+  Valeurs possibles :
 
-  - `default`: A simple format. Exemple :
+  - `default`: Un format simple. Exemple :
 
     ```none
     INFO service started prefix=program addr=127.0.0.1:53
     ```
 
-  - `json`: A structured JSON format. Exemple :
+  - `json`: Un format JSON structuré. Exemple :
 
     ```json
     {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
     ```
 
-  - `jsonhybrid`: Same as `json` but with a limited number of fields. Exemple :
+  - `jsonhybrid`: Identique à `json` mais avec un nombre limité de champs. Exemple :
 
     ```json
     {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
     ```
 
-  - `text`: A structured text format. Exemple :
+  - `text`: Un format textuel structuré. Exemple :
 
     ```none
     level=INFO msg="service started" prefix=program addr=127.0.0.1:53
     ```
 
-  **Example:** `default`
+  **Exemple :** `default`
 
-- `timestamp`: Specifies whether to include a timestamp in the log entries.
+- `timestamp`: Spécifie s'il faut inclure un horodatage dans les entrées de journal.
 
-  **Example:** `false`
+  **Exemple :** `false`
 
-- `verbose`: Specifies whether the log should be more informative.
+- `verbose`: Spécifie si le journal doit être plus informatif.
 
-  **Example:** `false`
+  **Exemple :** `false`
