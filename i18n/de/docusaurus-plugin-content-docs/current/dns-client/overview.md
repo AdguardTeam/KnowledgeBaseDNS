@@ -5,9 +5,9 @@ sidebar_position: 1
 
 <!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
-## What is AdGuard DNS CLI?
+## Was ist AdGuard DNS CLI?
 
-A cross-platform lightweight DNS client for [AdGuard DNS]. Er fungiert als DNS-Server, der DNS-Anfragen an die entsprechenden vorgelagerten Resolver weiterleitet.
+Ein plattformübergreifender, schlanker DNS-Client für [AdGuard DNS]. Er fungiert als DNS-Server, der DNS-Anfragen an die entsprechenden vorgelagerten Resolver weiterleitet.
 
 [AdGuard DNS]: https://adguard-dns.io/de/
 
@@ -33,7 +33,7 @@ Unterstützte CPU-Architekturen:
 
    :::caution
 
-   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
+   Auf macOS ist es entscheidend, dass global installierte Daemons von `root` gehört (siehe [`launchd`-Dokumentation][launchd-requirements]), daher muss die ausführbare Datei `adguarddns-cli` im Verzeichnis `/Applications/` oder dessen Unterverzeichnis platziert werden.
 
    :::
 
@@ -76,18 +76,18 @@ Jede Option überschreibt den entsprechenden Wert, der in der Konfigurationsdate
 
 ### Hilfe {#opts-help}
 
-Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
+Die Option `-h` bewirkt, dass AdGuard DNS CLI eine Hilfemeldung auf der Standardausgabe ausgibt und mit einem Erfolgsstatuscode beendet wird.
 
 ### Dienst {#opts-service}
 
 Die Option `-s <value>` gibt die Aktion des Betriebssystemdienstes an. Mögliche Werte sind:
 
-- `install`: installs AdGuard DNS CLI as a service
-- `restart`: restarts the running AdGuard DNS CLI service
-- `start`: starts the installed AdGuard DNS CLI service
-- `status`: shows the status of the installed AdGuard DNS CLI service
-- `stop`: stops the running AdGuard DNS CLI
-- `uninstall`: uninstalls AdGuard DNS CLI service
+- `install`: installiert den AdGuard DNS CLI als Dienst
+- `restart`: startet den laufenden Dienst AdGuard DNS CLI neu
+- `start`: startet den installierten Dienst AdGuard DNS CLI
+- `status`: zeigt den Status des installierten Dienstes AdGuard DNS CLI
+- `stop`: beendet den laufenden AdGuard DNS CLI
+- `uninstall`: deinstalliert den Dienst AdGuard DNS CLI
 
 ### Ausführlich {#opts-verbose}
 
@@ -95,7 +95,7 @@ Die Option `-v` aktiviert die ausführliche Protokollausgabe.
 
 ### Version {#opts-version}
 
-Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
+Die Option `--version` veranlasst AdGuard DNS CLI, die Version der Anwendung auf der Standardausgabe auszugeben und mit einem Erfolgsstatuscode zu beenden.
 
 ## Konfiguration {#conf}
 

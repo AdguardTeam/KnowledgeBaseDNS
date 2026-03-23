@@ -11,7 +11,7 @@ In der Datei [`config.dist.yml`][dist] finden Sie ein vollständiges Beispiel f�
     TODO(a.garipov): Find ways to add IDs to individual list items.
 -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -70,15 +70,15 @@ Das Objekt `server` konfiguriert die Verarbeitung der eingehenden Anfragen. Es h
       - address: '[::1]:53'
   ```
 
-- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+- `pending_requests`: Konfiguration für die Behandlung doppelter zeitgleicher Anfragen, die zur Abwehr von Cache-Poisoning-Angriffen verwendet wird.
 
   :::note
 
-  This object is available since **v0.0.4**.
+  Dieses Objekt ist seit **v0.0.4** verfügbar.
 
   :::
 
-  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+  - `enabled`: Wenn dies zutrifft, führt der Server nur eine einzige Anfrage für jede einzelne Anfrage aus.  Standardwert ist „true“.
 
     **Beispiel:** `true`
 

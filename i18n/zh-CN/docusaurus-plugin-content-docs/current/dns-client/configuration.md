@@ -32,33 +32,33 @@ sidebar_position: 2
 
 - `client_size`：指定每个已配置客户端地址或子网的 DNS 结果缓存的最大尺寸（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
-  **Example:** `4MB`
+  **示例**：` 4MB`
 
 ### `server` {#dns-server}
 
 `server` 对象配置处理传入请求。 它包含以下属性：
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`：绑定到监听地址的重试机制配置。 这适用于当服务器在网络准备就绪之前启动且地址尚不可用的情况，例如在某些版本的 Windows 上作为系统服务安装时。
 
   :::note
 
-  This object is available since **v0.0.3**.
+  此对象自 **v0.0.3** 起可用。
 
   :::
 
   它包含以下属性：
 
-  - `enabled`: Whether bind retry is enabled or not.
+  - `enabled`：是否启用绑定重试。
 
     **示例：** `true`
 
-  - `interval`: The interval between retries as a human-readable duration.
+  - `interval`：重试间隔时间，以人类可读取的时间长度表示。
 
-    **Example:** `1s`
+    **示例**：`1s`
 
-  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+  - `count`：第一次失败后的最大尝试次数。 也就是说，如果 `count` 为 `4`，则总尝试次数将为五次。
 
-    **Example:** `4`
+    **示例**：`4`
 
 - `listen_addresses`：客户端监听的地址和端口集合。
 
@@ -70,15 +70,15 @@ sidebar_position: 2
       - address: '[::1]:53'
   ```
 
-- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+- `pending_requests`：用于处理重复的同时请求的配置，以缓解缓存中毒攻击。
 
   :::note
 
-  This object is available since **v0.0.4**.
+  该对象自版本 **v0.0.4** 起可用。
 
   :::
 
-  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+  - `enabled`：如果为真，服务器将只对每个唯一问题执行一次请求。  默认值为「true」。
 
     **示例：** `true`
 
@@ -98,7 +98,7 @@ sidebar_position: 2
 
 - `timeout`：指定引导 DNS 请求的超时时间，使用人类可读的数据量格式。
 
-  **示例：** `2s`
+  **示例**：`2s`
 
 ### `upstream` {#dns-upstream}
 

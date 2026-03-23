@@ -101,7 +101,7 @@ pattern = "/" regexp "/"
 
 Any line that starts with an exclamation mark or a hash sign is a comment and it will be ignored by the filtering engine. Comments are usually placed above rules and used to describe what a rule does.
 
-**Example:**
+**Esempio:**
 
 ```none
 ! This is a comment.
@@ -491,7 +491,7 @@ Fields of the entries are separated by any number of space or tab characters. Te
 
 Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
 
-**Example:**
+**Esempio:**
 
 ```none
 # This is a comment
@@ -506,7 +506,7 @@ In AdGuard Home, the IP addresses are used to respond to DNS queries for these d
 
 A simple list of domain names, one name per line.
 
-**Example:**
+**Esempio:**
 
 ```none
 # This is a comment
