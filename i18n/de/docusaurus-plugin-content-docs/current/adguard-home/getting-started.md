@@ -136,7 +136,7 @@ Falls die Schaltfläche nicht angezeigt wird oder eine automatische Aktualisieru
 
 4. Starten Sie AdGuard Home neu.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Aktualisierungen für Docker, Home Assistant und Snapcraft
 

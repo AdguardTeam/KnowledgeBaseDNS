@@ -136,7 +136,7 @@ sudo ./AdGuardHome -s install
 
 4. Перезапустите AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Обновления Docker, Home Assistant и Snapcraft
 

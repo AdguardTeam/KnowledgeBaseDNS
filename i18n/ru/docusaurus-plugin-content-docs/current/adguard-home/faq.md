@@ -312,7 +312,7 @@ DOMAIN {
 
 Вы можете установить параметр `trusted_proxies` на IP-адрес(-а) вашего HTTP-прокси, чтобы AdGuard Home учитывал заголовки, содержащие реальный IP-адрес клиента. Дополнительную информацию смотрите на страницах [настроек][conf] и [шифрования][encr].
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Как исправить ошибки `permission denied` на Fedora? {#fedora}
