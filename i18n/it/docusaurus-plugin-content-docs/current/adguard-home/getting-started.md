@@ -136,7 +136,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
 4. Restart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 
@@ -150,7 +150,7 @@ To update AdGuard Home package without the need to use Web API run:
 ./AdGuardHome --update
 ```
 
-## Configuring devices {#configure-devices}
+## Configurare i dispositivi {#configure-devices}
 
 ### Router
 

@@ -1,41 +1,41 @@
 ---
-title: Getting started
+title: Comenzar
 sidebar_position: 2
 ---
 
-## Installation {#installation}
+## Instalación {#installation}
 
-### Official releases
+### Versiones oficiales
 
-Download the archive with the binary file for your operating system from the [latest stable release page][releases]. The full list of supported platforms as well as links to beta and edge (unstable) releases can be found on [our platforms page][platforms].
+Descarga el archivo con el archivo binario para tu sistema operativo desde la [página de la última versión estable][releases]. La lista completa de plataformas soportadas, así como los enlaces a versiones beta y edge (inestables) se pueden encontrar en [nuestra página de plataformas][platforms].
 
-To install AdGuard Home as a service, extract the archive, enter the `AdGuardHome` directory, and run:
+Para instalar AdGuard Home como un servicio, extrae el archivo, entra en el directorio `AdGuardHome` y ejecuta:
 
 ```sh
 ./AdGuardHome -s install
 ```
 
-#### Notes
+#### Notas
 
-- Users of **Fedora Linux** and its derivatives: install AdGuard Home in the `/usr/local/bin` directory. Failure to do so may cause issues with SELinux and permissions. See [issue 765] and [issue 3281].
+- Usuarios de **Fedora Linux** y sus derivados: instala AdGuard Home en el directorio `/usr/local/bin`. No hacerlo puede causar problemas con SELinux y permisos. Consulta \[el problema 765] y \[el problema 3281].
 
-- Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
+- Los usuarios de **macOS 10.15 Catalina** y versiones posteriores deben colocar el directorio de trabajo de AdGuard Home dentro del directorio `/Applications`.
 
-### Docker and Snap
+### Docker y Snap
 
-We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
+También proporcionamos una [imagen oficial de AdGuard Home para Docker][docker] y un [paquete oficial de Snap Store][snap] para usuarios experimentados.
 
 ### Otros
 
-Some other unofficial options include:
+Algunas otras opciones no oficiales incluyen:
 
-- [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
+- [Complemento Home Assistant][has] mantenido por [@frenck](https://github.com/frenck).
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [Aplicación LUCI de OpenWrt][luci] mantenida por [@kongfl888](https://github.com/kongfl888).
 
-- [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur] maintained by [@graysky2](https://github.com/graysky2).
+- [Arch Linux][arch], [Arch Linux ARM][archarm], y otros sistemas operativos basados en Arch, pueden compilarse a través del [paquete `adguardhome`][aghaur] en el [AUR][aur] mantenido por [@graysky2](https://github.com/graysky2).
 
-- [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
+- [Aplicación Cloudron][cloudron] mantenida por [@gramakri](https://github.com/gramakri).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
@@ -136,7 +136,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
 4. Restart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 
@@ -150,7 +150,7 @@ To update AdGuard Home package without the need to use Web API run:
 ./AdGuardHome --update
 ```
 
-## Configuring devices {#configure-devices}
+## Configurando dispositivos {#configure-devices}
 
 ### Router
 

@@ -312,7 +312,7 @@ DOMAIN {
 
 用户可以将参数 `trust_proxies` 设置为 HTTP 代理的 IP 地址 (可以是多个)，以使 AdGuard Home 考虑包含真实客户端 IP 地址的标头。 请参阅[配置][conf]和[加密][encr]页面了解更多信息。
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## 如何修复 Fedora 上的 `permission denied` 错误？ {#fedora}

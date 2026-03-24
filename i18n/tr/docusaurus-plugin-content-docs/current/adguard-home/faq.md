@@ -312,7 +312,7 @@ Ters proxy sunucunuzda TLS kullanıyorsanız, AdGuard Home'da TLS kullanmanıza 
 
 AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almasını sağlamak için `trusted_proxies` parametresini HTTP proxy'nizin IP adreslerine ayarlayabilirsiniz. Daha fazla bilgi için [configuration][conf] ve [encryption][encr] sayfalarına bakın.
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Fedora'da `permission denied` hatalarını nasıl düzeltirim? {#fedora}

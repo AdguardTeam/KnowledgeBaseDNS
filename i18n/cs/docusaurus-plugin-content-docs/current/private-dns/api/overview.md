@@ -116,7 +116,7 @@ Chcete-li odvolat obnovovací token, proveďte následující požadavek POST s 
 
 `https://api.adguard-dns.io/oapi/v1/revoke_token`
 
-##### Příklad požadavku
+##### Request example
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
