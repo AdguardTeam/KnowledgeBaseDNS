@@ -1408,7 +1408,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `45.76.113.31` | [Add to AdGuard](adguard:add_dns_server?address=45.76.113.31&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=45.76.113.31&name=) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31`| [Add to AdGuard](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8) |
-| DNS-over-TLS | `tls://dot.seby.io` | [Add to AdGuard](adguard:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io) |
+| DNS-over-TLS | `tls://dot.seby.io` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.seby.io&name=tls://dot.seby.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.seby.io&name=tls://dot.seby.io) |
 
 ### 18Bit DNS
 
