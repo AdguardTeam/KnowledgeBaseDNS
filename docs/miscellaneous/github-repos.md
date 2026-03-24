@@ -70,4 +70,4 @@ Detailed feature overview, troubleshooting guides and documentation for AdGuard 
 
 ## Where to find all AdGuard repositories
 
-Above, we listed the main AdGuard VPN-related repositories, while in total there are 96 AdGuard repos. You can [find all of them on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
+Above, we listed the main AdGuard DNS-related repositories, while in total there are 96 AdGuard repos. You can [find all of them on the AdGuardTeam GitHub page](https://github.com/orgs/AdguardTeam/repositories?type=all&q=visibility%3Apublic+archived%3Afalse).
