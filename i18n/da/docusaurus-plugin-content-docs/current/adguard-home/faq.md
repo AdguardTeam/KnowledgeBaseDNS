@@ -312,7 +312,7 @@ Anvendes TLS på den reverse-proxyserveren, behøver man ikke bruge TLS på AdGu
 
 Man kan indstille parameteren `trusted_proxies` til sin HTTP-proxys IP-adresse(r) for at få AdGuard Home til at tage headerne indeholdende den reelle klient IP-adresse i betragtning. Se siderne [opsætning][conf] og [kryptering][encr] for yderligere information.
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Hvordan rettes "tilladelse nægtet"-fejl på Fedora? {#fedora}

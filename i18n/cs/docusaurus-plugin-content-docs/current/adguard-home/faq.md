@@ -312,7 +312,7 @@ Pokud používáte TLS na reverzním proxy serveru, nemusíte používat TLS v A
 
 Parametr `trusted_proxies` můžete nastavit na IP adresy proxy serveru HTTP, aby AdGuard Home zohlednil záhlaví obsahující skutečnou IP adresu klienta. Další informace naleznete na stránkách [konfigurace][conf] a [šifrování][encr].
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[encr]: encryption.md#reverse-proxy
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ## Jak opravím chyby `permission denied` v systému Fedora? {#fedora}

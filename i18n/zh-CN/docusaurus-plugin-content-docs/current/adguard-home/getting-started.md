@@ -136,7 +136,7 @@ sudo ./AdGuardHome -s install
 
 4. 重新启动 AdGuard Home。
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft 更新
 

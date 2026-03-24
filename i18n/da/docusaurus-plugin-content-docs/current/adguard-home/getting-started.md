@@ -136,7 +136,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 4. Genstart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Opdateringer til Docker, Home Assistant og Snapcraft
 
