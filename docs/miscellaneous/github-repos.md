@@ -58,15 +58,13 @@ A DNS library used by CoreLibs and AdGuard Home. Users can:
 
 ## Knowledge base and documentation
 
-AdGuard DNS Knowledge Base is aimed to help users better understand and use AdGuard DNS. It describes AdGuard DNS in detail: from feature overviews and problem-solving guides to advanced setting manuals and API documentations. In the repository users can:
+### [KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS)
+
+AdGuard DNS Knowledge Base is aimed to help users better understand and use AdGuard DNS. It describes AdGuard DNS (both Public and Private) in detail: from feature overviews and problem-solving guides to advanced setting manuals and API documentations. In the repository users can:
 
 - Suggest corrections or edits to knowledge base articles
 - Propose new articles
 - Test or run the local version
-
-### [KnowledgeBaseDNS](https://github.com/AdguardTeam/KnowledgeBaseDNS)
-
-Detailed feature overview, troubleshooting guides and documentation for AdGuard DNS (both Public and Private), AdGuard Home, and everything related to them.
 
 ## Where to find all AdGuard repositories
 
