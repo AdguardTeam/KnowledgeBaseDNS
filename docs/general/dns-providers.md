@@ -1421,7 +1421,7 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 ### uBlock DNS
 
-uBlock DNS is an ad-blocking DNS service developed by Uros Gazvoda. It is free, open source, customizable, and includes an online dashboard that does not require an email or password to access. It is not affiliated with uBlock Origin.
+uBlock DNS is an ad-blocking DNS service. It is free, open-source, and customizable. It includes an online dashboard that does not require an email address or password to access. uBlock DNS is not affiliated with uBlock Origin.
 
 uBlock DNS does not provide public DNS addresses. To use it, you need to generate a personal account key and configure your own endpoint.
 
