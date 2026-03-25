@@ -47,7 +47,7 @@ Repository of AdGuard DNS filter — the main DNS-level blocking list used in Ad
 
 ### [AdGuardDNSCLI](https://github.com/AdguardTeam/AdGuardDNSCLI)
 
-Repository of AdGuard DNS CLI — A cross-platform lightweight DNS client for AdGuard DNS. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+Repository of AdGuard DNS CLI — a cross-platform lightweight DNS client for AdGuard DNS. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 ### [DNSLibs](https://github.com/AdguardTeam/DNSLibs)
 
