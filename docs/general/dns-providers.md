@@ -63,6 +63,14 @@ Each of these servers provides a secure and reliable connection, but unlike the 
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `94.140.14.140:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAFlsyYTEwOjUwYzA6OjE6ZmZdOjU0NDMgtehE1rg6Pj4SaOtoH76nDePF-mjb1ogUHb8uwGay2volMi5kbnNjcnlwdC51bmZpbHRlcmVkLm5zMS5hZGd1YXJkLmNvbQ) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt.unfiltered.ns1.adguard.com` IP: `[2a10:50c0::1:ff]:5443`| [Add to AdGuard](sdns://AQIAAAAAAAAAF1syYTAwOjVhNjA6OjAxOmZmXTo1NDQzIIHQAtNqTKUMRzt0eWUP4S4CsyHLYThWKiCOQD39xV6UIjIuZG5zY3J5cHQuZGVmYXVsdC5uczIuYWRndWFyZC5jb20) |
 
+### ADnull
+
+[ADnull](https://adnull.com) is a personal DNS-over-HTTPS resolver with ad, tracker, and malware blocking. Based in Ukraine.
+
+| Protocol | Address | |
+|----------------|---------------------------------------|----------------|
+| DNS-over-HTTPS | `https://dns.adnull.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.adnull.com/dns-query&name=ADnull), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.adnull.com/dns-query&name=ADnull) |
+
 ### Ali DNS
 
 [Ali DNS](https://alidns.com/) is a free recursive DNS service that committed to providing fast, stable and secure DNS resolution for the majority of Internet users. It includes AliGuard facility to protect users from various attacks and threats.
