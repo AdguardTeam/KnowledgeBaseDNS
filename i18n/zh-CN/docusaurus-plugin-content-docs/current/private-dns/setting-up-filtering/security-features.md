@@ -22,9 +22,3 @@ AdGuard DNS 支持添加第三方拦截过滤器。
 激活标记为“安全”的过滤器以获得额外保护。
 
 了解更多关于拦截列表的信息请[查看单独的文章](/private-dns/setting-up-filtering/blocklists.md)。
-
-## Protection against typosquatting domains
-
-AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
-
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.

@@ -22,9 +22,3 @@ AdGuard DNSは、サードパーティのブロックフィルタの追加に対
 `security`としてマークされたフィルタを有効化して、保護層を増やせます。
 
 ブロックリストについてさらに詳しくは、[こちらの別記事](/private-dns/setting-up-filtering/blocklists.md)を参照してください。
-
-## Protection against typosquatting domains
-
-AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
-
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.
