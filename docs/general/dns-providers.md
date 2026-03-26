@@ -928,9 +928,9 @@ Unfiltered option is a valid option for users who are confident their devices an
 | Protocol | Address | |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4 | `86.54.11.100` and `86.54.11.200` | [Add to AdGuard](adguard:add_dns_server?address=86.54.11.100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=) |
-| DNS, IPv6 | `2a13:1001::86:54:11:100` and `2a13:1001::86:54:11:100` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=) |
-| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=) |
-| DNS-over-TLS | `tls://child-noads.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=) |
+| DNS, IPv6 | `2a13:1001::86:54:11:100` and `2a13:1001::86:54:11:200` | [Add to AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=) |
+| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=) |
+| DNS-over-TLS | `tls://unfiltered.joindns4.eu` | [Add to AdGuard](adguard:add_dns_server?address=tls://unfiltered.joindns4.eu&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.joindns4.eu&name=) |
 
 ### Fondation Restena DNS
 
