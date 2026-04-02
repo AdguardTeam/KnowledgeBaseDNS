@@ -27,4 +27,4 @@ To learn more about Blocklists [see separate article](/private-dns/setting-up-fi
 
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [*Servers*](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ *User rules* ⭢ *Add new rule*.
+Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [*Servers*](https://adguard-dns.io/dashboard/servers) ⭢ *Server settings* ⭢ *User rules* ⭢ *Add new rule*.
