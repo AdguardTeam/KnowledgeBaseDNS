@@ -21,7 +21,7 @@ Sometimes this can cause false positives, but statistics show that in most cases
 AdGuard DNS supports adding third-party blocking filters.
 Activate filters marked `security` for additional protection.
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+To learn more about Blocklists, see [the separate article](/private-dns/setting-up-filtering/blocklists.md).
 
 ## Protection against typosquatting domains
 
