@@ -37,7 +37,7 @@ The following instructions describe how to **unassign your linked IP address**:
 1. Open Dashboard.
 1. Go to your device settings.
 1. Go to *Plain DNS server addresses*.
-1. Under the *Linked IPv4 address*, click *Unlink IP address*.
+1. Under *Linked IPv4 address*, click *Unlink IP address*.
 
     ![Unassign a linked IP *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
 
