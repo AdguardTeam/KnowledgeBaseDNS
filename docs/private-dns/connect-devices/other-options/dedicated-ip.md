@@ -37,5 +37,5 @@ The instructions below explain how to connect a dedicated IP to the device:
 1. Go to your device settings.
 1. Go to *Plain DNS server addresses*.
 1. Under *Dedicated IPv4 addresses*, click *Manage*.
-1. In the pop-up, click *Unassign* next to the IP you want to remove.
+1. In the popup, click *Unassign* next to the IP you want to remove.
       ![Unassign *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)
