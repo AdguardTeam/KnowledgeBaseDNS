@@ -57,3 +57,9 @@ We’ve added a template that generates a link for the specific device type and 
 1. Click *Generate link*.
     ![Generate link *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 1. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+
+## See also
+
+- Article [*Automatic device connection*][adc] that explains the process and the requirements for the human-readable identifier in more detail.
+
+[adc]: /private-dns/solving-problems/automatic-devices
