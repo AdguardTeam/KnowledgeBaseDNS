@@ -30,3 +30,12 @@ The instructions below explain how to connect a dedicated IP to the device:
 1. If you want to use a dedicated IPv6 address, click *Copy*.
     ![Copy address *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 1. Copy and paste the selected dedicated address into the device configurations.
+
+## How to unassign a dedicated IP
+
+1. Open Dashboard.
+1. Go to your device settings.
+1. Go to *Plain DNS server addresses*.
+1. Under *Dedicated IPv4 addresses*, click *Manage*.
+1. In the popup, click *Unassign* next to the IP you want to remove.
+      ![Unassign *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)
