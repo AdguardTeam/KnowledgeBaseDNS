@@ -535,12 +535,14 @@ What it’s capable of:
 
 3. Cleanup the resulting list: deduplicate, remove invalid rules, and compress the list.
 
-{/* local links */}
+{/*local links*/}
+
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 
-{/* external links */}
+{/*external links*/}
+
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions

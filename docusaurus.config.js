@@ -30,7 +30,11 @@ module.exports = {
   url: url,
   baseUrl: baseUrl,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   trailingSlash: true,
   organizationName: 'AdGuard',
