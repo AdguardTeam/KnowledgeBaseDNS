@@ -3,8 +3,6 @@ title: Configuration file
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
 <!--

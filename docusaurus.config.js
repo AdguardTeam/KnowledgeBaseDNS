@@ -1,5 +1,6 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
@@ -239,13 +240,18 @@ module.exports = {
     jsLoader: (isServer) => ({
       loader: require.resolve('swc-loader'),
       options: {
-        jsc: {
-          parser: {
-            syntax: 'typescript',
-            tsx: true,
+          jsc: {
+            parser: {
+              syntax: 'typescript',
+              tsx: true,
+            },
+            target: 'es2017',
+            transform: {
+              react: {
+                runtime: 'automatic',
+              },
+            },
           },
-          target: 'es2017',
-        },
         module: {
           type: isServer ? 'commonjs' : 'es6',
         },

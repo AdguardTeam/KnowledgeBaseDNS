@@ -335,7 +335,7 @@ Here is how to generate a DNSCrypt configuration file and point AdGuard Home to 
 
 Here is how to generate a DNSCrypt stamp and check your installation:
 
-1. Go to <https://dnscrypt.info/stamps/>.
+1. Go to [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 1. Enter the data from your DNSCrypt configuration file. The *Provider public key* is the value of the `public_key` field in your DNSCrypt configuration file.
 
