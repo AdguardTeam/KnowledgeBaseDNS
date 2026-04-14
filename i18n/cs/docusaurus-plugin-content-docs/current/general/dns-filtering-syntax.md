@@ -529,10 +529,10 @@ Co dokáže:
 
 3. Vyčistit výsledný seznamu: deduplikace, odstranění neplatných pravidel a komprese seznamu.
 
-<!-- local links -->
+{/* local links */}
 
 
-<!-- external links -->
+{/* external links */}
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Syntaxe ve stylu Adblock]: #adblock-style-syntax
 [syntaxi ve stylu Adblock]: #adblock-style-syntax

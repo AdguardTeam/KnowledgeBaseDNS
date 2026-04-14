@@ -3,13 +3,12 @@ title: Fichier de configuration
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 Voir le fichier [`config.dist.yml`][dist] pour un exemple complet d'un fichier de configuration [YAML][yaml] avec des commentaires.
 
-<!--
+{/*
     TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/

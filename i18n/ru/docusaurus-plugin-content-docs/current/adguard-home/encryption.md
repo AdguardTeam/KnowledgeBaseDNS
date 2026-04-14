@@ -23,7 +23,7 @@ AdGuard Home поддерживает [DNSCrypt][dnscrypt-info] как на ст
 
 Цель защиты DNS-трафика — обезопасить его от третьих лиц, таких как интернет-провайдеры, которые могут анализировать или изменять его.
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 Это означает, что вам понадобится сервер с публичным выделенным IP-адресом. Есть множество недорогих провайдеров облачных серверов: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode] и другие. Просто выберите один из них, создайте там облачный сервер и [установите AdGuard Home](adguard-home/getting-started.md) на свой сервер.
 
@@ -166,7 +166,7 @@ location /dns-query {
 }
 ```
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

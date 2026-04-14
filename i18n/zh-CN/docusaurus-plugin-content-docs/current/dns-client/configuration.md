@@ -3,13 +3,12 @@ title: 配置文件
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 完整的 [YAML][yaml] 配置文件示例请参考配置文件 [`config.dist.yml`][dist]。
 
-<!--
+{/*
     TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/

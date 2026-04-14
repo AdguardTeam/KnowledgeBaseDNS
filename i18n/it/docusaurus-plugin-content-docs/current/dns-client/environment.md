@@ -3,7 +3,6 @@ title: Ambiente
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 AdGuard DNS CLI utilizza [variabili d'ambiente][wiki-env] per memorizzare parte della configurazione. Il resto della configurazione è memorizzato nel [file di configurazione][conf].
 

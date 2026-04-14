@@ -3,7 +3,6 @@ title: 概览
 sidebar_position: 1
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 ## 什么是 AdGuard DNS CLI？
 

@@ -529,10 +529,10 @@ What it’s capable of:
 
 3. Limpe a lista resultante: remova a duplicação, remova regras inválidas e compacte a lista.
 
-<!-- local links -->
+{/* local links */}
 
 
-<!-- external links -->
+{/* external links */}
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier

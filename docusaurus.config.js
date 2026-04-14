@@ -19,6 +19,12 @@ const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  future: {
+    faster: true,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+  },
   title: 'AdGuard DNS Knowledge Base',
   tagline: 'Knowledge base for AdGuard DNS',
   url: url,
@@ -236,26 +242,4 @@ module.exports = {
       },
     ],
   ],
-  webpack: {
-    jsLoader: (isServer) => ({
-      loader: require.resolve('swc-loader'),
-      options: {
-          jsc: {
-            parser: {
-              syntax: 'typescript',
-              tsx: true,
-            },
-            target: 'es2017',
-            transform: {
-              react: {
-                runtime: 'automatic',
-              },
-            },
-          },
-        module: {
-          type: isServer ? 'commonjs' : 'es6',
-        },
-      },
-    }),
-  },
 };

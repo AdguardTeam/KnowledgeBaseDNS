@@ -3,7 +3,6 @@ title: Окружение
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 AdGuard DNS CLI использует [переменные окружения][wiki-env] для хранения части настроек. Остальные настройки хранятся [в файле конфигурации][conf].
 

@@ -3,7 +3,6 @@ title: Environnement
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 Le client AdGuard DNS utilise des [variables d'environnement][wiki-env] pour stocker une partie de la configuration. Le reste de la configuration est stocké dans le [fichier de configuration][conf].
 

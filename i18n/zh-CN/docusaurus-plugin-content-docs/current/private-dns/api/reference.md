@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!--
+{/*
     The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
--->
+*/}
 
 本文章包含 [AdGuard DNS API](private-dns/api/overview.md) 的文档。 有关完成的 AdGuard DNS API 更新日志记录，请访问[此页面](private-dns/api/changelog.md)。
 

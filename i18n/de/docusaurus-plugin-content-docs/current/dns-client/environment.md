@@ -3,7 +3,6 @@ title: Umgebung
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 AdGuard DNS CLI verwendet [Umgebungsvariablen][wiki-env], um einen Teil der Konfiguration zu speichern. Die restliche Konfiguration wird in der [Konfigurationsdatei][conf] gespeichert.
 

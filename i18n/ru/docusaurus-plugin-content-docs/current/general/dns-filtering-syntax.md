@@ -529,10 +529,10 @@ example.net # это тоже комментарий
 
 3. Подчистить список, получившийся в результате: убрать дубли, неработающие правила и сжать список.
 
-<!-- local links -->
+{/* local links */}
 
 
-<!-- external links -->
+{/* external links */}
 [Синтаксис в стиле Adblock]: #adblock-style-syntax
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry

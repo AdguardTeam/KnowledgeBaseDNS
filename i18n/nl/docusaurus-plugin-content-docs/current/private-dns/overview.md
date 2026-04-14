@@ -39,7 +39,7 @@ Hier is een eenvoudige vergelijking van functies die beschikbaar zijn in openbar
 | -                                | Parental control                                                                                       |
 
 
-<!-- ## How to set up private AdGuard DNS
+{/* ## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
 
@@ -189,7 +189,7 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.*/}
 
 ### How to connect devices to AdGuard DNS
 

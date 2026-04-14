@@ -3,13 +3,12 @@ title: Yapılandırma dosyası
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 Açıklamalarla birlikte [YAML][yaml] yapılandırma dosyasının tam bir örneği için [`config.dist.yml`][dist] dosyasına bakın.
 
-<!--
+{/*
     TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
