@@ -339,7 +339,7 @@ Ujistěte se, že vaše nastavení TLS je platné a šifrování je povoleno.
 
 Zde je návod, jak vygenerovat razítko DNSCrypt a zkontrolovat instalaci:
 
-1. Přejděte na <https://dnscrypt.info/stamps/>.
+1. Přejděte na [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Zadejte údaje z konfiguračního souboru DNSCrypt. _Veřejný klíč poskytovatele_ je hodnota pole `public_key` ve vašem konfiguračním souboru DNSCrypt.
 

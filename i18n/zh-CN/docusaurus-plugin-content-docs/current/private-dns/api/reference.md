@@ -84,7 +84,7 @@ toc_max_heading_level: 4
 | 400  | 验证失败     |
 | 429  | 设备数量达到限制 |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ toc_max_heading_level: 4
 | 400  | 验证失败  |
 | 404  | 未找到设备 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ toc_max_heading_level: 4
 | ---- | -------------- |
 | 200  | 专用 IPv4 和 IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ toc_max_heading_level: 4
 | 404  | 设备或地址未找到          |
 | 429  | 连接的专用 IPv4 数量达到上限 |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ toc_max_heading_level: 4
 | 200  | DNS-over-HTTPS .plist 文件 |
 | 404  | 未找到设备                    |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ toc_max_heading_level: 4
 | 200  | DNS-over-HTTPS 密码成功重置 |
 | 404  | 未找到设备                 |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ toc_max_heading_level: 4
 | 200  | DNS-over-HTTPS .plist 文件 |
 | 404  | 未找到设备                    |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ toc_max_heading_level: 4
 | 400  | 验证失败          |
 | 429  | DNS 服务器数量已达上限 |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ toc_max_heading_level: 4
 | 400  | 验证失败        |
 | 404  | 未找到 DNS 服务器 |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

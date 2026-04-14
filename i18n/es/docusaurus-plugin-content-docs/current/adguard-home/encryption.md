@@ -339,7 +339,7 @@ Asegúrate de que tu configuración de TLS sea válida y el cifrado esté habili
 
 A continuación se explica cómo generar un sello DNSCrypt y verificar su instalación:
 
-1. Ve a <https://dnscrypt.info/stamps/>.
+1. Ve a [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Introduce los datos de tu archivo de configuración DNSCrypt. La _clave pública del proveedor_ es el valor del campo `public_key` en su archivo de configuración DNSCrypt.
 

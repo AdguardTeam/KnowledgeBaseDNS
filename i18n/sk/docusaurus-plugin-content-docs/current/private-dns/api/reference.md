@@ -84,7 +84,7 @@ Creates a new device
 | 400  | Validation failed               |
 | 429  | Devices count reached the limit |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ Updates an existing device
 | 400  | Validation failed |
 | 404  | Device not found  |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 | ---- | ----------------------- |
 | 200  | Dedicated IPv4 and IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ Link dedicated IPv4 to the device
 | 404  | Device or address not found                      |
 | 429  | Linked dedicated IPv4 count reached the limit    |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Generate and set new DNS-over-HTTPS password
 | 200  | DNS-over-HTTPS password successfully reset |
 | 404  | Device not found                           |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ Gets DNS-over-TLS .mobileconfig file.
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 | 400  | Validation failed                   |
 | 429  | DNS servers count reached the limit |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ Updates an existing DNS server
 | 400  | Validation failed    |
 | 404  | DNS server not found |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

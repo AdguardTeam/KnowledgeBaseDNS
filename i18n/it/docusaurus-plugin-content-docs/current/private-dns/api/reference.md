@@ -84,7 +84,7 @@ Crea un nuovo dispositivo
 | 400    | Convalida fallita                                   |
 | 429    | Il conteggio dei dispositivi ha raggiunto il limite |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ Aggiorna un dispositivo esistente
 | 400    | Convalida fallita       |
 | 404    | Dispositivo non trovato |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ Elenca gli indirizzi IPv4 e IPv6 dedicati per un dispositivo
 | ------ | -------------------- |
 | 200    | IPv4 e IPv6 dedicati |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ Collega l'IPv4 dedicato al dispositivo
 | 404    | Dispositivo o indirizzo non trovato                               |
 | 429    | Il conteggio degli IPv4 dedicati collegati ha raggiunto il limite |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ Ottiene il file DNS-over-HTTPS .mobileconfig.
 | 200    | File .plist del DNS-over-HTTPS |
 | 404    | Dispositivo non trovato        |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Genera e imposta una nuova password DNS-over-HTTPS
 | 200    | Password DNS-over-HTTPS reimpostata con successo |
 | 404    | Dispositivo non trovato                          |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ Ottiene il file .mobileconfig. del DNS-over-TLS.
 | 200    | File .plist del DNS-over-TLS |
 | 404    | Dispositivo non trovato      |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Crea un nuovo server DNS. Puoi allegare delle impostazioni personalizzate, altri
 | 400    | Convalida fallita                                  |
 | 429    | Il conteggio dei server DNS ha raggiunto il limite |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ Aggiorna un server DNS esistente
 | 400    | Convalida fallita      |
 | 404    | Server DNS non trovato |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

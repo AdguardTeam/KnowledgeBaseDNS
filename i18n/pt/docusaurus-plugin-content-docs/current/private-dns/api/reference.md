@@ -57,7 +57,7 @@ Creates a new device
 | 400  | Validation failed               |
 | 429  | Devices count reached the limit |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 ##### Summary:
@@ -114,7 +114,7 @@ Updates an existing device
 | 400  | Validation failed |
 | 404  | Device not found  |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 ##### Summary:
@@ -136,7 +136,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 ##### Summary:
@@ -158,7 +158,7 @@ Gets DNS-over-TLS .mobileconfig file.
 | 200  | DNS-over-HTTPS .plist file |
 | 404  | Device not found           |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 ##### Summary:
@@ -213,7 +213,7 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 | 400  | Validation failed                   |
 | 429  | DNS servers count reached the limit |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 ##### Summary:
@@ -274,7 +274,7 @@ Updates an existing DNS server
 | 400  | Validation failed    |
 | 404  | DNS server not found |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 ##### Summary:

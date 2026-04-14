@@ -84,7 +84,7 @@ toc_max_heading_level: 4
 | 400 | 유효성 검사 실패     |
 | 429 | 기기 수가 제한에 도달함 |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ ID로 기존 기기 가져오기
 | 400 | 유효성 검사 실패   |
 | 404 | 기기를 찾을 수 없음 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ ID로 기존 기기 가져오기
 | --- | -------------- |
 | 200 | 전용 IPv4 및 IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ ID로 기존 기기 가져오기
 | 404 | 기기 또는 주소를 찾을 수 없음      |
 | 429 | 전용 IPv4 수가 제한에 도달함     |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ DNS-over-HTTPS .mobileconfig 파일을 가져옵니다.
 | 200 | DNS-over-HTTPS .plist 파일 |
 | 404 | 기기를 찾을 수 없음              |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ DNS-over-HTTPS .mobileconfig 파일을 가져옵니다.
 | 200 | DNS-over-HTTPS 비밀번호가 성공적으로 재설정됨 |
 | 404 | 기기를 찾을 수 없음                     |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ DNS-over-TLS .mobileconfig 파일을 가져옵니다.
 | 200 | DNS-over-HTTPS .plist 파일 |
 | 404 | 기기를 찾을 수 없음              |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ DNS-over-TLS .mobileconfig 파일을 가져옵니다.
 | 400 | 유효성 검사 실패         |
 | 429 | DNS 서버 수가 제한에 도달함 |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ ID로 기존 DNS 서버를 가져옵니다.
 | 400 | 유효성 검사 실패      |
 | 404 | DNS 서버 없음      |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

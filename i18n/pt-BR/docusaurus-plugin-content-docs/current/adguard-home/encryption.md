@@ -339,7 +339,7 @@ Certifique-se de que suas configurações de TLS sejam válidas e que a criptogr
 
 Veja como gerar um carimbo DNSCrypt e verificar sua instalação:
 
-1. Vá para <https://dnscrypt.info/stamps/>.
+1. Vá para [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Insira os data do seu arquivo de configuração DNSCrypt. A _chave pública do provedor_ é o valor do campo `public_key` no seu arquivo de configuração DNSCrypt.
 

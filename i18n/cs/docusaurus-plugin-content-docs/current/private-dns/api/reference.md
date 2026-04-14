@@ -84,7 +84,7 @@ Vytvoří nové zařízení
 | 400 | Ověření se nezdařilo         |
 | 429 | Počet zařízení dosáhl limitu |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ Aktualizuje existující zařízení
 | 400 | Ověření se nezdařilo   |
 | 404 | Zařízení nenalezeno    |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ Seznam vyhrazených adres IPv4 a IPv6 pro zařízení
 | --- | --------------------- |
 | 200 | Vyhrazené IPv4 a IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ Připojení vyhrazené IPv4 k zařízení
 | 404 | Zařízení nebo adresa nalezeny                    |
 | 429 | Počet vyhrazených připojených IPv4 dosáhl limitu |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ Získá soubor .mobileconfig DNS-over-HTTPS.
 | 200 | Soubor .plist DNS-over-HTTPS |
 | 404 | Zařízení nenalezeno          |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Generování a nastavení nového hesla DNS-over-HTTPS
 | 200 | Heslo DNS-over-HTTPS úspěšně resetováno |
 | 404 | Zařízení nenalezeno                     |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ Získá soubor .mobileconfig DNS-over-TLS.
 | 200 | Soubor .plist DNS-over-HTTPS |
 | 404 | Zařízení nenalezeno          |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude D
 | 400 | Ověření se nezdařilo            |
 | 429 | Počet DNS serverů dosáhl limitu |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ Aktualizuje existující DNS server
 | 400 | Ověření se nezdařilo    |
 | 404 | DNS server nenalezen    |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

@@ -84,7 +84,7 @@ toc_max_heading_level: 4
 | 400 | Ошибка проверки                       |
 | 429 | Количество устройств достигло предела |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ toc_max_heading_level: 4
 | 400 | Ошибка проверки       |
 | 404 | Устройство не найдено |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ toc_max_heading_level: 4
 | --- | ---------------------- |
 | 200 | Выделенные IPv4 и IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ toc_max_heading_level: 4
 | 404 | Устройство или адрес не найдены                         |
 | 429 | Количество привязанных выделенных IPv4 достигло предела |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ toc_max_heading_level: 4
 | 200 | Файл DNS-over-HTTPS .plist |
 | 404 | Устройство не найдено      |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ toc_max_heading_level: 4
 | 200 | Пароль DNS-over-HTTPS успешно сброшен |
 | 404 | Устройство не найдено                 |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ toc_max_heading_level: 4
 | 200 | Файл DNS-over-HTTPS .plist |
 | 404 | Устройство не найдено      |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ toc_max_heading_level: 4
 | 400 | Ошибка проверки                          |
 | 429 | Количество DNS-серверов достигло предела |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ toc_max_heading_level: 4
 | 400 | Ошибка проверки      |
 | 404 | DNS-сервер не найден |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

@@ -339,7 +339,7 @@ Assicurati che le impostazioni TLS siano valide e che la crittografia sia abilit
 
 Ecco come generare un stamp DNSCrypt e verificare l'installazione:
 
-1. Vai su <https://dnscrypt.info/stamps/>.
+1. Vai su [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Inserisci i dati dal tuo file di configurazione DNSCrypt. La _chiave pubblica del provider_ è il valore del campo `public_key` nel tuo file di configurazione DNSCrypt.
 

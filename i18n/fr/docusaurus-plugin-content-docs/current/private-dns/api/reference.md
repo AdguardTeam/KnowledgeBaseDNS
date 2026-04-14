@@ -84,7 +84,7 @@ Création d'un nouveau dispositif
 | 400  | Échec de la validation                    |
 | 429  | Le nombre d'appareils a atteint la limite |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ Met à jour un dispositif existant
 | 400  | Échec de la validation |
 | 404  | Dispositif non trouvé  |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ Répertorie les adresses IPv4 et IPv6 dédiées à un appareil
 | ---- | ----------------------------- |
 | 200  | Adresses IPv4 et IPv6 dédiées |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ Associer l'IPv4 dédiée à l'appareil
 | 404  | Dispositif ou adresse introuvable                  |
 | 429  | Le nombre d'IPv4 dédiées liées a atteint la limite |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ Obtient le fichier .mobileconfig DNS-over-HTTPS.
 | 200  | Fichier DNS-over-HTTPS .plist |
 | 404  | Dispositif non trouvé         |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Générer et définir un nouveau mot de passe DNS-over-HTTPS
 | 200  | Réinitialisation réussie du mot de passe DNS-over-HTTPS |
 | 404  | Dispositif non trouvé                                   |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ Obtient le fichier .mobileconfig DNS-over-TLS.
 | 200  | Fichier DNS-over-HTTPS .plist |
 | 404  | Dispositif non trouvé         |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Crée un nouveau serveur DNS. Vous pouvez attacher des paramètres personnalisé
 | 400  | Échec de la validation                        |
 | 429  | Le nombre de serveurs DNS a atteint la limite |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ Met à jour un serveur DNS existant
 | 400  | Échec de la validation  |
 | 404  | Serveur DNS introuvable |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

@@ -339,7 +339,7 @@ Sørg for, at de aktuelle TLS-indstillinger er gyldige, og at kryptering er akti
 
 Sdan genererer man et DNSCrypt-stempel og tjekker installationen:
 
-1. Gå til <https://dnscrypt.info/stamps/>.
+1. Gå til [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Indtast dataene fra den relevante DNSCrypt-opsætningsfil. _Offentlige udbydernøgle_ er værdien af feltet `public_key` i DNSCrypt-opsætningsfilen.
 
