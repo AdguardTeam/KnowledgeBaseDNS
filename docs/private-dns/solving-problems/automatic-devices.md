@@ -3,29 +3,31 @@ title: Automatic device connection
 sidebar_position: 4
 ---
 
-System administrators often need to manage many devices at once. To reduce the amount of manual work, you can use the [automatic connection][ac] feature.
+System administrators often need to manage many devices at once. To reduce the amount of manual work, you can use the [*Automatic connection*][ac] feature.
 
-This article describes in more detail how a system administrator can set up their network to automatically create devices on an AdGuard DNS server by using the data accessible to them.
+This article describes in more detail how a system administrator can set up their network to automatically create devices on an AdGuard DNS server using accessible data.
 
 [ac]: /private-dns/connect-devices/other-options/automatic-connection
 
 ## Prerequisites
 
-Ensure that the feature is enabled on your DNS server. To do that, go to *Dashboard → Servers → Server settings* and make sure that the *Advanced → Connect devices automatically* setting is enabled.
+Make sure that the feature is enabled on your DNS server. To do that, go to *Dashboard → Servers → Server settings → Advanced* and check that the *Connect devices automatically* setting is switched on.
 
 ## The basic format
 
 The basic format of the hostname or URL used to create automatic devices is:
 
-```none
-${TYPE}-${SERVERID}-${HUMANID}.d.adguard-dns.com
-```
+- for DoT and DoQ:
 
-for DoT and DoQ or
+    ```none
+    ${TYPE}-${SERVERID}-${HUMANID}.d.adguard-dns.com
+    ```
 
-```none
-https://d.adguard-dns.com/dns-query/${TYPE}-${SERVERID}-${HUMANID}
-```
+- for DoH:
+
+    ```none
+    https://d.adguard-dns.com/dns-query/${TYPE}-${SERVERID}-${HUMANID}
+    ```
 
 ### Device type
 
@@ -41,13 +43,13 @@ The following abbreviations are supported:
 - `rtr`: Routers.
 - `stv`: Smart TVs.
 - `win`: Microsoft Windows devices.
-- `otr`: A generic device.
+- `otr`: Generic devices.
 
 ### DNS server ID
 
 The next required parameter is the ID of your AdGuard DNS server to which the device is connected.
 
-You can obtain the ID from the URL of your *Dashboard → Servers → Server settings* page. For example, if the URL is `https://adguard-dns.io/en/dashboard/settings/server?server_id=abcd1234` then the ID of your DNS server is `abcd1234`.
+You can obtain the ID from the URL of your *Dashboard → Servers → Server settings* page. For example, if the URL is `https://adguard-dns.io/en/dashboard/settings/server?server_id=abcd1234`, then the ID of your DNS server is `abcd1234`.
 
 The ID is always precisely eight hexadecimal digits.
 
