@@ -60,6 +60,6 @@ We’ve added a template that generates a link for the specific device type and 
 
 ## See also
 
-- The article [*Automatic device connection*][adc] provides more detailed information on the process and the requirements for the human-readable identifier in more detail.
+- The article [*Automatic device connection*][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
 
 [adc]: /private-dns/solving-problems/automatic-devices
