@@ -23,9 +23,7 @@ Denne guide forklarer, hvordan en krypteret DNS-server opsættes med AdGuard Hom
 
 Formålet med at sikre DNS-trafikken er at sikre den mod tredjeparter, som kan analysere eller ændre den, f.eks. fra ISP.
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 Det betyder, at en server med en offentlig dedikeret IP-adresse er nødvendig. Der er masser af udbydere af billige cloud-servere: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode] mv. Vælg blot en, opret en cloudserver dér, og [installér AdGuard Home](adguard-home/getting-started.md) på din server.
 
@@ -168,9 +166,7 @@ location /dns-query {
 }
 ```
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

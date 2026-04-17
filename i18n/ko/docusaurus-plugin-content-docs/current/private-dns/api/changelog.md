@@ -5,10 +5,10 @@ toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-{/*
-Changelog is from here:
-https://api.adguard-dns.io/static/api/CHANGELOG.md
-*/}
+<!--
+    Changelog is from here:
+    https://api.adguard-dns.io/static/api/CHANGELOG.md
+-->
 
 이 문서에는 [AdGuard DNS API](private-dns/api/overview.md)에 대한 변경 로그가 포함되어 있습니다.
 

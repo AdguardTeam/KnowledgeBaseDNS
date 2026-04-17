@@ -23,9 +23,7 @@ Questa guida spiega come configurare un server DNS crittografato con AdGuard Hom
 
 Lo scopo di mettere al sicuro il traffico DNS è metterlo al sicuro dalle terze parti che potrebbero analizzarlo o modificarlo, ad es. da ISP.
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 Significa che avrai bisogno di un server con un indirizzo IP pubblico dedicato. Esistono molti provider di server cloud economici: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], ecc. Scegline semplicemente uno, crea lì un server cloud e [installa AdGuard Home](adguard-home/getting-started.md) sul tuo server.
 
@@ -168,9 +166,7 @@ location /dns-query {
 }
 ```
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

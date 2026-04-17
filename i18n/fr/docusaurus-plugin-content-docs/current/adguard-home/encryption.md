@@ -23,9 +23,7 @@ Ce guide explique comment configurer un serveur DNS chiffré avec AdGuard Home.
 
 L'objectif de la sécurisation du trafic DNS est de le protéger contre les tiers qui pourraient l'analyser ou le modifier, par exemple les fournisseurs d'accès à Internet.
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 Cela signifie que vous aurez besoin d'un serveur doté d'une adresse IP publique et dédiée. Il existe de nombreux fournisseurs de serveurs cloud bon marché�: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], etc. Choisissez-en un, créez-y un serveur cloud, et [Installer AdGuard Home](adguard-home/getting-started.md) sur votre serveur.
 
@@ -168,9 +166,7 @@ location /dns-query {
 }
 ```
 
-{/*
-TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
-*/}
+<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

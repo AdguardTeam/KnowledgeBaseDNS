@@ -529,9 +529,11 @@ Hvad den er i stand til:
 
 3. Oprense den resulterende liste: Fjerne dubletter og ugyldige regler, samt komprimere listen.
 
-{/*local links*/}
+<!-- local links -->
 
-{/*external links*/}
+
+
+<!-- external links -->
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 

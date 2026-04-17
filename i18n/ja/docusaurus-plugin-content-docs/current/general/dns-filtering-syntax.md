@@ -529,9 +529,11 @@ What it’s capable of:
 
 3. Cleanup the resulting list: deduplicate, remove invalid rules, and compress the list.
 
-{/*local links*/}
+<!-- local links -->
 
-{/*external links*/}
+
+
+<!-- external links -->
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
