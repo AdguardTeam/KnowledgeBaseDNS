@@ -52,9 +52,7 @@ AdGuard Home kontroluje DNS požadavky i DNS odezvy, aby zabránil technice obch
 
 Výchozí umístění prostých textových protokolů (nezaměňovat s protokoly dotazů) závisí na operačním systému a režimu instalace:
 
-{/*
-TODO(a.garipov): Add more info about Docker; add links to tools.
-*/}
+<!-- TODO(a.garipov): Add more info about Docker; add links to tools. -->
 
 - **OpenWrt Linux:** použijte příkaz `logread -e AdGuardHome`.
 

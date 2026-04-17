@@ -529,9 +529,11 @@ What it’s capable of:
 
 3. Bereinigt die resultierende Liste: entfernt Dubletten, entfernt ungültige Regeln und komprimiert die Liste.
 
-{/*local links*/}
+<!-- local links -->
 
-{/*external links*/}
+
+
+<!-- external links -->
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 

@@ -529,9 +529,11 @@ If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will cons
 
 3. Подчистить список, получившийся в результате: убрать дубли, неработающие правила и сжать список.
 
-{/*local links*/}
+<!-- local links -->
 
-{/*external links*/}
+
+
+<!-- external links -->
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 

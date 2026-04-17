@@ -529,9 +529,11 @@ What it’s capable of:
 
 3. 清理生成的列表：重复数据删除、删除无效规则和压缩列表。
 
-{/*local links*/}
+<!-- local links -->
 
-{/*external links*/}
+
+
+<!-- external links -->
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 

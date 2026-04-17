@@ -38,7 +38,10 @@ Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaş
 | -                                            | Ayrıntılı sorgu günlüğü                                                                               |
 | -                                            | Ebeveyn denetimi                                                                                      |
 
-{/* ## How to set up private AdGuard DNS
+
+<!--
+
+## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
 
@@ -52,7 +55,7 @@ Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaş
 - Windows
 - Mac
 - Linux
-- Yönlendiriciler
+- Routers
 - Gaming consoles
 - Smart TVs
 
@@ -64,7 +67,7 @@ Every device that you add in the AdGuard DNS panel has its own unique address th
 
 If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
 
-:::note Not
+:::note
 
 Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
 
@@ -84,13 +87,15 @@ If you connect your device to AdGuard DNS via Linked IP, the service will count 
 
 The only requirement for linking IP is that **it must be a residential IP address**.
 
-:::note Not
+:::note
 
 A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
 
 :::
 
 If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
+
+-->
 
 ## Private AdGuard DNS features
 
@@ -188,7 +193,7 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.*/}
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
 
 ### Cihazları AdGuard DNS'e nasıl bağlanır
 

@@ -5,9 +5,7 @@ sidebar_position: 2
 
 See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-{/*
-TODO(a.garipov): Find ways to add IDs to individual list items.
-*/}
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
@@ -102,7 +100,7 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 The `upstream` object configures the actual resolving of requests. It has the following properties:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
+- `groups`: The set of upstream servers keyed by the group’s name. Het heeft de volgende eigenschappen:
 
   - `address`: The upstream server’s address.
 
@@ -245,4 +243,4 @@ The `log` object configures the logging. It has the following properties:
 
 - `verbose`: Specifies whether the log should be more informative.
 
-  **Example:** `false`
+  **Voorbeeld:** `false`

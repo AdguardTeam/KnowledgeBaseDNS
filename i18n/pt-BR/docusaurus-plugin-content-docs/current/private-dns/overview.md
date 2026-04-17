@@ -38,7 +38,10 @@ Aqui está uma comparação simples entre os recursos disponíveis no AdGuard DN
 | -                                              | Registro de consulta detalhado                                                                                |
 | -                                              | Controle parental                                                                                             |
 
-{/* ## How to set up private AdGuard DNS
+
+<!--
+
+## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
 
@@ -52,7 +55,7 @@ Aqui está uma comparação simples entre os recursos disponíveis no AdGuard DN
 - Windows
 - Mac
 - Linux
-- Roteadores
+- Routers
 - Gaming consoles
 - Smart TVs
 
@@ -91,6 +94,8 @@ A residential IP address is an IP address assigned to a device connected to a re
 :::
 
 If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
+
+-->
 
 ## Private AdGuard DNS features
 
@@ -188,7 +193,7 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.*/}
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
 
 ### Como conectar dispositivos ao AdGuard DNS
 

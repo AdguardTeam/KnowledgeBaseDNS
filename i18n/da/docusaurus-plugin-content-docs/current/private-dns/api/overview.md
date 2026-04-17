@@ -5,7 +5,10 @@ toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-{/* API info is from here: https://api.adguard-dns.io/static/api/API.md */}
+<!--
+    API info is from here:
+    https://api.adguard-dns.io/static/api/API.md
+-->
 
 AdGuard DNS tilbyder en REST API, hvormed apps integreres i den.
 
