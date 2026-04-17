@@ -23,7 +23,9 @@ AdGuard Home 同时支持客户端和服务端的 [DNSCrypt][dnscrypt-info]。 [
 
 加密 DNS 流量的目的是保护其免受第三方（例如 ISP）的分析或篡改。
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 这意味着您需要一台拥有公网独立 IP 地址的服务器。 有很多廉价的云服务器提供商：[DigitalOcean][digital-ocean]、[Vultr][vultr]、[Linode][linode] 等。 任选一家，在其上创建云服务器，然后在服务器上[安装 AdGuard Home](adguard-home/getting-started.md)。
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

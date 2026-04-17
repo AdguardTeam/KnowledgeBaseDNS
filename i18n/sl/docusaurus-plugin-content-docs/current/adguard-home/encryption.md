@@ -23,7 +23,9 @@ This guide explains how to setup an encrypted DNS server with AdGuard Home.
 
 The purpose of securing the DNS traffic is to secure it from third parties that might be analyzing or modifying it, e.g., from ISP.
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 It means that you will need a server with a public dedicated IP address. There are plenty of cheap cloud servers providers: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], etc. Just choose one, create a cloud server there, and [install AdGuard Home](adguard-home/getting-started.md) on your server.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

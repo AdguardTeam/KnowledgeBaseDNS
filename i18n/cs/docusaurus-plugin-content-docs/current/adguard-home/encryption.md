@@ -23,7 +23,9 @@ Tento průvodce vysvětluje, jak nastavit šifrovaný DNS server s AdGuard Home.
 
 Účelem zabezpečení DNS provozu je ochrana před třetími stranami, které by jej mohly analyzovat nebo upravovat, např. před poskytovateli internetových služeb.
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 To znamená, že budete potřebovat server s veřejnou vyhrazenou IP adresou. Existuje spousta levných poskytovatelů cloudových serverů: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode] atd. Stačí si vybrat jeden, vytvořit tam cloudový server a [nainstalovat AdGuard Home](adguard-home/getting-started.md) na svůj server.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

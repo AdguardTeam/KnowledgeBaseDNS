@@ -52,7 +52,9 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 纯文本日志的默认位置 (不要与查询日志混淆) 取决于操作系统和安装模式：
 
-{/_TODO(a.garipov): Add more info about Docker; add links to tools._/}
+{/*
+TODO(a.garipov): Add more info about Docker; add links to tools.
+*/}
 
 - **OpenWrt Linux:** 使用 `logread -e AdGuardHome` 命令。
 

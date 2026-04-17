@@ -23,7 +23,9 @@ Esta guía explica cómo configurar un servidor DNS cifrado con AdGuard Home.
 
 El propósito de proteger el tráfico DNS es protegerlo de terceros que podrían analizarlo o modificarlo, por ejemplo, del ISP.
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 Significa que necesitarás un servidor con una dirección IP pública dedicada. Hay muchos proveedores de servidores en la nube baratos: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], etc. Solo elige uno, crea un servidor en la nube allí e [instala AdGuard Inicio](adguard-home/getting-started.md) en tu servidor.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html

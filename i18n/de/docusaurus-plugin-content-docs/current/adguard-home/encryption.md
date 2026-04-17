@@ -23,7 +23,9 @@ Diese Anleitung erklärt, wie man einen verschlüsselten DNS-Server mit AdGuard 
 
 Der Zweck der Sicherung des DNS-Verkehrs besteht darin, ihn vor Dritten zu schützen, die ihn analysieren oder verändern könnten, z. B. Internetdienstanbieter.
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 Das bedeutet, dass Sie einen Server mit einer öffentlichen dedizierten IP-Adresse benötigen. Es gibt viele günstige Cloud-Server-Anbieter: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], usw. Whlen Sie einfach einen aus, erstellen Sie dort einen Cloud-Server und [installieren Sie AdGuard Home](adguard-home/getting-started.md) auf Ihrem Server.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/_TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226._/}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html
