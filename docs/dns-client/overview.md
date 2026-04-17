@@ -3,7 +3,6 @@ title: Overview
 sidebar_position: 1
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 ## What is AdGuard DNS CLI?
 
@@ -15,15 +14,15 @@ A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS 
 
 Supported operating systems:
 
-  - Linux
-  - macOS
-  - Windows
+- Linux
+- macOS
+- Windows
 
 Supported CPU architectures:
 
-  - 64-bit ARM
-  - AMD64
-  - i386
+- 64-bit ARM
+- AMD64
+- i386
 
 ## Getting started {#start-basic}
 
@@ -82,12 +81,12 @@ Option `-h` makes AdGuard DNS CLI print out a help message to standard output an
 
 Option `-s <value>` specifies the OS service action. Possible values are:
 
-  - `install`: installs AdGuard DNS CLI as a service
-  - `restart`: restarts the running AdGuard DNS CLI service
-  - `start`: starts the installed AdGuard DNS CLI service
-  - `status`: shows the status of the installed AdGuard DNS CLI service
-  - `stop`: stops the running AdGuard DNS CLI
-  - `uninstall`: uninstalls AdGuard DNS CLI service
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
 ### Verbose {#opts-verbose}
 
@@ -110,8 +109,8 @@ The YAML configuration file is described in [its own article][conf], and there i
 
 There are a few different exit codes that may appear under different error conditions:
 
-  - `0`: Successfully finished and exited, no errors.
+- `0`: Successfully finished and exited, no errors.
 
-  - `1`: Internal error, most likely a misconfiguration.
+- `1`: Internal error, most likely a misconfiguration.
 
-  - `2`: Bad command-line argument or value.
+- `2`: Bad command-line argument or value.

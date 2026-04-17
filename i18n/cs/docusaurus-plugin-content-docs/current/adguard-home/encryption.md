@@ -23,7 +23,7 @@ Tento průvodce vysvětluje, jak nastavit šifrovaný DNS server s AdGuard Home.
 
 Účelem zabezpečení DNS provozu je ochrana před třetími stranami, které by jej mohly analyzovat nebo upravovat, např. před poskytovateli internetových služeb.
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 To znamená, že budete potřebovat server s veřejnou vyhrazenou IP adresou. Existuje spousta levných poskytovatelů cloudových serverů: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode] atd. Stačí si vybrat jeden, vytvořit tam cloudový server a [nainstalovat AdGuard Home](adguard-home/getting-started.md) na svůj server.
 
@@ -166,7 +166,7 @@ location /dns-query {
 }
 ```
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html
@@ -339,7 +339,7 @@ Ujistěte se, že vaše nastavení TLS je platné a šifrování je povoleno.
 
 Zde je návod, jak vygenerovat razítko DNSCrypt a zkontrolovat instalaci:
 
-1. Přejděte na <https://dnscrypt.info/stamps/>.
+1. Přejděte na [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Zadejte údaje z konfiguračního souboru DNSCrypt. _Veřejný klíč poskytovatele_ je hodnota pole `public_key` ve vašem konfiguračním souboru DNSCrypt.
 

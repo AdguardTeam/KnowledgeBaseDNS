@@ -23,7 +23,7 @@ Este guia explica como configurar um servidor DNS criptografado com o AdGuard Ho
 
 O objetivo de proteger o tráfego DNS é protegê-lo de terceiros que possam estar analisando ou modificando-o, como, por exemplo, o provedor de serviços de internet (ISP).
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 Significa que você precisará de um servidor com um endereço IP público dedicado. Existem muitos provedores de servidores em nuvem baratos: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], etc. Basta escolher um, criar um servidor na nuvem e [instalar o AdGuard Home](adguard-home/getting-started.md) no seu servidor.
 
@@ -166,7 +166,7 @@ location /dns-query {
 }
 ```
 
-<!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
+{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html
@@ -339,7 +339,7 @@ Certifique-se de que suas configurações de TLS sejam válidas e que a criptogr
 
 Veja como gerar um carimbo DNSCrypt e verificar sua instalação:
 
-1. Vá para <https://dnscrypt.info/stamps/>.
+1. Vá para [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Insira os data do seu arquivo de configuração DNSCrypt. A _chave pública do provedor_ é o valor do campo `public_key` no seu arquivo de configuração DNSCrypt.
 

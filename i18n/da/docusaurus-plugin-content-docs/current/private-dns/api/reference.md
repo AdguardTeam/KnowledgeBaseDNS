@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!--
+{/*
     The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
--->
+*/}
 
 Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/overview.md). Besøg [denne side](private-dns/api/changelog.md)for at se den komplette AdGuard DNS API-ændringslog.
 
@@ -84,7 +84,7 @@ Opretter en ny enhed
 | 400  | Bekræftelse mislykkedes      |
 | 429  | Kvote for antal enheder nået |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### SLET
 
@@ -144,7 +144,7 @@ Opdaterer en eksisterende enhed
 | 400  | Bekræftelse mislykkedes |
 | 404  | Enhed ikke fundet       |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ Oplist dedikerede IPv4- og IPv6-adresser til en enhed
 | ---- | ----------------------- |
 | 200  | Dedikerede IPv4 og IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### SLET
 
@@ -206,7 +206,7 @@ Link dedikeret IPv4 til enheden
 | 404  | Enhed eller adresse ikke fundet         |
 | 429  | Kvote for linket dedikeret IPv4 opbrugt |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ Henter DNS-over-HTTPS .mobileconfig-filen.
 | 200  | DNS-over-HTTPS .plist-fil |
 | 404  | Enhed ikke fundet         |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Generér og angiv ny DNS-over-HTTPS adgangskode
 | 200  | DNS-over-HTTPS adgangskode er nulstillet |
 | 404  | Enhed ikke fundet                        |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ Henter DNS-over-TLS .mobileconfig-filen.
 | 200  | DNS-over-HTTPS .plist-fil |
 | 404  | Enhed ikke fundet         |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers opret
 | 400  | Bekræftelse mislykkedes          |
 | 429  | Kvote for antal DNS-servere nået |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### SLET
 
@@ -395,7 +395,7 @@ Opdaterer en eksisterende DNS-server
 | 400  | Bekræftelse mislykkedes |
 | 404  | DNS-server ikke fundet  |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

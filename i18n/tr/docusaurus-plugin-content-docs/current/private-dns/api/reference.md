@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!--
+{/*
     The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
--->
+*/}
 
 Bu makale [AdGuard DNS API](private-dns/api/overview.md) için dokümantasyon içermektedir. AdGuard DNS API değişiklik günlüğünün tamamı için [bu sayfayı](private-dns/api/changelog.md) ziyaret edin.
 
@@ -84,7 +84,7 @@ Yeni bir cihaz oluşturur
 | 400 | Doğrulama başarısız             |
 | 429 | Devices count reached the limit |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### DELETE
 
@@ -144,7 +144,7 @@ Mevcut bir cihazı günceller
 | 400 | Doğrulama başarısız |
 | 404 | Cihaz bulunamadı    |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### GET
 
@@ -164,7 +164,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 | --- | ----------------- |
 | 200 | Özel IPv4 ve IPv6 |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### DELETE
 
@@ -206,7 +206,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 | 404 | Cihaz veya adres bulunamadı         |
 | 429 | Özel IPv4 sayısı limite ulaştı      |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### GET
 
@@ -229,7 +229,7 @@ DNS-over-HTTPS, .mobileconfig dosyasını alır.
 | 200 | DNS-over-HTTPS .plist dosyası |
 | 404 | Cihaz bulunamadı              |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ DNS-over-HTTPS parolası oluştur ve ayarla
 | 200 | DNS-over-HTTPS parolası başarıyla sıfırlandı |
 | 404 | Cihaz bulunamadı                             |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### GET
 
@@ -273,7 +273,7 @@ DNS-over-TLS .mobileconfig dosyasını alır.
 | 200 | DNS-over-HTTPS .plist dosyası |
 | 404 | Cihaz bulunamadı              |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Yeni bir DNS sunucusu oluşturur. Özel ayarlar ekleyebilirsiniz, aksi takdirde 
 | 400 | Doğrulama başarısız             |
 | 429 | DNS sunucu sayısı sınıra ulaştı |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### DELETE
 
@@ -395,7 +395,7 @@ Mevcut bir DNS sunucusunu günceller
 | 400 | Doğrulama başarısız      |
 | 404 | DNS sunucusu bulunamadı  |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 

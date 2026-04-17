@@ -529,10 +529,10 @@ Neler yapabiliyor:
 
 3. Ortaya çıkan listeyi temizleyin: kopyalarını çıkarın, geçersiz kuralları kaldırın ve listeyi sıkıştırın.
 
-<!-- local links -->
+{/* local links */}
 
 
-<!-- external links -->
+{/* external links */}
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier

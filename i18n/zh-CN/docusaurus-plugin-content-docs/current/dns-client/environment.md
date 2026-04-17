@@ -3,7 +3,6 @@ title: 环境变量
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 AdGuard DNS CLI 使用[环境变量][wiki-env]来存储部分配置。 其他配置存储在[配置文件][conf]中。
 

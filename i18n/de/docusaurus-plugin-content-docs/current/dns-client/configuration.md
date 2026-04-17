@@ -3,13 +3,12 @@ title: Konfigurationsdatei
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 In der Datei [`config.dist.yml`][dist] finden Sie ein vollständiges Beispiel für eine [YAML][yaml]-Konfigurationsdatei mit Kommentaren.
 
-<!--
+{/*
     TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/

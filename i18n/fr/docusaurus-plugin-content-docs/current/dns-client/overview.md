@@ -3,7 +3,6 @@ title: Vue d'ensemble
 sidebar_position: 1
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
 
 ## Qu'est-ce que AdGuard DNS CLI ?
 

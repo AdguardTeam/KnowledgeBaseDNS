@@ -1,5 +1,6 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const DNS_WEBSITE_URL = 'https://adguard-dns.io';
 const ADGUARD_WEBSITE_URL = 'https://adguard.com';
@@ -18,12 +19,22 @@ const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  future: {
+    faster: true,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+  },
   title: 'AdGuard DNS Knowledge Base',
   tagline: 'Knowledge base for AdGuard DNS',
   url: url,
   baseUrl: baseUrl,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   trailingSlash: true,
   organizationName: 'AdGuard',
@@ -235,21 +246,4 @@ module.exports = {
       },
     ],
   ],
-  webpack: {
-    jsLoader: (isServer) => ({
-      loader: require.resolve('swc-loader'),
-      options: {
-        jsc: {
-          parser: {
-            syntax: 'typescript',
-            tsx: true,
-          },
-          target: 'es2017',
-        },
-        module: {
-          type: isServer ? 'commonjs' : 'es6',
-        },
-      },
-    }),
-  },
 };

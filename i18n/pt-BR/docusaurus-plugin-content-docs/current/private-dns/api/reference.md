@@ -5,11 +5,11 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-<!--
+{/*
     The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
--->
+*/}
 
 Este artigo contém documentação para a [ API do AdGuard DNS](private-dns/api/overview.md). Para o changelog completo da API do AdGuard DNS, visite [esta página](private-dns/api/changelog.md).
 
@@ -84,7 +84,7 @@ Cria um novo dispositivo
 | 400    | Falha na validação                          |
 | 429    | A contagem de dispositivos atingiu o limite |
 
-### /oapi/v1/devices/{device_id}
+### /oapi/v1/devices/\{device_id\}
 
 #### EXCLUIR
 
@@ -144,7 +144,7 @@ Atualiza um dispositivo existente
 | 400    | Falha na validação         |
 | 404    | Dispositivo não encontrado |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses
 
 #### OBTER
 
@@ -164,7 +164,7 @@ Lista de endereços IPv4 e IPv6 dedicados para um dispositivo
 | ------ | --------------------- |
 | 200    | IPv4 e IPv6 dedicados |
 
-### /oapi/v1/devices/{device_id}/dedicated_addresses/ipv4
+### /oapi/v1/devices/\{device_id\}/dedicated_addresses/ipv4
 
 #### EXCLUIR
 
@@ -206,7 +206,7 @@ Vincular IPv4 dedicado ao dispositivo
 | 404    | Dispositivo ou endereço não encontrado                   |
 | 429    | A contagem de IPv4 dedicados vinculados atingiu o limite |
 
-### /oapi/v1/devices/{device_id}/doh.mobileconfig
+### /oapi/v1/devices/\{device_id\}/doh.mobileconfig
 
 #### OBTER
 
@@ -229,7 +229,7 @@ Obtém o arquivo .mobileconfig DNS-over-HTTPS.
 | 200    | Arquivo .plist DNS-over-HTTPS |
 | 404    | Dispositivo não encontrado    |
 
-### /oapi/v1/devices/{device_id}/doh_password/reset
+### /oapi/v1/devices/\{device_id\}/doh_password/reset
 
 #### PUT
 
@@ -250,7 +250,7 @@ Gerar e definir nova senha do DNS-over-HTTPS
 | 200    | Senha do DNS-over-HTTPS redefinida com sucesso |
 | 404    | Dispositivo não encontrado                     |
 
-### /oapi/v1/devices/{device_id}/dot.mobileconfig
+### /oapi/v1/devices/\{device_id\}/dot.mobileconfig
 
 #### OBTER
 
@@ -273,7 +273,7 @@ Obtém o ficheiro .mobileconfig do DNS-over-TLS.
 | 200    | Arquivo .plist DNS-over-HTTPS |
 | 404    | Dispositivo não encontrado    |
 
-### /oapi/v1/devices/{device_id}/settings
+### /oapi/v1/devices/\{device_id\}/settings
 
 #### PUT
 
@@ -331,7 +331,7 @@ Cria um novo servidor DNS. Você pode anexar configurações personalizadas, cas
 | 400    | Falha na validação                            |
 | 429    | A contagem de servidores DNS atingiu o limite |
 
-### /oapi/v1/dns_servers/{dns_server_id}
+### /oapi/v1/dns_servers/\{dns_server_id\}
 
 #### EXCLUIR
 
@@ -395,7 +395,7 @@ Atualiza um servidor DNS existente
 | 400    | Falha na validação          |
 | 404    | Servidor DNS não encontrado |
 
-### /oapi/v1/dns_servers/{dns_server_id}/settings
+### /oapi/v1/dns_servers/\{dns_server_id\}/settings
 
 #### PUT
 
