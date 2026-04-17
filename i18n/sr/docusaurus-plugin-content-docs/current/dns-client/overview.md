@@ -3,7 +3,6 @@ title: Pregled
 sidebar_position: 1
 ---
 
-
 ## What is AdGuard DNS CLI?
 
 A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.

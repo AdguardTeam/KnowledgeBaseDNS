@@ -57,3 +57,9 @@ Vi har tilføjet en skabelon, der genererer et link til den bestemte enhedstype 
 3. Klik på _Generér link_.
    ![Generér link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Linket er hermed genereret, kopiér nu serveradressen og brug den i en af [AdGuard-apperne](https://adguard.com/welcome.html)
+
+## Se også
+
+- Artiklen [_Automatisk enhedsforbindelse_][adc] giver mere detaljerede oplysninger om processen og kravene til den menneskeligt læsbare identifikator.
+
+[adc]: /private-dns/solving-problems/automatic-devices

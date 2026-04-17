@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Questo articolo contiene la documentazione per l'[API di AdGuard DNS](private-dns/api/overview.md). Per il registro delle modifiche completo dell'API di AdGuard DNS, visita [questa pagina](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Versione attuale: 1.10
 
@@ -21,7 +20,7 @@ Questo articolo contiene la documentazione per l'[API di AdGuard DNS](private-dn
 
 ##### Riepilogo
 
-Ottiene i limiti del profilo
+Gets account limits
 
 ##### Risposte
 
@@ -35,7 +34,7 @@ Ottiene i limiti del profilo
 
 ##### Riepilogo
 
-Elenca gli indirizzi IPv4 dedicati
+Lists dedicated IPv4 addresses
 
 ##### Risposte
 
@@ -47,7 +46,7 @@ Elenca gli indirizzi IPv4 dedicati
 
 ##### Riepilogo
 
-Assegna un nuovo IPv4
+Allocates new IPv4
 
 ##### Risposte
 
@@ -62,7 +61,7 @@ Assegna un nuovo IPv4
 
 ##### Riepilogo
 
-Elenca i dispositivi
+Lists devices
 
 ##### Risposte
 
@@ -74,7 +73,7 @@ Elenca i dispositivi
 
 ##### Riepilogo
 
-Crea un nuovo dispositivo
+Creates a new device
 
 ##### Risposte
 
@@ -90,7 +89,7 @@ Crea un nuovo dispositivo
 
 ##### Riepilogo
 
-Rimuove un dispositivo
+Removes a device
 
 ##### Parametri
 
@@ -109,7 +108,7 @@ Rimuove un dispositivo
 
 ##### Riepilogo
 
-Ottiene un dispositivo esistente per ID
+Gets an existing device by ID
 
 ##### Parametri
 
@@ -128,7 +127,7 @@ Ottiene un dispositivo esistente per ID
 
 ##### Riepilogo
 
-Aggiorna un dispositivo esistente
+Updates an existing device
 
 ##### Parametri
 
@@ -150,7 +149,7 @@ Aggiorna un dispositivo esistente
 
 ##### Riepilogo
 
-Elenca gli indirizzi IPv4 e IPv6 dedicati per un dispositivo
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parametri
 
@@ -170,7 +169,7 @@ Elenca gli indirizzi IPv4 e IPv6 dedicati per un dispositivo
 
 ##### Riepilogo
 
-Scollega l'IPv4 dedicato dal dispositivo
+Unlink dedicated IPv4 from the device
 
 ##### Parametri
 
@@ -189,7 +188,7 @@ Scollega l'IPv4 dedicato dal dispositivo
 
 ##### Riepilogo
 
-Collega l'IPv4 dedicato al dispositivo
+Link dedicated IPv4 to the device
 
 ##### Parametri
 
@@ -212,7 +211,7 @@ Collega l'IPv4 dedicato al dispositivo
 
 ##### Riepilogo
 
-Ottiene il file DNS-over-HTTPS .mobileconfig.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parametri
 
@@ -235,7 +234,7 @@ Ottiene il file DNS-over-HTTPS .mobileconfig.
 
 ##### Riepilogo
 
-Genera e imposta una nuova password DNS-over-HTTPS
+Generate and set new DNS-over-HTTPS password
 
 ##### Parametri
 
@@ -256,7 +255,7 @@ Genera e imposta una nuova password DNS-over-HTTPS
 
 ##### Riepilogo
 
-Ottiene il file .mobileconfig. del DNS-over-TLS.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parametri
 
@@ -279,7 +278,7 @@ Ottiene il file .mobileconfig. del DNS-over-TLS.
 
 ##### Riepilogo
 
-Aggiorna le impostazioni del dispositivo
+Updates device settings
 
 ##### Parametri
 
@@ -301,11 +300,11 @@ Aggiorna le impostazioni del dispositivo
 
 ##### Riepilogo
 
-Elenca i server DNS appartenenti all'utente.
+Lists DNS servers that belong to the user.
 
 ##### Descrizione
 
-Elenca i server DNS appartenenti all'utente. Di default, esiste almeno un server predefinito.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Risposte
 
@@ -317,11 +316,11 @@ Elenca i server DNS appartenenti all'utente. Di default, esiste almeno un server
 
 ##### Riepilogo
 
-Crea un nuovo server DNS
+Creates a new DNS server
 
 ##### Descrizione
 
-Crea un nuovo server DNS. Puoi allegare delle impostazioni personalizzate, altrimenti il server DNS sarà creato con le impostazioni predefinite.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Risposte
 
@@ -337,11 +336,11 @@ Crea un nuovo server DNS. Puoi allegare delle impostazioni personalizzate, altri
 
 ##### Riepilogo
 
-Rimuove un server DNS
+Removes a DNS server
 
 ##### Descrizione
 
-Rimuove un server DNS. Tutti i dispositivi collegati a questo server DNS saranno spostati al server DNS predefinito. Eliminare il server DNS predefinito è vietato.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parametri
 
@@ -360,7 +359,7 @@ Rimuove un server DNS. Tutti i dispositivi collegati a questo server DNS saranno
 
 ##### Riepilogo
 
-Ottiene un server DNS esistente per ID
+Gets an existing DNS server by ID
 
 ##### Parametri
 
@@ -379,7 +378,7 @@ Ottiene un server DNS esistente per ID
 
 ##### Riepilogo
 
-Aggiorna un server DNS esistente
+Updates an existing DNS server
 
 ##### Parametri
 
@@ -401,7 +400,7 @@ Aggiorna un server DNS esistente
 
 ##### Riepilogo
 
-Aggiorna le impostazioni del server DNS
+Updates DNS server settings
 
 ##### Parametri
 
@@ -423,7 +422,7 @@ Aggiorna le impostazioni del server DNS
 
 ##### Riepilogo
 
-Ottiene gli elenchi di filtri
+Gets filter lists
 
 ##### Risposte
 
@@ -437,7 +436,7 @@ Ottiene gli elenchi di filtri
 
 ##### Riepilogo
 
-Genera il token di Accesso e Aggiornamento
+Generates Access and Refresh token
 
 ##### Risposte
 
@@ -455,7 +454,7 @@ null
 
 ##### Riepilogo
 
-Cancella il registro delle richieste
+Clears query log
 
 ##### Risposte
 
@@ -467,7 +466,7 @@ Cancella il registro delle richieste
 
 ##### Riepilogo
 
-Ottiene il registro delle richieste
+Gets query log
 
 ##### Parametri
 
@@ -496,7 +495,7 @@ Ottiene il registro delle richieste
 
 ##### Riepilogo
 
-Revoca un Token d'Aggiornamento
+Revokes a Refresh Token
 
 ##### Parametri
 
@@ -518,7 +517,7 @@ null
 
 ##### Riepilogo
 
-Ottiene le statistiche delle categorie
+Gets categories statistics
 
 ##### Parametri
 
@@ -542,7 +541,7 @@ Ottiene le statistiche delle categorie
 
 ##### Riepilogo
 
-Ottiene le statistiche delle aziende
+Gets companies statistics
 
 ##### Parametri
 
@@ -566,7 +565,7 @@ Ottiene le statistiche delle aziende
 
 ##### Riepilogo
 
-Ottiene le statistiche dettagliate delle aziende
+Gets detailed companies statistics
 
 ##### Parametri
 
@@ -591,7 +590,7 @@ Ottiene le statistiche dettagliate delle aziende
 
 ##### Riepilogo
 
-Ottiene le statistiche dei paesi
+Gets countries statistics
 
 ##### Parametri
 
@@ -615,7 +614,7 @@ Ottiene le statistiche dei paesi
 
 ##### Riepilogo
 
-Ottiene le statistiche dei dispositivi
+Gets devices statistics
 
 ##### Parametri
 
@@ -639,7 +638,7 @@ Ottiene le statistiche dei dispositivi
 
 ##### Riepilogo
 
-Ottiene le statistiche dei domini
+Gets domains statistics
 
 ##### Parametri
 
@@ -663,7 +662,7 @@ Ottiene le statistiche dei domini
 
 ##### Riepilogo
 
-Ottiene le statistiche del periodo
+Gets time statistics
 
 ##### Parametri
 
@@ -687,7 +686,7 @@ Ottiene le statistiche del periodo
 
 ##### Riepilogo
 
-Elenca i servizi web
+Lists web services
 
 ##### Risposte
 

@@ -38,7 +38,6 @@ Hier is een eenvoudige vergelijking van functies die beschikbaar zijn in openbar
 | -                                | Detailed query log                                                                                     |
 | -                                | Parental control                                                                                       |
 
-
 {/* ## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ

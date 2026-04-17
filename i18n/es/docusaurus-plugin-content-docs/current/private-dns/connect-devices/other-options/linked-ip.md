@@ -30,6 +30,17 @@ Las siguientes instrucciones explican cómo conectarse al dispositivo a través 
 
    ![IP vinculada \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. Abre el Dashboard.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## DNS dinámico: por qué es útil
 
 Cada vez que un dispositivo se conecta a la red, obtiene una nueva dirección IP dinámica. Cuando un dispositivo se desconecta, el servidor DHCP puede asignar la dirección IP liberada a otro dispositivo en la red. Esto significa que las direcciones IP dinámicas pueden cambiar con frecuencia y de manera impredecible. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.

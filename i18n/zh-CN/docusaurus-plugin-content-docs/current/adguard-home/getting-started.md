@@ -136,7 +136,7 @@ sudo ./AdGuardHome -s install
 
 4. 重新启动 AdGuard Home。
 
-[mupd]: faq.md#manual-update
+[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
 
 ### Docker, Home Assistant, and Snapcraft 更新
 
@@ -156,7 +156,7 @@ Docker 、Hass.io/Home Assistant 和 Snapcraft 安装的自动更新已禁用。
 
 此设置将自动覆盖连接到您家用路由器的所有设备，无需手动配置每台设备。
 
-1. 打开路由器的首选项。 通常，可以通过 URL，例如 [http://192.168.0.1/](http://192.168.0.1/) 或 [http://192.168.1.1/](http://192.168.1.1/)，从浏览器访问它。 系统可能会提示您输入密码。 如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。 如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
+1. 打开路由器的首选项。 Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). 系统可能会提示您输入密码。 如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。 如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
 
 2. 找到 DHCP/DNS 设置。 在允许两组或三组数字的字段旁边查找 DNS 字母，每组数字分为四组，每组一到三位数字。
 

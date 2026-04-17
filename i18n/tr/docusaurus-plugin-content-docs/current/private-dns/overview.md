@@ -38,7 +38,6 @@ Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaş
 | -                                            | Ayrıntılı sorgu günlüğü                                                                               |
 | -                                            | Ebeveyn denetimi                                                                                      |
 
-
 {/* ## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
@@ -53,7 +52,7 @@ Burada genel ve özel AdGuard DNS'de bulunan özelliklerin basit bir karşılaş
 - Windows
 - Mac
 - Linux
-- Routers
+- Yönlendiriciler
 - Gaming consoles
 - Smart TVs
 
@@ -65,7 +64,7 @@ Every device that you add in the AdGuard DNS panel has its own unique address th
 
 If the device does not support encrypted DNS and you have to use plain DNS, there are two more ways to allow AdGuard DNS to recognize the device — use dedicated IP addresses or link device's IP address.
 
-:::note
+:::note Not
 
 Use plain DNS addresses only if you have no other options: this reduces the security of DNS requests. If you decide to use plain DNS, we recommend that you choose dedicated IP addresses.
 
@@ -85,7 +84,7 @@ If you connect your device to AdGuard DNS via Linked IP, the service will count 
 
 The only requirement for linking IP is that **it must be a residential IP address**.
 
-:::note
+:::note Not
 
 A residential IP address is an IP address assigned to a device connected to a residential ISP. It is typically associated with a physical location and is allocated to individual homes or apartments. Residential IP addresses are used by regular Internet users for their everyday online activities, such as browsing the web, accessing social media platforms, sending emails, or streaming content.
 
@@ -95,25 +94,25 @@ If you're trying to link a residential IP address and AdGuard DNS does not allow
 
 ## Private AdGuard DNS features
 
-### Statistics
+### İstatistikler
 
 In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Traffic destination
+### Trafik istikameti
 
 This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
 ![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Companies
+### Şirketler
 
 This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
 ![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
-### Query log
+### Sorgu günlüğü
 
 This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
 
@@ -135,25 +134,25 @@ Even if you're aware of all the tricks online scammers use, there's always a ris
 
 The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
-### Parental control
+### Ebeveyn denetimi
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Parental control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![Ebeveyn denetimi](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-### User rules
+### Kullanıcı kuralları
 
 For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### DNS-over-HTTPS with authentication
+### Kimlik doğrulamalı DNS-over-HTTPS
 
 DNS-over-HTTPS with authentication provides a login and password to connect to the server. This can limit access to unauthorized users and increase security.
 
 To enable this feature, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Select *Deny other protocols* to disable alternative protocol usage, ensuring exclusive DNS-over-HTTPS authentication and blocking third-party access.
 
-![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+![Kimlik doğrulamalı DNS-over-HTTPS](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
 ## Advanced
 
@@ -172,7 +171,7 @@ In the Advanced section, there are three options that can be customized:
 - Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
 - Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
 
-### Access settings
+### Erişim ayarları
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
@@ -183,7 +182,7 @@ Here you can manage an access to your DNS server by configuring the following se
 - Disallowed clients. List clients that are denied to use your DNS server
 - Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
 
-:::note
+:::note Not
 
 If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
 

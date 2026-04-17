@@ -3,12 +3,11 @@ title: Fichier de configuration
 sidebar_position: 2
 ---
 
+See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-Voir le fichier [`config.dist.yml`][dist] pour un exemple complet d'un fichier de configuration [YAML][yaml] avec des commentaires.
-
-{/*
-    TODO(a.garipov): Find ways to add IDs to individual list items.
-*/}
+{/\*
+TODO(a.garipov): Find ways to add IDs to individual list items.
+\*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/

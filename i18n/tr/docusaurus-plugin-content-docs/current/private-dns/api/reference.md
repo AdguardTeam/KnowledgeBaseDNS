@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Bu makale [AdGuard DNS API](private-dns/api/overview.md) için dokümantasyon içermektedir. AdGuard DNS API değişiklik günlüğünün tamamı için [bu sayfayı](private-dns/api/changelog.md) ziyaret edin.
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Current version: 1.10
 
@@ -21,7 +20,7 @@ Bu makale [AdGuard DNS API](private-dns/api/overview.md) için dokümantasyon i�
 
 ##### Özet
 
-Hesap limitlerini alır
+Gets account limits
 
 ##### Yanıtlar
 
@@ -35,7 +34,7 @@ Hesap limitlerini alır
 
 ##### Özet
 
-Özel IPv4 adreslerini listeler
+Lists dedicated IPv4 addresses
 
 ##### Yanıtlar
 
@@ -47,7 +46,7 @@ Hesap limitlerini alır
 
 ##### Özet
 
-Yeni IPv4 tahsis eder
+Allocates new IPv4
 
 ##### Yanıtlar
 
@@ -62,7 +61,7 @@ Yeni IPv4 tahsis eder
 
 ##### Özet
 
-Cihazları listeler
+Lists devices
 
 ##### Yanıtlar
 
@@ -74,7 +73,7 @@ Cihazları listeler
 
 ##### Özet
 
-Yeni bir cihaz oluşturur
+Creates a new device
 
 ##### Yanıtlar
 
@@ -90,7 +89,7 @@ Yeni bir cihaz oluşturur
 
 ##### Özet
 
-Bir cihazı kaldırır
+Removes a device
 
 ##### Parametreler
 
@@ -109,7 +108,7 @@ Bir cihazı kaldırır
 
 ##### Özet
 
-Mevcut bir cihazı kimliğe göre alır
+Gets an existing device by ID
 
 ##### Parametreler
 
@@ -128,7 +127,7 @@ Mevcut bir cihazı kimliğe göre alır
 
 ##### Özet
 
-Mevcut bir cihazı günceller
+Updates an existing device
 
 ##### Parametreler
 
@@ -170,7 +169,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Özet
 
-Özel IPv4'ün cihazla bağlantısını kaldır
+Unlink dedicated IPv4 from the device
 
 ##### Parametreler
 
@@ -189,7 +188,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Özet
 
-Özel IPv4'ü cihaza bağla
+Link dedicated IPv4 to the device
 
 ##### Parametreler
 
@@ -212,7 +211,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Özet
 
-DNS-over-HTTPS, .mobileconfig dosyasını alır.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parametreler
 
@@ -235,7 +234,7 @@ DNS-over-HTTPS, .mobileconfig dosyasını alır.
 
 ##### Özet
 
-DNS-over-HTTPS parolası oluştur ve ayarla
+Generate and set new DNS-over-HTTPS password
 
 ##### Parametreler
 
@@ -256,7 +255,7 @@ DNS-over-HTTPS parolası oluştur ve ayarla
 
 ##### Özet
 
-DNS-over-TLS .mobileconfig dosyasını alır.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parametreler
 
@@ -279,7 +278,7 @@ DNS-over-TLS .mobileconfig dosyasını alır.
 
 ##### Özet
 
-Cihaz ayarlarını günceller
+Updates device settings
 
 ##### Parametreler
 
@@ -301,11 +300,11 @@ Cihaz ayarlarını günceller
 
 ##### Özet
 
-Kullanıcıya ait DNS sunucularını listeler.
+Lists DNS servers that belong to the user.
 
 ##### Açıklama
 
-Kullanıcıya ait DNS sunucularını listeler. Varsayılan olarak en az bir varsayılan sunucu vardır.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Yanıtlar
 
@@ -317,11 +316,11 @@ Kullanıcıya ait DNS sunucularını listeler. Varsayılan olarak en az bir vars
 
 ##### Özet
 
-Yeni bir DNS sunucusu oluşturur
+Creates a new DNS server
 
 ##### Açıklama
 
-Yeni bir DNS sunucusu oluşturur. Özel ayarlar ekleyebilirsiniz, aksi takdirde DNS sunucusu varsayılan ayarlarla oluşturulacaktır.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Yanıtlar
 
@@ -337,11 +336,11 @@ Yeni bir DNS sunucusu oluşturur. Özel ayarlar ekleyebilirsiniz, aksi takdirde 
 
 ##### Özet
 
-Bir DNS sunucusunu kaldırır
+Removes a DNS server
 
 ##### Açıklama
 
-Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayılan DNS sunucusuna taşınacaktır. Varsayılan DNS sunucusunun silinmesi yasaktır.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parametreler
 
@@ -360,7 +359,7 @@ Bir DNS sunucusunu kaldırır. Bu DNS sunucusuna bağlı tüm cihazlar, varsayı
 
 ##### Özet
 
-Kimliğe göre mevcut bir DNS sunucusunu alır
+Gets an existing DNS server by ID
 
 ##### Parametreler
 
@@ -379,7 +378,7 @@ Kimliğe göre mevcut bir DNS sunucusunu alır
 
 ##### Özet
 
-Mevcut bir DNS sunucusunu günceller
+Updates an existing DNS server
 
 ##### Parametreler
 
@@ -401,7 +400,7 @@ Mevcut bir DNS sunucusunu günceller
 
 ##### Özet
 
-DNS sunucusu ayarlarını günceller
+Updates DNS server settings
 
 ##### Parametreler
 
@@ -423,7 +422,7 @@ DNS sunucusu ayarlarını günceller
 
 ##### Özet
 
-Filtre listelerini alır
+Gets filter lists
 
 ##### Yanıtlar
 
@@ -437,7 +436,7 @@ Filtre listelerini alır
 
 ##### Özet
 
-Erişim ve Yenileme belirteci oluşturur
+Generates Access and Refresh token
 
 ##### Yanıtlar
 
@@ -455,7 +454,7 @@ null
 
 ##### Özet
 
-Sorgu günlüğünü temizler
+Clears query log
 
 ##### Yanıtlar
 
@@ -467,7 +466,7 @@ Sorgu günlüğünü temizler
 
 ##### Özet
 
-Sorgu günlüğünü alır
+Gets query log
 
 ##### Parametreler
 
@@ -518,7 +517,7 @@ null
 
 ##### Özet
 
-Kategori istatistiklerini alır
+Gets categories statistics
 
 ##### Parametreler
 
@@ -542,7 +541,7 @@ Kategori istatistiklerini alır
 
 ##### Özet
 
-Şirket istatistiklerini alır
+Gets companies statistics
 
 ##### Parametreler
 
@@ -566,7 +565,7 @@ Kategori istatistiklerini alır
 
 ##### Özet
 
-Ayrıntılı şirket istatistiklerini alır
+Gets detailed companies statistics
 
 ##### Parametreler
 
@@ -591,7 +590,7 @@ Ayrıntılı şirket istatistiklerini alır
 
 ##### Özet
 
-Ülke istatistiklerini alır
+Gets countries statistics
 
 ##### Parametreler
 
@@ -615,7 +614,7 @@ Ayrıntılı şirket istatistiklerini alır
 
 ##### Özet
 
-Cihaz istatistiklerini alır
+Gets devices statistics
 
 ##### Parametreler
 
@@ -639,7 +638,7 @@ Cihaz istatistiklerini alır
 
 ##### Özet
 
-Alan adı istatistiklerini alır
+Gets domains statistics
 
 ##### Parametreler
 
@@ -663,7 +662,7 @@ Alan adı istatistiklerini alır
 
 ##### Özet
 
-Süre istatistiklerini alır
+Gets time statistics
 
 ##### Parametreler
 
@@ -687,7 +686,7 @@ Süre istatistiklerini alır
 
 ##### Özet
 
-Web hizmetlerini listeler
+Lists web services
 
 ##### Yanıtlar
 

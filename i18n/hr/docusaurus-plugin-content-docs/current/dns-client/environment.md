@@ -3,7 +3,6 @@ title: Environment
 sidebar_position: 3
 ---
 
-
 AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md

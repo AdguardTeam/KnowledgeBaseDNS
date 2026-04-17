@@ -21,10 +21,10 @@ The AdGuard DNS security settings are a set of configurations designed to protec
 AdGuard DNS는 타사 차단 필터 추가를 지원합니다.
 `보안`으로 표시된 필터를 활성화하여 추가 보호를 받으세요.
 
-차단 목록에 대해 자세히 알아보려면 [별도의 문서](/private-dns/setting-up-filtering/blocklists.md)를 참조하세요.
+To learn more about Blocklists, see [the separate article](/private-dns/setting-up-filtering/blocklists.md).
 
 ## Protection against typosquatting domains
 
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.
+Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ _Server settings_ ⭢ _User rules_ ⭢ _Add new rule_.

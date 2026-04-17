@@ -21,10 +21,10 @@ Sometimes this can cause false positives, but statistics show that in most cases
 AdGuard DNS supports adding third-party blocking filters.
 Activate filters marked `security` for additional protection.
 
-To learn more about Blocklists [see separate article](/private-dns/setting-up-filtering/blocklists.md).
+To learn more about Blocklists, see [the separate article](/private-dns/setting-up-filtering/blocklists.md).
 
-## Protection against typosquatting domains
+## Bescherming tegen typosquatting-domeinen
 
-AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
+AdGuard DNS detecteert en blokkeert verdachte look-alike-domeinen op DNS-niveau door patronen te analyseren zoals veelvoorkomende typefouten, verwisselde tekens en ontbrekende of extra letters. Het blokkeert het verzoek nog voordat er een verbinding tot stand is gebracht.
 
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.
+Omdat deze functie gebruikmaakt van gelijkenisdetectie, kunnen legitieme domeinen die lijken op populaire websites soms ten onrechte als verdacht worden aangemerkt. Als dat gebeurt, kun je het domein toevoegen aan de toestemmingslijst door naar [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Serverinstellingen ⭢ _Gebruikersregels_ ⭢ _Nieuwe regel toevoegen_ te gaan.

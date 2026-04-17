@@ -30,3 +30,12 @@ sidebar_position: 2
 7. Если вы хотите использовать выделенный IPv6-адрес, нажмите _Копировать_.
    ![Копировать адрес \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Скопируйте и вставьте выбранный выделенный адрес в настройки устройства.
+
+## How to unassign a dedicated IP
+
+1. Откройте Панель управления.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

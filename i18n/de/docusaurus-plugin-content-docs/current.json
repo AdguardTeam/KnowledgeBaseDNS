@@ -5,11 +5,11 @@
   },
   "sidebar.sidebar.category.General": {
     "message": "Allgemein",
-    "description": "The label for category General in sidebar sidebar"
+    "description": "The label for category 'General' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Public DNS": {
     "message": "Öffentliches DNS",
-    "description": "The label for category Public DNS in sidebar sidebar"
+    "description": "The label for category 'Public DNS' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Solving problems": {
     "message": "Probleme lösen",
@@ -17,11 +17,11 @@
   },
   "sidebar.sidebar.category.Private DNS": {
     "message": "Privates DNS",
-    "description": "The label for category Private DNS in sidebar sidebar"
+    "description": "The label for category 'Private DNS' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Miscellaneous": {
     "message": "Sonstiges",
-    "description": "The label for category Miscellaneous in sidebar sidebar"
+    "description": "The label for category 'Miscellaneous' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Translating AdGuard DNS": {
     "message": "AdGuard DNS übersetzen",
@@ -29,11 +29,11 @@
   },
   "sidebar.sidebar.category.API": {
     "message": "API",
-    "description": "The label for category API in sidebar sidebar"
+    "description": "The label for category 'API' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.AdGuard Home": {
     "message": "AdGuard Home",
-    "description": "The label for category AdGuard Home in sidebar sidebar"
+    "description": "The label for category 'AdGuard Home' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.AdGuard DNS Client": {
     "message": "AdGuard DNS Client",
@@ -41,38 +41,46 @@
   },
   "sidebar.sidebar.category.How to connect devices": {
     "message": "So verbinden Sie Geräte",
-    "description": "The label for category How to connect devices in sidebar sidebar"
+    "description": "The label for category 'How to connect devices' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Mobile and desktop": {
     "message": "Mobil und Desktop",
-    "description": "The label for category Mobile and desktop in sidebar sidebar"
+    "description": "The label for category 'Mobile and desktop' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Routers": {
     "message": "Router",
-    "description": "The label for category Routers in sidebar sidebar"
+    "description": "The label for category 'Routers' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Game consoles": {
     "message": "Spielkonsolen",
-    "description": "The label for category Game consoles in sidebar sidebar"
+    "description": "The label for category 'Game consoles' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Other options": {
     "message": "Weitere Optionen",
-    "description": "The label for category Other options in sidebar sidebar"
+    "description": "The label for category 'Other options' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Server and settings": {
     "message": "Server und Einstellungen",
-    "description": "The label for category Server and settings in sidebar sidebar"
+    "description": "The label for category 'Server and settings' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.How to set up filtering": {
     "message": "So richten Sie die Filterung ein",
-    "description": "The label for category How to set up filtering in sidebar sidebar"
+    "description": "The label for category 'How to set up filtering' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.Statistics and Query log": {
     "message": "Statistiken und Anfragenprotokoll",
-    "description": "The label for category Statistics and Query log in sidebar sidebar"
+    "description": "The label for category 'Statistics and Query log' in sidebar 'sidebar'"
   },
   "sidebar.sidebar.category.AdGuard DNS CLI": {
     "message": "AdGuard DNS CLI",
-    "description": "The label for category AdGuard DNS CLI in sidebar sidebar"
+    "description": "The label for category 'AdGuard DNS CLI' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.solving-problems-for-public-dns": {
+    "message": "Probleme lösen",
+    "description": "The label for category 'Solving problems' in sidebar 'sidebar'"
+  },
+  "sidebar.sidebar.category.solving-problems-for-private-dns": {
+    "message": "Probleme lösen",
+    "description": "The label for category 'Solving problems' in sidebar 'sidebar'"
   }
 }

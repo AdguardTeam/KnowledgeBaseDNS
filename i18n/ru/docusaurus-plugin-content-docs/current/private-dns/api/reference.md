@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Эта статья содержит документацию для [AdGuard DNS API](private-dns/api/overview.md). Полный список изменений AdGuard DNS API можно найти [на этой странице](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Текущая версия: 1.9
 
@@ -21,7 +20,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает лимиты аккаунта
+Gets account limits
 
 ##### Ответы
 
@@ -35,7 +34,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Перечисляет выделенные IPv4-адреса
+Lists dedicated IPv4 addresses
 
 ##### Ответы
 
@@ -47,7 +46,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Выделяет новый IPv4
+Allocates new IPv4
 
 ##### Ответы
 
@@ -62,7 +61,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Перечисляет устройства
+Lists devices
 
 ##### Ответы
 
@@ -74,7 +73,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Создаёт новое устройство
+Creates a new device
 
 ##### Ответы
 
@@ -90,7 +89,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Удаляет устройство
+Removes a device
 
 ##### Параметры
 
@@ -109,7 +108,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает существующее устройство по ID
+Gets an existing device by ID
 
 ##### Параметры
 
@@ -128,7 +127,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Обновляет существующее устройство
+Updates an existing device
 
 ##### Параметры
 
@@ -150,7 +149,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Список выделенных адресов IPv4 и IPv6 для устройства
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Параметры
 
@@ -170,7 +169,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Отвязать выделенный IPv4 от устройства
+Unlink dedicated IPv4 from the device
 
 ##### Параметры
 
@@ -189,7 +188,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Привязать выделенный IPv4 к устройству
+Link dedicated IPv4 to the device
 
 ##### Параметры
 
@@ -212,7 +211,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает файл DNS-over-HTTPS .mobileconfig.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Параметры
 
@@ -235,7 +234,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Создайте и установите новый пароль DNS-over-HTTPS
+Generate and set new DNS-over-HTTPS password
 
 ##### Параметры
 
@@ -256,7 +255,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает файл DNS-over-TLS .mobileconfig.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Параметры
 
@@ -279,7 +278,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Обновляет настройки устройства
+Updates device settings
 
 ##### Параметры
 
@@ -301,11 +300,11 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Перечисляет DNS-серверы, принадлежащие пользователю.
+Lists DNS servers that belong to the user.
 
 ##### Описание
 
-Перечисляет DNS-серверы, принадлежащие пользователю. По умолчанию есть как минимум один сервер.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Ответы
 
@@ -317,11 +316,11 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Создаёт новый DNS-сервер
+Creates a new DNS server
 
 ##### Описание
 
-Создаёт новый DNS-сервер. Вы можете установить собственные настройки, в противном случае DNS-сервер будет создан с настройками по умолчанию.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Ответы
 
@@ -337,11 +336,11 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Удаляет DNS-сервер
+Removes a DNS server
 
 ##### Описание
 
-Удаляет DNS-сервер. Все устройства, подключённые к этому DNS-серверу, будут перемещены на DNS-сервер по умолчанию. Удалять DNS-сервер по умолчанию запрещено.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Параметры
 
@@ -360,7 +359,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает существующий DNS-сервер по ID
+Gets an existing DNS server by ID
 
 ##### Параметры
 
@@ -379,7 +378,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Обновляет существующий DNS-сервер
+Updates an existing DNS server
 
 ##### Параметры
 
@@ -401,7 +400,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Обновляет настройки DNS-сервера
+Updates DNS server settings
 
 ##### Параметры
 
@@ -423,7 +422,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Получает списки фильтров
+Gets filter lists
 
 ##### Ответы
 
@@ -437,7 +436,7 @@ toc_max_heading_level: 4
 
 ##### Что делает
 
-Генерирует токен доступа и продлеваемый токен
+Generates Access and Refresh token
 
 ##### Ответы
 
@@ -455,7 +454,7 @@ null
 
 ##### Что делает
 
-Очищает журнал запросов
+Clears query log
 
 ##### Ответы
 
@@ -467,7 +466,7 @@ null
 
 ##### Что делает
 
-Получает журнал запросов
+Gets query log
 
 ##### Параметры
 
@@ -496,7 +495,7 @@ null
 
 ##### Что делает
 
-Отзывает продлеваемый токен
+Revokes a Refresh Token
 
 ##### Параметры
 
@@ -518,7 +517,7 @@ null
 
 ##### Что делает
 
-Получает статистику категорий
+Gets categories statistics
 
 ##### Параметры
 
@@ -542,7 +541,7 @@ null
 
 ##### Что делает
 
-Получает статистику компаний
+Gets companies statistics
 
 ##### Параметры
 
@@ -566,7 +565,7 @@ null
 
 ##### Что делает
 
-Получает подробную статистику компаний
+Gets detailed companies statistics
 
 ##### Параметры
 
@@ -591,7 +590,7 @@ null
 
 ##### Что делает
 
-Получает статистику по странам
+Gets countries statistics
 
 ##### Параметры
 
@@ -615,7 +614,7 @@ null
 
 ##### Что делает
 
-Получает статистику по устройствам
+Gets devices statistics
 
 ##### Параметры
 
@@ -639,7 +638,7 @@ null
 
 ##### Что делает
 
-Получает статистику по доменам
+Gets domains statistics
 
 ##### Параметры
 
@@ -663,7 +662,7 @@ null
 
 ##### Что делает
 
-Получает статистику по времени
+Gets time statistics
 
 ##### Параметры
 
@@ -687,7 +686,7 @@ null
 
 ##### Что делает
 
-Перечисляет веб-службы
+Lists web services
 
 ##### Ответы
 

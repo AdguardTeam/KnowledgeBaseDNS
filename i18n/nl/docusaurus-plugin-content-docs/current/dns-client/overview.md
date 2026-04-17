@@ -3,7 +3,6 @@ title: Overzicht
 sidebar_position: 1
 ---
 
-
 ## What is AdGuard DNS CLI?
 
 A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
@@ -30,7 +29,7 @@ Supported CPU architectures:
 
 1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
-   :::voorzichtig
+   :::caution
 
    On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 

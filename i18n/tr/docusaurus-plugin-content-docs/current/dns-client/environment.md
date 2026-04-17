@@ -3,42 +3,41 @@ title: Ortam
 sidebar_position: 3
 ---
 
-
-AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. Yapılandırmanın geri kalanı [yapılandırma dosyası][conf] içinde saklanır.
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-Günlük hedefi, dosyaya giden mutlak bir yol veya özel değerlerden biri olmalıdır. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Bu ortam değişkeni yapılandırma dosyasındaki [`log.output`][conf-log] alanını geçersiz kılar.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
-**Varsayılan:** **Ayarlanmamış.**
+**Default:** **Unset.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-Günlük girişlerinin biçimi. Yapılandırma dosyasıyla ilgili makaledeki [günlük yapılandırma açıklaması][conf-log] bölümüne bakın.
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Bu ortam değişkeni yapılandırma dosyasındaki [`log.format`][conf-log] alanını geçersiz kılar.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
-**Varsayılan:** **Ayarlanmamış.**
+**Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-`1` olarak ayarlandığında, günlük girdileri bir zaman damgasına sahip olur. `0` olarak ayarlandığında, günlük girdileri buna sahip olmaz.
+When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-Bu ortam değişkeni yapılandırma dosyasındaki [`log.timestamp`][conf-log] alanını geçersiz kılar.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
-**Varsayılan:** **Ayarlanmamış.**
+**Default:** **Unset.**
 
 ## `VERBOSE` {#VERBOSE}
 
-`1` olarak ayarlandığında ayrıntılı günlük kaydını etkinleştirir. `0` olarak ayarlandığında devre dışı bırakılır.
+When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-Bu ortam değişkeni yapılandırma dosyasındaki [`log.verbose`][conf-log] alanını geçersiz kılar.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
-**Varsayılan:** **Ayarlanmamış.**
+**Default:** **Unset.**

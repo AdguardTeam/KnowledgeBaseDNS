@@ -3,32 +3,31 @@ title: Genel Bakış
 sidebar_position: 1
 ---
 
-
 ## What is AdGuard DNS CLI?
 
 A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [AdGuard DNS]: https://adguard-dns.io
 
-## Hızlı başlangıç {#start}
+## Quick start {#start}
 
-Desteklenen işletim sistemleri:
+Supported operating systems:
 
 - Linux
 - macOS
 - Windows
 
-Desteklenen CPU mimarileri:
+Supported CPU architectures:
 
-- 64 bit ARM
+- 64-bit ARM
 - AMD64
 - i386
 
-## Başlarken {#start-basic}
+## Getting started {#start-basic}
 
-### Unix benzeri işletim sistemleri {#start-basic-unix}
+### Unix-like operating systems {#start-basic-unix}
 
-1. `.tar.gz` or `.zip` arşivini [sürümler sayfasından][releases] indirin ve açın.
+1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
    :::caution
 
@@ -36,21 +35,21 @@ Desteklenen CPU mimarileri:
 
    :::
 
-2. Çalıştırarak bir hizmet olarak yükleyin:
+2. Install it as a service by running:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. `config.yaml` yapılandırma dosyasını düzenleyin.
+3. Edit the configuration file `config.yaml`.
 
-4. Hizmeti başlatın:
+4. Start the service:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-Çalıştığını kontrol etmek için herhangi bir DNS kontrol yardımcı programını kullanın. Örneğin, `nslookup` kullanarak:
+To check that it works, use any DNS checking utility. For example, using `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -61,25 +60,25 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Sadece [sürümler sayfasından][releases] MSI yükleyicisini kullanarak indirin ve kurun.
+Just download and install using the MSI installer from the [releases page][releases].
 
-Çalıştığını kontrol etmek için herhangi bir DNS kontrol yardımcı programını kullanın. Örneğin, `nslookup.exe` kullanarak:
+To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Komut satırı seçenekleri {#opts}
+## Command-line options {#opts}
 
-Her seçenek, yapılandırma dosyası ve çevre tarafından sağlanan ilgili değeri geçersiz kılar.
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
-### Yardım {#opts-help}
+### Help {#opts-help}
 
 Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
-### Hizmet {#opts-service}
+### Service {#opts-service}
 
-`-s <value>` seçeneği işletim sistemi hizmeti eylemini belirtir. Olası değerler:
+Option `-s <value>` specifies the OS service action. Possible values are:
 
 - `install`: installs AdGuard DNS CLI as a service
 - `restart`: restarts the running AdGuard DNS CLI service
@@ -90,27 +89,27 @@ Option `-h` makes AdGuard DNS CLI print out a help message to standard output an
 
 ### Verbose {#opts-verbose}
 
-`-v` seçeneği ayrıntılı günlük çıktısını etkinleştirir.
+Option `-v` enables the verbose log output.
 
-### Sürüm {#opts-version}
+### Version {#opts-version}
 
 Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
-## Yapılandırma {#conf}
+## Configuration {#conf}
 
-### Dosya {#conf-file}
+### File {#conf-file}
 
-YAML yapılandırma dosyası [kendi makalesinde][conf] açıklanmıştır ve ayrıca `config.dist.yaml` örnek yapılandırma dosyası da bulunmaktadır.  Bazı yapılandırma parametreleri [ortam][env] kullanılarak da geçersiz kılınabilir.
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Çıkış kodları {#exit-codes}
+## Exit codes {#exit-codes}
 
-Farklı hata koşullarında görünebilecek birkaç farklı çıkış kodu vardır:
+There are a few different exit codes that may appear under different error conditions:
 
-- `0`: Başarıyla tamamlandı ve çıkıldı, hata yok.
+- `0`: Successfully finished and exited, no errors.
 
-- `1`: Dâhili hata, büyük olasılıkla yanlış yapılandırma.
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`: Hatalı komut satırı argümanı veya değeri.
+- `2`: Bad command-line argument or value.

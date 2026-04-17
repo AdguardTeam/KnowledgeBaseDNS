@@ -23,12 +23,23 @@ Sollte dies der Fall sein, wenden Sie sich bitte an den Support unter [support@a
 
 Die folgenden Anweisungen erklären, wie Sie eine Verbindung zum Gerät über eine **verknüpfte IP-Adresse** herstellen:
 
-1. Öffnen Sie Übersicht.
+1. Öffnen Sie die Übersicht.
 2. Fügen Sie ein neues Gerät hinzu oder öffnen Sie die Einstellungen eines zuvor verbundenen Geräts.
 3. Gehen Sie zu _DNS-Serveradressen verwenden_.
 4. Öffnen Sie _Einfache DNS-Serveradressen_ und verbinden Sie die verknüpfte IP.
 
    ![Verknüpfte IP-Adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
+
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. Öffnen Sie die Übersicht.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
 
 ## Dynamisches DNS: Warum es nützlich ist
 

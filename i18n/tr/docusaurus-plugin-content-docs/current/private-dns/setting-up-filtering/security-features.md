@@ -21,10 +21,10 @@ Sometimes this can cause false positives, but statistics show that in most cases
 AdGuard DNS, üçüncü taraf engelleme filtrelerinin eklenmesini destekler.
 Ek koruma için `security` olarak işaretli filtreleri etkinleştirin.
 
-Engel listeleri hakkında daha fazla bilgi edinmek için [ayrı makaleye bakın](/private-dns/setting-up-filtering/blocklists.md).
+To learn more about Blocklists, see [the separate article](/private-dns/setting-up-filtering/blocklists.md).
 
 ## Protection against typosquatting domains
 
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.
+Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ _Server settings_ ⭢ _User rules_ ⭢ _Add new rule_.

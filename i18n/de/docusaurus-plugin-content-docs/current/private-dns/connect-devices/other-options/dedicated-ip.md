@@ -21,7 +21,7 @@ Die nachstehenden Anweisungen erklären, wie Sie eine dedizierte IP mit dem Ger�
 
 ## AdGuard DNS über dedizierte IPs verbinden
 
-1. Öffnen Sie Übersicht.
+1. Öffnen Sie die Übersicht.
 2. Fügen Sie ein neues Gerät hinzu oder öffnen Sie die Einstellungen eines zuvor erstellten Geräts.
 3. Wählen Sie _Serveradressen verwenden_.
 4. Öffnen Sie anschließend _Einfache DNS-Serveradressen_.
@@ -30,3 +30,12 @@ Die nachstehenden Anweisungen erklären, wie Sie eine dedizierte IP mit dem Ger�
 7. Wenn Sie eine dedizierte IPv6-Adresse verwenden möchten, klicken Sie auf _Kopieren_.
    ![Adresse kopieren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Kopieren Sie die ausgewählte dedizierte Adresse und fügen Sie sie in die Gerätekonfigurationen ein.
+
+## How to unassign a dedicated IP
+
+1. Öffnen Sie die Übersicht.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

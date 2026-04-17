@@ -74,14 +74,14 @@ ls -d -l /opt/AdGuardHome
 ls -l /opt/AdGuardHome/AdGuardHome
 ```
 
-A reasonably secure output should look something like this:
+Une sortie raisonnablement sécurisée devrait ressembler à ceci :
 
 ```none
 drwxr-xr-x 4 root root 4096 Jan 1 12:00 /opt/AdGuardHome/
 -rwxr-xr-x 1 root root 29409280 Jan 1 12:00 /opt/AdGuardHome/AdGuardHome
 ```
 
-Note the lack of write permission for anyone but `root` as well as `root` ownership. If the permissions and/or ownership are not correct, run the following commands under `root`:
+Notez l'absence d'autorisation d'écriture pour quiconque sauf `root`, ainsi que la propriété `root`. Si les autorisations et/ou la propriété ne sont pas correctes, exécutez les commandes suivantes sous `root` :
 
 ```sh
 chmod 755 /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
@@ -90,6 +90,6 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 
 ### Windows
 
-The principle is the same on Windows: make sure that the AdGuard Home directory, typically `C:\Program Files\AdGuardHome`, and the `AdGuardHome.exe` binary have the permissions that would only allow regular users to read and execute/list them.
+Le principe est le même sur Windows : assurez-vous que le répertoire AdGuard Home, généralement `C:\Program Files\AdGuardHome`, et le binaire `AdGuardHome.exe` ont les autorisations qui n'autoriseraient que les utilisateurs réguliers à les lire et à les exécuter/lister.
 
-In the future we plan to release Windows builds as MSI installer files that make sure that this is performed automatically.
+Nous prévoyons de publier des versions Windows sous forme de fichiers installateurs MSI qui s'assureront que cela est effectué automatiquement.

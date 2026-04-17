@@ -19,13 +19,13 @@ Sie können die Syntax der AdGuard DNS-Filterregeln verwenden, um die Regeln fle
 
 Es gibt drei verschiedene Ansätze für die Erstellung von Hosts-Sperrlisten:
 
-- [Adblock-Syntax][]: der moderne Ansatz zum Schreiben von Filterregeln, der auf der Verwendung einer Untermenge der Adblock-Syntax basiert. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
 
 - [`/etc/hosts` syntax](#etc-hosts-syntax): Der alte, bewährte Ansatz, der die gleiche Syntax verwendet, die auch die Betriebssysteme für ihre hosts-Dateien verwenden.
 
 - [Domains-only-Syntax](#domains-only-syntax): eine einfache Liste von Domainnamen.
 
-Wenn Sie eine Sperrliste erstellen, empfehlen wir, die Syntax [im Stil von Adblock zu verwenden][]. Sie hat eine Reihe wichtiger Vorteile gegenüber der alten Syntax:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Sie hat eine Reihe wichtiger Vorteile gegenüber der alten Syntax:
 
 - **Größe der Sperrlisten.** Durch die Verwendung des Musterabgleichs können Sie eine einzige Regel anstelle von Hunderten von `/etc/hosts` Einträgen verwenden.
 
@@ -529,17 +529,16 @@ What it’s capable of:
 
 3. Bereinigt die resultierende Liste: entfernt Dubletten, entfernt ungültige Regeln und komprimiert die Liste.
 
-{/* local links */}
+{/*local links*/}
 
-
-{/* external links */}
-[Adblock-Syntax]: #adblock-style-syntax
-[im Stil von Adblock zu verwenden]: #adblock-style-syntax
+{/*external links*/}
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+
 [Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
+
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions

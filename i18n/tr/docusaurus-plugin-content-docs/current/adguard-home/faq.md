@@ -52,7 +52,7 @@ AdGuard Home checks both DNS requests and DNS responses to prevent an adblock ev
 
 Düz metin günlüklerinin (sorgu günlükleri ile karıştırılmamalıdır) varsayılan konumu işletim sistemine ve kurulum moduna bağlıdır:
 
-{/* TODO(a.garipov): Add more info about Docker; add links to tools. */}
+{/_TODO(a.garipov): Add more info about Docker; add links to tools._/}
 
 - **OpenWrt Linux:** `logread -e AdGuardHome` komutunu kullanın.
 

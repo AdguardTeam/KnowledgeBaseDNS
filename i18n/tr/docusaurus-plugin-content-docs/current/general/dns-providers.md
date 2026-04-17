@@ -1137,6 +1137,15 @@ These are DNS resolvers usually run by enthusiasts or small groups. While they m
 
 We won’t be able to proper monitor their availability. **Use them at your own risk.**
 
+### 18Bit DNS
+
+[18Bit DNS](https://www.18bit.cn) is a free, encrypted public DNS service for the Chinese region that has been operating for many years. Consisting of over 10 endpoints, it provides users in the China region with fast, secure, and private DNS services. Additionally, it has malware and phishing protection.
+
+| Protokol       | Adres                            |                                                                                                                                                                                                     |
+| -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
+| DNS-over-TLS   | `tls://dns.18bit.cn`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS)                         |
+
 ### AhaDNS
 
 [AhaDNS](https://ahadns.com/) A zero-logging and ad-blocking DNS service provided by Fredrik Pettersson.
@@ -1170,6 +1179,27 @@ Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimizatio
 | DNSCrypt, IPv4 | Ana makine: `2.dnscrypt-cert.dns.arapurayil.com` IP: `3.7.156.128` | [AdGuard'a ekle](sdns://AQMAAAAAAAAAEDMuNy4xNTYuMTI4Ojg0NDMgDXD9OSDJDwe2q9bi836PURTP14NLYS03RbDq6j891ZciMi5kbnNjcnlwdC1jZXJ0LmRucy5hcmFwdXJheWlsLmNvbQ)                                                                             |
 | DNS-over-HTTPS | Ana makine: `https://dns.arapurayil.com/dns-query`                 | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.arapurayil.com/dns-query&name=dns.arapurayil.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.arapurayil.com/dns-query&name=dns.arapurayil.com) |
 
+### ASTRACAT DNS
+
+[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+
+| Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `85.209.2.112`                                        | [AdGuard'a ekle](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
+| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
+| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
+
+### BlackMagicc DNS
+
+[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
+
+| Protokol       | Adres                                   |                                                                                                                                                                                                                               |
+| -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `103.70.12.129`                         | [AdGuard'a ekle](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                 |
+| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [AdGuard'a ekle](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
+| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
+| DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+
 ### Captnemo DNS
 
 [Captnemo DNS](https://captnemo.in/dnscrypt/) is a server running off of a Digital Ocean droplet in BLR1 region. Maintained by Abhay Rana aka Nemo.
@@ -1177,6 +1207,20 @@ Non-logging | Filters ads, trackers, phishing, etc. | DNSSEC | QNAME Minimizatio
 | Protokol       | Adres                                                             |                                                                                                                                                  |
 | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.captnemo.in` IP: `139.59.48.222:4434` | [AdGuard'a ekle](sdns://AQQAAAAAAAAAEjEzOS41OS40OC4yMjI6NDQzNCAFOt_yxaMpFtga2IpneSwwK6rV0oAyleham9IvhoceEBsyLmRuc2NyeXB0LWNlcnQuY2FwdG5lbW8uaW4) |
+
+### DNSGUARD
+
+[DNSGuard](https://dnsguard.pub) blocks ads, tracking, and malware and has a strict no-logging policy.
+
+| Protokol       | Adres                                |                                                                                                                                                                                                             |
+| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS 1, IPv4    | `62.192.153.242`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD)                                         |
+| DNS 2, IPv4    | `62.192.153.243`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD)                                         |
+| DNS 1, IPv6    | `2a0c:4ac1:29::2`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD)                                       |
+| DNS 2, IPv6    | `2a0c:4ac1:29::3`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD)                                       |
+| DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
+| DNS-over-TLS   | `tls://dns.dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
+| DNS-over-QUIC  | `quic://dns.dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
 
 ### DNS Forge
 
@@ -1279,6 +1323,28 @@ Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving b
 | DNS-over-HTTPS | `https://dns.marbledfennec.net/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dns.marbledfennec.net/dns-query&name=dns.marbledfennec.net) |
 | DNS-over-TLS   | `tls://dns.marbledfennec.net`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.marbledfennec.net&name=dns.marbledfennec.net)                         |
 
+### NWPS.fi DNS
+
+[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
+
+#### Standard
+
+Blocks ads, trackers, and malware
+
+| Protokol       | Adres                                 |                                                                                                                                                                                                                                 |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
+
+#### Kids
+
+Kids-friendly filter that also blocks ads, trackers, and malware
+
+| Protokol       | Adres                               |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
+| DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |
+
 ### OSZX DNS
 
 [OSZX DNS](https://dns.oszx.co/) is a small Ad-Blocking DNS hobby project.
@@ -1344,74 +1410,20 @@ These servers provide no ad blocking, keep no logs, and have DNSSEC enabled.
 
 #### DNS Server 1
 
-| Protokol       | Adres                                                       |                                                                                                                                                                                                         |
-| -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `45.76.113.31`                                              | [AdGuard'a ekle](adguard:add_dns_server?address=45.76.113.31&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=45.76.113.31&name=)                                                         |
-| DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [AdGuard'a ekle](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8)                                                                |
-| DNS-over-TLS   | `tls://dot.seby.io`                                         | [AdGuard'a ekle](adguard:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://tls://dot.seby.io&name=tls://dot.seby.io) |
+| Protokol       | Adres                                                       |                                                                                                                                                                                             |
+| -------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `45.76.113.31`                                              | [AdGuard'a ekle](adguard:add_dns_server?address=45.76.113.31&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=45.76.113.31&name=)                                             |
+| DNSCrypt, IPv4 | Sağlayıcı: `2.dnscrypt-cert.dns.seby.io` IP: `45.76.113.31` | [AdGuard'a ekle](sdns://AQcAAAAAAAAADDQ1Ljc2LjExMy4zMSAIVGh4i6eKXqlF6o9Fg92cgD2WcDvKQJ7v_Wq4XrQsVhsyLmRuc2NyeXB0LWNlcnQuZG5zLnNlYnkuaW8)                                                    |
+| DNS-over-TLS   | `tls://dot.seby.io`                                         | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.seby.io&name=tls://dot.seby.io), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.seby.io&name=tls://dot.seby.io) |
 
-### BlackMagicc DNS
+### uBlock DNS
 
-[BlackMagicc DNS](https://bento.me/blackmagicc) is a personal DNS server located in Vietnam and intended for personal and small-scale use. It features ad blocking, malware/phishing protection, adult content filter, and DNSSEC validation.
+uBlock DNS is an ad-blocking DNS service. It is free, open-source, and customizable. It includes an online dashboard that does not require an email address or password to access. uBlock DNS is not affiliated with uBlock Origin.
 
-| Protokol       | Adres                                   |                                                                                                                                                                                                                               |
-| -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `103.70.12.129`                         | [AdGuard'a ekle](adguard:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=103.70.12.129&name=BlackMagiccDNS)                                                 |
-| DNS, IPv6      | `2001:df4:4c0:1::399:1`                 | [AdGuard'a ekle](adguard:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2001:df4:4c0:1::399:1&name=BlackMagiccDNS)                                 |
-| DNS-over-QUIC  | `quic://rx.techomespace.com`            | [AdGuard'a ekle](adguard:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://rx.techomespace.com&name=BlackMagiccDNS)                       |
-| DNS-over-HTTPS | `https://rx.techomespace.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://rx.techomespace.com/dns-query&name=BlackMagiccDNS) |
+uBlock DNS does not provide public DNS addresses. To use it, you need to generate a personal account key and configure your own endpoint.
 
-### NWPS.fi DNS
+Example (without dashboard access):
 
-[NWPS.fi DNS](https://nwps.fi) provides DoH & DoT resolvers with two levels of filtering.
+`DoH: https://example.ublock.dns/`
 
-#### Standard
-
-Blocks ads, trackers, and malware
-
-| Protokol       | Adres                                 |                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://public.ns.nwps.fi/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://public.ns.nwps.fi/dns-query&name=public.ns.nwps.fi) |
-| DNS-over-TLS   | `tls://public.ns.nwps.fi`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://public.ns.nwps.fi&name=public.ns.nwps.fi)                         |
-
-#### Kids
-
-Kids-friendly filter that also blocks ads, trackers, and malware
-
-| Protokol       | Adres                               |                                                                                                                                                                                                                         |
-| -------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://kids.ns.nwps.fi/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://kids.ns.nwps.fi/dns-query&name=kids.ns.nwps.fi) |
-| DNS-over-TLS   | `tls://kids.ns.nwps.fi`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://kids.ns.nwps.fi&name=kids.ns.nwps.fi)                         |
-
-### ASTRACAT DNS
-
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
-
-| Protokol       | Adres                                                 |                                                                                                                                                                                                                                                                                                 |
-| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `85.209.2.112`                                        | [AdGuard'a ekle](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
-| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
-| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
-
-### DNSGUARD
-
-[DNSGuard](https://dnsguard.pub) blocks ads, tracking, and malware and has a strict no-logging policy.
-
-| Protokol       | Adres                                |                                                                                                                                                                                                             |
-| -------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS 1, IPv4    | `62.192.153.242`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.242&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.242&name=DNSGUARD)                                         |
-| DNS 2, IPv4    | `62.192.153.243`                     | [Add to AdGuard](adguard:add_dns_server?address=62.192.153.243&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=62.192.153.243&name=DNSGUARD)                                         |
-| DNS 1, IPv6    | `2a0c:4ac1:29::2`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::2&name=DNSGUARD)                                       |
-| DNS 2, IPv6    | `2a0c:4ac1:29::3`                    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:4ac1:29::3&name=DNSGUARD)                                       |
-| DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
-| DNS-over-TLS   | `tls://dns.dnsguard.pub`             | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
-| DNS-over-QUIC  | `quic://dns.dnsguard.pub`            | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
-
-### 18Bit DNS
-
-[18Bit DNS](https://www.18bit.cn) is a free, encrypted public DNS service for the Chinese region that has been operating for many years. Consisting of over 10 endpoints, it provides users in the China region with fast, secure, and private DNS services. Additionally, it has malware and phishing protection.
-
-| Protokol       | Adres                            |                                                                                                                                                                                                     |
-| -------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://doh.18bit.cn/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://doh.18bit.cn/dns-query&name=18bitDNS) |
-| DNS-over-TLS   | `tls://dns.18bit.cn`             | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dns.18bit.cn&name=18bitDNS)                         |
+> This is an example endpoint. To use uBlock DNS with full functionality, you need to create your own account key.

@@ -30,3 +30,12 @@ Níže uvedené pokyny vysvětlují, jak k zařízení připojit vyhrazenou IP a
 7. Pokud chcete použít vyhrazenou adresu IPv6, klikněte na _Kopírovat_.
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Zkopírujte a vložte vybranou vyhrazenou adresu do konfigurace zařízení.
+
+## How to unassign a dedicated IP
+
+1. Otevřete hlavní panel.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

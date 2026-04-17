@@ -64,21 +64,21 @@ Wenn die Sperrregeln Ihres Filters nicht mit den bestehenden Listen übereinstim
 Sie können auch Ihre eigenen Sperrregeln erstellen.
 Weitere Informationen finden Sie im [Artikel zu Benutzerregeln](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Benutzerdefinierte Blocklisten
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Wenn Sie eine bestimmte Blockliste zu AdGuard DNS hinzufügen möchten, können Sie diese über eine URL herunterladen.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Benutzerdefinierte Blockliste hinzufügen](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_de.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Öffnen Sie die Übersicht und klicken Sie im Menü auf der linken Seite auf _Server_
+2. Wählen Sie _Mein Server → Blocklisten_
+3. Klicken Sie im Abschnitt _Benutzerdefinierte_ auf _Blockliste hinzufügen_
+4. Geben Sie den Namen der Blockliste, deren URL und eine optionale Beschreibung ein und klicken Sie dann auf _Hinzufügen_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+Jedes Abonnement hat eine Begrenzung hinsichtlich der Gesamtzahl der Filterregeln: Einzellizenz – 1.000, Team – 5.000, Enterprise – 100.000. Diese Beschränkung besteht, weil Blocklisten auf DNS-Server heruntergeladen werden und eine unbegrenzte Größe der Blocklisten zu einer Überlastung der Server führen könnte, was möglicherweise Leistungsprobleme verursachen könnte.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Wenn eine benutzerdefinierte Blockliste das Limit überschreitet, wird sie **automatisch deaktiviert** und Sie erhalten eine entsprechende Benachrichtigung. Um eine neu hinzugefügte Blockliste zu aktivieren, die die Anzahl der Regeln überschreitet, müssen Sie entweder andere Blocklisten entfernen oder einen Wechsel auf ein Abonnement mit einer höheren Anzahl an Regeln vornehmen.

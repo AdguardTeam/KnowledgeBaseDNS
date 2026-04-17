@@ -57,3 +57,9 @@ sidebar_position: 5
 3. 「_リンクを生成する_」をクリックします。
    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. これで、リンクの生成が完了です。そのサーバーアドレスをコピーし、デバイス上の[AdGuard アプリ](https://adguard.com/welcome.html)内で使用してください。
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

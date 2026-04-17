@@ -3,54 +3,53 @@ title: Přehled
 sidebar_position: 1
 ---
 
+## What is AdGuard DNS CLI?
 
-## Co je AdGuard DNS CLI?
-
-Lehký multiplatformní klient DNS pro [AdGuard DNS]. Funguje jako DNS server, který předává požadavky DNS odpovídajícím odchozím řešitelům.
+A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [AdGuard DNS]: https://adguard-dns.io
 
-## Rychlé spuštění {#start}
+## Quick start {#start}
 
-Podporované operační systémy:
+Supported operating systems:
 
 - Linux
 - macOS
 - Windows
 
-Podporované architektury CPU:
+Supported CPU architectures:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Začínáme {#start-basic}
+## Getting started {#start-basic}
 
-### Operační systémy podobné Unixu {#start-basic-unix}
+### Unix-like operating systems {#start-basic-unix}
 
-1. Stáhněte a rozbalte archiv `.tar.gz` nebo `.zip` ze [stránky vydání][releases].
+1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
    :::caution
 
-   V macOS je zásadní, aby globálně nainstalované démony vlastnil `root` (viz dokumentace [`launchd`][launchd-requirements]), takže spustitelný soubor `adguarddns-cli` musí být umístěn v adresáři `/Applications/` nebo jeho podadresář.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
-2. Nainstalujte jej jako službu spuštěním:
+2. Install it as a service by running:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. Upravte konfigurační soubor `config.yaml`.
+3. Edit the configuration file `config.yaml`.
 
-4. Spusťte službu:
+4. Start the service:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-Chcete-li zkontrolovat, zda funguje, použijte libovolný nástroj pro kontrolu DNS. Například pomocí `nslookup`:
+To check that it works, use any DNS checking utility. For example, using `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -61,56 +60,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Stačí stáhnout a nainstalovat pomocí instalačního programu MSI ze [stránky vydání][releases].
+Just download and install using the MSI installer from the [releases page][releases].
 
-Chcete-li zkontrolovat, zda funguje, použijte libovolný nástroj pro kontrolu DNS. Například pomocí `nslookup.exe`:
+To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Možnosti příkazového řádku {#opts}
+## Command-line options {#opts}
 
-Každá volba přepíše odpovídající hodnotu uvedenou v konfiguračním souboru a prostředí.
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
-### Nápověda {#opts-help}
+### Help {#opts-help}
 
-Možnost `-h` způsobí, že AdGuard DNS CLI vytiskne zprávu nápovědy na standardní výstup a ukončí se s kódem stavu úspěchu.
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
-### Služba {#opts-service}
+### Service {#opts-service}
 
-Možnost `-s <value>` určuje akci služby operačního systému. Přípustné hodnoty jsou:
+Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`: nainstaluje AdGuard DNS CLI jako službu
-- `restart`: restartuje běžící službu AdGuard DNS CLI
-- `start`: spustí nainstalovanou službu AdGuard DNS CLI
-- `status`: zobrazí stav nainstalované služby AdGuard DNS CLI
-- `stop`: ukončí spuštěný AdGuard DNS CLI
-- `uninstall`: odinstaluje službu AdGuard DNS CLI
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
 ### Verbose {#opts-verbose}
 
-Možnost `-v` umožňuje podrobný výstup protokolu.
+Option `-v` enables the verbose log output.
 
-### Verze {#opts-version}
+### Version {#opts-version}
 
-Možnost `--version` způsobí, že AdGuard DNS CLI vypíše verzi aplikace na standardní výstup a ukončí se stavovým kódem úspěchu.
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
-## Konfigurace {#conf}
+## Configuration {#conf}
 
-### Soubor {#conf-file}
+### File {#conf-file}
 
-Konfigurační soubor YAML je popsán ve [vlastním článku][conf] a k dispozici je také ukázkový konfigurační soubor `config.dist.yaml`.  Některé konfigurační parametry lze také nadefinovat pomocí příkazu [environment][env].
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Výstupní kódy {#exit-codes}
+## Exit codes {#exit-codes}
 
-Existuje několik různých kódů ukončení, které se mohou objevit při různých chybových stavech:
+There are a few different exit codes that may appear under different error conditions:
 
-- `0`: Úspěšně dokončeno a ukončeno, žádné chyby.
+- `0`: Successfully finished and exited, no errors.
 
-- `1`: Interní chyba, pravděpodobně chybná konfigurace.
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`: Chybný argument nebo hodnota příkazového řádku.
+- `2`: Bad command-line argument or value.

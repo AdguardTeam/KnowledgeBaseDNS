@@ -52,7 +52,7 @@ AdGuard Home überprüft sowohl DNS-Anfragen als auch DNS-Antworten, um eine Tec
 
 Der Standardspeicherort der Klartextprotokolle (nicht zu verwechseln mit den Abfrageprotokollen) hängt vom Betriebssystem und dem Installationsmodus ab:
 
-{/* TODO(a.garipov): Add more info about Docker; add links to tools. */}
+{/_TODO(a.garipov): Add more info about Docker; add links to tools._/}
 
 - **OpenWrt Linux:** verwenden Sie den Befehl `logread -e AdGuardHome`.
 

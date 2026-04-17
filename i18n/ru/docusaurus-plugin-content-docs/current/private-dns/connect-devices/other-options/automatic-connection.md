@@ -57,3 +57,9 @@ sidebar_position: 5
 3. Нажмите _Сгенерировать ссылку_.
    ![Сгенерировать ссылку \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Вы успешно сгенерировали ссылку, теперь скопируйте адрес сервера и используйте его в одном из [приложений AdGuard](https://adguard.com/welcome.html)
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

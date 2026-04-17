@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/overview.md). Besøg [denne side](private-dns/api/changelog.md)for at se den komplette AdGuard DNS API-ændringslog.
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Aktuel version: 1.10
 
@@ -21,7 +20,7 @@ Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/ove
 
 ##### Resumé
 
-Henter kontokvoter
+Gets account limits
 
 ##### Svar
 
@@ -35,7 +34,7 @@ Henter kontokvoter
 
 ##### Resumé
 
-Oplister dedikerede IPv4-adresser
+Lists dedicated IPv4 addresses
 
 ##### Svar
 
@@ -47,7 +46,7 @@ Oplister dedikerede IPv4-adresser
 
 ##### Resumé
 
-Tildeler ny IPv4
+Allocates new IPv4
 
 ##### Svar
 
@@ -62,7 +61,7 @@ Tildeler ny IPv4
 
 ##### Resumé
 
-Oplist enheder
+Lists devices
 
 ##### Svar
 
@@ -74,7 +73,7 @@ Oplist enheder
 
 ##### Resumé
 
-Opretter en ny enhed
+Creates a new device
 
 ##### Svar
 
@@ -90,7 +89,7 @@ Opretter en ny enhed
 
 ##### Resumé
 
-Fjerner en enhed
+Removes a device
 
 ##### Parametre
 
@@ -109,7 +108,7 @@ Fjerner en enhed
 
 ##### Resumé
 
-Henter en eksisterede enhed jf. ID
+Gets an existing device by ID
 
 ##### Parametre
 
@@ -128,7 +127,7 @@ Henter en eksisterede enhed jf. ID
 
 ##### Resumé
 
-Opdaterer en eksisterende enhed
+Updates an existing device
 
 ##### Parametre
 
@@ -150,7 +149,7 @@ Opdaterer en eksisterende enhed
 
 ##### Resumé
 
-Oplist dedikerede IPv4- og IPv6-adresser til en enhed
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parametre
 
@@ -170,7 +169,7 @@ Oplist dedikerede IPv4- og IPv6-adresser til en enhed
 
 ##### Resumé
 
-Fjern linket dedikeret IPv4 fra enheden
+Unlink dedicated IPv4 from the device
 
 ##### Parametre
 
@@ -189,7 +188,7 @@ Fjern linket dedikeret IPv4 fra enheden
 
 ##### Resumé
 
-Link dedikeret IPv4 til enheden
+Link dedicated IPv4 to the device
 
 ##### Parametre
 
@@ -212,7 +211,7 @@ Link dedikeret IPv4 til enheden
 
 ##### Resumé
 
-Henter DNS-over-HTTPS .mobileconfig-filen.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parametre
 
@@ -235,7 +234,7 @@ Henter DNS-over-HTTPS .mobileconfig-filen.
 
 ##### Resumé
 
-Generér og angiv ny DNS-over-HTTPS adgangskode
+Generate and set new DNS-over-HTTPS password
 
 ##### Parametre
 
@@ -256,7 +255,7 @@ Generér og angiv ny DNS-over-HTTPS adgangskode
 
 ##### Resumé
 
-Henter DNS-over-TLS .mobileconfig-filen.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parametre
 
@@ -279,7 +278,7 @@ Henter DNS-over-TLS .mobileconfig-filen.
 
 ##### Resumé
 
-Opdaterer enhedsindstillinger
+Updates device settings
 
 ##### Parametre
 
@@ -301,11 +300,11 @@ Opdaterer enhedsindstillinger
 
 ##### Resumé
 
-Viser DNS-servere tilhørende brugeren.
+Lists DNS servers that belong to the user.
 
 ##### Beskrivelse
 
-Viser DNS-servere tilhørende brugeren. Som standard er der mindst én standardserver.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Svar
 
@@ -317,11 +316,11 @@ Viser DNS-servere tilhørende brugeren. Som standard er der mindst én standards
 
 ##### Resumé
 
-Opretter en ny DNS-server
+Creates a new DNS server
 
 ##### Beskrivelse
 
-Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers oprettes DNS-serveren med standardindstillinger.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Svar
 
@@ -337,11 +336,11 @@ Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers opret
 
 ##### Resumé
 
-Fjerner en DNS-server
+Removes a DNS server
 
 ##### Beskrivelse
 
-Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til standard DNS-serveren. Sletning af standard DNS-serveren er forbudt.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parametre
 
@@ -360,7 +359,7 @@ Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til stan
 
 ##### Resumé
 
-Henter en eksisterede DNS-server jf. ID
+Gets an existing DNS server by ID
 
 ##### Parametre
 
@@ -379,7 +378,7 @@ Henter en eksisterede DNS-server jf. ID
 
 ##### Resumé
 
-Opdaterer en eksisterende DNS-server
+Updates an existing DNS server
 
 ##### Parametre
 
@@ -401,7 +400,7 @@ Opdaterer en eksisterende DNS-server
 
 ##### Resumé
 
-Opdaterer DNS-serverindstillinger
+Updates DNS server settings
 
 ##### Parametre
 
@@ -423,7 +422,7 @@ Opdaterer DNS-serverindstillinger
 
 ##### Resumé
 
-Henter filterliste
+Gets filter lists
 
 ##### Svar
 
@@ -437,7 +436,7 @@ Henter filterliste
 
 ##### Resumé
 
-Genererer Access og Refresh tokener
+Generates Access and Refresh token
 
 ##### Svar
 
@@ -455,7 +454,7 @@ null
 
 ##### Resumé
 
-Rydder forespørgselslog
+Clears query log
 
 ##### Svar
 
@@ -467,7 +466,7 @@ Rydder forespørgselslog
 
 ##### Resumé
 
-Henter forespørgselslog
+Gets query log
 
 ##### Parametre
 
@@ -496,7 +495,7 @@ Henter forespørgselslog
 
 ##### Resumé
 
-Ophæver et Refresh-token
+Revokes a Refresh Token
 
 ##### Parametre
 
@@ -518,7 +517,7 @@ null
 
 ##### Resumé
 
-Henter kategoristatistik
+Gets categories statistics
 
 ##### Parametre
 
@@ -542,7 +541,7 @@ Henter kategoristatistik
 
 ##### Resumé
 
-Henter virksomhedsstatistik
+Gets companies statistics
 
 ##### Parametre
 
@@ -566,7 +565,7 @@ Henter virksomhedsstatistik
 
 ##### Resumé
 
-Henter detaljerede virksomhedsstatistikker
+Gets detailed companies statistics
 
 ##### Parametre
 
@@ -591,7 +590,7 @@ Henter detaljerede virksomhedsstatistikker
 
 ##### Resumé
 
-Henter landestatistikker
+Gets countries statistics
 
 ##### Parametre
 
@@ -615,7 +614,7 @@ Henter landestatistikker
 
 ##### Resumé
 
-Henter enhedsstatistikker
+Gets devices statistics
 
 ##### Parametre
 
@@ -639,7 +638,7 @@ Henter enhedsstatistikker
 
 ##### Resumé
 
-Henter domænestatistikker
+Gets domains statistics
 
 ##### Parametre
 
@@ -663,7 +662,7 @@ Henter domænestatistikker
 
 ##### Resumé
 
-Henter tidsstatistikker
+Gets time statistics
 
 ##### Parametre
 
@@ -687,7 +686,7 @@ Henter tidsstatistikker
 
 ##### Resumé
 
-Viser webtjenester
+Lists web services
 
 ##### Svar
 

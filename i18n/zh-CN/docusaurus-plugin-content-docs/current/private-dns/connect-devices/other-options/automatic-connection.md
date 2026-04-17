@@ -57,3 +57,9 @@ sidebar_position: 5
 3. 点击「_生成链接_」。
    ![生成链接 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. 链接生成成功。请复制服务器地址并在 [AdGuard 应用程序](https://adguard.com/welcome.html)中使用它。
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

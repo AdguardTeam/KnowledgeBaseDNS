@@ -5,10 +5,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 3
 ---
 
-{/*
-    API info is from here:
-    https://api.adguard-dns.io/static/api/API.md
-*/}
+{/* API info is from here: https://api.adguard-dns.io/static/api/API.md */}
 
 Adguard DNS는 앱을 통합하는데 사용할 수 있는 REST API를 제공합니다.
 

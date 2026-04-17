@@ -17,7 +17,7 @@ Diese Funktion wird sowohl vom [AdGuard DNS Client](/dns-client/overview.md) als
 
 :::
 
-1. Öffnen Sie Übersicht.
+1. Öffnen Sie die Übersicht.
 2. Fügen Sie ein neues Gerät hinzu oder öffnen Sie die Einstellungen eines zuvor erstellten Geräts.
 3. Klicken Sie auf _DNS-Serveradressen verwenden_ und öffnen Sie den Abschnitt _Verschlüsselte DNS-Serveradressen_.
 4. Konfigurieren Sie DNS-over-HTTPS mit Authentifizierung nach Belieben.

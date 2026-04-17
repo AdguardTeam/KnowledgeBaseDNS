@@ -3,12 +3,11 @@ title: 配置文件
 sidebar_position: 2
 ---
 
+See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-完整的 [YAML][yaml] 配置文件示例请参考配置文件 [`config.dist.yml`][dist]。
-
-{/*
-    TODO(a.garipov): Find ways to add IDs to individual list items.
-*/}
+{/\*
+TODO(a.garipov): Find ways to add IDs to individual list items.
+\*/}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
@@ -246,4 +245,4 @@ sidebar_position: 2
 
 - `verbose`：指定是否启用详细日志输出。
 
-  **示例：**`false`
+  **示例：** `false`

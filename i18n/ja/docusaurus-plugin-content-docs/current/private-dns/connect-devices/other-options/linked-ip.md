@@ -30,6 +30,17 @@ sidebar_position: 3
 
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. AdGuard DNSの「ダッシュボード」を開きます。
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## 「ダイナミック（動的）DNS」が便利な理由
 
 デバイスがネットワークに接続するたびに、新しい動的IPアドレスが取得されます。 デバイスが切断されると、DHCPサーバーは解放されたIPアドレスをネットワーク上の別のデバイスに割り当てることができます。 つまり、動的IPアドレスは頻繁かつ予測不能に変更します。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.

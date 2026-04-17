@@ -38,7 +38,6 @@ Here is a simple comparison of features available in public and private AdGuard 
 | -                                | Detailed query log                                                                             |
 | -                                | Parental control                                                                               |
 
-
 {/* ## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
