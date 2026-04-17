@@ -30,3 +30,12 @@ Aşağıdaki talimatlar cihaza özel IP'nin nasıl bağlanacağını açıklamak
 7. Özel bir IPv6 adresi kullanmak istiyorsanız, _Kopyala_ öğesine tıklayın.
    ![Adresi kopyala \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Seçili özel adresi kopyalayıp cihaz yapılandırmalarına yapıştırın.
+
+## How to unassign a dedicated IP
+
+1. Panoyu açın.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

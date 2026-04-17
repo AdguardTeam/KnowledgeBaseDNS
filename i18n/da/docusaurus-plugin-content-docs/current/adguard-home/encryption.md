@@ -23,7 +23,9 @@ Denne guide forklarer, hvordan en krypteret DNS-server opsættes med AdGuard Hom
 
 Formålet med at sikre DNS-trafikken er at sikre den mod tredjeparter, som kan analysere eller ændre den, f.eks. fra ISP.
 
-{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 Det betyder, at en server med en offentlig dedikeret IP-adresse er nødvendig. Der er masser af udbydere af billige cloud-servere: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode] mv. Vælg blot en, opret en cloudserver dér, og [installér AdGuard Home](adguard-home/getting-started.md) på din server.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html
@@ -339,7 +343,7 @@ Sørg for, at de aktuelle TLS-indstillinger er gyldige, og at kryptering er akti
 
 Sdan genererer man et DNSCrypt-stempel og tjekker installationen:
 
-1. Gå til [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
+1. Go to [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Indtast dataene fra den relevante DNSCrypt-opsætningsfil. _Offentlige udbydernøgle_ er værdien af feltet `public_key` i DNSCrypt-opsætningsfilen.
 

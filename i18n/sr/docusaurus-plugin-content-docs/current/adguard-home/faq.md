@@ -52,7 +52,9 @@ AdGuard Home checks both DNS requests and DNS responses to prevent an adblock ev
 
 The default location of the plain-text logs (not to be confused with the query logs) depends on the operating system and installation mode:
 
-{/* TODO(a.garipov): Add more info about Docker; add links to tools. */}
+{/*
+TODO(a.garipov): Add more info about Docker; add links to tools.
+*/}
 
 - **OpenWrt Linux:** use the `logread -e AdGuardHome` command.
 

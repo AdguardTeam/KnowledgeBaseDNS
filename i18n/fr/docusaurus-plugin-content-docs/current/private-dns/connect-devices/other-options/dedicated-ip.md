@@ -30,3 +30,12 @@ Les instructions ci-dessous expliquent comment connecter une IP dédiée à l'ap
 7. Si vous souhaitez utiliser une adresse IPv6 dédiée, cliquez sur _Copier_.
    ![Copier l'adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copiez et collez l'adresse dédiée sélectionnée dans les configurations de l'appareil.
+
+## How to unassign a dedicated IP
+
+1. Ouvrez le tableau de bord.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

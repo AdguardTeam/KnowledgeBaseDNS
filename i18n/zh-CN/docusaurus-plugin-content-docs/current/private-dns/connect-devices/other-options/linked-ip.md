@@ -30,6 +30,17 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
    ![关联 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. 打开仪表盘。
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## 动态 DNS：为什么有用
 
 每次设备连接到网络时，它都会获得一个新的动态 IP 地址。 当设备断开连接时，DHCP 协议服务器可以将释放的 IP 地址分配给网络上的另一台设备。 这意味着动态 IP 地址经常变化，而用户无法预测变化地址的时间。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.

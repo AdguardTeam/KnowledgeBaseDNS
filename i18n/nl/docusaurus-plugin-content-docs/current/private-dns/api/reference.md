@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Dit artikel bevat documentatie voor [AdGuard DNS API](private-dns/api/overview.md). Ga voor de volledige AdGuard DNS API-changelog naar [deze pagina](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Huidige versie: 1.10
 
@@ -35,7 +34,7 @@ Gets account limits
 
 ##### Summary
 
-Geeft een lijst met toegewezen IPv4-adressen
+Lists dedicated IPv4 addresses
 
 ##### Responses
 
@@ -47,7 +46,7 @@ Geeft een lijst met toegewezen IPv4-adressen
 
 ##### Summary
 
-Wijst nieuwe IPv4 toe
+Allocates new IPv4
 
 ##### Responses
 

@@ -3,54 +3,53 @@ title: Обзор
 sidebar_position: 1
 ---
 
+## What is AdGuard DNS CLI?
 
-## Что такое AdGuard DNS CLI?
-
-Кроссплатформенный облегчённый DNS-клиент для [AdGuard DNS]. Он работает как DNS-сервер, перенаправляющий DNS-запросы соответствующим upstream-резолверам.
+A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [AdGuard DNS]: https://adguard-dns.io
 
-## Быстрый старт {#start}
+## Quick start {#start}
 
-Поддерживаемые операционные системы:
+Supported operating systems:
 
 - Linux
 - macOS
 - Windows
 
-Поддерживаемые архитектуры процессоров:
+Supported CPU architectures:
 
-- 64-разрядный ARM
+- 64-bit ARM
 - AMD64
 - i386
 
-## Начало работы {#start-basic}
+## Getting started {#start-basic}
 
-### Unix-подобные операционные системы {#start-basic-unix}
+### Unix-like operating systems {#start-basic-unix}
 
-1. Скачайте и распакуйте архив `.tar.gz` или `.zip` [со страницы релизов][releases].
+1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
    :::caution
 
-   На macOS очень важно, чтобы глобально установленные демоны принадлежали `root` (см. документацию [`launchd`][launchd-requirements]), поэтому исполняемый файл `AdGuardDNSClient` должен быть помещён в директорию `/Applications/` или её поддиректорию.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
-2. Установите его как службу, выполнив:
+2. Install it as a service by running:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. Отредактируйте файл конфигурации `config.yaml`.
+3. Edit the configuration file `config.yaml`.
 
-4. Запустите службу:
+4. Start the service:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-Чтобы убедиться, что он работает, используйте любую утилиту проверки DNS. Например, с помощью `nslookup`:
+To check that it works, use any DNS checking utility. For example, using `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -61,56 +60,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Просто скачайте и установите с помощью установщика MSI со страницы [релизы][releases].
+Just download and install using the MSI installer from the [releases page][releases].
 
-Чтобы убедиться, что он работает, используйте любую утилиту проверки DNS. Например, с помощью `nslookup.exe`:
+To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Параметры командной строки {#opts}
+## Command-line options {#opts}
 
-Каждый параметр переопределяет соответствующее значение, предоставленное файлом конфигурации и средой.
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
-### Справка {#opts-help}
+### Help {#opts-help}
 
-Опция `-h` заставляет AdGuard DNS CLI выводить справочное сообщение на стандартный вывод и завершать работу с кодом успешного выполнения.
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
-### Сервис {#opts-service}
+### Service {#opts-service}
 
-Параметр `-s <value>` определяет действие службы ОС. Возможные значения:
+Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`: устанавливает AdGuard DNS CLI в качестве службы
-- `restart`: перезапускает запущенную службу AdGuard DNS CLI
-- `start`: запускает установленную службу AdGuard DNS CLI
-- `status`: показывает статус установленной службы AdGuard DNS CLI
-- `stop`: останавливает запущенный AdGuard DNS CLI
-- `uninstall`: удаляет службу AdGuard DNS CLI
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
-### Подробно {#opts-verbose}
+### Verbose {#opts-verbose}
 
-Параметр `-v` включает подробный вывод логов.
+Option `-v` enables the verbose log output.
 
-### Версия {#opts-version}
+### Version {#opts-version}
 
-Параметр `--version` заставляет AdGuard DNS CLI вывести версию приложения в стандартный вывод (standard output) и завершить работу с кодом успешного завершения.
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
-## Конфигурация {#conf}
+## Configuration {#conf}
 
-### Файл {#conf-file}
+### File {#conf-file}
 
-Конфигурационный файл YAML описан [в отдельной статье][conf], там же есть пример конфигурационного файла `config.dist.yaml`.  Некоторые параметры конфигурации также можно переопределить с помощью [среды][env].
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Коды выхода {#exit-codes}
+## Exit codes {#exit-codes}
 
-Существует несколько кодов выхода, которые могут появляться при различных условиях ошибки:
+There are a few different exit codes that may appear under different error conditions:
 
-- `0`: успешное завершение и выход, ошибок нет.
+- `0`: Successfully finished and exited, no errors.
 
-- `1`: внутренняя ошибка, скорее всего, неправильная конфигурация.
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`: неверный аргумент или значение командной строки.
+- `2`: Bad command-line argument or value.

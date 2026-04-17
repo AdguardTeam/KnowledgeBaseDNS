@@ -6,8 +6,8 @@ toc_max_heading_level: 3
 ---
 
 {/*
-    Changelog is from here:
-    https://api.adguard-dns.io/static/api/CHANGELOG.md
+Changelog is from here:
+https://api.adguard-dns.io/static/api/CHANGELOG.md
 */}
 
 Este artigo contém o registro de alterações para a [API do AdGuard DNS](private-dns/api/overview.md).

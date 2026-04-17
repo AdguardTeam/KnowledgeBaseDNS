@@ -30,3 +30,12 @@ The instructions below explain how to connect a dedicated IP to the device:
 7. If you want to use a dedicated IPv6 address, click _Copy_.
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Copy and paste the selected dedicated address into the device configurations.
+
+## Hoe een toegewezen IP-adres te ontkoppelen
+
+1. Open Dashboard.
+2. Ga naar de instellingen van je apparaat.
+3. Ga naar _Standaard DNS-serveradressen_.
+4. Onder _Toegewezen IPv4-adressen_, klik op _Beheren_.
+5. Klik in het pop-upvenster op _Toewijzing ongedaan maken_ naast het IP-adres dat je wilt verwijderen.
+   ![Toewijzing opheffen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

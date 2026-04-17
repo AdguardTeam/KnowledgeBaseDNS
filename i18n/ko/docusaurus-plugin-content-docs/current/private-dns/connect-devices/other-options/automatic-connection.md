@@ -57,3 +57,9 @@ sidebar_position: 5
 3. **링크 생성**을 클릭합니다.
    ![링크 생성 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. 링크를 성공적으로 생성했으면 이제 서버 주소를 복사하여 [AdGuard 앱](https://adguard.com/welcome.html) 중 하나에서 사용합니다.
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

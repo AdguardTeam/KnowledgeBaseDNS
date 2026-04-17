@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Dieser Artikel enthält die Dokumentation für die [AdGuard DNS-API](private-dns/api/overview.md). Das vollständige Änderungsprotokoll der AdGuard DNS-API finden Sie auf [dieser Seite](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Aktuelle Version: 1.9
 
@@ -21,7 +20,7 @@ Dieser Artikel enthält die Dokumentation für die [AdGuard DNS-API](private-dns
 
 ##### Zusammenfassung
 
-Abrufen von Kontobeschränkungen
+Gets account limits
 
 ##### Antworten
 
@@ -35,7 +34,7 @@ Abrufen von Kontobeschränkungen
 
 ##### Zusammenfassung
 
-Liste der dedizierten IPv4-Adressen
+Lists dedicated IPv4 addresses
 
 ##### Antworten
 
@@ -47,7 +46,7 @@ Liste der dedizierten IPv4-Adressen
 
 ##### Zusammenfassung
 
-Zuteilung neuer IPv4
+Allocates new IPv4
 
 ##### Antworten
 
@@ -62,7 +61,7 @@ Zuteilung neuer IPv4
 
 ##### Zusammenfassung
 
-Listet Geräte auf
+Lists devices
 
 ##### Antworten
 
@@ -74,7 +73,7 @@ Listet Geräte auf
 
 ##### Zusammenfassung
 
-Erstellt ein neues Gerät
+Creates a new device
 
 ##### Antworten
 
@@ -90,7 +89,7 @@ Erstellt ein neues Gerät
 
 ##### Zusammenfassung
 
-Entfernt ein Gerät
+Removes a device
 
 ##### Parameter
 
@@ -109,7 +108,7 @@ Entfernt ein Gerät
 
 ##### Zusammenfassung
 
-Ruft ein vorhandenes Gerät nach ID ab
+Gets an existing device by ID
 
 ##### Parameter
 
@@ -128,7 +127,7 @@ Ruft ein vorhandenes Gerät nach ID ab
 
 ##### Zusammenfassung
 
-Aktualisiert ein vorhandenes Gerät
+Updates an existing device
 
 ##### Parameter
 
@@ -150,7 +149,7 @@ Aktualisiert ein vorhandenes Gerät
 
 ##### Zusammenfassung
 
-Liste der dedizierten IPv4- und IPv6-Adressen für ein Gerät
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parameter
 
@@ -170,7 +169,7 @@ Liste der dedizierten IPv4- und IPv6-Adressen für ein Gerät
 
 ##### Zusammenfassung
 
-Dedizierte IPv4-Verbindung vom Gerät trennen
+Unlink dedicated IPv4 from the device
 
 ##### Parameter
 
@@ -189,7 +188,7 @@ Dedizierte IPv4-Verbindung vom Gerät trennen
 
 ##### Zusammenfassung
 
-Dedizierte IPv4-Verknüpfung mit dem Gerät
+Link dedicated IPv4 to the device
 
 ##### Parameter
 
@@ -212,7 +211,7 @@ Dedizierte IPv4-Verknüpfung mit dem Gerät
 
 ##### Zusammenfassung
 
-Ruft die DNS-over-HTTPS .mobileconfig-Datei ab.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parameter
 
@@ -235,7 +234,7 @@ Ruft die DNS-over-HTTPS .mobileconfig-Datei ab.
 
 ##### Zusammenfassung
 
-Generieren und Festlegen eines neuen DNS-over-HTTPS-Passworts
+Generate and set new DNS-over-HTTPS password
 
 ##### Parameter
 
@@ -256,7 +255,7 @@ Generieren und Festlegen eines neuen DNS-over-HTTPS-Passworts
 
 ##### Zusammenfassung
 
-Ruft die DNS-over-TLS .mobileconfig-Datei ab.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parameter
 
@@ -279,7 +278,7 @@ Ruft die DNS-over-TLS .mobileconfig-Datei ab.
 
 ##### Zusammenfassung
 
-Aktualisiert die Geräteeinstellungen
+Updates device settings
 
 ##### Parameter
 
@@ -301,11 +300,11 @@ Aktualisiert die Geräteeinstellungen
 
 ##### Zusammenfassung
 
-Listet die DNS-Server auf, die dem Benutzer zugeordnet sind.
+Lists DNS servers that belong to the user.
 
 ##### Beschreibung
 
-Listet die DNS-Server auf, die dem Benutzer zugeordnet sind. Standardmäßig gibt es mindestens einen Standardserver.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Antworten
 
@@ -317,11 +316,11 @@ Listet die DNS-Server auf, die dem Benutzer zugeordnet sind. Standardmäßig gib
 
 ##### Zusammenfassung
 
-Erstellt einen neuen DNS-Server
+Creates a new DNS server
 
 ##### Beschreibung
 
-Erstellt einen neuen DNS-Server. Sie können benutzerdefinierte Einstellungen vornehmen, andernfalls wird der DNS-Server mit den Standardeinstellungen erstellt.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Antworten
 
@@ -337,11 +336,11 @@ Erstellt einen neuen DNS-Server. Sie können benutzerdefinierte Einstellungen vo
 
 ##### Zusammenfassung
 
-Entfernt einen DNS-Server
+Removes a DNS server
 
 ##### Beschreibung
 
-Entfernt einen DNS-Server. Alle Geräte, die mit diesem DNS-Server verbunden sind, werden auf den Standard-DNS-Server verschoben. Das Löschen des Standard-DNS-Servers ist nicht zulässig.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parameter
 
@@ -360,7 +359,7 @@ Entfernt einen DNS-Server. Alle Geräte, die mit diesem DNS-Server verbunden sin
 
 ##### Zusammenfassung
 
-Ruft einen vorhandenen DNS-Server nach ID ab
+Gets an existing DNS server by ID
 
 ##### Parameter
 
@@ -379,7 +378,7 @@ Ruft einen vorhandenen DNS-Server nach ID ab
 
 ##### Zusammenfassung
 
-Aktualisiert einen vorhandenen DNS-Server
+Updates an existing DNS server
 
 ##### Parameter
 
@@ -401,7 +400,7 @@ Aktualisiert einen vorhandenen DNS-Server
 
 ##### Zusammenfassung
 
-Aktualisiert DNS-Server-Einstellungen
+Updates DNS server settings
 
 ##### Parameter
 
@@ -423,7 +422,7 @@ Aktualisiert DNS-Server-Einstellungen
 
 ##### Zusammenfassung
 
-Abrufen von Filterlisten
+Gets filter lists
 
 ##### Antworten
 
@@ -437,7 +436,7 @@ Abrufen von Filterlisten
 
 ##### Zusammenfassung
 
-Erzeugt Zugriffs- und Aktualisierungs-Token
+Generates Access and Refresh token
 
 ##### Antworten
 
@@ -455,7 +454,7 @@ null
 
 ##### Zusammenfassung
 
-Leert das Anfragenprotokoll
+Clears query log
 
 ##### Antworten
 
@@ -467,7 +466,7 @@ Leert das Anfragenprotokoll
 
 ##### Zusammenfassung
 
-Ruft das Anfragenprotokoll ab
+Gets query log
 
 ##### Parameter
 
@@ -496,7 +495,7 @@ Ruft das Anfragenprotokoll ab
 
 ##### Zusammenfassung
 
-Widerruft ein Aktualisierungs-Token
+Revokes a Refresh Token
 
 ##### Parameter
 
@@ -518,7 +517,7 @@ null
 
 ##### Zusammenfassung
 
-Abrufen von Kategorienstatistiken
+Gets categories statistics
 
 ##### Parameter
 
@@ -542,7 +541,7 @@ Abrufen von Kategorienstatistiken
 
 ##### Zusammenfassung
 
-Abrufen von Unternehmensstatistiken
+Gets companies statistics
 
 ##### Parameter
 
@@ -566,7 +565,7 @@ Abrufen von Unternehmensstatistiken
 
 ##### Zusammenfassung
 
-Ruft detaillierte Unternehmensstatistiken ab
+Gets detailed companies statistics
 
 ##### Parameter
 
@@ -591,7 +590,7 @@ Ruft detaillierte Unternehmensstatistiken ab
 
 ##### Zusammenfassung
 
-Abrufen von Länderstatistiken
+Gets countries statistics
 
 ##### Parameter
 
@@ -615,7 +614,7 @@ Abrufen von Länderstatistiken
 
 ##### Zusammenfassung
 
-Abrufen von Gerätestatistiken
+Gets devices statistics
 
 ##### Parameter
 
@@ -639,7 +638,7 @@ Abrufen von Gerätestatistiken
 
 ##### Zusammenfassung
 
-Ruft Domainstatistiken ab
+Gets domains statistics
 
 ##### Parameter
 
@@ -663,7 +662,7 @@ Ruft Domainstatistiken ab
 
 ##### Zusammenfassung
 
-Ruft Zeitstatistiken ab
+Gets time statistics
 
 ##### Parameter
 
@@ -687,7 +686,7 @@ Ruft Zeitstatistiken ab
 
 ##### Zusammenfassung
 
-Listet Webdienste auf
+Lists web services
 
 ##### Antworten
 

@@ -3,42 +3,41 @@ title: 环境变量
 sidebar_position: 3
 ---
 
-
-AdGuard DNS CLI 使用[环境变量][wiki-env]来存储部分配置。 其他配置存储在[配置文件][conf]中。
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-日志输出位置，必须是文件的绝对路径，或者是下面的特殊值之一。 请参阅有关配置文件的文章中的[日志记录配置说明][conf-log]。
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-该环境变量的优先级高于配置文件中的[`log.output`][conf-log]字段。
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
-**默认**：**未设置**。
+**Default:** **Unset.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-日志条目的格式。 请参阅有关配置文件的文章中的[日志记录配置说明][conf-log]。
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-该环境变量的优先级高于配置文件中的 [`log.format`][conf-log] 字段。
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
-**默认**：**未设置**。
+**Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-当设置为 `1` 时，日志条目带有时间戳。 当设置为 `0` 时，日志条目不包含它。
+When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-该环境变量的优先级高于配置文件中的 [`log.timestamp`][conf-log] 字段。
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
-**默认**：**未设置**。
+**Default:** **Unset.**
 
 ## `VERBOSE` {#VERBOSE}
 
-设置为 `1` 时，启用详细日志记录。 设置为 `0` 时，禁用详细日志记录。
+When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-该环境变量的优先级高于配置文件中的 [`log.verbose`][conf-log] 字段。
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
-**默认**：**未设置**。
+**Default:** **Unset.**

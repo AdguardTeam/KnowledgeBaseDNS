@@ -3,11 +3,10 @@ title: Arquivo de configuração
 sidebar_position: 2
 ---
 
-
-Veja o arquivo [`config.dist.yml`][dist] para um exemplo completo de um arquivo de configuração [YAML][yaml] com comentários.
+See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
 {/*
-    TODO(a.garipov): Find ways to add IDs to individual list items.
+TODO(a.garipov): Find ways to add IDs to individual list items.
 */}
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml

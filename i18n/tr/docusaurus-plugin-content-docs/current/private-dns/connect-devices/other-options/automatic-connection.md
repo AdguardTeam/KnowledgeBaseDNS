@@ -57,3 +57,9 @@ Belirli cihaz türü ve protokol için bir bağlantı oluşturan bir şablon ekl
 3. _Bağlantı oluştur_ öğesine tıklayın.
    ![Bağlantı oluştur \*mobil_sınır](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Bağlantıyı başarıyla oluşturdunuz, şimdi sunucu adresini kopyalayın ve [AdGuard uygulamalarından](https://adguard.com/welcome.html) birinde kullanın
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

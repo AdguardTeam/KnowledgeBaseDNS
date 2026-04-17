@@ -3,42 +3,41 @@ title: Ambiente
 sidebar_position: 3
 ---
 
-
-AdGuard DNS CLI utilizza [variabili d'ambiente][wiki-env] per memorizzare parte della configurazione. Il resto della configurazione è memorizzato nel [file di configurazione][conf].
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-La destinazione del registro, deve essere un percorso assoluto al file o uno dei valori speciali. Consulta la [descrizione della configurazione del registro][conf-log] nell'articolo sul file di configurazione.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Questa variabile di ambiente sovrascrive il campo [`log.output`][conf-log] nel file di configurazione.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
-**Predefinito:** **Non impostato.**
+**Default:** **Unset.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-Il formato per le voci di registro. Consulta la [descrizione della configurazione del registro][conf-log] nell'articolo sul file di configurazione.
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Questa variabile di ambiente sovrascrive il campo [`log.format`][conf-log] nel file di configurazione.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
-**Predefinito:** **Non impostato.**
+**Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-Quando impostato su `1`, le voci di registro hanno un timestamp. Quando impostato su `0`, le voci di registro non lo hanno.
+When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-Questa variabile di ambiente sovrascrive il campo [`log.timestamp`][conf-log] nel file di configurazione.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
-**Predefinito:** **Non impostato.**
+**Default:** **Unset.**
 
 ## `VERBOSE` {#VERBOSE}
 
-Quando impostato su `1`, attiva la registrazione dettagliata. Quando impostato su `0`, disattivalo.
+When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-Questa variabile di ambiente sovrascrive il campo [`log.verbose`][conf-log] nel file di configurazione.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
-**Predefinito:** **Non impostato.**
+**Default:** **Unset.**

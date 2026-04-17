@@ -30,6 +30,17 @@ sidebar_position: 3
 
    ![Привязанный IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. Откройте Панель управления.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## Динамический DNS: зачем это нужно
 
 Каждый раз, когда устройство подключается к сети, оно получает новый динамический IP-адрес. Когда устройство отсоединяется, DHCP-сервер может назначить освободившийся IP-адрес другому устройству в сети. Это означает, что динамические IP-адреса меняются часто и непредсказуемо. Следовательно, вам нужно будет обновлять настройки всякий раз, когда перезагружается устройство или меняется сеть.

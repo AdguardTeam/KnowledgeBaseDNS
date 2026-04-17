@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overview.md). Pro kompletní seznam změn AdGuard DNS API navštivte [tuto stránku](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Aktuální verze: 1.10
 
@@ -21,7 +20,7 @@ Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overvi
 
 ##### Shrnutí
 
-Zjišťuje limity účtu
+Gets account limits
 
 ##### Odezvy
 
@@ -35,7 +34,7 @@ Zjišťuje limity účtu
 
 ##### Shrnutí
 
-Seznam vyhrazených adres IPv4
+Lists dedicated IPv4 addresses
 
 ##### Odezvy
 
@@ -47,7 +46,7 @@ Seznam vyhrazených adres IPv4
 
 ##### Shrnutí
 
-Přiděluje nové IPv4
+Allocates new IPv4
 
 ##### Odezvy
 
@@ -62,7 +61,7 @@ Přiděluje nové IPv4
 
 ##### Shrnutí
 
-Seznamy zařízení
+Lists devices
 
 ##### Odezvy
 
@@ -74,7 +73,7 @@ Seznamy zařízení
 
 ##### Shrnutí
 
-Vytvoří nové zařízení
+Creates a new device
 
 ##### Odezvy
 
@@ -90,7 +89,7 @@ Vytvoří nové zařízení
 
 ##### Shrnutí
 
-Odstraní zařízení
+Removes a device
 
 ##### Parametry
 
@@ -109,7 +108,7 @@ Odstraní zařízení
 
 ##### Shrnutí
 
-Získá existující zařízení podle ID
+Gets an existing device by ID
 
 ##### Parametry
 
@@ -128,7 +127,7 @@ Získá existující zařízení podle ID
 
 ##### Shrnutí
 
-Aktualizuje existující zařízení
+Updates an existing device
 
 ##### Parametry
 
@@ -150,7 +149,7 @@ Aktualizuje existující zařízení
 
 ##### Shrnutí
 
-Seznam vyhrazených adres IPv4 a IPv6 pro zařízení
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parametry
 
@@ -170,7 +169,7 @@ Seznam vyhrazených adres IPv4 a IPv6 pro zařízení
 
 ##### Shrnutí
 
-Odpojení vyhrazené IPv4 od zařízení
+Unlink dedicated IPv4 from the device
 
 ##### Parametry
 
@@ -189,7 +188,7 @@ Odpojení vyhrazené IPv4 od zařízení
 
 ##### Shrnutí
 
-Připojení vyhrazené IPv4 k zařízení
+Link dedicated IPv4 to the device
 
 ##### Parametry
 
@@ -212,7 +211,7 @@ Připojení vyhrazené IPv4 k zařízení
 
 ##### Shrnutí
 
-Získá soubor .mobileconfig DNS-over-HTTPS.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parametry
 
@@ -235,7 +234,7 @@ Získá soubor .mobileconfig DNS-over-HTTPS.
 
 ##### Shrnutí
 
-Generování a nastavení nového hesla DNS-over-HTTPS
+Generate and set new DNS-over-HTTPS password
 
 ##### Parametry
 
@@ -256,7 +255,7 @@ Generování a nastavení nového hesla DNS-over-HTTPS
 
 ##### Shrnutí
 
-Získá soubor .mobileconfig DNS-over-TLS.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parametry
 
@@ -279,7 +278,7 @@ Získá soubor .mobileconfig DNS-over-TLS.
 
 ##### Shrnutí
 
-Aktualizuje nastavení zařízení
+Updates device settings
 
 ##### Parametry
 
@@ -301,11 +300,11 @@ Aktualizuje nastavení zařízení
 
 ##### Shrnutí
 
-Seznam DNS serverů, které patří uživateli.
+Lists DNS servers that belong to the user.
 
 ##### Popis
 
-Seznam DNS serverů, které patří uživateli. Ve výchozím nastavení je alespoň jeden výchozí server.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Odezvy
 
@@ -317,11 +316,11 @@ Seznam DNS serverů, které patří uživateli. Ve výchozím nastavení je ales
 
 ##### Shrnutí
 
-Vytvoří nový DNS server
+Creates a new DNS server
 
 ##### Popis
 
-Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude DNS server vytvořen s výchozím nastavením.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Odezvy
 
@@ -337,11 +336,11 @@ Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude D
 
 ##### Shrnutí
 
-Odstraní DNS server
+Removes a DNS server
 
 ##### Popis
 
-Odstraní DNS server. Všechna zařízení připojená k tomuto DNS serveru budou přesunuta na výchozí DNS server. Odstranění výchozího DNS serveru je zakázáno.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parametry
 
@@ -360,7 +359,7 @@ Odstraní DNS server. Všechna zařízení připojená k tomuto DNS serveru budo
 
 ##### Shrnutí
 
-Získá existující DNS server podle ID
+Gets an existing DNS server by ID
 
 ##### Parametry
 
@@ -379,7 +378,7 @@ Získá existující DNS server podle ID
 
 ##### Shrnutí
 
-Aktualizuje existující DNS server
+Updates an existing DNS server
 
 ##### Parametry
 
@@ -401,7 +400,7 @@ Aktualizuje existující DNS server
 
 ##### Shrnutí
 
-Aktualizuje nastavení DNS serveru
+Updates DNS server settings
 
 ##### Parametry
 
@@ -423,7 +422,7 @@ Aktualizuje nastavení DNS serveru
 
 ##### Shrnutí
 
-Získá seznamy filtrů
+Gets filter lists
 
 ##### Odezvy
 
@@ -437,7 +436,7 @@ Získá seznamy filtrů
 
 ##### Shrnutí
 
-Vygeneruje přístupový a obnovovací token
+Generates Access and Refresh token
 
 ##### Odezvy
 
@@ -455,7 +454,7 @@ null
 
 ##### Shrnutí
 
-Vymaže záznamy dotazů
+Clears query log
 
 ##### Odezvy
 
@@ -467,7 +466,7 @@ Vymaže záznamy dotazů
 
 ##### Shrnutí
 
-Získá záznamy dotazů
+Gets query log
 
 ##### Parametry
 
@@ -496,7 +495,7 @@ Získá záznamy dotazů
 
 ##### Shrnutí
 
-Odvolá obnovovací token
+Revokes a Refresh Token
 
 ##### Parametry
 
@@ -518,7 +517,7 @@ null
 
 ##### Shrnutí
 
-Získá statistiky kategorií
+Gets categories statistics
 
 ##### Parametry
 
@@ -542,7 +541,7 @@ Získá statistiky kategorií
 
 ##### Shrnutí
 
-Získá statistiky společností
+Gets companies statistics
 
 ##### Parametry
 
@@ -566,7 +565,7 @@ Získá statistiky společností
 
 ##### Shrnutí
 
-Získá podrobné statistiky společností
+Gets detailed companies statistics
 
 ##### Parametry
 
@@ -591,7 +590,7 @@ Získá podrobné statistiky společností
 
 ##### Shrnutí
 
-Získá statistiky zemí
+Gets countries statistics
 
 ##### Parametry
 
@@ -615,7 +614,7 @@ Získá statistiky zemí
 
 ##### Shrnutí
 
-Získá statistiky zařízení
+Gets devices statistics
 
 ##### Parametry
 
@@ -639,7 +638,7 @@ Získá statistiky zařízení
 
 ##### Shrnutí
 
-Získá statistiky domén
+Gets domains statistics
 
 ##### Parametry
 
@@ -663,7 +662,7 @@ Získá statistiky domén
 
 ##### Shrnutí
 
-Získá statistiky času
+Gets time statistics
 
 ##### Parametry
 
@@ -687,7 +686,7 @@ Získá statistiky času
 
 ##### Shrnutí
 
-Vypíše webové služby
+Lists web services
 
 ##### Odezvy
 

@@ -19,13 +19,13 @@ toc_max_heading_level: 4
 
 Есть три подхода к написанию hosts-списков блокировки:
 
-- [Синтаксис в стиле Adblock][]: современный подход к написанию правил фильтрации, базирующийся на использовании подгруппы синтаксиса правил типа Adblock. Таким образом списки блокировки становятся совместимы с браузерными блокировщиками.
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Таким образом списки блокировки становятся совместимы с браузерными блокировщиками.
 
 - [`/etc/hosts` синтаксис](#etc-hosts-syntax): это старый и проверенный подход, при котором используется тот же синтаксис, что и в операционных системах для hosts-файлов.
 
 - [Синтаксис Domains-only](#domains-only-syntax): простое перечисление имён доменов.
 
-Если вы создаёте список блокировки, мы рекомендуем использовать [синтаксис Adblock][]. У него есть несколько важных преимуществ перед старым синтаксисом:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. У него есть несколько важных преимуществ перед старым синтаксисом:
 
 - **Размер списков блокировки.** Применяя сопоставление шаблонов, вы сможете использовать одно правило вместо сотен записей `/etc/hosts`.
 
@@ -33,7 +33,7 @@ toc_max_heading_level: 4
 
 - **Расширяемость.** За последнее десятилетие синтаксис Adblock значительно развился, и мы не видим причин, почему мы не можем расширить его ещё больше и дать дополнительные возможности сетевым блокировщикам.
 
-Если вы поддерживаете чёрный список в стиле `/etc/hosts` или несколько списков фильтрации (независимо от типа), мы предоставляем инструмент для их составления. Мы назвали его [Hostlist compiler][] и сами используем его для создания [DNS-фильтра AdGuard][].
+Если вы поддерживаете чёрный список в стиле `/etc/hosts` или несколько списков фильтрации (независимо от типа), мы предоставляем инструмент для их составления. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Базовые примеры {#basic-examples}
 
@@ -515,7 +515,7 @@ example.org
 example.net # это тоже комментарий
 ```
 
-Если в строке указан недействительный домен (например `*.example.org`), AdGuard Home посчитает его правилом [в стиле Adblock][].
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
 ## Компилятор хостлистов {#hostlist-compiler}
 
@@ -529,18 +529,17 @@ example.net # это тоже комментарий
 
 3. Подчистить список, получившийся в результате: убрать дубли, неработающие правила и сжать список.
 
-{/* local links */}
+{/*local links*/}
 
-
-{/* external links */}
-[Синтаксис в стиле Adblock]: #adblock-style-syntax
+{/*external links*/}
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-[синтаксис Adblock]: #adblock-style-syntax
-[в стиле Adblock]: #adblock-style-syntax
+
+[Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype-модификатор`]: #dnstype-modifier
-[DNS-фильтра AdGuard]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+
+[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

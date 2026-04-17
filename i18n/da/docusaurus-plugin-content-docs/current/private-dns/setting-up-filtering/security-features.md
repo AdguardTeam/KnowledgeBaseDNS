@@ -21,10 +21,10 @@ Nogle gange forårsager dette falske positiver, men statistikker viser, at i de 
 AdGuard DNS understøtter tilføjelse af tredjeparts blokeringsfiltre.
 Aktivér filtre markeret `sikkerhed` for ekstra beskyttelse.
 
-For mere viden om Sortlister [se separat artikel](/private-dns/setting-up-filtering/blocklists.md).
+For yderligere viden om Sortlister [se den separate artikel](/private-dns/setting-up-filtering/blocklists.md).
 
-## Protection against typosquatting domains
+## Beskyttelse mod typosquatting-domæner
 
-AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
+AdGuard DNS detekterer og blokerer misteænkelige domeæner, som ligner hinanden, på DNS-niveau ved at analysere mønstre, såsom almindelige tastefejl, ombyttede tegn og manglende/ekstra bogstaver. Den blokerer forespørgslen, allerede før en forbindelse er etableret.
 
-Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Server settings ⭢ _User rules_ ⭢ _Add new rule_.
+Da denne funktion er afhængig af lighedsdetektering, kan legitime domæner, som ligner populære websteder, lejlighedsvis blive markeret. Skulle dette ske, kan domænet føjes til hvidlisten ved at gå til [_Servere_](https://adguard-dns.io/dashboard/servers) ⭢ _Serverindstillinger_ ⭢ _Brugerregler_ ⭢ _Tilføj ny regel_.

@@ -3,7 +3,6 @@ title: Environment
 sidebar_position: 3
 ---
 
-
 AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md
@@ -11,9 +10,9 @@ AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the conf
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-De logbestemming moet een absoluut pad naar het bestand of een van de speciale waarden zijn. Zie de [logconfiguratiebeschrijving][conf-log] in het artikel over het configuratiebestand.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Deze omgevingsvariabele overschrijft het veld [`log.output`][conf-log] in het configuratiebestand.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -21,9 +20,9 @@ Deze omgevingsvariabele overschrijft het veld [`log.output`][conf-log] in het co
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries. Zie de [logconfiguratiebeschrijving][conf-log] in het artikel over het configuratiebestand.
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Deze omgevingsvariabele overschrijft het veld [`log.format`][conf-log] in het configuratiebestand.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -31,7 +30,7 @@ Deze omgevingsvariabele overschrijft het veld [`log.format`][conf-log] in het co
 
 When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-Deze omgevingsvariabele overschrijft het veld [`log.timestamp`][conf-log] in het configuratiebestand.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -39,6 +38,6 @@ Deze omgevingsvariabele overschrijft het veld [`log.timestamp`][conf-log] in het
 
 When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-Deze omgevingsvariabele overschrijft het veld [`log.verbose`][conf-log] in het configuratiebestand.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**

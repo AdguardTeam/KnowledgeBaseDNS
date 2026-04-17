@@ -3,17 +3,16 @@ title: Окружение
 sidebar_position: 3
 ---
 
-
-AdGuard DNS CLI использует [переменные окружения][wiki-env] для хранения части настроек. Остальные настройки хранятся [в файле конфигурации][conf].
+AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
 
 [conf]: configuration.md
-[wiki-env]: https://ru.wikipedia.org/wiki/Переменная_среды
+[wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-Место назначения журнала, должно быть абсолютным путём к файлу или одним из специальных значений. См. [описание настроек логирования][conf-log] в статье о файле конфигурации.
+The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Эта переменная среды переопределяет поле [`log.output`][conf-log] в файле конфигурации.
+This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
@@ -21,24 +20,24 @@ AdGuard DNS CLI использует [переменные окружения][w
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-Формат записей журнала. См. [описание настроек логирования][conf-log] в статье о файле конфигурации.
+The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
 
-Эта переменная среды переопределяет поле [`log.format`][conf-log] в файле конфигурации.
+This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-Если установлено значение `1`, у записей журнала есть временная метка. Если установлено значение `0`, в записях журнала его нет.
+When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
 
-Эта переменная среды переопределяет поле [`log.timestamp`][conf-log] в файле конфигурации.
+This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**
 
 ## `VERBOSE` {#VERBOSE}
 
-Если установлено значение `1`, включается подробное ведение журнала. Когда установлено значение `0`, отключите его.
+When set to `1`, enable verbose logging. When set to `0`, disable it.
 
-Эта переменная среды переопределяет поле [`log.verbose`][conf-log] в файле конфигурации.
+This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
 
 **Default:** **Unset.**

@@ -30,6 +30,17 @@ If that happens, please reach out to support at [support@adguard-dns.io](mailto:
 
    ![연결된 IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. 대시보드를 엽니다.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## 동적 DNS
 
 기기가 네트워크에 연결할 때마다 새로운 동적 IP 주소를 얻습니다. 기기가 연결이 끊어지면, DHCP 서버는 해제된 IP 주소를 네트워크의 다른 기기에 할당할 수 있습니다. 즉, 동적 IP 주소는 예측할 수 없을 정도로 자주 변경됩니다. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.

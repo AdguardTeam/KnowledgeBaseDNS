@@ -52,7 +52,9 @@ AdGuard Home tjekker både DNS-forespørgsler og DNS-svar for at forhindre en ad
 
 Standardplaceringen af alm. tekstlogfiler (ikke at forveksle med forespørgselslogfiler) afhænger af operativsystemet og installationstilstanden:
 
-{/* TODO(a.garipov): Add more info about Docker; add links to tools. */}
+{/*
+TODO(a.garipov): Add more info about Docker; add links to tools.
+*/}
 
 - **OpenWrt Linux:** Eksekvér kommandoen `logread -e AdGuardHome`.
 

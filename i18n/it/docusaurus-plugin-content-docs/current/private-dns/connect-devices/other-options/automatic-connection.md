@@ -57,3 +57,9 @@ Abbiamo aggiunto un modello che genera un collegamento per il tipo di dispositiv
 3. Clicca su _Genera collegamento_.
    ![Genera collegamento \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Hai generato correttamente il collegamento, ora copia l'indirizzo del server e usalo in una delle [app AdGuard](https://adguard.com/welcome.html)
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

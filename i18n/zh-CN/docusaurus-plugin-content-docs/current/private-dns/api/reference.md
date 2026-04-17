@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-本文章包含 [AdGuard DNS API](private-dns/api/overview.md) 的文档。 有关完成的 AdGuard DNS API 更新日志记录，请访问[此页面](private-dns/api/changelog.md)。
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Current version: 1.10
 
@@ -21,7 +20,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-获取账号限额
+Gets account limits
 
 ##### 响应
 
@@ -35,7 +34,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-列出专用 IPv4 地址
+Lists dedicated IPv4 addresses
 
 ##### 响应
 
@@ -47,7 +46,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-分配新的 IPv4 地址
+Allocates new IPv4
 
 ##### 响应
 
@@ -62,7 +61,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-列出设备
+Lists devices
 
 ##### 响应
 
@@ -74,7 +73,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-创建新设备
+Creates a new device
 
 ##### 响应
 
@@ -90,7 +89,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-删除设备
+Removes a device
 
 ##### 参数
 
@@ -109,7 +108,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-根据 ID 获取现有设备
+Gets an existing device by ID
 
 ##### 参数
 
@@ -128,7 +127,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-更新现有设备
+Updates an existing device
 
 ##### 参数
 
@@ -150,7 +149,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-列出设备的专用 IPv4 和 IPv6 地址
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### 参数
 
@@ -170,7 +169,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-解除设备上专用 IPv4 链接
+Unlink dedicated IPv4 from the device
 
 ##### 参数
 
@@ -189,7 +188,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-将专用 IPv4 连接到设备
+Link dedicated IPv4 to the device
 
 ##### 参数
 
@@ -212,7 +211,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-获取 DNS-over-HTTPS .mobileconfig 文件。
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### 参数
 
@@ -235,7 +234,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-生成并设置新的 DNS-over-HTTPS 密码。
+Generate and set new DNS-over-HTTPS password
 
 ##### 参数
 
@@ -256,7 +255,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-获取 DNS-over-TLS .mobileconfig 文件。
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### 参数
 
@@ -279,7 +278,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-更新设备设置
+Updates device settings
 
 ##### 参数
 
@@ -301,11 +300,11 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-列出属于用户的 DNS 服务器。
+Lists DNS servers that belong to the user.
 
 ##### 详细信息
 
-列出属于用户的 DNS 服务器。 默认情况下，至少有一个默认服务器。
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### 响应
 
@@ -317,11 +316,11 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-创建新的 DNS 服务器
+Creates a new DNS server
 
 ##### 详细信息
 
-创建新的 DNS 服务器。 用户可以附加自定义设置，否则将使用默认设置创建 DNS 服务器。
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### 响应
 
@@ -337,11 +336,11 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-删除 DNS 服务器
+Removes a DNS server
 
 ##### 详细信息
 
-删除 DNS 服务器。 所有连接到此 DNS 服务器的设备都将移至默认 DNS 服务器。 禁止删除默认 DNS 服务器。
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### 参数
 
@@ -360,7 +359,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-根据 ID 获取现有 DNS 服务器
+Gets an existing DNS server by ID
 
 ##### 参数
 
@@ -379,7 +378,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-更新现有 DNS 服务器。
+Updates an existing DNS server
 
 ##### 参数
 
@@ -401,7 +400,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-更新 DNS 服务器设置
+Updates DNS server settings
 
 ##### 参数
 
@@ -423,7 +422,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-获取过滤器列表
+Gets filter lists
 
 ##### 响应
 
@@ -437,7 +436,7 @@ toc_max_heading_level: 4
 
 ##### 摘要
 
-生成访问和刷新令牌
+Generates Access and Refresh token
 
 ##### 响应
 
@@ -455,7 +454,7 @@ null
 
 ##### 摘要
 
-清除查询日志
+Clears query log
 
 ##### 响应
 
@@ -467,7 +466,7 @@ null
 
 ##### 摘要
 
-获取查询日志
+Gets query log
 
 ##### 参数
 
@@ -496,7 +495,7 @@ null
 
 ##### 摘要
 
-撤销刷新令牌
+Revokes a Refresh Token
 
 ##### 参数
 
@@ -518,7 +517,7 @@ null
 
 ##### 摘要
 
-获取类别统计信息
+Gets categories statistics
 
 ##### 参数
 
@@ -542,7 +541,7 @@ null
 
 ##### 摘要
 
-获取公司统计信息
+Gets companies statistics
 
 ##### 参数
 
@@ -566,7 +565,7 @@ null
 
 ##### 摘要
 
-获取详细的公司统计信息
+Gets detailed companies statistics
 
 ##### 参数
 
@@ -591,7 +590,7 @@ null
 
 ##### 摘要
 
-获取国家/地区统计信息
+Gets countries statistics
 
 ##### 参数
 
@@ -615,7 +614,7 @@ null
 
 ##### 摘要
 
-获取设备统计信息
+Gets devices statistics
 
 ##### 参数
 
@@ -639,7 +638,7 @@ null
 
 ##### 摘要
 
-获取域名统计信息
+Gets domains statistics
 
 ##### 参数
 
@@ -663,7 +662,7 @@ null
 
 ##### 摘要
 
-获取时间统计信息
+Gets time statistics
 
 ##### 参数
 
@@ -687,7 +686,7 @@ null
 
 ##### 摘要
 
-列出网络服务
+Lists web services
 
 ##### 响应
 

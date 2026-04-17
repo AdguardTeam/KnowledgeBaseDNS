@@ -19,13 +19,13 @@ Syntaxi pravidel filtrování AdGuard DNS můžete použít k tomu, aby byla pra
 
 Existují tři různé přístupy k psaní hostitelských seznamů zakázaných:
 
-- [Syntaxe ve stylu Adblock][]: moderní přístup k psaní pravidel filtrování založený na použití podmnožiny syntaxe pravidel ve stylu Adblock. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
+- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Tímto způsobem jsou seznamy blokování kompatibilní s blokátory reklam v prohlížečích.
 
 - [`/etc/hosts` syntaxe](#etc-hosts-syntax): starý a osvědčený přístup, který používá stejnou syntaxi, jakou používají operační systémy pro své funkce hostitelských souborů.
 
 - [Syntaxe pouze pro domény](#domains-only-syntax): jednoduchý seznam doménových názvů.
 
-Pokud vytváříte seznam zakázaných, doporučujeme použít [syntaxi ve stylu Adblock][]. Oproti staré syntaxi má několik důležitých výhod:
+If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Oproti staré syntaxi má několik důležitých výhod:
 
 - **Velikost seznamu zakázaných.** Použití porovnávání vzorů umožňuje mít jediné pravidlo namísto stovek záznamů `/etc/hosts`.
 
@@ -33,7 +33,7 @@ Pokud vytváříte seznam zakázaných, doporučujeme použít [syntaxi ve stylu
 
 - **Rozšiřitelnost.** Za posledních deset let se syntaxe ve stylu Adblock značně vyvinula a nevidíme důvod, proč bychom ji nemohli ještě více rozšířit a poskytnout další funkce pro blokátory napříč celou sítí.
 
-Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. Pojmenovali jsme ho [Hostlist kompilátor][] a sami ho používáme k vytváření [filtru AdGuard DNS][].
+Pokud udržujete seznam blokování ve stylu `/etc/hosts` nebo více seznamů filtrování (bez ohledu na typ), poskytujeme nástroj pro kompilaci seznamu zakázaných. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
 
 ## Základní příklady {#basic-examples}
 
@@ -515,7 +515,7 @@ example.org
 example.net # toto je také komentář
 ```
 
-Pokud řetězec není platnou doménou (např. `*.example.org`), bude jej AdGuard Home považovat za pravidlo [ve stylu AdBlock][].
+If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
 
 ## Překladač hostitelských seznamů {#hostlist-compiler}
 
@@ -529,18 +529,18 @@ Co dokáže:
 
 3. Vyčistit výsledný seznamu: deduplikace, odstranění neplatných pravidel a komprese seznamu.
 
-{/* local links */}
+{/*local links*/}
 
+{/*external links*/}
 
-{/* external links */}
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-[Syntaxe ve stylu Adblock]: #adblock-style-syntax
-[syntaxi ve stylu Adblock]: #adblock-style-syntax
-[ve stylu AdBlock]: #adblock-style-syntax
+
+[Adblock-style syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
-[filtru AdGuard DNS]: https://github.com/AdguardTeam/AdGuardSDNSFilter
-[Hostlist kompilátor]: https://github.com/AdguardTeam/HostlistCompiler
+
+[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [Hostitelských seznamů]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5

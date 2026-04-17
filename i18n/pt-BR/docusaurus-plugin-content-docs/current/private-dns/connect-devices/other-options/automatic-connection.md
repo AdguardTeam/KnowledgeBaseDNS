@@ -57,3 +57,9 @@ Adicionamos um modelo que gera um link para o tipo de dispositivo e protocolo es
 3. Clique em _Gerar link_.
    ![Gerar link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Você gerou o link com sucesso, agora copie o endereço do servidor e use-o em um dos [aplicativos AdGuard](https://adguard.com/welcome.html)
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

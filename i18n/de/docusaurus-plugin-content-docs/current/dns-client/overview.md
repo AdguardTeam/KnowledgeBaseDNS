@@ -3,54 +3,53 @@ title: Überblick
 sidebar_position: 1
 ---
 
+## What is AdGuard DNS CLI?
 
-## Was ist AdGuard DNS CLI?
+A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
-Ein plattformübergreifender, schlanker DNS-Client für [AdGuard DNS]. Er fungiert als DNS-Server, der DNS-Anfragen an die entsprechenden vorgelagerten Resolver weiterleitet.
+[AdGuard DNS]: https://adguard-dns.io
 
-[AdGuard DNS]: https://adguard-dns.io/de/
+## Quick start {#start}
 
-## Schnellstart {#start}
-
-Unterstützte Betriebssysteme:
+Supported operating systems:
 
 - Linux
 - macOS
 - Windows
 
-Unterstützte CPU-Architekturen:
+Supported CPU architectures:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Erste Schritte {#start-basic}
+## Getting started {#start-basic}
 
-### Unix-ähnliche Betriebssysteme {#start-basic-unix}
+### Unix-like operating systems {#start-basic-unix}
 
-1. Laden Sie das `.tar.gz`- oder `.zip`-Archiv von der [Seite für Veröffentlichungen][releases] herunter und entpacken Sie es.
+1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
    :::caution
 
-   Auf macOS ist es entscheidend, dass global installierte Daemons von `root` gehört (siehe [`launchd`-Dokumentation][launchd-requirements]), daher muss die ausführbare Datei `adguarddns-cli` im Verzeichnis `/Applications/` oder dessen Unterverzeichnis platziert werden.
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
-2. Installieren Sie ihn als Dienst, indem Sie Folgendes ausführen:
+2. Install it as a service by running:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. Bearbeiten Sie die Konfigurationsdatei `config.yaml`.
+3. Edit the configuration file `config.yaml`.
 
-4. Starten Sie den Dienst:
+4. Start the service:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-Um zu überprüfen, ob es funktioniert, verwenden Sie ein beliebiges DNS-Prüfprogramm. Zum Beispiel unter Verwendung von `nslookup`:
+To check that it works, use any DNS checking utility. For example, using `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -61,56 +60,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Laden Sie einfach das MSI-Installationsprogramm von der [Seite für Veröffentlichungen][releases] herunter und installieren Sie es.
+Just download and install using the MSI installer from the [releases page][releases].
 
-Um zu überprüfen, ob es funktioniert, verwenden Sie ein beliebiges DNS-Prüfprogramm. Zum Beispiel mit `nslookup.exe`:
+To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## Kommandozeilenoptionen {#opts}
+## Command-line options {#opts}
 
-Jede Option überschreibt den entsprechenden Wert, der in der Konfigurationsdatei und der Umgebung angegeben ist.
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
-### Hilfe {#opts-help}
+### Help {#opts-help}
 
-Die Option `-h` bewirkt, dass AdGuard DNS CLI eine Hilfemeldung auf der Standardausgabe ausgibt und mit einem Erfolgsstatuscode beendet wird.
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
-### Dienst {#opts-service}
+### Service {#opts-service}
 
-Die Option `-s <value>` gibt die Aktion des Betriebssystemdienstes an. Mögliche Werte sind:
+Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`: installiert den AdGuard DNS CLI als Dienst
-- `restart`: startet den laufenden Dienst AdGuard DNS CLI neu
-- `start`: startet den installierten Dienst AdGuard DNS CLI
-- `status`: zeigt den Status des installierten Dienstes AdGuard DNS CLI
-- `stop`: beendet den laufenden AdGuard DNS CLI
-- `uninstall`: deinstalliert den Dienst AdGuard DNS CLI
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
-### Ausführlich {#opts-verbose}
+### Verbose {#opts-verbose}
 
-Die Option `-v` aktiviert die ausführliche Protokollausgabe.
+Option `-v` enables the verbose log output.
 
 ### Version {#opts-version}
 
-Die Option `--version` veranlasst AdGuard DNS CLI, die Version der Anwendung auf der Standardausgabe auszugeben und mit einem Erfolgsstatuscode zu beenden.
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
-## Konfiguration {#conf}
+## Configuration {#conf}
 
-### Datei {#conf-file}
+### File {#conf-file}
 
-Die YAML-Konfigurationsdatei wird in [eigenem Artikel][conf] beschrieben, und es gibt auch eine Beispielkonfigurationsdatei `config.dist.yaml`.  Einige Konfigurationsparameter können auch mit der Option [environment][env] überschrieben werden.
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Beendigungscodes {#exit-codes}
+## Exit codes {#exit-codes}
 
-Es gibt einige verschiedene Beendigungscodes, die unter verschiedenen Fehlerbedingungen auftreten können:
+There are a few different exit codes that may appear under different error conditions:
 
-- `0`: Erfolgreich abgeschlossen und beendet, keine Fehler.
+- `0`: Successfully finished and exited, no errors.
 
-- `1`: Interner Fehler, höchstwahrscheinlich eine Fehlkonfiguration.
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`: Falsches Kommandozeilenargument oder falscher Wert.
+- `2`: Bad command-line argument or value.

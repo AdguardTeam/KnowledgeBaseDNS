@@ -5,13 +5,12 @@ toc_min_heading_level: 3
 toc_max_heading_level: 4
 ---
 
-{/*
-    The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
+{/* The content below is simply an automatic conversion from the OpenAPI spec https://api.adguard-dns.io/static/swagger/openapi.json to markdown using https://swagger-markdown-ui.netlify.app/.
 
     If you want to change it, ask the developers to change the OpenAPI spec.
 */}
 
-Este artículo contiene la documentación para la [API de AdGuard DNS](private-dns/api/overview.md). Para ver el registro de cambios completo de la API de AdGuard DNS, visita [esta página](private-dns/api/changelog.md).
+This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
 
 ## Current version: 1.10
 
@@ -21,7 +20,7 @@ Este artículo contiene la documentación para la [API de AdGuard DNS](private-d
 
 ##### Resumen
 
-Obtiene los límites de la cuenta
+Gets account limits
 
 ##### Respuestas
 
@@ -35,7 +34,7 @@ Obtiene los límites de la cuenta
 
 ##### Resumen
 
-Lista de direcciones IPv4 dedicadas
+Lists dedicated IPv4 addresses
 
 ##### Respuestas
 
@@ -47,7 +46,7 @@ Lista de direcciones IPv4 dedicadas
 
 ##### Resumen
 
-Asignar nueva IPv4
+Allocates new IPv4
 
 ##### Respuestas
 
@@ -62,7 +61,7 @@ Asignar nueva IPv4
 
 ##### Resumen
 
-Listas de dispositivos
+Lists devices
 
 ##### Respuestas
 
@@ -74,7 +73,7 @@ Listas de dispositivos
 
 ##### Resumen
 
-Crea un nuevo dispositivo
+Creates a new device
 
 ##### Respuestas
 
@@ -90,7 +89,7 @@ Crea un nuevo dispositivo
 
 ##### Resumen
 
-Elimina un dispositivo
+Removes a device
 
 ##### Parámetros
 
@@ -109,7 +108,7 @@ Elimina un dispositivo
 
 ##### Resumen
 
-Obtiene un dispositivo existente por ID
+Gets an existing device by ID
 
 ##### Parámetros
 
@@ -128,7 +127,7 @@ Obtiene un dispositivo existente por ID
 
 ##### Resumen
 
-Actualiza un dispositivo existente
+Updates an existing device
 
 ##### Parámetros
 
@@ -150,7 +149,7 @@ Actualiza un dispositivo existente
 
 ##### Resumen
 
-Lista de direcciones IPv4 e IPv6 dedicadas para un dispositivo
+List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Parámetros
 
@@ -170,7 +169,7 @@ Lista de direcciones IPv4 e IPv6 dedicadas para un dispositivo
 
 ##### Resumen
 
-Desvincular IPv4 dedicada del dispositivo
+Unlink dedicated IPv4 from the device
 
 ##### Parámetros
 
@@ -189,7 +188,7 @@ Desvincular IPv4 dedicada del dispositivo
 
 ##### Resumen
 
-Vincular IPv4 dedicada al dispositivo
+Link dedicated IPv4 to the device
 
 ##### Parámetros
 
@@ -212,7 +211,7 @@ Vincular IPv4 dedicada al dispositivo
 
 ##### Resumen
 
-Obtiene el archivo DNS-over-HTTPS .mobileconfig.
+Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Parámetros
 
@@ -235,7 +234,7 @@ Obtiene el archivo DNS-over-HTTPS .mobileconfig.
 
 ##### Resumen
 
-Generar y establecer nueva contraseña para DNS-over-HTTPS
+Generate and set new DNS-over-HTTPS password
 
 ##### Parámetros
 
@@ -256,7 +255,7 @@ Generar y establecer nueva contraseña para DNS-over-HTTPS
 
 ##### Resumen
 
-Obtiene el archivo .mobileconfig de DNS-over-TLS.
+Gets DNS-over-TLS .mobileconfig file.
 
 ##### Parámetros
 
@@ -279,7 +278,7 @@ Obtiene el archivo .mobileconfig de DNS-over-TLS.
 
 ##### Resumen
 
-Actualiza la configuración del dispositivo
+Updates device settings
 
 ##### Parámetros
 
@@ -301,11 +300,11 @@ Actualiza la configuración del dispositivo
 
 ##### Resumen
 
-Lista los servidores DNS que pertenecen al usuario.
+Lists DNS servers that belong to the user.
 
 ##### Descripción
 
-Lista los servidores DNS que pertenecen al usuario. De forma predeterminada, hay al menos un servidor predeterminado.
+Lists DNS servers that belong to the user. By default there is at least one default server.
 
 ##### Respuestas
 
@@ -317,11 +316,11 @@ Lista los servidores DNS que pertenecen al usuario. De forma predeterminada, hay
 
 ##### Resumen
 
-Crea un nuevo servidor DNS
+Creates a new DNS server
 
 ##### Descripción
 
-Crea un nuevo servidor DNS. Puedes adjuntar configuraciones personalizadas; de lo contrario, el servidor DNS se creará con la configuración predeterminada.
+Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
 
 ##### Respuestas
 
@@ -337,11 +336,11 @@ Crea un nuevo servidor DNS. Puedes adjuntar configuraciones personalizadas; de l
 
 ##### Resumen
 
-Elimina un servidor DNS
+Removes a DNS server
 
 ##### Descripción
 
-Elimina un servidor DNS. Todos los dispositivos conectados a este servidor DNS se moverán al servidor DNS por defecto. Está prohibido eliminar un servidor DNS predeterminado.
+Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
 
 ##### Parámetros
 
@@ -360,7 +359,7 @@ Elimina un servidor DNS. Todos los dispositivos conectados a este servidor DNS s
 
 ##### Resumen
 
-Obtiene un servidor DNS existente por ID
+Gets an existing DNS server by ID
 
 ##### Parámetros
 
@@ -379,7 +378,7 @@ Obtiene un servidor DNS existente por ID
 
 ##### Resumen
 
-Actualiza un servidor DNS existente
+Updates an existing DNS server
 
 ##### Parámetros
 
@@ -401,7 +400,7 @@ Actualiza un servidor DNS existente
 
 ##### Resumen
 
-Actualiza la configuración del servidor DNS
+Updates DNS server settings
 
 ##### Parámetros
 
@@ -423,7 +422,7 @@ Actualiza la configuración del servidor DNS
 
 ##### Resumen
 
-Obtiene listas de filtros
+Gets filter lists
 
 ##### Respuestas
 
@@ -437,7 +436,7 @@ Obtiene listas de filtros
 
 ##### Resumen
 
-Genera un token de Acceso y Actualización
+Generates Access and Refresh token
 
 ##### Respuestas
 
@@ -455,7 +454,7 @@ null
 
 ##### Resumen
 
-Borrar registros de consultas
+Clears query log
 
 ##### Respuestas
 
@@ -467,7 +466,7 @@ Borrar registros de consultas
 
 ##### Resumen
 
-Obtiene el registro de consultas
+Gets query log
 
 ##### Parámetros
 
@@ -496,7 +495,7 @@ Obtiene el registro de consultas
 
 ##### Resumen
 
-Revoca un Token de Actualización
+Revokes a Refresh Token
 
 ##### Parámetros
 
@@ -518,7 +517,7 @@ null
 
 ##### Resumen
 
-Obtiene estadísticas de categorías
+Gets categories statistics
 
 ##### Parámetros
 
@@ -542,7 +541,7 @@ Obtiene estadísticas de categorías
 
 ##### Resumen
 
-Obtiene estadísticas de empresas
+Gets companies statistics
 
 ##### Parámetros
 
@@ -566,7 +565,7 @@ Obtiene estadísticas de empresas
 
 ##### Resumen
 
-Obtiene estadísticas detalladas de empresas
+Gets detailed companies statistics
 
 ##### Parámetros
 
@@ -591,7 +590,7 @@ Obtiene estadísticas detalladas de empresas
 
 ##### Resumen
 
-Obtiene estadísticas de países
+Gets countries statistics
 
 ##### Parámetros
 
@@ -615,7 +614,7 @@ Obtiene estadísticas de países
 
 ##### Resumen
 
-Obtiene estadísticas de dispositivos
+Gets devices statistics
 
 ##### Parámetros
 
@@ -639,7 +638,7 @@ Obtiene estadísticas de dispositivos
 
 ##### Resumen
 
-Obtiene estadísticas de dominios
+Gets domains statistics
 
 ##### Parámetros
 
@@ -663,7 +662,7 @@ Obtiene estadísticas de dominios
 
 ##### Resumen
 
-Obtiene estadísticas de tiempo
+Gets time statistics
 
 ##### Parámetros
 
@@ -687,7 +686,7 @@ Obtiene estadísticas de tiempo
 
 ##### Resumen
 
-Lista de servicios web
+Lists web services
 
 ##### Respuestas
 

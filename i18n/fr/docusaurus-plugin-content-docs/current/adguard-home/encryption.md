@@ -23,7 +23,9 @@ Ce guide explique comment configurer un serveur DNS chiffré avec AdGuard Home.
 
 L'objectif de la sécurisation du trafic DNS est de le protéger contre les tiers qui pourraient l'analyser ou le modifier, par exemple les fournisseurs d'accès à Internet.
 
-{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 Cela signifie que vous aurez besoin d'un serveur doté d'une adresse IP publique et dédiée. Il existe de nombreux fournisseurs de serveurs cloud bon marché�: [DigitalOcean][digital-ocean], [Vultr][vultr], [Linode][linode], etc. Choisissez-en un, créez-y un serveur cloud, et [Installer AdGuard Home](adguard-home/getting-started.md) sur votre serveur.
 
@@ -166,7 +168,9 @@ location /dns-query {
 }
 ```
 
-{/* TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. */}
+{/*
+TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226.
+*/}
 
 [reverse-proxy-faq]: /adguard-home/faq.md#reverseproxy
 [ngx-http-realip-module]: https://nginx.org/en/docs/http/ngx_http_realip_module.html
@@ -179,31 +183,31 @@ location /dns-query {
 
 ### Android
 
-- Android 9 and above supports `DNS-over-TLS` natively. To configure it, go to _Settings_ → _Network & internet_ → _Advanced_ → _Private DNS_ and enter your domain name there.
-- [AdGuard for Android][ag-for-android] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
-- [Intra][intra] adds `DNS-over-HTTPS` support to Android.
+- Android 9 et versions ultérieures prennent en charge nativement le protocole `DNS-over-TLS`. Pour le configurer, allez dans _Paramètres_ → _Réseau et Internet_ → _Avancés_ → _DNS privé_ et saisissez votre nom de domaine ici.
+- [AdGuard for Android][ag-for-android] prend en charge `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` et `DNS-over-QUIC`.
+- [Intra][intra] ajoute la prise en charge de `DNS-over-HTTPS` à Android.
 
 ### iOS
 
-- iOS 14 and above support `DNS-over-TLS` and `DNS-over-HTTPS` natively via configuration profiles. In order to make things easier, AdGuard Home can generate these configuration profiles for you. Just head to _Setup Guide_ → _DNS Privacy_ and scroll to iOS.
-- [AdGuard for iOS][ag-for-ios] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
-- [DNSCloak][dnscloak] supports `DNS-over-HTTPS` but in order to configure it to use your own server, you’ll need to generate a [DNS Stamp][stamps] for it.
+- iOS 14 et versions ultérieures prennent en charge `DNS-over-TLS` et `DNS-over-HTTPS` nativement via des profils de configuration. Afin de faciliter les choses, AdGuard Home peut générer ces profils de configuration pour vous. Il vous suffit d'aller dans _Guide d'installation_ → _Confidentialité DNS_ et de faire défiler jusqu'à iOS.
+- [AdGuard pour iOS][ag-for-ios] prend en charge `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` et `DNS-over-QUIC`.
+- [DNSCloak][dnscloak] prend en charge `DNS-over-HTTPS` mais pour le configurer afin d'utiliser votre propre serveur, vous devrez générer un [DNS Stamp][stamps] pour celui-ci.
 
 ### Windows
 
-- Windows 10 Build 19628 and higher support `DNS-over-HTTPS` natively.
-- [AdGuard for Windows][ag-for-windows] supports `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` and `DNS-over-QUIC`.
+- Windows 10 Build 19628 et versions ultérieures prennent en charge nativement `DNS-over-HTTPS`.
+- [AdGuard pour Windows][ag-for-windows] prend en charge `DNS-over-HTTPS`, `DNS-over-TLS`, `DNSCrypt` et `DNS-over-QUIC`.
 
 ### macOS
 
-- macOS Big Sur and higher support `DNS-over-TLS` and `DNS-over-HTTPS` natively via configuration profiles. In order to make things easier, AdGuard Home can generate these configuration profiles for you. Just head to _Setup Guide_ → _DNS Privacy_ and scroll to iOS.
+- macOS Big Sur et les versions ultérieures prennent en charge `DNS-over-TLS` et `DNS-over-HTTPS` nativement via des profils de configuration. Afin de faciliter les choses, AdGuard Home peut générer ces profils de configuration pour vous. Il vous suffit d'aller dans _Guide d'installation_ → _Confidentialité DNS_ et de faire défiler jusqu'à iOS.
 
-### Other implementations
+### D'autres implémentations
 
-- AdGuard Home itself can be a secure DNS client on any platform.
-- [dnsproxy][ag-dnsproxy] supports all known secure DNS protocols.
-- [dnscrypt-proxy][dnscrypt-proxy] supports `DNS-over-HTTPS`.
-- [Mozilla Firefox][firefox] supports `DNS-over-HTTPS`.
+- AdGuard Home lui-même peut être un client DNS sécurisé sur n'importe quelle plateforme.
+- [dnsproxy][ag-dnsproxy] prend en charge tous les protocoles DNS sécuritaires connus.
+- [dnscrypt-proxy][dnscrypt-proxy] prend en charge `DNS-over-HTTPS`.
+- [Mozilla Firefox][firefox] prend en charge `DNS-over-HTTPS`.
 
 [ag-for-android]: https://adguard.com/en/adguard-android/overview.html
 [intra]: https://getintra.org
@@ -215,33 +219,33 @@ location /dns-query {
 [dnscrypt-proxy]: https://github.com/jedisct1/dnscrypt-proxy
 [firefox]: https://www.mozilla.org/firefox
 
-## Configuring DNSCrypt {#configure-dnscrypt}
+## La configuration de DNSCrypt {#configure-dnscrypt}
 
-AdGuard Home is able to work as a DNSCrypt server. However, this feature is only available via configuration file, and can’t be set up using the Web UI. This guide explains how to do this.
+AdGuard Home peut fonctionner comme un serveur DNSCrypt. Cependant, cette fonctionnalité est uniquement disponible via le fichier de configuration et ne peut pas être configurée à l’aide de l’interface Web. Ce guide explique comment procéder.
 
-### Generating a configuration file
+### La génération d’un fichier de configuration
 
-Here is how to generate a DNSCrypt configuration file and point AdGuard Home to it:
+Voici comment générer un fichier de configuration DNSCrypt et y faire pointer AdGuard Home :
 
 :::info Important
 
-Make sure that your TLS settings are valid and encryption is enabled.
+Assurez-vous que vos paramètres TLS sont valides et que le chiffrement est activé.
 
 :::
 
-1. Get the latest version of the [`dnscrypt`] utility for your system. Extract the archive and navigate to the resulting directory.
+1. Obtenez la dernière version de l’utilitaire [`dnscrypt`] pour votre système. Extrayez l’archive et accédez au répertoire résultant.
 
-   - On Unix, using a POSIX-compatible shell:
+   - Sous Unix, en utilisant un shell compatible POSIX :
 
-     (Here and below, `linux-amd64` is used as an example. Make sure to download and use the one for your platform.)
+     (Ici et ci-dessous, `linux-amd64` est utilisé comme exemple. Assurez-vous de télécharger et d'utiliser celui qui correspond à votre plateforme.)
 
-     1. Extract the files:
+     1. Extrayez les fichiers :
 
            ```sh
            tar -f ./dnscrypt-linux-amd64-v2.2.3.tar.gz -v -x -z
            ```
 
-        Output example:
+        Exemple de sortie :
 
            ```none
            linux-amd64/
@@ -250,19 +254,19 @@ Make sure that your TLS settings are valid and encryption is enabled.
            linux-amd64/dnscrypt
            ```
 
-     2. Navigate to the extracted directory:
+     2. Accédez au répertoire extrait :
 
            ```sh
            cd ./linux-amd64/
            ```
 
-     3. Generate the configuration file:
+     3. Générez le fichier de configuration :
 
            ```sh
            ./dnscrypt generate --provider-name '2.dnscrypt-cert.example.org' --out ./dnscrypt.yaml
            ```
 
-        Output example:
+        Exemple de sortie :
 
             ```none
             2022/01/02 12:34:56 [info] Generating configuration for 2.dnscrypt-cert.example.org
@@ -272,29 +276,29 @@ Make sure that your TLS settings are valid and encryption is enabled.
             2022/02/02 12:34:56 [info] dnscrypt server -c ./dnscrypt.yaml -f 8.8.8.8
             ```
 
-   - On Windows, using PowerShell:
+   - Sur Windows, avec PowerShell :
 
-     (Here and below, `windows-amd64` is used as an example. Make sure to download and use the one for your CPU architecture.)
+     (Ici et ci-dessous, `windows-amd64` est utilisé comme exemple. Assurez-vous de télécharger et d'utiliser celui qui correspond à l'architecture de votre processeur.)
 
-     1. Extract the files:
+     1. Extrayez les fichiers :
 
            ```ps1
            Expand-Archive -Path .\dnscrypt-windows-amd64-v2.2.3.zip
            ```
 
-     2. Navigate to the extracted directory:
+     2. Accédez au répertoire extrait :
 
            ```ps1
            Set-Location -Path .\dnscrypt-windows-amd64-v2.2.3\windows-amd64\
            ```
 
-     3. Generate the configuration file:
+     3. Générez le fichier de configuration :
 
            ```ps1
            .\dnscrypt.exe generate --provider-name '2.dnscrypt-cert.example.org' --out .\dnscrypt.yaml
            ```
 
-        Output example:
+        Exemple de sortie :
 
            ```none
            2022/01/02 12:34:56 [info] Generating configuration for 2.dnscrypt-cert.example.org
@@ -304,11 +308,11 @@ Make sure that your TLS settings are valid and encryption is enabled.
            2022/02/02 12:34:56 [info] dnscrypt server -c .\dnscrypt.yaml -f 8.8.8.8
            ```
 
-   Where `example.org` is the name of your host and `./dnscrypt.yaml` is the name of the configuration output file.
+   Où `example.org` est le nom de votre hôte et `./dnscrypt.yaml` est le nom du fichier de sortie de configuration.
 
-   You may add the path to the binary into your `PATH`/`$env:PATH`.
+   Vous pouvez ajouter le chemin vers le binaire à votre `PATH`/`$env:PATH`.
 
-2. In the configuration file (typically `AdGuardHome.yaml`), add the following lines:
+2. Dans le fichier de configuration (généralement `AdGuardHome.yaml`), ajoutez les lignes suivantes :
 
    ```yaml
    'tls':
@@ -319,43 +323,43 @@ Make sure that your TLS settings are valid and encryption is enabled.
      'dnscrypt_config_file': './dnscrypt.yaml'
    ```
 
-   Where `5443` is the port for your DNSCrypt server and `./dnscrypt.yaml` is the name of the configuration file generated in step 2.
+   Où `5443` est le port de votre serveur DNSCrypt et `./dnscrypt.yaml` est le nom du fichier de configuration généré à l'étape 2.
 
    :::info Important
 
-   Stop AdGuard Home before changing the configuration file.
+   Arrêtez AdGuard Home avant de modifier le fichier de configuration.
 
    :::
 
    :::tip
 
-   On Windows, it is recommended to use the full path to the configuration file. For example, `C:\Users\Me\Files\dnscrypt.yaml`.
+   Sous Windows, il est recommandé d'utiliser le chemin complet vers le fichier de configuration. Par exemple, `C:\Users\Me\Files\dnscrypt.yaml`.
 
    :::
 
 [`dnscrypt`]: https://github.com/ameshkov/dnscrypt/releases
 
-### Generating a DNSCrypt stamp
+### Génération d’un tampon DNSCrypt
 
-Here is how to generate a DNSCrypt stamp and check your installation:
+Voici comment générer un tampon DNSCrypt et vérifier votre installation :
 
 1. Go to [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
-2. Enter the data from your DNSCrypt configuration file. The _Provider public key_ is the value of the `public_key` field in your DNSCrypt configuration file.
+2. Saisissez les données de votre fichier de configuration DNSCrypt. La _clé publique du fournisseur_ correspond à la valeur du champ `public_key` dans votre fichier de configuration DNSCrypt.
 
    :::note
 
-   Enter the host with your custom port.
+   Saisissez l'hôte avec votre port personnalisé.
 
    :::
 
-3. Now you have a stamp that looks something like this:
+3. Vous avez maintenant un tampon qui ressemble à ceci :
 
    ```none
    sdns://AQcAAAAAAAAADTEyNy4wLjAuMTo0NDMg8R3bzEgX5UOEX93Uy4gYSbZCJvPeOXYlZp2HuRm8T7AbMi5kbnNjcnlwdC1jZXJ0LmV4YW1wbGUub3Jn
    ```
 
-   Check your installation by running:
+   Vérifiez votre installation en exécutant :
 
    ```sh
    ./dnscrypt lookup-stamp \
@@ -364,7 +368,7 @@ Here is how to generate a DNSCrypt stamp and check your installation:
        --type 'a'
    ```
 
-   Or, on Windows:
+   Ou, sur Windows :
 
    ```ps1
    .\dnscrypt.exe lookup-stamp `
@@ -373,29 +377,29 @@ Here is how to generate a DNSCrypt stamp and check your installation:
        --type 'a'
    ```
 
-   Where `example.com` is the domain name to lookup.
+   Où `example.com` est le nom de domaine à rechercher.
 
-### Configuring devices to use DNSCrypt
+### La configuration des appareils pour utiliser DNSCrypt
 
-#### All platforms
+#### Toutes les plateformes
 
-- [`dnscrypt-proxy`][prox] (reference implementation). DNSCrypt-Proxy is a command-line proxy for Linux, BSD, Windows, macOS, Android, and more.
+- [`dnscrypt-proxy`][prox] (implémentation de référence). DNSCrypt-Proxy est un proxy en ligne de commande pour Linux, BSD, Windows, macOS, Android, et plus encore.
 
 #### Android
 
-- [AdGuard for Android][andr] supports DNSCrypt.
+- [AdGuard pour Android][andr] prend en charge DNSCrypt.
 
 #### iOS
 
-- [AdGuard for iOS][ios] supports DNSCrypt.
-- [DNSCloak][cloa] uses `dnscrypt-proxy` internally and supports DNSCrypt.
+- [AdGuard pour iOS][ios] prend en charge DNSCrypt.
+- [DNSCloak][cloa] utilise `dnscrypt-proxy` en interne et prend en charge DNSCrypt.
 
 #### Windows
 
-- [AdGuard for Windows][win] supports DNSCrypt.
-- [Simple DNSCrypt][simp] is a simple management tool to configure and run `dnscrypt-proxy` on Windows.
+- [AdGuard pour Windows][win] prend en charge DNSCrypt.
+- [Simple DNSCrypt][simp] est un outil de gestion simple pour configurer et exécuter `dnscrypt-proxy` sur Windows.
 
-See the [DNSCrypt website][imps1] and [DNS privacy project’s list][imps2] for more.
+Voir le [site web DNSCrypt][imps1] et la [liste du projet de confidentialité DNS][imps2] pour plus d'informations.
 
 [andr]: https://adguard.com/en/adguard-android/overview.html
 [cloa]: https://itunes.apple.com/app/id1452162351

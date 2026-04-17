@@ -30,6 +30,17 @@ Den følgende vejledning forklarer, hvordan der forbindes til enheden via en **l
 
    ![Linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## Sådan fjernes tildelingen af linket IP
+
+Den følgende vejledning beskriver, hvordan **tildelingen af en linket IP-adresse fjernes**:
+
+1. Åbn Kontrolpanel.
+2. Gå til enhedsindstillingerne.
+3. Gå til _Almindelige DNS-serveradresser_.
+4. Klik under _Linket IPv4-adresse_ på _Fjern tildeling af IP-adresse_.
+
+   ![Fjern tildeling af en linket IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## Dynamisk DNS: Hvorfor det er nyttigt
 
 Hver gang en enhed tilslutter sig netværket, får den en ny dynamisk IP-adresse. Når en enhed afbryder forbindelsen, kan DHCP-serveren tildele den frigivne IP-adresse til en anden enhed på netværket. Dette betyder, at dynamiske IP-adresser ændres ofte og uforudsigeligt. Derfor skal indstillingerne opdateres, hver gang enheden genstartes eller der sker netværksændringer.

@@ -3,54 +3,53 @@ title: 概览
 sidebar_position: 1
 ---
 
+## What is AdGuard DNS CLI?
 
-## 什么是 AdGuard DNS CLI？
-
-适用于 [AdGuard DNS] 的一个跨平台的轻量级 DNS 客户端。 它充当一个 DNS 服务器，将 DNS 请求转发到相应的上游解析器。
+A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
 
 [AdGuard DNS]: https://adguard-dns.io
 
-## 快速开始 {#start}
+## Quick start {#start}
 
-支持的操作系统：
+Supported operating systems:
 
 - Linux
 - macOS
 - Windows
 
-支持的 CPU 架构：
+Supported CPU architectures:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## 开始 {#start-basic}
+## Getting started {#start-basic}
 
-### 类 Unix 操作系统 {#start-basic-unix}
+### Unix-like operating systems {#start-basic-unix}
 
-1. 从[版本页面][releases]下载并解压 `.tar.gz` 或 `.zip` 文件。
+1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
    :::caution
 
-   在 macOS 上，全局安装的守护进程必须归 `root` 所有（参见 [`launchd` 文档][launchd-requirements]），因此 `adguarddns-cli` 可执行文件必须放在 `/Applications/` 目录或其子目录中。
+   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
    :::
 
-2. 安装并运行以下命令将其设置为服务：
+2. Install it as a service by running:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. 编辑配置文件 `config.yaml`。
+3. Edit the configuration file `config.yaml`.
 
-4. 启动服务：
+4. Start the service:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup`：
+To check that it works, use any DNS checking utility. For example, using `nslookup`:
 
 ```sh
 nslookup -debug 'www.example.com' '127.0.0.1'
@@ -61,56 +60,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-只需从[版本页面][releases]下载 MSI 安装程序并安装即可。
+Just download and install using the MSI installer from the [releases page][releases].
 
-使用任意 DNS 检查工具验证是否运行正常。 例如，使用 `nslookup.exe`：
+To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
 
 ```sh
 nslookup -debug "www.example.com" "127.0.0.1"
 ```
 
-## 命令行选项 {#opts}
+## Command-line options {#opts}
 
-每个选项都会覆盖配置文件和环境变量中的对应值。
+Each option overrides the corresponding value provided by the configuration file and the environment.
 
-### 帮助 {#opts-help}
+### Help {#opts-help}
 
-使用 `-h` 选项可使 AdGuard DNS CLI 将帮助信息打印到标准输出，并以成功状态码退出。
+Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
 
-### 服务 {#opts-service}
+### Service {#opts-service}
 
-`-s <value>` 选项用于指定对操作系统服务的操作。 可能的选项值如下：
+Option `-s <value>` specifies the OS service action. Possible values are:
 
-- `install`：将 AdGuard DNS CLI 安装为一项服务
-- `restart`：重新启动正在运行的 AdGuard DNS CLI 服务
-- `start`：启动已安装的 AdGuard DNS CLI 服务
-- `status`：显示已安装的 AdGuard DNS CLI 服务的状态
-- `stop`：停止正在运行的 AdGuard DNS CLI
-- `uninstall`：卸载 AdGuard DNS CLI 服务
+- `install`: installs AdGuard DNS CLI as a service
+- `restart`: restarts the running AdGuard DNS CLI service
+- `start`: starts the installed AdGuard DNS CLI service
+- `status`: shows the status of the installed AdGuard DNS CLI service
+- `stop`: stops the running AdGuard DNS CLI
+- `uninstall`: uninstalls AdGuard DNS CLI service
 
-### 详细日志输出 {#opts-verbose}
+### Verbose {#opts-verbose}
 
-`-v` 选项用于启用详细日志输出。
+Option `-v` enables the verbose log output.
 
-### 版本 {#opts-version}
+### Version {#opts-version}
 
-`--version` 选项可以让 AdGuard DNS CLI 将应用程序的版本信息打印到标准输出并退出（退出状态码为成功）。
+Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
 
-## 配置文件 {#conf}
+## Configuration {#conf}
 
-### 文件 {#conf-file}
+### File {#conf-file}
 
-YAML 配置文件在[配置文件说明][conf]中描述，并有一个示例配置文件 `config.dist.yaml`。  部分配置参数可以通过设置[环境变量][env]来覆盖配置文件中的值。
+The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## 退出代码 {#exit-codes}
+## Exit codes {#exit-codes}
 
-在不同的错误状况下返回不同的退出代码：
+There are a few different exit codes that may appear under different error conditions:
 
-- `0`：成功完成并退出，没有错误。
+- `0`: Successfully finished and exited, no errors.
 
-- `1`：内部错误，很可能是配置错误导致。
+- `1`: Internal error, most likely a misconfiguration.
 
-- `2`：无效的命令行参数或参数值。
+- `2`: Bad command-line argument or value.

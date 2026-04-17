@@ -1,12 +1,12 @@
 ---
-title: Environment variables
+title: 环境变量
 sidebar_position: 5
 ---
 
-This page lists the supported environment variables and their descriptions.
+本网页列出了受支持的环境变量及其说明。
 
 ## `ADGUARD_HOME_DEFAULT_WEB_PORT` {#ADGUARD_HOME_DEFAULT_WEB_PORT}
 
-Sets the suggested default HTTP port displayed in the installation wizard.
+设置安装向导中所显示的建议 HTTP 端口。
 
-**Default:** `80`.
+**默认值**：`80`
