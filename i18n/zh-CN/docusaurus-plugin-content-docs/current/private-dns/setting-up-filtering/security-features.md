@@ -7,16 +7,16 @@ The AdGuard DNS security settings are a set of configurations designed to protec
 
 在这里，用户可以选择使用哪些方法来保护自己免受攻击者的侵害。 此功能将保护用户免于访问钓鱼和假网站，并防止敏感数据的潜在泄漏。
 
-### 拦截恶意、钓鱼网站以及欺诈域名
+## 拦截恶意、钓鱼网站以及欺诈域名
 
 迄今为止，我们已经分类了 1500 多万个网站了，建立了一个包含 150 万个已知网络钓鱼和恶意软件网站的数据库。 AdGuard 利用该数据库检查用户访问的网站，保护用户免受在线威胁。
 
-### 阻止新注册的域名
+## 阻止新注册的域名
 
 骗子通常使用最近注册的域名进行钓鱼和欺诈活动。 因此，我们开发了一个特殊的过滤器，用来检测域名的有效期，并在其最近创建时进行阻止。
 有时这可能会导致误报，但统计数字表明，在大多数情况下此设置仍然保护我们的用户避免丢失机密数据。
 
-### 使用拦截列表阻止恶意域名
+## 使用拦截列表阻止恶意域名
 
 AdGuard DNS 支持添加第三方拦截过滤器。
 激活标记为“安全”的过滤器以获得额外保护。
@@ -28,3 +28,9 @@ To learn more about Blocklists, see [the separate article](/private-dns/setting-
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
 Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ _Server settings_ ⭢ _User rules_ ⭢ _Add new rule_.
+
+## Protection against IDN homograph attacks
+
+Some phishing sites use lookalike characters from different alphabets to impersonate legitimate domains — for example, substituting a Cyrillic “o” for a Latin one. This technique is known as an IDN (Internationalized Domain Name) homograph attack.
+
+AdGuard DNS detects and blocks such domains at the DNS level. This feature is disabled by default. To enable it, go to _Security_ → _IDN homograph attacks protection_.

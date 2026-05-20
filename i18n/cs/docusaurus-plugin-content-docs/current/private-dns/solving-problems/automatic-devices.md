@@ -1,105 +1,105 @@
 ---
-title: Automatic device connection
+title: Automatické připojení zařízení
 sidebar_position: 4
 ---
 
-System administrators often need to manage many devices at once. To reduce the amount of manual work, you can use the [_Automatic connection_][ac] feature.
+Správci systémů často potřebují spravovat mnoho zařízení najednou. Chcete-li omezit množství ruční práce, můžete využít funkci [_Automatické připojení_][ac].
 
-This article describes in more detail how a system administrator can set up their network to automatically create devices on an AdGuard DNS server using accessible data.
+Tento článek podrobněji popisuje, jak může správce systému nakonfigurovat svou síť tak, aby na serveru AdGuard DNS automaticky vytvářela zařízení na základě dostupných údajů.
 
 [ac]: /private-dns/connect-devices/other-options/automatic-connection
 
 ## Předpoklady
 
-Make sure that the feature is enabled on your DNS server. To do that, go to _Dashboard → Servers → Server settings → Advanced_ and check that the _Connect devices automatically_ setting is switched on.
+Ujistěte se, že je tato funkce na vašem DNS serveru zapnutá. Chcete-li to provést, přejděte do části _Hlavní panel → Servery → Nastavení serveru → Pokročilé_ a zkontrolujte, zda je zapnuta možnost _Automaticky připojovat zařízení_.
 
-## The basic format
+## Základní formát
 
-The basic format of the hostname or URL used to create automatic devices is:
+Základní formát názvu hostitele nebo adresy URL používaného k vytvoření automatických zařízení je:
 
-- for DoT and DoQ:
+- pro DoT a DoQ:
 
     ```none
     ${TYPE}-${SERVERID}-${HUMANID}.d.adguard-dns.com
     ```
 
-- for DoH:
+- pro DoH:
 
     ```none
     https://d.adguard-dns.com/dns-query/${TYPE}-${SERVERID}-${HUMANID}
     ```
 
-### Device type
+### Typ zařízení
 
-Device types are used to more easily distinguish between various devices in the UI. A device type is required for automatic identification of a device.
+Typy zařízení slouží k tomu, aby se v uživatelském rozhraní snáze rozlišovaly různé typy zařízení. Pro automatickou identifikaci zařízení je nutné zadat typ zařízení.
 
-The following abbreviations are supported:
+Jsou podporovány následující zkratky:
 
-- `adr`: Android devices.
-- `gam`: Gaming consoles.
-- `ios`: Apple iOS and other Apple operating systems for mobile devices.
-- `lnx`: Devices with Linux-based operating systems.
-- `mac`: Apple macOS devices.
-- `rtr`: Routers.
-- `stv`: Smart TVs.
-- `win`: Microsoft Windows devices.
-- `otr`: Generic devices.
+- `adr`: Zařízení Android.
+- `gam`: Herní konzole.
+- `ios`: Apple iOS a další operační systémy Apple pro mobilní zařízení.
+- `lnx`: Zařízení s operačními systémy založenými na Linuxu.
+- `mac`: Zařízení Apple macOS.
+- `rtr`: Routery.
+- `stv`: Chytré TV.
+- `win`: Zařízení Microsoft Windows.
+- `otr`: Obecná zařízení.
 
-### DNS server ID
+### ID DNS serveru
 
-The next required parameter is the ID of your AdGuard DNS server to which the device is connected.
+Dalším povinným parametrem je ID vašeho serveru AdGuard DNS, ke kterému je zařízení připojeno.
 
-You can obtain the ID from the URL of your _Dashboard → Servers → Server settings_ page. For example, if the URL is `https://adguard-dns.io/en/dashboard/settings/server?server_id=abcd1234`, then the ID of your DNS server is `abcd1234`.
+ID najdete v adrese URL stránky _Hlavní panel → Servery → Nastavení serveru_. Například pokud je adresa URL `https://adguard-dns.io/en/dashboard/settings/server?server_id=abcd1234`, pak je ID vašeho DNS serveru `abcd1234`.
 
-The ID is always precisely eight hexadecimal digits.
+ID se vždy skládá přesně z osmi hexadecimálních číslic.
 
-### Human-readable device identifier
+### Identifikátor zařízení v čitelné podobě
 
-The human-readable identifier part is used to both differentiate devices between each other and also serves as the basis for the device name used in the UI and in the rules with the `client` modifier. These identifiers can be automatically created based on other identifiers such as hostnames registered in your DHCP server.
+Část identifikátoru v čitelné podobě slouží jednak k rozlišení jednotlivých zařízení a jednak jako základ pro název zařízení používaný v uživatelském rozhraní a v pravidlech s modifikátorem `client`. Tyto identifikátory lze automaticky vytvořit na základě jiných identifikátorů, jako jsou například názvy hostitelů registrované na vašem serveru DHCP.
 
-The following rules apply:
+Platí následující pravidla:
 
-- ASCII-only.
+- Pouze ASCII.
 
-- Characters allowed in the identifiers are digits from zero to nine, hyphens, and both upper- and lowercase Latin letters. Any other characters are ignored.
+- V identifikátorech jsou povoleny číslice od nuly do devíti, pomlčky a velká i malá latinská písmena. Všechny ostatní znaky se ignorují.
 
-- The length of the identifier should not be greater than 50 bytes. Anything beyond that will be trimmed.
+- Délka identifikátoru by neměla přesáhnout 50 bajtů. Vše, co přesahuje tento limit, bude oříznuto.
 
-- The identifier should not start or end with a hyphen.
+- Identifikátor by neměl začínat ani končit pomlčkou.
 
-- There should be no sequences of three or more hyphens in a row.
+- V textu by se neměly vyskytovat řady tří nebo více pomlček za sebou.
 
-The device name is formed from the human-readable identifier by replacing all single hyphens with spaces and all double hyphens with single hyphens. For example, a human-readable identifier like `Super--duper-phone` is transformed into the device name `Super-duper phone`.
+Název zařízení se tvoří z identifikátoru v čitelné podobě tak, že se všechny jednoduché pomlčky nahradí mezerami a všechny dvojité pomlčky jednoduchými pomlčkami. Například identifikátor v čitatelné podobě, jako je `Super--duper-phone`, se převede na název zařízení `Super-duper phone`.
 
-### A complete example
+### Kompletní příklad
 
-Here is a simple POSIX shell script that can translate an initial identifier into a complete DNS upstream address to use for automatic device connections:
+Zde je jednoduchý skript pro shell POSIX, který dokáže převést počáteční identifikátor na úplnou adresu DNS upstreamu, kterou lze použít pro automatické připojení zařízení:
 
 ```sh
 devtype='adr'
 serverid='abcd1234'
 
-# For example, from the DHCP server or some other source.
+# Například z DHCP serveru nebo z jiného zdroje.
 initid='This Is My New And ✨Absolutely Amazing✨ SuperPhone-X-123456!!!!!!!'
 humanid="$initid"
 
-# Firstly, replace consecutive hyphens with double hyphens and consecutive spaces with single hyphens, resulting in 'This-Is-My-New-And-✨Absolutely-Amazing✨-SuperPhone--X--123456!!!!!!!'.
+# Nejprve nahraďte po sobě jdoucí pomlčky dvojitými pomlčkami a po sobě jdoucí mezery jednoduchými pomlčkami, čímž vznikne 'This-Is-My-New-And-✨Absolutely-Amazing✨-SuperPhone--X--123456!!!!!!!'.
 humanid="$(printf '%s\n' "$humanid" | sed -e 's/-\+/--/g' -e 's/[[:space:]]\+/-/g' )"
 
-# Secondly, remove non-suitable bytes, resulting in 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone--X--123456'.
+# Za druhé, odstraňte nevhodné bajty, čímž vznikne 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone--X--123456'.
 humanid="$(printf '%s\n' "$humanid" | tr -c -d 'a-zA-Z0-9-')"
 
-# Thirdly, trim to 50 bytes, resulting in 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone--'
+# Za třetí, zkraťte text na 50 bajtů, čímž vznikne 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone--'
 humanid="$(printf '%s\n' "$humanid" | head -c 50)"
 
-# Then, make sure that there aren't any hyphens left at the start and the end of the label to get 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone'
+# Poté se ujistěte, že na začátku a na konci názvu nezůstaly žádné pomlčky, abyste získali 'This-Is-My-New-And-Absolutely-Amazing-SuperPhone'
 humanid="$(printf '%s\n' "$humanid" | sed -e 's/^-\+//g' -e 's/-\+$//g' )"
 
-# Finally, assemble the upstream address. In this case, for DoT or DoQ:
+# Na závěr sestavte adresu na vstupní straně. V tomto případě pro DoT nebo DoQ:
 dns_upstream="${devtype}-${serverid}-${humanid}.d.adguard-dns.com"
 
-# The result is:
+# Výsledek je:
 # adr-abcd1234-This-Is-My-New-And-Absolutely-Amazing-SuperPhone.d.adguard-dns.com
 ```
 
-This will result in an Android device named `This Is My New And Absolutely Amazing SuperPhone` connected to server with ID `abcd1234`.
+Výsledkem bude, že se zařízení Android s názvem `This Is My New And Absolutely Amazing SuperPhone` připojí k serveru s ID `abcd1234`.

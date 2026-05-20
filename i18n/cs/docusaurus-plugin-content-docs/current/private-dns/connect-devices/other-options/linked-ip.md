@@ -30,14 +30,14 @@ Následující pokyny vysvětlují, jak se k zařízení připojit pomocí **pro
 
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
-## How to unassign linked IP
+## Jak zrušit přiřazení připojené IP
 
-The following instructions describe how to **unassign your linked IP address**:
+Následující pokyny popisují, jak **zrušit přiřazení připojené IP adresy**:
 
 1. Otevřete hlavní panel.
-2. Go to your device settings.
-3. Go to _Plain DNS server addresses_.
-4. Under _Linked IPv4 address_, click _Unlink IP address_.
+2. Přejděte do nastavení zařízení.
+3. Přejděte na _Adresy běžných DNS serverů_.
+4. V části _Připojená IPv4 adresa_ klikněte na _Odpojit IP adresu_.
 
    ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
 

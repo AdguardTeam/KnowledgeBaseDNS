@@ -339,7 +339,7 @@ Assurez-vous que vos paramètres TLS sont valides et que le chiffrement est acti
 
 Voici comment générer un tampon DNSCrypt et vérifier votre installation :
 
-1. Go to [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
+1. Allez à [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
 2. Saisissez les données de votre fichier de configuration DNSCrypt. La _clé publique du fournisseur_ correspond à la valeur du champ `public_key` dans votre fichier de configuration DNSCrypt.
 

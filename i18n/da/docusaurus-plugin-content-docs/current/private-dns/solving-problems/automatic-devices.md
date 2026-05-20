@@ -65,9 +65,9 @@ Følgende regler gælder:
 
 - Identifikatorlængden bør være maks. 50 bytes. Alt derudover trimmes væk.
 
-- The identifier should not start or end with a hyphen.
+- Identifikatoren bør ikke startes eller afsluttes med en bindestreg.
 
-- There should be no sequences of three or more hyphens in a row.
+- Der bør ikke være sekvenser af tre eller flere bindestreger i træk.
 
 Enhedsnavnet dannes ud fra den menneskeligt læsbare identifikator ved at erstatte alle enkelte bindestreger med mellemrum og alle dobbelte bindestreger med enkelte bindestreger. F.eks. omdannes en menneskeligt læsbar identifikator såsom `Super--duper-telefon` til enhedsnavnet `Super-duper telefon`.
 

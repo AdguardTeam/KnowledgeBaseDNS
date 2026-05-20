@@ -135,6 +135,8 @@ pattern = "/" regexp "/"
 
 #### `client` {#client-modifier}
 
+**The `client` modifier can only be used in AdGuard Home and AdGuard DNS.**
+
 Модификатор `client` позволяет указывать клиентов, к которым применяется это правило. Есть два основных способа определения клиента:
 
 - По его IP-адресу или CIDR-префиксу. Этот способ подходит для всех типов клиентов.

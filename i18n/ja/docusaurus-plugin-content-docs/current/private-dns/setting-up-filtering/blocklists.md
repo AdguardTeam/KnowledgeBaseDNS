@@ -26,25 +26,25 @@ sidebar_position: 2
 
 広告やトラッキングドメインをブロックするリストを含むフィルタグループです。
 
-![General blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![一般的なブロックリスト \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_ja.png)
 
 ### 地域特化
 
 特定の言語のドメインをブロックするための地域リストで構成されたフィルタグループです。
 
-![Regional blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![地域別ブロックリスト \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_ja.png)
 
 ### セキュリティ
 
 詐欺サイトやフィッシングドメインをブロックするためのルールを含むフィルタグループです。
 
-![Security blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![セキュリティブロックリスト \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_ja.png)
 
 ### その他
 
 サードパーティの開発者からのさまざまなブロックルールを持つブロックリストです。
 
-![Other blocklists \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![その他のブロックリスト \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_ja.png)
 
 ## フィルタを追加する方法
 
@@ -57,28 +57,28 @@ AdGuard DNS フィルタのリストを拡張したい場合は、[GitHubのHost
 3. 「Blocklist request」をクリックし、フォームに記入します。
 4. フォームに記入したら、「_Submit new issue_」をクリックします。
 
-If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
+ご提案のフィルタのブロックルールが既存のルールと重複しない場合、リポジトリに追加されます。
 
 ## ユーザールール
 
 独自のブロックルールを作成することもできます。
 詳細は、[こちらのユーザールールに関する記事](/private-dns/setting-up-filtering/user-rules.md)でご確認ください。
 
-## Custom blocklists
+## カスタムブロックリスト
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+特定のブロックリストをAdGuard DNSに追加する必要がある場合は、URLからダウンロードできます。
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_ja.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. ダッシュボードを開き、左側のメニューで「**サーバー**」をクリックします。
+2. 必要なサーバーを選んでクリック→「ブロックリスト」を開きます。
+3. 「カスタム」セクションで、「＋カスタムブロックリストを追加する」をクリックします。
+4. ブロックリスト名、そのURL、および任意の説明を入力し「次へ」→「追加」をクリックします。
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+各プランには、フィルタリングルール合計数の上限があります（パーソナル — 1,000、チーム — 5,000、エンタープライズ — 100,000）。 この制限が設けられている理由は、ブロックリストがDNSサーバーにダウンロードされるためです。ブロックリストのサイズを無制限に許可するとサーバーの過負荷につながり、パフォーマンスの問題を引き起こす可能性があるのです。
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+カスタムブロックリストが上限を超えると、そのブロックリストは自動的に**無効**になり、その旨をお知らせする通知が表示されます。 ルール上限を超過した新規追加のブロックリストを有効にするには、他のブロックリストを削除するか、ルール上限がより多いプランにアップグレードする必要があります。

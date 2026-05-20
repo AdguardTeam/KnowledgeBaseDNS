@@ -11,7 +11,7 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Denne artikel indeholder dokumentation til [AdGuard DNS API](private-dns/api/overview.md). Besøg [denne side](private-dns/api/changelog.md)for at se den komplette AdGuard DNS API-ændringslog.
 
 ## Aktuel version: 1.10
 
@@ -21,7 +21,7 @@ This article contains documentation for [AdGuard DNS API](private-dns/api/overvi
 
 ##### Resumé
 
-Gets account limits
+Henter kontokvoter
 
 ##### Svar
 
@@ -35,7 +35,7 @@ Gets account limits
 
 ##### Resumé
 
-Lists dedicated IPv4 addresses
+Oplister dedikerede IPv4-adresser
 
 ##### Svar
 
@@ -47,7 +47,7 @@ Lists dedicated IPv4 addresses
 
 ##### Resumé
 
-Allocates new IPv4
+Tildeler ny IPv4
 
 ##### Svar
 
@@ -62,7 +62,7 @@ Allocates new IPv4
 
 ##### Resumé
 
-Lists devices
+Oplister enheder
 
 ##### Svar
 
@@ -74,7 +74,7 @@ Lists devices
 
 ##### Resumé
 
-Creates a new device
+Opretter en ny enhed
 
 ##### Svar
 
@@ -90,7 +90,7 @@ Creates a new device
 
 ##### Resumé
 
-Removes a device
+Fjerner en enhed
 
 ##### Parametre
 
@@ -109,7 +109,7 @@ Removes a device
 
 ##### Resumé
 
-Gets an existing device by ID
+Henter en eksisterede enhed efter ID
 
 ##### Parametre
 
@@ -128,7 +128,7 @@ Gets an existing device by ID
 
 ##### Resumé
 
-Updates an existing device
+Opdaterer en eksisterende enhed
 
 ##### Parametre
 
@@ -150,7 +150,7 @@ Updates an existing device
 
 ##### Resumé
 
-List dedicated IPv4 and IPv6 addresses for a device
+Oplist dedikerede IPv4- og IPv6-adresser til en enhed
 
 ##### Parametre
 
@@ -170,7 +170,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Resumé
 
-Unlink dedicated IPv4 from the device
+Fjern linket dedikeret IPv4 fra enheden
 
 ##### Parametre
 
@@ -189,7 +189,7 @@ Unlink dedicated IPv4 from the device
 
 ##### Resumé
 
-Link dedicated IPv4 to the device
+Link dedikeret IPv4 til enheden
 
 ##### Parametre
 
@@ -212,7 +212,7 @@ Link dedicated IPv4 to the device
 
 ##### Resumé
 
-Gets DNS-over-HTTPS .mobileconfig file.
+Henter DNS-over-HTTPS .mobileconfig-filen.
 
 ##### Parametre
 
@@ -235,7 +235,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Resumé
 
-Generate and set new DNS-over-HTTPS password
+Generér og angiv ny DNS-over-HTTPS adgangskode
 
 ##### Parametre
 
@@ -256,7 +256,7 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Resumé
 
-Gets DNS-over-TLS .mobileconfig file.
+Henter DNS-over-TLS .mobileconfig-filen.
 
 ##### Parametre
 
@@ -279,7 +279,7 @@ Gets DNS-over-TLS .mobileconfig file.
 
 ##### Resumé
 
-Updates device settings
+Opdaterer enhedsindstillinger
 
 ##### Parametre
 
@@ -301,11 +301,11 @@ Updates device settings
 
 ##### Resumé
 
-Lists DNS servers that belong to the user.
+Oplister DNS-servere tilhørende brugeren.
 
 ##### Beskrivelse
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+Oplister DNS-servere tilhørende brugeren. Der er om standard mindst én standardserver.
 
 ##### Svar
 
@@ -317,11 +317,11 @@ Lists DNS servers that belong to the user. By default there is at least one defa
 
 ##### Resumé
 
-Creates a new DNS server
+Opretter en ny DNS-server
 
 ##### Beskrivelse
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+Opretter en ny DNS-server. Tilpassede indstillinger kan vedhæftes, ellers oprettes DNS-serveren med standardindstillinger.
 
 ##### Svar
 
@@ -337,11 +337,11 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 
 ##### Resumé
 
-Removes a DNS server
+Fjerner en DNS-server
 
 ##### Beskrivelse
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
+Fjerner en DNS-server. Alle enheder tilknyttet denne DNS-server flyttes til standard DNS-serveren. Sletning af standard DNS-serveren er forbudt.
 
 ##### Parametre
 
@@ -360,7 +360,7 @@ Removes a DNS server. All devices attached to this DNS server will be moved to t
 
 ##### Resumé
 
-Gets an existing DNS server by ID
+Henter en eksisterede DNS-server efter ID
 
 ##### Parametre
 
@@ -379,7 +379,7 @@ Gets an existing DNS server by ID
 
 ##### Resumé
 
-Updates an existing DNS server
+Opdaterer en eksisterende DNS-server
 
 ##### Parametre
 
@@ -401,7 +401,7 @@ Updates an existing DNS server
 
 ##### Resumé
 
-Updates DNS server settings
+Opdaterer DNS-serverindstillinger
 
 ##### Parametre
 
@@ -423,7 +423,7 @@ Updates DNS server settings
 
 ##### Resumé
 
-Gets filter lists
+Henter filterlister
 
 ##### Svar
 
@@ -437,7 +437,7 @@ Gets filter lists
 
 ##### Resumé
 
-Generates Access and Refresh token
+Genererer tokener for Adgang og Opfriskning
 
 ##### Svar
 
@@ -455,7 +455,7 @@ null
 
 ##### Resumé
 
-Clears query log
+Rydder forespørgselslog
 
 ##### Svar
 
@@ -467,7 +467,7 @@ Clears query log
 
 ##### Resumé
 
-Gets query log
+Henter forespørgselslog
 
 ##### Parametre
 
@@ -496,7 +496,7 @@ Gets query log
 
 ##### Resumé
 
-Revokes a Refresh Token
+Ophæver et Refresh-token
 
 ##### Parametre
 
@@ -518,7 +518,7 @@ null
 
 ##### Resumé
 
-Gets categories statistics
+Henter kategoristatistik
 
 ##### Parametre
 
@@ -542,7 +542,7 @@ Gets categories statistics
 
 ##### Resumé
 
-Gets companies statistics
+Henter virksomhedsstatistik
 
 ##### Parametre
 
@@ -566,7 +566,7 @@ Gets companies statistics
 
 ##### Resumé
 
-Gets detailed companies statistics
+Henter detaljerede virksomhedsstatistikker
 
 ##### Parametre
 
@@ -591,7 +591,7 @@ Gets detailed companies statistics
 
 ##### Resumé
 
-Gets countries statistics
+Henter landestatistikker
 
 ##### Parametre
 
@@ -615,7 +615,7 @@ Gets countries statistics
 
 ##### Resumé
 
-Gets devices statistics
+Henter enhedsstatistikker
 
 ##### Parametre
 
@@ -639,7 +639,7 @@ Gets devices statistics
 
 ##### Resumé
 
-Gets domains statistics
+Henter domænestatistikker
 
 ##### Parametre
 
@@ -663,7 +663,7 @@ Gets domains statistics
 
 ##### Resumé
 
-Gets time statistics
+Henter tidsstatistikker
 
 ##### Parametre
 
@@ -687,7 +687,7 @@ Gets time statistics
 
 ##### Resumé
 
-Lists web services
+Oplister webtjenester
 
 ##### Svar
 

@@ -20,7 +20,7 @@ Pokud jsou API klíče zahrnuty v hlavičce požadavku, lze je použít k autori
 
 #### Příklad požadavku
 
-``` bash
+```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: ApiKey {api_key}'
 ```
@@ -35,12 +35,12 @@ Pokud jsou tokeny zahrnuty v hlavičce požadavku, lze je použít k autorizaci 
 
 #### Příklad požadavku
 
-``` bash
+```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: Bearer {access_token}'
 ```
 
-#### Příklad odpovědi
+#### Vytváření přístupových tokenů pomocí uživatelského jména a hesla
 
 Proveďte požadavek POST na následující URL s danými parametry a vygenerujte `access_token`:
 
@@ -48,6 +48,7 @@ Proveďte požadavek POST na následující URL s danými parametry a vygenerujt
 
 | Parametr        | Popis                                                             |
 |:--------------- |:----------------------------------------------------------------- |
+| **grant_type**  | Musí být `password`                                               |
 | **uživ. jméno** | E-mail účtu                                                       |
 | **heslo**       | Heslo účtu                                                        |
 | mfa_token       | Dvoufaktorový ověřovací token (pokud je povolen v nastavení účtu) |
@@ -63,6 +64,7 @@ V odpovědi obdržíte jak `access_token`, tak i `refresh_token`.
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=password' \
     -d 'username=user%40adguard.com' \
     -d 'password=********' \
     -d 'mfa_token=727810'
@@ -87,15 +89,17 @@ Pro získání nového přístupového tokenu proveďte následující požadave
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parametr          | Popis                                                                     |
-|:----------------- |:------------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN`, pomocí kterého je třeba vygenerovat nový `access_token`. |
+| Parametr          | Popis                                                             |
+|:----------------- |:----------------------------------------------------------------- |
+| **grant_type**    | Musí být `refresh_token`                                          |
+| **refresh_token** | `REFRESH TOKEN` slouží k vygenerování nového přístupového tokenu. |
 
 ##### Příklad požadavku
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=refresh_token' \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
@@ -168,11 +172,89 @@ HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
+### Autorizační kód + PKCE
+
+:::warning
+
+Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Ve své zprávě prosím popište důvod a příklady použití tohoto koncového bodu a uveďte přesměrovací URI. Po schválení obdržíte jedinečný identifikátor klienta, který budete používat v parametru **client_id**.
+
+:::
+
+Postup s autorizačním kódem a PKCE je **doporučeným způsobem integrace** pro nové klienty. Je určen pro veřejné klienty (jednostránkové aplikace, mobilní aplikace) a nevyžaduje klientské tajné heslo.
+
+**Krok 1: Vygenerujte ověřovací kód a kontrolní kód**
+
+Vygenerujte kryptograficky náhodný `code_verifier` (43–128 znaků), poté vypočítejte:
+
+``` text
+code_challenge = BASE64URL(SHA256(ASCII(code_verifier)))
+```
+
+**Krok 2: Přesměrujte uživatele na autorizační koncový bod**
+
+`GET https://api.adguard-dns.io/oapi/v1/oauth_authorize`
+
+| Parametr                    | Požadováno | Popis                                         |
+|:--------------------------- |:---------- |:--------------------------------------------- |
+| **response_type**           | Ano        | Musí být `code`                               |
+| **client_id**               | Ano        | Váš registrovaný identifikátor klienta OAuth2 |
+| **redirect_uri**            | Ano        | Kam přesměrovat po autorizaci                 |
+| **state**                   | Ano        | Náhodný řetězec pro zabránění CSRF            |
+| **code_challenge**          | Ano        | BASE64URL(SHA256(code_verifier))              |
+| **code_challenge_method** | Ano        | Musí být `S256`                               |
+
+Příklad:
+
+```http request
+https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=RANDOM_STATE&code_challenge=CODE_CHALLENGE&code_challenge_method=S256
+```
+
+Po úspěšném ověření vás služba přesměruje na:
+
+```http request
+HTTP/1.1 302 Nalezeno
+Location: REDIRECT_URI?code=AUTH_CODE&state=RANDOM_STATE
+```
+
+**Krok 3: Vyměňte kód za přístupový token**
+
+`POST https://api.adguard-dns.io/oapi/v1/oauth_token`
+
+| Parametr          | Požadováno | Popis                                                |
+|:----------------- |:---------- |:---------------------------------------------------- |
+| **grant_type**    | Ano        | Musí být `authorization_code`                        |
+| **code**          | Ano        | Autorizační kód získaný v kroku 2                    |
+| **client_id**     | Ano        | Váš registrovaný identifikátor klienta OAuth2        |
+| **code_verifier** | Ano        | Původní ověřovací kód vygenerovaný v kroku 1         |
+| **redirect_uri**  | Ano        | Musí se shodovat s `redirect_uri` použitým v kroku 2 |
+
+#### Příklad požadavku
+
+```bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=authorization_code' \
+    -d 'code=SplxlOBeZQQYbYS6WxSbIA' \
+    -d 'client_id=CLIENT_ID' \
+    -d 'code_verifier=dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk' \
+    -d 'redirect_uri=REDIRECT_URI'
+```
+
+##### Příklad odpovědi
+
+```json
+{
+  "access_token": "jTFho_aymtN20pZR5RRSQAzd81I",
+  "token_type": "bearer",
+  "expires_in": 2620978
+}
+```
+
 ## API
 
 ### Odkaz
 
-Viz odkaz na metody [zde](reference.md).
+Viz odkaz na [metody reference](reference.md).
 
 ### Specifikace OpenAPI
 

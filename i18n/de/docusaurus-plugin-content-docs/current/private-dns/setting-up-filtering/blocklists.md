@@ -26,25 +26,25 @@ Um die Blocklisten zu aktivieren:
 
 Eine Gruppe von Filtern, die Listen zum Blockieren von Werbung und Tracker-Domains enthält.
 
-![Allgemeine Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Allgemeine Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_de.png)
 
 ### Regional
 
 Eine Gruppe von Filtern, die regionale Listen zum Blockieren von Domains in bestimmten Sprachen enthält.
 
-![Regionale Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Regionale Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_de.png)
 
 ### Sicherheit
 
 Eine Gruppe von Filtern mit Regeln zum Blockieren betrügerischer Websites und Phishing-Domains.
 
-![Sicherheitsblocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Sicherheitsblocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_de.png)
 
 ### Sonstiges
 
 Blocklisten mit verschiedenen Regeln von Drittentwicklern.
 
-![Sonstige Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Sonstige Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_de.png)
 
 ## Filter hinzufügen
 

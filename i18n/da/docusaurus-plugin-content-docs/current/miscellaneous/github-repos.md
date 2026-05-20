@@ -47,7 +47,7 @@ AdGuard DNS-filter repo — den primære blokeringsliste på DNS-niveau, der bru
 
 ### [AdGuardDNSCLI](https://github.com/AdguardTeam/AdGuardDNSCLI)
 
-AdGuard DNS CLI repo — en letvægts-DNS-klient til AdGuard DNS på tværs af platforme. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+AdGuard DNS CLI repo — en letvægts-DNS-klient til AdGuard DNS på tværs af platforme. Den fungerer som en DNS-server, der videresender DNS-forespørgsler til de korresponderende upstream-opløsere.
 
 ### [DNSBiblioteker](https://github.com/AdguardTeam/DNSLibs)
 

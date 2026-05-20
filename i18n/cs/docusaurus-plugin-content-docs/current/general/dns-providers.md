@@ -1418,12 +1418,12 @@ Tyto servery neposkytují žádné blokování reklam, neuchovávají žádné z
 
 ### uBlock DNS
 
-uBlock DNS is an ad-blocking DNS service. It is free, open-source, and customizable. It includes an online dashboard that does not require an email address or password to access. uBlock DNS is not affiliated with uBlock Origin.
+uBlock DNS je DNS služba pro blokování reklam. Je zdarma, má otevřený zdrojový kód a lze službu přizpůsobit. Obsahuje online ovládací panel, ke kterému není pro přístup potřeba e-mailová adresa ani heslo. uBlock DNS není spojen s uBlock Origin.
 
-uBlock DNS does not provide public DNS addresses. To use it, you need to generate a personal account key and configure your own endpoint.
+uBlock DNS neposkytuje veřejné DNS adresy. Chcete-li tuto službu používat, musíte vygenerovat osobní klíč účtu a nakonfigurovat vlastní koncový bod.
 
-Example (without dashboard access):
+Příklad (bez přístupu k ovládacímu panelu):
 
 `DoH: https://example.ublock.dns/`
 
-> This is an example endpoint. To use uBlock DNS with full functionality, you need to create your own account key.
+> Toto je příklad koncového bodu. Chcete-li používat uBlock DNS v plném rozsahu, musíte si vytvořit vlastní klíč účtu.

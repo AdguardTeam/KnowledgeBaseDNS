@@ -135,6 +135,8 @@ If a rule contains a modifier not listed in this document, the whole rule **must
 
 #### `i̇stemci` {#client-modifier}
 
+**The `client` modifier can only be used in AdGuard Home and AdGuard DNS.**
+
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
 - IP adreslerine veya CIDR öneklerine göre. Bu yol her türlü istemciler için çalışır.

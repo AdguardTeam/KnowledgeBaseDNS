@@ -12,6 +12,19 @@ toc_max_heading_level: 3
 
 Tento článek obsahuje seznam změn pro [AdGuard DNS API](private-dns/api/overview.md).
 
+## v1.13 (28. dubna 2026)
+
+- Do stávajících koncových bodů OAuth 2.0 byla přidána podpora autorizačního kódu a typu oprávnění PKCE:
+  - `GET /oapi/v1/oauth_authorize` — now accepts `response_type=code` with `code_challenge` and `code_challenge_method=S256` to initiate the Authorization Code + PKCE flow (in addition to the existing `response_type=token` Implicit grant)
+  - `POST /oapi/v1/oauth_token` — now accepts `grant_type=authorization_code` to exchange an authorization code for tokens; requires `code`, `client_id`, `code_verifier`, and `redirect_uri`
+  - Jako metoda výzvy kódu je podporována pouze metoda `S256`
+
+## v1.12 (11. března 2026)
+
+- Přidána nová pole pro nastavení bezpečného prohlížení:
+  - `blocking_mode_settings` — umožňuje nastavit vlastní režim blokování (výchozí, REFUSED, NXDOMAIN nebo vlastní IP adresa) speciálně pro funkci bezpečného prohlížení
+  - `typosquatting_protection_enabled` — zajišťuje ochranu před doménami využívajícími překlepy
+
 ## v1.11
 
 _Vydáno 5. listopadu 2025_

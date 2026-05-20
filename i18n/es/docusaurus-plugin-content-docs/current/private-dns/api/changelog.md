@@ -12,6 +12,19 @@ toc_max_heading_level: 3
 
 Este artículo contiene el registro de cambios para la [API de AdGuard DNS] (private-dns/api/overview.md).
 
+## v1.13 (28 April 2026)
+
+- Added Authorization Code + PKCE grant type support to existing OAuth 2.0 endpoints:
+  - `GET /oapi/v1/oauth_authorize` — now accepts `response_type=code` with `code_challenge` and `code_challenge_method=S256` to initiate the Authorization Code + PKCE flow (in addition to the existing `response_type=token` Implicit grant)
+  - `POST /oapi/v1/oauth_token` — now accepts `grant_type=authorization_code` to exchange an authorization code for tokens; requires `code`, `client_id`, `code_verifier`, and `redirect_uri`
+  - Only `S256` is supported as the code challenge method
+
+## v1.12 (11 March 2026)
+
+- Added new safebrowsing settings fields:
+  - `blocking_mode_settings` — allows configuring a custom blocking mode (default, REFUSED, NXDOMAIN, or custom IP address) specifically for safebrowsing
+  - `typosquatting_protection_enabled` — enables protection against typosquatting domains
+
 ## v1.11
 
 _Released on November 5, 2025_

@@ -135,6 +135,8 @@ Als een regel een modifier bevat die niet in dit document is opgenomen, moet de 
 
 #### `cliënt` {#client-modifier}
 
+**De `client`-modifier kan alleen worden gebruikt in AdGuard Home en AdGuard DNS.**
+
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
 - By their IP address or CIDR prefix. This way works for all kinds of clients.

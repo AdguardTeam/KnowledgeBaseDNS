@@ -26,25 +26,25 @@ Cписки блокировки предназначены для гибкой 
 
 Группа фильтров, включающая списки блокировки рекламы и доменов трекеров.
 
-![Основной режим списков блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Основной режим списков блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_ru.png)
 
 ### Региональные
 
 Группа фильтров, состоящая из региональных списков для блокировки доменов на определённых языках.
 
-![Региональные списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Региональные списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_ru.png)
 
 ### Безопасность
 
 Группа фильтров, содержащая правила для блокировки мошеннических сайтов и фишинговых доменов.
 
-![Списки безопасности \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Списки безопасности \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_ru.png)
 
 ### Другие
 
 Списки блокировки с различными правилами блокировки от сторонних разработчиков.
 
-![Другие списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Другие списки блокировки \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_ru.png)
 
 ## Добавление фильтров
 
@@ -64,21 +64,21 @@ Cписки блокировки предназначены для гибкой 
 Вы также можете создать свои собственные правила блокировки.
 Подробнее в статье [Пользовательские правила](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Пользовательские списки блокировки
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Если вам нужно добавить конкретный список блокировки в AdGuard DNS, вы можете скачать его по URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Добавить пользовательский список блокировки](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_ru.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Откройте Панель управления и нажмите _Серверы_ в меню слева
+2. Выберите _Мой сервер → Списки блокировки_
+3. В разделе _Пользовательские_ нажмите _Добавить пользовательский список блокировки_
+4. Введите название списка блокировки, его URL-адрес и описание (при желании), затем нажмите _Добавить_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+В каждой подписке есть ограничение на общее количество правил фильтрации: в Персональной их 1000, в Командной — 5000, в Корпоративной — 100 000. Это ограничение введено потому, что списки блокировки загружаются на DNS-серверы, и разрешение неограниченных размеров списков блокировки может привести к перегрузке серверов и проблемам с производительностью.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Если пользовательский список блокировки превысит лимит, он будет **автоматически отключён**, и вы увидите соответствующее уведомление. Чтобы активировать недавно добавленный список блокировки, превышающий лимит правил, вам потребуется либо удалить другие списки, либо перейти на подписку с более высоким лимитом правил.
