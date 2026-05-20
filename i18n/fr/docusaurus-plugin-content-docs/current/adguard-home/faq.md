@@ -342,7 +342,7 @@ If you are still getting `code=exited status=203/EXEC` or similar errors from `s
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
 ```
 
-See [issue 765] and [issue 3281].
+Voir \[problème 765] et \[problème 3281].
 
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353

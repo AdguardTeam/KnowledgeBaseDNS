@@ -7,16 +7,16 @@ sidebar_position: 4
 
 Здесь вы можете выбрать, какие методы использовать для защиты от злоумышленников. Это защитит вас от посещения фишинговых и поддельных сайтов, а также от возможных утечек конфиденциальных данных.
 
-### Блокировать вредоносные, фишинговые и мошеннические домены
+## Блокировать вредоносные, фишинговые и мошеннические домены
 
 Мы классифицировали более 15 миллионов сайтов и создали базу данных из 1,5 миллиона сайтов, известных как фишинговые и вредоносные. Используя эту базу данных, AdGuard проверяет посещаемые вами сайты, чтобы защитить вас от онлайн-угроз.
 
-### Блокировать недавно зарегистрированные домены
+## Блокировать недавно зарегистрированные домены
 
 Мошенники часто используют недавно зарегистрированные домены для фишинга и мошеннических схем. По этой причине мы разработали специальный фильтр, который определяет срок жизни домена и блокирует его, если он был создан недавно.
 Иногда это может привести к ложным срабатываниям, но статистика показывает, что в большинстве случаев эта настройка всё же защищает наших пользователей от утечки конфиденциальных данных.
 
-### Блокируйте вредоносные домены с помощью списков блокировки
+## Блокируйте вредоносные домены с помощью списков блокировки
 
 AdGuard DNS поддерживает добавление сторонних фильтров блокировки.
 Активируйте фильтры, помеченные как `безопасность`, для дополнительной защиты.
@@ -28,3 +28,9 @@ To learn more about Blocklists, see [the separate article](/private-dns/setting-
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
 Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ _Server settings_ ⭢ _User rules_ ⭢ _Add new rule_.
+
+## Protection against IDN homograph attacks
+
+Some phishing sites use lookalike characters from different alphabets to impersonate legitimate domains — for example, substituting a Cyrillic “o” for a Latin one. This technique is known as an IDN (Internationalized Domain Name) homograph attack.
+
+AdGuard DNS detects and blocks such domains at the DNS level. This feature is disabled by default. To enable it, go to _Security_ → _IDN homograph attacks protection_.

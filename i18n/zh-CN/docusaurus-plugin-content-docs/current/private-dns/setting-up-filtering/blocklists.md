@@ -26,25 +26,25 @@ sidebar_position: 2
 
 包含屏蔽广告和跟踪域名列表的过滤组。
 
-![常规模式拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![常规模式拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_cn.png)
 
 ### 区域
 
 一个包含区域列表，用于屏蔽特定语言中的域名的过滤组。
 
-![区域拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![区域拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_cn.png)
 
 ### 安全
 
 包含规则，用于屏蔽欺诈网站和钓鱼域名的过滤组。
 
-![安全拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![安全拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_cn.png)
 
 ### 其他
 
 来自第三方开发者的各种屏蔽规则的拦截列表。
 
-![其他拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![其他拦截列表 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_cn.png)
 
 ## 添加过滤器
 
@@ -57,28 +57,28 @@ sidebar_position: 2
 3. 点击「_Blocklist request_」并填写表格。
 4. 填写表格后，点击「_Submit new issue_」。
 
-If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
+如果您的过滤器拦截规则与现有列表不重复，它将被添加到仓库中。
 
 ## 用户规则
 
 您也可以创建自己的拦截规则。
 在[用户规则文章](/private-dns/setting-up-filtering/user-rules.md)中了解更多内容。
 
-## Custom blocklists
+## 自定义阻止列表
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+如果您需要将某个特定的阻止列表添加到 AdGuard DNS 中，可以通过 URL 进行下载。
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![添加自定义阻止列表](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_zh_cn.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. 打开控制面板，点击左侧菜单中的「服务器」。
+2. 选择「我的服务器」→「阻止列表」。
+3. 在「自定义」部分，点击「添加自定义阻止列表」。
+4. 输入阻止列表的名称、URL 以及可选的描述，然后点击「添加」。
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+每个订阅方案都有过滤规则总数的限制：个人版：1000 条，团队版：5000 条，企业版：10 万条。 这一限制是因为阻止列表会下载到 DNS 服务器上，允许无限制的列表大小可能导致服务器过载，进而引发性能问题。
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+如果自定义阻止列表超过了规则上限，它**将被自动禁用**，您会看到相应的通知。 要重新启用一个超过规则上限的新增阻止列表，您需要先移除其他阻止列表，或升级到规则上限更高的方案。

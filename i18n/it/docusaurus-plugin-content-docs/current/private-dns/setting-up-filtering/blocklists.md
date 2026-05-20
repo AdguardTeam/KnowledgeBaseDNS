@@ -26,25 +26,25 @@ Per attivare le liste di blocco:
 
 Un gruppo di filtri che include liste per il blocco di annunci e domini di tracciamento.
 
-![Liste di blocco generali \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Liste di blocco generali \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_it.png)
 
 ### Regionale
 
 Un gruppo di filtri composto da liste regionali per bloccare domini in lingue specifiche.
 
-![Liste di blocco regionali \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Liste di blocco regionali \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_it.png)
 
 ### Sicurezza
 
 Un gruppo di filtri contenente regole per il blocco di siti fraudolenti e domini di phishing.
 
-![Liste di blocco di sicurezza \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Liste di blocco di sicurezza \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_it.png)
 
 ### Altro
 
 Liste di blocco con varie regole di blocco da sviluppatori terzi.
 
-![Altre liste di blocco \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Altre liste di blocco \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_it.png)
 
 ## Aggiunta di filtri
 
@@ -64,21 +64,21 @@ Se le regole di blocco del tuo filtro non duplicano le liste esistenti, verrà a
 Puoi anche creare le tue regole di blocco.
 Scopri di più nell'articolo sulle [Regole utente](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Liste blocchi personali
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Se hai bisogno che sia aggiunta ad AdGuard DNS una lista blocchi specifica, puoi scaricarla tramite URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Aggiungi lista blocchi personale](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_it.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Apri il quadro comandi e clicca _Server_ nel menu' a sinistra
+2. Seleziona _Il mio server → Liste blocchi_
+3. Nella sezione _Personale_, clicca _Aggiungi lista blocchi personale_
+4. Inserisci il nome della lista blocchi, il relativo URL e una descrizione facoltativa, quindi clicca _Aggiungi_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+Ciascun piano di abbonamento ha un limite per il numero totale di regole di filtraggio: Personale — mille, Team — 5mila, Aziendale — 100mila. Questa limitazione è in vigore perché le liste blocchi sono scaricate sui server DNS e consentire dimensioni delle liste blocchi senza limiti potrebbe portare a un sovraccarico del server, causando potenzialmente inghippi di prestazioni.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Se una lista blocchi personale supera il limite, sarà **disabilitata automaticamente** e vedrai una notifica corrispondente. Per attivare una lista blocchi appena aggiunta che eccede il limite di regole, dovrai rimuovere altre liste blocchi o aggiornare a un piano con un limite di regole più elevato.

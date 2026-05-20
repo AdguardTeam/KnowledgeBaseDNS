@@ -11,7 +11,7 @@ toc_max_heading_level: 4
     If you want to change it, ask the developers to change the OpenAPI spec.
 -->
 
-This article contains documentation for [AdGuard DNS API](private-dns/api/overview.md). For the complete AdGuard DNS API changelog, visit [this page](private-dns/api/changelog.md).
+Tento článek obsahuje dokumentaci pro [AdGuard DNS API](private-dns/api/overview.md). Pro kompletní seznam změn AdGuard DNS API navštivte [tuto stránku](private-dns/api/changelog.md).
 
 ## Aktuální verze: 1.10
 
@@ -21,7 +21,7 @@ This article contains documentation for [AdGuard DNS API](private-dns/api/overvi
 
 ##### Shrnutí
 
-Gets account limits
+Zjišťuje limity účtu
 
 ##### Odezvy
 
@@ -35,7 +35,7 @@ Gets account limits
 
 ##### Shrnutí
 
-Lists dedicated IPv4 addresses
+Seznam vyhrazených adres IPv4
 
 ##### Odezvy
 
@@ -47,7 +47,7 @@ Lists dedicated IPv4 addresses
 
 ##### Shrnutí
 
-Allocates new IPv4
+Přiděluje nové IPv4
 
 ##### Odezvy
 
@@ -62,7 +62,7 @@ Allocates new IPv4
 
 ##### Shrnutí
 
-Lists devices
+Seznamy zařízení
 
 ##### Odezvy
 
@@ -74,7 +74,7 @@ Lists devices
 
 ##### Shrnutí
 
-Creates a new device
+Vytvoří nové zařízení
 
 ##### Odezvy
 
@@ -90,7 +90,7 @@ Creates a new device
 
 ##### Shrnutí
 
-Removes a device
+Odstraní zařízení
 
 ##### Parametry
 
@@ -109,7 +109,7 @@ Removes a device
 
 ##### Shrnutí
 
-Gets an existing device by ID
+Získá existující zařízení podle ID
 
 ##### Parametry
 
@@ -128,7 +128,7 @@ Gets an existing device by ID
 
 ##### Shrnutí
 
-Updates an existing device
+Aktualizuje existující zařízení
 
 ##### Parametry
 
@@ -150,7 +150,7 @@ Updates an existing device
 
 ##### Shrnutí
 
-List dedicated IPv4 and IPv6 addresses for a device
+Seznam vyhrazených adres IPv4 a IPv6 pro zařízení
 
 ##### Parametry
 
@@ -170,7 +170,7 @@ List dedicated IPv4 and IPv6 addresses for a device
 
 ##### Shrnutí
 
-Unlink dedicated IPv4 from the device
+Odpojení vyhrazené IPv4 od zařízení
 
 ##### Parametry
 
@@ -189,7 +189,7 @@ Unlink dedicated IPv4 from the device
 
 ##### Shrnutí
 
-Link dedicated IPv4 to the device
+Připojení vyhrazené IPv4 k zařízení
 
 ##### Parametry
 
@@ -212,7 +212,7 @@ Link dedicated IPv4 to the device
 
 ##### Shrnutí
 
-Gets DNS-over-HTTPS .mobileconfig file.
+Získá soubor .mobileconfig DNS-over-HTTPS.
 
 ##### Parametry
 
@@ -235,7 +235,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Shrnutí
 
-Generate and set new DNS-over-HTTPS password
+Generování a nastavení nového hesla DNS-over-HTTPS
 
 ##### Parametry
 
@@ -256,7 +256,7 @@ Generate and set new DNS-over-HTTPS password
 
 ##### Shrnutí
 
-Gets DNS-over-TLS .mobileconfig file.
+Získá soubor .mobileconfig DNS-over-TLS.
 
 ##### Parametry
 
@@ -279,7 +279,7 @@ Gets DNS-over-TLS .mobileconfig file.
 
 ##### Shrnutí
 
-Updates device settings
+Aktualizuje nastavení zařízení
 
 ##### Parametry
 
@@ -301,11 +301,11 @@ Updates device settings
 
 ##### Shrnutí
 
-Lists DNS servers that belong to the user.
+Seznam DNS serverů, které patří uživateli.
 
 ##### Popis
 
-Lists DNS servers that belong to the user. By default there is at least one default server.
+Seznam DNS serverů, které patří uživateli. Ve výchozím nastavení je alespoň jeden výchozí server.
 
 ##### Odezvy
 
@@ -317,11 +317,11 @@ Lists DNS servers that belong to the user. By default there is at least one defa
 
 ##### Shrnutí
 
-Creates a new DNS server
+Vytvoří nový DNS server
 
 ##### Popis
 
-Creates a new DNS server. You can attach custom settings, otherwise DNS server will be created with default settings.
+Vytvoří nový DNS server. Můžete připojit vlastní nastavení, jinak bude DNS server vytvořen s výchozím nastavením.
 
 ##### Odezvy
 
@@ -337,11 +337,11 @@ Creates a new DNS server. You can attach custom settings, otherwise DNS server w
 
 ##### Shrnutí
 
-Removes a DNS server
+Odstraní DNS server
 
 ##### Popis
 
-Removes a DNS server. All devices attached to this DNS server will be moved to the default DNS server. Deleting the default DNS server is forbidden.
+Odstraní DNS server. Všechna zařízení připojená k tomuto DNS serveru budou přesunuta na výchozí DNS server. Odstranění výchozího DNS serveru je zakázáno.
 
 ##### Parametry
 
@@ -360,7 +360,7 @@ Removes a DNS server. All devices attached to this DNS server will be moved to t
 
 ##### Shrnutí
 
-Gets an existing DNS server by ID
+Získá existující DNS server podle ID
 
 ##### Parametry
 
@@ -379,7 +379,7 @@ Gets an existing DNS server by ID
 
 ##### Shrnutí
 
-Updates an existing DNS server
+Aktualizuje existující DNS server
 
 ##### Parametry
 
@@ -401,7 +401,7 @@ Updates an existing DNS server
 
 ##### Shrnutí
 
-Updates DNS server settings
+Aktualizuje nastavení DNS serveru
 
 ##### Parametry
 
@@ -423,7 +423,7 @@ Updates DNS server settings
 
 ##### Shrnutí
 
-Gets filter lists
+Získá seznamy filtrů
 
 ##### Odezvy
 
@@ -437,7 +437,7 @@ Gets filter lists
 
 ##### Shrnutí
 
-Generates Access and Refresh token
+Vygeneruje přístupový a obnovovací token
 
 ##### Odezvy
 
@@ -455,7 +455,7 @@ null
 
 ##### Shrnutí
 
-Clears query log
+Smaže logy dotazů
 
 ##### Odezvy
 
@@ -467,7 +467,7 @@ Clears query log
 
 ##### Shrnutí
 
-Gets query log
+Získá logy dotazů
 
 ##### Parametry
 
@@ -496,7 +496,7 @@ Gets query log
 
 ##### Shrnutí
 
-Revokes a Refresh Token
+Odvolá obnovovací token
 
 ##### Parametry
 
@@ -518,7 +518,7 @@ null
 
 ##### Shrnutí
 
-Gets categories statistics
+Získá statistiky kategorií
 
 ##### Parametry
 
@@ -542,7 +542,7 @@ Gets categories statistics
 
 ##### Shrnutí
 
-Gets companies statistics
+Získá statistiky společností
 
 ##### Parametry
 
@@ -566,7 +566,7 @@ Gets companies statistics
 
 ##### Shrnutí
 
-Gets detailed companies statistics
+Získá podrobné statistiky společností
 
 ##### Parametry
 
@@ -591,7 +591,7 @@ Gets detailed companies statistics
 
 ##### Shrnutí
 
-Gets countries statistics
+Získá statistiky zemí
 
 ##### Parametry
 
@@ -615,7 +615,7 @@ Gets countries statistics
 
 ##### Shrnutí
 
-Gets devices statistics
+Získá statistiky zařízení
 
 ##### Parametry
 
@@ -639,7 +639,7 @@ Gets devices statistics
 
 ##### Shrnutí
 
-Gets domains statistics
+Získá statistiky domén
 
 ##### Parametry
 
@@ -663,7 +663,7 @@ Gets domains statistics
 
 ##### Shrnutí
 
-Gets time statistics
+Získá statistiky času
 
 ##### Parametry
 
@@ -687,7 +687,7 @@ Gets time statistics
 
 ##### Shrnutí
 
-Lists web services
+Vypíše webové služby
 
 ##### Odezvy
 

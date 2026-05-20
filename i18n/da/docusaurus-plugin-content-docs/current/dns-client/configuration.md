@@ -3,7 +3,7 @@ title: Opsætningsfil
 sidebar_position: 2
 ---
 
-See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
+Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][yaml] opsætningsfil med kommentarer.
 
 <!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
@@ -239,8 +239,8 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 - `timestamp`: Angiver, om et tidsstempel skal medtages i logposterne.
 
-  **Eks.:** `false`
+  **Eksempel:** `false`
 
 - `verbose`: Angiver om loggen skal være mere udførlig.
 
-  **Eks.:** `false`
+  **Eksempel:** `false`

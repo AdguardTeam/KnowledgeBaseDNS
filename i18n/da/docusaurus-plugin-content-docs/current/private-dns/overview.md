@@ -97,103 +97,103 @@ If you're trying to link a residential IP address and AdGuard DNS does not allow
 
 -->
 
-## Private AdGuard DNS features
+## Private AdGuard DNS-funktioner
 
 ### Statistikker
 
-In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
+På fanen *Statistik* fremgår alle de opsummerede statistikker over DNS-forespørgsler foretaget af enheder tilsluttet Private AdGuard  DNS. Den viser det samlede antal samt geografi for forespørgsler, antallet af blokerede forespørgsler, en liste over virksomhederne forespørgslerne blev rettet til, forespørgselstyper og hyppigst forespurgte domæner.
 
-![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
+![Private AdGuard DNS-kontrolpanel, statistik](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
 ### Trafikdestination
 
-This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
+Denne funktion viser målene for enhedernes DNS-forespørgsler. Ud over at se kortet over forespørgselsmål kan oplysningerne filtreres efter dato, enhed og land.
 
-![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
+![Private AdGuard DNS-kontrolpanel, trafik](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
 ### Virksomheder
 
-This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
+Denne fane muliggør hurtigt at tjekke, hvilke virksomheder, som sender flest forespørgsler, og hvilke, som har flest blokerede forespørgsler.
 
-![Private AdGuard DNS dashboard companies](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
+![Private AdGuard DNS-kontrolpanel, virksomheder](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/companies.png)
 
 ### Forespørgselslog
 
-This is a detailed log where you can check out the information on every single request and also sort requests by status, type, company, device, time, country.
+Dette er en detaljeret log, hvori der kan tjekkes oplysningerne om hver enkelt forespørgsel samt sorteres forespørgsler efter status, type, virksomhed, enhed, tid, land.
 
-![Private AdGuard DNS dashboard query log](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
+![Private AdGuard DNS-kontrolpanel, forespørgselslog](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/query_log.png)
 
-## Server settings
+## Serverindstillinger
 
-This section features a range of settings allowing you to customize the operation of private AdGuard DNS, ensuring the Internet functions exactly as you desire.
+Dette afsnit indeholder en række indstillinger, som muliggør driftstilpasning af Private AdGuard DNS, hvilket sikrer, at internet fungerer præcist som ønsket.
 
-### Blocklists management
+### Sortlistehåndtering
 
-The *Blocklists* feature allows you to specify which domains you want to block and which you don't. Choose from a variety of blocklists for different purposes.
+Funktionen *Sortlister* giver mulighed for at angive, hvilke domæner, som skal blokeres, og hvilke, som ikke skal. Vælg mellem et bredt udvalg af sortlister til forskellige formål.
 
-![Private AdGuard DNS dashboard blocklists](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
+![Private AdGuard DNS-kontrolpanel, sortlister](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/blocklists.png)
 
-### Security settings
+### Sikkerhedsindstillinger
 
-Even if you're aware of all the tricks online scammers use, there's always a risk you'll accidentally click a malicious link. To protect yourself from such accidents, go to the *Security settings* section and check the boxes next to the options listed there.
+Selv ved opmærksomhed på alle onlinesvindlernes tricks, er der altid en risiko for et utilsigtet klik på et ondsindet link. For at beskytte mod sådanne uheld, gå til afsnittet *Sikkerhedsindstillinger* og markér afkrydsningsfelterne ud for de her anførte valgmuligheder.
 
-The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
+Funktionen *Blokér ondsindede, phishing- og svindeldomæner* blokerer domæner fra den dedikerede database. *Blokér nyregistrerede domæner* blokerer alle domæner registreret for mindre end 30 dage siden, og som ofte anses for risikable for onlinefortroligheden.
 
 ### Forældrekontrol
 
-To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
+For at beskytte barn mod onlineindhold, der findes upassende, opsæt og aktivér funktionen *Forældrekontrol*. Ud over muligheder såsom blokering af "voksenindhold" og sikker søgning, har vi tilføjet muligheden for manuelt at angive domæner til blokering samt opsætte en tidsplan for, hvornår *Forældrekontrol* skal være aktiv.
 
 ![Forældrekontrol](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
 ### Brugerregler
 
-For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
+I tilfælde, hvor forudinstallerede sortlister med tusindvis af regler ikke er nok, har vi en praktisk funktion kaldet *Brugerregler*. Her kan der manuelt tilføjes tilpassede regler for at blokere/afblokere et bestemt domæne eller importere tilpassede regellister (se [DNS-filtreringsregelsyntaks](../general/dns-filtering-syntax.md)). Listerne kan eksporteres.
 
-![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
+![Private AdGuard DNS-kontrolpanel, brugerregler](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
 ### DNS-over-HTTPS med godkendelse
 
-DNS-over-HTTPS with authentication provides a login and password to connect to the server. This can limit access to unauthorized users and increase security.
+DNS-over-HTTPS med godkendelse giver et login og adgangskode til at oprette forbindelse til serveren. Dette kan begrænse adgangen for uautoriserede brugere og øge sikkerheden.
 
-To enable this feature, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Select *Deny other protocols* to disable alternative protocol usage, ensuring exclusive DNS-over-HTTPS authentication and blocking third-party access.
+For at aktivere denne funktion, gå til *Serverindstillinger* → *Enheder* → *Indstillinger* og skift til en DNS-server med godkendelse. Vælg *Nægt andre protokoller* for at deaktivere alternativ protokolbrug, sikre eksklusiv DNS-over-HTTPS godkendelse og blokering af tredjepartsadgang.
 
 ![DNS-over-HTTPS med godkendelse](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-## Advanced
+## Avanceret
 
-Here you can set the way AdGuard DNS must respond to blocked domains:
+Her kan vælges, hvordan AdGuard DNS skal reagere på blokerede domæner:
 
-- Default — zero IP address
-- NXDOMAIN — the domain does not exist
-- REFUSED — the server has refused to process the request
-- Custom IP — you can manually specify an IP address
+- Standard — nul IP-adresse
+- NXDOMAIN — domænet findes ikke
+- REFUSED — serveren nægtede at behandle forespørgslen
+- Tilpasset IP — der kan manuelt angives en IP-adresse
 
-Additionally, you can adjust the *Time to live* (TTL) setting. This parameter defines the time period (in seconds) that a client device caches the response to a DNS request. A higher TTL means that even if a previously blocked domain is unblocked, it may still appear as blocked for a while. A TTL of 0 indicates that the device does not cache responses.
+Derudover kan indstillingen *Time to live* (TTL) justeres. Denne parameter definerer den tidsperiode (i sekunder), i hvilken en klientenhed gemmer svaret på en DNS-forespørgsel. En højere TTL betyder, at selvom et tidligere blokeret domæne afblokeres, kan det stadig se blokeret ud i et stykke tid. En TTL på 0 angiver, at enheden ikke cachelagrer svar.
 
-In the Advanced section, there are three options that can be customized:
+I afsnittet Avanceret findes tre muligheder, som kan tilpasses:
 
-- Block access to iCloud Private Relay. Devices that use iCloud Private Relay may ignore DNS settings. Enabling this option ensures that AdGuard DNS can effectively protect your device.
-- Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
-- Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
+- Blokér adgang til iCloud Private Relay. Enheder, som bruger iCloud Private Relay, ignorerer muligvis DNS-indstillinger. Aktivering af denne mulighed sikrer, at AdGuard DNS kan beskytte enheden effektivt.
+- Blokér Firefox canary-domæne. Denne indstilling forhindrer Firefox i automatisk at skifte til sin DoH-opløser, når AdGuard DNS er sat som overordnet system DNS-tjeneste.
+- Log IP-adresser. Er denne indstilling aktiveret, registreres og vises IP-adresser knyttet til indgående DNS-forespørgsler i Forespørgselslog.
 
 ### Adgangsindstillinger
 
-Here you can manage an access to your DNS server by configuring the following settings:
+Her kan adgangsmulighed til DNS-serveren håndteres via opsætning af flg. indstillinger:
 
-- Allowed clients. Specify which clients are permitted to use your DNS server. Please note that allowed clients are not counted in added access rules, only disallowed clients and domains
+- Tilladte klienter. Angiv klienterne med tilladelse til at bruge DNS-serveren. Bemærk, at tilladte klienter ikke tælles i tilføjede adgangsregler, kun ikke-tilladte klienter og domæner
 
-![Added rules](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
+![Tilføjede regler](https://cdn.adtidy.org/content/kb/dns/private/rules_added.png)
 
-- Disallowed clients. List clients that are denied to use your DNS server
-- Disallowed domains. Specify domain names that will be denied access to your DNS server. Wildcards and DNS filtering rules can also be listed here
+- Ikke-tilladte klienter. Angiv klienter, som nægtes brug af DNS-serveren
+- Ikke-tilladte domæner. Angiv domænenavne, som nægtes adgang til DNS-serveren. Jokertegn og DNS-filtreringsregler kan også angives her
 
 :::note
 
-If you only want to use DNS on certain AS numbers or IP addresses, you should block everything else in the Disallowed clients field. Simply allowing only the necessary numbers and addresses in the *Allowed clients* field won’t be enough.
+Ønskes kun at brug af DNS på bestemte AS-numre eller IP-adresser, bør alt andet blokeres i feltet Ikke-tilladte klienter. Det vil ikke være nok blot at tillade de nødvendige numre og adresser i feltet *Tilladte klienter*.
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
+Ved at opsætte disse muligheder, kan det styres, hvem som bruger DNS-serveren og forhindre potentielle DDoS-angreb. Ikke-tilladte forespørgsler vises ikke i Forespørgselslog, og de er gratis.
 
 ### Sådan tilsluttes enheder til AdGuard DNS
 

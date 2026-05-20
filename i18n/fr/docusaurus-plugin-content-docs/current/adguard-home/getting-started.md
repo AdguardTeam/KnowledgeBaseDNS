@@ -1,15 +1,15 @@
 ---
-title: Getting started
+title: Prise en main
 sidebar_position: 2
 ---
 
 ## Installation {#installation}
 
-### Official releases
+### Publications officielles
 
-Download the archive with the binary file for your operating system from the [latest stable release page][releases]. The full list of supported platforms as well as links to beta and edge (unstable) releases can be found on [our platforms page][platforms].
+Téléchargez l'archive contenant le fichier binaire pour votre système d'exploitation à partir de la \[dernière page de version stable]\[versions]. La liste complète des plateformes prises en charge ainsi que les liens vers les versions bêta et edge (non-stables) sont disponibles sur \[notre page plateformes]\[plateformes].
 
-To install AdGuard Home as a service, extract the archive, enter the `AdGuardHome` directory, and run:
+Pour installer AdGuard Home en tant que service, extrayez l'archive, entrez dans le répertoire `AdGuardHome` et exécutez :
 
 ```sh
 ./AdGuardHome -s install
@@ -17,25 +17,25 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 #### Notes
 
-- Users of **Fedora Linux** and its derivatives: install AdGuard Home in the `/usr/local/bin` directory. Failure to do so may cause issues with SELinux and permissions. See [issue 765] and [issue 3281].
+- Utilisateurs de **Fedora Linux** et de ses dérivés : installez AdGuard Home dans le répertoire `/usr/local/bin`. Le non-respect de cela peut causer des problèmes avec SELinux et les autorisations. Voir \[problème 765] et \[problème 3281].
 
-- Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
+- Les utilisateurs de **macOS 10.15 Catalina** et plus récents doivent placer le répertoire de travail d'AdGuard Home dans le répertoire `/Applications`.
 
-### Docker and Snap
+### Docker et Snap
 
-We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
+Nous fournissons également une [image officielle docker AdGuard Home][docker] et un [paquet officiel Snap Store][snap] pour les utilisateurs expérimentés.
 
 ### Autres
 
-Some other unofficial options include:
+Certaines autres options non officielles incluent :
 
-- [Home Assistant add-on][has] maintained by [@frenck](https://github.com/frenck).
+- L'\[Extension Home Assistant]\[est] maintenue par [@frenck](https://github.com/frenck).
 
-- [OpenWrt LUCI app][luci] maintained by [@kongfl888](https://github.com/kongfl888).
+- [OpenWrt LUCI app][luci] maintenue par [@kongfl888](https://github.com/kongfl888).
 
-- [Arch Linux][arch], [Arch Linux ARM][archarm], and other Arch-based OSs, may build via the [`adguardhome` package][aghaur] in the [AUR][aur] maintained by [@graysky2](https://github.com/graysky2).
+- [Arch Linux][arch], [Arch Linux ARM][archarm], et d'autres systèmes d'exploitation basés sur Arch, peuvent être compilés via le [paquet `adguardhome`][aghaur] dans l'[AUR][aur] maintenu par [@graysky2](https://github.com/graysky2).
 
-- [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
+- [Application Cloudron][cloudron] maintenue par [@gramakri](https://github.com/gramakri).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
@@ -51,80 +51,80 @@ Some other unofficial options include:
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
-## First start {#first-time}
+## Premier démarrage {#first-time}
 
-First of all, check your firewall settings. To install and use AdGuard Home, the following ports and protocols must be available:
+Tout d'abord, vérifiez les paramètres de votre pare-feu. Pour installer et utiliser AdGuard Home, les ports et protocoles suivants doivent être disponibles :
 
-- 3000/TCP for the initial installation;
-- 80/TCP for the web interface;
-- 53/UDP for the DNS server.
+- 3000/TCP pour l'installation initiale;
+- 80/TCP pour l'interface web;
+- 53/UDP pour le serveur DNS.
 
-You may need to open additional ports for protocols other than plain DNS, such as DNS-over-HTTPS.
+Vous devrez peut-être ouvrir des ports supplémentaires pour des protocoles autres que le DNS simple, tels que DNS-over-HTTPS.
 
-DNS servers bind to port 53, which requires superuser privileges most of the time, [see below](#running-without-superuser). Therefore, on Unix systems, you will need to run it with `sudo` or `doas` in terminal:
+Les serveurs DNS se lient au port 53, ce qui nécessite des privilèges de super-utilisateur la plupart du temps, [voir ci-dessous](#running-without-superuser). Par conséquent, sur les systèmes Unix, vous devrez le lancer avec `sudo` ou `doas` dans le terminal :
 
 ```sh
 sudo ./AdGuardHome
 ```
 
-On Windows, run `cmd.exe` or PowerShell with admin privileges and run `AdGuardHome.exe` from there.
+Sur Windows, exécutez `cmd.exe` ou PowerShell avec des privilèges d'administrateur et exécutez `AdGuardHome.exe` à partir de là.
 
-When you run AdGuard Home for the first time, it starts listening on `0.0.0.0:3000` and prompts you to open it in your browser:
+Lorsque vous exécutez AdGuard Home pour la première fois, il commence à écouter sur `0.0.0.0:3000` et vous invite à l'ouvrir dans votre navigateur :
 
 ```none
-AdGuard Home is available at the following addresses:
-go to http://127.0.0.1:3000
-go to http://[::1]:3000
+AdGuard Home est disponible aux adresses suivantes :
+aller à http://127.0.0.1:3000
+aller à http://[::1]:3000
 […]
 ```
 
-There you will go through the initial configuration wizard.
+Là, vous passerez par l'assistant de configuration initiale.
 
-![AdGuard Home network interface selection screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
+![Écran de sélection de l'interface réseau AdGuard Home](https://cdn.adtidy.org/content/kb/dns/adguard-home/install2.png)
 
-![AdGuard Home user creation screen](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
+![Écran de création d'utilisateur AdGuard Home](https://cdn.adtidy.org/content/kb/dns/adguard-home/install3.png)
 
-See [our article on running AdGuard Home securely](running-securely.md) for guidance on how to select the initial configuration that fits you best.
+Voir [notre article sur l'exécution d'AdGuard Home en toute sécurité](running-securely.md) pour des conseils sur la manière de choisir la configuration initiale qui vous convient le mieux.
 
-## Running as a service {#service}
+## Fonctionnement en tant que service {#service}
 
-The next step would be to register AdGuard Home as a system service (aka daemon). To install AdGuard Home as a service, run:
+L'étape suivante consiste à enregistrer AdGuard Home en tant que service système (alias daemon). Pour installer AdGuard Home en tant que service, exécutez :
 
 ```sh
 sudo ./AdGuardHome -s install
 ```
 
-On Windows, run `cmd.exe` with admin privileges and run `AdGuardHome.exe -s install` to register a Windows service.
+Sur Windows, exécutez `cmd.exe` avec des privilèges d'administrateur et exécutez `AdGuardHome.exe -s install` pour enregistrer un service Windows.
 
-Here are the other commands you might need to control the service:
+Voici les autres commandes dont vous pourriez avoir besoin pour contrôler le service :
 
-- `AdGuardHome -s uninstall`: Uninstall the AdGuard Home service.
-- `AdGuardHome -s start`: Start the service.
-- `AdGuardHome -s stop`: Stop the service.
-- `AdGuardHome -s restart`: Restart the service.
-- `AdGuardHome -s status`: Show the current service status.
+- `AdGuardHome -s uninstall` : Désinstaller le service AdGuard Home.
+- `AdGuardHome -s start` : Démarrer le service.
+- `AdGuardHome -s stop` : Arrêter le service.
+- `AdGuardHome -s restart` : Redémarrer le service.
+- `AdGuardHome -s status` : Afficher l'état actuel du service.
 
-### Logs
+### Les journaux
 
-By default, the logs are written to `stderr` when you run AdGuard Home in a terminal. If you run it as a service, the log output depends on the platform:
+Par défaut, les journaux sont écrits dans `stderr` lorsque vous exécutez AdGuard Home dans un terminal. Si vous l'exécutez en tant que service, la sortie des journaux dépend de la plateforme :
 
-- On macOS, the log is written to `/var/log/AdGuardHome.*.log` files.
+- Sur macOS, le journal est écrit dans des fichiers `/var/log/AdGuardHome.*.log`.
 
-- On other Unixes, the log is written to `syslog` or `journald`.
+- Sur d'autres systèmes Unix, le journal est écrit dans `syslog` ou `journald`.
 
-- On Windows, the log is written to the Windows event log.
+- Sur Windows, le journal est écrit dans le journal d'événements Windows.
 
-You can change this behavior in the AdGuard Home [configuration file][conf].
+Vous pouvez modifier ce comportement dans le [fichier de configuration AdGuard Home][conf].
 
 [conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## Updating {#update}
+## Mise à jour {#update}
 
-![An example of an update notification](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
+![Un exemple de notification de mise à jour](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
 
-When a new version is released, AdGuard Home’s UI shows a notification message and the _Update now_ button. Click this button, and AdGuard Home will be automatically updated to the latest version. Your current AdGuard Home executable file is saved inside the `backup` directory along with the current configuration file, so you can revert the changes, if necessary.
+Lorsqu'une nouvelle version est publiée, l'interface utilisateur d'AdGuard Home affiche un message de notification et le bouton _Mettre à jour maintenant_. Cliquez sur ce bouton, et AdGuard Home sera automatiquement mis à jour vers la version la plus récente. Votre fichier exécutable AdGuard Home actuel est enregistré dans le répertoire `backup` avec le fichier de configuration actuel, afin que vous puissiez revenir en arrière en cas de besoin.
 
-### Manual update {#manual-update}
+### Mise à jour manuelle {#manual-update}
 
 In case the button isn’t shown or an automatic update has failed, you can update manually. We have a [detailed guide on manual updates][mupd], but in short:
 

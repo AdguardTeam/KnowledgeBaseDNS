@@ -26,25 +26,25 @@ sidebar_position: 2
 
 광고 및 추적 도메인을 차단하기 위한 목록을 포함하는 필터 그룹입니다.
 
-![일반 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![일반 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_ko.png)
 
 ### 지역 목록
 
 특정 언어로 된 도메인을 차단하기 위해 지역 목록으로 구성된 필터 그룹입니다.
 
-![지역 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![지역 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_ko.png)
 
 ### 보안
 
 사기성 사이트와 피싱 도메인을 차단하기 위한 규칙을 포함하는 필터 그룹입니다.
 
-![보안 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![보안 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_ko.png)
 
 ### 기타
 
 제3자 개발자로부터 가져온 다양한 차단 규칙이 포함된 차단 목록입니다.
 
-![기타 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![기타 차단 목록 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_ko.png)
 
 ## 필터 추가하는 방법
 
@@ -57,28 +57,28 @@ AdGuard DNS 필터 목록을 확장하고 싶다면, GitHub의 [Hostlistsregistr
 3. **Blocklist request** 클릭하고 양식을 작성합니다.
 4. 양식을 작성한 후에 **Submit new issue**을 클릭합니다.
 
-If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
+필터의 차단 규칙이 기존 목록에 중복되지 않으면 레포지터리에 추가됩니다.
 
 ## 사용자 규칙
 
 나만의 차단 규칙을 생성할 수도 있습니다.
 [사용자 규칙 문서](/private-dns/setting-up-filtering/user-rules.md)에서 자세히 알아보세요.
 
-## Custom blocklists
+## 사용자 정의 차단 목록
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+AdGuard DNS에 특정 차단 목록을 추가해야 하는 경우, URL을 통해 다운로드할 수 있습니다.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![사용자 정의 차단 목록 추가](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_ko.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. 대시보드를 열고 왼쪽 메뉴에서 **서버**를 클릭합니다.
+2. **내 서버 → 차단 목록**을 선택합니다.
+3. **사용자 정의** 섹션에서 **사용자 정의 차단 목록 추가**를 클릭합니다.
+4. 차단 목록 이름, URL, 설명(선택 사항)을 입력한 다음 **추가**를 클릭합니다.
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+각 구독 플랜에는 필터링 규칙의 총 개수 제한이 있습니다. 개인 플랜은 1,000개, 팀 플랜은 5,000개, 엔터프라이즈 플랜은 100,000개입니다. 이 제한은 차단 목록이 DNS 서버로 다운로드되기 때문에 존재하며, 차단 목록 크기를 무제한으로 허용할 경우 서버 과부하를 초래하여 성능 문제를 일으킬 수 있습니다.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+사용자 지정 차단 목록이 제한을 초과하면 **자동으로 비활성화**되며, 해당 알림이 표시됩니다. 규칙 제한을 초과하는 새로 추가된 차단 목록을 활성화하려면 다른 차단 목록을 제거하거나 규칙 제한이 더 높은 요금제로 업그레이드해야 합니다.

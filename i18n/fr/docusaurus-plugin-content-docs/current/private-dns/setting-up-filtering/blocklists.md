@@ -26,25 +26,25 @@ Pour activer les listes de blocage :
 
 Un groupe de filtres qui inclut des listes pour bloquer les publicités et les domaines de suivi.
 
-![Listes de blocage générales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Listes de blocage générales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_fr.png)
 
 ### Régional
 
 Un groupe de filtres composé de listes régionales pour bloquer des domaines dans des langues spécifiques.
 
-![Listes de blocage régionales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Listes de blocage régionales \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_fr.png)
 
 ### Sécurité
 
 Un groupe de filtres contenant des règles pour bloquer des sites frauduleux et des domaines d'hameçonnage.
 
-![Listes de blocage de sécurité \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Listes de blocage de sécurité \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_fr.png)
 
 ### Autres
 
 Listes de blocage avec de diverses règles de blocage provenant des développeurs tiers.
 
-![Autres listes de blocage \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Autres listes de blocage \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_fr.png)
 
 ## Ajout de filtres
 
@@ -64,21 +64,21 @@ Si les règles de blocage de votre filtre ne répètent pas les listes existante
 Vous pouvez également créer vos propres règles de blocage.
 Apprenez plus dans l'[article sur les règles utilisateur](/private-dns/setting-up-filtering/user-rules.md).
 
-## Custom blocklists
+## Listes de blocage personnalisées :
 
-If you need any specific blocklist to be added to AdGuard DNS, you can download it via URL.
+Si vous souhaitez ajouter une liste de blocage spécifique à AdGuard DNS, vous pouvez la télécharger via une URL.
 
-![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+![Ajouter liste de blocage personnalisée](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_fr.png)
 
-1. Open the dashboard and click _Servers_ in the left-hand menu
-2. Select _My server → Blocklists_
-3. In the _Custom_ section, click _Add custom blocklist_
-4. Enter the blocklist name, its URL, and an optional description, then click _Add_
+1. Ouvrez le tableau de bord et cliquez sur _Serveurs_ dans le menu de gauche
+2. Sélectionnez _Mon serveur → Listes de blocage_
+3. Dans la section _Personnalisé_, cliquez sur _Ajouter une liste de blocage personnalisée_
+4. Saisissez le nom de la liste de blocage, son URL et une description facultative, puis cliquez sur _Ajouter_
 
 :::note
 
-Each subscription plan has a limit on the total number of filtering rules: Personal — 1K, Team — 5K, Enterprise — 100K. This limitation is in place because blocklists are downloaded to DNS servers, and allowing unlimited blocklist sizes could lead to server overload, potentially causing performance issues.
+Chaque plan d’abonnement a une limite sur le nombre total de règles de filtrage : Personnel — 1K, Équipe — 5K, Entreprise — 100K. Cette limitation est en place parce que les listes de blocage sont téléchargées vers les serveurs DNS, et autoriser des tailles de listes de blocage illimitées pourrait entraîner une surcharge du serveur, provoquant potentiellement des problèmes de performance.
 
 :::
 
-If a custom blocklist surpasses the limit, it will be **disabled automatically**, and you’ll see a corresponding notification. To enable a newly added blocklist that exceeds the rule limit, you’ll need to either remove other blocklists or upgrade to a plan with a higher rule limit.
+Si une liste de blocage personnalisée dépasse la limite, elle sera **désactivée automatiquement** et vous recevrez une notification correspondante. Pour activer une liste de blocage nouvellement ajoutée qui dépasse la limite de règles, vous devrez soit supprimer d'autres listes de blocage, soit passer à un forfait avec une limite de règles plus élevée.

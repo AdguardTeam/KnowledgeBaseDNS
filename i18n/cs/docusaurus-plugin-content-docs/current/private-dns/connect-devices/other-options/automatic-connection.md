@@ -58,8 +58,8 @@ Přidali jsme šablonu, která generuje odkaz pro konkrétní typ zařízení a 
    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Odkaz jste úspěšně vygenerovali, nyní zkopírujte adresu serveru a použijte ji v jedné z aplikací [AdGuard](https://adguard.com/welcome.html)
 
-## See also
+## Viz také
 
-- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+- V článku [_Automatické připojení zařízení_][adc] jsou uvedeny podrobnější informace o procesu a požadavcích na lidsky čitelný identifikátor.
 
 [adc]: /private-dns/solving-problems/automatic-devices

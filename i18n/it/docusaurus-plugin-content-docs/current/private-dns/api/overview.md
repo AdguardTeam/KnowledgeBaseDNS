@@ -20,7 +20,7 @@ Se incluse nell'intestazione della richiesta, le chiavi API possono essere usate
 
 #### Esempio di richiesta
 
-``` bash
+```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: ApiKey {api_key}'
 ```
@@ -35,22 +35,23 @@ Se inclusi nell'intestazione della richiesta, i token di accesso possono essere 
 
 #### Esempio di richiesta
 
-``` bash
+```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/devices' -i -X GET \
     -H 'Authorization: Bearer {access_token}'
 ```
 
-#### Esempio di risposta
+#### Generating access tokens with username and password
 
 Effettua una richiesta POST per il seguente URL con i parametri dati, per generare `access_token`:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parametro    | Descrizione                                                                         |
-|:------------ |:----------------------------------------------------------------------------------- |
-| **username** | Email del profilo                                                                   |
-| **password** | Password del profilo                                                                |
-| mfa_token    | Token di autenticazione a due fattori (se abilitato nelle impostazioni del profilo) |
+| Parametro      | Descrizione                                                      |
+|:-------------- |:---------------------------------------------------------------- |
+| **grant_type** | Must be `password`                                               |
+| **username**   | Account email                                                    |
+| **password**   | Account password                                                 |
+| mfa_token      | Two-factor authentication token (if enabled in account settings) |
 
 Nella risposta, otterrai sia `access_token` che `refresh_token`.
 
@@ -63,6 +64,7 @@ Nella risposta, otterrai sia `access_token` che `refresh_token`.
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=password' \
     -d 'username=user%40adguard.com' \
     -d 'password=********' \
     -d 'mfa_token=727810'
@@ -87,15 +89,17 @@ Effettua la seguente richiesta POST con i dati parametri per ottenere un nuovo t
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| Parametro         | Descrizione                                                            |
-|:----------------- |:---------------------------------------------------------------------- |
-| **refresh_token** | `REFRESH TOKEN`, con cui dev'essere generato un nuovo token d'accesso. |
+| Parametro         | Descrizione                                          |
+|:----------------- |:---------------------------------------------------- |
+| **grant_type**    | Must be `refresh_token`                              |
+| **refresh_token** | `REFRESH TOKEN` used to generate a new access token. |
 
 ##### Esempio di richiesta
 
 ```bash
 $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
     -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=refresh_token' \
     -d 'refresh_token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
@@ -168,25 +172,103 @@ HTTP/1.1 302 Found
 Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=1jbmuc0m9WTr1T6dOO82
 ```
 
+### Authorization Code + PKCE
+
+:::warning
+
+To access this endpoint, please contact us at **devteam@adguard.com**. In your message, please describe the reason for and use cases of this endpoint, and provide the redirect URI. Once approved, you will receive a unique client identifier to use for the **client_id** parameter.
+
+:::
+
+The Authorization Code + PKCE flow is the **recommended integration method** for new clients. It is designed for public clients (single-page apps, mobile apps) and does not require a client secret.
+
+**Step 1: Generate a code verifier and code challenge**
+
+Generate a cryptographically random `code_verifier` (43–128 characters), then compute:
+
+``` text
+code_challenge = BASE64URL(SHA256(ASCII(code_verifier)))
+```
+
+**Step 2: Redirect the user to the authorization endpoint**
+
+`GET https://api.adguard-dns.io/oapi/v1/oauth_authorize`
+
+| Parametro                   | Obbligatorio | Descrizione                              |
+|:--------------------------- |:------------ |:---------------------------------------- |
+| **response_type**           | Sì           | Must be `code`                           |
+| **client_id**               | Sì           | Your registered OAuth2 client identifier |
+| **redirect_uri**            | Sì           | Where to redirect after authorization    |
+| **state**                   | Sì           | Random string to prevent CSRF            |
+| **code_challenge**          | Sì           | BASE64URL(SHA256(code_verifier))         |
+| **code_challenge_method** | Sì           | Must be `S256`                           |
+
+Esempio:
+
+```http request
+https://api.adguard-dns.io/oapi/v1/oauth_authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&state=RANDOM_STATE&code_challenge=CODE_CHALLENGE&code_challenge_method=S256
+```
+
+After successful authentication, the service redirects to:
+
+```http request
+HTTP/1.1 302 Found
+Location: REDIRECT_URI?code=AUTH_CODE&state=RANDOM_STATE
+```
+
+**Step 3: Exchange the code for an access token**
+
+`POST https://api.adguard-dns.io/oapi/v1/oauth_token`
+
+| Parametro         | Obbligatorio | Descrizione                                    |
+|:----------------- |:------------ |:---------------------------------------------- |
+| **grant_type**    | Sì           | Must be `authorization_code`                   |
+| **code**          | Sì           | Authorization code received in Step 2          |
+| **client_id**     | Sì           | Your registered OAuth2 client identifier       |
+| **code_verifier** | Sì           | The original code verifier generated in Step 1 |
+| **redirect_uri**  | Sì           | Must match the `redirect_uri` used in Step 2   |
+
+#### Esempio di richiesta
+
+```bash
+$ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=authorization_code' \
+    -d 'code=SplxlOBeZQQYbYS6WxSbIA' \
+    -d 'client_id=CLIENT_ID' \
+    -d 'code_verifier=dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk' \
+    -d 'redirect_uri=REDIRECT_URI'
+```
+
+##### Esempio di risposta
+
+```json
+{
+  "access_token": "jTFho_aymtN20pZR5RRSQAzd81I",
+  "token_type": "bearer",
+  "expires_in": 2620978
+}
+```
+
 ## API
 
 ### Riferimento
 
-Sei pregato di consultare i riferimenti del metodo, [qui](reference.md).
+Please see the [method’s reference](reference.md).
 
-### Specifiche OpenAPI
+### OpenAPI spec
 
-Le specifiche di OpenAPI sono disponibili a [https://api.adguard-dns.io/static/swagger/openapi.json][openapi].
+OpenAPI specification is available at [https://api.adguard-dns.io/swagger/openapi.json][openapi].
 
-Puoi utilizzare diversi strumenti per visualizzare l'elenco dei metodi API disponibili. Ad esempio, puoi aprire questo file su [https://editor.swagger.io/][swagger].
+You can use different tools to view the list of available API methods. For instance, you can open this file in [https://editor.swagger.io/][swagger].
 
 ### Registro delle modifiche
 
-Il registro delle modifiche completo dell'API DNS di AdGuard è disponibile su [questa pagina](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
 
 ## Feedback
 
-Se vorresti che quest'API fosse estesa con nuovi metodi, ti preghiamo di inviarci un'email a `devteam@adguard.com` e di farci sapere cosa vorresti fosse aggiunto.
+If you would like this API to be extended with new methods, please email us to `devteam@adguard.com` and let us know what you would like to be added.
 
-[openapi]: https://api.adguard-dns.io/static/swagger/openapi.json
+[openapi]: https://api.adguard-dns.io/swagger/openapi.json
 [swagger]: https://editor.swagger.io/

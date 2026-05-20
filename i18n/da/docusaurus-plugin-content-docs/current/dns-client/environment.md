@@ -3,41 +3,41 @@ title: Miljø
 sidebar_position: 3
 ---
 
-AdGuard DNS CLI uses [environment variables][wiki-env] to store part of the configuration. The rest of the configuration is stored in the [configuration file][conf].
+AdGuard DNS CLI bruger [miljøvariablen][wiki-env] til at gemme en del af opsætningen. Den øvrige opsætning er gemt i [opsætningsfilen][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
 
 ## `LOG_OUTPUT` {#LOG_OUTPUT}
 
-The log destination, must be an absolute path to the file or one of the special values. See the [logging configuration description][conf-log] in the article about the configuration file.
+Logdestinationen skal være en absolut sti til filen eller en af de specielle værdier. Se [logningsopsætningsbeskrivelsen][conf-log] i artiklen om opsætningsfilen.
 
-This environment variable overrides the [`log.output`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter feltet [`log.output`][conf-log] i opsætningsfilen.
 
-**Default:** **Unset.**
+**Standard:** **Ikke angivet.**
 
 [conf-log]: configuration.md#log
 
 ## `LOG_FORMAT` {#LOG_FORMAT}
 
-The format for log entries. See the [logging configuration description][conf-log] in the article about the configuration file.
+Formatet på logposter. Se [logningsopsætningsbeskrivelsen][conf-log] i artiklen om opsætningsfilen.
 
-This environment variable overrides the [`log.format`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter feltet [`log.format`][conf-log] i opsætningsfilen.
 
-**Default:** **Unset.**
+**Standard:** **Ikke angivet.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
-When set to `1`, log entries have a timestamp. When set to `0`, log entries don’t have it.
+Når sat til `1`, har logposter et tidsstempel. Når sat til `0`, har logposter ingen.
 
-This environment variable overrides the [`log.timestamp`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter feltet [`log.timestamp`][conf-log] i opsætningsfilen.
 
-**Default:** **Unset.**
+**Standard:** **Ikke angivet.**
 
 ## `VERBOSE` {#VERBOSE}
 
-When set to `1`, enable verbose logging. When set to `0`, disable it.
+Når sat til `1`, er detaljeret logning slået til. Når sat til `0`, er det slået fra.
 
-This environment variable overrides the [`log.verbose`][conf-log] field in the configuration file.
+Denne miljøvariabel tilsidesætter feltet [`log.verbose`][conf-log] i opsætningsfilen.
 
-**Default:** **Unset.**
+**Standard:** **Ikke angivet.**

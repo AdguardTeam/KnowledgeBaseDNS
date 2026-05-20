@@ -3,56 +3,56 @@ title: Oversigt
 sidebar_position: 1
 ---
 
-## What is AdGuard DNS CLI?
+## Hvad er AdGuard DNS CLI?
 
-A cross-platform lightweight DNS client for [AdGuard DNS]. It operates as a DNS server that forwards DNS requests to the corresponding upstream resolvers.
+En krydsplatforms, letvægts DNS-klient til [AdGuard DNS]. Den fungerer som en DNS-server, der videresender DNS-forespørgsler til de korresponderende upstream-opløsere.
 
 [AdGuard DNS]: https://adguard-dns.io
 
-## Quick start {#start}
+## Hurtigstart {#start}
 
-Supported operating systems:
+Understøttede operativsystemer:
 
 - Linux
 - macOS
 - Windows
 
-Supported CPU architectures:
+Understøttede CPU-arkitekturer:
 
 - 64-bit ARM
 - AMD64
 - i386
 
-## Getting started {#start-basic}
+## Komme i gang {#start-basic}
 
-### Unix-like operating systems {#start-basic-unix}
+### UNIX-agtige operativsystemer {#start-basic-unix}
 
-1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
+1. Download og udpak `.tar.gz`- eller `.zip`-arkivet fra [udgivelsessiden][releases].
 
    :::caution
 
-   On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
+   På macOS er det afgørende, at globalt installerede daemons ejes af `root` (se \[`launchd`-dokumentationen]\[launchd-krav]), så den eksekverbare `adguarddns-cli` skal placeres i mappen `/Applications/` eller i en undermappe heri.
 
    :::
 
-2. Install it as a service by running:
+2. Installér den som en tjeneste ved at eksekvere:
 
    ```sh
    ./adguarddns-cli -s install -v
    ```
 
-3. Edit the configuration file `config.yaml`.
+3. Redigér opsætningsfilen `config.yaml`.
 
-4. Start the service:
+4. Start tjenesten:
 
    ```sh
    ./adguarddns-cli -s start -v
    ```
 
-To check that it works, use any DNS checking utility. For example, using `nslookup`:
+For at tjekke, at det fungerer, brug et hvilket som helst DNS-kontrolværktøj. Anvend f.eks. `nslookup`:
 
 ```sh
-nslookup -debug 'www.example.com' '127.0.0.1'
+nslookup -debug 'www.eksemmpel.com' '127.0.0.1'
 ```
 
 [launchd-requirements]: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
@@ -60,56 +60,56 @@ nslookup -debug 'www.example.com' '127.0.0.1'
 
 ### Windows {#start-basic-win}
 
-Just download and install using the MSI installer from the [releases page][releases].
+Download og installér blot vha. MSI-installationsprogrammet fra [udgivelsessiden][releases].
 
-To check that it works, use any DNS checking utility. For example, using `nslookup.exe`:
+For at tjekke, at det fungerer, brug et hvilket som helst DNS-kontrolværktøj. Anvend f.eks. `nslookup.exe`:
 
 ```sh
-nslookup -debug "www.example.com" "127.0.0.1"
+nslookup -debug "www.eksempel.com" "127.0.0.1"
 ```
 
-## Command-line options {#opts}
+## Kommandolinjemuligheder {#opts}
 
-Each option overrides the corresponding value provided by the configuration file and the environment.
+Hver valgmulighed tilsidesætter den korresponderende værdi fra opsætningsfilen og miljøet.
 
-### Help {#opts-help}
+### Hjælp {#opts-help}
 
-Option `-h` makes AdGuard DNS CLI print out a help message to standard output and exit with a success status-code.
+Valgmulighed `-h` får AdGuard DNS CLI til at udskrive en hjælpemeddelelse til standardoutput og afslutte med en udført-statuskode.
 
-### Service {#opts-service}
+### Tjeneste {#opts-service}
 
-Option `-s <value>` specifies the OS service action. Possible values are:
+Mulighed `-s <value>` angiver OS-tjenestehandlingen. Gyldige værdier er:
 
-- `install`: installs AdGuard DNS CLI as a service
-- `restart`: restarts the running AdGuard DNS CLI service
-- `start`: starts the installed AdGuard DNS CLI service
-- `status`: shows the status of the installed AdGuard DNS CLI service
-- `stop`: stops the running AdGuard DNS CLI
-- `uninstall`: uninstalls AdGuard DNS CLI service
+- `install`: Installerer AdGuard DNS CLI som en tjeneste
+- `restart`: Genstarter den kørende AdGuard DNS CLI-tjeneste
+- `start`: Starter den installerede AdGuard DNS CLI-tjeneste
+- `status`: Viser statussen på den installerede AdGuard DNS CLI-tjeneste
+- `stop`: Stopper den kørende AdGuard DNS CLI
+- `uninstall`: Afinstallerer AdGuard DNS CLI-tjenesten
 
-### Verbose {#opts-verbose}
+### Udførlig {#opts-verbose}
 
-Option `-v` enables the verbose log output.
+Valgmulighed `-v` aktiverer det udførlige logoutput.
 
 ### Version {#opts-version}
 
-Option `--version` makes AdGuard DNS CLI print out the version of the application to standard output and exit with a success status-code.
+Valgmuligheden `--version` får AdGuard DNS CLI til at udskrive versionen på applikationen til standardoutput og afslutte med en udført-statuskode.
 
-## Configuration {#conf}
+## Opsætning {#conf}
 
-### File {#conf-file}
+### Fil {#conf-file}
 
-The YAML configuration file is described in [its own article][conf], and there is also a sample configuration file `config.dist.yaml`.  Some configuration parameters can also be overridden using the [environment][env].
+YAML-opsætningsfilen er beskrevet i [sin egen artikel][conf], og der findes også en eksempel-opsætningsfil `config.dist.yaml`.  Visse opsætningsparametre kan også tilsidesættes vha. [environment][env].
 
 [conf]: configuration.md
 [env]: environment.md
 
-## Exit codes {#exit-codes}
+## Afslutningskoder {#exit-codes}
 
-There are a few different exit codes that may appear under different error conditions:
+Der er et nogle forskellige afslutningskoder, som kan vises under forskellige fejltilstande:
 
-- `0`: Successfully finished and exited, no errors.
+- `0`: Vellykket fuldført, ingen fejl.
 
-- `1`: Internal error, most likely a misconfiguration.
+- `1`: Intern fejl, højst sandsynligt en fejlopsætning.
 
-- `2`: Bad command-line argument or value.
+- `2`: Forkert kommandolinjeargument eller -værdi.

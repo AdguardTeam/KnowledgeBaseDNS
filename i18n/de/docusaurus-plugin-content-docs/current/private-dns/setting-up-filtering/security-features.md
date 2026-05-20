@@ -7,16 +7,16 @@ Sicherheitseinstellungen in AdGuard DNS sind eine Reihe von Konfigurationen, die
 
 Hier können Sie wählen, mit welchen Methoden Sie sich vor Angreifern schützen möchten. Dies schützt Sie vor dem Besuch von Phishing- und gefälschten Websites sowie vor möglicher Offenlegung sensibler Daten.
 
-### Bösartige, Phishing- und Betrugsdomains sperren
+## Bösartige, Phishing- und Betrugsdomains sperren
 
 Bis heute haben wir über 15 Millionen Websites kategorisiert und eine Datenbank mit 1,5 Millionen Websites aufgebaut, die für Phishing und Malware bekannt sind. Anhand dieser Datenbank überprüft AdGuard die von Ihnen besuchten Websites, um Sie vor Online-Bedrohungen zu schützen.
 
-### Neu registrierte Domains blockieren
+## Neu registrierte Domains blockieren
 
 Betrüger verwenden häufig erst vor kurzem registrierte Domains für Phishing- und Betrugsversuche. Aus diesem Grund haben wir einen speziellen Filter entwickelt, der die Lebensdauer einer Domain erkennt und sie sperrt, wenn sie erst kürzlich erstellt wurde.
 Manchmal kann dies zu Fehlalarmen führen, aber Statistiken zeigen, dass diese Einstellung in den meisten Fällen unsere Nutzer:innen vor dem Verlust vertraulicher Daten schützt.
 
-### Bösartige Domains mithilfe von Sperrlisten sperren
+## Bösartige Domains mithilfe von Sperrlisten sperren
 
 AdGuard DNS unterstützt das Hinzufügen von Filtern zum Sperren von Drittanbietern.
 Aktivieren Sie die mit „Sicherheit“ gekennzeichneten Filter für zusätzlichen Schutz.
@@ -28,3 +28,9 @@ To learn more about Blocklists, see [the separate article](/private-dns/setting-
 AdGuard DNS detects and blocks suspicious look-alike domains at the DNS level by analyzing patterns such as common typos, swapped characters, and missing or extra letters. It blocks the request before a connection is even established.
 
 Because this feature relies on similarity detection, legitimate domains that resemble popular websites may occasionally be flagged. If that happens, you can add the domain to the allowlist by going to [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ _Server settings_ ⭢ _User rules_ ⭢ _Add new rule_.
+
+## Protection against IDN homograph attacks
+
+Some phishing sites use lookalike characters from different alphabets to impersonate legitimate domains — for example, substituting a Cyrillic “o” for a Latin one. This technique is known as an IDN (Internationalized Domain Name) homograph attack.
+
+AdGuard DNS detects and blocks such domains at the DNS level. This feature is disabled by default. To enable it, go to _Security_ → _IDN homograph attacks protection_.

@@ -19,13 +19,13 @@ AdGuard DNS-filtreringsregelsyntaks kan bruges til at gøre regler mere fleksibl
 
 Der er tre forskellige tilgange til at skrive værtsblokeringslister:
 
-- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. På denne måde er blokeringslister kompatible med browser-adblockere.
+- [Adblock-stil syntaks][]: Den moderne tilgang til at skrive filtreringsregler baseret på brug af en delmænge af Adblock-stil regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
 
 - [`/etc/hosts` syntaks](#etc-hosts-syntax): Den gamle, gennemprøvede tilgang, der bruger samme værtsfilsyntakser som operativsystemerne.
 
 - [Syntaks kun til domæner](#domains-only-syntax): En simpel liste over domænenavne.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Den har et par vigtige fordele ift. den gamle syntakstype:
+Såfrremt en sortliste oprettes, anbefales brug af [Adblock-stil syntaksen][]. Den har et par vigtige fordele ift. den gamle syntakstype:
 
 - **Blokeringslistestørrelse.** Ved at bruge mønstertilpasning kan man have én enkelt regel i stedet for hundredvis af `/etc/hosts`-poster.
 
@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Udvidelsesmuligheder.** I det seneste årti har Adblock-syntakstypen udviklet sig meget, og vi ser ingen grund til ikke at udvide den yderligere og tilbyde flere funktioner til netværksniveau-blockere.
 
-Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af sortlister. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+Vedligeholder man enten en sortliste af typen `/etc/hosts` eller flere filtreringslister (uanset type), tilbyder vi et værktøj til kompilering af sortlister. Vi har kaldt den [Hostlist-kompiler][] og bruger den selv til at oprette [AdGuard DNS-filtre][].
 
 ## Basiseksempler {#basic-examples}
 
@@ -134,6 +134,8 @@ Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal h
 :::
 
 #### `client` {#client-modifier}
+
+**Modifikatoren `client` kan kun bruges i AdGuard Home og AdGuard DNS.**
 
 Modifikatoren `client` muliggør at angive de klienter, for hvilke reglen anvendes. Der er to hovedmåder at identificere en klient på:
 
@@ -515,7 +517,7 @@ eksempel.org
 eksempel.net # dette er også en kommentar
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
+Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-stil syntaks][] regel.
 
 ## Hostliste-kompiler {#hostlist-compiler}
 
@@ -537,12 +539,14 @@ Hvad den er i stand til:
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
-[Adblock-style syntax]: #adblock-style-syntax
+[Adblock-stil syntaks]: #adblock-style-syntax
+
+[Adblock-stil syntaksen]: #adblock-style-syntax
 [`klient`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 
-[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
-[Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[AdGuard DNS-filtre]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[Hostlist-kompiler]: https://github.com/AdguardTeam/HostlistCompiler
 [Hostlist-kompileren]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
