@@ -54,7 +54,7 @@ If the TTL value is set to 0, responses are not cached, and every request is sen
 
 This setting blocks devices that use iCloud Private Relay.
 
-Private Relay may bypass configured DNS settings and send traffic through Apple's relay infrastructure instead. As a result, DNS filtering may become ineffective.
+Private Relay may bypass configured DNS settings and send traffic through Apple’s relay infrastructure instead. As a result, DNS filtering may become ineffective.
 
 Enable this option if you want to ensure that filtering rules are consistently applied on Apple devices.
 
