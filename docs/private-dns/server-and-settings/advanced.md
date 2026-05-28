@@ -3,7 +3,7 @@ title: Advanced settings
 sidebar_position: 2
 ---
 
-The Advanced settings section is intended for the more experienced user and includes options that may be useful in specific networking, privacy, or troubleshooting scenarios. These settings allow you to fine-tune how your DNS server behaves, how devices connect to it, and how filtering is applied.
+The Advanced settings section is intended for more experienced users and includes options that may be useful in specific networking, privacy, or troubleshooting scenarios. These settings allow you to fine-tune how your DNS server behaves, how devices connect to it, and how filtering is applied.
 
 ## Access & connectivity
 
