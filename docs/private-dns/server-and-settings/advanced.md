@@ -40,7 +40,7 @@ You can choose between several response types:
 
 Different response types may be useful in different scenarios. For example, redirecting requests to a custom IP address allows you to display a local block page instead of simply blocking access.
 
-### TTL (Time-To-Live)
+### TTL (Time to live)
 
 Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server.
 
