@@ -44,7 +44,7 @@ Different response types may be useful in different scenarios. For example, redi
 
 TTL specifies how long a client device should cache a DNS response before re-requesting the DNS server.
 
-Higher TTL values reduce the number of DNS requests and may improve performance, since cached responses are reused longer. However, changes to filtering rules or DNS records may take more time to propagate.
+Higher TTL values reduce the number of DNS requests and may improve performance, since cached responses are reused for a longer period of time. However, changes to filtering rules or DNS records may take more time to propagate.
 
 If TTL is set to 0, responses are not cached and every request is sent directly to the DNS server.
 
