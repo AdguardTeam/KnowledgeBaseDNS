@@ -38,7 +38,7 @@ You can choose between several response types:
 - **NXDOMAIN**: Respond with NXDOMAIN code
 - **Custom IP**: Respond with a manually set IP address
 
-Different response types may be useful in different scenarios. For example, redirecting requests to a custom IP can be used to display a local block page instead of simply blocking access.
+Different response types may be useful in different scenarios. For example, redirecting requests to a custom IP address allows you to display a local block page instead of simply blocking access.
 
 ### TTL (Time-To-Live)
 
