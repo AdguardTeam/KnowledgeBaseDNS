@@ -56,7 +56,7 @@ This setting blocks devices that use iCloud Private Relay.
 
 Private Relay may bypass configured DNS settings and send traffic through Apple’s relay infrastructure instead. As a result, DNS filtering may become ineffective.
 
-Enable this option if you want to ensure that filtering rules are consistently applied on Apple devices.
+Enable this option if you want to ensure that filtering rules are consistently applied to Apple devices.
 
 ### Block Firefox canary domain
 
