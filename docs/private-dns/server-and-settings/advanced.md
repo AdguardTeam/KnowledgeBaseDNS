@@ -42,7 +42,7 @@ Different response types may be useful in different scenarios. For example, redi
 
 ### TTL (Time to live)
 
-Time-to-live (TTL) sets the time period (in seconds) for a client device to cache the response to a DNS request and retrieve it from its cache without re-requesting the DNS server.
+TTL specifies how long a client device should cache a DNS response before re-requesting the DNS server.
 
 Higher TTL values reduce the number of DNS requests and may improve performance, since cached responses are reused longer. However, changes to filtering rules or DNS records may take more time to propagate.
 
