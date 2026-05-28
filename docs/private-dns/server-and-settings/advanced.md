@@ -70,7 +70,7 @@ Enable this option if you want Firefox to always use AdGuard DNS filtering.
 
 Chrome may preload resources using its prefetch proxy before users actually open a webpage.
 
-In some cases, these prefetched requests may bypass DNS filtering. This setting forces Chrome to use preflight checks so filtering rules are still applied to preloaded resources.
+In some cases, these prefetched requests may bypass DNS filtering. This setting forces Chrome to perform preflight checks, ensuring that filtering rules are applied to preloaded resources.
 
 Enable this option if you want consistent DNS filtering behavior in Chrome, especially when prefetching is enabled.
 
