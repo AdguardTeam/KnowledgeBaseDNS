@@ -80,4 +80,4 @@ Enable this option if you want consistent DNS filtering behavior in Chrome, espe
 
 By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests.
 
-If enabled, IP addresses will be logged and displayed in the Query Log. This can be useful for debugging or analytics, but may have privacy implications depending on your use case.
+When enabled, IP addresses are logged and displayed in the Query log. While this can be useful for debugging or analytics, it may have privacy implications depending on your use case.
