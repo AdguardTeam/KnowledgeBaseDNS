@@ -3,29 +3,81 @@ title: 高级设置
 sidebar_position: 2
 ---
 
-高级设置部分是为更有经验的用户准备的，包含以下设置。
+The Advanced settings section is intended for more experienced users and includes options that may be useful in specific networking, privacy, or troubleshooting scenarios. These settings allow you to fine-tune how your DNS server behaves, how devices connect to it, and how filtering is applied.
 
-## 对阻止域名的响应
+## Access & connectivity
 
-用户可以选择已拦截请求的 DNS 响应：
+### Setup ID
 
-- **默认**：被 Adblock 规则拦截时反应为零 IP 地址（A记录：0.0.0.0；AAAA记录：::）；被 /etc/hosts 规则拦截时反应为规则中指定 IP 地址。
-- **REFUSED**：以 REFUSED 码响应请求。
-- **NXDOMAIN**：以 NXDOMAIN 码响应。
-- **自定义 IP**：以手动设置的 IP 地址响应。
+A server setup ID allows you to quickly connect devices to your DNS server through the AdGuard DNS app.
 
-## 生存时间（TTL）
+Unlike device-specific identifiers, this ID can be used to connect any device to the server, so it should be kept private. It is especially useful when onboarding multiple devices or simplifying setup for family members or teammates.
 
-生存时间 (TTL) 为客户端装置设定时间周期（以秒为单位）以缓存 DNS 请求的响应，并从其缓存中检索，而无需重新请求 DNS 服务器。 如果 TTL 值较高，最近取消拦截的请求可能在一段时间内仍会显示为已拦截。 如果 TTL 为 0，设备不会缓存响应。
+You can reset the setup ID at any time. Once reset, previously generated setup links will stop working.
 
-## 阻止访问 iCloud 专用代理
+![Setup ID](https://cdn.adtidy.org/content/kb/dns/private/setup-id.png)
 
-使用 iCloud 专用代理的设备可能会忽略其 DNS 设置，因此 AdGuard DNS 无法保护它们。
+### Connect devices automatically
 
-## 阻止 Firefox Canary 域名
+This feature allows devices to be automatically registered when they connect to your DNS server using a generated setup link.
 
-当 AdGuard DNS 在系统范围内配置时，防止火狐浏览器从其设置中切换到 DNS-over-HTTPS 解析器。
+The link contains the device name, device type, and server ID. When a device uses this link, it is automatically added to your DNS server without requiring manual configuration.
 
-## 记录 IP 地址
+This simplifies device onboarding and is especially useful when connecting multiple devices at once.
 
-默认情况下，AdGuard DNS 不记录传入 DNS 请求的 IP 地址。 如果启用此设置，IP 地址将被记录并显示在查询日志中。
+## Filtering behavior
+
+### Respond to blocked domains
+
+This setting defines how the DNS server responds when a domain is blocked.
+
+You can choose between several response types:
+
+- **Default**: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule
+- **REFUSED**: Respond with REFUSED code
+- **NXDOMAIN**: Respond with NXDOMAIN code
+- **Custom IP**: Respond with a manually set IP address
+
+Different response types may be useful in different scenarios. For example, redirecting requests to a custom IP address allows you to display a local block page instead of simply blocking access.
+
+### TTL (Time to live)
+
+TTL specifies how long a client device should cache a DNS response before re-requesting the DNS server.
+
+Higher TTL values reduce the number of DNS requests and may improve performance, since cached responses are reused for a longer period of time. However, changes to filtering rules or DNS records may take more time to propagate.
+
+If the TTL value is set to 0, responses are not cached, and every request is sent directly to the DNS server.
+
+## Bypass protection
+
+### Block access to iCloud Private Relay
+
+This setting blocks devices that use iCloud Private Relay.
+
+Private Relay may bypass configured DNS settings and send traffic through Apple’s relay infrastructure instead. As a result, DNS filtering may become ineffective.
+
+Enable this option if you want to ensure that filtering rules are consistently applied to Apple devices.
+
+### Block Firefox canary domain
+
+Firefox may automatically switch to its own DNS-over-HTTPS (DoH) resolver if it detects support for encrypted DNS.
+
+This setting blocks Firefox’s canary domain, preventing the browser from enabling its own DoH resolver and bypassing your configured DNS server.
+
+Enable this option if you want Firefox to always use AdGuard DNS filtering.
+
+### Force preflight mode for prefetching in Chrome
+
+Chrome may preload resources using its prefetch proxy before users actually open a webpage.
+
+In some cases, these prefetched requests may bypass DNS filtering. This setting forces Chrome to perform preflight checks, ensuring that filtering rules are applied to preloaded resources.
+
+Enable this option if you want consistent DNS filtering behavior in Chrome, especially when prefetching is enabled.
+
+## Logging
+
+### Log IP addresses
+
+By default, AdGuard DNS doesn’t log IP addresses of incoming DNS requests.
+
+When enabled, IP addresses are logged and displayed in the Query log. While this can be useful for debugging or analytics, it may have privacy implications depending on your use case.
