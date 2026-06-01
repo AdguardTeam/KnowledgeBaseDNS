@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS Knowledge Base",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Knowledge base for AdGuard DNS",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "Page Not Found",
     "description": "The title of the 404 page"
@@ -491,13 +499,5 @@
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
     "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "siteConfig.title": {
-    "message": "AdGuard DNS Knowledge Base",
-    "description": "The site title used in the browser tab and metadata"
-  },
-  "siteConfig.tagline": {
-    "message": "Knowledge base for AdGuard DNS",
-    "description": "The site tagline used in meta description"
   }
 }
