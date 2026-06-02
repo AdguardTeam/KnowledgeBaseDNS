@@ -1,10 +1,10 @@
 {
   "siteConfig.title": {
-    "message": "AdGuard DNS Knowledge Base",
+    "message": "AdGuard DNS-Wissensdatenbank",
     "description": "The site title used in the browser tab and metadata"
   },
   "siteConfig.tagline": {
-    "message": "Knowledge base for AdGuard DNS",
+    "message": "Wissensdatenbank für AdGuard DNS",
     "description": "The site tagline used in meta description"
   },
   "theme.NotFound.title": {
