@@ -607,6 +607,8 @@ Regular DNS servers which provide protection from phishing and spyware. They inc
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe]:8443`  | [Add to AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjpmZV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns.quad9.net/dns-query`  | [Add to AdGuard](adguard:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.quad9.net/dns-query&name=dns.quad9.net) |
 | DNS-over-TLS   | `tls://dns.quad9.net`              | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.quad9.net&name=dns.quad9.net) |
+| DNS-over-QUIC  | `quic://dns.quad9.net:853`         | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.quad9.net:853&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.quad9.net:853&name=dns.quad9.net) |
+| DNS-over-HTTP/3 | `h3://dns.quad9.net/dns-query`    | [Add to AdGuard](adguard:add_dns_server?address=h3://dns.quad9.net/dns-query&name=dns.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://dns.quad9.net/dns-query&name=dns.quad9.net) |
 
 #### Unsecured
 
@@ -614,12 +616,14 @@ Unsecured DNS servers don’t provide security blocklists, DNSSEC, or EDNS Clien
 
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
-| DNS, IPv4      | `9.9.9.10` and `149.112.112.10`                    | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.100&name=) |
-| DNS, IPv6      | `2620:fe::10` IP: `2620:fe::fe:10`                               | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::10&name=) |
+| DNS, IPv4      | `9.9.9.10` and `149.112.112.10`                    | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.10&name=) |
+| DNS, IPv6      | `2620:fe::10` and `2620:fe::fe:10`                 | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::10&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::10&name=) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.10:8443`  | [Add to AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::fe:10]:8443`  | [Add to AdGuard](sdns://AQMAAAAAAAAAFVsyNjIwOmZlOjpmZToxMF06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns10.quad9.net/dns-query`  | [Add to AdGuard](adguard:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 | DNS-over-TLS   | `tls://dns10.quad9.net`      | [Add to AdGuard](adguard:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns10.quad9.net&name=dns10.quad9.net) |
+| DNS-over-QUIC  | `quic://dns10.quad9.net:853` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns10.quad9.net:853&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns10.quad9.net:853&name=dns10.quad9.net) |
+| DNS-over-HTTP/3 | `h3://dns10.quad9.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=h3://dns10.quad9.net/dns-query&name=dns10.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://dns10.quad9.net/dns-query&name=dns10.quad9.net) |
 
 #### [ECS](https://en.wikipedia.org/wiki/EDNS_Client_Subnet) support
 
@@ -628,11 +632,13 @@ EDNS Client Subnet is a method that includes components of end-user IP address d
 | Protocol       | Address                                            |                |
 |----------------|----------------------------------------------------|----------------|
 | DNS, IPv4      | `9.9.9.11` and `149.112.112.11`                    | [Add to AdGuard](adguard:add_dns_server?address=9.9.9.11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=9.9.9.11&name=) |
-| DNS, IPv6      | `2620:fe::11` IP: `2620:fe::fe:11`                 | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::11&name=) |
+| DNS, IPv6      | `2620:fe::11` and `2620:fe::fe:11`                 | [Add to AdGuard](adguard:add_dns_server?address=2620:fe::11&name=), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2620:fe::11&name=) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.quad9.net` IP: `9.9.9.11:8443`  | [Add to AdGuard](sdns://AQMAAAAAAAAADTkuOS45LjExOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA) |
 | DNSCrypt, IPv6 |  Provider: `2.dnscrypt-cert.quad9.net` IP: `[2620:fe::11]:8443`  | [Add to AdGuard](sdns://AQMAAAAAAAAAElsyNjIwOmZlOjoxMV06ODQ0MyBnyEe4yHWM0SAkVUO-dWdG3zTfHYTAC4xHA2jfgh2GPhkyLmRuc2NyeXB0LWNlcnQucXVhZDkubmV0) |
 | DNS-over-HTTPS | `https://dns11.quad9.net/dns-query`   | [Add to AdGuard](adguard:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns11.quad9.net/dns-query&name=dns11.quad9.net) |
 | DNS-over-TLS   | `tls://dns11.quad9.net`       | [Add to AdGuard](adguard:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns11.quad9.net&name=dns11.quad9.net) |
+| DNS-over-QUIC  | `quic://dns11.quad9.net:853`  | [Add to AdGuard](adguard:add_dns_server?address=quic://dns11.quad9.net:853&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns11.quad9.net:853&name=dns11.quad9.net) |
+| DNS-over-HTTP/3 | `h3://dns11.quad9.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=h3://dns11.quad9.net/dns-query&name=dns11.quad9.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://dns11.quad9.net/dns-query&name=dns11.quad9.net) |
 
 ### Quadrant Security
 
