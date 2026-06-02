@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS Bilgi Tabanı",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard DNS için bilgi tabanı",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "Sayfa Bulunamadı",
     "description": "The title of the 404 page"

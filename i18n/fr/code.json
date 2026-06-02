@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "Base de connaissances AdGuard DNS",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Base de connaissances pour AdGuard DNS",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "Page introuvable",
     "description": "The title of the 404 page"

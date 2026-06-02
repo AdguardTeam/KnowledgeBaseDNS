@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS 知識庫",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard DNS 知識庫",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "Page Not Found",
     "description": "The title of the 404 page"

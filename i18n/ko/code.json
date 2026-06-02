@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS 지식 창고",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard DNS 지식 창고",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "페이지를 찾을 수 없습니다",
     "description": "The title of the 404 page"

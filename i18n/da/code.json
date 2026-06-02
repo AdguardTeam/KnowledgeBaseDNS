@@ -1,4 +1,12 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS Vidensbase",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Vidensbase til AdGuard DNS",
+    "description": "The site tagline used in meta description"
+  },
   "theme.NotFound.title": {
     "message": "Side ikke fundet",
     "description": "The title of the 404 page"
