@@ -29,8 +29,8 @@ AdGuard DNS detecteert en blokkeert verdachte look-alike-domeinen op DNS-niveau 
 
 Omdat deze functie gebruikmaakt van gelijkenisdetectie, kunnen legitieme domeinen die lijken op populaire websites soms ten onrechte als verdacht worden aangemerkt. Als dat gebeurt, kun je het domein toevoegen aan de toestemmingslijst door naar [_Servers_](https://adguard-dns.io/dashboard/servers) ⭢ Serverinstellingen ⭢ _Gebruikersregels_ ⭢ _Nieuwe regel toevoegen_ te gaan.
 
-## Protection against IDN homograph attacks
+## Bescherming tegen IDN-homograafaanvallen
 
-Some phishing sites use lookalike characters from different alphabets to impersonate legitimate domains — for example, substituting a Cyrillic “o” for a Latin one. This technique is known as an IDN (Internationalized Domain Name) homograph attack.
+Sommige phishingwebsites gebruiken gelijkende tekens uit verschillende alfabetten om legitieme domeinen na te bootsen, bijvoorbeeld door een Cyrillische "o" te vervangen door een Latijnse. Deze techniek staat bekend als een IDN (Internationalized Domain Name) homograafaanval.
 
-AdGuard DNS detects and blocks such domains at the DNS level. This feature is disabled by default. To enable it, go to _Security_ → _IDN homograph attacks protection_.
+AdGuard DNS detecteert en blokkeert dergelijke domeinen op DNS-niveau. Deze functie is standaard uitgeschakeld. Om het in te schakelen, ga naar _Beveiliging_ → _Bescherming tegen IDN-homograafaanvallen_.
