@@ -112,5 +112,5 @@ Examples:
 
 You can find more `ctag` examples as well as the full list of tags in the [article][filtering-syntax-ctag] about the filtering rules syntax.
 
-[filtering-syntax-client]: /general/dns-filtering-syntax.md#client-client-modifier
-[filtering-syntax-ctag]: /general/dns-filtering-syntax.md#ctag-ctag-modifier
+[filtering-syntax-client]: /general/dns-filtering-syntax.md#client-modifier
+[filtering-syntax-ctag]: /general/dns-filtering-syntax.md#ctag-modifier
