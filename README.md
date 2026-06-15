@@ -25,6 +25,9 @@ Alternatively, you can use the [Github app](https://desktop.github.com/) to do t
 
 Then you should open Terminal on your computer and navigate to the directory where you cloned this repo and run this command to install the local dependencies:
 
+> [!NOTE]
+> For `pnpm` version 11 and above you might need to use `pnpm approve-builds`.
+
 - `pnpm install`
 
 ### Lint markdown
