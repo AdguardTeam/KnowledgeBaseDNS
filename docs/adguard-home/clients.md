@@ -98,7 +98,7 @@ Examples:
 
 - `||example.org^$client=192.168.0.0/24`: Block `example.org` for all clients with the IP addresses in the range `192.168.0.0-192.168.0.255`.
 
-You can find more `client` examples in the [article][filtering-syntax] about the filtering rules syntax.
+You can find more `client` examples in the [article][filtering-syntax-client] about the filtering rules syntax.
 
 ### `ctag` rules
 
@@ -110,6 +110,7 @@ Examples:
 
 - `||example.org^$ctag=~device_phone`: Block `example.org` for all clients except those tagged as `device_phone`.
 
-You can find more `ctag` examples as well as the full list of tags in the [article][filtering-syntax] about the filtering rules syntax.
+You can find more `ctag` examples as well as the full list of tags in the [article][filtering-syntax-ctag] about the filtering rules syntax.
 
-[filtering-syntax]: ../general/dns-filtering-syntax.md
+[filtering-syntax-client]: ../general/dns-filtering-syntax.md#client-client-modifier
+[filtering-syntax-ctag]: ../general/dns-filtering-syntax.md#ctag-ctag-modifier
