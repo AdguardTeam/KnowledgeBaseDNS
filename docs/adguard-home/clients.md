@@ -38,13 +38,15 @@ If you want more than just to see the client names, you may want to configure ea
 
 ### Identifying clients
 
+<!-- TODO(m.kazantsev): When the DHCP server article is moved, add a link to this article.-->
+
 First of all, you need to decide how you would like to identify the client. There are several options to do this.
 
 1. **IP address.**  For instance, `192.168.0.1`. This is the easiest way to do this, but it may be not good enough if the IP address changes too often.
 
 1. **CIDR range.**  For instance, `192.168.0.1/24`. Allows attributing a whole range of IP addresses (in the example it is `192.168.0.*`) to the same client.
 
-1. **MAC address.**  Using MAC as a client identifier is **only** possible when AdGuard Home works as the network's [DHCP server](DHCP).
+1. **MAC address.**  Using MAC as a client identifier is **only** possible when AdGuard Home works as the network's DHCP server.
 
 1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#clientid).
 
@@ -96,7 +98,7 @@ Examples:
 
 - `||example.org^$client=192.168.0.0/24`: Block `example.org` for all clients with the IP addresses in the range `192.168.0.0-192.168.0.255`.
 
-You can find more `client` examples in the [article](Hosts-Blocklists#client) about the filtering rules syntax.
+You can find more `client` examples in the [article][filtering-syntax] about the filtering rules syntax.
 
 ### `ctag` rules
 
@@ -108,4 +110,6 @@ Examples:
 
 - `||example.org^$ctag=~device_phone`: Block `example.org` for all clients except those tagged as `device_phone`.
 
-You can find more `ctag` examples as well as the full list of tags in the [article](Hosts-Blocklists#ctag) about the filtering rules syntax.
+You can find more `ctag` examples as well as the full list of tags in the [article][filtering-syntax] about the filtering rules syntax.
+
+[filtering-syntax]: ../general/dns-filtering-syntax.md
