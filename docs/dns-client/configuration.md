@@ -120,14 +120,14 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
         - `device_type`: A type of device which will be created for new clients.
 
-        **Property example:**
+      **Property example:**
 
-        ```yaml
-          'autodevice':
-              - enabled: true
-              - profile_id: 'defa5678'
-              - device_type: '1'
-        ```
+      ```yaml
+        'autodevice':
+            - enabled: true
+            - profile_id: 'defa5678'
+            - device_type: 'lnx'
+      ```
 
     - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
 
@@ -157,7 +157,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used in defining of the HumanID for clients, if it is not defined, an alternative way of generation is used: the HumanID is formed from the IP address.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used in defining of the HumanID for clients. If it is not defined, an alternative way of generation is used: the HumanID is formed from the IP address.
 
   :::
 
