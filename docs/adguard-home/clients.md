@@ -50,7 +50,7 @@ First of all, you need to decide how you would like to identify the client. Ther
 
 1. **MAC address.**  Using MAC as a client identifier is **only** possible when AdGuard Home works as the network's DHCP server.
 
-1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#clientid).
+1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#clientid-client-id).
 
 #### ClientID {#client-id}
 
@@ -68,7 +68,11 @@ ClientIDs are identifiers that can be used with the following DNS protocols: DNS
 
     :::
 
-    - **DNS-over-HTTPS:** `https://my-client.example.org/dns-query`. (requires a [wildcard certificate][wild]).
+    - **DNS-over-HTTPS:**
+
+        - URL ClientID: `https://example.org/dns-query/my-client`.
+
+        - Server-name ClientID: `https://my-client.example.org/dns-query`. (requires a [wildcard certificate][wild]).
 
     - **DNS-over-QUIC:** `quic://my-client.example.org` (requires a [wildcard certificate][wild]).
 
