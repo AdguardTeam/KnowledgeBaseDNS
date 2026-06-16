@@ -94,11 +94,11 @@ The principle is the same on Windows: make sure that the AdGuard Home directory,
 
 In the future we plan to release Windows builds as MSI installer files that make sure that this is performed automatically.
 
-## Verify releases
+## Verify releases {#verify-releases}
 
 We sign the executable files we build so that you can verify they are really created by us and no one else.  Inside an archive file there's a small file with `.sig` extension which contains the signature data. In a hypothetic situation when the binary file inside an archive is replaced by someone, you'll know that it isn't an official release from AdGuard.
 
-### How to verify that the executable file was built by AdGuard?
+### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
 
 1. Unpack the AdGuard Home archive file.
 
@@ -116,17 +116,19 @@ We sign the executable files we build so that you can verify they are really cre
     gpg:               imported: 1
     ```
 
-1. Verify.  On unix:
+1. Verify.
 
-    ```sh
-    gpg --verify AdGuardHome/AdGuardHome.sig
-    ```
+    - On UNIX:
 
-    On Windows (you might need to install PGP):
+        ```sh
+        gpg --verify AdGuardHome/AdGuardHome.sig
+        ```
 
-    ```ps1
-    gpg --verify AdGuardHome/AdGuardHome.exe.sig
-    ```
+    - On Windows (you might need to install PGP):
+
+        ```ps1
+        gpg --verify AdGuardHome/AdGuardHome.exe.sig
+        ```
 
     You'll see something like this:
 

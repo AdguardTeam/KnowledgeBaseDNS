@@ -23,11 +23,13 @@ Here is what it tries to do in order to figure out the client's hostname:
 
 If the only thing you need is to see friendly names in AdGuard Home stats then editing the hosts file may be the easiest way to achieve this. Please note that you may need to restart AdGuard Home to apply the changes.
 
+<!-- TODO(m.kazantsev): Host all screenshots from CDN.-->
 ![top clients names](../../static/img/top-clients-names.png)
 
 Runtime clients sources can be disabled via the [`clients.runtime_sources`][sources] object of the configuration file.
 
 [whois]:   https://en.wikipedia.org/wiki/WHOIS
+<!-- TODO(m.kazantsev): Update the reference, when the configuration is moved to the Knowledge Base.-->
 [sources]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration#configuration-file
 
 ## Persistent clients {#persistent-clients}
@@ -36,7 +38,7 @@ If you want more than just to see the client names, you may want to configure ea
 
 ![new client](../../static/img/new-client.png)
 
-### Identifying clients
+### Identifying clients {#identifying-clients}
 
 <!-- TODO(m.kazantsev): When the DHCP server article is moved, add a link to this article.-->
 
@@ -50,7 +52,7 @@ First of all, you need to decide how you would like to identify the client. Ther
 
 1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#clientid).
 
-#### ClientID
+#### ClientID {#client-id}
 
 ClientIDs are identifiers that can be used with the following DNS protocols: DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC.  To use this identifier, clients should perform queries using a special domain name or URL.  For example:
 
@@ -76,7 +78,7 @@ Note that the TLS certificate must be valid **both** for `*.example.org` **and**
 
 [wild]: https://en.wikipedia.org/wiki/Wildcard_certificate
 
-### Settings
+### Settings {#settings}
 
 Each client can be configured individually.  You may choose what to block, what settings should be used, or you could even configure a completely different set of upstream DNS servers to be used for this client.
 
@@ -86,11 +88,11 @@ Each client can be configured individually.  You may choose what to block, what 
 
 There are two ways of how you can configure blocking on the per-client basis. Both of them are based on using AdGuard blocklist rules syntax for the rules you're adding to "Custom filtering rules".
 
-### `client` rules
+### `client` rules {#client-rules}
 
 The first one is using the `client` modifier.  This way you can limit the rule to a particular client or clients.
 
-Examples:
+Example:
 
 - `@@||*^$client=127.0.0.1`: Unblock everything for localhost.
 
@@ -100,11 +102,11 @@ Examples:
 
 You can find more `client` examples in the [article][filtering-syntax-client] about the filtering rules syntax.
 
-### `ctag` rules
+### `ctag` rules {#ctag-rules}
 
 The second way is to use another modifier called `ctag`. When you create a new client, tags can be assigned to it.  These tags can then be used in the filtering rules.
 
-Examples:
+Example:
 
 - `||example.org^$ctag=device_pc|device_phone`: Block `example.org` for clients tagged as `device_pc` or `device_phone`.
 
