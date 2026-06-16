@@ -24,7 +24,7 @@ You can use AdGuard DNS CLI for automatic device connection. See this [article][
 
 :::
 
-[agdnscli-autodevice]: http://test
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
 
 ### Examples of automatic connection addresses
 
