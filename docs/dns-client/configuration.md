@@ -123,10 +123,10 @@ The `upstream` object configures the actual resolving of requests. It has the fo
       **Property example:**
 
       ```yaml
-        'autodevice':
-            - enabled: true
-            - profile_id: 'defa5678'
-            - device_type: 'lnx'
+      'autodevice':
+          - enabled: true
+          - profile_id: 'defa5678'
+          - device_type: 'lnx'
       ```
 
     - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
