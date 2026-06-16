@@ -50,7 +50,7 @@ First of all, you need to decide how you would like to identify the client. Ther
 
 1. **MAC address.**  Using MAC as a client identifier is **only** possible when AdGuard Home works as the network's DHCP server.
 
-1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#clientid-client-id).
+1. **ClientIDs.**  Special identifiers that can be used with some encrypted DNS protocols. [See below](#client-id).
 
 #### ClientID {#client-id}
 
