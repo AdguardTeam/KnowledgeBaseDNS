@@ -106,6 +106,29 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       **Example:** `'8.8.8.8:53'`
 
+      :::note
+
+      The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can't guarantee proper work.
+
+      :::
+
+    - `autodevice`: Represents an automatic connection of a device. It has the following properties:
+
+        - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+        - `profile_id`: ID of a profile, in which new devices will be added.
+
+        - `device_type`: A type of device which will be created for new clients.
+
+        **Property example:**
+
+        ```yaml
+          'autodevice':
+              - enabled: true
+              - profile_id: 'defa5678'
+              - device_type: '1'
+        ```
+
     - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
 
         - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
@@ -134,7 +157,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used in defining of the HumanID for clients, if it is not defined, an alternative way of generation is used: the HumanID is formed from the IP address.
 
   :::
 
