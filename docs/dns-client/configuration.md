@@ -108,7 +108,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       :::note
 
-      The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can't guarantee proper work.
+      The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
 
       :::
 
@@ -157,7 +157,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used in defining of the HumanID for clients. If it is not defined, an alternative way of generation is used: the HumanID is formed from the IP address.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used to define the HumanID for clients. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 

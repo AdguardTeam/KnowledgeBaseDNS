@@ -18,7 +18,7 @@ You can learn more about this in the [related article](/dns-client/overview/).
 
 :::note
 
-You can use AdGuard DNS CLI for automatic device connection. See this [article][agdnscli-autodevice].
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
 
 :::
 

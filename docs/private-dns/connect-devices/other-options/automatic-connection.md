@@ -20,7 +20,7 @@ Now you can automatically connect your device to the server by creating a specia
 
 :::note
 
-You can use AdGuard DNS CLI for automatic device connection. See this [article][agdnscli-autodevice].
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
 
 :::
 
