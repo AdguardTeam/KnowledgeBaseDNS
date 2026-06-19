@@ -96,13 +96,13 @@ In the future we plan to release Windows builds as MSI installer files that make
 
 ## Verify releases {#verify-releases}
 
-We sign the executable files we build so that you can verify they are really created by us and no one else.  Inside an archive file there's a small file with `.sig` extension which contains the signature data. In a hypothetic situation when the binary file inside an archive is replaced by someone, you'll know that it isn't an official release from AdGuard.
+We sign the executable files that we build so that you can verify that they were created by us and not by anyone else. Inside an archive file, there is a small file with a `.sig` extension that contains the signature data. If someone replaces the binary file inside an archive, you’ll know it isn’t an official release from AdGuard.
 
 ### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
 
 1. Unpack the AdGuard Home archive file.
 
-1. Import AdGuard Home public key from keyserver.  For **current releases,** run:
+1. Import the AdGuard Home public key from the keyserver. For **current releases,** run:
 
     ```sh
     gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
@@ -156,7 +156,7 @@ We sign the executable files we build so that you can verify they are really cre
 
 ### Reproducing AdGuard Home builds {#reproducing-builds}
 
-AdGuard Home uses [reproducible builds][repr].  See the “`build-release.sh`” section in our [build script][build] documentation.
+AdGuard Home uses [reproducible builds][repr]. See the `build-release.sh` section in our [build script documentation][build].
 
 [build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
-[repr]:  https://reproducible-builds.org/
+[repr]: https://reproducible-builds.org/
