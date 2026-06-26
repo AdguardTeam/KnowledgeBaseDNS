@@ -106,13 +106,15 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       **Example:** `'8.8.8.8:53'`
 
+    - `autodevice`: Represents an automatic connection of a device.
+
       :::note
 
       The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
 
       :::
 
-    - `autodevice`: Represents an automatic connection of a device. It has the following properties:
+      It has the following properties:
 
         - `enabled`: Defines whether all clients within the current group can be connected automatically.
 
