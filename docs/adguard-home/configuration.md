@@ -828,7 +828,6 @@ Removing an entry from settings file will reset it to the default value. Deletin
 
 [DDR]:           https://www.ietf.org/archive/id/draft-ietf-add-ddr-06.html
 [DHCP]:          https://adguard-dns.io/kb/adguard-home/dhcp/
-[dnscrypt-wiki]: https://github.com/AdguardTeam/AdGuardHome/wiki/DNSCrypt
 [docker-conf]:   https://adguard-dns.io/kb/adguard-home/docker/
 [hsts]:          https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 [rfc6147]:       https://datatracker.ietf.org/doc/html/rfc6147
