@@ -1,6 +1,6 @@
 ---
 title: Configuration
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 :::warning
@@ -493,11 +493,11 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `serve_plain_dns`: Enables plain DNS serving.
 
-:::note
+    :::note
 
-`serve_plain_dns` cannot currently be set to `false` unless one or more encrypted protocols (DNS-over-HTTPS, DNS-over-TLS, etc.) is enabled.
+    `serve_plain_dns` cannot currently be set to `false` unless one or more encrypted protocols (DNS-over-HTTPS, DNS-over-TLS, etc.) is enabled.
 
-:::
+    :::
 
 - `hostsfile_enabled`: Allows information from the system hosts file to be used to resolve queries.
 
