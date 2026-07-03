@@ -536,8 +536,7 @@ You can use `~` to invert the condition:
 
 **Limitations**
 
-The `respgeo` modifier uses a single calculated IP address and country according to the current *Query log* logic.
-If a domain resolves to multiple IP addresses or countries, AdGuard DNS does not analyze all returned IP addresses.
+The `respgeo` modifier uses a single calculated IP address and country according to the current *Query log* logic. If a domain resolves to multiple IP addresses or countries, AdGuard DNS does not analyze all returned IP addresses.
 
 Because many domains use CDNs, load balancing, or geographically distributed infrastructure, the detected country may change over time.
 
