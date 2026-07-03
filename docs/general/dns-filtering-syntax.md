@@ -137,7 +137,11 @@ If a rule contains a modifier not listed in this document, the whole rule **must
 
 #### `client` {#client-modifier}
 
-**The `client` modifier can only be used in AdGuard Home and AdGuard DNS.**
+:::note
+
+The `client` modifier can only be used in AdGuard Home and AdGuard DNS.
+
+:::
 
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
@@ -275,7 +279,11 @@ ANSWERS:
 
 The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
 
-**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
+:::note
+
+Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.
+
+:::
 
 Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
@@ -430,7 +438,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 #### `ctag` {#ctag-modifier}
 
-**The `ctag` modifier can only be used in AdGuard Home.**
+:::note
+
+The `ctag` modifier can only be used in AdGuard Home.
+
+:::
 
 It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
@@ -486,9 +498,13 @@ The list of allowed tags:
     - `user_regular`: regular users.
     - `user_child`: children.
 
-#### `respgeo`{#respgeo-modifier}
+#### `respgeo` {#respgeo-modifier}
 
-**The `respgeo` modifier can only be used in AdGuard DNS.**
+:::note
+
+The `respgeo` modifier can only be used in AdGuard DNS.
+
+:::
 
 The `respgeo` modifier allows you to apply rules based on the country or ASN of the IP address returned in the DNS response. It checks the **destination** IP address — the IP address the domain resolves to. It does **not** check the IP address, country, or ASN of the user, device, or DNS client.
 
