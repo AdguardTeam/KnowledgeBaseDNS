@@ -49,11 +49,15 @@ Options:
 --help                             Print this help.
 ```
 
-Please note, that the command-line arguments override settings from the configuration file.
+:::note
+
+Command-line arguments override settings from the configuration file.
+
+:::
 
 `./AdGuardHome -s reload` command does the following:
 
-- refresh the runtime clients data from the operating system's ARP tables;
+- refresh the runtime clients data from the operating system’s ARP tables;
 
 - re-read SSL certificate file (if it has changed).
 
@@ -65,25 +69,25 @@ AdGuard Home is basically a DNS proxy that sends your DNS queries to upstream se
 
 **Examples**:
 
-- `94.140.14.140`, `2a10:50c0::1:ff`: regular DNS (over UDP).
+- `94.140.14.140`, `2a10:50c0::1:ff`: Regular DNS (over UDP).
 
-- `94.140.14.140:53`, `[2a10:50c0::1:ff]:53`: regular DNS (over UDP, with port).
+- `94.140.14.140:53`, `[2a10:50c0::1:ff]:53`: Regular DNS (over UDP, with port).
 
-- `udp://dns-unfiltered.adguard.com`: regular DNS (over UDP, hostname).
+- `udp://dns-unfiltered.adguard.com`: Regular DNS (over UDP, hostname).
 
-- `tcp://94.140.14.140`, `tcp://[2a10:50c0::1:ff]`: regular DNS (over TCP).
+- `tcp://94.140.14.140`, `tcp://[2a10:50c0::1:ff]`: Regular DNS (over TCP).
 
-- `tcp://94.140.14.140:53`, `tcp://[2a10:50c0::1:ff]:53`: regular DNS (over TCP, with port).
+- `tcp://94.140.14.140:53`, `tcp://[2a10:50c0::1:ff]:53`: Regular DNS (over TCP, with port).
 
-- `tcp://dns-unfiltered.adguard.com`: regular DNS (over TCP, hostname).
+- `tcp://dns-unfiltered.adguard.com`: Regular DNS (over TCP, hostname).
 
-- `tls://dns-unfiltered.adguard.com`: encrypted [DNS-over-TLS].
+- `tls://dns-unfiltered.adguard.com`: Encrypted [DNS-over-TLS].
 
-- `https://dns-unfiltered.adguard.com/dns-query`: encrypted [DNS-over-HTTPS].
+- `https://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS].
 
-- `h3://dns-unfiltered.adguard.com/dns-query`: encrypted [DNS-over-HTTPS] with forced [HTTP/3] and no fallback to HTTP/2 and below.
+- `h3://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS] with forced [HTTP/3] and no fallback to HTTP/2 and below.
 
-- `quic://dns-unfiltered.adguard.com`: encrypted [DNS-over-QUIC].
+- `quic://dns-unfiltered.adguard.com`: Encrypted [DNS-over-QUIC].
 
 - `sdns://...`: [DNS Stamps] for [DNSCrypt] or [DNS-over-HTTPS] resolvers.
 
@@ -131,13 +135,13 @@ The special server address `#` means “use the default servers”. So, a config
 
 sends queries for `*.host.com` to `1.2.3.4` except for queries for `*.www.host.com`, which are sent to `6.7.8.9`, which is the default upstream.
 
-Queries for the `DS` query type are following the assumption based on specification for records' presence given in [RFC 4035, section 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
+Queries for the `DS` query type are following the assumption based on specification for records’ presence given in [RFC 4035, section 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
 
-> A DS RRset SHOULD be present at a delegation point when the child zone is signed. \[…\] All DS RRsets in a zone MUST be signed, and DS RRsets MUST NOT appear at a zone's apex.
+> A DS RRset SHOULD be present at a delegation point when the child zone is signed. \[…\] All DS RRsets in a zone MUST be signed, and DS RRsets MUST NOT appear at a zone’s apex.
 
 For example, the `DS` query for `domain.example.com` will be sent to the upstream specified for `example.com`, `com`, or the default one, even if there is a more specific upstream like `*.example.com`. Note that for two-label `DS` requests, the upstream specified for unqualified names, or the more specific one will be used, if any.
 
-Wildcard `*` has a special meaning of "any subdomain", so `--upstream=[/*.host.com/]1.2.3.4` will send queries for `*.host.com` to `1.2.3.4`, but `host.com` will be forwarded to default upstreams.
+Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.host.com/]1.2.3.4` will send queries for `*.host.com` to `1.2.3.4`, but `host.com` will be forwarded to default upstreams.
 
 **Examples:**
 
@@ -184,8 +188,8 @@ Wildcard `*` has a special meaning of "any subdomain", so `--upstream=[/*.host.c
 Using specific upstreams for some domains is a common way to accelerate internet in China. For an example, see https://github.com/felixonmars/dnsmasq-china-list or any other of the many `dnsmasq` lists. These lists can be easily converted to a list for AdGuard Home:
 
 ```none
-Before:  server=/0-100.com/114.114.114.114
-After:   [/0-100.com/]114.114.114.114
+Before: server=/0-100.com/114.114.114.114
+After:  [/0-100.com/]114.114.114.114
 ```
 
 The problem with these lists is that they may be too large. In this case you may want to load them from a separate file instead of setting all upstreams in AdGuard Home settings. To do that, simply specify the path to a file with your list in the `upstream_dns_file` field of `AdGuardHome.yaml`.
@@ -200,15 +204,14 @@ The file, just like the input in the web interface, currently doesn't accept int
 
 Using the domain-specific upstream notation, you can specify dedicated upstream DNS servers for reverse DNS (rDNS) requests. If you want **all** your `PTR` queries with ARPA domain to be redirected to `192.168.8.8`:
 
-1. Enter the following into the “Upstream DNS servers” field on the “Settings
-    → DNS settings” page:
+1. Enter the following into the *Upstream DNS servers* field on the *Settings* → *DNS settings* page:
 
     ```none
     [/in-addr.arpa/]192.168.8.8
     [/ip6.arpa/]192.168.8.8
     ```
 
-2. Enter the following into the “Private reverse DNS servers” field on the
+2. Enter the following into the *Private reverse DNS servers* field on the
     same page below the previous field:
 
     ```none
@@ -219,31 +222,29 @@ Using the domain-specific upstream notation, you can specify dedicated upstream 
 
 :::note
 
-All upstreams for private ranges **must** go to the “Private reverse DNS servers” field **and not** the main “Upstream DNS servers” field. Entering something like `[/192.in-addr.arpa/]192.168.8.8` into the main field will have no effect.
+All upstreams for private ranges **must** go to the *Private reverse DNS servers* field **and not** the main *Upstream DNS servers* field. Entering something like `[/192.in-addr.arpa/]192.168.8.8` into the main field will have no effect.
 
 :::
 
-Read below for more details.
-
 #### Private addresses {#rdns-private}
 
-All the addresses from [private IP ranges][private-ip] are only resolved via appropriate local resolvers to avoid leaks of clients' information. By default, AdGuard Home tries to get the addresses of the default resolvers from the OS. You can set custom upstreams for it in the “Private reverse DNS servers” field in the “Upstream DNS servers” section or via the `local_ptr_upstreams` field in the configuration file. Private IP ranges may be customized through the `private_networks` field. It's empty by default which makes AdGuard Home use the aforementioned default set of networks.
+All the addresses from [private IP ranges][private-ip] are only resolved via appropriate local resolvers to avoid leaks of clients’ information. By default, AdGuard Home tries to get the addresses of the default resolvers from the OS. You can set custom upstreams for it in the *Private reverse DNS servers* field in the *Upstream DNS servers* section or via the `local_ptr_upstreams` field in the configuration file. Private IP ranges may be customized through the `private_networks` field. It’s empty by default which makes AdGuard Home use the aforementioned default set of networks.
 
-Usage of private reverse DNS upstream servers can be disabled via the “Use private reverse DNS resolvers” checkbox in the “Upstream DNS servers” section or via the `use_private_ptr_resolvers` field in the configuration file. If it is disabled, the unknown addresses from locally served networks won't be resolved at all, and clients performing these queries will receive `NXDOMAIN` responses.
+Usage of private reverse DNS upstream servers can be disabled via the *Use private reverse DNS resolvers* checkbox in the *Upstream DNS servers* section or via the `use_private_ptr_resolvers` field in the configuration file. If it is disabled, the unknown addresses from locally served networks won't be resolved at all, and clients performing these queries will receive `NXDOMAIN` responses.
 
 `SOA` and `NS` requests are also checked for implying private rDNS and are resolved according to the same rules as `PTR`.
 
 #### Public addresses {#rdns-public}
 
-If you want AdGuard Home to use another DNS server for a specific IP address range, you can do it using the same syntax as for general upstream servers. For example, if you add this to your “Upstream DNS servers” field:
+If you want AdGuard Home to use another DNS server for a specific IP address range, you can do it using the same syntax as for general upstream servers. For example, if you add this to your *Upstream DNS servers* field:
 
 ```none
 [/200.in-addr.arpa/]192.168.7.7
 ```
 
-then AdGuard Home will use the `192.168.7.7` DNS server for all rDNS requests to resolve clients' IP addresses from the `200.0.0.0/8` network.
+then AdGuard Home will use the `192.168.7.7` DNS server for all rDNS requests to resolve clients’ IP addresses from the `200.0.0.0/8` network.
 
-Note that if you want to use that address for `PTR` queries for IP addresses in a locally served network range, for example `192.168.0.0/16`, you should add this to the “Private reverse DNS servers” field:
+Note that if you want to use that address for `PTR` queries for IP addresses in a locally served network range, for example `192.168.0.0/16`, you should add this to the *Private reverse DNS servers* field:
 
 ```none
 [/168.192.in-addr.arpa/]192.168.7.7
@@ -253,7 +254,7 @@ Note that if you want to use that address for `PTR` queries for IP addresses in 
 
 AdGuard Home automatically gets the names of connected devices using reverse DNS lookup (rDNS). It sends `PTR` requests with the IP addresses of clients to appropriate DNS servers and uses the responses to enrich client information with human-friendly names.
 
-This feature can be enabled and disabled with “Enable clients’ hostname resolution” setting in the “Upstream DNS servers” section or via the `clients.runtime_sources.rdns` field in the configuration file.
+This feature can be enabled and disabled with *Enable clients’ hostname resolution* setting in the *Upstream DNS servers* section or via the `clients.runtime_sources.rdns` field in the configuration file.
 
 [2915]:           https://github.com/AdguardTeam/AdGuardHome/issues/2915
 [DNS Stamps]:     https://dnscrypt.info/stamps/
@@ -283,8 +284,7 @@ The `http` object configures Web interface.
 
 - `doh`: DNS-over-HTTPS configuration. It has the following properties:
 
-    - `routes`: List of HTTP route patterns for DoH requests. Default routes
-      are:
+    - `routes`: List of HTTP route patterns for DoH requests. Default routes are:
 
         - `GET /dns-query`
 
@@ -298,7 +298,7 @@ The `http` object configures Web interface.
 
 - `pprof`: Profiling HTTP handler configuration. See section [Profiling with pprof](#pprof).
 
-    - `enabled`:  Whether pprof is enabled or not.
+    - `enabled`: Whether pprof is enabled or not.
 
     - `port`: IP port to listen on.
 
@@ -374,7 +374,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `port`: DNS server port to listen on.
 
-- `anonymize_client_ip`: If true, anonymize clients' IP addresses in logs and stats.
+- `anonymize_client_ip`: If true, anonymize clients’ IP addresses in logs and stats.
 
 - `ratelimit`: DDoS protection, specifies how many queries per second AdGuard Home should handle. Anything above that is silently dropped. To disable set to `0`, default is `20`. Safe to disable if DNS server is not available from internet.
 
@@ -469,7 +469,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `aaaa_disabled`: Respond with an empty answer to all `AAAA` requests. It also removes IPv6 hints from the answers to HTTPS queries.
 
-- `cache_time`: Safe Browsing, Safe Search, and Parental Control cache TTL, in seconds.
+- `cache_time`: *Safe browsing*, *Safe search*, and *Parental control* cache TTL, in seconds.
 
 - `max_goroutines`: Maximum number of parallel goroutines for processing incoming requests.
 
@@ -535,33 +535,33 @@ The `filtering` object configures filtering settings. It has the following prope
 
 - `safebrowsing_block_host`: IP (or domain name) which is used to respond to DNS requests blocked by safe-browsing.
 
-- `parental_enabled`: Parental control-based DNS requests filtering.
+- `parental_enabled`: *Parental control* based DNS requests filtering.
 
-- `safe_search`: Safe search settings section. It has the following properties:
+- `safe_search`: *Safe search* settings section. It has the following properties:
 
-    - `enabled`: Enforcing "Safe search" option for search engines, when possible.
+    - `enabled`: Enforcing the *Safe search* option for search engines, when possible.
 
-    - `bing`: Enforcing "Safe search" option for `bing` domains.
+    - `bing`: Enforcing the *Safe search* option for `bing` domains.
 
-    - `duckduckgo`: Enforcing "Safe search" option for `duckduckgo` domains.
+    - `duckduckgo`: Enforcing the *Safe search* option for `duckduckgo` domains.
 
-    - `ecosia`: Enforcing "Safe search" option for `ecosia` domains.
+    - `ecosia`: Enforcing the *Safe search* option for `ecosia` domains.
 
-    - `google`: Enforcing "Safe search" option for `google` domains.
+    - `google`: Enforcing the *Safe search* option for `google` domains.
 
-    - `pixabay`: Enforcing "Safe search" option for `pixabay` domains.
+    - `pixabay`: Enforcing the *Safe search* option for `pixabay` domains.
 
-    - `yandex`: Enforcing "Safe search" option for `yandex` domains.
+    - `yandex`: Enforcing the *Safe search* option for `yandex` domains.
 
-    - `youtube`: Enforcing "Safe search" option for `youtube` domains.
+    - `youtube`: Enforcing the *Safe search* option for `youtube` domains.
 
-- `safebrowsing_enabled`: Filtering of DNS requests based on safebrowsing.
+- `safebrowsing_enabled`: Filtering of DNS requests based on the *Safe browsing*.
 
-- `safebrowsing_cache_size`: Safe Browsing cache size, in bytes.
+- `safebrowsing_cache_size`: *Safe browsing* cache size, in bytes.
 
-- `safesearch_cache_size`: Safe Search cache size, in bytes.
+- `safesearch_cache_size`: *Safe search* cache size, in bytes.
 
-- `parental_cache_size`: Parental Control cache size, in bytes.
+- `parental_cache_size`: *Parental control* cache size, in bytes.
 
 - `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream.
 
@@ -618,13 +618,13 @@ The `filtering` object configures filtering settings. It has the following prope
 
 ### `querylog` {#querylog}
 
-The `querylog` object configures query log settings. It has the following properties:
+The `querylog` object configures *Query log* settings. It has the following properties:
 
-- `enabled`: Defines, whether Query log is enabled.
+- `enabled`: Defines, whether *Query log* is enabled.
 
 - `file_enabled`: Write query logs to a file.
 
-- `interval`: Time interval for query log files rotation. It's a string with human-readable duration between an hour (1h) and a year (8760h).
+- `interval`: Time interval for query log files rotation. It’s a string with human-readable duration between an hour (1h) and a year (8760h).
 
 - `size_memory`: Number of entries kept in memory before they are flushed to disk.
 
@@ -632,7 +632,7 @@ The `querylog` object configures query log settings. It has the following proper
 
 - `ignored_enabled`: Indicates whether or not to ignore hosts from the `ignored` list.
 
-- `dir_path`: Custom directory for storing query log files.
+- `dir_path`: Custom directory for storing *Query log* files.
 
 ### `statistics` {#statistics}
 
@@ -652,11 +652,11 @@ The `statistics` object configures statistics settings. It has the following pro
 
 List of filters. Each filter has the following properties:
 
-- `enabled`: Current filter's status (enabled/disabled).
+- `enabled`: Current filter’s status (enabled/disabled).
 
 - `url`: URL pointing to the filter contents (filtering rules).
 
-- `name`: Name of the filter. If it's an adguard syntax filter it will get updated automatically, otherwise it stays unchanged.
+- `name`: Name of the filter. If it’s an adguard syntax filter it will get updated automatically, otherwise it stays unchanged.
 
 - `last_updated`: Time when the filter was last updated from server.
 
@@ -672,17 +672,17 @@ Built-in DHCP server configuration. See also the [DHCP] article. It has the foll
 
 - `dhcpv4`: DHCPv4 settings. It has the following properties:
 
-    - `gateway_ip`: gateway IP address.
+    - `gateway_ip`: Gateway IP address.
 
-    - `subnet_mask`: subnet mask.
+    - `subnet_mask`: Subnet mask.
 
-    - `range_start`, `range_end`: the start and the end of the leased IP address range.
+    - `range_start`, `range_end`: The start and the end of the leased IP address range.
 
-    - `lease_duration`: lease duration in seconds. If `0`, use the default duration of 24 hours.
+    - `lease_duration`: Lease duration in seconds. If `0`, use the default duration of 24 hours.
 
     - `icmp_timeout_msec`: Time to wait for an ICMP reply to detect an IP conflict, in milliseconds. If `0`, the feature is disabled.
 
-    - `options`: custom DHCP options. See the [DHCP] article section on these options for more information.
+    - `options`: Custom DHCP options. See the [DHCP] article section on these options for more information.
 
 - `dhcpv6`: DHCPv6 settings. It has the following properties:
 
@@ -692,7 +692,7 @@ Built-in DHCP server configuration. See also the [DHCP] article. It has the foll
 
     - `ra_slaac_only` and `ra_allow_slaac`: send RA packets either forcing the clients to use SLAAC or allowing them to choose. See the [DHCP] article section on these options for more information.
 
-- `local_domain_name`: The domain name that AdGuard Home's DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network's DHCP server, the hostname of that machine is `myhost.lan`. DNS queries of type `A` for such hosts are only allowed from locally served networks, such as `10.0.0.0/8`, `192.168.0.0/16`, and so on. Other clients receive an empty `NXDOMAIN` response.
+- `local_domain_name`: The domain name that AdGuard Home’s DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network’s DHCP server, the hostname of that machine is `myhost.lan`. DNS queries of type `A` for such hosts are only allowed from locally served networks, such as `10.0.0.0/8`, `192.168.0.0/16`, and so on. Other clients receive an empty `NXDOMAIN` response.
 
 ### `tls` {#tls}
 
@@ -702,7 +702,7 @@ HTTPS/DoH/DoQ/DoT settings. It has the following properties:
 
     **Example**: `true`
 
-- `server_name`: The hostname of your server. If set, it is used to detect ClientIDs (using the ServerName field of ClientHello messages), respond to [Discovery of Designated Resolvers (DDR)][DDR] queries, and perform additional connection validations. If not set, these features are disabled. It must match one of the DNS Names in the certificate.
+- `server_name`: The hostname of your server. If set, it is used to detect ClientIDs (using the *ServerName* field of ClientHello messages), respond to [Discovery of Designated Resolvers (DDR)][DDR] queries, and perform additional connection validations. If not set, these features are disabled. It must match one of the DNS Names in the certificate.
 
     **Example**: `example.org`
 
@@ -752,7 +752,7 @@ Operating system related settings.
 
 - `user`: The name of the user to switch to after the startup.
 
-- `rlimit_nofile`: Limit on the maximum number of open files for the server process (on unixlike OSs). Set to `0` to use the system's default value.
+- `rlimit_nofile`: Limit on the maximum number of open files for the server process (on unixlike OSs). Set to `0` to use the system’s default value.
 
 ### `clients` {#clients}
 
@@ -760,23 +760,23 @@ Persistent and runtime clients settings.
 
 - `persistent`: An array of explicitly configured clients. Each client has the following properties:
 
-    - `safe_search`: Safe search settings section.
+    - `safe_search`: *Safe search* settings section.
 
-    - `blocked_services`: Blocked services settings section.
+    - `blocked_services`: *Blocked services* settings section.
 
-    - `name`: Client's name.
+    - `name`: Client’s name.
 
-    - `ids`: List of client's identifiers.
+    - `ids`: List of client’s identifiers.
 
-    - `tags`: List of client's tags.
+    - `tags`: List of client’s tags.
 
     - `upstreams`: Upstreams configuration.
 
-    - `uid`: Client's unique identifier.
+    - `uid`: Client’s unique identifier.
 
-    - `upstreams_cache_size`: Client's cache size.
+    - `upstreams_cache_size`: Client’s cache size.
 
-    - `upstreams_cache_enabled`: If client's cache is enabled.
+    - `upstreams_cache_enabled`: If client’s cache is enabled.
 
     - `use_global_settings`: Shows if the client-specific settings are used to override the global settings.
 
@@ -788,9 +788,9 @@ Persistent and runtime clients settings.
 
     - `use_global_blocked_services`: Shows if the client-specific settings are used to override the global Blocked Services settings.
 
-    - `ignore_querylog`: Indicates whether or not to exclude client's activity from the query log.
+    - `ignore_querylog`: Indicates whether or not to exclude client’s activity from the query log.
 
-    - `ignore_statistics`: Indicates whether or not to exclude client's activity from the statistics.
+    - `ignore_statistics`: Indicates whether or not to exclude client’s activity from the statistics.
 
 - `runtime_sources`: This controls runtime-client data sources.
 
@@ -814,7 +814,7 @@ Log settings.
 
 - `compress`: If `true`, enabled GZIP compression of the log files.
 
-- `local_time`: If `true`, the time used for formatting the timestamps is the computer's local time.
+- `local_time`: If `true`, the time used for formatting the timestamps is the computer’s local time.
 
 - `max_backups`: Maximum number of old log files to retain. `0` means retain all old log files. Note that `max_age` may still cause them to be deleted.
 
