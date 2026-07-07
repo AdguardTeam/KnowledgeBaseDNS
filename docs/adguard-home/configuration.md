@@ -535,7 +535,7 @@ The `filtering` object configures filtering settings. It has the following prope
 
 - `safebrowsing_block_host`: IP (or domain name) which is used to respond to DNS requests blocked by safe-browsing.
 
-- `parental_enabled`: *Parental control* based DNS requests filtering.
+- `parental_enabled`: Filtering of DNS requests based on *Parental control*.
 
 - `safe_search`: *Safe search* settings section. It has the following properties:
 
@@ -555,7 +555,7 @@ The `filtering` object configures filtering settings. It has the following prope
 
     - `youtube`: Enforcing the *Safe search* option for `youtube` domains.
 
-- `safebrowsing_enabled`: Filtering of DNS requests based on the *Safe browsing*.
+- `safebrowsing_enabled`: Filtering of DNS requests based on *Safe browsing*.
 
 - `safebrowsing_cache_size`: *Safe browsing* cache size, in bytes.
 
@@ -656,7 +656,7 @@ List of filters. Each filter has the following properties:
 
 - `url`: URL pointing to the filter contents (filtering rules).
 
-- `name`: Name of the filter. If it’s an adguard syntax filter it will get updated automatically, otherwise it stays unchanged.
+- `name`: The name of the filter. If it’s an AdGuard syntax filter, it will be updated automatically; otherwise, it will stay unchanged.
 
 - `last_updated`: Time when the filter was last updated from server.
 
