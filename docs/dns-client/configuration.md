@@ -102,7 +102,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
 - `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
 
-    - `address`: The upstream server’s address.
+    - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
       **Example:** `'8.8.8.8:53'`
 
@@ -116,11 +116,20 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       It has the following properties:
 
+        :::info
+
+        The predefined private group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+        :::
+
         - `enabled`: Defines whether all clients within the current group can be connected automatically.
 
-        - `profile_id`: ID of a profile, in which new devices will be added.
+        - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
 
-        - `device_type`: A type of device which will be created for new clients.
+        - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+        [profile-id]:  [https://adguard-dns.io/kb/private-dns/solving-problems/automatic-devices/#dns-server-id]
+        [device-type]: [https://adguard-dns.io/kb/private-dns/solving-problems/automatic-devices/#device-type]
 
       **Property example:**
 
@@ -159,7 +168,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used to define the HumanID for clients. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
