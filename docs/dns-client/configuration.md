@@ -118,7 +118,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
         :::info
 
-        The predefined private group must have `enabled` set to false, as it doesn't support autodevice yet.
+        The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
 
         :::
 
@@ -128,8 +128,8 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
         - `device_type`: A [type of device][device-type] which will be created for new clients.
 
-        [profile-id]:  [https://adguard-dns.io/kb/private-dns/solving-problems/automatic-devices/#dns-server-id]
-        [device-type]: [https://adguard-dns.io/kb/private-dns/solving-problems/automatic-devices/#device-type]
+        [profile-id]:  /private-dns/solving-problems/automatic-devices/#dns-server-id
+        [device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
       **Property example:**
 
