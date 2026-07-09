@@ -116,20 +116,17 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       It has the following properties:
 
+        - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
         :::info
 
         The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
 
         :::
 
-        - `enabled`: Defines whether all clients within the current group can be connected automatically.
-
         - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
 
         - `device_type`: A [type of device][device-type] which will be created for new clients.
-
-        [profile-id]:  /private-dns/solving-problems/automatic-devices/#dns-server-id
-        [device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
       **Property example:**
 
@@ -194,6 +191,9 @@ The `fallback` object configures the behavior of the DNS server in case of failu
 - `timeout`: The timeout for fallback DNS requests as a human-readable duration.
 
   **Example:** `2s`
+
+[profile-id]:  /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 
