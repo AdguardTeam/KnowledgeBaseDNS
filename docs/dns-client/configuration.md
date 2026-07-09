@@ -118,11 +118,11 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
         - `enabled`: Defines whether all clients within the current group can be connected automatically.
 
-        :::info
+          :::info
 
-        The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+          The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
 
-        :::
+          :::
 
         - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
 
