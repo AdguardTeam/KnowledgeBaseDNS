@@ -159,7 +159,6 @@ The option `dhcp.dhcpv6.ra_slaac_only`, if `true`, sends RA packets forcing the 
 
 The option `dhcp.dhcpv6.ra_allow_slaac`, if `true`, sends RA packets allowing the clients to choose between SLAAC and DHCPv6.
 
-[configuration]:    https://adguard-dns.io/kb/adguard-home/configuration/
 [rfc-1191-tbl-7.1]: https://datatracker.ietf.org/doc/html/rfc1191#section-7.1
 [rfc-2131]:         https://datatracker.ietf.org/doc/html/rfc2131
 [rfc-2132]:         https://datatracker.ietf.org/doc/html/rfc2132
@@ -168,7 +167,7 @@ The option `dhcp.dhcpv6.ra_allow_slaac`, if `true`, sends RA packets allowing th
 
 Machines in the network can be reached more easily using the hostnames they send in the DHCP requests with a configurable top-level domain (TLD). By default, the TLD is `lan`. For example, if you have a machine called “workstation” in the network, and it sends a DHCP request with option 12 set to `workstation`, you can reach it over HTTP on the host `http://workstation.lan`.
 
-You can also set a custom TLD or domain name using the `dns.local_domain_name` field in the [configuration] file.
+You can also set a custom TLD or domain name using the `dns.local_domain_name` field in the [configuration][dhcp-conf] file.
 
 ## Stored leases {#stored-leases}
 
