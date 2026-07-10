@@ -19,33 +19,30 @@ docker pull adguard/adguardhome
 
 The image exposes two volumes for data and configuration persistence. So, the following directories must be created on a suitable volume on the host system:
 
-- `data`
+- Data directory, for example `/my/own/workdir`.
 
-    **Example**: `/my/own/workdir`
-
-- `configuration`
-
-    **Example**: `/my/own/confdir`
+- Configuration directory, for example `/my/own/confdir`.
 
 ### Create and run the container
 
 Use the following command to create a new container and run AdGuard Home:
 
 ```sh
-docker run --name adguardhome \
-    --restart unless-stopped \
-    # Replace with actual data directory.
-    -v /my/own/workdir:/opt/adguardhome/work \
-    # Replace with actual configuration directory.
-    -v /my/own/confdir:/opt/adguardhome/conf \
+docker run \
+    -d \
+    --name adguardhome \
     -p 53:53/tcp -p 53:53/udp \
     -p 67:67/udp -p 68:68/udp \
-    -p 80:80/tcp -p 443:443/tcp -p 443:443/udp -p 3000:3000/tcp \
+    -p 80:80/tcp -p 443:443/tcp \
+    -p 443:443/udp -p 3000:3000/tcp \
     -p 853:853/tcp \
     -p 853:853/udp \
     -p 5443:5443/tcp -p 5443:5443/udp \
     -p 6060:6060/tcp \
-    -d adguard/adguardhome \
+    --restart unless-stopped \
+    -v /my/own/workdir:/opt/adguardhome/work \
+    -v /my/own/confdir:/opt/adguardhome/conf \
+    adguard/adguardhome \
     ;
 ```
 
@@ -127,8 +124,8 @@ Upon the first run, a file with the default values named `AdGuardHome.yaml` is c
 
 The settings are stored in the [YAML] format. The documentation describing all configurable parameters and their values is available on [this page][conf].
 
-[YAML]:  https://yaml.org
-[conf]:  https://adguard-dns.io/kb/adguard-home/configuration/
+[YAML]: https://yaml.org
+[conf]: https://adguard-dns.io/kb/adguard-home/configuration/
 
 ### Health-check
 
@@ -162,7 +159,7 @@ To run AdGuard Home on a system where the `resolved` daemon is started, `DNSStub
     DNSStubListener=no
     ```
 
-    Specifying `127.0.0.1` as the DNS server address is necessary because otherwise the nameserver will be `127.0.0.53` which doesn't work without `DNSStubListener`.
+    Specifying `127.0.0.1` as the DNS server address is necessary because otherwise the nameserver will be `127.0.0.53` which doesn’t work without `DNSStubListener`.
 
 2. Activate a new `resolv.conf` file:
 

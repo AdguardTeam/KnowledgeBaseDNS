@@ -7,21 +7,25 @@ AdGuard Home can be used as a DHCP server. This page describes how to do that.
 
 ## Prerequisites {#prerequisites}
 
-1. Make sure that you run an OS on which AdGuard Home supports DHCP. We currently don't support DHCP on Windows.
+1. Make sure that you run an OS on which AdGuard Home supports DHCP. We currently don’t support DHCP on Windows.
 
 2. Make sure that your machine has a static IP address.
 
-## Default options {#default-options}
+## Configuration {#configuration}
+
+See the DHCP section in the [configuration][dhcp-conf] article for the overview of the DHCP configuration options. There are several configuration parameters for DHCP that can’t be set via the AdGuard Home administrator dashboard. Those are described below.
+
+:::note
 
 By default, AdGuard Home will set itself as the DNS server for the DHCP clients. The default lease time is 24 hours.
 
-## Configuration {#configuration}
+:::
 
-See the DHCP section in the [configuration] article for the overview of the DHCP configuration options. There are several configuration parameters for DHCP that can't be set via the AdGuard Home administrator dashboard. Those are described below.
+[dhcp-conf]: https://adguard-dns.io/kb/adguard-home/configuration/#dhcp
 
 ### DHCPv4 options {#dhcpv4-options}
 
-The `options` field is used to explicitly specify the values for DHCP options and modify the response. In accordance with *Section 4.3.1* of [RFC 2131][rfc-2131], these options override the default options’ values set by Adguard Home and requested by a client, which means that if you want to set custom DNS server addresses using option `6` (Domain Name Server), you may want also add Adguard Home’s own addresses there. Otherwise, AdGuard Home’s filtering won't work for the DHCP clients who receive these DNS server addresses.
+The `options` field is used to explicitly specify the values for DHCP options and modify the response. In accordance with *Section 4.3.1* of [RFC 2131][rfc-2131], these options override the default options’ values set by Adguard Home and requested by a client, which means that if you want to set custom DNS server addresses using option `6` (Domain Name Server), you may want also add Adguard Home’s own addresses there. Otherwise, AdGuard Home’s filtering won’t work for the DHCP clients who receive these DNS server addresses.
 
 Any option begins with an option *code* written as decimal integer. See [RFC 2132][rfc-2132] for the actual DHCP option codes and allowed lengths. The code is followed by an option’s *type* and *value*. Currently the following *types* are supported:
 
@@ -33,7 +37,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
     'options':
     - '19 bool 0'     # Disable IP forwarding for hosts.
     - '20 bool t'     # Enable non-local source routing for hosts.
-    - '27 bool F'     # Disable ahoming for hosts.
+    - '29 bool F'     # Disable subnet mask discovery.
     - '30 bool true'  # Enable mask supplying for supporting hosts.
     - '36 bool False' # Make the hosts use RFC 894 for ethernet encapsulation.
     ```
@@ -151,7 +155,7 @@ Some of these values may appear obsolete or may cause issues with some DHCP clie
 
 ### DHCPv6 options {#dhcpv6-options}
 
-The option `dhcp.dhcpv6.ra_slaac_only`, if `true`, sends RA packets forcing the clients to use SLAAC. The DHCPv6 server won't be started in this case.
+The option `dhcp.dhcpv6.ra_slaac_only`, if `true`, sends RA packets forcing the clients to use SLAAC. The DHCPv6 server won’t be started in this case.
 
 The option `dhcp.dhcpv6.ra_allow_slaac`, if `true`, sends RA packets allowing the clients to choose between SLAAC and DHCPv6.
 
