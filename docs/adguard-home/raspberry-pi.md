@@ -48,7 +48,7 @@ Then install AdGuard Home as a [service].
 
 :::
 
-[service]: /docs/adguard-home/getting-started.md#service
+[service]: /adguard-home/getting-started#service
 [inst]:    https://github.com/AdguardTeam/AdGuardHome
 
 ## Check the filtering {#check}

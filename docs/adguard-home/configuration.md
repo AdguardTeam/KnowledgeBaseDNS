@@ -827,9 +827,9 @@ Log settings.
 Removing an entry from settings file will reset it to the default value. Deleting the file will reset all settings to the default values.
 
 [DDR]:         https://www.ietf.org/archive/id/draft-ietf-add-ddr-06.html
-[DHCPv4]:      /docs/adguard-home/dhcp.md#dhcpv4-options
-[DHCPv6]:      /docs/adguard-home/dhcp.md#dhcpv6-options
-[docker-conf]: /docs/adguard-home/docker.md
+[DHCPv4]:      /adguard-home/dhcp#dhcpv4-options
+[DHCPv6]:      /adguard-home/dhcp#dhcpv6-options
+[docker-conf]: /adguard-home/docker
 [hsts]:        https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 [rfc6147]:     https://datatracker.ietf.org/doc/html/rfc6147
 [tls-names]:   https://pkg.go.dev/crypto/tls#pkg-constants
