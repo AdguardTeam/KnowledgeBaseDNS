@@ -48,7 +48,7 @@ Then install AdGuard Home as a [service].
 
 :::
 
-[service]: https://adguard-dns.io/kb/adguard-home/getting-started/#service
+[service]: /docs/adguard-home/getting-started.md#service
 [inst]:    https://github.com/AdguardTeam/AdGuardHome
 
 ## Check the filtering {#check}

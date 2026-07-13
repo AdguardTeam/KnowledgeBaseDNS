@@ -23,7 +23,7 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 - For users of **Raspberry Pi** there is a separate [guide][raspberry-pi-guide].
 
-[raspberry-pi-guide]: https://adguard-dns.io/kb/adguard-home/raspberry-pi
+[raspberry-pi-guide]: /docs/adguard-home/raspberry-pi.md
 
 ### Docker and Snap
 
@@ -51,7 +51,7 @@ Some other unofficial options include:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]:  https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]:       https://github.com/kongfl888/luci-app-adguardhome
-[platforms]:  https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]:  /docs/adguard-home/platforms.md
 [releases]:   https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]:       https://snapcraft.io/adguard-home
 
@@ -120,7 +120,7 @@ By default, the logs are written to `stderr` when you run AdGuard Home in a term
 
 You can change this behavior in the AdGuard Home [configuration file][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /docs/adguard-home/configuration.md#log
 
 ## Updating {#update}
 

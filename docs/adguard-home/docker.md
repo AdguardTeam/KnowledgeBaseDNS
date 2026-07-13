@@ -90,8 +90,8 @@ AdGuard Home container can be controlled using the following commands:
     docker rm adguardhome
     ```
 
-[DNSCrypt]: https://adguard-dns.io/kb/adguard-home/encryption/#configure-dnscrypt
-[enc]:      https://adguard-dns.io/kb/adguard-home/encryption/
+[DNSCrypt]: /docs/adguard-home/encryption.md#configure-dnscrypt
+[enc]:      /docs/adguard-home/encryption.md
 
 ## Update to a newer version {#update}
 
@@ -125,7 +125,7 @@ Upon the first run, a file with the default values named `AdGuardHome.yaml` is c
 The settings are stored in the [YAML] format. The documentation describing all configurable parameters and their values is available on [this page][conf].
 
 [YAML]: https://yaml.org
-[conf]: https://adguard-dns.io/kb/adguard-home/configuration/
+[conf]: /docs/adguard-home/configuration.md
 
 ### Health-check
 

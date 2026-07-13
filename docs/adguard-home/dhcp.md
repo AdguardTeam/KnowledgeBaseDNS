@@ -21,7 +21,7 @@ By default, AdGuard Home will set itself as the DNS server for the DHCP clients.
 
 :::
 
-[dhcp-conf]: https://adguard-dns.io/kb/adguard-home/configuration/#dhcp
+[dhcp-conf]: /docs/adguard-home/configuration.md#dhcp
 
 ### DHCPv4 options {#dhcpv4-options}
 
