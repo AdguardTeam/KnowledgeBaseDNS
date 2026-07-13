@@ -24,7 +24,7 @@ Here is what it tries to do in order to figure out the client’s hostname:
 If you only need to see friendly names in the AdGuard Home stats, editing the hosts file is probably the easiest way to achieve this. Please note that you may need to restart AdGuard Home to apply the changes.
 
 <!-- TODO(m.kazantsev): Host all screenshots from CDN.-->
-![top clients names](../../static/img/top-clients-names.png)
+![top clients names](https://cdn.adtidy.org/content/kb/dns/adguard-home/agh-top-clients-names.png)
 
 Runtime clients sources can be disabled via the [`clients.runtime_sources`][sources] object of the configuration file.
 
@@ -35,7 +35,7 @@ Runtime clients sources can be disabled via the [`clients.runtime_sources`][sour
 
 If you want more than just the client names, you will need to configure each client manually. To do so, go to *Settings* → *Client settings* and click *Add client*.
 
-![new client](../../static/img/new-client.png)
+![new client](https://cdn.adtidy.org/content/kb/dns/adguard-home/agh-new-client.png)
 
 ### Identifying clients {#identifying-clients}
 
@@ -85,7 +85,7 @@ Note that the TLS certificate must be valid **both** for `*.example.org` **and**
 
 Each client can be configured individually. You may choose what to block, what settings should be used, or you could even configure a completely different set of upstream DNS servers to be used for this client.
 
-![client settings](../../static/img/client-settings.png)
+![client settings](https://cdn.adtidy.org/content/kb/dns/adguard-home/agh-client-settings.png)
 
 ## Per-client blocking {#per-client-blocking}
 
