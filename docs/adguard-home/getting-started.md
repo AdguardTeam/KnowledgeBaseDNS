@@ -21,7 +21,7 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 - Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
 
-- For users of **Raspberry Pi** there is a separate [guide][raspberry-pi-guide].
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
 
 [raspberry-pi-guide]: /adguard-home/raspberry-pi
 

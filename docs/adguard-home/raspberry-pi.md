@@ -23,14 +23,14 @@ Type:
 ssh pi@192.168.10.20
 ```
 
-(where `192.168.10.20` is the IP you’ve written down) and then type your Pi’s password (which is `raspberry` unless you’ve changed it already). Once you’re done, you will be greeted by the command line interface. Now you’re ready to install your own AdGuard Home!
+(where `192.168.10.20` is the IP you’ve written down) and then type your Pi’s password (which is `raspberry` unless you’ve changed it already). Once you’re done, you will be greeted by the command-line interface. Now you’re ready to install your own AdGuard Home!
 
 [ssh]:   https://www.raspberrypi.com/documentation/computers/remote-access.html
 [putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ## Install AdGuard Home {#install}
 
-Go to [AdGuard Home page][inst] and download binaries for Raspberry Pi:
+Go to the [AdGuard Home page][inst] and download the binaries for Raspberry Pi:
 
 ```sh
 cd
@@ -38,15 +38,11 @@ wget 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv6.tar
 tar -f AdGuardHome_linux_armv6.tar.gz -x -v
 ```
 
-(Replace `armv6` with the ARM version that is best supported by your Pi.)
+Replace `armv6` with the ARM version that is best supported by your Pi.
 
 That command unpacks the necessary data into a new directory called `AdGuardHome`.
 
-:::note
-
-Then install AdGuard Home as a [service].
-
-:::
+Then, install AdGuard Home as a [service].
 
 [service]: /adguard-home/getting-started#service
 [inst]:    https://github.com/AdguardTeam/AdGuardHome
@@ -72,6 +68,6 @@ Host doubleclick.net not found: 3(NXDOMAIN)
 
 ## Configure your devices {#devices}
 
-Once it is confirmed that AdGuard Home works on our Raspberry Pi, you can use it on other computers in your network by changing their system DNS settings to use the Pi’s IP address.
+Once it is confirmed that AdGuard Home works on your Raspberry Pi, you can use it on other computers in your network by changing their system DNS settings to use the Pi’s IP address.
 
 Go to the *Setup Guide* page in the web interface and follow the instructions.

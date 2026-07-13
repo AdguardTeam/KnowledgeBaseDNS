@@ -13,7 +13,7 @@ AdGuard Home can be used as a DHCP server. This page describes how to do that.
 
 ## Configuration {#configuration}
 
-See the DHCP section in the [configuration][dhcp-conf] article for the overview of the DHCP configuration options. There are several configuration parameters for DHCP that can’t be set via the AdGuard Home administrator dashboard. Those are described below.
+See the [overview of the DHCP configuration options][dhcp-conf]. There are several parameters for DHCP that can’t be set via the AdGuard Home administrator dashboard. Those are described below.
 
 :::note
 
@@ -27,7 +27,7 @@ By default, AdGuard Home will set itself as the DNS server for the DHCP clients.
 
 The `options` field is used to explicitly specify the values for DHCP options and modify the response. In accordance with *Section 4.3.1* of [RFC 2131][rfc-2131], these options override the default options’ values set by Adguard Home and requested by a client, which means that if you want to set custom DNS server addresses using option `6` (Domain Name Server), you may want also add Adguard Home’s own addresses there. Otherwise, AdGuard Home’s filtering won’t work for the DHCP clients who receive these DNS server addresses.
 
-Any option begins with an option *code* written as decimal integer. See [RFC 2132][rfc-2132] for the actual DHCP option codes and allowed lengths. The code is followed by an option’s *type* and *value*. Currently the following *types* are supported:
+Any option begins with a code written as a decimal integer. See [RFC 2132][rfc-2132] for the actual DHCP option codes and allowed lengths. The code is followed by the option’s type and value. Currently the following types are supported:
 
 - `bool`: Human-readable form of a boolean value, and has the length of 1 octet.
 
@@ -42,7 +42,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
     - '36 bool False' # Make the hosts use RFC 894 for ethernet encapsulation.
     ```
 
-- `del`: No-value option and is used to unconditionally remove options from the server’s responses (which may lead to weird behaviors, use with caution).
+- `del`: No-value option is used to unconditionally remove options from the server’s responses (which may lead to weird behaviors, use with caution).
 
     Since the list of options is interpreted sequentially from first to last, the subsequent option may override the previous ones. So this:
 
@@ -56,7 +56,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
 
     instructs to remove the option `19`, and to set the option `20` to `false`.
 
-- `dur`: Human-readable form of a duration in range [0 – 4294967296 seconds (about 136 days)] and has a length of *4* octets, just like a 32-bit unsigned integer.
+- `dur`: A human-readable form of a duration in the range of 0 to 4,294,967,296 seconds (approximately 136 days), consisting of *4* octets, just like a 32-bit unsigned integer.
 
     **Example**:
 
@@ -65,7 +65,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
     - '24 dur 10m'
     ```
 
-- `hex`: Sequence of hexadecimal numbers of an arbitrary length.
+- `hex`: A sequence of hexadecimal numbers of arbitrary length.
 
     **Example**:
 
@@ -101,7 +101,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
     - '252 text http://server.domain/proxyconfig.pac'
     ```
 
-- `u8`: Decimal number in range [0 – 255] and takes *1* octet, just like an unsigned 8-bit integer.
+- `u8`: A decimal number in the range of 0 to 255 that takes *1* octet, just like an unsigned 8-bit integer.
 
     **Example:**
 
@@ -110,7 +110,7 @@ Any option begins with an option *code* written as decimal integer. See [RFC 213
     - '23 u8 64'
     ```
 
-- `u16`: Decimal number in range [0 – 65535] and takes *2* octets, just like an unsigned 16-bit integer.
+- `u16`: A decimal number in the range of 0 to 65535 that takes *2* octets, just like an unsigned 16-bit integer.
 
     **Example:**
 
@@ -151,7 +151,7 @@ Currently there is a set of options listed in *Appendix A* of [RFC 2131][rfc-213
 | Routers                          | `gateway_ip` from configuration               |
 | Subnet Mask                      | `subnet_mask` from configuration              |
 
-Some of these values may appear obsolete or may cause issues with some DHCP client implementations among the many existing. In accordance with [RFC 2131][rfc-2131] the options, when not explicitly configured, are only returned if requested by client within the option `55` (Parameter Request List).
+Some of these values may appear obsolete or cause issues with certain DHCP client implementations. According to [RFC 2131][rfc-2131], the options are only returned if requested by the client within option `55` (Parameter Request List) when not explicitly configured.
 
 ### DHCPv6 options {#dhcpv6-options}
 

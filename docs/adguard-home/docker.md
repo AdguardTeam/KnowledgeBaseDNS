@@ -52,9 +52,9 @@ The following port mappings might be needed:
 
 - `-p 53:53/tcp -p 53:53/udp`: Required for plain DNS.
 
-- `-p 67:67/udp -p 68:68/tcp -p 68:68/udp`: Required for DHCP server.
+- `-p 67:67/udp -p 68:68/tcp -p 68:68/udp`: Required for running a DHCP server.
 
-- `-p 80:80/tcp -p 443:443/tcp -p 443:443/udp -p 3000:3000/tcp`: Required for admin panel and [HTTPS/DNS-over-HTTPS][enc] server.
+- `-p 80:80/tcp -p 443:443/tcp -p 443:443/udp -p 3000:3000/tcp`: Required for the admin panel and for running a [HTTPS/DNS-over-HTTPS][enc] server.
 
 - `-p 853:853/tcp`: Required for running a [DNS-over-TLS][enc] server.
 
@@ -62,7 +62,7 @@ The following port mappings might be needed:
 
 - `-p 5443:5443/tcp -p 5443:5443/udp`: Required for running a [DNSCrypt] server.
 
-- `-p 6060:6060/tcp`: Required for running a pprof debug api.
+- `-p 6060:6060/tcp`: Required for running a pprof debug API.
 
 ### Client IPs
 
@@ -129,7 +129,7 @@ The settings are stored in the [YAML] format. The documentation describing all c
 
 ### Health-check
 
-Recommended way to achieve a health check mechanism is to create a new image tailored for the target configuration. Implementations may use the special domain name `healthcheck.adguardhome.test.`, expecting it to resolve into NODATA answer. It imposes restrictions on usage of this particular name, so specifying it within the `blocked_hosts` array under the `dns` section of configuration file will break the healthcheck. The `allowed_clients` and `disallowed_clients` properties should allow the healthcheck client IP as well.
+The recommended way to implement a health check mechanism is to create a new image tailored for the target configuration. Implementations may use the special domain name `healthcheck.adguardhome.test`, expecting it to return a `NODATA` response. Specifying this particular name within the `blocked_hosts` array under the `dns` section of the configuration file will break the health check because it imposes restrictions on usage of this name. The `allowed_clients` and `disallowed_clients` properties should also allow the client IP health check.
 
 ## DHCP server {#dhcp}
 
