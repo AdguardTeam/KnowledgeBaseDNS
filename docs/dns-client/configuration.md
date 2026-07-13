@@ -106,7 +106,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
       **Example:** `'8.8.8.8:53'`
 
-    - `autodevice`: Represents an automatic connection of a device.
+    - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
 
       :::note
 
@@ -192,6 +192,7 @@ The `fallback` object configures the behavior of the DNS server in case of failu
 
   **Example:** `2s`
 
+[automatic-connection]:  /private-dns/connect-devices/other-options/automatic-connection
 [profile-id]:  /private-dns/solving-problems/automatic-devices/#dns-server-id
 [device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
