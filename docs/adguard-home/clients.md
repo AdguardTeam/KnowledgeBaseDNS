@@ -29,8 +29,7 @@ If you only need to see friendly names in the AdGuard Home stats, editing the ho
 Runtime clients sources can be disabled via the [`clients.runtime_sources`][sources] object of the configuration file.
 
 [whois]:   https://en.wikipedia.org/wiki/WHOIS
-<!-- TODO(m.kazantsev): Update the reference, when the configuration is moved to the Knowledge Base.-->
-[sources]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration#configuration-file
+[sources]: /adguard-home/configuration#clients
 
 ## Persistent clients {#persistent-clients}
 

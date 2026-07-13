@@ -33,7 +33,7 @@ At the bottom of the *Settings* → *DNS settings* page you will find the *Acces
 
 To enable the Allowlist mode, enter [ClientIDs][cid] (recommended) or IP addresses for allowed clients in the *Allowed clients* field.
 
-[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[cid]: /adguard-home/clients#client-id
 
 ## Disabling plain DNS
 
