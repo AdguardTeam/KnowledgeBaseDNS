@@ -210,6 +210,15 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui .info p,
 .openapi-reference .swagger-ui .description p {
   color: var(--ifm-font-color-base);
+  font-family: inherit;
+}
+
+.openapi-reference .swagger-ui .model-box-control:focus, .openapi-reference .swagger-ui .models-control:focus, .openapi-reference .swagger-ui .opblock-summary-control:focus {
+  outline: none;
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-section-header {
+  background: var(--ifm-table-stripe-background);
 }
 
 .openapi-reference .swagger-ui .opblock-tag-section {
@@ -264,12 +273,27 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui table thead tr td, .openapi-reference .swagger-ui table thead tr th,
 .openapi-reference .swagger-ui .parameter__name,
 .openapi-reference .swagger-ui .model-title,
-.openapi-reference .swagger-ui .model {
+.openapi-reference .swagger-ui .model,
+.openapi-reference .swagger-ui .opblock .opblock-section-header h4,
+.openapi-reference .swagger-ui .response-col_status,
+.openapi-reference .swagger-ui .response-col_links {
   color: var(--ifm-font-color-base);
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-summary .view-line-link {
+  width: 24px;
+}
+
+.openapi-reference .swagger-ui section.models .model-container:first-of-type {
+  margin-top: 0;
 }
 
 .openapi-reference .swagger-ui .model {
   margin: 16px 0 0;
+}
+
+.openapi-reference .swagger-ui section.models h4 {
+  padding: 10px 20px;
 }
 
 /* Operation rows → Infima card surfaces */
@@ -393,7 +417,8 @@ html[lang='ko'] .navbar__search {
 
 /* Dark mode: Swagger UI ships light-only surfaces, remap holdouts */
 [data-theme='dark'] .openapi-reference .swagger-ui .opblock,
-[data-theme='dark'] .openapi-reference .swagger-ui .models {
+[data-theme='dark'] .openapi-reference .swagger-ui .models,
+[data-theme='dark'] .openapi-reference .swagger-ui section.models .model-container {
   background: transparent;
 }
 
