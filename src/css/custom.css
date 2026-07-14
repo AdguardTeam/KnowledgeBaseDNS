@@ -345,9 +345,13 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui table tbody tr td {
   border: 1px solid var(--ifm-table-border-color);
   padding: 0.5rem 0.75rem;
+  vertical-align: middle;
 }
 .openapi-reference .swagger-ui table tbody tr:nth-of-type(odd) {
   background: var(--ifm-table-stripe-background);
+}
+.openapi-reference .swagger-ui table.model tbody tr td {
+  vertical-align: middle;
 }
 
 /* Models section → Infima card */
@@ -377,6 +381,21 @@ html[lang='ko'] .navbar__search {
 [data-theme='dark'] .openapi-reference .swagger-ui .opblock,
 [data-theme='dark'] .openapi-reference .swagger-ui .models {
   background: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .operation-filter-input {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui svg {
+  fill: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .model-toggle:after {
+  background: var(--ifm-font-color-base);
+  mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/></svg>") 50% no-repeat;
+  -webkit-mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/></svg>") 50% no-repeat;
 }
 
 @media (min-width: 997px) {
