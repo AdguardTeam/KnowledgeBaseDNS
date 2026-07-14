@@ -15,7 +15,7 @@ export default function OpenApiReference() {
               url={SPEC_URL}
               docExpansion="list"
               deepLinking
-              filter
+              filter={false}
               defaultModelsExpandDepth={1}
               supportedSubmitMethods={[]}
             />
