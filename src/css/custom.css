@@ -165,6 +165,10 @@ html[lang='ko'] .navbar__search {
  * so light/dark adapt automatically.
  */
 
+ .openapi-reference {
+  margin: 32px 0 0;
+ }
+
 .openapi-reference .swagger-ui {
   font-family: var(--ifm-font-family-base);
   font-size: var(--ifm-font-size-base);
@@ -188,6 +192,10 @@ html[lang='ko'] .navbar__search {
   max-width: none;
 }
 
+.openapi-reference .swagger-ui .info {
+  margin: 0 0 32px;
+}
+
 /* API info header → doc heading */
 .openapi-reference .swagger-ui .info .title {
   font-family: var(--ifm-font-family-base);
@@ -200,13 +208,59 @@ html[lang='ko'] .navbar__search {
   color: var(--ifm-font-color-base);
 }
 
+.openapi-reference .swagger-ui .opblock-tag-section {
+  margin: 0 0 16px;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.openapi-reference .swagger-ui section.models h4,
+.openapi-reference .swagger-ui section.models.is-open h4 {
+  border-bottom: none;
+  background: none;
+}
+
+.openapi-reference .swagger-ui section.models {
+  padding: 0;
+}
+
+.openapi-reference .swagger-ui section.models h4:hover {
+  background: none;
+}
+
+.openapi-reference .swagger-ui .models-control {
+  background: none;
+  color: var(--ifm-font-color-base);
+}
+
 /* Tag group headings → Infima h2 */
 .openapi-reference .swagger-ui .opblock-tag {
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: var(--ifm-font-family-base);
   font-size: var(--ifm-h2-font-size);
   font-weight: var(--ifm-heading-font-weight);
   color: var(--ifm-heading-color);
-  border-bottom: 1px solid var(--ifm-table-border-color);
+  border: none;
+}
+
+.openapi-reference .swagger-ui .opblock-tag small {
+  flex: auto;
+  order: 1;
+  padding: 0;
+  color: var(--ifm-font-color-base);
+}
+
+.openapi-reference .swagger-ui table tbody tr td:first-of-type {
+  padding: 10px;
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-summary-description,
+.openapi-reference .swagger-ui .opblock-description-wrapper p, .openapi-reference .swagger-ui .opblock-external-docs-wrapper p, .openapi-reference .swagger-ui .opblock-title_normal p,
+.openapi-reference .swagger-ui table thead tr td, .openapi-reference .swagger-ui table thead tr th,
+.openapi-reference .swagger-ui .parameter__name,
+.openapi-reference .swagger-ui .model-title,
+.openapi-reference .swagger-ui .model {
+  color: var(--ifm-font-color-base);
 }
 
 /* Operation rows → Infima card surfaces */
@@ -250,9 +304,6 @@ html[lang='ko'] .navbar__search {
   font-weight: 700;
 }
 /* Operation left border follows the method accent */
-.openapi-reference .swagger-ui .opblock {
-  border-left: 3px solid var(--opblock-color, var(--ifm-color-primary));
-}
 .openapi-reference .swagger-ui .opblock-summary .opblock-summary-path {
   font-weight: var(--ifm-font-weight-semibold);
   color: var(--ifm-heading-color);
@@ -272,21 +323,19 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui a:hover {
   color: var(--ifm-link-hover-color);
 }
-.openapi-reference .swagger-ui code,
-.openapi-reference .swagger-ui pre {
+.openapi-reference .swagger-ui code {
   font-family: var(--ifm-font-family-monospace);
   background: var(--ifm-code-background);
   border-radius: var(--ifm-global-radius);
 }
 .openapi-reference .swagger-ui pre {
   padding: 0.75rem;
-  border: 1px solid var(--ifm-color-emphasis-200);
+  background: inherit;
 }
 
 /* Parameter / response tables → Infima tables */
 .openapi-reference .swagger-ui table {
   border-collapse: collapse;
-  border: 1px solid var(--ifm-table-border-color);
   font-size: 0.9rem;
 }
 .openapi-reference .swagger-ui table thead tr {
@@ -312,12 +361,16 @@ html[lang='ko'] .navbar__search {
 
 /* Filter input → brand */
 .openapi-reference .swagger-ui .filter-container .filter {
-  border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: var(--ifm-global-radius);
+  margin: 0 0 16px;
 }
 .openapi-reference .swagger-ui .filter-container .filter:focus {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 0 0 2px rgba(47, 110, 222, 0.25);
+}
+
+.openapi-reference .swagger-ui .filter-container .filter .operation-filter-input {
+  margin: 0;
 }
 
 /* Dark mode: Swagger UI ships light-only surfaces, remap holdouts */
