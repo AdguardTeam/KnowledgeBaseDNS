@@ -263,7 +263,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### Reference
 
-Please see the [method’s reference](reference.md).
+Please see the [API reference](private-dns/api/reference.mdx).
 
 ### OpenAPI spec
 

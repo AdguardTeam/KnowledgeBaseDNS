@@ -254,7 +254,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/oauth_token' -i -X POST \
 
 ### API에 대한 도움말
 
-Please see the [method’s reference](reference.md).
+Please see the [method’s reference](private-dns/api/reference.mdx).
 
 ### OpenAPI spec
 
