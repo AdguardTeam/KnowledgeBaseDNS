@@ -660,11 +660,11 @@ List of filters. Each filter has the following properties:
 
 - `last_updated`: Time when the filter was last updated from server.
 
-- `id`: filter ID (must be unique).
+- `id`: Filter ID (must be unique).
 
 ### `dhcp` {#dhcp}
 
-Built-in DHCP server configuration. See also the [DHCP] article. It has the following properties:
+Built-in DHCP server configuration. See also the [DHCP][DHCPv4] article. It has the following properties:
 
 - `enabled`: DHCP server status.
 
@@ -682,15 +682,15 @@ Built-in DHCP server configuration. See also the [DHCP] article. It has the foll
 
     - `icmp_timeout_msec`: Time to wait for an ICMP reply to detect an IP conflict, in milliseconds. If `0`, the feature is disabled.
 
-    - `options`: Custom DHCP options. See the [DHCP] article section on these options for more information.
+    - `options`: Custom DHCP options. See the [DHCP][DHCPv4] article section on these options for more information.
 
 - `dhcpv6`: DHCPv6 settings. It has the following properties:
 
-    - `range_start`: the first IP address to be assigned to a client.
+    - `range_start`: The first IP address to be assigned to a client.
 
-    - `lease_duration`: same as in v4 above.
+    - `lease_duration`: Same as in v4 above.
 
-    - `ra_slaac_only` and `ra_allow_slaac`: send RA packets either forcing the clients to use SLAAC or allowing them to choose. See the [DHCP] article section on these options for more information.
+    - `ra_slaac_only` and `ra_allow_slaac`: Send RA packets either forcing the clients to use SLAAC or allowing them to choose. See the [DHCP][DHCPv6] article section on these options for more information.
 
 - `local_domain_name`: The domain name that AdGuard Home’s DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network’s DHCP server, the hostname of that machine is `myhost.lan`. DNS queries of type `A` for such hosts are only allowed from locally served networks, such as `10.0.0.0/8`, `192.168.0.0/16`, and so on. Other clients receive an empty `NXDOMAIN` response.
 
@@ -826,12 +826,13 @@ Log settings.
 
 Removing an entry from settings file will reset it to the default value. Deleting the file will reset all settings to the default values.
 
-[DDR]:           https://www.ietf.org/archive/id/draft-ietf-add-ddr-06.html
-[DHCP]:          https://adguard-dns.io/kb/adguard-home/dhcp/
-[docker-conf]:   https://adguard-dns.io/kb/adguard-home/docker/
-[hsts]:          https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
-[rfc6147]:       https://datatracker.ietf.org/doc/html/rfc6147
-[tls-names]:     https://pkg.go.dev/crypto/tls#pkg-constants
+[DDR]:         https://www.ietf.org/archive/id/draft-ietf-add-ddr-06.html
+[DHCPv4]:      /adguard-home/dhcp#dhcpv4-options
+[DHCPv6]:      /adguard-home/dhcp#dhcpv6-options
+[docker-conf]: /adguard-home/docker
+[hsts]:        https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+[rfc6147]:     https://datatracker.ietf.org/doc/html/rfc6147
+[tls-names]:   https://pkg.go.dev/crypto/tls#pkg-constants
 
 ## Reset web password {#password-reset}
 
