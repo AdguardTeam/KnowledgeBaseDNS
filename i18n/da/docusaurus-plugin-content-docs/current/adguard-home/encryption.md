@@ -150,7 +150,7 @@ AdGuard Home vil få `192.168.1.2` som adressen på proxyserveren og tjekke den 
 
 ### Cloudflare CDN
 
-Cloudflares indholdsleveringsnetværk fungerer som en omvendt proxy og føjer sine [egne headers][cloudflare-headers] til de videresendte forespørgsler, som er `CF-Connecting-IP` og `True-Client-IP`. Disse understøttes også af AdGuard Home, så de omvendte proxyserveres [adresser][cloudflare-addresses] kan indsættes direkte i `trusted_proxies`-listen. Se [Cloudflares officielle reference][cloudflare-real-ip] om gendannelse af den besøgendes oprindelige IP.
+Cloudflares indholdsleveringsnetværk fungerer som en omvendt proxy og føjer sine [egne headers][cloudflare-headers] til de videresendte forespørgsler, som er `CF-Connecting-IP` og `True-Client-IP`. Disse understøttes også af AdGuard Home, så de omvendte proxyserveres [adresser][cloudflare-addresses] kan indsættes direkte i `trusted_proxies`-listen. Se [Cloudflares officielle reference][cloudflare-real-ip] om gendannelse af den besøgendes oprindelige IP.
 
 ### Andre headers
 

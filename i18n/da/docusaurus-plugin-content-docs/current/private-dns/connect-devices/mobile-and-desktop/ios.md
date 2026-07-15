@@ -42,7 +42,7 @@ Opsætning af enheden:
 
 1. Ved brug af en VPN-baseret protokol skal der stadig tillades oprettelse af en VPN-profil for at opnå fuld beskyttelse. For at gøre dette, gå til appens startside, klik på _Slå til_, og følg vejledningen i appen.
 
-2. Foretrkkes brug af den indbygget DNS, gå til _Indstillinger_→ _Generelt_ → _VPN og Enhedshndtering_ → _DNS_ og slå AdGuard DNS til.
+2. Foretrkkes brug af den indbygget DNS, gå til _Indstillinger_→ _Generelt_ → _VPN og Enhedshndtering_ → _DNS_ og slå AdGuard DNS til.
 
 Færdig! Enheden er nu tilsluttet AdGuard DNS.
 

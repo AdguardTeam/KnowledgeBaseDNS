@@ -29,7 +29,7 @@ Supported CPU architectures:
 
 1. Download and unpack the `.tar.gz` or `.zip` archive from the [releases page][releases].
 
-   ::caution
+   :::caution
 
    On macOS, it’s crucial that globally installed daemons are owned by `root` (see the [`launchd` documentation][launchd-requirements]), so the `adguarddns-cli` executable must be placed in the `/Applications/` directory or its subdirectory.
 
