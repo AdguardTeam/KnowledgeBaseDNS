@@ -54,7 +54,7 @@ Mezi typy zabezpečených DNS patří `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (Do
 
 4. Vaše razítko se automaticky vygeneruje a zobrazí se v poli **Razítko**.
 
-### Získání hash certifikátu
+### Získání hash certifikátu {#obtaining-the-certificate-hash}
 
 Chcete-li vyplnit pole **hash certifikátu** serveru, můžete použít následující příkaz, kterým nahradíte `<IP_ADDRESS>`, `<PORT>` a `<SERVER_NAME>` odpovídajícími hodnotami pro váš DNS server:
 

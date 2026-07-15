@@ -12,7 +12,7 @@ Pour connecter un dispositif Windows à AdGuard DNS, commencez par l'ajouter au 
 
 Vous pouvez le configurer via les applications [AdGuard](#use-adguard-ad-blocker-paid-option) ou [AdGuard VPN](#use-adguard-vpn), dans les [paramètres Windows](#configure-via-windows-settings), ou en utilisant le [client AdGuard DNS](#use-adguard-dns-client).
 
-## Utilisez le Bloqueur AdGuard (option payante)
+## Utilisez le Bloqueur AdGuard (option payante) {#use-adguard-ad-blocker-paid-option}
 
 L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait pour configurer AdGuard DNS sur votre appareil Windows. Vous pouvez choisir parmi les différents protocoles de chiffrement. En plus du filtrage DNS, vous obtenez également un excellent bloqueur de publicité qui fonctionne sur l'ensemble de votre système.
 
@@ -36,7 +36,7 @@ L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait po
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
-## Utilisez AdGuard VPN
+## Utilisez AdGuard VPN {#use-adguard-vpn}
 
 Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre VPN le fait, donc si vous avez besoin à la fois d'un VPN et d'un DNS privé, AdGuard VPN est votre option de choix.
 
@@ -56,7 +56,7 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 
 C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
 
-## Configuration via les paramètres Windows
+## Configuration via les paramètres Windows {#configure-via-windows-settings}
 
 :::note
 
@@ -78,7 +78,7 @@ Disponible uniquement sur Windows 11.
 7. Cliquez sur _Enregistrer_. Voilà, votre appareil est maintenant connecté à AdGuard DNS !
    ![Enregistrer les paramètres DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## Utiliser le client AdGuard DNS
+## Utiliser le client AdGuard DNS {#use-adguard-dns-client}
 
 AdGuard DNS Client est un outil console polyvalent et multiplateforme qui vous permet de vous connecter à AdGuard DNS en utilisant des protocoles DNS chiffrés.
 

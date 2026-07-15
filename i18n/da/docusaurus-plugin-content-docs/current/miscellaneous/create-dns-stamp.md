@@ -54,7 +54,7 @@ Typer af Sikker DNS omfatter `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`og `DN
 
 4. Dit stempel genereres automatisk og vil fremgå i feltet **Stamp**.
 
-### Indhentning af certifikat-hash
+### Indhentning af certifikat-hash {#obtaining-the-certificate-hash}
 
 For at udfylde **hash'ene for serverens certifikatfelt** kan man bruge flg. kommando, hvor `<IP_ADDRESS>`, `<PORT>` og `<SERVER_NAME>` erstattes med de korresponderende værdier for ens DNS-server:
 

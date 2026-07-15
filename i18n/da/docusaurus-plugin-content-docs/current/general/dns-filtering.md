@@ -39,7 +39,7 @@ Der er tusindvis af DNS-servere at vælge imellem, alle unikke i deres egenskabe
 
 Andre DNS-udbydere fungerer muligvis anderledes, så find ud af mere om dem, inden der vælges en DNS-server. En listen over nogle af de mest populære DNS-udbydere findes i denne [denne artikel](dns-providers.md). Alle AdGuard-apps, som understøtter DNS-funktionalitet, har også en liste over DNS-servere at vælge imellem, eller tillader endda valg af en hvilken som helst tilpasset DNS-server efter ønske.
 
-### Lokale DNS-blokeringslister
+### Lokale DNS-blokeringslister {#local-dns-blocklists}
 
 Ved kun at stole på DNS-servere til at filtrere DNS-trafik, mister man imidlertid al fleksibilitet. Blokerer den valgte server et domæne, kan man ikke tilgå det. Med AdGuard behøver man ikke engang at opsætte nogen bestemt DNS-server til at filtrere DNS-trafik. Alle AdGuard-produkter muliggør brug af DNS-sortlister, fra simple værtsfiler til lister med [mere avancerede syntakser](dns-filtering-syntax.md). De fungerer på samme måde som alm. sortlister: Matcher en DNS-forespørgsel en af reglerne i den aktive filterliste, blokeres den. For at være mere præcis leverer DNS-serveren en ikke-rutbar IP-adresse ved en sådan forespørgsel.
 
