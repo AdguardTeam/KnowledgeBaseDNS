@@ -54,7 +54,7 @@ Güvenli DNS türleri arasında `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `
 
 4. Damganız otomatik olarak oluşturulacaktır ve bunu **Damga** alanında göreceksiniz.
 
-### Sertifika karmasının elde edilmesi
+### Sertifika karmasının elde edilmesi {#obtaining-the-certificate-hash}
 
 To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 

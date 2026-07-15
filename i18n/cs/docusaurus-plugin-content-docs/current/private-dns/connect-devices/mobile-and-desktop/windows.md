@@ -12,7 +12,7 @@ Chcete-li zařízení Windows připojit k AdGuard DNS, přidejte je nejprve na _
 
 Můžete to nastavit prostřednictvím aplikací [AdGuard](#use-adguard-ad-blocker-paid-option) nebo [AdGuard VPN](#use-adguard-vpn) v [nastavení Windows](#configure-via-windows-settings), nebo pomocí [AdGuard DNS Client](#use-adguard-dns-client).
 
-## Použití blokátoru reklam AdGuard (placená možnost)
+## Použití blokátoru reklam AdGuard (placená možnost) {#use-adguard-ad-blocker-paid-option}
 
 Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro nastavení AdGuard DNS v zařízení Windows. Můžete si vybrat z různých šifrovacích protokolů. Spolu s DNS filtrováním získáte také vynikající blokátor reklam, který funguje v celém systému.
 
@@ -36,7 +36,7 @@ Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro 
 
 Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
-## Použití AdGuard VPN
+## Použití AdGuard VPN {#use-adguard-vpn}
 
 Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže pokud potřebujete jak VPN, tak soukromý DNS, AdGuard VPN je vaše nejlepší volba.
 
@@ -56,7 +56,7 @@ Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže 
 
 Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
-## Konfigurace prostřednictvím nastavení Windows
+## Konfigurace prostřednictvím nastavení Windows {#configure-via-windows-settings}
 
 :::note
 
@@ -78,7 +78,7 @@ Dodtupné pouze ve Windows 11.
 7. Klikněte na _Uložit_. To je vše — vaše zařízení je nyní připojeno k AdGuard DNS!
    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## Použití klienta AdGuard DNS
+## Použití klienta AdGuard DNS {#use-adguard-dns-client}
 
 Klient AdGuard DNS je univerzální multiplatformní konzolový nástroj, který umožňuje připojení k AdGuard DNS pomocí šifrovaných protokolů DNS.
 

@@ -12,7 +12,7 @@ Um ein Windows-Gerät mit AdGuard DNS zu verbinden, fügen Sie es zunächst zu _
 
 Sie können es über die Anwendungen [AdGuard](#use-adguard-ad-blocker-paid-option) oder [AdGuard VPN](#use-adguard-vpn), in den [Windows-Einstellungen](#configure-via-windows-settings) oder über den [AdGuard DNS Client](#use-adguard-dns-client) einrichten.
 
-## AdGuard Werbeblocker verwenden (kostenpflichtige Option)
+## AdGuard Werbeblocker verwenden (kostenpflichtige Option) {#use-adguard-ad-blocker-paid-option}
 
 Die AdGuard-App ermöglicht das Verwenden von verschlüsseltem DNS, was sie ideal für die Einstellungen von AdGuard DNS auf Ihrem Windows-Gerät macht. Sie können zwischen verschiedenen Verschlüsselungsprotokollen wählen. Zusätzlich zur DNS-Filterung erhalten Sie auch einen hervorragenden Werbeblocker, der im gesamten System funktioniert.
 
@@ -36,7 +36,7 @@ Die AdGuard-App ermöglicht das Verwenden von verschlüsseltem DNS, was sie idea
 
 Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 
-## AdGuard VPN verwenden
+## AdGuard VPN verwenden {#use-adguard-vpn}
 
 Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch schon, daher ist AdGuard VPN die erste Wahl für Sie, wenn Sie sowohl ein VPN als auch ein privates DNS benötigen.
 
@@ -56,7 +56,7 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
 
 Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
 
-## Über die Windows-Einstellungen konfigurieren
+## Über die Windows-Einstellungen konfigurieren {#configure-via-windows-settings}
 
 :::note
 
@@ -78,7 +78,7 @@ Nur unter Windows 11 verfügbar.
 7. Klicken Sie auf _Speichern_. Das war's - Ihr Gerät ist jetzt mit AdGuard DNS verbunden!
    ![DNS-Einstellungen speichern \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## AdGuard DNS Client verwenden
+## AdGuard DNS Client verwenden {#use-adguard-dns-client}
 
 AdGuard DNS Client ist ein vielseitiges, plattformübergreifendes Konsolentool, das Ihnen die Verbindung zu AdGuard DNS über verschlüsselte DNS-Protokolle ermöglicht.
 

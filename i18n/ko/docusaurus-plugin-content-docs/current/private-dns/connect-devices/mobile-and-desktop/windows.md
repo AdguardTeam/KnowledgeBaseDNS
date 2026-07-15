@@ -12,7 +12,7 @@ To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
 
 You can set it up via [AdGuard](#use-adguard-ad-blocker-paid-option) or [AdGuard VPN](#use-adguard-vpn) apps, in [Windows settings](#configure-via-windows-settings), or using the [AdGuard DNS Client](#use-adguard-dns-client).
 
-## AdGuard 광고 차단기 사용(유료 옵션)
+## AdGuard 광고 차단기 사용(유료 옵션) {#use-adguard-ad-blocker-paid-option}
 
 The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. 다양한 암호화 프로토콜 중에서 선택할 수 있습니다. DNS 필터링과 함께 시스템 전체에서 작동하는 훌륭한 광고 차단기도 함께 제공합니다.
 
@@ -36,7 +36,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 
 기기가 AdGuard DNS에 성공적으로 연결되었습니다!
 
-## AdGuard VPN 사용
+## AdGuard VPN 사용 {#use-adguard-vpn}
 
 모든 VPN 서비스가 암호화된 DNS를 지원하는 것은 아닙니다. 하지만 우리의 VPN은 지원하므로, VPN과 개인 DNS가 모두 필요하다면, AdGuard VPN이 최적의 선택입니다.
 
@@ -78,7 +78,7 @@ Available only on Windows 11.
 7. Click _Save_. That’s it — your device is now connected to AdGuard DNS!
    ![Save DNS settings \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## AdGuard DNS 클라이언트 사용
+## AdGuard DNS 클라이언트 사용 {#use-adguard-dns-client}
 
 AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
 

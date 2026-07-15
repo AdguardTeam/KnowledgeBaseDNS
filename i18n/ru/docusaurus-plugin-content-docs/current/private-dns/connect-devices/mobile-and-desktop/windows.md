@@ -12,7 +12,7 @@ sidebar_position: 5
 
 Вы можете настроить это через приложения [AdGuard](#use-adguard-ad-blocker-paid-option) или [AdGuard VPN](#use-adguard-vpn), в [настройках Windows](#configure-via-windows-settings) или с помощью [AdGuard DNS Client](#use-adguard-dns-client).
 
-## Используйте Блокировщик рекламы AdGuard (платная опция)
+## Используйте Блокировщик рекламы AdGuard (платная опция) {#use-adguard-ad-blocker-paid-option}
 
 Приложение AdGuard позволяет использовать зашифрованный DNS, что делает его идеальным для настройки AdGuard DNS на вашем устройстве Windows. Вы можете выбрать различные протоколы шифрования. Вместе с фильтрацией DNS вы также получите отличный блокировщик рекламы, который работает во всей системе.
 
@@ -36,7 +36,7 @@ sidebar_position: 5
 
 Готово! Ваше устройство успешно подключено к AdGuard DNS.
 
-## Используйте AdGuard VPN
+## Используйте AdGuard VPN {#use-adguard-vpn}
 
 Не все VPN-сервисы поддерживают зашифрованный DNS. Однако наш VPN это поддерживает, так что если вы нуждаетесь как в VPN, так и в частном DNS, AdGuard VPN — ваш выбор.
 
@@ -56,7 +56,7 @@ sidebar_position: 5
 
 Готово! Ваше устройство успешно подключено к AdGuard DNS.
 
-## Настроить через параметры Windows
+## Настроить через параметры Windows {#configure-via-windows-settings}
 
 :::note
 
@@ -78,7 +78,7 @@ sidebar_position: 5
 7. Нажмите _Сохранить_. Вот и всё — ваше устройство теперь подключено к AdGuard DNS!
    ![Сохранить настройки DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## Использовать AdGuard DNS Client
+## Использовать AdGuard DNS Client {#use-adguard-dns-client}
 
 AdGuard DNS Client — это универсальный кроссплатформенный консольный инструмент, который позволяет подключиться к AdGuard DNS, используя зашифрованные DNS-протоколы.
 

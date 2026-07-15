@@ -54,7 +54,7 @@ Zu den Arten von Secure DNS gehören `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ
 
 4. Ihr Stempel wird automatisch erstellt und im Feld **Stempel** angezeigt.
 
-### Abrufen des Zertifikats-Hashes
+### Abrufen des Zertifikats-Hashes {#obtaining-the-certificate-hash}
 
 Um das Feld **Zertifikat-Hashes des Servers** auszufüllen, können Sie den folgenden Befehl verwenden, wobei Sie `<IP_ADDRESS>`, `<PORT>` und `<SERVER_NAME>` durch die entsprechenden Werte für Ihren DNS-Server ersetzen:
 

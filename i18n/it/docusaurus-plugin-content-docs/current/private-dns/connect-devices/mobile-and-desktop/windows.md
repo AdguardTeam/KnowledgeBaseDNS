@@ -12,7 +12,7 @@ Per connettere un dispositivo Windows ad AdGuard DNS, prima aggiungilo alla _pla
 
 Puoi configurarlo tramite le app [AdGuard](#use-adguard-ad-blocker-paid-option) o [AdGuard VPN](#use-adguard-vpn), nelle [impostazioni di Windows](#configure-via-windows-settings) oppure usando il [client AdGuard DNS](#use-adguard-dns-client).
 
-## Utilizza AdGuard Blocca-Annunci (opzione a pagamento)
+## Utilizza AdGuard Blocca-Annunci (opzione a pagamento) {#use-adguard-ad-blocker-paid-option}
 
 L'app AdGuard ti consente di utilizzare DNS criptati, rendendola perfetta per configurare AdGuard DNS sul tuo dispositivo Windows. Puoi scegliere tra vari protocolli di crittografia. Insieme al filtraggio DNS, ottieni anche un eccellente blocco degli annunci che funziona su tutto il sistema.
 
@@ -36,7 +36,7 @@ L'app AdGuard ti consente di utilizzare DNS criptati, rendendola perfetta per co
 
 Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Utilizza l'app AdGuard VPN
+## Utilizza l'app AdGuard VPN {#use-adguard-vpn}
 
 Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo fa, quindi se hai bisogno sia di una VPN che di un DNS privato, AdGuard VPN è la tua opzione ideale.
 
@@ -56,7 +56,7 @@ Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo
 
 Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
 
-## Configura tramite le impostazioni di Windows
+## Configura tramite le impostazioni di Windows {#configure-via-windows-settings}
 
 :::note
 
@@ -78,7 +78,7 @@ Disponibile solo per Windows 11.
 7. Clicca _Salva_. Ecco fatto: il tuo dispositivo è ora connesso ad AdGuard DNS!
    ![Salva le impostazioni DNS \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## Usa il Client AdGuard DNS
+## Usa il Client AdGuard DNS {#use-adguard-dns-client}
 
 AdGuard DNS Client è uno strumento versatile e multipiattaforma che ti consente di connetterti a AdGuard DNS utilizzando protocolli DNS criptati.
 
