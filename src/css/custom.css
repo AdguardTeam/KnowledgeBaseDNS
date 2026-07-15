@@ -158,6 +158,295 @@ html[lang='ko'] .navbar__search {
   }
 }
 
+/*
+ * OpenAPI reference
+ * Swagger UI reskinned to match the KB Infima theme.
+ * Uses brand + Infima variables only (no hardcoded color values),
+ * so light/dark adapt automatically.
+ */
+
+ .openapi-reference {
+  margin: 32px 0 0;
+ }
+
+.openapi-reference .swagger-ui {
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-font-size-base);
+  line-height: var(--ifm-line-height-base);
+  color: var(--ifm-font-color-base);
+}
+
+/* Remove Swagger's own top bar (logo + spec URL input) */
+.openapi-reference .swagger-ui .topbar {
+  display: none;
+}
+
+/* Hide server selector + Authorize button — read-only reference */
+.openapi-reference .swagger-ui .scheme-container {
+  display: none;
+}
+
+/* Full width within the doc content column */
+.openapi-reference .swagger-ui .wrapper {
+  padding: 0;
+  max-width: none;
+}
+
+.openapi-reference .swagger-ui .model-box-control:focus, .swagger-ui .models-control:focus, .swagger-ui .opblock-summary-control:focus {
+  outline: none;
+}
+
+.openapi-reference .swagger-ui .info {
+  margin: 0 0 32px;
+}
+
+/* API info header → doc heading */
+.openapi-reference .swagger-ui .info .title {
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-h1-font-size);
+  font-weight: var(--ifm-heading-font-weight);
+  color: var(--ifm-heading-color);
+}
+.openapi-reference .swagger-ui .info p,
+.openapi-reference .swagger-ui .description p {
+  color: var(--ifm-font-color-base);
+  font-family: inherit;
+}
+
+.openapi-reference .swagger-ui .model-box-control:focus, .openapi-reference .swagger-ui .models-control:focus, .openapi-reference .swagger-ui .opblock-summary-control:focus {
+  outline: none;
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-section-header {
+  background: var(--ifm-table-stripe-background);
+}
+
+.openapi-reference .swagger-ui .opblock-tag-section {
+  margin: 0 0 16px;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.openapi-reference .swagger-ui section.models h4,
+.openapi-reference .swagger-ui section.models.is-open h4 {
+  border-bottom: none;
+  background: none;
+}
+
+.openapi-reference .swagger-ui section.models {
+  padding: 0;
+}
+
+.openapi-reference .swagger-ui section.models h4:hover {
+  background: none;
+}
+
+.openapi-reference .swagger-ui .models-control {
+  background: none;
+  color: var(--ifm-font-color-base);
+}
+
+/* Tag group headings → Infima h2 */
+.openapi-reference .swagger-ui .opblock-tag {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-h2-font-size);
+  font-weight: var(--ifm-heading-font-weight);
+  color: var(--ifm-heading-color);
+  border: none;
+}
+
+.openapi-reference .swagger-ui .opblock-tag small {
+  flex: auto;
+  order: 1;
+  padding: 0;
+  color: var(--ifm-font-color-base);
+  font-family: inherit;
+}
+
+.openapi-reference .swagger-ui table tbody tr td:first-of-type {
+  padding: 10px;
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-summary-description,
+.openapi-reference .swagger-ui .opblock-description-wrapper p, .openapi-reference .swagger-ui .opblock-external-docs-wrapper p, .openapi-reference .swagger-ui .opblock-title_normal p,
+.openapi-reference .swagger-ui table thead tr td, .openapi-reference .swagger-ui table thead tr th,
+.openapi-reference .swagger-ui .parameter__name,
+.openapi-reference .swagger-ui .model-title,
+.openapi-reference .swagger-ui .model,
+.openapi-reference .swagger-ui .opblock .opblock-section-header h4,
+.openapi-reference .swagger-ui .response-col_status,
+.openapi-reference .swagger-ui .response-col_links {
+  color: var(--ifm-font-color-base);
+}
+
+.openapi-reference .swagger-ui .opblock .opblock-summary .view-line-link {
+  width: 24px;
+}
+
+.openapi-reference .swagger-ui section.models .model-container:first-of-type {
+  margin-top: 0;
+}
+
+.openapi-reference .swagger-ui .model {
+  margin: 16px 0 0;
+}
+
+.openapi-reference .swagger-ui section.models h4 {
+  padding: 10px 20px;
+}
+
+/* Operation rows → Infima card surfaces */
+.openapi-reference .swagger-ui .opblock {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+.openapi-reference .swagger-ui .opblock:hover {
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+/*
+ * Method accents from Infima status variables (consistent with
+ * admonitions/badges across the KB). Brand blue (--ifm-color-primary)
+ * is the POST + dominant identity accent.
+ */
+.openapi-reference .swagger-ui .opblock.opblock-get {
+  --opblock-color: var(--ifm-color-success);
+}
+.openapi-reference .swagger-ui .opblock.opblock-post {
+  --opblock-color: var(--ifm-color-primary);
+}
+.openapi-reference .swagger-ui .opblock.opblock-put {
+  --opblock-color: var(--ifm-color-warning);
+}
+.openapi-reference .swagger-ui .opblock.opblock-delete {
+  --opblock-color: var(--ifm-color-danger);
+}
+.openapi-reference .swagger-ui .opblock.opblock-patch {
+  --opblock-color: var(--ifm-color-info);
+}
+.openapi-reference .swagger-ui .opblock.opblock-head,
+.openapi-reference .swagger-ui .opblock.opblock-options {
+  --opblock-color: var(--ifm-color-emphasis-500);
+}
+.openapi-reference .swagger-ui .opblock .opblock-summary-method {
+  background: var(--opblock-color);
+  border-radius: var(--ifm-global-radius);
+  font-weight: 700;
+}
+/* Operation left border follows the method accent */
+.openapi-reference .swagger-ui .opblock-summary .opblock-summary-path {
+  font-weight: var(--ifm-font-weight-semibold);
+  color: var(--ifm-heading-color);
+}
+
+/* Headings, links, code → Infima */
+.openapi-reference .swagger-ui h2,
+.openapi-reference .swagger-ui h3,
+.openapi-reference .swagger-ui h4,
+.openapi-reference .swagger-ui h5 {
+  font-family: var(--ifm-font-family-base);
+  color: var(--ifm-heading-color);
+}
+.openapi-reference .swagger-ui a {
+  color: var(--ifm-link-color);
+}
+.openapi-reference .swagger-ui a:hover {
+  color: var(--ifm-link-hover-color);
+}
+.openapi-reference .swagger-ui code {
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-code-background);
+  border-radius: var(--ifm-global-radius);
+}
+.openapi-reference .swagger-ui pre {
+  padding: 0.75rem;
+  background: inherit;
+}
+
+/* Parameter / response tables → Infima tables */
+.openapi-reference .swagger-ui table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.openapi-reference .swagger-ui table thead tr {
+  background: var(--ifm-table-head-background);
+}
+.openapi-reference .swagger-ui table thead tr th,
+.openapi-reference .swagger-ui table tbody tr td {
+  border: 1px solid var(--ifm-table-border-color);
+  padding: 0.5rem 0.75rem;
+  vertical-align: middle;
+}
+.openapi-reference .swagger-ui table tbody tr:nth-of-type(odd) {
+  background: var(--ifm-table-stripe-background);
+}
+.openapi-reference .swagger-ui table.model tbody tr td {
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* Models section → Infima card */
+.openapi-reference .swagger-ui .models {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Filter input → brand */
+.openapi-reference .swagger-ui .filter-container .filter {
+  border-radius: var(--ifm-global-radius);
+  margin: 0 0 16px;
+}
+.openapi-reference .swagger-ui .filter-container .filter:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(47, 110, 222, 0.25);
+}
+
+.openapi-reference .swagger-ui .filter-container .filter .operation-filter-input {
+  margin: 0;
+}
+
+.openapi-reference .swagger-ui table.model tr .renderedMarkdown p:first-child {
+  margin: 0;
+}
+
+.openapi-reference .swagger-ui .response-col_status {
+  padding-left: 12px;
+}
+
+/* Dark mode: Swagger UI ships light-only surfaces, remap holdouts */
+[data-theme='dark'] .openapi-reference .swagger-ui .opblock,
+[data-theme='dark'] .openapi-reference .swagger-ui .models,
+[data-theme='dark'] .openapi-reference .swagger-ui section.models .model-container {
+  background: transparent;
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .operation-filter-input,
+[data-theme='dark'] .openapi-reference .swagger-ui input[type=text] {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui svg {
+  fill: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .parameter__type,
+[data-theme='dark'] .openapi-reference .swagger-ui .tab li {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .model-toggle:after {
+  background: var(--ifm-font-color-base);
+  mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/></svg>") 50% no-repeat;
+  -webkit-mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/></svg>") 50% no-repeat;
+}
+
 @media (min-width: 997px) {
   .navbar__items [class*='searchBox'] {
     margin-left: 6px;

@@ -246,4 +246,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [require.resolve('./plugins/dev-api-proxy')],
 };
