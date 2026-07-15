@@ -18,13 +18,21 @@ Bağlantı bağlantısı oluşturabilir ve bunu cihaz ayarlarında kullanabilirs
 
 Artık cihaz adını, cihaz türünü ve geçerli sunucu kimliğini içeren özel bir adres oluşturarak cihazınızı sunucuya otomatik olarak bağlayabilirsiniz. Bu adreslerin nasıl göründüğünü ve bunları oluşturma kurallarını inceleyelim.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Otomatik bağlantı adreslerine örnekler
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — bu işlem otomatik olarak `AdGuard Test Device` adında `DNS-over-TLS` protokolüne sahip bir `Android` cihazı oluşturur
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — bu otomatik olarak `John Doe` adında `DNS-over-HTTPS` protokolüne sahip bir `Windows` cihazı oluşturur
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — bu otomatik olarak `Mary Sue` adında `DNS-over-QUIC` protokolüne sahip bir `iOS` cihazı oluşturur
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Adlandırma kuralları
 

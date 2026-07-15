@@ -43,4 +43,4 @@ Færdig! Enheden er nu tilsluttet og oprettes automatisk i Kontrolpanel.
 2. Rul ned og klik på _Opsætning-ID_.
 3. Klik på _Nulstil opsætnings-ID_.
 
-Efter nulstillingen vil opsætnings-ID'et være ændret, og alle enheder, som brugte det gamle ID, frakobles serveren.
+Efter nulstillingen vil opsætnings-ID'et være ændret, og alle enheder, som brugte det gamle ID, frakobles serveren.

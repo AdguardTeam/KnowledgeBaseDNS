@@ -20,7 +20,7 @@ sidebar_position: 2
 
    :::
 
-3. Find where DNS settings are located in the router’s admin console. Listelenen DNS adreslerini aşağıdaki adreslerle değiştirin:
+3. Find where DNS settings are located in the router’s admin console. Change the listed DNS addresses to the following addresses:
    - IPv4: `94.140.14.49` ve `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 

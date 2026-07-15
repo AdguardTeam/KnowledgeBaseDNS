@@ -17,7 +17,7 @@ Toto nastavení umožňuje určit, kteří klienti mohou používat váš server
 
 Zde můžete zobrazit seznam klientů, kteří nemají povoleno používat váš server DNS. Můžete zablokovat přístup ke všem klientům a používat pouze vybrané klienty. Za tímto účelem přidejte dvě adresy mezi zakázané klienty: `0.0.0.0/0` a `::/0`. Poté v poli _Povolení klienti_ zadejte adresy, které mohou přistupovat k serveru.
 
-:::note Důležité
+:::note Important
 
 Před použitím nastavení přístupu se ujistěte, že neblokujete vlastní IP adresu. Pokud tak učiníte, nebudete mít přístup k síti. Pokud se tak stane, stačí se od serveru DNS odpojit, přejít do nastavení přístupu a odpovídajícím způsobem upravit konfiguraci.
 

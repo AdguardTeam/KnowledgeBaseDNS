@@ -29,7 +29,7 @@ Základní formát názvu hostitele nebo adresy URL používaného k vytvoření
     https://d.adguard-dns.com/dns-query/${TYPE}-${SERVERID}-${HUMANID}
     ```
 
-### Typ zařízení {#device-type}
+### Typ zařízení
 
 Typy zařízení slouží k tomu, aby se v uživatelském rozhraní snáze rozlišovaly různé typy zařízení. Pro automatickou identifikaci zařízení je nutné zadat typ zařízení.
 
@@ -45,7 +45,7 @@ Jsou podporovány následující zkratky:
 - `win`: Zařízení Microsoft Windows.
 - `otr`: Obecná zařízení.
 
-### ID DNS serveru {#dns-server-id}
+### ID DNS serveru
 
 Dalším povinným parametrem je ID vašeho serveru AdGuard DNS, ke kterému je zařízení připojeno.
 

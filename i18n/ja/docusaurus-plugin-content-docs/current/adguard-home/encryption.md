@@ -71,7 +71,7 @@ In the end, you’ll get two files:
 
 Both will be necessary to configure AdGuard Home.
 
-:::info 【重要】
+:::info Important
 
 You will need to use the very same procedure to renew the existing certificate.
 
@@ -223,7 +223,7 @@ AdGuard Home is able to work as a DNSCrypt server. However, this feature is only
 
 Here is how to generate a DNSCrypt configuration file and point AdGuard Home to it:
 
-:::info 【重要】
+:::info Important
 
 Make sure that your TLS settings are valid and encryption is enabled.
 

@@ -106,7 +106,7 @@ All done, you’ve successfully set up DDNS!
    - 此任务将每 5 分钟运行一次
 3. 保存 crontab。
 
-:::note 重要信息
+:::note Important
 
 - 确保您在 macOS 和 Linux 上已安装 `curl`。
 - 记得从设置中复制地址并替换 `ServerID` 和 `UniqueKey`。

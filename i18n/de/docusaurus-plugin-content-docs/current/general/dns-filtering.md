@@ -39,7 +39,7 @@ Es stehen Tausende von DNS-Servern zur Auswahl, die sich alle durch ihre Eigensc
 
 Andere DNS-Anbieter arbeiten möglicherweise anders. Informieren Sie sich daher über sie, bevor Sie sich auf diesen oder einen anderen DNS-Server festlegen. Die Liste der beliebtesten DNS-Anbieter finden Sie unter [in diesem Artikel](dns-providers.md). Alle AdGuard-Anwendungen, die DNS-Funktionen unterstützen, verfügen über eine Liste von DNS-Servern, aus der Sie auswählen können, oder erlauben sogar die Auswahl eines beliebigen benutzerdefinierten DNS-Servers, den Sie wünschen.
 
-### Lokale DNS-Blocklisten {#local-dns-blocklists}
+### Lokale DNS-Blocklisten
 
 Aber wenn Sie sich nur auf DNS-Server verlassen, um Ihren DNS-Verkehr zu filtern, verlieren Sie jegliche Flexibilität. Wenn der gewählte Server eine Domain sperrt, können Sie nicht auf diese zugreifen. Mit AdGuard müssen Sie nicht einmal einen bestimmten DNS-Server konfigurieren, um den DNS-Verkehr zu filtern. Alle AdGuard-Produkte ermöglichen den Einsatz von DNS-Blocklisten, seien es einfache Hosts-Dateien oder Listen mit der [erweiterten Syntax](dns-filtering-syntax.md). Sie funktionieren ähnlich wie normale Blocklisten: Wenn eine DNS-Anfrage mit einer der Regeln in der aktiven Filterliste übereinstimmt, wird sie sperrt. Genauer gesagt, gibt der DNS-Server eine nicht weiterleitbare IP-Adresse für eine solche Anfrage an.
 

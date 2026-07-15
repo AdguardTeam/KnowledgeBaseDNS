@@ -17,7 +17,7 @@ Bu ayar, hangi istemcilerin DNS sunucunuzu kullanabileceğini belirlemenizi sağ
 
 Burada DNS sunucunuzu kullanmasına izin verilmeyen istemcileri listeleyebilirsiniz. Tüm istemcilerin erişimini engelleyebilir ve yalnızca seçilenleri kullanabilirsiniz. Bunu yapmak için izin verilmeyen istemcilere iki adres ekleyin: `0.0.0.0/0` ve `::/0`. Daha sonra _İzin verilen istemciler_ alanına sunucunuza erişebilecek adresleri belirtin.
 
-:::note Önemli
+:::note Important
 
 Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. Eğer böyle bir durum olursa, DNS sunucusundan bağlantınızı kesin, erişim ayarlarına gidin ve yapılandırmaları buna göre ayarlayın.
 

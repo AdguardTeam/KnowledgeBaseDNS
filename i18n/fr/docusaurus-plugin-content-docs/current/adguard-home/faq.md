@@ -179,7 +179,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 ## How do I set up AdGuard Home as default DNS server? {#defaultdns}
 
-See the [_Configuring Devices_ section](getting-started.md#configure-devices) on the _Getting Started_ page.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Are there any known limitations? {#limitations}
 
@@ -312,8 +312,8 @@ If you’re using TLS on your reverse proxy server, you don’t need to use TLS 
 
 You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
 
@@ -408,7 +408,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:
+6. Remplacez l'ancien fichier exécutable AdGuard Home par le nouveau. On most Unix systems the command would look something like this:
 
    ```sh
    sudo cp /tmp/AdGuardHome/AdGuardHome /opt/AdGuardHome/AdGuardHome
@@ -467,7 +467,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Expand-Archive -Path "$outFile" -DestinationPath $Env:TEMP
    ```
 
-6. Replace the old AdGuard Home executable file with the new one. Par exemple :
+6. Remplacez l'ancien fichier exécutable AdGuard Home par le nouveau. Par exemple :
 
    ```ps1
    $aghExe = Join-Path -Path $Env:TEMP -ChildPath 'AdGuardHome\AdGuardHome.exe'

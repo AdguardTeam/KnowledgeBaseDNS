@@ -39,7 +39,7 @@ DNS 过滤可以分为两个不同的功能: 加密和重新路由 DNS 流量到
 
 其它 DNS 提供商的工作方式也可能有所不同，所以在选择某一个 DNS 服务器前，我们建议您要先多了解它们。 [在这篇文章里](dns-providers.md)，用户可以找到最受欢迎 DNS 提供商的清单。 All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you’d like.
 
-### 本地 DNS 拦截列表 {#local-dns-blocklists}
+### 本地 DNS 拦截列表
 
 但是如果只依赖 DNS 服务器来过滤 DNS 流量，用户就失去所有的灵活性。 If the selected server blocks a domain, you can’t access it. With AdGuard, you don’t even need to configure any specific DNS server to filter DNS traffic. 所有 AdGuard 产品允许用户应用 DNS 拦截列表，无论是简单的 Hosts 文件还是使用[更复杂语法](dns-filtering-syntax.md)的清单。 它们与一般的广告过滤器运行相似：当 DNS 请求与某一个属于激活过滤器列表的规则相匹配时，该 DNS 请求将会被阻止。 更准确地说，对于这样的请求，DNS 服务器会返回一个不可路由的 IP 地址。
 

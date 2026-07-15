@@ -42,7 +42,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
 8. 使用基于 VPN 的协议时，仍需授权创建 VPN 配置文件以获得完整保护。 请前往应用首页点击「启用」，并遵循应用内指引完成设置。
 
-9. 完成！ 您的设备已成功连接到 AdGuard DNS。 每次想要启动保护功能时，请点击「启用”」
+9. All done! Your device is successfully connected to AdGuard DNS. 每次想要启动保护功能时，请点击「启用”」
 
    ![启用 \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-zh_cn.png)
 
@@ -69,7 +69,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
 10. 点击「_保存并选择_」。
     ![保存并选择 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN
 
@@ -92,7 +92,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
    ![添加 DNS 服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. 您所添加的 DNS 服务器将显示在「_自定义 DNS 服务器_」列表的底部。
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 手动配置私人 DNS
 
@@ -105,11 +105,11 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
 3. 选择「_私人 DNS 提供商主机名_」并输入您个人服务器的地址：`{Your_Device_ID}.d.adguard-dns.com`。
 4. 点击「_保存_」。
    ![私人 DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   完成！ 您的设备已成功连接到 AdGuard DNS。
+   完成！ Your device is successfully connected to AdGuard DNS.
 
 ## 配置无加密的 DNS
 
-如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. 您有两种选择：使用关联的 IP 或专用 IP。
 
 - [专用 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [关联 IP](/private-dns/connect-devices/other-options/linked-ip.md)

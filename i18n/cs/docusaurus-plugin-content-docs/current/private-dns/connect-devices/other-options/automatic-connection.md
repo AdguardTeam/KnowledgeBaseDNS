@@ -18,13 +18,21 @@ Můžete vytvořit odkaz na připojení a použít jej v nastavení zařízení.
 
 Nyní můžete zařízení automaticky připojit k serveru vytvořením speciální adresy, která obsahuje název zařízení, typ zařízení a aktuální ID serveru. Podívejme se, jak tyto adresy vypadají a jaká jsou pravidla pro jejich vytváření.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Příklady adres automatického připojení
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `Android` s protokolem `DNS-over-TLS` s názvem `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — automaticky vytvoří zařízení `Windows` s protokolem `DNS-over-HTTPS` s názvem `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `iOS` s protokolem `DNS-over-QUIC` s názvem `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — tímto se automaticky vytvoří zařízení `iOS` s protokolem `DNS-over-QUIC` s názvem `Mary Sue`
 
 ### Konvence pojmenování
 

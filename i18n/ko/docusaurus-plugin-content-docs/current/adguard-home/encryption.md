@@ -71,7 +71,7 @@ sudo certbot certonly --manual --preferred-challenges=dns --preferred-chain="ISR
 
 둘 다 AdGuard Home을 구성하는 데 필요합니다.
 
-:::info 중요
+:::info Important
 
 기존 인증서를 갱신할 때도 동일한 절차를 따라야 합니다.
 
@@ -223,7 +223,7 @@ AdGuard Home is able to work as a DNSCrypt server. However, this feature is only
 
 Here is how to generate a DNSCrypt configuration file and point AdGuard Home to it:
 
-:::info 중요
+:::info Important
 
 Make sure that your TLS settings are valid and encryption is enabled.
 

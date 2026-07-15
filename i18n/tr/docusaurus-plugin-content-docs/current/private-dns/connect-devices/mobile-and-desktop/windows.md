@@ -12,7 +12,7 @@ To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
 
 Bunu [AdGuard](#use-adguard-ad-blocker-paid-option) veya [AdGuard VPN](#use-adguard-vpn) uygulamaları, [Windows ayarları](#configure-via-windows-settings) veya [AdGuard DNS İstemcisi](#use-adguard-dns-client) kullanarak ayarlayabilirsiniz.
 
-## AdGuard Reklam Engelleyici kullanma (ücretli seçenek) {#use-adguard-ad-blocker-paid-option}
+## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
 The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. Çeşitli şifreleme protokollerinden seçim yapabilirsiniz. DNS filtrelemenin yanı sıra, tüm sisteminizde çalışan mükemmel bir reklam engelleyiciye de sahip olursunuz.
 
@@ -34,9 +34,9 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 9. Eklediğiniz DNS sunucusu _Özel DNS sunucuları_ listesinin altında görünür.
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## AdGuard VPN'i kullanma {#use-adguard-vpn}
+## AdGuard VPN'i kullanma
 
 Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destekliyor, bu nedenle hem VPN'e hem de özel bir DNS'e ihtiyacınız varsa, AdGuard VPN sizin için başvurabileceğiniz bir seçenektir.
 
@@ -54,9 +54,9 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 7. _Kaydet ve seç_ öğesine tıklayın.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## Windows ayarları aracılığıyla yapılandırma {#configure-via-windows-settings}
+## Windows ayarları aracılığıyla yapılandırma
 
 :::note
 
@@ -78,7 +78,7 @@ Yalnızca Windows 11'de kullanılabilir.
 7. _Kaydet_ öğesine tıklayın. İşte bu kadar — cihazınız artık AdGuard DNS'e bağlı!
    ![DNS ayarlarını kaydet \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## AdGuard DNS İstemcisini kullanma {#use-adguard-dns-client}
+## AdGuard DNS İstemcisini kullanma
 
 AdGuard DNS Client is a versatile, cross-platform console tool that allows you to connect to AdGuard DNS using encrypted DNS protocols.
 
@@ -86,7 +86,7 @@ More details can be found in [different article](/dns-client/overview/).
 
 ## Düz DNS'i yapılandırma
 
-DNS yapılandırması için ekstra yazılım kullanmak istemiyorsanız, şifrelenmemiş DNS'i tercih edebilirsiniz. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)

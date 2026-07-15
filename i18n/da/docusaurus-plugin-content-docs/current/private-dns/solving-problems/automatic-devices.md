@@ -29,7 +29,7 @@ Basisformatet for værtsnavnet eller URL'en brugt til at oprette automatiske enh
     https://d.adguard-dns.com/dns-query/${TYPE}-${SERVERID}-${HUMANID}
     ```
 
-### Enhedstype {#device-type}
+### Enhedstype
 
 Enhedstyper bruges til lettere at skelne imellem forskellige enheder i UI'en. En enhedstype er obligatorisk for automatisk identifikation af en enhed.
 
@@ -45,7 +45,7 @@ Følgende forkortelser understøttes:
 - `win`: Microsoft Windows-enheder.
 - `otr`: Generiske enheder.
 
-### DNS-server ID {#dns-server-id}
+### DNS-server ID
 
 Den næste obligatoriske parameter er ID'et for AdGuard DNS-serveren, enheden er tilsluttet.
 

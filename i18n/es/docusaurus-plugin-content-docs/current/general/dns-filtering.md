@@ -39,7 +39,7 @@ Hay miles de servidores DNS para elegir, y todos son únicos en sus propiedades 
 
 Otros proveedores de DNS pueden funcionar de forma diferente, así que infórmate sobre ellos antes de comprometerte con uno u otro servidor DNS. Puedes encontrar la lista de algunos de los proveedores de DNS más populares en [este artículo](dns-providers.md). All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you’d like.
 
-### Listas de bloqueo de DNS locales {#local-dns-blocklists}
+### Listas de bloqueo de DNS locales
 
 Pero al depender sólo de los servidores DNS para filtrar tu tráfico DNS, se pierde toda la flexibilidad. If the selected server blocks a domain, you can’t access it. With AdGuard, you don’t even need to configure any specific DNS server to filter DNS traffic. Todos los productos de AdGuard te permiten emplear listas de bloqueo DNS, ya sean simples archivos de hosts o listas que utilizan [sintaxis más avanzada](dns-filtering-syntax.md). Funcionan de manera similar a las listas de bloqueo regulares: cuando una solicitud DNS coincide con una de las reglas de la lista de filtros activa, se bloquea. To be more precise, the DNS server gives a non-routable IP address for such a request.
 

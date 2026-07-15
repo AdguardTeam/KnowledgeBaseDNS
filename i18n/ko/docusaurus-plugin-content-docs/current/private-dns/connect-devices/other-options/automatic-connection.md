@@ -18,13 +18,21 @@ sidebar_position: 5
 
 이제 기기 이름, 기기 유형 및 현재 서버 ID가 포함된 특별한 주소를 생성함으로써 기기를 서버에 자동으로 연결할 수 있습니다. 이 주소가 어떤 모양인지와 생성 규칙에 대해 알아보겠습니다.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### 기기 자동 연결 주소의 예시
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — 이는 자동으로 `DNS-over-TLS` 프로토콜을 사용하는 `Android` 기기가 `AdGuard Test Device`라는 이름으로 생성됩니다.
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — 그러면 ' John Doe'라는 이름의 `DNS-over-HTTPS` 프로토콜을 사용하는 `Windows` 기기가 자동으로 생성됩니다.
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — 그러면 `Mary Sue`라는 `DNS-over-QUIC` 프로토콜을 사용하는 `iOS` 기기가 자동으로 생성됩니다.
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### 기기 이름 지정
 
