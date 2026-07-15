@@ -54,7 +54,7 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-
 
 4. 您的 DNS 戳将自动生成，并在「**戳**」字段中显示。
 
-### 获取证书哈希
+### 获取证书哈希 {#obtaining-the-certificate-hash}
 
 To fill in the **Hashes of the server’s certificate** field, you can use the following command, replacing `<IP_ADDRESS>`, `<PORT>`, and `<SERVER_NAME>` with the corresponding values for your DNS server:
 
