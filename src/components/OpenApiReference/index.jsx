@@ -1,18 +1,20 @@
 import React, {lazy, Suspense} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import 'swagger-ui-react/swagger-ui.css';
 
-const SPEC_URL = '/api/swagger/openapi.json';
 const SwaggerUI = lazy(() => import('swagger-ui-react'));
 
 export default function OpenApiReference() {
+  const specUrl = useBaseUrl('/api/swagger/openapi.json');
+
   return (
     <BrowserOnly fallback={<p>Loading API reference…</p>}>
       {() => (
         <div className="openapi-reference">
           <Suspense fallback={<p>Loading API reference…</p>}>
             <SwaggerUI
-              url={SPEC_URL}
+              url={specUrl}
               docExpansion="list"
               deepLinking
               filter={false}
