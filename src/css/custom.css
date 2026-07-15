@@ -415,6 +415,10 @@ html[lang='ko'] .navbar__search {
   margin: 0;
 }
 
+.openapi-reference .swagger-ui .response-col_status {
+  padding-left: 12px;
+}
+
 /* Dark mode: Swagger UI ships light-only surfaces, remap holdouts */
 [data-theme='dark'] .openapi-reference .swagger-ui .opblock,
 [data-theme='dark'] .openapi-reference .swagger-ui .models,
@@ -430,6 +434,11 @@ html[lang='ko'] .navbar__search {
 
 [data-theme='dark'] .openapi-reference .swagger-ui svg {
   fill: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .openapi-reference .swagger-ui .parameter__type,
+[data-theme='dark'] .openapi-reference .swagger-ui .tab li {
+  color: var(--ifm-font-color-base);
 }
 
 [data-theme='dark'] .openapi-reference .swagger-ui .model-toggle:after {
