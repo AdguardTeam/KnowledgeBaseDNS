@@ -179,7 +179,7 @@ V současné době není možné tyto parametry nastavit z uživatelského rozhr
 
 ## Jak nastavím AdGuard Home jako výchozí DNS server? {#defaultdns}
 
-Viz část [_Konfigurace zařízení_](getting-started.md#configure-devices) na stránce _Začínáme_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Jsou známa nějaká omezení? {#limitations}
 
@@ -312,8 +312,8 @@ Pokud používáte TLS na reverzním proxy serveru, nemusíte používat TLS v A
 
 Parametr `trusted_proxies` můžete nastavit na IP adresy proxy serveru HTTP, aby AdGuard Home zohlednil záhlaví obsahující skutečnou IP adresu klienta. Další informace naleznete na stránkách [konfigurace][conf] a [šifrování][encr].
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Jak opravím chyby `permission denied` v systému Fedora? {#fedora}
 

@@ -18,13 +18,21 @@ sidebar_position: 5
 
 现在，可以通过创建包含设备名称、设备类型和当前服务器 ID 的特殊地址，将设备自动连接到服务器。 让我们来了解这些地址的格式以及创建它们的规则。
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### 自动连接地址示例
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-TLS` 协议的 `Android` 设备，名称为 `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` —— 这将自动创建一个使用 `DNS-over-HTTPS` 协议的 `Windows` 设备，名称为 `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` —— 这将自动创建一个使用 `DNS-over-Quic` 协议的 `iOS` 设备，名称为 `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### 命名设备
 

@@ -42,7 +42,7 @@ So richten Sie Ihr Gerät ein:
 
 8. Wenn Sie ein VPN-basiertes Protokoll verwenden, müssen Sie dennoch die Erstellung eines VPN-Profils zulassen, bevor Sie vollständig geschützt sind. Gehen Sie dazu auf die Startseite der App, klicken Sie auf _Aktivieren_ und folgen Sie den Anweisungen in der App.
 
-9. Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden. Klicken Sie jedes Mal auf _Aktivieren_, wenn Sie den Schutz starten möchten.
+9. All done! Your device is successfully connected to AdGuard DNS. Klicken Sie jedes Mal auf _Aktivieren_, wenn Sie den Schutz starten möchten.
 
    ![Aktivieren \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
@@ -69,7 +69,7 @@ Die AdGuard-App ermöglicht die Nutzung von verschlüsseltem DNS und eignet sich
 10. Tippen Sie auf _Speichern und auswählen_.
     ![Speichern und auswählen \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN verwenden
 
@@ -92,7 +92,7 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
    ![DNS-Server hinzufügen \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. Der hinzugefügte DNS-Server wird unten in der Liste der _Benutzerdefinierten DNS-Server_ angezeigt.
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Privates DNS manuell konfigurieren
 
@@ -105,7 +105,7 @@ Sie können Ihren DNS-Server in den Geräteeinstellungen konfigurieren. Bitte be
 3. Wählen Sie die Option _Private DNS-Anbieter Hostname_ und geben Sie die Adresse Ihres eigenen Servers ein: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Tippen Sie auf _Speichern_.
    ![Privates DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+   Fertig! Your device is successfully connected to AdGuard DNS.
 
 ## Unverschlüsseltes DNS konfigurieren
 

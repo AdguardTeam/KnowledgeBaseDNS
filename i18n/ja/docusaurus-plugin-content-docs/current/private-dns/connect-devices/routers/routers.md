@@ -7,7 +7,7 @@ toc_max_heading_level: 3
 
 最初に、ルーターをAdGuard DNSインターフェイスに追加する必要があります:
 
-1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
+1. _ダッシュボー&#x30C9;_&#x306B;移動し、「_新しいデバイスを接続_」をクリックします。
 2. ドロップダウンメニューの「_デバイスタイプ_」からルーターを選択します。
 3. ルーターブランドを選択し、デバイスに名前を付けます。
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)

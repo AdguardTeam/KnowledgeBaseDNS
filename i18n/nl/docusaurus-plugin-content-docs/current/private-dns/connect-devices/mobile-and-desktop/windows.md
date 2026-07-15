@@ -56,7 +56,7 @@ Not all VPN services support encrypted DNS. However, our VPN does, so if you nee
 
 All done! Your device is successfully connected to AdGuard DNS.
 
-## Configureren via Windows-instellingen {#configure-via-windows-settings}
+## Configureren via Windows-instellingen
 
 :::note
 

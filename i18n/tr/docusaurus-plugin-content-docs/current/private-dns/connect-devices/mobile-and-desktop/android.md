@@ -42,7 +42,7 @@ Cihazınızı ayarlamak için:
 
 8. When using a VPN-based protocol, you still need to allow creating a VPN profile before being fully protected. To do this, go to the app’s home page, click _Enable_, and follow the in-app instructions.
 
-9. Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı. Click _Enable_ every time you want to start the protection.
+9. All done! Your device is successfully connected to AdGuard DNS. Click _Enable_ every time you want to start the protection.
 
    ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
@@ -69,7 +69,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek Android cihaz�
 10. _Kaydet ve seç_ öğesine dokunun.
     ![Kaydet ve seç \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN'i kullanma
 
@@ -92,7 +92,7 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
    ![DNS sunucusu ekle \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. Eklediğiniz DNS sunucusu _Özel DNS sunucuları_ listesinin altında görünür.
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard DNS'i elle yapılandırma
 
@@ -105,7 +105,7 @@ DNS sunucunuzu cihaz ayarlarınızdan yapılandırabilirsiniz. Android cihazlar�
 3. _Özel DNS sağlayıcı ana makine adı_ öğesini seçin ve kişisel sunucunuzun adresini girin: `{Your_Device_ID}.d.adguard-dns.com`.
 4. _Kaydet_ öğesine dokunun.
    ![Özel DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   Tamamlandı! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+   Tamamlandı! Your device is successfully connected to AdGuard DNS.
 
 ## Düz DNS'i yapılandırma
 

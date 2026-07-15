@@ -34,7 +34,7 @@ L'application AdGuard vous permet d'utiliser DNS crypté, ce qui est idéal pour
 10. Votre serveur nouvellement créé devrait apparaître en bas de la liste.
     ![Fournisseurs \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisation de AdGuard VPN
 
@@ -50,7 +50,7 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 6. Le serveur DNS que vous avez ajouté apparaîtra en bas de la liste des _Serveurs DNS personnalisés_.
    ![Serveurs DNS personnalisés \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisez un profil de configuration
 
@@ -71,11 +71,11 @@ Si vous utilisez un VPN, le profil de configuration sera ignoré.
    ![Installer \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Saisissez le mot de passe administrateur et cliquez sur _OK_.
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configuration du DNS brut
 
-Si vous préférez ne pas utiliser de logiciel supplémentaire pour la configuration DNS, vous pouvez opter pour le DNS non chiffré. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
 
 - [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

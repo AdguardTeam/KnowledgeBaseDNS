@@ -39,7 +39,7 @@ Na výběr jsou tisíce DNS serverů, které jsou jedinečné svými vlastnostmi
 
 Jiní poskytovatelé DNS mohou fungovat jinak, proto si o nich zjistěte více informací, než se rozhodnete pro ten či onen server DNS. Seznam nejoblíbenějších poskytovatelů DNS najdete v [tomto článku](dns-providers.md). Všechny aplikace AdGuardu, které podporují funkci DNS, mají také seznam serverů DNS, ze kterého si můžete vybrat, nebo dokonce umožňují vybrat libovolný vlastní server DNS.
 
-### Místní DNS seznam blokovaných {#local-dns-blocklists}
+### Místní DNS seznam blokovaných
 
 Spoléháte-li se však na servery DNS pouze při filtrování provozu DNS, ztrácíte veškerou flexibilitu. Pokud vybraný server blokuje doménu, nemáte k ní přístup. S AdGuardem nemusíte pro filtrování provozu DNS konfigurovat žádný konkrétní server DNS. Všechny produkty AdGuardu umožňují používat DNS seznamy zakázaných, ať už se jedná o jednoduché soubory hosts nebo seznamy, které používají [pokročilejší syntaxi](dns-filtering-syntax.md). Fungují podobně jako běžné seznamy zakázaných: pokud požadavek DNS odpovídá jednomu z pravidel v aktivním seznamu filtrů, je zablokován. Přesněji řečeno, DNS server poskytne pro takový požadavek nesměrovatelnou IP adresu.
 

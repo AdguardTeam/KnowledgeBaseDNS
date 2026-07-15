@@ -12,7 +12,7 @@ Um ein Windows-Gerät mit AdGuard DNS zu verbinden, fügen Sie es zunächst zu _
 
 Sie können es über die Anwendungen [AdGuard](#use-adguard-ad-blocker-paid-option) oder [AdGuard VPN](#use-adguard-vpn), in den [Windows-Einstellungen](#configure-via-windows-settings) oder über den [AdGuard DNS Client](#use-adguard-dns-client) einrichten.
 
-## AdGuard Werbeblocker verwenden (kostenpflichtige Option) {#use-adguard-ad-blocker-paid-option}
+## AdGuard Werbeblocker verwenden (kostenpflichtige Option)
 
 Die AdGuard-App ermöglicht das Verwenden von verschlüsseltem DNS, was sie ideal für die Einstellungen von AdGuard DNS auf Ihrem Windows-Gerät macht. Sie können zwischen verschiedenen Verschlüsselungsprotokollen wählen. Zusätzlich zur DNS-Filterung erhalten Sie auch einen hervorragenden Werbeblocker, der im gesamten System funktioniert.
 
@@ -34,9 +34,9 @@ Die AdGuard-App ermöglicht das Verwenden von verschlüsseltem DNS, was sie idea
 9. Der hinzugefügte DNS-Server wird unten in der Liste der _Benutzerdefinierten DNS-Server_ angezeigt.
    ![Benutzer-DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## AdGuard VPN verwenden {#use-adguard-vpn}
+## AdGuard VPN verwenden
 
 Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch schon, daher ist AdGuard VPN die erste Wahl für Sie, wenn Sie sowohl ein VPN als auch ein privates DNS benötigen.
 
@@ -54,9 +54,9 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
 7. Klicken Sie auf _Speichern und auswählen_.
    ![Speichern und auswählen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## Über die Windows-Einstellungen konfigurieren {#configure-via-windows-settings}
+## Über die Windows-Einstellungen konfigurieren
 
 :::note
 
@@ -78,7 +78,7 @@ Nur unter Windows 11 verfügbar.
 7. Klicken Sie auf _Speichern_. Das war's - Ihr Gerät ist jetzt mit AdGuard DNS verbunden!
    ![DNS-Einstellungen speichern \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## AdGuard DNS Client verwenden {#use-adguard-dns-client}
+## AdGuard DNS Client verwenden
 
 AdGuard DNS Client ist ein vielseitiges, plattformübergreifendes Konsolentool, das Ihnen die Verbindung zu AdGuard DNS über verschlüsselte DNS-Protokolle ermöglicht.
 
@@ -86,7 +86,7 @@ Weitere Details finden Sie in einem [anderen Artikel](/dns-client/overview/).
 
 ## Unverschlüsseltes DNS konfigurieren
 
-Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

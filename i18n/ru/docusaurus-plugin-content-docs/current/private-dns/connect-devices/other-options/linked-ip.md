@@ -106,7 +106,7 @@ The following instructions describe how to **unassign your linked IP address**:
    - Эта задача будет выполняться каждые 5 минут
 3. Сохраните crontab.
 
-:::note Важно
+:::note Important
 
 - Убедитесь, что на macOS и Linux установлен `curl`.
 - Не забудьте скопировать адрес из настроек и заменить значения `ServerID` и `UniqueKey`.

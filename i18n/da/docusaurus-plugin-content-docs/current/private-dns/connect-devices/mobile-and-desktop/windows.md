@@ -12,7 +12,7 @@ For at slutte en Windows-enhed til AdGuard DNS, føj den først til _Kontrolpane
 
 Man kan opsætte det via [AdGuard](#use-adguard-ad-blocker-paid-option) eller [AdGuard VPN](#use-adguard-vpn) apps, i [Windows-indstillingerne](#configure-via-windows-settings) eller ved at bruge [AdGuard DNS Client](#use-adguard-dns-client).
 
-## Brug AdGuard Ad Blocker (betalt mulighed) {#use-adguard-ad-blocker-paid-option}
+## Brug AdGuard Ad Blocker (betalt mulighed)
 
 Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til opsætning af AdGuard DNS på en Windows-enhed. Man kan vælge mellem forskellige krypteringsprotokoller. Sammen med DNS-filtrering får man også en fremragende adblocker, der fungerer på hele systemet.
 
@@ -34,9 +34,9 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 9. Den tilføjede DNS-server vises nederst på listen _Tilpassede DNS-servere_.
    ![Tilpassede DNS-servere \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## Brug af AdGuard VPN {#use-adguard-vpn}
+## Brug af AdGuard VPN
 
 Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vores VPN, så har man behov for både et VPN og en privat DNS, er AdGuard VPN det oplagte valg.
 
@@ -54,9 +54,9 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vo
 7. Tryk på _Gem og vælg_.
    ![Gem og vælg \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
-## Opsæt via Windows-indstillinger {#configure-via-windows-settings}
+## Opsæt via Windows-indstillinger
 
 :::note
 
@@ -78,7 +78,7 @@ Kun tilgængelig på Windows 11.
 7. Klik på _Gem_. Det var det – enheden er nu forbundet til AdGuard DNS!
    ![Gem DNS-indstillinger \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_settings_done.png)
 
-## Brug AdGuard DNS Client {#use-adguard-dns-client}
+## Brug AdGuard DNS Client
 
 AdGuard DNS Client er et alsidigt, tværplatforms konsolværktøj, der muliggør AdGuard DNS-tilslutning vha. krypterede DNS-protokoller.
 
@@ -86,7 +86,7 @@ Flere detaljer kan findes i [forskellig artikel](/dns-client/overview/).
 
 ## Opsæt almindelig DNS
 
-Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

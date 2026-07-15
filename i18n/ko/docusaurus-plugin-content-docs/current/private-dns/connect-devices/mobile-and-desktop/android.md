@@ -92,7 +92,7 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어 Android 기
    ![DNS 서버 추가 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. 추가한 DNS 서버는 **사용자 정의 DNS 서버** 목록 하단에 표시됩니다.
 
-기기가 AdGuard DNS에 성공적으로 연결되었습니다!
+All done! AdGuard DNS에 성공적으로 연결되었습니다!
 
 ## 수동으로 개인 DNS 구성
 
@@ -105,11 +105,11 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어 Android 기
 3. **개인 DNS 제공자 호스트 이름** 옵션을 선택하고 개인 서버 주소를 입력하세요: `{Your_Device_ID}.d.adguard-dns.com`.
 4. **저장**을 누릅니다.
    ![개인 DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   모두 완료되었습니다! AdGuard DNS에 성공적으로 연결되었습니다!
+   모두 완료되었습니다! Your device is successfully connected to AdGuard DNS.
 
 ## 평문 DNS 구성
 
-DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. 연결된 IP 또는 전용 IP를 사용할 수 있습니다.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. 연결된 IP 또는 전용 IP를 사용할 수 있습니다.
 
 - [전용 IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [연결된 IPs](/private-dns/connect-devices/other-options/linked-ip.md)

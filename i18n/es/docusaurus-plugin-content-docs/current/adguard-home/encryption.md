@@ -71,7 +71,7 @@ Al final, obtendrás dos archivos:
 
 Ambos serán necesarios para configurar AdGuard Home.
 
-:::info Importante
+:::info Important
 
 Necesitarás utilizar el mismo procedimiento para renovar el certificado existente.
 
@@ -223,7 +223,7 @@ AdGuard Home es capaz de funcionar como un servidor DNSCrypt. Sin embargo, esta 
 
 A continuación se explica cómo generar un archivo de configuración DNSCrypt y apuntar AdGuard Home hacia él:
 
-:::info Importante
+:::info Important
 
 Asegúrate de que tu configuración de TLS sea válida y el cifrado esté habilitado.
 

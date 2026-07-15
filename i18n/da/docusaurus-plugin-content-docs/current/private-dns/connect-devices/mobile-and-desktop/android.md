@@ -42,7 +42,7 @@ Opsætning af enheden:
 
 8. Ved brug af en VPN-baseret protokol skal der stadig tillades oprettelse af en VPN-profil for at opnå fuld beskyttelse. For at gøre dette, gå til appens startside, klik på _Slå til_, og følg vejledningen i appen.
 
-9. Færdig! Enheden er nu tilsluttet AdGuard DNS. Klik på _Slå til_, hver gang beskyttelsen ønskes startet.
+9. All done! Your device is successfully connected to AdGuard DNS. Klik på _Slå til_, hver gang beskyttelsen ønskes startet.
 
    ![Slå til \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protection.png)
 
@@ -69,7 +69,7 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 10. Tryk på _Gem og vælg_.
     ![Gem og vælg \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Brug af AdGuard VPN
 
@@ -92,7 +92,7 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Vores VPN understøtter det
    ![Tilføj en DNS-server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. Den tilføjede DNS-server vises nederst på listen _Tilpassede DNS-servere_.
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Opsæt Private DNS manuelt
 
@@ -105,11 +105,11 @@ Man kan opsætte DNS-serveren i enhedsindstillingerne. Bemærk venligst, at Andr
 3. Vælg indstillingen _Private DNS-udbyder værtsnavn_ og angiv adressen på den personlige server: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Tryk på _Gem_.
    ![Private DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   All done! Enheden er nu tilsluttet AdGuard DNS.
+   All done! Your device is successfully connected to AdGuard DNS.
 
 ## Opsætning af almindelig DNS
 
-Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -106,7 +106,7 @@ En macOS y Linux, la forma más sencilla es usar `cron`:
    - Este trabajo se ejecutará cada 5 minutos
 3. Guarda crontab.
 
-:::note Importante
+:::note Important
 
 - Asegúrate de tener `curl` instalado en macOS y Linux.
 - Recuerda copiar la dirección de la configuración y reemplazar `ServerID` y `UniqueKey`.

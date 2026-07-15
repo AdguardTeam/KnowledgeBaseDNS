@@ -21,6 +21,10 @@ sidebar_position: 2
 
 - **macOS 10.15 Catalina** 及更新版本的用户应将 AdGuard Home 工作目录放在 `/Applications` 目录中。
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker 和 Snap
 
 我们还为有经验的用户提供[官方 AdGuard Home Docker 镜像][docker]和[官方 Snap 商店软件包][snap]。
@@ -47,7 +51,7 @@ sidebar_position: 2
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ sudo ./AdGuardHome -s install
 
 您可以在 AdGuard Home [配置文件][conf]中更改此行为。
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## 更新 {#update}
 

@@ -21,6 +21,10 @@ Chcete-li nainstalovat AdGuard Home jako službu, rozbalte archiv, zadejte adres
 
 - Uživatelé **macOS 10.15 Catalina** a novějších by měli pracovní adresář AdGuard Home umístit do adresáře `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker a Snap
 
 Pro zkušené uživatele poskytujeme také [oficiální obraz dockeru AdGuard Home][docker] a [oficiální balíček Snap Store][snap].
@@ -47,7 +51,7 @@ Mezi další neoficiální možnosti patří:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Ve výchozím nastavení se protokoly při spuštění AdGuard Home v terminálu
 
 Toto chování můžete změnit v [konfiguračním souboru][conf] AdGuard Home.
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Aktualizace {#update}
 

@@ -34,7 +34,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 macOS 设备上使用 AdG
 10. 创建的新服务器应出现在列表底部。
     ![提供商 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用 AdGuard VPN
 
@@ -50,13 +50,13 @@ AdGuard 应用程序让用户使用加密的 DNS，在 macOS 设备上使用 AdG
 6. 您所添加的 DNS 服务器将显示在「_自定义 DNS 服务器_」列表的底部。
    ![自定义 DNS 服务器 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用配置文件
 
 A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. 用户还可以用配置描述文件在设备上配私人 AdGuard DNS。
 
-:::note 重要信息
+:::note Important
 
 如果您使用 VPN，配置文件将被忽略。
 
@@ -71,11 +71,11 @@ A macOS device profile, also referred to as a configuration profile by Apple, is
    ![安装 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. 输入管理员密码并单击「_确定_」。
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 配置无加密的 DNS
 
-如果您选择不使用额外的软件进行 DNS 配置，可以选择无加密 DNS。 您有两种选择：使用关联的 IP 或专用 IP。
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. 您有两种选择：使用关联的 IP 或专用 IP。
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

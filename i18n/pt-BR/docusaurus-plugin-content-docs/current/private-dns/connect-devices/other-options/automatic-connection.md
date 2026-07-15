@@ -18,13 +18,21 @@ Você pode criar um link de conexão e usá-lo nas configurações do dispositiv
 
 Agora você pode conectar automaticamente seu dispositivo ao servidor criando um endereço especial que inclui o nome do dispositivo, tipo de dispositivo e ID do servidor atual. Vamos explorar como são esses endereços e as regras para criá-los.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Exemplos de endereços de conexão automática
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — isso criará automaticamente um dispositivo `Android` com o protocolo `DNS-over-TLS` chamado `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — isso criará automaticamente um dispositivo `Windows` com o protocolo `DNS-over-HTTPS` chamado `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — isso criará automaticamente um dispositivo `iOS` com o protocolo `DNS-over-QUIC` chamado `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Convenções de nomenclatura
 

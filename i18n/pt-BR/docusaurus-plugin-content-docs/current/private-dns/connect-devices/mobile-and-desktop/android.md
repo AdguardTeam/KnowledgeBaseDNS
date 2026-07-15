@@ -42,7 +42,7 @@ Para configurar seu dispositivo:
 
 8. Ao usar um protocolo baseado em VPN, você ainda precisa permitir a criação de um perfil de VPN antes de estar totalmente protegido. Para fazer isso, acesse a página inicial do aplicativo, clique em _Ativar_ e siga as instruções no aplicativo.
 
-9. Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS. Clique em _Ativar_ sempre que quiser iniciar a proteção.
+9. All done! Your device is successfully connected to AdGuard DNS. Clique em _Ativar_ sempre que quiser iniciar a proteção.
 
    ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Protect-pt.png)
 
@@ -69,7 +69,7 @@ O aplicativo AdGuard permite que você use DNS criptografado, tornando-o perfeit
 10. Toque em Salvar e selecionar.
     ![Salvar e selecionar \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usando o AdGuard VPN
 
@@ -92,7 +92,7 @@ Nem todos os serviços de VPN suportam DNS criptografado. No entanto, nossa VPN 
    ![Adicionar servidor DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. O servidor DNS que você adicionou aparecerá na parte inferior da lista de _Servidores DNS personalizados_.
 
-Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configure o DNS privado manualmente
 
@@ -105,11 +105,11 @@ Você pode configurar seu servidor DNS nas configurações do seu dispositivo. P
 3. Selecione a opção _hostname do provedor de DNS privado_ e insira o endereço do seu servidor pessoal: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Toque em _Salvar_.
    ![DNS privado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   Tudo pronto! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
+   Tudo pronto! Your device is successfully connected to AdGuard DNS.
 
 ## Configurando DNS simples
 
-Se você preferir não usar software extra para configuração de DNS, pode optar por DNS não criptografado. Você tem duas opções: usar IPs vinculados ou IPs dedicados.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Você tem duas opções: usar IPs vinculados ou IPs dedicados.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

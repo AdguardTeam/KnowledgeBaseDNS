@@ -36,7 +36,7 @@ Para la configuración de tu dispositivo:
 
 ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. Tu dispositivo está conectado correctamente a AdGuard DNS. Solo tienes que pulsar _Activar_ para iniciar la protección.
+1. Your device is successfully connected to AdGuard DNS. Solo tienes que pulsar _Activar_ para iniciar la protección.
 
 ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
 
@@ -44,7 +44,7 @@ Para la configuración de tu dispositivo:
 
 2. Si prefieres usar el DNS nativo, ve a _Ajustes_ → _General_ → _VPN y gestión de dispositivos_ → _DNS_ y activa AdGuard DNS.
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usa el Bloqueador de anuncios AdGuard (opción de pago)
 
@@ -67,7 +67,7 @@ La aplicación AdGuard te permite usar DNS cifrado, lo que la hace perfecta para
 8. Tu servidor recién creado debería aparecer al final de la lista.
    ![Servidor personalizado \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usa AdGuard VPN
 
@@ -91,13 +91,13 @@ No todos los servicios VPN soportan DNS cifrado. Sin embargo, nuestro VPN sí lo
 9. Tu servidor recién creado debería aparecer bajo _Servidores DNS personalizados_.
    ![Servidores personalizados \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usa un perfil de configuración
 
 Un perfil de dispositivo iOS, también conocido como "perfil de configuración" por Apple, es un archivo XML firmado por un certificado que puedes instalar manualmente en tu dispositivo iOS o implementar utilizando una solución MDM. También te permite configurar DNS privado de AdGuard en tu dispositivo.
 
-:::note Importante
+:::note Important
 
 Si estás usando un VPN, el perfil de configuración será ignorado.
 

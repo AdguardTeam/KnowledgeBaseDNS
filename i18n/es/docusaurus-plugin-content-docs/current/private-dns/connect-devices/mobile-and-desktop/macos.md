@@ -34,7 +34,7 @@ La aplicación AdGuard te permite usar DNS encriptado, lo que la hace perfecta p
 10. Tu servidor recién creado debería aparecer al final de la lista.
     ![Proveedores \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usar AdGuard VPN
 
@@ -50,13 +50,13 @@ No todos los servicios VPN soportan DNS cifrado. Sin embargo, nuestro VPN sí lo
 6. El servidor DNS que has añadido aparecerá en la parte inferior de la lista de _Servidores DNS personalizados_.
    ![Servidores DNS personalizados \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usar un perfil de configuración
 
 A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. También te permite configurar DNS privado de AdGuard en tu dispositivo.
 
-:::note Importante
+:::note Important
 
 Si estás usando un VPN, el perfil de configuración será ignorado.
 
@@ -71,11 +71,11 @@ Si estás usando un VPN, el perfil de configuración será ignorado.
    ![Instalar \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Introduce la contraseña de administrador y haz clic en _OK_.
 
-¡Todo listo! Tu dispositivo está conectado correctamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configurar DNS simple
 
-Si prefieres no usar software adicional para la configuración de DNS, puedes optar por DNS no encriptado. Tienes dos opciones: usar IPs vinculadas o IPs dedicadas.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Tienes dos opciones: usar IPs vinculadas o IPs dedicadas.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

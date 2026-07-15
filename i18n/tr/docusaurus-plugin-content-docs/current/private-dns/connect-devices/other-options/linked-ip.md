@@ -106,7 +106,7 @@ On macOS and Linux, the easiest way is to use `cron`:
    - Bu işlem her 5 dakikada bir çalışır
 3. Save crontab.
 
-:::note Önemli
+:::note Important
 
 - Make sure you have `curl` installed on macOS and Linux.
 - Ayarlardan adresi kopyalamayı ve `ServerID` ile `UniqueKey` ifadelerini değiştirmeyi unutmayın.
