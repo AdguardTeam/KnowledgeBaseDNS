@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ### Publications officielles
 
-Téléchargez l'archive contenant le fichier binaire pour votre système d'exploitation à partir de la \[dernière page de version stable]\[versions]. La liste complète des plateformes prises en charge ainsi que les liens vers les versions bêta et edge (non-stables) sont disponibles sur \[notre page plateformes]\[plateformes].
+Téléchargez l'archive contenant le fichier binaire pour votre système d'exploitation à partir de la [dernière page de version stable][releases]. La liste complète des plateformes prises en charge ainsi que les liens vers les versions bêta et edge (non-stables) sont disponibles sur [notre page plateformes][platforms].
 
 Pour installer AdGuard Home en tant que service, extrayez l'archive, entrez dans le répertoire `AdGuardHome` et exécutez :
 
@@ -29,7 +29,7 @@ Nous fournissons également une [image officielle docker AdGuard Home][docker] e
 
 Certaines autres options non officielles incluent :
 
-- L'\[Extension Home Assistant]\[est] maintenue par [@frenck](https://github.com/frenck).
+- L'[Extension Home Assistant][has] maintenue par [@frenck](https://github.com/frenck).
 
 - [OpenWrt LUCI app][luci] maintenue par [@kongfl888](https://github.com/kongfl888).
 
