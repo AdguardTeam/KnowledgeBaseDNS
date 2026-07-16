@@ -358,7 +358,7 @@ html[lang='ko'] .navbar__search {
 }
 .openapi-reference .swagger-ui code {
   font-family: var(--ifm-font-family-monospace);
-  background: var(--ifm-code-background);
+  background: transparent;
   border-radius: var(--ifm-global-radius);
 }
 .openapi-reference .swagger-ui pre {
@@ -377,8 +377,13 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui table thead tr th,
 .openapi-reference .swagger-ui table tbody tr td {
   border: 1px solid var(--ifm-table-border-color);
-  padding: 0.5rem 0.75rem;
+  padding: 12px;
   vertical-align: middle;
+}
+
+.openapi-reference .swagger-ui table thead tr td,
+.openapi-reference .swagger-ui table thead tr th {
+  padding: 12px;
 }
 .openapi-reference .swagger-ui table tbody tr:nth-of-type(odd) {
   background: var(--ifm-table-stripe-background);
