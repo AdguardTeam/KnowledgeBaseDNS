@@ -390,7 +390,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `upstream_dns_file`: Path to a file with the list of upstream DNS servers. If it is configured, the value of `upstream_dns` is ignored.
 
-- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.
+- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.  Comments (lines starting with `#`) are supported.
 
 - `bootstrap_prefer_ipv6`: If `true`, instructs the bootstrapper to prefer IPv6 addresses to IPv4 ones when resolving DoH, DoQ, and DoT hostnames.
 
