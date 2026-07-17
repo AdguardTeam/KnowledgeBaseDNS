@@ -358,7 +358,7 @@ html[lang='ko'] .navbar__search {
 }
 .openapi-reference .swagger-ui code {
   font-family: var(--ifm-font-family-monospace);
-  background: transparent;
+  background: var(--ifm-pre-background);
   border-radius: var(--ifm-global-radius);
 }
 .openapi-reference .swagger-ui pre {
@@ -391,6 +391,19 @@ html[lang='ko'] .navbar__search {
 .openapi-reference .swagger-ui table.model tbody tr td {
   vertical-align: middle;
   margin: 0;
+  padding: 0 12px;
+}
+
+.openapi-reference .swagger-ui table.model tbody tr td:first-of-type {
+  padding-left: 12px;
+}
+
+.openapi-reference .swagger-ui .markdown code, .openapi-reference .swagger-ui .renderedMarkdown code {
+  padding: 0;
+}
+
+.openapi-reference .swagger-ui .info .title small.version-stamp {
+  background: var(--ifm-color-primary);
 }
 
 /* Models section → Infima card */
@@ -424,6 +437,14 @@ html[lang='ko'] .navbar__search {
   padding-left: 12px;
 }
 
+.openapi-reference .swagger-ui .opblock .opblock-summary:hover .view-line-link {
+  margin: 0;
+}
+
+.openapi-reference .swagger-ui .opblock.opblock-get .tab-header .tab-item.active h4 span:after {
+  background: none;
+}
+
 /* Dark mode: Swagger UI ships light-only surfaces, remap holdouts */
 [data-theme='dark'] .openapi-reference .swagger-ui .opblock,
 [data-theme='dark'] .openapi-reference .swagger-ui .models,
@@ -444,6 +465,10 @@ html[lang='ko'] .navbar__search {
 [data-theme='dark'] .openapi-reference .swagger-ui .parameter__type,
 [data-theme='dark'] .openapi-reference .swagger-ui .tab li {
   color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .swagger-ui .opblock.opblock-deprecated .opblock-summary-method {
+  color: #000;
 }
 
 [data-theme='dark'] .openapi-reference .swagger-ui .model-toggle:after {
