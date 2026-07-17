@@ -284,6 +284,43 @@ html[lang='ko'] .navbar__search {
   width: 24px;
 }
 
+/*
+ * Copy-to-clipboard button icon
+ * Replaces the default SwaggerUI SVG with a custom one.
+ */
+.openapi-reference .swagger-ui .copy-to-clipboard {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+/* Hide the default SVG icon */
+.openapi-reference .swagger-ui .copy-to-clipboard svg {
+  display: none;
+}
+
+/* Show a custom icon via mask-image to inherit text color */
+.openapi-reference .swagger-ui .copy-to-clipboard::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--ifm-color-emphasis-500);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'%3E%3C/path%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'%3E%3C/path%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/* Hover state — slightly darker */
+.openapi-reference .swagger-ui .copy-to-clipboard:hover::before {
+  background-color: var(--ifm-color-emphasis-700);
+}
+
 .openapi-reference .swagger-ui section.models .model-container:first-of-type {
   margin-top: 0;
 }
