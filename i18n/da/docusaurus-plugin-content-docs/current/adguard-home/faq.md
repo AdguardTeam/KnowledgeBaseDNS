@@ -396,16 +396,16 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Udpak AdGuard Home-arkivet til en midlertidig mappe. Downloades arkivet til `~/Downloads`-mappen, så udpak det f.eks. til `/tmp/`:
+5. Udpak AdGuard Home-arkivet til en midlertidig mappe. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    På macOS, skriv noget i stil med:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Erstat den gamle AdGuard Home eksekverbare fil med den nye. På de fleste Unix-systemer vil kommandoen se således ud:
