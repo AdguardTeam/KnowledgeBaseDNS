@@ -509,13 +509,13 @@ La valeur du modificateur doit être un code pays à deux lettres au format ISO 
 
 **Exemples :**
 
-- `||*^$respgeo=US`: block domains if the IP address in the DNS response is associated with the United States.
-- `||*^$respgeo=FR|DE`: block domains if the IP address in the DNS response is associated with France or Germany.
-- `||*^$respgeo=--`: block domains if the country of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~--`: block domains if the country of the IP address in the DNS response is known.
-- `@@||whitehouse.gov^`: allow `whitehouse.gov`, even if it is blocked by a wildcard rule with the `respgeo` modifier.
-- `@@||example.org^$respgeo=US`: allow `example.org` if the IP address in the DNS response is associated with the United States.
-- `||whitehouse.gov^$respgeo=US`: blocks `whitehouse.gov` only if the IP address in the DNS response is associated with the United States.
+- `||*^$respgeo=US` : bloquer les domaines si l’adresse IP dans la réponse DNS est associée aux États-Unis.
+- `||*^$respgeo=FR|DE` : bloquer les domaines si l'adresse IP dans la réponse DNS est associée à la France ou à l'Allemagne.
+- `||*^$respgeo=--` : bloquer les domaines si le pays de l'adresse IP dans la réponse DNS est inconnu.
+- `||*^$respgeo=~--` : bloquer les domaines si le pays de l'adresse IP dans la réponse DNS est connu.
+- `@@||whitehouse.gov^` : autoriser `whitehouse.gov`, même s'il est bloqué par une règle générique avec le modificateur `respgeo`.
+- `@@||example.org^$respgeo=US` : autoriser `example.org` si l'adresse IP dans la réponse DNS est associée aux États-Unis.
+- `||whitehouse.gov^$respgeo=US` : bloque `whitehouse.gov` uniquement si l’adresse IP dans la réponse DNS est associée aux États-Unis.
 - Dans cet exemple :
 
   ```none
@@ -523,11 +523,11 @@ La valeur du modificateur doit être un code pays à deux lettres au format ISO 
   @@||whitehouse.gov^$respgeo=US
   ```
 
-  `@@||whitehouse.gov^$respgeo=US` will **not** allow `whitehouse.gov`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||whitehouse.gov^$respgeo=US` n'autorisera **pas** `whitehouse.gov`, car la première règle bloque la requête en inspectant les données de requête, tandis que la seconde tente de l'autoriser en inspectant la réponse.
 
-You can use `~` to invert the condition:
+Vous pouvez utiliser `~` pour inverser la condition :
 
-- `||*^$respgeo=~DE`: block domains if the IP address in the DNS response is **not** associated with Germany.
+- `||*^$respgeo=~DE` : bloque les domaines si l'adresse IP dans la réponse DNS n'est **pas** associée à l'Allemagne.
 
 **Limitations**
 
@@ -566,7 +566,7 @@ The value of the modifier must be an ASN in the `AS<number>` format, for example
 
   `@@||google.com^$respgeo=AS15169` will **not** allow `google.com`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
 
-You can use `~` to invert the condition:
+Vous pouvez utiliser `~` pour inverser la condition :
 
 - `||*^$respgeo=~AS15169`: block domains if the IP address in the DNS response does **not** belong to ASN AS15169.
 

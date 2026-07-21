@@ -135,7 +135,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 :::warning
 
-Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Popište prosím důvod a případy použití tohoto koncového bodu a uveďte URI přesměrování. Po schválení obdržíte jedinečný identifikátor klienta, který by měl být použit pro parametr **client_id**.
+To access this endpoint, you need to contact us at **b2b@adguard.com**. Popište prosím důvod a případy použití tohoto koncového bodu a uveďte URI přesměrování. Po schválení obdržíte jedinečný identifikátor klienta, který by měl být použit pro parametr **client_id**.
 
 :::
 
@@ -176,7 +176,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 :::warning
 
-Chcete-li získat přístup k tomuto koncovému bodu, musíte nás kontaktovat na **devteam@adguard.com**. Ve své zprávě prosím popište důvod a příklady použití tohoto koncového bodu a uveďte přesměrovací URI. Po schválení obdržíte jedinečný identifikátor klienta, který budete používat v parametru **client_id**.
+To access this endpoint, please contact us at **b2b@adguard.com**. Ve své zprávě prosím popište důvod a příklady použití tohoto koncového bodu a uveďte přesměrovací URI. Po schválení obdržíte jedinečný identifikátor klienta, který budete používat v parametru **client_id**.
 
 :::
 

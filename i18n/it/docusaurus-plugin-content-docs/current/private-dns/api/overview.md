@@ -135,7 +135,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 :::warning
 
-Per accedere a questo endpoint, è necessario contattarci a **devteam@adguard.com**. Si prega di descrivere il motivo e gli casi d'uso per questo endpoint, nonché di fornire l'URI di reindirizzamento. Una volta approvato, riceverai un identificatore cliente unico, che dovrà essere utilizzato per il parametro **client_id**.
+To access this endpoint, you need to contact us at **b2b@adguard.com**. Si prega di descrivere il motivo e gli casi d'uso per questo endpoint, nonché di fornire l'URI di reindirizzamento. Una volta approvato, riceverai un identificatore cliente unico, che dovrà essere utilizzato per il parametro **client_id**.
 
 :::
 
@@ -176,7 +176,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 :::warning
 
-To access this endpoint, please contact us at **devteam@adguard.com**. In your message, please describe the reason for and use cases of this endpoint, and provide the redirect URI. Once approved, you will receive a unique client identifier to use for the **client_id** parameter.
+To access this endpoint, please contact us at **b2b@adguard.com**. In your message, please describe the reason for and use cases of this endpoint, and provide the redirect URI. Once approved, you will receive a unique client identifier to use for the **client_id** parameter.
 
 :::
 

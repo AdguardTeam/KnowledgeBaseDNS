@@ -81,80 +81,80 @@ AdGuard Home er dybest set en DNS-proxy, der sender DNS-forespørgsler til upstr
 
 - `tcp://dns-unfiltered.adguard.com`: Almindelig DNS (over TCP, værtsnavn).
 
-- `tls://dns-unfiltered.adguard.com`: Encrypted [DNS-over-TLS].
+- `tls://dns-unfiltered.adguard.com`: Krypteret [DNS-over-TLS].
 
-- `https://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS].
+- `https://dns-unfiltered.adguard.com/dns-query`: Krypteret [DNS-over-HTTPS].
 
-- `h3://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS] with forced [HTTP/3] and no fallback to HTTP/2 and below.
+- `h3://dns-unfiltered.adguard.com/dns-query`: Krypteret [DNS-over-HTTPS] med tvungen [HTTP/3] og ingen HTTP/2-reserve eller lavere.
 
-- `quic://dns-unfiltered.adguard.com`: Encrypted [DNS-over-QUIC].
+- `quic://dns-unfiltered.adguard.com`: Krypteret [DNS-over-QUIC].
 
-- `sdns://...`: [DNS Stamps] for [DNSCrypt] or [DNS-over-HTTPS] resolvers.
+- `sdns://...`: \[DNS-stempler] til [DNSCrypt]- eller [DNS-over-HTTPS]-opløsere.
 
-- `[/example.local/]94.140.14.140`: DNS upstream for specific domains, see below.
+- `[/example.local/]94.140.14.140`: DNS-upstream for specifikke domæner, se nedenfor.
 
-- `[/*.example.local/]94.140.14.140`: DNS upstream for specific subdomains, see below.
+- `[/*.example.local/]94.140.14.140`: DNS-upstream for specifikke underdomains, se nedenfor.
 
-### Specifying upstreams for domains {#upstreams-for-domains}
+### Angivelse af upstreams for domæner {#upstreams-for-domains}
 
-You can specify upstreams that will be used for specific domains using the dnsmasq-like syntax (see the documentation for the option `--server` [here][dnsmasq-man]). This feature is intended for private nameservers which deal with intranet domains.
+Der kan angives upstreams til brug for specifikke domæner vha. den dnsmasq-lignende syntaks (se dokumentationen for indstillingen `--server` [her][dnsmasq-man]). Denne funktion er beregnet til private navneservere, som håndterer intranetdomæner.
 
 Syntaksen er:
 
 ```none
-[/domain1/domain2/domainN/]<upstreamString>
+[/domæne1/domæne2/domæneN/]<upstreamString>
 ```
 
-Where `upstreamString` is one or more upstreams separated by space (e.g. `1.1.1.1 2.2.2.2`).
+Hvor `upstreamString` er en eller flere upstreams adskilt af mellemrum (f.eks. `1.1.1.1 2.2.2.2`).
 
-If one or more domains are specified, that upstream (here `upstreamString`) is used only for those domains. Usually, it is used for private nameservers. For instance, if you have a nameserver on your network which deals with `xxx.internal.local` at address `192.168.0.1` then you can specify `[/internal.local/]192.168.0.1`, and AdGuard Home will send all `*.internal.local` queries to that nameserver. Everything else will be sent to the default upstreams, which should be specified as well.
+Er et eller flere domæner angivet, benyttes denne upstream (her `upstreamString`) kun til disse domæner. Normalt bruges den til private navneservere. Findes f.eks. en navneserver på netværket, der håndterer `xxx.internal.local` på adressen `192.168.0.1`, så kan der angives `[/internal.local/]192.168.0.1`, og AdGuard Home vil sende alle `*.internal.local`-forespørgsler til den navneserver. Alt andet vil blive sendt til standard-upstreams, som også skal angives.
 
-An empty domain specification, `//` has the special meaning of “unqualified names only”, i.e. names without any dots in them, like `myhost` or `router`. Those will only be used for resolving requests for unqualified domain names, but not their subdomains. So, a configuration like this:
+En tom domænespecifikation, `//` har den særlige betydning "kun ukvalificerede navne", dvs. navne uden nogen punktummer i dem, såsom `myhost` eller `router`. Disse vil kun blive brugt til at opløse forespørgsler for ukvalificerede domænenavne, men ikke deres underdomæner. Så en opsætning som denne:
 
 ```none
 5.6.7.8:53
 [//]4.3.2.1:53 [/com/]1.2.3.4:53
 ```
 
-sends requests for `com` (and its subdomains) to `1.2.3.4:53`, requests for other top-level domains to `4.3.2.1:53`, and all other requests to `5.6.7.8:53`.
+sender forespørgsler for `com` (og dets underdomæner) til `1.2.3.4:53`, forespørgsler for andre topdomæner til `4.3.2.1:53` og alle øvrige forespørgsler til `5.6.7.8:53`.
 
-More specific domains take precedence over less specific domains. So, a configuration like this:
+Mere specifikke domæner har forrang over mindre specifikke domæner. Så en opsætning som denne:
 
 ```none
 [/host.com/]1.2.3.4 [/www.host.com/]2.3.4.5
 ```
 
-sends queries for `*.host.com` to `1.2.3.4`, except for queries for `*.www.host.com`, which are sent to `2.3.4.5`.
+sender forespørgsler for `*.host.com` til `1.2.3.4`, undtagen forespørgsler for `*.www.host.com`, som sendes til `2.3.4.5`.
 
-The special server address `#` means “use the default servers”. So, a configuration like this:
+Den særlige serveradresse `#` betyder "brug standardserverne". Så en opsætning som denne:
 
 ```none
 6.7.8.9
 [/host.com/]1.2.3.4 [/www.host.com/]#
 ```
 
-sends queries for `*.host.com` to `1.2.3.4` except for queries for `*.www.host.com`, which are sent to `6.7.8.9`, which is the default upstream.
+sender forespørgsler for `*.host.com` til `1.2.3.4`, undtagen forespørgsler for `*.www.host.com`, som sendes til `6.7.8.9`, som er standard-upstream.
 
-Queries for the `DS` query type are following the assumption based on specification for records’ presence given in [RFC 4035, section 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
+Forespørgsler for forespørgselstypen `DS` følger antagelsen baseret på specifikationen for posters tilstedeværelse angivet i [RFC 4035, afsnit 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
 
-> A DS RRset SHOULD be present at a delegation point when the child zone is signed. \[…\] All DS RRsets in a zone MUST be signed, and DS RRsets MUST NOT appear at a zone’s apex.
+> Et DS RRset BØR være til stede ved et delegeringspunkt, når underzonen signeres. \[…\] Alle DS RRsets i en zone SKAL signeres, og DS RRsets MÅ IKKE vises ved et roddomæne.
 
-For example, the `DS` query for `domain.example.com` will be sent to the upstream specified for `example.com`, `com`, or the default one, even if there is a more specific upstream like `*.example.com`. Note that for two-label `DS` requests, the upstream specified for unqualified names, or the more specific one will be used, if any.
+En `DS`-forespørgsel for `domain.example.com` vil f.eks. blive sendt til den upstream, der er angivet for `example.com`, `com` eller standard-upstreamen, selvom der er en mere specifik upstream, såsom `*.example.com`. Bemærk, at for `DS`-forespørgsler med to navneelementer vil den upstream, der er angivet for ukvalificerede navne, eller den mere specifikke blive brugt, hvis nogen findes.
 
-Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.host.com/]1.2.3.4` will send queries for `*.host.com` to `1.2.3.4`, but `host.com` will be forwarded to default upstreams.
+Jokertegnet `*` har en særlig betydning for "ethvert underdomæne", så `--upstream=[/*.host.com/]1.2.3.4` vil sende forespørgsler for `*.host.com` til `1.2.3.4`, men `host.com` videresendes til standard upstreams.
 
-**Examples:**
+**Eksempler:**
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
     [/local/]192.168.0.1:53
     ```
 
-  sends queries for `*.local` domains to `192.168.0.1:53`. Other queries are sent to `8.8.8.8:53`.
+  sender forespørgsler for `*.local`-domæner til `192.168.0.1:53`. Øvrige forespørgsler sendes til `8.8.8.8:53`.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
@@ -162,9 +162,9 @@ Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.ho
     [/maps.host.com/]#
     ```
 
-  sends queries for `*.host.com` to `1.1.1.1:53` except for `*.maps.host.com` which are sent to `8.8.8.8:53` along with all other queries.
+  sender forespørgsler for `*.host.com` til `1.1.1.1:53`, undtagen `*.maps.host.com`, der sendes til `8.8.8.8:53` sammen med alle øvrige forespørgsler.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
@@ -172,9 +172,9 @@ Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.ho
     [/*.host.com/]2.2.2.2:53
     ```
 
-  sends queries for `*.host.com` to `2.2.2.2:53` except for `host.com` queries, those are sent to `1.1.1.1:53`, but all other queries are sent to `8.8.8.8:53`.
+  sender forespørgsler for `*.host.com` til `2.2.2.2:53`, undtagen `host.com`-forespørgsler, som sendes til `1.1.1.1:53`, men alle øvrige forespørgsler sendes til `8.8.8.8:53`.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
@@ -386,21 +386,21 @@ The `dns` object configures the DNS server. Den har flg. egenskaber:
 
 - `refuse_any`: Another DDoS protection mechanism. Requests of type `ANY` are rarely needed, so refusing to serve them mitigates against attackers trying to use your DNS as a reflection. Safe to disable if DNS server is not available from internet.
 
-- `upstream_dns`: List of upstream DNS servers.
+- `upstream_dns`: Liste over upstream-DNS-servere.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
 - `upstream_dns_file`: Path to a file with the list of upstream DNS servers. If it is configured, the value of `upstream_dns` is ignored.
 
-- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.
+- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
 - `bootstrap_prefer_ipv6`: If `true`, instructs the bootstrapper to prefer IPv6 addresses to IPv4 ones when resolving DoH, DoQ, and DoT hostnames.
 
-- `fallback_dns`: List of fallback DNS servers used when upstream DNS servers are not responding.
+- `fallback_dns`: List of fallback DNS servers used when upstream DNS servers are not responding.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
 - `private_networks`: List of networks used to check if an IP address belongs to a locally-served address registry. If empty, AdGuard Home will use the set defined by [RFC 6303][private-ip].
 
 - `use_private_ptr_resolvers`: If AdGuard Home should use private reverse DNS servers.
 
-- `local_ptr_upstreams`: List of upstream DNS servers to resolve PTR requests for addresses inside locally-served networks. If empty, AdGuard Home will automatically try to get local resolvers from the OS. Domain-specific upstreams are validated for being a valid ARPA domain pointing to a locally-served network.
+- `local_ptr_upstreams`: List of upstream DNS servers to resolve PTR requests for addresses inside locally-served networks. If empty, AdGuard Home will automatically try to get local resolvers from the OS. Domain-specific upstreams are validated for being a valid ARPA domain pointing to a locally-served network.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
 - `upstream_mode`: The mode describes the logic through which the upstreams will be used. Gyldige værdier:
 
@@ -436,7 +436,7 @@ The `dns` object configures the DNS server. Den har flg. egenskaber:
 
 - `disallowed_clients`: The list of CIDRs, IP addresses, or ClientIDs of disallowed DNS clients. If this list has entries, AdGuard Home will drop requests from these clients. Note that this field is ignored if there are entries in `allowed_clients`.
 
-  See also the note in the [Docker wiki page][docker-conf] about using this property within a container.
+  Se også noten på [Docker-wikisiden][docker-conf] om brug af denne egenskab i en container.
 
 - `blocked_hosts`: The list of domain names, wildcards or filtering rules to match requests that shouldn't be processed at all. These are ignored by statistics and query log as well.
 
@@ -485,7 +485,7 @@ The `dns` object configures the DNS server. Den har flg. egenskaber:
 
   This setting is supported on Linux OSs only. This feature is similar to `--ipset` in dnsmasq.
 
-- `ipset_file`: Same as `ipset`, but the rules are read from a file. If this property is set, property `ipset` is ignored. Comments (lines starting with `#`) are supported.
+- `ipset_file`: Same as `ipset`, but the rules are read from a file. If this property is set, property `ipset` is ignored. Comments (lines starting with `#`) and empty lines are ignored.
 
 - `upstream_timeout`: The timeout for querying upstream servers. Zero value will be rewritten with default one which is `10s`.
 
@@ -905,5 +905,6 @@ For a list of supported profiles go to `http://localhost:6060/debug/pprof/`.
 Alternatively, you may want to simply download the file and analyze it later:
 
 ```sh
-wget http://localhost:6060/debug/pprof/heap go tool --http=':8080' heap
+wget http://localhost:6060/debug/pprof/heap
+go tool --http=':8080' heap
 ```
