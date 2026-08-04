@@ -34,7 +34,7 @@ L'app AdGuard ti consente di utilizzare DNS criptati, rendendola perfetta per im
 10. Il tuo server appena creato dovrebbe apparire in fondo all'elenco.
     ![Fornitori \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilizza l'app AdGuard VPN
 
@@ -50,13 +50,13 @@ Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo
 6. Il server DNS che hai aggiunto verrà visualizzato in fondo all'elenco dei _Server DNS personalizzati_.
    ![Server DNS personalizzati \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usa un profilo di configurazione
 
 Un profilo dispositivo macOS, noto anche come "profilo di configurazione" da Apple, è un file XML firmato da un certificato che puoi installare manualmente sul tuo dispositivo o distribuire utilizzando una soluzione MDM. Ti consente anche di configurare il DNS Privato AdGuard sul tuo dispositivo.
 
-:::note Importante
+:::note Important
 
 Se stai utilizzando una VPN, il profilo di configurazione verrà ignorato.
 
@@ -71,11 +71,11 @@ Se stai utilizzando una VPN, il profilo di configurazione verrà ignorato.
    ![Installa \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Inserisci la password di amministrazione e fai clic su _OK_.
 
-Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configura DNS semplice
 
-Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. Hai due opzioni: utilizzare IP collegati o IP dedicati.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Hai due opzioni: utilizzare IP collegati o IP dedicati.
 
 - [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)

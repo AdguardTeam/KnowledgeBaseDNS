@@ -1,24 +1,24 @@
 ---
-title: How to set up filtering
+title: フィルタリングの設定方法
 sidebar_position: 1
 ---
 
-Private DNS does more than just block ads, trackers, and other unwanted requests. It also lets you fine-tune blocking and restrict access to certain websites or services.
+プライベートAdGuard DNSは、広告やトラッカー、その他の不要なリクエストをブロックしてくれるだけではありません。 ブロックする内容の詳細設定を行ったり、特定のウェブサイトやサービスへのアクセスを制限したりすることもできます。
 
-AdGuard DNS provides a range of tools for customizing filtering and access:
+AdGuard DNS は、フィルタリングとアクセスをカスタマイズするためのさまざまなツールを提供します:
 
-- [Blocklists](/private-dns/setting-up-filtering/blocklists.md)
+- [ブロックリスト](/private-dns/setting-up-filtering/blocklists.md)
 
-  Core feature for quick and easy filtering customization
+  迅速かつ簡単にフィルタリングをカスタマイズするためのコア機能
 
-- [User rules](/private-dns/setting-up-filtering/user-rules.md)
+- [ユーザールール](/private-dns/setting-up-filtering/user-rules.md)
 
-  Lets you add custom filters and your own filtering rules
+  カスタムフィルタや独自のフィルタリングルールを追加できるセクション
 
-- [Security features](/private-dns/setting-up-filtering/security-features.md)
+- [セキュリティ機能](/private-dns/setting-up-filtering/security-features.md)
 
-  Protect you from visiting phishing and fake websites, as well as from potential leaks of sensitive data
+  フィッシングや偽ウェブサイトへのアクセスが防止され、個人情報・機密データの漏洩のリスクから保護してくれる機能群
 
-- [Parental control](/private-dns/setting-up-filtering/parental-control.md)
+- [ペアレンタルコントロール](/private-dns/setting-up-filtering/parental-control.md)
 
-  Lets you restrict access to websites and services (including ones with sensitive content), enforce safe search, and set up screen time
+  ウェブサイトやサービス（センシティブなコンテンツを含むものを含め）へのアクセスを制限し、セーフサーチを強制し、スクリーンタイムを設定できる

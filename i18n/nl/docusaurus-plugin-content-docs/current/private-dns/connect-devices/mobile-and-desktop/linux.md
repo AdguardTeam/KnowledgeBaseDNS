@@ -10,18 +10,26 @@ To connect a Linux device to AdGuard DNS, first add it to _Dashboard_:
 3. Name the device.
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS Client
+## Use AdGuard DNS CLI
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+AdGuard DNS CLI is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
 
 You can learn more about this in the [related article](/dns-client/overview/).
+
+:::note
+
+Je kunt [AdGuard DNS CLI gebruiken voor automatische apparaatverbinding][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
 
 ## Use AdGuard VPN CLI
 
 You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
 
 1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Ga naar [Instellingen](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
 3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
 4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
 
@@ -30,13 +38,13 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 1. Click _System_ → _Settings_ → _Network_.
 2. Select the _Wireless_ tab, then choose the network you’re connected to.
 3. Go to _IPv4_.
-4. Stel _Automatisch (DHCP)_ in op _Handmatig_.
+4. Set _Automatic (DHCP)_ to _Manual_.
 5. Change the listed DNS addresses to the following addresses:
    - `94.140.14.49`
    - `94.140.14.59`
 6. Click _Apply_.
 7. Go to _IPv6_.
-8. Stel _Automatisch_ in op _Handmatig_.
+8. Set _Automatic_ to _Manual_.
 9. Change the listed DNS addresses to the following addresses:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
@@ -102,25 +110,25 @@ If you see a notification that you are not connected to AdGuard DNS, most likely
 
 :::
 
-## EDNS (Extended DNS) gebruiken
+## Use EDNS (Extended DNS)
 
-EDNS breidt het DNS-protocol uit, waarbij grotere UDP-pakketten extra gegevens kunnen bevatten. In AdGuard DNS staat het toe om DeviceID door te geven in standaard DNS met behulp van een extra parameter.
+EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
 
-DeviceID, een achtcijferige hexadecimale identificator (bijv. `1a2b3c4d`), helpt bij het koppelen van DNS-verzoeken aan specifieke apparaten. Voor versleutelde DNS is deze ID onderdeel van het domein (bijv., `1a2b3c4d.d.adguard-dns.com`). Voor onbeveiligde DNS is EDNS vereist om deze identificator over te dragen.
+DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
 
-AdGuard DNS gebruikt EDNS om DeviceID op te halen door te zoeken naar optie nummer `65074`. Als er een dergelijke optie bestaat, wordt de DeviceID daaruit gelezen. For this, you can use the `dig` command in the terminal:
+AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 ```
 
-Hier is `65074` de optie-ID en `3031323334353637` is de waarde in hex-formaat (DeviceID: `01234567`).
+Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
 
-Voltooid! DeviceID moet worden weergegeven.
+All done! DeviceID should be displayed.
 
 :::note
 
-De `dig`-opdracht is slechts een voorbeeld, je kunt elke DNS-software gebruiken met de mogelijkheid om EDNS-opties toe te voegen om deze actie uit te voeren.
+The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
 
 :::
 

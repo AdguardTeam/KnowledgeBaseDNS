@@ -18,13 +18,21 @@ sidebar_position: 5
 
 Теперь вы можете автоматически подключить ваше устройство к серверу, создав специальный адрес, включающий имя устройства, тип устройства и текущий идентификатор сервера. Давайте рассмотрим, как выглядят эти адреса и правила их создания.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Примеры адресов для автоматического подключения
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — это автоматически создаст устройство `Android` с протоколом `DNS-over-TLS` и именем `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — это автоматически создаст устройство `Windows` с протоколом `DNS-over-HTTPS` и именем `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — это автоматически создаст устройство `iOS` с протоколом `DNS-over-QUIC` и именем `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Как назвать устройство
 

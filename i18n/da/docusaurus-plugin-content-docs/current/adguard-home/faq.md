@@ -179,7 +179,7 @@ Disse parametre kan pt. ikke indstilles fra UI'en, hvorfor opsætningsfilen skal
 
 ## Hvordan opsættes AdGuard Home som standard DNS-server? {#defaultdns}
 
-Se [afsnittet _Opsætning af enheder_](getting-started.md#configure-devices) på siden _Kom godt i gang_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Findes nogen kendte begrænsninger? {#limitations}
 
@@ -312,8 +312,8 @@ Anvendes TLS på den reverse-proxyserveren, behøver man ikke bruge TLS på AdGu
 
 Man kan indstille parameteren `trusted_proxies` til sin HTTP-proxys IP-adresse(r) for at få AdGuard Home til at tage headerne indeholdende den reelle klient IP-adresse i betragtning. Se siderne [opsætning][conf] og [kryptering][encr] for yderligere information.
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Hvordan rettes "tilladelse nægtet"-fejl på Fedora? {#fedora}
 

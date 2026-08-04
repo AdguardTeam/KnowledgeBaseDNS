@@ -34,7 +34,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 9. 추가한 DNS 서버는 **사용자 정의 DNS 서버** 목록 하단에 표시됩니다.
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-기기가 AdGuard DNS에 성공적으로 연결되었습니다!
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN 사용
 
@@ -54,7 +54,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 7. **저장 및 선택**을 클릭합니다.
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-기기가 AdGuard DNS에 성공적으로 연결되었습니다!
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configure via Windows settings
 
@@ -86,7 +86,7 @@ More details can be found in [different article](/dns-client/overview/).
 
 ## 평문 DNS 구성
 
-DNS 구성을 위한 추가 소프트웨어를 사용하고 싶지 않다면 암호화가 해제된 DNS를 선택할 수 있습니다. 연결된 IP 또는 전용 IP를 사용할 수 있습니다.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. 연결된 IP 또는 전용 IP를 사용할 수 있습니다.
 
 - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

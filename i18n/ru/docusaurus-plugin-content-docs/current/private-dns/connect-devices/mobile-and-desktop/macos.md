@@ -34,7 +34,7 @@ sidebar_position: 4
 10. Ваш только что созданный сервер должен появиться внизу списка.
     ![Поставщики \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Используйте AdGuard VPN
 
@@ -50,13 +50,13 @@ sidebar_position: 4
 6. Добавленный вами DNS-сервер появится внизу списка _Пользовательских DNS-серверов_.
    ![Пользовательские DNS-серверы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Использовать профиль конфигурации
 
 Профиль macOS устройства, называемый также «профиль конфигурации» компанией Apple, — это XML-файл, подписанный сертификатом, который можно установить на устройство вручную или развернуть с помощью решения MDM. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
 
-:::note Важно
+:::note Important
 
 Если вы используете VPN, профиль конфигурации будет игнорироваться.
 
@@ -71,11 +71,11 @@ sidebar_position: 4
    ![Установить \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Введите пароль администратора и нажмите _OK_.
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Настройка незашифрованного DNS
 
-Если вы предпочитаете не использовать дополнительное программное обеспечение для настройки DNS, вы можете выбрать незашифрованный DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
 
 - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

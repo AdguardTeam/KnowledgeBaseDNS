@@ -34,7 +34,7 @@ L'app AdGuard ti consente di utilizzare DNS criptati, rendendola perfetta per co
 9. Il server DNS che hai aggiunto verrà visualizzato in fondo all'elenco dei _Server DNS personalizzati_.
    ![Server DNS personalizzati \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilizza l'app AdGuard VPN
 
@@ -54,7 +54,7 @@ Non tutti i servizi VPN supportano DNS crittografati. Tuttavia, la nostra VPN lo
 7. Clicca _Salva e seleziona_.
    ![Salva e seleziona \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Tutto fatto! Il tuo dispositivo è connesso correttamente a AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configura tramite le impostazioni di Windows
 
@@ -86,7 +86,7 @@ Maggiori dettagli possono essere trovati in [articolo diverso](/dns-client/overv
 
 ## Configura DNS semplice
 
-Se preferisci non utilizzare software aggiuntivo per la configurazione DNS, puoi optare per DNS non crittografati. Hai due opzioni: utilizzare IP collegati o IP dedicati.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Hai due opzioni: utilizzare IP collegati o IP dedicati.
 
 - [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)

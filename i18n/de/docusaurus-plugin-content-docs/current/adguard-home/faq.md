@@ -179,7 +179,7 @@ Es gibt derzeit keine Möglichkeit, diese Parameter über die Benutzeroberfläch
 
 ## Wie kann AdGuard Home als Standard-DNS-Server eingerichtet werden? {#defaultdns}
 
-Siehe den Abschnitt [_Geräte konfigurieren_](getting-started.md#configure-devices) auf der Seite _Erste Schritte_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Gibt es bekannte Einschränkungen? {#limitations}
 
@@ -312,8 +312,8 @@ Wenn Sie TLS auf Ihrem Reverse-Proxy-Server verwenden, müssen Sie TLS nicht auf
 
 Sie können den Parameter `trusted_proxies` auf die IP-Adresse(n) Ihres HTTP-Proxys setzen, damit AdGuard Home die Header berücksichtigt, die die echte Client-IP-Adresse enthalten. Weitere Informationen finden Sie auf den Seiten [configuration][conf] und [encryption][encr].
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Wie kann der Fehler `permission denied` unter Fedora behoben werden? {#fedora}
 

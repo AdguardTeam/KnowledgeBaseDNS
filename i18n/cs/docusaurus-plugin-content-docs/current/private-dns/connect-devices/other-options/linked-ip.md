@@ -106,7 +106,7 @@ V systémech MacOS a Linux je nejjednodušší použít příkaz `cron`:
    - Tato úloha se spustí každých 5 minut
 3. Uložte crontab.
 
-:::note Důležité
+:::note Important
 
 - Ujistěte se, že máte nainstalovaný `curl` na macOS a Linuxu.
 - Nezapomeňte zkopírovat adresu z nastavení a nahradit `ServerID` a `UniqueKey`.

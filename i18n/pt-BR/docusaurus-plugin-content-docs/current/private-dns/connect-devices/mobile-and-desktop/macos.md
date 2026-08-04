@@ -34,7 +34,7 @@ O aplicativo AdGuard permite que você use DNS criptografado, tornando-o perfeit
 10. Seu servidor recém-criado deve aparecer na parte inferior da lista.
     ![Provedores \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Feito! Seu dispositivo foi conectado com sucesso ao AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Usando o AdGuard VPN
 

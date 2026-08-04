@@ -21,6 +21,10 @@ For at installere AdGuard Home som en tjeneste, udpak arkivet, gå til mappen 'A
 
 - Brugere af **macOS 10.15 Catalina** og senere bør placere AdGuard Home-arbejdsmappen i mappen `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker og Snap
 
 Vi leverer også en [officiel AdGuard Home docker-afbildning][docker] og en [officiel Snap Store-pakke][snap] til erfarne brugere.
@@ -47,7 +51,7 @@ Nogle andre uofficielle muligheder indbefatter:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Som standard skrives logfilerne til `stderr`, når AdGuard Home køres i en term
 
 Denne adfærd kan ændres i AdGuard Home-[opsætningsfilen][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Opdatering {#update}
 

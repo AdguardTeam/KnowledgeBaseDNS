@@ -21,6 +21,10 @@ AdGuard Home'u bir hizmet olarak kurmak için arşivi çıkarın, `AdGuardHome` 
 
 - MacOS 10.15 Catalina\*\* ve daha yeni sürüm kullanıcıları AdGuard Home çalışma dizinini `/Applications` dizininin içine yerleştirmelidir.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker ve Snap
 
 We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
@@ -47,7 +51,7 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Varsayılan olarak, AdGuard Home'u bir terminalde çalıştırdığınızda gün
 
 Bu davranışı AdGuard Home [yapılandırma dosyası][conf] içinde değiştirebilirsiniz.
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Güncelleme {#update}
 

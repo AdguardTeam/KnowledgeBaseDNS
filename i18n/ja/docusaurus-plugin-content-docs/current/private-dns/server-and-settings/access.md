@@ -17,7 +17,7 @@ sidebar_position: 3
 
 ここでは、DNSサーバーの使用を許可されていないクライアントをリストアップできます。 すべてのクライアントへのアクセスをブロックし、選択したクライアントのみを使用することができます。 これを行うには、許可されていないクライアントに `0.0.0.0/0` と `::/0` の 2 つのアドレスを追加します。 次に、「_許可クライアント_」フィールドに、あなたのサーバーにアクセスできるアドレスを指定します。
 
-:::note 【重要】
+:::note Important
 
 Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. もしそうなった場合は、DNSサーバーから切断し、アクセス設定に移動し、設定を適宜調整してください。
 

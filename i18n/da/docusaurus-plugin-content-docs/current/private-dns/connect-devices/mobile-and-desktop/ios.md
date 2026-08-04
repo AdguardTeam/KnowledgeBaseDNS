@@ -36,7 +36,7 @@ Opsætning af enheden:
 
 ![Tilslut \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. Enheden er nu tilsluttet AdGuard DNS. Alt der skal gøres, er at trykke på _Slå til_ for at starte beskyttelsen.
+1. Your device is successfully connected to AdGuard DNS. Alt der skal gøres, er at trykke på _Slå til_ for at starte beskyttelsen.
 
 ![Slå til \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
 
@@ -44,7 +44,7 @@ Opsætning af enheden:
 
 2. Foretrkkes brug af den indbygget DNS, gå til _Indstillinger_→ _Generelt_ → _VPN og Enhedshndtering_ → _DNS_ og slå AdGuard DNS til.
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Brug AdGuard Ad Blocker (betalt mulighed)
 
@@ -67,7 +67,7 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 8. Den nyoprettede server bør nu dukke op nederst på listen.
    ![Tilpasset server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Brug af AdGuard VPN
 
@@ -91,13 +91,13 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vo
 9. Den nyoprettede server bør nu dukke op under _Tilpassede DNS-servere_.
    ![Tilføj servere \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Brug en opsætningsprofil
 
 En iOS-enhedsprofil, også kaldet en konfigurationsprofil af Apple, er en certifikatsigneret XML-fil, der kan installeres manuelt på iOS-enheden eller udrulles vha. en MDM-løsning. Den muliggør også opsætning af AdGuard DNS på enheden.
 
-:::note Vigtigt
+:::note Important
 
 Benyttes et VPN, ignoreres opsætningsprofilen.
 

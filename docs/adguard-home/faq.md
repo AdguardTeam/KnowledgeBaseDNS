@@ -179,7 +179,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 ## How do I set up AdGuard Home as default DNS server? {#defaultdns}
 
-See the [*Configuring Devices* section](getting-started.md#configure-devices) on the *Getting Started* page.
+See the [*Configuring Devices* section](/adguard-home/getting-started#configure-devices) on the *Getting Started* page.
 
 ## Are there any known limitations? {#limitations}
 
@@ -312,8 +312,8 @@ If you’re using TLS on your reverse proxy server, you don’t need to use TLS 
 
 You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
 
@@ -396,16 +396,16 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-1. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+1. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    On macOS, type something like:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 1. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:

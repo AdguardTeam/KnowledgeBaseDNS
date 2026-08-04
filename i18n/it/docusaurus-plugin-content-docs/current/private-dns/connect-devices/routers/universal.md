@@ -20,7 +20,7 @@ Ecco alcune istruzioni generali per impostare AdGuard DNS privato sui router. Pu
 
    :::
 
-3. Trova dove si trovano le impostazioni DNS nella console di amministrazione del router. Sostituisci gli indirizzi DNS elencati con gli indirizzi seguenti:
+3. Trova dove si trovano le impostazioni DNS nella console di amministrazione del router. Change the listed DNS addresses to the following addresses:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 

@@ -71,7 +71,7 @@ Letztendlich erhalten Sie zwei Dateien:
 
 Beide sind für die Konfiguration von AdGuard Home erforderlich.
 
-:::info Wichtig
+:::info Important
 
 Um das bestehende Zertifikat zu verlängern, müssen Sie genau denselben Vorgang erneut durchführen.
 
@@ -223,7 +223,7 @@ AdGuard Home kann als DNSCrypt-Server genutzt werden. Diese Funktion ist jedoch 
 
 So erstellen Sie eine DNSCrypt-Konfigurationsdatei und verweisen AdGuard Home darauf:
 
-:::info Wichtig
+:::info Important
 
 Stellen Sie sicher, dass Ihre TLS-Einstellungen korrekt sind und die Verschlüsselung aktiviert ist.
 

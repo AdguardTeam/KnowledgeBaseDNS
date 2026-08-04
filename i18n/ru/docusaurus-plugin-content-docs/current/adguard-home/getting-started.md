@@ -21,6 +21,10 @@ sidebar_position: 2
 
 - Пользователям **macOS 10.15 Catalina** и более новых версий следует поместить рабочую директорию AdGuard Home в директорию `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker и Snap
 
 Мы также предоставляем [официальный докер-образ AdGuard Home][docker] и [официальный пакет Snap Store][snap] для опытных пользователей.
@@ -47,7 +51,7 @@ sidebar_position: 2
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ sudo ./AdGuardHome -s install
 
 Вы можете изменить это поведение [в файле конфигурации AdGuard Home][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Обновление {#update}
 

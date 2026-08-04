@@ -179,7 +179,7 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 ## 如何将 AdGuard Home 设置为默认 DNS 服务器？ {#defaultdns}
 
-请参阅「入门」页面上的[「配置设备」部分](getting-started.md#configure-devices)。
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## 是否有任何已知限制？ {#limitations}
 
@@ -312,8 +312,8 @@ DOMAIN {
 
 用户可以将参数 `trust_proxies` 设置为 HTTP 代理的 IP 地址 (可以是多个)，以使 AdGuard Home 考虑包含真实客户端 IP 地址的标头。 请参阅[配置][conf]和[加密][encr]页面了解更多信息。
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## 如何修复 Fedora 上的 `permission denied` 错误？ {#fedora}
 

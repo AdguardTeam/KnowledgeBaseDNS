@@ -17,7 +17,7 @@ sidebar_position: 3
 
 여기에서 DNS 서버를 사용할 수 없는 클라이언트를 나열할 수 있습니다. 모든 클라이언트의 접근을 차단하고 선택된 클라이언트만 사용할 수 있습니다. 이렇게 하려면 허용되지 않는 클라이언트에 두 개의 주소를 추가합니다: 0.0.0.0/0`및`::/0\`. 그런 다음, **허용된 클라이언트** 필드에 서버에 접근할 수 있는 주소를 지정합니다.
 
-:::note 중요
+:::note Important
 
 Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. 그런 일이 발생하면 DNS 서버에서 연결을 끊고 액세스 설정으로 가서 구성을 조정하세요.
 

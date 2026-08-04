@@ -34,7 +34,7 @@ L'oggetto `cache` configura la memorizzazione nella cache dei risultati delle ri
 
 L'oggetto `server` configura la gestione delle richieste in arrivo. Ha le seguenti proprietà:
 
-- `bind_retry`: La configurazione del meccanismo di ripetizione per l'assegnazione agli indirizzi di ascolto. Questo è utile se il server è avviato prima che la rete sia pronta e gli indirizzi non siano ancora disponibili, come in alcune edizioni di Windows quando installato come servizio di sistema.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Questo è utile se il server è avviato prima che la rete sia pronta e gli indirizzi non siano ancora disponibili, come in alcune edizioni di Windows quando installato come servizio di sistema.
 
   :::note
 
@@ -102,9 +102,40 @@ L'oggetto `upstream` configura la risoluzione effettiva delle richieste. Ha le s
 
 - `groups`: l'insieme dei server upstream identificati dal nome del gruppo. Ha le seguenti proprietà:
 
-  - `address`: Indirizzo del server upstream.
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **Esempio:** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    Ha le seguenti proprietà:
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **Esempio di proprietà:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: l'elenco dei criteri con cui confrontare la richiesta. Ogni voce può contenere le seguenti proprietà:
 
@@ -134,7 +165,7 @@ L'oggetto `upstream` configura la risoluzione effettiva delle richieste. Ha le s
 
   :::info
 
-  `groups` dovrebbe contenere almeno un'unica voce chiamata `default`, e facoltativamente un'unica voce chiamata `private`, entrambe non dovrebbero avere la proprietà `match`.
+  `groups` dovrebbe contenere almeno un'unica voce chiamata `default`, e facoltativamente un'unica voce chiamata `private`, entrambe non dovrebbero avere la proprietà `match`. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -160,6 +191,10 @@ L'oggetto `fallback` configura il comportamento del server DNS in caso di errore
 - `timeout`: il tempo limite per le richieste DNS fallback, espresso in una durata leggibile dall'uomo.
 
   **Esempio:** `2 s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

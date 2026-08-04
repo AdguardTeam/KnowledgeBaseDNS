@@ -17,7 +17,7 @@ Questa impostazione consente di specificare quali client possono utilizzare il t
 
 Qui puoi elencare i client ai quali non è consentito utilizzare il tuo server DNS. Puoi bloccare l'accesso a tutti i client e utilizzare solo quelli selezionati. Per fare ciò, aggiungi due indirizzi ai client non consentiti: `0.0.0.0/0` e `::/0`. Poi, nel campo _Clienti consentiti_, specifica gli indirizzi che possono accedere al tuo server.
 
-:::note Importante
+:::note Important
 
 Prima di applicare le impostazioni di accesso, assicurati di non bloccare il tuo indirizzo IP. Se lo fai, non potrai accedere alla rete. Se ciò accade, disconnetti semplicemente dal server DNS, vai alle impostazioni di accesso e regola le configurazioni di conseguenza.
 

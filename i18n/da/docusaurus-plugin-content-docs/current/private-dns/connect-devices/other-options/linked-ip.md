@@ -106,7 +106,7 @@ Den nemmeste måde på macOS og Linux er at bruge `cron`:
    - Denne opgave eksekveres hvert 5. minut
 3. Gem crontab.
 
-:::note Vigtigt
+:::note Important
 
 - Sørg for, at `curl` er installeret på macOS og Linux.
 - Husk at kopiere adressen fra indstillingerne og erstatte `ServerID` og `UniqueKey`.

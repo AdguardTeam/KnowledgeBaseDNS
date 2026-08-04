@@ -20,7 +20,7 @@ Zde jsou uvedeny obecné pokyny pro nastavení Soukromého AdGuard DNS na router
 
    :::
 
-3. V konzole správce routeru zjistěte, kde se nachází nastavení DNS. Změňte uvedené adresy DNS na následující adresy:
+3. V konzole správce routeru zjistěte, kde se nachází nastavení DNS. Change the listed DNS addresses to the following addresses:
    - IPv4: `94.140.14.49` a `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 

@@ -17,7 +17,7 @@ sidebar_position: 3
 
 在这里，用户可以列出不允许使用您的 DNS 服务器的客户端。 用户可以阻止所有客户端的访问权限，仅使用选定的客户端。 为此，将两个地址添加到不允许的客户端：`0.0.0.0/0` 和 `::/0`。 然后，在「_允许的客户端_」字段中，指定可以访问您服务器的地址。
 
-:::note 重要信息
+:::note Important
 
 Before applying the access settings, make sure you’re not blocking your own IP address. If you do, you won’t be able to access the network. 如果出现这种情况，只需断开与 DNS 服务器的连接，转到访问权限设置，并相应地调整配置。
 

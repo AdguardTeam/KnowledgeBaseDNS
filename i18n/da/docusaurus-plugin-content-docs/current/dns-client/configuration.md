@@ -34,7 +34,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 `server`-objektet opsætter håndteringen af indgående forespørgsler. Den har flg. egenskaber:
 
-- `bind_retry`: Opsætningen af genforsøgs-mekanismen for knytning til lytteadresserne. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
 
   :::note
 
@@ -102,9 +102,40 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 - `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Den har flg. egenskaber:
 
-  - `address`: Opstrømsserveradresse.
+  - `adresse`: Adressen på upstream-serveren. Er `autodevice.enabled` sat til `true` for denne gruppe, skal adressen være en URL med et af skemaerne `https`, `tls` eller `quic`.
 
     **Eks.:** `'8.8.8.8:53'`
+
+  - `autodevice`: Repræsenterer en [automatisk forbindelse][automatic-connection] til en enhed.
+
+    :::note
+
+    Autodevice-indstillingen må kun bruges til AdGuard DNS-upstreams. Ellers kan vi ikke garantere korrekt funktion.
+
+    :::
+
+    Den har flg. egenskaber:
+
+    - `enabled`: Definerer om alle klienter i den aktuelle gruppe kan forbindes automatisk.
+
+      :::info
+
+      Den prædefinerede gruppe `private` skal have `enabled` sat til false, da den endnu ikke understøtter autodevice.
+
+      :::
+
+    - `profile_id`: [ID for en profil][profile-id], hvor nye enheder vil blive tilføjet.
+
+    - `device_type`: En [enhedstype][device-type] oprettet til nye klienter.
+
+    **Egenskabseksempel:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: Listen over kriterier forespørgslen skal matches imod. Hver post kan indeholde flg. egenskaber:
 
@@ -134,7 +165,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   :::info
 
-  `groups` skal indeholde mindst én post med navnet `default` og evt. en post med navnet `private`, og begge skal ikke have nogen `match`-egenskab.
+  `groups` skal indeholde mindst én post med navnet `default` og evt. en post med navnet `private`, og begge skal ikke have nogen `match`-egenskab. Gruppen `private` bruges også til at definere HumanID for klienter oprettet af funktionen `autodevice`. Hvis den ikke er defineret, anvendes en alternativ genereringsmetode, hvor HumanID'et dannes ud fra IP-adressen.
 
   :::
 
@@ -160,6 +191,10 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 - 'timeout': Timeout for fallback DNS-forespørgsler som en menneskelig læsbar varighed.
 
   **Eks.:** `2s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

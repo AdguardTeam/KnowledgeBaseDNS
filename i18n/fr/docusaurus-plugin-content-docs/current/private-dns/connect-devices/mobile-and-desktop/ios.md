@@ -36,7 +36,7 @@ Pour configurer votre appareil :
 
 ![Connecter \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. Votre dispositif est maintenant connecté à AdGuard DNS. Il vous suffit d'appuyer sur _Activer_ pour démarrer la protection.
+1. Your device is successfully connected to AdGuard DNS. Il vous suffit d'appuyer sur _Activer_ pour démarrer la protection.
 
 ![Activer \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
 
@@ -44,7 +44,7 @@ Pour configurer votre appareil :
 
 2. Si vous préférez utiliser un DNS natif, allez dans _Paramètres_ → _Général_ → _Gestion du VPN et dispositifs_ → _DNS_ et activez le DNS AdGuard.
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisez le Bloqueur AdGuard (option payante)
 
@@ -67,7 +67,7 @@ L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait po
 8. Votre serveur nouvellement créé devrait apparaître en bas de la liste.
    ![Serveur personnalisé \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisez AdGuard VPN
 
@@ -91,7 +91,7 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 9. Votre serveur nouvellement créé devrait apparaître sous _Serveurs DNS personnalisés_.
    ![Serveurs personnalisés \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisez un profil de configuration
 

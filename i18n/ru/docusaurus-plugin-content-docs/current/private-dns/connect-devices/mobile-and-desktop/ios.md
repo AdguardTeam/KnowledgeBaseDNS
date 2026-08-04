@@ -36,7 +36,7 @@ sidebar_position: 3
 
 ![Подключиться \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. Ваше устройство успешно подключено к AdGuard DNS. Чтобы запустить защиту, достаточно нажать кнопку _Включить_.
+1. Your device is successfully connected to AdGuard DNS. Чтобы запустить защиту, достаточно нажать кнопку _Включить_.
 
 ![Включить \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-ru.png)
 
@@ -44,7 +44,7 @@ sidebar_position: 3
 
 2. Если вы предпочитаете использовать нативный DNS, перейдите в _Настройки_ → _Основные_ → _VPN и управление устройством_ → _DNS_ и включите AdGuard DNS.
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Используйте Блокировщик рекламы AdGuard (платная опция)
 
@@ -67,7 +67,7 @@ sidebar_position: 3
 8. Ваш только что созданный сервер должен появиться внизу списка.
    ![Пользовательский сервер \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Используйте AdGuard VPN
 
@@ -91,13 +91,13 @@ sidebar_position: 3
 9. Ваш только что созданный сервер появится в разделе _Пользовательские DNS-серверы_.
    ![Пользовательские серверы \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Использовать профиль конфигурации
 
 Профиль устройства iOS, также называемый «профиль конфигурации» Apple, — это подписанный сертификатом XML-файл, который можно установить вручную на устройстве iOS или развернуть с помощью решения MDM. Также он позволяет настроить частный AdGuard DNS на вашем устройстве.
 
-:::note Важно
+:::note Important
 
 Если вы используете VPN, профиль конфигурации будет игнорироваться.
 

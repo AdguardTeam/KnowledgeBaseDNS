@@ -20,7 +20,7 @@ Voici quelques instructions générales pour configurer AdGuard DNS privé sur l
 
    :::
 
-3. Trouvez où les paramètres DNS sont situés dans la console d'administration du routeur. Changez les adresses DNS de la liste pour les adresses suivantes :
+3. Trouvez où les paramètres DNS sont situés dans la console d'administration du routeur. Change the listed DNS addresses to the following addresses:
    - IPv4 : `94.140.14.49` et `94.140.14.59`
    - IPv6 : `2a10:50c0:0:0:0:0:ded:ff` et `2a10:50c0:0:0:0:0:dad:ff`
 

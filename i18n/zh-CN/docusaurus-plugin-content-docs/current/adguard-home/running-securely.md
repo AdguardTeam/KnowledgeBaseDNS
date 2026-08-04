@@ -19,7 +19,7 @@ sidebar_position: 4
 
 如果您计划在**小型隔离网络内的路由器**上运行 AdGuard Home，请选择本地服务的接口。 它们的名称可能有所不同，但通常包含单词 `wlan` 或 `wlp`，地址以 `192.168.`开头。 如果用户希望路由器本身上的软件也使用 AdGuard Home，可能还应该添加环回地址。
 
-如果您打算在**可公开访问的服务器**上运行 AdGuard Home，可能需要选择_所有接口_选项。 请注意，这可能会使服务器遭受 DDoS 攻击，因此请阅读以下有关访问设置和速率限制的部分。
+如果您打算在**可公开访问的服务器**上运行 AdGuard Home，可能需要选&#x62E9;_&#x6240;有接&#x53E3;_&#x9009;项。 请注意，这可能会使服务器遭受 DDoS 攻击，因此请阅读以下有关访问设置和速率限制的部分。
 
 ## 访问设置
 
@@ -33,7 +33,7 @@ sidebar_position: 4
 
 要启用白名单模式，请在「_允许的客户端_」字段中输入允许的客户端的 [ClientIDs][cid] (推荐) 或 IP 地址。
 
-[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[cid]: /adguard-home/clients#client-id
 
 ## 禁用无加密的 DNS
 
@@ -93,3 +93,70 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 在 Windows 上，原理是相同的：确保 AdGuard Home 目录，通常为 `C:\Program Files\AdGuardHome`，以及 `AdGuardHome.exe` 二进制文件具有仅允许普通用户读取和执行/列出它们的权限。
 
 未来，我们计划将 Windows 版本发布为 MSI 安装程序文件，以确保自动执行此操作。
+
+## Verify releases {#verify-releases}
+
+We sign the executable files that we build so that you can verify that they were created by us and not by anyone else. Inside an archive file, there is a small file with a `.sig` extension that contains the signature data. If someone replaces the binary file inside an archive, you’ll know it isn’t an official release from AdGuard.
+
+### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
+
+1. Unpack the AdGuard Home archive file.
+
+2. Import the AdGuard Home public key from the keyserver. For **current releases,** run:
+
+   ```sh
+   gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
+   ```
+
+   The above command will print something similar to:
+
+   ```none
+   gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
+   gpg: Total number processed: 1
+   gpg:               imported: 1
+   ```
+
+3. Verify.
+
+   - On UNIX:
+
+     ```sh
+     gpg --verify AdGuardHome/AdGuardHome.sig
+     ```
+
+   - On Windows (you might need to install PGP):
+
+     ```ps1
+     gpg --verify AdGuardHome/AdGuardHome.exe.sig
+     ```
+
+   You'll see something like this:
+
+   ```none
+   gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
+   gpg: Signature made Mon 15 Aug 2022 19:30:55 MSK
+   gpg:                using RSA key 28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6
+   gpg:                issuer "devteam@adguard.com"
+   gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
+   ```
+
+   Check the following:
+
+   - RSA key: must be `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
+   - issuer name: must be `AdGuard`;
+   - E-mail address: must be `devteam@adguard.com`;
+
+   There may also be the following warning:
+
+   ```none
+   gpg: WARNING: The key's User ID is not certified with a trusted signature!
+   gpg:          There is no indication that the signature belongs to the owner.
+   Primary key fingerprint: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
+   ```
+
+### Reproducing AdGuard Home builds {#reproducing-builds}
+
+AdGuard Home uses [reproducible builds][repr]. See the `build-release.sh` section in our [build script documentation][build].
+
+[build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
+[repr]: https://reproducible-builds.org/

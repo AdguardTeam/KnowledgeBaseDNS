@@ -34,7 +34,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 Объект `server` настраивает обработку входящих запросов. Он обладает следующими свойствами:
 
-- `bind_retry`: настройка механизма повторных попыток привязки к прослушиваемым адресам. Она нужна, когда сервер запускается доготовности сети, адреса ещё недоступны, как на некоторых версиях Windows при установке в качестве системного сервиса.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Она нужна, когда сервер запускается доготовности сети, адреса ещё недоступны, как на некоторых версиях Windows при установке в качестве системного сервиса.
 
   :::note
 
@@ -102,9 +102,40 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
 - `groups`: набор upstream-серверов, связанных с именем группы. Он обладает следующими свойствами:
 
-  - `address`: адрес upstream-сервера.
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **Пример:** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    Он обладает следующими свойствами:
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **Пример свойства:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: список критериев для сопоставления запроса. Каждая запись может содержать следующие свойства:
 
@@ -134,7 +165,7 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 
   :::info
 
-  `groups` должно содержать как минимум одну запись с именем `default` и, опционально, одну запись с именем `private`, у обеих записей не должно быть свойства `match`.
+  `groups` должно содержать как минимум одну запись с именем `default` и, опционально, одну запись с именем `private`, у обеих записей не должно быть свойства `match`. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -160,6 +191,10 @@ See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configur
 - `timeout`: время ожидания для fallback DNS-запросов.
 
   **Пример:** `2 с`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

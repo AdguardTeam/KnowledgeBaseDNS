@@ -1,5 +1,5 @@
 ---
-title: DNS filtering rules syntax
+title: DNSフィルタリングルールの構文
 sidebar_position: 2
 toc_min_heading_level: 2
 toc_max_heading_level: 4
@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 このページでは、AdGuard製品で使用できるカスタムDNSフィルタリングルールの作成方法を紹介しています。
 
-Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
+クイックリンク: [AdGuard 広告ブロッカーをダウンロード](https://agrd.io/download-kb-adblock), [AdGuard Home を入手](https://github.com/AdguardTeam/AdGuardHome#getting-started), [AdGuard DNS を試す](https://agrd.io/download-dns)
 
 :::
 
@@ -91,7 +91,7 @@ If you want even more flexibility in making rules, you can use [regular expressi
 pattern = "/" regexp "/"
 ```
 
-**Examples:**
+**例:**
 
 - `/example.*/` will block hosts matching the `example.*` regexp.
 
@@ -112,7 +112,7 @@ Any line that starts with an exclamation mark or a hash sign is a comment and it
 
 You can change the behavior of a rule by adding modifiers. Modifiers must be located at the end of the rule after the `$` character and be separated by commas.
 
-**Examples:**
+**例:**
 
 - ```none ||example.org^$important
    ```
@@ -135,7 +135,11 @@ If a rule contains a modifier not listed in this document, the whole rule **must
 
 #### `client` {#client-modifier}
 
-**The `client` modifier can only be used in AdGuard Home and AdGuard DNS.**
+:::note
+
+The `client` modifier can only be used in AdGuard Home and AdGuard DNS.
+
+:::
 
 The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
 
@@ -169,7 +173,7 @@ When excluding a client, you **must** place `~` outside the quotes.
 
 :::
 
-**Examples:**
+**例:**
 
 - `@@||*^$client=127.0.0.1`: unblock everything for localhost.
 
@@ -208,7 +212,7 @@ The problem with this approach is that this way you will also unblock tracking d
 *$denyallow=com|net
 ```
 
-**Examples:**
+**例:**
 
 - `*$denyallow=com|net`: block everything except for `*.com` and `*.net`.
 
@@ -241,7 +245,7 @@ is equivalent to this:
 $dnstype=value2
 ```
 
-**Examples:**
+**例:**
 
 - `||example.org^$dnstype=AAAA`: block DNS queries for the IPv6 addresses of `example.org`.
 
@@ -273,7 +277,11 @@ ANSWERS:
 
 The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
 
-**Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.**
+:::note
+
+Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.
+
+:::
 
 Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
 
@@ -387,9 +395,9 @@ If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard H
 
 The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
 
-**Examples:**
+**例:**
 
-- In this example:
+- この例では:
 
   ```none
   ||example.org^$important
@@ -398,7 +406,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
   `||example.org^$important` will block all requests to `*.example.org` despite the exception rule.
 
-- In this example:
+- この例では:
 
   ```none
   ||example.org^$important
@@ -411,7 +419,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
 
-**Examples:**
+**例:**
 
 - `||example.com$badfilter` disables `||example.com`.
 
@@ -425,7 +433,11 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 #### `ctag` {#ctag-modifier}
 
-**The `ctag` modifier can only be used in AdGuard Home.**
+:::note
+
+The `ctag` modifier can only be used in AdGuard Home.
+
+:::
 
 It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
 
@@ -443,7 +455,7 @@ $ctag=~value1|~value2|...
 
 If one of client’s tags matches the exclusion `ctag` values, this rule doesn’t apply to the client.
 
-**Examples:**
+**例:**
 
 - `||example.org^$ctag=device_pc|device_phone`: block `example.org` for clients tagged as `device_pc` or `device_phone`.
 
@@ -481,7 +493,96 @@ The list of allowed tags:
     - `user_regular`: regular users.
     - `user_child`: children.
 
-## `/etc/hosts`-style syntax {#etc-hosts-syntax}
+#### `respgeo` {#respgeo-modifier}
+
+:::note
+
+`respgeo` は AdGuard DNS でのみ使用できます。
+
+:::
+
+`respgeo` 修飾子を使用すると、DNS 応答で返される IP アドレスの国または ASN に基づいてルールを適用できます。 この修飾子は**宛先**IPアドレス（ドメイン解決によって引き出されるIPアドレス）を確認します。 ユーザー、デバイス、DNSクライアントのIPアドレス、国、ASNの確認は**行いません**。
+
+##### 応答の国によるブロック
+
+修飾子の値は、ISO 3166-1 alpha-2 形式で2文字の国コードである必要があります。 国を特定できない応答に一致させるには、`--`を使用することもできます。
+
+**例:**
+
+- `||*^$respgeo=US`：DNS応答内のIPアドレスが米国（US）に関連付けられている場合、ドメインをブロックします。
+- `||*^$respgeo=FR|DE`：DNS応答内のIPアドレスがフランスまたはドイツに関連付けられている場合、ドメインをブロックします。
+- `||*^$respgeo=--`：DNS応答内のIPアドレスの国が不明な場合にドメインをブロックします。
+- `||*^$respgeo=~--`：DNS応答に含まれるIPアドレスの国が判明している場合、ドメインをブロックします。
+- `@@||whitehouse.gov^`：`whitehouse.gov` が `respgeo` 修飾子付きのワイルドカードルールでブロックされている場合でも、`whitehouse.gov` を許可します。
+- `@@||example.org^$respgeo=US`：DNS応答内のIPアドレスが米国（US）に関連付けられている場合、`example.org` を許可します。
+- `||whitehouse.gov^$respgeo=US`：DNS応答内のIPアドレスが米国（US）に関連付けられている場合にのみ、`whitehouse.gov` をブロックします。
+- この例では:
+
+  ```none
+  ||whitehouse.gov^
+  @@||whitehouse.gov^$respgeo=US
+  ```
+
+  `@@||whitehouse.gov^$respgeo=US` は `whitehouse.gov` を**許可しません**。これは、最初のルールがリクエストデータを検査してクエリをブロックする一方で、2番目のルールは応答を検査して許可しようとするためです。
+
+条件を反転するには、`~` を使用します:
+
+- `||*^$respgeo=~DE`：DNS応答内のIPアドレスがドイツに関連付けられてい**ない**場合、ドメインをブロックします。
+
+**制限事項**
+
+`respgeo` 修飾子は、現在の*クエリログ*のロジックに従って、単一の計算されたIPアドレスと国を使用します。 ドメインが複数のIPアドレスまたは国に解決される場合、AdGuard DNSは返されたすべてのIPアドレスを解析するわけではありません。
+
+多くのドメインはCDN、ロードバランシング、または地理的に分散したインフラストラクチャを使用しているため、検出される国は時間の経過とともに変わる可能性があります。
+
+国を特定できない場合、GeoIP条件は一致しません。 不明な国の応答に一致させるには、`respgeo=--` を使用してください。
+
+`respgeo` 修飾子を使ったルールは、「*クエリログ*」では通常のルールとして表示されます。
+
+##### ASNによるブロッキング
+
+`respgeo` 修飾子は、DNS 応答で返される IP アドレスの ASN に基づくルールの適用に使用することもできます。
+
+ASN は「**自律システム番号**（Autonomous System Number）」の略です。 自律システム（ISP、ホスティングプロバイダー、クラウドプロバイダー、企業、その他の組織によって運用されるネットワーク）を識別する番号なのです。
+
+この修飾子は**宛先**ASN（ドメイン解決によって引き出されるIPアドレスに属しているASN）を確認します。 ユーザー、デバイス、DNSクライアントのASNの確認は**行いません**。
+
+修飾子の値は、`AS<number>` 形式のASNである必要があります。例えば `AS15169` です。
+
+**例:**
+
+- `||*^$respgeo=AS15169`：DNS応答内のIPアドレスがASN AS15169に属している場合、ドメインをブロックします。
+- `||*^$respgeo=AS15169|AS8075`：DNS応答内のIPアドレスがASN AS15169またはAS8075に属している場合、ドメインをブロックします。
+- `||*^$respgeo=AS--`：DNS応答内のIPアドレスのASNが不明な場合、ドメインをブロックします。
+- `||*^$respgeo=~AS--`：DNS応答内のIPアドレスのASNが判明している場合、ドメインをブロックします。
+- `@@||google.com^$respgeo=AS15169`：DNS応答内のIPアドレスがASN AS15169に属する場合、`google.com`を許可します。
+- `||google.com^$respgeo=AS15169`：DNS応答内のIPアドレスがASN AS15169に属する場合にのみ、`google.com`をブロックします。
+- この例では:
+
+  ```none
+  ||google.com^
+  @@||google.com^$respgeo=AS15169
+  ```
+
+  `@@||google.com^$respgeo=AS15169` は `google.com` を**許可しません**。これは、最初のルールがリクエストデータを検査してクエリをブロックする一方で、2番目のルールは応答を検査して許可しようとするためです。
+
+条件を反転するには、`~` を使用します:
+
+- `||*^$respgeo=~AS15169`：DNS応答内のIPアドレスがASN AS15169に**属さない**場合、ドメインをブロックします。
+
+**制限事項**
+
+`respgeo` 修飾子は、現在の*クエリログ*のロジックに従って、単一の計算されたIPアドレスとASNを使用します。 ドメインが複数のIPアドレスまたはASNに解決される場合、AdGuard DNSは返されたすべてのASNを解析するわけではありません。
+
+大規模なCDN、クラウド、またはホスティングのASNには、多くの無関係なウェブサイトが含まれている場合があります。 ASNをブロックすると、想定よりも多くのドメインに影響を及ぼす可能性があります。
+
+ASNを特定できない場合、ASN条件は一致しません。 不明なASNの応答に一致させるには、`respgeo=AS--` を使用してください。
+
+ASNは必ず特定の企業、製品、またはサービスに当てはまるわけではありません。 ASNは解決されたIPアドレスに関連付けられたネットワークのみを識別するのです。
+
+`respgeo` 修飾子を使ったルールは、「*クエリログ*」では通常のルールとして表示されます。
+
+## `/etc/hosts`風の構文 {#etc-hosts-syntax}
 
 For each host a single line should be present with the following information:
 

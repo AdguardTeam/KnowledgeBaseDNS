@@ -179,7 +179,7 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 ## AdGuard Home'u varsayılan DNS sunucusu olarak nasıl ayarlarım? {#defaultdns}
 
-_Başlarken_ sayfasındaki [_Cihazların Yapılandırılması_ bölümüne](getting-started.md#configure-devices) bakın.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Bilinen herhangi bir sınırlama var mı? {#limitations}
 
@@ -312,8 +312,8 @@ Ters proxy sunucunuzda TLS kullanıyorsanız, AdGuard Home'da TLS kullanmanıza 
 
 AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almasını sağlamak için `trusted_proxies` parametresini HTTP proxy'nizin IP adreslerine ayarlayabilirsiniz. Daha fazla bilgi için [configuration][conf] ve [encryption][encr] sayfalarına bakın.
 
-[encr]: encryption.md#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Fedora'da `permission denied` hatalarını nasıl düzeltirim? {#fedora}
 

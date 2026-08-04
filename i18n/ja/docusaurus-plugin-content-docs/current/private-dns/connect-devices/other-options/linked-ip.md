@@ -60,7 +60,7 @@ The following instructions describe how to **unassign your linked IP address**:
 1. まず、お使いのルーターの設定でDDNSがサポートされているかどうかを確認する必要があります：
 
    - _ルーター設定_ → _ネットワーク_ に移動します
-   - DDNSまたは_ダイナミックDNS_（動的DNS）セクションを見つけます。
+   - DDNSまた&#x306F;_&#x30C0;イナミックDNS_（動的DNS）セクションを見つけます。
    - それに移動し、設定が実際にサポートされていることを確認してください。 _以下は、見た目がどのようになるかの例です。実際の設定画面や項目は、ルーターによって若干異なる場合があります_：
 
    ![DDNS がサポートされている場合 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
@@ -106,7 +106,7 @@ macOS と Linux では、`cron` を使用するのが最も簡単な方法です
    - このジョブは5分ごとに実行されます。
 3. crontabを保存します。
 
-:::note 【重要】
+:::note Important
 
 - macOS と Linux に `curl` がインストールされていることを確認します。
 - 設定からアドレスをコピーし、`ServerID`と`UniqueKey`を置き換えることを忘れないでください。

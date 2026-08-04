@@ -21,6 +21,10 @@ Para instalar AdGuard Home como un servicio, extrae el archivo, entra en el dire
 
 - Los usuarios de **macOS 10.15 Catalina** y versiones posteriores deben colocar el directorio de trabajo de AdGuard Home dentro del directorio `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker y Snap
 
 También proporcionamos una [imagen oficial de AdGuard Home para Docker][docker] y un [paquete oficial de Snap Store][snap] para usuarios experimentados.
@@ -47,7 +51,7 @@ Algunas otras opciones no oficiales incluyen:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ By default, the logs are written to `stderr` when you run AdGuard Home in a term
 
 You can change this behavior in the AdGuard Home [configuration file][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Updating {#update}
 

@@ -40,7 +40,7 @@ Un gruppo di filtri contenente regole per il blocco di siti fraudolenti e domini
 
 ![Liste di blocco di sicurezza \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_it.png)
 
-### Altro
+### Altri
 
 Liste di blocco con varie regole di blocco da sviluppatori terzi.
 

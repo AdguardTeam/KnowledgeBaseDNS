@@ -42,7 +42,7 @@ sidebar_position: 2
 
 8. При использовании протокола на основе VPN сначала нужно разрешить создание VPN-профиля. Для этого перейдите на главную страницу приложения, нажмите _Включить_ и следуйте инструкции.
 
-9. Готово! Ваше устройство успешно подключено к AdGuard DNS. Нажимайте _Включить_ каждый раз, когда хотите запустить защиту.
+9. All done! Your device is successfully connected to AdGuard DNS. Нажимайте _Включить_ каждый раз, когда хотите запустить защиту.
 
    ![Включить \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-ru.png)
 
@@ -69,7 +69,7 @@ sidebar_position: 2
 10. Нажмите _Сохранить и выбрать_.
     ![Сохранить и выбрать \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Используйте AdGuard VPN
 
@@ -92,7 +92,7 @@ sidebar_position: 2
    ![Добавить DNS-сервер \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. Добавленный вами DNS-сервер появится внизу списка _Пользовательских DNS-серверов_.
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Настройте Личный DNS вручную
 
@@ -105,11 +105,11 @@ sidebar_position: 2
 3. Выберите опцию _Имя хоста личного DNS-провайдера_ и введите адрес вашего личного сервера: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Нажмите _Сохранить_.
    ![Личный DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   Готово! Ваше устройство успешно подключено к AdGuard DNS.
+   Готово! Your device is successfully connected to AdGuard DNS.
 
 ## Настройка незашифрованного DNS
 
-Если вы предпочитаете не использовать дополнительное программное обеспечение для настройки DNS, вы можете выбрать незашифрованный DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
 
 - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

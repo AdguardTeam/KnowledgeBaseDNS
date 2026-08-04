@@ -33,7 +33,7 @@ Nella parte inferiore della pagina _Impostazioni_ → _Impostazioni DNS_, trover
 
 Per abilitarla, inserisci [CliendIDs][cid] (consigliato) o gli indirizzi IP per i client consentiti nel campo _Client consentiti_.
 
-[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[cid]: /adguard-home/clients#client-id
 
 ## Disabilitare il DNS semplice
 
@@ -93,3 +93,70 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 Il principio è lo stesso su Windows: assicurati che la directory di AdGuard Home, tipicamente `C:\Program Files\AdGuardHome`, e il binario `AdGuardHome.exe` abbiano le autorizzazioni che consentirebbero soltanto agli utenti regolari di leggerli ed eseguirli/elencarli.
 
 In futuro, prevediamo di rilasciare le build per Windows come file d'installazione MSI, che assicurino l'esecuzione automatica.
+
+## Verify releases {#verify-releases}
+
+We sign the executable files that we build so that you can verify that they were created by us and not by anyone else. Inside an archive file, there is a small file with a `.sig` extension that contains the signature data. If someone replaces the binary file inside an archive, you’ll know it isn’t an official release from AdGuard.
+
+### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
+
+1. Unpack the AdGuard Home archive file.
+
+2. Import the AdGuard Home public key from the keyserver. For **current releases,** run:
+
+   ```sh
+   gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
+   ```
+
+   The above command will print something similar to:
+
+   ```none
+   gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
+   gpg: Total number processed: 1
+   gpg:               imported: 1
+   ```
+
+3. Verify.
+
+   - On UNIX:
+
+     ```sh
+     gpg --verify AdGuardHome/AdGuardHome.sig
+     ```
+
+   - On Windows (you might need to install PGP):
+
+     ```ps1
+     gpg --verify AdGuardHome/AdGuardHome.exe.sig
+     ```
+
+   You'll see something like this:
+
+   ```none
+   gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
+   gpg: Signature made Mon 15 Aug 2022 19:30:55 MSK
+   gpg:                using RSA key 28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6
+   gpg:                issuer "devteam@adguard.com"
+   gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
+   ```
+
+   Check the following:
+
+   - RSA key: must be `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
+   - issuer name: must be `AdGuard`;
+   - E-mail address: must be `devteam@adguard.com`;
+
+   There may also be the following warning:
+
+   ```none
+   gpg: WARNING: The key's User ID is not certified with a trusted signature!
+   gpg:          There is no indication that the signature belongs to the owner.
+   Primary key fingerprint: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
+   ```
+
+### Reproducing AdGuard Home builds {#reproducing-builds}
+
+AdGuard Home uses [reproducible builds][repr]. See the `build-release.sh` section in our [build script documentation][build].
+
+[build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
+[repr]: https://reproducible-builds.org/
