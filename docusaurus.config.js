@@ -246,8 +246,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    require.resolve('./plugins/dev-api-proxy'),
-    require.resolve('./plugins/api-changelog'),
-  ],
+  plugins: [require.resolve('./plugins/dev-api-proxy')],
 };

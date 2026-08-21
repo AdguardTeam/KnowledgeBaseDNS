@@ -14,8 +14,6 @@ export function useChangelogFetch() {
       ? {status: 'loading', markdown: ''}
       : {status: 'ready', markdown: cachedMarkdown},
   );
-  // Bump to re-run the fetch (retry).
-  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     if (cachedMarkdown !== null) {
@@ -42,12 +40,7 @@ export function useChangelogFetch() {
       controller.abort();
       clearTimeout(timeoutId);
     };
-  }, [attempt]);
+  }, []);
 
-  const retry = () => {
-    setState({status: 'loading', markdown: ''});
-    setAttempt((value) => value + 1);
-  };
-
-  return {state, retry};
+  return {state};
 }

@@ -10,12 +10,6 @@ export default function ApiChangelog() {
     message: 'Loading changelog…',
     description: 'Placeholder shown while the API changelog is being loaded',
   });
-  const retryLabel = translate({
-    id: 'apiChangelog.retry',
-    message: 'Try again',
-    description:
-      'Label of the button that reloads the API changelog after a failed attempt',
-  });
   const versionsLabel = translate({
     id: 'apiChangelog.versions',
     message: 'Versions',
@@ -26,7 +20,6 @@ export default function ApiChangelog() {
       {() => (
         <ApiChangelogInner
           loadingMessage={loadingMessage}
-          retryLabel={retryLabel}
           versionsLabel={versionsLabel}
         />
       )}

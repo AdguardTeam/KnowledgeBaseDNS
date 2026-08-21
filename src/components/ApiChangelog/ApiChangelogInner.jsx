@@ -12,8 +12,8 @@ import {useScrollSpy} from './useScrollSpy';
 // Fallback link where the /api/ rewrite is absent (e.g. the preview domain).
 const SOURCE_URL = 'https://adguard-dns.io/api/CHANGELOG.md';
 
-function ApiChangelogInner({loadingMessage, retryLabel, versionsLabel}) {
-  const {state, retry} = useChangelogFetch();
+function ApiChangelogInner({loadingMessage, versionsLabel}) {
+  const {state} = useChangelogFetch();
   // Sidebar entries from the rendered markdown, so they can't drift from the anchors.
   const versions = useMemo(() => parseVersions(state.markdown), [state.markdown]);
   // Root for locating version headings.
@@ -52,9 +52,6 @@ function ApiChangelogInner({loadingMessage, retryLabel, versionsLabel}) {
             {'Failed to load the changelog. You can view the original at {link}.'}
           </Translate>
         </p>
-        <button type="button" className="button button--primary" onClick={retry}>
-          {retryLabel}
-        </button>
       </div>
     );
   }
