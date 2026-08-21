@@ -62,6 +62,13 @@ export function useScrollSpy(contentRef, versions) {
       });
     };
 
+    // Deep links: the browser's hash restoration ran while only the loading
+    // placeholder existed, so restore the target once the headings are mounted.
+    const hashId = window.location.hash.slice(1);
+    if (hashId) {
+      contentRef.current?.querySelector(`#${hashId}`)?.scrollIntoView();
+    }
+
     setActiveId(computeActive(headings));
     window.addEventListener('scroll', onScroll, {passive: true});
     window.addEventListener('resize', onScroll);

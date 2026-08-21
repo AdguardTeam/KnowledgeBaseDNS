@@ -12,12 +12,26 @@ const versionHeading = ({children}) => {
   return <h2 id={slugify(text)}>{children}</h2>;
 };
 
+// Language from a `language-*` class, or null for plain/inline code.
+const getCodeLanguage = (className) => /language-(\w+)/.exec(className || '')?.[1] ?? null;
+
 const markdownCode = ({className, children}) => {
-  const language = /language-(\w+)/.exec(className || '')?.[1];
+  const language = getCodeLanguage(className);
   if (!language || !Prism.languages[language]) {
     return <code className={className}>{children}</code>;
   }
   return <CodeBlock language={language}>{String(children).trimEnd()}</CodeBlock>;
 };
 
-export const markdownComponents = {h2: versionHeading, code: markdownCode};
+// CodeBlock renders its own <pre>; drop ReactMarkdown's wrapper when the code
+// child (type `markdownCode`) renders a CodeBlock.
+const markdownPre = ({children}) => {
+  const child = React.Children.only(children);
+  if (child.type !== markdownCode) {
+    return <pre>{children}</pre>;
+  }
+  const language = getCodeLanguage(child.props.className);
+  return language && Prism.languages[language] ? children : <pre>{children}</pre>;
+};
+
+export const markdownComponents = {h2: versionHeading, code: markdownCode, pre: markdownPre};
