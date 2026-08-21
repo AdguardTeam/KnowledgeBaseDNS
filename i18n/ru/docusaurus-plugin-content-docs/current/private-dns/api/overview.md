@@ -264,7 +264,7 @@ You can use different tools to view the list of available API methods. For insta
 
 ### История версий
 
-The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.mdx).
 
 ## Обратная связь
 
