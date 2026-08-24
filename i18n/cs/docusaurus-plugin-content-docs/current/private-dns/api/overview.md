@@ -264,7 +264,7 @@ K zobrazení seznamu dostupných metod API můžete použít různé nástroje. 
 
 ### Seznam změn
 
-Kompletní seznam změn AdGuard DNS API je k dispozici na [této stránce](private-dns/api/changelog.md).
+Kompletní seznam změn AdGuard DNS API je k dispozici na [této stránce](private-dns/api/changelog.mdx).
 
 ## Zpětná vazba
 
