@@ -264,7 +264,7 @@ Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metod
 
 ### Ændringslog
 
-Den komplette AdGuard DNS API-ændringslog er tilgængelig på [denne side](private-dns/api/changelog.md).
+Den komplette AdGuard DNS API-ændringslog er tilgængelig på [denne side](private-dns/api/changelog.mdx).
 
 ## Feedback
 
