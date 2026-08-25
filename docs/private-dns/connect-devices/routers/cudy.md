@@ -25,7 +25,7 @@ sidebar_position: 12
 
 ![App](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy1.png)
 
-1. Select Wi-Fi Device.
+1. Select *Wi-Fi Device*.
 
 ![Wi-Fi select](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy2.png)
 
