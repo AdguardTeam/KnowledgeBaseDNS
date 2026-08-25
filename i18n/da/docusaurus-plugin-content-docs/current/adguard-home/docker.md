@@ -120,7 +120,7 @@ docker pull adguard/adguardhome:edge
 
 ## Additional configuration {#configuration}
 
-Upon the first run, a file with the default values named `AdGuardHome.yaml` is created. This file can be modified while the AdGuard Home container is not running. Otherwise, any changes to the file will be lost because the running program will overwrite them.
+Upon the first run, a file with the default values named `AdGuardHome.yaml` is created. This file can be modified while the AdGuard Home container is not running. Ellers vil evt. ændringer i filen gå tabt, da det kørende program vil overskrive dem.
 
 The settings are stored in the [YAML] format. The documentation describing all configurable parameters and their values is available on [this page][conf].
 
