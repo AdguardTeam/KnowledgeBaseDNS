@@ -21,7 +21,7 @@ sidebar_position: 12
 
 [Download for iOS](https://apps.apple.com/sg/app/cudy/id6464377818)
 
-1. Open the Cudy App on your phone. Tick I agree with the Privacy Policy and the Terms of Sale and select Local Management.
+1. Open the Cudy App on your phone. Tick *I agree with the Privacy Policy and the Terms of Sale* and select *Local Management*.
 
 ![App](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy1.png)
 
