@@ -17,7 +17,7 @@ sidebar_position: 12
 
 1. Download the Cudy app on your phone.
 
-[Download for Android](https://play.google.com/store/apps/details?id=com.cudy.cloudapp&hl=en)
+[Download for Android](https://play.google.com/store/apps/details?id=com.cudy.cloudapp)
 
 [Download for iOS](https://apps.apple.com/sg/app/cudy/id6464377818)
 
