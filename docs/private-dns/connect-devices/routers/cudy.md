@@ -13,7 +13,7 @@ sidebar_position: 12
 
 ## Use the Cudy app
 
-1. Connect your phone to the router's Wi-Fi network.
+1. Connect your phone to the router’s Wi-Fi network.
 
 1. Download the Cudy app on your phone.
 
