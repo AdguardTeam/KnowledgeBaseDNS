@@ -95,7 +95,7 @@ AdGuard DNS requires Cudy App V1.5.5+
 
 ![Username and password](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy14.png)
 
-1. Set a device name, select *Default* as the DNS Server, and click *Save & Apply*.
+1. Set *Device Name*, select *Default* in *DNS Server*, and click *Save & Apply*.
 
 ![Device name](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy15.png)
 
