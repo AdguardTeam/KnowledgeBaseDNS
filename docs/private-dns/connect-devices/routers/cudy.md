@@ -31,7 +31,7 @@ sidebar_position: 12
 
 :::tip
 
-If you have managed other type of devices on Cudy App before, you may need to tap the menu icon (☰) on the left of Dashboard to switch to Wi-Fi Device.
+If you have managed other types of devices on the Cudy App before, you may need to tap the menu icon (☰) on the left of *Dashboard* to switch to *Wi-Fi Device*.
 
 :::
 
