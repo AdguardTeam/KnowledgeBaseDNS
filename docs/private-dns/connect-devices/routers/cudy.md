@@ -81,7 +81,7 @@ AdGuard DNS requires Cudy App V1.5.5+
 
 1. Log in your router's web interface at cudy.net or 192.168.10.1.
 
-1. Go to *Advanced Settings* > *Security* > *Ad Shield*.
+1. Go to *Advanced Settings* → *Security* → *Ad Shield*.
 
 ![Advanced settings](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy12.png)
 
