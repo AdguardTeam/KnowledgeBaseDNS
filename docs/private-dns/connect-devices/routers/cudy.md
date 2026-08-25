@@ -87,7 +87,7 @@ AdGuard DNS requires Cudy App V1.5.5+
 
 1. Enable *Ad Shield* and select AdGuard DNS as the service provider.
 
-1. Tick I agree to the *AdGuard DNS privacy policy* and click *Save & Apply*.
+1. Tick *I agree to the AdGuard DNS Privacy policy* and click *Save & Apply*.
 
 ![Privacy policy](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy13.png)
 
