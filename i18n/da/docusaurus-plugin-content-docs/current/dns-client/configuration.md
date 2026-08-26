@@ -12,11 +12,11 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `dns` {#dns}
 
-`dns`-objektet opsætter adfærden for DNS-serveren. Den har flg. egenskaber:
+`dns`-objektet opsætter adfærden for DNS-serveren. It has the following properties:
 
 ### `cache` {#dns-cache}
 
-`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. Den har flg. egenskaber:
+`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. It has the following properties:
 
 - 'enabled': Hvorvidt DNS-resultaterne skal cachelagres eller ej.
 
@@ -32,7 +32,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `server` {#dns-server}
 
-`server`-objektet opsætter håndteringen af indgående forespørgsler. Den har flg. egenskaber:
+`server`-objektet opsætter håndteringen af indgående forespørgsler. It has the following properties:
 
 - `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
 
@@ -42,7 +42,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   :::
 
-  Den har flg. egenskaber:
+  It has the following properties:
 
   - `enabled`: Om tilknytnings-genforsøg er aktiveret eller ej.
 
@@ -80,7 +80,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `bootstrap` {#dns-bootstrap}
 
-`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. Den har flg. egenskaber:
+`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. It has the following properties:
 
 - `servers`: Listen over servere til at opløse værtsnavnene på upstream-servere.
 
@@ -98,9 +98,9 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `upstream` {#dns-upstream}
 
-'upstream'-objektet opsætter den faktiske forespørgselsopløsning. Den har flg. egenskaber:
+'upstream'-objektet opsætter den faktiske forespørgselsopløsning. It has the following properties:
 
-- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Den har flg. egenskaber:
+- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. It has the following properties:
 
   - `adresse`: Adressen på upstream-serveren. Er `autodevice.enabled` sat til `true` for denne gruppe, skal adressen være en URL med et af skemaerne `https`, `tls` eller `quic`.
 
@@ -114,7 +114,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
     :::
 
-    Den har flg. egenskaber:
+    It has the following properties:
 
     - `enabled`: Definerer om alle klienter i den aktuelle gruppe kan forbindes automatisk.
 
@@ -177,7 +177,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `fallback` {#dns-fallback}
 
-`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. Den har flg. egenskaber:
+`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. It has the following properties:
 
 - `servers`: Listen over servere til brug ved manglende svar fra den aktuelle [upstream](#dns-upstream).
 
@@ -198,11 +198,11 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `debug` {#debug}
 
-`debug`-objektet opsætter fejlfindingsfunktionerne. Den har flg. egenskaber:
+`debug`-objektet opsætter fejlfindingsfunktionerne. It has the following properties:
 
 ### `pprof` {#debug-pprof}
 
-`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. Den har flg. egenskaber:
+`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. It has the following properties:
 
 - `port`: Porten, der skal lyttes til efter fejlfindings HTTP-forespørgsler på localhost.
 
@@ -216,7 +216,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `log` {#log}
 
-"log"-objektet opsætter logningen. Den har flg. egenskaber:
+"log"-objektet opsætter logningen. It has the following properties:
 
 - `output`: Det output, hvortil logger skrives.
 

@@ -386,21 +386,21 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `refuse_any`: Another DDoS protection mechanism. Requests of type `ANY` are rarely needed, so refusing to serve them mitigates against attackers trying to use your DNS as a reflection. Safe to disable if DNS server is not available from internet.
 
-- `upstream_dns`: List of upstream DNS servers.
+- `upstream_dns`: lijst van upstream DNS-servers.  Opmerkingen (regels die beginnen met `#`) en lege regels worden genegeerd.
 
 - `upstream_dns_file`: Path to a file with the list of upstream DNS servers. If it is configured, the value of `upstream_dns` is ignored.
 
-- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.
+- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.  Opmerkingen (regels die beginnen met `#`) en lege regels worden genegeerd.
 
 - `bootstrap_prefer_ipv6`: If `true`, instructs the bootstrapper to prefer IPv6 addresses to IPv4 ones when resolving DoH, DoQ, and DoT hostnames.
 
-- `fallback_dns`: List of fallback DNS servers used when upstream DNS servers are not responding.
+- `fallback_dns`: List of fallback DNS servers used when upstream DNS servers are not responding.  Opmerkingen (regels die beginnen met `#`) en lege regels worden genegeerd.
 
 - `private_networks`: List of networks used to check if an IP address belongs to a locally-served address registry. If empty, AdGuard Home will use the set defined by [RFC 6303][private-ip].
 
 - `use_private_ptr_resolvers`: If AdGuard Home should use private reverse DNS servers.
 
-- `local_ptr_upstreams`: List of upstream DNS servers to resolve PTR requests for addresses inside locally-served networks. If empty, AdGuard Home will automatically try to get local resolvers from the OS. Domain-specific upstreams are validated for being a valid ARPA domain pointing to a locally-served network.
+- `local_ptr_upstreams`: List of upstream DNS servers to resolve PTR requests for addresses inside locally-served networks. If empty, AdGuard Home will automatically try to get local resolvers from the OS. Domain-specific upstreams are validated for being a valid ARPA domain pointing to a locally-served network.  Opmerkingen (regels die beginnen met `#`) en lege regels worden genegeerd.
 
 - `upstream_mode`: The mode describes the logic through which the upstreams will be used. Possible values:
 
@@ -422,7 +422,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
   - `enabled`: Specifies, if AdGuard Home should track simultaneous identical requests and perform a single lookup for them. By default, the value is `true`.
 
-- `edns_client_subnet`: Controls EDNS Client Subnet behavior. It has the following properties:
+- `edns_client_subnet`: Controls EDNS Client Subnet behavior. Het heeft de volgende eigenschappen:
 
   - `enabled`: Add the ECS option to upstream requests.
 
@@ -436,7 +436,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
 - `disallowed_clients`: The list of CIDRs, IP addresses, or ClientIDs of disallowed DNS clients. If this list has entries, AdGuard Home will drop requests from these clients. Note that this field is ignored if there are entries in `allowed_clients`.
 
-  See also the note in the [Docker wiki page][docker-conf] about using this property within a container.
+  Zie ook de opmerking op de [Docker-wikipagina][docker-conf] over het gebruik van deze eigenschap binnen een container.
 
 - `blocked_hosts`: The list of domain names, wildcards or filtering rules to match requests that shouldn't be processed at all. These are ignored by statistics and query log as well.
 
@@ -485,7 +485,7 @@ The `dns` object configures the DNS server. It has the following properties:
 
   This setting is supported on Linux OSs only. This feature is similar to `--ipset` in dnsmasq.
 
-- `ipset_file`: Same as `ipset`, but the rules are read from a file. If this property is set, property `ipset` is ignored. Comments (lines starting with `#`) are supported.
+- `ipset_file`: Same as `ipset`, but the rules are read from a file. If this property is set, property `ipset` is ignored. Comments (lines starting with `#`) and empty lines are ignored.
 
 - `upstream_timeout`: The timeout for querying upstream servers. Zero value will be rewritten with default one which is `10s`.
 
@@ -670,7 +670,7 @@ Built-in DHCP server configuration. See also the [DHCP][DHCPv4] article. It has 
 
 - `interface_name`: Network interface name (`eth0`, `en0`, and so on).
 
-- `dhcpv4`: DHCPv4 settings. It has the following properties:
+- `dhcpv4`: DHCPv4 settings. Het heeft de volgende eigenschappen:
 
   - `gateway_ip`: Gateway IP address.
 
@@ -905,5 +905,6 @@ For a list of supported profiles go to `http://localhost:6060/debug/pprof/`.
 Alternatively, you may want to simply download the file and analyze it later:
 
 ```sh
-wget http://localhost:6060/debug/pprof/heap go tool --http=':8080' heap
+wget http://localhost:6060/debug/pprof/heap
+go tool --http=':8080' heap
 ```

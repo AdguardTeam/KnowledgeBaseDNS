@@ -94,7 +94,7 @@ Any option begins with a code written as a decimal integer. See [RFC 2132][rfc-2
 
 - `text`: Accepts an arbitrary UTF-8 encoded string and has a length of encoded text.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
     'options':
@@ -103,7 +103,7 @@ Any option begins with a code written as a decimal integer. See [RFC 2132][rfc-2
 
 - `u8`: A decimal number in the range of 0 to 255 that takes _1_ octet, just like an unsigned 8-bit integer.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
     'options':
@@ -112,7 +112,7 @@ Any option begins with a code written as a decimal integer. See [RFC 2132][rfc-2
 
 - `u16`: A decimal number in the range of 0 to 65535 that takes _2_ octets, just like an unsigned 16-bit integer.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
     'options':
