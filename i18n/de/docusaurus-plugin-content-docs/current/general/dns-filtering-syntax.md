@@ -545,7 +545,7 @@ Der `respgeo`-Modifikator kann auch verwendet werden, um Regeln basierend auf de
 
 ASN steht für **Autonomous System Number**. Es identifiziert ein autonomes System — ein Netzwerk, das von einem ISP, Hosting-Anbieter, Cloud-Anbieter, Unternehmen oder einer anderen Organisation betrieben wird.
 
-Dieser Modifikator überprüft die <strong x-id="1">Ziel-ASN</strong> — die ASN, die der IP-Adresse zugeordnet ist, zu der die Domain auflöst. Er überprüft **nicht** die ASN des Benutzers, Geräts oder DNS-Clients.
+Dieser Modifikator überprüft die **Ziel-ASN** — die ASN, die der IP-Adresse zugeordnet ist, zu der die Domain auflöst. Er überprüft **nicht** die ASN des Benutzers, Geräts oder DNS-Clients.
 
 Der Wert des Modifikators muss eine ASN im Format `AS<number>` sein, zum Beispiel `AS15169`.
 
