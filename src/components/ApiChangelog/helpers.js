@@ -27,9 +27,10 @@ export const slugify = (text) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 
-// Sidebar entries from the rendered markdown, so they can't drift from the anchors.
+// Version headings; ids are slugified from the exact heading text so they match
+// the rendered <h2> ids.
 export const parseVersions = (markdown) =>
-  [...markdown.matchAll(/^##\s+(v\d[^\r\n]*)$/gm)].map((match) => ({
+  [...markdown.matchAll(/^##\s+(\[?v\d[^\r\n]*)\s*$/gm)].map((match) => ({
     id: slugify(match[1]),
     title: match[1],
   }));
