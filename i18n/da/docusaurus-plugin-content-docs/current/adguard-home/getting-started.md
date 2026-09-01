@@ -21,7 +21,7 @@ For at installere AdGuard Home som en tjeneste, udpak arkivet, gå til mappen 'A
 
 - Brugere af **macOS 10.15 Catalina** og senere bør placere AdGuard Home-arbejdsmappen i mappen `/Applications`.
 
-- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+- For brugere af **Raspberry Pi** findes en separat [guide][raspberry-pi-guide].
 
 [raspberry-pi-guide]: /adguard-home/raspberry-pi
 
