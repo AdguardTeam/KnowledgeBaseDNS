@@ -81,80 +81,80 @@ AdGuard Home er dybest set en DNS-proxy, der sender DNS-forespørgsler til upstr
 
 - `tcp://dns-unfiltered.adguard.com`: Almindelig DNS (over TCP, værtsnavn).
 
-- `tls://dns-unfiltered.adguard.com`: Encrypted [DNS-over-TLS].
+- `tls://dns-unfiltered.adguard.com`: Krypteret [DNS-over-TLS].
 
-- `https://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS].
+- `https://dns-unfiltered.adguard.com/dns-query`: Krypteret [DNS-over-HTTPS].
 
-- `h3://dns-unfiltered.adguard.com/dns-query`: Encrypted [DNS-over-HTTPS] with forced [HTTP/3] and no fallback to HTTP/2 and below.
+- `h3://dns-unfiltered.adguard.com/dns-query`: Krypteret [DNS-over-HTTPS] med tvungen [HTTP/3] og ingen HTTP/2-reserve eller lavere.
 
-- `quic://dns-unfiltered.adguard.com`: Encrypted [DNS-over-QUIC].
+- `quic://dns-unfiltered.adguard.com`: Krypteret [DNS-over-QUIC].
 
-- `sdns://...`: [DNS Stamps] for [DNSCrypt] or [DNS-over-HTTPS] resolvers.
+- `sdns://...`: \[DNS-stempler] til [DNSCrypt]- eller [DNS-over-HTTPS]-opløsere.
 
-- `[/example.local/]94.140.14.140`: DNS upstream for specific domains, see below.
+- `[/example.local/]94.140.14.140`: DNS-upstream for specifikke domæner, se nedenfor.
 
-- `[/*.example.local/]94.140.14.140`: DNS upstream for specific subdomains, see below.
+- `[/*.example.local/]94.140.14.140`: DNS-upstream for specifikke underdomains, se nedenfor.
 
-### Specifying upstreams for domains {#upstreams-for-domains}
+### Angivelse af upstreams for domæner {#upstreams-for-domains}
 
-You can specify upstreams that will be used for specific domains using the dnsmasq-like syntax (see the documentation for the option `--server` [here][dnsmasq-man]). This feature is intended for private nameservers which deal with intranet domains.
+Der kan angives upstreams til brug for specifikke domæner vha. den dnsmasq-lignende syntaks (se dokumentationen for indstillingen `--server` [her][dnsmasq-man]). Denne funktion er beregnet til private navneservere, som håndterer intranetdomæner.
 
 Syntaksen er:
 
 ```none
-[/domain1/domain2/domainN/]<upstreamString>
+[/domæne1/domæne2/domæneN/]<upstreamString>
 ```
 
-Where `upstreamString` is one or more upstreams separated by space (e.g. `1.1.1.1 2.2.2.2`).
+Hvor `upstreamString` er en eller flere upstreams adskilt af mellemrum (f.eks. `1.1.1.1 2.2.2.2`).
 
-If one or more domains are specified, that upstream (here `upstreamString`) is used only for those domains. Usually, it is used for private nameservers. For instance, if you have a nameserver on your network which deals with `xxx.internal.local` at address `192.168.0.1` then you can specify `[/internal.local/]192.168.0.1`, and AdGuard Home will send all `*.internal.local` queries to that nameserver. Everything else will be sent to the default upstreams, which should be specified as well.
+Er et eller flere domæner angivet, benyttes denne upstream (her `upstreamString`) kun til disse domæner. Normalt bruges den til private navneservere. Findes f.eks. en navneserver på netværket, der håndterer `xxx.internal.local` på adressen `192.168.0.1`, så kan der angives `[/internal.local/]192.168.0.1`, og AdGuard Home vil sende alle `*.internal.local`-forespørgsler til den navneserver. Alt andet vil blive sendt til standard-upstreams, som også skal angives.
 
-An empty domain specification, `//` has the special meaning of “unqualified names only”, i.e. names without any dots in them, like `myhost` or `router`. Those will only be used for resolving requests for unqualified domain names, but not their subdomains. So, a configuration like this:
+En tom domænespecifikation, `//` har den særlige betydning "kun ukvalificerede navne", dvs. navne uden nogen punktummer i dem, såsom `myhost` eller `router`. Disse vil kun blive brugt til at opløse forespørgsler for ukvalificerede domænenavne, men ikke deres underdomæner. Så en opsætning som denne:
 
 ```none
 5.6.7.8:53
 [//]4.3.2.1:53 [/com/]1.2.3.4:53
 ```
 
-sends requests for `com` (and its subdomains) to `1.2.3.4:53`, requests for other top-level domains to `4.3.2.1:53`, and all other requests to `5.6.7.8:53`.
+sender forespørgsler for `com` (og dets underdomæner) til `1.2.3.4:53`, forespørgsler for andre topdomæner til `4.3.2.1:53` og alle øvrige forespørgsler til `5.6.7.8:53`.
 
-More specific domains take precedence over less specific domains. So, a configuration like this:
+Mere specifikke domæner har forrang over mindre specifikke domæner. Så en opsætning som denne:
 
 ```none
 [/host.com/]1.2.3.4 [/www.host.com/]2.3.4.5
 ```
 
-sends queries for `*.host.com` to `1.2.3.4`, except for queries for `*.www.host.com`, which are sent to `2.3.4.5`.
+sender forespørgsler for `*.host.com` til `1.2.3.4`, undtagen forespørgsler for `*.www.host.com`, som sendes til `2.3.4.5`.
 
-The special server address `#` means “use the default servers”. So, a configuration like this:
+Den særlige serveradresse `#` betyder "brug standardserverne". Så en opsætning som denne:
 
 ```none
 6.7.8.9
 [/host.com/]1.2.3.4 [/www.host.com/]#
 ```
 
-sends queries for `*.host.com` to `1.2.3.4` except for queries for `*.www.host.com`, which are sent to `6.7.8.9`, which is the default upstream.
+sender forespørgsler for `*.host.com` til `1.2.3.4`, undtagen forespørgsler for `*.www.host.com`, som sendes til `6.7.8.9`, som er standard-upstream.
 
-Queries for the `DS` query type are following the assumption based on specification for records’ presence given in [RFC 4035, section 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
+Forespørgsler for forespørgselstypen `DS` følger antagelsen baseret på specifikationen for posters tilstedeværelse angivet i [RFC 4035, afsnit 2.4](https://datatracker.ietf.org/doc/html/rfc4035#section-2.4):
 
-> A DS RRset SHOULD be present at a delegation point when the child zone is signed. \[…\] All DS RRsets in a zone MUST be signed, and DS RRsets MUST NOT appear at a zone’s apex.
+> Et DS RRset BØR være til stede ved et delegeringspunkt, når underzonen signeres. \[…\] Alle DS RRsets i en zone SKAL signeres, og DS RRsets MÅ IKKE vises ved et roddomæne.
 
-For example, the `DS` query for `domain.example.com` will be sent to the upstream specified for `example.com`, `com`, or the default one, even if there is a more specific upstream like `*.example.com`. Note that for two-label `DS` requests, the upstream specified for unqualified names, or the more specific one will be used, if any.
+En `DS`-forespørgsel for `domain.example.com` vil f.eks. blive sendt til den upstream, der er angivet for `example.com`, `com` eller standard-upstreamen, selvom der er en mere specifik upstream, såsom `*.example.com`. Bemærk, at for `DS`-forespørgsler med to navneelementer vil den upstream, der er angivet for ukvalificerede navne, eller den mere specifikke blive brugt, hvis nogen findes.
 
-Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.host.com/]1.2.3.4` will send queries for `*.host.com` to `1.2.3.4`, but `host.com` will be forwarded to default upstreams.
+Jokertegnet `*` har en særlig betydning for "ethvert underdomæne", så `--upstream=[/*.host.com/]1.2.3.4` vil sende forespørgsler for `*.host.com` til `1.2.3.4`, men `host.com` videresendes til standard upstreams.
 
-**Examples:**
+**Eksempler:**
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
     [/local/]192.168.0.1:53
     ```
 
-  sends queries for `*.local` domains to `192.168.0.1:53`. Other queries are sent to `8.8.8.8:53`.
+  sender forespørgsler for `*.local`-domæner til `192.168.0.1:53`. Øvrige forespørgsler sendes til `8.8.8.8:53`.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
@@ -162,9 +162,9 @@ Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.ho
     [/maps.host.com/]#
     ```
 
-  sends queries for `*.host.com` to `1.1.1.1:53` except for `*.maps.host.com` which are sent to `8.8.8.8:53` along with all other queries.
+  sender forespørgsler for `*.host.com` til `1.1.1.1:53`, undtagen `*.maps.host.com`, der sendes til `8.8.8.8:53` sammen med alle øvrige forespørgsler.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
@@ -172,89 +172,89 @@ Wildcard `*` has a special meaning of “any subdomain”, so `--upstream=[/*.ho
     [/*.host.com/]2.2.2.2:53
     ```
 
-  sends queries for `*.host.com` to `2.2.2.2:53` except for `host.com` queries, those are sent to `1.1.1.1:53`, but all other queries are sent to `8.8.8.8:53`.
+  sender forespørgsler for `*.host.com` til `2.2.2.2:53`, undtagen `host.com`-forespørgsler, som sendes til `1.1.1.1:53`, men alle øvrige forespørgsler sendes til `8.8.8.8:53`.
 
-- A configuration like:
+- En opsætning såsom:
 
     ```none
     8.8.8.8:53
     [/host.com/]1.1.1.1:53 2.2.2.2:53
     ```
 
-  sends queries for `*.host.com` to `1.1.1.1:53` and `2.2.2.2:53`, but all other queries are sent to `8.8.8.8:53`.
+  sender forespørgsler for `*.host.com` til `1.1.1.1:53` og `2.2.2.2:53`, men alle andre forespørgsler sendes til `8.8.8.8:53`.
 
-### Loading upstreams from file {#upstreams-from-file}
+### Indlæser upstreams fra fil {#upstreams-from-file}
 
-Using specific upstreams for some domains is a common way to accelerate internet in China. For an example, see https://github.com/felixonmars/dnsmasq-china-list or any other of the many `dnsmasq` lists. These lists can be easily converted to a list for AdGuard Home:
+Brug af specifikke upstreams for visse domæner er en almindelig måde at accelerere internethastigheden på i Kina. For et eksempel, se https://github.com/felixonmars/dnsmasq-china-list eller en af de mange andre `dnsmasq`-lister. Disse lister kan nemt konverteres til en AdGuard Home-liste:
 
 ```none
-Before: server=/0-100.com/114.114.114.114
-After:  [/0-100.com/]114.114.114.114
+Før: server=/0-100.com/114.114.114.114
+Efter:  [/0-100.com/]114.114.114.114
 ```
 
-The problem with these lists is that they may be too large. In this case you may want to load them from a separate file instead of setting all upstreams in AdGuard Home settings. To do that, simply specify the path to a file with your list in the `upstream_dns_file` field of `AdGuardHome.yaml`.
+Problemet med disse lister er, at de kan være for store. I så tilfælde kan indlæsning af upstream-servere fra en separat fil være at foretrække frem for at angive dem alle i AdGuard Home-indstillingerne. For at gøre dette, angiv blot stien til filen med listen i feltet `upstream_dns_file` i `AdGuardHome.yaml`.
 
 :::warning
 
-The file, just like the input in the web interface, currently doesn't accept internationalized domain names (e.g. `пример.рф` or `例子.中国`). As a workaround, convert them to Punycode (e.g. `xn--e1afmkfd.xn--p1ai` or `xn--fsqu00a.xn--fiqs8s` respectively). See [issue 2915][2915].
+Ligesom input i webgrænsefladen, accepterer filen p.t. ikke internationaliserede domænenavne (f.eks. `пример.рф` eller `例子.中国`). Som en midlertidig løsning kan de konverteres til Punycode (f.eks. henholdsvis `xn--e1afmkfd.xn--p1ai` eller `xn--fsqu00a.xn--fiqs8s`). Se [problematik 2915][2915].
 
 :::
 
-### Specifying upstreams for reverse DNS {#upstreams-for-rdns}
+### Angivelse af upstreams til omvendt DNS {#upstreams-for-rdns}
 
-Using the domain-specific upstream notation, you can specify dedicated upstream DNS servers for reverse DNS (rDNS) requests. If you want **all** your `PTR` queries with ARPA domain to be redirected to `192.168.8.8`:
+Ved brug af den domænespecifikke upstream-notation kan der angives dedikerede upstream-DNS-servere til omvendt DNS-forespørgsler (rDNS). Ønskes **alle** `PTR`-forespørgslerne med ARPA-domæne omdirigeret til `192.168.8.8`:
 
-1. Enter the following into the _Upstream DNS servers_ field on the _Settings_ → _DNS settings_ page:
+1. Angiv flg. i feltet _Upstream DNS-servere_ på siden _Indstillinger_ → _DNS-indstillinger_:
 
     ```none
     [/in-addr.arpa/]192.168.8.8
     [/ip6.arpa/]192.168.8.8
     ```
 
-2. Enter the following into the _Private reverse DNS servers_ field on the
-   same page below the previous field:
+2. Angiv flg. i feltet _Private omvendt DNS-servere_ på den
+   samme side under det foregående felt:
 
     ```none
     192.168.8.8
     ```
 
-   There is no need to use the domain-specific notation here, unless you want to redirect requests for different private ranges to different upstream servers.
+   Brug af den domænespecifikke notation er ikke nødvendig her, medmindre forespørgsler for forskellige private intervaller ønskes omdirigeret til forskellige upstream-servere.
 
 :::note
 
-All upstreams for private ranges **must** go to the _Private reverse DNS servers_ field **and not** the main _Upstream DNS servers_ field. Entering something like `[/192.in-addr.arpa/]192.168.8.8` into the main field will have no effect.
+Alle upstreams for private intervaller **skal** gå til feltet _Private omvendt DNS-servere_ **og ikke** til det primære felt _Upstream DNS-servere_. Angivelse af noget i stil med `[/192.in-addr.arpa/]192.168.8.8` i hovedfeltet vil være uden effekt.
 
 :::
 
-#### Private addresses {#rdns-private}
+#### Private adresser {#rdns-private}
 
-All the addresses from [private IP ranges][private-ip] are only resolved via appropriate local resolvers to avoid leaks of clients’ information. By default, AdGuard Home tries to get the addresses of the default resolvers from the OS. You can set custom upstreams for it in the _Private reverse DNS servers_ field in the _Upstream DNS servers_ section or via the `local_ptr_upstreams` field in the configuration file. Private IP ranges may be customized through the `private_networks` field. It’s empty by default which makes AdGuard Home use the aforementioned default set of networks.
+Alle adresser fra [private IP-områder][private-ip] opløses kun via relevante lokale opløsere for at undgå lækage af klienters oplysninger. Som standard forsøger AdGuard Home at hente adresserne på standardopløserne fra OS'et. Der kan angives tilpassede upstream-servere for den i feltet _Private omvendt DNS-servere_ i afsnittet _Upstream DNS-servere_ eller via feltet `local_ptr_upstreams` i opsætningsfilen. Private IP-områder kan tilpasses via feltet `private_networks`. Det er som standard tomt, hvilket får AdGuard Home til at bruge det førnævnte standardsæt af netværk.
 
-Usage of private reverse DNS upstream servers can be disabled via the _Use private reverse DNS resolvers_ checkbox in the _Upstream DNS servers_ section or via the `use_private_ptr_resolvers` field in the configuration file. If it is disabled, the unknown addresses from locally served networks won't be resolved at all, and clients performing these queries will receive `NXDOMAIN` responses.
+Brug af private omvendt DNS-upstream-servere kan deaktiveres via afkrydsningsfeltet _Brug private omvendt DNS-opløsere_ i afsnittet _Upstream DNS-servere_ eller via feltet `use_private_ptr_resolvers` i opsætningsfilen. Er det deaktiveret, vil de ukendte adresser fra lokalt betjente netværk slet ikke blive opløst, og klienter, som foretager disse forespørgsler, vil modtage `NXDOMAIN`-svar.
 
-`SOA` and `NS` requests are also checked for implying private rDNS and are resolved according to the same rules as `PTR`.
+`SOA`- og `NS`-forespørgsler tjekkes også for, om de indebærer privat rDNS og opløses efter de samme regler som `PTR`.
 
-#### Public addresses {#rdns-public}
+#### Offentlige adresser {#rdns-public}
 
-If you want AdGuard Home to use another DNS server for a specific IP address range, you can do it using the same syntax as for general upstream servers. For example, if you add this to your _Upstream DNS servers_ field:
+Er ønsket, at AdGuard Home skal bruge en anden DNS-server til et specifikt IP-adresseområde, kan denne skiftes via den samme syntaks som for generelle upstream-servere. Føjes dette f.eks. til feltet _Upstream DNS servers_:
 
 ```none
 [/200.in-addr.arpa/]192.168.7.7
 ```
 
-then AdGuard Home will use the `192.168.7.7` DNS server for all rDNS requests to resolve clients’ IP addresses from the `200.0.0.0/8` network.
+så vil AdGuard Home bruge DNS-serveren `192.168.7.7` til alle rDNS-forespørgsler for at opløse klienters IP-adresser fra netværket `200.0.0.0/8`.
 
-Note that if you want to use that address for `PTR` queries for IP addresses in a locally served network range, for example `192.168.0.0/16`, you should add this to the _Private reverse DNS servers_ field:
+Bemærk, at såfremt adressen ønskes brugt til `PTR`-forespørgsler for IP-adresser i et lokalt betjent netværksområde, f.eks. `192.168.0.0/16`, så bør adressen føjes til feltet _Private omvendt DNS-servere_:
 
 ```none
 [/168.192.in-addr.arpa/]192.168.7.7
 ```
 
-#### Client lookups {#rdns-clients}
+#### Klientopslag {#rdns-clients}
 
-AdGuard Home automatically gets the names of connected devices using reverse DNS lookup (rDNS). It sends `PTR` requests with the IP addresses of clients to appropriate DNS servers and uses the responses to enrich client information with human-friendly names.
+AdGuard Home henter automatisk navnene på tilsluttede enheder via omvendt DNS-opslag (rDNS). Den sender `PTR`-forespørgsler med klienters IP-adresser til relevante DNS-servere og bruger svarene til at berige klientoplysninger med menneskeligt læsbare navne.
 
-This feature can be enabled and disabled with _Enable clients’ hostname resolution_ setting in the _Upstream DNS servers_ section or via the `clients.runtime_sources.rdns` field in the configuration file.
+Denne funktion kan aktiveres og deaktiveres med indstillingen _Aktivé opløsning af klienters værtsnavn_ i afsnittet _Upstream-DNS-servere_ eller via feltet `clients.runtime_sources.rdns` i opsætningsfilen.
 
 [2915]: https://github.com/AdguardTeam/AdGuardHome/issues/2915
 [DNS Stamps]: https://dnscrypt.info/stamps/
@@ -266,25 +266,25 @@ This feature can be enabled and disabled with _Enable clients’ hostname resolu
 [dnsmasq-man]: http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html
 [private-ip]: https://tools.ietf.org/html/rfc6303
 
-## Configuration file {#configuration-file}
+## Opsætningsfil {#configuration-file}
 
-Upon the first execution, a file named `AdGuardHome.yaml` will be created, with default values written in it. You can modify the file while your AdGuard Home service is not running. Otherwise, any changes to the file will be lost because the running program will overwrite them.
+Ved første eksekvering oprettes en fil med navnet `AdGuardHome.yaml` indeholdende standardværdier. Filen kan redigeres, mens AdGuard Home-tjeneste ikke kører. Ellers vil evt. ændringer i filen gå tabt, da det kørende program vil overskrive dem.
 
-Settings are stored in [YAML][yaml] format, possible parameters that you can configure are listed below.
+Indstillinger gemmes i [YAML][yaml]-formatet. Mulige parametre, som kan opsættes, er listet nedenfor.
 
 [yaml]: https://yaml.org/
 
 ### `http` {#http}
 
-The `http` object configures Web interface.
+Objektet `http` opsætter webgrænsefladen.
 
-- `address`: Web interface IP address with port to listen on.
+- `address`: IP-adresse for webgrænsefladen med port, der skal lyttes på.
 
-- `session_ttl`: Web session TTL is a time duration in a human-readable format. The web user will stay signed in for this amount of time.
+- `session_ttl`: Websession-TTL er en tidsvarighed i et menneskeligt læsbart format. Webbrugeren forbliver indlogget i dette tidsrum.
 
-- `doh`: DNS-over-HTTPS configuration. Den har flg. egenskaber:
+- `doh`: DNS-over-HTTPS-opsætning. Den har flg. egenskaber:
 
-  - `routes`: List of HTTP route patterns for DoH requests. Default routes are:
+  - `routes`: Liste over HTTP-rutemønstre for DoH-forespørgsler. Standardruter er:
 
     - `GET /dns-query`
 
@@ -294,45 +294,45 @@ The `http` object configures Web interface.
 
     - `POST /dns-query/{ClientID}`
 
-  - `insecure_enabled`: If `true`, allow DoH queries via unencrypted HTTP, for example to use with reverse proxies.
+  - `insecure_enabled`: Hvis `true`, tillad DoH-forespørgsler via ukrypteret HTTP, f.eks. til brug med omvendt proxier.
 
-- `pprof`: Profiling HTTP handler configuration. See section [Profiling with pprof](#pprof).
+- `pprof`: Profiling HTTP handler-opsætning. Se afsnittet [Profilering med pprof](#pprof).
 
-  - `enabled`: Whether pprof is enabled or not.
+  - `enabled`: Hvorvidt pprof er aktiveret eller ej.
 
-  - `port`: IP port to listen on.
+  - `port`: IP-port, der skal lyttes på.
 
 ### `users` {#users}
 
-Web user info. If set to an empty list (`[]`), authentication is disabled. Den har flg. egenskaber:
+Webbrugerinfo. Hvis sat til en tom liste (`[]`), deaktiveres godkendelse. Den har flg. egenskaber:
 
-- `name`: User name.
+- `name`: Brugernavn.
 
-- `password`: BCrypt-encrypted password.
+- `password`: BCrypt-krypteret adgangskode.
 
 ### `auth_attempts` {#auth_attempts}
 
-Maximum number of failed login attempts a user can do before being blocked. The entire blocking logic is disabled if it equals to 0.
+Maksimalt antal mislykkede loginforsøg en bruger kan foretage, før vedkommende blokeres. Hele blokeringslogikken deaktiveres, hvis den er lig med 0.
 
 ### `block_auth_min` {#block_auth_min}
 
-The duration of blocking period. The entire blocking logic is disabled if it equals to 0.
+Varigheden af blokeringsperioden. Hele blokeringslogikken deaktiveres, hvis den er lig med 0.
 
 ### `http_proxy` {#http_proxy}
 
-Proxy URL for HTTP client. Supports `http`, `https` and `socks5` schemes.
+Proxy-URL til HTTP-klient. Understøtter `http`, `https` og `socks5`-protokoller.
 
-**Example:** `http://user:password@server:port/`
+**Eksempel:** `http://user:password@server:port/`
 
 ### `language` {#language}
 
-UI language code.
+UI-sprogkode.
 
-**Example:** `en`
+**Eksempel:** `da`
 
 ### `theme` {#theme}
 
-The UI theme. Gyldige værdier:
+UI-temaet. Gyldige værdier:
 
 - `auto`
 
@@ -342,14 +342,14 @@ The UI theme. Gyldige værdier:
 
 ### `dns` {#dns}
 
-The `dns` object configures the DNS server. Den har flg. egenskaber:
+Objektet `dns` opsætter DNS-serveren. Den har flg. egenskaber:
 
-- `bind_hosts`: IP addresses on which to serve DNS queries. For each network interface there can only be one IP address of each IP version.
+- `bind_hosts`: IP-adresser, hvortil DNS-forespørgsler leveres. For hver netværksgrænseflade kan der kun være én IP-adresse for hver IP-version.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
-    # Different network interfaces.
+    # Forskellige netværksgrænseflader.
     'dns':
         'bind_hosts':
         - '127.0.0.1'
@@ -357,14 +357,14 @@ The `dns` object configures the DNS server. Den har flg. egenskaber:
     ```
 
     ```yaml
-    # Same network interface, different IP versions.
+    # Samme netværksgrænseflade, forskellige IP-versioner.
     'dns':
         'bind_hosts':
         - '127.0.0.1'
         - '::1'
     ```
 
-  If you want your server to accept requests on all interfaces and using both IP versions, for example if you run a public server, put **one** item with the unspecified IP of any version:
+  Ønskes det, at serveren skal acceptere forespørgsler på alle grænseflader og benytte begge IP-versioner, hvis f.eks. der køres en offentlig server, angiv da **ét** element med den uspecificerede IP for en given version:
 
     ```yaml
     'dns':
@@ -372,200 +372,200 @@ The `dns` object configures the DNS server. Den har flg. egenskaber:
         - '0.0.0.0'
     ```
 
-- `port`: DNS server port to listen on.
+- `port`: DNS-serverport, der skal lyttes på.
 
-- `anonymize_client_ip`: If true, anonymize clients’ IP addresses in logs and stats.
+- `anonymize_client_ip`: Hvis sand, anonymiseres klienters IP-adresser i logfiler og statistikker.
 
-- `ratelimit`: DDoS protection, specifies how many queries per second AdGuard Home should handle. Anything above that is silently dropped. To disable set to `0`, default is `20`. Safe to disable if DNS server is not available from internet.
+- `ratelimit`: DDoS-beskyttelse, angiver hvor mange forespørgsler pr. sekund AdGuard Home skal håndtere. Alt derover droppes ubemærket. For at deaktivere, sæt til `0`, standard er `20`. Sikker at deaktivere, hvis DNS-server er utilgængelig fra internet.
 
-- `ratelimit_subnet_len_ipv4`: Subnet length for IPv4 addresses used for rate limiting requests. Default is `24`.
+- `ratelimit_subnet_len_ipv4`: Undernetlængde for IPv4-adresser brugt til hastighedsbegrænsende forespørgsler. Standard er '24'.
 
-- `ratelimit_subnet_len_ipv6`: Subnet length for IPv6 addresses used for rate limiting requests. Default is `56`.
+- `ratelimit_subnet_len_ipv4`: Undernetlængde for IPv4-adresser brugt til hastighedsbegrænsende forespørgsler. Standard er `56`.
 
-- `ratelimit_whitelist`: If you want exclude some IP addresses from ratelimiting but keep ratelimiting on for others, put them here.
+- `ratelimit_whitelist`: Ønskes visse IP-adresser undtaget fra den aktive hastighedsbegrænsning, angiv disse her.
 
-- `refuse_any`: Another DDoS protection mechanism. Requests of type `ANY` are rarely needed, so refusing to serve them mitigates against attackers trying to use your DNS as a reflection. Safe to disable if DNS server is not available from internet.
+- `refuse_any`: En anden DDoS-beskyttelsesmekanisme. Forespørgsler af typen `ANY` er sjældent nødvendige, så det at afvise at leberre til dem mindsker risikoen for, at angribere forsøger at bruge en DNS som en reflektor. Sikker at deaktivere, hvis DNS-server er utilgængelig fra internet.
 
-- `upstream_dns`: List of upstream DNS servers.
+- `upstream_dns`: Liste over upstream-DNS-servere.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
-- `upstream_dns_file`: Path to a file with the list of upstream DNS servers. If it is configured, the value of `upstream_dns` is ignored.
+- `upstream_dns_file`: Sti til fil med listen over upstream-DNS-servere. Hvis opsat, ignoreres `upstream_dns`-værdien.
 
-- `bootstrap_dns`: List of DNS servers used for initial hostname resolution in case an upstream server name is a hostname.
+- `bootstrap_dns`: Liste over DNS-servere brugt til indledende værtsnavnsopløsning i tilfælde, hvor et upstream-servernavn er et værtsnavn.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
-- `bootstrap_prefer_ipv6`: If `true`, instructs the bootstrapper to prefer IPv6 addresses to IPv4 ones when resolving DoH, DoQ, and DoT hostnames.
+- `bootstrap_prefer_ipv6`: Hvis `true`, instruerer bootstrapperen om at foretrække IPv6-adresser frem for IPv4-adresser ved opløsning af DoH-, DoQ- og DoT-værtsnavne.
 
-- `fallback_dns`: List of fallback DNS servers used when upstream DNS servers are not responding.
+- `fallback_dns`: Liste over reserve-DNS-servere, som anvendes, når upstream-DNS-servere ikke svarer.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
-- `private_networks`: List of networks used to check if an IP address belongs to a locally-served address registry. If empty, AdGuard Home will use the set defined by [RFC 6303][private-ip].
+- `private_networks`: Liste over netværk brugt til at kontrollere, om en IP-adresse tilhører et lokalt betjent adresseregister. Hvis tomt, benytter AdGuard Home sættet defineret af [RFC 6303][private-ip].
 
-- `use_private_ptr_resolvers`: If AdGuard Home should use private reverse DNS servers.
+- `use_private_ptr_resolvers`: Hvorvidt AdGuard Home skal benytte private omvendt-DNS-servere.
 
-- `local_ptr_upstreams`: List of upstream DNS servers to resolve PTR requests for addresses inside locally-served networks. If empty, AdGuard Home will automatically try to get local resolvers from the OS. Domain-specific upstreams are validated for being a valid ARPA domain pointing to a locally-served network.
+- `local_ptr_upstreams`: Liste over upstream-DNS-servere til opløsning af PTR-forespørgsler for adresser indenfor lokalt betjente netværk. Hvis tomt, forsøger AdGuard Home automatisk at hente lokale opløsere fra OS'et. Domænespecifikke upstreams valideres for at være et gyldigt ARPA-domæne, der peger på et lokalt betjent netværk.  Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
-- `upstream_mode`: The mode describes the logic through which the upstreams will be used. Gyldige værdier:
+- `upstream_mode`: Tilstanden beskriver den logik, efter hvilken upstreams anvendes. Gyldige værdier:
 
-  - `load_balance`: Queries are sent to each upstream server one-by-one. AdGuard Home uses a weighted random algorithm to select servers with the lowest number of failed lookups and the lowest average lookup time.
+  - `load_balance`: Forespørgsler sendes til hver upstream-server én efter én. AdGuard Home anvender en vægtet randomiseringsalgoritme til at vælge servere med det laveste antal mislykkede opslag og den laveste gennemsnitlige opslagstid.
 
-  - `parallel`: Parallel queries to all configured upstream servers to speed up resolving.
+  - `parallel`: Parallelle forespørgsler til alle opsatte upstream-servere for at accelerere navneopslag.
 
-  - `fastest_addr`: It finds an IP address with the lowest latency and returns this IP address in DNS response.
+  - `fastest_addr`: Finder IP-adressen med den laveste latenstid og returnerer denne IP-adresse i DNS-svaret.
 
-- `fastest_timeout`: The timeout used for dialing the addresses while picking the fastest. Values other than positive ones are replaced with the default one, `1s`.
+- `fastest_timeout`: The timeout used for dialing the addresses while picking the fastest. Andre værdier end positive erstattes med standardværdien `1s`.
 
-- `use_http3_upstreams`: Enables DNS-over-HTTP/3 for DNS-over-HTTPS upstreams that support it.
+- `use_http3_upstreams`: Aktiverer DNS-over-HTTP/3 for DNS-over-HTTPS-upstream-servere, som understøtter det.
 
-- `use_dns64`: Enables or disables the DNS64 functionality. See `dns64_prefixes` for more information.
+- `use_dns64`: Aktiverer/deaktiverer DNS64-funktionaliteten. Se `dns64_prefixes` for flere oplysninger.
 
-- `dns64_prefixes`: The list of DNS64 prefixes to use. The first specified prefix will be used to synthesize DNS64 answers. If empty, AdGuard Home will use the default (Well-Known) prefix `64:ff9b::/96`. The prefixes are validated for being IPv6 subnets not longer than 96 bits. As per [RFC 6147][rfc6147], PTR requests are routed to the `local_ptr_upstreams` if the requested address is within either one of the configured prefixes or the default Well-Known one.
+- `dns64_prefixes`: Listen over DNS64-præfikser, som skal benyttes. Det først angivne præfiks bruges til at syntetisere DNS64-svar. Hvis tomt, benytter AdGuard Home standardpræfikset (Well-Known) `64:ff9b::/96`. Præfikserne valideres som IPv6-undernet af højst 96 bits længde. Iht. [RFC 6147][rfc6147] rutes PTR-forespørgsler til `local_ptr_upstreams`, hvis den anmodede adresse er inden for enten et af de opsatte præfikser eller standard Well-Known-præfikset.
 
-- `pending_requests`: The configuration for cache poisoning attacks protection. Den har flg. egenskaber:
+- `pending_requests`: Opsætningen til beskyttelse mod cacheforgiftningsangreb. Den har flg. egenskaber:
 
-  - `enabled`: Specifies, if AdGuard Home should track simultaneous identical requests and perform a single lookup for them. By default, the value is `true`.
+  - `enabled`: Angiver, om AdGuard Home skal spore samtidige identiske forespørgsler og udføre ét enkelt opslag for dem. Som standard er værdien `true`.
 
-- `edns_client_subnet`: Controls EDNS Client Subnet behavior. Den har flg. egenskaber:
+- `edns_client_subnet`: Styrer EDNS Client Subnet-adfærden. Den har flg. egenskaber:
 
-  - `enabled`: Add the ECS option to upstream requests.
+  - `enabled`: Føj ECS-indstillingen til upstream-forespørgsler.
 
-  - `use_custom`: Send a fixed subnet instead of the real client network.
+  - `use_custom`: Send et fast undernet i stedet for det reelle klientnetværk.
 
-  - `custom_ip`: The IP address from which to derive the fixed subnet when `use_custom` is `true`.
+  - `custom_ip`: Den IP-adresse, hvorfra det faste undernet skal udledes, når `use_custom` er `true`.
 
-- `allowed_clients`: The list of CIDRs, IP addresses or ClientIDs of allowed DNS clients. If this list has entries, AdGuard Home will accept requests only from these clients.
+- `allowed_clients`: Listen over CIDR'er, IP-adresser eller ClientID'er for tilladte DNS-klienter. Indeholder denne liste poster, accepterer AdGuard Home kun forespørgsler fra disse klienter.
 
-  See also the note in the [Docker wiki page][docker-conf] about using this property within a container.
+  Se også noten på [Docker wiki-siden][docker-conf] om brugen af denne egenskab i en container.
 
-- `disallowed_clients`: The list of CIDRs, IP addresses, or ClientIDs of disallowed DNS clients. If this list has entries, AdGuard Home will drop requests from these clients. Note that this field is ignored if there are entries in `allowed_clients`.
+- `disallowed_clients`: Listen over CIDR'er, IP-adresser eller ClientID'er for ikke-tilladte DNS-klienter. Indeholder denne liste poster, dropper AdGuard Home forespørgsler fra disse klienter. Bemærk, at dette felt ignoreres, hvis der er poster i `allowed_clients`.
 
-  See also the note in the [Docker wiki page][docker-conf] about using this property within a container.
+  Se også noten på [Docker-wikisiden][docker-conf] om brug af denne egenskab i en container.
 
-- `blocked_hosts`: The list of domain names, wildcards or filtering rules to match requests that shouldn't be processed at all. These are ignored by statistics and query log as well.
+- `blocked_hosts`: Listen over domænenavne, jokertegn eller filtreringsregler til at matche forespørgsler, som slet ikke skal behandles. Disse ignoreres også af statistikker og forespørgselsloggen.
 
-  See also the note in the [Docker wiki page][docker-conf] about using this property within a container.
+  Se også noten på [Docker wiki-siden][docker-conf] om brugen af denne egenskab i en container.
 
-- `trusted_proxies`: The list of IP addresses and CIDR prefixes of trusted HTTP proxy servers. If a DNS-over-HTTPS request comes from one of these addresses or networks, AdGuard Home uses the provided proxy headers, such as `X-Real-IP`, to get the real IP address of the client. Requests from HTTP proxies outside of these networks are considered to be requests from the proxy itself. That is, the proxy headers are ignored. The full list of proxy headers, in the order AdGuard Home inspects them:
+- `trusted_proxies`: Listen over IP-adresser og CIDR-præfikser for betroede HTTP-proxyservere. Hvis en DNS-over-HTTPS-forespørgsel kommer fra en af disse adresser eller netværk, bruger AdGuard Home de angivne proxy-headere, såsom `X-Real-IP`, til at hente klientens reelle IP-adresse. Forespørgsler fra HTTP-proxyer uden for disse netværk betragtes som forespørgsler fra selve proxyen. Det vil sige, at proxy-headere ignoreres. Den fulde liste over proxy-headere, i den rækkefølge AdGuard Home inspicerer dem:
 
   1. `CF-Connecting-IP`
   2. `True-Client-IP`
   3. `X-Real-IP`
   4. `X-Forwarded-For`
 
-- `cache_enabled`: Turn the DNS cache on or off globally.
+- `cache_enabled`: Slå DNS-cachen til/fra globalt.
 
-- `cache_size`: DNS cache size (in bytes).
+- `cache_size`: DNS-cachestørrelse (i byte).
 
-- `cache_ttl_min`: The minimum TTL override, in seconds. If the TTL of a response from upstream is below this value, the TTL is replaced with it. Must be less than or equal to `cache_ttl_max`.
+- `cache_ttl_min`: Den mindste TTL-tilsidesættelse i sekunder. Er TTL'en for et svar fra upstream under denne værdi, erstattes TTL'en med den. Skal være mindre end eller lig med `cache_ttl_max`.
 
-- `cache_ttl_max`: The maximum TTL override, in seconds. If the TTL of a response from upstream is above this value, the TTL is replaced with it. Must be greater than or equal to `cache_ttl_min`.
+- `cache_ttl_max`: Den maksimale TTL-tilsidesættelse i sekunder. Er TTL'en for et svar fra upstream over denne værdi, erstattes TTL'en med denne. Skal være større end eller lig med `cache_ttl_min`.
 
-- `cache_optimistic`: Make AdGuard Home respond from the cache even when the entries are expired and also try to refresh them. The TTL for such responses is 10 seconds.
+- `cache_optimistic`: Make AdGuard Home respond from the cache even when the entries are expired and also try to refresh them. TTL'en for sådanne svar er 10 sekunder.
 
-- `cache_optimistic_answer_ttl`: TTL for answers from optimistic cache.
+- `cache_optimistic_answer_ttl`: TTL for svar fra optimistisk cache.
 
-- `cache_optimistic_max_age`: The maximum amount of time that expired entries remain in the optimistic cache.
+- `cache_optimistic_max_age`: Den maksimale tid udløbne poster forbliver i den optimistiske cache.
 
-- `bogus_nxdomain`: Respond with `NXDOMAIN` instead of any response having IP addresses matching the ones from this list. It also supports CIDRs.
+- `bogus_nxdomain`: Svar med `NXDOMAIN` i stedet for svar indeholdende IP-adresser matchende dem på denne liste. CIDR'er er også understøttet.
 
-- `enable_dnssec`: Defines whether the proxy should set the DO flag in the upstream requests.
+- `enable_dnssec`: Definerer, hvorvidt proxyen skal sætte DO-flaget i upstream-forespørgslerne.
 
-- `aaaa_disabled`: Respond with an empty answer to all `AAAA` requests. It also removes IPv6 hints from the answers to HTTPS queries.
+- `aaaa_disabled`: Svar med et tomt svar på alle `AAAA`-forespørgsler. Den fjerner også IPv6-hints fra svarene på HTTPS-forespørgsler.
 
-- `cache_time`: _Safe browsing_, _Safe search_, and _Parental control_ cache TTL, in seconds.
+- `cache_time`: _Sikker browsing_-, _Sikker søgning_- og _Forældrekontrol_-cache TTL i sekunder.
 
-- `max_goroutines`: Maximum number of parallel goroutines for processing incoming requests.
+- `max_goroutines`: Maksimalt antal parallelle goroutiner til behandling af indgående forespørgsler.
 
-- `handle_ddr`: Handle [Discovery of Designated Resolvers (DDR)][DDR] requests.
+- `handle_ddr`: Håndtér [Discovery of Designated Resolvers (DDR)][DDR]-forespørgsler.
 
-- `ipset`: List of domain-ipset_name associations for adding IP addresses of the specified domain names to an ipset list. Syntax:
+- `ipset`: Liste over domæne-ipset_navn-tilknytninger for tilføjelse af IP-adresser for de angivne domænenavne til en ipset-liste. Syntaks:
 
     ```none
     DOMAIN[,DOMAIN,…]/IPSET_NAME[,IPSET_NAME,…]
     ```
 
-  IPv4 addresses are added to an ipset list with `ipv4` family; IPv6 addresses, to an `ipv6` ipset list. ipset list must exist.
+  IPv4-adresser føjes til en ipset-liste med `ipv4`-familien; IPv6-adresser til en `ipv6`-ipset-liste. ipset-liste skal findes.
 
-  This setting is supported on Linux OSs only. This feature is similar to `--ipset` in dnsmasq.
+  Denne indstilling understøttes kun på Linux-OS'er. Denne funktion svarer til `--ipset` i dnsmasq.
 
-- `ipset_file`: Same as `ipset`, but the rules are read from a file. If this property is set, property `ipset` is ignored. Comments (lines starting with `#`) are supported.
+- `ipset_file`: Samme som `ipset`, men reglerne læses fra en fil. Sættes denne egenskab, ignoreres egenskaben `ipset`. Kommentarer (linjer startende med `#`) og tomme linjer ignoreres.
 
-- `upstream_timeout`: The timeout for querying upstream servers. Zero value will be rewritten with default one which is `10s`.
+- `upstream_timeout`: Timeout for forespørgsler til upstream-servere. En nulværdi overskrives med standardværdien, der er `10s`.
 
-- `serve_http3`: Enables DNS-over-HTTP/3 serving for DNS-over-HTTPS clients as well as for the web UI.
+- `serve_http3`: Aktiverer DNS-over-HTTP/3-levering for DNS-over-HTTPS-klienter samt for web-UI'en.
 
-- `serve_plain_dns`: Enables plain DNS serving.
+- `serve_plain_dns`: Aktiverer almindelig DNS-levering.
 
   :::note
 
-  `serve_plain_dns` cannot currently be set to `false` unless one or more encrypted protocols (DNS-over-HTTPS, DNS-over-TLS, etc.) is enabled.
+  `serve_plain_dns` kan p.t. ikke sættes til `false`, medmindre en eller flere krypterede protokoller (DNS-over-HTTPS, DNS-over-TLS mv.) er aktiveret.
 
   :::
 
-- `hostsfile_enabled`: Allows information from the system hosts file to be used to resolve queries.
+- `hostsfile_enabled`: Tillader brug af information fra systemets hosts-fil til opløsning af forespørgsler.
 
 ### `filtering` {#filtering}
 
-The `filtering` object configures filtering settings. Den har flg. egenskaber:
+Objektet `filtering` opsætter filtreringsindstillinger. Det har flg. egenskaber:
 
-- `protection_enabled`: Whether any kind of filtering and protection should be performed. Note that it doesn't affect the rules with `$dnsrewrite` modifier and other rewrites, including those taken from the operating system hosts file.
+- `protection_enabled`: Hvorvidt nogen form for filtrering og beskyttelse skal udføres. Bemærk, at det ikke påvirker reglerne med modifikatoren `$dnsrewrite` og andre omskrivninger, inkl. dem taget fra operativsystemets hosts-fil.
 
-- `filtering_enabled`: Whether filtering of DNS requests based on rule lists should be performed.
+- `filtering_enabled`: Hvorvidt filtrering af DNS-forespørgsler baseret på regellister skal udføres.
 
-- `blocking_mode`: Specifies how to block DNS requests. Gyldige værdier:
+- `blocking_mode`: Angiver, hvordan DNS-forespørgsler skal blokeres. Gyldige værdier:
 
-  - `custom_ip`: Respond with a manually set IP address of an appropriate family, which are specified in `blocking_ipv4` and `blocking_ipv6` properties.
+  - `custom_ip`: Svar med en manuelt angivet IP-adresse af en passende familie, der er angivet i egenskaberne `blocking_ipv4` og `blocking_ipv6`.
 
-  - `default`: Respond with zero IP address (0.0.0.0 for A; :: for AAAA) when blocked by Adblock-style rule; respond with the IP address specified in the rule when blocked by /etc/hosts-style rule.
+  - \`standard: Svar med nul-IP-adresse (0.0.0.0 for A; :: for AAAA), når blokeret af Adblock-lignende regel; svar med IP-adressen angivet i reglen, når blokeret af /etc/hosts-lignende regel.
 
-  - `null_ip`: Respond with zero IP address (0.0.0.0 for A; :: for AAAA).
+  - `null_ip`: Svar med nul-IP-adresse (0.0.0.0 for A; :: for AAAA).
 
-  - `nxdomain`: Respond with NXDOMAIN code.
+  - `nxdomain`: Svar med NXDOMAIN-kode.
 
-  - `refused`: Respond with REFUSED code.
+  - `refused`: Svar med koden REFUSED.
 
-- `blocking_ipv4`: IP address to be returned for a blocked A request if `blocking_mode` is set to `custom_ip`.
+- `blocking_ipv4`: Returneret IP-adresse for en blokeret A-forespørgsel, hvis `blocking_mode` er sat til `custom_ip`.
 
-- `blocking_ipv6`: IP address to be returned for a blocked AAAA request if `blocking_mode` is set to `custom_ip`.
+- `blocking_ipv6`: IP-adresse, der skal returneres for en blokeret AAAA-forespørgsel, hvis `blocking_mode` er sat til `custom_ip`.
 
-- `blocked_response_ttl`: For how many seconds the clients should cache a filtered response. Low values are useful on LAN if you change filters very often, high values are useful to increase performance and save traffic.
+- `blocked_response_ttl`: Hvor mange sekunder klienterne skal cache et filtreret svar. Lave værdier er nyttige på LAN, hvis filtre hyppigt ændres; høje værdier er nyttige til at øge ydeevnen og spare trafik.
 
-- `max_http_size`: The `max_http_size` property defines the maximum size of the HTTP request for rulelists. To disable the limitation, set a large size, such as `1 TB`.
+- `max_http_size`: Denne egenskab definerer den maksimale HTTP-forespørgselsstørrelse for regellister. For at deaktivere begrænsningen, angiv en stor størrelse, såsom `1 TB`.
 
-- `protection_disabled_until`: Timestamp until when the protection is disabled.
+- `protection_disabled_until`: Tidsstempel, for hvornår beskyttelsen deaktiveres.
 
-- `parental_block_host`: IP (or domain name) which is used to respond to DNS requests blocked by parental control.
+- `parental_block_host`: IP (eller domænenavn) brugt til besvarelse af DNS-forespørgsler blokeret af forældrekontrol.
 
-- `safebrowsing_block_host`: IP (or domain name) which is used to respond to DNS requests blocked by safe-browsing.
+- `safebrowsing_block_host`: IP (eller domænenavn) brugt til besvarelse af DNS-forespørgsler blokeret af sikker browsing.
 
-- `parental_enabled`: Filtering of DNS requests based on _Parental control_.
+- `parental_enabled`: Filtrering af DNS-forespørgsler baseret på _Forældrekontrol_.
 
-- `safe_search`: _Safe search_ settings section. Den har flg. egenskaber:
+- `safe_search`: _Sikker søgning_-indstillingsafsnit. Den har flg. egenskaber:
 
-  - `enabled`: Enforcing the _Safe search_ option for search engines, when possible.
+  - `enabled`: Håndhæver _Sikker søgning_-indstillingen for søgemaskiner, når muligt.
 
-  - `bing`: Enforcing the _Safe search_ option for `bing` domains.
+  - `bing`: Håndhæver indstillingen _Safe search_ for `bing`-domæner.
 
-  - `duckduckgo`: Enforcing the _Safe search_ option for `duckduckgo` domains.
+  - `duckduckgo`: Håndhæver indstillingen _Sikker søgning_ for `duckduckgo`-domæner.
 
-  - `ecosia`: Enforcing the _Safe search_ option for `ecosia` domains.
+  - `ecosia`: Håndhæver indstillingen _Sikker søgning_ for `ecosia`-domæner.
 
-  - `google`: Enforcing the _Safe search_ option for `google` domains.
+  - `google`: Håndhæver indstillingen _Sikker søgning_ for `google`-domæner.
 
-  - `pixabay`: Enforcing the _Safe search_ option for `pixabay` domains.
+  - `pixabay`: Håndhæver indstillingen _Sikker søgning_ for `pixabay`-domæner.
 
-  - `yandex`: Enforcing the _Safe search_ option for `yandex` domains.
+  - `yandex`: Håndhæver indstillingen _Sikker søgning_ for `yandex`-domæner.
 
-  - `youtube`: Enforcing the _Safe search_ option for `youtube` domains.
+  - `youtube`: Håndhæver indstillingen _Sikker søgning_ for `youtube`-domæner.
 
-- `safebrowsing_enabled`: Filtering of DNS requests based on _Safe browsing_.
+- `safebrowsing_enabled`: Filtrering af DNS-forespørgsler baseret på _Sikker browsing_.
 
-- `safebrowsing_cache_size`: _Safe browsing_ cache size, in bytes.
+- `safebrowsing_cache_size`: _Sikker browsing_-cache-størrelse i bytes.
 
-- `safesearch_cache_size`: _Safe search_ cache size, in bytes.
+- `safesearch_cache_size`: _Sikker søgning_-cache-størrelse i byte.
 
-- `parental_cache_size`: _Parental control_ cache size, in bytes.
+- `parental_cache_size`: _Forældrekontrol_-cache-størrelse i byte.
 
-- `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream.
+- `rewrites`: Liste over ældre DNS-omskrivninger, hvor `domain` er domænet eller jokertegnet, der ønskes omskrevet, og `answer` er IP-adresse, CNAME-post, `A` eller `AAAA` særværdier. Særværdi `A` bevarer `A`-poster fra upstream, og `AAAA` bevarer `AAAA`-værdier fra upstream.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
     'rewrites':
@@ -575,19 +575,19 @@ The `filtering` object configures filtering settings. Den har flg. egenskaber:
         'answer': A
     ```
 
-- `safe_fs_patterns`: List of allowed filesystem path patterns for adding **local** filter files.
+- `safe_fs_patterns`: Liste over tilladte filsystemstimønstre til tilføjelse af **lokale** filterfiler.
 
-- `cache_time`: Time interval in minutes for keeping cache records.
+- `cache_time`: Tidsinterval i minutter, i hvilket cacheposter opbevares.
 
-- `filters_update_interval`: Time interval in hours for updating filters.
+- `filters_update_interval`: Tidsinterval i timer for opdatering af filtre.
 
-- `blocked_services`: Blocked services settings section. Den har flg. egenskaber:
+- `blocked_services`: Indstillingsafsnittet til Blokerede tjenester. Den har flg. egenskaber:
 
-  - `ids`: List of blocked services.
+  - `ids`: Liste over blokerede tjenester.
 
-  - `schedule`: Sets periods of inactivity for filtering blocked services. The schedule contains 7 days (Sunday to Saturday) and a time zone. Each day consists of `start` and `end`, which are the durations from the start of day. Duration is a string in human-readable format. `start` is greater or equal to `0s` and less than `24h`. `end` must be greater than `start` and less or equal to `24h`. `start` and `end` are expected to be rounded to minutes.
+  - `schedule`: Angiver inaktivitetsperioder under filtrering af blokerede tjenester. Tidsplanen indeholder 7 dage (søndag til lørdag) samt en tidszone. Hver dag består af `start` og `end`, som er varighederne fra dagens start. Varighed er en streng i et læsbart format. `start` er større end eller lig med `0s` og mindre end `24h`. `end` skal være større end `start` og mindre end eller lig med `24h`. `start` og `end` forventes afrundet til minutter.
 
-  **Example:**
+  **Eksempel:**
 
     ```yaml
     'blocked_services':
@@ -603,7 +603,7 @@ The `filtering` object configures filtering settings. Den har flg. egenskaber:
             'tue':
                 'start': '20m'
                 'end': '23h40m'
-            # No schedule for Wednesday.
+            # Ingen tidsplan for onsdag.
             'thu':
                 'start': '40m'
                 'end': '23h20m'
@@ -618,63 +618,63 @@ The `filtering` object configures filtering settings. Den har flg. egenskaber:
 
 ### `querylog` {#querylog}
 
-The `querylog` object configures _Query log_ settings. Den har flg. egenskaber:
+Objektet `querylog` opsætter indstillingerne for _Forespørgselslog_. Det har flg. egenskaber:
 
-- `enabled`: Defines, whether _Query log_ is enabled.
+- `enabled`: Angiver, om _Forespørgselslog_ er aktiveret.
 
-- `file_enabled`: Write query logs to a file.
+- `file_enabled`: Skriv forespørgselslogger til en fil.
 
-- `interval`: Time interval for query log files rotation. It’s a string with human-readable duration between an hour (1h) and a year (8760h).
+- `interval`: Tidsinterval for rotation af forespørgselslogfiler. Det er en streng med en læsbar varighed på mellem en time (1h) og ét år (8760h).
 
-- `size_memory`: Number of entries kept in memory before they are flushed to disk.
+- `size_memory`: Antal poster opbevaret i hukommelsen, før de skrives til disken.
 
-- `ignored`: List of host names, which should not be written to log. It supports AdBlock rule syntax.
+- `ignored`: Liste over værtsnavne, som ikke skal skrives til loggen. AdBlock-regelsyntaksen understøttes.
 
-- `ignored_enabled`: Indicates whether or not to ignore hosts from the `ignored` list.
+- `ignored_enabled`: Angiver, om værter fra listen `ignored` skal ignoreres eller ej.
 
-- `dir_path`: Custom directory for storing _Query log_ files.
+- `dir_path`: Tilpasset mappe til lagring af _forespørgselslogfiler_.
 
 ### `statistics` {#statistics}
 
-The `statistics` object configures statistics settings. Den har flg. egenskaber:
+Objektet `statistics` opsætter statistikindstillinger. Det har flg. egenskaber:
 
-- `enabled`: Defines, whether statistics are enabled.
+- `enabled`: Angiver, om statistik er aktiveret.
 
-- `interval`: Time interval for statistics. It is a string with human-readable duration between an hour (1h) and a year (8760h).
+- `interval`: Tidsinterval for statistik. Det er en streng med en læsbar varighed mellem en time (1h) og ét år (8760h).
 
-- `ignored`: List of host names, which should not be counted. It supports AdBlock rule syntax.
+- `ignored`: Liste over værtsnavne, som ikke skal tælles med. AdBlock-regelsyntaksen understøttes.
 
-- `ignored_enabled`: Indicates whether or not to ignore hosts from the `ignored` list.
+- `ignored_enabled`: Angiver, om værter fra listen `ignored` skal ignoreres eller ej.
 
-- `dir_path`: Custom directory for storing statistics.
+- `dir_path`: Tilpasset mappe til lagring af statistikker.
 
 ### `filters` {#filters}
 
-List of filters. Each filter has the following properties:
+Filterliste. Hvert filter har flg. egenskaber:
 
-- `enabled`: Current filter’s status (enabled/disabled).
+- `enabled`: Det aktuelle filters status (aktiveret/deaktiveret).
 
-- `url`: URL pointing to the filter contents (filtering rules).
+- `url`: URL, der peger på filterindholdet (filtreringsregler).
 
-- `name`: The name of the filter. If it’s an AdGuard syntax filter, it will be updated automatically; otherwise, it will stay unchanged.
+- `name`: Filternavnet. Er det et filter med AdGuard-syntaks, opdateres det automatisk. Ellers forbliver det uændret.
 
-- `last_updated`: Time when the filter was last updated from server.
+- `last_updated`: Tidspunktet, hvor filteret senest blev opdateret fra serveren.
 
-- `id`: Filter ID (must be unique).
+- `id`: Filter-ID (skal være unikt).
 
 ### `dhcp` {#dhcp}
 
-Built-in DHCP server configuration. See also the [DHCP][DHCPv4] article. Den har flg. egenskaber:
+Indbygget DHCP-serveropsætning. Se også artiklen [DHCP][DHCPv4]. Den har flg. egenskaber:
 
-- `enabled`: DHCP server status.
+- `enabled`: DHCP-serverstatus.
 
-- `interface_name`: Network interface name (`eth0`, `en0`, and so on).
+- `interface_name`: Navn på netværksgrænseflade (`eth0`, `en0` osv.).
 
-- `dhcpv4`: DHCPv4 settings. Den har flg. egenskaber:
+- `dhcpv4`: DHCPv4-indstillinger. Den har flg. egenskaber:
 
-  - `gateway_ip`: Gateway IP address.
+  - `gateway_ip`: Gatewayens IP-adresse.
 
-  - `subnet_mask`: Subnet mask.
+  - `undernetmaske`: Undernetmaske.
 
   - `range_start`, `range_end`: The start and the end of the leased IP address range.
 
@@ -684,7 +684,7 @@ Built-in DHCP server configuration. See also the [DHCP][DHCPv4] article. Den har
 
   - `options`: Custom DHCP options. See the [DHCP][DHCPv4] article section on these options for more information.
 
-- `dhcpv6`: DHCPv6 settings. Den har flg. egenskaber:
+- `dhcpv6`: DHCPv6 settings. It has the following properties:
 
   - `range_start`: The first IP address to be assigned to a client.
 
@@ -692,11 +692,11 @@ Built-in DHCP server configuration. See also the [DHCP][DHCPv4] article. Den har
 
   - `ra_slaac_only` and `ra_allow_slaac`: Send RA packets either forcing the clients to use SLAAC or allowing them to choose. See the [DHCP][DHCPv6] article section on these options for more information.
 
-- `local_domain_name`: The domain name that AdGuard Home’s DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network’s DHCP server, the hostname of that machine is `myhost.lan`. DNS queries of type `A` for such hosts are only allowed from locally served networks, such as `10.0.0.0/8`, `192.168.0.0/16`, and so on. Other clients receive an empty `NXDOMAIN` response.
+- `local_domain_name`: The domain name that AdGuard Home’s DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network’s DHCP server, the hostname of that machine is `myhost.lan`. DNS-forespørgsler af typen `A` for sådanne værter er kun tilladt fra lokalt betjente netværk, såsom `10.0.0.0/8`, `192.168.0.0/16` mv. Other clients receive an empty `NXDOMAIN` response.
 
 ### `tls` {#tls}
 
-HTTPS/DoH/DoQ/DoT settings. Den har flg. egenskaber:
+HTTPS/DoH/DoQ/DoT settings. It has the following properties:
 
 - `enabled`: Whether encryption (DoT/DoH+HTTPS/DoQ) is enabled.
 
@@ -760,7 +760,7 @@ Persistent and runtime clients settings.
 
 - `persistent`: An array of explicitly configured clients. Each client has the following properties:
 
-  - `safe_search`: _Safe search_ settings section.
+  - `safe_search`: _Sikker søgning_-indstillingsafsnit.
 
   - `blocked_services`: _Blocked services_ settings section.
 
@@ -905,5 +905,6 @@ For a list of supported profiles go to `http://localhost:6060/debug/pprof/`.
 Alternatively, you may want to simply download the file and analyze it later:
 
 ```sh
-wget http://localhost:6060/debug/pprof/heap go tool --http=':8080' heap
+wget http://localhost:6060/debug/pprof/heap
+go tool --http=':8080' heap
 ```

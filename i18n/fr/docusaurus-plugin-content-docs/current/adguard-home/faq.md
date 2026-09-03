@@ -3,15 +3,15 @@ title: FAQ
 sidebar_position: 3
 ---
 
-## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
+## Pourquoi AdGuard Home ne bloque-t-il pas les publicités ou les menaces ? {#doesntblock}
 
-Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
+Supposons que vous souhaitiez qu'AdGuard Home bloque `somebadsite.com` mais que, pour une raison quelconque, il ne le fasse pas. Essayons de résoudre ce problème.
 
-Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
+Il est fort probable que vous n'ayez pas configuré votre appareil pour qu'il utilise AdGuard Home comme serveur DNS par défaut. Pour vérifier si vous utilisez AdGuard Home comme serveur DNS par défaut :
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). On other systems, open your Terminal application.
+1. Sous Windows, ouvrez une fenêtre de terminal (_Démarrer_ → _Exécuter_ → `cmd.exe`). Sur d'autres systèmes, ouvrez l'application Terminal.
 
-2. Execute `nslookup example.org`. It will print something like this:
+2. Exécutez `nslookup example.org`. Il affichera quelque chose comme ceci :
 
    ```none
    Server: 192.168.0.1
@@ -24,146 +24,146 @@ Most likely, you haven’t configured your device to use AdGuard Home as the def
    Address: <IPv6>
    ```
 
-3. Check if the `Server` IP address is the one where AdGuard Home is running. If not, you need to configure your device accordingly. See [below](#defaultdns) how to do this.
+3. Vérifiez que l'adresse IP du `Server` est celle où AdGuard Home est exécuté. Si ce n'est pas le cas, vous devez configurer votre appareil en conséquence. Voir [ci-dessous](#defaultdns) pour savoir comment procéder.
 
-4. Ensure that your request to `example.org` appears in the AdGuard Home UI on the _Query Log_ page. If not, you need to configure AdGuard Home to listen on the specified network interface. The easiest way to do this is to reinstall AdGuard Home with default settings.
+4. Assurez-vous que votre requête vers `example.org` apparaît dans l'interface utilisateur d'AdGuard sur la page _Journal des requêtes_. Si ce n'est pas le cas, vous devez configurer AdGuard Home pour qu'il écoute sur l'interface réseau spécifiée. La façon la plus simple de le faire est de réinstaller AdGuard Home avec les paramètres par défaut.
 
-If you are sure that your device is using AdGuard Home as its default DNS server, but the problem persists, it may be due to a misconfiguration of AdGuard Home. Please check and make sure that:
+Si vous êtes sûr que votre appareil utilise AdGuard Home comme serveur DNS par défaut, mais que le problème persiste, cela peut être dû à une mauvaise configuration d'AdGuard Home. Veuillez vérifier et vous assurer que :
 
-1. You have enabled the _Block domains using filters and hosts files_ setting on the _Settings_ → _General settings_ page.
+1. Vous avez activé le paramètre _Bloquer les domaines à l'aide des filtres et des fichiers hosts_ sur la page _Paramètres_ → _Paramètres généraux_.
 
-2. You have enabled the appropriate security mechanisms, such as Parental Control, on the same page.
+2. Vous avez activé les mécanismes de sécurité appropriés, tels que le Contrôle parental, sur la même page.
 
-3. You have enabled the appropriate filters on the _Filters_ → _DNS blocklists_ page.
+3. Vous avez activé les filtres appropriés sur la page _Filtres_ → _Listes de blocage DNS_.
 
-4. You don’t have any exception rule lists that may allow the requests enabled on the _Filters_ → _DNS allowlists_ page.
+4. Vous n'avez pas de listes de règles d'exception susceptibles d'autoriser les requêtes activées sur la page _Filtres_ → _Listes d'autorisation DNS_.
 
-5. You don’t have any DNS rewrites that may interfere on the _Filters_ → _DNS rewrites_ page.
+5. Vous n'avez pas de réécritures DNS qui pourraient interférer sur la page _Filtres_ → _Réécritures DNS_.
 
-6. You don’t have any custom filtering rules that may interfere on the _Filters_ → _Custom filtering rules_ page.
+6. Vous n'avez pas de règles de filtrage personnalisées qui peuvent interférer sur la page _Filtres_ → _Règles de filtrage personnalisées_.
 
-## What does “Blocked by CNAME or IP” in the query log mean? {#logs}
+## Que signifie « Bloqué par CNAME ou IP » dans le journal de requêtes ? {#logs}
 
-AdGuard Home checks both DNS requests and DNS responses to prevent an adblock evasion technique known as [CNAME cloaking][cname-cloak]. That is, if your filtering rules contain a domain, say `tracker.example`, and a DNS response for some other domain name, for example `blogs.example`, contains this domain name among its CNAME records, that response is blocked, because it actually leads to the blocked tracking service.
+AdGuard Home vérifie à la fois les requêtes DNS et les réponses DNS pour prévenir une technique d'évasion des annonces connue sous le nom de [CNAME cloaking][cname-cloak]. Autrement dit, si vos règles de filtrage contiennent un domaine, par exemple `tracker.example`, et qu'une réponse DNS pour un autre nom de domaine, par exemple `blogs.example`, contient ce nom de domaine parmi ses enregistrements CNAME, cette réponse est bloquée, car elle mène en fait au service de suivi bloqué.
 
 [cname-cloak]: https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/
 
-## Where can I view the logs? {#logs}
+## Où puis-je consulter les journaux ? {#logs}
 
-The default location of the plain-text logs (not to be confused with the query logs) depends on the operating system and installation mode:
+L'emplacement par défaut des journaux en texte brut (à ne pas confondre avec les journaux de requête) dépend du système d'exploitation et du mode d'installation :
 
 <!-- TODO(a.garipov): Add more info about Docker; add links to tools. -->
 
-- **OpenWrt Linux:** use the `logread -e AdGuardHome` command.
+- **OpenWrt Linux:** utilisez la commande `logread -e AdGuardHome`.
 
-- **Linux** systems with **systemd** and other **Unix** systems with **SysV-style init:** `/var/log/AdGuardHome.err`.
+- **Systèmes Linux** avec **systemd** et autres systèmes **Unix** avec init de style **SysV :** `/var/log/AdGuardHome.err`.
 
-- **macOS:** `/var/log/AdGuardHome.stderr.log`.
+- **macOS :** `/var/log/AdGuardHome.stderr.log`.
 
-- **Linux** systems with **Snapcraft** use the `snap logs adguard-home` command.
+- Systèmes **Linux** avec **Snapcraft** utilisez la commande `snap logs adguard-home`.
 
-- **FreeBSD:** `/var/log/daemon.log`.
+- **FreeBSD :** `/var/log/daemon.log`.
 
-- **OpenBSD:** `/var/log/daemon`.
+- **OpenBSD :** `/var/log/daemon`.
 
-- **Windows:** the [Windows Event Log][wlog] is used.
+- **Windows :** le [journal des événements Windows][wlog] est utilisé.
 
 [wlog]: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
 
-## How do I configure AdGuard Home to write verbose-level logs? {#verboselog}
+## Comment configurer AdGuard Home pour écrire des journaux de niveau détaillé ? {#verboselog}
 
-To troubleshoot a complicated issue, the verbose-level logging is sometimes required. Here’s how to enable it:
+Pour résoudre un problème complexe, il est parfois nécessaire d'utiliser la journalisation de niveau détaillé. Voici comment l'activer :
 
-1. Stop AdGuard Home:
+1. Arrêtez AdGuard Home :
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Configure AdGuard Home to write verbose-level logs:
+2. Configurez AdGuard Home pour écrire des journaux de niveau détaillé :
 
-   1. Open `AdGuardHome.yaml` in your editor.
+   1. Ouvrez `AdGuardHome.yaml` dans votre éditeur.
 
-   2. Set `log.file` to the desired path of the log file, for example `/tmp/aghlog.txt`. Note that the directory must exist.
+   2. Définissez `log.file` sur le chemin souhaité du fichier journal, par exemple `/tmp/aghlog.txt`. Notez que le répertoire doit déjà exister.
 
-   3. Set `log.verbose` to `true`.
+   3. Définissez `log.verbose` sur `true`.
 
-3. Restart AdGuard Home and reproduce the issue:
+3. Redémarrez AdGuard Home et reproduisez le problème :
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-4. Once you’re done with the debugging, set `log.verbose` back to `false`.
+4. Une fois que vous avez terminé le débogage, remettez `log.verbose` à `false`.
 
-## How do I show a custom block page? {#customblock}
+## Comment afficher une page de blocage personnalisée ? {#customblock}
 
 :::note
 
-Before doing any of this, please note that modern browsers are set up to use HTTPS, so they validate the authenticity of the web server certificate. This means that using any of these will result in warning screens.
+Avant de faire tout cela, veuillez noter que les navigateurs modernes sont configurés pour utiliser HTTPS, donc ils valident l'authenticité du certificat du serveur Web. Cela signifie que l'utilisation de l'un de ces éléments entraînera des écrans d'avertissement.
 
-There is a number of proposed extensions that, if reasonably well supported by clients, would provide a better user experience, including the [RFC 8914 Extended DNS Error codes][rfc8914] and the [DNS Access Denied Error Page RFC draft][rfcaccess]. We’ll implement them when browsers actually start to support them.
+Il existe un certain nombre d'extensions proposées qui, si elles sont raisonnablement bien prises en charge par les clients, offriraient une meilleure expérience utilisateur, y compris les [codes d'erreur DNS étendus RFC 8914][rfc8914] et le [projet de page d'erreur d'accès DNS RFC][rfcaccess]. Nous les mettrons en œuvre lorsque les navigateurs commenceront réellement à les prendre en charge.
 
 [rfc8914]: https://datatracker.ietf.org/doc/html/rfc8914
 [rfcaccess]: https://datatracker.ietf.org/doc/html/draft-reddy-dnsop-error-page-08
 
 :::
 
-### Prerequisites
+### Prérequis
 
-To use any of these methods to display a custom block page, you’ll need an HTTP server running on some IP address and serving the page in question on all routes. Something like [`pixelserv-tls`][pxsrv].
+Pour utiliser l'une de ces méthodes pour afficher une page de blocage personnalisée, vous aurez besoin d'un serveur HTTP en cours d'exécution sur une adresse IP et servant la page en question sur tous les itinéraires. Quelque chose comme [`pixelserv-tls`][pxsrv].
 
 [pxsrv]: https://github.com/kvic-z/pixelserv-tls
 
-### Custom block page for Parental Control and Safe Browsing filters
+### Page de blocage personnalisée pour le Contrôle parental et les filtres de navigation sécurisée
 
-There is currently no way to set these parameters from the UI, so you’ll need to edit the configuration file manually:
+Il n'existe actuellement aucun moyen de définir ces paramètres depuis l'interface utilisateur, vous devrez donc modifier manuellement le fichier de configuration :
 
-1. Stop AdGuard Home:
+1. Arrêtez AdGuard Home :
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. Ouvrez `AdGuardHome.yaml` dans votre éditeur.
 
-3. Set the `dns.parental_block_host` or `dns.safebrowsing_block_host` settings to the IP address of the server (in this example, `192.168.123.45`):
+3. Définissez les paramètres `dns.parental_block_host` ou `dns.safebrowsing_block_host` sur l'adresse IP du serveur (dans cet exemple, `192.168.123.45`) :
 
    ```yaml
    # …
    dns:
      # …
 
-     # NOTE: Change to the actual IP address of your server.
+     # NOTE : Changez à l'adresse IP réelle de votre serveur.
      parental_block_host: 192.168.123.45
      safebrowsing_block_host: 192.168.123.45
    ```
 
-4. Restart AdGuard Home:
+4. Redémarrez AdGuard Home :
 
    ```sh
    ./AdGuardHome -s start
    ```
 
-### Custom block page for other filters
+### Page de blocage personnalisée pour d'autres filtres
 
-1. Open the web UI.
+1. Ouvrez l'interface Web.
 
-2. Navigate to _Settings_ → _DNS settings._
+2. Accédez à _Paramètres_ → _Paramètres DNS._
 
-3. In the _DNS server configuration_ section, select the _Custom IP_ radio button in the _Blocking mode_ selector and enter the IPv4 and IPv6 addresses of the server.
+3. Dans la section _Configuration du serveur DNS_, sélectionnez le bouton radio _IP personnalisée_ dans le sélecteur _Mode de blocage_ et saisissez les adresses IPv4 et IPv6 du serveur.
 
 4. Cliquez sur _Enregistrer_.
 
-## How do I change dashboard interface’s address? {#webaddr}
+## Comment changer l'adresse de l'interface du tableau de bord ? {#webaddr}
 
-1. Stop AdGuard Home:
+1. Arrêtez AdGuard Home :
 
    ```sh
    ./AdGuardHome -s stop
    ```
 
-2. Open `AdGuardHome.yaml` in your editor.
+2. Ouvrez `AdGuardHome.yaml` dans votre éditeur.
 
 3. Set the `http.address` setting to a new network interface. Par exemple :
 
@@ -171,7 +171,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
    - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
    - `127.0.0.1:0` to listen on the local loopback interface only.
 
-4. Restart AdGuard Home:
+4. Redémarrez AdGuard Home :
 
    ```sh
    ./AdGuardHome -s start
@@ -276,7 +276,7 @@ location /aghome/ {
 }
 ```
 
-Or, if you only want to serve AdGuard Home with automatic TLS, use a configuration similar to the example shown below:
+Ou, si vous souhaitez simplement servir AdGuard Home avec TLS automatique, utilisez une configuration similaire à l'exemple ci-dessous :
 
 ```none
 DOMAIN {
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-Do not use subdirectories with the Apache reverse HTTP proxy.  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. This causes problems with the AdGuard Home web interface.
+N’utilisez pas de sous-répertoires avec le proxy HTTP inverse Apache.  C'est un problème connu ([#6604]) : Apache gère les redirections relatives différemment des autres serveurs web. This causes problems with the AdGuard Home web interface.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -377,7 +377,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 2. Navigate to the directory where AdGuard Home is installed. On most Unix systems the default directory is `/opt/AdGuardHome`, but on macOS it’s `/Applications/AdGuardHome`.
 
-3. Stop AdGuard Home:
+3. Arrêtez AdGuard Home :
 
    ```sh
    sudo ./AdGuardHome -s stop
@@ -396,16 +396,16 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
-   On macOS, type something like:
+   Sur macOS, tapez quelque chose comme :
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Remplacez l'ancien fichier exécutable AdGuard Home par le nouveau. On most Unix systems the command would look something like this:
@@ -424,7 +424,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
    You can now remove the temporary directory.
 
-7. Restart AdGuard Home:
+7. Redémarrez AdGuard Home :
 
    ```sh
    sudo ./AdGuardHome -s start
@@ -446,7 +446,7 @@ In all examples below, the PowerShell must be run as Administrator.
 
 2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
 
-3. Stop AdGuard Home:
+3. Arrêtez AdGuard Home :
 
    ```ps1
    .\AdGuardHome.exe -s stop
@@ -478,7 +478,7 @@ In all examples below, the PowerShell must be run as Administrator.
 
    You can now remove the temporary directory.
 
-7. Restart AdGuard Home:
+7. Redémarrez AdGuard Home :
 
    ```ps1
    .\AdGuardHome.exe -s start

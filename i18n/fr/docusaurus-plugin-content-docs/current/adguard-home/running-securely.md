@@ -33,7 +33,7 @@ En bas de la page _Paramètres_ → _Paramètres DNS_, vous trouverez la section
 
 Pour activer le mode liste autorisée, saisissez les [ClientIDs][cid] (recommandé) ou les adresses IP des clients autorisés dans le champ _Clients autorisés_.
 
-[cid]: /adguard-home/clients#client-id
+[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
 
 ## La désactivation du DNS simple
 
@@ -94,21 +94,21 @@ Le principe est le même sur Windows : assurez-vous que le répertoire AdGuard H
 
 Nous prévoyons de publier des versions Windows sous forme de fichiers installateurs MSI qui s'assureront que cela est effectué automatiquement.
 
-## Verify releases {#verify-releases}
+## Vérifier les versions {#verify-releases}
 
-We sign the executable files that we build so that you can verify that they were created by us and not by anyone else. Inside an archive file, there is a small file with a `.sig` extension that contains the signature data. If someone replaces the binary file inside an archive, you’ll know it isn’t an official release from AdGuard.
+Nous signons les fichiers exécutables que nous compilons afin que vous puissiez vérifier qu'ils ont bien été créés par nos soins et non par quelqu'un d'autre. À l'intérieur d'un fichier d'archive, il y a un petit fichier portant l'extension `.sig` qui contient les données de signature. Si quelqu'un remplace le fichier binaire contenu dans une archive, vous saurez qu'il ne s'agit pas d'une version officielle d'AdGuard.
 
-### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
+### Comment vérifier que le fichier exécutable a bien été compilé par AdGuard ? {#how-to-verify-executable}
 
-1. Unpack the AdGuard Home archive file.
+1. Décompressez le fichier d'archive AdGuard Home.
 
-2. Import the AdGuard Home public key from the keyserver. For **current releases,** run:
+2. Importez la clé publique d'AdGuard Home depuis le serveur de clés. Pour les **versions actuelles**, exécutez :
 
    ```sh
    gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
    ```
 
-   The above command will print something similar to:
+   La commande ci-dessus affichera un résultat similaire à :
 
    ```none
    gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
@@ -116,21 +116,21 @@ We sign the executable files that we build so that you can verify that they were
    gpg:               imported: 1
    ```
 
-3. Verify.
+3. Vérifiez.
 
-   - On UNIX:
+   - Sous UNIX :
 
      ```sh
      gpg --verify AdGuardHome/AdGuardHome.sig
      ```
 
-   - On Windows (you might need to install PGP):
+   - Sous Windows (vous devrez peut-être installer PGP) :
 
      ```ps1
      gpg --verify AdGuardHome/AdGuardHome.exe.sig
      ```
 
-   You'll see something like this:
+   Vous verrez quelque chose comme ceci :
 
    ```none
    gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
@@ -140,13 +140,13 @@ We sign the executable files that we build so that you can verify that they were
    gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
    ```
 
-   Check the following:
+   Vérifiez les éléments suivants :
 
-   - RSA key: must be `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
-   - issuer name: must be `AdGuard`;
-   - E-mail address: must be `devteam@adguard.com`;
+   - RSA key : doit être `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6` ;
+   - issuer name : doit être `AdGuard`;
+   - E-mail address : doit être `devteam@adguard.com`;
 
-   There may also be the following warning:
+   Il peut également y avoir l'avertissement suivant :
 
    ```none
    gpg: WARNING: The key's User ID is not certified with a trusted signature!
@@ -154,9 +154,9 @@ We sign the executable files that we build so that you can verify that they were
    Primary key fingerprint: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
    ```
 
-### Reproducing AdGuard Home builds {#reproducing-builds}
+### Reproduction des versions d'AdGuard Home {#reproducing-builds}
 
-AdGuard Home uses [reproducible builds][repr]. See the `build-release.sh` section in our [build script documentation][build].
+AdGuard Home utilise des [versions reproductibles][repr]. Consultez la section `build-release.sh` dans notre [documentation sur les scripts de construction][build].
 
 [build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
 [repr]: https://reproducible-builds.org/

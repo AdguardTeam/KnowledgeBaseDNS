@@ -7,6 +7,22 @@
     "message": "AdGuard DNS 知識庫",
     "description": "The site tagline used in meta description"
   },
+  "apiChangelog.loading": {
+    "message": "Loading changelog…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "Failed to load the changelog. You can view the original at {link}.",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "Versions",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "Loading API reference…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "Page Not Found",
     "description": "The title of the 404 page"

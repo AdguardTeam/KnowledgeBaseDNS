@@ -396,16 +396,16 @@ Düğme görüntülenmiyorsa veya otomatik güncelleme başarısız olduysa, ell
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. AdGuard Home arşivini geçici bir dizine çıkarın. Örneğin, arşivi `~/Downloads` dizininize indirdiyseniz ve `/tmp/` dizinine çıkarmak istiyorsanız:
+5. AdGuard Home arşivini geçici bir dizine çıkarın. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    macOS'ta aşağıdaki gibi bir şey yazın:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Eski AdGuard Home yürütülebilir dosyasını yenisiyle değiştirin. Çoğu Unix sisteminde komut aşağıdaki gibi görünecektir:
