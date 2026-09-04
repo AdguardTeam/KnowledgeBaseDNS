@@ -7,7 +7,7 @@ sidebar_position: 6
 
 This article describes how to set up and use the Query log streaming feature in AdGuard DNS. This feature allows Enterprise customers to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
 
-## 1. What is Query log streaming?
+## What is Query log streaming?
 
 Query Log streaming lets Enterprise customers automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
 
@@ -17,7 +17,7 @@ AdGuard DNS supports streaming logs exclusively to S3-compatible storage in its 
 
 During the current phase, setup is performed manually by the AdGuard team upon request.
 
-## 2. Availability and requirements
+## Availability and requirements
 
 To use Query Log streaming, the following requirements must be met:
 
@@ -26,7 +26,7 @@ To use Query Log streaming, the following requirements must be met:
 - **S3-Compatible Bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Google Cloud Storage, Wasabi, or MinIO).
 - **Access Credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
 
-## 3. How to request setup
+## How to request setup
 
 Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
 
@@ -47,7 +47,7 @@ Once the request is approved, the support team will provide further instructions
 
 Upon activation of the log stream, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. In the event of any connection or write errors during this process, the customer will be notified.  No further action is required once the stream is enabled.
 
-## 4. Log format and S3 object structure
+## Log format and S3 object structure
 
 Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
 
@@ -96,8 +96,9 @@ Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minifie
 "TimeAddedMs":1787671509268,
 "TrackerId":null
 }
+```
 
-## 5. Fields reference {#fields-reference}
+## Fields reference {#fields-reference}
 
 The table below describes the schema for the exported DNS query logs.
 
@@ -124,7 +125,7 @@ The table below describes the schema for the exported DNS query logs.
 | `TrackerId` | string / null | Yes | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found. | `"google"` |
 | `CategoryId` | string / null | Yes | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found. | `"search_engines"` |
 
-## 6. Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
+## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
 
 Understanding how logs are batched and delivered is critical for designing your SIEM ingestion pipeline.
 - **Batch-Only Delivery:** Logs are exported strictly in batches, not in real time. To keep the system stable and adapt to different traffic levels, both batch sizes and delivery intervals are flexible. Exact file sizes and upload times are not fixed and may vary as the system is optimized.
@@ -135,7 +136,7 @@ Understanding how logs are batched and delivered is critical for designing your 
 - **Unreachable destination (retries or drops):** If your S3 endpoint or bucket becomes unreachable (e.g., due to expired credentials or network outages on your provider's side), AdGuard DNS may attempt retries. However, depending on backend limits, log events generated during the outage might be dropped (skipped) to prevent buffer overflow.
 - **No historical backfill:** Log streaming is strictly forward-looking. Exporting historical logs generated before the streaming feature was activated is not supported.
 
-## 7. Security and privacy
+## Security and privacy
 
 DNS query logs contain highly sensitive network and metadata. To ensure the safety of your organization's data, please observe the following security principles:
 
@@ -146,7 +147,7 @@ DNS query logs contain highly sensitive network and metadata. To ensure the safe
 - **Dashboard Logging Settings Impact:** If certain types of logging are disabled in your AdGuard DNS account settings, this will directly affect the schema of your exported logs. For example, if you disable specific device metadata logging, those fields will be omitted (or populated with null values) in the streamed JSON files.
 - **No Bypass of Privacy Settings:** AdGuard DNS strictly respects your configuration. Under no circumstances will AdGuard bypass, override, or circumvent your account's privacy and data-anonymization settings when exporting events to your external storage.
 
-## 8. How to Ingest Logs into SIEM
+## How to Ingest Logs into SIEM
 
 Since AdGuard DNS streams query logs to S3-compatible storage, configuring the ingestion pipeline into your SIEM platform is handled entirely on your side.
 
@@ -155,7 +156,7 @@ Since AdGuard DNS streams query logs to S3-compatible storage, configuring the i
 - **Standard S3 Connectors:** For major platforms such as **Splunk**, **Microsoft Sentinel**, and **Elastic**, you typically utilize their respective native S3 connectors, inputs, or log collectors.
 - **Infrastructure-Dependent Setup:** The exact configuration, index mapping, and parsing rules inside your SIEM depend heavily on your organization's specific infrastructure, data schemas, and retention policies.
 
-## 9. Troubleshooting
+## Troubleshooting
 
 This section details common integration issues you may encounter when setting up or running the query log stream, along with steps to resolve them.
 
@@ -213,7 +214,7 @@ This section details common integration issues you may encounter when setting up
 
 **Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
 
-## 10. FAQ
+## FAQ
 
 #### Can logs be streamed directly to Splunk or Microsoft Sentinel?
 
@@ -229,7 +230,7 @@ No. Log streaming is strictly forward-looking. Only DNS query events generated *
 
 #### How quickly are logs delivered?
 
-Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to [Section 6](#delivery-guarantees-and-limitations) (Delivery Guarantees and Limitations).
+Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section.
 
 #### Is the delivery of every single event guaranteed?
 
@@ -241,7 +242,7 @@ Yes. Under the "at-least-once" delivery model, network retries triggered by tran
 
 #### What fields are included in the logs?
 
-The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to [Section 5](#fields-reference). Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
+The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
 
 #### What happens if Enterprise status is lost?
 
