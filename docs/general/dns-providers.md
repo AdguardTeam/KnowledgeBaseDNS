@@ -448,6 +448,58 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 | DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
 | DNS-over-TLS | `tls://ordns.he.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net) |
 
+### LKBIN DNS
+
+[LKBIN DNS](https://mydns.lkbin.my.id) is a public DNS-over-HTTPS resolver. It blocks ads, trackers, and malware. Dedicated endpoints are available for security, family, and community filters (Hagezi, AdGuard), plus an unfiltered resolver. DNSSEC is enabled, no logs are kept.
+
+#### Unfiltered
+
+This variant doesn't filter anything.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/unfiltered` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/unfiltered&name=mydns.lkbin.my.id) |
+
+#### AdBlock
+
+Blocks ads and trackers.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/dns-query&name=mydns.lkbin.my.id) |
+
+#### Security
+
+Blocks malware, phishing, and ransomware.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/antivirus` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/antivirus&name=mydns.lkbin.my.id) |
+
+#### Family
+
+Blocks adult content, gambling, and other harmful sites.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/family` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/family&name=mydns.lkbin.my.id) |
+
+#### Hagezi Filter
+
+Blocks ads, trackers, malware, and more using the Hagezi blocklist.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/hagezi` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/hagezi&name=mydns.lkbin.my.id) |
+
+#### AdGuard Filter
+
+Blocks ads, trackers, and malicious domains using AdGuard-based filtering.
+
+| Protocol | Address | Links |
+|---------|--------|-------|
+| DNS-over-HTTPS | `https://mydns.lkbin.my.id/adguard` | [Add to AdGuard](adguard:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://mydns.lkbin.my.id/adguard&name=mydns.lkbin.my.id) |
+
 ### Mullvad
 
 [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) provides publicly accessible DNS with QNAME minimization, endpoints located in Germany, Singapore, Sweden, United Kingdom and United States (Dallas & New York).
