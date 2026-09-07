@@ -165,11 +165,11 @@ Il n'existe actuellement aucun moyen de définir ces paramètres depuis l'interf
 
 2. Ouvrez `AdGuardHome.yaml` dans votre éditeur.
 
-3. Set the `http.address` setting to a new network interface. Par exemple :
+3. Définissez le paramètre `http.address` sur une nouvelle interface réseau. Par exemple :
 
-   - `0.0.0.0:0` to listen on all network interfaces;
-   - `0.0.0.0:8080` to listen on all network interfaces with port `8080`;
-   - `127.0.0.1:0` to listen on the local loopback interface only.
+   - `0.0.0.0:0` pour écouter sur toutes les interfaces réseau ;
+   - `0.0.0.0:8080` pour écouter sur toutes les interfaces réseau avec le port `8080` ;
+   - `127.0.0.1:0` pour écouter uniquement sur l'interface de boucle locale.
 
 4. Redémarrez AdGuard Home :
 
@@ -177,35 +177,35 @@ Il n'existe actuellement aucun moyen de définir ces paramètres depuis l'interf
    ./AdGuardHome -s start
    ```
 
-## How do I set up AdGuard Home as default DNS server? {#defaultdns}
+## Comment configurer AdGuard Home en tant que serveur DNS par défaut ? {#defaultdns}
 
-See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
+Consultez la section [_Configuration des appareils_](/adguard-home/getting-started#configure-devices) sur la page _Premiers pas_.
 
-## Are there any known limitations? {#limitations}
+## Existe-t-il des limitations connues ? {#limitations}
 
-Here are some examples of what cannot be blocked by a DNS-level blocker:
+Voici quelques exemples de ce qui ne peut pas être bloqué par un bloqueur au niveau DNS :
 
-- YouTube, Twitch ads.
+- YouTube, publicités Twitch.
 
-- Facebook, X (formerly Twitter), Instagram sponsored posts.
+- Facebook, X (anciennement Twitter), publications sponsorisées Instagram.
 
-Basically, any ad that shares a domain with content cannot be blocked by a DNS-level blocker, unless you are ready to block the content as well.
+Fondamentalement, toute publicité qui partage un domaine de contenu ne peut pas être bloquée par un bloqueur au niveau DNS, à moins que vous ne soyez prêt à bloquer le contenu également.
 
-### Any possibility of dealing with this in the future?
+### Y a-t-il une possibilité de résoudre cela à l'avenir ?
 
-DNS will never be enough to do this. Your only option is to use a content blocking proxy like what we do in the [standalone AdGuard applications][adguard]. We’ll be adding support for this feature to AdGuard Home in the future. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
+DNS ne sera jamais suffisant pour cela. Votre seule option est d'utiliser un proxy de blocage de contenu comme ce que nous faisons dans les [applications AdGuard autonomes][adguard]. Nous ajouterons la prise en charge de cette fonctionnalité à AdGuard Home à l'avenir. Unfortunately, even then there will still be cases where it won’t be enough or it will require quite complicated configuration.
 
 [adguard]: https://adguard.com/
 
 ## Why do I get `bind: address already in use` error when trying to install on Ubuntu? {#bindinuse}
 
-This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. You can see this by running:
+This happens because the port 53 on `localhost`, which is used for DNS, is already taken by another program. Ubuntu comes with a local DNS called `systemd-resolved`, which uses the address `127.0.0.53:53`, thus preventing AdGuard Home from binding to `127.0.0.1:53`. Vous pouvez voir cela en exécutant :
 
 ```sh
 sudo lsof -i :53
 ```
 
-The output should be similar to:
+La sortie devrait être semblable à :
 
 ```none
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME

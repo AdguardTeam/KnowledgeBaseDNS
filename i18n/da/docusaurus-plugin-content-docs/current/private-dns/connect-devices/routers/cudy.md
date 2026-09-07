@@ -5,102 +5,102 @@ sidebar_position: 12
 
 :::info
 
-- Ad Shield allows AdGuard DNS to provide network-level filtering of ads, trackers, and other unwanted content. Running at the router level, it protects all connected devices and improves privacy across browsing, streaming, and app usage.
-- This feature is available for Cudy routers with firmware version 2.5.0+.
-- TR3000 is shown as an example in this tutorial.
+- Ad Shield muliggør, at AdGuard DNS kan filtrere annoncer, trackere og andet uønsket indhold på netværksniveau. Kørende på routerniveau, beskytter den alle tilsluttede enheder og forbedrer fortroligheden på tværs af surfing, streaming og app-brug.
+- Denne funktion er tilgængelig på Cudy-routere med firmwareversion 2.5.0+.
+- TR3000 bruges som et eksempel i denne vejledning.
 
 :::
 
-## Use the Cudy app
+## Brug af Cudy-appen
 
-1. Connect your phone to the router’s Wi-Fi network.
+1. Tilslut mobilen til routerens Wi-Fi-netværk.
 
-2. Download the Cudy app on your phone.
+2. Download Curdy-appen på mobilen.
 
-[Download for Android](https://play.google.com/store/apps/details?id=com.cudy.cloudapp)
+[Download til Android](https://play.google.com/store/apps/details?id=com.cudy.cloudapp)
 
-[Download for iOS](https://apps.apple.com/sg/app/cudy/id6464377818)
+[Download til iOS](https://apps.apple.com/sg/app/cudy/id6464377818)
 
-1. Open the Cudy App on your phone. Tick _I agree with the Privacy Policy and the Terms of Sale_ and select _Local Management_.
+1. Åbn Cudy-appen på mobilen. Markér _Jeg accepterer Fortrolighedspolitik og Salgsbetingelser_, og vælg _Lokal håndtering_.
 
 ![App](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy1.png)
 
-1. Select _Wi-Fi Device_.
+1. Vælg _Wi-Fi-enhed_.
 
-![Wi-Fi select](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy2.png)
+![Wi-Fi-valg](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy2.png)
 
 :::tip
 
-If you have managed other types of devices on the Cudy App before, you may need to tap the menu icon (☰) on the left of _Dashboard_ to switch to _Wi-Fi Device_.
+Er der tidligere håndteret andre enhedstyper i Cudy-appen, skal der muligvis trykkes på menuikonet (☰) til venstre for _Kontrolpanel_ for at skifte til _Wi-Fi-enhed_.
 
 :::
 
-1. Tap the router.
+1. Tryk på routeren.
 
-![Router select](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy3.png)
+![Routervalg](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy3.png)
 
-1. Enter the router's administrator password. Create one if this is your login for the first time.
+1. Angiv routerens administratoradgangskode. Opret én, hvis der logges ind for første gang.
 
-![Router auth](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy4.png)
+![Routergodkendelse](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy4.png)
 
-1. Tap Ad Shield.
+1. Tryk på Ad Shield.
 
 ![Ad Shield](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy5.png)
 
-1. Toggle on to enable Ad Shield.
+1. Slå til for at aktivere Ad Shield.
 
-![Ad Shield enable](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy6.png)
+![Ad Shield-aktivering](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy6.png)
 
-1. Select a "AdGuard DNS".
+1. Vælg en "AdGuard DNS".
 
 ![AdGuard DNS](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy7.png)
 
 :::note
 
-AdGuard DNS requires Cudy App V1.5.5+
+AdGuard DNS kræver Cudy-app V1.5.5+
 
 :::
 
-1. Tick _I agree to the AdGuard DNS privacy policy_, and click _Confirm_.
+1. Markér _Jeg accepterer AdGuard DNS Fortrolighedspolitik_, og klik på _Bekræft_.
 
-![Privacy policy](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy8.png)
+![Fortrolighedspolitik](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy8.png)
 
-1. Enter your AdGuard DNS account username and password, and click _Continue_.
+1. Angiv brugernavn og adgangskode til AdGuard DNS-kontoen, og klik på _Fortsæt_.
 
-![Authorization](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy9.png)
+![Godkendelse](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy9.png)
 
-1. Set a Device Name, keep DNS Server as _Default_, and tap the ✔ icon at the top right.
+1. Angiv et Enhedsnavn, bibehold DNS-serveren som _Standard_ og tryk på ✔-ikonet øverst til højre.
 
-![Device name](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy10.png)
+![Enhedsnavn](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy10.png)
 
-1. Now AdGuard DNS is working to help block ads or other unwanted contents. For more settings, click _Go to Dashboard_.
+1. AdGuard DNS assisterer nu med at blokere annoncer eller andet uønsket indhold. For yderligere indstillinger, klik på _Gå til Kontrolpanel_.
 
-![Go to Dashboard](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy11.png)
+![Gå til Kontrolpanel](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy11.png)
 
-## Using the Web Interface
+## Brug af webgrænseflade
 
-1. Log in your router's web interface at cudy.net or 192.168.10.1.
+1. Log ind på routerens webgrænseflade via cudy.net eller 192.168.10.1.
 
-2. Go to _Advanced Settings_ → _Security_ → _Ad Shield_.
+2. Gå til _Avancerede indstillinger_ → _Sikkerhed_ → _Ad Shield_.
 
-![Advanced settings](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy12.png)
+![Avancerede inds5](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy12.png)
 
-1. Enable _Ad Shield_ and select AdGuard DNS as the service provider.
+1. Aktivér _Ad Shield_ og vælg AdGuard DNS som tjenesteudbyder.
 
-2. Tick _I agree to the AdGuard DNS Privacy policy_ and click _Save & Apply_.
+2. Markér _Jeg accepterer AdGuard DNS Fortrolighedspolitik_, og klik på _Gem og Anvend_.
 
-![Privacy policy](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy13.png)
+![Fortrolighedspolitik](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy13.png)
 
-1. Log in your Adguard DNS account with the username and password, and click _Continue_.
+1. Log ind på AdGuard DNS-kontoen med brugernavn og adgangskode, og klik på _Fortsæt_.
 
-![Username and password](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy14.png)
+![Brugernavn og adgangskode](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy14.png)
 
-1. Set _Device Name_, select _Default_ in _DNS Server_, and click _Save & Apply_.
+1. Angiv _Enhedsnavn_, vælg _Standard_ under _DNS-server_, og klik på _Gem og Anvend_.
 
-![Device name](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy15.png)
+![Enhedsnavn](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy15.png)
 
 1. Check the _Active_ status on _System Status_ → _Ad Shield_ and click _Go to Dashboard_ to set up AdGuard DNS.
 
-![Active](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy16.png)
+![Aktiv](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy16.png)
 
-![Dashboard](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy17.png)
+![Kontrolpanel](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy17.png)

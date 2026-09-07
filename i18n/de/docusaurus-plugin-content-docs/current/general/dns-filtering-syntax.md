@@ -125,7 +125,7 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`][]-Modifikator mit seinem Wert `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der [`dnstype`][]-Modifikator mit seinem Wert, `A`.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [client</code>-][]Modifikator mit seinem Wert `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der [`dnstype`][]-Modifikator mit seinem Wert, `A`.
 
 :::note
 
@@ -545,7 +545,7 @@ Der `respgeo`-Modifikator kann auch verwendet werden, um Regeln basierend auf de
 
 ASN steht für **Autonomous System Number**. Es identifiziert ein autonomes System — ein Netzwerk, das von einem ISP, Hosting-Anbieter, Cloud-Anbieter, Unternehmen oder einer anderen Organisation betrieben wird.
 
-Dieser Modifikator überprüft die **Ziel-ASN** — die ASN, die der IP-Adresse zugeordnet ist, zu der die Domain auflöst. Er überprüft **nicht** die ASN des Benutzers, Geräts oder DNS-Clients.
+Dieser Modifikator überprüft die <strong x-id=\"1\">Ziel-ASN</strong> — die ASN, die der IP-Adresse zugeordnet ist, zu der die Domain auflöst. Er überprüft **nicht** die ASN des Benutzers, Geräts oder DNS-Clients.
 
 Der Wert des Modifikators muss eine ASN im Format `AS<number>` sein, zum Beispiel `AS15169`.
 
@@ -645,7 +645,7 @@ Was es kann:
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
 [Adblock-Stil-Syntax]: #adblock-style-syntax
-[`client`]: #client-modifier
+[client</code>-]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
