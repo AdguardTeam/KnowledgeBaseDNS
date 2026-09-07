@@ -15,11 +15,7 @@ This article describes how to set up and use the *Query log streaming* feature i
 
 *Query log streaming* lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
 
-Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [*Delivery garantees and limitations*](#delivery-guarantees-and-limitations) section for details).
-
-AdGuard DNS supports streaming logs exclusively to S3-compatible storage in its current version. You can then ingest these logs into your SIEM or analytics pipeline using your own tooling and connectors.
-
-During the current phase, setup is performed manually by the AdGuard team upon request.
+Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [*Delivery guarantees and limitations*](#delivery-guarantees-and-limitations) section for details).
 
 ## Availability and requirements
 
@@ -239,7 +235,7 @@ Logs are delivered in compressed batches rather than in real-time. For more deta
 
 ### Is the delivery of every single event guaranteed?
 
-Yes. Under the “at-least-once” delivery model, network retries triggered by transient outages can cause duplicate log events to be written to the bucket. The ingestion pipeline or SIEM must be configured to handle deduplication.
+Yes, under normal operating conditions. However, if the destination bucket becomes unreachable, log events may eventually be dropped once the retry buffer limit is exceeded. Refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section for details.
 
 ### Are duplicate events possible in the destination?
 
@@ -251,7 +247,7 @@ The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `
 
 ### What happens if Enterprise status is lost?
 
-Log streaming is strictly an Enterprise-tier feature. If the account downgrades or the subscription lapses, the streaming service will be automatically deactivated.
+Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
 
 ### Can log streaming be deactivated?
 
