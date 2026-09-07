@@ -32,11 +32,12 @@ docker run \
     -d \
     --name adguardhome \
     -p 53:53/tcp -p 53:53/udp \
-    -p 67:67/udp -p 68:68/udp \
-    -p 80:80/tcp -p 443:443/tcp \
-    -p 443:443/udp -p 3000:3000/tcp \
-    -p 853:853/tcp \
-    -p 853:853/udp \
+    -p 67:67/udp \
+    -p 68:68/tcp -p 68:68/udp \
+    -p 80:80/tcp \
+    -p 443:443/tcp -p 443:443/udp \
+    -p 3000:3000/tcp \
+    -p 853:853/tcp -p 853:853/udp \
     -p 5443:5443/tcp -p 5443:5443/udp \
     -p 6060:6060/tcp \
     --restart unless-stopped \
@@ -173,3 +174,39 @@ To run AdGuard Home on a system where the `resolved` daemon is started, `DNSStub
     ```sh
     systemctl reload-or-restart systemd-resolved
     ```
+
+
+## Docker compose {#docker-compose}
+
+You can also use the following `docker-compose.yml` file to bootstrap a container quickly:
+
+```yaml
+services:
+  adguardhome:
+    container_name: adguardhome
+    image: adguard/adguardhome:latest
+    restart: unless-stopped
+    volumes:
+      - ./data:/opt/adguardhome/work/data
+      - ./config:/opt/adguardhome/conf
+    ports:
+      - "53:53/tcp"     # for plain DNS
+      - "53:53/udp"     # for plain DNS
+      - "67:67/udp"     # for DHCP
+      - "68:68/tcp"     # for DHCP
+      - "68:68/udp"     # for DHCP
+      - "80:80/tcp"     # for admin panel and HTTP/DNS-over-HTTPS
+      - "443:443/tcp"   # for admin panel and HTTP/DNS-over-HTTPS
+      - "443:443/udp"   # for admin panel and HTTP/DNS-over-HTTPS
+      - "3000:3000/tcp" # for admin panel and HTTP/DNS-over-HTTPS
+      - "853:853/tcp"   # for DNS-over-TLS
+      - "853:853/udp"   # for DNS-over-QUIC
+      - "5443:5443/tcp" # for running a DNSCrypt server
+      - "5443:5443/udp" # for running a DNSCrypt server
+      - "6060:6060/tcp" # for PPROF debug API
+    network_mode: host
+```
+
+Pay attention that it will create two volumes, locally located at `./data` and `./config` (same parent folder as where you execute your `docker-compose.yml` file), to store the container's files.
+
+The way it works is similar to what's explained in the above sections.
