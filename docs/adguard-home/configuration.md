@@ -838,12 +838,12 @@ Removing an entry from settings file will reset it to the default value. Deletin
 
 Please follow these steps to create a new password for your user account:
 
-1. Install `htpasswd`, which is a part of *Apache2 Web Server:*
+1. Install `htpasswd`. On Linux, install the utility package instead of the Apache2 Web Server:
 
      - Ubuntu:
 
         ```sh
-        sudo apt-get install apache2
+        sudo apt-get install apache2-utils
         ```
 
      - Fedora:
