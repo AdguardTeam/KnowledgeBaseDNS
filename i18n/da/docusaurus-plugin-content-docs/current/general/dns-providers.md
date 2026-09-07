@@ -611,7 +611,7 @@ Alm. DNS-servere med beskyttelse mod phishing og spyware. De inkluderer sortlist
 
 #### Ikke-sikret
 
-Ikke-sikrede DNS-servere tilbyder ingen sikkerhedssortliste, DNSSEC eller EDNS Client Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Protokol       | Adresse                                                          |                                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -3,34 +3,34 @@ title: Raspberry Pi
 sidebar_position: 12
 ---
 
-You can install AdGuard Home on your [Raspberry Pi][pi] and use it to filter ads and save traffic. Once it is installed, you can use your AdGuard Home on any machine connected to the same local network.
+AdGuard Home kan installeres på [Raspberry Pi][pi] og bruges til at filtrere reklamer og spare datatrafik. Når installeret, kan AdGuard Home benyttes på enhver enhed forbundet til det samme lokale netværk.
 
 [pi]: https://www.raspberrypi.org
 
-## Prepare your Pi {#prepare}
+## Klargør Pi {#prepare}
 
-You’ll need a Raspberry Pi with network access and [SSH enabled][ssh]. Connect it to a display and a keyboard, boot it, and write down the IP address that has been assigned to your Pi:
+Der skal bruges en Raspberry Pi med netværksadgang samt [SSH aktiveret][ssh]. Slut den til en skærm og et tastatur, start den op og notér IP-adresse, som Pi-enheden er blevet tildelt:
 
 ```sh
 hostname -I | xargs -n 1
 ```
 
-If there are several IP addresses, write down the first one. Switch back to your main computer, but keep your Pi running, and launch an ssh client. On Windows, you can use [PuTTY][putty], while on Linux, macOS, and other Unix-like OSes, you can just use your preferred terminal emulator.
+Findes flere IP-adresser, notér den første. Skift til den primære computer, mens Pi-enheden fortsat kører, og start en SSH-klient. På Windows kan der bruges [PuTTY][putty], mens der på Linux, macOS og andre Unix-lignende OS'er blot kan bruge den foretrukne terminalemulator.
 
-Type:
+Skriv:
 
 ```sh
 ssh pi@192.168.10.20
 ```
 
-(where `192.168.10.20` is the IP you’ve written down) and then type your Pi’s password (which is `raspberry` unless you’ve changed it already). Once you’re done, you will be greeted by the command-line interface. Now you’re ready to install your own AdGuard Home!
+(hvor `192.168.10.20` er den IP-adresse, der blev noteret), og skriv dernæst adgangskoden til Pi-enheden (som er `raspberry`, hvis den ikke allerede er blevet skiftet). Når det er klaret, vises kommandolinjegrænsefladen. Nu er alt klar til installationen af AdGuard Home!
 
 [ssh]: https://www.raspberrypi.com/documentation/computers/remote-access.html
 [putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-## Install AdGuard Home {#install}
+## Installation af AdGuard Home {#install}
 
-Go to the [AdGuard Home page][inst] and download the binaries for Raspberry Pi:
+Gå til [AdGuard-websiden][inst] og download de binære filer til Raspberry Pi:
 
 ```sh
 cd
@@ -38,36 +38,36 @@ wget 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv6.tar
 tar -f AdGuardHome_linux_armv6.tar.gz -x -v
 ```
 
-Replace `armv6` with the ARM version that is best supported by your Pi.
+Erstat `armv6` med den ARM-version, der understøttes bedst af Pi-enheden.
 
-That command unpacks the necessary data into a new directory called `AdGuardHome`.
+Denne kommando udpakker de nødvendige data til et ny mappe ved navn `AdGuardHome`.
 
-Then, install AdGuard Home as a [service].
+Installér dernæst AdGuard Home som en \[tjeneste].
 
 [service]: /adguard-home/getting-started#service
 [inst]: https://github.com/AdguardTeam/AdGuardHome
 
-## Check the filtering {#check}
+## Tjek filtreringen {#check}
 
-You can verify that it’s working properly by running this on your Pi:
+Det kan tjekkes, om den fungerer korrekt, ved at køre denne på Pi-enheden:
 
 ```sh
 host doubleclick.net 127.0.0.1
 ```
 
-If everything works correctly, you will get this output:
+Fungerer alt korrekt, vises dette output:
 
 ```sh
-Using domain server:
-Name: 127.0.0.1
-Address: 127.0.0.1#53
-Aliases:
+Bruger domæneserver:
+Navn: 127.0.0.1
+Adresse: 127.0.0.1#53
+Aliasser:
 
-Host doubleclick.net not found: 3(NXDOMAIN)
+Værten doubleclick.net blev ikke fundet: 3(NXDOMAIN)
 ```
 
-## Configure your devices {#devices}
+## Opsæt relevante enheder {#devices}
 
-Once it is confirmed that AdGuard Home works on your Raspberry Pi, you can use it on other computers in your network by changing their system DNS settings to use the Pi’s IP address.
+Når det er bekræftet, at AdGuard Home fungerer på Raspberry Pi-enheden, kan den benyttes på andre computere på netværket ved at ændre deres system-DNS-indstillinger, så de bruger Pi-enhedens IP-adresse.
 
-Go to the _Setup Guide_ page in the web interface and follow the instructions.
+Gå til siden _Opsætningsvejledning_ i webgrænsefladen og følg instruktionerne.

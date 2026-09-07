@@ -611,7 +611,7 @@ Obvyklé servery DNS, které poskytují ochranu před krádeží identity a spyw
 
 #### Nezabezpečený
 
-Nezabezpečené servery DNS neposkytují žádné zabezpečené seznamy zakázaných, DNSSEC, nebo EDNS Client-Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Protokol       | Adresa                                                                |                                                                                                                                                                                                                                |
 | -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -719,13 +719,13 @@ Blokuje reklamy a obtěžující weby.
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS, IPv4 | `114.114.114.114` a `114.114.115.115` | [Přidat do AdGuardu](adguard:add_dns_server?address=114.114.114.114&name=114DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.114&name=114DNS) |
 
-#### Safe
+#### Bezpečný
 
-Blocks phishing, malicious and other unsafe websites.
+Blokuje krádež identity, škodlivé a další nebezpečné weby.
 
-| Protokol  | Adresa                                  |                                                                                                                                                                   |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `114.114.114.119` and `114.114.115.119` | [Add to AdGuard](adguard:add_dns_server?address=114.114.114.119&name=114DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.119&name=114DNS) |
+| Protokol  | Adresa                                |                                                                                                                                                                   |
+| --------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `114.114.114.119` a `114.114.115.119` | [Add to AdGuard](adguard:add_dns_server?address=114.114.114.119&name=114DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.119&name=114DNS) |
 
 #### Family
 
@@ -1063,7 +1063,7 @@ In *Basic* mode, there is no traffic filtering.
 | DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
 | DNS-over-TLS   | `tls://common.dot.dns.yandex.net`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
-#### Safe
+#### Bezpečný
 
 In *Safe* mode, protection from infected and fraudulent sites is provided.
 

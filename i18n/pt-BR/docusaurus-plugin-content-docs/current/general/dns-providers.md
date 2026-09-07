@@ -611,7 +611,7 @@ Servidores DNS regulares que fornecem proteção contra phishing e spyware. Eles
 
 #### Inseguro
 
-Unsecured DNS servers don’t provide security blocklists, DNSSEC, or EDNS Client Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Protocolo       | Endereço                                                          |                                                                                                                                                                                                                                     |
 | --------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
