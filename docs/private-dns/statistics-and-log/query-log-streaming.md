@@ -223,7 +223,7 @@ No. In the current MVP version, direct streaming to SIEM endpoints or APIs (such
 
 ### Can storage options other than S3 be used?
 
-No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Google Cloud Storage, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
+No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
 
 ### Is it possible to retrieve historical logs?
 
