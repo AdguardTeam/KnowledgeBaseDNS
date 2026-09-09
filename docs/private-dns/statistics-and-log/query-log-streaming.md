@@ -23,7 +23,7 @@ To use *Query log streaming*, the following requirements must be met:
 
 - **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
 - **Active query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-Compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Google Cloud Storage, Wasabi, or MinIO).
+- **S3-Compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
 - **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
 
 ## How to request setup
@@ -43,9 +43,9 @@ Reach out to your dedicated AdGuard account manager or contact AdGuard support t
 
 Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
 
-### Step 4: Stream activation
+### Step 4: Wait for the log stream to be activated
 
-Upon activation of the log stream, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. In the event of any connection or write errors during this process, the customer will be notified. No further action is required once the stream is enabled.
+Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
 
 ## Log format and S3 object structure
 
@@ -194,7 +194,7 @@ This section details common integration issues you may encounter when setting up
 ### Missing fields in the logs
 
 **Potential cause:** Specific logging or privacy features (such as client IP logging or device metadata collection) are disabled in your AdGuard DNS dashboard settings.
-*
+
 **Resolution:** Review your privacy and logging settings within the AdGuard DNS dashboard. The log streaming export strictly respects these settings and will not bypass your data-minimization preferences.
 
 ### Enterprise status changed
