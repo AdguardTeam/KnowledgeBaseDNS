@@ -50,5 +50,4 @@ Enables parental control on selected days with a specified time interval, or sev
 To set the schedule, do this:
 Open *Servers* → choose the server → *Parental control* → *Pause schedule*, then click “+” or *Edit* next to a day and set each interval separately.
 
-
 ![Schedule *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
