@@ -45,7 +45,7 @@ This feature lets you restrict access to specific categories of websites by choo
 
 ### Pause schedule
 
-Enables parental control on selected days with a specified time interval, or several of them. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays, with a pause for lunch from 13:00 till 15:00. But on weekends, this access is not restricted. Note also, that intervals can run past midnight: if you set a pause from 22:00 to 07:00 on Monday, the dashboard will display two intervals — Monday 22:00–00:00 and Tuesday 00:00–07:00. Customize the schedule to your liking and block access to selected sites during the hours you want.
+Enables parental control on selected days with one or multiple time intervals. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays, with a pause for lunch from 13:00 till 15:00. But on weekends, this access is not restricted. Note also that intervals can run past midnight: if you set a pause from 22:00 to 07:00 on Monday, the dashboard will display two intervals — Monday 22:00–00:00 and Tuesday 00:00–07:00. Customize the schedule to your liking and block access to selected sites during the hours you want.
 
 To set the schedule, do this:
 
