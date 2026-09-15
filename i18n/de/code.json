@@ -8,11 +8,11 @@
     "description": "The site tagline used in meta description"
   },
   "apiChangelog.loading": {
-    "message": "Loading changelog…",
+    "message": "Änderungsprotokoll wird geladen…",
     "description": "Placeholder shown while the API changelog is being loaded"
   },
   "apiChangelog.error": {
-    "message": "Failed to load the changelog. You can view the original at {link}.",
+    "message": "Das Änderungsprotokoll konnte nicht geladen werden. Das Original kann unter {link} eingesehen werden.",
     "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
   },
   "apiChangelog.versions": {
@@ -20,7 +20,7 @@
     "description": "Accessible name of the version list sidebar on the API changelog page"
   },
   "apiReference.loading": {
-    "message": "Loading API reference…",
+    "message": "API-Referenz wird geladen …",
     "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
   },
   "theme.NotFound.title": {
@@ -453,31 +453,31 @@
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
+    "message": "Systemmodus",
     "description": "The name for the system color mode"
   },
   "theme.admonition.warning": {
-    "message": "warning",
+    "message": "Warnhinweis",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
+    "message": "Seitenleistenkategorie '{label}' öffnen",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
+    "message": "Seitenleistenkategorie '{label}' schließen",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new tab)",
+    "message": "(öffnet in einem neuen Tab)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
+    "message": "Auswahlmenü öffnen",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
+    "message": "Auswahlmenü ausblenden",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.blog.author.pageTitle": {
@@ -485,35 +485,35 @@
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
+    "message": "Autoren",
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "View all authors",
+    "message": "Alle Autoren anzeigen",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
+    "message": "Dieser Autor hat noch keine Beiträge veröffentlicht.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Unlisted page",
+    "message": "Nicht gelistete Seite",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "message": "Diese Seite ist nicht öffentlich. Suchmaschinen werden sie nicht indexieren, und nur Nutzer mit einem direkten Link können darauf zugreifen.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
+    "message": "Entwurf der Seite",
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "message": "Diese Seite ist ein Entwurf. Sie ist nur in der Entwicklungsumgebung sichtbar und wird aus der Produktionsversion ausgeschlossen.",
     "description": "The draft content banner message"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 item|{count} items",
+    "message": "1 Artikel|{count} Artikel",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   }
 }

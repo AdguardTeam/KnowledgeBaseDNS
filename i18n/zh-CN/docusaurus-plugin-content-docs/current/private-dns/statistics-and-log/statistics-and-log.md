@@ -11,3 +11,4 @@ AdGuard DNS 提供广泛的有用工具来监控查询：
 - [流量终点](/private-dns/statistics-and-log/traffic-destination.md)
 - [公司](/private-dns/statistics-and-log/companies.md)
 - [查询日志](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

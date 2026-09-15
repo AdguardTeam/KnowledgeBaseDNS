@@ -448,52 +448,6 @@ Hurricane Electric Public Recursor is a free alternative DNS service by Hurrican
 | DNS-sobre-HTTPS | `https://ordns.he.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
 | DNS-sobre-TLS   | `tls://ordns.he.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
 
-### Mullvad
-
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) fornece DNS publicamente acessível com minimização de QNAME, terminais localizados na Alemanha, Cingapura, Suécia, Reino Unido e Estados Unidos (Dallas e Nova York).
-
-#### Sem filtragem
-
-| Protocolo       | Endereço                            |                                                                                                                                                                                                                           |
-| --------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://dns.mullvad.net/dns-query` | [Adicionar ao AdGuard](adguard:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH) |
-| DNS-sobre-TLS   | `tls://dns.mullvad.net`             | [Adicionar ao AdGuard](adguard:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT)                         |
-
-#### Ad blocking
-
-| Protocolo       | Endereço                                    |                                                                                                                                                                                                                                                                     |
-| --------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://adblock.dns.mullvad.net/dns-query` | [Adicionar ao AdGuard](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
-| DNS-sobre-TLS   | `tls://adblock.dns.mullvad.net`             | [Adicionar ao AdGuard](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net)                         |
-
-#### Ad + malware blocking
-
-| Protocolo       | Endereço                                 |                                                                                                                                                                                                                                                         |
-| --------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://base.dns.mullvad.net/dns-query` | [Adicionar ao AdGuard](adguard:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net) |
-| DNS-sobre-TLS   | `tls://base.dns.mullvad.net`             | [Adicionar ao AdGuard](adguard:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net)                         |
-
-#### Bloqueio de anúncios + malware + redes sociais
-
-| Protocolo       | Endereço                                     |                                                                                                                                                                                                                                                                         |
-| --------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://extended.dns.mullvad.net/dns-query` | [Adicionar ao AdGuard](adguard:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net) |
-| DNS-sobre-TLS   | `tls://extended.dns.mullvad.net`             | [Adicionar ao AdGuard](adguard:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net)                         |
-
-#### Bloqueio de anúncios + malware + adulto + jogos de azar
-
-| Protocolo       | Endereço                                   |                                                                                                                                                                                                                                                                 |
-| --------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://family.dns.mullvad.net/dns-query` | [Adicionar ao AdGuard](adguard:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net) |
-| DNS-sobre-TLS   | `tls://family.dns.mullvad.net`             | [Adicionar ao AdGuard](adguard:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net), [Adicionar ao AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net)                         |
-
-#### Bloqueio de anúncios + malware + adulto + jogos de azar + redes sociais
-
-| Protocolo       | Endereço                                |                                                                                                                                                                                                                                         |
-| --------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-sobre-HTTPS | `https://all.dns.mullvad.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net) |
-| DNS-sobre-TLS   | `tls://all.dns.mullvad.net`             | [Add to AdGuard](adguard:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net)                         |
-
 ### Nawala Childprotection DNS
 
 [Nawala Childprotection DNS](http://nawala.id/) is an anycast Internet filtering system that protects children from inappropriate websites and abusive content.
@@ -611,7 +565,7 @@ Servidores DNS regulares que fornecem proteção contra phishing e spyware. Eles
 
 #### Inseguro
 
-Unsecured DNS servers don’t provide security blocklists, DNSSEC, or EDNS Client Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Protocolo       | Endereço                                                          |                                                                                                                                                                                                                                     |
 | --------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

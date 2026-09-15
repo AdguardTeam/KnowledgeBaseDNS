@@ -448,52 +448,6 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 | DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
 | DNS-over-TLS   | `tls://ordns.he.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
 
-### Mullvad
-
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) предоставляет общедоступный DNS-сервис с минимизацией QNAME, конечными точками в Германии, Сингапуре, Швеции, Великобритании и США (Даллас и Нью-Йорк).
-
-#### Нефильтрующий
-
-| Протокол       | Адрес                               |                                                                                                                                                                                                                       |
-| -------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH) |
-| DNS-over-TLS   | `tls://dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT)                         |
-
-#### Блокировка рекламы
-
-| Протокол       | Адрес                                       |                                                                                                                                                                                                                                                                 |
-| -------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://adblock.dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://adblock.dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net)                         |
-
-#### Блокировка рекламы и вредоносного ПО
-
-| Протокол       | Адрес                                    |                                                                                                                                                                                                                                                     |
-| -------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://base.dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://base.dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net)                         |
-
-#### Блокировка рекламы, вредоносного ПО и кнопок социальных сетей
-
-| Протокол       | Адрес                                        |                                                                                                                                                                                                                                                                     |
-| -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://extended.dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://extended.dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net)                         |
-
-#### Блокировка рекламы, вредоносного ПО, взрослых и азартных игр
-
-| Протокол       | Адрес                                      |                                                                                                                                                                                                                                                             |
-| -------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://family.dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://family.dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net)                         |
-
-#### Блокировка рекламы, вредоносного ПО, взрослых и азартных игр, а также кнопок социальных сетей
-
-| Протокол       | Адрес                                   |                                                                                                                                                                                                                                                 |
-| -------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://all.dns.mullvad.net/dns-query` | [Добавить в AdGuard](adguard:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://all.dns.mullvad.net`             | [Добавить в AdGuard](adguard:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net), [Добавить в AdGuard VPN](adguardvpn:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net)                         |
-
 ### Nawala Childprotection DNS
 
 [Nawala Childprotection DNS](http://nawala.id/) is an anycast Internet filtering system that protects children from inappropriate websites and abusive content.
@@ -611,7 +565,7 @@ Hurricane Electric Public Recursor — это бесплатный альтер�
 
 #### Незащищённый
 
-У незащищённых DNS-серверов нет списков блокировки, DNSSEC или EDNS Сlient Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Протокол       | Адрес                                                                    |                                                                                                                                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
