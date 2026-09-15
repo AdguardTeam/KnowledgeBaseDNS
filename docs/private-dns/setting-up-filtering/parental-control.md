@@ -55,10 +55,10 @@ To set up a pause schedule:
 
 You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
 
-![Overlapping intervals *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+![Overlapping intervals *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
 Select the *All day* checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
 
 Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
 
-![Pause past midnight *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/edit_pause.png)
+![Pause past midnight](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
