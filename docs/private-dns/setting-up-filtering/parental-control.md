@@ -3,8 +3,6 @@ title: Parental control
 sidebar_position: 5
 ---
 
-## What is it
-
 *Parental control* is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## How to set it up
