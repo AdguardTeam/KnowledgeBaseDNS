@@ -410,7 +410,7 @@ Objektet `dns` opsætter DNS-serveren. Den har flg. egenskaber:
 
   - `fastest_addr`: Finder IP-adressen med den laveste latenstid og returnerer denne IP-adresse i DNS-svaret.
 
-- `fastest_timeout`: The timeout used for dialing the addresses while picking the fastest. Andre værdier end positive erstattes med standardværdien `1s`.
+- `fastest_timeout`: Timeout brugt til at oprette forbindelse til adresserne med valg af den hurtigste. Andre værdier end positive erstattes med standardværdien `1s`.
 
 - `use_http3_upstreams`: Aktiverer DNS-over-HTTP/3 for DNS-over-HTTPS-upstream-servere, som understøtter det.
 
@@ -457,7 +457,7 @@ Objektet `dns` opsætter DNS-serveren. Den har flg. egenskaber:
 
 - `cache_ttl_max`: Den maksimale TTL-tilsidesættelse i sekunder. Er TTL'en for et svar fra upstream over denne værdi, erstattes TTL'en med denne. Skal være større end eller lig med `cache_ttl_min`.
 
-- `cache_optimistic`: Make AdGuard Home respond from the cache even when the entries are expired and also try to refresh them. TTL'en for sådanne svar er 10 sekunder.
+- `cache_optimistic`: Få AdGuard Home til at svare fra cachen, selv når posterne er udløbet, samt forsøg også at opdatere dem. TTL'en for sådanne svar er 10 sekunder.
 
 - `cache_optimistic_answer_ttl`: TTL for svar fra optimistisk cache.
 

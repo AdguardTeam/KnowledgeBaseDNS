@@ -263,7 +263,7 @@ Blokerer ondsindede samt phishing- og spam-domæner.
 | -------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4            | `1.1.1.1` og `1.0.0.1`                           | [Føj til AdGuard](adguard:add_dns_server?address=1.1.1.1&name=Cloudflare%20DNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=1.1.1.1&name=Cloudflare%20DNS)                                                                     |
 | DNS, IPv6            | `2606:4700:4700::1111` og `2606:4700:4700::1001` | [Føj til AdGuard](adguard:add_dns_server?address=2606:4700:4700::1111&name=Cloudflare%20DNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2606:4700:4700::1111&name=Cloudflare%20DNS)                                           |
-| DNS-over-HTTPS, IPv4 | `https://cloudflare-dns.com/dns-query`           | [Add to AdGuard](adguard:add_dns_server?address=https://cloudflare-dns.com/dns-query&name=dns.cloudflare.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://cloudflare-dns.com/dns-query&name=dns.cloudflare.com)         |
+| DNS-over-HTTPS, IPv4 | `https://cloudflare-dns.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://cloudflare-dns.com/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://cloudflare-dns.com/dns-query&name=dns.cloudflare.com)       |
 | DNS-over-HTTPS, IPv6 | `https://cloudflare-dns.com/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.cloudflare.com:53/dns-query&name=dns.cloudflare.com) |
 | DNS-over-TLS         | `tls://one.one.one.one`                          | [Føj til AdGuard](adguard:add_dns_server?address=tls://one.one.one.one&name=CloudflareDoT), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://one.one.one.one&name=CloudflareDoT)                                               |
 
@@ -565,7 +565,7 @@ Alm. DNS-servere med beskyttelse mod phishing og spyware. De inkluderer sortlist
 
 #### Ikke-sikret
 
-Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
+Ikke-sikrede DNS-servere tilbyder DNSSEC-validering for alle Quad9-endepunkter, men ingen sikkerhedssortliste eller EDNS Client Subnet.
 
 | Protokol       | Adresse                                                          |                                                                                                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -850,29 +850,29 @@ Skjul websteds- og in-app-annoncer oven i den beskyttende funktionalitet.
 
 #### Beskyttende opløsning med børnebeskyttelse og adblocking
 
-Avoid access to websites inappropriate for children, such as explicit content, violence or drugs. Plus filter ads on top of the protective functionality.
+Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Plus filtrér annoncer oven i den beskyttende funktionalitet.
 
-| Protokol       | Adresse                                                |                                                                                                                                                                                                                         |
-| -------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `86.54.11.11` and `86.54.11.211`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.11&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.11&name=DNS4EU)                                                             |
-| DNS, IPv6      | `2a13:1001::86:54:11:11` and `2a13:1001::86:54:11:211` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:11&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:11&name=DNS4EU)                                       |
-| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query`            | [Føj til AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU) |
-| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                        | [Føj til AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU)                         |
+| Protokol       | Adresse                                               |                                                                                                                                                                                                                         |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.11` og `86.54.11.211`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.11&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.11&name=DNS4EU)                                                             |
+| DNS, IPv6      | `2a13:1001::86:54:11:11` og `2a13:1001::86:54:11:211` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:11&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:11&name=DNS4EU)                                       |
+| DNS-over-HTTPS | `https://child-noads.joindns4.eu/dns-query`           | [Føj til AdGuard](adguard:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://child-noads.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS   | `tls://child-noads.joindns4.eu`                       | [Føj til AdGuard](adguard:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://child-noads.joindns4.eu&name=DNS4EU)                         |
 
 #### Ufiltreret opløsning
 
-Unfiltered option is a valid option for users who are confident their devices and connection are secure, and are looking for fast, reliable, and anonymised resolution service.
+Ufiltreret indstilling er et alternativ til brugere, som er sikre på, at deres enheder og forbindelse er sikre, og som søger en hurtig, pålidelig og anonymiseret opløsningstjeneste.
 
-| Protokol       | Adresse                                                 |                                                                                                                                                                                                                       |
-| -------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `86.54.11.100` and `86.54.11.200`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=DNS4EU)                                                         |
-| DNS, IPv6      | `2a13:1001::86:54:11:100` and `2a13:1001::86:54:11:100` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU)                                   |
-| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`              | [Føj til AdGuard](adguard:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU) |
-| DNS-over-TLS   | `tls://unfiltered.joindns4.eu`                          | [Føj til AdGuard](adguard:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU)                         |
+| Protokol       | Adresse                                                |                                                                                                                                                                                                                       |
+| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `86.54.11.100` og `86.54.11.200`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=DNS4EU)                                                         |
+| DNS, IPv6      | `2a13:1001::86:54:11:100` og `2a13:1001::86:54:11:100` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU)                                   |
+| DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`             | [Føj til AdGuard](adguard:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU) |
+| DNS-over-TLS   | `tls://unfiltered.joindns4.eu`                         | [Føj til AdGuard](adguard:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU)                         |
 
 ### IIJ.JP DNS
 
-[IIJ.JP](https://public.dns.iij.jp/) is a public DNS service operated by Internet Initiative Japan. It also blocks child abuse content.
+[IIJ.JP](https://public.dns.iij.jp/) er en offentlig DNS-tjeneste drevet af Internet Initiative Japan. Den blokerer også børnemisbrugsindhold.
 
 | Protokol       | Adresse                               |                                                                                                                                                                                                                                   |
 | -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -881,7 +881,7 @@ Unfiltered option is a valid option for users who are confident their devices an
 
 ### JupitrDNS
 
-[JupitrDNS](https://jupitrdns.com/) is a free security-focused recursive DNS service that blocks malware. It has DNSSEC support and does not store logs.
+[JupitrDNS](https://jupitrdns.com/) er en gratis sikkerhedsfokuseret rekursiv DNS-tjeneste, der blokerer malware. Den har DNSSEC-understøttelse og gemmer ingen logfiler.
 
 *Bemærk: TLS-certifikatet til krypterede endepunter er udstedt af en Let's Encrypt staging-CA, der muligvis ikke anses som pålidelig af standardklienter. Krypteret DNS (DoH/DoT/DoQ) fungerer muligvis ikke uden at deaktivere certifikatvalidering.*
 
@@ -894,7 +894,7 @@ Unfiltered option is a valid option for users who are confident their devices an
 
 ### LibreDNS
 
-[LibreDNS](https://libredns.gr/) is a public encrypted DNS service run by [LibreOps](https://libreops.cc/).
+[LibreDNS](https://libredns.gr/) er en offentlig, krypteret DNS-tjeneste drevet af [LibreOps](https://libreops.cc/).
 
 | Protokol       | Adresse                                      |                                                                                                                                                                                                                           |
 | -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -905,25 +905,25 @@ Unfiltered option is a valid option for users who are confident their devices an
 
 ### OneDNS
 
-[**OneDNS**](https://www.onedns.net/) is a secure, fast, free niche DNS service with malicious domains blocking facility.
+[**OneDNS**](https://www.onedns.net/) er en sikker, hurtig og gratis niche-DNS-tjeneste med blokeringsfacilitet for ondsindede domæner.
 
 #### Pure Edition
 
-| Protokol       | Adresse                                             |                                                                                                                                                                                                                                         |
-| -------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `117.50.10.10` and `52.80.52.52`                    | [Add to AdGuard](adguard:add_dns_server?address=117.50.10.10&name=OneDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=OneDNS)                                                                             |
-| DNS, IPv6      | `2400:7fc0:849e:200::8` and `2404:c2c0:85d8:901::8` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=OneDNS)                                                         |
-| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`             | [Add to AdGuard](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
-| DNS-over-TLS   | `tls://dot-pure.onedns.net`                         | [Add to AdGuard](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
+| Protokol       | Adresse                                            |                                                                                                                                                                                                                                           |
+| -------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `117.50.10.10` og `52.80.52.52`                    | [Føj til AdGuard](adguard:add_dns_server?address=117.50.10.10&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.10.10&name=OneDNS)                                                                             |
+| DNS, IPv6      | `2400:7fc0:849e:200::8` og `2404:c2c0:85d8:901::8` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::8&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::8&name=OneDNS)                                                           |
+| DNS-over-HTTPS | `https://doh-pure.onedns.net/dns-query`            | [Føj til AdGuard](adguard:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh-pure.onedns.net/dns-query&name=doh-pure.onedns.net) |
+| DNS-over-TLS   | `tls://dot-pure.onedns.net`                        | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot-pure.onedns.net&name=dot-pure.onedns.net)                         |
 
 #### Block Edition
 
-| Protokol       | Adresse                                             |                                                                                                                                                                                                                     |
-| -------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4      | `52.80.66.66` and `117.50.22.22`                    | [Add to AdGuard](adguard:add_dns_server?address=52.80.66.66&name=OneDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=OneDNS)                                                           |
-| DNS, IPv6      | `2400:7fc0:849e:200::4` and `2404:c2c0:85d8:901::4` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS)                                     |
-| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                  | [Add to AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
-| DNS-over-TLS   | `tls://dot.onedns.net`                              | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                         |
+| Protokol       | Adresse                                            |                                                                                                                                                                                                                       |
+| -------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `52.80.66.66` og `117.50.22.22`                    | [Føj til AdGuard](adguard:add_dns_server?address=52.80.66.66&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=OneDNS)                                                           |
+| DNS, IPv6      | `2400:7fc0:849e:200::4` og `2404:c2c0:85d8:901::4` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS)                                       |
+| DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                 | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
+| DNS-over-TLS   | `tls://dot.onedns.net`                             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                           |
 
 #### Family Edition
 
