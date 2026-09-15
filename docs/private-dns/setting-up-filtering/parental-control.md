@@ -21,29 +21,25 @@ Blocks websites with inappropriate and adult content.
 
 Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
 
-![Safe search *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
-
 ### YouTube restricted mode
 
 Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
 
-![Restricted mode *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
-
 ### Blocked services and websites
 
-AdGuard DNS blocks access to popular services with one click. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
+Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
 
 ![Blocked services *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
 ### Block websites by category
 
-This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including *Adult content*, *Games*, *Banking*, and *Communication*. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including *Adult content*, *Games*, *Banking*, and *Communication*. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
 ![Category-based blocking *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
 ### Pause schedule
 
-Use this feature to temporarily suspend Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
 For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
 
@@ -61,4 +57,4 @@ Select the *All day* checkbox to pause Parental control for the entire day. This
 
 Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
 
-![Pause past midnight](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause past midnight *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
