@@ -45,11 +45,20 @@ This feature lets you restrict access to specific categories of websites by choo
 
 ### Pause schedule
 
-Enables parental control on selected days with one or multiple time intervals. For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays, with a pause for lunch from 13:00 till 15:00. But on weekends, this access is not restricted. Note also that intervals can run past midnight: if you set a pause from 22:00 to 07:00 on Monday, the dashboard will display two intervals — Monday 22:00–00:00 and Tuesday 00:00–07:00. Customize the schedule to your liking and block access to selected sites during the hours you want.
+This feature suspends Parental control restrictions on selected days with one or multiple time intervals.
 
-To set the schedule, do this:
+For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays - but on weekends this access will not be restricted by Parental Control. If you wish to add another interval from 13:00 till 15:00 on a weekday, you can use the Pause schedule feature to do it.
 
-1. Open *Servers* → choose the server → *Parental control* → *Pause schedule*
-2. Click “+” or *Edit* next to a day and set each interval separately
+To set the schedule, do the following:
+
+1. Open *Servers* → choose a server → *Parental control* → *Pause schedule*
+2. Click “+” next to a day and set an interval in the *Add pause* pop-up screen
+3. To modify an existing interval, click the *Edit* button
+
+You can set multiple intervals during the same day. Please note that if you try to set two overlapping intervals on the same day, you will see a warning message and the system will not let you proceed.
+
+Ticking the *All day* checkbox will remove all existing pauses for the day.
+
+It is important to note that intervals can run past midnight: if you set a pause from 22:00 to 07:00 on Monday, the dashboard will display two intervals — Monday 22:00–00:00 and Tuesday 00:00–07:00. It will not affect the way pauses work.
 
 ![Schedule *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
