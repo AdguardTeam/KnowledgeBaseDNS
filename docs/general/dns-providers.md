@@ -1081,7 +1081,7 @@ We won’t be able to properly monitor their availability. **Use them at your ow
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a fast Russian DNS resolver for bypassing geo-restrictions and blocking ads and trackers.
+[ASTRACAT DNS](https://t.me/AstracatUO) is a fast Russian DNS resolver for bypassing geo-restrictions and blocking ads and trackers.
 
 | Protocol       | Address                                               |                                                                                                                                                                                                                                                                                                 |
 |----------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
