@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## What is it
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+*Parental control* is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## How to set it up
 
@@ -41,24 +41,26 @@ AdGuard DNS blocks access to popular services with one click. It’s useful if y
 
 This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including *Adult content*, *Games*, *Banking*, and *Communication*. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Category-based blocking *border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Category-based blocking *mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
 ### Pause schedule
 
-This feature suspends Parental control restrictions on selected days with one or multiple time intervals.
+Use this feature to temporarily suspend Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-For example, you may have allowed your child to watch YouTube videos only until 23:00 on weekdays - but on weekends this access will not be restricted by Parental Control. If you wish to add another interval from 13:00 till 15:00 on a weekday, you can use the Pause schedule feature to do it.
+For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
 
-To set the schedule, do the following:
+To set up a pause schedule:
 
-1. Open *Servers* → choose a server → *Parental control* → *Pause schedule*
-2. Click “+” next to a day and set an interval in the *Add pause* pop-up screen
-3. To modify an existing interval, click the *Edit* button
+1. Go to *Servers* → select a server → *Parental control* → *Pause schedule*.
+1. Click the **+** button next to the desired day and set the interval in the *Add pause* dialog.
+1. To change an existing interval, click *Edit*.
 
-You can set multiple intervals during the same day. Please note that if you try to set two overlapping intervals on the same day, you will see a warning message and the system will not let you proceed.
+You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
 
-Ticking the *All day* checkbox will remove all existing pauses for the day.
+![Overlapping intervals *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-It is important to note that intervals can run past midnight: if you set a pause from 22:00 to 07:00 on Monday, the dashboard will display two intervals — Monday 22:00–00:00 and Tuesday 00:00–07:00. It will not affect the way pauses work.
+Select the *All day* checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
 
-![Schedule *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+
+![Pause past midnight *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/edit_pause.png)
