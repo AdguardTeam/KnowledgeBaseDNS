@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-This article describes how to set up and use the *Query log streaming* feature in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+This article describes how to set up and use *Query log streaming* in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
 
 ## What is Query log streaming?
 
@@ -22,8 +22,8 @@ Events are collected and delivered in periodic, compressed batches; delivery tim
 To use *Query log streaming*, the following requirements must be met:
 
 - **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-Compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
+- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
+- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
 - **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
 
 ## How to request setup
@@ -56,7 +56,7 @@ Logs are delivered as **minified JSON files containing an array of objects**, wh
 - **Encoding:** UTF-8
 - **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
 
-### S3 Object layout and naming
+### S3 object layout and naming
 
 Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
 
@@ -211,7 +211,7 @@ This section details common integration issues you may encounter when setting up
 
 ### Compressed files do not decompress
 
-**Potential Cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
+**Potential cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
 
 **Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
 
@@ -245,13 +245,13 @@ Yes. Under the “at-least-once” delivery model, network retries triggered by 
 
 The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
 
-### What happens if Enterprise status is lost?
+### What happens if the Enterprise status is lost?
 
 Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
 
 ### Can log streaming be deactivated?
 
-Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team.
+Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team at `support@adguard-dns.io`.
 
 ### Can multiple S3 streaming destinations be configured?
 
