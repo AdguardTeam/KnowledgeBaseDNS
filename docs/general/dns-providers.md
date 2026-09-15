@@ -1081,13 +1081,12 @@ We won’t be able to properly monitor their availability. **Use them at your ow
 
 ### ASTRACAT DNS
 
-[ASTRACAT DNS](https://astracat.vercel.app/) is a privacy-focused DNS resolver built on Cloudflare’s infrastructure and ASTRACAT’s data center. It emphasizes high speed, no logging, and no censorship, providing a secure and reliable DNS resolution experience.
+[ASTRACAT DNS](https://astracat.vercel.app/) is a fast Russian DNS resolver for bypassing geo-restrictions and blocking ads and trackers.
 
 | Protocol       | Address                                               |                                                                                                                                                                                                                                                                                                 |
 |----------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DNS, IPv4      | `85.209.2.112`                                        | [Add to AdGuard](adguard:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=85.209.2.112&name=ASTRACAT%20DNS)                                                                                                                     |
-| DNS-over-HTTPS | `https://frd4wvnobp.cloudflare-gateway.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://frd4wvnobp.cloudflare-gateway.com/dns-query&name=frd4wvnobp.cloudflare-gateway.com) |
-| DNS-over-TLS   | `tls://frd4wvnobp.cloudflare-gateway.com`             | [Add to AdGuard](adguard:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://frd4wvnobp.cloudflare-gateway.com&name=frd4wvnobp.cloudflare-gateway.com)                         |
+| DNS-over-HTTPS | `https://dns.astracat.network/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.astracat.network/dns-query&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.astracat.network/dns-query&name=ASTRACAT%20DNS) |
+| DNS-over-TLS | `tls://dns.astracat.network` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.astracat.network&name=ASTRACAT%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.astracat.network&name=ASTRACAT%20DNS) |
 
 ### BlackMagicc DNS
 
