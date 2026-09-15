@@ -3,25 +3,25 @@ title: Anfragenprotokoll
 sidebar_position: 5
 ---
 
-## Anfragenprotokoll: Überblick
+## What is Query log?
 
-Das Anfragenprotokoll ist ein nützliches Tool für die Arbeit mit AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Es ermöglicht Ihnen, alle Anfragen Ihrer Geräte während des ausgewählten Zeitraums einzusehen und Anfragen nach Status, Typ, Unternehmen, Gerät und Land zu sortieren.
 
 ## Kurzanleitung
 
-Hier ist, was Sie im _Anfragenprotokoll_ sehen und was Sie tun können.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Detaillierte Informationen zu Anfragen
 
-![Anfragen-Informationen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Sperren und Entsperren von Domänen
 
 Mithilfe der verfügbaren Tools können Anfragen gesperrt und entsperrt werden, ohne das Protokoll zu verlassen.
 
-![Domain entsperren \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Sortieren von Anfragen
 

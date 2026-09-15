@@ -11,3 +11,4 @@ AdGuard DNS provides a wide range of useful tools for monitoring queries:
 - [Traffic destination](/private-dns/statistics-and-log/traffic-destination.md)
 - [Companies](/private-dns/statistics-and-log/companies.md)
 - [Query log](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

@@ -20,7 +20,7 @@ These are further divided into sub-categories:
 - **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
 - **Other**
 
-### Top companies
+## Top companies
 
 In this table, we not only show the names of the most visited or most blocked companies, but also display information about which domains are being requested from or which domains are being blocked the most.
 

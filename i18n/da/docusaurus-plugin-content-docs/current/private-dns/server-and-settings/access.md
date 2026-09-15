@@ -7,7 +7,7 @@ Ved at opsætte Adgangsindstillinger kan AdGuard DNS beskyttes mod uautoriseret 
 
 Blokerede forespørgsler vises ikke i Forespørgselsloggen, og tælles ikke med i den samlede kvote.
 
-## Sådan opsættes det
+## How to set it up
 
 ### Tilladte klienter
 

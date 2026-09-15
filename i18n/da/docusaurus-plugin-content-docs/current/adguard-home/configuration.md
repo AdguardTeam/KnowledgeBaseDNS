@@ -676,155 +676,155 @@ Indbygget DHCP-serveropsætning. Se også artiklen [DHCP][DHCPv4]. Den har flg. 
 
   - `undernetmaske`: Undernetmaske.
 
-  - `range_start`, `range_end`: The start and the end of the leased IP address range.
+  - `range_start`, `range_end`: Starten og slutningen på området af lejede IP-adresser.
 
-  - `lease_duration`: Lease duration in seconds. If `0`, use the default duration of 24 hours.
+  - `lease_duration`: Lejemålsperiode i sekunder. Hvis `0`, anvend standardvarigheden på 24 timer.
 
-  - `icmp_timeout_msec`: Time to wait for an ICMP reply to detect an IP conflict, in milliseconds. If `0`, the feature is disabled.
+  - `icmp_timeout_msec`: Den tid (i millisekunder), der skal ventes på et ICMP-svar for at registrere en IP-konflikt. Hvis `0`, er funktionen deaktiveret.
 
-  - `options`: Custom DHCP options. See the [DHCP][DHCPv4] article section on these options for more information.
+  - `options`: Tilpassede DHCP-indstillinger. Se afsnittet om disse indstillinger i artiklen [DHCP][DHCPv4] for yderligere oplysninger.
 
-- `dhcpv6`: DHCPv6 settings. It has the following properties:
+- `dhcpv6`: DHCPv6-indstillinger. Den har flg. egenskaber:
 
-  - `range_start`: The first IP address to be assigned to a client.
+  - `range_start`: Den første IP-adresse, der skal tildeles en klient.
 
-  - `lease_duration`: Same as in v4 above.
+  - `lease_duration`: Samme som i v4 ovenfor.
 
-  - `ra_slaac_only` and `ra_allow_slaac`: Send RA packets either forcing the clients to use SLAAC or allowing them to choose. See the [DHCP][DHCPv6] article section on these options for more information.
+  - `ra_slaac_only` og `ra_allow_slaac`: Send RA-pakker, som enten tvinger klienterne til at anvende SLAAC eller muliggør egne valg. Se afsnittet om disse indstillinger i artiklen [DHCP][DHCPv6] for yderligere oplysninger.
 
-- `local_domain_name`: The domain name that AdGuard Home’s DHCP server uses for hostnames of its clients. The default value, which is also set when this value is empty, is `lan`. So, if you have a machine called `myhost` in your network, and AdGuard Home is this network’s DHCP server, the hostname of that machine is `myhost.lan`. DNS-forespørgsler af typen `A` for sådanne værter er kun tilladt fra lokalt betjente netværk, såsom `10.0.0.0/8`, `192.168.0.0/16` mv. Other clients receive an empty `NXDOMAIN` response.
+- `local_domain_name`: Domænenavnet AdGuard Homes DHCP-server anvender til værtsnavnene på sine klienter. Standardværdien, der også angives, når dette felt er tomt, er `lan`. Findes f.eks. en maskine med navnet `myhost` på netværket, hvor AdGuard Home er DHCP-serveren, vil maskinens værtsnavn være `myhost.lan`. DNS-forespørgsler af typen `A` for sådanne værter er kun tilladt fra lokalt betjente netværk, såsom `10.0.0.0/8`, `192.168.0.0/16` mv. Andre klienter modtager et tomt `NXDOMAIN`-svar.
 
 ### `tls` {#tls}
 
-HTTPS/DoH/DoQ/DoT settings. It has the following properties:
+Indstillinger for HTTPS/DoH/DoQ/DoT. Den har flg. egenskaber:
 
-- `enabled`: Whether encryption (DoT/DoH+HTTPS/DoQ) is enabled.
+- `enabled`: Hvorvidt kryptering (DoT/DoH+HTTPS/DoQ) er aktiveret.
 
-  **Example**: `true`
+  **Eksempel**: `true`
 
-- `server_name`: The hostname of your server. If set, it is used to detect ClientIDs (using the _ServerName_ field of ClientHello messages), respond to [Discovery of Designated Resolvers (DDR)][DDR] queries, and perform additional connection validations. If not set, these features are disabled. It must match one of the DNS Names in the certificate.
+- `server_name`: Værtsnavnet på den lokale server. Hvis angivet, benyttes den til at registrere ClientID'er (via feltet _ServerName_ i ClientHello-meddelelser), besvare [Discovery of Designated Resolvers (DDR)][DDR]-forespørgsler og udføre yderligere forbindelsesvalideringer. Hvis ikke angivet, er disse funktioner deaktiveret. Skal matche et af DNS-navnene i certifikatet.
 
-  **Example**: `example.org`
+  **Eksempel**: `example.org`
 
-- `force_https`: If `true`, force HTTP-to-HTTPS redirect. This setting also sets the [`Strict-Transport-Security`][hsts] header.
+- `force_https`: Hvis `true`, gennemtving HTTP-til-HTTPS omdirigering. Denne indstilling angiver også headeren [`Strict-Transport-Security`][hsts].
 
-  **Example**: `true`
+  **Eksempel**: `true`
 
-- `port_https`: The HTTPS port. Used for both web UI and DNS-over-HTTPS. If `0`, HTTPS is disabled.
+- `port_https`: HTTPS-porten. Anvendes til både web-UI og DNS-over-HTTPS. Hvis `0`, er HTTPS deaktiveret.
 
-  **Example**: `443`
+  **Eksempel**: `443`
 
-- `port_dns_over_tls`: The DNS-over-TLS port. If `0`, DNS-over-TLS is disabled.
+- `port_dns_over_tls`: DNS-over-TLS-port. Hvis `0`, er DNS-over-TLS deaktiveret.
 
-  **Example**: `853`
+  **Eksempel**: `853`
 
-- `port_dns_over_quic`: The DNS-over-QUIC port. If `0`, DNS-over-QUIC is disabled. Default value is `853`.
+- `port_dns_over_quic`: DNS-over-QUIC-port. Hvis `0`, er DNS-over-QUIC deaktiveret. Standardværdien er `853`.
 
-- `port_dnscrypt`: The DNSCrypt port. If `0`, DNSCrypt is disabled. See the “[DNSCrypt]” page for more information and examples.
+- `port_dnscrypt`: DNSCrypt-port. Hvis `0`, er DNSCrypt deaktiveret. Se siden “[DNSCrypt]” for yderligere information og eksempler.
 
-- `dnscrypt_config_file`: The path to the DNSCrypt configuration file. It must be set if `port_dnscrypt` is not `0`. See the [dnscrypt] utility documentation for examples of configuration generation.
+- `dnscrypt_config_file`: Sti til DNSCrypt-opsætningsfilen. Den skal angives, såfremt `port_dnscrypt` ikke er `0`. Se dokumentationen til værktøjet [dnscrypt] for eksempler på opsætningsgenerering.
 
-- `certificate_chain`: The PEM-encoded certificates chain.
+- `certificate_chain`: PEM-kodede certifikatkæde.
 
-- `strict_sni_check`: If `true`, reject connections if the client uses server name (in SNI) that doesn't match the one in the certificate.
+- `strict_sni_check`: Hvis `true`, afvises forbindelser, hvis klienten bruger et servernavn (i SNI), der ikke matcher det i certifikatet.
 
-- `private_key`: The PEM-encoded private key.
+- `private_key`: PEM-kodet private nøgle.
 
-- `certificate_path`: Filesystem path to a PEM certificate.
+- `certificate_path`: Filsystemsti til et PEM-certifikat.
 
-- `private_key_path`: Filesystem path to a PEM private key.
+- `private_key_path`: Filsystemsti til en privat PEM-nøgle.
 
-- `override_tls_ciphers`: If set, this array of strings allows overriding the default set of TLS cipher suites to use. The strings are the [names of cipher suites][tls-names].
+- `override_tls_ciphers`: Hvis angivet, muliggør denne strengmatrix at tilsidesætte standardsættet af TLS-krypteringspakker, som skal bruges. Strengene er [navnene på krypteringssuiter][tls-names].
 
 ### `whitelist_filters` {#whitelist-filters}
 
-List of **allow-list** filters.
+Liste over **hvidliste**-filtre.
 
 ### `user_rules` {#user-rules}
 
-User-specified filtering rules.
+Brugerdefinerede filtreringsregler.
 
 ### `os` {#os}
 
-Operating system related settings.
+Indstillinger relateret til operativsystemet.
 
-- `group`: The name of the user group to switch to after the startup.
+- `group`: Navnet på den brugergruppe, der skal skiftes til efter opstart.
 
-- `user`: The name of the user to switch to after the startup.
+- `user`: Navnet på den bruger, der skal skiftes til efter opstart.
 
-- `rlimit_nofile`: Limit on the maximum number of open files for the server process (on unixlike OSs). Set to `0` to use the system’s default value.
+- `rlimit_nofile`: Begrænsning af det maksimale antal åbne filer for serverprocessen (på Unix-lignende operativsystemer). Indstil til `0` for brug af systemets standardværdi.
 
 ### `clients` {#clients}
 
-Persistent and runtime clients settings.
+Indstillinger for permanente og runtime-klienter.
 
-- `persistent`: An array of explicitly configured clients. Each client has the following properties:
+- `persistent`: En matrix af eksplicit opsatte klienter. Hver klient har flg. egenskaber:
 
   - `safe_search`: _Sikker søgning_-indstillingsafsnit.
 
-  - `blocked_services`: _Blocked services_ settings section.
+  - `blocked_services`: _Blokerede tjenester_-indstillingsafsnit.
 
-  - `name`: Client’s name.
+  - `navn`: Klientens navn.
 
-  - `ids`: List of client’s identifiers.
+  - `ids`: Liste over klientens identifikatorer.
 
-  - `tags`: List of client’s tags.
+  - `tags`: Liste over klientens tags.
 
-  - `upstreams`: Upstreams configuration.
+  - `upstreams`: Opsætning af upstreams.
 
-  - `uid`: Client’s unique identifier.
+  - `uid`: Klientens unikke identifikator.
 
-  - `upstreams_cache_size`: Client’s cache size.
+  - `upstreams_cache_size`: Klientens cachestørrelse.
 
-  - `upstreams_cache_enabled`: If client’s cache is enabled.
+  - `upstreams_cache_enabled`: Hvorvidt klientens cache er aktiveret.
 
-  - `use_global_settings`: Shows if the client-specific settings are used to override the global settings.
+  - `use_global_settings`: Viser, om de klientspecifikke indstillinger bruges til at tilsidesætte de globale indstillinger.
 
-  - `filtering_enabled`: Indicates whether or not to use filter lists.
+  - `filtering_enabled`: Angiver, hvorvidt filterlister skal benyttes eller ej.
 
-  - `parental_enabled`: Indicates whether or not to use parental protection.
+  - `parental_enabled`: Angiver, hvorvidt forældrebeskyttelse skal benyttes eller ej.
 
-  - `safebrowsing_enabled`: Indicates whether or not to use safe browsing protection.
+  - `safebrowsing_enabled`: Angiver, hvorvidt sikker browsing skal bruges eller ej.
 
-  - `use_global_blocked_services`: Shows if the client-specific settings are used to override the global Blocked Services settings.
+  - `use_global_blocked_services`: Viser, om de klientspecifikke indstillinger anvendes til at tilsidesætte de globale indstillinger for Blokerede tjenester.
 
-  - `ignore_querylog`: Indicates whether or not to exclude client’s activity from the query log.
+  - `ignore_querylog`: Angiver, hvorvidt klientens aktivitet skal undtages fra forespørgselsloggen.
 
-  - `ignore_statistics`: Indicates whether or not to exclude client’s activity from the statistics.
+  - `ignore_statistics`: Angiver, hvorvidt klientens aktivitet skal undtages fra statistikken eller ej.
 
-- `runtime_sources`: This controls runtime-client data sources.
+- `runtime_sources`: Dette styrer runtime-klientens datakilder.
 
-  - `whois`: Request WHOIS information for clients with public IP addresses.
+  - `whois`: Anmod om WHOIS-oplysninger for klienter med offentlige IP-adresser.
 
-  - `arp`: Consider the operating system’s ARP table.
+  - `arp`: Tager hensyn til operativsystemets ARP-tabel.
 
-  - `rdns`: Perform rDNS lookups for client’s address.
+  - `rdns`: Udfør rDNS-opslag for klientens adresse.
 
-  - `dhcp`: Check AdGuard Home’s DHCP leases for client’s address.
+  - `dhcp`: Tjek AdGuard Homes DHCP-lejemål for klientens adresse.
 
-  - `hosts`: Follow the operating system’s hosts files.
+  - `hosts`: Følg operativsystemets hosts-filer.
 
 ### `log` {#log}
 
-Log settings.
+Logindstillinger.
 
-- `enabled`: Enable or disable writing to logs.
+- `enabled`: Aktivér eller deaktivér skrivning til logfiler.
 
-- `file`: Path to the log file. If empty, writes to stdout, if `syslog` writes system log (or eventlog on Windows).
+- `file`: Sti til logfilen. Hvis tomt, skrives til stdout, såfremt `syslog` skriver systemloggen (eller hændelseslog i Windows).
 
-- `compress`: If `true`, enabled GZIP compression of the log files.
+- `compress`: Hvis `true`, aktiveres GZIP-komprimering af logfilerne.
 
-- `local_time`: If `true`, the time used for formatting the timestamps is the computer’s local time.
+- `local_time`: Hvis `true`, er tidspunktet brugt til formatering af tidsstemplerne computerens lokale tid.
 
-- `max_backups`: Maximum number of old log files to retain. `0` means retain all old log files. Note that `max_age` may still cause them to be deleted.
+- `max_backups`: Maksimalt antal gamle logfiler, som skal bevares. `0` betyder, at alle gamle logfiler bevares. Bemærk, at `max_age` stadig kan medføre, at de slettes.
 
-- `max_size`: Maximum size of the log file before it gets rotated, in megabytes.
+- `max_size`: Logfilens maksimalstørrelse, i megabyte, før den roteres.
 
-- `max_age`: Maximum number of days to retain old log files.
+- `max_age`: Maksimalt antal dage gamle logfiler skal beholdes.
 
-- `verbose`: If `true`, enables verbose debug output.
+- `verbose`: Hvis `true`, aktiveres detaljeret fejlfindingsoutput.
 
-Removing an entry from settings file will reset it to the default value. Deleting the file will reset all settings to the default values.
+Fjernes en post fra indstillingsfilen, nulstilles den til standardværdien. Slettes filen, nulstilles alle indstillinger til standardværdierne.
 
 [DDR]: https://www.ietf.org/archive/id/draft-ietf-add-ddr-06.html
 [DHCPv4]: /adguard-home/dhcp#dhcpv4-options
@@ -834,11 +834,11 @@ Removing an entry from settings file will reset it to the default value. Deletin
 [rfc6147]: https://datatracker.ietf.org/doc/html/rfc6147
 [tls-names]: https://pkg.go.dev/crypto/tls#pkg-constants
 
-## Reset web password {#password-reset}
+## Nulstil webadgangskode {#password-reset}
 
-Please follow these steps to create a new password for your user account:
+Følg disse trin for at oprette en ny brugerkontoadgangskode:
 
-1. Install `htpasswd`, which is a part of _Apache2 Web Server:_
+1. Installér `htpasswd`, der er en del af _Apache2-webserveren:_
 
    - Ubuntu:
 
@@ -854,11 +854,11 @@ Please follow these steps to create a new password for your user account:
 
    - Windows:
 
-     Choose the appropriate [download][htpasswd], extract the downloaded folder, open a terminal, navigate to its `bin` directory with the `chdir` command, and run `.\Htpasswd`. Note the capital “H” in the Windows version.
+     Vælg den relevante [download][htpasswd], udpak den downloadede mappe, åbn en terminal, og gå til dens `bin`-mappe med kommandoen `chdir` og eksekvér dernæst `.\Htpasswd`. Bemærk majusklen “H” i Windows-versionen.
 
-   Other versions of `htpasswd` could be used, but **only** if they support _bcrypt_ hash encryption, which rules out e.g. most web-hosted `htpasswd` generators.
+   Andre versioner af `htpasswd` kan bruges, men **kun** såfremt de understøtter _bcrypt_-hashkryptering, hvilket udelukker f.eks. de fleste webbaserede `htpasswd`-generatorer.
 
-2. Use the `htpasswd` utility to generate a new hash:
+2. Brug værktøjet `htpasswd` til at generere en ny hash:
 
    - Ubuntu/Fedora:
 
@@ -872,11 +872,11 @@ Please follow these steps to create a new password for your user account:
         .\Htpasswd -B -C 10 -n -b <USERNAME> <PASSWORD>
         ```
 
-   It will print `<USERNAME>:<HASH>` to the terminal.
+   Den vil printe `<USERNAME>:<HASH>` i terminalen.
 
-3. Open `AdGuardHome.yaml` in a text editor with sudo rights.
+3. Åbn `AdGuardHome.yaml` i en teksteditor med sudo-rettigheder.
 
-   In the `users:` section, find your username and insert the `<HASH>` value for the `password` setting:
+   Find eget brugernavn i afsnittet `users:`, og indsæt værdien `<HASH>` for indstillingen `password`:
 
     ```yaml
     users:
@@ -884,25 +884,25 @@ Please follow these steps to create a new password for your user account:
         password: <HASH>
     ```
 
-4. Save the file and restart AdGuard Home. Now you should be able to log in to the web interface using your new password.
+4. Gem filen, og genstart AdGuard Home. Nu burde der kunne logges ind på webgrænsefladen med den nye adgangskode.
 
 [htpasswd]: https://httpd.apache.org/docs/current/platform/windows.html#down
 
-## Profiling with pprof {#pprof}
+## Profilering med pprof {#pprof}
 
-To enable pprof, set `http.pprof.enabled` and `http.pprof.port` in the yaml configuration file and then restart AdGuard Home. Now you can get profiling information with your browser, for example `http://localhost:[PORT]/debug/pprof/goroutine?debug=2` will show the call trace of each running goroutine.
+For at aktivere pprof skal `http.pprof.enabled` og `http.pprof.port` opsættes i YAML-opsætningsfilen og AdGuard Home dernæst genstartes. Nu kan profileringsoplysninger hentes via webbrowseren. F.eks. viser `http://localhost:[PORT]/debug/pprof/goroutine?debug=2` kaldsporet for hver kørende goroutine.
 
-This URL lets you see information about the heap usage of the AdGuard Home process: `http://localhost:[PORT]/debug/pprof/heap?debug=1`.
+Denne URL muliggør at se oplysninger om AdGuard Home-processens heap-forbrug: `http://localhost:[PORT]/debug/pprof/heap?debug=1`.
 
-Or, with `go tool pprof`:
+Eller med `go tool pprof`:
 
 ```sh
 go tool pprof -top http://localhost:6060/debug/pprof/heap
 ```
 
-For a list of supported profiles go to `http://localhost:6060/debug/pprof/`.
+For at se en liste over understøttede profiler, gå til `http://localhost:6060/debug/pprof/`.
 
-Alternatively, you may want to simply download the file and analyze it later:
+Alternativt kan filen blot downloades og analyseres senere:
 
 ```sh
 wget http://localhost:6060/debug/pprof/heap

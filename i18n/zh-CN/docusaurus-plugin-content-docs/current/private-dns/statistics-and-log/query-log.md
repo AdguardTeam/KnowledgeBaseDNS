@@ -3,25 +3,25 @@ title: 查询日志
 sidebar_position: 5
 ---
 
-## 什么是查询日志
+## What is Query log?
 
-查询日志是一个用于与 AdGuard DNS 配合使用的有用工具。
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 它允许用户查看在所选时间周期内您的设备发出的所有请求，并按状态、类型、公司、设备、国家/地区对请求进行排序。
 
 ## 使用方式
 
-Here’s what you can see and what you can do in the _Query log_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### 请求的详细信息
 
-![请求信息 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### 域名的拦截与取消拦截
 
 您可以不离开日志界面，使用可用工具拦截或取消拦截请求。
 
-![取消拦截域名 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### 请求排序
 

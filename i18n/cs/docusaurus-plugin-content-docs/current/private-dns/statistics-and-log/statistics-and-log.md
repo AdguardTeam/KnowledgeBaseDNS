@@ -11,3 +11,4 @@ AdGuard DNS poskytuje širokou škálu užitečných nástrojů pro sledování 
 - [Cíl datového provozu](/private-dns/statistics-and-log/traffic-destination.md)
 - [Společnosti](/private-dns/statistics-and-log/companies.md)
 - [Protokol dotazů](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)
