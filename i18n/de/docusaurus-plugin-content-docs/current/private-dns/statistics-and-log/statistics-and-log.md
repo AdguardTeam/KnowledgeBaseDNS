@@ -11,3 +11,4 @@ AdGuard DNS bietet eine breite Palette nützlicher Tools zur Überwachung von An
 - [Traffic-Zielort](/private-dns/statistics-and-log/traffic-destination.md)
 - [Unternehmen](/private-dns/statistics-and-log/companies.md)
 - [Anfragenprotokoll](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

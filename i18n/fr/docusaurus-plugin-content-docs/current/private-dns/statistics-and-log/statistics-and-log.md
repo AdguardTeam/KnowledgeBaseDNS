@@ -11,3 +11,4 @@ AdGuard DNS fournit une large plage d'outils utiles pour surveiller les requête
 - [Destination du trafic](/private-dns/statistics-and-log/traffic-destination.md)
 - [Sociétés](/private-dns/statistics-and-log/companies.md)
 - [Journal des requêtes](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

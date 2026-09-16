@@ -3,25 +3,25 @@ title: Журнал запросов
 sidebar_position: 5
 ---
 
-## Что такое журнал запросов
+## What is Query log?
 
-Журнал запросов — полезный инструмент для работы с AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Он позволяет вам просматривать все запросы, сделанные вашими устройствами за выбранный период времени, и сортировать запросы по статусу, типу, компании, устройству, стране.
 
 ## Как им пользоваться
 
-Вот что вы можете увидеть и что вы можете сделать в _Журнале запросов_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Подробная информация о запросах
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Блокировка и разблокировка доменов
 
 Запросы могут быть заблокированы и разблокированы без выхода из журнала, с использованием доступных инструментов.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Сортировка запросов
 

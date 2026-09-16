@@ -7,7 +7,7 @@ Al configurar la configuración de acceso, podrás proteger tu AdGuard DNS de ac
 
 Las peticiones bloqueadas no se mostrarán en el registro de consultas y no se cuentan en el límite total.
 
-## Cómo configurarlo
+## How to set it up
 
 ### Clientes permitidos
 
