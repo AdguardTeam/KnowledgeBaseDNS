@@ -3,7 +3,7 @@ title: Forældrekontrol
 sidebar_position: 5
 ---
 
-*Forældrekontrol* er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Du kan bruge denne funktion til at begrænse dine børns adgang til voksensider, tilpasse søgeforespørgsler, blokere brugen af populære tjenester og meget mere.
+\*Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## How to set it up
 
@@ -37,24 +37,25 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ![Kategoribaseret blokering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pausetidsplan
+### Pausere tidsplan
 
-Du kan midlertidigt suspendere begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Du kan tilføje et eller flere pauseintervaller for hver dag.
+Temporarily suspends _Parental control_ restrictions on selected days and during specified time intervals. Der kan tilføjes en eller flere pauseintervaller for hver dag.
 
-Du kan f.eks. lade dit barn se YouTube indtil kl. 23:00 på hverdage, mens adgangen er ubegrænset i weekenden. Du kan også tilføje et ekstra pauseinterval, f.eks. fra 13:00 til 15:00 på en hverdag.
+For example, you can pause the restrictions on weekdays from 7:00 a.m. to 8:00 a.m. before school and from 6:00 p.m. to 8:00 p.m. in the evening. Outside of these intervals, _Parental control_ applies as usual.
 
 Sådan opsættes en pausetidsplan:
 
-1. Gå til _Servere_ → vælg en server → _Forældrekontrol_ → _Pausetidsplan_.
+1. Gå til _Servere_ → vælg en server → _Forældrekontrol_ → _Pausere tidsplan_.
 2. Klik på knappen **+** ud for den ønskede dag, og indstil intervallet i dialogboksen _Tilføj pause_.
-3. Et eksisterende interval ændres ved at klikke på _Redigér_.
+3. Repeat to add more intervals to the same day.
+4. To change an existing interval, click _Edit_.
 
 Der kan opsættes flere intervaller for den samme dag. Intervaller på samme dag må ikke overlappe hinanden: Forsøger overlappende intervaller oprettet, vises en advarsel, og tidsplanen vil ikke kunne gemmes.
 
 ![Overlappende intervaller \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Markér afkrydsningsfeltet _Hele dagen_ for at pausere Forældrekontrol for hele dagen. Dette fjerner alle eksisterende pauseintervaller for den pågældende dag.
+Selecting the _All day_ checkbox pauses _Parental control_ restrictions for the entire day, replacing any intervals you’ve set.
 
-Pauseintervaller kan også strække sig over midnat. Indstilles f.eks. en pause fra kl. 22:00 om mandagen til kl. 07:00 om tirsdagen, viser kontrolpanelet den som to intervaller: Mandag kl. 22:00-00:00 og tirsdag kl. 00:00-07:00. Dette påvirker ikke, hvordan pausen fungerer.
+Pauseintervaller kan også strække sig over midnat. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
 
-![Pause over midnat \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause schedule \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)
