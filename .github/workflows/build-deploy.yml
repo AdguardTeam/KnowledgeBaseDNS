@@ -7,8 +7,7 @@ env:
 
 on:
   push:
-    branches:
-      - "*"
+    branches: ["**"]
     tags:
       - v*
   pull_request:
@@ -17,9 +16,11 @@ on:
 
 jobs:
   build:
+    outputs:
+      branch: ${{ steps.get-branch.outputs.BRANCH_NAME }}
     runs-on: ubuntu-latest
     container:
-      image: node:20
+      image: node:24
     steps:
       - uses: actions/checkout@v4
 
@@ -29,18 +30,21 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Determine branch for deploy
         id: get-branch
+        env:
+          REF_NAME: ${{ github.ref_name }}
+          EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER: ${{ github.event.number }}
         run: |
-          if [ "${{ github.ref_name }}" = "master" ]; then
-            echo "BRANCH_NAME=main" >> $GITHUB_ENV
-          elif [ "${{ github.event_name }}" = "pull_request" ]; then
-            PR_NUMBER=${{ github.event.number }}
-            echo "BRANCH_NAME=pull-request-${PR_NUMBER}" >> $GITHUB_ENV
+          if [ "$REF_NAME" = "master" ]; then
+            echo "BRANCH_NAME=main" >> $GITHUB_OUTPUT
+          elif [ "$EVENT_NAME" = "pull_request" ]; then
+            echo "BRANCH_NAME=pull-request-$PR_NUMBER" >> $GITHUB_OUTPUT
           else
-            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+            echo "BRANCH_NAME=$REF_NAME" >> $GITHUB_OUTPUT
           fi
 
       - name: Run build
@@ -50,25 +54,46 @@ jobs:
           # Disable crawlers for preview builds.
           echo "User-Agent: *\nDisallow: /" > build/robots.txt
 
-      - name: Install Wrangler
+      - name: Upload build artifact
         if: github.event.pull_request.head.repo.fork == false
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: build/
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: build/
+
+      - name: Install Wrangler
         run: npm install -g wrangler
 
       - name: Deploy to Cloudflare Pages
-        if: github.event.pull_request.head.repo.fork == false
-        run: npx wrangler pages deploy ./build --project-name="${{ env.PAGES_PROJECT }}" --branch ${{ env.BRANCH_NAME }}
+        run: npx wrangler pages deploy ./build --project-name="${{ env.PAGES_PROJECT }}" --branch "$BRANCH_NAME"
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_WORKERS_ACCOUNT_ID }}
+          BRANCH_NAME: ${{ needs.build.outputs.branch }}
 
       - name: Add comment to Pull Request
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false
+        if: github.event_name == 'pull_request'
         uses: actions/github-script@v6
+        env:
+          BRANCH_NAME: ${{ needs.build.outputs.branch }}
         with:
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Preview was deployed to: https://${{ env.BRANCH_NAME }}.${{ env.BASE_DOMAIN }}${{ env.BASE_PATH }}`
+              body: `Preview was deployed to: https://${process.env.BRANCH_NAME}.${{ env.BASE_DOMAIN }}${{ env.BASE_PATH }}`
             })
