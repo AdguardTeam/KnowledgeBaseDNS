@@ -15,7 +15,7 @@ Custom domains let partners offer AdGuard DNS under their own brand. On the **En
 
 Each account can have one *Account IP*, and you can point several domains to it. This isn’t the same as the dedicated IPv4 and IPv6 addresses used to identify devices: an *Account IP* is the address your custom domains resolve to.
 
-### How to get an Account IP
+## How to get an Account IP
 
 To request an *Account IP*, contact your account manager or support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
 
@@ -31,30 +31,30 @@ The address itself stays reserved for your account, so if you return to the Ente
 
 :::
 
-### How to point a domain to your Account IP
+## How to point a domain to your Account IP
 
 Setup follows the same steps as a standard custom domain, except you create an A record instead of a CNAME. Also, for DoH domains, the certificate isn’t issued automatically — you must upload your own.
 
- 1. In *Custom domains*, choose the protocol: *Add DoH domain* (for DNS-over-HTTPS) or *Add DoT/DoQ domain* (for DNS-over-TLS or DNS-over-QUIC).
+1. In *Custom domains*, choose the protocol: *Add DoH domain* (for DNS-over-HTTPS) or *Add DoT/DoQ domain* (for DNS-over-TLS or DNS-over-QUIC).
 
    ![Choosing the protocol *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
 
- 1. Enter the domain you want to use (e.g., `dns.partner.com`) and click *Next*. You need access to this domain’s DNS management panel.
+1. Enter the domain you want to use (e.g., `dns.partner.com`) and click *Next*. You need access to this domain’s DNS management panel.
 
    ![Entering the domain *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
 
- 1. The next screen shows the values for your DNS record: your domain under *Name (Host)* and your *Account IP* under *Value (Points to / IP address)*. Leaving this screen open, go to your DNS provider’s control panel and create an A record with those values. Don’t create a CNAME record — domains on an *Account IP* point to the address directly.
+1. The next screen shows the values for your DNS record: your domain under *Name (Host)* and your *Account IP* under *Value (Points to / IP address)*. Leaving this screen open, go to your DNS provider’s control panel and create an A record with those values. Don’t create a CNAME record — domains on an *Account IP* point to the address directly.
 
    ![DNS record values *border](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
 
- 1. On the AdGuard DNS screen with the record values, click *Verify*. If the record hasn’t propagated yet or points somewhere else, verification fails. Check the record and try again in a few minutes.
+1. On the AdGuard DNS screen with the record values, click *Verify*. If the record hasn’t propagated yet or points somewhere else, verification fails. Check the record and try again in a few minutes.
 
- 1. Upload a TLS certificate. Certificates aren’t issued automatically for domains on an *Account IP*:
+1. Upload a TLS certificate. Certificates aren’t issued automatically for domains on an *Account IP*:
 
-   - For **DoT/DoQ**, you upload a wildcard certificate (`*.partner.com`), same as for a standard custom domain.
-   - For **DoH**, you upload your own certificate too. This differs from the standard flow, where AdGuard DNS can generate one for you.
+    - For **DoT/DoQ**, you upload a wildcard certificate (`*.partner.com`), same as for a standard custom domain.
+    - For **DoH**, you upload your own certificate too. This differs from the standard flow, where AdGuard DNS can generate one for you.
 
- Until you add a certificate, the domain shows the *No certificate* status and your customers can’t connect to it.
+    Until you add a certificate, the domain shows the *No certificate* status and your customers can’t connect to it.
 
    ![Uploading a certificate *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
 
@@ -64,7 +64,7 @@ Renewal is on your side. You’ll get an email reminder before the certificate e
 
 :::
 
-### Existing custom domains and Account IP
+## Existing custom domains and Account IP
 
 Domains you added before getting an *Account IP* aren’t moved to it automatically. They keep working through their CNAME record, as before.
 
@@ -76,7 +76,7 @@ Your customers won’t be able to use the domain between the moment you delete i
 
 :::
 
-### Limitations
+## Limitations
 
 An *Account IP* changes the address your domain resolves to. A few things it doesn’t cover:
 
