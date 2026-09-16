@@ -3,7 +3,7 @@ title: Forældrekontrol
 sidebar_position: 5
 ---
 
-*Forældrekontrol* er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+*Forældrekontrol* er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Du kan bruge denne funktion til at begrænse dine børns adgang til voksensider, tilpasse søgeforespørgsler, blokere brugen af populære tjenester og meget mere.
 
 ## How to set it up
 
@@ -39,7 +39,7 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ### Pausere tidsplan
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. Der kan tilføjes en eller flere pauseintervaller for hver dag.
+Suspenderer midlertidigt begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Der kan tilføjes en eller flere pauseintervaller for hver dag.
 
 Der kan f.eks. gives et barn lov til at se YouTube indtil kl. 23:00 på hverdage, mens adgangen er ubegrænset i weekenden. Der kan også tilføjes et ekstra pauseinterval, f.eks. fra 13:00 til 15:00 på en hverdag.
 

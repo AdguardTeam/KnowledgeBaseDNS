@@ -3,7 +3,7 @@ title: Parental control
 sidebar_position: 5
 ---
 
-_Ouderlijk toezicht_ is een set instellingen die je de flexibiliteit geven om toegang tot bepaalde websites met gevoelige inhoud aan te passen. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+_Ouderlijk toezicht_ is een set instellingen die je de flexibiliteit geven om toegang tot bepaalde websites met gevoelige inhoud aan te passen. Je kunt deze functie gebruiken om de toegang van je kinderen tot websites voor volwassenen te beperken, zoekopdrachten aan te passen, het gebruik van populaire diensten te blokkeren en meer.
 
 ## How to set it up
 
@@ -39,7 +39,7 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ### Pauzeschema
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. Je kunt één of meerdere pauzes per dag toevoegen.
+Schort de beperkingen van Ouderlijk toezicht tijdelijk op op geselecteerde dagen en tijdens opgegeven tijdsintervallen. Je kunt één of meerdere pauzes per dag toevoegen.
 
 Zo kun je je kind bijvoorbeeld toestaan om YouTube te kijken tot 23:00 uur op weekdagen, terwijl je in het weekend de toegang onbeperkt laat. Je kunt ook een extra pauze toevoegen, bijvoorbeeld van 13:00 tot 15:00 op een doordeweekse dag.
 
