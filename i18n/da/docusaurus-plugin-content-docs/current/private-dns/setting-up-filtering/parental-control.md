@@ -3,7 +3,7 @@ title: Forældrekontrol
 sidebar_position: 5
 ---
 
-\*Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+*Forældrekontrol* er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
 ## How to set it up
 

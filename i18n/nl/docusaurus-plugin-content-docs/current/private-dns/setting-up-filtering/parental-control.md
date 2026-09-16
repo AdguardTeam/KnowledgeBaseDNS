@@ -35,7 +35,7 @@ Beperkt de toegang tot populaire diensten met één klik. Dit is handig als je n
 
 Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-! [Categorie-gebaseerde blokkering \*mobile_border] (https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Categorie-gebaseerde blokkering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
 ### Pauzeschema
 
@@ -51,10 +51,10 @@ Om een pauzeschema op te stellen:
 
 Je kunt meerdere intervallen voor dezelfde dag instellen. Intervallen op dezelfde dag mogen niet overlappen: als je probeert overlappende intervallen te maken, krijg je een waarschuwing en kun je het schema niet opslaan.
 
-! [Overlappende intervallen \*mobiel] (https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+![Overlappende intervallen \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
 Selecteer het _De hele dag_ selectievakje om ouderlijk toezicht de hele dag te pauzeren. Hierdoor worden alle bestaande pauzes voor die dag verwijderd.
 
 Pauzeperiodes kunnen ook middernacht duren. Als je bijvoorbeeld een pauze zet van 22:00 op maandag tot 07:00 op dinsdag, toont het dashboard deze in twee intervallen: maandag, 22:00–00:00, en dinsdag, 00:00–07:00. Dit beïnvloedt niet hoe de pauze werkt.
 
-! [Pauze na middernacht \*mobiel] (https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pauze na middernacht \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
