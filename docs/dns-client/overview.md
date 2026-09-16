@@ -114,3 +114,5 @@ There are a few different exit codes that may appear under different error condi
 - `1`: Internal error, most likely a misconfiguration.
 
 - `2`: Bad command-line argument or value.
+
+## Test
