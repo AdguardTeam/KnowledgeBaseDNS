@@ -3,7 +3,7 @@ title: Parental control
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+_Ouderlijk toezicht_ is een set instellingen die je de flexibiliteit geven om toegang tot bepaalde websites met gevoelige inhoud aan te passen. Je kunt deze functie gebruiken om de toegang van je kinderen tot websites voor volwassenen te beperken, zoekopdrachten aan te passen, het gebruik van populaire diensten te blokkeren en meer.
 
 ## How to set it up
 
@@ -27,7 +27,7 @@ Removes the option to view and post comments under videos and interact with 18+ 
 
 ### Blocked services and websites
 
-Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
+Beperkt de toegang tot populaire diensten met één klik. Dit is handig als je niet wilt dat verbonden apparaten bepaalde platforms bezoeken, zoals Instagram en YouTube.
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
@@ -35,26 +35,26 @@ Restricts access to popular services with one click. This is useful if you don�
 
 Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Categorie-gebaseerde blokkering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pause schedule
+### Pauzeschema
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+Schort de beperkingen van Ouderlijk toezicht tijdelijk op op geselecteerde dagen en tijdens opgegeven tijdsintervallen. Je kunt één of meerdere pauzes per dag toevoegen.
 
-For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+Zo kun je je kind bijvoorbeeld toestaan om YouTube te kijken tot 23:00 uur op weekdagen, terwijl je in het weekend de toegang onbeperkt laat. Je kunt ook een extra pauze toevoegen, bijvoorbeeld van 13:00 tot 15:00 op een doordeweekse dag.
 
-To set up a pause schedule:
+Om een pauzeschema op te stellen:
 
-1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
-2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
-3. To change an existing interval, click _Edit_.
+1. Ga naar _Servers_ → selecteer een server → _Ouderlijk toezicht_ → _Pauzeschema_.
+2. Klik op de **+**-knop naast de gewenste dag en stel het interval in in het _pauze toevoegen_-dialoog.
+3. Om een bestaand interval te wijzigen, klik op _Bewerken_.
 
-You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+Je kunt meerdere intervallen voor dezelfde dag instellen. Intervallen op dezelfde dag mogen niet overlappen: als je probeert overlappende intervallen te maken, krijg je een waarschuwing en kun je het schema niet opslaan.
 
-![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+![Overlappende intervallen \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+Selecteer het _De hele dag_ selectievakje om ouderlijk toezicht de hele dag te pauzeren. Hierdoor worden alle bestaande pauzes voor die dag verwijderd.
 
-Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+Pauzeperiodes kunnen ook middernacht duren. Als je bijvoorbeeld een pauze zet van 22:00 op maandag tot 07:00 op dinsdag, toont het dashboard deze in twee intervallen: maandag, 22:00–00:00, en dinsdag, 00:00–07:00. Dit beïnvloedt niet hoe de pauze werkt.
 
-![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pauze na middernacht \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
