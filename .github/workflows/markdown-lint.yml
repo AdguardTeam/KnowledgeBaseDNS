@@ -2,8 +2,6 @@ name: Lint Markdown
 
 on:
   push:
-    branches:
-      - "*"
   pull_request:
     types: [opened, reopened, synchronize]
 
@@ -11,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: node:20
+      image: node:24
     steps:
       - uses: actions/checkout@v4
 
