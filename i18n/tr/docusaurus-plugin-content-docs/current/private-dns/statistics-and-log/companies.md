@@ -20,7 +20,7 @@ Bunlar da kendi aralarında alt kategorilere ayrılır:
 - **CDN**: request connected to Content Delivery Network (CDN), a worldwide network of proxy servers that speeds the delivery of content to end users
 - **Diğer**
 
-### Başlıca şirketler
+## Başlıca şirketler
 
 Bu tabloda sadece en çok ziyaret edilen veya en çok engellenen şirketlerin adlarını göstermekle kalmıyor, aynı zamanda en çok hangi alan adlarından istek yapıldığı veya hangi alan adlarının engellendiğine ilişkin bilgileri de gösteriyoruz.
 

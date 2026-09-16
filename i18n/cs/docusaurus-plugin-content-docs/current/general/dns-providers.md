@@ -448,52 +448,6 @@ Hurricane Electric Public Recursor je bezplatná alternativní DNS služba Hurri
 | DNS-over-HTTPS | `https://ordns.he.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://ordns.he.net/dns-query&name=ordns.he.net) |
 | DNS-over-TLS   | `tls://ordns.he.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://ordns.he.net&name=ordns.he.net)                         |
 
-### Mullvad
-
-[Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) poskytuje veřejně přístupné DNS s minimalizací QNAME, koncové body se nacházejí v Německu, Singapuru, Švédsku, Velké Británii a Spojených státech (New York a dallas).
-
-#### Bez filtrování
-
-| Protokol       | Adresa                              |                                                                                                                                                                                                                      |
-| -------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.mullvad.net/dns-query&name=MullvadDoH) |
-| DNS-over-TLS   | `tls://dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.mullvad.net&name=MullvadDoT)                         |
-
-#### Blokování reklam
-
-| Protokol       | Adresa                                      |                                                                                                                                                                                                                                                                |
-| -------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://adblock.dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://adblock.dns.mullvad.net/dns-query&name=adblock.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://adblock.dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://adblock.dns.mullvad.net&name=adblock.dns.mullvad.net)                         |
-
-#### Blokování reklam + malwaru
-
-| Protokol       | Adresa                                   |                                                                                                                                                                                                                                                    |
-| -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://base.dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://base.dns.mullvad.net/dns-query&name=base.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://base.dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://base.dns.mullvad.net&name=base.dns.mullvad.net)                         |
-
-#### Blokování reklam + malwaru + sociálních médií
-
-| Protokol       | Adresa                                       |                                                                                                                                                                                                                                                                    |
-| -------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| DNS-over-HTTPS | `https://extended.dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://extended.dns.mullvad.net/dns-query&name=extended.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://extended.dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://extended.dns.mullvad.net&name=extended.dns.mullvad.net)                         |
-
-#### Blokování reklam + malwaru + stránek pro dospělé + hazardních her
-
-| Protokol       | Adresa                                     |                                                                                                                                                                                                                                                            |
-| -------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://family.dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dns.mullvad.net/dns-query&name=family.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://family.dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dns.mullvad.net&name=family.dns.mullvad.net)                         |
-
-#### Blokování reklam + malwaru + stránek pro dospělé + sociálních médií
-
-| Protokol       | Adresa                                  |                                                                                                                                                                                                                                                |
-| -------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-over-HTTPS | `https://all.dns.mullvad.net/dns-query` | [Přidat do AdGuardu](adguard:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://all.dns.mullvad.net/dns-query&name=all.dns.mullvad.net) |
-| DNS-over-TLS   | `tls://all.dns.mullvad.net`             | [Přidat do AdGuardu](adguard:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://all.dns.mullvad.net&name=all.dns.mullvad.net)                         |
-
 ### Nawala Childprotection DNS
 
 [Nawala Childprotection DNS](http://nawala.id/) je anycast systém filtrování internetu, který chrání děti před nevhodnými webovými stránkami a zneužitelným obsahem.
@@ -611,7 +565,7 @@ Obvyklé servery DNS, které poskytují ochranu před krádeží identity a spyw
 
 #### Nezabezpečený
 
-Nezabezpečené servery DNS neposkytují žádné zabezpečené seznamy zakázaných, DNSSEC, nebo EDNS Client-Subnet.
+Unsecured DNS servers provide DNSSEC validation across every Quad9 service endpoint, but they don’t provide security blocklists or EDNS Client Subnet.
 
 | Protokol       | Adresa                                                                |                                                                                                                                                                                                                                |
 | -------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -719,13 +673,13 @@ Blokuje reklamy a obtěžující weby.
 | --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | DNS, IPv4 | `114.114.114.114` a `114.114.115.115` | [Přidat do AdGuardu](adguard:add_dns_server?address=114.114.114.114&name=114DNS), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.114&name=114DNS) |
 
-#### Safe
+#### Bezpečný
 
-Blocks phishing, malicious and other unsafe websites.
+Blokuje krádež identity, škodlivé a další nebezpečné weby.
 
-| Protokol  | Adresa                                  |                                                                                                                                                                   |
-| --------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `114.114.114.119` and `114.114.115.119` | [Add to AdGuard](adguard:add_dns_server?address=114.114.114.119&name=114DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.119&name=114DNS) |
+| Protokol  | Adresa                                |                                                                                                                                                                   |
+| --------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4 | `114.114.114.119` a `114.114.115.119` | [Add to AdGuard](adguard:add_dns_server?address=114.114.114.119&name=114DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=114.114.114.119&name=114DNS) |
 
 #### Family
 
@@ -1063,7 +1017,7 @@ In *Basic* mode, there is no traffic filtering.
 | DNS-over-HTTPS | `https://common.dot.dns.yandex.net/dns-query`     | [Add to AdGuard](adguard:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://common.dot.dns.yandex.net/dns-query&name=yandex.doh) |
 | DNS-over-TLS   | `tls://common.dot.dns.yandex.net`                 | [Add to AdGuard](adguard:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://common.dot.dns.yandex.net&name=yandex.dot)                         |
 
-#### Safe
+#### Bezpečný
 
 In *Safe* mode, protection from infected and fraudulent sites is provided.
 

@@ -11,3 +11,4 @@ AdGuard DNS, sorguları izlemek için çok çeşitli kullanışlı araçlar sağ
 - [Trafik istikameti](/private-dns/statistics-and-log/traffic-destination.md)
 - [Şirketler](/private-dns/statistics-and-log/companies.md)
 - [Sorgu günlüğü](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

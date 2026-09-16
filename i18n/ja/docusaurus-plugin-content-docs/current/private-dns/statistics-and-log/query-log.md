@@ -3,25 +3,25 @@ title: クエリログ
 sidebar_position: 5
 ---
 
-## 「クエリログ」とは
+## What is Query log?
 
-クエリログはAdGuard DNSを使用する際に便利なツールです。
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 指定の期間中にデバイスによって行われたすべてのリクエストを表示し、ステータス、タイプ、企業、デバイス、国別にリクエストを並べ替えることができます。
 
 ## 使い方
 
-Here’s what you can see and what you can do in the _Query log_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### 各リクエストの詳細情報
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### ドメインのブロック・ブロック解除
 
 リクエストは、ログからその場でブロックおよびブロック解除できます。
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### リクエストの並べ替え
 

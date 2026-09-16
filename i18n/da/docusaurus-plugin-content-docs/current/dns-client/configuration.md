@@ -12,11 +12,11 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `dns` {#dns}
 
-`dns`-objektet opsætter adfærden for DNS-serveren. It has the following properties:
+`dns`-objektet opsætter adfærden for DNS-serveren. Det har flg. egenskaber:
 
 ### `cache` {#dns-cache}
 
-`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. It has the following properties:
+`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. Det har flg. egenskaber:
 
 - 'enabled': Hvorvidt DNS-resultaterne skal cachelagres eller ej.
 
@@ -32,9 +32,9 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `server` {#dns-server}
 
-`server`-objektet opsætter håndteringen af indgående forespørgsler. It has the following properties:
+`server`-objektet opsætter håndteringen af indgående forespørgsler. Det har flg. egenskaber:
 
-- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
+- `bind_retry`: Opsætningen af genforsøgsmekanismen for knytning til lytteadresserne. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
 
   :::note
 
@@ -42,7 +42,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   :::
 
-  It has the following properties:
+  Det har flg. egenskaber:
 
   - `enabled`: Om tilknytnings-genforsøg er aktiveret eller ej.
 
@@ -80,7 +80,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `bootstrap` {#dns-bootstrap}
 
-`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. It has the following properties:
+`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. Det har flg. egenskaber:
 
 - `servers`: Listen over servere til at opløse værtsnavnene på upstream-servere.
 
@@ -98,9 +98,9 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `upstream` {#dns-upstream}
 
-'upstream'-objektet opsætter den faktiske forespørgselsopløsning. It has the following properties:
+'upstream'-objektet opsætter den faktiske forespørgselsopløsning. Det har flg. egenskaber:
 
-- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. It has the following properties:
+- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Det har flg. egenskaber:
 
   - `adresse`: Adressen på upstream-serveren. Er `autodevice.enabled` sat til `true` for denne gruppe, skal adressen være en URL med et af skemaerne `https`, `tls` eller `quic`.
 
@@ -114,7 +114,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
     :::
 
-    It has the following properties:
+    Det har flg. egenskaber:
 
     - `enabled`: Definerer om alle klienter i den aktuelle gruppe kan forbindes automatisk.
 
@@ -177,7 +177,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `fallback` {#dns-fallback}
 
-`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. It has the following properties:
+`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. Det har flg. egenskaber:
 
 - `servers`: Listen over servere til brug ved manglende svar fra den aktuelle [upstream](#dns-upstream).
 
@@ -198,11 +198,11 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `debug` {#debug}
 
-`debug`-objektet opsætter fejlfindingsfunktionerne. It has the following properties:
+`debug`-objektet opsætter fejlfindingsfunktionerne. Det har flg. egenskaber:
 
 ### `pprof` {#debug-pprof}
 
-`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. It has the following properties:
+`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. Det har flg. egenskaber:
 
 - `port`: Porten, der skal lyttes til efter fejlfindings HTTP-forespørgsler på localhost.
 
@@ -216,7 +216,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `log` {#log}
 
-"log"-objektet opsætter logningen. It has the following properties:
+"log"-objektet opsætter logningen. Det har flg. egenskaber:
 
 - `output`: Det output, hvortil logger skrives.
 
