@@ -56,6 +56,6 @@ You can set multiple intervals for the same day. Intervals on the same day canno
 
 Selecting the *All day* checkbox pauses *Parental control* restrictions for the entire day, replacing any intervals you’ve set.
 
-Pause intervals can also span midnight. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+Pause intervals can also span midnight. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
 
-![Pause past midnight *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause schedule *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)
