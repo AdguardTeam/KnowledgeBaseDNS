@@ -37,7 +37,7 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ![Kategoribaseret blokering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pausere tidsplan
+### Pausetidsplan
 
 Suspenderer midlertidigt begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Der kan tilføjes en eller flere pauseintervaller for hver dag.
 
@@ -45,7 +45,7 @@ Der kan f.eks. gives et barn lov til at se YouTube indtil kl. 23:00 på hverdage
 
 Sådan opsættes en pausetidsplan:
 
-1. Gå til _Servere_ → vælg en server → _Forældrekontrol_ → _Pausere tidsplan_.
+1. Gå til _Servere_ → vælg en server → _Forældrekontrol_ → _Pausetidsplan_.
 2. Klik på knappen **+** ud for den ønskede dag, og indstil intervallet i dialogboksen _Tilføj pause_.
 3. Et eksisterende interval ændres ved at klikke på _Redigér_.
 
