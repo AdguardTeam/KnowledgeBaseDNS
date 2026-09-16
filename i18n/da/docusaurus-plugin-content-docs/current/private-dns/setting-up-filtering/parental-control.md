@@ -39,9 +39,9 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ### Pausetidsplan
 
-Suspenderer midlertidigt begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Der kan tilføjes en eller flere pauseintervaller for hver dag.
+Du kan midlertidigt suspendere begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Du kan tilføje et eller flere pauseintervaller for hver dag.
 
-Der kan f.eks. gives et barn lov til at se YouTube indtil kl. 23:00 på hverdage, mens adgangen er ubegrænset i weekenden. Der kan også tilføjes et ekstra pauseinterval, f.eks. fra 13:00 til 15:00 på en hverdag.
+Du kan f.eks. lade dit barn se YouTube indtil kl. 23:00 på hverdage, mens adgangen er ubegrænset i weekenden. Du kan også tilføje et ekstra pauseinterval, f.eks. fra 13:00 til 15:00 på en hverdag.
 
 Sådan opsættes en pausetidsplan:
 

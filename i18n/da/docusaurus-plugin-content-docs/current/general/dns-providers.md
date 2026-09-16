@@ -850,7 +850,7 @@ Skjul websteds- og in-app-annoncer oven i den beskyttende funktionalitet.
 
 #### Beskyttende opløsning med børnebeskyttelse og adblocking
 
-Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Plus filtrér annoncer oven i den beskyttende funktionalitet.
+Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Og filtrér annoncer oven i den beskyttende funktionalitet.
 
 | Protokol       | Adresse                                               |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
