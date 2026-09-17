@@ -39,22 +39,23 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ### Pause schedule
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+Temporarily suspends *Parental control* restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+For example, you can pause the restrictions on weekdays from 7:00 a.m. to 8:00 a.m. before school and from 6:00 p.m. to 8:00 p.m. in the evening. Outside of these intervals, *Parental control* applies as usual.
 
 To set up a pause schedule:
 
 1. Go to *Servers* → select a server → *Parental control* → *Pause schedule*.
 1. Click the **+** button next to the desired day and set the interval in the *Add pause* dialog.
+1. Repeat to add more intervals to the same day.
 1. To change an existing interval, click *Edit*.
 
 You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
 
 ![Overlapping intervals *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Select the *All day* checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+Selecting the *All day* checkbox pauses *Parental control* restrictions for the entire day, replacing any intervals you’ve set.
 
-Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+Pause intervals can also span midnight. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
 
-![Pause past midnight *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause schedule *mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)
