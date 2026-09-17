@@ -1,5 +1,5 @@
 ---
-title: White-label endpoint (Account IP)
+title: White-label endpoint (Account IP address)
 sidebar_position: 7
 ---
 
@@ -19,7 +19,7 @@ Each account can have one *Account IP*, and you can point several domains to it.
 
 To request an *Account IP*, contact your account manager or support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
 
-Once the address is assigned, the *White-label endpoint* block appears in *Account settings* → *Advanced settings* → *Custom domains*, showing your *Account IP address*. Until then, the block isn’t shown.
+Once the address is assigned, the *White-label endpoint* block appears in *Settings* → *Advanced settings* → *Custom domains*, showing your *Account IP address*. Until then, the block isn’t shown.
 
 ![White-label endpoint *border](https://cdn.adtidy.org/content/kb/dns/enterprise/white_label_endpoint_en.png?)
 
