@@ -31,7 +31,7 @@ The address itself stays reserved for your account, so if you return to the Ente
 
 :::
 
-## How to point a domain to your Account IP
+## How to point a domain to your Account IP address
 
 Setup follows the same steps as a standard custom domain, except you create an A record instead of a CNAME. Also, for DoH domains, the certificate isn’t issued automatically — you must upload your own.
 
@@ -64,7 +64,7 @@ Renewal is on your side. You’ll get an email reminder before the certificate e
 
 :::
 
-## Existing custom domains and Account IP
+## Existing custom domains and Account IP address
 
 Domains you added before getting an *Account IP* aren’t moved to it automatically. They keep working through their CNAME record, as before.
 
@@ -80,7 +80,7 @@ Your customers won’t be able to use the domain between the moment you delete i
 
 An *Account IP* changes the address your domain resolves to. A few things it doesn’t cover:
 
-- Account IP isn’t fully white-label at the network level. A WHOIS, RDAP, or ASN lookup of the IP address can still identify AdGuard as the provider of the underlying IP infrastructure.
+- Account IP address isn’t fully white-label at the network level. A WHOIS, RDAP, or ASN lookup of the IP address can still identify AdGuard as the provider of the underlying IP infrastructure.
 - Reverse DNS can’t be customized, so a PTR lookup won’t return your domain.
 - DNS server discovery (DDR) isn’t available on an *Account IP*.
 - Certificates with the IP address in the SAN field aren’t supported, so your customers connect through the domain name rather than the address itself.
