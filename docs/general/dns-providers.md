@@ -1310,7 +1310,7 @@ Example (without dashboard access):
 
 ### YunZheng LAB DNS
 
-[YunZheng LAB DNS](https://orbit.yunzheng.space/public-resolver/) is a public anycast resolver operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. It validates DNSSEC and keeps no per-query logs ([privacy policy](https://orbit.yunzheng.space/public-resolver/privacy/)). Two variants share the service: an unfiltered resolver, and a filtered one that refuses advertising, tracking and known-malware domains.
+[YunZheng LAB DNS](https://orbit.yunzheng.space/public-resolver/) is a public anycast resolver operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. It validates DNSSEC and keeps no per-query logs ([privacy policy](https://orbit.yunzheng.space/public-resolver/privacy/)). Three variants share the service: an unfiltered resolver, a filtered one that refuses advertising, tracking and known-malware domains, and a DNS64 one (RFC 6147, well-known prefix only) for IPv6-only networks.
 
 #### Unfiltered
 
@@ -1331,3 +1331,13 @@ Example (without dashboard access):
 | DNS-over-HTTPS | `https://filter.dns.yunzheng.space/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://filter.dns.yunzheng.space/dns-query&name=filter.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://filter.dns.yunzheng.space/dns-query&name=filter.dns.yunzheng.space) |
 | DNS-over-TLS | `tls://filter.dns.yunzheng.space` | [Add to AdGuard](adguard:add_dns_server?address=tls://filter.dns.yunzheng.space&name=filter.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://filter.dns.yunzheng.space&name=filter.dns.yunzheng.space) |
 | DNS-over-QUIC | `quic://filter.dns.yunzheng.space` | [Add to AdGuard](adguard:add_dns_server?address=quic://filter.dns.yunzheng.space&name=filter.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://filter.dns.yunzheng.space&name=filter.dns.yunzheng.space) |
+
+#### DNS64 (for IPv6-only networks with a NAT64 gateway on 64:ff9b::/96)
+
+| Protocol | Address | |
+| ---------------- | ---------------------------------------------------- | ---------------- |
+| DNS, IPv4 | `177.177.83.64` | [Add to AdGuard](adguard:add_dns_server?address=177.177.83.64&name=YunZheng%20LAB%20DNS64), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=177.177.83.64&name=YunZheng%20LAB%20DNS64) |
+| DNS, IPv6 | `2602:f3ff:83::64` | [Add to AdGuard](adguard:add_dns_server?address=2602:f3ff:83::64&name=YunZheng%20LAB%20DNS64), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2602:f3ff:83::64&name=YunZheng%20LAB%20DNS64) |
+| DNS-over-HTTPS | `https://dns64.dns.yunzheng.space/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns64.dns.yunzheng.space/dns-query&name=dns64.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns64.dns.yunzheng.space/dns-query&name=dns64.dns.yunzheng.space) |
+| DNS-over-TLS | `tls://dns64.dns.yunzheng.space` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns64.dns.yunzheng.space&name=dns64.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns64.dns.yunzheng.space&name=dns64.dns.yunzheng.space) |
+| DNS-over-QUIC | `quic://dns64.dns.yunzheng.space` | [Add to AdGuard](adguard:add_dns_server?address=quic://dns64.dns.yunzheng.space&name=dns64.dns.yunzheng.space), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns64.dns.yunzheng.space&name=dns64.dns.yunzheng.space) |
