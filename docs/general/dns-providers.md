@@ -1194,6 +1194,15 @@ The service supports encrypted DNS protocols only and does not log individual DN
 | DNS-over-HTTPS, IPv4 | Hostname: `https://ibksturm.synology.me/dns-query` IP: `213.196.191.96` | [Add to AdGuard](adguard:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://ibksturm.synology.me/dns-query&name=ibksturm.synology.me) |
 | DNSCrypt, IPv4 | Provider: `2.dnscrypt-cert.ibksturm` IP: `213.196.191.96:8443` | [Add to AdGuard](sdns://AQcAAAAAAAAAEzIxMy4xOTYuMTkxLjk2Ojg0NDMgK374BJKvK0aJHWKjmXdkG8_X2KEoao_LALK_nK6PM_AYMi5kbnNjcnlwdC1jZXJ0Lmlia3N0dXJt) |
 
+### MapleDNS
+
+[MapleDNS](https://maplecube.net/pidoh/) is a free personal encrypted DNS resolver (DoH & DoT) with DNSSEC validation and ad, tracker, phishing, malware, and suspicious content blocking. Resolver sets in North America and Europe with automatic geo-DNS latency routing. Plain DNS is not offered publicly.
+
+| Protocol | Address | |
+| ---------------- | ---------------------------------------------------- | ---------------- |
+| DNS-over-HTTPS | `https://pidoh.mapledns.net/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://pidoh.mapledns.net/dns-query&name=pidoh.mapledns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://pidoh.mapledns.net/dns-query&name=pidoh.mapledns.net) |
+| DNS-over-TLS | `tls://pidoh.mapledns.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://pidoh.mapledns.net&name=pidoh.mapledns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://pidoh.mapledns.net&name=pidoh.mapledns.net) |
+
 ### Marbled Fennec
 
 Marbled Fennec Networks is hosting DNS resolvers that are capable of resolving both OpenNIC and ICANN domains
