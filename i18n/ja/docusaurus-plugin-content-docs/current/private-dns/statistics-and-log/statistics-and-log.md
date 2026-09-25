@@ -11,3 +11,4 @@ AdGuard DNS は、クエリを監視するための便利なツールの幅広�
 - [トラフィックの送信先](/private-dns/statistics-and-log/traffic-destination.md)
 - [企業](/private-dns/statistics-and-log/companies.md)
 - [クエリログ](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

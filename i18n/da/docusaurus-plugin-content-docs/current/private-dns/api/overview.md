@@ -135,7 +135,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
 
 :::warning
 
-For at tilgå dette endepunkt, kontakt os via **devteam@adguard.com**. Beskriv venligst årsagen til og brugstilfælde for dette endepunkt, samt angiv omdirigerings-URI'en. Efter godkendelse fremsendes en unik klientidentifikator til brug for parameteren **client_id**.
+To access this endpoint, you need to contact us at **b2b@adguard.com**. Beskriv venligst årsagen til og brugstilfælde for dette endepunkt, samt angiv omdirigerings-URI'en. Efter godkendelse fremsendes en unik klientidentifikator til brug for parameteren **client_id**.
 
 :::
 
@@ -176,7 +176,7 @@ Location: REDIRECT_URI#access_token=...&token_type=Bearer&expires_in=3600&state=
 
 :::warning
 
-For at tilgå dette endepunkt, kontakt os venligst via **devteam@adguard.com**. Beskeden bedes beskrive årsagen til og anvendelsestilfældene for dette endepunkt samt angive omdirigerings-URI'en. Efter godkendelsen modtages en unik klientidentifikator til brug i parameteren **client_id**.
+To access this endpoint, please contact us at **b2b@adguard.com**. Beskeden bedes beskrive årsagen til og anvendelsestilfældene for dette endepunkt samt angive omdirigerings-URI'en. Efter godkendelsen modtages en unik klientidentifikator til brug i parameteren **client_id**.
 
 :::
 
@@ -264,7 +264,7 @@ Forskellige værktøjer kan bruges til at se listen over tilgængelige API-metod
 
 ### Ændringslog
 
-Den komplette AdGuard DNS API-ændringslog er tilgængelig på [denne side](private-dns/api/changelog.md).
+The complete AdGuard DNS API changelog is available on [this page](private-dns/api/changelog.mdx).
 
 ## Feedback
 

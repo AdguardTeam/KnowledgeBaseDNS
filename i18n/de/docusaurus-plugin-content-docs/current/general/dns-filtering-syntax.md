@@ -19,13 +19,13 @@ Sie können die Syntax der AdGuard DNS-Filterregeln verwenden, um die Regeln fle
 
 Es gibt drei verschiedene Ansätze für die Erstellung von Hosts-Sperrlisten:
 
-- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
+- [Adblock-Syntax][]: der moderne Ansatz zum Schreiben von Filterregeln, der auf der Verwendung einer Untermenge der Adblock-Syntax basiert. Auf diese Weise sind die Blocklisten mit den Werbeblockern der Browser kompatibel.
 
 - [`/etc/hosts` syntax](#etc-hosts-syntax): Der alte, bewährte Ansatz, der die gleiche Syntax verwendet, die auch die Betriebssysteme für ihre hosts-Dateien verwenden.
 
 - [Domains-only-Syntax](#domains-only-syntax): eine einfache Liste von Domainnamen.
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. Sie hat eine Reihe wichtiger Vorteile gegenüber der alten Syntax:
+Wenn Sie eine Blockliste erstellen, empfehlen wir die Verwendung der [Adblock-Stil-Syntax][]. Sie hat eine Reihe wichtiger Vorteile gegenüber der alten Syntax:
 
 - **Größe der Sperrlisten.** Durch die Verwendung des Musterabgleichs können Sie eine einzige Regel anstelle von Hunderten von `/etc/hosts` Einträgen verwenden.
 
@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **Erweiterbarkeit.** In den letzten zehn Jahren hat sich die Adblock-Syntax stark weiterentwickelt, und wir sehen keinen Grund, sie nicht noch weiter zu erweitern und zusätzliche Funktionen für Blocker auf Netzwerkebene anzubieten.
 
-If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+Wenn Sie entweder eine Blockliste im Stil von `/etc/hosts` oder mehrere Filterlisten (unabhängig vom Typ) verwalten, bieten wir ein Werkzeug zur Zusammenstellung von Blocklisten. Wir haben es [Hostlist compiler][] genannt und wir verwenden es selbst, um den [AdGuard DNS filter][] zu erstellen.
 
 ## Allgemeine Beispiele {#basic-examples}
 
@@ -60,7 +60,7 @@ If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filter
 
 ## Syntax im Adblock-Stil {#adblock-style-syntax}
 
-This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
+Dies ist eine Teilmenge der [traditionellen Adblock-Syntax][], die von den Werbeblockern der Browser verwendet wird.
 
 ```none
      Regel = ["@@"] pattern [ "$" modifiers ]
@@ -79,13 +79,13 @@ Modifikator = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`: stimmt mit dem Anfang eines Hostnamens überein, einschließlich aller Subdomains. Zum Beispiel stimmt `||example.org` mit `example.org` und `test.example.org` überein, aber nicht mit `testexample.org`.
 
-- `^`: das Trennzeichen. Unlike browser ad blocking, there’s nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
+- `^`: das Trennzeichen. Anders als bei der Werbeblockierung in Browsern gibt es in einem Hostnamen nichts zu trennen, so dass der einzige Zweck dieses Zeichens darin besteht, das Ende des Hostnamens zu markieren.
 
 - `|`: ein Zeiger auf den Anfang oder das Ende des Hostnamens. Der Wert hängt von der Platzierung des Zeichens in der Maske ab. Die Regel `ample.org|` entspricht zum Beispiel `example.org`, aber nicht `example.org.com`. `|example` entspricht `example.org` aber nicht `test.example`.
 
 ### Reguläre Ausdrücke {#regular-expressions}
 
-If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. Wenn Sie einen regulären Ausdruck verwenden wollen, muss das Muster wie folgt aussehen:
+Wenn Sie bei der Erstellung von Regeln noch flexibler sein wollen, können Sie [reguläre Ausdrücke][regexp] anstelle der standardmäßigen vereinfachten Syntax verwenden. Wenn Sie einen regulären Ausdruck verwenden wollen, muss das Muster wie folgt aussehen:
 
 ```none
 pattern = "/" regexp "/"
@@ -125,11 +125,11 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`][]-Modifikator mit seinem Wert `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der [`dnstype`][]-Modifikator mit seinem Wert, `A`.
 
 :::note
 
-If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers’ filter lists like EasyList or EasyPrivacy.
+Wenn eine Regel einen Modifikator enthält, der nicht in diesem Dokument aufgeführt ist, wird die gesamte Regel **nicht berücksichtigt**. Auf diese Weise werden Fehlalarme vermieden, wenn Nutzer versuchen, unveränderte Filterlisten von Browser-Werbeblockern wie EasyList oder EasyPrivacy zu verwenden.
 
 :::
 
@@ -137,11 +137,11 @@ If a rule contains a modifier not listed in this document, the whole rule **must
 
 :::note
 
-The `client` modifier can only be used in AdGuard Home and AdGuard DNS.
+Der Modifikator `client` kann nur in AdGuard Home und AdGuard DNS verwendet werden.
 
 :::
 
-The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
+Der Modifikator `client` ermöglicht die Angabe von Clients, auf die diese Regel angewendet werden soll. Es gibt zwei Hauptmethoden, um einen Client zu identifizieren:
 
 - Durch ihre IP-Adresse oder ihr CIDR-Präfix. Dies funktioniert für alle Arten von Clients.
 
@@ -149,27 +149,27 @@ The `client` modifier allows specifying clients this rule is applied to. There a
 
   :::note
 
-  In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  In AdGuard Home werden derzeit keine Client-IDs unterstützt, sondern nur Namen. Wenn Sie einen Client mit dem Namen „Mein Client” und der „ClientID” `mein-client` hinzugefügt haben, benennen Sie ihren Modifikator mit „`$client='Mein Client'`” anstelle von „`$client=mein-client`”.
 
   :::
 
-The syntax is:
+Die Syntax lautet:
 
 ```none
 $client=value1|value2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client’s DNS requests.
+Sie können auch Clients ausschließen, indem Sie `~` vor dem Wert einfügen. In diesem Fall wird die Regel nicht auf die DNS-Anfragen dieses Clients angewendet.
 
 ```none
 $client=~value1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+Client-Namen enthalten in der Regel Leerzeichen oder andere Sonderzeichen, weshalb Sie den Namen in Anführungszeichen setzen sollten. Sowohl einfache als auch doppelte ASCII-Anführungszeichen werden unterstützt. Verwenden Sie den Backslash (`\`), um Anführungszeichen (`"` und `'`), Kommata (`,`) und Pipes (`|`) zu vermeiden.
 
 :::note
 
-When excluding a client, you **must** place `~` outside the quotes.
+Wenn Sie einen Client ausschließen, **müssen** Sie `~` außerhalb der Anführungszeichen platzieren.
 
 :::
 
@@ -187,15 +187,15 @@ When excluding a client, you **must** place `~` outside the quotes.
 
 #### `denyallow` {#denyallow-modifier}
 
-You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
+Sie können den `denyallow`-Modifikator verwenden, um Domänen von der Blockierungsregel auszuschließen. Um mehrere Domains zu einer Regel hinzuzufügen, verwenden Sie das Pipe-Zeichen `|` als Trennzeichen.
 
-The syntax is:
+Die Syntax lautet:
 
 ```none
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+Dieser Modifikator ermöglicht es, unnötige Ausnahmeregeln zu vermeiden, wenn unsere Blockierungsregel zu viele Domains abdeckt. Möglicherweise möchten Sie alles außer einigen TLD-Domains blockieren. Sie könnten den Standardansatz verwenden, d. h. Regeln wie diese:
 
 ```none
 ! Alles blockieren.
@@ -206,7 +206,7 @@ This modifier allows avoiding creating unnecessary exception rules when our bloc
 @@||net^
 ```
 
-The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here’s how to solve this with `denyallow`:
+Das Problem bei diesem Ansatz ist, dass Sie auf diese Weise auch Tracking-Domains freigeben, die sich auf diesen TLDs befinden (z. B. `google-analytics.com`). So lösen Sie dieses Problem mit `denyallow`:
 
 ```none
 *$denyallow=com|net
@@ -218,28 +218,28 @@ The problem with this approach is that this way you will also unblock tracking d
 
 - `@@*$denyallow=com|net`: entsperrt alles außer `*.com` und `*.net`.
 
-- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`: blockiert `example.org` und `*.example.org`, aber nicht `sub.example.org`.
 
 #### `dnstype` {#dnstype-modifier}
 
-The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
+Mit dem Modifikator `dnstype` kann der Typ der DNS-Anfrage oder -Antwort angegeben werden, bei dem diese Regel ausgelöst wird.
 
-The syntax is:
+Die Syntax lautet:
 
 ```none
 $dnstype=value1|value2|...
 $dnstype=~value1|~value2|~...
 ```
 
-The names of the types are case-insensitive, but are validated against a set of actual DNS resource record (RR) types.
+Die Namen der Typen sind unabhängig von Groß- und Kleinschreibung, werden jedoch anhand einer Menge tatsächlicher DNS-Resource-Record-(RR)-Typen validiert.
 
-Do not combine exclusion rules with inclusion ones. This:
+Kombinieren Sie keine Ausschlussregeln mit Einschlussregeln. Dies:
 
 ```none
 $dnstype=~value1|value2
 ```
 
-is equivalent to this:
+ist gleichbedeutend mit diesem:
 
 ```none
 $dnstype=value2
@@ -253,7 +253,7 @@ $dnstype=value2
 
 :::note
 
-Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+Vor Version **v0.108.0** verwendete AdGuard Home den Typ der Anfrage, um die Antwortdatensätze zu filtern, im Gegensatz zum Typ des Antwortdatensatzes selbst.  Das führte zu Problemen, da dies bedeutete, dass man keine Regeln schreiben konnte, die bestimmte `CNAME`-Datensätze in Antworten auf `A`- und `AAAA`-Anfragen zuließen. In **v0.108.0** wurde dieses Verhalten geändert, so dass jetzt dieses:
 
 :::
 
@@ -261,7 +261,7 @@ Before version **v0.108.0,** AdGuard Home would use the type of the request to f
 ||canon.example.com^$dnstype=~CNAME
 ```
 
-allows you to avoid filtering of the following response:
+erlaubt es, die Filterung der folgenden Antwort zu vermeiden:
 
 ```none
 ANSWERS:
@@ -275,17 +275,17 @@ ANSWERS:
 
 #### `dnsrewrite` {#dnsrewrite-modifier}
 
-The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
+Der `dnsrewrite`-Antwortmodifikator erlaubt es, den Inhalt der Antwort auf die DNS-Anfrage für die entsprechenden Hosts zu ersetzen. Beachten Sie, dass dieser Modifikator in AdGuard Home in allen Regeln funktioniert, in Private AdGuard DNS jedoch nur in benutzerdefinierten Regeln.
 
 :::note
 
-Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.
+Regeln mit dem Antwortmodifikator `dnsrewrite` haben eine höhere Priorität als andere Regeln in AdGuard Home.
 
 :::
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+Die Antworten auf alle Anfragen nach einem Host, der einer `dnsrewrite`-Regel entspricht, werden ersetzt. Der Antwortabschnitt der Ersatzantwort enthält nur RRs, die dem Abfragetyp der Anfrage entsprechen, und möglicherweise CNAME-RRs. Beachten Sie, dass dies bedeutet, dass Antworten auf einige Anfragen leer sein können (`NODATA`), wenn der Host einer `dnsrewrite`-Regel entspricht.
 
-The shorthand syntax is:
+Die Kurzsyntax lautet:
 
 ```none
 $dnsrewrite=1.2.3.4
@@ -294,9 +294,9 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
+Die Schlüsselwörter MÜSSEN in Großbuchstaben geschrieben werden (z.B. `NOERROR`). Keyword-Rewrites haben Vorrang vor anderen und führen zu einer leeren Antwort mit einem entsprechenden Antwortcode.
 
-The full syntax is of the form `RCODE;RRTYPE;VALUE`:
+Die vollständige Syntax hat die Form `RCODE;RRTYPE;VALUE`:
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4
@@ -305,9 +305,9 @@ $dnsrewrite=NOERROR;CNAME;example.net
 $dnsrewrite=REFUSED;;
 ```
 
-The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
+Die `$dnsrewrite` Modifikator mit dem `NOERROR` Der Antwortcode kann ebenfalls leer sein `RRTYPE` und `WERT` Felder.
 
-The `CNAME` one is special because AdGuard Home will resolve the host and add its info to the response. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
+Der `CNAME` ist besonders, weil AdGuard Home den Host auflöst und seine Informationen in die Antwort einfügt. Das heißt, wenn `example.net` die IP `1.2.3.4`hat, und der Benutzer dies in seinen Filterregeln hat:
 
 ```none
 ||example.com^$dnsrewrite=example.net
@@ -315,7 +315,7 @@ The `CNAME` one is special because AdGuard Home will resolve the host and add it
 ||example.com^$dnsrewrite=NOERROR;CNAME;example.net
 ```
 
-then the response will be something like:
+dann lautet die Antwort etwa so:
 
 ```sh
 nslookup example.com my.adguard.local
@@ -331,22 +331,22 @@ Name: example.net
 Adresse: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite. After that, all other records’ values are summed as one response, so this:
+Als nächstes wird der `CNAME` umgeschrieben. Danach werden alle Werte der anderen Datensätze zu einer Antwort zusammengefasst, also so:
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-will result in a response with two `A` records.
+führt zu einer Antwort mit zwei `A`-Datensätzen.
 
-Currently supported RR types with examples:
+Derzeit unterstützte RR-Typen mit Beispielen:
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` fügt einen `PTR`-Eintrag für Reverse DNS hinzu. Reverse-DNS-Anfragen für `1.2.3.4` an den DNS-Server ergeben `example.net`.
 
   :::note
 
-  The IP MUST be in reverse order. See [RFC 1035][rfc1035].
+  Die IP-Adresse MUSS in umgekehrter Reihenfolge angegeben werden. Siehe [RFC 1035][rfc1035].
 
   :::
 
@@ -379,7 +379,7 @@ Currently supported RR types with examples:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` antwortet mit einem leeren `NOERROR` antwortet auf alle `AAAA` Anfragen außer denen für `example.org`.
 
-Exception rules unblock one or all rules:
+Ausschlussregeln heben die Sperre einer oder aller Regeln auf:
 
 - `@@||example.com^$dnsrewrite` hebt das Sperren aller DNS-Rewrite-Regeln auf.
 
@@ -387,13 +387,13 @@ Exception rules unblock one or all rules:
 
 :::info
 
-If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+Wenn Sie eine Blockliste pflegen, die in AdGuard DNS und AdGuard Home enthalten ist (d. h. enthalten in [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` Die Regeln werden automatisch herausgefiltert. Falls diese Regeln für Ihre Blockliste erforderlich sind, beantragen Sie bitte die Genehmigung, indem Sie ein neues Issue im Repository [„HostlistsRegistry“][hostlistsregistry] eröffnen.
 
 :::
 
 #### `important` {#important-modifier}
 
-The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
+Der `important` Modifikator, der auf eine Regel angewendet wird, erhöht ihre Priorität gegenüber allen anderen Regeln ohne den Modifikator. Sogar über grundlegende Ausnahmeregeln.
 
 **Beispiele:**
 
@@ -417,7 +417,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 #### `badfilter` {#badfilter-modifier}
 
-The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+Die Regeln mit dem Modifikator `badfilter` deaktivieren andere Grundregeln, auf die sie sich beziehen. Dies bedeutet, dass der Text der deaktivierten Regel dem Text der Regel `badfilter` (ohne den Modifikator `badfilter`) entsprechen sollte.
 
 **Beispiele:**
 
@@ -427,7 +427,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
   :::note
 
-  The `badfilter` modifier currently doesn’t work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+  Der Modifikator `badfilter` funktioniert derzeit nicht mit Regeln im Stil von `/etc/hosts`. `127.0.0.1 example.org$badfilter` wird **nicht** die ursprüngliche Regel `127.0.0.1 example.org` deaktivieren.
 
   :::
 
@@ -435,25 +435,25 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 :::note
 
-The `ctag` modifier can only be used in AdGuard Home.
+Der Modifikator `ctag` kann nur in AdGuard Home verwendet werden.
 
 :::
 
-It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+Es ermöglicht, Domains nur für bestimmte Arten von DNS-Client-Tags zu blockieren. Sie können Tags den Clients im AdGuard Home UI zuweisen. Zukünftig planen wir, Tags automatisch zu vergeben, indem wir das Verhalten jedes einzelnen Clients analysieren.
 
-The syntax is:
+Die Syntax lautet:
 
 ```none
 $ctag=value1|value2|...
 ```
 
-If one of client’s tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+Wenn eines der Schlagwörter (Tags) des Clients mit den Werten von `ctag` übereinstimmt, gilt diese Regel für den Client. Die Syntax für den Ausschluss lautet:
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client’s tags matches the exclusion `ctag` values, this rule doesn’t apply to the client.
+Wenn eines der Schlagwörter (Tags) des Clients mit den Ausschlusswerten `ctag` übereinstimmt, gilt diese Regel nicht für den Client.
 
 **Beispiele:**
 
@@ -461,7 +461,7 @@ If one of client’s tags matches the exclusion `ctag` values, this rule doesn�
 
 - `||example.org^$ctag=~device_phone`: sperrt `example.org` für alle Clients außer denen, die als `device_phone` gekennzeichnet sind.
 
-The list of allowed tags:
+Die Liste der zulässigen Tags:
 
 - Nach Gerätetyp:
 
@@ -497,25 +497,25 @@ The list of allowed tags:
 
 :::note
 
-The `respgeo` modifier can only be used in AdGuard DNS.
+Der Modifikator `respgeo` kann ausschließlich in AdGuard DNS verwendet werden.
 
 :::
 
-The `respgeo` modifier allows you to apply rules based on the country or ASN of the IP address returned in the DNS response. It checks the **destination** IP address — the IP address the domain resolves to. It does **not** check the IP address, country, or ASN of the user, device, or DNS client.
+Mit dem Modifikator `respgeo` können Regeln angewendet werden, die auf dem Land oder der ASN der in der DNS-Antwort zurückgegebenen IP-Adresse basieren. Er überprüft die **Ziel**-IP-Adresse — also die IP-Adresse, auf die die Domain aufgelöst wird. Er **überprüft nicht** die IP-Adresse, das Land oder die ASN des Benutzers, des Geräts oder des DNS-Clients.
 
-##### Blocking by response country
+##### Blockierung nach antwortendem Land
 
-The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-2 format. You can also use `--` to match responses where the country could not be determined.
+Der Wert des Modifikators muss dem zweistelligen Ländercode im ISO 3166-1-Alpha-2-Format entsprechen. Sie können auch `--` verwenden, um Antworten abzugleichen, bei denen das Land nicht ermittelt werden konnte.
 
 **Beispiele:**
 
-- `||*^$respgeo=US`: block domains if the IP address in the DNS response is associated with the United States.
-- `||*^$respgeo=FR|DE`: block domains if the IP address in the DNS response is associated with France or Germany.
-- `||*^$respgeo=--`: block domains if the country of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~--`: block domains if the country of the IP address in the DNS response is known.
-- `@@||whitehouse.gov^`: allow `whitehouse.gov`, even if it is blocked by a wildcard rule with the `respgeo` modifier.
-- `@@||example.org^$respgeo=US`: allow `example.org` if the IP address in the DNS response is associated with the United States.
-- `||whitehouse.gov^$respgeo=US`: blocks `whitehouse.gov` only if the IP address in the DNS response is associated with the United States.
+- `||*^$respgeo=US`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort den Vereinigten Staaten zugeordnet ist.
+- `||*^$respgeo=FR|DE`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort mit Frankreich oder Deutschland in Verbindung steht.
+- `||*^$respgeo=--`: Domains blockieren, wenn das Land der IP-Adresse in der DNS-Antwort unbekannt ist.
+- `||*^$respgeo=~--`: Domains blockieren, wenn das Land der IP-Adresse in der DNS-Antwort bekannt ist.
+- `@@||whitehouse.gov^`: `whitehouse.gov` zulassen, auch wenn die Domain durch eine Platzhalterregel mit dem Modifikator `respgeo` blockiert ist.
+- `@@||example.org^$respgeo=US`: `example.org` zulassen, wenn die IP-Adresse in der DNS-Antwort den Vereinigten Staaten zugeordnet ist.
+- `||whitehouse.gov^$respgeo=US`: blockiert `whitehouse.gov` nur dann, wenn die IP-Adresse in der DNS-Antwort mit den Vereinigten Staaten verknüpft ist.
 - In diesem Beispiel:
 
   ```none
@@ -523,40 +523,40 @@ The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-
   @@||whitehouse.gov^$respgeo=US
   ```
 
-  `@@||whitehouse.gov^$respgeo=US` will **not** allow `whitehouse.gov`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||whitehouse.gov^$respgeo=US` wird **nicht** `whitehouse.gov` zulassen, da die erste Regel die Anfrage durch Prüfung der Anfragedaten blockiert, während die zweite versucht, sie durch Prüfung der Antwort zuzulassen.
 
-You can use `~` to invert the condition:
+Sie können `~` verwenden, um die Bedingung zu invertieren:
 
-- `||*^$respgeo=~DE`: block domains if the IP address in the DNS response is **not** associated with Germany.
+- `||*^$respgeo=~DE`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort **nicht** Deutschland zugeordnet ist.
 
-**Limitations**
+**Einschränkungen**
 
-The `respgeo` modifier uses a single calculated IP address and country according to the current *Query log* logic. If a domain resolves to multiple IP addresses or countries, AdGuard DNS does not analyze all returned IP addresses.
+Der `respgeo`-Modifikator verwendet eine einzelne berechnete IP-Adresse und ein Land gemäß der aktuellen *Anfragenprotokoll*-Logik. Wenn eine Domain zu mehreren IP-Adressen oder Ländern aufgelöst wird, analysiert AdGuard DNS nicht alle zurückgegebenen IP-Adressen.
 
-Because many domains use CDNs, load balancing, or geographically distributed infrastructure, the detected country may change over time.
+Da viele Domains CDNs, Lastenausgleich oder geografisch verteilte Infrastruktur verwenden, kann sich das erkannte Land im Laufe der Zeit ändern.
 
-If the country cannot be determined, the GeoIP condition will not match. Use `respgeo=--` to match responses with an unknown country.
+Wenn das Land nicht ermittelt werden kann, trifft die GeoIP-Bedingung nicht zu. Verwenden Sie `respgeo=--`, um Antworten mit einem unbekannten Land abzugleichen.
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+Regeln mit dem Modifikator `respgeo` werden im *Anfragenprotokoll* als reguläre Regeln angezeigt.
 
-##### Blocking by ASN
+##### Blockierung nach ASN
 
-The `respgeo` modifier can also be used to apply rules based on the ASN of the IP address returned in the DNS response.
+Der `respgeo`-Modifikator kann auch verwendet werden, um Regeln basierend auf der ASN der IP-Adresse anzuwenden, die in der DNS-Antwort zurückgegeben wird.
 
-ASN stands for **Autonomous System Number**. It identifies an autonomous system — a network operated by an ISP, hosting provider, cloud provider, company, or other organization.
+ASN steht für **Autonomous System Number**. Es identifiziert ein autonomes System — ein Netzwerk, das von einem ISP, Hosting-Anbieter, Cloud-Anbieter, Unternehmen oder einer anderen Organisation betrieben wird.
 
-This modifier checks the **destination ASN** — the ASN associated with the IP address the domain resolves to. It does **not** check the ASN of the user, device, or DNS client.
+Dieser Modifikator überprüft die **Ziel-ASN** — die ASN, die der IP-Adresse zugeordnet ist, zu der die Domain auflöst. Er überprüft **nicht** die ASN des Benutzers, Geräts oder DNS-Clients.
 
-The value of the modifier must be an ASN in the `AS<number>` format, for example `AS15169`.
+Der Wert des Modifikators muss eine ASN im Format `AS<number>` sein, zum Beispiel `AS15169`.
 
 **Beispiele:**
 
-- `||*^$respgeo=AS15169`: block domains if the IP address in the DNS response belongs to ASN AS15169.
-- `||*^$respgeo=AS15169|AS8075`: block domains if the IP address in the DNS response belongs to ASN AS15169 or AS8075.
-- `||*^$respgeo=AS--`: block domains if the ASN of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~AS--`: block domains if the ASN of the IP address in the DNS response is known.
-- `@@||google.com^$respgeo=AS15169`: allow `google.com` if the IP address in the DNS response belongs to ASN AS15169.
-- `||google.com^$respgeo=AS15169`: block `google.com` only if the IP address in the DNS response belongs to ASN AS15169.
+- `||*^$respgeo=AS15169`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort zu ASN AS15169 gehört.
+- `||*^$respgeo=AS15169|AS8075`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort zum ASN AS15169 oder AS8075 gehört.
+- `||*^$respgeo=AS--`: Domains blockieren, wenn die ASN der IP-Adresse in der DNS-Antwort unbekannt ist.
+- `||*^$respgeo=~AS--`: Domains blockieren, wenn die ASN der IP-Adresse in der DNS-Antwort bekannt ist.
+- `@@||google.com^$respgeo=AS15169`: `google.com` zulassen, wenn die IP-Adresse in der DNS-Antwort zum ASN AS15169 gehört.
+- `||google.com^$respgeo=AS15169`: `google.com` nur dann blockieren, wenn die IP-Adresse in der DNS-Antwort zum ASN AS15169 gehört.
 - In diesem Beispiel:
 
   ```none
@@ -564,35 +564,35 @@ The value of the modifier must be an ASN in the `AS<number>` format, for example
   @@||google.com^$respgeo=AS15169
   ```
 
-  `@@||google.com^$respgeo=AS15169` will **not** allow `google.com`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||google.com^$respgeo=AS15169` wird **nicht** `google.com` zulassen, weil die erste Regel die Anfrage durch Auswertung der Anfragedaten blockiert, während die zweite versucht, sie durch Auswertung der Antwort zuzulassen.
 
-You can use `~` to invert the condition:
+Sie können `~` verwenden, um die Bedingung zu invertieren:
 
-- `||*^$respgeo=~AS15169`: block domains if the IP address in the DNS response does **not** belong to ASN AS15169.
+- `||*^$respgeo=~AS15169`: Domains blockieren, wenn die IP-Adresse in der DNS-Antwort **nicht** zu ASN AS15169 gehört.
 
-**Limitations**
+**Einschränkungen**
 
-The `respgeo` modifier uses a single calculated IP address and ASN according to the current *Query log* logic. If a domain resolves to multiple IP addresses or ASNs, AdGuard DNS does not analyze all returned ASNs.
+Der `respgeo`-Modifikator verwendet eine einzelne berechnete IP-Adresse und ASN gemäß der aktuellen *Anfragenprotokoll*-Logik. Wenn eine Domain zu mehreren IP-Adressen oder ASNs aufgelöst wird, analysiert AdGuard DNS nicht alle zurückgegebenen ASNs.
 
-Large CDN, cloud, or hosting ASNs may contain many unrelated websites. Blocking an ASN may therefore affect more domains than expected.
+Große CDN-, Cloud- oder Hosting-ASNs können viele nicht miteinander verbundene Websites enthalten. Die Sperrung einer ASN kann daher mehr Domains betreffen als erwartet.
 
-If the ASN cannot be determined, the ASN condition will not match. Use `respgeo=AS--` to match responses with an unknown ASN.
+Wenn die ASN nicht ermittelt werden kann, stimmt die ASN-Bedingung nicht überein. Verwenden Sie `respgeo=AS--`, um Antworten mit einem unbekannten ASN abzugleichen.
 
-ASN does not always correspond to a specific company, product, or service. It only identifies the network associated with the resolved IP address.
+Eine ASN entspricht nicht immer einem bestimmten Unternehmen, Produkt oder Dienst. Es identifiziert nur das Netzwerk, das mit der aufgelösten IP-Adresse verbunden ist.
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+Regeln mit dem Modifikator `respgeo` werden im *Anfragenprotokoll* als reguläre Regeln angezeigt.
 
 ## `/etc/hosts`-Style-Syntax {#etc-hosts-syntax}
 
-For each host a single line should be present with the following information:
+Für jeden Host sollte eine einzelne Zeile mit den folgenden Informationen vorhanden sein:
 
 ```none
 IP_Adresse canonical_hostname [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
+Die Felder der Einträge werden durch eine beliebige Anzahl von Leer- oder Tabulatorzeichen getrennt. Der Text ab dem Zeichen `#` bis zum Ende der Zeile ist ein Kommentar und wird ignoriert.
 
-Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
+Hostnamen dürfen nur alphanumerische Zeichen, Bindestrich-Minuszeichen (`-`) und Punkte (`.`) enthalten. Sie müssen mit einem Buchstaben beginnen und mit einem alphanumerischen Zeichen enden. Optionale Aliase ermöglichen Namensänderungen, alternative Schreibweisen, kürzere Hostnamen oder generische Hostnamen (z. B. `localhost`).
 
 **Beispiel:**
 
@@ -603,11 +603,11 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # Dies ist auch ein Kommentar
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+In AdGuard Home werden die IP-Adressen verwendet, um DNS-Anfragen für diese Domains zu beantworten. Im Private AdGuard DNS werden diese Adressen einfach blockiert.
 
 ## Nur-Domain-Syntax {#domains-only-syntax}
 
-A simple list of domain names, one name per line.
+Eine einfache Liste von Domainnamen, ein Name pro Zeile.
 
 **Beispiel:**
 
@@ -618,17 +618,17 @@ example.org
 example.net # dies ist auch ein Kommentar
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
+Wenn eine Zeichenkette keine gültige Domain ist (z.B. `*.example.org`), wird AdGuard Home sie als [Adblock-Syntax][]-Regel betrachten.
 
 ## Hostlists Compiler {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+Wenn Sie eine Blockliste pflegen und darin verschiedene Quellen verwenden, kann der [Hostlist-Compiler][] für Sie nützlich sein. Es ist ein einfaches Hilfsmittel, das die Zusammenstellung einer Sperrliste für Hosts erleichtert, die mit AdGuard Home, Private AdGuard DNS oder jedem anderen AdGuard-Produkt mit DNS-Filterung kompatibel ist.
 
-What it’s capable of:
+Was es kann:
 
 1. Zusammenstellung einer einzigen Blockliste aus mehreren Quellen.
 
-2. Exclude the rules you don’t need.
+2. Streicht die Regeln, die nicht benötigt werden.
 
 3. Bereinigt die resultierende Liste: entfernt Dubletten, entfernt ungültige Regeln und komprimiert die Liste.
 
@@ -638,14 +638,19 @@ What it’s capable of:
 
 <!-- external links -->
 
+[Adblock-Syntax]: #adblock-style-syntax
+
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
-[Adblock-style syntax]: #adblock-style-syntax
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+
+[Adblock-Stil-Syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[Hostlist-Compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[traditionellen Adblock-Syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
-[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

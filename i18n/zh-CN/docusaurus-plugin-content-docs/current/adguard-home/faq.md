@@ -396,16 +396,16 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您将压缩包下载到 `~/Downloads` 目录，并希望将其解压缩到 `/tmp/`：
+5. 将 AdGuard Home 压缩包解压到临时目录。 For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    在 macOS 上，键入如下内容：
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 在大多数 Unix 系统上，该命令如下所示：

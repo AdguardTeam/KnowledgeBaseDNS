@@ -7,6 +7,22 @@
     "message": "Vidensbase til AdGuard DNS",
     "description": "The site tagline used in meta description"
   },
+  "apiChangelog.loading": {
+    "message": "Indlæser ændringslog…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "Mislykkedes at indlæse ændringsloggen. Originalen kan ses på {link}.",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "Versioner",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "Indlæser API-reference…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "Side ikke fundet",
     "description": "The title of the 404 page"

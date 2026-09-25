@@ -3,25 +3,25 @@ title: Registro de consultas
 sidebar_position: 5
 ---
 
-## ¿Qué es el Registro de consultas?
+## What is Query log?
 
-El registro de consultas es una herramienta útil para trabajar con AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Te permite ver todas las peticiones realizadas por tus dispositivos durante el período de tiempo seleccionado y ordenar las peticiones por estado, tipo, empresa, dispositivo, país.
 
 ## Cómo utilizarlo
 
-Here’s what you can see and what you can do in the _Query log_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Información detallada sobre las peticiones
 
-![Información de peticiones \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Bloqueo y desbloqueo de dominios
 
 Las peticiones pueden ser bloqueadas y desbloqueadas sin salir del registro, utilizando las herramientas disponibles.
 
-![Desbloquear dominio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Ordenar peticiones
 

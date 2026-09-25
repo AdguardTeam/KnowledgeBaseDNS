@@ -7,7 +7,7 @@ Erişim ayarlarını yapılandırarak AdGuard DNS'inizi yetkisiz erişime karş�
 
 Engellenen istekler Sorgu Günlüğünde görüntülenmeyecek ve toplam limite dâhil edilmeyecektir.
 
-## Nasıl ayarlanır
+## How to set it up
 
 ### İzin verilen istemciler
 

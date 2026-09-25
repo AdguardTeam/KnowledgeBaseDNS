@@ -11,3 +11,4 @@ AdGuard DNS는 쿼리를 모니터링하기 위한 다양한 유용한 도구를
 - [트래픽 목적지](/private-dns/statistics-and-log/traffic-destination.md)
 - [기업](/private-dns/statistics-and-log/companies.md)
 - [쿼리 로그](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)
