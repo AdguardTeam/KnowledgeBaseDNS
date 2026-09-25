@@ -11,3 +11,4 @@ AdGuard DNS предоставляет широкий диапазон поле�
 - [Журнал запросов](/private-dns/statistics-and-log/traffic-destination.md)
 - [Компании](/private-dns/statistics-and-log/companies.md)
 - [Журнал запросов](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

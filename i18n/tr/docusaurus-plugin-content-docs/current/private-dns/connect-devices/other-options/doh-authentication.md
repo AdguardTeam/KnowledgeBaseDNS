@@ -9,7 +9,7 @@ Kimlik doğrulamalı DNS-over-HTTPS, seçtiğiniz sunucuya erişmek için bir ku
 
 Bu, yetkisiz kullanıcıların erişmesini önlemeye yardımcı olur ve güvenliği artırır. Ayrıca, belirli profiller için diğer protokollerin kullanımını kısıtlayabilirsiniz. Bu özellik, DNS sunucu adresinizin başkaları tarafından bilindiği durumlarda özellikle kullanışlıdır. Parola ekleyerek erişimi engelleyebilir ve yalnızca sizin kullanabilmenizi sağlayabilirsiniz.
 
-## Nasıl ayarlanır
+## How to set it up
 
 :::note Uyumluluk
 

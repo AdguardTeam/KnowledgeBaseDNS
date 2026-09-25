@@ -3,25 +3,25 @@ title: Forespørgselslog
 sidebar_position: 5
 ---
 
-## Hvad er Forespørgselslog
+## What is Query log?
 
-Forespørgselslog er et nyttigt værktøj ved arbejde med AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Man kan se alle forespørgsler, som er foretaget af ens enheder i den valgte periode og sortere forespørgsler efter status, type, firma, enhed, land.
 
 ## Sådan bruges den
 
-Her er, hvad man kan se, og hvad man kan foretage sig i _Forespørgselslog_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Detaljeret information om forespørgsler
 
-![Forespørgselsinfo \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Blokering og afblokering af domæner
 
 Forespørgsler kan blokeres og afblokeres uden at forlade loggen vha. de tilgængelige værktøjer.
 
-![Afblokér domæne \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Sortering af forespørgsler
 

@@ -3,25 +3,25 @@ title: Registro delle richieste
 sidebar_position: 5
 ---
 
-## Cos'è il registro delle richieste
+## What is Query log?
 
-Il registro delle richieste è uno strumento utile per lavorare con AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Ti consente di visualizzare tutte le richieste effettuate dai tuoi dispositivi durante il periodo selezionato e di ordinare le richieste per stato, tipo, azienda, dispositivo, paese.
 
 ## Come si usa
 
-Ecco cosa puoi vedere e cosa puoi fare nel _Registro richieste_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Informazioni dettagliate sulle richieste
 
-![Info sulle richieste \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Blocco e sblocco di domini
 
 Le richieste possono essere bloccate e sbloccate senza lasciare il registro, utilizzando gli strumenti disponibili.
 
-![Sblocca dominio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Ordinamento delle richieste
 

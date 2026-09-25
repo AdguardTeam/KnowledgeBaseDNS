@@ -3,48 +3,58 @@ title: Rodičovská ochrana
 sidebar_position: 5
 ---
 
-## Co to je
+_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
-Rodičovská ochrana je soubor nastavení, který umožňuje přizpůsobit přístup k určitým webovým stránkám s citlivým obsahem. Pomocí této funkce můžete dětem omezit přístup na stránky pro dospělé, přizpůsobit vyhledávací dotazy, zablokovat používání oblíbených služeb a další.
+## How to set it up
 
-## Jak to nastavit
+You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
-Na serverech můžete flexibilně konfigurovat všechny funkce, včetně funkce rodičovské ochrany. [V příslušném článku](private-dns/server-and-settings/server-and-settings.md) se můžete seznámit s tím, co je to server v AdGuard DNS, a dozvědět se, jak vytvořit různé servery s různými sadami nastavení.
+Then, go to the settings of the selected server and enable the required configurations.
 
-Poté přejděte do nastavení vybraného serveru a povolte požadované konfigurace.
+### Block adult websites
 
-### Blokování webových stránek pro dospělé
-
-Blokuje webové stránky s nevhodným obsahem a obsahem pro dospělé.
+Blocks websites with inappropriate and adult content.
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Bezpečné vyhledávání
+### Safe search
 
-Odstraňuje nevhodné výsledky ze služeb Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave a Ecosia.
+Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
 
-![Safe search \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+### YouTube restricted mode
 
-### Omezený režim YouTube
+Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
 
-Odstraňuje možnost prohlížet a přidávat komentáře pod videa a komunikovat s obsahem 18+ na YouTube.
+### Blocked services and websites
 
-![Restricted mode \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
-
-### Blokované služby a weby
-
-AdGuard DNS blokuje přístup k oblíbeným službám jedním kliknutím. Je to užitečné, pokud nechcete, aby připojená zařízení navštěvovala například Instagram a YouTube.
+Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Blokovat weby podle kategorie
+### Block websites by category
 
-Tato funkce vám umožňuje omezit přístup k určitým kategoriím webových stránek výběrem z více než 20 kategorií, včetně _Obsahu pro dospělé_, _Her_, _Bankovnictví_ a _Komunikace_. Pokud například zablokujete weby obsahující informace o alkoholu, tabáku nebo drogách, vybrané zařízení již nebude moci otevírat stránky spadající do těchto kategorií.
+Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Nastavení času vypnutí
+### Pause schedule
 
-Povolí rodičovskou kontrolu ve vybraných dnech se zadaným časovým intervalem. Například jste svému dítěti povolili sledovat videa na YouTube pouze do 23:00 ve všední dny. O víkendech však tento přístup není omezen. Přizpůsobte si rozvrh podle svých představ a zablokujte přístup na vybrané stránky v požadovaných hodinách.
+Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-![Schedule \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+
+To set up a pause schedule:
+
+1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
+2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
+3. To change an existing interval, click _Edit_.
+
+You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+
+![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+
+Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+
+Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+
+![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)

@@ -94,21 +94,21 @@ Il principio è lo stesso su Windows: assicurati che la directory di AdGuard Hom
 
 In futuro, prevediamo di rilasciare le build per Windows come file d'installazione MSI, che assicurino l'esecuzione automatica.
 
-## Verify releases {#verify-releases}
+## Verificare le release {#verify-releases}
 
-We sign the executable files that we build so that you can verify that they were created by us and not by anyone else. Inside an archive file, there is a small file with a `.sig` extension that contains the signature data. If someone replaces the binary file inside an archive, you’ll know it isn’t an official release from AdGuard.
+Firmiamo i file eseguibili che generiamo affinché tu possa verificare che siano stati creati da noi e non da qualcun altro. All'interno di un file di archivio è presente un piccolo file con estensione `.sig` che contiene i dati della firma. Se qualcuno sostituisce il file binario all’interno di un archivio, saprai che non si tratta di una versione ufficiale di AdGuard.
 
-### How to verify that the executable file was built by AdGuard? {#how-to-verify-executable}
+### Come verificare che il file eseguibile sia stato compilato da AdGuard? {#how-to-verify-executable}
 
-1. Unpack the AdGuard Home archive file.
+1. Decomprimi il file di archivio di AdGuard Home.
 
-2. Import the AdGuard Home public key from the keyserver. For **current releases,** run:
+2. Importa la chiave pubblica di AdGuard Home dal server delle chiavi. Per le **versioni attuali,** esegui:
 
    ```sh
    gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
    ```
 
-   The above command will print something similar to:
+   Il comando precedente restituirà qualcosa di simile a:
 
    ```none
    gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
@@ -116,21 +116,21 @@ We sign the executable files that we build so that you can verify that they were
    gpg:               imported: 1
    ```
 
-3. Verify.
+3. Verifica.
 
-   - On UNIX:
+   - Su UNIX:
 
      ```sh
      gpg --verify AdGuardHome/AdGuardHome.sig
      ```
 
-   - On Windows (you might need to install PGP):
+   - Su Windows (potrebbe essere necessario installare PGP):
 
      ```ps1
      gpg --verify AdGuardHome/AdGuardHome.exe.sig
      ```
 
-   You'll see something like this:
+   Vedrai qualcosa di simile:
 
    ```none
    gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
@@ -140,23 +140,23 @@ We sign the executable files that we build so that you can verify that they were
    gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
    ```
 
-   Check the following:
+   Verifica quanto segue:
 
-   - RSA key: must be `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
-   - issuer name: must be `AdGuard`;
-   - E-mail address: must be `devteam@adguard.com`;
+   - Chiave RSA: deve essere `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
+   - nome dell'emittente: deve essere `AdGuard`;
+   - Indirizzo e-mail: deve essere `devteam@adguard.com`;
 
-   There may also be the following warning:
+   Potrebbe inoltre essere visualizzato il seguente avviso:
 
    ```none
-   gpg: WARNING: The key's User ID is not certified with a trusted signature!
-   gpg:          There is no indication that the signature belongs to the owner.
-   Primary key fingerprint: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
+   gpg: ATTENZIONE: l'ID utente della chiave non è certificato da una firma attendibile!
+   gpg:             Non vi è alcuna indicazione che la firma appartenga al proprietario.
+   Impronta digitale della chiave primaria: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
    ```
 
-### Reproducing AdGuard Home builds {#reproducing-builds}
+### Riproduzione delle build di AdGuard Home {#reproducing-builds}
 
-AdGuard Home uses [reproducible builds][repr]. See the `build-release.sh` section in our [build script documentation][build].
+AdGuard Home utilizza [rilasci riproducibili][repr]. Consulta la sezione `build-release.sh` nella nostra [documentazione dello script di compilazione][build].
 
 [build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
 [repr]: https://reproducible-builds.org/
