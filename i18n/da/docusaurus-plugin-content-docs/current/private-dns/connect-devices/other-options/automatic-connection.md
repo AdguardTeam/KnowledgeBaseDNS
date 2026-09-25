@@ -32,7 +32,7 @@ Der kan [bruges AdGuard DNS CLI til automatisk enhedstilslutning][agdnscli-autod
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dette vil automatisk oprette en `Windows`-enhed med `DNS-over-HTTPS`-protokollen kaldet `John Doe`
 
-- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` – dette vil automatisk oprette en `iOS`-enhed med `DNS-over-QUIC`-protokollen kaldet `Mary Sue`
 
 ### Navngivningskonventioner
 

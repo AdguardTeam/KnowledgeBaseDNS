@@ -1,77 +1,77 @@
 ---
-title: Query log streaming
+title: Streaming af forespørgselslog
 sidebar_position: 6
 ---
 
 :::info
 
-_Query log streaming_ is currently in beta testing. During this phase, configuration and setup are semi-manual and performed in coordination with the AdGuard team.
+_Streaming af forespørgselslog_ er p.t. i betatest. I denne fase er opsætningsfaserne halvmanuel og udføres i samarbejde med AdGuard-teamet.
 
 :::
 
-This article describes how to set up and use _Query log streaming_ in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+Denne artikel beskriver, hvordan _Streaming af forespørgselslog_ opsættes og benyttes i AdGuard DNS. Denne funktion giver AdGuard DNS Enterprise-brugere mulighed for automatisk at eksportere rå DNS-forespørgselshændelser til ekstern lagring af sikkerheds-, analyse- eller overholdelsesformål.
 
-## What is Query log streaming?
+## Hvad er Streaming af forespørgselslog?
 
-_Query log streaming_ lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
+_Streaming af forespørgselslog_ giver AdGuard DNS Enterprise-brugere mulighed for automatisk at eksportere rå DNS-forespørgselshændelser til egne eksterne, S3-kompatible lagre – uden at være afhængige af manuel API-polling. Når disse logfiler er eksporteret, kan de indlæses af SIEM-systemer, SOC-platforme, datasøer eller interne analysepipelines, hvilket giver programmatisk adgang til rå forespørgselsdata til sikkerhedsovervågning, revision og regeloverholdelser.
 
-Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [_Delivery guarantees and limitations_](#delivery-guarantees-and-limitations) section for details).
+Hændelser indsamles og leveres i periodiske, komprimerede puljer; leveringstidspunktet afhænger af trafikmængden (se afsnittet [_Leveringsgarantier og begrænsninger_](#delivery-guarantees-and-limitations) for detaljer).
 
-## Availability and requirements
+## Tilgængelighed og krav
 
-To use _Query log streaming_, the following requirements must be met:
+For brug af _Streaming af forespørgselslog_ skal flg. krav være opfyldt:
 
-- **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
-- **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
+- **Enterprise-abonnementstype:** Denne funktion er udelukkende tilgængelig for AdGuard DNS Enterprise-brugere. Er kontoen ikke længere er på en Enterprise-abonnementstype, deaktiveres logstreamingtjenesten. For frivillig deaktivering, se FAQ nedenfor.
+- **Aktiv forespørgselslog:** AdGuard DNS-opsætningen skal have forespørgselslogning aktiveret.
+- **S3-kompatibel bucket:** En aktiv, skrivbar bucket skal eksistere på Amazon S3 eller en anden S3-kompatibel cloud-lagringsudbyder (f.eks. Cloudflare R2, Backblaze B2, Wasabi eller MinIO).
+- **Adgangsoplysninger:** Der skal angives de forbindelsesparametre og legitimationsoplysninger, som kræves, for at AdGuard DNS kan skrive objekter til en bucket.
 
-## How to request setup
+## Sådan anmodes om opsætning
 
-Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
+Da opsætning p.t. håndteres manuelt af vores infrastrukturteam, bedes disse trin følges for at anmode om logstreaming:
 
-### Step 1: Prepare your S3 bucket
+### Trin 1: Forbered relevant S3-bucket
 
-1. Create a dedicated bucket or path/prefix within your S3-compatible storage.
-2. Grant the minimum required permissions to the credentials you will share with AdGuard. At a minimum, the credentials must have write permissions (`s3:PutObject`) on the designated path.
+1. Opret en dedikeret bucket eller sti/præfiks i det S3-kompatible lager.
+2. Tildel de nødvendige minimumsrettigheder til de loginoplysninger, som ønskes delt med AdGuard. Som minimum skal legitimationsoplysningerne have skrivetilladelser (`s3:PutObject`) på den angivne sti.
 
-### Step 2: Contact your account manager or AdGuard support team
+### Trin 2: Kontakt kontoadministratoren eller AdGuard-supportteamet
 
-Reach out to your dedicated AdGuard account manager or contact AdGuard support team at `support@adguard-dns.io`, and provide the target account or organization for which logs should be streamed.
+Kontakt den dedikerede AdGuard-kontoadministrator, eller kontakt AdGuard-supportteamet via `support@adguard-dns.io`, og angiv den målkonto eller organisation, logfilerne skal streames for.
 
-### Step 3: Provide configuration details
+### Trin 3: Angiv opsætningsoplysninger
 
-Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
+Når anmodningen er godkendt, vil supportteamet give yderligere vejledning, samt anmode om de specifikke opsætningsparametre, som kræves for at etablere logstrømmen.
 
-### Step 4: Wait for the log stream to be activated
+### Trin 4: Afvent, at logstrømmen aktiveres
 
-Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
+Når logstrømmen er aktiveret, skrives en `.healthcheck`-fil indeholdende `ok` automatisk til destinations-bucket'en. Opstår forbindelses- eller skrivefejl under opsætningen, vil underretning herom ske. Ingen yderligere handling kræves, når streamen er aktiveret.
 
-## Log format and S3 object structure
+## Logformat og S3-objektstruktur
 
-Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
+Logfiler leveres som **minificerede JSON-filer indeholdende en række af objekter**, hvor hvert objekt heri repræsenterer en enkelt DNS-forespørgselshændelse.
 
-### Compression and encoding
+### Komprimering og kodning
 
-- **Encoding:** UTF-8
-- **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
+- **Kodning:** UTF-8
+- **Komprimering:** Gzip-komprimering er obligatorisk og anvendes automatisk på alle eksporterede logfiler.
 
-### S3 object layout and naming
+### S3-objektlayout og -navngivning
 
-Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
+Logfiler skrives til den S3-kompatible bucket via et struktureret mappehierarki og en specifik tidsstempelbaseret navngivningskonvention for at muliggøre effektiv partitionsbaseret forespørgsel og indlæsning.
 
-- **Object prefix (Path):** `/logs/%Y/%m/%d/` (organized by Year, Month, and Day)
-- **Filename pattern:** `%H-%M-%S-%3f.json.gz` (Hour-Minute-Second-Millisecond of the batch generation)
+- **Objektpræfiks (sti):** `/logs/%Y/%m/%d/` (organiseret efter år, måned og dag)
+- **Filnavnsmønster:** `%H-%M-%S-%3f.json.gz` (Time-Minut-Sekund-Millisekund af batchgenereringen)
 
-**Example S3 object key:**
+**Eksempel på S3-objektnøgle:**
 
 `logs/2026/08/24/14-02-02-123.json.gz`
 
-### File schema structure
+### Filskemastruktur
 
-Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minified JSON array.
+I modsætning til JSON Lines (JSONL) er den leverede fil et standard, minimeret JSON-matrix med én linje.
 
-**Example of the delivered minified file structure (uncompressed representation):**
+**Eksempel på den leverede minificerede filstruktur (ukomprimeret repræsentation):**
 
 ```json
 
@@ -98,161 +98,161 @@ Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minifie
 }
 ```
 
-## Fields reference {#fields-reference}
+## Feltreference {#fields-reference}
 
-The table below describes the schema for the exported DNS query logs.
+Tabellen nedenfor beskriver skemaet for de eksporterede DNS-forespørgselslogfiler.
 
-| Field             | Type          | Obligatorisk | Beskrivelse                                                                                                                                                                                                                                                                                                         | Example                |
-| :---------------- | :------------ | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| `AccountId`       | heltal        | Nej          | Detected account ID, if any.                                                                                                                                                                                                                                                                        | `1234`                 |
-| `DnsServerId`     | streng        | Nej          | Detected profile ID, also known as DNS ID or DNS Server ID, if any.                                                                                                                                                                                                                                 | `"prof1234"`           |
-| `DeviceId`        | streng        | Nej          | Detected device ID, if any.                                                                                                                                                                                                                                                                         | `"dev1234"`            |
-| `ClientCountry`   | streng        | Nej          | Country of the client’s IP address as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo.                                                                                                                                      | `"AU"`                 |
-| `ResponseCountry` | streng        | Nej          | Country of the first IP address in the response as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo; `QN` means “Not Applicable” when the response type contains no IP address information.                                  | `"US"`                 |
-| `DomainFQDN`      | streng        | Ja           | Requested DNS resource name (FQDN).                                                                                                                                                                                                                                              | `"example.com."`       |
-| `FilterListId`    | streng        | Nej          | ID of the first filter whose rules matched the query. Omitted if no rule matched. Reserved values include `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing`, and `youtube_safe_search`. | `"adguard_dns_filter"` |
-| `FilterRule`      | streng        | Nej          | First rule that matched the query. For `blocked_service`, contains the blocked service ID. For `category`, contains the category ID. Omitted if no rule matched.                                                                                    | `"example.com^"`       |
-| `TimeAddedMs`     | heltal        | Ja           | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                      | `1629974298000`        |
-| `ASN`             | heltal        | Nej          | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                    | `1234`                 |
-| `ElapsedMs`       | heltal        | Ja           | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                            | `3`                    |
-| `RequestType`     | heltal        | Ja           | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                   | `1`                    |
-| `RequestIdNum`    | heltal        | Ja           | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                   | `12345`                |
-| `Action`          | heltal        | Ja           | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                        | `2`                    |
-| `DNSSEC`          | heltal        | Ja           | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                | `1`                    |
-| `Protocol`        | heltal        | Ja           | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                    | `3`                    |
-| `ResponseCode`    | heltal        | Ja           | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                  | `0`                    |
-| `IpAddress`       | streng        | Nej          | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                               | `"1.2.3.4"`            |
-| `TrackerId`       | string / null | Ja           | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                | `"google"`             |
-| `CategoryId`      | string / null | Ja           | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                         | `"search_engines"`     |
+| Felt              | Type          | Obligatorisk | Beskrivelse                                                                                                                                                                                                                                                                                                                      | Eksempel               |
+| :---------------- | :------------ | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `AccountId`       | heltal        | Nej          | Detekteret konto-ID, om noget.                                                                                                                                                                                                                                                                                   | `1234`                 |
+| `DnsServerId`     | streng        | Nej          | Detekteret profil-ID, også kendt som DNS ID eller DNS Server ID, om noget.                                                                                                                                                                                                                                       | `"prof1234"`           |
+| `DeviceId`        | streng        | Nej          | Detekteret enheds-ID, om noget.                                                                                                                                                                                                                                                                                  | `"dev1234"`            |
+| `ClientCountry`   | streng        | Nej          | Landet for klientens IP-adresse som en ISO 3166-1 alpha-2-kode. Fraværende, hvis det ikke kunne detekteres. `XK` bruges til Kosovo.                                                                                                                                              | `"AU"`                 |
+| `ResponseCountry` | streng        | Nej          | Landet for klientens IP-adresse i svaret som en ISO 3166-1 alpha-2-kode. Fraværende, hvis det ikke kunne detekteres. `XK` bruges til Kosovo; `QN` betyder "Ikke relevant", når svartypen ikke indeholder IP-adresseoplysninger.                                                  | `"US"`                 |
+| `DomainFQDN`      | streng        | Ja           | Anmodet DNS-ressourcenavn (FQDN).                                                                                                                                                                                                                                                             | `"example.com."`       |
+| `FilterListId`    | streng        | Nej          | ID for det første filter, hvis regler matchede forespørgslen. Udeladt ved ingen regelmatch. Reserverede værdier omfatter `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing` og `youtube_safe_search`. | `"adguard_dns_filter"` |
+| `FilterRule`      | streng        | Nej          | Første regel matchende forespørgslen. For `blocked_service` indeholder den det blokerede tjeneste-ID. For `category` indeholder den kategori-ID’et. Udeladt ved ingen regelmatch.                                                                                | `"example.com^"`       |
+| `TimeAddedMs`     | heltal        | Ja           | Unix-tidsstempel i millisekunder for modtagelsen af anmodningen.                                                                                                                                                                                                                                                 | `1629974298000`        |
+| `ASN`             | heltal        | Nej          | Autonomt systemnummer (ASN) detekteret fra klientens IP-adresse, om noget.                                                                                                                                                                                                                    | `1234`                 |
+| `ElapsedMs`       | heltal        | Ja           | Tid forløbet i millisekunder siden starten af forespørgselsbehandlingen.                                                                                                                                                                                                                                         | `3`                    |
+| `RequestType`     | heltal        | Ja           | Numerisk DNS-ressourceposttype for forespørgslen, f.eks. `1` for en `A`-post.                                                                                                                                                                                                    | `1`                    |
+| `RequestIdNum`    | heltal        | Ja           | Tilfældigt usigneret 16-bit heltal brugt til at forenkle dublering, når det gamle `u`-felt ikke bruges.                                                                                                                                                                                                          | `12345`                |
+| `Action`          | heltal        | Ja           | Filtreringshandling: `0` ukendt, `1` ingen filtrering, `2` forespørgsel blokeret, `3` svar blokeret, `4` forespørgsel tilladt af hvidliste, `5` svar tilladt af hvidliste, `6` forespørgsel eller svar ændret/omskrevet.                                                                         | `2`                    |
+| `DNSSEC`          | heltal        | Ja           | Hvorvidt svaret er DNSSEC-valideret: `0` = nej, `1` = ja.                                                                                                                                                                                                                                        | `1`                    |
+| `Protocol`        | heltal        | Ja           | DNS-protokol: `0` ukendt, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Almindelig DNS, `9` DNSCrypt.                                                                                                                                                                             | `3`                    |
+| `ResponseCode`    | heltal        | Ja           | DNS-svarkode (`RCODE`) sendt til klienten.                                                                                                                                                                                                                                                    | `0`                    |
+| `IpAddress`       | streng        | Nej          | Klient-IP-adresse. Udeladt, når IP-logføring er deaktiveret for den korresponderende profil.                                                                                                                                                                                                     | `"1.2.3.4"`            |
+| `TrackerId`       | string / null | Ja           | Tracker-ID fundet ved at matche det anmodede domæne med berigelsestabellen `dns-trackers`. Sæt til `null`, såfremt ingen tracker er fundet.                                                                                                                                                      | `"google"`             |
+| `CategoryId`      | string / null | Ja           | Tracker-kategori-ID returneret af `dns-trackers`-berigelsesopslaget. Sæt til `null`, såfremt ingen tracker er fundet.                                                                                                                                                                            | `"search_engines"`     |
 
-## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
+## Leveringsgarantier og -begrænsninger {#delivery-guarantees-and-limitations}
 
-Understanding how logs are batched and delivered is critical for designing your SIEM ingestion pipeline.
+Det er afgørende at forstå, hvordan logfiler batches og leveres ved design af en SIEM-indlæsningspipeline.
 
-- **Batch-only delivery:** Logs are exported strictly in batches, not in real time. To keep the system stable and adapt to different traffic levels, both batch sizes and delivery intervals are flexible. Exact file sizes and upload times are not fixed and may vary as the system is optimized.
-- **Expected latency and potential delays:** While we strive for minimal latency, there is an expected delivery latency. Occasional delays are possible due to high network traffic, system load, or processing queues.
-- **At-least-once delivery:** Log delivery is guaranteed on an at-least-once basis. While this ensures that all events are successfully delivered, duplicate log entries may occasionally be written to the destination bucket (for example, during network retries or recovery from transient connection drops). Exactly-once delivery is not guaranteed.
-- **Client-side deduplication required:** The client must be capable of deduplicating events within their SIEM or data lake. Deduplication should be handled using a combination of the event `timestamp` and other unique identifiers.
-- **No order guarantees:** Due to the distributed nature of our global DNS infrastructure, the chronological order of events is not guaranteed. Events may arrive out of order within a single log file or across different batches.
-- **Unreachable destination (retries or drops):** If your S3 endpoint or bucket becomes unreachable (e.g., due to expired credentials or network outages on your provider’s side), AdGuard DNS may attempt retries. However, depending on backend limits, log events generated during the outage might be dropped (skipped) to prevent buffer overflow.
-- **No historical backfill:** Log streaming is strictly forward-looking. Exporting historical logs generated before the streaming feature was activated is not supported.
+- **Kun batchlevering:** Logfiler eksporteres udelukkende i batcher, ikke i realtid. For at holde systemet stabilt og tilpasse sig forskellige trafikniveauer er både batchstørrelser og leveringsintervaller fleksible. Nøjagtige filstørrelser og uploadtider er ikke faste og kan variere i takt med at systemet optimeres.
+- **Forventet latenstid og potentielle forsinkelser:** Selvom vi stræber efter minimal latenstid, er der en forventet leveringsforsinkelse. Lejlighedsvise forsinkelser kan opstå grundet høj netværkstrafik, systembelastning eller behandlingskøer.
+- **Levering mindst én gang:** Loglevering er garanteret mindst én gang. Selvom dette sikrer, at der sker levering af alle hændelser, kan der lejlighedsvis skrives logpostdubletter til destinationsbucketen (f.eks. under netværksgenforsøg eller gendannelse fra midlertidige forbindelsesafbrydelser). Levering præcis én gang garanteres ikke.
+- **Dedublering på klientsiden obligatorisk:** Klienten skal være i stand til at dedublere hændelser i sin SIEM- eller datasø. Dedublering bør håndteres via en kombination af begivenhedens `tidsstempel` og andre unikke identifikatorer.
+- **Ingen rækkefølgegarantier:** Grundet den distribuerede natur af vores globale DNS-infrastruktur er den kronologiske rækkefølge af begivenheder ikke garanteret. Hændelser kan ankomme i forkert rækkefølge i en enkelt logfil eller på tværs af forskellige batches.
+- **Destination, der ikke kan nås (genforsøg eller drop):** Hvis S3-endepunktet eller en bucket bliver utilgængelig (f.eks. på grund af udløbne legitimationsoplysninger eller netværksafbrydelser hos udbyderen), kan AdGuard DNS forsøge med nye forsøg. Afhængigt af backend-begrænsninger kan loghændelser, genereret under nedbruddet, dog blive droppet (oversprunget) for at forhindre bufferoverløb.
+- **Ingen historisk efterfyldning:** Logstreaming er udeluende fremadrettet. Eksport af historiske logfiler genereret før aktivering af streamingfunktionen understøttes ikke.
 
-## Security and privacy
+## Sikkerhed og fortrolighed
 
-DNS query logs contain highly sensitive network and metadata. To ensure the safety of your organization’s data, please observe the following security principles:
+DNS-forespørgselslogfiler indeholder højsensitive netværks- og metadata. For at sikre sikkerheden af organisationsdata, bedes flg sikkerhedsprincipper overholdt:
 
-- **Sensitive DNS data:** Be aware that streamed logs can contain sensitive DNS metadata, including queried domains, device identifiers, client IP addresses, and geographic details of your clients.
-- **Client responsibility:** The client is solely responsible for the overall security of their S3-compatible bucket, including configuring and maintaining secure bucket policies and access control lists (ACLs).
-- **Restrict access:** We highly recommend restricting access to the bucket to the absolute minimum necessary.
-- **Credential rotation:** Credentials (access keys and secrets) provided to AdGuard DNS for bucket access should be regularly rotated in accordance with your organization’s internal security policies. However, because changing keys on the cloud provider side immediately revokes AdGuard’s write permissions, new credentials must be updated in AdGuard at the same time to prevent log delivery disruption.
-- **Dashboard logging settings impact:** If certain types of logging are disabled in your AdGuard DNS account settings, this will directly affect the schema of your exported logs. For example, if you disable specific device metadata logging, those fields will be omitted (or populated with null values) in the streamed JSON files.
-- **No bypass of privacy settings:** AdGuard DNS strictly respects your configuration. Under no circumstances will AdGuard bypass, override, or circumvent your account’s privacy and data-anonymization settings when exporting events to your external storage.
+- **Sensitive DNS-data:** Vær opmærksom på, at streamede logfiler kan indeholde sensitive DNS-metadata, herunder forespurgte domæner, enheds-ID'er, klient-IP-adresser og geografiske oplysninger om de aktuelle klienter.
+- **Klientenansvar:** Klienten er eneansvarlig for den overordnede sikkerhed af vedkommendes S3-kompatible bucket, herunder opsætning og vedligeholdelse af sikre bucketpolitikker og adgangskontrollister (ACL'er).
+- **Begræns adgang:** Vi anbefaler kraftigt at begrænse bucketadgangen til et absolut minimum.
+- **Rotation af legitimationsoplysninger:** Legitimationsoplysninger (adgangsnøgler og hemmeligheder), som leveres til AdGuard DNS til bucket-adgang, bør roteres regelmæssigt i overensstemmelse med organisationens interne sikkerhedspolitikker. Da skift af nøgler på cloududbydersiden imidlertid øjeblikkeligt tilbagekalder AdGuards skrivetilladelser, skal nye legitimationsoplysninger opdateres i AdGuard samtidig for at forhindre afbrydelse af loglevering.
+- **Indvirkning af kontrolpanelets logningsindstillinger:** Er visse typer logning deaktiveret i AdGuard DNS-kontoindstillingerne, vil dette direkte påvirke skemaet for de eksporterede logfiler. Deaktiveres f.eks. logning af specifikke enhedsmetadata, udelades disse felter (eller udfyldes med null-værdier) i de streamede JSON-filer.
+- **Ingen omgåelse af fortrolighedsindstillinger:** AdGuard DNS respekterer strikst opsætningen. AdGusrd vil under ingen omstændigheder forbigå, tilsidesætte eller omgå kontoens fortroligheds- og dataanonymiseringsindstillinger ved eksport af hændelser til det eksterne lager.
 
-## How to ingest logs into SIEM
+## Sådan indlæses logfiler i SIEM
 
-Since AdGuard DNS streams query logs to S3-compatible storage, configuring the ingestion pipeline into your SIEM platform is handled entirely on your side.
+Da AdGuard DNS streamer forespørgselslogfiler til et S3-kompatibelt lager, håndteres opsætningen af indlæsnings-pipelinen til SIEM-platformen udelukkende på brugersiden.
 
-- **S3-compatible destination:** AdGuard DNS delivers raw log files directly to your designated S3 bucket, which serves as the central landing zone for your security data.
-- **Custom ingestion pipeline:** You can connect and ingest these log files into your SIEM or analytics system using your own data pipelines, custom scripts, or ETL processes.
-- **Standard S3 connectors:** For major platforms such as **Splunk**, **Microsoft Sentinel**, and **Elastic**, you typically utilize their respective native S3 connectors, inputs, or log collectors.
-- **Infrastructure-dependent setup:** The exact configuration, index mapping, and parsing rules inside your SIEM depend heavily on your organization’s specific infrastructure, data schemas, and retention policies.
+- **S3-kompatibel destination:** AdGuard DNS leverer rå logfiler direkte til den angivne S3-bucket, der fungerer som den centrale landingszone for sikkerhedsdataene.
+- **Tilpasset indlæsnings-pipeline:** Disse logfiler kan forbindes og indlæses i et SIEM- eller analysesystem via egne data-pipelines, tilpassede scripts eller ETL-processer.
+- **Standard S3-forbindelser:** For større platforme, såsom **Splunk**, **Microsoft Sentinel** og **Elastic**, benyttes typisk deres egne respektive S3-konnektorer, input eller logindsamlere.
+- **Infrastrukturafhængig opsætning:** Den nøjagtige opsætning, indeksstrukturering og parsingregler i en SIEM afhænger i høj grad af organisationens specifikke infrastruktur, dataskemaer og opbevaringspolitikker.
 
-## Troubleshooting
+## Fejlfinding
 
-This section details common integration issues you may encounter when setting up or running the query log stream, along with steps to resolve them.
+Dette afsnit beskriver almindelige integrationsproblemer, som kan opleves, når forespørgselslogstreamen opsættes eller køres, samt trin til at løse dem.
 
-### Logs are not appearing in the bucket
+### Logfiler vises ikke i bucket'en
 
-**Potential cause:** Configuration on the AdGuard side is not yet complete, or incorrect connection parameters were provided.
+**Potentiel årsag:** Opsætningen på AdGuard-siden er endnu ikke fuldført, eller forkerte forbindelsesparametre er angivet.
 
-**Resolution:** Verify that you received a confirmation email from your AdGuard account manager stating that the stream configuration is complete. Double-check all shared parameters (bucket name, endpoint, region).
+**Løsning:** Kontrollér, at der er modtaget en bekræftelses-e-mail fra den AdGuard-kundeansvarlige om, at stream-opsætningen er fuldført. Dobbelttjek alle delte parametre (bucket-navn, endepunkt, region).
 
-### Incorrect bucket permissions
+### Forkerte bucket-tilladelser
 
-**Potential cause:** The credentials shared with AdGuard do not have sufficient permissions to write objects to the bucket.
+**Potentiel årsag:** De legitimationsoplysninger, som er delt med AdGuard, har ikke tilstrækkelige tilladelser til at skrive objekter til bucket'en.
 
-**Resolution:** Ensure that the AWS IAM policy (or your provider’s equivalent) associated with the provided access keys explicitly grants `s3:PutObject` permission for the target bucket and prefix.
+**Løsning:** Sørg for, at den AWS IAM-politik (eller udbyderens tilsvarende), der er knyttet til de angivne adgangsnøgler, udtrykkeligt tildeler `s3:PutObject`-tilladelse til mål-bucket og -præfiks.
 
-### S3 credentials expired
+### S3-legitimationsoplysninger udløbet
 
-**Potential cause:** The credentials have expired, or they were rotated/revoked in accordance with your organization’s internal security policies.
+**Potentiel årsag:** Adgangsoplysningerne er udløbet, eller de blev roteret/tilbagekaldt jf. organisationens interne sikkerhedspolitikker.
 
-**Resolution:** Generate a new set of access and secret keys, and share them securely with your AdGuard account manager to update your stream configuration.
+**Løsning:** Generér et nyt sæt adgangs- og hemmelige nøgler, og del dem sikkert med den AdGuard-kundeansvarlige for at opdatere stream-opsætningen.
 
-### Duplicates appeared in the log destination
+### Dubletter dukkede op på logdestinationen
 
-**Potential cause:** Network retries triggered by the “at-least-once” delivery model during transient network interruptions.
+**Potentiel årsag:** Netværksgenforsøg udløst af leveringsmodellen "mindst én gang" under forbigående netværksafbrydelser.
 
-**Resolution:** This is expected behavior in distributed logging pipelines. Configure deduplication rules in your SIEM or database using a combination of the `timestamp`, `domain`, and `device_id` (or other unique event identifiers).
+**Løsning:** Dette er forventet adfærd i distribuerede lognings-pipelines. Opsæt dedubleringsregler i SIEM'en eller databasen via en kombination af `timestamp`, `domain` og `device_id` (eller andre unikke hændelsesidentifikatorer).
 
-### Latency is higher than expected
+### Latens er højere end forventet
 
-**Potential cause:** Temporary network congestion, system load, or buffering delays on the cloud provider’s side.
+**Potentiel årsag:** Midlertidig netværksoverbelastning, systembelastning eller bufferforsinkelser på cloududbyderens side.
 
-**Resolution:** Check the operational status of your S3-compatible cloud provider. If log delivery delays consistently exceed your expected batch interval (e.g., more than 15–30 minutes), contact AdGuard support to check the status of our outbound delivery queues.
+**Løsning:** Tjek driftsstatussen for den S3-kompatible cloududbyder. Overskrider forsinkelser i loglevering konsekvent det forventede batchinterval (f.eks. mere end 15–30 minutter), kontakt AdGuard-supporten for at tjekke statussen for vores udgående leveringskøer.
 
-### Missing fields in the logs
+### Manglende felter i logfilerne
 
-**Potential cause:** Specific logging or privacy features (such as client IP logging or device metadata collection) are disabled in your AdGuard DNS dashboard settings.
+**Potentiel årsag:** Specifikke lognings- eller fortrolighedsfunktioner (såsom logning af klient-IP eller indsamling af enhedsmetadata) er deaktiveret i indstillingerne på AdGuard DNS-kontrolpanelet.
 
-**Resolution:** Review your privacy and logging settings within the AdGuard DNS dashboard. The log streaming export strictly respects these settings and will not bypass your data-minimization preferences.
+**Løsning:** Gennemgå fortroligheds- og logningsindstillinger i AdGuard DNS-kontrolpanelet. Eksporten af logstreaming overholder nøje disse indstillinger og omgår ikke dataminimeringspræferencerne.
 
-### Enterprise status changed
+### Enterprise-status ændret
 
-**Potential cause:** Your Enterprise subscription has expired, was cancelled, or your account was downgraded.
+**Potentiel årsag:** Enterprise-abonnementet er udløbet, opsagt eller kontoen er nedgraderet.
 
-**Resolution:** Log streaming is deactivated automatically if the account loses Enterprise status. Contact your AdGuard account manager to restore your subscription and reactivate the stream.
+**Løsning:** Logstreaming deaktiveres automatisk, såfremt kontoen mister Enterprise-status. Kontakt den AdGuard-kundeansvarlige for at genoprette abonnementet og genaktivere streamen.
 
-### SIEM fails to parse or split the JSON array
+### SIEM'en kan ikke fortolke eller opdele JSON-tabellen
 
-**Potential Cause:** Many S3 log collectors expect Newline Delimited JSON (NDJSON/JSONL) by default. Since the exported logs are formatted as a minified JSON array (`[...]`), the collector may fail to parse the file or ingest the entire array as a single, massive log event instead of splitting it into individual query records.
+**Potentiel årsag:** Mange S3-logindsamlere forventer som standard Newline Delimited JSON (NDJSON/JSONL). Da de eksporterede logfiler er formateret som en minificeret JSON-tabel (`[...]`), kan indsamleren muligvis ikke fortolke filen eller indlæse hele tabellen som en enkelt, massiv loghændelse i stedet for at opdele den i individuelle forespørgselsposter.
 
-**Resolution:** Configure the S3 connector, log shipper, or SIEM parser to handle standard JSON arrays. The ingestion pipeline must be set to unpack the array and split its elements into separate log entries before indexing.
+**Løsning:** Opsæt S3-konnektoren, logafsenderen eller SIEM-fortolkeren til at håndtere standard JSON-twbeller. Indlæsnings-pipelinen skal være indstillet til at udpakke tabellen og opdele dens elementer i separate logposter før indeksering.
 
-### Compressed files do not decompress
+### Komprimerede filer dekomprimeres ikke
 
-**Potential cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
+**Potentiel årsag:** Komprimeringsformatet (f.eks. `.gz`), der anvendes under eksporten, er enten ikke understøttet eller forkert opsat i SIEM'ens indlæsningskonnektor.
 
-**Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
+**Løsning:** Tjek dekomprimeringsindstillingerne på SIEM-konnektoren (sørg f.eks. for, at automatisk gzip-dekomprimering er aktiveret for hentning af S3-objekter).
 
 ## FAQ
 
-### Can logs be streamed directly to Splunk or Microsoft Sentinel?
+### Kan logfiler streames direkte til Splunk eller Microsoft Sentinel?
 
-No. In the current MVP version, direct streaming to SIEM endpoints or APIs (such as Splunk HEC) is not supported. Logs must be written to an S3-compatible bucket first, which the SIEM can then monitor and ingest from using standard S3 connectors.
+Nej. I den nuværende MVP-version understøttes direkte streaming til SIEM-endepunkter eller API-er (såsom Splunk HEC) ikke. Logfiler skal først skrives til en S3-kompatibel bucket, som SIEM derefter kan monitorere og indlæse fra via standard S3-konnektorer.
 
-### Can storage options other than S3 be used?
+### Kan andre lagringsmuligheder end S3 anvendes?
 
-No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
+Nej. P.t. understøttes kun S3-kompatibel lagring. Standardmuligheder omfatter Amazon S3 eller kompatible tilbud fra andre cloududbydere (f.eks. Cloudflare R2, Backblaze B2, Wasabi eller MinIO). Direkte integration med andre lagringstyper (såsom direkte Azure Blob eller SFTP) er ikke tilgængelig p.t.
 
-### Is it possible to retrieve historical logs?
+### Er det muligt at hente historiske logfiler?
 
-No. Log streaming is strictly forward-looking. Only DNS query events generated _after_ the streaming feature has been successfully activated and configured will be exported. Historical backfill of logs is not supported.
+Nej. Logstreaming er udelukkende fremadrettet. Kun DNS-forespørgselshændelser genereret _efter_, at streamingfunktionen er blevet aktiveret og opsat korrekt, eksporteres. Historisk efterfyldning af logfiler understøttes ikke.
 
-### How quickly are logs delivered?
+### Hvor hurtigt leveres logfiler?
 
-Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section.
+Logfiler leveres i komprimerede batches frem for i realtid. For yderligere oplysninger om batchintervaller og leveringsmekanismer henvises til afsnittet [Leveringsgarantier og -begrænsninger](#delivery-guarantees-and-limitations).
 
-### Is the delivery of every single event guaranteed?
+### Er leveringen af hver eneste hændelse garanteret?
 
-Yes, under normal operating conditions. However, if the destination bucket becomes unreachable, log events may eventually be dropped once the retry buffer limit is exceeded. Refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section for details.
+Ja, under normale driftsforhold. Bliver destinations-bucket'en imidlertid utilgængelig, kan loghændelser i sidste ende blive droppet, når først grænsen for genforsøgsbufferen overskrides. Se afsnittet [Leveringsgarantier og -begrænsninger](#delivery-guarantees-and-limitations) for yderligere oplysninger.
 
-### Are duplicate events possible in the destination?
+### Er dublerede hændelser mulige på destinationen?
 
-Yes. Under the “at-least-once” delivery model, network retries triggered by transient outages can cause duplicate log events to be written to the bucket. The ingestion pipeline or SIEM must be configured to handle deduplication.
+Ja. Under leveringsmodellen "mindst-én-gang" kan gentagne netværksforsøg udløst af forbigående udfald medføre, at dublerede loghændelser skrives til bucket'en. Indlæsnings-pipelinen eller SIEM'en skal opsættes til at håndtere dedublering.
 
-### What fields are included in the logs?
+### Hvilke felter medtages i logfilerne?
 
-The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
+Logfilerne indeholder vigtige DNS-forespørgselsfelter såsom `TimeAddedMs` (tidsstempel), `DomainFQDN`, `RequestType`, `Action` og `ClientCountry`. For den fulde liste over felter og datatyper henvises til afsnittet [Feltreference](#fields-reference). Kontofortrolighedsindstillinger påvirker direkte disse logfiler; sensitive felter (såsom `IpAddress`) udelades eller sættes til `null`, hvis logføring er deaktiveret i kontrolpanelet.
 
-### What happens if the Enterprise status is lost?
+### Hvad sker der, hvis Enterprise-statussen mistes?
 
-Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
+Logstreaming er udelukkende en funktion på Enterprise-niveau. Er kontoen ikke længere på en Enterprise-abonnemenystype, eller abonnementet udløber, deaktiveres streamingtjenesten automatisk.
 
-### Can log streaming be deactivated?
+### Kan logstreaming deaktiveres?
 
-Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team at `support@adguard-dns.io`.
+Ja. Logstreamen kan til enhver tid deaktiveres pr. anmodning. Dette gøres ved at kontakte den dedikerede AdGuard-kundeansvarlige eller AdGuards supportteam via `support@adguard-dns.io`.
 
-### Can multiple S3 streaming destinations be configured?
+### Kan der opsættes flere S3-streamingdestinationer?
 
-No. The current version only supports configuring a single S3-compatible streaming destination per Enterprise organization.
+Nej. Den aktuelle version understøtter kun opsætning af én S3-kompatibel streamingdestination pr. Enterprise-organisation.
