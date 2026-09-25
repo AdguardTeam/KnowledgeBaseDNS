@@ -365,7 +365,7 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 The commands below use packages for AMD64 CPUs. Run `uname -m` before
 downloading: use `amd64` for `x86_64`, and `arm64` for `aarch64` or `arm64`.
-Replace every `amd64` in the package name and URL with that value.  For other
+Replace every `amd64` in the package name and URL with that value. For other
 results, choose the matching package from the [supported platforms page](/adguard-home/platforms#packaged-releases).
 
 :::
