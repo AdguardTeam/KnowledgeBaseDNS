@@ -7,6 +7,22 @@
     "message": "AdGuard DNS için bilgi tabanı",
     "description": "The site tagline used in meta description"
   },
+  "apiChangelog.loading": {
+    "message": "Değişiklik günlüğü yükleniyor…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "Değişiklik günlüğü yüklenemedi. Orijinalini {link} adresinde görüntüleyebilirsiniz.",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "Sürümler",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "API referansı yükleniyor…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "Sayfa Bulunamadı",
     "description": "The title of the 404 page"

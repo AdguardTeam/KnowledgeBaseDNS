@@ -3,25 +3,25 @@ title: Journal des requêtes
 sidebar_position: 5
 ---
 
-## Qu'est-ce que le journal des requêtes
+## What is Query log?
 
-Le journal des requêtes est un outil utile pour travailler avec AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Il vous permet de voir toutes les requêtes effectuées par vos appareils pendant la période sélectionnée et de trier les requêtes par état, type, sosiété, appareil, pays.
 
 ## Comment l'utiliser
 
-Voici ce que vous pouvez voir et ce que vous pouvez faire dans le _Journal des requêtes_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Informations détaillées sur les requêtes
 
-![Informations sur les requêtes \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Blocage et déblocage des domaines
 
 Les requêtes peuvent être bloquées et débloquées sans quitter le journal, en utilisant les outils disponibles.
 
-![Débloquer un domaine \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Tri des requêtes
 

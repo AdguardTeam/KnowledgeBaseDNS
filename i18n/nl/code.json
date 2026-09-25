@@ -7,6 +7,22 @@
     "message": "Kennisbank voor AdGuard DNS",
     "description": "The site tagline used in meta description"
   },
+  "apiChangelog.loading": {
+    "message": "Wijzigingslogboek laden…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "Het laden van het wijzigingslogboek is mislukt. Je kunt het origineel bekijken op {link}.",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "Versies",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "API-referentie laden…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "Pagina niet gevonden",
     "description": "The title of the 404 page"

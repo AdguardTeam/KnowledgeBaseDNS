@@ -20,7 +20,7 @@ Celles-ci sont divisées en sous-catégories :
 - **CDN** : requête liée au réseau de diffusion de contenu (CDN), un réseau mondial de serveurs proxy qui accélère la diffusion de contenu aux utilisateurs finaux
 - **Autre**
 
-### Top des sociétés
+## Top des sociétés
 
 Dans ce tableau, nous ne montrons pas seulement les noms des sociétés les plus visitées ou les plus bloquées, mais nous affichons également des informations sur les domaines qui sont demandés ou qui sont les plus souvent bloqués.
 

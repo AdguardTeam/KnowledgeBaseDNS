@@ -20,7 +20,7 @@ Disse er yderligere opdelt i underkategorier:
 - **CDN**: Forespørgsel forbundet til Content Delivery Network (CDN), et verdensomspændende netværk af proxyservere, som øger hastigheden på levering af indhold til slutbrugere
 - **Øvrige**
 
-### Topvirksomheder
+## Topvirksomheder
 
 I denne tabel viser vi ikke kun navnene på de mest besøgte/blokerede virksomheder, men også information om, hvilke domæner, som forespørges, eller hvilke domæner, som blokeres mest.
 

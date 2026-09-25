@@ -3,48 +3,58 @@ title: 자녀 보호
 sidebar_position: 5
 ---
 
-## 자녀 보호 기능이란 무엇인가요?
+_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+## How to set it up
 
-## 설정 방법
+You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
-서버에서 자녀 보호 기능을 포함한 모든 기능을 유연하게 구성할 수 있습니다. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Then, go to the settings of the selected server and enable the required configurations.
 
-그런 다음, 선택한 서버의 설정으로 이동하여 필요한 구성을 활성화하세요.
+### Block adult websites
 
-### 성인 웹사이트 차단
+Blocks websites with inappropriate and adult content.
 
-부적절하고 성인용 콘텐츠가 포함된 웹사이트를 차단합니다.
+![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-![차단된 웹사이트 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+### Safe search
 
-### 세이프서치
+Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
 
-Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave 및 Ecosia에서 불법적인 결과를 삭제합니다.
+### YouTube restricted mode
 
-![세이프서치 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
 
-### YouTube 제한 모드
+### Blocked services and websites
 
-YouTube에서 영상에 대한 댓글을 보고 게시하며 18세 이상 콘텐츠와 상호작용할 수 있는 옵션을 삭제합니다.
+Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
 
-![제한 모드 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
-
-### 차단된 서비스 및 웹사이트
-
-AdGuard DNS는 원클릭으로 인기 서비스에 대한 액세스를 차단합니다. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
-
-![차단된 서비스 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
 ### Block websites by category
 
-This feature lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Category-based blocking \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### 일정 설정
+### Pause schedule
 
-특정 날짜에 설정된 시간 간격으로 자녀 보호를 활성화합니다. 예를 들어, 자녀가 평일 23시까지만 YouTube 동영상을 시청하도록 허용했을 수 있습니다. 하지만 주말에는 이 접근이 제한되지 않습니다. 일정을 원하는 대로 사용자 맞춤화하고 원하는 시간 동안 선택한 사이트에 대한 접근을 차단하세요.
+Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-![일정 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+
+To set up a pause schedule:
+
+1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
+2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
+3. To change an existing interval, click _Edit_.
+
+You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+
+![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+
+Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+
+Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+
+![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)

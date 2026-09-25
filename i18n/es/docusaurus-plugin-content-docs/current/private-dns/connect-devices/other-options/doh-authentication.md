@@ -9,7 +9,7 @@ DNS-over-HTTPS con autenticación permite que configures un nombre de usuario y 
 
 Esto ayuda a prevenir que usuarios no autorizados accedan a él y mejora la seguridad. Además, puedes restringir el uso de otros protocolos para perfiles específicos. Esta función es particularmente útil cuando la dirección de tu servidor DNS es conocida por otros. Al agregar una contraseña, puedes bloquear el acceso y asegurarte de que solo tú puedas usarlo.
 
-## Cómo configurarlo
+## How to set it up
 
 :::note Compatibilidad
 

@@ -16,6 +16,7 @@ Unten finden Sie Anweisungen für verschiedene Router-Modelle. Bitte wählen Sie
 
 - [Universelle Anweisungen](/private-dns/connect-devices/routers/universal.md)
 - [Asus](/private-dns/connect-devices/routers/asus.md)
+- [Cudy](/private-dns/connect-devices/routers/cudy.md)
 - [FritzBox](/private-dns/connect-devices/routers/fritzbox.md)
 - [Keenetic](/private-dns/connect-devices/routers/keenetic.md)
 - [MikroTik](/private-dns/connect-devices/routers/mikrotik.md)

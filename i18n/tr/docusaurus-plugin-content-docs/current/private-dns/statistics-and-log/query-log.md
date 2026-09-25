@@ -3,25 +3,25 @@ title: Sorgu günlüğü
 sidebar_position: 5
 ---
 
-## Sorgu günlüğü nedir
+## What is Query log?
 
-Sorgu günlüğü, AdGuard DNS ile çalışmak için faydalı bir araçtır.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Seçilen zaman aralığında cihazlarınız tarafından yapılan tüm istekleri görüntülemenize ve istekleri duruma, türe, şirkete, cihaza, ülkeye göre sıralamanıza olanak tanır.
 
 ## Bu nasıl kullanılır
 
-Here’s what you can see and what you can do in the _Query log_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### İstekler hakkında detaylı bilgi
 
-![İstekler bilgisi \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Alan adlarını engelleme ve engeli kaldırma
 
 İstekler, mevcut araçlar kullanılarak günlükten çıkmadan engellenebilir ve engeli kaldırılabilir.
 
-![Alan adının engelini kaldır \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### İstekleri sıralama
 
