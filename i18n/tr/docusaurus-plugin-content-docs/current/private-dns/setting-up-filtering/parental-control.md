@@ -3,48 +3,58 @@ title: Ebeveyn denetimi
 sidebar_position: 5
 ---
 
-## Bu nedir
+_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
 
-Parental control is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+## How to set it up
 
-## Nasıl ayarlanır
+You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
-Sunucularınızdaki ebeveyn denetimi özelliği de dâhil olmak üzere tüm özellikleri esnek bir şekilde yapılandırabilirsiniz. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Then, go to the settings of the selected server and enable the required configurations.
 
-Daha sonra seçili sunucunun ayarlarına giderek gerekli yapılandırmaları etkinleştirin.
+### Block adult websites
 
-### Yetişkin siteleri engelleme
+Blocks websites with inappropriate and adult content.
 
-Uygunsuz ve yetişkinlere yönelik içeriğe sahip siteleri engeller.
+![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-![Engellenen site \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+### Safe search
 
-### Güvenli arama
+Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
 
-Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave ve Ecosia'dan uygunsuz sonuçları kaldırır.
+### YouTube restricted mode
 
-![Güvenli arama \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
 
-### YouTube kısıtlı mod
+### Blocked services and websites
 
-YouTube'daki videoların altındaki yorumları görüntüleme ve gönderme ve 18+ içeriklerle etkileşim kurma seçeneğini kaldırır.
+Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
 
-![Kısıtlı mod \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Engellenen hizmetler ve siteler
+### Block websites by category
 
-AdGuard DNS, tek tıklamayla popüler hizmetlere erişimi engeller. It’s useful if you don’t want connected devices to visit Instagram and YouTube, for example.
+Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Engellenen hizmetler \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Siteleri kategoriye göre engelleme
+### Pause schedule
 
-Bu özellik, _Yetişkin içerik_, _Oyunlar_, _Bankacılık_ ve _İletişim_ dâhil olmak üzere 20'den fazla kategori arasından seçim yaparak belirli site kategorilerine erişimi kısıtlamanıza olanak tanır. Örneğin, alkol, tütün veya uyuşturucu hakkında bilgi içeren siteleri engellerseniz, seçilen cihaz artık bu kategorilere giren sayfaları açamayacaktır.
+Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-![Kategori tabanlı engelleme \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
 
-### Plan kapanış zamanı
+To set up a pause schedule:
 
-Belirli bir zaman aralığıyla seçilen günlerde ebeveyn denetimlerini etkinleştirir. Örneğin, çocuğunuzun YouTube videolarını sadece hafta içi 23:00'e kadar izlemesine izin vermiş olabilirsiniz. Ancak hafta sonları bu erişim kısıtlanmamaktadır. Planınızı istediğiniz gibi özelleştirin ve istediğiniz saatlerde seçili sitelere erişimi engelleyin.
+1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
+2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
+3. To change an existing interval, click _Edit_.
 
-![Plan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+
+![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+
+Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+
+Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+
+![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)

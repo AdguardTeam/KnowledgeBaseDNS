@@ -11,3 +11,4 @@ AdGuard DNS tilbyder en bred vifte af nyttige værktøjer til at overvåge fores
 - [Trafikdestination](/private-dns/statistics-and-log/traffic-destination.md)
 - [Virksomheder](/private-dns/statistics-and-log/companies.md)
 - [Forespørgselslog](/private-dns/statistics-and-log/query-log.md)
+- [Query log streaming](/private-dns/statistics-and-log/query-log-streaming.md)

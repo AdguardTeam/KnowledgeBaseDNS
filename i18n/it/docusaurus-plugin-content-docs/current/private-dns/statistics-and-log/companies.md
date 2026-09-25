@@ -20,7 +20,7 @@ Queste sono ulteriormente suddivise in sottocategorie:
 - **CDN**: richiesta connessa a Content Delivery Network (CDN), una rete globale di server proxy che accelera la consegna dei contenuti agli utenti finali
 - **Altro**
 
-### Aziende maggiori
+## Aziende maggiori
 
 In questa tabella, non mostriamo solo i nomi delle aziende più visitate o più bloccate, ma visualizziamo anche informazioni su quali domini sono stati richiesti oppure quali domini sono stati bloccati di più.
 

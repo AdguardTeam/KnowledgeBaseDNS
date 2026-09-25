@@ -9,7 +9,7 @@ This article describes in more detail how a system administrator can set up thei
 
 [ac]: /private-dns/connect-devices/other-options/automatic-connection
 
-## Prerequisites
+## Prérequis
 
 Make sure that the feature is enabled on your DNS server. To do that, go to _Dashboard → Servers → Server settings → Advanced_ and check that the _Connect devices automatically_ setting is switched on.
 

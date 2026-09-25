@@ -497,25 +497,25 @@ The list of allowed tags:
 
 :::note
 
-The `respgeo` modifier can only be used in AdGuard DNS.
+O modificador `respgeo` só pode ser usado no AdGuard DNS.
 
 :::
 
-The `respgeo` modifier allows you to apply rules based on the country or ASN of the IP address returned in the DNS response. It checks the **destination** IP address — the IP address the domain resolves to. It does **not** check the IP address, country, or ASN of the user, device, or DNS client.
+O modificador `respgeo` permite aplicar regras com base no país ou no ASN do endereço IP retornado na resposta DNS. Ele verifica o endereço IP de **destino** — o endereço IP para o qual o domínio resolve. Ele **não** verifica o endereço IP, o país ou o ASN do usuário, dispositivo ou cliente DNS.
 
-##### Blocking by response country
+##### Bloqueio por país de resposta
 
-The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-2 format. You can also use `--` to match responses where the country could not be determined.
+O valor do modificador deve ser um código de país de duas letras no formato ISO 3166-1 alpha-2. Você também pode usar `--` para corresponder a respostas em que o país não pôde ser determinado.
 
 **Exemplos:**
 
-- `||*^$respgeo=US`: block domains if the IP address in the DNS response is associated with the United States.
-- `||*^$respgeo=FR|DE`: block domains if the IP address in the DNS response is associated with France or Germany.
-- `||*^$respgeo=--`: block domains if the country of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~--`: block domains if the country of the IP address in the DNS response is known.
-- `@@||whitehouse.gov^`: allow `whitehouse.gov`, even if it is blocked by a wildcard rule with the `respgeo` modifier.
-- `@@||example.org^$respgeo=US`: allow `example.org` if the IP address in the DNS response is associated with the United States.
-- `||whitehouse.gov^$respgeo=US`: blocks `whitehouse.gov` only if the IP address in the DNS response is associated with the United States.
+- `||*^$respgeo=US`: bloqueia domínios se o endereço IP na resposta DNS estiver associado aos Estados Unidos.
+- `||*^$respgeo=FR|DE`: bloqueia domínios se o endereço IP na resposta DNS estiver associado à França ou Alemanha.
+- `||*^$respgeo=--`: bloquear domínios se o país do endereço IP na resposta DNS for desconhecido.
+- `||*^$respgeo=~--`: bloqueia domínios se o país do endereço IP na resposta DNS for conhecido.
+- `@@||whitehouse.gov^`: permitir `whitehouse.gov`, mesmo que esteja bloqueado por uma regra curinga com o modificador `respgeo`.
+- `@@||example.org^$respgeo=US`: permitir `example.org` se o endereço IP na resposta DNS estiver associado aos Estados Unidos.
+- `||whitehouse.gov^$respgeo=US`: bloqueia `whitehouse.gov` apenas se o endereço IP na resposta DNS estiver associado aos Estados Unidos.
 - Neste exemplo:
 
   ```none
@@ -523,40 +523,40 @@ The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-
   @@||whitehouse.gov^$respgeo=US
   ```
 
-  `@@||whitehouse.gov^$respgeo=US` will **not** allow `whitehouse.gov`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||whitehouse.gov^$respgeo=US` **não** permitirá `whitehouse.gov`, porque a primeira regra bloqueia a consulta ao inspecionar os dados da requisição, enquanto a segunda tenta permiti-la ao inspecionar a resposta.
 
-You can use `~` to invert the condition:
+Você pode usar `~` para inverter a condição:
 
-- `||*^$respgeo=~DE`: block domains if the IP address in the DNS response is **not** associated with Germany.
+- `||*^$respgeo=~DE`: bloqueia domínios se o endereço IP na resposta DNS **não** estiver associado à Alemanha.
 
-**Limitations**
+**Limitações**
 
-The `respgeo` modifier uses a single calculated IP address and country according to the current *Query log* logic. If a domain resolves to multiple IP addresses or countries, AdGuard DNS does not analyze all returned IP addresses.
+O modificador `respgeo` usa um único endereço IP e país calculados de acordo com a lógica atual do *Log de consultas*. Se um domínio for resolvido para vários endereços IP ou países, o AdGuard DNS não analisa todos os endereços IP retornados.
 
-Because many domains use CDNs, load balancing, or geographically distributed infrastructure, the detected country may change over time.
+Como muitos domínios usam CDNs, balanceamento de carga ou infraestrutura distribuída geograficamente, o país detectado pode mudar ao longo do tempo.
 
-If the country cannot be determined, the GeoIP condition will not match. Use `respgeo=--` to match responses with an unknown country.
+Se o país não puder ser determinado, a condição GeoIP não corresponderá. Use `respgeo=--` para corresponder a respostas com um país desconhecido.
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+Regras com o modificador `respgeo` são exibidas no *Registro de consultas* como regras regulares.
 
-##### Blocking by ASN
+##### Bloqueio por ASN
 
-The `respgeo` modifier can also be used to apply rules based on the ASN of the IP address returned in the DNS response.
+O modificador `respgeo` também pode ser usado para aplicar regras com base no ASN do endereço IP retornado na resposta DNS.
 
-ASN stands for **Autonomous System Number**. It identifies an autonomous system — a network operated by an ISP, hosting provider, cloud provider, company, or other organization.
+ASN significa **Número de Sistema Autônomo**. Ele identifica um sistema autônomo — uma rede operada por um ISP, provedor de hospedagem, provedor de nuvem, empresa ou outra organização.
 
-This modifier checks the **destination ASN** — the ASN associated with the IP address the domain resolves to. It does **not** check the ASN of the user, device, or DNS client.
+Este modificador verifica o **ASN de destino** — o ASN associado ao endereço IP para o qual o domínio resolve. Isso **não** verifica o ASN do usuário, do dispositivo ou do cliente DNS.
 
-The value of the modifier must be an ASN in the `AS<number>` format, for example `AS15169`.
+O valor do modificador deve ser um ASN no formato `AS<número>`, por exemplo `AS15169`.
 
 **Exemplos:**
 
-- `||*^$respgeo=AS15169`: block domains if the IP address in the DNS response belongs to ASN AS15169.
-- `||*^$respgeo=AS15169|AS8075`: block domains if the IP address in the DNS response belongs to ASN AS15169 or AS8075.
-- `||*^$respgeo=AS--`: block domains if the ASN of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~AS--`: block domains if the ASN of the IP address in the DNS response is known.
-- `@@||google.com^$respgeo=AS15169`: allow `google.com` if the IP address in the DNS response belongs to ASN AS15169.
-- `||google.com^$respgeo=AS15169`: block `google.com` only if the IP address in the DNS response belongs to ASN AS15169.
+- `||*^$respgeo=AS15169`: bloquear domínios se o endereço IP na resposta DNS pertencer ao ASN AS15169.
+- `||*^$respgeo=AS15169|AS8075`: bloquear domínios se o endereço IP na resposta DNS pertencer ao ASN AS15169 ou AS8075.
+- `||*^$respgeo=AS--`: bloquear domínios se o ASN do endereço IP na resposta DNS for desconhecido.
+- `||*^$respgeo=~AS--`: bloqueia domínios se o ASN do endereço IP na resposta DNS for conhecido.
+- `@@||google.com^$respgeo=AS15169`: permitir `google.com` se o endereço IP na resposta DNS pertence ao ASN AS15169.
+- `||google.com^$respgeo=AS15169`: bloquear `google.com` somente se o endereço IP na resposta DNS pertencer ao ASN AS15169.
 - Neste exemplo:
 
   ```none
@@ -564,23 +564,23 @@ The value of the modifier must be an ASN in the `AS<number>` format, for example
   @@||google.com^$respgeo=AS15169
   ```
 
-  `@@||google.com^$respgeo=AS15169` will **not** allow `google.com`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||google.com^$respgeo=AS15169` **não** permitirá `google.com`, porque a primeira regra bloqueia a consulta ao inspecionar os dados da solicitação, enquanto a segunda tenta permiti-la ao inspecionar a resposta.
 
-You can use `~` to invert the condition:
+Você pode usar `~` para inverter a condição:
 
-- `||*^$respgeo=~AS15169`: block domains if the IP address in the DNS response does **not** belong to ASN AS15169.
+- `||*^$respgeo=~AS15169`: bloqueia domínios se o endereço IP na resposta DNS **não** pertencer ao ASN AS15169.
 
-**Limitations**
+**Limitações**
 
-The `respgeo` modifier uses a single calculated IP address and ASN according to the current *Query log* logic. If a domain resolves to multiple IP addresses or ASNs, AdGuard DNS does not analyze all returned ASNs.
+O modificador `respgeo` usa um único endereço IP e ASN calculados de acordo com a lógica atual do *Registro de consultas*. Se um domínio for resolvido para vários endereços IP ou ASNs, o AdGuard DNS não analisa todos os ASNs retornados.
 
-Large CDN, cloud, or hosting ASNs may contain many unrelated websites. Blocking an ASN may therefore affect more domains than expected.
+Grandes ASNs de CDN, nuvem ou hospedagem podem conter muitos sites não relacionados. Bloquear um ASN pode, portanto, afetar mais domínios do que o esperado.
 
-If the ASN cannot be determined, the ASN condition will not match. Use `respgeo=AS--` to match responses with an unknown ASN.
+Se o ASN não puder ser determinado, a condição de ASN não corresponderá. Use `respgeo=AS--` para corresponder respostas com um ASN desconhecido.
 
-ASN does not always correspond to a specific company, product, or service. It only identifies the network associated with the resolved IP address.
+O ASN nem sempre corresponde a uma empresa, produto ou serviço específico. Ele apenas identifica a rede associada ao endereço IP resolvido.
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+Regras com o modificador `respgeo` são exibidas no *Registro de consultas* como regras regulares.
 
 ## `/etc/hosts`-style syntax {#etc-hosts-syntax}
 

@@ -19,13 +19,13 @@ toc_max_heading_level: 4
 
 这是三种不同的编写主机拦截列表方法：
 
-- [Adblock-style syntax][]: the modern approach to writing filtering rules based on using a subset of the Adblock-style rule syntax. 这样阻止拦截列表与浏览器广告拦截器兼容。
+- [Adblock 风格语法][]：一种基于 Adblock 风格规则语法子集的现代过滤规则编写方式。 这样阻止拦截列表与浏览器广告拦截器兼容。
 
 - [`/etc/hosts`语法](#etc-hosts-syntax)：使用与操作系统处理其主机文件相同的语法的老式、经过实践检验的语法。
 
 - [Domains-only 语法](#domains-only-syntax)是一个简单的域名列表。
 
-If you are creating a blocklist, we recommend using the [Adblock-style syntax][]. 与旧式语法相比，它有几个重要的优点：
+如果您正在创建拦截列表，我们建议使用 [Adblock 风格语法][]。 与旧式语法相比，它有几个重要的优点：
 
 - **拦截列表大小。**使用模式匹配允许您拥有单个规则，而不是数百个 `/etc/hosts` 条目。
 
@@ -33,7 +33,7 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax][]
 
 - **可扩展性。**在过去的十年中，Adblock 风格的语法有了很大的发展，我们认为我们能进一步扩展它并为网络范围的拦截器提供额外的功能。
 
-If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler][] and we use it ourselves to create [AdGuard DNS filter][].
+如果您正在维护 `/etc/hosts` 风格的拦截列表或多个过滤列表（无论类型如何），我们提供一款用于拦截列表编译的工具。 我们将其命名为 [Hostlist compiler][]，并且我们自己也在使用它来创建 [AdGuard DNS 过滤器][]。
 
 ## 基本示例 {#basic-examples}
 
@@ -60,7 +60,7 @@ If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filter
 
 ## Adblock-style 语法 {#adblock-style-syntax}
 
-This is a subset of the [traditional Adblock-style syntax][] which is used by browser ad blockers.
+这是[传统 Adblock-style 语法][] 的子集，浏览器广告拦截程序都使用这种语法。
 
 ```none
      rule = ["@@"] pattern [ "$" modifiers ]
@@ -79,13 +79,13 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `||`：匹配主机名的开头，包括任何子域名。 例如，`||example.org` 匹配 `example.org` 和 `test.example.org`，但不匹配 `testexample.org`。
 
-- `^`：分隔符字符。 Unlike browser ad blocking, there’s nothing to separate in a hostname, so the only purpose of this character is to mark the end of the hostname.
+- `^`：分隔符字符。 与浏览器广告拦截不同，主机名中没有什么可以分隔的，因此该字符的唯一目的是标记主机名的结尾。
 
 - `|`：指向主机名开头或结尾的指针。 该值取决于掩码中的字符位置。 例如，规则 `ample.org|` 对应于 `example.org` 但不对应于 `example.org.com`。 `|example` 对应于 `example.org` 但不对应于 `test.example`。
 
 ### 正则表达式 {#regular-expressions}
 
-If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. 如果用户要使用正则表达式，则必须使用如下格式：
+如果用户希望更加灵活地制定规则，可以使用[正则表达式][regexp]代替默认的简易匹配语法。 如果用户要使用正则表达式，则必须使用如下格式：
 
 ```none
 pattern = "/" regexp "/"
@@ -125,11 +125,11 @@ pattern = "/" regexp "/"
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` 是匹配模式。 `$` 是分隔符，表明规则的其余部分是修饰符。 `client=127.0.0.1` is the [`client`][] modifier with its value, `127.0.0.1`. `,` 是修饰符之间的分隔符。 And finally, `dnstype=A` is the [`dnstype`][] modifier with its value, `A`.
+  `||example.org^` 是匹配模式。 `$` 是分隔符，表明规则的其余部分是修饰符。 `client=127.0.0.1` 是 [` client `][] 修饰符，其值是 `127.0.0.1`。 `,` 是修饰符之间的分隔符。 最后， `dnstype=A` 是 [`dnstype`][] 修饰符，其值为 `A`。
 
 :::note
 
-If a rule contains a modifier not listed in this document, the whole rule **must be ignored**. This way we avoid false-positives when people are trying to use unmodified browser ad blockers’ filter lists like EasyList or EasyPrivacy.
+如果规则包含本文档未列出的修饰符，则**必须忽略整条规则**。 这样可以避免用户尝试使用未经修改的浏览器广告拦截程序过滤列表（如 EasyList 或 EasyPrivacy）时出现误报。
 
 :::
 
@@ -137,11 +137,11 @@ If a rule contains a modifier not listed in this document, the whole rule **must
 
 :::note
 
-The `client` modifier can only be used in AdGuard Home and AdGuard DNS.
+`client` 修饰符仅可用于 AdGuard Home 和 AdGuard DNS。
 
 :::
 
-The `client` modifier allows specifying clients this rule is applied to. There are two main ways to identify a client:
+`client` 修饰符允许指定此规则所适用的客户端。 识别客户端的主要方法有两种：
 
 - 通过其 IP 地址或 CIDR 前缀。 这种方式适用于所有类型的客户端。
 
@@ -149,27 +149,27 @@ The `client` modifier allows specifying clients this rule is applied to. There a
 
   :::note
 
-  In AdGuard Home, ClientIDs are not currently supported, only names are. If you have added a client with the name “My Client” and ClientID `my-client` spell your modifier as `$client='My Client'` as opposed to `$client=my-client`.
+  在 AdGuard Home 中，目前不支持 ClientID，仅支持名称。 如果您添加了一个名称为「My Client」、ClientID 为 `my-client` 的客户端，请将修饰符写为 `$client='My Client'`，而不是 `$client=my-client`。
 
   :::
 
-The syntax is:
+语法为：
 
 ```none
 $client=value1|value2|...
 ```
 
-You can also exclude clients by adding a `~` character before the value. In this case, the rule is not be applied to this client’s DNS requests.
+还可以通过在值前添加 `~` 字符来排除客户端。 在这种情况下，该规则不会应用于此客户端的 DNS 请求。
 
 ```none
 $client=~value1
 ```
 
-Client names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single and double ASCII quotes are supported. Use the backslash (`\`) to escape quotes (`"` and `'`), commas (`,`), and pipes (`|`).
+客户端名称通常包含空格或其他特殊字符，因此建议用引号将名称括起来。 支持单引号和双引号（ASCII 引号）。 可使用反斜杠（`\`）转义引号（`"` 和 `'`）、逗号（`,`）和竖线（`|`）。
 
 :::note
 
-When excluding a client, you **must** place `~` outside the quotes.
+当排除客户端时，您 **必须** 将 `~` 放在引号外。
 
 :::
 
@@ -187,15 +187,15 @@ When excluding a client, you **must** place `~` outside the quotes.
 
 #### `denyallow` {#denyallow-modifier}
 
-You can use the `denyallow` modifier to exclude domains from the blocking rule. To add multiple domains to one rule, use the `|` character as a separator.
+您可以使用 `denyallow` 修饰符从拦截规则中排除特定域名。 如需在一条规则中添加多个域名，请使用 `|` 字符作为分隔符。
 
-The syntax is:
+语法为：
 
 ```none
 $denyallow=domain1|domain2|...
 ```
 
-This modifier allows avoiding creating unnecessary exception rules when our blocking rule covers too many domains. You may want to block everything except for a couple of TLD domains. You could use the standard approach, i.e. rules like this:
+当拦截规则覆盖的域名过多时，此修饰符可避免创建不必要的例外规则。 例如，您可能希望拦截除少数顶级域名之外的所有内容。 标准做法是编写如下规则：
 
 ```none
 ! 屏蔽一切。
@@ -206,7 +206,7 @@ This modifier allows avoiding creating unnecessary exception rules when our bloc
 @@||net^
 ```
 
-The problem with this approach is that this way you will also unblock tracking domains that are located on those TLDs (i.e. `google-analytics.com`). Here’s how to solve this with `denyallow`:
+这种方法的缺点是，位于这些顶级域名下的追踪域名（如 `google-analytics.com`）也会被放行。 以下是使用 `denyallow` 解决此问题的方法：
 
 ```none
 *$denyallow=com|net
@@ -218,28 +218,28 @@ The problem with this approach is that this way you will also unblock tracking d
 
 - `@@*$denyallow=com|net`：除了 `*.com` 和 `*.net` 以外取消拦截所有内容
 
-- `||example.org^$denyallow=sub.example.org`: block `example.org` and `*.example.org`, but not `sub.example.org`.
+- `||example.org^$denyallow=sub.example.org`：拦截 `example.org` 和 `*.example.org`，但不拦截 `sub.example.org`。
 
 #### `dnstype` {#dnstype-modifier}
 
-The `dnstype` modifier allows specifying DNS request or response type on which this rule will be triggered.
+`dnstype` 修饰符允许指定触发此规则的 DNS 请求或响应类型。
 
-The syntax is:
+语法为：
 
 ```none
 $dnstype=value1|value2|...
 $dnstype=~value1|~value2|~...
 ```
 
-The names of the types are case-insensitive, but are validated against a set of actual DNS resource record (RR) types.
+类型名称不区分大小写，但会依据实际 DNS 资源记录（RR）类型集合进行验证。
 
-Do not combine exclusion rules with inclusion ones. This:
+请勿将排除规则与包含规则混用。 以下写法：
 
 ```none
 $dnstype=~value1|value2
 ```
 
-is equivalent to this:
+等效于：
 
 ```none
 $dnstype=value2
@@ -253,7 +253,7 @@ $dnstype=value2
 
 :::note
 
-Before version **v0.108.0,** AdGuard Home would use the type of the request to filter the response records, as opposed to the type of the response record itself.  That caused issues, since that meant that you could not write rules that would allow certain `CNAME` records in responses in `A` and `AAAA` requests. In **v0.108.0** that behaviour was changed, so now this:
+在 **v0.108.0** 之前，AdGuard Home 会使用请求的类型来过滤响应记录，而非响应记录本身的类型。  这导致了一个问题：用户无法编写规则来允许 `A` 和 `AAAA` 请求的响应中的某些 `CNAME` 记录。 在 **v0.108.0** 中，此行为已更改。现在，以下规则：
 
 :::
 
@@ -261,7 +261,7 @@ Before version **v0.108.0,** AdGuard Home would use the type of the request to f
 ||canon.example.com^$dnstype=~CNAME
 ```
 
-allows you to avoid filtering of the following response:
+可让您避免过滤以下响应：
 
 ```none
 应答：
@@ -275,17 +275,17 @@ allows you to avoid filtering of the following response:
 
 #### `dnsrewrite` {#dnsrewrite-modifier}
 
-The `dnsrewrite` response modifier allows replacing the content of the response to the DNS request for the matching hosts. Note that this modifier in AdGuard Home works in all rules, but in Private AdGuard DNS — only in custom ones.
+`dnsrewrite` 响应修饰符允许替换匹配主机的 DNS 请求的响应内容。 请注意，此修饰符在 AdGuard Home 中适用于所有规则，但在 Private AdGuard DNS 中仅适用于自定义规则。
 
 :::note
 
-Rules with the `dnsrewrite` response modifier have higher priority than other rules in AdGuard Home and AdGuard DNS.
+在 AdGuard Home 和 AdGuard DNS 中，带有 `dnsrewrite` 响应修饰符的规则优先级高于其他规则。
 
 :::
 
-Responses to all requests for a host matching a `dnsrewrite` rule will be replaced. The answer section of the replacement response will only contain RRs that match the request’s query type and, possibly, CNAME RRs. Note that this means that responses to some requests may become empty (`NODATA`) if the host matches a `dnsrewrite` rule.
+对匹配 `dnsrewrite` 规则的主机的所有请求的响应都将被替换。 替换响应的应答部分仅包含与请求的查询类型匹配的资源记录，以及可能的 CNAME 记录。 请注意，这意味着如果主机匹配 `dnsrewrite` 规则，对某些请求的响应可能变为空（`NODATA`）。
 
-The shorthand syntax is:
+简写语法为：
 
 ```none
 $dnsrewrite=1.2.3.4
@@ -294,9 +294,9 @@ $dnsrewrite=example.net
 $dnsrewrite=REFUSED
 ```
 
-The keywords MUST be in all caps (e.g. `NOERROR`). Keyword rewrites take precedence over the other and will result in an empty response with an appropriate response code.
+关键字必须全部大写（例如 `NOERROR`）。 关键字重写优先于其他重写，并将生成一个带有相应响应码的空响应。
 
-The full syntax is of the form `RCODE;RRTYPE;VALUE`:
+完整语法格式为 `RCODE;RRTYPE;VALUE`：
 
 ```none
 $dnsrewrite=NOERROR;A;1.2.3.4
@@ -305,9 +305,9 @@ $dnsrewrite=NOERROR;CNAME;example.net
 $dnsrewrite=REFUSED;;
 ```
 
-The `$dnsrewrite` modifier with the `NOERROR` response code may also has empty `RRTYPE` and `VALUE` fields.
+带有 `NOERROR` 响应码的 `$dnsrewrite` 修饰符也可以将 `RRTYPE` 和 `VALUE` 字段留空。
 
-The `CNAME` one is special because AdGuard Home will resolve the host and add its info to the response. That is, if `example.net` has IP `1.2.3.4`, and the user has this in their filter rules:
+`CNAME` 较为特殊，因为 AdGuard Home 将解析该主机并将其信息添加到响应中。 也就是说，如果 `example.net` 的 IP 为 `1.2.3.4`，且用户在其过滤规则中有以下内容：
 
 ```none
 ||example.com^$dnsrewrite=example.net
@@ -315,7 +315,7 @@ The `CNAME` one is special because AdGuard Home will resolve the host and add it
 ||example.com^$dnsrewrite=NOERROR;CNAME;example.net
 ```
 
-then the response will be something like:
+则响应将类似于：
 
 ```sh
 nslookup example.com my.adguard.local
@@ -331,22 +331,22 @@ Name: example.net
 Address: 1.2.3.4
 ```
 
-Next, the `CNAME` rewrite. After that, all other records’ values are summed as one response, so this:
+接下来是 `CNAME` 重写。 之后，所有其他记录的值将汇总为一个响应，因此：
 
 ```none
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.4
 ||example.com^$dnsrewrite=NOERROR;A;1.2.3.5
 ```
 
-will result in a response with two `A` records.
+将生成一个包含两条 `A` 记录的响应。
 
-Currently supported RR types with examples:
+目前支持的 RR 类型及示例：
 
 - `||4.3.2.1.in-addr.arpa^$dnsrewrite=NOERROR;PTR;example.net.` 添加了一个反向 DNS 的 `PTR` 记录。 向 DNS 服务器发出的 `1.2.3.4` 反向 DNS 请求将产生 `example.net`。
 
   :::note
 
-  The IP MUST be in reverse order. See [RFC 1035][rfc1035].
+  IP 必须反向排列。 请参阅 [RFC 1035][rfc1035]。
 
   :::
 
@@ -379,7 +379,7 @@ Currently supported RR types with examples:
 
 - `$dnstype=AAAA,denyallow=example.org,dnsrewrite=NOERROR;;` 以空的 `NOERROR` 响应所有 `AAAA` 的请求，除了 `example.org`。
 
-Exception rules unblock one or all rules:
+例外规则可以解除一条或所有规则的拦截。
 
 - `@@||example.com^$dnsrewrite` 删除所有 DNS 重写规则。
 
@@ -387,13 +387,13 @@ Exception rules unblock one or all rules:
 
 :::info
 
-If you are maintaining a blocklist that is included in AdGuard DNS and AdGuard Home (i.e. included into [HostlistsRegistry][hostlistsregistry]), `$dnsrewrite` rules will be automatically filtered out. If these rules are required for your blocklist, please request permission by opening a new issue in the [HostlistsRegistry][hostlistsregistry] repo.
+如果您维护的拦截列表被包含在 AdGuard DNS 和 AdGuard Home 中（即包含在 [HostlistsRegistry][hostlistsregistry] 中），`$dnsrewrite` 规则将被自动过滤掉。 如果您的拦截列表需要这些规则，请在 [HostlistsRegistry][hostlistsregistry] 仓库中提交新的 issue 以请求许可。
 
 :::
 
 #### `important` {#important-modifier}
 
-The `important` modifier applied to a rule increases its priority over any other rule without the modifier. Even over basic exception rules.
+应用于规则的 `important` 修饰符会使其优先级高于任何其他不带此修饰符的规则， 甚至高于基本的例外规则。
 
 **例如：**
 
@@ -417,7 +417,7 @@ The `important` modifier applied to a rule increases its priority over any other
 
 #### `badfilter` {#badfilter-modifier}
 
-The rules with the `badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `badfilter` rule (without the `badfilter` modifier).
+带有 `badfilter` 修饰符的规则会禁用它们所引用的其他基本规则。 这意味着被禁用的规则的文本应与 `badfilter` 规则的文本相匹配（不包括 `badfilter` 修饰符）。
 
 **例如：**
 
@@ -427,7 +427,7 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
   :::note
 
-  The `badfilter` modifier currently doesn’t work with `/etc/hosts`-style rules. `127.0.0.1 example.org$badfilter` will **not** disable the original `127.0.0.1 example.org` rule.
+  `badfilter` 修饰符目前不适用于 `/etc/hosts` 风格的规则。 `127.0.0.1 example.org$badfilter` **不会**禁用原始的 `127.0.0.1 example.org` 规则。
 
   :::
 
@@ -435,25 +435,25 @@ The rules with the `badfilter` modifier disable other basic rules to which they 
 
 :::note
 
-The `ctag` modifier can only be used in AdGuard Home.
+`ctag` 修饰符仅可用于 AdGuard Home。
 
 :::
 
-It allows to block domains only for specific types of DNS client tags. You can assign tags to clients in the AdGuard Home UI. In the future, we plan to assign tags automatically by analyzing the behavior of each client.
+它允许仅为特定类型的 DNS 客户端标签拦截域名。 用户可以在 AdGuard Home 界面中为客户端分配标签。 未来，我们计划通过分析每个客户端的行为来自动分配标签。
 
-The syntax is:
+语法为：
 
 ```none
 $ctag=value1|value2|...
 ```
 
-If one of client’s tags matches the `ctag` values, this rule applies to the client. The syntax for exclusion is:
+如果客户端的标签之一与 `ctag` 值匹配，则此规则适用于该客户端。 排除语法为：
 
 ```none
 $ctag=~value1|~value2|...
 ```
 
-If one of client’s tags matches the exclusion `ctag` values, this rule doesn’t apply to the client.
+如果客户端的标签之一与排除的 `ctag` 值匹配，则此规则不适用于该客户端。
 
 **例如：**
 
@@ -461,7 +461,7 @@ If one of client’s tags matches the exclusion `ctag` values, this rule doesn�
 
 - `||example.org^$ctag=~device_phone`：为除了标记为 `device_phone` 的客户端以外的所有客户端，拦截 `example.org` 。
 
-The list of allowed tags:
+允许的标签列表：
 
 - 按设备类型：
 
@@ -497,25 +497,25 @@ The list of allowed tags:
 
 :::note
 
-The `respgeo` modifier can only be used in AdGuard DNS.
+`respgeo` 修饰符仅可用于 AdGuard DNS。
 
 :::
 
-The `respgeo` modifier allows you to apply rules based on the country or ASN of the IP address returned in the DNS response. It checks the **destination** IP address — the IP address the domain resolves to. It does **not** check the IP address, country, or ASN of the user, device, or DNS client.
+`respgeo` 修饰符允许您根据 DNS 响应中返回的 IP 地址的国家或 ASN 来应用规则。 它会检查**目标** IP 地址，即域名解析到的 IP 地址。 它**不会**检查用户、设备或 DNS 客户端的 IP 地址、国家或 ASN。
 
-##### Blocking by response country
+##### 按响应国家拦截
 
-The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-2 format. You can also use `--` to match responses where the country could not be determined.
+修饰符的值必须为 ISO 3166-1 alpha-2 格式的两位国家代码。 您也可以使用 `--` 来匹配无法确定国家的响应。
 
 **例如：**
 
-- `||*^$respgeo=US`: block domains if the IP address in the DNS response is associated with the United States.
-- `||*^$respgeo=FR|DE`: block domains if the IP address in the DNS response is associated with France or Germany.
-- `||*^$respgeo=--`: block domains if the country of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~--`: block domains if the country of the IP address in the DNS response is known.
-- `@@||whitehouse.gov^`: allow `whitehouse.gov`, even if it is blocked by a wildcard rule with the `respgeo` modifier.
-- `@@||example.org^$respgeo=US`: allow `example.org` if the IP address in the DNS response is associated with the United States.
-- `||whitehouse.gov^$respgeo=US`: blocks `whitehouse.gov` only if the IP address in the DNS response is associated with the United States.
+- `||*^$respgeo=US`：如果 DNS 响应中的 IP 地址与美国关联，则拦截域名。
+- `||*^$respgeo=FR|DE`：如果 DNS 响应中的 IP 地址与法国或德国关联，则拦截域名。
+- `||*^$respgeo=--`：如果 DNS 响应中的 IP 地址的国家未知，则拦截域名。
+- `||*^$respgeo=~--`：如果 DNS 响应中的 IP 地址的国家已知，则拦截域名。
+- `@@||whitehouse.gov^`：放行 `whitehouse.gov`，即使它被带有 `respgeo` 修饰符的通配符规则拦截。
+- `@@||example.org^$respgeo=US`：如果 DNS 响应中的 IP 地址与美国关联，则放行 `example.org`。
+- `||whitehouse.gov^$respgeo=US`：仅当 DNS 响应中的 IP 地址与美国关联时，才拦截 `whitehouse.gov`。
 - 例如：
 
   ```none
@@ -523,40 +523,40 @@ The value of the modifier must be a two-letter country code in ISO 3166-1 alpha-
   @@||whitehouse.gov^$respgeo=US
   ```
 
-  `@@||whitehouse.gov^$respgeo=US` will **not** allow `whitehouse.gov`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||whitehouse.gov^$respgeo=US` **不会**放行 `whitehouse.gov`，因为第一条规则通过检查请求数据进行拦截，而第二条规则试图通过检查响应来放行。
 
-You can use `~` to invert the condition:
+您可以使用 `~` 来反转条件：
 
-- `||*^$respgeo=~DE`: block domains if the IP address in the DNS response is **not** associated with Germany.
+- `||*^$respgeo=~DE`：如果 DNS 响应中的 IP 地址与德国**无关**，则拦截域名。
 
-**Limitations**
+**限制**
 
-The `respgeo` modifier uses a single calculated IP address and country according to the current *Query log* logic. If a domain resolves to multiple IP addresses or countries, AdGuard DNS does not analyze all returned IP addresses.
+`respgeo` 修饰符根据当前*查询日志*逻辑使用单个计算出的 IP 地址和国家。 如果域名解析到多个 IP 地址或国家，AdGuard DNS 不会分析所有返回的 IP 地址。
 
-Because many domains use CDNs, load balancing, or geographically distributed infrastructure, the detected country may change over time.
+由于许多域名使用 CDN、负载均衡或地理分布式基础设施，检测到的国家可能随时间变化。
 
-If the country cannot be determined, the GeoIP condition will not match. Use `respgeo=--` to match responses with an unknown country.
+如果无法确定国家，GeoIP 条件将不匹配。 使用 `respgeo=--` 来匹配国家未知的响应。
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+带有 `respgeo` 修饰符的规则在*查询日志*中显示为常规规则。
 
-##### Blocking by ASN
+##### 按 ASN 拦截
 
-The `respgeo` modifier can also be used to apply rules based on the ASN of the IP address returned in the DNS response.
+`respgeo` 修饰符还可用于根据 DNS 响应中返回的 IP 地址的 ASN 来应用规则。
 
-ASN stands for **Autonomous System Number**. It identifies an autonomous system — a network operated by an ISP, hosting provider, cloud provider, company, or other organization.
+ASN 代表**自治系统编号**。 它标识一个自治系统，由 ISP、托管服务商、云提供商、公司或其他组织运营的网络。
 
-This modifier checks the **destination ASN** — the ASN associated with the IP address the domain resolves to. It does **not** check the ASN of the user, device, or DNS client.
+此修饰符检查**目标 ASN**，即域名解析到的 IP 地址关联的 ASN。 它**不会**检查用户、设备或 DNS 客户端的 ASN。
 
-The value of the modifier must be an ASN in the `AS<number>` format, for example `AS15169`.
+修饰符的值必须为 `AS<number>` 格式的 ASN，例如 `AS15169`。
 
 **例如：**
 
-- `||*^$respgeo=AS15169`: block domains if the IP address in the DNS response belongs to ASN AS15169.
-- `||*^$respgeo=AS15169|AS8075`: block domains if the IP address in the DNS response belongs to ASN AS15169 or AS8075.
-- `||*^$respgeo=AS--`: block domains if the ASN of the IP address in the DNS response is unknown.
-- `||*^$respgeo=~AS--`: block domains if the ASN of the IP address in the DNS response is known.
-- `@@||google.com^$respgeo=AS15169`: allow `google.com` if the IP address in the DNS response belongs to ASN AS15169.
-- `||google.com^$respgeo=AS15169`: block `google.com` only if the IP address in the DNS response belongs to ASN AS15169.
+- `||*^$respgeo=AS15169`：如果 DNS 响应中的 IP 地址属于 ASN AS15169，则拦截域名。
+- `||*^$respgeo=AS15169|AS8075`：如果 DNS 响应中的 IP 地址属于 ASN AS15169 或 AS8075，则拦截域名。
+- `||*^$respgeo=AS--`：如果 DNS 响应中的 IP 地址的 ASN 未知，则拦截域名。
+- `||*^$respgeo=~AS--`：如果 DNS 响应中的 IP 地址的 ASN 已知，则拦截域名。
+- `@@||google.com^$respgeo=AS15169`：如果 DNS 响应中的 IP 地址属于 ASN AS15169，则放行 `google.com`。
+- `||google.com^$respgeo=AS15169`：仅当 DNS 响应中的 IP 地址属于 ASN AS15169 时，才拦截 `google.com`。
 - 例如：
 
   ```none
@@ -564,35 +564,35 @@ The value of the modifier must be an ASN in the `AS<number>` format, for example
   @@||google.com^$respgeo=AS15169
   ```
 
-  `@@||google.com^$respgeo=AS15169` will **not** allow `google.com`, because the first rule blocks the query by inspecting request data, while the second tries to allow it by inspecting the response.
+  `@@||google.com^$respgeo=AS15169` **不会**放行 `google.com`，因为第一条规则通过检查请求数据进行拦截，而第二条规则试图通过检查响应来放行。
 
-You can use `~` to invert the condition:
+您可以使用 `~` 来反转条件：
 
-- `||*^$respgeo=~AS15169`: block domains if the IP address in the DNS response does **not** belong to ASN AS15169.
+- `||*^$respgeo=~AS15169`：如果 DNS 响应中的 IP 地址**不属于** ASN AS15169，则拦截域名。
 
-**Limitations**
+**限制**
 
-The `respgeo` modifier uses a single calculated IP address and ASN according to the current *Query log* logic. If a domain resolves to multiple IP addresses or ASNs, AdGuard DNS does not analyze all returned ASNs.
+`respgeo` 修饰符根据当前*查询日志*逻辑使用单个计算出的 IP 地址和 ASN。 如果域名解析到多个 IP 地址或 ASN，AdGuard DNS 不会分析所有返回的 ASN。
 
-Large CDN, cloud, or hosting ASNs may contain many unrelated websites. Blocking an ASN may therefore affect more domains than expected.
+大型 CDN、云或托管 ASN 可能包含许多无关的网站。 因此，拦截某个 ASN 可能影响超出预期的更多域名。
 
-If the ASN cannot be determined, the ASN condition will not match. Use `respgeo=AS--` to match responses with an unknown ASN.
+如果无法确定 ASN，ASN 条件将不匹配。 使用 `respgeo=AS--` 来匹配 ASN 未知的响应。
 
-ASN does not always correspond to a specific company, product, or service. It only identifies the network associated with the resolved IP address.
+ASN 并不总是对应特定的公司、产品或服务。 它仅标识与解析 IP 地址关联的网络。
 
-Rules with the `respgeo` modifier are displayed in the *Query log* as regular rules.
+带有 `respgeo` 修饰符的规则在*查询日志*中显示为常规规则。
 
 ## `/etc/hosts` 样式语法 {#etc-hosts-syntax}
 
-For each host a single line should be present with the following information:
+对于每个主机，应有一行包含以下信息：
 
 ```none
 IP_address canonical_hostname [aliases...]
 ```
 
-Fields of the entries are separated by any number of space or tab characters. Text from the `#` character until the end of the line is a comment and is ignored.
+条目中的字段由任意数量的空格或制表符分隔。 从 `#` 字符到行尾的文本为注释，将被忽略。
 
-Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), and periods (`.`). They must begin with an alphabetic character and end with an alphanumeric character. Optional aliases provide for name changes, alternate spellings, shorter hostnames, or generic hostnames (for example, `localhost`).
+主机名只能包含字母数字字符、连字符减号（`-`）和句点（`.`）。 它们必须以字母字符开头，以字母数字字符结尾。 可选的别名用于名称更改、替代拼写、较短的主机名或通用主机名（例如 `localhost`）。
 
 **例如：**
 
@@ -603,11 +603,11 @@ Hostnames may contain only alphanumeric characters, hyphen-minus signs (`-`), an
 127.0.0.1 example.net # 这也是一个注释
 ```
 
-In AdGuard Home, the IP addresses are used to respond to DNS queries for these domains. In Private AdGuard DNS, these addresses are simply blocked.
+在 AdGuard Home 中，这些 IP 地址用于响应对这些域名的 DNS 查询。 在个人版 AdGuard DNS 中，这些地址会被直接拦截。
 
 ## 仅限域的语法 {#domains-only-syntax}
 
-A simple list of domain names, one name per line.
+一个简单的域名列表，每行一个域名。
 
 **例如：**
 
@@ -618,17 +618,17 @@ example.org
 example.net # 这也是一个注释
 ```
 
-If a string is not a valid domain (e.g. `*.example.org`), AdGuard Home will consider it to be an [Adblock-style syntax][] rule.
+如果某个字符串不是有效域名（例如 `*.example.org`），AdGuard Home 将将其视为 [Adblock 风格语法][]规则。
 
 ## 主机清单编译器 {#hostlist-compiler}
 
-If you are maintaining a blocklist and use different sources in it, [Hostlist compiler][] may be useful to you. It is a simple tool that makes it easier to compile a hosts blocklist compatible with AdGuard Home, Private AdGuard DNS or any other AdGuard product with DNS filtering.
+如果您正在维护一个拦截列表，并且其中使用了不同的来源，[Hostlist compiler][] 可能对您有用。 这是一个简单的工具，可以更轻松地编译与 AdGuard Home、个人版 AdGuard DNS 或任何其他具有 DNS 过滤功能的 AdGuard 产品兼容的 hosts 拦截列表。
 
-What it’s capable of:
+功能特性：
 
 1. 从多个源编译单个黑名单。
 
-2. Exclude the rules you don’t need.
+2. 排除不需要的规则。
 
 3. 清理生成的列表：重复数据删除、删除无效规则和压缩列表。
 
@@ -640,12 +640,12 @@ What it’s capable of:
 
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
-[Adblock-style syntax]: #adblock-style-syntax
-[`client`]: #client-modifier
+[Adblock 风格语法]: #adblock-style-syntax
+[` client `]: #client-modifier
 [`dnstype`]: #dnstype-modifier
 
-[AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
+[AdGuard DNS 过滤器]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
-[traditional Adblock-style syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
+[传统 Adblock-style 语法]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

@@ -20,7 +20,7 @@ Diese sind weiter in Unterkategorien unterteilt:
 - **CDN**: Anfrage im Zusammenhang mit Content Delivery Network (CDN), einem weltweiten Netzwerk von Proxy-Servern, das die Bereitstellung von Inhalten an Endnutzer beschleunigt
 - **Sonstiges**
 
-### Top Unternehmen
+## Top Unternehmen
 
 In dieser Tabelle zeigen wir nicht nur die Namen der meistbesuchten oder meistgesperrten Unternehmen, sondern auch Informationen darüber, von welchen Domains Anfragen gesendet oder welche Domains am häufigsten gesperrt werden.
 

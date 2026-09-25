@@ -179,7 +179,7 @@ Disse parametre kan pt. ikke indstilles fra UI'en, hvorfor opsætningsfilen skal
 
 ## Hvordan opsættes AdGuard Home som standard DNS-server? {#defaultdns}
 
-See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
+Se [afsnittet _Opsætning af enheder_](getting-started.md#configure-devices) på siden _Kom godt i gang_.
 
 ## Findes nogen kendte begrænsninger? {#limitations}
 
@@ -312,7 +312,7 @@ Anvendes TLS på den reverse-proxyserveren, behøver man ikke bruge TLS på AdGu
 
 Man kan indstille parameteren `trusted_proxies` til sin HTTP-proxys IP-adresse(r) for at få AdGuard Home til at tage headerne indeholdende den reelle klient IP-adresse i betragtning. Se siderne [opsætning][conf] og [kryptering][encr] for yderligere information.
 
-[encr]: /adguard-home/encryption#reverse-proxy
+[encr]: <>
 [conf]: /adguard-home/configuration
 
 ## Hvordan rettes "tilladelse nægtet"-fejl på Fedora? {#fedora}
@@ -396,16 +396,16 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Udpak AdGuard Home-arkivet til en midlertidig mappe. Downloades arkivet til `~/Downloads`-mappen, så udpak det f.eks. til `/tmp/`:
+5. Udpak AdGuard Home-arkivet til en midlertidig mappe. Downloades arkivet f.eks. til mappen `/tmp/`:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    På macOS, skriv noget i stil med:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Erstat den gamle AdGuard Home eksekverbare fil med den nye. På de fleste Unix-systemer vil kommandoen se således ud:

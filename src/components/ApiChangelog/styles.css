@@ -1,0 +1,22 @@
+.changelog__content {
+  min-width: 0;
+}
+
+.changelog__versions {
+  display: none;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  align-self: start;
+  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
+  overflow-y: auto;
+}
+
+.changelog h2 {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+@media (min-width: 997px) {
+  .changelog__versions {
+    display: block;
+  }
+}

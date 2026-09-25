@@ -396,16 +396,16 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Распакуйте архив AdGuard Home во временную директорию. Например, если вы скачали архив в директорию `~/Downloads` и хотите извлечь его в `/tmp/`:
+5. Распакуйте архив AdGuard Home во временную директорию. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    На macOS введите что-то вроде:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Замените старый исполняемый файл AdGuard Home на новый. В большинстве Unix-систем команда будет выглядеть примерно так:
