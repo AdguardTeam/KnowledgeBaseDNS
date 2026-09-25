@@ -230,6 +230,14 @@ Die Verwendung dieser Methode erfordert das Dienstprogramm `setcap`. Möglicherw
 
 Um AdGuard Home unter Linux zu erlauben, den Port 53 ohne Superuser-Rechte zu überwachen und seine DNS-Server an eine bestimmte Schnittstelle zu binden, führen Sie folgenden Befehl aus:
 
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
+
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
 ```

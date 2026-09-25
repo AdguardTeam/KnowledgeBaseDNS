@@ -838,12 +838,12 @@ Fjernes en post fra indstillingsfilen, nulstilles den til standardværdien. Slet
 
 Følg disse trin for at oprette en ny brugerkontoadgangskode:
 
-1. Installér `htpasswd`, der er en del af _Apache2-webserveren:_
+1. Install `htpasswd`. On Linux, install the utility package instead of the Apache2 Web Server:
 
    - Ubuntu:
 
         ```sh
-        sudo apt-get install apache2
+        sudo apt-get install apache2-utils
         ```
 
    - Fedora:

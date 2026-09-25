@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ### 正式版本
 
-从[最新的稳定版发布页面][releases]下载包含适用于您的操作系统的二进制文件的压缩包。 在[我们的平台页面][platforms]上可以查看支持服务的平台完整列表，以及 Beta 和 Edge（不稳定）版本的链接。
+从[最新的稳定版发布页面][releases]下载包含适用于您的操作系统的二进制文件的压缩包。在[我们的平台页面][platforms]上可以查看支持服务的平台完整列表，以及 Beta 和 Edge（不稳定）版本的链接。
 
 要将 AdGuard Home 安装为服务，请解压压缩包，进入 `AdGuardHome` 目录，然后运行以下命令：
 
@@ -17,7 +17,7 @@ sidebar_position: 2
 
 #### 注意
 
-- **Fedora Linux** 及其衍生产品的用户：在 `/usr/local/bin` 目录中安装 AdGuard Home。 如果不这样做，会导致 SELinux 和权限问题。 请参阅 [issue 765] 和 [issue 3281]。
+- **Fedora Linux** 及其衍生产品的用户：在 `/usr/local/bin` 目录中安装 AdGuard Home。如果不这样做，会导致 SELinux 和权限问题。请参阅 [issue 765] 和 [issue 3281]。
 
 - **macOS 10.15 Catalina** 及更新版本的用户应将 AdGuard Home 工作目录放在 `/Applications` 目录中。
 
@@ -57,7 +57,7 @@ sidebar_position: 2
 
 ## 首次启动 {#first-time}
 
-首先，检查防火墙设置。 要安装和使用 AdGuard Home，以下端口和协议必须可用：
+首先，检查防火墙设置。要安装和使用 AdGuard Home，以下端口和协议必须可用：
 
 - 3000/TCP 用于初始安装；
 - 80/TCP 用于网页界面；
@@ -65,7 +65,7 @@ sidebar_position: 2
 
 您可能需要为除无加密的 DNS 以外的协议打开其他端口，例如 DNS-over-HTTPS。
 
-DNS 服务器绑定到端口 53，这在大多数情况下需要超级用户权限，[请参见下文](#running-without-superuser)。 因此，在 Unix 系统上，需要在终端中使用 `sudo` 或 `doas` 运行它：
+DNS 服务器绑定到端口 53，这在大多数情况下需要超级用户权限，[请参见下文](#running-without-superuser)。因此，在 Unix 系统上，需要在终端中使用 `sudo` 或 `doas` 运行它：
 
 ```sh
 sudo ./AdGuardHome
@@ -92,7 +92,7 @@ go to http://[::1]:3000
 
 ## 作为服务运行 {#service}
 
-下一步是将 AdGuard Home 注册为系统服务（又名守护进程）。 要将 AdGuard Home 安装为服务，请运行以下命令：
+下一步是将 AdGuard Home 注册为系统服务（又名守护进程）。要将 AdGuard Home 安装为服务，请运行以下命令：
 
 ```sh
 sudo ./AdGuardHome -s install
@@ -110,7 +110,7 @@ sudo ./AdGuardHome -s install
 
 ### 日志记录
 
-默认情况下，当用户在终端中运行 AdGuard Home 时，日志会写入 `stderr`。 如果将其作为服务运行，则日志输出取决于平台：
+默认情况下，当用户在终端中运行 AdGuard Home 时，日志会写入 `stderr`。如果将其作为服务运行，则日志输出取决于平台：
 
 - 在 macOS 上，日志将写入 `/var/log/AdGuardHome.*.log` 文件。
 
@@ -126,11 +126,11 @@ sudo ./AdGuardHome -s install
 
 ![更新通知的示例](https://cdn.adtidy.org/content/kb/dns/adguard-home/updatenotification.png)
 
-当新版本发布时，AdGuard Home 的用户界面会显示一条通知消息和「立即更新」按钮。 点击此按钮，AdGuard Home 将自动更新到最新版本。 当前的 AdGuard Home 可执行文件与当前配置文件一起保存在 `backup` 目录中，因此您可以在必要时还原更改。
+当新版本发布时，AdGuard Home 的用户界面会显示一条通知消息和「立即更新」按钮。点击此按钮，AdGuard Home 将自动更新到最新版本。当前的 AdGuard Home 可执行文件与当前配置文件一起保存在 `backup` 目录中，因此您可以在必要时还原更改。
 
 ### 手动更新 {#manual-update}
 
-如果未显示该按钮或自动更新失败，可以手动更新服务。 我们有一个[关于手动更新的详细指南][mupd]，简而言之：
+如果未显示该按钮或自动更新失败，可以手动更新服务。我们有一个[关于手动更新的详细指南][mupd]，简而言之：
 
 1. 下载新的 AdGuard Home 软件包。
 
@@ -144,7 +144,7 @@ sudo ./AdGuardHome -s install
 
 ### Docker, Home Assistant, and Snapcraft 更新
 
-Docker 、Hass.io/Home Assistant 和 Snapcraft 安装的自动更新已禁用。 请改为更新镜像。
+Docker 、Hass.io/Home Assistant 和 Snapcraft 安装的自动更新已禁用。请改为更新镜像。
 
 ### 命令行更新
 
@@ -160,13 +160,13 @@ Docker 、Hass.io/Home Assistant 和 Snapcraft 安装的自动更新已禁用。
 
 此设置将自动覆盖连接到您家用路由器的所有设备，无需手动配置每台设备。
 
-1. 打开路由器的首选项。 Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). 系统可能会提示您输入密码。 如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。 如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
+1. 打开路由器的首选项。 Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). 系统可能会提示您输入密码。如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
 
-2. 找到 DHCP/DNS 设置。 在允许两组或三组数字的字段旁边查找 DNS 字母，每组数字分为四组，每组一到三位数字。
+2. 找到 DHCP/DNS 设置。在允许两组或三组数字的字段旁边查找 DNS 字母，每组数字分为四组，每组一到三位数字。
 
 3. 输入您的 AdGuard Home 服务器地址。
 
-4. 在某些路由器类型上，无法设置自定义 DNS 服务器。 在这种情况下，将 AdGuard Home 设置为 DHCP 服务器可能会有所帮助。 否则，您应该查阅路由器手册，了解如何在特定路由器型号上自定义 DNS 服务器。
+4. 在某些路由器类型上，无法设置自定义 DNS 服务器。在这种情况下，将 AdGuard Home 设置为 DHCP 服务器可能会有所帮助。否则，您应该查阅路由器手册，了解如何在特定路由器型号上自定义 DNS 服务器。
 
 ### Windows
 
@@ -202,11 +202,11 @@ Android 设备的说明可能因操作系统版本和制造商而异。
 
 1. 在 Android 菜单主屏幕上，点击「设置」。
 
-2. 点击菜单上的「Wi-Fi」。 将显示所有可用网络的屏幕 (无法为移动连接设置自定义 DNS)。
+2. 点击菜单上的「Wi-Fi」。将显示所有可用网络的屏幕 (无法为移动连接设置自定义 DNS)。
 
 3. 长按您所连接的网络，然后点击「更改网络」。
 
-4. 在某些设备上，可能需要选中「高级」复选框才能查看更多设置。 要调整您的 Android DNS 设置，需要将 IP 设置从「DHCP」更改为「静态」。
+4. 在某些设备上，可能需要选中「高级」复选框才能查看更多设置。要调整您的 Android DNS 设置，需要将 IP 设置从「DHCP」更改为「静态」。
 
 5. 将设置的 DNS 1 和 DNS 2 值更改为您的 AdGuard Home 服务器地址。
 
@@ -226,9 +226,17 @@ Android 设备的说明可能因操作系统版本和制造商而异。
 
 ### 授予必要的功能 (仅限 Linux)
 
-使用此方法需要 `setcap` 工具。 用户可能需要使用 Linux 发行版的软件包管理器安装它。
+使用此方法需要 `setcap` 工具。用户可能需要使用 Linux 发行版的软件包管理器安装它。
 
 要允许在 Linux 上运行的 AdGuard Home 在没有超级用户权限的情况下监听端口 53 并将其 DNS 服务器绑定到特定接口，请运行：
+
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
@@ -250,11 +258,11 @@ dns:
 
 ## 限制 {#limitations}
 
-某些文件系统不支持统计系统所需的 `mmap(2)` 系统调用。 请参阅 [issue 1188]。
+某些文件系统不支持统计系统所需的 `mmap(2)` 系统调用。请参阅 [issue 1188]。
 
 用户可以通过以下方式解决此问题：
 
-- 向 `AdGuardHome` 二进制文件提供 `--work-dir DIRECTORY` 参数。 此选项将告诉 AGH 使用另一个目录来存放其所有文件，而不是默认的 `./data` 目录。
+- 向 `AdGuardHome` 二进制文件提供 `--work-dir DIRECTORY` 参数。此选项将告诉 AGH 使用另一个目录来存放其所有文件，而不是默认的 `./data` 目录。
 
 - 通过创建指向另一个支持 `mmap(2)` 的文件系统（例如 tmpfs）的符号链接：
 

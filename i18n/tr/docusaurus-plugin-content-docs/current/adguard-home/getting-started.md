@@ -230,6 +230,14 @@ Bu yöntemin kullanılması `setcap` yardımcı programını gerektirir. Linux d
 
 Linux'da çalışan AdGuard Home'un süper kullanıcı ayrıcalıkları olmadan 53 numaralı bağlantı noktasını dinlemesine ve DNS sunucularını belirli bir arayüze bağlamasına izin vermek için çalıştırın:
 
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
+
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome
 ```
