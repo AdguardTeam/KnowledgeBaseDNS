@@ -36,7 +36,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
 ![连接 \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. 您的设备已成功连接到 AdGuard DNS。 用户只需点击「启用」即可启动保护功能。
+1. Your device is successfully connected to AdGuard DNS. 用户只需点击「启用」即可启动保护功能。
 
 ![启用 \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-zh_cn.png)
 
@@ -44,7 +44,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
 2. 若需使用原生 DNS，请前往「设置」→「通用」→「VPN 与设备管理」→「DNS」并启用「AdGuard DNS」。
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用 AdGuard 广告拦截程序（付费）
 
@@ -67,7 +67,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 iOS 设备上使用 AdGua
 8. 创建的新服务器应出现在列表底部。
    ![自定义服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用 AdGuard VPN
 
@@ -86,12 +86,12 @@ AdGuard 应用程序让用户使用加密的 DNS，在 iOS 设备上使用 AdGua
 7. 复制以下 DNS 地址并将其粘贴到「_DNS 服务器地址_」文本字段。 如果不确定使用哪个地址，请选择「_DNS-over-HTTPS_」。
    ![DNS-over-HTTPS 服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
    ![自定义 DNS 服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
-8. 点击_保存_。
+8. 点&#x51FB;_&#x4FDD;存_。
    ![保存服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step8.jpg)
 9. 创建的新服务器应该出现在「_自定义 DNS 服务器_」下方。
    ![自定义服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-完成！ 您的设备已成功连接到 AdGuard DNS。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用配置文件
 

@@ -92,7 +92,7 @@ Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže 
    ![Add a DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step8.png)
 9. DNS server, který jste přidali, se objeví v dolní části seznamu _Vlastní DNS servery_.
 
-Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+All done! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
 
 ## Ruční konfigurace soukromého AdGuard DNS
 
@@ -105,7 +105,7 @@ Server DNS můžete nakonfigurovat v nastavení zařízení. Upozorňujeme, že 
 3. Vyberte možnost _Private DNS provider hostname_ a zadejte adresu svého osobního serveru: `{Your_Device_ID}.d.adguard-dns.com`.
 4. Klepněte na _Uložit_.
    ![Private DNS \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step4.png)
-   All done! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+   All done! Your device is successfully connected to AdGuard DNS.
 
 ## Konfigurace běžného DNS
 

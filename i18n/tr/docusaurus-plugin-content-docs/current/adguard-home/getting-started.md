@@ -21,6 +21,10 @@ AdGuard Home'u bir hizmet olarak kurmak için arşivi çıkarın, `AdGuardHome` 
 
 - MacOS 10.15 Catalina\*\* ve daha yeni sürüm kullanıcıları AdGuard Home çalışma dizinini `/Applications` dizininin içine yerleştirmelidir.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker ve Snap
 
 We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
@@ -47,7 +51,7 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Varsayılan olarak, AdGuard Home'u bir terminalde çalıştırdığınızda gün
 
 Bu davranışı AdGuard Home [yapılandırma dosyası][conf] içinde değiştirebilirsiniz.
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Güncelleme {#update}
 
@@ -136,7 +140,7 @@ Düğmenin gösterilmemesi veya otomatik güncellemenin başarısız olması dur
 
 4. AdGuard Home'u yeniden başlatın.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 
@@ -156,7 +160,7 @@ AdGuard Home paketini Web API'sini kullanmaya gerek kalmadan güncellemek için 
 
 Bu kurulum, ev yönlendiricinize bağlı tüm cihazları otomatik olarak kapsar ve her birini elle yapılandırmanız gerekmez.
 
-1. Yönlendiricinizin tercihlerini açın. Genellikle, tarayıcınızdan <http://192.168.0.1/> veya <http://192.168.1.1/> gibi bir URL aracılığıyla erişebilirsiniz. Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
+1. Yönlendiricinizin tercihlerini açın. Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). Bir parola girmeniz istenebilir. Hatırlamıyorsanız, genellikle yönlendiricinin üzerindeki bir düğmeye basarak şifreyi sıfırlayabilirsiniz, ancak bu prosedür seçilirse muhtemelen tüm yönlendirici yapılandırmasını kaybedeceğinizi unutmayın. Yönlendiricinizin kurulumu için bir uygulama gerekiyorsa, lütfen uygulamayı telefonunuza veya bilgisayarınıza yükleyin ve yönlendiricinin ayarlarına erişmek için kullanın.
 
 2. DHCP/DNS ayarlarını bulun. Her biri bir ila üç basamaklı dört gruba bölünmüş iki veya üç sayı kümesine izin veren bir alanın yanındaki DNS harflerini arayın.
 

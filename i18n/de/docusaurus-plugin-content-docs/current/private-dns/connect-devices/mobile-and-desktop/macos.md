@@ -34,7 +34,7 @@ Die AdGuard-App ermöglicht die Nutzung von verschlüsseltem DNS und eignet sich
 10. Ihr neu erstellter Server sollte am Ende der Liste erscheinen.
     ![Anbieter \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN verwenden
 
@@ -50,13 +50,13 @@ Nicht alle VPN-Dienste unterstützen verschlüsseltes DNS. Unser VPN jedoch scho
 6. Der hinzugefügte DNS-Server wird unten in der Liste der _Benutzerdefinierten DNS-Server_ angezeigt.
    ![Benutzerdefinierte DNS-Server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Ein Konfigurationsprofil verwenden
 
 Ein macOS-Geräteprofil, auch von Apple als Konfigurationsprofil bezeichnet, ist eine zertifikatsgezeichnete XML-Datei, die Sie manuell auf Ihrem Gerät installieren oder mit einer MDM-Lösung bereitstellen können. Außerdem können Sie Privates AdGuard DNS auf Ihrem Gerät konfigurieren.
 
-:::note Wichtig
+:::note Important
 
 Wenn Sie ein VPN verwenden, wird das Konfigurationsprofil ignoriert.
 
@@ -71,11 +71,11 @@ Wenn Sie ein VPN verwenden, wird das Konfigurationsprofil ignoriert.
    ![Installation \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Geben Sie das Administratorpasswort ein und klicken Sie auf _OK_.
 
-Fertig! Ihr Gerät ist erfolgreich mit AdGuard DNS verbunden.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Unverschlüsseltes DNS konfigurieren
 
-Wenn Sie keine zusätzliche Software für die DNS-Konfiguration verwenden möchten, können Sie sich für unverschlüsseltes DNS entscheiden. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Sie haben zwei Optionen: Verknüpfte IPs oder dedizierte IPs verwenden.
 
 - [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -179,7 +179,7 @@ Es gibt derzeit keine Möglichkeit, diese Parameter über die Benutzeroberfläch
 
 ## Wie kann AdGuard Home als Standard-DNS-Server eingerichtet werden? {#defaultdns}
 
-Siehe den Abschnitt [_Geräte konfigurieren_](getting-started.md#configure-devices) auf der Seite _Erste Schritte_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Gibt es bekannte Einschränkungen? {#limitations}
 
@@ -312,8 +312,8 @@ Wenn Sie TLS auf Ihrem Reverse-Proxy-Server verwenden, müssen Sie TLS nicht auf
 
 Sie können den Parameter `trusted_proxies` auf die IP-Adresse(n) Ihres HTTP-Proxys setzen, damit AdGuard Home die Header berücksichtigt, die die echte Client-IP-Adresse enthalten. Weitere Informationen finden Sie auf den Seiten [configuration][conf] und [encryption][encr].
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Wie kann der Fehler `permission denied` unter Fedora behoben werden? {#fedora}
 
@@ -396,16 +396,16 @@ Wenn die Schaltfläche nicht angezeigt wird oder eine automatische Aktualisierun
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. Wenn Sie zum Beispiel das Archiv in den Ordner `~/Downloads` heruntergeladen haben und es nach `/tmp/` entpacken wollen:
+5. Entpacken Sie das AdGuard Home-Archiv in einen temporären Ordner. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    Unter macOS geben Sie etwas ein wie:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Ersetzen Sie die alte ausführbare Datei von AdGuard Home durch die neue. Auf den meisten Unix-Systemen würde der Befehl etwa so aussehen:

@@ -3,13 +3,9 @@ title: Konfigurationsdatei
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
+See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-In der Datei [`config.dist.yml`][dist] finden Sie ein vollständiges Beispiel für eine [YAML][yaml]-Konfigurationsdatei mit Kommentaren.
-
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
 [dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
@@ -38,7 +34,7 @@ Das Objekt `cache` konfiguriert das Zwischenspeichern der Ergebnisse von DNS-Abf
 
 Das Objekt `server` konfiguriert die Verarbeitung der eingehenden Anfragen. Es hat folgende Eigenschaften:
 
-- `bind_retry`: Die Konfiguration des Wiederholungsmechanismus für die Bindung an die Lauschadressen. Dies ist nützlich, wenn der Server gestartet wird, bevor das Netzwerk bereit ist und die Adressen noch nicht verfügbar sind, wie bei einigen Windows-Editionen, die als Systemdienst installiert werden.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. Dies ist nützlich, wenn der Server gestartet wird, bevor das Netzwerk bereit ist und die Adressen noch nicht verfügbar sind, wie bei einigen Windows-Editionen, die als Systemdienst installiert werden.
 
   :::note
 
@@ -70,6 +66,18 @@ Das Objekt `server` konfiguriert die Verarbeitung der eingehenden Anfragen. Es h
       - address: '[::1]:53'
   ```
 
+- `pending_requests`: Konfiguration für die Behandlung doppelter zeitgleicher Anfragen, die zur Abwehr von Cache-Poisoning-Angriffen verwendet wird.
+
+  :::note
+
+  Dieses Objekt ist seit **v0.0.4** verfügbar.
+
+  :::
+
+  - `enabled`: Wenn dies zutrifft, führt der Server nur eine einzige Anfrage für jede einzelne Anfrage aus.  Standardwert ist „true“.
+
+    **Beispiel:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
 Das Objekt `bootstrap` konfiguriert die Auflösung von [upstream](#dns-upstream) Serveradressen. Es hat folgende Eigenschaften:
@@ -94,9 +102,40 @@ Das Objekt `upstream` konfiguriert die eigentliche Auflösung von Anfragen. Es h
 
 - `groups`: Die Gruppe von Upstream-Servern, die durch den Gruppennamen gekennzeichnet sind. Es hat folgende Eigenschaften:
 
-  - `address`: Die Adresse des Upstream-Servers.
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **Beispiel:** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    Es hat folgende Eigenschaften:
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **Eigenschaftsbeispiel:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: Die Liste der Kriterien, mit denen die Anfrage abgeglichen werden soll. Jeder Eintrag kann die folgenden Eigenschaften enthalten:
 
@@ -126,7 +165,7 @@ Das Objekt `upstream` konfiguriert die eigentliche Auflösung von Anfragen. Es h
 
   :::info
 
-  `groups` sollte mindestens einen einzelnen Eintrag namens `default` und optional einen einzelnen Eintrag namens `private` enthalten, beide sollten keine `match` Eigenschaft haben.
+  `groups` sollte mindestens einen einzelnen Eintrag namens `default` und optional einen einzelnen Eintrag namens `private` enthalten, beide sollten keine `match` Eigenschaft haben. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -152,6 +191,10 @@ Das Objekt `fallback` konfiguriert das Verhalten des DNS-Servers im Falle eines 
 - `timeout`: Die Zeitüberschreitung für Fallback-DNS-Anfragen in einer für den Nutzer erfassbaren Dauer.
 
   **Beispiel:** `2s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

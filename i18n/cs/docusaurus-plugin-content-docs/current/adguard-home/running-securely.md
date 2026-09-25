@@ -33,7 +33,7 @@ V dolní části stránky _Nastavení_ → _Nastavení DNS_ najdete část _Nast
 
 Chcete-li povolit režim Seznam povolených, zadejte do pole _Povolení klienti_ [ClientIDs][cid] (doporučeno) nebo IP adresy povolených klientů.
 
-[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[cid]: /adguard-home/clients#client-id
 
 ## Zakázání běžného DNS
 
@@ -93,3 +93,70 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 Princip je stejný i ve Windows: ujistěte se, že adresář AdGuard Home, obvykle `C:\Program Files\AdGuardHome`, a binární soubor `AdGuardHome.exe` mají oprávnění, která umožní čtení a spuštění/vypsání pouze běžným uživatelům.
 
 V budoucnu plánujeme vydat sestavení pro Windows jako instalační soubory MSI, které zajistí, že se tato funkce provede automaticky.
+
+## Ověření verze {#verify-releases}
+
+Spustitelné soubory, které sestavujeme, podepisujeme, abyste si mohli ověřit, že byly vytvořeny námi a nikým jiným. V archivu se nachází malý soubor s příponou `.sig`, který obsahuje údaje o podpisu. Pokud někdo nahradí binární soubor v archivu, budete vědět, že se nejedná o oficiální verzi od společnosti AdGuard.
+
+### Jak ověřit, že spustitelný soubor byl vytvořen AdGuardem? {#how-to-verify-executable}
+
+1. Rozbalte archivní soubor AdGuard Home.
+
+2. Načtěte veřejný klíč AdGuard Home z klíčového serveru. Pro **aktuální verze** spusťte:
+
+   ```sh
+   gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
+   ```
+
+   Výše uvedený příkaz vypíše něco podobného tomuto:
+
+   ```none
+   gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
+   gpg: Total number processed: 1
+   gpg:               imported: 1
+   ```
+
+3. Ověřte.
+
+   - V UNIX:
+
+     ```sh
+     gpg --verify AdGuardHome/AdGuardHome.sig
+     ```
+
+   - Ve Windows (možná budete muset nainstalovat PGP):
+
+     ```ps1
+     gpg --verify AdGuardHome/AdGuardHome.exe.sig
+     ```
+
+   Uvidíte něco takového:
+
+   ```none
+   gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
+   gpg: Signature made Mon 15 Aug 2022 19:30:55 MSK
+   gpg:                using RSA key 28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6
+   gpg:                issuer "devteam@adguard.com"
+   gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
+   ```
+
+   Zkontrolujte následující:
+
+   - RSA klíč: musí být `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
+   - název vydavatele: musí být `AdGuard`;
+   - E-mailová adresa: musí být `devteam@adguard.com`;
+
+   Může se také zobrazit následující varování:
+
+   ```none
+   gpg: WARNING: The key's User ID is not certified with a trusted signature!
+   gpg:          There is no indication that the signature belongs to the owner.
+   Primary key fingerprint: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
+   ```
+
+### Reprodukce sestavení AdGuard Home {#reproducing-builds}
+
+AdGuard Home používá [reprodukovatelná sestavení][repr]. Podívejte se na `build-release.sh` v naší [dokumentaci ke skriptům pro sestavení][build].
+
+[build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
+[repr]: https://reproducible-builds.org/

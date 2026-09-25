@@ -106,7 +106,7 @@ Uma vez que os tokens de acesso e atualização são gerados, as chamadas de API
 
 ### Reference
 
-Please see the methods reference [here](private-dns/api/reference.md).
+Please see the methods reference [here](private-dns/api/reference.mdx).
 
 ### OpenAPI spec
 

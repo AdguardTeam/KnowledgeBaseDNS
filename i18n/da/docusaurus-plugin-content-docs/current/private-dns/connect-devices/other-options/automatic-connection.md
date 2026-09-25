@@ -18,13 +18,21 @@ Man kan oprette et tilslutningslink og bruge dette i enhedsindstillingerne. Enhe
 
 Nu kan man automatisk tilslutte sin enhed til serveren ved at oprette en særlig adresse, der inkluderer enhedsnavn, enhedstype og aktuelt server-ID. Lad os se på, hvordan disse adresser ser ud og reglerne for at oprette dem.
 
+:::note
+
+Der kan [bruges AdGuard DNS CLI til automatisk enhedstilslutning][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Eksempler på automatiske tilslutningsadresser
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dette vil automatisk oprette en `Android`-enhed med `DNS-over-TLS`-protokollen kaldet `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dette vil automatisk oprette en `Windows`-enhed med `DNS-over-HTTPS`-protokollen kaldet `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` – dette vil automatisk oprette en `iOS`-enhed med `DNS-over-QUIC`-protokollen kaldet `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Navngivningskonventioner
 
@@ -57,3 +65,9 @@ Vi har tilføjet en skabelon, der genererer et link til den bestemte enhedstype 
 3. Klik på _Generér link_.
    ![Generér link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Linket er hermed genereret, kopiér nu serveradressen og brug den i en af [AdGuard-apperne](https://adguard.com/welcome.html)
+
+## Se også
+
+- Artiklen [_Automatisk enhedsforbindelse_][adc] giver mere detaljerede oplysninger om processen og kravene til den menneskeligt læsbare identifikator.
+
+[adc]: /private-dns/solving-problems/automatic-devices

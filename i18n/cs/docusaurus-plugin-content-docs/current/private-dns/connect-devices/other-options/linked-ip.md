@@ -30,6 +30,17 @@ Následující pokyny vysvětlují, jak se k zařízení připojit pomocí **pro
 
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## Jak zrušit přiřazení připojené IP
+
+Následující pokyny popisují, jak **zrušit přiřazení připojené IP adresy**:
+
+1. Otevřete hlavní panel.
+2. Přejděte do nastavení zařízení.
+3. Přejděte na _Adresy běžných DNS serverů_.
+4. V části _Připojená IPv4 adresa_ klikněte na _Odpojit IP adresu_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## Dynamický DNS: Proč je užitečný
 
 Při každém připojení zařízení k síti získá novou dynamickou IP adresu. Když se zařízení odpojí, server DHCP může uvolněnou adresu IP přidělit jinému zařízení v síti. To znamená, že dynamické IP adresy se často a nepředvídatelně mění. Proto je nutné aktualizovat nastavení při každém restartu zařízení nebo při změně sítě.
@@ -95,7 +106,7 @@ V systémech MacOS a Linux je nejjednodušší použít příkaz `cron`:
    - Tato úloha se spustí každých 5 minut
 3. Uložte crontab.
 
-:::note Důležité
+:::note Important
 
 - Ujistěte se, že máte nainstalovaný `curl` na macOS a Linuxu.
 - Nezapomeňte zkopírovat adresu z nastavení a nahradit `ServerID` a `UniqueKey`.

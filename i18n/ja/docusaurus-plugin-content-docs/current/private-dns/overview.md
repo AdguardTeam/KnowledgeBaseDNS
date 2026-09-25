@@ -39,7 +39,9 @@ AdGuard DNS を使うと、プライベートDNSサーバーを設定してDNS�
 | -                   | ペアレンタルコントロール                                    |
 
 
-<!-- ## How to set up private AdGuard DNS
+<!--
+
+## How to set up private AdGuard DNS
 
 ### For devices that support DoH, DoT, and DoQ
 
@@ -93,21 +95,23 @@ A residential IP address is an IP address assigned to a device connected to a re
 
 If you're trying to link a residential IP address and AdGuard DNS does not allow you to do that, please contact our support team at support@adguard-dns.io.
 
+-->
+
 ## Private AdGuard DNS features
 
-### Statistics
+### 統計
 
 In the *Statistics* tab you can see all the summarized statistics on DNS queries made by devices connected to your Private AdGuard  DNS. It shows the total number and geography of requests, the number of blocked requests, the list of companies the requests were addressed to, requests types and top requested domains.
 
 ![Private AdGuard DNS dashboard statistics](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/statistics.png)
 
-### Traffic destination
+### トラフィックの送信先
 
 This feature shows you where DNS requests sent by your devices go. On top of seeing the map of request destinations, you can filter the information by date, device and country.
 
 ![Private AdGuard DNS dashboard traffic](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/traffic_destination.png)
 
-### Companies
+### 企業に関する統計
 
 This tab allows you to quickly check which companies send the most requests, and which companies have the most blocked requests.
 
@@ -135,25 +139,25 @@ Even if you're aware of all the tricks online scammers use, there's always a ris
 
 The *Block malicious, phishing, and scam domains* feature will block domains found in the dedicated database. And the *Block newly registered domains* will block all domains registered less than 30 days ago, which are often considered risky for your online privacy.
 
-### Parental control
+### ペアレンタルコントロール
 
 To protect your child from online content you deem inappropriate, set up and activate the *Parental control* option. In addition to options such as "adult content" blocking and safe search, we've added the ability to manually specify domains for blocking and set a schedule for the *Parental control* to work accordingly.
 
-![Parental control](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
+![ペアレンタルコントロール](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/parental_control.png)
 
-### User rules
+### ユーザールール
 
 For cases where pre-installed blocklists with thousands of rules are not enough, we have a handy feature called *User rules*. Here you can manually add custom rules to block/unblock a specific domain or import custom rule lists (see [DNS filtering rules syntax](../general/dns-filtering-syntax.md)). You can export the lists.
 
 ![Private AdGuard DNS dashboard user rules](https://cdn.adtidy.org/public/Adguard/Blog/private_adguard_dns/import.png)
 
-### DNS-over-HTTPS with authentication
+### 認証付き DNS-over-HTTPS（DNS-over-HTTPS with authentication）
 
 DNS-over-HTTPS with authentication provides a login and password to connect to the server. This can limit access to unauthorized users and increase security.
 
 To enable this feature, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Select *Deny other protocols* to disable alternative protocol usage, ensuring exclusive DNS-over-HTTPS authentication and blocking third-party access.
 
-![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+![認証付き DNS-over-HTTPS（DNS-over-HTTPS with authentication）](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
 ## Advanced
 
@@ -172,7 +176,7 @@ In the Advanced section, there are three options that can be customized:
 - Block Firefox canary domain. This setting prevents Firefox from automatically switching to its DoH resolver when AdGuard DNS is set as the system-wide DNS service.
 - Log IP addresses. If this option is enabled, IP addresses associated with incoming DNS requests will be recorded and displayed in the Query log.
 
-### Access settings
+### アクセス設定
 
 Here you can manage an access to your DNS server by configuring the following settings:
 
@@ -189,7 +193,7 @@ If you only want to use DNS on certain AS numbers or IP addresses, you should bl
 
 :::
 
-By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.-->
+By setting up these options, you can control who uses your DNS server and prevent potential DDoS attacks. Requests that are not allowed will not appear in your Query log, and they are free of charge.
 
 ### デバイスを AdGuard DNS に接続する方法
 

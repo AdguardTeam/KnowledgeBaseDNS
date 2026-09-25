@@ -26,25 +26,25 @@ Para ativar as listas de bloqueio:
 
 Um grupo de filtros que inclui listas para bloquear anúncios e domínios de rastreadores.
 
-![Listas de bloqueio gerais \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Listas de bloqueio gerais \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_pt_br.png)
 
 ### Regional
 
 Um grupo de filtros composto por listas regionais para bloquear domínios em idiomas específicos.
 
-![Listas de bloqueio regionais \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Listas de bloqueio regionais \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_pt_br.png)
 
 ### Segurança
 
 Um grupo de filtros contendo regras para bloquear sites fraudulentos e domínios de phishing.
 
-![Listas de bloqueio de segurança \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Listas de bloqueio de segurança \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_pt_br.png)
 
 ### Outro
 
 Listas de bloqueio com várias regras de bloqueio de desenvolvedores de terceiros.
 
-![Outras listas de bloqueio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Outras listas de bloqueio \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_pt_br.png)
 
 ## Adicionando filtros
 
@@ -57,9 +57,28 @@ Para enviar uma solicitação:
 3. Clique em _Solicitação de lista de bloqueio_ e preencha o formulário.
 4. Após preencher o formulário, clique em _Enviar nova questão_.
 
-If your filter’s blocking rules do not duplicate the existing lists, it will be added to the repository.
+Se as regras de bloqueio do seu filtro não duplicarem as listas existentes, serão adicionadas ao repositório.
 
 ## Regras de usuário
 
 Você também pode criar suas próprias regras de bloqueio.
 Saiba mais no [artigo de regras de usuário](/private-dns/setting-up-filtering/user-rules.md).
+
+## Listas de bloqueio personalizadas
+
+Se você precisar de alguma lista de bloqueio específica para ser adicionada ao AdGuard DNS, você pode baixá-la via URL.
+
+![Adicionar lista de bloqueio personalizada](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_pt_br.png)
+
+1. Abra o painel de controle e clique em _Servidores_ no menu à esquerda
+2. Selecione _Meu servidor → Listas de bloqueio_
+3. Na seção _Personalizado_, clique em _Adicionar lista de bloqueio personalizada_
+4. Insira o nome da lista de bloqueio, seu URL e uma descrição opcional e clique em _Adicionar_
+
+:::note
+
+Cada plano de assinatura tem um limite no número total de regras de filtragem: Personal — 1K, Equipe — 5K, Enterprise — 100K. Essa limitação está em vigor porque as listas de bloqueio são baixadas para servidores DNS, e permitir tamanhos ilimitados de listas de bloqueio pode levar à sobrecarga do servidor, potencialmente causando problemas de desempenho.
+
+:::
+
+Se uma lista de bloqueio personalizada exceder o limite, ela será **desativada automaticamente**, e você verá uma notificação correspondente. Para habilitar uma lista de bloqueio recém-adicionada que exceda o limite de regras, você precisará remover outras listas de bloqueio ou atualizar para um plano com um limite de regras maior.

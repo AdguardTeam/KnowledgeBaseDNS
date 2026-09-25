@@ -9,7 +9,7 @@ sidebar_position: 11
 
 ## Через панель управления роутера
 
-Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Откройте панель управления роутера. К нему можно получить доступ по адресу `192.168.31.1` или IP-адресу вашего роутера.
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.

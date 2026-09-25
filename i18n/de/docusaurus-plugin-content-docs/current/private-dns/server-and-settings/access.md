@@ -17,7 +17,7 @@ Diese Einstellung ermöglicht es Ihnen, anzugeben, welche Clients Ihren DNS-Serv
 
 Hier können Sie die Clients auflisten, die Ihren DNS-Server nicht verwenden dürfen. Sie können den Zugriff für alle Clients blockieren und nur ausgewählte zulassen. Fügen Sie dazu zwei Adressen zu den nicht zugelassenen Clients hinzu: `0.0.0.0/0` und `::/0`. Geben Sie dann im Feld _Zugelassene Clients_ die Adressen an, die auf Ihren Server zugreifen dürfen.
 
-:::note Wichtig
+:::note Important
 
 Bevor Sie die Zugriffseinstellungen übernehmen, stellen Sie sicher, dass Sie Ihre eigene IP-Adresse nicht blockieren. In diesem Fall können Sie nicht auf das Netzwerk zugreifen. Falls dies passiert, trennen Sie einfach die Verbindung zum DNS-Server, öffnen Sie die Zugriffseinstellungen und passen Sie die Konfiguration entsprechend an.
 

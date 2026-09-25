@@ -3,15 +3,15 @@ title: FAQ
 sidebar_position: 3
 ---
 
-## Why doesn’t AdGuard Home block ads or threats? {#doesntblock}
+## 왜 AdGuard Home이 광고나 위협을 차단하지 않나요? {#doesntblock}
 
-Suppose that you want AdGuard Home to block `somebadsite.com` but for some reason it doesn’t. Let’s try to solve this problem.
+AdGouard Home으로 `somebadsite.com`을 차단하려고 하지만, 무슨 이유에서인지 차단이 불가능하다고 가정해 보세요. 이 문제를 해결해 봅시다.
 
-Most likely, you haven’t configured your device to use AdGuard Home as the default DNS server. To check if you’re using AdGuard Home as your default DNS server:
+대부분, AdGuard Home을 기본 DNS 서버로 지정하지 않았기 때문일 겁니다. AdGuard Home이 기본 DNS 서버로 설정되어 있는지 확인하려면 다음 단계를 따르세요.
 
-1. On Windows, open Command Prompt (_Start_ → _Run_ → `cmd.exe`). On other systems, open your Terminal application.
+1. Windows에서는 명령 프롬프트(**시작** → **실행** → `cmd.exe`)를 엽니다. 다른 시스템에서는 터미널 애플리케이션을 엽니다.
 
-2. Execute `nslookup example.org`. It will print something like this:
+2. `nslookup example.org`를 실행합니다. It will print something like this:
 
    ```none
    Server: 192.168.0.1
@@ -179,7 +179,7 @@ There is currently no way to set these parameters from the UI, so you’ll need 
 
 ## How do I set up AdGuard Home as default DNS server? {#defaultdns}
 
-See the [_Configuring Devices_ section](getting-started.md#configure-devices) on the _Getting Started_ page.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Are there any known limitations? {#limitations}
 
@@ -312,8 +312,8 @@ If you’re using TLS on your reverse proxy server, you don’t need to use TLS 
 
 You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## How do I fix `permission denied` errors on Fedora? {#fedora}
 
@@ -396,16 +396,16 @@ If the button isn’t displayed or an automatic update has failed, you can updat
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `~/Downloads` directory and want to extract it to `/tmp/`:
+5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    On macOS, type something like:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Replace the old AdGuard Home executable file with the new one. On most Unix systems the command would look something like this:

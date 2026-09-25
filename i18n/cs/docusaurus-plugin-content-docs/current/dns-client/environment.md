@@ -3,9 +3,7 @@ title: Prostředí
 sidebar_position: 3
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
-Klient AdGuard DNS používá [proměnné prostředí][wiki-env] k uložení části konfigurace. Zbytek konfigurace je uložen v [konfiguračním souboru][conf].
+Klient AdGuard DNS CLI používá [proměnné prostředí][wiki-env] k uložení části konfigurace. Zbytek konfigurace je uložen v [konfiguračním souboru][conf].
 
 [conf]: configuration.md
 [wiki-env]: https://en.wikipedia.org/wiki/Environment_variable
@@ -16,7 +14,7 @@ Cíl protokolu, musí to být absolutní cesta k souboru nebo jedna ze speciáln
 
 Tato proměnná prostředí nahrazuje pole [`log.output`][conf-log] v konfiguračním souboru.
 
-**Default:** **Unset.**
+**Výchozí:** **Nenastaveno.**
 
 [conf-log]: configuration.md#log
 
@@ -26,7 +24,7 @@ Formát záznamů protokolu. Viz [popis konfigurace protokolu][conf-log] v člá
 
 Tato proměnná prostředí nahrazuje pole [`log.format`][conf-log] v konfiguračním souboru.
 
-**Default:** **Unset.**
+**Výchozí:** **Nenastaveno.**
 
 ## `LOG_TIMESTAMP` {#LOG_TIMESTAMP}
 
@@ -34,7 +32,7 @@ Je-li nastavena hodnota `1`, záznamy protokolu obsahují časové razítko. Pok
 
 Tato proměnná prostředí nahrazuje pole [`log.timestamp`][conf-log] v konfiguračním souboru.
 
-**Default:** **Unset.**
+**Výchozí:** **Nenastaveno.**
 
 ## `VERBOSE` {#VERBOSE}
 
@@ -42,4 +40,4 @@ Pokud je nastavena hodnota `1`, povolí slovní protokolování. Pokud je nastav
 
 Tato proměnná prostředí nahrazuje pole [`log.verbose`][conf-log] v konfiguračním souboru.
 
-**Default:** **Unset.**
+**Výchozí:** **Nenastaveno.**

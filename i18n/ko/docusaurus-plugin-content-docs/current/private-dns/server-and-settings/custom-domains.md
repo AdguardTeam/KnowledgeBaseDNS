@@ -1,5 +1,5 @@
 ---
-title: Custom domains
+title: 사용자 정의 도메인
 sidebar_position: 6
 ---
 

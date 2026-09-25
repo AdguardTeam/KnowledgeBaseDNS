@@ -21,6 +21,10 @@ sidebar_position: 2
 
 - Пользователям **macOS 10.15 Catalina** и более новых версий следует поместить рабочую директорию AdGuard Home в директорию `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker и Snap
 
 Мы также предоставляем [официальный докер-образ AdGuard Home][docker] и [официальный пакет Snap Store][snap] для опытных пользователей.
@@ -47,7 +51,7 @@ sidebar_position: 2
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ sudo ./AdGuardHome -s install
 
 Вы можете изменить это поведение [в файле конфигурации AdGuard Home][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Обновление {#update}
 
@@ -136,7 +140,7 @@ sudo ./AdGuardHome -s install
 
 4. Перезапустите AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Обновления Docker, Home Assistant и Snapcraft
 
@@ -156,7 +160,7 @@ sudo ./AdGuardHome -s install
 
 Такая настройка автоматически покроет все устройства, использующие ваш домашний роутер, и вам не нужно будет настраивать каждое из них по отдельности.
 
-1. Откройте настройки вашего роутера. Обычно вы можете получить к нему доступ из браузера по URL-адресу, например <http://192.168.0.1/> или <http://192.168.1.1/>. Вам может потребоваться ввести пароль. Если вы его не помните, то часто можете сбросить пароль, нажав кнопку на самом роутере, но имейте в виду, что можете потерять все конфигурации роутера. Если вашему роутеру требуется приложение для его настройки, установите его на свой телефон или компьютер и используйте его для доступа к настройкам роутера.
+1. Откройте настройки вашего роутера. Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). Вам может потребоваться ввести пароль. Если вы его не помните, то часто можете сбросить пароль, нажав кнопку на самом роутере, но имейте в виду, что можете потерять все конфигурации роутера. Если вашему роутеру требуется приложение для его настройки, установите его на свой телефон или компьютер и используйте его для доступа к настройкам роутера.
 
 2. Найдите настройки DHCP/DNS. Ищите буквы DNS рядом с полем, которое допускает два или три набора цифр. Каждый из наборов разделён на четыре группы от одной до трёх цифр.
 

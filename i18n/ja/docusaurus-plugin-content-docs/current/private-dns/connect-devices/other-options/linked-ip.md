@@ -30,6 +30,17 @@ sidebar_position: 3
 
    ![Linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## How to unassign linked IP
+
+The following instructions describe how to **unassign your linked IP address**:
+
+1. AdGuard DNSの「ダッシュボード」を開きます。
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Linked IPv4 address_, click _Unlink IP address_.
+
+   ![Unassign a linked IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## 「ダイナミック（動的）DNS」が便利な理由
 
 デバイスがネットワークに接続するたびに、新しい動的IPアドレスが取得されます。 デバイスが切断されると、DHCPサーバーは解放されたIPアドレスをネットワーク上の別のデバイスに割り当てることができます。 つまり、動的IPアドレスは頻繁かつ予測不能に変更します。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
@@ -49,7 +60,7 @@ sidebar_position: 3
 1. まず、お使いのルーターの設定でDDNSがサポートされているかどうかを確認する必要があります：
 
    - _ルーター設定_ → _ネットワーク_ に移動します
-   - DDNSまたは_ダイナミックDNS_（動的DNS）セクションを見つけます。
+   - DDNSまた&#x306F;_&#x30C0;イナミックDNS_（動的DNS）セクションを見つけます。
    - それに移動し、設定が実際にサポートされていることを確認してください。 _以下は、見た目がどのようになるかの例です。実際の設定画面や項目は、ルーターによって若干異なる場合があります_：
 
    ![DDNS がサポートされている場合 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dynamic_dns.png)
@@ -95,7 +106,7 @@ macOS と Linux では、`cron` を使用するのが最も簡単な方法です
    - このジョブは5分ごとに実行されます。
 3. crontabを保存します。
 
-:::note 【重要】
+:::note Important
 
 - macOS と Linux に `curl` がインストールされていることを確認します。
 - 設定からアドレスをコピーし、`ServerID`と`UniqueKey`を置き換えることを忘れないでください。

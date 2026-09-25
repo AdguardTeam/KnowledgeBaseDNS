@@ -63,3 +63,22 @@ Pokud pravidla blokování vašeho filtru nejsou duplicitní s existujícími se
 
 Můžete si také vytvořit vlastní pravidla blokování.
 Více informací naleznete v článku [Uživatelská pravidla](/private-dns/setting-up-filtering/user-rules.md).
+
+## Vlastní seznamy zakázaných
+
+Pokud potřebujete přidat do AdGuard DNS konkrétní seznam zakázaných, můžete si jej stáhnout skrze URL.
+
+![Add custom blocklist](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+
+1. Otevřete hlavní panel a klikněte na _Servery_ v levém menu
+2. Vyberte _Můj server → Seznamy zakázaných_
+3. V sekci _Vlastní_ klikněte na _Přidat vlastní seznam zakázaných_
+4. Zadejte název seznamu zakázaných, jeho URL a volitelný popis, poté klikněte na _Přidat_
+
+:::note
+
+Každé předplatné tarifu má limit na celkový počet pravidel filtrování: Personal — 1000, Team — 5000, Enterprise — 100000. Toto omezení platí, protože seznamy zakázaných se stahují na servery DNS a povolení neomezené velikosti těchto seznamů by mohlo vést k přetížení serveru, což by mohlo způsobit problémy s výkonem.
+
+:::
+
+Pokud vlastní seznam zakázaných překročí limit, bude **automaticky deaktivován** a zobrazí se vám odpovídající oznámení. Chcete-li povolit nově přidaný seznam zakázaných, který překračuje limit pravidel, musíte buď odebrat jiné seznamy zakázaných, nebo přejít na tarif s vyšším limitem pravidel.

@@ -18,13 +18,21 @@ Sie können einen Verbindungslink erstellen und ihn in den Geräteeinstellungen 
 
 Nun können Sie Ihr Gerät automatisch mit dem Server verbinden, indem Sie eine spezielle Adresse erstellen, die den Gerätenamen, den Gerätetyp und die aktuelle Server-ID enthält. Lassen Sie uns untersuchen, wie diese Adressen aussehen und welche Regeln für ihre Erstellung gelten.
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Beispiele für automatische Verbindungsadressen
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — dies erstellt automatisch ein `Android`-Gerät mit dem `DNS-over-TLS` Protokoll namens `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — dies erstellt automatisch ein `Windows`-Gerät mit dem `DNS-over-HTTPS` Protokoll namens `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — dies wird automatisch ein `iOS`-Gerät mit dem `DNS-over-QUIC` Protokoll namens `Mary Sue` erstellen
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Konventionen zur Namensgebung
 
@@ -57,3 +65,9 @@ Wir haben eine Vorlage hinzugefügt, die einen Link für den spezifischen Gerät
 3. Klicken Sie auf _Link generieren_.
    ![Link generieren \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. Sie haben den Link erfolgreich generiert. Kopieren Sie jetzt die Serveradresse und verwenden Sie sie in einer der [AdGuard-Apps](https://adguard.com/welcome.html)
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

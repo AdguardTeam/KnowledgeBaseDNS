@@ -179,7 +179,7 @@ There is a number of proposed extensions that, if reasonably well supported by c
 
 ## AdGuard Home'u varsayılan DNS sunucusu olarak nasıl ayarlarım? {#defaultdns}
 
-_Başlarken_ sayfasındaki [_Cihazların Yapılandırılması_ bölümüne](getting-started.md#configure-devices) bakın.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Bilinen herhangi bir sınırlama var mı? {#limitations}
 
@@ -312,8 +312,8 @@ Ters proxy sunucunuzda TLS kullanıyorsanız, AdGuard Home'da TLS kullanmanıza 
 
 AdGuard Home'un gerçek istemci IP adresini içeren başlıkları dikkate almasını sağlamak için `trusted_proxies` parametresini HTTP proxy'nizin IP adreslerine ayarlayabilirsiniz. Daha fazla bilgi için [configuration][conf] ve [encryption][encr] sayfalarına bakın.
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Fedora'da `permission denied` hatalarını nasıl düzeltirim? {#fedora}
 
@@ -396,16 +396,16 @@ Düğme görüntülenmiyorsa veya otomatik güncelleme başarısız olduysa, ell
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. AdGuard Home arşivini geçici bir dizine çıkarın. Örneğin, arşivi `~/Downloads` dizininize indirdiyseniz ve `/tmp/` dizinine çıkarmak istiyorsanız:
+5. AdGuard Home arşivini geçici bir dizine çıkarın. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    macOS'ta aşağıdaki gibi bir şey yazın:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Eski AdGuard Home yürütülebilir dosyasını yenisiyle değiştirin. Çoğu Unix sisteminde komut aşağıdaki gibi görünecektir:

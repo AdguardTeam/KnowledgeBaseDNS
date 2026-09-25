@@ -21,6 +21,10 @@ To install AdGuard Home as a service, extract the archive, enter the `AdGuardHom
 
 - Users of **macOS 10.15 Catalina** and newer should place the AdGuard Home working directory inside the `/Applications` directory.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker and Snap
 
 We also provide an [official AdGuard Home docker image][docker] and an [official Snap Store package][snap] for experienced users.
@@ -47,7 +51,7 @@ Some other unofficial options include:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]:  https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]:       https://github.com/kongfl888/luci-app-adguardhome
-[platforms]:  https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]:  /adguard-home/platforms
 [releases]:   https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]:       https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ By default, the logs are written to `stderr` when you run AdGuard Home in a term
 
 You can change this behavior in the AdGuard Home [configuration file][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Updating {#update}
 
@@ -136,7 +140,7 @@ In case the button isn’t shown or an automatic update has failed, you can upda
 
 1. Restart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Docker, Home Assistant, and Snapcraft updates
 
@@ -156,7 +160,7 @@ To update AdGuard Home package without the need to use Web API run:
 
 This setup will automatically cover all devices connected to your home router, and you won’t need to configure each of them manually.
 
-1. Open the preferences for your router. Usually, you can access it from your browser via a URL, such as <http://192.168.0.1/> or <http://192.168.1.1/>. You may be prompted to enter a password. If you don’t remember it, you can often reset the password by pressing a button on the router itself, but be aware that if this procedure is chosen, you will probably lose the entire router configuration. If your router requires an app to set it up, please install the app on your phone or PC and use it to access the router’s settings.
+1. Open the preferences for your router. Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). You may be prompted to enter a password. If you don’t remember it, you can often reset the password by pressing a button on the router itself, but be aware that if this procedure is chosen, you will probably lose the entire router configuration. If your router requires an app to set it up, please install the app on your phone or PC and use it to access the router’s settings.
 
 1. Find the DHCP/DNS settings. Look for the DNS letters next to a field that allows two or three sets of numbers, each divided into four groups of one to three digits.
 

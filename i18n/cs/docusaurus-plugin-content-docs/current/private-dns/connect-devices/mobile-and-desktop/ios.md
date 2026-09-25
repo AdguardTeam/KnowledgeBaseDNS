@@ -67,7 +67,7 @@ Aplikace AdGuard umožňuje používat šifrovaný DNS, takže je ideální pro 
 8. Nově vytvořený server by se měl objevit na konci seznamu.
    ![Custom server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+Vše je hotovo! Your device is successfully connected to AdGuard DNS.
 
 ## Použití AdGuard VPN
 
@@ -91,7 +91,7 @@ Ne všechny služby VPN podporují šifrovaný DNS. Naše VPN však ano, takže 
 9. Nově vytvořený server by se měl objevit v části _Vlastní DNS servery_.
    ![Custom servers \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-Vše je hotovo! Vaše zařízení je úspěšně připojeno k AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Použití konfiguračního profilu
 

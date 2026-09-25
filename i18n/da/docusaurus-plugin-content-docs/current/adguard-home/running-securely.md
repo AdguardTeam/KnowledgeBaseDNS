@@ -33,7 +33,7 @@ Nederst på siden _Indstillinger_ → _DNS-indstillinger_ findes afsnittet _Adga
 
 For at aktivere Hvidlistetilstanden, angiv [ClientIDs][cid] (anbefales) eller IP-adresser for tilladte klienter i feltet _Tilladte klienter_.
 
-[cid]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[cid]: /adguard-home/clients#client-id
 
 ## Deaktivering af alm. DNS
 
@@ -93,3 +93,70 @@ chown root:root /opt/AdGuardHome/ /opt/AdGuardHome/AdGuardHome
 Princippet er det samme på Windows: Sørg for, at AdGuard-hjemmemappen, typisk `C:\Program Files\AdGuardHome`, samt den binære `AdGuardHome.exe`, har de tilladelser, som kun tillader alm. brugere at læse og eksekvere/opliste dem.
 
 Fremadrettet planlægger vi at frigive Windows-builds som MSI-installationsfiler, hvilket sikrer, at dette udføres automatisk.
+
+## Bekræft udgivelser {#verify-releases}
+
+Vi signerer de eksekverbare filer, vi bygger, så det kan bekræftes, at de er oprettet af os og ikke af nogen andre. En arkivfil vil indeholde en lille fil af typen `.sig` indeholdende signaturdataene. Udskifter nogen den binære fil i et arkiv, vil det stå klart, at det ikke er en officiel AdGuard-udgivelse.
+
+### Hvordan bekræftes det, at den eksekverbare fil er bygget af AdGuard? {#sådan-bekræftes-en-eksekverbar-fil}
+
+1. Udpak AdGuard Home-arkivfilen.
+
+2. Importér den offentlige AdGuard Home-nøgle fra nøgleserveren. For **de seneste udgivelser**, kør:
+
+   ```sh
+   gpg --keyserver 'keys.openpgp.org' --recv-key '28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6'
+   ```
+
+   Ovenstående kommando vil vise noget i stil med:
+
+   ```none
+   gpg: key 0FE641E7235E2EC6: public key "AdGuard <devteam@adguard.com>" imported
+   gpg: Total number processed: 1
+   gpg:               imported: 1
+   ```
+
+3. Bekræft.
+
+   - UNIX:
+
+     ```sh
+     gpg --verify AdGuardHome/AdGuardHome.sig
+     ```
+
+   - Windows (PGP skal muligvis installeres):
+
+     ```ps1
+     gpg --verify AdGuardHome/AdGuardHome.exe.sig
+     ```
+
+   Der vil ses noget i stil med:
+
+   ```none
+   gpg: assuming signed data in 'AdGuardHome/AdGuardHome'
+   gpg: Signature made Mon 15 Aug 2022 19:30:55 MSK
+   gpg:                using RSA key 28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6
+   gpg:                issuer "devteam@adguard.com"
+   gpg: Good signature from "AdGuard <devteam@adguard.com>" [ultimate]
+   ```
+
+   Tjek følgende:
+
+   - RSA-nøgle: Skal være `28645AC9776EC4C00BCE2AFC0FE641E7235E2EC6`;
+   - udstedernavn: Skal være `AdGuard`;
+   - E-mailadresse: Skal være `devteam@adguard.com`;
+
+   Der kan også forekomme flg. advarsel:
+
+   ```none
+   gpg: ADVARSEL: Nøglens bruger-ID er ikke certificeret med en betroet signatur!
+   gpg:          Der er ingen indikation af, at signaturen tilhører ejeren.
+   Primær nøgles fingeraftryk: 2864 5AC9 776E C4C0 0BCE  2AFC 0FE6 41E7 235E 2EC6
+   ```
+
+### Reproduktion af AdGuard Home-builds {#reproducing-builds}
+
+AdGuard Home anvender [reproducerbare builds][repr]. Se afsnittet `build-release.sh` i vores [build script-dokumentation][build].
+
+[build]: https://github.com/AdguardTeam/AdGuardHome/tree/master/scripts
+[repr]: https://reproducible-builds.org/

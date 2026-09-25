@@ -67,7 +67,7 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, iOS 기기
 8. 새로 생성한 서버가 목록 맨 아래에 나타납니다.
    ![사용자 정의 서버 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-기기가 AdGuard DNS에 성공적으로 연결되었습니다!
+기기가 Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN 사용
 
@@ -91,13 +91,13 @@ AdGuard 앱을 사용하면 암호화된 DNS를 사용할 수 있어, iOS 기기
 9. 새로 생성한 서버는 **사용자 정의 DNS 서버** 아래에 나타납니다.
    ![사용자 정의 서버 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-기기가 AdGuard DNS에 성공적으로 연결되었습니다!
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## 구성 프로필 사용
 
 iOS 기기 프로필은 Apple에서 '구성 프로필'이라고도 하며, iOS 기기에 수동으로 설치하거나 MDM 솔루션을 사용하여 배포할 수 있는 인증서 서명된 XML 파일입니다. 이 프로필은 기기에서 개인 AdGuard DNS를 구성하는 데에도 사용됩니다.
 
-:::note 중요
+:::note Important
 
 VPN을 사용 중인 경우, 구성 프로필은 무시됩니다.
 

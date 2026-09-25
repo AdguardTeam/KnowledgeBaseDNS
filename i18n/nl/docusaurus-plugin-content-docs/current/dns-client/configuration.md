@@ -3,15 +3,11 @@ title: Configuration file
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -38,7 +34,7 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
 
   :::note
 
@@ -70,6 +66,18 @@ The `server` object configures the handling of incoming requests. It has the fol
       - address: '[::1]:53'
   ```
 
+- `pending_requests`: Configuratie voor het afhandelen van dubbele gelijktijdige verzoeken die worden gebruikt om cache poisoning-aanvallen te beperken.
+
+  :::note
+
+  Dit object is beschikbaar sinds **v0.0.4**.
+
+  :::
+
+  - `enabled`: Als deze op waar staat, zal de server slechts een enkel verzoek uitvoeren voor elke unieke vraag.  Standaard is waar.
+
+    **Example:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
 The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
@@ -92,11 +100,42 @@ The `bootstrap` object configures the resolution of [upstream](#dns-upstream) se
 
 The `upstream` object configures the actual resolving of requests. It has the following properties:
 
-- `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
+- `groups`: The set of upstream servers keyed by the group’s name. Het heeft de volgende eigenschappen:
 
-  - `address`: The upstream server’s address.
+  - `address`: Het adres van de upstream server. Als `autodevice.enabled` voor deze groep op `true` is ingesteld, moet het adres een URL zijn met een van de schema's `https`, `tls` of `quic`.
 
     **Example:** `'8.8.8.8:53'`
+
+  - `autodevice`: Vertegenwoordigt een [automatische verbinding][automatic-connection] van een apparaat.
+
+    :::note
+
+    De autodevice-optie mag alleen worden gebruikt voor AdGuard DNS-upstreams. Anders kunnen we geen correcte werking garanderen.
+
+    :::
+
+    It has the following properties:
+
+    - `enabled`: Bepaalt of alle clients binnen de huidige groep automatisch kunnen worden verbonden.
+
+      :::info
+
+      De vooraf gedefinieerde `private`-groep moet `enabled` ingesteld hebben op false, aangezien deze nog geen autodevice ondersteunt.
+
+      :::
+
+    - `profile_id`: [ID van een profiel][profile-id], waarin nieuwe apparaten worden toegevoegd.
+
+    - `device_type`: Een [type apparaat][device-type] dat zal worden aangemaakt voor nieuwe clients.
+
+    **Property example:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
 
@@ -114,7 +153,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
     :::
 
-    **Property example:**
+    **Voorbeeld van eigenschap:**
 
     ```yaml
     'match':
@@ -126,7 +165,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. De `private`-groep wordt ook gebruikt om de HumanID te definiëren voor clients die zijn aangemaakt door de `autodevice`-functie. Als dit niet is gedefinieerd, wordt een alternatieve generatiemethode gebruikt, waarbij de HumanID wordt gevormd op basis van het IP-adres.
 
   :::
 
@@ -153,6 +192,10 @@ The `fallback` object configures the behavior of the DNS server in case of failu
 
   **Example:** `2s`
 
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
+
 ## `debug` {#debug}
 
 The `debug` object configures the debugging features. It has the following properties:
@@ -167,13 +210,13 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the
 
 - `enabled`: Whether or not the debug profiling is enabled.
 
-  **Example:** `true`
+  **Voorbeeld:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
 ## `log` {#log}
 
-The `log` object configures the logging. It has the following properties:
+The `log` object configures the logging. Het heeft de volgende eigenschappen:
 
 - `output`: The output to which logs are written.
 
@@ -235,4 +278,4 @@ The `log` object configures the logging. It has the following properties:
 
 - `verbose`: Specifies whether the log should be more informative.
 
-  **Example:** `false`
+  **Voorbeeld:** `false`

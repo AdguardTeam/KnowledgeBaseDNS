@@ -1,5 +1,5 @@
 - - -
-title: How to create your own DNS stamp for Secure DNS sidebar_position: 4
+title: How to generate your own DNS stamp for Secure DNS sidebar_position: 4
 - - -
 
 This guide will show you how to create your own DNS stamp for Secure DNS. Secure DNS is a service that enhances your internet security and privacy by encrypting your DNS queries. This prevents your queries from being intercepted or manipulated by malicious actors.
@@ -62,7 +62,7 @@ To fill in the **Hashes of the server’s certificate** field, you can use the f
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -outform der | openssl asn1parse -inform der -strparse 4 -noout -out - | openssl dgst -sha256
 ```
 
-:::caution
+::caution
 
 The result of the hash command may change over time as the server’s certificate is updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
 

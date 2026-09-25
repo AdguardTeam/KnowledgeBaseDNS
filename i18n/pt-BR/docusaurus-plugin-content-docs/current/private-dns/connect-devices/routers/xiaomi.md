@@ -9,7 +9,7 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 ## Use o painel de controle do seu roteador
 
-Use estas instruções se o seu roteador Keenetic não oferece suporte à configuração de DNS-over-HTTPS ou DNS-over-TLS:
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.31.1` ou no endereço de IP do seu roteador.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.

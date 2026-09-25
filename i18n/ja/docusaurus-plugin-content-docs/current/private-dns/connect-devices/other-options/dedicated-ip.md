@@ -30,3 +30,12 @@ If you have a Team or Enterprise subscription, you’ll receive several personal
 7. 専用IPv6アドレスを使用したい場合は、「_コピー_」をクリックします。
    ![Copy address \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. コピーした専用アドレスをデバイス設定に貼り付けます。
+
+## How to unassign a dedicated IP
+
+1. AdGuard DNSの「ダッシュボード」を開きます。
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

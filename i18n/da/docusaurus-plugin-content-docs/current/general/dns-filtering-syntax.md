@@ -19,13 +19,13 @@ AdGuard DNS-filtreringsregelsyntaks kan bruges til at gøre regler mere fleksibl
 
 Der er tre forskellige tilgange til at skrive værtsblokeringslister:
 
-- [Adblock-syntakstype][]: Den moderne tilgang til at skrive filtreringsregler baseret på brug af en delmænge af Adblock-regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
+- [Adblock-stil syntaks][]: Den moderne tilgang til at skrive filtreringsregler baseret på brug af en delmænge af Adblock-stil regelsyntaksen. På denne måde er blokeringslister kompatible med browser-adblockere.
 
 - [`/etc/hosts` syntaks](#etc-hosts-syntax): Den gamle, gennemprøvede tilgang, der bruger samme værtsfilsyntakser som operativsystemerne.
 
 - [Syntaks kun til domæner](#domains-only-syntax): En simpel liste over domænenavne.
 
-Opretter man en sortliste, anbefales brug af [Adblock-syntakstypen][]. Den har et par vigtige fordele ift. den gamle syntakstype:
+Såfrremt en sortliste oprettes, anbefales brug af [Adblock-stil syntaksen][]. Den har et par vigtige fordele ift. den gamle syntakstype:
 
 - **Blokeringslistestørrelse.** Ved at bruge mønstertilpasning kan man have én enkelt regel i stedet for hundredvis af `/etc/hosts`-poster.
 
@@ -134,6 +134,12 @@ Indeholder en regel en modifikator, der ikke er angivet i dette dokument, skal h
 :::
 
 #### `client` {#client-modifier}
+
+:::note
+
+Modifikatoren `client` kan kun bruges i AdGuard Home og AdGuard DNS.
+
+:::
 
 Modifikatoren `client` muliggør at angive de klienter, for hvilke reglen anvendes. Der er to hovedmåder at identificere en klient på:
 
@@ -271,7 +277,11 @@ SVAR:
 
 Svarmodifikatoren `dnsrewrite` muliggør at erstatte indholdet af svaret på DNS-forespørgslen for de matchende værter. Bemærk, at denne modifikator i AdGuard Home fungerer i alle regler, men kun i tilpassede regler i Private AdGuard DNS.
 
-**Regler med svarmodifikatoren `dnsrewrite` har højere prioritet end øvrige regler i AdGuard Home og AdGuard DNS.**
+:::note
+
+Regler med svarmodifikatoren `dnsrewrite` har højere prioritet end øvrige regler i AdGuard Home og AdGuard DNS.
+
+:::
 
 Svar på alle forespørgsler for en vært matchende en `dnsrewrite`-regel bliver erstattet. Svarsafsnittet i erstatningssvaret vil kun indeholde RR'er matchende forespørgslens forespørgselstype, og muligvis CNAME RR'er. Bemærk, at dette betyder, at svar på nogle forespørgsler kan blive tomme (`NODATA`), hvis værten matcher en `dnsrewrite`-regel.
 
@@ -423,7 +433,11 @@ Reglerne med modifikatoren `badfilter` deaktiverer andre basisregler, til hvilke
 
 #### `ctag` {#ctag-modifier}
 
-**Modifikatoren `ctag` kan kun bruges i AdGuard Home.**
+:::note
+
+Modifikatoren `ctag` kan kun bruges i AdGuard Home.
+
+:::
 
 Det muliggør blokering af kun domæner til bestemte typer af DNS-klienttags. Tags kan tildeles klienter via AdGuard Home-UI'en. Fremadrettet er det planen at tildele tags automatisk ved at analysere hver klients adfærd.
 
@@ -479,6 +493,95 @@ Oversigt over gyldige tags:
     - `user_regular`: Almindelige brugere.
     - `user_child`: Børn.
 
+#### `respgeo` {#respgeo-modifier}
+
+:::note
+
+Modifikatoren `respgeo` kan kun bruges i AdGuard DNS.
+
+:::
+
+Modifikatoren `respgeo` muliggør anvendelse af regler baseret på landet eller ASN for den i DNS-svaret returnerede IP-adresse. Den tjekker **destinations**-IP-adressen — den IP-adresse, domænet opløses til. Den tjekker **ikke** IP-adressen, landet eller ASN for brugeren, enheden eller DNS-klienten.
+
+##### Blokering efter svarland
+
+Værdien af modifikatoren skal være en tobogstavs landekode i ISO 3166-1 alpha-2-format. Der kan også bruges `--` til at matche svar, hvori landet ikke kunne bestemmes.
+
+**Eksempler:**
+
+- `||*^$respgeo=US`: blokér domæner, hvis IP-adressen i DNS-svaret er tilknyttet USA.
+- `||*^$respgeo=FR|DE`: blokér domæner, hvis IP-adressen i DNS-svaret er tilknyttet Frankrig eller Tyskland.
+- `||*^$respgeo=--`: blokér domæner, hvis IP-adressens land i DNS-svaret er ukendt.
+- `||*^$respgeo=~--`: blokér domæner, hvis IP-adressens land i DNS-svaret er kendt.
+- `@@||whitehouse.gov^`: tillad `whitehouse.gov`, selv hvis det er blokeret af en jokertegnsregel med modifikatoren `respgeo`.
+- `@@||example.org^$respgeo=US`: tillad `example.org`, hvis IP-adressen i DNS-svaret er tilknyttet USA.
+- `||whitehouse.gov^$respgeo=US`: blokerer kun `whitehouse.gov`, hvis IP-adressen i DNS-svaret er tilknyttet USA.
+- I dette eksempel:
+
+  ```none
+  ||whitehouse.gov^
+  @@||whitehouse.gov^$respgeo=US
+  ```
+
+  `@@||whitehouse.gov^$respgeo=US` vil **ikke** tillade `whitehouse.gov`, da den første regel blokerer forespørgslen ved at inspicere forespørgselsdata, mens den anden forsøger at tillade den ved at inspicere svaret.
+
+Der kan bruges `~` til at invertere betingelsen:
+
+- `||*^$respgeo=~DE`: blokér domæner, hvis IP-adressen i DNS-svaret **ikke** er tilknyttet Tyskland.
+
+**Begrænsninger**
+
+Modifikatoren `respgeo` bruger en enkelt beregnet IP-adresse og land iht. den aktuelle logik for *Forespørgselslog*. Hvis et domæne opløses til flere IP-adresser eller lande, analyserer AdGuard DNS ikke alle returnerede IP-adresser.
+
+Da mange domæner bruger CDN'er, belastningsfordeling eller geografisk distribueret infrastruktur, kan det registrerede land ændre sig over tid.
+
+Hvis landet ikke kan bestemmes, vil GeoIP-betingelsen ikke matche. Brug `respgeo=--` til at matche svar med et ukendt land.
+
+Regler med modifikatoren `respgeo` vises i *Forespørgselslog* som almindelige regler.
+
+##### Blokering efter ASN
+
+Modifikatoren `respgeo` kan også bruges til at anvende regler baseret på ASN for den IP-adresse, der returneres i DNS-svaret.
+
+ASN står for **Autonomous System Number**. Det identificerer et autonomt system — et netværk drevet af en ISP, hostingudbyder, cloududbyder, virksomhed eller anden organisation.
+
+Denne modifikator tjekker **destinations-ASN** — det ASN, der er tilknyttet den IP-adresse, domænet opløses til. Den tjekker **ikke** brugerens, enhedens eller DNS-klientens ASN.
+
+Værdien af modifikatoren skal være et ASN i formatet `AS<nummer>`, f.eks. `AS15169`.
+
+**Eksempler:**
+
+- `||*^$respgeo=AS15169`: blokér domæner, hvis IP-adressen i DNS-svaret tilhører ASN AS15169.
+- `||*^$respgeo=AS15169|AS8075`: blokér domæner, hvis IP-adressen i DNS-svaret tilhører ASN AS15169 eller AS8075.
+- `||*^$respgeo=AS--`: blokér domæner, hvis IP-adressens ASN i DNS-svaret er ukendt.
+- `||*^$respgeo=~AS--`: blokér domæner, hvis IP-adressens ASN i DNS-svaret er kendt.
+- `@@||google.com^$respgeo=AS15169`: tillad `google.com`, hvis IP-adressen i DNS-svaret tilhører ASN AS15169.
+- `||google.com^$respgeo=AS15169`: blokér kun `google.com`, hvis IP-adressen i DNS-svaret tilhører ASN AS15169.
+- I dette eksempel:
+
+  ```none
+  ||google.com^
+  @@||google.com^$respgeo=AS15169
+  ```
+
+  `@@||google.com^$respgeo=AS15169` vil **ikke** tillade `google.com`, da den første regel blokerer forespørgslen ved at inspicere forespørgselsdata, mens den anden forsøger at tillade den ved at inspicere svaret.
+
+Der kan bruges `~` til at invertere betingelsen:
+
+- `||*^$respgeo=~AS15169`: blokér domæner, hvis IP-adressen i DNS-svaret **ikke** tilhører ASN AS15169.
+
+**Begrænsninger**
+
+Modifikatoren `respgeo` bruger en enkelt beregnet IP-adresse og ASN iht. den aktuelle logik for *Forespørgselslog*. Hvis et domæne opløses til flere IP-adresser eller ASN'er, analyserer AdGuard DNS ikke alle returnerede ASN'er.
+
+Store CDN-, cloud- eller hosting-ASN'er kan indeholde mange urelaterede websteder. Blokering af et ASN kan derfor påvirke flere domæner end forventet.
+
+Kan ASN'et ikke bestemmes, vil ASN-betingelsen ikke matche. Benyt `respgeo=AS--` til at matche svar med et ukendt ASN.
+
+ASN korresponderer ikke altid med en bestemt virksomhed/produkt/tjeneste. Det identificerer kun det netværk, der er tilknyttet den opløste IP-adresse.
+
+Regler med modifikatoren `respgeo` vises i *Forespørgselslog* som almindelige regler.
+
 ## `/etc/hosts`-syntakstype {#etc-hosts-syntax}
 
 For hver vært skal én enkelt linje fremgå med flg. oplysninger:
@@ -515,7 +618,7 @@ eksempel.org
 eksempel.net # dette er også en kommentar
 ```
 
-Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-syntakstype][] regel.
+Er en streng ikke er et gyldigt domæne (f.eks. `*.eksempel.org`), betragter AdGuard Home den som en [Adblock-stil syntaks][] regel.
 
 ## Hostliste-kompiler {#hostlist-compiler}
 
@@ -532,12 +635,17 @@ Hvad den er i stand til:
 <!-- local links -->
 
 
+
 <!-- external links -->
+
 [hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-[Adblock-syntakstype]: #adblock-style-syntax
-[Adblock-syntakstypen]: #adblock-style-syntax
+
+[Adblock-stil syntaks]: #adblock-style-syntax
+
+[Adblock-stil syntaksen]: #adblock-style-syntax
 [`klient`]: #client-modifier
 [`dnstype`]: #dnstype-modifier
+
 [AdGuard DNS-filtre]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist-kompiler]: https://github.com/AdguardTeam/HostlistCompiler
 [Hostlist-kompileren]: https://github.com/AdguardTeam/HostlistCompiler

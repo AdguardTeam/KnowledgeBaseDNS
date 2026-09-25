@@ -7,18 +7,30 @@ AdGuard DNS-sikkerhedsindstillingerne er et sæt opsætninger designet til at be
 
 Her kan man vælge, hvilke metoder, som skal bruges, til at beskytte sig selv mod angribere. Dette vil beskytte mod at besøge falske eller phishing-websteder samt mod potentielle lækager af sensitive data.
 
-### Blokér skadelige, phishing- og svindeldomæner
+## Blokér skadelige, phishing- og svindeldomæner
 
 Til dato har vi kategoriseret flere end 15 millioner websteder og opbygget en database med 1,5 millioner websteder kendt for phishing og malware. Via denne database tjekker AdGuard de websteder, som besøges, for at beskytte mod onlinetrusler.
 
-### Blokér nyregistrerede domæner
+## Blokér nyregistrerede domæner
 
 Svindlere bruger ofte nyligt registrerede domæner til phishing og svigagtige aktiviteter. Af denne grund har vi udviklet et specialfilter, der detekterer et domænes levetid, og blokerer det, hvis det er oprettet for nylig.
 Nogle gange forårsager dette falske positiver, men statistikker viser, at i de fleste tilfælde beskytter denne indstilling stadig vores brugere mod at miste fortrolige data.
 
-### Blokér skadelige domæner med sortlister
+## Blokér skadelige domæner med sortlister
 
 AdGuard DNS understøtter tilføjelse af tredjeparts blokeringsfiltre.
 Aktivér filtre markeret `sikkerhed` for ekstra beskyttelse.
 
-For mere viden om Sortlister [se separat artikel](/private-dns/setting-up-filtering/blocklists.md).
+For yderligere viden om Sortlister [se den separate artikel](/private-dns/setting-up-filtering/blocklists.md).
+
+## Beskyttelse mod typosquatting-domæner
+
+AdGuard DNS detekterer og blokerer misteænkelige domeæner, som ligner hinanden, på DNS-niveau ved at analysere mønstre, såsom almindelige tastefejl, ombyttede tegn og manglende/ekstra bogstaver. Den blokerer forespørgslen, allerede før en forbindelse er etableret.
+
+Da denne funktion er afhængig af lighedsdetektering, kan legitime domæner, som ligner populære websteder, lejlighedsvis blive markeret. Skulle dette ske, kan domænet føjes til hvidlisten ved at gå til [_Servere_](https://adguard-dns.io/dashboard/servers) ⭢ _Serverindstillinger_ ⭢ _Brugerregler_ ⭢ _Tilføj ny regel_.
+
+## Beskyttelse mod IDN-homografangreb
+
+Nogle phishing-websteder bruger tegn med høj lighedsgrad fra forskellige alfabeter til at udgive sig for legitime domæner — f.eks. ved at erstatte et kyrillisk “o” med et latinsk. Denne teknik er kendt som et IDN (Internationalized Domain Name) homografangreb.
+
+AdGuard DNS detekterer og blokerer sådanne domæner på DNS-niveau. Denne funktion er deaktiveret som standard. For at aktivere den, gå til _Sikkerhed_ → _Beskyttelse mod IDN-homografangreb_.

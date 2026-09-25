@@ -179,7 +179,7 @@ AdGuard Home 检查 DNS 请求和 DNS 响应，以防止称为 [CNAME 伪装][cn
 
 ## 如何将 AdGuard Home 设置为默认 DNS 服务器？ {#defaultdns}
 
-请参阅「入门」页面上的[「配置设备」部分](getting-started.md#configure-devices)。
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## 是否有任何已知限制？ {#limitations}
 
@@ -298,7 +298,7 @@ DOMAIN {
 
 :::note
 
-请不要在 Apache 反向 HTTP 代理中使用子目录。  It’s a known issue ([#6604]) that Apache handles relative redirects differently than other web servers. 这会导致 AdGuard Home 网络界面出现问题。
+请不要在 Apache 反向 HTTP 代理中使用子目录。  这是一个已知问题 ([#6604])，Apache 处理相对重定向的方式与其他网络服务器不同。 这会导致 AdGuard Home 网络界面出现问题。
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
@@ -312,8 +312,8 @@ DOMAIN {
 
 用户可以将参数 `trust_proxies` 设置为 HTTP 代理的 IP 地址 (可以是多个)，以使 AdGuard Home 考虑包含真实客户端 IP 地址的标头。 请参阅[配置][conf]和[加密][encr]页面了解更多信息。
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## 如何修复 Fedora 上的 `permission denied` 错误？ {#fedora}
 
@@ -396,16 +396,16 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. 将 AdGuard Home 压缩包解压到临时目录。 例如，如果您将压缩包下载到 `~/Downloads` 目录，并希望将其解压缩到 `/tmp/`：
+5. 将 AdGuard Home 压缩包解压到临时目录。 For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    在 macOS 上，键入如下内容：
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. 将旧的 AdGuard Home 可执行文件替换为新的可执行文件。 在大多数 Unix 系统上，该命令如下所示：

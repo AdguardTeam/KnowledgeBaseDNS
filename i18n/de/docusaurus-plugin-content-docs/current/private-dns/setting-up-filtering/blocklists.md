@@ -26,25 +26,25 @@ Um die Blocklisten zu aktivieren:
 
 Eine Gruppe von Filtern, die Listen zum Blockieren von Werbung und Tracker-Domains enthält.
 
-![Allgemeine Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general.png)
+![Allgemeine Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/general_de.png)
 
 ### Regional
 
 Eine Gruppe von Filtern, die regionale Listen zum Blockieren von Domains in bestimmten Sprachen enthält.
 
-![Regionale Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional.png)
+![Regionale Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/regional_de.png)
 
 ### Sicherheit
 
 Eine Gruppe von Filtern mit Regeln zum Blockieren betrügerischer Websites und Phishing-Domains.
 
-![Sicherheitsblocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security.png)
+![Sicherheitsblocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/security_de.png)
 
 ### Sonstiges
 
 Blocklisten mit verschiedenen Regeln von Drittentwicklern.
 
-![Sonstige Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other.png)
+![Sonstige Blocklisten \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/blocklists/other_de.png)
 
 ## Filter hinzufügen
 
@@ -63,3 +63,22 @@ Wenn die Sperrregeln Ihres Filters nicht mit den bestehenden Listen übereinstim
 
 Sie können auch Ihre eigenen Sperrregeln erstellen.
 Weitere Informationen finden Sie im [Artikel zu Benutzerregeln](/private-dns/setting-up-filtering/user-rules.md).
+
+## Benutzerdefinierte Blocklisten
+
+Wenn Sie eine bestimmte Blockliste zu AdGuard DNS hinzufügen möchten, können Sie diese über eine URL herunterladen.
+
+![Benutzerdefinierte Blockliste hinzufügen](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_de.png)
+
+1. Öffnen Sie die Übersicht und klicken Sie im Menü auf der linken Seite auf _Server_
+2. Wählen Sie _Mein Server → Blocklisten_
+3. Klicken Sie im Abschnitt _Benutzerdefinierte_ auf _Blockliste hinzufügen_
+4. Geben Sie den Namen der Blockliste, deren URL und eine optionale Beschreibung ein und klicken Sie dann auf _Hinzufügen_
+
+:::note
+
+Jedes Abonnement hat eine Begrenzung hinsichtlich der Gesamtzahl der Filterregeln: Einzellizenz – 1.000, Team – 5.000, Enterprise – 100.000. Diese Beschränkung besteht, weil Blocklisten auf DNS-Server heruntergeladen werden und eine unbegrenzte Größe der Blocklisten zu einer Überlastung der Server führen könnte, was möglicherweise Leistungsprobleme verursachen könnte.
+
+:::
+
+Wenn eine benutzerdefinierte Blockliste das Limit überschreitet, wird sie **automatisch deaktiviert** und Sie erhalten eine entsprechende Benachrichtigung. Um eine neu hinzugefügte Blockliste zu aktivieren, die die Anzahl der Regeln überschreitet, müssen Sie entweder andere Blocklisten entfernen oder einen Wechsel auf ein Abonnement mit einer höheren Anzahl an Regeln vornehmen.

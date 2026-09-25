@@ -5,7 +5,7 @@ sidebar_position: 5
 
 To connect a Windows device to AdGuard DNS, first add it to _Dashboard_:
 
-1. _ダッシュボード_に移動し、「_新しいデバイスを接続_」をクリックします。
+1. _ダッシュボー&#x30C9;_&#x306B;移動し、「_新しいデバイスを接続_」をクリックします。
 2. 「_デバイスタイプ_」のドロップダウンメニューから Windows を選択してください。
 3. デバイスに名前を付けます。
    ![Connecting_device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/choose_windows.png)
@@ -34,7 +34,7 @@ The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdG
 9. 追加したDNSサーバーは、「カスタムDNSサーバー」リストの一番下に現れます。
    ![Custom DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN を使用する
 
@@ -54,7 +54,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
 7. 「_保存して選択する_」をクリックします。
    ![Save and select \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configure via Windows settings
 
@@ -86,7 +86,7 @@ More details can be found in [different article](/dns-client/overview/).
 
 ## プレーンDNSを構成する
 
-DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを選ぶことができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
 - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -3,15 +3,11 @@ title: Konfigurační soubor
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 Úplný příklad konfiguračního souboru [YAML][yaml] s komentáři najdete v souboru [`config.dist.yml`][dist].
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -38,7 +34,7 @@ Objekt `cache` konfiguruje ukládání výsledků DNS dotazů do mezipaměti. Vy
 
 Objekt `server` konfiguruje zpracování příchozích požadavků. Vyznačuje se těmito vlastnostmi:
 
-- `bind_retry`: Konfigurace mechanismu opakování pro vazbu na adresy pro naslouchání. To je užitečné, pokud je server spuštěn dříve, než je síť připravena, a adresy ještě nejsou k dispozici, jako je tomu v některých edicích systému Windows při instalaci jako systémová služba.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. To je užitečné, pokud je server spuštěn dříve, než je síť připravena, a adresy ještě nejsou k dispozici, jako je tomu v některých edicích systému Windows při instalaci jako systémová služba.
 
   :::note
 
@@ -70,6 +66,18 @@ Objekt `server` konfiguruje zpracování příchozích požadavků. Vyznačuje s
       - address: '[::1]:53'
   ```
 
+- `pending_requests`: Konfigurace pro zpracování duplicitních souběžných požadavků používaná k omezení útoků typu cache poisoning.
+
+  :::note
+
+  Tento objekt je k dispozici od **v0.0.4**.
+
+  :::
+
+  - `enabled`: Pokud je hodnota true, server provede pouze jeden požadavek pro každou jedinečnou otázku.  Výchozí hodnota je true.
+
+    **Příklad:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
 Objekt `bootstrap` konfiguruje překlad adres serverů [upstream](#dns-upstream). Vyznačuje se těmito vlastnostmi:
@@ -94,9 +102,40 @@ Objekt `upstream` konfiguruje skutečné řešení požadavků. Vyznačuje se t�
 
 - `groups`: Sada odchozích serverů s klíčem podle názvu skupiny. Vyznačuje se těmito vlastnostmi:
 
-  - `address`: Adresa odchozího serveru.
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **Příklad:** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    Vyznačuje se těmito vlastnostmi:
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **Příklad vlastnosti:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: Seznam kritérií, podle kterých se má požadavek porovnat. Každá položka může obsahovat následující vlastnosti:
 
@@ -126,7 +165,7 @@ Objekt `upstream` konfiguruje skutečné řešení požadavků. Vyznačuje se t�
 
   :::info
 
-  `groups` by měla obsahovat alespoň jednu položku s názvem `default` a volitelně jednu položku s názvem `private`, obě by neměly mít vlastnost `match`.
+  `groups` by měla obsahovat alespoň jednu položku s názvem `default` a volitelně jednu položku s názvem `private`, obě by neměly mít vlastnost `match`. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -152,6 +191,10 @@ Objekt `fallback` konfiguruje chování DNS serveru v případě selhání. Vyzn
 - `timeout`: Časový limit pro záložní požadavky DNS jako doba trvání čitelná pro člověka.
 
   **Příklad:** `2s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

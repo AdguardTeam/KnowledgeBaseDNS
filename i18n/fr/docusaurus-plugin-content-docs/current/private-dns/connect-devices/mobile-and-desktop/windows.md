@@ -34,7 +34,7 @@ L'application AdGuard vous permet d'utiliser DNS chiffré, ce qui est parfait po
 9. Le serveur DNS que vous avez ajouté apparaîtra en bas de la liste des _Serveurs DNS personnalisés_.
    ![Serveurs DNS personnalisés \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Utilisez AdGuard VPN
 
@@ -54,7 +54,7 @@ Tous les services VPN ne prennent pas en charge DNS chiffré. Cependant, notre V
 7. Cliquez sur _Enregistrer et sélectionner_.
    ![Enregistrer et sélectionner \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-C'est fait ! Votre dispositif est maintenant connecté à AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Configuration via les paramètres Windows
 
@@ -86,7 +86,7 @@ Des détails supplémentaires peuvent être trouvés dans [un article différent
 
 ## Configuration du DNS brut
 
-Si vous préférez ne pas utiliser de logiciel supplémentaire pour la configuration DNS, vous pouvez opter pour le DNS non chiffré. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
 
 - [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)

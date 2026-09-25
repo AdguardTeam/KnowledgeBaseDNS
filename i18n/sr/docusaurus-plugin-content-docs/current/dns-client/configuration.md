@@ -3,15 +3,11 @@ title: Configuration file
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -38,7 +34,7 @@ The `cache` object configures caching the results of querying DNS. It has the fo
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
 
   :::note
 
@@ -70,6 +66,18 @@ The `server` object configures the handling of incoming requests. It has the fol
       - address: '[::1]:53'
   ```
 
+- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+
+  :::note
+
+  This object is available since **v0.0.4**.
+
+  :::
+
+  - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+
+    **Example:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
 The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
@@ -94,9 +102,40 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
 - `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
 
-  - `address`: The upstream server’s address.
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **Example:** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    It has the following properties:
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **Property example:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
 
@@ -126,7 +165,7 @@ The `upstream` object configures the actual resolving of requests. It has the fo
 
   :::info
 
-  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -152,6 +191,10 @@ The `fallback` object configures the behavior of the DNS server in case of failu
 - `timeout`: The timeout for fallback DNS requests as a human-readable duration.
 
   **Example:** `2s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 

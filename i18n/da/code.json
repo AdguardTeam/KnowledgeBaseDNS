@@ -1,4 +1,28 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS Vidensbase",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "Vidensbase til AdGuard DNS",
+    "description": "The site tagline used in meta description"
+  },
+  "apiChangelog.loading": {
+    "message": "Indlæser ændringslog…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "Mislykkedes at indlæse ændringsloggen. Originalen kan ses på {link}.",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "Versioner",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "Indlæser API-reference…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "Side ikke fundet",
     "description": "The title of the 404 page"
@@ -165,7 +189,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "Forsøg igen",
-    "description": "The label of the button to try again when the page crashed"
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Rul op til toppen",
@@ -185,7 +209,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "Skift mellem mørk og lys tilstand (aktuelt {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "mørk tilstand",
@@ -427,5 +451,69 @@
   "theme.SearchModal.placeholder": {
     "message": "Søg i dokumenter",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "systemtilstand",
+    "description": "The name for the system color mode"
+  },
+  "theme.admonition.warning": {
+    "message": "advarsel",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Udvid sidebarkategorien '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Skjul sidebarkategorien '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(åbn på ny fane)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Udvid rullemenuen",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Skjul rullemenuen",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Forfattere",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Vis alle forfattere",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Denne forfatter har endnu ikke skrevet nogen indlæg.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Ikke-offentlig side",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Denne side er ikke offentlig. Søgemaskiner indekserer den ikke, og kun brugere med et direkte link kan tilgå den.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Kladdeside",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Dette er en sidekladde. Den er kun synlig i udviklingsfasen og ekskluderes fra produktionsbuildet.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 emne|{count} emner",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   }
 }

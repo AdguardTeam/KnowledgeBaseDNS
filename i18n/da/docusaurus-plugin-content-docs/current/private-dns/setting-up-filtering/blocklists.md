@@ -63,3 +63,22 @@ Dublerer ens eget filters blokeringsregler ikke de eksisterende lister, føjes f
 
 Man kan også oprette egne blokeringsregler.
 Læs mere herom i [artiklen Brugerregler](/private-dns/setting-up-filtering/user-rules.md).
+
+## Tilpassede sortlister
+
+Ved behov for, at en bestemt sortliste føjes til AdGuard DNS, kan denne downloades via URL.
+
+![Tilføj tilpasset sortliste](https://cdn.adguardvpn.com/content/release_notes/dns/v2-20/add_blocklists_en.png)
+
+1. Åbn kontrolpanelet og klik på _Servere_ i menuen til venstre
+2. Vælg _Min server → Sortlister_
+3. I afsnittet _Tilpasset_, klik på _Tilføj tilpasset sortliste_
+4. Angiv sortlistenavnet, dens URL samt en valgfri beskrivelse, og klik dernæst på _Tilføj_
+
+:::note
+
+Hver abonnementstype har en kvote for det samlede antal filtreringsregler: Personal — 1K, Team — 5K, Enterprise — 100K. Denne kvote er indført, da sortlister downloades til DNS-servere, hvorfor ubegrænsede sortlistestørrelser ville kunne føre til serveroverbelastninger og potentielt forårsage ydeevneproblemer.
+
+:::
+
+Overstiger en tilpasset sortliste kvoten, bliver den **slået fra automatisk**, og en notifikation herom vises. For at aktivere en nyligt tilføjet sortliste, der overstiger regelkvoten, skal der enten fjernes andre sortlister eller opgraderes til en abonnementstype med en højere regelkvote.

@@ -30,3 +30,12 @@ Vejledningen nedenfor forklarer, hvordan man tilslutter en dedikeret IP til enhe
 7. Ønskes en dedikeret IPv6-adresse brugt, klik på _Kopiér_.
    ![Kopér adresse \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. Kopiér og indsæt den valgte dedikerede adresse i enhedens opsætninger.
+
+## Sådan fjernes tildelingen af en dedikeret IP
+
+1. Åbn Kontrolpanel.
+2. Gå til enhedsindstillingerne.
+3. Gå til _Almindelige DNS-serveradresser_.
+4. Klik under _Dedikerede IPv4 adresser_ på _Håndter_.
+5. Klik i pop op'en på _Fjern tildeling_ ved siden af den IP, der skal fjernes.
+   ![Fjern tildeling \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

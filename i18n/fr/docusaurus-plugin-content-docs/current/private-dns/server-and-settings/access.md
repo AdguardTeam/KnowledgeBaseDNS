@@ -7,7 +7,7 @@ En configurant les paramètres d'accès, vous pouvez protéger votre AdGuard DNS
 
 Les requêtes bloquées ne seront pas affichées dans le Journal des requêtes et ne sont pas comptées dans la limite totale.
 
-## Comment le mettre en place
+## How to set it up
 
 ### Clients autorisés
 

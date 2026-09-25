@@ -21,6 +21,10 @@ sidebar_position: 2
 
 - **macOS 10.15 Catalina** 及更新版本的用户应将 AdGuard Home 工作目录放在 `/Applications` 目录中。
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker 和 Snap
 
 我们还为有经验的用户提供[官方 AdGuard Home Docker 镜像][docker]和[官方 Snap 商店软件包][snap]。
@@ -47,7 +51,7 @@ sidebar_position: 2
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ sudo ./AdGuardHome -s install
 
 您可以在 AdGuard Home [配置文件][conf]中更改此行为。
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## 更新 {#update}
 
@@ -156,7 +160,7 @@ Docker 、Hass.io/Home Assistant 和 Snapcraft 安装的自动更新已禁用。
 
 此设置将自动覆盖连接到您家用路由器的所有设备，无需手动配置每台设备。
 
-1. 打开路由器的首选项。 通常，可以通过 URL，例如 <http://192.168.0.1/> 或 <http://192.168.1.1/>，从浏览器访问它。 系统可能会提示您输入密码。 如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。 如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
+1. 打开路由器的首选项。 Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). 系统可能会提示您输入密码。 如果您忘记密码，通常可以按下路由器本身上的按钮来重置密码。请注意，如果决定重置密码，您可能会丢失整个路由器配置。 如果您的路由器需要应用程序来设置它，请在手机或 PC 上安装该应用程序并使用它来访问路由器的设置。
 
 2. 找到 DHCP/DNS 设置。 在允许两组或三组数字的字段旁边查找 DNS 字母，每组数字分为四组，每组一到三位数字。
 

@@ -3,15 +3,11 @@ title: 配置文件
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
+See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-完整的 [YAML][yaml] 配置文件示例请参考配置文件 [`config.dist.yml`][dist]。
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
-
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -32,33 +28,33 @@ sidebar_position: 2
 
 - `client_size`：指定每个已配置客户端地址或子网的 DNS 结果缓存的最大尺寸（人类可读的数据量格式）。 如果 `enabled` 为 `true`，该值必须大于零。
 
-  **Example:** `4MB`
+  **示例**：` 4MB`
 
 ### `server` {#dns-server}
 
 `server` 对象配置处理传入请求。 它包含以下属性：
 
-- `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. 这适用于当服务器在网络准备就绪之前启动且地址尚不可用的情况，例如在某些版本的 Windows 上作为系统服务安装时。
 
   :::note
 
-  This object is available since **v0.0.3**.
+  此对象自 **v0.0.3** 起可用。
 
   :::
 
   它包含以下属性：
 
-  - `enabled`: Whether bind retry is enabled or not.
+  - `enabled`：是否启用绑定重试。
 
     **示例：** `true`
 
-  - `interval`: The interval between retries as a human-readable duration.
+  - `interval`：重试间隔时间，以人类可读取的时间长度表示。
 
-    **Example:** `1s`
+    **示例**：`1s`
 
-  - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+  - `count`：第一次失败后的最大尝试次数。 也就是说，如果 `count` 为 `4`，则总尝试次数将为五次。
 
-    **Example:** `4`
+    **示例**：`4`
 
 - `listen_addresses`：客户端监听的地址和端口集合。
 
@@ -69,6 +65,18 @@ sidebar_position: 2
       - address: '127.0.0.1:53'
       - address: '[::1]:53'
   ```
+
+- `pending_requests`：用于处理重复的同时请求的配置，以缓解缓存中毒攻击。
+
+  :::note
+
+  该对象自版本 **v0.0.4** 起可用。
+
+  :::
+
+  - `enabled`：如果为真，服务器将只对每个唯一问题执行一次请求。  默认值为「true」。
+
+    **示例：** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 
@@ -86,7 +94,7 @@ sidebar_position: 2
 
 - `timeout`：指定引导 DNS 请求的超时时间，使用人类可读的数据量格式。
 
-  **示例：** `2s`
+  **示例**：`2s`
 
 ### `upstream` {#dns-upstream}
 
@@ -94,9 +102,40 @@ sidebar_position: 2
 
 - `groups`：使用服务器组名称作为键值定义了一组上游服务器集合。 它包含以下属性：
 
-  - `address`：指定上游服务器的地址和端口。
+  - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
     **示例：** `'8.8.8.8:53'`
+
+  - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
+
+    :::note
+
+    The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
+
+    :::
+
+    它包含以下属性：
+
+    - `enabled`: Defines whether all clients within the current group can be connected automatically.
+
+      :::info
+
+      The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
+
+      :::
+
+    - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
+
+    - `device_type`: A [type of device][device-type] which will be created for new clients.
+
+    **属性示例：**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: 用于定义将哪些请求路由到该服务器组进行解析。 每个列表项可以包含以下属性：
 
@@ -126,7 +165,7 @@ sidebar_position: 2
 
   :::info
 
-  `groups` 配置中至少需要包含一个名为 `default` 的条目，并且可以 (可选) 包含一个名为 `private` 的条目，两个条目都不应该包含 `match` 属性。
+  `groups` 配置中至少需要包含一个名为 `default` 的条目，并且可以 (可选) 包含一个名为 `private` 的条目，两个条目都不应该包含 `match` 属性。 The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
 
   :::
 
@@ -152,6 +191,10 @@ sidebar_position: 2
 - `timeout`：指定备用 DNS 请求的超时时间，使用人类可读的数据量格式。
 
   **示例：** `2s`
+
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 
@@ -235,4 +278,4 @@ sidebar_position: 2
 
 - `verbose`：指定是否启用详细日志输出。
 
-  **示例：**`false`
+  **示例：** `false`

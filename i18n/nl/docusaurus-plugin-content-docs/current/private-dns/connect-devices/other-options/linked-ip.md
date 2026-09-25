@@ -30,6 +30,17 @@ De volgende instructies leggen uit hoe je verbinding kunt maken met het apparaat
 
    ![Gekoppelde IP \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_step4.png)
 
+## Hoe een gekoppeld IP-adres te ontkoppelen
+
+De volgende aanwijzingen beschrijven hoe je **je gekoppelde IP-adres kunt ontkoppelen**:
+
+1. Open Dashboard.
+2. Ga naar de instellingen van je apparaat.
+3. Ga naar _Standaard DNS-serveradressen_.
+4. Onder _Gekoppeld IPv4-adres_, klik op _IP-adres ontkoppelen_.
+
+   ![Een gekoppeld IP-adres ontkoppelen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/linked_unassign1.png)
+
 ## Dynamische DNS: waarom het nuttig is
 
 Elke keer dat een apparaat verbinding maakt met het netwerk, krijgt het een nieuw dynamisch IP-adres. Wanneer de verbinding met een apparaat wordt verbroken, kan de DHCP-server het vrijgegeven IP-adres toewijzen aan een ander apparaat in het netwerk. Dit betekent dat dynamische IP-adressen vaak en onvoorspelbaar veranderen. Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.

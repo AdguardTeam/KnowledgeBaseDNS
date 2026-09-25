@@ -179,7 +179,7 @@ V současné době není možné tyto parametry nastavit z uživatelského rozhr
 
 ## Jak nastavím AdGuard Home jako výchozí DNS server? {#defaultdns}
 
-Viz část [_Konfigurace zařízení_](getting-started.md#configure-devices) na stránce _Začínáme_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Jsou známa nějaká omezení? {#limitations}
 
@@ -312,8 +312,8 @@ Pokud používáte TLS na reverzním proxy serveru, nemusíte používat TLS v A
 
 Parametr `trusted_proxies` můžete nastavit na IP adresy proxy serveru HTTP, aby AdGuard Home zohlednil záhlaví obsahující skutečnou IP adresu klienta. Další informace naleznete na stránkách [konfigurace][conf] a [šifrování][encr].
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Jak opravím chyby `permission denied` v systému Fedora? {#fedora}
 
@@ -396,16 +396,16 @@ Pokud se tlačítko nezobrazí nebo se automatická aktualizace nezdařila, mů�
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Rozbalte archiv AdGuard Home do dočasného adresáře. Pokud jste například stáhli archiv do adresáře `~/Downloads` a chcete jej rozbalit do adresáře `/tmp/`:
+5. Rozbalte archiv AdGuard Home do dočasného adresáře. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    V macOS zadejte něco jako:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Nahraďte starý spustitelný soubor AdGuard Home novým. Ve většině unixových systémů by měl příkaz vypadal takto:

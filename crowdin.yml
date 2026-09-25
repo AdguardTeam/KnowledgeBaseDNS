@@ -22,3 +22,5 @@ files:
     update_option: 'update_as_unapproved'
     ignore:
       - "/**/_category_.json"
+      - "/private-dns/api/reference.mdx"
+      - "/private-dns/api/changelog.mdx"

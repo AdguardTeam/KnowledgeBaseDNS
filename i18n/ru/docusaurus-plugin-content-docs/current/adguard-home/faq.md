@@ -179,7 +179,7 @@ AdGuard Home проверяет как DNS-запросы, так и DNS-отв�
 
 ## Как настроить AdGuard Home в качестве DNS-сервера по умолчанию? {#defaultdns}
 
-Вся необходимая информация есть в разделе [_Настройка устройств_](getting-started.md#configure-devices) на странице _Начало работы_.
+See the [_Configuring Devices_ section](/adguard-home/getting-started#configure-devices) on the _Getting Started_ page.
 
 ## Существуют ли какие-то известные ограничения? {#limitations}
 
@@ -312,8 +312,8 @@ DOMAIN {
 
 Вы можете установить параметр `trusted_proxies` на IP-адрес(-а) вашего HTTP-прокси, чтобы AdGuard Home учитывал заголовки, содержащие реальный IP-адрес клиента. Дополнительную информацию смотрите на страницах [настроек][conf] и [шифрования][encr].
 
-[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[encr]: /adguard-home/encryption#reverse-proxy
+[conf]: /adguard-home/configuration
 
 ## Как исправить ошибки `permission denied` на Fedora? {#fedora}
 
@@ -396,16 +396,16 @@ curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Распакуйте архив AdGuard Home во временную директорию. Например, если вы скачали архив в директорию `~/Downloads` и хотите извлечь его в `/tmp/`:
+5. Распакуйте архив AdGuard Home во временную директорию. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
-   tar -C /tmp/ -f ~/Downloads/AdGuardHome_linux_amd64.tar.gz -x -v -z
+   tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
    ```
 
    На macOS введите что-то вроде:
 
    ```sh
-   unzip -d /tmp/ ~/Downloads/AdGuardHome_darwin_amd64.zip
+   unzip -d /tmp/ /tmp/AdGuardHome_darwin_amd64.zip
    ```
 
 6. Замените старый исполняемый файл AdGuard Home на новый. В большинстве Unix-систем команда будет выглядеть примерно так:

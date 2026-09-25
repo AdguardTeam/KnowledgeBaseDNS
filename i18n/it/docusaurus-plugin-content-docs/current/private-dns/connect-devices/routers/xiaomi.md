@@ -9,7 +9,7 @@ Sfortunatamente, non supporta DNS crittografati, ma è ottimo per impostare AdGu
 
 ## Utilizza il pannello di amministrazione del tuo router
 
-Utilizza queste istruzioni se il tuo router Keenetic non supporta la configurazione DNS-over-HTTPS o DNS-over-TLS:
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Apri il pannello di amministrazione del router. Può essere accessibile a `192.168.31.1` o all'indirizzo IP del tuo router.
 2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.

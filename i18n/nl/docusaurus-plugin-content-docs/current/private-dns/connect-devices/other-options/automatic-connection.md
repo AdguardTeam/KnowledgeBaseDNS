@@ -18,13 +18,21 @@ You can create a connection link and use it in the device settings. Your device 
 
 Now you can automatically connect your device to the server by creating a special address that includes the device name, device type, and current server ID. Let’s explore what these addresses look like and the rules for creating them.
 
+:::note
+
+Je kunt [AdGuard DNS CLI gebruiken voor automatische apparaatverbinding][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### Examples of automatic connection addresses
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — this will automatically create an `Android` device with the `DNS-over-TLS` protocol named `AdGuard Test Device`
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — this will automatically create a `Windows` device with the `DNS-over-HTTPS` protocol named `John Doe`
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### Naming conventions
 
@@ -57,3 +65,9 @@ We’ve added a template that generates a link for the specific device type and 
 3. Click _Generate link_.
    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. You have successfully generated the link, now copy the server address and use it in one of the [AdGuard apps](https://adguard.com/welcome.html)
+
+## Zie ook
+
+- Het artikel [_Automatische apparaatverbinding_][adc] geeft meer gedetailleerde informatie over het proces en de vereisten voor de door mensen leesbare identificatie.
+
+[adc]: /private-dns/solving-problems/automatic-devices

@@ -34,7 +34,7 @@ sidebar_position: 5
 9. Добавленный вами DNS-сервер появится внизу списка _Пользовательских DNS-серверов_.
    ![Пользовательские DNS-серверы \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Используйте AdGuard VPN
 
@@ -54,7 +54,7 @@ sidebar_position: 5
 7. Нажмите _Сохранить и выбрать_.
    ![Сохранить и выбрать \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Готово! Ваше устройство успешно подключено к AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Настроить через параметры Windows
 
@@ -86,7 +86,7 @@ AdGuard DNS Client — это универсальный кроссплатфо�
 
 ## Настройка незашифрованного DNS
 
-Если вы предпочитаете не использовать дополнительное программное обеспечение для настройки DNS, вы можете выбрать незашифрованный DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
 
 - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -34,7 +34,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek macOS cihazın
 10. Yeni oluşturulan sunucunuz listenin en altında görünmelidir.
     ![Sağlayıcılar \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN'i kullanma
 
@@ -50,13 +50,13 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 6. Eklediğiniz DNS sunucusu _Özel DNS sunucuları_ listesinin altında görünür.
    ![Özel DNS sunucuları \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Yapılandırma profili kullanma
 
 A macOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
-:::note Önemli
+:::note Important
 
 Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 
@@ -71,7 +71,7 @@ Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
    ![Yükle \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Yönetici parolasını girin ve _Tamam_ öğesine tıklayın\*.
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Düz DNS'i yapılandırma
 

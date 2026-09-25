@@ -10,11 +10,19 @@ To connect a Linux device to AdGuard DNS, first add it to *Dashboard*:
 1. Name the device.
     ![Connecting device *mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS Client
+## Use AdGuard DNS CLI
 
-AdGuard DNS Client is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+AdGuard DNS CLI is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
 
 You can learn more about this in the [related article](/dns-client/overview/).
+
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
 
 ## Use AdGuard VPN CLI
 

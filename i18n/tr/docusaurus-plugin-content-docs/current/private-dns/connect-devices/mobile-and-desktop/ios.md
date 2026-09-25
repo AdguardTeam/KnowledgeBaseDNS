@@ -36,7 +36,7 @@ Cihazınızı ayarlamak için:
 
 ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ConnectiOS.png)
 
-1. Cihazınız AdGuard DNS'e başarıyla bağlandı. All you have to do is tap _Enable_ to start the protection.
+1. Your device is successfully connected to AdGuard DNS. All you have to do is tap _Enable_ to start the protection.
 
 ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/ProtectioniOS.png)
 
@@ -44,7 +44,7 @@ Cihazınızı ayarlamak için:
 
 2. Yerel DNS kullanmayı tercih ediyorsanız, _Ayarlar_ → _Genel_ → _VPN ve Cihaz Yönetimi_ → _DNS_ öğesine gidin ve AdGuard DNS'i etkinleştirin.
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard Reklam Engelleyici kullanma (ücretli seçenek)
 
@@ -67,7 +67,7 @@ AdGuard uygulaması, şifrelenmiş DNS kullanmanıza izin vererek iOS cihazını
 8. Yeni oluşturduğunuz sunucu listenin en altında görünmelidir.
    ![Özel sunucu \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step8.jpg)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN'i kullanma
 
@@ -91,13 +91,13 @@ Tüm VPN hizmetleri şifrelenmiş DNS'i desteklemez. Ancak bizim VPN'imiz destek
 9. Yeni oluşturulan sunucunuz _Özel DNS sunucuları_ altında görünmelidir.
    ![Özel sunucular \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step9.png)
 
-Hepsi tamam! Cihazınız AdGuard DNS'e başarıyla bağlandı.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Yapılandırma profili kullanma
 
 An iOS device profile, also referred to as a configuration profile by Apple, is a certificate-signed XML file that you can manually install on your iOS device or deploy using an MDM solution. Ayrıca cihazınızda Özel AdGuard DNS'i yapılandırmanıza da olanak tanır.
 
-:::note Önemli
+:::note Important
 
 Eğer VPN kullanıyorsanız yapılandırma profili göz ardı edilecektir.
 

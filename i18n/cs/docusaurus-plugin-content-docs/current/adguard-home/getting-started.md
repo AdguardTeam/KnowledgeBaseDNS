@@ -21,6 +21,10 @@ Chcete-li nainstalovat AdGuard Home jako službu, rozbalte archiv, zadejte adres
 
 - Uživatelé **macOS 10.15 Catalina** a novějších by měli pracovní adresář AdGuard Home umístit do adresáře `/Applications`.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker a Snap
 
 Pro zkušené uživatele poskytujeme také [oficiální obraz dockeru AdGuard Home][docker] a [oficiální balíček Snap Store][snap].
@@ -47,7 +51,7 @@ Mezi další neoficiální možnosti patří:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Ve výchozím nastavení se protokoly při spuštění AdGuard Home v terminálu
 
 Toto chování můžete změnit v [konfiguračním souboru][conf] AdGuard Home.
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Aktualizace {#update}
 
@@ -136,7 +140,7 @@ Pokud se tlačítko nezobrazí nebo se automatická aktualizace nezdařila, mů�
 
 4. Restartujte AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Aktualizace pro Docker, Home Assistant a Snapcraft
 
@@ -156,7 +160,7 @@ Chcete-li aktualizovat balíček AdGuard Home bez použití rozhraní Web API, s
 
 Toto nastavení automaticky pokryje všechna zařízení připojená k Vašemu domácímu routeru a nebudete je muset konfigurovat ručně.
 
-1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například <http://192.168.0.1/> nebo <http://192.168.1.1/>. Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
+1. Otevřete předvolby routeru. Obvykle se k němu dostanete z prohlížeče prostřednictvím adresy URL, například [http://192.168.0.1/](http://192.168.0.1/) nebo [http://192.168.1.1/](http://192.168.1.1/). Můžete být vyzváni k zadání hesla. Pokud si ho nepamatujete, můžete heslo resetovat stisknutím tlačítka na samotném routeru, ale mějte na paměti, že pokud zvolíte tento postup, pravděpodobně přijdete o celou konfiguraci routeru. Pokud váš router vyžaduje k nastavení aplikaci, nainstalujte si ji do telefonu nebo počítače a použijte ji k přístupu k nastavení routeru.
 
 2. Vyhledejte nastavení DHCP/DNS. Hledejte písmena DNS vedle pole, které umožňuje zadat dvě nebo tři sady čísel, z nichž každá je rozdělena do čtyř skupin po jedné až třech číslicích.
 

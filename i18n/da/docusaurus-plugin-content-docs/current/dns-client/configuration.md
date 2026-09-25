@@ -3,24 +3,20 @@ title: Opsætningsfil
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][yaml] opsætningsfil med kommentarer.
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
 
-`dns`-objektet opsætter adfærden for DNS-serveren. Den har flg. egenskaber:
+`dns`-objektet opsætter adfærden for DNS-serveren. Det har flg. egenskaber:
 
 ### `cache` {#dns-cache}
 
-`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. Den har flg. egenskaber:
+`cache`-objektet opsætter caching af DNS-forespørgselsresultaterne. Det har flg. egenskaber:
 
 - 'enabled': Hvorvidt DNS-resultaterne skal cachelagres eller ej.
 
@@ -36,9 +32,9 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `server` {#dns-server}
 
-`server`-objektet opsætter håndteringen af indgående forespørgsler. Den har flg. egenskaber:
+`server`-objektet opsætter håndteringen af indgående forespørgsler. Det har flg. egenskaber:
 
-- `bind_retry`: Opsætningen af genforsøgs-mekanismen for knytning til lytteadresserne. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
+- `bind_retry`: Opsætningen af genforsøgsmekanismen for knytning til lytteadresserne. Dette er nyttigt, hvis serveren startes, før netværket er klar, og adresserne endnu ikke er tilgængelige, som på visse Windows-versioner når installeret som en systemtjeneste.
 
   :::note
 
@@ -46,7 +42,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   :::
 
-  Den har flg. egenskaber:
+  Det har flg. egenskaber:
 
   - `enabled`: Om tilknytnings-genforsøg er aktiveret eller ej.
 
@@ -70,9 +66,21 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
       - address: '[::1]:53'
   ```
 
+- `pending_requests`: Opsætning til håndtering af samtidige dubletforespørgsler, som anvendes til at afbøde cache poisoning-angreb.
+
+  :::note
+
+  Dette objekt tilgængeligt siden **v0.0.4**.
+
+  :::
+
+  - `enabled`: Hvis sandt, vil serveren kun udføre en enkelt forespørgsel for hvert unikt spørgsmål.  Standard er sand.
+
+    **Eks.:** `true`
+
 ### `bootstrap` {#dns-bootstrap}
 
-`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. Den har flg. egenskaber:
+`bootstrap`-objektet opsætter opløsningen af [upstream](#dns-upstream) serveradresser. Det har flg. egenskaber:
 
 - `servers`: Listen over servere til at opløse værtsnavnene på upstream-servere.
 
@@ -90,13 +98,44 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `upstream` {#dns-upstream}
 
-'upstream'-objektet opsætter den faktiske forespørgselsopløsning. Den har flg. egenskaber:
+'upstream'-objektet opsætter den faktiske forespørgselsopløsning. Det har flg. egenskaber:
 
-- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Den har flg. egenskaber:
+- `groups`: Sættet af upstream-servere med gruppens navn som nøgle. Det har flg. egenskaber:
 
-  - `address`: Opstrømsserveradresse.
+  - `adresse`: Adressen på upstream-serveren. Er `autodevice.enabled` sat til `true` for denne gruppe, skal adressen være en URL med et af skemaerne `https`, `tls` eller `quic`.
 
     **Eks.:** `'8.8.8.8:53'`
+
+  - `autodevice`: Repræsenterer en [automatisk forbindelse][automatic-connection] til en enhed.
+
+    :::note
+
+    Autodevice-indstillingen må kun bruges til AdGuard DNS-upstreams. Ellers kan vi ikke garantere korrekt funktion.
+
+    :::
+
+    Det har flg. egenskaber:
+
+    - `enabled`: Definerer om alle klienter i den aktuelle gruppe kan forbindes automatisk.
+
+      :::info
+
+      Den prædefinerede gruppe `private` skal have `enabled` sat til false, da den endnu ikke understøtter autodevice.
+
+      :::
+
+    - `profile_id`: [ID for en profil][profile-id], hvor nye enheder vil blive tilføjet.
+
+    - `device_type`: En [enhedstype][device-type] oprettet til nye klienter.
+
+    **Egenskabseksempel:**
+
+    ```yaml
+    'autodevice':
+        - enabled: true
+        - profile_id: 'defa5678'
+        - device_type: 'lnx'
+    ```
 
   - `match`: Listen over kriterier forespørgslen skal matches imod. Hver post kan indeholde flg. egenskaber:
 
@@ -126,7 +165,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   :::info
 
-  `groups` skal indeholde mindst én post med navnet `default` og evt. en post med navnet `private`, og begge skal ikke have nogen `match`-egenskab.
+  `groups` skal indeholde mindst én post med navnet `default` og evt. en post med navnet `private`, og begge skal ikke have nogen `match`-egenskab. Gruppen `private` bruges også til at definere HumanID for klienter oprettet af funktionen `autodevice`. Hvis den ikke er defineret, anvendes en alternativ genereringsmetode, hvor HumanID'et dannes ud fra IP-adressen.
 
   :::
 
@@ -138,7 +177,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ### `fallback` {#dns-fallback}
 
-`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. Den har flg. egenskaber:
+`fallback`-objektet opsætter adfærden for DNS-serveren i tilfælde af fejl. Det har flg. egenskaber:
 
 - `servers`: Listen over servere til brug ved manglende svar fra den aktuelle [upstream](#dns-upstream).
 
@@ -153,13 +192,17 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
   **Eks.:** `2s`
 
+[automatic-connection]: /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]: /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
+
 ## `debug` {#debug}
 
-`debug`-objektet opsætter fejlfindingsfunktionerne. Den har flg. egenskaber:
+`debug`-objektet opsætter fejlfindingsfunktionerne. Det har flg. egenskaber:
 
 ### `pprof` {#debug-pprof}
 
-`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. Den har flg. egenskaber:
+`pprof`-objektet opsætter [`pprof`][pkg-pprof] HTTP-rutiner. Det har flg. egenskaber:
 
 - `port`: Porten, der skal lyttes til efter fejlfindings HTTP-forespørgsler på localhost.
 
@@ -173,7 +216,7 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 ## `log` {#log}
 
-"log"-objektet opsætter logningen. Den har flg. egenskaber:
+"log"-objektet opsætter logningen. Det har flg. egenskaber:
 
 - `output`: Det output, hvortil logger skrives.
 
@@ -231,8 +274,8 @@ Se filen [`config.dist.yml`][dist] for et fuldstændigt eksempel på en [YAML][y
 
 - `timestamp`: Angiver, om et tidsstempel skal medtages i logposterne.
 
-  **Eks.:** `false`
+  **Eksempel:** `false`
 
 - `verbose`: Angiver om loggen skal være mere udførlig.
 
-  **Eks.:** `false`
+  **Eksempel:** `false`

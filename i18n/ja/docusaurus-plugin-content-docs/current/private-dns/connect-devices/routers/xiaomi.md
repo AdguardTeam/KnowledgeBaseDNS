@@ -9,7 +9,7 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 ## ルーターの管理画面を使って接続する
 
-OPNSense ルーターが DNS-over-HTTPS または DNS-over-TLS の設定をサポートしていない場合は、これらの手順を使用してください:
+Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. ルーターの管理画面を開きます。 （`192.168.31.1` またはルーターの IP アドレスでアクセスできます。）
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。

@@ -21,6 +21,10 @@ Um AdGuard Home als Dienst zu installieren, entpacken Sie das Archiv, geben Sie 
 
 - Benutzer von **macOS 10.15 Catalina** und neuer sollten das Arbeitsverzeichnis von AdGuard Home in das Verzeichnis `/Applications` (Programme) legen.
 
+- For **Raspberry Pi** users, there is a separate [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker und Snap
 
 Wir bieten auch ein [offizielles AdGuard Home Docker-Image][docker] und ein [offizielles Snap Store-Paket][snap] für erfahrene Benutzer.
@@ -47,7 +51,7 @@ Einige andere inoffizielle Optionen sind:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Standardmäßig werden die Protokolle nach `stderr` geschrieben, wenn Sie AdGuar
 
 Sie können dieses Verhalten in der AdGuard Home [Konfigurationsdatei][conf] ändern.
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Aktualisieren {#update}
 
@@ -136,7 +140,7 @@ Falls die Schaltfläche nicht angezeigt wird oder eine automatische Aktualisieru
 
 4. Starten Sie AdGuard Home neu.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Aktualisierungen für Docker, Home Assistant und Snapcraft
 
@@ -156,7 +160,7 @@ Um das AdGuard Home-Paket zu aktualisieren, ohne die Web-API verwenden zu müsse
 
 Diese Einrichtung deckt automatisch alle Geräte ab, die mit Ihrem Heimrouter verbunden sind, und Sie müssen nicht jedes einzelne Gerät manuell konfigurieren.
 
-1. Öffnen Sie die Einstellungen für Ihren Router. Normalerweise können Sie von Ihrem Browser aus über eine URL wie <http://192.168.0.1/> oder <http://192.168.1.1/> darauf zugreifen. Möglicherweise werden Sie aufgefordert, ein Passwort einzugeben. Wenn Sie sich nicht mehr daran erinnern, können Sie das Kennwort oft durch Drücken einer Taste am Router selbst zurücksetzen. Beachten Sie jedoch, dass Sie bei dieser Vorgehensweise wahrscheinlich die gesamte Routerkonfiguration verlieren. Wenn für die Einrichtung Ihres Routers eine App erforderlich ist, installieren Sie diese bitte auf Ihrem Telefon oder PC und verwenden Sie sie für den Zugriff auf die Einstellungen des Routers.
+1. Öffnen Sie die Einstellungen für Ihren Router. Usually, you can access it from your browser via a URL, such as [http://192.168.0.1/](http://192.168.0.1/) or [http://192.168.1.1/](http://192.168.1.1/). Möglicherweise werden Sie aufgefordert, ein Passwort einzugeben. Wenn Sie sich nicht mehr daran erinnern, können Sie das Kennwort oft durch Drücken einer Taste am Router selbst zurücksetzen. Beachten Sie jedoch, dass Sie bei dieser Vorgehensweise wahrscheinlich die gesamte Routerkonfiguration verlieren. Wenn für die Einrichtung Ihres Routers eine App erforderlich ist, installieren Sie diese bitte auf Ihrem Telefon oder PC und verwenden Sie sie für den Zugriff auf die Einstellungen des Routers.
 
 2. Suchen Sie die DHCP/DNS-Einstellungen. Achten Sie auf die DNS-Buchstaben neben einem Feld, das zwei oder drei Zahlengruppen zulässt, die jeweils in vier Gruppen von ein bis drei Ziffern unterteilt sind.
 

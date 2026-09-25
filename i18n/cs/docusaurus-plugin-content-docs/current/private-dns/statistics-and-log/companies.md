@@ -20,7 +20,7 @@ Ty se dále dělí na podkategorie:
 - **CDN**: požadavek připojený k síti CDN (Content Delivery Network), celosvětové síti proxy serverů, která urychluje doručování obsahu koncovým uživatelům
 - **Další**
 
-### Nejaktivnější společnosti
+## Nejaktivnější společnosti
 
 V této tabulce zobrazujeme nejen názvy nejnavštěvovanějších nebo nejčastěji blokovaných společností, ale také informace o tom, z jakých domén se o ně žádá nebo které domény jsou nejvíce blokovány.
 

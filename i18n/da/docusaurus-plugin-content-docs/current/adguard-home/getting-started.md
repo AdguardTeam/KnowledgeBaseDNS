@@ -21,6 +21,10 @@ For at installere AdGuard Home som en tjeneste, udpak arkivet, gå til mappen 'A
 
 - Brugere af **macOS 10.15 Catalina** og senere bør placere AdGuard Home-arbejdsmappen i mappen `/Applications`.
 
+- For brugere af **Raspberry Pi** findes en separat [guide][raspberry-pi-guide].
+
+[raspberry-pi-guide]: /adguard-home/raspberry-pi
+
 ### Docker og Snap
 
 Vi leverer også en [officiel AdGuard Home docker-afbildning][docker] og en [officiel Snap Store-pakke][snap] til erfarne brugere.
@@ -47,7 +51,7 @@ Nogle andre uofficielle muligheder indbefatter:
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 [luci]: https://github.com/kongfl888/luci-app-adguardhome
-[platforms]: https://github.com/AdguardTeam/AdGuardHome/wiki/Platforms
+[platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
 
@@ -116,7 +120,7 @@ Som standard skrives logfilerne til `stderr`, når AdGuard Home køres i en term
 
 Denne adfærd kan ændres i AdGuard Home-[opsætningsfilen][conf].
 
-[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[conf]: /adguard-home/configuration#log
 
 ## Opdatering {#update}
 
@@ -136,7 +140,7 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 4. Genstart AdGuard Home.
 
-[mupd]: https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#manual-update
+[mupd]: faq.md#manual-update
 
 ### Opdateringer til Docker, Home Assistant og Snapcraft
 
@@ -156,7 +160,7 @@ For at opdatere AdGuard Home-pakken uden at skulle bruge Web API, eksekvér:
 
 Denne opsætning dækker automatisk alle enheder tilsluttet hjemmerouteren uden behov for manuelt at skulle opsætte nogen enhed.
 
-1. Åbn præferencerne for routeren. Disse kan normalt tilgås med en webbrowser via en URL, såsom <http://192.168.0.1/> eller <http://192.168.1.1/>. Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
+1. Åbn præferencerne for routeren. Kan normalt tilgås med en webbrowser via en URL, såsom [http://192.168.0.1/](https://192.168.0.1/) eller [http://192.168.1.1/](https://192.168.1.1/). Der kan blive anmodet om adgangskode. Kan man ikke huske denne, kan man ofte nulstille adgangskoden ved at trykke på en knap på selve routeren, men vær dog opmærksom på, at man med denne fremgangsmåde typisk mister hele routeropsætningen. Kræver routeren en app for at opsætte den, installér appen på en telefon eller PC og brug den for at tilgå routerens indstillinger.
 
 2. Find DHCP/DNS-indstillingerne. Se efter bogstaverne DNS ved siden af et felt, der tillader to eller tre sæt tal, hver opdelt i fire grupper med et til tre cifre.
 

@@ -3,48 +3,58 @@ title: Forældrekontrol
 sidebar_position: 5
 ---
 
-## Hvad er det
+*Forældrekontrol* er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Du kan bruge denne funktion til at begrænse dine børns adgang til voksensider, tilpasse søgeforespørgsler, blokere brugen af populære tjenester og meget mere.
 
-Forældrekontrol er et sæt indstillinger, som giver fleksibilitet til at tilpasse adgangen til bestemte websteder med sensitivt indhold. Man kan bruge denne funktion til at begrænse sine børns adgang til voksenwebsteder, tilpasse søgeforespørgsler, blokere brugen af populære tjenester mv.
+## How to set it up
 
-## Sådan opsættes det
+You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
-Man kan fleksibelt opsætte alle funktioner på sine servere, herunder funktionen Forældrekontrol. [I artiklen](private-dns/server-and-settings/server-and-settings.md) kan man gøre sig bekendt med, hvad en "server" er i AdGuard DNS og læse, hvordan man opretter forskellige servere med forskellige sæt af indstillinger.
+Then, go to the settings of the selected server and enable the required configurations.
 
-Gå dernæst til indstillingerne for den valgte server og aktivér de ønskede opsætninger.
+### Block adult websites
 
-### Blokér voksenwebsteder
+Blocks websites with inappropriate and adult content.
 
-Blokerer websteder med upassende og voksenindhold.
+![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-![Blokeret websted \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+### Safe search
 
-### Sikker søgning
+Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
 
-Fjerner upassende resultater fra Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave og Ecosia.
+### YouTube restricted mode
 
-![Sikker søgning \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/porn.png)
+Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
 
-### YouTube begrænset tilstand
+### Blocked services and websites
 
-Fjerner muligheden for at se og skrive kommentarer under videoer og interagere med 18+ indhold på YouTube.
+Begræns adgangen til populære tjenester med ét klik. Dette er nyttigt, såfremt forbundne enheder skal hindres i at besøge bestemte platforme, såsom Instagram og YouTube.
 
-![Begrænset tilstand \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/restricted.png)
+![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Blokerede tjenester og websteder
+### Block websites by category
 
-AdGuard DNS blokerer adgang til populære tjenester med ét klik. Dette er nyttigt, hvis man ikke ønsker, at tilsluttede enheder besøger f.eks. Instagram og YouTube.
+Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-![Blokerede tjenester \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Kategoribaseret blokering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Blokér websteder efter kategori
+### Pausetidsplan
 
-Denne funktion muliggør at begrænse adgangen til bestemte webstedskategorier ved at vælge mellem mere end 20 kategorier, herunder _Voksenindhold_, _Spil_, _Bankvirksomhed_ og _Kommunikation_. Blokeres eksempelvis websteder indeholdende information om alkohol, tobak eller stoffer, vil den valgte enhed ikke længere kunne åbne sider, som falder ind under disse kategorier.
+Du kan midlertidigt suspendere begrænsningerne i Forældrekontrol på udvalgte dage og i angivne tidsintervaller. Du kan tilføje et eller flere pauseintervaller for hver dag.
 
-![Kategoribaseret blokering \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+Du kan f.eks. lade dit barn se YouTube indtil kl. 23:00 på hverdage, mens adgangen er ubegrænset i weekenden. Du kan også tilføje et ekstra pauseinterval, f.eks. fra 13:00 til 15:00 på en hverdag.
 
-### Planlæg pauser
+Sådan opsættes en pausetidsplan:
 
-Aktiverer Forældrekontrol på udvalgte dage med et specificeret tidsinterval. F.eks. har man måske tilladt sit barn kun at kigge YouTube-videoer indtil kl. 23:00 på ugens hverdage. Men i weekenderne er YouTube-adgang ikke begrænset. Tilpas tidsplanen som ønsket, og blokér adgang til udvalgte sider i de tidsrum, som ønskes.
+1. Gå til _Servere_ → vælg en server → _Forældrekontrol_ → _Pausetidsplan_.
+2. Klik på knappen **+** ud for den ønskede dag, og indstil intervallet i dialogboksen _Tilføj pause_.
+3. Et eksisterende interval ændres ved at klikke på _Redigér_.
 
-![Tidsplan \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/schedule.png)
+Der kan opsættes flere intervaller for den samme dag. Intervaller på samme dag må ikke overlappe hinanden: Forsøger overlappende intervaller oprettet, vises en advarsel, og tidsplanen vil ikke kunne gemmes.
+
+![Overlappende intervaller \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+
+Markér afkrydsningsfeltet _Hele dagen_ for at pausere Forældrekontrol for hele dagen. Dette fjerner alle eksisterende pauseintervaller for den pågældende dag.
+
+Pauseintervaller kan også strække sig over midnat. Indstilles f.eks. en pause fra kl. 22:00 om mandagen til kl. 07:00 om tirsdagen, viser kontrolpanelet den som to intervaller: Mandag kl. 22:00-00:00 og tirsdag kl. 00:00-07:00. Dette påvirker ikke, hvordan pausen fungerer.
+
+![Pause over midnat \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)

@@ -3,25 +3,25 @@ title: Protokol dotazů
 sidebar_position: 5
 ---
 
-## Co je protokol dotazů
+## What is Query log?
 
-Protokol dotazů je užitečný nástroj pro práci s AdGuard DNS.
+_Query log_ is a useful tool for working with AdGuard DNS.
 
 Umožňuje zobrazit všechny požadavky provedené vašimi zařízeními během zvoleného časového období a seřadit požadavky podle stavu, typu, společnosti, zařízení a země.
 
 ## Jak ho používat
 
-Zde je uvedeno, co můžete vidět a co můžete udělat v _Protokolu dotazů_.
+Here’s what you can see and what you can do in _Query log_.
 
 ### Podrobné informace o požadavcích
 
-![Requests info \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
+![Requests info \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/detailed_info.png)
 
 ### Blokování a odblokování domén
 
 Požadavky lze blokovat a odblokovat bez opuštění protokolu pomocí dostupných nástrojů.
 
-![Unblock domain \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
+![Unblock domain \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/unblock_domain.png)
 
 ### Třídění požadavků
 

@@ -20,7 +20,7 @@ Essas são ainda divididas em subcategorias:
 - **CDN**: solicitação conectada à Rede de Distribuição de Conteúdo (CDN), uma rede mundial de servidores proxy que acelera a entrega de conteúdo aos usuários finais
 - **Outro**
 
-### Principais empresas
+## Principais empresas
 
 Nesta tabela, não mostramos apenas os nomes das empresas mais visitadas ou mais bloqueadas, mas também exibimos informações sobre quais domínios estão sendo solicitados ou quais domínios estão sendo mais bloqueados.
 

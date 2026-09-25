@@ -34,7 +34,7 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 9. Den tilføjede DNS-server vises nederst på listen _Tilpassede DNS-servere_.
    ![Tilpassede DNS-servere \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_ab/windows_step9.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Brug af AdGuard VPN
 
@@ -54,7 +54,7 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vo
 7. Tryk på _Gem og vælg_.
    ![Gem og vælg \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/windows_vpn/windows_step8.png)
 
-Færdig! Enheden er nu tilsluttet AdGuard DNS.
+All done! Your device is successfully connected to AdGuard DNS.
 
 ## Opsæt via Windows-indstillinger
 
@@ -86,7 +86,7 @@ Flere detaljer kan findes i [forskellig artikel](/dns-client/overview/).
 
 ## Opsæt almindelig DNS
 
-Foretrækker man ikke at bruge ekstra software til DNS-opsætning, kan der vælges ikke-krypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
+If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

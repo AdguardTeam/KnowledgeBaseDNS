@@ -1,4 +1,28 @@
 {
+  "siteConfig.title": {
+    "message": "AdGuard DNS 知识库",
+    "description": "The site title used in the browser tab and metadata"
+  },
+  "siteConfig.tagline": {
+    "message": "AdGuard DNS 知识库",
+    "description": "The site tagline used in meta description"
+  },
+  "apiChangelog.loading": {
+    "message": "正在加载更新日志…",
+    "description": "Placeholder shown while the API changelog is being loaded"
+  },
+  "apiChangelog.error": {
+    "message": "无法加载更新日志。您可以在 {link} 查看原始更新日志。",
+    "description": "Error message shown when the API changelog cannot be loaded. {link} is a link to the original changelog on adguard-dns.io"
+  },
+  "apiChangelog.versions": {
+    "message": "版本",
+    "description": "Accessible name of the version list sidebar on the API changelog page"
+  },
+  "apiReference.loading": {
+    "message": "正在加载 API 参考文档…",
+    "description": "Placeholder shown while the API reference (Swagger UI) is being loaded"
+  },
   "theme.NotFound.title": {
     "message": "页面未找到",
     "description": "The title of the 404 page"
@@ -165,7 +189,7 @@
   },
   "theme.ErrorPageContent.tryAgain": {
     "message": "再试一次",
-    "description": "The label of the button to try again when the page crashed"
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "滚动回到顶部",
@@ -185,7 +209,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "在深色模式和浅色模式之间切换（当前为 {mode}）",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "深色模式",
@@ -427,5 +451,69 @@
   "theme.SearchModal.placeholder": {
     "message": "搜索文档",
     "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "系统模式",
+    "description": "The name for the system color mode"
+  },
+  "theme.admonition.warning": {
+    "message": "警告",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "展开侧边栏类别 '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "折叠侧边栏类别 '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "（在新标签页中打开）",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "展开下拉菜单",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "收起下拉菜单",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "作者",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "查看所有作者",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "该作者尚未撰写任何文章。",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "未公开页面",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "此页面未公开。搜索引擎不会收录，只有拥有直接链接的用户才能访问。",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "草稿页",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "此页面为草稿。仅在开发环境中可见，不会包含在生产构建中。",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 项|{count} 项",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   }
 }

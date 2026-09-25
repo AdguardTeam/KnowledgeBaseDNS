@@ -18,13 +18,21 @@ sidebar_position: 5
 
 これで、特別なアドレスを使用して、デバイス名、デバイスの種類、現在のサーバーIDを含むアドレスを使用して、デバイスを自動的にサーバーに接続できるようになります。 これらのアドレスがどのようなものなのか、また、アドレスを作成する方法を見てみましょう。
 
+:::note
+
+You can [use AdGuard DNS CLI for automatic device connection][agdnscli-autodevice].
+
+:::
+
+[agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
+
 ### 自動接続アドレスの例
 
 - `tls://adr-{Your_Server_ID}-AdGuard-Test-Device.d.adguard-dns.com` — これは `AdGuard Test Device` という名前の `Android` デバイスを `DNS-over-TLS` プロトコルで自動的に作成します。
 
 - `https://d.adguard-dns.com/dns-query/win-{Your_Server_ID}-John-Doe` — これは `John Doe` という名前の `Windows` デバイスを `DNS-over-HTTPS` プロトコルで自動的に作成します。
 
-- `quic://ios-73f78a1d-Mary-Sue.d.adguard-dns.com` — これは `Mary Sue` という名前の `iOS` デバイスを `DNS-over-QUIC` プロトコルで自動的に作成します。
+- `quic://ios-{Your_Server_ID}-Mary-Sue.d.adguard-dns.com` — this will automatically create a `iOS` device with the `DNS-over-QUIC` protocol named `Mary Sue`
 
 ### 命名規則
 
@@ -57,3 +65,9 @@ sidebar_position: 5
 3. 「_リンクを生成する_」をクリックします。
    ![Generate link \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/automatically_step7.png)
 4. これで、リンクの生成が完了です。そのサーバーアドレスをコピーし、デバイス上の[AdGuard アプリ](https://adguard.com/welcome.html)内で使用してください。
+
+## See also
+
+- The article [_Automatic device connection_][adc] provides more detailed information on the process and the requirements for the human-readable identifier.
+
+[adc]: /private-dns/solving-problems/automatic-devices

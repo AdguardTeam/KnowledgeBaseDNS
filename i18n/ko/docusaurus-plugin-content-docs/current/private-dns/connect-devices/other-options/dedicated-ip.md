@@ -30,3 +30,12 @@ Unfortunately, the technical specifications of the connected device may not alwa
 7. 전용 IPv6 주소를 사용하려면 **복사**를 클릭합니다.
    ![주소 복사 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_step7.png)
 8. 선택한 전용 주소를 복사하여 기기 설정에 붙여넣습니다.
+
+## How to unassign a dedicated IP
+
+1. 대시보드를 엽니다.
+2. Go to your device settings.
+3. Go to _Plain DNS server addresses_.
+4. Under _Dedicated IPv4 addresses_, click _Manage_.
+5. In the popup, click _Unassign_ next to the IP you want to remove.
+   ![Unassign \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/dedicated_unassign.png)

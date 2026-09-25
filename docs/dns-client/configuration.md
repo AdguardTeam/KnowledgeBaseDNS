@@ -3,15 +3,11 @@ title: Configuration file
 sidebar_position: 2
 ---
 
-<!-- markdownlint-configure-file {"ul-indent":{"indent":4,"start_indent":2,"start_indented":true}} -->
-
 See file [`config.dist.yml`][dist] for a full example of a [YAML][yaml] configuration file with comments.
 
-<!--
-    TODO(a.garipov): Find ways to add IDs to individual list items.
--->
+<!-- TODO(a.garipov): Find ways to add IDs to individual list items. -->
 
-[dist]: https://github.com/AdguardTeam/AdGuardDNSClient/blob/master/config.dist.yaml
+[dist]: https://github.com/AdguardTeam/AdGuardDNSCLI/blob/master/config.dist.yaml
 [yaml]: https://yaml.org/
 
 ## `dns` {#dns}
@@ -22,136 +18,183 @@ The `dns` object configures the behavior of the DNS server. It has the following
 
 The `cache` object configures caching the results of querying DNS. It has the following properties:
 
-  - `enabled`: Whether or not the DNS results should be cached.
+- `enabled`: Whether or not the DNS results should be cached.
 
-    **Example:** `true`
+  **Example:** `true`
 
-  - `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `size`: The maximum size of the DNS result cache as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-    **Example:** `128MB`
+  **Example:** `128MB`
 
-  - `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
+- `client_size`: The maximum size of the DNS result cache for each configured client’s address or subnetwork as human-readable data size. It must be greater than zero if `enabled` is `true`.
 
-    **Example:** `4MB`
+  **Example:** `4MB`
 
 ### `server` {#dns-server}
 
 The `server` object configures the handling of incoming requests. It has the following properties:
 
-  - `bind_retry`: The confguration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
+- `bind_retry`: The configuration of the retry mechanism for binding to the listen addresses. This is useful if the server is started before the network is ready and the addresses are not yet available, as on some editions of Windows when installed as a system service.
 
-    :::note
+  :::note
 
-    This object is available since **v0.0.3**.
+  This object is available since **v0.0.3**.
 
-    :::
+  :::
 
-    It has the following properties:
+  It has the following properties:
 
-      - `enabled`: Whether bind retry is enabled or not.
+    - `enabled`: Whether bind retry is enabled or not.
 
-        **Example:** `true`
+      **Example:** `true`
 
-      - `interval`: The interval between retries as a human-readable duration.
+    - `interval`: The interval between retries as a human-readable duration.
 
-        **Example:** `1s`
+      **Example:** `1s`
 
-      - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
+    - `count`: The maximum number of attempts after the first failure. That is, if `count` is `4`, the total number of attempts will be five.
 
-        **Example:** `4`
+      **Example:** `4`
 
-  - `listen_addresses`: The set of addresses with ports to listen on.
+- `listen_addresses`: The set of addresses with ports to listen on.
 
-    **Property example:**
+  **Property example:**
 
-    ```yaml
-    'listen_addresses':
-        - address: '127.0.0.1:53'
-        - address: '[::1]:53'
-    ```
+  ```yaml
+  'listen_addresses':
+      - address: '127.0.0.1:53'
+      - address: '[::1]:53'
+  ```
+
+- `pending_requests`: Configuration for handling duplicate simultaneous requests used to mitigate cache poisoning attacks.
+
+  :::note
+
+  This object is available since **v0.0.4**.
+
+  :::
+
+    - `enabled`: If true, the server will only perform a single request for each unique question.  Default is true.
+
+      **Example:** `true`
 
 ### `bootstrap` {#dns-bootstrap}
 
 The `bootstrap` object configures the resolution of [upstream](#dns-upstream) server addresses. It has the following properties:
 
-  - `servers`: The list of servers to resolve the hostnames of upstream servers.
+- `servers`: The list of servers to resolve the hostnames of upstream servers.
 
-    **Property example:**
+  **Property example:**
 
-    ```yaml
-    'servers':
-        - address: '8.8.8.8:53'
-        - address: '192.168.1.1:53'
-    ```
+  ```yaml
+  'servers':
+      - address: '8.8.8.8:53'
+      - address: '192.168.1.1:53'
+  ```
 
-  - `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
+- `timeout`: The timeout for bootstrap DNS requests as a human-readable duration.
 
-    **Example:** `2s`
+  **Example:** `2s`
 
 ### `upstream` {#dns-upstream}
 
 The `upstream` object configures the actual resolving of requests. It has the following properties:
 
-  - `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
+- `groups`: The set of upstream servers keyed by the group’s name. It has the following properties:
 
-      - `address`: The upstream server’s address.
+    - `address`: The upstream server’s address. If `autodevice.enabled` set to `true` for this group, the address should be a URL with one of `https`, `tls`, or `quic` scheme.
 
-        **Example:** `'8.8.8.8:53'`
+      **Example:** `'8.8.8.8:53'`
 
-      - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
+    - `autodevice`: Represents an [automatic connection][automatic-connection] of a device.
 
-          - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
+      :::note
 
-            **Example:** `'mycompany.local'`
+      The autodevice option must be used only for AdGuard DNS upstreams. Otherwise, we can’t guarantee proper work.
 
-          - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+      :::
 
-            **Example:** `'192.0.2.0/24'`
+      It has the following properties:
 
-        :::note
+        - `enabled`: Defines whether all clients within the current group can be connected automatically.
 
-        Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+          :::info
 
-        :::
+          The predefined `private` group must have `enabled` set to false, as it doesn't support autodevice yet.
 
-        **Property example:**
+          :::
 
-        ```yaml
-        'match':
-            - question_domain: 'mycompany.local'
-            client: '192.168.1.0/24'
-            - question_domain: 'mycompany.external'
-            - client: '1.2.3.4'
-        ```
+        - `profile_id`: [ID of a profile][profile-id], in which new devices will be added.
 
-    :::info
+        - `device_type`: A [type of device][device-type] which will be created for new clients.
 
-    `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property.
+      **Property example:**
 
-    :::
+      ```yaml
+      'autodevice':
+          - enabled: true
+          - profile_id: 'defa5678'
+          - device_type: 'lnx'
+      ```
 
-    The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+    - `match`: The list of criteria to match the request against. Each entry may contain the following properties:
 
-  - `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+        - `question_domain`: The domain or a suffix of the domain that the set of upstream servers should be used to resolve.
 
-    **Example:** `2s`
+          **Example:** `'mycompany.local'`
+
+        - `client`: The client’s address or a subnet of the client’s address from which the set of upstream servers should resolve requests. It must have no significant bits outside the subnet mask.
+
+          **Example:** `'192.0.2.0/24'`
+
+      :::note
+
+      Properties specified within a single entry are combined with a logical AND. Entries are combined with a logical OR.
+
+      :::
+
+      **Property example:**
+
+      ```yaml
+      'match':
+          - question_domain: 'mycompany.local'
+          client: '192.168.1.0/24'
+          - question_domain: 'mycompany.external'
+          - client: '1.2.3.4'
+      ```
+
+  :::info
+
+  `groups` should contain at least a single entry named `default`, and optionally a single entry named `private`, both should have no `match` property. The `private` group is also used to define the HumanID for clients created by `autodevice` feature. If it is not defined, an alternative generation method is used, whereby the HumanID is formed from the IP address.
+
+  :::
+
+  The `default` group will be used when there are no matches among other groups. The `private` group will be used to resolve the PTR requests for the private IP addresses. Such queries will be answered with `NXDOMAIN` if no `private` group is defined.
+
+- `timeout`: The timeout for upstream DNS requests as a human-readable duration.
+
+  **Example:** `2s`
 
 ### `fallback` {#dns-fallback}
 
 The `fallback` object configures the behavior of the DNS server in case of failure. It has the following properties:
 
-  - `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
+- `servers`: The list of servers to use after the actual [upstream](#dns-upstream) failed to respond.
 
-    **Property example:**
+  **Property example:**
 
-    ```yaml
-    'servers':
-        - address: 'tls://94.140.14.140'
-    ```
+  ```yaml
+  'servers':
+      - address: 'tls://94.140.14.140'
+  ```
 
-  - `timeout`: The timeout for fallback DNS requests as a human-readable duration.
+- `timeout`: The timeout for fallback DNS requests as a human-readable duration.
 
-    **Example:** `2s`
+  **Example:** `2s`
+
+[automatic-connection]:  /private-dns/connect-devices/other-options/automatic-connection
+[profile-id]:  /private-dns/solving-problems/automatic-devices/#dns-server-id
+[device-type]: /private-dns/solving-problems/automatic-devices/#device-type
 
 ## `debug` {#debug}
 
@@ -161,13 +204,13 @@ The `debug` object configures the debugging features. It has the following prope
 
 The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the following properties:
 
-  - `port`: The port to listen on for debug HTTP requests on localhost.
+- `port`: The port to listen on for debug HTTP requests on localhost.
 
-    **Example:** `6060`
+  **Example:** `6060`
 
-  - `enabled`: Whether or not the debug profiling is enabled.
+- `enabled`: Whether or not the debug profiling is enabled.
 
-    **Example:** `true`
+  **Example:** `true`
 
 [pkg-pprof]: https://golang.org/pkg/net/http/pprof
 
@@ -175,64 +218,64 @@ The `pprof` object configures the [`pprof`][pkg-pprof] HTTP handlers. It has the
 
 The `log` object configures the logging. It has the following properties:
 
-  - `output`: The output to which logs are written.
+- `output`: The output to which logs are written.
 
-    :::note
+  :::note
 
-    Log entries written to the system log are in `text` format (see below) and use the system timestamp.
+  Log entries written to the system log are in `text` format (see below) and use the system timestamp.
 
-    :::
+  :::
 
-    Possible values:
+  Possible values:
 
-      - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
+    - `syslog` means that the platform-specific system log is used, which is syslog for Linux and Event Log for Windows.
 
-      - `stdout` for standard output stream.
+    - `stdout` for standard output stream.
 
-      - `stderr` for standard error stream.
+    - `stderr` for standard error stream.
 
-      - Absolute path to the log file.
+    - Absolute path to the log file.
 
-      **Example:** `/home/user/logs`
+    **Example:** `/home/user/logs`
 
-      **Example:** `C:\Users\user\logs.txt`
+    **Example:** `C:\Users\user\logs.txt`
 
-    **Example:** `syslog`
+  **Example:** `syslog`
 
-  - `format`: Specifies the format of the log entries.
+- `format`: Specifies the format of the log entries.
 
-    Possible values:
+  Possible values:
 
-      - `default`: A simple format. Example:
+    - `default`: A simple format. Example:
 
-        ```none
-        INFO service started prefix=program addr=127.0.0.1:53
-        ```
+      ```none
+      INFO service started prefix=program addr=127.0.0.1:53
+      ```
 
-      - `json`: A structured JSON format. Example:
+    - `json`: A structured JSON format. Example:
 
-        ```json
-        {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
-        ```
+      ```json
+      {"level":"INFO","msg":"service started","prefix":"program","addr":"127.0.0.1:53"}
+      ```
 
-      - `jsonhybrid`: Same as `json` but with a limited number of fields. Example:
+    - `jsonhybrid`: Same as `json` but with a limited number of fields. Example:
 
-        ```json
-        {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
-        ```
+      ```json
+      {"level":"INFO","msg":"service started, attrs: prefix=program addr=127.0.0.1:53"}
+      ```
 
-      - `text`: A structured text format. Example:
+    - `text`: A structured text format. Example:
 
-        ```none
-        level=INFO msg="service started" prefix=program addr=127.0.0.1:53
-        ```
+      ```none
+      level=INFO msg="service started" prefix=program addr=127.0.0.1:53
+      ```
 
-    **Example:** `default`
+  **Example:** `default`
 
-  - `timestamp`: Specifies whether to include a timestamp in the log entries.
+- `timestamp`: Specifies whether to include a timestamp in the log entries.
 
-    **Example:** `false`
+  **Example:** `false`
 
-  - `verbose`: Specifies whether the log should be more informative.
+- `verbose`: Specifies whether the log should be more informative.
 
-    **Example:** `false`
+  **Example:** `false`
