@@ -850,7 +850,7 @@ Skjul websteds- og in-app-annoncer oven i den beskyttende funktionalitet.
 
 #### Beskyttende opløsning med børnebeskyttelse og adblocking
 
-Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Plus filtrér annoncer oven i den beskyttende funktionalitet.
+Undgå adgang til websteder, som er upassende for børn, såsom eksplicit indhold, vold eller stoffer. Og filtrér annoncer oven i den beskyttende funktionalitet.
 
 | Protokol       | Adresse                                               |                                                                                                                                                                                                                         |
 | -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -866,7 +866,7 @@ Ufiltreret indstilling er et alternativ til brugere, som er sikre på, at deres 
 | Protokol       | Adresse                                                |                                                                                                                                                                                                                       |
 | -------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DNS, IPv4      | `86.54.11.100` og `86.54.11.200`                       | [Føj til AdGuard](adguard:add_dns_server?address=86.54.11.100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=86.54.11.100&name=DNS4EU)                                                         |
-| DNS, IPv6      | `2a13:1001::86:54:11:100` og `2a13:1001::86:54:11:100` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU)                                   |
+| DNS, IPv6      | `2a13:1001::86:54:11:100` og `2a13:1001::86:54:11:200` | [Føj til AdGuard](adguard:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2a13:1001::86:54:11:100&name=DNS4EU)                                   |
 | DNS-over-HTTPS | `https://unfiltered.joindns4.eu/dns-query`             | [Føj til AdGuard](adguard:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://unfiltered.joindns4.eu/dns-query&name=DNS4EU) |
 | DNS-over-TLS   | `tls://unfiltered.joindns4.eu`                         | [Føj til AdGuard](adguard:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://unfiltered.joindns4.eu&name=DNS4EU)                         |
 
@@ -923,13 +923,13 @@ Ufiltreret indstilling er et alternativ til brugere, som er sikre på, at deres 
 | DNS, IPv4      | `52.80.66.66` og `117.50.22.22`                    | [Føj til AdGuard](adguard:add_dns_server?address=52.80.66.66&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=52.80.66.66&name=OneDNS)                                                           |
 | DNS, IPv6      | `2400:7fc0:849e:200::4` og `2404:c2c0:85d8:901::4` | [Føj til AdGuard](adguard:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=2400:7fc0:849e:200::4&name=OneDNS)                                       |
 | DNS-over-HTTPS | `https://doh.onedns.net/dns-query`                 | [Føj til AdGuard](adguard:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.onedns.net/dns-query&name=doh.onedns.net) |
-| DNS-over-TLS   | `tls://dot.onedns.net`                             | [Add to AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                           |
+| DNS-over-TLS   | `tls://dot.onedns.net`                             | [Føj til AdGuard](adguard:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot.onedns.net&name=dot.onedns.net)                           |
 
 #### Family Edition
 
 | Protokol  | Adresse                          |                                                                                                                                                             |
 | --------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS, IPv4 | `117.50.60.30` and `52.80.60.30` | [Add to AdGuard](adguard:add_dns_server?address=117.50.60.30&name=OneDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=OneDNS) |
+| DNS, IPv4 | `117.50.60.30` og `52.80.60.30` | [Føj til AdGuard](adguard:add_dns_server?address=117.50.60.30&name=OneDNS), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=117.50.60.30&name=OneDNS) |
 
 ### OpenNIC DNS
 

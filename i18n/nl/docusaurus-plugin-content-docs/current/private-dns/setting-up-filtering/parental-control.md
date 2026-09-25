@@ -3,7 +3,7 @@ title: Parental control
 sidebar_position: 5
 ---
 
-_Ouderlijk toezicht_ is een set instellingen die je de flexibiliteit geven om toegang tot bepaalde websites met gevoelige inhoud aan te passen. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+_Ouderlijk toezicht_ is een set instellingen die je de flexibiliteit geven om toegang tot bepaalde websites met gevoelige inhoud aan te passen. Je kunt deze functie gebruiken om de toegang van je kinderen tot websites voor volwassenen te beperken, zoekopdrachten aan te passen, het gebruik van populaire diensten te blokkeren en meer.
 
 ## How to set it up
 
@@ -35,27 +35,26 @@ Beperkt de toegang tot populaire diensten met één klik. Dit is handig als je n
 
 Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
 
-! [Categorie-gebaseerde blokkering \*mobile_border] (https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Categorie-gebaseerde blokkering \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
 ### Pauzeschema
 
-Temporarily suspends _Parental control_ restrictions on selected days and during specified time intervals. Je kunt één of meerdere pauzes per dag toevoegen.
+Schort de beperkingen van Ouderlijk toezicht tijdelijk op op geselecteerde dagen en tijdens opgegeven tijdsintervallen. Je kunt één of meerdere pauzes per dag toevoegen.
 
-For example, you can pause the restrictions on weekdays from 7:00 a.m. to 8:00 a.m. before school and from 6:00 p.m. to 8:00 p.m. in the evening. Outside of these intervals, _Parental control_ applies as usual.
+Zo kun je je kind bijvoorbeeld toestaan om YouTube te kijken tot 23:00 uur op weekdagen, terwijl je in het weekend de toegang onbeperkt laat. Je kunt ook een extra pauze toevoegen, bijvoorbeeld van 13:00 tot 15:00 op een doordeweekse dag.
 
 Om een pauzeschema op te stellen:
 
 1. Ga naar _Servers_ → selecteer een server → _Ouderlijk toezicht_ → _Pauzeschema_.
 2. Klik op de **+**-knop naast de gewenste dag en stel het interval in in het _pauze toevoegen_-dialoog.
-3. Repeat to add more intervals to the same day.
-4. To change an existing interval, click _Edit_.
+3. Om een bestaand interval te wijzigen, klik op _Bewerken_.
 
 Je kunt meerdere intervallen voor dezelfde dag instellen. Intervallen op dezelfde dag mogen niet overlappen: als je probeert overlappende intervallen te maken, krijg je een waarschuwing en kun je het schema niet opslaan.
 
-! [Overlappende intervallen \*mobiel] (https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+![Overlappende intervallen \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Selecting the _All day_ checkbox pauses _Parental control_ restrictions for the entire day, replacing any intervals you’ve set.
+Selecteer het _De hele dag_ selectievakje om ouderlijk toezicht de hele dag te pauzeren. Hierdoor worden alle bestaande pauzes voor die dag verwijderd.
 
-Pauzeperiodes kunnen ook middernacht duren. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
+Pauzeperiodes kunnen ook middernacht duren. Als je bijvoorbeeld een pauze zet van 22:00 op maandag tot 07:00 op dinsdag, toont het dashboard deze in twee intervallen: maandag, 22:00–00:00, en dinsdag, 00:00–07:00. Dit beïnvloedt niet hoe de pauze werkt.
 
-![Pause schedule \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)
+![Pauze na middernacht \*mobiel](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
