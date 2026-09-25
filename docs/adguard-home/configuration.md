@@ -563,7 +563,7 @@ The `filtering` object configures filtering settings. It has the following prope
 
 - `parental_cache_size`: *Parental control* cache size, in bytes.
 
-- `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream.
+- `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream. The `enabled` property determines whether the rewrite is active.
 
     **Example:**
 
@@ -571,8 +571,10 @@ The `filtering` object configures filtering settings. It has the following prope
     'rewrites':
       - 'domain': example.com
         'answer': 127.0.0.1
+        'enabled': true
       - 'domain': '*.example.com'
         'answer': A
+        'enabled': true
     ```
 
 - `safe_fs_patterns`: List of allowed filesystem path patterns for adding **local** filter files.
