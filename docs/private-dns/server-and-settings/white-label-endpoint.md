@@ -21,7 +21,7 @@ To request an *Account IP*, contact your account manager or support team at [sup
 
 Once the address is assigned, the *White-label endpoint* block appears in *Settings* → *Advanced settings* → *Custom domains*, showing your *Account IP address*. Until then, the block isn’t shown.
 
-![White-label endpoint *border](https://cdn.adtidy.org/content/kb/dns/enterprise/whitelabel_endpoint_en.png)
+![White-label endpoint](https://cdn.adtidy.org/content/kb/dns/enterprise/whitelabel_endpoint_en.png)
 
 :::caution
 
@@ -37,15 +37,15 @@ Setup follows the same steps as a standard custom domain, except you create an A
 
 1. In *Custom domains*, choose the protocol: *Add DoH domain* (for DNS-over-HTTPS) or *Add DoT/DoQ domain* (for DNS-over-TLS or DNS-over-QUIC).
 
-   ![Choosing the protocol *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
+   ![Choosing the protocol](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
 
 1. Enter the domain you want to use (e.g., `dns.partner.com`) and click *Next*. You need access to this domain’s DNS management panel.
 
-   ![Entering the domain *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
+   ![Entering the domain](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
 
 1. The next screen shows the values for your DNS record: your domain under *Name (Host)* and your *Account IP* under *Value (Points to / IP address)*. Leaving this screen open, go to your DNS provider’s control panel and create an A record with those values. Don’t create a CNAME record — domains on an *Account IP* point to the address directly.
 
-   ![DNS record values *border](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
+   ![DNS record values](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
 
 1. On the AdGuard DNS screen with the record values, click *Verify*. If the record hasn’t propagated yet or points somewhere else, verification fails. Check the record and try again in a few minutes.
 
@@ -56,7 +56,7 @@ Setup follows the same steps as a standard custom domain, except you create an A
 
     Until you add a certificate, the domain shows the *No certificate* status and your customers can’t connect to it.
 
-   ![Uploading a certificate *border](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
+   ![Uploading a certificate](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
 
 :::note
 
