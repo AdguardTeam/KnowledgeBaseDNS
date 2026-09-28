@@ -3,7 +3,7 @@ title: White-label endpoint (Account IP)
 sidebar_position: 7
 ---
 
-Custom domains let partners offer AdGuard DNS under their own brand. On the **Enterprise** plan, that service can also run on an IP address that isn’t shared with any other AdGuard DNS client: an *Account IP*. Domains point to it through an A record, instead of the CNAME record used for standard custom domains.
+Custom domains allow partners to offer AdGuard DNS under their own brand. With the Enterprise plan, this service can run on a private IP address: this feature is called *Account IP*. Domains point to the *Account IP* through an A record instead of a CNAME record, which is used for standard custom domains.
 
 :::note
 
