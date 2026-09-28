@@ -1,5 +1,5 @@
 ---
-title: White-label endpoint (Account IP address)
+title: White-label endpoint (Account IP)
 sidebar_position: 7
 ---
 
