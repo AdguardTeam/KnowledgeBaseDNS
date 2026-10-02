@@ -99,7 +99,7 @@ AdGuard DNS kræver Cudy-app V1.5.5+
 
 ![Enhedsnavn](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy15.png)
 
-1. Check the _Active_ status on _System Status_ → _Ad Shield_ and click _Go to Dashboard_ to set up AdGuard DNS.
+1. Markér statussen _Aktiv_ under _Systemstatus_ → _Ad Shield_ og klik på _Gå til kontrolpanel_ for at opsætte AdGuard DNS.
 
 ![Aktiv](https://cdn.adtidy.org/content/kb/dns/private/router_cudy/cudy16.png)
 

@@ -41,6 +41,8 @@ Mezi další neoficiální možnosti patří:
 
 - [Aplikace Cloudron][cloudron] spravuje [@gramakri](https://github.com/gramakri).
 
+- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
 [archarm]: https://archlinuxarm.org/
@@ -54,6 +56,7 @@ Mezi další neoficiální možnosti patří:
 [platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
+[zimaos]: https://www.zimaspace.com/docs/zimaos/app-store/adguard-home-setup
 
 ## První spuštění {#first-time}
 
@@ -229,6 +232,14 @@ AdGuard Home můžete spustit bez oprávnění superuser, ale musíte binárním
 Použití této metody vyžaduje nástroj `setcap`. Možná jej budete muset nainstalovat pomocí správce balíčků vaší distribuce Linuxu.
 
 Chcete-li, aby AdGuard Home spuštěný v systému Linux naslouchal na portu 53 bez oprávnění superuser a vázal své DNS servery na určité rozhraní, spusťte:
+
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome

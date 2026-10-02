@@ -563,7 +563,7 @@ The `filtering` object configures filtering settings. It has the following prope
 
 - `parental_cache_size`: _Parental control_ cache size, in bytes.
 
-- `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream.
+- `rewrites`: List of legacy DNS rewrites, where `domain` is the domain or wildcard you want to be rewritten and `answer` is IP address, CNAME record, `A` or `AAAA` special values. Special value `A` keeps `A` records from the upstream and `AAAA` keeps `AAAA` values from the upstream. De eigenschap `enabled` bepaalt of de herschrijving actief is.
 
   **Example:**
 
@@ -571,8 +571,10 @@ The `filtering` object configures filtering settings. It has the following prope
     'rewrites':
       - 'domain': example.com
         'answer': 127.0.0.1
+        'enabled': true
       - 'domain': '*.example.com'
         'answer': A
+        'enabled': true
     ```
 
 - `safe_fs_patterns`: List of allowed filesystem path patterns for adding **local** filter files.
@@ -838,12 +840,12 @@ Removing an entry from settings file will reset it to the default value. Deletin
 
 Please follow these steps to create a new password for your user account:
 
-1. Install `htpasswd`, which is a part of _Apache2 Web Server:_
+1. Installeer `htpasswd`. Installeer onder Linux het hulpprogrammapakket in plaats van de Apache2-webserver:
 
    - Ubuntu:
 
         ```sh
-        sudo apt-get install apache2
+        sudo apt-get install apache2-utils
         ```
 
    - Fedora:

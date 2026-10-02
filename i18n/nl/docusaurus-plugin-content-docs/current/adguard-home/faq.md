@@ -361,6 +361,15 @@ If the button isn’t displayed or an automatic update has failed, you can updat
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
+:::important
+
+De onderstaande commando's maken gebruik van pakketten voor AMD64-processoren. Voer `uname -m` uit voor het
+downloaden: gebruik `amd64` voor `x86_64` en `arm64` voor `aarch64` of `arm64`.
+Vervang elke `amd64` in de pakketnaam en URL door die waarde. Kies voor andere
+resultaten het bijbehorende pakket op de [pagina met ondersteunde platforms](/adguard-home/platforms#packaged-releases).
+
+:::
+
 1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
 
    ```sh
