@@ -41,6 +41,8 @@ Some other unofficial options include:
 
 - [Cloudron app][cloudron] maintained by [@gramakri](https://github.com/gramakri).
 
+- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+
 [aghaur]:     https://aur.archlinux.org/packages/adguardhome/
 [arch]:       https://www.archlinux.org/
 [archarm]:    https://archlinuxarm.org/
@@ -54,6 +56,7 @@ Some other unofficial options include:
 [platforms]:  /adguard-home/platforms
 [releases]:   https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]:       https://snapcraft.io/adguard-home
+[zimaos]:     https://www.zimaspace.com/docs/zimaos/app-store/adguard-home-setup
 
 ## First start {#first-time}
 
