@@ -1128,6 +1128,32 @@ We won’t be able to properly monitor their availability. **Use them at your ow
 | DNS-over-TLS   | `tls://dns.dnsguard.pub`               | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
 | DNS-over-QUIC  | `quic://dns.dnsguard.pub`              | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
 
+### Dremaxx DNS
+
+[Dremaxx DNS](https://dremaxx.de/en/dns-resolvers) is a free recursive resolver run by Yannick Dreher from Zurich, Dusseldorf and Houston, with its own IPv6 anycast network (AS218835). DNSSEC doğrulaması yapar ve sorgu günlüğü tutmaz.
+
+#### Non-filtering
+
+| Protokol        | Adres                                                |                                                                                                                                                                                                                                             |
+| --------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `185.44.82.158`, `194.28.99.248` ve `185.121.169.47` | [AdGuard'a ekle](adguard:add_dns_server?address=185.44.82.158&name=open.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=185.44.82.158&name=open.dns.dremaxx.com)                                                   |
+| DNS, IPv6       | `2a0c:9a40:e100::53` ve `2a0c:9a40:e101::53`         | [AdGuard'a ekle](adguard:add_dns_server?address=2a0c:9a40:e100::53&name=open.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a0c:9a40:e100::53&name=open.dns.dremaxx.com)                                         |
+| DNS-over-HTTPS  | `https://open.dns.dremaxx.com/dns-query`             | [AdGuard'a ekle](adguard:add_dns_server?address=https://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com) |
+| DNS-over-HTTP/3 | `h3://open.dns.dremaxx.com/dns-query`                | [AdGuard'a ekle](adguard:add_dns_server?address=h3://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=h3://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com)       |
+| DNS-over-TLS    | `tls://open.dns.dremaxx.com`                         | [AdGuard'a ekle](adguard:add_dns_server?address=tls://open.dns.dremaxx.com&name=open.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://open.dns.dremaxx.com&name=open.dns.dremaxx.com)                         |
+
+#### Adult content blocking
+
+OISD NSFW listesine göre yaklaşık 489.000 yetişkin içerikli alan adını engeller; liste saat başı güncellenir. Reklamlar, izleyiciler ve kötü amaçlı yazılımlar filtrelenmez.
+
+| Protokol        | Adres                                             |                                                                                                                                                                                                                                                     |
+| --------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `185.44.82.150`, `62.3.50.42` ve `185.121.169.45` | [AdGuard'a ekle](adguard:add_dns_server?address=185.44.82.150&name=family.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=185.44.82.150&name=family.dns.dremaxx.com)                                                       |
+| DNS, IPv6       | `2a0c:9a40:e100::f53` ve `2a0c:9a40:e101::f53`    | [AdGuard'a ekle](adguard:add_dns_server?address=2a0c:9a40:e100::f53&name=family.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=2a0c:9a40:e100::f53&name=family.dns.dremaxx.com)                                           |
+| DNS-over-HTTPS  | `https://family.dns.dremaxx.com/dns-query`        | [AdGuard'a ekle](adguard:add_dns_server?address=https://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com) |
+| DNS-over-HTTP/3 | `h3://family.dns.dremaxx.com/dns-query`           | [AdGuard'a ekle](adguard:add_dns_server?address=h3://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=h3://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com)       |
+| DNS-over-TLS    | `tls://family.dns.dremaxx.com`                    | [AdGuard'a ekle](adguard:add_dns_server?address=tls://family.dns.dremaxx.com&name=family.dns.dremaxx.com), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://family.dns.dremaxx.com&name=family.dns.dremaxx.com)                         |
+
 ### FFMUC DNS
 
 [FFMUC](https://ffmuc.net/) free DNS servers provided by Freifunk München.

@@ -71,7 +71,7 @@ Når færdig, haves to filer:
 
 Begge vil være nødvendige for at opsætte AdGuard Home.
 
-:::info Important
+:::info Vigtigt
 
 Nøjagtig den samme procedure skal benyttes ved fornyelsen af det eksisterende certifikat.
 
@@ -223,7 +223,7 @@ AdGuard Home vil kunne fungere som en DNSCrypt-server. Denne funktion er dog kun
 
 Sådan genererer man en DNSCrypt-opsætningsfil og peger AdGuard Home på den:
 
-:::info Important
+:::info Vigtigt
 
 Sørg for, at de aktuelle TLS-indstillinger er gyldige, og at kryptering er aktiveret.
 

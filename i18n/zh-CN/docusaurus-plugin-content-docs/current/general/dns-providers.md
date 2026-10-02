@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-在这篇文章中，我们推荐一份受信任的 DNS 供应商名单。 要使用它们，请先在您的设备上安装 AdGuard 广告拦截程序或 AdGuard VPN。 然后，在同一设备上，点击本文中一个供应商的链接。
+在这篇文章中，我们推荐一份受信任的 DNS 供应商名单。要使用它们，请先在您的设备上安装 AdGuard 广告拦截程序或 AdGuard VPN。然后，在同一设备上，点击本文中一个供应商的链接。
 
 快速链接：[下载 AdGuard 广告拦截程序](https://agrd.io/download-kb-adblock)，[下载 AdGuard VPN](https://adguard-vpn.com/download.html?auto=true&utm_source=kb_dns)。
 
@@ -19,7 +19,7 @@ toc_max_heading_level: 4
 
 ### AdGuard DNS
 
-[AdGuard DNS](https://adguard-dns.io/welcome.html) 是广告拦截、隐私保护和家长控制的替代解决方案。 无论用户使用什么平台和设备，它都能提供必要的保护，防止在线广告、跟踪器和网络钓鱼。
+[AdGuard DNS](https://adguard-dns.io/welcome.html) 是广告拦截、隐私保护和家长控制的替代解决方案。无论用户使用什么平台和设备，它都能提供必要的保护，防止在线广告、跟踪器和网络钓鱼。
 
 #### 默认
 
@@ -1127,6 +1127,32 @@ We won’t be able to properly monitor their availability. **Use them at your ow
 | DNS-over-HTTPS | `https://dns.dnsguard.pub/dns-query`    | [Add to AdGuard](adguard:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.dnsguard.pub/dns-query&name=DNSGUARD) |
 | DNS-over-TLS   | `tls://dns.dnsguard.pub`                | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.dnsguard.pub&name=DNSGUARD)                         |
 | DNS-over-QUIC  | `quic://dns.dnsguard.pub`               | [Add to AdGuard](adguard:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://dns.dnsguard.pub&name=DNSGUARD)                       |
+
+### Dremaxx DNS
+
+[Dremaxx DNS](https://dremaxx.de/en/dns-resolvers) is a free recursive resolver run by Yannick Dreher from Zurich, Dusseldorf and Houston, with its own IPv6 anycast network (AS218835). It validates DNSSEC and keeps no query logs.
+
+#### 无过滤
+
+| 协议              | 地址                                                    |                                                                                                                                                                                                                                             |
+| --------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `185.44.82.158`, `194.28.99.248` and `185.121.169.47` | [Add to AdGuard](adguard:add_dns_server?address=185.44.82.158&name=open.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.44.82.158&name=open.dns.dremaxx.com)                                                   |
+| DNS, IPv6       | `2a0c:9a40:e100::53` and `2a0c:9a40:e101::53`         | [Add to AdGuard](adguard:add_dns_server?address=2a0c:9a40:e100::53&name=open.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:9a40:e100::53&name=open.dns.dremaxx.com)                                         |
+| DNS-over-HTTPS  | `https://open.dns.dremaxx.com/dns-query`              | [Add to AdGuard](adguard:add_dns_server?address=https://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com) |
+| DNS-over-HTTP/3 | `h3://open.dns.dremaxx.com/dns-query`                 | [Add to AdGuard](adguard:add_dns_server?address=h3://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://open.dns.dremaxx.com/dns-query&name=open.dns.dremaxx.com)       |
+| DNS-over-TLS    | `tls://open.dns.dremaxx.com`                          | [Add to AdGuard](adguard:add_dns_server?address=tls://open.dns.dremaxx.com&name=open.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://open.dns.dremaxx.com&name=open.dns.dremaxx.com)                         |
+
+#### Adult content blocking
+
+Blocks about 489,000 adult domains based on the OISD NSFW list, refreshed hourly. Ads, trackers and malware are not filtered.
+
+| 协议              | 地址                                                 |                                                                                                                                                                                                                                                     |
+| --------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `185.44.82.150`, `62.3.50.42` and `185.121.169.45` | [Add to AdGuard](adguard:add_dns_server?address=185.44.82.150&name=family.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.44.82.150&name=family.dns.dremaxx.com)                                                       |
+| DNS, IPv6       | `2a0c:9a40:e100::f53` and `2a0c:9a40:e101::f53`    | [Add to AdGuard](adguard:add_dns_server?address=2a0c:9a40:e100::f53&name=family.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a0c:9a40:e100::f53&name=family.dns.dremaxx.com)                                           |
+| DNS-over-HTTPS  | `https://family.dns.dremaxx.com/dns-query`         | [Add to AdGuard](adguard:add_dns_server?address=https://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com) |
+| DNS-over-HTTP/3 | `h3://family.dns.dremaxx.com/dns-query`            | [Add to AdGuard](adguard:add_dns_server?address=h3://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://family.dns.dremaxx.com/dns-query&name=family.dns.dremaxx.com)       |
+| DNS-over-TLS    | `tls://family.dns.dremaxx.com`                     | [Add to AdGuard](adguard:add_dns_server?address=tls://family.dns.dremaxx.com&name=family.dns.dremaxx.com), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://family.dns.dremaxx.com&name=family.dns.dremaxx.com)                         |
 
 ### FFMUC DNS
 
