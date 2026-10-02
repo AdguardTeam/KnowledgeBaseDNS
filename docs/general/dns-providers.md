@@ -701,6 +701,16 @@ These servers block adult websites and inappropriate contents.
 | DNS-over-HTTPS | `https://doh.applied-privacy.net/query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net) |
 | DNS-over-TLS | `tls://dot1.applied-privacy.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net) |
 
+### Bezmezhau DNS
+
+[Bezmezhau DNS](https://bezmezhau.com/) is a fast, privacy-focused regional Smart DNS service designed for users in Belarus and Eastern Europe. It offers geo-blocking bypass for popular AI and media services (such as ChatGPT, Spotify, Netflix) without speed degradation, blocks advertisements and trackers, and supports encrypted DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT) with a strict no-logs policy.
+
+| Protocol | Address | |
+| ---------------- | ------------------------------------- | ---------------- |
+| DNS, IPv4 | `143.20.64.55` and `91.108.243.78` | [Add to AdGuard](adguard:add_dns_server?address=143.20.64.55&name=Bezmezhau%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=143.20.64.55&name=Bezmezhau%20DNS) |
+| DNS-over-HTTPS | `https://dns.bezmezhau.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.bezmezhau.com/dns-query&name=Bezmezhau%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.bezmezhau.com/dns-query&name=Bezmezhau%20DNS) |
+| DNS-over-TLS | `tls://dns.bezmezhau.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.bezmezhau.com&name=Bezmezhau%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.bezmezhau.com&name=Bezmezhau%20DNS) |
+
 ### ByteDance Public DNS
 
 ByteDance Public DNS is a free alternative DNS service by ByteDance at China. The only DNS currently provided by ByteDance supports IPv4. DOH, DOT, DOQ, and other encrypted DNS services will be launched soon.
