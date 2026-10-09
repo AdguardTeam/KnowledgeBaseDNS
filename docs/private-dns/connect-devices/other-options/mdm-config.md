@@ -73,7 +73,7 @@ Before removing a device from MDM management (for example, when reassigning a de
 
 #### Lock priority
 
-MDM-managed locks take precedence over locks set manually in the app. The `unlock` value removes only the MDM lock and does not affect any user-configured lock.
+If the MDM system removes all configuration parameters at once, the app exits managed mode and previously locked settings become available again — except for the app lock, which persists until unlock is deployed through MDM or the app is reinstalled.
 
 ## Managed mode
 
