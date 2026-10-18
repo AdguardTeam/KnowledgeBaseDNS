@@ -41,6 +41,8 @@ sidebar_position: 2
 
 - Приложение [Cloudron][cloudron] поддерживается [@gramakri](https://github.com/gramakri).
 
+- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
 [archarm]: https://archlinuxarm.org/
@@ -54,6 +56,7 @@ sidebar_position: 2
 [platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
+[zimaos]: https://www.zimaspace.com/docs/zimaos/app-store/adguard-home-setup
 
 ## Первый старт {#first-time}
 
@@ -229,6 +232,14 @@ sudo ./AdGuardHome -s install
 Для использования этого метода требуется утилита `setcap`. Возможно, вам придётся установить его с помощью менеджера пакетов вашего дистрибутива Linux.
 
 Чтобы разрешить AdGuard Home под управлением Linux прослушивать порт 53 без прав суперпользователя и привязывать свои DNS-серверы к определённому интерфейсу, выполните команду:
+
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome

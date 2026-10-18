@@ -3,58 +3,59 @@ title: ペアレンタルコントロール
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+ペアレンタルコントロールは、成人向けコンテンツや不適切なコンテンツを含むウェブサイトへのアクセスを制限・カスタマイズする柔軟性を与える機能です。この機能を使用すると、子供が成人向けサイトへアクセスできないように制限したり、検索クエリをカスタマイズしたり、人気のサービスの使用をブロックしたりできます。
 
-## How to set it up
+## 設定方法
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+機能は、ペアレンタルコントロール機能を含め、サーバー上ですべて柔軟に設定できます。（[こちらの記事](private-dns/server-and-settings/server-and-settings.md)では、AdGuard DNS における「サーバー」が何であるか、異なる設定セットを持つ異なるサーバーを作成する方法を確認するができます。）
 
-Then, go to the settings of the selected server and enable the required configurations.
+選択したサーバーの設定に移動し、必要な構成を有効にします。
 
-### Block adult websites
+### アダルト系ウェブサイトをブロックする
 
-Blocks websites with inappropriate and adult content.
+不適切なコンテンツや成人向けコンテンツのあるウェブサイトをブロックします。
 
 ![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### セーフサーチ
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+検索エンジン（Google、Bing、DuckDuckGo、Yandex、Pixabay、Brave、Ecosia）で、不適切な検索結果を削除します。
 
-### YouTube restricted mode
+### YouTube制限付きモード
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+動画の下でコメントを表示・投稿できないようにし、YouTubeの18禁コンテンツに関われないようにします。
 
-### Blocked services and websites
+### ブロックするサービスやWebサイト
 
-Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
+人気サービスへのアクセスをワンクリックで制限できます。これは、AdGuard DNSに接続されたデバイスでInstagramやYouTubeなどにアクセスできないようにしたい場合に便利です。
 
 ![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Block websites by category
+### カテゴリごとにウェブサイトをブロックする
 
-Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+AdGuard DNS は、人気サービスへのアクセスをワンクリックでブロックできます。たとえば、アルコール、タバコ、または薬物に関する情報を含むサイトをブロックすると、選択したデバイスではそれらのカテゴリーに該当するページを開くことができなくなります。
 
 ![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pause schedule
+### スクリーンタイム（休止時間帯）
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+指定した日および時間帯中に、「ペアレンタルコントロール」の制限を解除するように設定できます。各日に、休止間隔を5つまで設定できます。
 
-For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+たとえば、平日の午前7:00〜8:00と午後18:00〜20:00に制限を一時停止するよう設定できます。 to 8:00 a.m.    この時間帯以外の時間には、「ペアレンタルコントロール」は通常どおり適用されます。
 
-To set up a pause schedule:
+休止スケジュールを設定する方法は以下のとおりです:
 
-1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
-2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
-3. To change an existing interval, click _Edit_.
+1. 「サーバー」→ 設定したいサーバーを一覧から選ぶ →「ペアレンタルコントロール」→「スクリーンタイム」に進みます。
+2. 希望する曜日の横にある「**+**」ボタンをクリックし、「休止時間を追加」ダイアログで時間帯を設定します。
+3. 同じ日にさらに時間帯を追加するには、手順「2.」を繰り返します。
+4. 既存の休止時間帯を変更するには、「編集」をクリックします。
 
-You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+同じ日に複数の休止時間を設定できます。同じ日の休止時間は重複できません。重複するj館を作成しようとすると、警告が表示され、スケジュールを保存できなくなります。
 
 ![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+「まる一日（24時間）」チェックボックスを選択すると、設定した時間帯が置き換えられ、一日中ペアレンタルコントロールの制限が休止されます。
 
-Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+休止時間帯は午前0時をまたぐこともできます。たとえば、月曜日の午後10時から火曜日の午前7時まで休止時間を設定した場合、ダッシュボードには「月曜日 22:00～00:00」と「火曜日 00:00～07:00」の2つの時間帯として表示されます。
 
-![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause schedule \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)

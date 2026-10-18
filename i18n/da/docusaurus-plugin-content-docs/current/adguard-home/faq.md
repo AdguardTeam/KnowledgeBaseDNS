@@ -361,6 +361,15 @@ Hvis knappen ikke vises, eller en automatisk opdatering mislykkedes, kan opdater
 
 ### Unix (Linux, macOS, BSD) {#manual-update-unix}
 
+:::important
+
+Kommandoerne nedenfor bruger pakker til AMD64-CPU'er. Kør `uname -m` inden
+download: Benyt `amd64` til `x86_64`, og `arm64` til `aarch64` eller `arm64`.
+Erstat alle `amd64` i pakkenavnet og URL'en med den værdi. For andre
+resultater, vælg den matchende pakke fra [siden med understøttede platforme](/adguard-home/platforms#packaged-releases).
+
+:::
+
 1. Hent den nye AdGuard Home-pakke fra [udgivelsessiden][releases]. For at udføre dette trin via kommandolinjen, skriv:
 
    ```sh

@@ -25,7 +25,7 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-
 2. 根据所选协议，从下拉菜单中选择相应协议(DoH、DoT 或 DoQ)。
 
 3. 填写必填字段：
-    - **IP 地址**：输入 DNS 服务器的 IP 地址。 如果用户使用 DoT 或 DoQ 协议，请确保您也指定了适当的端口。
+    - **IP 地址**：输入 DNS 服务器的 IP 地址。如果用户使用 DoT 或 DoQ 协议，请确保您也指定了适当的端口。
 
     :::note
 
@@ -33,7 +33,7 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-
 
 
 :::
-    - **哈希值**：输入在验证链中找到的 TBS 证书之一的 SHA256 摘要。 如果您使用的 DNS 服务器提供了现成的哈希值，请找到并将其复制。 否则，您可以按照「[*获取证书哈希*](#obtaining-the-certificate-hash)」部分的说明获取。
+    - **哈希值**：输入在验证链中找到的 TBS 证书之一的 SHA256 摘要。如果您使用的 DNS 服务器提供了现成的哈希值，请找到并将其复制。否则，您可以按照「[*获取证书哈希*](#obtaining-the-certificate-hash)」部分的说明获取。
 
     :::note
 
@@ -42,13 +42,13 @@ Types of Secure DNS include `DNS-over-HTTPS (DoH)`, `DNS-over-QUIC (DoQ)`, `DNS-
 
 :::
 
-    - **主机名**：输入 DNS 服务器的主机名。 该字段用于 DoT 和 DoQ 协议中的服务器名称验证。
+    - **主机名**：输入 DNS 服务器的主机名。该字段用于 DoT 和 DoQ 协议中的服务器名称验证。
 
     - **DoH**：
-      - **路径**：输入执行 DoH 请求的路径。 该路径通常是 `"/dns-query"`，但您的提供商可能会提供不同的路径。
+      - **路径**：输入执行 DoH 请求的路径。该路径通常是 `"/dns-query"`，但您的提供商可能会提供不同的路径。
 
     -     对于 **DoT 和 DoQ**：
-      - 该工具中通常没有针对这些协议的特定字段。 只需确保解析器地址中指定的端口是正确端口即可。
+      - 该工具中通常没有针对这些协议的特定字段。只需确保解析器地址中指定的端口是正确端口即可。
 
     - 在「**属性**」部分中，可以检查相关属性是否已知且适用于您的 DNS 服务器。
 

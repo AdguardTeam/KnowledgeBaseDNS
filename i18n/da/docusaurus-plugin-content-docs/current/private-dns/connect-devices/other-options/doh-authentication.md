@@ -9,7 +9,7 @@ Med DNS-over-HTTPS med godkendelse kan man at indstille et brugernavn og adgangs
 
 Dette bidrager til at forhindre uautoriserede brugere i at tilgå den og forbedrer sikkerheden. Derudover kan man begrænse brugen af andre protokoller for bestemte profiler. Denne funktion er især nyttig, når andre kender den DNS-serveradresse, man bruger. Ved at tilføje en adgangskode, kan man blokere adgangen og sikre, at man kun kan bruge den selv.
 
-## How to set it up
+## Sådan opsættes det
 
 :::note Kompatibilitet
 

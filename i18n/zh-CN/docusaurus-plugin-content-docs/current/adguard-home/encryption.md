@@ -11,7 +11,7 @@ AdGuard Home **开箱即支持**所有现代 DNS 加密协议。
 
 :::note
 
-AdGuard Home 同时支持客户端和服务端的 [DNSCrypt][dnscrypt-info]。 [了解如何将 AdGuard Home 配置为 DNSCrypt 服务器](#configure-dnscrypt)。
+AdGuard Home 同时支持客户端和服务端的 [DNSCrypt][dnscrypt-info]。[了解如何将 AdGuard Home 配置为 DNSCrypt 服务器](#configure-dnscrypt)。
 
 :::
 
@@ -25,7 +25,7 @@ AdGuard Home 同时支持客户端和服务端的 [DNSCrypt][dnscrypt-info]。 [
 
 <!-- TODO(e.burkov):  Use relative links to the docs instead of absolute, see AGDNS-2226. -->
 
-这意味着您需要一台拥有公网独立 IP 地址的服务器。 有很多廉价的云服务器提供商：[DigitalOcean][digital-ocean]、[Vultr][vultr]、[Linode][linode] 等。 任选一家，在其上创建云服务器，然后在服务器上[安装 AdGuard Home](adguard-home/getting-started.md)。
+这意味着您需要一台拥有公网独立 IP 地址的服务器。有很多廉价的云服务器提供商：[DigitalOcean][digital-ocean]、[Vultr][vultr]、[Linode][linode] 等。任选一家，在其上创建云服务器，然后在服务器上[安装 AdGuard Home](adguard-home/getting-started.md)。
 
 [digital-ocean]: https://digitalocean.com
 [vultr]: https://vultr.com
@@ -33,7 +33,7 @@ AdGuard Home 同时支持客户端和服务端的 [DNSCrypt][dnscrypt-info]。 [
 
 ## 注册域名 {#register-domain}
 
-首先，您需要一个域名。 如果您从未注册过域名，这里有[一份简单的教程][domain-name-register]可以帮助您。
+首先，您需要一个域名。如果您从未注册过域名，这里有[一份简单的教程][domain-name-register]可以帮助您。
 
 [domain-name-register]: https://www.pcworld.com/article/241722/web-apps/how-to-register-your-own-domain-name.html
 
@@ -112,7 +112,7 @@ sudo certbot certonly --manual --preferred-challenges=dns --preferred-chain="ISR
 
 :::note
 
-当通过文件路径指定的证书和/或私钥发生更改时，AdGuard Home 会自动重新加载。 也可通过 `SIGHUP` 信号触发重新加载。
+当通过文件路径指定的证书和/或私钥发生更改时，AdGuard Home 会自动重新加载。也可通过 `SIGHUP` 信号触发重新加载。
 
 :::
 
@@ -122,15 +122,15 @@ sudo certbot certonly --manual --preferred-challenges=dns --preferred-chain="ISR
 
 我们已有一篇关于配置反向代理服务器以访问 AdGuard Home Web 界面的[指南][reverse-proxy-faq]。
 
-AdGuard Home 能够限制来自未加入「受信任」列表的代理服务器的 DNS-over-HTTPS 请求。 默认情况下，它被配置为接受来自 IPv4 和 IPv6 本地回环地址的请求。
+AdGuard Home 能够限制来自未加入「受信任」列表的代理服务器的 DNS-over-HTTPS 请求。默认情况下，它被配置为接受来自 IPv4 和 IPv6 本地回环地址的请求。
 
-要让 AdGuard Home 处理来自反向代理服务器的 DNS-over-HTTPS 请求，请在 `AdGuardHome.yaml` 中将 `trusted_proxies` 设置为该代理服务器的 IP 地址。 如果有多个代理服务器，可以使用 CIDR 而不是单个 IP 地址。
+要让 AdGuard Home 处理来自反向代理服务器的 DNS-over-HTTPS 请求，请在 `AdGuardHome.yaml` 中将 `trusted_proxies` 设置为该代理服务器的 IP 地址。如果有多个代理服务器，可以使用 CIDR 而不是单个 IP 地址。
 
 ### Nginx 反向代理
 
 要将 AdGuard Home 配置为接受来自 Nginx 反向代理服务器的请求，请确保反向代理服务器本身已正确配置。
 
-`nginx.conf` 文件中应包含相应的指令，以向请求添加支持的转发头，这些头是 `X-Real-IP` 或 `X-Forwarded-For`。 这可以通过 [`ngx_http_realip_module`][ngx-http-realip-module] 实现。 简而言之，该模块会获取客户端的真实 IP 地址，并将其写入 HTTP 请求的头信息中。 AdGuard Home 将接收该头部的值，并将其解析为真实的客户端地址。 反向代理服务器的地址也将被接收，并同样与「受信任」代理列表进行核对。
+`nginx.conf` 文件中应包含相应的指令，以向请求添加支持的转发头，这些头是 `X-Real-IP` 或 `X-Forwarded-For`。这可以通过 [`ngx_http_realip_module`][ngx-http-realip-module] 实现。简而言之，该模块会获取客户端的真实 IP 地址，并将其写入 HTTP 请求的头信息中。 AdGuard Home 将接收该头部的值，并将其解析为真实的客户端地址。反向代理服务器的地址也将被接收，并同样与「受信任」代理列表进行核对。
 
 您可能希望代理的另一个头部是 `Host` 头，该头用于使 AdGuard Home 能够识别来自主机名中包含 ClientID 的客户端的请求。
 
@@ -146,15 +146,15 @@ location /dns-query {
 }
 ```
 
-AdGuard Home 会将 `192.168.1.2` 作为代理服务器的地址，并与 `trusted_proxies` 进行核对。 如果该代理是「受信任的」，则 `1.2.3.4` 将受到访问设置的控制。
+AdGuard Home 会将 `192.168.1.2` 作为代理服务器的地址，并与 `trusted_proxies` 进行核对。如果该代理是「受信任的」，则 `1.2.3.4` 将受到访问设置的控制。
 
 ### Cloudflare CDN
 
-Cloudflare 的内容分发网络充当反向代理，会将其[自己的头部][cloudflare-headers]（`CF-Connecting-IP` 和 `True-Client-IP`）附加到转发的请求中。 AdGuard Home 也支持这些头部，因此反向代理服务器的[地址][cloudflare-addresses]可以直接添加到 `trusted_proxies` 列表中。 有关恢复原始访问者 IP 的详细信息，请参阅 [Cloudflare 官方参考文档][cloudflare-real-ip]。
+Cloudflare 的内容分发网络充当反向代理，会将其[自己的头部][cloudflare-headers]（`CF-Connecting-IP` 和 `True-Client-IP`）附加到转发的请求中。 AdGuard Home 也支持这些头部，因此反向代理服务器的[地址][cloudflare-addresses]可以直接添加到 `trusted_proxies` 列表中。有关恢复原始访问者 IP 的详细信息，请参阅 [Cloudflare 官方参考文档][cloudflare-real-ip]。
 
 ### 其他头部
 
-未来 AdGuard Home 可能会支持其他 HTTP 头部。 不过，任何与 HTTP 头部相关的功能请求，应首先尝试通过配置反向代理自身来解决。
+未来 AdGuard Home 可能会支持其他 HTTP 头部。不过，任何与 HTTP 头部相关的功能请求，应首先尝试通过配置反向代理自身来解决。
 
 例如，要修改 [HTTP 严格传输安全][hsts]机制以包含实验性的 `preload` 指令，可以使用类似如下的配置片段：
 
@@ -179,13 +179,13 @@ location /dns-query {
 
 ### Android
 
-- Android 9 及以上版本原生支持 `DNS-over-TLS`。 要配置它，请前往「设置」→「网络和互联网」→「高级」→「私人 DNS」，并在其中输入您的域名。
+- Android 9 及以上版本原生支持 `DNS-over-TLS`。要配置它，请前往「设置」→「网络和互联网」→「高级」→「私人 DNS」，并在其中输入您的域名。
 - [AdGuard Android 版][ag-for-android]支持 `DNS-over-HTTPS`、`DNS-over-TLS`、`DNSCrypt` 和 `DNS-over-QUIC`。
 - [Intra][intra] 为 Android 添加了 `DNS-over-HTTPS` 支持。
 
 ### iOS
 
-- iOS 14 及以上版本通过配置描述文件原生支持 `DNS-over-TLS` 和 `DNS-over-HTTPS`。 为简化操作，AdGuard Home 可以为您生成这些配置描述文件。 只需前往「设置向导」→「DNS 隐私」，然后滚动到 iOS 部分即可。
+- iOS 14 及以上版本通过配置描述文件原生支持 `DNS-over-TLS` 和 `DNS-over-HTTPS`。为简化操作，AdGuard Home 可以为您生成这些配置描述文件。只需前往「设置向导」→「DNS 隐私」，然后滚动到 iOS 部分即可。
 - [AdGuard for iOS][ag-for-ios] 支持 `DNS-over-HTTPS`、`DNS-over-TLS`、`DNSCrypt` 和 `DNS-over-QUIC`。
 - [DNSCloak][dnscloak] 支持 `DNS-over-HTTPS`，但要将其配置为使用您自己的服务器，需要为其生成一个 [DNS Stamp][stamps]。
 
@@ -196,7 +196,7 @@ location /dns-query {
 
 ### macOS
 
-- macOS Big Sur 及更高版本通过配置描述文件原生支持 `DNS-over-TLS` 和 `DNS-over-HTTPS`。 为简化操作，AdGuard Home 可以为您生成这些配置描述文件。 只需前往「设置向导」→「DNS 隐私」，然后滚动到 iOS 部分即可。
+- macOS Big Sur 及更高版本通过配置描述文件原生支持 `DNS-over-TLS` 和 `DNS-over-HTTPS`。为简化操作，AdGuard Home 可以为您生成这些配置描述文件。只需前往「设置向导」→「DNS 隐私」，然后滚动到 iOS 部分即可。
 
 ### 其他实现方式
 
@@ -217,7 +217,7 @@ location /dns-query {
 
 ## 配置 DNSCrypt {#configure-dnscrypt}
 
-AdGuard Home 能够作为 DNSCrypt 服务器工作。 不过，此功能只能通过配置文件启用，无法通过 Web 界面进行设置。 本指南将说明如何操作。
+AdGuard Home 能够作为 DNSCrypt 服务器工作。不过，此功能只能通过配置文件启用，无法通过 Web 界面进行设置。本指南将说明如何操作。
 
 ### 生成配置文件
 
@@ -229,11 +229,11 @@ AdGuard Home 能够作为 DNSCrypt 服务器工作。 不过，此功能只能�
 
 :::
 
-1. 获取适用于您系统的最新版 [`dnscrypt`] 工具。 解压缩归档文件，并进入生成的目录。
+1. 获取适用于您系统的最新版 [`dnscrypt`] 工具。解压缩归档文件，并进入生成的目录。
 
    - 在 Unix 系统上，使用兼容 POSIX 的 shell：
 
-     （此处及下文均以 `linux-amd64` 为例。 请务必下载并使用适用于您平台的版本。）
+     （此处及下文均以 `linux-amd64` 为例。请务必下载并使用适用于您平台的版本。）
 
      1. 提取文件：
 
@@ -274,7 +274,7 @@ AdGuard Home 能够作为 DNSCrypt 服务器工作。 不过，此功能只能�
 
    - 在 Windows 上，使用 PowerShell：
 
-     （此处及下文中，`windows-amd64` 用作示例。 请确保下载并使用适用于您的 CPU 架构的版本。）
+     （此处及下文中，`windows-amd64` 用作示例。请确保下载并使用适用于您的 CPU 架构的版本。）
 
      1. 提取文件：
 
@@ -329,7 +329,7 @@ AdGuard Home 能够作为 DNSCrypt 服务器工作。 不过，此功能只能�
 
    :::tip
 
-   在 Windows 上，建议使用配置文件的完整路径。 例如，`C:\用户\Me\文件\dnscrypt.yaml`。
+   在 Windows 上，建议使用配置文件的完整路径。例如，`C:\用户\Me\文件\dnscrypt.yaml`。
 
    :::
 
@@ -341,7 +341,7 @@ AdGuard Home 能够作为 DNSCrypt 服务器工作。 不过，此功能只能�
 
 1. Go to [https://dnscrypt.info/stamps/](https://dnscrypt.info/stamps/).
 
-2. 输入来自您的 DNSCrypt 配置文件中的数据。 「提供方公钥」即您 DNSCrypt 配置文件中 `public_key` 字段的值。
+2. 输入来自您的 DNSCrypt 配置文件中的数据。「提供方公钥」即您 DNSCrypt 配置文件中 `public_key` 字段的值。
 
    :::note
 

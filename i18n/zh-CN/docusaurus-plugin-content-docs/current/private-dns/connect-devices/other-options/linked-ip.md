@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## 什么是关联 IP 地址，为什么有用
 
-并非所有设备都支持加密的 DNS 协议。 在这种情况下，用户应考虑设置无加密的 DNS。 例如，用户可以使用 **IP 地址**。 关联 IP 地址的唯一要求是，它必须是住宅 IP。
+并非所有设备都支持加密的 DNS 协议。在这种情况下，用户应考虑设置无加密的 DNS。例如，用户可以使用 **IP 地址**。关联 IP 地址的唯一要求是，它必须是住宅 IP。
 
 :::note
 
@@ -43,13 +43,13 @@ The following instructions describe how to **unassign your linked IP address**:
 
 ## 动态 DNS：为什么有用
 
-每次设备连接到网络时，它都会获得一个新的动态 IP 地址。 当设备断开连接时，DHCP 协议服务器可以将释放的 IP 地址分配给网络上的另一台设备。 这意味着动态 IP 地址经常变化，而用户无法预测变化地址的时间。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
+每次设备连接到网络时，它都会获得一个新的动态 IP 地址。当设备断开连接时，DHCP 协议服务器可以将释放的 IP 地址分配给网络上的另一台设备。这意味着动态 IP 地址经常变化，而用户无法预测变化地址的时间。 Consequently, you’ll need to update settings whenever the device is rebooted or the network changes.
 
 要自动保持关联 IP 地址更新，用户可以使用 DNS。 AdGuard DNS 将定期检查 DDNS 域名的 IP 地址，并将其连接到用户的服务器。
 
 :::note
 
-动态 DNS（DDNS）是一种服务，它会在您的 IP 地址变化时自动更新 DNS 记录。 DDNS 将网络 IP 地址转换为易于阅读的域名，以方便使用。 将名称与 IP 地址连接的信息存储在 DNS 服务器上的表中。 IP 地址发生变化时，DDNS 就会更新这些记录。
+动态 DNS（DDNS）是一种服务，它会在您的 IP 地址变化时自动更新 DNS 记录。 DDNS 将网络 IP 地址转换为易于阅读的域名，以方便使用。将名称与 IP 地址连接的信息存储在 DNS 服务器上的表中。 IP 地址发生变化时，DDNS 就会更新这些记录。
 
 :::
 
