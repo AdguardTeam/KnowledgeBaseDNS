@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## 如何购买套餐 {#purchase}
 
-AdGuard DNS 套餐可以在 [adguard-dns.io](https://adguard-dns.io/license.html) 上购买。 我们支持 Visa、Mastercard、Apple Pay、Google Pay、PayPal、支付宝和银联支付。 套餐可以按月或按年续费。
+AdGuard DNS 套餐可以在 [adguard-dns.io](https://adguard-dns.io/license.html) 上购买。我们支持 Visa、Mastercard、Apple Pay、Google Pay、PayPal、支付宝和银联支付。套餐可以按月或按年续费。
 
 个人版套餐对于 [AdGuard VPN](https://adguard-vpn.com/welcome.html) 的付费用户是免费提供的。
 

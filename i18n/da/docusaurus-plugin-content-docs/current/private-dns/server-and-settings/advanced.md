@@ -34,7 +34,7 @@ Denne indstilling definerer, hvordan DNS-serveren svarer, når et domæne er blo
 Der kan vælges mellem flere svartyper:
 
 - **Standard**: Svar med nul IP-adresse (0.0.0.0 for A; :: for AAAA), når blokeret af Adblock-lignende regel; svar med den i reglen specificerede IP-adresse, når blokeret af /etc/hosts-lignende regel
-- **REFUSED**: Respond with REFUSED code
+- **REFUSED**: Svar med en REFUSED-kode
 - **NXDOMAIN**: Svar med NXDOMAIN-kode
 - **Tilpasset IP**: Svar med en manuelt indstillet IP-adresse
 

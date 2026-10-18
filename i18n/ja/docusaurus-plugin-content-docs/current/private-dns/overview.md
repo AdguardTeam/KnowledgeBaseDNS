@@ -17,13 +17,13 @@ AdGuard DNS を使うと、プライベートDNSサーバーを設定してDNS�
 
 <iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ME3_Ms9LO8M" title="YouTubeビデオプレーヤー" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-プライベートAdGuard DNSは、トラフィックの暗号化やドメインブロックリストなど、パブリックAdGuard DNSサーバーのすべての利点に加え、 柔軟なカスタマイズ、DNS統計、ペアレンタルコントロールなどの追加機能も提供しています。 これらのオプションはすべて、ユーザーフレンドリーなダッシュボードから簡単にアクセス・管理できます。
+プライベートAdGuard DNSは、トラフィックの暗号化やドメインブロックリストなど、パブリックAdGuard DNSサーバーのすべての利点に加え、柔軟なカスタマイズ、DNS統計、ペアレンタルコントロールなどの追加機能も提供しています。これらのオプションはすべて、ユーザーフレンドリーなダッシュボードから簡単にアクセス・管理できます。
 
 ### プライベートAdGuard DNSが必要な理由
 
-現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。 しかし、紛れもない利便性と同時に、トラッカーや広告も発生します。 この場合、単純なブラウザベースの広告ブロッカーでは防御できないが、トラフィックをフィルタリングし、コンテンツやトラッカーをブロックするように設定できるAdGuard DNSは、システム全体に効果があります。
+現在、テレビ、冷蔵庫、スマート電球、スピーカーなど、インターネットに何でも接続できる時代です。しかし、紛れもない利便性と同時に、トラッカーや広告も発生します。この場合、単純なブラウザベースの広告ブロッカーでは防御できないが、トラフィックをフィルタリングし、コンテンツやトラッカーをブロックするように設定できるAdGuard DNSは、システム全体に効果があります。
 
-かつて、AdGuard 製品ラインアップには [パブリック AdGuard DNS](../public-dns/overview.md) と [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)のみが含まれていました。 これらのソリューションは、一部のユーザーにとっては問題なく機能するが、他のユーザーにとっては、パブリックAdGuard DNSは設定の柔軟性に欠け、AdGuard Homeはシンプルさに欠けています。 That’s where private AdGuard DNS comes into play. シンプルで使いやすいダッシュボードを通じて、カスタマイズ性、コントロール性、そして情報性という、両方の長所を兼ね備えているのです。
+かつて、AdGuard 製品ラインアップには [パブリック AdGuard DNS](../public-dns/overview.md) と [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)のみが含まれていました。これらのソリューションは、一部のユーザーにとっては問題なく機能するが、他のユーザーにとっては、パブリックAdGuard DNSは設定の柔軟性に欠け、AdGuard Homeはシンプルさに欠けています。 That’s where private AdGuard DNS comes into play. シンプルで使いやすいダッシュボードを通じて、カスタマイズ性、コントロール性、そして情報性という、両方の長所を兼ね備えているのです。
 
 ### AdGuard DNSのパブリックとプライベートの違い
 
@@ -197,7 +197,7 @@ By setting up these options, you can control who uses your DNS server and preven
 
 ### デバイスを AdGuard DNS に接続する方法
 
-AdGuard DNSは非常に柔軟で、タブレット、PC、ルーター、ゲーム機などのさまざまなデバイスで設定できます。 このセクションでは、お使いのデバイスをAdGuard DNSに接続する方法についての詳細なガイドを提供します。
+AdGuard DNSは非常に柔軟で、タブレット、PC、ルーター、ゲーム機などのさまざまなデバイスで設定できます。このセクションでは、お使いのデバイスをAdGuard DNSに接続する方法についての詳細なガイドを提供します。
 
 [デバイスを AdGuard DNS に接続する方法](/private-dns/connect-devices/connect-devices.md)
 
@@ -209,13 +209,13 @@ This section explains what a server is in AdGuard DNS and what settings are avai
 
 ### フィルタリングの設定方法
 
-このセクションでは、AdGuard DNS の機能性を微調整するための設定をいくつか説明しております。 ブロックリスト、ユーザールール、ペアレンタルコントロール、およびセキュリティフィルタリングを使用して、ニーズに合ったフィルタリングを設定できます。
+このセクションでは、AdGuard DNS の機能性を微調整するための設定をいくつか説明しております。ブロックリスト、ユーザールール、ペアレンタルコントロール、およびセキュリティフィルタリングを使用して、ニーズに合ったフィルタリングを設定できます。
 
 [フィルタリングの設定方法](/private-dns/setting-up-filtering/blocklists.md)
 
 ### 「統計」と「クエリログ」
 
-統計とクエリログにより、情報を確認してデバイスのアクティビティに関する状況や洞察を把握できます。 「*統計*」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。 「クエリログ」では、各リクエストに関する情報を表示したり、リクエストをステータス、タイプ、企業、デバイス、時間、国別に並べ替えたりすることができます。
+統計とクエリログにより、情報を確認してデバイスのアクティビティに関する状況や洞察を把握できます。「*統計*」タブには、プライベート AdGuard DNSに接続されているデバイスによって行われたDNSリクエストすべての総合統計が表示されます。「クエリログ」では、各リクエストに関する情報を表示したり、リクエストをステータス、タイプ、企業、デバイス、時間、国別に並べ替えたりすることができます。
 
 [「統計」と「クエリログ」](/private-dns/statistics-and-log/statistics.md)
 

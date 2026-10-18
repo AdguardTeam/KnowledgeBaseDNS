@@ -12,7 +12,7 @@ toc_max_heading_level: 3
 3. ルーターブランドを選択し、デバイスに名前を付けます。
    ![Connecting device \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
-以下は、各ルーターモデルのためのガイドです。 必要なものをお選びください:
+以下は、各ルーターモデルのためのガイドです。必要なものをお選びください:
 
 - [ユニバーサルガイド](/private-dns/connect-devices/routers/universal.md)
 - [Asus](/private-dns/connect-devices/routers/asus.md)
