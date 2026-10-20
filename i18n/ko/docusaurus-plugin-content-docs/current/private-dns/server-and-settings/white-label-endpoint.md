@@ -1,5 +1,5 @@
 ---
-title: White-label endpoint (Account IP address)
+title: 화이트 라벨 엔드포인트(계정 IP 주소)
 sidebar_position: 7
 ---
 

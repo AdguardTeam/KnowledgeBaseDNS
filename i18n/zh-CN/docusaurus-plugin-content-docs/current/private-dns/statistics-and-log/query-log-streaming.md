@@ -1,23 +1,23 @@
 ---
-title: Query log streaming
+title: 查询日志流式传输
 sidebar_position: 6
 ---
 
 :::info
 
-_Query log streaming_ is currently in beta testing. During this phase, configuration and setup are semi-manual and performed in coordination with the AdGuard team.
+「查询日志流式传输」目前处于 Beta 测试阶段。在此阶段，配置和设置采用半手动方式，并与 AdGuard 团队协调完成。
 
 :::
 
-This article describes how to set up and use _Query log streaming_ in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+本文介绍如何在 AdGuard DNS 中设置和使用「查询日志流式传输」。此功能允许 AdGuard DNS 企业版用户将原始 DNS 查询事件自动导出到外部存储，用于安全、分析或合规目的。
 
-## What is Query log streaming?
+## 什么是查询日志流式传输？
 
-_Query log streaming_ lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
+「查询日志流式传输」让 AdGuard DNS 企业版用户可以将原始 DNS 查询事件自动导出到自己的外部、兼容 S3 的存储中，而无需依赖手动 API 轮询。导出后，这些日志可以导入 SIEM 系统、SOC 平台、数据湖或内部分析管道，让您能够以编程方式访问原始查询数据，用于安全监控、审计和合规。
 
-Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [_Delivery guarantees and limitations_](#delivery-guarantees-and-limitations) section for details).
+事件会按周期以压缩批次的形式收集和交付；交付时间取决于流量大小（详情请参阅[交付保证与限制](#delivery-guarantees-and-limitations)一节）。
 
-## Availability and requirements
+## 可用性与要求
 
 To use _Query log streaming_, the following requirements must be met:
 

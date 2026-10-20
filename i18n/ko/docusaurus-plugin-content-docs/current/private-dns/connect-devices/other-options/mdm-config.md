@@ -140,7 +140,7 @@ A minimal profile consists of a top-level payload with a single nested payload:
 
 #### Filling the top-level payload
 
-| Key                     | String                                            | 설명                                                                                                                                                                                 |
+| Key                     | String                                            | Description                                                                                                                                                                        |
 | ----------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **PayloadType**         | `Configuration`                                   | Defines a configuration profile. Do not change.                                                                                                    |
 | **PayloadVersion**      | `1`                                               | Version of the payload scheme.                                                                                                                                     |
@@ -152,7 +152,7 @@ A minimal profile consists of a top-level payload with a single nested payload:
 
 #### Filling the nested payload
 
-| Key                          | String                                         | 설명                                                                                                                                                                                                                                                                                  |
+| Key                          | String                                         | Description                                                                                                                                                                                                                                                                         |
 | ---------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **PayloadType**              | `com.apple.dnsProxy.managed`                   | Enables DNS proxy via Network Extension. Do not change.                                                                                                                                                                                             |
 | **PayloadVersion**           | `1`                                            | Version of the payload scheme.                                                                                                                                                                                                                                      |
