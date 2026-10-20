@@ -1,88 +1,88 @@
 ---
-title: White-label endpoint (Account IP address)
+title: 白标端点（账号 IP 地址）
 sidebar_position: 7
 ---
 
-Custom domains allow partners to offer AdGuard DNS under their own brand. With the Enterprise plan, this service can run on a private IP address: this feature is called _Account IP_. Domains point to the _Account IP_ through an A record instead of a CNAME record, which is used for standard custom domains.
+自定义域名允许合作伙伴以自有品牌提供 AdGuard DNS。使用企业版时，该服务可在私有 IP 地址上运行：此功能称为「账号 IP」。域名通过 A 记录指向「账号 IP」，而不是使用标准自定义域名所用的 CNAME 记录。
 
 :::note
 
-**CNAME** points your domain to another domain (`dns.partner.com` → `cname.adguard-dns.com`). The real IP address is resolved through that second domain, so traffic goes through the shared infrastructure it serves.
+**CNAME** 将您的域名指向另一个域名（`dns.partner.com` → `cname.adguard-dns.com`）。真实的 IP 地址通过第二个域名解析，因此流量经过它所服务的共享基础设施。
 
-**A record** points your domain straight to an IP address (`dns.partner.com` → `203.0.113.10`). There’s no domain in between: the address your domain resolves to is the one that handles the traffic.
+**A 记录**将您的域名直接指向 IP 地址（`dns.partner.com` → `203.0.113.10`）。中间没有其他域名：您的域名解析到的地址就是处理流量的地址。
 
 :::
 
-Each account can have one _Account IP_, and you can point several domains to it. This isn’t the same as the dedicated IPv4 and IPv6 addresses used to identify devices: an _Account IP_ is the address your custom domains resolve to.
+每个账号可以有一个「账号 IP」，您可以将多个域名指向它。这与用于标识设备的专用 IPv4 和 IPv6 地址不同：「账号 IP」是您的自定义域名解析到的地址。
 
-## How to get an Account IP
+## 如何获取账号 IP
 
-To request an _Account IP_, contact your account manager or support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+如需申请「账号 IP」，请联系您的客户经理或支持团队：[support@adguard-dns.io](mailto:support@adguard-dns.io)。
 
-Once the address is assigned, the _White-label endpoint_ block appears in _Settings_ → _Advanced settings_ → _Custom domains_, showing your _Account IP address_. Until then, the block isn’t shown.
+地址分配后，「白标端点」区块会出现在「设置」→「高级设置」→「自定义域名」中，显示您的「账号 IP」。在此之前，该区块不会显示。
 
 ![White-label endpoint](https://cdn.adtidy.org/content/kb/dns/enterprise/whitelabel_endpoint_en.png)
 
 :::caution
 
-If your account moves off the Enterprise plan, the address becomes inactive and domains pointing to it stop working. Custom domains stay available on the **Team** plan, but only through a CNAME record — to bring the paused domains back, add them again as standard custom domains.
+如果您的账号退出企业版套餐，该地址将变为非活动状态，指向它的域名也会停止工作。自定义域名在**团队版**套餐上仍可使用，但只能通过 CNAME 记录。要恢复暂停的域名，请重新将它们添加为标准自定义域名。
 
-The address itself stays reserved for your account, so if you return to the Enterprise plan, you get the same one back.
+该地址本身会保留给您的账号，因此如果您重新使用企业版，会拿回同一个地址。
 
 :::
 
-## How to point a domain to your Account IP address
+## 如何将域名指向您的账户 IP 地址
 
-Setup follows the same steps as a standard custom domain, except you create an A record instead of a CNAME. Also, for DoH domains, the certificate isn’t issued automatically — you must upload your own.
+设置步骤与标准自定义域名相同，区别仅在于您创建的是 A 记录而不是 CNAME 记录。此外，对于 DoH 域名，证书不会自动签发，您必须自行上传。
 
-1. In _Custom domains_, choose the protocol: _Add DoH domain_ (for DNS-over-HTTPS) or _Add DoT/DoQ domain_ (for DNS-over-TLS or DNS-over-QUIC).
+1. 在「自定义域名」中选择协议：「添加 DoH 域名」（用于 DNS-over-HTTPS）或「添加 DoT/DoQ 域名」（用于 DNS-over-TLS 或 DNS-over-QUIC）。
 
-   ![Choosing the protocol](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
+   ![选择协议](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
 
-2. Enter the domain you want to use (e.g., `dns.partner.com`) and click _Next_. You need access to this domain’s DNS management panel.
+2. 输入您要使用的域名（例如 `dns.partner.com`），然后点击「下一步」。您需要拥有该域名的 DNS 管理面板访问权限。
 
-   ![Entering the domain](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
+   ![输入域名](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
 
-3. The next screen shows the values for your DNS record: your domain under _Name (Host)_ and your _Account IP_ under _Value (Points to / IP address)_. Leaving this screen open, go to your DNS provider’s control panel and create an A record with those values. Don’t create a CNAME record — domains on an _Account IP_ point to the address directly.
+3. 下一个屏幕会显示您的 DNS 记录值：「名称（主机）」下是您的域名，「值（指向 / IP 地址）」下是您的「账号 IP」。保持此屏幕打开，前往您的 DNS 提供商控制面板，使用这些值创建 A 记录。不要创建 CNAME 记录，「账号 IP」上的域名直接指向该地址。
 
-   ![DNS record values](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
+   ![DNS 记录值](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
 
-4. On the AdGuard DNS screen with the record values, click _Verify_. If the record hasn’t propagated yet or points somewhere else, verification fails. Check the record and try again in a few minutes.
+4. 在显示记录值的 AdGuard DNS 界面上，点击「验证」。如果记录尚未传播或指向其他位置，验证将会失败。检查记录并过几分钟重试。
 
-5. Upload a TLS certificate. Certificates aren’t issued automatically for domains on an _Account IP_:
+5. 上传 TLS 证书。「账号 IP」上的域名不会自动签发证书：
 
-   - For **DoT/DoQ**, you upload a wildcard certificate (`*.partner.com`), same as for a standard custom domain.
-   - For **DoH**, you upload your own certificate too. This differs from the standard flow, where AdGuard DNS can generate one for you.
+   - 对于 **DoT/DoQ**，需要上传通配符证书（`*.partner.com`），与标准自定义域名相同。
+   - 对于 **DoH**，您也需要上传自己的证书。这与标准流程不同，标准流程中 AdGuard DNS 可以为您生成证书。
 
-   Until you add a certificate, the domain shows the _No certificate_ status and your customers can’t connect to it.
+   在添加证书之前，域名会显示「无证书」状态，您的客户将无法连接到它。
 
-   ![Uploading a certificate](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
+   ![上传证书](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
 
 :::note
 
-Renewal is on your side. You’ll get an email reminder before the certificate expires. When this happens, your domain will stop working until you upload a new certificate.
+续期由您负责。证书到期前，将会收到电子邮件提醒。届时，域名将停止工作，直到您上传新证书。
 
 :::
 
-## Existing custom domains and Account IP address
+## 现有自定义域名与账号 IP 地址
 
-Domains you added before getting an _Account IP_ aren’t moved to it automatically. They keep working through their CNAME record, as before.
+在获得「账号 IP」之前添加的域名不会自动迁移到它。它们继续通过原有的 CNAME 记录正常工作。
 
-To move a domain over to your _Account IP_, start by deleting its CNAME record at your DNS provider — a domain can’t have both a CNAME and an A record at once. Then delete the domain in AdGuard DNS and add it again, following the steps above.
+要将域名迁移到您的「账号 IP」，请先在 DNS 提供商处删除其 CNAME 记录，一个域名不能同时拥有 CNAME 和 A 记录。然后在 AdGuard DNS 中删除该域名，并按照上述步骤重新添加。
 
 :::caution
 
-Your customers won’t be able to use the domain between the moment you delete it and the moment the new setup is verified.
+从删除域名到新设置验证通过之前，您的客户将无法使用该域名。
 
 :::
 
 ## 限制
 
-An _Account IP_ changes the address your domain resolves to. A few things it doesn’t cover:
+「账号 IP」会更改您的域名解析到的地址。它不涵盖以下几点：
 
-- Account IP address isn’t fully white-label at the network level. A WHOIS, RDAP, or ASN lookup of the IP address can still identify AdGuard as the provider of the underlying IP infrastructure.
-- Reverse DNS can’t be customized, so a PTR lookup won’t return your domain.
-- DNS server discovery (DDR) isn’t available on an _Account IP_.
-- Certificates with the IP address in the SAN field aren’t supported, so your customers connect through the domain name rather than the address itself.
-- Using your own IP range (BYOIP) isn’t supported, since the address is assigned by AdGuard.
-- DNSCheck domains, used to verify a device’s DNS connection, still resolve through AdGuard’s infrastructure.
+- 账号 IP 地址在网络层面并非完全白标。对 IP 地址进行 WHOIS、RDAP 或 ASN 查询，仍可识别出 AdGuard 是底层 IP 基础设施的提供商。
+- 反向 DNS 无法自定义，因此 PTR 查询不会返回您的域名。
+- DNS 服务器发现（DDR）在「账号 IP」上不可用。
+- 不支持在 SAN 字段中包含 IP 地址的证书，因此您的客户通过域名而非地址本身进行连接。
+- 不支持使用您自己的 IP 范围（BYOIP），因为该地址由 AdGuard 分配。
+- 用于验证设备 DNS 连接的 DNSCheck 域名，仍通过 AdGuard 的基础设施解析。

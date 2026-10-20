@@ -3,9 +3,9 @@ title: 자녀 보호
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+**자녀 보호**는 민감한 콘텐츠가 있는 웹사이트에 대한 접근을 유연하게 제어할 수 있는 설정 모음입니다. 이 기능으로 자녀가 성인 사이트에 접속하지 못하게 하고, 검색 결과를 걸러 내고, 인기 서비스 이용을 차단하는 등 다양한 제한을 설정할 수 있습니다.
 
-## How to set it up
+## 설정 방법
 
 You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 

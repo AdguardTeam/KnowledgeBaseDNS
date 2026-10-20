@@ -1,77 +1,77 @@
 ---
-title: Query log streaming
+title: 쿼리 로그 스트리밍
 sidebar_position: 6
 ---
 
 :::info
 
-_Query log streaming_ is currently in beta testing. During this phase, configuration and setup are semi-manual and performed in coordination with the AdGuard team.
+**쿼리 로그 스트리밍**은 현재 베타 테스트 중입니다. 베타 기간에는 AdGuard 팀과 협의하여 일부 설정을 수동으로 진행합니다.
 
 :::
 
-This article describes how to set up and use _Query log streaming_ in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+이 글에서는 AdGuard DNS에서 **쿼리 로그 스트리밍**을 설정하고 사용하는 방법을 안내합니다. 이 기능을 사용하면 AdGuard DNS 엔터프라이즈 플랜 사용자는 보안, 분석, 규정 준수를 위해 DNS 쿼리 원본 데이터를 외부 저장소로 자동 전송할 수 있습니다.
 
-## What is Query log streaming?
+## 쿼리 로그 스트리밍이란 무엇인가요?
 
-_Query log streaming_ lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
+**쿼리 로그 스트리밍**은 DNS 쿼리 원본 데이터를 사용자가 직접 관리하는 S3 호환 외부 저장소로 자동 전송하는 기능입니다. API를 주기적으로 호출해 데이터를 가져올 필요가 없습니다. 전송된 로그는 SIEM 시스템, SOC 플랫폼, 데이터 레이크, 내부 분석 파이프라인 등에 수집할 수 있습니다. 이를 통해 보안 모니터링, 감사, 규정 준수에 필요한 쿼리 원본 데이터를 프로그래밍 방식으로 활용할 수 있습니다.
 
 Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [_Delivery guarantees and limitations_](#delivery-guarantees-and-limitations) section for details).
 
-## Availability and requirements
+## 이용 조건
 
-To use _Query log streaming_, the following requirements must be met:
+**쿼리 로그 스트리밍**을 사용하려면 다음 조건을 충족해야 합니다.
 
-- **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
-- **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
+- **엔터프라이즈 요금제:** 이 기능은 AdGuard DNS 엔터프라이즈 사용자만 이용할 수 있습니다. 계정이 엔터프라이즈 요금제에서 벗어나면 로그 스트리밍이 비활성화됩니다. 직접 비활성화하는 방법은 아래 FAQ를 참고하세요.
+- **쿼리 로그 활성화:** AdGuard DNS 설정에서 쿼리 로그 기록이 켜져 있어야 합니다.
+- **S3 호환 버킷:** Amazon S3 또는 기타 S3 호환 클라우드 저장소(예: Cloudflare R2, Backblaze B2, Wasabi, MinIO)에 쓰기 가능한 활성 버킷이 있어야 합니다.
+- **접근 자격 증명:** AdGuard DNS가 버킷에 객체를 쓸 수 있도록 연결 정보와 자격 증명을 제공해야 합니다.
 
-## How to request setup
+## 설정 요청 방법
 
-Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
+현재는 인프라 팀이 직접 설정을 진행하므로, 아래 단계에 따라 로그 스트리밍을 요청하세요.
 
-### Step 1: Prepare your S3 bucket
+### 1단계: S3 버킷 준비하기
 
 1. Create a dedicated bucket or path/prefix within your S3-compatible storage.
-2. Grant the minimum required permissions to the credentials you will share with AdGuard. At a minimum, the credentials must have write permissions (`s3:PutObject`) on the designated path.
+2. AdGuard에 제공할 자격 증명에는 꼭 필요한 최소한의 권한만 부여합니다. 최소한 지정한 경로에 대한 쓰기 권한(`s3:PutObject`)이 있어야 합니다.
 
-### Step 2: Contact your account manager or AdGuard support team
+### 2단계: 담당 매니저 또는 AdGuard 지원팀에 문의하기
 
-Reach out to your dedicated AdGuard account manager or contact AdGuard support team at `support@adguard-dns.io`, and provide the target account or organization for which logs should be streamed.
+담당 AdGuard 매니저에게 연락하거나 `support@adguard-dns.io`로 AdGuard 지원팀에 문의하세요. 이때 로그를 스트리밍할 계정 또는 조직 정보를 함께 알려 주세요.
 
-### Step 3: Provide configuration details
+### 3단계: 설정 정보 전달하기
 
 Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
 
-### Step 4: Wait for the log stream to be activated
+### 4단계: 로그 스트림 활성화 기다리기
 
-Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
+로그 스트림이 활성화되면 대상 버킷에 `ok`가 기록된 `.healthcheck` 파일이 자동으로 생성됩니다. 설정 중 연결 또는 쓰기 오류가 발생하면 알림을 보내 드립니다. 스트림이 활성화된 후에는 별도로 할 일이 없습니다.
 
-## Log format and S3 object structure
+## 로그 형식 및 S3 객체 구조
 
-Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
+로그는 **객체 배열이 담긴 압축(minified) JSON 파일**로 전송되며, 배열의 각 객체는 DNS 쿼리 이벤트 하나를 나타냅니다.
 
-### Compression and encoding
+### 압축 및 인코딩
 
-- **Encoding:** UTF-8
-- **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
+- **인코딩:** UTF-8
+- **압축:** 내보내는 모든 로그 파일에는 Gzip 압축이 자동으로 적용되며, 압축은 필수입니다.
 
-### S3 object layout and naming
+### S3 객체 구조 및 이름 규칙
 
-Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
+로그 파일은 파티션 기반 조회와 수집이 쉽도록 정해진 폴더 구조와 타임스탬프 기반 이름 규칙에 따라 S3 호환 버킷에 저장됩니다.
 
-- **Object prefix (Path):** `/logs/%Y/%m/%d/` (organized by Year, Month, and Day)
-- **Filename pattern:** `%H-%M-%S-%3f.json.gz` (Hour-Minute-Second-Millisecond of the batch generation)
+- **객체 접두사(경로):** `/logs/%Y/%m/%d/` (연, 월, 일별로 정리)
+- **파일 이름 형식:** `%H-%M-%S-%3f.json.gz` (배치가 생성된 시, 분, 초, 밀리초)
 
-**Example S3 object key:**
+**S3 객체 키 예시:**
 
 `logs/2026/08/24/14-02-02-123.json.gz`
 
-### File schema structure
+### 파일 스키마 구조
 
-Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minified JSON array.
+전송되는 파일은 JSON Lines(JSONL)가 아닌, 한 줄로 압축된 표준 JSON 배열입니다.
 
-**Example of the delivered minified file structure (uncompressed representation):**
+**전송되는 압축 파일 구조 예시(압축 해제 상태):**
 
 ```json
 
@@ -98,161 +98,161 @@ Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minifie
 }
 ```
 
-## Fields reference {#fields-reference}
+## 필드 참조 {#fields-reference}
 
-The table below describes the schema for the exported DNS query logs.
+아래 표는 내보낸 DNS 쿼리 로그의 스키마를 설명합니다.
 
-| Field             | Type          | 필수  | 설명                                                                                                                                                                                                                                                                                                                  | Example                |
-| :---------------- | :------------ | :-- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| `AccountId`       | 정수            | 아니오 | Detected account ID, if any.                                                                                                                                                                                                                                                                        | `1234`                 |
-| `DnsServerId`     | 문자열           | 아니오 | Detected profile ID, also known as DNS ID or DNS Server ID, if any.                                                                                                                                                                                                                                 | `"prof1234"`           |
-| `DeviceId`        | 문자열           | 아니오 | Detected device ID, if any.                                                                                                                                                                                                                                                                         | `"dev1234"`            |
-| `ClientCountry`   | 문자열           | 아니오 | Country of the client’s IP address as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo.                                                                                                                                      | `"AU"`                 |
-| `ResponseCountry` | 문자열           | 아니오 | Country of the first IP address in the response as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo; `QN` means “Not Applicable” when the response type contains no IP address information.                                  | `"US"`                 |
-| `DomainFQDN`      | 문자열           | 네   | Requested DNS resource name (FQDN).                                                                                                                                                                                                                                              | `"example.com."`       |
-| `FilterListId`    | 문자열           | 아니오 | ID of the first filter whose rules matched the query. Omitted if no rule matched. Reserved values include `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing`, and `youtube_safe_search`. | `"adguard_dns_filter"` |
-| `FilterRule`      | 문자열           | 아니오 | First rule that matched the query. For `blocked_service`, contains the blocked service ID. For `category`, contains the category ID. Omitted if no rule matched.                                                                                    | `"example.com^"`       |
-| `TimeAddedMs`     | 정수            | 네   | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                      | `1629974298000`        |
-| `ASN`             | 정수            | 아니오 | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                    | `1234`                 |
-| `ElapsedMs`       | 정수            | 네   | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                            | `3`                    |
-| `RequestType`     | 정수            | 네   | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                   | `1`                    |
-| `RequestIdNum`    | 정수            | 네   | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                   | `12345`                |
-| `Action`          | 정수            | 네   | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                        | `2`                    |
-| `DNSSEC`          | 정수            | 네   | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                | `1`                    |
-| `Protocol`        | 정수            | 네   | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                    | `3`                    |
-| `ResponseCode`    | 정수            | 네   | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                  | `0`                    |
-| `IpAddress`       | 문자열           | 아니오 | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                               | `"1.2.3.4"`            |
-| `TrackerId`       | string / null | 네   | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                | `"google"`             |
-| `CategoryId`      | string / null | 네   | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                         | `"search_engines"`     |
+| 필드                | 유형            | Required | Description                                                                                                                                                                                                                                | 예시                     |
+| :---------------- | :------------ | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `AccountId`       | 정수            | ❌        | 감지된 계정 ID(있는 경우)                                                                                                                                                                                                        | `1234`                 |
+| `DnsServerId`     | 문자열           | ❌        | 감지된 프로필 ID(DNS ID 또는 DNS 서버 ID라고도 함, 있는 경우)                                                                                                                                                                             | `"prof1234"`           |
+| `DeviceId`        | 문자열           | ❌        | 감지된 기기 ID(있는 경우)                                                                                                                                                                                                        | `"dev1234"`            |
+| `ClientCountry`   | 문자열           | ❌        | 클라이언트 IP 주소의 국가(ISO 3166-1 alpha-2 코드) 감지할 수 없는 경우 표시되지 않습니다. 코소보는 `XK`로 표시됩니다.                                                                                                         | `"AU"`                 |
+| `ResponseCountry` | 문자열           | ❌        | 응답에 포함된 첫 번째 IP 주소의 국가(ISO 3166-1 alpha-2 코드) 감지할 수 없는 경우 표시되지 않습니다. 코소보는 `XK`로 표시됩니다. 응답에 IP 주소 정보가 없는 경우 `QN`(해당 없음)으로 표시됩니다.                      | `"US"`                 |
+| `DomainFQDN`      | 문자열           | ◯        | 요청된 DNS 리소스 이름(FQDN)                                                                                                                                                                                                    | `"example.com."`       |
+| `FilterListId`    | 문자열           | ❌        | 쿼리와 일치한 규칙이 포함된 첫 번째 필터의 ID 일치한 규칙이 없으면 생략됩니다. 예약된 값: `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing`, `youtube_safe_search` | `"adguard_dns_filter"` |
+| `FilterRule`      | 문자열           | ❌        | 쿼리와 일치한 첫 번째 규칙 `blocked_service`인 경우 차단된 서비스 ID가 들어갑니다. `category`인 경우 카테고리 ID가 들어갑니다. 일치한 규칙이 없으면 생략됩니다.                                                                                 | `"example.com^"`       |
+| `TimeAddedMs`     | 정수            | ◯        | 요청을 받은 시각의 Unix 타임스탬프(밀리초)                                                                                                                                                                                              | `1629974298000`        |
+| `ASN`             | 정수            | ❌        | 클라이언트 IP 주소에서 감지된 자율 시스템 번호(ASN, 있는 경우)                                                                                                                                                                                 | `1234`                 |
+| `ElapsedMs`       | 정수            | ◯        | 요청 처리 시작부터 경과한 시간(밀리초)                                                                                                                                                                                                  | `3`                    |
+| `RequestType`     | 정수            | ◯        | 쿼리의 DNS 리소스 레코드 유형 번호(예: `A` 레코드는 `1`)                                                                                                                                                                  | `1`                    |
+| `RequestIdNum`    | 정수            | ◯        | 기존 `u` 필드를 사용하지 않을 때 중복 제거를 쉽게 하기 위한 16비트 무작위 부호 없는 정수                                                                                                                                                                                     | `12345`                |
+| `Action`          | 정수            | ◯        | 필터링 동작: `0` 알 수 없음, `1` 필터링 안 함, `2` 요청 차단, `3` 응답 차단, `4` 허용 목록에 따라 요청 허용, `5` 허용 목록에 따라 응답 허용, `6` 요청 또는 응답 수정/재작성                                                                                                       | `2`                    |
+| `DNSSEC`          | 정수            | ◯        | DNSSEC로 응답이 검증되었는지 여부: `0` = 아니요, `1` = 예                                                                                                                                                                                  | `1`                    |
+| `Protocol`        | 정수            | ◯        | DNS 프로토콜: `0` 알 수 없음, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` 일반 DNS, `9` DNSCrypt                                                                                                                    | `3`                    |
+| `ResponseCode`    | 정수            | ◯        | 클라이언트에 전송된 DNS 응답 코드(`RCODE`)                                                                                                                                                                                           | `0`                    |
+| `IpAddress`       | 문자열           | ❌        | 클라이언트 IP 주소 해당 프로필에서 IP 기록이 꺼져 있으면 생략됩니다.                                                                                                                                                                                  | `"1.2.3.4"`            |
+| `TrackerId`       | string / null | ◯        | 요청된 도메인을 `dns-trackers` 보강 테이블과 대조하여 찾은 추적기 ID 추적기를 찾지 못하면 `null`로 설정됩니다.                                                                                                                                                  | `"google"`             |
+| `CategoryId`      | string / null | 네        | `dns-trackers` 보강 조회에서 반환된 추적기 카테고리 ID 추적기를 찾지 못하면 `null`로 설정됩니다.                                                                                                                                                          | `"search_engines"`     |
 
-## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
+## 전송 보장 및 제한 사항 {#delivery-guarantees-and-limitations}
 
-Understanding how logs are batched and delivered is critical for designing your SIEM ingestion pipeline.
+로그가 일괄 처리되고 전달되는 방식을 이해하는 것은 SIEM 데이터 수집 파이프라인을 설계하는 데 매우 중요합니다.
 
-- **Batch-only delivery:** Logs are exported strictly in batches, not in real time. To keep the system stable and adapt to different traffic levels, both batch sizes and delivery intervals are flexible. Exact file sizes and upload times are not fixed and may vary as the system is optimized.
-- **Expected latency and potential delays:** While we strive for minimal latency, there is an expected delivery latency. Occasional delays are possible due to high network traffic, system load, or processing queues.
-- **At-least-once delivery:** Log delivery is guaranteed on an at-least-once basis. While this ensures that all events are successfully delivered, duplicate log entries may occasionally be written to the destination bucket (for example, during network retries or recovery from transient connection drops). Exactly-once delivery is not guaranteed.
-- **Client-side deduplication required:** The client must be capable of deduplicating events within their SIEM or data lake. Deduplication should be handled using a combination of the event `timestamp` and other unique identifiers.
-- **No order guarantees:** Due to the distributed nature of our global DNS infrastructure, the chronological order of events is not guaranteed. Events may arrive out of order within a single log file or across different batches.
-- **Unreachable destination (retries or drops):** If your S3 endpoint or bucket becomes unreachable (e.g., due to expired credentials or network outages on your provider’s side), AdGuard DNS may attempt retries. However, depending on backend limits, log events generated during the outage might be dropped (skipped) to prevent buffer overflow.
-- **No historical backfill:** Log streaming is strictly forward-looking. Exporting historical logs generated before the streaming feature was activated is not supported.
+- **배치 전송 방식:** 로그는 실시간이 아닌 배치 단위로만 전송됩니다. 시스템 안정성을 유지하고 트래픽 변화에 대응하기 위해 배치 크기와 전송 간격은 유동적으로 조정됩니다. 파일 크기와 업로드 시점은 고정되어 있지 않으며, 시스템 최적화에 따라 달라질 수 있습니다.
+- **예상 지연 시간:** 지연을 최소화하기 위해 노력하고 있지만, 일정 수준의 전송 지연은 발생합니다. 네트워크 트래픽 증가, 시스템 부하, 처리 대기열 등으로 인해 간혹 지연이 길어질 수 있습니다.
+- **At-least-once delivery:** Log delivery is guaranteed on an at-least-once basis. 이 방식은 모든 이벤트의 전송을 보장하지만, 네트워크 재시도나 일시적인 연결 끊김 복구 과정에서 대상 버킷에 중복 로그가 기록될 수 있습니다. Exactly-once delivery is not guaranteed.
+- **클라이언트 측 중복 제거 필요:** SIEM 또는 데이터 레이크에서 중복 이벤트를 제거할 수 있어야 합니다. 중복 제거는 이벤트의 `timestamp`와 기타 고유 식별자를 조합하여 처리하세요.
+- **순서 미보장:** AdGuard DNS 인프라는 전 세계에 분산되어 있어 이벤트의 시간 순서가 보장되지 않습니다. 하나의 로그 파일 안에서도, 여러 배치 사이에서도 이벤트 순서가 뒤바뀔 수 있습니다.
+- **대상에 연결할 수 없는 경우(재시도 또는 누락):** 자격 증명 만료나 제공업체 측 네트워크 장애 등으로 S3 엔드포인트나 버킷에 연결할 수 없으면 AdGuard DNS가 재시도를 할 수 있습니다. 다만 백엔드 한도에 따라, 버퍼 초과를 막기 위해 장애 중에 생성된 로그 이벤트가 누락(건너뜀)될 수 있습니다.
+- **과거 로그 미지원:** 로그 스트리밍은 활성화 이후의 로그만 전송합니다. 스트리밍 기능을 활성화하기 전에 생성된 과거 로그는 내보낼 수 없습니다.
 
-## Security and privacy
+## 보안 및 개인정보 보호
 
-DNS query logs contain highly sensitive network and metadata. To ensure the safety of your organization’s data, please observe the following security principles:
+DNS 쿼리 로그에는 매우 민감한 네트워크 정보와 메타데이터가 포함되어 있습니다. 조직의 데이터를 안전하게 보호하려면 다음 보안 원칙을 지켜 주세요.
 
-- **Sensitive DNS data:** Be aware that streamed logs can contain sensitive DNS metadata, including queried domains, device identifiers, client IP addresses, and geographic details of your clients.
-- **Client responsibility:** The client is solely responsible for the overall security of their S3-compatible bucket, including configuring and maintaining secure bucket policies and access control lists (ACLs).
-- **Restrict access:** We highly recommend restricting access to the bucket to the absolute minimum necessary.
-- **Credential rotation:** Credentials (access keys and secrets) provided to AdGuard DNS for bucket access should be regularly rotated in accordance with your organization’s internal security policies. However, because changing keys on the cloud provider side immediately revokes AdGuard’s write permissions, new credentials must be updated in AdGuard at the same time to prevent log delivery disruption.
-- **Dashboard logging settings impact:** If certain types of logging are disabled in your AdGuard DNS account settings, this will directly affect the schema of your exported logs. For example, if you disable specific device metadata logging, those fields will be omitted (or populated with null values) in the streamed JSON files.
-- **No bypass of privacy settings:** AdGuard DNS strictly respects your configuration. Under no circumstances will AdGuard bypass, override, or circumvent your account’s privacy and data-anonymization settings when exporting events to your external storage.
+- **민감한 DNS 데이터:** 스트리밍되는 로그에는 조회한 도메인, 기기 식별자, 클라이언트 IP 주소, 지리 정보 등 민감한 DNS 메타데이터가 포함될 수 있습니다.
+- **클라이언트의 책임:** S3 호환 버킷의 보안은 전적으로 클라이언트가 책임집니다. 여기에는 안전한 버킷 정책과 접근 제어 목록(ACL)을 설정하고 관리하는 일이 포함됩니다.
+- **접근 제한:** 버킷 접근 권한은 꼭 필요한 범위로만 제한할 것을 적극 권장합니다.
+- **자격 증명 교체:** AdGuard DNS에 제공한 버킷 접근 자격 증명(액세스 키와 시크릿 키)은 조직의 내부 보안 정책에 따라 정기적으로 교체해야 합니다. 다만 클라우드 제공업체 측에서 키를 변경하면 AdGuard의 쓰기 권한이 즉시 취소되므로, 로그 전송이 끊기지 않도록 새 자격 증명을 AdGuard에도 동시에 전달해야 합니다.
+- **대시보드 로그 설정의 영향:** AdGuard DNS 계정 설정에서 특정 로그 기록을 끄면 내보내는 로그의 스키마에 바로 반영됩니다. 예를 들어 특정 기기 메타데이터 기록을 끄면, 스트리밍되는 JSON 파일에서 해당 필드가 생략되거나 null 값으로 채워집니다.
+- **개인정보 설정 우회 없음:** AdGuard DNS는 사용자의 설정을 철저히 따릅니다. 외부 저장소로 이벤트를 내보낼 때, AdGuard는 어떤 경우에도 계정의 개인정보 보호 및 데이터 익명화 설정을 우회하거나 무시하지 않습니다.
 
-## How to ingest logs into SIEM
+## SIEM으로 로그 수집하기
 
-Since AdGuard DNS streams query logs to S3-compatible storage, configuring the ingestion pipeline into your SIEM platform is handled entirely on your side.
+AdGuard DNS는 쿼리 로그를 S3 호환 저장소로 전송하므로, SIEM 플랫폼으로 수집하는 파이프라인은 전적으로 사용자 측에서 구성합니다.
 
-- **S3-compatible destination:** AdGuard DNS delivers raw log files directly to your designated S3 bucket, which serves as the central landing zone for your security data.
-- **Custom ingestion pipeline:** You can connect and ingest these log files into your SIEM or analytics system using your own data pipelines, custom scripts, or ETL processes.
-- **Standard S3 connectors:** For major platforms such as **Splunk**, **Microsoft Sentinel**, and **Elastic**, you typically utilize their respective native S3 connectors, inputs, or log collectors.
-- **Infrastructure-dependent setup:** The exact configuration, index mapping, and parsing rules inside your SIEM depend heavily on your organization’s specific infrastructure, data schemas, and retention policies.
+- **S3 호환 저장소:** AdGuard DNS는 로그 원본 파일을 지정된 S3 버킷으로 바로 전송하며, 이 버킷이 보안 데이터가 모이는 중심 저장소 역할을 합니다.
+- **사용자 정의 수집 파이프라인:** 자체 데이터 파이프라인, 사용자 정의 스크립트, ETL 프로세스를 사용해 로그 파일을 SIEM이나 분석 시스템에 연결하고 수집할 수 있습니다.
+- **표준 S3 커넥터:** **Splunk**, **Microsoft Sentinel**, **Elastic** 같은 주요 플랫폼에서는 보통 각 플랫폼의 기본 S3 커넥터, 입력 기능, 로그 수집기를 사용합니다.
+- **인프라에 따른 설정:** SIEM 내부의 세부 설정, 인덱스 매핑, 파싱 규칙은 조직의 인프라, 데이터 스키마, 보존 정책에 따라 크게 달라집니다.
 
-## Troubleshooting
+## 문제 해결
 
-This section details common integration issues you may encounter when setting up or running the query log stream, along with steps to resolve them.
+이 섹션에서는 쿼리 로그 스트림을 설정하거나 운영할 때 자주 발생하는 연동 문제와 해결 방법을 안내합니다.
 
-### Logs are not appearing in the bucket
+### 버킷에 로그가 나타나지 않음
 
-**Potential cause:** Configuration on the AdGuard side is not yet complete, or incorrect connection parameters were provided.
+**가능한 원인:** AdGuard 측 설정이 아직 완료되지 않았거나, 잘못된 연결 정보가 제공되었습니다.
 
-**Resolution:** Verify that you received a confirmation email from your AdGuard account manager stating that the stream configuration is complete. Double-check all shared parameters (bucket name, endpoint, region).
+**해결 방법:** AdGuard 담당 매니저로부터 스트림 설정 완료 안내 이메일을 받았는지 확인하세요. 전달한 정보(버킷 이름, 엔드포인트, 리전)를 모두 다시 확인하세요.
 
-### Incorrect bucket permissions
+### 버킷 권한 오류
 
-**Potential cause:** The credentials shared with AdGuard do not have sufficient permissions to write objects to the bucket.
+**가능한 원인:** AdGuard에 제공한 자격 증명에 버킷에 객체를 쓸 권한이 충분하지 않습니다.
 
-**Resolution:** Ensure that the AWS IAM policy (or your provider’s equivalent) associated with the provided access keys explicitly grants `s3:PutObject` permission for the target bucket and prefix.
+**해결 방법:** 제공한 액세스 키와 연결된 AWS IAM 정책(또는 사용 중인 제공업체의 동등한 정책)에 대상 버킷과 접두사에 대한 `s3:PutObject` 권한이 명시적으로 부여되어 있는지 확인하세요.
 
-### S3 credentials expired
+### S3 자격 증명 만료
 
-**Potential cause:** The credentials have expired, or they were rotated/revoked in accordance with your organization’s internal security policies.
+**가능한 원인:** 자격 증명이 만료되었거나, 조직의 내부 보안 정책에 따라 교체 또는 취소되었습니다.
 
-**Resolution:** Generate a new set of access and secret keys, and share them securely with your AdGuard account manager to update your stream configuration.
+**해결 방법:** 새 액세스 키와 시크릿 키를 생성한 다음, 스트림 설정을 업데이트할 수 있도록 AdGuard 담당 매니저에게 안전하게 전달하세요.
 
-### Duplicates appeared in the log destination
+### 로그 저장소에 중복 항목이 생김
 
-**Potential cause:** Network retries triggered by the “at-least-once” delivery model during transient network interruptions.
+**가능한 원인:** 일시적인 네트워크 중단 중 ‘최소 1회 전송’ 방식에 따라 재시도가 발생했습니다.
 
-**Resolution:** This is expected behavior in distributed logging pipelines. Configure deduplication rules in your SIEM or database using a combination of the `timestamp`, `domain`, and `device_id` (or other unique event identifiers).
+**해결 방법:** 분산 로그 파이프라인에서는 정상적인 현상입니다. SIEM 또는 데이터베이스에서 `timestamp`, `domain`, `device_id`(또는 기타 고유 이벤트 식별자)를 조합하여 중복 제거 규칙을 설정하세요.
 
-### Latency is higher than expected
+### 예상보다 지연 시간이 김
 
-**Potential cause:** Temporary network congestion, system load, or buffering delays on the cloud provider’s side.
+**가능한 원인:** 일시적인 네트워크 혼잡, 시스템 부하 또는 클라우드 제공업체 측의 버퍼링 지연입니다.
 
-**Resolution:** Check the operational status of your S3-compatible cloud provider. If log delivery delays consistently exceed your expected batch interval (e.g., more than 15–30 minutes), contact AdGuard support to check the status of our outbound delivery queues.
+**해결 방법:** 사용 중인 S3 호환 클라우드 제공업체의 서비스 상태를 확인하세요. 로그 전송 지연이 예상 배치 간격(예: 15~30분)을 계속 넘는다면, AdGuard 지원팀에 문의하여 전송 대기열 상태를 확인해 달라고 요청하세요.
 
-### Missing fields in the logs
+### 로그에 일부 필드가 없음
 
-**Potential cause:** Specific logging or privacy features (such as client IP logging or device metadata collection) are disabled in your AdGuard DNS dashboard settings.
+**가능한 원인:** AdGuard DNS 대시보드 설정에서 특정 로그 기록 또는 개인정보 보호 기능(예: 클라이언트 IP 기록, 기기 메타데이터 수집)이 꺼져 있습니다.
 
-**Resolution:** Review your privacy and logging settings within the AdGuard DNS dashboard. The log streaming export strictly respects these settings and will not bypass your data-minimization preferences.
+**해결 방법:** AdGuard DNS 대시보드에서 개인정보 보호 및 로그 설정을 확인하세요. 로그 스트리밍은 이 설정을 그대로 따르며, 데이터 최소화 설정을 우회하지 않습니다.
 
-### Enterprise status changed
+### 엔터프라이즈 플랜 상태 변경
 
-**Potential cause:** Your Enterprise subscription has expired, was cancelled, or your account was downgraded.
+**가능한 원인:** 엔터프라이즈 구독이 만료 또는 취소되었거나, 계정의 요금제가 하향 조정되었습니다.
 
-**Resolution:** Log streaming is deactivated automatically if the account loses Enterprise status. Contact your AdGuard account manager to restore your subscription and reactivate the stream.
+**해결 방법:** 계정이 엔터프라이즈 플랜 상태를 잃으면 로그 스트리밍은 자동으로 비활성화됩니다. 구독을 복구하고 스트림을 다시 활성화하려면 AdGuard 담당 매니저에게 문의하세요.
 
-### SIEM fails to parse or split the JSON array
+### SIEM이 JSON 배열을 파싱하거나 분리하지 못함
 
-**Potential Cause:** Many S3 log collectors expect Newline Delimited JSON (NDJSON/JSONL) by default. Since the exported logs are formatted as a minified JSON array (`[...]`), the collector may fail to parse the file or ingest the entire array as a single, massive log event instead of splitting it into individual query records.
+**가능한 원인:** 많은 S3 로그 수집기는 기본적으로 줄바꿈 구분 JSON(NDJSON/JSONL) 형식을 기대합니다. 내보낸 로그는 압축된 JSON 배열(`[...]`) 형식이므로, 수집기가 파일을 파싱하지 못하거나 배열 전체를 개별 쿼리 기록으로 나누지 않고 하나의 거대한 로그 이벤트로 수집할 수 있습니다.
 
-**Resolution:** Configure the S3 connector, log shipper, or SIEM parser to handle standard JSON arrays. The ingestion pipeline must be set to unpack the array and split its elements into separate log entries before indexing.
+**해결 방법:** S3 커넥터, 로그 전송기 또는 SIEM 파서가 표준 JSON 배열을 처리하도록 설정하세요. 수집 파이프라인은 인덱싱 전에 배열을 풀어 각 요소를 별도의 로그 항목으로 나누도록 설정해야 합니다.
 
-### Compressed files do not decompress
+### 압축 파일이 풀리지 않음
 
-**Potential cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
+**가능한 원인:** 내보낼 때 사용한 압축 형식(예: `.gz`)을 SIEM 수집 커넥터가 지원하지 않거나 설정이 잘못되었습니다.
 
-**Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
+**해결 방법:** SIEM 커넥터의 압축 해제 설정을 확인하세요(예: S3 객체를 가져올 때 gzip 자동 압축 해제가 켜져 있는지 확인).
 
 ## FAQ
 
-### Can logs be streamed directly to Splunk or Microsoft Sentinel?
+### 로그를 Splunk나 Microsoft Sentinel로 바로 스트리밍할 수 있나요?
 
-No. In the current MVP version, direct streaming to SIEM endpoints or APIs (such as Splunk HEC) is not supported. Logs must be written to an S3-compatible bucket first, which the SIEM can then monitor and ingest from using standard S3 connectors.
+아니요, 현재 MVP 버전에서는 SIEM 엔드포인트나 API(예: Splunk HEC)로 직접 스트리밍하는 기능을 지원하지 않습니다. 로그는 먼저 S3 호환 버킷에 저장되어야 하며, SIEM은 표준 S3 커넥터로 이 버킷을 모니터링하고 로그를 수집할 수 있습니다.
 
-### Can storage options other than S3 be used?
+### S3 외에 다른 저장소를 사용할 수 있나요?
 
-No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
+아니요, 현재는 S3 호환 저장소만 지원합니다. Amazon S3 또는 다른 클라우드 제공업체의 호환 서비스(예: Cloudflare R2, Backblaze B2, Wasabi, MinIO)를 사용할 수 있습니다. 다른 저장소 유형(예: Azure Blob 직접 연동, SFTP)과의 기본 연동은 현재 지원하지 않습니다.
 
-### Is it possible to retrieve historical logs?
+### 과거 로그를 가져올 수 있나요?
 
-No. Log streaming is strictly forward-looking. Only DNS query events generated _after_ the streaming feature has been successfully activated and configured will be exported. Historical backfill of logs is not supported.
+아니요, 로그 스트리밍은 활성화 이후의 로그만 전송합니다. 스트리밍 기능이 성공적으로 활성화되고 구성된 후에 생성된 DNS 쿼리 이벤트만 내보내집니다. 과거 로그는 소급하여 전송되지 않습니다.
 
-### How quickly are logs delivered?
+### 로그는 얼마나 빨리 전송되나요?
 
-Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section.
+로그는 실시간이 아닌 압축된 배치 단위로 전송됩니다. 배치 간격과 전송 방식에 대한 자세한 내용은 [전송 보장 및 제한 사항](#delivery-guarantees-and-limitations) 섹션을 참고하세요.
 
-### Is the delivery of every single event guaranteed?
+### 모든 이벤트의 전송이 보장되나요?
 
-Yes, under normal operating conditions. However, if the destination bucket becomes unreachable, log events may eventually be dropped once the retry buffer limit is exceeded. Refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section for details.
+네, 정상적인 운영 환경에서는 보장됩니다. 다만 대상 버킷에 연결할 수 없는 상태가 이어지면, 재시도 버퍼 한도를 넘는 순간 로그 이벤트가 누락될 수 있습니다. 자세한 내용은 [전송 보장 및 제한 사항](#delivery-guarantees-and-limitations) 섹션을 참고하세요.
 
-### Are duplicate events possible in the destination?
+### 대상 저장소에 중복 이벤트가 생길 수 있나요?
 
-Yes. Under the “at-least-once” delivery model, network retries triggered by transient outages can cause duplicate log events to be written to the bucket. The ingestion pipeline or SIEM must be configured to handle deduplication.
+네, ‘최소 1회 전송’ 방식에서는 일시적인 장애로 재시도가 발생하면 버킷에 중복 로그 이벤트가 기록될 수 있습니다. 수집 파이프라인이나 SIEM에서 중복 제거를 처리하도록 설정해야 합니다.
 
-### What fields are included in the logs?
+### 로그에는 어떤 필드가 포함되나요?
 
-The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
+로그에는 `TimeAddedMs`(타임스탬프), `DomainFQDN`, `RequestType`, `Action`, `ClientCountry` 등 DNS 쿼리의 주요 필드가 포함됩니다. 전체 필드 목록과 데이터 유형은 [필드 참조](#fields-reference) 섹션을 참고하세요. 계정의 개인정보 보호 설정은 로그에 바로 반영됩니다. 대시보드에서 기록을 끄면 민감한 필드(예: `IpAddress`)는 생략되거나 `null`로 설정됩니다.
 
 ### What happens if the Enterprise status is lost?
 
 Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
 
-### Can log streaming be deactivated?
+### 로그 스트리밍을 비활성화할 수 있나요?
 
-Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team at `support@adguard-dns.io`.
+네, 요청하면 언제든지 로그 스트림을 비활성화할 수 있습니다. 비활성화하려면 AdGuard 담당 매니저에게 연락하거나 `support@adguard-dns.io`로 AdGuard 지원팀에 문의하세요.
 
-### Can multiple S3 streaming destinations be configured?
+### S3 스트리밍 대상을 여러 개 설정할 수 있나요?
 
-No. The current version only supports configuring a single S3-compatible streaming destination per Enterprise organization.
+아니요, The current version only supports configuring a single S3-compatible streaming destination per Enterprise organization.
