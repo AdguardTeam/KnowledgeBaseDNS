@@ -117,7 +117,7 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
 - ```none ||example.org^$important
    ```
 
-  ||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. „important“ ist der Modifikator.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. „important“ ist der Modifikator.
 
 - Möglicherweise möchten Sie mehrere Modifikatoren in einer Regel verwenden. In diesem Fall sind sie durch Kommata zu trennen:
 
@@ -125,7 +125,7 @@ Sie können das Verhalten einer Regel ändern, indem Sie Modifikatoren hinzufüg
   ||example.org^$client=127.0.0.1,dnstype=A
   ```
 
-  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`][]-Modifikator mit seinem Wert `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der [`dnstype`][]-Modifikator mit seinem Wert, `A`.
+  `||example.org^` ist das passende Muster. `$` ist das Trennzeichen, das signalisiert, dass der Rest der Regel Modifikatoren sind. `client=127.0.0.1` ist der [`client`][] Modifikator mit seinem Wert, `127.0.0.1`. `,` (Komma) ist das Trennzeichen zwischen den Modifikatoren. Und schließlich ist `dnstype=A` der [`dnstype`][]-Modifikator mit seinem Wert, `A`.
 
 :::note
 
@@ -149,7 +149,7 @@ Der Modifikator `client` ermöglicht die Angabe von Clients, auf die diese Regel
 
   :::note
 
-  In AdGuard Home werden derzeit keine Client-IDs unterstützt, sondern nur Namen. Wenn Sie einen Client mit dem Namen „Mein Client” und der „ClientID” `mein-client` hinzugefügt haben, benennen Sie ihren Modifikator mit „`$client='Mein Client'`” anstelle von „`$client=mein-client`”.
+  In AdGuard Home werden derzeit keine Client-IDs unterstützt, sondern nur Namen. Wenn Sie einen Client mit dem Namen „Mein Client” und der ClientID `mein-client` hinzugefügt haben, benennen Sie ihren Modifikator mit `$client='Mein Client'` anstelle von `$client=mein-client`.
 
   :::
 
@@ -409,8 +409,8 @@ Der `important` Modifikator, der auf eine Regel angewendet wird, erhöht ihre Pr
 - In diesem Beispiel:
 
   ```none
-  ||example^$important
-  @@||example^$important
+  ||example.org^$important
+  @@||example.org^$important
   ```
 
   die Ausnahmeregel hat auch den Modifikator `important`, sodass sie funktioniert.
@@ -622,7 +622,7 @@ Wenn eine Zeichenkette keine gültige Domain ist (z.B. `*.example.org`), wird Ad
 
 ## Hostlists Compiler {#hostlist-compiler}
 
-Wenn Sie eine Blockliste pflegen und darin verschiedene Quellen verwenden, kann der [Hostlist-Compiler][] für Sie nützlich sein. Es ist ein einfaches Hilfsmittel, das die Zusammenstellung einer Sperrliste für Hosts erleichtert, die mit AdGuard Home, Private AdGuard DNS oder jedem anderen AdGuard-Produkt mit DNS-Filterung kompatibel ist.
+Wenn Sie eine Blockliste pflegen und darin verschiedene Quellen verwenden, kann der [Compiler][] für Sie nützlich sein. Es ist ein einfaches Hilfsmittel, das die Zusammenstellung einer Sperrliste für Hosts erleichtert, die mit AdGuard Home, Private AdGuard DNS oder jedem anderen AdGuard-Produkt mit DNS-Filterung kompatibel ist.
 
 Was es kann:
 
@@ -638,11 +638,11 @@ Was es kann:
 
 <!-- external links -->
 
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+
+[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
+
 [Adblock-Syntax]: #adblock-style-syntax
-
-[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
-
-[hostlistsregistry]: https://github.com/AdguardTeam/HostlistsRegistry
 
 [Adblock-Stil-Syntax]: #adblock-style-syntax
 [`client`]: #client-modifier
@@ -650,7 +650,7 @@ Was es kann:
 
 [AdGuard DNS filter]: https://github.com/AdguardTeam/AdGuardSDNSFilter
 [Hostlist compiler]: https://github.com/AdguardTeam/HostlistCompiler
-[Hostlist-Compiler]: https://github.com/AdguardTeam/HostlistCompiler
+[Compiler]: https://github.com/AdguardTeam/HostlistCompiler
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-[traditionellen Adblock-Syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/
 [rfc1035]: https://tools.ietf.org/html/rfc1035#section-3.5
+[traditionellen Adblock-Syntax]: https://adguard.com/kb/general/ad-filtering/create-own-filters/

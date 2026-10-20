@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-在这篇文章中，我们解释刷新 DNS 缓存以解决公共 DNS 问题的方式。 用户可以使用 AdGuard 广告拦截程序来设置 DNS 服务器，包括加密的服务器。
+在这篇文章中，我们解释刷新 DNS 缓存以解决公共 DNS 问题的方式。用户可以使用 AdGuard 广告拦截程序来设置 DNS 服务器，包括加密的服务器。
 
 快速连接：[下载 AdGuard 广告拦截程序](https://agrd.io/download-kb-adblock)
 
@@ -13,7 +13,7 @@ sidebar_position: 1
 
 ## DNS 缓存是什么？
 
-DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。 系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
+DNS 缓存将访问站点的 IP 地址存储在本地计算机上，以便在下次加载时可以加载地更快。系统不进行长时间的 DNS 查找，而是使用临时 DNS 缓存中的 DNS 记录来回答查询。
 
 DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Domain_Name_System#Resource_records)，包括：
 
@@ -28,7 +28,7 @@ DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Do
 
 **You’ve changed your DNS provider to AdGuard DNS.** If the user has changed their DNS, it may take some time to see the result because of the cache.
 
-**您经常收到 404 错误**。例如，网站被转移到新服务器，其 IP 地址已经改变。 要使浏览器从新的 IP 地址打开网站，需要从 DNS 缓存中删除已经缓存的 IP。
+**您经常收到 404 错误**。例如，网站被转移到新服务器，其 IP 地址已经改变。要使浏览器从新的 IP 地址打开网站，需要从 DNS 缓存中删除已经缓存的 IP。
 
 **您想改善个人隐私。**
 
@@ -40,11 +40,11 @@ DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Do
 
 最简单的方法是打开再关闭飞行模式（可在控制中心或「设置」中操作）。 DNS 缓存会被刷新。
 
-另一种选择是在「设置」中重置设备的网络设置。 打开「*常规*」，向下滚动，找到「*重置*」然后点击「*重置网络设置*」。
+另一种选择是在「设置」中重置设备的网络设置。打开「*常规*」，向下滚动，找到「*重置*」然后点击「*重置网络设置*」。
 
 :::note
 
-这样操作之后，用户将断开与 Wi-Fi 路由器的连接，并失去其他特定网络的设置（包括 DNS 服务器自定义设置）。 您将需要手动重置它们。
+这样操作之后，用户将断开与 Wi-Fi 路由器的连接，并失去其他特定网络的设置（包括 DNS 服务器自定义设置）。您将需要手动重置它们。
 
 :::
 
@@ -54,7 +54,7 @@ DNS 缓存包含所谓的[资源记录（RR）](https://en.wikipedia.org/wiki/Do
 
 #### 通过 Chrome 清理 DNS 缓存
 
-Google Chrome 通常是 Android 设备的默认浏览器，拥有自己的 DNS 缓存。 要刷新 Chrome 的缓存，请按照以下步骤操作：
+Google Chrome 通常是 Android 设备的默认浏览器，拥有自己的 DNS 缓存。要刷新 Chrome 的缓存，请按照以下步骤操作：
 
 1. 在 Android 设备上启动 Chrome。
 1. 在地址栏中输入 `chrome://net-internals/#DNS`
@@ -68,15 +68,15 @@ To clear your Android device’s DNS cache by changing Wi-Fi network settings to
 1. Go to *Settings → Wi-Fi* and choose the network you’re connected to
 1. 查找 IP 设置并选择「*静态*」。
 1. 填写必填字段。 You can get the necessary information from your network administrator or from your router’s configuration page
-1. 输入所需信息后，重新连接到您的 Wi-Fi 网络。 此操作将强制设备更新其 IP 和 DNS 设置并清除 DNS 缓存。
+1. 输入所需信息后，重新连接到您的 Wi-Fi 网络。此操作将强制设备更新其 IP 和 DNS 设置并清除 DNS 缓存。
 
 #### 高级网络设置
 
-另一种选择是在「设置」中重置设备的网络设置。 打开*「设置」→「系统」→「高级」→「重置选项」→「重置网络设置」*，然后点击「*重置设置*」进行确认。
+另一种选择是在「设置」中重置设备的网络设置。打开*「设置」→「系统」→「高级」→「重置选项」→「重置网络设置」*，然后点击「*重置设置*」进行确认。
 
 :::note
 
-这样操作之后，用户将断开与 Wi-Fi 路由器的连接，并失去其他特定网络的设置（包括 DNS 服务器自定义设置）。 您将需要手动重置它们。
+这样操作之后，用户将断开与 Wi-Fi 路由器的连接，并失去其他特定网络的设置（包括 DNS 服务器自定义设置）。您将需要手动重置它们。
 
 :::
 
@@ -96,15 +96,15 @@ To clear your Android device’s DNS cache by changing Wi-Fi network settings to
 
 要刷新 Windows 设备上的 DNS 缓存，请执行以下操作：
 
-以管理员身份打开 cmd。 您可以通过在「开始」菜单中键入「*命令提示符*」或「*cmd*」找到它。 然后输入 `ipconfig/flushdns` 并按回车键。
+以管理员身份打开 cmd。您可以通过在「开始」菜单中键入「*命令提示符*」或「*cmd*」找到它。然后输入 `ipconfig/flushdns` 并按回车键。
 
-用户将看到提示：*已成功刷新 DNS 解析器缓存*。 完成！
+用户将看到提示：*已成功刷新 DNS 解析器缓存*。完成！
 
 ### Linux
 
-Linux 没有操作系统级别的 DNS 缓存，除非您安装并运行了 systemd-resolved、DNSMasq、BIND 或 Nscd 这样的缓存服务。 清除 DNS 缓存的过程取决于 Linux 的发行版本和使用的缓存服务。
+Linux 没有操作系统级别的 DNS 缓存，除非您安装并运行了 systemd-resolved、DNSMasq、BIND 或 Nscd 这样的缓存服务。清除 DNS 缓存的过程取决于 Linux 的发行版本和使用的缓存服务。
 
-每个发行版本都需要先启动终端窗口。 按键盘上的 Ctrl+Alt+T，然后使用相应的命令清除 Linux 系统运行的服务的 DNS 缓存。
+每个发行版本都需要先启动终端窗口。按键盘上的 Ctrl+Alt+T，然后使用相应的命令清除 Linux 系统运行的服务的 DNS 缓存。
 
 To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
@@ -142,7 +142,7 @@ To find out which DNS resolver you’re using, command `sudo lsof -i :53 -S`.
 
 ## 如何在 Chrome 中刷新 DNS 缓存
 
-如果您不想每次使用私有 AdGuard DNS 或 AdGuard 的主页的时候都重启浏览器，此操作可能会有帮助。 设置 1-2 只需更改一次。
+如果您不想每次使用私有 AdGuard DNS 或 AdGuard 的主页的时候都重启浏览器，此操作可能会有帮助。设置 1-2 只需更改一次。
 
 1. 在 Chrome 设置中禁用**安全 DNS**
 
