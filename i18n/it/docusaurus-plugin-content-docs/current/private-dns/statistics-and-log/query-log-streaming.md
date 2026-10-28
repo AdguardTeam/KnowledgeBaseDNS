@@ -5,73 +5,73 @@ sidebar_position: 6
 
 :::info
 
-_Query log streaming_ is currently in beta testing. During this phase, configuration and setup are semi-manual and performed in coordination with the AdGuard team.
+La funzione _Streaming del registro richieste_ è attualmente in fase di test beta. In questa fase, la configurazione e l'installazione sono semi-manuali e vengono eseguite in collaborazione con il team di AdGuard.
 
 :::
 
-This article describes how to set up and use _Query log streaming_ in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+Questo articolo descrive come configurare e utilizzare lo _streaming del registro richieste_ in AdGuard DNS. Questa funzione consente agli utenti di AdGuard DNS Aziendale di esportare automaticamente eventi di richieste DNS non elaborati in un archivio esterno per scopi di sicurezza, analisi o conformità.
 
-## What is Query log streaming?
+## Cos'è il streaming del registro richieste?
 
-_Query log streaming_ lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
+_Il streaming dati del registro richieste_ consente agli utenti di AdGuard DNS Aziendale di esportare automaticamente gli eventi delle richieste DNS non elaborate nel proprio archivio esterno compatibile con S3 — senza affidarsi al polling manuale delle API. Una volta esportate, questi registri possono essere importate in sistemi SIEM, piattaforme SOC, data lake o strutture di analisi interne, offrendo l'accesso programmatico ai dati grezzi delle richieste per il monitoraggio della sicurezza, l'auditing e la conformità.
 
-Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [_Delivery guarantees and limitations_](#delivery-guarantees-and-limitations) section for details).
+Gli eventi vengono raccolti e consegnati in batch periodici e compressi; i tempi di consegna dipendono dal volume di traffico (vedi la sezione [_Garanzie e limitazioni di consegna_](#delivery-guarantees-and-limitations) per i dettagli).
 
-## Availability and requirements
+## Disponibilità e requisiti
 
-To use _Query log streaming_, the following requirements must be met:
+Per utilizzare il _Streaming del Registro richieste_, devono essere soddisfatti i seguenti requisiti:
 
-- **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
-- **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
+- **Piano Aziendale:** Questa funzione è disponibile esclusivamente per gli utenti AdGuard DNS Commerciale. Se il profilo non ha più un piano Aziendale, il servizio di streaming del registro richieste verrà disattivato. Per la disattivazione volontaria, vedi le FAQ sottostanti.
+- **Registro richieste attivo:** La tua configurazione di AdGuard DNS deve avere la registrazione delle richieste abilitata.
+- **Bucket compatibile con S3:** È necessario disporre di un bucket attivo e scrivibile su Amazon S3 o un altro provider di archivio cloud compatibile con S3 (ad es., Cloudflare R2, Backblaze B2, Wasabi o MinIO).
+- **Credenziali di accesso:** Devi fornire i parametri di connessione e le credenziali obbligatorie affinché AdGuard DNS possa scrivere oggetti nel tuo bucket.
 
-## How to request setup
+## Come richiedere la configurazione
 
-Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
+Poiché la configurazione viene attualmente gestita manualmente dal nostro team infrastrutturale, si prega di seguire questi passaggi per richiedere lo streaming dei registri richieste:
 
-### Step 1: Prepare your S3 bucket
+### Fase 1: Prepara il tuo bucket S3
 
-1. Create a dedicated bucket or path/prefix within your S3-compatible storage.
-2. Grant the minimum required permissions to the credentials you will share with AdGuard. At a minimum, the credentials must have write permissions (`s3:PutObject`) on the designated path.
+1. Crea un bucket o un percorso/prefisso dedicato all'interno del tuo archivio compatibile con S3.
+2. Concedi i permessi minimi obbligatori alle credenziali che condividerai con AdGuard. Come minimo, le credenziali devono avere i permessi di scrittura (`s3:PutObject`) sul percorso designato.
 
-### Step 2: Contact your account manager or AdGuard support team
+### Fase 2: Contatta il tuo gestore del profilo o il gruppo di assistenza AdGuard
 
-Reach out to your dedicated AdGuard account manager or contact AdGuard support team at `support@adguard-dns.io`, and provide the target account or organization for which logs should be streamed.
+Rivolgiti al gestore dedicato del profilo AdGuard o contatta il gruppo di assistenza AdGuard all'indirizzo `support@adguard-dns.io` e fornisci il profilo o l'organizzazione obiettivo per cui le annotazioni devono essere trasmesse in streaming.
 
-### Step 3: Provide configuration details
+### Fase 3: Fornisci i dettagli di configurazione
 
-Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
+Una volta approvata la richiesta, il gruppo di assistenza fornirà ulteriori istruzioni e richiederà i parametri di configurazione specifici obbligatori per stabilire il streaming di registri.
 
-### Step 4: Wait for the log stream to be activated
+### Fase 4: Attendi che il streaming degli registri venga attivato
 
-Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
+Una volta attivato il streaming di richieste, un file `.healthcheck` contenente `ok` viene scritto automaticamente nel bucket di destinazione. Se si verifica qualunque errore di connessione o di scrittura durante l'approntamento, riceverai una notifica. Nessuna ulteriore azione è obbligatoria una volta che lo stream è abilitato.
 
-## Log format and S3 object structure
+## Formato dei registri e struttura degli oggetti S3
 
-Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
+Le registri vengono recapitate come **file JSON minimizzati contenenti un array di oggetti**, in cui ciascun oggetto all'interno dell'array rappresenta un singolo evento di richiesta DNS.
 
-### Compression and encoding
+### Compressione e codifica
 
-- **Encoding:** UTF-8
-- **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
+- **Codifica:** UTF-8
+- **Compressione:** la compressione Gzip è obbligatoria e viene applicata automaticamente a tutti i file di annotazione esportati.
 
-### S3 object layout and naming
+### Layout e denominazione degli oggetti S3
 
-Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
+I file di registri vengono scritti nel bucket compatibile con S3 utilizzando una gerarchia di cartelle strutturata e una convenzione di denominazione specifica basata su timestamp per facilitare richieste e ingestione efficienti basate su partizioni.
 
-- **Object prefix (Path):** `/logs/%Y/%m/%d/` (organized by Year, Month, and Day)
-- **Filename pattern:** `%H-%M-%S-%3f.json.gz` (Hour-Minute-Second-Millisecond of the batch generation)
+- **Prefisso oggetto (Percorso):** `/logs/%Y/%m/%d/` (organizzato per Anno, Mese e Giorno)
+- **Modello del nome file:** `%H-%M-%S-%3f.json.gz` (Ora-Minuto-Secondo-Millisecondo della generazione del batch)
 
-**Example S3 object key:**
+**Esempio di chiave dell'oggetto S3:**
 
 `logs/2026/08/24/14-02-02-123.json.gz`
 
-### File schema structure
+### Struttura dello schema del file
 
-Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minified JSON array.
+A differenza di JSON Lines (JSONL), il file consegnato è un array JSON standard, minificato e su una singola riga.
 
-**Example of the delivered minified file structure (uncompressed representation):**
+**Esempio della struttura del file minimizzato consegnato (rappresentazione non compressa):**
 
 ```json
 
@@ -98,32 +98,32 @@ Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minifie
 }
 ```
 
-## Fields reference {#fields-reference}
+## Riferimento dei campi {#fields-reference}
 
-The table below describes the schema for the exported DNS query logs.
+La tabella sottostante descrive lo schema per le annotazioni delle richieste DNS esportate.
 
-| Campo             | Tipo          | Obbligatorio | Descrizione                                                                                                                                                                                                                                                                                                                                   | Example                |
-| :---------------- | :------------ | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
-| `AccountId`       | integer       | No           | Detected account ID, if any.                                                                                                                                                                                                                                                                                                  | `1234`                 |
-| `DnsServerId`     | string        | No           | Detected profile ID, also known as DNS ID or DNS Server ID, if any.                                                                                                                                                                                                                                                           | `"prof1234"`           |
-| `DeviceId`        | string        | No           | Detected device ID, if any.                                                                                                                                                                                                                                                                                                   | `"dev1234"`            |
-| `ClientCountry`   | string        | No           | Country of the client’s IP address as an ISO 3166-1 alpha-2 code. Assente se non rilevabile. `XK` is used for Kosovo.                                                                                                                                                                         | `"AU"`                 |
-| `ResponseCountry` | string        | No           | Country of the first IP address in the response as an ISO 3166-1 alpha-2 code. Assente se non rilevabile. `XK` is used for Kosovo; `QN` means “Not Applicable” when the response type contains no IP address information.                                                                     | `"US"`                 |
-| `DomainFQDN`      | string        | Sì           | Requested DNS resource name (FQDN).                                                                                                                                                                                                                                                                        | `"example.com."`       |
-| `FilterListId`    | string        | No           | ID of the first filter whose rules matched the query. Omesso se nessuna regola ha trovato corrispondenza. I valori riservati includono `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing` e `youtube_safe_search`. | `"adguard_dns_filter"` |
-| `FilterRule`      | string        | No           | First rule that matched the query. For `blocked_service`, contains the blocked service ID. For `category`, contains the category ID. Omesso se nessuna regola ha trovato corrispondenza.                                                                                      | `"example.com^"`       |
-| `TimeAddedMs`     | integer       | Sì           | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                                                | `1629974298000`        |
-| `ASN`             | integer       | No           | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                                              | `1234`                 |
-| `ElapsedMs`       | integer       | Sì           | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                                                      | `3`                    |
-| `RequestType`     | integer       | Sì           | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                                             | `1`                    |
-| `RequestIdNum`    | integer       | Sì           | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                                             | `12345`                |
-| `Action`          | integer       | Sì           | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                                                  | `2`                    |
-| `DNSSEC`          | integer       | Sì           | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                                          | `1`                    |
-| `Protocol`        | integer       | Sì           | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                                              | `3`                    |
-| `ResponseCode`    | integer       | Sì           | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                                            | `0`                    |
-| `IpAddress`       | string        | No           | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                                                         | `"1.2.3.4"`            |
-| `TrackerId`       | string / null | Sì           | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                                          | `"google"`             |
-| `CategoryId`      | string / null | Sì           | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                                                   | `"search_engines"`     |
+| Campo             | Tipo          | Obbligatorio | Descrizione                                                                                                                                                                                                                                                                                                                                               | Example                |
+| :---------------- | :------------ | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `AccountId`       | integer       | No           | ID del profilo rilevato, se presente.                                                                                                                                                                                                                                                                                                     | `1234`                 |
+| `DnsServerId`     | string        | No           | ID del profilo rilevato, noto anche come ID DNS o ID del server DNS, se presente.                                                                                                                                                                                                                                                         | `"prof1234"`           |
+| `DeviceId`        | string        | No           | ID del dispositivo rilevato, se presente.                                                                                                                                                                                                                                                                                                 | `"dev1234"`            |
+| `ClientCountry`   | string        | No           | Paese dell'indirizzo IP del client come codice ISO 3166-1 alpha-2. Assente se non rilevabile. `XK` è il termine usato per indicare il Kosovo.                                                                                                                                                             | `"AU"`                 |
+| `ResponseCountry` | string        | No           | Paese del primo indirizzo IP nella risposta come codice ISO 3166-1 alpha-2. Assente se non rilevabile. `XK` viene utilizzato per il Kosovo; `QN` significa “Non applicabile” quando il tipo di risposta non contiene informazioni sull'indirizzo IP.                                                      | `"US"`                 |
+| `DomainFQDN`      | string        | Sì           | Nome della risorsa DNS richiesta (FQDN).                                                                                                                                                                                                                                                                               | `"example.com."`       |
+| `FilterListId`    | string        | No           | ID del primo filtro le cui regole corrispondevano alla richiesta. Omesso se nessuna regola ha trovato corrispondenza. I valori riservati includono `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing` e `youtube_safe_search`. | `"adguard_dns_filter"` |
+| `FilterRule`      | string        | No           | Prima regola che corrispondeva alla richiesta. Per `blocked_service`, contiene l'ID del servizio bloccato. Per `category`, contiene l'ID della categoria. Omesso se nessuna regola ha trovato corrispondenza.                                                                             | `"example.com^"`       |
+| `TimeAddedMs`     | integer       | Sì           | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                                                            | `1629974298000`        |
+| `ASN`             | integer       | No           | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                                                          | `1234`                 |
+| `ElapsedMs`       | integer       | Sì           | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                                                                  | `3`                    |
+| `RequestType`     | integer       | Sì           | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                                                         | `1`                    |
+| `RequestIdNum`    | integer       | Sì           | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                                                         | `12345`                |
+| `Action`          | integer       | Sì           | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                                                              | `2`                    |
+| `DNSSEC`          | integer       | Sì           | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                                                      | `1`                    |
+| `Protocol`        | integer       | Sì           | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                                                          | `3`                    |
+| `ResponseCode`    | integer       | Sì           | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                                                        | `0`                    |
+| `IpAddress`       | string        | No           | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                                                                     | `"1.2.3.4"`            |
+| `TrackerId`       | string / null | Sì           | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                                                      | `"google"`             |
+| `CategoryId`      | string / null | Sì           | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                                                               | `"search_engines"`     |
 
 ## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
 
