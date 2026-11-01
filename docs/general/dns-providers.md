@@ -701,6 +701,17 @@ These servers block adult websites and inappropriate contents.
 | DNS-over-HTTPS | `https://doh.applied-privacy.net/query` | [Add to AdGuard](adguard:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net), [Add to AdGuard Mini](adguardmini:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://doh.applied-privacy.net/query&name=doh.applied-privacy.net) |
 | DNS-over-TLS | `tls://dot1.applied-privacy.net` | [Add to AdGuard](adguard:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net), [Add to AdGuard Mini](adguardmini:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dot1.applied-privacy.net&name=dot1.applied-privacy.net) |
 
+### BeatQuantum DNS
+
+[BeatQuantum DNS](https://beatquantum.com/stamps) is a public, non-filtering, DNSSEC-validating resolver in the United Kingdom, with no logs. Every endpoint accepts classical, hybrid (X25519MLKEM768, SecP256r1MLKEM768, SecP384r1MLKEM1024) and pure post-quantum (ML-KEM-512/768/1024) TLS key exchange, so clients can move to post-quantum key exchange without changing server. IPv4 `207.2.121.35`, IPv6 `2a0c:9a46:1e22:12::a`.
+
+| Protocol | Address | |
+| ---------------- | ---------------------------------------------------- | ---------------- |
+| DNS-over-HTTPS | `https://beatquantum.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://beatquantum.com/dns-query&name=BeatQuantum%20DNS), [Add to AdGuard Mini](adguardmini:add_dns_server?address=https://beatquantum.com/dns-query&name=BeatQuantum%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://beatquantum.com/dns-query&name=BeatQuantum%20DNS) |
+| DNS-over-HTTP/3 | `h3://beatquantum.com/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=h3://beatquantum.com/dns-query&name=BeatQuantum%20DNS), [Add to AdGuard Mini](adguardmini:add_dns_server?address=h3://beatquantum.com/dns-query&name=BeatQuantum%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=h3://beatquantum.com/dns-query&name=BeatQuantum%20DNS) |
+| DNS-over-TLS | `tls://beatquantum.com` | [Add to AdGuard](adguard:add_dns_server?address=tls://beatquantum.com&name=BeatQuantum%20DNS), [Add to AdGuard Mini](adguardmini:add_dns_server?address=tls://beatquantum.com&name=BeatQuantum%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://beatquantum.com&name=BeatQuantum%20DNS) |
+| DNS-over-QUIC | `quic://beatquantum.com` | [Add to AdGuard](adguard:add_dns_server?address=quic://beatquantum.com&name=BeatQuantum%20DNS), [Add to AdGuard Mini](adguardmini:add_dns_server?address=quic://beatquantum.com&name=BeatQuantum%20DNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=quic://beatquantum.com&name=BeatQuantum%20DNS) |
+
 ### ByteDance Public DNS
 
 ByteDance Public DNS is a free alternative DNS service by ByteDance at China. The only DNS currently provided by ByteDance supports IPv4. DOH, DOT, DOQ, and other encrypted DNS services will be launched soon.
