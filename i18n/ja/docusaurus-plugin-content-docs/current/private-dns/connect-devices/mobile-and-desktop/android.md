@@ -40,15 +40,15 @@ AdGuard DNSアプリは基本的なDNSレベル保護を目的としており、
 
    ![Connect \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
 
-8. VPNベースのプロトコルを使用する場合、保護を有効にする前にVPNプロファイルの作成を許可する必要があります。 これを行うには、アプリのホームページで「_有効にする_」をクリックし、アプリ内の指示に従ってください。
+8. VPNベースのプロトコルを使用する場合、保護を有効にする前にVPNプロファイルの作成を許可する必要があります。これを行うには、アプリのホームページで「_有効にする_」をクリックし、アプリ内の指示に従ってください。
 
-9. 完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。 保護機能を開始したいときは、毎回「有効にする」をタップしてください。
+9. 完了です! これで、お使いのデバイスは正常に AdGuard DNS に接続されました。保護機能を開始したいときは、毎回「有効にする」をタップしてください。
 
    ![有効にする \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-ja.png)
 
 ## AdGuard 広告ブロッカーアプリを使用する（有料オプション）
 
-AdGuardアプリでは、暗号化されたDNSを使用できるため、Androidデバイスで AdGuard DNS を設定するのに最適です。 様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃいます。
+AdGuardアプリでは、暗号化されたDNSを使用できるため、Androidデバイスで AdGuard DNS を設定するのに最適です。様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃいます。
 
 1. AdGuard DNS に接続したいデバイスに[AdGuardアプリ](https://adguard.com/adguard-android/overview.html)をインストールします。
 2. アプリを開きます。
@@ -60,11 +60,11 @@ AdGuardアプリでは、暗号化されたDNSを使用できるため、Android
    ![DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step5.png)
 6. 「_カスタムサーバー_」までスクロールダウンし、「＋ DNSサーバーを追加する」をタップします。
    ![Add DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step6.png)
-7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![Custom DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. 「_追加_」をタップします。
-9. 追加したDNSサーバーは、「カスタムサーバー」リストの一番下に現れます。 サーバーを選択するには、その名前やその隣にあるラジオボタンをタップします。
+9. 追加したDNSサーバーは、「カスタムサーバー」リストの一番下に現れます。サーバーを選択するには、その名前やその隣にあるラジオボタンをタップします。
    ![Select DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
 10. 「_保存して選択する_」をタップします。
     ![Save and select \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
@@ -73,7 +73,7 @@ AdGuardアプリでは、暗号化されたDNSを使用できるため、Android
 
 ## AdGuard VPN を使用する
 
-VPNサービスの中には、暗号化DNSをサポートしていないものもあります。 しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
+VPNサービスの中には、暗号化DNSをサポートしていないものもあります。しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
 
 1. AdGuard DNS に接続したいデバイスに [AdGuard VPN アプリ](https://adguard-vpn.com/android/overview.html)をインストールします。
 2. アプリを開きます。
@@ -85,7 +85,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
    ![DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step5.png)
 6. 下にスクロールダウンして、「＋ カスタムDNSサーバーを追加する」をクリックします。
    ![Add a DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step6.png)
-7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+7. 以下からDNSアドレスを一つ選んでコピーして、アプリ内の「サーバーアドレス」欄に貼り付けます。どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_1.png)
    ![Custom DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_vpn/android_step7_2.png)
 8. 「_保存して選択する_」をタップします。
@@ -109,7 +109,7 @@ All done! これで、お使いのデバイスは正常に AdGuard DNS に接続
 
 ## プレーンDNSを構成する
 
-DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを設定することができます。 リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
+DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを設定することができます。リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
 - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

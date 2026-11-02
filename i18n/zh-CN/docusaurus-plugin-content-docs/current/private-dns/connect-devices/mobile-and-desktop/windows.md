@@ -14,7 +14,7 @@ You can set it up via [AdGuard](#use-adguard-ad-blocker-paid-option) or [AdGuard
 
 ## 使用 AdGuard 广告拦截程序（付费）
 
-The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. 您可以选择多种加密协议。 除了 DNS 过滤，还可以获得一款出色的广告拦截程序。它在整个系统上屏蔽广告。
+The AdGuard app lets you use encrypted DNS, making it perfect for setting up AdGuard DNS on your Windows device. 您可以选择多种加密协议。除了 DNS 过滤，还可以获得一款出色的广告拦截程序。它在整个系统上屏蔽广告。
 
 1. [Install the app](https://adguard.com/adguard-windows/overview.html) on the device you want to connect to AdGuard DNS.
 2. 打开应用程序。
@@ -38,7 +38,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## 使用 AdGuard VPN
 
-并不是所有的 VPN 都支持加密 DNS。 然而，我们的 VPN 支持加密 DNS，因此，如果要同时使用 VPN 和私人 DNS，AdGuard VPN 是您的理想选择。
+并不是所有的 VPN 都支持加密 DNS。然而，我们的 VPN 支持加密 DNS，因此，如果要同时使用 VPN 和私人 DNS，AdGuard VPN 是您的理想选择。
 
 1. Install AdGuard VPN.
 2. Open the app and click _Settings_.

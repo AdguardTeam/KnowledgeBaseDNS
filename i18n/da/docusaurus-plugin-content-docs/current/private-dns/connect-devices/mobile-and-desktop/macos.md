@@ -34,7 +34,7 @@ Med AdGuard-appen kan man bruge krypteret DNS, hvilket gør den perfekt til ops�
 10. Den nyoprettede server bør nu dukke op nederst på listen.
     ![Udbydere \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step10.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 ## Brug af AdGuard VPN
 
@@ -50,13 +50,13 @@ Ikke alle VPN-tjenester understøtter krypteret DNS. Det understøttes dog af vo
 6. Den tilføjede DNS-server vises nederst på listen _Tilpassede DNS-servere_.
    ![Tilpassede DNS-servere \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step6.png)
 
-All done! Your device is successfully connected to AdGuard DNS.
+Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 ## Brug en opsætningsprofil
 
 En macOS-enhedsprofil, også kaldet en konfigurationsprofil af Apple, er en certifikatsigneret XML-fil, som kan installere manuelt på enheden eller udrulles vha. en MDM-løsning. Den muliggør også opsætning af AdGuard DNS på enheden.
 
-:::note Important
+:::note Vigtigt
 
 Benyttes et VPN, ignoreres opsætningsprofilen.
 
@@ -71,11 +71,11 @@ Benyttes et VPN, ignoreres opsætningsprofilen.
    ![Installér \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_profile/mac_step4.png)
 5. Angiv admin-adgangskoden, og klik på _OK_.
 
-All done! Your device is successfully connected to AdGuard DNS.
+Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
 ## Opsæt almindelig DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
+Foretrækkes det ikke at bruge ekstra software til DNS-opsætning, kan der vælges ukrypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

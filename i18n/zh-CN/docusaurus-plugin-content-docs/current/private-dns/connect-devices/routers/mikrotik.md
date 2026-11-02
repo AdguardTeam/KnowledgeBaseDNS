@@ -13,7 +13,7 @@ MikroTik routers use the open-source RouterOS operating system, which provides r
    - 输入您的管理员用户名和密码。
 2. 导入根证书：
    - 下载最新的受信任根证书包：[https://curl.se/docs/caextract.html](https://curl.se/docs/caextract.html)
-   - 前往「_文件_」。 单击「_上传_」，然后选择已下载的 cacert.pem 证书包。
+   - 前往「_文件_」。单击「_上传_」，然后选择已下载的 cacert.pem 证书包。
    - 转到「_系统_」→「_证书_」→「_导入_」。
    - 在「_文件名_」字段中，选择已上传的证书文件。
    - 点击「_导入_」。

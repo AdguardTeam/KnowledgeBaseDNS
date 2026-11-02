@@ -38,7 +38,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN を使用する
 
-VPNサービスの中には、暗号化DNSをサポートしていないものもあります。 しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
+VPNサービスの中には、暗号化DNSをサポートしていないものもあります。しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
 
 1. Install AdGuard VPN.
 2. Open the app and click _Settings_.

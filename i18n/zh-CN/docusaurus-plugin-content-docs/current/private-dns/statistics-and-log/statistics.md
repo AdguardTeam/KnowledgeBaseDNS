@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## 概况统计
 
-在「统计数字」选项卡中，用户可以查看连接到私有 AdGuard DNS 的设备发出的所有 DNS 请求的汇总统计信息。 它显示请求的总数和地理位置、被拦截的请求数、请求被发送到的公司列表、请求类型和请求最多的域名。
+在「统计数字」选项卡中，用户可以查看连接到私有 AdGuard DNS 的设备发出的所有 DNS 请求的汇总统计信息。它显示请求的总数和地理位置、被拦截的请求数、请求被发送到的公司列表、请求类型和请求最多的域名。
 
 ![已拦截网站 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
@@ -52,4 +52,4 @@ sidebar_position: 2
 
 ### 客户端排行
 
-在这里我们显示发送请求的客户端数量。 要查看客户端 IP 地址，请在服务器设置中启用「记录 IP 地址」。 [更多关于服务器设置](/private-dns/server-and-settings/advanced.md)可以在相关章节中找到。
+在这里我们显示发送请求的客户端数量。要查看客户端 IP 地址，请在服务器设置中启用「记录 IP 地址」。[更多关于服务器设置](/private-dns/server-and-settings/advanced.md)可以在相关章节中找到。

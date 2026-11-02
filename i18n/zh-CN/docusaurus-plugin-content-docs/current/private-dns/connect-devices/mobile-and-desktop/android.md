@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## 使用 AdGuard DNS 应用程序
 
-AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截广告、跟踪器及恶意网站。 若您不需要 AdGuard 广告拦截程序或 AdGuard VPN 提供的完整功能，这款应用或许是您的理想选择。
+AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截广告、跟踪器及恶意网站。若您不需要 AdGuard 广告拦截程序或 AdGuard VPN 提供的完整功能，这款应用或许是您的理想选择。
 
 设置方法如下：
 
@@ -40,7 +40,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
    ![连接 \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/Connect.png)
 
-8. 使用基于 VPN 的协议时，仍需授权创建 VPN 配置文件以获得完整保护。 请前往应用首页点击「启用」，并遵循应用内指引完成设置。
+8. 使用基于 VPN 的协议时，仍需授权创建 VPN 配置文件以获得完整保护。请前往应用首页点击「启用」，并遵循应用内指引完成设置。
 
 9. All done! Your device is successfully connected to AdGuard DNS. 每次想要启动保护功能时，请点击「启用”」
 
@@ -48,7 +48,7 @@ AdGuard DNS 应用专为实现基础的 DNS 层级防护而设计，可以拦截
 
 ## AdGuard 广告拦截程序（付费）
 
-AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 AdGuard DNS 是一个理想的选择。 您可以选择多种加密协议。 除了 DNS 过滤，还可以获得一款出色的广告拦截程序。它在整个系统上屏蔽广告。
+AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 AdGuard DNS 是一个理想的选择。您可以选择多种加密协议。除了 DNS 过滤，还可以获得一款出色的广告拦截程序。它在整个系统上屏蔽广告。
 
 1. 在要连接到 AdGuard DNS 的设备上安装 [AdGuard 应用程序] (https://adguard.com/adguard-android/overview.html)。
 2. 打开应用程序。
@@ -64,7 +64,7 @@ AdGuard 应用程序让用户使用加密的 DNS，在 Android 设备上使用 A
    ![DoH \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_1.png)
    ![自定义 DNS 服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step7_2.png)
 8. 点击「_添加_」。
-9. 您添加的 DNS 服务器将显示在「_自定义服务器_」列表的底部。 要选择它，请点击它的名称或旁边的单选按钮。
+9. 您添加的 DNS 服务器将显示在「_自定义服务器_」列表的底部。要选择它，请点击它的名称或旁边的单选按钮。
    ![选择 DNS 服务器 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step_9.png)
 10. 点击「_保存并选择_」。
     ![保存并选择 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_ab/android_step10.png)
@@ -73,7 +73,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN
 
-并不是所有的 VPN 都支持加密 DNS。 然而，我们的 VPN 支持加密 DNS，因此，如果要同时使用 VPN 和私人 DNS，AdGuard VPN 是您的理想选择。
+并不是所有的 VPN 都支持加密 DNS。然而，我们的 VPN 支持加密 DNS，因此，如果要同时使用 VPN 和私人 DNS，AdGuard VPN 是您的理想选择。
 
 1. 在想要连接到 AdGuard DNS 的设备上安装 [AdGuard VPN 应用程序](https://adguard-vpn.com/android/overview.html)。
 2. 打开应用程序。
@@ -96,7 +96,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## 手动配置私人 DNS
 
-用户可以在设备设置中配置 DNS 服务器。 请注意，Android 设备仅支持 DNS-over-TLS 协议。
+用户可以在设备设置中配置 DNS 服务器。请注意，Android 设备仅支持 DNS-over-TLS 协议。
 
 1. 前往「_设置_」→「_Wi-Fi 和互联网_」（或「_网络和互联网_」，取决于操作系统版本）。
    ![设置 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/android_manual/manual_step1.png)

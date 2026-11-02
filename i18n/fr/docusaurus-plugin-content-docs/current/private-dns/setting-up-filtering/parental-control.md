@@ -3,58 +3,59 @@ title: Contrôle Parental
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+Le _Contrôle parental_ est un ensemble de paramètres qui vous donne la flexibilité de personnaliser l'accès à certains sites Web avec un contenu sensible. Vous pouvez utiliser cette fonctionnalité pour restreindre l'accès de vos enfants aux sites pour adultes, personnaliser les requêtes de recherche, bloquer l'utilisation de services populaires, et plus encore.
 
-## How to set it up
+## Mise en place
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+Vous pouvez configurer de manière flexible toutes les fonctionnalités sur vos serveurs, y compris la fonctionnalité de contrôle parental. [Dans l'article correspondant](private-dns/server-and-settings/server-and-settings.md), vous pouvez vous familiariser avec ce qu'est un serveur dans AdGuard DNS et apprendre à créer de différents serveurs avec de différents ensembles de paramètres.
 
-Then, go to the settings of the selected server and enable the required configurations.
+Ensuite, accédez aux paramètres du serveur sélectionné et activez les configurations requises.
 
-### Block adult websites
+### Bloquer les sites à contenu adulte
 
-Blocks websites with inappropriate and adult content.
+Bloque les sites Web ayant des contenus inappropriés et pour adultes.
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![Site Web bloqué \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### Recherche sécurisée
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+Supprime les résultats inappropriés de Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, et Ecosia.
 
-### YouTube restricted mode
+### Mode limité YouTube
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+Supprime l'option de visionner et de publier des commentaires sous les vidéos et d'interagir avec du contenu 18+ sur YouTube.
 
-### Blocked services and websites
+### Services et sites Web bloqués
 
-Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
+Restreint l'accès aux services populaires en un clic. Ceci est utile si vous ne voulez pas que les appareils connectés accèdent à certaines plateformes, telles qu'Instagram et YouTube.
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![Services bloqués \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Block websites by category
+### Bloquez les sites Web par catégorie
 
-Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+AdGuard DNS bloque l'accès aux services populaires en un clic. Par exemple, si vous bloquez les sites contenant des informations sur l'alcool, le tabac ou les drogues, l'appareil sélectionné ne pourra plus ouvrir les pages appartenant à ces catégories.
 
-![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![Blocage par catégorie \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pause schedule
+### L'horaire des pauses
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+Cette fonction vous permet de restreindre l'accès à des catégories spécifiques de sites web en choisissant parmi plus de 20 catégories, dont _Contenu pour adultes_, _Jeux_, _Services bancaires_ et _Communication_. Vous pouvez ajouter un ou plusieurs intervalles de pauses pour chaque jour.
 
-For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+Par exemple, vous pouvez suspendre les restrictions en semaine à partir de 7h00 à 8h00 avant l'école et de 18h00 à 20h00 le soir. En dehors de ces intervalles, le _Contrôle parental_ s'applique comme d'habitude.
 
-To set up a pause schedule:
+Pour programmer une pause :
 
-1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
-2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
-3. To change an existing interval, click _Edit_.
+1. Allez dans _Serveurs_ → sélectionnez un serveur → _Contrôle parental_ → _Horaire des pauses_.
+2. Cliquez sur le bouton **+** à côté du jour souhaité et configurez l'intervalle dans la boîte de dialogue _Ajouter une pause_.
+3. Répétez l'opération pour ajouter plusieurs intervalles la même journée.
+4. Pour modifier un intervalle existant, cliquez sur _Modifier_.
 
-You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+Vous pouvez configurer plusieurs intervalles pour le même jour. Les intervalles d'une même journée ne peuvent pas se chevaucher : si vous essayez de créer des intervalles qui se chevauchent, un avertissement s'affichera et vous ne pourrez pas enregistrer la programmation.
 
-![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
+![intervalles qui se chevauchent \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+Cocher la case _Toute la journée_ suspend les restrictions _Contrôle parental_ pour toute la journée, remplaçant ainsi les intervalles que vous avez définis.
 
-Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+Les intervalles de pause peuvent également s'étendre au-delà de minuit. Par exemple, si vous définissez une pause à partir de 22h le lundi jusqu'à 7h le mardi, le tableau de bord affichera deux intervalles : Lundi, 22h00 - 00h00, et mardi, 00h00 - 07h00.
 
-![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Horaire des pauses \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)

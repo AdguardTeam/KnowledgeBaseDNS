@@ -41,6 +41,8 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 
 - [Cloudron uygulaması][cloudron], [@gramakri](https://github.com/gramakri) tarafından sürdürülmektedir.
 
+- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
 [archarm]: https://archlinuxarm.org/
@@ -54,6 +56,7 @@ Diğer bazı resmi olmayan seçenekler şunlardır:
 [platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
+[zimaos]: https://www.zimaspace.com/docs/zimaos/app-store/adguard-home-setup
 
 ## İlk başlangıç {#first-time}
 
@@ -229,6 +232,14 @@ You can run AdGuard Home without superuser privileges, but you must either grant
 Bu yöntemin kullanılması `setcap` yardımcı programını gerektirir. Linux dağıtımınızın paket yöneticisini kullanarak kurmanız gerekebilir.
 
 Linux'da çalışan AdGuard Home'un süper kullanıcı ayrıcalıkları olmadan 53 numaralı bağlantı noktasını dinlemesine ve DNS sunucularını belirli bir arayüze bağlamasına izin vermek için çalıştırın:
+
+- Yalnızca DNS modu için:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- DHCP ve DNS modu için (ek olarak `CAP_NET_RAW` gereksinimi):
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome

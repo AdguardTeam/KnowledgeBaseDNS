@@ -41,6 +41,8 @@ Certaines autres options non officielles incluent :
 
 - [Application Cloudron][cloudron] maintenue par [@gramakri](https://github.com/gramakri).
 
+- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/
 [archarm]: https://archlinuxarm.org/
@@ -54,6 +56,7 @@ Certaines autres options non officielles incluent :
 [platforms]: /adguard-home/platforms
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 [snap]: https://snapcraft.io/adguard-home
+[zimaos]: https://www.zimaspace.com/docs/zimaos/app-store/adguard-home-setup
 
 ## Premier démarrage {#first-time}
 
@@ -229,6 +232,14 @@ Vous pouvez exécuter AdGuard Home sans privilèges de superutilisateur, mais vo
 L'utilisation de cette méthode nécessite l'utilitaire `setcap`. Vous devrez peut-être l'installer à l'aide du gestionnaire de paquets de votre distribution Linux.
 
 Pour permettre à AdGuard Home fonctionnant sur Linux d'écouter sur le port 53 sans privilèges de superutilisateur et de lier ses serveurs DNS à une interface particulière, exécutez :
+
+- For DNS-only mode:
+
+```sh
+sudo setcap 'CAP_NET_BIND_SERVICE=+eip' ./AdGuardHome
+```
+
+- For DHCP and DNS mode (additional requirement of `CAP_NET_RAW`):
 
 ```sh
 sudo setcap 'CAP_NET_BIND_SERVICE=+eip CAP_NET_RAW=+eip' ./AdGuardHome

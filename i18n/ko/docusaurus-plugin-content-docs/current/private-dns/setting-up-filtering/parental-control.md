@@ -3,9 +3,9 @@ title: 자녀 보호
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+**자녀 보호**는 민감한 콘텐츠가 있는 웹사이트에 대한 접근을 유연하게 제어할 수 있는 설정 모음입니다. 이 기능으로 자녀가 성인 사이트에 접속하지 못하게 하고, 검색 결과를 걸러 내고, 인기 서비스 이용을 차단하는 등 다양한 제한을 설정할 수 있습니다.
 
-## How to set it up
+## 설정 방법
 
 You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
 
@@ -39,22 +39,23 @@ Lets you restrict access to specific categories of websites by choosing from mor
 
 ### Pause schedule
 
-Temporarily suspends Parental control restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+Temporarily suspends _Parental control_ restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
 
-For example, you may allow your child to watch YouTube until 23:00 on weekdays, while leaving access unrestricted on weekends. You can also add an additional pause interval, such as from 13:00 to 15:00 on a weekday.
+For example, you can pause the restrictions on weekdays from 7:00 a.m. to 8:00 a.m. before school and from 6:00 p.m. to 8:00 p.m. in the evening. Outside of these intervals, _Parental control_ applies as usual.
 
 To set up a pause schedule:
 
 1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
 2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
-3. To change an existing interval, click _Edit_.
+3. Repeat to add more intervals to the same day.
+4. To change an existing interval, click _Edit_.
 
 You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
 
 ![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Select the _All day_ checkbox to pause Parental control for the entire day. This removes all existing pause intervals for that day.
+Selecting the _All day_ checkbox pauses _Parental control_ restrictions for the entire day, replacing any intervals you’ve set.
 
-Pause intervals can also span midnight. For example, if you set a pause from 22:00 on Monday to 07:00 on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00. This does not affect how the pause works.
+Pause intervals can also span midnight. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
 
-![Pause past midnight \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/past_midnight.png)
+![Pause schedule \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)

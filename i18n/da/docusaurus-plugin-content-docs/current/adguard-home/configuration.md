@@ -563,7 +563,7 @@ Objektet `filtering` opsætter filtreringsindstillinger. Det har flg. egenskaber
 
 - `parental_cache_size`: _Forældrekontrol_-cache-størrelse i byte.
 
-- `rewrites`: Liste over ældre DNS-omskrivninger, hvor `domain` er domænet eller jokertegnet, der ønskes omskrevet, og `answer` er IP-adresse, CNAME-post, `A` eller `AAAA` særværdier. Særværdi `A` bevarer `A`-poster fra upstream, og `AAAA` bevarer `AAAA`-værdier fra upstream.
+- `rewrites`: Liste over ældre DNS-omskrivninger, hvor `domain` er domænet eller jokertegnet, der ønskes omskrevet, og `answer` er IP-adresse, CNAME-post, `A` eller `AAAA` særværdier. Særværdi `A` bevarer `A`-poster fra upstream, og `AAAA` bevarer `AAAA`-værdier fra upstream. Egenskaben `enabled` bestemmer, om omskrivningen er aktiv.
 
   **Eksempel:**
 
@@ -571,8 +571,10 @@ Objektet `filtering` opsætter filtreringsindstillinger. Det har flg. egenskaber
     'rewrites':
       - 'domain': example.com
         'answer': 127.0.0.1
+        'enabled': true
       - 'domain': '*.example.com'
         'answer': A
+        'enabled': true
     ```
 
 - `safe_fs_patterns`: Liste over tilladte filsystemstimønstre til tilføjelse af **lokale** filterfiler.
@@ -838,12 +840,12 @@ Fjernes en post fra indstillingsfilen, nulstilles den til standardværdien. Slet
 
 Følg disse trin for at oprette en ny brugerkontoadgangskode:
 
-1. Installér `htpasswd`, der er en del af _Apache2-webserveren:_
+1. Installér `htpasswd`. På Linux, installér værktøjspakken i stedet for Apache2 Web Server:
 
    - Ubuntu:
 
         ```sh
-        sudo apt-get install apache2
+        sudo apt-get install apache2-utils
         ```
 
    - Fedora:

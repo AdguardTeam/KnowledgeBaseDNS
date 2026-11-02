@@ -40,7 +40,7 @@ AdGuard DNSアプリは基本的なDNSレベル保護を目的としており、
 
 ![Enable \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/dns-app-v1-0/protect-ja.png)
 
-1. VPNベースのプロトコルを使用する場合、保護を有効にする前にVPNプロファイルの作成を許可する必要があります。 これを行うには、アプリのホームページで「_有効にする_」をクリックし、アプリ内の指示に従ってください。
+1. VPNベースのプロトコルを使用する場合、保護を有効にする前にVPNプロファイルの作成を許可する必要があります。これを行うには、アプリのホームページで「_有効にする_」をクリックし、アプリ内の指示に従ってください。
 
 2. iOSのネイティブDNSを好むユーザーは、iOS&#x306E;_&#x8A2D;&#x5B9A;_&#x30A2;プリ → 「_一般_」 → 「_VPNとデバイス管理_」 → 「_DNS_」 でAdGuard DNSを有効にする必要があります。
 
@@ -48,7 +48,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard 広告ブロッカーアプリを使用する（有料オプション）
 
-AdGuardアプリでは、暗号化されたDNSを使用できるため、iOSデバイスで AdGuard DNS を設定するのに最適です。 様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
+AdGuardアプリでは、暗号化されたDNSを使用できるため、iOSデバイスで AdGuard DNS を設定するのに最適です。様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
 
 1. AdGuard DNS に接続したいデバイスに [AdGuard アプリ](https://adguard.com/adguard-ios/overview.html)をインストールします。
 2. AdGuard アプリを開きます。
@@ -59,7 +59,7 @@ AdGuardアプリでは、暗号化されたDNSを使用できるため、iOSデ�
    ![DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step4_2.jpg)
 5. 一番下にスクロールダウンして、「＋ カスタムDNSサーバーを追加する」をクリックします。
    ![Add DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step5.jpg)
-6. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスをお使いください。
+6. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスをお使いください。
    ![Copy server address \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_1.png)
    ![Paste server address \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_ab/ios_step6_2.jpg)
 7. 「_保存して選択する_」をタップします。
@@ -71,7 +71,7 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN を使用する
 
-VPNサービスの中には、暗号化DNSをサポートしていないものもあります。 しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
+VPNサービスの中には、暗号化DNSをサポートしていないものもあります。しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
 
 1. AdGuard DNS に接続したいデバイスへ [AdGuard VPN アプリ](https://adguard-vpn.com/ios/overview.html)をインストールします。
 2. AdGuard VPN アプリを開きます。
@@ -83,7 +83,7 @@ VPNサービスの中には、暗号化DNSをサポートしていないもの�
    ![DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step5.png)
 6. 「カスタムDNSサーバーを追加する」までスクロールダウンします。
    ![Add server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step6.png)
-7. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+7. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_1.png)
    ![Custom DNS server \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/ios_vpn/ios_step7_2.jpg)
 8. 「保存」をタップします。
@@ -112,7 +112,7 @@ VPNを使用している場合、構成プロファイルは無視されます�
 
 ## プレーンDNSを構成する
 
-DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを使うことができます。 リンクされた IP または 専用 IP を使用するという2つの選択肢があります:
+DNS設定に余分なソフトウェアを使いたくない場合は、暗号化されていないDNSを使うことができます。リンクされた IP または 専用 IP を使用するという2つの選択肢があります:
 
 - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)

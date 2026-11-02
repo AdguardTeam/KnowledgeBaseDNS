@@ -12,7 +12,7 @@ macOSデバイスを AdGuard DNS に接続するには、まずはデバイス�
 
 ## AdGuard 広告ブロッカーアプリを使用する（有料オプション）
 
-AdGuardアプリでは、暗号化されたDNSを使用できるため、macOSデバイスで AdGuard DNS を設定するのに最適です。 様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
+AdGuardアプリでは、暗号化されたDNSを使用できるため、macOSデバイスで AdGuard DNS を設定するのに最適です。様々な暗号化プロトコルから選択することができます。 DNSフィルタリングに加えて、システム全体で機能する優れた広告ブロッカーも手に入っちゃうことがメリットです。
 
 1. AdGuard DNS に接続したいデバイスに [AdGuard アプリ](https://adguard.com/adguard-mac/overview.html)をインストールします。
 2. アプリを開きます。
@@ -26,7 +26,7 @@ AdGuardアプリでは、暗号化されたDNSを使用できるため、macOS�
    ![DNS protection \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step6.png)
 7. 左下の「＋」をクリックします。
    ![Click + \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step7.png)
-8. 以下のDNSアドレスから一つを選んでコピーして、「_DNSサーバー_」欄に貼り付けます。 どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
+8. 以下のDNSアドレスから一つを選んでコピーして、「_DNSサーバー_」欄に貼り付けます。どれを使用すべきかわからない場合は、「_DNS-over-HTTPS_」アドレスを選択してください。
    ![DoH server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_1.png)
    ![Create server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_ab/mac_step8_2.png)
 9. 「_保存して選択する_」をクリックします。
@@ -38,13 +38,13 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 ## AdGuard VPN を使用する
 
-VPNサービスの中には、暗号化DNSをサポートしていないものもあります。 しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
+VPNサービスの中には、暗号化DNSをサポートしていないものもあります。しかし、AdGuard VPN は対応しているので、VPNとプライベートDNSの両方が必要な場合、AdGuard VPN がベストチョイスになります。
 
 1. AdGuard DNS に接続したいデバイスに [AdGuard VPN アプリ](https://adguard-vpn.com/mac/overview.html)をインストールします。
 2. AdGuard VPN アプリを開きます。
 3. 「_設定_」 → 「_本アプリの設定_」 → 「_DNSサーバー_」 → 「_カスタムサーバーを追加_」を開きます。
    ![Add custom server \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step3.png)
-4. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。 どちらを選ぶべきかわからない場合は、「DNS-over-HTTPS」を選択します。
+4. 以下のDNSアドレスから一つを選んでコピーして、「DNSサーバーアドレス」欄に貼り付けます。どちらを選ぶべきかわからない場合は、「DNS-over-HTTPS」を選択します。
    ![DNS servers \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/mac_vpn/mac_step4.png)
 5. 「_保存して選択する_」をクリックします。
 6. 追加したDNSサーバーは、「カスタムDNSサーバー」リストの一番下に現れます。

@@ -10,11 +10,11 @@ For at tilslutte en Linux-enhed til AdGuard DNS, føj den først til _Kontrolpan
 3. Navngiv enheden.
    ![Tilslutning af enhed \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_linux.png)
 
-## Use AdGuard DNS CLI
+## Benyt AdGuard DNS CLI
 
-AdGuard DNS CLI is a cross-platform console utility that allows you to use encrypted DNS protocols to access AdGuard DNS.
+AdGuard DNS CLI er et tværplatforms konsolværktøj, der muliggør brug af krypterede DNS-protokoller til at tilgå AdGuard DNS.
 
-Man kan læse mere om dette i den [relaterede artikel](/dns-client/overview/).
+Der kan læses mere om dette i den [relaterede artikel](/dns-client/overview/).
 
 :::note
 
@@ -24,57 +24,57 @@ Der kan [bruges AdGuard DNS CLI til automatisk enhedstilslutning][agdnscli-autod
 
 [agdnscli-autodevice]: /dns-client/configuration.md#dns-upstream
 
-## Use AdGuard VPN CLI
+## Benyt AdGuard DNS CLI
 
-You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line interface). To get started with AdGuard VPN CLI, you’ll need to use Terminal.
+Der kan opsættes Private AdGuard DNS vha. AdGuard VPN CLI (kommandolinjegrænseflade). Det kræver brug af Terminal at komme i gang med AdGuard VPN CLI.
 
-1. Install AdGuard VPN CLI by following [these instructions](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
-2. Go to [Settings](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
-3. To set a specific DNS server, use the command: `adguardvpn-cli config set-dns <server_address>`, where `<server_address>` is your private server’s address.
-4. Activate the DNS settings by entering `adguardvpn-cli config set-system-dns on`.
+1. Installér AdGuard VPN CLI ved at følge [denne vejledning](https://adguard-vpn.com/kb/adguard-vpn-for-linux/installation/).
+2. Gå til [Indstillinger](https://adguard-vpn.com/kb/adguard-vpn-for-linux/settings/).
+3. For at indstille en bestemt DNS-server, brug kommandoen: `adguardvpn-cli config set-dns <server_address>`, hvor `<server_address>` er adressen på den private server.
+4. Aktivér DNS-indstillingerne ved at indtaste `adguardvpn-cli config set-system-dns on`.
 
-## Configure manually on Ubuntu (linked IP or dedicated IP required)
+## Opsæt manuelt på Ubuntu (linket IP eller dedikeret IP kræves)
 
-1. Click _System_ → _Settings_ → _Network_.
-2. Select the _Wireless_ tab, then choose the network you’re connected to.
-3. Go to _IPv4_.
-4. Set _Automatic (DHCP)_ to _Manual_.
-5. Change the listed DNS addresses to the following addresses:
+1. Klik på _System_ → _Indstillinger_ → _Netværk_.
+2. Vælg fanen _Trådløst_ og dernæst det tilsluttede netværk.
+3. Gå til _IPv4_.
+4. Indstil _Automatisk (DHCP)_ til _Manuel_.
+5. Skift de listede DNS-adresser til flg.:
    - `94.140.14.49`
    - `94.140.14.59`
-6. Click _Apply_.
-7. Go to _IPv6_.
+6. Klik på _Anvend_.
+7. Gå til _IPv6_.
 8. Indstil _Automatisk_ til _Manuel_.
-9. Change the listed DNS addresses to the following addresses:
+9. Skift de listede DNS-adresser til flg.:
    - `2a10:50c0:0:0:0:0:ded:ff`
    - `2a10:50c0:0:0:0:0:dad:ff`
-10. Click _Apply_.
-11. Link your IP address (or your dedicated IP if you have a Team subscription):
+10. Klik på _Anvend_.
+11. Link IP-adressen (eller den dedikerede IP, hvis et Team-abonnement anvendes):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
     - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Configure manually on Debian (linked IP or dedicated IP required)
+## Opsæt manuelt på Debian (linket IP eller dedikeret IP kræves)
 
-1. Open the Terminal.
-2. In the command line, type: `su`.
-3. Enter your `admin` password.
-4. In the command line, type: `nano /etc/resolv.conf`.
-5. Change the listed DNS addresses to the following:
+1. Åbn Terminal.
+2. Skriv på kommandolinjen: `su`.
+3. Angiv `admin`-adgangskoden.
+4. Skriv på kommandolinjen: `nano /etc/resolv.conf`.
+5. Erstat de viste DNS-adresser med flg.:
    - IPv4: `94.140.14.49 and 94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff and 2a10:50c0:0:0:0:0:dad:ff`
-6. Press _Ctrl + O_ to save the document.
-7. Press _Enter_.
-8. Press _Ctrl + X_ to save the document.
-9. In the command line, type: `/etc/init.d/networking restart`.
-10. Press _Enter_.
-11. Close the Terminal.
-12. Link your IP address (or your dedicated IP if you have a Team subscription):
+6. Tryk på _Ctrl + O_ for at gemme dokumentet.
+7. Tryk på _Retur_.
+8. Tryk på _Ctrl + X_ for at gemme dokumentet.
+9. Skriv på kommandolinjen: `/etc/init.d/networking restart`.
+10. Tryk på _Retur_.
+11. Luk Terminal.
+12. Link IP-adressen (eller den dedikerede IP, hvis et Team-abonnement anvendes):
     - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
     - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
 
-## Use dnsmasq
+## Benyt dnsmasq
 
-1. Install dnsmasq using the following commands:
+1. Installér dnsmasq via flg. kommandoer:
 
    `sudo apt updatesudo`
 
@@ -82,7 +82,7 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `dnsmasqsudo nano /etc/dnsmasq.conf`
 
-2. Use the following commands in dnsmasq.conf:
+2. Benyt flg. kommandoer i dnsmasq.conf:
 
    `no-resolv`
 
@@ -98,43 +98,43 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 
    `add-cpe-id={Your_Device_ID}`
 
-3. Restart the dnsmasq service:
+3. Genstart dnsmasq-tjenesten:
 
    `sudo service dnsmasq restart`
 
-All done! Your device is successfully connected to AdGuard DNS.
+Færdig! Enheden er nu tilsluttet AdGuard DNS.
 
-:::note Important
+:::note Vigtigt
 
-If you see a notification that you are not connected to AdGuard DNS, most likely the port on which dnsmasq is running is occupied by other services. Use [these instructions](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) to solve the problem.
+Ses en notifikation om, at man ikke er forbundet til AdGuard DNS, er det mest sandsynlige, at den port, som dnsmasq kører på, er optaget af andre tjenester. Benyt [denne vejledning](https://github.com/AdguardTeam/AdGuardHome/wiki/FAQ#bindinuse) til at løse problemet.
 
 :::
 
-## Use EDNS (Extended DNS)
+## Benyt EDNS (Udvidet DNS)
 
-EDNS extends the DNS protocol, enabling larger UDP packets to carry additional data. In AdGuard DNS, it allows passing DeviceID in plain DNS using an extra parameter.
+EDNS udvider DNS-protokollen, hvilket muliggør større UDP-pakker til transport af yderligere data. I AdGuard DNS muliggør det at videregive DeviceID i almindelig DNS vha. en ekstra parameter.
 
-DeviceID, an eight-digit hexadecimal identifier (e.g., `1a2b3c4d`), helps link DNS requests to specific devices. For encrypted DNS, this ID is part of the domain (e.g., `1a2b3c4d.d.adguard-dns.com`). For unencrypted DNS, EDNS is required to transfer this identifier.
+DeviceID, en ottecifret hexadecimal identifikator (f.eks. `1a2b3c4d`), assisterer med at linke DNS-forespørgsler til specifikke enheder. Ved krypteret DNS, er denne ID en del af domænet (f.eks. `1a2b3c4d.d.adguard-dns.com`). Ved ukrypteret DNS, kræves EDNS for at overføre denne identifikator.
 
-AdGuard DNS uses EDNS to retrieve DeviceID by looking for option number `65074`. If such an option exists, it will read DeviceID from there. For this, you can use the `dig` command in the terminal:
+AdGuard DNS bruger EDNS til at hente DeviceID ved at lede efter indstillingstallet `65074`. Hvis en sådan mulighed findes, læses DeviceID derfra. Til dette kan der bruges `dig`-kommandoen i terminal:
 
 ```sh
 dig @94.140.14.49 'www.example.com' A IN +ednsopt=65074:3031323334353637
 ```
 
-Here, `65074` is the option ID, and `3031323334353637` is its value in hex format (DeviceID: `01234567`).
+Her er `65074` indstillings-ID'en, og `3031323334353637` er dens værdi i hex format (DeviceID: `01234567`).
 
-All done! DeviceID should be displayed.
+Færdig! DeviceID skal vises.
 
 :::note
 
-The `dig` command is merely an example, you can use any DNS software with an ability to add EDNS options to perform this action.
+`dig`-kommandoen er blot et eksempel, der kan bruge enhver DNS-software med evnen til at tilføje EDNS-indstillinger for at udføre denne handling.
 
 :::
 
-## Use plain DNS
+## Brug almindelig DNS
 
-If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
+Foretrækkes det ikke at bruge ekstra software til DNS-opsætning, kan der vælges ukrypteret DNS. Der er to valgmuligheder: Brug linkede IP'er eller dedikerede IP'er:
 
 - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

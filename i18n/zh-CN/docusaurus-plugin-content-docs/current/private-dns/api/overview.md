@@ -145,13 +145,13 @@ The service redirects you to AdGuard to authenticate (if you are not already log
 
 The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
-| 参数                | 详细信息                                                            |
-|:----------------- |:--------------------------------------------------------------- |
-| **response_type** | 告诉授权服务器要执行哪个授权。                                                 |
-| **client_id**     | 请求授权的 OAuth 客户端的 ID。                                            |
-| **redirect_uri**  | 包含一个 URL。 该端点的成功响应会重定向到该 URL。                                   |
-| **state**         | 用于安全目的的不透明值。 如果请求中设置此请求参数，它将作为重定向 **redirect_uri** 的一部分返回给应用程序。 |
-| **aid**           | 联盟标识符                                                           |
+| 参数                | 详细信息                                                           |
+|:----------------- |:-------------------------------------------------------------- |
+| **response_type** | 告诉授权服务器要执行哪个授权。                                                |
+| **client_id**     | 请求授权的 OAuth 客户端的 ID。                                           |
+| **redirect_uri**  | 包含一个 URL。该端点的成功响应会重定向到该 URL。                                   |
+| **state**         | 用于安全目的的不透明值。如果请求中设置此请求参数，它将作为重定向 **redirect_uri** 的一部分返回给应用程序。 |
+| **aid**           | 联盟标识符                                                          |
 
 例如：
 

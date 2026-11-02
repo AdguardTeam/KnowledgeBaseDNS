@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-DNSフィルタリングのメリットを実感するための一番簡単な方法は、AdGuard 広告ブロッカーをインストールするか、AdGuard DNS を試してみることです。 そして、ネットワークレベルでDNSフィルタリングしたい場合は、AdGuard Home が最適です。
+DNSフィルタリングのメリットを実感するための一番簡単な方法は、AdGuard 広告ブロッカーをインストールするか、AdGuard DNS を試してみることです。そして、ネットワークレベルでDNSフィルタリングしたい場合は、AdGuard Home が最適です。
 
 Quick links: [Download AdGuard Ad Blocker](https://agrd.io/download-kb-adblock), [Get AdGuard Home](https://github.com/AdguardTeam/AdGuardHome#getting-started), [Try AdGuard DNS](https://agrd.io/download-dns)
 
@@ -15,7 +15,7 @@ To better understand DNS filtering, first, we should answer the question “What
 
 ## 「DNS」とは？
 
-DNS stands for *Domain Name System*, and its purpose is to translate websites’ names into something browsers can understand, i.e. IP addresses. つまり、各ウェブサイトにアクセスするたびに、ブラウザは特種のサーバー（DNSサーバー）にリクエストを送信します。 そのサーバーはリクエストされたドメイン名を調べ、対応するIPアドレスを返信します。 このプロセスを簡単な図に表すとこうなります：
+DNS stands for *Domain Name System*, and its purpose is to translate websites’ names into something browsers can understand, i.e. IP addresses. つまり、各ウェブサイトにアクセスするたびに、ブラウザは特種のサーバー（DNSサーバー）にリクエストを送信します。そのサーバーはリクエストされたドメイン名を調べ、対応するIPアドレスを返信します。このプロセスを簡単な図に表すとこうなります：
 
 ![DNS の仕組み](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_works_en.png)
 
@@ -23,7 +23,7 @@ DNS stands for *Domain Name System*, and its purpose is to translate websites’
 
 ## DNSフィルタリングの仕組み
 
-DNSフィルタリングをサポートする AdGuard アプリを使用すると、AdGuard アプリはデバイスとDNSサーバーの間のバッファ（仲介）として機能します。 デバイス上のブラウザやアプリが送信しようとするすべてのDNSリクエストは、まずAdGuardによって処理されます。 If you’re using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. AdGuard は、DNSリクエストがデバイスから送信される前にすべて暗号化し、悪意のある第三者がその内容にアクセスできないようにします。 On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a “blackhole” instead of forwarding them to the DNS server. （これについては[以下で](#ローカルDNSブロックリスト)説明しております。）
+DNSフィルタリングをサポートする AdGuard アプリを使用すると、AdGuard アプリはデバイスとDNSサーバーの間のバッファ（仲介）として機能します。デバイス上のブラウザやアプリが送信しようとするすべてのDNSリクエストは、まずAdGuardによって処理されます。 If you’re using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. AdGuard は、DNSリクエストがデバイスから送信される前にすべて暗号化し、悪意のある第三者がその内容にアクセスできないようにします。 On top of that, AdGuard can identify requests to ad, tracking, and/or adult domains and redirect them to a “blackhole” instead of forwarding them to the DNS server. （これについては[以下で](#ローカルDNSブロックリスト)説明しております。）
 
 ![DNSフィルタリングの仕組み](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
 
@@ -33,11 +33,11 @@ DNSフィルタリングは、2つの機能に分けることができます。D
 
 ### DNSサーバー
 
-DNSサーバーは何千もあって、それぞれ特性と目的においてユニークであります。 多くは単にリクエストされたドメインのIPアドレスを返すだけですが、広告、トラッキング、アダルトドメインなどをブロックする追加機能を持つものもあります。 現在、一般的なDNSサーバーのすべては、信頼できる暗号化プロトコル（DNS-over-HTTPS、DNS-over-TLS）を1つ以上採用しています。 AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world’s first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard は目的別に複数のDNSサーバーを用意しています。 以下の図は、AdGuardのブロッキングサーバーの仕組みを示しています:
+DNSサーバーは何千もあって、それぞれ特性と目的においてユニークであります。多くは単にリクエストされたドメインのIPアドレスを返すだけですが、広告、トラッキング、アダルトドメインなどをブロックする追加機能を持つものもあります。現在、一般的なDNSサーバーのすべては、信頼できる暗号化プロトコル（DNS-over-HTTPS、DNS-over-TLS）を1つ以上採用しています。 AdGuard also provides a [DNS service](https://adguard-dns.io/), and it was the world’s first to offer the brand new and very promising [DNS-over-QUIC](https://adguard.com/blog/dns-over-quic.html) encryption protocol. AdGuard は目的別に複数のDNSサーバーを用意しています。以下の図は、AdGuardのブロッキングサーバーの仕組みを示しています:
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
-他のDNSプロバイダーの仕組みは違ったりするので、それらのDNSサーバーを使う前に、プロバイダーや仕組みについての情報を確認しておいてください。 [こちらの記事](dns-providers.md)で、最も人気のあるDNSプロバイダーの一覧を確認することができます。 All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you’d like.
+他のDNSプロバイダーの仕組みは違ったりするので、それらのDNSサーバーを使う前に、プロバイダーや仕組みについての情報を確認しておいてください。[こちらの記事](dns-providers.md)で、最も人気のあるDNSプロバイダーの一覧を確認することができます。 All AdGuard apps that support DNS functionality also have a list of DNS servers to choose from, or even allow to select any custom DNS server that you’d like.
 
 ### ローカルDNSブロックリスト
 

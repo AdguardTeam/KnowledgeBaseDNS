@@ -11,11 +11,11 @@ If you have a Team or Enterprise subscription, you’ll receive several personal
 
 ## 専用IPが必要な理由は？
 
-残念ながら、接続デバイスの技術仕様によっては、暗号化されたプライベートAdGuard DNSサーバーを設定できない場合があります。 この場合、標準の暗号化されていないDNSを使用する必要があります。 AdGuard DNSを設定する方法は2つあります: [リンクされたIPを使用する](/private-dns/connect-devices/other-options/linked-ip.md)か、専用IPを使用するという2方法です。
+残念ながら、接続デバイスの技術仕様によっては、暗号化されたプライベートAdGuard DNSサーバーを設定できない場合があります。この場合、標準の暗号化されていないDNSを使用する必要があります。 AdGuard DNSを設定する方法は2つあります: [リンクされたIPを使用する](/private-dns/connect-devices/other-options/linked-ip.md)か、専用IPを使用するという2方法です。
 
 専用IPは一般的に、より安定したオプションです。 Linked IP has some limitations, such as only residential addresses are allowed, your provider can change the IP, and you’ll need to relink the IP address. 専用IPなら、あなた専用のIPアドレスが提供され、すべてのリクエストはあなたのデバイスのものとしてカウントされます。
 
-デメリットは、パブリックDNSリゾルバで常に起こるように、無関係なトラフィック（スキャナやボット）を受信し始める可能性があることです。 その場合、[アクセス設定](/private-dns/server-and-settings/access.md)を使用してボットトラフィックを制限する必要があったりします。
+デメリットは、パブリックDNSリゾルバで常に起こるように、無関係なトラフィック（スキャナやボット）を受信し始める可能性があることです。その場合、[アクセス設定](/private-dns/server-and-settings/access.md)を使用してボットトラフィックを制限する必要があったりします。
 
 デバイスに専用IPを接続する方法は以下のとおりです：
 

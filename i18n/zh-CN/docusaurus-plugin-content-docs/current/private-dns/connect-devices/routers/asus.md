@@ -11,14 +11,14 @@ sidebar_position: 3
 
 如有必要：要在 ASUS 上配置 TLS 加密协议的 DNS（DNS-over-TLS），请在计算机上安装适合您路由器版本的 [ASUS Merlin 固件](https://www.asuswrt-merlin.net/download)。
 
-1. 登录 Asus 路由器管理面板。 可以通过 [http://router.asus.com](http://router.asus.com/)、 [http://192.168.1.1](http://192.168.1.1/)、 [http://192.168.0.1](http://192.168.0.1/)、或 [http://192.168.2.1](http://192.168.2.1/) 访问。
+1. 登录 Asus 路由器管理面板。可以通过 [http://router.asus.com](http://router.asus.com/)、 [http://192.168.1.1](http://192.168.1.1/)、 [http://192.168.0.1](http://192.168.0.1/)、或 [http://192.168.2.1](http://192.168.2.1/) 访问。
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
 3. 在「_高级设置_」侧边栏中，转到「WAN」部分。
 4. 在「_WAN DNS 设置_」部分中，将「_自动连接到 DNS 服务器_」设置为「_否_」。
 5. Set _Forward local queries_, _Enable DNS Rebind protection_, and _Enable DNSSEC suppport_ to _No_.
 6. 将「DNS 隐私协议」更改为「DNS-over-TLS」。
 7. 确保「_DNS-over-TLS 描述文件_」设置为「_严格_」。
-8. 向下滚动到「_DNS-over-TLS 服务器列表_」部分。 在「_地址_」字段中，输入以下地址之一：
+8. 向下滚动到「_DNS-over-TLS 服务器列表_」部分。在「_地址_」字段中，输入以下地址之一：
    - `94.140.14.49` 和 `94.140.14.59`
 9. 指定「_TLS 端口_」，输入 853。
 10. 在「_TLS 主机名_」字段中，输入私人 AdGuard DNS 服务器地址：
@@ -27,7 +27,7 @@ sidebar_position: 3
 
 ## 使用路由器管理面板
 
-1. 打开路由器管理面板。 可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
+1. 打开路由器管理面板。可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
 3. 打开「_高级设置_」或「_高级_」。
 4. 选择「_WAN_」或「_互联网_」。

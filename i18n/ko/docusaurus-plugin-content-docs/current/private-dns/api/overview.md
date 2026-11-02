@@ -46,7 +46,7 @@ Make a POST request for the following URL with the given params to generate the 
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| 매개변수           | 설명                                                               |
+| 매개변수           | Description                                                      |
 |:-------------- |:---------------------------------------------------------------- |
 | **grant_type** | Must be `password`                                               |
 | **username**   | Account email                                                    |
@@ -89,7 +89,7 @@ Make the following POST request with the given params to get a new access token:
 
 `https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| 매개변수              | 설명                                                   |
+| 매개변수              | Description                                          |
 |:----------------- |:---------------------------------------------------- |
 | **grant_type**    | Must be `refresh_token`                              |
 | **refresh_token** | `REFRESH TOKEN` used to generate a new access token. |
@@ -127,7 +127,7 @@ $ curl 'https://api.adguard-dns.io/oapi/v1/revoke_token' -i -X POST \
     -d 'token=H3SW6YFJ-tOPe0FQCM1Jd6VnMiA'
 ```
 
-| 매개변수              | 설명                      |
+| 매개변수              | Description             |
 |:----------------- |:----------------------- |
 | **refresh_token** | `REFRESH TOKEN`을 취소합니다. |
 
@@ -145,7 +145,7 @@ The service redirects you to AdGuard to authenticate (if you are not already log
 
 The request parameters of the **/oapi/v1/oauth_authorize** endpoint are:
 
-| 매개변수              | 설명                                                                                  |
+| 매개변수              | Description                                                                         |
 |:----------------- |:----------------------------------------------------------------------------------- |
 | **response_type** | 인증 서버에 실행할 권한 부여를 알려줍니다.                                                            |
 | **client_id**     | 권한 부여를 요청하는 OAuth 클라이언트의 ID입니다.                                                     |
@@ -194,14 +194,14 @@ code_challenge = BASE64URL(SHA256(ASCII(code_verifier)))
 
 `GET https://api.adguard-dns.io/oapi/v1/oauth_authorize`
 
-| 매개변수                        | 필수 | 설명                                       |
-|:--------------------------- |:-- |:---------------------------------------- |
-| **response_type**           | 네  | Must be `code`                           |
-| **client_id**               | 네  | Your registered OAuth2 client identifier |
-| **redirect_uri**            | 네  | Where to redirect after authorization    |
-| **상태**                      | 네  | Random string to prevent CSRF            |
-| **code_challenge**          | 네  | BASE64URL(SHA256(code_verifier))         |
-| **code_challenge_method** | 네  | Must be `S256`                           |
+| 매개변수                        | Required | Description                              |
+|:--------------------------- |:-------- |:---------------------------------------- |
+| **response_type**           | 네        | Must be `code`                           |
+| **client_id**               | 네        | Your registered OAuth2 client identifier |
+| **redirect_uri**            | 네        | Where to redirect after authorization    |
+| **상태**                      | 네        | Random string to prevent CSRF            |
+| **code_challenge**          | 네        | BASE64URL(SHA256(code_verifier))         |
+| **code_challenge_method** | 네        | Must be `S256`                           |
 
 Example:
 
@@ -220,13 +220,13 @@ Location: REDIRECT_URI?code=AUTH_CODE&state=RANDOM_STATE
 
 `POST https://api.adguard-dns.io/oapi/v1/oauth_token`
 
-| 매개변수              | 필수 | 설명                                             |
-|:----------------- |:-- |:---------------------------------------------- |
-| **grant_type**    | 네  | Must be `authorization_code`                   |
-| **code**          | 네  | Authorization code received in Step 2          |
-| **client_id**     | 네  | Your registered OAuth2 client identifier       |
-| **code_verifier** | 네  | The original code verifier generated in Step 1 |
-| **redirect_uri**  | 네  | Must match the `redirect_uri` used in Step 2   |
+| 매개변수              | Required | Description                                    |
+|:----------------- |:-------- |:---------------------------------------------- |
+| **grant_type**    | 네        | Must be `authorization_code`                   |
+| **code**          | 네        | Authorization code received in Step 2          |
+| **client_id**     | 네        | Your registered OAuth2 client identifier       |
+| **code_verifier** | 네        | The original code verifier generated in Step 1 |
+| **redirect_uri**  | 네        | Must match the `redirect_uri` used in Step 2   |
 
 #### Request example
 

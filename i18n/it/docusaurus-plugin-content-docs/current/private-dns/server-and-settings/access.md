@@ -7,7 +7,7 @@ Configurando le impostazioni di accesso, puoi proteggere il tuo AdGuard DNS da a
 
 Le richieste bloccate non verranno visualizzate nel registro delle query e non sono conteggiate nel limite totale.
 
-## How to set it up
+## Come configurarlo
 
 ### Clienti consentiti
 

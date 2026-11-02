@@ -12,7 +12,7 @@ toc_max_heading_level: 3
 3. 选择路由器品牌并设备的命名。
    ![连接设备 \*mobile_border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/connect/choose_router.png)
 
-以下是不同路由器型号的指示说明。 请选择您需要的型号：
+以下是不同路由器型号的指示说明。请选择您需要的型号：
 
 - [通用指示说明](/private-dns/connect-devices/routers/universal.md)
 - [Asus](/private-dns/connect-devices/routers/asus.md)
