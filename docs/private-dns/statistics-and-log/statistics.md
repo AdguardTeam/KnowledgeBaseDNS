@@ -44,11 +44,11 @@ Contains a list of domains that have been sent the most requests.
 
 ![Top domains *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
-### Top categories blocked
+### Top blocked categories
 
 Displays the top 5 most frequently blocked content categories over the selected time range. Domains are categorized into over 20 groups, including adult content, gambling, banking, games, and social networks.
 
-![Top categories blocked *border](https://cdn.adtidy.org/content/blog/dns/top-categories-blocked_en.png)
+![Top blocked categories *border](https://cdn.adtidy.org/content/blog/dns/top-categories-blocked_en.png)
 
 ### Encrypted requests
 
@@ -62,8 +62,10 @@ Displays the number of requests made to clients. To view client IP addresses, en
 
 ### Top blocklists
 
-Shows the top 5 blocklists by the number of blocked requests and their percentage share relative to all blocked queries over the selected period, server, or device. Each blocked request is attributed strictly to the blocklist whose rule was triggered, so domains included in multiple lists are never counted twice.
+Shows the top 5 blocklists by the number of blocked requests and their share of all blocks. The data can be filtered by time range, server, and device. Each blocked request is credited only to the blocklist whose rule was triggered, so domains that appear in multiple lists are never double-counted.
 
-This section reflects activity at the list level, meaning it does not display specific triggered rules and does not account for allowlists or user rules.
+Custom blocklists appear under the names you gave them. If a blocklist isn't in the top 5, it blocked fewer requests than the ones shown.
+
+The tile works at the list level: it doesn't show which rule was triggered, and it doesn't include statistics for user rules or allowlists.
 
 ![Top blocklists *border](https://cdn.adtidy.org/content/release_notes/dns/v2-25/top-blocklists.png)
