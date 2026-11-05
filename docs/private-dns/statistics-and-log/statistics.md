@@ -46,7 +46,7 @@ Contains a list of domains that have been sent the most requests.
 
 ### Top blocked categories
 
-Displays the top 5 most frequently blocked content categories over the selected time range. Domains are categorized into over 20 groups, including adult content, gambling, banking, games, and social networks.
+Displays the top 5 most frequently blocked content categories. The data can be filtered by time range, server, and device. Domains fall into more than 20 categories, including *Adult content*, *Gambling*, *Banking*, *Games*, and *Social networks*.
 
 ![Top blocked categories *border](https://cdn.adtidy.org/content/blog/dns/top-categories-blocked_en.png)
 
