@@ -64,7 +64,7 @@ For MDM-managed devices, deploy `unlock` through Managed App Configuration to re
 
 For devices no longer managed by MDM, reinstalling the app is required to remove the lock.
 
-:::note
+:::note Recommendation for admins
 
 Before removing a device from MDM management (for example, when reassigning a device or ending an employee's contract), deploy `unlock` to remove the MDM lock.
 
