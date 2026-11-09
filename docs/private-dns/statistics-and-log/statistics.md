@@ -66,6 +66,6 @@ Shows the top 5 blocklists by the number of blocked requests and their share of 
 
 Custom blocklists appear under the names you gave them. If a blocklist isn’t in the top 5, it blocked fewer requests than the ones shown.
 
-The tile works at the list level: it doesn't show which rule was triggered, and it doesn't include statistics for user rules or allowlists.
+The tile works at the list level: it doesn’t show which rule was triggered, and it doesn’t include statistics for user rules or allowlists.
 
 ![Top blocklists *border](https://cdn.adtidy.org/content/release_notes/dns/v2-25/top-blocklists.png)
