@@ -64,7 +64,7 @@ Displays the number of requests made to clients. To view client IP addresses, en
 
 Shows the top 5 blocklists by the number of blocked requests and their share of all blocks. The data can be filtered by time range, server, and device. Each blocked request is credited only to the blocklist whose rule was triggered, so domains that appear in multiple lists are never double-counted.
 
-Custom blocklists appear under the names you gave them. If a blocklist isn't in the top 5, it blocked fewer requests than the ones shown.
+Custom blocklists appear under the names you gave them. If a blocklist isn’t in the top 5, it blocked fewer requests than the ones shown.
 
 The tile works at the list level: it doesn't show which rule was triggered, and it doesn't include statistics for user rules or allowlists.
 
