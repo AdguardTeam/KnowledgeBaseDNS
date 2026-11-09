@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## General statistics
 
-The *Statistics* tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, and the most frequently requested domains.
+The *Statistics* tab displays all summary statistics of DNS requests made by devices connected to the Private AdGuard DNS. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, the most frequently requested domains, as well as the top blocked categories of unwanted content and the most active blocklists.
 
 ![Blocked website *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
@@ -44,6 +44,12 @@ Contains a list of domains that have been sent the most requests.
 
 ![Top domains *border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
+### Top blocked categories
+
+Displays the top 5 most frequently blocked content categories. The data can be filtered by time range, server, and device. Domains fall into more than 20 categories, including *Adult content*, *Gambling*, *Banking*, *Games*, and *Social networks*.
+
+![Top blocked categories *border](https://cdn.adtidy.org/content/blog/dns/top-categories-blocked_en.png)
+
 ### Encrypted requests
 
 Shows the total number of requests and the percentage of encrypted and unencrypted traffic.
@@ -53,3 +59,13 @@ Shows the total number of requests and the percentage of encrypted and unencrypt
 ### Top clients
 
 Displays the number of requests made to clients. To view client IP addresses, enable the *Log IP addresses* option in the *Server settings*. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.
+
+### Top blocklists
+
+Shows the top 5 blocklists by the number of blocked requests and their share of all blocks. The data can be filtered by time range, server, and device. Each blocked request is credited only to the blocklist whose rule was triggered, so domains that appear in multiple lists are never double-counted.
+
+Custom blocklists appear under the names you gave them. If a blocklist isn’t in the top 5, it blocked fewer requests than the ones shown.
+
+The tile works at the list level: it doesn’t show which rule was triggered, and it doesn’t include statistics for user rules or allowlists.
+
+![Top blocklists *border](https://cdn.adtidy.org/content/release_notes/dns/v2-25/top-blocklists.png)
