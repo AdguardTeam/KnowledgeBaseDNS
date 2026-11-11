@@ -7,7 +7,7 @@ OpenWRT routers use an open source, Linux-based operating system that provides t
 
 :::note
 
-OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and earlier use `opkg`. To check your OpenWrt version, run `cat /etc/openwrt_release`.
+OpenWrt 25.12 en latere versies maken gebruik van de `apk`-pakketbeheerder, terwijl OpenWrt 24.10 en eerdere versies `opkg` gebruiken. Om te controleren welke versie van OpenWrt je hebt, voer je het commando `cat /etc/openwrt_release` uit.
 
 :::
 
@@ -15,14 +15,14 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 - **Command-line instructions**. Install the required packages. DNS encryption should be enabled automatically.
 
-  For OpenWrt 25.12 and later:
+  Voor OpenWrt 25.12 en later:
 
   ```text
-  apk update
+  apk-update
   apk add https-dns-proxy
   ```
 
-  For OpenWrt 24.10 and earlier:
+  Voor OpenWrt 24.10 en eerdere versies:
 
   ```text
   opkg update
@@ -31,7 +31,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 - **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
 
-  For OpenWrt 25.12 and later:
+  Voor OpenWrt 25.12 en later:
 
   ```text
   apk update
@@ -39,7 +39,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
   /etc/init.d/rpcd restart
   ```
 
-  For OpenWrt 24.10 and earlier:
+  Voor OpenWrt 24.10 en eerdere versies:
 
   ```text
   opkg update
@@ -52,7 +52,7 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
 - **Configure DoH provider**. https-dns-proxy is configured with Google DNS and Cloudflare DNS by default. You need to change it to AdGuard DoH. Specify several resolvers to improve fault tolerance.
 
   ```text
-  while uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
+  terwijl uci -q delete https-dns-proxy.@https-dns-proxy[0]; do :; done
   uci set https-dns-proxy.dns="https-dns-proxy"
   uci set https-dns-proxy.dns.bootstrap_dns="94.140.14.49,94.140.14.59"
   uci set https-dns-proxy.dns.resolver_url="https://d.adguard-dns.com/dns-query/{Your_Private_Server_ID}"
@@ -66,14 +66,14 @@ Navigate to _LuCI_ → _Services_ → _HTTPS DNS Proxy_ to configure the https-d
 
 - **Command-line instructions**. [Disable](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS role or remove it completely optionally [replacing](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) its DHCP role with odhcpd.
 
-  For OpenWrt 25.12 and later:
+  Voor OpenWrt 25.12 en later:
 
   ```text
   apk update
   apk add unbound-daemon ca-certificates
   ```
 
-  For OpenWrt 24.10 and earlier:
+  Voor OpenWrt 24.10 en eerdere versies:
 
   ```text
   opkg update
@@ -84,7 +84,7 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
 
 - **Web interface**. If you want to manage the settings using web interface, install the necessary packages.
 
-  For OpenWrt 25.12 and later:
+  Voor OpenWrt 25.12 en later:
 
   ```text
   apk update
@@ -92,7 +92,7 @@ LAN clients and the local system should use Unbound as a primary resolver assumi
   /etc/init.d/rpcd restart
   ```
 
-  For OpenWrt 24.10 and earlier:
+  Voor OpenWrt 24.10 en eerdere versies:
 
   ```text
   opkg update
@@ -122,7 +122,7 @@ Navigate to _LuCI_ → _Services_ → _Recursive DNS_ to configure Unbound.
 
 ## Use your router admin panel
 
-Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Volg deze instructies als je OpenWrt-router geen ondersteuning biedt voor DNS-over-HTTPS of DNS-over-TLS:
 
 1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Enter the administrator username (usually, it’s admin) and router password.
