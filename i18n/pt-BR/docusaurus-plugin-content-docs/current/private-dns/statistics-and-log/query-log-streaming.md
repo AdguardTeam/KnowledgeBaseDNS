@@ -1,77 +1,77 @@
 ---
-title: Query log streaming
+title: Streaming do registro de consultas
 sidebar_position: 6
 ---
 
 :::info
 
-_Query log streaming_ is currently in beta testing. During this phase, configuration and setup are semi-manual and performed in coordination with the AdGuard team.
+O _Streaming do registro de consultas_ está atualmente em testes beta. Nesta fase, a configuração e a implantação são semimanuais e realizadas em coordenação com a equipe do AdGuard.
 
 :::
 
-This article describes how to set up and use _Query log streaming_ in AdGuard DNS. This feature allows AdGuard DNS Enterprise users to automatically export raw DNS query events to external storage for security, analysis, or compliance purposes.
+Este artigo descreve como configurar e usar o _Streaming do registro de consultas_ no AdGuard DNS. Esse recurso permite que os usuários do AdGuard DNS Enterprise exportem automaticamente eventos brutos de consultas DNS para armazenamento externo, para fins de segurança, análise ou conformidade.
 
-## What is Query log streaming?
+## O que é o Streaming do registro de consultas?
 
-_Query log streaming_ lets AdGuard DNS Enterprise users automatically export raw DNS query events to their own external, S3-compatible storage — without relying on manual API polling. Once exported, these logs can be ingested into SIEM systems, SOC platforms, data lakes, or internal analytics pipelines, giving you programmatic access to raw query data for security monitoring, auditing, and compliance.
+O _Streaming do registro de consultas_ permite que os usuários do AdGuard DNS Enterprise exportem automaticamente eventos brutos de consultas DNS para seu próprio armazenamento externo compatível com S3 — sem depender de consultas periódicas manuais à API. Após a exportação, esses logs podem ser ingeridos por sistemas SIEM, plataformas SOC, data lakes ou pipelines internos de análise, fornecendo acesso programático aos dados brutos das consultas para monitoramento de segurança, auditoria e conformidade.
 
-Events are collected and delivered in periodic, compressed batches; delivery timing depends on traffic volume (see the [_Delivery guarantees and limitations_](#delivery-guarantees-and-limitations) section for details).
+Os eventos são coletados e entregues em lotes periódicos compactados; o prazo de entrega depende do volume de tráfego (consulte a seção [_Garantias e limitações de entrega_](#delivery-guarantees-and-limitations) para obter detalhes).
 
-## Availability and requirements
+## Disponibilidade e requisitos
 
-To use _Query log streaming_, the following requirements must be met:
+Para usar o _Streaming do registro de consultas_, os seguintes requisitos devem ser atendidos:
 
-- **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
-- **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
+- **Plano Enterprise:** esse recurso está disponível exclusivamente para usuários do AdGuard DNS Enterprise. Se a conta deixar de usar um plano Enterprise, o serviço de transmissão de logs será desativado. Para desativá-lo por solicitação, consulte as perguntas frequentes abaixo.
+- **Registro de consultas ativo:** o registro de consultas deve estar habilitado na configuração do AdGuard DNS.
+- **Bucket compatível com S3:** você precisa ter um bucket ativo com permissão de gravação no Amazon S3 ou em outro provedor de armazenamento em nuvem compatível com S3 (por exemplo, Cloudflare R2, Backblaze B2, Wasabi ou MinIO).
+- **Credenciais de acesso:** você precisa fornecer os parâmetros de conexão e as credenciais necessários para que o AdGuard DNS grave objetos no seu bucket.
 
-## How to request setup
+## Como solicitar a configuração
 
-Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
+Como a configuração é atualmente realizada manualmente pela nossa equipe de infraestrutura, siga estas etapas para solicitar a transmissão de logs:
 
-### Step 1: Prepare your S3 bucket
+### Etapa 1: prepare seu bucket S3
 
-1. Create a dedicated bucket or path/prefix within your S3-compatible storage.
-2. Grant the minimum required permissions to the credentials you will share with AdGuard. At a minimum, the credentials must have write permissions (`s3:PutObject`) on the designated path.
+1. Crie um bucket dedicado ou um caminho/prefixo no seu armazenamento compatível com S3.
+2. Conceda apenas as permissões mínimas necessárias às credenciais que você compartilhará com o AdGuard. No mínimo, as credenciais devem ter permissão de gravação (`s3:PutObject`) no caminho designado.
 
-### Step 2: Contact your account manager or AdGuard support team
+### Etapa 2: entre em contato com seu gerente de conta ou com a equipe de suporte do AdGuard
 
-Reach out to your dedicated AdGuard account manager or contact AdGuard support team at `support@adguard-dns.io`, and provide the target account or organization for which logs should be streamed.
+Entre em contato com seu gerente de conta dedicado do AdGuard ou com a equipe de suporte do AdGuard pelo e-mail `support@adguard-dns.io` e informe a conta ou organização cujos logs devem ser transmitidos.
 
-### Step 3: Provide configuration details
+### Etapa 3: forneça os detalhes da configuração
 
-Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
+Depois que a solicitação for aprovada, a equipe de suporte fornecerá mais instruções e solicitará os parâmetros de configuração específicos necessários para estabelecer a transmissão de logs.
 
-### Step 4: Wait for the log stream to be activated
+### Etapa 4: aguarde a ativação da transmissão de logs
 
-Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
+Quando a transmissão de logs é ativada, um arquivo `.healthcheck` contendo `ok` é gravado automaticamente no bucket de destino. Você receberá uma notificação se ocorrer algum erro de conexão ou gravação durante a configuração. Nenhuma outra ação é necessária após a ativação da transmissão.
 
-## Log format and S3 object structure
+## Formato dos logs e estrutura dos objetos S3
 
-Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
+Os logs são entregues como **arquivos JSON minificados contendo um array de objetos**, em que cada objeto do array representa um único evento de consulta DNS.
 
-### Compression and encoding
+### Compactação e codificação
 
-- **Encoding:** UTF-8
-- **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
+- **Codificação:** UTF-8
+- **Compactação:** a compactação Gzip é obrigatória e aplicada automaticamente a todos os arquivos de log exportados.
 
-### S3 object layout and naming
+### Organização e nomenclatura dos objetos S3
 
-Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
+Os arquivos de log são gravados no bucket compatível com S3 usando uma hierarquia estruturada de pastas e uma convenção de nomenclatura específica baseada em carimbos de data/hora para facilitar a consulta e a ingestão eficientes por partição.
 
-- **Object prefix (Path):** `/logs/%Y/%m/%d/` (organized by Year, Month, and Day)
-- **Filename pattern:** `%H-%M-%S-%3f.json.gz` (Hour-Minute-Second-Millisecond of the batch generation)
+- **Prefixo do objeto (caminho):** `/logs/%Y/%m/%d/` (organizado por ano, mês e dia)
+- **Padrão do nome do arquivo:** `%H-%M-%S-%3f.json.gz` (hora-minuto-segundo-milissegundo da geração do lote)
 
-**Example S3 object key:**
+**Exemplo de chave de objeto S3:**
 
 `logs/2026/08/24/14-02-02-123.json.gz`
 
-### File schema structure
+### Estrutura do esquema do arquivo
 
-Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minified JSON array.
+Ao contrário do JSON Lines (JSONL), o arquivo entregue é um array JSON padrão, minificado em uma única linha.
 
-**Example of the delivered minified file structure (uncompressed representation):**
+**Exemplo da estrutura do arquivo minificado entregue (representação sem compactação):**
 
 ```json
 
@@ -98,161 +98,161 @@ Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minifie
 }
 ```
 
-## Fields reference {#fields-reference}
+## Referência dos campos {#fields-reference}
 
-The table below describes the schema for the exported DNS query logs.
+A tabela abaixo descreve o esquema dos logs de consultas DNS exportados.
 
-| Field             | Type          | Obrigatório | Descrição                                                                                                                                                                                                                                                                                                           | Example                |
-| :---------------- | :------------ | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| `AccountId`       | integer       | Não         | Detected account ID, if any.                                                                                                                                                                                                                                                                        | `1234`                 |
-| `DnsServerId`     | linhas        | Não         | Detected profile ID, also known as DNS ID or DNS Server ID, if any.                                                                                                                                                                                                                                 | `"prof1234"`           |
-| `DeviceId`        | linhas        | Não         | Detected device ID, if any.                                                                                                                                                                                                                                                                         | `"dev1234"`            |
-| `ClientCountry`   | linhas        | Não         | Country of the client’s IP address as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo.                                                                                                                                      | `"AU"`                 |
-| `ResponseCountry` | linhas        | Não         | Country of the first IP address in the response as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo; `QN` means “Not Applicable” when the response type contains no IP address information.                                  | `"US"`                 |
-| `DomainFQDN`      | linhas        | Sim         | Requested DNS resource name (FQDN).                                                                                                                                                                                                                                              | `"example.com."`       |
-| `FilterListId`    | linhas        | Não         | ID of the first filter whose rules matched the query. Omitted if no rule matched. Reserved values include `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing`, and `youtube_safe_search`. | `"adguard_dns_filter"` |
-| `FilterRule`      | linhas        | Não         | First rule that matched the query. For `blocked_service`, contains the blocked service ID. For `category`, contains the category ID. Omitted if no rule matched.                                                                                    | `"example.com^"`       |
-| `TimeAddedMs`     | integer       | Sim         | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                      | `1629974298000`        |
-| `ASN`             | integer       | Não         | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                    | `1234`                 |
-| `ElapsedMs`       | integer       | Sim         | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                            | `3`                    |
-| `RequestType`     | integer       | Sim         | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                   | `1`                    |
-| `RequestIdNum`    | integer       | Sim         | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                   | `12345`                |
-| `Action`          | integer       | Sim         | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                        | `2`                    |
-| `DNSSEC`          | integer       | Sim         | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                | `1`                    |
-| `Protocol`        | integer       | Sim         | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                    | `3`                    |
-| `ResponseCode`    | integer       | Sim         | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                  | `0`                    |
-| `IpAddress`       | linhas        | Não         | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                               | `"1.2.3.4"`            |
-| `TrackerId`       | string / null | Sim         | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                | `"google"`             |
-| `CategoryId`      | string / null | Sim         | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                         | `"search_engines"`     |
+| Campo             | Tipo          | Obrigatório | Descrição                                                                                                                                                                                                                                                                                                                                 | Exemplo                |
+| :---------------- | :------------ | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `AccountId`       | integer       | Não         | ID da conta detectada, se houver.                                                                                                                                                                                                                                                                                         | `1234`                 |
+| `DnsServerId`     | linhas        | Não         | ID do perfil detectado, também conhecido como ID do DNS ou ID do servidor DNS, se houver.                                                                                                                                                                                                                                 | `"prof1234"`           |
+| `DeviceId`        | linhas        | Não         | ID do dispositivo detectado, se houver.                                                                                                                                                                                                                                                                                   | `"dev1234"`            |
+| `ClientCountry`   | linhas        | Não         | País do endereço IP do cliente, representado por um código ISO 3166-1 alfa-2. Ausente se não for possível detectá-lo. `XK` é usado para Kosovo.                                                                                                                                           | `"AU"`                 |
+| `ResponseCountry` | linhas        | Não         | País do primeiro endereço IP da resposta, representado por um código ISO 3166-1 alfa-2. Ausente se não for possível detectá-lo. `XK` é usado para Kosovo; `QN` significa “Não se aplica” quando o tipo de resposta não contém informações de endereço IP.                                 | `"US"`                 |
+| `DomainFQDN`      | linhas        | Sim         | Nome do recurso DNS solicitado (FQDN).                                                                                                                                                                                                                                                                 | `"example.com."`       |
+| `FilterListId`    | linhas        | Não         | ID do primeiro filtro cujas regras corresponderam à consulta. Omitido se nenhuma regra corresponder. Os valores reservados incluem `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing` e `youtube_safe_search`. | `"adguard_dns_filter"` |
+| `FilterRule`      | linhas        | Não         | Primeira regra que correspondeu à consulta. Para `blocked_service`, contém o ID do serviço bloqueado. Para `category`, contém o ID da categoria. Omitido se nenhuma regra corresponder.                                                                                   | `"example.com^"`       |
+| `TimeAddedMs`     | integer       | Sim         | Carimbo de data/hora Unix do recebimento da solicitação, em milissegundos.                                                                                                                                                                                                                                                | `1629974298000`        |
+| `ASN`             | integer       | Não         | Número do Sistema Autônomo (ASN) detectado a partir do endereço IP do cliente, se houver.                                                                                                                                                                                                              | `1234`                 |
+| `ElapsedMs`       | integer       | Sim         | Tempo decorrido desde o início do processamento da solicitação, em milissegundos.                                                                                                                                                                                                                                         | `3`                    |
+| `RequestType`     | integer       | Sim         | Tipo numérico do registro de recurso DNS da consulta, por exemplo, `1` para um registro `A`.                                                                                                                                                                                                                              | `1`                    |
+| `RequestIdNum`    | integer       | Sim         | Número inteiro aleatório de 16 bits sem sinal usado para simplificar a deduplicação quando o campo antigo `u` não é utilizado.                                                                                                                                                                                            | `12345`                |
+| `Action`          | integer       | Sim         | Ação de filtragem: `0` desconhecida, `1` sem filtragem, `2` solicitação bloqueada, `3` resposta bloqueada, `4` solicitação permitida pela lista de permissões, `5` resposta permitida pela lista de permissões, `6` solicitação ou resposta modificada/reescrita.                                         | `2`                    |
+| `DNSSEC`          | integer       | Sim         | Indica se a resposta foi validada com DNSSEC: `0` = não, `1` = sim.                                                                                                                                                                                                                                       | `1`                    |
+| `Protocol`        | integer       | Sim         | Protocolo DNS: `0` desconhecido, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` DNS simples, `9` DNSCrypt.                                                                                                                                                                                  | `3`                    |
+| `ResponseCode`    | integer       | Sim         | Código de resposta DNS (`RCODE`) enviado ao cliente.                                                                                                                                                                                                                                                   | `0`                    |
+| `IpAddress`       | linhas        | Não         | Endereço IP do cliente. Omitido quando o registro de endereços IP está desativado para o perfil correspondente.                                                                                                                                                                                           | `"1.2.3.4"`            |
+| `TrackerId`       | string / null | Sim         | ID do rastreador encontrado ao comparar o domínio solicitado com a tabela de enriquecimento `dns-trackers`. Definido como `null` se nenhum rastreador for encontrado.                                                                                                                                     | `"google"`             |
+| `CategoryId`      | string / null | Sim         | ID da categoria do rastreador retornado pela consulta de enriquecimento `dns-trackers`. Definido como `null` se nenhum rastreador for encontrado.                                                                                                                                                         | `"search_engines"`     |
 
-## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
+## Garantias e limitações de entrega {#delivery-guarantees-and-limitations}
 
-Understanding how logs are batched and delivered is critical for designing your SIEM ingestion pipeline.
+Entender como os logs são agrupados em lotes e entregues é fundamental para projetar seu pipeline de ingestão no SIEM.
 
-- **Batch-only delivery:** Logs are exported strictly in batches, not in real time. To keep the system stable and adapt to different traffic levels, both batch sizes and delivery intervals are flexible. Exact file sizes and upload times are not fixed and may vary as the system is optimized.
-- **Expected latency and potential delays:** While we strive for minimal latency, there is an expected delivery latency. Occasional delays are possible due to high network traffic, system load, or processing queues.
-- **At-least-once delivery:** Log delivery is guaranteed on an at-least-once basis. While this ensures that all events are successfully delivered, duplicate log entries may occasionally be written to the destination bucket (for example, during network retries or recovery from transient connection drops). Exactly-once delivery is not guaranteed.
-- **Client-side deduplication required:** The client must be capable of deduplicating events within their SIEM or data lake. Deduplication should be handled using a combination of the event `timestamp` and other unique identifiers.
-- **No order guarantees:** Due to the distributed nature of our global DNS infrastructure, the chronological order of events is not guaranteed. Events may arrive out of order within a single log file or across different batches.
-- **Unreachable destination (retries or drops):** If your S3 endpoint or bucket becomes unreachable (e.g., due to expired credentials or network outages on your provider’s side), AdGuard DNS may attempt retries. However, depending on backend limits, log events generated during the outage might be dropped (skipped) to prevent buffer overflow.
-- **No historical backfill:** Log streaming is strictly forward-looking. Exporting historical logs generated before the streaming feature was activated is not supported.
+- **Entrega apenas em lotes:** os logs são exportados exclusivamente em lotes, e não em tempo real. Para manter a estabilidade do sistema e se adaptar a diferentes níveis de tráfego, tanto o tamanho dos lotes quanto os intervalos de entrega são flexíveis. Os tamanhos exatos dos arquivos e os horários de envio não são fixos e podem variar conforme o sistema é otimizado.
+- **Latência esperada e possíveis atrasos:** embora busquemos minimizar a latência, há uma latência de entrega esperada. Podem ocorrer atrasos ocasionais devido a tráfego de rede intenso, carga do sistema ou filas de processamento.
+- **Entrega pelo menos uma vez:** a entrega dos logs é garantida pelo menos uma vez. Embora isso garanta que todos os eventos sejam entregues com sucesso, entradas de log duplicadas podem ocasionalmente ser gravadas no bucket de destino (por exemplo, durante novas tentativas de rede ou a recuperação de quedas temporárias de conexão). A entrega exatamente uma vez não é garantida.
+- **Deduplicação obrigatória no lado do cliente:** o cliente deve ser capaz de deduplicar eventos no seu SIEM ou data lake. A deduplicação deve usar uma combinação do `timestamp` do evento com outros identificadores exclusivos.
+- **Sem garantia de ordem:** devido à natureza distribuída da nossa infraestrutura DNS global, a ordem cronológica dos eventos não é garantida. Os eventos podem chegar fora de ordem dentro de um mesmo arquivo de log ou entre lotes diferentes.
+- **Destino inacessível (novas tentativas ou descartes):** se o endpoint S3 ou o bucket ficar inacessível (por exemplo, devido a credenciais expiradas ou interrupções de rede no seu provedor), o AdGuard DNS poderá fazer novas tentativas. No entanto, dependendo dos limites do backend, os eventos de log gerados durante a interrupção poderão ser descartados (ignorados) para evitar o estouro do buffer.
+- **Sem exportação retroativa:** a transmissão de logs abrange apenas eventos futuros. A exportação de logs históricos gerados antes da ativação do recurso de transmissão não é compatível.
 
-## Security and privacy
+## Segurança e privacidade
 
-DNS query logs contain highly sensitive network and metadata. To ensure the safety of your organization’s data, please observe the following security principles:
+Os logs de consultas DNS contêm dados de rede e metadados altamente sensíveis. Para garantir a segurança dos dados da sua organização, observe os seguintes princípios de segurança:
 
-- **Sensitive DNS data:** Be aware that streamed logs can contain sensitive DNS metadata, including queried domains, device identifiers, client IP addresses, and geographic details of your clients.
-- **Client responsibility:** The client is solely responsible for the overall security of their S3-compatible bucket, including configuring and maintaining secure bucket policies and access control lists (ACLs).
-- **Restrict access:** We highly recommend restricting access to the bucket to the absolute minimum necessary.
-- **Credential rotation:** Credentials (access keys and secrets) provided to AdGuard DNS for bucket access should be regularly rotated in accordance with your organization’s internal security policies. However, because changing keys on the cloud provider side immediately revokes AdGuard’s write permissions, new credentials must be updated in AdGuard at the same time to prevent log delivery disruption.
-- **Dashboard logging settings impact:** If certain types of logging are disabled in your AdGuard DNS account settings, this will directly affect the schema of your exported logs. For example, if you disable specific device metadata logging, those fields will be omitted (or populated with null values) in the streamed JSON files.
-- **No bypass of privacy settings:** AdGuard DNS strictly respects your configuration. Under no circumstances will AdGuard bypass, override, or circumvent your account’s privacy and data-anonymization settings when exporting events to your external storage.
+- **Dados DNS sensíveis:** lembre-se de que os logs transmitidos podem conter metadados DNS sensíveis, incluindo domínios consultados, identificadores de dispositivos, endereços IP dos clientes e informações geográficas dos seus clientes.
+- **Responsabilidade do cliente:** o cliente é o único responsável pela segurança geral do seu bucket compatível com S3, incluindo a configuração e a manutenção de políticas de bucket seguras e listas de controle de acesso (ACLs).
+- **Restrinja o acesso:** recomendamos fortemente limitar o acesso ao bucket ao mínimo absolutamente necessário.
+- **Rotação de credenciais:** as credenciais (chaves de acesso e segredos) fornecidas ao AdGuard DNS para acesso ao bucket devem ser substituídas regularmente de acordo com as políticas de segurança internas da sua organização. No entanto, como a alteração das chaves no provedor de nuvem revoga imediatamente as permissões de gravação do AdGuard, as novas credenciais devem ser atualizadas no AdGuard ao mesmo tempo para evitar a interrupção da entrega de logs.
+- **Impacto das configurações de registro do painel:** se determinados tipos de registro forem desativados nas configurações da sua conta do AdGuard DNS, isso afetará diretamente o esquema dos logs exportados. Por exemplo, se você desativar o registro de metadados específicos dos dispositivos, esses campos serão omitidos (ou preenchidos com valores nulos) nos arquivos JSON transmitidos.
+- **Respeito às configurações de privacidade:** o AdGuard DNS respeita rigorosamente suas configurações. Em nenhuma circunstância o AdGuard ignorará, substituirá ou contornará as configurações de privacidade e anonimização de dados da sua conta ao exportar eventos para seu armazenamento externo.
 
-## How to ingest logs into SIEM
+## Como ingerir logs no SIEM
 
-Since AdGuard DNS streams query logs to S3-compatible storage, configuring the ingestion pipeline into your SIEM platform is handled entirely on your side.
+Como o AdGuard DNS transmite logs de consultas para um armazenamento compatível com S3, a configuração do pipeline de ingestão na sua plataforma SIEM é inteiramente sua responsabilidade.
 
-- **S3-compatible destination:** AdGuard DNS delivers raw log files directly to your designated S3 bucket, which serves as the central landing zone for your security data.
-- **Custom ingestion pipeline:** You can connect and ingest these log files into your SIEM or analytics system using your own data pipelines, custom scripts, or ETL processes.
-- **Standard S3 connectors:** For major platforms such as **Splunk**, **Microsoft Sentinel**, and **Elastic**, you typically utilize their respective native S3 connectors, inputs, or log collectors.
-- **Infrastructure-dependent setup:** The exact configuration, index mapping, and parsing rules inside your SIEM depend heavily on your organization’s specific infrastructure, data schemas, and retention policies.
+- **Destino compatível com S3:** o AdGuard DNS entrega os arquivos de log brutos diretamente ao bucket S3 designado, que funciona como o ponto central de recebimento dos seus dados de segurança.
+- **Pipeline de ingestão personalizado:** você pode conectar e ingerir esses arquivos de log no seu SIEM ou sistema de análise usando seus próprios pipelines de dados, scripts personalizados ou processos ETL.
+- **Conectores S3 padrão:** em plataformas amplamente utilizadas, como **Splunk**, **Microsoft Sentinel** e **Elastic**, normalmente são usados os respectivos conectores S3 nativos, entradas de dados ou coletores de logs.
+- **Configuração dependente da infraestrutura:** a configuração exata, o mapeamento de índices e as regras de análise no seu SIEM dependem muito da infraestrutura específica, dos esquemas de dados e das políticas de retenção da sua organização.
 
-## Troubleshooting
+## Solução de problemas
 
-This section details common integration issues you may encounter when setting up or running the query log stream, along with steps to resolve them.
+Esta seção detalha problemas comuns de integração que você pode encontrar ao configurar ou executar a transmissão de logs de consultas, além das etapas para resolvê-los.
 
-### Logs are not appearing in the bucket
+### Os logs não aparecem no bucket
 
-**Potential cause:** Configuration on the AdGuard side is not yet complete, or incorrect connection parameters were provided.
+**Possível causa:** a configuração pelo AdGuard ainda não foi concluída ou foram fornecidos parâmetros de conexão incorretos.
 
-**Resolution:** Verify that you received a confirmation email from your AdGuard account manager stating that the stream configuration is complete. Double-check all shared parameters (bucket name, endpoint, region).
+**Solução:** verifique se você recebeu um e-mail de confirmação do seu gerente de conta do AdGuard informando que a configuração da transmissão foi concluída. Confira novamente todos os parâmetros compartilhados (nome do bucket, endpoint e região).
 
-### Incorrect bucket permissions
+### Permissões incorretas do bucket
 
-**Potential cause:** The credentials shared with AdGuard do not have sufficient permissions to write objects to the bucket.
+**Possível causa:** as credenciais compartilhadas com o AdGuard não têm permissões suficientes para gravar objetos no bucket.
 
-**Resolution:** Ensure that the AWS IAM policy (or your provider’s equivalent) associated with the provided access keys explicitly grants `s3:PutObject` permission for the target bucket and prefix.
+**Solução:** certifique-se de que a política do AWS IAM (ou o equivalente do seu provedor) associada às chaves de acesso fornecidas conceda explicitamente a permissão `s3:PutObject` para o bucket e o prefixo de destino.
 
-### S3 credentials expired
+### As credenciais S3 expiraram
 
-**Potential cause:** The credentials have expired, or they were rotated/revoked in accordance with your organization’s internal security policies.
+**Possível causa:** as credenciais expiraram ou foram substituídas/revogadas de acordo com as políticas de segurança internas da sua organização.
 
-**Resolution:** Generate a new set of access and secret keys, and share them securely with your AdGuard account manager to update your stream configuration.
+**Solução:** gere um novo conjunto de chaves de acesso e chaves secretas e compartilhe-as com segurança com seu gerente de conta do AdGuard para atualizar a configuração da transmissão.
 
-### Duplicates appeared in the log destination
+### Surgiram duplicatas no destino dos logs
 
-**Potential cause:** Network retries triggered by the “at-least-once” delivery model during transient network interruptions.
+**Possível causa:** novas tentativas de rede acionadas pelo modelo de entrega “pelo menos uma vez” durante interrupções temporárias da rede.
 
-**Resolution:** This is expected behavior in distributed logging pipelines. Configure deduplication rules in your SIEM or database using a combination of the `timestamp`, `domain`, and `device_id` (or other unique event identifiers).
+**Solução:** esse é o comportamento esperado em pipelines distribuídos de registro de logs. Configure regras de deduplicação no seu SIEM ou banco de dados usando uma combinação de `timestamp`, `domain` e `device_id` (ou outros identificadores exclusivos de eventos).
 
-### Latency is higher than expected
+### A latência está maior que o esperado
 
-**Potential cause:** Temporary network congestion, system load, or buffering delays on the cloud provider’s side.
+**Possível causa:** congestionamento temporário da rede, carga do sistema ou atrasos no armazenamento em buffer no provedor de nuvem.
 
-**Resolution:** Check the operational status of your S3-compatible cloud provider. If log delivery delays consistently exceed your expected batch interval (e.g., more than 15–30 minutes), contact AdGuard support to check the status of our outbound delivery queues.
+**Solução:** verifique o status operacional do seu provedor de nuvem compatível com S3. Se os atrasos na entrega de logs excederem constantemente o intervalo de lotes esperado (por exemplo, mais de 15–30 minutos), entre em contato com o suporte do AdGuard para verificar o status das nossas filas de entrega de saída.
 
-### Missing fields in the logs
+### Campos ausentes nos logs
 
-**Potential cause:** Specific logging or privacy features (such as client IP logging or device metadata collection) are disabled in your AdGuard DNS dashboard settings.
+**Possível causa:** recursos específicos de registro ou privacidade (como o registro de endereços IP dos clientes ou a coleta de metadados dos dispositivos) estão desativados nas configurações do painel do AdGuard DNS.
 
-**Resolution:** Review your privacy and logging settings within the AdGuard DNS dashboard. The log streaming export strictly respects these settings and will not bypass your data-minimization preferences.
+**Solução:** revise suas configurações de privacidade e registro no painel do AdGuard DNS. A exportação por transmissão de logs respeita rigorosamente essas configurações e não contornará suas preferências de minimização de dados.
 
-### Enterprise status changed
+### O status Enterprise foi alterado
 
-**Potential cause:** Your Enterprise subscription has expired, was cancelled, or your account was downgraded.
+**Possível causa:** sua assinatura Enterprise expirou, foi cancelada ou sua conta foi transferida para um plano inferior.
 
-**Resolution:** Log streaming is deactivated automatically if the account loses Enterprise status. Contact your AdGuard account manager to restore your subscription and reactivate the stream.
+**Solução:** a transmissão de logs é desativada automaticamente se a conta perder o status Enterprise. Entre em contato com seu gerente de conta do AdGuard para restaurar sua assinatura e reativar a transmissão.
 
-### SIEM fails to parse or split the JSON array
+### O SIEM não consegue analisar ou dividir o array JSON
 
-**Potential Cause:** Many S3 log collectors expect Newline Delimited JSON (NDJSON/JSONL) by default. Since the exported logs are formatted as a minified JSON array (`[...]`), the collector may fail to parse the file or ingest the entire array as a single, massive log event instead of splitting it into individual query records.
+**Possível causa:** muitos coletores de logs S3 esperam, por padrão, JSON delimitado por quebras de linha (NDJSON/JSONL). Como os logs exportados são formatados como um array JSON minificado (`[...]`), o coletor pode não conseguir analisar o arquivo ou pode ingerir o array inteiro como um único evento de log enorme, em vez de dividi-lo em registros individuais de consultas.
 
-**Resolution:** Configure the S3 connector, log shipper, or SIEM parser to handle standard JSON arrays. The ingestion pipeline must be set to unpack the array and split its elements into separate log entries before indexing.
+**Solução:** configure o conector S3, o agente de envio de logs ou o parser do SIEM para lidar com arrays JSON padrão. O pipeline de ingestão deve ser configurado para descompactar a estrutura do array e dividir seus elementos em entradas de log separadas antes da indexação.
 
-### Compressed files do not decompress
+### Os arquivos compactados não são descompactados
 
-**Potential cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
+**Possível causa:** o formato de compactação (por exemplo, `.gz`) usado durante a exportação não é compatível ou está configurado incorretamente no conector de ingestão do seu SIEM.
 
-**Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
+**Solução:** verifique as configurações de descompactação do seu conector do SIEM (por exemplo, certifique-se de que a descompactação automática gzip esteja habilitada para a recuperação de objetos S3).
 
 ## FAQ
 
-### Can logs be streamed directly to Splunk or Microsoft Sentinel?
+### Os logs podem ser transmitidos diretamente para o Splunk ou o Microsoft Sentinel?
 
-No. In the current MVP version, direct streaming to SIEM endpoints or APIs (such as Splunk HEC) is not supported. Logs must be written to an S3-compatible bucket first, which the SIEM can then monitor and ingest from using standard S3 connectors.
+Não. Na versão MVP atual, a transmissão direta para endpoints ou APIs de SIEM (como o Splunk HEC) não é compatível. Os logs precisam primeiro ser gravados em um bucket compatível com S3, que o SIEM poderá monitorar e do qual poderá ingerir dados usando conectores S3 padrão.
 
-### Can storage options other than S3 be used?
+### É possível usar opções de armazenamento diferentes do S3?
 
-No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
+Não. Atualmente, apenas o armazenamento compatível com S3 é aceito. As opções padrão incluem o Amazon S3 ou ofertas compatíveis de outros provedores de nuvem (por exemplo, Cloudflare R2, Backblaze B2, Wasabi ou MinIO). A integração nativa com outros tipos de armazenamento (como o acesso direto ao Azure Blob ou SFTP) não está disponível no momento.
 
-### Is it possible to retrieve historical logs?
+### É possível recuperar logs históricos?
 
-No. Log streaming is strictly forward-looking. Only DNS query events generated _after_ the streaming feature has been successfully activated and configured will be exported. Historical backfill of logs is not supported.
+Não. A transmissão de logs abrange apenas eventos futuros. Somente os eventos de consultas DNS gerados _após_ a ativação e a configuração bem-sucedidas do recurso de transmissão serão exportados. A exportação retroativa de logs não é compatível.
 
-### How quickly are logs delivered?
+### Com que rapidez os logs são entregues?
 
-Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section.
+Os logs são entregues em lotes compactados, e não em tempo real. Para obter mais detalhes sobre os intervalos dos lotes e o funcionamento da entrega, consulte a seção [Garantias e limitações de entrega](#delivery-guarantees-and-limitations).
 
-### Is the delivery of every single event guaranteed?
+### A entrega de cada evento é garantida?
 
-Yes, under normal operating conditions. However, if the destination bucket becomes unreachable, log events may eventually be dropped once the retry buffer limit is exceeded. Refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section for details.
+Sim, em condições normais de operação. No entanto, se o bucket de destino ficar inacessível, os eventos de log poderão acabar sendo descartados quando o limite do buffer de novas tentativas for excedido. Consulte a seção [Garantias e limitações de entrega](#delivery-guarantees-and-limitations) para obter detalhes.
 
-### Are duplicate events possible in the destination?
+### Podem ocorrer eventos duplicados no destino?
 
-Yes. Under the “at-least-once” delivery model, network retries triggered by transient outages can cause duplicate log events to be written to the bucket. The ingestion pipeline or SIEM must be configured to handle deduplication.
+Sim. No modelo de entrega “pelo menos uma vez”, novas tentativas de rede acionadas por interrupções temporárias podem fazer com que eventos de log duplicados sejam gravados no bucket. O pipeline de ingestão ou o SIEM deve ser configurado para realizar a deduplicação.
 
-### What fields are included in the logs?
+### Quais campos estão incluídos nos logs?
 
-The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
+Os logs incluem campos essenciais de consultas DNS, como `TimeAddedMs` (carimbo de data/hora), `DomainFQDN`, `RequestType`, `Action` e `ClientCountry`. Para ver a lista completa de campos e tipos de dados, consulte a seção [Referência dos campos](#fields-reference). As configurações de privacidade da conta afetam diretamente esses logs; campos sensíveis (como `IpAddress`) serão omitidos ou definidos como `null` se o registro estiver desativado no painel.
 
-### What happens if the Enterprise status is lost?
+### O que acontece se o status Enterprise for perdido?
 
-Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
+A transmissão de logs é um recurso exclusivo do plano Enterprise. Se a conta deixar de usar um plano Enterprise ou a assinatura expirar, o serviço de transmissão será desativado automaticamente.
 
-### Can log streaming be deactivated?
+### A transmissão de logs pode ser desativada?
 
-Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team at `support@adguard-dns.io`.
+Sim. A transmissão de logs pode ser desativada a qualquer momento mediante solicitação. Para isso, entre em contato com seu gerente de conta dedicado do AdGuard ou com a equipe de suporte do AdGuard pelo e-mail `support@adguard-dns.io`.
 
-### Can multiple S3 streaming destinations be configured?
+### É possível configurar vários destinos S3 para a transmissão?
 
-No. The current version only supports configuring a single S3-compatible streaming destination per Enterprise organization.
+Não. A versão atual permite configurar apenas um destino de transmissão compatível com S3 por organização Enterprise.

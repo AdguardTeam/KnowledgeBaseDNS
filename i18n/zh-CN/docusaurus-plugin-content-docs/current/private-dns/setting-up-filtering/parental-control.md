@@ -3,59 +3,59 @@ title: 家长控制
 sidebar_position: 5
 ---
 
-_Parental control_ is a set of settings that gives you the flexibility to customize access to certain websites with sensitive content. You can use this feature to restrict your children’s access to adult sites, customize search queries, block the use of popular services, and more.
+「家长控制」是一组设置，可让您灵活自定义对含有敏感内容的特定网站的访问。用户可以使用此功能来限制儿童访问成人网站，定制查询，阻止使用热门服务等。
 
-## How to set it up
+## 如何设置
 
-You can flexibly configure all features on your servers, including the parental control feature. [In the corresponding article](private-dns/server-and-settings/server-and-settings.md), you can familiarize yourself with what a server is in AdGuard DNS and learn how to create different servers with different sets of settings.
+您可以灵活配置服务器上的所有功能，包括家长控制功能。[在相应的文章中](private-dns/server-and-settings/server-and-settings.md)，可以了解 AdGuard DNS 中的“服务器”是什么，并学习如何创建具有不同设置的不同服务器。
 
-Then, go to the settings of the selected server and enable the required configurations.
+然后，进入所选服务器的设置，启用所需的配置。
 
-### Block adult websites
+### 拦截成人网站
 
-Blocks websites with inappropriate and adult content.
+拦截含有不适当和成人内容的网站。
 
-![Blocked website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
+![已拦截的网站 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/adult_blocked.png)
 
-### Safe search
+### 安全搜索
 
-Removes inappropriate results from Google, Bing, DuckDuckGo, Yandex, Pixabay, Brave, and Ecosia.
+删除来自 Google、Bing、DuckDuckGo、Yandex、Pixabay、Brave 和 Ecosia 的不适当结果。
 
-### YouTube restricted mode
+### YouTube 受限模式
 
-Removes the option to view and post comments under videos and interact with 18+ content on YouTube.
+删除在 YouTube 上查看和发布评论的选项，并限制与 18+ 内容的互动。
 
-### Blocked services and websites
+### 已阻止的服务及网站
 
-Restricts access to popular services with one click. This is useful if you don’t want connected devices to visit certain platforms, such as Instagram and YouTube.
+一键限制对热门服务的访问。如果您不希望已连接的设备访问某些平台（例如 Instagram 和 YouTube），这会很有用。
 
-![Blocked services \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
+![已拦截的服务 \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/blocked_services.png)
 
-### Block websites by category
+### 按类别阻止网站
 
-Lets you restrict access to specific categories of websites by choosing from more than 20 categories, including _Adult content_, _Games_, _Banking_, and _Communication_. For example, if you block sites that contain information about alcohol, tobacco, or drugs, the selected device will no longer be able to open pages that fall under those categories.
+此功能允许您通过选择超过20个类别中的特定类别来限制访问特定类别的网站，包&#x62EC;_&#x6210;人内容_、_游戏_、_银行业&#x52A1;_&#x548C;_通信_。例如，如果您阻止包含有关酒精、烟草或毒品信息的网站，则所选设备将无法再打开属于这些类别的网页。
 
-![Category-based blocking \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
+![基于类别的拦截 \*mobile_border](https://cdn.adtidy.org/content/release_notes/dns/v2-18/category_en.png)
 
-### Pause schedule
+### 暂停时间表
 
-Temporarily suspends _Parental control_ restrictions on selected days and during specified time intervals. You can add one or multiple pause intervals for each day.
+在选定的日期和指定的时间段内暂时中止「家长控制」限制。您可以为每一天添加一个或多个暂停时段。
 
-For example, you can pause the restrictions on weekdays from 7:00 a.m. to 8:00 a.m. before school and from 6:00 p.m. to 8:00 p.m. in the evening. Outside of these intervals, _Parental control_ applies as usual.
+例如，您可以在上学日的早上 7:00 到 8:00 （上学前）以及晚上 6:00 到 8:00 暂停限制。在这些时间段之外，「家长控制」会照常生效。
 
-To set up a pause schedule:
+要设置暂停计划：
 
-1. Go to _Servers_ → select a server → _Parental control_ → _Pause schedule_.
-2. Click the **+** button next to the desired day and set the interval in the _Add pause_ dialog.
-3. Repeat to add more intervals to the same day.
-4. To change an existing interval, click _Edit_.
+1. 转到「服务器」→ 选择一台服务器 →「家长控制」→「暂停时间表」。
+2. 点击所需日期旁的 **+** 按钮，然后在「添加暂停\*」对话框中设置时段。
+3. 重复操作，可为同一天添加更多时段。
+4. 要更改现有时段，请点击「编辑」。
 
-You can set multiple intervals for the same day. Intervals on the same day cannot overlap: if you try to create overlapping intervals, you will see a warning and will not be able to save the schedule.
+您可以为同一天设置多个时段。同一天的时段不能重叠：如果您尝试创建重叠的时段，将会看到警告，并且无法保存计划。
 
 ![Overlapping intervals \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/overlapping_intervals.png)
 
-Selecting the _All day_ checkbox pauses _Parental control_ restrictions for the entire day, replacing any intervals you’ve set.
+选中「全天」复选框将暂停「家长控制」一整天的限制，并取代您已设置的任何时段。
 
-Pause intervals can also span midnight. For example, if you set a pause from 10 p.m. on Monday to 7 a.m. on Tuesday, the dashboard will display it as two intervals: Monday, 22:00–00:00, and Tuesday, 00:00–07:00.
+暂停时段也可以跨过午夜。例如，如果您将暂停时间设置为周一晚上 10 点到周二早上 7 点，仪表盘会将其显示为两个时间段：周一 22:00–00:00 和周二 00:00–07:00。
 
 ![Pause schedule \*mobile](https://cdn.adtidy.org/content/kb/dns/private/new_dns/parental_control/Pause_schedule.png)
