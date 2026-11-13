@@ -19,240 +19,240 @@ sidebar_position: 6
 
 ## 可用性与要求
 
-To use _Query log streaming_, the following requirements must be met:
+要使用「查询日志流式传输\*，必须满足以下要求：
 
-- **Enterprise plan:** This feature is strictly available to AdGuard DNS Enterprise users. If the account is no longer on an Enterprise plan, the log streaming service will be deactivated. For voluntary deactivation, see the FAQ below.
-- **Active Query log:** Your AdGuard DNS configuration must have query logging enabled.
-- **S3-compatible bucket:** You must have an active, writeable bucket on Amazon S3 or another S3-compatible cloud storage provider (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO).
-- **Access credentials:** You must provide the connection parameters and credentials required for AdGuard DNS to write objects to your bucket.
+- **企业版**：此功能仅面向 AdGuard DNS 企业版用户提供。如果账号不再使用企业版套餐，日志流式传输服务将被停用。如需主动停用，请参阅下方的常见问题。
+- **查询日志已启用**：您的 AdGuard DNS 配置必须已启用查询日志记录。
+- **兼容 S3 的存储桶**：您必须在 Amazon S3 或其他兼容 S3 的云存储提供商（例如 Cloudflare R2、Backblaze B2、Wasabi 或 MinIO）上拥有一个可写入的有效存储桶。
+- **访问凭据**：必须提供 AdGuard DNS 向您的存储桶写入对象所需的连接参数和凭据。
 
-## How to request setup
+## 如何申请配置
 
-Since configuration is currently handled manually by our infrastructure team, please follow these steps to request log streaming:
+由于配置目前由我们的基础设施团队手动处理，请按照以下步骤申请日志流式传输：
 
-### Step 1: Prepare your S3 bucket
+### 第 1 步：准备 S3 存储桶
 
-1. Create a dedicated bucket or path/prefix within your S3-compatible storage.
-2. Grant the minimum required permissions to the credentials you will share with AdGuard. At a minimum, the credentials must have write permissions (`s3:PutObject`) on the designated path.
+1. 在您的兼容 S3 存储中创建一个专用存储桶或路径/前缀。
+2. 为将与 AdGuard 共享的凭据授予最低必需的权限。凭据至少必须在指定路径上具有写入权限（`s3:PutObject`）。
 
-### Step 2: Contact your account manager or AdGuard support team
+### 第 2 步：联系客户经理或 AdGuard 支持团队
 
-Reach out to your dedicated AdGuard account manager or contact AdGuard support team at `support@adguard-dns.io`, and provide the target account or organization for which logs should be streamed.
+请联系您的专属 AdGuard 客户经理，或通过 `support@adguard-dns.io` 联系 AdGuard 支持团队，并提供需要流式传输日志的目标账户或组织。
 
-### Step 3: Provide configuration details
+### 第 3 步：提供配置详细信息
 
-Once the request is approved, the support team will provide further instructions and request the specific configuration parameters required to establish the log stream.
+申请获批后，支持团队将提供进一步说明，并要求您提供建立日志流所需的具体配置参数。
 
-### Step 4: Wait for the log stream to be activated
+### 第 4 步：等待日志流激活
 
-Once the log stream is activated, a `.healthcheck` file containing `ok` is automatically written to the destination bucket. If any connection or write errors occur during setup, you will be notified. No further action is required once the stream is enabled.
+日志流激活后，系统会自动向目标存储桶写入一个包含 `ok` 的 `.healthcheck` 文件。如果在设置过程中出现任何连接或写入错误，您将收到通知。启用流后无需再执行任何操作。
 
-## Log format and S3 object structure
+## 日志格式与 S3 对象结构
 
-Logs are delivered as **minified JSON files containing an array of objects**, where each object within the array represents a single DNS query event.
+日志以**包含对象数组的精简 JSON 文件**形式交付，数组中的每个对象代表一条 DNS 查询事件。
 
-### Compression and encoding
+### 压缩与编码
 
-- **Encoding:** UTF-8
-- **Compression:** Gzip compression is mandatory and automatically applied to all exported log files.
+- **编码**：UTF-8
+- **压缩**：所有导出的日志文件都必须使用 Gzip 压缩，并会自动应用。
 
-### S3 object layout and naming
+### S3 对象布局与命名
 
-Log files are written to the S3-compatible bucket using a structured folder hierarchy and a specific timestamp-based naming convention to facilitate efficient partition-based querying and ingestion.
+日志文件按照结构化的文件夹层级和基于时间戳的特定命名规则写入兼容 S3 的存储桶，以便进行高效的分区查询和导入。
 
-- **Object prefix (Path):** `/logs/%Y/%m/%d/` (organized by Year, Month, and Day)
-- **Filename pattern:** `%H-%M-%S-%3f.json.gz` (Hour-Minute-Second-Millisecond of the batch generation)
+- **对象前缀（路径）**：`/logs/%Y/%m/%d/`（按年、月、日组织）
+- **文件名模式**：`%H-%M-%S-%3f.json.gz`（批次生成的小时-分钟-秒-毫秒）
 
-**Example S3 object key:**
+**示例 S3 对象键**：
 
 `logs/2026/08/24/14-02-02-123.json.gz`
 
-### File schema structure
+### 文件架构结构
 
-Unlike JSON Lines (JSONL), the delivered file is a standard, single-line minified JSON array.
+与 JSON Lines（JSONL）不同，交付的文件是一个标准的单行精简 JSON 数组。
 
-**Example of the delivered minified file structure (uncompressed representation):**
+**交付的精简文件结构示例（未压缩表示）**：
 
 ```json
 
-{"ASN":1234,
-"AccountId":4432,
-"Action":1,
-"CategoryId":null,
-"ClientCountry":null,
-"DNSSEC":0,
-"DeviceId":"54cff1db",
-"DnsServerId":"b13fe9a2",
-"DomainFQDN":"qwerty20.onlineteam.ru.",
-"ElapsedMs":51,
-"FilterListId":null,
-"FilterRule":null,
-"IpAddress":null,
-"Protocol":8,
-"RequestIdNum":65027,
-"RequestType":1,
-"ResponseCode":0,
-"ResponseCountry":"RU",
-"TimeAddedMs":1787671509268,
-"TrackerId":null
+{&quot;ASN&quot;:1234,
+&quot;AccountId&quot;:4432,
+&quot;Action&quot;:1,
+&quot;CategoryId&quot;:null,
+&quot;ClientCountry&quot;:null,
+&quot;DNSSEC&quot;:0,
+&quot;DeviceId&quot;:&quot;54cff1db&quot;,
+&quot;DnsServerId&quot;:&quot;b13fe9a2&quot;,
+&quot;DomainFQDN&quot;:&quot;qwerty20.onlineteam.ru.&quot;,
+&quot;ElapsedMs&quot;:51,
+&quot;FilterListId&quot;:null,
+&quot;FilterRule&quot;:null,
+&quot;IpAddress&quot;:null,
+&quot;Protocol&quot;:8,
+&quot;RequestIdNum&quot;:65027,
+&quot;RequestType&quot;:1,
+&quot;ResponseCode&quot;:0,
+&quot;ResponseCountry&quot;:&quot;RU&quot;,
+&quot;TimeAddedMs&quot;:1787671509268,
+&quot;TrackerId&quot;:null
 }
 ```
 
-## Fields reference {#fields-reference}
+## 字段参考 {#fields-reference}
 
-The table below describes the schema for the exported DNS query logs.
+下表描述了导出的 DNS 查询日志的架构。
 
-| Field             | Type          | 必填 | 详细信息                                                                                                                                                                                                                                                                                                                | Example                |
-| :---------------- | :------------ | :- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
-| `AccountId`       | integer       | 否  | Detected account ID, if any.                                                                                                                                                                                                                                                                        | `1234`                 |
-| `DnsServerId`     | 字符串           | 否  | Detected profile ID, also known as DNS ID or DNS Server ID, if any.                                                                                                                                                                                                                                 | `"prof1234"`           |
-| `DeviceId`        | 字符串           | 否  | Detected device ID, if any.                                                                                                                                                                                                                                                                         | `"dev1234"`            |
-| `ClientCountry`   | 字符串           | 否  | Country of the client’s IP address as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo.                                                                                                                                      | `"AU"`                 |
-| `ResponseCountry` | 字符串           | 否  | Country of the first IP address in the response as an ISO 3166-1 alpha-2 code. Absent if it could not be detected. `XK` is used for Kosovo; `QN` means “Not Applicable” when the response type contains no IP address information.                                  | `"US"`                 |
-| `DomainFQDN`      | 字符串           | 是  | Requested DNS resource name (FQDN).                                                                                                                                                                                                                                              | `"example.com."`       |
-| `FilterListId`    | 字符串           | 否  | ID of the first filter whose rules matched the query. Omitted if no rule matched. Reserved values include `adult_blocking`, `blocked_service`, `category`, `custom`, `general_safe_search`, `newly_registered_domains`, `safe_browsing`, and `youtube_safe_search`. | `"adguard_dns_filter"` |
-| `FilterRule`      | 字符串           | 否  | First rule that matched the query. For `blocked_service`, contains the blocked service ID. For `category`, contains the category ID. Omitted if no rule matched.                                                                                    | `"example.com^"`       |
-| `TimeAddedMs`     | integer       | 是  | Unix timestamp when the request was received, in milliseconds.                                                                                                                                                                                                                                      | `1629974298000`        |
-| `ASN`             | integer       | 否  | Autonomous System Number (ASN) detected from the client’s IP address, if any.                                                                                                                                                                                                    | `1234`                 |
-| `ElapsedMs`       | integer       | 是  | Time elapsed since the beginning of request processing, in milliseconds.                                                                                                                                                                                                                            | `3`                    |
-| `RequestType`     | integer       | 是  | Numeric DNS resource-record type of the query, for example `1` for an `A` record.                                                                                                                                                                                                                   | `1`                    |
-| `RequestIdNum`    | integer       | 是  | Random unsigned 16-bit integer used to simplify deduplication when the old `u` field is not used.                                                                                                                                                                                                   | `12345`                |
-| `Action`          | integer       | 是  | Filtering action: `0` unknown, `1` no filtering, `2` request blocked, `3` response blocked, `4` request allowed by allowlist, `5` response allowed by allowlist, `6` request or response modified/rewritten.                                                                        | `2`                    |
-| `DNSSEC`          | integer       | 是  | Whether the response was validated with DNSSEC: `0` = no, `1` = yes.                                                                                                                                                                                                                | `1`                    |
-| `Protocol`        | integer       | 是  | DNS protocol: `0` unknown, `3` DNS-over-HTTPS, `4` DNS-over-QUIC, `5` DNS-over-TLS, `8` Plain DNS, `9` DNSCrypt.                                                                                                                                                                    | `3`                    |
-| `ResponseCode`    | integer       | 是  | DNS response code (`RCODE`) sent to the client.                                                                                                                                                                                                                                  | `0`                    |
-| `IpAddress`       | 字符串           | 否  | Client IP address. Omitted when IP logging is disabled for the corresponding profile.                                                                                                                                                                                               | `"1.2.3.4"`            |
-| `TrackerId`       | string / null | 是  | Tracker ID found by matching the requested domain against the `dns-trackers` enrichment table. Set to `null` if no tracker is found.                                                                                                                                                | `"google"`             |
-| `CategoryId`      | string / null | 是  | Tracker category ID returned by the `dns-trackers` enrichment lookup. Set to `null` if no tracker is found.                                                                                                                                                                         | `"search_engines"`     |
+| 字段                | 类型            | 必填 | 详细信息                                                                                                                                                                                   | 示例                     |
+| :---------------- | :------------ | :- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `AccountId`       | integer       | 否  | 检测到的账户 ID（如果有）。                                                                                                                                                                        | `1234`                 |
+| `DnsServerId`     | 字符串           | 否  | 检测到的配置文件 ID，也称为 DNS ID 或 DNS 服务器 ID（如果有）。                                                                                                                                              | `"prof1234"`           |
+| `DeviceId`        | 字符串           | 否  | 检测到的设备 ID（如果有）。                                                                                                                                                                        | `"dev1234"`            |
+| `ClientCountry`   | 字符串           | 否  | 客户端 IP 地址所属国家/地区的 ISO 3166-1 alpha-2 代码。如果无法检测到，则为空。 `XK` 用于科索沃。                                                                                                                       | `"AU"`                 |
+| `ResponseCountry` | 字符串           | 否  | 响应中第一个 IP 地址所属国家/地区的 ISO 3166-1 alpha-2 代码。如果无法检测到，则为空。 `XK` 用于科索沃；当响应类型不包含 IP 地址信息时，`QN` 表示“不适用”。                                                                                     | `"US"`                 |
+| `DomainFQDN`      | 字符串           | 是  | 请求的 DNS 资源名称（FQDN）。                                                                                                                                                                    | `"example.com."`       |
+| `FilterListId`    | 字符串           | 否  | 规则与查询匹配的第一个过滤器的 ID。如果没有规则匹配，则省略。保留值包括 `adult_blocking`、`blocked_service`、`category`、`custom`、`general_safe_search`、`newly_registered_domains`、`safe_browsing` 和 `youtube_safe_search`。 | `"adguard_dns_filter"` |
+| `FilterRule`      | 字符串           | 否  | 与查询匹配的第一条规则。对于 `blocked_service`，包含被阻止的服务 ID。对于 `category`，包含类别 ID。如果没有规则匹配，则省略。                                                                                                       | `"example.com^"`       |
+| `TimeAddedMs`     | integer       | 是  | 收到请求时的 Unix 时间戳（毫秒）。                                                                                                                                                                   | `1629974298000`        |
+| `ASN`             | integer       | 否  | 根据客户端 IP 地址检测到的自治系统编号（ASN）（如果有）。                                                                                                                                                       | `1234`                 |
+| `ElapsedMs`       | integer       | 是  | 自请求处理开始以来经过的时间（毫秒）。                                                                                                                                                                    | `3`                    |
+| `RequestType`     | integer       | 是  | 查询的数字 DNS 资源记录类型，例如 `A` 记录为 `1`。                                                                                                                                                       | `1`                    |
+| `RequestIdNum`    | integer       | 是  | 用于在未使用旧的 `u` 字段时简化去重的随机无符号 16 位整数。                                                                                                                                                     | `12345`                |
+| `Action`          | integer       | 是  | 过滤操作：`0` 未知，`1` 未过滤，`2` 请求被阻止，`3` 响应被阻止，`4` 请求被白名单允许，`5` 响应被白名单允许，`6` 请求或响应被修改/重写。                                                                                                     | `2`                    |
+| `DNSSEC`          | integer       | 是  | 响应是否经过 DNSSEC 验证：`0` = 否，`1` = 是。                                                                                                                                                      | `1`                    |
+| `Protocol`        | integer       | 是  | DNS 协议：`0` 未知，`3` DNS-over-HTTPS，`4` DNS-over-QUIC，`5` DNS-over-TLS，`8` 普通 DNS，`9` DNSCrypt。                                                                                           | `3`                    |
+| `ResponseCode`    | integer       | 是  | 发送给客户端的 DNS 响应代码（`RCODE`）。                                                                                                                                                             | `0`                    |
+| `IpAddress`       | 字符串           | 否  | 客户端 IP 地址。当相应配置文件的 IP 记录被禁用时省略。                                                                                                                                                        | `"1.2.3.4"`            |
+| `TrackerId`       | string / null | 是  | 通过将请求的域名与 `dns-trackers` 富化表匹配而找到的跟踪器 ID。如果未找到跟踪器，则设为 `null`。                                                                                                                          | `"google"`             |
+| `CategoryId`      | string / null | 是  | `dns-trackers` 富化查询返回的跟踪器类别 ID。如果未找到跟踪器，则设为 `null`。                                                                                                                                    | `"search_engines"`     |
 
-## Delivery guarantees and limitations {#delivery-guarantees-and-limitations}
+## 交付保证与限制 {#delivery-guarantees-and-limitations}
 
-Understanding how logs are batched and delivered is critical for designing your SIEM ingestion pipeline.
+了解日志如何分批和交付，对于设计您的 SIEM 导入管道至关重要。
 
-- **Batch-only delivery:** Logs are exported strictly in batches, not in real time. To keep the system stable and adapt to different traffic levels, both batch sizes and delivery intervals are flexible. Exact file sizes and upload times are not fixed and may vary as the system is optimized.
-- **Expected latency and potential delays:** While we strive for minimal latency, there is an expected delivery latency. Occasional delays are possible due to high network traffic, system load, or processing queues.
-- **At-least-once delivery:** Log delivery is guaranteed on an at-least-once basis. While this ensures that all events are successfully delivered, duplicate log entries may occasionally be written to the destination bucket (for example, during network retries or recovery from transient connection drops). Exactly-once delivery is not guaranteed.
-- **Client-side deduplication required:** The client must be capable of deduplicating events within their SIEM or data lake. Deduplication should be handled using a combination of the event `timestamp` and other unique identifiers.
-- **No order guarantees:** Due to the distributed nature of our global DNS infrastructure, the chronological order of events is not guaranteed. Events may arrive out of order within a single log file or across different batches.
-- **Unreachable destination (retries or drops):** If your S3 endpoint or bucket becomes unreachable (e.g., due to expired credentials or network outages on your provider’s side), AdGuard DNS may attempt retries. However, depending on backend limits, log events generated during the outage might be dropped (skipped) to prevent buffer overflow.
-- **No historical backfill:** Log streaming is strictly forward-looking. Exporting historical logs generated before the streaming feature was activated is not supported.
+- **仅批量交付**：日志严格按批次导出，而非实时导出。为保持系统稳定并适应不同的流量水平，批次大小和交付间隔都是灵活的。确切的文件大小和上传时间并非固定，可能会随系统优化而变化。
+- **预期延迟与可能的延迟**：尽管我们力求将延迟降到最低，但仍存在预期的交付延迟。由于网络流量大、系统负载或处理队列，偶尔可能出现延迟。
+- **至少一次交付**：日志交付保证采用至少一次机制。虽然这可以确保所有事件都成功交付，但偶尔可能会有重复的日志条目被写入目标存储桶（例如，在网络重试或从瞬时连接中断恢复期间）。不保证恰好一次交付。
+- **需要在客户端进行去重**：客户端必须能够在自己的 SIEM 或数据湖中对事件进行去重。应结合事件的 `timestamp` 和其他唯一标识符进行去重。
+- **不保证顺序**：由于我们全球 DNS 基础设施的分布式特性，不保证事件的时间顺序。在单个日志文件内或不同批次之间，事件可能乱序到达。
+- **目标不可达（重试或丢弃）**：如果您的 S3 端点或存储桶不可达（例如，由于凭据过期或提供商侧网络中断），AdGuard DNS 可能会尝试重试。但是，根据后端限制，中断期间生成的日志事件可能会被丢弃（跳过），以防止缓冲区溢出。
+- **不补传历史日志**：日志流式传输严格面向未来。不支持导出流式传输功能启用之前生成的历史日志。
 
-## Security and privacy
+## 安全与隐私
 
-DNS query logs contain highly sensitive network and metadata. To ensure the safety of your organization’s data, please observe the following security principles:
+DNS 查询日志包含高度敏感的网络和元数据。为确保贵组织数据的安全，请遵循以下安全原则：
 
-- **Sensitive DNS data:** Be aware that streamed logs can contain sensitive DNS metadata, including queried domains, device identifiers, client IP addresses, and geographic details of your clients.
-- **Client responsibility:** The client is solely responsible for the overall security of their S3-compatible bucket, including configuring and maintaining secure bucket policies and access control lists (ACLs).
-- **Restrict access:** We highly recommend restricting access to the bucket to the absolute minimum necessary.
-- **Credential rotation:** Credentials (access keys and secrets) provided to AdGuard DNS for bucket access should be regularly rotated in accordance with your organization’s internal security policies. However, because changing keys on the cloud provider side immediately revokes AdGuard’s write permissions, new credentials must be updated in AdGuard at the same time to prevent log delivery disruption.
-- **Dashboard logging settings impact:** If certain types of logging are disabled in your AdGuard DNS account settings, this will directly affect the schema of your exported logs. For example, if you disable specific device metadata logging, those fields will be omitted (or populated with null values) in the streamed JSON files.
-- **No bypass of privacy settings:** AdGuard DNS strictly respects your configuration. Under no circumstances will AdGuard bypass, override, or circumvent your account’s privacy and data-anonymization settings when exporting events to your external storage.
+- **敏感的 DNS 数据**：请注意，流式传输的日志可能包含敏感的 DNS 元数据，包括查询的域名、设备标识符、客户端 IP 地址以及客户的地理位置详情。
+- **客户端责任**：客户端对其兼容 S3 的存储桶的整体安全负全责，包括配置和维护安全的存储桶策略和访问控制列表（ACL）。
+- **限制访问**：我们强烈建议将存储桶的访问权限限制在绝对必要的范围内。
+- **凭据轮换**：提供给 AdGuard DNS 用于访问存储桶的凭据（访问密钥和机密）应根据贵组织的内部安全策略定期轮换。但是，由于在云提供商侧更换密钥会立即撤销 AdGuard 的写入权限，因此必须同时更新 AdGuard 中的新凭据，以免中断日志交付。
+- **仪表盘日志设置的影响**：如果在您的 AdGuard DNS 账户设置中禁用了某些类型的日志记录，这将直接影响导出日志的架构。例如，如果您禁用了特定的设备元数据记录，这些字段将在流式传输的 JSON 文件中被省略（或填充为 null 值）。
+- **不绕过隐私设置**：AdGuard DNS 严格遵循您的配置。在任何情况下，AdGuard 都不会在将事件导出到您的外部存储时绕过、覆盖或规避您账户的隐私和数据匿名化设置。
 
-## How to ingest logs into SIEM
+## 如何将日志导入 SIEM
 
-Since AdGuard DNS streams query logs to S3-compatible storage, configuring the ingestion pipeline into your SIEM platform is handled entirely on your side.
+由于 AdGuard DNS 将查询日志流式传输到兼容 S3 的存储中，因此配置导入 SIEM 平台的管道完全由您自己负责。
 
-- **S3-compatible destination:** AdGuard DNS delivers raw log files directly to your designated S3 bucket, which serves as the central landing zone for your security data.
-- **Custom ingestion pipeline:** You can connect and ingest these log files into your SIEM or analytics system using your own data pipelines, custom scripts, or ETL processes.
-- **Standard S3 connectors:** For major platforms such as **Splunk**, **Microsoft Sentinel**, and **Elastic**, you typically utilize their respective native S3 connectors, inputs, or log collectors.
-- **Infrastructure-dependent setup:** The exact configuration, index mapping, and parsing rules inside your SIEM depend heavily on your organization’s specific infrastructure, data schemas, and retention policies.
+- **兼容 S3 的目标**：AdGuard DNS 将原始日志文件直接交付到您指定的 S3 存储桶，该存储桶作为您安全数据的中央接收区。
+- **自定义导入管道**：您可以使用自己的数据管道、自定义脚本或 ETL 流程，将这些日志文件连接并导入您的 SIEM 或分析系统。
+- **标准 S3 连接器**：对于 **Splunk**、**Microsoft Sentinel** 和 **Elastic** 等主要平台，通常使用它们各自的原生 S3 连接器、输入或日志收集器。
+- **依赖基础设施的配置**：SIEM 内的确切配置、索引映射和解析规则在很大程度上取决于贵组织的具体基础设施、数据架构和保留策略。
 
-## Troubleshooting
+## 故障排除
 
-This section details common integration issues you may encounter when setting up or running the query log stream, along with steps to resolve them.
+本节详细介绍您在设置或运行查询日志流时可能遇到的常见集成问题，以及解决这些问题的步骤。
 
-### Logs are not appearing in the bucket
+### 存储桶中没有出现日志
 
-**Potential cause:** Configuration on the AdGuard side is not yet complete, or incorrect connection parameters were provided.
+**可能原因**：AdGuard 侧的配置尚未完成，或提供的连接参数不正确。
 
-**Resolution:** Verify that you received a confirmation email from your AdGuard account manager stating that the stream configuration is complete. Double-check all shared parameters (bucket name, endpoint, region).
+**解决方法**：确认您已收到 AdGuard 客户经理发来的确认邮件，表明流配置已完成。请仔细核对所有共享参数（存储桶名称、端点、区域）。
 
-### Incorrect bucket permissions
+### 存储桶权限不正确
 
-**Potential cause:** The credentials shared with AdGuard do not have sufficient permissions to write objects to the bucket.
+**可能原因**：与 AdGuard 共享的凭据没有足够的权限向存储桶写入对象。
 
-**Resolution:** Ensure that the AWS IAM policy (or your provider’s equivalent) associated with the provided access keys explicitly grants `s3:PutObject` permission for the target bucket and prefix.
+**解决方法**：确保与所提供的访问密钥关联的 AWS IAM 策略（或您的提供商的等效策略）明确授予目标存储桶和前缀的 `s3:PutObject` 权限。
 
-### S3 credentials expired
+### S3 凭据已过期
 
-**Potential cause:** The credentials have expired, or they were rotated/revoked in accordance with your organization’s internal security policies.
+**可能原因**：凭据已过期，或已根据贵组织的内部安全策略进行轮换/撤销。
 
-**Resolution:** Generate a new set of access and secret keys, and share them securely with your AdGuard account manager to update your stream configuration.
+**解决方法**：生成一组新的访问密钥和机密密钥，并通过安全方式与您的 AdGuard 客户经理共享，以更新您的流配置。
 
-### Duplicates appeared in the log destination
+### 日志目标中出现了重复项
 
-**Potential cause:** Network retries triggered by the “at-least-once” delivery model during transient network interruptions.
+**可能原因**：瞬时网络中断期间，由“至少一次”交付模型触发的网络重试。
 
-**Resolution:** This is expected behavior in distributed logging pipelines. Configure deduplication rules in your SIEM or database using a combination of the `timestamp`, `domain`, and `device_id` (or other unique event identifiers).
+**解决方法**：这是分布式日志管道中的预期行为。在您的 SIEM 或数据库中，结合使用 `timestamp`、`domain` 和 `device_id`（或其他唯一事件标识符）配置去重规则。
 
-### Latency is higher than expected
+### 延迟高于预期
 
-**Potential cause:** Temporary network congestion, system load, or buffering delays on the cloud provider’s side.
+**可能原因**：云提供商侧的临时网络拥塞、系统负载或缓冲延迟。
 
-**Resolution:** Check the operational status of your S3-compatible cloud provider. If log delivery delays consistently exceed your expected batch interval (e.g., more than 15–30 minutes), contact AdGuard support to check the status of our outbound delivery queues.
+**解决方法**：检查您的兼容 S3 云提供商的运行状态。如果日志交付延迟持续超过您预期的批次间隔（例如超过 15–30 分钟），请联系 AdGuard 支持团队检查我们出站交付队列的状态。
 
-### Missing fields in the logs
+### 日志中缺少字段
 
-**Potential cause:** Specific logging or privacy features (such as client IP logging or device metadata collection) are disabled in your AdGuard DNS dashboard settings.
+**可能原因**：在您的 AdGuard DNS 仪表盘设置中禁用了特定的日志记录或隐私功能（例如客户端 IP 记录或设备元数据收集）。
 
-**Resolution:** Review your privacy and logging settings within the AdGuard DNS dashboard. The log streaming export strictly respects these settings and will not bypass your data-minimization preferences.
+**解决方法**：检查 AdGuard DNS 仪表盘中的隐私和日志记录设置。日志流式传输导出严格遵循这些设置，不会绕过您的数据最小化偏好。
 
-### Enterprise status changed
+### 企业版状态已更改
 
-**Potential cause:** Your Enterprise subscription has expired, was cancelled, or your account was downgraded.
+**可能原因**：您的企业版订阅已过期、已取消，或您的账户已被降级。
 
-**Resolution:** Log streaming is deactivated automatically if the account loses Enterprise status. Contact your AdGuard account manager to restore your subscription and reactivate the stream.
+**解决方法**：如果账户失去企业版状态，日志流式传输会自动停用。请联系您的 AdGuard 客户经理恢复订阅并重新激活流。
 
-### SIEM fails to parse or split the JSON array
+### SIEM 无法解析或拆分 JSON 数组
 
-**Potential Cause:** Many S3 log collectors expect Newline Delimited JSON (NDJSON/JSONL) by default. Since the exported logs are formatted as a minified JSON array (`[...]`), the collector may fail to parse the file or ingest the entire array as a single, massive log event instead of splitting it into individual query records.
+**可能原因**：许多 S3 日志收集器默认预期使用换行分隔的 JSON（NDJSON/JSONL）。由于导出的日志格式为精简的 JSON 数组（`[...]`），收集器可能无法解析该文件，或将整个数组作为单个大型日志事件导入，而不是将其拆分为单独的查询记录。
 
-**Resolution:** Configure the S3 connector, log shipper, or SIEM parser to handle standard JSON arrays. The ingestion pipeline must be set to unpack the array and split its elements into separate log entries before indexing.
+**解决方法**：将 S3 连接器、日志传输器或 SIEM 解析器配置为处理标准 JSON 数组。导入管道必须设置为在索引前解包数组并将其元素拆分为单独的日志条目。
 
-### Compressed files do not decompress
+### 压缩文件无法解压
 
-**Potential cause:** The compression format (e.g., `.gz`) used during export is either unsupported or misconfigured in your SIEM’s ingestion connector.
+**可能原因**：导出时使用的压缩格式（例如 `.gz`）在您的 SIEM 导入连接器中不受支持或配置错误。
 
-**Resolution:** Verify the decompression settings on your SIEM connector (e.g., ensure automatic gzip decompression is enabled for S3 object retrieval).
+**解决方法**：检查 SIEM 连接器上的解压设置（例如，确保在检索 S3 对象时启用了自动 gzip 解压）。
 
 ## 常见问题
 
-### Can logs be streamed directly to Splunk or Microsoft Sentinel?
+### 能否将日志直接流式传输到 Splunk 或 Microsoft Sentinel？
 
-No. In the current MVP version, direct streaming to SIEM endpoints or APIs (such as Splunk HEC) is not supported. Logs must be written to an S3-compatible bucket first, which the SIEM can then monitor and ingest from using standard S3 connectors.
+不能。在当前 MVP 版本中，不支持直接流式传输到 SIEM 端点或 API（例如 Splunk HEC）。日志必须先写入兼容 S3 的存储桶，然后 SIEM 才能使用标准 S3 连接器进行监控和导入。
 
-### Can storage options other than S3 be used?
+### 可以使用 S3 以外的存储选项吗？
 
-No. Currently, only S3-compatible storage is supported. Standard options include Amazon S3 or compatible offerings from other cloud providers (e.g., Cloudflare R2, Backblaze B2, Wasabi, or MinIO). Native integration with other storage types (such as direct Azure Blob or SFTP) is not available at this time.
+不可以。目前仅支持兼容 S3 的存储。标准选项包括 Amazon S3 或其他云提供商的兼容服务（例如 Cloudflare R2、Backblaze B2、Wasabi 或 MinIO）。目前暂不支持与其他存储类型的原生集成（例如直接使用 Azure Blob 或 SFTP）。
 
-### Is it possible to retrieve historical logs?
+### 是否可以检索历史日志？
 
-No. Log streaming is strictly forward-looking. Only DNS query events generated _after_ the streaming feature has been successfully activated and configured will be exported. Historical backfill of logs is not supported.
+不可以。日志流式传输严格面向未来。只有**在流式传输功能成功激活并配置之后**生成的 DNS 查询事件才会被导出。不支持补传历史日志。
 
-### How quickly are logs delivered?
+### 日志交付速度有多快？
 
-Logs are delivered in compressed batches rather than in real-time. For more details on batching intervals and delivery mechanics, refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section.
+日志以压缩批次的形式交付，而非实时交付。有关批次间隔和交付机制的更多详情，请参阅[交付保证与限制](#delivery-guarantees-and-limitations)一节。
 
-### Is the delivery of every single event guaranteed?
+### 是否保证每条事件都能交付？
 
-Yes, under normal operating conditions. However, if the destination bucket becomes unreachable, log events may eventually be dropped once the retry buffer limit is exceeded. Refer to the [Delivery guarantees and limitations](#delivery-guarantees-and-limitations) section for details.
+是的，在正常运行条件下。但是，如果目标存储桶不可达，一旦超过重试缓冲区限制，日志事件最终可能会被丢弃。详情请参阅[交付保证与限制](#delivery-guarantees-and-limitations)一节。
 
-### Are duplicate events possible in the destination?
+### 目标中可能出现重复事件吗？
 
-Yes. Under the “at-least-once” delivery model, network retries triggered by transient outages can cause duplicate log events to be written to the bucket. The ingestion pipeline or SIEM must be configured to handle deduplication.
+会。在“至少一次”交付模型下，由瞬时中断触发的网络重试可能会导致重复的日志事件被写入存储桶。导入管道或 SIEM 必须配置为处理去重。
 
-### What fields are included in the logs?
+### 日志中包含哪些字段？
 
-The logs include essential DNS query fields such as `TimeAddedMs` (timestamp), `DomainFQDN`, `RequestType`, `Action`, and `ClientCountry`. For the full list of fields and data types, refer to the [Fields reference](#fields-reference) section. Account privacy settings directly affect these logs; sensitive fields (such as `IpAddress`) will be omitted or set to `null` if logging is disabled in the dashboard.
+日志包含基本的 DNS 查询字段，例如 `TimeAddedMs`（时间戳）、`DomainFQDN`、`RequestType`、`Action` 和 `ClientCountry`。有关字段和数据类型的完整列表，请参阅[字段参考](#fields-reference)一节。账户隐私设置会直接影响这些日志；如果在仪表盘中禁用了日志记录，敏感字段（例如 `IpAddress`）将被省略或设为 `null`。
 
-### What happens if the Enterprise status is lost?
+### 如果失去企业版状态会发生什么？
 
-Log streaming is strictly an Enterprise-tier feature. If the account is no longer on an Enterprise plan or the subscription lapses, the streaming service will be deactivated automatically.
+日志流式传输严格属于企业版功能。如果账户不再使用企业版套餐或订阅到期，流式传输服务将自动停用。
 
-### Can log streaming be deactivated?
+### 可以停用日志流式传输吗？
 
-Yes. The log stream can be deactivated at any time upon request. To do so, please contact the dedicated AdGuard account manager or reach out to the AdGuard support team at `support@adguard-dns.io`.
+可以。日志流可随时按申请停用。如需停用，请联系您的专属 AdGuard 客户经理，或通过 `support@adguard-dns.io` 联系 AdGuard 支持团队。
 
-### Can multiple S3 streaming destinations be configured?
+### 可以配置多个 S3 流式传输目标吗？
 
-No. The current version only supports configuring a single S3-compatible streaming destination per Enterprise organization.
+不可以。当前版本仅支持每个企业组织配置一个兼容 S3 的流式传输目标。
