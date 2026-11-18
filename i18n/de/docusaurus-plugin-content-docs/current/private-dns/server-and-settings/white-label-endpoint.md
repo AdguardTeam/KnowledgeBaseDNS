@@ -1,88 +1,88 @@
 ---
-title: White-label endpoint (Account IP address)
+title: White-Label-Endpunkt (Konto-IP-Adresse)
 sidebar_position: 7
 ---
 
-Custom domains allow partners to offer AdGuard DNS under their own brand. With the Enterprise plan, this service can run on a private IP address: this feature is called _Account IP_. Domains point to the _Account IP_ through an A record instead of a CNAME record, which is used for standard custom domains.
+Benutzerdefinierte Domains ermöglichen es Partnern, AdGuard DNS unter eigener Marke anzubieten. Beim Enterprise-Plan kann dieser Dienst über eine private IP-Adresse ausgeführt werden: Diese Funktion wird als _Konto-IP_ bezeichnet. Domains verweisen über einen A-Eintrag auf die _Konto-IP_ statt über einen CNAME-Eintrag, der bei standardmäßigen benutzerdefinierten Domains verwendet wird.
 
 :::note
 
-**CNAME** points your domain to another domain (`dns.partner.com` → `cname.adguard-dns.com`). The real IP address is resolved through that second domain, so traffic goes through the shared infrastructure it serves.
+**CNAME** zeigt deine Domain auf eine andere Domain (`dns.partner.com` → `cname.adguard-dns.com`). Die tatsächliche IP-Adresse wird über diese zweite Domain aufgelöst, sodass der Datenverkehr über die gemeinsame Infrastruktur läuft, die sie bedient.
 
-**A record** points your domain straight to an IP address (`dns.partner.com` → `203.0.113.10`). There’s no domain in between: the address your domain resolves to is the one that handles the traffic.
+**Der A-Eintrag** zeigt deine Domain direkt auf eine IP-Adresse (`dns.partner.com` → `203.0.113.10`). Dazwischen liegt keine weitere Domain: Die Adresse, auf die deine Domain aufgelöst wird, ist die, die den Datenverkehr verarbeitet.
 
 :::
 
-Each account can have one _Account IP_, and you can point several domains to it. This isn’t the same as the dedicated IPv4 and IPv6 addresses used to identify devices: an _Account IP_ is the address your custom domains resolve to.
+Jedes Konto kann eine _Konto-IP_ haben, und Sie können mehrere Domains darauf verweisen. Dies ist nicht dasselbe wie die dedizierten IPv4- und IPv6-Adressen, die zur Identifizierung von Geräten verwendet werden: Eine _Konto-IP_ ist die Adresse, zu der Ihre benutzerdefinierten Domains aufgelöst werden.
 
-## How to get an Account IP
+## Wie man eine Konto-IP erhält
 
-To request an _Account IP_, contact your account manager or support team at [support@adguard-dns.io](mailto:support@adguard-dns.io).
+Um eine _Konto-IP_ anzufordern, wenden Sie sich bitte an Ihren Kundenbetreuer oder den Support unter [support@adguard-dns.io](mailto:support@adguard-dns.io).
 
-Once the address is assigned, the _White-label endpoint_ block appears in _Settings_ → _Advanced settings_ → _Custom domains_, showing your _Account IP address_. Until then, the block isn’t shown.
+Sobald die Adresse zugewiesen ist, erscheint der Block _White-Label-Endpunkt_ unter _Einstellungen_ → _Erweiterte Einstellungen_ → _Benutzerdefinierte Domains_ und zeigt Ihre _Konto-IP-Adresse_ an. Bis dahin wird der Block nicht angezeigt.
 
-![White-label endpoint](https://cdn.adtidy.org/content/kb/dns/enterprise/whitelabel_endpoint_en.png)
+![White-Label-Endpunkt](https://cdn.adtidy.org/content/kb/dns/enterprise/whitelabel_endpoint_de.png)
 
 :::caution
 
-If your account moves off the Enterprise plan, the address becomes inactive and domains pointing to it stop working. Custom domains stay available on the **Team** plan, but only through a CNAME record — to bring the paused domains back, add them again as standard custom domains.
+Wenn dein Konto das Enterprise-Paket verlässt, wird die Adresse inaktiv und Domains, die darauf zeigen, funktionieren nicht mehr. Benutzerdefinierte Domains bleiben im **Team**-Paket verfügbar, aber nur über einen CNAME-Eintrag — um die pausierten Domains wiederzubeleben, füge sie erneut als standardmäßige benutzerdefinierte Domains hinzu.
 
-The address itself stays reserved for your account, so if you return to the Enterprise plan, you get the same one back.
+Die Adresse selbst bleibt für dein Konto reserviert. Wenn du zum Enterprise-Paket zurückkehrst, bekommst du dieselbe zurück.
 
 :::
 
-## How to point a domain to your Account IP address
+## So verknüpfen Sie eine Domain mit Ihrer Konto-IP-Adresse
 
-Setup follows the same steps as a standard custom domain, except you create an A record instead of a CNAME. Also, for DoH domains, the certificate isn’t issued automatically — you must upload your own.
+Die Einrichtung erfolgt in denselben Schritten wie bei einer normalen benutzerdefinierten Domain, mit dem Unterschied, dass Sie einen A-Eintrag anstelle eines CNAME-Eintrags erstellen. Außerdem wird bei DoH-Domains das Zertifikat nicht automatisch ausgestellt – Sie müssen Ihr eigenes hochladen.
 
-1. In _Custom domains_, choose the protocol: _Add DoH domain_ (for DNS-over-HTTPS) or _Add DoT/DoQ domain_ (for DNS-over-TLS or DNS-over-QUIC).
+1. Wählen Sie unter _Benutzerdefinierte Domains_ das Protokoll aus: _DoH-Domain hinzufügen_ (für DNS-over-HTTPS) oder _DoT/DoQ-Domain hinzufügen_ (für DNS-over-TLS oder DNS-over-QUIC).
 
-   ![Choosing the protocol](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_en.png)
+   ![Auswahl des Protokolls](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_protocol_de.png)
 
-2. Enter the domain you want to use (e.g., `dns.partner.com`) and click _Next_. You need access to this domain’s DNS management panel.
+2. Geben Sie die gewünschte Domain ein (z. B. `dns.partner.com`) und klicken Sie auf _Weiter_. Sie benötigen Zugriff auf das DNS-Verwaltungspanel dieser Domain.
 
-   ![Entering the domain](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_en.png)
+   ![Eingabe der Domain](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_domain_de.png)
 
-3. The next screen shows the values for your DNS record: your domain under _Name (Host)_ and your _Account IP_ under _Value (Points to / IP address)_. Leaving this screen open, go to your DNS provider’s control panel and create an A record with those values. Don’t create a CNAME record — domains on an _Account IP_ point to the address directly.
+3. Auf dem nächsten Bildschirm werden die Werte für Ihren DNS-Eintrag angezeigt: Ihre Domain unter _Name (Host)_ und Ihre _Konto-IP_ unter _Wert (Verweist auf / IP-Adresse)_. Lassen Sie dieses Fenster geöffnet, gehen Sie zum Kontrollfeld Ihres DNS-Anbieters und erstellen Sie einen A-Eintrag mit diesen Werten. Erstellen Sie keinen CNAME-Eintrag – Domains unter einer _Konto-IP_ verweisen direkt auf die Adresse.
 
-   ![DNS record values](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_en.png)
+   ![Werte des DNS-Eintrags](https://cdn.adtidy.org/content/kb/dns/enterprise/a_record_de.png)
 
-4. On the AdGuard DNS screen with the record values, click _Verify_. If the record hasn’t propagated yet or points somewhere else, verification fails. Check the record and try again in a few minutes.
+4. Klicken Sie auf dem AdGuard-DNS-Bildschirm mit den Eintragswerten auf _Überprüfen_. Wenn der Datensatz noch nicht übertragen wurde oder auf einen anderen Speicherort verweist, schlägt die Überprüfung fehl. Überprüfen Sie den Eintrag und versuchen Sie es in ein paar Minuten erneut.
 
-5. Upload a TLS certificate. Certificates aren’t issued automatically for domains on an _Account IP_:
+5. Laden Sie ein TLS-Zertifikat hoch. Für Domains unter einer _Konto-IP_ werden keine Zertifikate automatisch ausgestellt:
 
-   - For **DoT/DoQ**, you upload a wildcard certificate (`*.partner.com`), same as for a standard custom domain.
-   - For **DoH**, you upload your own certificate too. This differs from the standard flow, where AdGuard DNS can generate one for you.
+   - Für **DoT/DoQ** laden Sie ein Wildcard-Zertifikat (`*.partner.com`) hoch, genau wie bei einer normalen benutzerdefinierten Domain.
+   - Für **DoH** laden Sie auch Ihr eigenes Zertifikat hoch. Dies weicht vom Standardablauf ab, bei dem AdGuard DNS einen solchen für Sie generieren kann.
 
-   Until you add a certificate, the domain shows the _No certificate_ status and your customers can’t connect to it.
+   Solange Sie kein Zertifikat hinzufügen, wird für die Domain der Status „_Kein Zertifikat_“ angezeigt, und Ihre Kunden können keine Verbindung zu ihr herstellen.
 
-   ![Uploading a certificate](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_en.png)
+   ![Hochladen eines Zertifikats](https://cdn.adtidy.org/content/kb/dns/enterprise/account_ip_certificate_de.png)
 
 :::note
 
-Renewal is on your side. You’ll get an email reminder before the certificate expires. When this happens, your domain will stop working until you upload a new certificate.
+Die Verlängerung steht auf Ihrer Seite. Sie erhalten eine E-Mail-Erinnerung, bevor das Zertifikat abläuft. In diesem Fall funktioniert Ihre Domain so lange nicht mehr, bis Sie ein neues Zertifikat hochladen.
 
 :::
 
-## Existing custom domains and Account IP address
+## Bestehende benutzerdefinierte Domains und die IP-Adresse des Kontos
 
-Domains you added before getting an _Account IP_ aren’t moved to it automatically. They keep working through their CNAME record, as before.
+Domains, die Sie vor dem Erhalt einer _Konto-IP_ hinzugefügt haben, werden nicht automatisch dorthin verschoben. Sie funktionieren weiterhin über ihren CNAME-Eintrag wie bisher.
 
-To move a domain over to your _Account IP_, start by deleting its CNAME record at your DNS provider — a domain can’t have both a CNAME and an A record at once. Then delete the domain in AdGuard DNS and add it again, following the steps above.
+Um eine Domain auf Ihre _Konto-IP_ zu übertragen, löschen Sie zunächst den zugehörigen CNAME-Eintrag bei Ihrem DNS-Anbieter – eine Domain kann nicht gleichzeitig einen CNAME- und einen A-Eintrag haben. Löschen Sie anschließend die Domain in AdGuard DNS und fügen Sie sie gemäß den oben beschriebenen Schritten erneut hinzu.
 
 :::caution
 
-Your customers won’t be able to use the domain between the moment you delete it and the moment the new setup is verified.
+Ihre Kunden können die Domain zwischen dem Zeitpunkt der Löschung und der Verifizierung der neuen Konfiguration nicht nutzen.
 
 :::
 
 ## Einschränkungen
 
-An _Account IP_ changes the address your domain resolves to. A few things it doesn’t cover:
+Eine _Konto-IP_ ändert die Adresse, zu der Ihre Domain aufgelöst wird. Einige Dinge deckt sie nicht ab:
 
-- Account IP address isn’t fully white-label at the network level. A WHOIS, RDAP, or ASN lookup of the IP address can still identify AdGuard as the provider of the underlying IP infrastructure.
-- Reverse DNS can’t be customized, so a PTR lookup won’t return your domain.
-- DNS server discovery (DDR) isn’t available on an _Account IP_.
-- Certificates with the IP address in the SAN field aren’t supported, so your customers connect through the domain name rather than the address itself.
-- Using your own IP range (BYOIP) isn’t supported, since the address is assigned by AdGuard.
-- DNSCheck domains, used to verify a device’s DNS connection, still resolve through AdGuard’s infrastructure.
+- Die IP-Adresse des Kontos ist auf Netzwerkebene nicht vollständig White-Label. Eine WHOIS-, RDAP- oder ASN-Abfrage der IP-Adresse kann AdGuard weiterhin als Anbieter der zugrunde liegenden IP-Infrastruktur identifizieren.
+- Reverse-DNS kann nicht angepasst werden, daher gibt eine PTR-Abfrage deine Domain nicht zurück.
+- Die DNS-Servererkennung (DDR) ist auf einer _Account IP_ nicht verfügbar.
+- Zertifikate mit der IP-Adresse im SAN-Feld werden nicht unterstützt, deine Kunden verbinden sich daher über den Domainnamen statt über die Adresse selbst.
+- Die Verwendung eines eigenen IP-Bereichs (BYOIP) wird nicht unterstützt, da die Adresse von AdGuard zugewiesen wird.
+- DNSCheck-Domains, mit denen die DNS-Verbindung eines Geräts überprüft wird, werden weiterhin über die Infrastruktur von AdGuard aufgelöst.

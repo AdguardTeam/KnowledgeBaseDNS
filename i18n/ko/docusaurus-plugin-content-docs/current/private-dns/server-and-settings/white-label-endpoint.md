@@ -3,13 +3,13 @@ title: 화이트 라벨 엔드포인트(계정 IP 주소)
 sidebar_position: 7
 ---
 
-Custom domains allow partners to offer AdGuard DNS under their own brand. With the Enterprise plan, this service can run on a private IP address: this feature is called _Account IP_. Domains point to the _Account IP_ through an A record instead of a CNAME record, which is used for standard custom domains.
+사용자 정의 도메인을 사용하면 파트너가 자체 브랜드로 AdGuard DNS를 제공할 수 있습니다. 엔터프라이즈 요금제에서는 이 서비스를 계정 전용 IP 주소에서 운영할 수 있습니다. 이 기능을 **계정 IP**라고 합니다. 도메인은 표준 사용자 정의 도메인에 사용되는 CNAME 레코드 대신 A 레코드를 통해 **계정 IP**를 가리킵니다.
 
 :::note
 
-**CNAME** points your domain to another domain (`dns.partner.com` → `cname.adguard-dns.com`). The real IP address is resolved through that second domain, so traffic goes through the shared infrastructure it serves.
+**CNAME**은 사용자의 도메인을 다른 도메인(`dns.partner.com` → `cname.adguard-dns.com`)으로 연결합니다. The real IP address is resolved through that second domain, so traffic goes through the shared infrastructure it serves.
 
-**A record** points your domain straight to an IP address (`dns.partner.com` → `203.0.113.10`). There’s no domain in between: the address your domain resolves to is the one that handles the traffic.
+**A 레코드**는 사용자의 도메인을 IP 주소(`dns.partner.com` → `203.0.113.10`)로 직접 연결합니다. There’s no domain in between: the address your domain resolves to is the one that handles the traffic.
 
 :::
 
