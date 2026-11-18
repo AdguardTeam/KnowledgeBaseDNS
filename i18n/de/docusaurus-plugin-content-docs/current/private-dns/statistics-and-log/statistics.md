@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Allgemeine Statistiken
 
-Im Tab _Statistiken_ werden alle Statistiken über DNS-Anfragen von Geräten, die mit dem privaten AdGuard DNS verbunden sind, zusammengefasst. Man sieht die Gesamtzahl und den Standort der Anfragen, die Zahl der gesperrten Anfragen, die Liste der Unternehmen, an die die Anfragen gerichtet waren, die Anfragetypen und die am häufigsten angefragten Domains.
+Im Tab _Statistiken_ werden alle Statistiken über DNS-Anfragen von Geräten, die mit dem privaten AdGuard DNS verbunden sind, zusammengefasst. It shows the total number and location of requests, the number of blocked requests, the list of companies to which the requests were directed, the types of requests, the most frequently requested domains, as well as the top blocked categories of unwanted content and the most active blocklists.
 
 ![Gesperrte Website \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/overall_stats.png)
 
@@ -44,12 +44,28 @@ Enthält eine Liste von Domains, an die die meisten Anfragen gesendet wurden.
 
 ![Top Domains \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/top_domains.png)
 
-### Verschlüsselte Anfragen
+### Top blocked categories
 
-Zeigt die Gesamtzahl der Anfragen und den Prozentsatz des verschlüsselten und unverschlüsselten Datenverkehrs.
+Displays the top 5 most frequently blocked content categories. The data can be filtered by time range, server, and device. Domains fall into more than 20 categories, including _Adult content_, _Gambling_, _Banking_, _Games_, and _Social networks_.
 
-![Verschlüsselte Anfragen \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
+![Top blocked categories \*border](https://cdn.adtidy.org/content/blog/dns/top-categories-blocked_en.png)
 
-### Top Clients
+### Encrypted requests
 
-Zeigt die Anzahl der gesendeten Anfragen an Clients. Um IP-Adressen der Clients anzuzeigen, aktivieren Sie die Option _IP-Adressen protokollieren_ in den _Servereinstellungen_. [Weitere Informationen zu den Servereinstellungen](/private-dns/server-and-settings/advanced.md) finden Sie in einem entsprechenden Abschnitt.
+Shows the total number of requests and the percentage of encrypted and unencrypted traffic.
+
+![Encrypted requests \*border](https://cdn.adtidy.org/content/kb/dns/private/new_dns/statistics/encrypted_requests.png)
+
+### Top clients
+
+Displays the number of requests made to clients. To view client IP addresses, enable the _Log IP addresses_ option in the _Server settings_. [More about server settings](/private-dns/server-and-settings/advanced.md) can be found in a related section.
+
+### Top blocklists
+
+Shows the top 5 blocklists by the number of blocked requests and their share of all blocks. The data can be filtered by time range, server, and device. Each blocked request is credited only to the blocklist whose rule was triggered, so domains that appear in multiple lists are never double-counted.
+
+Custom blocklists appear under the names you gave them. If a blocklist isn’t in the top 5, it blocked fewer requests than the ones shown.
+
+The tile works at the list level: it doesn’t show which rule was triggered, and it doesn’t include statistics for user rules or allowlists.
+
+![Top blocklists \*border](https://cdn.adtidy.org/content/release_notes/dns/v2-25/top-blocklists.png)

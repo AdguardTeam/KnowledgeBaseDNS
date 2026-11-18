@@ -7,7 +7,7 @@ sidebar_position: 9
 
 ## Через панель управления роутера
 
-Используйте эту инструкцию, если ваш роутер Keenetic не поддерживает настройку DNS-over-HTTPS или DNS-over-TLS:
+Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
