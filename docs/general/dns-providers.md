@@ -1333,3 +1333,18 @@ Example (without dashboard access):
 `DoH: https://example.ublock.dns/`
 
 > This is an example endpoint. To use uBlock DNS with full functionality, you need to create your own account key.
+
+
+### HQDNS
+
+[HQDNS](https://hqdns.sarl) — Independent public DNS resolver with filtering for ads, trackers, malware and phishing.
+
+HQDNS is a personal, non-commercial project. No user registration is required. HQDNS does not retain DNS query logs and performs its own recursive DNS resolution.
+
+| Protocol | Address | |
+| ---------------- | ---------------------------------------------------- | ---------------- |
+| DNS, IPv4 | `185.215.166.168` | [Add to AdGuard](adguard:add_dns_server?address=185.215.166.168&name=HQDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=185.215.166.168&name=HQDNS) |
+| DNS, IPv6 | `2a02:c207:2355:6761::1` | [Add to AdGuard](adguard:add_dns_server?address=2a02:c207:2355:6761::1&name=HQDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=2a02:c207:2355:6761::1&name=HQDNS) |
+| DNS-over-TLS | `dns.hqdns.sarl` | [Add to AdGuard](adguard:add_dns_server?address=tls://dns.hqdns.sarl&name=HQDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=tls://dns.hqdns.sarl&name=HQDNS) |
+| DNS-over-HTTPS | `https://dns.hqdns.sarl/dns-query` | [Add to AdGuard](adguard:add_dns_server?address=https://dns.hqdns.sarl/dns-query&name=HQDNS), [Add to AdGuard VPN](adguardvpn:add_dns_server?address=https://dns.hqdns.sarl/dns-query&name=HQDNS) |
+
