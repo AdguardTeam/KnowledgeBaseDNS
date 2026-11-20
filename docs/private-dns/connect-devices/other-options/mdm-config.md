@@ -53,7 +53,7 @@ The `lock_type` parameter controls **App lock**, which prevents the device user 
 
 :::note
 
-Fail-safe App lock behavior is available in AdGuard DNS 1.4 and later. In earlier versions, removing `lock_type` or the entire configuration unlocked the app.
+Fail-safe App lock behavior is available in AdGuard DNS 1.4 and later. In earlier versions, removing `lock_type` or the entire configuration unlocked the app. Starting with v1.4, this no longer works: devices that were previously unlocked this way will remain locked after the update.
 
 :::
 
@@ -74,7 +74,7 @@ Fail-safe App lock behavior is available in AdGuard DNS 1.4 and later. In earlie
 
 For MDM-managed devices, assign a configuration with `lock_type` set to `unlock`. In mobiconnect, for example, this is done in the managed configuration settings of the app.
 
-For devices no longer managed by MDM, reinstall the app to remove the lock.
+For devices no longer managed by MDM, reinstall the app to remove the lock. A fully locked screen with no option to enter a code will appear.
 
 :::caution[Recommendation for admins]
 
