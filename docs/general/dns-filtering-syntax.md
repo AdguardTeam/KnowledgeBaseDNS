@@ -84,6 +84,12 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 - `|`: a pointer to the beginning or the end of the hostname. The value depends on the character placement in the mask. For example, the rule `ample.org|` corresponds to `example.org` but not to `example.org.com`. `|example` corresponds to `example.org` but not to `test.example`.
 
+:::note
+
+The filtering engine checks both the query name and the CNAME targets in the DNS response. A pattern without an end anchor (`^` or a trailing `|`) does not require the hostname to end at the pattern, so it can match a longer name, including a CNAME target. For example, the rule `||roblox.com.` matches the CNAME target `clientsettingscdn.roblox.com.edgekey.net`. A query for `clientsettingscdn.roblox.com` can therefore be blocked, even though the query name does not match the rule. To require the hostname to end at the pattern, add `^`. For example, `||roblox.com^` matches `roblox.com` and `sub.roblox.com`, but not `roblox.com.edgekey.net`.
+
+:::
+
 ### Regular expressions {#regular-expressions}
 
 If you want even more flexibility in making rules, you can use [regular expressions][regexp] instead of the default simplified matching syntax. If you want to use a regular expression, the pattern has to look like this:
