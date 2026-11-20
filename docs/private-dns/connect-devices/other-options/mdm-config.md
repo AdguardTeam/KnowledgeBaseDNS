@@ -35,8 +35,8 @@ The app is compatible with any EMM systems that support the AppConfig.org standa
 | **Setup ID** (`setup_id`) | String | No | AdGuard DNS setup identifier | Identifies the device for connecting to the AdGuard DNS server. | App enters managed mode; field is locked; user cannot change it; “Reset connection” option unavailable. | Connection and settings are fully reset; user must reconnect; DNS protection stops. | User can enter manually or use a QR code. |
 | **Device name** (`device_name`) | String | No | Any device name | Sets the device’s display name in the AdGuard DNS control panel. It must have a maximum length of 64 characters. | App enters managed mode; name used automatically if not set via Setup ID; field is locked. | Nothing happens. | User can enter manually; app may suggest name via Setup ID. |
 | **DNS Protocol** (`dns_protocol`) | Choice | No | **Android:** doh, dot, doq. **iOS:** doh_native, dot_native, doh_vpn, dot_vpn, doq_vpn, doh_dnsproxy, dot_dnsproxy, doq_dnsproxy (Note: doh_dnsproxy, dot_dnsproxy and doq_dnsproxy work only in MDM with mobileconfig). | Determines which encrypted DNS protocol is used (Note: DoQ not compatible with Native mode on iOS). | App enters managed mode; specified protocol applied by default; selection in settings locked. | App switches to the new protocol; reconnects automatically if DNS protection is active. When switching the operating mode (Native ↔ VPN), the app will not reconnect automatically, the user must manually reconnect. With the DNS proxy enabled, the app reconnects automatically. | User can select manually in settings unless the choice is defined through MDM. |
-| **App lock** (`lock_type`) | Choice | No | `block`, `pin`, `passcode`, `unlock` | Controls the MDM app lock. `block` applies a full lock. `pin` and `passcode` apply a code-protected lock and require `lock_code`. `unlock` removes the MDM lock. | Applies the specified lock command. | Applies the specified lock command. Missing or invalid values do not change the current lock state. `unlock` is the only value that removes an MDM lock. | No lock is applied unless one was previously configured. If the app is already locked, omitting this parameter or removing the entire configuration does not remove the lock. |
-| **App lock code** (`lock_code`) | String | Conditional | A code specified by the administrator | Specifies the code required to unlock the app when `lock_type` is set to `pin` or `passcode`. Required for both lock types. | Applies the specified unlock code. | Applies the specified unlock code when `lock_type` is set to `pin` or `passcode`. | No code is configured unless provided. Required when `lock_type` is set to `pin` or `passcode`. |
+| **App lock** (`lock_type`) | Choice | No | `block`, `pin`, `passcode`, `unlock` | Controls the MDM App lock that prevents the device user from accessing the app or disabling DNS filtering. `block` applies a full lock with no way to enter a code. `pin` and `passcode` apply a code-protected lock and require `lock_code`. `unlock` removes the MDM lock. | Applies the specified lock command. | Applies the specified lock command. Missing or invalid values do not change the current lock state. `unlock` is the only value that removes an MDM lock. | No lock is applied unless one was previously configured. If the app is already locked, omitting this parameter or removing the entire configuration does not remove the lock. |
+| **App lock code** (`lock_code`) | String | Yes (when `lock_type` is `pin` or `passcode`) | A code set by the administrator (min. 4 characters. `pin`: numbers only; `passcode`: english letters and numbers). | Specifies the code required to unlock the app when `lock_type` is set to `pin` or `passcode`. | Applies the specified unlock code. | Applies the specified unlock code when `lock_type` is set to `pin` or `passcode`. | Required when `lock_type` is set to `pin` or `passcode`; If `lock_type` is set to `pin` or `passcode` but `lock_code` is not specified, the app falls back to `block` mode. |
 | **Install type** (`installation_type`) | Choice | No | single_touch | Defines the installation flow for the app. When set to `single_touch`, the app automatically performs device setup without user interaction, skipping the onboarding flow entirely — user only needs to launch the app. | App enters managed mode; if `single_touch` is specified along with a valid `setup_id` (in case of device setup ID) or with a valid `setup_id` and `device_name` (in case of server setup ID), the app immediately enters the automated install flow; a loading screen is displayed while the app performs setup and connection; on success, EULA is automatically accepted, onboarding is marked as passed, and the user is taken to the main screen; otherwise, the app falls back the onboarding screen or to the lock screen (if `lock_type` is set). | No effect after initial installation is complete. | Standard manual onboarding flow is used. |
 | **EULA accepted** (`eula_accepted`) | Boolean | No | true, false. | Automatically accepts End User License Agreement on behalf of the user, skipping EULA consent screen during the app's onboarding. | App enters managed mode; if `true`, the EULA is marked as accepted and the EULA screen is skipped during onboarding and user proceeds directly to the setup screen; this setting is applied once on each app start. | Nothing happens. | The user must accept the EULA manually during onboarding. |
 | **Stats enabled** (`stats_enabled`) | Boolean | No | true, false. | Controls whether crash reporting and app usage statistics are enabled, allowing administrators to remotely manage the telemetry preference. | App enters managed mode; if specified, the crash reporting preference is set to the provided value, overwriting any previous user choice; only applied when `installation_type` is set **or** `eula_accepted` is `true`; the setting is applied once on each app start. | Enables the setting when value is changed to `true`; disables the setting when value is changed to `false`. | User's existing preference is preserved; user can change the setting manually. |
@@ -49,30 +49,42 @@ The parameter `installation_type` has higher priority than `eula_accepted`. If b
 
 ## App lock
 
-The `lock_type` parameter controls **App lock**, which prevents users from disabling filtering.
+The `lock_type` parameter controls **App lock**, which prevents the device user from disabling DNS filtering or changing the app's settings.
 
-### Important behavior
+:::note
 
-App lock uses fail-safe logic:
-
-- If `lock_type` is missing or contains an invalid value, the previous lock state is preserved.
-- Removing all Managed App Configuration parameters does not remove an existing lock.
-
-#### Removing a lock
-
-For MDM-managed devices, deploy `unlock` through Managed App Configuration to remove the MDM lock.
-
-For devices no longer managed by MDM, reinstalling the app is required to remove the lock.
-
-:::note Recommendation for admins
-
-Before removing a device from MDM management (for example, when reassigning a device or ending an employee's contract), deploy `unlock` to remove the MDM lock.
+Fail-safe App lock behavior is available in AdGuard DNS 1.4 and later. In earlier versions, removing `lock_type` or the entire configuration unlocked the app.
 
 :::
 
-#### Lock priority
+`lock_type` is a command, not a stored state: the app applies the value when the configuration arrives and keeps the resulting lock state until another valid command is received.
 
-MDM-managed locks take precedence over locks set manually in the app. The `unlock` value removes only the MDM lock and does not affect any user-configured lock.
+### Lock commands
+
+- `block` — the app is fully locked: the lock screen has no code entry, and the user can neither use the app nor disable filtering.
+- `pin`, `passcode` — the app is locked, and the user unlocks it with the code from `lock_code`.
+- `unlock` — the only command that removes an MDM lock.
+
+### Fail-safe behavior
+
+- If `lock_type` is missing or contains an invalid value, the previous lock state is preserved. A typo in the value does not unlock the app.
+- Removing all Managed App Configuration parameters does not remove an existing lock. A device that was locked stays locked.
+
+### Removing a lock
+
+For MDM-managed devices, assign a configuration with `lock_type` set to `unlock`. In mobiconnect, for example, this is done in the managed configuration settings of the app.
+
+For devices no longer managed by MDM, reinstall the app to remove the lock.
+
+:::caution[Recommendation for admins]
+
+Before removing a device from MDM management (for example, when reassigning a device or ending an employee's contract), assign a configuration with `lock_type` set to `unlock`. Otherwise the device stays locked after the configuration is removed, and the user will not be able to access the app.
+
+:::
+
+### Lock priority
+
+An MDM lock takes precedence over a lock the user set in the app settings. The `unlock` command removes only the MDM lock and does not affect a user-configured lock.
 
 ## Managed mode
 
