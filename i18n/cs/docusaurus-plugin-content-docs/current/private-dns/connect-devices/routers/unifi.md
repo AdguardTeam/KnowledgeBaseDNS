@@ -45,7 +45,7 @@ Zapněte DNS-over-HTTPS v UniFi.
 
 ## Použijte panel správce routeru
 
-Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny.
+Use these instructions if your UniFi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Přihlaste se k ovladači Ubiquiti UniFi.
 2. Přejděte do _Nastavení_ → _Sítě_.

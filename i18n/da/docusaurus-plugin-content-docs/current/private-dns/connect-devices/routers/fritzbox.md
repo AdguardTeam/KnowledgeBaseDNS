@@ -7,7 +7,7 @@ FRITZ!Box giver maksimal fleksibilitet for alle enheder ved samtidig brug af 2,4
 
 ## Opsæt DNS-over-TLS
 
-1. Åbn routerens admin-panel. Den kan tilgås på fritz.box, IP-adressen på routeren eller `192.168.178.1`.
+1. Open the router admin panel. Den kan tilgås på fritz.box, IP-adressen på routeren eller `192.168.178.1`.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
 3. Åbn _Internet_ eller _Hjemmenetværk_.
 4. Vælg _DNS_ eller _DNS-indstillinger_.
@@ -19,7 +19,7 @@ FRITZ!Box giver maksimal fleksibilitet for alle enheder ved samtidig brug af 2,4
 
 Brug denne vejledning, hvis FritzBox-routeren ikke understøtter opsætning af DNS-over-TLS:
 
-1. Åbn routerens admin-panel. Den kan tilgås på `192.168.1.1` eller `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
 3. Åbn _Internet_ eller _Hjemmenetværk_.
 4. Vælg _DNS_ eller _DNS-indstillinger_.
@@ -29,5 +29,5 @@ Brug denne vejledning, hvis FritzBox-routeren ikke understøtter opsætning af D
 6. Gem indstillingerne.
 7. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

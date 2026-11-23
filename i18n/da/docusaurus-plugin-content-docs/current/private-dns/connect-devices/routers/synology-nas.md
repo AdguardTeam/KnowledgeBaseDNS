@@ -3,22 +3,19 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS-routere er utroligt nemme at bruge og kan kombineres til ét enkelt mesh-netværk. Man kan håndtere sit netværk eksternt når som helst, hvor som helst. Man kan også opsætte AdGuard DNS på selve routeren.
+A Synology NAS runs DSM (DiskStation Manager), a web-based OS that you use to manage the device, including its network settings. You can manage it remotely and configure AdGuard DNS directly on the NAS.
 
-## Brug routerens håndteringspanel
+## Use the DSM control panel
 
-Brug denne vejledning, hvis Keenetic-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
+Use these instructions if your Synology NAS does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Åbn routerens admin-panel. Den kan tilgås på `192.168.1.1` eller `192.168.0.1`.
-2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
-3. Åbn _Kontrolpanel_ eller _Netværk_.
-4. Vælg _Netværksgrænseflade_ eller _Netværksindstillinger_.
-5. Vælg relevant Wi-Fi netværk eller kabelforbindelse.
-6. Vælg _Manuel DNS_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
-   - IPv4: `94.140.14.49` and `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
-7. Gem indstillingerne.
-8. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
+1. Open the DSM control panel. It can be accessed in a browser at the NAS’s IP address, e.g. `http://192.168.1.1:5000` or `https://192.168.1.1:5001`.
+2. Enter the administrator username and password for your NAS.
+3. Go to _Control Panel_ → _Network_ → _General_.
+4. Under _DNS Server_, select _Manually configure DNS server_.
+5. In the _Preferred DNS server_ and _Alternative DNS server_ fields, enter the addresses you want to use, e.g. `94.140.14.49` and `94.140.14.59`, or `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff` for IPv6.
+6. Klik på _Anvend_.
+7. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](private-dns/connect-devices/other-options/linked-ip.md)

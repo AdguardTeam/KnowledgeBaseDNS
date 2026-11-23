@@ -88,5 +88,5 @@ Des détails supplémentaires peuvent être trouvés dans [un article différent
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. Vous avez deux choix : utiliser des IP liées ou des IP dédiées.
 
-- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

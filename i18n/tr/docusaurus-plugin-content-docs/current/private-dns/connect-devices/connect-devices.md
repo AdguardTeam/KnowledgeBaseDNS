@@ -18,8 +18,8 @@ Bu bölümde, cihazınızı AdGuard DNS'e nasıl bağlayacağınıza ilişkin ta
 Şifrelenmiş DNS protokollerini yerel olarak desteklemeyen cihazlar için üç seçenek daha sunuyoruz:
 
 - [AdGuard DNS İstemcisi](/dns-client/overview.md)
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 AdGuard DNS'e erişimi belirli cihazlarla kısıtlamak istiyorsanız [kimlik doğrulamalı DNS-over-HTTPS](/private-dns/connect-devices/other-options/doh-authentication.md) kullanın.
 

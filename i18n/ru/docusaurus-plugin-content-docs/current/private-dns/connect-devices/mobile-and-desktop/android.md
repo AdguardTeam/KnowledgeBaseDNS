@@ -111,5 +111,5 @@ All done! Your device is successfully connected to AdGuard DNS.
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. У вас есть два варианта: использовать привязанные IP или выделенные IP.
 
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

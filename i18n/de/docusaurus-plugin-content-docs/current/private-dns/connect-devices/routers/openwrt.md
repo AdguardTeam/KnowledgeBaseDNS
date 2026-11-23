@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRT-Router verwenden ein quelloffenes, Linux-basiertes Betriebssystem, das die Flexibilität bietet, Router und Gateways gemäß den Nutzer-Einstellungen zu konfigurieren. Sie unterstützen auch das Hinzufügen von verschlüsselten DNS-Servern, was bedeutet, dass Sie Privates AdGuard DNS auf Ihrem Gerät konfigurieren können.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Sie unterstützen auch das Hinzufügen von verschlüsselten DNS-Servern, was bedeutet, dass Sie Privates AdGuard DNS auf Ihrem Gerät konfigurieren können.
 
 :::note
 
@@ -124,7 +124,7 @@ Navigieren Sie zu _LuCI_ → _Dienste_ → _Rekursives DNS_, um Unbound zu konfi
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
 3. Öffnen Sie _Netzwerk_ → _Schnittstellen_.
 4. Wählen Sie Ihr WLAN-Netzwerk oder Ihre Kabelverbindung.
@@ -136,5 +136,5 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 8. Speichern Sie die Einstellungen.
 9. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

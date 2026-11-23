@@ -7,7 +7,7 @@ Keeneticルーターは、安定性と柔軟に設定できることで知られ
 
 ## DNS-over-HTTPS を設定する
 
-1. ルーターの管理画面を開きます。（管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
+1. Open the router admin panel. （管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
 2. 画面下部のメニューボタンを押し、「_管理_」を選択します。
 3. 「_システム設定_」を開きます。
 4. 「_コンポーネントオプション_」→ 「_システムコンポーネントオプション_」を押します。
@@ -19,7 +19,7 @@ Keeneticルーターは、安定性と柔軟に設定できることで知られ
 
 ## DNS-over-TLS を構成して接続する
 
-1. ルーターの管理画面を開きます。（管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
+1. Open the router admin panel. （管理画面は、my.keenetic.net、ルーターのIPアドレス、または`192.168.1.1`からアクセスできます。）
 2. 画面下部のメニューボタンを押し、「_管理_」を選択します。
 3. 「_システム設定_」を開きます。
 4. 「_コンポーネントオプション_」→ 「_システムコンポーネントオプション_」を押します。
@@ -33,16 +33,16 @@ Keeneticルーターは、安定性と柔軟に設定できることで知られ
 
 KeeneticルーターがDNS-over-HTTPSやDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
-1. ルーターの管理画面を開きます。（管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
-4. 「_WAN_」または「_インターネット_」を選択します。
+4. Select _WAN_ or _Internet_.
 5. 「_DNS_」または「_DNS設定_」を選択します。
-6. 「_手動DNS_」を選択します。「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバーアドレスを入力します:
+6. 「_手動DNS_」を選択します。 Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` と `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 7. 設定を保存します。
 8. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-Роутеры OpenWRT используют операционную систему с открытым исходным кодом на базе Linux, которая предоставляет возможность гибкой настройки роутеров и шлюзов в соответствии с предпочтениями пользователей. Разработчики позаботились о добавлении поддержки зашифрованных DNS-серверов, что позволяет настроить Private AdGuard DNS на вашем устройстве.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Разработчики позаботились о добавлении поддержки зашифрованных DNS-серверов, что позволяет настроить Private AdGuard DNS на вашем устройстве.
 
 :::note
 
@@ -124,7 +124,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
 3. Откройте «Сеть» → «Интерфейсы».
 4. Выберите сеть Wi-Fi или проводное соединение.
@@ -136,5 +136,5 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 8. Сохраните настройки.
 9. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
 
-- [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

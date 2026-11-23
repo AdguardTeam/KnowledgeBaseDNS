@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-Os roteadores OpenWRT utilizam um sistema operacional de código aberto baseado em Linux que fornece a flexibilidade para a configuração de roteadores e gateways de acordo com as preferências do usuário. Os desenvolvedores se preocuparam em adicionar suporte para servidores DNS criptografados, permitindo que você faça a configuração do AdGuard DNS Privado no seu dispositivo.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Os desenvolvedores se preocuparam em adicionar suporte para servidores DNS criptografados, permitindo que você faça a configuração do AdGuard DNS Privado no seu dispositivo.
 
 :::note
 
@@ -124,7 +124,7 @@ Navegue até _LuCI_ → _Serviços_ → _DNS Recursivo_ para configurar o Unboun
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.1.1` ou `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
 3. Abra _Rede_ → _Interfaces_.
 4. Selecione sua rede Wi-Fi ou conexão com fio.

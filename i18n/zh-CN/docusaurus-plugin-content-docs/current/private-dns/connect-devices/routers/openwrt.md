@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRT 路由器使用基于 Linux 的开源操作系统，提供依据用户首选项配置路由器和网关的灵活性。开发者添加了加密 DNS 服务器的支持，让用户在设备上配置私人 AdGuard DNS。
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. 开发者添加了加密 DNS 服务器的支持，让用户在设备上配置私人 AdGuard DNS。
 
 :::note
 
@@ -124,7 +124,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. 打开路由器管理面板。可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
 3. 打开「_网络_」→「_接口_」。
 4. 选择您的 Wi-Fi 网络或有线连接。

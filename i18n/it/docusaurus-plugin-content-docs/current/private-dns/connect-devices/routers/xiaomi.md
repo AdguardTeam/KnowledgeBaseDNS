@@ -11,15 +11,15 @@ Sfortunatamente, non supporta DNS crittografati, ma è ottimo per impostare AdGu
 
 Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Apri il pannello di amministrazione del router. Può essere accessibile a `192.168.31.1` o all'indirizzo IP del tuo router.
+1. Open the router admin panel. Può essere accessibile a `192.168.31.1` o all'indirizzo IP del tuo router.
 2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
 3. Apri _Impostazioni avanzate_ o _Avanzate_, a seconda del modello del tuo router.
 4. Apri _Rete_ o _Internet_ e cerca DNS o Impostazioni DNS.
-5. Scegli _Manuale DNS_. Seleziona _Usa questi server DNS_ oppure _Specifica manualmente il server DNS_ e inserisci i seguenti indirizzi server:
+5. Scegli _Manuale DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 6. Salva le impostazioni.
 7. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

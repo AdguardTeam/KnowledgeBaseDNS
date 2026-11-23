@@ -1,13 +1,13 @@
 ---
-title: OPNSense
+title: OPNsense
 sidebar_position: 8
 ---
 
-OPNSense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
+OPNsense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
 
 ## Use your router admin panel
 
-Use these instructions if your Keenetic router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Use these instructions if your OPNsense router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Enter the administrator username (usually, it’s admin) and router password.
@@ -21,5 +21,5 @@ Use these instructions if your Keenetic router does not support DNS-over-HTTPS o
 8. Optionally, you can enable DNSSEC for enhanced security.
 9. Link your IP (or your dedicated IP if you have a Team subscription).
 
-- [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

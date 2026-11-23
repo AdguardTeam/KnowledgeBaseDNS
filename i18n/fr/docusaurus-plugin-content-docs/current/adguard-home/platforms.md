@@ -1,11 +1,11 @@
 ---
-title: Supported platforms
+title: Plateformes prises en charge
 sidebar_position: 8
 ---
 
-## Packaged releases {#packaged-releases}
+## Versions packagées {#packaged-releases}
 
-The official AdGuard Home packaged releases are listed in the table below:
+Les versions packagées officielles d'AdGuard Home sont listées dans la table ci-dessous :
 
 <!--
 For the link IDs in the table below, use the following abbreviations:
@@ -42,20 +42,20 @@ For the link IDs in the table below, use the following abbreviations:
 TODO(a.garipov): Consider generating the table automatically.
 -->
 
-|      CPU Architecture |                 Darwin / macOS                 |                     FreeBSD                    |                      Linux                     |                     OpenBSD                    |                     Windows                    |
-| --------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-|             **AMD64** | [Release][rad]<br/>[Beta][bad]<br/>[Edge][ead] | [Release][raf]<br/>[Beta][baf]<br/>[Edge][eaf] | [Release][ral]<br/>[Beta][bal]<br/>[Edge][eal] | [Release][rao]<br/>[Beta][bao]<br/>[Edge][eao] | [Release][raw]<br/>[Beta][baw]<br/>[Edge][eaw] |
-|               **x86** |                                                | [Release][rxf]<br/>[Beta][bxf]<br/>[Edge][exf] | [Release][rxl]<br/>[Beta][bxl]<br/>[Edge][exl] |                                                | [Release][rxw]<br/>[Beta][bxw]<br/>[Edge][exw] |
-|        **64-bit ARM** | [Release][rrd]<br/>[Beta][brd]<br/>[Edge][erd] | [Release][rrf]<br/>[Beta][brf]<br/>[Edge][erf] | [Release][rrl]<br/>[Beta][brl]<br/>[Edge][erl] | [Release][rro]<br/>[Beta][bro]<br/>[Edge][ero] | [Release][rrw]<br/>[Beta][brw]<br/>[Edge][erw] |
-|             **ARMv5** |                                                | [Release][r5f]<br/>[Beta][b5f]<br/>[Edge][e5f] | [Release][r5l]<br/>[Beta][b5l]<br/>[Edge][e5l] |                                                |                                                |
-|             **ARMv6** |                                                | [Release][r6f]<br/>[Beta][b6f]<br/>[Edge][e6f] | [Release][r6l]<br/>[Beta][b6l]<br/>[Edge][e6l] |                                                |                                                |
-|             **ARMv7** |                                                | [Release][r7f]<br/>[Beta][b7f]<br/>[Edge][e7f] | [Release][r7l]<br/>[Beta][b7l]<br/>[Edge][e7l] |                                                |                                                |
-|       **64-bit MIPS** |                                                |                                                | [Release][rml]<br/>[Beta][bml]<br/>[Edge][eml] |                                                |                                                |
-|    **64-bit MIPS LE** |                                                |                                                | [Release][rll]<br/>[Beta][bll]<br/>[Edge][ell] |                                                |                                                |
-|       **32-bit MIPS** |                                                |                                                | [Release][ril]<br/>[Beta][bil]<br/>[Edge][eil] |                                                |                                                |
-|    **32-bit MIPS LE** |                                                |                                                | [Release][rel]<br/>[Beta][bel]<br/>[Edge][eel] |                                                |                                                |
-| **64-bit PowerPC LE** |                                                |                                                | [Release][rpl]<br/>[Beta][bpl]<br/>[Edge][epl] |                                                |                                                |
-|     **64-bit RISC-V** |                                                |                                                | [Release][rvl]<br/>[Beta][bvl]<br/>[Edge][evl] |                                                |                                                |
+|        Achitecture CPU |                 Darwin / macOS                 |                     FreeBSD                    |                      Linux                     |                     OpenBSD                    |                     Windows                    |
+| ---------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+|              **AMD64** | [Version][rad]<br/>[Beta][bad]<br/>[Edge][ead] | [Version][raf]<br/>[Beta][baf]<br/>[Edge][eaf] | [Version][ral]<br/>[Beta][bal]<br/>[Edge][eal] | [Version][rao]<br/>[Beta][bao]<br/>[Edge][eao] | [Version][raw]<br/>[Beta][baw]<br/>[Edge][eaw] |
+|                **x86** |                                                | [Version][rxf]<br/>[Beta][bxf]<br/>[Edge][exf] | [Version][rxl]<br/>[Beta][bxl]<br/>[Edge][exl] |                                                | [Version][rxw]<br/>[Beta][bxw]<br/>[Edge][exw] |
+|        **ARM 64 bits** | [Version][rrd]<br/>[Beta][brd]<br/>[Edge][erd] | [Version][rrf]<br/>[Beta][brf]<br/>[Edge][erf] | [Version][rrl]<br/>[Beta][brl]<br/>[Edge][erl] | [Version][rro]<br/>[Beta][bro]<br/>[Edge][ero] | [Version][rrw]<br/>[Beta][brw]<br/>[Edge][erw] |
+|              **ARMv5** |                                                | [Version][r5f]<br/>[Beta][b5f]<br/>[Edge][e5f] | [Version][r5l]<br/>[Beta][b5l]<br/>[Edge][e5l] |                                                |                                                |
+|              **ARMv6** |                                                | [Version][r6f]<br/>[Beta][b6f]<br/>[Edge][e6f] | [Version][r6l]<br/>[Beta][b6l]<br/>[Edge][e6l] |                                                |                                                |
+|              **ARMv7** |                                                | [Version][r7f]<br/>[Beta][b7f]<br/>[Edge][e7f] | [Version][r7l]<br/>[Beta][b7l]<br/>[Edge][e7l] |                                                |                                                |
+|       **MIPS 64 bits** |                                                |                                                | [Version][rml]<br/>[Beta][bml]<br/>[Edge][eml] |                                                |                                                |
+|    **MIPS LE 64 bits** |                                                |                                                | [Version][rll]<br/>[Beta][bll]<br/>[Edge][ell] |                                                |                                                |
+|       **MIPS 32 bits** |                                                |                                                | [Version][ril]<br/>[Beta][bil]<br/>[Edge][eil] |                                                |                                                |
+|    **MIPS LE 32 bits** |                                                |                                                | [Version][rel]<br/>[Beta][bel]<br/>[Edge][eel] |                                                |                                                |
+| **PowerPC LE 64 bits** |                                                |                                                | [Version][rpl]<br/>[Beta][bpl]<br/>[Edge][epl] |                                                |                                                |
+|     **RISC-V 64 bits** |                                                |                                                | [Version][rvl]<br/>[Beta][bvl]<br/>[Edge][evl] |                                                |                                                |
 
 [r5f]: https://static.adguard.com/adguardhome/release/AdGuardHome_freebsd_armv5.tar.gz
 [r5l]: https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv5.tar.gz
@@ -135,24 +135,24 @@ TODO(a.garipov): Consider generating the table automatically.
 
 ## Docker {#docker}
 
-The [official AdGuard Home Docker image][docker] is available for the following CPU architectures:
+L'[image Docker officielle AdGuard Home][docker] est disponible pour les architectures CPU suivantes :
 
-- 64-bit AMD;
-- x86;
-- 64-bit ARM;
-- ARMv6;
-- ARMv7;
-- 64-bit PowerPC.
+- AMD 64 bits ;
+- x86 ;
+- ARM 64 bits ;
+- ARMv6 ;
+- ARMv7 ;
+- PowerPC 64 bits.
 
 [docker]: https://hub.docker.com/r/adguard/adguardhome
 
-## Snap {#snap}
+## Sanp {#snap}
 
-The [official AdGuard Home Snap package][snap] is available for the following CPU architectures:
+Le [paquet Snap officiel AdGuard Home][snap] est disponible pour les architectures CPU suivantes :
 
-- 64-bit AMD;
-- x86;
-- 64-bit ARM;
+- AMD 64 bits ;
+- x86 ;
+- ARM 64 bits ;
 - ARMv7.
 
 [snap]: https://snapcraft.io/adguard-home

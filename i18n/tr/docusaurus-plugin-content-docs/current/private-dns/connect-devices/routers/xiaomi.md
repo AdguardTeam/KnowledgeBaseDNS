@@ -11,7 +11,7 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Yönlendirici yönetici panelini açın. `192.168.31.1` adresinden veya yönlendiricinizin IP adresinden erişilebilir.
+1. Open the router admin panel. `192.168.31.1` adresinden veya yönlendiricinizin IP adresinden erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. Yönlendirici modelinize bağlı olarak _Gelişmiş Ayarlar_ veya _Gelişmiş_ öğesini açın.
 4. _Ağ_ veya _İnternet_ öğesini açın ve DNS veya DNS Ayarları öğesini arayın.
@@ -21,5 +21,5 @@ Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or 
 6. Ayarları kaydedin.
 7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

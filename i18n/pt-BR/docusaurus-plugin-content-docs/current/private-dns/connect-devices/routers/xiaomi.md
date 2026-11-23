@@ -11,11 +11,11 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.31.1` ou no endereço de IP do seu roteador.
+1. Open the router admin panel. Pode ser acessado em `192.168.31.1` ou no endereço de IP do seu roteador.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
 3. Abra Configurações avançadas ou Avançado, dependendo do modelo do seu roteador.
 4. Abra _Rede_ ou _Internet_ e procure DNS ou Configurações de DNS.
-5. Escolha _Manual DNS_. Selecione _Usar estes servidores DNS_ ou _Especificar servidor DNS manualmente_ e insira os seguintes endereços de servidor DNS:
+5. Escolha _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 6. Salve as configurações.

@@ -88,5 +88,5 @@ More details can be found in [different article](/dns-client/overview/).
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. İki seçeneğiniz var: bağlı IP'ler veya özel IP'ler.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

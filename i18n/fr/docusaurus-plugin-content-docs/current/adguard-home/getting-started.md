@@ -41,7 +41,7 @@ Certaines autres options non officielles incluent :
 
 - [Application Cloudron][cloudron] maintenue par [@gramakri](https://github.com/gramakri).
 
-- [ZimaOS app][zimaos], maintained by [ZimaOS Team](https://github.com/IceWhaleTech).
+- [Application ZimaOS][zimaos], maintenue par [Équipe ZimaOS](https://github.com/IceWhaleTech).
 
 [aghaur]: https://aur.archlinux.org/packages/adguardhome/
 [arch]: https://www.archlinux.org/

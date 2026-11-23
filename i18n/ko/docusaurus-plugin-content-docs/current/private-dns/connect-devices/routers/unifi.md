@@ -45,7 +45,7 @@ Turn on DNS-over-HTTPS in UniFi.
 
 ## 라우터 관리 패널 사용
 
-Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration.
+Use these instructions if your UniFi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Ubiquiti UniFi 컨트롤러에 로그인합니다.
 2. **설정** → **네트워크**로 이동합니다.

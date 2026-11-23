@@ -7,7 +7,7 @@ Los routers Keenetic son conocidos por su estabilidad y configuraciones flexible
 
 ## Configurar DNS-over-HTTPS
 
-1. Abre el panel de administración del router. Se puede acceder en my.keenetic.net, la dirección IP de tu router, o `192.168.1.1`.
+1. Open the router admin panel. Se puede acceder en my.keenetic.net, la dirección IP de tu router, o `192.168.1.1`.
 2. Pulsa el botón de menú en la parte inferior de la pantalla y selecciona _Gestión_.
 3. Abre _Configuración del sistema_.
 4. Pulsa en _Opciones de componentes_ → _Opciones de componentes del sistema_.
@@ -19,7 +19,7 @@ Los routers Keenetic son conocidos por su estabilidad y configuraciones flexible
 
 ## Configura DNS-over-TLS
 
-1. Abre el panel de administración del router. Se puede acceder en my.keenetic.net, la dirección IP de tu router, o `192.168.1.1`.
+1. Open the router admin panel. Se puede acceder en my.keenetic.net, la dirección IP de tu router, o `192.168.1.1`.
 2. Pulsa el botón de menú en la parte inferior de la pantalla y selecciona _Gestión_.
 3. Abre _Configuración del sistema_.
 4. Pulsa en _Opciones de componentes_ → _Opciones de componentes del sistema_.
@@ -33,12 +33,12 @@ Los routers Keenetic son conocidos por su estabilidad y configuraciones flexible
 
 Usa estas instrucciones si tu router Keenetic no admite la configuración de DNS-over-HTTPS o DNS-over-TLS:
 
-1. Abre el panel de administración del router. Se puede acceder en `192.168.1.1` o `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Introduce el nombre de usuario del administrador (generalmente, es admin) y la contraseña del router.
 3. Abre _Internet_ o _Red doméstica_.
-4. Selecciona _WAN_ o _Internet_.
+4. Select _WAN_ or _Internet_.
 5. Selecciona _DNS_ o _Configuración de DNS_.
-6. Elige _DNS manual_. Selecciona _Usar estos servidores DNS_ o _Especificar servidor DNS manualmente_ e introduce las siguientes direcciones de servidor DNS:
+6. Elige _DNS manual_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` y `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
 7. Guarda la configuración.

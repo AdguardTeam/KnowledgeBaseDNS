@@ -9,7 +9,7 @@ These are general instructions for configuring Private AdGuard DNS for Asus rout
 
 The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
 2. Enter the administrator username (usually, it’s admin) and router password.
@@ -27,6 +27,8 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 
 ## Use your router admin panel
 
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
 1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Enter the administrator username (usually, it’s admin) and router password.
 3. Open _Advanced Settings_ or _Advanced_.
@@ -37,5 +39,5 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Save the settings.
 8. Link your IP (or your dedicated IP if you have a Team subscription).
-   - [Toegewezen IP's](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Gekoppelde IP's](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

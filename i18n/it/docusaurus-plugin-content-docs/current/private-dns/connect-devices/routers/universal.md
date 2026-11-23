@@ -28,5 +28,5 @@ Ecco alcune istruzioni generali per impostare AdGuard DNS privato sui router. Pu
 
 5. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

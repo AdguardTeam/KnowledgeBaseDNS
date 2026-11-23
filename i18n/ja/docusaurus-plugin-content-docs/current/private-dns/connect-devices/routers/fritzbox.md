@@ -7,7 +7,7 @@ FRITZ!Boxは、2.4GHzと5GHzの周波数帯域を同時に使用することで�
 
 ## DNS-over-TLS を構成して接続する
 
-1. ルーターの管理画面を開きます。（管理画面は、fritz.box、ルーターの IPアドレス、または `192.168.178.1` でアクセスできます。）
+1. Open the router admin panel. （管理画面は、fritz.box、ルーターの IPアドレス、または `192.168.178.1` でアクセスできます。）
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
 4. 「_DNS_」または「_DNS設定_」を選択します。
@@ -19,7 +19,7 @@ FRITZ!Boxは、2.4GHzと5GHzの周波数帯域を同時に使用することで�
 
 FritzBoxルーターがDNS-over-TLS設定をサポートしていない場合は、以下のガイドをご利用ください:
 
-1. ルーターの管理画面を開きます。（管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. 「_インターネット_」または「_ホームネットワーク_」を開きます。
 4. 「_DNS_」または「_DNS設定_」を選択します。
@@ -29,5 +29,5 @@ FritzBoxルーターがDNS-over-TLS設定をサポートしていない場合は
 6. 設定を保存します。
 7. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

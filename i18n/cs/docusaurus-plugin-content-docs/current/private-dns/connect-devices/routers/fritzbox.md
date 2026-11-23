@@ -7,7 +7,7 @@ FRITZ!Box poskytuje maximální flexibilitu pro všechna zařízení díky souč
 
 ## Konfigurace DNS-over-TLS
 
-1. Otevřete panel správce routeru. Přístup k němu je možný skrze adresu fritz.box, IP adresu vašeho routeru nebo `192.168.178.1`.
+1. Open the router admin panel. Přístup k němu je možný skrze adresu fritz.box, IP adresu vašeho routeru nebo `192.168.178.1`.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
 3. Otevřete _Internet_ nebo _Domácí síť_.
 4. Vyberte _DNS_ nebo _Nastavení DNS_.
@@ -19,7 +19,7 @@ FRITZ!Box poskytuje maximální flexibilitu pro všechna zařízení díky souč
 
 Pokud váš router Fritz!Box nepodporuje konfiguraci DNS-over-TLS, použijte tento návod:
 
-1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
 3. Otevřete _Internet_ nebo _Domácí síť_.
 4. Vyberte _DNS_ nebo _Nastavení DNS_.
@@ -29,5 +29,5 @@ Pokud váš router Fritz!Box nepodporuje konfiguraci DNS-over-TLS, použijte ten
 6. Uložte nastavení.
 7. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

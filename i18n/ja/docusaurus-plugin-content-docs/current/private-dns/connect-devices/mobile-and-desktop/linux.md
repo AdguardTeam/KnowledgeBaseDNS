@@ -50,8 +50,8 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
    - `2a10:50c0:0:0:0:0:dad:ff`
 10. Click _Apply_.
 11. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Configure manually on Debian (linked IP or dedicated IP required)
 
@@ -69,8 +69,8 @@ You can set up Private AdGuard DNS using the AdGuard VPN CLI (command-line inter
 10. Press _Enter_.
 11. Close the Terminal.
 12. Link your IP address (or your dedicated IP if you have a Team subscription):
-    - [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-    - [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+    - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+    - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
 
 ## Use dnsmasq
 
@@ -136,5 +136,5 @@ The `dig` command is merely an example, you can use any DNS software with an abi
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. You have two choices: using linked IPs or dedicated IPs:
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

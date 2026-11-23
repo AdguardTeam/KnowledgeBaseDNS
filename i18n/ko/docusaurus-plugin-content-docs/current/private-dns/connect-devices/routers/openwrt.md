@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRT 라우터는 사용자 기본 설정에 따라 라우터와 게이트웨이를 구성할 수 있는 유연성을 제공하는 오픈 소스 Linux 기반 운영 체제를 사용합니다. 개발자들은 암호화된 DNS 서버에 대한 지원을 추가하여 기기에서 사설 AdGuard DNS를 구성할 수 있도록 했습니다.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. 개발자들은 암호화된 DNS 서버에 대한 지원을 추가하여 기기에서 사설 AdGuard DNS를 구성할 수 있도록 했습니다.
 
 :::note
 

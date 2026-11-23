@@ -9,7 +9,7 @@ Toto jsou obecné pokyny pro konfiguraci Soukromého AdGuard DNS pro routery Asu
 
 Informace o konfiguraci v těchto pokynech jsou převzaty z konkrétního modelu routeru, takže se mohou lišit od rozhraní jednotlivých zařízení.
 
-V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https://www.asuswrt-merlin.net/download) vhodný pro vaši verzi routeru.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Přihlaste se do panelu správce routeru Asus. Můžete k němu přistupovat skrze [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), nebo [http://192.168.2.1](http://192.168.2.1/).
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
@@ -27,15 +27,17 @@ V případě potřeby: Nainstalujte do počítače firmware [ASUS Merlin](https:
 
 ## Použijte panel správce routeru
 
-1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
-3. Otevřete _Pokročilá nastavení_ nebo _Pokročilé_.
-4. Vyberte _WAN_ nebo _Internet_.
-5. Otevřete _Nastavení DNS_ nebo _DNS_.
-6. Vyberte _Ruční nastavení_. Vyberte _Použít tyto DNS servery_ nebo _Zadat DNS server ručně_ a zadejte následující adresy DNS serverů:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` a `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` a `2a10:50c0:0:0:0:0:dad:ff`
 7. Uložte nastavení.
 8. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
-   - [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

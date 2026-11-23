@@ -88,5 +88,5 @@ More details can be found in [different article](/dns-client/overview/).
 
 If you prefer not to use extra software for DNS configuration, you can opt for unencrypted DNS. リンクされた IP または 専用 IP を使用するという次の2つの選択肢があります:
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

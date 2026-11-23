@@ -9,7 +9,7 @@ sidebar_position: 3
 
 指示说明中的配置信息用特定路由器型号作为例子，因此可能与某些设备的界面有所不同。
 
-如有必要：要在 ASUS 上配置 TLS 加密协议的 DNS（DNS-over-TLS），请在计算机上安装适合您路由器版本的 [ASUS Merlin 固件](https://www.asuswrt-merlin.net/download)。
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. 登录 Asus 路由器管理面板。可以通过 [http://router.asus.com](http://router.asus.com/)、 [http://192.168.1.1](http://192.168.1.1/)、 [http://192.168.0.1](http://192.168.0.1/)、或 [http://192.168.2.1](http://192.168.2.1/) 访问。
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
@@ -27,12 +27,14 @@ sidebar_position: 3
 
 ## 使用路由器管理面板
 
-1. 打开路由器管理面板。可以通过 `192.168.1.1` 或 `192.168.0.1` 访问。
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 输入管理员用户名（通常是「admin」）和路由器密码。
-3. 打开「_高级设置_」或「_高级_」。
-4. 选择「_WAN_」或「_互联网_」。
-5. 打开「_DNS 设置_」或「_DNS_」。
-6. Choose _Manual Setting_. 选择「_使用指定 DNS 服务器_」或「_手动指定 DNS 服务器_」，然后输入以下 DNS 服务器地址：
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4 地址：`94.140.14.49` 和 `94.140.14.59`
    - IPv6 地址：`2a10:50c0:0:0:0:0:ded:ff` 和 `2a10:50c0:0:0:0:0:dad:ff`
 7. 请保存设置。

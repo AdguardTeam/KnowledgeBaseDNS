@@ -1,13 +1,13 @@
 ---
-title: OPNSense
+title: OPNsense
 sidebar_position: 8
 ---
 
-Firmware OPNSense se často používá ke konfiguraci bezdrátových přístupových bodů, serverů DHCP a serverů DNS a umožňuje konfigurovat AdGuard DNS přímo v zařízení.
+OPNsense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
 
 ## Použijte panel správce routeru
 
-Pokud váš router Keenetic nepodporuje konfiguraci DNS-over-HTTPS nebo DNS-over-TLS, použijte tyto pokyny:
+Use these instructions if your OPNsense router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.

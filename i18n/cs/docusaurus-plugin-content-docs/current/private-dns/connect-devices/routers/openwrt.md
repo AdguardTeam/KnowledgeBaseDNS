@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-Routery OpenWRT používají open source operační systém založený na Linuxu, který umožňuje flexibilní konfiguraci routerů a bran podle preferencí uživatele. Vývojáři se postarali o přidání podpory pro šifrované servery DNS a umožnili vám nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Vývojáři se postarali o přidání podpory pro šifrované servery DNS a umožnili vám nakonfigurovat Soukromý AdGuard DNS ve vašem zařízení.
 
 :::note
 
@@ -124,7 +124,7 @@ Přejděte do části _LuCI_ → _Služby_ → _Rekurzivní DNS_ a nakonfigurujt
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Otevřete panel správce routeru. Lze k němu přistupovat skrze adresy `192.168.1.1` nebo `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Zadejte uživatelské jméno správce (obvykle je to admin) a heslo routeru.
 3. Otevřete _Síť_ → _Rozhraní_.
 4. Vyberte svou Wi-Fi nebo kabelové připojení.
@@ -136,5 +136,5 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 8. Uložte nastavení.
 9. Propojte svou IP adresu (nebo vyhrazenou IP adresu, pokud máte předplatné Team).
 
-- [Vyhrazené IP adresy](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Propojené IP adresy](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

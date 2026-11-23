@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRT yönlendiriciler, yönlendiricileri ve ağ geçitlerini kullanıcı tercihlerine göre yapılandırma esnekliği sağlayan açık kaynaklı, Linux tabanlı bir işletim sistemi kullanır. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Geliştiriciler, cihazınızda Özel AdGuard DNS'i yapılandırmanıza olanak tanıyan şifrelenmiş DNS sunucularına yönelik desteği eklemeye özen gösterdiler.
 
 :::note
 
@@ -137,4 +137,4 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 9. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
 - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -1,13 +1,13 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRT-routere bruger et open-source, Linux-baseret operativsystem, der giver fleksibilitet til opsætning af routere og gateways jf. brugerpræferencer. Udviklerne tog sig af at tilføje understøttelse for krypterede DNS-servere, hvilket muliggør at opsætte Private AdGuard DNS på brugerens enhed.
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. Udviklerne tog sig af at tilføje understøttelse for krypterede DNS-servere, hvilket muliggør at opsætte Private AdGuard DNS på brugerens enhed.
 
 :::note
 
-OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and earlier use `opkg`. To check your OpenWrt version, run `cat /etc/openwrt_release`.
+OpenWrt 25.12 og senere bruger `apk`-pakkehåndteringen, mens OpenWrt 24.10 og tidligere bruger `opkg`. For at tjekke aktuel OpenWrt-version, kør `cat /etc/openwrt_release`.
 
 :::
 
@@ -15,14 +15,14 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 - **Kommandolinjevejledning**. Installér de nødvendige pakker. DNS-kryptering bør aktiveres automatisk.
 
-  For OpenWrt 25.12 and later:
+  For OpenWrt 25.12 og senere:
 
   ```text
   apk update
   apk add https-dns-proxy
   ```
 
-  For OpenWrt 24.10 and earlier:
+  For OpenWrt 24.10 og tidligere:
 
   ```text
   opkg update
@@ -31,7 +31,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
 
 - **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
 
-  For OpenWrt 25.12 and later:
+  For OpenWrt 25.12 og senere:
 
   ```text
   apk update
@@ -39,7 +39,7 @@ OpenWrt 25.12 and later use the `apk` package manager, while OpenWrt 24.10 and e
   /etc/init.d/rpcd restart
   ```
 
-  For OpenWrt 24.10 and earlier:
+  For OpenWrt 24.10 og tidligere:
 
   ```text
   opkg update
@@ -66,14 +66,14 @@ Gå til _LuCI_ → _Tjenester_ → _HTTPS DNS-proxy_ for at opsætte https-dns-p
 
 - **Kommandolinjevejledning**. [Deaktivér](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dns_role) Dnsmasq DNS-rollen eller fjern den helt og evt. [erstatte](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#replacing_dnsmasq_with_odhcpd_and_unbound) dens DHCP-rolle med odhcpd.
 
-  For OpenWrt 25.12 and later:
+  For OpenWrt 25.12 og senere:
 
   ```text
   apk update
   apk add unbound-daemon ca-certificates
   ```
 
-  For OpenWrt 24.10 and earlier:
+  For OpenWrt 24.10 og tidligere:
 
   ```text
   opkg update
@@ -84,7 +84,7 @@ LAN-klienter og det lokale system bør bruge Unbound som en primær opløser, fo
 
 - **Webgrænseflade**. Ønskes indstillingerne håndteret via webgrænsefladen, skal de nødvendige pakker installeres.
 
-  For OpenWrt 25.12 and later:
+  For OpenWrt 25.12 og senere:
 
   ```text
   apk update
@@ -92,7 +92,7 @@ LAN-klienter og det lokale system bør bruge Unbound som en primær opløser, fo
   /etc/init.d/rpcd restart
   ```
 
-  For OpenWrt 24.10 and earlier:
+  For OpenWrt 24.10 og tidligere:
 
   ```text
   opkg update
@@ -122,9 +122,9 @@ Gå til _LuCI_ → _Tjenester_ → _Rekursiv DNS_ for at opsætte Unbound.
 
 ## Brug routerens håndteringspanel
 
-Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
+Brug denne vejledning, hvis OpenWrt-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS:
 
-1. Åbn routerens admin-panel. Den kan tilgås på `192.168.1.1` eller `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
 3. Åbn _Netværk_ → _Grænseflader_.
 4. Vælg relevant Wi-Fi netværk eller kabelforbindelse.
@@ -136,5 +136,5 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 8. Gem indstillingerne.
 9. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)

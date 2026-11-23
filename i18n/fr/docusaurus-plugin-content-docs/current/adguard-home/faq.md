@@ -217,15 +217,15 @@ Pour résoudre cela, vous devez soit désactiver le démon `systemd-resolved`, s
 
 Tout d'abord, AdGuard Home peut détecter de telles configurations et désactiver `systemd-resolved` pour vous si vous appuyez sur le bouton _Réparer_ situé à côté du message `address already in use` sur l'écran d'installation.
 
-Secondly, if that doesn’t work, follow the instructions below. Note that if you’re using AdGuard Home with docker or snap, you’ll have to do this yourself.
+Deuxièmement, si cela ne fonctionne pas, suivez les instructions ci-dessous. Notez que si vous utilisez AdGuard Home avec docker ou snap, vous devrez le faire vous-même.
 
-1. Create the `/etc/systemd/resolved.conf.d` directory, if necessary:
+1. Créez le répertoire `/etc/systemd/resolved.conf.d`, si nécessaire :
 
    ```sh
    sudo mkdir -p /etc/systemd/resolved.conf.d
    ```
 
-2. Deactivate `DNSStubListener` and update DNS server address. To do that, create a new file, `/etc/systemd/resolved.conf.d/adguardhome.conf`, with the following content:
+2. Désactivez `DNSStubListener` et mettez à jour l'adresse du serveur DNS. Pour ce faire, créez un nouveau fichier, `/etc/systemd/resolved.conf.d/adguardhome.conf`, avec le contenu suivant :
 
    ```service
    [Resolve]
@@ -233,26 +233,26 @@ Secondly, if that doesn’t work, follow the instructions below. Note that if yo
    DNSStubListener=no
    ```
 
-Specifying `127.0.0.1` as the DNS server address is **necessary.** Otherwise the nameserver will be `127.0.0.53` which won’t work without `DNSStubListener`.
+Spécifier `127.0.0.1` comme adresse du serveur DNS est **nécessaire.** Sinon, le serveur de noms sera `127.0.0.53` qui ne fonctionnera pas sans `DNSStubListener`.
 
-1. Activate another `resolv.conf` file:
+1. Activez un autre fichier `resolv.conf` :
 
    ```sh
    sudo mv /etc/resolv.conf /etc/resolv.conf.backup
    sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
    ```
 
-2. Restart `DNSStubListener`:
+2. Redémarrez `DNSStubListener` :
 
    ```sh
    sudo systemctl reload-or-restart systemd-resolved
    ```
 
-After that, `systemd-resolved` shouldn’t be shown in the output of `lsof`, and AdGuard Home should be able to bind to `127.0.0.1:53`.
+Après cela, `systemd-resolved` ne devrait pas apparaître dans la sortie de `lsof`, et AdGuard Home devrait pouvoir se lier à `127.0.0.1:53`.
 
-## How do I configure a reverse proxy server for AdGuard Home? {#reverseproxy}
+## Comment configurer un serveur proxy inverse pour AdGuard Home ? {#reverseproxy}
 
-If you’re already running a web server and want to access the AdGuard Home dashboard UI from a URL like `http://YOUR_SERVER/aghome/`, you can use this configuration for your web server:
+Si vous exécutez déjà un serveur Web et que vous souhaitez accéder à l'interface du tableau de bord AdGuard Home à partir d'une URL comme `http://YOUR_SERVER/aghome/`, vous pouvez utiliser cette configuration pour votre serveur Web :
 
 ### nginx
 
@@ -298,34 +298,34 @@ DOMAIN {
 
 :::note
 
-N’utilisez pas de sous-répertoires avec le proxy HTTP inverse Apache.  C'est un problème connu ([#6604]) : Apache gère les redirections relatives différemment des autres serveurs web. This causes problems with the AdGuard Home web interface.
+N’utilisez pas de sous-répertoires avec le proxy HTTP inverse Apache.  C'est un problème connu ([#6604]) : Apache gère les redirections relatives différemment des autres serveurs web. Cela entraîne des problèmes avec l'interface Web d'AdGuard Home.
 
 [#6604]: https://github.com/AdguardTeam/AdGuardHome/issues/6604
 
 :::
 
-### Disable DoH encryption on AdGuard Home
+### Désactiver le chiffrement DoH sur AdGuard Home
 
-If you’re using TLS on your reverse proxy server, you don’t need to use TLS on AdGuard Home. Set `allow_unencrypted_doh: true` in `AdGuardHome.yaml` to allow AdGuard Home to respond to DoH requests without TLS encryption.
+Si vous utilisez TLS sur votre serveur proxy inverse, vous n'avez pas besoin d'utiliser TLS sur AdGuard Home. Définissez `allow_unencrypted_doh: true` dans `AdGuardHome.yaml` pour permettre à AdGuard Home de répondre aux demandes DoH sans chiffrement TLS.
 
-### Real IP addresses of clients
+### Adresses IP réelles des clients
 
-You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP proxy to make AdGuard Home consider the headers containing the real client IP address. See the [configuration][conf] and [encryption][encr] pages for more information.
+Vous pouvez définir le paramètre `trusted_proxies` sur l'adresse IP de votre proxy HTTP pour que AdGuard Home prenne en compte les en-têtes contenant la vraie adresse IP du client. Consultez les pages [configuration][conf] et [chiffrement][encr] pour plus d'informations.
 
-[encr]: /adguard-home/encryption#reverse-proxy
-[conf]: /adguard-home/configuration
+[encr]: https://github.com/AdguardTeam/AdGuardHome/wiki/Encryption#reverse-proxy
+[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
-## How do I fix `permission denied` errors on Fedora? {#fedora}
+## Comment corriger les erreurs `permission denied` sur Fedora ? {#fedora}
 
-1. Move the `AdGuardHome` binary to `/usr/local/bin`.
+1. Déplacez le binaire `AdGuardHome` vers `/usr/local/bin`.
 
-2. As `root`, execute the following command to change the security context of the file:
+2. En tant que `root`, exécutez la commande suivante pour changer le contexte de sécurité du fichier :
 
    ```sh
    chcon -t bin_t /usr/local/bin/AdGuardHome
    ```
 
-3. Add the required firewall rules in order to make it reachable through the network. Par exemple :
+3. Ajoutez les règles de pare-feu requises pour le rendre accessible sur le réseau. Par exemple :
 
    ```sh
    firewall-cmd --new-zone=adguard --permanent
@@ -336,7 +336,7 @@ You can set the parameter `trusted_proxies` to the IP address(es) of your HTTP p
    firewall-cmd --reload
    ```
 
-If you are still getting `code=exited status=203/EXEC` or similar errors from `systemctl`, try uninstalling AdGuard Home and installing it **directly** into `/usr/local/bin` by using the `-o` option of the install script:
+Si vous continuez à obtenir `code=exited status=203/EXEC` ou des erreurs similaires de `systemctl`, essayez de désinstaller AdGuard Home et de l'installer **directement** dans `/usr/local/bin` en utilisant l'option `-o` du script d'installation :
 
 ```sh
 curl -s -S -L 'https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh' | sh -s -- -o '/usr/local/bin' -v
@@ -347,15 +347,15 @@ Voir \[problème 765] et \[problème 3281].
 [issue 3281]: https://github.com/AdguardTeam/AdGuardHome/issues/3281
 [issue 765]: https://github.com/AdguardTeam/AdGuardHome/issues/765#issuecomment-752262353
 
-## How do I fix `incompatible file system` errors? {#incompatfs}
+## Comment corriger les erreurs `incompatible file system` ? {#incompatfs}
 
-You should move your AdGuard Home installation or working directory to another location. See the [limitations section](getting-started.md#limitations) on the _Getting Started_ page.
+Vous devez déplacer votre installation ou votre répertoire de travail AdGuard Home à un autre endroit. Consultez la [section limitations](getting-started.md#limitations) sur la page _Premiers pas_.
 
-## What does `Error: control/version.json` mean? {#version-error}
+## Que signifie `Error: control/version.json` ? {#version-error}
 
-This error message means that AdGuard Home was unable to reach AdGuard servers to check for updates and/or download them. This could mean that the servers are blocked by your ISP or are temporarily down. If the error does not resolve itself after some time, you can try performing a [manual update](#manual-update) or disabling the automatic update check by running the `AdGuardHome` executable with the `--no-check-update` command-line option.
+Ce message d'erreur signifie qu'AdGuard Home n'a pas pu atteindre les serveurs AdGuard pour vérifier les mises à jour et/ou les télécharger. Cela pourrait signifier que les serveurs sont bloqués par votre FAI ou qu'ils sont temporairement hors service. Si l'erreur ne se résout pas d'elle-même après un certain temps, vous pouvez essayer d'effectuer une [mise à jour manuelle](#manual-update) ou de désactiver la vérification de mise à jour automatique en exécutant l'exécutable `AdGuardHome` avec l'option de ligne de commande `--no-check-update`.
 
-## How do I update AdGuard Home manually? {#manual-update}
+## Comment mettre à jour AdGuard Home manuellement ? {#manual-update}
 
 If the button isn’t displayed or an automatic update has failed, you can update manually. In the examples below, we’ll use AdGuard Home versions for Linux and Windows for AMD64 CPUs.
 
@@ -370,7 +370,7 @@ results, choose the matching package from the [supported platforms page](/adguar
 
 :::
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line, type:
+1. Téléchargez le nouveau paquet AdGuard Home depuis la [page des publications][releases]. If you want to perform this step from the command line, type:
 
    ```sh
    curl -L -S -o '/tmp/AdGuardHome_linux_amd64.tar.gz' -s\
@@ -398,14 +398,14 @@ results, choose the matching package from the [supported platforms page](/adguar
 
    :::
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `~/my-agh-backup`:
+4. Sauvegardez vos données. C'est-à-dire, votre fichier de configuration et le répertoire de données (`AdGuardHome.yaml` et `data/` par défaut). For example, to backup your data to a new directory called `~/my-agh-backup`:
 
    ```sh
    mkdir -p ~/my-agh-backup
    cp -r ./AdGuardHome.yaml ./data ~/my-agh-backup/
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `/tmp/` directory:
+5. Extrayez l'archive AdGuard Home dans un répertoire temporaire. For example, if you downloaded the archive to your `/tmp/` directory:
 
    ```sh
    tar -C /tmp/ -f /tmp/AdGuardHome_linux_amd64.tar.gz -x -v -z
@@ -429,9 +429,9 @@ results, choose the matching package from the [supported platforms page](/adguar
    sudo cp /tmp/AdGuardHome/AdGuardHome /Applications/AdGuardHome/AdGuardHome
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Vous voudrez également copier les parties de documentation du paquet, telles que le journal des modifications (`CHANGELOG.md`), le fichier README (`README.md`) et la licence (`LICENSE.txt`).
 
-   You can now remove the temporary directory.
+   Vous pouvez maintenant supprimer le répertoire temporaire.
 
 7. Redémarrez AdGuard Home :
 
@@ -441,11 +441,11 @@ results, choose the matching package from the [supported platforms page](/adguar
 
 [releases]: https://github.com/AdguardTeam/AdGuardHome/releases/latest
 
-### Windows (Using PowerShell) {#manual-update-win}
+### Windows (Utilisation de PowerShell) {#manual-update-win}
 
-In all examples below, the PowerShell must be run as Administrator.
+Dans tous les exemples ci-dessous, le PowerShell doit être exécuté en tant qu'administrateur.
 
-1. Download the new AdGuard Home package from the [releases page][releases]. If you want to perform this step from the command line:
+1. Téléchargez le nouveau paquet AdGuard Home depuis la [page des publications][releases]. Si vous souhaitez effectuer cette étape depuis la ligne de commande :
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -453,7 +453,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Invoke-WebRequest -OutFile "$outFile" -Uri "$aghUri"
    ```
 
-2. Navigate to the directory where AdGuard Home was installed. In the examples below, we’ll use `C:\Program Files\AdGuardHome`.
+2. Accédez au répertoire où AdGuard Home a été installé. Dans les exemples ci-dessous, nous utiliserons `C:\Program Files\AdGuardHome`.
 
 3. Arrêtez AdGuard Home :
 
@@ -461,7 +461,7 @@ In all examples below, the PowerShell must be run as Administrator.
    .\AdGuardHome.exe -s stop
    ```
 
-4. Backup your data. That is, your configuration file and the data directory (`AdGuardHome.yaml` and `data/` by default). For example, to backup your data to a new directory called `my-agh-backup`:
+4. Sauvegardez vos données. C'est-à-dire, votre fichier de configuration et le répertoire de données (`AdGuardHome.yaml` et `data/` par défaut). Par exemple, pour sauvegarder vos données dans un nouveau répertoire appelé `my-agh-backup` :
 
    ```ps1
    $newDir = Join-Path -Path $Env:USERPROFILE -ChildPath 'my-agh-backup'
@@ -469,7 +469,7 @@ In all examples below, the PowerShell must be run as Administrator.
    Copy-Item -Path .\AdGuardHome.yaml, .\data -Destination $newDir -Recurse
    ```
 
-5. Extract the AdGuard Home archive to a temporary directory. For example, if you downloaded the archive to your `Downloads` directory and want to extract it to a temporary directory:
+5. Extrayez l'archive AdGuard Home dans un répertoire temporaire. Par exemple, si vous avez téléchargé l'archive dans votre répertoire `Downloads` et que vous souhaitez l'extraire dans un répertoire temporaire :
 
    ```ps1
    $outFile = Join-Path -Path $Env:USERPROFILE -ChildPath 'Downloads\AdGuardHome_windows_amd64.zip'
@@ -483,9 +483,9 @@ In all examples below, the PowerShell must be run as Administrator.
    Copy-Item -Path "$aghExe" -Destination .\AdGuardHome.exe
    ```
 
-   You may also want to copy the documentation parts of the package, such as the change log (`CHANGELOG.md`), the README file (`README.md`), and the license (`LICENSE.txt`).
+   Vous voudrez également copier les parties de documentation du paquet, telles que le journal des modifications (`CHANGELOG.md`), le fichier README (`README.md`) et la licence (`LICENSE.txt`).
 
-   You can now remove the temporary directory.
+   Vous pouvez maintenant supprimer le répertoire temporaire.
 
 7. Redémarrez AdGuard Home :
 
@@ -493,29 +493,29 @@ In all examples below, the PowerShell must be run as Administrator.
    .\AdGuardHome.exe -s start
    ```
 
-## How do I uninstall AdGuard Home? {#uninstall}
+## Comment désinstaller AdGuard Home ? {#uninstall}
 
-Depending on how you installed AdGuard Home, there are different ways to uninstall it.
+Selon la manière dont vous avez installé AdGuard Home, il existe différentes façons de le désinstaller.
 
 :::caution
 
-Before uninstalling AdGuard Home, don’t forget to change the configuration of your devices and point them to a different DNS server.
+Avant de désinstaller AdGuard Home, n'oubliez pas de modifier la configuration de vos appareils et de les orienter vers un serveur DNS différent.
 
 :::
 
-### Regular installation
+### Installation régulière
 
-In this case, do the following:
+Dans ce cas, procédez comme suit :
 
-- Unregister AdGuard Home service: `./AdGuardHome -s uninstall`.
+- Désenregistrez le service AdGuard Home : `./AdGuardHome -s uninstall`.
 
-- Remove the AdGuard Home directory.
+- Supprimez le répertoire AdGuard Home.
 
 ### Docker
 
-Simply stop and remove the image.
+Il suffit d'arrêter et de supprimer l'image.
 
-### Snap Store
+### Magasin Snap
 
 ```sh
 snap remove adguard-home
