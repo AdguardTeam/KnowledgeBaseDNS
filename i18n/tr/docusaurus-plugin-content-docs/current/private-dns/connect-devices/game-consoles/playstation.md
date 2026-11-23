@@ -53,5 +53,5 @@ Oyun konsolunuzu bir genel AdGuard DNS sunucusunu kullanacak şekilde yapıland�
 
 Bağlı IP (veya bir Takım aboneliğiniz varsa özel IP) kullanmak tercih edilir:
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

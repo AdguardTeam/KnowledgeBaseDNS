@@ -7,7 +7,7 @@ O FRITZ!Box oferece máxima flexibilidade para todos os dispositivos ao usar sim
 
 ## Configuração do DNS-over-TLS
 
-1. Abra o painel de administração do roteador. Ele pode ser acessado em fritz.box, no Endereço de IP do seu roteador, ou `192.168.178.1`.
+1. Open the router admin panel. Ele pode ser acessado em fritz.box, no Endereço de IP do seu roteador, ou `192.168.178.1`.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
 3. Abrir _Internet_ ou _Rede Doméstica_.
 4. Selecione _DNS_ ou _Configurações de DNS_.
@@ -19,7 +19,7 @@ O FRITZ!Box oferece máxima flexibilidade para todos os dispositivos ao usar sim
 
 Use este guia se o seu roteador FritzBox não oferece suporte à configuração de DNS-over-TLS:
 
-1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.1.1` ou `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
 3. Abrir _Internet_ ou _Rede Doméstica_.
 4. Selecione _DNS_ ou _Configurações de DNS_.

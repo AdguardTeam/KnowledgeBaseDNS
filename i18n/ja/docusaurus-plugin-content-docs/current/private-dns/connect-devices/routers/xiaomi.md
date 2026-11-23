@@ -11,15 +11,15 @@ Unfortunately, it doesn’t support encrypted DNS, but it’s great for setting 
 
 Use these instructions if your Xiaomi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. ルーターの管理画面を開きます。 （`192.168.31.1` またはルーターの IP アドレスでアクセスできます。）
+1. Open the router admin panel. （`192.168.31.1` またはルーターの IP アドレスでアクセスできます。）
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. ルーターのモデルによって、「詳細設定」または「詳細」を開きます。
 4. 「ネットワーク」または「インターネット」を開き、「DNS」または「DNS設定」を探します。
-5. 「_手動DNS_」を選択します。「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバーアドレスを入力します:
+5. 「_手動DNS_」を選択します。 Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` と `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
 6. 設定を保存します。
 7. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

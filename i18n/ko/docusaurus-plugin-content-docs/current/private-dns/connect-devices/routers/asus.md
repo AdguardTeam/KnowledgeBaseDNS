@@ -9,7 +9,7 @@ sidebar_position: 3
 
 이 도움말의 구성 정보는 특정 라우터 모델에서 가져온 것이므로 개별 기기의 인터페이스와 다를 수 있습니다.
 
-필요한 경우: ASUS에서 DNS-over-TLS를 구성하고, 컴퓨터에 라우터 버전에 적합한 [ASUS Merlin 펌웨어](https://www.asuswrt-merlin.net/download)를 설치합니다.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Asus 라우터 관리자 패널에 로그인합니다.  [http://router.asus.com](http://router.asus.com/),  [http://192.168.1.1](http://192.168.1.1/),  [http://192.168.0.1](http://192.168.0.1/) 또는  [http://192.168.2.1](http://192.168.2.1/)을 통해 액세스할 수 있습니다.
 2. 관리자 사용자 이름(일반적으로 admin)과 라우터 비밀번호를 입력합니다.
@@ -27,12 +27,14 @@ sidebar_position: 3
 
 ## 라우터 관리 패널 사용
 
-1. 라우터 관리자 패널을 엽니다. 192.168.1.1`또는`192.168.0.1\`에서 접속할 수 있습니다.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 관리자 사용자 이름(일반적으로 admin)과 라우터 비밀번호를 입력합니다.
-3. **고급 설정** 또는 **고급**을 엽니다.
-4. **WAN** 또는 **인터넷**을 선택합니다.
-5. **DNS 설정** 또는 **DNS**를 엽니다.
-6. Choose _Manual Setting_. **이 DNS 서버 사용** 또는 **수동으로 DNS 서버 지정**을 선택하고 다음 DNS 서버 주소를 입력합니다:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` 및 `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` 및 `2a10:50c0:0:0:0:0:dad:ff`
 7. 설정을 저장합니다.

@@ -1,15 +1,15 @@
 ---
-title: OPNSense
+title: OPNsense
 sidebar_position: 8
 ---
 
-OPNSense donanım yazılımı genellikle kablosuz erişim noktalarını, DHCP sunucularını, DNS sunucularını yapılandırmak için kullanılır ve AdGuard DNS'i doğrudan cihaz üzerinde yapılandırmanıza olanak tanır.
+OPNsense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
 
 ## Yönlendirici yönetici panelini kullanma
 
-Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
+Use these instructions if your OPNsense router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Yönlendirici yönetici panelini açın. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
+1. Open the router admin panel. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. Üst menüde _Hizmetler_ öğesine tıklayın, ardından açılır menüden _DHCP Sunucusu_ öğesini seçin.
 4. _DHCP Sunucusu_ sayfasında, DNS ayarlarını yapılandırmak istediğiniz arayüzü seçin (örn. LAN, WLAN).
@@ -21,5 +21,5 @@ Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını 
 8. İsteğe bağlı olarak, gelişmiş güvenlik için DNSSEC'yi etkinleştirebilirsiniz.
 9. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

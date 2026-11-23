@@ -3,22 +3,19 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-I router Synology NAS sono incredibilmente facili da usare e possono essere combinati in un'unica rete mesh. Puoi gestire la tua rete da remoto in qualsiasi momento e ovunque. Puoi anche configurare AdGuard DNS direttamente sul router.
+A Synology NAS runs DSM (DiskStation Manager), a web-based OS that you use to manage the device, including its network settings. You can manage it remotely and configure AdGuard DNS directly on the NAS.
 
-## Utilizza il pannello di amministrazione del tuo router
+## Use the DSM control panel
 
-Utilizza queste istruzioni se il tuo router Keenetic non supporta la configurazione DNS-over-HTTPS o DNS-over-TLS:
+Use these instructions if your Synology NAS does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Apri il pannello di amministrazione del router. Può essere accessibile a `192.168.1.1` o `192.168.0.1`.
-2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
-3. Apri _Pannello di controllo_ o _Rete_.
-4. Seleziona _Interfaccia di rete_ o _Impostazioni di rete_.
-5. Seleziona la tua rete Wi-Fi o connessione cablata.
-6. Scegli _Manuale DNS_. Seleziona _Usa questi server DNS_ oppure _Specifica manualmente il server DNS_ e inserisci i seguenti indirizzi server:
-   - IPv4: `94.140.14.49` e `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
-7. Salva le impostazioni.
-8. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
+1. Open the DSM control panel. It can be accessed in a browser at the NAS’s IP address, e.g. `http://192.168.1.1:5000` or `https://192.168.1.1:5001`.
+2. Enter the administrator username and password for your NAS.
+3. Go to _Control Panel_ → _Network_ → _General_.
+4. Under _DNS Server_, select _Manually configure DNS server_.
+5. In the _Preferred DNS server_ and _Alternative DNS server_ fields, enter the addresses you want to use, e.g. `94.140.14.49` and `94.140.14.59`, or `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff` for IPv6.
+6. Click _Apply_.
+7. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [IP collegati](private-dns/connect-devices/other-options/linked-ip.md)

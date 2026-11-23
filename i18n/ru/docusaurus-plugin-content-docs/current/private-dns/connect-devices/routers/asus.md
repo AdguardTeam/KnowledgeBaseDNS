@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Информация по настройке в этой инструкции взята с конкретной модели роутера, поэтому она может отличаться от интерфейса вашего устройства.
 
-При необходимости: Чтобы настроить DNS-over-TLS на ASUS, установите на компьютер прошивку [ASUS Merlin](https://www.asuswrt-merlin.net/download), подходящую для версии вашего роутера.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Войдите в панель управления роутера Asus. Доступ можно получить через [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), или [http://192.168.2.1](http://192.168.2.1/).
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
@@ -27,15 +27,17 @@ sidebar_position: 3
 
 ## Через панель управления роутера
 
-1. Откройте панель управления роутера. Доступ возможен по адресам `192.168.1.1` или `192.168.0.1`.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Введите логин пользователя администратора (обычно это admin) и пароль роутера.
-3. Откройте «Дополнительные настройки» или «Дополнительно».
-4. Выберите «WAN» или «Интернет».
-5. Откройте Настройки «DNS» или «DNS».
-6. Выберите _Manual Setting_. Выберите «Использовать эти DNS-серверы» или «Указать DNS-сервер вручную» и введите следующие адреса DNS-серверов:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` и `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` и `2a10:50c0:0:0:0:0:dad:ff`
 7. Сохраните настройки.
 8. Привяжите свой IP (или ваш выделенный IP, если у вас есть подписка Team).
-   - [Выделенные IP-адреса](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Привязанные IP-адреса](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

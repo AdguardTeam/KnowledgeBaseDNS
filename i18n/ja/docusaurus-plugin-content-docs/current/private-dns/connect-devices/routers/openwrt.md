@@ -1,9 +1,9 @@
 ---
-title: OpenWRT
+title: OpenWrt
 sidebar_position: 7
 ---
 
-OpenWRTルーターは、オープンソースでLinuxベースのオペレーティングシステムを使用しています。このオペレーティングシステムはユーザーの好みに応じてルーターやゲートウェイを構成できる柔軟性を提供します。開発者は暗号化DNSサーバーのサポートを追加しているので、デバイス上でプライベート AdGuard DNS を設定可能になっています。
+OpenWrt routers use an open source, Linux-based operating system that provides the flexibility to configure routers and gateways according to user preferences. 開発者は暗号化DNSサーバーのサポートを追加しているので、デバイス上でプライベート AdGuard DNS を設定可能になっています。
 
 :::note
 
@@ -124,7 +124,7 @@ LANクライアントとローカルシステムは、Dnsmasqが無効になっ�
 
 Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. ルーターの管理画面を開きます。（管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
 3. 「ネットワーク」→「インターフェース」を開きます。
 4. お使いのWi-Fiネットワークまたは有線接続を選択します。
@@ -136,5 +136,5 @@ Use these instructions if your OpenWrt router does not support DNS-over-HTTPS or
 8. 設定を保存します。
 9. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [リンクされたIP](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

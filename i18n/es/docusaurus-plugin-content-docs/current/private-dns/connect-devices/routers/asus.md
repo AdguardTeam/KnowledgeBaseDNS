@@ -9,7 +9,7 @@ Estas son instrucciones generales para configurar AdGuard DNS privado para route
 
 La información de configuración en estas instrucciones se toma de un modelo de router específico, por lo que puede diferir de la interfaz de un dispositivo individual.
 
-Si es necesario: Configura DNS-over-TLS en ASUS, instala el [firmware ASUS Merlin](https://www.asuswrt-merlin.net/download) adecuado para la versión de tu router en tu computadora.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Inicia sesión en el panel de administración de tu router Asus. Se puede acceder a través de [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), o [http://192.168.2.1](http://192.168.2.1/).
 2. Introduce el nombre de usuario del administrador (generalmente, es admin) y la contraseña del router.
@@ -27,12 +27,14 @@ Si es necesario: Configura DNS-over-TLS en ASUS, instala el [firmware ASUS Merli
 
 ## Utiliza el panel de administración del router
 
-1. Abre el panel de administración del router. Se puede acceder en `192.168.1.1` o `192.168.0.1`.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Introduce el nombre de usuario del administrador (generalmente, es admin) y la contraseña del router.
-3. Abre _Configuración avanzada_ o _Avanzado_.
-4. Selecciona _WAN_ o _Internet_.
-5. Abre _Configuración de DNS_ o _DNS_.
-6. Choose _Manual Setting_. Selecciona _Usar estos servidores DNS_ o _Especificar servidor DNS manualmente_ e introduce las siguientes direcciones de servidor DNS:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` y `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` y `2a10:50c0:0:0:0:0:dad:ff`
 7. Guarda la configuración.

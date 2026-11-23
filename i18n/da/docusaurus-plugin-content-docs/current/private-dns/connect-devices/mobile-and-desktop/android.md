@@ -111,5 +111,5 @@ Man kan opsætte DNS-serveren i enhedsindstillingerne. Bemærk venligst, at Andr
 
 Foretrækkes det ikke at bruge ekstra software til DNS-opsætning, kan der vælges ukrypteret DNS. Man har to valg: Brug linkede IP'er eller dedikerede IP'er.
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)

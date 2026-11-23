@@ -125,7 +125,7 @@ Upon the first run, a file with the default values named `AdGuardHome.yaml` is c
 The settings are stored in the [YAML] format. The documentation describing all configurable parameters and their values is available on [this page][conf].
 
 [YAML]: https://yaml.org
-[conf]: /adguard-home/configuration
+[conf]: https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
 
 ### Health-check
 

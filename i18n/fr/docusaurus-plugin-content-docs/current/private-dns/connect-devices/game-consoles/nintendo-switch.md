@@ -25,5 +25,5 @@ Configurez votre console de jeux pour utiliser un serveur DNS AdGuard public ou 
 
 Il serait préférable d'utiliser une IP liée (ou une IP dédiée si vous avez un abonnement Équipe) :
 
-- [IP dédiées](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP liées](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

@@ -7,7 +7,7 @@ Keenetic-Router sind bekannt für ihre Stabilität und flexible Konfigurationen 
 
 ## DNS-over-HTTPS konfigurieren
 
-1. Öffnen Sie das Router-Admin-Panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
+1. Open the router admin panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
 2. Drücken Sie die Menütaste unten auf dem Bildschirm und wählen Sie _Verwaltung_.
 3. Öffnen Sie _Systemeinstellungen_.
 4. Drücken Sie _Komponentenoptionen_ → _Systemkomponentenoptionen_.
@@ -19,7 +19,7 @@ Keenetic-Router sind bekannt für ihre Stabilität und flexible Konfigurationen 
 
 ## DNS-over-TLS konfigurieren
 
-1. Öffnen Sie das Router-Admin-Panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
+1. Open the router admin panel. Der Zugriff erfolgt über my.keenetic.net, die IP-Adresse Ihres Routers oder `192.168.1.1`.
 2. Drücken Sie die Menütaste unten auf dem Bildschirm und wählen Sie _Verwaltung_.
 3. Öffnen Sie _Systemeinstellungen_.
 4. Drücken Sie _Komponentenoptionen_ → _Systemkomponentenoptionen_.
@@ -33,16 +33,16 @@ Keenetic-Router sind bekannt für ihre Stabilität und flexible Konfigurationen 
 
 Verwenden Sie diese Anweisungen, wenn Ihr Keenetic-Router keine DNS-over-HTTPS- oder DNS-over-TLS-Konfiguration unterstützt:
 
-1. Öffnen Sie das Router-Admin-Panel. Es ist zugänglich unter `192.168.1.1` oder `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Geben Sie den Benutzernamen des Administrators (in der Regel admin) und das Passwort des Routers ein.
 3. Öffnen Sie _Internet_ oder _Heimnetzwerk_.
-4. Wählen Sie _WAN_ oder _Internet_.
+4. Select _WAN_ or _Internet_.
 5. Wählen Sie _DNS_ oder _DNS-Einstellungen_.
-6. Wählen Sie _Manuelles DNS_. Wählen Sie _Diese DNS-Server verwenden_ oder _DNS-Server manuell angeben_ und geben Sie die folgenden DNS-Serveradressen ein:
+6. Wählen Sie _Manuelles DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` und `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` und `2a10:50c0:0:0:0:0:dad:ff`
 7. Speichern Sie die Einstellungen.
 8. Verknüpfen Sie Ihre IP-Adresse (oder Ihre dedizierte IP, falls Sie ein Team-Abonnement haben).
 
-- [Dedizierte IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Verknüpfte IPs](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

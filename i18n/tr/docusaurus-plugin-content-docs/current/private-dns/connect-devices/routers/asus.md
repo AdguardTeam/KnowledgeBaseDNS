@@ -9,7 +9,7 @@ Bunlar, Asus yönlendiriciler için Özel AdGuard DNS yapılandırmasına yönel
 
 Bu talimatlardaki yapılandırma bilgileri belirli bir yönlendirici modelinden alınmıştır, bu nedenle bireysel bir cihazın arayüzünden farklılık gösterebilir.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Log in to your Asus router admin panel. Buna [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/) veya [http://192.168.2.1](http://192.168.2.1/) aracılığıyla erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
@@ -27,15 +27,17 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 
 ## Yönlendirici yönetici panelini kullanma
 
-1. Yönlendirici yönetici panelini açın. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
-3. _Gelişmiş Ayarlar_ veya _Gelişmiş_ öğesini açın.
-4. _WAN_ veya _İnternet_ öğesini seçin.
-5. _DNS Ayarları_ veya _DNS_ öğesini açın.
-6. _Manuel Ayar_ öğesini seçin. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` ve `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
 7. Ayarları kaydedin.
 8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
-   - [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

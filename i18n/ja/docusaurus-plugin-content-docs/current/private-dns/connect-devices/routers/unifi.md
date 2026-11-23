@@ -45,7 +45,7 @@ Turn on DNS-over-HTTPS in UniFi.
 
 ## ルーターの管理画面を使って接続する
 
-Use these instructions if your UniFi router does not support the DNS-over-HTTPS or DNS-over-TLS configuration.
+Use these instructions if your UniFi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Ubiquiti UniFi コントローラにログインします。
 2. Settings → Networks にに移動します。

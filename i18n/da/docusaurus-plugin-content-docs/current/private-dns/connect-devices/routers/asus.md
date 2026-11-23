@@ -9,7 +9,7 @@ Dette er en generel vejledning til opsætning af Private AdGuard DNS på Asus-ro
 
 Opsætningsinformationen i denne vejledning er taget fra en bestemt routermodel og kan derfor afvige fra brugerfladen på en individuel enhed.
 
-Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Merlin-firmwaren](https://www.asuswrt-merlin.net/download) til den aktuelle routerversion.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Log ind på Asus-routerens admin-panel. Det kan tilgås via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/) eller [http://192.168.2.1](http://192.168.2.1/).
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
@@ -27,15 +27,17 @@ Om nødvendigt: Opsæt DNS-over-TLS på ASUS, installér på computeren [ASUS Me
 
 ## Brug routerens håndteringspanel
 
-1. Åbn routerens admin-panel. Den kan tilgås på `192.168.1.1` eller `192.168.0.1`.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Angiv routerens administratorbrugernavn (normalt admin) samt adgangskode.
-3. Åbn _Avancerede indstillinger_ eller _Avanceret_.
-4. Vælg _WAN_ eller _Internet_.
-5. Åbn _DNS-indstillinger_ eller _DNS_.
-6. Vælg _Manuel indstilling_. Vælg _Brug disse DNS-servere_ eller _Angiv DNS-server manuelt_, og angiv flg. DNS-serveradresser:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` and `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff`
 7. Gem indstillingerne.
-8. Tilslut IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
-   - [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
-   - [Linkede IP'er](/private-dns/connect-devices/other-options/linked-ip.md)
+8. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
+   - [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+   - [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

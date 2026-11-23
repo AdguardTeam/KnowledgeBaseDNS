@@ -7,7 +7,7 @@ FRITZ!Box fornisce la massima flessibilità per tutti i dispositivi utilizzando 
 
 ## Configura DNS-over-TLS
 
-1. Apri il pannello di amministrazione del router. Può essere acceduto all'indirizzo fritz.box, l'indirizzo IP del tuo router, o `192.168.178.1`.
+1. Open the router admin panel. Può essere acceduto all'indirizzo fritz.box, l'indirizzo IP del tuo router, o `192.168.178.1`.
 2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
 3. Apri _Internet_ o _Rete domestica_.
 4. Seleziona _DNS_ o _Impostazioni DNS_.
@@ -19,7 +19,7 @@ FRITZ!Box fornisce la massima flessibilità per tutti i dispositivi utilizzando 
 
 Usa questa guida se il tuo router FritzBox non supporta la configurazione di DNS-over-TLS:
 
-1. Apri il pannello di amministrazione del router. Può essere accessibile a `192.168.1.1` o `192.168.0.1`.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Inserisci il nome utente dell'amministratore (di solito è admin) e la password del router.
 3. Apri _Internet_ o _Rete domestica_.
 4. Seleziona _DNS_ o _Impostazioni DNS_.
@@ -29,5 +29,5 @@ Usa questa guida se il tuo router FritzBox non supporta la configurazione di DNS
 6. Salva le impostazioni.
 7. Collega il tuo IP (o il tuo IP dedicato se hai un abbonamento Team).
 
-- [IP dedicati](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [IP collegati](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)

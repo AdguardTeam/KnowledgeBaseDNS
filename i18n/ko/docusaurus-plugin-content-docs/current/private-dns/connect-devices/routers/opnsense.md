@@ -1,13 +1,13 @@
 ---
-title: OPNSense
+title: OPNsense
 sidebar_position: 8
 ---
 
-OPNSense 펌웨어는 종종 무선 액세스 포인트, DHCP 서버, DNS 서버를 구성하는 데 사용되며, AdGuard DNS를 장치에서 직접 구성할 수 있도록 허용합니다.
+OPNsense firmware is often used to configure wireless access points, DHCP servers, DNS servers, allowing you to configure AdGuard DNS directly on the device.
 
 ## 라우터 관리 패널 사용
 
-Keenetic 라우터가 DNS-over-HTTPS 또는 DNS-over-TLS 구성을 지원하지 않는 경우, 이 지침을 따르세요.
+Use these instructions if your OPNsense router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. 라우터 관리자 패널을 엽니다. 192.168.1.1`또는`192.168.0.1\`에서 접속할 수 있습니다.
 2. 관리자 사용자 이름(일반적으로 admin)과 라우터 비밀번호를 입력합니다.

@@ -28,5 +28,5 @@ Her er nogle generelle vejledninger til opsætning af Private AdGuard DNS på ro
 
 5. Link IP'en (eller den dedikerede IP, hvis man har et Team-abonnement).
 
-- [Dedikerede IP'er](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Linkede IP'erIPs](/private-dns/connect-devices/other-options/linked-ip.md)

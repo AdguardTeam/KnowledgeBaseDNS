@@ -9,7 +9,7 @@ Estas são instruções gerais para a configuração do AdGuard DNS Privado em r
 
 As informações de configuração nestas instruções são retiradas de um modelo específico de roteador, portanto podem diferir da interface de um dispositivo individual.
 
-Se necessário: Para configurar o DNS-over-TLS no ASUS, instale o [firmware ASUS Merlin](https://www.asuswrt-merlin.net/download) adequado à versão do seu roteador no seu computador.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Efetue login no painel de administração do seu roteador Asus. Pode ser acessado via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), ou [http://192.168.2.1](http://192.168.2.1/).
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
@@ -27,12 +27,14 @@ Se necessário: Para configurar o DNS-over-TLS no ASUS, instale o [firmware ASUS
 
 ## Use o painel de controle do seu roteador
 
-1. Abra o painel de administração do roteador. Pode ser acessado em `192.168.1.1` ou `192.168.0.1`.
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
+
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Digite o nome de usuário do administrador (geralmente, é admin) e a senha do roteador.
-3. Abra _Configurações avançadas_ ou _Avançado_.
-4. Selecione _WAN_ ou _Internet_.
-5. Abra _Configurações de DNS_ ou _DNS_.
-6. Choose _Manual Setting_. Selecione _Usar estes servidores DNS_ ou _Especificar servidor DNS manualmente_ e insira os seguintes endereços de servidor DNS:
+3. Open _Advanced Settings_ or _Advanced_.
+4. Select _WAN_ or _Internet_.
+5. Open _DNS Settings_ or _DNS_.
+6. Choose _Manual Setting_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
    - IPv4: `94.140.14.49` e `94.140.14.59`
    - IPv6: `2a10:50c0:0:0:0:0:ded:ff` e `2a10:50c0:0:0:0:0:dad:ff`
 7. Salve as configurações.

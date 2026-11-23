@@ -3,22 +3,19 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS yönlendiricilerin kullanımı son derece kolaydır ve tek bir örgü ağda birleştirilebilir. Ağınızı istediğiniz zaman, istediğiniz yerden uzaktan yönetebilirsiniz. AdGuard DNS'i doğrudan yönlendirici üzerinde de yapılandırabilirsiniz.
+A Synology NAS runs DSM (DiskStation Manager), a web-based OS that you use to manage the device, including its network settings. You can manage it remotely and configure AdGuard DNS directly on the NAS.
 
-## Yönlendirici yönetici panelini kullanma
+## Use the DSM control panel
 
-Keenetic yönlendiriciniz DNS-over-HTTPS veya DNS-over-TLS yapılandırmasını desteklemiyorsa bu talimatları kullanın:
+Use these instructions if your Synology NAS does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. Yönlendirici yönetici panelini açın. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
-2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
-3. _Denetim Masası_ veya _Ağ_ öğesini açın.
-4. Select _Network Interface_ or _Network Settings_.
-5. Wi-Fi ağınızı veya kablolu bağlantınızı seçin.
-6. Choose _Manual DNS_. Select _Use These DNS Servers_ or _Specify DNS Server Manually_ and enter the following DNS server addresses:
-   - IPv4: `94.140.14.49` ve `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` ve `2a10:50c0:0:0:0:0:dad:ff`
-7. Ayarları kaydedin.
-8. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
+1. Open the DSM control panel. It can be accessed in a browser at the NAS’s IP address, e.g. `http://192.168.1.1:5000` or `https://192.168.1.1:5001`.
+2. Enter the administrator username and password for your NAS.
+3. Go to _Control Panel_ → _Network_ → _General_.
+4. Under _DNS Server_, select _Manually configure DNS server_.
+5. In the _Preferred DNS server_ and _Alternative DNS server_ fields, enter the addresses you want to use, e.g. `94.140.14.49` and `94.140.14.59`, or `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff` for IPv6.
+6. Click _Apply_.
+7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [Bağlı IP'ler](private-dns/connect-devices/other-options/linked-ip.md)

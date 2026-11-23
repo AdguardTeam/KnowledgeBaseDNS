@@ -3,22 +3,19 @@ title: Synology NAS
 sidebar_position: 9
 ---
 
-Synology NAS ルーターは驚くほど簡単に使用でき、1 つのメッシュ ネットワークにまとめることができます。いつでもどこでもリモートでネットワークを管理できます。ルーターで直接AdGuard DNSを設定することもできます。
+A Synology NAS runs DSM (DiskStation Manager), a web-based OS that you use to manage the device, including its network settings. You can manage it remotely and configure AdGuard DNS directly on the NAS.
 
-## ルーターの管理画面を使って接続する
+## Use the DSM control panel
 
-Synology NASルーターがDNS-over-TLSや DNS-over-HTTPS設定をサポートしていない場合は、以下のガイドをご利用ください:
+Use these instructions if your Synology NAS does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
-1. ルーターの管理画面を開きます。（管理画面は、`192.168.1.1` または `192.168.0.1` でアクセスできます。）
-2. 管理者ユーザー名（通常は「admin」）とルーターパスワードを入力します。
-3. 「コントロールパネル」または「ネットワーク」を開きます。
-4. 「ネットワークインターフェース」または「ネットワーク設定」を選択します。
-5. お使いのWi-Fiネットワークまたは有線接続を選択します。
-6. 「_手動DNS_」を選択します。「_これらの DNS サーバーを使用する_」または 「_DNS サーバーを手動で指定する_」を選択し、以下の DNS サーバーアドレスを入力します:
-   - IPv4: `94.140.14.49` と `94.140.14.59`
-   - IPv6: `2a10:50c0:0:0:0:0:ded:ff` と `2a10:50c0:0:0:0:0:dad:ff`
-7. 設定を保存します。
-8. IP（チームプランをご利用の場合は専用IP）をリンクします。
+1. Open the DSM control panel. It can be accessed in a browser at the NAS’s IP address, e.g. `http://192.168.1.1:5000` or `https://192.168.1.1:5001`.
+2. Enter the administrator username and password for your NAS.
+3. Go to _Control Panel_ → _Network_ → _General_.
+4. Under _DNS Server_, select _Manually configure DNS server_.
+5. In the _Preferred DNS server_ and _Alternative DNS server_ fields, enter the addresses you want to use, e.g. `94.140.14.49` and `94.140.14.59`, or `2a10:50c0:0:0:0:0:ded:ff` and `2a10:50c0:0:0:0:0:dad:ff` for IPv6.
+6. Click _Apply_.
+7. IP（チームプランをご利用の場合は専用IP）をリンクします。
 
-- [専用IP](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
 - [リンクされたIP](private-dns/connect-devices/other-options/linked-ip.md)

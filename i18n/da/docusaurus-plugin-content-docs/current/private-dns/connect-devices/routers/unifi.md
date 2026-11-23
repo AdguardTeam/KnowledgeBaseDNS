@@ -45,7 +45,7 @@ Slå DNS-over-HTTPS til i UniFi
 
 ## Brug routerens håndteringspanel
 
-Brug denne vejledning, hvis UniFi-routeren ikke understøtter opsætning af DNS-over-HTTPS eller DNS-over-TLS.
+Use these instructions if your UniFi router does not support DNS-over-HTTPS or DNS-over-TLS configuration:
 
 1. Log ind på Ubiquiti UniFi-controlleren.
 2. Gå til _Indstillinger_ → _Netværk_.

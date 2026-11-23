@@ -7,7 +7,7 @@ FRITZ!Box, 2,4 GHz ve 5 GHz frekans bantlarını aynı anda kullanarak tüm ciha
 
 ## DNS-over-TLS'yi yapılandırma
 
-1. Yönlendirici yönetici panelini açın. Fritz.box adresinden, yönlendiricinizin IP adresinden veya `192.168.178.1` adresinden erişilebilir.
+1. Open the router admin panel. Fritz.box adresinden, yönlendiricinizin IP adresinden veya `192.168.178.1` adresinden erişilebilir.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. _İnternet_ veya _Ev Ağı_ öğesini açın.
 4. _DNS_ veya _DNS Ayarları_ öğesini seçin.
@@ -19,7 +19,7 @@ FRITZ!Box, 2,4 GHz ve 5 GHz frekans bantlarını aynı anda kullanarak tüm ciha
 
 Keenetic yönlendiriciniz DNS-over-TLS yapılandırmasını desteklemiyorsa bu kılavuzu kullanın:
 
-1. Yönlendirici yönetici panelini açın. `192.168.1.1` veya `192.168.0.1` adresinden erişilebilir.
+1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 2. Yönetici kullanıcı adını (genellikle yöneticidir) ve yönlendirici parolasını girin.
 3. _İnternet_ veya _Ev Ağı_ öğesini açın.
 4. _DNS_ veya _DNS Ayarları_ öğesini seçin.
@@ -29,5 +29,5 @@ Keenetic yönlendiriciniz DNS-over-TLS yapılandırmasını desteklemiyorsa bu k
 6. Ayarları kaydedin.
 7. IP'nizi (veya bir Takım aboneliğiniz varsa özel IP'nizi) bağlayın.
 
-- [Özel IP'ler](/private-dns/connect-devices/other-options/dedicated-ip.md)
-- [Bağlı IP'ler](/private-dns/connect-devices/other-options/linked-ip.md)
+- [Dedicated IPs](/private-dns/connect-devices/other-options/dedicated-ip.md)
+- [Linked IPs](/private-dns/connect-devices/other-options/linked-ip.md)
