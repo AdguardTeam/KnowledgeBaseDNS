@@ -9,7 +9,7 @@ These are general instructions for configuring Private AdGuard DNS for Asus rout
 
 The configuration information in these instructions is taken from a specific router model, so it may differ from the interface of an individual device.
 
-If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
+If necessary: Configure DNS-over-TLS on Asus, install the [Asus Merlin firmware](https://www.asuswrt-merlin.net/download) suitable for your router version on your computer.
 
 1. Log in to your Asus router admin panel. It can be accessed via [http://router.asus.com](http://router.asus.com/), [http://192.168.1.1](http://192.168.1.1/), [http://192.168.0.1](http://192.168.0.1/), or [http://192.168.2.1](http://192.168.2.1/).
 1. Enter the administrator username (usually, it’s admin) and router password.
@@ -26,6 +26,8 @@ If necessary: Configure DNS-over-TLS on ASUS, install the [ASUS Merlin firmware]
 1. Scroll to the bottom of the page and click *Apply*.
 
 ## Use your router admin panel
+
+Use these instructions if your Asus router does not support DNS-over-TLS configuration:
 
 1. Open the router admin panel. It can be accessed at `192.168.1.1` or `192.168.0.1`.
 1. Enter the administrator username (usually, it’s admin) and router password.
