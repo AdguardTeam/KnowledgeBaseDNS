@@ -36,6 +36,18 @@ If you are creating a blocklist, we recommend using the [Adblock-style syntax]. 
 
 If you’re maintaining either a `/etc/hosts`-style blocklist or multiple filtering lists (regardless of type), we provide a tool for blocklist compilation. We named it [Hostlist compiler] and we use it ourselves to create [AdGuard DNS filter].
 
+## What the filtering engine checks {#what-the-filtering-engine-checks}
+
+The filtering engine checks both DNS queries and DNS responses. It applies rules to:
+
+- the query domain name;
+- the targets of `CNAME` records in the response;
+- the IP addresses in the `A` and `AAAA` records in the response.
+
+A rule can therefore block a response even when the query name does not match the rule. For example, the rule `||roblox.com.` matches the CNAME target `clientsettingscdn.roblox.com.edgekey.net`. A query for `clientsettingscdn.roblox.com` can be blocked, even though the query name does not match the rule.
+
+A pattern without an end anchor (`^` or a trailing `|`) does not require the hostname to end at the pattern. A trailing dot does not anchor the pattern to the end of the name. Such a pattern can match a longer name, including a CNAME target. To require the hostname to end at the pattern, add `^`. For example, `||roblox.com^` matches `roblox.com` and `sub.roblox.com`, but not `roblox.com.edgekey.net`.
+
 ## Basic examples {#basic-examples}
 
 - `||example.org^`: block access to the `example.org` domain and all its subdomains, like `www.example.org`.
